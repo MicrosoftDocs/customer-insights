@@ -1,7 +1,7 @@
 ---
 title: FAQ for dialog with data (preview)
-description: This FAQ provides information about the AI technology used in Dynamics 365 Customer Insights dialog with data (preview). It provides key considerations and details about how AI is used, how it was tested and evaluated, and any specific limitations.
-ms.date: 08/01/2023
+description: This FAQ provides information about the AI technology used in dialog with data (preview). It provides key considerations and details about how AI is used, how it was tested and evaluated, and any specific limitations.
+ms.date: 09/01/2023
 ms.custom: 
   - responsible-ai-faqs
 ms.topic: article
@@ -14,7 +14,7 @@ ms.reviewer: m-hartmann
 
 [!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
-These frequently asked questions (FAQ) describe the AI impact of Dynamics 365 Customer Insights dialog with data (preview) feature.
+These frequently asked questions (FAQ) describe the AI impact of Dynamics 365 Customer Insights - Data dialog with data (preview) feature.
 
 [!INCLUDE [public-preview-note](includes/public-preview-note.md)]
 
@@ -44,7 +44,7 @@ The feature transforms your prompts in natural language into a SQL query to run 
 
 - Only questions related to your customers are supported. We suggest you don't enter any non-business-related questions.
 
-- Only questions with corresponding data existing in Customer Insights are supported.
+- Only questions with corresponding data existing in Customer Insights - Data are supported.
 
 - ‘Did you know’ section and ‘Explore further’ result generation is dependent on Azure Open AI service model.  
 

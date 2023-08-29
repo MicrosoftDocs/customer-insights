@@ -22,8 +22,7 @@
       href: home.md
     - name: Work with tags and columns
       href: work-with-tags-columns.md
-    - name: Work with business accounts
-      href: work-with-business-accounts.md
+    - name: Integrate with Customer Insights - Journeys
     - name: Integrate with Dynamics 365 Marketing
       href: marketing-get-started.md
 
@@ -45,13 +44,13 @@
          href: connect-common-data-model.md
        - name: Connect to Azure Synapse Analytics
          href: connect-synapse.md
-       - name: Connect to data in a Microsoft Dataverse managed data lake
-         href: connect-dataverse-managed-lake.md
+       - name: Connect to data in Microsoft Dataverse
+         href: connect-dataverse.md
        - name: Add a data sources via Power Query connectors
          href: connect-power-query.md
     - name: Manage existing data sources
       href: data-sources-manage.md
-    - name: Connect to an Azure Data Lake Storage account by using an Azure service principal
+    - name: Connect to an Azure Data Lake Storage account by using a Microsoft Entra service principal
       href: connect-service-principal.md
     - name: Enrichment for data sources
       href: data-sources-enrichment.md
@@ -90,8 +89,6 @@
           href: business-unit-integration-dynamics365-power-platform.md
     - name: Review data unification
       href: data-unification-review.md
-    - name: Create a unified B-to-B contact profile 
-      href: data-unification-contacts.md
     - name: Update unification settings
       href: data-unification-update.md  
  
@@ -99,20 +96,12 @@
   items:
     - name: Data enrichment overview
       href: enrichment-hub.md
-    - name: Accounts from Office 365 data
-      href: enrichment-office.md
     - name: Brands and interests
       href: enrichment-microsoft.md
-    - name: Company data from Dun & Bradstreet
-      href: enrichment-dnb.md
-    - name: Company data from Leadspace
-      href: enrichment-leadspace.md
     - name: Demographics with Experian
       href: enrichment-experian.md
     - name: Enhanced addresses
       href: enrichment-enhanced-addresses.md
-    - name: Enhanced company data
-      href: enrichment-enhanced-company-data.md
     - name: Identity with LiveRamp
       href: enrichment-liveramp.md
     - name: Location from Azure Maps
@@ -349,14 +338,12 @@
   items: 
     - name: Create a new environment
       href: create-environment.md
-    - name: Connect to Microsoft Dataverse
-      href: customer-insights-dataverse.md
     - name: Use your own Azure Data Lake Storage
       href: own-data-lake-storage.md
+    - name: Connect to a storage account using a service principal
+      href: connect-service-principal.md
     - name: Manage environment settings
       href: manage-environments.md
-    - name: Connect to a storage account using Service Principal
-      href: connect-service-principal.md
 
 - name: APIs
   items:

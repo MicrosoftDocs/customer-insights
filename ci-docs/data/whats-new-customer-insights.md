@@ -30,7 +30,7 @@ The data prep report reduces the time and effort encountered by turning your dat
 
 ### Address issues with environment status summary
 
-The System Status page in Customer Insights is an indispensable tool for admins to keep a frequent tab to ensure all jobs are running smoothly. However, when there are errors/issues, the current process of checking through a large table of active jobs can be time-consuming and confusing, especially when there are complex relationships between jobs. Copilot in Customer Insights provides a simple, natural language summary of the environment, prominently highlighting the most important jobs tied to key activation events like exports. Armed with this summary, admins can focus on quickly taking the actions required.
+The System Status page in Customer Insights - Data is an indispensable tool for admins to keep a frequent tab to ensure all jobs are running smoothly. However, when there are errors/issues, the current process of checking through a large table of active jobs can be time-consuming and confusing, especially when there are complex relationships between jobs. Copilot in Dynamics 365 Customer Insights provides a simple, natural language summary of the environment, prominently highlighting the most important jobs tied to key activation events like exports. Armed with this summary, admins can focus on quickly taking the actions required.
 
 - [Release plan](/dynamics365/release-plan/2023wave1/customer-insights/address-issues-environment-status-summary-copilot)
 - [Documentation](system.md#environment-status-summary-preview)
@@ -44,13 +44,21 @@ The System Status page in Customer Insights is an indispensable tool for admins 
 - can customize the columns they see in their BU-specific view of the segment list
 - can download a segment
 
+### New blogs and scenario docs
+
+- [Advanced unification scenario: Create unified customer profiles from functionally unrelated sources](https://community.dynamics.com/blogs/post/?postid=cbf1def2-2a94-4a4d-9535-0489e647157c)
+
+- [Unlocking the power of Dynamics 365 Customer Insights: Best practices for data modelling and data quality](https://community.dynamics.com/blogs/post/?postid=988fae7a-3f37-ee11-bdf4-6045bdebe084)
+
+- [Navigating the data platform landscape: Azure Synapse or Microsoft Fabric](https://community.dynamics.com/blogs/post/?postid=4c923e38-8738-ee11-bdf4-000d3a4e511f)
+
 ## June 2023
 
 ### Display activities in a Dynamics 365 activity timeline
 
 A single view of all interactions enables a complete understanding of customer activity. With that context, sellers and representatives can create deeply personalized experiences for digital and nondigital channels. In Dynamics 365 Sales, Customer Service, and Customer Insights - Journeys, users can see all activities in the unified activity timeline.
 
-After a Dynamics 365 administrator enables the feature, sellers and representatives can view activities directly in the activity timeline. Dynamics 365 apps and Customer Insights - Data must share a Dataverse instance.
+After a Dynamics 365 administrator enables the feature, sellers and representatives can view activities directly in the activity timeline. Dynamics 365 apps and Customer Insights - Data must share a Dataverse environment.
 
 Activity data can appear within the same activity timeline already used today to add or view activities such as notes, posts, emails, and appointments. The unified activity timeline is available across *Accounts* and *Contacts*.
 
@@ -75,7 +83,7 @@ This feature democratizes access to insights, allowing analysts, marketers, and 
 Get a 360-degree view of your B2B contacts by creating unified contact profiles. With this release, your B2B contacts can be unified just like accounts and customers. The unified accounts table and unified contacts table share a simple relationship, allowing you to easily create segments of contacts that have specific account attributes. In addition, you can now identify and engage business contacts where the account is unknown, to discover and create new account relationships
 
 - [Release plan](/dynamics365/release-plan/2023wave1/customer-insights/gain-360-degree-view-b2b-contacts-leveraging-all-fields-unified-contacts)
-- [Documentation](data-unification-contacts.md)
+- [Documentation](b2b/data-unification-contacts.md)
 
 ### Bring your custom prediction models from Azure Synapse Analytics into Dynamics 365 Customer Insights - Data, using our Synapse pipeline integration
 
@@ -128,7 +136,7 @@ This FRE works with a single CSV file only. If you have multiple data files, or 
 Dynamics 365 Customer Insights - Data starts supporting application and environment lifecycle management capabilities for common enterprise-grade requirements. For example, you can copy, reset, or delete your Customer Insights - Data environments. Additionally, the system ensures your Customer Insights - Data environment and the associated Dataverse environment are always in sync.
 
 - [Release plan](/dynamics365-release-plan/2022wave2/customer-insights/achieve-business-scenarios-application-lifetime-management)
-- [Documentation](create-environment.md#copy-the-environment-configuration)
+- [Documentation](manage-environments.md#copy-the-environment-configuration)
 
 <!--
 ## September 2022 updates

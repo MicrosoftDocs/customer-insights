@@ -1,7 +1,7 @@
 ---
-title: "Export Customer Insights data to HubSpot"
+title: "Export segments to HubSpot (preview)"
 description: "Learn how to configure the connection and export to HubSpot."
-ms.date: 11/15/2022
+ms.date: 09/01/2023
 ms.reviewer: mhart
 ms.topic: conceptual
 author: pkieffer
@@ -20,7 +20,7 @@ Export segments of unified customer profiles to HubSpot and use them for email m
 
 - A [HubSpot account](https://www.hubspot.com/) and corresponding administrator credentials.
 - [API key](https://knowledge.hubspot.com/Integrations/How-do-I-get-my-HubSpot-API-key) from HubSpot.
-- [Configured segments](segments.md) in Customer Insights.
+- [Configured segments](segments.md).
 
 ## Known limitations
 
@@ -45,7 +45,7 @@ Export segments of unified customer profiles to HubSpot and use them for email m
 
 1. Select **Connect** to initialize the connection to HubSpot.
 
-1. Select **Add yourself as export user** and provide your Customer Insights credentials.
+1. Select **Add yourself as export user** and provide your Dynamics 365 Customer Insights - Data credentials.
 
 1. Select **Save** to complete the connection.
 

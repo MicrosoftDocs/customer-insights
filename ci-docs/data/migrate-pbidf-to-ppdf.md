@@ -1,7 +1,7 @@
 ---
 title: Migrate dataflows for Power Query-based data sources.
 description: Learn how to upgrade dataflows when your Power Query data sources are upgraded.
-ms.date: 06/02/2023
+ms.date: 09/01/2023
 ms.reviewer: mhart
 ms.topic: how-to
 author: mukeshpo
@@ -17,18 +17,18 @@ To increase scalability, reliability, and performance, some Power Query-based da
 
 ## Prerequisites
 
-- You have Administrator or Owner permissions in Customer Insights.
-- The Customer Insights environment is connected a Dataverse environment.
+- You have Administrator or Owner permissions in Dynamics 365 Customer Insights - Data.
+- The Customer Insights - Data environment is connected a Dataverse environment.
 - You have access to the credentials for the data source.
 
 ## How to update your data sources  
 
-A notification in Customer Insights indicates that there are data sources for which you need to take action.
+A notification in Customer Insights - Data indicates that there are data sources for which you need to take action.
 We recommend following the steps for trial and sandbox environments before updating the data sources on the production environment.  
 
 :::image type="content" source="media/migrade-data-sources.png" alt-text="Screenshot of a notification to migrate data sources. ":::
 
-1. Sign in to Customer Insights and open the environment to upgrade.
+1. Sign in to Customer Insights - Data and open the environment to upgrade.
 
 1. Go to **Data** > **Data sources**.  
 

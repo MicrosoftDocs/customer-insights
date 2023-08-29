@@ -1,9 +1,8 @@
 ---
 title: "Export segments to MoEngage"
 description: "Learn how to configure the connection and export to MoEngage."
-ms.date: 11/15/2022
+ms.date: 09/01/2023
 ms.reviewer: mhart
-
 ms.topic: conceptual
 author: pkieffer
 ms.author: philk
@@ -21,7 +20,7 @@ Export segments of unified customer profiles to MoEngage and use them for email 
 
 - [MoEngage account](https://www.moengage.com/) and corresponding administrator credentials.
 - MoEngage API key from Settings > API in MoEngage.
-- [Configured segments](segments.md) in Customer Insights.
+- [Configured segments](segments.md).
 
 ## Known limitations
 
@@ -46,7 +45,7 @@ Export segments of unified customer profiles to MoEngage and use them for email 
 
 1. Select **Connect** to initialize the connection to MoEngage.
 
-1. Select **Add yourself as export user** and provide your Customer Insights credentials.
+1. Select **Add yourself as export user** and provide your Dynamics 365 Customer Insights - Data credentials.
 
 1. Select **Save** to complete the connection.
 

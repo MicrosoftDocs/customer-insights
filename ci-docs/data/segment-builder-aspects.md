@@ -1,11 +1,11 @@
 ---
 title: Aspects of segment builder
-description: An example of the various aspects of segment builder in Customer Insights
+description: An example of the various aspects of segment builder in Dynamics 365 Customer Insights - Data.
 author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: v-wendysmith
 ms.topic: conceptual
-ms.date: 03/20/2023
+ms.date: 09/01/2023
 ms.custom: bap-template
 ---
 

@@ -1,20 +1,20 @@
 ---
-title: Export Customer Insights data to InMobi
+title: Export segment data to InMobi (preview)
 description: Learn how to configure the connection and export to InMobi.
-ms.date: 11/15/2022
+ms.date: 09/01/2023
 ms.reviewer: mhart
 ms.topic: how-to
 author: pkieffer
 ms.author: philk
 ---
 
-# Export Customer Insights data to InMobi (preview)
+# Export segment data to InMobi (preview)
 
 [!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
-Export segment lists or other data from your Customer Insights instance to [InMobi](https://www.inmobi.com/).
+Export segment lists or other data from Dynamics 365 Customer Insights - Data to [InMobi](https://www.inmobi.com/).
 
 ## Prerequisites
 

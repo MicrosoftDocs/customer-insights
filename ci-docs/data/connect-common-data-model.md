@@ -21,7 +21,7 @@ Ingest data into Dynamics 365 Customer Insights - Data using your Azure Data Lak
 
 - The Azure Data Lake Storage account must have [hierarchical namespace enabled](/azure/storage/blobs/data-lake-storage-namespace). The data must be stored in a hierarchical folder format that defines the root folder and has subfolders for each table. The subfolders can have full data or incremental data folders.
 
-- To authenticate with an Azure service principal, make sure it's configured in your tenant. For more information, see [Connect to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md).
+- To authenticate with a Microsoft Entra service principal, make sure it's configured in your tenant. For more information, see [Connect to an Azure Data Lake Storage Gen2 account with a Microsoft Entra service principal](connect-service-principal.md).
 
 - The Azure Data Lake Storage you want to connect and ingest data from has to be in the same Azure region as the Dynamics 365 Customer Insights environment and the subscriptions must be in the same tenant. Connections to a Common Data Model folder from a data lake in a different Azure region is not supported. To know the Azure region of the environment, go to **Settings** > **System** > **About** in Customer Insights - Data.
 
@@ -55,7 +55,7 @@ For optimal performance, the size of a partition should be 1 GB or less and the 
 
 1. Enter a **Data source name** and an optional **Description**. The name is referenced in downstream processes and it's not possible to change it after creating the data source.
 
-1. Choose one of the following options for **Connect your storage using**. For more information, see [Connect to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md).
+1. Choose one of the following options for **Connect your storage using**. For more information, see [Connect to an Azure Data Lake Storage Gen2 account with a Microsoft Entra service principal](connect-service-principal.md).
 
    - **Azure resource**: Enter the **Resource Id**. Optionally, if you want to ingest data from a storage account through an Azure Private Link, select **Enable Private Link**. For more information, see [Private Links](private-link.md).
    - **Azure subscription**: Select the **Subscription** and then the **Resource group** and **Storage account**. Optionally, if you want to ingest data from a storage account through an Azure Private Link, select **Enable Private Link**. For more information, see [Private Links](private-link.md).
@@ -159,7 +159,7 @@ Loading data can take time. After a successful refresh, the ingested data can be
 
 ## Edit an Azure Data Lake Storage data source
 
-You can update the *Connect to storage account using* option. For more information, see [Connect to an Azure Data Lake Storage Gen2 account with an Azure service principal](connect-service-principal.md). To connect to a different container from your storage account, or change the account name, [create a new data source connection](#connect-to-azure-data-lake-storage).
+You can update the *Connect to storage account using* option. For more information, see [Connect to an Azure Data Lake Storage Gen2 account with a Microsoft Entra service principal](connect-service-principal.md). To connect to a different container from your storage account, or change the account name, [create a new data source connection](#connect-to-azure-data-lake-storage).
 
 1. Go to **Data** > **Data sources**. Next to the data source you'd like to update, select  **Edit**.
 

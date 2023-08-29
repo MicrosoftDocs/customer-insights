@@ -1,15 +1,11 @@
 ---
 title: Product recommendation prediction sample guide
 description: Use this sample guide to try out the out of box product recommendation prediction model.
-ms.date: 11/15/2022
+ms.date: 09/01/2023
 ms.reviewer: mhart
 ms.topic: tutorial
-author: m-hartmann
-ms.author: wameng
-searchScope: 
-  - ci-predictions
-  - ci-create-prediction
-  - customerInsights
+author: joytaylor
+ms.author: joytaylor
 ---
 
 # Product recommendation prediction (preview) sample guide
@@ -28,7 +24,7 @@ Contoso is a company that produces high-quality coffee and coffee machines. They
 
 ## Prerequisites
 
-- At least [Contributor permissions](permissions.md) in Customer Insights.
+- At least [Contributor permissions](permissions.md) in Dynamics 365 Customer Insights - Data.
 
 ## Task 1 - Ingest data
 

@@ -1,9 +1,8 @@
 ---
 title: "Export segments to Omnisend (preview)"
 description: "Learn how to configure the connection and export to Omnisend."
-ms.date: 11/15/2022
+ms.date: 09/01/2023
 ms.reviewer: mhart
-
 ms.topic: conceptual
 author: pkieffer
 ms.author: philk
@@ -21,7 +20,7 @@ Export segments of unified customer profiles to Omnisend and use them for market
 
 - An [Omnisend account](https://www.omnisend.com/) and corresponding administrator credentials.
 - An [Omnisend API key](https://support.omnisend.com/en/articles/1061890-generating-api-key).
-- [Configured segments](segments.md) in Customer Insights.
+- [Configured segments](segments.md).
 - Unified customer profiles in the exported segments contain a field representing an email address.
 
 ## Known limitations
@@ -48,7 +47,7 @@ Export segments of unified customer profiles to Omnisend and use them for market
 
 1. Select **Connect** to initialize the connection.
 
-1. Select **Add yourself as export user** and provide your Customer Insights credentials.
+1. Select **Add yourself as export user** and provide your Dynamics 365 Customer Insights - Data credentials.
 
 1. Select **Save** to complete the connection.
 

@@ -1,12 +1,11 @@
 ---
 title: "Predict product recommendations (preview)"
 description: "Predict the products a customer is likely to purchase or interact with."
-ms.date: 11/15/2022
+ms.date: 09/01/2023
 ms.reviewer: mhart
-
 ms.topic: conceptual
-author: wmelewong 
-ms.author: wameng
+author: joytaylor
+ms.author: joytaylor
 ---
 
 # Predict product recommendations (preview)
@@ -15,7 +14,7 @@ ms.author: wameng
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
-The product recommendation model creates sets of predictive product recommendations. Recommendations are based on previous purchase behavior and customers with similar purchase patterns. This model is for individual consumers (B-to-C).
+The product recommendation model creates sets of predictive product recommendations. Recommendations are based on previous purchase behavior and customers with similar purchase patterns.
 
 You must have business knowledge on the different types of products for your business and how your customers interact with them. We support recommending products that have been previously purchased by your customers or recommendations for new products.
 
@@ -31,7 +30,7 @@ The output of this model provides recommendations based on the product ID. Your 
 ## Prerequisites
 
 - At least [Contributor permissions](permissions.md)
-- At least 100 customers, preferably more than 10,000 customers.
+- At least 1,000 customer profiles within the desired prediction window
 - Customer Identifier, a unique identifier to match transactions to an individual customer
 - At least one year of transactional data, preferably two to three years to include some seasonality. Ideally, at least three or more transactions per Customer ID. Transaction history must include:
   - **Transaction ID**: Unique identifier of a purchase or transaction.
@@ -110,7 +109,7 @@ Sometimes, only certain products are beneficial or appropriate for the type of p
 
 ### Set update schedule
 
-1. Choose a frequency to retrain your model. This setting is important to update the accuracy of predictions as new data is ingested into Customer Insights. Most businesses can retrain once per month and get a good accuracy for their prediction.
+1. Choose a frequency to retrain your model. This setting is important to update the accuracy of predictions as new data is ingested. Most businesses can retrain once per month and get a good accuracy for their prediction.
 
 1. Select **Next**.
 
