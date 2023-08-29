@@ -70,27 +70,27 @@ additionalContent:
     items:
       - title: Email marketing and automation
         links:
-        - url: real-time-marketing-email.md
+        - url: /dynamics365/marketing/real-time-marketing-email
           text: Email marketing overview
-        - url: content-ideas.md
+        - url: /dynamics365/marketing/content-ideas
           text: Use AI to create email content        
-        - url: real-time-marketing-email-get-started.md
+        - url: /dynamics365/marketing/real-time-marketing-email-get-started
           text: Send a targeted email blast
       - title: Real-time journeys
         links:
-        - url: real-time-marketing-trigger-based-journey.md
+        - url: /dynamics365/marketing/real-time-marketing-trigger-based-journey
           text: Trigger-based journeys
-        - url: real-time-marketing-natural-language.md
+        - url: /dynamics365/marketing/real-time-marketing-natural-language
           text: Use AI to create segments
-        - url: real-time-marketing-build-segments.md
+        - url: /dynamics365/marketing/real-time-marketing-build-segments
           text: Segment-based journeys
       - title: Event planning
         links:
-        - url: event-management.md
+        - url: /dynamics365/marketing/event-management
           text: Event planning overview
-        - url: set-up-event.md
+        - url: /dynamics365/marketing/set-up-event
           text: Event setup
-        - url: event-management-dashboard.md
+        - url: /dynamics365/marketing/event-management-dashboard
           text: Manage events
   - title: Related products
     items:
