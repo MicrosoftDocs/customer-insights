@@ -1,0 +1,103 @@
+### YamlMime:Hub
+
+title:  Dynamics 365 Customer Insights documentation
+summary: Quickly access documentation for Dynamics 365 Customer Insights - Journeys and Dynamics 365 Customer Insights - Data.
+brand: dynamics
+
+metadata:
+  title: Dynamics 365 Customer Insights documentation 
+  description: Quickly access documentation for Dynamics 365 Customer Insights - Journeys and Dynamics 365 Customer Insights - Data. 
+  ms.topic: hub-page
+  author: m-hartmann 
+  ms.author: mhart 
+  ms.date: 09/01/2023
+  ms.custom: bap-template
+  hide_bc: true
+
+highlightedContent:
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+
+  items:
+
+    - title: Customer Insights overview
+      itemType: overview
+      url: overview.md
+
+    - title: Customer Insights FAQ
+      itemType: whats-new
+      url: /dynamics365/marketing/ci-faq
+
+    - title: Customer Insights - Data overview
+      itemType: overview
+      url: data/overview.md
+
+    - title: Customer Insights - Journeys overview
+      itemType: overview
+      url: /dynamics365/marketing/overview
+
+additionalContent: 
+  sections:
+  - title: Get started with Customer Insights - Data
+    items:
+    - title: Set up
+      links:
+      - url: create-environment.md
+        text: Create a new environment
+      - url: permissions.md
+        text: Assign users
+      - url: home.md
+        text: Explore the user interface
+    - title: Add and unify data
+      links:
+      - url: data-sources.md
+        text: Data sources overview
+      - url: data-unification.md
+        text: Data unification overview
+      - url: customer-profiles.md
+        text: Review unified profiles
+    - title: Get and activate insights
+      links:
+      - url: segments.md
+        text: Create segments
+      - url: measures.md
+        text: Create measures
+      - url: export-destinations.md
+        text: Exports overview
+  - title: Get started with Customer Insights - Journeys
+    items:
+      - title: Provision and set up
+        links:
+        - url: /dynamics365/marketing/get-started
+          text: Customer Insights - Journeys app setup
+        - url: /dynamics365/marketing/admin-users-licenses-roles
+          text: Manage user accounts
+        - url: /dynamics365/marketing/domain-authentication
+          text: Authenticate your domains
+      - title: Real-time journeys
+        links:
+        - url: /dynamics365/marketing/real-time-marketing-trigger-based-journey
+          text: Trigger-based journeys
+        - url: /dynamics365/marketing/real-time-marketing-natural-language
+          text: Use AI to create segments
+        - url: /dynamics365/marketing/real-time-marketing-build-segments
+          text: Segment-based journeys
+      - title: Personalization
+        links:
+        - url: /dynamics365/marketing/real-time-marketing-personalization
+          text: Personalize content
+        - url:  /dynamics365/marketing/dynamic-email-content
+          text: Add dynamic content to email messages
+        - url: /dynamics365/marketing/real-time-marketing-dynamic-content-multiple-languages
+          text: Create dynamic content for multiple countries and languages
+  - title: Related products
+    items:
+        - title: Dynamics 365 Sales
+          summary: Build strong relationships with your customers, take actions based on insights, and close deals faster.
+          url: /dynamics365/sales
+        - title: Microsoft Dataverse
+          summary: Securely store and manage data that's used by business applications
+          url: /power-apps/maker/data-platform
+        - title: Azure Synapse Analytics
+          summary: Azure Synapse is a limitless analytics service that brings together enterprise data warehousing and Big Data analytics.
+          url: /azure/synapse-analytics/
