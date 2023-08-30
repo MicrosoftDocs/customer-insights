@@ -29,17 +29,17 @@ The following image illustrates the various aspects of the segment builder. It s
 
 1. Apply set operations to connected rules.
 
-1. Use the attribute pane to add available table attributes or create conditions based on attributes. The pane shows the list of tables and attributes, based on the selected relationship path, that are available for the selected rule.
+1. Use the attribute pane to add available table attributes or create conditions based on attributes. The pane shows the list of tables and attributes based on the selected relationship path that are available for the selected rule.
 
 1. Add conditions based on attributes to existing rules and subrules or add it to a new rule.
 
 1. Undo and redo changes while building the segment.
 
-The example above illustrates the segmentation capability. We've defined a segment for customers who bought at least $500 of goods online *and* have an interest in software development.
+The example illustrates the segmentation capability. We've defined a segment for customers who bought at least $500 of goods online *and* have an interest in software development.
 
 ## Segment member count
 
-Use the number of members in a segment to guide you when building your rules. As you adjust attributes, conditions, and additional rules, the number of members can help you determine if the rules are meeting your expectations.
+Use the number of members in a segment to guide you when building your rules. As you adjust attributes, conditions, and other rules, the number of members can help you determine if the rules are meeting your expectations.
 
 :::image type="content" source="media/segment-count.png" alt-text="Example of segment member count.":::
 
@@ -49,7 +49,7 @@ The number of members for Rule 1 is the individual count of members for this rul
 
 When creating a segment using the segment builder, keep in mind the following tips:
 
-- The segment builder won't suggest valid values from tables when setting the operators for the conditions. You can go to **Data** > **Tables** and download the table data to see which values are available.
+- The segment builder doesn't suggest valid values from tables when setting the operators for the conditions. You can go to **Data** > **Tables** and download the table data to see which values are available.
 - Conditions based on dates let you switch between fixed dates and a floating date range.
 - If you have multiple rules for your segment, the rule you're editing has a vertical blue line next to it.
 - You can move rules and conditions to other places in the segment definition. Select the vertical ellipsis (&vellip;) next to a rule or condition and choose how and where to move it.
