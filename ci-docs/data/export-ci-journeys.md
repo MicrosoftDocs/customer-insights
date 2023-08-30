@@ -26,7 +26,9 @@ Contact records must be present in Customer Insights - Journeys before you can e
 > Exporting segments from Customer Insights - Data to Customer Insights - Journeys will not create new contact records. The contact records must be ingested in Customer Insights - Data and used as a data source. They also need to be included in the unified Customer table to map customer IDs to contact IDs before segments can be exported.
 
 ## Recommendations
+
 Consider the following restrictions before exporting to Customer Insights - Journeys outbound:
+
 - In Customer Insights - Journeys outbound, you can send a limited number of interactions per month and per day. Your segments for Customer Insights - Journeys should have no more than one million members. [Check the service limits of Customer Insights - Journeys outbound for more details](/dynamics365/marketing/fair-use-policy).
 - Exports to Customer Insights - Journeys outbound takes longer when you update multiple segments to the same environment. For better performance and stability, set up only one export that includes all the segments you need.
 
