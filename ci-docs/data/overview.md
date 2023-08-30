@@ -21,7 +21,7 @@ Maintain full control over your customer data to ensure the highest level of dat
 
 ## Pricing and licensing
 
-Customer Insights - Data is licensed per tenant. You can purchase additional capacity with add-on licenses to increase the number of profiles and accounts.
+Customer Insights - Data is licensed per tenant. You can purchase additional capacity with add-on licenses.
 
 - [Pricing overview](https://dynamics.microsoft.com/ai/customer-insights/pricing/)
 - Capacity and entitlements: [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544)
