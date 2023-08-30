@@ -32,11 +32,11 @@ highlightedContent:
 
     - title: Customer Insights - Journeys
       itemType: quickstart
-      url: /dynamics365/marketing/
+      url: /dynamics365/marketing/overview
 
     - title: Customer Insights - Data
       itemType: quickstart
-      url: data/index.yml
+      url: data/overview.md
 
 additionalContent: 
   sections:
@@ -68,14 +68,14 @@ additionalContent:
         text: Exports overview
   - title: Get started with Customer Insights - Journeys
     items:
-      - title: Email marketing and automation
+      - title: Provision and set up
         links:
-        - url: /dynamics365/marketing/real-time-marketing-email
-          text: Email marketing overview
-        - url: /dynamics365/marketing/content-ideas
-          text: Use AI to create email content        
-        - url: /dynamics365/marketing/real-time-marketing-email-get-started
-          text: Send a targeted email blast
+        - url: /dynamics365/marketing/get-started
+          text: Marketing app setup
+        - url: /dynamics365/marketing/ admin-users-licenses-roles
+          text: Manage user accounts
+        - url: /dynamics365/marketing/domain-authentication
+          text: Authenticate your domains
       - title: Real-time journeys
         links:
         - url: /dynamics365/marketing/real-time-marketing-trigger-based-journey
@@ -84,14 +84,14 @@ additionalContent:
           text: Use AI to create segments
         - url: /dynamics365/marketing/real-time-marketing-build-segments
           text: Segment-based journeys
-      - title: Event planning
+      - title: Personalization
         links:
-        - url: /dynamics365/marketing/event-management
-          text: Event planning overview
-        - url: /dynamics365/marketing/set-up-event
-          text: Event setup
-        - url: /dynamics365/marketing/event-management-dashboard
-          text: Manage events
+        - url: /dynamics365/marketing/real-time-marketing-personalization
+          text: Personalize content
+        - url:  /dynamics365/marketing/dynamic-email-content
+          text: Add dynamic content to email messages
+        - url: /dynamics365/marketing/real-time-marketing-dynamic-content-multiple-languages
+          text: Create dynamic content for multiple countries and languages
   - title: Related products
     items:
         - title: Dynamics 365 Sales
