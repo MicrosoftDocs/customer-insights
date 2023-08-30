@@ -1933,7 +1933,7 @@
     },
     {
       "source_path": "ci-docs/export-dynamics365-marketing.md",
-      "redirect_url": "/dynamics365/customer-insights/data/export-dynamics365-marketing",
+      "redirect_url": "/dynamics365/customer-insights/data/export-ci-journeys",
       "redirect_document_id": false
     },
     {
