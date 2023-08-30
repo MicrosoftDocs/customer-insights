@@ -72,7 +72,7 @@ additionalContent:
         links:
         - url: /dynamics365/marketing/get-started
           text: Marketing app setup
-        - url: /dynamics365/marketing/ admin-users-licenses-roles
+        - url: /dynamics365/marketing/admin-users-licenses-roles
           text: Manage user accounts
         - url: /dynamics365/marketing/domain-authentication
           text: Authenticate your domains
