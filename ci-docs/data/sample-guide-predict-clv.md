@@ -103,17 +103,24 @@ Review the article [about data unification](data-unification.md). The following 
 
 Review the article [about customer activities](activities.md). The following information assumes you are familiar with creating activities in general.
 
-1. Create an activity called **eCommercePurchases** with the *eCommercePurchases:eCommerce* table and its primary key, **PurchaseId**.
+1. Create an activity with the *eCommercePurchases:eCommerce* table.
 
-1. Create a relationship between *eCommercePurchases:eCommerce* and *eCommerceContacts:eCommerce* with **ContactID** as the foreign key to connect the two tables.
+1. Select **SalesOrderLine** for the **Activity Type** and **PurchaseId** for the **Primary key**.
 
-1. Select **TotalPrice** for the **EventActivity** and **PurchasedOn** for the **TimeStamp**.
+1. Enter the following information for the activity:
 
-1. Select **SalesOrderLine** for the **Activity Type** and semantically map the activity data.
+   - **Activity name**: eCommercePurchases
+   - **TimeStamp**: PurchasedOn
+   - **EventActivity**: TotalPrice
+   - **Order line ID**: PurchaseId
+   - **Order date**: PurchasedOn
+   - **Amount**: TotalPrice
 
-1. Run the activity.
+1. Add a relationship between *eCommercePurchases:eCommerce* and *eCommerceContacts:eCommerce* with **ContactID** as the foreign key to connect the two tables.
 
-1. Add another activity and map its fields names to the corresponding fields:
+1. Save and then run the activity.
+
+1. Add another activity called **WebReviews** and map its fields names to the corresponding fields:
    - **Activity table**: Reviews:Website
    - **Primary key**: ReviewId
    - **Timestamp**: ReviewDate
@@ -121,7 +128,9 @@ Review the article [about customer activities](activities.md). The following inf
    - **Additional detail**: ReviewRating
    - **Activity type**: Review
 
-1. Run the activity.
+1. Create a relationship between *Website* and *eCommerceContacts* with **UserId** as the foreign key.
+
+1. Save and run the activity.
 
 ## Task 4 - Configure customer lifetime value prediction
 
