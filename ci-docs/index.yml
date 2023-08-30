@@ -1,24 +1,22 @@
 ### YamlMime:Hub
 
 title:  Dynamics 365 Customer Insights documentation
-summary: Quickly access documentation for Dynamics 365 Customer Insights - Journeys and Dynamics 365 Customer Insights - Data. # < 160 chars
-# brand: aspnet | azure | dotnet | dynamics | m365 | office | sql | windows | visual-studio | xamarin
+summary: Quickly access documentation for Dynamics 365 Customer Insights - Journeys and Dynamics 365 Customer Insights - Data.
 brand: dynamics
 
 metadata:
-  title: Dynamics 365 Customer Insights documentation # Required; page title displayed in search results. Include the brand. For example, Dynamics 365 Commerce < 60 chars.
-  description: Quickly access documentation for Dynamics 365 Customer Insights - Journeys and Dynamics 365 Customer Insights - Data. # Required; product description that is displayed in search results. < 160 chars. 
-  ms.topic: hub-page # Required
-  author: m-hartmann #Required; your GitHub user alias, with correct capitalization.
-  ms.author: mhart #Required; microsoft alias of author; optional team alias.
-  ms.date: 09/01/2023 #Required; mm/dd/yyyy format.
+  title: Dynamics 365 Customer Insights documentation 
+  description: Quickly access documentation for Dynamics 365 Customer Insights - Journeys and Dynamics 365 Customer Insights - Data. 
+  ms.topic: hub-page
+  author: m-hartmann 
+  ms.author: mhart 
+  ms.date: 09/01/2023
   ms.custom: bap-template
   hide_bc: true
 
 highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
-# Do not change the following cards. You should only need to update the URLs to provide the correct links to your product documentation.
 
   items:
 
@@ -27,16 +25,16 @@ highlightedContent:
       url: overview.md
 
     - title: Customer Insights FAQ
-      itemType: concept
+      itemType: whats-new
       url: /dynamics365/marketing/ci-faq
 
-    - title: Customer Insights - Journeys
-      itemType: quickstart
-      url: /dynamics365/marketing/overview
-
-    - title: Customer Insights - Data
-      itemType: quickstart
+    - title: Customer Insights - Data overview
+      itemType: overview
       url: data/overview.md
+
+    - title: Customer Insights - Journeys overview
+      itemType: overview
+      url: /dynamics365/marketing/overview
 
 additionalContent: 
   sections:
@@ -71,7 +69,7 @@ additionalContent:
       - title: Provision and set up
         links:
         - url: /dynamics365/marketing/get-started
-          text: Marketing app setup
+          text: Customer Insights - Journeys app setup
         - url: /dynamics365/marketing/admin-users-licenses-roles
           text: Manage user accounts
         - url: /dynamics365/marketing/domain-authentication
