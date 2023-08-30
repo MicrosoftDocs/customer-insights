@@ -21,6 +21,8 @@ The following image illustrates the various aspects of the segment builder. It s
 
 1. Choose the [relationship path](relationships.md) between tables that applies to a rule. The relationship path determines which attributes can be used in a condition.
 
+1. View the [number of members in the segment](#segment-member-count) based on the rule or combination of rules.
+
 1. Manage rules and subrules. Change the position of a rule or delete it.
 
 1. Add conditions and build the right level of nesting using subrules.
@@ -34,6 +36,14 @@ The following image illustrates the various aspects of the segment builder. It s
 1. Undo and redo changes while building the segment.
 
 The example above illustrates the segmentation capability. We've defined a segment for customers who bought at least $500 of goods online *and* have an interest in software development.
+
+## Segment member count
+
+Use the number of members in a segment to guide you when building your rules. As you adjust attributes, conditions, and additional rules, the number of members can help you determine if the rules are meeting your expectations.
+
+:::image type="content" source="media/segment-count.png" alt-text="Example of segment member count.":::
+
+The number of members for Rule 1 is the individual count of members for this rule. Subsequent rules count members based on the combination of rules. For example, Rule 2 is the union or combined count of Rule 1 and Rule 2. Rule 3 is the combined count of Rule 1 and Rule 2 and the intersection of Rule 3.
 
 ## Segment builder tips
 
