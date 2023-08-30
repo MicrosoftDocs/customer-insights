@@ -120,7 +120,7 @@ Review the article [about customer activities](activities.md). The following inf
 
 1. Save and then run the activity.
 
-1. Add another activity called **webReviews** and map its fields names to the corresponding fields:
+1. Add another activity called **WebReviews** and map its fields names to the corresponding fields:
    - **Activity table**: Reviews:Website
    - **Primary key**: ReviewId
    - **Timestamp**: ReviewDate
