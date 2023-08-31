@@ -1,0 +1,108 @@
+### YamlMime:Landing
+
+title: Customer Insights - Journeys user guide
+
+metadata:
+  title: Customer Insights - Journeys user guide
+  description: "Learn how to use Customer Insights - Journeys capabilities, features, and benefits in Dynamics 365 Customer Insights - Journeys."
+  ms.date: 08/23/2023
+  ms.topic: hub-page
+  author: alfergus
+  ms.author: alfergus
+  manager: shellyha
+  search.audienceType: 
+    - admin
+    - customizer
+    - enduser
+  search.app: 
+    - D365CE
+    - D365Mktg
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+  # Card 
+  - title: Get started with Customer Insights - Journeys
+    linkLists:
+      - linkListType: get-started
+        links:
+          - text: Customer Insights - Journeys overview
+            url: real-time-marketing-overview.md
+          - text: Use Customer Insights profiles and segments in Customer Insights - Journeys
+            url: real-time-marketing-ci-profile.md
+          - text: Known issues in Customer Insights - Journeys
+            url: real-time-marketing-known-issues.md
+
+  # Card
+  - title: Customer engagement
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Create a trigger-based journey
+            url: real-time-marketing-trigger-based-journey.md
+          - text: Create a segment-based journey
+            url: real-time-marketing-segment-based-journey.md
+          - text: "Preview: Build segments in Customer Insights - Journeys"
+            url: real-time-marketing-build-segments.md
+          - text: Set a business goal and measure progress through a journey
+            url: real-time-marketing-business-goals.md
+          - text: Experiment and refine Customer Insights - Journeys
+            url: real-time-marketing-experimentation.md
+          - text: Access and interpret analytics
+            url: real-time-marketing-analytics.md
+      - linkListType: reference
+        links:
+          - text: Customer Insights - Journeys triggers
+            url: real-time-marketing-triggers.md
+          - text: Custom triggers in Customer Insights - Journeys
+            url: real-time-marketing-custom-triggers.md
+          - text: Work with segments in Customer Insights - Journeys
+            url: real-time-marketing-segments.md
+          - text: Customer Insights - Journeys journey tile reference
+            url: real-time-marketing-tile-reference.md
+
+  # Card
+  - title: Administration
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Manage user compliance settings
+            url: real-time-marketing-compliance-settings.md
+          - text: Manage consent for email and text messages in Customer Insights - Journeys
+            url: real-time-marketing-email-text-consent.md
+          - text: Select the audience source for journeys
+            url: real-time-marketing-audience-data.md
+      - linkListType: reference
+        links:
+          - text: Customer Insights - Journeys link tracking mechanics
+            url: real-time-marketing-link-tracking-mechanics.md
+
+  # Card
+  - title: Communication channels
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Create Customer Insights - Journeys emails
+            url: real-time-marketing-email.md
+          - text: Create push notifications
+            url: real-time-marketing-push-notifications.md
+          - text: Create outbound text messages
+            url: real-time-marketing-outbound-text-messaging.md
+          - text: Use AI-driven run-time channel optimization
+            url: real-time-marketing-channel-optimization.md
+
+  # Card
+  - title: Assets
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Customer Insights - Journeys asset library
+            url: real-time-marketing-asset-library.md
+
+  # Card
+  - title: Developer
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Push notification setup for application developers
+            url: real-time-marketing-developer-push.md
