@@ -11,7 +11,7 @@ search.audienceType:
 
 # Self-hosted custom event website
 
-[!INCLUDE[consolidated-sku-rtm-only](../../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
 
 Before you start hosting the self-hosted custom event website, complete the actions mentioned in [Prerequisites](event-management-web-application.md) topic.
 
@@ -69,4 +69,4 @@ ng build --prod
 
 You can find the built website in the **dist** folder of the root directory.
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](.././includes/footer-banner.md)]

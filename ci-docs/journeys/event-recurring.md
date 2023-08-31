@@ -13,7 +13,7 @@ search.audienceType:
 
 # Create and manage recurring events
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 If you host an event that occurs regularly, such as a monthly partner call, annual developers conference, or quarterly earnings presentation, then you might benefit by setting up a recurring event. Recurring events provide many benefits in situations like these, including:
 
@@ -110,4 +110,4 @@ To revert a customized event-series occurrence to a standard occurrence from tha
 
 1. Confirm the operation and then save your settings.
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

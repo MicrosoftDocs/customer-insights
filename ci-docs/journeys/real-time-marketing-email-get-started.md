@@ -13,7 +13,7 @@ search.audienceType:
 
 # Send a targeted email blast in Customer Insights - Journeys
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 A targeted email blast allows you to quickly reach a specific set of contacts that meet the criteria of your choosing. You may want to target parents in the fall for a back-to-school sale. Or, you may want to reach a subset of customers to tell them about a conference they may be interested in. Customer Insights - Journeys offers many ways to reach specific contacts, including email, text, and push messages. This article discusses how to reach contacts through a targeted email campaign.
 
@@ -72,4 +72,4 @@ After your journey has been running for a while, you’ll start to receive analy
 
 Once you’re ready to take your customer interactions to the next level, you can learn how to use triggers to reach customers in the moments that matter. Learn more: [Create a trigger-based journey](real-time-marketing-trigger-based-journey.md).
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

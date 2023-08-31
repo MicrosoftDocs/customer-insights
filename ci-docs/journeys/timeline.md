@@ -13,7 +13,7 @@ search.audienceType:
 
 # Customer interactions timeline
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 The interactions timeline for a contact or lead provides a unified view of historical interactions based on customer activities in Dynamics 365 Customer Insights - Journeys (both Customer Insights - Journeys and outbound), Sales, and Customer Service.
 
@@ -80,4 +80,4 @@ For more information, see [Use custom connectors with the timeline control](/pow
 > [!NOTE]
 > Customer Insights - Journeys activities from the past 12 months are shown in the timeline for the selected contact or lead. However, historical interactions from outbound marketing activities are only shown post the Customer Insights - Journeys installation date or May 2022, whichever is later.
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

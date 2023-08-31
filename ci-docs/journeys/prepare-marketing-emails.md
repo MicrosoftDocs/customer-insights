@@ -13,7 +13,7 @@ search.audienceType:
 
 # Email marketing overview
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5dOgZ]
 
@@ -66,4 +66,4 @@ Below is an overview of the general process for creating and sending a marketing
 
 1. Check your email results to [gain insights](insights.md) based on how contacts interacted with your messages.
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

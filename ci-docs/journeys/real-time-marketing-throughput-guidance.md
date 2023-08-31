@@ -13,7 +13,7 @@ search.audienceType:
 
 # Throughput guidance
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 In Dynamics 365 Customer Insights - Journeys, the [Service limits and fair use policy](fair-use-policy.md) article provides guidance on the scale that the service can support. The interaction limits on the document provide a maximum number of monthly interactions supported by the service today.
 

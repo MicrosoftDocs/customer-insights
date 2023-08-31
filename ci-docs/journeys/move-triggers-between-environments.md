@@ -13,7 +13,7 @@ search.audienceType:
 
 # Move triggers between environments (ALM process for triggers)
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 You may use multiple Dynamics 365 environments to support different stages of your application lifecycle management process. For example, you may have a development environment for creating and testing new features, a staging environment for pre-production testing, and a production environment for  final application deployment. Using multiple environments allows you to maintain separate configurations, isolate changes, and avoid potential conflicts that could impact your system’s stability.
 
@@ -130,4 +130,4 @@ Solution upgrades only change the state of the triggers when the triggers in the
     - **Self-serve**: One way to circumvent a potential issue where you see that imported "published" triggers are in a "draft" state for an extended period is to do a solution upgrade and reimport the trigger again.
     - **Reach out to your Microsoft representative**: Open a [support ticket](https://dynamics.microsoft.com/contact-us/) with the Microsoft support team to have one of the engineers investigate the issue and provide additional mitigation solutions.
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

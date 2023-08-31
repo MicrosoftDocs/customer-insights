@@ -16,7 +16,7 @@ search.audienceType:
 
 # Best practices for administration
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 Dynamics 365 Customer Insights - Journeys is a marketing-automation app that helps turn prospects into business relationships. The app is easy to use, works seamlessly with Dynamics 365 Sales, and has built-in business intelligence.
 
@@ -117,4 +117,4 @@ Dynamics 365 Customer Insights - Journeys is only available in certain geos. Ref
 
 If your tenant is in a non-supported geo, you can't deploy Customer Insights - Journeys in that geo. The tenant must be enabled for multi-geo before deploying Customer Insights - Journeys in a supported geo. In this scenario, open a support request to check for feasibility.
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

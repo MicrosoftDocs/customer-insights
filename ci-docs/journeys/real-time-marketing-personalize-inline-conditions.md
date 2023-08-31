@@ -13,7 +13,7 @@ search.audienceType:
 
 # How to use inline conditions
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 Conditional (if-then-else) statements display content depending on whether one or more conditional expressions resolve to true or false. You can add the code required to create conditional statements in the designer or the HTML view. You can then use the placeholder dialog to specify the condition to be evaluated. Below is an example of conditional expressions using placeholders to specify conditions.
 
@@ -97,4 +97,4 @@ Relative dates allow you to define conditions such as "Birthday is next month" o
 > [!div class="mx-imgBorder"]
 > ![Screenshot showing relative date settings.](media/real-time-marketing-relative.png)
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

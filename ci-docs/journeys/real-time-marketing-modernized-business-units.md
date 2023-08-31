@@ -13,7 +13,7 @@ search.audienceType:
 
 # Support for modernized business units
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 Sometimes, users need access to data across multiple business units. For example, a marketer responsible for leading the marketing initiatives across both US and European subdivisions of a company, both represented by business units in Dataverse, needs access to data from both the business units. With [modernized business units](/power-platform-release-plan/2021wave2/data-platform/modernize-business-units), Dataverse now allows users to have security roles from different business units at the same time.
 
@@ -103,4 +103,4 @@ To modify business unit of a form:
 
 Given that brand profiles are selected and included in an email, Dynamics 365 Customer Insights - Journeys doesn't support changing the business unit of an existing brand profile. However, users that have permissions for more than one business unit can select the specific business unit for which they want to create the brand profile.
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

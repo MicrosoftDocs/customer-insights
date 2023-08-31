@@ -13,7 +13,7 @@ search.audienceType:
 
 # Add custom fields to your event registration form
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 The default registration form presented by the event website includes fields for first name, last name, email address, and pass type (for paid events with at least one pass). If you'd like to receive additional information from attendees, such as for special needs, food allergies, or a gift preference, you can easily add these as custom fields to your registration form. You can choose which custom fields to add to each event, and your registration records will include the values submitted by registrants.
 
@@ -86,4 +86,4 @@ Each event registration record includes the values that the registrant entered f
 
 1. The **Registration responses** table here shows each custom field value that was submitted together with this event registration.
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

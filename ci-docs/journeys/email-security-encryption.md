@@ -13,7 +13,7 @@ search.audienceType:
 
 # Email security and connection encryption
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 Email security and encryption are essential for reliable email sending. There are two major security protocols used for email delivery: SSL and TLS.
 
@@ -32,4 +32,4 @@ Because not all email providers support connection encryption, it isn't advisabl
 
 The Dynamics 365 Customer Insights - Journeys sending infrastructure uses the most flexible and reliable option, opportunistic TLS. This allows senders to deliver emails to all recipients that they want to reach, providing the maximum email security that email recipients support.
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

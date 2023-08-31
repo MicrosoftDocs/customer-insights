@@ -14,7 +14,7 @@ search.audienceType:
 
 # Add dynamic content to email messages
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 [!INCLUDE[marketing-trial-cta](../shared/trials/marketing-trial-cta.md)]
 
@@ -417,4 +417,4 @@ The following example (also shown previously) shows how to use comments to enclo
 </ul>
 ```
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

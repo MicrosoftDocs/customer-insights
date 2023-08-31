@@ -13,7 +13,7 @@ search.audienceType:
 
 # View and create time-based items with the marketing calendar
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 The marketing calendar provides a calendar-style view where you can see and create time-based items like journeys, events, sessions, and appointments. It resembles Microsoft Outlook in both appearance and use.
 
@@ -91,4 +91,4 @@ To create a new calendar item while working in day or week view:
 1. A quick-create form opens from the side of the window. Use it to specify a few of the most important settings for the new item. (To make more detailed settings, you might need to open the record's full editing form later.)
 1. Select **Save** at the bottom of the quick-create form to save the new item.
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

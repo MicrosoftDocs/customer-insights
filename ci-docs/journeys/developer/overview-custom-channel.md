@@ -11,7 +11,7 @@ search.audienceType:
 
 # Overview of custom channels
 
-[!INCLUDE[consolidated-sku-rtm-only](../../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -26,4 +26,4 @@ The following illustration provides a high-level overview of the operation flow 
 2. On creation of the entity instance, the custom business logic present in a partner-developed plug-in or workflow is triggered, and interacts with the external service to execute custom operations. For example, send a message to the external service and receive a response from the external service.
 3. Activity execution feedback is processed through a custom action, **CustomChannelActivity CreateInteraction**, and the interactions are sent to the marketing-insights service to enable analytics and triggers on the interactions. For example, one message could generate three interactions: sent, delivered, opened.
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](.././includes/footer-banner.md)]

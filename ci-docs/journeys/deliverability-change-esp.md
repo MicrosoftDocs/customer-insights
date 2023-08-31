@@ -13,7 +13,7 @@ search.audienceType:
 
 # Deliverability recommendations when changing ESPs
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 Changing your email service provider (ESP) is a complex and sensitive process. Errors during the changeover process can negatively impact deliverability, resulting in reduced engagement.
 
@@ -69,4 +69,4 @@ To mitigate risks, we’ve assembled a list of recommendations to follow when sw
 
 Contact our [support team](/dynamics365/field-service/troubleshoot-faq#where-can-i-find-help-for-errors-unexpected-behavior-crashes-or-bugs) if you have any questions.
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

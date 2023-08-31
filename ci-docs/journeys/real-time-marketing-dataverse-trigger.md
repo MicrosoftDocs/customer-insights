@@ -13,7 +13,7 @@ search.audienceType:
 
 # Trigger a journey based on a Dataverse record change
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 Business transactions, whether they're initiated by a customer, a Dynamics 365 user, or by a system action are significant opportunities to create meaningful engagements with customers. Your customers commonly interact with several departments and functions throughout their lifetime. And many of these departments and functions have their own data associated with them.
 
@@ -104,4 +104,4 @@ There are several options available when testing Dataverse triggers:
 1. Using Power Apps, you can manually trigger the Dataverse trigger by performing the operation on the table that triggers it. For example, to trigger a "Lead created" Dataverse trigger, you can navigate to the Lead table in Power Apps and add a new row. This will invoke the trigger, which will then orchestrate the journey.
 1. The third approach is targeted at advanced users. Using the Dataverse SDK, to trigger a Dataverse trigger, a developer can perform an operation on the table related to the trigger. For example, to test an "Order completed" trigger, a developer can call a Dataverse API to update the status of an Order.
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

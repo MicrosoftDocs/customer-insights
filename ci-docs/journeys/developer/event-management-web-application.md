@@ -11,7 +11,7 @@ search.audienceType:
 
 # Event management web application overview
 
-[!INCLUDE[consolidated-sku-rtm-only](../../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
 
 The event management feature helps you to organize, manage, and process the events. When you install the event management solution, you get an event portal that gives the users a web application where they can get to know more about the event details. More information: [Event Portal](/dynamics365/customer-engagement/marketing/set-up-event-portal).
 
@@ -130,4 +130,4 @@ To expose the new field to be visible in the API, follow the steps below:
 1. Select the entity that you want an extra field to be visible in the **Selected Entity** field.
 1. Write a JSON array that contains the new custom field that should be visible through the API in the **Selected fields**. This exposes the new custom field through the API, and you can utilize it in the frontend.
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](.././includes/footer-banner.md)]

@@ -13,7 +13,7 @@ search.audienceType:
 
 # Customize the journey designer in Customer Insights - Journeys
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 Customization of your customer journeys is now available in Dynamics 365 Customer Insights - Journeys. Not only can you use out-of-the-box Customer Insights - Journeys capabilities to engage customers, but you can also now create personalized, flexible, and efficient solutions through Power Apps to better tailor Customer Insights - Journeys to meet your specific business needs.
 
@@ -49,4 +49,4 @@ Here's how you can achieve the above scenario through adding a campaign field in
 
 **Warning**: Please note that if you add a new tab on the journey designer, it will not be rendered. Only sections and fields under Settings show up on the journey canvas. 
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

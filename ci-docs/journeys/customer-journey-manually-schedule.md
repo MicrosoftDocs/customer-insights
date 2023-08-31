@@ -13,7 +13,7 @@ search.audienceType:
 
 # Manually schedule contacts and email delivery
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -43,4 +43,4 @@ Customer journeys feature multiple mechanisms that allow you to set schedules so
 > [!IMPORTANT]
 > If you use a recurrent journey and your contacts are still being held after a new iteration starts, the held contacts will be blocked from further processing on the previous iteration.
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

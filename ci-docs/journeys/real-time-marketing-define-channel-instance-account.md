@@ -13,7 +13,7 @@ search.audienceType:
 
 # Define an extended configuration entity for the channel instance account
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 Applicable channels: SMS only
 
@@ -80,4 +80,4 @@ For each custom channel solution, you need to:
 
       :::image type="content" source="media/real-time-marketing-sms-channel.png" alt-text="Screenshot of a form for an SMS channel." lightbox="media/real-time-marketing-sms-channel.png":::
 
-[!INCLUDE [footer-include](../includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

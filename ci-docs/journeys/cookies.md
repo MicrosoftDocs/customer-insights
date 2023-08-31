@@ -13,7 +13,7 @@ search.audienceType:
 
 # How Dynamics 365 Customer Insights - Journeys uses cookies
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 Dynamics 365 Customer Insights - Journeys identifies website visitors using a technology called *cookies*. A cookie is a small file that's sent by a server and saved by your browser. Each time you visit a server for which a cookie is set, your browser submits that cookie value back to the server. In this way, the cookie can provide a unique visitor ID, which enables the server to return information that is unique to you. This is the technology that originally made the online shopping cart possible.
 
@@ -71,4 +71,4 @@ MsCrmMkt.reconfigureTracking({Anonymize: false})
 
 Without non-essential cookies, Customer Insights - Journeys's tracking capabilities are limited. In some scenarios, users appear to be anonymous. For example, form submissions continue to work correctly as user identification is based on the submitted data not on cookies, but form prefill data won't work.
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

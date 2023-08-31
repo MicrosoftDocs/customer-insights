@@ -13,7 +13,7 @@ search.audienceType:
 
 # Set up business units and compliance profiles to support multi-brand businesses
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 Dynamics 365 Customer Insights - Journeys provides robust and configurable techniques to manage branding and compliance needs across multi-brand businesses. The approach to take depends on several factors including privacy, compliance, data access, and convenience. This article outlines some approaches, including their pros and cons.  
 
@@ -65,4 +65,4 @@ In addition, Contoso would create a separate business unit to support Contoso’
 
 The organizational approach supports critical data isolation requirements while also enabling Contoso United States to take advantage of cross-brand marketing opportunities as appropriate.
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

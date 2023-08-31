@@ -13,7 +13,7 @@ search.audienceType:
 
 # Uninstall Dynamics 365 Customer Insights - Journeys
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 You can remove the Customer Insights - Journeys application from any Dynamics 365 instance where it's installed. After removing it, you'll end up with a Customer Insights - Journeys license that you can use on another Dynamics 365 instance, if desired.
 
@@ -58,4 +58,4 @@ To reset a portal:
 1. Follow the instructions provided in [Reset a portal](/powerapps/maker/portals/admin/reset-portal).
 1. Portal reset leaves behind its website bindings, which may prevent you from reusing your portal name. Therefore, you should always delete all website bindings that are related to the portals used by your uninstalled Customer Insights - Journeys instance. More information: [Create and manage website bindings](/powerapps/maker/portals/configure/website-bindings)
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

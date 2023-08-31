@@ -13,14 +13,14 @@ search.audienceType:
 
 # Set up the LinkedIn Lead Gen integration and define lead matching
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
 
 Use the settings pages under the **Settings** > **Lead management** heading to configure the LinkedIn feature. A few LinkedIn security roles are also provided to let administrators control access to these features.
 
-[!INCLUDE [cc-linkedin-disclaimer](../includes/cc-linkedin-disclaimer.md)]
+[!INCLUDE [cc-linkedin-disclaimer](./includes/cc-linkedin-disclaimer.md)]
 
 ## Enable users to work with the connector and assign security roles to users
 
@@ -101,4 +101,4 @@ Only mapped fields can be saved with your lead record in Dynamics 365, and when 
 2. Select the field mapping that you want to remove.
 3. Select **Delete** on the command bar and confirm the deletion.
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

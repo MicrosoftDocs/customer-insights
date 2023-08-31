@@ -13,7 +13,7 @@ search.audienceType:
 
 # Warm-up process for marketing senders
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 Domain warming is the process of methodically adding email volume to a new domain over several days or weeks. Gradually “warming up" the domain establishes a positive sending reputation with mailbox providers.
 

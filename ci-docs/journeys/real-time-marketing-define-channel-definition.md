@@ -15,7 +15,7 @@ search.audienceType:
 
 # Define the custom channel
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 Applicable channels: SMS, custom
 
@@ -102,4 +102,4 @@ The following samples include unpacked solutions for Dataverse and plugins proje
 
     `pac solution pack --zipfile C:\tmp\SampleCustomChannelSolution.zip -f src\Solutions\Samples\SampleCustomChannel\SampleCustomChannel.Solution\unmanaged --packagetype Both`
 
-[!INCLUDE [footer-include](../includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

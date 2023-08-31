@@ -13,7 +13,7 @@ search.audienceType:
 
 # Set up automatic lead generation and scoring
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -104,4 +104,4 @@ To create a lead scoring model:
 
 14. Look for the **Lead Scores** section near the lower-right corner of the page (you might need to scroll). Each lead scoring model is listed here, including your new one. It might take a few minutes for the score to be calculated, but after it is, you should see that it shows a score of 110 points.
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

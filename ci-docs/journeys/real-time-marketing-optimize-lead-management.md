@@ -13,7 +13,7 @@ search.audienceType:
 
 # Create sales activities from lead signals
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 When using journeys to nurture leads and opportunities, it's important to pay attention to signals that may indicate a sense of urgency or interest from the leads. Signals may include enhanced engagement with your marketing messages or increased activity on your website or social media channels.
 

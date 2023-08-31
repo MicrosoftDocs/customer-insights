@@ -13,7 +13,7 @@ search.audienceType:
 
 # Create Customer Insights - Journeys emails
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 The Customer Insights - Journeys email editor shares much of its look and feel with the [outbound marketing email editor](prepare-marketing-emails.md). As with the outbound marketing email editor, the Customer Insights - Journeys editor allows you to quickly create personalized emails to capture your customers' attention.
 
@@ -97,4 +97,4 @@ You can send the preview email to yourself or another test email address to veri
 
 [Grow your business with multi-brand, custom preference centers](real-time-marketing-compliance-settings.md)
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

@@ -13,7 +13,7 @@ search.audienceType:
 
 # Collaborate using built-in Microsoft Teams chat
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 Creating great marketing content and journeys is a team effort. With Microsoft Teams chat, you can collaborate with your team without leaving the journey canvas or the email editor. For example, after you create an email, you can tag someone to review your content. Or, while creating a journey, you can collaborate with a coworker to decide which data to use in a branch. This gives you the added benefits of seeing feedback over time and being able to refer to previous comments people made.
 
@@ -149,4 +149,4 @@ Your administrator can extend the list of supported record types if needed. To e
 
 To set the chat title to be used as the record title by default, enable the **Auto-name chats** toggle in the **Lead settings** area and then select **Save**. Users can later change the title if they want.
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

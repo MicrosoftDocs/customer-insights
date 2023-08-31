@@ -13,7 +13,7 @@ search.audienceType:
 
 # Design and run A/B tests on your email designs
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -179,4 +179,4 @@ To replace version A with version B from a selected test:
 
 1. You're prompted to confirm the action. If you're sure you want to continue, then confirm and then save your message.
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

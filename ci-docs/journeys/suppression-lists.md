@@ -13,7 +13,7 @@ search.audienceType:
 
 # How Dynamics 365 Customer Insights - Journeys uses suppression lists
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 A suppression list is a powerful backend tool that ensures your sending reputation stays healthy. Suppression lists prevent email messages from being sent to harmful recipient addresses.
 
@@ -79,4 +79,4 @@ Here are some tips to avoid email suppression lists:
 
 It's the sender's responsibility to maintain a clean email list and ensure that their email campaigns comply with email marketing best practices. By following these tips, you can avoid having your email addresses bounced and listed on suppression lists and maintain a healthy email reputation.
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

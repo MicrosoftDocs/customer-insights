@@ -11,7 +11,7 @@ search.audienceType:
 
 # Step 1: Create required entities and forms for custom channel
 
-[!INCLUDE[consolidated-sku-rtm-only](../../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -30,4 +30,4 @@ More information:
 > [Step 2: Configure the tile for custom channel](configure-tile-custom-channel.md)
 
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](.././includes/footer-banner.md)]

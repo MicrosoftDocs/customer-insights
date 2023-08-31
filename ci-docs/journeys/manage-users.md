@@ -13,7 +13,7 @@ search.audienceType:
 
 # View and edit basic user information in Dynamics 365 Customer Insights - Journeys
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 The Customer Insights - Journeys application provides an overview of users licensed to use the app and lets you view and edit basic information about them.
 
@@ -26,4 +26,4 @@ The list provides standard tools to search, sort, and page through the list as n
 
 To create new users, grant licenses, and manage permissions for users, you must work in the Microsoft 365 admin center and/or the advanced settings for Dynamics 365. For details about these operations, see [Manage user accounts, licenses, and roles](admin-users-licenses-roles.md)
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

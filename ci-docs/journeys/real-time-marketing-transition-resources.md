@@ -13,7 +13,7 @@ search.audienceType:
 
 # Real-time transition resources
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 The following resources were created to help you transition from outbound to Dynamics 365 Customer Insights - Journeys as smoothly as possible.
 

@@ -13,7 +13,7 @@ search.audienceType:
 
 # Create and customize template labels
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -173,4 +173,4 @@ To set the field used to define label options for a design entity:
 
 If you've customized the fields used to present your labels, then you must also update the relevant template-entity forms to provide the field as a setting for users. Use standard techniques for model-driven apps in Power Apps to make these settings. More information: [Create and design model-driven app forms](/powerapps/maker/model-driven-apps/create-design-forms) and [Understand model-driven app views](/powerapps/maker/model-driven-apps/create-edit-views).
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

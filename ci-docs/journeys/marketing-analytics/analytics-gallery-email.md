@@ -14,7 +14,7 @@ search.audienceType:
 
 # Email marketing analytics report for Dynamics 365 Customer Insights - Journeys
 
-[!INCLUDE[consolidated-sku-rtm-only](../../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -120,4 +120,4 @@ This important report shows all the sending failures and blocked emails that occ
 ***Happy analytics reporting with Dynamics 365 Customer Insights - Journeys!***
 
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](.././includes/footer-banner.md)]

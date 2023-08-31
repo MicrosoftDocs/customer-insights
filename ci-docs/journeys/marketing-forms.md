@@ -13,7 +13,7 @@ search.audienceType:
 
 # Set up and manage marketing forms for use in marketing pages
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide). To learn about marketing forms in Customer Insights - Journeys, see [Overview of Customer Insights - Journeys forms](real-time-marketing-form-overview.md)
@@ -247,4 +247,4 @@ More information: [The form element for marketing pages](content-blocks-referenc
 
 Once your form is part of a live marketing page, it will start to collect information about how people are using it, including records of form submissions and other details. The system provides a wealth of information, including analytics, KPIs, graphs, and more, to help you gain insights from your marketing results. More information: [Analyze results to gain insights from your marketing activities](insights.md)
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

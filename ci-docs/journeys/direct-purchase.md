@@ -13,7 +13,7 @@ search.audienceType:
 
 # Purchase a license directly from a trial
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE55wwx]
 
@@ -87,4 +87,4 @@ Learn more: [Manage self-service purchases (Users)](/microsoft-365/commerce/subs
 
 Put simply, the purchaser controls anything money-related. The tenant administrator can cancel the subscription but can't make a user pay more or less and can't take something a user paid for and give it to someone else.
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

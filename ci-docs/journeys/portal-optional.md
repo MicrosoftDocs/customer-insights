@@ -13,7 +13,7 @@ search.audienceType:
 
 # Integrate Dynamics 365 Customer Insights - Journeys with a CMS system, Dynamics 365 Portals, or Power Apps portals
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 Read this topic to learn how you can run interactive marketing features for Customer Insights - Journeys by using an integrated Dynamics 365 Portal, Power Apps portals, or by using your own website or CMS system.
 
@@ -132,4 +132,4 @@ To create a new portal and associate it with the Customer Insights - Journeys ap
 
 1. Select **Set up portal** to start setting up your portal. The process may take some time. You can track its progress by leaving the page open in your browser, but installation will continue uninterrupted if you choose to close your browser.
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

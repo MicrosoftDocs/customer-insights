@@ -13,7 +13,7 @@ search.audienceType:
 
 # Create and deploy Word templates
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 Microsoft Word provides powerful ways to present your Dynamics 365 data in a standardized and well-formatted document. With Word templates, you can easily create and share your template with others, so all the documents that go out to your customers have a consistent look that matches your organization's branding.
 
@@ -140,4 +140,4 @@ An administrator can use the **Settings** page to upload the Word template into 
 
 1. Select the **X** icon in the upper right of the top ribbon to close the information screen.
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

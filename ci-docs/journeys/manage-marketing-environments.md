@@ -13,7 +13,7 @@ search.audienceType:
 
 # Manage your Dynamics 365 Customer Insights - Journeys environments
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 Environment-management operations are a standard feature of model-driven apps in Dynamics 365 (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Customer Insights - Journeys, and Dynamics 365 Project Service Automation). Customer Insights - Journeys, however, adds significant complexity to the system, so there are several extra considerations to keep in mind when you have Customer Insights - Journeys installed.
 
@@ -223,4 +223,4 @@ For standard Dynamics 365 environments (without Customer Insights - Journeys ins
 
 For standard Dynamics 365 environments (including Customer Insights - Journeys), you can use the Power Platform admin center to change the URL of the environment. Learn more: [Edit properties of an environment](/power-platform/admin/edit-properties-environment).
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

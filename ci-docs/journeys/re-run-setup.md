@@ -13,7 +13,7 @@ search.audienceType:
 
 # Re-run the Customer Insights - Journeys setup wizard
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 In addition to helping you install Dynamics 365 Customer Insights - Journeys for the first time, the setup wizard can also help you modify, maintain, or update your installation. You can do all of the following by re-running the setup wizard:
 
@@ -48,4 +48,4 @@ To re-run the Customer Insights - Journeys setup wizard:
 
     If your selected Customer Insights - Journeys instance isn't currently integrated with a Power Apps portal, then you can set this up by selecting **Use Dynamics 365 Portals or a Power Apps portal** in the main area of the window. More information: [Integrate Customer Insights - Journeys with a CMS system or Power Apps portal](portal-optional.md)
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

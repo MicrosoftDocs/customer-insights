@@ -13,7 +13,7 @@ search.audienceType:
 
 # Create and use event templates
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 If you often create similar events, then you can save time by setting up one or more event templates. Each template can hold all the same settings as a standard event, including:
 
@@ -70,4 +70,4 @@ To view the event templates available on your system:
 
 3. The list now shows only event templates. You can open and work with these templates just as you can with standard events. Changes you make to a template won't affect events that were created based on that template.
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

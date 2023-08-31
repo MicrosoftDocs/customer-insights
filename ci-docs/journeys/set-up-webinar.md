@@ -13,7 +13,7 @@ search.audienceType:
 
 # Set up a webinar
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 A *webinar* (short for "web seminar") is a live event that one or more people can watch simultaneously online. You can set up any session or event to function as a webinar. An event or session can be webinar-only (where live attendance is not possible) or a simulcast for attendees who can't make it to the venue to attend a live event. You can also set an event or session as onsite only, which will disable webinars for that item and hide its webinar settings.
 
@@ -52,4 +52,4 @@ Attendees can join the webinar by selecting a link sent to them in email. Some w
 
 If you want to send out the links yourself then one way to do so is to set up a [customer journey](customer-journeys-create-automated-campaigns.md) with an event tile followed by a trigger tile that reacts to event registrations and then an email tile that sends a message with the URL to each contact that registers.
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

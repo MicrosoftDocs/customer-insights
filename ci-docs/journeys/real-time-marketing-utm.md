@@ -13,7 +13,7 @@ search.audienceType:
 
 # Measure marketing effectiveness using UTM codes
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RW10UxA]
 
@@ -107,4 +107,4 @@ To guarantee that tracking links are always included (the links don’t require 
 > [!div class="mx-imgBorder"]
 > ![Screenshot showing get tracking consent set to no and default tracking to track.](media/real-time-marketing-utm-get-consent-no.png "Screenshot showing get tracking consent set to no and default tracking to track")
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

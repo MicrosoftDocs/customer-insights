@@ -13,7 +13,7 @@ search.audienceType:
 
 # Personalize journey variations using multiple journey branches
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 Journey branches let you create personalized journeys for customers, engaging them in different ways based on who they're and their past actions. Now, you can create more than two branches at any given step in the journey, creating more fine-grained personalization and engaging each customer differently based on their unique profile and behavioral signals. This eliminates the need to make complicated nested, cascading branches and makes analyzing journeys easier. In addition, you can merge the branches back so that customers can continue the common journey steps after going through their specialized branch.
 
@@ -60,4 +60,4 @@ Journey branches let you create personalized journeys for customers, engaging th
     > [!div class="mx-imgBorder"]
     > ![Different links as branching options screenshot.](media/real-time-marketing-multiple-branches-links.png "Different links as branching options screenshot")
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

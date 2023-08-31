@@ -11,7 +11,7 @@ search.audienceType:
 
 # Account-based marketing
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -209,4 +209,4 @@ To view and assign which contact and/or account is associated with each lead, op
 
 The account entity provides marketing results, KPIs, and insights that are like those provided for contacts. Use them to see email results, web visits, event registrations, form submissions, and many other interaction details that were collected for all contacts that belong to the displayed account. For details about how to find the account insights and interpret their results, see [Analyze results to gain insights from your marketing activities](insights.md).
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

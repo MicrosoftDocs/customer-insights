@@ -13,7 +13,7 @@ search.audienceType:
 
 # Set up event administration options and webinar provider accounts
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 The **Event management** settings let you set up the connections to your webinar provider accounts and set up a few defaults for event administration. 
 
@@ -122,6 +122,6 @@ For more information about how to use the events API, including how to use the *
 
 ## Privacy notice
 
-[!INCLUDE[cc-privacy-events-webinar](../includes/cc-privacy-events-webinar.md)]
+[!INCLUDE[cc-privacy-events-webinar](./includes/cc-privacy-events-webinar.md)]
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

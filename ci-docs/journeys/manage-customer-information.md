@@ -13,7 +13,7 @@ search.audienceType:
 
 # Manage information about your current and prospective customers
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -78,4 +78,4 @@ More information: [The lead lifecycle](lead-lifecycle.md)
 
 Once you have Customer Insights - Journeys installed, your instance will be begin to collect information about how each of these entities interacts with your marketing activities. The system provides a wealth of information, including analytics, KPIs, graphs, and more, to help you gain insights from your marketing results. More information: [Analyze results to gain insights from your marketing activities](insights.md)
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

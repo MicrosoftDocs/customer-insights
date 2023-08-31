@@ -13,7 +13,7 @@ search.audienceType:
 
 # Receiving notifications and creating interactions
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 Notifications received from Dynamics 365 Customer Insights - Journeys have an additional payload containing links and a **trackingId** for interaction event creation.
 
@@ -693,4 +693,4 @@ AsyncTask.execute(new Runnable() {
             } 
         }); 
 ```
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

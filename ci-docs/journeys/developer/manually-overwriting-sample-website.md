@@ -11,7 +11,7 @@ search.audienceType:
 
 # Manually overwriting sample website
 
-[!INCLUDE[consolidated-sku-rtm-only](../../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
 
 The standard process of updating an event management website is to download a newer version and run the provided script to push the changes to the [Dynamics 365 Customer Insights - Journeys](/dynamics365/customer-engagement/marketing/trial-signup) instance described in [Power Apps portal hosted](portal-hosted.md#deployment). 
 
@@ -61,4 +61,4 @@ Manually overwriting the event management website overwrites the possible custom
 | 1.1.1006 (February 2018 Release) | [Download](https://download.microsoft.com/download/1/5/0/150757D0-2600-493B-8C9A-3213AD873A73/PortalData-Feb18-1.1.1006.zip) |
 | 1.0.1005 (Public Preview) | [Download](https://download.microsoft.com/download/1/5/0/150757D0-2600-493B-8C9A-3213AD873A73/PortalData-PublicPreview-1.0.1005.zip) |
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](.././includes/footer-banner.md)]

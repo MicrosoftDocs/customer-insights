@@ -13,7 +13,7 @@ search.audienceType:
 
 # Analyze results to gain insights from your marketing activities
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -282,4 +282,4 @@ Redirect URLs provide the following [categories](#categories) on the **Insights*
 - **Overview**: Displays a map that shows where people were when they selected the redirected link.
 - **Timeline**: Shows a table with details about each time the redirect URL was selected.
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

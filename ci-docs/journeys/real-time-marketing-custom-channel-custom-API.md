@@ -13,7 +13,7 @@ search.audienceType:
 
 # Define custom APIs
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 ## Outbound custom API
 
@@ -80,4 +80,4 @@ The inbound custom API calls the **msdyn_D365ChannelsInbound** API with the cont
   - **OrganizationId**: string – The organization ID.
   - **Message**: Dictionary <string, string> - Contains all the message parts for a channel.
 
-[!INCLUDE [footer-include](../includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

@@ -14,7 +14,7 @@ search.audienceType:
 
 # Tutorials for specific scenarios
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -33,4 +33,4 @@ When you have completed the exercises here, you'll be able to:
 
 The exercises in this chapter assume you are already familiar with the functionality described in the [Basic tutorials](basic-tutorials.md) chapter, but they don't build on each other, so you can pick and choose the exercises that interest you most.
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

@@ -13,7 +13,7 @@ search.audienceType:
 
 # Design lead-scoring models
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -184,4 +184,4 @@ To find all the leads that a selected model has scored:
 
 1. A new **Lead scores** tab is added and opened. Here you can see each lead that your selected model has scored, plus the score and grade for each of them. You can select any listed lead to open it, or select **Export lead scores** to download the list as an Excel file.
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

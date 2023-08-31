@@ -13,7 +13,7 @@ search.audienceType:
 
 # Set up the event website
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 The event website provides an online resource where people can read about your event and its speakers, create an account, register for the event, purchase passes, view their session schedule, and more. The following image shows a simplified site map of your event website as your attendees will see it.
 
@@ -171,6 +171,6 @@ Where:
 
 ## Privacy notice
 
-[!INCLUDE[cc-marketing-cookies](../includes/cc-marketing-cookies.md)]
+[!INCLUDE[cc-marketing-cookies](./includes/cc-marketing-cookies.md)]
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

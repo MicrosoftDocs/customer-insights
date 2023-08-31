@@ -13,7 +13,7 @@ search.audienceType:
 
 # Invite, register, and house event attendees
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 After your event is fully modeled in Dynamics 365 Customer Insights - Journeys, you're ready to start promoting it. The system provides many tools to help you do this.
 
@@ -54,4 +54,4 @@ If your organization has set up hotels and room allocations for your event in Cu
 
 More information: [Manage attendee logistics and accommodation availability](manage-event-logistic.md)
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

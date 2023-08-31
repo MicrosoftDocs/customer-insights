@@ -13,7 +13,7 @@ search.audienceType:
 
 # Browser and system requirements
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 Dynamics 365 Customer Insights - Journeys is a cloud-based service that doesn't require special software other than an up-to-date web browser, though some restrictions apply. Read this topic to find out which devices, browser, and browser settings you should use when working with Dynamics 365 Customer Insights - Journeys.
 
@@ -62,4 +62,4 @@ If you're using Microsoft Edge on a touch device, such as a tablet, then you mus
 
 Marketing emails created and delivered using Dynamics 365 Customer Insights - Journeys, including all templates included with Dynamics 365 Customer Insights - Journeys, will render correctly on a wide range of recipient email clients, though older clients typically support fewer formatting options. For a complete list of tested email clients, see [Tested email clients](email-templates.md#tested-clients)
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

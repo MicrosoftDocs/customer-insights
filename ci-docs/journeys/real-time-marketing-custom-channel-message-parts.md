@@ -13,7 +13,7 @@ search.audienceType:
 
 # Define the message parts
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 Applicable channels: SMS, custom
 
@@ -71,4 +71,4 @@ Example of customizations.xml including message parts:
 </ImportExportXml>
 ```
 
-[!INCLUDE [footer-include](../includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

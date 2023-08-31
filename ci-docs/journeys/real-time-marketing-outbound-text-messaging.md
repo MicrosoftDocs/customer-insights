@@ -13,7 +13,7 @@ search.audienceType:
 
 # Create outbound text messages
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 Text messages (SMS) allow you to reach customers directly on their mobile devices. You can send text messages from Dynamics 365 Customer Insights - Journeys by generating a phone number to use within the app. This article explains how to add a phone number generated in the Azure Communication Services preview, Infobip, LINK Mobility, Telesign or Twilio and how to create and send text messages in Customer Insights - Journeys.
 
@@ -183,4 +183,4 @@ You can see how customers react to your text messages by checking the text messa
 > [!NOTE]
 > Delivery reports for text messages are received from different carriers in every country or region. This might result in false positives or negatives at times, depending on the carrier. Consider this when you check the delivery reports of your text messages.
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

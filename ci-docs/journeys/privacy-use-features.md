@@ -13,7 +13,7 @@ search.audienceType:
 
 # Outbound marketing compliance settings
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -216,4 +216,4 @@ Once you've enabled auditing for contacts, you are able to view a record of chan
 > [!div class="mx-imgBorder"]
 > ![Filter audit history by consent given.](media/gdpr-audit-history2.png)
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

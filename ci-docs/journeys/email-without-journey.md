@@ -13,7 +13,7 @@ search.audienceType:
 
 # Use "Send now" to send emails instantly
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > The "Send now" functionality described in this article, **only** applies to Customer Insights - Journeys, not outbound marketing.
@@ -43,4 +43,4 @@ To begin your email sending process, follow these steps:
 - Outbound marketing segments that have never been used in a Customer Insights - Journeys don't work with the **Send Now** functionality. Once an outbound marketing segment has been used in a Customer Insights - Journeys successfully, it's been processed and you can use it with the **Send Now** functionality.
 - Sending emails without building a journey will not stop the user from selecting an email and a segment from different business units.
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

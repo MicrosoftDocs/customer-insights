@@ -13,7 +13,7 @@ search.audienceType:
 
 # Open the Power Apps customization window
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 Most types of customizations require you to work in the **Power Apps** customization window. To get there:
 
@@ -28,4 +28,4 @@ Most types of customizations require you to work in the **Power Apps** customiza
 For complete details about how to customize model-driven apps in Dynamics 365, see the [Power Apps documentation](/powerapps/?panel=getstarted#pivot=home).
 
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

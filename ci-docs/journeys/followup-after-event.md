@@ -13,7 +13,7 @@ search.audienceType:
 
 # Evaluate your event and follow up with attendees
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 After an event is over, you'll want to evaluate how it went and start following up.
 
@@ -23,7 +23,7 @@ Dynamics 365 Customer Insights - Journeys includes Customer Voice, which is a fe
 
 To promote the survey, you might create a marketing email message that links to it and deliver that message to a segment of attendees that you've set up. You might even provide an incentive for submitting the survey, such as a free download. You can include this message in the same customer journey that you used to promote the event, but use trigger and scheduler tiles to ensure the message is only sent after the event, and only to people who attended.
 
-[!INCLUDE [cc-marketing-surveys-disclaimer](../includes/cc-marketing-surveys-disclaimer.md)]
+[!INCLUDE [cc-marketing-surveys-disclaimer](./includes/cc-marketing-surveys-disclaimer.md)]
 
 More information:
 
@@ -48,4 +48,4 @@ By the time your event is finished, you'll have generated a wealth of new data i
 - **The event management dashboard**: This dashboard gives a broad overview of your event planning activities and results from all your events. You can view it by choosing **Event Management Dashboard** from the view selector at the top of any dashboard page in Dynamics 365. More information: [The event management dashboard](event-management-dashboard.md)
 - **Event records**: [Open the Events work area](open-events.md), go to **Events** > **Event** > **Events**, and open the main event record for your event to see results and analytics that relate to that event only. These offer much more detail than the dashboard does about many aspects of the event.
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

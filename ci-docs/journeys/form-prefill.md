@@ -13,7 +13,7 @@ search.audienceType:
 
 # Enable prefilling for marketing forms
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -88,4 +88,4 @@ More information: [Set up subscription lists and subscription centers](set-up-su
 
 If you have embedded a marketing form on an external website (such as your own organization's website), rather than publishing it on a marketing page published on a Power Apps portal, you must authenticate the domain where you have embedded the form and also configure the form to enable prefill. For instructions, see [Integrate with forms published on an external website](embed-forms.md).
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

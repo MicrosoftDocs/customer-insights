@@ -11,7 +11,7 @@ search.audienceType:
 
 # Customize the response from the events API
 
-[!INCLUDE[consolidated-sku-rtm-only](../../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
 
 The events API allows you to expose custom fields of event management entities. That means you can access all those fields that have been added to an entity by the customer.
 
@@ -40,4 +40,4 @@ To create a new website entity configuration:
 [“statuscode”, “my_custom_field”]
 ```
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](.././includes/footer-banner.md)]

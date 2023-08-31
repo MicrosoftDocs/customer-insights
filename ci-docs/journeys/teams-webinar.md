@@ -13,7 +13,7 @@ search.audienceType:
 
 # Use Microsoft Teams for Dynamics 365 Customer Insights - Journeys online events
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4J4cV]
 
@@ -286,4 +286,4 @@ In scenarios where event record changes aren’t propagated to Teams, the Custom
 
 Once the live event is over, attendees can view the event recording by navigating to the attendee URL from their email. The recording will be available if the creator of the live event in Customer Insights - Journeys sets the **Recording available to attendees** flag to **Yes**.
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

@@ -13,7 +13,7 @@ search.audienceType:
 
 # Create interactive features with or without portals
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -64,4 +64,4 @@ To set up your own custom portals solutions, you must work with the full Power A
 
 For complete details about how to work with the portals solution, see [its online help](/powerapps/maker/portals/overview).
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

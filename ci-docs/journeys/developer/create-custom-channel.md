@@ -11,7 +11,7 @@ search.audienceType:
 
 # Create a custom channel for customer journeys
 
-[!INCLUDE[consolidated-sku-rtm-only](../../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -27,4 +27,4 @@ Creating a custom channel for customer journeys broadly involves the following s
 > 
 > [Step 4: Test your custom channel tile](test-custom-channel-tile.md)
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](.././includes/footer-banner.md)]

@@ -13,7 +13,7 @@ search.audienceType:
 
 # Customer Insights - Journeys administrator settings
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 This article describes administrator settings required for Customer Insights - Journeys features.
 
@@ -31,4 +31,4 @@ The **Business** categorization allows business data to be shared with Power Aut
 
 Learn more about connector settings and DLP policies: [Connector classification](/power-platform/admin/dlp-connector-classification).
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

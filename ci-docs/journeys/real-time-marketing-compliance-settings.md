@@ -13,7 +13,7 @@ search.audienceType:
 
 # Manage user compliance settings in Customer Insights - Journeys
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 Managing compliance settings is key to ensuring your business processes conform with privacy laws such as the GDPR. This article gives an overview of administrator compliance setup, preference centers, and Customer Insights - Journeys concepts. For information on outbound marketing compliance, visit [Outbound marketing compliance settings](privacy-use-features.md).
 
@@ -77,4 +77,4 @@ To learn more about preference centers, visit [Customer Insights - Journeys pref
 [Customer Insights - Journeys preference centers](real-time-marketing-preference-centers.md)
 [Outbound marketing compliance settings](gdpr-use-features.md)
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

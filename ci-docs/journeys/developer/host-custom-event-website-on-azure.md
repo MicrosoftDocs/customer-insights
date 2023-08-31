@@ -11,7 +11,7 @@ search.audienceType:
 
 # Host your custom event website on Azure
 
-[!INCLUDE[consolidated-sku-rtm-only](../../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
 
 This topic walks you through the process of hosting your custom event website on **Azure**. More information [Build and host custom event website](event-management-web-application.md).
 
@@ -86,4 +86,4 @@ To use event management public API, you need a web application token. The web ap
 5. Upload all the files that you have generated before located in `dist/self-hosted` folder into the `$web` blob container. 
 6. To see the custom event website in run time, copy the **Origin** field value from the web application record in Dynamics 365 Customer Insights - Journeys and open it in the browser.
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](.././includes/footer-banner.md)]

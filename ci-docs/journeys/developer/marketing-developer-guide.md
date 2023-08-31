@@ -11,7 +11,7 @@ search.audienceType:
 
 # Developer guide
 
-[!INCLUDE[consolidated-sku-rtm-only](../../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -45,4 +45,4 @@ search.audienceType:
 [Outbound marketing user guide](../../marketing/user-guide.md)  
 [Developer guide for Dynamics 365](../../customerengagement/on-premises/developer/overview.md) 
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](.././includes/footer-banner.md)]

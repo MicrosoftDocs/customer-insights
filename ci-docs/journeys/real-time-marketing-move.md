@@ -13,7 +13,7 @@ search.audienceType:
 
 # Move from outbound marketing to Customer Insights - Journeys
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 Customer Insights - Journeys is the next generation of real-time marketing features. As Customer Insights - Journeys continues to evolve, almost all the current capabilities and features of outbound marketing will become available in Customer Insights - Journeys along with many more modern and enhanced capabilities. You should utilize Customer Insights - Journeys unless there's a dependency on a specific feature or limitation that hasn't yet been addressed in Customer Insights - Journeys.
 

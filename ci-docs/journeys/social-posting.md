@@ -13,7 +13,7 @@ search.audienceType:
 
 # Social media posting with Dynamics 365 Customer Insights - Journeys
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -70,4 +70,4 @@ Posts that were already sent are read-only, so you can't change or reschedule th
 > [!NOTE]
 > Posts that were made to the Instagram channel cannot be removed by the Customer Insights - Journeys app; Instagram does not provide this functionality. To remove the post from Instagram, go to Instagram and manually remove it.
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

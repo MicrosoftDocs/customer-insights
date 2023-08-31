@@ -15,7 +15,7 @@ search.audienceType:
 
 # Manually add a custom channel
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 Dynamics 365 Customer Insights - Journeys supports **Email**, **Push**, and **SMS** channels natively. To use a type of channel or an SMS provider that isn't supported natively, you can [install a custom channel](real-time-marketing-create-custom-channels.md). If the channel isn't already provided in AppSource, you can create and install it manually.
 
@@ -69,4 +69,4 @@ The following samples include unpacked solutions for Dataverse and plugins proje
 
     `pac solution pack --zipfile C:\tmp\SampleCustomChannelSolution.zip -f src\Solutions\Samples\SampleCustomChannel\SampleCustomChannel.Solution\unmanaged --packagetype Both`
 
-[!INCLUDE [footer-include](../includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

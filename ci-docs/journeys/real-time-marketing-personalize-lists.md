@@ -13,7 +13,7 @@ search.audienceType:
 
 # Personalize lists of content in emails
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 Lists (each) statements allow you to format and display repeated content for a given table. You can add the code required to create these statements in the designer or in the HTML view. You can then use the placeholder dialog to specify the list to be evaluated including the number of rows to display and the order to display them in.
 
@@ -107,4 +107,4 @@ To add a filter condition, select **+Add list filter** in the list editing pane.
 
 With this condition defined, only the items that meet the condition will be included. Note that the generated code for the list doesn’t change as the filter condition is stored within the list definition and isn't needed as inline code.
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

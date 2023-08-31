@@ -13,7 +13,7 @@ search.audienceType:
 
 # Configure form matching
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 Form matching defines how form submissions are matched to existing contacts or leads when deciding whether to update an existing record or to create a new one.
 
@@ -44,4 +44,4 @@ Use the buttons in the toolbar for the **Attributes** section to add, edit, and 
 > [!IMPORTANT]
 > Your Business Scoping configuration affects how the matching strategies work. Learn more: [Lead and contact creation, matching, and scoring](business-units-support-outbound-marketing.md#lead-and-contact-creation-matching-and-scoring).
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

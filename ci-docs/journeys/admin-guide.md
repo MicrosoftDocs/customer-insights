@@ -14,7 +14,7 @@ search.audienceType:
 
 # Administrator guide
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 <table>
 
@@ -78,4 +78,4 @@ search.audienceType:
 </table>
 
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

@@ -13,7 +13,7 @@ search.audienceType:
 
 # Set up Dynamics 365 Customer Insights - Journeys
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 This article explains how to set up a new Customer Insights - Journeys environment.
 
@@ -106,6 +106,6 @@ To set up a new Customer Insights - Journeys environment:
 
 ## Privacy notice
 
-[!INCLUDE[cc-privacy-marketing-fre](../includes/cc-privacy-marketing-fre.md)]
+[!INCLUDE[cc-privacy-marketing-fre](./includes/cc-privacy-marketing-fre.md)]
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

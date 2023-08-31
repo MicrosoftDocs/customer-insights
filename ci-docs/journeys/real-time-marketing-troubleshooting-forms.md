@@ -13,7 +13,7 @@ search.audienceType:
 
 # Troubleshooting Customer Insights - Journeys forms
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 This article explains how troubleshoot forms in Customer Insights - Journeys.
 
@@ -29,4 +29,4 @@ This feature uploads a page with form on CDN. If the operation fails, try to run
 
 The form editor can remove unknown code from the body. [Learn more](real-time-marketing-manage-forms.md#add-custom-javascript-to-your-form) about how to customize your form using JavaScript.
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

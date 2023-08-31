@@ -13,7 +13,7 @@ search.audienceType:
 
 # Register link clicks and website visits
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -23,7 +23,7 @@ You can measure customer engagement with your website, banner ads, and other onl
 - Adding a script to the pages of your website that enables Dynamics 365 Customer Insights - Journeys to record how people use your website and to connect browsing records to anonymous and known contacts.
 - Setting up redirect URLs, which log clicks on links that you post to social-media sites, ad banners, and other places online. You'll be able to see how often a link was clicked, when it was clicked, and the physical location where it was clicked. You'll also be able to see which redirect URLs any given lead or contact clicked on (provided they are working on a machine where the right cookie is set).
 
-[!INCLUDE[cc-marketing-cookies](../includes/cc-marketing-cookies.md)]
+[!INCLUDE[cc-marketing-cookies](./includes/cc-marketing-cookies.md)]
 
 <a name="monitor-visitors"></a>
 
@@ -109,4 +109,4 @@ The same redirect-URL record where you can find the redirecting URL also shows t
 [How Dynamics 365 Customer Insights - Journeys uses cookies](cookies.md)
 
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

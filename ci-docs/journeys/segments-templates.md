@@ -13,7 +13,7 @@ search.audienceType:
 
 # Work with segment templates
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -87,4 +87,4 @@ To include one or more parameterized rows in a segment template:
 
 As with other types of templates in Customer Insights - Journeys, segment templates support adding visual labels that help users identify and find the templates they are looking for when using a template gallery or list. More information: [Work with email, page, and form templates](email-templates.md)
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

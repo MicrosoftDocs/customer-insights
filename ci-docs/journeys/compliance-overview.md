@@ -13,7 +13,7 @@ search.audienceType:
 
 # Manage user compliance settings
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article applies to Customer Insights - Journeys *and* outbound marketing.
@@ -63,4 +63,4 @@ Customer Insights - Journeys uses preference pages as another way to manage user
 
 Learn more: [Customer Insights - Journeys preference pages](real-time-marketing-compliance-settings.md)
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

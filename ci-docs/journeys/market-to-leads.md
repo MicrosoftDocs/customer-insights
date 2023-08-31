@@ -13,7 +13,7 @@ search.audienceType:
 
 # Market to leads with Dynamics 365 Customer Insights - Journeys
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -103,4 +103,4 @@ In the current version of Customer Insights - Journeys, the techniques described
 
 Going forward, we will continue to gather market feedback to identify solutions for business scenarios that still are not supported by this marketing model.
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

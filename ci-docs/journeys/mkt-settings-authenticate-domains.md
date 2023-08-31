@@ -13,7 +13,7 @@ search.audienceType:
 
 # Authenticate your domains (old version)
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This section explains the old domain authentication for outbound marketing; for an updated version based on Customer Insights - Journeys, see "[new version](domain-authentication.md)".
@@ -211,4 +211,4 @@ To benefit from DKIM, the from-address for each message you send must show a dom
 - We recommend that you [set a default sending domain](mkt-settings-default-marketing.md) that is authenticated for DKIM. When this is set, then the from-address for all of your email messages will automatically be adjusted to show your selected default domain (if it initially uses a non-authenticated domain) each time you create a new email message or change the user shown in the **From** field. More information: [Default marketing settings](mkt-settings-default-marketing.md) and [Set sender and receiver options](email-properties.md#send-receive-options)
 - All new instances and trials will automatically authenticate the instance domain with DKIM and set that domain as the default sending domain for your instance.
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

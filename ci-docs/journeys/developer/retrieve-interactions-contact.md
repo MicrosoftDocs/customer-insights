@@ -11,7 +11,7 @@ search.audienceType:
 
 # Retrieve interactions for a contact using code
 
-[!INCLUDE[consolidated-sku-rtm-only](../../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > The method below to retrieve interactions has been deprecated and may not be available in the future.
@@ -176,4 +176,4 @@ OData-Version: 4.0
 }
 ```
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](.././includes/footer-banner.md)]

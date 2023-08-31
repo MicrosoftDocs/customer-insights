@@ -13,7 +13,7 @@ search.audienceType:
 
 # Keep Customer Insights - Journeys up to date
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 Microsoft is continuously developing and improving online services. Customer Insights - Journeys updates are [pushed to all customers automatically](https://cloudblogs.microsoft.com/dynamics365/it/2020/04/27/automatic-update-policy-for-dynamics-365-marketing/). Customer Insights - Journeys follows a phased deployment approach aligned with the platform deployment schedule. You can also update your solutions manually for early validations. Manual updates allow customers to apply and test updates on a sandbox instance before applying them to a production system.
 
@@ -115,4 +115,4 @@ If you have created a [Portal hosted event website](./developer/portal-hosted.md
 
 If your event website is [self-hosted](./developer/self-hosted.md), you must [install the latest self-hosted sample website](./developer/event-management-web-application.md) to maintain functionality after applying any Customer Insights - Journeys update.
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

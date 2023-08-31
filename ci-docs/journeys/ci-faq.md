@@ -14,7 +14,7 @@ search.audienceType:
 
 # Dynamics 365 Customer Insights FAQs
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 This FAQ answers questions about the new Dynamics 365 Customer Insights combined product offering.
 

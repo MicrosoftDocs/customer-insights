@@ -13,7 +13,7 @@ search.audienceType:
 
 # What's new in Dynamics 365 Customer Insights - Journeys
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 [!INCLUDE[marketing-trial-cta](../shared/trials/marketing-trial-cta.md)]
 
@@ -581,4 +581,4 @@ Learn how to make the most of the new Dynamics 365 Customer Insights - Journeys 
 > [!Tip]
 > To read about updates from previous years, see the [What's new archive](whats-new-marketing-archive.md) article.
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

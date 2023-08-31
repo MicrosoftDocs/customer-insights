@@ -13,7 +13,7 @@ search.audienceType:
 
 # Manage user accounts, user licenses, and security roles
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 [!INCLUDE[marketing-trial-cta](../shared/trials/marketing-trial-cta.md)]
 
@@ -265,4 +265,4 @@ One service user, **# Dynamics Customer Insights - Journeys Dataverse Datasource
 
 **# Dynamics Customer Insights - Journeys Dataverse Datasource** has a **Service Reader** role assigned, which allows it privileged access to any Dataverse data within a given environment.
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

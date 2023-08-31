@@ -13,7 +13,7 @@ search.audienceType:
 
 # Solution uninstall order for removing Dynamics 365 Customer Insights - Journeys
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!NOTE]
 > If you want to release your Customer Insights - Journeys entitlement to use on a different instance, you **do not** need to uninstall any of the Customer Insights - Journeys solutions.
@@ -186,4 +186,4 @@ Customer Insights - Journeys application dependencies are installed alongside th
 1. msdyn_DataInsightsAndAnalytics: Enables analytics capabilities for Dynamics 365 applications like Customer Service, Field Service, and Universal Resource Scheduling.
 1. DynamicsMKT_Segmentation: Standard entity of segment representation and segment metadata.
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

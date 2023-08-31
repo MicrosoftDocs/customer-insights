@@ -12,7 +12,7 @@ search.audienceType:
 ---
 # Build segments in Customer Insights - Journeys
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE50Oqt]
 
@@ -94,4 +94,4 @@ In the above example, the attribute was added to a new group (Group 2).  To crea
 > [!div class="mx-imgBorder"]
 > ![select your operator between groups](media/real-time-marketing-select-your-operator-between-groups.png "select your operator between groups")
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

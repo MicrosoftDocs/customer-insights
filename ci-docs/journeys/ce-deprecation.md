@@ -13,7 +13,7 @@ search.audienceType:
 
 # Deprecation: Dynamics 365 for Customer Engagement
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 In October 2019, Microsoft deprecated the *Dynamics 365 for Customer Engagement* SKU/license plan. Dynamics 365 for Customer Engagement included the following Dynamics 365 apps and their related services:
 
@@ -32,4 +32,4 @@ You can learn about migrating your data to a new Customer Insights - Journeys in
 
 To start a free trial for the current version of Dynamics 365 Customer Insights, see [Sign up for a free Dynamics 365 Customer Insights trial](trial-signup.md).
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

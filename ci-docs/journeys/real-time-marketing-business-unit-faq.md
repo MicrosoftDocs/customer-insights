@@ -13,7 +13,7 @@ search.audienceType:
 
 # Business units FAQs for Customer Insights - Journeys
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 This article contains answers to common questions and solutions to known issues related to business units in Customer Insights - Journeys.
 
@@ -64,4 +64,4 @@ Areas that don't yet support business units at all (that is, all records are cre
 - Domains 
 - Audience configuration
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

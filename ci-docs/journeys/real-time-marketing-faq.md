@@ -13,7 +13,7 @@ search.audienceType:
 
 # Troubleshoot Customer Insights - Journeys
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 Read this article to find answers to common questions and solutions to known issues that can sometimes occur during the installation and management of Customer Insights - Journeys.
 
@@ -47,4 +47,4 @@ The default channel acts as a control group allowing 10 percent of your audience
 - **Email**: The number of unique people that opened or clicked a link divided by total number of emails sent.
 - **SMS**: The number of unique people that clicked a link divided by the total number of SMS (text) messages sent.
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

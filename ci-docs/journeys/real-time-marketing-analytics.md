@@ -13,7 +13,7 @@ search.audienceType:
 
 # Access and interpret analytics
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 Customer Insights - Journeys's dashboards and cross-journey insights show metrics, views, and insights summarized across single or multiple journeys, providing you with a deep understanding of journey, channel, and content performance. The built-in dashboards focus on measuring delivery, engagement and journey goal attainment, so you can fine-tune the effectiveness of your journeys, channels, and content.
 
@@ -108,4 +108,4 @@ Here are some advanced resources for this topic:
 
 - [Extracting Marketing Interactions in Dynamics 365 Customer Insights - Journeys](https://community.dynamics.com/blogs/post/?postid=4e96ca1e-52ed-4ae4-9887-af8d6e563304)
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

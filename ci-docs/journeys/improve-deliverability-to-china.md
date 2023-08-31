@@ -13,7 +13,7 @@ search.audienceType:
 
 # Improve email deliverability to China
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 If you're sending email to China, it will be subjected to stricter email filtering than any other country in the world. This could result in email delays, delivered emails with unclickable links, or flat-out non-deliverability.
 
@@ -87,4 +87,4 @@ Other providers include:
 > [!IMPORTANT]
 > Being blocklisted is usually temporary. The length can vary depending on your past history. Delisting is usually not possible. Follow the best practice tips in this article to improve your sending reputation.
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

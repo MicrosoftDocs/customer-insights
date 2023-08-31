@@ -17,7 +17,7 @@ ms.custom:
 
 # A/B tests in Dynamics 365 Customer Insights - Journeys
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 Customer Insights - Journeys uses powerful A/B tests to examine your trigger-based customer journeys, allowing you to gain insights into how best to reach your customers.
 
@@ -99,4 +99,4 @@ There are three possible A/B test result outcomes:
 1. Why is my test ending unexpectedly?
     - If you chose to end the test with statistical significance, the system tries to get a winner within the first 30 days from the time you publish the journey. If no version is declared a winner, the test ends and the default version is sent to the remaining audience.
  
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

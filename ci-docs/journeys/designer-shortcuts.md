@@ -13,7 +13,7 @@ search.audienceType:
 
 # Accessibility and keyboard shortcuts
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 ## General accessibility for Dynamics 365 applications
 
@@ -216,4 +216,4 @@ Most of the standard navigation and selection keyboard commands function as usua
 - **Ctrl + F6**: Remove focus from the calendar (for when you want to leave the calendar).
 - **Ctrl + Shift + G**: Open the date picker (for when you want to change the date/time settings for any calendar item).
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

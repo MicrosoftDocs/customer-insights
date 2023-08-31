@@ -11,7 +11,7 @@ search.audienceType:
 
 # Using the events API
 
-[!INCLUDE[consolidated-sku-rtm-only](../../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
 
 The events API is a programmatic method to access data of events, sessions, session tracks, passes, speakers, and sponsorships. Additionally, it allows you to register for events and sessions.
 
@@ -74,4 +74,4 @@ If the web application token is invalid, the events API will return `HTTP 401 Un
 
 To use the events API, you need to provide a web application token in each request. The web application token is used to control API requests that are associated with your organization. More information: [Register your web application](host-custom-event-website-on-azure.md#step-2-register-your-web-application)
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](.././includes/footer-banner.md)]

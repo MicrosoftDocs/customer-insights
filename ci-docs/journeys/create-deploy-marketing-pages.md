@@ -13,7 +13,7 @@ search.audienceType:
 
 # Create and deploy marketing pages
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 [!INCLUDE[marketing-trial-cta](../shared/trials/marketing-trial-cta.md)]
 
@@ -150,6 +150,6 @@ Administrators can choose settings that control several aspects of the way all m
 
 ## Privacy notice
 
-[!INCLUDE[cc-marketing-cookies](../includes/cc-marketing-cookies.md)]
+[!INCLUDE[cc-marketing-cookies](./includes/cc-marketing-cookies.md)]
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

@@ -13,7 +13,7 @@ search.audienceType:
 
 # Marketing on LinkedIn
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -27,7 +27,7 @@ LinkedIn is a social network that focuses on companies, professionals, and worki
 
 This article gives an overview of these integration points and includes links for more information.
 
-[!INCLUDE [cc-linkedin-disclaimer](../includes/cc-linkedin-disclaimer.md)]
+[!INCLUDE [cc-linkedin-disclaimer](./includes/cc-linkedin-disclaimer.md)]
 
 ## Integrate with LinkedIn Lead Gen Forms
 
@@ -65,4 +65,4 @@ For information for users about how to author and schedule posts on LinkedIn and
 
 For information for administrators about how to configure each of your organization's social media accounts for use with this feature, see [Configure your social media accounts](mkt-settings-social-media.md).
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

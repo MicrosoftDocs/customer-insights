@@ -13,7 +13,7 @@ search.audienceType:
 
 # Use AI-driven run-time channel optimization
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 Channel optimization takes the guesswork out of determining the right channel to reach each customer for the intended journey goal. Channel optimization continuously monitors how each customer responds to communication channels without requiring you to define a complex set of conditions.
 
@@ -59,4 +59,4 @@ If you notice a *No message sent* screen for one of the channels, that means tha
 
 In some cases, the app might be able to fetch engagement data from one channel but not the other.
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

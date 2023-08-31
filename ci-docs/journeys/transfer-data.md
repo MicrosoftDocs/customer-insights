@@ -13,7 +13,7 @@ search.audienceType:
 
 # Transfer data and configurations between environments using the Configuration Migration tool
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 You can replicate Dynamics 365 Customer Insights - Journeys configurations and data across environments using the standard tools provided for Dynamics 365. Common scenarios where this comes in handy include:
 
@@ -162,4 +162,4 @@ To import data to your destination environment:
 
 1. When the import is done, select **Exit** to close the import page.
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

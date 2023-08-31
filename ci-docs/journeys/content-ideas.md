@@ -13,7 +13,7 @@ search.audienceType:
 
 # Preview: Use Copilot to generate email content ideas
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > A preview feature is a feature that is not complete, but is made available before it’s officially in a release so customers can get early access and provide feedback. Preview features aren’t meant for production use and may have limited or restricted functionality.
@@ -105,4 +105,4 @@ Copilot generates original content, but it isn’t always factual. In addition, 
 >
 > Microsoft may disable the content ideas feature for selected customers if abuse of the functionality is detected.
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

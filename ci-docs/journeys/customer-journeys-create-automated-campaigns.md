@@ -13,7 +13,7 @@ search.audienceType:
 
 # Use customer journeys to create automated campaigns
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -256,7 +256,7 @@ When you've finished designing your customer journey, do the following to verify
 
 3. Now you're ready to publish, so select **Go Live** in the command bar. Dynamics 365 Customer Insights - Journeys runs the error check one last time. If your journey passes, it is published to the marketing services, which also host your published marketing email messages and marketing pages.
 
-[!INCLUDE [cc-marketing-email-size](../includes/cc-marketing-email-size.md)]
+[!INCLUDE [cc-marketing-email-size](./includes/cc-marketing-email-size.md)]
 
 ## Gain insights by monitoring journey progress and results
 
@@ -268,4 +268,4 @@ Customer journeys pass through many states while you create, edit, and run them.
  
 ![Journey events list.](media/customer-journey-milestones.png "Journey events list")
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

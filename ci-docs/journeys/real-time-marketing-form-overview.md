@@ -13,7 +13,7 @@ search.audienceType:
 
 # Overview of Customer Insights - Journeys forms
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5dqbE]
 
@@ -60,4 +60,4 @@ Security is an important aspect of forms. Dynamics 365 Customer Insights - Journ
 - [Manage Customer Insights - Journeys forms](real-time-marketing-manage-forms.md)
 - [Troubleshooting Customer Insights - Journeys forms](real-time-marketing-troubleshooting-forms.md)
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

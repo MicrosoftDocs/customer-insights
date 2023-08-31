@@ -13,7 +13,7 @@ search.audienceType:
 
 # Get started with Dynamics 365 Customer Insights - Journeys licensing
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 Before you purchase, provision, and begin using a Customer Insights - Journeys environment, you'll need to decide which licensing options suit your needs. Purchasing a Customer Insights - Journeys license involves three components: the base license, additional instances, and additional capacity. This article explains the considerations you should make regarding each component when purchasing the Customer Insights - Journeys app.
 
@@ -56,4 +56,4 @@ As mentioned in the [purchase and set up article](purchase-setup.md), contacts t
 
 After you've purchased your Customer Insights - Journeys license, you'll need to start setting it up. Learn more in the [purchase and set up Dynamics 365 Customer Insights - Journeys](purchase-setup.md) article.
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

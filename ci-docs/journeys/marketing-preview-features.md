@@ -13,13 +13,13 @@ search.audienceType:
 
 # Activate and use preview features
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 From time to time, Microsoft makes new Dynamics 365 Customer Insights - Journeys features available as *preview features*, which you can enable and use if you want to get familiar with upcoming features before they're officially released and fully supported. Read this topic to learn about which preview features are currently available, how to activate them, and how to use them.
 
 > [!IMPORTANT]
-> [!INCLUDE[cc_preview_features_definition](../includes/cc-preview-features-definition.md)]
-> [!INCLUDE[cc_preview_features_no_MS_support](../includes/cc-preview-features-no-ms-support.md)]  
+> [!INCLUDE[cc_preview_features_definition](./includes/cc-preview-features-definition.md)]
+> [!INCLUDE[cc_preview_features_no_MS_support](./includes/cc-preview-features-no-ms-support.md)]  
 
 ## Enable preview features
 
@@ -76,4 +76,4 @@ If you wish to report an issue with a preview feature, please [open a support ti
 - For marketing-contacts monitoring, please include: [PREVIEW][MCM]
 - For social posting, please include: [PREVIEW][SOCIAL]
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

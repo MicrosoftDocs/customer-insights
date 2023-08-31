@@ -11,7 +11,7 @@ search.audienceType:
 
 # Step 2: Configure the custom channel tile
 
-[!INCLUDE[consolidated-sku-rtm-only](../../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -156,4 +156,4 @@ The XML file has the following elements:
 > [!div class="nextstepaction"]
 > [Step 3: Create a workflow or plug-in to implement your custom logic](create-workflow-plugin-custom-channel.md)
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](.././includes/footer-banner.md)]

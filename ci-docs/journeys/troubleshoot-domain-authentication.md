@@ -13,7 +13,7 @@ search.audienceType:
 
 # Troubleshoot domain authentication errors
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 The domain authentication process can be daunting and confusing. The lack of DNS industry hosting standardization does not make it any easier.
 
@@ -83,4 +83,4 @@ The following video guide describes the domain authentication process in detail:
 
 If after trying these troubleshooting steps you still can't determine why your domain authentication is failing, reach out to the support team.
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

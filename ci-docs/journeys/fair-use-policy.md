@@ -13,7 +13,7 @@ search.audienceType:
 
 # Service limits and fair use policy
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 Dynamics 365 Customer Insights - Journeys relies on shared cloud resources for data and processing. This policy defines the limits for resource usage per org. These limits ensure that other tenants' performance isn't affected and resources are evenly distributed.
 
@@ -61,4 +61,4 @@ The following tables show the current usage limits for Customer Insights - Journ
 
 If you have questions or concerns about how to optimize your resources, contact [Microsoft support](/power-platform/admin/get-help-support).
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

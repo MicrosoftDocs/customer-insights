@@ -13,7 +13,7 @@ search.audienceType:
 
 # Use segments from Dynamics 365 Customer Insights - Data 
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 Dynamics 365 Customer Insights - Data applies artificial intelligence to analyze rich pools of customer data collected from across other apps like Dynamics 365 Sales, Service, and Customer Insights - Journeys. Its standard functionality generates powerful analytical displays for each contact, which makes the information easy to understand and use. The integrated solution can:
 
@@ -167,4 +167,4 @@ Although your segments will automatically refresh a few times a day based on you
 
 <!--    ![Manually export to a destination.](media/ci-export-destination.png "Manually export to a destination") -->
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

@@ -13,7 +13,7 @@ search.audienceType:
 
 # Monitor your monthly quotas
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 Dynamics 365 Customer Insights - Journeys is a subscription service that is billed monthly and sets organization-level quotas for the maximum number of marketing contact records and monthly outbound interactions that you can send. Other quotas may also apply. You can always upgrade your subscription if you need higher quotas.
 
@@ -53,4 +53,4 @@ The quota limits page also includes charts that show the monthly interaction usa
 > 
 > See also the [Readme](./known-issues.md) document for the latest news and updates.
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

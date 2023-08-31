@@ -13,7 +13,7 @@ search.audienceType:
 
 # Test custom triggers before using them
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 Testing custom triggers before using them in a journey about to be published is the safest way to ensure that your expectations meet your customers' reality. The test-send feature allows you to be confident in the quality and behavior of your custom triggers before you send them out to your audience.
 
@@ -54,4 +54,4 @@ The following steps illustrate how to test the abandoned cart trigger.
     > [!div class="mx-imgBorder"]
     > ![Screenshot of journey inflow.](media/real-time-marketing-test-send-inflow.png "Screenshot of journey inflow")
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

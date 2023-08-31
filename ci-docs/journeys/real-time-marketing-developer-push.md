@@ -13,7 +13,7 @@ search.audienceType:
 
 # Push notification setup for application developers
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 To enable push notifications in Customer Insights - Journeys, you need to complete the following steps:
 
@@ -472,4 +472,4 @@ public String toJsonString() {
 
 ---
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

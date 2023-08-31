@@ -15,7 +15,7 @@ search.audienceType:
 
 # Define the message editor interface (optional)
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 Applicable channels: Custom
 
@@ -94,4 +94,4 @@ The form ID of this entity is assigned to **msdyn_messageformid attribute** at t
 
 You can use custom controls on the form or out-of-the-box controls like **MsdynmktControls.RichTextControl.RichTextControl** that support personalization.
 
-[!INCLUDE [footer-include] (../includes/footer-banner.md)]
+[!INCLUDE [footer-include] (./includes/footer-banner.md)]

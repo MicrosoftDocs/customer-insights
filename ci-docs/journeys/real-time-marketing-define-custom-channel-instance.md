@@ -13,7 +13,7 @@ search.audienceType:
 
 # Define an extended configuration entity for the channel instance
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 Applicable channels: SMS, custom
 
@@ -85,4 +85,4 @@ For each custom channel solution, you need to:
       :::image type="content" source="media/real-time-marketing-select-custom-channel1.png" alt-text="Screenshot of a form for a custom channel." lightbox="media/real-time-marketing-select-custom-channel1.png":::
     <!-- EDITOR'S NOTE: Please crop the screenshot IAW the new [screenshot guidelines](/bacx/screenshots-for-bap?branch=main).-->
 
-[!INCLUDE [footer-include](../includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

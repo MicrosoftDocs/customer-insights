@@ -14,7 +14,7 @@ search.audienceType:
 
 # The marketing analytics reporting framework (generic template)
 
-[!INCLUDE[consolidated-sku-rtm-only](../../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -104,4 +104,4 @@ Each template and sample report contains the following common pages:
 ***Happy analytics reporting with Dynamics 365 Customer Insights - Journeys!***
 
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](.././includes/footer-banner.md)]

@@ -15,7 +15,7 @@ search.audienceType:
 
 # Customer Insights - Journeys link tracking mechanics
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 When executing customer journeys, all relevant hyperlinks are replaced with trackable links. If the content of a message is HTML, we also create an invisible pixel inside the message body. The invisible pixel is necessary to determine whether a user clicked on a link or opened the message.
 
@@ -42,4 +42,4 @@ If the recipient previously opted out from tracking, the interaction is generate
 [Manage user compliance settings in Customer Insights - Journeys](real-time-marketing-compliance-settings.md)
 [Manage consent for email and text messages in Customer Insights - Journeys](real-time-marketing-email-text-consent.md)
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

@@ -13,7 +13,7 @@ search.audienceType:
 
 # Open and use the Power Platform admin center
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 Use the Power Platform admin center to review the status of your apps and solutions, apply updates, and manage your Dynamics 365 instances, solutions, and apps.
 
@@ -65,4 +65,4 @@ To open the Power Platform admin center starting from the Microsoft 365 admin ce
 
     ![Choose an app and then select the Manage or Details link.](media/purchase-setup-ppac-manage.png "Choose an app and then select the Manage or Details link")
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

@@ -13,7 +13,7 @@ search.audienceType:
 
 # Import and email all contacts from a spreadsheet
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 This tutorial provides an example of how to send marketing email messages to all of the contacts listed in a Microsoft Excel spreadsheet.
 
@@ -85,4 +85,4 @@ Now you're ready to send the email to your contacts. Create a new journey as usu
 
 Finish designing your journey as needed. When you're done, set the start date and time and then go live.
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

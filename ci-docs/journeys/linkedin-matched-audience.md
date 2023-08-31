@@ -13,14 +13,14 @@ search.audienceType:
 
 # Market to segments on LinkedIn with LinkedIn Matched Audiences
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
 
 [LinkedIn Matched Audiences](https://www.linkedin.com/help/lms/answer/86492/linkedin-matched-audiences-overview?lang=en) is a LinkedIn feature that lets you match a collection of contacts stored on an external system, like Dynamics 365 Customer Insights - Journeys, to an audience of LinkedIn members with matching email addresses. Customer Insights - Journeys comes ready to take advantage of this capability, so you can leverage your Customer Insights - Journeys static segments to create a matching audience of LinkedIn members. Then, when you run a campaign on LinkedIn, you can target the same segments that you set up in Customer Insights - Journeys and also turn any leads generated on LinkedIn into Dynamics 365 leads through the [LinkedIn Lead Gen Forms integration](linkedin-lead-gen-integration.md) feature also offered by Customer Insights - Journeys.
 
-[!INCLUDE [cc-linkedin-disclaimer](../includes/cc-linkedin-disclaimer.md)]
+[!INCLUDE [cc-linkedin-disclaimer](./includes/cc-linkedin-disclaimer.md)]
 
 > [!IMPORTANT]
 > Customer Insights - Journeys encrypts each email address using a one-way hash before sending it to LinkedIn. LinkedIn will be able to match these addresses to existing LinkedIn members but cannot decode the email addresses themselves. This important technique helps protect the privacy of your Dynamics 365 contacts.
@@ -54,4 +54,4 @@ To create a LinkedIn Matched Audience from a Customer Insights - Journeys segmen
 > [!NOTE]
 > If your segment changes in Customer Insights - Journeys, those changes won't be reflected in its LinkedIn Matched Audience. If you want to use an updated Customer Insights - Journeys segment on LinkedIn, you must create a new Matched Audience using the previous procedure.
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

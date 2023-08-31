@@ -13,7 +13,7 @@ search.audienceType:
 
 # Dynamics 365 Customer Insights - Journeys functional consultants learning catalog
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -37,4 +37,4 @@ The following catalog is organized from core knowledge to specific domains, and 
 | [Dynamics 365 Fundamentals](https://www.microsoft.com/learning/d365-fundamentals.aspx)  | Prove that you understand Microsoft Dynamics 365: the Power Platform; cloud concepts; licensing options; and deployment and release options.  | Exam, cost varies by region |   |
 
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

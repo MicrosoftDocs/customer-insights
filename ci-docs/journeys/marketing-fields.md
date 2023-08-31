@@ -13,7 +13,7 @@ search.audienceType:
 
 # Create and manage input fields for use in forms
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -166,4 +166,4 @@ These are the details of the function, available under ```MsCrmMkt.MsCrmFormLoad
 
 Find more functions in the [developer documentation](/dynamics365/marketing/developer/marketing-form-client-side-extensibility#javascript-api)
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

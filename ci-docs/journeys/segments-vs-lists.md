@@ -13,7 +13,7 @@ search.audienceType:
 
 # Marketing segments vs. marketing lists
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -66,4 +66,4 @@ _Evaluation_ is the process of calculating the members of a segment or list base
 - **Dynamic marketing lists** are evaluated on demand, such as when a user requests to see them, or when a campaign activity or quick campaign is distributing activities for the member audience.
 - **Static Marketing Lists** return their lists of members on demand, such as when a user requests to see them, or when a campaign activity or quick campaign is distributing activities for the member audience.
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

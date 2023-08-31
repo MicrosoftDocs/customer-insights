@@ -13,7 +13,7 @@ search.audienceType:
 
 # Responsible AI FAQs for content ideas
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 These responsible AI FAQs describe the AI impact of Dynamics 365 Customer Insights - Journeys's content ideas feature.
 
@@ -49,4 +49,4 @@ Follow these procedures to make the most of the content ideas feature:
 1. Ensure high-quality of text content in your 20+ recent **Ready-to-send** commercial marketing emails- These emails (together with provided key points) serve as an input for the AI service to generate personalized ideas.
 1. Always review and edit content ideas suggestions before publishing them in an email or marketing campaign.
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

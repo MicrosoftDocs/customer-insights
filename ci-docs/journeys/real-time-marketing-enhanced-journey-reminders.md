@@ -13,7 +13,7 @@ search.audienceType:
 
 # Enhanced journey reminders
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 Create action-oriented journeys that remind customers to complete a call to action until a certain date or time. Built-in reminder orchestration eliminates the need to create cascading branches that check for the qualifying action after each step or specify conditions with more than two possibilities. This simplifies not only the journey logic required to capture the whole scenario in a single journey, but also preserves all analytics for the journey actions in a single place when journeys are live.
 
@@ -53,4 +53,4 @@ After the journey has been live for a while, select the **Analytics** tab in the
 > [!div class="mx-imgBorder"]
 > ![Screenshot showing series tile analytics.](media/real-time-marketing-journey-reminder-analytics.png "Screenshot showing series tile analytics")
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

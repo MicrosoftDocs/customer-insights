@@ -13,7 +13,7 @@ search.audienceType:
 
 # What's new archive for Dynamics 365 Customer Insights - Journeys
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 This article contains archived information about new features, improvements, and bug fixes from previous years. This article is not maintained and is saved for historical reference purposes.
 
@@ -2476,4 +2476,4 @@ The Dynamics 365 Customer Insights - Journeys November 2019 update includes the 
 - Websites: For website insights, the **Timeline** display has been renamed to **Visits**.
 - Customer Insights: Deleted contacts now sync correctly and more quickly.
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

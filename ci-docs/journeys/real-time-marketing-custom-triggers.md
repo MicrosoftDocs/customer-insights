@@ -13,7 +13,7 @@ search.audienceType:
 
 # Create custom triggers in Customer Insights - Journeys
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 Custom triggers are a flexible way to capture important moments and interactions, allowing you to orchestrate uniquely engaging customer interactions.
 
@@ -81,4 +81,4 @@ Once the integration has been completed, the **Triggers** page shows information
 > [!TIP]
 > When you're looking at the list of triggers, custom triggers have a plain lightning bolt icon ![Custom trigger icon.](media/real-time-marketing-custom.png "Custom trigger icon"). Out-of-the-box triggers have a lightning bolt with a suitcase icon ![Out-of-the-box trigger icon.](media/real-time-marketing-oob.png "Out-of-the-box trigger icon").
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]
