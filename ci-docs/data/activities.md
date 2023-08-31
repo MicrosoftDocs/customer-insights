@@ -36,7 +36,7 @@ Follow these steps to define all activities at once.
    > [!NOTE]
    > The primary key for each row should remain consistent across data source refreshes. If a data source refresh changes the primary key for a row, the system deletes all old rows and inserts all new rows, causing an increase in processing time.
 
-   :::image type="content" source="media/Activity_Wizard1.PNG" alt-text="Set up the activity data with table and primary key.":::
+   :::image type="content" source="media/Activity_Wizard1.svg" alt-text="Set up the activity data with table and primary key.":::
 
 1. Select **Next** for the **Activity fields** step.
 
@@ -52,16 +52,16 @@ Follow these steps to define all activities at once.
    - **Show this activity in the timeline on your customer profile?**: **Yes** to show the activity in the timeline or **No** to hide it. Optionally, choose an icon to represent the activity on the timeline.
      > [!NOTE]
      > If you select **No** and hide the activity in the timeline view, the activity will not be returned by the [API](apis.md) either.
-   
-   - **Map field types for your activity's attributes?**: **Yes** to help the system better understand the relevance of your activity data or **No** do not map.
 
-   :::image type="content" source="media/Activity_Wizard2.PNG" alt-text="Map the activity fields.":::
+   - **Map field types for your activity's attributes?**: **Yes** to help the system better understand the relevance of your activity data or **No** do not map.
 
 1. If you choose **Yes** to map your field types, select the appropriate attributes to map your data. Required fields are determined by the selected activity type.
 
 1. Select **Next**.
 
 1. In the **Relationships** step, select **Add relationship** and enter the following information for each table. This step connects your activity data to its corresponding customer record.  
+
+   :::image type="content" source="media/Activity_Wizard2.svg" alt-text="Map the activity fields.":::
 
    - **Foreign key**: Field in your activity table that will be used to establish a relationship with another table.
    - **To table name**: Corresponding source customer table with which your activity table will be in a relationship. You can only relate to source customer tables that are used in the data unification process.
