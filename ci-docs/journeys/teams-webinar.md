@@ -17,7 +17,7 @@ search.audienceType:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4J4cV]
 
-[!INCLUDE[marketing-trial-cta](../shared/trials/marketing-trial-cta.md)]
+[!INCLUDE[marketing-trial-cta](./includes/marketing-trial-cta.md)]
 
 This article explains how to use Microsoft Teams as an online meeting provider for Customer Insights - Journeys events. Teams event functionality is incorporated directly into the Customer Insights - Journeys app, allowing you to use Teams webinars or Teams live events for one/some to many online events, and Teams meetings for interactive online meetings.
 

@@ -15,7 +15,7 @@ search.audienceType:
 
 [!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
-[!INCLUDE[marketing-trial-cta](../shared/trials/marketing-trial-cta.md)]
+[!INCLUDE[marketing-trial-cta](./includes/marketing-trial-cta.md)]
 
 This article explains how to purchase a new Customer Insights - Journeys environment.
 

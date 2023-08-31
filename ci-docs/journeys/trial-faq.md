@@ -67,6 +67,6 @@ You can monitor your usage levels by going to  **Settings**  >  **Advanced setti
 
 ## Trial platform FAQ
 
-[!INCLUDE[trial-faq-platform](../shared/trials/trial-faq-platform.md)]
+[!INCLUDE[trial-faq-platform](./includes/trial-faq-platform.md)]
 
 [!INCLUDE[footer-include](./includes/footer-banner.md)]
