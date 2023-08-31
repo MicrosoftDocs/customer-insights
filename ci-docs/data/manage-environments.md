@@ -112,7 +112,9 @@ As the owner of an environment, reset an environment to an empty state if you wa
 
 ## Delete an existing environment
 
-As the owner of an environment, you can delete it. <!-- We recommend to [use the **Uninstall** option in the consolidated Customer Insights provisioning experience](tbd.md) to decommission a Customer Insights - Data environment. ->
+As the owner of an environment, you can delete it.
+<!-- We recommend to [use the **Uninstall** option in the consolidated Customer Insights provisioning experience](tbd.md) to decommission a Customer Insights - Data environment. 
+-->
 
 > [!IMPORTANT]
 > Deleting a Customer Insights - Data environment does not remove the Customer Insights dependencies from the Dataverse environment. If you plan to use same Dataverse environment to install Customer Insights - Data in the future, you must [remove all dependencies to the Dataverse environment](#remove-customer-insights---data-dependencies-from-a-dataverse-environment).
