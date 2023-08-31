@@ -30,11 +30,11 @@ search.audienceType:
 </td><td>
 
 <h2>General extensibility concepts</h2>
-<li><a href="/dynamics365/customerengagement/on-premises/developer/introduction-entities" data-raw-source="[Introduction to entities](../../customerengagement/on-premises/developer/introduction-entities.md)">Introduction to entities</a></li>
-<li><a href="/dynamics365/customerengagement/on-premises/developer/write-plugin-extend-business-processes" data-raw-source="[Write plug-ins to extend business processes](../../customerengagement/on-premises/developer/write-plugin-extend-business-processes.md)">Write plug-ins to extend business processes</a></li>
-<li><a href="/dynamics365/customerengagement/on-premises/developer/automate-business-processes-customer-engagement" data-raw-source="[Automate your business processes in Dynamics 365](../../customerengagement/on-premises/developer/automate-business-processes-customer-engagement.md)">Automate your business processes in Dynamics 365</a></li>
-<li><a href="/dynamics365/customerengagement/on-premises/customize/workflow-processes" data-raw-source="[Workflows overview](../../customerengagement/on-premises/customize/workflow-processes.md)">Workflows overview</a></li>
-<li><a href="/dynamics365/customerengagement/on-premises/developer/web-resources" data-raw-source="[Web resources for Dynamics 365](../../customerengagement/on-premises/developer/web-resources.md)">Web resources for Dynamics 365</a></li>
+<li><a href="/dynamics365/customerengagement/on-premises/developer/introduction-entities" data-raw-source="[Introduction to entities](/dynamics365/customerengagement/on-premises/developer/introduction-entities)">Introduction to entities</a></li>
+<li><a href="/dynamics365/customerengagement/on-premises/developer/write-plugin-extend-business-processes" data-raw-source="[Write plug-ins to extend business processes](/dynamics365/customerengagement/on-premises/developer/write-plugin-extend-business-processes)">Write plug-ins to extend business processes</a></li>
+<li><a href="/dynamics365/customerengagement/on-premises/developer/automate-business-processes-customer-engagement" data-raw-source="[Automate your business processes in Dynamics 365](/dynamics365/customerengagement/on-premises/developer/automate-business-processes-customer-engagement)">Automate your business processes in Dynamics 365</a></li>
+<li><a href="/dynamics365/customerengagement/on-premises/customize/workflow-processes" data-raw-source="[Workflows overview](/dynamics365/customerengagement/on-premises/customize/workflow-processes)">Workflows overview</a></li>
+<li><a href="/dynamics365/customerengagement/on-premises/developer/web-resources" data-raw-source="[Web resources for Dynamics 365](/dynamics365/customerengagement/on-premises/developer/web-resources)">Web resources for Dynamics 365</a></li>
 
 </td></tr>
 </table>
@@ -43,6 +43,6 @@ search.audienceType:
 
 [Outbound marketing administrator guide](../admin-guide.md)  
 [Outbound marketing user guide](../../journeys/user-guide.md)  
-[Developer guide for Dynamics 365](../../customerengagement/on-premises/developer/overview.md) 
+[Developer guide for Dynamics 365](/dynamics365/customerengagement/on-premises/developer/overview) 
 
 [!INCLUDE[footer-include](.././includes/footer-banner.md)]
