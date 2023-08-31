@@ -379,6 +379,8 @@
   items: 
   - name: Learning catalog
     items:
+      - name: B2B documentation
+        href: b2b/work-with-business-accounts.md
       - name: Certify as Microsoft Customer Data Platform Specialist
         href: /certifications/exams/mb-260?tab=tab-instructor-led
       - name: Get started with Customer Insights - Data
