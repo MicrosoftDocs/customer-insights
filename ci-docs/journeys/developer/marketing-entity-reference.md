@@ -48,7 +48,7 @@ You can perform the following actions:
 
 - **View Entity Details**: Select an entity to view using the **Entity Metadata** view.
 - **Edit Entity**: Open the selected entity form in the default organization, if the entity supports this.
-- **Text Search**: Perform a text search to filter displayed entities using the following entity properties: <xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.SchemaName>, <xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.LogicalName>, <xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.DisplayName>, <xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.ObjectTypeCode>, or <xref:Microsoft.Xrm.Sdk.Metadata.MetadataBase.MetadataId>.
+- **Text Search**: Perform a text search to filter displayed entities using the following entity properties: [SchemaName](/dotnet/api/microsoft.xrm.sdk.metadata.entitymetadata.schemaname), [LogicalName](/dotnet/api/microsoft.xrm.sdk.metadata.entitymetadata.logicalname), [DisplayName](/dotnet/api/microsoft.xrm.sdk.metadata.entitymetadata.displayname), [ObjectTypeCode](/dotnet/api/microsoft.xrm.sdk.metadata.entitymetadata.objecttypecode), or [MetadataId](/dotnet/api/microsoft.xrm.sdk.metadata.metadatabase.metadataid).
 - **Filter Entities**: Set simple criteria to view a sub-set of entities. All criteria are evaluated using AND logic.
 - **Filter Properties**: Filter the properties displayed for any selected entity. There are nearly 100 properties in the list. Use this to select just the ones you are interested in.
 
@@ -64,7 +64,7 @@ You can perform the following actions:
 - **Attributes**: View the entity attributes in a master/detail view. With this view you can:
 
     - **Edit Attribute**: Open the selected attribute form in the default organization, if the attribute supports this.
-    - **Text Search**: Perform a text search to filter displayed attributes using the following attribute properties: <xref:Microsoft.Xrm.Sdk.Metadata.AttributeMetadata.SchemaName>, <xref:Microsoft.Xrm.Sdk.Metadata.AttributeMetadata.LogicalName>, <xref:Microsoft.Xrm.Sdk.Metadata.AttributeMetadata.DisplayName>, or <xref:Microsoft.Xrm.Sdk.Metadata.MetadataBase.MetadataId>.
+    - **Text Search**: Perform a text search to filter displayed attributes using the following attribute properties: [SchemaName](/dotnet/api/microsoft.xrm.sdk.metadata.entitymetadata.schemaname), [LogicalName](/dotnet/api/microsoft.xrm.sdk.metadata.entitymetadata.logicalname), [DisplayName](/dotnet/api/microsoft.xrm.sdk.metadata.entitymetadata.displayname), or [MetadataId](/dotnet/api/microsoft.xrm.sdk.metadata.metadatabase.metadataid).
     - **Filter Attributes**: Filter attributes by any attribute property values.
     - **Filter Properties**: Filter the properties displayed for the selected attribute.
 
