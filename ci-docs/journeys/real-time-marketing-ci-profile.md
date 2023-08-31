@@ -32,7 +32,7 @@ Alternately, you can create a scheduled journey targeting the customers in an ab
 
 To set up your Customer Insights - Data environment for Customer Insights - Journeys, complete the following steps:
 
-1. Ensure that the Customer Insights - Data environment is set up in a [region where Customer Insights - Journeys is available](real-time-marketing-install.md). If your current environment is not in a region where Customer Insights - Journeys is available, you can create a new Customer Insights - Data environment using a copy of the previous environment.
+1. Ensure that the Customer Insights - Data environment is set up in a [region where Customer Insights - Journeys is available](real-time-marketing-overview.md). If your current environment is not in a region where Customer Insights - Journeys is available, you can create a new Customer Insights - Data environment using a copy of the previous environment.
 1. Enable data sharing between your Customer Insights - Data environment and the Microsoft Dataverse organization where Dynamics 365 Customer Insights - Journeys is or will be installed. This can be done in the Advanced settings of the [Customer Insights - Data environment configuration](/dynamics365/customer-insights/audience-insights/manage-environments#create-an-environment-in-an-existing-organization).
 1. Set up **Map**, **Match**, and **Merge** rules in Customer Insights - Data to unify customer data and create unified customer profiles. Be careful while setting up the unification rules. Any future changes to the rule can impact or break live customer journeys.
 1. Create at least one segment.

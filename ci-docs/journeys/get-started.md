@@ -26,7 +26,7 @@ Follow these steps to expedite the Dynamics 365 Customer Insights - Journeys set
 | Timeline | Task | Details |
 |---|---|---|
 | Pre-provisioning | Gather and document use cases and marketing requirements | Determine your business requirements for bulk mailings, automation, surveys, event management, etc. |
-| Pre-provisioning | Determine licensing requirements | Licensing is done on a tenant level.<br> Learn more: [Dynamics 365 Customer Insights - Journeys licensing options](purchase.md#dynamics-365-marketing-licensing-options). |
+| Pre-provisioning | Determine licensing requirements | Licensing is done on a tenant level.<br> Learn more: [Dynamics 365 Customer Insights - Journeys licensing options](purchase.md). |
 | Pre-provisioning | Determine company geographical address | Visible on all emails (regulatory requirement).<br> Learn more about entering your organization's postal address: [Use content settings to set up repositories of standard and required values for email messages](dynamic-email-content.md#use-content-settings-to-set-up-repositories-of-standard-and-required-values-for-email-messages). |
 | Pre-provisioning | Determine if Power Apps portals are needed | Learn more: [Integrate Customer Insights - Journeys with a CMS system, Dynamics 365 Portals, or Power Apps portals](portal-optional.md). |
 | Provisioning | Provision Dynamics 365 Customer Insights - Journeys app on all Dynamics 365 organizations (dev and production) | Update Dynamics 365 tenants first.<br> Learn more: [Purchase and set up Dynamics 365 Customer Insights - Journeys](purchase.md). |

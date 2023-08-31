@@ -26,7 +26,7 @@ This document discusses some of the key elements for managing Customer Insights 
 
 ## Licensing model
 
-Dynamics 365 Customer Insights - Journeys has a different licensing model than other Dynamics 365 applications. You can find more details about the Customer Insights - Journeys licensing model in [How to purchase](purchase.md#how-to-purchase-dynamics-365-marketing) and [Customer Insights - Journeys contacts purchase](setup-troubleshooting.yml#how-is-customer-insights---journeys-licensed-), as well as in the [Dynamics 365 licensing guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409). Some important aspects of Customer Insights - Journeys’s licensing model are:
+Dynamics 365 Customer Insights - Journeys has a different licensing model than other Dynamics 365 applications. You can find more details about the Customer Insights - Journeys licensing model in [How to purchase](purchase.md) and [Customer Insights - Journeys contacts purchase](setup-troubleshooting.yml#how-is-customer-insights---journeys-licensed-), as well as in the [Dynamics 365 licensing guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409). Some important aspects of Customer Insights - Journeys’s licensing model are:
 
 - You don't purchase user licenses of Customer Insights - Journeys. You purchase the Customer Insights - Journeys app and bundles of marketing contacts.
 - One Customer Insights - Journeys app license permits deployment on only one Dynamics 365 environment. The environment could be a sandbox or production. Deploying on multiple Dynamics 365 environments requires multiple Customer Insights - Journeys app licenses.
@@ -59,7 +59,7 @@ Depending on the environment and its usage, you might have different needs when 
 
 Dynamics 365 Customer Insights - Journeys is composed of several components. Each Dynamics 365 environment requires a dedicated Customer Insights - Journeys app. In other words, if you want multiple Customer Insights - Journeys environments, you need to purchase multiple Customer Insights - Journeys app licenses. Many times, you might not want to buy additional Customer Insights - Journeys app licenses but still want to follow the best practices of having a dev, test, and prod setup. In such cases, there's another option.
 
-Customer Insights - Journeys offers a solution-only license. The solution-only license doesn't support Customer Insights - Journeys processes such as segmentation and email sending. It does support, however, Customer Insights - Journeys metadata such as marketing entities that you can use for extensibility purposes. The solution-only license also allows you to enable ALM operations across your environments. Learn more about the solution-only license in [Purchase and set up Dynamics 365 Customer Insights - Journeys](purchase.md#how-to-purchase-dynamics-365-marketing).
+Customer Insights - Journeys offers a solution-only license. The solution-only license doesn't support Customer Insights - Journeys processes such as segmentation and email sending. It does support, however, Customer Insights - Journeys metadata such as marketing entities that you can use for extensibility purposes. The solution-only license also allows you to enable ALM operations across your environments. Learn more about the solution-only license in [Purchase and set up Dynamics 365 Customer Insights - Journeys](purchase.md).
 
 Here are some of the common pitfalls (from a management perspective) that you might face when working with multiple Customer Insights - Journeys apps/environments:
 
