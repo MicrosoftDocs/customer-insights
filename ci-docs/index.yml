@@ -26,7 +26,7 @@ highlightedContent:
 
     - title: Customer Insights FAQ
       itemType: whats-new
-      url: /dynamics365/marketing/ci-faq
+      url: journeys/ci-faq.md
 
     - title: Customer Insights - Data overview
       itemType: overview
@@ -34,7 +34,7 @@ highlightedContent:
 
     - title: Customer Insights - Journeys overview
       itemType: overview
-      url: /dynamics365/marketing/overview
+      url: journeys/real-time-marketing-overview.md
 
 additionalContent: 
   sections:
@@ -42,53 +42,53 @@ additionalContent:
     items:
     - title: Set up
       links:
-      - url: create-environment.md
+      - url: data/create-environment.md
         text: Create a new environment
-      - url: permissions.md
+      - url: data/permissions.md
         text: Assign users
-      - url: home.md
+      - url: data/home.md
         text: Explore the user interface
     - title: Add and unify data
       links:
-      - url: data-sources.md
+      - url: data/data-sources.md
         text: Data sources overview
-      - url: data-unification.md
+      - url: data/data-unification.md
         text: Data unification overview
-      - url: customer-profiles.md
+      - url: data/customer-profiles.md
         text: Review unified profiles
     - title: Get and activate insights
       links:
-      - url: segments.md
+      - url: data/segments.md
         text: Create segments
-      - url: measures.md
+      - url: data/measures.md
         text: Create measures
-      - url: export-destinations.md
+      - url: data/export-destinations.md
         text: Exports overview
   - title: Get started with Customer Insights - Journeys
     items:
       - title: Provision and set up
         links:
-        - url: /dynamics365/marketing/get-started
+        - url: journeys/get-started.md
           text: Customer Insights - Journeys app setup
-        - url: /dynamics365/marketing/admin-users-licenses-roles
+        - url: journeys/admin-users-licenses-roles.md
           text: Manage user accounts
-        - url: /dynamics365/marketing/domain-authentication
+        - url: journeys/domain-authentication.md
           text: Authenticate your domains
       - title: Real-time journeys
         links:
-        - url: /dynamics365/marketing/real-time-marketing-trigger-based-journey
+        - url: journeys/real-time-marketing-trigger-based-journey.md
           text: Trigger-based journeys
-        - url: /dynamics365/marketing/real-time-marketing-natural-language
+        - url: journeys/real-time-marketing-natural-language.md
           text: Use AI to create segments
-        - url: /dynamics365/marketing/real-time-marketing-build-segments
+        - url: journeys/real-time-marketing-build-segments.md
           text: Segment-based journeys
       - title: Personalization
         links:
-        - url: /dynamics365/marketing/real-time-marketing-personalization
+        - url: journeys/real-time-marketing-personalization.md
           text: Personalize content
-        - url:  /dynamics365/marketing/dynamic-email-content
+        - url:  journeys/dynamic-email-content.md
           text: Add dynamic content to email messages
-        - url: /dynamics365/marketing/real-time-marketing-dynamic-content-multiple-languages
+        - url: journeys/real-time-marketing-dynamic-content-multiple-languages.md
           text: Create dynamic content for multiple countries and languages
   - title: Related products
     items:
