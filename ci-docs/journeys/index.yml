@@ -43,7 +43,7 @@ additionalContent:
         text: Sign up for a free trial
       - url: marketing-license.md
         text: Get started with licensing
-      - url: purchase-setup.md
+      - url: purchase.md
         text: Purchase
     - title: Provision and set up
       links:

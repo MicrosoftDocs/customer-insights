@@ -26,10 +26,10 @@ Follow these steps to expedite the Dynamics 365 Customer Insights - Journeys set
 | Timeline | Task | Details |
 |---|---|---|
 | Pre-provisioning | Gather and document use cases and marketing requirements | Determine your business requirements for bulk mailings, automation, surveys, event management, etc. |
-| Pre-provisioning | Determine licensing requirements | Licensing is done on a tenant level.<br> Learn more: [Dynamics 365 Customer Insights - Journeys licensing options](purchase-setup.md#dynamics-365-marketing-licensing-options). |
+| Pre-provisioning | Determine licensing requirements | Licensing is done on a tenant level.<br> Learn more: [Dynamics 365 Customer Insights - Journeys licensing options](purchase.md#dynamics-365-marketing-licensing-options). |
 | Pre-provisioning | Determine company geographical address | Visible on all emails (regulatory requirement).<br> Learn more about entering your organization's postal address: [Use content settings to set up repositories of standard and required values for email messages](dynamic-email-content.md#use-content-settings-to-set-up-repositories-of-standard-and-required-values-for-email-messages). |
 | Pre-provisioning | Determine if Power Apps portals are needed | Learn more: [Integrate Customer Insights - Journeys with a CMS system, Dynamics 365 Portals, or Power Apps portals](portal-optional.md). |
-| Provisioning | Provision Dynamics 365 Customer Insights - Journeys app on all Dynamics 365 organizations (dev and production) | Update Dynamics 365 tenants first.<br> Learn more: [Purchase and set up Dynamics 365 Customer Insights - Journeys](purchase-setup.md). |
+| Provisioning | Provision Dynamics 365 Customer Insights - Journeys app on all Dynamics 365 organizations (dev and production) | Update Dynamics 365 tenants first.<br> Learn more: [Purchase and set up Dynamics 365 Customer Insights - Journeys](purchase.md). |
 | Post-provisioning | Grant access to superusers for Dynamics 365 Customer Insights - Journeys training | Later, give access to all users.<br> Learn more: [Manage user accounts, user licenses, and security roles](admin-users-licenses-roles.md). |
 | Post-provisioning | Customize your Dynamics 365 Sales app if needed (merge new tabs, attributes) | Example: [View and edit which lists each contact subscribes to](set-up-subscription-center.md#view-and-edit-which-lists-each-contact-subscribes-to). |
 | Post-provisioning | Authenticate your company domains on the production environment | Learn more: [Authenticate your domains](mkt-settings-authenticate-domains.md). |

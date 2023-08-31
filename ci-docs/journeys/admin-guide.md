@@ -23,7 +23,7 @@ search.audienceType:
 <h2>Set up and get started</h2>
 <li><a href="/dynamics365/marketing/known-issues" data-raw-source="[Readme](./known-issues.md)">Readme</a></li>
 <li><a href="trial-signup.md" data-raw-source="[Sign up for a free trial](trial-signup.md)">Sign up for a free trial</a></li>
-<li><a href="purchase-setup.md" data-raw-source="[Purchase and set up Dynamics 365 Customer Insights - Journeys](purchase-setup.md)">Purchase and set up Dynamics 365 Customer Insights - Journeys</a></li>
+<li><a href="purchase.md" data-raw-source="[Purchase and set up Dynamics 365 Customer Insights - Journeys](purchase.md)">Purchase and set up Dynamics 365 Customer Insights - Journeys</a></li>
 <li><a href="manage-marketing-environments.md" data-raw-source="[Manage Customer Insights - Journeys environments](manage-marketing-environments.md)">Manage Customer Insights - Journeys environments</a></li>
 <li><a href="apply-updates.md" data-raw-source="[Keep Customer Insights - Journeys up to date](apply-updates.md)">Keep Customer Insights - Journeys up to date</a></li>
 <li><a href="open-settings.md" data-raw-source="[Open the administration settings](open-settings.md)">Open the administration settings</a></li>

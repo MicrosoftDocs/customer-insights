@@ -50,10 +50,10 @@ You can purchase additional Customer Insights - Journeys instances depending on 
 
 You can purchase additional contact or interaction packs if the capacity included in the base license doesn't meet your needs. A marketing interaction is a personalized message sent to any entity, such as a contact, lead, account, or Customer Insights profile, using real-time marketing features.  The message can be sent through out-of-the-box channels available in Customer Insights - Journeys (for example, email, web-form submissions, push notifications, event check-ins, LinkedIn), external channels (for example, SMS providers), or third-party systems integrated with Customer Insights - Journeys.
 
-As mentioned in the [purchase and set up article](purchase-setup.md), contacts that are stored, but not marketed to using Customer Insights - Journeys don't count towards the marketing contacts quota. After an interaction is logged for a contact, it doesn't matter how many marketing interactions that contact performs, the contact is still counted once.
+As mentioned in the [purchase and set up article](purchase.md), contacts that are stored, but not marketed to using Customer Insights - Journeys don't count towards the marketing contacts quota. After an interaction is logged for a contact, it doesn't matter how many marketing interactions that contact performs, the contact is still counted once.
 
 ## Next steps
 
-After you've purchased your Customer Insights - Journeys license, you'll need to start setting it up. Learn more in the [purchase and set up Dynamics 365 Customer Insights - Journeys](purchase-setup.md) article.
+After you've purchased your Customer Insights - Journeys license, you'll need to start setting it up. Learn more in the [purchase and set up Dynamics 365 Customer Insights - Journeys](purchase.md) article.
 
 [!INCLUDE[footer-include](./includes/footer-banner.md)]

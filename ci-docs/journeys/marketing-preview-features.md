@@ -67,7 +67,7 @@ To enable the preview features:
     - If you're adding the preview to an existing Customer Insights - Journeys installation, then choose the configured application that includes the name of the environment you just enabled for the preview.
     - If you're installing Customer Insights - Journeys for the first time, then choose an unconfigured entitlement. Later, when asked by the setup wizard, choose the environment you just enabled for the preview.
 
-1. The setup wizard launches. Follow the instructions on your screen to update or install on your selected environment. For more information about the setup wizard, see [Purchase and set up Dynamics 365 Customer Insights - Journeys](purchase-setup.md).
+1. The setup wizard launches. Follow the instructions on your screen to update or install on your selected environment. For more information about the setup wizard, see [Purchase and set up Dynamics 365 Customer Insights - Journeys](purchase.md).
 
 ## Preview support and feedback
 

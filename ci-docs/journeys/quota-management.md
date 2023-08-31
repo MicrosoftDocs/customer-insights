@@ -32,7 +32,7 @@ The following usages and limits are tracked on this screen:
     - Marketing contacts only include those that you engage with through interactions such as emails, text messages, or push notifications.
     - Contacts that you never engage in marketing activities won't be counted as part of this quota.
     - If you have multiple environments, the contact quota for each environment is shown so that you can tell how much is being used by each environment.
-    - For more information about marketing contacts and how they are counted, see [How Customer Insights - Journeys is licensed](purchase-setup.md#how-licensed) and the [Administration and setup FAQ](setup-troubleshooting.yml#licensing).
+    - For more information about marketing contacts and how they are counted, see [How Customer Insights - Journeys is licensed](purchase.md#how-licensed) and the [Administration and setup FAQ](setup-troubleshooting.yml#licensing).
     > [!NOTE]
     > Active marketing contacts are counted as contact entities in the Dataverse database if they have received a marketing interaction within the last 12 months prior to the current date. Once a contact hasn't received an interaction in the last 12 months, it is no longer counted as an active contact.
 - **Litmus email previews**: Shows the total number of Litmus email previews (inbox previews) users at your organization can still use during the current month.

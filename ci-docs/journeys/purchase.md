@@ -57,7 +57,7 @@ The distinction between a non-production license and a production license is onl
 
 A Solution Only license includes all of the entities and solutions for Customer Insights - Journeys, but doesn't include any of the marketing services. This means that marketing capabilities aren't available in this option (including email  creation, email delivery, segmentation, customer journeys, and more). This license is intended for use on development and test environments when making customizations, solving compatibility issues, importing or exporting solutions, and doing other types of development and non-functional marketing testing. A Solution Only license is included with all paid licenses and allows you to install the Solution Only app on as many environments as needed.
 
-As shown below, the Solution Only app appears as a separate Customer Insights - Journeys app that is labeled **Dynamics 365 Customer Insights - Journeys Solution Only** in the Power Platform admin center. You can set up and configure the Solution Only app using the [Customer Insights - Journeys setup wizard](purchase-setup.md#run-the-marketing-setup-wizard).
+As shown below, the Solution Only app appears as a separate Customer Insights - Journeys app that is labeled **Dynamics 365 Customer Insights - Journeys Solution Only** in the Power Platform admin center. You can set up and configure the Solution Only app using the [Customer Insights - Journeys setup wizard](purchase.md#run-the-marketing-setup-wizard).
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of the Customer Insights - Journeys Solution Only app in the Power Platform admin center.](media/purchase-setup-solution-only.png)
