@@ -16,9 +16,9 @@ search.audienceType:
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
 
-Customer journey orchestration in Dynamics 365 Customer Insights - Journeys lets marketers create multi-step, multi-channel marketing campaigns that target a specific segment, deliver marketing email messages, respond to contact interactions, launch workflows, and more. More information: [Use customer journeys to create automated campaigns](../../marketing/customer-journeys-create-automated-campaigns.md)
+Customer journey orchestration in Dynamics 365 Customer Insights - Journeys lets marketers create multi-step, multi-channel marketing campaigns that target a specific segment, deliver marketing email messages, respond to contact interactions, launch workflows, and more. More information: [Use customer journeys to create automated campaigns](../../journeys/customer-journeys-create-automated-campaigns.md)
 
-Customer journeys are built by adding tiles from the in-place menu on the designer canvas to build the journey execution flow. Beyond the [out-of-the box tiles](../../marketing/customer-journey-tiles-reference.md) provided for customer journeys, partners can create **custom channels** to extend the marketing capabilities in Customer Insights - Journeys.
+Customer journeys are built by adding tiles from the in-place menu on the designer canvas to build the journey execution flow. Beyond the [out-of-the box tiles](../../journeys/customer-journey-tiles-reference.md) provided for customer journeys, partners can create **custom channels** to extend the marketing capabilities in Customer Insights - Journeys.
 
 ![Workflow tile.](../media/extend-journeys-custom-channel.png "Workflow tile")
 

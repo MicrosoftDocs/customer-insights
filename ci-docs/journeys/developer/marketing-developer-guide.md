@@ -42,7 +42,7 @@ search.audienceType:
 ## Related resources
 
 [Outbound marketing administrator guide](../admin-guide.md)  
-[Outbound marketing user guide](../../marketing/user-guide.md)  
+[Outbound marketing user guide](../../journeys/user-guide.md)  
 [Developer guide for Dynamics 365](../../customerengagement/on-premises/developer/overview.md) 
 
 [!INCLUDE[footer-include](.././includes/footer-banner.md)]
