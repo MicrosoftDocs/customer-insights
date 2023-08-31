@@ -18,7 +18,7 @@ search.audienceType:
 
 ## What types of lookup fields are supported?
 
-Dynamics 365 Customer Insights - Journeys uses the [same lookup types as other Dynamics 365 Customer Engagement apps](../customerengagement/on-premises/customize/types-of-fields.md#different-types-of-lookups). When creating an email template containing [dynamic content](dynamic-email-content.md) that is used in customer journeys, however, you should make note of what entity type any **Customer** lookup field is referring to.
+Dynamics 365 Customer Insights - Journeys uses the [same lookup types as other Dynamics 365 Customer Engagement apps](/dynamics365/customernegagement/on-premises/customize/types-of-fields#different-types-of-lookups). When creating an email template containing [dynamic content](dynamic-email-content.md) that is used in customer journeys, however, you should make note of what entity type any **Customer** lookup field is referring to.
 
 **Customer** lookup fields may reference a *contact* or an *account* entity, but not both. For example, you might create an email template containing the following dynamic content:
 - "Hello {{contact.contact_contact_parentcustomerid.firstname}}”

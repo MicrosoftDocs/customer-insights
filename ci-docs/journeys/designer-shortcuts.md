@@ -19,8 +19,8 @@ search.audienceType:
 
 Dynamics 365 Customer Insights - Journeys supports most (but not all) of the same keyboard shortcuts and accessibility features provided for other model-driven apps in Dynamics 365. For details, see the following help topics:
 
-- [Accessibility for people with disabilities](../customerengagement/on-premises/basics/accessibility-people-with-disabilities.md)
-- [Keyboard shortcuts in Dynamics 365 applications](../customerengagement/on-premises/basics/keyboard-shortcuts.md)
+- [Accessibility for people with disabilities](/dynamics365/customerengagement/on-premises/basics/accessibility-people-with-disabilities)
+- [Keyboard shortcuts in Dynamics 365 applications](/dynamics365/on-premises/basics/keyboard-shortcuts)
 
 > [!IMPORTANT]
 > If you're working on an iOS device and using an attached keyboard, then use option+tab to move between user-interface elements (such as links, buttons, and tabs). The standard keyboard navigation technique for this is to use tab alone, but because Dynamics 365 Customer Insights - Journeys sometimes uses specialized HTML constructs to create its feature (especially for the content and pipeline designers), some buttons and links will be skipped if you use tab alone. But if you use option+tab, you'll be able to navigate to everything.

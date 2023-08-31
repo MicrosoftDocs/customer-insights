@@ -27,7 +27,7 @@ The following tables show the current usage limits for Customer Insights - Journ
 | Segmentation          | Total number of segments.                               | 10,000                                                      |
 | Email sending         | Interactions sent (email).                                            | 10,000,000 per month (1,000,000 daily max)                  |
 | Email personalization | Number of dynamic attributes.                           | 1,000                                                       |
-| Email personalization | Number of [entity relationships connected](../customerengagement/on-premises/customize/create-edit-entity-relationships.md) in personalization.                                         | 1 entity relationship (for example, contact.account, contact.events)               |
+| Email personalization | Number of [entity relationships connected](/dynamics365/customerengagement/on-premises/customize/create-edit-entity-relationships) in personalization.                                         | 1 entity relationship (for example, contact.account, contact.events)               |
 | Data sync  | Number of rows in a single [synchronized table](./mkt-settings-sync.md) (for example, number of marketing contacts). | 30,000,000 rows                                        |
 | Data sync  | Total rows across all [synchronized tables](./mkt-settings-sync.md).| 100,000,000 rows                                        |
 
@@ -44,7 +44,7 @@ The following tables show the current usage limits for Customer Insights - Journ
 | Interaction sending         | Interactions sent (email, text, push).                                           | 300,000,000 per month (10,000,000 daily max)†                   |
 | Throughput                  | Total number of interactions sent per unit of time.         | Up to 500,000 interactions/hr‡
 | Interaction personalization | Number of distinct dynamic attributes used in a single message.                                | 100                                                   |
-| Interaction personalization | Number of [entity relationships connected](../customerengagement/on-premises/customize/create-edit-entity-relationships.md) in personalization. | 1:1 = up to 6 levels<br>(1:N & N:M = not currently supported) |
+| Interaction personalization | Number of [entity relationships connected](/dynamics365/customerengagement/on-premises/customize/create-edit-entity-relationships) in personalization. | 1:1 = up to 6 levels<br>(1:N & N:M = not currently supported) |
 | Data sync  | Number of rows in a single [synchronized table](./mkt-settings-sync.md) (for example, number of marketing contacts). | 100,000,000 rows                                        |
 | Data sync  | Total rows across all [synchronized tables](./mkt-settings-sync.md).| 100,000,000 rows                                        |
 | Segment-based journeys          | Number of contacts and Customer Insights - Data profiles in a segment used in a Customer Insights - Journeys.          | 10,000,000 members                |

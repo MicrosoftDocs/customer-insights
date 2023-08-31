@@ -52,7 +52,7 @@ The following notes apply when you use export/import to move data from one Custo
 <a name="install-tools"></a>
 ## Download the Configuration Migration tool
 
-The Configuration Migration tool helps you extract your data and configuration details from one environment and then import them to another. To get the tool, follow the instructions given in [Download tools from NuGet](../customerengagement/on-premises/developer/download-tools-nuget.md).
+The Configuration Migration tool helps you extract your data and configuration details from one environment and then import them to another. To get the tool, follow the instructions given in [Download tools from NuGet](/dynamics365/customerengagement/on-premises/developer/download-tools-nuget).
 
 ## Make sure your source and destination are running the same version of Customer Insights - Journeys
 

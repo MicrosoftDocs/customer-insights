@@ -99,7 +99,7 @@ To create a marketing email and go live:
     1. Select **Insert** to place the expression you've built and close the personalization tool. The full salutation now looks like this: **Dear {{contact.firstname}},**. (If you prefer, you can enter that code directly without using content assist.)
 
     > [!NOTE]
-    > [Calculated and rollup fields](../customerengagement/on-premises/developer/calculated-rollup-attributes.md) cannot be used for email personalization.
+    > [Calculated and rollup fields](/dynamics365/customerengagement/on-premises/developer/calculated-rollup-attributes) cannot be used for email personalization.
     
     > [!TIP]
     > You might have noticed that the **Subject** field also has a personalization button. This means that you can add personalized text (including the recipient's name) in the subject too.

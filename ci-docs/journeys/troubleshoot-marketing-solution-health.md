@@ -52,7 +52,7 @@ Below are the rules currently included for Customer Insights - Journeys:
 
 | Rule name | What it checks |
 | --- | --- | 
-| CheckIffSdkMessageProcessingStepsAreActive    | Checks whether any [SDK Message Processing Steps](../customerengagement/on-premises/developer/entities/sdkmessageprocessingstep.md) are disabled. Disabled SDK Message Processing Steps result in incorrect behavior when using Customer Insights - Journeys. | 
+| CheckIffSdkMessageProcessingStepsAreActive    | Checks whether any [SDK Message Processing Steps](/dynamics365/customerengagement/on-premises/developer/entities/sdkmessageprocessingstep) are disabled. Disabled SDK Message Processing Steps result in incorrect behavior when using Customer Insights - Journeys. | 
 | CheckIfProcessOwnedByDisabledUsers    | Checks whether there are any process definitions in the system that are assigned to user accounts that are disabled. If that's the case, upgrading will fail. | 
 | CheckIfProcessesAreActive    | Checks whether there are any process definitions in draft status. If there are processes in draft status, Customer Insights - Journeys will not work correctly. | 
 | MissingMktConfiguration    | Checks for the presence of a Customer Insights - Journeys configuration entity record. If the configuration entity record is missing, Customer Insights - Journeys will not work properly. | 
