@@ -95,7 +95,7 @@ For complete details about how to use these settings, see [Set the sender, recei
 
 ## Design your content
 
-The email content designer resembles the other [digital content designers](design-digital-content.md) provided in Dynamics 365 Customer Insights - Journeys. Work with it as follows:
+The email content designer resembles the other [digital content designers](real-time-marketing-email.md) provided in Dynamics 365 Customer Insights - Journeys. Work with it as follows:
 
 - Use the **Designer** tab graphical tool to design your content by using drag-and-drop, point-and-click operations. Add new elements to your design by dragging design elements from the **Designer** > **Toolbox** tab to the canvas. Choose a design element that already exists in your design, and then open the **Designer** > **Properties** tab to configure it and style it. To style the overall message with basic fonts, colors, and background, select the canvas and open the **General styles** tab.
 - When you select a design element on the canvas, you'll usually see a formatting toolbar just above the element. The controls offered by the toolbar vary depending on which type of element you've selected. Most toolbars provide buttons to move, copy, or delete the selected element, in addition to specialized buttons that vary by element type. The toolbar also includes an arrow, which allows you to quickly switch to the parent element that contains the selected element.
@@ -105,7 +105,7 @@ The email content designer resembles the other [digital content designers](desig
     > [!TIP]
     > Microsoft doesn't provide support for custom HTML in emails.
 
-More information: [Design your digital content](design-digital-content.md)
+More information: [Design your digital content](real-time-marketing-email.md)
 
 > [!IMPORTANT]
 > When you're designing email content, you should always try to minimize the size of your messages as much as you can. When it comes to the text and code content (not including referenced image content), we recommend that you always keep your files under 100 KB for the following reasons:

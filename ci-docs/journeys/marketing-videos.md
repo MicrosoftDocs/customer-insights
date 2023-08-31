@@ -34,7 +34,7 @@ For an even more detailed video overview of the features and benefits of Dynamic
 More information:
 
 - Tutorial: [Create a marketing email and go live](create-marketing-email.md)
-- [Design your digital content](design-digital-content.md)
+- [Design your digital content](real-time-marketing-email.md)
 - [Check your work using previews and test sends](email-preview.md)
 - [Keyboard shortcuts and accessibility features for content designers](designer-shortcuts.md)
 - [Email marketing overview](prepare-marketing-emails.md)

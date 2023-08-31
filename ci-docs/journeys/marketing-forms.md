@@ -41,7 +41,7 @@ To create a new marketing form, do one of the following actions:
 - Go to **Outbound marketing** > **Internet marketing** > **Marketing forms** to go to the list of all forms currently available on your instance, and then select **New** in the command bar. You'll first be asked to choose a template, which establishes the form type, column layout, and sample content. Then you'll be in the form designer.
 - While working on an existing [marketing page design](create-deploy-marketing-pages.md), add a form element to your design, and then select **New** on the **Properties** tab instead of choosing an existing form (be sure to save your page design first if you haven't already done so). You'll then be asked to choose a template, which establishes the form type, column layout, and sample content. Then you'll be in the form designer.
 
-The form designer is similar to other types of [digital content designers](design-digital-content.md) in Customer Insights - Journeys, but only provides design elements and settings that are appropriate for marketing forms.
+The form designer is similar to other types of [digital content designers](real-time-marketing-email.md) in Customer Insights - Journeys, but only provides design elements and settings that are appropriate for marketing forms.
 
 To edit an existing form, do one of the following actions:
 
@@ -190,7 +190,7 @@ Use the designer to add, configure, and arrange the various fields, buttons, and
 > [!TIP]
 > The **Toolbox** tab of the form designer shows each field for which a field mapping is established. If you don't see the field you are looking for, then you probably need to set up a mapping for it as described in [Create and manage input fields for use in forms](marketing-fields.md)
 
-The designer also provides the usual tools for editing the HTML code and viewing previews in various screen sizes and orientations. More information: [Design your digital content](design-digital-content.md)
+The designer also provides the usual tools for editing the HTML code and viewing previews in various screen sizes and orientations. More information: [Design your digital content](real-time-marketing-email.md)
 
 Design element availability and requirements vary by form type, as outlined in the following table. Be sure to include all the elements that are required for the type of form you are designing.
 

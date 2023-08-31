@@ -50,7 +50,7 @@ Below is an overview of the general process for creating and sending a marketing
 
 1. Choose a template, which establishes the basic format of your message.
 
-1. Design your message by using the [drag-and-drop designer or HTML editor](design-digital-content.md).
+1. Design your message by using the [drag-and-drop designer or HTML editor](real-time-marketing-email.md).
 
 1. Add a compelling **Subject** for your message.
 

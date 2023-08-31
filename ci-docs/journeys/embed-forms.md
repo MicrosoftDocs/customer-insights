@@ -65,7 +65,7 @@ To design a form in Dynamics 365 Customer Insights - Journeys that you can embed
 1. [Create the form](create-deploy-marketing-pages.md) and add the required fields to it, as usual.
 
    - Configure all [field elements](content-blocks-reference.md#form-content-elements) just as you would with standard marketing forms.
-   - Make [layout and style settings](design-digital-content.md#work-with-the-designer) just as you would with standard marketing forms.
+   - Make [layout and style settings](real-time-marketing-email.md#work-with-the-designer) just as you would with standard marketing forms.
    - You can use CSS on your external page to further style the imported marketing form. When you're done designing your form in Dynamics 365 Customer Insights - Journeys, open its **Designer** > **HTML** tab to see the CSS classes assigned to each element.
 
 1. Save the form, and go live.

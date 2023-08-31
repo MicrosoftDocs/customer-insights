@@ -31,7 +31,7 @@ Dynamics 365 Customer Insights - Journeys provides advanced digital-content desi
 
 ![The designer toolbar and content area.](media/designer-tools-ill.png "The designer toolbar and content area")
 
-More information: [Design your digital content](design-digital-content.md)
+More information: [Design your digital content](real-time-marketing-email.md)
 
 > [!IMPORTANT]
 > For keyboard shortcuts that include a number, you usually need to use the standard number keys, not the number pad.

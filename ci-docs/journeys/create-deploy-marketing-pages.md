@@ -43,7 +43,7 @@ The overall process of creating a new marketing page and making it available on 
 
 5. Select **Save** in the command bar. Your page is now verified and saved in your system, but is still not available on the web. Select **Go Live** to publish it to your Power Apps portal, where it will be made available at a public URL. You are now ready to start promoting it by including links to it in your marketing email messages, banners, social-media posts, and other marketing initiatives.
 
-More information: [Design your digital content](design-digital-content.md)
+More information: [Design your digital content](real-time-marketing-email.md)
 
 The remainder of this topic provides more information about these steps, including how to work with forms and form fields, how to integrate marketing pages into emails and customer journeys, and how to read and interpret results.
 
@@ -103,7 +103,7 @@ After choosing a template, you'll be in the page content designer, which resembl
 > [!IMPORTANT]
 > HTML code for marketing pages published to the portal must be less than the maximum size of the **adx_copy** attribute of the **adx_webpage** portal entity, not including images or imported scripts. If you attempt to publish designs larger than the maximum size of the **adx_copy** attribute, you will receive an error message.
 
-More information: [Design your digital content](design-digital-content.md)
+More information: [Design your digital content](real-time-marketing-email.md)
 
 ### Establish marketing page templates
 
