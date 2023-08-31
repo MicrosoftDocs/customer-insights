@@ -94,7 +94,7 @@ To add a Dynamics 365 Customer Voice survey to customer journey:
     - If/then based on an answer
 
 > [!IMPORTANT]
-> Entity names related to Forms Pro have changed to "Customer Voice." For example, if you are using [Advanced Find](/dynamics365/customernegagement/on-premises/basics/save-advanced-find-search) to search entities related to your surveys, you will need to search for Customer Voice, not Forms Pro.
+> Entity names related to Forms Pro have changed to "Customer Voice." For example, if you are using [Advanced Find](/dynamics365/customerengagement/on-premises/basics/save-advanced-find-search) to search entities related to your surveys, you will need to search for Customer Voice, not Forms Pro.
 > 
 > The entities associated with Dynamics 365 Customer Voice surveys are listed below:
 >

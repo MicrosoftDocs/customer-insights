@@ -73,7 +73,7 @@ LinkedIn is a social network that focuses on companies, professionals, and worki
 
 These features provide rich opportunities for sales and Customer Insights - Journeys to collaborate while running campaigns and researching markets on LinkedIn. The add/remove contacts feature for salespeople enables them to include promising contacts in segments being used by Customer Insights - Journeys to generate Matched Audiences on LinkedIn. And Salespeople using LinkedIn Sales Navigator can share insights with marketers that can help them design more effective segments and create more appealing Customer Insights - Journeys content.
 
-More information: [Marketing on LinkedIn with Dynamics 365 Customer Insights - Journeys](linkedin-overview.md) and [Integrate LinkedIn Sales Navigator solutions for Dynamics 365 Sales](../linkedin/integrate-sales-navigator.md)
+More information: [Marketing on LinkedIn with Dynamics 365 Customer Insights - Journeys](linkedin-overview.md) and [Integrate LinkedIn Sales Navigator solutions for Dynamics 365 Sales](/dynamics365/linkedin/integrate-sales-navigator)
 
 ## Collaborative sales and Customer Insights - Journeys: a scenario
 
@@ -117,8 +117,8 @@ The process of launching the new product begins with a broad email campaign, whi
 
     ![Sales lead business process.](media/s-m-sales-business-process.png "Sales lead business process")
 
-1. The salesperson reviews the lead's interaction history and that of its related contact. The salesperson might also use [LinkedIn Sales Navigator](../linkedin/integrate-sales-navigator.md) to learn even more about the contact. The salesperson can now be very well prepared when they finally engage with the contact.
-1. Salespeople and marketers can collaborate over an especially promising or valuable lead, either while working in Dynamics 365 or [while working on Microsoft Teams](../teams-integration/teams-integration.md), which can also show contact and lead records directly from Dynamics 365.
+1. The salesperson reviews the lead's interaction history and that of its related contact. The salesperson might also use [LinkedIn Sales Navigator](/dynamics365/linkedin/integrate-sales-navigator.md) to learn even more about the contact. The salesperson can now be very well prepared when they finally engage with the contact.
+1. Salespeople and marketers can collaborate over an especially promising or valuable lead, either while working in Dynamics 365 or [while working on Microsoft Teams](/dynamics365/teams-integration/teams-integration.md), which can also show contact and lead records directly from Dynamics 365.
 1. The salesperson follows the sales-to-opportunity process and eventually closes some sales. Based on this experience, the salesperson can [add more contacts](manage-segments-from-contacts.md) to the segments targeted by the awareness and/or nurturing campaigns.
 
 [!INCLUDE[footer-include](./includes/footer-banner.md)]

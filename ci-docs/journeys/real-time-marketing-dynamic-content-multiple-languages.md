@@ -175,5 +175,5 @@ This is an example will render for customers in United Kingdom and Spain with di
 
 ### Next steps
 
-- [Quickly design and deliver a marketing email with send now](email-send-now.md)
+- [Quickly design and deliver a marketing email with send now](email-quick-send.md)
 - [Send a targeted email blast in Customer Insights - Journeys](real-time-marketing-email-get-started.md)
