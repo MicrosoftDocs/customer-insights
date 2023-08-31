@@ -97,7 +97,7 @@ landingContent:
       - linkListType: reference
         links:
           - text: Customer Insights - Journeys asset library
-            url: upload-image-files.md
+            url: upload-images-files.md
 
   # Card
   - title: Developer
