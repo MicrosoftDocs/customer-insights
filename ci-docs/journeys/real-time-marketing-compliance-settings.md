@@ -75,6 +75,6 @@ To learn more about preference centers, visit [Customer Insights - Journeys pref
 
 [Manage consent for email and text messages in Customer Insights - Journeys](real-time-marketing-email-text-consent.md)
 [Customer Insights - Journeys preference centers](real-time-marketing-preference-centers.md)
-[Outbound marketing compliance settings](gdpr-use-features.md)
+[Outbound marketing compliance settings](privacy-use-features.md)
 
 [!INCLUDE[footer-include](./includes/footer-banner.md)]

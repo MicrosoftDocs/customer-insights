@@ -24,7 +24,7 @@ This article describes how to enable and use GDPR-related features in outbound m
 
 Outbound marketing has a different consent model than Customer Insights - Journeys. Customer Insights - Journeys's consent model, however, doesn't affect outbound marketing functionality. In other words, if you install Customer Insights - Journeys, all of outbound marketing's features and requirements are left intact.
 
-Learn more about outbound marketing's consent model: [Data protection and the GDPR](gdpr.md)
+Learn more about outbound marketing's consent model: [Data protection and the GDPR](privacy.md)
 
 After you install Customer Insights - Journeys, you'll notice a slight change in the settings related to the GDPR configuration. To enable the GDPR configuration, go to **Settings** > **Compliance profiles** > **Outbound consent**.
 
