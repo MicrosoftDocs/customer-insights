@@ -120,7 +120,7 @@ Once the form is published, you can still access these options by selecting the 
 > Example for USA:
 > `https://assets-usa.mkt.dynamics.com`
 >
-> If you would like to disable the domain for form hosting, reach out to support.
+> If you would like to disable the domain for form hosting, reach out to support. 
 
 ### See also
 
