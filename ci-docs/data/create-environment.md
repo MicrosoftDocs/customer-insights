@@ -17,8 +17,9 @@ After [your organization purchased a license for Dynamics 365 Customer Insights]
 
 After the first environment is created, the global administrator of the Microsoft 365 tenant can [add users from their organization as administrators](permissions.md). These administrators can then manage users and environments.
 
+<!--
 > [!IMPORTANT]
-> In most cases, creating an environment or installing Customer Insights - Data on an existing environment should be done with the [consolidated provisioning experience](tbd.md).
+> In most cases, creating an environment or installing Customer Insights - Data on an existing environment should be done with the [consolidated provisioning experience](tbd.md). -->
 
 Use the environments creation experience in Customer Insights - Data for the following scenarios:
 
@@ -44,7 +45,9 @@ To create a new Dataverse environment when installing Customer Insights - Data:
 
 ## Create an environment in Customer Insights - Data
 
+<!--
 We recommend to [use the consolidated environment manager for Customer Insights](tbd.md) to create new environment by default.
+-->
 
 1. Open the environment picker and select **+ New**.
   
