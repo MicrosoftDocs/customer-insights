@@ -625,7 +625,7 @@ The update also includes monthly enhancements to journeys, domain authentication
 - **Easily author personalized content using pre-defined dynamic text without the need to understand the data model**
     - With pre-defined dynamic text, marketers have a quick list of the most commonly used dynamic text to select from. Marketers can simply select and insert the pre-defined text into an email to personalize it. Marketers familiar with the data model can create and share additional dynamic text so that the rest of the team can focus on authoring content rather than learning database concepts. Not only does this promote ease of use, but it also customizes the list with dynamic text that's specific to individual businesses.
     - [Release plan](/dynamics365-release-plan/2022wave1/marketing/dynamics365-marketing/quickly-personalize-emails-using-predefined-dynamic-text-without-need-know-underlying-data-structure)
-    - [Docs](real-time-marketing-predefined-tokens.md)
+    - [Docs](real-time-marketing-predefined-dynamic-text.md)
 
 - **Quickly create customer journeys triggered by marketing interactions such as webinar check-ins and form submissions**
     - New out-of-the-box triggers allow you to create customer journeys triggered by marketing interactions such as webinar check-ins and form submissions. This eliminates the need to create and manage hundreds or thousands of segments and journeys. Now, you can use one trigger per a form and marketing event. A single journey can replace them all – and dynamic content can be used to tailor the outgoing messages to the respective form or marketing event.
@@ -747,7 +747,7 @@ The Dynamics 365 Customer Insights - Journeys February 2021 update includes many
 - **Quickly personalize emails using predefined dynamic text, without the need to know the underlying data structure**
     - With predefined dynamic text, marketers will have a quick list of the most commonly used tokens to select from. Marketers familiar with the data model can create and share additional tokens so that the rest of the team can focus on authoring content rather than learning database concepts.
     - [Release plan](/dynamics365-release-plan/2022wave1/marketing/dynamics365-marketing/quickly-personalize-emails-using-predefined-dynamic-text-without-need-know-underlying-data-structure)
-    - [Docs](real-time-marketing-predefined-tokens.md)
+    - [Docs](real-time-marketing-predefined-dynamic-text.md)
 - **Take action with your customers in more ways by raising triggers from a journey to run another journey or Power Automate flow**
     - Use custom triggers to link between journeys and between journeys and custom processes. A new journey tile will raise a trigger at any point in a customer journey. Any journey or Power Automate flows connected to the trigger run immediately run when a customer reaches the tile. This includes triggers used in exit criteria, goals, and if/then branches for journeys.
     - [Release plan](/dynamics365-release-plan/2022wave1/marketing/dynamics365-marketing/take-action-customers-more-ways-raising-triggers-journey-run-another-journey-or-power-automate)

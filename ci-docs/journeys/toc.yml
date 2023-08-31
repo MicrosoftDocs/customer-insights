@@ -505,7 +505,7 @@
       - name: Public IP addresses used for sending e-mails
         href: public-ip-addresses-for-email-sending.md
       - name: Create an SPF TXT record
-        href: create-spf-record.md
+        href: mkt-settings-authenticate-domains.md
       - name: Email security and connection encryption
         href: email-security-encryption.md
       - name: Deliverability recommendations when changing ESPs
@@ -515,7 +515,7 @@
       - name: Google Postmaster Tools - What it is and how it can help you
         href: google-postmaster.md
       - name: Troubleshoot email forwarding and replies
-        href: forwarding-and-replies.md
+        href: email-troubleshooting.md
     - name: Improve sending reputation
       items:
       - name: Email policies and suspension standards

@@ -21,7 +21,7 @@ This article describes issues related to email administration in Dynamics 365 Cu
 
 If you're using Customer Insights - Journeys to send email messages to internal users and they aren't receiving your emails, the emails are likely being quarantined by your spam filter solution. To ensure that your emails arrive in your internal recipients' inboxes and successfully pass your spam solution checks, complete the following steps:
 
-- [Add Dynamics 365 Customer Insights - Journeys to your SPF record](create-spf-record.md)
+- [Add Dynamics 365 Customer Insights - Journeys to your SPF record](mkt-settings-authenticate-domains.md)
 - Determine if you're using any email security software (for example, Mimecast, Proofpoint, or IronPort)
 
 Below are direct links with instructions on how to change allow list settings on common email and web filters:
