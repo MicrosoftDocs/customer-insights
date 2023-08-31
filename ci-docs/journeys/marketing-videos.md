@@ -24,7 +24,7 @@ If you are new to Dynamics 365 Customer Insights - Journeys, then these videos w
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4FRAO]
 
-More information: [Overview (Marketing)](overview.md)
+More information: [Overview (Marketing)](real-time-marketing-overview.md)
 
 For an even more detailed video overview of the features and benefits of Dynamics 365 Customer Insights - Journeys, including extended feature demos, see [Dynamics 365 Customer Insights - Journeys | Business Applications Spring 2018 Release](https://www.youtube.com/watch?v=LWQ4C0kAPo4)  (36:51).
 

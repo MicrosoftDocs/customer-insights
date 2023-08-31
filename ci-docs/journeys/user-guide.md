@@ -23,7 +23,7 @@ search.audienceType:
 <tr><td>
 
 <h2>Learn the basics</h2>
-<li><a href="overview.md" data-raw-source="[Dynamics 365 Customer Insights - Journeys overview](overview.md)">Dynamics 365 Customer Insights - Journeys overview</a></li>
+<li><a href="real-time-marketing-overview.md" data-raw-source="[Dynamics 365 Customer Insights - Journeys overview](real-time-marketing-overview.md)">Dynamics 365 Customer Insights - Journeys overview</a></li>
 <li><a href="browser-requirements.md" data-raw-source="[Browser and system requirements](browser-requirements.md)">Browser and system requirements</a></li>
 <li><a href="navigation.md" data-raw-source="[Find your way around](navigation.md)">Find your way around</a></li>
 <li><a href="designer-shortcuts.md" data-raw-source="[Accessibility and keyboard shortcuts](designer-shortcuts.md)">Accessibility and keyboard shortcuts</a></li>
