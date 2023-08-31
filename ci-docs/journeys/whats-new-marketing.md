@@ -430,7 +430,7 @@ Monthly enhancement includes an upgraded side pane for goals and exit criteria.
 - **Seamlessly manage and embed assets into your content with an enhanced unified library**
     - Sending your customers’ rich, compelling content is key to keeping them engaged with your brand. With this release, using assets across Customer Insights - Journeys and outbound marketing got easier. With the enhanced unified library, you can now upload files once and use them where you need them. No need to copy or download assets for backup. Using additional file types, such as documents, PDFs, presentations, videos and more, you can now add asset links to your emails to create richer content for your customers.
     > [!NOTE]
-    > To foster the new simplified way of managing and using assets, the [Customer Insights - Journeys library add-on](real-time-marketing-asset-library.md) is no longer available for installation. If you previously installed it, you could continue to use the add-on.
+    > To foster the new simplified way of managing and using assets, the [Customer Insights - Journeys library add-on](upload-image-files.md) is no longer available for installation. If you previously installed it, you could continue to use the add-on.
     - [Docs](upload-images-files.md)
 
     > [!div class="mx-imgBorder"]

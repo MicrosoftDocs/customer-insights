@@ -863,7 +863,7 @@ With the Dynamics 365 Customer Insights - Journeys November 2021 update you can 
 ##### Real-time marketing
 
 - **Asset library**
-    - Copy images from the outbound marketing file library to the Customer Insights - Journeys asset library. Learn more: [Export assets from outbound marketing to the asset library](real-time-marketing-asset-library.md#asset-library-features).
+    - Copy images from the outbound marketing file library to the Customer Insights - Journeys asset library. Learn more: [Export assets from outbound marketing to the asset library](upload-image-files.md#asset-library-features).
 - **Customer journeys**
     - You can now gain more control over journey branching conditions through increased attribute support by having access to all attributes associated with a contact entity, a lead entity or a trigger. You also have the ability to do relative and partial date time checks such as checking if a customer's birthday is this month or if their membership is up for renewal in the next 90 days.
 - **Marketing emails**
@@ -1253,7 +1253,7 @@ The May 2021 Customer Insights - Journeys monthly update includes email editor i
     - [Docs](real-time-marketing-triggers.md)
 - **Experiment with the next action in a journey to optimize for results**
     - [Release plan](/dynamics365-release-plan/2021wave1/marketing/dynamics365-marketing/experiment-next-action-journey-optimize-results)
-    - [Docs](real-time-marketing-experimentation.md)
+    - [Docs](real-time-marketing-ab-tests-in-marketing-journeys.md)
 - **Hyper-personalize customer journeys using data and insights from Dynamics 365 Customer Insights**
     - [Release plan](/dynamics365-release-plan/2021wave1/marketing/dynamics365-marketing/hyper-personalize-customer-journeys-using-data-insights-dynamics-365-customer-insights)
     - [Docs](real-time-marketing-segments.md)
@@ -1268,7 +1268,7 @@ The May 2021 Customer Insights - Journeys monthly update includes email editor i
     - [Docs](real-time-marketing-trigger-based-journey.md)
 - **Search, version, manage, and tag your digital assets with a new centralized asset library**
     - [Release plan](/dynamics365-release-plan/2021wave1/marketing/dynamics365-marketing/search-version-manage-tag-digital-assets-new-centralized-asset-library)
-    - [Docs](real-time-marketing-asset-library.md)
+    - [Docs](upload-image-files.md)
 - **Set business goals for journeys and measure progress to the goals**
     - [Release plan](/dynamics365-release-plan/2021wave1/marketing/dynamics365-marketing/set-business-goals-journeys-measure-progress-goal)
     - [Docs](real-time-marketing-business-goals.md)

@@ -47,7 +47,7 @@ landingContent:
           - text: Set a business goal and measure progress through a journey
             url: real-time-marketing-business-goals.md
           - text: Experiment and refine Customer Insights - Journeys
-            url: real-time-marketing-experimentation.md
+            url: real-time-marketing-ab-tests-in-marketing-journeys.md
           - text: Access and interpret analytics
             url: real-time-marketing-analytics.md
       - linkListType: reference
@@ -97,7 +97,7 @@ landingContent:
       - linkListType: reference
         links:
           - text: Customer Insights - Journeys asset library
-            url: real-time-marketing-asset-library.md
+            url: upload-image-files.md
 
   # Card
   - title: Developer

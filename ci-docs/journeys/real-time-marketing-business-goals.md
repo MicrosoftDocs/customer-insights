@@ -20,7 +20,7 @@ Most journeys are created to drive a specific customer action such as making a p
 Using the goal-setting feature, you can:
 
 - Measure a journey’s success on an ongoing basis using the goal metric.
-- Optimize your [A/B tests](real-time-marketing-experimentation.md) and channel selections based on the journey goal.
+- Optimize your [A/B tests](real-time-marketing-ab-tests-in-marketing-journeys.md) and channel selections based on the journey goal.
 - Express goal targets in count or percentage to determine how well a journey is performing.
 
 ## Types of triggers available to create a business goal
