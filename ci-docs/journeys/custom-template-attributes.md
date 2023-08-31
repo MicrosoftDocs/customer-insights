@@ -145,7 +145,7 @@ The following table lists the available values for the `data-editorblocktype` at
 | Reset-button element | Form content | ResetButtonBlock |
 | Captcha element | Form content | CaptchaBlock |
 
-For more information about each of these design elements, see [Design elements reference](content-blocks-reference.md).
+For more information about each of these design elements, see [Design elements reference](content-blocks.md).
 
 > [!IMPORTANT]
 > When you are working on the **HTML** tab, you should avoid editing any of the content between the `<div>` tags of your design elements because the results of doing so can be unpredictable, and your edits are likely to be overwritten by the designer anyway. Instead, use the **Designer** tab to manage your design-element content and properties.

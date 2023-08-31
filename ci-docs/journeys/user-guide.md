@@ -52,7 +52,7 @@ search.audienceType:
 
 <h2>Design marketing emails and landing pages</h2>
 <li><a href="real-time-marketing-email.md" data-raw-source="[Design your digital content](real-time-marketing-email.md)">Design your digital content</a></li>
-<li><a href="content-blocks-reference.md" data-raw-source="[Design elements reference](content-blocks-reference.md)">Design elements reference</a></li>
+<li><a href="content-blocks.md" data-raw-source="[Design elements reference](content-blocks.md)">Design elements reference</a></li>
 <li><a href="upload-images-files.md" data-raw-source="[Upload and use images and files](upload-images-files.md)">Upload and use images and files</a></li>
 <li><a href="prepare-marketing-emails.md" data-raw-source="[Email marketing overview](prepare-marketing-emails.md)">Email marketing overview</a></li>
 <li><a href="dynamic-email-content.md" data-raw-source="[Add dynamic content to email messages](dynamic-email-content.md)">Add dynamic content to email messages</a></li>

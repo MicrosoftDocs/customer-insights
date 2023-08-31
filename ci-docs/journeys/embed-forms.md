@@ -64,7 +64,7 @@ To design a form in Dynamics 365 Customer Insights - Journeys that you can embed
 
 1. [Create the form](create-deploy-marketing-pages.md) and add the required fields to it, as usual.
 
-   - Configure all [field elements](content-blocks-reference.md#form-content-elements) just as you would with standard marketing forms.
+   - Configure all [field elements](content-blocks.md#form-content-elements) just as you would with standard marketing forms.
    - Make [layout and style settings](real-time-marketing-email.md#work-with-the-designer) just as you would with standard marketing forms.
    - You can use CSS on your external page to further style the imported marketing form. When you're done designing your form in Dynamics 365 Customer Insights - Journeys, open its **Designer** > **HTML** tab to see the CSS classes assigned to each element.
 
@@ -76,7 +76,7 @@ To design a form in Dynamics 365 Customer Insights - Journeys that you can embed
 
 1. In the **Related marketing form pages** column, select **Add new form page** (select the the ellipsis button here to find this command if you don't see it). A quick-create flyout slides in. A _form page_ is a virtual page where you can make a few extra configuration settings for forms that will be embedded externally.
 
-1. Use the quick-create form to set up your form options. The settings here are the same as the settings for a [form element](content-blocks-reference.md#the-form-element-for-marketing-pages) placed on a marketing page.
+1. Use the quick-create form to set up your form options. The settings here are the same as the settings for a [form element](content-blocks.md#the-form-element-for-marketing-pages) placed on a marketing page.
 
 1. Select **Save** to create the new form page, and go back to the **Form hosting** tab for your form.
 
@@ -192,7 +192,7 @@ After you've set up a captured or hosted form, you're ready to start using it in
 
 ### Link to an external form from an email message
 
-Unlike local landing pages, there is no [design element](content-blocks-reference.md) dedicated to external forms. Therefore, use either a button element or a standard text link to your embedded form by using its page URL from your web server.
+Unlike local landing pages, there is no [design element](content-blocks.md) dedicated to external forms. Therefore, use either a button element or a standard text link to your embedded form by using its page URL from your web server.
 
 ### Use external forms with journey triggers
 

@@ -74,7 +74,7 @@ The following settings and information are provided on the **Summary** tab:
 - **Generate leads without matching**: This setting controls whether or not the form will attempt to match an existing lead (using the specified **Lead matching strategy**), or if instead it will always create a new lead for each submission. Set to **No** to apply the matching strategy, or to **Yes** to create a new lead every time.
 - **Purpose** and **Visual style**: These fields provide more information about the form. For form templates, these values affect how the form can be found on the **Purpose** and **Visual style** tabs of the template gallery. These settings don't affect the actual layout or functionality of the form in any way.
 - **Prefill fields**: Set to **Yes** to enable prefilling for the form; set to **No** to disable it. You can only change this option for landing-page forms&mdash;subscription-center forms always use prefilling, while forward-to-a-friend forms never use it. More information: [Enable prefilling for forms](form-prefill.md)
-- **Submission behavior**: These settings establish how the form interacts with people who submit it. They establish the default settings for when you place the form in a marketing page using a [form element](content-blocks-reference.md#form-element), though you can override these by editing the form element properties. They also establish the behavior for when the form is embedded on an external website. The following settings are provided here:
+- **Submission behavior**: These settings establish how the form interacts with people who submit it. They establish the default settings for when you place the form in a marketing page using a [form element](content-blocks.md#form-element), though you can override these by editing the form element properties. They also establish the behavior for when the form is embedded on an external website. The following settings are provided here:
     - **Success notification**: Enter a message to show to visitors right after they submit the form. Use this to thank the submitter and confirm their submission.
     - **Success image URL**: The success-notification message is rendered as an overlay dialog that includes a small graphic. By default, it shows a green circle with a check mark. If you prefer a custom graphic (such as your organization's logo), then upload the graphic somewhere and enter the full URL here.
     - **Error notification**: Enter a short message that tells the user that a temporary error has prevented the system from accepting the form submission. For example, "We can't accept your form submission right now. Please try again later."
@@ -185,7 +185,7 @@ When creating or editing a form, you'll be in the form designer, which is an exa
 Use the designer to add, configure, and arrange the various fields, buttons, and graphical elements that your form requires by working as follows:
 
 - Assemble your form by dragging fields and design elements from the **Toolbox** tab to the canvas.
-- Configure each element by selecting it and going to the **Properties** tab. More information: [Design elements reference](content-blocks-reference.md)
+- Configure each element by selecting it and going to the **Properties** tab. More information: [Design elements reference](content-blocks.md)
 
 > [!TIP]
 > The **Toolbox** tab of the form designer shows each field for which a field mapping is established. If you don't see the field you are looking for, then you probably need to set up a mapping for it as described in [Create and manage input fields for use in forms](marketing-fields.md)
@@ -241,7 +241,7 @@ Use a form element to add a form to a landing page. After adding the element, yo
 
 When you're choosing which form the element will show, you can only choose forms whose type matches the type of marketing page you are working on (landing page, subscription center, or forward to a friend).
 
-More information: [The form element for marketing pages](content-blocks-reference.md#the-form-element-for-marketing-pages)
+More information: [The form element for marketing pages](content-blocks.md#the-form-element-for-marketing-pages)
 
 ## View submissions and gain insights from form interactions
 

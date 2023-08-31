@@ -2376,7 +2376,7 @@ Section elements are used to establish the basic layout of your emails, marketin
 
 ![Section-element style settings.](media/section-element-bg.png "Section-element style settings")
 
-More information: [Section (layout) elements](content-blocks-reference.md#section-layout-elements)
+More information: [Section (layout) elements](content-blocks.md#section-layout-elements)
 
 #### Preview: Set static expiry dates for email tiles in a customer journey
 

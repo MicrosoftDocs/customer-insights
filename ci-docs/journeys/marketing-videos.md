@@ -39,7 +39,7 @@ More information:
 - [Keyboard shortcuts and accessibility features for content designers](designer-shortcuts.md)
 - [Email marketing overview](prepare-marketing-emails.md)
 - [Work with email, page, and form templates](email-templates.md)
-- [Design elements reference](content-blocks-reference.md)
+- [Design elements reference](content-blocks.md)
 
 ## Use customer journeys to create automated campaigns
 
