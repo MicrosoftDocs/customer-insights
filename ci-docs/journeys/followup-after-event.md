@@ -27,7 +27,7 @@ To promote the survey, you might create a marketing email message that links to 
 
 More information:
 
-- [Create and run online surveys](surveys.md).
+- [Create and run online surveys](customer-voice.md).
 - [Email marketing overview](prepare-marketing-emails.md).
 - [Use customer journeys to create automated campaigns](customer-journeys-create-automated-campaigns.md)
 
