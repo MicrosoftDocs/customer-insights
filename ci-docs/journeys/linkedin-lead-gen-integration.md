@@ -60,7 +60,7 @@ When a LinkedIn lead matches a lead record in Dynamics 365, the lead record is u
 
 ### See the details of a lead
 
-To see the details of a lead record in Customer Insights - Journeys, go to **Outbound marketing** > **Lead management** > **Leads**, and then select the lead record from the list. If the lead was created by Dynamics 365 Connector for LinkedIn Lead Gen Forms, the lead source is **LinkedIn Sponsored Content**. If an existing lead record was updated, Dynamics 365 updates the lead field values by using the information submitted by the lead on LinkedIn. More information: [Create or edit a lead (Sales and Sales Hub)](../sales-enterprise/create-edit-lead-sales.md)
+To see the details of a lead record in Customer Insights - Journeys, go to **Outbound marketing** > **Lead management** > **Leads**, and then select the lead record from the list. If the lead was created by Dynamics 365 Connector for LinkedIn Lead Gen Forms, the lead source is **LinkedIn Sponsored Content**. If an existing lead record was updated, Dynamics 365 updates the lead field values by using the information submitted by the lead on LinkedIn. More information: [Create or edit a lead (Sales and Sales Hub)](/dynamics365/sales-enterprise/create-edit-lead-sales.md)
 
 To see the information collected by LinkedIn Lead Gen for any lead, regardless of how it was created, open the lead and go to its **LinkedIn Lead Info** tab.
 

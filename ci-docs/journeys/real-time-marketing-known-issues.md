@@ -51,7 +51,7 @@ As we continue to work on Customer Insights - Journeys and refine the experience
 ## Triggers
 
 - You can’t instrument C# apps in Customer Insights - Journeys. If you choose to use an alternate language like Python, you’ll have to manage an infra to run Python.
-- Published triggers can’t be migrated when moving data between environments. Any published triggers in the old environment need to be re-created in the new environment. Draft triggers, however, can be migrated as described in [Move custom triggers between environments](real-time-marketing-move-triggers.md).
+- Published triggers can’t be migrated when moving data between environments. Any published triggers in the old environment need to be re-created in the new environment. Draft triggers, however, can be migrated as described in [Move custom triggers between environments](move-triggers-between-environments.md).
 
 ## Natural language
 
