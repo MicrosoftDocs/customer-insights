@@ -30,7 +30,7 @@ Customer service agents can prioritize and personalize the service level to prov
 
 [Dynamics 365 Customer Insights - Data](data/overview.md) is Microsoft's customer data platform (CDP) that helps deliver personalized customer experiences.
 
-[Dynamics 365 Customer Insights - Journeys](journeys/overview.md) elevates customer experiences, allowing you to orchestrate personalized journeys across all touchpoints to strengthen relationships and earn loyalty.
+[Dynamics 365 Customer Insights - Journeys](journeys/real-time-marketing-overview.md) elevates customer experiences, allowing you to orchestrate personalized journeys across all touchpoints to strengthen relationships and earn loyalty.
 
 ## Pricing and licensing
 
