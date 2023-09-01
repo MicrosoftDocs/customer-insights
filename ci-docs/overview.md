@@ -1,38 +1,47 @@
 ---
-title: Product overview for Dynamics 365 Customer Insights
+title: Product overview for Dynamics 365 Customer Insights 
 author: m-hartmann
-description: Get an overview for Dynamics 365 Customer Insights and its main features.
+description: Get an overview for Dynamics 365 Customer Insights and how your organization can benefit from the broad set of features.
 ms.author: mhart
-ms.date: 04/11/2023
+ms.reviewer: mhart
+ms.date: 09/01/2023
 ms.topic: overview
 ---
 
 # Product overview for Dynamics 365 Customer Insights
 
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
+[!INCLUDE [consolidated-sku](data/includes/consolidated-sku.md)]
 
-[Dynamics 365 Customer Insights](https://dynamics.microsoft.com/ai/customer-insights/) is Microsoft's customer data platform (CDP) that helps deliver personalized customer experiences. The application provides a holistic view of customers with unmatched time to insight. Gain the most comprehensive view of your customers by unifying customer data with operational and IoT data in real-time. Enrich customer profiles with first and third-party data sources.
+Dynamics 365 Customer Insights helps your organization deliver exceptional customer experiences. It lays the foundation to create truly personalized, responsive, and connected customer journeys across sales, marketing, and service teams.
 
-Customer Insights helps you transform your business into a customer-centric organization by empowering your marketing, sales, and service professionals to tailor 1:1 interactions at-scale. Turnkey integrations with Microsoft and third-party applications can be used to activate real-time insights to drive meaningful actions.
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RW17thC]
 
-Connect data from transactional, behavioral, and demographic data sources to create 360-degree customer views. Derive out-of-the-box insights with prebuilt AI models or rapidly build, test, and deploy custom AI/ML models using advanced analytics solutions at limitless scale.
+The combined customer data platform and real-time journey orchestration empower your teams to uncover new insights and deliver personalized customer experiences. Say goodbye to fragmented data and time consuming manual content creation. Boost your creativity with recommended content ideas from Copilot in Customer Insights. Break down barriers for your teams with access to data and target segments.
 
-Maintain full control over your customer data to ensure the highest level of data governance and compliance with a self-service, enterprise grade CDP built on Microsoft Azure. Support privacy laws and regulations and other legislative requirements and industry standards through built-in privacy, security, and governance tools.
+Data analysts can unify transactional, demographic, and behavioral data to get a holistic view of your customers. Enrich your customer data to find out more about your customers' interests, product usage, or to layer on market data. Copilot in Customer Insights lets them use natural language to explore, analyze, and understand customer data and discover new insights.
+
+Marketers can describe their desired outcomes in their own words and let Copilot seamlessly create new customer segments and journeys. They can also simplify content creation with text and image recommendations that can be tailored to suit your brand and audience.
+
+Sellers receive a seamless handoff from their marketing team with a unified timeline of customer interactions, prioritized leads, and personalized product recommendations.
+
+Customer service agents can prioritize and personalize the service level to provide the best support experience with visibility into a predicted customer lifetime value.
+
+## Product documentation
+
+[Dynamics 365 Customer Insights - Data](data/overview.md) is Microsoft's customer data platform (CDP) that helps deliver personalized customer experiences.
+
+[Dynamics 365 Customer Insights - Journeys](journeys/real-time-marketing-overview.md) elevates customer experiences, allowing you to orchestrate personalized journeys across all touchpoints to strengthen relationships and earn loyalty.
 
 ## Pricing and licensing
 
-Customer Insights is licensed per tenant and includes both business-to-consumer (B2C) and business-to-business (B2B) capabilities. You can purchase additional capacity with add-on licenses to increase the number of profiles and accounts.
+Customer Insights is licensed per tenant. You can purchase more capacity to meet your needs.
 
 - [Pricing overview](https://dynamics.microsoft.com/ai/customer-insights/pricing/)
 - Capacity and entitlements: [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544)
 - [Microsoft Volume Licensing website](https://www.microsoft.com/licensing/how-to-buy/how-to-buy)
 
-## Try Customer Insights and get started
+## Try Customer Insights
 
-Start a [free Customer Insights trial](https://signup.microsoft.com/create-account/signup?SKU=036c2481-aa8a-47cd-ab43-324f0c157c2d&ali=1&RU=https:%2F%2Fhome.ci.ai.dynamics.com%2Fstart%2Ftrial&products=036c2481-aa8a-47cd-ab43-324f0c157c2d) today to test the application with your own customer data. [Find out how you can quickly access and explore many of the application’s key features](trial-signup.md). 
+Start a [free Customer Insights trial](https://dynamics.microsoft.com/ai/customer-insights/) today. Find out how you can quickly access and explore many of the application’s key features in [Customer Insights - Data](data/trial-signup.md) and [Customer Insights - Journeys](journeys/trial-signup.md).
 
-Browse [featured learning resources](https://dynamics.microsoft.com/ai/customer-insights/resources/) including analyst reports, on-demand webinars and customer stories.
-
-Learn how you can build a deeper understanding of your customers with our [get started guide](get-started.md).
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+[!INCLUDE[footer-include](data/includes/footer-banner.md)]
