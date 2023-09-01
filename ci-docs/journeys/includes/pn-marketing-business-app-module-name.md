@@ -1,1 +1,1 @@
-Dynamics 365 Marketing
+Dynamics 365 Customer Insights - Journeys
