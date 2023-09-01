@@ -1,4 +1,9 @@
-<svg width="889" height="898" aria-owns="html1" data-stacking-context="true" version="1.1" viewBox="55 128 889 898" xmlns="http://www.w3.org/2000/svg">
+<svg width="889" height="898" aria-owns="html1" data-stacking-context="true" version="1.1" viewBox="55 128 889 898" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <linearGradient id="cd" x1="611.25" x2="956.89" y1="477.78" y2="477.78" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#fff" offset="0"/>
+  </linearGradient>
+ </defs>
  <style>@font-face {			
 font-family: "Segoe UI";			
 src: local("Segoe UI");			
@@ -134,7 +139,6 @@ font-family: "arial";
 src: local("arial");			
 }</style>
  <g aria-owns="head1 c360-theme1" data-stacking-context="true" data-tag="html" data-z-index="auto">
-  <g aria-owns="style1 style2 style3 style4 style5 style6 style7 style8 style9 style10 style11 style12 style13 style14 style15 style16 style17 style18 style19 style20 style21 style22 style23 script1 meta1 title1 base1 meta2 meta3 style24 link1 link2 appFavicon link3 link4 link5 script2 script3 style25 style26 style27 style28 style29 style30 style31 style32 script4 script5 style33 script6 style34 style35 style36 style37 style38 style39 style40 style41 style42 style43 style44 style45 style46 style47 style48 script7 style49 style50 style51 style52 style53 style54 script8 style55 style56 style57 script9 script10 style58 style59 style60 style61 style62 style63 style64 style65 style66 style67 style68 style69 style70 style71 style72 style73 style74 style75 style76" data-stacking-context="true" data-tag="head" data-z-index="auto"></g>
   <g class="c360-theme body-113" aria-owns="skipToContentContainer c360-app1 notificationsContainer script11 o365shellwcssframe script12" data-stacking-context="true" data-tag="body" data-z-index="auto" role="document">
    <g data-stacking-layer="rootBackgroundAndBorders">
     <rect width="960" height="1032" fill="#faf9f8"/>
@@ -205,9 +209,6 @@ src: local("arial");
                </g>
               </g>
              </g>
-             <g id="cc" class="_2mBDn0rQL2ydXWUGzuMkG-" aria-owns="Control_5_container" data-stacking-context="true" data-tag="div" data-z-index="auto">
-              <g id="cd" class="_3tMIPlDhtt_BfUWurbsxvD" aria-owns="div5" data-stacking-context="true" data-tag="div" data-z-index="auto"></g>
-             </g>
              <g id="ce" class="_2mBDn0rQL2ydXWUGzuMkG-" aria-owns="shellHeaderSwitcherButton_container feedback_container settings_container notificationbell_container help_container" data-stacking-context="true" data-tag="div" data-z-index="auto">
               <g id="cf" class="_3tMIPlDhtt_BfUWurbsxvD" aria-owns="_2snzFD6PQiLt7Zw71oYsJL1" data-stacking-context="true" data-tag="div" data-z-index="auto">
                <g class="_2snzFD6PQiLt7Zw71oYsJL" aria-owns="shellHeaderSwitcherButton" data-stacking-context="true" data-tag="div" data-z-index="auto">
@@ -219,7 +220,6 @@ src: local("arial");
                      <mask id="s">
                       <rect x="496" y="14" width="16" height="16" fill="#fff"/>
                      </mask>
-                     <g aria-owns="image-2381" data-stacking-context="true" data-tag="g" data-z-index="auto"></g>
                     </g>
                    </g>
                    <g class="textArea-239" mask="url(#n)" aria-owns="ms-TooltipHost1" data-stacking-context="true" data-tag="div" data-z-index="auto">
@@ -298,7 +298,6 @@ src: local("arial");
                </g>
               </g>
              </g>
-             <g class="_3tMIPlDhtt_BfUWurbsxvD _1REjXI0cXpkTlQHDFt6Ip4" aria-owns="div6" data-stacking-context="true" data-tag="div" data-z-index="auto"></g>
             </g>
            </g>
           </g>
@@ -361,7 +360,6 @@ src: local("arial");
              <mask id="bg">
               <rect width="0" height="0" fill="#fff"/>
              </mask>
-             <g class="ms-Icon--Contact ms-icon-font-size-18 _3yZwce56ZwsXDLwEtU0IP9" aria-owns="span6" data-stacking-context="true" data-tag="span" data-z-index="auto" role="presentation"></g>
             </g>
            </g>
           </g>
@@ -405,14 +403,6 @@ src: local("arial");
             <mask id="p">
              <rect x="924.33" y="52" width="24" height="24" fill="#fff"/>
             </mask>
-            <g aria-owns="paint0_radial_728_117201 paint1_linear_728_117201 paint2_radial_728_117201 paint3_linear_728_117201 paint4_radial_728_117201 paint5_linear_728_117201" data-stacking-context="true" data-tag="defs" data-z-index="auto">
-             <g aria-owns="stop1 stop2" data-stacking-context="true" data-tag="radialgradient" data-z-index="auto"></g>
-             <g aria-owns="stop3 stop4" data-stacking-context="true" data-tag="lineargradient" data-z-index="auto"></g>
-             <g aria-owns="stop5 stop6" data-stacking-context="true" data-tag="radialgradient" data-z-index="auto"></g>
-             <g aria-owns="stop7 stop8" data-stacking-context="true" data-tag="lineargradient" data-z-index="auto"></g>
-             <g aria-owns="stop9 stop10" data-stacking-context="true" data-tag="radialgradient" data-z-index="auto"></g>
-             <g aria-owns="stop11 stop12" data-stacking-context="true" data-tag="lineargradient" data-z-index="auto"></g>
-            </g>
            </g>
           </g>
          </g>
@@ -431,7 +421,6 @@ src: local("arial");
        <mask id="w">
         <rect x="46" y="48" width="914" height="984" fill="#fff"/>
        </mask>
-       <g aria-owns="header1" data-stacking-context="true" data-tag="div" data-z-index="auto" role="complementary"></g>
        <g id="cy" class="pageContainer-123" mask="url(#y)" aria-owns="root-2601" data-stacking-context="true" data-tag="div" data-z-index="auto">
         <g data-stacking-layer="rootBackgroundAndBorders">
          <rect x="46" y="48" width="914" height="984" fill="#fff"/>
@@ -897,11 +886,7 @@ src: local("arial");
                                  </g>
                                 </g>
                                 <g class="ms-StackItem css-519" aria-owns="ms-Stack29" data-stacking-context="true" data-tag="div" data-z-index="auto">
-                                 <g class="ms-Stack container-522" aria-owns="ms-Stack-inner2" data-stacking-context="true" data-tag="div" data-z-index="auto">
-                                  <g class="ms-Stack-inner css-521" aria-owns="ms-StackItem23" data-stacking-context="true" data-tag="div" data-z-index="auto">
-                                   <g class="ms-StackItem css-154" aria-owns="ms-Label1" data-stacking-context="true" data-tag="div" data-z-index="auto"></g>
-                                  </g>
-                                 </g>
+                                 <g class="ms-Stack container-522" aria-owns="ms-Stack-inner2" data-stacking-context="true" data-tag="div" data-z-index="auto"></g>
                                 </g>
                                </g>
                               </g>
@@ -1029,7 +1014,7 @@ src: local("arial");
                        </mask>
                        <g class="ms-Stack container-340" aria-owns="ms-StackItem32 ms-Stack41" data-stacking-context="true" data-tag="div" data-z-index="auto">
                         <g data-stacking-layer="rootBackgroundAndBorders">
-                         <rect x="80" y="500.67" width="846" height="152" fill="#fff"/>
+                         <rect x="80" y="500.67" width="846" height="152" fill="#faf9f8"/>
                         </g>
                         <g class="ms-StackItem header-341" aria-owns="ms-Stack37" data-stacking-context="true" data-tag="div" data-z-index="auto">
                          <g class="ms-Stack title-342" aria-owns="ms-StackItem33 ms-StackItem35" data-stacking-context="true" data-tag="div" data-z-index="auto">
@@ -1159,11 +1144,7 @@ src: local("arial");
                                  </g>
                                 </g>
                                 <g class="ms-StackItem css-519" aria-owns="ms-Stack49" data-stacking-context="true" data-tag="div" data-z-index="auto">
-                                 <g class="ms-Stack container-522" aria-owns="ms-Stack-inner4" data-stacking-context="true" data-tag="div" data-z-index="auto">
-                                  <g class="ms-Stack-inner css-521" aria-owns="ms-StackItem48" data-stacking-context="true" data-tag="div" data-z-index="auto">
-                                   <g class="ms-StackItem css-154" aria-owns="ms-Label2" data-stacking-context="true" data-tag="div" data-z-index="auto"></g>
-                                  </g>
-                                 </g>
+                                 <g class="ms-Stack container-522" aria-owns="ms-Stack-inner4" data-stacking-context="true" data-tag="div" data-z-index="auto"></g>
                                 </g>
                                </g>
                               </g>
@@ -1565,7 +1546,6 @@ src: local("arial");
             </g>
            </g>
            <g class="ms-Stack css-389" aria-owns="ms-StackItem84 ms-StackItem85" data-stacking-context="true" data-tag="div" data-z-index="auto">
-            <g class="ms-StackItem css-154" aria-owns="divider-2531" data-stacking-context="true" data-tag="div" data-z-index="auto"></g>
             <g class="ms-StackItem selectorPanel-390" mask="url(#ac)" aria-owns="ms-Stack75" data-stacking-context="true" data-tag="div" data-z-index="auto">
              <mask id="ac">
               <rect width="0" height="0" fill="#fff"/>
@@ -1575,9 +1555,6 @@ src: local("arial");
                <g class="ms-Stack css-153" aria-owns="ms-StackItem87 ms-StackItem92" data-stacking-context="true" data-tag="div" data-z-index="auto">
                 <g class="ms-StackItem css-154" aria-owns="ms-Stack77" data-stacking-context="true" data-tag="div" data-z-index="auto">
                  <g class="ms-Stack css-406" aria-owns="ms-StackItem88 ms-StackItem89" data-stacking-context="true" data-tag="div" data-z-index="auto">
-                  <g class="ms-StackItem css-407" aria-owns="h21" data-stacking-context="true" data-tag="div" data-z-index="auto">
-                   <g aria-level="2" aria-owns="css-4081" data-stacking-context="true" data-tag="h2" data-z-index="auto" role="heading"></g>
-                  </g>
                   <g class="ms-StackItem css-409" aria-owns="ms-Toggle2" data-stacking-context="true" data-tag="div" data-z-index="auto">
                    <g class="ms-Toggle is-enabled root-410" aria-owns="Toggle865-label ms-Toggle-innerContainer2" data-stacking-context="true" data-tag="div" data-z-index="auto">
                     <g id="di" class="ms-Label ms-Toggle-label label-415" aria-owns="ms-Stack78" data-stacking-context="true" data-tag="label" data-z-index="auto">
@@ -1593,22 +1570,15 @@ src: local("arial");
                       </g>
                      </g>
                     </g>
-                    <g class="ms-Toggle-innerContainer container-310" aria-owns="Toggle865" data-stacking-context="true" data-tag="div" data-z-index="auto">
-                     <g class="ms-Toggle-background pill-412" aria-checked="false" aria-labelledby="Toggle865-label" aria-owns="ms-Toggle-thumb2" data-stacking-context="true" data-tag="button" data-z-index="auto" role="switch"></g>
-                    </g>
                    </g>
                   </g>
                  </g>
                 </g>
-                <g class="ms-StackItem css-418" aria-owns="css-3062" data-stacking-context="true" data-tag="div" data-z-index="auto"></g>
                </g>
                <g class="contentArea-405" aria-owns="div22" data-stacking-context="true" data-tag="div" data-z-index="auto">
                 <g aria-owns="ms-FocusZone2 itemContainer-5621" data-stacking-context="true" data-tag="div" data-z-index="auto">
                  <g class="ms-FocusZone css-176 ms-Pivot root-561" aria-owns="Pivot867-Tab0 Pivot867-Tab1" data-stacking-context="true" data-tag="div" data-z-index="auto" role="tablist">
                   <g class="ms-Button ms-Button--action ms-Button--command ms-Pivot-link is-selected linkIsSelected-570" aria-label="Attributes" aria-labelledby="" aria-owns="span11 ms-Button-flexContainer36 span12" aria-selected="true" data-stacking-context="true" data-tag="button" data-z-index="auto" role="tab" tabindex="0">
-                   <g class="ms-Button-flexContainer flexContainer-301" aria-owns="ms-Pivot-linkContent1" data-stacking-context="true" data-tag="span" data-z-index="auto">
-                    <g class="ms-Pivot-linkContent linkContent-567" aria-owns="ms-Pivot-text1" data-stacking-context="true" data-tag="span" data-z-index="auto"></g>
-                   </g>
                    <g mask="url(#u)" data-stacking-context="true" data-tag="span" data-z-index="auto">
                     <mask id="u">
                      <rect width="0" height="0" fill="#fff"/>
@@ -1616,9 +1586,6 @@ src: local("arial");
                    </g>
                   </g>
                   <g class="ms-Button ms-Button--action ms-Button--command ms-Pivot-link link-571" aria-label="Segments" aria-labelledby="" aria-owns="span13 ms-Button-flexContainer37 span14" aria-selected="false" data-stacking-context="true" data-tag="button" data-z-index="auto" role="tab" tabindex="-1">
-                   <g class="ms-Button-flexContainer flexContainer-301" aria-owns="ms-Pivot-linkContent2" data-stacking-context="true" data-tag="span" data-z-index="auto">
-                    <g class="ms-Pivot-linkContent linkContent-567" aria-owns="ms-Pivot-text2" data-stacking-context="true" data-tag="span" data-z-index="auto"></g>
-                   </g>
                    <g mask="url(#t)" data-stacking-context="true" data-tag="span" data-z-index="auto">
                     <mask id="t">
                      <rect width="0" height="0" fill="#fff"/>
@@ -1630,7 +1597,6 @@ src: local("arial");
                   <g aria-owns="container-4211 ms-FocusZone3" data-stacking-context="true" data-tag="div" data-z-index="auto">
                    <g class="container-421" aria-owns="ms-SearchBox1 ms-Button36" data-stacking-context="true" data-tag="div" data-z-index="auto">
                     <g class="ms-SearchBox is-underlined root-422" aria-owns="ms-SearchBox-iconContainer1 SearchBox875" data-stacking-context="true" data-tag="div" data-z-index="auto">
-                     <g class="ms-SearchBox-iconContainer iconContainer-423" aria-hidden="true" aria-owns="ms-SearchBox-icon1" data-stacking-context="true" data-tag="div" data-z-index="auto"></g>
                      <g class="ms-SearchBox-field field-426" mask="url(#bd)" aria-label="Search" aria-labelledby="" aria-placeholder="Search" data-stacking-context="true" data-tag="input" data-z-index="auto" role="searchbox">
                       <mask id="bd">
                        <rect width="0" height="0" fill="#fff"/>
@@ -1639,7 +1605,6 @@ src: local("arial");
                     </g>
                     <g class="ms-Button ms-Button--icon ms-Button--hasMenu root-572" aria-expanded="false" aria-haspopup="true" aria-labelledby="" aria-owns="ms-Button-flexContainer38" data-stacking-context="true" data-tag="button" data-z-index="auto" role="button">
                      <title>Filter</title>
-                     <g class="ms-Button-flexContainer flexContainer-116" aria-owns="ms-Icon33 ms-Icon34" data-stacking-context="true" data-tag="span" data-z-index="auto"></g>
                     </g>
                    </g>
                    <g class="ms-FocusZone css-176" aria-owns="ms-FocusZone4" data-stacking-context="true" data-tag="div" data-z-index="auto">
@@ -1659,7 +1624,6 @@ src: local("arial");
                               <mask id="aj">
                                <rect width="0" height="0" fill="#fff"/>
                               </mask>
-                              <g class="ms-StackItem css-154" aria-owns="root-6021" data-stacking-context="true" data-tag="div" data-z-index="auto"></g>
                               <g class="ms-StackItem labelTextContainer-603" mask="url(#ab)" aria-owns="ms-TooltipHost10" data-stacking-context="true" data-tag="div" data-z-index="auto">
                                <mask id="ab">
                                 <rect width="0" height="0" fill="#fff"/>
@@ -1672,7 +1636,6 @@ src: local("arial");
                                 </g>
                                </g>
                               </g>
-                              <g class="ms-StackItem css-154" aria-owns="root-6051" data-stacking-context="true" data-tag="div" data-z-index="auto"></g>
                              </g>
                             </g>
                            </g>
@@ -1690,7 +1653,6 @@ src: local("arial");
                               <mask id="ai">
                                <rect width="0" height="0" fill="#fff"/>
                               </mask>
-                              <g class="ms-StackItem css-154" aria-owns="root-6022" data-stacking-context="true" data-tag="div" data-z-index="auto"></g>
                               <g class="ms-StackItem labelTextContainer-603" mask="url(#aa)" aria-owns="ms-TooltipHost11" data-stacking-context="true" data-tag="div" data-z-index="auto">
                                <mask id="aa">
                                 <rect width="0" height="0" fill="#fff"/>
@@ -1703,7 +1665,6 @@ src: local("arial");
                                 </g>
                                </g>
                               </g>
-                              <g class="ms-StackItem css-154" aria-owns="root-6052" data-stacking-context="true" data-tag="div" data-z-index="auto"></g>
                              </g>
                             </g>
                            </g>
@@ -1721,20 +1682,18 @@ src: local("arial");
                               <mask id="ah">
                                <rect width="0" height="0" fill="#fff"/>
                               </mask>
-                              <g class="ms-StackItem css-154" aria-owns="root-6023" data-stacking-context="true" data-tag="div" data-z-index="auto"></g>
                               <g class="ms-StackItem labelTextContainer-603" mask="url(#af)" aria-owns="ms-TooltipHost12" data-stacking-context="true" data-tag="div" data-z-index="auto">
                                <mask id="af">
                                 <rect width="0" height="0" fill="#fff"/>
                                </mask>
                                <g class="ms-TooltipHost root-242" aria-owns="groupText-6043 tooltip907" data-stacking-context="true" data-tag="div" data-z-index="auto" role="none">
-                                <g mask="url(#c)" data-stacking-context="true" data-tag="div" data-z-index="auto">
-                                 <mask id="c">
+                                <g mask="url(#cc)" data-stacking-context="true" data-tag="div" data-z-index="auto">
+                                 <mask id="cc">
                                   <rect width="0" height="0" fill="#fff"/>
                                  </mask>
                                 </g>
                                </g>
                               </g>
-                              <g class="ms-StackItem css-154" aria-owns="root-6053" data-stacking-context="true" data-tag="div" data-z-index="auto"></g>
                              </g>
                             </g>
                            </g>
@@ -1752,7 +1711,6 @@ src: local("arial");
                               <mask id="ag">
                                <rect width="0" height="0" fill="#fff"/>
                               </mask>
-                              <g class="ms-StackItem css-154" aria-owns="root-6024" data-stacking-context="true" data-tag="div" data-z-index="auto"></g>
                               <g class="ms-StackItem labelTextContainer-603" mask="url(#ae)" aria-owns="ms-TooltipHost13" data-stacking-context="true" data-tag="div" data-z-index="auto">
                                <mask id="ae">
                                 <rect width="0" height="0" fill="#fff"/>
@@ -1765,7 +1723,6 @@ src: local("arial");
                                 </g>
                                </g>
                               </g>
-                              <g class="ms-StackItem css-154" aria-owns="root-6054" data-stacking-context="true" data-tag="div" data-z-index="auto"></g>
                              </g>
                             </g>
                            </g>
@@ -1804,9 +1761,6 @@ src: local("arial");
      </g>
     </g>
    </g>
-   <g id="dj" aria-owns="ms-Stack83" data-stacking-context="true" data-tag="div" data-z-index="auto">
-    <g data-stacking-layer="childStackingContextsWithPositiveStackLevels"></g>
-   </g>
    <g id="dk" mask="url(#z)" data-stacking-context="true" data-tag="iframe" data-z-index="auto">
     <mask id="z">
      <rect width="0" height="0" fill="#fff"/>
@@ -1815,9 +1769,19 @@ src: local("arial");
   </g>
  </g>
  <rect x="627.71" y="340.24" width="9.5986" height="38.394" opacity="0" stroke-width="3"/>
- <g fill-opacity="0" stroke="#f80000" stroke-width="3.1192">
-  <rect x="717.42" y="293.31" width="97.999" height="37.328"/>
-  <rect x="717.36" y="518.88" width="97.999" height="37.328"/>
-  <rect x="745.6" y="154.85" width="97.999" height="37.328"/>
+ <rect x="613.27" y="459.65" width="341.6" height="36.261" fill="#fff" stroke="url(#cd)" stroke-width="4.0356"/>
+ <image x="613.27" y="495.91" width="341.6" height="15" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPEAAAAPCAYAAAA1UylgAAAABHNCSVQICAgIfAhkiAAAAklJREFU aIHtmstu4zAMAIeSHJ/StP//ka1RQPJL4h6y8tpNi33BmxjLAXwxAtkANSRFR1RV2YXyxX23z+MM 4z9lJ6N2yguGYdwQ9llW9lnWMIwbdpIYTGTD+DfYAdUwDk6Ypok62xKx6nlUPs4nVZWmaXDuz/K0 qjLPM6pq++KBqHEupSAiiAjh9fWVUr6aJBtHoQZXVck5k3PmfD5zuVwI4fdOTTlnYozEGJfNYjwO OWdSSjRNQwiBoKqUUlDVm2xuHIcavyrwOI6klCil8PLy8ssiV4G7rmOeZ7z3gHVpj4KIME0TKSXQ a9xD27abLA5YZT4gVeLaBocQGIaBt7c3RITn5+efiqyq9H1PjBHvPafTCTCBHwlxgnOOYRg4tadr Na6BWpNzvsPrGX/DWmLv/XINw0DXdTjneHp6+lLkUgopJWKMALRtSwjBzsQPhjjBCZzawKkNNE0g 1HZpzZ8OQ4z7se6inHOLxDVrd12HiHC5XG7iq6qklBiGAefcIjCwDE+Mx0BEQAvBB5rQXCvxZxIb x2I9z6ji1st7v7TW7+/vi8hVTFUlxsg4jov4IYSN6CbyPdnOqUSEnP2m2wqfVV0L2LH4ONPw3jNN EyKykbqKDHA+nxER+r5nHEecczRNs/l9xfbDPVHWItfELE4QJ3j3XWKbSh+bKtm6unrvEZFlSCly HYiM40jf94u00zQt1bdm9lp5P65r3IOtxPCjy3Lirt+J7/Vqxr6sq3AVuMqac2aeZ4BNW1Y3h4jY H4AeGsGJIAIIfAMMDSSV9AGwVQAAAABJRU5ErkJggg== "/>
+ <text x="608.65405" y="471.07028" fill="#727171" font-family="sans-serif" font-size="10.667px" style="line-height:1.25" xml:space="preserve"><tspan x="608.65405" y="471.07028">4,815 customers were matched by this rule, its subrules, and </tspan><tspan x="608.65405" y="484.40366">its conditions, and any rules above it, on the last manual run on </tspan><tspan x="608.65405" y="497.73703">8/31/2023</tspan></text>
+ <path d="m585.68 438.76h367.42c1.3851 0 2.5002 0.23758 2.5002 0.53269v78.106c0 0.29511-1.1151 0.53269-2.5002 0.53269h-367.42c-1.3851 0-2.5002-0.23758-2.5002-0.53269v-78.106c0-0.29511 1.1151-0.53269 2.5002-0.53269z" fill="none" stroke="#e91c1c" stroke-width="1.8471"/>
+ <g fill="#e91c1c" stroke-width="3">
+  <g transform="matrix(.75 0 0 .75 647.61 -234.84)" aria-label="q">
+   <path d="m106.59 529.39h-2.7733q-1.2267 1.2267-2.4533 2.4533-1.1733 1.2267-2.4 2.4533l1.3333 2.4q0.32-0.42667 0.64-0.8 0.32-0.37334 0.58667-0.74667 0.32-0.37333 0.58666-0.74666 0.32-0.37334 0.69334-0.8v18.453h3.7867zm17.28 11.36q0 4.16-1.6 7.7867-1.5467 3.6267-4.2667 6.3467t-6.3467 4.32q-3.6267 1.5467-7.7867 1.5467t-7.7867-1.5467q-3.6267-1.6-6.3467-4.32t-4.32-6.3467q-1.5467-3.6267-1.5467-7.7867t1.5467-7.7867q1.6-3.6267 4.32-6.3467t6.3467-4.2667q3.6267-1.6 7.7867-1.6t7.7867 1.6q3.6267 1.5467 6.3467 4.2667t4.2667 6.3467q1.6 3.6267 1.6 7.7867z"/>
+  </g>
+  <g transform="matrix(.75 0 0 .75 561.75 -101.45)" aria-label="w">
+   <path d="m165.76 549.32h-6.9867q1.76-2.24 3.36-4.8 0.37334-0.53333 0.90667-1.4933t1.0133-2.1333q0.53333-1.2267 0.90667-2.5067 0.37333-1.3333 0.37333-2.6133 0-3.04-1.4933-4.7467-1.4933-1.76-4.0533-1.76-1.5467 0-2.9333 0.53333-1.3867 0.48-1.9733 0.96 0.10667 0.74667 0.16 1.5467 0.0533 0.8 0.10667 1.6 0.16-0.15999 0.53333-0.42666 0.37334-0.26667 0.90667-0.53333 0.58667-0.26667 1.2267-0.48 0.69334-0.21334 1.3867-0.21334 1.0133 0 1.6533 0.96 0.69334 0.96 0.69334 2.4533 0 1.6533-0.74667 3.3067-0.69333 1.6533-1.6533 3.2-1.12 1.8667-2.3467 3.4667-1.2267 1.5467-2.4 3.2v3.4667h11.36zm14.24-8.32q0 4.16-1.6 7.7867-1.5467 3.6267-4.2667 6.3467t-6.3467 4.32q-3.6267 1.5467-7.7867 1.5467t-7.7867-1.5467q-3.6267-1.6-6.3467-4.32t-4.32-6.3467q-1.5467-3.6267-1.5467-7.7867t1.5467-7.7867q1.6-3.6267 4.32-6.3467t6.3467-4.2667q3.6267-1.6 7.7867-1.6t7.7867 1.6q3.6267 1.5467 6.3467 4.2667t4.2667 6.3467q1.6 3.6267 1.6 7.7867z"/>
+  </g>
+  <g transform="matrix(.75 0 0 .75 387.8 71.779)" aria-label="e">
+   <path d="m221.92 546.23q0-2.4-1.0133-3.7867-0.96-1.3867-2.7733-1.8667 1.6533-0.48 2.6667-1.8667 1.0133-1.3867 1.0133-3.4133 0-2.7733-1.7067-4.3733-1.7067-1.6533-4.64-1.6533-1.44 0-2.56 0.42666-1.12 0.37334-1.5467 0.69334l0.10666 1.6q0.0533 0.48 0.0533 0.85333t0 0.64q0.37333-0.26667 1.3333-0.74667t2.1867-0.48q1.3867 0 2.1867 0.90667 0.8 0.85333 0.8 2.4 0 1.8667-1.1733 2.72-1.12 0.8-2.6667 0.8h-1.12v2.9867h1.3867q1.6533 0 2.6133 0.96 1.0133 0.90667 1.0133 3.04 0 1.6533-1.0133 2.6667-1.0133 0.96-2.72 0.96-1.0667 0-2.1333-0.42666-1.0667-0.42667-1.3333-0.64 0 0.42666-0.0533 0.85333 0 0.37333-0.0533 0.74667v1.6q0.42667 0.21334 1.4933 0.53334 1.0667 0.32 2.5067 0.32 3.36 0 5.2267-1.6533 1.92-1.7067 1.92-4.8zm14.08-5.2267q0 4.16-1.6 7.7867-1.5467 3.6267-4.2667 6.3467t-6.3467 4.32q-3.6267 1.5467-7.7867 1.5467t-7.7867-1.5467q-3.6267-1.6-6.3467-4.32t-4.32-6.3467q-1.5467-3.6267-1.5467-7.7867t1.5467-7.7867q1.6-3.6267 4.32-6.3467t6.3467-4.2667q3.6267-1.6 7.7867-1.6t7.7867 1.6q3.6267 1.5467 6.3467 4.2667t4.2667 6.3467q1.6 3.6267 1.6 7.7867z"/>
+  </g>
  </g>
 </svg>

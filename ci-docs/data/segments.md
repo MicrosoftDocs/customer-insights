@@ -92,11 +92,17 @@ View the number of members based on each rule or combination of rules in a segme
 
 1. Turn on **Inspection mode**.
 
-   :::image type="content" source="media/segment-count.svg" alt-text="Example of segment member count.":::
+1. Run or refresh the segment. Segment member counts display.
 
-The number of members at the top of the page shows the number of members for the segment based on all the rules. Each rule shows the number of members based on that rule, its subrules, and its conditions.
+The following image shows the different member counts.
 
-If you hover over the member count for each rule, a tooltip displays. The tooltip shows the number of members based on that rule and all previous rules. For example, the Rule 2 tooltip shows the union or combined count of Rule 1 and Rule 2. The Rule 3 tooltip shows the combined count of Rule 1 and Rule 2 and the intersection of Rule 3.
+:::image type="content" source="media/segment-count.svg" alt-text="Example of segment member count.":::
+
+1. The number of members at the top of the page shows the number of customers for the segment after all rules are calculated.
+
+1. Each rule shows the number of customers based on that rule, its subrules, and its conditions.
+
+1. If you hover over the member count for each rule, a tooltip displays. The tooltip shows the number of customers based on that rule and all previous rules. For example, the Rule 2 tooltip shows the union or combined count of Rule 1 and Rule 2. The Rule 3 tooltip shows the combined count of Rule 1 and Rule 2 and the intersection of Rule 3.
 
 ## Export segments
 
