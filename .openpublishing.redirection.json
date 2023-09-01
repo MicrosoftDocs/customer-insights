@@ -2350,6 +2350,21 @@
       "source_path": "ci-docs/work-with-tags-columns.md",
       "redirect_url": "/dynamics365/customer-insights/data/work-with-tags-columns",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/data-prep-admin.md",
+      "redirect_url": "/dynamics365/customer-insights/data/data-prep-admin",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/data-prep-overview.md",
+      "redirect_url": "/dynamics365/customer-insights/data/data-prep-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/faqs-data-prep.md",
+      "redirect_url": "/dynamics365/customer-insights/data/faqs-data-prep",
+      "redirect_document_id": false
     }
   ]
 }
