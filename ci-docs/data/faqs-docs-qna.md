@@ -32,7 +32,8 @@ Additional evaluation was performed over custom datasets for offensive and malic
 
 ## What are the limitations of [Feature]? How can users minimize the impact of the [Feature] limitations when using the system?
 
-[See Impact Assessment. Describe the known limitations of the system or feature including uses for which the system was not designed or evaluated. Discuss steps that the user can take to minimize errors and the impact of trade-offs for the user.]
+- The capability currently only supports English. Inaccurate responses may be returned when users converse with the system in languages other than English.
+- The capability will not answer questions about the roadmap of our product. You can see the roadmap here: https://releaseplans.microsoft.com/. 
 
 ## What operational factors and settings allow for effective and responsible use of the feature?
 
