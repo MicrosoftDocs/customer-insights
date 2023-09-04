@@ -46,7 +46,7 @@ The feature transforms your prompts in natural language into a SQL query to run 
 
 - Only questions with corresponding data existing in Customer Insights - Data are supported.
 
-- ‘Did you know’ section and ‘Explore further’ result generation is dependent on Azure Open AI service model.  
+- ‘Did you know’ section and ‘Explore further’ result generation is dependent on Azure OpenAI Service model.  
 
 The feature is available in the United States and supports English only.
 
