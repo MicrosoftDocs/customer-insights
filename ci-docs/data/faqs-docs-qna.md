@@ -1,5 +1,5 @@
 title: FAQ for docs-based Q&A Copilot
-description: This FAQ provides information about the AI technology used in Customer Insights - Data, along with key considerations and details about how AI is used, how it was tested and evaluated, and any specific limitations.
+description: This FAQ provides information about the AI technology docs-based Q&A skill used in Customer Insights - Data, along with key considerations and details about how the capability is used, how it was tested and evaluated, and any specific limitations.
 ms.date: [Date]
 ms.custom: 
   - responsible-ai-faqs
