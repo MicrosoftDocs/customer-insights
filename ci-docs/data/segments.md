@@ -92,7 +92,12 @@ View the number of members based on each rule or combination of rules in a segme
 
 1. Turn on **Inspection mode**.
 
-1. Run or refresh the segment. Segment member counts display.
+1. Save the segment.
+
+1. Run or refresh the segment. After the refresh completes, segment member counts display.
+
+> [!TIP]
+> While editing a segment, the rules show the old value for the member count until you save the updated segment. Once save, the values are reset to zero. After refreshing it, the updates values show on the rules.
 
 The following image shows the different member counts.
 
