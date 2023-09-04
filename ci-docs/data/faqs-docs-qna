@@ -13,21 +13,22 @@ ms.reviewer: [Reviewer]
 
 These frequently asked questions (FAQ) describe the AI impact of [Feature] feature in [Product].
 
-## What is [Feature]?
+## What is docs-based Q&A skill?
 
-[Describe the system in plain English. What type of system or feature is this? What does it do? At a high level, what does the system or feature take as input? What kind of outputs does the system or feature produce?]
+Setting up Customer Insights - Data with all your data and managing it to stay healthy can be complex at times. Copilot in Customer Insights - Data will assist you by providing timely guidance in everyday words that adapts to where you are in your configuration process. In addition to this guidance, you can also ask your own questions to help clarify concepts or understand what you need to do next to successfully configure your solution.
 
-## What are capabilities of the [feature]?
+## What are capabilities of the docs-based Q&A skill?
 
-[Building on the previous question, provide semi-technical, high-level information on how the system or feature offers functionality for various uses.]
+This Copilot skill answers the user's question by using the ["Generative Answers" capability](https://learn.microsoft.com/power-virtual-agents/nlu-boost-conversations#ai-response-generation-training-model-and-usage-notes) . The sources used by it are: Product's public documentation, troubleshooting pages and a blogs on how to setup Customer Insights - Data.
 
-## What is the intended use of the [feature]?
+## What is the intended use of the docs-based Q&A skill?
 
-[Explain intended use(s), as identified in your Impact Assessment.]
+Users can ask questions about the user experience or capabilities because they want to achieve their goals within Customer insights - Data. Any input by user is treated as a question towards our product’s public documentation.
 
-## How was [Feature] evaluated? What metrics are used to measure performance?
+## How was docs-based Q&A skill evaluated? What metrics are used to measure performance?
 
-[Provide evidence of system or feature accuracy and performance, and, when applicable, a description of the extent to which these results are generalizable across use cases that were not part of the evaluation.]
+The capability was evaluated on a collection of manually curated question-and-answer datasets, covering multiple industries.
+Additional evaluation was performed over custom datasets for offensive and malicious prompts and responses.
 
 ## What are the limitations of [Feature]? How can users minimize the impact of the [Feature] limitations when using the system?
 
