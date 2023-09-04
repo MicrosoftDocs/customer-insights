@@ -30,7 +30,7 @@ Users can ask questions about the user experience or capabilities because they w
 The capability was evaluated on a collection of manually curated question-and-answer datasets, covering multiple industries.
 Additional evaluation was performed over custom datasets for offensive and malicious prompts and responses.
 
-## What are the limitations of [Feature]? How can users minimize the impact of the [Feature] limitations when using the system?
+## What are the limitations of docs-based Q&A skill? How can users minimize the impact of this capabilities' limitations when using the system?
 
 - The capability currently only supports English. Inaccurate responses may be returned when users converse with the system in languages other than English.
 - The capability will not answer questions about the roadmap of our product. You can see the roadmap here: https://releaseplans.microsoft.com/. 
