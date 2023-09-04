@@ -37,7 +37,7 @@ Additional evaluation was performed over custom datasets for offensive and malic
 
 ## What operational factors and settings allow for effective and responsible use of the feature?
 
-[Describe the operational factors and ranges within which the system is expected to perform reliably and safely. List the choices that end users can make (e.g., customization, settings, etc.), with a description of how those choices may impact system behavior in the real world.]
+This capability does not need setting up by users. It is offered as a base skill of our Copilot.
 
 ## See also
 
