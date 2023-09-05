@@ -3,9 +3,10 @@ title: Customer lifetime value (CLV) prediction sample guide
 description: Use this sample guide to try out the customer lifetime value prediction model.
 ms.date: 09/01/2023
 ms.reviewer: v-wendysmith
-ms.topic: tutorial
+ms.topic: conceptual
 author: joytaylor
-ms.author: joytaylor        
+ms.author: joytaylor
+ms.custom: bap-template    
 ---
 
 # Customer lifetime value (CLV) prediction sample guide
@@ -190,5 +191,9 @@ You now have a segment that identifies customers who are predicted to generate m
 
 > [!TIP]
 > You can also create a segment for a prediction model from the **Insights** > **Segments** page by selecting **New** and choosing **Create from** > **Insights**. For more information, see [Create a new segment with quick segments](segment-quick.md).
+
+## Next steps
+
+- [Predict customer lifetime value (CLV)](predict-customer-lifetime-value.md)
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

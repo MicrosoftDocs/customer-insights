@@ -1,11 +1,12 @@
 ---
 title: "Predict product recommendations (preview)"
 description: "Predict the products a customer is likely to purchase or interact with."
-ms.date: 09/01/2023
+ms.date: 09/07/2023
 ms.reviewer: mhart
-ms.topic: conceptual
+ms.topic: how-to
 author: joytaylor
 ms.author: joytaylor
+ms.custom: bap-template
 ---
 
 # Predict product recommendations (preview)

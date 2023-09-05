@@ -6,6 +6,7 @@ ms.reviewer: mhart
 ms.topic: how-to
 author: joytaylor
 ms.author: joytaylor
+ms.custom: bap-template 
 ---
 
 # Predict customer lifetime value (CLV)

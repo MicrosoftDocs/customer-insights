@@ -1,11 +1,12 @@
 ---
 title: Predict transaction churn (contains video)
 description: "Predict whether a customer is at risk for no longer purchasing your products or services."
-ms.date: 09/01/2023
+ms.date: 09/07/2023
 ms.reviewer: mhart
 ms.topic: how-to
 author: zacookmsft
 ms.author: zacook
+ms.custom: bap-template 
 ---
 
 # Predict transaction churn
