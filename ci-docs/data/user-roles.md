@@ -78,7 +78,7 @@ Contoso has two lines of businesses - Real Estate and Retail in two different co
 
 An organization owns two different lines of businesses Automobile and Luxury retail. They own car dealerships including Sales and Services for six car brands and have five luxury retail stores with online presence. A single marketing team operates within the organization across these two different lines of businesses. This marketing team would like to unify profiles within each line of business. The same marketing team is working on the data and there's no specific access control or compliance requirement. They would like to work on a single instance of Customer Insights and don't wish to create one instance for each line of business.
 
-# Next steps
+## Next steps
 
 - [Assign user permissions](permissions.md)
 - [Business unit data separation](business-units-data-separation.md)

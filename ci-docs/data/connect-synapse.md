@@ -32,7 +32,7 @@ For more information, see [Azure Synapse overview](/azure/synapse-analytics/over
 
 **In Customer Insights - Data**:
 
-- You have an **Administrator** role. Learn more about [user permissions in Customer Insights](user-roles.md#add-users).
+- You have an **Administrator** role. Learn more about [user permissions in Customer Insights](user-roles.md).
 
 **In Azure**:
 
