@@ -30,7 +30,7 @@ We currently support enriching customer profiles with LiveRamp data in the Unite
 
 ## Configure the connection for LiveRamp
 
-You must be an [administrator](permissions.md#admin) in Customer Insights - Data and have an active LiveRamp client ID and secret.
+You must be an [administrator](user-roles.md#admin) in Customer Insights - Data and have an active LiveRamp client ID and secret.
 
 1. Select **Add connection** when configuring an enrichment, or go to **Settings** > **Connections** and select **Set up** on the LiveRamp tile.
 

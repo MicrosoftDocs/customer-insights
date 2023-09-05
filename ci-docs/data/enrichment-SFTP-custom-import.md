@@ -72,7 +72,7 @@ The directory that contains the file to be imported on the SFTP server must also
 
 ## Configure the connection for SFTP Custom Import
 
-You must be an [administrator](permissions.md#admin) in Customer Insights - Data and have the user credentials, URL, and port number for the SFTP location where you want to import data from.
+You must be an [administrator](user-roles.md#admin) in Customer Insights - Data and have the user credentials, URL, and port number for the SFTP location where you want to import data from.
 
 1. Select **Add connection** when configuring an enrichment or go to **Settings** > **Connections** and select **Set up** on the Custom Import tile.
 

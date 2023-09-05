@@ -29,7 +29,7 @@ Use the environments creation experience in Customer Insights - Data for the fol
 
 ## Prerequisites
 
-- [Administrator permissions](permissions.md) in Customer Insights - Data.
+- [Administrator permissions](user-roles.md#admin) in Customer Insights - Data.
 
 To install Customer Insights - Data on an existing Dataverse environment:
 

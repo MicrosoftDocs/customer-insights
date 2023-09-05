@@ -41,7 +41,7 @@ Business unit support allows administrators to regulate access to customer profi
 
 Access to a customer profile in Customer Insights - Data depends on the business unit team that owns the profile, the business unit team of the user, and the application permissions of the user. The *Administrator*, *Contributor*, and *Viewer* roles have access to all profiles regardless of the owning business unit team. The *Marketing contributor* role has access only to customer profiles that belong to their business unit.
 
-The *Marketing contributor* role only has access to the *customers*, *tables*, *segments*, and *measures* views in the Customer Insights - Data user interface. The Marketing contributor role has a limited set of functionality. [Learn more about user roles](permissions.md).
+The *Marketing contributor* role only has access to the *customers*, *tables*, *segments*, and *measures* views in the Customer Insights - Data user interface. The Marketing contributor role has a limited set of functionality. [Learn more about user roles](user-roles.md).
 
 > [!NOTE]
 >

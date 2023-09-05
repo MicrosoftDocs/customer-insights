@@ -30,7 +30,7 @@ Only administrators can configure new connections, but the created connections a
 
 ### Prerequisites
 
-- [Administrator permissions](permissions.md)
+- [Administrator permissions](user-roles.md#admin)
 - Other Microsoft services, if any, are in the same organization
 
 1. Go to **Settings** > **Connections**.
