@@ -76,7 +76,7 @@
         ]
       },
       "uhfHeaderId": {
-        "ci-docs/**.*": "MSDocsHeader-Dynamics365-Customer-Insights"
+        "ci-docs/**/**.*": "MSDocsHeader-Dynamics365-Customer-Insights"
       }
     },
     "template": [],
