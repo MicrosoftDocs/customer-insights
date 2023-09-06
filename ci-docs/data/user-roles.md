@@ -4,8 +4,8 @@ description: Learn about user roles and what permissions they have in Customer I
 ms.date: 09/07/2023
 ms.reviewer: mhart
 ms.topic: conceptual
-author: NimrodMagen
-ms.author: nimagen
+author: jodahl
+ms.author: jodahl
 ms.custom: bap-template
 ---
 
@@ -36,6 +36,18 @@ The user role assigned to a user determines what the user can access within Cust
 > Marketing contributors can only create segments and measures from customer profiles, unified activities, segments, and customer measures. This permission has limited functionality in some areas compared to the Contributor role.
 > Marketing contributors can't search for customers in the *customers* view.
 
+### Marketing contributor role examples
+
+The following examples demonstrate the use of the Marketing contributor role.
+
+#### Multi-geo example
+
+Contoso has two lines of businesses - Real Estate and Retail in two different countries – USA and Canada. They have different sets of marketing users for each country who are tasked to tailor specific marketing campaigns that are unique to a country. These users are interested in seeing the unified view of customers across the two businesses (Real Estate and Retail) within the same country. Even though the probability of customers shopping in both the countries is low, the business wants to ensure that the profiles are unified within a country and not across. There are no restrictions or limitations for viewing the data across businesses and countries and they prefer a single Customer Insights - Data environment rather than setting up one environment for each country.
+
+#### Multi-brand example
+
+An organization owns two different lines of businesses Automobile and Luxury retail. They own car dealerships including Sales and Services for six car brands and have five luxury retail stores with online presence. A single marketing team operates within the organization across these two different lines of businesses. This marketing team would like to unify profiles within each line of business. The same marketing team is working on the data and there's no specific access control or compliance requirement. They would like to work on a single environment of Customer Insights - Data and don't wish to create one environment for each line of business.
+
 ## Contributor
 
 - All permissions available to the Viewer.
@@ -65,18 +77,6 @@ The user role assigned to a user determines what the user can access within Cust
 
 - All permissions available to the Admin.
 - [Reset and delete](manage-environments.md#reset-an-existing-environment-preview) the environment.
-
-## Marketing contributor role examples
-
-The following examples demonstrate the use of the Marketing contributor role.
-
-### Multi-geo example
-
-Contoso has two lines of businesses - Real Estate and Retail in two different countries – USA and Canada. They have different sets of marketing users for each country who are tasked to tailor specific marketing campaigns that are unique to a country. These users are interested in seeing the unified view of customers across the two businesses (Real Estate and Retail) within the same country. Even though the probability of customers shopping in both the countries is low, the business wants to ensure that the profiles are unified within a country and not across. There are no restrictions or limitations for viewing the data across businesses and countries and they prefer a single Customer Insights instance rather than setting up one instance for each country.
-
-### Multi-brand example
-
-An organization owns two different lines of businesses Automobile and Luxury retail. They own car dealerships including Sales and Services for six car brands and have five luxury retail stores with online presence. A single marketing team operates within the organization across these two different lines of businesses. This marketing team would like to unify profiles within each line of business. The same marketing team is working on the data and there's no specific access control or compliance requirement. They would like to work on a single instance of Customer Insights and don't wish to create one instance for each line of business.
 
 ## Next steps
 
