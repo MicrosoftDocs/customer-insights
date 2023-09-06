@@ -1,7 +1,7 @@
 ---
 title: Outbound marketing compliance settings
-description: Learn how to use GDPR features in Dynamics 365 Customer Insights - Journeys.
-ms.date: 07/07/2023
+description: Learn about privacy compliance features in Dynamics 365 Customer Insights - Journeys.
+ms.date: 09/05/2023
 ms.topic: reference
 author: alfergus
 ms.author: alfergus
@@ -18,21 +18,21 @@ search.audienceType:
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
 
-This article describes how to enable and use GDPR-related features in outbound marketing.
+This article describes how to enable and use privacy compliance features in outbound marketing.
 
 ## Outbound consent
 
 Outbound marketing has a different consent model than Customer Insights - Journeys. Customer Insights - Journeys's consent model, however, doesn't affect outbound marketing functionality. In other words, if you install Customer Insights - Journeys, all of outbound marketing's features and requirements are left intact.
 
-Learn more about outbound marketing's consent model: [Data protection and the GDPR](privacy.md)
+Learn more about outbound marketing's consent model: [Data protection and privacy](privacy.md)
 
-After you install Customer Insights - Journeys, you'll notice a slight change in the settings related to the GDPR configuration. To enable the GDPR configuration, go to **Settings** > **Compliance profiles** > **Outbound consent**.
+After you install Customer Insights - Journeys, you'll notice a slight change in the settings related to the privacy configuration. To enable the privacy configuration, go to **Settings** > **Compliance profiles** > **Outbound consent**.
 
 > [!div class="mx-imgBorder"]
 
 > ![Configure outbound consent screenshot.](media/real-time-marketing-outbound-consent.png "Configure outbound consent screenshot")
 
-By default, both switches are turned off. If you had a GDPR configuration enabled before, the system respects your previous settings.
+By default, both switches are turned off. If you had a privacy configuration enabled before, the system respects your previous settings.
 
 In outbound marketing, you can configure each customer journey (and lead scoring model) to only process contacts that have given a minimum required level of consent. To enable this consent control, activate the **Enable the minimum consent level selection drop down** switch.
 
@@ -51,10 +51,10 @@ You can find the audit data for the *Consent given* field in a user's contact re
 
 ## View and set the consent level for each contact
 
-When GDPR is enabled, you can view and set data-protection options for each contact. To work with them, open a contact record, go to its **Details** tab, and then scroll down to find the **Data protection** section.
+When privacy compliance is enabled, you can view and set data-protection options for each contact. To work with them, open a contact record, go to its **Details** tab, and then scroll down to find the **Data protection** section.
 
 > [!div class="mx-imgBorder"]
-> ![Data protection settings for contacts.](media/gdpr-contact2.png)
+> ![Data protection settings for contacts.](media/privacy-contact.png)
 
 The following settings and information are available here:
 
@@ -68,14 +68,14 @@ The following settings and information are available here:
 You can filter segments by consent level just like you can when filtering by other contact values. Use the **Consent Given** field of the **Contact** entity to filter by consent level.
 
 > [!div class="mx-imgBorder"]
-> ![Filter a segment by consent level.](media/gdpr-segment2.png)
+> ![Filter a segment by consent level.](media/privacy-segment.png)
 
 ## Set the minimum required consent level for a customer journey
 
 You can set the minimum consent level for any customer journey. When set, the journey processes only contacts of that level or higher. To do this, open the journey, go to its **General** tab, and set the **Minimum consent** field to the appropriate level.
 
 > [!div class="mx-imgBorder"]
-> ![Set the minimum required consent level for a customer journey.](media/gdpr-jouney3.png)
+> ![Set the minimum required consent level for a customer journey.](media/privacy-journey.png)
 
 > [!NOTE]
 > The minimum required consent level cannot be changed for live journeys.
@@ -87,14 +87,14 @@ You can set the minimum consent level for any lead-scoring model. When set, the 
 To do this, open the lead scoring model, go to the **Summary** tab, and set the **Minimum consent** field to the appropriate level.
 
 > [!div class="mx-imgBorder"]
-> ![Set the minimum required consent level for lead scoring models.](media/gdpr-jouney3.png)
+> ![Set the minimum required consent level for lead scoring models.](media/privacy-journey.png)
 
 ## Include a consent selector in a subscription center
 
 A subscription center is the best place to enable contacts to confirm and modify their consent level. To set this up:
 
-- Set up a marketing form field that maps to the GDPR consent field of the contact entity.
-- Create a marketing form of type subscription-center that includes the GDPR consent field.
+- Set up a marketing form field that maps to the privacy consent field of the contact entity.
+- Create a marketing form of type subscription-center that includes the privacy consent field.
 - Create a marketing page of type subscription-center that includes that form.
 
 You can now create a marketing email message that includes a link to your subscription-center page. Make sure your page explains why granting consent is important and how it offers value to the individual.
@@ -104,7 +104,7 @@ You can now create a marketing email message that includes a link to your subscr
 
 ## Set up double opt in to confirm changes in consent level and subscriptions
 
-To fully comply with the GDPR (and other common regulations), you must set up the double opt-in system. Double opt-in uses email messaging to ensure that all requests to change a contact's consent level or add a subscription were made on purpose by a person who can read that contact's email.
+To fully comply with the common privacy regulations, you must set up the double opt-in system. Double opt-in uses email messaging to ensure that all requests to change a contact's consent level or add a subscription were made on purpose by a person who can read that contact's email.
 
 More information: [Set up double opt-in for new subscriptions and consent changes](double-opt-in.md)
 
@@ -113,11 +113,11 @@ More information: [Set up double opt-in for new subscriptions and consent change
 
 ## An example of how to support data requests from your marketing audience
 
-Under GDPR, individuals have the right to submit several types of data requests to your organization. These include requests to access, correct, erase, and transmit (in a readable format) their personal data. Dynamics 365 Customer Insights - Journeys is a flexible and versatile system, so there are many ways to build GDPR-compliance features into it. This section provides a few examples of how to do this, but the methods you choose will depend on how your organization is structured, how it uses Customer Insights - Journeys, and which types of customizations are in place.
+Under certain privacy laws and regulations, individuals have the right to submit several types of data requests to your organization. These include requests to access, correct, erase, and transmit (in a readable format) their personal data. Dynamics 365 Customer Insights - Journeys is a flexible and versatile system, so there are many ways to build privacy-compliance features into it. This section provides a few examples of how to do this, but the methods you choose will depend on how your organization is structured, how it uses Customer Insights - Journeys, and which types of customizations are in place.
 
-### Set up a customer journey for accepting GDPR requests
+### Set up a customer journey for accepting privacy requests
 
-One way to make it easy for individuals to submit GDPR requests to your organization could be to publish a page on your website that provides relevant details to your customer and includes links for each type of request (send me my data, update my data, and delete my data). Each of those links would bring the customer to a different marketing page, which provides:
+One way to make it easy for individuals to submit privacy requests to your organization could be to publish a page on your website that provides relevant details to your customer and includes links for each type of request (send me my data, update my data, and delete my data). Each of those links would bring the customer to a different marketing page, which provides:
 
 - Further information about the specific type of request and what the customer can expect upon submitting the form.
 - All the input fields required to uniquely identify the contact in your database. This is typically their email address and last name, but the actual requirements depend on your de-duplication settings.
@@ -130,7 +130,7 @@ Then prepare a single customer journey with three parallel pipelines, one for ea
 1. End with an email message, which informs the customer that their request was received and provides additional links and instructions (such as a subscription center link), depending on the type of request.
 
 > [!div class="mx-imgBorder"]
-> ![Example customer journey for handling GDPR requests.](media/gdpr-example-journey2.png)
+> ![Example customer journey for handling privacy requests.](media/privacy-example-journey2.png)
 
 The remaining subsections offer more details about how this example solution could be completed to support each type of request.
 
@@ -165,7 +165,7 @@ As mentioned earlier, when a privacy officer receives the task generated by the 
 
 ### Secure and control access to personal information
 
-Part of the GDPR regulations is a requirement that your organization takes steps to secure and control access to personal information that is stored in your database. You can use the standard field-level, form-level, and entity-level security controls to make sure that only authorized users, who know how to handle it legally, will be able to access it. Here are some examples of data that you may need to protect:
+Part of many privacy laws and regulations is a requirement that your organization takes steps to secure and control access to personal information that is stored in your database. You can use the standard field-level, form-level, and entity-level security controls to make sure that only authorized users, who know how to handle it legally, will be able to access it. Here are some examples of data that you may need to protect:
 
 - **Contact records:** Contact records contain many types of basic, personal data, such as names, addresses, email, phone numbers, and more. You can control access to these records by assigning entity permissions as part of each security role definition.
 - **Marketing insights:** Marketing insights can include details such as website browsing records, form submissions, event attendance, and more.  Some, but not necessarily all, users that have access to contact records may be granted access to view this information. You can control this access by assigning security groups at the form level.
@@ -173,9 +173,9 @@ Part of the GDPR regulations is a requirement that your organization takes steps
 
 For more information about how to work with the security groups and other security features in Dynamics 365, see [Security in Microsoft Dataverse](/power-platform/admin/wp-security).
 
-## Demonstrate GDPR compliance
+## Demonstrate privacy compliance
 
-From time to time, you may be asked to demonstrate that your organization complies with the GDPR regulations. Customer Insights - Journeys provides several tools to help you do this.
+From time to time, you may be asked to demonstrate that your organization complies with privacy laws and regulations. Customer Insights - Journeys provides several tools to help you do this.
 
 ### Record and view justifications for consent-level changes made by users
 
@@ -185,16 +185,16 @@ To add a comment about why you changed the consent level of a contact, or to rev
 
 1. Open the target contact record.
 
-1. Select the **Related** tab to open a drop-down list of related record types and then select **GDPR consent change records** from the drop-down list. A list of GDPR consent change records opens as a new tab for the contact record. These records are created automatically when there's a consent level change.
+1. Select the **Related** tab to open a drop-down list of related record types and then select **GDPR consent change records** from the drop-down list. A list of privacy consent change records opens as a new tab for the contact record. These records are created automatically when there's a consent level change.
 
 1. If you'd like to export this list, select the **Export** button on the command bar.
 
 > [!div class="mx-imgBorder"]
-> ![Screenshot of GDPR consent change records.](media/gdpr-inspect-consent-changes.png)
+> ![Screenshot of privacy consent change records.](media/privacy-inspect-consent-changes.png)
 
 ### Enable auditing to log all record changes
 
-Dynamics 365 can keep a record of all database changes, who made them, and when. You can use this to show when GDPR consent was changed for each contact and by whom. The auditing system is usually disabled by default, so you need to set it up if you want to use it log your GDPR consent changes (and other information). When setting up the system, you are able to choose which types of events you want to audit on which type of records.
+Dynamics 365 can keep a record of all database changes, who made them, and when. You can use this to show when privacy consent was changed for each contact and by whom. The auditing system is usually disabled by default, so you need to set it up if you want to use it log your privacy consent changes (and other information). When setting up the system, you are able to choose which types of events you want to audit on which type of records.
 
 To access the auditing features:
 
@@ -214,6 +214,6 @@ Once you've enabled auditing for contacts, you are able to view a record of chan
 1. To view consent changes only, set **Filter on** to **Consent given**.
 
 > [!div class="mx-imgBorder"]
-> ![Filter audit history by consent given.](media/gdpr-audit-history2.png)
+> ![Filter audit history by consent given.](media/privacy-audit-history2.png)
 
 [!INCLUDE[footer-include](./includes/footer-banner.md)]
