@@ -61,7 +61,7 @@
       ]
     },
     "fileMetadata": {
-       "feedback_system": {
+      "feedback_system": {
         "*.md": "GitHub"
        },
       "feedback_product_url": {
@@ -74,6 +74,9 @@
         "**.*": [
           "customerInsights"
         ]
+      },
+      "uhfHeaderId": {
+        "ci-docs/**.*": "MSDocsHeader-Dynamics365-Customer-Insights"
       }
     },
     "template": [],
