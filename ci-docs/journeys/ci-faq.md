@@ -97,7 +97,7 @@ This FAQ answers questions about the new Customer Insights combined product offe
 
 1. **What if I need more than four application installations for either the Customer Insights - Journeys or Customer Insights - Data apps?**
 
-    You should purchase multiple base application licenses (Customer Insights base licenses) to equal the total number of application installations needed. For example, if you need six applications (three Customer Insights - Journeys instances and three Customer Insights - Data instances), purchase three base application licenses.
+    The base license (Dynamics 365 Customer Insights or Dynamics 365 Customer Insights Attach if you qualify for attach pricing) allows four installations of each application. If you need to install either application more than four times, purchase additional base licenses. For example, if you need to install the Customer Insights - Journeys app six times, purchasing two base applications entitles you to a total of eight installations of the Customer Insights - Journeys app.
 
 1. **How do you define People Unified?**
 
