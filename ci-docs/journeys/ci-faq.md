@@ -1,7 +1,7 @@
 ---
 title: Dynamics 365 Customer Insights FAQs
 description: Get answers to frequently asked questions about Dynamics 365 Customer Insights.
-ms.date: 07/18/2023
+ms.date: 09/05/2023
 ms.collection: article
 ms.topic: overview
 author: alfergus
@@ -16,13 +16,13 @@ search.audienceType:
 
 [!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
-This FAQ answers questions about the new Dynamics 365 Customer Insights combined product offering.
+This FAQ answers questions about the new Customer Insights combined product offering.
 
 ## General
 
 1. **What is the new Dynamics 365 Customer Insights?**
 
-    The new Dynamics 365 Customer Insights offering combines the standalone Dynamics 365 Customer Insights and Dynamics 365 Marketing apps into a single offering. While the name is unchanged, the new Customer Insights offering is expanded to include both the Dynamics 365 Customer Insights – Journeys (formerly Dynamics 365 Marketing) and Dynamics 365 Customer Insights – Data (formerly the standalone Dynamics 365 Customer Insights) applications.
+    The new Dynamics 365 Customer Insights offering combines the standalone Dynamics 365 Customer Insights and Dynamics 365 Marketing apps into a single offering. While the name is unchanged, the new Customer Insights offering is expanded to include both the Customer Insights – Journeys (formerly Dynamics 365 Marketing) and Customer Insights – Data (formerly the standalone Customer Insights) applications.
 
     > [!div class="mx-imgBorder"]
     > ![SKU and name change diagram.](media/ci-faq-sku-name-change.png "SKU and name change diagram")
@@ -41,9 +41,9 @@ This FAQ answers questions about the new Dynamics 365 Customer Insights combined
 
 ## Availability
 
-1. **When and how will Dynamics 365 Customer Insights be available to purchase?**
+1. **When and how will Customer Insights be available to purchase?**
 
-    Dynamics 365 Customer Insights will be available to purchase starting September 1, 2023 through the Enterprise Agreement, CSP, and Web Direct channels.
+    Customer Insights will be available to purchase starting September 1, 2023 through the Enterprise Agreement, CSP, and Web Direct channels.
 
 1. **Is the updated offer available worldwide?**
 
@@ -74,30 +74,34 @@ This FAQ answers questions about the new Dynamics 365 Customer Insights combined
 
 ## Pricing and licensing
 
-1. **How is the new Dynamics 365 Customer Insights licensed?**
+1. **How is the new Customer Insights licensed?**
 
-    Like the standalone Dynamics 365 Marketing and Dynamics 365 Customers Insights solutions, the new Dynamics 365 Customer Insights combined offering is sold on a prepaid capacity model, where capacity is pooled at the tenant level.  
+    Like the standalone Dynamics 365 Marketing and Dynamics 365 Customers Insights solutions, the new Customer Insights combined offering is sold on a prepaid capacity model, where capacity is pooled at the tenant level.  
 
     The previous model had four capacity units, while the new model has only the following two capacity units:
 
-      1. **People Interacted** (equivalent to the previous "marketable contact" unit in Dynamics 365 Marketing) that powers the use of **Dynamics 365 Customer Insights – Journeys**. Refer to question five below for the definition of People Interacted.  
-      1. **People Unified** (equivalent to the previous "profile" meter in Dynamics 365 Customers Insights) which powers **Dynamics 365 Customer Insights – Data**.  Refer to question four for the definition of People Unified.
+      1. **People Interacted** (equivalent to the previous "marketable contact" unit in Dynamics 365 Marketing) that powers the use of **Customer Insights – Journeys**. Refer to question five below for the definition of People Interacted.  
+      1. **People Unified** (equivalent to the previous "profile" meter in Dynamics 365 Customers Insights) which powers **Customer Insights – Data**.  Refer to question four for the definition of People Unified.
 
     All customers must start with the base SKU, or a minimum, required quantity of 10,000 People Interacted and 100,000 People Unified. This base SKU is priced at $1,700 per tenant per month (ptpm) for new Dynamics 365 customers, or at a discounted price of $1,000 ptpm for existing, qualifying Dynamics 365 customers.  After purchasing the base SKU, customers can then purchase additional capacity SKUs of either capacity unit as needed.
 
 1. **How do customers purchase additional capacity?**
 
-    The additional capacity SKUs of People Interacted and People Unified are sold standalone and separately from one another. Customers have the flexibility to choose how much Dynamics 365 Customer Insights – Journeys and Dynamics 365 Customer Insights – Data they would like to use.
+    The additional capacity SKUs of People Interacted and People Unified are sold standalone and separately from one another. Customers have the flexibility to choose how much Customer Insights – Journeys and Customer Insights – Data they would like to use.
 
-    If a customer chooses to only use Dynamics 365 Customer Insights – Data and not uses Dynamics 365 Customer Insights – Journeys, then that customer would only need to pay for additional People Unified capacity and no People Interacted.  
+    If a customer chooses to only use Customer Insights – Data and not uses Customer Insights – Journeys, then that customer would only need to pay for additional People Unified capacity and no People Interacted.  
 
-1. **What license do customers need to use Dynamics 365 Customer Insights?**
+1. **What license do customers need to use Customer Insights?**
 
-    There are no prerequisites for purchasing the updated Dynamics 365 Customers Insights. Customers need a license for the new Dynamics 365 Customer Insights and licenses for any additional capacity.
+    There are no prerequisites for purchasing the updated Dynamics 365 Customers Insights. Customers need a license for the new Customer Insights and licenses for any additional capacity.
+
+1. **What if I need more than four application installations for either the Customer Insights - Journeys or Customer Insights - Data apps?**
+
+    You should purchase multiple base application licenses (Customer Insights base licenses) to equal the total number of application installations needed. For example, if you need six applications (three Customer Insights - Journeys instances and three Customer Insights - Data instances), purchase three base application licenses.
 
 1. **How do you define People Unified?**
 
-    People Unified is a rebranding of the existing Dynamics 365 Customer Insights app's "profile" meter. A profile represents a uniquely recognized individual that is created through a collection of defined data source sets from several systems.
+    People Unified is a rebranding of the existing Customer Insights app's "profile" meter. A profile represents a uniquely recognized individual that is created through a collection of defined data source sets from several systems.
 
     The base license includes a default capacity entitlement of 100,000 People Unified.
 
