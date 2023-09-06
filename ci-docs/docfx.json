@@ -61,6 +61,9 @@
       ]
     },
     "fileMetadata": {
+      "uhfHeaderId": {
+        "ci-docs/**/**.*": "MSDocsHeader-Dynamics365-Customer-Insights"
+      },
       "feedback_system": {
         "*.md": "GitHub"
        },
@@ -74,9 +77,6 @@
         "**.*": [
           "customerInsights"
         ]
-      },
-      "uhfHeaderId": {
-        "ci-docs/**/**.*": "MSDocsHeader-Dynamics365-Customer-Insights"
       }
     },
     "template": [],
