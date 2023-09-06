@@ -66,15 +66,15 @@ The user role assigned to a user determines what the user can access within Cust
 - All permissions available to the Admin.
 - [Reset and delete](manage-environments.md#reset-an-existing-environment-preview) the environment.
 
-## Examples
+## Marketing contributor role examples
 
-Here are a couple of examples where role access is useful.
+The following examples demonstrate the use of the Marketing contributor role.
 
-### Example 1
+### Multi-geo example
 
 Contoso has two lines of businesses - Real Estate and Retail in two different countries – USA and Canada. They have different sets of marketing users for each country who are tasked to tailor specific marketing campaigns that are unique to a country. These users are interested in seeing the unified view of customers across the two businesses (Real Estate and Retail) within the same country. Even though the probability of customers shopping in both the countries is low, the business wants to ensure that the profiles are unified within a country and not across. There are no restrictions or limitations for viewing the data across businesses and countries and they prefer a single Customer Insights instance rather than setting up one instance for each country.
 
-### Example 2
+### Multi-brand example
 
 An organization owns two different lines of businesses Automobile and Luxury retail. They own car dealerships including Sales and Services for six car brands and have five luxury retail stores with online presence. A single marketing team operates within the organization across these two different lines of businesses. This marketing team would like to unify profiles within each line of business. The same marketing team is working on the data and there's no specific access control or compliance requirement. They would like to work on a single instance of Customer Insights and don't wish to create one instance for each line of business.
 
