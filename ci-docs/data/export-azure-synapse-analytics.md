@@ -21,7 +21,7 @@ Azure Synapse is an analytics service that accelerates time to insight across da
 > [!NOTE]
 > Make sure to set all **role assignments** as described.
 
-- In Customer Insights - Data, your Microsoft Entra ID  account must have an [Administrator role](permissions.md#add-users).
+- In Customer Insights - Data, your Microsoft Entra ID account must have an [Administrator role](user-roles.md#admin).
 
 In Azure:
 

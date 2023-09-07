@@ -24,7 +24,7 @@ Set up the dedicated key vault to stage and use secrets in an organization's com
 
 - An active Azure subscription.
 
-- An [Administrator](permissions.md#admin) role [assigned](permissions.md#add-users) in Customer Insights - Data.
+- An [Administrator](user-roles.md#admin) role [assigned](permissions.md) in Customer Insights - Data.
 
 - [Contributor](/azure/role-based-access-control/built-in-roles#contributor) and [User Access Administrator](/azure/role-based-access-control/built-in-roles#user-access-administrator) roles on the key vault or the resource group the key vault belongs to. For more information, go to [Add or remove Azure role assignments using the Azure portal](/azure/role-based-access-control/role-assignments-portal). If you don't have the User Access Administrator role on the key vault, set up the role-based access control permissions for the Microsoft Entra service principal for Customer Insights - Data separately. Follow the steps to [use aa Microsoft Entra service principal](connect-service-principal.md) for the key vault that should be linked.
 

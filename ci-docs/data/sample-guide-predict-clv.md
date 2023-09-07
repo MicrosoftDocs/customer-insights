@@ -20,7 +20,7 @@ Contoso is a company that produces high-quality coffee and coffee machines. They
 
 ## Prerequisites
 
-- At least [Contributor permissions](permissions.md).
+- At least [Contributor permissions](user-roles.md).
 
 ## Task 1 - Ingest data
 
