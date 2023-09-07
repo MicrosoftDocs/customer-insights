@@ -1,7 +1,7 @@
 ---
 title: Push notification setup for application developers
 description: Learn developer settings for push notifications in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/22/2023
+ms.date: 09/06/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -184,8 +184,8 @@ Body:
 }
 ```
 Headers:
-x-ms-callback-url: when not empty, failed or successful device registration will trigger POST request webhook
-x-ms-callback-url-headers: contains a serialized JSON of string to string dictionary, representing headers passed for webhook request. Used only when x-ms-callback-url is defined 
+x-ms-callback-url: When not empty, failed, or successful device registration will trigger POST request webhook.
+x-ms-callback-url-headers: Contains a serialized JSON of a string-to-string dictionary, representing headers passed for webhook requests. Used only when x-ms-callback-url is defined.
 
 Returns: 202 on success, 400 if the request is not valid.
 
@@ -218,9 +218,9 @@ Body:
 } 
 ```
 
-**Note #1**: signature is HMACSHA256 hash of callback URL calculated using API token as a key. Can be used to verify that the call was indeed made by CRM org customer owns. This can be done by hashing callback URL with API token on webhook’s side, using the same algorithm, and comparing the values 
+**Note #1**: Signature is HMACSHA256 hash of callback URL calculated using API token as a key. Can be used to verify that the call was indeed made by the CRM org the user owns. This can be done by hashing the callback URL with the API token on the webhook’s side, using the same algorithm, and comparing the values.
 
-**Note #2:** attempt to make a request will be made only once. Any failure to execute a request, such as incorrect callback URL, REST API call timeout, unexpected response status code, will cause the notification to be lost. 
+**Note #2:** Attempt to make a request will be made only once. Any failure to execute a request, such as an incorrect callback URL, REST API call timeout, or unexpected response status code will cause the notification to be lost. 
 
 Expected Return: 200 
 Expected Body: empty body. 
@@ -445,8 +445,8 @@ Body:
 ```
 
 Headers:
-x-ms-callback-url: when not empty, failed or successful device registration will trigger POST request webhook
-x-ms-callback-url-headers: contains a serialized JSON of string to string dictionary, representing headers passed for webhook request. Used only when x-ms-callback-url is defined 
+x-ms-callback-url: When not empty, failed, or successful device registration will trigger POST request webhook.
+x-ms-callback-url-headers: Contains a serialized JSON of a string-to-string dictionary, representing headers passed for webhook requests. Used only when x-ms-callback-url is defined.
 
 Returns: 202 on success, 400 if request is not valid
 
@@ -460,7 +460,6 @@ Body: array of items equal to body from (1), up to 100 items
 Headers: see **(1)**
 
 Returns: 202 on success, 400 if request is not valid
-
 
 3. Device Registration Status Webhook (single): 
 
@@ -479,9 +478,9 @@ Body:
 } 
 ```
 
-**Note #1**: signature is HMACSHA256 hash of callback URL calculated using API token as a key. Can be used to verify that the call was indeed made by CRM org customer owns. This can be done by hashing callback URL with API token on webhook’s side, using the same algorithm, and comparing the values 
+**Note #1**: Signature is HMACSHA256 hash of callback URL calculated using API token as a key. Can be used to verify that the call was indeed made by the CRM org the user owns. This can be done by hashing the callback URL with the API token on the webhook’s side, using the same algorithm, and comparing the values.
 
-**Note #2:** attempt to make a request will be made only once. Any failure to execute a request, such as incorrect callback URL, REST API call timeout, unexpected response status code, will cause the notification to be lost. 
+**Note #2:** Attempt to make a request will be made only once. Any failure to execute a request, such as an incorrect callback URL, REST API call timeout, or unexpected response status code will cause the notification to be lost. 
 
 Expected Return: 200 
 Expected Body: empty body. 
