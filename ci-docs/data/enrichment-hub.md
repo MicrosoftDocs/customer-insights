@@ -29,7 +29,7 @@ You can enrich your customer data before data unification to help increase the q
 
 ## Create an enrichment
 
-You need to have Contributor or Administrator [permissions](permissions.md) to create or edit enrichments.
+You need to have Contributor or Administrator [permissions](user-roles.md) to create or edit enrichments.
 
 Go to **Data** > **Enrichment**. The **Discover** tab shows all supported enrichment options.
 

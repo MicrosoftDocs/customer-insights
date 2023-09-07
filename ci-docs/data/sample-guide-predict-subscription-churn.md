@@ -20,7 +20,7 @@ Contoso is a company that produces high-quality coffee and coffee machines. They
 
 ## Prerequisites
 
-- At least [Contributor permissions](permissions.md) in Dynamics 365 Customer Insights - Data.
+- At least [Contributor permissions](user-roles.md) in Dynamics 365 Customer Insights - Data.
 
 ## Task 1 - Ingest data
 
