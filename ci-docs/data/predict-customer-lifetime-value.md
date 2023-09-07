@@ -27,7 +27,7 @@ Determine what CLV means for your business. We support transaction-based CLV pre
 
 ## Prerequisites
 
-- At least [Contributor](permissions.md) permissions
+- At least [Contributor](user-roles.md) permissions
 - At least 1,000 customer profiles within the desired prediction window
 - Customer Identifier, a unique identifier to match transactions to an individual customer
 - At least one year of transaction history, preferably two to three years. Ideally, at least two to three transactions per customer ID, preferably across multiple dates. Transaction history must include:

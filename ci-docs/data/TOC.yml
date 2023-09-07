@@ -319,6 +319,8 @@
       href: security-overview.md
     - name: Assign user permissions
       href: permissions.md
+    - name: User roles
+      href: user-roles.md
     - name: Bring your own Key Vault
       href: use-azure-key-vault.md
     - name: Securely access customer data with Customer Lockbox
