@@ -26,7 +26,7 @@ Having a single view of all the activities that a customer engages in enables yo
 
 ## How to enable marketing interactions in your contact/lead timeline
 
-If you use the out-of-the-box contact and lead forms provided with Customer Insights - Journeys, marketing interactions (based on Customer Insights - Journeys and outbound marketing activities) will automatically show up in the timeline.
+If you use the out-of-the-box contact and lead forms provided with Customer Insights - Journeys, marketing interactions (based on Customer Insights - Journeys and outbound marketing activities) will automatically show up in the timeline. Please note that the timeline will only display interactions associated with the respective profile type (either contact or lead) e.g. timeline for a contact will include interactions for that contact only.
 
 But if you use custom forms for contacts and leads, you’ll need to add a custom connector to the timeline component in your custom contact/lead form to see the marketing interactions.
 
