@@ -105,7 +105,7 @@ This section of the dashboard helps you understand how many customers have compl
 - **Total**: The total number of unique customers that reached that milestone.
 - **Influenced by marketing**: The total number of unique customers with at least one interaction due to Customer Insights - Journeys-initiated activities that reached that milestone.
 
-#### *Customer Insights - Journeys attribution analysis*
+#### *Marketing attribution analysis*
 This section provides you with insights into the effectiveness and contribution of your journeys, channels, and marketing assets in driving your customers to various milestones. For each milestone, you can leverage the following three attribution models to gain insights into the effectiveness and contribution of your Customer Insights - Journeys activities:
 1. **AI-powered multi-touch model**: This model allocates credit to each customer interaction by employing an AI algorithm that analyzes not just the frequency of different customer interactions but also their sequence to assess each interaction’s actual contribution towards milestone completion. This model can be used to understand the most effective journeys, channels, and marketing assets that drove customers to a specific milestone.
 1. **Linear multi-touch model**: This model allocates equal credit for milestone attainment to each customer interaction before the milestone is completed. It can be used to understand the most common journeys, channels, and assets that customers interacted with before completing a milestone.
