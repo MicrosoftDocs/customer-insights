@@ -1,7 +1,7 @@
 ---
 title: Overview of Customer Insights - Journeys forms
 description: Overview of the forms capabilities in Dynamics 365 Customer Insights - Journeys. 
-ms.date: 08/22/2023
+ms.date: 09/08/2023
 ms.topic: article
 author: petrjantac
 ms.author: alfergus
@@ -23,7 +23,7 @@ Each marketing form is made from a collection of fields, buttons, graphical elem
 
 The Customer Insights - Journeys form editor allows you to easily and quickly create and publish forms. You can choose a template or start from scratch. You can also design form content using drag-and-drop elements and preview options. Once your form is ready, you can publish the form in one quick step.
 
-> [IMPORTANT]
+> [!IMPORTANT]
 > There's a limit of 2,000 requests/minute per org. The request limit includes visits, lookup, CAPTCHA, and form submission. The limit allows around 100 to 500 submissions/minute, depending on the form.
 
 ## Comparison of Customer Insights - Journeys and outbound marketing forms
@@ -43,7 +43,7 @@ The following table summarizes the types of forms currently available in Custome
 |---|---|
 | Landing page form  | Marketing form  |
 | Subscription center form | Preference center (will be available as part of Consent configuration) |
-| Event registration form | N/A |
+| Event registration form | Create event registration forms through [real-time marketing event management](set-up-event.md) |
 | External form submission capture | N/A |
 | Refer to friend | N/A |
 
