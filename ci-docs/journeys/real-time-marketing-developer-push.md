@@ -1,7 +1,7 @@
 ---
 title: Push notification setup for application developers
 description: Learn developer settings for push notifications in Dynamics 365 Customer Insights - Journeys.
-ms.date: 09/06/2023
+ms.date: 09/08/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -185,7 +185,7 @@ Body:
 ```
 Headers:
 
-- **x-ms-callback-url:** When not empty, failed, or successful device registration will trigger POST request webhook.
+- **x-ms-callback-url:** When not empty, failed or successful device registration will trigger POST request webhook.
 - **x-ms-callback-url-headers:** Contains a serialized JSON of a string-to-string dictionary, representing headers passed for webhook requests. Used only when x-ms-callback-url is defined.
 
 Returns: 202 on success, 400 if the request is not valid.
@@ -225,7 +225,7 @@ Body:
 
 Expected Return: 200
 
-Expected Body: empty body
+Expected Body: Empty body
 
 
 4. Device Cleanup (single):
@@ -449,7 +449,7 @@ Body:
 
 Headers:
 
-- **x-ms-callback-url:** When not empty, failed, or successful device registration will trigger POST request webhook.
+- **x-ms-callback-url:** When not empty, failed or successful device registration will trigger POST request webhook.
 - **x-ms-callback-url-headers:** Contains a serialized JSON of a string-to-string dictionary, representing headers passed for webhook requests. Used only when x-ms-callback-url is defined.
 
 Returns: 202 on success, 400 if request is not valid
@@ -488,7 +488,7 @@ Body:
 
 Expected Return: 200 
 
-Expected Body: empty body
+Expected Body: Empty body
 
 
 4. Device Cleanup (single):
