@@ -70,6 +70,10 @@
       "ms.service": {
         "**.*": "customer-insights"
       },
+      "ms.subservice": {
+        "journeys/**.*": "customer-insights-journeys",
+        "data/**.*": "customer-insights-data"
+      },
       "searchScope": {
         "**.*": [
           "customerInsights"
