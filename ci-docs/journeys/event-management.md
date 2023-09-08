@@ -1,7 +1,7 @@
 ---
 title: Plan, publicize, and collect registrations for events
 description: An overview of event-management features (including planning, logistics, sponsors, speakers, promotion, and registration) in  Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/18/2023
+ms.date: 09/07/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -54,18 +54,18 @@ Customer Insights - Journeys contains a subset of outbound event management feat
 |     Feature     |     Outbound marketing    |     Customer Insights - Journeys    |
 |---|---|---|
 |     Single session event    |     Yes    |     Yes    |
-|     Multi-session event          |     Yes    |     Yes    |
-|     Recurring event    |     Yes    |     N/A    |
-|     Event level templates    |     Yes    |     N/A    |
+|     Multi-session event          |     Yes    |     Planned    |
+|     Recurring event    |     Yes    |     Planned    |
+|     Event level templates    |     Yes    |     Planned    |
 |     Sessions, session tracks, speaker management    |     Yes    |     Yes    |
 |     Venue management    |     Yes    |     Yes    |
 |     Tracking sponsors    |     Yes    |     Yes    |
 |     Creating Teams meetings/live events/webinars    |     Yes    |     Yes    |
-|     Support for On24 and other generic webinar providers      |     Yes    |     N/A    |
+|     Support for On24 and other generic webinar providers      |     Yes    |     Planned    |
 |     Using marketing forms for registrations    |     Yes    |     Yes    |
-|     Waitlist    |     Yes    |     N/A    |
-|     Payments    |     Yes    |     N/A    |
-|     Lead entity registration    |     Yes    |     N/A    |
-|     Set registrations end date    |    Yes    |    N/A    |
+|     Waitlist    |     Yes    |     Planned    |
+|     Payments    |     Yes    |     Planned    |
+|     Lead entity registration    |     Yes    |     Planned    |
+|     Set registrations end date    |    Yes    |    Planned    |
 
 [!INCLUDE[footer-include](./includes/footer-banner.md)]
