@@ -1,7 +1,7 @@
 ---
 title: Email policies and suspension standards
 description: Learn about Dynamics 365 Customer Insights - Journeys email policies and what to do if your account is suspended.
-ms.date: 08/18/2023
+ms.date: 09/08/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -21,7 +21,7 @@ To preserve your reputation as a sender, Dynamics 365 Customer Insights - Journe
 
 - *Warned*
 
-    In the first stage of review, the Customer Insights - Journeys application sends a warning notification to the address associated with your account. The account maintains full sending functionality during the warning period. However, if the application doesn't receive a response or the protection system records successive alerts, your account may be suspended to prevent further risk to your sending reputation.
+    In the first stage of review, the Customer Insights - Journeys application sends a warning notification to the admin email address associated with your account. The account maintains full sending functionality during the warning period. However, if the application doesn't receive a response or the protection system records successive alerts, your account may be suspended to prevent further risk to your sending reputation.
 
 - *Suspended*
 
