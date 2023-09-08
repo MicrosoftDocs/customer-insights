@@ -1,7 +1,7 @@
 ---
 title: Known issues in Customer Insights - Journeys
 description: Learn about known issues in Customer Insights - Journeys and how to work around them.
-ms.date: 08/22/2023
+ms.date: 09/07/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -23,7 +23,7 @@ As we continue to work on Customer Insights - Journeys and refine the experience
 - Data retention is 12 months for Contact and Lead insights, goal analytics, channel analytics (including delivery and interaction details such as contacts impacted by delivery and interaction issues), and AI optimization analytics.
 - Some strings in the Power BI aggregate analytics dashboard aren’t localized.
 - In the event of an email remote bounce, the contact/lead timeline might display two "email delivered" interactions for the same message with the same time stamp despite no message being delivered to the contact/lead email address. This is because the second interaction is intended to "erase" the first one. However, this is not currently being handled in the timeline.
-- When 2 contacts/leads are merged only interactions of the primary contact will be visible in contact/lead insights.
+- When two contacts or leads are merged, only interactions of the primary contact or lead will be visible in contact/lead insights.
 
 ## Consent
 
