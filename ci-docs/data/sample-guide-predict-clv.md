@@ -1,7 +1,7 @@
 ---
 title: Customer lifetime value (CLV) prediction sample guide
 description: Use this sample guide to try out the customer lifetime value prediction model.
-ms.date: 09/01/2023
+ms.date: 09/11/2023
 ms.reviewer: v-wendysmith
 ms.topic: conceptual
 author: joytaylor
@@ -104,11 +104,13 @@ Review the article [about data unification](data-unification.md). The following 
 
 Review the article [about customer activities](activities.md). The following information assumes you are familiar with creating activities in general.
 
-1. Create an activity with the *eCommercePurchases:eCommerce* table.
+1. Create activities with the *eCommercePurchases:eCommerce* table and the *Reviews:Website* table.
 
-1. Select **SalesOrderLine** for the **Activity Type** and **PurchaseId** for the **Primary key**.
+1. For *eCommercePurchases:eCommerce*, select **SalesOrderLine** for the **Activity Type** and **PurchaseId** for the **Primary key**.
 
-1. Enter the following information for the activity:
+1. For *Reviews:Website*, select **Review** for the **Activity Type** and **ReviewID** for the **Primary key**.
+
+1. Enter the following information for the purchase activity:
 
    - **Activity name**: eCommercePurchases
    - **TimeStamp**: PurchasedOn
@@ -117,21 +119,17 @@ Review the article [about customer activities](activities.md). The following inf
    - **Order date**: PurchasedOn
    - **Amount**: TotalPrice
 
-1. Add a relationship between *eCommercePurchases:eCommerce* and *eCommerceContacts:eCommerce* with **ContactID** as the foreign key to connect the two tables.
-
-1. Save and then run the activity.
-
-1. Add another activity called **WebReviews** and map its fields names to the corresponding fields:
-   - **Activity table**: Reviews:Website
-   - **Primary key**: ReviewId
+1. Enter the following information for the web review activity:
+   - **Activity name**: WebReviews
    - **Timestamp**: ReviewDate
    - **Event activity**: ActivityTypeDisplay
    - **Additional detail**: ReviewRating
-   - **Activity type**: Review
 
-1. Create a relationship between *Website* and *eCommerceContacts* with **UserId** as the foreign key.
+1. Add a relationship between *eCommercePurchases:eCommerce* and *eCommerceContacts:eCommerce* with **ContactID** as the foreign key to connect the two tables.
 
-1. Save and run the activity.
+1. Add a relationship between *Website* and *eCommerceContacts* with **UserId** as the foreign key.
+
+1. Review your changes and then select **Create activities**.
 
 ## Task 4 - Configure customer lifetime value prediction
 

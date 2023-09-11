@@ -1,7 +1,7 @@
 ---
 title: Product recommendation prediction sample guide
 description: Use this sample guide to try out the out of box product recommendation prediction model.
-ms.date: 09/08/2023
+ms.date: 09/11/2023
 ms.reviewer: mhart
 ms.topic: conceptual
 author: joytaylor
@@ -107,7 +107,7 @@ Review the article [about customer activities](activities.md). The following inf
 
 1. Create a relationship between *eCommercePurchases:eCommerce* and *eCommerceContacts:eCommerce* with **ContactID** as the foreign key to connect the two tables.
 
-1. Save and run the activity.
+1. Review your changes and then select **Create activities**.
 
 ## Task 4 - Configure product recommendation prediction
 

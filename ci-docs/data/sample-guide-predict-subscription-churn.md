@@ -1,7 +1,7 @@
 ---
 title: Subscription churn prediction sample guide
 description: Use this sample guide to try out the out of box subscription churn prediction model.
-ms.date: 09/08/2023
+ms.date: 09/11/2023
 ms.reviewer: v-wendysmith
 ms.topic: conceptual
 author: joytaylor
@@ -108,11 +108,13 @@ Review the article [about data unification](data-unification.md). The following 
 
 Review the article [about customer activities](activities.md). The following information assumes you are familiar with creating activities in general.
 
-1. Create an activity with the *Subscription* table.
+1. Create activities with the *Subscription* table and the *Reviews:Website* table.
 
-1. Select **Subscription** for the **Activity Type** and **CustomerId** for the **Primary key**.
+1. For *Subscription*, select **Subscription** for the **Activity Type** and **CustomerId** for the **Primary key**.
 
-1. Enter the following information for the activity:
+1. For *Reviews:Website*, select **Review** for the **Activity Type** and **ReviewID** for the **Primary key**.
+
+1. Enter the following information for the subscription activity:
 
    - **Activity name**: SubscriptionHistory
    - **Timestamp**: SubscriptionEndDate
@@ -123,23 +125,17 @@ Review the article [about customer activities](activities.md). The following inf
    - **Subscription start date**: SubscriptionStartDate
    - **Subscription end date**: SubscriptionEndDate
 
-1. Enter optional information if applicable.
-
-1. Create a relationship between *SubscriptionHistory:Subscription* and *eCommerceContacts:eCommerce* with **CustomerID** as the foreign key to connect the two tables.
-
-1. Save and run the activity.
-
-1. Add another activity called **WebReviews** and map its fields names to the corresponding fields:
-   - **Activity table**: Reviews:Website
-   - **Primary key**: ReviewId
+1. Enter the following information for the web review activity:
+   - **Activity name**: WebReviews
    - **Timestamp**: ReviewDate
    - **Event activity**: ActivityTypeDisplay
    - **Additional detail**: ReviewRating
-   - **Activity type**: Review
+
+1. Create a relationship between *SubscriptionHistory:Subscription* and *eCommerceContacts:eCommerce* with **CustomerID** as the foreign key to connect the two tables.
 
 1. Create a relationship between *Website* and *eCommerceContacts* with **UserId** as the foreign key.
 
-1. Run the activity.
+1. Review your changes and then select **Create activities**.
 
 ## Task 4 - Configure the subscription churn prediction
 
