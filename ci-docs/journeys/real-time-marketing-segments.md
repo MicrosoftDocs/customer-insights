@@ -1,7 +1,7 @@
 ---
 title: Work with segments in Customer Insights - Journeys
 description: Learn how to work with segments in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/23/2023
+ms.date: 09/11/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -18,6 +18,9 @@ search.audienceType:
 Customer Insights - Journeys uses [segments](segmentation-lists-subscriptions.md) directly from outbound marketing and [Customer Insights - Data](/dynamics365/customer-insights/index). You can view the segments available to you in Customer Insights - Journeys by going to **Audience** > **Segments**.
 
 ## Segments from outbound marketing
+
+> [!NOTE]
+> Only use outbound marketing segments that contain fewer than 750,000 members. Larger segments result in a slow export process and can lead to timeouts. Due to the resource-intensive nature of exporting large segments, segments with more than 750,000 members cannot be guaranteed to be fresh.
 
 To create a journey based on a segment from outbound marketing:
 
