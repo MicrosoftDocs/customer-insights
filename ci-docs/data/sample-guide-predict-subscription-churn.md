@@ -1,11 +1,12 @@
 ---
 title: Subscription churn prediction sample guide
 description: Use this sample guide to try out the out of box subscription churn prediction model.
-ms.date: 09/01/2023
+ms.date: 09/11/2023
 ms.reviewer: v-wendysmith
-ms.topic: tutorial
+ms.topic: conceptual
 author: joytaylor
 ms.author: joytaylor
+ms.custom: bap-template 
 ---
 
 # Subscription churn prediction sample guide
@@ -107,28 +108,38 @@ Review the article [about data unification](data-unification.md). The following 
 
 Review the article [about customer activities](activities.md). The following information assumes you are familiar with creating activities in general.
 
-1. Create an activity called **SubscriptionHistory** with the  *Subscription* table and its primary key, **CustomerId**.
+1. Create activities with the *Subscription* table and the *Reviews:Website* table.
+
+1. For *Subscription*, select **Subscription** for the **Activity Type** and **CustomerId** for the **Primary key**.
+
+1. For *Reviews:Website*, select **Review** for the **Activity Type** and **ReviewID** for the **Primary key**.
+
+1. Enter the following information for the subscription activity:
+
+   - **Activity name**: SubscriptionHistory
+   - **Timestamp**: SubscriptionEndDate
+   - **Event activity**: SubscriptionType
+   - **Transaction ID**: TransactionID
+   - **Transaction date**: TransactionDate
+   - **Subscription ID**: SubscriptionID
+   - **Subscription start date**: SubscriptionStartDate
+   - **Subscription end date**: SubscriptionEndDate
+
+1. Enter the following information for the web review activity:
+   - **Activity name**: WebReviews
+   - **Timestamp**: ReviewDate
+   - **Event activity**: ActivityTypeDisplay
+   - **Additional detail**: ReviewRating
 
 1. Create a relationship between *SubscriptionHistory:Subscription* and *eCommerceContacts:eCommerce* with **CustomerID** as the foreign key to connect the two tables.
 
-1. Select **SubscriptionType** for the **EventActivity** and **SubscriptionEndDate** for the **TimeStamp**.
+1. Create a relationship between *Website* and *eCommerceContacts* with **UserId** as the foreign key.
 
-1. Select **Subscription** for the **Activity Type** and semantically map the activity data.
-
-1. Run the activity.
-
-1. Add another activity and map its fields names to the corresponding fields:
-   - Customer activity table: Reviews:Website
-   - Primary key: Website.Reviews.ReviewId
-   - Timestamp: Website.Reviews.ReviewDate
-   - Event (activity name): Website.Reviews.ActivityTypeDisplay
-   - Details (amount or value): Website.Reviews.ReviewRating
-
-1. Run the activity.
+1. Review your changes and then select **Create activities**.
 
 ## Task 4 - Configure the subscription churn prediction
 
-With the unified customer profiles in place and activity created, run the subscription churn prediction. For detailed steps, see  [Subscription churn prediction](predict-subscription-churn.md).
+With the unified customer profiles in place and activity created, run the subscription churn prediction. For detailed steps, see [Subscription churn prediction](predict-subscription-churn.md).
 
 1. Go to **Insights** > **Predictions**.
 
@@ -181,5 +192,9 @@ You now have a segment that is dynamically updated which identifies high churn-r
 
 > [!TIP]
 > You can also create a segment for a prediction model from the **Insights** > **Segments** page by selecting **New** and choosing **Create from** > **Insights**. For more information, see [Create a new segment with quick segments](segment-quick.md).
+
+## Next steps
+
+- [Predict subscription churn](predict-subscription-churn.md)
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

@@ -22,12 +22,12 @@ After ingesting the data, begin the data unification process to create a unified
    - Select **FullName** for both eCommerceContacts and loyCustomers.
    - Select **Type (Phone, Name, Address, ...)** for **Normalize**.
    - Set **Precision Level**: **Basic** and **Value**: **High**.
-   - Enter **FullName, Email** for the name.
 
 1. Add a second condition for email address:
    - Select **Email** for both eCommerceContacts and loyCustomers.
    - Leave Normalize blank.
    - Set **Precision Level**: **Basic** and **Value**: **High**.
+   - Enter **FullName, Email** for the name.
 
    ![Unify match rule for name and email.](../media/unify-match-rule.png)
 
