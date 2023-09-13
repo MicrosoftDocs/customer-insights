@@ -56,7 +56,7 @@ Each Purpose can contain topics to add specific communications types to allow cu
 The **Enforcement model** settings on a purposes control how consent is evaluated before a message is sent. Messages sent to a purpose will use that purpose's enforcement model to evaluate if a message is or is not sent. There are three enforcement models that can be chosen depending on your regulatory needs:
 
 - **Restrictive**: Messages will be sent only to contact points that have opted-in contact point consent records for this purpose (or topic).
-- **Non-restrictive**: Messages will be sent to contact points that do not have opted-out contact point consent records for this purpose (or topic).
+- **Non-restrictive**: Messages will be sent to all contact points unless they have a opted-out contact point consent record for this purpose (or topic).
 - **Disabled**: Messages will be sent to all contact points. Contact point consent records are not checked before sending messages to this purpose (or topic).
 
 > [!NOTE]
