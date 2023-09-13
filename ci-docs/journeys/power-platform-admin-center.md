@@ -59,8 +59,6 @@ To open the Power Platform admin center starting from the Microsoft 365 admin ce
 
 1. Go to **Resources** > **Dynamics 365 apps** on the left navigation pane.
 
-   ![Navigate to the Dynamics 365 apps.](media/purchase-setup-ppac-apps2.png "Navigate to the Dynamics 365 apps")
-
 1. From here, you can find and select a Customer Insights - Journeys application. To manage or see details about an app, select the three dots between the **Name** and the **Status** columns for the Customer Insights - Journeys application.
 
     ![Choose an app and then select the Manage or Details link.](media/purchase-setup-ppac-manage.png "Choose an app and then select the Manage or Details link")

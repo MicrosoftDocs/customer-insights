@@ -57,8 +57,6 @@ To find and apply available updates to all core Customer Insights - Journeys sol
 
 1. Go to **Resources** > **Dynamics 365 apps** on the left navigation pane.  
 
-    ![Open the Applications tab.](media/purchase-setup-ppac-apps2.png "Open the Applications tab")
-
     The list shows a row for each entitlement (license) you have for Dynamics 365 Customer Insights - Journeys and other apps. Unused Customer Insights - Journeys entitlements (which can't be updated) show a **Status** of **Not Configured**. Used Customer Insights - Journeys entitlements show a **Status** of **Enabled**.
 
     You may have more than one type of application available, so be sure to pick the type that matches the instance you are updating. Both types of applications present the same setup wizard, as described in this procedure. They are identified as follows:

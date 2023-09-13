@@ -80,7 +80,7 @@ After you run a **Copy** or **Restore**, you must re-install the application to 
 
 ## Maintain or update your installation
 
-In addition to helping you install Customer Insights for the first time, you can access this area modify, maintain, or update your installation. You can do all of the following:
+In addition to helping you install Customer Insights for the first time, you can access the installation management area to modify, maintain, or update your installation. You can do all of the following:
 
 - Check for and apply [updates](apply-updates.md)
 - Fix installation issues
