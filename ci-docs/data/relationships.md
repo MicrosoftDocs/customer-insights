@@ -35,7 +35,7 @@ During the data ingestion process, the system checks data sources for existing r
 
 ## Create a custom relationship
 
-Relationship consists of a *source table* containing the foreign key and a *target table* that the source table's foreign key points to. 
+Relationship consists of a *source table* containing the foreign key and a *target table* that the source table's foreign key points to.
 
 1. Go to **Data** > **Tables**.
 
@@ -47,7 +47,7 @@ Relationship consists of a *source table* containing the foreign key and a *targ
 
    :::image type="content" source="media/relationship-add.png" alt-text="New relationship side pane with empty input fields.":::
 
-   - **Relationship name**: Name that reflects the purpose of the relationship. Example: CustomerToSupportCase.
+   - **Relationship name**: Name that reflects the purpose of the relationship. Relationship names are case sensitive. Example: CustomerToSupportCase.
    - **Description**: Description of the relationship.
    - **Source table**: Table that is used as a source in the relationship. Example: SupportCase.
    - **Target table**: Table that is used as a target in the relationship. Example: Customer.
