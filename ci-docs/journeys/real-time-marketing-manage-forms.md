@@ -49,6 +49,20 @@ Once you select a field on the canvas, you can see its properties in the right p
 
 To create custom validation, enable the **Validation** option and select **Custom**. A pop-up dialog appears where you can enter a Regular Expression (RegExp). You can, for example, use a RegExp to check if the entered value matches a specific phone number format.
 
+## Style your forms using Theme
+
+The Theme section can be opened by selecting brush icon in the right pane. Theme controls the style of all types of fields, buttons and text. Once you set Theme of a field, it will affect all fields of the same type in your form.
+
+> [!div class="mx-imgBorder"]
+> ![Edit style of your input field using Theme.](media/real-time-marketing-form-theme.png)
+
+### Theme assistant
+
+Theme assistant is a Copilot feature in Customer Insights - Journeys. You can use the Theme assistant to fetch styles from your existing website that you control. Enter the website URL and select Fetch styles. Please note that this process may take up to few minutes. You can continue your work and return back later to check the result. Once the assistant fetches the styles from your website it will apply these styles on Theme of your form.
+
+> [!div class="mx-imgBorder"]
+> ![Fetch styles from your website using copilot.](media/real-time-marketing-form-theme-copilot.png)
+
 ## Form settings
 
 Form settings allow you to configure advanced properties of your form and define what happens after the form submission.
