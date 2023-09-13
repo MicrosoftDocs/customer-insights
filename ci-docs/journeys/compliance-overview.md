@@ -53,14 +53,17 @@ Learn more: [Use outbound subscription centers in Customer Insights - Journeys](
 
 ### Preference centers
 
-Customer Insights - Journeys uses preference centers to enable customers to control the types of communications they wish to receive and the contact point at which they wish to receive them. Preference centers can be configured to match company branding and can include options for users to adjust the consent for various purposes that have been configured.  
+Customer Insights - Journeys uses preference centers to enable customers to control the types of communications they wish to receive and the contact point at which they wish to receive them. Preference centers can be configured to match company branding and can include options for users to adjust the consent for various purposes and topics that have been configured.  
 
 Learn more: [Create Customer Insights - Journeys preference centers](real-time-marketing-preference-centers.md)
 
 ### Preference pages
 
+> [!IMPORTANT]
+> Preference pages have been deprecated and may not be available in the future. We recommend replacing preference pages with the more flexible preference center.
+
 Customer Insights - Journeys uses preference pages as another way to manage user consent. A preference page is a web page where your customers can change their consent settings for receiving emails and text messages and for tracking. You can't create a new preference page. Instead, you can customize the language on the page for updating contact point consent as used in Customer Insights - Journeys. With the introduction of preference centers, existing preference pages will continue to support users updating their consent. However, moving forward, all new compliance profiles leverage the enhanced functionality of preference centers.  
 
-Learn more: [Customer Insights - Journeys preference pages](real-time-marketing-compliance-settings.md)
+Learn more: [Customer Insights - Journeys preference centers](real-time-marketing-preference-centers.md)
 
 [!INCLUDE[footer-include](./includes/footer-banner.md)]
