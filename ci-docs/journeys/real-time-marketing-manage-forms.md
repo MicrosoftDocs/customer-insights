@@ -51,14 +51,14 @@ To create custom validation, enable the **Validation** option and select **Custo
 
 ## Style your forms using Theme
 
-The Theme section can be opened by selecting brush icon in the right pane. Theme controls the style of all types of fields, buttons and text. Once you set Theme of a field, it will affect all fields of the same type in your form.
+The Theme section can be opened by selecting brush icon in the right pane. Theme controls the style of all types of fields, buttons and text. Once you set Theme of a field, it affects all fields of the same type in your form.
 
 > [!div class="mx-imgBorder"]
 > ![Edit style of your input field using Theme.](media/real-time-marketing-form-theme.png)
 
 ### Theme assistant
 
-Theme assistant is a Copilot feature in Customer Insights - Journeys. You can use the Theme assistant to fetch styles from your existing website that you control. Enter the website URL and select Fetch styles. Please note that this process may take up to few minutes. You can continue your work and return back later to check the result. Once the assistant fetches the styles from your website it will apply these styles on Theme of your form.
+Theme assistant is a Copilot feature in Customer Insights - Journeys. You can use the Theme assistant to fetch styles from your existing website that you control. Enter the website URL and select Fetch styles. This process may take up to few minutes. You can continue your work and return back later to check the result. Once the assistant fetches the styles from your website, it applies these styles on Theme of your form.
 
 > [!div class="mx-imgBorder"]
 > ![Fetch styles from your website using copilot.](media/real-time-marketing-form-theme-copilot.png)
