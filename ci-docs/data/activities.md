@@ -65,7 +65,7 @@ Follow these steps to define all activities at once.
 
    - **Foreign key**: Field in your activity table that will be used to establish a relationship with another table.
    - **To table name**: Corresponding source customer table with which your activity table will be in a relationship. You can only relate to source customer tables that are used in the data unification process.
-   - **Relationship name**: If a relationship between this activity table and the selected source customer table already exists, the relationship name will be in read-only mode. If no such relationship exists, a new relationship will be created with the name you provide in this box.
+   - **Relationship name**: If a relationship between this activity table and the selected source customer table already exists, the relationship name will be in read-only mode. If no such relationship exists, a new relationship will be created with the name you provide in this box. Relationship names are case sensitive.
      > [!NOTE]
      > Activities can't be configured using [inherited relationships](relationships.md#non-editable-system-relationships).
 
