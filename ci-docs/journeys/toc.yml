@@ -14,8 +14,6 @@
     items:
     - name: Get started with Dynamics 365 Customer Insights licensing
       href: marketing-license.md
-    - name: Purchase a license directly from a trial
-      href: direct-purchase.md
     - name: Purchase Customer Insights
       href: purchase.md
   - name: Customer Insights - Journeys transition
