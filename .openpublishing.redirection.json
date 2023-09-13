@@ -2365,6 +2365,11 @@
       "source_path": "ci-docs/faqs-data-prep.md",
       "redirect_url": "/dynamics365/customer-insights/data/faqs-data-prep",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/re-run-setup.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/setup",
+      "redirect_document_id": false
     }
   ]
 }
