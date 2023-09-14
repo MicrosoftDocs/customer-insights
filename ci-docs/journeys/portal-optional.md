@@ -81,7 +81,7 @@ Before removing the portal, you should recreate your landing pages and subscript
 
 To remove portal integration from an existing Customer Insights - Journeys instance:
 
-1. [Launch the Customer Insights - Journeys setup wizard](re-run-setup.md) for the instance you want to modify. You should be able to see that the **Use Dynamics 365 Portals or a Power Apps portal** option is currently selected.
+1. [Access the installation management area](setup.md#install-uninstall-or-update-customer-insights) for the instance you want to modify. You should be able to see that the **Use Dynamics 365 Portals or a Power Apps portal** option is currently selected.
 
 1. From the **Other actions** panel, choose **Configure your portal**.
 
@@ -111,7 +111,7 @@ To create a new portal and associate it with the Customer Insights - Journeys ap
 > [!IMPORTANT]
 > If you don't provision your portal through the Customer Insights - Journeys app, you can’t connect it later.
 
-1. [Launch the Customer Insights - Journeys setup wizard](re-run-setup.md) for the instance you want to modify. You should be able to see that the **Use your own webserver** option is currently selected.
+1. [Access the installation management area](setup.md#install-uninstall-or-update-customer-insights) for the instance you want to modify. You should be able to see that the **Use your own webserver** option is currently selected.
 
     > [!div class="mx-imgBorder"]
     > ![Setup wizard for an existing instance without portal integration.](media/fre-add-portal-1-2.png)

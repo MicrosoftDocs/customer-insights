@@ -97,7 +97,7 @@ sections:
           If your setup fails for some reason, you'll be notified by email and/or by a status message in your web browser (if you keep it open during the installation). Often, part of the solution will be to rerun the setup wizard after waiting for an hour or so. To rerun the setup wizard, do one of the following:
           
           - If you're setting up a [trial](trial-signup.md), you should have received a welcome email that included a link to the setup wizard. Find your welcome mail and select the link to launch the wizard.
-          - If you're setting up a production instance, then launch the setup wizard by going to **Resources** > **Dynamics 365 apps** in the Power Platform admin center, as described in [Re-run the Customer Insights - Journeys setup wizard](re-run-setup.md).
+          - If you're setting up a production instance, then [access the installation management area](setup.md#install-uninstall-or-update-customer-insights).
           
           <a name="fix-portal"></a>
           

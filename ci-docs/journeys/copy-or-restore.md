@@ -100,7 +100,7 @@ To prepare your target environment, do the following _before_ starting the copy:
 
 Once your source and target environments are prepared, you're ready to make the copy following the procedure described in [Copy an environment](/power-platform/admin/copy-environment).
 
-Pay special attention when choosing whether to create an [Everything or Customizations and schemas only copy](copy-or-restore.md-content-of-the-target-environment-after-a-copy-or-restore).
+Pay special attention when choosing whether to create an [Everything or Customizations and schemas only copy](copy-or-restore.md#content-of-the-target-environment-after-a-copy-or-restore).
 
 ![Select the copy type.](media/instances-everything-schemas.png "Select the copy type")
 

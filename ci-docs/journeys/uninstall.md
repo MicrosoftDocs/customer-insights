@@ -1,7 +1,7 @@
 ---
 title: Uninstall Dynamics 365 Customer Insights
 description: How to remove Dynamics 365 Customer Insights.
-ms.date: 09/13/2023
+ms.date: 09/13/2023 
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -36,17 +36,17 @@ To run the uninstall process:
 
 1. If you have sample data installed, remove it. More information: [Add or remove sample data](/power-platform/admin/add-remove-sample-data).
 
-1. [Run the Customer Insights - Journeys setup wizard](re-run-setup.md) for the instance where you want to uninstall the Customer Insights - Journeys application. Make sure the correct instance is listed.
+1. [Access the installation management area](setup.md#install-uninstall-or-update-customer-insights) and find the environment where you want to uninstall the Customer Insights - Journeys application. Make sure the correct environment is listed.
 
-1. From the **Other actions** panel, choose **Uninstall Customer Insights - Journeys from this org**.
+1. Select **Uninstall** next to the instance that you want to remove.
 
-1. Follow the on-screen instructions to confirm and complete the uninstall.
+1. The uninstall process takes place and updates the environment when it's complete.
 
 <a name="reset-portal"></a>
 
 ## Reset any Power Apps portals connected to the uninstalled Customer Insights - Journeys app (outbound marketing only)
 
-If the outbound environment in the Customer Insights - Journeys instance that you are uninstalling was connected to a Power Apps portal (for example to run marketing pages or the events website), then you need to reset the portal to release its license. After the reset, the portal still shows as configured in the Power Platform admin center, but you'll be able to select it when you run the Customer Insights - Journeys setup wizard to set up a new, copied, or restored instance.
+If the outbound environment in the Customer Insights - Journeys instance that you are uninstalling was connected to a Power Apps portal (for example to run marketing pages or the events website), then you need to reset the portal to release its license. After the reset, the portal still shows as configured in the Power Platform admin center, but you'll be able to select it when you use the installation management area to set up a new, copied, or restored instance.
 
 Portals are optional, so you might not have one connected to your Customer Insights - Journeys instance. More information: [Integrate Customer Insights - Journeys with a CMS system or Power Apps portal](portal-optional.md)
 
@@ -60,7 +60,7 @@ To reset a portal:
 > [!NOTE]
 > If you want to release your Customer Insights entitlement to use on a different instance, you **do not** need to uninstall any of the Customer Insights - Journeys solutions.
 
-To delete Dynamics 365 from an instance, first open the Customer Insights - Journeys setup wizard and run the uninstall command. The uninstall command releases your Dynamics 365 license and disconnects the Customer Insights - Journeys services. If you'd also like to remove all of the related solutions from your instance, you must manually delete them in the order listed below. (Some of the items listed here may not be present on your instance, so just skip any missing items.) For complete instructions, see [Uninstall Customer Insights - Journeys](uninstall.md).
+To delete Dynamics 365 from an instance, first open the installation management area and run the uninstall command. The uninstall command releases your Dynamics 365 license and disconnects the Customer Insights - Journeys services. If you'd also like to remove all of the related solutions from your instance, you must manually delete them in the order listed below. (Some of the items listed here may not be present on your instance, so just skip any missing items.) For complete instructions, see [Uninstall Customer Insights - Journeys](uninstall.md).
 
 Solutions labelled "Used outside of Customer Insights - Journeys" are used by other Dynamics 365 apps such as Dynamics 365 Sales, Customer Service Hub, Intelligent Order Management Features, and others. It's **not safe to uninstall the shared solutions** as it can break related workloads, so it's recommended to skip those.
 

@@ -64,6 +64,8 @@ To set up a new Customer Insights environment:
 
 1. To open the installation management area, select the three dots dropdown ("**...**") then select **Manage**.
 
+1. In the installation management area, you'll see your available environments listed and can choose where you want to install Customer Insights - Journeys or Customer Insights - Data.
+
 > [!div class="mx-imgBorder"]
 > ![Installation management area screenshot.](media/new-installation.png "Installation management area screenshot")
 
