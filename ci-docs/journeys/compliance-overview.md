@@ -58,7 +58,7 @@ Learn more: [Create Customer Insights - Journeys preference centers](real-time-m
 > [!IMPORTANT]
 > Preference pages have been deprecated and may not be available in the future. We recommend replacing preference pages with the more flexible preference center.
 
-Customer Insights - Journeys uses preference pages as another way to manage user consent. A preference page is a web page where your customers can change their consent settings for receiving emails and text messages and for tracking. You can't create a new preference page. Instead, you can customize the language on the page for updating contact point consent as used in Customer Insights - Journeys. With the introduction of preference centers, existing preference pages will continue to support users updating their consent. However, moving forward, all new compliance profiles leverage the enhanced functionality of preference centers.  
+Customer Insights - Journeys uses preference pages as another way to manage user consent. A preference page is a web page where your customers can change their consent settings for receiving emails and text messages and for tracking. You can't create a new preference page. Instead, you can customize the language on the page for updating contact point consent as used in Customer Insights - Journeys. With the introduction of preference centers, existing preference pages will continue to support users updating their consent. However, moving forward, all new compliance profiles use the enhanced functionality of preference centers.  
 
 Learn more: [Customer Insights - Journeys preference centers](real-time-marketing-preference-centers.md)
 
@@ -67,11 +67,11 @@ Learn more: [Customer Insights - Journeys preference centers](real-time-marketin
 > [!CAUTION]
 > Subscription centers can only be used with contact entities. Leads and Customer Insights profiles are not supported by subscription centers. If you plan to send communication to these entity types we recommend using a preference center.
 
-Outbound marketing subscription centers are marketing pages that contacts can use to manage their communication preferences and contact details with your organization. Subscription centers must be configured in outbound marketing, but can be used by real-time journeys. Subscription centers do not work with real-time journey's purposes and topics. Only data on the contact record (such as the **DoNotBulkEmail** attribute) and Subscription Lists can be updated from a subscription center.
+Outbound marketing subscription centers are marketing pages that contacts can use to manage their communication preferences and contact details with your organization. Subscription centers must be configured in outbound marketing, but can be used by real-time journeys. Subscription centers don't work with real-time journey's purposes and topics. Only data on the contact record (such as the **DoNotBulkEmail** attribute) and Subscription Lists can be updated from a subscription center.
 
 Learn more: [Set up a subscription center](set-up-subscription-center.md)
 
-Customer Insights - Journeys can also use subscription centers if your journeys only target contacts. Using subscription centers from a real-time journey can enable you to start sending messsages from real-time journeys before you transition to a the newer preference center option.
+Customer Insights - Journeys can also use subscription centers if your journeys only target contacts. Using subscription centers from a real-time journey can enable you to start sending messages from real-time journeys before you transition to the newer preference center option.
 
 > [!NOTE]
 > When a subscription center is used in a real-time journey, updates to the `{{DoNotBulkEmail}}` field made by the user will result in a contact point consent record being created or updated for the commercial purpose of the compliance profile configured on the email message.
@@ -86,6 +86,6 @@ Learn more: [Use outbound subscription centers in Customer Insights - Journeys](
 > [!TIP]
 > If you want to include a link to an external preference management page and the modifications made to the URL do not work for your use case, we recommend that you configure your messages to include the preference management link directly in the message template and not use the built-in compliance `{{PreferenceCenter}}` tokens.
 
-External links allow you to configure a website URL that points to an externally hosted subscription center. The URL configured in the compliance profile will be included in messages sent with this compliance profile. When the URL is inserted into a message, it will be modified to include additional query string parameters at the end to enable the receiving subscription center to identify the contact that was sent the message.
+External links allow you to configure a website URL that points to an externally hosted subscription center. The URL configured in the compliance profile will be included in messages sent with this compliance profile. When the URL is inserted into a message, it is modified to include a query string parameter at the end to enable the receiving subscription center to identify the contact that was sent the message.
 
 [!INCLUDE[footer-include](./includes/footer-banner.md)]
