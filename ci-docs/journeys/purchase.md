@@ -1,5 +1,5 @@
 ---
-title: Purchase Dynamics 365 Customer Insights
+title: Purchase Customer Insights
 description: How to purchase Dynamics 365 Customer Insights.
 ms.date: 08/21/2023
 ms.topic: article

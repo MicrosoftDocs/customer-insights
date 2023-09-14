@@ -2395,6 +2395,11 @@
       "source_path": "ci-docs/journeys/marketing-preview-features.md",
       "redirect_url": "/dynamics365/customer-insights/journeys/admin-feature-switches",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/marketing-license.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/customer-insights-license",
+      "redirect_document_id": false
     }
   ]
 }

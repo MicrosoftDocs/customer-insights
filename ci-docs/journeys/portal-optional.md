@@ -15,6 +15,9 @@ search.audienceType:
 
 [!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
+> [!IMPORTANT]
+> This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
+
 Read this topic to learn how you can run interactive marketing features for Customer Insights - Journeys by using an integrated Dynamics 365 Portal, Power Apps portals, or by using your own website or CMS system.
 
 > [!NOTE]
