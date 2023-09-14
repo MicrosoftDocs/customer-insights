@@ -36,12 +36,12 @@ When creating a new email message, you choose a **Compliance Profile**, a **Purp
 > [!div class="mx-imgBorder"]
 > ![Compliance profile and purpose screenshot.](media/real-time-marketing-email-compliance-settings.png " Compliance profile and purpose screenshot ")
 
-As required for commercial email, a **Company Address** placeholder and an **Unsubscribe** link are added to the email footer automatically. The company address reflects the value set on the **Compliance profile** page and can be edited directly from the email editor, if needed. The unsubscribe link leads to the preference center, where customers can review and change communication preferences.
+As required for commercial email, a **Company Address** placeholder and an **Preference Center** placeholder link are added to the email footer automatically. The company address reflects the value set on the **Compliance profile** and can be edited directly from the email editor if needed. The **Preference center** link leads to the preference management page configured by the **Compliance Profile**, where customers can review and change communication preferences.
 
-The presence of a company address and unsubscribe link is checked when you select **Ready to send**. The app notifies you if one of these parameters is missing.
+The presence of a company address and unsubscribe link is checked when you select **Ready to send**. The app will warn you if one of these parameters is missing if you are sending a message to a commercial consent purpose.
 
 > [!NOTE]
-> The app will display warnings if, for example, you accidentally delete either the default company address or link to the default preference page. However, it does not block you from sending such an email. Thus, you are able to replace the given company address field with another one of your choice or add a link to a custom preference center if you like.
+> The app will display warnings if, for example, you accidentally delete either the company address or link to the preference center. However, it does not block you from sending such an email. Thus, you are able to replace the given company address field with another one of your choice or add a link to a custom preference center if you like.
 
 If you want to send commercial email, the app checks whether the email addresses of the target audience have granted consent when the email is sent. In the restrictive model, messages only send to customers whose email addresses were opted in. By default, the transactional message purpose has a **Disabled** enforcement model, meaning that consent checks won't run against contact points. The enforcement model can be changed in the compliance profile itself.
 

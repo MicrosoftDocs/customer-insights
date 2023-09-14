@@ -64,6 +64,9 @@ The **Enforcement model** settings on a purposes control how consent is evaluate
 
 Topics use the enforcement model of their parent purpose. Messages that are configured with both a purpose and a topic must have consent for both the purpose and the topic in order for the message to be sent. If a contact point does not have consent to send to a purpose, no messages to that purpose's topic will be delivered to the contact point. For example, if the parent purpose has a restrictive enforcement model, sending an email to a topic requires an opt-in contact point consent record for both the purpose and the topic associated with the email.
 
+> [!IMPORTANT]
+> Real-time journeys check the contact's `DoNotEmail`, `DoNotBulkEmail` and `DoNotTrack` fields when an email message is sent to a contact entity. This behavior matches outbound marketing's consent enforcement. In order for an email to be sent to a contact from a real-time journey, both the contact's fields and the contact point consent records for email address must all allow the message to be sent. These fields are not checked for messages sent to other entities (e.g. Leads). These fields are also not checked for Text or Custom Channel messages.
+
 ### Preference centers
 
 A preference center is a form that allows a message recipient to review and update their current consent settings. Each compliance profile has its own preference center. When you create a new compliance profile a default preference center is created that you can customize with your own branding. You can choose which purposes and topics appear on the preference center, allowing you to control what consent to show and collect on the form. The unsubscribe links in emails direct recipients to the preference center of the compliance profile chosen on the email they received.
