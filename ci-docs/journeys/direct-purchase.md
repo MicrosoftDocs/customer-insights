@@ -15,8 +15,6 @@ search.audienceType:
 
 [!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE55wwx]
-
 You can now purchase a Dynamics 365 Customer Insights license directly from a trial. Tenant admins can directly purchase the Customer Insights environment SKUs (Dynamics 365 Customer Insights App or Dynamics 365 Customer Insights Attach) and convert the trial environment to a paid environment in one streamlined workflow.
 
 This article details who can purchase a license within the app, how can they purchase a license, and what happens after the purchase.
@@ -67,14 +65,5 @@ In the admin center, *tenant admins* can:
 - Cancel any departmental purchase and (optionally) move assigned users to an org purchase.
 
 Learn more: [Manage self-service purchases (Admin)](/microsoft-365/commerce/subscriptions/manage-self-service-purchases-admins).
-
-In the admin center, *non-tenant admins* (departmental purchasers) can:
-- Acquire a departmental license through a paid/trial motion.
-- Add/remove licenses as needed.
-- Pay their bill/manage their account.
-
-Learn more: [Manage self-service purchases (Users)](/microsoft-365/commerce/subscriptions/manage-self-service-purchases-users).
-
-Put simply, the purchaser controls anything money-related. The tenant administrator can cancel the subscription but can't make a user pay more or less and can't take something a user paid for and give it to someone else.
 
 [!INCLUDE[footer-include](./includes/footer-banner.md)]
