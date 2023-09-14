@@ -44,39 +44,28 @@ If you run into trouble while installing, see the [Administration and setup FAQ]
 > 
 > You can monitor your usage levels by going to  **Settings**  >  **Advanced settings**  >  **Other settings**  >  **Quota limits**  in Customer Insights. More information: [Quota limits](quota-management.md)
 
-## Add a Customer Insights app to your Microsoft 365 tenant
+## Add Customer Insights to your Microsoft 365 tenant
 
 There are many ways to add one or more Customer Insights apps to your Microsoft 365 tenant. For example, you can purchase it from the [Dynamics 365 Customer Insights overview page](https://dynamics.microsoft.com/marketing/overview/), or by going to **Billing** > **Purchase services** in your Microsoft 365 admin center, or by contacting your Microsoft sales representative or channel partner. On purchasing a license, an unconfigured Customer Insights app will be automatically added to your tenant.
 
-You can have any number of Customer Insights apps available on your tenant. Initially, each of these apps will be unconfigured and unassigned to any Dynamics 365 environment. Later, you'll run the Customer Insights setup wizard to assign the app to an environment and configure it.
-
-<a name="run-wizard"></a>
+You can have any number of Customer Insights apps available on your tenant. Initially, each of these apps will be unconfigured and unassigned to any Dynamics 365 environment. Later, you'll use the installation management area to assign the app to an environment and configure it.
 
 ## Install, uninstall, or update Customer Insights
 
-After purchasing your license for Customer Insights, you'll have an unconfigured Customer Insights app available on your tenant, but you still need to set it up for use.
+After purchasing your Customer Insights license, you'll have an unconfigured Customer Insights app available on your tenant, but you still need to set it up for use.
 
 > [!TIP]
-> If you have not installed other apps on the [Microsoft Power Platform admin center](/power-platform/admin/), you'll need to create an environment before you can run the Customer Insights setup wizard. Learn more: [Create and manage environments in the Power Platform admin center](/power-platform/admin/create-environment).
+> If you have not installed other apps on the [Microsoft Power Platform admin center](/power-platform/admin/), you'll need to create an environment before you can  use the installation management area. Learn more: [Create and manage environments in the Power Platform admin center](/power-platform/admin/create-environment).
 
 To set up a new Customer Insights environment:
 
 1. Go to [**admin.powerplatform.microsoft.com**](https://admin.powerplatform.microsoft.com). Find the Dynamics 365 apps list in the left-hand site map and select **Resources**.
     - Whether you have the legacy, standalone Dynamics 365 Customer Insights app or Dynamics 365 Marketing licenses (available to customers who purchased before September 2023) or the new, combined Dynamics 365 Customer Insights license that contains both the journey orchestration and customer data platform applications together in one SKU, you can find them listed in admin.powerplatform.microsoft.com under **Dynamics 365 apps** > **Resources**.
 
-1. To open the installation management experience, select the three dots dropdown ("**...**") then select **Manage**.
+1. To open the installation management area, select the three dots dropdown ("**...**") then select **Manage**.
 
 > [!div class="mx-imgBorder"]
-> ![Installation management experience screenshot.](media/new-installation.png "Installation management experience screenshot")
-
-### Refresh services after a copy or restore
-
-After you run a **Copy** or **Restore**, you must re-install the application to refresh the services installation. To refresh the services:
-
-1. Go to [**admin.powerplatform.microsoft.com**](https://admin.powerplatform.microsoft.com) > **Resources** > **Dynamics 365 Apps** and select Dynamics 365 Customer Insights or Dynamics 365 Marketing.
-1. Select the three dots dropdown ("**...**") then select **Manage**. 
-1. To reinstall the services, find the environment you are working on and select **Install** for Customer Insights - Journeys.
-1. If you had outbound marketing installed on the source of the copy, you will see an option to **Enable** in **Settings** > **Versions**. Re-enable outbound marketing to match the target.
+> ![Installation management area screenshot.](media/new-installation.png "Installation management area screenshot")
 
 ## Maintain or update your installation
 
@@ -85,8 +74,8 @@ In addition to helping you install Customer Insights for the first time, you can
 - Check for and apply [updates](apply-updates.md)
 - Fix installation issues
 - Connect a disconnected instance to marketing services
-- Clean up after a [copy or restore operation](manage-marketing-environments.md)
-- [Uninstall](uninstall-marketing.md) Customer Insights - Journeys
+- Clean up after a [copy or restore operation](copy-or-restore.md)
+- [Uninstall](uninstall.md) Customer Insights - Journeys
 
 ## Privacy notice
 

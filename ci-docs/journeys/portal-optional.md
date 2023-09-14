@@ -66,7 +66,7 @@ You can use portal features in parallel with website/CMS features provided you h
 > 1. Navigate to the [Power Apps portals admin center](/powerapps/maker/portals/admin/admin-overview).
 > 2. Go to the [Portal Details](/powerapps/maker/portals/admin/admin-overview#add-yourself-as-an-owner-of-the-azure-ad-application) section and check if the portals license is in an expired state.
 >
-> If the portals integration is expired, you will need to [purchase a paid license](/powerapps/maker/portals/admin/admin-overview#add-yourself-as-an-owner-of-the-azure-ad-application). You will then need to [reset the portals integration](uninstall-marketing.md#reset-any-power-apps-portals-connected-to-the-uninstalled-customer-insights---journeys-app) on the Customer Insights - Journeys instance and re-provision.
+> If the portals integration is expired, you will need to [purchase a paid license](/powerapps/maker/portals/admin/admin-overview#add-yourself-as-an-owner-of-the-azure-ad-application). You will then need to [reset the portals integration](uninstall.md#reset-any-power-apps-portals-connected-to-the-uninstalled-customer-insights---journeys-app) on the Customer Insights - Journeys instance and re-provision.
 
 ## Remove portal integration from an existing Customer Insights - Journeys instance
 

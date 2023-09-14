@@ -1,7 +1,7 @@
 ---
-title: Solution uninstall order for removing Dynamics 365 Customer Insights - Journeys
-description: Lists the correct order in which to remove solutions when uninstalling Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/23/2023
+title: Uninstall Dynamics 365 Customer Insights
+description: How to remove Dynamics 365 Customer Insights.
+ms.date: 09/13/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -11,14 +11,56 @@ search.audienceType:
   - enduser
 ---
 
-# Solution uninstall order for removing Dynamics 365 Customer Insights - Journeys
+# Uninstall Dynamics 365 Customer Insights
 
 [!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
-> [!NOTE]
-> If you want to release your Customer Insights - Journeys entitlement to use on a different instance, you **do not** need to uninstall any of the Customer Insights - Journeys solutions.
+You can remove Customer Insights from any Dynamics 365 instance where it's installed. After removing it, you'll end up with a Customer Insights license that you can use on another Dynamics 365 instance, if desired.
 
-To delete Dynamics 365 from an instance, first open the Customer Insights - Journeys setup wizard and run the uninstall command. The uninstall command releases your Dynamics 365 license and disconnects the Customer Insights - Journeys services. If you'd also like to remove all of the related solutions from your instance, you must manually delete them in the order listed below. (Some of the items listed here may not be present on your instance, so just skip any missing items.) For complete instructions, see [Uninstall Customer Insights - Journeys](uninstall-marketing.md).
+> [!IMPORTANT]
+> The uninstall process detailed below *does not* remove all Customer Insights - Journeys-related solutions from your instance. To remove all Customer Insights - Journeys-related solutions, you must follow the process below then manually delete the solutions in the order listed in [Solution uninstall order for removing Customer Insights - Journeys](#uninstall.md#solution-uninstall-order-for-removing-customer-insights---journeys).
+
+## Uninstall Customer Insights - Journeys services
+
+The Customer Insights uninstall process handles most of the uninstall process. The uninstall process:
+
+- Removes all services for Customer Insights - Journeys, event management, and Dynamics 365 Connector for LinkedIn Lead Gen Forms
+- Removes the marketing insights service and its data
+- Turns off user syncing from Microsoft 365 for Customer Insights - Journeys users
+- Frees your Customer Insights license for use with another Dynamics 365 instance
+
+> [!NOTE]
+> If you want to release your Customer Insights entitlement to use on a different instance, you do not need to uninstall any of the Customer Insights solutions.
+
+To run the uninstall process:
+
+1. If you have sample data installed, remove it. More information: [Add or remove sample data](/power-platform/admin/add-remove-sample-data).
+
+1. [Run the Customer Insights - Journeys setup wizard](re-run-setup.md) for the instance where you want to uninstall the Customer Insights - Journeys application. Make sure the correct instance is listed.
+
+1. From the **Other actions** panel, choose **Uninstall Customer Insights - Journeys from this org**.
+
+1. Follow the on-screen instructions to confirm and complete the uninstall.
+
+<a name="reset-portal"></a>
+
+## Reset any Power Apps portals connected to the uninstalled Customer Insights - Journeys app (outbound marketing only)
+
+If the outbound environment in the Customer Insights - Journeys instance that you are uninstalling was connected to a Power Apps portal (for example to run marketing pages or the events website), then you need to reset the portal to release its license. After the reset, the portal still shows as configured in the Power Platform admin center, but you'll be able to select it when you run the Customer Insights - Journeys setup wizard to set up a new, copied, or restored instance.
+
+Portals are optional, so you might not have one connected to your Customer Insights - Journeys instance. More information: [Integrate Customer Insights - Journeys with a CMS system or Power Apps portal](portal-optional.md)
+
+To reset a portal:
+
+1. Follow the instructions provided in [Reset a portal](/powerapps/maker/portals/admin/reset-portal).
+1. Portal reset leaves behind its website bindings, which may prevent you from reusing your portal name. Therefore, you should always delete all website bindings that are related to the portals used by your uninstalled Customer Insights - Journeys instance. More information: [Create and manage website bindings](/powerapps/maker/portals/configure/website-bindings)
+
+## Solution uninstall order for removing Customer Insights - Journeys
+
+> [!NOTE]
+> If you want to release your Customer Insights entitlement to use on a different instance, you **do not** need to uninstall any of the Customer Insights - Journeys solutions.
+
+To delete Dynamics 365 from an instance, first open the Customer Insights - Journeys setup wizard and run the uninstall command. The uninstall command releases your Dynamics 365 license and disconnects the Customer Insights - Journeys services. If you'd also like to remove all of the related solutions from your instance, you must manually delete them in the order listed below. (Some of the items listed here may not be present on your instance, so just skip any missing items.) For complete instructions, see [Uninstall Customer Insights - Journeys](uninstall.md).
 
 Solutions labelled "Used outside of Customer Insights - Journeys" are used by other Dynamics 365 apps such as Dynamics 365 Sales, Customer Service Hub, Intelligent Order Management Features, and others. It's **not safe to uninstall the shared solutions** as it can break related workloads, so it's recommended to skip those.
 

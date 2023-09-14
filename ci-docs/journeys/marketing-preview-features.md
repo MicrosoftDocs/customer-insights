@@ -41,7 +41,7 @@ To enable the preview features:
 
 1. Select the environment where you want to enable the preview.
     > [!CAUTION]
-    > We highly recommend that you only enable preview features on a sandbox or trial environment, not on a production environment. You can [copy a production environment](manage-marketing-environments.md) to a sandbox if you want to test on your exact configuration, and sandbox environments can be reset, backed up, and restored as you test features without impacting your production users.
+    > We highly recommend that you only enable preview features on a sandbox or trial environment, not on a production environment. You can [copy a production environment](copy-or-restore.md) to a sandbox if you want to test on your exact configuration, and sandbox environments can be reset, backed up, and restored as you test features without impacting your production users.
 
 1. Find the **Updates** section of the page, and then select the **Manage** link at the top of this section.
 
@@ -56,7 +56,7 @@ To enable the preview features:
 
     ![The enable-preview flyout and dialog.](media/preview-enable-2.png "The enable-preview flyout and dialog")
 
-1. [Open the Power Platform admin center](power-platform-admin-center.md).
+1. [Open the installation management area](uninstall.md).
 
 1. Go to the **Applications** tab of the admin center to see a list of applications you have installed.  
     ![Open the Applications tab.](media/update-app-tab.png "Open the Applications tab")

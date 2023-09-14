@@ -1,7 +1,7 @@
 ---
-title: Manage your Dynamics 365 Customer Insights - Journeys environments
-description: How to copy a production Dynamics 365 Customer Insights - Journeys environment to a sandbox environment for experiments and testing.
-ms.date: 08/21/2023
+title: Copy or restore environments
+description: How to copy a production Dynamics 365 Customer Insights environment to a sandbox environment for experiments and testing.
+ms.date: 09/13/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -11,7 +11,16 @@ search.audienceType:
   - enduser
 ---
 
-# Manage your Dynamics 365 Customer Insights - Journeys environments
+### Refresh services after a copy or restore
+
+After you run a **Copy** or **Restore**, you must re-install the application to refresh the services installation. To refresh the services:
+
+1. Go to [**admin.powerplatform.microsoft.com**](https://admin.powerplatform.microsoft.com) > **Resources** > **Dynamics 365 Apps** and select Dynamics 365 Customer Insights or Dynamics 365 Marketing.
+1. Select the three dots dropdown ("**...**") then select **Manage**.
+1. To reinstall the services, find the environment you are working on and select **Install** for Customer Insights - Journeys.
+1. If you had outbound marketing installed on the source of the copy, you will see an option to **Enable** in **Settings** > **Versions**. Re-enable outbound marketing to match the target.
+
+# Copy or restore environments
 
 [!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
@@ -83,7 +92,7 @@ Because Customer Insights - Journeys is more complex than most Dynamics 365 apps
 
 ### Step 1: Prepare your source environment
 
-The _source environment_ is the Customer Insights - Journeys environment you are copying _from_. To prepare your source environment for copying, [Open the Power Platform admin center](power-platform-admin-center.md) and make sure that the Customer Insights - Journeys application and its related solutions are all up to date on your source environment, as described in [Keep Customer Insights - Journeys up to date](apply-updates.md).
+The _source environment_ is the Customer Insights - Journeys environment you are copying _from_. To prepare your source environment for copying, [Open the installation management area](uninstall.md) and make sure that the Customer Insights - Journeys application and its related solutions are all up to date on your source environment, as described in [Keep Customer Insights - Journeys up to date](apply-updates.md).
 
 ### Step 2: Prepare your target environment
 
@@ -140,7 +149,7 @@ For more information about how to backup marketing-services data to blob storage
 
 You can create an on-demand backup at any time, but when Customer Insights - Journeys is installed on your source environment, you must take a few extra precautions by using the following procedure:
 
-1. [Open the Power Platform admin center](power-platform-admin-center.md) and make sure that the Customer Insights - Journeys application and its related solutions are all up to date on your source environment, as described in [Keep Customer Insights - Journeys up to date](apply-updates.md).
+1. [Open the installation management area](uninstall.md) and make sure that the Customer Insights - Journeys application and its related solutions are all up to date on your source environment, as described in [Keep Customer Insights - Journeys up to date](apply-updates.md).
 1. Create the on-demand backup as usual, as described in [Backup and restore environments](/power-platform/admin/backup-restore-environments).
 
     ![Create an on-demand backup.](media/instances-backup.png "Create an on-demand backup")

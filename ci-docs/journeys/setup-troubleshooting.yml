@@ -183,7 +183,7 @@ sections:
           
           To restart your portal:
           
-          1. [Open the Power Platform admin center](power-platform-admin-center.md) and go to **Resources** > **Portals** on the left navigation pane.
+          1. [Open the installation management area](uninstall.md) and go to **Resources** > **Portals** on the left navigation pane.
           
           2. Each configured portal app is listed using the name of the Dynamics 365 instance it is assigned to (so it probably doesn't have "portal" in its name), and shows a value of **Configured** in the **Status** column. Find and select your portal in the list and then select **Manage** in top navigation ribbon.  
           
@@ -203,7 +203,7 @@ sections:
         answer: |
           The Power Platform admin center enables you to change the  name of any of your instances at any time. If you do so, then the URL for the affected instance will also change to match and, as a result, your portal will no longer be configured correctly and will stop working. To fix it, you must reconfigure your portal as follows:
           
-          1. [Open the Power Platform admin center](power-platform-admin-center.md) and go to **Resources** > **Portals** on the left navigation pane.
+          1. [Open the installation management area](uninstall.md) and go to **Resources** > **Portals** on the left navigation pane.
           
           2. Each configured portal app is listed using the name of the Dynamics 365 instance it is assigned to (so it probably doesn't have "portal" in its name), and shows a value of **Configured** in the **Status** column. Find and select your portal in the list and then select **Manage** top ribbon.  
           
@@ -223,7 +223,7 @@ sections:
         answer: |
           If you don't see the **Survey** tile in the **Toolbox** of your [customer journey designer](customer-journeys-create-automated-campaigns.md), or if it isn't working properly, then the Customer Insights - Journeys setup wizard might have failed to set up the Dynamics 365 Customer Voice app correctly. If this was the only error that occurred during installation, then you might not have received any messages about it. To fix this, do the following:
           
-          1. [Open the Power Platform admin center](power-platform-admin-center.md).
+          1. [Open the installation management area](uninstall.md).
           
           1. Go to **Resources** > **Dynamics 365 apps** on the left navigation pane, select any **Dynamics 365 Customer Voice** application in the applications list, and then select the **Install** button on the top ribbon.
           
