@@ -18,7 +18,7 @@ search.audienceType:
 You can remove Customer Insights from any Dynamics 365 instance where it's installed. After removing it, you'll end up with a Customer Insights license that you can use on another Dynamics 365 instance, if desired.
 
 > [!IMPORTANT]
-> The uninstall process detailed below *does not* remove all Customer Insights - Journeys-related solutions from your instance. To remove all Customer Insights - Journeys-related solutions, you must follow the process below then manually delete the solutions in the order listed in [Solution uninstall order for removing Customer Insights - Journeys](#uninstall.md#solution-uninstall-order-for-removing-customer-insights---journeys).
+> The uninstall process detailed below *does not* remove all Customer Insights - Journeys-related solutions from your instance. To remove all Customer Insights - Journeys-related solutions, you must follow the process below then manually delete the solutions in the order listed in [Solution uninstall order for removing Customer Insights - Journeys](uninstall.md#solution-uninstall-order-for-removing-customer-insights---journeys).
 
 ## Uninstall Customer Insights - Journeys services
 

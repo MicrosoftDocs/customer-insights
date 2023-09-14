@@ -1,7 +1,7 @@
 ---
 title: Integrate Dynamics 365 Customer Insights - Journeys with a CMS system, Dynamics 365 Portals, or Power Apps portals
 description: Learn how you can run interactive marketing features for Dynamics 365 Customer Insights - Journeys by using an integrated Dynamics 365 Portal or by using your own website or CMS system.
-ms.date: 08/21/2023
+ms.date: 09/13/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -66,7 +66,7 @@ You can use portal features in parallel with website/CMS features provided you h
 > 1. Navigate to the [Power Apps portals admin center](/powerapps/maker/portals/admin/admin-overview).
 > 2. Go to the [Portal Details](/powerapps/maker/portals/admin/admin-overview#add-yourself-as-an-owner-of-the-azure-ad-application) section and check if the portals license is in an expired state.
 >
-> If the portals integration is expired, you will need to [purchase a paid license](/powerapps/maker/portals/admin/admin-overview#add-yourself-as-an-owner-of-the-azure-ad-application). You will then need to [reset the portals integration](uninstall.md#reset-any-power-apps-portals-connected-to-the-uninstalled-customer-insights---journeys-app) on the Customer Insights - Journeys instance and re-provision.
+> If the portals integration is expired, you will need to [purchase a paid license](/powerapps/maker/portals/admin/admin-overview#add-yourself-as-an-owner-of-the-azure-ad-application). You will then need to [reset the portals integration](uninstall.md#reset-any-power-apps-portals-connected-to-the-uninstalled-customer-insights---journeys-app-outbound-marketing-only) on the Customer Insights - Journeys instance and re-provision.
 
 ## Remove portal integration from an existing Customer Insights - Journeys instance
 
@@ -82,9 +82,6 @@ Before removing the portal, you should recreate your landing pages and subscript
 To remove portal integration from an existing Customer Insights - Journeys instance:
 
 1. [Launch the Customer Insights - Journeys setup wizard](re-run-setup.md) for the instance you want to modify. You should be able to see that the **Use Dynamics 365 Portals or a Power Apps portal** option is currently selected.
-
-    > [!div class="mx-imgBorder"]
-    > ![Setup wizard for an existing instance with portal integration.](media/fre-re-run3.png)
 
 1. From the **Other actions** panel, choose **Configure your portal**.
 
