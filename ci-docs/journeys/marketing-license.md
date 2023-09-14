@@ -42,6 +42,6 @@ To determine how much capacity you need, consider the following:
 
 ## Next steps
 
-After you've purchased your Dynamics 365 Customer Insights license, you'll need to start setting it up. Learn more in the [purchase and set up Dynamics 365 Customer Insights](purchase-setup.md) article.
+After you've purchased your Dynamics 365 Customer Insights license, you'll need to start setting it up. Learn more in the [purchase and set up Dynamics 365 Customer Insights](purchase.md) article.
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

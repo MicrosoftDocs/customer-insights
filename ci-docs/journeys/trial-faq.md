@@ -12,9 +12,9 @@ search.audienceType:
   - enduser
 ---
 
-# Dynamics 365 Customer Insights trial FAQ
+# Dynamics 365 Customer Insights - Journeys trial FAQ
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!NOTE]
 > For the Customer Insights trial, you'll need to use an account that is managed by [Microsoft Azure Active Directory](https://azure.microsoft.com/services/active-directory/). If you cannot sign up for Customer Insights using a work or school email address, sign up for a [free Office 365 E5 trial](https://www.microsoft.com/microsoft-365/enterprise/office-365-e5), then use the email address associated with your Office 365 E5 trial to sign up for the Customer Insights trial.
@@ -41,7 +41,7 @@ However, there are a few key differences from the production version:
 - Each Customer Insights trial comes pre-installed on a dedicated trial instance included with the trial. You can't install a Customer Insights trial on an existing instance.
 - Customer Insights - Journeys trials can't be integrated with a Power Apps portal. Instead, they provide a special mechanism that lets you try out landing pages, forms, the event website, and other interactive features without requiring a Power Apps portal or external CMS system. More information: [Integrate Customer Insights - Journeys with a CMS system or Power Apps portal](portal-optional.md).
 - You can't uninstall or reinstall trials using the standard tools provided by the Power Platform admin center. Trials are special and are handled differently than production instances.
-- You don't need to run the [setup wizard](purchase-setup.md) when setting up a trial.
+- You don't need to run the [setup wizard](purchase.md) when setting up a trial.
 
 ### How long does the trial last?
 
@@ -74,6 +74,6 @@ This isn't possible today. Trial licenses only work on trial-type environments i
 
 ## Trial platform FAQ
 
-[!INCLUDE[trial-faq-platform](../shared/trials/trial-faq-platform.md)]
+[!INCLUDE[trial-faq-platform](./includes/trial-faq-platform.md)]
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]
