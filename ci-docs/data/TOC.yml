@@ -399,5 +399,7 @@
         href: /training/modules/configure-third-party-connections/
       - name: Administer Customer Insights - Data
         href: /training/modules/administer-customer-data-platform/
+  - name: Removed/deprecated features
+    href: removed-deprecated-features-customer-insights.md
   - name: Get support
     href: /power-platform/admin/get-help-support
