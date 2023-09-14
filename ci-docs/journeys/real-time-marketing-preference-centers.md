@@ -42,6 +42,12 @@ In addition, you can add content and update the branding and styling of the page
 > [!NOTE]
 > Customer Insights - Journeys preference centers will update the contact point consent record for the email and phone number channels. It will not make updates to the **DoNotEmail** and **DoNotBulkEmail** fields on the contact or lead record. This is because there is no mapping between Customer Insights - Journeys purposes and topics to the fields on the contact or lead.
 
+## Advanced preference center customization
+Preference center forms are built on top of Customer Insights - Journeys forms which enable you to customize the forms by applying your own CSS and add custom JavaScript.
+
+Learn more: [Manage Customer Insights - Journeys forms](real-time-marketing-manage-forms.md#advanced-form-customization)
+
+
 ## Replacing a preference page with a preference center
 > [!IMPORTANT]
 > Preference pages have been deprecated and may not be available in the future. We recommend replacing preference pages with the more flexible preference center.
