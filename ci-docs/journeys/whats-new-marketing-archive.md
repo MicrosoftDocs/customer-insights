@@ -1400,7 +1400,7 @@ The Dynamics 365 Customer Insights - Journeys March 2021 early access release in
 | Customer Insights - Journeys        | 1.35.10070.1097 | 1.35.10070.2097 |
 
 > [!Tip]
-> To check your current version number, refer to [Find out which version of Dynamics 365 Customer Insights - Journeys you are running](./apply-updates.md#find-out-which-version-of-dynamics-365-customer-insights---journeys-you-are-running).
+> To check your current version number, refer to [Find out which version of Dynamics 365 Customer Insights - Journeys you are running](./apply-updates.md#find-out-which-version-of-customer-insights---journeys-you-are-running).
 
 #### Early access features
 
@@ -1467,7 +1467,7 @@ Dynamics 365 Customer Insights - Journeys 2021 release wave 1 early access inclu
 | Customer Insights - Journeys        | 1.35.10069.1058 | 1.35.10069.2058 |
 
 > [!Tip]
-> To check your current version number, refer to [Find out which version of Dynamics 365 Customer Insights - Journeys you are running](./apply-updates.md#find-out-which-version-of-dynamics-365-customer-insights---journeys-you-are-running).
+> To check your current version number, refer to [Find out which version of Dynamics 365 Customer Insights - Journeys you are running](./apply-updates.md#find-out-which-version-of-customer-insights---journeys-you-are-running).
 
 #### Early access features
 
@@ -1554,7 +1554,7 @@ The Dynamics 365 Customer Insights - Journeys December 2020 update includes impr
 | Customer Insights - Journeys        | 1.35.10068.1056 |
 
 > [!Tip]
-> To check your current version number, refer to [Find out which version of Dynamics 365 Customer Insights - Journeys you are running](./apply-updates.md#find-out-which-version-of-dynamics-365-customer-insights---journeys-you-are-running).
+> To check your current version number, refer to [Find out which version of Dynamics 365 Customer Insights - Journeys you are running](./apply-updates.md#find-out-which-version-of-customer-insights---journeys-you-are-running).
 
 #### Monthly enhancements
 
@@ -1620,7 +1620,7 @@ The Dynamics 365 Customer Insights - Journeys November 2020 update includes seve
 | Customer Insights - Journeys        | 1.35.10067.1044 |
 
 > [!Tip]
-> To check your current version number, refer to [Find out which version of Dynamics 365 Customer Insights - Journeys you are running](./apply-updates.md#find-out-which-version-of-dynamics-365-customer-insights---journeys-you-are-running).
+> To check your current version number, refer to [Find out which version of Dynamics 365 Customer Insights - Journeys you are running](./apply-updates.md#find-out-which-version-of-customer-insights---journeys-you-are-running).
 
 #### Monthly enhancements
 
@@ -1685,7 +1685,7 @@ The Dynamics 365 Customer Insights - Journeys October 2020 update includes sever
 | Customer Insights - Journeys        | 1.35.10066.1057 |
 
 > [!Tip]
-> To check your current version number, refer to [Find out which version of Dynamics 365 Customer Insights - Journeys you are running](./apply-updates.md#find-out-which-version-of-dynamics-365-customer-insights---journeys-you-are-running).
+> To check your current version number, refer to [Find out which version of Dynamics 365 Customer Insights - Journeys you are running](./apply-updates.md#find-out-which-version-of-customer-insights---journeys-you-are-running).
 
 #### General availability enhancements
 
@@ -1766,7 +1766,7 @@ The September update includes email designer enhancements, social posting improv
 | Customer Insights - Journeys        | 1.35.10065.1064 | 1.35.10065.2064 |
 
 > [!Tip]
-> To check your current version number, refer to [Find out which version of Dynamics 365 Customer Insights - Journeys you are running](./apply-updates.md#find-out-which-version-of-dynamics-365-customer-insights---journeys-you-are-running).
+> To check your current version number, refer to [Find out which version of Dynamics 365 Customer Insights - Journeys you are running](./apply-updates.md#find-out-which-version-of-customer-insights---journeys-you-are-running).
 
 #### Early access features
 
@@ -1839,7 +1839,7 @@ The August update includes a preview of built-in Teams functionality for events,
 | Customer Insights - Journeys        | 1.35.10064.1061 | 1.35.10064.2061 |
 
 > [!Tip]
-> To check your current version number, refer to [Find out which version of Dynamics 365 Customer Insights - Journeys you are running](./apply-updates.md#find-out-which-version-of-dynamics-365-customer-insights---journeys-you-are-running).
+> To check your current version number, refer to [Find out which version of Dynamics 365 Customer Insights - Journeys you are running](./apply-updates.md#find-out-which-version-of-customer-insights---journeys-you-are-running).
 
 #### Early access features
 
@@ -1929,7 +1929,7 @@ The Dynamics 365 Customer Insights - Journeys July 2020 update includes several 
 | Customer Insights - Journeys        | 1.35.10063.1039 |
 
 > [!Tip]
-> To check your current version number, refer to [Find out which version of Dynamics 365 Customer Insights - Journeys you are running](./apply-updates.md#find-out-which-version-of-dynamics-365-customer-insights---journeys-you-are-running).
+> To check your current version number, refer to [Find out which version of Dynamics 365 Customer Insights - Journeys you are running](./apply-updates.md#find-out-which-version-of-customer-insights---journeys-you-are-running).
 
 #### Monthly enhancements
 
@@ -2003,7 +2003,7 @@ The Dynamics 365 Customer Insights - Journeys June 2020 update includes several 
 | Customer Insights - Journeys        | 1.35.10062.1050 |
 
 > [!Tip]
-> To check your current version number, refer to [Find out which version of Dynamics 365 Customer Insights - Journeys you are running](./apply-updates.md#find-out-which-version-of-dynamics-365-customer-insights---journeys-you-are-running).
+> To check your current version number, refer to [Find out which version of Dynamics 365 Customer Insights - Journeys you are running](./apply-updates.md#find-out-which-version-of-customer-insights---journeys-you-are-running).
 
 #### Monthly enhancements
 
@@ -2062,7 +2062,7 @@ The Dynamics 365 Customer Insights - Journeys May 2020 update includes several e
 | Customer Insights - Journeys        | 1.35.10061.1037 |
 
 > [!Tip]
-> To check your current version number, refer to [Find out which version of Dynamics 365 Customer Insights - Journeys you are running](./apply-updates.md#find-out-which-version-of-dynamics-365-customer-insights---journeys-you-are-running). 
+> To check your current version number, refer to [Find out which version of Dynamics 365 Customer Insights - Journeys you are running](./apply-updates.md#find-out-which-version-of-customer-insights---journeys-you-are-running). 
 
 #### Monthly enhancements
 
@@ -2110,7 +2110,7 @@ The Dynamics 365 Customer Insights - Journeys April 2020 update includes several
 | Customer Insights - Journeys        | 1.35.10060.1066 |
 
 > [!Tip]
-> To check your current version number, refer to [Find out which version of Dynamics 365 Customer Insights - Journeys you are running](./apply-updates.md#find-out-which-version-of-dynamics-365-customer-insights---journeys-you-are-running).
+> To check your current version number, refer to [Find out which version of Dynamics 365 Customer Insights - Journeys you are running](./apply-updates.md#find-out-which-version-of-customer-insights---journeys-you-are-running).
 
 #### General availability enhancements
 
@@ -2199,7 +2199,7 @@ The Dynamics 365 Customer Insights - Journeys March 2020 update includes several
 | Customer Insights - Journeys        | 1.35.10059.1039 | 1.35.10059.2039 |
 
 > [!Tip]
-> To check your current version number, refer to [Find out which version of Dynamics 365 Customer Insights - Journeys you are running](./apply-updates.md#find-out-which-version-of-dynamics-365-customer-insights---journeys-you-are-running).
+> To check your current version number, refer to [Find out which version of Dynamics 365 Customer Insights - Journeys you are running](./apply-updates.md#find-out-which-version-of-customer-insights---journeys-you-are-running).
 
 #### Preview features
 
@@ -2252,7 +2252,7 @@ The Dynamics 365 Customer Insights - Journeys February 2020 update includes an i
 | Customer Insights - Journeys        | 1.35.10058.1075 | 1.35.10058.2083 |
 
 > [!Tip]
-> To check your current version number, refer to [Find out which version of Dynamics 365 Customer Insights - Journeys you are running](./apply-updates.md#find-out-which-version-of-dynamics-365-customer-insights---journeys-you-are-running).
+> To check your current version number, refer to [Find out which version of Dynamics 365 Customer Insights - Journeys you are running](./apply-updates.md#find-out-which-version-of-customer-insights---journeys-you-are-running).
 
 #### Early access features
 
