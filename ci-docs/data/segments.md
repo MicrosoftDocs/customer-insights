@@ -40,7 +40,7 @@ Select next to a segment to view available actions.
 
 - [**View**](#view-segment-details) the segment details, including member count trend and a preview of segment members.
 - **Download** the list of members as a CSV file for one or more segments.
-- **Edit** the segment to change its properties.
+- **Edit** the segment to change its properties or [view segment member counts](#view-segment-member-counts-preview) for each rule.
 - **Create duplicate** of a segment. You can choose to edit its properties right away or save the duplicate.
 - **Refresh** one or more segments manually to include the latest data. The **Last refreshed** column shows a timestamp of the last successful refresh. If an error occurs, select the error to see details about what happened.
 - **Activate** or **Deactivate** one or more segments. For multiple segments, select **Change state**. Inactive segments won't get refreshed during a [scheduled refresh](segments-schedule.md) and have the **Status** listed as **Skipped**, indicating that a refresh wasn't even attempted. Active segments are refreshed based on their type: static or dynamic and their [schedule](segments-schedule.md).
@@ -79,6 +79,35 @@ The lower part contains a list of the segment members.
 > Fields that appear in this list are based on the attributes of your segment's tables.
 >
 > The list is a preview of the matching segment members and shows the first 100 records of your segment so that you can quickly evaluate it and review its definitions if needed. To see all matching records, select **See more** which opens the [**Tables**](tables.md) page or [export the segment](export-destinations.md).
+
+## View segment member counts (preview)
+
+[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
+
+View the number of members based on each rule or combination of rules in a segment. The number of members can help you determine if the rules are meeting your expectations.
+
+[!INCLUDE [public-preview-note](includes/public-preview-note.md)]
+
+1. On the **Segments** page, find the segment you want to view and select **Edit**.
+
+1. Turn on **Inspection mode**.
+
+1. Save the segment.
+
+1. Run or refresh the segment. After the refresh completes, segment member counts display.
+
+> [!TIP]
+> While editing a segment, the rules show the old value for the member count until you save the updated segment. Once save, the values are reset to zero. After refreshing it, the updates values show on the rules.
+
+The following image shows the different member counts.
+
+:::image type="content" source="media/segment-count.svg" alt-text="Example of segment member count.":::
+
+1. The number of members at the top of the page shows the number of customers for the segment after all rules are calculated.
+
+1. Each rule shows the number of customers based on that rule, its subrules, and its conditions.
+
+1. If you hover over the member count for each rule, a tooltip displays. The tooltip shows the number of customers based on that rule and all previous rules. For example, the Rule 2 tooltip shows the union or combined count of Rule 1 and Rule 2. The Rule 3 tooltip shows the combined count of Rule 1 and Rule 2 and the intersection of Rule 3.
 
 ## Export segments
 
