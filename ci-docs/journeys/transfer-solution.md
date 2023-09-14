@@ -17,7 +17,7 @@ search.audienceType:
 
 Dynamics 365 is highly customizable. You can use its online tools to modify or create fields, entities, business processes, and more. Usually, you'll do your customization work on a sandbox environment, test them, and then transfer the final customizations to your production environments when they're ready. Best practices recommend that you proceed as follows:
 
-1. [Create a copy](copy-or-restore.md#copy-to-sandbox) of your current production environment onto a sandbox environment where you can work without affecting your ongoing operations.
+1. [Create a copy](copy-or-restore.md#copy-a-customer-insights---journeys-environment-to-another-environment) of your current production environment onto a sandbox environment where you can work without affecting your ongoing operations.
 1. [Create a new managed solution](/powerapps/maker/common-data-service/create-solution) on the sandbox and implement your customizations there. This lets you add customizations without affecting the underlying system, and you can revert your customizations at any time by removing the solution.
 1. Test the customized solution on your sandbox until you've confirmed it's working correctly.
 1. [Export](/powerapps/maker/common-data-service/import-update-export-solutions) the custom solution from your sandbox and then [Import](/powerapps/maker/common-data-service/import-update-export-solutions) it on your production environment.

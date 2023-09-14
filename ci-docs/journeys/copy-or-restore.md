@@ -75,7 +75,7 @@ Because Customer Insights - Journeys is more complex than most Dynamics 365 apps
 > Your copied environment requires its own Customer Insights - Journeys license. If the target environment already has Customer Insights - Journeys installed, the copy will automatically take over that license (you don't have to do anything). If the target environment doesn't have Customer Insights - Journeys installed, we recommend that you have an unused Customer Insights - Journeys license for your tenant before you start the copy, and purchase one if you don't. If you don't have a Customer Insights - Journeys license available before copying, the copy will end in a *disconnected state*, which means that many key features won't work (relevant error messages will be shown). In this case, you can purchase a new Customer Insights - Journeys license and [use the installation management experience](setup.md) to apply it to your new copy.
 
 > [!NOTE]
-> If you are copying to a support environment, see [Copy a production environment to a support environment](#support-copy) for instructions. For all other types of copies, continue reading here.
+> If you are copying to a support environment, see [Copy a production environment to a support environment](copy-or-restore.md#copy-a-production-environment-to-a-support-environment) for instructions. For all other types of copies, continue reading here.
 
 ### Step 1: Prepare your source environment
 
@@ -86,7 +86,7 @@ The _source environment_ is the Customer Insights - Journeys environment you are
 The _target environment_ is the environment you are copying _to_. As with the source environment, you must prepare the target environment before you copy _if Customer Insights - Journeys is installed on the source environment, the target environment, or both_.
 
 > [!NOTE]
-> The target environment will almost always be a sandbox environment because copying to a production environment isn't supported (but you can easily [convert a sandbox into a production environment](#switch-sandbox-prod) after copying, if you wish). You must already have the target environment available on your tenant. You will be able to see it on the **Environments** page of the Power Platform admin center. If you don't have one, please  [contact Microsoft Support](/power-platform/admin/get-help-support) for assistance.
+> The target environment will almost always be a sandbox environment because copying to a production environment isn't supported (but you can easily [convert a sandbox into a production environment](copy-or-restore.md#switch-an-environment-between-sandbox-and-production-status) after copying, if you wish). You must already have the target environment available on your tenant. You will be able to see it on the **Environments** page of the Power Platform admin center. If you don't have one, please  [contact Microsoft Support](/power-platform/admin/get-help-support) for assistance.
 
 To prepare your target environment, do the following _before_ starting the copy:
 
@@ -100,7 +100,7 @@ To prepare your target environment, do the following _before_ starting the copy:
 
 Once your source and target environments are prepared, you're ready to make the copy following the procedure described in [Copy an environment](/power-platform/admin/copy-environment).
 
-Pay special attention when choosing whether to create an [Everything or Customizations and schemas only copy](#target-content).
+Pay special attention when choosing whether to create an [Everything or Customizations and schemas only copy](copy-or-restore.md-content-of-the-target-environment-after-a-copy-or-restore).
 
 ![Select the copy type.](media/instances-everything-schemas.png "Select the copy type")
 
@@ -123,7 +123,7 @@ After creating your copy, you must complete the following steps:
 As with copy operations, backup and restore operations typically require a few extra steps when Customer Insights - Journeys is installed.
 
 > [!IMPORTANT]
-> Backups **do not** include Customer Insights - Journeys services or the data they contain. When you restore a backup, all organizational data, solutions, apps, and customizations will be present, but no interaction data, insights, or previously uploaded files will be available on the restored system. The situation is similar to that of [copying a Customer Insights - Journeys environment](#copy-to-sandbox).
+> Backups **do not** include Customer Insights - Journeys services or the data they contain. When you restore a backup, all organizational data, solutions, apps, and customizations will be present, but no interaction data, insights, or previously uploaded files will be available on the restored system. The situation is similar to that of copying a Customer Insights - Journeys environment.
 
 > [!WARNING]
 > If you restore data in Customer Insights - Journeys, all consents will return to the state they were in at the time backup was made. This may result in consent data being obsolete. To avoid complications, export all consent data into Excel before starting the restore process and use it as a reference after the restore is completed.
