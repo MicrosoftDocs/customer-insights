@@ -2390,6 +2390,11 @@
       "source_path": "ci-docs/journeys/solution-uninstall-order.md",
       "redirect_url": "/dynamics365/customer-insights/journeys/uninstall",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/marketing-preview-features.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/admin-feature-switches",
+      "redirect_document_id": false
     }
   ]
 }

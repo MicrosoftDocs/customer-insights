@@ -20,7 +20,7 @@ This document provides important, late-breaking information about known issues a
 ## Configuration, installation, and first-run experience
 
 - The setup process can take up to two hours. The process might restart automatically during this time, which can result in multiple success (or failure) notifications being sent to you by email.
-- Although the licensing agreement doesn't require it, a known technical issue currently prevents you from running the setup wizard unless you have a Dynamics 365 license with the _System Administrator_ security role assigned on your target Dynamics 365 instance. <!--- 1183223 -->
+- Although the licensing agreement doesn't require it, a known technical issue currently prevents you from running the installation management area unless you have a Dynamics 365 license with the _System Administrator_ security role assigned on your target Dynamics 365 instance. <!--- 1183223 -->
 - Some language strings in the email designer and customer journey designer aren't available in all languages. <!--- 1912019 --> <!--- 1843911 -->
 - When an entitlement is changed, the updated working entitlement will sometimes display as "NotConfigured", and the broken entitlement will display as "Configured" in the Admin UI. You may get this fixed by raising a support request. <!--- 1884488 -->
 - When a portal is expired, the **Configure your portal** item under **Other actions** links to the old portal. <!--- 1804106 -->
