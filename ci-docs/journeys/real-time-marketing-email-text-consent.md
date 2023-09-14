@@ -11,7 +11,7 @@ search.audienceType:
   - enduser
 ---
 
-# Manage consent for email and text messages in Customer Insights - Journeys
+# Manage consent for email, SMS (text) and custom channel messages in Customer Insights - Journeys
 
 [!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
@@ -45,9 +45,9 @@ The presence of a company address and unsubscribe link is checked when you selec
 
 If you want to send commercial email, the app checks whether the email addresses of the target audience have granted consent when the email is sent. In the restrictive model, messages only send to customers whose email addresses were opted in. By default, the transactional message purpose has a **Disabled** enforcement model, meaning that consent checks won't run against contact points. The enforcement model can be changed in the compliance profile itself.
 
-## How consent is respected for text messages
+## How consent is respected for SMS (text) and custom channel messages
 
-The Customer Insights - Journeys rules for sending text messages are slightly different than the rules for sending emails. A user must always opt in to consent to receive commercial text messages, irrespective of the consent enforcement model. Transactional text messages are always sent and don't have consent checked or enforced.
+The Customer Insights - Journeys rules for sending SMS and custom channel messages are slightly different than the rules for sending emails. A user must always opt in to consent to receive commercial SMS or commercial custom channel messages, irrespective of the consent enforcement model. Transactional SMS and custom channel messages are always sent and don't have consent checked or enforced.
 
 ## Consent to track user behavior
 
