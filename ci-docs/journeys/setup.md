@@ -55,7 +55,7 @@ You can have any number of Customer Insights apps available on your tenant. Init
 After purchasing your Customer Insights license, you'll have an unconfigured Customer Insights app available on your tenant, but you still need to set it up for use.
 
 > [!TIP]
-> If you have not installed other apps on the [Microsoft Power Platform admin center](/power-platform/admin/), you'll need to create an environment before you can  use the installation management area. Learn more: [Create and manage environments in the Power Platform admin center](/power-platform/admin/create-environment).
+> If you have not installed other apps on the [Microsoft Power Platform admin center](/power-platform/admin/), you'll need to create an environment before you can use the installation management area. Learn more: [Create and manage environments in the Power Platform admin center](/power-platform/admin/create-environment).
 
 To set up a new Customer Insights environment:
 
