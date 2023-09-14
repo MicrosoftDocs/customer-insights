@@ -1,7 +1,7 @@
 ---
 title: Create Customer Insights - Journeys forms
 description: Create forms in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/22/2023
+ms.date: 09/13/2023
 ms.topic: article
 author: petrjantac
 ms.author: alfergus
@@ -60,10 +60,10 @@ To create a new form, go to **Customer Insights - Journeys** > **Channels** > **
     > [!div class="mx-imgBorder"]
     > ![Change the field label.](media/real-time-marketing-form-last-name-title.png)
 
-1. **Style your form fields** in [Theme](real-time-marketing-manage-forms.md#style-your-forms-using-Theme) section. Select the Brush icon in the right pane. Once you set style for your input field using Theme, it will apply on all input fields in your form.
+1. **Style your form fields** in the [**Theme**](real-time-marketing-manage-forms.md#style-your-forms-using-theme) section. To access the Theme section, select the brush icon on the right pane. Once you set a style for your input field using the Theme section, it will apply on all input fields in your form.
 
     > [!div class="mx-imgBorder"]
-    > ![Edit style of your input field using Theme.](media/real-time-marketing-form-theme.png)
+    > ![Edit style of your input field using theme.](media/real-time-marketing-form-theme.png)
 
 1. If you want to build more complex forms, you can change the layout of your form to multi-column and create multiple layout sections. Select the **Elements** section on the right pane. Now you can drag and drop a column layout on form canvas to create a new section. You can add elements and fields to the newly created sections.
 
@@ -93,7 +93,7 @@ To create a new form, go to **Customer Insights - Journeys** > **Channels** > **
     Adding purpose and topics consent elements creates contact point consent records for the chosen channels, email, and text.
 
     > [!NOTE]
-    > Customers may need to remove and re-add consent elements to forms created prior to August 2023 due to underlying changes with the consent entities. This has no impact on consent captured by existing forms and simply updates the form to reflect the revised consent entities.
+    > You may need to remove and re-add consent elements to forms created prior to August 2023 due to underlying changes with the consent entities. This has no impact on consent captured by existing forms and simply updates the form to reflect the revised consent entities.
 
 1. Now it's time to preview your for to check the responsiveness. To open the form preview, select the **Preview and test** tab. You can select various platforms to check how the form renders on a mobile device or a tablet.
 

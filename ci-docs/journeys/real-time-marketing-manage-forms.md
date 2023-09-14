@@ -1,7 +1,7 @@
 ---
 title: Manage Customer Insights - Journeys forms
 description: Learn how to manage forms in Dynamics 365 Customer Insights - Journeys.
-ms.date: 05/11/2023
+ms.date: 09/13/2023
 ms.custom: 
   - dyn365-marketing
 ms.topic: article
@@ -58,10 +58,13 @@ The Theme section can be opened by selecting brush icon in the right pane. Theme
 
 ### Theme assistant
 
-Theme assistant is a Copilot feature in Customer Insights - Journeys. You can use the Theme assistant to fetch styles from your existing website that you control. Enter the website URL and select Fetch styles. This process may take up to few minutes. You can continue your work and return back later to check the result. Once the assistant fetches the styles from your website, it applies these styles on Theme of your form.
+> [!IMPORTANT]
+> You must only use the theme assistant with websites that you own and operate. The theme assistant should not be used to copy third party websites.
+
+The theme assistant is a Copilot feature in Customer Insights - Journeys. You can use the theme assistant to fetch styles from an existing website that you own and control. To use a theme, enter the website URL and select **Fetch styles**. This process may take a few minutes. You can continue your work and return back later to check the result. Once the assistant fetches the styles from your website, it applies the styles to the theme of your form.
 
 > [!div class="mx-imgBorder"]
-> ![Fetch styles from your website using copilot.](media/real-time-marketing-form-theme-copilot.png)
+> ![Fetch styles from your website using Copilot.](media/real-time-marketing-form-theme-copilot.png)
 
 ## Form settings
 
