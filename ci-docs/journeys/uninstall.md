@@ -42,8 +42,6 @@ To run the uninstall process:
 
 1. The uninstall process takes place and updates the environment when it's complete.
 
-<a name="reset-portal"></a>
-
 ## Reset any Power Apps portals connected to the uninstalled Customer Insights - Journeys app (outbound marketing only)
 
 If the outbound environment in the Customer Insights - Journeys instance that you are uninstalling was connected to a Power Apps portal (for example to run marketing pages or the events website), then you need to reset the portal to release its license. After the reset, the portal still shows as configured in the Power Platform admin center, but you'll be able to select it when you use the installation management area to set up a new, copied, or restored instance.
