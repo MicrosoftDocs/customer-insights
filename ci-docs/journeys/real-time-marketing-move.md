@@ -47,7 +47,7 @@ Learn about making the move from outbound to Customer Insights - Journeys in the
 
 On September 1, 2023, Dynamics 365 Customer Insights - Journeys transitioned to focus on real-time marketing features only. To support this transition, in early August 2023, provisioning of new instances changed in the following ways:
 - *New customers* no longer receive the outbound marketing module when they provision the Customer Insights - Journeys app. New customers will need to contact support to add outbound marketing features.
-- *Existing customers* also see the same provisioning change, but are able to add outbound marketing features themselves using a self-serve interface available on the **Settings** > **Versions** page.
+- *Existing customers* also see the same provisioning change, but are able to add outbound marketing features themselves using a self-serve interface available on the **Settings** > **Versions** page in the Customer Insights - Journeys app.
 
 > [!div class="mx-imgBorder"]
 > ![Customer Insights - Journeys transition comparison.](media/real-time-marketing-transition-graphic.png "Customer Insights - Journeys transition comparison")

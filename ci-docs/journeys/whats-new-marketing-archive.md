@@ -637,7 +637,7 @@ The update also includes monthly enhancements to journeys, domain authentication
 ##### Real-time marketing
 
 - **Journeys**
-    - The triggers page now works in [Solution Only mode](purchase.md#solution-only-app).
+    - The triggers page now works in Solution Only mode.
     - Out-of-the-box triggers allow you to launch journeys for marketing events without the need to create custom triggers.
 
 - **Marketing emails**
