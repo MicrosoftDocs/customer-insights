@@ -1,7 +1,7 @@
 ---
 title: Install and manage Customer Insights
 description: How to install, uninstall, and manage Dynamics 365 Customer Insights environments.
-ms.date: 09/13/2023 
+ms.date: 09/15/2023 
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -24,8 +24,7 @@ All of your Dataverse environments are listed in the installation management are
 To install Customer Insights, you must meet all the following requirements:
 
 - You must already have a Microsoft 365 tenant.
-- An unconfigured Customer Insights app must be available on your tenant.
-- You must not already have a Customer Insights app installed on your Dynamics 365 environment. You can have at most one Customer Insights app per environment, and each Customer Insights app can only be used with one Dynamics 365 environment.
+- To install the Customer Insights - Journeys or Customer Insights - Data applications, you must have a Dynamics 365 Customer Insights, Dynamics 365 Marketing, or Dynamics 365 Customer Insights – Standalone license on your tenant.
 - You must sign into your tenant with a user account that has all the following:
    - A security role (such as _Global admin_ or [_Service support admin_](/power-platform/admin/use-service-admin-role-manage-tenant)) that allows you to modify the target Dynamics 365 environment. (If you're reinstalling Customer Insights on an environment where Customer Insights was previously installed, then _Service support admin_ users [_Dynamics 365 administrator_ or _Power Platform administrator_] must use the same user ID as was used for the initial install. If you're not sure which ID was used for the initial install, or if you're getting errors, then try to install as a _Global admin_.)
    - Permissions to register applications in Azure. The global administrator always has this right, but other accounts can also have it. See [Do I have permissions to register applications on Azure?](setup-troubleshooting.yml#register-apps-azure) for information about how to confirm this setting for your account.
@@ -46,21 +45,22 @@ If you run into trouble while installing, see the [Administration and setup FAQ]
 
 ## Add Customer Insights to your Microsoft 365 tenant
 
-There are many ways to add one or more Customer Insights apps to your Microsoft 365 tenant. For example, you can purchase it from the [Dynamics 365 Customer Insights overview page](https://dynamics.microsoft.com/marketing/overview/), or by going to **Billing** > **Purchase services** in your Microsoft 365 admin center, or by contacting your Microsoft sales representative or channel partner. On purchasing a license, an unconfigured Customer Insights app will be automatically added to your tenant.
+There are several ways to get a Customer Insights license. You can purchase it from the [Dynamics 365 Customer Insights overview page](https://dynamics.microsoft.com/marketing/overview/), or by going to **Billing** > **Purchase services** in your Microsoft 365 admin center, or by contacting your Microsoft sales representative or channel partner. After purchasing a license, you’ll find it in the Power Platform Admin Center under **Resources** > **Dynamics 365 apps**.
 
 You can have any number of Customer Insights apps available on your tenant. Initially, each of these apps will be unconfigured and unassigned to any Dynamics 365 environment. Later, you'll use the installation management area to assign the app to an environment and configure it.
 
 ## Install, uninstall, or update Customer Insights
 
-After purchasing your Customer Insights license, you'll have an unconfigured Customer Insights app available on your tenant, but you still need to set it up for use.
+After purchasing your Customer Insights license, you can access the installation management page and choose where you want to install Customer Insights – Journeys and Customer Insights – Data.
 
-> [!TIP]
-> If you have not installed other apps on the [Microsoft Power Platform admin center](/power-platform/admin/), you'll need to create an environment before you can use the installation management area. Learn more: [Create and manage environments in the Power Platform admin center](/power-platform/admin/create-environment).
+> [!NOTE]
+> If you own the legacy Dynamics 365 Marketing license, the application installation entitlement from that business model applies, which allows one application installation per license purchased. If you own the new Dynamics 365 Customer Insights license, it entitles you to install the Customer Insights - Journeys and Customer Insights - Data applications each four times on your existing Dataverse environments.
 
 To set up a new Customer Insights environment:
 
-1. Go to [**admin.powerplatform.microsoft.com**](https://admin.powerplatform.microsoft.com). Find the Dynamics 365 apps list in the left-hand site map and select **Resources**.
-    - Whether you have the legacy, standalone Dynamics 365 Customer Insights app or Dynamics 365 Marketing licenses (available to customers who purchased before September 2023) or the new, combined Dynamics 365 Customer Insights license that contains both the journey orchestration and customer data platform applications together in one SKU, you can find them listed in admin.powerplatform.microsoft.com under **Dynamics 365 apps** > **Resources**.
+1.If you have not installed other Dynamics 365 apps on the [Microsoft Power Platform admin center](/power-platform/admin/), go to [**admin.powerplatform.microsoft.com**](https://admin.powerplatform.microsoft.com) to create an environment of the desired type (production, sandbox, developer, or trial). Learn more: [Create and manage environments in the Power Platform admin center](/power-platform/admin/create-environment).
+1. On [**admin.powerplatform.microsoft.com**](https://admin.powerplatform.microsoft.com), find the Dynamics 365 apps list in the left-hand site map and select **Resources**.
+    - Whether you have the legacy, standalone Dynamics 365 Customer Insights app or Dynamics 365 Marketing licenses (available to customers who purchased before September 2023) or the new, combined Dynamics 365 Customer Insights license that entitles you to install both the Customer Insights - Journeys and Customer Insights - Data applications, you can find them listed in admin.powerplatform.microsoft.com under **Dynamics 365 apps** > **Resources**.
 
 1. To open the installation management area, select the three dots dropdown ("**...**") then select **Manage**.
 
