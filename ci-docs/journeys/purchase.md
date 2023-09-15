@@ -25,7 +25,7 @@ This article explains how to purchase a new Customer Insights environment.
 
 To install Customer Insights, you need to first purchase a base license. Which base license you choose depends on whether you already have a qualifying Dynamics 365 application. If you have Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Supply Chain Management, Dynamics 365 Finance, or Dynamics 365 Commerce **with 10 or more users**, you can purchase the reduced price "attach" license. Otherwise, you need to purchase a standard Customer Insights license.
 
-Once you have a core license, you can purchase additional production or non-production instances, as detailed below. You can also purchase additional contact or interaction packs. Learn more: [Dynamics 365 Customer Insights pricing](https://dynamics.microsoft.com/ai/customer-insights/pricing/)
+Once you have a base license, you can purchase add-ons to increase the number of allowed interacted people you are actively engaging or unified people you are unifying and enriching. Learn more: [Dynamics 365 Customer Insights pricing](https://dynamics.microsoft.com/ai/customer-insights/pricing/)
 
 ### Customer Insights licensing options
 
@@ -51,11 +51,13 @@ To determine how much capacity you need, consider the following:
 
 ## Next steps
 
-After you've purchased your Dynamics 365 Customer Insights license, you'll need to start setting it up. Learn more: [Install and manage Dynamics 365 Customer Insights](setup.md)
+After purchasing, go to [Install and manage Dynamics 365 Customer Insights](setup.md) to install the Customer Insights - Journeys and Customer Insights - Data applications on your existing Dataverse environments and get set up.
 
 ## User and portal licensing
 
-Unlike most other model-driven apps in Dynamics 365, Customer Insights isn't priced per user, so users already licensed to access any Dynamics 365 app on an environment where Customer Insights is installed will also be able to access Customer Insights without requiring you to purchase any additional licenses. You can even request any number of free ("zero dollar") Customer Insights user licenses to assign to users that don't have a Dynamics 365 license, but these free user licenses aren't valid for apps other than Customer Insights.
+Dynamics 365 Customer Insights is a tenant-level application that charges for interacted people in the Customer Insights - Journeys app and unified people in the Customer Insights - Data app. There is no charge for users to access and use the application. For customers with existing Dynamics 365 applications, any Azure Active Directory users given the URL to either the Customer Insights - Journeys or Customer Insights - Data applications should be automatically given access. If they are not, there is a $0 user license that can be added to any tenant and used to assign users and force the user sync. The $0 user license can be added to purchase contracts or obtained directly through the Microsoft 365 admin center.
+
+- To add a user license through the Microsoft 365 admin center, go to [https://admin.microsoft.com/#/catalog](https://admin.microsoft.com/#/catalog) and search for "Dynamics 365 Customer Insights User License" under the Dynamics 365 category.
 
 You can choose to run your marketing pages, landing pages, and events website either on an external web server (such as your own CMS system) or on a Dynamics 365 Portal or Power Apps portal running on the same tenant as your Customer Insights environment. Dynamics 365 Portals and Power Apps portals are licensed separately from Customer Insights. For details about portal licensing, see the [Power Apps and Flow licensing FAQ](/power-platform/admin/powerapps-flow-licensing-faq#can-you-share-more-details-regarding-the-new-powerapps-portals-licensing). If you use an external website for your events website and marketing pages, then no portals license is needed. You choose which solution to use when you use the installation management area and can change your mind later by running it again. More information: [Integrate Customer Insights with a CMS system or Power Apps portals](portal-optional.md)
 

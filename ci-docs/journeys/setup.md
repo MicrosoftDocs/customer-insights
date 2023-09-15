@@ -47,7 +47,7 @@ If you run into trouble while installing, see the [Administration and setup FAQ]
 
 There are several ways to get a Customer Insights license. You can purchase it from the [Dynamics 365 Customer Insights overview page](https://dynamics.microsoft.com/marketing/overview/), or by going to **Billing** > **Purchase services** in your Microsoft 365 admin center, or by contacting your Microsoft sales representative or channel partner. After purchasing a license, you’ll find it in the Power Platform Admin Center under **Resources** > **Dynamics 365 apps**.
 
-You can have any number of Customer Insights apps available on your tenant. Initially, each of these apps will be unconfigured and unassigned to any Dynamics 365 environment. Later, you'll use the installation management area to assign the app to an environment and configure it.
+You can have any number of Customer Insights licenses available on your tenant. You can access the installation management experience for any of these licenses in the Power Platform Admin Center under **Resources** > **Dynamics 365 apps**.
 
 ## Install, uninstall, or update Customer Insights
 
