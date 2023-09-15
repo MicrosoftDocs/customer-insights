@@ -1,5 +1,5 @@
 ---
-title: Trial FAQ
+title: Customer Insights - Journeys trial FAQ
 description: Solutions to common questions related to Dynamics 365 Customer Insights trial setup and management. Learn how to resolve platform and app-specific issues.
 ms.date: 09/13/2023
 ms.topic: get-started
@@ -12,7 +12,7 @@ search.audienceType:
   - enduser
 ---
 
-# Dynamics 365 Customer Insights - Journeys trial FAQ
+# Customer Insights - Journeys trial FAQ
 
 [!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 

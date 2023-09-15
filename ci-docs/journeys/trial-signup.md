@@ -1,5 +1,5 @@
 ---
-title: Sign up for a free Dynamics 365 Customer Insights - Journeys trial
+title: Sign up for a free Customer Insights - Journeys trial
 description: Learn how to quickly sign up for and start a free Dynamics 365 Customer Insights - Journeys trial. Explore the app with tours and videos, and find additional learning resources.
 ms.date: 09/15/2023
 ms.topic: get-started
@@ -12,7 +12,7 @@ search.audienceType:
   - enduser
 ---
 
-# Sign up for a free Dynamics 365 Customer Insights - Journeys trial
+# Sign up for a free Customer Insights - Journeys trial
 
 [!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
