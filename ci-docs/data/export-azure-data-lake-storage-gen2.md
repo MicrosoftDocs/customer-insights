@@ -18,7 +18,7 @@ Store your data from Dynamics 365 Customer Insights - Data in a Data Lake Storag
 
 ## Prerequisites
 
-- A [storage account to use with Azure Data Lake Gen2](/azure/storage/blobs/create-data-lake-storage-account). To find the storage account name and key, see [Manage storage account settings in the Azure portal](/azure/storage/common/storage-account-manage).
+- A [storage account to use with Azure Data Lake Gen2](/azure/storage/blobs/create-data-lake-storage-account). To find the storage account name and location, see [Manage storage account settings in the Azure portal](/azure/storage/common/storage-account-manage).
 - An [Azure Blob Storage container](/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container).
 
 ## Known limitations
@@ -38,7 +38,7 @@ Store your data from Dynamics 365 Customer Insights - Data in a Data Lake Storag
 
 1. Choose who can use this connection. By default, it's only administrators. For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
-1. Enter **Account name**, **Account key**, and **Container** for your Azure Data Lake Storage Gen2.
+1. Enter **Subscription**, **Resource group**, **Storage account** and **Container** for your Azure Data Lake Storage Gen2.
 
 1. Review the [data privacy and compliance](connections.md#data-privacy-and-compliance) and select **I agree**.
 
