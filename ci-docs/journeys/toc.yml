@@ -88,9 +88,9 @@
       href: bimi-support.md
   - name: Privacy and compliance
     items:
-    - name: Manage consent for email and text messages in Customer Insights - Journeys
+    - name: Manage consent for email and text messages
       href: real-time-marketing-email-text-consent.md
-    - name: Customer Insights - Journeys preference centers
+    - name: Preference centers
       href: real-time-marketing-preference-centers.md
     - name: Migrate consent records to Customer Insights - Journeys
       href: real-time-marketing-migrate-consent.md
