@@ -10,12 +10,8 @@
       href: trial-signup.md
     - name: Trial FAQ
       href: trial-faq.md
-  - name: Purchase
-    items:
-    - name: Get started with Customer Insights licensing
-      href: marketing-license.md
-    - name: Purchase Customer Insights
-      href: purchase.md
+  - name: Purchase Customer Insights
+    href: purchase.md
   - name: Customer Insights - Journeys transition
     items:
     - name: What is Customer Insights - Journeys?

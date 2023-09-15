@@ -25,47 +25,33 @@ This article explains how to purchase a new Customer Insights environment.
 
 To install Customer Insights, you need to first purchase a base license. Which base license you choose depends on whether you already have a qualifying Dynamics 365 application. If you have Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Supply Chain Management, Dynamics 365 Finance, or Dynamics 365 Commerce **with 10 or more users**, you can purchase the reduced price "attach" license. Otherwise, you need to purchase a standard Customer Insights license.
 
-Once you have a core license, you can purchase additional production or non-production instances, as detailed below. You can also purchase additional contact or interaction packs. More information: [Dynamics 365 Customer Insights pricing](https://dynamics.microsoft.com/marketing/pricing/).
+Once you have a core license, you can purchase additional production or non-production instances, as detailed below. You can also purchase additional contact or interaction packs. Learn more: [Dynamics 365 Customer Insights pricing](https://dynamics.microsoft.com/ai/customer-insights/pricing/)
 
 ### Customer Insights licensing options
 
-#### Production app
-
-Production versions of Customer Insights are licensed per tenant. Each tenant is priced according to the number of *marketing contacts* stored in your database. To identify contacts, Customer Insights monitors key *interaction* types. Any contact that performs one or more interactions is flagged as a marketing contact and count against the allotment.
-
-A Customer Insights interaction is an outbound message sent to any marketing contact using Customer Insights.  The message can be sent through out-of-box channels available in Customer Insights (for example, email or push notifications), other Microsoft channels (for example, ACS), or third-party systems integrated with Customer Insights (for example, other SMS providers).
-
-Contacts that are stored, but not marketed to using Customer Insights don't count towards the marketing contacts quota. After an interaction is logged for a contact, it doesn't matter how many marketing interactions that contact performs, the contact is still counted once.
-
-Each license also includes quotas that limit the total number of Litmus inbox previews you can view and marketing email messages you can send each month. With all licenses, a maximum of 100 *free* Litmus email previews can be generated per month. See your license agreement for complete details about the quota limits that apply to you. You can view your quota limits and consumption for marketing contacts and marketing interactions on the [Quota limits](quota-management.md) page. While you're planning your marketing activities, be sure to purchase enough marketing contacts to remain within your quota.
-
-> [!NOTE]
-> When you sign up for Customer Insights, you'll choose a licensing option that defines your contract period and various quotas for that period. Each of the contacts that you engage through interactions during the contract period count against your total contact quota, even if you delete, or otherwise stop marketing to, an existing marketing contact during the contract period.
-> 
-> Active marketing contacts are counted as contact entities in the Dataverse database if they have received a marketing interaction within the last 12 months prior to the current date. Once a contact hasn't received an interaction in the last 12 months, it is no longer counted as an active contact.
-> 
-> You can only reduce your *purchased* contact quota on the anniversary of your contract. marketing contact consumption is cumulative throughout the license period and even post-license extension, subject to the 12-month rule mentioned above.
->
-> To learn more about Customer Insights pricing and licensing offers as well as prerequisites, refer to the [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544).
-
-#### Non-production app
-After you’ve purchased a core license, you may decide that you want to set up a test environment. A non-production license allows you to set up a non-production environment to try new features or customizations. As the name implies, you can’t use a non-production license to run production campaigns or interact with contacts.
-
-The distinction between a non-production license and a production license is only relevant to the purchase price at the time you buy the license. Whether you use a non-production or production app, the app's interface and functionality will be the same. The non-production license simply allows you to have a separate fully functional app in a non-production environment so that you can test your configuration before implementing it in the production environment.
-
-#### Solution Only app
-
-A Solution Only license includes all of the entities and solutions for Customer Insights, but doesn't include any of the marketing services. This means that marketing capabilities aren't available in this option (including email  creation, email delivery, segmentation, customer journeys, and more). This license is intended for use on development and test environments when making customizations, solving compatibility issues, importing or exporting solutions, and doing other types of development and non-functional marketing testing. A Solution Only license is included with all paid licenses and allows you to install the Solution Only app on as many environments as needed.
-
-As shown below, the Solution Only app appears as a separate Customer Insights app that is labeled **Dynamics 365 Customer Insights Solution Only** in the Power Platform admin center. You can set up and configure the Solution Only app using the [installation management area](setup.md#install-uninstall-or-update-customer-insights).
-
-> [!div class="mx-imgBorder"]
-> ![Screenshot of the Customer Insights Solution Only app in the Power Platform admin center.](media/purchase-setup-solution-only.png)
-
-As with production environments, Solution Only app updates [are pushed to all customers automatically](apply-updates.md) each time an update becomes available. To convert a Solution Only environment to a production or non-production environment, make sure you have an unconfigured production or non-production license and then [use the installation management area](setup.md#install-uninstall-or-update-customer-insights) to apply that license to the existing Solution Only environment. This allows you to preserve your customizations and data from the Solution Only app.
-
 > [!IMPORTANT]
-> Solution Only apps do not support some functionality that is supported by fully paid Customer Insights apps, specifically, portals, insights, and their solutions. If you need to use such functionality in a non-production environment, you will need to purchase a non-production license.
+> Customers who purchased before September 2023 may own the legacy, Dynamics 365 Customer Insights and Dynamics 365 Marketing standalone licenses. The standalone licenses have different entitlements from the new Dynamics 365 Customer Insights license sold after September 2023. The differences are as follows:
+>
+> - Dynamics 365 Marketing (standalone) entitles 10,000 active contacts (renamed "interacted people" after September 2023) and 1 application installation. You can buy add-on subscriptions to entitle additional application installations.
+> - Dynamics 365 Customer Insights (standalone) entitles 100,000 customer profiles (renamed "unified people" after September 2023) and 4 installations of the application. You can buy add-ons to unify accounts.
+>
+> The current Dynamics 365 Customer Insights license entitles 10,000 interacted people (formerly "active contacts"), 100,000 unified people (formerly "unified profiles"), 4 installations of the journeys app, and 4 installations of the data app. You no longer have to pay a higher unit price for add-ons to unify accounts. Learn more: [Dynamics 365 Customer Insights FAQs](ci-faq.md)
+
+## Step 1: Buy the base license
+
+The Dynamics 365 Customer Insights base license includes four application installations of Customer Insights - Journeys and four of Customer Insights - Data. If you own a pre-qualifying Dynamics 365 license, you're entitled to the "attach" pricing. See the [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409) for details on pricing and entitlements.
+
+## Step 2: Buy additional capacity
+
+To determine how much capacity you need, consider the following:
+
+-	How many total customers does your business have? You might be able to estimate this by counting the unique email addresses or phone numbers in your database. Buy this number of unified people.
+-	For high-volume engagement, how many interactions (email/text message/push notification/custom channel) will you send per month? Divide by 10 to get the number of interacted people you need.
+-	For lower-volume engagement, how many leads, contacts, profiles, or custom entities do you think you engage with on an annual basis?
+
+## Next steps
+
+After you've purchased your Dynamics 365 Customer Insights license, you'll need to start setting it up. Learn more: [Install and manage Dynamics 365 Customer Insights](setup.md)
 
 ## User and portal licensing
 
