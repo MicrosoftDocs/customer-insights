@@ -27,7 +27,7 @@ Customer Insights - Journeys services (including the marketing-insights service)
 
 ## Copy a Customer Insights - Journeys environment to another environment
 
-Because Customer Insights - Journeys is more complex than most Dynamics 365 apps and interacts with several special services and other components, you must be extra careful when creating copies to or from environments that have Customer Insights - Journeys installed on them.
+Because Customer Insights - Journeys interacts with several special services and other components, you must be extra careful when creating copies to or from environments that have Customer Insights - Journeys installed on them.
 
 > [!WARNING]
 > You cannot do a simple copy of a Customer Insights - Journeys environment like you can with most other Dynamics 365 environments that don't have Customer Insights - Journeys installed. If you do a simple copy without following the steps here, the resulting copy won't work and may render the target environment unrecoverable.
