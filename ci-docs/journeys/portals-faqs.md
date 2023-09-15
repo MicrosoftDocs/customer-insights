@@ -22,7 +22,7 @@ Read this article to find answers to common questions and solutions to known iss
 
 ## How can I fix occasional portal issues?
 
-Marketing pages and the event website both run on Power Apps portals. Sometimes, you may notice that settings you make in Customer Insights - Journeys aren't reflected on the portal right away, such as (for the event website): updates to banner images, speaker images, or payment gateway assignments&mdash;or, your portal may become unresponsive or otherwise unreliable. You can often solve all of these issues either by [clearing the portal cache](#portal-url), or [restarting it](#restart-the-portal). It's faster to clear the cache, but restarting it will sometimes solve more or other issues.
+Marketing pages and the event website both run on Power Apps portals. Sometimes, you may notice that settings you make in Customer Insights - Journeys aren't reflected on the portal right away, such as (for the event website): updates to banner images, speaker images, or payment gateway assignments&mdash;or, your portal may become unresponsive or otherwise unreliable. You can often solve all of these issues either by [clearing the portal cache](portals-faqs.md#clear-the-portal-cache), or [restarting it](#restart-the-portal). It's faster to clear the cache, but restarting it will sometimes solve more or other issues.
           
 ### Clear the portal cache
         

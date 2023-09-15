@@ -165,7 +165,7 @@ Many environment management tasks only allow you to work on a sandbox environmen
 
 ## Copy a production environment to a support environment
 
-Microsoft Support offers a service for testing pending changes (usually updates) on a copy of your production environment. If you wish to use this service, contact Microsoft Support to find out if you're eligible. If you're eligible, Microsoft Support will create a support environment on your tenant and then ask you to copy your production environment onto it. More information: [Manage Support environments](/power-platform/admin/support-environment)
+Microsoft Support offers a service for testing pending changes (usually updates) on a copy of your production environment. If you wish to use this service, [contact Microsoft Support](/power-platform/admin/get-help-support) to find out if you're eligible. If you're eligible, Microsoft Support will create a support environment on your tenant and then ask you to copy your production environment onto it. More information: [Manage Support environments](/power-platform/admin/support-environment)
 
 > [!NOTE]
 > When you copy to a support environment, you don't need to make any special preparations that were mentioned in other sections of this article.
@@ -175,7 +175,7 @@ Microsoft Support offers a service for testing pending changes (usually updates)
 
 To copy a production environment to a support environment:
 
-1. If you don't already have a support environment available, contact Microsoft Support to request one. Once your support environment is available on your tenant, you'll be able to see it in the Power Platform admin center.
+1. If you don't already have a support environment available, [contact Microsoft Support](/power-platform/admin/get-help-support) to request one. Once your support environment is available on your tenant, you'll be able to see it in the Power Platform admin center.
 
 1. Select the production environment that you want to copy and then select **Copy** in the top ribbon.
 

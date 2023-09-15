@@ -53,6 +53,6 @@ If you don't see the **Survey** tile in the **Toolbox** of your [customer journe
 1. Open Customer Insights - Journeys, go to **Settings** > **Advanced settings** > **Marketing settings** > **Marketing data configuration**, and enable syncing of the **Survey (msdyn_survey)** entity. More information: [Choose entities to sync with the marketing-insights service](mkt-settings-sync.md)
 1. Confirm that the **Survey** tile is now visible in the customer journey toolbox, and that your surveys are working correctly.
           
-If your surveys still aren't working after completing these steps, contact Microsoft Support for assistance.
+If your surveys still aren't working after completing these steps, [contact Microsoft Support](/power-platform/admin/get-help-support) for assistance.
 
 [!INCLUDE[footer-include](./includes/footer-banner.md)]
