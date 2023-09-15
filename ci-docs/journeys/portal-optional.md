@@ -1,7 +1,7 @@
 ---
 title: Integrate Dynamics 365 Customer Insights - Journeys with a CMS system, Dynamics 365 Portals, or Power Apps portals
 description: Learn how you can run interactive marketing features for Dynamics 365 Customer Insights - Journeys by using an integrated Dynamics 365 Portal or by using your own website or CMS system.
-ms.date: 09/13/2023
+ms.date: 09/15/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus

@@ -74,10 +74,8 @@
     href: browser-requirements.md
   - name: Manage user accounts, licenses, and roles
     href: admin-users-licenses-roles.md
-  - name: Integrate with Dynamics 365 Customer Insights
+  - name: Integrate with Dynamics 365 Customer Insights - Data
     href: ci-get-started.md
-  - name: Integrate Customer Insights - Journeys with a CMS system or a Power Apps portal
-    href: portal-optional.md
   - name: Import data
     href: import-data.md
   - name: Export data
@@ -738,10 +736,16 @@
       href: score-manage-leads.md
   - name: Customer engagement via portals and surveys
     items:
+    - name: Integrate Customer Insights - Journeys with a CMS system or a Power Apps portal
+      href: portal-optional.md
     - name: Create interactive features with or without portals
       href: portals.md
-    - name: Use Dynamics 365 Customer Voice surveys with Customer Insights - Journeys
+    - name: Portals FAQs
+      href: portals-faqs.md
+    - name: Use Dynamics 365 Customer Voice surveys
       href: customer-voice.md
+    - name: Customer Voice FAQs
+      href: customer-voice-faqs.md
   - name: Marketing on social media
     items:
     - name: Schedule and post messages on social media

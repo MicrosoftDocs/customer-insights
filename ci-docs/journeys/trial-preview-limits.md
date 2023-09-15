@@ -1,5 +1,5 @@
 ---
-title: Dynamics 365 Customer Insights - Journeys limits for trials
+title: Customer Insights - Journeys limits for trials
 description: Limitations and conditions that apply to trials of Dynamics 365 Customer Insights - Journeys.
 ms.date: 08/23/2023
 ms.topic: article
@@ -11,7 +11,7 @@ search.audienceType:
   - enduser
 ---
 
-# Dynamics 365 Customer Insights - Journeys limits for trials
+# Customer Insights - Journeys limits for trials
 
 [!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
