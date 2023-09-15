@@ -2365,6 +2365,11 @@
       "source_path": "ci-docs/faqs-data-prep.md",
       "redirect_url": "/dynamics365/customer-insights/data/faqs-data-prep",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/data/export-teams-bot.md",
+      "redirect_url": "/dynamics365/customer-insights/data/removed-deprecated-features-customer-insights",
+      "redirect_document_id": false
     }
   ]
 }
