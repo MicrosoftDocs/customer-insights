@@ -95,7 +95,6 @@ The table below is sorted by Customer Insights - Journeys channels (email, text 
 
 | **Table**                            | **Column**               | **Description**                                                                        |
 |--------------------------------------|--------------------------|----------------------------------------------------------------------------------------|
-| Common Properties                    | msdynmkt_deviceid        | The recipient's mobile device's Dataverse-stored identifier.                           |
 |                                      | msdynmkt_platform        | The mobile platform used for submission (iOS or Android)                               |
 | msdynmkt_pushnotificationlinkclicked | msdynmkt_linkname        | Description of the link name. It's a complete html content of the link.                |
 |                                      | msdynmkt_targeturl       | The target URL of the link clicked.                                                    |
