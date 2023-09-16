@@ -111,20 +111,20 @@ To help protect you, the responsible marketer, against the behavior of bad actor
 
 ### Stage 1: Inform and warn
 
-When we notice that a Customer Insights - Journeys environment is generating a high bounce rate or spam complaints, we'll send an email to the administrator to inform them of the issue and offer assistance in remedying the problem. If further assistance is needed, the communication will urge the administrator to contact Microsoft Support.
+When we notice that a Customer Insights - Journeys environment is generating a high bounce rate or spam complaints, we'll send an email to the administrator to inform them of the issue and offer assistance in remedying the problem. If further assistance is needed, the communication will urge the administrator to [contact Microsoft Support](/power-platform/admin/get-help-support).
 
 ### Stage 2: Move to a high-risk sending pool
 
 If the bounce rate or spam complaint problem persists for more than a few days, and if the administrator has still not contacted Microsoft Support, we'll move the Customer Insights - Journeys environment to a high-risk sending pool. The high-risk sending pool has a lower reputation score than the standard high-deliverability sending pool.
 
-When a Customer Insights - Journeys environment is moved to the high-risk sending pool, we'll send an email to the administrator to inform them of the sending pool change and to urge them to contact Microsoft Support for assistance. It may still be possible for the Customer Insights - Journeys environment to return to the low-risk sending pool, but not before the administrator contacts Microsoft Support to address the issue.
+When a Customer Insights - Journeys environment is moved to the high-risk sending pool, we'll send an email to the administrator to inform them of the sending pool change and to urge them to [contact Microsoft Support](/power-platform/admin/get-help-support) for assistance. It may still be possible for the Customer Insights - Journeys environment to return to the low-risk sending pool, but not before the administrator contacts Microsoft Support to address the issue.
 
 ## Using a dedicated sender IP
 
 In a standard Customer Insights - Journeys setup, all sender IPs are managed by Microsoft and shared among customers that have similar reputation scores. This lets us manage reputation, balance the send load, and warm up new IPs as needed. However, some organizations prefer to use one or more of their own, dedicated sender IPs, especially if they will be sending high volumes.
 
 > [!NOTE]
-> Dedicated sender IPs are not part of the standard Customer Insights - Journeys subscription agreement, and Microsoft does not generally recommend them because they introduce extra complexity and expense—and can result reduced deliverability compared to our standard sender IPs. Microsoft considers applications for dedicated sender IPs on a case-by-case basis, and we can support multiple dedicated sender IPs if needed. If you think your organization could benefit from a dedicated sender IP, please [contact Microsoft Support](setup-troubleshooting.yml#contact-support) to find out if you qualify. The main goal of this process is to help you achieve as high a delivery rate as possible. Some of the most important factors to consider when making this decision include:
+> Dedicated sender IPs are not part of the standard Customer Insights - Journeys subscription agreement, and Microsoft does not generally recommend them because they introduce extra complexity and expense—and can result reduced deliverability compared to our standard sender IPs. Microsoft considers applications for dedicated sender IPs on a case-by-case basis, and we can support multiple dedicated sender IPs if needed. If you think your organization could benefit from a dedicated sender IP, please [contact Microsoft Support](/power-platform/admin/get-help-support) to find out if you qualify. The main goal of this process is to help you achieve as high a delivery rate as possible. Some of the most important factors to consider when making this decision include:
 > 
 > - How many messages does your organization send each month?
 > - Is your content of high quality and in compliance with all relevant regulations?

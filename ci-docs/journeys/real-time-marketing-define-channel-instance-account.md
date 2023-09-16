@@ -74,7 +74,7 @@ For each custom channel solution, you need to:
 
 1. Create a form to expose the configuration fields.
 
-    The form doesn't have to contain attributes like name or description since they come from Customer Insights - Journeys Custom controls. The form is loaded in the Customer Insights - Journeys SMS setup wizard (settings step). The form ID is assigned to the attribute **msdyn_channeldefinitionaccountexternalformid** at the [channel definition step](real-time-marketing-define-channel-definition.md).  
+    The form doesn't have to contain attributes like name or description since they come from Customer Insights - Journeys Custom controls. The form is loaded in the Customer Insights - Journeys SMS wizard (settings step). The form ID is assigned to the attribute **msdyn_channeldefinitionaccountexternalformid** at the [channel definition step](real-time-marketing-define-channel-definition.md).  
 
     For example, in SMS, the form looks like this:
 

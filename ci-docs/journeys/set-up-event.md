@@ -154,7 +154,7 @@ Use the **Registration and attendance** tab to see who registered for the event,
     > [!NOTE]
     > Canceled event registrations are deactivated, not deleted. To cancel an event registration from within Customer Insights - Journeys, simply deactivate the record.
     >
-    > To determine your current Customer Insights - Journeys version, refer to [Find out which version of Dynamics 365 Customer Insights - Journeys you are running](apply-updates.md#find-out-which-version-of-dynamics-365-customer-insights---journeys-you-are-running).
+    > To determine your current Customer Insights - Journeys version, refer to [Find out which version of Dynamics 365 Customer Insights - Journeys you are running](apply-updates.md#find-out-which-version-of-customer-insights---journeys-you-are-running).
 
 ---
 
