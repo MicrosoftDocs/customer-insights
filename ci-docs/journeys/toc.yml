@@ -110,12 +110,6 @@
   items:
   - name: Customer Insights - Journeys user guide
     href: real-time-marketing-user-guide.yml
-  - name: Get started with Customer Insights - Journeys
-    items:
-    - name: Use Customer Insights profiles and segments
-      href: real-time-marketing-ci-profile.md
-    - name: Known issues in Customer Insights - Journeys
-      href: real-time-marketing-known-issues.md
   - name: Marketing channels
     items:
     - name: Email campaigns
@@ -180,12 +174,14 @@
         href: real-time-marketing-test-triggers.md
     - name: Segment-based journeys
       items:
+      - name: Segmentation overview
+        href: real-time-marketing-segments.md
       - name: Build segments in Customer Insights - Journeys
         href: real-time-marketing-build-segments.md
       - name: Target the right customers using the query assist copilot
         href: real-time-marketing-natural-language-segments.md
-      - name: Work with segments in Customer Insights - Journeys
-        href: real-time-marketing-segments.md
+      - name: Use Customer Insights - Data profiles and segments
+        href: real-time-marketing-ci-profile.md
       - name: Create a segment-based journey
         href: real-time-marketing-segment-based-journey.md
       - name: Improve targeting with the redesigned segment builder
@@ -332,7 +328,7 @@
       href: real-time-marketing-personalize-lists.md
     - name: Preview personalized content
       href: real-time-marketing-preview-personalized-content.md
-  - name: Assets
+  - name: Image, file, and video assets
     items:
     - name: Use images, files, and videos in your content
       href: upload-images-files.md
@@ -362,6 +358,8 @@
       href: manage-sms-keywords.md
     - name: Install add-ons
       href: add-ons.md
+  - name: Known issues in Customer Insights - Journeys
+    href: real-time-marketing-known-issues.md
   - name: Customer Insights - Journeys troubleshoot + FAQ
     href: real-time-marketing-faq.md
 - name: Develop and extend
