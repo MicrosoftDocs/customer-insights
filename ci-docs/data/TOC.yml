@@ -134,6 +134,10 @@
       href: dialog-with-data.md
     - name: Data prep report overview
       href: data-prep-overview.md
+    - name: Environment status summary
+      href: system.md
+    - name: Segment creation
+      href: segments-copilot.md
 
 - name: Tables
   items:
@@ -246,6 +250,8 @@
           href: segment-builder-aspects.md
     - name: Create with quick segments
       href: segment-quick.md
+    - name: Create with Copilot
+      href: segments-copilot.md
     - name: Suggested segments
       items: 
         - name: Suggested segments overview
@@ -372,10 +378,12 @@
       href: responsible-ai-overview.md
     - name: FAQs for the data prep report
       href: faqs-data-prep.md
-    - name: FAQ for Environment status summary
+    - name: FAQ for environment status summary
       href: faqs-environment-status.md
     - name: FAQs for dialog with data
       href: faqs-dialog-data.md
+    - name: FAQs for segment creation
+      href: tbd.md
 
 - name: More resources
   items: 
