@@ -10,7 +10,11 @@ ms.author:
 
 # Use natural language to create segments with Copilot for Customer Insights
 
+[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
+
 Create segments using everyday words in Dynamics 365 Customer Insights - Data without detailed knowledge about the data schema. Improve the AI model and get more accurate answers by providing feedback about prompts and results.
+
+[!INCLUDE [public-preview-note](includes/public-preview-note.md)]
 
 ## Create a segment with Copilot
 
