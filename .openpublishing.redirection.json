@@ -2400,6 +2400,11 @@
       "source_path": "ci-docs/journeys/marketing-license.md",
       "redirect_url": "/dynamics365/customer-insights/journeys/purchase",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/ci-overview.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/ci-faq",
+      "redirect_document_id": false
     }
   ]
 }
