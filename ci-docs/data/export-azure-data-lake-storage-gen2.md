@@ -38,7 +38,7 @@ Store your data from Dynamics 365 Customer Insights - Data in a Data Lake Storag
 
 1. Choose who can use this connection. By default, it's only administrators. For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
-1. Enter **Subscription**, **Resource group**, **Storage account** and **Container** for your Azure Data Lake Storage Gen2.
+1. Enter **Subscription**, **Resource group**, **Storage account**, and **Container** for your Azure Data Lake Storage Gen2.
 
 1. Review the [data privacy and compliance](connections.md#data-privacy-and-compliance) and select **I agree**.
 
