@@ -24,7 +24,7 @@ Copilot provides personalized, suggested prompts based on data in your environme
 
 1. Select **Use** to apply the result to a rule.
 
-:::image type="content" source="media/segment-copilot-result.svg" alt-text="Screenshot of a segment rule created by Copilot in Customer Insights.":::
+:::image type="content" source="media/segment-copilot-result.png" alt-text="Screenshot of a segment rule created by Copilot in Customer Insights.":::
 
 If the resulting segment contains multiple [relationship paths](relationships.md), it uses the shortest path by default. **Edit** the segment to change the relationship path.  
 
