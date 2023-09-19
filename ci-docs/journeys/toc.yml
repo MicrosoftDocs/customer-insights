@@ -112,28 +112,36 @@
       items:
       - name: Email overview
         href: real-time-marketing-email.md
-      - name: "Preview: Use AI to kickstart email creation with content ideas"
-        href: content-ideas.md
-      - name: Create a new email and design its content
-        href: email-design.md
-      - name: Set the sender, receiver, language, and legal designation
-        href: email-properties.md
-      - name: Generate iCalendar files for events and sessions
-        href: add-to-calendar.md
-      - name: Check your work using previews and test sends
-        href: email-preview.md
-      - name: Email accessibility checker
-        href: email-accessibility.md
-      - name: Check for errors, go live, and deliver
-        href: email-check-golive.md      
-      - name: Use "Send now" to send emails instantly in Customer Insights - Journeys
-        href: email-without-journey.md
-      - name: Use brand profiles in Customer Insights - Journeys email
-        href: brand-profiles-email.md
-      - name: Import outbound emails, templates, and content blocks to Customer Insights - Journeys
-        href: real-time-marketing-import-email-to-real-time.md
-      - name: Check your spam score
-        href: spam-checker.md
+      - name: Design your email and content
+        items:
+        - name: "Preview: Copilot - use AI to kickstart email creation"
+          href: content-ideas.md
+        - name: Create a new email and design its content
+          href: email-design.md
+        - name: Copilot - style your emails with AI-assisted themes
+          href: email-theme.md
+        - name: Generate iCalendar files for events and sessions
+          href: add-to-calendar.md
+        - name: Use brand profiles in email
+          href: brand-profiles-email.md
+        - name: Import outbound emails, templates, and content blocks to Customer Insights - Journeys
+          href: real-time-marketing-import-email-to-real-time.md 
+      - name: Prepare to send your email
+        items:
+        - name: Set the sender, receiver, language, and legal designation
+          href: email-properties.md
+        - name: Check your work using previews and test sends
+          href: email-preview.md
+        - name: Email accessibility checker
+          href: email-accessibility.md
+        - name: Check your spam score
+          href: spam-checker.md
+      - name: Send your email
+        items:
+        - name: Check for errors, go live, and deliver
+          href: email-check-golive.md      
+        - name: Use "Send now" to send emails instantly in Customer Insights - Journeys
+          href: email-without-journey.md
       - name: Email troubleshoot + FAQ
         href: email-troubleshoot.md
     - name: Text messages
@@ -150,7 +158,7 @@
       href: real-time-marketing-channel-optimization.md
   - name: Journeys
     items:
-    - name: Use Copilot to create journeys
+    - name: Copilot - create journeys using AI assistance
       href: real-time-marketing-use-copilot-create-journey.md
     - name: Trigger-based journeys
       items:
@@ -174,7 +182,7 @@
         href: real-time-marketing-segments.md
       - name: Build segments in Customer Insights - Journeys
         href: real-time-marketing-build-segments.md
-      - name: Target the right customers using the query assist copilot
+      - name: Copilot - target the right customers using query assist
         href: real-time-marketing-natural-language-segments.md
       - name: Use Customer Insights - Data profiles and segments
         href: real-time-marketing-ci-profile.md
