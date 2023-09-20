@@ -88,6 +88,8 @@
       href: real-time-marketing-email-text-consent.md
     - name: Preference centers
       href: real-time-marketing-preference-centers.md
+    - name: Consent management and double opt-in transition guidance
+      href: real-time-marketing-consent-transition.md
     - name: Migrate consent records to Customer Insights - Journeys
       href: real-time-marketing-migrate-consent.md
     - name: Use outbound subscription centers in Customer Insights - Journeys
@@ -336,32 +338,6 @@
     items:
     - name: Use images, files, and videos in your content
       href: upload-images-files.md
-  - name: Administration
-    items:
-    - name: Journeys
-      items:
-      - name: Move triggers between environments
-        href: move-triggers-between-environments.md
-      - name: Select the audience source for journeys
-        href: real-time-marketing-audience-data.md
-      - name: Customer Insights - Journeys link tracking mechanics
-        href: real-time-marketing-link-tracking-mechanics.md
-    - name: Privacy and compliance
-      items:
-      - name: Manage consent for email and text messages
-        href: real-time-marketing-email-text-consent.md
-      - name: Customer Insights - Journeys preference centers
-        href: real-time-marketing-preference-centers.md
-      - name: Consent management and double opt-in transition guidance
-        href: real-time-marketing-consent-transition.md
-      - name: Migrate consent records to Customer Insights - Journeys
-        href: real-time-marketing-migrate-consent.md
-      - name: Use outbound subscription centers in Customer Insights - Journeys
-        href: real-time-marketing-outbound-subscription.md
-    - name: Manage SMS (text message) keywords used in customer journeys
-      href: manage-sms-keywords.md
-    - name: Install add-ons
-      href: add-ons.md
   - name: Known issues in Customer Insights - Journeys
     href: real-time-marketing-known-issues.md
   - name: Customer Insights - Journeys troubleshoot + FAQ
@@ -430,6 +406,14 @@
         href: manage-word-templates.md
     - name: Data management settings
       href: data-management-settings.md
+  - name: Journeys
+    items:
+    - name: Move triggers between environments
+      href: move-triggers-between-environments.md
+    - name: Select the audience source for journeys
+      href: real-time-marketing-audience-data.md
+    - name: Customer Insights - Journeys link tracking mechanics
+      href: real-time-marketing-link-tracking-mechanics.md
   - name: Customer Insights - Journeys settings
     items:
     - name: Settings overview
@@ -548,6 +532,10 @@
       href: fair-use-policy.md
     - name: Throughput guidance
       href: real-time-marketing-throughput-guidance.md
+  - name: Manage SMS (text message) keywords used in customer journeys
+    href: manage-sms-keywords.md
+  - name: Install add-ons
+    href: add-ons.md
   - name: Administration and setup FAQ
     href: setup-troubleshooting.yml
   - name: Known issues and workarounds
