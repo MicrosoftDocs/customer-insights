@@ -1,11 +1,12 @@
 ---
 title: Use natural language to create segments with Copilot for Customer Insights
 description: Let Copilot in Customer Insights help you in creating segments based on data in your environment.
-ms.date: 09/18/2023
+ms.date: 09/20/2023
 ms.reviewer: mhart
 ms.topic: how-to
-author: 
-ms.author: 
+author: JimsonChalissery
+ms.author: jimsonc
+ms.custom: bap-template
 ---
 
 # Use natural language to create segments with Copilot for Customer Insights
