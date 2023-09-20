@@ -11,7 +11,7 @@ search.audienceType:
   - enduser
 ---
 
-# Copilot: Style your emails with AI-assisted themes
+# Copilot: style your emails with AI-assisted themes
 
 This article describes the email theme functionality, which uses Copilot to customize the appearance of email fields, buttons, and text.
 

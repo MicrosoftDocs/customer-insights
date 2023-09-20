@@ -1,5 +1,5 @@
 ---
-title: "Preview: Copilot - use AI to kickstart email creation"
+title: "Preview: Copilot: use AI to kickstart email creation"
 description: Learn how to use Copilot to kickstart email content ideas in Dynamics 365 Customer Insights - Journeys.
 ms.date: 08/18/2023
 ms.topic: article
@@ -11,7 +11,7 @@ search.audienceType:
   - enduser
 ---
 
-# Preview: Copilot - use AI to kickstart email creation
+# Preview: Copilot: use AI to kickstart email creation
 
 [!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 

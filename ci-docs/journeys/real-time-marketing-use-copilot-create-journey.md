@@ -1,5 +1,5 @@
 ---
-title: Copilot - create journeys using AI assistance
+title: "Copilot: create journeys using AI assistance"
 description: Enable the journey copilot to create marketing journeys using everyday language and provide feedback to improve results.
 ms.date: 08/15/2023
 ms.topic: get-started
@@ -15,7 +15,7 @@ ms.custom:
   - ai-seo-date:08/15/2023
 ---
 
-# Copilot - create journeys using AI assistance
+# Copilot: create journeys using AI assistance
 
 [!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
