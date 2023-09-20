@@ -122,6 +122,8 @@
       items:
       - name: Email overview
         href: real-time-marketing-email.md
+      - name: Prevent sending emails to duplicated email addresses
+        href: email-deduplication.md
       - name: "Preview: Use AI to kickstart email creation with content ideas"
         href: content-ideas.md
       - name: Create a new email and design its content
