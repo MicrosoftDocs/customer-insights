@@ -35,6 +35,5 @@ If the resulting segment contains multiple [relationship paths](relationships.md
 
 ## Next steps
 
-- RAI FAQ
 - [Responsible AI FAQs for Dynamics 365 Customer Insights - Data](responsible-ai-overview.md)
 - [Create and manage segments](segments.md)
