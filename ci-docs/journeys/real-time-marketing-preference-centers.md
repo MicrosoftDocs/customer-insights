@@ -47,7 +47,6 @@ Preference center forms are built on top of Customer Insights - Journeys forms w
 
 Learn more: [Manage Customer Insights - Journeys forms](real-time-marketing-manage-forms.md#advanced-form-customization)
 
-
 ## Replacing a preference page with a preference center
 > [!IMPORTANT]
 > We recommend replacing preference pages with preference centers to take full advantage of the consent features available in Customer Insights - Journeys.
