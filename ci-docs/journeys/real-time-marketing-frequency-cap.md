@@ -33,6 +33,9 @@ By default, the "Marketing Manager - Business" role will have the rights to crea
 > [!Note]
 > Only values larger than zero will be accepted. If you leave the input field blank, no cap will be applied. Also note that only commercial messages will be capped; transactional messages are always excluded.
 
+> [!Note]
+> Messages sent before a frequency cap was added for a particular channel will not be counted towards the cap for future messages.
+
 > [!div class="mx-imgBorder"]
 > ![Frequency cap settings screenshot.](media/real-time-marketing-frequency-cap-settings.png "Frequency cap settings screenshot")
 
