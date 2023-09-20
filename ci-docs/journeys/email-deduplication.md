@@ -40,3 +40,15 @@ When you view the insights, you'll see all duplicated email addresses in the **b
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot showing insights of duplicated recipients's address.](media/email-duplication-insights.png)
+
+## Known Issue
+
+Currently, the feature doesn't exit the second customer profile out of journeys when a duplicated email address gets detected. We'll work on fixing this behavior.
+
+An example of how you might be affected by this issue: 
+
+If you have a customer who has two (or more) customer profiles (CP1 and CP2) with the same email address, and you design your journey like:
+-	If my contact doesn't open an email, send after a period of time a second email 
+-	The first email will be sent only once as duplication is detected
+-	If CP1 opens the first email, CP1 won't get the second email
+-	However, C2 will go to “Not Opened” branch, and will receive the second email.
