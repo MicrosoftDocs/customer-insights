@@ -510,14 +510,12 @@
       href: developer/email-designer-customization.md
   - name: Privacy and compliance
     items:
-    - name: Data protection and privacy
-      href: privacy.md
-    - name: Use privacy features
-      href: privacy-use-features.md
     - name: Compliance overview
       href: compliance-overview.md
     - name: Manage user compliance settings
       href: real-time-marketing-compliance-settings.md
+    - name: Use privacy features
+      href: privacy-use-features.md
     - name: Anonymized customer data human review notice
       href: anonymized-data-review.md
   - name: Maintain the Customer Insights - Journeys app
@@ -766,8 +764,10 @@
         href: marketing-analytics/analytics-gallery-reach.md
       - name: "Gallery: Marketing form submission report"
         href: marketing-analytics/analytics-gallery-forms.md
-  - name: Administration (outbound marketing)
+  - name: Administer (outbound marketing)
     items:
+    - name: Data protection and privacy
+      href: privacy.md
     - name: Set up global double opt-in in outbound marketing
       href: double-opt-in.md
     - name: Set up form double opt-in in outbound marketing
