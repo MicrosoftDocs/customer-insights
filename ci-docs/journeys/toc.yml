@@ -128,6 +128,8 @@
         href: email-design.md
       - name: Set the sender, receiver, language, and legal designation
         href: email-properties.md
+      - name: Prevent sending emails to duplicated email addresses
+        href: email-deduplication.md
       - name: Generate iCalendar files for events and sessions
         href: add-to-calendar.md
       - name: Check your work using previews and test sends
