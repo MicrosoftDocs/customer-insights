@@ -1,7 +1,7 @@
 ---
 title: Manage user accounts, user licenses, and security roles
 description: How to manage user accounts, add licenses to users, and assign security roles in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/17/2023
+ms.date: 09/19/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -238,6 +238,7 @@ After deploying Customer Insights - Journeys features, several service users are
 | Dynamics Customer Insights - Journeys Workflow | Customer journey execution |
 
 ### Customer Insights - Journeys service user roles
+
 | Customer Insights - Journeys service role | Customer Insights - Journeys area |
 | ---- | ------- |
 | Cxp Channels Application User | Communication channels |
@@ -250,6 +251,7 @@ After deploying Customer Insights - Journeys features, several service users are
 | Cxp Form Services User | Customer Insights - Journeys forms |
 | Cxp Frequency Capping Services User | Interaction processing |
 | Cxp Image Generator Services User | QR code processing |
+| Cxp Notifier Services User | Checks if there are any callback registrations or message processing steps defined; if there are, it sends interaction events to CDS |
 | Cxp Orchestration Analytics Services User | Analytics |
 | Cxp Orchestration Engine Services CI User | Customer journey execution |
 | Cxp Orchestration Services User |  Customer journey execution |
