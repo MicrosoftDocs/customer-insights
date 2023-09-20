@@ -1,7 +1,7 @@
 ---
 title: Create outbound text messages 
 description: Learn how to create outbound text messages for Dynamics 365 Customer Insights - Journeys
-ms.date: 08/23/2023
+ms.date: 09/20/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -15,10 +15,10 @@ search.audienceType:
 
 [!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
-Text messages (SMS) allow you to reach customers directly on their mobile devices. You can send text messages from Dynamics 365 Customer Insights - Journeys by generating a phone number to use within the app. This article explains how to add a phone number generated in the Azure Communication Services preview, Infobip, LINK Mobility, Telesign, Twilio or Vibes and how to create and send text messages in Customer Insights - Journeys.
+Text messages (SMS) allow you to reach customers directly on their mobile devices. You can send text messages from Dynamics 365 Customer Insights - Journeys by generating a phone number to use within the app. This article explains how to add a phone number generated in the Azure Communication Services preview, Infobip, LINK Mobility, Telesign, Twilio, or Vibes and how to create and send text messages in Customer Insights - Journeys.
 
 > [!NOTE]
-> Text messaging using a toll free number generated in the Azure Communication Services preview is only supported in the countries/regions listed below.
+> Text messaging using a toll-free number generated in the Azure Communication Services preview is only supported in the countries/regions listed below.
 >
 >| Supported countries/regions | Supported type | Legal designation | Range    |
 >|---------------------|----------------|-------------------|----------|
@@ -48,11 +48,11 @@ Toll-free numbers are a good option for transactional A2P messaging, which means
 >
 >**UPDATE:** With carriers becoming even more strict with filtering, to ensure the maximum deliverability for your text messages, the toll-free number now needs to be verified. To verify your number, fill in the form [here](https://forms.office.com/r/x3LCH1gS7b). You can learn more about Azure Communication Services toll-free number verification [here](/azure/communication-services/concepts/sms/sms-faq#toll-free-verification).
 
-## Add a sender number from an Infobip, LINK Mobility, Telesign, Twilio or Vibes account (Worldwide)
+## Add a sender number from an Infobip, LINK Mobility, Telesign, Twilio, or Vibes account (worldwide)
 
-You can purchase or reuse an existing Infobip, LINK Mobility, Telesign, Twilio or Vibes SMS account to send text messages in Customer Insights - Journeys. **The integration works for all countries** in which a phone number can be purchased from the relevant SMS provider. 
+You can purchase or reuse an existing Infobip, LINK Mobility, Telesign, Twilio, or Vibes SMS account to send text messages in Customer Insights - Journeys. **The integration works for all countries** in which a phone number can be purchased from the relevant SMS provider. 
 
-The sender types supported vary based on the selected provider. **Customer Insights - Journeys also supports Alphanumeric Senders (currently in preview)**.
+The sender types supported vary based on the selected provider. **Customer Insights - Journeys also supports Alphanumeric Sender IDs (currently in preview)**.
 
 > [!IMPORTANT]
 > To ensure that third party SMS providers handle STOP commands properly, you must configure your consent settings directly with the provider.
@@ -81,7 +81,6 @@ TeleSign integration uses TeleSign's public APIs to send and receive text messag
 1. Purchase SMS phone numbers through your TeleSign account.
 1. On the [TeleSign SMS Settings](https://portal.telesign.com/portal/sms-settings) page, switch the **Status Callback** toggle to **Enabled.** This applies to **Standard accounts**. If you have an **Enterprise account**, you’ll need to contact TeleSign to enable the status callback setting for you.
 
-
 ### Sign up for and configure a Twilio account
 
 Like Telesign, Twilio integration uses Twilio's public APIs to send and receive text messages. You need to sign up for a Twilio account to enable Customer Insights - Journeys SMS integration. To create a Twilio account:  
@@ -92,12 +91,12 @@ Like Telesign, Twilio integration uses Twilio's public APIs to send and receive 
 
 ### Sign up for and configure a Vibes account
 
-Vibes integration uses Vibes' public APIs to send and receive text messages. You need to sign up for a Vibes account to enable Vibes SMS integration. To create a Vibes account:  
+Vibes integration uses Vibes's public APIs to send and receive text messages. You need to sign up for a Vibes account to enable Vibes SMS integration. To create a Vibes account:  
   
 1. Send an email to [dynamics@vibes.com](mailto:dynamics@vibes.com). You will get a response within a business day.
-1. After your account is set up or if you are already a Vibes customer, please contact the Vibes Customer Care team ([live@vibes.com](mailto:live@vibes.com)) or your dedicated Customer Success Manager to request the account integration details required to create the integration between Customer Insights - Journeys and Vibes.
+1. After your account is set up or if you are already a Vibes customer, contact the Vibes customer care team ([live@vibes.com](mailto:live@vibes.com)) or your dedicated customer success manager to request the account integration details required to create the integration between Customer Insights - Journeys and Vibes.
 
-### Set up your Infobip, LINK Mobility, Telesign, Twilio or Vibes sender numbers in the Customer Insights - Journeys app
+### Set up your Infobip, LINK Mobility, Telesign, Twilio, or Vibes sender numbers in the Customer Insights - Journeys app
 
 To set up a new SMS provider for the Customer Insights - Journeys app:
 
@@ -105,7 +104,7 @@ To set up a new SMS provider for the Customer Insights - Journeys app:
 1. Select the provider you want to set up and then add an internal name and description, along with the business unit it should belong.
 1. If you selected Infobip, enter the **API key** and **API Base URL** noted in the steps above. If you selected TeleSign, enter the **Customer ID** and **API key**. If you selected Twilio, enter the **Account SID** and **Auth Token**. If you selected LINK Mobility, contact them first to provide you with the integration credentials. Add them and then select the **Next** button.
 1. On the next screen, select **+New phone number** to add one or more numbers that will be used for the integration.
-1. On the **Add phone number** pane, add the number, its friendly name to distinguish it, the business unit it belongs and its type. **Customer Insights - Journeys also supports Alphanumeric Senders (currently in preview)**.
+1. On the **Add phone number** pane, add the number, its friendly name to distinguish it, the business unit it belongs, and its type. **Customer Insights - Journeys also supports Alphanumeric Sender IDs (currently in preview)**.
     > [!div class="mx-imgBorder"]
     > ![Add SMS number screenshot.](media/real-time-marketing-add-sms-number.png "Add SMS number screenshot")
 1. After adding the numbers, select the **Next** button to review the setup details and then select **Done** to complete it. 
