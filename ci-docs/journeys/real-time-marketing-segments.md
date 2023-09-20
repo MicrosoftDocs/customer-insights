@@ -1,5 +1,5 @@
 ---
-title: Work with segments in Customer Insights - Journeys
+title: Segmentation overview
 description: Learn how to work with segments in Dynamics 365 Customer Insights - Journeys.
 ms.date: 09/11/2023
 ms.topic: article
@@ -11,7 +11,7 @@ search.audienceType:
   - enduser
 ---
 
-# Work with segments in Customer Insights - Journeys
+# Segmentation overview
 
 [!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 

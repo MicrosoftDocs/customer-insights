@@ -70,7 +70,7 @@ Here are some of the common pitfalls (from a management perspective) that you mi
 
 ## ALM operations
 
-Dynamics 365 Customer Insights - Journeys supports most of the Dynamics 365 platform’s application lifecycle management (ALM) capabilities such as copy, backup, and restore. Learn more about ALM capabilities in [Manage Customer Insights - Journeys environments](./manage-marketing-environments.md).
+Dynamics 365 Customer Insights - Journeys supports most of the Dynamics 365 platform’s application lifecycle management (ALM) capabilities such as copy, backup, and restore. Learn more about ALM capabilities in [Copy or restore environments](./copy-or-restore.md).
 
 There are specifics to these operations, however, which you should adhere to when working with Customer Insights - Journeys. Some of the common pitfalls include:
 
@@ -82,8 +82,8 @@ There are specifics to these operations, however, which you should adhere to whe
 
 You can remove the Customer Insights - Journeys app from any Dynamics 365 environment where it's installed. While there are good reasons to uninstall the Customer Insights - Journeys app (such as dismantling a sandbox environment), there are situations where this operation is used incorrectly. The following scenarios outline some common situations where the uninstall operation is incorrectly used:
 
-- **Trying to use one Customer Insights - Journeys license for multi-use on multiple environments instead of doing a fresh install.** For information about installing Customer Insights - Journeys on more than one environment, refer to the Environment Strategy and Customer Insights - Journeys app type sections for additional guidance and options. The Customer Insights - Journeys uninstall process has [particular requirements and implications](uninstall-marketing.md).
-- **Once the Customer Insights - Journeys app is uninstalled, trying to also remove the Customer Insights - Journeys solutions from the environment.** The Customer Insights - Journeys app installs [many solutions on an environment](developer/marketing-solutions.md). You [don't need to remove the solutions](uninstall-marketing.md#uninstall-customer-insights---journeys-services) when uninstalling the Customer Insights - Journeys app. Removing the solutions requires special care and sequencing. Incorrect sequential removal of the solutions brings the environment into an undesired state. If you need to remove the solutions for valid business reasons (such as also removing the Customer Insights - Journeys metadata from the environment), you should open a support ticket to resolve the issue.
+- **Trying to use one Customer Insights - Journeys license for multi-use on multiple environments instead of doing a fresh install.** For information about installing Customer Insights - Journeys on more than one environment, refer to the Environment Strategy and Customer Insights - Journeys app type sections for additional guidance and options. The Customer Insights - Journeys uninstall process has [particular requirements and implications](uninstall.md).
+- **Once the Customer Insights - Journeys app is uninstalled, trying to also remove the Customer Insights - Journeys solutions from the environment.** The Customer Insights - Journeys app installs [many solutions on an environment](developer/marketing-solutions.md). You [don't need to remove the solutions](uninstall.md#uninstall-customer-insights---journeys-services) when uninstalling the Customer Insights - Journeys app. Removing the solutions requires special care and sequencing. Incorrect sequential removal of the solutions brings the environment into an undesired state. If you need to remove the solutions for valid business reasons (such as also removing the Customer Insights - Journeys metadata from the environment), you should open a support ticket to resolve the issue.
 
 ## Microsoft Dataverse vs CE deployment
 

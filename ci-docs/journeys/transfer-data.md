@@ -60,7 +60,7 @@ Your source and destination environments must both be running identical versions
 
 To find your Customer Insights - Journeys version number:
 
-1. [Open the Power Platform admin center](power-platform-admin-center.md) and go to **Environments**.  
+1. [Open the installation management area](uninstall.md) and go to **Environments**.  
 
 1. If you have more than one Dynamics 365 environment, each of them is listed here. Select the environment where you have Customer Insights - Journeys installed and are planning to export data from.
 

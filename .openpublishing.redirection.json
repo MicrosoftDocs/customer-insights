@@ -2365,6 +2365,46 @@
       "source_path": "ci-docs/faqs-data-prep.md",
       "redirect_url": "/dynamics365/customer-insights/data/faqs-data-prep",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/re-run-setup.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/setup",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/uninstall-marketing.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/uninstall",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/manage-marketing-environments.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/copy-or-restore",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/power-platform-admin-center.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/setup",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/solution-uninstall-order.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/uninstall",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/marketing-preview-features.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/admin-feature-switches",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/marketing-license.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/purchase",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/ci-overview.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/ci-faq",
+      "redirect_document_id": false
     }
   ]
 }

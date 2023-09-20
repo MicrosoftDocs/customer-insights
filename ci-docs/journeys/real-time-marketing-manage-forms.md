@@ -56,7 +56,7 @@ The Theme section can be opened by selecting brush icon in the right pane. Theme
 > [!div class="mx-imgBorder"]
 > ![Edit style of your input field using Theme.](media/real-time-marketing-form-theme.png)
 
-### Theme assistant
+### Copilot - forms theme assistant
 
 > [!IMPORTANT]
 > You must only use the theme assistant with websites that you own and operate. The theme assistant should not be used to copy third party websites.
