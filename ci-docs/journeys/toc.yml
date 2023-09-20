@@ -114,11 +114,11 @@
         href: real-time-marketing-email.md
       - name: Design your email and content
         items:
-        - name: "Preview: Copilot: Use AI to kickstart email creation"
+        - name: "Preview: Copilot: use AI to kickstart email creation"
           href: content-ideas.md
         - name: Create a new email and design its content
           href: email-design.md
-        - name: "Copilot: Style your emails with AI-assisted themes"
+        - name: "Copilot: style your emails with AI-assisted themes"
           href: email-theme.md
         - name: Generate iCalendar files for events and sessions
           href: add-to-calendar.md
@@ -158,7 +158,7 @@
       href: real-time-marketing-channel-optimization.md
   - name: Journeys
     items:
-    - name: "Copilot: Create journeys using AI assistance"
+    - name: "Copilot: create journeys using AI assistance"
       href: real-time-marketing-use-copilot-create-journey.md
     - name: Trigger-based journeys
       items:
@@ -182,7 +182,7 @@
         href: real-time-marketing-segments.md
       - name: Build segments in Customer Insights - Journeys
         href: real-time-marketing-build-segments.md
-      - name: "Copilot: Target the right customers using query assist"
+      - name: "Copilot: target the right customers using query assist"
         href: real-time-marketing-natural-language-segments.md
       - name: Use Customer Insights - Data profiles and segments
         href: real-time-marketing-ci-profile.md
