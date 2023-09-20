@@ -56,7 +56,7 @@ Learn more: [Create Customer Insights - Journeys preference centers](real-time-m
 ### Preference pages
 
 > [!IMPORTANT]
-> Preference pages have been deprecated and may not be available in the future. We recommend replacing preference pages with the more flexible preference center.
+> We recommend replacing preference pages with preference centers to take full advantage of the consent features available in Customer Insights - Journeys.
 
 Customer Insights - Journeys uses preference pages as another way to manage user consent. A preference page is a web page where your customers can change their consent settings for receiving emails and text messages and for tracking. You can't create a new preference page. Instead, you can customize the language on the page for updating contact point consent as used in Customer Insights - Journeys. With the introduction of preference centers, existing preference pages will continue to support users updating their consent. However, moving forward, all new compliance profiles use the enhanced functionality of preference centers.  
 

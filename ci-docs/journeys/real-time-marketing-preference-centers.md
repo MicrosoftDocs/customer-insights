@@ -50,7 +50,7 @@ Learn more: [Manage Customer Insights - Journeys forms](real-time-marketing-mana
 
 ## Replacing a preference page with a preference center
 > [!IMPORTANT]
-> Preference pages have been deprecated and may not be available in the future. We recommend replacing preference pages with the more flexible preference center.
+> We recommend replacing preference pages with preference centers to take full advantage of the consent features available in Customer Insights - Journeys.
 
 To replace your preference page with a preference center, first create a new compliance profile of type preference center and use the **Use previously captured consent** option to use the consent already gathered by your preference page compliance profile. Doing so will result in the new preference center sharing the same commercial, transactional, and tracking purposes from the preference page. The result is shared consent between the two profiles, which avoids the need to create new contact point consent records for your new compliance profile.
 
