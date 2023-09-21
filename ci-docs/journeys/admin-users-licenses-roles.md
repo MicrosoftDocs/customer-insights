@@ -1,7 +1,7 @@
 ---
 title: Manage user accounts, user licenses, and security roles
 description: How to manage user accounts, add licenses to users, and assign security roles in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/17/2023
+ms.date: 09/19/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -21,18 +21,18 @@ Read this article to learn how to work with user accounts, user licenses, and se
 
 ## Create user accounts and assign licenses
 
-Like most model-driven apps in Dynamics 365 (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Customer Insights - Journeys, and Dynamics 365 Project Service Automation), Dynamics 365 Customer Insights - Journeys integrates with the user management and licensing features of the Microsoft 365 admin center. To get started, each user who requires access to Customer Insights - Journeys must have a user account on your Microsoft 365 tenant. More information: [Add users individually or in bulk to Microsoft 365](/office365/admin/add-users/add-users)
+Like most model-driven apps in Dynamics 365 (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Customer Insights - Journeys, and Dynamics 365 Project Service Automation), Customer Insights - Journeys integrates with the user management and licensing features of the Microsoft 365 admin center. To get started, each user who requires access to Customer Insights - Journeys must have a user account on your Microsoft 365 tenant. More information: [Add users individually or in bulk to Microsoft 365](/office365/admin/add-users/add-users)
 
-Unlike most Dynamics 365 apps, Dynamics 365 Customer Insights - Journeys is licensed per instance (also based on certain quotas, such as the number of Customer Insights - Journeys contacts and monthly email messages) but it isn't licensed per seat, which means that you can add as many users to each Customer Insights - Journeys instance as you like for no extra charge because Customer Insights - Journeys user licenses are free.
+Unlike most Dynamics 365 apps, Customer Insights - Journeys is licensed per instance (also based on certain quotas, such as the number of Customer Insights - Journeys contacts and monthly email messages) but it isn't licensed per seat, which means that you can add as many users to each Customer Insights - Journeys instance as you like for no extra charge because Customer Insights - Journeys user licenses are free.
 
 ### Grant access to users that already have a Dynamics 365 license
 
-Any user who already has a license for any model-driven app in Dynamics 365 also will be able to access Dynamics 365 Customer Insights - Journeys without requiring any additional licenses. All you need to do is [assign them the security roles and privileges](#assign-role) required to access the Customer Insights - Journeys features they need.  
+Any user who already has a license for any model-driven app in Dynamics 365 also will be able to access Customer Insights - Journeys without requiring any additional licenses. All you need to do is [assign them the security roles and privileges](#assign-role) required to access the Customer Insights - Journeys features they need.  
 
 ### Grant access to users without a Dynamics 365 license
 
 > [!IMPORTANT]
-> Dynamics 365 Customer Insights - Journeys is a tenant-level license; it does not require explicit seat assignment for users to access the application. To sync users who are in your organization's [Azure Active Directory (AAD)](/azure/active-directory/fundamentals/active-directory-whatis) to the Customer Insights - Journeys app, give them URL for the application environment. When they attempt to access the environment, their identity will be sync'd to Dynamics 365 and a Dynamics 365 user will be created for them and assigned the Marketer role.
+> Customer Insights - Journeys is a tenant-level license; it does not require explicit seat assignment for users to access the application. To sync users who are in your organization's [Azure Active Directory (AAD)](/azure/active-directory/fundamentals/active-directory-whatis) to the Customer Insights - Journeys app, give them URL for the application environment. When they attempt to access the environment, their identity will be sync'd to Dynamics 365 and a Dynamics 365 user will be created for them and assigned the Marketer role.
 >
 > If you're having trouble granting users access, you can force the user assignment with a free Customer Insights - Journeys user license, as detailed in the steps below.
 
@@ -113,16 +113,16 @@ To find out which permissions apply to any existing security role (and/or edit a
 
 Here are a few notes for working with the **Security role** settings:
 
-- Most of the entities added by Dynamics 365 Customer Insights - Journeys are on the **Custom entities** tab. The other tabs manage features that either common for all model-driven apps in Dynamics 365, or specific to another app.
-- There's a tab called **Customer Insights - Journeys**, but it doesn't contain entities related to Dynamics 365 Customer Insights - Journeys. The settings apply to the *enterprise marketing* feature included with several model-driven apps in Dynamics 365 (though Dynamics 365 Customer Insights - Journeys does make use of the marketing lists feature that is provided here).
-- Some of the security roles provided with Dynamics 365 Customer Insights - Journeys include permissions from all available tabs. This is to provide access to  common features also required by users in marketing roles.
+- Most of the entities added by Customer Insights - Journeys are on the **Custom entities** tab. The other tabs manage features that either common for all model-driven apps in Dynamics 365, or specific to another app.
+- There's a tab called **Marketing**, but it doesn't contain entities related to Customer Insights - Journeys. The settings apply to the *enterprise marketing* feature included with several model-driven apps in Dynamics 365 (though Customer Insights - Journeys does make use of the marketing lists feature that is provided here).
+- Some of the security roles provided with Customer Insights - Journeys include permissions from all available tabs. This is to provide access to  common features also required by users in marketing roles.
 
 Security roles are a concept shared by all model-driven apps in Dynamics 365. For more information about how to work with them, see [Create users and assign security roles](/power-platform/admin/create-users-assign-online-security-roles) and [Security roles and privileges](/power-platform/admin/security-roles-privileges).
 
 ### Create a copy of a role
 
 > [!IMPORTANT]
-> Each time you update Dynamics 365 Customer Insights - Journeys, all of the standard, out-of-box roles are updated to the latest versions to ensure that each role receives permissions to access the new features added by the update. You cannot customize the out-of-box roles. If you need custom security roles, start by creating a copy of an existing role that is close to what you want and then customize the copy. If you use custom security roles, you'll need to update your custom roles after each app update to grant access to new entities.
+> Each time you update Customer Insights - Journeys, all of the standard, out-of-box roles are updated to the latest versions to ensure that each role receives permissions to access the new features added by the update. You cannot customize the out-of-box roles. If you need custom security roles, start by creating a copy of an existing role that is close to what you want and then customize the copy. If you use custom security roles, you'll need to update your custom roles after each app update to grant access to new entities.
 
 To create a copy of a role:
 
@@ -136,7 +136,7 @@ To create a copy of a role:
 
 ## Special permissions for marketing pages and assist edit
 
-Two features of Dynamics 365 Customer Insights - Journeys require that users have security roles with unexpected privileges for some entities. These are:
+Two features of Customer Insights - Journeys require that users have security roles with unexpected privileges for some entities. These are:
 
 - **To go live with marketing pages, elevated privileges are required for the *website* entity**  
     The error checker for marketing pages requires full organization-level access to the **Website** entity, which enables the feature to confirm that the page is configured correctly to be published on your Power Apps portal. Therefore, all users that need to check and/or go-live with a marketing page published on a portal must have a security role with the privileges shown in the table and illustration following this list. This doesn't affect captured forms or forms embedded on an external site or CMS system.
@@ -161,33 +161,34 @@ Two features of Dynamics 365 Customer Insights - Journeys require that users hav
 
 In addition to the entity-level security set directly on each security role, you can also control access to specific forms and/or fields. These work as follows:
 
-- *Form-level security* restricts access to specific forms, so even if a user has a security role that grants access to a given entity (such as customer journeys), that user might not be able to access some of the forms of that entity (such as the insights) unless they have one of the additional roles required by that form. Most of the entities added by Dynamics 365 Customer Insights - Journeys don't include any form-level security out of the box, so users that can access these entities can also access all the forms that belong to them, though some exceptions exist (including insights forms for some entities).
+- *Form-level security* restricts access to specific forms, so even if a user has a security role that grants access to a given entity (such as customer journeys), that user might not be able to access some of the forms of that entity (such as the insights) unless they have one of the additional roles required by that form. Most of the entities added by Customer Insights - Journeys don't include any form-level security out of the box, so users that can access these entities can also access all the forms that belong to them, though some exceptions exist (including insights forms for some entities).
 - *Field-level security* applies extra restrictions on specific fields, so even if a user can view a given form, some fields on that form could be hidden if they require an additional field security profile. Field security profiles are similar to, but separate from, the entity-level security roles otherwise described in this article.
 
 You don't see form or field settings when you edit the security role, so you must manage these separately.
 
 Form and field level security are concepts shared by all model-driven apps in Dynamics 365. For more information about how to work with them, see [Field-level security](/power-platform/admin/field-level-security) and [Assign security roles to a form](/power-platform/admin/assign-security-roles-form).
 
-## Security roles added by Dynamics 365 Customer Insights - Journeys
+## Security roles added by Customer Insights - Journeys
 
-The tables in this section summarize the purpose of each role added by Dynamics 365 Customer Insights - Journeys. They should give you a good idea of which roles to assign each of your users. For details information about precisely which permissions and access levels any single role provides, inspect the permissions tables provided in the **Security roles** window, as described previously in [Inspect and customize security roles](#inspect-roles).
+The tables in this section summarize the purpose of each role added by Customer Insights - Journeys. They should give you a good idea of which roles to assign each of your users. For details information about precisely which permissions and access levels any single role provides, inspect the permissions tables provided in the **Security roles** window, as described previously in [Inspect and customize security roles](#inspect-roles).
 
 ### Core Customer Insights - Journeys security roles
 
+> [!NOTE]
+> Customer Insights - Journeys roles often start with the word "Marketing."
+
 | Security&nbsp;role | Who&nbsp;needs&nbsp;it | Access&nbsp;granted |
 |---------------|--------------|----------------|
-| Customer Insights - Journeys Professional - Business | Most standard marketers who require access to Dynamics 365 Customer Insights - Journeys core features, but don't need to configure the system | Nearly all entities in the **Customer Insights - Journeys** work area, including segments, customer journeys, emails, marketing pages, marketing lists, and related features and templates (but not including LinkedIn or lead-scoring features). This role grants only limited access to the **Settings** work area. It also grants access to fundamental entities like contacts, leads, accounts, activities (tasks, phone calls, appointments), and marketing lists. This role is provided access to insights forms through form-level security.|
-| Customer Insights - Journeys Manager - Business | Customer Insights - Journeys managers (who also administer the system) | All the same entities as the **Customer Insights - Journeys Professional – Business** role, however,  this role also provides access to all views and settings in the **Settings** work area. This role is provided access to insights forms through from-level security. |
-| Customer Insights - Journeys, Business App Access | For internal use only, don't delete or modify | This is an internal security role used by the solution to perform internal tasks, such as syncing data. Don't delete or modify this role. |
-| Customer Insights - Journeys Services User | For internal use only, don't delete or modify | This is an internal security role used by the solution to perform internal tasks, such as syncing data. Don't delete or modify this role. |
+| Marketing Professional - Business | Most standard marketers who require access to Customer Insights - Journeys core features, but don't need to configure the system | Nearly all entities in the **Customer Insights - Journeys** work area, including segments, customer journeys, emails, marketing pages, marketing lists, and related features and templates (but not including LinkedIn or lead-scoring features). This role grants only limited access to the **Settings** work area. It also grants access to fundamental entities like contacts, leads, accounts, activities (tasks, phone calls, appointments), and marketing lists. This role is provided access to insights forms through form-level security.|
+| Marketing Manager - Business | Customer Insights - Journeys managers (who also administer the system) | All the same entities as the **Marketing Professional – Business** role, however,  this role also provides access to all views and settings in the **Settings** work area. This role is provided access to insights forms through from-level security. |
+| Marketing, Business App Access | For internal use only, don't delete or modify | This is an internal security role used by the solution to perform internal tasks, such as syncing data. Don't delete or modify this role. |
+| Marketing Services User | For internal use only, don't delete or modify | This is an internal security role used by the solution to perform internal tasks, such as syncing data. Don't delete or modify this role. |
 | Lead Score Modeler | Customer Insights - Journeys strategists responsible for building lead-scoring models (must be combined with a core marketing role) | Can view and edit lead scoring models, view lead scores, and customize the lead-to-opportunity marketing business process for leads. All these features are in the **Lead management** section of the **Customer Insights - Journeys** work area.  |
 | Lead Score Viewer | Marketers and salespeople that should see calculated lead scores (must be combined with one of the other marketing and/or sales roles) | Can view the score achieved by each lead. |
-| Customer Insights - Journeys Professional (BU level) - Business* | Marketers in orgs with multiple business units  | Same access as **Customer Insights - Journeys Manager - Business**, but privileges are scoped to "Local" - for example, just local business unit access.
-| Customer Insights - Journeys Manager (BU level) - Business* |  Customer Insights - Journeys managers in orgs with multiple business units | Same access as **Customer Insights - Journeys Professional - Business**, but privileges are scoped to "Deep" - for example, just local + child business unit access.
+| Marketing Professional (BU level) - Business | Marketers in orgs with multiple business units  | Same access as **Marketing Manager - Business**, but privileges are scoped to "Local" - for example, just local business unit access.
+| CMarketing Manager (BU level) - Business* |  Customer Insights - Journeys managers in orgs with multiple business units | Same access as **Marketing Professional - Business**, but privileges are scoped to "Deep" - for example, just local + child business unit access.
 
-*Expected release date for BU-level roles is February 2023
-
-"Customer Insights - Journeys Professional" and "Customer Insights - Journeys Manager" roles (without the "Business" suffix) are roles used in enterprise marketing and not related to the Dynamics 365 Customer Insights - Journeys product.
+"Marketing Professional" and "Marketing Manager" roles (without the "Business" suffix) are roles used in enterprise marketing and not related to the Customer Insights - Journeys product.
 
 ### Event Management security roles
 
@@ -213,31 +214,32 @@ The surveys package adds the following security role:
 
 ## Don't modify or remove service users
 
-Dynamics 365 Customer Insights - Journeys includes a preconfigured user called **D365 Customer Insights - Journeys**, which must have the following security roles:
+Customer Insights - Journeys includes a preconfigured user called **D365 Marketing**, which must have the following security roles:
 
 - EventManagement S2SInbound
 - LinkedIn LeadGen S2SInbound
-- Customer Insights - Journeys Services User
-- Customer Insights - Journeys, Business App Access
-- Customer Insights - Journeys Service user extensible role
-- Customer Insights - Journeys service user real-time role
+- Marketing Services User
+- Marketing, Business App Access
+- Marketing Service user extensible role
+- Marketing service user real-time role
 
 The system uses this account when performing important internal tasks, and Customer Insights - Journeys will stop working correctly if you remove the user or any of these required roles. Be sure not to remove or modify this user.
 
 ### Customer Insights - Journeys service users
 
-After deploying Customer Insights - Journeys features, several service users are created. As with outbound marketing, deleting these users will break your deployment.
+After deploying Customer Insights - Journeys features, several service users are created. Deleting these users will break your deployment.
 
 | Customer Insights - Journeys service user | Customer Insights - Journeys area |
 | ---- | ------- |
 | Customer Experience Platform PROD | All other areas not listed explicitly in this table |
-| Dynamics Customer Insights - Journeys Dataverse Datasource  | Personalization of messages |
-| Dynamics Customer Insights - Journeys Interactive Scenarios  | Handling flows triggered by organic users |
-| Dynamics Customer Insights - Journeys Lifecycle Management | Lifecycle and provisioning scenarios |
-| Dynamics Customer Insights - Journeys Native Segmentation | Segmentation |
-| Dynamics Customer Insights - Journeys Workflow | Customer journey execution |
+| Dynamics Marketing Dataverse Datasource  | Personalization of messages |
+| Dynamics Marketing Interactive Scenarios  | Handling flows triggered by organic users |
+| Dynamics Marketing Lifecycle Management | Lifecycle and provisioning scenarios |
+| Dynamics Marketing Native Segmentation | Segmentation |
+| Dynamics Marketing Workflow | Customer journey execution |
 
 ### Customer Insights - Journeys service user roles
+
 | Customer Insights - Journeys service role | Customer Insights - Journeys area |
 | ---- | ------- |
 | Cxp Channels Application User | Communication channels |
@@ -250,6 +252,7 @@ After deploying Customer Insights - Journeys features, several service users are
 | Cxp Form Services User | Customer Insights - Journeys forms |
 | Cxp Frequency Capping Services User | Interaction processing |
 | Cxp Image Generator Services User | QR code processing |
+| Cxp Notifier Services User | Checks if there are any callback registrations or message processing steps defined; if there are, it sends interaction events to CDS |
 | Cxp Orchestration Analytics Services User | Analytics |
 | Cxp Orchestration Engine Services CI User | Customer journey execution |
 | Cxp Orchestration Services User |  Customer journey execution |
@@ -261,8 +264,8 @@ After deploying Customer Insights - Journeys features, several service users are
 
 The Customer Insights - Journeys product is evolving, so it's possible new services (and hence more roles) will be added with along with marketing upgrades. Service user roles (their privileges for marketing entities) can be modified during marketing upgrade for the same reason. 
 
-One service user, **# Dynamics Customer Insights - Journeys Dataverse Datasource**, is used to impersonate a service that resolves dynamic content. Dynamic content can be defined through placeholders for personalized messages or through data-bound parameter in customer journeys.
+One service user, **# Dynamics Marketing Dataverse Datasource**, is used to impersonate a service that resolves dynamic content. Dynamic content can be defined through placeholders for personalized messages or through data-bound parameter in customer journeys.
 
-**# Dynamics Customer Insights - Journeys Dataverse Datasource** has a **Service Reader** role assigned, which allows it privileged access to any Dataverse data within a given environment.
+**# Dynamics Marketing Dataverse Datasource** has a **Service Reader** role assigned, which allows it privileged access to any Dataverse data within a given environment.
 
 [!INCLUDE[footer-include](./includes/footer-banner.md)]
