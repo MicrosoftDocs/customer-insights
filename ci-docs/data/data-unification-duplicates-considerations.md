@@ -33,12 +33,12 @@ You decide the number of rules, and the conditions that uniquely identify your c
 
 You can select **Normalization** routines to standardize data to get better matching, such as when you want to ignore extra whitespace or variations in case sensitivity between two strings. Normalization only impacts matching. It doesn't change the data in the final unified customer profile output.
 
-You can select a **Precision** setting less than ‘Exact’ to use fuzzy matching. Fuzzy matching is effective at matching strings that are close, but not exact in order to account for typos and small variations. For example, when comparing bob@contoso.com and bob@contoso.cm.
+You can select a **Precision** setting less than "‘"Exact"’" to use fuzzy matching. Fuzzy matching is effective at matching strings that are close, but not exact in order to account for typos and small variations. For example, when comparing bob@contoso.com and bob@contoso.cm.
 
-Add conditions to a rule and configure the desired options for the additional field, such as when matching records FirstName and Phone. Conditions within a given rule are "AND" conditions; every condition must match for the rows to match. But separate rules are "OR" conditions. If rows aren't matched by Rule 1, then they can be matched by Rule 2.
+You can add conditions to a rule, such as matching FirstName and Phone. Conditions within a given rule are "AND" conditions; every condition must match for the rows to match. But separate rules are "OR" conditions. If rows aren't matched by Rule 1, then they can be matched by Rule 2.
 
 ## Winner and alternate records
 
-Once rules have been run and duplicate records have been identified, the deduplication process selects a 'Winner row' that will be used to create the unified profile. The nonwinner rows are called 'Alternate rows'. Alternate rows are used in the Matching conditions unification step to match records from other tables to the winner row.
+Once rules have been run and duplicate records have been identified, the deduplication process selects a "Winner row" that will be used to create the unified profile. The nonwinner rows are called "Alternate rows." Alternate rows are used in the Matching conditions unification step to match records from other tables to the winner row.
 
 Once you have added a rule to a table, you can configure which row to select as the winner row through **Merge preferences**. Merge preferences are set per table. No matter what merge policy is selected, if there's a tie for a winner row, then first row in the data order is used as the tie breaker. 
