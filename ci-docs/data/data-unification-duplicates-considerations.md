@@ -23,9 +23,9 @@ In this simple example, records 1, 2 and 3 share either an email or phone, and r
 |4 |Person2 |(206) 555-9999 |Person2@different.com|
 
 - We don’t want to match on just name as that would match different people with the same name.
-- Rule 1 matches records 1 and 2 using Name and Phone.
-- Rule 2 matches records 2 and 3 using Name and Email.
-- Rule 1 and Rule 2 are combined into a single match group because they share record 2.
+- We create Rule 1 using Name and Phone, which matches records 1 and 2.
+- We create Rule 2 using Name and Email, which matches records 2 and 3.
+- The combination of Rule 1 and Rule 2 creates a single match group because they share record 2.
 
 You decide the number of rules, and the conditions that uniquely identify your customers. The exact rules depend on the data you have available to match on, the quality of your data, and how exhaustive you want the deduplication process to be.
 
@@ -39,6 +39,6 @@ You can add conditions to a rule, such as matching FirstName and Phone. Conditio
 
 ## Winner and alternate records
 
-Once rules have been run and duplicate records have been identified, the deduplication process selects a "Winner row" that will be used to create the unified profile. The nonwinner rows are called "Alternate rows." Alternate rows are used in the Matching conditions unification step to match records from other tables to the winner row.
+Once rules have been run and duplicate records have been identified, the deduplication process selects a "Winner row". The nonwinner rows are called "Alternate rows." Alternate rows are used in the Matching conditions unification step to match records from other tables to the winner row. Rows are matched against the data in the alternate rows in addition to the winner row.
 
 Once you have added a rule to a table, you can configure which row to select as the winner row through **Merge preferences**. Merge preferences are set per table. No matter what merge policy is selected, if there's a tie for a winner row, then first row in the data order is used as the tie breaker. 
