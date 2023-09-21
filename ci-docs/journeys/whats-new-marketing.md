@@ -422,7 +422,7 @@ Monthly enhancement includes an upgraded side pane for goals and exit criteria.
 - **Fine-tune email communications with filtered lists**
     - Including an entire list in an email is a common scenario. But there are times when it's more effective to only include items from a list that meet certain conditions. For example, in a confirmation email about an order, you may need to separately list items that are back-ordered. Similarly, communication about a multi-session conference is easier to consume if the sessions are organized by topic or track. Now you can easily achieve these scenarios by simply adding a filter to your email list.
     - [Release plan](/dynamics365-release-plan/2022wave2/marketing/dynamics365-marketing/fine-tune-email-communications-filtered-lists)
-    - [Docs](real-time-marketing-personalize-lists.md#define-a-list-filter)
+    - [Docs](real-time-marketing-personalize-lists.md)
   
     > [!div class="mx-imgBorder"]
     > ![personalized filtered lists](media/whats-new-personalize-lists.png "personalized filtered lists")
