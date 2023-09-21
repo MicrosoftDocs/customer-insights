@@ -85,6 +85,8 @@ To return to the **Customers** page, select **Back to Customers**.
 
 Customer profile summaries can tell you who your customers are and how they are engaging with your brand. For example, quickly know how recently a customer made a purchase or when they were last sent a promotional email. With this information easily available, you can spend more time personalizing your customer's experience.  
 
+<!--- Zac to provide RAI and dev env for screenshot --->
+
 ### Limitations
 
 - Summaries show defined activities only
