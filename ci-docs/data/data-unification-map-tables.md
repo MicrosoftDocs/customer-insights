@@ -1,6 +1,6 @@
 ---
 title: "Select source fields for data unification"
-description: "The first step in the unification process is selecting tables, attributes, primary keys, and semantic types to map data to the unified customer profile."
+description: "The first step in the unification process is selecting tables, attributes, primary keys, and data types to map data to the unified customer profile."
 ms.date: 09/21/2023
 ms.topic: how-to
 author: Scott-Stabbert
@@ -47,7 +47,7 @@ For each table, perform the following steps.
 1. Choose a **Type** that describes each attribute, such as Person.FullName, Location.City, or Identity.Service.Email. Mapping columns to types allows Customer Insights - Data to understand what columns represent and recommend rules, merge redundant data, and configure predictive models.
 
    > [!NOTE]
-   > One field should map to the semantic type *Person.FullName* to populate the customer name in the customer card.
+   > One field should map to the type *Person.FullName* to populate the customer name in the customer card.
 
    1. To create a custom type, select the **Type** field for the attribute and enter your custom type name.
 

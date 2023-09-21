@@ -23,7 +23,7 @@ Use data from sources like Microsoft and other partners to enrich your customer 
 
 You must have Contributor or Administrator [permissions](user-roles.md) to create or edit enrichments.  
 
-1. Go to **Data** > **Unify**. Select the table you want to enrich and select one attribute as a [primary key](data-unification-map-tables.md#select-primary-key-and-semantic-type-for-attributes) for the table.
+1. Go to **Data** > **Unify**. Select the table you want to enrich and select one attribute as a [primary key](data-unification-map-tables.md#select-primary-key) for the table.
 
 1. Go to **Data** > **Data sources**.
 

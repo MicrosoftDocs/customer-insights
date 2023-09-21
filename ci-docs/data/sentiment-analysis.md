@@ -55,7 +55,7 @@ Pre-defined business aspects for the model to associate with feedback data inclu
 ## Prerequisites
 
 - At least [Contributor permissions](user-roles.md)
-- [Unified](data-unification.md) text feedback data. We highly recommend that you [configure your feedback data tables as semantic type activity tables](data-unification-map-tables.md#select-primary-key-and-semantic-type-for-attributes) (Feedback type).
+- [Unified](data-unification.md) text feedback data. We highly recommend that you [configure your feedback data tables as semantic type activity tables](data-unification-map-tables.md#select-primary-key) (Feedback type).
 - Unified Customer ID (UCID) from data unification to match text feedback data records to an individual customer.
 - Feedback ID
 - Feedback timestamp
