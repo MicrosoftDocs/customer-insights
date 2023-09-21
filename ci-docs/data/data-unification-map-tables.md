@@ -1,7 +1,7 @@
 ---
 title: "Select source fields for data unification"
 description: "The first step in the unification process is selecting tables, attributes, primary keys, and semantic types to map data to the unified customer profile."
-ms.date: 09/01/2023
+ms.date: 09/21/2023
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -36,28 +36,26 @@ The first step in unification is selecting the tables and fields within your dat
 
 1. Select **Apply** to confirm your selections. The selected tables and attributes display.
 
-## Select primary key and semantic type for attributes
+## Select primary key
 
    :::image type="content" source="media/m3_select_primary.png" alt-text="Screenshot of selected tables with primary key not yet selected." lightbox="media/m3_select_primary.png":::
 
 For each table, perform the following steps.
 
-1. Choose the **Primary key**. The primary key is an attribute unique to the table. For an attribute to be a valid primary key, it shouldn't include duplicate values, missing values, or null values. String, integer, and GUID data type attributes are supported as primary keys.
+1. Choose the **Primary key**. The primary key value uniquely identifies a row. Primary keys shouldn't have any duplicate, missing, or null values. String, integer, and GUID data type attributes are supported as primary keys.
 
-1. To use AI models for smart prediction of semantics which saves time and improves accuracy, ensure **Intelligent mapping** is on. Intelligent mapping provides AI-based semantic recommendations in the **Type** field.
-
-1. For each attribute, choose a semantic **Type** that best describes that attribute, such as name, city, or email address. Mapping columns in your table to types allows the system to work with those columns, such as recommending rules, merging redundant data, or normalizing values.
+1. Choose a **Type** that describes each attribute, such as Person.FullName, Location.City, or Identity.Service.Email. Mapping columns to types allows Customer Insights - Data to understand what columns represent and recommend rules, merge redundant data, and configure predictive models.
 
    > [!NOTE]
    > One field should map to the semantic type *Person.FullName* to populate the customer name in the customer card.
 
-   1. To override an attribute type identified by the system, select another option. If the type doesn't exist, create a custom semantic type by selecting the **Type** field for the attribute and entering your custom semantic type name.
+   1. To create a custom type, select the **Type** field for the attribute and enter your custom type name.
 
-   1. To add an attribute that contains a URL to publicly available profile images or logos, select the table and field that contains the URL. In the **Type** field, enter *Person.ProfileImage*.
+   1. To display a profile image on the **Customer** page, select the field that contains the publicly available URL and select *Person.ProfileImage*.
 
-1. Review the attributes where a semantic type is automatically identified. These attributes are listed under **Review mapped fields**. Only attributes with the same type can be combined in the **Unify customer fields** step. Semantic types are used to automatically suggest insights. Ensure the types you chose are consistent across all the selected tables.
+1. Review the recommended types to ensure intelligent mapping correctly identified the type for each field.
 
-1. For attributes that aren't automatically mapped to a semantic type, select a semantic type field, enter your custom attribute type name, or leave them unmapped. These attributes are listed under **Define the data in the unmapped fields**. You don't need to map every column. However, columns with key demographic data (such as names and addresses) are important to map. Columns without a clear demographic type don't need to be mapped.
+1. For attributes that aren't automatically mapped to a type, select a type field, enter a custom type, or leave them unmapped. These attributes are listed under **Define the data in the unmapped fields**. You don't need to map every column. However, columns with key demographic data (such as names and addresses) are important to map. Columns without a clear demographic type don't need to be mapped.
 
 1. After completing the steps for each table, select **Save source fields**.
 

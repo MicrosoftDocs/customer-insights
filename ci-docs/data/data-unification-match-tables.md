@@ -1,18 +1,19 @@
 ---
 title: "Match conditions for data unification"
 description: "Match tables to create unified customer profiles."
-ms.date: 11/15/2022
-ms.topic: tutorial
-author: v-wendysmith
-ms.author: mukeshpo
+ms.date: 09/21/2023
+ms.topic: how-to
+author: Scott-Stabbert
+ms.author: sstabbert
 ms.reviewer: v-wendysmith
+ms.custom: bap-template
 ---
 
 # Match conditions for data unification
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
-This step in unification defines the match order and rules for cross-table matching. This step requires at least two tables. When records are matched, they're concatenated into a single record with all the fields from each table. Alternate rows (nonwinner rows from the Deduplication step) are considered when matching, but if a row matches an alternate row in a table, the record is matched to the winner row.
+This step in unification defines the match order and rules for cross-table matching. This step requires at least two tables. When records are matched, they're concatenated into a single record with all the fields from each table. Alternate rows (nonwinner rows from the Deduplication step) are considered when matching. But, if a row matches an alternate row in a table, the record is matched to the winner row.
 
 > [!NOTE]
 > Once you create your match conditions and select **Next**, you cannot remove a selected table or attribute. If needed, select **Back** to review the selected tables and attributes before continuing.
@@ -127,7 +128,7 @@ Specify conditions that override the default match logic. There are four options
 |Always match     | Defines values for the primary keys that are always matched.         |  Always match the row with primary key *12345* to the row with primary key *54321*.       |
 |Never match     | Defines values for the primary keys that never match.        | Never match the row with primary key *12345* to the row with primary key *54321*.        |
 |Bypass            | Defines values that the system should always ignore in the match phase. |  Ignore the values *11111* and *Unknown* during match.        |
-|Alias mapping    | Defining values that the system should consider as the same value.         | Consider *Joe* to be equal to *Joseph*.        |
+|Alias mapping    | Defines values that the system should consider as the same value.         | Consider *Joe* to be equal to *Joseph*.        |
 
 1. Select **Custom**.
 

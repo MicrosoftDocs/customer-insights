@@ -1,7 +1,7 @@
 ---
 title: "Unify customer fields for data unification"
 description: "Merge tables to create unified customer profiles."
-ms.date: 09/01/2023
+ms.date: 09/21/2023
 ms.topic: how-to
 author: v-wendysmith
 ms.author: sstabbert
