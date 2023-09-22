@@ -9,7 +9,7 @@ ms.reviewer: v-wendysmith
 ms.custom: bap-template
 ---
 
-# Unify customer fields
+# Unify customer fields for data unification
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 

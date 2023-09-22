@@ -73,7 +73,7 @@
       href: data-unification.md
     - name: Select source fields
       href: data-unification-map-tables.md
-    - name: Remove duplicate records
+    - name: Remove duplicates in each table
       href: data-unification-duplicates.md
     - name: Deduplication considerations
       href: data-unification-duplicates-considerations.md

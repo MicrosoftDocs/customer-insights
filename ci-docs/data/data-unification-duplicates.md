@@ -9,7 +9,7 @@ ms.reviewer: v-wendysmith
 ms.custom: bap-template
 ---
 
-# Remove duplicates before unifying data
+# Remove duplicates in each table for data unification
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
