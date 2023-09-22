@@ -50,6 +50,8 @@ search.audienceType:
 
 1. **I am a new Dynamics 365 Marketing customer. How do these changes impact me?**
 
+    As a new customer, you can expect the following:
+
     1. **Name change**
         1. This is a name change only and doesn't change any functionality.
         1. The name change will be applied automatically with the September 2023 monthly update.
