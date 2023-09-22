@@ -9,7 +9,7 @@ ms.reviewer: v-wendysmith
 ms.custom: bap-template
 ---
 
-# Connect data stored in Delta Lake format from your Azure Data Lake Storage (Preview)
+# Connect data stored in Delta Lake format from your Azure Data Lake Storage (preview)
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
@@ -17,20 +17,23 @@ ms.custom: bap-template
 
 Ingest data that is already prepared and stored in your lake houses into Dynamics 365 Customer Insights - Data quickly and seamlessly using Delta Lake. Key benefits include:
 
-- Direct integration with stored data in delta lake format. No need for intermediate data copies in .parquet format or additional transforms.
-- Faster insights for only the data that has last changed.
+- Direct integration with stored data in delta lake format. No need for intermediate staging data copies in .parquet format or additional transforms.
+- Faster insights due to processing data that has last changed rather than the full data set.
 - Efficient and scalable way of handling and processing data in real time.
-- More meaningful segments and personalized experiences.
 
 [!INCLUDE [public-preview-banner](./includes/public-preview-note.md)]
 
 ## Prerequisites
 
+- Data stored in online services may be stored in a different location than where data is processed or stored. By importing or connecting to data stored in online services, you agree that data can be transferred. [Learn more at the Microsoft Trust Center](https://www.microsoft.com/trust-center).
+
+- The Customer Insights - Data service principal must have Storage Blob Data Contributor to access the storage account. For more information, see [Grant permissions to the service principal to access the storage account](connect-service-principal.md#grant-permissions-to-the-service-principal-to-access-the-storage-account).
+
 - The user that sets up the data source connection needs at least Storage Blob Data Reader permissions on the Azure Data Lake Storage account.
 
-- Customer Insights - Data must have at least Storage Blob Data Contributor permissions to the storage location.
+- Data in your Data Lake Storage must be in delta format.
 
-- Data in your Data Lake Storage must be in delta format
+- The delta table can't be in the container root directory.
 
 ## Connect to Delta Lake data from Azure Data Lake Storage
 
@@ -49,15 +52,13 @@ Ingest data that is already prepared and stored in your lake houses into Dynamic
    - **Azure subscription**: Select the **Subscription** and then the **Resource group** and **Storage account**. Optionally, if you want to ingest data from a storage account through an Azure Private Link, select **Enable Private Link**. For more information, see [Private Links](private-link.md).
    - **Azure resource**: Enter the **Resource Id**. Optionally, if you want to ingest data from a storage account through an Azure Private Link, select **Enable Private Link**. For more information, see [Private Links](private-link.md).
 
-1. Choose the name of the **Container** that contains the data and schema (delta lake format) to import data from, and select **Next**.
+1. Choose the name of the **Container** that contains the folder of your data, and select **Next**.
 
-1. Navigate to the Delta Lake folder.
-
-1. Select the file that contains your data and select **Next**. A list of available tables displays.
+1. Navigate to the folder that contains the data in delta lake format and select it. Then, select **Next**. A list of available tables displays.
 
    :::image type="content" source="media/delta-review-tables.png" alt-text="Dialog box of a list of tables to select":::
 
-1. Select the tables you want to include.
+1. Select the tables you want to include. To add tables, select **New table** and enter the required information.
 
 1. For each included table:
    1. Select **Required**. The **Edit table** panel displays.
@@ -77,5 +78,3 @@ Ingest data that is already prepared and stored in your lake houses into Dynamic
    [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
 
 Loading data can take time. After a successful refresh, the ingested data can be reviewed from the [**Tables**](tables.md) page.
-
-## Edit a Delta Lake data source (Preview)
