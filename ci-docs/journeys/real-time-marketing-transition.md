@@ -1,7 +1,7 @@
 ---
 title: Customer Insights - Journeys transition FAQs
 description: Answers to frequently asked questions about transitioning to Customer Insights - Journeys.
-ms.date: 08/30/2023
+ms.date: 09/21/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -22,11 +22,47 @@ search.audienceType:
     > [!div class="mx-imgBorder"]
     > ![SKU and name change diagram.](media/ci-faq-sku-name-change.png "SKU and name change diagram")
 
+    As shown in the visual above, Customer Insights - Data and Customer Insights – Journeys are sold together but they're still separate apps and are provisioned separately. You don't need to have or use Customer Insights – Data to be able to use Customer Insights – Journeys (and vice versa). We offer them together as part of the new licensing because they work better together and complement each other.
+
     Learn more: [Dynamics 365 Customer Insights FAQs](ci-faq.md)
+
+1. **What changes to Dynamics 365 Marketing did Microsoft announce recently?**
+
+    Microsoft recently announced three changes to Dynamics 365 Marketing:
+
+    1. **Name change**: Dynamics 365 Marketing is now called "Customer Insights – Journeys." This is only a name change. There are no functionality changes on account of the name change. Customer Insights – Journeys continues to contain outbound marketing, real-time marketing, and event planning capabilities (the same as before the name change).
+    1. **License and SKU changes**: On September 1, 2023, Microsoft launched a new license and SKU called that allows customers to obtain both “Customer Insights – Data” (previously known as Customer Insights) and “Customer Insights – Journeys” (previously known as Dynamics 365 Marketing) as a single SKU with a single simplified license.
+    1. **Transition to real-time**: Generative AI and many other new innovations are only coming to the real-time marketing area. Therefore, we're encouraging all customers who are still using outbound marketing to transition to real-time. Similarly, new customers should start in real-time only to avoid having to transition later. To facilitate this change, **new orgs** are now provisioned only in real-time marketing by default. After provisioning, existing outbound marketing customers will see a self-serve option to add back outbound marketing functionality. New customers need to contact support to add outbound marketing. These changes are only applied to new orgs, they aren't applied to existing orgs. Existing orgs can continue to receive and apply monthly and wave release updates as usual.
+
+1. **I am an existing Dynamics 365 Marketing customer using outbound marketing. How do these changes impact me?**
+
+    As an existing outbound marketing customer, you can expect the following:
+
+    1. **Name change**
+        1. This is a name change only and doesn't change any functionality.
+        1. The name change will be applied automatically with the September 2023 monthly update.
+    1. **License and SKU changes**
+        1. **No immediate changes or impact**: Your current license and entitlements continue to work as before.
+        1. **When it's time to renew your license**, you'll have the option to renew your current license or switch to the new Customer Insights license. Until then, there's no change to your current license or entitlement. More details about what is included in the license and pricing is available on the [Customer Insights pricing page](https://dynamics.microsoft.com/ai/customer-insights/pricing/). Your partner or authorized reseller can also provide more detailed information and offers available to you.
+    1. **Transition to real-time marketing** - As an existing outbound customer, you won't see any change in your existing orgs, but you'll see the following changes in new orgs:
+        1. **New org creation**: By default, the new org will only include real-time marketing. You'll need to use the available self-serve user experience in the **Settings** > **Version** page to add outbound marketing. The same process is required if an existing org is reinstalled, copied, or otherwise put through any steps that cause a reset or reinstall.
+        1. **New features available only in real-time marketing**: You should start planning for transitioning to real-time marketing. At this time, we haven't announced a date for removing outbound. However, product enhancements and many new exciting capabilities with generative AI and Copilots will only be available in real-time marketing.
+
+1. **I am a new Dynamics 365 Marketing customer. How do these changes impact me?**
+
+    As a new customer, you can expect the following:
+
+    1. **Name change**
+        1. This is a name change only and doesn't change any functionality.
+        1. The name change will be applied automatically with the September 2023 monthly update.
+    1. **License and SKU changes**
+        1. **Already purchased a Dynamics 365 Marketing license previously**: You can use a previously purchased license and there's no need to purchase the new license. When your license is up for renewal, you have the option to renew your current license or switch to the new Customer Insights license. More details about what is included in the license and pricing are available on the [Customer Insights pricing page](https://dynamics.microsoft.com/ai/customer-insights/pricing/). Your partner or authorized reseller can also provide more detailed information and offers available to you.
+        1. If you haven't yet purchased a Dynamics 365 Marketing license, you're no longer able to purchase that specific license (if you were in the process of purchase, you may work with your sales team to get an exception to purchase the previous license). Work with your partner or reseller to purchase the new Customer Insights license that provides a better value and includes additional benefits.
+    1. **Transition to real-time marketing** - As a new customer, when you provision Customer Insights – Journeys (previously Dynamics 365 Marketing), you'll only see real-time marketing by default. If you have specific reasons that prevent you from using real-time marketing and you need outbound marketing, contact support and request an exception. Upon review and approval, the product team will add outbound marketing to your org.
 
 1. **How is Dynamics 365 Marketing impacted by this announcement?**
 
-    Dynamics 365 Marketing is becoming Dynamics 365 Customer Insights - Journeys. This is a change in a name, not a merge between or within apps. The current Marketing app functionality remains the same. It will continue to have outbound and real-time modules. For new Dynamics 365 Customer Insights - Journeys customers, the focus will solely be on Customer Insights - Journeys, ensuring a modernized and efficient approach to customer engagement. This shift highlights the commitment to providing businesses with powerful tools to deliver personalized experiences, ultimately driving growth and fostering stronger customer connections.
+    Dynamics 365 Marketing is becoming Dynamics 365 Customer Insights - Journeys. This is a change in a name, not a merge between or within apps. The current Marketing app functionality remains the same. It continues to have outbound and real-time modules. For new Dynamics 365 Customer Insights - Journeys customers, the focus will solely be on Customer Insights - Journeys, ensuring a modernized and efficient approach to customer engagement. This shift highlights the commitment to providing businesses with powerful tools to deliver personalized experiences, ultimately driving growth and fostering stronger customer connections.
 
     Over the next year, we invite all customers to fully transition from outbound to Customer Insights - Journeys. Customer Insights - Journeys has already surpassed traditional outbound marketing in functionality, effectiveness, usability testing results, satisfaction surveys, and our innovations and upcoming AI features are exclusively focused on Customer Insights - Journeys.
 
@@ -85,7 +121,7 @@ search.audienceType:
 
     New customers will directly start in Customer Insights - Journeys. As a new customer you can start by exploring the main functionalities, create a journey, or send a quick email.  
 
-    If you're a current customer using outbound, you are in “mixed-mode” where both outbound and Customer Insights - Journeys capabilities are available and can be used simultaneously. Our recommended approach is to start progressively with Customer Insights - Journeys and then ramp up after you have gained confidence. You can start using Customer Insights - Journeys for running new journeys. This way you'll have time to train and troubleshoot any dependencies or issues that may arise. Having created and successfully run a few real-time journeys, continue by moving your outbound journeys. This would be a great time to revisit and redesign them. For instance, many of your outbound journeys could flow more naturally and be reused by using triggers in Customer Insights - Journeys.  
+    If you're a current customer using outbound, you are in “mixed-mode” where both outbound and Customer Insights - Journeys capabilities are available and can be used simultaneously. Our recommended approach is to start progressively with Customer Insights - Journeys and then ramp up after you have gained confidence. You can start using Customer Insights - Journeys for running new journeys. This way you have time to train and troubleshoot any dependencies or issues that may arise. Having created and successfully run a few real-time journeys, continue by moving your outbound journeys. This would be a great time to revisit and redesign them. For instance, many of your outbound journeys could flow more naturally and be reused by using triggers in Customer Insights - Journeys.  
 
     > [!div class="mx-imgBorder"]
     > ![Graphic showing a gradual transition from outbound to Customer Insights - Journeys.](media/outbound-to-real-time.png "Graphic showing a gradual transition from outbound to Customer Insights - Journeys")
