@@ -59,7 +59,7 @@ On September 1, 2023, Dynamics 365 Customer Insights - Journeys will transition 
 - **Easily style your emails with Copilot**
     - Jumpstart your email creation process with Copilot. Effortlessly style email elements including buttons, text, and more using AI to quickly interpret styles from a website and apply them to your email. Save valuable time so you can focus on crafting compelling content instead of picking colors and font sizes.
     - [Release plan](/dynamics365/release-plan/2023wave1/marketing/dynamics365-marketing/easily-style-emails-copilot)
-    - [Docs]()
+    - [Docs](/dynamics365/customer-insights/journeys/email-theme)
 
 - **Use Copilot to style your forms and event registration pages to match your website**
     - Build forms and event registration pages that perfectly match your website and brand guidelines within minutes. Leverage copilot assistance to interpret your website and instantly apply the same styles, saving time designing your marketing or event registration forms. Copilot copies label fonts, input fields styles, colors, and buttons from your website. You can then review and refine elements to perfectly match your brand guidelines.
