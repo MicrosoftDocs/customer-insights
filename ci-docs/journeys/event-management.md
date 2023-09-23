@@ -1,7 +1,7 @@
 ---
 title: Plan, publicize, and collect registrations for events
 description: An overview of event-management features (including planning, logistics, sponsors, speakers, promotion, and registration) in  Dynamics 365 Customer Insights - Journeys.
-ms.date: 09/07/2023
+ms.date: 09/22/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -14,6 +14,12 @@ search.audienceType:
 # Event planning and management
 
 [!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+
+> [!IMPORTANT]
+> To use event management in the real-time journeys area of Customer Insights - Journeys, you must enable the feature switch. To enable the feature switch:
+>
+> 1. Go to **Settings** > **Overview** > **Feature switches**.
+> 1. Enable the **Enable events creation in real-time journeys** feature switch toggle.
 
 Live events and webinars are a vital sales and marketing channel. But events and webinars can be complex to arrange, execute, and follow up on. The Dynamics 365 Customer Insights - Journeys event management feature helps you every step of the way, from initial planning and budgeting through promotion and publication, attendee registration, webinar broadcasting, final analytics, lead generation, and evaluation of ROI.
 

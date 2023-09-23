@@ -15,6 +15,12 @@ search.audienceType:
 
 [!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
+> [!IMPORTANT]
+> To use event management in the real-time journeys area of Customer Insights - Journeys, you must enable the feature switch. To enable the feature switch:
+>
+> 1. Go to **Settings** > **Overview** > **Feature switches**.
+> 1. Enable the **Enable events creation in real-time journeys** feature switch toggle.
+
 The default registration form presented by the event website includes fields for first name, last name, email address, and pass type (for paid events with at least one pass). If you'd like to receive additional information from attendees, such as for special needs, food allergies, or a gift preference, you can easily add these as custom fields to your registration form. You can choose which custom fields to add to each event, and your registration records will include the values submitted by registrants.
 
 ## Set up a custom registration field

@@ -1,7 +1,7 @@
 ---
 title: Open the event management work area 
 description: Explains how to access event-management features in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/21/2023
+ms.date: 09/22/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -14,6 +14,12 @@ search.audienceType:
 # Open the event management work area
 
 [!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+
+> [!IMPORTANT]
+> To use event management in the real-time journeys area of Customer Insights - Journeys, you must enable the feature switch. To enable the feature switch:
+>
+> 1. Go to **Settings** > **Overview** > **Feature switches**.
+> 1. Enable the **Enable events creation in real-time journeys** feature switch toggle.
 
 The event management features of Dynamics 365 Customer Insights - Journeys are collected into their own work area to make it easy to find all the relevant entities and settings while you are focusing on events.
 
