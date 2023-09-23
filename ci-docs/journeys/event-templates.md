@@ -1,7 +1,7 @@
 ---
-title: Create and use event templates
-description: Describes how to create an event template and how to use templates when creating a new event in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/18/2023
+title: Create and use event templates in outbound marketing
+description: Describes how to create an event template and how to use templates when creating a new event in outbound marketing.
+ms.date: 09/22/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -11,9 +11,12 @@ search.audienceType:
   - enduser
 ---
 
-# Create and use event templates
+# Create and use event templates in outbound marketing
 
 [!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+
+> [!IMPORTANT]
+> This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
 
 If you often create similar events, then you can save time by setting up one or more event templates. Each template can hold all the same settings as a standard event, including:
 

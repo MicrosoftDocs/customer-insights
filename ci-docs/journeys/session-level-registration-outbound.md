@@ -1,6 +1,6 @@
 ---
-title: Set up session-level registration
-description: Describes how to set up session-level registration and how it differs from event-level registration in Dynamics 365 Customer Insights - Journeys.
+title: Set up session-level registration and waitlisting in outbound marketing
+description: Describes how to set up session-level registration and how it differs from event-level registration in outbound marketing.
 ms.date: 09/22/2023
 ms.topic: article
 author: alfergus
@@ -11,15 +11,12 @@ search.audienceType:
   - enduser
 ---
 
-# Set up session-level registration
+# Set up session-level registration and waitlisting in outbound marketing
 
 [!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
-> To use event management in the real-time journeys area of Customer Insights - Journeys, you must enable the feature switch. To enable the feature switch:
->
-> 1. Go to **Settings** > **Overview** > **Feature switches**.
-> 1. Enable the **Enable events creation in real-time journeys** feature switch toggle.
+> This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
 
 Session-level registration enables event organizers to give attendees the ability to assemble their own events from among all available sessions. In most ways, events with session-level registration work the same as those with event-level registration, but there are a few key differences, as outlined in the following table. Keep reading this topic for more information about these differences.
 
@@ -63,6 +60,11 @@ To view and edit registration details for a session-level event:
 
 ## Session-level waitlists
 
-Waitlists are not supported in Customer Insights - Journeys event management.
+The session-level waitlist works similarly to the event-level waitlist except that it manages a separate waitlist for each session. For details about how to set up and use the waitlist (including details about session-level waitlists) see [Set up and manage an event waitlist](event-waitlist.md). That topic also shows how to set up a customer journey that automatically lets contacts on the waitlist know when a spot has become available for them.
+
+Session-level waitlist differ from event-level waitlists as follows:
+
+- Waitlist members are shown on the session record rather than the event record. To see them, open a session, go to the **Registration and attendance** tab and scroll down to the **Waitlist** section. From here, you can add, remove, invite, and register attendees on the waitlist.
+- If you'd like to create a segment of waitlisted or invited registrants for a session, use the session ID rather than the event ID.
 
 [!INCLUDE[footer-include](./includes/footer-banner.md)]
