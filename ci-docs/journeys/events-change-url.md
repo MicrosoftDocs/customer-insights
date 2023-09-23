@@ -1,7 +1,7 @@
 ---
-title: Change the URL for event websites hosted on Power Apps portals
-description: Learn how to change the URL where Power Apps portals hosts your events in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/18/2023
+title: Change the URL for events hosted on Portals in outbound marketing
+description: Learn how to change the URL where Power Apps portals hosts your events in outbound marketing.
+ms.date: 09/22/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -11,7 +11,7 @@ search.audienceType:
   - enduser
 ---
 
-# Change the URL for event websites hosted on Power Apps portals
+# Change the URL for events hosted on Portals in outbound marketing
 
 [!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 

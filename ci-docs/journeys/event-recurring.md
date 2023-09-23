@@ -1,6 +1,6 @@
 ---
-title: Create and manage recurring events
-description: Describes how recurring events work in Dynamics 365 Customer Insights - Journeys.
+title: Create and manage recurring events in outbound marketing
+description: Describes how recurring events work in outbound marketing.
 ms.date: 08/18/2023
 ms.topic: article
 author: alfergus
@@ -11,9 +11,12 @@ search.audienceType:
   - enduser
 ---
 
-# Create and manage recurring events
+# Create and manage recurring events in outbound marketing
 
 [!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+
+> [!IMPORTANT]
+> This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
 
 If you host an event that occurs regularly, such as a monthly partner call, annual developers conference, or quarterly earnings presentation, then you might benefit by setting up a recurring event. Recurring events provide many benefits in situations like these, including:
 

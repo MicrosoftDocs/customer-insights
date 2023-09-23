@@ -1,5 +1,5 @@
 ---
-title: Troubleshoot event management
+title: Troubleshoot event management in outbound marketing
 description: Troubleshooting and frequently asked questions for events in Dynamics 365 Customer Insights - Journeys.
 ms.date: 08/18/2023
 ms.topic: article
@@ -11,9 +11,12 @@ search.audienceType:
   - enduser
 ---
 
-# Troubleshoot event management
+# Troubleshoot event management in outbound marketing
 
 [!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+
+> [!IMPORTANT]
+> This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
 
 ## How are contacts created in event management?
 
