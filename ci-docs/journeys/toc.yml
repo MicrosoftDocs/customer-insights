@@ -616,8 +616,6 @@
       href: personalized-page-content.md
     - name: Create marketing forms
       href: marketing-forms.md
-    - name: Use marketing forms for event registration
-      href: event-forms.md
     - name: Enable prefilling for forms
       href: form-prefill.md
     - name: Embed forms on external websites
@@ -706,22 +704,20 @@
         href: event-recurring.md
       - name: Create and use event templates in outbound marketing
         href: event-templates.md
+      - name: Use marketing forms for event registration in outbound marketing
+        href: event-forms.md
     - name: Webinars
       items:
-      - name: Set up a non-Teams webinar
+      - name: Set up a webinar in outbound marketing
         href: set-up-webinar.md
     - name: Create an event website
       items:
-      - name: Change the URL for events hosted on Portals
+      - name: Change the URL for events hosted on Portals in outbound marketing
         href: events-change-url.md
     - name: Manage events
       items:
-      - name: Set up online payment for events
+      - name: Set up online payment for events in outbound marketing
         href: event-payment-gateway.md
-    - name: Follow up with attendees
-      items:
-      - name: Follow up after the event
-        href: followup-after-event.md
     - name: Event troubleshoot + FAQ
       href: event-troubleshoot.md
   - name: Lead generation and management

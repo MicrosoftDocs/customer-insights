@@ -1,7 +1,7 @@
 ---
-title: Use marketing forms for event registration
-description: Add custom marketing forms to event registrations.
-ms.date: 08/18/2023
+title: Use marketing forms for event registration in outbound marketing
+description: Add custom marketing forms to event registrations in outbound marketing.
+ms.date: 09/22/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -11,7 +11,7 @@ search.audienceType:
   - enduser
 ---
 
-# Use marketing forms for event registration
+# Use marketing forms for event registration in outbound marketing
 
 [!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
