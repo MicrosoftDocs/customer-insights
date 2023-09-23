@@ -32,7 +32,7 @@ Any user who already has a license for any model-driven app in Dynamics 365 also
 ### Grant access to users without a Dynamics 365 license
 
 > [!IMPORTANT]
-> Customer Insights - Journeys is a tenant-level license; it does not require explicit seat assignment for users to access the application. To sync users who are in your organization's [Azure Active Directory (AAD)](/azure/active-directory/fundamentals/active-directory-whatis) to the Customer Insights - Journeys app, give them URL for the application environment. When they attempt to access the environment, their identity will be sync'd to Dynamics 365 and a Dynamics 365 user will be created for them and assigned the Marketer role.
+> Customer Insights - Journeys is a tenant-level license; it does not require explicit seat assignment for users to access the application. To sync users who use your organization's [Microsoft Entra ID](/azure/active-directory/fundamentals/whatis) to the Customer Insights - Journeys app, give them URL for the application environment. When they attempt to access the environment, their identity will be sync'd to Dynamics 365 and a Dynamics 365 user will be created for them and assigned the Marketer role.
 >
 > If you're having trouble granting users access, you can force the user assignment with a free Customer Insights - Journeys user license, as detailed in the steps below.
 

@@ -68,7 +68,7 @@ sections:
           One of the requirements for running the [setup wizard](purchase.md) for Customer Insights - Journeys is that you must sign in to Microsoft 365 with a user account that has permissions to register applications on Azure. To find out if you have these permissions, do the following:
           
           1. Go to [portal.azure.com](https://portal.azure.com) and sign in with the Microsoft 365 account that you want to use to install Customer Insights - Journeys.
-          1. Select **Azure Active Directory** under **Azure services**. On the next page, select **User settings** from the left side navigation.
+          1. Select **Microsoft Entra ID** under **Azure services**. On the next page, select **User settings** from the left side navigation.
           
               > [!div class="mx-imgBorder"]
               > ![Azure user settings](media/faq-azure-user-settings2.png)
@@ -83,7 +83,7 @@ sections:
           To fix this, do one of the following:
           
           - If you're just setting up a trial of Customer Insights - Journeys, then consider creating a new trial tenant and set up the Customer Insights - Journeys trial there, as described in [Sign up for a free trial](trial-signup.md).
-          - If you want to continue using the tenant where you received this error, then you must convert your unmanaged org into a managed one and then try to install Customer Insights - Journeys again. For instructions on how to do this, see [Take over an unmanaged directory as administrator in Azure Active Directory](/azure/active-directory/enterprise-users/domains-admin-takeover).
+          - If you want to continue using the tenant where you received this error, then you must convert your unmanaged org into a managed one and then try to install Customer Insights - Journeys again. For instructions on how to do this, see [Take over an unmanaged directory as administrator in Microsoft Entra ID](/azure/active-directory/enterprise-users/domains-admin-takeover).
           
           <a name="run-fre"></a>
           
