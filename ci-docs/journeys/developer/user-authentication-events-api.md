@@ -34,14 +34,14 @@ The events API will automatically try to link contacts from Microsoft Entra ID t
 
 To do so, it uses a contact matching strategy that can be configured in the event administration settings. By default, first name, last name, and email are used as the contact matching strategy. More information: [Event administration](../events-settings.md#event-administration)
 
-In case no matching contact is found, a new contact will be created automatically. 
+In case no matching contact is found, a new contact is created automatically.
 
 > [!NOTE]
 > Linked contact entities contain an attribute called `msevtmgt_aadobjectid` that stores the object ID of the user in Microsoft Entra ID.
 
 ### Retrieving information of authenticated user 
 
-The events API provides an endpoint that returns the information of the authenticated user. Starting with the June 2019 release, it also includes the Dynamics 365 Customer Insights - Journeys contact ID of the authenticated user. 
+The events API provides an endpoint that returns the information and contact ID of the authenticated user. 
 
 **Request** 
 
