@@ -123,7 +123,7 @@ The discrepancies in appearance are styling issues that won't limit the function
 - You may notice that landing pages for Teams meetings and webinars look the same. This is expected. The in-meeting experience is the same for a traditional meeting and a webinar. Your webinar will take place as you structured it with the roles of the attendees.
 - After you add a speaker engagement to your webinar through Dynamics 365, the meeting options in Teams will become visible. The calendar item will still be read-only in Teams. Make sure you edit your webinar only in Customer Insights - Journeys.
 
-Users [added as a guest](/azure/active-directory/external-identities/b2b-quickstart-add-guest-users-portal) to your Azure Active Directory tenant are not able to leverage any Teams integration options.
+Users [added as a guest](/azure/active-directory/external-identities/b2b-quickstart-add-guest-users-portal) to your Microsoft Entra ID tenant are not able to leverage any Teams integration options.
 
 ### Teams meetings
 

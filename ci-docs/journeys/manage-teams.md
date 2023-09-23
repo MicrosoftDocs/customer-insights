@@ -38,7 +38,7 @@ To create a new team:
         The privilege depth of these tables is dependent on the team membership of Team. Use **Organization** depth if Team members can be from different business units otherwise use **Business Unit** depth if Team members are only from the same business unit as the team admin.
         
     - **Team type**: Select the type of team you are creating. For details about the various types, see [Manage teams](/power-platform/admin/manage-teams).
-    - **Azure AD object ID for a group**: If you are using an AAD-related **Team type**, then specify the relevant Azure AD object ID here.
+    - **Microsoft Entra ID object ID for a group**: If you are using a Microsoft Entra ID-related **Team type**, then specify the relevant Microsoft Entra ID object ID here.
     - **Description**: Describe the team.
 1. Select **Save** on the command bar.
 1. The page reloads, now showing a **Team members** table. Use the settings here to view, add, or remove  members for the team.
