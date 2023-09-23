@@ -250,8 +250,6 @@
       items:
       - name: Invite, register, and house event attendees
         href: invite-register-house-event-attendees.md
-      - name: Add custom fields to your event registration form
-        href: custom-registration-fields.md
     - name: Create an event website
       items:
       - name: Set up the event website
@@ -710,6 +708,10 @@
       items:
       - name: Set up a webinar in outbound marketing
         href: set-up-webinar.md
+    - name: Register event attendees
+      items:
+      - name: Add custom fields to your event registration form in outbound marketing
+        href: custom-registration-fields.md
     - name: Create an event website
       items:
       - name: Change the URL for events hosted on Portals in outbound marketing
@@ -718,7 +720,7 @@
       items:
       - name: Set up online payment for events in outbound marketing
         href: event-payment-gateway.md
-    - name: Event troubleshoot + FAQ
+    - name: Event troubleshoot + FAQ for outbound marketing
       href: event-troubleshoot.md
   - name: Lead generation and management
     items:
