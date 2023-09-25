@@ -20,7 +20,7 @@ In this simple example, records 1, 2 and 3 share either an email or phone, and r
 |1 |Person1 |(425) 555-1111 |AAA@A.com |
 |2 |Person1 |(425) 555-1111 |BBB@B.com |
 |3 |Person1 |(425) 555-2222 |BBB@B.com |
-|4 |Person2 |(206) 555-9999 |Person2@different.com|
+|4 |Person2 |(206) 555-9999 |Person2@contoso.com|
 
 - We don’t want to match on just name as that would match different people with the same name.
 - We create Rule 1 using Name and Phone, which matches records 1 and 2.
@@ -33,7 +33,7 @@ You decide the number of rules, and the conditions that uniquely identify your c
 
 You can select **Normalization** routines to standardize data to get better matching, such as when you want to ignore extra whitespace or variations in case sensitivity between two strings. Normalization only impacts matching. It doesn't change the data in the final unified customer profile output.
 
-You can select a **Precision** setting less than "‘"Exact"’" to use fuzzy matching. Fuzzy matching is effective at matching strings that are close, but not exact in order to account for typos and small variations. For example, when comparing bob@contoso.com and bob@contoso.cm.
+You can select a **Precision** setting less than "Exact" to use fuzzy matching. Fuzzy matching is effective at matching strings that are close, but not exact in order to account for typos and small variations. For example, when comparing bob@contoso.com and bob@contoso.cm.
 
 You can add conditions to a rule, such as matching FirstName and Phone. Conditions within a given rule are "AND" conditions; every condition must match for the rows to match. But separate rules are "OR" conditions. If rows aren't matched by Rule 1, then they can be matched by Rule 2.
 
