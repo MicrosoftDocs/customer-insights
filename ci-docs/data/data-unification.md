@@ -21,7 +21,7 @@ Data can be unified on a single table or multiple tables. Tables were previously
 
 The unification process maps customer data from your data sources, removes duplicates, matches the data across tables, and creates a unified profile. Unification is performed in the following order:
 
-1. [Source fields](data-unification-map-tables.md) (previously called Map): In the source fields step, select tables and fields to include in the unify process. Map fields to a common semantic type that describes the purpose of the field.
+1. [Source fields](data-unification-map-tables.md) (previously called Map): In the source fields step, select tables and fields to include in the unify process. Map fields to a common type that describes the purpose of the field.
 
 1. [Duplicate records](data-unification-duplicates.md) (previously part of Match): In the duplicate records step, optionally define rules to remove duplicate customer records from within each table.
 

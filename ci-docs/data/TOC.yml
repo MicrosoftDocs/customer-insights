@@ -73,12 +73,18 @@
       href: data-unification.md
     - name: Select source fields
       href: data-unification-map-tables.md
-    - name: Remove duplicate records
+    - name: Remove duplicates in each table
       href: data-unification-duplicates.md
+    - name: Deduplication considerations
+      href: data-unification-duplicates-considerations.md
     - name: Match conditions
       href: data-unification-match-tables.md
     - name: Unify customer fields
       href: data-unification-merge-tables.md
+    - name: Review data unification
+      href: data-unification-review.md
+    - name: Update unification settings
+      href: data-unification-update.md  
     - name: Business unit data separation
       items: 
         - name: Business unit data separation overview
@@ -87,10 +93,6 @@
           href: access-business-units-dataverse.md
         - name: Customer Insights - Data business unit integrations
           href: business-unit-integration-dynamics365-power-platform.md
-    - name: Review data unification
-      href: data-unification-review.md
-    - name: Update unification settings
-      href: data-unification-update.md  
  
 - name: Enrichment
   items:
