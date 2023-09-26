@@ -1,7 +1,7 @@
 ---
 title: How to use aggregate cross-journey analytics
 description: Learn how to use and interpret aggregate cross-journey analytics in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/22/2023
+ms.date: 09/26/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -30,7 +30,8 @@ The cross-journey analytics dashboard allows you to check in on the performance 
 The following sections describe the widgets in greater depth.
 
 ## Filters
-You can filter the dashboard views based on date, one or more journeys, journey status and journey goal. Please keep in mind that the dashboard will present journeys that have been created within the period specified in the date filter.
+
+You can filter the dashboard views based on the date, one or more journeys, journey status, or journey goal. Keep in mind that the dashboard displays journeys created within the period specified in the date filter.
 
 ## KPI summary charts
 
