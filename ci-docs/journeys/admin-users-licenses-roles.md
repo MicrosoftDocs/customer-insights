@@ -1,7 +1,7 @@
 ---
 title: Manage user accounts, user licenses, and security roles
 description: How to manage user accounts, add licenses to users, and assign security roles in Dynamics 365 Customer Insights - Journeys.
-ms.date: 09/19/2023
+ms.date: 09/26/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -229,14 +229,17 @@ The system uses this account when performing important internal tasks, and Custo
 
 After deploying Customer Insights - Journeys features, several service users are created. Deleting these users will break your deployment.
 
-| Customer Insights - Journeys service user | Customer Insights - Journeys area |
-| ---- | ------- |
-| Customer Experience Platform PROD | All other areas not listed explicitly in this table |
-| Dynamics Marketing Dataverse Datasource  | Personalization of messages |
-| Dynamics Marketing Interactive Scenarios  | Handling flows triggered by organic users |
-| Dynamics Marketing Lifecycle Management | Lifecycle and provisioning scenarios |
-| Dynamics Marketing Native Segmentation | Segmentation |
-| Dynamics Marketing Workflow | Customer journey execution |
+| Customer Insights - Journeys service user | Microsoft Entra ID | Customer Insights - Journeys area |
+| ---- | ---- | ------- |
+| Customer Experience Platform PROD | 3e56e0fc-542f-4522-bac1-c7cab1017459 | All other areas not listed explicitly in this table |
+| D365 Dataverse Data | ca179245-7fe3-4d70-a945-09c79f85cf41 | Personalization of messages during customer journey execution |
+| D365 Experimentation | 729028a7-33d3-428b-b7be-0cff66ad5495| Customer journey experimentations |
+| D365 Interactives | c88804dd-52b8-4e23-b62d-f0e38f5cef35 | Handling flows triggered by organic users |
+| D365 Lifecycle Mgmt | c5efd687-df01-42cb-a6b6-391f24349886 | Lifecycle and provisioning scenarios |
+| D365 Native Segments | afc9dd19-c23a-4dc8-9fb7-0ad8cec474ff | Segmentation |
+| D365 Personalization | db13e196-bc9c-42fe-9c55-12558c3a16fa | Design of personalized messages |
+| D365 Sms Channel | bd3e2b66-87c7-4fb7-90c3-de39038fbb14 | Text messages sending |
+| D365 Workflow | ba069707-8fa6-41af-b08d-2d01a0d731e5 | Customer journey execution |
 
 ### Customer Insights - Journeys service user roles
 
