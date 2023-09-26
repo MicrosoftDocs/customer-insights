@@ -229,8 +229,8 @@ The system uses this account when performing important internal tasks, and Custo
 
 After deploying Customer Insights - Journeys features, several service users are created. Deleting these users will break your deployment.
 
-| Customer Insights - Journeys service user | Entra ID | Customer Insights - Journeys area |
-| ---- | ------- |
+| Customer Insights - Journeys service user | Microsoft Entra ID | Customer Insights - Journeys area |
+| ---- | ---- | ------- |
 | Customer Experience Platform PROD | 3e56e0fc-542f-4522-bac1-c7cab1017459 | All other areas not listed explicitly in this table |
 | D365 Dataverse Data | ca179245-7fe3-4d70-a945-09c79f85cf41 | Personalization of messages during customer journey execution |
 | D365 Experimentation | 729028a7-33d3-428b-b7be-0cff66ad5495| Customer journey experimentations |
