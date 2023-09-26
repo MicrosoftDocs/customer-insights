@@ -31,87 +31,75 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 |------------------|-----------------|
 | Customer Insights - Journeys        |   1.1.30993.107     |
 
-On September 1, 2023, Dynamics 365 Customer Insights - Journeys will transition to focus on Customer Insights - Journeys features only. To support this transition, in early August 2023, provisioning of new instances will change in the following ways:
+On September 1, 2023, Dynamics 365 Customer Insights - Journeys transitioned to focus on real-time marketing features only. To support this transition, in early August 2023, provisioning of new instances changed in the following ways:
 
-- New customers will no longer receive the outbound marketing module. They will need to contact support to add outbound marketing features.
-- Existing customers will also see the same provisioning change but will be able to add outbound marketing features themselves using a self-serve interface available on the **Settings** > **Versions page**.
+- New customers no longer receive the outbound marketing module. New customers need to contact support to add outbound marketing features.
+- Existing customers see the same provisioning change but can add outbound marketing features themselves using a self-serve interface available on the **Settings** > **Versions page**.
 
  > [!div class="mx-imgBorder"]
  > ![New dynamics 365 customer insights org](media/real-time-marketing-transition-graphic.png "New dynamics 365 customer insights org")
 
 ### General availability
 
-- **Simplify and summarize your segments using query assist copilot functionality**
-    - Updated copilot-enhanced query assist streamlines your workflow and enables effective teamwork. Use query assist copilot functionality in real-time marketing to create segments by describing them in plain English. Then, ensure your segment logic matches the intended outcome by translating the logic into a natural language description of the segment. Users who view or consume segments created by others can use the copilot functionality to identify which audience the segment captures without needing to understand the segment creation logic. Query assist also offers suggested improvements during segment creation to help eliminate redundant conditional statements and further improve segment comprehension and performance.
+- **Simplify and summarize segments using query assist Copilot functionality**
+    - Updated Copilot-enhanced query assist streamlines your workflow and enables effective teamwork. Use query assist copilot functionality in real-time marketing to create segments by describing them in plain English. Then, ensure your segment logic matches the intended outcome by translating the logic into a natural language description of the segment. Users who view or consume segments created by others can use the copilot functionality to identify which audience the segment captures without needing to understand the segment creation logic. Query assist also offers suggested improvements during segment creation to help eliminate redundant conditional statements and further improve segment comprehension and performance.
     - [Release plan](/dynamics365/release-plan/2023wave1/marketing/dynamics365-marketing/simplify-summarize-segments-using-query-assist-copilot-functionality)
-    - [Docs](/dynamics365/marketing/real-time-marketing-natural-language-segments)
+    - [Docs](real-time-marketing-natural-language-segments.md)
 
 - **Communicate effectively with personalized lists**
     - Lists are a common way to organize and communicate a repeated set of information such as a list of speakers or sessions for an event, list of items in an order, etc. Since lists can be quite information packed, ensuring only the relevant information is included is important (including what to include when a list item is missing some information). One way to personalize a list is to only include certain rows (e.g., rather than listing all sessions of an event, only include online sessions). Another way is to annotate items that meet certain conditions, for example, indicate which sessions require additional registration or fee. Finally, there are times when you need to include additional information that is not in the data source of the list but in a related table. Now it is easier than ever to achieve such highly personalized and informative lists with enhanced capabilities to specify conditions at the list item level, include relevant information in related tables, control date/time format, and specify default values when a list item is empty.
-    - [Docs]()
+    - [Docs](real-time-marketing-personalize-lists.md)
 
 - **Engage customers with text messages sent using Vibes**
     - Connect your existing Vibes account to reach out to your customers through text messages. Use all real-time marketing text message features with your Vibes account to maximize customer engagement. Leverage out-of-the-box functionalities such as personalization, templates, and analytics to unlock the potential of Vibes.
-    - [Docs](/dynamics365/customer-insights/journeys/real-time-marketing-outbound-text-messaging#sign-up-for-and-configure-a-vibes-account)
+    - [Docs](real-time-marketing-outbound-text-messaging.md#sign-up-for-and-configure-a-vibes-account)
 
 ### Public preview
 
 - **Easily style your emails with Copilot**
     - Jumpstart your email creation process with Copilot. Effortlessly style email elements including buttons, text, and more using AI to quickly interpret styles from a website and apply them to your email. Save valuable time so you can focus on crafting compelling content instead of picking colors and font sizes.
     - [Release plan](/dynamics365/release-plan/2023wave1/marketing/dynamics365-marketing/easily-style-emails-copilot)
-    - [Docs](/dynamics365/customer-insights/journeys/email-theme)
+    - [Docs](email-theme.md)
 
 - **Use Copilot to style your forms and event registration pages to match your website**
     - Build forms and event registration pages that perfectly match your website and brand guidelines within minutes. Leverage copilot assistance to interpret your website and instantly apply the same styles, saving time designing your marketing or event registration forms. Copilot copies label fonts, input fields styles, colors, and buttons from your website. You can then review and refine elements to perfectly match your brand guidelines.
     - [Release plan](/dynamics365/release-plan/2023wave1/marketing/dynamics365-marketing/use-copilot-style-forms-event-registration-pages-match-website)
-    - [Docs](/dynamics365/customer-insights/journeys/real-time-marketing-manage-forms#style-your-forms-using-theme)
+    - [Docs](real-time-marketing-manage-forms.md#style-your-forms-using-theme)
 
-- **Create compelling content with Copilot image recommendations**
-    - Visual content is critical to capturing your audience’s attention, increasing engagement with your brand, and conveying your message more effectively. However, browsing your library to find meaningful, relevant images for your content can be tedious and time-consuming. Now, a new copilot assistant automatically identifies a selection of images from your library that best complement your content. Quickly and easily choose images that resonate with your audience without spending time searching. Additionally, thanks to enhanced AI tagging, tags are automatically generated any time you upload images to the Dynamics 365 Marketing library. Consistent and relevant tagging improves the overall searchability of your assets and makes it easier to find them in the future.
-    - [Release plan](/dynamics365/release-plan/2023wave1/marketing/dynamics365-marketing/create-deliver-compelling-content-copilot-image-recommendations)
-    - [Docs](/dynamics365/customer-insights/journeys/upload-images-files)
-
-- **Automatically prevent duplicate emails to customer with multiple contacts sharing the same email address**
+- **Automatically prevent duplicate emails to contacts that share the same email address**
     - Effective email management is crucial for maintaining strong customer relationships and ensuring your business's success. By enabling email deduplication, you can ensure that your message is sent only once, even multiple contacts share the same email address. This helps keep your customers’ inbox clutter-free, increases the chance that important messages avoiding the dreaded spam folder and ultimately preserves your brand reputation.  
-    - [Docs](/dynamics365/customer-insights/journeys/email-deduplication)
+    - [Docs](email-deduplication.md)
+
 - **Increase engagement using alphanumeric SMS senders**
-    - With alphanumeric senders, you can now send one-way text messages to your customers 	using a custom string of letters or numbers, making it easier for customers to recognize that messages are from a trusted source. By using your brand or company name, you gain brand awareness, increase trust, and ultimately boost the overall effectiveness of your SMS marketing efforts.
-    - [Docs](/dynamics365/customer-insights/journeys/real-time-marketing-outbound-text-messaging)
+    - With alphanumeric senders, you can now send one-way text messages to your customers using a custom string of letters or numbers, making it easier for customers to recognize that messages are from a trusted source. By using your brand or company name, you gain brand awareness, increase trust, and ultimately boost the overall effectiveness of your SMS marketing efforts.
+    - [Docs](real-time-marketing-outbound-text-messaging.md)
 
 ### Monthly enhancements
 
-**Analytics**
-- **Optimize your email marketing efforts with enhanced email insights**
+- **Analytics: Optimize your email marketing efforts with enhanced email insights**
     - With the introduction of key performance indicators such as email Open Rate, Click Rate and Delivery Rate in email insights, you can get a deeper understanding of your email campaign effectiveness. Moreover, in delivery and interaction details, you can now export up to 50,000 records of interaction data, as well as view the people that interacted with your email messages.
-
-**Journeys**
-- **Make updates to your journey by describing them in conversational language with journey copilot**
+- **Journeys: Make updates to your journey by describing them in conversational language with journey copilot**
     - In this release, we’ve made it easier for marketers to make small changes to their journeys by describing them in their own words. For example, you want first create a journey that sends emails to your loyalty members about an upcoming sale, then later want to address a more specific audience like customers who have a birthday this month. You can make this change by simply asking copilot to switch out the audience. 
-- **Create leads and opportunities from journeys**
+- **Journeys: Create leads and opportunities from journeys**
     - For businesses that use leads and opportunities to track sales activity they are a crucial output of the marketing process. Now you can create them directly within your customer journeys, giving you the control to create the right leads and opportunities at the right point in your customer’s experience.
-
-**Personalization**
-- **Performance improvements for journeys using audience entities with many custom attributes**
+- **Personalization: Performance improvements for journeys using audience entities with many custom attributes**
     - Personalization layer now loads only the needed set of columns (instead of the entire entity) for audience entities (Contact, Lead, or Profile) during journey execution. This reduces execution time significantly (and drives much higher journey throughput) for customers who have added a large number of custom attributes to their audience entities.
-
-**Email**
-- **Email subject line and preview text limit is increased from 500 characters to 4000 characters**
-
-**Consent**
-- **Capture and share consent across multiple lines of business by sharing consent purposes**
+- **Email: Subject line and preview text limit is increased from 500 characters to 4000 characters**
+- **Consent: Capture and share consent across multiple lines of business by sharing consent purposes**
     - Multi-brand compliance profiles enable you to build trust in your multiple brand(s) by giving your customers control over their communication preferences tailored to each line of business. With the added ability to create new consent purposes and share those purposes across compliance profiles, you can now use the same consent captured from one profile in other profiles and their preference centers. This enables you to capture consent for a parent brand, and then share that consent with each of the child brands in your organization.
-- **Preference center and consent support for custom channels**
+- **ConsentL Preference center and consent support for custom channels**
     - Preference centers in real-time journey now support custom channels for purpose and topic based consent. Custom channel messages can set a preference center compliance profile, purpose and (optional) topic and real-time journeys will respect the contact point consent for those messages. Messages sent to custom channels follow the same consent enforcement rules as SMS messages.
-
-- **reate segments from consent topics and purposes**
+- **Consent: Create segments from consent topics and purposes**
     - Use the consent captured from your customers to create segments that target people who have opted into receiving specific types of communications. Segments now support creating segments from topic and purpose contact point consent records, so that you can get accurate segment sizes and don’t include people who would not receive your messages. For example, create a segment that only includes contacts that have opted in to receive your Monthly Newsletter topic. Or create a segment that only includes leads who have not opted out of receiving commercial messages.
 
 ### New blogs and scenario docs
 
 Learn how to make the most of the new Dynamics 365 Marketing features in our latest blogs and scenario docs:
 
+- [Microsoft is named a Leader in 2023 Gartner® Magic Quadrant™ for B2B Marketing Automation Platform - Microsoft Dynamics 365 Blog](https://cloudblogs.microsoft.com/dynamics365/bdm/2023/09/25/microsoft-is-named-a-leader-in-2023-gartner-magic-quadrant-for-b2b-marketing-automation-platform/)
 - [Microsoft Dynamics 365 Copilot is helping transform customer experiences - Microsoft Dynamics 365 Blog](https://cloudblogs.microsoft.com/dynamics365/bdm/2023/09/07/from-microsoft-to-global-brands-dynamics-365-copilot-is-helping-transform-customer-experiences-across-service-sales-and-marketing/) 
 - [Transition to real-time marketing and transform your Customer Experience - Microsoft Dynamics 365 Blogs](https://cloudblogs.microsoft.com/dynamics365/it/2023/07/18/transition-to-real-time-marketing-and-transform-your-customer-experience/)
+- [Dynamics 365 Customer Insights - Journeys ALM Best Practices: Getting Started - Dynamics FastTrack Blogs](https://community.dynamics.com/blogs/post/?postid=ed18eefc-a046-ee11-be6d-00224827ed7b)
 - [Throttling Email Messages with Dynamics 365 Customer Insights Journeys - Dynamics FastTrack Blogs](https://community.dynamics.com/blogs/post/?postid=0e2a9bb2-7f4e-ee11-a81c-000d3ae68975)
 - [Double Opt-In in Real-Time Marketing  - Dynamics FastTrack Blogs](https://community.dynamics.com/blogs/post/?postid=24df8cbc-5724-4734-b898-24cfe57d3c33)
 
@@ -123,7 +111,7 @@ Learn how to make the most of the new Dynamics 365 Marketing features in our lat
 |------------------|-----------------|
 | Customer Insights - Journeys        |   1.1.28488.146     |
 
-On September 1, 2023, Dynamics 365 Customer Insights - Journeys will transition to focus on Customer Insights - Journeys features only. To support this transition, in early August 2023, provisioning of new instances will change in the following ways:
+On September 1, 2023, Dynamics 365 Customer Insights - Journeys will transition to focus on real-time marketing features only. To support this transition, in early August 2023, provisioning of new instances will change in the following ways:
 
 - New customers will no longer receive the outbound marketing module. They will need to contact support to add outbound marketing features.
 - Existing customers will also see the same provisioning change but will be able to add outbound marketing features themselves using a self-serve interface available on the **Settings** > **Versions page**.
