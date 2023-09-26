@@ -380,10 +380,12 @@
       href: responsible-ai-overview.md
     - name: FAQs for the data prep report
       href: faqs-data-prep.md
-    - name: FAQ for environment status summary
+    - name: FAQs for environment status summary
       href: faqs-environment-status.md
     - name: FAQs for dialog with data
       href: faqs-dialog-data.md
+    - name: FAQs for segment creation
+      href: faqs-segment-creation.md
 
 - name: More resources
   items: 
