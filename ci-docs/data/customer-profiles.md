@@ -35,10 +35,12 @@ Select any of the following actions:
 
 ## Search for customers
 
-Search for customers by entering a name or some other attribute in **Search customers**. The searchable attributes are defined by the admin and come from the unified *Customer* table.
+Search for customers by entering a string in **Search customers**. The searchable fields are defined by the admin and come from the unified *Customer* table. The best searches use a unique term such as CustomerID.
+
+Customer Insights – Data uses Azure cognitive search (ACS) to index columns to make them searchable. If the search string has spaces or a hyphen (-), the search string is broken into multiple search tokens. For example, searching on “Nancy-Smith” returns customers with “Nancy” and “Smith”. Searching on “879 Steve Squares Apt. 093, Surprise, Arizona 80296 USA” returns customers that have some or all of the individual search tokens.
 
 > [!NOTE]
-> **String** is the only data type that is included in search. Use it in the **Search customers** field on the Customers page to search for customers.
+> Only columns of data type **String** are included in search.
 
 ## Filter customers
 
