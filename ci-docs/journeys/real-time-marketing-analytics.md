@@ -1,7 +1,7 @@
 ---
 title: Access and interpret analytics
 description: How to access and interpret Customer Insights - Journeys analytics in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/22/2023
+ms.date: 09/26/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -66,12 +66,13 @@ Select any journey component to view near real-time operational analytics in the
   
 > [!IMPORTANT]
 > As of September 2023, several enhancements have been introduced in email analytics, including key performance indicators such as:
->- Delivery rate, the percentage of emails delivered divided by the number of emails sent.
->- Open rate, the percentage of unique email opens divided by the number of emails delivered.
->- Click rate, the percentage of unique email clicks divided by the number of emails delivered.
+> - **Delivery rate**: the percentage of emails delivered divided by the number of emails sent.
+> - **Open rate**: the percentage of unique email opens divided by the number of emails delivered.
+> - **Click rate**: the percentage of unique email clicks divided by the number of emails delivered.
 >
-> Furthermore, in delivery and interaction details, you can now export up to 50,000 records of interaction data and access links to audience profiles that interacted with your email messages. In addition, timestamps are reported according to the organization's timezone.
-> Please note that while these enhancements will initially apply to email analytics, they will be gradually rolled out to journey operational analytics and other channel analytics over time.
+> In the delivery and interaction details, you can now export up to 50,000 records of interaction data and access links to audience profiles that interacted with your email messages. Additionally, timestamps are reported according to the organization's timezone.
+> 
+> While these enhancements initially apply to email analytics, they will be gradually rolled out to journey operational analytics and other channel analytics.
   
 - **AI optimization**: Near real-time data to help you evaluate how applying AI optimization has helped your engagement rate.
 
