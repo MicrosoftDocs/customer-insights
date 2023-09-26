@@ -1,7 +1,7 @@
 ---
 title: "Connect data stored in Delta Lake format from your Azure Data Lake Storage"
 description: "Work with data stored in Delta Lake format from Azure Data Lake Storage."
-ms.date: 09/19/2023
+ms.date: 09/26/2023
 ms.topic: how-to
 author: mukeshpo
 ms.author: mukeshpo
@@ -15,25 +15,27 @@ ms.custom: bap-template
 
 [!INCLUDE [public-preview-banner](./includes/public-preview-banner.md)]
 
-Ingest data that is already prepared and stored in your lake houses into Dynamics 365 Customer Insights - Data quickly and seamlessly using Delta Lake. Key benefits include:
+Connect data that is already prepared and stored in your lake houses and bring it into Dynamics 365 Customer Insights - Data quickly and seamlessly using delta lake format. Key benefits include:
 
-- Direct integration with stored data in delta lake format. No need for intermediate staging data copies in .parquet format or additional transforms.
-- Faster insights due to processing data that has last changed rather than the full data set.
-- Efficient and scalable way of handling and processing data in real time.
+- Direct integration with stored data in delta lake format. No need for intermediate staging data copies in other formats or additional transforms.
+- Faster insights for only the data that has last changed.
 
 [!INCLUDE [public-preview-banner](./includes/public-preview-note.md)]
 
 ## Prerequisites
 
-- Data stored in online services may be stored in a different location than where data is processed or stored. By importing or connecting to data stored in online services, you agree that data can be transferred. [Learn more at the Microsoft Trust Center](https://www.microsoft.com/trust-center).
+- The Azure Data Lake Storage you want to connect and ingest data from has to be in the same Azure region as the Dynamics 365 Customer Insights - Data environment and the subscriptions must be in the same tenant.
 
 - The Customer Insights - Data service principal must have Storage Blob Data Contributor to access the storage account. For more information, see [Grant permissions to the service principal to access the storage account](connect-service-principal.md#grant-permissions-to-the-service-principal-to-access-the-storage-account).
 
 - The user that sets up the data source connection needs at least Storage Blob Data Reader permissions on the Azure Data Lake Storage account.
 
-- Data in your Data Lake Storage must be in delta format.
+- Data in your Data Lake Storage must be in delta format. Customer Insights - Data relies on the version to identify the latest changes.
 
-- The delta table can't be in the container root directory.
+- The delta tables must be in a separate folder in the storage container and can't be in the container root directory.
+
+> [!NOTE]
+> Data stored in online services may be stored in a different location than where data is processed or stored. By importing or connecting to data stored in online services, you agree that data can be transferred. [Learn more at the Microsoft Trust Center](https://www.microsoft.com/trust-center).
 
 ## Connect to Delta Lake data from Azure Data Lake Storage
 
@@ -59,11 +61,6 @@ Ingest data that is already prepared and stored in your lake houses into Dynamic
    :::image type="content" source="media/delta-review-tables.png" alt-text="Dialog box of a list of tables to select":::
 
 1. Select the tables you want to include. To add tables, select **New table** and enter the required information.
-
-1. For each included table:
-   1. Select **Required**. The **Edit table** panel displays.
-   1. Choose the **Primary key**. The primary key is an attribute unique to the table. For an attribute to be a valid primary key, it shouldn't include duplicate values, missing values, or null values. String, integer, and GUID data type attributes are supported as primary keys.
-   1. Select **Close** to save and close the panel.
 
 1. Select the number of **Columns** for each included table. The **Manage attributes** page displays.
 
