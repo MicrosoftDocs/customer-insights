@@ -1,7 +1,7 @@
 ---
-title: Set up and manage an event waitlist
-description: Describes how event waitlists work, how to set them up, and how to invite waiting people when capacity becomes available in  Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/18/2023
+title: Set up and manage an event waitlist in outbound marketing
+description: Describes how event waitlists work, how to set them up, and how to invite waiting people when capacity becomes available in outbound marketing.
+ms.date: 09/22/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -11,9 +11,12 @@ search.audienceType:
   - enduser
 ---
 
-# Set up and manage an event waitlist
+# Set up and manage an event waitlist in outbound marketing
 
 [!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+
+> [!IMPORTANT]
+> This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
 
 You can assign a maximum capacity to each event or session when needed. When the number of registrations reaches that capacity, the system won't accept any more active registrations, but you can still allow new registrants to add themselves to a waitlist.
 

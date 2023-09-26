@@ -1,7 +1,7 @@
 ---
-title: Initial and ongoing event planning
+title: Set up an event
 description: How to plan an event, register basic info, set up your team, manage sessions and speakers, set the event schedule, issue passes,  and manage venues in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/23/2023
+ms.date: 09/22/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -14,6 +14,12 @@ search.audienceType:
 # Set up an event
 
 [!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+
+> [!IMPORTANT]
+> To use event management in the real-time journeys area of Customer Insights - Journeys, you must enable the feature switch. To enable the feature switch:
+>
+> 1. Go to **Settings** > **Overview** > **Feature switches**.
+> 1. Enable the **Enable events creation in real-time journeys** feature switch toggle.
 
 The event planning process in Dynamics 365 Customer Insights - Journeys starts with creating an event record. The event record guides you through each step of event planning. The record collects all of your planning details, gives links to related records, and provides a business-process timeline. After you create the event record, you can set up your event team, manage speakers and sessions, set up event passes, and set up a venue.
 
@@ -42,8 +48,6 @@ Only live events, sessions, and tracks are shown on the event website. When you'
 
 ### The General tab
 
-# [Customer Insights - Journeys](#tab/customer-insights-journeys)
-
 Here you can see and edit your basic event information, including:
 
 - **Key information**: Includes the name of your event and other basic details. The following settings are provided:
@@ -59,25 +63,6 @@ Here you can see and edit your basic event information, including:
 - **Venue constraints**: The venue constraints section only appears for on-site events. Each time you set a new Location, the Maximum event capacity value shown here updates to match the capacity configured for your last selected building, room, or layout (if available). You can then edit the value manually to override the capacity figure if needed. You can also enable the waitlist here to handle registrations that arrive after the event is full.
 - **Webinar setup**: The webinar setup section only appears for webinar and hybrid events. Use the settings here to set up your webinar configuration and find the URLs for viewing and presenting the webinar.
 
-# [Outbound marketing](#tab/outbound)
-
-Here you can see and edit your basic event information, including:
-
-- **Key information**: Includes the name of your event and other basic details. The following settings are provided:
-  - **Event name**: Enter a name for the event.
-  - **Event type**: Choose the type of event. The event type is for information only and won't affect any features. Use it to make your event easier to find and identify.
-  - **Registration count**: Shows the number of people who registered for the event. The maximum value that can be shown here is 50,000, but you can still store more registrations in the system.
-  - **Check-in count**: Shows the number of attendees that checked in during the event. The maximum value that can be shown here is 50,000, but you can still store more check-ins in the system.
-  - **Event URL**: Shows the address of your [event website](set-up-event-portal.md). If you're using the default location on your Power Apps portals solution, the event URL value is read-only and provided automatically. If you are hosting your website at a custom location, then select the **Custom event URL** check box and edit the value here. Select the globe button next the event URL field to open the site. More information: [Open the event website](set-up-event-portal.md#open-site)
-- **Schedule**: Provides settings for specifying the time zone, start, and end dates for your event. The schedule section also provides a countdown of the days until your event. You can also set up a [recurring event](event-recurring.md) here. If you change the start date for an event that's already been saved, you'll be asked whether you want to change the end date and the session schedule to match it.
-- **Timeline**: As with most types of entities in Dynamics 365, you can use this section to build a record of the activities (such as calls, emails, and appointments) that you and others do in relation to the current record. You can also share notes here. Use the links, buttons, and menus at the top of this area to create new items and to search and sort the list.
-- **Stream this event online**: Set up your event as a [Microsoft Teams webinar](teams-webinar.md),a [Teams Live Event](/microsoftteams/teams-live-events/what-are-teams-live-events), a [Teams Meeting](/microsoftteams/tutorial-meetings-in-teams), [a third-party webinar provider](set-up-webinar.md), or on-site only.
-- **Location**: Specify the location where your event will take place. The location is hierarchical, and you can specify only as much detail as you need. For example, you can specify just a building. But to specify a room, you must first choose the building that contains that room. You can assign a separate location to each session if applicable. You can create location records from here, or choose from among existing [venue records](#venues). Each location record can contain useful information such as address, facilities, capacity, and more.
-- **Venue constraints**: The venue constraints section only appears for on-site events. Each time you set a new **Location**, the **Maximum event capacity value** shown here updates to match the capacity configured for your last selected building, room, or layout (if available). You can then edit the value manually to override the capacity figure if needed. You can also enable the [waitlist](event-waitlist.md) here to handle registrations that arrive after the event is full.
-- **Waitlist**: The waitlist section only appears if you enable the waitlist in the **Venue constraints** section. Use the waitlist to configure options regarding how to [invite waiting contacts](event-waitlist.md) when space becomes available.
-- **Webinar setup**: The webinar setup section only appears for webinar and hybrid events. Use the settings here to [set up your webinar configuration](set-up-webinar.md) and find the URLs for viewing and presenting the webinar.
-
---- 
 <a name="agenda-tab"></a>
 
 ### The Agenda tab
@@ -95,8 +80,6 @@ The **Agenda** tab includes details about the schedule of sessions happening dur
 
 ### The Website and form tab
 
-# [Customer Insights - Journeys](#tab/customer-insights-journeys)
-
 The Website and form tab provides options to set registration parameters. First, you can decide where do you want attendees to register for your event:
 - On a standalone registration page:
     - Use this option if you want to create a registration page using Customer Insights - Journeys registration forms and use Customer Insights - Journeys to host the page.
@@ -109,54 +92,11 @@ The Website and form tab provides options to set registration parameters. First,
 - This event does not have a website:
     - Use this option if you want to collect registrations elsewhere or not collect them at all.
 
-# [Outbound marketing](#tab/outbound)
-
-The **Website and form** tab provides options for creating a custom [event website](set-up-event-portal.md) and integrating [marketing forms](marketing-forms.md) for event registration. In this tab you can set a custom event URL, set a registration end date, and set registration parameters. The following options are available:
-
-- **Custom event URL**: If you are [hosting your event website](set-up-event-portal.md) on your own server, or in a custom location of your Power Apps portals solution, select this check box and edit the **Event URL** as needed.
-- **Readable event ID**: This is a unique ID for the event. It is generated the first time you save the event, and is based on the event name. The readable event ID becomes [part of the URL](set-up-event-portal.md#open-site) for opening the event website to a particular event.
-- **Event image**: Choose a banner image to show on the event website when browsing the event. You can choose any image that is already [uploaded to your file library](upload-images-files.md), or upload a new one from here.
-- **Portal payment gateway**: To enable online payment during online event registration, set up an account with a third-party online payment provider and then [prepare a payment page](event-payment-gateway.md) on your portal according to their instructions. Then choose that page here. This setting only has an effect for event websites [hosted on the Power Apps portal](set-up-event-portal.md#customize) (it has no effect on externally hosted event websites).
-- **Set registrations end date**: Set this toggle to **Yes** to set a date and time after which contacts will no longer be able to register for the event. Setting an end date for registrations is useful if you would like a cutoff to allow you to finalize your attendee list before the event starts. You can also include a **Website message** regarding the event registration stop date. Set the toggle to **No** to leave registration open until the start of the event.
-- **Use marketing form for registration**: Set the toggle to **Yes** to use a previously prepared [marketing form](marketing-forms.md) for event registration. When the toggle is set to yes, a **Marketing form** option appears below, allowing you to search for the marketing form you would like to use. If you select **No**, the event will use the default event marketing form.
-- **Enable CAPTCHA**: Set the toggle to **Yes** to include a [CAPTCHA](http://www.captcha.net/) on the [registration page](set-up-event-portal.md#registration) of your event website. Set the toggle to **No** to disable the CAPTCHA.
-    > [!IMPORTANT]
-    > Beginning in November 2022, the [Captcha](http://www.captcha.net/) service endpoints for event website are changing. If you have origin checks for your event portal requests, the Captcha call origin points will change from `https://client.prod.repmap.microsoft.com/` to `https://*.svc.dynamics.com` (where * varies based on the Events API).
-    >
-    > You can learn more about the Events API in the [Using the Events API](developer/using-events-api.md) article.
-- **Enable multi-attendee registration**: Set the toggle to **Yes** to allow users of the event website to register several attendees at once. Set the toggle to **No** to allow just one attendee per registration.
-- **Allow anonymous registrations**: Controls whether contacts can freely register themselves for an event on the event website, or if they must first set up an account with a user name and password. Contacts who create an account have several advantages including: the ability to register any number of attendees and the ability to return to view schedules or edit their registrations at any time. This setting only has an effect for event websites [hosted on the Power Apps portal](set-up-event-portal.md#customize) (it has no effect on externally hosted event websites).
-- **Create leads for event registrations**: Set to **Yes** to create a new lead for each contact that registers for the event. Set to **No** to turn off lead generation for events. More information: [Generate and match contacts and leads from event registrations](set-up-event-portal.md#generate-leads).
-    > [!NOTE]
-    > As mentioned, the **Registration count** and **Check-in count** fields can each count up to a maximum of 50,000 contacts. The system can easily handle more registrations and/or check-ins than this, but for values higher than 50,000, these fields are no longer accurate.
-- **Custom registration fields**: Here you can [view and create custom registration fields](custom-registration-fields.md), which enable registrants to provide extra information  (such as dietary restrictions or gift options) when they register for the event.
-
----
-
 ### The Registration and attendance tab
-
-# [Customer Insights - Journeys](#tab/customer-insights-journeys)
 
 Use the **Registration and attendance** tab to see who registered for the event and who attended. You can also create registrations and check-ins here. The following sections are available:
 - Event registration: This table provides a list of people who [registered](invite-register-house-event-attendees.md) for your event. You can also [register people manually](invite-register-house-event-attendees.md) here. If you are using [custom registration fields](custom-registration-fields.md), then you can also view the values submitted by each attendee here.
 - Event check-ins: Here you can see who attended the event and enter attendance records.
-
-# [Outbound marketing](#tab/outbound)
-
-Use the **Registration and attendance** tab to see who registered for the event, who attended, and who canceled. You can also create registrations and check-ins here. The following sections are available:
-
-- **Passes**: View and create types of [passes](#event-passes), which function as tickets to your events, sessions, and tracks.
-- **Event registration**: This table provides a list of people who  [registered](invite-register-house-event-attendees.md) for your event. You can also [register people manually](invite-register-house-event-attendees.md) here. If you are using [custom registration fields](custom-registration-fields.md), then you can also view the values submitted by each attendee here.
-- **Event check-ins**: Here you can see who attended the event and enter attendance records.
-- **Waitlist**: See who's on the [waitlist](event-waitlist.md) for this event.
-- **Contacts who canceled**: Lists contacts who were registered for the event but who have now canceled their registration. The list includes cancellations made by contacts using the event website and by users using the Customer Insights - Journeys app. If you'd like to communicate with contacts who canceled from one or more events, you can set up a behavioral segment based on `EventRegistrationCancelled` interactions and then use that segment to target a customer journey.
-
-    > [!NOTE]
-    > Canceled event registrations are deactivated, not deleted. To cancel an event registration from within Customer Insights - Journeys, simply deactivate the record.
-    >
-    > To determine your current Customer Insights - Journeys version, refer to [Find out which version of Dynamics 365 Customer Insights - Journeys you are running](apply-updates.md#find-out-which-version-of-customer-insights---journeys-you-are-running).
-
----
 
 ### The Additional information tab
 
@@ -244,26 +184,7 @@ When setting up a speaker engagement, you map a speaker to a specific session fo
 
 ## Set up event passes
 
-# [Customer Insights - Journeys](#tab/customer-insights-journeys)
-
 Event passes are not supported in Customer Insights - Journeys Event Management.
-
-# [Outbound marketing](#tab/outbound)
-
-Event passes are essentially tickets that you can sell or give away to grant access to your event and/or its various sessions and tracks. Passes are optional, but if you want to use them, you'll start by setting up the basic types of passes that you need for an event and adding the applicable sessions to each of them. Later, you'll assign a pass of the appropriate type to each attendee by mapping each event registration to one or more pass types. Passes can also be shown on the event website, so attendees can register for the passes they want while registering for the event itself; in this case, the registration/pass mapping is made automatically. For each assigned pass, Customer Insights - Journeys generates a unique QR code, which you can print onto a physical badge that event personnel can quickly scan on entrance to confirm eligibility and record attendance.
-
-For each pass type, you'll set the event where it applies and then assign a category (attendee, speaker, sponsor, journalist, and so on), a price, an allocation (the number available), and other details. You can also assign a collection of one or more sessions for the pass, which grants access to all the sessions in that track, but not necessarily to all sessions at the event.
-
-For a simple event, you might set up a single pass type that grants access to all sessions for all types of attendees. For a complex event, you might have passes for each of several session tracks, and might require specific pass types for accessing certain areas of the venue (such as a lounge just for journalists). Passes only make sense for physical attendees—you wouldn't set up passes for webinar-only attendees, events, or sessions.
-
-To view and create passes for an event, open the appropriate event record and go to its **Registration & Attendance** tab. You can view, edit, and create passes by working in the **Passes** area here. To add sessions to a pass, first create and save it here, then open it for editing and use its **Eligible sessions** tab to add sessions to it.
-
-> [!NOTE]
-> You can add sessions to a pass individually or add an entire track at once. If you choose to add a track, all of the sessions that currently belong to that track will be added to your pass. However, when you add by track, you won't create a link to the track itself; instead, you just add all the sessions that currently belong to that track to the current pass. Future edits to the track won't affect the pass, so you must edit each existing pass specifically if you need to change the sessions that belong to it.
-
-When setting up a pass, pay attention to the **Passes Allocated** field, where you set the number of passes available, and its related fields: **Passes Sold** and **Passes Remaining**. Each time a pass is granted to an attendee, the **Passes Sold** number automatically increases and the **Passes Remaining** number decreases. When **Passes Remaining** reaches zero, that pass will be shown on the event website as "sold out" and will no longer be available for purchase by further attendees. If you set **Passes Allocated** to zero, that pass won't be shown on the website at all; you might do this for VIP passes, or to keep a pass as a draft until you're ready to publish it by setting **Passes Allocated** to a positive value.
-
----
 
 <a name="venues"></a>
 

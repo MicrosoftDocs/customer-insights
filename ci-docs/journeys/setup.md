@@ -1,7 +1,7 @@
 ---
 title: Install and manage Customer Insights
 description: How to install, uninstall, and manage Dynamics 365 Customer Insights environments.
-ms.date: 09/15/2023 
+ms.date: 09/22/2023 
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -66,8 +66,10 @@ To set up a new Customer Insights environment:
 
 1. In the installation management area, you'll see your available environments listed and can choose where you want to install Customer Insights - Journeys or Customer Insights - Data.
 
-> [!div class="mx-imgBorder"]
-> ![Installation management area screenshot.](media/new-installation.png "Installation management area screenshot")
+    > [!div class="mx-imgBorder"]
+    > ![Installation management area screenshot.](media/new-installation.png "Installation management area screenshot")
+
+1. After you've installed the Customer Insights - Journeys and Customer Insights - Data apps on the same environment, you need to finish connecting them. To connect the apps, go to **Customer Insights - Journeys** then go to **Settings** > **Data Management** > **Customer Insights** and select the **Connect'** button. This completes the data sync for segmentation between the two applications.
 
 ## Maintain or update your installation
 
