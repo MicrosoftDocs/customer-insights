@@ -29,6 +29,9 @@ The cross-journey analytics dashboard allows you to check in on the performance 
 
 The following sections describe the widgets in greater depth.
 
+## Filters
+You can filter the dashboard views based on date, one or more journeys, journey status and journey goal. Please keep in mind that the dashboard will present journeys that have been created within the period specified in the date filter.
+
 ## KPI summary charts
 
 KPI summary charts summarize the cross-journey key performance indicators for the specified time period. You can further filter the charts by journey name, journey status, or journey goal.
