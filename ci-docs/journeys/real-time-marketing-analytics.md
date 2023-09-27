@@ -1,7 +1,7 @@
 ---
 title: Access and interpret analytics
 description: How to access and interpret Customer Insights - Journeys analytics in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/22/2023
+ms.date: 09/26/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -63,13 +63,23 @@ Select any journey component to view near real-time operational analytics in the
     To view delivery and interaction statistics, select the **Delivery and interaction details** link at the bottom of the channel analytics pane. Delivery and interaction details allow you to analyze delivery, engagement, and performance data for your email, text, or push notification messages. The **Delivery** tab provides details on messages sent, delivered, blocked, or bounced along with the respective reasons. The **Interactions** tab provides detailed data on customers that opened or clicked a message, as well as unsubscription interaction data. It's important to note that a message’s unique opens and clicks are calculated based on the journey run of a customer. This means that if the same customer enters the same journey multiple times and opens or clicks the same message each time, the system will record multiple unique opens or clicks. For example, if a customer clicks the same message in two different journey executions, two unique clicks will be recorded.
 
     :::image type="content" source="media/real-time-marketing-analytics-interactions.png" alt-text="Delivery and interactions details screenshot." lightbox="media/real-time-marketing-analytics-interactions.png":::
-
+  
+> [!IMPORTANT]
+> As of September 2023, several enhancements have been introduced in email analytics, including key performance indicators such as:
+> - **Delivery rate**: the percentage of emails delivered divided by the number of emails sent.
+> - **Open rate**: the percentage of unique email opens divided by the number of emails delivered.
+> - **Click rate**: the percentage of unique email clicks divided by the number of emails delivered.
+>
+> In the delivery and interaction details, you can now export up to 50,000 records of interaction data and access links to audience profiles that interacted with your email messages. Additionally, timestamps are reported according to the organization's timezone.
+> 
+> While these enhancements initially apply to email analytics, they will be gradually rolled out to journey operational analytics and other channel analytics.
+  
 - **AI optimization**: Near real-time data to help you evaluate how applying AI optimization has helped your engagement rate.
 
     :::image type="content" source="media/real-time-marketing-ai-optimization.png" alt-text="AI optimization screenshot." lightbox="media/real-time-marketing-ai-optimization.png":::
 
 > [!NOTE]
-> Data retention is 12 months for Contact insights, Lead insights, goal analytics, channel analytics (including delivery and interaction details), and AI optimization analytics.
+> Data retention is 12 months for contact insights, lead insights, goal analytics, channel analytics (including delivery and interaction details), and AI optimization analytics.
 
 ## Aggregate cross-journey analytics
 

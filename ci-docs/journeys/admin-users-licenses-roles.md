@@ -1,7 +1,7 @@
 ---
 title: Manage user accounts, user licenses, and security roles
 description: How to manage user accounts, add licenses to users, and assign security roles in Dynamics 365 Customer Insights - Journeys.
-ms.date: 09/19/2023
+ms.date: 09/26/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -27,7 +27,7 @@ Unlike most Dynamics 365 apps, Customer Insights - Journeys is licensed per inst
 
 ### Grant access to users that already have a Dynamics 365 license
 
-Any user who already has a license for any model-driven app in Dynamics 365 also will be able to access Customer Insights - Journeys without requiring any additional licenses. All you need to do is [assign them the security roles and privileges](#assign-role) required to access the Customer Insights - Journeys features they need.  
+Any user who already has a license for any model-driven app in Dynamics 365 can also access Customer Insights - Journeys without requiring extra licenses. All you need to do is [assign them the security roles and privileges](#assign-role) required to access the Customer Insights - Journeys features they need.  
 
 ### Grant access to users without a Dynamics 365 license
 
@@ -185,8 +185,8 @@ The tables in this section summarize the purpose of each role added by Customer 
 | Marketing Services User | For internal use only, don't delete or modify | This is an internal security role used by the solution to perform internal tasks, such as syncing data. Don't delete or modify this role. |
 | Lead Score Modeler | Customer Insights - Journeys strategists responsible for building lead-scoring models (must be combined with a core marketing role) | Can view and edit lead scoring models, view lead scores, and customize the lead-to-opportunity marketing business process for leads. All these features are in the **Lead management** section of the **Customer Insights - Journeys** work area.  |
 | Lead Score Viewer | Marketers and salespeople that should see calculated lead scores (must be combined with one of the other marketing and/or sales roles) | Can view the score achieved by each lead. |
-| Marketing Professional (BU level) - Business | Marketers in orgs with multiple business units  | Same access as **Marketing Manager - Business**, but privileges are scoped to "Local" - for example, just local business unit access.
-| Marketing Manager (BU level) - Business* |  Customer Insights - Journeys managers in orgs with multiple business units | Same access as **Marketing Professional - Business**, but privileges are scoped to "Deep" - for example, just local + child business unit access.
+| Marketing Professional (BU level) - Business | Marketers in orgs with multiple business units  | Same access as **Marketing Manager - Business**, but privileges are scoped to "Local" - for example, only local business unit access.
+| Marketing Manager (BU level) - Business* |  Customer Insights - Journeys managers in orgs with multiple business units | Same access as **Marketing Professional - Business**, but privileges are scoped to "Deep" - for example, only local + child business unit access.
 
 "Marketing Professional" and "Marketing Manager" roles (without the "Business" suffix) are roles used in enterprise marketing and not related to the Customer Insights - Journeys product.
 
@@ -223,20 +223,23 @@ Customer Insights - Journeys includes a preconfigured user called **D365 Marketi
 - Marketing Service user extensible role
 - Marketing service user real-time role
 
-The system uses this account when performing important internal tasks, and Customer Insights - Journeys will stop working correctly if you remove the user or any of these required roles. Be sure not to remove or modify this user.
+The system uses this account when performing important internal tasks. Customer Insights - Journeys stops working correctly if you remove the user or any of these required roles. Be sure not to remove or modify this user.
 
 ### Customer Insights - Journeys service users
 
-After deploying Customer Insights - Journeys features, several service users are created. Deleting these users will break your deployment.
+After deploying Customer Insights - Journeys features, several service users are created. Deleting these users breaks your deployment.
 
-| Customer Insights - Journeys service user | Customer Insights - Journeys area |
-| ---- | ------- |
-| Customer Experience Platform PROD | All other areas not listed explicitly in this table |
-| Dynamics Marketing Dataverse Datasource  | Personalization of messages |
-| Dynamics Marketing Interactive Scenarios  | Handling flows triggered by organic users |
-| Dynamics Marketing Lifecycle Management | Lifecycle and provisioning scenarios |
-| Dynamics Marketing Native Segmentation | Segmentation |
-| Dynamics Marketing Workflow | Customer journey execution |
+| Customer Insights - Journeys service user | Microsoft Entra ID | Customer Insights - Journeys area |
+| ---- | ---- | ------- |
+| Customer Experience Platform PROD | 3e56e0fc-542f-4522-bac1-c7cab1017459 | All other areas not listed explicitly in this table |
+| D365 Dataverse Data | ca179245-7fe3-4d70-a945-09c79f85cf41 | Personalization of messages during customer journey execution |
+| D365 Experimentation | 729028a7-33d3-428b-b7be-0cff66ad5495| Customer journey experimentations |
+| D365 Interactives | c88804dd-52b8-4e23-b62d-f0e38f5cef35 | Handling flows triggered by organic users |
+| D365 Lifecycle Mgmt | c5efd687-df01-42cb-a6b6-391f24349886 | Lifecycle and provisioning scenarios |
+| D365 Native Segments | afc9dd19-c23a-4dc8-9fb7-0ad8cec474ff | Segmentation |
+| D365 Personalization | db13e196-bc9c-42fe-9c55-12558c3a16fa | Design of personalized messages |
+| D365 Sms Channel | bd3e2b66-87c7-4fb7-90c3-de39038fbb14 | Text messages sending |
+| D365 Workflow | ba069707-8fa6-41af-b08d-2d01a0d731e5 | Customer journey execution |
 
 ### Customer Insights - Journeys service user roles
 
