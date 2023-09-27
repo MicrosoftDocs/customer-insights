@@ -11,7 +11,7 @@ search.audienceType:
   - enduser
 ---
 
-# Preview: Customer Insights - Journeys effectiveness analytics
+# Preview: Marketing effectiveness analytics
 
 [!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
@@ -66,7 +66,7 @@ As shown above, a business trigger has been created that gets raised every time 
 > [!NOTE]
 > Ensure that you create the custom or business trigger using the correct audience type (Contact, Lead, or Customer Insights profile) since the milestone will directly leverage the trigger’s audience type.
 
-Next, to start creating a milestone, go to the **Dynamics 365 Customer Insights - Journeys effectiveness analytics dashboard** from the **Analytics** site navigation. You can create and delete milestones from the dashboard settings page. To access dashboard settings, select **“Set up my dashboard”** if you’re using the dashboard for the first time, or the **“Edit dashboard”** button on the upper right corner of the dashboard if you have already set up the dashboard.
+Next, to start creating a milestone, go to the **Dynamics 365 Marketing effectiveness analytics dashboard** from the **Analytics** site navigation. You can create and delete milestones from the dashboard settings page. To access dashboard settings, select **“Set up my dashboard”** if you’re using the dashboard for the first time, or the **“Edit dashboard”** button on the upper right corner of the dashboard if you have already set up the dashboard.
 
 > [!div class="mx-imgBorder"]
 > ![Customer Insights - Journeys effectiveness analytics dashboard needs to be setup](media/real-time-marketing-setup-marketing-analytics-dashboard.png "Customer Insights - Journeys effectiveness analytics dashboard needs to be setup")
