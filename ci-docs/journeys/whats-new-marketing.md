@@ -1,7 +1,7 @@
 ---
 title: New and upcoming features
 description: Information about new features, improvements, and bug fixes in Dynamics 365 Customer Insights - Journeys releases.
-ms.date: 08/17/2023
+ms.date: 09/26/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -42,16 +42,16 @@ On September 1, 2023, Dynamics 365 Customer Insights - Journeys transitioned to 
 ### General availability
 
 - **Simplify and summarize segments using query assist Copilot functionality**
-    - Updated Copilot-enhanced query assist streamlines your workflow and enables effective teamwork. Use query assist copilot functionality in real-time marketing to create segments by describing them in plain English. Then, ensure your segment logic matches the intended outcome by translating the logic into a natural language description of the segment. Users who view or consume segments created by others can use the copilot functionality to identify which audience the segment captures without needing to understand the segment creation logic. Query assist also offers suggested improvements during segment creation to help eliminate redundant conditional statements and further improve segment comprehension and performance.
+    - Updated Copilot-enhanced query assist streamlines your workflow and enables effective teamwork. Use query assist Copilot functionality in real-time marketing to create segments by describing them in plain English. Then, ensure your segment logic matches the intended outcome by translating the logic into a natural language description of the segment. Users who view or consume segments created by others can use the Copilot functionality to identify which audience the segment captures without needing to understand the segment creation logic. Query assist also offers suggested improvements during segment creation to help eliminate redundant conditional statements and further improve segment comprehension and performance.
     - [Release plan](/dynamics365/release-plan/2023wave1/marketing/dynamics365-marketing/simplify-summarize-segments-using-query-assist-copilot-functionality)
     - [Docs](real-time-marketing-natural-language-segments.md)
 
 - **Communicate effectively with personalized lists**
-    - Lists are a common way to organize and communicate a repeated set of information such as a list of speakers or sessions for an event, list of items in an order, etc. Since lists can be quite information packed, ensuring only the relevant information is included is important (including what to include when a list item is missing some information). One way to personalize a list is to only include certain rows (e.g., rather than listing all sessions of an event, only include online sessions). Another way is to annotate items that meet certain conditions, for example, indicate which sessions require additional registration or fee. Finally, there are times when you need to include additional information that is not in the data source of the list but in a related table. Now it is easier than ever to achieve such highly personalized and informative lists with enhanced capabilities to specify conditions at the list item level, include relevant information in related tables, control date/time format, and specify default values when a list item is empty.
+    - Lists are a common way to organize and communicate a repeated set of information such as a list of speakers or sessions for an event, list of items in an order, etc. Since lists can be quite information packed, ensuring only the relevant information is included is important (including what to include when a list item is missing some information). One way to personalize a list is to only include certain rows (for example, rather than listing all sessions of an event, only include online sessions). Another way is to annotate items that meet certain conditions, for example, indicate which sessions require additional registration or fee. Finally, there are times when you need to include additional information that is not in the data source of the list but in a related table. Now it's easier than ever to achieve such highly personalized and informative lists with enhanced capabilities to specify conditions at the list item level, include relevant information in related tables, control date/time format, and specify default values when a list item is empty.
     - [Docs](real-time-marketing-personalize-lists.md)
 
 - **Engage customers with text messages sent using Vibes**
-    - Connect your existing Vibes account to reach out to your customers through text messages. Use all real-time marketing text message features with your Vibes account to maximize customer engagement. Leverage out-of-the-box functionalities such as personalization, templates, and analytics to unlock the potential of Vibes.
+    - Connect your existing Vibes account to reach out to your customers through text messages. Use all Customer Insights - Journeys text message features with your Vibes account to maximize customer engagement. Leverage out-of-the-box functionalities such as personalization, templates, and analytics to unlock the potential of Vibes.
     - [Docs](real-time-marketing-outbound-text-messaging.md#sign-up-for-and-configure-a-vibes-account)
 
 ### Public preview
@@ -62,35 +62,37 @@ On September 1, 2023, Dynamics 365 Customer Insights - Journeys transitioned to 
     - [Docs](email-theme.md)
 
 - **Use Copilot to style your forms and event registration pages to match your website**
-    - Build forms and event registration pages that perfectly match your website and brand guidelines within minutes. Leverage copilot assistance to interpret your website and instantly apply the same styles, saving time designing your marketing or event registration forms. Copilot copies label fonts, input fields styles, colors, and buttons from your website. You can then review and refine elements to perfectly match your brand guidelines.
+    - Build forms and event registration pages that perfectly match your website and brand guidelines within minutes. Leverage Copilot assistance to interpret your website and instantly apply the same styles, saving time designing your marketing or event registration forms. Copilot copies label fonts, input fields styles, colors, and buttons from your website. You can then review and refine elements to perfectly match your brand guidelines.
     - [Release plan](/dynamics365/release-plan/2023wave1/marketing/dynamics365-marketing/use-copilot-style-forms-event-registration-pages-match-website)
     - [Docs](real-time-marketing-manage-forms.md#style-your-forms-using-theme)
 
 - **Automatically prevent duplicate emails to contacts that share the same email address**
-    - Effective email management is crucial for maintaining strong customer relationships and ensuring your business's success. By enabling email deduplication, you can ensure that your message is sent only once, even multiple contacts share the same email address. This helps keep your customers’ inbox clutter-free, increases the chance that important messages avoiding the dreaded spam folder and ultimately preserves your brand reputation.  
+    - Effective email management is crucial for maintaining strong customer relationships and ensuring your business's success. By enabling email deduplication, you can ensure that your message is sent only once, even when multiple contacts share the same email address. This helps keep your customers’ inboxes clutter-free, increases the chance that important messages avoiding the dreaded spam folder, and preserves your brand reputation.  
+    - [Release plan](/dynamics365/release-plan/2023wave2/marketing/dynamics365-marketing/prevent-duplicate-emails-contacts-that-share-email-address)
     - [Docs](email-deduplication.md)
 
 - **Increase engagement using alphanumeric SMS senders**
-    - With alphanumeric senders, you can now send one-way text messages to your customers using a custom string of letters or numbers, making it easier for customers to recognize that messages are from a trusted source. By using your brand or company name, you gain brand awareness, increase trust, and ultimately boost the overall effectiveness of your SMS marketing efforts.
-    - [Docs](real-time-marketing-outbound-text-messaging.md)
+    - With alphanumeric senders, you can now send one-way text messages to your customers using a custom string of letters or numbers, making it easier for customers to recognize that messages are from a trusted source. By using your brand or company name, you gain brand awareness, increase trust, and boost the overall effectiveness of your SMS marketing efforts.
+    - [Release plan](/dynamics365/release-plan/2023wave2/marketing/dynamics365-marketing/increase-engagement-using-alphanumeric-sms-senders)
+    - [Docs](real-time-marketing-outbound-text-messaging.md#add-a-sender-number-from-an-infobip-link-mobility-telesign-twilio-or-vibes-account-worldwide)
 
 ### Monthly enhancements
 
-- **Analytics: Optimize your email marketing efforts with enhanced email insights**
-    - With the introduction of key performance indicators such as email Open Rate, Click Rate and Delivery Rate in email insights, you can get a deeper understanding of your email campaign effectiveness. Moreover, in delivery and interaction details, you can now export up to 50,000 records of interaction data, as well as view the people that interacted with your email messages.
-- **Journeys: Make updates to your journey by describing them in conversational language with journey copilot**
-    - In this release, we’ve made it easier for marketers to make small changes to their journeys by describing them in their own words. For example, you want first create a journey that sends emails to your loyalty members about an upcoming sale, then later want to address a more specific audience like customers who have a birthday this month. You can make this change by simply asking copilot to switch out the audience. 
+- **Analytics: Optimize email marketing efforts with enhanced email insights**
+    - With the introduction of key performance indicators such as email Open Rate, Click Rate, and Delivery Rate in email insights, you can get a deeper understanding of your email campaign effectiveness. Moreover, in delivery and interaction details, you can now export up to 50,000 records of interaction data, as well as view the people that interacted with your email messages.
+- **Journeys: Make updates to your journey by describing them in conversational language with journey Copilot**
+    - In this release, we’ve made it easier for marketers to make small changes to their journeys by describing them in their own words. For example, you want first create a journey that sends emails to your loyalty members about an upcoming sale, then later want to address a more specific audience like customers who have a birthday this month. You can make this change by simply asking Copilot to switch out the audience.
 - **Journeys: Create leads and opportunities from journeys**
-    - For businesses that use leads and opportunities to track sales activity they are a crucial output of the marketing process. Now you can create them directly within your customer journeys, giving you the control to create the right leads and opportunities at the right point in your customer’s experience.
+    - For businesses that use leads and opportunities to track sales activity, they are a crucial output of the marketing process. Now you can create leads and opportunities directly within customer journeys, giving you the control to create the right leads and opportunities at the right point in your customer’s experience.
 - **Personalization: Performance improvements for journeys using audience entities with many custom attributes**
-    - Personalization layer now loads only the needed set of columns (instead of the entire entity) for audience entities (Contact, Lead, or Profile) during journey execution. This reduces execution time significantly (and drives much higher journey throughput) for customers who have added a large number of custom attributes to their audience entities.
+    - The personalization layer now loads only the needed set of columns (instead of the entire entity) for audience entities (contact, lead, or profile) during journey execution. This reduces execution time significantly (and drives much higher journey throughput) for customers who have added a large number of custom attributes to their audience entities.
 - **Email: Subject line and preview text limit is increased from 500 characters to 4000 characters**
-- **Consent: Capture and share consent across multiple lines of business by sharing consent purposes**
-    - Multi-brand compliance profiles enable you to build trust in your multiple brand(s) by giving your customers control over their communication preferences tailored to each line of business. With the added ability to create new consent purposes and share those purposes across compliance profiles, you can now use the same consent captured from one profile in other profiles and their preference centers. This enables you to capture consent for a parent brand, and then share that consent with each of the child brands in your organization.
-- **ConsentL Preference center and consent support for custom channels**
-    - Preference centers in real-time journey now support custom channels for purpose and topic based consent. Custom channel messages can set a preference center compliance profile, purpose and (optional) topic and real-time journeys will respect the contact point consent for those messages. Messages sent to custom channels follow the same consent enforcement rules as SMS messages.
 - **Consent: Create segments from consent topics and purposes**
-    - Use the consent captured from your customers to create segments that target people who have opted into receiving specific types of communications. Segments now support creating segments from topic and purpose contact point consent records, so that you can get accurate segment sizes and don’t include people who would not receive your messages. For example, create a segment that only includes contacts that have opted in to receive your Monthly Newsletter topic. Or create a segment that only includes leads who have not opted out of receiving commercial messages.
+    - Use the consent captured from your customers to create segments that target people who have opted into receiving specific types of communications. Segments now support creating segments from topic and purpose contact point consent records, so that you can get accurate segment sizes and don’t include people who would not receive your messages. For example, create a segment that only includes contacts that have opted in to receive your "Monthly Newsletter" topic. Or create a segment that only includes leads who have not opted out of receiving commercial messages.
+- **Consent: Capture and share consent across multiple lines of business by sharing consent purposes**
+    - Multi-brand compliance profiles enable you to build trust in your multiple brand(s) by giving your customers control over their communication preferences tailored to each line of business. With the added ability to create new consent purposes and share those purposes across compliance profiles, you can now use the same consent captured from one profile in other profiles and their preference centers. This enables you to capture consent for a parent brand and then share that consent with each of the child brands in your organization.
+- **Consent: Preference center and consent support for custom channels**
+    - Preference centers in real-time journeys now support custom channels for purpose and topic-based consent. Custom channel messages can set a preference center compliance profile, purpose, and (optional) topic and real-time journeys will respect the contact point consent for those messages. Messages sent to custom channels follow the same consent enforcement rules as SMS messages.
 
 ### New blogs and scenario docs
 
