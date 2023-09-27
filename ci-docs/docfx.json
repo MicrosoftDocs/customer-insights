@@ -84,9 +84,11 @@
         "journeys/**.*": [
           "D365CE",
           "D365Mktg",
+          "marketing-docs",
           "customerinsightsjourneys-docs"
         ],
         "data/**.*": [
+          "customerinsights-docs",
           "customerinsightsdata-docs"
         ]
       }
