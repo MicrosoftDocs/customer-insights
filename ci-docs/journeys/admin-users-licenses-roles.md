@@ -27,7 +27,7 @@ Unlike most Dynamics 365 apps, Customer Insights - Journeys is licensed per inst
 
 ### Grant access to users that already have a Dynamics 365 license
 
-Any user who already has a license for any model-driven app in Dynamics 365 also will be able to access Customer Insights - Journeys without requiring any additional licenses. All you need to do is [assign them the security roles and privileges](#assign-role) required to access the Customer Insights - Journeys features they need.  
+Any user who already has a license for any model-driven app in Dynamics 365 can also access Customer Insights - Journeys without requiring extra licenses. All you need to do is [assign them the security roles and privileges](#assign-role) required to access the Customer Insights - Journeys features they need.  
 
 ### Grant access to users without a Dynamics 365 license
 
@@ -185,8 +185,8 @@ The tables in this section summarize the purpose of each role added by Customer 
 | Marketing Services User | For internal use only, don't delete or modify | This is an internal security role used by the solution to perform internal tasks, such as syncing data. Don't delete or modify this role. |
 | Lead Score Modeler | Customer Insights - Journeys strategists responsible for building lead-scoring models (must be combined with a core marketing role) | Can view and edit lead scoring models, view lead scores, and customize the lead-to-opportunity marketing business process for leads. All these features are in the **Lead management** section of the **Customer Insights - Journeys** work area.  |
 | Lead Score Viewer | Marketers and salespeople that should see calculated lead scores (must be combined with one of the other marketing and/or sales roles) | Can view the score achieved by each lead. |
-| Marketing Professional (BU level) - Business | Marketers in orgs with multiple business units  | Same access as **Marketing Manager - Business**, but privileges are scoped to "Local" - for example, just local business unit access.
-| Marketing Manager (BU level) - Business* |  Customer Insights - Journeys managers in orgs with multiple business units | Same access as **Marketing Professional - Business**, but privileges are scoped to "Deep" - for example, just local + child business unit access.
+| Marketing Professional (BU level) - Business | Marketers in orgs with multiple business units  | Same access as **Marketing Manager - Business**, but privileges are scoped to "Local" - for example, only local business unit access.
+| Marketing Manager (BU level) - Business* |  Customer Insights - Journeys managers in orgs with multiple business units | Same access as **Marketing Professional - Business**, but privileges are scoped to "Deep" - for example, only local + child business unit access.
 
 "Marketing Professional" and "Marketing Manager" roles (without the "Business" suffix) are roles used in enterprise marketing and not related to the Customer Insights - Journeys product.
 
@@ -223,11 +223,11 @@ Customer Insights - Journeys includes a preconfigured user called **D365 Marketi
 - Marketing Service user extensible role
 - Marketing service user real-time role
 
-The system uses this account when performing important internal tasks, and Customer Insights - Journeys will stop working correctly if you remove the user or any of these required roles. Be sure not to remove or modify this user.
+The system uses this account when performing important internal tasks. Customer Insights - Journeys stops working correctly if you remove the user or any of these required roles. Be sure not to remove or modify this user.
 
 ### Customer Insights - Journeys service users
 
-After deploying Customer Insights - Journeys features, several service users are created. Deleting these users will break your deployment.
+After deploying Customer Insights - Journeys features, several service users are created. Deleting these users breaks your deployment.
 
 | Customer Insights - Journeys service user | Microsoft Entra ID | Customer Insights - Journeys area |
 | ---- | ---- | ------- |
