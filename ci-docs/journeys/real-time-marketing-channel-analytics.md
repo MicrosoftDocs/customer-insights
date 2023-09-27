@@ -20,7 +20,7 @@ The built-in aggregate channel analytics dashboard shows important metrics and i
 :::image type="content" source="media/real-time-marketing-aggregate-channel-analytics.png" alt-text="Aggregate channel analytics dashboard." lightbox="media/real-time-marketing-aggregate-channel-analytics.png":::
 
 > [!NOTE]
-> Currently, only interaction data from Customer Insights - Journeys is used to populate the aggregate channel analytics dashboards. Data from outbound marketing customer journeys is not used.
+> Currently, only interaction data from Real-time journeys is used to populate the aggregate channel analytics dashboards. Data from outbound marketing customer journeys is not used.
 
 ## How to use the dashboard
 
