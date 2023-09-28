@@ -1,7 +1,7 @@
 ---
 title: Customer interactions timeline 
 description: Learn how to use the customer interactions timeline to view historical activity in Dynamics 365 Customer Insights - Journeys.
-ms.date: 09/07/2023
+ms.date: 09/28/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -78,6 +78,6 @@ For more information, see [Use custom connectors with the timeline control](/pow
 > -	msdynmkt_sms
 
 > [!NOTE]
-> Customer Insights - Journeys activities from the past 12 months are shown in the timeline for the selected contact or lead. However, historical interactions from outbound marketing activities are only shown post the Customer Insights - Journeys installation date or May 2022, whichever is later.
+> Real-time - marketing activities from the past 12 months are shown in the timeline for the selected contact or lead. Historical interactions from outbound marketing activities are only shown after the real-time marketing installation date or May 2022, whichever is later.
 
 [!INCLUDE[footer-include](./includes/footer-banner.md)]
