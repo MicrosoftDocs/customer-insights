@@ -78,6 +78,6 @@ For more information, see [Use custom connectors with the timeline control](/pow
 > -	msdynmkt_sms
 
 > [!NOTE]
-> Customer Insights - Journeys activities from the past 12 months are shown in the timeline for the selected contact or lead. However, historical interactions from outbound marketing activities are only shown post the Customer Insights - Journeys installation date or May 2022, whichever is later.
+> Real time - journeys activities from the past 12 months are shown in the timeline for the selected contact or lead. However, historical interactions from outbound marketing activities are only shown post the Real time - journeys installation date or May 2022, whichever is later.
 
 [!INCLUDE[footer-include](./includes/footer-banner.md)]
