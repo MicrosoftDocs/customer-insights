@@ -13,7 +13,7 @@ search.audienceType:
 
 # Create a static snapshot of a segment
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 Static lists are an important part of audience management. Static lists allow you to:
 
@@ -32,4 +32,4 @@ Using the [attribute logic builder](real-time-marketing-build-segments.md), you 
 > [!div class="mx-imgBorder"]
 >![Create a static snapshot](media/real-time-marketing-static-snapshot-of-segment.png "Create a static snapshot")
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

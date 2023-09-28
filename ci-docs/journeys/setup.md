@@ -13,7 +13,7 @@ search.audienceType:
 
 # Install and manage Dynamics 365 Customer Insights
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 This article explains how to access and use the installation management area for Customer Insights. In this one-stop experience, you can manage to install and uninstall the Customer Insights - Journeys and Customer Insights - Data applications.
 
@@ -83,6 +83,6 @@ In addition to helping you install Customer Insights for the first time, you can
 
 ## Privacy notice
 
-[!INCLUDE[cc-privacy-marketing-fre](./includes/cc-privacy-marketing-fre.md)]
+[!INCLUDE [cc-privacy-marketing-fre](./includes/cc-privacy-marketing-fre.md)]
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

@@ -13,7 +13,7 @@ search.audienceType:
 
 # Prevent sending emails to duplicated email addresses
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > A preview feature is a feature that is not complete, but is made available before it’s officially in a release so customers can get early access and provide feedback. Preview features aren’t meant for production use and may have limited or restricted functionality.
@@ -56,4 +56,4 @@ Let's say you have a customer who has two (or more) customer profiles (CP1 and C
 -	If CP1 opens the first email, CP1 won't get the second email.
 -	However, CP2 goes to “Not opened” branch and receives the second email.
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

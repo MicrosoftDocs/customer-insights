@@ -13,7 +13,7 @@ search.audienceType:
 
 # Create branded, customized preference centers to manage customer consent
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 Preference centers in Customer Insights - Journeys allow you to provide customers with branded experiences to sign up for communications and fine-tune their preferences to ensure they receive the right communications.
 
@@ -61,4 +61,4 @@ Once configured, you can start using the new preference center compliance profil
 [Manage consent for email and text messages in Customer Insights - Journeys](real-time-marketing-email-text-consent.md)
 [Outbound marketing compliance settings](privacy-use-features.md)
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

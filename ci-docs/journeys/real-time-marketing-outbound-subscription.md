@@ -13,7 +13,7 @@ search.audienceType:
 
 # Use outbound subscription centers in Customer Insights - Journeys
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 This article explains how to use outbound marketing subscription centers in journeys. Outbound subscription centers give you consent management flexibility, enabling you to have multiple subscription centers customized and branded to your needs.
 
@@ -72,4 +72,4 @@ Now you can use the subscription center you've set up in a Customer Insights - J
 [Manage user compliance settings in Customer Insights - Journeys](real-time-marketing-compliance-settings.md)
 [Manage consent for email and text messages in Customer Insights - Journeys](real-time-marketing-email-text-consent.md)
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

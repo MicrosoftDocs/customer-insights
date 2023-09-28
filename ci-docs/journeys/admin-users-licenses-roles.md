@@ -13,9 +13,9 @@ search.audienceType:
 
 # Manage user accounts, user licenses, and security roles
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
-[!INCLUDE[marketing-trial-cta](./includes/marketing-trial-cta.md)]
+[!INCLUDE [marketing-trial-cta](./includes/marketing-trial-cta.md)]
 
 Read this article to learn how to work with user accounts, user licenses, and security roles in Dynamics 365 Customer Insights - Journeys.
 
@@ -271,4 +271,4 @@ One service user, **# Dynamics Marketing Dataverse Datasource**, is used to impe
 
 **# Dynamics Marketing Dataverse Datasource** has a **Service Reader** role assigned, which allows it privileged access to any Dataverse data within a given environment.
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

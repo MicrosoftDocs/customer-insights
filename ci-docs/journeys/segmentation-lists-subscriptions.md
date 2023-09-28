@@ -13,7 +13,7 @@ search.audienceType:
 
 # Working with segments
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -165,4 +165,4 @@ If the active segments quota is exceeded, you can do the following to reduce the
 
 For more detailed information please visit [Service limits and fair use policy](fair-use-policy.md)
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

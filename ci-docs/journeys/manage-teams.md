@@ -13,7 +13,7 @@ search.audienceType:
 
 # Manage and apply roles to teams
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 A team is a group of users who share and collaborate on business records. A user can be associated with multiple teams.
 
@@ -67,4 +67,4 @@ For more information about managing teams and working with security roles, see [
 
 For more information about the security roles included with the Dynamics 365 Customer Insights - Journeys, see [Manage user accounts, licenses, and roles](admin-users-licenses-roles.md).
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

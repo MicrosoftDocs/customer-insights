@@ -13,7 +13,7 @@ search.audienceType:
 
 # Define an extended configuration entity for the channel instance account
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 Applicable channels: SMS only
 

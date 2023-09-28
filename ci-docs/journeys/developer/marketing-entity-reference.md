@@ -11,7 +11,7 @@ search.audienceType:
 
 # Dynamics 365 Customer Insights - Journeys entity reference
 
-[!INCLUDE[consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
 
 All the entities that are installed as part of the Dynamics 365 Customer Insights - Journeys solutions support the [standard extensibility/programming model](/dynamics365/customerengagement/on-premises/developer/programming-models) in Dynamics 365 to perform operations on entities using the **Web API** or **Organization Service**. For example, developers can programmatically create, retrieve, update, and delete (CRUD) entity records provided they have the required privileges to do so.
 
@@ -92,4 +92,4 @@ You can perform the following actions:
 > The community tools are not a product of Microsoft. Microsoft does not extend support to the community tools. If you have questions related to the tools, please contact the publisher. More information: [XrmToolBox](https://www.xrmtoolbox.com)
 
 
-[!INCLUDE[footer-include](.././includes/footer-banner.md)]
+[!INCLUDE [footer-include](.././includes/footer-banner.md)]

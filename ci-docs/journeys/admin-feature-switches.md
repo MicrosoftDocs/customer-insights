@@ -13,7 +13,7 @@ search.audienceType:
 
 # Use feature switches to enable or disable optional and preview features
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 Use the **Feature switches** page to enable or disable optional and preview features in Dynamics 365 Customer Insights - Journeys.
 
@@ -41,7 +41,7 @@ The following table lists each available feature together with its preview statu
 | Smart scheduler | Production | [Automatically select the best time to send an email message.](automated-scheduler.md) |
 
 > [!IMPORTANT]
-> [!INCLUDE[cc_preview_features_definition](./includes/cc-preview-features-definition.md)]
-> [!INCLUDE[cc_preview_features_no_MS_support](./includes/cc-preview-features-no-ms-support.md)]
+> [!INCLUDE [cc_preview_features_definition](./includes/cc-preview-features-definition.md)]
+> [!INCLUDE [cc_preview_features_no_MS_support](./includes/cc-preview-features-no-ms-support.md)]
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

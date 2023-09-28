@@ -11,7 +11,7 @@ search.audienceType:
 
 # Finalizing registration for paid events
 
-[!INCLUDE[consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
 
 This topic walks you through the process of developing a .NET Core application that authenticates against Dynamics 365 Customer Insights - Journeys and triggers a custom action that finalizes the registration process for paid events. Before going through the topic, make sure that you read and understand [Set up online payments for events](/dynamics365/customer-engagement/marketing/event-payment-gateway#develop-a-service-to-finalize-event-registration).  
 
@@ -341,4 +341,4 @@ namespace TriggerFinalizeRegistration
 
 ``` 
 
-[!INCLUDE[footer-include](.././includes/footer-banner.md)]
+[!INCLUDE [footer-include](.././includes/footer-banner.md)]

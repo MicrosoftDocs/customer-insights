@@ -13,7 +13,7 @@ search.audienceType:
 
 # The lead lifecycle
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -97,4 +97,4 @@ Business processes are highly customizable and can be used to drive further auto
 > [!NOTE]
 > If you are integrating Customer Insights - Journeys with Dynamics 365 Sales, then you should probably also customize the lead views and dashboards shown to salespeople to ensure that only sales-ready leads are shown to them. More information: [Understand model-driven app views](/powerapps/maker/model-driven-apps/create-edit-views) and [Create or edit model-driven app dashboards](/powerapps/maker/model-driven-apps/create-edit-dashboards)
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

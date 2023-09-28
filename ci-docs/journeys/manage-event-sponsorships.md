@@ -13,7 +13,7 @@ search.audienceType:
 
 # Record and publicize sponsorship details
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > To use event management in the real-time journeys area of Customer Insights - Journeys, you must enable the feature switch. To enable the feature switch:
@@ -30,4 +30,4 @@ search.audienceType:
 
 You can also set up *Sponsorable articles*, which are items that are visibly present at the event, and feature a sponsor's logo or message. These typically include small freebies given away to event attendees, but could also be some type of infrastructure or facility provided to event-goers. Go to **Events** > **Sponsorship Management** > **Sponsorable articles** to view, edit, and create these records. Each sponsorable article record must relate to a parent sponsorship record (which identifies the sponsoring company and the event) and include price and quantity information.
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

@@ -14,7 +14,7 @@ search.audienceType:
 
 # Customer Insights - Journeys trial FAQ
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!NOTE]
 > For the Customer Insights trial, you'll need to use an account that is managed by [Microsoft Microsoft Entra ID](https://azure.microsoft.com/services/active-directory/). If you cannot sign up for Customer Insights using a work or school email address, sign up for a [free Office 365 E5 trial](https://www.microsoft.com/microsoft-365/enterprise/office-365-e5), then use the email address associated with your Office 365 E5 trial to sign up for the Customer Insights trial.
@@ -74,6 +74,6 @@ This isn't possible today. Trial licenses only work on trial-type environments i
 
 ## Trial platform FAQ
 
-[!INCLUDE[trial-faq-platform](./includes/trial-faq-platform.md)]
+[!INCLUDE [trial-faq-platform](./includes/trial-faq-platform.md)]
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

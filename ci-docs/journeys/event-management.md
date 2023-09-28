@@ -13,7 +13,7 @@ search.audienceType:
 
 # Event planning and management
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > To use event management in the real-time journeys area of Customer Insights - Journeys, you must enable the feature switch. To enable the feature switch:
@@ -74,4 +74,4 @@ Customer Insights - Journeys contains a subset of outbound event management feat
 |     Lead entity registration    |     [Yes](set-up-event-outbound.md#the-website-and-form-tab)    |     Planned    |
 |     Set registrations end date    |    Yes   |    Planned    |
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

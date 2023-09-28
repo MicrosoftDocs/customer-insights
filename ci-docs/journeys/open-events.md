@@ -13,7 +13,7 @@ search.audienceType:
 
 # Open the event management work area
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > To use event management in the real-time journeys area of Customer Insights - Journeys, you must enable the feature switch. To enable the feature switch:
@@ -33,4 +33,4 @@ To find the event management work area:
 
 1. If you have outbound marketing and the real-time journeys features of Customer Insights - Journeys installed and you've enabled the "event creation in real-time journeys" feature switch, there's a drop-down menu to the right of the **New Event** button where you can create an event inside the real-time journeys area of Customer Insights - Journeys. When outbound and the real-time journeys features of Customer Insights - Journeys are installed, you’ll see outbound and Customer Insights - Journeys events in the same events list.
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

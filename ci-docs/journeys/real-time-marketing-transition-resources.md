@@ -1,7 +1,7 @@
 ---
-title: Real-time transition resources
+title: Real-time marketing transition resources
 description: Resources to assist transitioning to Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/23/2023
+ms.date: 09/28/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -11,11 +11,11 @@ search.audienceType:
   - enduser
 ---
 
-# Real-time transition resources
+# Real-time marketing transition resources
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
-The following resources were created to help you transition from outbound to Dynamics 365 Customer Insights - Journeys as smoothly as possible.
+The following resources were created to help you transition from outbound to real-time marketing in Dynamics 365 Customer Insights - Journeys as smoothly as possible.
 
 - [Transition from outbound to Dynamics 365 Customer Insights - Journeys playbook](https://community.dynamics.com/blogs/post/?postid=1b4394d5-7764-4484-aba9-c7f972292c10). The playbook covers key information, including:
     - Setting up and configuring journeys
@@ -23,5 +23,8 @@ The following resources were created to help you transition from outbound to Dyn
     - Identifying potential challenges
     - Retiring the use of outbound marketing
 - [TechTalk: Dynamics 365 Customer Insights - Journeys: OBM to RTM Transition Playbook](/shows/dynamics-365-fasttrack-architecture-insights/dynamics-365-marketing-obm-to-rtm-transition-playbook)
+- [Consent management and double opt-in transition guidance](real-time-marketing-consent-transition.md)
 
 Reach out to FastTrack or your account manager for additional questions or help.
+
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

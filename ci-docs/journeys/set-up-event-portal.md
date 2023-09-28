@@ -13,7 +13,7 @@ search.audienceType:
 
 # Set up the event website
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > To use event management in the real-time journeys area of Customer Insights - Journeys, you must enable the feature switch. To enable the feature switch:
@@ -177,6 +177,6 @@ Where:
 
 ## Privacy notice
 
-[!INCLUDE[cc-marketing-cookies](./includes/cc-marketing-cookies.md)]
+[!INCLUDE [cc-marketing-cookies](./includes/cc-marketing-cookies.md)]
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

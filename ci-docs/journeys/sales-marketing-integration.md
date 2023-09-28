@@ -13,7 +13,7 @@ search.audienceType:
 
 # Integrate Sales and Dynamics 365 Customer Insights - Journeys
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 Read this topic to learn how marketers and salespeople can collaborate through dedicated, optimized sales and Customer Insights - Journeys apps running on top of a unified platform. This topic provides an overview and many links that will show you:
 
@@ -121,4 +121,4 @@ The process of launching the new product begins with a broad email campaign, whi
 1. Salespeople and marketers can collaborate over an especially promising or valuable lead, either while working in Dynamics 365 or [while working on Microsoft Teams](/dynamics365/teams-integration/teams-integration), which can also show contact and lead records directly from Dynamics 365.
 1. The salesperson follows the sales-to-opportunity process and eventually closes some sales. Based on this experience, the salesperson can [add more contacts](manage-segments-from-contacts.md) to the segments targeted by the awareness and/or nurturing campaigns.
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

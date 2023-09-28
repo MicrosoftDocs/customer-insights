@@ -13,7 +13,7 @@ search.audienceType:
 
 # Use natural language to create segments
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4IQy2]
 
@@ -94,4 +94,4 @@ Contacts in this segment might be more receptive to an email marketing campaign 
 > [!TIP]
 > Customer Insights - Journeys segments are not always processed in the order that the query blocks are expressed, so it’s better to express queries in the positive “contacts who have purchased in the past 90 days” than to exclude contacts with a negative or suppression segment, like “contacts who have not purchased in the past 180 days.” Dynamic segments can be created to include, intersect, or exclude contacts in segments, allowing you to build more complex queries.
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

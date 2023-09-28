@@ -13,7 +13,7 @@ search.audienceType:
 
 # Map form data to entities with custom Workflows
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 If you have configured a marketing form to collect form submissions without updating contacts or leads, you can create a Workflow to map the form submission data to any entity.
 - Learn more about collecting form data without updating contacts or leads: [Create, view, and manage marketing forms](marketing-forms.md#do-not-createupdate-contacts-or-leads)
@@ -105,4 +105,4 @@ The following steps detail the actions required to create the credit card applic
 
 <!-- 1. You can find the submissions related to your custom entity by selecting the **Advanced find** button ![Advanced find button.](media/advanced_filter_icon.png "Advanced find button") on the top ribbon in the Customer Insights - Journeys app. In each submission, you can find submission values under the **Form** > **Submissions** tab. -->
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]
