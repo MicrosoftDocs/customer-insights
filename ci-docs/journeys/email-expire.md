@@ -13,7 +13,7 @@ search.audienceType:
 
 # Set expiration dates for selected email tiles in a customer journey
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -40,4 +40,4 @@ Each time a customer journey skips sending an expired message, the event is note
 - In accumulated KPIs and charts, expired messages are counted as blocked.
 - In detailed insights, expired messages are listed under **Blocked** > **Other reasons**.
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

@@ -11,7 +11,7 @@ search.audienceType:
 
 # Step 4: Test your custom channel tile
 
-[!INCLUDE[consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -31,4 +31,4 @@ To make the custom channel tile available in the customer journey designer:
 > [!div class="nextstepaction"]
 > [Publish custom channel on AppSource](publish-custom-channel-appsource.md)
 
-[!INCLUDE[footer-include](.././includes/footer-banner.md)]
+[!INCLUDE [footer-include](.././includes/footer-banner.md)]

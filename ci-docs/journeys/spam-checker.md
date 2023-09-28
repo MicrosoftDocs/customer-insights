@@ -13,7 +13,7 @@ search.audienceType:
 
 # Use AI to check your message-content spam score
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 The spam checker feature applies artificial intelligence to analyze the content of each marketing email message. Spam checker then generates a range that predicts how likely the message is to be flagged by content-based spam filters.
 
@@ -50,4 +50,4 @@ To manually view and interpret the spam risk for a message:
 
 1. When you are satisfied with your spam risk level, go live with your message as usual.
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

@@ -13,7 +13,7 @@ search.audienceType:
 
 # Enable and configure artificial intelligence features
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 Dynamics 365 Customer Insights - Journeys provides several artificial intelligence (AI), which include:
 
@@ -56,4 +56,4 @@ Each user who needs access to the Customer Insights - Journeys AI features needs
     > [!div class="mx-imgBorder"]
     > ![Marketing Machine Learning Feature Configuration Reader role.](./media/admin-ai-role.png)
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

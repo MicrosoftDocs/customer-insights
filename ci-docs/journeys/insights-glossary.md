@@ -13,7 +13,7 @@ search.audienceType:
 
 # Glossary of common insights terms
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 This article provides definitions of terms commonly used to describe marketing results, insights, and KPIs. Many, but not all, of these relate to email results, and the definitions here also include a few technical details about how these results are found and calculated.
 
@@ -120,4 +120,4 @@ A website click is recorded each time somebody clicks a link on a page that incl
 ### Website visited
 Customer Insights - Journeys records a website visit each time somebody loads a page that includes a website tracking script created using Customer Insights - Journeys. This includes both marketing pages hosted on a Power Apps portal and external pages that host a form or tracking script created with Customer Insights - Journeys. The feature uses a cookie to uniquely identify each web browser that visits a site, but each visitor is anonymous until they submit a marketing page with form values that match an existing contact or create a new one. If a known contact switches to a new device, a new browser, or to private-browsing mode, website visits will again be recorded as anonymous until that contact submits a marketing page using that device/browser combination.
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

@@ -13,7 +13,7 @@ search.audienceType:
 
 # Use Microsoft Teams for Dynamics 365 Customer Insights - Journeys online events
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > To use event management in the real-time journeys area of Customer Insights - Journeys, you must enable the feature switch. To enable the feature switch:
@@ -23,7 +23,7 @@ search.audienceType:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4J4cV]
 
-[!INCLUDE[marketing-trial-cta](./includes/marketing-trial-cta.md)]
+[!INCLUDE [marketing-trial-cta](./includes/marketing-trial-cta.md)]
 
 This article explains how to use Microsoft Teams as an online meeting provider for Customer Insights - Journeys events. Teams event functionality is incorporated directly into the Customer Insights - Journeys app, allowing you to use Teams webinars or Teams live events for one/some to many online events, and Teams meetings for interactive online meetings.
 
@@ -292,4 +292,4 @@ In scenarios where event record changes aren’t propagated to Teams, the Custom
 
 Once the live event is over, attendees can view the event recording by navigating to the attendee URL from their email. The recording will be available if the creator of the live event in Customer Insights - Journeys sets the **Recording available to attendees** flag to **Yes**.
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

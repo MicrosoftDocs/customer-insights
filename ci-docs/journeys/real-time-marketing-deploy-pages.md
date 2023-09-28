@@ -13,7 +13,7 @@ search.audienceType:
 
 # Deploy pages that contain Customer Insights - Journeys forms
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 Once you've [created a form](real-time-marketing-form-create.md) in Customer Insights - Journeys, you need to publish it in a place where customers can access it. This article discusses the various hosting options for Customer Insights - Journeys forms.
 
@@ -99,4 +99,4 @@ The Customer Insights - Journeys form designer offers flexible options to create
 - An easy and effective way to build a single landing page is to publish the form as a standalone page.
 - If you need to create a complex marketing web site with multiple pages, you can use Power Pages Studio.
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

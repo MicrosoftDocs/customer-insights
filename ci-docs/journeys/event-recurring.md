@@ -13,7 +13,7 @@ search.audienceType:
 
 # Create and manage recurring events in outbound marketing
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -113,4 +113,4 @@ To revert a customized event-series occurrence to a standard occurrence from tha
 
 1. Confirm the operation and then save your settings.
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

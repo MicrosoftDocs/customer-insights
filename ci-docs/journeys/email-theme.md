@@ -13,7 +13,7 @@ search.audienceType:
 
 # Preview: Copilot: style your emails with AI-assisted themes
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > A preview feature is a feature that is not complete, but is made available before it’s officially in a release so customers can get early access and provide feedback. Preview features aren’t meant for production use and may have limited or restricted functionality.
@@ -47,4 +47,4 @@ The theme assistant is a Copilot feature that helps you match the style of your 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of the theme Copilot assistant.](media/email-theme-assistant.png "Screenshot of the theme Copilot assistant")
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

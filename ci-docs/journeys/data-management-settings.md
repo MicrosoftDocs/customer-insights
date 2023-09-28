@@ -13,7 +13,7 @@ search.audienceType:
 
 # Data management settings
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 This topic describes what you can do when working in the **Advanced Settings** > **Data Management** section of the **Settings** menu ![The Settings menu icon.](media/settings-icon.png "The Settings menu icon") at the top of the page.
 
@@ -96,4 +96,4 @@ If your system contains a large number of records, checking for duplicates can a
 
 All the duplicate detection rules will be unpublished in the back end.
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

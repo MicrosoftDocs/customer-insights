@@ -13,7 +13,7 @@ search.audienceType:
 
 # Track website visits, social media clicks, and banner clicks
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -77,6 +77,6 @@ To create a redirecting URL:
 
 To see usage statistics about one of your redirect URLs, go to **Outbound marketing** > **Internet Marketing** > **Redirect URLs** and open the link you want to learn about. The **General info** tab shows a map of where the clicks occurred, and the **Timeline** tab provides a list of when each click occurred. Redirect URL interactions are also shown on the **Insights** form views for leads and contacts for those clicks that the system was able to associate with a lead or contact, which requires a cookie (as described earlier for website tracking).
 
-[!INCLUDE[cc-marketing-cookies](./includes/cc-marketing-cookies.md)]
+[!INCLUDE [cc-marketing-cookies](./includes/cc-marketing-cookies.md)]
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

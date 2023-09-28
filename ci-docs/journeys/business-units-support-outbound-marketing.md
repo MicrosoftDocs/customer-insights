@@ -13,7 +13,7 @@ search.audienceType:
 
 # Business unit support in outbound marketing
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -91,4 +91,4 @@ To enable or disable this feature:
 > [!TIP]
 > The **Default for owning business unit** toggle will only appear when the **Business unit scoping** feature switch is enabled.
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

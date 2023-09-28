@@ -11,7 +11,7 @@ search.audienceType:
 
 # Basic customer journey API operations
 
-[!INCLUDE[consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -182,4 +182,4 @@ The following table shows the schema of objects contained within the `ActivityVa
 |Result|String|The result severity. It has the following values:<br />**Valid** – Informative entry<br />**Warning** – Nonblocking issue<br />**Error** – Blocking issue|
 |ErrorMessageArguments|String[]|Optional list of arguments that provides details of the validation result, for example, an ID of the element that fails to meet the validity criteria.|
 
-[!INCLUDE[footer-include](.././includes/footer-banner.md)]
+[!INCLUDE [footer-include](.././includes/footer-banner.md)]

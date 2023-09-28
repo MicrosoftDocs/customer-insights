@@ -13,7 +13,7 @@ search.audienceType:
 
 # Export data to Word or Excel files
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 You can export Dynamics 365 Customer Insights - Journeys data to a Word or Excel template to create standardized documents that you can share with people who don't use Dynamics 365.
 
@@ -69,4 +69,4 @@ What you see in the Excel workbook is based on two things:
 
 Save a copy either online or to your computer, and then share the workbook or link with others for their review and input.
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

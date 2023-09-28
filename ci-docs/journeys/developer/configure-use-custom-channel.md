@@ -11,7 +11,7 @@ search.audienceType:
 
 # Configure and use a custom channel
 
-[!INCLUDE[consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -30,4 +30,4 @@ Installing a custom channel installs a [managed solution](/powerapps/developer/c
 > [!div class="mx-imgBorder"]
 > ![Custom Content tiles.](../media/marketing-custom-channel-tile2.png "Custom Content tiles")
 
-[!INCLUDE[footer-include](.././includes/footer-banner.md)]
+[!INCLUDE [footer-include](.././includes/footer-banner.md)]

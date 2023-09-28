@@ -13,7 +13,7 @@ search.audienceType:
 
 # Segmentation overview
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 Customer Insights - Journeys uses [segments](segmentation-lists-subscriptions.md) directly from outbound marketing and [Customer Insights - Data](/dynamics365/customer-insights/index). You can view the segments available to you in Customer Insights - Journeys by going to **Audience** > **Segments**.
 
@@ -85,4 +85,4 @@ To use a suppression segment, select **Exit criteria** in the right-side pane in
 > [!div class="mx-imgBorder"]
 > ![Screenshot of suppression segment selection.](media/real-time-marketing-suppression.png "Screenshot of suppression segment selection")
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

@@ -13,7 +13,7 @@ search.audienceType:
 
 # BIMI support
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > **This article *only* applies to emails sent from Dynamics 365 Customer Insights - Journeys.** Emails sent from other Microsoft products, such as Exchange Online, do not yet support BIMI. Refer to the documentation for other Microsoft email-related products for more information.
@@ -63,4 +63,4 @@ BIMI is useful for organizations and businesses to adopt for several reasons:
 
 BIMI support is currently limited, so not all email clients or providers display the BIMI logo. However, by using BIMI with Microsoft Dynamics 365 Customer Insights - Journeys, organizations can enhance the effectiveness of their email marketing campaigns and strengthen their brand's reputation.
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

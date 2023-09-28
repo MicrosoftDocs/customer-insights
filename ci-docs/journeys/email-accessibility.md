@@ -13,7 +13,7 @@ search.audienceType:
 
 # Email accessibility checker
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 The accessibility checker helps you make the content easy for people of all abilities to read. With this feature, you can check the accessibility of emails created using the Customer Insights - Journeys content designer and receive guidance on suggested fixes.
 
@@ -31,4 +31,4 @@ You can drill down into any of the accessibility issues found to get help on how
 
 Once you have made an update, you can hit the button at the end "Check it again" to ensure your fix has passed the accessibility requirements.
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

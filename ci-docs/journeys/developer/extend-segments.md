@@ -11,7 +11,7 @@ search.audienceType:
 
 # Basic operations on segments using the segmentation API
 
-[!INCLUDE[consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -357,4 +357,4 @@ POST {{OrgUrl}}/api/data/v9.0/msdyncrm_ValidateSegment
 ```
 
 
-[!INCLUDE[footer-include](.././includes/footer-banner.md)]
+[!INCLUDE [footer-include](.././includes/footer-banner.md)]

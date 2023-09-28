@@ -11,7 +11,7 @@ search.audienceType:
 
 # Dynamics 365 Customer Insights - Journeys solutions
 
-[!INCLUDE[consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
 
 Dynamics 365 Customer Insights - Journeys adds the following solutions to your instance:
 
@@ -46,4 +46,4 @@ To view entities and other components in a solution, use the solution browser in
 For detailed information about entities and their properties, attributes, and relationships, see [Dynamics 365 Customer Insights - Journeys entity reference](marketing-entity-reference.md)
 
 
-[!INCLUDE[footer-include](.././includes/footer-banner.md)]
+[!INCLUDE [footer-include](.././includes/footer-banner.md)]

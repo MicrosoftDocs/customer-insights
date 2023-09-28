@@ -13,7 +13,7 @@ search.audienceType:
 
 # Anonymized customer data human review notice
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 Microsoft Corporation ("Microsoft") is pleased to work with you (the "Customer" named below) to develop and/or improve Microsoft online services through use of your anonymized Customer Data identified in Exhibit A of this notice ("Engagement Customer Data"). The project described in this notice and in the attached Exhibit A is referred to as the "Engagement". You may opt out of the Engagement at any time by giving Microsoft 30 days' advance notice at the email address in the signature block below.
 
@@ -83,4 +83,4 @@ All proper tagging to handle DSRs is maintained. You can contact your Dynamics 3
 
 Learn more: [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=512132).
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

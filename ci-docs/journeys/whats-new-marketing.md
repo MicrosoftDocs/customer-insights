@@ -13,9 +13,9 @@ search.audienceType:
 
 # What's new in Dynamics 365 Customer Insights - Journeys
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
-[!INCLUDE[marketing-trial-cta](./includes/marketing-trial-cta.md)]
+[!INCLUDE [marketing-trial-cta](./includes/marketing-trial-cta.md)]
 
 We're excited to announce our newest updates! This article summarizes early access features, preview features, general availability enhancements, monthly updates, and bug fixes. To see the long-term feature plans, take a look at the [Dynamics 365 and Power Platform release plans](/dynamics365/release-plans/).
 
@@ -663,4 +663,4 @@ Learn how to make the most of the new Dynamics 365 Customer Insights - Journeys 
 > [!Tip]
 > To read about updates from previous years, see the [What's new archive](whats-new-marketing-archive.md) article.
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]
