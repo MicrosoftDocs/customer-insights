@@ -17,6 +17,8 @@ search.audienceType:
 
 [!INCLUDE [marketing-trial-cta](./includes/marketing-trial-cta.md)]
 
+[!INCLUDE [azure-ad-to-microsoft-entra-id](./includes/azure-ad-to-microsoft-entra-id.md)]
+
 This article explains how to purchase a new Customer Insights environment.
 
 <a name="how-licensed"></a>
