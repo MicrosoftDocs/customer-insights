@@ -29,7 +29,7 @@ With Customer Insights - Journeys analytics, you can:
 
 ## Contact insights
 
-Get a comprehensive view of how a contact has engaged with your journeys in Customer Insights - Journeys, including all past email sends, opens, clicks, form submissions, and more. Better understand your audience's behavior and interests, make informed decisions based on past engagement, and tailor your marketing efforts to their needs and preferences. To view contact insights, go to **Customer Insights - Journeys** > **Audience** > **Contacts**, select a contact record, and then open its **Insights** tab.
+Get a comprehensive view of how a contact has engaged with your journeys in Customer Insights - Journeys, including all past email sends, opens, clicks, form submissions, and more. Better understand your audience's behavior and interests, make informed decisions based on past engagement, and tailor your marketing efforts to their needs and preferences. To view contact insights, go to **Real-time journeys** > **Audience** > **Contacts**, select a contact record, and then open its **Insights** tab.
 
 The following insights categories are provided:
 
@@ -44,7 +44,7 @@ The following insights categories are provided:
 
 ## Lead insights
 
-Just like with Contact insights, you can access a complete overview of your selected Lead's interactions with your marketing initiatives. The insights categories displayed for a Lead are the same as previously described in [Contact insights](#contact-insights). To view Lead insights, go to **Customer Insights - Journeys** > **Audience** > **Leads**, select a Lead record, and then open its Insights tab.
+Just like with Contact insights, you can access a complete overview of your selected Lead's interactions with your marketing initiatives. The insights categories displayed for a Lead are the same as previously described in [Contact insights](#contact-insights). To view Lead insights, go to **Real-time journeys** > **Audience** > **Leads**, select a Lead record, and then open its Insights tab.
 
 ## Journey operational analytics
 
@@ -104,13 +104,13 @@ Learn more: [How to use aggregate channel analytics](real-time-marketing-channel
 > [!NOTE]
 > There is no retention policy for Customer Insights - Journeys interactions in aggregate cross-journey analytics and Aggregate channel analytics. Dataverse entities are limited to a two-year retention policy after their initial creation date. Keep in mind that the two-year Dataverse entity retention policy might impact analytics views associated with interaction data from Dataverse entities.
 
-## Customer Insights - Journeys effectiveness analytics
+## Marketing effectiveness analytics
 
 The marketing effectiveness analytics dashboard enables you to set up key milestones in your buyer’s journey and analyze how your Customer Insights - Journeys activities are contributing to driving customers to those milestones. The dashboard uses AI-powered multi-touch and single-touch attribution models.
 
 :::image type="content" source="media/real-time-marketing-effectiveness-analytics-dashboard.png" alt-text="Customer Insights - Journeys effectiveness analytics dashboard." lightbox="media/real-time-marketing-effectiveness-analytics-dashboard.png":::
 
-Learn more: [Preview: Customer Insights - Journeys effectiveness analytics](real-time-marketing-effectiveness.md)
+Learn more: [Preview: Marketing effectiveness analytics](real-time-marketing-effectiveness.md)
 
 ## Learn more
 
