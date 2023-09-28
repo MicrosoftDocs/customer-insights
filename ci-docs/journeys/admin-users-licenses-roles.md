@@ -17,6 +17,8 @@ search.audienceType:
 
 [!INCLUDE [marketing-trial-cta](./includes/marketing-trial-cta.md)]
 
+[!INCLUDE [azure-ad-to-microsoft-entra-id](./includes/azure-ad-to-microsoft-entra-id.md)]
+
 Read this article to learn how to work with user accounts, user licenses, and security roles in Dynamics 365 Customer Insights - Journeys.
 
 ## Create user accounts and assign licenses

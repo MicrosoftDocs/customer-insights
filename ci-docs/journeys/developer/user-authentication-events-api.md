@@ -13,6 +13,8 @@ search.audienceType:
 
 [!INCLUDE [consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
 
+[!INCLUDE [azure-ad-to-microsoft-entra-id](../includes/azure-ad-to-microsoft-entra-id.md)]
+
 The events API supports user authentication with Microsoft Entra ID. To link the events API to your Microsoft Entra ID, you need to add your `Microsoft Entra ID Client ID` and `Microsoft Entra ID Metadata Endpoint` to your `web application setting`.  More information: [Creating a Microsoft Entra ID tenant and adding a web application to the tenant](event-management-aad-b2c-setup.md#creating-a-microsoft-entra-id-tenant-and-adding-a-web-application-to-the-tenant)
 
 To authenticate the user against the API, you need to add the `Authorization` header containing the `token_id` bearer to each API request. 

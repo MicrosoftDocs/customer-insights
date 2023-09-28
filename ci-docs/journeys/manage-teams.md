@@ -15,6 +15,8 @@ search.audienceType:
 
 [!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
+[!INCLUDE [azure-ad-to-microsoft-entra-id](./includes/azure-ad-to-microsoft-entra-id.md)]
+
 A team is a group of users who share and collaborate on business records. A user can be associated with multiple teams.
 
 ## Create a team

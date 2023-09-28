@@ -16,6 +16,8 @@ search.audienceType:
 
 [!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
+[!INCLUDE [azure-ad-to-microsoft-entra-id](./includes/azure-ad-to-microsoft-entra-id.md)]
+
 > [!NOTE]
 > For the Customer Insights trial, you'll need to use an account that is managed by [Microsoft Microsoft Entra ID](https://azure.microsoft.com/services/active-directory/). If you cannot sign up for Customer Insights using a work or school email address, sign up for a [free Office 365 E5 trial](https://www.microsoft.com/microsoft-365/enterprise/office-365-e5), then use the email address associated with your Office 365 E5 trial to sign up for the Customer Insights trial.
 

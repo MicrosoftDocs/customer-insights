@@ -15,6 +15,8 @@ search.audienceType:
 
 [!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
+[!INCLUDE [azure-ad-to-microsoft-entra-id](./includes/azure-ad-to-microsoft-entra-id.md)]
+
 The **Event management** settings let you set up the connections to your webinar provider accounts and set up a few defaults for event administration. 
 
 To find these settings, open **Settings** and then choose one of the pages under the **Event management** heading in the leftmost column. You can also access these same settings by finding the **Event management** section in the Settings overview.
