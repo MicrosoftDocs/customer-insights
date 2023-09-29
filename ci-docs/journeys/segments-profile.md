@@ -13,7 +13,7 @@ search.audienceType:
 
 # Design dynamic demographic or firmographic segments
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -211,4 +211,4 @@ The segment designer provides a graphical interface for creating the logic for a
 
 To find, view, and edit the query, scroll to the bottom of the page and open the **Query view** tab here. 
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

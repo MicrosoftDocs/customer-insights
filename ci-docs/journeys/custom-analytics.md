@@ -13,7 +13,7 @@ search.audienceType:
 
 # Prepare for analytic reporting with Power BI
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -128,4 +128,4 @@ More information: [Download and use marketing analytics templates and sample rep
 
 ![A collage of various Power BI reports.](media/pbi-gallery-overview.png)
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

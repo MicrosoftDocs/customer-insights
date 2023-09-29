@@ -13,7 +13,7 @@ search.audienceType:
 
 # Recurring activity bulk deletion
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 ## What is msdyncrm_mktactivity?
 
@@ -37,4 +37,4 @@ The marketing activity table varies in size, depending on your Customer Insights
 
 To clear the table more frequently, you can create additional recurring bulk deletion jobs. The table is safe to be truncated at any time. All data can be cleared, regardless of the age of the data. Data processing is synchronous; only successfully executed activities are stored.
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

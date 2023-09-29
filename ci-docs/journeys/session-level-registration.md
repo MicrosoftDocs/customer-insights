@@ -13,7 +13,7 @@ search.audienceType:
 
 # Set up session-level registration
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > To use event management in the real-time journeys area of Customer Insights - Journeys, you must enable the feature switch. To enable the feature switch:
@@ -65,4 +65,4 @@ To view and edit registration details for a session-level event:
 
 Waitlists are not supported in Customer Insights - Journeys event management.
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

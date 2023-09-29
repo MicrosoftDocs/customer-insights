@@ -13,7 +13,7 @@ search.audienceType:
 
 # Email sending data access and privileges
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 When core sending is composing an email, it needs to fill in dynamic email elements with actual data. Normally, the data is retrieved from core sending's own cache. In the case of 1-n relationships, which are used in `#each` statements, the data might be fetched directly from Dataverse.
 
@@ -36,4 +36,4 @@ If there's a data access issue, one of the following errors may occur:
 
 To resolve the above-listed errors, ensure that the Customer Insights - Journeys user has the necessary access rights to all the entities inside the email by following the steps described above.
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

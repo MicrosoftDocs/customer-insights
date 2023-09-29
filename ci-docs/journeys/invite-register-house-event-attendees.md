@@ -13,7 +13,7 @@ search.audienceType:
 
 # Invite, register, and house event attendees
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > To use event management in the real-time journeys area of Customer Insights - Journeys, you must enable the feature switch. To enable the feature switch:
@@ -60,4 +60,4 @@ If your organization has set up hotels and room allocations for your event in Cu
 
 More information: [Manage attendee logistics and accommodation availability](manage-event-logistic.md)
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

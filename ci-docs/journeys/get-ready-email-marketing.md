@@ -13,7 +13,7 @@ search.audienceType:
 
 # Best practices for email marketing
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 Sending marketing email isn't the same as sending personal email as most people know it. They might seem similar, but there's an important difference: personal emails get delivered to just one or a few people, whereas marketing emails get delivered to many thousands or more every month.
 
@@ -46,8 +46,8 @@ When you go live with a message, Customer Insights - Journeys processes the HTML
 1. Open a web browser and enter a URL of the form:   `https://<your_domain>/api/data/v9.0/msdyncrm_marketingemails(<email_id>)`  
 
 Where:
-- _&lt;your_domain&gt;_ is the root of your [!INCLUDE[pn-marketing-business-app-module-name](./includes/pn-marketing-business-app-module-name.md)] instance (such as "contoso.crm.dynamics.com").
-- _&lt;email_id&gt;_ is the ID for the message you want to check. To find this ID, open the message in [!INCLUDE[pn-marketing-business-app-module-name](./includes/pn-marketing-business-app-module-name.md)] and find the value of the `id=` parameter shown in your browser's address bar.
+- _&lt;your_domain&gt;_ is the root of your [!INCLUDE [pn-marketing-business-app-module-name](./includes/pn-marketing-business-app-module-name.md)] instance (such as "contoso.crm.dynamics.com").
+- _&lt;email_id&gt;_ is the ID for the message you want to check. To find this ID, open the message in [!INCLUDE [pn-marketing-business-app-module-name](./includes/pn-marketing-business-app-module-name.md)] and find the value of the `id=` parameter shown in your browser's address bar.
 
 2. Search for the value of the field "msdyncrm_emailbody" in the returned JSON.
 
@@ -142,4 +142,4 @@ Though there can be a few advantages to arranging for a dedicated sender IP, the
 - **You concentrate risk on yourself and can pay a high price for any mistakes**  
     When you're the only one using your sending IP, any mistakes you make will affect your sender reputation directly, without being diluted by the large volume of compliant messages being sent by a large pool of other users.
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

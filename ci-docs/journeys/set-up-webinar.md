@@ -13,7 +13,7 @@ search.audienceType:
 
 # Set up a webinar in outbound marketing
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -55,4 +55,4 @@ Attendees can join the webinar by selecting a link sent to them in email. Some w
 
 If you want to send out the links yourself then one way to do so is to set up a [customer journey](customer-journeys-create-automated-campaigns.md) with an event tile followed by a trigger tile that reacts to event registrations and then an email tile that sends a message with the URL to each contact that registers.
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

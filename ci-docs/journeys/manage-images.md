@@ -13,7 +13,7 @@ search.audienceType:
 
 # Manage images for landing pages and email messages
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -61,4 +61,4 @@ To view and edit your image library:
 
 6. If you want to edit the display name for an image, go back to **Outbound marketing** > **Marketing content** > **Library**.
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

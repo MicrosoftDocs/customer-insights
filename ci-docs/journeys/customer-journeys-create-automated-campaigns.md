@@ -13,7 +13,7 @@ search.audienceType:
 
 # Use customer journeys to create automated campaigns
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -268,4 +268,4 @@ Customer journeys pass through many states while you create, edit, and run them.
  
 ![Journey events list.](media/customer-journey-milestones.png "Journey events list")
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

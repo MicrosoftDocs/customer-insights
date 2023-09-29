@@ -13,7 +13,7 @@ search.audienceType:
 
 # Known issues in Customer Insights - Journeys
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 As we continue to work on Customer Insights - Journeys and refine the experience, we've become aware of some outstanding issues for you to bear in mind. These issues are summarized in this article.
 
@@ -67,4 +67,4 @@ As we continue to work on Customer Insights - Journeys and refine the experience
 - Changing the data binding of existing dynamic text creates new dynamic text.
 - Even if you delete all usage of a piece of dynamic text from the current message, it is still shown and considered in use.
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

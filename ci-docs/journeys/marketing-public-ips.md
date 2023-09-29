@@ -13,7 +13,7 @@ search.audienceType:
 
 # Dynamics 365 Customer Insights - Journeys public IP addresses
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!NOTE]
 > Customer Insights - Journeys uses a set of dedicated IPv4 public network subnets for sending e-mails. [Learn more](public-ip-addresses-for-email-sending.md)
@@ -35,4 +35,4 @@ The table below shows Customer Insights - Journeys services public IP addresses 
 | Switzerland (CHE)          | 51.103.161.238,<br>51.103.161.245,<br>20.250.43.56,<br>20.250.42.212,<br>20.250.44.9,<br>20.250.44.2,<br>20.250.43.102,<br>20.250.44.20,<br>51.103.129.87,<br>51.103.232.64,<br>51.107.82.106,<br>20.250.44.10,<br>20.250.43.155,<br>20.250.43.35 |
 | United Arab Emirates (UAE) | 40.123.196.88,<br>40.123.197.242,<br>20.74.174.154,<br>20.74.160.148,<br>20.74.149.223,<br>20.74.174.3,<br>20.74.173.117,<br>20.74.173.237,<br>20.74.247.106,<br>20.74.225.83,<br>20.216.34.248,<br>20.74.173.80,<br>20.74.174.136,<br>20.74.172.212 |
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

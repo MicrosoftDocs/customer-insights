@@ -13,7 +13,7 @@ search.audienceType:
 
 # How the outbound marketing app uses cookies
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -74,4 +74,4 @@ MsCrmMkt.reconfigureTracking({Anonymize: false})
 
 Without nonessential cookies, outbound marketing's tracking capabilities are limited. In some scenarios, users appear to be anonymous. For example, form submissions continue to work correctly as user identification is based on the submitted data not on cookies, but form prefill data won't work.
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

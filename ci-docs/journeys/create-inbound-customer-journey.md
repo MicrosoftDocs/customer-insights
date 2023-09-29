@@ -13,7 +13,7 @@ search.audienceType:
 
 # Create an inbound customer journey
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -32,4 +32,4 @@ You can create an inbound campaign by setting up the contacts who **Submitted a 
 
 Another way to create an inbound journey is to start with an [behavioral segment](segments-interaction.md) that is based on form-submit or event-registration interactions, and filtered for a specific form or event ID. This technique will work with both native and externally hosted forms, and with event registrations.
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

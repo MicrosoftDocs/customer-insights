@@ -13,7 +13,7 @@ search.audienceType:
 
 # Open the administration settings
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 Administrators use settings to fine-tune application behavior, set defaults, manage users, enable webinars, check quotas, and more. If you also use Dynamics 365 Sales, many of the settings you find here also apply to that app, though some settings are unique to Sales or Customer Insights - Journeys.
 
@@ -32,4 +32,4 @@ Use the left navigation pane to navigate between settings pages, which are organ
 
 See the subtopics in this section for details about how to work with each group of settings provided on the **Settings** page.
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

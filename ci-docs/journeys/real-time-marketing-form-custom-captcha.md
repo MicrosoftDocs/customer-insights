@@ -13,7 +13,7 @@ search.audienceType:
 
 # Integrate a custom captcha service with Customer Insights - Journeys forms
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 Customer Insights - Journeys forms allow you to use custom captcha bot protection to validate form submissions. This article gives an example of how to integrate [Google reCAPTCHA](https://www.google.com/recaptcha/about/). The flow is similar for other captcha services.
 
@@ -247,4 +247,4 @@ When a form with the `data-validate-submission` attribute is submitted, your cus
 > [!div class="mx-imgBorder"]
 > ![Validation flow.](media/real-time-marketing-form-custom-captcha-6.png)
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

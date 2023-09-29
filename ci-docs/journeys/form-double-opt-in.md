@@ -13,7 +13,7 @@ search.audienceType:
 
 # Set up form double opt-in in outbound marketing
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -93,4 +93,4 @@ More information: [Email marketing overview](prepare-marketing-emails.md), [Set 
 > [!NOTE]
 > The link in confirmation email remains valid for 30 days. After that period, end users will not be able to confirm opt-in. 
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

@@ -12,7 +12,7 @@ search.audienceType:
 
 # Add email carbon copy recipients to journeys
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RW10sVQ]
 
@@ -58,4 +58,4 @@ The CC feature is disabled by default. To enable the feature:
     > [!div class="mx-imgBorder"]
     > ![Screenshot showing five recipients selected.](media/real-time-email-cc-select-recipient-up-to-5.png "Screenshot showing five recipients selected")
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

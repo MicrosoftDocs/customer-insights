@@ -13,7 +13,7 @@ search.audienceType:
 
 # Add a payment gateway to your event website in outbound marketing
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -148,4 +148,4 @@ After your back-end solution has verified payment, it must invoke the `msevtmgt_
 
 For more information about how to execute custom actions, see [Use Web API actions](/powerapps/developer/common-data-service/webapi/use-web-api-actions).
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

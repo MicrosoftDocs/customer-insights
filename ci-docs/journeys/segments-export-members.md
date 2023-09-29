@@ -13,7 +13,7 @@ search.audienceType:
 
 # Export dynamic segment members to Excel
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -29,4 +29,4 @@ Export members from a dynamic segment straight to an Excel file, no matter how l
 > [!Note]
 > Excel files exported from dynamic segments do not automatically update. If the members of your dynamic segment change and you want an updated Excel file, you must export a new file.
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

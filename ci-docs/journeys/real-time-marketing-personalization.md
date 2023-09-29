@@ -13,7 +13,7 @@ search.audienceType:
 
 # Personalize content
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 Dynamics 365 Customer Insights - Journeys's features offer powerful personalization capabilities. In this article, you'll learn how to set default values for personalized data, preview personalized content, personalize text messages and push notifications, and use related tables.
 
@@ -64,4 +64,4 @@ Once you’ve selected a field, the full path to that field is displayed in the 
 
 - Option sets aren't supported for use in dynamic text. Option sets are supported in conditions, so an inline condition can be used to output option values in messages.
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

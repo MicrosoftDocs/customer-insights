@@ -16,9 +16,9 @@ search.audienceType:
 
 # Download and use marketing analytics templates and sample reports for Power BI
 
-[!INCLUDE[consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
 
-[!INCLUDE[marketing-trial-cta](.././includes/marketing-trial-cta.md)]
+[!INCLUDE [marketing-trial-cta](.././includes/marketing-trial-cta.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -91,4 +91,4 @@ Here are some advanced resources for this topic:
 
 - [Extracting Marketing Interactions in Dynamics 365 Marketing](https://community.dynamics.com/blogs/post/?postid=4e96ca1e-52ed-4ae4-9887-af8d6e563304)
 
-[!INCLUDE[footer-include](.././includes/footer-banner.md)]
+[!INCLUDE [footer-include](.././includes/footer-banner.md)]
