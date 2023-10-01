@@ -1,7 +1,7 @@
 ---
-title: "Connect data stored in Delta Lake format from your Azure Data Lake Storage"
+title: "Connect data stored in delta lake format from your Azure Data Lake Storage"
 description: "Work with data stored in Delta Lake format from Azure Data Lake Storage."
-ms.date: 09/26/2023
+ms.date: 09/30/2023
 ms.topic: how-to
 author: mukeshpo
 ms.author: mukeshpo
@@ -9,15 +9,15 @@ ms.reviewer: v-wendysmith
 ms.custom: bap-template
 ---
 
-# Connect data stored in Delta Lake format from your Azure Data Lake Storage (preview)
+# Connect data stored in delta lake format from your Azure Data Lake Storage (preview)
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
 [!INCLUDE [public-preview-banner](./includes/public-preview-banner.md)]
 
-Connect data that is already prepared and stored in your lake houses and bring it into Dynamics 365 Customer Insights - Data quickly and seamlessly using delta lake format. Key benefits include:
+Connect data that is already prepared and stored in your lake houses and bring it into Dynamics 365 Customer Insights - Data quickly and seamlessly using [delta lake](https://go.microsoft.com/fwlink/?linkid=2248260) format. Key benefits include:
 
-- Direct integration with stored data in delta lake format. No need for intermediate staging data copies in other formats or additional transforms.
+- Direct integration with stored data in delta lake format. No need for intermediate staging data copies in other formats or more transforms.
 - Faster insights for only the data that has last changed.
 
 [!INCLUDE [public-preview-banner](./includes/public-preview-note.md)]
@@ -30,9 +30,9 @@ Connect data that is already prepared and stored in your lake houses and bring i
 
 - The user that sets up the data source connection needs at least Storage Blob Data Reader permissions on the Azure Data Lake Storage account.
 
-- Data in your Data Lake Storage must be in delta format. Customer Insights - Data relies on the version to identify the latest changes.
+- Data in your Data Lake Storage must be in delta lake format. Customer Insights - Data relies on the version to identify the latest changes.
 
-- The delta tables must be in a separate folder in the storage container and can't be in the container root directory.
+- The delta lake tables must be in a separate folder in the storage container and can't be in the container root directory.
 
 > [!NOTE]
 > Data stored in online services may be stored in a different location than where data is processed or stored. By importing or connecting to data stored in online services, you agree that data can be transferred. [Learn more at the Microsoft Trust Center](https://www.microsoft.com/trust-center).
@@ -43,7 +43,7 @@ Connect data that is already prepared and stored in your lake houses and bring i
 
 1. Select **Add a data source**.
 
-1. Select **Delta Lake (Preview)**.
+1. Select **Azure Data Lake Storage Gen 2 - Delta tables (Preview)**.
 
    :::image type="content" source="media/delta-lake-new.png" alt-text="Dialog box to enter connection details for Delta Lake." lightbox="media/Delta-lake-new.png":::
 
@@ -60,7 +60,7 @@ Connect data that is already prepared and stored in your lake houses and bring i
 
    :::image type="content" source="media/delta-review-tables.png" alt-text="Dialog box of a list of tables to select":::
 
-1. Select the tables you want to include. To add tables, select **New table** and enter the required information.
+1. Select the tables you want to include.
 
 1. Select the number of **Columns** for each included table. The **Manage attributes** page displays.
 
