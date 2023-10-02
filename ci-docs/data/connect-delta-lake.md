@@ -1,5 +1,5 @@
 ---
-title: "Connect data stored in delta lake format from your Azure Data Lake Storage"
+title: "Connect data stored in Delta Lake format from your Azure Data Lake Storage"
 description: "Work with data stored in Delta Lake format from Azure Data Lake Storage."
 ms.date: 09/30/2023
 ms.topic: how-to
@@ -9,15 +9,15 @@ ms.reviewer: v-wendysmith
 ms.custom: bap-template
 ---
 
-# Connect data stored in delta lake format from your Azure Data Lake Storage (preview)
+# Connect data stored in Delta Lake format from your Azure Data Lake Storage (preview)
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
 [!INCLUDE [public-preview-banner](./includes/public-preview-banner.md)]
 
-Connect data that is already prepared and stored in your lake houses and bring it into Dynamics 365 Customer Insights - Data quickly and seamlessly using [delta lake](https://go.microsoft.com/fwlink/?linkid=2248260) format. Key benefits include:
+Connect data that is already prepared and stored in your lakehouses and bring it into Dynamics 365 Customer Insights - Data quickly and seamlessly using [Delta Lake](https://go.microsoft.com/fwlink/?linkid=2248260) format. Key benefits include:
 
-- Direct integration with stored data in delta lake format. No need for intermediate staging data copies in other formats or more transforms.
+- Direct integration with stored data in Delta Lake format. No need for intermediate staging data copies in other formats or more transforms.
 - Faster insights for only the data that has last changed.
 
 [!INCLUDE [public-preview-banner](./includes/public-preview-note.md)]
@@ -26,13 +26,13 @@ Connect data that is already prepared and stored in your lake houses and bring i
 
 - The Azure Data Lake Storage you want to connect and ingest data from has to be in the same Azure region as the Dynamics 365 Customer Insights - Data environment and the subscriptions must be in the same tenant.
 
-- The Customer Insights - Data service principal must have Storage Blob Data Contributor to access the storage account. For more information, see [Grant permissions to the service principal to access the storage account](connect-service-principal.md#grant-permissions-to-the-service-principal-to-access-the-storage-account).
+- The Customer Insights - Data service principal must have Storage Blob Data Contributor permissions to access the storage account. For more information, see [Grant permissions to the service principal to access the storage account](connect-service-principal.md#grant-permissions-to-the-service-principal-to-access-the-storage-account).
 
 - The user that sets up the data source connection needs at least Storage Blob Data Reader permissions on the Azure Data Lake Storage account.
 
-- Data in your Data Lake Storage must be in delta lake format. Customer Insights - Data relies on the version to identify the latest changes.
+- Data in your Data Lake Storage must be in Delta Lake format. Customer Insights - Data relies on the version to identify the latest changes.
 
-- The delta lake tables must be in a separate folder in the storage container and can't be in the container root directory.
+- The Delta tables must be in a separate folder in the storage container and can't be in the container root directory.
 
 > [!NOTE]
 > Data stored in online services may be stored in a different location than where data is processed or stored. By importing or connecting to data stored in online services, you agree that data can be transferred. [Learn more at the Microsoft Trust Center](https://www.microsoft.com/trust-center).
@@ -56,7 +56,7 @@ Connect data that is already prepared and stored in your lake houses and bring i
 
 1. Choose the name of the **Container** that contains the folder of your data, and select **Next**.
 
-1. Navigate to the folder that contains the data in delta lake format and select it. Then, select **Next**. A list of available tables displays.
+1. Navigate to the folder that contains the data in Delta Lake format and select it. Then, select **Next**. A list of available tables displays.
 
    :::image type="content" source="media/delta-review-tables.png" alt-text="Dialog box of a list of tables to select":::
 
