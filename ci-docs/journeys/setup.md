@@ -1,7 +1,7 @@
 ---
 title: Install and manage Customer Insights
 description: How to install, uninstall, and manage Dynamics 365 Customer Insights environments.
-ms.date: 09/28/2023 
+ms.date: 10/02/2023 
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -58,7 +58,7 @@ After purchasing your Customer Insights license, you can access the installation
 
 To set up a new Customer Insights environment:
 
-1.If you have not installed other Dynamics 365 apps on the [Microsoft Power Platform admin center](/power-platform/admin/), go to [**admin.powerplatform.microsoft.com**](https://admin.powerplatform.microsoft.com) to create an environment of the desired type (production, sandbox, developer, or trial). Learn more: [Create and manage environments in the Power Platform admin center](/power-platform/admin/create-environment).
+1.If you haven't installed other Dynamics 365 apps on the [Microsoft Power Platform admin center](/power-platform/admin/), go to [**admin.powerplatform.microsoft.com**](https://admin.powerplatform.microsoft.com) to create an environment of the desired type (production, sandbox, developer, or trial). Learn more: [Create and manage environments in the Power Platform admin center](/power-platform/admin/create-environment).
 1. On [**admin.powerplatform.microsoft.com**](https://admin.powerplatform.microsoft.com), find the Dynamics 365 apps list in the left-hand site map and select **Resources**.
     - Whether you have the legacy, standalone Dynamics 365 Customer Insights app or Dynamics 365 Marketing licenses (available to customers who purchased before September 2023) or the new, combined Dynamics 365 Customer Insights license that entitles you to install both the Customer Insights - Journeys and Customer Insights - Data applications, you can find them listed in admin.powerplatform.microsoft.com under **Dynamics 365 apps** > **Resources**.
 
