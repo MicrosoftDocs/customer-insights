@@ -15,7 +15,14 @@ ms.custom: bap-template
 
 [!INCLUDE [public-preview-banner](./includes/public-preview-banner.md)]
 
-Connect to data that is already prepared and stored in your lakehouse in Delta format and bring it into Dynamics 365 Customer Insights - Data. [Delta](https://go.microsoft.com/fwlink/?linkid=2248260) is a term introduced with Delta Lake, the foundation for storing data and tables in the Databricks Lakehouse Platform. Delta Lake is an open-source storage layer that brings ACID (atomicity, consistency, isolation, and durability) transactions to big data workloads. A key benefit is direct integration with stored data in Delta format. No need for intermediate staging data copies in other formats or more transforms. For more information, see the [Delta Lake Documentation Page.](https://docs.delta.io/latest/delta-intro.html)
+Connect to data in Delta format and bring it into Dynamics 365 Customer Insights - Data. [Delta](https://go.microsoft.com/fwlink/?linkid=2248260) is a term introduced with Delta Lake, the foundation for storing data and tables in the Databricks Lakehouse Platform. Delta Lake is an open-source storage layer that brings ACID (atomicity, consistency, isolation, and durability) transactions to big data workloads. For more information, see the [Delta Lake Documentation Page.](https://docs.delta.io/latest/delta-intro.html)
+
+Key reasons to connect to data stored in Delta format:
+
+- Seamlessly bring in data that is already prepared and stored in your lakehouse
+- Better manage large data sources that change frequently
+- Have direct integration with stored data without the need for intermediate staging data copies in other formats or more transforms
+- Minimize the time to prepare data for unification and insights
 
 [!INCLUDE [public-preview-banner](./includes/public-preview-note.md)]
 
