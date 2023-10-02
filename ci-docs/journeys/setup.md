@@ -49,12 +49,20 @@ There are several ways to get a Customer Insights license. You can purchase it f
 
 You can have any number of Customer Insights licenses available on your tenant. You can access the installation management experience for any of these licenses in the Power Platform Admin Center under **Resources** > **Dynamics 365 apps**.
 
+Once a paid license has been applied to your tenant, it can take up to twenty four hours to sync with the Dynamics 365 licensing system and be available for installation. 
+
 ## Install, uninstall, or update Customer Insights
 
-After purchasing your Customer Insights license, you can access the installation management page and choose where you want to install Customer Insights – Journeys and Customer Insights – Data.
+### Install
+
+There are two types of installations for Customer Insights - Journeys:
+1. A paid installation or trial which includes the services and allows you to send messages, execute journeys, etc.... You can install a paid license on an environment which has never had the journeys app installed,  
+2. A free, solutions only installation which only installs the solutions which include the front-end user experience application components but none of the services. With a solutions only installation you can do user experience solution customizations but you cannot execute any service related funtionality in the application. Solutions only installations will get solution upgrades on a monthly basis with regular releases. 
+
+If you uninstall Customer Insights - Journeys paid or trial you will be disconnecting the services and converting the environment to a solutions only installation state. When the services have been uninstalled by you or by the system due to license expirations, you will see a banner at the top of the application indicating the environment only has the user experience solutions installed but not the services. 
 
 > [!NOTE]
-> If you own the legacy Dynamics 365 Marketing license, the application installation entitlement from that business model applies, which allows one application installation per license purchased. If you own the new Dynamics 365 Customer Insights license, it entitles you to install the Customer Insights - Journeys and Customer Insights - Data applications each four times on your existing Dataverse environments.
+> If you own the legacy Dynamics 365 Marketing license, the application installation entitlement from that business model applies, which allows one application installation per license purchased. If you own the new Dynamics 365 Customer Insights license, it entitles you to install the Customer Insights - Journeys and Customer Insights - Data applications each four times on your existing Dataverse environments. If you have signed up for a trial, you will also see a listing for the Dynamics 365 Customer Insights license and can launch the installation management page. 
 
 To set up a new Customer Insights environment:
 
@@ -70,6 +78,25 @@ To set up a new Customer Insights environment:
     > ![Installation management area screenshot.](media/new-installation.png "Installation management area screenshot")
 
 1. After you've installed the Customer Insights - Journeys and Customer Insights - Data apps on the same environment, you need to finish connecting them. To connect the apps, go to **Customer Insights - Journeys** then go to **Settings** > **Data Management** > **Customer Insights** and select the **Connect'** button. This completes the data sync for segmentation between the two applications.
+
+#### Troubleshooting a failed installation
+Installations can fail for hundreds of reasons unrelated to and undetectable by the Dynamics 365 Customer Insights - Journeys application. When you request an installation, we decrement your application quota in case you start multiple installations at a time and we request the package installation from the platform. Once the platform tries to install the package, it can run into any number of issues in your specific environment including plugins that need to be disabled, dependencies in the dataverse entity model that the journeys application relies on such as for Leads or Contacts, dependencies, security, or customizations. 
+
+If your installation fails you will see a **Retry** link where the **Install** link used to be. Before you **Retry** you can do some checking on your environment to see if there is anything you need to do to prepare it to allow the solution installation. You can go to the solutions history view in the Maker portal to see what failed and what actions you can take to prepare your environment for a successful install [learn more](/power-apps/maker/data-platform/solution-history/). You can also check your solutions using the solution checker [learn more](/dynamics365/customer-insights/journeys/troubleshoot-marketing-solution-health). 
+
+If your installation fails and you want to abandon the installation, you must achieve a successful installation so that you can run the uninstall process to free up the license and disconnect any services that may have succeeded during the parts of the installation process that did not fail. After attempting to resolve issues with your environment on your own by using solution checker or visiting the solution history in the Maker portal, if you still cannot resolve you should file a support ticket and get help to achieve a successful installation.
+
+### Uninstall
+Uninstalling Dynamics 365 Customer Insights - Journeys should be done with care. Depending on the reason for uninstalling, you may want to back-up your enviornment and your interaction data if you do not want to experience data loss. When you uninstall several things will happen to the application on your environment including: 
+- The services will disconnect from the environment leaving behind only the user experience solutions. You will no longer be able to send emails, orchestrate journeys, create segments, etc. on this environment. 
+- The Azure Data Lake which was storing your historical interaction data will be disconnected and cleaned up. As such, you should back up this data before uninstalling if you do not want to lose it. 
+- The available application installation quota will increase by one. 
+- The solutions remain on the environment unless you go through the manual process of removing them with help from a support engineer as described in this article [Uninstall Customer Insights](/dynamics365/customer-insights/journeys/uninstall).
+- The solutions will not be upgraded via the monthly release schedule. 
+- If you choose to install on this environment at a later date, the solutions will be upgraded to the latest versions, a paid license will be decremented, and the services will be reestablished. 
+
+### Update
+Dynamics 365 Customer Insights - Journeys releases updates on a monthly basis with new features and fixes. When there is a new release available, you can see it in **Settings** > **Versions**. Click on Manage+Update to launch the installation maanagement page. Environments listed under **Production** have an **Update** link. For trials, choose **use the legacy installation experience** to update them. 
 
 ## Maintain or update your installation
 
