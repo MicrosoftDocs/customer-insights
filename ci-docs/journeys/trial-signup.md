@@ -32,7 +32,9 @@ The trial takes a few moments to load, then you can start using the app.
 
 ## Customer Insights - Data trial
 
-To sign up for a Customer Insights - Data trial, go to the [Customer Insights - Data trial sign up form](https://signup.microsoft.com/get-started/signup?SKU=036c2481-aa8a-47cd-ab43-324f0c157c2d&ali=1&RU=https%3a%2f%2fhome.ci.ai.dynamics.com%2fstart%2ftrial&products=036c2481-aa8a-47cd-ab43-324f0c157c2d&brandingId=28b276fb-d2a0-4379-a7c0-57dce33da0f9) and follow the prompts.
+To install a Customer Insights - Data trial on the same environment as the Customer Insights - Journeys trial, click the button in the banner on the Get Started page of Customer Insights - Journeys. This will let the Customer Insights - Data application know your environment ID and user ID and add the Data application to the existing trial environment. 
+
+To sign up for a seperate Customer Insights - Data trial, go to the [Customer Insights - Data trial sign up form](https://signup.microsoft.com/get-started/signup?SKU=036c2481-aa8a-47cd-ab43-324f0c157c2d&ali=1&RU=https%3a%2f%2fhome.ci.ai.dynamics.com%2fstart%2ftrial&products=036c2481-aa8a-47cd-ab43-324f0c157c2d&brandingId=28b276fb-d2a0-4379-a7c0-57dce33da0f9) and follow the prompts.
 
 In the short term, the Customer Insights - Journeys and Customer Insights - Data trials are separate. Coming soon, you'll be able to sign up for a trial with both applications on the same environment.
 
