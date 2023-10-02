@@ -14,14 +14,6 @@
     href: purchase.md
   - name: Dynamics 365 Customer Insights FAQs
     href: ci-faq.md
-  - name: Move from outbound marketing (existing customers)
-    items:
-    - name: Move from outbound marketing to Customer Insights - Journeys
-      href: real-time-marketing-move.md
-    - name: Transition resources
-      href: real-time-marketing-transition-resources.md
-    - name: Customer Insights - Journeys transition FAQs
-      href: real-time-marketing-transition.md
   - name: Key Customer Insights - Journeys scenarios
     items:
     - name: Send a targeted email blast
@@ -40,6 +32,26 @@
     href: whats-new-marketing.md
   - name: What's new archive
     href: whats-new-marketing-archive.md
+- name: Move from outbound marketing (existing customers)
+  items:
+  - name: Transition overview
+    href: real-time-marketing-move.md
+  - name: Transition walkthrough
+    items:
+    - name: Walkthrough overview
+      href: transition-walkthrough-overview.md
+    - name: High-level guidance
+      href: transition-walkthrough-high-level.md
+    - name: Set up and get started
+      href: transition-walkthrough-setup.md
+    - name: Transitioning functional areas
+      href: transition-walkthrough-functional-areas.md
+    - name: Social posts
+      href: transition-walkthrough-social-posts.md
+  - name: Transition resources
+    href: real-time-marketing-transition-resources.md
+  - name: Customer Insights - Journeys transition FAQs
+    href: real-time-marketing-transition.md
 - name: Install and manage
   items:
   - name: Install or uninstall
