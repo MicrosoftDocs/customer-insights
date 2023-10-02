@@ -1,7 +1,7 @@
 ---
 title: "Connect data stored in Delta Lake format from your Azure Data Lake Storage"
 description: "Work with data stored in Delta Lake format from Azure Data Lake Storage."
-ms.date: 09/30/2023
+ms.date: 10/02/2023
 ms.topic: how-to
 author: mukeshpo
 ms.author: mukeshpo
@@ -9,35 +9,32 @@ ms.reviewer: v-wendysmith
 ms.custom: bap-template
 ---
 
-# Connect data stored in Delta Lake format from your Azure Data Lake Storage (preview)
+# Connect to data stored in Delta format from your Azure Data Lake Storage (preview)
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
 [!INCLUDE [public-preview-banner](./includes/public-preview-banner.md)]
 
-Connect data that is already prepared and stored in your lakehouses and bring it into Dynamics 365 Customer Insights - Data quickly and seamlessly using [Delta Lake](https://go.microsoft.com/fwlink/?linkid=2248260) format. Key benefits include:
-
-- Direct integration with stored data in Delta Lake format. No need for intermediate staging data copies in other formats or more transforms.
-- Faster insights for only the data that has last changed.
+Connect to data that is already prepared and stored in your lakehouse in Delta format and bring it into Dynamics 365 Customer Insights - Data. [Delta](https://go.microsoft.com/fwlink/?linkid=2248260) is a term introduced with Delta Lake, the foundation for storing data and tables in the Databricks Lakehouse Platform. Delta Lake is an open-source storage layer that brings ACID (atomicity, consistency, isolation, and durability) transactions to big data workloads. A key benefit is direct integration with stored data in Delta format. No need for intermediate staging data copies in other formats or more transforms. For more information, see the [Delta Lake Documentation Page.](https://docs.delta.io/latest/delta-intro.html)
 
 [!INCLUDE [public-preview-banner](./includes/public-preview-note.md)]
 
 ## Prerequisites
 
-- The Azure Data Lake Storage you want to connect and ingest data from has to be in the same Azure region as the Dynamics 365 Customer Insights - Data environment and the subscriptions must be in the same tenant.
+- The Azure Data Lake Storage you want to connect and ingest data from has to be in the same tenant and Azure region as the Dynamics 365 Customer Insights - Data environment.
 
 - The Customer Insights - Data service principal must have Storage Blob Data Contributor permissions to access the storage account. For more information, see [Grant permissions to the service principal to access the storage account](connect-service-principal.md#grant-permissions-to-the-service-principal-to-access-the-storage-account).
 
 - The user that sets up the data source connection needs at least Storage Blob Data Reader permissions on the Azure Data Lake Storage account.
 
-- Data in your Data Lake Storage must be in Delta Lake format. Customer Insights - Data relies on the version to identify the latest changes.
+- Data in your Azure Data Lake Storage must be in Delta format. Customer Insights - Data relies on the version property in the table's history to identify the latest changes for incremental processing.
 
 - The Delta tables must be in a separate folder in the storage container and can't be in the container root directory.
 
 > [!NOTE]
 > Data stored in online services may be stored in a different location than where data is processed or stored. By importing or connecting to data stored in online services, you agree that data can be transferred. [Learn more at the Microsoft Trust Center](https://www.microsoft.com/trust-center).
 
-## Connect to Delta Lake data from Azure Data Lake Storage
+## Connect to Delta data from Azure Data Lake Storage
 
 1. Go to **Data** > **Data sources**.
 
@@ -45,7 +42,7 @@ Connect data that is already prepared and stored in your lakehouses and bring it
 
 1. Select **Azure Data Lake Storage Gen 2 - Delta tables (Preview)**.
 
-   :::image type="content" source="media/delta-lake-new.png" alt-text="Dialog box to enter connection details for Delta Lake." lightbox="media/Delta-lake-new.png":::
+   :::image type="content" source="media/delta-lake-new.png" alt-text="Dialog box to enter connection details for Delta Lake.":::
 
 1. Enter a **Data source name** and an optional **Description**. The name is referenced in downstream processes and it's not possible to change it after creating the data source.
 
@@ -56,18 +53,17 @@ Connect data that is already prepared and stored in your lakehouses and bring it
 
 1. Choose the name of the **Container** that contains the folder of your data, and select **Next**.
 
-1. Navigate to the folder that contains the data in Delta Lake format and select it. Then, select **Next**. A list of available tables displays.
+1. Navigate to the folder that contains the data in Delta format and select it. Then, select **Next**. A list of available tables displays.
 
    :::image type="content" source="media/delta-review-tables.png" alt-text="Dialog box of a list of tables to select":::
 
 1. Select the tables you want to include.
 
-1. Select the number of **Columns** for each included table. The **Manage attributes** page displays.
+1. To enable data profiling on any of the columns, select the number of **Columns** for the table. The **Manage attributes** page displays.
 
    :::image type="content" source="media/delta-dataprofiling-columns.png" alt-text="Dialog box to select data profiling.":::
 
-   1. Create new columns, edit, or delete existing columns. You can change the name, the data format, or add a semantic type.
-   1. To enable analytics and other capabilities, select **Data profiling** for the whole table or for specific columns. By default, no table is enabled for data profiling.
+   1. Select **Data profiling** for the whole table or for specific columns. By default, no table is enabled for data profiling.
    1. Select **Done**.
 
 1. Select **Save**. The **Data sources** page opens showing the new data source in **Refreshing** status.
