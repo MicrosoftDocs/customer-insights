@@ -12,6 +12,8 @@ ms.reviewer: mhart
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
+[!INCLUDE [azure-ad-to-microsoft-entra-id](../journeys/includes/azure-ad-to-microsoft-entra-id.md)]
+
 Dynamics 365 Customer Insights - Data provides an option to connect to an Azure Data Lake Storage account by using a Microsoft Entra service principal.
 
 Automated tools that use Azure services must have restricted permissions. Instead of having applications sign in as a fully privileged user, Azure offers service principals. Use service principals to securely [add or edit a Common Data Model folder as a data source](connect-common-data-model.md) or [create or update an environment](create-environment.md).

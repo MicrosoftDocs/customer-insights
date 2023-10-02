@@ -15,6 +15,8 @@ ms.custom: bap-template
 
 [!INCLUDE [consolidated-sku](../includes/consolidated-sku.md)]
 
+[!INCLUDE [azure-ad-to-microsoft-entra-id](../../journeys/includes/azure-ad-to-microsoft-entra-id.md)]
+
 Use data from Microsoft Office 365 to enrich your customer account profiles with insights about engagements through Office 365 apps. The engagement data consists of email and meeting activity, which is aggregated on the account level. For example, the number of emails from a business account or the number of meetings with the account. No data about individual users are made available.
 
 [!INCLUDE [public-preview-note](../includes/public-preview-note.md)]
