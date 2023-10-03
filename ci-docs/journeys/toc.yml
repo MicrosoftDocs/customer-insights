@@ -42,20 +42,20 @@
     href: transition-walkthrough-setup.md
   - name: Transition functional areas
     items:
-    - name: Transition segments, emails, and journeys
+    - name: Segments, emails, and journeys
       href: transition-walkthrough-segments.md
-    - name: Transition consent
+    - name: Consent
       href: transition-walkthrough-consent.md
-    - name: Transition marketing pages and forms
+    - name: Marketing pages and forms
       href: transition-walkthrough-forms.md
-    - name: Transition event management
+    - name: Event management
       href: transition-walkthrough-events.md
-    - name: Transition lead management and scoring
+    - name: Lead management and scoring
       href: transition-walkthrough-leads.md
-    - name: Transition insights and reports
+    - name: Insights and reports
       href: transition-walkthrough-insights.md
-  - name: Social posts
-    href: transition-walkthrough-social-posts.md
+    - name: Social posts
+      href: transition-walkthrough-social-posts.md
   - name: More transition resources
     href: real-time-marketing-transition-resources.md
   - name: Customer Insights - Journeys transition FAQs
