@@ -24,6 +24,7 @@ The following resources were created to help you transition from outbound to rea
     - Retiring the use of outbound marketing
 - [TechTalk: Dynamics 365 Customer Insights - Journeys: OBM to RTM Transition Playbook](/shows/dynamics-365-fasttrack-architecture-insights/dynamics-365-marketing-obm-to-rtm-transition-playbook)
 - [Consent management and double opt-in transition guidance](real-time-marketing-consent-transition.md)
+- [Adapting to evolving customer expectations: staying ahead in the new marketing landscape](https://cloudblogs.microsoft.com/dynamics365/it/2023/07/18/transition-to-real-time-marketing-and-transform-your-customer-experience/)
 
 Reach out to FastTrack or your account manager for additional questions or help.
 
