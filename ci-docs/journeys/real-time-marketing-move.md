@@ -1,7 +1,7 @@
 ---
-title: Move from outbound marketing to Customer Insights - Journeys
+title: Transition overview
 description: Learn how to deploy real-time marketing functionality in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/23/2023
+ms.date: 10/04/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -11,7 +11,7 @@ search.audienceType:
   - enduser
 ---
 
-# Move from outbound marketing to Customer Insights - Journeys
+# Transition overview
 
 [!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
