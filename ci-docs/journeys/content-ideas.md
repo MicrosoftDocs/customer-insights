@@ -16,7 +16,7 @@ search.audienceType:
 [!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!NOTE]
-> The Copilot content ideas is currently available worldwide, in the following languages:
+> The content ideas copilot is currently available worldwide in the following languages:
 > - Danish (Denmark),
 > - Dutch (Netherlands), 
 > - English (United States), 
@@ -25,7 +25,6 @@ search.audienceType:
 > - Italian (Italy), 
 > - Spanish (Spain)
 
-
 > [!Tip]
 > Learn about using Copilot to create inspiring email content ideas in our latest blog: [Make email creation fun and more efficient with AI-powered content ideas in Dynamics 365 Customer Insights - Journeys](https://cloudblogs.microsoft.com/dynamics365/it/2022/11/30/engage-your-customers-faster-with-ai-powered-marketing-email-content/).
 
@@ -33,7 +32,7 @@ Copilot-powered content ideas help you discover new ways to express your thought
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWZDEE]
 
-## What is the Content ideas copilot?
+## What is the content ideas copilot?
 
 The content ideas copilot is like a brainstorming partner that can help inspire you while you’re writing an email. You provide a short list of initial thoughts (key points) and select a tone of voice, and Copilot generates a range of longer content suggestions that you can build on. You can add these suggestions to your draft, use them as inspiration to write a new draft, or go in a different direction altogether.
 
@@ -43,7 +42,7 @@ The content ideas copilot is like a brainstorming partner that can help inspire 
 ## Enable Copilot
 
 > [!NOTE]
-> The content ideas copilot together with all other copilot features is now enabled by default and visible in the email editor toolbox in the NAM region. In other regions, it needs to be manually turned on in the app settings.
+> In the NAM region, the content ideas copilot (together with all other Copilot features) is now enabled by default and visible in the email editor toolbox. In other regions, it must be manually turned on in the app settings.
 
 ### Turn on or off the content ideas copilot feature switch
 
@@ -54,11 +53,10 @@ The content ideas copilot is like a brainstorming partner that can help inspire 
 ## How to use Copilot to generate content ideas
 
 1. Select the **Copilot** button in the email editor toolbox or the Copilot button above editing text on canvas to open the Copilot pane.
-1. If your email is not empty (contains at least 10 words) – the Copilot, based on your email content, will automatically fill in recommended **key points** to generate new ideas. You can then refine them according to your needs.
-If your email is empty (or contains less than 10 words) -> choose the **Topic of your email** from the list of suggested ones or choose **Custom**.
-    1. If you selected one of suggested topics, Copilot will automatically fill in sample key points for you, which you can modify according to your needs.
-    1. If you selected custom topic, add up to five key points that you want to get across in your email (a minimum of three words per key point is recommended). You can also use premade examples (select the **See examples** link and then **Use this example** for a selected set of key points).
-1. Select **Tone of voice**.
+1. If your email is not empty (contains at least 10 words), the copilot, based on your email content, will automatically fill in recommended **key points** to generate new ideas. You can then refine them according to your needs. If your email is empty (or contains less than 10 words), choose the **Topic of your email** from the list of suggested topics or select **Custom**.
+    1. If you select one of the suggested topics, Copilot automatically fills in sample key points for you, which you can modify according to your needs.
+    1. If you select a custom topic, add up to five key points that you want to get across in your email (a minimum of three words per key point is recommended). You can also use premade examples (select the **See examples** link and then **Use this example** for a selected set of key points).
+1. Select the **Tone of voice**.
 1. Select **Get ideas**.
 1. Copilot generates a set of text suggestions. It might take a short while to generate content (up to 15 seconds, depending on the usage).
 1. Browse the generated ideas using the scrollbar in the content ideas pane.
