@@ -35,6 +35,9 @@ During the data ingestion process, the system checks data sources for existing r
 
 ## Create a custom relationship
 
+Custom relationships allow you to connect two tables together that can then be used together in downstream segments and measures. Example: yoou want to build a segment of all customers who purchased coffee from a store in New York. Assume that your data is stored in 3 tables (a) loyalyContacts - list of all customers. Columns: LoyaltyId, FullName (b) Purchases - purchase history of all customers. Columns: Timestamp, LoyaltyId, PurchasePrice, StoreId (c) Stores - more details about each store. Columns: StoreId, StoreSize, StoreLocation.
+In this case, you need to create a custom relationship between Purchases and Stores. This will be a many (purchases):1 (stores) relationship on the StoreId column. Once established, you can create the required segment by adding a filter on the StoreLocation column in the Stores table.
+
 Relationship consists of a *source table* containing the foreign key and a *target table* that the source table's foreign key points to.
 
 1. Go to **Data** > **Tables**.
