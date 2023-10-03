@@ -40,7 +40,7 @@
     href: transition-walkthrough-high-level.md
   - name: Set up and get started
     href: transition-walkthrough-setup.md
-  - name: Transition functional areas
+  - name: Transition functional areas 
     items:
     - name: Segments, emails, and journeys
       href: transition-walkthrough-segments.md
@@ -54,7 +54,7 @@
       href: transition-walkthrough-leads.md
     - name: Insights and reports
       href: transition-walkthrough-insights.md
-    - name: Social posts
+    - name: Social posts discontinued
       href: transition-walkthrough-social-posts.md
   - name: More transition resources
     href: real-time-marketing-transition-resources.md
