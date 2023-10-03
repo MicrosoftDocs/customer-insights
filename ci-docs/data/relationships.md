@@ -1,7 +1,7 @@
 ---
 title: "Relationships between tables and table paths"
 description: "Create and manage relationships between tables from multiple data sources."
-ms.date: 09/01/2023
+ms.date: 10/03/2023
 ms.reviewer: mhart
 ms.topic: conceptual
 author: CadeSanthaMSFT
@@ -12,7 +12,7 @@ ms.author: cadesantha
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
-Relationships connect tables and define a graph of your data when tables share a common identifier, a foreign key. This foreign key can be referenced from one table to another. Connected tables enable the definition of segments and measures based on multiple data sources.
+Relationships connect tables and define a graph of your data when tables share a common identifier, a foreign key. This foreign key can be referenced from one table to another. Connected tables enable the definition of segments and measures based on multiple data sources. Relationship consists of a *source table* containing the foreign key and a *target table* that the source table's foreign key points to.
 
 There are three types of relationships: 
 - Non-editable system relationships are created by the system as part of the data unification process
@@ -35,10 +35,11 @@ During the data ingestion process, the system checks data sources for existing r
 
 ## Create a custom relationship
 
-Custom relationships allow you to connect two tables together that can then be used together in downstream segments and measures. Example: yoou want to build a segment of all customers who purchased coffee from a store in New York. Assume that your data is stored in 3 tables (a) loyalyContacts - list of all customers. Columns: LoyaltyId, FullName (b) Purchases - purchase history of all customers. Columns: Timestamp, LoyaltyId, PurchasePrice, StoreId (c) Stores - more details about each store. Columns: StoreId, StoreSize, StoreLocation.
-In this case, you need to create a custom relationship between Purchases and Stores. This will be a many (purchases):1 (stores) relationship on the StoreId column. Once established, you can create the required segment by adding a filter on the StoreLocation column in the Stores table.
-
-Relationship consists of a *source table* containing the foreign key and a *target table* that the source table's foreign key points to.
+Custom relationships allow you to connect two tables that can then be used together in downstream segments and measures. For example, you want to build a segment of all customers who purchased coffee from a store in New York. Your data is stored in 3 tables:
+- loyaltyContacts: contains a list of all customers. Columns include LoyaltyId and FullName.
+- Purchases: contains purchase history of all customers. Columns include Timestamp, LoyaltyId, PurchasePrice, and StoreId.
+- Stores: contains more details about each store. Columns include StoreId, StoreSize, and StoreLocation.
+For this example, create a custom relationship between Purchases and Stores as a many (purchases) to one (stores) relationship on the StoreId column. Once established, you can create the required segment by adding a filter on the StoreLocation column in the Stores table.
 
 1. Go to **Data** > **Tables**.
 
