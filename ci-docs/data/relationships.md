@@ -12,7 +12,7 @@ ms.author: cadesantha
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
-Relationships connect tables and define a graph of your data when tables share a common identifier, a foreign key. This foreign key can be referenced from one table to another. Connected tables enable the definition of segments and measures based on multiple data sources. Relationship consists of a *source table* containing the foreign key and a *target table* that the source table's foreign key points to.
+Relationships connect tables and define a graph of your data when tables share a common identifier, a foreign key. This foreign key can be referenced from one table to another. Connected tables enable the definition of segments and measures based on multiple data sources. A relationship consists of a *source table* containing the foreign key and a *target table* that the source table's foreign key points to.
 
 There are three types of relationships: 
 - Non-editable system relationships are created by the system as part of the data unification process
@@ -35,7 +35,9 @@ During the data ingestion process, the system checks data sources for existing r
 
 ## Create a custom relationship
 
-Custom relationships allow you to connect two tables that can then be used together in downstream segments and measures. For example, you want to build a segment of all customers who purchased coffee from a store in New York. Your data is stored in 3 tables:
+Custom relationships allow you to connect two tables that can then be used together in downstream segments and measures. 
+
+For example, you want to build a segment of all customers who purchased coffee from a store in New York. Your data is stored in 3 tables:
 - loyaltyContacts: contains a list of all customers. Columns include LoyaltyId and FullName.
 - Purchases: contains purchase history of all customers. Columns include Timestamp, LoyaltyId, PurchasePrice, and StoreId.
 - Stores: contains more details about each store. Columns include StoreId, StoreSize, and StoreLocation.
@@ -51,20 +53,20 @@ For this example, create a custom relationship between Purchases and Stores as a
 
    :::image type="content" source="media/relationship-add.png" alt-text="New relationship side pane with empty input fields.":::
 
-   - **Relationship name**: Name that reflects the purpose of the relationship. Relationship names are case sensitive. Example: CustomerToSupportCase.
+   - **Relationship name**: Name that reflects the purpose of the relationship. Relationship names are case sensitive. Example: PurchasesToStores.
    - **Description**: Description of the relationship.
-   - **Source table**: Table that is used as a source in the relationship. Example: SupportCase.
-   - **Target table**: Table that is used as a target in the relationship. Example: Customer.
-   - **Source cardinality**: Cardinality of the source table. Cardinality describes the number of possible elements in a set. It always relates to the target cardinality. You can choose between **One** and **Many**. Only many-to-one and one-to-one relationships are supported.  
-     - Many-to-one: Multiple source records can relate to one target record. Example: Multiple support cases from a single customer.
-     - One-to-one: A single source record relates to a one target record. Example: One loyalty ID for a single customer.
+   - **Source table**: Table that is used as a source in the relationship. Example: Purchases.
+   - **Target table**: Table that is used as a target in the relationship. Example: Stores.
+   - **Source cardinality**: Cardinality of the source table. Cardinality describes the number of possible elements in a set. It always relates to the target cardinality. You can choose between **One** and **Many**. Only many-to-one and one-to-one relationships are supported.
+     - Many-to-one: Multiple source records can relate to one target record. Example: Multiple purchases from a single store.
+     - One-to-one: A single source record relates to a one target record.
 
      > [!NOTE]
      > Many-to-many relationships can be created using two many-to-one relationships and a linking table, which connects the source table and the target table.
 
    - **Target cardinality**: Cardinality of the target table records.
-   - **Source key field**: Foreign key field in the source table. Example: SupportCase uses  **CaseID** as the foreign key field.
-   - **Target key field**: Key field of the target table. Example: Customer uses  **CustomerID** as the key field.
+   - **Source key field**: Foreign key field in the source table. Example: StoreId
+   - **Target key field**: Key field of the target table. Example: StoreId
 
 1. Select **Save** to create the custom relationship.
 
