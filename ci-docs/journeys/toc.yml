@@ -124,9 +124,9 @@
       href: real-time-marketing-business-unit-compliance.md
     - name: Business units FAQ for Customer Insights - Journeys
       href: real-time-marketing-business-unit-faq.md
-- name: Use Customer Insights - Journeys
+- name: Use real-time journeys
   items:
-  - name: Customer Insights - Journeys user guide
+  - name: Real-time journeys user guide
     href: real-time-marketing-user-guide.yml
   - name: Marketing channels
     items:

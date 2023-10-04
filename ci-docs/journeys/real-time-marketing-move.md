@@ -1,6 +1,6 @@
 ---
 title: Transition overview
-description: Overview of the transition process from outbound marketing to real-time marketing in Dynamics 365 Customer Insights - Journeys.
+description: Overview of the transition process from outbound marketing to real-time journeys in Dynamics 365 Customer Insights - Journeys.
 ms.date: 10/04/2023
 ms.topic: article
 author: alfergus
@@ -20,7 +20,7 @@ In July 2023, Microsoft announced significant changes to the former Dynamics 365
 -	The former Customer Insights application was renamed to Customer Insights - Data.
 -	Both applications are now sold together under a single product SKU called Customer Insights.
 
-Existing customers are encouraged to transition from outbound marketing to the real-time marketing engine for optimal performance, scale, and to take advantage of ongoing product investments and AI Copilot features. Learn more: [Customer Insights - Journeys transition FAQs](real-time-marketing-transition.md)
+Existing customers are encouraged to transition from outbound marketing to the real-time journeys engine for optimal performance, scale, and to take advantage of ongoing product investments and AI Copilot features. Learn more: [Customer Insights - Journeys transition FAQs](real-time-marketing-transition.md)
 
 New customers who install Customer Insights - Journeys no longer see the outbound marketing module and can't install it. Because outbound marketing doesn't offer the performance, scale, user experience, and AI copilot capabilities of Customer Insights - Journeys and is no longer being invested in from an engineering perspective, new customers shouldn't start their journey on the old engine.
 
@@ -30,4 +30,4 @@ New customers who install Customer Insights - Journeys no longer see the outboun
 > [!div class="mx-imgBorder"]
 > ![Customer Insights - Journeys transition comparison.](media/real-time-marketing-transition-graphic.png "Customer Insights - Journeys transition comparison")
 
-The real-time marketing module covers most of the functionalities of the outbound module while exceeding its capabilities in many areas. To mitigate uncertainty and confusion, the articles in the "Transition from outbound marketing" section of the documentation clarify frequently asked questions about this topic and walk through how to successfully transition to the real-time marketing module.
+The real-time journeys module covers most of the functionalities of the outbound module while exceeding its capabilities in many areas. To mitigate uncertainty and confusion, the articles in the "Transition from outbound marketing" section of the documentation clarify frequently asked questions about this topic and walk through how to successfully transition to the real-time journeys module.
