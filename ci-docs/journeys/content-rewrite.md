@@ -54,7 +54,7 @@ Turn on or off the content rewrite copilot feature switch:
 > [!div class="mx-imgBorder"]
 > ![Copilot screenshot with tone selection](media/tone-selection-for-copilot.png "Copilot screenshot with tone selection")
 
-1. Select a **text element** in your email or push notification message.
+1. Select a **text element** in your email, form, SMS or push notification message.
 1. Select **Rewrite** from the text element contextual menu.
 1. Select **Get ideas** to generate different variants of your text. Copilot generates a set of text suggestions. It might take a short while to generate content (up to 15 seconds, depending on the usage).
 1. Browse the generated ideas using the navigation buttons in the Content rewrite dialog
@@ -71,11 +71,9 @@ Turn on or off the content rewrite copilot feature switch:
 > The Content rewrite copilot is accessible only for texts that comprise a minimum of 10 words. If the text is shorter or empty, the Content rewrite copilot feature is disabled.
 
 > [!Tip]
-> You can also refresh just a selected portion of your paragraph instead of updating the whole paragraph. In order to do it, select the text you want to update, and then choose any of the copilot option: Get ideas, Tone, Shorten, Lengthen to modify your selected text. 
-
-You have the option to refresh only a specific part of your paragraph instead of making changes to the entire paragraph. To do this, follow these steps:
-1. Select the text you wish to update.
-1. Utilize any of the Copilot options: 'Get ideas,' 'Tone,' 'Shorten,' or 'Lengthen' to make modifications to the selected text.
+> You have the option to refresh only a specific part of your paragraph instead of making changes to the entire paragraph. To do this, follow these steps:
+> 1. Select the text you wish to update.
+> 1. Utilize any of the Copilot options: 'Get ideas,' 'Tone,' 'Shorten,' or 'Lengthen' to make modifications to the selected text.
 
 > [!div class="mx-imgBorder"]
 > ![Copilot screenshot with selected editable text facility](media/selected-editable-text-facility.png "Copilot screenshot with selected editable text facility")
