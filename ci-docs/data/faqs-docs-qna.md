@@ -9,7 +9,7 @@ ms.author: [Author]
 ms.reviewer: [Reviewer]
 ---
 
-# FAQ for docs-based Q&A skill 
+# FAQ for docs-based Q&A capability 
 
 These frequently asked questions (FAQ) describe the AI impact of [Feature] feature in [Product].
 
