@@ -55,13 +55,13 @@
       "feedback_github_repo": "MicrosoftDocs/customer-insights",
       "uhfHeaderId": "MSDocsHeader-Dynamics365",
       "titleSuffix": "Dynamics 365 Customer Insights",
-      "recommendations": "true",
-      "search.app": [
-        "customerinsights-docs"
-      ]
+      "recommendations": "true"
     },
     "fileMetadata": {
-       "feedback_system": {
+      "uhfHeaderId": {
+        "**.*": "MSDocsHeader-Dynamics365-Customer-Insights"
+      },
+      "feedback_system": {
         "*.md": "GitHub"
        },
       "feedback_product_url": {
@@ -70,9 +70,26 @@
       "ms.service": {
         "**.*": "customer-insights"
       },
+      "ms.subservice": {
+        "journeys/**.*": "customer-insights-journeys",
+        "data/**.*": "customer-insights-data"
+      },
       "searchScope": {
         "**.*": [
           "customerInsights"
+        ]
+      },
+      "search.app": 
+      {
+        "journeys/**.*": [
+          "D365CE",
+          "D365Mktg",
+          "marketing-docs",
+          "customerinsightsjourneys-docs"
+        ],
+        "data/**.*": [
+          "customerinsights-docs",
+          "customerinsightsdata-docs"
         ]
       }
     },

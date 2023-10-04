@@ -13,7 +13,7 @@ search.audienceType:
 
 # Use Customer Insights - Data profiles and segments in Customer Insights - Journeys
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 Customer Insights - Journeys enables you to deeply personalize your customer engagement using transactional, behavioral, and demographic data from [Dynamics 365 Customer Insights - Data](/dynamics365/customer-insights). With Customer Insights - Data, you can:
 - Target unified Customer Insights - Data customer profiles and segments. This enables you to engage every customer, regardless of whether the customer's data is in Customer Insights - Journeys or Customer Insights - Data.
@@ -33,7 +33,7 @@ Alternately, you can create a scheduled journey targeting the customers in an ab
 To set up your Customer Insights - Data environment for Customer Insights - Journeys, complete the following steps:
 
 1. Ensure that the Customer Insights - Data environment is set up in a [region where Customer Insights - Journeys is available](real-time-marketing-overview.md). If your current environment is not in a region where Customer Insights - Journeys is available, you can create a new Customer Insights - Data environment using a copy of the previous environment.
-1. Enable data sharing between your Customer Insights - Data environment and the Microsoft Dataverse organization where Dynamics 365 Customer Insights - Journeys is or will be installed. This can be done in the Advanced settings of the [Customer Insights - Data environment configuration](/dynamics365/customer-insights/audience-insights/manage-environments#create-an-environment-in-an-existing-organization).
+1. Enable data sharing between your Customer Insights - Data environment and the Microsoft Dataverse organization where Dynamics 365 Customer Insights - Journeys is or will be installed. This can be done in the Advanced settings of the [Customer Insights - Data environment configuration](../data/own-data-lake-storage.md#enable-data-sharing-with-dataverse-from-your-own-azure-data-lake-storage-preview).
 1. Set up **Map**, **Match**, and **Merge** rules in Customer Insights - Data to unify customer data and create unified customer profiles. Be careful while setting up the unification rules. Any future changes to the rule can impact or break live customer journeys.
 1. Create at least one segment.
 
@@ -59,4 +59,4 @@ When using Customer Insights - Data customer profiles in real-time customer jour
 
 Learn more: [Audience configuration](real-time-marketing-audience-data.md)
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

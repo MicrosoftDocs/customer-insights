@@ -1,7 +1,7 @@
 ---
-title: How Dynamics 365 Customer Insights - Journeys uses suppression lists 
-description: Learn how Dynamics 365 Customer Insights - Journeys uses suppression lists to protect email sending reputations.
-ms.date: 08/23/2023
+title: How Customer Insights - Journeys uses suppression lists 
+description: Learn how Customer Insights - Journeys uses suppression lists to protect email sending reputations.
+ms.date: 09/08/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -13,7 +13,7 @@ search.audienceType:
 
 # How Dynamics 365 Customer Insights - Journeys uses suppression lists
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 A suppression list is a powerful backend tool that ensures your sending reputation stays healthy. Suppression lists prevent email messages from being sent to harmful recipient addresses.
 
@@ -55,12 +55,12 @@ The pattern suppression is a manual list maintained by the deliverability engine
 
 ## How to delist email addresses
 
-If you find that some contacts were blocked with a “suppression list” reason and you're sure that they're 100% valid and the listing was caused by false-positive, you can submit a support request, providing the following information:
+If you find that some contacts were blocked with a “suppression list” reason and you're sure that they're valid and the listing was caused by false-positive, you can submit a support request, providing the following information:
 
 -	A list of the email addresses in question.
 -	Justification as to why you believe each email address was listed by mistake. You should also provide proof that each email address is valid and can be reached by any other email provider.
 
-After that, our deliverability team will review the request and determine if the addresses should be removed.
+After that, our deliverability team will review the request and determine if the addresses should be removed. Keep in mind that if an email address was added to the suppression list because of a typo, you can correct the email address in the contact or lead and the deliverability will be unaffected by the suppression list. In other words, the suppression list functions at an email address level, *not* at a contact or lead level.
 
 > [!NOTE]
 > If a contact is removed from a suppression list that is used in a live journey, the changes will take effect in the next iteration of the journey (if the journey is recurring), not in the current one.
@@ -79,4 +79,4 @@ Here are some tips to avoid email suppression lists:
 
 It's the sender's responsibility to maintain a clean email list and ensure that their email campaigns comply with email marketing best practices. By following these tips, you can avoid having your email addresses bounced and listed on suppression lists and maintain a healthy email reputation.
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

@@ -1,11 +1,12 @@
 ---
 title: "Predict subscription churn (contains video)"
 description: "Predict whether a customer is at risk for no longer using your company’s subscription products or services."
-ms.date: 09/01/2023
+ms.date: 09/07/2023
 ms.reviewer: mhart
 ms.topic: how-to
 author: joytaylor
 ms.author: joytaylor
+ms.custom: bap-template  
 ---
 
 # Predict subscription churn
@@ -23,7 +24,7 @@ You must have business knowledge to understand what churn means for your busines
 
 ## Prerequisites
 
-- At least [Contributor permissions](permissions.md).
+- At least [Contributor permissions](user-roles.md).
 - At least 1,000 customer profiles within the desired prediction window.
 - Customer Identifier, a unique identifier to match subscriptions to your customers.
 - Subscription data for at least double the selected time window. Preferably, two to three years of subscription data. Subscription history must include:

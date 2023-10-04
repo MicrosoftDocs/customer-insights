@@ -1,7 +1,7 @@
 ---
 title: Manage Customer Insights - Journeys forms
 description: Learn how to manage forms in Dynamics 365 Customer Insights - Journeys.
-ms.date: 05/11/2023
+ms.date: 09/13/2023
 ms.custom: 
   - dyn365-marketing
 ms.topic: article
@@ -15,7 +15,7 @@ search.audienceType:
 
 # Manage Customer Insights - Journeys forms
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 This article explains how to edit, un-publish, and manage forms in Customer Insights - Journeys.
 
@@ -48,6 +48,23 @@ Once you select a field on the canvas, you can see its properties in the right p
 ### Custom validation
 
 To create custom validation, enable the **Validation** option and select **Custom**. A pop-up dialog appears where you can enter a Regular Expression (RegExp). You can, for example, use a RegExp to check if the entered value matches a specific phone number format.
+
+## Style your forms using Theme
+
+The Theme section can be opened by selecting brush icon in the right pane. Theme controls the style of all types of fields, buttons and text. Once you set Theme of a field, it affects all fields of the same type in your form.
+
+> [!div class="mx-imgBorder"]
+> ![Edit style of your input field using Theme.](media/real-time-marketing-form-theme.png)
+
+### Copilot - forms theme assistant
+
+> [!IMPORTANT]
+> You must only use the theme assistant with websites that you own and operate. The theme assistant should not be used to copy third party websites.
+
+The theme assistant is a Copilot feature in Customer Insights - Journeys. You can use the theme assistant to fetch styles from an existing website that you own and control. To use a theme, enter the website URL and select **Fetch styles**. This process may take a few minutes. You can continue your work and return back later to check the result. Once the assistant fetches the styles from your website, it applies the styles to the theme of your form.
+
+> [!div class="mx-imgBorder"]
+> ![Fetch styles from your website using Copilot.](media/real-time-marketing-form-theme-copilot.png)
 
 ## Form settings
 
@@ -103,7 +120,7 @@ Field types and formats are defined by the attribute metadata. It isn't possible
 
 A lookup field is linked to a particular entity type, enabling you to add a drop-down list of options that were created in advance to your form. For example, you could use a lookup field called "Currency" to show a drop-down list of all currencies in your form.
 
-After adding a lookup field, or if your lookup field isn't working, ensure that the service user used has permissions to configure the entities you're using with the lookup field. The Customer Insights - Journeys Services User Extensible Role used by the form editor needs to have read access to the entity used in lookup field. You also have to enable **Make lookup data publicly viewable** in the lookup properties. All values within the lookup are available to anyone that sees the form. Ensure that sensitive data isn't exposed to the public. More information: [Adding lookup fields](marketing-fields.md#adding-lookup-fields-and-troubleshooting).
+After adding a lookup field, or if your lookup field isn't working, ensure that the service user used has permissions to configure the entities you're using with the lookup field. The Marketing Services User Extensible role used by the form editor needs to have read access to the entity used in lookup field. You also have to enable **Make lookup data publicly viewable** in the lookup properties. All values within the lookup are available to anyone that sees the form. Ensure that sensitive data isn't exposed to the public. More information: [Adding lookup fields](marketing-fields.md#adding-lookup-fields-and-troubleshooting).
 
 ## Form validation
 
@@ -200,4 +217,4 @@ You can [integrate custom captcha](real-time-marketing-form-custom-captcha.md) b
 
 It's possible to build custom back-end form submission validation that prevents form submission processing. It shows an error message to the user who tried to submit the form. You can find the inspiration for this back-end validation in the article about [integrating custom captcha](real-time-marketing-form-custom-captcha.md), where the form makes back-end validation to evaluate the result of a captcha challenge.
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

@@ -1,5 +1,5 @@
 ---
-title: Create interactive features with or without portals 
+title: Create interactive features with or without portals in outbound marketing
 description: How to create interactive webpages and an events website with or without portals with Dynamics 365 Customer Insights - Journeys.
 ms.date: 08/21/2023
 ms.topic: article
@@ -11,9 +11,9 @@ search.audienceType:
   - enduser
 ---
 
-# Create interactive features with or without portals
+# Create interactive features with or without portals in outbound marketing
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -64,4 +64,4 @@ To set up your own custom portals solutions, you must work with the full Power A
 
 For complete details about how to work with the portals solution, see [its online help](/powerapps/maker/portals/overview).
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

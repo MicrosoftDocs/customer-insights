@@ -1,7 +1,7 @@
 ---
 title: Prepare for analytic reporting with Power BI
 description: Describes how to set up data sources in Dynamics 365 Customer Insights - Journeys to make them available to Power BI, and how to download and connect a Power BI template to them.
-ms.date: 08/18/2023
+ms.date: 09/08/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -13,7 +13,7 @@ search.audienceType:
 
 # Prepare for analytic reporting with Power BI
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -47,8 +47,6 @@ for a quick overview of all the data that is available for your marketing analyt
 > As of November 2021, blob naming and data update logic has changed. Previously, exporting Customer Insights - Journeys insights created a new blob file each time a batch of new interactions arrived. Each batch typically contained a single or a few interactions. The file name was a randomly generated GUID, which prevented collision and any interpretation. Once the blob was created, it was never changed. The blob export process created a large number of small blobs in the storage, which significantly slowed Power BI refresh.
 >
 > The updated Customer Insights - Journeys insights export process appends interaction batches to recent blobs. When a blob grows to the configurable size (10MB by default), the export creates a new blob. After, the blob name changes to allow the system to find the most recent blob to append, but the naming should be assumed random and not be interpreted as before. The internal format remains the same: a comma-separated list of interactions with header. All Power BI reports (out-of-the-box and custom) should keep working.
->
-> If your organization implemented custom processing (on top of the Customer Insights - Journeys export) which relies on the blobs' immutability or names, the process may need to be updated. Contact customer support for more details or for switching the export feature to the previous non-optimized mode.
 >
 > If your storage is overwhelmed by blobs from previous exports, resync the insights data from scratch. To resync the data:
 >
@@ -130,4 +128,4 @@ More information: [Download and use marketing analytics templates and sample rep
 
 ![A collage of various Power BI reports.](media/pbi-gallery-overview.png)
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

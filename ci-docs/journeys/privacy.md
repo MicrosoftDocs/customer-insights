@@ -1,7 +1,7 @@
 ---
 title: Data protection and privacy
-description: Protect customer privacy and remain compliant with GDPR regulations with Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/21/2023
+description: Protect customer privacy and remain compliant with privacy regulations in Dynamics 365 Customer Insights - Journeys.
+ms.date: 09/05/2023
 ms.topic: reference
 author: alfergus
 ms.author: alfergus
@@ -13,40 +13,38 @@ search.audienceType:
 
 # Data protection and privacy
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
-The [General Data Protection Regulation (GDPR)](https://www.ecb.europa.eu/services/data-protection/) is a European Union (EU) directive that imposes rules on companies, government agencies, non-profits, and other organizations that offer goods and services to people in the EU, or that collect and analyze data tied to EU residents. The GDPR applies no matter where you're located.
+Dynamics 365 Customer Insights - Journeys is prepared to help organizations work in compliance with privacy laws and regulations when using the system, but some development work, consultancy assistance, or both, is still necessary. As part of a comprehensive, organization-wide effort, most organizations need to review and update all their information systems to come into complete compliance.
 
-Dynamics 365 Customer Insights - Journeys is prepared to help organizations work in compliance with the GDPR when using the system, but some development work, consultancy assistance, or both, is still necessary. As part of a comprehensive, organization-wide effort, most organizations need to review and update all their information systems to come into complete compliance.
+## Learn more about privacy laws and regulations
 
-## Learn more about the GDPR
+Here are some resources where you can learn more about how to bring your Dynamics 365 systems into compliance with privacy laws and regulations:
 
-Here are some resources where you can learn more about how to bring your Dynamics 365 systems into compliance with the GDPR:
-
-- [Supporting Your EU GDPR Compliance Journey with Customer Insights - Journeys](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=b26973bd-68c3-4507-b446-61a7f1b1f1f2&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers). This white paper (downloadable PDF) will help you build a basic understanding of the GDPR and relate that to Customer Insights - Journeys.
+- [Supporting Your EU GDPR Compliance Journey with Customer Insights - Journeys](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=b26973bd-68c3-4507-b446-61a7f1b1f1f2&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers). This white paper (downloadable PDF) will help you build a basic understanding of privacy regulations and relate that to Customer Insights - Journeys.
 - [Data Protection Resources](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ%20and%20White%20Papers). This webpage includes links to compliance guides, white papers, FAQs, security reports, penetration tests, risk assessment tools, and other resources that apply to a wide range of Microsoft products.
-- [Microsoft Trust Center](https://www.microsoft.com/trustcenter). This webpage includes links to information about how new features in Microsoft 365 help you secure personal data and meet strict GDPR privacy requirements.
+- [Microsoft Trust Center](https://www.microsoft.com/trustcenter). This webpage includes links to information about how new features in Microsoft 365 help you secure personal data and meet strict privacy requirements.
 - [Microsoft Purview Compliance Manager](https://aka.ms/compliancemanager). This webpage includes links to information about control management, integrated task assignment, evidence collection, and audit-ready reporting tools to streamline your compliance workflow.
 
-## Prepare Customer Insights - Journeys for GDPR compliance
+## Prepare Customer Insights - Journeys for privacy compliance
 
-Most Dynamics 365 installations are customized to meet the specific needs of each organization that uses it. Some organizations have in-house developers, and some organizations work with external partners or consultants to implement their customizations. Either way, you must customize your Customer Insights - Journeys system to enable its built-in GDPR compliance tools to function correctly.
+Most Dynamics 365 installations are customized to meet the specific needs of each organization that uses it. Some organizations have in-house developers, and some organizations work with external partners or consultants to implement their customizations. Either way, you must customize your Customer Insights - Journeys system to enable its built-in privacy compliance tools to function correctly.
 
 Among other things, you must be able to identify all data structures (including tables, entities, and fields) that contain personal information. You should establish mechanics that allow you to easily discover, deliver, update, and/or delete this data when requested by your customer.
 
-- For more information on how Dynamics 365 helps you with essential data tasks like discovering, managing, protecting, and reporting for your GDPR compliance see the guide [Microsoft Dynamics 365 helps enable data privacy for GDPR compliance](https://www.microsoft.com/TrustCenter/CloudServices/dynamics365/GDPR) in the [Microsoft Trust Center](https://www.microsoft.com/trustcenter).
-- For details about how to use the Dynamics 365 API to implement custom GDPR-related functionality for your Customer Insights - Journeys system, see the [Developer Guide (Customer Insights - Journeys)](developer/marketing-developer-guide.md).
+- For more information on how Dynamics 365 helps you with essential data tasks like discovering, managing, protecting, and reporting for your privacy compliance see the[Microsoft Trust Center](https://www.microsoft.com/trustcenter).
+- For details about how to use the Dynamics 365 API to implement custom privacy-related functionality for your Customer Insights - Journeys system, see the [Developer Guide (Customer Insights - Journeys)](developer/marketing-developer-guide.md).
 - If you're looking for a partner to help you come into compliance, try searching in our [Microsoft Solution Providers database](https://www.microsoft.com/solution-providers/search).
 
-The rest of this article describes how to work with the GDPR compliance tools in Customer Insights - Journeys. The instructions assume that the system has already been customized as required.
+The rest of this article describes how to work with the privacy compliance tools in Customer Insights - Journeys. The instructions assume that the system has already been customized as required.
 
-## Overview of GDPR features in Customer Insights - Journeys
+## Overview of privacy features in Customer Insights - Journeys
 
-Under the GDPR, the topic of consent has become a core tenet and is included in the data protection law. Consent is understood as "any freely given, specific, informed, and unambiguous indication of the data subject's wishes by which they, by a statement or by a clear affirmative action, signifies agreement to the processing of personal data relating to them."
+The topic of consent has become a core tenet and is included in the data protection law. Consent is understood as "any freely given, specific, informed, and unambiguous indication of the data subject's wishes by which they, by a statement or by a clear affirmative action, signifies agreement to the processing of personal data relating to them."
 
 Customer Insights - Journeys allows you to request, capture, and store consent. It lets you design your marketing activities to respect the consent given by your audience. It's important that you include relevant information in your marketing objects (like landing pages and email marketing message) that unambiguously informs your audience about the data you collect and the purpose of your processing. Your audience must have the option to give consent freely, make an informed decision, and be able to review, update, or revoke consent at any time.
 
-To help you with consent management and other GDPR-related workloads, Customer Insights - Journeys has the following capabilities:
+To help you with consent management and other privacy-related workloads, Customer Insights - Journeys has the following capabilities:
 
 - A default collection of hierarchical consent levels is provided out of the box, where higher levels of consent include lower levels.
 - Contact records include a field that stores the level of consent each contact has granted your organization.
@@ -72,6 +70,6 @@ The consent levels provided out of the box are just recommendations. It's up to 
 In addition, special privacy protection is required for minors (children), requiring additional consent by a parent or guardian.
 
 > [!IMPORTANT]
-> The accounts entity does not store any GDPR consent information&mdash;only contact entities include it. Lead-scoring models that operate on the account level aren't able to respect the consent of the contacts that belong to that account, but they can still score account leads based on interactions generated by all of those contacts. That means that you must be careful not to use automatic lead scoring for automated decision making (profiling) related to account-based leads if those decisions affect individuals. You can still use the feature to score account leads, but you must not use it for indirect contact scoring if the score is used for automated decision making. More information: [Account-based marketing](account-based-marketing.md)
+> The accounts entity does not store any privacy consent information&mdash;only contact entities include it. Lead-scoring models that operate on the account level aren't able to respect the consent of the contacts that belong to that account, but they can still score account leads based on interactions generated by all of those contacts. That means that you must be careful not to use automatic lead scoring for automated decision making (profiling) related to account-based leads if those decisions affect individuals. You can still use the feature to score account leads, but you must not use it for indirect contact scoring if the score is used for automated decision making. More information: [Account-based marketing](account-based-marketing.md)
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

@@ -1,11 +1,12 @@
 ---
 title: "Predict product recommendations (preview)"
 description: "Predict the products a customer is likely to purchase or interact with."
-ms.date: 09/01/2023
+ms.date: 09/07/2023
 ms.reviewer: mhart
-ms.topic: conceptual
+ms.topic: how-to
 author: joytaylor
 ms.author: joytaylor
+ms.custom: bap-template
 ---
 
 # Predict product recommendations (preview)
@@ -29,7 +30,7 @@ The output of this model provides recommendations based on the product ID. Your 
 
 ## Prerequisites
 
-- At least [Contributor permissions](permissions.md)
+- At least [Contributor permissions](user-roles.md)
 - At least 1,000 customer profiles within the desired prediction window
 - Customer Identifier, a unique identifier to match transactions to an individual customer
 - At least one year of transactional data, preferably two to three years to include some seasonality. Ideally, at least three or more transactions per Customer ID. Transaction history must include:

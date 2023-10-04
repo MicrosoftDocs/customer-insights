@@ -19,3 +19,4 @@ ms.reviewer: radsay01
 - [Data prep report](faqs-data-prep.md)
 - [Dialog with data](faqs-dialog-data.md)
 - [Environment status summary](faqs-environment-status.md)
+- [Segment creation](faqs-segment-creation.md)

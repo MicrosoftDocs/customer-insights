@@ -1,7 +1,7 @@
 ---
-title: Use marketing forms for event registration
-description: Add custom marketing forms to event registrations.
-ms.date: 08/18/2023
+title: Use marketing forms for event registration in outbound marketing
+description: Add custom marketing forms to event registrations in outbound marketing.
+ms.date: 09/22/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -11,9 +11,9 @@ search.audienceType:
   - enduser
 ---
 
-# Use marketing forms for event registration
+# Use marketing forms for event registration in outbound marketing
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -65,4 +65,4 @@ You can [customize your registration form's design and check for errors](marketi
 > [!div class="mx-imgBorder"]
 > ![Connect an event registration form to an event screenshot.](media/event-forms-connect.png)
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

@@ -13,7 +13,7 @@ search.audienceType:
 
 # LinkedIn Lead Gen integration
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -78,4 +78,4 @@ To see all form submissions in Customer Insights - Journeys, go to **Outbound ma
 
 Go to **Outbound marketing** > **LinkedIn Lead Gen** > **Sync Status**, to find an aggregated overview about the data that was pulled from all LinkedIn user profiles to Customer Insights - Journeys. At a glance, you can see when the most recent synchronization took place and find out how many leads were created or updated.
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

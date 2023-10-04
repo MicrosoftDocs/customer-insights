@@ -14,6 +14,8 @@ ms.author: bkief
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
+[!INCLUDE [azure-ad-to-microsoft-entra-id](../journeys/includes/azure-ad-to-microsoft-entra-id.md)]
+
 Forward logs from Dynamics 365 Customer Insights - Data using Azure Monitor. Azure Monitor resource logs let you monitor and send logs to [Azure Storage](https://azure.microsoft.com/services/storage/), [Azure Log Analytics](/azure/azure-monitor/logs/log-analytics-overview), or stream them to [Azure Event Hubs](https://azure.microsoft.com/services/event-hubs/).
 
 Customer Insights sends the following event logs:
@@ -31,7 +33,7 @@ Customer Insights sends the following event logs:
 ### Prerequisites
 
 - An active [Azure Subscription](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/).
-- [Administrator](permissions.md#admin) permissions in Customer Insights - Data.
+- [Administrator](user-roles.md#admin) permissions in Customer Insights - Data.
 - A valid resource on Azure that follows the [destination requirements](/azure/azure-monitor/platform/diagnostic-settings#destination-requirements) for Azure Storage, Azure Event Hub, or Azure Log Analytics.
 - [Contributor and User Access Administrator role](/azure/role-based-access-control/role-assignments-portal) on the destination resource on Azure. The resource can be an Azure Data Lake Storage account, an Azure Event Hub, or an Azure Log Analytics workspace. This permission is necessary while configuring diagnostic settings, but it can be changed after successful setup.
 - At least the **Reader** role on the resource group the resource belongs to.

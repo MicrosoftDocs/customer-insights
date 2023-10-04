@@ -13,7 +13,7 @@ search.audienceType:
 
 # Tenant to tenant migration for Dynamics 365 Customer Insights - Journeys
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 Migrating a Customer Insights - Journeys environment between tenants requires assistance from our technical support team. To request tenant to tenant migration within the same Azure geographic location (geo), [contact technical support](/power-platform/admin/get-help-support) and submit a support request.
 
@@ -36,4 +36,4 @@ After tenant to tenant migration, the Customer Insights - Journeys environment w
 - When migrating a Customer Insights - Journeys environment between tenants, interaction data (such as email clicks), analytics data (such as journey analytics), and Customer Voice data will *not* be migrated.
 - Migrating a Customer Insights - Journeys environment between tenants with Customer Insights attached is unsupported at this time.
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

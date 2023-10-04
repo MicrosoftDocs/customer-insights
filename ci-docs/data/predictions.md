@@ -13,7 +13,7 @@ ms.custom: bap-template
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
-Dynamics 365 Customer Insights - Data comes with a variety of options that leverage AI and machine learning to predict data.
+Dynamics 365 Customer Insights - Data comes with various options that leverage AI and machine learning to predict data.
 
 Predictions offer capabilities to create better customer experiences, improve business capabilities, and revenue streams. We strongly recommend you balance the value of your prediction against the impact it has and biases that may be introduced in an ethical manner. Learn more about how Microsoft is [addressing Responsible AI](https://www.microsoft.com/ai/responsible-ai?activetab=pivot1%3aprimaryr6).
 
@@ -28,8 +28,6 @@ The following models are available:
 - [Subscription churn](predict-subscription-churn.md): Predicts whether a customer is at risk for no longer using your company’s subscription products or services.
 - [Transactional churn](predict-transactional-churn.md): Predicts if an individual customer will no longer purchase your products or services in a certain time frame.
 - [Sentiment analysis](sentiment-analysis.md): Analyzes sentiment of customer feedback and identifies business aspects that are frequently mentioned.
-
-To understand the readiness of your data to produce insights, see [Data prep report overview](data-prep-overview.md).
 
 To understand the readiness of your data to produce insights, see [Data prep report overview](data-prep-overview.md).
 

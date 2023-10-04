@@ -11,7 +11,7 @@ search.audienceType:
 
 # Custom event portal localization
 
-[!INCLUDE[consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
 
 ## Frontend part
 
@@ -41,4 +41,4 @@ If you're using [Power Apps portal hosting](portal-hosted.md), then the script `
 
 If you're using [self-hosted](self-hosted.md), then you need to choose a place to host the files (they can be on the same server as the application), and then you should modify `localizationEndpoint` environment setting to point to that location.
 
-[!INCLUDE[footer-include](.././includes/footer-banner.md)]
+[!INCLUDE [footer-include](.././includes/footer-banner.md)]

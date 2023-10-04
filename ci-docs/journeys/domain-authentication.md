@@ -13,7 +13,7 @@ search.audienceType:
 
 # Authenticate your domains
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 Domain authentication is important for many reasons:
 - For marketing email messages, domain authentication enables recipient email servers to confirm that the from-address shown on each of your messages belongs to your organization. Authentication also confirms that your organization has approved Dynamics 365 Customer Insights - Journeys to send messages on its behalf. Messages that fail this test are increasingly likely to get filtered away as spam, which can dramatically impact your deliverability.
@@ -136,4 +136,4 @@ To authenticate a domain for a business unit:
         1. Domain name – Is the domain you want to authenticate. 
 1. The rest of the wizard follows the usual process of domain authentication. 
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

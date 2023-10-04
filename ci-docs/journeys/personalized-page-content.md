@@ -13,7 +13,7 @@ search.audienceType:
 
 # Personalized marketing page content
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -149,4 +149,4 @@ As mentioned in the introduction to this topic, page personalization requires th
 1. Allow about 30 seconds for the system to process the submission and create a new contact record.
 1. Open your personalized marketing page and confirm the personalization features work as expected.
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

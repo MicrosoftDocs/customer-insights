@@ -13,7 +13,7 @@ search.audienceType:
 
 # Reference guide for Customer Insights - Journeys interactions
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 Most of the data in Dynamics 365 Customer Insights - Journeys is saved in Dataverse tables. However, the marketing interaction data needs separate storage to accommodate a higher throughput of changes when customers engage with businesses by opening emails, clicking links, etc. This article defines the marketing interaction data interaction schema. Use this as a reference guide when exporting Customer Insights - Journeys interaction data for custom reporting.
 
@@ -95,7 +95,6 @@ The table below is sorted by Customer Insights - Journeys channels (email, text 
 
 | **Table**                            | **Column**               | **Description**                                                                        |
 |--------------------------------------|--------------------------|----------------------------------------------------------------------------------------|
-| Common Properties                    | msdynmkt_deviceid        | The recipient's mobile device's Dataverse-stored identifier.                           |
 |                                      | msdynmkt_platform        | The mobile platform used for submission (iOS or Android)                               |
 | msdynmkt_pushnotificationlinkclicked | msdynmkt_linkname        | Description of the link name. It's a complete html content of the link.                |
 |                                      | msdynmkt_targeturl       | The target URL of the link clicked.                                                    |
@@ -103,4 +102,4 @@ The table below is sorted by Customer Insights - Journeys channels (email, text 
 | msdynmkt_pushnotificationopened      |                          |                                                                                        |
 | msdynmkt_pushnotificationsent        |                          |                                                                                        |
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

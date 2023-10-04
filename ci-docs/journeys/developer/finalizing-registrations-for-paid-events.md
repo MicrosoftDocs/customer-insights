@@ -11,7 +11,9 @@ search.audienceType:
 
 # Finalizing registration for paid events
 
-[!INCLUDE[consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
+
+[!INCLUDE [azure-ad-to-microsoft-entra-id](../includes/azure-ad-to-microsoft-entra-id.md)]
 
 This topic walks you through the process of developing a .NET Core application that authenticates against Dynamics 365 Customer Insights - Journeys and triggers a custom action that finalizes the registration process for paid events. Before going through the topic, make sure that you read and understand [Set up online payments for events](/dynamics365/customer-engagement/marketing/event-payment-gateway#develop-a-service-to-finalize-event-registration).  
 
@@ -30,20 +32,20 @@ In this topic, we use [OAuth](/power-apps/developer/data-platform/authenticate-o
    
    - [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) is used to serialize and deserialize the data.
 
-1. If you are using Azure AD Authentication Library (ADAL), follow the [migration guide](/azure/active-directory/develop/msal-migration) to upgrade to the Microsoft Authentication Library (MSAL).
+1. If you are using the Microsoft Entra ID Authentication Library, follow the [migration guide](/azure/active-directory/develop/msal-migration) to upgrade to the Microsoft Authentication Library (MSAL).
 
     > [!IMPORTANT]
-    > The [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory) NuGet package and Azure AD Authentication Library (ADAL) have been deprecated. No new features have been added since June 30, 2020. We strongly encourage you to upgrade, see the [migration guide](/azure/active-directory/develop/msal-migration) for more details.
+    > The [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory) NuGet package has been deprecated. No new features have been added since June 30, 2020. We strongly encourage you to upgrade, see the [migration guide](/azure/active-directory/develop/msal-migration) for more details.
 
 ## Step 1: Register your application
 
-Before we start to authenticate against Dynamics 365 Customer Insights - Journeys, we need to register the application in the **Azure Active Directory** to get the authentication credentials. More information: [How to register an application in Azure Active Directory](/powerapps/developer/common-data-service/use-single-tenant-server-server-authentication)
+Before we start to authenticate against Dynamics 365 Customer Insights - Journeys, we need to register the application in **Microsoft Entra ID** to get the authentication credentials. More information: [How to register an application in Microsoft Entra ID](/powerapps/developer/common-data-service/use-single-tenant-server-server-authentication)
 
 Follow these steps to register your application:
 
-1. Navigate to **Microsoft 365 Admin center** by expanding the **Admin centers** tab in the left navigation pane, and select **Azure Active Directory**. 
+1. Navigate to **Microsoft 365 Admin center** by expanding the **Admin centers** tab in the left navigation pane, and select **Microsoft Entra ID**. 
 
-1. Navigate to **Azure Active Directory**, select **App registrations**, and then select **New registration**. 
+1. Navigate to **Microsoft Entra ID**, select **App registrations**, and then select **New registration**. 
 
     ![Azure app registration.](../media/azure-app-registration.png "Azure app registration")
  
@@ -75,7 +77,7 @@ In this step, create an application user and associate the application user with
 
    ![Application user form sample.](../media/application-user-form-sample.png "Application user form sample")
 
-1. Select **Save**. After you save the record, the **Application ID URI** and **Azure AD Object ID** values should be automatically filled. If not, make sure that you entered the correct application ID and that you registered your application correctly. 
+1. Select **Save**. After you save the record, the **Application ID URI** and **Microsoft Entra ID Object ID** values should be automatically filled. If not, make sure that you entered the correct application ID and that you registered your application correctly. 
 
 ## Step 3: Assigning a security role to an application user 
 
@@ -264,19 +266,19 @@ namespace TriggerFinalizeRegistration
 
         /// <summary>
         /// The tenant ID (GUID) of your application. Can be retrieved from the overview section of your application in
-        /// Azure Active Directory.
+        /// Microsoft Entra ID.
         /// </summary>
         static string tenantId = "<tenant-id>";
 
         /// <summary>
         /// The client ID (GUID) of your application which is used for authentication against Dynamics 365.
-        /// Can be retrieved from the overview section of your application in Azure Active Directory.
+        /// Can be retrieved from the overview section of your application in Microsoft Entra ID.
         /// </summary>
         static string clientId = "<client-id>";
 
         /// <summary>
         /// The client secret that can be generated in the certificates & client secrets section in your
-        /// Azure Active Directory. 
+        /// Microsoft Entra ID. 
         /// </summary>
         static string clientSecret = "<client-secret>";
 
@@ -341,4 +343,4 @@ namespace TriggerFinalizeRegistration
 
 ``` 
 
-[!INCLUDE[footer-include](.././includes/footer-banner.md)]
+[!INCLUDE [footer-include](.././includes/footer-banner.md)]

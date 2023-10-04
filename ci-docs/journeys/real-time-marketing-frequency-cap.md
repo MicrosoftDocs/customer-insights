@@ -13,7 +13,7 @@ search.audienceType:
 
 # Limit the number of messages sent with frequency capping
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RW10LWN]
 
@@ -69,4 +69,4 @@ The right limit for a message will be different for each brand, industry, and ch
 - Look at relevant analytics (study the unique open rate and click-through rate).
 - Study your journey (look at the drop off rates in the journey view).
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

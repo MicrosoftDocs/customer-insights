@@ -20,7 +20,7 @@ The results of predictions sometimes only apply to a subset of your customers. I
 
 ## Prerequisites
 
-- At least [Contributor permissions](permissions.md) in Dynamics 365 Customer Insights - Data
+- At least [Contributor permissions](user-roles.md) in Dynamics 365 Customer Insights - Data
 
 - A product recommendation, transactional churn, subscription churn, or customer lifetime value model configured in Customer Insights - Data. Review the requirements to set up the different models:
 

@@ -13,7 +13,7 @@ search.audienceType:
 
 # Sync data tables into the segment builder
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 The Customer Insights - Journeys segment builder allows you to sync data tables without relying on the help of administrators. This saves you time when setting up segments, letting you directly add data tables to Dynamics 365 Customer Insights - Journeys without using the Dynamics 365 admin center.
 
@@ -32,4 +32,4 @@ After you add the new table, you can use the attributes from Fax immediately in 
 > [!NOTE]
 > It can take up to 24 hours for a data table to be synchronized into the system. At this time, the segment member size estimate and preview features are not available. You cannot view the segment membership until the table is synchronized into the system.  
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

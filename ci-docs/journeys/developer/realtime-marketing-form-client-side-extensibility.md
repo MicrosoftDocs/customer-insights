@@ -11,7 +11,7 @@ search.audienceType:
 
 # Extend Customer Insights - Journeys marketing forms using code
 
-[!INCLUDE[consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
 
 This article explains how to extend Customer Insights - Journeys marketing forms for advanced customization.
 
@@ -152,4 +152,4 @@ You can use marketing forms within React applications. The form loader exposes t
 > [!NOTE]
 > The Javascript API is available only for forms hosted as a script. It is not supported for the iFrame hosting option.  
 
-[!INCLUDE[footer-include](.././includes/footer-banner.md)]
+[!INCLUDE [footer-include](.././includes/footer-banner.md)]

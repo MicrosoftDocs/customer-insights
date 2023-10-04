@@ -1,7 +1,7 @@
 ---
 title: Known issues in Customer Insights - Journeys
 description: Learn about known issues in Customer Insights - Journeys and how to work around them.
-ms.date: 08/22/2023
+ms.date: 09/07/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -13,7 +13,7 @@ search.audienceType:
 
 # Known issues in Customer Insights - Journeys
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 As we continue to work on Customer Insights - Journeys and refine the experience, we've become aware of some outstanding issues for you to bear in mind. These issues are summarized in this article.
 
@@ -22,7 +22,8 @@ As we continue to work on Customer Insights - Journeys and refine the experience
 - In the aggregate cross-journey analytics dashboard, an extra step is needed to load the Power BI report in the Android and iPad native apps. To load the report, go to **Analytics**, then select a row, select the **Show as from** sub menu, then select **CC_Analytics_ReportingControl**.
 - Data retention is 12 months for Contact and Lead insights, goal analytics, channel analytics (including delivery and interaction details such as contacts impacted by delivery and interaction issues), and AI optimization analytics.
 - Some strings in the Power BI aggregate analytics dashboard aren’t localized.
-- In the event of an email remote bounce, the contact/lead timeline might display two "email delivered" interactions for the same message with the same time stamp despite no message being delivered to the contact/lead email address. This is because the second interaction is intended to "erase" the first one. However, this is not currently being handled in the timeline. 
+- In the event of an email remote bounce, the contact/lead timeline might display two "email delivered" interactions for the same message with the same time stamp despite no message being delivered to the contact/lead email address. This is because the second interaction is intended to "erase" the first one. However, this is not currently being handled in the timeline.
+- When two contacts or leads are merged, only interactions of the primary contact or lead will be visible in contact/lead insights.
 
 ## Consent
 
@@ -66,4 +67,4 @@ As we continue to work on Customer Insights - Journeys and refine the experience
 - Changing the data binding of existing dynamic text creates new dynamic text.
 - Even if you delete all usage of a piece of dynamic text from the current message, it is still shown and considered in use.
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

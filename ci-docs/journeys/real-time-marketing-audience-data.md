@@ -13,7 +13,7 @@ search.audienceType:
 
 # Select the audience source for journeys
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 Audience configuration allows you to manage your audience data sources. Customer Insights - Journeys supports **Contact**, **Lead**, and **Customer profile** entities.
 
@@ -40,4 +40,4 @@ A default value is displayed in the *Send-to* field, but you can select any othe
 > [!Important]
 > For contacts, only one recipient email address can be used. This is done to remove consent ambiguity. In outbound marketing, a contact record may store several email addresses with one consent for the entire contact. But in Customer Insights - Journeys, consent is given per each email address. Learn more in [Compliance settings](real-time-marketing-compliance-settings.md).
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

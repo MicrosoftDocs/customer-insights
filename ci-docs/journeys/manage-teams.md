@@ -13,7 +13,9 @@ search.audienceType:
 
 # Manage and apply roles to teams
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+
+[!INCLUDE [azure-ad-to-microsoft-entra-id](./includes/azure-ad-to-microsoft-entra-id.md)]
 
 A team is a group of users who share and collaborate on business records. A user can be associated with multiple teams.
 
@@ -38,7 +40,7 @@ To create a new team:
         The privilege depth of these tables is dependent on the team membership of Team. Use **Organization** depth if Team members can be from different business units otherwise use **Business Unit** depth if Team members are only from the same business unit as the team admin.
         
     - **Team type**: Select the type of team you are creating. For details about the various types, see [Manage teams](/power-platform/admin/manage-teams).
-    - **Azure AD object ID for a group**: If you are using an AAD-related **Team type**, then specify the relevant Azure AD object ID here.
+    - **Microsoft Entra ID object ID for a group**: If you are using a Microsoft Entra ID-related **Team type**, then specify the relevant Microsoft Entra ID object ID here.
     - **Description**: Describe the team.
 1. Select **Save** on the command bar.
 1. The page reloads, now showing a **Team members** table. Use the settings here to view, add, or remove  members for the team.
@@ -67,4 +69,4 @@ For more information about managing teams and working with security roles, see [
 
 For more information about the security roles included with the Dynamics 365 Customer Insights - Journeys, see [Manage user accounts, licenses, and roles](admin-users-licenses-roles.md).
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

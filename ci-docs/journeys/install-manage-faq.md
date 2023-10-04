@@ -31,4 +31,4 @@ Keeping Customer Insights - Journeys up to date ensures that customers enjoy the
 
 Upgrades are delivered by our system automatically. We cannot guarantee the order of upgrades between organizations. For customers who want to upgrade certain organizations before others, we recommend upgrading the organizations manually following the procedures in [Keep Customer Insights - Journeys up to date](apply-updates.md).
           
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]
