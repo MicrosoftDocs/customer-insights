@@ -15,7 +15,7 @@ ms.custom: bap-template
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
-All exports follow the same general set up and management process. You can also schedule exports.
+All exports follow the same general set up and management process. You can also schedule exports. A common use case for exports of segments is to share lists of your customers to advertising services like Google Ads or Meta Ads for remarketing purposes. A common use case for exports of full tables, which we call data-out exports, is to share data to Azure Data Lake Gen2, from where the tables are further processes by custom solutions built by our customers.  
 
 ## Set up a new export
 
