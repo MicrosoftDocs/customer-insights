@@ -17,7 +17,7 @@ ms.custom:
 
 # Copilot: create journeys using AI assistance
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 With the journey copilot, anyone can now use every day conversational language to create marketing journeys without requiring deep knowledge about the product. You can even improve the copilot by giving feedback, helping you achieve more detailed results in the future.
 
@@ -59,4 +59,4 @@ As shown in the image below, Copilot automatically detected the **Loyalty member
 > [!div class="mx-imgBorder"]
 > ![Screenshot showing ready to create a journey](media/real-time-marketing-ready-to-create-journey.png "Screenshot showing ready to create a journey")
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

@@ -13,7 +13,7 @@ search.audienceType:
 
 # Make the most of your event check-in flow
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > To use event management in the real-time journeys area of Customer Insights - Journeys, you must enable the feature switch. To enable the feature switch:
@@ -50,4 +50,4 @@ In Dynamics 365 Customer Insights - Journeys, you can monitor your event attenda
 >
 > Expect up to a four-hour delay after an event ends until check-ins appear in the Customer Insights - Journeys app. Check-in creation is counted as a post-processing step after the event and takes several hours to fully reflect in the Customer Insights - Journeys app.
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

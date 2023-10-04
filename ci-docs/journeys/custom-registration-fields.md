@@ -13,7 +13,7 @@ search.audienceType:
 
 # Add custom fields to your event registration form in outbound marketing
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -89,4 +89,4 @@ Each event registration record includes the values that the registrant entered f
 
 1. The **Registration responses** table here shows each custom field value that was submitted together with this event registration.
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

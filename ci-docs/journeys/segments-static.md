@@ -13,7 +13,7 @@ search.audienceType:
 
 # Design static segments
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -46,4 +46,4 @@ In the list of query results, you can manually select contacts by clicking to th
 
 When you're done choosing contacts for your static segment, you will see all of them listed on the **Members** tab. To start using the segment, select **Go Live** in the top menu, as usual.
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

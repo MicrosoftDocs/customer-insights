@@ -15,7 +15,7 @@ search.audienceType:
 
 # Manage Customer Insights - Journeys forms
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 This article explains how to edit, un-publish, and manage forms in Customer Insights - Journeys.
 
@@ -217,4 +217,4 @@ You can [integrate custom captcha](real-time-marketing-form-custom-captcha.md) b
 
 It's possible to build custom back-end form submission validation that prevents form submission processing. It shows an error message to the user who tried to submit the form. You can find the inspiration for this back-end validation in the article about [integrating custom captcha](real-time-marketing-form-custom-captcha.md), where the form makes back-end validation to evaluate the result of a captcha challenge.
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

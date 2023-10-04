@@ -13,7 +13,9 @@ search.audienceType:
 
 # Troubleshoot event management in outbound marketing
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+
+[!INCLUDE [azure-ad-to-microsoft-entra-id](./includes/azure-ad-to-microsoft-entra-id.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -56,4 +58,4 @@ Before any portal changes, you should make a backup of the current website.
 
 Even though hosting the website anywhere is possible, Dynamics 365 Customer Insights - Journeys can't configure or debug the custom hosting environment.
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

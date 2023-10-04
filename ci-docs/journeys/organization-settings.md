@@ -13,7 +13,7 @@ search.audienceType:
 
 # Administer users, teams, templates, and themes
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 The following pages are available in the **Settings** menu ![The Settings menu icon.](media/settings-icon.png "The Settings menu icon") at the top of the page:
 
@@ -27,4 +27,4 @@ The following pages are available in the **Settings** menu ![The Settings menu i
     - To change the fiscal year, go to **Settings** ![The Settings menu icon.](media/settings-icon.png "The Settings menu icon") > **Advanced settings**.
     - A new window titled **Business management** will open. Select **Fiscal Year Settings**.
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

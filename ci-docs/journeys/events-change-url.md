@@ -13,7 +13,7 @@ search.audienceType:
 
 # Change the URL for events hosted on Portals in outbound marketing
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 If you chose to [integrate with a Power Apps portal](portal-optional.md) when you installed Dynamics 365 Customer Insights - Journeys, then you were able to choose an initial subdomain for the portal. The resulting URL for the portal takes the form: **_MySubdomain_.microsoftcrmportals.com**. That URL then becomes the standard domain at which your event website is hosted under a path such as **_MySubdomain_.microsoftcrmportals.com/events/_EventID_**. Each time you go live with an event, a link to that event on the event website is added to the event record (in the **Event URL** field on the **General** tab for the event). This is also the URL that you will share with contacts who want to register for your event.
 
@@ -81,4 +81,4 @@ You can update the URLs for many events at the same time, but you'll still need 
 
 1. All the events you selected now show the updated **Event URL**.
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

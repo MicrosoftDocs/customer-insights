@@ -13,7 +13,7 @@ search.audienceType:
 
 # Customer Insights - Journeys transition FAQs
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 1. **What is Dynamics 365 Customer Insights? Is it a new product?**
 

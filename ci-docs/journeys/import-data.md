@@ -13,7 +13,7 @@ search.audienceType:
 
 # Import data and control how duplicate records are identified
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 Bring your customer and sales data quickly into your app by importing it. You can import data into most record types.
 
@@ -190,4 +190,4 @@ You must wait for an import job to be completed before you can repair failures.
    - **All records imported to this entity during this import**: Deletes all records that were imported from the selected file.
    - **All imported records from the .zip file**: Deletes the import file along with the records that were imported from the import file.
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

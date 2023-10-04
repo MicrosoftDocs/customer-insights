@@ -11,7 +11,7 @@ search.audienceType:
 
 # Segment Query definition
 
-[!INCLUDE[consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -393,4 +393,4 @@ Grammar definition describes how you can use the query language.
 
     `PROFILE(Customer).FILTER(ISNULL(Address))` 
 
-[!INCLUDE[footer-include](.././includes/footer-banner.md)]
+[!INCLUDE [footer-include](.././includes/footer-banner.md)]
