@@ -19,7 +19,7 @@ The result of unifying your customer data is a *Customer* table that provides a 
 
 ## Define searchable attributes and indexed fields
 
-If it's the first time you define searchable attributes as an administrator, define indexed fields first. We suggest you choose all the attributes by which users can search and filter customers on the **Customers** page. Only attributes that exist in the *Customer* table created during the data unification process can be specified. For a field to be searchable, the field must use the Edm.String data type and be marked as “Included in search.”
+If it's the first time you define searchable attributes as an administrator, define indexed fields first. We suggest you choose all the attributes by which users can search and filter customers on the **Customers** page. Only attributes that exist in the *Customer* table created during the data unification process can be specified. For a field to be searchable, the field must use the Edm.String data type and be marked as **Included in search**.
 
 1. Go to **Customers** and select **Search & filter index**.
 
