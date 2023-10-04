@@ -15,7 +15,7 @@ ms.custom: bap-template
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
- Exports allow you to share specific data with various applications. They can include customer profiles, tables, schemas, and mapping details. Each export requires a [connection, set up by an administrator, to manage authentication and access](connections.md). The **Exports** page shows you all configured exports.
+Exports allow you to share specific data with various applications. They can include customer profiles, tables, schemas, and mapping details. Each export requires a [connection, set up by an administrator, to manage authentication and access](connections.md). The **Exports** page shows you all configured exports.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5dsVH]
 
@@ -30,7 +30,7 @@ There are two main types of exports:
 
 ### Segment exports
 
-Segments are built on the *unified customer profile* table. Every segment that meets the requirements of the target systems (for example, an email address) can get exported.
+Segments are built on the *unified customer profile* table. Every segment that meets the requirements of the target systems (for example, an email address) can get exported. A common use case for such exports is sharing lists of your customers to advertising services like Google Ads or Meta Ads for remarketing purposes. 
 
 Limits on segment exports include:
 
