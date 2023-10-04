@@ -9,7 +9,7 @@ ms.author: [Author]
 ms.reviewer: [Reviewer]
 ---
 
-# FAQ for docs-based Q&A capability 
+# FAQ for docs-based Q&A capability
 
 These frequently asked questions (FAQ) describe the AI impact of [Get answers about Customer Insights - Data from Copilot](copilot-global-sidecar.md) feature in Customer Insights - Data.
 
@@ -41,6 +41,6 @@ This capability does not need setting up by users. It is offered as a base plugi
 
 ## See also
 
-- [Feature page]([Link])
+- [Feature page](copilot-global-sidecar.md)
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]
