@@ -68,7 +68,7 @@ Over the next year, we invite all customers to fully transition from outbound to
 
 Starting in August 2023, new customers will access Customer Insights - Journeys only. Current customers provisioning new environments will also get Customer Insights - Journeys by default, but if necessary, can add outbound using a self-serve experience. More details: [Move from outbound to Customer Insights - Journeys](real-time-marketing-move.md)
 
-## Why should I transition to Customer Insights - Journeys?
+## Why should I transition to real-time journeys?
 
 Customer Insights - Journeys introduces new ways of marketing by integrating the latest AI technologies, while covering and enhancing traditional outbound scenarios. It offers a wealth of benefits to deliver engaging B2C and B2B experiences.  
 
