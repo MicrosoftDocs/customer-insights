@@ -19,7 +19,7 @@ There are three levels of consent to use generative AI Copilot features in Custo
 
 - **Allow cross-geography data flow for Copilot features**: **On** indicates you agree that data may be stored and processed outside of your geographic region, compliance boundary, or national cloud instance. Default is **On** for the United States and the European Union where Azure OpenAI is deployed. Default is **Off** for all other regions and if Azure OpenAI isn't deployed.
 
-- **Allow data sharing for Copilot features**: **On** indicates you agree to allow Microsoft to capture and review inputs, outputs, and telemetry from Copilot features to improve Microsoft's models, features, and services. Customer Insights - Data only displays the consent and doesn't allow for edits; this consent must be provided in the Power Platform Admin Center. Default is **Off**.
+- **Allow data sharing for Copilot features**: **On** indicates you agree to allow Microsoft to capture and review inputs, outputs, and telemetry from Copilot features to improve Microsoft's models, features, and services. Customer Insights - Data only displays the consent and doesn't allow for edits; this consent must be provided in the [Power Platform Admin Center](https://admin.powerplatform.microsoft.com/). Default is **Off**.
 
 ## Required roles to provide consent
 
