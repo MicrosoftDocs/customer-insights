@@ -15,15 +15,15 @@ These frequently asked questions (FAQ) describe the AI impact of [Feature] featu
 
 ## What is docs-based Q&A skill?
 
-Setting up Customer Insights - Data with all your data and managing it to stay healthy can be complex at times. Copilot in Customer Insights - Data will assist you by providing timely guidance in everyday words that adapts to where you are in your configuration process. In addition to this guidance, you can also ask your own questions to help clarify concepts or understand what you need to do next to successfully configure your solution.
+Setting up Customer Insights - Data and managing it can be complex at times. Copilot in Customer Insights - Data will assist you by providing timely guidance in everyday words. You can ask your own questions to help clarify concepts or understand what you need to do achieve your goals in Customer Insights - Data.
 
 ## What are capabilities of the docs-based Q&A skill?
 
-This Copilot skill answers the user's question by using the ["Generative Answers" capability](https://learn.microsoft.com/power-virtual-agents/nlu-boost-conversations#ai-response-generation-training-model-and-usage-notes) . The sources used by it are: Product's public documentation, troubleshooting pages and a blogs on how to setup Customer Insights - Data.
+This Copilot capability is to answer user's question by using the ["Generative Answers" service](https://learn.microsoft.com/power-virtual-agents/nlu-boost-conversations#ai-response-generation-training-model-and-usage-notes). The answers are based solely on the following public available sources: Product's public documentation, related [troubleshooting pages](https://learn.microsoft.com/troubleshoot/dynamics-365/customer-insights/welcome-customer-insights) and a blogs by the Microsoft team on how to setup Customer Insights - Data. These sources are organized as a Bing Search index, which is the reason for Copilot showing the disclaimer about Bing Search being used for certain capabilities. 
 
 ## What is the intended use of the docs-based Q&A skill?
 
-Users can ask questions about the user experience or capabilities because they want to achieve their goals within Customer insights - Data. Any input by user is treated as a question towards our product’s public documentation.
+While working in the Customer Insights - Data app, users can ask questions in writing about the user experience or capabilities. Any input by the user is treated as a question towards our product’s public documentation. The user is expected to review the answer given using the referenced sources.
 
 ## How was docs-based Q&A skill evaluated? What metrics are used to measure performance?
 
@@ -33,11 +33,11 @@ Additional evaluation was performed over custom datasets for offensive and malic
 ## What are the limitations of docs-based Q&A skill? How can users minimize the impact of this capabilities' limitations when using the system?
 
 - The capability currently only supports English. Inaccurate responses may be returned when users converse with the system in languages other than English.
-- The capability will not answer questions about the roadmap of our product. You can see the roadmap here: https://releaseplans.microsoft.com/. 
+- The capability will not answer questions about the roadmap of our product. If you're interested in our roadmap, please visit https://releaseplans.microsoft.com/. 
 
 ## What operational factors and settings allow for effective and responsible use of the feature?
 
-This capability does not need setting up by users. It is offered as a base skill of our Copilot.
+This capability does not need setting up by users. It is offered as a base plugin of our Copilot. Administrators in Customer Insights - Data can choose to disable all Copilot functionality for each solution, by using the Consent experience under Settings and System.
 
 ## See also
 
