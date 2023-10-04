@@ -26,11 +26,12 @@ Exports allow you to share specific data with various applications. They can inc
 There are two main types of exports:  
 
 - **Data-out exports** let you export any type of table available in Dynamics 365 Customer Insights - Data. The tables that you select for export are exported with all data fields, metadata, schemas, and mapping details.
-- **Segment exports** let you export segment tables from Customer Insights - Data. Segments represent a list of customer profiles.
+- **Segment exports** let you export segment tables from Customer Insights - Data. Segments represent a list of customer profiles. When exporting segments you choose which data fields to include in each export.
 
 ### Segment exports
 
-Segments are built on the *unified customer profile* table. Every segment that meets the requirements of the target systems (for example, an email address) can get exported. A common use case for such exports is sharing lists of your customers to advertising services like Google Ads or Meta Ads for remarketing purposes. 
+Segments are built on the *unified customer profile* table. Every segment that meets the requirements of the target systems (for example, an email address) can get exported. When defining a segment you often want to ensure it's exported as well, to do so you can use the **Manage exports** menu option. 
+A common use case for such exports is sharing lists of your customers to advertising services like Google Ads or Meta Ads for remarketing purposes. 
 
 Limits on segment exports include:
 
