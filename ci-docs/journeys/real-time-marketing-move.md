@@ -71,5 +71,8 @@ If you create a support ticket, you must include the following information:
 -	Why do you need outbound marketing? Select the reason(s) from the list below and include the requested details.
     1. There are features in outbound marketing that I can’t live without. (Include a list of the features)
     1. I'm not ready to transition to real-time journeys yet, I plan to transition later. (Include the planned timeline)
+    1. I have customization that I can't move to real-time journeys. (Include details)
+    1. I've tried tje real-time journeys module and had issues with it. (Include details)
+    1. Other reasons. (Include details)
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
