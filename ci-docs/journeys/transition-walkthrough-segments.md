@@ -1,6 +1,6 @@
 ---
 title: Transition segments, emails, and journeys
-description: Learn how to transition segments, emails, and journeys from outbound marketing to real-time marketing in Dynamics 365 Customer Insights - Journeys.
+description: Learn how to transition segments, emails, and journeys from outbound marketing to real-time journeys in Dynamics 365 Customer Insights - Journeys.
 ms.date: 10/04/2023
 ms.topic: article
 author: alfergus
