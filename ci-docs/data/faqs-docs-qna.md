@@ -37,7 +37,7 @@ Additional evaluation was performed over custom datasets for offensive and malic
 
 ## What operational factors and settings allow for effective and responsible use of the feature?
 
-This capability does not need setting up by users. It is offered as a base plugin of our Copilot. Administrators in Customer Insights - Data can choose to disable all Copilot functionality for each solution, by using the Consent experience under Settings and System.
+This capability does not need setting up by users. It is offered as a base plugin of our Copilot. Administrators in Customer Insights - Data can choose to disable all Copilot functionality for each solution, by using the [consent experience](copilot-global-consent.md).
 
 ## See also
 
