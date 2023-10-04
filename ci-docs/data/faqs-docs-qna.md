@@ -11,7 +11,7 @@ ms.reviewer: [Reviewer]
 
 # FAQ for docs-based Q&A capability 
 
-These frequently asked questions (FAQ) describe the AI impact of [Feature] feature in [Product].
+These frequently asked questions (FAQ) describe the AI impact of [Get answers about Customer Insights - Data from Copilot](copilot-global-sidecar.md) feature in Customer Insights - Data.
 
 ## What is docs-based Q&A skill?
 
