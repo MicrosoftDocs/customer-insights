@@ -1,7 +1,7 @@
 ---
-title: "Copilot sidecar"
+title: "Get answers about Customer Insights - Data from Copilot"
 description: "Learn how to use Copilot across Customer Insights - Data"
-ms.date: 09/01/2023
+ms.date:
 ms.reviewer: mhart
 ms.topic: how-to
 author: nikeller
@@ -16,7 +16,7 @@ ms.author: nikeller
 
 Dynamics 365 Customer Insights - Data offers a Copilot for all functionalities which helps you achieve your goals by answering your questions about the product. Ask questions in natural language about this product's capabilities. Copilot will provide an answer to each question relying only on the product's public documentation, related [troubleshooting pages](https://learn.microsoft.com/troubleshoot/dynamics-365/customer-insights/welcome-customer-insights) and a blogs by the Microsoft team on how to setup Customer Insights - Data. 
 
-Responses are generated in accordance with [Microsoft Responsible AI Standards](https://www.microsoft.com/ai/responsible-ai). For more information, see [FAQ for docs-based Q&A capability](faqs-docs-qna.md)
+Responses are generated in accordance with [Microsoft Responsible AI Standards](https://www.microsoft.com/ai/responsible-ai). For more information, see [FAQ for docs-based Q&A capability](faqs-docs-qna.md).
 
 # Availability
 Administrators in Customer Insights - Data can choose to disable all Copilot functionality for each solution, by using the [consent experience](copilot-global-consent.md).
@@ -28,7 +28,7 @@ This Copilot pane is available on all pages of Customer Insights - Data except t
 # How to get help from Copilot
 
 1. Select the Copilot icon (:::image type="icon" source="media/copilot-icon.png" border="false":::) to expand the **Copilot** pane. You can collapse the pane by clicking the **X**. When collapsing and expanding the conversation history will remain. You can learn more about conversation history further below.
-1. Ask a question by typing in the input box. Alternatively you can click the suggested prompts that Copilot shows. Once you send your question, Copilot will start generate an answer.
+1. Ask a question about how to use Customer Insights - Data by typing in the input box. Alternatively you can click the suggested prompts that Copilot shows. Once you send your question, Copilot will start generate an answer.
 1. The answer by Copilot will appear as a chat message below your question. Each answer will contain at least one reference, which is shown as a number in a box. Each reference contains a link to the documentation page used.
 
 ## Conversation history
