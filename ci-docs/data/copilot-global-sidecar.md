@@ -1,11 +1,12 @@
 ---
-title: "Get answers about Customer Insights - Data from Copilot"
-description: "Learn how to use Copilot across Customer Insights - Data"
-ms.date:
+title: Copilot in global pane (preview)
+description: Learn how to use Copilot across Customer Insights - Data.
+ms.date: 10/04/2023
 ms.reviewer: mhart
 ms.topic: how-to
 author: nikeller
 ms.author: nikeller
+ms.custom: bap-template
 ---
 
 # Copilot in global pane (preview)
@@ -14,16 +15,17 @@ ms.author: nikeller
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
-Dynamics 365 Customer Insights - Data offers a Copilot for all functionalities which helps you achieve your goals by answering your questions about the product. Ask questions in natural language about this product's capabilities. Copilot will provide an answer to each question relying only on the product's public documentation, related [troubleshooting pages](https://learn.microsoft.com/troubleshoot/dynamics-365/customer-insights/welcome-customer-insights) and a blogs by the Microsoft team on how to setup Customer Insights - Data. 
+Dynamics 365 Customer Insights - Data offers a Copilot for all functionalities which helps you achieve your goals by answering your questions about the product. Ask questions in natural language about this product's capabilities. Copilot will provide an answer to each question relying only on the product's public documentation, related [troubleshooting pages](https://learn.microsoft.com/troubleshoot/dynamics-365/customer-insights/welcome-customer-insights) and a blogs by the Microsoft team on how to setup Customer Insights - Data.
 
 Responses are generated in accordance with [Microsoft Responsible AI Standards](https://www.microsoft.com/ai/responsible-ai). For more information, see [FAQ for docs-based Q&A capability](faqs-docs-qna.md).
 
 ## Availability
 
 Administrators in Customer Insights - Data can choose to disable all Copilot functionality for each solution, by using the [consent experience](copilot-global-consent.md).
-Whether Copilot is available in a solution depends on the availability of this Copilot, which currently is limited to specific regions and languages. 
+Whether Copilot is available in a solution depends on the availability of this Copilot, which currently is limited to specific regions and languages.
 
 This Copilot pane is available on all pages of Customer Insights - Data except the following:
+
 - When creating or editing a segment, you instead have access to the [Copilot for segment creation](segments-copilot.md).
 
 ## How to get help from Copilot
