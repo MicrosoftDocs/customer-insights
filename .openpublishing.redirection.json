@@ -2405,6 +2405,21 @@
       "source_path": "ci-docs/journeys/ci-overview.md",
       "redirect_url": "/dynamics365/customer-insights/journeys/ci-faq",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/real-time-marketing-move.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/real-time-marketing-transition-resources.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-resources",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/real-time-marketing-transition.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-faqs",
+      "redirect_document_id": false
     }
   ]
 }

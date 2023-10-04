@@ -66,7 +66,7 @@ Dynamics 365 Marketing is becoming Dynamics 365 Customer Insights - Journeys. Th
 
 Over the next year, we invite all customers to fully transition from outbound to Customer Insights - Journeys. Customer Insights - Journeys has already surpassed traditional outbound marketing in functionality, effectiveness, usability testing results, satisfaction surveys, and our innovations and upcoming AI features are exclusively focused on Customer Insights - Journeys.
 
-Starting in August 2023, new customers will access Customer Insights - Journeys only. Current customers provisioning new environments will also get Customer Insights - Journeys by default, but if necessary, can add outbound using a self-serve experience. More details: [Move from outbound to Customer Insights - Journeys](real-time-marketing-move.md)
+Starting in August 2023, new customers will access Customer Insights - Journeys only. Current customers provisioning new environments will also get Customer Insights - Journeys by default, but if necessary, can add outbound using a self-serve experience. More details: [Move from outbound to Customer Insights - Journeys](transition-overview.md)
 
 ## Why should I transition to real-time journeys?
 
@@ -134,7 +134,7 @@ To easily kickstart delivering experiences using Customer Insights - Journeys, w
 
 Customer Insights - Journeys is already available. To get started, you can consult our learning center: [Customer Insights - Journeys overview](real-time-marketing-overview.md)
 
-If you're transitioning from outbound marketing, review our resource page ([Real-time transition resources](real-time-marketing-transition-resources.md)) to receive guidance and prepare your transition to Customer Insights - Journeys.
+If you're transitioning from outbound marketing, review our resource page ([Real-time transition resources](transition-resources.md)) to receive guidance and prepare your transition to Customer Insights - Journeys.
 
 Reach out to your account manager with further questions or if help is needed.
 

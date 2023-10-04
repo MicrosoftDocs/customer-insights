@@ -35,9 +35,9 @@
 - name: Transition from outbound marketing
   items:
   - name: Transition overview
-    href: real-time-marketing-move.md
+    href: transition-overview.md
   - name: Transition resources
-    href: real-time-marketing-transition-resources.md
+    href: transition-resources.md
   - name: Transition functional areas 
     items:
     - name: Functional areas overview
@@ -59,7 +59,7 @@
     - name: Social posts discontinued
       href: transition-walkthrough-social-posts.md
   - name: Real-time journeys transition FAQs
-    href: real-time-marketing-transition.md
+    href: transition-faqs.md
 - name: Install and manage
   items:
   - name: Install or uninstall
