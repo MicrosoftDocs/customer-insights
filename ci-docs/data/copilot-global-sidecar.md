@@ -15,7 +15,7 @@ ms.custom: bap-template
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
-Dynamics 365 Customer Insights - Data offers a Copilot for all functionalities which helps you achieve your goals by answering your questions about the product. Ask questions in natural language about this product's capabilities. Copilot will provide an answer to each question relying only on the product's public documentation, related [troubleshooting pages](https://learn.microsoft.com/troubleshoot/dynamics-365/customer-insights/welcome-customer-insights) and a blogs by the Microsoft team on how to setup Customer Insights - Data.
+Dynamics 365 Customer Insights - Data offers a Copilot for all functionalities which helps you achieve your goals by answering your questions about the product. Ask questions in natural language about this product's capabilities. Copilot will provide an answer to each question relying only on the product's public documentation, related [troubleshooting pages](/troubleshoot/dynamics-365/customer-insights/welcome-customer-insights) and a blogs by the Microsoft team on how to setup Customer Insights - Data.
 
 Responses are generated in accordance with [Microsoft Responsible AI Standards](https://www.microsoft.com/ai/responsible-ai). For more information, see [FAQ for docs-based Q&A capability](faqs-docs-qna.md).
 

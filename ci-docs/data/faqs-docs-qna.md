@@ -20,7 +20,7 @@ Setting up Customer Insights - Data and managing it can be complex at times. Cop
 
 ## What are capabilities of the docs-based Q&A skill?
 
-This Copilot capability is to answer user's question by using the ["Generative Answers" service](https://learn.microsoft.com/power-virtual-agents/nlu-boost-conversations#ai-response-generation-training-model-and-usage-notes). The answers are based solely on the following public available sources: Product's public documentation, related [troubleshooting pages](https://learn.microsoft.com/troubleshoot/dynamics-365/customer-insights/welcome-customer-insights) and a blogs by the Microsoft team on how to setup Customer Insights - Data. These sources are organized as a Bing Search index, which is the reason for Copilot showing the disclaimer about Bing Search being used for certain capabilities.
+This Copilot capability is to answer user's question by using the ["Generative Answers" service](/power-virtual-agents/nlu-boost-conversations#ai-response-generation-training-model-and-usage-notes). The answers are based solely on the following public available sources: Product's public documentation, related [troubleshooting pages](/troubleshoot/dynamics-365/customer-insights/welcome-customer-insights) and a blogs by the Microsoft team on how to setup Customer Insights - Data. These sources are organized as a Bing Search index, which is the reason for Copilot showing the disclaimer about Bing Search being used for certain capabilities.
 
 ## What is the intended use of the docs-based Q&A skill?
 
@@ -34,7 +34,7 @@ Additional evaluation was performed over custom datasets for offensive and malic
 ## What are the limitations of docs-based Q&A skill? How can users minimize the impact of this capabilities' limitations when using the system?
 
 - The capability currently only supports English. Inaccurate responses may be returned when users converse with the system in languages other than English.
-- The capability will not answer questions about the roadmap of our product. If you're interested in our roadmap, please visit https://releaseplans.microsoft.com/.
+- The capability will not answer questions about the [roadmap of our product](https://releaseplans.microsoft.com/).
 
 ## What operational factors and settings allow for effective and responsible use of the feature?
 
