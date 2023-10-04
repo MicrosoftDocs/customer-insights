@@ -130,8 +130,10 @@
     - name: Manage unknown customer profiles
       href: manage-unknown-profiles.md
 
-- name: Copilot in Customer Insights
+- name: Copilot in Customer Insights - Data
   items:
+    - name: Give consent to use Copilot in Customer Insights - Data
+      href: copilot-global-consent.md
     - name: Dialog with data
       href: dialog-with-data.md
     - name: Data prep report overview
