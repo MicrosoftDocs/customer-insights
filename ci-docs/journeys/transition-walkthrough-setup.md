@@ -1,6 +1,6 @@
 ---
-title: Set up and get started
-description: How to set up and get started on your transition from outbound marketing to real-time journeys in Dynamics 365 Customer Insights - Journeys.
+title: Setup changes in real-time journeys
+description: How setting up real-time journeys differs from outbound marketing setup in Dynamics 365 Customer Insights - Journeys.
 ms.date: 10/04/2023
 ms.topic: article
 author: alfergus
@@ -11,7 +11,7 @@ search.audienceType:
   - enduser
 ---
 
-# Set up and get started
+# Setup changes in real-time journeys
 
 [!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 

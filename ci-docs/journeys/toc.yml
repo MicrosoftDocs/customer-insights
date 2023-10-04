@@ -36,14 +36,14 @@
   items:
   - name: Transition overview
     href: real-time-marketing-move.md
-  - name: High-level transition guidance
-    href: transition-walkthrough-high-level.md
-  - name: Set up and get started
-    href: transition-walkthrough-setup.md
+  - name: Transition resources
+    href: real-time-marketing-transition-resources.md
   - name: Transition functional areas 
     items:
-    - name: Overview
+    - name: Functional areas overview
       href: transition-walkthrough-functional.md
+    - name: Setup changes in real-time journeys
+      href: transition-walkthrough-setup.md
     - name: Segments, emails, and journeys
       href: transition-walkthrough-segments.md
     - name: Consent
@@ -58,8 +58,6 @@
       href: transition-walkthrough-insights.md
     - name: Social posts discontinued
       href: transition-walkthrough-social-posts.md
-  - name: More transition resources
-    href: real-time-marketing-transition-resources.md
   - name: Real-time journeys transition FAQs
     href: real-time-marketing-transition.md
 - name: Install and manage
