@@ -42,6 +42,8 @@
     href: transition-walkthrough-setup.md
   - name: Transition functional areas 
     items:
+    - name: Transition functional areas overview
+      href: transition-walkthrough-functional.md
     - name: Segments, emails, and journeys
       href: transition-walkthrough-segments.md
     - name: Consent
