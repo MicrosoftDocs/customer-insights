@@ -1,11 +1,12 @@
 ---
 title: Predict transaction churn (contains video)
 description: "Predict whether a customer is at risk for no longer purchasing your products or services."
-ms.date: 09/01/2023
+ms.date: 09/07/2023
 ms.reviewer: mhart
 ms.topic: how-to
 author: zacookmsft
 ms.author: zacook
+ms.custom: bap-template 
 ---
 
 # Predict transaction churn
@@ -20,7 +21,7 @@ You must have business knowledge to understand what churn means for your busines
 
 ## Prerequisites
 
-- At least [Contributor permissions](permissions.md).
+- At least [Contributor permissions](user-roles.md).
 - At least 10 customer profiles, preferably more than 1,000 unique customers.
 - Customer Identifier, a unique identifier to match transactions to your customers.
 - Transaction data for at least double the selected time window such as two to three years of transaction history. Ideally at least two transactions per customer. Transaction history must include:

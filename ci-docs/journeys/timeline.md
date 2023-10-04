@@ -1,7 +1,7 @@
 ---
 title: Customer interactions timeline 
 description: Learn how to use the customer interactions timeline to view historical activity in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/23/2023
+ms.date: 09/28/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -13,7 +13,7 @@ search.audienceType:
 
 # Customer interactions timeline
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 The interactions timeline for a contact or lead provides a unified view of historical interactions based on customer activities in Dynamics 365 Customer Insights - Journeys (both Customer Insights - Journeys and outbound), Sales, and Customer Service.
 
@@ -26,7 +26,7 @@ Having a single view of all the activities that a customer engages in enables yo
 
 ## How to enable marketing interactions in your contact/lead timeline
 
-If you use the out-of-the-box contact and lead forms provided with Customer Insights - Journeys, marketing interactions (based on Customer Insights - Journeys and outbound marketing activities) will automatically show up in the timeline.
+If you use the out-of-the-box contact and lead forms provided with Customer Insights - Journeys, marketing interactions (based on Customer Insights - Journeys and outbound marketing activities) will automatically show up in the timeline. The timeline will only display interactions associated with the respective profile type (either contact or lead). For example, the timeline for a contact will include interactions for that contact only.
 
 But if you use custom forms for contacts and leads, you’ll need to add a custom connector to the timeline component in your custom contact/lead form to see the marketing interactions.
 
@@ -78,6 +78,6 @@ For more information, see [Use custom connectors with the timeline control](/pow
 > -	msdynmkt_sms
 
 > [!NOTE]
-> Customer Insights - Journeys activities from the past 12 months are shown in the timeline for the selected contact or lead. However, historical interactions from outbound marketing activities are only shown post the Customer Insights - Journeys installation date or May 2022, whichever is later.
+> Real-time - marketing activities from the past 12 months are shown in the timeline for the selected contact or lead. Historical interactions from outbound marketing activities are only shown after the real-time marketing installation date or May 2022, whichever is later.
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

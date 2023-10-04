@@ -11,7 +11,7 @@ search.audienceType:
 
 # Export Dynamics 365 Customer Voice survey responses to Microsoft Excel
 
-[!INCLUDE[consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
 
 The export to Excel feature uses Microsoft Dataverse information to join and pull the contact record information for Customer Insights - Journeys integration customers, making it available in Excel.
 
@@ -31,4 +31,4 @@ To export survey response data to Excel:
 
 1. To export the response data, select **Export all**.
 
-[!INCLUDE[footer-include](.././includes/footer-banner.md)]
+[!INCLUDE [footer-include](.././includes/footer-banner.md)]

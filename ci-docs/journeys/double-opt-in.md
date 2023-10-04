@@ -1,6 +1,6 @@
 ---
-title: Set up global double opt-in for new subscriptions and consent changes
-description: How to set up the global double opt-in system to let contacts confirm their new subscriptions and consent changes in Dynamics 365 Customer Insights - Journeys.
+title: Set up global double opt-in in outbound marketing
+description: How to set up the global double opt-in system to let contacts confirm their new subscriptions and consent changes in outbound marketing.
 ms.date: 08/18/2023
 ms.topic: article
 author: alfergus
@@ -11,19 +11,22 @@ search.audienceType:
   - enduser
 ---
 
-# Set up global double opt-in for new subscriptions and consent changes
+# Set up global double opt-in in outbound marketing
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+
+> [!IMPORTANT]
+> This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
 
 The _global double opt-in_ process (also known as _confirmed opt-in_) asks contacts who sign up for a new subscription list, or who choose to increase their level of [data protection consent](privacy.md), to confirm their request by clicking on a link sent to their registered email address. This system helps make sure that the request is intentional, and that the supplied email address is legitimate and functional.
 
 The global double opt-in process works as follows:
 
 1. A new or existing contact uses a [subscription form](set-up-subscription-center.md) or landing page to subscribe to a newsletter or adjust their consent level.
-2. On submitting the form, the contact is shown a page that tells them to check their email for a confirmation message that includes a link the contact must click on to confirm their request.
-3. Dynamics 365 Customer Insights - Journeys sends a confirmation email of the appropriate type (subscribe or consent) to the address registered for the contact.
-4. The contact opens the confirmation email, reads the text, and clicks the link. This opens a web browser, which submits a coded URL that identifies the contact and request message to  Customer Insights - Journeys.
-5. Customer Insights - Journeys registers the click, applies the requested subscription or consent change, logs the change, and immediately redirects to a thank you page that is shown to the contact.
+1. On submitting the form, the contact is shown a page that tells them to check their email for a confirmation message that includes a link the contact must click on to confirm their request.
+1. Outbound marketing sends a confirmation email of the appropriate type (subscribe or consent) to the address registered for the contact.
+1. The contact opens the confirmation email, reads the text, and clicks the link. This opens a web browser, which submits a coded URL that identifies the contact and request message to  outbound marketing.
+1. Outbound marketing registers the click, applies the requested subscription or consent change, logs the change, and immediately redirects to a thank you page that is shown to the contact.
 
 > [!IMPORTANT]
 > The link in the confirmation email remains valid for 30 days. After that period, the user that received the email will not be able to confirm their opt-in. 
@@ -40,7 +43,7 @@ Read this topic to learn how to set up each element required for the global doub
 A subscription confirmation request message is sent to contacts each time they register for a new newsletter subscription while global double opt-in is enabled for your instance. This applies both to known contacts using a subscription center, and for new contacts registering for the first time.
 
 > [!NOTE]
-> Customer Insights - Journeys sends a separate confirmation request message for each subscription list a contact chooses to join, even if they enable several lists at once.
+> Outbound marketing sends a separate confirmation request message for each subscription list a contact chooses to join, even if they enable several lists at once.
 
 To create a subscription confirmation request message:
 
@@ -75,9 +78,9 @@ The previous illustration highlights important elements provided by the **diaman
 - **{{Message.ConfirmationRequestType}}**: Resolves to show the type of confirmation message this is (as established in the [Default marketing settings](#set-up-doi) when the message is sent). For subscription confirmations, this is "Marketing list subscribe" by default.
 - **{{Message.ConfirmationObjectName}}**: Resolves to the **Name** field of the [subscription list](set-up-subscription-center.md#create-subscription-list) the contact has asked to join.
 - **{{Message.ConfirmationObjectDescription}}**: Resolves to the **Description** field of the [subscription list](set-up-subscription-center.md#create-subscription-list) the contact has asked to join.
-- **{{Message.ConfirmationRedirectURL}}**: Resolves to a URL that targets the Customer Insights - Journeys server and includes a code that uniquely identifies the contact the message was sent to and the message itself. All confirmation request messages must include a button (or link) that targets this Handlebars expression (otherwise, contacts will not be able to confirm).
+- **{{Message.ConfirmationRedirectURL}}**: Resolves to a URL that targets the outbound marketing server and includes a code that uniquely identifies the contact the message was sent to and the message itself. All confirmation request messages must include a button (or link) that targets this Handlebars expression (otherwise, contacts will not be able to confirm).
 
-The following screenshot shows a Customer Insights - Journeys subscription-list record with the **Name** and **Description** fields highlighted. These are the values that you can include in your subscription confirmation request message.
+The following screenshot shows a outbound marketing subscription-list record with the **Name** and **Description** fields highlighted. These are the values that you can include in your subscription confirmation request message.
 
 ![Subscription list settings available to confirmation request messages.](media/doi-sub-list-settings.png "Subscription list settings available to confirmation request messages")
 
@@ -123,7 +126,7 @@ The previous illustration highlights important elements provided by the **custon
 - **{{Message.ConfirmationObjectName}}**: Resolves to the name of the consent-level field as defined on the contact entity (by default, "Consent given").
 - **{{Message.ConfirmationObjectValue}}**: Resolves to the **Options** value for the new consent level the contact has chosen (e.g., "(2) Transactional").
 - **{{Message.ConfirmationObjectDescription}}**: Resolves to the **Description** field for the new consent level the contact has chosen.
-- **{{Message.ConfirmationRedirectURL}}**: Resolves to a URL that targets the Customer Insights - Journeys server and includes a code that uniquely identifies the contact the message was sent to and the message itself. All confirmation request messages must include a button (or link) that targets this Handlebars expression (otherwise, contacts will not be able to confirm).
+- **{{Message.ConfirmationRedirectURL}}**: Resolves to a URL that targets the outbound marketing server and includes a code that uniquely identifies the contact the message was sent to and the message itself. All confirmation request messages must include a button (or link) that targets this Handlebars expression (otherwise, contacts will not be able to confirm).
 
 The following screenshot shows an **Option Set** setup with the **Options** and **Description** fields highlighted. These are the values that you can include in your consent confirmation request message. Note that each entry in the **Options** list has its own **Description**. More information: [Create and edit global option sets](/powerapps/maker/common-data-service/create-edit-global-option-sets)
 
@@ -145,13 +148,13 @@ More information: [Use content settings to set up repositories of standard and r
 
 ## Create a thank you page for each type of confirmation
 
-When a contact clicks the confirmation link in a confirmation email, Customer Insights - Journeys registers the confirmation, applies the requested action, and redirects the contact's browser to a thank you page. You must create your thank you pages as [marketing pages](create-deploy-marketing-pages.md) in Customer Insights - Journeys. Thank you page templates are provided out-of-the-box to help get you started.
+When a contact clicks the confirmation link in a confirmation email, outbound marketing registers the confirmation, applies the requested action, and redirects the contact's browser to a thank you page. You must create your thank you pages as [marketing pages](create-deploy-marketing-pages.md) in outbound marketing. Thank you page templates are provided out-of-the-box to help get you started.
 
 <a name="set-up-doi"></a>
 
 ## Set up and enable global double opt-in on your instance
 
-The double opt-in feature is global for your Customer Insights - Journeys instance. When it's enabled, all new-subscription and increase-consent requests will require double opt-in and the same settings will apply everywhere.
+The double opt-in feature is global for your outbound marketing instance. When it's enabled, all new-subscription and increase-consent requests will require double opt-in and the same settings will apply everywhere.
 
 Before you start to set up and enable global double opt-in, make sure you have all the other elements described previously in this topic available to your system, including:
 
@@ -180,4 +183,4 @@ To set up and enable the global double opt-in system:
 
 1. Select the **Save** button in the bottom-right corner to save your settings.
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

@@ -1,7 +1,7 @@
 ---
 title: Access and interpret analytics
 description: How to access and interpret Customer Insights - Journeys analytics in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/22/2023
+ms.date: 09/26/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -13,7 +13,7 @@ search.audienceType:
 
 # Access and interpret analytics
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 Customer Insights - Journeys's dashboards and cross-journey insights show metrics, views, and insights summarized across single or multiple journeys, providing you with a deep understanding of journey, channel, and content performance. The built-in dashboards focus on measuring delivery, engagement and journey goal attainment, so you can fine-tune the effectiveness of your journeys, channels, and content.
 
@@ -29,7 +29,7 @@ With Customer Insights - Journeys analytics, you can:
 
 ## Contact insights
 
-Get a comprehensive view of how a contact has engaged with your journeys in Customer Insights - Journeys, including all past email sends, opens, clicks, form submissions, and more. Better understand your audience's behavior and interests, make informed decisions based on past engagement, and tailor your marketing efforts to their needs and preferences. To view contact insights, go to **Customer Insights - Journeys** > **Audience** > **Contacts**, select a contact record, and then open its **Insights** tab.
+Get a comprehensive view of how a contact has engaged with your journeys in Customer Insights - Journeys, including all past email sends, opens, clicks, form submissions, and more. Better understand your audience's behavior and interests, make informed decisions based on past engagement, and tailor your marketing efforts to their needs and preferences. To view contact insights, go to **Real-time journeys** > **Audience** > **Contacts**, select a contact record, and then open its **Insights** tab.
 
 The following insights categories are provided:
 
@@ -44,7 +44,7 @@ The following insights categories are provided:
 
 ## Lead insights
 
-Just like with Contact insights, you can access a complete overview of your selected Lead's interactions with your marketing initiatives. The insights categories displayed for a Lead are the same as previously described in [Contact insights](#contact-insights). To view Lead insights, go to **Customer Insights - Journeys** > **Audience** > **Leads**, select a Lead record, and then open its Insights tab.
+Just like with Contact insights, you can access a complete overview of your selected Lead's interactions with your marketing initiatives. The insights categories displayed for a Lead are the same as previously described in [Contact insights](#contact-insights). To view Lead insights, go to **Real-time journeys** > **Audience** > **Leads**, select a Lead record, and then open its Insights tab.
 
 ## Journey operational analytics
 
@@ -63,13 +63,23 @@ Select any journey component to view near real-time operational analytics in the
     To view delivery and interaction statistics, select the **Delivery and interaction details** link at the bottom of the channel analytics pane. Delivery and interaction details allow you to analyze delivery, engagement, and performance data for your email, text, or push notification messages. The **Delivery** tab provides details on messages sent, delivered, blocked, or bounced along with the respective reasons. The **Interactions** tab provides detailed data on customers that opened or clicked a message, as well as unsubscription interaction data. It's important to note that a message’s unique opens and clicks are calculated based on the journey run of a customer. This means that if the same customer enters the same journey multiple times and opens or clicks the same message each time, the system will record multiple unique opens or clicks. For example, if a customer clicks the same message in two different journey executions, two unique clicks will be recorded.
 
     :::image type="content" source="media/real-time-marketing-analytics-interactions.png" alt-text="Delivery and interactions details screenshot." lightbox="media/real-time-marketing-analytics-interactions.png":::
-
+  
+> [!IMPORTANT]
+> As of September 2023, several enhancements have been introduced in email analytics, including key performance indicators such as:
+> - **Delivery rate**: the percentage of emails delivered divided by the number of emails sent.
+> - **Open rate**: the percentage of unique email opens divided by the number of emails delivered.
+> - **Click rate**: the percentage of unique email clicks divided by the number of emails delivered.
+>
+> In the delivery and interaction details, you can now export up to 50,000 records of interaction data and access links to audience profiles that interacted with your email messages. Additionally, timestamps are reported according to the organization's timezone.
+> 
+> While these enhancements initially apply to email analytics, they will be gradually rolled out to journey operational analytics and other channel analytics.
+  
 - **AI optimization**: Near real-time data to help you evaluate how applying AI optimization has helped your engagement rate.
 
     :::image type="content" source="media/real-time-marketing-ai-optimization.png" alt-text="AI optimization screenshot." lightbox="media/real-time-marketing-ai-optimization.png":::
 
 > [!NOTE]
-> Data retention is 12 months for Contact insights, Lead insights, goal analytics, channel analytics (including delivery and interaction details), and AI optimization analytics.
+> Data retention is 12 months for contact insights, lead insights, goal analytics, channel analytics (including delivery and interaction details), and AI optimization analytics.
 
 ## Aggregate cross-journey analytics
 
@@ -94,13 +104,13 @@ Learn more: [How to use aggregate channel analytics](real-time-marketing-channel
 > [!NOTE]
 > There is no retention policy for Customer Insights - Journeys interactions in aggregate cross-journey analytics and Aggregate channel analytics. Dataverse entities are limited to a two-year retention policy after their initial creation date. Keep in mind that the two-year Dataverse entity retention policy might impact analytics views associated with interaction data from Dataverse entities.
 
-## Customer Insights - Journeys effectiveness analytics
+## Marketing effectiveness analytics
 
 The marketing effectiveness analytics dashboard enables you to set up key milestones in your buyer’s journey and analyze how your Customer Insights - Journeys activities are contributing to driving customers to those milestones. The dashboard uses AI-powered multi-touch and single-touch attribution models.
 
 :::image type="content" source="media/real-time-marketing-effectiveness-analytics-dashboard.png" alt-text="Customer Insights - Journeys effectiveness analytics dashboard." lightbox="media/real-time-marketing-effectiveness-analytics-dashboard.png":::
 
-Learn more: [Preview: Customer Insights - Journeys effectiveness analytics](real-time-marketing-effectiveness.md)
+Learn more: [Preview: Marketing effectiveness analytics](real-time-marketing-effectiveness.md)
 
 ## Learn more
 
@@ -108,4 +118,4 @@ Here are some advanced resources for this topic:
 
 - [Extracting Marketing Interactions in Dynamics 365 Customer Insights - Journeys](https://community.dynamics.com/blogs/post/?postid=4e96ca1e-52ed-4ae4-9887-af8d6e563304)
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

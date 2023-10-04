@@ -13,9 +13,9 @@ search.audienceType:
 
 # Embed forms on external websites
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
-[!INCLUDE[marketing-trial-cta](./includes/marketing-trial-cta.md)]
+[!INCLUDE [marketing-trial-cta](./includes/marketing-trial-cta.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -237,4 +237,4 @@ You can create an inbound campaign by placing a **Marketing form** tile at the s
 ![Inbound campaign from a hosted form.](media/journey-host-form-trigger5.png "Inbound campaign from a hosted form")
 
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

@@ -13,7 +13,7 @@ search.audienceType:
 
 # Define an extended configuration entity for the channel instance
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 Applicable channels: SMS, custom
 
@@ -73,7 +73,7 @@ For each custom channel solution, you need to:
 
     [!INCLUDE [Lightbox tip](~/../shared-content/shared/lightbox-tip.md)]
 
-    The form is loaded in the Customer Insights - Journeys setup wizard. The form ID is assigned to the attribute **msdyn_channeldefinitionexternalformid** at the [channel definition step](real-time-marketing-define-channel-definition.md).
+    The form is loaded in the Customer Insights - Journeys SMS wizard. The form ID is assigned to the attribute **msdyn_channeldefinitionexternalformid** at the [channel definition step](real-time-marketing-define-channel-definition.md).
 
     - SMS example:
 

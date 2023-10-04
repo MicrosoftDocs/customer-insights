@@ -14,7 +14,7 @@ search.audienceType:
 
 # Troubleshoot email campaigns
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 ## What types of lookup fields are supported?
 
@@ -42,4 +42,4 @@ If you're updating or creating links in raw HTML, you should understand the mean
 
 - Another important attribute is `data-msdyn-tracking`. This Boolean attribute controls link tracking. If it's set to *false*, the link won't be tracked, and you won't see whether a user has clicked the link.
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

@@ -11,7 +11,7 @@ search.audienceType:
 
 # Register your web application to use the events API
 
-[!INCLUDE[consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
 
 To use the events API, you need to provide a web application token in each request. The web application token is used to control API requests that are associated with your organization. Follow the steps given below to register your web application:
 
@@ -36,4 +36,4 @@ To use the events API, you need to provide a web application token in each reque
    
 7. Select **Save**. You will get the web application token and the API endpoint.
 
-[!INCLUDE[footer-include](.././includes/footer-banner.md)]
+[!INCLUDE [footer-include](.././includes/footer-banner.md)]

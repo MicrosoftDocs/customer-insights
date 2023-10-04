@@ -1,7 +1,7 @@
 ---
 title: "Teams bot for Dynamics 365 Customer Insights - Data (preview)"
 description: "Look up unified customer profiles in Microsoft Teams with the help of a bot."
-ms.date: 09/01/2023
+ms.date: 09/15/2023
 ms.reviewer: mhart
 ms.topic: how-to
 author: pkieffer
@@ -12,7 +12,9 @@ ms.author: philk
 
 [!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
+> [!IMPORTANT]
+> We plan the removal of this feature on October 15, 2023.   
+> Explore alternative solutions: [Create a bot in Teams using the v3 Bot Framework SDK](/microsoftteams/platform/resources/bot-v3/bots-create) or [Create a chatbot with Power Virtual Agents and Dataverse for Teams](/training/modules/create-chatbot-power-virtual-agents-dataverse-teams/).
 
 Connect with Microsoft Teams to let a bot look up unified customer profiles in Teams channels.
 

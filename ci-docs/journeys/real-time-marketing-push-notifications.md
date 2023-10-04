@@ -13,7 +13,7 @@ search.audienceType:
 
 # Create push notifications
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 Push notifications are messages sent to customers who have installed your mobile app. Push messages allow you to quickly convey offers, messages, or other information directly to users of your app.
 
@@ -126,4 +126,4 @@ When creating a Customer Insights - Journeys, you can send push notification mes
 
 You can see how customers reacted to your push messages by checking the push notification analytics in the message itself and within journeys.
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

@@ -13,7 +13,7 @@ search.audienceType:
 
 # Create a landing page with a form
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -91,6 +91,6 @@ To create a landing page and go live:
 
     As people interact with your page, information will become available in the **Insights** tab of the page record, including lists of contacts who visited and submitted the form on the page and analytics about its performance. You should be able to see your test submission on the **Submissions** panel of the **Insights** tab. Similar insights are provided for form records.
 
-[!INCLUDE[cc-marketing-cookies](./includes/cc-marketing-cookies.md)]
+[!INCLUDE [cc-marketing-cookies](./includes/cc-marketing-cookies.md)]
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

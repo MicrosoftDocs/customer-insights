@@ -1,7 +1,7 @@
 ---
 title: Track website visits, social media clicks, and banner clicks
 description: A tutorial for how to enable online behavior analysis for website activity and external clicks in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/23/2023
+ms.date: 09/28/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -13,10 +13,10 @@ search.audienceType:
 
 # Track website visits, social media clicks, and banner clicks
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
-> This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
+> This article only applies to [outbound marketing](/dynamics365/marketing/user-guide). This feature is coming to the [real-time journeys area](real-time-marketing-overview.md) in the December release. [Learn more](/dynamics365/release-plan/2023wave2/marketing/dynamics365-marketing/engage-customers-content-follow-ups-based-website-interactions).
 
 Dynamics 365 Customer Insights - Journeys provides several ways to help you get to know your potential customers and to see how they interact with your various marketing initiatives. We've already mentioned that you can see when email recipients open a message or select a message link—and when new or existing contacts submit a form from a marketing page. You've also seen that these actions can affect lead scores and the way contacts flow through your customer journeys.
 
@@ -77,6 +77,6 @@ To create a redirecting URL:
 
 To see usage statistics about one of your redirect URLs, go to **Outbound marketing** > **Internet Marketing** > **Redirect URLs** and open the link you want to learn about. The **General info** tab shows a map of where the clicks occurred, and the **Timeline** tab provides a list of when each click occurred. Redirect URL interactions are also shown on the **Insights** form views for leads and contacts for those clicks that the system was able to associate with a lead or contact, which requires a cookie (as described earlier for website tracking).
 
-[!INCLUDE[cc-marketing-cookies](./includes/cc-marketing-cookies.md)]
+[!INCLUDE [cc-marketing-cookies](./includes/cc-marketing-cookies.md)]
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

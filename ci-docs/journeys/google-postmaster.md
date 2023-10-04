@@ -13,7 +13,7 @@ search.audienceType:
 
 # Google Postmaster Tools - What it's and how it can help you
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 Google Postmaster Tools is an awesome resource that allows senders to troubleshoot deliverability hiccups. The tools deliver essential insights into important metrics that can identify problem areas in email sending practices.
 
@@ -155,4 +155,4 @@ This graph monitors what percentage of your total emails were rejected or tempor
 
 That’s pretty much it. We hope this helps you getting Google Postmaster Tools up and running. If you need more insights into these tools, let us know. We can help.
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

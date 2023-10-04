@@ -1,7 +1,7 @@
 ---
 title: Push notification setup for application developers
 description: Learn developer settings for push notifications in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/22/2023
+ms.date: 09/08/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -13,7 +13,7 @@ search.audienceType:
 
 # Push notification setup for application developers
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 To enable push notifications in Customer Insights - Journeys, you need to complete the following steps:
 
@@ -183,6 +183,11 @@ Body:
     "ApnsDeviceToken": "%APNS_DEVICE_TOKEN%"
 }
 ```
+Headers:
+
+- **x-ms-callback-url:** When not empty, failed or successful device registration will trigger POST request webhook.
+- **x-ms-callback-url-headers:** Contains a serialized JSON of a string-to-string dictionary, representing headers passed for webhook requests. Used only when x-ms-callback-url is defined.
+
 Returns: 202 on success, 400 if the request is not valid.
 
 2. Device Registration (multiple):
@@ -193,9 +198,37 @@ POST https://public-eur.mkt.dynamics.com/api/v1.0/orgs/%ORG_ID%/pushdeviceregist
 
 Body: array of items equal to body from (1), up to 100 items
 
+Headers: see **(1)**
+
 Returns: 202 on success, 400 if the request is not valid
 
-3. Device Cleanup (single):
+3. Device Registration Status Webhook (single): 
+
+```
+POST to URL provided within x-ms-status-callback-url header of (1) or (2) 
+```
+
+Body: 
+```
+{ 
+
+    "Status": "Success|Failed", 
+    "Signature": "%SIGNATURE%", 
+    "FailureReason": " DuplicateExists|DryRunSendingFailed|DeviceTokenTooLong|FailedToStoreDevice|ApiTokenNotValid" 
+
+} 
+```
+
+**Note #1**: Signature is HMACSHA256 hash of callback URL calculated using API token as a key. Can be used to verify that the call was indeed made by the CRM org the user owns. This can be done by hashing the callback URL with the API token on the webhook’s side, using the same algorithm, and comparing the values.
+
+**Note #2:** Attempt to make a request will be made only once. Any failure to execute a request, such as an incorrect callback URL, REST API call timeout, or unexpected response status code will cause the notification to be lost. 
+
+Expected Return: 200
+
+Expected Body: Empty body
+
+
+4. Device Cleanup (single):
 
 ```
 POST https://public-eur.mkt.dynamics.com/api/v1.0/orgs/%ORG_ID%/pushdeviceregistration/devices/cleanup
@@ -212,7 +245,7 @@ Body:
 ```
 Returns: 202 on success, 400 if the request is not valid
 
-4. Device Cleanup (multiple):
+5. Device Cleanup (multiple):
 
 ```
 POST https://public-eur.mkt.dynamics.com/api/v1.0/orgs/%ORG_ID%/pushdeviceregistration/devices/cleanup/batch
@@ -414,6 +447,11 @@ Body:
 }
 ```
 
+Headers:
+
+- **x-ms-callback-url:** When not empty, failed or successful device registration will trigger POST request webhook.
+- **x-ms-callback-url-headers:** Contains a serialized JSON of a string-to-string dictionary, representing headers passed for webhook requests. Used only when x-ms-callback-url is defined.
+
 Returns: 202 on success, 400 if request is not valid
 
 2. Device Registration (multiple):
@@ -423,9 +461,37 @@ POST https://public-eur.mkt.dynamics.com/api/v1.0/orgs/%ORG_ID%/pushdeviceregist
 
 Body: array of items equal to body from (1), up to 100 items
 
+Headers: see **(1)**
+
 Returns: 202 on success, 400 if request is not valid
 
-3. Device Cleanup (single):
+3. Device Registration Status Webhook (single): 
+
+```
+POST to URL provided within x-ms-status-callback-url header of (1) or (2) 
+```
+
+Body: 
+```
+{ 
+
+    "Status": "Success|Failed", 
+    "Signature": "%SIGNATURE%", 
+    "FailureReason": " DuplicateExists|DryRunSendingFailed|DeviceTokenTooLong|FailedToStoreDevice|ApiTokenNotValid" 
+
+} 
+```
+
+**Note #1**: Signature is HMACSHA256 hash of callback URL calculated using API token as a key. Can be used to verify that the call was indeed made by the CRM org the user owns. This can be done by hashing the callback URL with the API token on the webhook’s side, using the same algorithm, and comparing the values.
+
+**Note #2:** Attempt to make a request will be made only once. Any failure to execute a request, such as an incorrect callback URL, REST API call timeout, or unexpected response status code will cause the notification to be lost. 
+
+Expected Return: 200 
+
+Expected Body: Empty body
+
+
+4. Device Cleanup (single):
 ```
 POST https://public-eur.mkt.dynamics.com/api/v1.0/orgs/%ORG_ID%/pushdeviceregistration/devices/cleanup
 ```
@@ -442,7 +508,7 @@ Body:
 
 Returns: 202 on success, 400 if request is not valid
 
-4. Device Cleanup (multiple):
+5. Device Cleanup (multiple):
 ```
 POST https://public-eur.mkt.dynamics.com/api/v1.0/orgs/%ORG_ID%/pushdeviceregistration/devices/cleanup/batch
 ```
@@ -472,4 +538,4 @@ public String toJsonString() {
 
 ---
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

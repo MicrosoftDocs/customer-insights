@@ -13,7 +13,13 @@ search.audienceType:
 
 # View and record financial information for events
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+
+> [!IMPORTANT]
+> To use event management in the real-time journeys area of Customer Insights - Journeys, you must enable the feature switch. To enable the feature switch:
+>
+> 1. Go to **Settings** > **Overview** > **Feature switches**.
+> 1. Enable the **Enable events creation in real-time journeys** feature switch toggle.
 
 You can record financial information for your events with Dynamics 365 Customer Insights - Journeys. For example, you can:
 
@@ -118,4 +124,4 @@ Each event record provides an **Additional information** tab that includes a **F
 - **Total cost of event activities**. Records the total cost of event activities. This field is not calculated, so you can enter any value you want.
 - **Revenue from sponsorship**. Initially tracks and adds together the revenue specified for each sponsorship associated with this event. You can edit this value if needed, but once edited it will stop automatically tracking revenues from associated sponsorship records. Delete the value to reset.
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

@@ -13,14 +13,14 @@ search.audienceType:
 
 # Known issues and workarounds
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 This document provides important, late-breaking information about known issues and workarounds for Dynamics 365 Customer Insights - Journeys. For information about monthly bug fixes, visit the [What's new in Dynamics 365 Customer Insights - Journeys](whats-new-marketing.md) article.
 
 ## Configuration, installation, and first-run experience
 
 - The setup process can take up to two hours. The process might restart automatically during this time, which can result in multiple success (or failure) notifications being sent to you by email.
-- Although the licensing agreement doesn't require it, a known technical issue currently prevents you from running the setup wizard unless you have a Dynamics 365 license with the _System Administrator_ security role assigned on your target Dynamics 365 instance. <!--- 1183223 -->
+- Although the licensing agreement doesn't require it, a known technical issue currently prevents you from running the installation management area unless you have a Dynamics 365 license with the _System Administrator_ security role assigned on your target Dynamics 365 instance. <!--- 1183223 -->
 - Some language strings in the email designer and customer journey designer aren't available in all languages. <!--- 1912019 --> <!--- 1843911 -->
 - When an entitlement is changed, the updated working entitlement will sometimes display as "NotConfigured", and the broken entitlement will display as "Configured" in the Admin UI. You may get this fixed by raising a support request. <!--- 1884488 -->
 - When a portal is expired, the **Configure your portal** item under **Other actions** links to the old portal. <!--- 1804106 -->
@@ -48,7 +48,7 @@ This document provides important, late-breaking information about known issues a
 
 ## General
 
-- The following features from the April 2019 release require that your instance has access to the latest Dynamics 365  infrastructure and services: *manage segment memberships from the contact record*, *session-level event registration*, *event-registration QR codes in email*, *portal-optional operation*, and some *segmentation improvements*. We're rolling out the needed infrastructure updates as quickly as possible, and most customers should have them already. If you're running the April 2019 release and require one or more of these features but don't have them available on your instance, [contact Microsoft Support](setup-troubleshooting.yml#contact-support) to get your infrastructure updated right away.
+- The following features from the April 2019 release require that your instance has access to the latest Dynamics 365  infrastructure and services: *manage segment memberships from the contact record*, *session-level event registration*, *event-registration QR codes in email*, *portal-optional operation*, and some *segmentation improvements*. We're rolling out the needed infrastructure updates as quickly as possible, and most customers should have them already. If you're running the April 2019 release and require one or more of these features but don't have them available on your instance, [contact Microsoft Support](/power-platform/admin/get-help-support) to get your infrastructure updated right away.
 - If you have different Dynamics 365 sessions open in other browser windows or tabs, and then open the Customer Insights - Journeys app in the same browser, it will authenticate using the same user that you have open in the other sessions. We recommend that you restart the browser each time you need to sign in using a different Dynamics 365 user account.
 - Avoid deactivating publishable (go-live) records. Instead, change the publishing state (Status reason), and use the **Stop** buttons to manage records that are no longer required. More information: [Go live with publishable entities and track their status](go-live.md).
 - Customer Insights - Journeys is currently supported only on the following browsers: Microsoft Edge, Google Chrome, and Apple Safari on Mac. More information: [Browser and system requirements](browser-requirements.md).
@@ -69,7 +69,7 @@ This document provides important, late-breaking information about known issues a
 
 ## Marketing emails
 
-- On some instances, emails that include date fields may fail the error check (with an "unsupported property type" error) and therefore can't go live. If you're affected by this issue, contact Microsoft Support, and ask them to update your instance with the known fix.
+- On some instances, emails that include date fields may fail the error check (with an "unsupported property type" error) and therefore can't go live. If you're affected by this issue, [contact Microsoft Support](/power-platform/admin/get-help-support), and ask them to update your instance with the known fix.
 - The default content-settings record must be live before you can send any marketing emails or view heatmaps on **Insights** pages. Usually, the default content-settings record goes live automatically when your setup is complete, but sometimes this isn't the case. To solve this, set up and publish your default content-settings record manually as described in [Use content settings to set up repositories of standard and required values](dynamic-email-content.md#content-settings).
 - Selecting **Stop** on a live email will prevent it from being used in future journeys, but it will continue to function in existing live journeys, which will continue to deliver it.
 - If you reuse the same email multiple times (within the same journey or in different journeys), you'll see incorrect performance results on its **Insights** pages.
@@ -125,4 +125,4 @@ This document provides important, late-breaking information about known issues a
 
 - The *websites* feature records all visits to any web page that has a Customer Insights - Journeys tracking script on it. Each log entry includes a timestamp and, if possible, links to a known contact. If the visitor isn't a known contact, then that visit is logged as anonymous. The website tracking script sets a cookie, so the system can group visits into sessions, even for anonymous visits. When a contact submits a landing-page form, the system sets the same cookie (if not present already) and can thereafter match the cookie ID to a contact ID because the landing-page submission will either create or match a contact. Once a visitor is known, all future website visits will be logged with that user's ID. However, previous visits will remain anonymous (the system doesn't back-fill the contact ID to the existing visitor log).
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

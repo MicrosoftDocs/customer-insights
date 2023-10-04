@@ -13,7 +13,7 @@ search.audienceType:
 
 # Market to segments on LinkedIn with LinkedIn Matched Audiences
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -54,4 +54,4 @@ To create a LinkedIn Matched Audience from a Customer Insights - Journeys segmen
 > [!NOTE]
 > If your segment changes in Customer Insights - Journeys, those changes won't be reflected in its LinkedIn Matched Audience. If you want to use an updated Customer Insights - Journeys segment on LinkedIn, you must create a new Matched Audience using the previous procedure.
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

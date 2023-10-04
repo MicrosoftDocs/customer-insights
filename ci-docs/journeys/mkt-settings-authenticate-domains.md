@@ -13,7 +13,7 @@ search.audienceType:
 
 # Authenticate your domains (old version)
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This section explains the old domain authentication for outbound marketing; for an updated version based on Customer Insights - Journeys, see "[new version](domain-authentication.md)".
@@ -198,10 +198,10 @@ As you are setting up an authenticated domain, you can track the progress of all
 | Canceled | The registration was canceled. |
 | Not requested | You didn't request this type of authentication. |
 | Confirming DNS registration | Customer Insights - Journeys is working to confirm the registration with DNS. |
-| Keys not found on DNS | Customer Insights - Journeys successfully checked for the keys in the DNS system, but they weren't there. This may be because your key registrations are still being implemented by the DNS (allow up to 24 hours). It could also mean that you haven't registered the keys or that something went wrong while you were entering them. You can check again by selecting   **Confirm DNS registration** on the command bar. If problems persist after 24 hours, [contact Microsoft Support](setup-troubleshooting.yml#contact-support) and/or your DNS provider for assistance. |
-| Internal error (record not found) | An internal error occurred while confirming the DNS registration. [Contact Microsoft Support](setup-troubleshooting.yml#contact-support) for assistance. |
-| Internal error (query failed) | An internal error occurred while confirming the DNS registration. [Contact Microsoft Support](setup-troubleshooting.yml#contact-support) for assistance. |
-| Internal error | An internal error occurred while confirming the DNS registration. [Contact Microsoft Support](setup-troubleshooting.yml#contact-support) for assistance. |
+| Keys not found on DNS | Customer Insights - Journeys successfully checked for the keys in the DNS system, but they weren't there. This may be because your key registrations are still being implemented by the DNS (allow up to 24 hours). It could also mean that you haven't registered the keys or that something went wrong while you were entering them. You can check again by selecting   **Confirm DNS registration** on the command bar. If problems persist after 24 hours, [contact Microsoft Support](/power-platform/admin/get-help-support) and/or your DNS provider for assistance. |
+| Internal error (record not found) | An internal error occurred while confirming the DNS registration. [Contact Microsoft Support](/power-platform/admin/get-help-support) for assistance. |
+| Internal error (query failed) | An internal error occurred while confirming the DNS registration. [Contact Microsoft Support](/power-platform/admin/get-help-support) for assistance. |
+| Internal error | An internal error occurred while confirming the DNS registration. [Contact Microsoft Support](/power-platform/admin/get-help-support) for assistance. |
 
 ## Prevent sending emails from unauthorized domains
 
@@ -211,4 +211,4 @@ To benefit from DKIM, the from-address for each message you send must show a dom
 - We recommend that you [set a default sending domain](mkt-settings-default-marketing.md) that is authenticated for DKIM. When this is set, then the from-address for all of your email messages will automatically be adjusted to show your selected default domain (if it initially uses a non-authenticated domain) each time you create a new email message or change the user shown in the **From** field. More information: [Default marketing settings](mkt-settings-default-marketing.md) and [Set sender and receiver options](email-properties.md#send-receive-options)
 - All new instances and trials will automatically authenticate the instance domain with DKIM and set that domain as the default sending domain for your instance.
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

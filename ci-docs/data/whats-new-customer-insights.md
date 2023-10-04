@@ -1,7 +1,7 @@
 ---
 title: "What's new in Dynamics 365 Customer Insights - Data"
 description: "Information about new features, improvements, and bug fixes."
-ms.date: 09/01/2023
+ms.date: 09/25/2023
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
@@ -18,6 +18,34 @@ We roll out updates on a region-by-region basis. So certain regions might see fe
 
 > [!TIP]
 > To submit and vote on feature requests and product suggestions, go to the [Dynamics 365 Application Ideas portal](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights).
+
+## August/September 2023
+
+### General availability features
+
+#### Improved accuracy of the deduplication process
+
+Customer Insights can now match and unify all the profile data for a specific customer, even if it requires several matching rules to identify all the customer’s records. Fully unified customer data ensures you can confidently use profiles to personalize the customer experience and make smarter decisions.
+
+- [Release plan](/dynamics365/release-plan/2023wave1/customer-insights/improved-accuracy-deduplication-process)
+- [Docs](data-unification-duplicates.md)
+
+### Public preview
+
+#### Build and refine segments quickly using everyday words with copilot
+
+Effective segmentation, while a powerful tool for targeting the right audience, has traditionally required a thorough understanding of complex data models, database management and SQL (Structured Query Language). Segmentation assist, a copilot feature in Dynamics 365 Customer Insights, now makes it easy for marketing and CX teams to build and refine the rules that compose a segment using natural language, and immediately target them with customer journeys in Dynamics 365 Marketing or sync to ad/Martech platforms.
+
+- [Release plan](/dynamics365/release-plan/2023wave2/customer-insights/build-segments-using-everyday-words-copilot-customer-insights)
+- [Docs](segments-copilot.md)
+
+### Monthly enhancements
+
+#### Understand how various rules impact the number of members in your segment
+
+Segments in Customer Insights - Data, now provides an "Inspection mode" toggle for segments. Enable this when creating or editing a segment to understand the contribution of each rule to the overall size of the segment, after a segment has been processed. Going a step further, inspection mode also provides the cascading effect/contribution of each rule, thus giving you greater visibility and control to tweak the segment definition to match your marketing budget.
+
+- [Docs](segments.md#view-segment-member-counts-preview)
 
 ## July 2023
 
@@ -37,7 +65,7 @@ The System Status page in Customer Insights - Data is an indispensable tool for 
 
 ### Monthly enhancements
 
-[Marketing Contributor role](permissions.md#marketing-contributor-preview):
+[Marketing Contributor role](user-roles.md#marketing-contributor-preview):
 
 - can search for segments by name and only get results from their BU
 - can filter by tags and tags honor BU.Tags created in a BU aren't visible and searchable in other BUs

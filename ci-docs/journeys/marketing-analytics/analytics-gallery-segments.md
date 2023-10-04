@@ -14,7 +14,7 @@ search.audienceType:
 
 # Segmentation usage report
 
-[!INCLUDE[consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -44,4 +44,4 @@ The orphaned segment report identifies segments that aren't used anywhere. We re
 
 ***Happy analytics reporting with Dynamics 365 Customer Insights - Journeys!***
 
-[!INCLUDE[footer-include](.././includes/footer-banner.md)]
+[!INCLUDE [footer-include](.././includes/footer-banner.md)]

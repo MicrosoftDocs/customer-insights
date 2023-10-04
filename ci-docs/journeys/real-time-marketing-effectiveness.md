@@ -11,9 +11,9 @@ search.audienceType:
   - enduser
 ---
 
-# Preview: Customer Insights - Journeys effectiveness analytics
+# Preview: Marketing effectiveness analytics
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > A preview feature is a feature that is not complete, but is made available before it’s officially in a release so customers can get early access and provide feedback. Preview features aren’t meant for production use and may have limited or restricted functionality.
@@ -66,7 +66,7 @@ As shown above, a business trigger has been created that gets raised every time 
 > [!NOTE]
 > Ensure that you create the custom or business trigger using the correct audience type (Contact, Lead, or Customer Insights profile) since the milestone will directly leverage the trigger’s audience type.
 
-Next, to start creating a milestone, go to the **Dynamics 365 Customer Insights - Journeys effectiveness analytics dashboard** from the **Analytics** site navigation. You can create and delete milestones from the dashboard settings page. To access dashboard settings, select **“Set up my dashboard”** if you’re using the dashboard for the first time, or the **“Edit dashboard”** button on the upper right corner of the dashboard if you have already set up the dashboard.
+Next, to start creating a milestone, go to the **Dynamics 365 Marketing effectiveness analytics dashboard** from the **Analytics** site navigation. You can create and delete milestones from the dashboard settings page. To access dashboard settings, select **“Set up my dashboard”** if you’re using the dashboard for the first time, or the **“Edit dashboard”** button on the upper right corner of the dashboard if you have already set up the dashboard.
 
 > [!div class="mx-imgBorder"]
 > ![Customer Insights - Journeys effectiveness analytics dashboard needs to be setup](media/real-time-marketing-setup-marketing-analytics-dashboard.png "Customer Insights - Journeys effectiveness analytics dashboard needs to be setup")
@@ -105,7 +105,7 @@ This section of the dashboard helps you understand how many customers have compl
 - **Total**: The total number of unique customers that reached that milestone.
 - **Influenced by marketing**: The total number of unique customers with at least one interaction due to Customer Insights - Journeys-initiated activities that reached that milestone.
 
-#### *Customer Insights - Journeys attribution analysis*
+#### *Marketing attribution analysis*
 This section provides you with insights into the effectiveness and contribution of your journeys, channels, and marketing assets in driving your customers to various milestones. For each milestone, you can leverage the following three attribution models to gain insights into the effectiveness and contribution of your Customer Insights - Journeys activities:
 1. **AI-powered multi-touch model**: This model allocates credit to each customer interaction by employing an AI algorithm that analyzes not just the frequency of different customer interactions but also their sequence to assess each interaction’s actual contribution towards milestone completion. This model can be used to understand the most effective journeys, channels, and marketing assets that drove customers to a specific milestone.
 1. **Linear multi-touch model**: This model allocates equal credit for milestone attainment to each customer interaction before the milestone is completed. It can be used to understand the most common journeys, channels, and assets that customers interacted with before completing a milestone.

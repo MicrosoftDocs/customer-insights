@@ -13,7 +13,7 @@ search.audienceType:
 
 # Automatically select the best time to send an email message
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -88,4 +88,4 @@ To see information about when a specific contact tends to open your messages, ho
 
 When you choose to auto-schedule email delivery, the system will use these results to decide when to deliver to each contact.
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]
