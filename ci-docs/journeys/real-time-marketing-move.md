@@ -31,3 +31,5 @@ New customers who install Customer Insights - Journeys no longer see the outboun
 > ![Customer Insights - Journeys transition comparison.](media/real-time-marketing-transition-graphic.png "Customer Insights - Journeys transition comparison")
 
 The real-time journeys module covers most of the functionalities of the outbound module while exceeding its capabilities in many areas. To mitigate uncertainty and confusion, the articles in the "Transition from outbound marketing" section of the documentation clarify frequently asked questions about this topic and walk through how to successfully transition to the real-time journeys module.
+
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

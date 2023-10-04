@@ -13,6 +13,8 @@ search.audienceType:
 
 # High-level transition guidance
 
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+
 Microsoft has already provided general information on transitioning to real-time journeys. The [playbook for transitioning from outbound marketing to real-time journeys](https://community.dynamics.com/blogs/post/?postid=1b4394d5-7764-4484-aba9-c7f972292c10) covers key information and guidelines. The articles in the "Transition from outbound marketing" section of the documentation provide further guidance.
 
 This article explores some general concepts to think about before diving into transition details for individual feature areas.
@@ -50,3 +52,5 @@ Transition functional areas articles:
 Some Dynamics 365 Marketing customers made customizations in outbound marketing tables like “e-mail” or “customer journey” in order to meet specific requirements. In some cases, the real-time journeys module uses its own tables to provide the functionality (for example, in email and journeys), while in other cases, it retains the same tables (for example, event planning tables). Tables like “e-mail” or “journey” are also customizable and new fields will also show up in the user interface. However, it's recommended to first look at the out-of-the-box capabilities. Many requirements that created a new for customization in the past can now be addressed by standard features.
 
 In most scenarios, it's not possible to transfer outbound marketing customizations. Dynamics 365 Marketing customers are advised to review their requirements and consider that previous customizations may no longer be needed due to the enhancements provided by real-time journeys. Where customizations are still required, it's likely that they'll need to be re-implemented (for example, custom fields re-added).
+
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

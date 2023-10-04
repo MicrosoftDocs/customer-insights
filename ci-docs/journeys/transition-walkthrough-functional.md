@@ -13,4 +13,10 @@ search.audienceType:
 
 # Transition functional areas overview
 
-The [playbook for transitioning from outbound marketing to real-time journeys](https://community.dynamics.com/blogs/post/?postid=1b4394d5-7764-4484-aba9-c7f972292c10) suggests looking at logical marketing campaigns that might contain a number of different marketing artifacts like segments, emails, and journeys. It's also important to know how the different building blocks in outbound can be transitioned or implemented in real-time journeys. The following sections provide insights into the different aspects of transitioning functional areas from outbound marketing.
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+
+The [playbook for transitioning from outbound marketing to real-time journeys](https://community.dynamics.com/blogs/post/?postid=1b4394d5-7764-4484-aba9-c7f972292c10) suggests looking at logical marketing campaigns that might contain a number of different marketing artifacts like segments, emails, and journeys. It's also important to know how the different building blocks in outbound can be transitioned or implemented in real-time journeys.
+
+The following sections provide insights into the different aspects of transitioning functional areas from outbound marketing.
+
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

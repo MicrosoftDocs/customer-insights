@@ -183,3 +183,5 @@ search.audienceType:
     There's a contact threshold of 10,000,000 contacts purchased that unlocks the new scale. Existing customers that need to upgrade or new customers must meet the contact threshold to unlock the new scale and receive the increased throughput.
 
     To unlock the new scale, reach out to your Microsoft sales representatives with your requirements. The end-to-end process to upgrade to the new scale will be completed within two weeks.
+
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

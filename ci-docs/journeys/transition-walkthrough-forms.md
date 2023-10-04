@@ -12,3 +12,7 @@ search.audienceType:
 ---
 
 # Transition marketing pages and forms
+
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+
+[!INCLUDE [footer-include](./includes/footer-banner.md)]
