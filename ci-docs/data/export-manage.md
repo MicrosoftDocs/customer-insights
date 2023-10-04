@@ -4,7 +4,7 @@ description: "Manage exports to share data."
 author: pkieffer
 ms.author: philk
 ms.reviewer: mhart
-ms.date: 09/01/2023
+ms.date: 10/04/2023
 ms.topic: how-to
 ms.custom: bap-template
 ---
@@ -15,7 +15,7 @@ ms.custom: bap-template
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
-All exports follow the same general set up and management process. You can also schedule exports. A common use case for exports of segments is to share lists of your customers to advertising services like Google Ads or Meta Ads for remarketing purposes. A common use case for exports of full tables, which we call data-out exports, is to share data to Azure Data Lake Gen2, from where the tables are further processes by custom solutions built by our customers.  
+All exports follow the same general set up and management process. You can also schedule exports. A common use case for exports of segments is to share lists of your customers to advertising services like Google Ads or Meta Ads for marketing purposes. A common use case for the export of full tables, which we call a data-out export, is to share data to Azure Data Lake Gen2, from where organizations can further process these tables with their custom solutions.
 
 ## Set up a new export
 
