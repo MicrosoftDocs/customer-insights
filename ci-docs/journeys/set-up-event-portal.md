@@ -17,12 +17,6 @@ search.audienceType:
 
 [!INCLUDE [azure-ad-to-microsoft-entra-id](./includes/azure-ad-to-microsoft-entra-id.md)]
 
-> [!IMPORTANT]
-> To use event management in the real-time journeys area of Customer Insights - Journeys, you must enable the feature switch. To enable the feature switch:
->
-> 1. Go to **Settings** > **Overview** > **Feature switches**.
-> 1. Enable the **Enable events creation in real-time journeys** feature switch toggle.
-
 The event website provides an online resource where people can read about your event and its speakers, create an account, register for the event, purchase passes, view their session schedule, and more. The following image shows a simplified site map of your event website as your attendees will see it.
 
 ![Sitemap for the standard event website.](media/event-portal-sitemap-ill.png "Site map for the standard event website")

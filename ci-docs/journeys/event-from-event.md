@@ -15,12 +15,6 @@ search.audienceType:
 
 [!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
-> [!IMPORTANT]
-> To use event management in the real-time journeys area of Customer Insights - Journeys, you must enable the feature switch. To enable the feature switch:
->
-> 1. Go to **Settings** > **Overview** > **Feature switches**.
-> 1. Enable the **Enable events creation in real-time journeys** feature switch toggle.
-
 You can copy your existing event by using the **Save as** command on the toolbar.
 
 This operation will copy most of the entities from your existing event to a new one. The copied entities include:
