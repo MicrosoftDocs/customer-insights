@@ -14,14 +14,6 @@
     href: purchase.md
   - name: Dynamics 365 Customer Insights FAQs
     href: ci-faq.md
-  - name: Move from outbound marketing (existing customers)
-    items:
-    - name: Move from outbound marketing to Customer Insights - Journeys
-      href: real-time-marketing-move.md
-    - name: Transition resources
-      href: real-time-marketing-transition-resources.md
-    - name: Customer Insights - Journeys transition FAQs
-      href: real-time-marketing-transition.md
   - name: Key Customer Insights - Journeys scenarios
     items:
     - name: Send a targeted email blast
@@ -40,6 +32,34 @@
     href: whats-new-marketing.md
   - name: What's new archive
     href: whats-new-marketing-archive.md
+- name: Transition from outbound marketing
+  items:
+  - name: Transition overview
+    href: transition-overview.md
+  - name: Transition resources
+    href: transition-resources.md
+  - name: Transition functional areas 
+    items:
+    - name: Functional areas overview
+      href: transition-walkthrough-functional.md
+    - name: Setup changes in real-time journeys
+      href: transition-walkthrough-setup.md
+    - name: Segments, emails, and journeys
+      href: transition-walkthrough-segments.md
+    - name: Consent
+      href: transition-walkthrough-consent.md
+    - name: Marketing pages and forms
+      href: transition-walkthrough-forms.md
+    - name: Event management
+      href: transition-walkthrough-events.md
+    - name: Lead management and scoring
+      href: transition-walkthrough-leads.md
+    - name: Insights and reports
+      href: transition-walkthrough-insights.md
+    - name: Social posts discontinued
+      href: transition-walkthrough-social-posts.md
+  - name: Real-time journeys transition FAQs
+    href: transition-faqs.md
 - name: Install and manage
   items:
   - name: Install or uninstall
@@ -104,9 +124,9 @@
       href: real-time-marketing-business-unit-compliance.md
     - name: Business units FAQ for Customer Insights - Journeys
       href: real-time-marketing-business-unit-faq.md
-- name: Use Customer Insights - Journeys
+- name: Use real-time journeys
   items:
-  - name: Customer Insights - Journeys user guide
+  - name: Real-time journeys user guide
     href: real-time-marketing-user-guide.yml
   - name: Marketing channels
     items:
@@ -324,9 +344,9 @@
     items:
     - name: Use images, files, and videos in your content
       href: upload-images-files.md
-  - name: Known issues in Customer Insights - Journeys
+  - name: Known issues in real-time journeys
     href: real-time-marketing-known-issues.md
-  - name: Customer Insights - Journeys troubleshoot + FAQ
+  - name: Real-time journeys troubleshoot + FAQ
     href: real-time-marketing-faq.md
 - name: Develop and extend
   items:
