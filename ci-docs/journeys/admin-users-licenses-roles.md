@@ -1,7 +1,7 @@
 ---
 title: Manage user accounts, user licenses, and security roles
 description: How to manage user accounts, add licenses to users, and assign security roles in Dynamics 365 Customer Insights - Journeys.
-ms.date: 09/26/2023
+ms.date: 10/04/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -267,7 +267,7 @@ After deploying Customer Insights - Journeys features, several service users are
 | Cxp Sms Services User | Text message sending |
 | Cxp TeamsEventsIntegration Services User | Teams attach scenarios |
 
-The Customer Insights - Journeys product is evolving, so it's possible new services (and hence more roles) will be added with along with marketing upgrades. Service user roles (their privileges for marketing entities) can be modified during marketing upgrade for the same reason. 
+The Customer Insights - Journeys product receives continuous update and enhancements, so it's possible new services (and hence more roles) will be added with along with the upgrades. Service user roles (their privileges for marketing entities) can be modified during upgrades for the same reason.
 
 One service user, **# Dynamics Marketing Dataverse Datasource**, is used to impersonate a service that resolves dynamic content. Dynamic content can be defined through placeholders for personalized messages or through data-bound parameter in customer journeys.
 
