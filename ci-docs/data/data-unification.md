@@ -36,7 +36,7 @@ The unification process maps customer data from your data sources, removes dupli
 After completing data unification, you can optionally:
 
 - [Set up relationships between tables](relationships.md) to create sophisticated segments.
-- [Enrich your data](enrichment-hub.md) to get a wider range of insights about your customers.
+- [Enrich your data](enrichment-manage.md) to get a wider range of insights about your customers.
 - [Define activities](activities.md) from some of the ingested attributes.
 - [Build measures](measures.md) to better understand customer behaviors and business performance.
 

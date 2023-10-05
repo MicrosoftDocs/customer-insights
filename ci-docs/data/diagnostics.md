@@ -21,7 +21,7 @@ Customer Insights sends the following event logs:
 - **Audit Events**
   - **APIEvent** - enables change tracking via the Customer Insights - Data UI.
 - **Operational Events**
-  - **WorkflowEvent** - lets you set up [data sources](data-sources.md), [unify](data-unification.md), [enrich](enrichment-hub.md), and [export](export-manage.md) data into other systems. These steps can be done individually (for example, trigger a single export). They can also run orchestrated (for example, data refresh from data sources that trigger the unification process, which will pull in enrichments and export the data into another system). For more information, see the [WorkflowEvent Schema](#workflow-event-schema).
+  - **WorkflowEvent** - lets you set up [data sources](data-sources.md), [unify](data-unification.md), [enrich](enrichment-manage.md), and [export](export-manage.md) data into other systems. These steps can be done individually (for example, trigger a single export). They can also run orchestrated (for example, data refresh from data sources that trigger the unification process, which will pull in enrichments and export the data into another system). For more information, see the [WorkflowEvent Schema](#workflow-event-schema).
   - **APIEvent** - sends all API calls of the environment. For more information, see the [APIEvent Schema](#api-event-schema).
 
 [!INCLUDE [public-preview-note](includes/public-preview-note.md)]
@@ -172,7 +172,7 @@ The `identity` JSON object has the following structure
 
 ### Workflow event schema
 
-The workflow contains multiple steps. [Ingest data sources](data-sources.md), [unify](data-unification.md), [enrich](enrichment-hub.md), and [export](export-manage.md) data. All those steps can run individually or orchestrated with the following processes.
+The workflow contains multiple steps. [Ingest data sources](data-sources.md), [unify](data-unification.md), [enrich](enrichment-manage.md), and [export](export-manage.md) data. All those steps can run individually or orchestrated with the following processes.
 
 #### Operation types
 
@@ -190,7 +190,7 @@ The workflow contains multiple steps. [Ingest data sources](data-sources.md), [u
 | TableMeasures    | [Segments and Measures](segments.md)      |
 | Measures          | [Segments and Measures](segments.md)      |
 | Segmentation      | [Segments and Measures](segments.md)      |
-| Enrichment        | [Enrichment](enrichment-hub.md)                                          |
+| Enrichment        | [Enrichment](enrichment-manage.md)                                          |
 | Intelligence      | [Predictions](predictions.md)                                          |
 | AiBuilder         | [Predictions](predictions.md)                                          |
 | Insights          | [Predictions](predictions.md)                                          |

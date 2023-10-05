@@ -63,6 +63,6 @@ A deduplication output table contains the following information:
 
 ## Next steps
 
-Configure [activities](activities.md), [enrichments](enrichment-hub.md), [relationships](relationships.md), or [measures](measures.md) to gain more insights about your customers.
+Configure [activities](activities.md), [enrichments](enrichment-manage.md), [relationships](relationships.md), or [measures](measures.md) to gain more insights about your customers.
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
