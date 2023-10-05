@@ -100,7 +100,7 @@
          <g data-stacking-layer="rootBackgroundAndBorders">
           <rect x="1201" y="159" width="53.417" height="2" fill="#2266e3"/>
          </g>
-         <g fill="rgb(36, 36, 36)" font-family='"Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif' font-stretch="100%" text-decoration="none solid rgb(36, 36, 36)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb">
+         <g fill="#242424" font-family='"Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif' font-stretch="100%" text-decoration="none solid rgb(36, 36, 36)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb">
           <text color="rgb(36, 36, 36)" dominant-baseline="text-after-edge" font-size="14px" font-weight="600" user-select="none"><tspan x="1202.1146240234375" y="148.33334350585938" lengthAdjust="spacingAndGlyphs" textLength="51.9271240234375" xml:space="preserve">Consent</tspan></text>
           <text color="rgb(36, 36, 36)" dominant-baseline="text-after-edge" font-size="16px" font-weight="600" user-select="auto"><tspan x="261" y="190.6666717529297" lengthAdjust="spacingAndGlyphs" textLength="123.46875" xml:space="preserve">Copilot Consents</tspan></text>
           <text color="rgb(36, 36, 36)" dominant-baseline="text-after-edge" font-size="14px" font-weight="400" user-select="auto"><tspan x="261" y="225.33334350585938" lengthAdjust="spacingAndGlyphs" textLength="1031.59375" xml:space="preserve">Set up consent to use Copilot generative AI features, which support you with diverse tasks, such as checking the status of your environment, asking questions in natural </tspan><tspan x="261" y="245.33334350585938" lengthAdjust="spacingAndGlyphs" textLength="595.8854370117188" xml:space="preserve">language to discover insights from your data, or getting actionable information to resolve errors.</tspan></text>
@@ -108,7 +108,7 @@
          <g data-stacking-layer="rootBackgroundAndBorders">
           <line x1="261" x2="1346" y1="306.67" y2="306.67" stroke="#e0e0e0" stroke-linecap="square" stroke-width=".66667px"/>
          </g>
-         <g fill="rgb(36, 36, 36)" font-family='"Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif' font-size="14px" font-stretch="100%" text-decoration="none solid rgb(36, 36, 36)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb">
+         <g fill="#242424" font-family='"Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif' font-size="14px" font-stretch="100%" text-decoration="none solid rgb(36, 36, 36)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb">
           <text color="rgb(36, 36, 36)" dominant-baseline="text-after-edge" font-weight="600" user-select="auto"><tspan x="277" y="297.3333435058594" lengthAdjust="spacingAndGlyphs" textLength="318.8125" xml:space="preserve">Enable Copilot features powered by Azure OpenAI</tspan></text>
           <g font-weight="400">
            <text color="rgb(36, 36, 36)" dominant-baseline="text-after-edge" user-select="auto"><tspan x="277" y="342" lengthAdjust="spacingAndGlyphs" textLength="1037.447998046875" xml:space="preserve">By consenting, you agree to enable all Copilot and/or Bing search-powered features and acknowledge that AI-generated content should be reviewed before using. Read </tspan></text>
@@ -129,7 +129,7 @@
          <g data-stacking-layer="rootBackgroundAndBorders">
           <line x1="261" x2="1346" y1="503.33" y2="503.33" stroke="#e0e0e0" stroke-linecap="square" stroke-width=".66667px"/>
          </g>
-         <g fill="rgb(36, 36, 36)" font-family='"Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif' font-size="14px" font-stretch="100%" text-decoration="none solid rgb(36, 36, 36)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb">
+         <g fill="#242424" font-family='"Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif' font-size="14px" font-stretch="100%" text-decoration="none solid rgb(36, 36, 36)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb">
           <text color="rgb(36, 36, 36)" dominant-baseline="text-after-edge" font-weight="600" user-select="auto"><tspan x="277" y="494" lengthAdjust="spacingAndGlyphs" textLength="336.78125" xml:space="preserve">Allow cross-geography data flow for Copilot features</tspan></text>
           <text color="rgb(36, 36, 36)" dominant-baseline="text-after-edge" font-weight="400" user-select="auto"><tspan x="277" y="538.6666870117188" lengthAdjust="spacingAndGlyphs" textLength="944.1771240234375" xml:space="preserve">By consenting, you agree that data may be stored and/or processed outside of your geographic region, compliance boundary, or national cloud instance.</tspan></text>
           <text color="rgb(36, 36, 36)" dominant-baseline="text-after-edge" font-weight="400" user-select="auto"><tspan x="277" y="570.6666870117188" lengthAdjust="spacingAndGlyphs" textLength="385.04168701171875" xml:space="preserve">Requires enablement by an admin role to use Copilot features.</tspan></text>
@@ -142,7 +142,7 @@
          <g data-stacking-layer="rootBackgroundAndBorders">
           <line x1="261" x2="1346" y1="680" y2="680" stroke="#e0e0e0" stroke-linecap="square" stroke-width=".66667px"/>
          </g>
-         <g fill="rgb(36, 36, 36)" font-family='"Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif' font-size="14px" font-stretch="100%" text-decoration="none solid rgb(36, 36, 36)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb">
+         <g fill="#242424" font-family='"Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif' font-size="14px" font-stretch="100%" text-decoration="none solid rgb(36, 36, 36)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb">
           <text color="rgb(36, 36, 36)" dominant-baseline="text-after-edge" font-weight="600" user-select="auto"><tspan x="277" y="670.6666870117188" lengthAdjust="spacingAndGlyphs" textLength="245.875" xml:space="preserve">Allow data sharing for Copilot features</tspan></text>
           <g font-weight="400">
            <text color="rgb(36, 36, 36)" dominant-baseline="text-after-edge" user-select="auto"><tspan x="277" y="715.3333740234375" lengthAdjust="spacingAndGlyphs" textLength="1049.7708740234375" xml:space="preserve">By consenting, you agree to allow Microsoft to capture and human review inputs, outputs, and telemetry from Copilot AI features to improve Microsoft’s machine learning </tspan><tspan x="277" y="735.3333740234375" lengthAdjust="spacingAndGlyphs" textLength="652.5208740234375" xml:space="preserve">models, features, services, and related systems. Data is not shared when Copilot AI features are turned off.</tspan></text>
@@ -376,10 +376,10 @@
        <mask id="c">
         <rect x="946" y="16" width="158" height="16" fill="#fff"/>
        </mask>
-       <text color="rgb(255, 255, 255)" dominant-baseline="text-after-edge" fill="rgb(255, 255, 255)" font-family="Arial" font-size="14px" font-stretch="100%" font-weight="400" text-decoration="none solid rgb(255, 255, 255)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="auto"><tspan x="946" y="31.33333396911621" lengthAdjust="spacingAndGlyphs" textLength="72.63543701171875" xml:space="preserve">Wendy Test</tspan></text>
+       <text color="#ffffff" dominant-baseline="text-after-edge" fill="#ffffff" font-family="Arial" font-size="14px" font-stretch="100%" font-weight="400" text-rendering="auto" word-spacing="0px" style="text-decoration-color:#000000;text-decoration-line:none;text-decoration-style:solid" user-select="auto"><tspan x="946" y="31.333334" lengthAdjust="spacingAndGlyphs" xml:space="preserve">Wendy Contoso</tspan></text>
       </g>
-      <g mask="url(#a)" data-stacking-context="true" data-tag="div" data-z-index="auto">
-       <mask id="a">
+      <g mask="url(#ar)" data-stacking-context="true" data-tag="div" data-z-index="auto">
+       <mask id="ar">
         <rect width="0" height="0" fill="#fff"/>
        </mask>
       </g>
@@ -413,8 +413,8 @@
        </g>
       </g>
      </g>
-     <g class="HcKMEYhmL4uLyG+K4hy8pg== undefined" mask="url(#ao)" aria-owns="span5" data-stacking-context="true" data-tag="div" data-z-index="auto">
-      <mask id="ao">
+     <g class="HcKMEYhmL4uLyG+K4hy8pg== undefined" mask="url(#aq)" aria-owns="span5" data-stacking-context="true" data-tag="div" data-z-index="auto">
+      <mask id="aq">
        <rect width="0" height="0" fill="#fff"/>
       </mask>
      </g>

@@ -33,6 +33,6 @@ There are three levels of consent to use generative AI Copilot features in Custo
 
    :::image type="content" source="media/copilot-settings-consent.svg" alt-text="Screenshot of the Consent tab in System Settings.":::
 
-1. Toggle consent on or off.
+1. Enable or disable consent.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
