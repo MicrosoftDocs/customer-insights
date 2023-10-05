@@ -1,6 +1,6 @@
 ---
-title: Set up an event website
-description: Set up a Dynamics 365 Customer Insights - Journeys event website, where people can read about your event and its speakers, create an account, register for the event, purchase passes, view their session schedule, and more.
+title: Set up an event website in outbound marketing
+description: Set up a Dynamics 365 Customer Insights - Journeys outbound marketing event website, where people can read about your event and its speakers, create an account, register for the event, purchase passes, view their session schedule, and more.
 ms.date: 08/23/2023
 ms.topic: article
 author: alfergus
@@ -11,17 +11,14 @@ search.audienceType:
   - enduser
 ---
 
-# Set up the event website
+# Set up the event website in outbound marketing
 
 [!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 [!INCLUDE [azure-ad-to-microsoft-entra-id](./includes/azure-ad-to-microsoft-entra-id.md)]
 
 > [!IMPORTANT]
-> To use event management in the real-time journeys area of Customer Insights - Journeys, you must enable the feature switch. To enable the feature switch:
->
-> 1. Go to **Settings** > **Overview** > **Feature switches**.
-> 1. Enable the **Enable events creation in real-time journeys** feature switch toggle.
+> This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
 
 The event website provides an online resource where people can read about your event and its speakers, create an account, register for the event, purchase passes, view their session schedule, and more. The following image shows a simplified site map of your event website as your attendees will see it.
 

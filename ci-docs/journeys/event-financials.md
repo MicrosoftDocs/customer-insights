@@ -15,12 +15,6 @@ search.audienceType:
 
 [!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
-> [!IMPORTANT]
-> To use event management in the real-time journeys area of Customer Insights - Journeys, you must enable the feature switch. To enable the feature switch:
->
-> 1. Go to **Settings** > **Overview** > **Feature switches**.
-> 1. Enable the **Enable events creation in real-time journeys** feature switch toggle.
-
 You can record financial information for your events with Dynamics 365 Customer Insights - Journeys. For example, you can:
 
 - Record speaker costs (standard cost or for an engagement).
