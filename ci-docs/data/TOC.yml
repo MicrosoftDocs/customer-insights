@@ -138,8 +138,11 @@
       href: data-prep-overview.md
     - name: Environment status summary
       href: system.md
+    - name: Get answers to questions about capabilities
+      href: help-pane-copilot.md
     - name: Segment creation
       href: segments-copilot.md
+
 
 - name: Tables
   items:
@@ -384,6 +387,8 @@
       href: faqs-environment-status.md
     - name: FAQs for dialog with data
       href: faqs-dialog-data.md
+    - name: FAQs for help pane
+      href: faqs-docs-qna.md
     - name: FAQs for segment creation
       href: faqs-segment-creation.md
 

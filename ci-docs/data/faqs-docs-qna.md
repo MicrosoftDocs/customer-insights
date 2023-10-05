@@ -4,15 +4,15 @@ description: This FAQ provides information about the AI technology docs-based Q&
 ms.date: 10/04/2023
 ms.custom:
   - responsible-ai-faqs
-ms.topic: article
+ms.topic: conceptual
 author: nils-2m
 ms.author: nikeller
 ms.reviewer: mhart
 ---
 
-# FAQ for docs-based Q&A capability
+# FAQ for docs-based Q&A capability (preview)
 
-These frequently asked questions (FAQ) describe the AI impact of [Get answers about Customer Insights - Data from Copilot](copilot-global-sidecar.md) feature in Customer Insights - Data.
+These frequently asked questions (FAQ) describe the AI impact of [Get answers to questions about capabilities from Copilot](help-pane-copilot.md) feature in Customer Insights - Data.
 
 ## What is docs-based Q&A skill?
 
@@ -42,6 +42,6 @@ This capability doesn't need setting up by users. It's offered as a base plugin 
 
 ## See also
 
-- [Feature page](copilot-global-sidecar.md)
+- [Get answers to questions about capabilities from Copilot](help-pane-copilot.md)
 
 [!INCLUDE[footer-include](./includes/footer-banner.md)]

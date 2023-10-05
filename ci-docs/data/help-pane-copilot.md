@@ -1,5 +1,5 @@
 ---
-title: Get questions about capabilities answered by Copilot
+title: Get answers to questions about capabilities from Copilot
 description: Learn how to use Copilot across Customer Insights - Data.
 ms.date: 10/04/2023
 ms.reviewer: mhart
@@ -9,7 +9,7 @@ ms.author: nikeller
 ms.custom: bap-template
 ---
 
-# Get questions about capabilities answered by Copilot
+# Get answers to questions about capabilities from Copilot
 
 [!INCLUDE [public-preview-banner](./includes/public-preview-banner.md)]
 
@@ -24,6 +24,8 @@ Administrators in Customer Insights - Data can disable all Copilot functionality
 This Copilot pane is available on all pages of Customer Insights - Data except:
 
 - When create or edit a segment, [Copilot assists you with segment creation](segments-copilot.md) instead.
+
+[!INCLUDE [public-preview-note](includes/public-preview-note.md)]
 
 ## Get help from Copilot
 
