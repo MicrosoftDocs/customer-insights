@@ -344,9 +344,9 @@
     items:
     - name: Use images, files, and videos in your content
       href: upload-images-files.md
-  - name: Known issues in Customer Insights - Journeys
+  - name: Known issues in real-time journeys
     href: real-time-marketing-known-issues.md
-  - name: Customer Insights - Journeys troubleshoot + FAQ
+  - name: Real-time journeys troubleshoot + FAQ
     href: real-time-marketing-faq.md
 - name: Develop and extend
   items:
