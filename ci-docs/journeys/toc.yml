@@ -258,8 +258,6 @@
         href: open-events.md
       - name: Set up an event
         href: set-up-event.md
-      - name: Set up session-level registration
-        href: session-level-registration.md
       - name: Create an event from another event
         href: event-from-event.md
     - name: Host a Microsoft Teams webinar
@@ -272,10 +270,6 @@
       items:
       - name: Invite, register, and house event attendees
         href: invite-register-house-event-attendees.md
-    - name: Create an event website
-      items:
-      - name: Set up the event website
-        href: set-up-event-portal.md
     - name: Manage events
       items:
       - name: Event management dashboard
