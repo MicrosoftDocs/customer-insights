@@ -1,7 +1,7 @@
 ---
 title: Install and manage Customer Insights
 description: How to install, uninstall, and manage Dynamics 365 Customer Insights environments.
-ms.date: 10/02/2023 
+ms.date: 10/05/2023 
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -45,9 +45,9 @@ Before starting an install, close all other browser windows and tabs and clear y
 
 There are several ways to get a Customer Insights license. You can purchase it from the [Dynamics 365 Customer Insights overview page](https://dynamics.microsoft.com/marketing/overview/), or by going to **Billing** > **Purchase services** in your Microsoft 365 admin center, or by contacting your Microsoft sales representative or channel partner. After you've purchased a license and it's added to your tenant, you’ll find it in the Power Platform Admin Center under **Resources** > **Dynamics 365 apps**.
 
-You can have any number of Customer Insights licenses available on your tenant. Licenses translate to 'apps' listed in Power Platform Admin Center. Even old, expired trial licenses have records listed in Power Platform Admin Center. You can access the installation management experience for any of these apps in the Power Platform Admin Center under **Resources** > **Dynamics 365 apps**. The app listing under **Dynamics 365 apps** is simply a means to access the management page. It should not be considered as representing anything else. 
+You can have any number of Customer Insights licenses available on your tenant. Licenses translate to "apps" listed in the Power Platform Admin Center. Even old, expired trial licenses have records listed in the Power Platform Admin Center. You can access the installation management experience for any of these apps in the Power Platform Admin Center under **Resources** > **Dynamics 365 apps**. The app listing under **Dynamics 365 apps** is simply a means to access the management page. It shouldn't be considered as representing anything else. 
 
-Once a paid license has been applied to your tenant, it can take up to 24 hours to sync with the Dynamics 365 licensing system and be available for installation. To see your licenses in Microsoft Admin Center, go to 'Your products'. They will not show up under 'Licenses' because they are tenant-level, application licenses, not assignable seat-based licenses where you pay per user. Only pay per user, seat-based licenses show in the 'Licenses' page. 
+Once a paid license has been applied to your tenant, it can take up to 24 hours to sync with the Dynamics 365 licensing system and be available for installation. To see your licenses in the Microsoft Admin Center, go to **Your products**. They will not show up under **Licenses** because they are tenant-level application licenses, not assignable seat-based licenses where you pay per user. Only pay-per-user, seat-based licenses are shown on the "Licenses" page. 
 
 ## Install, uninstall, or update Customer Insights
 
