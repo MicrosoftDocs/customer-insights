@@ -2420,16 +2420,6 @@
       "source_path": "ci-docs/journeys/real-time-marketing-transition.md",
       "redirect_url": "/dynamics365/customer-insights/journeys/transition-faqs",
       "redirect_document_id": false
-    },
-    {
-      "source_path": "ci-docs/journeys/set-up-event-portal.md",
-      "redirect_url": "/dynamics365/customer-insights/journeys/event-management",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "ci-docs/journeys/session-level-registration.md",
-      "redirect_url": "/dynamics365/customer-insights/journeys/event-management",
-      "redirect_document_id": false
     }
   ]
 }
