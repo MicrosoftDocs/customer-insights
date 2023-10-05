@@ -15,4 +15,16 @@ search.audienceType:
 
 [!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
+Creating scoring models to identify the best leads is an important aspect of lead management. As of the September 2023 Customer Insights - Journeys release, lead scoring is available in real-time journeys. You can enable the real-time journeys lead scoring feature in the feature switches area in the settings. Improvements compared to the outbound marketing scoring models are:
+-	Simpler and more intuitive design canvas.
+-	Ability to score leads without a parent contact. Because it's possible to market directly to leads in real-time journeys, there's no need for a parent contact.
+-	Ability to target a specific audience when creating the scoring model.
+-	New set of insights.
+
+The main difference in the real-time journeys lead scoring functionality compared to outbound marketing is in how marketers signal to their sales team that the lead is ready for them. This is called "Marketing Qualification" in real-time journeys. In outbound marketing, leads were marketing-qualified within the context of a scoring model (“update sales-ready flag if lead reaches 50 points”). In real-time journeys leads are qualified in a separate feature. This provides extra flexibility (“update sales-ready if score model 1 > 50 points and/or score model 2 > 30 points") and is the foundation for more sophisticated qualification conditions. In the future, we're adding qualification based on high-value actions or attributes without the need for a scoring model.
+
+The Marketing Qualification feature is planned for the October 2023 release.
+
+Unfortunately, there's no way to transfer existing scoring models from outbound marketing to real-time journeys. Moving scoring models requires manual effort to rebuild the models and the processes in real-time journeys. However, the fact that the real-time journeys lead scoring entity is the same as in outbound marketing, helps facilitate migration, especially for customizations.
+
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
