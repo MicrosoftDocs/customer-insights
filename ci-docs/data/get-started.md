@@ -47,7 +47,7 @@ Run the data unification process to combine unified profiles. Unified profiles a
 
 With unified profiles set up, enhance your data and further increase the information they provide.
 
-1. Choose from an expanding library of enrichment providers to [enrich your customer data](enrichment-hub.md).
+1. Choose from an expanding library of enrichment providers to [enrich your customer data](enrichment-manage.md).
 
 1. Use [out-of-box models](predictions.md) to predict churn likelihood or expected revenues.
 
