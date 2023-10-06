@@ -1,10 +1,10 @@
 ---
 title: Have a dialog with data using Copilot in Customer Insights (preview)
 description: Learn how to get more insights from your data by asking natural-language questions with Copilot in Dynamics 365 Customer Insights. 
-ms.date: 09/01/2023
+ms.date: 10/05/2023
 ms.topic: how-to
 author: wmelewong
-ms.author: wameng
+ms.author: radsay01
 ms.reviewer: mhart
 ms.custom: bap-template
 ---
@@ -15,7 +15,7 @@ ms.custom: bap-template
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
-Dynamics 365 Customer Insights - Data uses copilot AI capabilities, powered by [Azure OpenAI Service](https://azure.microsoft.com/products/cognitive-services/openai-service) models, to generate insights about your customers. Ask questions in natural language to have a dialog with your data to explore, assess, and better understand the profiles, behavior, and activity of your customers. With these insights, you can create optimal personalized experiences and engage with your customers through the most effective channels.
+Understanding your customers’ profiles and preferences is essential for driving personalized experience. Customer Insights – Data uses copilot generative AI capabilities to let you ask questions in natural language to quickly generate insights about your customers. Now end users like marketers, sellers, and service agents can get insights seamlessly. For example, you’d like to run a campaign targeted at improving customer loyalty. You can ask Copilot “How many customers aren't members of the loyalty program but have spent over $1,000 in the last six months?” Then use this information to create a segment and run an email campaign. The possibilities are endless. Have a dialog with your data by asking questions in every day words to explore, assess, and better understand the profiles, behaviors, and activities of your customers.
 
 Responses are generated in accordance with [Microsoft Responsible AI Standards](https://www.microsoft.com/ai/responsible-ai). For more information, see [FAQ for dialog with data](faqs-dialog-data.md)
 
@@ -31,7 +31,7 @@ Responses are generated in accordance with [Microsoft Responsible AI Standards](
 
 1. In Customer Insights - Data, go to **Insights** > **Discovery**.
 
-1. A pop-up box explains the feature and asks for your consent to share your prompts to continuously improve the quality of the results, or answers, generated. Choose your preference. You only need to do this once, and you can always change your preference on the **Discovery** page later.
+1. A pop-up box explains the feature and asks for your consent to share your prompts to continuously improve the quality of the results, or answers, generated. Choose your preference. You only need to do give consent once, and you can always change your preference on the **Discovery** page later.
 
    :::image type="content" source="media/copilot-customer-insights.png" alt-text="Screenshot of the dialog with data feature, with copilot AI answering a user question.":::
 
