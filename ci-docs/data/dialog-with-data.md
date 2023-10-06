@@ -3,8 +3,8 @@ title: Have a dialog with data using Copilot in Customer Insights (preview)
 description: Learn how to get more insights from your data by asking natural-language questions with Copilot in Dynamics 365 Customer Insights. 
 ms.date: 10/05/2023
 ms.topic: how-to
-author: wmelewong
-ms.author: radsay01
+author: radsay01
+ms.author: rsayyaparaju
 ms.reviewer: mhart
 ms.custom: bap-template
 ---
@@ -15,7 +15,9 @@ ms.custom: bap-template
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
-Understanding your customers’ profiles and preferences is essential for driving personalized experience. Customer Insights – Data uses copilot generative AI capabilities to let you ask questions in natural language to quickly generate insights about your customers. Now end users like marketers, sellers, and service agents can get insights seamlessly. For example, you’d like to run a campaign targeted at improving customer loyalty. You can ask Copilot “How many customers aren't members of the loyalty program but have spent over $1,000 in the last six months?” Then use this information to create a segment and run an email campaign. The possibilities are endless. Have a dialog with your data by asking questions in every day words to explore, assess, and better understand the profiles, behaviors, and activities of your customers.
+Understanding your customers’ profiles and preferences is essential for driving personalized experience. Customer Insights – Data uses copilot generative AI capabilities to let you ask questions in natural language to quickly generate insights about your customers. Now end users like marketers, sellers, and service agents can get insights seamlessly.
+
+For example, you’d like to run a campaign targeted at improving customer loyalty. You can ask Copilot “How many customers aren't members of the loyalty program but have spent over $1,000 in the last six months?” Then use this information to create a segment and run an email campaign. The possibilities are endless. Have a dialog with your data by asking questions in every day words to explore, assess, and better understand the profiles, behaviors, and activities of your customers.
 
 Responses are generated in accordance with [Microsoft Responsible AI Standards](https://www.microsoft.com/ai/responsible-ai). For more information, see [FAQ for dialog with data](faqs-dialog-data.md)
 
