@@ -96,7 +96,7 @@
   items:
     - name: Data enrichment overview
       href: enrichment-hub.md
-    - name: Create and manage enrichments
+    - name: Enrich unified data
       href: enrichment-manage.md
     - name: Brands and interests
       href: enrichment-microsoft.md
