@@ -43,6 +43,6 @@ The table to be enriched is specified during the enrichment configuration, which
 ## Next steps
 
 - [Enrich a data source](data-sources-enrichment.md)
-- [Create and manage enrichments on unified data](enrichment-manage.md)
+- [Enrich unified data](enrichment-manage.md)
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
