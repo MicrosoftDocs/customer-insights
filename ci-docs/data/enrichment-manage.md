@@ -1,6 +1,6 @@
 ---
-title: "Create and manage enrichments"
-description: "Use capabilities from Microsoft and other third-party services to enrich your customer data."
+title: "Enrich unified data (preview)"
+description: "Use capabilities from Microsoft and other third-party services to enrich your unified customer data."
 ms.date: 10/05/2023
 ms.reviewer: mhart
 ms.topic: how-to
@@ -9,7 +9,7 @@ ms.author: jodahl
 ms.collection: get-started
 ---
 
-# Create and manage enrichments on unified data (preview)
+# Enrich unified data (preview)
 
 [!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
