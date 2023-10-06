@@ -17,12 +17,6 @@ search.audienceType:
 
 [!INCLUDE [azure-ad-to-microsoft-entra-id](./includes/azure-ad-to-microsoft-entra-id.md)]
 
-> [!IMPORTANT]
-> To use event management in the real-time journeys area of Customer Insights - Journeys, you must enable the feature switch. To enable the feature switch:
->
-> 1. Go to **Settings** > **Overview** > **Feature switches**.
-> 1. Enable the **Enable events creation in real-time journeys** feature switch toggle.
-
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4J4cV]
 
 [!INCLUDE [marketing-trial-cta](./includes/marketing-trial-cta.md)]
