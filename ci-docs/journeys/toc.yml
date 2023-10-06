@@ -436,14 +436,10 @@
       href: mkt-settings-matching.md
     - name: Default marketing settings
       href: mkt-settings-default-marketing.md
-    - name: Configure your social media accounts
-      href: mkt-settings-social-media.md
     - name: Data protection tools
       href: mkt-settings-data-protection.md
     - name: Event management settings
       href: events-settings.md
-    - name: Manage LinkedIn Lead Gen
-      href: linkedin-configuration.md
     - name: Quota limits
       href: quota-management.md
     - name: Trial quota limits
@@ -808,6 +804,10 @@
       href: form-double-opt-in.md
     - name: How the outbound marketing app uses cookies
       href: cookies.md
+    - name: Configure your social media accounts
+      href: mkt-settings-social-media.md
+    - name: Manage LinkedIn Lead Gen
+      href: linkedin-configuration.md
   - name: Learning catalog
     items:
     - name: Learning catalog overview
