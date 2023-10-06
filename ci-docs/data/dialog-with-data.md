@@ -21,11 +21,17 @@ Responses are generated in accordance with [Microsoft Responsible AI Standards](
 
 [!INCLUDE [public-preview-note](includes/public-preview-note.md)]
 
+## Supported languages
+
+This feature is available in all geographies. This feature doesn't restrict any language, but we recommend and officially support only the following languages.
+
+![Supported languages.](media/dialog-data-languages.png "List of supported languages")
+
 ## Prerequisites
 
 - Customer data is [imported](data-sources.md) and [unified](data-unification.md).
-- You have at least Contributor permissions.
-- The environment is hosted in one of the US regions.
+- For optimal results, we recommend imported and unified [activity data](activities.md).
+- You have Admin or Contributor permissions.
 
 ## Discover insights from your data
 
