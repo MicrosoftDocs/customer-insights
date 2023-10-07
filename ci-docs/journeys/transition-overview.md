@@ -1,7 +1,7 @@
 ---
 title: Transition overview
 description: Overview of the transition process from outbound marketing to real-time journeys in Dynamics 365 Customer Insights - Journeys.
-ms.date: 10/04/2023
+ms.date: 10/06/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -47,7 +47,7 @@ Here's some recommendation actions to take depending on your purchase date:
 Existing customers are encouraged to transition from outbound marketing to the real-time journeys engine for optimal performance, scale, and to take advantage of ongoing product investments and AI Copilot features. Learn more: [Customer Insights - Journeys transition FAQs](transition-faqs.md)
 
 > [!NOTE]
-> After upgrading Dynamics 365 Marketing to Customer Insights - Journeys, existing customers no longer see the outbound marketing module. Existing customers can add back outbound marketing features themselves using a self-serve interface available on the **Settings** > **Versions** page in the Customer Insights - Journeys app.
+> Existing customers who complete new installations can add outbound features through a self-serve interface. To add outbound marketing features, go to **Settings** > **Versions** and select the **Enable** link.
 
 Here's some recommendation actions for existing customers depending on your needs:
 

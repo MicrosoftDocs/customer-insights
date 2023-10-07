@@ -84,6 +84,6 @@ To return to the **Customers** page, select **Back to Customers**.
 
 ## Next steps
 
-[Add more data sources](data-sources.md), [enrich unified profiles](enrichment-hub.md), or [create segments](segments.md) to work with unified customer profiles in other applications.
+[Add more data sources](data-sources.md), [enrich unified profiles](enrichment-manage.md), or [create segments](segments.md) to work with unified customer profiles in other applications.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

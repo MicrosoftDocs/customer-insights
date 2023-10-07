@@ -98,6 +98,8 @@
   items:
     - name: Data enrichment overview
       href: enrichment-hub.md
+    - name: Enrich unified data
+      href: enrichment-manage.md
     - name: Brands and interests
       href: enrichment-microsoft.md
     - name: Demographics with Experian
