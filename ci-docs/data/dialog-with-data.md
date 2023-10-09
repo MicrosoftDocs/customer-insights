@@ -15,7 +15,7 @@ ms.custom: bap-template
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
-Understanding your customers’ profiles and preferences is essential for driving personalized experience. Customer Insights – Data uses copilot generative AI capabilities to let you ask questions in natural language to quickly generate insights about your customers. Now end users like marketers, sellers, and service agents can get insights to better understand and serve customers easily without the support of IT teams or additional tools.
+Understanding your customers’ profiles and preferences is essential for driving personalized experience. Customer Insights – Data uses copilot generative AI capabilities to let you ask questions in natural language to quickly generate insights about your customers. Now end users like marketers, sellers, and service agents can get insights to better understand and serve customers easily without the support of IT teams or other tools.
 
 For example, let’s say that you’d like to run a campaign targeted at improving customer loyalty. You can ask Copilot “How many customers aren't members of the loyalty program but have spent over $1,000 in the last six months?” You can then use this information to create a targeted segment and run an email campaign to boost loyalty program membership. The possibilities are endless. Have a dialog with your data today by asking questions in every day words to explore, assess, and better understand the profiles, behaviors, and activities of your customers.
 
@@ -27,7 +27,14 @@ Responses are generated in accordance with [Microsoft Responsible AI Standards](
 
 This feature is available in all geographies. This feature doesn't restrict any language, but we recommend and officially support only the following languages.
 
-![Supported languages.](media/dialog-data-languages.png "List of supported languages")
+| | | | |
+|-|-|-|-|
+|Arabic| English| Italian| Portuguese (Portugal)|
+|Chinese (Simplified)| Finnish | Japanese| Russian|
+|Chinese (Traditional)| French| Korean| Spanish|
+|Czech| German| Norwegian| Swedish|
+|Danish| Greek| Polish| Thai|
+|Dutch| Hebrew| Portuguese (Brazil)| Turkish|
 
 ## Prerequisites
 
