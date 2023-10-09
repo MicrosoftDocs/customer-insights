@@ -27,7 +27,9 @@ Responses are generated in accordance with [Microsoft Responsible AI Standards](
 
 This feature is available in all geographies. This feature doesn't restrict any language, but we recommend and officially support only the following languages.
 
-|Supported languages | | | |
+![Supported languages.](media/dialog-data-languages.png "List of supported languages")
+
+|Supported languages |  |  |  |
 |-|-|-|-|
 |Arabic| English| Italian| Portuguese (Portugal)|
 |Chinese (Simplified)| Finnish | Japanese| Russian|
