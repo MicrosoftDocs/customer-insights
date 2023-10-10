@@ -2425,6 +2425,11 @@
       "source_path": "ci-docs/journeys/session-level-registration.md",
       "redirect_url": "/dynamics365/customer-insights/journeys/event-management",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/event-waitlist.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/event-waitlist-outbound",
+      "redirect_document_id": false
     }
   ]
 }
