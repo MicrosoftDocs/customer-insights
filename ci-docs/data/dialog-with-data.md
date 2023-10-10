@@ -19,30 +19,16 @@ Understanding your customers’ profiles and preferences is essential for drivin
 
 For example, let’s say that you’d like to run a campaign targeted at improving customer loyalty. You can ask Copilot “How many customers aren't members of the loyalty program but have spent over $1,000 in the last six months?” You can then use this information to create a targeted segment and run an email campaign to boost loyalty program membership. The possibilities are endless. Have a dialog with your data today by asking questions in every day words to explore, assess, and better understand the profiles, behaviors, and activities of your customers.
 
-Responses are generated in accordance with [Microsoft Responsible AI Standards](https://www.microsoft.com/ai/responsible-ai). For more information, see [FAQ for dialog with data](faqs-dialog-data.md)
+Responses are generated in accordance with [Microsoft Responsible AI Standards.](https://www.microsoft.com/ai/responsible-ai) For more information, see [FAQ for dialog with data.](faqs-dialog-data.md)
 
 [!INCLUDE [public-preview-note](includes/public-preview-note.md)]
 
-## Supported languages
-
-This feature is available in all geographies. This feature doesn't restrict any language, but we recommend and officially support only the following languages.
-
-![Supported languages.](media/dialog-data-languages.png "List of supported languages")
-
-|Supported languages |  |  |  |
-|-|-|-|-|
-|Arabic| English| Italian| Portuguese (Portugal)|
-|Chinese (Simplified)| Finnish | Japanese| Russian|
-|Chinese (Traditional)| French| Korean| Spanish|
-|Czech| German| Norwegian| Swedish|
-|Danish| Greek| Polish| Thai|
-|Dutch| Hebrew| Portuguese (Brazil)| Turkish|
-
 ## Prerequisites
 
-- Customer data is [imported](data-sources.md) and [unified](data-unification.md).
-- For optimal results, we recommend imported and unified [activity data](activities.md).
+- Customer data is [imported](data-sources.md) and [unified.](data-unification.md)
+- For optimal results, we recommend imported and unified [activity data.](activities.md)
 - You have Admin or Contributor permissions.
+- For optimal results, we recommend using a [supported language.](faqs-dialog-data.md#what-are-the-supported-languages)
 
 ## Discover insights from your data
 
