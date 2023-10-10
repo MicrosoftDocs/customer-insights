@@ -1,6 +1,6 @@
 ---
-title: Plan, publicize, and collect registrations for events
-description: An overview of event-management features (including planning, logistics, sponsors, speakers, promotion, and registration) in  Dynamics 365 Customer Insights - Journeys.
+title: Event management in outbound marketing overview
+description: An overview of event-management features (including planning, logistics, sponsors, speakers, promotion, and registration) in outbound marketing.
 ms.date: 08/18/2023
 ms.topic: article
 author: alfergus
@@ -11,7 +11,7 @@ search.audienceType:
   - enduser
 ---
 
-# Event planning and management
+# Event management in outbound marketing overview
 
 [!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 

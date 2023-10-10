@@ -702,7 +702,7 @@
       href: customer-journey-recovery-items.md
   - name: Event planning and management
     items:
-    - name: Event management overview
+    - name: Event management in outbound marketing overview
       href: event-management-outbound.md
     - name: Create an event
       items:
@@ -732,7 +732,7 @@
       items:
       - name: Invite, register, and house event attendees
         href: invite-register-house-event-attendees-outbound.md
-      - name: Use marketing forms for event registration in outbound marketing
+      - name: Use marketing forms for event registration
         href: event-forms-outbound.md
       - name: Add custom fields to your event registration form
         href: custom-registration-fields-outbound.md

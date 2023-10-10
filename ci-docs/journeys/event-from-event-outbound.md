@@ -1,6 +1,6 @@
 ---
-title: Create an event from another event
-description: Describes how to create an event from another event when creating a new event in Dynamics 365 Customer Insights - Journeys.
+title: Create an event from another event in outbound marketing
+description: Describes how to create an event from another event when creating a new event in outbound marketing.
 ms.date: 08/18/2023
 ms.topic: article
 author: alfergus
@@ -11,7 +11,7 @@ search.audienceType:
   - enduser
 ---
 
-# Create an event from another event
+# Create an event from another event in outbound marketing
 
 [!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 

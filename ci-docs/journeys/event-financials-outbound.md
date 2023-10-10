@@ -1,6 +1,6 @@
 ---
-title: View and record financial information for events
-description: Learn how to record values for event budgets, expenses, and revenue in Dynamics 365 Customer Insights - Journeys.
+title: View and record financial information for events in outbound marketing 
+description: Learn how to record values for event budgets, expenses, and revenue in outbound marketing.
 ms.date: 08/18/2023
 ms.topic: article
 author: alfergus
@@ -11,7 +11,7 @@ search.audienceType:
   - enduser
 ---
 
-# View and record financial information for events
+# View and record financial information for events in outbound marketing
 
 [!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
