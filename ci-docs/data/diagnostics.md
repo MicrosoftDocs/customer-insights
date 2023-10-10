@@ -16,8 +16,12 @@ ms.author: bkief
 
 [!INCLUDE [azure-ad-to-microsoft-entra-id](../journeys/includes/azure-ad-to-microsoft-entra-id.md)]
 
-Forward logs from Dynamics 365 Customer Insights - Data using Azure Monitor. Azure Monitor resource logs let you monitor and send logs to [Azure Storage](https://azure.microsoft.com/services/storage/), [Azure Log Analytics](/azure/azure-monitor/logs/log-analytics-overview), or stream them to [Azure Event Hubs](https://azure.microsoft.com/services/event-hubs/).
+Forward logs from Dynamics 365 Customer Insights - Data using Azure Monitor. Azure Monitor resource logs let you monitor and send logs to [Azure Storage](https://azure.microsoft.com/services/storage/), [Azure Log Analytics](/azure/azure-monitor/logs/log-analytics-overview), or stream them to [Azure Event Hubs](https://azure.microsoft.com/services/event-hubs/). Forwarding your logs to Azure Monitor lets you observe your Customer Instance - Data instance with great flexibility. Some of the use cases you can solve with this data in Azure Monitor Log Analytics include:
+- Monitoring and troubleshooting: You can use Log Analytics to monitor and troubleshoot your applications, infrastructure, and network. It helps you identify issues and diagnose problems quickly.
+- Security analysis: You can use Log Analytics to detect security threats and investigate security incidents.
+- Compliance auditing: You can use Log Analytics to audit your infrastructure and applications for compliance with regulatory standards.
 
+## Logs available for Customer Insights - Data
 Customer Insights sends the following event logs:
 
 - **Audit Events**
