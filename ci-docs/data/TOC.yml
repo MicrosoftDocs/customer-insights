@@ -46,6 +46,8 @@
          href: connect-synapse.md
        - name: Connect to data in Microsoft Dataverse
          href: connect-dataverse.md
+       - name: Connect data stored in Delta Lake format from your Azure Data Lake Storage
+         href: connect-delta-lake.md
        - name: Add a data sources via Power Query connectors
          href: connect-power-query.md
     - name: Manage existing data sources
