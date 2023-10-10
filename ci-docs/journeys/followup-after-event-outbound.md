@@ -13,7 +13,7 @@ search.audienceType:
 
 # Evaluate your event and follow up with attendees
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -51,4 +51,4 @@ By the time your event is finished, you'll have generated a wealth of new data i
 - **The event management dashboard**: This dashboard gives a broad overview of your event planning activities and results from all your events. You can view it by choosing **Event Management Dashboard** from the view selector at the top of any dashboard page in Dynamics 365. More information: [The event management dashboard](event-management-dashboard.md)
 - **Event records**: [Open the Events work area](open-events.md), go to **Events** > **Event** > **Events**, and open the main event record for your event to see results and analytics that relate to that event only. These offer much more detail than the dashboard does about many aspects of the event.
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

@@ -13,7 +13,7 @@ search.audienceType:
 
 # Manage attendee logistics and accommodation availability
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -31,4 +31,4 @@ Use the following entities of the [Events work area](open-events.md) to record a
 - **Events** > **Logistics** > **Hotel Room Allocations**: Room allocations represent a block of rooms that the hotel has agreed to make available during your event. Each room allocation record specifies the number of rooms allocated and the type of rooms they are (single, double, or suite). Each allocation must be associated with a hotel that is registered in your database. If you have allocated several different room types in the same hotel, you must set up a separate allocation for each type. You can also view and add room reservations associated with the current allocation here.
 - **Events** > **Logistics** > **Hotel Room Reservations**: Here you can reserve rooms for attendees from among the rooms you have allocated. More information: [Book hotel rooms for staff, speakers, and guests](invite-register-house-event-attendees.md#book-hotel-rooms-for-staff-speakers-and-guests)
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

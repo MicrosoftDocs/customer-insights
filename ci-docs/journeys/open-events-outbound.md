@@ -13,7 +13,7 @@ search.audienceType:
 
 # Open the event management work area
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -38,4 +38,4 @@ To find the event management work area:
 
 For more information about how to get around in Customer Insights - Journeys and work with its common features, see [Find your way around Customer Insights - Journeys](navigation.md).
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

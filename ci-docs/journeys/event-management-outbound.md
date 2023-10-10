@@ -13,7 +13,7 @@ search.audienceType:
 
 # Event planning and management
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -71,4 +71,4 @@ Customer Insights - Journeys contains a subset of outbound event management feat
 |     Lead entity registration    |     Yes    |     N/A    |
 |     Set registrations end date    |    Yes    |    N/A    |
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

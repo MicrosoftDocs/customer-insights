@@ -13,7 +13,7 @@ search.audienceType:
 
 # The event management dashboard
 
-[!INCLUDE[consolidated-sku-rtm-only](../includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -22,4 +22,4 @@ The event-management feature provides a preconfigured dashboard that gives a bro
 
 You can see the event-management dashboard on any dashboard page in any area of Dynamics 365. To view it, choose **Event Management Dashboard** from the view selector at the top of any dashboard page.
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]
