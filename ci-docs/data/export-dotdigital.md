@@ -1,7 +1,7 @@
 ---
 title: "Export segments to DotDigital (preview)"
 description: "Learn how to configure the connection and export to DotDigital."
-ms.date: 09/01/2023
+ms.date: 10/10/2023
 ms.reviewer: mhart
 ms.topic: how-to
 author: pkieffer
@@ -18,8 +18,8 @@ Export segments of unified customer profiles to DotDigital address books and use
 
 ## Prerequisites
 
-- A [DotDigital account](https://dotdigital.com/) and  an [API user](https://support.dotdigital.com/hc/articles/115001718730-How-do-I-create-an-API-user).
-- A DotDigital ID from a [new](https://support.dotdigital.com/hc/articles/212211968-Creating-an-address-book) or existing address book in DotDigital. The ID can be found in the URL when you select and open an address book.
+- A [DotDigital account](https://dotdigital.com/) and  an [API user](https://support.dotdigital.com//articles/8199489-create-an-api-user).
+- A DotDigital ID from a [new](https://support.dotdigital.com/articles/8198769-create-a-contact-list) or existing address book in DotDigital. The ID can be found in the URL when you select and open an address book.
 - [Configured segments](segments.md).
 - Unified customer profiles in the exported segments contain a field representing an email address.
 
@@ -76,6 +76,6 @@ Export segments of unified customer profiles to DotDigital address books and use
 
 [!INCLUDE [export-saving-include](includes/export-saving.md)]
 
-In DotDigital, find your segments in [DotDigital address books](https://support.dotdigital.com/hc/articles/212211968-Creating-an-address-book).
+In DotDigital, find your segments in [DotDigital address books](https://support.dotdigital.com/articles/8198769-create-a-contact-list).
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
