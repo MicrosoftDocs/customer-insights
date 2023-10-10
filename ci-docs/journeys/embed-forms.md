@@ -236,5 +236,4 @@ You can create an inbound campaign by placing a **Marketing form** tile at the s
 
 ![Inbound campaign from a hosted form.](media/journey-host-form-trigger5.png "Inbound campaign from a hosted form")
 
-
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
