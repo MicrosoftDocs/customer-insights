@@ -715,9 +715,9 @@
       - name: Set up and manage an event waitlist
         href: event-waitlist-outbound.md
       - name: Create and manage recurring events
-        href: event-recurring.md
+        href: event-recurring-outbound.md
       - name: Create and use event templates
-        href: event-templates.md
+        href: event-templates-outbound.md
       - name: Create an event from another event
         href: event-from-event-outbound.md
     - name: Host a Microsoft Teams webinar
@@ -727,21 +727,21 @@
       - name: Optimize your event check-in flow
         href: optimize-check-in-outbound.md
       - name: Set up a non-Teams webinar
-        href: set-up-webinar.md
+        href: set-up-webinar-outbound.md
     - name: Register event attendees
       items:
       - name: Invite, register, and house event attendees
         href: invite-register-house-event-attendees-outbound.md
       - name: Use marketing forms for event registration in outbound marketing
-        href: event-forms.md
+        href: event-forms-outbound.md
       - name: Add custom fields to your event registration form
-        href: custom-registration-fields.md
+        href: custom-registration-fields-outbound.md
     - name: Create an event website
       items:
       - name: Set up the event website
-        href: set-up-event-portal.md
+        href: set-up-event-portal-outbound.md
       - name: Change the URL for events hosted on Portals
-        href: events-change-url.md
+        href: events-change-url-outbound.md
     - name: Manage events
       items:
       - name: Event management dashboard
@@ -751,7 +751,7 @@
       - name: Manage attendee logistics and accommodation
         href: manage-event-logistic-outbound.md
       - name: Set up online payment for events
-        href: event-payment-gateway.md
+        href: event-payment-gateway-outbound.md
       - name: View and record financial information for events
         href: event-financials-outbound.md
     - name: Follow up with attendees
@@ -759,7 +759,7 @@
       - name: Follow up after the event
         href: followup-after-event-outbound.md
     - name: Event troubleshoot + FAQ
-      href: event-troubleshoot.md  
+      href: event-troubleshoot-outbound.md  
   - name: Lead generation and management
     items:
     - name: The lead lifecycle

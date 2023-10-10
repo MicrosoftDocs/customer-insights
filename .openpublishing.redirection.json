@@ -2430,6 +2430,51 @@
       "source_path": "ci-docs/journeys/event-waitlist.md",
       "redirect_url": "/dynamics365/customer-insights/journeys/event-waitlist-outbound",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/event-recurring.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/event-recurring-outbound",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/event-templates.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/event-templates-outbound",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/set-up-webinar.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/set-up-webinar-outbound",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/event-forms.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/event-forms-outbound",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/custom-registration-fields.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/custom-registration-fields-outbound",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/set-up-event-portal.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/set-up-event-portal-outbound",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/events-change-url.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/events-change-url-outbound",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/event-payment-gateway.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/event-payment-gateway-outbound",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/event-troubleshoot.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/event-troubleshoot-outbound",
+      "redirect_document_id": false
     }
   ]
 }
