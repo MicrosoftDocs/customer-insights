@@ -17,7 +17,7 @@ search.audienceType:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4J4cV]
 
-[!INCLUDE[marketing-trial-cta](../shared/trials/marketing-trial-cta.md)]
+[!INCLUDE [marketing-trial-cta](./includes/marketing-trial-cta.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
