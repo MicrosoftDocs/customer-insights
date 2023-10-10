@@ -1,6 +1,6 @@
 ---
-title: Event invitations, registrations, and hotel bookings
-description: After your event is set up, learn how to invite attendees, register attendees, and enter hotel bookings in Dynamics 365 Customer Insights - Journeys.
+title: Invite, register, and house event attendees in outbound marketing
+description: After your event is set up, learn how to invite attendees, register attendees, and enter hotel bookings in outbound marketing.
 ms.date: 08/18/2023
 ms.topic: article
 author: alfergus
@@ -11,7 +11,7 @@ search.audienceType:
   - enduser
 ---
 
-# Invite, register, and house event attendees
+# Invite, register, and house event attendees in outbound marketing
 
 [!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 

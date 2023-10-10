@@ -1,6 +1,6 @@
 ---
-title: Manage attendee logistics and accommodation availability
-description: How to manage event logistics (including vendors, hotels, room allocations, and reservations) in Dynamics 365 Customer Insights - Journeys.
+title: Manage attendee logistics and accommodation availability in outbound marketing
+description: How to manage event logistics (including vendors, hotels, room allocations, and reservations) in outbound marketing.
 ms.date: 08/21/2023
 ms.topic: article
 author: alfergus
@@ -11,7 +11,7 @@ search.audienceType:
   - enduser
 ---
 
-# Manage attendee logistics and accommodation availability
+# Manage attendee logistics and accommodation availability in outbound marketing
 
 [!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 

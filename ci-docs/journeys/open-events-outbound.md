@@ -1,6 +1,6 @@
 ---
-title: Open the event management work area 
-description: Explains how to access event-management features in Dynamics 365 Customer Insights - Journeys.
+title: Open the event management work area in outbound marketing
+description: Explains how to access event-management features in outbound marketing.
 ms.date: 08/21/2023
 ms.topic: article
 author: alfergus
@@ -11,7 +11,7 @@ search.audienceType:
   - enduser
 ---
 
-# Open the event management work area
+# Open the event management work area in outbound marketing
 
 [!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 

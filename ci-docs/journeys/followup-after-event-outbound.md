@@ -1,6 +1,6 @@
 ---
-title: Evaluate your event and follow up with attendees 
-description: Learn what you can do to optimize the benefits gained from your event by collecting feedback, analyzing attendance data, and handing leads off to sales from Dynamics 365 Customer Insights - Journeys.
+title: Evaluate your event and follow up with attendees in outbound marketing
+description: Learn what you can do to optimize the benefits gained from your event by collecting feedback, analyzing attendance data, and handing leads off to sales from outbound marketing.
 ms.date: 08/18/2023
 ms.topic: article
 author: alfergus
@@ -11,7 +11,7 @@ search.audienceType:
   - enduser
 ---
 
-# Evaluate your event and follow up with attendees
+# Evaluate your event and follow up with attendees in outbound marketing
 
 [!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 

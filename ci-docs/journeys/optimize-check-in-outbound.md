@@ -1,6 +1,6 @@
 ---
-title: Make the most of your event check-in flow 
-description: Learn how to optimize your event check-in flow in Dynamics 365 Customer Insights - Journeys.
+title: Make the most of your event check-in flow in outbound marketing
+description: Learn how to optimize your event check-in flow in outbound marketing.
 ms.date: 08/21/2023
 ms.topic: article
 author: alfergus
@@ -11,7 +11,7 @@ search.audienceType:
   - enduser
 ---
 
-# Make the most of your event check-in flow
+# Make the most of your event check-in flow in outbound marketing
 
 [!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 

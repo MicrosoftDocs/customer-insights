@@ -1,6 +1,6 @@
 ---
-title: Record and publicize sponsorship details 
-description: How to register sponsors and sponsorable articles in Dynamics 365 Customer Insights - Journeys.
+title: Record and publicize sponsorship details in outbound marketing
+description: How to register sponsors and sponsorable articles in outbound marketing.
 ms.date: 08/21/2023
 ms.topic: article
 author: alfergus
@@ -11,7 +11,7 @@ search.audienceType:
   - enduser
 ---
 
-# Record and publicize sponsorship details
+# Record and publicize sponsorship details in outbound marketing
 
 [!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 

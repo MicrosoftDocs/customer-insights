@@ -1,6 +1,6 @@
 ---
-title: The event management dashboard 
-description: How to find and use the event dashboard in Dynamics 365 Customer Insights - Journeys.
+title: The event management dashboard in outbound marketing
+description: How to find and use the event dashboard in outbound marketing.
 ms.date: 08/18/2023
 ms.topic: overview
 author: alfergus
@@ -11,7 +11,7 @@ search.audienceType:
   - enduser
 ---
 
-# The event management dashboard
+# The event management dashboard in outbound marketing
 
 [!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
