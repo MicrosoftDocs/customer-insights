@@ -52,7 +52,7 @@ The feature is available in the United States and supports English only.
 
 ## What operational factors and settings allow for effective and responsible use of the feature?
 
-Copilot doesn't share data across environments. Opt-in consent to is provided through the Settings page and managed by admins of Customer Insights - Data. Admins can revoke consent at any time and turn the feature off.
+Copilot doesn't share data across environments. Opt-in consent is provided through the Settings page and managed by admins of Customer Insights - Data. Admins can revoke consent at any time and turn the feature off.
 
 ## See also
 
