@@ -28,7 +28,8 @@ Responses are generated in accordance with [Microsoft Responsible AI Standards.]
 - Customer data is [imported](data-sources.md) and [unified.](data-unification.md)
 - For optimal results, we recommend imported and unified [activity data.](activities.md)
 - You have Admin or Contributor permissions.
-- For optimal results, we recommend using a [supported language.](faqs-dialog-data.md#what-are-the-supported-languages)
+- [Enable Copilot features powered by Azure OpenAI](copilot-global-consent.md) setting turned **On**. Default is **On**.
+- Environment uses a [supported language.](faqs-dialog-data.md#what-are-the-supported-geographies-and-languages)
 
 ## Discover insights from your data
 
@@ -62,7 +63,8 @@ We want to hear your feedback so we can continually enhance the relevancy, preci
 ## Next steps
 
 - [Create complex segments with segment builder](segment-builder.md)  
-- [Create measures with measure builder](measure-builder.md)  
+- [Create measures with measure builder](measure-builder.md)
+- [Responsible AI FAQs for dialog with data](faqs-dialog-data.md)
 - [Responsible AI FAQs for Dynamics 365 Customer Insights - Data](responsible-ai-overview.md)
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
