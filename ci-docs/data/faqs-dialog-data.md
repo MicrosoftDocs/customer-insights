@@ -54,7 +54,7 @@ The feature transforms your prompts in natural language into a SQL query to run 
 
 - ‘Did you know’ section and ‘Explore further’ result generation is dependent on Azure OpenAI Service model.  
 
-## What are the supported languages?
+## What are the supported geographies and languages?
 
 This feature is available in all geographies. This feature doesn't restrict any language, but we recommend and officially support only the following languages: Arabic, Chinese (Simplified), Chinese (Traditional), Czech, Danish, Dutch, English, Finnish, French, German, Greek, Hebrew, Italian, Japanese, Korean, Norwegian, Polish, Portuguese (Brazil), Portuguese (Portugal), Russian, Spanish, Swedish, Thai, and Turkish.
 
