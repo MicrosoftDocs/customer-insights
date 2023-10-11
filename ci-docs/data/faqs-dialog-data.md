@@ -66,6 +66,6 @@ This feature is available in all geographies. This feature doesn't restrict any 
 
 ## See also
 
-- [Have a dialog with data using Copilot in Customer Insights (preview)](dialog-with-data.md)
+- [Have a dialog with data using Copilot in Customer Insights - Data (preview)](dialog-with-data.md)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

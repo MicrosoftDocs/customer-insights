@@ -1,6 +1,6 @@
 ---
-title: Have a dialog with data using Copilot in Customer Insights (preview)
-description: Learn how to get more insights from your data by asking natural-language questions with Copilot in Dynamics 365 Customer Insights. 
+title: Have a dialog with data using Copilot in Customer Insights - Data (preview)
+description: Learn how to get more insights from your data by asking natural-language questions with Copilot in Dynamics 365 Customer Insights - Data. 
 ms.date: 10/09/2023
 ms.topic: how-to
 author: radsay01
@@ -9,7 +9,7 @@ ms.reviewer: mhart
 ms.custom: bap-template
 ---
 
-# Have a dialog with data using Copilot in Customer Insights (preview)
+# Have a dialog with data using Copilot in Customer Insights - Data (preview)
 
 [!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
@@ -40,7 +40,7 @@ Responses are generated in accordance with [Microsoft Responsible AI Standards.]
 
 The **Discover insights about your customers in natural language (preview)** page contains four key components:
 
-- **Prompt box**: Enter your question in natural language; for example, *How many customers in my loyalty program have more than 100 reward points?* Copilot in Customer Insights supports questions in English with up to 2,000 characters. This section also contains the consent setting for sharing your prompts. Ask a specific question about your customers and make sure you have the relevant data imported to answer the question. Avoid asking questions that are too ambiguous or contain inappropriate content.
+- **Prompt box**: Enter your question in natural language; for example, *How many customers in my loyalty program have more than 100 reward points?* Copilot in Customer Insights - Data supports questions in supported languages with up to 2,000 characters. This section also contains the consent setting for sharing your prompts. Ask a specific question about your customers and make sure you have the relevant data imported to answer the question. Avoid asking questions that are too ambiguous or contain inappropriate content.
 
   > [!TIP]
   >
@@ -63,6 +63,6 @@ We want to hear your feedback so we can continually enhance the relevancy, preci
 
 - [Create complex segments with segment builder](segment-builder.md)  
 - [Create measures with measure builder](measure-builder.md)  
-- [Responsible AI FAQs for Dynamics 365 Customer Insights](responsible-ai-overview.md)
+- [Responsible AI FAQs for Dynamics 365 Customer Insights - Data](responsible-ai-overview.md)
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

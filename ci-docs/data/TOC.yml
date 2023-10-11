@@ -130,7 +130,7 @@
     - name: Manage unknown customer profiles
       href: manage-unknown-profiles.md
 
-- name: Copilot in Customer Insights
+- name: Copilot in Customer Insights - Data
   items:
     - name: Dialog with data
       href: dialog-with-data.md
