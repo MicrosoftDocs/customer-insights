@@ -1,7 +1,7 @@
 ---
 title: FAQ for Environment status summary
 description: This FAQ provides information about the AI technology used in the environment status summary. It includes key considerations and details about how AI is used, how it was tested and evaluated, and any specific limitations.
-ms.date: 09/01/2023
+ms.date: 10/11/2023
 ms.custom: 
   - responsible-ai-faqs
 ms.topic: article
@@ -47,7 +47,9 @@ The feature reviews jobs in the following order, if they're configured:
 
 The feature reports only on these jobs and one at a time based on the priority order. For example, if exports are configured, then the feature only identifies if there's an issue with an export.
 
-The feature is available only in the United States.
+## What are the supported geographies and languages?
+
+The feature is available in the United States and supports English only.
 
 ## What operational factors and settings allow for effective and responsible use of the feature?
 
@@ -56,6 +58,6 @@ The feature is available only in the United States.
 
 ## See also
 
-- [Environment status summary](system.md#environment-status-summary-preview)
+- [Environment status summary (preview)](system.md#environment-status-summary-preview)
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

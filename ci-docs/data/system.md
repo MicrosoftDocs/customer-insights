@@ -1,7 +1,7 @@
 ---
 title: "View system configuration"
 description: "Learn about system settings in Dynamics 365 Customer Insights - Data."
-ms.date: 09/01/2023
+ms.date: 10/11/2023
 ms.topic: conceptual
 author: NimrodMagen
 ms.author: nimagen
@@ -106,11 +106,12 @@ The Environment status summary is designed to help you quickly understand the st
 - If you haven't configured any segments for Customer Journey Orchestrator, the system summarizes job statuses for jobs that put data into Dataverse.
 - If you haven’t configured any features that move data into Dataverse, the system reviews the unification (merge) job to help indicate if your unification is running normally.
 
-This feature is available only in the United States.
-
-This feature adheres to [responsible AI](faqs-environment-status.md) guidelines.
-
 [!INCLUDE [public-preview-note](includes/public-preview-note.md)]
+
+### Prerequisites
+
+- [Enable Copilot features powered by Azure OpenAI](copilot-global-consent.md) setting turned **On**. Default is **On**.
+- [Environment is in a supported geography and uses a supported language.](faqs-environment-status.md#what-are-the-supported-geographies-and-languages).
 
 ### View the Environment status summary
 
@@ -124,5 +125,10 @@ Use the summary to help you determine if your environment is running normally or
   - To copy the summary to your clipboard, select **Copy**.
   - To refresh the summary if you’re waiting for a job to finish, select **Refresh**.
   - To provide your feedback, select the thumbs up or thumbs down icons.
+
+### Next steps
+
+- [Responsible AI FAQs for the Environment status summary](faqs-environment-status.md)
+- [Responsible AI FAQs for Customer Insights - Data](responsible-ai-overview.md)
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

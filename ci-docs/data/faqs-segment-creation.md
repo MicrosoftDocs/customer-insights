@@ -1,7 +1,7 @@
 ---
 title: FAQ for segment creation (preview)
 description: This FAQ provides information about the AI technology used in segment creation (preview). It provides key considerations and details about how AI is used, how it was tested and evaluated, and any specific limitations.
-ms.date: 09/26/2023
+ms.date: 10/11/2023
 ms.custom: 
   - responsible-ai-faqs
 ms.topic: article
@@ -20,7 +20,7 @@ These frequently asked questions (FAQ) describe the AI impact of the Dynamics 36
 
 ## What is segment creation with Copilot in Customer Insights?
 
-This feature accepts natural language prompts in na chat experience to help build segments and specify their criteria in Dynamics 365 Customer Insights - Data. The suggested segment configuration and data mapping based on the prompt and the available customer data is available to users for tweaks and refinement.
+This feature accepts natural language prompts in a chat experience to help build segments and specify their criteria in Dynamics 365 Customer Insights - Data. The suggested segment configuration and data mapping based on the prompt and the available customer data is available to users for tweaks and refinement.
 
 ## What are capabilities of the segment creation feature?
 
@@ -44,10 +44,18 @@ We measure performance of the Copilot by the successful creation of AI-generated
 
 ## What are the limitations of segment creation? How can users minimize the impact of the limitations when using the system?
 
-The feature is currently only available in the US region and in English.  
+The feature is available in the United States and supports English only.  
+
+## What are the supported geographies and languages?
+
+The feature is available in the United States and supports English only.
 
 ## What operational factors and settings allow for effective and responsible use of the feature?
 
 Copilot doesn't share data across environments. Opt-in consent to is provided through the Settings page and managed by admins of Customer Insights - Data. Admins can revoke consent at any time and turn the feature off.
+
+## See also
+
+- [Create segments with Copilot (preview)](segments-copilot.md)
 
 [!INCLUDE [footer-banner](includes/footer-banner.md)]
