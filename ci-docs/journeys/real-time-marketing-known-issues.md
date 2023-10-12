@@ -49,10 +49,9 @@ As we continue to work on Customer Insights - Journeys and refine the experience
 - Emails created in outbound marketing need to be recreated in the Customer Insights - Journeys email designer to be used in Customer Insights - Journeys.
 - Content blocks may not be editable immediately after inserting into an email. When a content block is added to an email, its content may not be editable (cannot be selected). To work around this issue, refresh the page.
 
-## Triggers
+## General
 
-- You can’t instrument C# apps in Customer Insights - Journeys. If you choose to use an alternate language like Python, you’ll have to manage an infra to run Python.
-- Published triggers can’t be migrated when moving data between environments. Any published triggers in the old environment need to be re-created in the new environment. Draft triggers, however, can be migrated as described in [Move custom triggers between environments](move-triggers-between-environments.md).
+- The Customer Insights - Journeys app may still appear to be named "Marketing" in the app switcher screen and in the top menu bar, even if your installation is up to date. This will be updated in future revisions.
 
 ## Natural language
 
@@ -67,4 +66,9 @@ As we continue to work on Customer Insights - Journeys and refine the experience
 - Changing the data binding of existing dynamic text creates new dynamic text.
 - Even if you delete all usage of a piece of dynamic text from the current message, it is still shown and considered in use.
 
+## Triggers
+
+- You can’t instrument C# apps in Customer Insights - Journeys. If you choose to use an alternate language like Python, you’ll have to manage an infra to run Python.
+- Published triggers can’t be migrated when moving data between environments. Any published triggers in the old environment need to be re-created in the new environment. Draft triggers, however, can be migrated as described in [Move custom triggers between environments](move-triggers-between-environments.md).
+- 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
