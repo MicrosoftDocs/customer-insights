@@ -36,7 +36,7 @@ The segment creation feature provides the following components or capabilities:
 
 ## What is the intended use of the segment creation feature?
 
-Segment creation with Copilot in Customer Insights democratizes the varying technical ability of users and helps them create complex segments via natural language.
+Segment creation with Copilot in Customer Insights - Data democratizes the varying technical ability of users and helps them create complex segments via natural language.
 
 ## How was the feature evaluated? What metrics are used to measure performance?
 

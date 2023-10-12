@@ -55,7 +55,7 @@ There are four primary sections within the data prep report.
   > [!TIP]
   > The default view provides the most critical issues present in your data. To see all issues, organized by severity, turn off **Show critical issues**. To alter the view to show issues organized by other options, select **Group by** and make a selection. Available selections include severity, data quality pillar, and impacted insights.
 
-  In most cases, the issues and recommendations surfaced in the data prep report must be addressed by performing fixes on the source data outside of Customer Insights, using data clean up tools such as Power Query. The new and improved data must then be reingested, and unification must be completed again for the data quality to improve. The data prep report refresh is only triggered when unification is completed.
+  In most cases, the issues and recommendations surfaced in the data prep report must be addressed by performing fixes on the source data outside of Customer Insights - Data, using data clean up tools such as Power Query. The new and improved data must then be reingested, and unification must be completed again for the data quality to improve. The data prep report refresh is only triggered when unification is completed.
 
 ## Contextual information on your data
 
