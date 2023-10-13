@@ -16,6 +16,11 @@ search.audienceType:
 >
 > Microsoft doesn't provide support for this preview feature. Microsoft Dynamics 365 Technical Support won’t be able to help you with issues or questions. Preview features aren’t meant for production use, especially to process personal data or other data that are subject to legal or regulatory compliance requirements.
 
+>[!NOTE]
+> The Quiet times preview must be enabled using the developer tools in your web browser. To enable it open the developer tools, go to the Console, and execute the following command: getGlobalContextObject().saveSettingValue('msdynmkt_IsQuietTimeFeatureEnabled', true)
+>
+> Once that has been run, you need to hard refresh your browser. The quiet times preview will appear in the Settings of your Customer Insights - Journeys after that.
+
 # Quiet times background
 
 Quiet times enable you to configure specific times when messages won't send to customers to avoid contacting them when it's inappropriate. You may not want to send messages at specific times due to regulations, business policies, or other factors. Typically, quiet times are configured for overnight hours, weekends, or holidays. When quiet times are in place, the system holds the messages until the quiet times end.
