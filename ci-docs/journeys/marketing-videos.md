@@ -13,7 +13,7 @@ search.audienceType:
 
 # Video overviews and instructions for Dynamics 365 Customer Insights - Journeys
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -68,4 +68,4 @@ More information:
 
 You can always find the latest videos for all Dynamics 365 products by going to our [YouTube channel](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

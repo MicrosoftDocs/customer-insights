@@ -1,6 +1,6 @@
 ---
-title: Configure and authenticate social media accounts 
-description: Configure and authenticate each social media account where you'd like to author, schedule, and post updates in Dynamics 365 Customer Insights - Journeys.
+title: Configure and authenticate social media accounts in outbound marketing
+description: Configure and authenticate each social media account where you'd like to author, schedule, and post updates in the outbound marketing area of Dynamics 365 Customer Insights - Journeys.
 ms.date: 08/21/2023
 ms.topic: article
 author: alfergus
@@ -11,9 +11,12 @@ search.audienceType:
   - enduser
 ---
 
-# Configure and authenticate social media accounts
+# Configure and authenticate social media accounts in outbound marketing
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+
+> [!IMPORTANT]
+> This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
 
 Social posting enables Dynamics 365 Customer Insights - Journeys users to author, schedule, and publish posts to a variety of social media channels and accounts. You must configure and authenticate each channel and account that you'd like to make available for use with this feature. In the current version, you can configure accounts for Twitter, LinkedIn, and Facebook.
 
@@ -39,4 +42,4 @@ If your sign-in times out, or if the password changes on one of your accounts, y
 
 You can delete a social configuration at any time to prevent Customer Insights - Journeys from posting through that account from now on. Use the **Delete** button on the command bar to delete the currently shown or selected configuration.
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

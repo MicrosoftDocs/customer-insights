@@ -13,7 +13,7 @@ search.audienceType:
 
 # Generate iCalendar files for events and sessions
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 For many business people, software-based calendars are an essential organizational tool. When attendees register for an event, they want a way to track not only the date of the event, but what sessions they plan to attend.
 
@@ -58,4 +58,4 @@ Each event or session in the iCalendar file contains a configurable description.
 
 For streamed events, a check-in button is automatically added to the iCalendar file description if the calendar content is empty. You can remove the check-in button or add a new button with the link set to the following wildcard: `{{msevtmgt_checkin_url}}`. The wildcard is converted to a personalized check-in link for the streamed event when the contact downloads the iCalendar file.
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

@@ -17,9 +17,8 @@ After [your organization purchased a license for Dynamics 365 Customer Insights]
 
 After the first environment is created, the global administrator of the Microsoft 365 tenant can [add users from their organization as administrators](permissions.md). These administrators can then manage users and environments.
 
-<!--
 > [!IMPORTANT]
-> In most cases, creating an environment or installing Customer Insights - Data on an existing environment should be done with the [consolidated provisioning experience](tbd.md). -->
+> In most cases, creating an environment or installing Customer Insights - Data on an existing environment should be done through [Power Platform admin center](../journeys/setup.md). 
 
 Use the environments creation experience in Customer Insights - Data for the following scenarios:
 
@@ -45,9 +44,7 @@ To create a new Dataverse environment when installing Customer Insights - Data:
 
 ## Create an environment in Customer Insights - Data
 
-<!--
-We recommend to [use the consolidated environment manager for Customer Insights](tbd.md) to create new environment by default.
--->
+We recommend to [use the consolidated environment manager for Customer Insights](../journeys/setup.md) to create new environment by default.
 
 1. Open the environment picker and select **+ New**.
   
@@ -109,7 +106,7 @@ Review the following articles to help you get started:
 
 - [Add more users and assign permissions](permissions.md).
 - [Ingest several of your data sources](data-sources.md) and run them through the [data unification process](data-unification.md) to get [unified customer profiles](customer-profiles.md).
-- [Enrich the unified customer profiles](enrichment-hub.md) or [run predictive models](predictions.md).
+- [Enrich the unified customer profiles](enrichment-manage.md) or [run predictive models](predictions.md).
 - [Create segments](segments.md) to group customers and [measures](measures.md) to review KPIs.
 - [Set up connections](connections.md) and [exports](export-manage.md) to process subsets of your data in other applications.
 

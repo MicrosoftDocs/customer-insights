@@ -1,7 +1,7 @@
 ---
 title: Open the event management work area 
 description: Explains how to access event-management features in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/21/2023
+ms.date: 09/22/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -13,26 +13,18 @@ search.audienceType:
 
 # Open the event management work area
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 The event management features of Dynamics 365 Customer Insights - Journeys are collected into their own work area to make it easy to find all the relevant entities and settings while you are focusing on events.
 
 To find the event management work area:
 
-1. If you haven't already done so, sign in to Dynamics 365 as a user with [event-management privileges](admin-users-licenses-roles.md). Then use the app-selector menu to open the **Customer Insights - Journeys** app.
+1. If you haven't already done so, sign in to Dynamics 365 as a user with [event management privileges](admin-users-licenses-roles.md). Then use the app-selector menu to open the **Customer Insights - Journeys** app.
 
-    ![The app-selector menu.](media/nav-apps-ill2.png)
+1. Expand the work area menu at the bottom of the side navigator and select **Event planning**.
 
-1. Expand the work-area area menu at the bottom of the side navigator and select **Events**.
+1. You are now in the events work area and can navigate between event-related entities using the side navigator, just as with the core **Customer Insights - Journeys** work area.
 
-    ![Open the Events work area.](media/open-settings-menu-ill.png "Open the Events work area")
+1. If you have outbound marketing and the real-time journeys features of Customer Insights - Journeys installed and you've enabled the "event creation in real-time journeys" feature switch, there's a drop-down menu to the right of the **New Event** button where you can create an event inside the real-time journeys area of Customer Insights - Journeys. When outbound and the real-time journeys features of Customer Insights - Journeys are installed, you’ll see outbound and Customer Insights - Journeys events in the same events list.
 
-1. You are now in the Events work area, and can navigate between event-related entities using the side navigator, just as with the core **Customer Insights - Journeys** work area.
-
-    ![Open the work area menu.](media/events-nav.png "Open the work area menu")
-
-1. If you have outbound and Customer Insights - Journeys installed, there is a drop-down menu to the right of the **New Event** button where you can create an event inside Customer Insights - Journeys. When outbound and Customer Insights - Journeys are installed, you’ll see outbound and Customer Insights - Journeys events in the same events list.    
-
-For more information about how to get around in Customer Insights - Journeys and work with its common features, see [Find your way around Customer Insights - Journeys](navigation.md).
-
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

@@ -1,7 +1,7 @@
 ---
-title: Set up double opt-in on a per-form basis
-description: How to set up form double opt-in to let contacts confirm new subscriptions in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/18/2023
+title: Set up form double opt-in in outbound marketing
+description: How to set up form double opt-in to let contacts confirm new subscriptions in outbound marketing.
+ms.date: 09/20/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -11,9 +11,9 @@ search.audienceType:
   - enduser
 ---
 
-# Set up double opt-in on a per-form basis
+# Set up form double opt-in in outbound marketing
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -31,7 +31,7 @@ This article describes how to enable and use form double opt in.
 
 ## Create a subscription confirmation-request message
 
-1. Go to **Marketing execution** > **Marketing emails** to open the marketing email list view.
+1. Go to **Outbound marketing** > **Marketing execution** > **Marketing emails** to open the marketing email list view.
 
 2. Select **New** to create a new message.
 
@@ -93,4 +93,4 @@ More information: [Email marketing overview](prepare-marketing-emails.md), [Set 
 > [!NOTE]
 > The link in confirmation email remains valid for 30 days. After that period, end users will not be able to confirm opt-in. 
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

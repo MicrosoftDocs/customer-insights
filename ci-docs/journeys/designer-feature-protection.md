@@ -13,7 +13,7 @@ search.audienceType:
 
 # Control access to designer features
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > The designer is only available in Customer Insights - Journeys. It is not available in outbound marketing.
@@ -37,4 +37,4 @@ To control access to these designer features:
     - **Blocked features**: Use this lookup field to choose which features you want to hide from the specified user or team: HTML, Litmus, or both.
 1. Save your settings.
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

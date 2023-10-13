@@ -13,7 +13,7 @@ search.audienceType:
 
 # Edit and resubmit form submissions
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -90,4 +90,4 @@ To set this option for any specific marketing form:
 
 Your administrator can establish a site-wide default setting that for this option, which will apply to all newly created forms. More information: [Configure landing pages](mkt-settings-landing-pages.md)
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

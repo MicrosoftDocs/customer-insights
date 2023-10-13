@@ -15,7 +15,7 @@ search.audienceType:
 
 # Define the localization for the admin interface (optional)
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 Applicable channels: SMS, custom
 

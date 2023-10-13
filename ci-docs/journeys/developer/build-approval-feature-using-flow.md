@@ -11,7 +11,7 @@ search.audienceType:
 
 # Build approvals feature using Power Automate
 
-[!INCLUDE[consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -95,4 +95,4 @@ To set up an approval workflow in Power Automate:
 
 1. Select **Save** and then select **Flow Checker** to verify if there are any errors in the flow.
 
-[!INCLUDE[footer-include](.././includes/footer-banner.md)]
+[!INCLUDE [footer-include](.././includes/footer-banner.md)]

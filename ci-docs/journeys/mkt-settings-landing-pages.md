@@ -13,7 +13,7 @@ search.audienceType:
 
 # Landing page configuration
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 Use the **Settings**> **Email marketing** > **Landing pages** page to set up a privacy banner, set hosting defaults, and configure defaults for how data submitted through a landing page form is matched to existing contact or lead records.
 
@@ -60,4 +60,4 @@ Settings on the **Portal defaults** tab control how your marketing pages are hos
 - **Page language**: Sets the default language to use in the portal.
 - **Container page**: Sets the container page used for marketing pages.
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

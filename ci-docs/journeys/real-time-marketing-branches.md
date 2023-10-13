@@ -13,7 +13,7 @@ search.audienceType:
 
 # When to use attribute versus if/then branches
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 When creating a Customer Insights - Journeys, you'll need to make choices about what types of branching to use. But how do you decide when to use an attribute branch and when to use an if/then branch? Attribute and if/then branches both use simple yes/no logic that evaluates your users and then funnels them to one step or another based on the customers' behavior or profile attributes.
 
@@ -55,4 +55,4 @@ You can use an if/then branch to wait for a survey email open event. If you set 
 > [!div class="mx-imgBorder"]
 > ![Email survey if/then screenshot.](media/real-time-marketing-branches-if-then.png "Email survey if/then screenshot")
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

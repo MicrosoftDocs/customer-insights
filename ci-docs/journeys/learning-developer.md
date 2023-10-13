@@ -13,7 +13,7 @@ search.audienceType:
 
 # Dynamics 365 Customer Insights - Journeys developers learning catalog
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -38,4 +38,4 @@ The following catalog is organized from core knowledge to specific domains, and 
 |-------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------|-----------|
 | [Exam MB-400: Microsoft Power Apps + Dynamics 365 developer](/certifications/exams/mb-400) | Take this exam if you're a developer who works with Microsoft Power Apps model-driven apps in Dynamics 365 to design, develop, secure, and extend a Dynamics 365 implementation.  | Exam, cost varies by region |  |
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

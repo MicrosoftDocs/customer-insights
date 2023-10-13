@@ -1,5 +1,5 @@
 ---
-title: Target the right customers using the query assist copilot
+title: "Copilot: target the right customers using query assist"
 description: Target the right customers using the query assist copilot in Dynamics 365 Customer Insights - Journeys.
 ms.date: 08/23/2023
 ms.topic: article
@@ -11,9 +11,9 @@ search.audienceType:
   - enduser
 ---
 
-# Target the right customers using the query assist copilot
+# Copilot: target the right customers using query assist
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5csiL]
 
@@ -39,4 +39,4 @@ If you select a new search, you notice that by clicking the **Use** button, the 
 
 :::image type="content" source="media/real-time-marketing-use-canvas-built-by-copilot.png" alt-text="Fill in the attributes in the canvas built by copilot." lightbox="media/real-time-marketing-use-canvas-built-by-copilot.png":::
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

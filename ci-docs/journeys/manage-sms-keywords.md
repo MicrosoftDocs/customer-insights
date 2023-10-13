@@ -13,7 +13,7 @@ search.audienceType:
 
 # Manage SMS (text message) keywords used in customer journeys
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 The **SMS keywords** page includes all keywords that have been created and/or used in customer journeys. To access it, go to **Settings > Customer engagement > SMS keywords**.
 
@@ -37,4 +37,4 @@ To update a keyword:
 
 > ![SMS keywords page screenshot.](media/sms-keywords-page.png "SMS keywords page screenshot")
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

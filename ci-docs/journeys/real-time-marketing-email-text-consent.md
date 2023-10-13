@@ -11,9 +11,9 @@ search.audienceType:
   - enduser
 ---
 
-# Manage consent for email and text messages in Customer Insights - Journeys
+# Manage consent for email, SMS (text) and custom channel messages in Customer Insights - Journeys
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!NOTE]
 > Customer Insights - Journeys consent is contact-point based and works for messages sent to contacts, leads, and Customer Insights - Data profiles. Customer consent is stored per email address or phone number, as opposed to being stored per contact record. Outbound marketing consent processes that you have already defined are not influenced by the Customer Insights - Journeys settings.
@@ -36,18 +36,18 @@ When creating a new email message, you choose a **Compliance Profile**, a **Purp
 > [!div class="mx-imgBorder"]
 > ![Compliance profile and purpose screenshot.](media/real-time-marketing-email-compliance-settings.png " Compliance profile and purpose screenshot ")
 
-As required for commercial email, a **Company Address** placeholder and an **Unsubscribe** link are added to the email footer automatically. The company address reflects the value set on the **Compliance profile** page and can be edited directly from the email editor, if needed. The unsubscribe link leads to the preference center, where customers can review and change communication preferences.
+An email message is only sent if it passes the consent checks configured by the **Purpose** and (optional) **Topic**. The decision to send or block sending a message is done right before sending the message. This ensures that the app never mistakenly sends a message to someone who has opted out, even if they're mistakenly included in a journey segment. The enforcement rules for consent are governed by the **Enforcement model** setting on the purpose. If the purpose has a "Restrictive" enforcement model, the email is sent only if the email address has explicitly opted into receiving this message. If the purpose has a "Non-restrictive" enforcement model, the email is sent as long as the email address hasn't opted out. The "Disabled" enforcement model disables consent checks on the email address and lets all messages be delivered. The default "Commercial" purposes have a "Non-restrictive" enforcement model. The default "Transactional" purpose has a "Disabled" enforcement model. The enforcement models of the purposes can be changed in the compliance profile.
 
-The presence of a company address and unsubscribe link is checked when you select **Ready to send**. The app notifies you if one of these parameters is missing.
+As required for commercial email, a **Company Address** placeholder and an **Preference Center** placeholder link are added to the email footer automatically. The company address reflects the value set on the **Compliance profile** and can be edited directly from the email editor if needed. The **Preference center** link leads to the preference management page configured by the **Compliance Profile**, where customers can review and change communication preferences.
+
+The presence of a company address and unsubscribe link is checked when you select **Ready to send**. The app warns you if one of these parameters is missing if you're sending a message to a commercial consent purpose.
 
 > [!NOTE]
-> The app will display warnings if, for example, you accidentally delete either the default company address or link to the default preference page. However, it does not block you from sending such an email. Thus, you are able to replace the given company address field with another one of your choice or add a link to a custom preference center if you like.
+> The app will display warnings if, for example, you accidentally delete either the company address or link to the preference center. However, it does not block you from sending such an email. Thus, you are able to replace the given company address field with another one of your choice or add a link to a custom preference center if you like.
 
-If you want to send commercial email, the app checks whether the email addresses of the target audience have granted consent when the email is sent. In the restrictive model, messages only send to customers whose email addresses were opted in. By default, the transactional message purpose has a **Disabled** enforcement model, meaning that consent checks won't run against contact points. The enforcement model can be changed in the compliance profile itself.
+## How consent is respected for SMS (text) and custom channel messages
 
-## How consent is respected for text messages
-
-The Customer Insights - Journeys rules for sending text messages are slightly different than the rules for sending emails. A user must always opt in to consent to receive commercial text messages, irrespective of the consent enforcement model. Transactional text messages are always sent and don't have consent checked or enforced.
+The Customer Insights - Journeys rules for sending SMS and custom channel messages are slightly different than the rules for sending emails. A user must always opt in to consent to receive commercial SMS or commercial custom channel messages, irrespective of the consent enforcement model. Transactional SMS and custom channel messages are always sent and don't have consent checked or enforced.
 
 ## Consent to track user behavior
 
@@ -171,4 +171,4 @@ You can keep track of all consent-related changes on a per contact record basis 
 [Customer Insights - Journeys preference centers](real-time-marketing-preference-centers.md)
 [Outbound marketing compliance settings](privacy-use-features.md)
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

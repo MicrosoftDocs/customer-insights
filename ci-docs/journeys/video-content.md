@@ -13,7 +13,7 @@ search.audienceType:
 
 # Create a video library and add videos to your designs
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -55,4 +55,4 @@ To add a video from your video library to the design of a marketing email or mar
 3. Select the new video element. In the **Edit video** panel, select **Choose a video** to find and select the video from your library that you want to include here. Alternatively, you can insert a video from a URL. To improve accessibility, you can add an alt text description for the video.
 4. Continue working with your design and eventually go live when you are ready to start using it.
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

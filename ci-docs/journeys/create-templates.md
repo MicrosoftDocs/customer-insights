@@ -13,7 +13,7 @@ search.audienceType:
 
 # Create templates for emails, pages, forms, and journeys
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -36,4 +36,4 @@ Here are some notes and best practices for working with templates:
 - Journey templates can include default segments and suppression lists. For repetitive and similar marketing flows (like newsletters or product introductions), templates for proven customer journey structures help to get audiences, tagging, flow, and standard behaviors right.
 - Templates remain in Dynamics 365 Customer Insights - Journeys, so you don't need to go live with them.
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

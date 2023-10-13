@@ -78,7 +78,7 @@ If customer profiles are created for unknown and known users, the high value web
 
 :::image type="content" source="media/website-known-unknown.png" alt-text="Screenshot of the customer page with known and unknown customers.":::
 
-[Enrich](enrichment-hub.md) your data, build [measures](measures.md), and create [segments](segments.md) for further activation.
+[Enrich](enrichment-manage.md) your data, build [measures](measures.md), and create [segments](segments.md) for further activation.
 
 For example, you can create segments of known users that looked at some products but never completed the checkout.
 

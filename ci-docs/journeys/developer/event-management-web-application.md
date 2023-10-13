@@ -11,7 +11,9 @@ search.audienceType:
 
 # Event management web application overview
 
-[!INCLUDE[consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
+
+[!INCLUDE [azure-ad-to-microsoft-entra-id](../includes/azure-ad-to-microsoft-entra-id.md)]
 
 The event management feature helps you to organize, manage, and process the events. When you install the event management solution, you get an event portal that gives the users a web application where they can get to know more about the event details. More information: [Event Portal](/dynamics365/customer-engagement/marketing/set-up-event-portal).
 
@@ -110,8 +112,8 @@ Some of the parameters that you need to understand before you start configuring 
 |**useRestStack** | This setting specifies which API is used. If set to true, then the new event management public API is used. If set to false, then the deprecated event management Portal API is used. This API can only be used if you host the custom event website on Portals. To use the new event management public API, you need to register the web application.|
 |**emApplicationtoken**| This token authenticates your web application against the event management public API. You can retrieve the application token by registering a new web application in the Customer Insights - Journeys instance. This token isn't required if you're using the deprecated event management Portal API.
 |**isAuthenticationEnabled** | This flag specifies whether the user authentication is supported or not (that is, the user can register or sign in). If set to false, then the application doesn't display a way to sign in or register.|
-|**useAadB2C** | Specifies whether you want to use **Azure Active Directory B2C identity management** for authentication. If you want to use **Power Apps portals identity management**, this flag needs to be set to false. If AAD B2C is enabled, then you need to configure the `aadB2CConfig` variable.|
-|**aadB2CConfig** | Configuration object used by event management application when **AAD B2C identity management** is enabled. |
+|**useAadB2C** | Specifies whether you want to use **Microsoft Entra ID identity management** for authentication. If you want to use **Power Apps portals identity management**, this flag needs to be set to false. If Microsoft Entra ID is enabled, then you need to configure the `aadB2CConfig` variable.|
+|**aadB2CConfig** | Configuration object used by event management application when **Microsoft Entra ID identity management** is enabled. |
 |**useMockData** | This setting can be used to return mock objects instead of making real API calls.|
 |**dateSettings** | This setting can be used to configure how the dates will be formatted in the website. If `convertToLocalDate` flag is set to true, all dates are automatically converted to the end users local time. |
 |**languageSettings** | This setting can be used to configure how languages will be loaded in the website. If `forceSingleLanguage` flag is set to true, the website will be loaded in the language specified in `websiteLanguageLcid`. The `showLanguageDropdown` flag allows to show or hide the language dropdown. By default, language dropdown is visible and the website will use the end users browser language. |
@@ -130,4 +132,4 @@ To expose the new field to be visible in the API, follow the steps below:
 1. Select the entity that you want an extra field to be visible in the **Selected Entity** field.
 1. Write a JSON array that contains the new custom field that should be visible through the API in the **Selected fields**. This exposes the new custom field through the API, and you can utilize it in the frontend.
 
-[!INCLUDE[footer-include](.././includes/footer-banner.md)]
+[!INCLUDE [footer-include](.././includes/footer-banner.md)]

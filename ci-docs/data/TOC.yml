@@ -46,6 +46,8 @@
          href: connect-synapse.md
        - name: Connect to data in Microsoft Dataverse
          href: connect-dataverse.md
+       - name: Connect data stored in Delta Lake format from your Azure Data Lake Storage
+         href: connect-delta-lake.md
        - name: Add a data sources via Power Query connectors
          href: connect-power-query.md
     - name: Manage existing data sources
@@ -73,12 +75,18 @@
       href: data-unification.md
     - name: Select source fields
       href: data-unification-map-tables.md
-    - name: Remove duplicate records
+    - name: Remove duplicates in each table
       href: data-unification-duplicates.md
+    - name: Deduplication considerations
+      href: data-unification-duplicates-considerations.md
     - name: Match conditions
       href: data-unification-match-tables.md
     - name: Unify customer fields
       href: data-unification-merge-tables.md
+    - name: Review data unification
+      href: data-unification-review.md
+    - name: Update unification settings
+      href: data-unification-update.md  
     - name: Business unit data separation
       items: 
         - name: Business unit data separation overview
@@ -87,15 +95,13 @@
           href: access-business-units-dataverse.md
         - name: Customer Insights - Data business unit integrations
           href: business-unit-integration-dynamics365-power-platform.md
-    - name: Review data unification
-      href: data-unification-review.md
-    - name: Update unification settings
-      href: data-unification-update.md  
  
 - name: Enrichment
   items:
     - name: Data enrichment overview
       href: enrichment-hub.md
+    - name: Enrich unified data
+      href: enrichment-manage.md
     - name: Brands and interests
       href: enrichment-microsoft.md
     - name: Demographics with Experian
@@ -128,12 +134,18 @@
     - name: Manage unknown customer profiles
       href: manage-unknown-profiles.md
 
-- name: Copilot in Customer Insights
+- name: Copilot in Customer Insights - Data
   items:
+    - name: Give consent to use Copilot in Customer Insights - Data
+      href: copilot-global-consent.md
     - name: Dialog with data
       href: dialog-with-data.md
     - name: Data prep report overview
       href: data-prep-overview.md
+    - name: Environment status summary
+      href: system.md
+    - name: Segment creation
+      href: segments-copilot.md
 
 - name: Tables
   items:
@@ -246,6 +258,8 @@
           href: segment-builder-aspects.md
     - name: Create with quick segments
       href: segment-quick.md
+    - name: Create with Copilot
+      href: segments-copilot.md
     - name: Suggested segments
       items: 
         - name: Suggested segments overview
@@ -372,10 +386,12 @@
       href: responsible-ai-overview.md
     - name: FAQs for the data prep report
       href: faqs-data-prep.md
-    - name: FAQ for Environment status summary
+    - name: FAQs for environment status summary
       href: faqs-environment-status.md
     - name: FAQs for dialog with data
       href: faqs-dialog-data.md
+    - name: FAQs for segment creation
+      href: faqs-segment-creation.md
 
 - name: More resources
   items: 

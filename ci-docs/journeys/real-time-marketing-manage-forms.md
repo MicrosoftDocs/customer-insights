@@ -15,7 +15,7 @@ search.audienceType:
 
 # Manage Customer Insights - Journeys forms
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 This article explains how to edit, un-publish, and manage forms in Customer Insights - Journeys.
 
@@ -56,7 +56,7 @@ The Theme section can be opened by selecting brush icon in the right pane. Theme
 > [!div class="mx-imgBorder"]
 > ![Edit style of your input field using Theme.](media/real-time-marketing-form-theme.png)
 
-### Theme assistant
+### Copilot - forms theme assistant
 
 > [!IMPORTANT]
 > You must only use the theme assistant with websites that you own and operate. The theme assistant should not be used to copy third party websites.
@@ -120,7 +120,7 @@ Field types and formats are defined by the attribute metadata. It isn't possible
 
 A lookup field is linked to a particular entity type, enabling you to add a drop-down list of options that were created in advance to your form. For example, you could use a lookup field called "Currency" to show a drop-down list of all currencies in your form.
 
-After adding a lookup field, or if your lookup field isn't working, ensure that the service user used has permissions to configure the entities you're using with the lookup field. The Customer Insights - Journeys Services User Extensible Role used by the form editor needs to have read access to the entity used in lookup field. You also have to enable **Make lookup data publicly viewable** in the lookup properties. All values within the lookup are available to anyone that sees the form. Ensure that sensitive data isn't exposed to the public. More information: [Adding lookup fields](marketing-fields.md#adding-lookup-fields-and-troubleshooting).
+After adding a lookup field, or if your lookup field isn't working, ensure that the service user used has permissions to configure the entities you're using with the lookup field. The Marketing Services User Extensible role used by the form editor needs to have read access to the entity used in lookup field. You also have to enable **Make lookup data publicly viewable** in the lookup properties. All values within the lookup are available to anyone that sees the form. Ensure that sensitive data isn't exposed to the public. More information: [Adding lookup fields](marketing-fields.md#adding-lookup-fields-and-troubleshooting).
 
 ## Form validation
 
@@ -217,4 +217,4 @@ You can [integrate custom captcha](real-time-marketing-form-custom-captcha.md) b
 
 It's possible to build custom back-end form submission validation that prevents form submission processing. It shows an error message to the user who tried to submit the form. You can find the inspiration for this back-end validation in the article about [integrating custom captcha](real-time-marketing-form-custom-captcha.md), where the form makes back-end validation to evaluate the result of a captcha challenge.
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

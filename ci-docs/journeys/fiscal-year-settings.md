@@ -13,7 +13,7 @@ search.audienceType:
 
 # Manage fiscal year settings
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 A fiscal period defines the time reflected in financial reports. It is used for reporting financial data in each period.
 
@@ -29,4 +29,4 @@ A fiscal period defines the time reflected in financial reports. It is used for 
     - In the **Display As** drop-down list, select how you want the fiscal year abbreviation and the year to appear.
 1. Select **OK**.
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]
