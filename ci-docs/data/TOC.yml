@@ -46,6 +46,8 @@
          href: connect-synapse.md
        - name: Connect to data in Microsoft Dataverse
          href: connect-dataverse.md
+       - name: Connect data stored in Delta Lake format from your Azure Data Lake Storage
+         href: connect-delta-lake.md
        - name: Add a data sources via Power Query connectors
          href: connect-power-query.md
     - name: Manage existing data sources
@@ -98,6 +100,8 @@
   items:
     - name: Data enrichment overview
       href: enrichment-hub.md
+    - name: Enrich unified data
+      href: enrichment-manage.md
     - name: Brands and interests
       href: enrichment-microsoft.md
     - name: Demographics with Experian
@@ -130,8 +134,10 @@
     - name: Manage unknown customer profiles
       href: manage-unknown-profiles.md
 
-- name: Copilot in Customer Insights
+- name: Copilot in Customer Insights - Data
   items:
+    - name: Give consent to use Copilot in Customer Insights - Data
+      href: copilot-global-consent.md
     - name: Dialog with data
       href: dialog-with-data.md
     - name: Data prep report overview

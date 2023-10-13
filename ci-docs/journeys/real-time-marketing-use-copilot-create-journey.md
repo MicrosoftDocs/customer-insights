@@ -1,7 +1,7 @@
 ---
 title: "Copilot: create journeys using AI assistance"
 description: Enable the journey copilot to create marketing journeys using everyday language and provide feedback to improve results.
-ms.date: 08/15/2023
+ms.date: 10/04/2023
 ms.topic: get-started
 author: alfergus
 ms.author: alfergus
@@ -18,6 +18,8 @@ ms.custom:
 # Copilot: create journeys using AI assistance
 
 [!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+
+> [!VIDEO cb3e60fb-df67-46b2-b053-10eb0db5e048]
 
 With the journey copilot, anyone can now use every day conversational language to create marketing journeys without requiring deep knowledge about the product. You can even improve the copilot by giving feedback, helping you achieve more detailed results in the future.
 

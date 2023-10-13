@@ -1,6 +1,6 @@
 ---
-title: LinkedIn Lead Gen integration
-description: How to use the connector to LinkedIn Lead Gen Forms, which imports leads from LinkedIn to Dynamics 365 Customer Insights - Journeys.
+title: LinkedIn Lead Gen integration in outbound marketing
+description: How to use the connector to LinkedIn Lead Gen Forms, which imports leads from LinkedIn to the outbound marketing area of Dynamics 365 Customer Insights - Journeys.
 ms.date: 08/21/2023
 ms.topic: article
 author: alfergus
@@ -11,7 +11,7 @@ search.audienceType:
   - enduser
 ---
 
-# LinkedIn Lead Gen integration
+# LinkedIn Lead Gen integration in outbound marketing
 
 [!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 

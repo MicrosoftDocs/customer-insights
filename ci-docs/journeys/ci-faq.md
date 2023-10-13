@@ -64,7 +64,7 @@ This FAQ answers questions about the new Customer Insights combined product offe
 
 1. **Can customers have access to both outbound and real-time marketing with the new Customer Insights offer?**
 
-    New customers will only be able to access the real-time marketing module. Current outbound customers provisioning new environments will also get the real-time module only by default, but can add outbound using a self-serve UX.  Learn more about the real-time marketing only module: [Real-time marketing transition FAQ](real-time-marketing-transition.md)
+    New customers will only be able to access the real-time marketing module. Current outbound customers provisioning new environments will also get the real-time module only by default, but can add outbound using a self-serve UX.  Learn more about the real-time marketing only module: [Real-time marketing transition FAQ](transition-faqs.md)
 
 1. **Why is there a shift from outbound marketing to a real-time marketing-only experience?**
  

@@ -1,7 +1,7 @@
 ---
 title: "Predict subscription churn (contains video)"
 description: "Predict whether a customer is at risk for no longer using your company’s subscription products or services."
-ms.date: 09/07/2023
+ms.date: 10/03/2023
 ms.reviewer: mhart
 ms.topic: how-to
 author: joytaylor
@@ -15,9 +15,11 @@ ms.custom: bap-template
 
 Predict whether a customer is at risk for no longer using your company’s subscription products or services. Subscription data includes active and inactive subscriptions for each customer so there are multiple entries per customer ID.
 
-You must have business knowledge to understand what churn means for your business. We support time-based churn definitions, meaning a customer is considered to have churned a period of time after their subscription has ended.
+You must have business knowledge to understand what churn means for your business. For instance, a business with annual events can define their churn measured in years, while a business that caters to weekly sales may measure churn in months. We support time-based churn definitions, meaning a customer is considered to have churned a period of time after their subscription has ended.
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWOKNQ]
+
+For example, Contoso offers a monthly coffee service. They want to know which customers might be questioning service renewal so they can offer a discount. Through the subscription churn model, Contoso can see which customers might not renew the service next year and how large that population might be.  
 
 > [!TIP]
 > Try the subscription churn prediction using sample data: [Subscription churn prediction sample guide](sample-guide-predict-subscription-churn.md).
@@ -68,9 +70,9 @@ Select **Save draft** at any time to save the prediction as a draft. The draft p
 
 1. Select **Add data** for **Subscription history**.
 
-1. Select the semantic activity type **Subscription** that contains the required subscription history information. If the activity has not been set up, select **here** and create it.
+1. Select the semantic activity type **Subscription** that contains the required subscription history information. If the activity hasn't been set up, select **here** and create it.
 
-1. Under **Activities**, if the activity attributes were semantically mapped when the activity was created, choose the specific attributes or table you'd like the calculation to focus on. If semantic mapping did not occur, select **Edit** and map your data.
+1. Under **Activities**, if the activity attributes were semantically mapped when the activity was created, choose the specific attributes or table you'd like the calculation to focus on. If semantic mapping didn't occur, select **Edit** and map your data.
   
    :::image type="content" source="media/subscription-churn-required.png" alt-text="Add required data for Subscription churn model":::
 
@@ -80,9 +82,9 @@ Select **Save draft** at any time to save the prediction as a draft. The draft p
 
 1. Select **Add data** for **Customer activities**.
 
-1. Select the semantic activity type that provides the customer activity information. If the activity has not been set up, select **here** and create it.
+1. Select the semantic activity type that provides the customer activity information. If the activity hasn't been set up, select **here** and create it.
 
-1. Under **Activities**, if the activity attributes were semantically mapped when the activity was created, choose the specific attributes or table you'd like the calculation to focus on. If semantic mapping did not occur, select **Edit** and map your data.
+1. Under **Activities**, if the activity attributes were semantically mapped when the activity was created, choose the specific attributes or table you'd like the calculation to focus on. If semantic mapping didn't occur, select **Edit** and map your data.
 
 1. Select **Next** and review the attributes required for this model.
 
@@ -102,7 +104,7 @@ The **Review and run** step shows a summary of the configuration and provides a 
 
 1. Select **Edit** on any of the steps to review and make any changes.
 
-1. If you are satisfied with your selections, select **Save and run** to start running the model. Select **Done**. The **My predictions** tab displays while the prediction is being created. The process may take several hours to complete depending on the amount of data used in the prediction.
+1. If you're satisfied with your selections, select **Save and run** to start running the model. Select **Done**. The **My predictions** tab displays while the prediction is being created. The process may take several hours to complete depending on the amount of data used in the prediction.
 
 [!INCLUDE [progress-details](includes/progress-details-pane.md)]
 
