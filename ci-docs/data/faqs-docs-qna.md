@@ -34,7 +34,7 @@ More evaluation was performed over custom datasets for offensive and malicious p
 ## What are the limitations of docs-based Q&A skill? How can users minimize the impact of the capabilities' limitations when using the system?
 
 - The capability currently only supports English. Inaccurate responses may be returned when users converse with the system in languages other than English.
-- The capability can only answer questions that are covered in [this product's public documentation](overview.md) and [troubleshooting pages](https://learn.microsoft.com/troubleshoot/dynamics-365/customer-insights/).
+- The capability can only answer questions that are covered in [this product's public documentation](overview.md) and [troubleshooting pages](/troubleshoot/dynamics-365/customer-insights/).
 - This capability can't access your data tables to answer questions about it. You can use the following capability for such questions: [Have a dialog with data using Copilot](dialog-with-data.md).
 - The capability doesn't answer questions about the [roadmap of our product](https://releaseplans.microsoft.com/).
 
