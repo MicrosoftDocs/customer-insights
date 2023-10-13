@@ -237,8 +237,6 @@
       items: 
         - name: Customer Card Add-in for Dynamics 365
           href: customer-card-add-in.md
-        - name: Microsoft Teams (bot)
-          href: export-teams-bot.md
         - name: Power Apps
           href: export-power-apps.md
         - name: Power Automate
