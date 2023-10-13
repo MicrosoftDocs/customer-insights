@@ -26,7 +26,7 @@ This document discusses some of the key elements for managing Customer Insights 
 
 ## Licensing model
 
-Customer Insights - Journeys has a different licensing model than other Dynamics 365 applications. You can find more details about the Customer Insights - Journeys licensing model in [How to purchase](purchase.md) and [Customer Insights - Journeys contacts purchase](license-setup.md#how-is-customer-insights---journeys-licensed-), as well as in the [Dynamics 365 licensing guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409). Some important aspects of Customer Insights - Journeys’s licensing model are:
+Customer Insights - Journeys has a different licensing model than other Dynamics 365 applications. You can find more details about the Customer Insights - Journeys licensing model in [How to purchase](purchase.md) and [Customer Insights - Journeys contacts purchase](license-setup.md#how-is-customer-insights---journeys-licensed), as well as in the [Dynamics 365 licensing guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409). Some important aspects of Customer Insights - Journeys’s licensing model are:
 
 - You don't purchase user licenses of Customer Insights - Journeys. You purchase the Customer Insights - Journeys app and bundles of marketing contacts.
 - One Customer Insights - Journeys app license permits deployment on only one Dynamics 365 environment. The environment could be a sandbox or production. Deploying on multiple Dynamics 365 environments requires multiple Customer Insights - Journeys app licenses.
