@@ -1,5 +1,5 @@
 ---
-title: Get answers to questions about capabilities from Copilot
+title: Get answers to questions about capabilities from Copilot (preview)
 description: Learn how to use Copilot across Customer Insights - Data.
 ms.date: 10/04/2023
 ms.reviewer: mhart
@@ -9,7 +9,7 @@ ms.author: nikeller
 ms.custom: bap-template
 ---
 
-# Get answers to questions about capabilities from Copilot
+# Get answers to questions about capabilities from Copilot (preview)
 
 [!INCLUDE [public-preview-banner](./includes/public-preview-banner.md)]
 

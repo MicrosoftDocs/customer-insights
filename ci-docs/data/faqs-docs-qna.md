@@ -24,7 +24,7 @@ This Copilot capability is to answer user's question by using the ["Generative A
 
 ## What is the intended use of the docs-based Q&A skill?
 
-While working in the Customer Insights - Data app, users can ask questions in writing about the user experience or capabilities. Any input by the user is treated as a question towards our product’s public documentation. The user is expected to review the answer given using the referenced sources.
+Users working in the Customer Insights - Data app can ask questions in writing about the user experience or capabilities. Any input by the user is treated as a question towards our product’s public documentation. The user is expected to review the answer given using the referenced sources.
 
 ## How was docs-based Q&A skill evaluated? What metrics are used to measure performance?
 
@@ -35,15 +35,20 @@ More evaluation was performed over custom datasets for offensive and malicious p
 
 - The capability currently only supports English. Inaccurate responses may be returned when users converse with the system in languages other than English.
 - The capability can only answer questions that are covered in [this product's public documentation](overview.md) and [troubleshooting pages](https://learn.microsoft.com/troubleshoot/dynamics-365/customer-insights/).
-- This capability cannot access your data tables to answer questions about it. You can use the following capability for such questions: [Have a dialog with data using Copilot](dialog-with-data.md).
+- This capability can't access your data tables to answer questions about it. You can use the following capability for such questions: [Have a dialog with data using Copilot](dialog-with-data.md).
 - The capability doesn't answer questions about the [roadmap of our product](https://releaseplans.microsoft.com/).
+
+## What are the supported geographies and languages?
+ 
+The feature is available in the United States and supports English only.
 
 ## What operational factors and settings allow for effective and responsible use of the feature?
 
 This capability doesn't need setting up by users. It's offered as a base plugin of our Copilot. Administrators in Customer Insights - Data can choose to disable all Copilot functionality for each solution, by using the [consent experience](copilot-global-consent.md).
 
-## See also
+## Next steps
 
 - [Get answers to questions about capabilities from Copilot](help-pane-copilot.md)
+- [Responsible AI FAQs for Dynamics 365 Customer Insights - Data](responsible-ai-overview.md)
 
 [!INCLUDE[footer-include](./includes/footer-banner.md)]
