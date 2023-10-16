@@ -1,7 +1,7 @@
 ---
 title: Customer Insights license guidance
 description: Learn about licensing information in Dynamics 365 Customer Insights.
-ms.date: 10/13/2023
+ms.date: 10/16/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -30,8 +30,8 @@ This article covers important key points about Customer Insights licensing and p
 -	As of September 2023, application installation licenses are counted at the tenant level. Prior to this change, with the Dynamics 365 Marketing standalone license and installation model, each license was tightly bound to an environment to enforce the use of one license per environment. As of September 2023, this tight binding has been removed to accommodate both the old Dynamics 365 Marketing standalone license model and the new Dynamics 365 Customer Insights license model. Licenses are counted at the tenant level and displayed in the installation quota at the top of the installation management page. Also with this change, listings of the licenses in the **Power Platform Admin Center** under **Resources** > **Dynamics 365 Apps** are only a means to open the installation management page and will always show as non-configured.
 -	If you're a subscriber of the standalone Marketing or Customer Insights offers prior to September 2023 and want to renew on those offers instead of taking advantage of the new, combined Customer Insights offer, you can work with your seller or partner to renew on the legacy, standalone offers.
 -	The two license models are not related. You can either be on the old, standalone model and receive the old, standalone entitlements or be on the new Dynamics 365 Customer Insights model and receive those entitlements. There is no grandfathering of new entitlement definitions for subscribers of the old, standalone model. The pricing and entitlement models are independent and cannot be combined. 
--	You can buy the add-ons for each model independently. If you are on the old model you buy the old add-ons and new model, new add-ons. 
--	When switching to the new business model and new entitlements, do not reinstall the applications. While the entitlement definition has changed in the new model, the applications for journeys and data are the same, therefore you should not uninstall or reinstall applications.
+-	You can buy the add-ons for each model independently. If you are on the old model, you buy the old add-ons. If you are on the new model, you buy the new add-ons. 
+-	When switching to the new business model and new entitlements, do not reinstall the applications. While the entitlement definition has changed in the new model, the applications for Customer Insights - Journeys and Customer Insights - Data are the same, therefore you should not uninstall or reinstall applications.
 
 ## Licensing FAQs
 
