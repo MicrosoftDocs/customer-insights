@@ -1,7 +1,7 @@
 ---
 title: "Connect data stored in Delta Lake format from your Azure Data Lake Storage"
 description: "Work with data stored in Delta Lake format from Azure Data Lake Storage."
-ms.date: 10/02/2023
+ms.date: 10/12/2023
 ms.topic: how-to
 author: mukeshpo
 ms.author: mukeshpo
@@ -24,11 +24,13 @@ Key reasons to connect to data stored in Delta format:
 - Have direct integration with stored data without the need for intermediate staging data copies in other formats or more transforms
 - Minimize the time to prepare data for unification and insights
 
+For example, Contoso Coffee has millions of records coming in on a daily basis. Currently, they do full refreshes of their data every 6 hours. This full refresh takes lots of time to reprocess everything when the majority of data has already been processed. By using the Delta format, Contoso is able to greatly reduce their processing time by only processing the new records, leading to even faster insights from Customer Insights – Data.
+
 [!INCLUDE [public-preview-banner](./includes/public-preview-note.md)]
 
 ## Prerequisites
 
-- The Azure Data Lake Storage you want to connect and ingest data from has to be in the same tenant and Azure region as the Dynamics 365 Customer Insights - Data environment.
+- The Azure Data Lake Storage must be in the same tenant and Azure region as Customer Insights - Data.
 
 - The Customer Insights - Data service principal must have Storage Blob Data Contributor permissions to access the storage account. For more information, see [Grant permissions to the service principal to access the storage account](connect-service-principal.md#grant-permissions-to-the-service-principal-to-access-the-storage-account).
 
@@ -78,3 +80,17 @@ Key reasons to connect to data stored in Delta format:
    [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
 
 Loading data can take time. After a successful refresh, the ingested data can be reviewed from the [**Tables**](tables.md) page.
+
+## Schema changes
+
+When a column is added or removed from the shema of a data source, the system runs a complete refresh of the data. Full refreshes have more data and takes longer than incremental refreshes.
+
+When a column is added to the data source, the information automatically appends to the data in Customer Insights - Data once a refresh occurs.
+
+When a column is removed from a data source, the system checks for dependencies in other processes. If there is a dependency in the application, the system stops processing so that these dependencies can be removed. These dependencies display in a notification to help you locate and remove them.
+
+## Next steps
+
+- [Data unification overview](data-unification.md)
+
+[!INCLUDE [footer-include](includes/footer-banner.md)]
