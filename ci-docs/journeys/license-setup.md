@@ -31,6 +31,7 @@ This article covers important key points about Customer Insights licensing and p
 -	If you're a subscriber of the standalone Marketing or Customer Insights offers prior to September 2023 and want to renew on those offers instead of taking advantage of the new, combined Customer Insights offer, you can work with your seller or partner to renew on the legacy, standalone offers.
 -	The two license models are not related. You can either be on the old, standalone model and receive the old, standalone entitlements or be on the new Dynamics 365 Customer Insights model and receive those entitlements. There is no grandfathering of new entitlement definitions for subscribers of the old, standalone model. The pricing and entitlement models are independent and cannot be combined. 
 -	You can buy the add-ons for each model independently. If you are on the old model you buy the old add-ons and new model, new add-ons. 
+-	When switching to the new business model and new entitlements, do not reinstall the applications. While the entitlement definition has changed in the new model, the applications for journeys and data are the same, therefore you should not uninstall or reinstall applications.
 
 ## Licensing FAQs
 
