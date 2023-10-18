@@ -1,7 +1,7 @@
 ---
-title: "Manage environments"
+title: Manage environments
 description: Learn how to to manage environments as an admin.
-ms.date: 09/01/2023
+ms.date: 10/18/2023
 ms.topic: how-to
 ms.reviewer: mhart
 author: kishorem-ms
@@ -90,23 +90,26 @@ To claim ownership, select the **Take ownership** button that shows at the top o
 
 We recommend having at least one other user with admin permissions in addition to the owner to enable smooth ownership transfer if the owner leaves the organization.
 
-## Reset an existing environment (preview)
+## Reset an existing environment
 
-[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
+As the owner of an environment, reset an environment to an empty state for a fresh start. Depending on the reason for resetting, consider backing up your environment and your data to avoid data loss. Essentially, it's a quick way to [uninstall and install Customer Insights - Data](../journeys/setup.md) from the user interface.
 
-As the owner of an environment, reset an environment to an empty state if you want to delete all configurations and remove the ingested data.
+> [!CAUTION]
+> When you reset Customer Insights - Data environment, several things happen:
+>
+> 1. The system deletes all your configurations for data sources, unification rules, segments, etc. Except your Azure Data Lake Storage Gen 2 connection (if configured). However, after the reset, you need to enable data sharing again.
+> 1. Data associated to Customer Insights - Data and stored in the Dataverse environment is removed.
+> 1. Data stored outside the Dataverse environment, such as your source data or data in your own Data Lake is not removed.
 
-[!INCLUDE [public-preview-note](includes/public-preview-note.md)]
+The reset operation assigns a new instance ID to your environment. Therefore, update bookmarks for your Customer Insights - Data environment.
 
 1. Select the **Environment** picker in the header of the app.
 
 1. Select the environment you want to reset and select the vertical ellipsis (&vellip;).
 
-1. Choose **Reset (preview)**.
+1. Choose **Reset**.
 
    :::image type="content" source="media/reset-environment.png" alt-text="Control to reset an environment.":::
-
-1. Choose whether you want to reset the entire environment, everything except the data sources, or anything that is configured on top of the unified customer profile.
 
 1. To confirm, enter the environment name and select **Reset**.
 
