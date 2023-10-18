@@ -94,12 +94,11 @@ We recommend having at least one other user with admin permissions in addition t
 
 As the owner of an environment, reset an environment to an empty state for a fresh start. Depending on the reason for resetting, consider backing up your environment and your data to avoid data loss. Essentially, it's a quick way to [uninstall and install Customer Insights - Data](../journeys/setup.md) from the user interface.
 
-> [!CAUTION]
-> When you reset Customer Insights - Data environment, several things happen:
->
-> 1. The system deletes all your configurations for data sources, unification rules, segments, etc. Except [your Azure Data Lake Storage Gen 2 connection](own-data-lake-storage.md) (if configured). However, after the reset, you need to [enable data sharing](own-data-lake-storage.md#enable-data-sharing-with-dataverse-from-your-own-azure-data-lake-storage-preview) again.
-> 1. Data associated to Customer Insights - Data and stored in the Dataverse environment is removed.
-> 1. Data stored outside the Dataverse environment, such as your source data or data in your [own Data Lake](own-data-lake-storage.md) is not removed.
+When you reset Customer Insights - Data environment, several things happen:
+
+- The system deletes all your configurations for data sources, unification rules, segments, etc. Except [your Azure Data Lake Storage Gen 2 connection](own-data-lake-storage.md) (if configured). However, after the reset, you need to [enable data sharing](own-data-lake-storage.md#enable-data-sharing-with-dataverse-from-your-own-azure-data-lake-storage-preview) again.
+- Data associated to Customer Insights - Data and stored in the Dataverse environment is removed.
+- Data stored outside the Dataverse environment, such as your source data or data in your [own Data Lake](own-data-lake-storage.md) is not removed.
 
 The reset operation assigns a new instance ID to your environment. Therefore, update bookmarks for your Customer Insights - Data environment.
 
