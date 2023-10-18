@@ -109,8 +109,6 @@ The reset operation assigns a new instance ID to your environment. Therefore, up
 
 1. Choose **Reset**.
 
-   :::image type="content" source="media/reset-environment.png" alt-text="Control to reset an environment.":::
-
 1. To confirm, enter the environment name and select **Reset**.
 
 ## Delete an existing environment
@@ -127,8 +125,6 @@ We recommend to [use the **Uninstall** option Power Platform admin center](../jo
 1. Select the environment you want to delete and select the vertical ellipsis (&vellip;).
 
 1. Choose **Delete**.
-
-   :::image type="content" source="media/delete-environment.png" alt-text="Control to delete the environment.":::
 
 1. To confirm the deletion, enter the environment name and select **Delete**.
 
