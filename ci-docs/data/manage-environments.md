@@ -13,7 +13,7 @@ ms.custom: bap-template
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
-Administrators [create](create-environment.md) and manage environments. They can change some settings in existing environments. Region, storage option, and Dataverse settings are fixed after creating the environment. If you want to change these settings, [reset the environment](#reset-an-existing-environment-preview) or [create a new environment](create-environment.md).
+Administrators [create](create-environment.md) and manage environments. They can change some settings in existing environments. Region, storage option, and Dataverse settings are fixed after creating the environment. If you want to change these settings, [reset the environment](#reset-an-existing-environment) or [create a new environment](create-environment.md).
 
 ## Edit an existing environment
 
