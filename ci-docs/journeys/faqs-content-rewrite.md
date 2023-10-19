@@ -64,4 +64,4 @@ Content rewrite generates original content, but it isn’t always factual. In ad
 Follow these procedures to make the most of the content rewrite feature:
 1. Ensure at least 10 words in your initial text.
 1. Ensure high-quality of your initial text.
-1. Always review and edit content ideas suggestions before publishing them in an email or marketing campaign.
+1. Always review and edit content rewrite suggestions before publishing them in a marketing campaign.
