@@ -18,8 +18,8 @@ Store data from your Dynamics 365 Customer Insights - Data in a Blob storage or 
 
 ## Prerequisites
 - An [Azure Blob Storage account with a container](/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container).
-- User who sets up the connection must have the permission to access the content of the container. A role like [Blob Storage Contributor](/azure/role-based-access-control/built-in-roles#storage-blob-data-contributor) would suffice.
-- The [Customer Insights Service Principal](connect-service-principal.md) has write permissions on the container. A role like [Blob Storage Contributor](/azure/role-based-access-control/built-in-roles#storage-blob-data-contributor) would suffice.
+- User who sets up the connection must have the permission to access the content of the container. For example, a [Blob Storage Contributor](/azure/role-based-access-control/built-in-roles#storage-blob-data-contributor) role.
+- The [Customer Insights Service Principal](connect-service-principal.md) has write permissions on the container. For example, a [Blob Storage Contributor](/azure/role-based-access-control/built-in-roles#storage-blob-data-contributor) role.
 
 ## Known limitations
 
