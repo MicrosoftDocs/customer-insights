@@ -31,6 +31,8 @@ Which base license you choose depends on whether you already have a qualifying D
 
 Once you have a base license, you can purchase add-ons to increase the number of allowed interacted people you are actively engaging or unified people you are unifying and enriching. Learn more: [Dynamics 365 Customer Insights pricing](https://dynamics.microsoft.com/ai/customer-insights/pricing/)
 
+Be sure to check on the application data center geo availability in case you require the application to run in a specific data center region. See the [geo availabilty map](https://dynamics.microsoft.com/availability-reports/georeport/) to check availability. 
+
 ### Customer Insights licensing options
 
 > [!IMPORTANT]
