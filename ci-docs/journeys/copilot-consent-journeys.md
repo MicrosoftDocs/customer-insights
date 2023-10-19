@@ -31,7 +31,7 @@ There are three levels of consent to use generative AI Copilot features in Custo
 > [!div class="mx-imgBorder"]
 > ![Enable/Disable copilot functionality](media/copilot-consent-options.png "Enable/Disable copilot functionality")
 
-1. Enable or disable consent.
-1. Select **Save**.
+2. Enable or disable consent.
+3. Select **Save**.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
