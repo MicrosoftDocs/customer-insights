@@ -16,7 +16,7 @@ search.audienceType:
 [!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 There are three levels of consent to use generative AI Copilot features in Customer Insights - Journeys. Consent is global for all users and all Copilot features in Customer Insights - Journeys.
-- **Global Opt-in consent**: **On** indicates you agree to enable all Copilot and/or Bing Search-powered features and acknowledge that AI-generated content should be reviewed before use. [Read supplemental GA terms](https://dynamics.microsoft.com/en-us/legaldocs/supp-azure-openai-features) and [preview terms](https://dynamics.microsoft.com/en-us/legaldocs/supp-dynamics365-preview). Default is **On**.
+- **Global Opt-in consent**: **On** indicates you agree to enable all Copilot and/or Bing Search-powered features and acknowledge that AI-generated content should be reviewed before use. Default is **On**.
 - **Global cross-geography data flow consent**: On indicates you agree that data may be stored and processed outside of your geographic region, compliance boundary, or national cloud instance. If you're in a region where Azure OpenAI is deployed such as the United States and Switzerland, this field doesn't display (the default is **On** and can't be changed). Default is **Off** for all other regions where Azure OpenAI isn't deployed.
 - **Global data sharing consent**: **On** indicates you agree to allow Microsoft to capture and review inputs, and outputs from Copilot features to improve Microsoft's models, features, and services. Default is **Off**.
 
