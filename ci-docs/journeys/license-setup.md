@@ -19,6 +19,7 @@ This article covers important key points about Customer Insights licensing and p
 
 -	You can install the **Customer Insights - Journeys** app up to four times on any of your Dataverse environments.
 -	You can install the **Customer Insights - Data** app up to four times on any of your Dataverse environments.
+-	If you need to install either application more than 4 times you can buy an additional instance of the base license to get 4 more application installation entitlements per app.
 - The base Customer Insights license entitles you to:
     - 10,000 interacted people at the tenant level for use with the Customer Insights - Journeys app to engage contacts, leads, profiles, accounts and other Dataverse entities.
     - 100,000 unified people at the tenant level for use with the Customer Insights - Data app to unify, enrich, and know the customer.
