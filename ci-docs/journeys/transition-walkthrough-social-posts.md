@@ -1,7 +1,7 @@
 ---
-title: Social posts discontinued
-description: A note about social posts being discontinued in the real-time journeys are of Dynamics 365 Customer Insights - Journeys.
-ms.date: 10/04/2023
+title: Social posts
+description: A note about social posts in the real-time journeys area of Dynamics 365 Customer Insights - Journeys.
+ms.date: 10/13/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -11,7 +11,7 @@ search.audienceType:
   - enduser
 ---
 
-# Social posts discontinued
+# Social posts
 
 [!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
