@@ -138,11 +138,11 @@
         href: real-time-marketing-email.md
       - name: Design your email and content
         items:
-        - name: "Preview: Copilot: use AI to kickstart email creation"
+        - name: Copilot - Use AI to kickstart email creation
           href: content-ideas.md
         - name: Create a new email and design its content
           href: email-design.md
-        - name: "Copilot: style your emails with AI-assisted themes"
+        - name: "Preview: Copilot - Style your emails with AI-assisted themes"
           href: email-theme.md
         - name: Generate iCalendar files for events and sessions
           href: add-to-calendar.md
@@ -184,7 +184,7 @@
       href: real-time-marketing-channel-optimization.md
   - name: Journeys
     items:
-    - name: "Copilot: create journeys using AI assistance"
+    - name: "Preview: Copilot - Create journeys using AI assistance"
       href: real-time-marketing-use-copilot-create-journey.md
     - name: Trigger-based journeys
       items:
@@ -208,7 +208,7 @@
         href: real-time-marketing-segments.md
       - name: Build segments in Customer Insights - Journeys
         href: real-time-marketing-build-segments.md
-      - name: "Copilot: target the right customers using query assist"
+      - name: Copilot - Target the right customers using query assist
         href: real-time-marketing-natural-language-segments.md
       - name: Use Customer Insights - Data profiles and segments
         href: real-time-marketing-ci-profile.md
@@ -484,8 +484,6 @@
         href: improve-deliverability-to-china.md
       - name: Google Postmaster Tools - What it is and how it can help you
         href: google-postmaster.md
-      - name: Troubleshoot email forwarding and replies
-        href: email-troubleshooting.md
     - name: Improve sending reputation
       items:
       - name: Email policies and suspension standards
@@ -561,7 +559,7 @@
 - name: Troubleshoot
   items:
   - name: Customer Insights - Journeys troubleshooting
-    href: /troubleshoot/dynamics-365/marketing/welcome-marketing
+    href: /troubleshoot/dynamics-365/customer-insights/welcome-customer-insights
 - name: Outbound marketing
   items:
   - name: Outbound marketing user guide overview
