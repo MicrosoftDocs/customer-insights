@@ -1,7 +1,7 @@
 ---
 title: Create outbound text messages 
 description: Learn how to create outbound text messages for Dynamics 365 Customer Insights - Journeys
-ms.date: 09/20/2023
+ms.date: 10/23/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -50,18 +50,17 @@ Toll-free numbers are a good option for transactional A2P messaging, which means
 
 ## Add a sender number from an active Azure Communication Services subscription (worldwide)
 
-You can purchase or reuse an existing Azure Communication Services subscription to send text messages in Customer Insights - Journeys. **The integration works for all countries** in which a phone number can be purchased. **Customer Insights - Journeys also supports Alphanumeric Sender IDs**.
+You can purchase or reuse an existing Azure Communication Services subscription to send text messages in Customer Insights - Journeys. The integration works for all countries in which a phone number can be purchased. Customer Insights - Journeys also supports Alphanumeric Sender IDs.
 
 ### Sign up for and configure an Azure Communication Services subscription
 
-Azure Communication Services (ACS) integration uses their API to send and receive text messages. You need to sign up for an Azure Communication Services account to enable the Customer Insights - Journeys SMS integration. To create an Azure Communication Services account:
+Azure Communication Services (ACS) integration uses its API to send and receive text messages. You need to sign up for an Azure Communication Services account to enable the Customer Insights - Journeys SMS integration. To create an Azure Communication Services account:
 
-1. Go to [Azure](https://azure.microsoft.com/en-us/free/?WT.mc_id=A261C142F) and sign up for a Pay as you go account.
-1. [Create a Communication Services resource](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/create-communication-resource?tabs=windows&pivots=platform-azp) and get a [Toll-free number](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/telephony/get-phone-number?tabs=windows&pivots=platform-azcli), a [Short Code](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/sms/apply-for-short-code), or an [Alphanumeric Sender ID](https://learn.microsoft.com/en-us/azure/communication-services/quickstarts/sms/enable-alphanumeric-sender-id).
-1. Go to your [Azure account homepage](https://ms.portal.azure.com/#home) and navigate to your resource through **Subscriptions > Resource groups > Resource name**.
-1. Go to **Keys** under Settings and jot down the Primary and Secondary Connection String values. These values are required to create the integration between Customer Insights - Journeys and Azure Communication Services.
-1. Under Telephony & SMS, go to **Phone Numbers** to find the **toll-free number** you want to use as a sender. Go to **Alphanumeric Sender ID** and to **Short Codes** for the respective types of numbers.
-
+1. Go to [Azure](https://azure.microsoft.com/en-us/free/?WT.mc_id=A261C142F) and sign up for a "Pay as you go" account.
+1. [Create a Communication Services resource](/azure/communication-services/quickstarts/create-communication-resource?tabs=windows&pivots=platform-azp) and get a [toll-free number](/azure/communication-services/quickstarts/telephony/get-phone-number?tabs=windows&pivots=platform-azcli), a [short code](/azure/communication-services/quickstarts/sms/apply-for-short-code), or an [Alphanumeric Sender ID](/azure/communication-services/quickstarts/sms/enable-alphanumeric-sender-id).
+1. Go to your [Azure account homepage](https://ms.portal.azure.com/#home) and navigate to your resource through **Subscriptions** > **Resource groups** > **Resource name**.
+1. Go to **Keys** under **Settings** and jot down the Primary and Secondary Connection String values. These values are required to create the integration between Customer Insights - Journeys and Azure Communication Services.
+1. Under **Telephony & SMS**, go to **Phone Numbers** to find the toll-free number you want to use as a sender. Go to **Alphanumeric Sender ID** and to **Short Codes** for the respective types of numbers.
 
 ## Add a sender number from an Infobip, LINK Mobility, Telesign, Twilio, or Vibes account (worldwide)
 
@@ -70,11 +69,11 @@ You can purchase or reuse an existing Infobip, LINK Mobility, Telesign, Twilio, 
 The sender types supported vary based on the selected provider. **Customer Insights - Journeys also supports Alphanumeric Sender IDs**.
 
 > [!IMPORTANT]
-> To ensure that third party SMS providers handle STOP commands properly, you must configure your consent settings directly with the provider.
+> To ensure that third-party SMS providers handle STOP commands properly, you must configure your consent settings directly with the provider.
 
 ### Sign up for and configure an Infobip account
 
-Infobip integration uses their public APIs to send and receive text messages. You need to sign up for an Infobip account to enable the Customer Insights - Journeys SMS integration. To create an Infobip account:
+Infobip integration uses its public APIs to send and receive text messages. You need to sign up for an Infobip account to enable the Customer Insights - Journeys SMS integration. To create an Infobip account:
 
 1. Go to [Infobip](https://www.infobip.com/signup?signup_source=MicrosoftDynamicsMarketing) and sign up for a free account that can be upgraded to pay-as-you-go or a monthly subscription later.
 1. In your Infobip [Account homepage](https://portal.infobip.com/homepage/), navigate to the **Developers** tab and note the **API key** and **API Base URL** values. These values are required to create the integration between Customer Insights - Journeys and Infobip.
@@ -128,14 +127,14 @@ To set up a new SMS provider for the Customer Insights - Journeys app:
     > [!div class="mx-imgBorder"]
     > ![Callback URL screenshot.](media/real-time-marketing-text-message-callback-url.png "Callback URL screenshot")
 
-   For Azure Communication Services, For Azure Communication Services, navigate to your resource group through S**ubscriptions > Resource group name** and create an Event Grid System Topic for your Communication Service resource. Select it and then click **+ Event Subscription**. To set up the **Delivery report Callback URL**, select “**SMS Delivery report received**” in the **Event type** and **Webhook** in the **Endpoint type**, pasting the relevant URL you see in the Customer Insights – Journeys setup wizard. To set up the **Incoming Message Callback URL**, select “**SMS received**” in the **Event type** and **Webhook** in the **Endpoint** type, pasting the relevant URL you see in the Customer Insights – Journeys setup wizard. 
+   For Azure Communication Services, navigate to your resource group through **Subscriptions** > **Resource group name** and create an Event Grid System Topic for your Communication Service resource. Select it and then select **+ Event Subscription**. To set up the **Delivery report Callback URL**, select “**SMS Delivery report received**” in the **Event type** and **Webhook** in the **Endpoint type**, pasting the relevant URL you see in the Customer Insights – Journeys setup wizard. To set up the **Incoming Message Callback URL**, select “**SMS received**” in the **Event type** and **Webhook** in the **Endpoint** type, pasting the relevant URL you see in the Customer Insights – Journeys setup wizard. 
 
-   For Twilio, copy the Callback URL from the Customer Insights - Journeys app and paste it in the [numbers' configuration page](https://console.twilio.com/us1/develop/phone-numbers/manage/incoming) in the **"A MESSAGE COMES IN"** field. 
+   For Twilio, copy the **Callback URL** from the Customer Insights - Journeys app and paste it into the [numbers' configuration page](https://console.twilio.com/us1/develop/phone-numbers/manage/incoming) in the **"A MESSAGE COMES IN"** field. 
 
     > [!div class="mx-imgBorder"]
     > ![Twilio number config screenshot.](media/real-time-marketing-text-message-twilio-config.png "Twilio number config screenshot")
 
-For Infobip, LINK Mobility, Telesign and Vibes, you'll need to contact customer support to set this up for you.
+For Infobip, LINK Mobility, Telesign, and Vibes, you'll need to contact customer support to set this up for you.
 
 You can view all active provider integrations in the **SMS providers** tab. You can also edit, update, delete, or add more numbers to an existing integration.
 
