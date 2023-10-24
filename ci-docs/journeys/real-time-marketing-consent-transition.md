@@ -1,7 +1,7 @@
 ---
 title: Consent management and double opt-in transition guidance
 description: Learn the capabilities of consent management in Dynamics 365 Customer Insights - Journeys and how to use them in specific scenarios.
-ms.date: 10/13/2023
+ms.date: 10/23/2023
 ms.topic: article
 author: petkra
 ms.author: petkra
@@ -93,6 +93,10 @@ The following picture shows the different settings:
 > ![Comparison of contact versus subscription list settings.](media/real-time-marketing-consent-transition-5.png)
 
 The **Load consent** function loads the data from the **DoNotBulkEmail** and **DoNotEmail** attributes for contact and lead consent. The function should be used when the contact-point consent center is populated because Customer Insights - Journeys relies on those settings. The function can also be used multiple times, for example, if multiple subscription lists should be migrated to different topics in Customer Insights - Journeys. See also: [Adding consent data to Customer Insights - Journeys](real-time-marketing-migrate-consent.md)
+
+Once subscription lists have been migrated as described above, you can create segments based on topic and purpose opt-in and opt-out data captured in the consent center. This allows you to create target lists of customers that have opted-into a topic in a similar manner that outbound marketing supports subscription lists.
+
+An important point to consider in the creation of topic and purpose-based segments is that the available criteria for the segment is “will send” or “will not send.” This takes into account not just the existence of an opt-in/opt-out record but also the enforcement model of the topic (restrictive, non-restrictive, or disabled). For example, if a topic has been configured in a non-restrictive model and then used in the segment creation, the resulting list of contacts would be all who could actually receive the communication, which is all available opt-ins and any contacts that have not opted out. Conversely, if the model was restrictive, the segment will include only explicitly opted-in contacts.
 
 Because the contact-point consent settings are only updated when using preference centers, outbound marketing forms and pages that update consent shouldn't be used once the migration has been done.
 
