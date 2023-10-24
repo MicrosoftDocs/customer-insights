@@ -1,5 +1,5 @@
 ---
-title: "Preview: Copilot: style your emails with AI-assisted themes"
+title: "Preview: Copilot - Style your emails with AI-assisted themes"
 description: Learn how to use the Copilot-powered theme feature to style your emails in Dynamics 365 Customer Insights - Journeys.
 ms.date: 09/19/2023
 ms.topic: how-to
@@ -11,7 +11,7 @@ search.audienceType:
   - enduser
 ---
 
-# Preview: Copilot: style your emails with AI-assisted themes
+# Preview: Copilot - Style your emails with AI-assisted themes
 
 [!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
