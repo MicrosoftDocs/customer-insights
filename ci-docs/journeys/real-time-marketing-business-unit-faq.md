@@ -58,7 +58,7 @@ When business unit scoping is enabled, you can only select content blocks, brand
 
 ### How is the owning business unit of a record determined?
 
-By default, the business unit of a record is set to the business unit of the user creating the record. Users can change the business unit only if the [modernized business units](real-time-marketing-modernized-business-units.md) feature is also turned on.
+By default, the business unit of a record is set to the business unit of the user creating the record. Users can change the business unit only if the [modernized business units](/power-platform/admin/wp-security-cds.md#enable-the-matrix-data-access-structure) feature is also turned on.
 
 ### I have modernized business units turned on for my environment. Can I change the business unit of any record in the Customer Insights - Journeys app?
 
