@@ -1,7 +1,7 @@
 ---
 title: Transition overview
 description: Overview of the transition process from outbound marketing to real-time journeys in Dynamics 365 Customer Insights - Journeys.
-ms.date: 10/12/2023
+ms.date: 10/15/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
