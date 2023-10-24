@@ -1,6 +1,6 @@
 ---
-title: Create a custom channel for customer journey
-description: Learn how to create a custom channel to use in Dynamics 365 Customer Insights - Journeys customer journeys.
+title: Create a custom channel for customer journeys in outbound marketing
+description: Learn how to create a custom channel to use in outbound marketing customer journeys.
 ms.date: 02/09/2022
 ms.topic: how-to
 author: alfergus
@@ -9,7 +9,7 @@ search.audienceType:
   - developer
 ---
 
-# Create a custom channel for customer journeys
+# Create a custom channel for customer journeys in outbound marketing
 
 [!INCLUDE [consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
 

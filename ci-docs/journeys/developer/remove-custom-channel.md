@@ -1,6 +1,6 @@
 ---
-title: Remove a custom channel
-description: Provides information on how to uninstall/remove custom channel from your Dynamics 365 Customer Insights - Journeys instance.
+title: Remove a custom channel in outbound marketing
+description: Provides information on how to uninstall/remove custom channel from your outbound marketing instance.
 ms.date: 04/01/2018
 ms.topic: how-to
 author: alfergus
@@ -9,7 +9,7 @@ search.audienceType:
   - developer
 ---
 
-# Remove custom channel
+# Remove custom channel in outbound marketing
 
 [!INCLUDE [consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
 

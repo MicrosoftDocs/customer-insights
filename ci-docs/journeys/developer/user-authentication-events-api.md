@@ -1,6 +1,6 @@
 ---
-title: User authentication using the events API
-description: Learn how to use the events API to authenticate users in Dynamics 365 Customer Insights - Journeys.
+title: User authentication using the events API in outbound marketing
+description: Learn how to use the events API to authenticate users in outbound marketing.
 ms.date: 06/11/2019
 ms.topic: how-to
 author: alfergus
@@ -9,11 +9,14 @@ search.audienceType:
   - developer
 ---
 
-# User authentication using events API
+# User authentication using events API in outbound marketing
 
 [!INCLUDE [consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
 
 [!INCLUDE [azure-ad-to-microsoft-entra-id](../includes/azure-ad-to-microsoft-entra-id.md)]
+
+> [!IMPORTANT]
+> This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
 
 The events API supports user authentication with Microsoft Entra ID. To link the events API to your Microsoft Entra ID, you need to add your `Microsoft Entra ID Client ID` and `Microsoft Entra ID Metadata Endpoint` to your `web application setting`.  More information: [Creating a Microsoft Entra ID tenant and adding a web application to the tenant](event-management-aad-b2c-setup.md#creating-a-microsoft-entra-id-tenant-and-adding-a-web-application-to-the-tenant)
 
