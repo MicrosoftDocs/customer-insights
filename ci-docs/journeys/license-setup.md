@@ -32,7 +32,10 @@ This article covers important key points about Customer Insights licensing and p
 -	The two license models are not related. You can either be on the old, standalone model and receive the old, standalone entitlements or be on the new Dynamics 365 Customer Insights model and receive those entitlements. There is no grandfathering of new entitlement definitions for subscribers of the old, standalone model. The pricing and entitlement models are independent and cannot be combined. 
 -	You can buy the add-ons for each model independently. If you are on the old model, you buy the old add-ons. If you are on the new model, you buy the new add-ons. 
 -	When switching to the new business model and new entitlements, do not reinstall the applications. While the entitlement definition has changed in the new model, the applications for Customer Insights - Journeys and Customer Insights - Data are the same, therefore you should not uninstall or reinstall applications.
-
+-	Email throughput of 500K messages per hour is granted as follows:
+    - For customers on the standalone Dynamics 365 Marketing SKU with 10 Million or more active contacts
+    - For customers with the new Dynamics 365 Customer Insights SKU with 500K or more interacted people
+    - For customers with the new Dynamics 365 Customer Insights SKU who have less than 500K interacted people but have purchased the 500K sending burst add-on through their seller
 ## Licensing FAQs
 
 ### How is Customer Insights - Journeys licensed?
