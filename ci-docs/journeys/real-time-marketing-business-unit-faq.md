@@ -1,7 +1,7 @@
 ---
-title: Business units FAQs for Customer Insights - Journeys
+title: Business units FAQs for real-time journeys
 description: Business units FAQ for Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/22/2023
+ms.date: 10/24/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -11,7 +11,7 @@ search.audienceType:
   - enduser
 ---
 
-# Business units FAQs for Customer Insights - Journeys
+# Business units FAQs for real-time journeys
 
 [!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
@@ -38,7 +38,7 @@ If left unedited, existing journeys continue to function as they were before and
 
 ### After enabling business units, what happens to a live journey if the owner or the owner's business unit changes?
 
-The scoping business unit on a **Live** journey does not change even if the owner of the journey changes or if the business unit of the owner changes. If you edit a **Live** journey and publish a new version, the *new* journey version will take the current value of the business unit of the journey owner at the time of publication for scoping purposes. The previous version of the journey, however, retains the original business unit scoping.
+The scoping business unit on a **Live** journey doesn't change even if the owner of the journey changes or if the business unit of the owner changes. If you edit a **Live** journey and publish a new version, the *new* journey version takes the current value of the business unit of the journey owner at the time of publication for scoping purposes. The previous version of the journey, however, retains the original business unit scoping.
 
 ### Will business unit scoping in journeys work for Customer Insights - Data segments?
 
@@ -48,21 +48,21 @@ No. Customer Insights - Data doesn’t currently support business units, so any 
 
 There are certain areas of the product where the support for business units and modernized business units is still being added. Analytics doesn’t currently support business units and thus any user will be able to see analytics data from any business unit, irrespective of their access.
 
-### Some segments from a different business unit were shared with me. Why am I not able to select any of them when I create a Journey in my business unit?
+### Some segments from a different business unit were shared with me. Why am I not able to select any of them when I create a journey in my business unit?
 
-When Business Unit scoping is enabled you can only select segments, messages etc from the business unit of the journey itself. So even though the user may have access to a record from a different business unit, they would not be able to use it in the journey that they are building.
+When business unit scoping is enabled, you can only select segments, messages, etc. from the business unit of the journey itself. So, even though the user may have access to a record from a different business unit, they can't use it in the journey that they're building.
 
-### Some content blocks, images, etc from a different business unit were shared with me. Why am I not able to use them in the email that I am creating a message (email, text message, custom channel message) for my business unit?
+### Some content blocks, images, etc. from a different business unit were shared with me. Why am I not able to use them in the email that I'm creating a message (email, text message, custom channel message) for my business unit?
 
-When Business Unit scoping is enabled you can only select content blocks, brand profiles, assets etc from the business unit of the message only. So even though the user may have access to a record from a different business unit, they would not be able to use it in the journey that they are building in their business unit.
+When business unit scoping is enabled, you can only select content blocks, brand profiles, assets, etc. from the business unit of the message. So, even though the user may have access to a record from a different business unit, they can't use it in the journey that they're building in their business unit.
 
 ### How is the owning business unit of a record determined?
 
-By default, the business unit of a record is set to the business unit of the user creating the record. Users can change the business unit only if Modernized Business Units feature is also turned on. 
+By default, the business unit of a record is set to the business unit of the user creating the record. Users can change the business unit only if the [modernized business units](real-time-marketing-modernized-business-units.md) feature is also turned on.
 
 ### I have modernized business units turned on for my environment. Can I change the business unit of any record in the Customer Insights - Journeys app?
 
-While there is support for modernized business units across most of the areas in the app, there are some areas that won't be supported until a later release.
+While there's support for modernized business units across most of the areas in the app, there are some areas that won't be supported until a later release.
 
 Areas that support business units but don't yet support modernized business units (that is, allowing users to modify the business unit of a record) include:
 - Consent center
