@@ -48,6 +48,18 @@ No. Customer Insights - Data doesn’t currently support business units, so any 
 
 There are certain areas of the product where the support for business units and modernized business units is still being added. Analytics doesn’t currently support business units and thus any user will be able to see analytics data from any business unit, irrespective of their access.
 
+### Some segments from a different business unit were shared with me. Why am I not able to select any of them when I create a Journey in my business unit?
+
+When Business Unit scoping is enabled you can only select segments, messages etc from the business unit of the journey itself. So even though the user may have access to a record from a different business unit, they would not be able to use it in the journey that they are building.
+
+### Some content blocks, images, etc from a different business unit were shared with me. Why am I not able to use them in the email that I am creating a message (email, text message, custom channel message) for my business unit?
+
+When Business Unit scoping is enabled you can only select content blocks, brand profiles, assets etc from the business unit of the message only. So even though the user may have access to a record from a different business unit, they would not be able to use it in the journey that they are building in their business unit.
+
+### How is the owning business unit of a record determined?
+
+By default, the business unit of a record is set to the business unit of the user creating the record. Users can change the business unit only if Modernized Business Units feature is also turned on. 
+
 ### I have modernized business units turned on for my environment. Can I change the business unit of any record in the Customer Insights - Journeys app?
 
 While there is support for modernized business units across most of the areas in the app, there are some areas that won't be supported until a later release.
