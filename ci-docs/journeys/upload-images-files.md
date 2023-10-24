@@ -41,10 +41,6 @@ You can create a collection of images, videos, and files for later use. To uploa
 
 You can manually add **tags** when you upload a file so it’s easier to organize and find it later.
 
-Additionally, the Copilot assistant automatically identifies a selection of images from your library that best complement your content. The Copilot assistant allows you to quickly and easily choose images that resonate with your audience without spending time searching for them.
-
-When you add an image element to your content or need to [link to a file or video](/dynamics365/marketing/real-time-marketing-email#link-to-documents-and-videos-stored-in-the-asset-library), you can choose to use a file that already exists in your Customer Insights - Journeys app library or upload a new one. After you've uploaded a file in this way, it will also be available in the library for use in other content.
-
 ## Edit assets
 
 You can easily see and edit asset details in the side pane. Simply select the asset to rename, add tags and alt text, and copy the asset URL.
@@ -75,8 +71,10 @@ If the image you need isn't there, select **+Upload** to add a new one.
 
 Additionally, the Copilot assistant automatically identifies a selection of images from your library that best complement your content. Quickly and easily choose images that resonate with your audience without having to spend time searching for them.
 
+When you add an image element to your content or need to [link to a file or video](/dynamics365/marketing/real-time-marketing-email#link-to-documents-and-videos-stored-in-the-asset-library), you can choose to use a file that already exists in your Customer Insights - Journeys app library or upload a new one. After you've uploaded a file in this way, it will also be available in the library for use in other content.
+
 > [!IMPORTANT]
-> The AI Tagging feature is currently in preview.
+> The copilot assisntant smart recommendation feature is currently in preview.
 ### See also
 
 [Link to documents stored in the asset library](/dynamics365/marketing/real-time-marketing-email#link-to-documents-and-videos-stored-in-the-asset-library)
