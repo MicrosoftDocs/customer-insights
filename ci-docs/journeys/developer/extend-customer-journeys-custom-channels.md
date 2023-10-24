@@ -1,6 +1,6 @@
 ---
-title: Extend customer journeys using custom channels
-description: Beyond the out-of-the box tiles (channels) provided for customer journeys, partners can create custom channels to extend the marketing capabilities in Dynamics 365 Customer Insights - Journeys.
+title: Extend customer journeys using custom channels in outbound marketing
+description: Beyond the out-of-the box tiles (channels) provided for customer journeys, partners can create custom channels to extend the marketing capabilities in outbound marketing.
 ms.date: 10/19/2020
 ms.topic: overview
 author: alfergus
@@ -9,7 +9,7 @@ search.audienceType:
   - developer
 ---
 
-# Extend customer journeys using custom channels
+# Extend customer journeys using custom channels in outbound marketing
 
 [!INCLUDE [consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
 
