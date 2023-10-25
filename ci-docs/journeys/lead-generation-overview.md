@@ -32,7 +32,7 @@ Lead management refers to the set of functionalities in D365 Customer Insights -
 
 There are a few functionality differences regarding Lead Management in Outbound Marketing and Customer Insights - Journeys. 
 
-| **Area** | **Feature** | **Outbound Marketing** | **Real-Time Marketing** |
+| **Area** | **Feature** | **Outbound Marketing** | **Customer Insights - Journeys** |
 |---|---|:---:|:---:|
 | Identify the best prospects, and hand them off to the Sales team. | Lead score: Demographic and engagement data | X | X |
 |  | Lead score: Target an audience |   | X |
