@@ -37,7 +37,7 @@ There are a few functionality differences regarding Lead Management in Outbound 
 | Identify the best prospects, and hand them off to the Sales team. | Lead score: Demographic and engagement data | X | X |
 |  | Lead score: Target an audience |   | X |
 |  | Lead score: Grading | X | X |
-|  | Score only leads with a specific level of consent | X |   |
+|  | Lead score: Include only leads with a specific level of consent | X |   |
 |  | Lead Qualification: Signal to your Sales team a lead is ready* | X | X |
 | Capture demand | Lead Creation | X | X |
 |  | Opportunity creation |   | X |
@@ -48,4 +48,4 @@ There are a few functionality differences regarding Lead Management in Outbound 
 
 > [!IMPORTANT]
 > - One of the key differences with Outbound Marketing is how Marketers signal to their Sales team a lead is ready. In Customer Insights - Journeys, there is a new stand-alone feature (Qualification) to define the criteria and actions when a lead is ready for Sales. 
-> - This allows Marketers to create more sophisticated qualification conditions. The qualification feature is further explained in the documentation of this section.
+> - The new qualification feature allow Marketers to create more sophisticated qualification conditions. The qualification feature is further explained in the documentation of this section.
