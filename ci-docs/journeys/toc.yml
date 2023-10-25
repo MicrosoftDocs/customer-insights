@@ -762,6 +762,8 @@
       href: event-troubleshoot-outbound.md  
   - name: Lead generation and management
     items:
+    - name: Lead generation and management overview
+      href: lead-generation-overwiew.md
     - name: The lead lifecycle
       href: lead-lifecycle.md
     - name: Market to leads
