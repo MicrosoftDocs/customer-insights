@@ -1,6 +1,6 @@
 ---
-title: Register your web application to use the events API
-description: Learn about the events API that lets you access data of events, sessions, session tracks and passes."
+title: Register your web application to use the events API in outbound marketing
+description: Learn about the events API that lets you access data of events, sessions, session tracks and passes in outbound marketing.
 ms.date: 06/12/2019
 ms.topic: how-to
 author: alfergus
@@ -9,9 +9,12 @@ search.audienceType:
   - developer
 ---
 
-# Register your web application to use the events API
+# Register your web application to use the events API in outbound marketing
 
 [!INCLUDE [consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
+
+> [!IMPORTANT]
+> This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
 
 To use the events API, you need to provide a web application token in each request. The web application token is used to control API requests that are associated with your organization. Follow the steps given below to register your web application:
 

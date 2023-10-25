@@ -1,6 +1,6 @@
 ---
-title: Basic customer journey API operations
-description: The customer journey API enables programmatic interaction with segmentation features of Dynamics 365 Customer Insights - Journeys.
+title: Basic outbound marketing customer journey API operations
+description: The customer journey API enables programmatic interaction with segmentation features of outbound marketing.
 ms.date: 01/27/2022
 ms.topic: how-to
 author: alfergus
@@ -9,7 +9,7 @@ search.audienceType:
   - developer
 ---
 
-# Basic customer journey API operations
+# Basic outbound marketing customer journey API operations
 
 [!INCLUDE [consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
 

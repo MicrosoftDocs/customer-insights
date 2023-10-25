@@ -1,6 +1,6 @@
 ---
-title: Customize the response from the events API
-description: Learn how to customize responses from the Dynamics 365 Customer Insights - Journeys events API.
+title: Customize the response from the events API in outbound marketing
+description: Learn how to customize responses from the outbound marketing events API.
 ms.date: 08/31/2022
 ms.topic: how-to
 author: alfergus
@@ -9,7 +9,7 @@ search.audienceType:
   - developer
 ---
 
-# Customize the response from the events API
+# Customize the response from the events API in outbound marketing
 
 [!INCLUDE [consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
 
