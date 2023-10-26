@@ -43,45 +43,45 @@ On September 1, 2023, Dynamics 365 Customer Insights - Journeys transitioned to 
 
 - **Get inspired and use Copilot to create engaging emails - globally available in 7 languages**
     - Content ideas, a Copilot feature, is now available worldwide in the following languages: Danish, Dutch, English, French, German, Italian, Spanish. Harness the power of Content Ideas to effortlessly generate captivating emails within minutes simply by providing a few short key points and selecting a desired tone of voice. Additionally, now you generate ideas with no input required thanks to relevant, pre-filled key points that match your selected email or email template.
-    - [Release plan]()
-    - [Docs]()
+    - [Release plan](/dynamics365/release-plan/2023wave2/marketing/dynamics365-marketing/content-ideas-journey-creator-english-all-geos)
+    - [Docs](content-ideas.md)
 
 - **Engage customers with text messages sent using Azure Communication Services**
     - Send text messages to customers using your Azure Communication Services SMS subscription, simplifying your operations by using Microsoft’s native SMS provider for all your products. Leverage all the real-time functionalities such as personalization, templates, and analytics, expanding the potential of your Azure Communication Services subscription.
-    - [Release plan]()
-    - [Docs]()
+    - [Release plan](/dynamics365/release-plan/2023wave2/marketing/dynamics365-marketing/engage-customers-text-messages-sent-using-azure-communication-services)
+    - [Docs](real-time-marketing-outbound-text-messaging.md)
 
 - **Increase engagement using alphanumeric SMS senders**
     - With alphanumeric senders, you can now send one-way text messages to your customers using a custom string of letters or numbers, making it easier for customers to recognize that messages are from a trusted source. By using your brand or company name, you gain brand awareness, increase trust, and ultimately boost the overall effectiveness of your SMS marketing efforts.
-    - [Release plan]()
-    - [Docs]() 
+    - [Release plan](/dynamics365/release-plan/2023wave2/marketing/dynamics365-marketing/increase-engagement-using-alphanumeric-sms-senders)
+    - [Docs](real-time-marketing-outbound-text-messaging.md) 
 
 - **Convert more leads by qualifying and routing them to the best rep**
     - To win more deals, marketing and sales teams must work together to identify the best leads and convert those leads into business opportunities. Marketers need to define qualification criteria and post-qualification actions to grow the pipeline with the best candidates. Sellers need to follow up on leads when they're hot. Using Dynamics 365 Customer Insights - Journeys and Dynamics 365 Sales together, you can now easily route qualified leads identified by the marketing team to a seller without customized solutions or manual intervention. You can also drive the next best action by easily attaching each qualified lead to a sales sequence. This boosts the marketing and sales teams' productivity while maintaining focus on the right customers.
-    - [Release plan]()
-    - [Docs]()
+    - [Release plan](/dynamics365/release-plan/2023wave2/marketing/dynamics365-marketing/increase-lead-conversions-routing-correct-sales-rep)
+    - [Docs](real-time-marketing-qualify-leads.md)
 
 ### Public preview
 
 - **Improve communication timing by setting up quiet times**
     - Quiet time settings ensure that your messages are only sent when you want them to be delivered, increasing engagement and meeting customer expectations. It’s also more important than ever to meet compliance obligations by only contacting your customers when they want to be reached. With quiet times, you can easily prevent messages from being delivered during nights, weekends, or holidays. You can control quiet times separately for different channels and message types as well as create unique settings for each line of business.
-    - [Release plan]()
-    - [Docs]()
+    - [Release plan](/dynamics365/release-plan/2023wave2/marketing/dynamics365-marketing/prevent-messages-sending-during-unwanted-times-setting-up-quiet-times-using-copilot)
+    - [Docs](real-time-marketing-quiet-times.md)
 
 - **Create compelling content with Copilot image recommendations**
     - Visual content is critical to capturing your audience’s attention, increasing engagement with your brand, and conveying your message more effectively. However, browsing your library to find meaningful, relevant images for your content can be tedious and time-consuming. Now, a new Copilot assistant automatically identifies a selection of images from your library that best complement your content. Quickly and easily choose images that resonate with your audience without spending time searching.
     - [Release plan]()
-    - [Docs]()
+    - [Docs](upload-images-files.md)
 
 - **Refresh or perfect your messaging with Copilot text editing and rewriting**
     - Creating content that effectively captures your audience's attention is tedious, requiring time-consuming effort to perfect the language and tone of your message. Now, you can rapidly iterate on your content using Copilot to help optimize your messaging. Whether you're creating content for email, text messages, push notifications, or forms, using Copilot, you can easily rephrase messages, adjust the tone of voice, and shorten or lengthen copy, increasing productivity and delivering better results. The content rewrite copilot is currently available in the United States in English language.
-    - [Release plan]()
-    - [Docs]()
+    - [Release plan](/dynamics365/release-plan/2023wave2/marketing/dynamics365-marketing/rewrite-change-tone-content-quickly-using-copilot-marketing)
+    - [Docs](content-rewrite.md)
 
 - **Use journey Copilot to create customer journeys by describing them in your own words**
     - With Dynamics 365 Customer Insights - Journeys, anybody can now create customer journeys in minutes, even when they may have never done it before. Simply describe, in everyday words, what you want to create and rely on Copilot generative AI to build the journey for you. This empowers you to do more with less. Instead of spending time getting the mechanics of the journey right, you can now ensure that you’re delivering the most personalized experience for your customers by collaborating with your entire team and quickly driving stakeholder alignment. Using journey Copilot together with the content ideas copilot assistant for email creation, you can now get your customer experience ideas to market in no time.
-    - [Release plan]()
-    - [Docs]()
+    - [Release plan](/dynamics365/release-plan/2023wave2/marketing/dynamics365-marketing/create-customer-journeys-describing-them-own-words-using-copilot)
+    - [Docs](real-time-marketing-use-copilot-create-journey.md)
 
 ### Monthly enhancements
 
@@ -106,7 +106,9 @@ On September 1, 2023, Dynamics 365 Customer Insights - Journeys transitioned to 
 - Customer can check the version of Customer Insights Journeys and update
     - In the installation management experience, you can now check the versions installed for the journeys application and update if a newer version is available. 
 - Customer can easily enable/disable all AI copilot features using a global opt-in toggle
+    - All copilot features can now be enabled at once using one, global toggle, which is turned on by default. 
 - Non-US Customer can agree/disagree for cross-geography data flow to use AI copilot features
+    - As Azure AI services are currently available only in North America (and Switzerland), all non-US customers need to agree allow cross-geography data flow to use copilot features.
 
 **Security roles**
 - Customers can use compliance profiles from any business units in messages and forms
@@ -115,8 +117,8 @@ On September 1, 2023, Dynamics 365 Customer Insights - Journeys transitioned to 
 ### New blogs and scenario docs
 
 Learn how to make the most of the new Dynamics 365 Marketing features in our latest blogs and scenario docs:
-- [Transition from Outbound to Real-time Marketing Playbook]() has been updated with the latest release information.
-- [Understanding Consent Management in Dynamics 365 CI Journey]()
+- [Transition from Outbound to Real-time Marketing Playbook](https://community.dynamics.com/blogs/post/?postid=1b4394d5-7764-4484-aba9-c7f972292c10) has been updated with the latest release information.
+- [Understanding Consent Management in Dynamics 365 CI Journey](https://community.dynamics.com/blogs/post/?postid=8b2a4ee8-1069-ee11-a81c-000d3a7a1a66)
 
 ## September 2023 update
 
