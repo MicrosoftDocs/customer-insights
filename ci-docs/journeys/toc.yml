@@ -408,6 +408,8 @@
         href: manage-word-templates.md
     - name: Data management settings
       href: data-management-settings.md
+  - name: Enable outbound marketing and troubleshoot
+    href: versions.md
   - name: Journeys
     items:
     - name: Move triggers between environments
