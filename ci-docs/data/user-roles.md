@@ -76,7 +76,7 @@ An organization owns two different lines of businesses Automobile and Luxury ret
 ## Admin (owner)
 
 - All permissions available to the Admin.
-- [Reset and delete](manage-environments.md#reset-an-existing-environment-preview) the environment.
+- [Reset and delete](manage-environments.md#reset-an-existing-environment) the environment.
 
 ## Next steps
 
