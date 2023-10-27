@@ -1,7 +1,7 @@
 ---
 title: Transition overview
 description: Overview of the transition process from outbound marketing to real-time journeys in Dynamics 365 Customer Insights - Journeys.
-ms.date: 10/15/2023
+ms.date: 10/26/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -58,8 +58,6 @@ Here's some recommendation actions for existing customers depending on your need
 | **Existing org**: I updated an existing org that had outbound marketing, but after the update I don't see outbound | Do you need outbound marketing? Review the [transition functional areas](transition-walkthrough-functional.md) guide and the other [transition resources](transition-resources.md). We strongly recommend using real-time journeys. After review, if you still want to enable outbound marketing, use the **Enable** link available on the **Settings** > **Versions** page. If you don't see the link, create a support ticket with the required details as described in [Creating a support ticket requesting outbound marketing](transition-overview.md#create-a-support-ticket-requesting-outbound-marketing)                                                                                                                                                                                                                                                           |
 ## Create a support ticket requesting outbound marketing
 
-Do you see the **Enable** link on the **Settings** > **Versions** page? If yes, don't create a ticket. Use that link to provision outbound marketing.
-
 If you create a support ticket, you must include the following information:
 
 - What is the TenantID? (TenantID)
@@ -68,7 +66,10 @@ If you create a support ticket, you must include the following information:
 -	Is this org a “solutions only” org? (Yes or no)
 -	Is this the only org in this tenant? (Yes or no)
     -	If no, include the OrgIDs of other orgs. (OrgIDs)
--	Why do you need outbound marketing? Select the reason(s) from the list below and include the requested details.
+-	Do you see the **Enable** link on the **Settings** > **Versions** page?
+    - If yes, don't create a ticket. Use that link to provision outbound marketing. This must be done by a user with system admin privileges.
+    - If no, include a full screenshot of **Settings** > **Versions** page.
+- Why do you need outbound marketing? Select the reason(s) from the list below and include the requested details.
     1. There are features in outbound marketing that I can’t live without. (Include a list of the features)
     1. I'm not ready to transition to real-time journeys yet, I plan to transition later. (Include the planned timeline)
     1. I have customization that I can't move to real-time journeys. (Include details)
