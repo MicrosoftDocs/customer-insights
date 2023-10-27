@@ -138,10 +138,12 @@
         href: real-time-marketing-email.md
       - name: Design your email and content
         items:
-        - name: Copilot - Use AI to kickstart email creation
-          href: content-ideas.md
         - name: Create a new email and design its content
           href: email-design.md
+        - name: Copilot - Use AI to kickstart email creation
+          href: content-ideas.md
+        - name: "Preview: Copilot - Refresh and perfect your message"
+          href: content-rewrite.md
         - name: "Preview: Copilot - Style your emails with AI-assisted themes"
           href: email-theme.md
         - name: Generate iCalendar files for events and sessions
