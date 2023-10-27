@@ -1,6 +1,6 @@
 ---
-title: Create consistent branding with brand profiles
-description: Learn how to create brand profiles in Dynamics 365 Customer Insights - Journeys
+title: Create consistent branding with brand profiles in outbound marketing
+description: Learn how to create brand profiles in outbound marketing.
 ms.date: 08/17/2023
 ms.topic: article
 author: alfergus
@@ -11,9 +11,12 @@ search.audienceType:
   - enduser
 ---
 
-# Create consistent branding with brand profiles
+# Create consistent branding with brand profiles in outbound marketing
 
 [!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+
+> [!IMPORTANT]
+> This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
 
 Brand profiles allow you to create consistently branded content efficiently, even if your organization has multiple brands. You can create multiple brand profiles for your organization or profiles for each of your business units. You can also define default senders for emails and set default social links. You can even extend your brand profile entity with custom values that you can use when creating content. This article describes how to create a brand profile.
 

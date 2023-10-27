@@ -65,7 +65,7 @@ If you uninstall Customer Insights - Journeys paid or trial, the services are di
 > [!NOTE]
 > If you own the legacy Dynamics 365 Marketing license, the application installation entitlement from that business model applies, which allows one application installation per license purchased. If you own the current Dynamics 365 Customer Insights license, you're entitled to install the Customer Insights - Journeys and Customer Insights - Data applications each four times on your existing Dataverse environments. If you've signed up for a trial, you'll also see a listing for the Dynamics 365 Customer Insights license and you can launch the installation management page.
 
-#### Set up a new Customer Insights - Journeys environment
+#### Set up or access a Customer Insights - Journeys environment
 
 1. If you haven't installed other Dynamics 365 apps on the [Microsoft Power Platform admin center](/power-platform/admin/), go to [**admin.powerplatform.microsoft.com**](https://admin.powerplatform.microsoft.com) to create an environment of the desired type (production, sandbox, developer, or trial). Learn more: [Create and manage environments in the Power Platform admin center](/power-platform/admin/create-environment).
 1. On the [**admin.powerplatform.microsoft.com**](https://admin.powerplatform.microsoft.com) page, find **Resources** in the left-hand site map and select **Dynamics 365 apps**.

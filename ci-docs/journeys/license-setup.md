@@ -19,10 +19,11 @@ This article covers important key points about Customer Insights licensing and p
 
 -	You can install the **Customer Insights - Journeys** app up to four times on any of your Dataverse environments.
 -	You can install the **Customer Insights - Data** app up to four times on any of your Dataverse environments.
+-	If you need to install either application more than four times, you can buy an additional instance of the base license to get four more application installation entitlements per app.
 - The base Customer Insights license entitles you to:
     - 10,000 interacted people at the tenant level for use with the Customer Insights - Journeys app to engage contacts, leads, profiles, accounts and other Dataverse entities.
     - 100,000 unified people at the tenant level for use with the Customer Insights - Data app to unify, enrich, and know the customer.
--	You get 10x interactions per month for the Customer Insights - Journeys app as a safe use limit. This means that you can send interactions up to ten times the number of interacted people you own at the tenant level. For example, if you own 10,000 interacted people, you can send up to 100,000 interactions per month. Interactions reset monthly and don't roll over. To get more than 10,000 interactions per month, increase the number of interacted people you own.
+-	You get 10x interactions per month for the Customer Insights - Journeys app as a safe use limit. This means that you can send interactions up to ten times the total number of interacted people you own at the tenant level. For example, if you own 10,000 interacted people, you can send up to 100,000 interactions per month. Interactions are not tied to the number of interacted people they're distributed to. In the example, you can choose whether to send all 100,000 interactions to one interacted person or allocate the interactions amongst interacted people. Interactions reset monthly and don't roll over. To get more than 100,000 interactions per month, increase the number of interacted people you own.
 -	To scale your needs for the application you're using, you can buy add-ons of interacted people (for the Customer Insights - Journeys app) or unified people (for the Customer Insights - Data app) independently of each other.
 -	The meters for interacted people and unified people are independent of each other.
 -	Interacted people is the number of Dataverse entities (contacts, leads, accounts, profiles, custom, other) that have received an interaction in the last 12 months. 
