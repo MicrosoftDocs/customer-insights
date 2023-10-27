@@ -10,18 +10,12 @@
       href: trial-signup.md
     - name: Trial FAQ
       href: trial-faq.md
+  - name: Customer Insights license guidance
+    href: license-setup.md
   - name: Purchase Customer Insights
     href: purchase.md
   - name: Dynamics 365 Customer Insights FAQs
     href: ci-faq.md
-  - name: Move from outbound marketing (existing customers)
-    items:
-    - name: Move from outbound marketing to Customer Insights - Journeys
-      href: real-time-marketing-move.md
-    - name: Transition resources
-      href: real-time-marketing-transition-resources.md
-    - name: Customer Insights - Journeys transition FAQs
-      href: real-time-marketing-transition.md
   - name: Key Customer Insights - Journeys scenarios
     items:
     - name: Send a targeted email blast
@@ -40,6 +34,34 @@
     href: whats-new-marketing.md
   - name: What's new archive
     href: whats-new-marketing-archive.md
+- name: Transition from outbound marketing
+  items:
+  - name: Transition overview
+    href: transition-overview.md
+  - name: Transition resources
+    href: transition-resources.md
+  - name: Transition functional areas 
+    items:
+    - name: Functional areas overview
+      href: transition-walkthrough-functional.md
+    - name: Setup changes in real-time journeys
+      href: transition-walkthrough-setup.md
+    - name: Segments, emails, and journeys
+      href: transition-walkthrough-segments.md
+    - name: Consent
+      href: transition-walkthrough-consent.md
+    - name: Marketing pages and forms
+      href: transition-walkthrough-forms.md
+    - name: Event management
+      href: transition-walkthrough-events.md
+    - name: Lead management and scoring
+      href: transition-walkthrough-leads.md
+    - name: Insights and reports
+      href: transition-walkthrough-insights.md
+    - name: Social posts discontinued
+      href: transition-walkthrough-social-posts.md
+  - name: Real-time journeys transition FAQs
+    href: transition-faqs.md
 - name: Install and manage
   items:
   - name: Install or uninstall
@@ -88,6 +110,8 @@
       href: real-time-marketing-email-text-consent.md
     - name: Preference centers
       href: real-time-marketing-preference-centers.md
+    - name: Consent management and double opt-in transition guidance
+      href: real-time-marketing-consent-transition.md
     - name: Migrate consent records to Customer Insights - Journeys
       href: real-time-marketing-migrate-consent.md
     - name: Use outbound subscription centers in Customer Insights - Journeys
@@ -102,9 +126,9 @@
       href: real-time-marketing-business-unit-compliance.md
     - name: Business units FAQ for Customer Insights - Journeys
       href: real-time-marketing-business-unit-faq.md
-- name: Use Customer Insights - Journeys
+- name: Use real-time journeys
   items:
-  - name: Customer Insights - Journeys user guide
+  - name: Real-time journeys user guide
     href: real-time-marketing-user-guide.yml
   - name: Marketing channels
     items:
@@ -116,11 +140,11 @@
         items:
         - name: Create a new email and design its content
           href: email-design.md
-        - name: "Preview: Copilot - Use AI to kickstart email creation"
+        - name: Copilot - Use AI to kickstart email creation
           href: content-ideas.md
         - name: "Preview: Copilot - Refresh and perfect your message"
           href: content-rewrite.md
-        - name: "Copilot: style your emails with AI-assisted themes"
+        - name: "Preview: Copilot - Style your emails with AI-assisted themes"
           href: email-theme.md
         - name: Generate iCalendar files for events and sessions
           href: add-to-calendar.md
@@ -134,6 +158,8 @@
           href: email-properties.md
         - name: Check your work using previews and test sends
           href: email-preview.md
+        - name: "Preview: Prevent sending emails to duplicated email addresses"
+          href: email-deduplication.md
         - name: Email accessibility checker
           href: email-accessibility.md
         - name: Check your spam score
@@ -160,7 +186,7 @@
       href: real-time-marketing-channel-optimization.md
   - name: Journeys
     items:
-    - name: "Copilot: create journeys using AI assistance"
+    - name: "Preview: Copilot - Create journeys using AI assistance"
       href: real-time-marketing-use-copilot-create-journey.md
     - name: Trigger-based journeys
       items:
@@ -184,7 +210,7 @@
         href: real-time-marketing-segments.md
       - name: Build segments in Customer Insights - Journeys
         href: real-time-marketing-build-segments.md
-      - name: "Copilot: target the right customers using query assist"
+      - name: Copilot - Target the right customers using query assist
         href: real-time-marketing-natural-language-segments.md
       - name: Use Customer Insights - Data profiles and segments
         href: real-time-marketing-ci-profile.md
@@ -236,14 +262,6 @@
         href: open-events.md
       - name: Set up an event
         href: set-up-event.md
-      - name: Set up session-level registration and waitlisting
-        href: session-level-registration.md
-      - name: Set up and manage an event waitlist
-        href: event-waitlist.md
-      - name: Create and manage recurring events
-        href: event-recurring.md
-      - name: Create and use event templates
-        href: event-templates.md
       - name: Create an event from another event
         href: event-from-event.md
     - name: Host a Microsoft Teams webinar
@@ -252,20 +270,10 @@
         href: teams-webinar.md
       - name: Optimize your event check-in flow
         href: optimize-check-in.md
-      - name: Set up a non-Teams webinar
-        href: set-up-webinar.md
     - name: Register event attendees
       items:
       - name: Invite, register, and house event attendees
         href: invite-register-house-event-attendees.md
-      - name: Add custom fields to your event registration form
-        href: custom-registration-fields.md
-    - name: Create an event website
-      items:
-      - name: Set up the event website
-        href: set-up-event-portal.md
-      - name: Change the URL for events hosted on Portals
-        href: events-change-url.md
     - name: Manage events
       items:
       - name: Event management dashboard
@@ -274,16 +282,12 @@
         href: manage-event-sponsorships.md
       - name: Manage attendee logistics and accommodation
         href: manage-event-logistic.md
-      - name: Set up online payment for events
-        href: event-payment-gateway.md
       - name: View and record financial information for events
         href: event-financials.md
     - name: Follow up with attendees
       items:
       - name: Follow up after the event
         href: followup-after-event.md
-    - name: Event troubleshoot + FAQ
-      href: event-troubleshoot.md  
   - name: Forms 
     items:
     - name: Forms overview
@@ -302,6 +306,8 @@
       href: real-time-marketing-optimize-lead-management.md
     - name: Create a scoring model
       href: real-time-marketing-create-lead-scoring-model.md
+    - name: Qualify the best leads
+      href: real-time-marketing-qualify-leads.md
     - name: Visualize results from your scoring model
       href: real-time-marketing-visualize-scoring-model.md
     - name: Security roles for lead scoring and qualification
@@ -338,35 +344,9 @@
     items:
     - name: Use images, files, and videos in your content
       href: upload-images-files.md
-  - name: Administration
-    items:
-    - name: Journeys
-      items:
-      - name: Move triggers between environments
-        href: move-triggers-between-environments.md
-      - name: Select the audience source for journeys
-        href: real-time-marketing-audience-data.md
-      - name: Customer Insights - Journeys link tracking mechanics
-        href: real-time-marketing-link-tracking-mechanics.md
-    - name: Privacy and compliance
-      items:
-      - name: Manage consent for email and text messages
-        href: real-time-marketing-email-text-consent.md
-      - name: Customer Insights - Journeys preference centers
-        href: real-time-marketing-preference-centers.md
-      - name: Consent management and double opt-in transition guidance
-        href: real-time-marketing-consent-transition.md
-      - name: Migrate consent records to Customer Insights - Journeys
-        href: real-time-marketing-migrate-consent.md
-      - name: Use outbound subscription centers in Customer Insights - Journeys
-        href: real-time-marketing-outbound-subscription.md
-    - name: Manage SMS (text message) keywords used in customer journeys
-      href: manage-sms-keywords.md
-    - name: Install add-ons
-      href: add-ons.md
-  - name: Known issues in Customer Insights - Journeys
+  - name: Known issues in real-time journeys
     href: real-time-marketing-known-issues.md
-  - name: Customer Insights - Journeys troubleshoot + FAQ
+  - name: Real-time journeys troubleshoot + FAQ
     href: real-time-marketing-faq.md
 - name: Develop and extend
   items:
@@ -432,44 +412,28 @@
         href: manage-word-templates.md
     - name: Data management settings
       href: data-management-settings.md
+  - name: Use the versions page to enable outbound marketing
+    href: versions.md
+  - name: Journeys
+    items:
+    - name: Move triggers between environments
+      href: move-triggers-between-environments.md
+    - name: Select the audience source for journeys
+      href: real-time-marketing-audience-data.md
+    - name: Customer Insights - Journeys link tracking mechanics
+      href: real-time-marketing-link-tracking-mechanics.md
   - name: Customer Insights - Journeys settings
     items:
-    - name: Settings overview
-      href: marketing-settings.md
-    - name: Customer Insights - Journeys administrator settings
+    - name: Journeys administrator settings
       href: real-time-marketing-admin-settings.md
-    - name: Create consistent branding with brand profiles
-      href: brand-profiles.md
-    - name: Configure lead scoring options
-      href: mkt-settings-lead-score-options.md
     - name: Add or remove sample data
       href: /power-platform/admin/add-remove-sample-data
-    - name: Marketing analytics configuration
-      href: mkt-settings-analytics.md
-    - name: Configure landing pages
-      href: mkt-settings-landing-pages.md
-    - name: Sync entities and track insights
-      href: mkt-settings-sync.md
-    - name: Set matching strategies
-      href: mkt-settings-matching.md
-    - name: Default marketing settings
-      href: mkt-settings-default-marketing.md
-    - name: Configure your social media accounts
-      href: mkt-settings-social-media.md
-    - name: Data protection tools
-      href: mkt-settings-data-protection.md
-    - name: Event management settings
-      href: events-settings.md
-    - name: Manage LinkedIn Lead Gen
-      href: linkedin-configuration.md
     - name: Quota limits
       href: quota-management.md
     - name: Trial quota limits
       href: trial-preview-limits.md
     - name: Feature switches
       href: admin-feature-switches.md
-    - name: Configure AI features
-      href: admin-machine-learning.md
     - name: Control access to designer features
       href: designer-feature-protection.md
   - name: Email administration
@@ -504,8 +468,6 @@
         href: improve-deliverability-to-china.md
       - name: Google Postmaster Tools - What it is and how it can help you
         href: google-postmaster.md
-      - name: Troubleshoot email forwarding and replies
-        href: email-troubleshooting.md
     - name: Improve sending reputation
       items:
       - name: Email policies and suspension standards
@@ -528,20 +490,12 @@
       href: developer/email-designer-customization.md
   - name: Privacy and compliance
     items:
-    - name: Data protection and privacy
-      href: privacy.md
-    - name: Use privacy features
-      href: privacy-use-features.md
     - name: Compliance overview
       href: compliance-overview.md
     - name: Manage user compliance settings
       href: real-time-marketing-compliance-settings.md
-    - name: Set up global double opt-in
-      href: double-opt-in.md
-    - name: Set up form double opt-in
-      href: form-double-opt-in.md
-    - name: How the app uses cookies
-      href: cookies.md
+    - name: Use privacy features
+      href: privacy-use-features.md
     - name: Anonymized customer data human review notice
       href: anonymized-data-review.md
   - name: Maintain the Customer Insights - Journeys app
@@ -556,6 +510,10 @@
       href: fair-use-policy.md
     - name: Throughput guidance
       href: real-time-marketing-throughput-guidance.md
+  - name: Manage SMS (text message) keywords used in customer journeys
+    href: manage-sms-keywords.md
+  - name: Install add-ons
+    href: add-ons.md
   - name: Administration and setup FAQ
     href: setup-troubleshooting.yml
   - name: Known issues and workarounds
@@ -585,14 +543,14 @@
 - name: Troubleshoot
   items:
   - name: Customer Insights - Journeys troubleshooting
-    href: /troubleshoot/dynamics-365/marketing/welcome-marketing
+    href: /troubleshoot/dynamics-365/customer-insights/welcome-customer-insights
 - name: Outbound marketing
   items:
   - name: Outbound marketing user guide overview
     href: user-guide.md
   - name: Get started
     items:
-    - name: Find your way around
+    - name: Find your way around outbound marketing
       href: navigation.md
     - name: Accessibility and keyboard shortcuts
       href: designer-shortcuts.md
@@ -652,8 +610,6 @@
       href: personalized-page-content.md
     - name: Create marketing forms
       href: marketing-forms.md
-    - name: Use marketing forms for event registration
-      href: event-forms.md
     - name: Enable prefilling for forms
       href: form-prefill.md
     - name: Embed forms on external websites
@@ -728,6 +684,66 @@
       href: activity-templates.md
     - name: Troubleshoot customer journey customization errors
       href: customer-journey-recovery-items.md
+  - name: Event planning and management
+    items:
+    - name: Event management in outbound marketing overview
+      href: event-management-outbound.md
+    - name: Create an event
+      items:
+      - name: Open the event management work area
+        href: open-events-outbound.md
+      - name: Set up an event
+        href: set-up-event-outbound.md
+      - name: Set up session-level registration and waitlisting
+        href: session-level-registration-outbound.md
+      - name: Set up and manage an event waitlist
+        href: event-waitlist-outbound.md
+      - name: Create and manage recurring events
+        href: event-recurring-outbound.md
+      - name: Create and use event templates
+        href: event-templates-outbound.md
+      - name: Create an event from another event
+        href: event-from-event-outbound.md
+    - name: Host a Microsoft Teams webinar
+      items:
+      - name: Set up a Teams webinar
+        href: teams-webinar-outbound.md
+      - name: Optimize your event check-in flow
+        href: optimize-check-in-outbound.md
+      - name: Set up a non-Teams webinar
+        href: set-up-webinar-outbound.md
+    - name: Register event attendees
+      items:
+      - name: Invite, register, and house event attendees
+        href: invite-register-house-event-attendees-outbound.md
+      - name: Use marketing forms for event registration
+        href: event-forms-outbound.md
+      - name: Add custom fields to your event registration form
+        href: custom-registration-fields-outbound.md
+    - name: Create an event website
+      items:
+      - name: Set up the event website
+        href: set-up-event-portal-outbound.md
+      - name: Change the URL for events hosted on Portals
+        href: events-change-url-outbound.md
+    - name: Manage events
+      items:
+      - name: Event management dashboard
+        href: event-management-dashboard-outbound.md
+      - name: Manage event sponsorships
+        href: manage-event-sponsorships-outbound.md
+      - name: Manage attendee logistics and accommodation
+        href: manage-event-logistic-outbound.md
+      - name: Set up online payment for events
+        href: event-payment-gateway-outbound.md
+      - name: View and record financial information for events
+        href: event-financials-outbound.md
+    - name: Follow up with attendees
+      items:
+      - name: Follow up after the event
+        href: followup-after-event-outbound.md
+    - name: Event troubleshoot + FAQ
+      href: event-troubleshoot-outbound.md  
   - name: Lead generation and management
     items:
     - name: The lead lifecycle
@@ -786,6 +802,44 @@
         href: marketing-analytics/analytics-gallery-reach.md
       - name: "Gallery: Marketing form submission report"
         href: marketing-analytics/analytics-gallery-forms.md
+  - name: Administer (outbound marketing)
+    items:
+    - name: Outbound marketing settings
+      items:
+      - name: Settings overview
+        href: marketing-settings.md
+      - name: Create consistent branding with brand profiles
+        href: brand-profiles.md
+      - name: Configure lead scoring options
+        href: mkt-settings-lead-score-options.md
+      - name: Marketing analytics configuration
+        href: mkt-settings-analytics.md
+      - name: Configure landing pages
+        href: mkt-settings-landing-pages.md
+      - name: Sync entities and track insights
+        href: mkt-settings-sync.md
+      - name: Set matching strategies
+        href: mkt-settings-matching.md
+      - name: Default marketing settings
+        href: mkt-settings-default-marketing.md
+      - name: Data protection tools
+        href: mkt-settings-data-protection.md
+      - name: Event management settings
+        href: events-settings.md
+      - name: Configure AI features
+        href: admin-machine-learning.md
+    - name: Data protection and privacy
+      href: privacy.md
+    - name: Set up global double opt-in in outbound marketing
+      href: double-opt-in.md
+    - name: Set up form double opt-in in outbound marketing
+      href: form-double-opt-in.md
+    - name: How the outbound marketing app uses cookies
+      href: cookies.md
+    - name: Configure your social media accounts
+      href: mkt-settings-social-media.md
+    - name: Manage LinkedIn Lead Gen
+      href: linkedin-configuration.md
   - name: Learning catalog
     items:
     - name: Learning catalog overview

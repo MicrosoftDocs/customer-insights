@@ -13,7 +13,7 @@ search.audienceType:
 
 # Check your message for errors and prepare it for delivery
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 When you're done designing and previewing your email, you're ready to start sending it. First, you need to check it for errors. Then, once it passes the error check, you must go live to activate it and make it available on the marketing services. Finally, set up a customer journey to establish the target segment, delivery schedule, and follow-up actions.
 
@@ -60,4 +60,4 @@ More information: [Use customer journeys to create automated campaigns](customer
 
 Once you start delivering an email message using a customer journey, Dynamics 365 Customer Insights - Journeys will begin to collect information about how recipients interact with that message.  The system provides a wealth of information, including analytics, KPIs, graphs, and more, to help you gain insights from your marketing results. More information: [Analyze results to gain insights from your marketing activities](insights.md)
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

@@ -1,5 +1,5 @@
 ---
-title: Add a payment gateway to your event website
+title: Add a payment gateway to your event website in outbound marketing
 description: Describes how to set up a payment gateway for the event website, so contacts can pay for a ticket while registering in  Dynamics 365 Customer Insights - Journeys.
 ms.date: 08/18/2023
 ms.topic: article
@@ -11,9 +11,12 @@ search.audienceType:
   - enduser
 ---
 
-# Add a payment gateway to your event website
+# Add a payment gateway to your event website in outbound marketing
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+
+> [!IMPORTANT]
+> This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
 
 If you have one or more events where contacts must purchase a pass, then your contacts will probably appreciate being able to pay for their passes online while they are registering for the event on your event website.
 
@@ -145,4 +148,4 @@ After your back-end solution has verified payment, it must invoke the `msevtmgt_
 
 For more information about how to execute custom actions, see [Use Web API actions](/powerapps/developer/common-data-service/webapi/use-web-api-actions).
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

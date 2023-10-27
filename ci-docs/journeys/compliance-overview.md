@@ -1,7 +1,7 @@
 ---
 title: Compliance overview
-description: Learn how to manage compliance settings in Dynamics 365 Marketing.
-ms.date: 08/21/2023
+description: Learn how to manage compliance settings in Dynamics 365 Customer Insights - Journeys and outbound marketing.
+ms.date: 10/27/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -13,7 +13,7 @@ search.audienceType:
 
 # Manage user compliance settings
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article applies to Customer Insights - Journeys *and* outbound marketing.
@@ -24,12 +24,15 @@ Customer Insights - Journeys and outbound marketing have distinct but related co
 
 In Customer Insights - Journeys, consent is captured and stored at the contact point. A contact point is the destination for a message (for example, an email address or phone number). Customer consent is stored on a per-channel basis. For example, the email `somebody@example.com` has consented to receive commercial communications about upcoming events.  
 
-The primary benefit of contact point consent is that it allows Customer Insights - Journeys to orchestrate journeys across any entity. Orchestrating across journeys means you can enforce consent for Leads, Customer Insights - Data profiles, Contacts, and any other entity. This approach is opposed to outbound marketing journeys, which can only orchestrate journeys for Contact entities.
+The primary benefit of contact point consent is that it allows Customer Insights - Journeys to orchestrate real-time journeys across any entity. Orchestrating across journeys means you can enforce consent for leads, Customer Insights - Data profiles, contacts, and any other entity. This approach is opposed to outbound marketing journeys, which can only orchestrate journeys for contact entities.
 
-In outbound marketing, consent is captured and stored on the Contact entity in fields like `DoNotEmail` and `DoNotBulkEmail` that apply to the entire Contact record and all its email addresses. This approach doesn't allow for different consent to be captured for a contact’s multiple email addresses, phone numbers, etc.
+In outbound marketing, consent is captured and stored on the contact entity the `DoNotEmail`, `DoNotBulkEmail` and `DoNotTrack` fields that apply to the entire contact record and all its email addresses. This approach doesn't allow for different consent to be captured for a contact’s multiple email addresses, phone numbers, etc.
 
 > [!IMPORTANT]
-> While real-time marketing checks the **DoNotEmail** and **DoNotBulkEmail** fields on the contact entity, updates made to consent from messages will not update the **DoNotEmail** and **DoNotBulkEmail** fields on the contact. Updates from messages will only update the contact point consent records for the email address. This means that outbound marketing messages will not be affected by changes made to consent records based on messages sent by real-time marketing.
+> Real-time journeys may check the contact's `DoNotEmail`, `DoNotBulkEmail`, and `DoNotTrack` fields to match outbound marketing's consent enforcement behavior and aid in the transition from outbound marketing to real-time journeys. To learn more, visit [Manage user compliance settings in Customer Insights - Journeys](real-time-marketing-compliance-settings.md)
+
+> [!IMPORTANT]
+> Outbound marketing does not check contact point consent records to evaluate consent when sending messages. This means that outbound marketing messages will not be affected by contact point consent records.
 
 ## Compliance profiles
 
@@ -39,28 +42,50 @@ Learn more: [Compliance profiles](real-time-marketing-compliance-settings.md#com
 
 ## User contact preferences
 
-There are four ways that users can manage their contact preferences: subscription centers, preference pages, external links, and preference centers.  
-
-### Subscription centers
-
-Outbound marketing subscription centers are marketing pages that known contacts can use to manage their communication preferences and contact details with your organization. All subscription centers include a "do not email" check box. When a contact chooses this option, the "do not bulk email" flag gets set on their contact record, and Dynamics 365 Customer Insights - Journeys won't send any marketing email messages to that contact. Optionally, your subscription center can present several other subscription options, such as a list of available newsletters.  
-
-Learn more: [Set up a subscription center](set-up-subscription-center.md)
-
-Customer Insights - Journeys can also use subscription centers if the journey targets contacts. Outbound subscription centers give you consent management flexibility, enabling you to create multiple subscription centers customized and branded to your needs.
-
-Learn more: [Use outbound subscription centers in Customer Insights - Journeys](real-time-marketing-outbound-subscription.md)
+There are four ways that users can manage their contact preferences: preference centers, preference pages, subscription centers, and external links.  
 
 ### Preference centers
 
-Customer Insights - Journeys uses preference centers to enable customers to control the types of communications they wish to receive and the contact point at which they wish to receive them. Preference centers can be configured to match company branding and can include options for users to adjust the consent for various purposes that have been configured.  
+> [!TIP]
+> Preference centers are the recommended way to enable customers to manage their communication preferences with your organization.
+
+Customer Insights - Journeys uses preference centers to enable customers to control the types of communications they wish to receive and the contact point at which they wish to receive them. They work with all supported entity types: leads, contacts, etc. Preference centers can be configured to match company branding and can include options for users to manage the consent for purposes and topics. Preference centers also support multi-brand consent, enabling you to manage consent independently for each of your lines of business.
 
 Learn more: [Create Customer Insights - Journeys preference centers](real-time-marketing-preference-centers.md)
 
 ### Preference pages
 
-Customer Insights - Journeys uses preference pages as another way to manage user consent. A preference page is a web page where your customers can change their consent settings for receiving emails and text messages and for tracking. You can't create a new preference page. Instead, you can customize the language on the page for updating contact point consent as used in Customer Insights - Journeys. With the introduction of preference centers, existing preference pages will continue to support users updating their consent. However, moving forward, all new compliance profiles leverage the enhanced functionality of preference centers.  
+> [!IMPORTANT]
+> We recommend replacing preference pages with preference centers to take full advantage of the consent features available in Customer Insights - Journeys.
 
-Learn more: [Customer Insights - Journeys preference pages](real-time-marketing-compliance-settings.md)
+Customer Insights - Journeys uses preference pages as another way to manage user consent. A preference page is a web page where your customers can change their consent settings for receiving emails and text messages and for tracking. You can't create a new preference page. Instead, you can customize the language on the page for updating contact point consent as used in Customer Insights - Journeys. With the introduction of preference centers, existing preference pages will continue to support users updating their consent. However, moving forward, all new compliance profiles use the enhanced functionality of preference centers.  
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+Learn more: [Customer Insights - Journeys preference centers](real-time-marketing-preference-centers.md)
+
+### Subscription centers
+
+> [!CAUTION]
+> Subscription centers can only be used with contact entities. Leads and Customer Insights - Data profiles are not supported by subscription centers. If you plan to send communication to these entity types we recommend using a preference center.
+
+Outbound marketing subscription centers are marketing pages that contacts can use to manage their communication preferences and contact details with your organization. Subscription centers must be configured in outbound marketing, but can be used by real-time journeys. Subscription centers don't work with real-time journey's purposes and topics. Only data on the contact record (such as the **DoNotBulkEmail** attribute) and Subscription Lists can be updated from a subscription center.
+
+Learn more: [Set up a subscription center](set-up-subscription-center.md)
+
+Customer Insights - Journeys can also use subscription centers if your journeys only target contacts. Using subscription centers from a real-time journey can enable you to start sending messages from real-time journeys before you transition to the newer preference center option.
+
+> [!NOTE]
+> When a subscription center is used in a real-time journey, updates to the `{{DoNotBulkEmail}}` field made by the user will result in a contact point consent record being created or updated for the commercial purpose of the compliance profile configured on the email message.
+
+Learn more: [Use outbound subscription centers in Customer Insights - Journeys](real-time-marketing-outbound-subscription.md)
+
+### External links
+
+> [!CAUTION]
+> External links are currently designed to work with externally hosted subscription centers and can only be used with contact entities. Leads and Customer Insights - Data profiles are not supported by external links. If you plan to send communication to these entity types we recommend using a preference center.
+
+> [!TIP]
+> If you want to include a link to an external preference management page and the modifications made to the URL do not work for your use case, we recommend that you configure your messages to include the preference management link directly in the message template and not use the built-in compliance `{{PreferenceCenter}}` tokens.
+
+External links allow you to configure a website URL that points to an externally hosted subscription center. The URL configured in the compliance profile will be included in messages sent with this compliance profile. When the URL is inserted into a message, it is modified to include a query string parameter at the end to enable the receiving subscription center to identify the contact that was sent the message.
+
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

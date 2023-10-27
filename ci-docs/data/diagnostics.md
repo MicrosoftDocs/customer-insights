@@ -14,14 +14,20 @@ ms.author: bkief
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
-Forward logs from Dynamics 365 Customer Insights - Data using Azure Monitor. Azure Monitor resource logs let you monitor and send logs to [Azure Storage](https://azure.microsoft.com/services/storage/), [Azure Log Analytics](/azure/azure-monitor/logs/log-analytics-overview), or stream them to [Azure Event Hubs](https://azure.microsoft.com/services/event-hubs/).
+[!INCLUDE [azure-ad-to-microsoft-entra-id](../journeys/includes/azure-ad-to-microsoft-entra-id.md)]
 
+Forward logs from Dynamics 365 Customer Insights - Data using Azure Monitor. Azure Monitor resource logs let you monitor and send logs to [Azure Storage](https://azure.microsoft.com/services/storage/), [Azure Log Analytics](/azure/azure-monitor/logs/log-analytics-overview), or stream them to [Azure Event Hubs](https://azure.microsoft.com/services/event-hubs/). Forwarding your logs to Azure Monitor lets you observe your Customer Instance - Data instance with great flexibility. Some of the use cases you can solve with this data in Azure Monitor Log Analytics include:
+- Monitoring and troubleshooting: You can use Log Analytics to monitor and troubleshoot your applications, infrastructure, and network. It helps you identify issues and diagnose problems quickly.
+- Security analysis: You can use Log Analytics to detect security threats and investigate security incidents.
+- Compliance auditing: You can use Log Analytics to audit your infrastructure and applications for compliance with regulatory standards.
+
+## Logs available for Customer Insights - Data
 Customer Insights sends the following event logs:
 
 - **Audit Events**
   - **APIEvent** - enables change tracking via the Customer Insights - Data UI.
 - **Operational Events**
-  - **WorkflowEvent** - lets you set up [data sources](data-sources.md), [unify](data-unification.md), [enrich](enrichment-hub.md), and [export](export-manage.md) data into other systems. These steps can be done individually (for example, trigger a single export). They can also run orchestrated (for example, data refresh from data sources that trigger the unification process, which will pull in enrichments and export the data into another system). For more information, see the [WorkflowEvent Schema](#workflow-event-schema).
+  - **WorkflowEvent** - lets you set up [data sources](data-sources.md), [unify](data-unification.md), [enrich](enrichment-manage.md), and [export](export-manage.md) data into other systems. These steps can be done individually (for example, trigger a single export). They can also run orchestrated (for example, data refresh from data sources that trigger the unification process, which will pull in enrichments and export the data into another system). For more information, see the [WorkflowEvent Schema](#workflow-event-schema).
   - **APIEvent** - sends all API calls of the environment. For more information, see the [APIEvent Schema](#api-event-schema).
 
 [!INCLUDE [public-preview-note](includes/public-preview-note.md)]
@@ -172,7 +178,7 @@ The `identity` JSON object has the following structure
 
 ### Workflow event schema
 
-The workflow contains multiple steps. [Ingest data sources](data-sources.md), [unify](data-unification.md), [enrich](enrichment-hub.md), and [export](export-manage.md) data. All those steps can run individually or orchestrated with the following processes.
+The workflow contains multiple steps. [Ingest data sources](data-sources.md), [unify](data-unification.md), [enrich](enrichment-manage.md), and [export](export-manage.md) data. All those steps can run individually or orchestrated with the following processes.
 
 #### Operation types
 
@@ -190,7 +196,7 @@ The workflow contains multiple steps. [Ingest data sources](data-sources.md), [u
 | TableMeasures    | [Segments and Measures](segments.md)      |
 | Measures          | [Segments and Measures](segments.md)      |
 | Segmentation      | [Segments and Measures](segments.md)      |
-| Enrichment        | [Enrichment](enrichment-hub.md)                                          |
+| Enrichment        | [Enrichment](enrichment-manage.md)                                          |
 | Intelligence      | [Predictions](predictions.md)                                          |
 | AiBuilder         | [Predictions](predictions.md)                                          |
 | Insights          | [Predictions](predictions.md)                                          |

@@ -1,6 +1,6 @@
 ---
-title: "Step 3: Create a workflow or plug-in to implement your custom logic"
-description: Partners can create a workflow or plug-in to implement their custom logic for a custom channel in Dynamics 365 Marketing.
+title: "Step 3: Create a workflow or plug-in to implement your custom logic in outbound marketing"
+description: Partners can create a workflow or plug-in to implement their custom logic for a custom channel in outbound marketing.
 ms.date: 04/01/2018
 ms.topic: how-to
 author: alfergus
@@ -9,9 +9,9 @@ search.audienceType:
   - developer
 ---
 
-# Step 3: Create a workflow or plug-in to implement your custom logic
+# Step 3: Create a workflow or plug-in to implement your custom logic in outbound marketing
 
-[!INCLUDE[consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -31,4 +31,4 @@ The workflow or the plug-in should be configured to:
 > [Step 4: Test your custom channel tile](test-custom-channel-tile.md)  
 
 
-[!INCLUDE[footer-include](.././includes/footer-banner.md)]
+[!INCLUDE [footer-include](.././includes/footer-banner.md)]

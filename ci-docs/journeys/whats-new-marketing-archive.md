@@ -13,7 +13,7 @@ search.audienceType:
 
 # What's new archive for Dynamics 365 Customer Insights - Journeys
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 This article contains archived information about new features, improvements, and bug fixes from previous years. This article is not maintained and is saved for historical reference purposes.
 
@@ -85,7 +85,7 @@ Starting this month, we'll highlight recently published blogs and scenario docum
 
 - **Fine-tune email communications with filtered lists**
     - Including an entire list in an email is a common scenario. But there are times when it's more effective to only include items from a list that meet certain conditions. For example, in a confirmation email about an order, you may need to separately list items that are back ordered. Similarly, communication about a multi-session conference is easier to consume if the sessions are organized by topic or track. Now you can easily achieve these scenarios by simply adding a filter to your email list.
-    - [Docs](real-time-marketing-personalize-lists.md#define-a-list-filter)
+    - [Docs](real-time-marketing-personalize-lists.md)
 
     > [!div class="mx-imgBorder"]
     > ![Screenshot of personalize lists.](media/whats-new-personalize-lists.png "Screenshot of personalize lists")
@@ -2476,4 +2476,4 @@ The Dynamics 365 Customer Insights - Journeys November 2019 update includes the 
 - Websites: For website insights, the **Timeline** display has been renamed to **Visits**.
 - Customer Insights: Deleted contacts now sync correctly and more quickly.
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

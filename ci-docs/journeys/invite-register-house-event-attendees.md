@@ -13,7 +13,7 @@ search.audienceType:
 
 # Invite, register, and house event attendees
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 After your event is fully modeled in Dynamics 365 Customer Insights - Journeys, you're ready to start promoting it. The system provides many tools to help you do this.
 
@@ -29,9 +29,7 @@ After your event is planned and set up, it's time to start promoting it! Custome
 
 Event registration enables attendees to sign up for your event and reserve their seats for specific sessions or tracks. It also helps you gauge interest in the event, and to signal demand to event planners for purposes such as capacity planning. Event managers can use registration records to evaluate in advance how many resources they'll need to have available, which sessions require larger rooms, or even whether a session should be canceled. Advance registration also enables attendees to be confident that their place is reserved for all the sessions they want to attend.
 
-The [event website](set-up-event-portal.md) enables contacts to register themselves for any event that you are managing in Customer Insights - Journeys. Depending on the [registration options](session-level-registration.md) you've chosen, attendees may be able to choose their schedule by selecting among available passes (each of which grants access to a different collection of sessions), or by selecting each session individually to assemble their own custom schedule. A simple event might just have one registration option that applies to all attendees. You can even implement [online payment](event-payment-gateway.md), but some custom development is required. [Waitlists](event-waitlist.md) are available for sold out events or sessions.
-
-Customer Insights - Journeys users can also register attendees manually by creating event registrations, session registrations, and pass assignments directly in the app. This lets you provide phone-based registration, for example. Manual registrations also enable users to bypass the [Waitlists](event-waitlist.md) if needed.
+Customer Insights - Journeys users can register attendees manually by creating event registrations, session registrations, and pass assignments directly in the app. This lets you provide phone-based registration, for example. Manual registrations also enable users to bypass the [Waitlists](event-waitlist.md) if needed.
 
 Each registration results in an event-registration record, which pulls together a registrant's profile, their passes, the sessions they'll attend, and, eventually, the sessions they did attend. Each registration record has a unique ID, which the system encodes into a QR code that you can embed in a registration-confirmation email sent to each registrant. You'll also find the QR code embedded in each registration record so you can use it in other contexts, such as to print badges to be handed out at the event.
 
@@ -54,4 +52,4 @@ If your organization has set up hotels and room allocations for your event in Cu
 
 More information: [Manage attendee logistics and accommodation availability](manage-event-logistic.md)
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

@@ -1,6 +1,6 @@
 ---
-title: Dynamics 365 Customer Insights - Journeys developer guide
-description: Provides information about how you can extend the customer journeys feature using custom channels.
+title: Outbound marketing developer guide
+description: Provides information about how you can extend outbound marketing.
 ms.date: 04/01/2018
 ms.topic: landing-page
 author: alfergus
@@ -9,9 +9,9 @@ search.audienceType:
   - developer
 ---
 
-# Developer guide
+# Outbound marketing developer guide
 
-[!INCLUDE[consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -45,4 +45,4 @@ search.audienceType:
 [Outbound marketing user guide](../../journeys/user-guide.md)  
 [Developer guide for Dynamics 365](/dynamics365/customerengagement/on-premises/developer/overview) 
 
-[!INCLUDE[footer-include](.././includes/footer-banner.md)]
+[!INCLUDE [footer-include](.././includes/footer-banner.md)]

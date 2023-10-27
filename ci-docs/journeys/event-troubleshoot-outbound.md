@@ -1,5 +1,5 @@
 ---
-title: Troubleshoot event management
+title: Troubleshoot event management in outbound marketing
 description: Troubleshooting and frequently asked questions for events in Dynamics 365 Customer Insights - Journeys.
 ms.date: 08/18/2023
 ms.topic: article
@@ -11,14 +11,19 @@ search.audienceType:
   - enduser
 ---
 
-# Troubleshoot event management
+# Troubleshoot event management in outbound marketing
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+
+[!INCLUDE [azure-ad-to-microsoft-entra-id](./includes/azure-ad-to-microsoft-entra-id.md)]
+
+> [!IMPORTANT]
+> This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
 
 ## How are contacts created in event management?
 
 - Contacts in event management are created when:
-    - A *website visitor* (1) registers through a portal or (2) logs in through AAD B2C using the events API.
+    - A *website visitor* (1) registers through a portal or (2) logs in through [Microsoft Entra ID](/azure/active-directory/fundamentals/whatis) using the events API.
     - An *attendee* (not necessarily the same as a website visitor) (1) is registered or (2) a pass is paid for the attendee (a contact isn't created before this action).
 - Contacts are merged when an attendee matches an existing contact by email, name, or surname. The merging functionality is [configurable](events-settings.md#event-administration).
 
@@ -53,4 +58,4 @@ Before any portal changes, you should make a backup of the current website.
 
 Even though hosting the website anywhere is possible, Dynamics 365 Customer Insights - Journeys can't configure or debug the custom hosting environment.
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

@@ -13,7 +13,7 @@ search.audienceType:
 
 # Business unit support in Customer Insights - Journeys
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 Business unit scoping in Customer Insights - Journeys can be enabled at an environment level by an administrator. Once this feature is enabled, all real-time journeys and segments created within the environment will be automatically scoped to the record owner’s business unit.
 
@@ -60,4 +60,4 @@ Business units affect forms as follows:
 
 [Domain authentication for modernized business units](domain-authentication.md#domain-authentication-for-modernized-business-units)
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

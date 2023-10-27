@@ -24,36 +24,6 @@ sections:
   - name: Ignored
     questions:
       - question: |
-          How is Customer Insights - Journeys licensed?
-        answer: |
-          Customer Insights - Journeys is licensed per tenant, with each tenant priced according to the number of interacted persons stored in your database. To identify contacts, Customer Insights - Journeys monitors key interaction types. Any contact that performs one or more interactions will be flagged as an interacted person and count against the allotment. Here are answers to several of the most frequently asked questions about licensing:
-          
-          - **What is an interacted person?**  
-              An interacted person is any entity (such as a contact, lead, account, or Customer Insights profile) engaged in an interaction. Entities that are stored, but not marketed to using Customer Insights - Journeys interactions don't count towards the interacted people quota. After an interaction (see below) is logged for a person. It doesn't matter how many interactions occur on that entity, it is counted once. After an interacted person has not received or engaged an interaction for 12 months, the entity becomes inactive and is no longer counted.
-
-          - **What is an interaction?**  
-              An interaction is an outbound message or inbound action (such as a form submission) orchestrated through Customer Insights - Journeys. The interaction can be sent through out-of-box channels available in Customer Insights - Journeys (for example, email, SMS, or push notifications), other Microsoft channels (for example, ACS), or third-party systems integrated with Customer Insights - Journeys (for example, other text message (SMS) providers). Form submissions and other inbound channels are also considered as interactions. Safe use limits allow 10x interactions per interacted person licensed.  
-          
-          - **Which interacted people count against my quota?**  
-              Interacted people are licensed at the tenant level. Therefore, any entities across all Dataverse environments on a tenant where the Customer Insights - Journeys application is orchestrating interactions count toward the total interacted people for the tenant. This is true for any type of environment including production, sandbox, developer, or trial.
-          
-          - **Where can I see my quotas and quota usage?**  
-              To see how many of each quota you've purchased and used, go to **Settings** > **Advanced settings** > **Other settings** > **Quota limits**.
-          
-          - **What is my monthly interaction quota?**  
-              Your monthly interaction quota is equal to 10 times the number of interacted people you have purchased, per month. For example, if you own 1 interacted person, you can interact with them 10 times per month. If you need more than 10 interactions, you should increase the number of interacted people you own to allow for the volume of monthly interactions you need to send. Consider the peak month of the year you need to optimize for and ensure that you have the right amount of interacted people to allow for that volume and corresponding performance.
-          
-          - **How long is a person considered interacted?**  
-              When an entity is interacted with, it is counted as an interacted person and stays that way until it has not been interacted with for 12 months. Interacted person consumption is cumulative throughout the license period and even post-license extension, subject to the 12-month rule mentioned above.
-          
-          - **How can I learn more about Customer Insights - Journeys licensing?**
-            - For an overview, see [Purchase Dynamics 365 Customer Insights](purchase.md) 
-            - For complete terms that apply to subscribed (paid) versions, download the [Microsoft Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/p/?linkid=866544).
-            - For trials, see [Customer Insights - Journeys limits for trials](trial-preview-limits.md).
-          
-          <a name="incompatible-platform"></a>
-          
-      - question: |
           Why is my instance (organization) incompatible with Customer Insights - Journeys?
         answer: |
           Your tenant might have several different types of instances (also called *organizations*) installed on it, including some that are full Dynamics 365 instances and others that are, for example, Power Apps instances (also called *environments*) that include many components of Dynamics 365, but not all of the components required by Customer Insights - Journeys.
@@ -68,7 +38,7 @@ sections:
           One of the requirements for running the [setup wizard](purchase.md) for Customer Insights - Journeys is that you must sign in to Microsoft 365 with a user account that has permissions to register applications on Azure. To find out if you have these permissions, do the following:
           
           1. Go to [portal.azure.com](https://portal.azure.com) and sign in with the Microsoft 365 account that you want to use to install Customer Insights - Journeys.
-          1. Select **Azure Active Directory** under **Azure services**. On the next page, select **User settings** from the left side navigation.
+          1. Select **Microsoft Entra ID** under **Azure services**. On the next page, select **User settings** from the left side navigation.
           
               > [!div class="mx-imgBorder"]
               > ![Azure user settings](media/faq-azure-user-settings2.png)
@@ -83,7 +53,7 @@ sections:
           To fix this, do one of the following:
           
           - If you're just setting up a trial of Customer Insights - Journeys, then consider creating a new trial tenant and set up the Customer Insights - Journeys trial there, as described in [Sign up for a free trial](trial-signup.md).
-          - If you want to continue using the tenant where you received this error, then you must convert your unmanaged org into a managed one and then try to install Customer Insights - Journeys again. For instructions on how to do this, see [Take over an unmanaged directory as administrator in Azure Active Directory](/azure/active-directory/enterprise-users/domains-admin-takeover).
+          - If you want to continue using the tenant where you received this error, then you must convert your unmanaged org into a managed one and then try to install Customer Insights - Journeys again. For instructions on how to do this, see [Take over an unmanaged directory as administrator in Microsoft Entra ID](/azure/active-directory/enterprise-users/domains-admin-takeover).
           
           <a name="run-fre"></a>
           
@@ -108,4 +78,4 @@ sections:
           
           More information: [About Unified Interface for model-driven apps in Power Apps](/power-platform/admin/about-unified-interface) and [Find your way around Customer Insights - Journeys](navigation.md)
           
-          [!INCLUDE[footer-include](./includes/footer-banner.md)]
+          [!INCLUDE [footer-include](./includes/footer-banner.md)]

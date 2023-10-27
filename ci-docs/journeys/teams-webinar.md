@@ -13,11 +13,13 @@ search.audienceType:
 
 # Use Microsoft Teams for Dynamics 365 Customer Insights - Journeys online events
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+
+[!INCLUDE [azure-ad-to-microsoft-entra-id](./includes/azure-ad-to-microsoft-entra-id.md)]
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4J4cV]
 
-[!INCLUDE[marketing-trial-cta](./includes/marketing-trial-cta.md)]
+[!INCLUDE [marketing-trial-cta](./includes/marketing-trial-cta.md)]
 
 This article explains how to use Microsoft Teams as an online meeting provider for Customer Insights - Journeys events. Teams event functionality is incorporated directly into the Customer Insights - Journeys app, allowing you to use Teams webinars or Teams live events for one/some to many online events, and Teams meetings for interactive online meetings.
 
@@ -123,7 +125,7 @@ The discrepancies in appearance are styling issues that won't limit the function
 - You may notice that landing pages for Teams meetings and webinars look the same. This is expected. The in-meeting experience is the same for a traditional meeting and a webinar. Your webinar will take place as you structured it with the roles of the attendees.
 - After you add a speaker engagement to your webinar through Dynamics 365, the meeting options in Teams will become visible. The calendar item will still be read-only in Teams. Make sure you edit your webinar only in Customer Insights - Journeys.
 
-Users [added as a guest](/azure/active-directory/external-identities/b2b-quickstart-add-guest-users-portal) to your Azure Active Directory tenant are not able to leverage any Teams integration options.
+Users [added as a guest](/azure/active-directory/external-identities/b2b-quickstart-add-guest-users-portal) to your Microsoft Entra ID tenant are not able to leverage any Teams integration options.
 
 ### Teams meetings
 
@@ -286,4 +288,4 @@ In scenarios where event record changes aren’t propagated to Teams, the Custom
 
 Once the live event is over, attendees can view the event recording by navigating to the attendee URL from their email. The recording will be available if the creator of the live event in Customer Insights - Journeys sets the **Recording available to attendees** flag to **Yes**.
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

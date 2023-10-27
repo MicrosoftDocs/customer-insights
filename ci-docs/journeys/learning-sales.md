@@ -13,7 +13,7 @@ search.audienceType:
 
 # Dynamics 365 Customer Insights - Journeys sales learning catalog
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -27,4 +27,4 @@ The following catalog is organized from core knowledge to specific domains, and 
 |----------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|-----------|
 | [Dynamics 365 and Power Platform fundamentals](/training/paths/dyn-power-plat-bus-app-fundamentals/) | Are you interested in learning about business applications? Start with this learning path to see how Dynamics 365 apps are used. Learn about cloud concepts, Power Platform, and how to get started with Dynamics 365 apps.   | Free, self-paced | 5 hr 36 min |
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

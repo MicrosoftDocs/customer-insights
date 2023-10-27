@@ -13,7 +13,7 @@ search.audienceType:
 
 # Customize Dynamics 365 Customer Insights - Journeys
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 ## Basic customizations
 
@@ -44,4 +44,4 @@ More information: [Design model-driven apps by using the app designer](/powerapp
 
 Advanced customization and integration with external systems is possible through code-based interactions with the system's various APIs. For details about writing code and developing for Dynamics 365 Customer Insights - Journeys and other model-driven apps in Dynamics 365, see the [developer documentation for Power Apps](/powerapps/?panel=developer#pivot=home).
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

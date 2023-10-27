@@ -1,6 +1,6 @@
 ---
-title: Set up event administration options and webinar provider accounts
-description: Set options for event administration and configure connections to your webinar provider accounts in Dynamics 365 Customer Insights - Journeys.
+title: Set up event administration options and webinar provider accounts in outbound marketing
+description: Set options for event administration and configure connections to your webinar provider accounts in outbound marketing.
 ms.date: 08/18/2023
 ms.topic: article
 author: alfergus
@@ -11,9 +11,14 @@ search.audienceType:
   - enduser
 ---
 
-# Set up event administration options and webinar provider accounts
+# Set up event administration options and webinar provider accounts in outbound marketing
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+
+[!INCLUDE [azure-ad-to-microsoft-entra-id](./includes/azure-ad-to-microsoft-entra-id.md)]
+
+> [!IMPORTANT]
+> This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
 
 The **Event management** settings let you set up the connections to your webinar provider accounts and set up a few defaults for event administration. 
 
@@ -107,7 +112,7 @@ To set your event-administration options:
     > You must only set **Enable demo payment confirmation** to **Yes** when presenting a demo of the event website. You must always set this to **No** before going to production because the simulated-payment feature can introduce a security vulnerability if enabled in a production environment.
 
     > [!NOTE]
-    > To make the name-based contact matching strategy work with AAD, you must provide first name and last name on sign-up. More information [Configuration for Azure Active Directory](developer/self-hosted.md#configuration-for-azure-active-directory).
+    > To make the name-based contact matching strategy work with [Microsoft Entra ID](/azure/active-directory/fundamentals/whatis), you must provide first name and last name on sign-up. More information [Configuration for Microsoft Entra ID](developer/self-hosted.md#configuration-for-microsoft-entra-id).
     > 
     > To make the name-based contact matching strategy work with **Portal Authentication** it is mandatory to provide first and last name after registering.
 
@@ -122,6 +127,6 @@ For more information about how to use the events API, including how to use the *
 
 ## Privacy notice
 
-[!INCLUDE[cc-privacy-events-webinar](./includes/cc-privacy-events-webinar.md)]
+[!INCLUDE [cc-privacy-events-webinar](./includes/cc-privacy-events-webinar.md)]
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

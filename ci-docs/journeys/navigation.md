@@ -1,6 +1,6 @@
 ---
-title: Navigate and use common features of Dynamics 365 Customer Insights - Journeys
-description: How do get around and work with common user interface elements in Dynamics 365 Customer Insights - Journeys.
+title: Navigate and use common features of outbound marketing
+description: How do get around and work with common user interface elements in outbound marketing.
 ms.date: 08/21/2023
 ms.topic: article
 author: alfergus
@@ -11,9 +11,9 @@ search.audienceType:
   - enduser
 ---
 
-# Navigate and use common features of Dynamics 365 Customer Insights - Journeys
+# Navigate and use common features of outbound marketing
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -45,12 +45,7 @@ Dynamics 365 is built out of applications (apps), areas, and entities.
 
 ### Move between apps
 
-Use the app-selector menu to switch between Customer Insights - Journeys and your other Dynamics 365 apps.
-
-> [!div class="mx-imgBorder"]
-> ![The app-selector menu.](media/nav-apps-ill2.png)
-
-The apps you see listed in your app-selector menu will depend on which apps you have licensed. When Customer Insights - Journeys is installed, you will have the following three apps at least:
+Use the app-selector menu to switch between Customer Insights - Journeys and your other Dynamics 365 apps. The apps you see listed in your app-selector menu will depend on which apps you have licensed. When Customer Insights - Journeys is installed, you will have the following three apps at least:
 
 - **Customer Insights - Journeys**: Go here to access all core marketing features, including the **Customer Insights - Journeys**, **Events**, **Settings**, and **Training** work areas.
 - **Surveys**: Go here to set up surveys that you can use together with your marketing emails, customer journeys, and events. Surveys are provided by Customer Voice, which is also available for use with other Dynamics 365 products. To maintain wide compatibility, it uses a slightly different user interface than the Customer Insights - Journeys app, which is why it is broken out into its own app here. More information: [Create and run online surveys](customer-voice.md)
@@ -127,4 +122,4 @@ Business processes help everyone follow best practices, even for situations that
 
 ![A typical business process display.](media/business-process.png "A typical business process display")
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

@@ -23,7 +23,7 @@ Get a 360-degree view of your customers directly in Dynamics 365 apps. With the 
 ## Prerequisites
 
 - Dynamics 365 model-driven apps, such as Sales or Customer Service, version 9.0 and later.
-- For your Dynamics 365 data to map to the unified customer profiles, we recommend it's [ingested from the Dynamics 365 app using the Microsoft Dataverse connector](connect-power-query.md). If you use a different method to ingest Dynamics 365 contacts (or accounts), make sure the `contactid` (or `accountid`) field is set as the [primary key for that data source during the data unification process](data-unification-map-tables.md#select-primary-key-and-semantic-type-for-attributes).
+- For your Dynamics 365 data to map to the unified customer profiles, we recommend it's [ingested from the Dynamics 365 app using the Microsoft Dataverse connector](connect-power-query.md). If you use a different method to ingest Dynamics 365 contacts (or accounts), make sure the `contactid` (or `accountid`) field is set as the [primary key for that data source during the data unification process](data-unification-map-tables.md#select-primary-key).
 - All Dynamics 365 users of the Customer Card Add-in must be [added as users](permissions.md) in Customer Insights - Data.
 - [Configured search and filter capabilities](search-filter-index.md).
 - Some data and controls are only available in environments of specific types. The add-in configuration will inform you if a control isn't available due to the selected environment type. This error will show within the control when rendering it.
@@ -31,7 +31,7 @@ Get a 360-degree view of your customers directly in Dynamics 365 apps. With the 
   - **Measure control** requires [configured customer attribute measures](measures.md).
   - **Intelligence control** requires data generated using [predictions or custom models](predictions.md).
   - **Customer details control** shows all fields from the profile available in the unified customer profile.
-  - **Enrichment control** requires active [enrichments](enrichment-hub.md) applied to customer profiles. The card add-in supports these enrichments: [Brands](enrichment-microsoft.md) provided by Microsoft and [Interests](enrichment-microsoft.md) provided by Microsoft.
+  - **Enrichment control** requires active [enrichments](enrichment-manage.md) applied to customer profiles. The card add-in supports these enrichments: [Brands](enrichment-microsoft.md) provided by Microsoft and [Interests](enrichment-microsoft.md) provided by Microsoft.
   - **Contacts control** requires a contact semantic table type.
   - **Timeline control** requires [configured activities](activities.md).
 

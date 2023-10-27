@@ -1,7 +1,7 @@
 ---
 title: How to use aggregate cross-journey analytics
 description: Learn how to use and interpret aggregate cross-journey analytics in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/22/2023
+ms.date: 09/26/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -13,7 +13,7 @@ search.audienceType:
 
 # How to use aggregate cross-journey analytics
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 Aggregate cross-journey analytics allow you to analyze your orchestrated journeys and evaluate their performance. Cross-journey analytics address your reporting needs by providing a performance dashboard out of the box with beautiful Power BI visuals. Use the dashboard to enhance stakeholder presentations regarding your journey's performance.
 
@@ -28,6 +28,10 @@ The cross-journey analytics dashboard allows you to check in on the performance 
 - Check in on the experiments that have been run in a journey.
 
 The following sections describe the widgets in greater depth.
+
+## Filters
+
+You can filter the dashboard views based on the date, one or more journeys, journey status, or journey goal. Keep in mind that the dashboard displays journeys created within the period specified in the date filter.
 
 ## KPI summary charts
 
@@ -74,4 +78,4 @@ Here are some advanced resources for this topic:
 
 - [Extracting Marketing Interactions in Dynamics 365 Customer Insights - Journeys](https://community.dynamics.com/blogs/post/?postid=4e96ca1e-52ed-4ae4-9887-af8d6e563304)
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

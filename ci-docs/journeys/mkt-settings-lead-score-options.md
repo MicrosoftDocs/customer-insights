@@ -1,6 +1,6 @@
 ---
-title: Configure lead scoring options
-description: Use the Lead scoring page in the Settings work area to configure a few basic options that control how automatic lead scoring works on your instance in Dynamics 365 Customer Insights - Journeys.
+title: Configure lead scoring options in outbound marketing
+description: Use the Lead scoring page in the Settings work area to configure a few basic options that control how automatic lead scoring works on your instance in outbound marketing.
 ms.date: 08/21/2023
 ms.topic: article
 author: alfergus
@@ -11,9 +11,9 @@ search.audienceType:
   - enduser
 ---
 
-# Configure lead scoring options
+# Configure lead scoring options in outbound marketing
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -34,4 +34,4 @@ Use the **Lead scoring** page in the **Settings** work area to configure a few b
     - **Automatic lead scores cleanup**: This option controls what happens when you stop a lead-scoring model that has already been live, and may therefore already have calculated some scores. Set this to **Yes** to delete all scores calculated by the stopped lead-scoring model (they will automatically be recalculated if you go live again with the model). Set this to **No** to continue to show the scores for stopped models (though these scores will slowly fall out of date if the model remains stopped).
 1. Save your settings.
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

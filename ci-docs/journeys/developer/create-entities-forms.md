@@ -1,6 +1,6 @@
 ---
-title: "Step 1: Create required entities and forms for custom channel"
-description: Create required custom entities, forms, and dashboards to store and display information about your custom channel in Dynamics 365 Customer Insights - Journeys.
+title: "Step 1: Create required entities and forms for a custom channel in outbound marketing"
+description: Create required custom entities, forms, and dashboards to store and display information about your custom channel in outbound marketing.
 ms.date: 04/01/2018
 ms.topic: how-to
 author: alfergus
@@ -9,9 +9,9 @@ search.audienceType:
   - developer
 ---
 
-# Step 1: Create required entities and forms for custom channel
+# Step 1: Create required entities and forms for a custom channel in outbound marketing
 
-[!INCLUDE[consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -30,4 +30,4 @@ More information:
 > [Step 2: Configure the tile for custom channel](configure-tile-custom-channel.md)
 
 
-[!INCLUDE[footer-include](.././includes/footer-banner.md)]
+[!INCLUDE [footer-include](.././includes/footer-banner.md)]

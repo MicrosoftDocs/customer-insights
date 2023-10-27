@@ -1,6 +1,6 @@
 ---
-title: Basic Operations on journeys using C#
-description: This sample shows how to perform basic operations on customer journey using C#.
+title: CRUD operations on outbound marketing customer journey using code
+description: This sample shows how to perform basic operations on outbound marketing customer journeys using C#.
 ms.date: 10/19/2020
 ms.topic: how-to
 author: alfergus
@@ -9,9 +9,9 @@ search.audienceType:
   - developer
 ---
 
-# CRUD operations on customer journey using code
+# CRUD operations on outbound marketing customer journey using code
 
-[!INCLUDE[consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -140,4 +140,4 @@ public class Snippet
 } 
 ```
 
-[!INCLUDE[footer-include](.././includes/footer-banner.md)]
+[!INCLUDE [footer-include](.././includes/footer-banner.md)]

@@ -13,7 +13,7 @@ search.audienceType:
 
 # Uninstall Customer Insights
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 You can remove Customer Insights from any Dynamics 365 instance where it's installed. After removing it, you'll end up with a Customer Insights license that you can use on another Dynamics 365 instance, if desired.
 
@@ -226,4 +226,4 @@ Customer Insights - Journeys application dependencies are installed alongside th
 1. msdyn_DataInsightsAndAnalytics: Enables analytics capabilities for Dynamics 365 applications like Customer Service, Field Service, and Universal Resource Scheduling.
 1. DynamicsMKT_Segmentation: Standard entity of segment representation and segment metadata.
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

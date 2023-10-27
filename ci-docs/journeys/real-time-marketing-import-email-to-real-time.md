@@ -13,7 +13,7 @@ search.audienceType:
 
 # Import outbound emails, templates, and content blocks
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 Save time and resources, reuse and adapt your existing outbound assets to create engaging and relevant Customer Insights - Journeys experiences. Easily import your outbound marketing emails, templates, and content blocks into Customer Insights - Journeys to plug them into your real-time journeys.
 

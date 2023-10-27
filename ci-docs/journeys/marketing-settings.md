@@ -1,6 +1,6 @@
 ---
-title: Overview of Marketing settings in Dynamics 365 Customer Insights - Journeys 
-description: Get an overview of marketing settings and find links to details about each page in the Dynamics 365 Customer Insights - Journeys administration settings.
+title: Overview of marketing settings in outbound marketing
+description: Get an overview of marketing settings and find links to details about each page in the outbound marketing administration settings.
 ms.date: 08/21/2023
 ms.topic: overview
 author: alfergus
@@ -11,9 +11,12 @@ search.audienceType:
   - enduser
 ---
 
-# Overview of Marketing settings in Dynamics 365 Customer Insights - Journeys
+# Overview of marketing settings in outbound marketing
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+
+> [!IMPORTANT]
+> This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
 
 The **Settings** work area contains pages that let you configure the core marketing functionality of Customer Insights - Journeys. See the following topics for information about how to work with each page in the **Marketing settings** section:
 
@@ -27,4 +30,4 @@ The **Settings** work area contains pages that let you configure the core market
 - **[Social configuration](mkt-settings-social-media.md)**: Configure and authenticate each social media account where you'd like to author, schedule, and post updates using Customer Insights - Journeys.
 - **[Data protection tools](mkt-settings-data-protection.md)**: Enable data privacy features of Customer Insights - Journeys. For more information, including how to use the settings here, see [Data protection and privacy](privacy.md).
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

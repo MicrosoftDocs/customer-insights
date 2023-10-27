@@ -14,7 +14,7 @@ ms.author: mhart
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
-Connections are the key to enable data sharing to and from Dynamics 365 Customer Insights - Data. Each connection establishes data sharing with a specific service. Use connections to [configure third-party enrichments](enrichment-hub.md) and [configure exports](export-manage.md). The same connection can be used multiple times. For example, one connection to Dynamics 365 Customer Insights - Journeys works for multiple exports and one Leadspace connection can be used for several enrichments.
+Connections are the key to enable data sharing to and from Dynamics 365 Customer Insights - Data. Each connection establishes data sharing with a specific service. Use connections to [configure third-party enrichments](enrichment-manage.md) and [configure exports](export-manage.md). The same connection can be used multiple times. For example, one connection to Dynamics 365 Customer Insights - Journeys works for multiple exports and one Leadspace connection can be used for several enrichments.
 
 [!INCLUDE [public-preview-note](includes/public-preview-note.md)]
 
@@ -77,7 +77,7 @@ When setting up or editing an export connection, choose which users are allowed 
 If the connection you're removing is used by enrichments or exports, first detach or remove them. The remove dialog guides you to the relevant enrichments or exports.
 
 > [!TIP]
-> Deactivated enrichments and detached exports become inactive. You reactivate them by adding another connection to them on the [Enrichments](enrichment-hub.md) or [Exports](export-manage.md) page.
+> Deactivated enrichments and detached exports become inactive. You reactivate them by adding another connection to them on the [Enrichments](enrichment-manage.md) or [Exports](export-manage.md) page.
 
 1. Go to **Settings** > **Connections**.
 

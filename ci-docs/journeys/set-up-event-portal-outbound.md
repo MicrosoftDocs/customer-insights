@@ -1,6 +1,6 @@
 ---
-title: Set up an event website
-description: Set up a Dynamics 365 Customer Insights - Journeys event website, where people can read about your event and its speakers, create an account, register for the event, purchase passes, view their session schedule, and more.
+title: Set up an event website in outbound marketing
+description: Set up a Dynamics 365 Customer Insights - Journeys outbound marketing event website, where people can read about your event and its speakers, create an account, register for the event, purchase passes, view their session schedule, and more.
 ms.date: 08/23/2023
 ms.topic: article
 author: alfergus
@@ -11,9 +11,14 @@ search.audienceType:
   - enduser
 ---
 
-# Set up the event website
+# Set up the event website in outbound marketing
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+
+[!INCLUDE [azure-ad-to-microsoft-entra-id](./includes/azure-ad-to-microsoft-entra-id.md)]
+
+> [!IMPORTANT]
+> This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
 
 The event website provides an online resource where people can read about your event and its speakers, create an account, register for the event, purchase passes, view their session schedule, and more. The following image shows a simplified site map of your event website as your attendees will see it.
 
@@ -32,7 +37,7 @@ The first time you install Customer Insights - Journeys, the event website is in
 |Availability | Discontinued (no longer available) | Installed out-of-the-box; fully customizable | [Download the project, customize it, and deploy it to your own server](developer/event-management-web-application.md) |
 | Event information and graphics | Fetched directly from Dynamics 365 event records | Fetched directly from Dynamics 365 event records | Fetched directly from Dynamics 365 event records |
 | Payment gateway |  [Build a gateway page](event-payment-gateway.md) using native Power Apps portal entities and customize it according to instructions from your third-party payment provider  | [Build a gateway page](event-payment-gateway.md) using native Power Apps portal entities and customize it according to instructions from your third-party payment provider | [Customize the Angular app](developer/event-management-web-application.md) according to instructions from your third-party payment provider |
-| Registration&nbsp;account and sign-in | Implemented using native Power Apps portal features; works out-of-the-box | Implemented using native Power Apps portal features; works out-of-the-box | You must [integrate the event website with Azure Active Directory (AAD)](developer/event-management-web-application.md) to enable registration accounts |
+| Registration&nbsp;account and sign-in | Implemented using native Power Apps portal features; works out-of-the-box | Implemented using native Power Apps portal features; works out-of-the-box | You must [integrate the event website with Microsoft Entra ID](developer/event-management-web-application.md) to enable registration accounts |
 | The **Payment gateway** setting of the event record | Use this setting to select a Power Apps portal page to use as the payment gateway for each event | Use this setting to select a Power Apps portal page to use as the payment gateway for each event | This setting has no effect for externally hosted event websites |
 | The **Allow anonymous registration** setting of the event record | Use this setting to control whether attendees can register without first creating a registration account | Use this setting to control whether attendees can register without first creating a registration account | This setting has no effect for externally hosted event websites |
 | Link to the event website | The URL is generated automatically for each event. Check the **Event URL** field of the event record to find it. | The URL is generated automatically for each event. Check the **Event URL** field of the event record to find it. | The URL depends on where you host the site. You can store the URL in the event record by selecting the **Custom event URL** check box and then filling in the **Event URL** field.
@@ -171,6 +176,6 @@ Where:
 
 ## Privacy notice
 
-[!INCLUDE[cc-marketing-cookies](./includes/cc-marketing-cookies.md)]
+[!INCLUDE [cc-marketing-cookies](./includes/cc-marketing-cookies.md)]
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

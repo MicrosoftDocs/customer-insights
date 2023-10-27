@@ -13,7 +13,7 @@ search.audienceType:
 
 # Edit a live journey in Customer Insights - Journeys
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 You can make lightweight edits to journeys, such as renaming elements or adjusting goal percentages, without stopping them. You can also make major changes with Customer Insights - Journeys's built-in journey version control feature. These features give you the flexibility to make edits on the fly, without concern about breaking or being unable to revert a journey.
 
@@ -47,4 +47,4 @@ Analytics results are kept for each version, enabling you to compare and optimiz
 > [!div class="mx-imgBorder"]
 > ![Analytics comparison between versions.](media/real-time-marketing-journey-edit-analytics.png "Analytics comparison between versions")
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

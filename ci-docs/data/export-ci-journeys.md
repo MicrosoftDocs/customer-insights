@@ -1,5 +1,5 @@
 ---
-title: "Export segments to Customer Insights - Journeys (preview)"
+title: Export segments to Customer Insights - Journeys outbound marketing (preview)
 description: "Learn how to configure the connection and export to Dynamics 365 Customer Insights - Journeys."
 ms.date: 09/01/2023
 ms.reviewer: mhart
@@ -8,22 +8,22 @@ author: pkieffer
 ms.author: philk
 ---
 
-# Export segments to Customer Insights - Journeys (preview)
+# Export segments to Customer Insights - Journeys outbound marketing (preview)
 
 [!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
-Use [segments](segments.md) to generate campaigns and contact specific groups of customers with [Dynamics 365 Customer Insights - Journeys](/dynamics365/marketing/customer-insights-segments).
+Use [segments](segments.md) to generate campaigns and contact specific groups of customers with [Dynamics 365 Customer Insights - Journeys outbound marketing](/dynamics365/marketing/customer-insights-segments). If you are using Customer Insights - Journeys outbound, [learn more about the transition to real time](https://community.dynamics.com/blogs/post/?postid=1b4394d5-7764-4484-aba9-c7f972292c10).
 
-Dynamics 365 Customer Insights - Data recommends using the capabilities of Customer Insights - Journeys for real-time customer journey orchestration because you don't need to create exports to Customer Insights - Journeys. Contacts and segments from Customer Insights - Data are available directly in Customer Insights - Journeys after connecting it with Customer Insights - Data. Before you delete existing exports, review the documentation on [how to connect Customer Insights and Customer Insights - Journeys customer journey orchestration](/dynamics365/marketing/real-time-marketing-ci-profile). If you are using Customer Insights - Journeys outbound, [learn more about the transition to real time](https://community.dynamics.com/blogs/post/?postid=1b4394d5-7764-4484-aba9-c7f972292c10).
+We recommend using real-time customer journey orchestration because you don't need to create exports to Customer Insights - Journeys. Contacts and segments are available directly through Dataverse after connecting the two apps. Review the documentation on [how to connect Customer Insights and Customer Insights - Journeys customer journey orchestration](/dynamics365/marketing/real-time-marketing-ci-profile).
 
 ## Prerequisite
 
-Contact records must be present in Customer Insights - Journeys before you can export a segment from Customer Insights - Data to Customer Insights - Journeys. Read more on how to ingest contacts in [Customer Insights - Journeys using Microsoft Dataverse](connect-dataverse.md).
+Contact records must be present in Customer Insights - Journeys before you can export a segment from Customer Insights - Data to Customer Insights - Journeys. Read more on how to ingest contacts from [Microsoft Dataverse](connect-dataverse.md).
 
 > [!NOTE]
-> Exporting segments from Customer Insights - Data to Customer Insights - Journeys will not create new contact records. The contact records must be ingested in Customer Insights - Data and used as a data source. They also need to be included in the unified Customer table to map customer IDs to contact IDs before segments can be exported.
+> Exporting segments won't create new contact records. The contact records must be ingested in Customer Insights - Data and used as a data source. They also need to be included in the unified Customer table to map customer IDs to contact IDs before segments can be exported.
 
 ## Recommendations
 

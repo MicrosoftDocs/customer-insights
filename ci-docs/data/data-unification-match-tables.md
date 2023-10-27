@@ -1,18 +1,19 @@
 ---
 title: "Match conditions for data unification"
 description: "Match tables to create unified customer profiles."
-ms.date: 11/15/2022
-ms.topic: tutorial
-author: v-wendysmith
-ms.author: mukeshpo
+ms.date: 09/21/2023
+ms.topic: how-to
+author: Scott-Stabbert
+ms.author: sstabbert
 ms.reviewer: v-wendysmith
+ms.custom: bap-template
 ---
 
 # Match conditions for data unification
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
-This step in unification defines the match order and rules for cross-table matching. This step requires at least two tables.
+This step in unification defines the match order and rules for cross-table matching. This step requires at least two tables. When records are matched, they're concatenated into a single record with all the fields from each table. Alternate rows (nonwinner rows from the Deduplication step) are considered when matching. But, if a row matches an alternate row in a table, the record is matched to the winner row.
 
 > [!NOTE]
 > Once you create your match conditions and select **Next**, you cannot remove a selected table or attribute. If needed, select **Back** to review the selected tables and attributes before continuing.
@@ -21,7 +22,7 @@ This step in unification defines the match order and rules for cross-table match
 
 ## Include enriched tables (preview)
 
-If you enriched tables on the data source level to help improve your unification results, select them. For more information, see [Enrichment for data sources](data-sources-enrichment.md). If you selected enriched tables on the **Duplicate records** page, you do not need to select them again.
+If you enriched tables on the data source level to help improve your unification results, select them. For more information, see [Enrichment for data sources](data-sources-enrichment.md). If you selected enriched tables on the **Duplicate records** page, you don't need to select them again.
 
 1. On the **Matching conditions** page, select **Use enriched tables** at the top of the page.
 
@@ -40,12 +41,13 @@ Each match unifies two or more tables into a single, consolidated table. At the 
 >
 > - Choose the table with the most complete and reliable profile data about your customers as the primary table.
 > - Choose the table that has several attributes in common with other tables (for example, name, phone number, or email address) as the primary table.
+> - Tables can only match against other tables that are higher in priority. So Table2 can only match against Table1, and Table3 can match against Table2 *or* Table1.  
 
 1. On the **Matching conditions** page, use the move up and down arrows to move the tables in the order you want, or drag and drop them. For example, select **eCommerceContacts** as the primary table and **loyCustomer** as the second table.
 
-1. To have every record in the table as a unique customer regardless if a match is found, select **Include all records**. Any records in this table that do not match to records in any other table are included in the unified profile. Records that do not have a match are called singletons.
+1. To have every record in the table as a unique customer regardless if a match is found, select **Include all records**. Any records in this table that don't match to records in any other table are included in the unified profile. Records that don't have a match are called singletons.
   
-The primary table *eCommerceContacts* is matched with the next table *loyCustomer*. The dataset that results from the first match step is matched with the following table if you’ve more than two tables.
+The primary table *eCommerceContacts* is matched with the next table *loyCustomer*. The dataset that results from the first match step is matched with the following table if you have more than two tables. If duplicates still exist in *eCommerceContacts*, when *loyCustomer* is matched against *eCommerceContacts*, *eCommerceContacts* duplicate rows aren't reduced to a single customer record. However, if duplicate rows in *loyCustomer* match a row in *eCommerceContacts*, they're reduced into a single customer record.
 
 :::image type="content" source="media/m3_match.png" alt-text="Screenshot of the selected match order for the tables." lightbox="media/m3_match.png":::
 
@@ -87,7 +89,7 @@ The warning next to a table name means that no match rule is defined for a match
 
 1. Optionally, [add more rules](#add-rules-to-a-match-pair).
 
-1. Click **Next**.
+1. Select **Next**.
 
 > [!div class="nextstepaction"]
 > [Next step: Unify fields](data-unification-merge-tables.md)
@@ -126,7 +128,7 @@ Specify conditions that override the default match logic. There are four options
 |Always match     | Defines values for the primary keys that are always matched.         |  Always match the row with primary key *12345* to the row with primary key *54321*.       |
 |Never match     | Defines values for the primary keys that never match.        | Never match the row with primary key *12345* to the row with primary key *54321*.        |
 |Bypass            | Defines values that the system should always ignore in the match phase. |  Ignore the values *11111* and *Unknown* during match.        |
-|Alias mapping    | Defining values that the system should consider as the same value.         | Consider *Joe* to be equal to *Joseph*.        |
+|Alias mapping    | Defines values that the system should consider as the same value.         | Consider *Joe* to be equal to *Joseph*.        |
 
 1. Select **Custom**.
 

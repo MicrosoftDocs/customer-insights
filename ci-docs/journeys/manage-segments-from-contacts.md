@@ -13,7 +13,7 @@ search.audienceType:
 
 # Manage segment memberships from a contact record
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -34,4 +34,4 @@ To add or remove a contact to/from a static segment using their contact record:
 
     ![Select segments to add the current contact to.](media/select-segment-from-contact.png "Select segments to add the current contact to")
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

@@ -65,6 +65,8 @@ To connect to a different Dataverse environment, [create a new data source](#con
 
    [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
 
+Loading data can take time. After a successful refresh, review the ingested data from the [**Data** > **Tables**](tables.md) page.
+
 ## Next steps
 
 - [Data unification overview](data-unification.md)

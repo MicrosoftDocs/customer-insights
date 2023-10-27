@@ -13,7 +13,7 @@ search.audienceType:
 
 # Create an event from another event
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 You can copy your existing event by using the **Save as** command on the toolbar.
 
@@ -32,4 +32,4 @@ This operation will copy most of the entities from your existing event to a new 
 > [!NOTE]
 > Registrations are excluded from the copy operation to prevent potential issues that could arise in the capacity management and ticketing of new events. Child events of a recurrent event are also not copied to the new event. Learn more: [Known issues and workarounds](known-issues.md#event-management).
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]
