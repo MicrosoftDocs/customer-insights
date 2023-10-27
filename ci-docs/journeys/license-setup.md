@@ -1,7 +1,7 @@
 ---
 title: Customer Insights license guidance
 description: Learn about licensing information in Dynamics 365 Customer Insights.
-ms.date: 10/26/2023
+ms.date: 10/27/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -19,6 +19,7 @@ This article covers important key points about Customer Insights licensing and p
 
 -	You can install the **Customer Insights - Journeys** app up to four times on any of your Dataverse environments.
 -	You can install the **Customer Insights - Data** app up to four times on any of your Dataverse environments.
+-	If you need to install either application more than four times, you can buy an additional instance of the base license to get four more application installation entitlements per app.
 - The base Customer Insights license entitles you to:
     - 10,000 interacted people at the tenant level for use with the Customer Insights - Journeys app to engage contacts, leads, profiles, accounts and other Dataverse entities.
     - 100,000 unified people at the tenant level for use with the Customer Insights - Data app to unify, enrich, and know the customer.
@@ -32,7 +33,10 @@ This article covers important key points about Customer Insights licensing and p
 -	The two license models are not related. You can either be on the old, standalone model and receive the old, standalone entitlements or be on the new Dynamics 365 Customer Insights model and receive those entitlements. There is no grandfathering of new entitlement definitions for subscribers of the old, standalone model. The pricing and entitlement models are independent and cannot be combined. 
 -	You can buy the add-ons for each model independently. If you are on the old model, you buy the old add-ons. If you are on the new model, you buy the new add-ons. 
 -	When switching to the new business model and new entitlements, do not reinstall the applications. While the entitlement definition has changed in the new model, the applications for Customer Insights - Journeys and Customer Insights - Data are the same, therefore you should not uninstall or reinstall applications.
-
+-	Email throughput of 500,000 messages per hour is granted as follows:
+    - For customers on the standalone Dynamics 365 Marketing SKU with 10 million or more active contacts.
+    - For customers with the new Dynamics 365 Customer Insights SKU with 500,000 or more interacted people.
+    - For customers with the new Dynamics 365 Customer Insights SKU who have less than 500,000 interacted people but have purchased the 500,000 sending burst add-on through their seller.
 ## Licensing FAQs
 
 ### How is Customer Insights - Journeys licensed?
