@@ -29,6 +29,13 @@ search.audienceType:
 
 Whether consent is checked before sending emails and text messages depends on the consent model that you select for the **Purpose** in a specific **Compliance Profile**. Learn more:[Manage user compliance settings in Customer Insights - Journeys](real-time-marketing-compliance-settings.md)
 
+> [!CAUTION]
+> In July 2023 Customer Insights - Journeys introduced new Dataverse tables to support business units and multi-brand consent compliance profiles. All customers have been migrated the new tables. Customers who have custom workflows (such as Power Automate Flows) that read or write **msdynmkt_contactpointconsent2** or **msdynmkt_contactpointconsent3** consent tables need to take action to ensure they do not lose functionality.
+>
+> If your custom workflows *read* from the **msdynmkt_contactpointconsent2** or **msdynmkt_contactpointconsent3** consent tables, you must update custom workflows to read from the latest **msdynmkt_contactpointconsent4** table to ensure continued functionality.
+>
+> If your custom workflows *write* to the **msdynmkt_contactpointconsent2** or **msdynmkt_contactpointconsent3** consent tables, any writes to these tables automatically have data synced to the **msdynmkt_contactpointconsent4** table after a delay (potentially 24 hours or longer). The data sync will continue until **June 1, 2024**. After that date, you will need to have moved all workflows that write contact point consent records to target the **msdynmkt_contactpointconsent4** table.
+
 ## How consent is respected for emails
 
 When creating a new email message, you choose a **Compliance Profile**, a **Purpose**, and, optionally, a **Topic** from that profile in the **Compliance** section of the **Email header** settings. To set up message designation, select the gear icon ![The Settings menu icon.](media/settings-icon.png "The Settings menu icon") in the email header. This opens the **Email header** settings pane on the right side of the page. Navigate to the **Email settings** section.
