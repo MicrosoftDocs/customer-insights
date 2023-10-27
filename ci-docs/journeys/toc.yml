@@ -420,38 +420,16 @@
       href: real-time-marketing-link-tracking-mechanics.md
   - name: Customer Insights - Journeys settings
     items:
-    - name: Settings overview
-      href: marketing-settings.md
-    - name: Customer Insights - Journeys administrator settings
+    - name: Journeys administrator settings
       href: real-time-marketing-admin-settings.md
-    - name: Create consistent branding with brand profiles
-      href: brand-profiles.md
-    - name: Configure lead scoring options
-      href: mkt-settings-lead-score-options.md
     - name: Add or remove sample data
       href: /power-platform/admin/add-remove-sample-data
-    - name: Marketing analytics configuration
-      href: mkt-settings-analytics.md
-    - name: Configure landing pages
-      href: mkt-settings-landing-pages.md
-    - name: Sync entities and track insights
-      href: mkt-settings-sync.md
-    - name: Set matching strategies
-      href: mkt-settings-matching.md
-    - name: Default marketing settings
-      href: mkt-settings-default-marketing.md
-    - name: Data protection tools
-      href: mkt-settings-data-protection.md
-    - name: Event management settings
-      href: events-settings.md
     - name: Quota limits
       href: quota-management.md
     - name: Trial quota limits
       href: trial-preview-limits.md
     - name: Feature switches
       href: admin-feature-switches.md
-    - name: Configure AI features
-      href: admin-machine-learning.md
     - name: Control access to designer features
       href: designer-feature-protection.md
   - name: Email administration
@@ -822,6 +800,30 @@
         href: marketing-analytics/analytics-gallery-forms.md
   - name: Administer (outbound marketing)
     items:
+    - name: Outbound marketing settings
+      items:
+      - name: Settings overview
+        href: marketing-settings.md
+      - name: Create consistent branding with brand profiles
+        href: brand-profiles.md
+      - name: Configure lead scoring options
+        href: mkt-settings-lead-score-options.md
+      - name: Marketing analytics configuration
+        href: mkt-settings-analytics.md
+      - name: Configure landing pages
+        href: mkt-settings-landing-pages.md
+      - name: Sync entities and track insights
+        href: mkt-settings-sync.md
+      - name: Set matching strategies
+        href: mkt-settings-matching.md
+      - name: Default marketing settings
+        href: mkt-settings-default-marketing.md
+      - name: Data protection tools
+        href: mkt-settings-data-protection.md
+      - name: Event management settings
+        href: events-settings.md
+      - name: Configure AI features
+        href: admin-machine-learning.md
     - name: Data protection and privacy
       href: privacy.md
     - name: Set up global double opt-in in outbound marketing
