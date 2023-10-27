@@ -53,19 +53,39 @@ Each Purpose can contain topics to add specific communications types to allow cu
 
 ### Consent enforcement
 
-The **Enforcement model** settings on a purposes control how consent is evaluated before a message is sent. Messages sent to a purpose use that purpose's enforcement model to evaluate if a message is or is not sent. There are three enforcement models that can be chosen depending on your regulatory needs:
+The **Enforcement model** settings on a purposes control how consent is evaluated before an email is sent. Emails sent to a purpose use that purpose's enforcement model to evaluate if the email is or is not sent. There are three enforcement models that can be chosen depending on your regulatory needs:
 
-- **Restrictive**: Messages are sent only to contact points that have opted-in contact point consent records for this purpose (or topic).
-- **Non-restrictive**: Messages are sent to all contact points unless they have an opted-out contact point consent record for this purpose (or topic).
-- **Disabled**: Messages are sent to all contact points. Contact point consent records are not checked before sending messages to this purpose (or topic).
+- **Restrictive**: Emails are sent only to contact points that have opted-in contact point consent records for this purpose (or topic).
+- **Non-restrictive**: Emails are sent to all contact points unless they have an opted-out contact point consent record for this purpose (or topic).
+- **Disabled**: Emails are sent to all contact points. Contact point consent records are not checked before sending messages to this purpose (or topic).
 
 > [!NOTE]
-> Currently, the **Enforcement model** setting only applies to email messages. All SMS and custom messages are subject to the restrictive enforcement model, even if their designated purpose has a non-restrictive or disabled enforcement model set. This behavior will change in a future release.
+> Currently, the **Enforcement model** setting only applies to email messages. All SMS and custom messages are subject to the restrictive enforcement model, even if their designated purpose has a non-restrictive or disabled enforcement model set. 
 
-Topics use the enforcement model of their parent purpose. Messages that are configured with both a purpose and a topic must have consent for both the purpose and the topic in order for the message to be sent. If a contact point doesn't have consent to send to a purpose, no messages to that purpose's topic will be delivered to the contact point. For example, if the parent purpose has a restrictive enforcement model, sending an email to a topic requires an opt-in contact point consent record for both the purpose and the topic associated with the email.
+Topics use the enforcement model of their parent purpose. Emails that are configured with both a purpose and a topic must have consent for both the purpose and the topic in order for the message to be sent. If a contact point doesn't have consent to send to a purpose, no messages to that purpose's topic will be delivered to the contact point. For example, if the parent purpose has a restrictive enforcement model, sending an email to a topic requires an opt-in contact point consent record for both the purpose and the topic associated with the email.
+
+#### Considerations for contact entities
+> [!NOTE]
+> If you are using Customer Insights - Journeys without the outbound marketing module installed, the additional checks described in this section are not performed.
+
+Real-time journeys make additional consent enforcement checks for emails sent to contact entities when outbound marketing is provisioned.
+
+In order to aid in the transition from outbound marketing real-time journeys check the consent stored on contact entities in addition to the purpose and topic based consent checks. Real-time journeys look at the contact's `DoNotEmail`, `DoNotBulkEmail` and `DoNotTrack` fields when an email message is sent to a contact entity.
+
+In outbound journeys the contact entity `DoNotEmail` and `DoNotBulkEmail` control if an email is sent. Real-time journeys also check these two fields to match outbound's consent enforcement behavior. For an email to be sent to a contact from a real-time journey, both the contact's fields and the contact point consent records for the email address must all allow the message to be sent.
+
+Similarly, the contact's `DoNotTrack` field and tracking contact point consent records must both allow tracking in order for tracking links and pixels to be inserted into a message. These three fields are not checked for messages sent to other entities (for example, leads).
+
+Text and custom channel messages to contacts do not use the `DoNotEmail`, `DoNotBulkEmail` or `DoNotTrack` fields when evaluating consent.
+
+To learn more about transitioning from outbound marketing to real-time journeys here, visit [Move from outbound to Customer Insights - Journeys](real-time-marketing-move.md)
+
+
+
 
 > [!IMPORTANT]
-> Real-time journeys check the contact's `DoNotEmail`, `DoNotBulkEmail` and `DoNotTrack` fields when an email message is sent to a contact entity. This behavior matches outbound marketing's consent enforcement. In order for an email to be sent to a contact from a real-time journey, both the contact's fields and the contact point consent records for email address must all allow the message to be sent. These fields are not checked for messages sent to other entities (e.g. Leads). These fields are also not checked for Text or Custom Channel messages.
+> Is the above right??? Check the link after rebase/merge with main.
+#3 - Describe updates to CPC records from Subscription Centers.
 
 ### Preference centers
 
