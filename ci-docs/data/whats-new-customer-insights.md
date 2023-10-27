@@ -1,7 +1,7 @@
 ---
 title: "What's new in Dynamics 365 Customer Insights - Data"
 description: "Information about new features, improvements, and bug fixes."
-ms.date: 09/25/2023
+ms.date: 10/27/2023
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
@@ -18,6 +18,49 @@ We roll out updates on a region-by-region basis. So certain regions might see fe
 
 > [!TIP]
 > To submit and vote on feature requests and product suggestions, go to the [Dynamics 365 Application Ideas portal](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights).
+
+## October 2023
+
+### General availability features
+
+#### Improved accuracy of the deduplication process
+
+You might have customer data where a person has multiple records and has provided different emails and phone numbers over time, making it impossible to match all their records using a single rule. Because Customer Insights today can't combine customer records that were matched by different rules, the result can be the creation of separate profiles for that person, which fragments your view of the customer.
+
+In a revisited deduplication process, the system now runs every deduplication rule against every customer record in a table. The match results from all the rules are then analyzed and match groups that share a common record are combined into a single match group. This process can identify and combine potentially long and complex chains of matching relationships, which result in the creation of unified customer profiles with unparalleled accuracy.
+
+- [Release plan](/dynamics365/release-plan/2023wave1/customer-insights/improved-accuracy-deduplication-process)
+- [Docs](data-unification-duplicates.md)
+
+### Public preview
+
+#### Receive task assistance from copilot based on docs
+
+Setting up Customer Insights with all your data and managing it to stay healthy can be complex at times. Now, Copilot in Customer Insights assists you by providing timely guidance that adapts, depending on where you are in the configuration process. In addition to this guidance, you can also ask your own questions to help clarify concepts or understand what you need to do next to successfully configure your solution.
+
+- [Release plan](/dynamics365/release-plan/2023wave2/customer-insights/receive-task-assistance-copilot-based-docs)
+- [Docs](help-pane-copilot.md)
+
+#### Seamlessly onboard customer data from your Delta Lake with no data integration
+
+Data already prepared and stored in your Azure Data Lake storage in the Delta Lake format can be readily attached in Customer Insights without data movement and formatting. This accelerates the processing time and reduces operations management of intermediate processing and data preparation leading to more regular and current insights. As a result, organizations can obtain more frequent and up-to-date insights, allowing them to make informed decisions faster and adapt to changing business environments more effectively.
+
+- [Release plan](/dynamics365/release-plan/2023wave2/customer-insights/seamlessly-onboard-customer-data-delta-lake-no-data-integration)
+- [Docs](connect-delta-lake.md)
+
+### Monthly enhancements
+
+#### Simple customer measure
+
+You can now create [customer measures](measures.md) with only one dimension and one calculation in that measure. The measure is available as a table in Dataverse for easy usage in Power Apps.
+
+#### Enable configuring and running of exports for Business Units
+
+Members of business units can now configure and run exports with a [Marketing contributor role](user-roles.md), limited to segments they have configured within their business unit. Administrators remain in control of which export destinations are available to other users by sharing the configured connections of export destinations.
+
+#### Environment reset is now generally available
+
+[Resetting an environment](manage-environments.md#reset-an-existing-environment) removes configurations and data from your Customer Insights - Data environment, restoring it to a new state that allows you to start fresh. Effectively, this is a quick way to uninstall and reinstall Customer Insights – Data from the application user interface.
 
 ## August/September 2023
 
