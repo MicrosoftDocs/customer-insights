@@ -13,16 +13,10 @@ search.audienceType:
 
 # The event management dashboard
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
-> [!IMPORTANT]
-> To use event management in the real-time journeys area of Customer Insights - Journeys, you must enable the feature switch. To enable the feature switch:
->
-> 1. Go to **Settings** > **Overview** > **Feature switches**.
-> 1. Enable the **Enable events creation in real-time journeys** feature switch toggle.
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 The event-management feature provides a preconfigured dashboard that gives a broad overview of your event-planning activities and the overall results for all your events. It also provides a wall feed that tracks all activities that are linked to the primary event-related records. Use the dashboard to get a quick overview of all the events you're planning and to see how successful your previous events have been.
 
 You can see the event-management dashboard on any dashboard page in any area of Dynamics 365. To view it, choose **Event Management Dashboard** from the view selector at the top of any dashboard page.
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

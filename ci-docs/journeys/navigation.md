@@ -13,7 +13,7 @@ search.audienceType:
 
 # Navigate and use common features of outbound marketing
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -122,4 +122,4 @@ Business processes help everyone follow best practices, even for situations that
 
 ![A typical business process display.](media/business-process.png "A typical business process display")
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

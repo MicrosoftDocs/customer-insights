@@ -1,6 +1,6 @@
 ---
-title: Export Dynamics 365 Customer Voice survey responses to Microsoft Excel
-description: Learn how to map names and emails to surveys with a custom Power Automate flow.
+title: Export Dynamics 365 Customer Voice survey responses to Microsoft Excel in outbound marketing
+description: Learn how to map names and emails in outbound marketing to surveys with a custom Power Automate flow.
 ms.date: 01/24/2022
 ms.topic: how-to
 author: alfergus
@@ -9,9 +9,12 @@ search.audienceType:
   - developer
 ---
 
-# Export Dynamics 365 Customer Voice survey responses to Microsoft Excel
+# Export Dynamics 365 Customer Voice survey responses to Microsoft Excel in outbound marketing
 
-[!INCLUDE[consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
+
+> [!IMPORTANT]
+> This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
 
 The export to Excel feature uses Microsoft Dataverse information to join and pull the contact record information for Customer Insights - Journeys integration customers, making it available in Excel.
 
@@ -31,4 +34,4 @@ To export survey response data to Excel:
 
 1. To export the response data, select **Export all**.
 
-[!INCLUDE[footer-include](.././includes/footer-banner.md)]
+[!INCLUDE [footer-include](.././includes/footer-banner.md)]

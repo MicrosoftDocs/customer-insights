@@ -13,7 +13,7 @@ search.audienceType:
 
 # Set up global double opt-in in outbound marketing
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -183,4 +183,4 @@ To set up and enable the global double opt-in system:
 
 1. Select the **Save** button in the bottom-right corner to save your settings.
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

@@ -1,6 +1,6 @@
 ---
-title: Retrieve interactions for a contact using code
-description: Learn how to programmatically retrieve interactions for a contact using an action.
+title: Retrieve outbound marketing interactions for a contact using code
+description: Learn how to programmatically retrieve interactions for a contact using an action in outbound marketing.
 ms.date: 09/15/2022
 ms.topic: how-to
 author: alfergus
@@ -9,9 +9,12 @@ search.audienceType:
   - developer
 ---
 
-# Retrieve interactions for a contact using code
+# Retrieve outbound marketing interactions for a contact using code
 
-[!INCLUDE[consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
+
+> [!IMPORTANT]
+> This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
 
 > [!IMPORTANT]
 > The method below to retrieve interactions has been deprecated and may not be available in the future.
@@ -176,4 +179,4 @@ OData-Version: 4.0
 }
 ```
 
-[!INCLUDE[footer-include](.././includes/footer-banner.md)]
+[!INCLUDE [footer-include](.././includes/footer-banner.md)]

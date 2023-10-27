@@ -13,10 +13,10 @@ search.audienceType:
 
 # Control access to designer features
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
-> The designer is only available in Customer Insights - Journeys. It is not available in outbound marketing.
+> The designer is only available in real-time journeys. It is not available in outbound marketing.
 
 Designer feature protection lets you control which users have access to which features of the content designers, including in the email, marketing page, form, and content-block designers. You can use these settings to block access by any user or group to one or both of the following designer features:
 
@@ -37,4 +37,4 @@ To control access to these designer features:
     - **Blocked features**: Use this lookup field to choose which features you want to hide from the specified user or team: HTML, Litmus, or both.
 1. Save your settings.
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

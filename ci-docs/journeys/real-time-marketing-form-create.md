@@ -13,7 +13,7 @@ search.audienceType:
 
 # Create Customer Insights - Journeys forms
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 To create a new form, go to **Customer Insights - Journeys** > **Channels** > **Forms** and select **New** on the command bar.
 
@@ -132,4 +132,4 @@ Once the form is published, you can still access these options by selecting the 
 [Grow your business with multi-brand, custom preference centers](real-time-marketing-compliance-settings.md)
 [Customer Insights - Journeys preference centers](real-time-marketing-preference-centers.md)
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

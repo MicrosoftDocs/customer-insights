@@ -14,7 +14,7 @@ search.audienceType:
 
 # Marketing program effectiveness analysis for Dynamics 365 Customer Insights - Journeys
 
-[!INCLUDE[consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -112,4 +112,4 @@ This report assumes all customer journeys to be outbound. However, you can exten
 ***Happy analytics reporting with Dynamics 365 Customer Insights - Journeys!***
 
 
-[!INCLUDE[footer-include](.././includes/footer-banner.md)]
+[!INCLUDE [footer-include](.././includes/footer-banner.md)]

@@ -13,7 +13,7 @@ search.audienceType:
 
 # Set up session-level registration and waitlisting in outbound marketing
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -67,4 +67,4 @@ Session-level waitlist differ from event-level waitlists as follows:
 - Waitlist members are shown on the session record rather than the event record. To see them, open a session, go to the **Registration and attendance** tab and scroll down to the **Waitlist** section. From here, you can add, remove, invite, and register attendees on the waitlist.
 - If you'd like to create a segment of waitlisted or invited registrants for a session, use the session ID rather than the event ID.
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

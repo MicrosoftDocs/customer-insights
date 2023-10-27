@@ -64,7 +64,7 @@ This section contains cards that help you walk through the process of setting up
 
 - **Business measures** shows tiles with [key performance indicators (KPIs)](measures.md) that you've defined. For example, average likelihood of a customer to churn or the average online spend per customer.
 
-- **Enrichments** lists results of the enrichment runs that completed recently. [Enrichments](enrichment-hub.md) add information about your customer base. For example, by understanding the interests and brands that they have affinity for.
+- **Enrichments** lists results of the enrichment runs that completed recently. [Enrichments](enrichment-manage.md) add information about your customer base. For example, by understanding the interests and brands that they have affinity for.
 
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

@@ -13,7 +13,7 @@ search.audienceType:
 
 # Customer Voice FAQs
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -55,4 +55,4 @@ If you don't see the **Survey** tile in the **Toolbox** of your [customer journe
           
 If your surveys still aren't working after completing these steps, [contact Microsoft Support](/power-platform/admin/get-help-support) for assistance.
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

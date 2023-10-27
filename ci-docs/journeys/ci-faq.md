@@ -14,7 +14,7 @@ search.audienceType:
 
 # Dynamics 365 Customer Insights FAQs
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 This FAQ answers questions about the new Customer Insights combined product offering.
 
@@ -64,7 +64,7 @@ This FAQ answers questions about the new Customer Insights combined product offe
 
 1. **Can customers have access to both outbound and real-time marketing with the new Customer Insights offer?**
 
-    New customers will only be able to access the real-time marketing module. Current outbound customers provisioning new environments will also get the real-time module only by default, but can add outbound using a self-serve UX.  Learn more about the real-time marketing only module: [Real-time marketing transition FAQ](real-time-marketing-transition.md)
+    New customers will only be able to access the real-time marketing module. Current outbound customers provisioning new environments will also get the real-time module only by default, but can add outbound using a self-serve UX.  Learn more about the real-time marketing only module: [Real-time marketing transition FAQ](transition-faqs.md)
 
 1. **Why is there a shift from outbound marketing to a real-time marketing-only experience?**
  
@@ -126,3 +126,5 @@ This FAQ answers questions about the new Customer Insights combined product offe
 1. **What happens to customers who only have a Dynamics 365 Marketing or Dynamics 365 Customer Insights license or have licensed both applications?**  
 
     After GA on September 1, 2023, existing customers can choose to remain and renew on the standalone licensing model for another contractual cycle. This renewal must be made during the transitional offer window that will run through September 1, 2024, with a final contract maturity date that can't extend beyond September 1, 2027.  At the end of the renewed contractual period, customers will then need to transition to the new Customer Insights licensing.
+
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

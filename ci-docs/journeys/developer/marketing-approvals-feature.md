@@ -1,6 +1,6 @@
 ---
-title: Build an approvals feature
-description: Build an approvals feature that utilizes Dynamics 365 Customer Insights - Journeys extensibility endpoints.
+title: Build an approvals feature in outbound marketing
+description: Build an approvals feature that utilizes outbound marketing extensibility endpoints.
 ms.date: 02/03/2022
 ms.topic: how-to
 author: alfergus
@@ -9,9 +9,9 @@ search.audienceType:
   - developer
 ---
 
-# Build an approvals feature
+# Build an approvals feature in outbound marketing
 
-[!INCLUDE[consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -114,4 +114,4 @@ For our example, we will need to use two of the extensibility points mentioned a
 
 To easily identify the entities that are in the **Approval required** and **Approve** states, we suggest creating two system views in the customer journey entity to display all the entities that need approval, and all the entities that are already approved and waiting to **Go live**.  More information: [Create or edit a view](/dynamics365/customer-engagement/customize/create-and-edit-views)
 
-[!INCLUDE[footer-include](.././includes/footer-banner.md)]
+[!INCLUDE [footer-include](.././includes/footer-banner.md)]

@@ -1,6 +1,6 @@
 ---
-title: Configure form matching
-description: Set up how form submissions are matched to existing contacts or leads when deciding whether to update an existing record or to create a new one in Dynamics 365 Customer Insights - Journeys.
+title: Configure form matching in outbound marketing
+description: Set up how form submissions are matched to existing contacts or leads when deciding whether to update an existing record or to create a new one in outbound marketing.
 ms.date: 08/21/2023
 ms.topic: article
 author: alfergus
@@ -11,9 +11,12 @@ search.audienceType:
   - enduser
 ---
 
-# Configure form matching
+# Configure form matching in outbound marketing
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+
+> [!IMPORTANT]
+> This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
 
 Form matching defines how form submissions are matched to existing contacts or leads when deciding whether to update an existing record or to create a new one.
 
@@ -44,4 +47,4 @@ Use the buttons in the toolbar for the **Attributes** section to add, edit, and 
 > [!IMPORTANT]
 > Your Business Scoping configuration affects how the matching strategies work. Learn more: [Lead and contact creation, matching, and scoring](business-units-support-outbound-marketing.md#lead-and-contact-creation-matching-and-scoring).
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

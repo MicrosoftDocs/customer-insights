@@ -13,7 +13,7 @@ search.audienceType:
 
 # Access and interpret analytics
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 Customer Insights - Journeys's dashboards and cross-journey insights show metrics, views, and insights summarized across single or multiple journeys, providing you with a deep understanding of journey, channel, and content performance. The built-in dashboards focus on measuring delivery, engagement and journey goal attainment, so you can fine-tune the effectiveness of your journeys, channels, and content.
 
@@ -70,7 +70,7 @@ Select any journey component to view near real-time operational analytics in the
 > - **Open rate**: the percentage of unique email opens divided by the number of emails delivered.
 > - **Click rate**: the percentage of unique email clicks divided by the number of emails delivered.
 >
-> In the delivery and interaction details, you can now export up to 50,000 records of interaction data and access links to audience profiles that interacted with your email messages. Additionally, timestamps are reported according to the organization's timezone.
+> In the delivery and interaction details, you can now export up to 50,000 records of interaction data, search through data using the profile's email address, and access links to audience profiles that interacted with your email messages. Additionally, timestamps are reported according to the organization's timezone.
 > 
 > While these enhancements initially apply to email analytics, they will be gradually rolled out to journey operational analytics and other channel analytics.
   
@@ -118,4 +118,4 @@ Here are some advanced resources for this topic:
 
 - [Extracting Marketing Interactions in Dynamics 365 Customer Insights - Journeys](https://community.dynamics.com/blogs/post/?postid=4e96ca1e-52ed-4ae4-9887-af8d6e563304)
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

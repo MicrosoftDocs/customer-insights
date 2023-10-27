@@ -16,7 +16,7 @@ search.audienceType:
 
 # Best practices for administration
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 Dynamics 365 Customer Insights - Journeys is a marketing-automation app that helps turn prospects into business relationships. The app is easy to use, works seamlessly with Dynamics 365 Sales, and has built-in business intelligence.
 
@@ -26,7 +26,7 @@ This document discusses some of the key elements for managing Customer Insights 
 
 ## Licensing model
 
-Dynamics 365 Customer Insights - Journeys has a different licensing model than other Dynamics 365 applications. You can find more details about the Customer Insights - Journeys licensing model in [How to purchase](purchase.md) and [Customer Insights - Journeys contacts purchase](setup-troubleshooting.yml#how-is-customer-insights---journeys-licensed-), as well as in the [Dynamics 365 licensing guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409). Some important aspects of Customer Insights - Journeys’s licensing model are:
+Customer Insights - Journeys has a different licensing model than other Dynamics 365 applications. You can find more details about the Customer Insights - Journeys licensing model in [How to purchase](purchase.md) and [Customer Insights - Journeys contacts purchase](license-setup.md#how-is-customer-insights---journeys-licensed), as well as in the [Dynamics 365 licensing guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409). Some important aspects of Customer Insights - Journeys’s licensing model are:
 
 - You don't purchase user licenses of Customer Insights - Journeys. You purchase the Customer Insights - Journeys app and bundles of marketing contacts.
 - One Customer Insights - Journeys app license permits deployment on only one Dynamics 365 environment. The environment could be a sandbox or production. Deploying on multiple Dynamics 365 environments requires multiple Customer Insights - Journeys app licenses.
@@ -43,7 +43,7 @@ As documented in [Quota management](quota-management.md), there are multiple typ
 
 ## Environment strategy
 
-The Dynamics 365 Customer Insights - Journeys app is built on top of the Dynamics 365 platform. Follow the environment and development strategy recommended by the Dynamics 365 platform when adopting Customer Insights - Journeys. You can find more details about
+The Customer Insights - Journeys app is built on top of the Dynamics 365 platform. Follow the environment and development strategy recommended by the Dynamics 365 platform when adopting Customer Insights - Journeys. You can find more details about
 Dynamics 365 platform administration and environment strategy in this [Power
 Platform Admin and Governance whitepaper](https://aka.ms/powerappsadminwhitepaper) [section: Platform architecture].
 
@@ -57,9 +57,9 @@ Depending on the environment and its usage, you might have different needs when 
 
 ## Customer Insights - Journeys app types
 
-Dynamics 365 Customer Insights - Journeys is composed of several components. Each Dynamics 365 environment requires a dedicated Customer Insights - Journeys app. In other words, if you want multiple Customer Insights - Journeys environments, you need to purchase multiple Customer Insights - Journeys app licenses. Many times, you might not want to buy additional Customer Insights - Journeys app licenses but still want to follow the best practices of having a dev, test, and prod setup. In such cases, there's another option.
+Customer Insights - Journeys is composed of several components. Each Dynamics 365 environment requires a dedicated Customer Insights - Journeys app. In other words, if you want multiple Customer Insights - Journeys environments, you need to purchase multiple Customer Insights - Journeys app licenses. Many times, you might not want to buy additional Customer Insights - Journeys app licenses but still want to follow the best practices of having a dev, test, and prod setup. In such cases, there's another option.
 
-Customer Insights - Journeys offers a solution-only license. The solution-only license doesn't support Customer Insights - Journeys processes such as segmentation and email sending. It does support, however, Customer Insights - Journeys metadata such as marketing entities that you can use for extensibility purposes. The solution-only license also allows you to enable ALM operations across your environments. Learn more about the solution-only license in [Purchase and set up Dynamics 365 Customer Insights - Journeys](purchase.md).
+Customer Insights - Journeys offers a solution-only license. The solution-only license doesn't support Customer Insights - Journeys processes such as segmentation and email sending. It does support, however, Customer Insights - Journeys metadata such as marketing entities that you can use for extensibility purposes. The solution-only license also allows you to enable ALM operations across your environments. Learn more about the solution-only license in [Purchase and set up Customer Insights - Journeys](purchase.md).
 
 Here are some of the common pitfalls (from a management perspective) that you might face when working with multiple Customer Insights - Journeys apps/environments:
 
@@ -70,7 +70,7 @@ Here are some of the common pitfalls (from a management perspective) that you mi
 
 ## ALM operations
 
-Dynamics 365 Customer Insights - Journeys supports most of the Dynamics 365 platform’s application lifecycle management (ALM) capabilities such as copy, backup, and restore. Learn more about ALM capabilities in [Copy or restore environments](./copy-or-restore.md).
+Customer Insights - Journeys supports most of the Dynamics 365 platform’s application lifecycle management (ALM) capabilities such as copy, backup, and restore. Learn more about ALM capabilities in [Copy or restore environments](./copy-or-restore.md).
 
 There are specifics to these operations, however, which you should adhere to when working with Customer Insights - Journeys. Some of the common pitfalls include:
 
@@ -87,7 +87,7 @@ You can remove the Customer Insights - Journeys app from any Dynamics 365 enviro
 
 ## Microsoft Dataverse vs CE deployment
 
-Currently, Dynamics 365 Customer Insights - Journeys, like other Dynamics 365 model apps (Sales, Service, etc.), can only be deployed on CE environments (also known as orgs).
+Currently, Customer Insights - Journeys, like other Dynamics 365 model apps (Sales, Service, etc.), can only be deployed on CE environments (also known as orgs).
 
 - [This documentation](/power-platform/admin/create-environment) describes how to add CE environments via purchase into a tenant on which Customer Insights - Journeys can be deployed.
 
@@ -95,26 +95,26 @@ Currently, Dynamics 365 Customer Insights - Journeys, like other Dynamics 365 mo
 
 ## Trials
 
-Dynamics 365 Customer Insights - Journeys trial apps have special behavior. Customer Insights - Journeys trial apps can only be installed on Dynamics 365 trial environments, which are automatically provided as part of the Customer Insights - Journeys Trial sign-up process. Unlike paid environments, these environments can't be created manually. Similarly, paid Customer Insights - Journeys apps (sandbox or prod) can't be deployed on trial environments.
+Customer Insights - Journeys trial apps have special behavior. Customer Insights - Journeys trial apps can only be installed on Dynamics 365 trial environments, which are automatically provided as part of the Customer Insights - Journeys Trial sign-up process. Unlike paid environments, these environments can't be created manually. Similarly, paid Customer Insights - Journeys apps (sandbox or prod) can't be deployed on trial environments.
 
 You can convert a trial app to a paid subscription using the in-app purchase process. Learn more: [Purchase a license directly from a Customer Insights - Journeys trial](direct-purchase.md).
 
 ## Data transfer
 
-You can replicate Dynamics 365 Customer Insights - Journeys configurations and data across environments using the standard tools provided for Dynamics 365. More information is available in [Transfer data](transfer-data.md) and in [Transfer customizations](transfer-solution.md). The following are some of the common pitfalls when transferring data:
+You can replicate Customer Insights - Journeys configurations and data across environments using the standard tools provided for Dynamics 365. More information is available in [Transfer data](transfer-data.md) and in [Transfer customizations](transfer-solution.md). The following are some of the common pitfalls when transferring data:
 
 - **Using ALM operations instead of Import/Export when transferring selective data.**
 - **Not following the transfer guidelines mentioned in the documentation such as having similar source and target versions of the Customer Insights - Journeys app.**
 
 ## Migrations
 
-- **Tenant to tenant**:* Dynamics 365 Customer Insights - Journeys supports [tenant to tenant migration within the same geo](/power-platform/admin/move-environment-tenant). There are, however, specific conditions to such migration that you must follow when provided as part of the support request.
+- **Tenant to tenant**: Customer Insights - Journeys supports [tenant to tenant migration within the same geo](/power-platform/admin/move-environment-tenant). There are, however, specific conditions to such migration that you must follow when provided as part of the support request.
 - **Geo to geo**: The Customer Insights - Journeys app doesn't currently support migration between different tenant geographic locations (geo to geo).
 
 ## Geos (commercial clouds)
 
-Dynamics 365 Customer Insights - Journeys is only available in certain geos. Refer to [the International availability guide](/dynamics365/get-started/availability) for Customer Insights - Journeys geo availability.
+Customer Insights - Journeys is only available in certain geos. Refer to [the International availability guide](/dynamics365/get-started/availability) for Customer Insights - Journeys geo availability.
 
 If your tenant is in a non-supported geo, you can't deploy Customer Insights - Journeys in that geo. The tenant must be enabled for multi-geo before deploying Customer Insights - Journeys in a supported geo. In this scenario, open a support request to check for feasibility.
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

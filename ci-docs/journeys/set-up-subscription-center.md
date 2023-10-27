@@ -13,7 +13,7 @@ search.audienceType:
 
 # Set up subscription lists and subscription centers
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -324,4 +324,4 @@ You can then set up a workflow that will extract the email address from the subm
 
 For more information, see [Mapping form data to entities with custom Workflows](entity-mapping.md) and other documents in the [Developer guide](developer/marketing-developer-guide.md).
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

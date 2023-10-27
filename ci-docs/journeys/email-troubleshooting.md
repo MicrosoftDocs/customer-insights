@@ -13,7 +13,7 @@ search.audienceType:
 
 # Troubleshoot email issues
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 This article describes issues related to email administration in Dynamics 365 Customer Insights - Journeys, including workarounds and solutions.
 
@@ -89,4 +89,4 @@ To avoid any confusion, it's important to clearly communicate the purpose of the
 
 In summary, the [External] flag is an important security feature to protect against phishing attacks. While it can be frustrating if your internal emails are being flagged as [External], there are steps you can take to resolve the issue. By working with your email administrator and clearly communicating the purpose of the flag to your recipients, you can ensure that your emails are delivered safely and securely.
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

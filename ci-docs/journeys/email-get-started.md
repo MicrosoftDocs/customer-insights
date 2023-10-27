@@ -13,7 +13,7 @@ search.audienceType:
 
 # Get started with email
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 This article provides a checklist to get email in Dynamics 365 Customer Insights - Journeys up and running quickly.
 
@@ -35,4 +35,4 @@ Follow these steps to set up subscription lists, configure your subscription cen
 | Design a customer journey for subscription mailings | This will be a simple two or three step journey (send mail to subscribers). Learn more: [Create a simple customer journey with email messaging](create-simple-customer-journey.md). |
 | Test and go live with marketing mailings | Learn more: [Check for errors, go live, and deliver the messages](email-check-golive.md). |
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]
