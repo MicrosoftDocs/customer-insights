@@ -1,7 +1,7 @@
 ---
 title: Sign up for a free trial
 description: Learn how to quickly sign up for and start a free Dynamics 365 Customer Insights - Journeys trial. Explore the app with tours and videos, and find additional learning resources.
-ms.date: 10/03/2023
+ms.date: 10/27/2023
 ms.topic: get-started
 ms.custom: template-trial-setup
 author: alfergus
@@ -28,7 +28,7 @@ Customer Insights offers a free 30-day trial. After a quick sign-up, you'll have
 1. Go to the [trial overview page](https://dynamics.microsoft.com/ai/customer-insights/) and select the **Try for free** button.
 1. To sign up for a Customer Insights trial, you need to use a work or school email address. If you don't have a work or school email address, or if your school or work account isn't [managed by Microsoft Microsoft Entra ID](https://azure.microsoft.com/services/active-directory/), sign up for a [free Office 365 E5 trial](https://www.microsoft.com/microsoft-365/enterprise/office-365-e5), then use the email address associated with your Office 365 E5 trial to sign up for the Customer Insights trial.
 
-The trial takes a few moments to load, then you can start using the app. As of September, 2023 the journeys app in the trial is real-time journeys only.
+The trial takes a few moments to load, then you can start using the app. As of September 2023, the Customer Insights - Journeys trial app only contains real-time journeys functionality. Outbound marketing is *not* included in the Customer Insights - Journeys trial.
 
 ## Customer Insights - Data trial
 
