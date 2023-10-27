@@ -1,7 +1,7 @@
 ---
 title: Known issues in Customer Insights - Journeys
 description: Learn about known issues in Customer Insights - Journeys and how to work around them.
-ms.date: 09/07/2023
+ms.date: 10/27/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -24,7 +24,7 @@ As we continue to work on Customer Insights - Journeys and refine the experience
 - Some strings in the Power BI aggregate analytics dashboard aren’t localized.
 - In the event of an email remote bounce, the contact/lead timeline might display two "email delivered" interactions for the same message with the same time stamp despite no message being delivered to the contact/lead email address. This is because the second interaction is intended to "erase" the first one. However, this isn't currently being handled in the timeline.
 - When two contacts or leads are merged, only interactions of the primary contact or lead will be visible in contact/lead insights.
-- There might be cases where unique values (e.g., unique opens and clicks) in aggregated analytics dashboards have a slight deviation when compared to operational analytics. KPIs in aggregated analytics are calculated once per day to ensure the highest possible accuracy. Operational analytics, designed for near real-time analysis, operate on demand, utilizing faster calculation methods for unique values, which may be slightly less precise.
+- There might be cases where unique values (for example, unique opens and clicks) in aggregated analytics dashboards have a slight deviation when compared to operational analytics. KPIs in aggregated analytics are calculated once per day to ensure the highest possible accuracy. Operational analytics, designed for near real-time analysis, operate on demand utilizing faster calculation methods for unique values, which may be slightly less precise.
 
 ## Consent
 
