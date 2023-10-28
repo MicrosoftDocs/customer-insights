@@ -138,10 +138,12 @@
         href: real-time-marketing-email.md
       - name: Design your email and content
         items:
-        - name: Copilot - Use AI to kickstart email creation
-          href: content-ideas.md
         - name: Create a new email and design its content
           href: email-design.md
+        - name: Copilot - Use AI to kickstart email creation
+          href: content-ideas.md
+        - name: "Preview: Copilot - Refresh and perfect your message"
+          href: content-rewrite.md
         - name: "Preview: Copilot - Style your emails with AI-assisted themes"
           href: email-theme.md
         - name: Generate iCalendar files for events and sessions
@@ -304,6 +306,8 @@
       href: real-time-marketing-optimize-lead-management.md
     - name: Create a scoring model
       href: real-time-marketing-create-lead-scoring-model.md
+    - name: Qualify the best leads
+      href: real-time-marketing-qualify-leads.md
     - name: Visualize results from your scoring model
       href: real-time-marketing-visualize-scoring-model.md
     - name: Security roles for lead scoring and qualification

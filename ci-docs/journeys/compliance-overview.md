@@ -1,7 +1,7 @@
 ---
 title: Compliance overview
 description: Learn how to manage compliance settings in Dynamics 365 Customer Insights - Journeys and outbound marketing.
-ms.date: 09/20/2023
+ms.date: 10/27/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -29,7 +29,7 @@ The primary benefit of contact point consent is that it allows Customer Insights
 In outbound marketing, consent is captured and stored on the contact entity the `DoNotEmail`, `DoNotBulkEmail` and `DoNotTrack` fields that apply to the entire contact record and all its email addresses. This approach doesn't allow for different consent to be captured for a contact’s multiple email addresses, phone numbers, etc.
 
 > [!IMPORTANT]
-> Real-time journeys check the contact's `DoNotEmail`, `DoNotBulkEmail` and `DoNotTrack` fields when an email message is sent to a contact entity. This behavior matches outbound marketing's consent enforcement. For an email to be sent to a contact from a real-time journey, both the contact's fields and the contact point consent records for the email address must all allow the message to be sent. These fields are not checked for messages sent to other entities (for example, leads). These fields are also not checked for text or custom channel messages.
+> Real-time journeys may check the contact's `DoNotEmail`, `DoNotBulkEmail`, and `DoNotTrack` fields to match outbound marketing's consent enforcement behavior and aid in the transition from outbound marketing to real-time journeys. To learn more, visit [Manage user compliance settings in Customer Insights - Journeys](real-time-marketing-compliance-settings.md)
 
 > [!IMPORTANT]
 > Outbound marketing does not check contact point consent records to evaluate consent when sending messages. This means that outbound marketing messages will not be affected by contact point consent records.
