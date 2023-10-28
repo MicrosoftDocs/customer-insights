@@ -246,6 +246,8 @@
         href: real-time-marketing-multiple-branches.md
       - name: Personalize triggers using conditions
         href: real-time-marketing-personalize-triggers.md
+      - name: "Preview: Set quiet times to prevent messages from sending during unwanted hours"
+        href: real-time-marketing-quiet-times.md
       - name: Limit sent with frequency capping
         href: real-time-marketing-frequency-cap.md
       - name: When to use attribute versus if/then branches
