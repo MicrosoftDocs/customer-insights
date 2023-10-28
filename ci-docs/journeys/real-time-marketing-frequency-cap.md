@@ -1,7 +1,7 @@
 ---
 title: Limit the number of messages sent with frequency capping 
 description: Learn how to limit the number of messages sent to your customers to prevent message fatigue.
-ms.date: 08/22/2023
+ms.date: 10/27/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
