@@ -1,7 +1,7 @@
 ---
 title: Compliance overview
 description: Learn how to manage compliance settings in Dynamics 365 Customer Insights - Journeys and outbound marketing.
-ms.date: 10/27/2023
+ms.date: 10/30/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -50,7 +50,7 @@ There are four ways that users can manage their contact preferences: preference 
 > Preference centers are the recommended way to enable customers to manage their communication preferences with your organization for real-time journeys.
 
 > [!IMPORTANT]
-> Preference centers do not modify a contact's `DoNotEmail`,  `DoNotBulkEmail`, or `DoNotTrack` fields. This means that outbound marketing messages are not affected by changes made to consent from Preference Centers. If you are sending messages from outbound marketing and real-time journeys at the same time, we recommend you use Subscription Centers in your real-time journeys.
+> Preference centers do not modify a contact's `DoNotEmail`,  `DoNotBulkEmail`, or `DoNotTrack` fields. This means that outbound marketing messages are not affected by changes made to consent from preference centers. If you are sending messages from outbound marketing and real-time journeys at the same time, we recommend you use subscription centers in your real-time journeys.
 
 Customer Insights - Journeys uses preference centers to enable customers to control the types of communications they wish to receive and the contact point at which they wish to receive them. They work with all supported entity types: leads, contacts, etc. Preference centers can be configured to match company branding and can include options for users to manage the consent for purposes and topics. Preference centers also support multi-brand consent, enabling you to manage consent independently for each of your lines of business.
 
@@ -70,7 +70,7 @@ Learn more: [Customer Insights - Journeys preference centers](real-time-marketin
 > [!CAUTION]
 > Subscription centers can only be used with contact entities. Leads and Customer Insights - Data profiles are not supported by subscription centers. If you plan to send communication to these entity types we recommend using a preference center.
 
-Outbound marketing subscription centers are marketing pages that contacts can use to manage their communication preferences and contact details with your organization. Subscription centers must be configured in outbound marketing, but can be used by real-time journeys. Subscription centers don't work with real-time journey's purposes and topics. Only data on the contact record (such as the `DoNotBulkEmail` field) and Subscription Lists can be updated from a subscription center.
+Outbound marketing subscription centers are marketing pages that contacts can use to manage their communication preferences and contact details with your organization. Subscription centers must be configured in outbound marketing but can be used for real-time journeys. Subscription centers don't work with real-time journey purposes and topics. Only data on the contact record (such as the `DoNotBulkEmail` field) and subscription lists can be updated from a subscription center.
 
 Customer Insights - Journeys can also use subscription centers if your journeys only target contacts. Using subscription centers from a real-time journey can enable you to start sending messages from real-time journeys before you transition to the newer preference center option.
 
