@@ -1,7 +1,7 @@
 ---
 title: Manage Customer Insights - Journeys forms
 description: Learn how to manage forms in Dynamics 365 Customer Insights - Journeys.
-ms.date: 09/13/2023
+ms.date: 10/24/2023
 ms.custom: 
   - dyn365-marketing
 ms.topic: article
@@ -56,7 +56,12 @@ The Theme section can be opened by selecting brush icon in the right pane. Theme
 > [!div class="mx-imgBorder"]
 > ![Edit style of your input field using Theme.](media/real-time-marketing-form-theme.png)
 
-### Copilot - forms theme assistant
+### Preview: Copilot - Forms theme assistant
+
+> [!IMPORTANT]
+> A preview feature is a feature that is not complete, but is made available before it’s officially in a release so customers can get early access and provide feedback. Preview features aren’t meant for production use and may have limited or restricted functionality.
+> 
+> Microsoft doesn't provide support for this preview feature. Microsoft Dynamics 365 Technical Support won’t be able to help you with issues or questions. Preview features aren’t meant for production use, especially to process personal data or other data that are subject to legal or regulatory compliance requirements.
 
 > [!IMPORTANT]
 > You must only use the theme assistant with websites that you own and operate. The theme assistant should not be used to copy third party websites.

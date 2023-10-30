@@ -1,6 +1,6 @@
 ---
-title: Configure default settings
-description: Set up collections of settings that establish various defaults used throughout the app, including for email marketing, customer journey timezone, double opt-in, and email deduplication during sending in Dynamics 365 Customer Insights - Journeys.
+title: Configure default settings in outbound marketing
+description: Set up collections of settings that establish various defaults used throughout the app, including for email marketing, customer journey timezone, double opt-in, and email deduplication during sending in outbound marketing.
 ms.date: 08/21/2023
 ms.topic: article
 author: alfergus
@@ -11,9 +11,12 @@ search.audienceType:
   - enduser
 ---
 
-# Configure default settings
+# Configure default settings in outbound marketing
 
 [!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+
+> [!IMPORTANT]
+> This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
 
 Use the **Settings** > **Email marketing** > **Default settings** page to set up collections of settings that establish various defaults used throughout the app. You can store as many settings sets as you want, but only the one marked as **Default** is active.
 

@@ -1,6 +1,6 @@
 ---
-title: Limitations on migrating files between environments
-description: Learn about limitations on migrating files between environments and possible workarounds.
+title: Limitations on migrating files between outbound marketing environments
+description: Learn about limitations on migrating files between outbound marketing environments and possible workarounds.
 ms.date: 09/27/2022
 ms.topic: how-to
 author: alfergus
@@ -9,9 +9,12 @@ search.audienceType:
   - developer
 ---
 
-# Limitations on migrating files between environments
+# Limitations on migrating files between outbound marketing environments
 
 [!INCLUDE [consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
+
+> [!IMPORTANT]
+> This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
 
 Out of the box, Dynamics 365 Customer Insights - Journeys doesn't provide tools to migrate files between environments. Any such tool would need to be built by a customer or partner and would revolve around calling Microsoft Dataverse APIs.
 

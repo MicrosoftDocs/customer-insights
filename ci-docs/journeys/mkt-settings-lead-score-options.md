@@ -1,6 +1,6 @@
 ---
-title: Configure lead scoring options
-description: Use the Lead scoring page in the Settings work area to configure a few basic options that control how automatic lead scoring works on your instance in Dynamics 365 Customer Insights - Journeys.
+title: Configure lead scoring options in outbound marketing
+description: Use the Lead scoring page in the Settings work area to configure a few basic options that control how automatic lead scoring works on your instance in outbound marketing.
 ms.date: 08/21/2023
 ms.topic: article
 author: alfergus
@@ -11,7 +11,7 @@ search.audienceType:
   - enduser
 ---
 
-# Configure lead scoring options
+# Configure lead scoring options in outbound marketing
 
 [!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 

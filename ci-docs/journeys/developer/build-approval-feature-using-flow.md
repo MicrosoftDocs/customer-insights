@@ -1,6 +1,6 @@
 ---
-title: Build an approvals feature using Power Automate
-description: Learn how to build an approvals feature using Power Automate and Dynamics 365 Customer Insights - Journeys.
+title: Build an outbound marketing approvals feature using Power Automate
+description: Learn how to build an approvals feature using Power Automate and outbound marketing.
 ms.date: 08/01/2019
 ms.topic: how-to
 author: alfergus
@@ -9,7 +9,7 @@ search.audienceType:
   - developer
 ---
 
-# Build approvals feature using Power Automate
+# Build an outbound marketing approvals feature using Power Automate
 
 [!INCLUDE [consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
 

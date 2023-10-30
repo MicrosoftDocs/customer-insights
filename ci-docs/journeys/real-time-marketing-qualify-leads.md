@@ -17,7 +17,7 @@ search.audienceType:
 
 Define qualification criteria and post-qualification actions to grow your pipeline while ensuring that each qualified lead receives attention from your sales teams. With proper scoring and qualification criteria, you can prioritize the best leads and empower the sales team to spend more time winning deals and less time chasing lukewarm opportunities.
 
-Dynamics 365 Customer Insights - Journeys allows you to set the qualification criteria that trigger a set of “post qualification actions.” For example, you can define qualification criteria that allow only high-potential leads to trigger the qualification actions. Once a lead meets this value, then the lead would be flagged as Sales-Ready or Marketing qualified. You can use this flag in multiple ways inside the Dynamics 365 ecosystem, including triggering journeys or sales assignment.
+Dynamics 365 Customer Insights - Journeys allows you to set the qualification criteria that trigger a set of “post qualification actions.” For example, you can define qualification criteria that allow only high-potential leads to trigger the qualification actions. Once a lead meets this value, then the lead is flagged as Sales-Ready or Marketing qualified. You can use this flag in multiple ways inside the Dynamics 365 ecosystem, including triggering journeys or sales assignment.
 
 ## Enable the feature
 
@@ -25,7 +25,7 @@ To use scoring models and qualification, an administrator needs to enable the fe
 - Go to **Settings** > **Overview** > **Feature switches**.
 - Enable the **Lead Management** feature switch and select **Save** in the upper right corner.
 
-Once the feature switch is enabled, you'll notice two new features appear on your Customer Insights - Journeys navigation bar: **Scoring models** and **Qualification**.
+Once the feature switch is enabled, two new features appear on your Customer Insights - Journeys navigation bar: **Scoring models** and **Qualification**.
 
 ## Define your marketing qualification criteria and qualification actions
 
@@ -33,6 +33,7 @@ Once the feature switch is enabled, you'll notice two new features appear on you
 > ![Screenshot showing lead qualification selection criteria](media/select-lead-qualification-criteria.png "Screenshot showing lead qualification selection criteria")
 
 The real-time journeys qualification allows you to define (1) qualification criteria and (2) actions when a lead meets the criteria. The qualification criteria are based on scoring models. To add new criteria:
+
 1. Go to **Lead management** > **Qualification** > **Qualification criteria** and add a scoring model. You can only qualify leads based on scoring models that are live. 
 1. Input a score that qualifies a lead. You can add multiple models and create more sophisticated criteria. For example, you could create an engagement scoring model and a demographic scoring model, then use both models to qualify leads that meet both models, or at least one of those models.
 1. Define actions when the criteria is met. Actions are updates to the **Status Reason** (as Marketing Qualified) or **Sales-Ready** (as Yes) attribute of the lead entity.
@@ -52,3 +53,5 @@ Additionally, if a lead has already been Marketing Qualified and then the lead s
 ## Modifying or adding new qualification criteria 
 
 To add or modify new qualification criteria, you need to stop the current qualification model. Once the model is stopped, you can add new criteria, modify existing qualification thresholds, or even delete any of the added criteria. Once you’re done, you can publish the model again and start qualifying your leads.
+
+[!INCLUDE[footer-include](./includes/footer-banner.md)]

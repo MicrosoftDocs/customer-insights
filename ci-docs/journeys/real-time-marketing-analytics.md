@@ -70,7 +70,7 @@ Select any journey component to view near real-time operational analytics in the
 > - **Open rate**: the percentage of unique email opens divided by the number of emails delivered.
 > - **Click rate**: the percentage of unique email clicks divided by the number of emails delivered.
 >
-> In the delivery and interaction details, you can now export up to 50,000 records of interaction data and access links to audience profiles that interacted with your email messages. Additionally, timestamps are reported according to the organization's timezone.
+> In the delivery and interaction details, you can now export up to 50,000 records of interaction data, search through data using the profile's email address, and access links to audience profiles that interacted with your email messages. Additionally, timestamps are reported according to the organization's timezone.
 > 
 > While these enhancements initially apply to email analytics, they will be gradually rolled out to journey operational analytics and other channel analytics.
   

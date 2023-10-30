@@ -1,6 +1,6 @@
 ---
-title: Map form data to entities with custom Workflows
-description: Learn how to map form data to entities with custom Workflows.
+title: Map form data to entities with custom workflows in outbound marketing
+description: Learn how to map form data to entities with custom workflows in outbound marketing.
 ms.date: 08/18/2023
 ms.topic: article
 author: alfergus
@@ -11,9 +11,12 @@ search.audienceType:
   - enduser
 ---
 
-# Map form data to entities with custom Workflows
+# Map form data to entities with custom workflows in outbound marketing
 
 [!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+
+> [!IMPORTANT]
+> This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
 
 If you have configured a marketing form to collect form submissions without updating contacts or leads, you can create a Workflow to map the form submission data to any entity.
 - Learn more about collecting form data without updating contacts or leads: [Create, view, and manage marketing forms](marketing-forms.md#do-not-createupdate-contacts-or-leads)
