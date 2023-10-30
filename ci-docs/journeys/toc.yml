@@ -528,6 +528,10 @@
     href: troubleshoot-marketing-solution-health.md
   - name: General FAQ
     href: troubleshoot-faq.md
+- name: Copilot in Customer Insights - Journeys
+  items: 
+  - name: Give consent to use Copilot in Customer Insights - Journeys
+    href: copilot-consent-journeys.md
 - name: Responsible AI transparency notes
   items:
   - name: Responsible AI FAQs
