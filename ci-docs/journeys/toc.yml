@@ -234,6 +234,8 @@
       items:
       - name: Edit a live journey
         href: real-time-marketing-edit-journey.md
+      - name: Edit email components in a live journey
+        href: edit-email-in-live-journey.md
       - name: Enhanced journey reminders
         href: real-time-marketing-enhanced-journey-reminders.md
       - name: Add email CC recipients to journeys
@@ -526,6 +528,10 @@
     href: troubleshoot-marketing-solution-health.md
   - name: General FAQ
     href: troubleshoot-faq.md
+- name: Copilot in Customer Insights - Journeys
+  items: 
+  - name: Give consent to use Copilot in Customer Insights - Journeys
+    href: copilot-consent-journeys.md
 - name: Responsible AI transparency notes
   items:
   - name: Responsible AI FAQs
