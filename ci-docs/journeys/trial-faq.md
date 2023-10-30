@@ -35,6 +35,7 @@ After you sign up for the trial, you'll arrive on the app's main screen. The mai
 
 In most ways, Customer Insights trials are fully functional, but time-limited, production instances. The features now include Customer Insights - Journeys *and* Customer Insights - Data apps, allowing you to:
 
+- Trials include real-time journeys features only. All new feature development and product investments are centralized in real-time journeys; therefore, our pre-sales trial showcases our product direction for new customers. 
 - Engage customers with trigger-based journeys, dynamics segments, and segments based on profiles from the Customer Insights – Data app.
 - Unify your customer data with Customer Insights - Data.
 
