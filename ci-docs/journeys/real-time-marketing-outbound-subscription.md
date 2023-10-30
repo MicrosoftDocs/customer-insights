@@ -1,7 +1,7 @@
 ---
 title: Use outbound subscription centers in Customer Insights - Journeys
 description: Learn how to use outbound marketing subscription centers in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/23/2023
+ms.date: 10/30/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -15,14 +15,14 @@ search.audienceType:
 
 [!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
-This article explains how to use outbound marketing subscription centers in real-time journeys. This capability enables you to start using real-time journeys before you have moved your consent settings over to the newer Preference Center compliance profiles. We only recommend using a Subscription Center real-time journeys if you're already using outbound marketing to send emails and aren't yet ready to fully transition to real-time journeys. Learn more about transitioning from outbound marketing, visit [Consent management and double opt-in transition guidance](real-time-marketing-consent-transition.md)
+This article explains how to use outbound marketing subscription centers in real-time journeys. This capability enables you to start using real-time journeys before you've moved your consent settings over to the newer preference center compliance profiles. You should only use a subscription center in real-time journeys if you're already using outbound marketing to send emails and aren't yet ready to fully transition to real-time journeys. To learn more about transitioning from outbound marketing, visit [Consent management and double opt-in transition guidance](real-time-marketing-consent-transition.md)
 
 > [!IMPORTANT]
-> You can only use subscription centers in journeys that target contacts. Journeys that target leads or Customer Insights - Data profiles should use Preference Centers. Preference centers offer improved functionality, such as more customizable forms and the ability to update text message consent. Learn more: [Customer Insights - Journeys compliance profiles](real-time-marketing-compliance-settings.md) and [Preference centers](real-time-marketing-preference-centers.md)
+> You can only use subscription centers in journeys that target contacts. Journeys that target leads or Customer Insights - Data profiles should use preference centers. Preference centers offer improved functionality, such as more customizable forms and the ability to update text message consent. Learn more: [Customer Insights - Journeys compliance profiles](real-time-marketing-compliance-settings.md) and [Preference centers](real-time-marketing-preference-centers.md)
 
 ## Prerequisites
 
-To use outbound subscription centers in real-time journeys, you must first create at least one subscription center in outbound marketing.
+To use outbound marketing subscription centers in real-time journeys, you must first create at least one subscription center in outbound marketing.
 
 ### Create subscription centers in outbound marketing
 
