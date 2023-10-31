@@ -35,7 +35,7 @@ In **Settings**, connect the outbound marketing subscription center to Customer 
     > ![Screenshot of the new settings dropdown.](media/outbound-subscription-dropdown.png "Screenshot of the new settings dropdown")
 
 1. Fill out the following settings in the "Quick Create: Compliance" pane:
-    1. **Name**: Select a meaningful name that is easy to identify for users creating emails.
+    1. **Name**: Select a meaningful name that's easy to identify for users creating emails.
     1. **Company address**: The address that is used in the email footer.
     1. **Select a subscription center**: Select the subscription center you set up in outbound marketing.
     1. **Existing consent: (Optional)** Select an existing compliance profile from which you would like to share consent with this profile. If there's already a compliance profile (for example, preference center or preference page) that captures consent for the same line of business as the subscription center you're setting up, we recommend that you select that compliance profile. Sharing existing consent causes two compliance profiles to share the same commercial and transactional consent purposes, linking consent captured between the two profiles.
@@ -51,7 +51,7 @@ In **Settings**, connect the outbound marketing subscription center to Customer 
 
 Emails sent with subscription center compliance profiles enforce consent in real-time journeys by checking contact point consent records and applying the configured enforcement model. The communication purposes and their configured **enforcement model** impact if an email is sent to a contact's email address. The tracking purpose's **enforcement model** controls if tracking links and pixels are included in emails sent from real-time marketing. The contact point consent checks are done in addition to checking the fields on the contact. To learn more about purposes, contact point consent, and enforcement models, visit [Manage user compliance settings in Customer Insights - Journeys](real-time-marketing-compliance-settings.md)
 
-For most customers, the default purpose **enforcement model** settings lead to real-time journey consent enforcement to being identical to the enforcement of the outbound journey. However, if you need to make changes, you can do so by editing the purposes in the compliance profile settings.
+For most users, the default purpose **enforcement model** settings lead to real-time journey consent enforcement being identical to the enforcement of the outbound journey. However, if you need to make changes, you can do so by editing the purposes in the compliance profile settings.
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of updating the consent purposes of a subscription center.](media/outbound-subscription-compliance-purposes.png "Screenshot of updating the consent purposes of a subscription center.")
