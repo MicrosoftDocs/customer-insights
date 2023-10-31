@@ -65,6 +65,7 @@ To use a subscription center compliance profile in emails sent from real-time jo
 1. Open or create a new email message in the Customer Insights - Journeys email editor.
 1. Select the email header and go to **Email Settings** in the right pane.
 1. Under **Compliance**, select the compliance profile with the subscription center you set up in the "Quick Create: Compliance" settings in the previous step.
+1. Choose the **Purpose** of the email you are sending (e.g. you are sending a commercial marketing email).
 
     > [!div class="mx-imgBorder"]
     > ![Screenshot of selecting the subscription center under Compliance.](media/outbound-subscription-compliance-select.png "Screenshot of selecting the subscription center under Compliance")
