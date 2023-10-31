@@ -46,7 +46,7 @@ For more information about unifying customer profiles, see [Data unification ove
 
 ## Get insights
 
-[Enrich](enrichment-hub.md) your data, build [measures](measures.md), and create [segments](segments.md) for further activation.
+[Enrich](enrichment-manage.md) your data, build [measures](measures.md), and create [segments](segments.md) for further activation.
 
 For example, you can create segments of unknown users that browsed the same product pages but never completed the checkout.
 

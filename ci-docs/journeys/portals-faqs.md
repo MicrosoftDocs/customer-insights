@@ -13,7 +13,7 @@ search.audienceType:
 
 # Portals FAQs
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -117,4 +117,4 @@ The Power Platform admin center enables you to change the  name of any of your i
           
 1. You'll be asked to confirm the action. Choose **Update URL** to continue and then allow a few minutes for the process to complete.
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

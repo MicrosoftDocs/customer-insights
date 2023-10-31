@@ -1,6 +1,6 @@
 ---
-title: Configure and use a custom channel
-description: Provides information on how to install custom channel from AppSource to your Dynamics 365 Customer Insights - Journeys instance.
+title: Configure and use a custom channel in outbound marketing
+description: Provides information on how to install custom channel from AppSource to your outbound marketing instance.
 ms.date: 03/17/2022
 ms.topic: how-to
 author: alfergus
@@ -9,9 +9,9 @@ search.audienceType:
   - developer
 ---
 
-# Configure and use a custom channel
+# Configure and use a custom channel in outbound marketing
 
-[!INCLUDE[consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -30,4 +30,4 @@ Installing a custom channel installs a [managed solution](/powerapps/developer/c
 > [!div class="mx-imgBorder"]
 > ![Custom Content tiles.](../media/marketing-custom-channel-tile2.png "Custom Content tiles")
 
-[!INCLUDE[footer-include](.././includes/footer-banner.md)]
+[!INCLUDE [footer-include](.././includes/footer-banner.md)]

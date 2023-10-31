@@ -14,7 +14,7 @@ search.audienceType:
 
 # Marketing form submission report
 
-[!INCLUDE[consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -128,4 +128,4 @@ Exported data for interactions like **EmailOpened**, **WebsiteVisited**, **Websi
 | 6B6B81D0-EF01-4B4D-8430-675DC31AE27D | Android    |
 | 8C0667B0-492A-4872-BCDD-0A9278127BDB | Amiga      |
 
-[!INCLUDE[footer-include](.././includes/footer-banner.md)]
+[!INCLUDE [footer-include](.././includes/footer-banner.md)]

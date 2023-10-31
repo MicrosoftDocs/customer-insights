@@ -13,7 +13,7 @@ search.audienceType:
 
 # Generate dynamic behavioral segments from customer journey results
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -72,4 +72,4 @@ To generate segments based on incomplete journeys:
 
     ![Changes saved pop-up announcement.](media/popup-changes-saved.png "Changes saved pop-up announcement")
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

@@ -1,6 +1,6 @@
 ---
-title: Self-hosted custom event website
-description: Learn how you can extend event management web application functionality for self-hosted custom event websites in Dynamics 365 Customer Insights - Journeys.
+title: Self-hosted custom event website in outbound marketing
+description: Learn how you can extend event management web application functionality for self-hosted custom event websites in outbound marketing.
 ms.date: 09/16/2020
 ms.topic: how-to
 author: alfergus
@@ -9,9 +9,14 @@ search.audienceType:
   - developer
 ---
 
-# Self-hosted custom event website
+# Self-hosted custom event website in outbound marketing
 
-[!INCLUDE[consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
+
+[!INCLUDE [azure-ad-to-microsoft-entra-id](../includes/azure-ad-to-microsoft-entra-id.md)]
+
+> [!IMPORTANT]
+> This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
 
 Before you start hosting the self-hosted custom event website, complete the actions mentioned in [Prerequisites](event-management-web-application.md) topic.
 
@@ -35,11 +40,11 @@ To use event management public API, you need a web application token. The web ap
 4. Make sure that the `useRestStack` variable is set to true.
 5. Update the URL for `imagesEndpoint`. If you want to serve the images from the same server, the URL should look like this: `https://HOST/assets/images/` (HOST needs to be replaced with your domain name). 
 6. Change the `emApplicationtoken` variable to point to the URL from the **Token** field in the newly created in the web application record. 
-7. If you want to use the [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis), you need to set the `useAadB2C` variable to `true` and modify the `aadB2CConfig`. More information [Configure Azure Active Directory](#configuration-for-azure-active-directory).
+7. If you want to use [Microsoft Entra ID](/azure/active-directory/fundamentals/whatis), you need to set the `useAadB2C` variable to `true` and modify the `aadB2CConfig`. More information [Microsoft Entra ID](#configuration-for-microsoft-entra-id).
 
-## Configuration for Azure Active Directory
+## Configuration for Microsoft Entra ID
 
-To learn how to set up AAD B2C tenant and configure the event management to work with AAD B2C, see [Setting up event management to work with AAD B2C](event-management-aad-b2c-setup.md)
+To learn how to set up a Microsoft Entra ID tenant and configure the event management to work with Microsoft Entra ID, see [Setting up event management to work with Microsoft Entra ID](event-management-aad-b2c-setup.md)
 
 ## Development
 
@@ -69,4 +74,4 @@ ng build --prod
 
 You can find the built website in the **dist** folder of the root directory.
 
-[!INCLUDE[footer-include](.././includes/footer-banner.md)]
+[!INCLUDE [footer-include](.././includes/footer-banner.md)]

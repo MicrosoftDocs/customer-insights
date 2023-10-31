@@ -1,7 +1,7 @@
 ---
 title: Customer Insights - Journeys trial FAQ
 description: Solutions to common questions related to Dynamics 365 Customer Insights trial setup and management. Learn how to resolve platform and app-specific issues.
-ms.date: 09/13/2023
+ms.date: 10/03/2023
 ms.topic: get-started
 ms.custom: template-trial-faq
 author: alfergus
@@ -14,10 +14,12 @@ search.audienceType:
 
 # Customer Insights - Journeys trial FAQ
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+
+[!INCLUDE [azure-ad-to-microsoft-entra-id](./includes/azure-ad-to-microsoft-entra-id.md)]
 
 > [!NOTE]
-> For the Customer Insights trial, you'll need to use an account that is managed by [Microsoft Azure Active Directory](https://azure.microsoft.com/services/active-directory/). If you cannot sign up for Customer Insights using a work or school email address, sign up for a [free Office 365 E5 trial](https://www.microsoft.com/microsoft-365/enterprise/office-365-e5), then use the email address associated with your Office 365 E5 trial to sign up for the Customer Insights trial.
+> For the Customer Insights trial, you'll need to use an account that is managed by [Microsoft Microsoft Entra ID](https://azure.microsoft.com/services/active-directory/). If you cannot sign up for Customer Insights using a work or school email address, sign up for a [free Office 365 E5 trial](https://www.microsoft.com/microsoft-365/enterprise/office-365-e5), then use the email address associated with your Office 365 E5 trial to sign up for the Customer Insights trial.
 
 ## Customer Insights-specific questions
 
@@ -39,7 +41,6 @@ In most ways, Customer Insights trials are fully functional, but time-limited, p
 However, there are a few key differences from the production version:
 
 - Each Customer Insights trial comes pre-installed on a dedicated trial instance included with the trial. You can't install a Customer Insights trial on an existing instance.
-- Customer Insights - Journeys trials can't be integrated with a Power Apps portal. Instead, they provide a special mechanism that lets you try out landing pages, forms, the event website, and other interactive features without requiring a Power Apps portal or external CMS system. More information: [Integrate Customer Insights - Journeys with a CMS system or Power Apps portal](portal-optional.md).
 - You can't uninstall or reinstall trials using the standard tools provided by the Power Platform admin center. Trials are special and are handled differently than production instances.
 - You don't need to use the [installation management area](setup.md#install-uninstall-or-update-customer-insights) when setting up a trial.
 
@@ -74,6 +75,6 @@ This isn't possible today. Trial licenses only work on trial-type environments i
 
 ## Trial platform FAQ
 
-[!INCLUDE[trial-faq-platform](./includes/trial-faq-platform.md)]
+[!INCLUDE [trial-faq-platform](./includes/trial-faq-platform.md)]
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

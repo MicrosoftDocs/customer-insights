@@ -13,7 +13,7 @@ search.audienceType:
 
 # Create content blocks that you can reuse in multiple designs
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 Content blocks are pre-made pieces of content that you can insert into emails. They can contain text, images, links, buttons, and more – anything that can be used as content in an email. They also can include formatting and layout. When inserted, all of the content (including the layout, if present) contained within the content block becomes part of the email.
 
@@ -96,4 +96,4 @@ A content block can be “protected.” When such a content block is inserted in
 
 To make a content block protected or unprotected, set the **Protected** attribute in its settings. New content blocks are set as protected by default. 
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

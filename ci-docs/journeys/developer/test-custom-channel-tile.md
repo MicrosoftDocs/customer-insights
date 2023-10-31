@@ -1,6 +1,6 @@
 ---
-title: "Step 4: Test your custom channel tile"
-description: Provides information on how you can make the custom channel tile available in the customer journey designer in Dynamics 365 Customer Insights - Journeys.
+title: "Step 4: Test your custom channel tile in outbound marketing"
+description: Provides information on how you can make the custom channel tile available in the customer journey designer in outbound marketing.
 ms.date: 03/17/2022
 ms.topic: how-to
 author: alfergus
@@ -9,9 +9,9 @@ search.audienceType:
   - developer
 ---
 
-# Step 4: Test your custom channel tile
+# Step 4: Test your custom channel tile in outbound marketing
 
-[!INCLUDE[consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -31,4 +31,4 @@ To make the custom channel tile available in the customer journey designer:
 > [!div class="nextstepaction"]
 > [Publish custom channel on AppSource](publish-custom-channel-appsource.md)
 
-[!INCLUDE[footer-include](.././includes/footer-banner.md)]
+[!INCLUDE [footer-include](.././includes/footer-banner.md)]

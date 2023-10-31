@@ -13,6 +13,8 @@ ms.custom: bap-template
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
+[!INCLUDE [azure-ad-to-microsoft-entra-id](../journeys/includes/azure-ad-to-microsoft-entra-id.md)]
+
 Ingest data into Dynamics 365 Customer Insights - Data using your Azure Data Lake Storage Gen2 account. Data ingestion can be full or incremental.
 
 ## Prerequisites

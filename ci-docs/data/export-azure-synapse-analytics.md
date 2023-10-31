@@ -14,6 +14,8 @@ ms.author: philk
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
+[!INCLUDE [azure-ad-to-microsoft-entra-id](../journeys/includes/azure-ad-to-microsoft-entra-id.md)]
+
 Azure Synapse is an analytics service that accelerates time to insight across data warehouses and big data systems. You can ingest and use data from Dynamics 365 Customer Insights - Data in [Azure Synapse](/azure/synapse-analytics/overview-what-is).
 
 ## Prerequisites

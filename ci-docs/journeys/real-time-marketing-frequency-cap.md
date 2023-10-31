@@ -1,7 +1,7 @@
 ---
 title: Limit the number of messages sent with frequency capping 
 description: Learn how to limit the number of messages sent to your customers to prevent message fatigue.
-ms.date: 08/22/2023
+ms.date: 10/27/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -13,7 +13,7 @@ search.audienceType:
 
 # Limit the number of messages sent with frequency capping
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RW10LWN]
 
@@ -32,6 +32,9 @@ By default, the "Marketing Manager - Business" role will have the rights to crea
 
 > [!Note]
 > Only values larger than zero will be accepted. If you leave the input field blank, no cap will be applied. Also note that only commercial messages will be capped; transactional messages are always excluded.
+
+> [!Note]
+> Messages sent before a frequency cap was added for a particular channel will not be counted towards the cap for future messages.
 
 > [!div class="mx-imgBorder"]
 > ![Frequency cap settings screenshot.](media/real-time-marketing-frequency-cap-settings.png "Frequency cap settings screenshot")
@@ -69,4 +72,4 @@ The right limit for a message will be different for each brand, industry, and ch
 - Look at relevant analytics (study the unique open rate and click-through rate).
 - Study your journey (look at the drop off rates in the journey view).
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

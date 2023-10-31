@@ -1,6 +1,6 @@
 ---
-title: Using the events API
-description: Learn how to use the events API to access date from events, sessions, session tracks, and passes in Dynamics 365 Customer Insights - Journeys.
+title: Using the events API in outbound marketing
+description: Learn how to use the events API to access date from events, sessions, session tracks, and passes in outbound marketing.
 ms.date: 10/18/2022
 ms.topic: overview
 author: alfergus
@@ -9,9 +9,12 @@ search.audienceType:
   - developer
 ---
 
-# Using the events API
+# Using the events API in outbound marketing
 
-[!INCLUDE[consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
+
+> [!IMPORTANT]
+> This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
 
 The events API is a programmatic method to access data of events, sessions, session tracks, passes, speakers, and sponsorships. Additionally, it allows you to register for events and sessions.
 
@@ -74,4 +77,4 @@ If the web application token is invalid, the events API will return `HTTP 401 Un
 
 To use the events API, you need to provide a web application token in each request. The web application token is used to control API requests that are associated with your organization. More information: [Register your web application](host-custom-event-website-on-azure.md#step-2-register-your-web-application)
 
-[!INCLUDE[footer-include](.././includes/footer-banner.md)]
+[!INCLUDE [footer-include](.././includes/footer-banner.md)]

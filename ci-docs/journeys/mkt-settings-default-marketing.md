@@ -1,6 +1,6 @@
 ---
-title: Configure default settings
-description: Set up collections of settings that establish various defaults used throughout the app, including for email marketing, customer journey timezone, double opt-in, and email deduplication during sending in Dynamics 365 Customer Insights - Journeys.
+title: Configure default settings in outbound marketing
+description: Set up collections of settings that establish various defaults used throughout the app, including for email marketing, customer journey timezone, double opt-in, and email deduplication during sending in outbound marketing.
 ms.date: 08/21/2023
 ms.topic: article
 author: alfergus
@@ -11,9 +11,12 @@ search.audienceType:
   - enduser
 ---
 
-# Configure default settings
+# Configure default settings in outbound marketing
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+
+> [!IMPORTANT]
+> This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
 
 Use the **Settings** > **Email marketing** > **Default settings** page to set up collections of settings that establish various defaults used throughout the app. You can store as many settings sets as you want, but only the one marked as **Default** is active.
 
@@ -57,4 +60,4 @@ By default, Dynamics 365 Customer Insights - Journeys deduplicates outgoing outb
 
 Duplicate email addresses usually indicates that the same person is represented by two different records in your database (for example, because they registered at different times using two different first-name variants, such as "Bob" and "Robert"), so this is the desired behavior. However, some organizations need to send separate copies of the same email messages to multiple contacts that happen to use the same email address. In this case, personalized content, such as account details, would probably be different for each recipient. If your organization requires this, set **Bypass email deduplication** to **Yes**. Set it to **No** to revert to the standard deduplication behavior.
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

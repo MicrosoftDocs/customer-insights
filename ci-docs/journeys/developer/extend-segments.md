@@ -1,6 +1,6 @@
 ---
-title: Basic operations on segments using API
-description: Learn how to use the segmentation API in Dynamics 365 Customer Insights - Journeys.
+title: Basic operations on segments using API in outbound marketing
+description: Learn how to use the segmentation API in outbound marketing.
 ms.date: 06/12/2019
 ms.topic: how-to
 author: alfergus
@@ -9,9 +9,9 @@ search.audienceType:
   - developer
 ---
 
-# Basic operations on segments using the segmentation API
+# Basic operations on segments using API in outbound marketing
 
-[!INCLUDE[consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -357,4 +357,4 @@ POST {{OrgUrl}}/api/data/v9.0/msdyncrm_ValidateSegment
 ```
 
 
-[!INCLUDE[footer-include](.././includes/footer-banner.md)]
+[!INCLUDE [footer-include](.././includes/footer-banner.md)]

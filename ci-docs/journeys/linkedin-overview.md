@@ -13,7 +13,7 @@ search.audienceType:
 
 # Marketing on LinkedIn
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -65,4 +65,4 @@ For information for users about how to author and schedule posts on LinkedIn and
 
 For information for administrators about how to configure each of your organization's social media accounts for use with this feature, see [Configure your social media accounts](mkt-settings-social-media.md).
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

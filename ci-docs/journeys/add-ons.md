@@ -13,7 +13,7 @@ search.audienceType:
 
 # Install add-ons
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 Add-ons are optional components that can be installed on your Dynamics 365 Customer Insights - Journeys instance. Add-ons extend or further improve the default functionality of a specific area.
 
@@ -23,4 +23,4 @@ To install or uninstall an add-on, you need the following privileges:
 - Create = ability to install the add-on
 - Delete = ability to uninstall the add-on
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

@@ -13,7 +13,7 @@ search.audienceType:
 
 # Copy or restore environments
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 Environment management operations are a standard feature of model-driven apps in Dynamics 365 (Sales, Customer Service, Field Service, Customer Insights - Journeys, and Project Service Automation). Customer Insights - Journeys, introduces a couple of additional steps to ensure that your back-up data that isn't stored in Dataverse if you're managing across environments.
 
@@ -40,6 +40,9 @@ Because Customer Insights - Journeys interacts with several special services and
 
 > [!NOTE]
 > If you are copying to a support environment, see [Copy a production environment to a support environment](copy-or-restore.md#copy-a-production-environment-to-a-support-environment) for instructions. For all other types of copies, continue reading here.
+
+> [!NOTE]
+> If you reinstall Customer Insights – Journeys after a copy, backup, or restore, you will see duplicate quota from the source environment. You will not experience degradation or enforcement for the quota overage. A change in the December 2023 release will track quota by the environment where it was generated and not impact copy/backup/restore. If you see excess quota following the December 2023 release, file a support ticket and the copied quota will be removed from the duplicate environment.
 
 ### Step 1: Prepare your source environment
 
@@ -210,4 +213,4 @@ For standard Dynamics 365 environments (without Customer Insights - Journeys ins
 
 For standard Dynamics 365 environments (including Customer Insights - Journeys), you can use the Power Platform admin center to change the URL of the environment. Learn more: [Edit properties of an environment](/power-platform/admin/edit-properties-environment).
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

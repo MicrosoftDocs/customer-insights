@@ -13,7 +13,7 @@ search.audienceType:
 
 # Use natural language in journeys
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 Natural language input enables you to use common words and phrases to describe a condition you want to include in your customer journey. The data model is built on top of Common Data Model (CDM).
 
@@ -66,4 +66,4 @@ To provide feedback after you've entered a natural language clause:
 1. Select **Send feedback**.
 1. Enter a short explanation of what happened. Add comments about what you would expect the phrase to look like.
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

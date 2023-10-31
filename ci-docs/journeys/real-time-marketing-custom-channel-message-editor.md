@@ -15,7 +15,7 @@ search.audienceType:
 
 # Define the message editor interface (optional)
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 Applicable channels: Custom
 

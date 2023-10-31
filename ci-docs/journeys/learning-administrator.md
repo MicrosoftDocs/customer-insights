@@ -13,7 +13,7 @@ search.audienceType:
 
 # Dynamics 365 Customer Insights - Journeys administrators learning catalog
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -31,4 +31,4 @@ The following catalog is organized from core knowledge to specific domains, and 
 | [Introduction to configuration in Dynamics 365 model-driven apps](/training/paths/intro-developing-power-platform/) | One of the key features of a Dynamics 365 model-driven app is its ability to be extended and customized without code. In this learning path, we'll explore the Power Platform's configuration abilities and how to use them for a model-driven app.  | Free, self-paced online learning path | 1 hour             |
 | [Analyze insights in Dynamics 365 Customer Insights - Journeys](/training/paths/analyze-marketing-insights/)     | Focus on evaluating analytics and key performance indicators of your marketing efforts to help understand impact and what tactics work best for your target audience. This learning path covers reviewing insights captured from contacts, leads, accounts, segments, and more. Entity-level and form-level calendars are covered as well as creating and customizing marketing calendars. | Free, self-paced online learning path | 1 hour 50 minutes  |
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

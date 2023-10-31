@@ -1,11 +1,12 @@
 ---
 title: "Manage the search & filter index for customer profiles"
 description: "Quickly find information about unified customer profiles and filter for specified attributes."
-ms.date: 11/15/2022
+ms.date: 09/27/2023
 ms.reviewer: mhart
 ms.topic: conceptual
 author: NimrodMagen
 ms.author: nimagen
+ms.custom: bap-template
 ---
 
 # Manage the search & filter index for customer profiles
@@ -18,13 +19,13 @@ The result of unifying your customer data is a *Customer* table that provides a 
 
 ## Define searchable attributes and indexed fields
 
-If it's the first time you define searchable attributes as an administrator, define indexed fields first. We suggest you choose all the attributes by which users can search and filter customers on the **Customers** page. Only attributes that exist in the *Customer* table created during the data unification process can be specified.
+If it's the first time you define searchable attributes as an administrator, define indexed fields first. We suggest you choose all the attributes by which users can search and filter customers on the **Customers** page. Only attributes that exist in the *Customer* table created during the data unification process can be specified. For a field to be searchable, the field must use the Edm.String data type and be marked as **Included in search**.
 
 1. Go to **Customers** and select **Search & filter index**.
 
 1. Select **+ Add**.
 
-1. Select the attributes in the list you want to add as indexed fields and click **Apply**.
+1. Select the attributes in the list you want to add as indexed fields and select **Apply**.
 
 1. To add more attributes, select **Add**. To remove a selected attribute, select the attribute and then **Delete**.
 
@@ -38,7 +39,7 @@ Set up the fields that can be used for filtering customers on the **Customers** 
 
 1. Go to **Customers** and select **Search & filter index**.
 
-1. Select an attribute and **Add Filter**. Define the number of results and the order in which they'll be organized. Depending on the attribute's data type, one of the following panes appear.
+1. Select an attribute and **Add Filter**. Define the number of results and the order in which they'll be organized. Depending on the attribute's data type, one of the following panes appears.
 
    - String-type attributes: Specify the number of desired results on the **String filter** pane and the order policy by which they'll be organized.
 
