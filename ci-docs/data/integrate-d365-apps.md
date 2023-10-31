@@ -1,4 +1,4 @@
----
+ ---
 title: Integrate with Dynamics 365 applications (preview)
 description: Learn how Customer Insights - Data can be used with other Dynamics 365 applications
 author: Scott-Stabbert
@@ -17,18 +17,14 @@ ms.custom: bap-template
 
 Dynamics 365 customers can access more data and insights made available by the unified customer profile while working with a contact or lead. When unification is run, Customer Insights – Data creates a relationship from each contact or lead to the associated customer profile table by creating a standard Dataverse lookup column called CustomerID that links the records. From this link, you can view the details of a contact or lead and easily access the extended information and insights for that contact or lead from Customer Insights – Data.
 
-To link contacts or leads to a unified customer profile, the contact or lead tables must be imported to Customer Insights – Data and [unified](data-unification.md) with other customer data sources. More value can be added to the unified customer profile by including external [activity](activities.md) data and creating various [measures](measures.md). When unification runs, the CustomerID lookup column is added to the Dataverse tables that were unified. Contacts, leads, and other Dataverse records can natively reference their associated unified customer profile. In addition, the customer profile table has relationships to measure tables, making measures easily accessible.
+To link contacts or leads to a unified customer profile, the contact or lead tables must be imported to Customer Insights – Data through the [Microsoft Dataverse connector](connect-dataverse.md) or the [Power Query Dataverse connector](connect-power-query.md). [Unify](data-unification.md) the data with other customer data sources. Add more value to the unified customer profile by including external [activity](activities.md) data and creating various [measures](measures.md). When unification runs, the CustomerID lookup column is added to the Dataverse tables that were unified. Contacts, leads, and other Dataverse records can natively reference their associated unified customer profile. In addition, the customer profile table has relationships to measure tables, making measures easily accessible. 
 
 Examples of using this native linking include:
 
-- A sales team member viewing a lead can see additional information from the unified profile such as the Customer Lifetime Value, lifetime purchases, churn risk, and other data. The team member can make better decisions on which leads to pursue and has access to data to help foster stronger relationships, knowing their customer’s interests, activity history, and insights. All of this information is accessible seamlessly in their contact/lead view.
+- A sales team member viewing a lead can see additional information from the unified profile such as the customer lifetime value, lifetime purchases, churn risk, and other data. The team member can make better decisions on which leads to pursue and has access to data to help foster stronger relationships, knowing their customer’s interests, activity history, and insights. All of this information is accessible seamlessly in their contact/lead view.
 
 - A marketing team can personalize email communications and thoughtfully branch a journey based on data in the unified profile, providing a distinct journey experience for customers based on data not previously available in Dynamics 365.
 
 - Service reps can provide personalized service knowing the customer’s loyalty tier or prediction to churn.
 
-## Limitations
-
-- Currently, the link is only created on Dataverse tables imported through the [Microsoft Dataverse connector](connect-dataverse.md) or the [Power Query Dataverse connector](connect-power-query.md).
-
-- Currently, the linked relationship only supports accessing the attributes from the unified customer profile table and measures.
+[!INCLUDE [footer-include](includes/footer-banner.md)]
