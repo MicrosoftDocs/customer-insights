@@ -22,39 +22,45 @@ This article explains how to use outbound marketing subscription centers in real
 
 ## Prerequisites
 
-To use outbound marketing subscription centers in real-time journeys, you must first create at least one subscription center in outbound marketing.
-
-### Create subscription centers in outbound marketing
-
-If you haven’t already, [create your subscription centers](set-up-subscription-center.md) in outbound marketing.
+To use outbound marketing subscription centers in real-time journeys, you must first create at least one subscription center in outbound marketing. If you haven’t already, [create your subscription centers](set-up-subscription-center.md) in outbound marketing.
 
 ## Set up subscription centers in Customer Insights - Journeys
 
 In **Settings**, connect the outbound marketing subscription center to Customer Insights - Journeys compliance settings:
 
 1. Go to **Settings** > **Customer engagement** > **Compliance**.
-1. Select **+ New setting** in the top toolbar, then select **+ With subscription center** from the dropdown.
+1. Select **+ New Profile** in the top toolbar, then select **+ With subscription center** from the dropdown.
 
     > [!div class="mx-imgBorder"]
     > ![Screenshot of the new settings dropdown.](media/outbound-subscription-dropdown.png "Screenshot of the new settings dropdown")
 
 1. A pane titled "Quick Create: Compliance" will appear. Fill out the following settings:
-    1. **Setting name**: Select a meaningful name that will be easy to identify.
+    1. **Name**: Select a meaningful name that will be easy to identify for users creating emails.
     1. **Company address**: The address that is used in the email footer.
-    1. **Consent model**:
-        - *Restrictive*: If consent isn't specified, assume it isn't allowed.
-        - *Non-restrictive*: If consent isn't specified, assume it's allowed.
-    1. **Tracking consent**: Enable this option to get tracking consent from customers.
     1. **Select a subscription center**: Select the subscription center you set up in outbound marketing.
-
+    1. **Existing consent: (Optional)** Select an existing compliance profile from which you would like to share consent with this profile. If there is already a compliance profile (e.g. preference center, preference page) that has captured consent for the same line of business as the subscription center you're setting up, it's recommended that you select that compliance profile. By sharing existing consent, the two compliance profiles will share the same commercial and transactional consent purposes, linking consent captured between the two profiles.
         > [!div class="mx-imgBorder"]
-        > ![Screenshot of the quick create pane.](media/outbound-subscription-quick-create.png "Screenshot of the quick create pane")
+        > ![Screenshot of the subscription center compliance profile quick create pane.](media/outbound-subscription-quick-create.png "Screenshot of the quick create pane")
 
     1. Select **Save and close**.
 
-## Use a subscription center in a Customer Insights - Journeys email
+## Subscription center consent enforcement
 
-Now you can use the subscription center you've set up in a Customer Insights - Journeys email. To do so, follow the steps below.
+> [!IMPORTANT]
+> By default, real-time journeys check the contact's `DoNotEmail`, `DoNotBulkEmail`, and `DoNotTrack` fields when outbound marketing is installed. These checks are performed to match outbound marketing's consent enforcement behavior and aid in the transition from outbound marketing to real-time journeys. To learn more, visit [Manage user compliance settings in Customer Insights - Journeys](real-time-marketing-compliance-settings.md)
+
+Emails sent with subscription center compliance profiles enforce consent in real-time journeys by checking contact point consent records and applying the configured enforcement model. The communication purposes and their configured **enforcement model** will impact if an email is sent to a contact's email address. The tracking purpose's **enforcement model** will control if tracking links and pixels are included in emails sent from real-time marketing. The contact point consent checks are done in addition to checking the fields on the contact. To learn more about purposes, contact point consent, and enforcement models, visit [Manage user compliance settings in Customer Insights - Journeys](real-time-marketing-compliance-settings.md)
+
+For most customers, the default purpose **enforcement model** settings will lead to real-time journey consent enforcement to being identical to the enforcement of the outbound journey. However, if you need to make changes, you can do so by editing the purposes in the compliance profile settings.
+
+> [!div class="mx-imgBorder"]
+> ![Screenshot of updating the consent purposes of a subscription center.](media/outbound-subscription-compliance-purposes.png "Screenshot of updating the consent purposes of a subscription center.")
+
+## Use a subscription center compliance profile in email
+
+When you use a subscription center compliance profile in a real-time journey email, the system will replace `{{PreferenceCenter}}` personalization tokens in the email with a link to the outbound marketing subscription center defined in the compliance profile. Similarly, `{{CompanyAddress}}` personalization tokens will be replaced with the address configured in the compliance profile.
+
+To use a subscription center compliance profile in emails sent from real-time journeys, follow the steps below.
 
 1. Open or create a new email message in the Customer Insights - Journeys email editor.
 1. Select the email header and go to **Email Settings** in the right pane.
@@ -66,7 +72,9 @@ Now you can use the subscription center you've set up in a Customer Insights - J
 ### See also
 
 [Outbound marketing compliance settings](privacy-use-features.md)
+
 [Manage user compliance settings in Customer Insights - Journeys](real-time-marketing-compliance-settings.md)
+
 [Manage consent for email and text messages in Customer Insights - Journeys](real-time-marketing-email-text-consent.md)
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
