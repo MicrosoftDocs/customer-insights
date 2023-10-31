@@ -1,7 +1,7 @@
 ---
 title: Upload, manage, and use images, files, and videos in online content
 description: How to upload, manage and use images, files, and videos in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/23/2023
+ms.date: 10/12/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -41,13 +41,6 @@ You can create a collection of images, videos, and files for later use. To uploa
 
 You can manually add **tags** when you upload a file so it’s easier to organize and find it later.
 
-Additionally, thanks to enhanced AI tagging, tags are automatically generated any time you upload images to the library.
-
-> [!IMPORTANT]
-> The AI tagging feature is currently in preview.
-
-When you add an image element to your content or need to [link to a file or video](/dynamics365/marketing/real-time-marketing-email#link-to-documents-and-videos-stored-in-the-asset-library), you can choose to use a file that already exists in your Customer Insights - Journeys app library or upload a new one. After you've uploaded a file in this way, it will also be available in the library for use in other content.
-
 ## Edit assets
 
 You can easily see and edit asset details in the side pane. Simply select the asset to rename, add tags and alt text, and copy the asset URL.
@@ -78,6 +71,10 @@ If the image you need isn't there, select **+Upload** to add a new one.
 
 Additionally, the Copilot assistant automatically identifies a selection of images from your library that best complement your content. Quickly and easily choose images that resonate with your audience without having to spend time searching for them.
 
+When you add an image element to your content or need to [link to a file or video](/dynamics365/marketing/real-time-marketing-email#link-to-documents-and-videos-stored-in-the-asset-library), you can choose to use a file that already exists in your Customer Insights - Journeys app library or upload a new one. After you've uploaded a file in this way, it will also be available in the library for use in other content.
+
+> [!IMPORTANT]
+> The copilot assisntant smart recommendation feature is currently in preview.
 ### See also
 
 [Link to documents stored in the asset library](/dynamics365/marketing/real-time-marketing-email#link-to-documents-and-videos-stored-in-the-asset-library)
