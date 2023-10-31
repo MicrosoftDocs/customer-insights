@@ -1,4 +1,4 @@
- ---
+---
 title: Integrate with Dynamics 365 applications (preview)
 description: Learn how Customer Insights - Data can be used with other Dynamics 365 applications
 author: Scott-Stabbert
