@@ -114,7 +114,19 @@ To use a custom trigger with a Power Automate flow, navigate to [Power Apps Port
     - Set Table name to "(none)"
     - Set Action name to the name of the custom trigger you activated in your customer journey--in this example, the name of the custom trigger is "Send to Sales agent"
 
-3. Start adding the subsequent step to the flow. In each of these steps, you can use the data fields that came with the custom trigger. In this example, the phone number field mapped in the earlier steps will be available in all the steps of this flow.
+> [!NOTE]
+> It should be a frequent requirement to pass the **contact Id** from the journey to the flow and as we don't expose Ids as fields anywhere, it currently seems the only way to do this (to run a flow once for every contact of a journey)
+
+3. The id of the contact can be passed as a value to initialize a variable shown in the example below:
+
+```
+ActionInputs msdynmkt_profileid
+```
+
+> [!div class="mx-imgBorder"]
+> ![Screenshot of creating a Power Automate Flow using attribute contact id.](media/automated-flow-step-using-contact-id.png "Screenshot of creating a Power Automate Flow using attribute contact id.")
+
+4. Start adding the subsequent step to the flow. In each of these steps, you can use the data fields that came with the custom trigger. In this example, the phone number field mapped in the earlier steps will be available in all the steps of this flow.
 
       > [!div class="mx-imgBorder"]
       > ![Screenshot of adding steps to a Power Automate Flow.](media/create-automated-flow-step9.png "Screenshot of adding steps to a Power Automate Flow")
