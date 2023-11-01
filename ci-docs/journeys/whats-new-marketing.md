@@ -59,7 +59,6 @@ On September 1, 2023, Dynamics 365 Customer Insights - Journeys transitioned to 
 - **Convert more leads by qualifying and routing them to the best rep**
     - To win more deals, marketing and sales teams must work together to identify the best leads and convert those leads into business opportunities. Marketers need to define qualification criteria and post-qualification actions to grow the pipeline with the best candidates. Sellers need to follow up on leads when they're hot. Using Dynamics 365 Customer Insights - Journeys and Dynamics 365 Sales together, you can now easily route qualified leads identified by the marketing team to a seller without customized solutions or manual intervention. You can also drive the next best action by easily attaching each qualified lead to a sales sequence. This boosts the marketing and sales teams' productivity while maintaining focus on the right customers.
     - [Release plan](/dynamics365/release-plan/2023wave2/marketing/dynamics365-marketing/increase-lead-conversions-routing-correct-sales-rep)
-    - [Docs](real-time-marketing-qualify-leads.md)
 
 ### Public preview
 
