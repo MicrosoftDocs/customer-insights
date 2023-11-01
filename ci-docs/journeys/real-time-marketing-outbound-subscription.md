@@ -72,10 +72,8 @@ To use a subscription center compliance profile in emails sent from real-time jo
 
 ### See also
 
-[Outbound marketing compliance settings](privacy-use-features.md)
-
-[Manage user compliance settings in Customer Insights - Journeys](real-time-marketing-compliance-settings.md)
-
-[Manage consent for email and text messages in Customer Insights - Journeys](real-time-marketing-email-text-consent.md)
+[Outbound marketing compliance settings](privacy-use-features.md) <br>
+[Manage user compliance settings in Customer Insights - Journeys](real-time-marketing-compliance-settings.md) <br>
+[Manage consent for email and text messages in Customer Insights - Journeys](real-time-marketing-email-text-consent.md) <br>
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
