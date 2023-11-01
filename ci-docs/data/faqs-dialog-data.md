@@ -1,7 +1,7 @@
 ---
 title: FAQ for dialog with data (preview)
 description: This FAQ provides information about the AI technology used in dialog with data (preview). It provides key considerations and details about how AI is used, how it was tested and evaluated, and any specific limitations.
-ms.date: 10/11/2023
+ms.date: 09/01/2023
 ms.custom: 
   - responsible-ai-faqs
 ms.topic: article
@@ -20,29 +20,19 @@ These frequently asked questions (FAQ) describe the AI impact of Dynamics 365 Cu
 
 ## What is dialog with data?
 
-Dialog with data is a Copilot generative-AI feature that lets you ask questions in natural language to quickly generate insights about your customers.
+This AI-powered feature helps generate insights about your customer data estate using natural language, which empowers you to design personalized and high-ROI business actions.
 
 ## What are the feature’s capabilities?
 
-Dialog with data can help you:
-
-- Ask questions to generate insights about your customer’s profiles, such as understanding the gender distribution of your customers
-
-- Ask questions to generate insights about your customer’s preferences, behaviors, transactions, such as identifying where your highest-value customers live
-
-- Get more information on your customers that's automatically generated related to the question you asked to help you uncover more insights about customers
-
-- Get automatically generated suggested questions to enable deeper exploration even beyond your original question
-
-- Verify AI-generated results with a SQL statement and associated natural language explanation so you can easily understand what tables, columns, and attributes were used to produce results
+Dialog with data allows you to enter your question about customers in natural language and generate answer within seconds. The feature generates extensive information related to your original question that provides further insights and suggested questions to continue discovering new insights about your customers.
 
 ## What is the feature’s intended use?
 
-Dialog with data is intended to enable end users like marketers, sellers, and service agents gain insights to better understand and serve customers easily without the support of IT teams or other tools.
+The intention is to democratize the power of generating customers insights embedded in your data estate. It aims to let you do these tasks faster and without the need of technical data query skills.
 
 ## How was dialog with data evaluated? What metrics are used to measure performance?
 
-Dialog with data has been evaluated for usability, accuracy, performance, and adherence to responsible AI principles. Evaluation included usability testing to ensure valid understanding of user intent, accurately generated results, overall system performance, and responsible AI scenario testing for inappropriate content, malicious intent, jail break, and so on. Ongoing monitoring is in place for system performance and responsible AI.  
+The intention is to democratize the power of generating customers insights embedded in your data estate. It aims to let you do these tasks faster and without the need of technical data query skills.
 
 ## What are the limitations of dialog with data? How can users minimize the impact of the limitations when using the system?
 
@@ -56,13 +46,15 @@ The feature transforms your prompts in natural language into a SQL query to run 
 
 ## What are the supported geographies and languages?
 
-This feature is available in all geographies. This feature doesn't restrict any language, but we recommend and officially support only the following languages: Arabic, Chinese (Simplified), Chinese (Traditional), Czech, Danish, Dutch, English, Finnish, French, German, Greek, Hebrew, Italian, Japanese, Korean, Norwegian, Polish, Portuguese (Brazil), Portuguese (Portugal), Russian, Spanish, Swedish, Thai, and Turkish.
+This feature is available in the United States and supports English only.
 
 ## What operational factors and settings allow for effective and responsible use of the feature?
 
-- AI features should always be used with caution and responsibility to minimize potential bias and unfairness in business decisions.
+- When you enter a prompt, you can use a toggle to select your data sharing preference.
 
-- AI feature results should always be reviewed and validated for accuracy and appropriateness before being used to make business decisions.
+- There's reminder that the result is AI-generated and can be inaccurate. We suggest you always review and validate the AI-generated result before applying it for business actions.
+
+- In general, you should use the feature in a mindful way to ensure responsible and appropriate inputs and outputs to minimize bias and unfairness.
 
 ## See also
 
