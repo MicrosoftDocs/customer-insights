@@ -1,7 +1,7 @@
 ---
 title: "Connect data stored in Delta Lake format from your Azure Data Lake Storage"
 description: "Work with data stored in Delta Lake format from Azure Data Lake Storage."
-ms.date: 10/12/2023
+ms.date: 11/01/2023
 ms.topic: how-to
 author: mukeshpo
 ms.author: mukeshpo
@@ -24,7 +24,7 @@ Key reasons to connect to data stored in Delta format:
 - Have direct integration with stored data without the need for intermediate staging data copies in other formats or more transforms
 - Minimize the time to prepare data for unification and insights
 
-For example, Contoso Coffee has millions of records coming in on a daily basis. Currently, they do full refreshes of their data every 6 hours. This full refresh takes lots of time to reprocess everything when the majority of data has already been processed. By using the Delta format, Contoso is able to greatly reduce their processing time by only processing the new records, leading to even faster insights from Customer Insights – Data.
+For example, Contoso Coffee has millions of records coming in on a daily basis. Currently, they do full refreshes of their data every 6 hours. This full refresh takes lots of time to reprocess everything when most data has already been processed. By using the Delta format, Contoso is able to greatly reduce their processing time by only processing the new records, leading to even faster insights from Customer Insights – Data.
 
 [!INCLUDE [public-preview-banner](./includes/public-preview-note.md)]
 
@@ -83,11 +83,29 @@ Loading data can take time. After a successful refresh, the ingested data can be
 
 ## Schema changes
 
-When a column is added or removed from the shema of a data source, the system runs a complete refresh of the data. Full refreshes have more data and takes longer than incremental refreshes.
+When a column is added or removed from the schema of a data source, the system runs a complete refresh of the data. Full refreshes have more data and takes longer than incremental refreshes.
 
 When a column is added to the data source, the information automatically appends to the data in Customer Insights - Data once a refresh occurs.
 
-When a column is removed from a data source, the system checks for dependencies in other processes. If there is a dependency in the application, the system stops processing so that these dependencies can be removed. These dependencies display in a notification to help you locate and remove them.
+When a column is removed from a data source, the system checks for dependencies in other processes. If there's a dependency in the application, the system stops processing so that these dependencies can be removed. These dependencies display in a notification to help you locate and remove them.
+
+## Run a full data refresh to data stored in Delta format
+
+A full refresh takes all the data from a table in Delta format and reloads it from the Delta table version zero (0). A full refresh takes longer than an incremental refresh.
+
+1. Go to **Data** > **Data sources**.
+
+1. Select the **Azure Data Lake Storage Gen 2 - Delta tables (Preview)** data source.
+
+1. Select the table you want to refresh. The **Edit table** pane displays.
+
+   :::image type="content" source="media/delta-edit-table.png" alt-text="Edit table pane to select one-time full refresh.":::
+
+1. Select **Run one-time full refresh**.
+
+1. Select **Save** to run the refresh. Repeat the process for other tables, if applicable.
+
+   > [!NOTE] The **Data sources** page opens showing the data source in **Refreshing** status, but only the selected table is refreshing.
 
 ## Next steps
 
