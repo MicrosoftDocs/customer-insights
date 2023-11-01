@@ -1,6 +1,6 @@
 ---
-title: Remove a custom channel
-description: Provides information on how to uninstall/remove custom channel from your Dynamics 365 Customer Insights - Journeys instance.
+title: Remove a custom channel in outbound marketing
+description: Provides information on how to uninstall/remove custom channel from your outbound marketing instance.
 ms.date: 04/01/2018
 ms.topic: how-to
 author: alfergus
@@ -9,7 +9,7 @@ search.audienceType:
   - developer
 ---
 
-# Remove custom channel
+# Remove custom channel in outbound marketing
 
 [!INCLUDE [consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
 
@@ -18,13 +18,13 @@ search.audienceType:
 
 This step is typically performed by administrators of your Dynamics 365 Customer Insights - Journeys instance.
 
-To remove a custom channel app from your Dynamics 365 Customer Insights - Journeys instance, you will first have to ensure that none of the components of the custom channel app are in use. This implies that before removing a custom channel app, you will have to remove the custom tile from your customer journeys, or delete the customer journeys containing the custom tile altogether. This includes journeys in any state: draft, live or even past journeys in stopped/expired state. 
+To remove a custom channel app from your Dynamics 365 Customer Insights - Journeys instance, you'll first have to ensure that none of the components of the custom channel app are in use. This implies that before removing a custom channel app, you'll have to remove the custom tile from your customer journeys, or delete the customer journeys containing the custom tile altogether. This includes journeys in any state: draft, live or even past journeys in stopped/expired state. 
 
-This is because the custom channel app is a [managed solution](/powerapps/developer/common-data-service/introduction-solutions#managed-and-unmanaged-solutions), and the solution component [dependency tracking](/powerapps/developer/common-data-service/dependency-tracking-solution-components) feature *prevents* you from deleting a managed solution if any of the managed solution component is used by other components in a customization.
+This is because the custom channel app is a [managed solution](/powerapps/developer/common-data-service/introduction-solutions#managed-and-unmanaged-solutions), and the solution component [dependency tracking](/powerapps/developer/common-data-service/dependency-tracking-solution-components) feature *prevents* you from deleting a managed solution if any of the managed solution components are used by other components in a customization.
 
 After you have taken care of the dependencies, delete the managed solution to remove the custom channel app from your Dynamics 365 Customer Insights - Journeys instance. More information: [Uninstall or delete a solution](/powerapps/developer/common-data-service/uninstall-delete-solution)
 
-If there are any customer journeys that still use one or more components of the custom channel app solution, you will receive the following error on deleting the custom channel app solution:
+If there are any customer journeys that still use one or more components of the custom channel app solution, you'll receive the following error on deleting the custom channel app solution:
 
 ![Cannot delete component error.](../media/error-delete-solution.png "Cannot delete component error")
 

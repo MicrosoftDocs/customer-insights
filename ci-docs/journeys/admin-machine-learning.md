@@ -1,6 +1,6 @@
 ---
-title: Enable and configure artificial intelligence features
-description: How to enable artificial intelligence features and make related privacy settings in Dynamics 365 Customer Insights - Journeys.
+title: Enable and configure artificial intelligence features in outbound marketing
+description: How to enable artificial intelligence features and make related privacy settings in outbound marketing.
 ms.date: 08/17/2023
 ms.topic: article
 author: alfergus
@@ -11,9 +11,12 @@ search.audienceType:
   - enduser
 ---
 
-# Enable and configure artificial intelligence features
+# Enable and configure artificial intelligence features in outbound marketing
 
 [!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+
+> [!IMPORTANT]
+> This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
 
 Dynamics 365 Customer Insights - Journeys provides several artificial intelligence (AI), which include:
 

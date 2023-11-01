@@ -1,7 +1,7 @@
 ---
 title: Real-time journeys transition FAQs
 description: Answers to frequently asked questions about transitioning to real-time journeys in Customer Insights - Journeys.
-ms.date: 10/04/2023
+ms.date: 11/01/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -141,6 +141,10 @@ Reach out to your account manager with further questions or if help is needed.
 ## What does this mean for outbound marketing?
 
 Customer Insights - Journeys has already surpassed traditional outbound marketing in functionality and effectiveness, and our innovations and upcoming AI features are exclusively focused on the Customer Insights - Journeys. In the coming year, we'll be transitioning all customers to Customer Insights - Journeys to benefit from improved features to better engage your customers in the moment that matters. We'll continue to support outbound, but we don't intend to add new enhancements.
+
+## When will outbound marketing be deprecated?
+
+At this time, we haven't announced a date for removing outbound marketing. However, product enhancements and many new exciting capabilities with generative AI and copilots will only be available in real-time journeys, therefore, we strongly encourage all customers still using outbound marketing to start transitioning to real-time journeys. We have many transition resources available for you here: [Real-time journeys transition resources](transition-resources.md)
 
 ## Will transitioning to Customer Insights - Journeys require significant user retraining due to a new user interface?**
 

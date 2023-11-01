@@ -1,6 +1,6 @@
 ---
-title: Using the events API
-description: Learn how to use the events API to access date from events, sessions, session tracks, and passes in Dynamics 365 Customer Insights - Journeys.
+title: Using the events API in outbound marketing
+description: Learn how to use the events API to access date from events, sessions, session tracks, and passes in outbound marketing.
 ms.date: 10/18/2022
 ms.topic: overview
 author: alfergus
@@ -9,9 +9,12 @@ search.audienceType:
   - developer
 ---
 
-# Using the events API
+# Using the events API in outbound marketing
 
 [!INCLUDE [consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
+
+> [!IMPORTANT]
+> This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
 
 The events API is a programmatic method to access data of events, sessions, session tracks, passes, speakers, and sponsorships. Additionally, it allows you to register for events and sessions.
 

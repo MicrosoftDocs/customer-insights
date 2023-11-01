@@ -1,6 +1,6 @@
 ---
-title: Filter cities based on countries using lookup fields and custom entities
-description: Learn how to filter cities based on countries in marketing forms using lookup fields and custom entities in Dynamics 365 Customer Insights - Journeys.
+title: Filter cities based on countries using lookup fields and custom entities in outbound marketing
+description: Learn how to filter cities based on countries in marketing forms using lookup fields and custom entities in outbound marketing.
 ms.date: 07/14/2022
 ms.topic: how-to
 author: alfergus
@@ -9,7 +9,7 @@ search.audienceType:
   - developer
 ---
 
-# Filter cities based on countries using lookup fields and custom entities
+# Filter cities based on countries using lookup fields and custom entities in outbound marketing
 
 [!INCLUDE [consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
 

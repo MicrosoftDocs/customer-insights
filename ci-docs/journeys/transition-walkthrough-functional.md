@@ -46,7 +46,7 @@ Transition functional areas articles:
 - [Event management](transition-walkthrough-events.md)
 - [Lead management and scoring](transition-walkthrough-leads.md)
 - [Insights and reports](transition-walkthrough-insights.md)
-- [Social posts discontinued](transition-walkthrough-social-posts.md)
+- [Social posts](transition-walkthrough-social-posts.md)
 
 ## Outbound marketing customizations
 

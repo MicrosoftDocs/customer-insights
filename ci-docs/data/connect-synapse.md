@@ -78,4 +78,8 @@ For more information, see [Azure Synapse overview](/azure/synapse-analytics/over
 
 Loading data can take time. After a successful refresh, review the ingested data from the [**Data** > **Tables**](tables.md) page.
 
+## Next steps
+
+- [Data unification overview](data-unification.md)
+
 [!INCLUDE [footer-include](includes/footer-banner.md)]

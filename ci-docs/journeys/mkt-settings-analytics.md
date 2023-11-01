@@ -1,6 +1,6 @@
 ---
-title: Analytics configurations
-description: A short topic that links to more information about how to connect your Dynamics 365 Customer Insights - Journeys instance to Azure Blob Storage.
+title: Analytics configurations in outbound marketing
+description: A short topic that links to more information about how to connect your outbound marketing instance to Azure Blob Storage.
 ms.date: 08/21/2023
 ms.topic: article
 author: alfergus
@@ -11,7 +11,7 @@ search.audienceType:
   - enduser
 ---
 
-# Analytics configurations
+# Analytics configurations in outbound marketing
 
 [!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 

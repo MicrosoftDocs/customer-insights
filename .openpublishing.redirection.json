@@ -2480,6 +2480,11 @@
       "source_path": "ci-docs/journeys/event-troubleshoot.md",
       "redirect_url": "/dynamics365/customer-insights/journeys/event-troubleshoot-outbound",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/data/export-teams-bot.md",
+      "redirect_url": "/dynamics365/customer-insights/data/removed-deprecated-features-customer-insights",
+      "redirect_document_id": false
     }
   ]
 }
