@@ -310,8 +310,6 @@
       href: real-time-marketing-optimize-lead-management.md
     - name: Create a scoring model
       href: real-time-marketing-create-lead-scoring-model.md
-    - name: Qualify the best leads
-      href: real-time-marketing-qualify-leads.md
     - name: Visualize results from your scoring model
       href: real-time-marketing-visualize-scoring-model.md
     - name: Security roles for lead scoring and qualification
