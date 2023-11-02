@@ -5,8 +5,8 @@ ms.date: 09/01/2023
 ms.custom: 
   - responsible-ai-faqs
 ms.topic: article
-author: wmelewong
-ms.author: wameng
+author: radsay01
+ms.author: rsayyaparaju
 ms.reviewer: m-hartmann
 ---
 
@@ -24,7 +24,7 @@ This AI-powered feature helps generate insights about your customer data estate 
 
 ## What are the feature’s capabilities?
 
-Dialog with data allows you to enter your question about customers in natural language and generate answer within seconds. The feature generates extensive information related to your original question that provides further insights and suggested questions to continue discovering new insights about your customers.  
+Dialog with data allows you to enter your question about customers in natural language and generate answer within seconds. The feature generates extensive information related to your original question that provides further insights and suggested questions to continue discovering new insights about your customers.
 
 ## What is the feature’s intended use?
 
@@ -32,11 +32,7 @@ The intention is to democratize the power of generating customers insights embed
 
 ## How was dialog with data evaluated? What metrics are used to measure performance?
 
-This feature has only been evaluated in English at this time.  
-
-The feature is evaluated for accuracy of understanding user prompts, the generated results, and the performance of generating results.
-
-In addition, it's evaluated with embedded monitoring for Responsible AI. Specifically, this feature has been tested with an array of scenarios to ensure it captures and mitigates issues like inappropriate language usage, malicious intention of jail break, and data fabrication.  
+The intention is to democratize the power of generating customers insights embedded in your data estate. It aims to let you do these tasks faster and without the need of technical data query skills.
 
 ## What are the limitations of dialog with data? How can users minimize the impact of the limitations when using the system?
 
@@ -48,7 +44,9 @@ The feature transforms your prompts in natural language into a SQL query to run 
 
 - ‘Did you know’ section and ‘Explore further’ result generation is dependent on Azure OpenAI Service model.  
 
-The feature is available in the United States and supports English only.
+## What are the supported geographies and languages?
+
+This feature is available in the United States and supports English only.
 
 ## What operational factors and settings allow for effective and responsible use of the feature?
 
@@ -60,6 +58,6 @@ The feature is available in the United States and supports English only.
 
 ## See also
 
-- [Have a dialog with data using Copilot in Customer Insights (preview)](dialog-with-data.md)
+- [Have a dialog with data using Copilot in Customer Insights - Data (preview)](dialog-with-data.md)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

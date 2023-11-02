@@ -1,7 +1,7 @@
 ---
-title: Data prep report overview
+title: Data prep report overview (preview)
 description: "Discover the overall quality of ingested and unified data and if it can generate predictions."
-ms.date: 09/01/2023
+ms.date: 10/11/2023
 ms.reviewer: v-wendysmith
 ms.topic: overview
 author: radsay01
@@ -21,10 +21,11 @@ The data prep report in Dynamics 365 Customer Insights - Data helps you understa
 
 The data prep report automatically runs if the following prerequisites are met:
 
-- [Ingestion](data-sources.md) completed with customer and transaction data.
-- [Unification](data-unification.md) completed.
-- [Activities and relationships](activities.md) mapped.
-- [System data prep report consent setting](data-prep-admin.md) turned **On**, which is the default.
+- [Ingestion](data-sources.md) is completed with customer and transaction data.
+- [Unification](data-unification.md) is completed.
+- [Activities and relationships](activities.md) are mapped.
+- [Enable Copilot features powered by Azure OpenAI](copilot-global-consent.md) setting turned **On**. Default is **On**.
+- [Environment is in a supported geography and uses a supported language.](faqs-dialog-data.md#).
 - At least 100 customer records, preferably 1,000 records.
 - At least one year of transaction history, preferably two to three years. Ideally two to three transactions per customer ID, preferably across multiple dates.
 - Customer identifier: A unique identifier to match transactions to your customers.
@@ -39,7 +40,7 @@ Access the **Data prep report** from the **Home** page, the **Data sources** pag
 :::image type="content" source="media/data-prep-report.svg" alt-text="Screenshot of the data prep report (preview).":::
 
 > [!TIP]
-> If you don’t see the data prep report, it probably hasn't been generated because you haven't met the prerequisites. Ensure that you have completed ingestion and unification, mapped activities and relationships, and an admin has the data prep report consent setting toggled to **On** in the  **Settings** page.
+> If you don’t see the data prep report, it probably hasn't been generated because you haven't met the prerequisites. Ensure that you have completed ingestion and unification, mapped activities and relationships, and an admin has the global consent setting turned **On** in the  **Settings** page.
 
 There are four primary sections within the data prep report.
 
@@ -54,7 +55,7 @@ There are four primary sections within the data prep report.
   > [!TIP]
   > The default view provides the most critical issues present in your data. To see all issues, organized by severity, turn off **Show critical issues**. To alter the view to show issues organized by other options, select **Group by** and make a selection. Available selections include severity, data quality pillar, and impacted insights.
 
-  In most cases, the issues and recommendations surfaced in the data prep report must be addressed by performing fixes on the source data outside of Customer Insights, using data clean up tools such as Power Query. The new and improved data must then be reingested, and unification must be completed again for the data quality to improve. The data prep report refresh is only triggered when unification is completed.
+  In most cases, the issues and recommendations surfaced in the data prep report must be addressed by performing fixes on the source data outside of Customer Insights - Data, using data clean up tools such as Power Query. The new and improved data must then be reingested, and unification must be completed again for the data quality to improve. The data prep report refresh is only triggered when unification is completed.
 
 ## Contextual information on your data
 
