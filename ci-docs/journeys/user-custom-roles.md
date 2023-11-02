@@ -370,20 +370,21 @@ Role identifier 3b30e84e-3ec6-4aa2-9417-b569f0d0284d
 **Role identifier**: afc2cc8c-a26f-41c1-99a3-4510003a1878
 
 | **Table name** | **Read** | **Write** | **Create** | **Append** | **AppendTo** |
-| AppModule | Global |   |   |   |   |
-| msdyncrm_leadscore_v2 | Deep |   |   |   |   |
-| msdyncrm_leadscoremodel | Deep |   |   |   |   |
-| msdynmkt_entitygradedistribution | Deep |   |   |   |   |
-| msdynmkt_entityscoredistribution | Deep |   |   |   |   |
-| msdynmkt_entityscoringmodel | Deep |   |   |   |   |
-| msdynmkt_leadqualificationmodel | Deep |   |   |   |   |
-| PluginAssembly | Global |   |   |   |   |
-| PluginType | Global |   |   |   |   |
-| SdkMessage | Global |   |   |   |   |
-| SdkMessageProcessingStep | Global |   |   |   |   |
-| SdkMessageProcessingStepImage | Global |   |   |   |   |
-| SharePointData | Global | Global | Global |   |   |
-| SharePointDocument | Global |   |   |   |   |
+|---|---|---|---|---|---|
+| AppModule | Global |  |  |  |  |
+| msdyncrm_leadscore_v2 | Deep |  |  |  |  |
+| msdyncrm_leadscoremodel | Deep |  |  |  |  |
+| msdynmkt_entitygradedistribution | Deep |  |  |  |  |
+| msdynmkt_entityscoredistribution | Deep |  |  |  |  |
+| msdynmkt_entityscoringmodel | Deep |  |  |  |  |
+| msdynmkt_leadqualificationmodel | Deep |  |  |  |  |
+| PluginAssembly | Global |  |  |  |  |
+| PluginType | Global |  |  |  |  |
+| SdkMessage | Global |  |  |  |  |
+| SdkMessageProcessingStep | Global |  |  |  |  |
+| SdkMessageProcessingStepImage | Global |  |  |  |  |
+| SharePointData | Global | Global | Global |  |  |
+| SharePointDocument | Global |  |  |  |  |
 
 ## Role Marketing Manager - Business
 **Role identifier**: bf157a3a-cde8-e611-80d8-00155d4b205a
