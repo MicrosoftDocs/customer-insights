@@ -315,6 +315,7 @@ This page focuses into the permissions required for the out-of-the-box roles in 
 **Role identifier**: d1fd2176-cee8-e611-80d8-00155d4b205a
 
 | **Table name** | **Read** | **Write** | **Create** | **Append** | **AppendTo** |
+|---|---|---|---|---|---|
 | msdyncrm_leadscore_v2 | Local | Local | Local | Local | Local |
 | msdyncrm_leadscoremodel | Global | Global | Local | Global | Global |
 | msdyncrm_leadtoopportunity | Global | Global | Global | Global | Global |
@@ -322,22 +323,28 @@ This page focuses into the permissions required for the out-of-the-box roles in 
 | msdynmkt_entityscoredistribution | Global | Global | Local | Global | Global |
 | msdynmkt_entityscoringmodel | Global | Global | Local | Global | Global |
 | msdynmkt_leadqualificationmodel | Global | Global | Local | Global | Global |
-| SharePointData | Global | Global | Global |  |  |
-| SharePointDocument | Global |  |  |  |  |
+| SharePointData | Global | Global | Global |   |   |
+| SharePointDocument | Global |   |   |   |   |
 
 ### Role Lead Score Modeler (BU level)
 Role identifier 3b30e84e-3ec6-4aa2-9417-b569f0d0284d
 
 | **Table name** | **Read** | **Write** | **Create** | **Append** | **AppendTo** |
-| msdyncrm_leadscore_v2 | Deep | Deep | Deep | Deep | Deep |
-| msdyncrm_leadscoremodel | Deep | Deep | Deep | Deep | Deep |
-| msdyncrm_Localleadtoopportunity | Deep | Deep | Deep | Deep | Deep |
-| msdynmkt_entitygradedistribution | Deep | Deep | Deep | Deep | Deep |
-| msdynmkt_entityscoredistribution | Deep | Deep | Deep | Deep | Deep |
-| msdynmkt_entityscoringmodel | Deep | Deep | Deep | Deep | Deep |
-| msdynmkt_leadqualificationmodel | Deep | Deep | Deep | Deep | Deep |
-| SharePointData | Global | Global | Global |  |  |
-| SharePointDocument | Global |  |  |  |  |
+|---|---|---|---|---|---|
+| AppModule | Global |   |   |   |   |
+| msdyncrm_leadscore_v2 | Deep |   |   |   |   |
+| msdyncrm_leadscoremodel | Deep |   |   |   |   |
+| msdynmkt_entitygradedistribution | Deep |   |   |   |   |
+| msdynmkt_entityscoredistribution | Deep |   |   |   |   |
+| msdynmkt_entityscoringmodel | Deep |   |   |   |   |
+| msdynmkt_leadqualificationmodel | Deep |   |   |   |   |
+| PluginAssembly | Global |   |   |   |   |
+| PluginType | Global |   |   |   |   |
+| SdkMessage | Global |   |   |   |   |
+| SdkMessageProcessingStep | Global |   |   |   |   |
+| SdkMessageProcessingStepImage | Global |   |   |   |   |
+| SharePointData | Global | Global | Global |   |   |
+| SharePointDocument | Global |   |   |   |   |
 
 ## Role Lead Score Viewer
 **Role identifier**: 32e87eb4-c85c-e711-80fe-000d3a297db2
