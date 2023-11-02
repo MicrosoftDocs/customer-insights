@@ -91,7 +91,7 @@ When a column is removed from a data source, the system checks for dependencies 
 
 ## Run a full data refresh to data stored in Delta format
 
-A full refresh takes all the data from a table in Delta format and reloads it from the Delta table version zero (0). A full refresh takes longer than an incremental refresh.
+A full refresh takes all the data from a table in Delta format and reloads it from the Delta table version zero (0). Perform a full refresh on a table if the schema has changed (columns added or removed) or if you added rows from dates earlier than the last incremental refresh.
 
 1. Go to **Data** > **Data sources**.
 
@@ -103,12 +103,16 @@ A full refresh takes all the data from a table in Delta format and reloads it fr
 
 1. Select **Run one-time full refresh**.
 
-1. Select **Save** to run the refresh. Repeat the process for other tables, if applicable.
+1. Select **Save** to run the refresh.
 
-   > [!NOTE] The **Data sources** page opens showing the data source in **Refreshing** status, but only the selected table is refreshing.
+   > [!NOTE]
+   > The **Data sources** page opens showing the data source in **Refreshing** status, but only the selected table is refreshing. A full refresh takes longer to process than an incremental refresh.
+
+1. Repeat the process for other tables, if applicable.
 
 ## Next steps
 
 - [Data unification overview](data-unification.md)
+- [Common reasons for ingestion errors or corrupt data with Azure Data Lake Storage](common-data-ingestion-errors.md#common-reasons-for-ingestion-errors-or-corrupt-data-with-azure-data-lake-storage)
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
