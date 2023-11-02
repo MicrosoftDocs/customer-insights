@@ -1,7 +1,7 @@
 ---
 title: Install and manage Customer Insights
 description: How to install, uninstall, and manage Dynamics 365 Customer Insights environments.
-ms.date: 10/05/2023 
+ms.date: 11/02/2023 
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -58,7 +58,7 @@ The following sections detail how to install, uninstall, or apply updates to the
 There are two types of installations for Customer Insights - Journeys:
 
 1. A **paid installation** or **trial** that includes the services and allows you to send messages, execute journeys, etc. You can install a paid license on an environment that has never had the journeys app installed.  
-1. A free, **solutions only** installation that only installs the solutions that include the front-end user experience application components but none of the services. With a solutions only installation, you can test user experience solution customizations but you can't execute any service-related functionality in the application. Solutions only installations get solution upgrades on a monthly basis with the regular releases. If you convert the solutions only to a paid environment by installing the services, the outbound marketing user experience is hidden. You must go to the **Settings** -> **Versions** page to re-enable the outbound marketing user experience if you were building customizations on it in the solutions only mode. 
+1. A free, **solutions only** installation that only installs the solutions that include the front-end user experience application components but none of the services. With a solutions only installation, you can test user experience solution customizations but you can't execute any service-related functionality in the application. Solutions only installations get solution upgrades every month with the regular releases. If you convert the solutions only environment to a paid environment by installing the services, the outbound marketing user experience is hidden. You must go to the **Settings** > **Versions** page to re-enable the outbound marketing user experience if you were building customizations on it in the solutions only mode. 
 
 If you uninstall Customer Insights - Journeys paid or trial, the services are disconnected and the environment converts to a solutions only installation state. When the services have been uninstalled by you or by the system due to license expirations, you'll see a banner at the top of the application indicating that the environment only has the user experience solutions installed but not the services.
 
