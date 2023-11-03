@@ -18,11 +18,11 @@ This article details permissions for the out-of-the-box roles in Customer Insigh
 > [!NOTE]
 > Customer insights - Journeys product is evolving, so roles documented in this article might not exactly match the current state of the product.
 
-## Role Event Administrator
+## Role: Event Administrator
 
 **Role identifier**: a31a2242-bf8f-e611-80d7-00155d4b201d
 
-|| **Table name** | **Read** | **Write** | **Create** | **Append** | **AppendTo** |
+| **Table name** | **Read** | **Write** | **Create** | **Append** | **AppendTo** |
 |---|---|---|---|---|---|
 | adx_entityform | Global |   |   |   |   |
 | Adx_website | Global |   |   |   |   |
@@ -118,7 +118,8 @@ This article details permissions for the out-of-the-box roles in Customer Insigh
 | WebResource | Global |   |   |   |   |
 | Workflow | Global | Basic | Basic | Basic |   |
 
-### Role Event Administrator (BU level)
+## Role: Event Administrator (BU level)
+
 **Role identifier**: 07d52deb-3b54-4203-b3cf-35efe4350f82
 
 | **Table name** | **Read** | **Write** | **Create** | **Append** | **AppendTo** |
@@ -217,7 +218,8 @@ This article details permissions for the out-of-the-box roles in Customer Insigh
 | WebResource | Global |  |  |  |  |
 | Workflow | Global | Basic | Basic | Basic |  |
 
-### Role Event Planner (BU level)
+## Role: Event Planner (BU level)
+
 **Role identifier**: 9d0bcbb3-75d8-4496-b2fb-62d0a9cb902f
 
 | **Table name** | **Read** | **Write** | **Create** | **Append** | **AppendTo** |
@@ -313,7 +315,8 @@ This article details permissions for the out-of-the-box roles in Customer Insigh
 | WebResource | Global |  |  |  |  |
 | Workflow | Global | Basic | Basic | Basic |  |
 
-## Role Lead Score Modeler
+## Role: Lead Score Modeler
+
 **Role identifier**: d1fd2176-cee8-e611-80d8-00155d4b205a
 
 | **Table name** | **Read** | **Write** | **Create** | **Append** | **AppendTo** |
@@ -328,8 +331,9 @@ This article details permissions for the out-of-the-box roles in Customer Insigh
 | SharePointData | Global | Global | Global |   |   |
 | SharePointDocument | Global |   |   |   |   |
 
-### Role Lead Score Modeler (BU level)
-Role identifier 3b30e84e-3ec6-4aa2-9417-b569f0d0284d
+## Role: Lead Score Modeler (BU level)
+
+**Role identifier**: 3b30e84e-3ec6-4aa2-9417-b569f0d0284d
 
 | **Table name** | **Read** | **Write** | **Create** | **Append** | **AppendTo** |
 |---|---|---|---|---|---|
@@ -348,7 +352,8 @@ Role identifier 3b30e84e-3ec6-4aa2-9417-b569f0d0284d
 | SharePointData | Global | Global | Global |   |   |
 | SharePointDocument | Global |   |   |   |   |
 
-## Role Lead Score Viewer
+## Role: Lead Score Viewer
+
 **Role identifier**: 32e87eb4-c85c-e711-80fe-000d3a297db2
 
 | **Table name** | **Read** | **Write** | **Create** | **Append** | **AppendTo** |
@@ -368,7 +373,8 @@ Role identifier 3b30e84e-3ec6-4aa2-9417-b569f0d0284d
 | SharePointData | Global | Global | Global |   |   |
 | SharePointDocument | Global |   |   |   |   |
 
-### Role Lead Score Viewer (BU level)
+## Role: Lead Score Viewer (BU level)
+
 **Role identifier**: afc2cc8c-a26f-41c1-99a3-4510003a1878
 
 | **Table name** | **Read** | **Write** | **Create** | **Append** | **AppendTo** |
@@ -388,7 +394,8 @@ Role identifier 3b30e84e-3ec6-4aa2-9417-b569f0d0284d
 | SharePointData | Global | Global | Global |  |  |
 | SharePointDocument | Global |  |  |  |  |
 
-## Role Marketing Manager - Business
+## Role: Marketing Manager - Business
+
 **Role identifier**: bf157a3a-cde8-e611-80d8-00155d4b205a
 
 | **Table name** | **Read** | **Write** | **Create** | **Append** | **AppendTo** |
@@ -730,7 +737,8 @@ Role identifier 3b30e84e-3ec6-4aa2-9417-b569f0d0284d
 | Workflow | Global | Local | Local | Local | Global |
 | WorkflowSession | Global | Local | Local | Local |  |
 
-### Role Marketing Manager (BU level) - Business
+## Role: Marketing Manager (BU level) - Business
+
 **Role identifier**: dd84f17f-cde8-e611-80d8-00155d4b205a
 
 | **Table name** | **Read** | **Write** | **Create** | **Append** | **AppendTo** |
@@ -1069,7 +1077,8 @@ Role identifier 3b30e84e-3ec6-4aa2-9417-b569f0d0284d
 | Workflow | Global | Deep | Deep | Deep | Global |
 | WorkflowSession | Global | Deep | Deep | Deep |  |
 
-## Role Marketing Professional - Business
+## Role: Marketing Professional - Business
+
 **Role identifier**: ce995e5a-cee8-e611-80d8-00155d4b205a
 
 | **Table name** | **Read** | **Write** | **Create** | **Append** | **AppendTo** |
@@ -1400,7 +1409,8 @@ Role identifier 3b30e84e-3ec6-4aa2-9417-b569f0d0284d
 | Workflow | Global | Basic | Basic | Basic | Global |
 | WorkflowSession | Global | Basic | Basic | Basic |  |
 
-## Role Marketing Professional (BU level) - Business
+## Role: Marketing Professional (BU level) - Business
+
 **Role identifier**: 6d63ebe3-cee8-e611-80d8-00155d4b205a
 
 | **Table name** | **Read** | **Write** | **Create** | **Append** | **AppendTo** |
