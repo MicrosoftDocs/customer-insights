@@ -1,7 +1,7 @@
 ---
 title: Manage user accounts, user licenses, and security roles
 description: How to manage user accounts, add licenses to users, and assign security roles in Dynamics 365 Customer Insights - Journeys.
-ms.date: 10/04/2023
+ms.date: 11/02/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -173,6 +173,8 @@ Form and field level security are concepts shared by all model-driven apps in Dy
 ## Security roles added by Customer Insights - Journeys
 
 The tables in this section summarize the purpose of each role added by Customer Insights - Journeys. They should give you a good idea of which roles to assign each of your users. For details information about precisely which permissions and access levels any single role provides, inspect the permissions tables provided in the **Security roles** window, as described previously in [Inspect and customize security roles](#inspect-roles).
+
+To see the permissions required for each role, see [Permissions for out-of-the-box roles](role-permissions.md)
 
 ### Core Customer Insights - Journeys security roles
 
