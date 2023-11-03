@@ -92,6 +92,8 @@
     href: browser-requirements.md
   - name: Manage user accounts, licenses, and roles
     href: admin-users-licenses-roles.md
+  - name: Permissions for out-of-the-box roles
+    href: role-permissions.md
   - name: Integrate with Dynamics 365 Customer Insights - Data
     href: ci-get-started.md
   - name: Import data
