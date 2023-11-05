@@ -1,5 +1,5 @@
 ---
-title: "Connect data stored in Delta Lake format from your Azure Data Lake Storage"
+title: "Connect to Delta Tables in Azure Data Lake Storage"
 description: "Work with data stored in Delta Lake format from Azure Data Lake Storage."
 ms.date: 10/12/2023
 ms.topic: how-to
