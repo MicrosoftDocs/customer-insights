@@ -98,7 +98,7 @@ Here are some tips to avoid email suppression lists:
 1. **Send relevant and valuable content**: Deliver emails with relevant and valuable content to your subscribers. This reduces the likelihood of recipients marking your emails as spam.
 1. **Test your emails**: Test your emails before sending them to ensure that they're well-formatted and don't trigger spam filters.
 1. **Monitor your email deliverability rates**: Keep an eye on your email deliverability rates and investigate any sudden changes. Sudden [drop in deliverability](email-troubleshooting.md) rates could indicate that your emails might have some potential issues.
-1. **Follow email [marketing best practices](https://learn.microsoft.com/en-us/dynamics365/customer-insights/journeys/get-ready-email-marketing)**: Adhere to email marketing best practices such as including an unsubscribe link in your emails and ensure that your email content complies with anti-spam laws.
+1. **Follow email [marketing best practices](get-ready-email-marketing.md)**: Adhere to email marketing best practices such as including an unsubscribe link in your emails and ensure that your email content complies with anti-spam laws.
 
 It's the sender's responsibility to maintain a clean email list and ensure that their email campaigns comply with email marketing best practices. By following these tips, you can avoid having your email addresses bounced and listed on suppression lists and maintain a healthy email reputation.
 
