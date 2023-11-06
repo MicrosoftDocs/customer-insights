@@ -11,7 +11,7 @@ search.audienceType:
   - enduser
 ---
 
-# How Dynamics 365 Customer Insights - Journeys uses suppression lists
+# How Dynamics 365 Customer Insights - Journeys uses suppression lists for email deliverability
 
 [!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
@@ -61,7 +61,8 @@ The pattern suppression is a manual list maintained by the deliverability engine
 
 ## How to delist email addresses
 
-**What addresses are eligible for delisting**:
+### Addresses eligible for delisting:
+
 1. Soft-bounced email addresses which customer have already fixed the underlying issue causing the bounce. 
 1. Hard-bounced email addresses that are of the same domain as customers use as sending domain.
     - For example: From [admin@contoso.com](mailto:admin@contoso.com) To: [John.Doe@contoso.com](mailto:John.Doe@contoso.com)
@@ -70,11 +71,12 @@ The pattern suppression is a manual list maintained by the deliverability engine
 > [!NOTE]
 > Please be informed that email addresses listed due to Feedback Loop/Spam Complaints will never be eligible for delisting due to privacy and data protection regulations. Such emails can be only requested to be removed by the recipient – owner of the email address. Senders cannot get approval to remove such addresses.
 
-**The process of delisting an email address**:
+### The process of delisting an email address
 
 If you find an email address that matches the eligibility criteria from above, you may submit a delist request, by opening a Support Request.
 
-**In the support request, please provide all the required information**:
+#### In the support request, please provide all the required information
+
 -	A list of the email addresses in question.
 -	Justification as to why you believe each email address was listed by mistake. 
 -	You should also provide proof that each email address is valid and can be reached by any other email provider by sending us a screenshot of such an email or forwarding us a copy of email received from the email address in question.
