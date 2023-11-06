@@ -31,6 +31,8 @@ The user role assigned to a user determines what the user can access within Cust
 - Can only access customer profiles that belong to the business unit of the user.
 - Create segments using the **Segments** page (only *Build your own*, no projected attributes).
 - Create measures using the **Measures** page (only *Build your own*). Can only create measures on tables that have a relationship path to customer profiles.
+- Admins can create connections and share them with specific Marketing contributors.
+- Use the shared connections to create and run exports for segments they own.
 
 > [!NOTE]
 > Marketing contributors can only create segments and measures from customer profiles, unified activities, segments, and customer measures. This permission has limited functionality in some areas compared to the Contributor role.
