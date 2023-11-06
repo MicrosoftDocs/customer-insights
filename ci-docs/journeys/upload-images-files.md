@@ -74,7 +74,7 @@ Additionally, the Copilot assistant automatically identifies a selection of imag
 When you add an image element to your content or need to [link to a file or video](/dynamics365/marketing/real-time-marketing-email#link-to-documents-and-videos-stored-in-the-asset-library), you can choose to use a file that already exists in your Customer Insights - Journeys app library or upload a new one. After you've uploaded a file in this way, it will also be available in the library for use in other content.
 
 > [!IMPORTANT]
-> The copilot assisntant smart recommendation feature is currently in preview.
+> The copilot assistant smart recommendation feature is currently in preview.
 ### See also
 
 [Link to documents stored in the asset library](/dynamics365/marketing/real-time-marketing-email#link-to-documents-and-videos-stored-in-the-asset-library)
