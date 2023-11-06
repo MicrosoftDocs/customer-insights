@@ -35,11 +35,10 @@ Sending emails to addresses that soft bounce continuously may also harm your sen
 
 ## How the suppression list works
 
-A suppression list is an automated backend tool that protects your sending reputation. The list is divided into three scopes of operation:
+A suppression list is an automated backend tool that protects your sending reputation. 
 
-When customers start sending emails, the system will automatically check if any of the recipients’ email addresses are already in the suppression list and will block sending emails to these email addresses.
-
-The suppression list works based on the Bounce or Feedback Loop/Spam Complaint type of interactions that our platform receives from the remote recipient mail system and doesn't block legit email addresses itself. The suppression list functions at an email address level, not at a contact or lead level.
+- When customers start sending emails, the system will automatically check if any of the recipients’ email addresses are already in the suppression list and will block sending emails to these email addresses.
+- The suppression list works based on the Bounce or Feedback Loop/Spam Complaint type of interactions that our platform receives from the remote recipient mail system and doesn't block legit email addresses itself. The suppression list functions at an email address level, not at a contact or lead level.
 
 The list is divided into three scopes of operation:
 
