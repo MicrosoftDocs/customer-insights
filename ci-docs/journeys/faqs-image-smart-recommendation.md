@@ -11,7 +11,7 @@ search.audienceType:
   - enduser
 ---
 
-# Responsible AI FAQs for smart image recommendation
+# Responsible AI FAQs for image smart recommendation
 
 [!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
