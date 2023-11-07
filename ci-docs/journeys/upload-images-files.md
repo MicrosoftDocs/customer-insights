@@ -1,7 +1,7 @@
 ---
 title: Upload, manage, and use images, files, and videos in online content
 description: How to upload, manage and use images, files, and videos in Dynamics 365 Customer Insights - Journeys.
-ms.date: 10/12/2023
+ms.date: 11/06/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -14,6 +14,13 @@ search.audienceType:
 # Upload, manage, and use images, files, and videos in online content
 
 [!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+
+> [!IMPORTANT]
+> Dynamics 365 Customer Insights - Journeys may transfer customer data outside of the selected Azure geographic location when using the following features that use Azure CDN (content delivery network) to operate globally:
+> -	[Asset library](upload-images-files.md)
+> -	[Forms](real-time-marketing-form-overview.md)
+>
+> You can still execute marketing campaigns without using such features by hosting your assets and forms in a content management system of your choice.
 
 Shareable assets are critical for meaningful and successful customer experiences. The files you use must be available publicly on the internet so your emails and pages can access and display them. The Dynamics 365 Customer Insights - Journeys library stores images, documents, and videos, hosting them publicly and providing an easy way to find and link to them while creating content. The library is shared across real-time and outbound marketing, making it easy to upload and use assets where you need them. 
 
