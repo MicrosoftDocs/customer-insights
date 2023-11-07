@@ -462,8 +462,6 @@
         href: fix-high-bounce-rate.md
       - name: Public IP addresses used for sending e-mails
         href: public-ip-addresses-for-email-sending.md
-      - name: Create an SPF TXT record
-        href: mkt-settings-authenticate-domains.md
       - name: Email security and connection encryption
         href: email-security-encryption.md
       - name: Deliverability recommendations when changing ESPs
@@ -838,6 +836,8 @@
         href: admin-machine-learning.md
     - name: Data protection and privacy
       href: privacy.md
+    - name: Domain authentication (old version)
+      href: mkt-settings-authenticate-domains.md
     - name: Set up global double opt-in in outbound marketing
       href: double-opt-in.md
     - name: Set up form double opt-in in outbound marketing
