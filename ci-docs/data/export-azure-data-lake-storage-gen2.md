@@ -25,6 +25,7 @@ Store your data from Dynamics 365 Customer Insights - Data in a Data Lake Storag
 
 - For Azure Data Lake Storage Gen2, choose between [Standard performance and Premium performance tier](/azure/storage/blobs/create-data-lake-storage-account). If you choose the Premium performance tier, select the [premium block blobs as account type](/azure/storage/common/storage-account-overview#types-of-storage-accounts).
 - Enabling public access to your own storage account after [setting up an Azure Private Link](private-link.md) won't work. Private Link is only supported if you disable public access to the storage account. Remove the Private Link setup to re-enable public access.
+- This export works only for CSV formatted files.
 
 ## Set up connection to Azure Data Lake Storage Gen2
 
