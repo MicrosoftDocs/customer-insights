@@ -1,7 +1,7 @@
 ---
 title: Customize Dynamics 365 Customer Insights - Journeys
 description: How to customize lists, forms, workflows, business processes, validations, and more in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/18/2023
+ms.date: 11/07/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -15,7 +15,12 @@ search.audienceType:
 
 [!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
+This article explains how to customize lists, forms, workflows, business processes, validations, and more in Customer Insights - Journeys.
+
 ## Basic customizations
+
+> [!WARNING]
+> Creating custom apps doesn't change the license requirements for any entities, tables, operations, or components from other Dynamics 365 applications, regardless of whether they include a Customer Insights - Journeys solution.
 
 Model-driven apps in Dynamics 365 (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Customer Insights - Journeys, and Dynamics 365 Project Service Automation) provide rich possibilities for customization without coding. Customizers can add new fields to existing entities, add or hide fields in list or form views, design custom business processes and workflows, and much more—all while working in their web browser. Other types of customization include installing custom solutions from Microsoft AppSource, such as a third-party text messaging solution for Customer Insights - Journeys. The system also provides APIs that enable developers to write code that implements even more advanced custom functionality and third-party integration.
 

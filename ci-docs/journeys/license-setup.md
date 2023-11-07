@@ -1,7 +1,7 @@
 ---
 title: Customer Insights license guidance
 description: Learn about licensing information in Dynamics 365 Customer Insights.
-ms.date: 10/27/2023
+ms.date: 11/07/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -16,6 +16,9 @@ search.audienceType:
 This article covers important key points about Customer Insights licensing and provides answers to frequently asked questions about licensing.
 
 ## Customer Insights licensing key points
+
+> [!WARNING]
+> Creating custom apps doesn't change the license requirements for any entities, tables, operations, or components from other Dynamics 365 applications, regardless of whether they include a Customer Insights - Journeys solution.
 
 -	You can install the **Customer Insights - Journeys** app up to four times on any of your Dataverse environments.
 -	You can install the **Customer Insights - Data** app up to four times on any of your Dataverse environments.
@@ -37,6 +40,7 @@ This article covers important key points about Customer Insights licensing and p
     - For customers on the standalone Dynamics 365 Marketing SKU with 10 million or more active contacts.
     - For customers with the new Dynamics 365 Customer Insights SKU with 500,000 or more interacted people.
     - For customers with the new Dynamics 365 Customer Insights SKU who have less than 500,000 interacted people but have purchased the 500,000 sending burst add-on through their seller.
+
 ## Licensing FAQs
 
 ### How is Customer Insights - Journeys licensed?
