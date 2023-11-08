@@ -62,7 +62,7 @@ If you have valid business reasons that require outbound marketing to be enabled
 
 Note the following parameters:
 - Don't create support tickets or use other channels for the same requests, you'll be redirected to this form.
-- This form requires an email address. The email address will be used to communicate receipt of the request, confirming when the request has been processed, and if needed, ask for additional information.
+- This form requires an email address. The email address is used to communicate receipt of the request, confirming when the request has been processed, and if needed, ask for additional information.
 - Most requests are processed in about three business days once all needed information is available.
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
