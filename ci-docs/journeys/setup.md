@@ -88,7 +88,7 @@ If your installation fails, you'll see a **Retry** link where the **Install** li
 - You can go to the solutions history view in the Maker portal to see what failed and what actions you can take to prepare your environment for a successful install. Learn more: [View the history of a solution](/power-apps/maker/data-platform/solution-history/)
 - You can also check your solutions using the solution checker. Learn more: [Troubleshoot issues with Solution Health Hub](troubleshoot-marketing-solution-health.md)
 
-If your installation fails and you want to abandon the installation, you must achieve a successful installation so that you can run the uninstall process to free up the license and disconnect any services that may have succeeded during the parts of the installation process that didn't fail. If you still can't resolve the issue after attempting using the solution checker or visiting the solution history in the Maker portal, you should file a support ticket and get help to achieve a successful installation.
+If your installation fails and you want to abandon the installation, you must achieve a successful installation so that you can run the uninstall process to free up the license and disconnect any services that may have succeeded during the parts of the installation process that didn't fail. If you still can't resolve the issue after attempting using the solution checker or visiting the solution history in the Maker portal, you should [file a support ticket](troubleshoot-faq.md#how-can-i-create-a-support-ticket-from-the-power-platform-admin-center) and get help to achieve a successful installation.
 
 ### Uninstall
 
