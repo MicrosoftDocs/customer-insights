@@ -19,9 +19,6 @@ This article explains how to customize lists, forms, workflows, business process
 
 ## Basic customizations
 
-> [!WARNING]
-> Creating custom apps doesn't change the license requirements for any entities, tables, operations, or components from other Dynamics 365 applications, regardless of whether they include a Customer Insights - Journeys solution.
-
 Model-driven apps in Dynamics 365 (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Customer Insights - Journeys, and Dynamics 365 Project Service Automation) provide rich possibilities for customization without coding. Customizers can add new fields to existing entities, add or hide fields in list or form views, design custom business processes and workflows, and much more—all while working in their web browser. Other types of customization include installing custom solutions from Microsoft AppSource, such as a third-party text messaging solution for Customer Insights - Journeys. The system also provides APIs that enable developers to write code that implements even more advanced custom functionality and third-party integration.
 
 > [!WARNING]
@@ -39,6 +36,9 @@ For details about customizations that apply only to the Customer Insights - Jour
 Entities that include [go-live functionality](go-live.md) provide a **Status reason** field that tracks the go-live status of each record. The field is an option set that must include the following values: **Draft**, **Live**, **Stopped**, "**Live, editable**", **Error**, **Going live**, and "**Stopping...**". Be sure not to delete any of these standard values. If you do, the entity will no longer be able to go live.
 
 ## Create a custom app that includes Customer Insights - Journeys solutions
+
+> [!WARNING]
+> Creating custom apps doesn't change the license requirements for any entities, tables, operations, or components from other Dynamics 365 applications, regardless of whether the custom apps include Customer Insights - Journeys solutions.
 
 Customizers and developers can create custom app modules that include any number of existing solutions, plus other custom elements, as needed. You can include 
 Dynamics 365 Customer Insights - Journeys solutions in custom apps such as these, but the *Marketing email test send* entity won't be included automatically when you add the Marketing solution. As a result, your custom app won't support test sends of marketing emails by default. If you'd like to include this feature in your custom app, then you must add the *Marketing email test send* entity manually to your app after you add the Marketing solution.

@@ -18,7 +18,7 @@ This article covers important key points about Customer Insights licensing and p
 ## Customer Insights licensing key points
 
 > [!WARNING]
-> Creating custom apps doesn't change the license requirements for any entities, tables, operations, or components from other Dynamics 365 applications, regardless of whether they include a Customer Insights - Journeys solution.
+> Creating custom apps doesn't change the license requirements for any entities, tables, operations, or components from other Dynamics 365 applications, regardless of whether the custom apps include Customer Insights - Journeys solutions.
 
 -	You can install the **Customer Insights - Journeys** app up to four times on any of your Dataverse environments.
 -	You can install the **Customer Insights - Data** app up to four times on any of your Dataverse environments.
