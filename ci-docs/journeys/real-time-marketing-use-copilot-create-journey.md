@@ -1,7 +1,7 @@
 ---
 title: "Preview: Copilot - Create journeys using AI assistance"
 description: Enable the journey copilot to create marketing journeys using everyday language and provide feedback to improve results.
-ms.date: 11/06/2023
+ms.date: 11/08/2023
 ms.topic: get-started
 author: alfergus
 ms.author: alfergus
@@ -38,7 +38,7 @@ To use the journey copilot, an administrator needs to enable the feature switch.
 > ![Enable copilot feature](media/real-time-marketing-enable-copilot.png "Enable copilot feature")
 
 > [!NOTE]
-> The journey copilot is available in all geos in the English language.
+> The journey copilot is only available in the United States in the English language only.
 
 ## Use the journey copilot
 
