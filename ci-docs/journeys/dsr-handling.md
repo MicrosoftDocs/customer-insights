@@ -19,7 +19,7 @@ A data subject request (DSR) is an inquiry from an individual to see the persona
 /main.aspx?pagetype=entitylist&etn=msdynmkt_gdprrequest
 ```
 
-The full, appended URL looks like this: 'https://example.crm10.dynamics.com/main.aspx?pagetype=entitylist&etn=msdynmkt_gdprrequest'
+The full, appended URL looks like this: `https://example.crm10.dynamics.com/main.aspx?pagetype=entitylist&etn=msdynmkt_gdprrequest`
 
 Once you enter the URL in your browser, you'll see a screen with all the DSRs submitted:
 
