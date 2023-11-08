@@ -13,6 +13,8 @@ search.audienceType:
 
 # Data subject request (DSR) handling
 
+[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+
 A data subject request (DSR) is an inquiry from an individual to see the personal data that your organization stores, processes, and transmits. To view, create, or delete DSRs, in your web browser, take the base organization URL and append the following path and query: 
 
 ```
@@ -44,3 +46,5 @@ The **Data** field is only relevant for **Export** requests. Once the request is
 > ![Screenshot showing DSR export completed](media/dsr-request-export-completed.png "Screenshot showing DSR export completed")
 
 These requests work only on internal data that aren't directly accessible from Dataverse. To completely fulfill the end user's request, don’t forget to delete/export all the associated Dataverse rows, such as contact, lead, account, consent, and previous DSRs from that user, data from customizations, and data from other applications such as Sales and Service.
+
+[!INCLUDE [footer-include](./includes/footer-banner.md)]
