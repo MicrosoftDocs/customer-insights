@@ -498,6 +498,8 @@
       href: real-time-marketing-compliance-settings.md
     - name: Use privacy features
       href: privacy-use-features.md
+    - name: Data subject request (DSR) handling
+      href: dsr-handling.md
     - name: Anonymized customer data human review notice
       href: anonymized-data-review.md
   - name: Maintain the Customer Insights - Journeys app
