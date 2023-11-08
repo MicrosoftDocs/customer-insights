@@ -1,7 +1,7 @@
 ---
 title: Plan, publicize, and collect registrations for events
 description: An overview of event-management features (including planning, logistics, sponsors, speakers, promotion, and registration) in  Dynamics 365 Customer Insights - Journeys.
-ms.date: 09/22/2023
+ms.date: 11/07/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -43,17 +43,18 @@ Customer Insights - Journeys contains a subset of outbound event management feat
 |---|---|---|
 |     Single session event    |     [Yes](set-up-event-outbound.md)    |     [Yes](set-up-event.md)    |
 |     Multi-session event          |     [Yes](set-up-event-outbound.md#manage-event-sessions-and-speakers)    |     Planned    |
-|     Recurring event    |     [Yes](event-recurring.md)    |     Planned    |
-|     Event level templates    |     [Yes](event-templates.md)    |     Planned    |
+|     Recurring event    |     [Yes](event-recurring-outbound.md)    |     Planned    |
+|     Event level templates    |     [Yes](event-templates-outbound.md)    |     Planned    |
 |     Sessions, session tracks, speaker management    |     [Yes](set-up-event-outbound.md)    |     [Yes](set-up-event.md)    |
 |     Venue management    |     [Yes](set-up-event-outbound.md#set-up-the-event-venue)    |     [Yes](set-up-event.md#set-up-the-event-venue)    |
-|     Tracking sponsors    |     [Yes](manage-event-sponsorships.md)    |     [Yes](manage-event-sponsorships.md)    |
-|     Creating Teams meetings/live events/webinars    |     [Yes](teams-webinar.md)    |     [Yes](teams-webinar.md)    |
-|     Support for On24 and other generic webinar providers      |     [Yes](set-up-webinar.md)    |     Planned    |
-|     Using marketing forms for registrations    |     [Yes](event-forms.md)    |     Yes   |
-|     Waitlist    |     [Yes](event-waitlist.md)    |     Planned    |
-|     Payments    |     [Yes](event-payment-gateway.md)    |     Planned    |
+|     Tracking sponsors    |     [Yes](manage-event-sponsorships-outbound.md)    |     [Yes](manage-event-sponsorships.md)    |
+|     Creating Teams meetings/live events/webinars    |     [Yes](teams-webinar-outbound.md)    |     [Yes](teams-webinar.md)    |
+|     Support for On24 and other generic webinar providers      |     [Yes](set-up-webinar-outbound.md)    |     Planned    |
+|     Using marketing forms for registrations    |     [Yes](event-forms.md)    |     [Yes](real-time-marketing-form-create.md)   |
+|     Waitlist    |     [Yes](event-waitlist-outbound.md)    |     Planned    |
+|     Payments    |     [Yes](event-payment-gateway-outbound.md)    |     Planned    |
 |     Lead entity registration    |     [Yes](set-up-event-outbound.md#the-website-and-form-tab)    |     Planned    |
+|     Custom registration fields    |     [Yes](custom-registration-fields-outbound.md)    |     Planned    |
 |     Set registrations end date    |    Yes   |    Planned    |
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
