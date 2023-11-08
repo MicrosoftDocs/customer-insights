@@ -19,7 +19,7 @@ This FAQ provides information about the AI technology used in Customer Insights 
 
 ## What is Segment Copilot?
 
-This feature will allow the user to enter a prompt in natural language and help build segments and specify criteria using natural language on the segments page in Customer Insights via copilot chat experience. Suggested segment configuration and data mapping based on user NL prompt and data available in CI for users to verify and tweak as needed.
+This feature will allow the user to enter a prompt in natural language and help build segments and specify criteria using natural language on the segments page in Customer Insights through copilot chat experience. Suggested segment configuration and data mapping based on user NL prompt and data available in CI for users to verify and tweak as needed.
 
 ## What are capabilities of the segment copilot?
 
@@ -31,7 +31,7 @@ The segment Copilot provides the following components or capabilities:
 
 ## What is the intended use of the segment copilot?
 
-The segment copilot democratizes the varying technical ability of users and helps them create complex segments via natural language.
+The segment copilot democratizes the varying technical ability of users and helps them create complex segments through natural language.
 
 ## How was Segment Copilot evaluated? What metrics are used to measure performance?
 
