@@ -30,7 +30,7 @@ To create a message:
 
 1. Select the message sender. The **Text message sender** dropdown lets you choose from the sender phone numbers (Azure Communication Services preview, Twilio, or TeleSign) you’ve added.
 1. Enter your message content. You can enter text, emojis, and [personalized content](real-time-marketing-outbound-text-messaging.md#personalize-text-messages).
-1. Choose a [Compliance Profile](customer-insights/journeys/real-time-marketing-compliance-settings.md#compliance-profiles), Purpose, and Topic for your message.
+1. Choose a [Compliance Profile](real-time-marketing-compliance-settings.md#compliance-profiles), Purpose, and Topic for your message.
 
 Before sending your message, select the **Check content** button in the upper right. This runs an error check on the message, much like the error check functionality in the email designer.
 
