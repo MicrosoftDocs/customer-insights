@@ -143,7 +143,7 @@ On September 1, 2023, Dynamics 365 Customer Insights - Journeys transitioned to 
 
 - **Engage customers with text messages sent using Vibes**
     - Connect your existing Vibes account to reach out to your customers through text messages. Use all Customer Insights - Journeys text message features with your Vibes account to maximize customer engagement. Leverage out-of-the-box functionalities such as personalization, templates, and analytics to unlock the potential of Vibes.
-    - [Docs](real-time-marketing-outbound-text-messaging.md#sign-up-for-and-configure-a-vibes-account)
+    - [Docs](real-time-marketing-outbound-text-messaging-setup.md#sign-up-for-and-configure-a-vibes-account)
 
 ### Public preview
 
@@ -165,7 +165,7 @@ On September 1, 2023, Dynamics 365 Customer Insights - Journeys transitioned to 
 - **Increase engagement using alphanumeric SMS senders**
     - With alphanumeric senders, you can now send one-way text messages to your customers using a custom string of letters or numbers, making it easier for customers to recognize that messages are from a trusted source. By using your brand or company name, you gain brand awareness, increase trust, and boost the overall effectiveness of your SMS marketing efforts.
     - [Release plan](/dynamics365/release-plan/2023wave2/marketing/dynamics365-marketing/increase-engagement-using-alphanumeric-sms-senders)
-    - [Docs](real-time-marketing-outbound-text-messaging.md#add-a-sender-number-from-an-infobip-link-mobility-telesign-twilio-or-vibes-account-worldwide)
+    - [Docs](real-time-marketing-outbound-text-messaging-setup.md#add-a-sender-number-from-an-infobip-link-mobility-telesign-twilio-or-vibes-account-worldwide)
 
 ### Monthly enhancements
 
