@@ -176,7 +176,9 @@
         href: email-troubleshoot.md
     - name: Text messages
       items:
-      - name: Outbound text messages
+      - name: Set up outbound text messaging
+        href: real-time-marketing-outbound-text-messaging-setup.md
+      - name: Create outbound text messages
         href: real-time-marketing-outbound-text-messaging.md
       - name: Set up an automated text message keyword flow
         href: set-up-automated-sms-keyword-flow.md
