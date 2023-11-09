@@ -11,43 +11,23 @@ search.audienceType:
   - enduser
 ---
 
-# Set up outbound text messaging
+# Set up text messaging
 
 [!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
-This article explains how to add a phone number generated in the Azure Communication Services preview, Infobip, LINK Mobility, Telesign, Twilio, or Vibes that you can use to send text messages in Customer Insights - Journeys.
-
+This article explains how to setup and configure providers and phone numbers for text messages. 
 > [!NOTE]
-> Text messaging using a toll-free number generated in the Azure Communication Services preview is only supported in the countries/regions listed below.
->
->| Supported countries/regions | Supported type | Legal designation | Range    |
->|---------------------|----------------|-------------------|----------|
->| United States                 | Toll-free      | Transactional     | Domestic |
+> Customer Insight - Journeys offers native integration with Azure Communication Services, Infobip, LINK Mobility, Telesign, Twilio, or Vibes (US and Canada). You can bring your own provider by creating up a [custom channel](customer-insights/journeys/real-time-marketing-create-custom-channels).
 
-## Add a sender number using the Azure Communication Services free trial preview (US only)
 
-To generate an Azure Communication Services free trial preview phone number to use in Customer Insights - Journeys, go to **Settings** in the area switcher menu. Then go to **Customer engagement** > **Azure SMS preview** and select **+New text message sender** on the top ribbon.
+## Sign up for and configure your text messaging provider
 
-Once you agree to the *Voice and text message terms* and select your country or region, you’ll be provided with a toll-free United States phone number.
+You can purchase or reuse an existing Azure Communication Services, Infobip, LINK Mobility, Telesign, Twilio, or Vibes SMS account to send text messages in Customer Insights - Journeys. 
 
-> [!div class="mx-imgBorder"]
-> ![Generate phone number screenshot.](media/real-time-marketing-text-number.png "Generate phone number screenshot")
+The sender types supported vary based on the selected provider. **Customer Insights - Journeys also supports Alphanumeric Sender IDs**.
 
-Toll-free numbers are a good option for transactional A2P messaging, which means sending automated messages to large groups. Toll-free numbers don’t require template registration, so once you get a number you can immediately start sending messages.
-
-> [!NOTE]
-> During the Azure Communication Services free trial preview, the text message service is limited to a single toll-free phone number with a limited number of outbound messages per month (1,000 per organization). The phone number you receive will be your dedicated number for the duration of the preview.
-> 
-> If you want to integrate an already active Azure Communication Services subscription, refer to the section below instead.
-
-> [!TIP]
-> Carriers, just like email providers, have ways of filtering spam messages. This results in the phone number being blocked and becoming unusable. Due to carrier filtering, you should only use toll-free numbers for transactional messages (as opposed to promotional messages). You should avoid sending promotional content or misleading information. Promotional content includes free products or discount offers.
->
->**UPDATE:** With carriers becoming even more strict with filtering, to ensure the maximum deliverability for your text messages, the toll-free number now needs to be verified. To verify your number, fill in the form [here](https://forms.office.com/r/x3LCH1gS7b). You can learn more about Azure Communication Services toll-free number verification [here](/azure/communication-services/concepts/sms/sms-faq#toll-free-verification).
-
-## Add a sender number from an active Azure Communication Services subscription (worldwide)
-
-You can purchase or reuse an existing Azure Communication Services subscription to send text messages in Customer Insights - Journeys. The integration works for all countries in which a phone number can be purchased. Customer Insights - Journeys also supports Alphanumeric Sender IDs.
+> [!IMPORTANT]
+> To ensure that third-party SMS providers handle STOP commands properly, you must configure your consent settings directly with the provider.
 
 ### Sign up for and configure an Azure Communication Services subscription
 
@@ -58,15 +38,6 @@ Azure Communication Services (ACS) integration uses its API to send and receive 
 1. Go to your [Azure account homepage](https://ms.portal.azure.com/#home) and navigate to your resource through **Subscriptions** > **Resource groups** > **Resource name**.
 1. Go to **Keys** under **Settings** and jot down the Primary and Secondary Connection String values. These values are required to create the integration between Customer Insights - Journeys and Azure Communication Services.
 1. Under **Telephony & SMS**, go to **Phone Numbers** to find the toll-free number you want to use as a sender. Go to **Alphanumeric Sender ID** and to **Short Codes** for the respective types of numbers.
-
-## Add a sender number from an Infobip, LINK Mobility, Telesign, Twilio, or Vibes account (worldwide)
-
-You can purchase or reuse an existing Infobip, LINK Mobility, Telesign, Twilio, or Vibes SMS account to send text messages in Customer Insights - Journeys. **The integration works for all countries** in which a phone number can be purchased from the relevant SMS provider. 
-
-The sender types supported vary based on the selected provider. **Customer Insights - Journeys also supports Alphanumeric Sender IDs**.
-
-> [!IMPORTANT]
-> To ensure that third-party SMS providers handle STOP commands properly, you must configure your consent settings directly with the provider.
 
 ### Sign up for and configure an Infobip account
 
@@ -95,19 +66,18 @@ TeleSign integration uses TeleSign's public APIs to send and receive text messag
 ### Sign up for and configure a Twilio account
 
 Like Telesign, Twilio integration uses Twilio's public APIs to send and receive text messages. You need to sign up for a Twilio account to enable Customer Insights - Journeys SMS integration. To create a Twilio account:  
-  
 1. Go to [Twilio](https://www.twilio.com/try-twilio) and sign up for a trial account that can be upgraded to pay-as-you-go. If you expect to send high volumes of SMS traffic (more than 100,000 messages per month), contact Twilio to request an invoiced enterprise account.
 1. In your Twilio account [General Settings](https://console.twilio.com/us1/account/manage-account/general-settings), note the **ACCOUNT SID** and **AUTH TOKEN** values. These values are required to create the integration between Customer Insights - Journeys and Twilio.
 1. [Purchase SMS phone numbers](https://console.twilio.com/us1/develop/phone-numbers/manage/search?frameUrl=%2Fconsole%2Fphone-numbers%2Fsearch%3Fx-target-region%3Dus1&currentFrameUrl=%2Fconsole%2Fphone-numbers%2Fsearch%3FisoCountry%3DUS%26types%255B%255D%3DLocal%26types%255B%255D%3DTollfree%26capabilities%255B%255D%3DSms%26capabilities%255B%255D%3DMms%26capabilities%255B%255D%3DVoice%26capabilities%255B%255D%3DFax%26searchTerm%3D%26searchFilter%3Dleft%26searchType%3Dnumber%26x-target-region%3Dus1%26__override_layout__%3Dembed%26bifrost%3Dtrue) through your Twilio account.
 
-### Sign up for and configure a Vibes account
+### Sign up for and configure a Vibes account (US and Canada only)
 
 Vibes integration uses Vibes's public APIs to send and receive text messages. You need to sign up for a Vibes account to enable Vibes SMS integration. To create a Vibes account:  
   
 1. Send an email to [dynamics@vibes.com](mailto:dynamics@vibes.com). You'll get a response within a business day.
 1. After your account is set up or if you're already a Vibes customer, contact the Vibes customer care team ([live@vibes.com](mailto:live@vibes.com)) or your dedicated customer success manager to request the account integration details required to create the integration between Customer Insights - Journeys and Vibes.
 
-### Set up your Azure Communication Services, Infobip, LINK Mobility, Telesign, Twilio, or Vibes sender numbers in the Customer Insights - Journeys app
+## Set up your provider in the Customer Insights - Journeys app
 
 To set up a new SMS provider for the Customer Insights - Journeys app:
 
@@ -132,6 +102,32 @@ To set up a new SMS provider for the Customer Insights - Journeys app:
     > ![Twilio number config screenshot.](media/real-time-marketing-text-message-twilio-config.png "Twilio number config screenshot")
 
 For Infobip, LINK Mobility, Telesign, and Vibes, you'll need to contact customer support to set this up for you.
+
+## Add a sender number using the Azure Communication Services free trial preview (US only)
+> [!IMPORTANT]
+> Effective November 8, 2023, unverified toll-free numbers sending messages to US phone numbers will have its traffic blocked. Due to this new restriction, the Azure SMS Preview feature is temporarily unavailable. Numbers that were previously verified will continue to send text messages.
+
+> [!NOTE]
+> Text messaging using a toll-free number generated in the Azure Communication Services preview is only supported in the countries/regions listed below.
+>
+>| Supported countries/regions | Supported type | Legal designation | Range    |
+>|---------------------|----------------|-------------------|----------|
+>| United States                 | Toll-free      | Transactional     | Domestic |
+
+> > [!NOTE]
+> During the Azure Communication Services free trial preview, the text message service is limited to a single toll-free phone number with a limited number of outbound messages per month (1,000 per organization). The phone number you receive will be your dedicated number for the duration of the preview.
+> 
+> If you want to integrate an already active Azure Communication Services subscription, refer to the section above instead.
+
+To generate an Azure Communication Services free trial preview phone number to use in Customer Insights - Journeys, go to **Settings** in the area switcher menu. Then go to **Customer engagement** > **Azure SMS preview** and select **+New text message sender** on the top ribbon.
+
+Once you agree to the *Voice and text message terms* and select your country or region, you’ll be provided with a toll-free United States phone number.
+
+> [!div class="mx-imgBorder"]
+> ![Generate phone number screenshot.](media/real-time-marketing-text-number.png "Generate phone number screenshot")
+
+> [!TIP]
+> Carriers, just like email providers, have ways of filtering spam messages. This results in the phone number being blocked and becoming unusable. Due to carrier filtering, you should only use toll-free numbers for transactional messages (as opposed to promotional messages). You should avoid sending promotional content or misleading information. Promotional content includes free products or discount offers.
 
 You can view all active provider integrations in the **SMS providers** tab. You can also edit, update, delete, or add more numbers to an existing integration.
 
