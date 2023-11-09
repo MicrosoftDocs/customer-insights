@@ -1,7 +1,7 @@
 ---
 title: "Connect data stored in Delta Lake format from your Azure Data Lake Storage"
 description: "Work with data stored in Delta Lake format from Azure Data Lake Storage."
-ms.date: 11/01/2023
+ms.date: 11/09/2023
 ms.topic: how-to
 author: mukeshpo
 ms.author: mukeshpo
@@ -91,7 +91,7 @@ When a column is removed from a data source, the system checks for dependencies 
 
 ## Run a full data refresh to data stored in Delta format
 
-A full refresh takes all the data from a table in Delta format and reloads it from the Delta table version zero (0). Perform a full refresh on a table if the schema has changed (columns added or removed) or if you added rows from dates earlier than the last incremental refresh.
+A full refresh takes all the data from a table in Delta format and reloads it from the Delta table version zero (0). Perform a full refresh on a table if the schema has changed (columns added or removed) or if you added rows from dates earlier than the last incremental refresh. A full refresh takes longer to process than an incremental refresh.
 
 1. Go to **Data** > **Data sources**.
 
@@ -99,14 +99,13 @@ A full refresh takes all the data from a table in Delta format and reloads it fr
 
 1. Select the table you want to refresh. The **Edit table** pane displays.
 
+   <!--- Get a better screenshot when we have access to an env. --->
+
    :::image type="content" source="media/delta-edit-table.png" alt-text="Edit table pane to select one-time full refresh.":::
 
 1. Select **Run one-time full refresh**.
 
-1. Select **Save** to run the refresh.
-
-   > [!NOTE]
-   > The **Data sources** page opens showing the data source in **Refreshing** status, but only the selected table is refreshing. A full refresh takes longer to process than an incremental refresh.
+1. Select **Save** to run the refresh. The **Data sources** page opens showing the data source in **Refreshing** status, but only the selected table is refreshing.
 
 1. Repeat the process for other tables, if applicable.
 
