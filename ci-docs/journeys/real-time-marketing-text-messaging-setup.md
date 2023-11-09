@@ -15,9 +15,10 @@ search.audienceType:
 
 [!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
-This article explains how to setup and configure providers and phone numbers for text messages. 
+This article explains how to setup and configure providers and phone numbers for text messages.
+
 > [!NOTE]
-> Customer Insight - Journeys offers native integration with Azure Communication Services, Infobip, LINK Mobility, Telesign, Twilio, or Vibes (US and Canada). You can bring your own provider by creating up a [custom channel](customer-insights/journeys/real-time-marketing-create-custom-channels).
+> Customer Insight - Journeys offers native integration with Azure Communication Services, Infobip, LINK Mobility, Telesign, Twilio, or Vibes (US and Canada). You can bring your own provider by creating up a [custom channel](real-time-marketing-create-custom-channels.md).
 
 
 ## Sign up for and configure your text messaging provider
@@ -96,7 +97,7 @@ To set up a new SMS provider for the Customer Insights - Journeys app:
 
    For Azure Communication Services, navigate to your resource group through **Subscriptions** > **Resource group name** and create an Event Grid System Topic for your Communication Service resource. Select it and then select **+ Event Subscription**. To set up the **Delivery report Callback URL**, select “**SMS Delivery report received**” in the **Event type** and **Webhook** in the **Endpoint type**, pasting the relevant URL you see in the Customer Insights – Journeys setup wizard. To set up the **Incoming Message Callback URL**, select “**SMS received**” in the **Event type** and **Webhook** in the **Endpoint** type, pasting the relevant URL you see in the Customer Insights – Journeys setup wizard. 
 
-   For Twilio, copy the **Callback URL** from the Customer Insights - Journeys app and paste it into the [numbers' configuration page](https://console.twilio.com/us1/develop/phone-numbers/manage/incoming) in the **"A MESSAGE COMES IN"** field. 
+   For Twilio, copy the **Callback URL** from the Customer Insights - Journeys app and paste it into the [numbers' configuration page](https://console.twilio.com/us1/develop/phone-numbers/manage/incoming) in the **"A MESSAGE COMES IN"** field.
 
     > [!div class="mx-imgBorder"]
     > ![Twilio number config screenshot.](media/real-time-marketing-text-message-twilio-config.png "Twilio number config screenshot")
