@@ -176,10 +176,8 @@
         href: email-troubleshoot.md
     - name: Text messages
       items:
-      - name: Set up outbound text messaging
-        href: real-time-marketing-outbound-text-messaging-setup.md
-      - name: Create outbound text messages
-        href: real-time-marketing-outbound-text-messaging.md
+      - name: Create text messages
+        href: real-time-marketing-text-messaging.md
       - name: Set up an automated text message keyword flow
         href: set-up-automated-sms-keyword-flow.md
     - name: Push notifications
@@ -514,6 +512,8 @@
       href: fair-use-policy.md
     - name: Throughput guidance
       href: real-time-marketing-throughput-guidance.md
+  - name: Set up text messaging
+    href: real-time-marketing-text-messaging-setup.md
   - name: Manage SMS (text message) keywords used in customer journeys
     href: manage-sms-keywords.md
   - name: Install add-ons

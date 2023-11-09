@@ -24,7 +24,7 @@ As [discussed below](real-time-marketing-outbound-text-messaging.md#track-your-t
 After you add a phone number, you can start authoring text messages by going to **Customer Insights - Journeys** > **Channels** > **Text messages** and selecting **+New text message** in the top ribbon. This takes you to the text messaging editor.
 
 > [!div class="mx-imgBorder"]
-> ![Text editor screenshot.](media/real-time-marketing-text-editor4.png "Text editor screenshot")
+> ![Text editor screenshot.](media/real-time-marketing-text-editor.png "Text editor screenshot")
 
 To create a message:
 
