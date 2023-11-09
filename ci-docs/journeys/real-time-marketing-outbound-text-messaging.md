@@ -21,7 +21,7 @@ As [discussed below](real-time-marketing-outbound-text-messaging.md#track-your-t
 
 ## Create text messages
 
-After you add your phone number, you can start authoring text messages by going to **Customer Insights - Journeys** > **Channels** > **Text messages** and selecting **+New text message** in the top ribbon. This takes you to the text messaging editor.
+After you add a phone number, you can start authoring text messages by going to **Customer Insights - Journeys** > **Channels** > **Text messages** and selecting **+New text message** in the top ribbon. This takes you to the text messaging editor.
 
 > [!div class="mx-imgBorder"]
 > ![Text editor screenshot.](media/real-time-marketing-text-editor4.png "Text editor screenshot")
@@ -30,10 +30,7 @@ To create a message:
 
 1. Select the message sender. The **Text message sender** dropdown lets you choose from the sender phone numbers (Azure Communication Services preview, Twilio, or TeleSign) you’ve added.
 1. Enter your message content. You can enter text, emojis, and [personalized content](real-time-marketing-outbound-text-messaging.md#personalize-text-messages).
-1. Choose whether your message designation is **Commercial** or **Transactional**. A commercial message is one that is sent to recipients who have opted-in to receive messages. An example is a coupon sent to a group of customers who opted-in to receive promotional offers from your company. A transactional message is one that is sent in response to a transaction the recipient previously started with you. An example is a response to an email inquiry.
-
-> [!IMPORTANT]
-> In the text messaging editor, the message designation is preselected as transactional for numbers that might be prone to carrier filtering if used for promotional or marketing messaging. To make sure your number isn't blocked by carriers, it's highly recommended to use this number for transactional messaging only.
+1. Choose a [Compliance Profile](customer-insights/journeys/real-time-marketing-compliance-settings#compliance-profiles), Purpose and Topic for yuor message. 
 
 Before sending your message, select the **Check content** button in the upper right. This runs an error check on the message, much like the error check functionality in the email designer.
 
