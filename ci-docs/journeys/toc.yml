@@ -40,7 +40,7 @@
     href: transition-overview.md
   - name: Transition resources
     href: transition-resources.md
-  - name: Transition functional areas 
+  - name: Feature area guidance
     items:
     - name: Functional areas overview
       href: transition-walkthrough-functional.md
