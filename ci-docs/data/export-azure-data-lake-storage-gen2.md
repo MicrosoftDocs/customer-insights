@@ -18,8 +18,9 @@ Store your data from Dynamics 365 Customer Insights - Data in a Data Lake Storag
 
 ## Prerequisites
 
-- A [storage account to use with Azure Data Lake Gen2](/azure/storage/blobs/create-data-lake-storage-account). To find the storage account name and location, see [Manage storage account settings in the Azure portal](/azure/storage/common/storage-account-manage).
-- An [Azure Blob Storage container](/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container).
+- An [Azure Blob Storage account with a container](/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container).
+- User who sets up the connection must have the permission to access the content of the container. For example, a [Blob Storage Contributor](/azure/role-based-access-control/built-in-roles#storage-blob-data-contributor) role.
+- The [Customer Insights Service Principal](connect-service-principal.md) has write permissions on the container. For example, a [Blob Storage Contributor](/azure/role-based-access-control/built-in-roles#storage-blob-data-contributor) role.
 
 ## Known limitations
 
