@@ -25,8 +25,6 @@ Though Customer Insights - Journeys offers many views into other record types, y
 
 You can see a list of all your event records by [opening the **Events** work area](open-events.md) and going to **Events** > **Event** > **Events**. From here you can use the standard list-view controls to search, sort, and filter the list to find and open an existing event, or to create a new event record.
 
-If you often run similar events, you can save time by creating one or more [event templates](event-templates.md) and then choosing an appropriate template when you first create a new event.
-
 > [!div class="mx-imgBorder"]
 > ![Example of an event record.](media/event-record2.png)
 
