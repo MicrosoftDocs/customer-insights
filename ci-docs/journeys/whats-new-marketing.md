@@ -1,7 +1,7 @@
 ---
 title: New and upcoming features
 description: Information about new features, improvements, and bug fixes in Dynamics 365 Customer Insights - Journeys releases.
-ms.date: 10/30/2023
+ms.date: 11/07/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -29,7 +29,7 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 
 | App              | GA release      |
 |------------------|-----------------|
-| Customer Insights - Journeys        |   1.1.32267.98     |
+| Customer Insights - Journeys        |   1.1.32267.102     |
 
 On September 1, 2023, Dynamics 365 Customer Insights - Journeys transitioned to focus on real-time marketing features only. To support this transition, in early August 2023, provisioning of new instances changed in the following ways:
 
@@ -55,11 +55,6 @@ On September 1, 2023, Dynamics 365 Customer Insights - Journeys transitioned to 
     - With alphanumeric senders, you can now send one-way text messages to your customers using a custom string of letters or numbers, making it easier for customers to recognize that messages are from a trusted source. By using your brand or company name, you gain brand awareness, increase trust, and ultimately boost the overall effectiveness of your SMS marketing efforts.
     - [Release plan](/dynamics365/release-plan/2023wave2/marketing/dynamics365-marketing/increase-engagement-using-alphanumeric-sms-senders)
     - [Docs](real-time-marketing-outbound-text-messaging.md) 
-
-- **Convert more leads by qualifying and routing them to the best rep**
-    - To win more deals, marketing and sales teams must work together to identify the best leads and convert those leads into business opportunities. Marketers need to define qualification criteria and post-qualification actions to grow the pipeline with the best candidates. Sellers need to follow up on leads when they're hot. Using Dynamics 365 Customer Insights - Journeys and Dynamics 365 Sales together, you can now easily route qualified leads identified by the marketing team to a seller without customized solutions or manual intervention. You can also drive the next best action by easily attaching each qualified lead to a sales sequence. This boosts the marketing and sales teams' productivity while maintaining focus on the right customers.
-    - [Release plan](/dynamics365/release-plan/2023wave2/marketing/dynamics365-marketing/increase-lead-conversions-routing-correct-sales-rep)
-    - [Docs](real-time-marketing-qualify-leads.md)
 
 ### Public preview
 
@@ -148,7 +143,7 @@ On September 1, 2023, Dynamics 365 Customer Insights - Journeys transitioned to 
 
 - **Engage customers with text messages sent using Vibes**
     - Connect your existing Vibes account to reach out to your customers through text messages. Use all Customer Insights - Journeys text message features with your Vibes account to maximize customer engagement. Leverage out-of-the-box functionalities such as personalization, templates, and analytics to unlock the potential of Vibes.
-    - [Docs](real-time-marketing-outbound-text-messaging.md#sign-up-for-and-configure-a-vibes-account)
+    - [Docs](real-time-marketing-outbound-text-messaging-setup.md#sign-up-for-and-configure-a-vibes-account)
 
 ### Public preview
 
@@ -170,7 +165,7 @@ On September 1, 2023, Dynamics 365 Customer Insights - Journeys transitioned to 
 - **Increase engagement using alphanumeric SMS senders**
     - With alphanumeric senders, you can now send one-way text messages to your customers using a custom string of letters or numbers, making it easier for customers to recognize that messages are from a trusted source. By using your brand or company name, you gain brand awareness, increase trust, and boost the overall effectiveness of your SMS marketing efforts.
     - [Release plan](/dynamics365/release-plan/2023wave2/marketing/dynamics365-marketing/increase-engagement-using-alphanumeric-sms-senders)
-    - [Docs](real-time-marketing-outbound-text-messaging.md#add-a-sender-number-from-an-infobip-link-mobility-telesign-twilio-or-vibes-account-worldwide)
+    - [Docs](real-time-marketing-outbound-text-messaging-setup.md#add-a-sender-number-from-an-infobip-link-mobility-telesign-twilio-or-vibes-account-worldwide)
 
 ### Monthly enhancements
 

@@ -1,15 +1,15 @@
 ---
-title: Have a dialog with data using Copilot in Customer Insights (preview)
-description: Learn how to get more insights from your data by asking natural-language questions with Copilot in Dynamics 365 Customer Insights. 
+title: Have a dialog with data using Copilot in Customer Insights - Data (preview)
+description: Learn how to get more insights from your data by asking natural-language questions with Copilot in Dynamics 365 Customer Insights - Data. 
 ms.date: 09/01/2023
 ms.topic: how-to
-author: wmelewong
-ms.author: wameng
+author: radsay01
+ms.author: rsayyaparaju
 ms.reviewer: mhart
 ms.custom: bap-template
 ---
 
-# Have a dialog with data using Copilot in Customer Insights (preview)
+# Have a dialog with data using Copilot in Customer Insights - Data (preview)
 
 [!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
@@ -23,21 +23,23 @@ Responses are generated in accordance with [Microsoft Responsible AI Standards](
 
 ## Prerequisites
 
-- Customer data is [imported](data-sources.md) and [unified](data-unification.md).
-- You have at least Contributor permissions.
-- The environment is hosted in one of the US regions.
+- Customer data is [imported](data-sources.md) and [unified.](data-unification.md)
+- For optimal results, we recommend imported and unified [activity data.](activities.md)
+- You have Admin or Contributor permissions.
+- [Enable Copilot features powered by Azure OpenAI](copilot-global-consent.md) setting turned **On**. Default is **On**.
+- Environment uses a [supported language.](faqs-dialog-data.md#what-are-the-supported-geographies-and-languages)
 
 ## Discover insights from your data
 
 1. In Customer Insights - Data, go to **Insights** > **Discovery**.
 
-1. A pop-up box explains the feature and asks for your consent to share your prompts to continuously improve the quality of the results, or answers, generated. Choose your preference. You only need to do this once, and you can always change your preference on the **Discovery** page later.
+1. A pop-up box explains the feature and asks for your consent to share your prompts to continuously improve the quality of the results, or answers, generated. Choose your preference. You only need to do give consent once, and you can always change your preference on the **Discovery** page later.
 
    :::image type="content" source="media/copilot-customer-insights.png" alt-text="Screenshot of the dialog with data feature, with copilot AI answering a user question.":::
 
 The **Discover insights about your customers in natural language (preview)** page contains four key components:
 
-- **Prompt box**: Enter your question in natural language; for example, *How many customers in my loyalty program have more than 100 reward points?* Copilot in Customer Insights supports questions in English with up to 2,000 characters. This section also contains the consent setting for sharing your prompts. Ask a specific question about your customers and make sure you have the relevant data imported to answer the question. Avoid asking questions that are too ambiguous or contain inappropriate content.
+- **Prompt box**: Enter your question in natural language; for example, *How many customers in my loyalty program have more than 100 reward points?* Copilot in Customer Insights - Data supports questions in supported languages with up to 2,000 characters. This section also contains the consent setting for sharing your prompts. Ask a specific question about your customers and make sure you have the relevant data imported to answer the question. Avoid asking questions that are too ambiguous or contain inappropriate content.
 
   > [!TIP]
   >
@@ -59,7 +61,8 @@ We want to hear your feedback so we can continually enhance the relevancy, preci
 ## Next steps
 
 - [Create complex segments with segment builder](segment-builder.md)  
-- [Create measures with measure builder](measure-builder.md)  
-- [Responsible AI FAQs for Dynamics 365 Customer Insights](responsible-ai-overview.md)
+- [Create measures with measure builder](measure-builder.md)
+- [Responsible AI FAQs for dialog with data](faqs-dialog-data.md)
+- [Responsible AI FAQs for Dynamics 365 Customer Insights - Data](responsible-ai-overview.md)
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

@@ -1,5 +1,5 @@
 ---
-title: FAQ for docs-based Q&A Copilot
+title: FAQ for docs-based Q&A Copilot (preview)
 description: This FAQ provides information about the AI technology docs-based Q&A skill used in Customer Insights - Data, along with key considerations and details about how the capability is used, how it was tested and evaluated, and any specific limitations.
 ms.date: 10/04/2023
 ms.custom:
@@ -48,7 +48,7 @@ This capability doesn't need setting up by users. It's offered as a base plugin 
 
 ## Next steps
 
-- [Get answers to questions about capabilities from Copilot](help-pane-copilot.md)
+- [Get answers to questions about capabilities from Copilot (preview)](help-pane-copilot.md)
 - [Responsible AI FAQs for Dynamics 365 Customer Insights - Data](responsible-ai-overview.md)
 
 [!INCLUDE[footer-include](./includes/footer-banner.md)]

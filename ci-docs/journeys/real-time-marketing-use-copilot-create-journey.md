@@ -1,7 +1,7 @@
 ---
 title: "Preview: Copilot - Create journeys using AI assistance"
 description: Enable the journey copilot to create marketing journeys using everyday language and provide feedback to improve results.
-ms.date: 10/04/2023
+ms.date: 11/08/2023
 ms.topic: get-started
 author: alfergus
 ms.author: alfergus

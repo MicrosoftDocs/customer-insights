@@ -59,12 +59,8 @@
       href: incremental-refresh-data-sources.md
     - name: Real-time data ingestion
       href: real-time-data-ingestion.md
-    - name: Data quality and preparation 
-      items:
-        - name: Data prep report overview
-          href: data-prep-overview.md
-        - name: Turn off the data prep report
-          href: data-prep-admin.md
+    - name: Data prep report
+      href: data-prep-overview.md
     - name: Common reasons for ingestion errors
       href: common-data-ingestion-errors.md
 
