@@ -1,7 +1,7 @@
 ---
 title: "Connect data stored in Delta Lake format from your Azure Data Lake Storage"
 description: "Work with data stored in Delta Lake format from Azure Data Lake Storage."
-ms.date: 11/09/2023
+ms.date: 11/14/2023
 ms.topic: how-to
 author: mukeshpo
 ms.author: mukeshpo
@@ -49,7 +49,7 @@ For example, Contoso Coffee has millions of records coming in on a daily basis. 
 
 1. Select **Add a data source**.
 
-1. Select **Azure Data Lake Storage Gen 2 - Delta tables (Preview)**.
+1. Select **Azure Data Lake - Delta tables (Preview)**.
 
    :::image type="content" source="media/delta-lake-new.png" alt-text="Dialog box to enter connection details for Delta Lake.":::
 

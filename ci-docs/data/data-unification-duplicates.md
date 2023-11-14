@@ -1,7 +1,7 @@
 ---
 title: "Remove duplicates before unifying data"
 description: "The second step in the unification process is selecting which record to keep when duplicates are found."
-ms.date: 09/21/2023
+ms.date: 11/13/2023
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -13,7 +13,7 @@ ms.custom: bap-template
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
-The Duplicate records step of unification finds and removes duplicate records for a customer from a source table so that each customer is represented by a single row in each table. Each table is deduplicated separately using rules to identify the records for a given customer.
+The Deduplication rules step of unification finds and removes duplicate records for a customer from a source table so that each customer is represented by a single row in each table. Each table is deduplicated separately using rules to identify the records for a given customer.
 
 Rules are processed in order.  After all rules have been run on all the records in a table, match groups that share a common row are combined into a single match group.
 
@@ -21,7 +21,7 @@ Rules are processed in order.  After all rules have been run on all the records 
 
 A good rule identifies a unique customer. Consider your data. It may be enough to identify customers based on a field such as email. However, if you want to differentiate customers that share an email, you may choose to have a rule with two conditions, matching on Email + FirstName. For more information, see [Deduplication considerations](data-unification-duplicates-considerations.md).
 
-1. On the **Duplicate records** page, select a table and select **Add rule** to define the deduplication rules.
+1. On the **Deduplication rules** page, select a table and select **Add rule** to define the deduplication rules.
 
    > [!TIP]
    > If you enriched tables on the data source level to help improve your unification results, select **Use enriched tables** at the top of the page. For more information, see [Enrichment for data sources](data-sources-enrichment.md).
