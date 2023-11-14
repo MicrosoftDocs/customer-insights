@@ -1,5 +1,5 @@
 ---
-title: "Copilot: target the right customers using query assist"
+title: Copilot - Target the right customers using query assist
 description: Target the right customers using the query assist copilot in Dynamics 365 Customer Insights - Journeys.
 ms.date: 08/23/2023
 ms.topic: article
@@ -11,7 +11,7 @@ search.audienceType:
   - enduser
 ---
 
-# Copilot: target the right customers using query assist
+# Copilot - Target the right customers using query assist
 
 [!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 

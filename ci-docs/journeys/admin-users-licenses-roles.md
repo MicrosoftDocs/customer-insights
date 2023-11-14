@@ -1,7 +1,7 @@
 ---
 title: Manage user accounts, user licenses, and security roles
 description: How to manage user accounts, add licenses to users, and assign security roles in Dynamics 365 Customer Insights - Journeys.
-ms.date: 10/04/2023
+ms.date: 11/07/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -22,6 +22,9 @@ search.audienceType:
 Read this article to learn how to work with user accounts, user licenses, and security roles in Dynamics 365 Customer Insights - Journeys.
 
 ## Create user accounts and assign licenses
+
+> [!WARNING]
+> Creating custom apps doesn't change the license requirements for any entities, tables, operations, or components from other Dynamics 365 applications, regardless of whether the custom apps include Customer Insights - Journeys solutions.
 
 Like most model-driven apps in Dynamics 365 (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Customer Insights - Journeys, and Dynamics 365 Project Service Automation), Customer Insights - Journeys integrates with the user management and licensing features of the Microsoft 365 admin center. To get started, each user who requires access to Customer Insights - Journeys must have a user account on your Microsoft 365 tenant. More information: [Add users individually or in bulk to Microsoft 365](/office365/admin/add-users/add-users)
 
@@ -173,6 +176,8 @@ Form and field level security are concepts shared by all model-driven apps in Dy
 ## Security roles added by Customer Insights - Journeys
 
 The tables in this section summarize the purpose of each role added by Customer Insights - Journeys. They should give you a good idea of which roles to assign each of your users. For details information about precisely which permissions and access levels any single role provides, inspect the permissions tables provided in the **Security roles** window, as described previously in [Inspect and customize security roles](#inspect-roles).
+
+To see the permissions required for each role, see [Permissions for out-of-the-box roles](role-permissions.md)
 
 ### Core Customer Insights - Journeys security roles
 

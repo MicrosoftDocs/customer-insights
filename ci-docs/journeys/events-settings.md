@@ -1,6 +1,6 @@
 ---
-title: Set up event administration options and webinar provider accounts
-description: Set options for event administration and configure connections to your webinar provider accounts in Dynamics 365 Customer Insights - Journeys.
+title: Set up event administration options and webinar provider accounts in outbound marketing
+description: Set options for event administration and configure connections to your webinar provider accounts in outbound marketing.
 ms.date: 08/18/2023
 ms.topic: article
 author: alfergus
@@ -11,11 +11,14 @@ search.audienceType:
   - enduser
 ---
 
-# Set up event administration options and webinar provider accounts
+# Set up event administration options and webinar provider accounts in outbound marketing
 
 [!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 [!INCLUDE [azure-ad-to-microsoft-entra-id](./includes/azure-ad-to-microsoft-entra-id.md)]
+
+> [!IMPORTANT]
+> This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
 
 The **Event management** settings let you set up the connections to your webinar provider accounts and set up a few defaults for event administration. 
 

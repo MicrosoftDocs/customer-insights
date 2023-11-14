@@ -1,6 +1,6 @@
 ---
-title: Self-hosted custom event website
-description: Learn how you can extend event management web application functionality for self-hosted custom event websites in Dynamics 365 Customer Insights - Journeys.
+title: Self-hosted custom event website in outbound marketing
+description: Learn how you can extend event management web application functionality for self-hosted custom event websites in outbound marketing.
 ms.date: 09/16/2020
 ms.topic: how-to
 author: alfergus
@@ -9,11 +9,14 @@ search.audienceType:
   - developer
 ---
 
-# Self-hosted custom event website
+# Self-hosted custom event website in outbound marketing
 
 [!INCLUDE [consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
 
 [!INCLUDE [azure-ad-to-microsoft-entra-id](../includes/azure-ad-to-microsoft-entra-id.md)]
+
+> [!IMPORTANT]
+> This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
 
 Before you start hosting the self-hosted custom event website, complete the actions mentioned in [Prerequisites](event-management-web-application.md) topic.
 

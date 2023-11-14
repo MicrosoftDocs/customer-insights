@@ -1,7 +1,7 @@
 ---
 title: Transition overview
 description: Overview of the transition process from outbound marketing to real-time journeys in Dynamics 365 Customer Insights - Journeys.
-ms.date: 10/12/2023
+ms.date: 11/07/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -40,7 +40,7 @@ Here are some recommendations depending on your situation:
 | Situation                                                                        | Action                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 |----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | I purchased before September 1, 2023 and planned to implement outbound marketing | We strongly recommend using real-time journeys. See [Why should I transition to real-time journeys?](transition-faqs.md#why-should-i-transition-to-real-time-journeys)                                                                                                                                                                                                                                                                                                     |
-| I evaluated the real-time journeys module and determined that I can't use it    | Review the [transition functional areas](transition-walkthrough-functional.md) guide and the other [transition resources](transition-resources.md). After review, if you still have concerns that prevent you from using real-time journeys, create a support ticket with the required details as described in [Creating a support ticket requesting outbound marketing](transition-overview.md#create-a-support-ticket-requesting-outbound-marketing) |
+| I evaluated the real-time journeys module and determined that I can't use it    | Review the [transition functional areas](transition-walkthrough-functional.md) guide and the other [transition resources](transition-resources.md). After review, if you still have concerns that prevent you from using real-time journeys, follow the guidance for [requesting outbound marketing to be added](transition-overview.md#request-an-exception-to-enable-outbound-marketing) |
 
 ## Guidance for existing customers
 
@@ -54,25 +54,15 @@ Here's some recommendation actions for existing customers depending on your need
 | Situation                                                                                                          | Action                                                                                                                                                                                                                                                       |
 |--------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **New org**: I provisioned a new org and don't see outbound marketing                                             | This is expected; outbound marketing is no longer included in new orgs. We strongly recommend using real-time journeys. See [Why should I transition to real-time journeys?](transition-faqs.md#why-should-i-transition-to-real-time-journeys) |
-| **New org**: I'm unable to transition to real-time journeys                                                        | Review the [transition functional areas](transition-walkthrough-functional.md) guide and the other [transition resources](transition-resources.md). We strongly recommend using real-time journeys. After review, if you still have concerns that prevent you from using real-time journeys, you can add outbound marketing back using the **Enable** link available on the **Settings** > **Versions** page. If you don't see the link, create a support ticket with the required details as described in [Creating a support ticket requesting outbound marketing](transition-overview.md#create-a-support-ticket-requesting-outbound-marketing)                                                                                                                                                                                                                                                           |
-| **Existing org**: I updated an existing org that had outbound marketing, but after the update I don't see outbound | Do you need outbound marketing? Review the [transition functional areas](transition-walkthrough-functional.md) guide and the other [transition resources](transition-resources.md). We strongly recommend using real-time journeys. After review, if you still want to enable outbound marketing, use the **Enable** link available on the **Settings** > **Versions** page. If you don't see the link, create a support ticket with the required details as described in [Creating a support ticket requesting outbound marketing](transition-overview.md#create-a-support-ticket-requesting-outbound-marketing)                                                                                                                                                                                                                                                           |
-## Create a support ticket requesting outbound marketing
+| **New org**: I'm unable to transition to real-time journeys                                                        | Review the [transition functional areas](transition-walkthrough-functional.md) guide and the other [transition resources](transition-resources.md). We strongly recommend using real-time journeys. After review, if you still have concerns that prevent you from using real-time journeys, you can add outbound marketing back using the **Enable** link available on the **Settings** > **Versions** page. If you don't see the link, follow the guidance for [requesting outbound marketing to be added](transition-overview.md#request-an-exception-to-enable-outbound-marketing)                                                                                                                                                                                                                                                           |
+| **Existing org**: I updated an existing org that had outbound marketing, but after the update I don't see outbound | Do you need outbound marketing? Review the [transition functional areas](transition-walkthrough-functional.md) guide and the other [transition resources](transition-resources.md). We strongly recommend using real-time journeys. After review, if you still want to enable outbound marketing, use the **Enable** link available on the **Settings** > **Versions** page. If you don't see the link, follow the guidance for [requesting outbound marketing to be added](transition-overview.md#request-an-exception-to-enable-outbound-marketing)                                                                                                                                                                                                                                                           |
+## Request an exception to enable outbound marketing
 
-Do you see the **Enable** link on the **Settings** > **Versions** page? If yes, don't create a ticket. Use that link to provision outbound marketing.
+If you have valid business reasons that require outbound marketing to be enabled in your environment, you can request an exception by filling out [the outbound marketing request form](https://go.microsoft.com/fwlink/?linkid=2251742).
 
-If you create a support ticket, you must include the following information:
-
-- What is the TenantID? (TenantID)
--	What is the OrgID of the org that needs outbound marketing? (OrgID)
--	Is this a new org or an existing org that was updated? (New or existing)
--	Is this org a “solutions only” org? (Yes or no)
--	Is this the only org in this tenant? (Yes or no)
-    -	If no, include the OrgIDs of other orgs. (OrgIDs)
--	Why do you need outbound marketing? Select the reason(s) from the list below and include the requested details.
-    1. There are features in outbound marketing that I can’t live without. (Include a list of the features)
-    1. I'm not ready to transition to real-time journeys yet, I plan to transition later. (Include the planned timeline)
-    1. I have customization that I can't move to real-time journeys. (Include details)
-    1. I've tried tje real-time journeys module and had issues with it. (Include details)
-    1. Other reasons. (Include details)
+Note the following parameters:
+- Don't create support tickets or use other channels for the same requests, you'll be redirected to this form.
+- This form requires an email address. The email address is used to communicate receipt of the request, confirming when the request has been processed, and if needed, ask for additional information.
+- Most requests are processed in about three business days once all needed information is available.
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]

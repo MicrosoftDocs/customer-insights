@@ -1,6 +1,6 @@
 ---
-title: Dynamics 365 Customer Insights - Journeys entity reference
-description: Learn about the installed solutions, entities, and custom actions in Dynamics 365 Customer Insights - Journeys.
+title: Outbound marketing entity reference
+description: Learn about the installed solutions, entities, and custom actions in outbound marketing.
 ms.date: 01/25/2019
 ms.topic: reference
 author: alfergus
@@ -9,7 +9,7 @@ search.audienceType:
   - developer
 ---
 
-# Dynamics 365 Customer Insights - Journeys entity reference
+# Outbound marketing entity reference
 
 [!INCLUDE [consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
 

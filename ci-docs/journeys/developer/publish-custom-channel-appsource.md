@@ -1,6 +1,6 @@
 ---
-title: Publish custom channel on AppSource
-description: Publish your custom channel on Microsoft AppSource where users can download and install it in their Dynamics 365 Customer Insights - Journeys instance.
+title: Publish an outbound marketing custom channel on AppSource
+description: Publish your custom channel on Microsoft AppSource where users can download and install it in their outbound marketing instance.
 ms.date: 04/01/2018
 ms.topic: how-to
 author: alfergus
@@ -9,7 +9,7 @@ search.audienceType:
   - developer
 ---
 
-# Publish custom channel on AppSource
+# Publish an outbound maretking custom channel on AppSource
 
 [!INCLUDE [consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
 

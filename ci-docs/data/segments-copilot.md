@@ -1,7 +1,7 @@
 ---
-title: Use natural language to create segments with Copilot for Customer Insights
-description: Let Copilot in Customer Insights help you in creating segments based on data in your environment.
-ms.date: 09/20/2023
+title: Create segments with Copilot for Customer Insights - Data (preview)
+description: Let Copilot in Customer Insights - Data help you in creating segments based on data in your environment.
+ms.date: 10/11/2023
 ms.reviewer: mhart
 ms.topic: how-to
 author: JimsonChalissery
@@ -9,13 +9,18 @@ ms.author: jimsonc
 ms.custom: bap-template
 ---
 
-# Use natural language to create segments with Copilot for Customer Insights
+# Create segments with Copilot for Customer Insights - Data (preview)
 
 [!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
 Create segments using everyday words in Dynamics 365 Customer Insights - Data without detailed knowledge about the data schema. Improve the AI model and get more accurate answers by providing feedback about prompts and results.
 
 [!INCLUDE [public-preview-note](includes/public-preview-note.md)]
+
+## Prerequisites
+
+- [Enable Copilot features powered by Azure OpenAI](copilot-global-consent.md) setting turned **On**. Default is **On**.
+- [Environment is in a supported geography and uses a supported language.](faqs-segment-creation.md#what-are-the-supported-geographies-and-languages).
 
 ## Create a segment with Copilot
 
@@ -29,12 +34,12 @@ Copilot provides personalized, suggested prompts based on data in your environme
 
 1. Select **Use** to apply the result to a rule.
 
-:::image type="content" source="media/segment-copilot-result.png" alt-text="Screenshot of a segment rule created by Copilot in Customer Insights.":::
+:::image type="content" source="media/segment-copilot-result.png" alt-text="Screenshot of a segment rule created by Copilot in Customer Insights - Data.":::
 
 If the resulting segment contains multiple [relationship paths](relationships.md), it uses the shortest path by default. **Edit** the segment to change the relationship path.  
 
 ## Next steps
 
-- [Responsible AI FAQs for Dynamics 365 Customer Insights - Data](responsible-ai-overview.md)
-- [FAQ for segment creation (preview)](faqs-segment-creation.md)
 - [Create and manage segments](segments.md)
+- [FAQ for segment creation (preview)](faqs-segment-creation.md)
+- [Responsible AI FAQs for Dynamics 365 Customer Insights - Data](responsible-ai-overview.md)

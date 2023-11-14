@@ -1,7 +1,7 @@
 ---
 title: Access and interpret analytics
 description: How to access and interpret Customer Insights - Journeys analytics in Dynamics 365 Customer Insights - Journeys.
-ms.date: 09/26/2023
+ms.date: 11/03/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -70,7 +70,7 @@ Select any journey component to view near real-time operational analytics in the
 > - **Open rate**: the percentage of unique email opens divided by the number of emails delivered.
 > - **Click rate**: the percentage of unique email clicks divided by the number of emails delivered.
 >
-> In the delivery and interaction details, you can now export up to 50,000 records of interaction data and access links to audience profiles that interacted with your email messages. Additionally, timestamps are reported according to the organization's timezone.
+> In the delivery and interaction details, you can now export up to 50,000 records of interaction data, search through data using the profile's email address, and access links to audience profiles that interacted with your email messages. Additionally, timestamps are reported according to the organization's timezone.
 > 
 > While these enhancements initially apply to email analytics, they will be gradually rolled out to journey operational analytics and other channel analytics.
   
@@ -102,7 +102,7 @@ Use the aggregate channel analytics dashboard to measure campaign effectiveness 
 Learn more: [How to use aggregate channel analytics](real-time-marketing-channel-analytics.md).
 
 > [!NOTE]
-> There is no retention policy for Customer Insights - Journeys interactions in aggregate cross-journey analytics and Aggregate channel analytics. Dataverse entities are limited to a two-year retention policy after their initial creation date. Keep in mind that the two-year Dataverse entity retention policy might impact analytics views associated with interaction data from Dataverse entities.
+> There is no data retention policy for Customer Insights - Journeys interactions in aggregate cross-journey analytics and aggregate channel analytics. Dataverse entities are limited to a two-year retention policy after their initial creation date. Keep in mind that the two-year Dataverse entity retention policy might impact analytics views associated with interaction data from Dataverse entities.
 
 ## Marketing effectiveness analytics
 
