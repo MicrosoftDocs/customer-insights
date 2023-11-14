@@ -1,7 +1,7 @@
 ---
 title: Data subject request (DSR) handling
 description: Learn how to view, create, and delete data subject requests in Dynamics 365 Customer Insights - Journeys.
-ms.date: 11/03/2023
+ms.date: 11/13/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -15,7 +15,7 @@ search.audienceType:
 
 [!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
-A data subject request (DSR) is an inquiry from an individual to see the personal data that your organization stores, processes, and transmits. To view, create, or delete DSRs, in your web browser, take the base organization URL and append the following path and query: 
+A data subject request (DSR) is an inquiry from an individual to see or delete the personal data that your organization stores, processes, and transmits. To view, create, or delete DSRs, in your web browser, take the base organization URL and append the following path and query:
 
 ```
 /main.aspx?pagetype=entitylist&etn=msdynmkt_gdprrequest
@@ -45,6 +45,6 @@ The **Data** field is only relevant for **Export** requests. Once the request is
 > [!div class="mx-imgBorder"]
 > ![Screenshot showing DSR export completed](media/dsr-request-export-completed.png "Screenshot showing DSR export completed")
 
-These requests work only on internal data that aren't directly accessible from Dataverse. To completely fulfill the end user's request, don’t forget to delete/export all the associated Dataverse rows, such as contact, lead, account, consent, and previous DSRs from that user, data from customizations, and data from other applications such as Sales and Service.
+These requests work only on internal data that aren't directly accessible from Dataverse. To completely fulfill the end user's request, don’t forget to delete/export all the associated Dataverse rows, such as contact, lead, account, consent, and previous DSRs from that user, data from customizations, or data from other applications such as Sales and Service.
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
