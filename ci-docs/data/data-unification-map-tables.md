@@ -1,5 +1,5 @@
 ---
-title: "Select source fields for data unification"
+title: "Describe customer data for data unification"
 description: "The first step in the unification process is selecting tables, attributes, primary keys, and data types to map data to the unified customer profile."
 ms.date: 11/13/2023
 ms.topic: how-to
@@ -8,7 +8,7 @@ ms.author: sstabbert
 ms.reviewer: v-wendysmith
 ---
 
-# Select source fields for data unification
+# Describe customer data for data unification
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
@@ -16,7 +16,7 @@ The first step in unification is selecting the tables and columns within your da
 
 [!INCLUDE [m3-first-run-note](includes/m3-first-run-note.md)]
 
-## Select tables and fields
+## Select tables and columns
 
 1. Go to **Data** > **Unify**.
 
@@ -62,6 +62,6 @@ For each table, perform the following steps.
 1. Select **Next**.
 
 > [!div class="nextstepaction"]
-> [Next step: Remove duplicates](data-unification-duplicates.md)
+> [Next step: Define deduplication rules](data-unification-duplicates.md)
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

@@ -22,31 +22,31 @@ To review or change any unification settings once a unified profile has been cre
    :::image type="content" source="media/m3_unified.png" alt-text="Screenshot of the Data Unify page after data is unified." lightbox="media/m3_unified.png":::
 
 1. Choose what you want to update:
-   - [Source fields](#edit-source-fields) to add attributes or tables or change attribute types. To remove an attribute, see [Remove a unified field](#remove-a-unified-field). To remove a table, see [Remove a unified table](#remove-a-unified-table).
-   - [Duplicate records](#manage-deduplication-rules) to manage deduplication rules or merge preferences.
-   - [Matching conditions](#manage-match-rules) to update matching rules across two or more tables.
-   - [Unified customer fields](#manage-unified-fields) to combine or exclude fields. You can also group related profiles into clusters.
+   - [Customer data](#edit-source-fields) to add attributes or tables or change attribute types. To remove an attribute, see [Remove a unified field](#remove-a-unified-field). To remove a table, see [Remove a unified table](#remove-a-unified-table).
+   - [Deduplication rules](#manage-deduplication-rules) to manage deduplication rules or merge preferences.
+   - [Matching rules](#manage-match-rules) to update matching rules across two or more tables.
+   - [Unified data view](#manage-unified-fields) to combine or exclude fields. You can also group related profiles into clusters.
 
    > [!TIP]
-   > The **Matching conditions** tile displays only if multiple tables were selected.
+   > The **Matching rules** tile displays only if multiple tables were selected.
 
 1. After making your changes, choose your next option:
 
-   - [Run matching conditions](#run-matching-conditions) to quickly evaluate the quality of your matching conditions (deduplication and match rules) without updating the unified profile. The **Run matching conditions only** option doesn't display for a single table.
-   - [Unify profiles](#run-updates-to-the-unified-profile) to run matching conditions and update the unified profile table without impacting dependencies (such as enrichments, segments, or measures). Dependent processes aren't run, but will be refreshed as [defined in the refresh schedule](schedule-refresh.md).
-   - [Unify profiles and dependencies](#run-updates-to-the-unified-profile) to run matching conditions, update the unified profile table, and update all dependencies (such as enrichments, segments, or measures). All processes are rerun automatically.
+   - [Run matching conditions only](#run-matching-conditions) to quickly evaluate the quality of your deduplication and match rules without updating the unified profile. The **Run matching conditions only** option doesn't display for a single table.
+   - [Unify customer profiles](#run-updates-to-the-unified-profile) to run deduplication and match rules and update the unified profile table without impacting dependencies (such as enrichments, segments, or measures). Dependent processes aren't run, but will be refreshed as [defined in the refresh schedule](schedule-refresh.md).
+   - [Unify customer profiles and dependencies](#run-updates-to-the-unified-profile) to run deduplication and match rules, update the unified profile table, and update all dependencies (such as enrichments, segments, or measures). All processes are rerun automatically.
 
-## Edit source fields
+## Edit customer data
 
-1. Select **Edit** on the **Source fields** tile.
+1. Select **Edit** on the **Customer data** tile.
 
-   :::image type="content" source="media/m3_source_edit.png" alt-text="Screenshot of Source fields page showing number of primary keys, mapped and unmapped fields":::
+   :::image type="content" source="media/m3_source_edit.png" alt-text="Screenshot of Customer data page showing number of primary keys, mapped and unmapped fields":::
 
    The number of mapped and unmapped fields display.
 
-1. To add other attributes or tables, select **Select tables and fields**.
+1. To add other attributes or tables, select **Select tables and columns**.
 
-1. Optionally, you can change the primary key for a table, the attribute types, and toggle **Intelligent mapping** on or off. For more information, see [Select source fields](data-unification-map-tables.md).
+1. Optionally, you can change the primary key for a table or the attribute types. For more information, see [Describe customer data](data-unification-map-tables.md).
 
 1. Select **Next** to make changes to deduplication rules, or select **Save and close** and return to [Update unification settings](#update-unification-settings).
 
@@ -56,7 +56,7 @@ To remove a field that has been unified, the field must be removed from any depe
 
 1. Once all dependencies for the field have been removed, go to **Data** > **Unify**.
 
-1. Select **Edit** on the **Unified customer fields** tile.
+1. Select **Edit** on the **Unified data view** tile.
 
 1. Select all occurrences of the field and then select **Exclude**.
 
@@ -67,17 +67,17 @@ To remove a field that has been unified, the field must be removed from any depe
    > [!TIP]
    > If you see the message "Couldn't save unify. The specified resource cannot be modified or deleted due to downstream dependencies", then the field is still used in a downstream dependency.
 
-1. If the field is used in a rule for duplicate records or matching conditions, perform the following steps. Otherwise, go to the next step.
-   1. Select **Edit** on the **Duplicate records** tile.
+1. If the field is used in a rule for deduplication rules or matching rules, perform the following steps. Otherwise, go to the next step.
+   1. Select **Edit** on the **Deduplication rules** tile.
    1. Remove the field from all rules it is used in, if any, and then select **Next**.
-   1. On the **Matching conditions** page, remove the field from all rules it is used in, if any, and then select **Save and close**.
+   1. On the **Matching rules** page, remove the field from all rules it is used in, if any, and then select **Save and close**.
    1. Select **Unify** > **Unify customer profiles and dependencies**. Wait for unification to complete before going to the next step.
 
-1. Select **Edit** on the **Source fields** tile.
+1. Select **Edit** on the **Customer data** tile.
 
-1. Select **Select tables and fields** and clear the checkbox next to each occurrence of the field.
+1. Select **Select tables and columns** and clear the checkbox next to each occurrence of the field.
 
-   :::image type="content" source="media/m3_remove_attribute2.png" alt-text="Screenshot of Select tables and fields dialog box showing cleared checkboxes":::
+   :::image type="content" source="media/m3_remove_attribute2.png" alt-text="Screenshot of Select tables and columns dialog box showing cleared checkboxes":::
 
 1. Select **Apply**.
 
@@ -91,7 +91,7 @@ To remove a table that has been unified, the table must be removed from any depe
 
 1. Once all dependencies for the table have been removed, go to **Data** > **Unify**.
 
-1. Select **Edit** on the **Unified customer fields** tile.
+1. Select **Edit** on the **Unified data view** tile.
 
 1. Select all fields for the table and then select **Exclude**.
 
@@ -102,21 +102,21 @@ To remove a table that has been unified, the table must be removed from any depe
    > [!TIP]
    > If you see the message "Couldn't save unify. The specified resource cannot be modified or deleted due to downstream dependencies", then the table is still used in a downstream dependency.
 
-1. Select **Edit** on the **Duplicate records** tile.
+1. Select **Edit** on the **Deduplication rules** tile.
 
 1. Remove all rules from the table, if any, and then select **Next**.
 
-1. On the **Matching conditions** page, select the table and then select **Delete**.
+1. On the **Matching rules** page, select the table and then select **Delete**.
 
-   :::image type="content" source="media/m3_remove_table2.png" alt-text="Screenshot of Matching conditions with table selected and Delete button":::
+   :::image type="content" source="media/m3_remove_table2.png" alt-text="Screenshot of Matching rules with table selected and Delete button":::
 
 1. Select **Save and close**.
 
-1. Select **Edit** on the **Source fields** tile.
+1. Select **Edit** on the **Customer data** tile.
 
-1. Select **Select tables and fields** and clear the checkbox next to the table.
+1. Select **Select tables and columns** and clear the checkbox next to the table.
 
-   :::image type="content" source="media/m3_remove_table3.png" alt-text="Screenshot of Select tables and fields dialog box with table checkbox cleared":::
+   :::image type="content" source="media/m3_remove_table3.png" alt-text="Screenshot of Select tables and columns dialog box with table checkbox cleared":::
 
 1. Select **Apply**.
 
@@ -126,9 +126,9 @@ To remove a table that has been unified, the table must be removed from any depe
 
 ## Manage deduplication rules
 
-1. Select **Edit** on the **Duplicate records** tile.
+1. Select **Edit** on the **Deduplication rules** tile.
 
-   :::image type="content" source="media/m3_duplicates_edit.png" alt-text="Screenshot of Duplicate records page showing number of duplicated records" lightbox="media/m3_duplicates_edit.png":::
+   :::image type="content" source="media/m3_duplicates_edit.png" alt-text="Screenshot of Deduplication rules page showing number of duplicated records" lightbox="media/m3_duplicates_edit.png":::
 
    The number of duplicate records found displays under **Duplicates**. The **Records deduplicated** column shows which tables had duplicate records and the percentage of duplicated records.
 
@@ -154,7 +154,7 @@ To remove a table that has been unified, the table must be removed from any depe
 
 You can reconfigure and fine-tune most of the match parameters. You can't add or delete tables. Match rules don't apply to a single table.
 
-1. Select **Edit** on the **Matching conditions** tile.
+1. Select **Edit** on the **Matching rules** tile.
 
    :::image type="content" source="media/m3_match_edit.png" alt-text="Screenshot of the Match rules and conditions page with statistics." lightbox="media/m3_match_edit.png":::
 
@@ -185,9 +185,9 @@ You can reconfigure and fine-tune most of the match parameters. You can't add or
 
 ## Manage unified fields
 
-1. Select **Edit** on the **Unified customer fields** tile.
+1. Select **Edit** on the **Unified data view** tile.
 
-    :::image type="content" source="media/m3_merge_edit.png" alt-text="Screenshot of Unified customer fields":::
+    :::image type="content" source="media/m3_merge_edit.png" alt-text="Screenshot of Unified data view":::
 
 1. Review the combined and excluded fields, and make any changes as needed. Add or edit the CustomerID key or group profiles into clusters. For more information, see [Unify customer fields](data-unification-merge-tables.md).
 
@@ -199,11 +199,11 @@ Run matching conditions runs deduplication and match rules only and updates the 
 
 1. From the **Data** > **Unify** page, select **Run matching conditions only**.
 
-   The **Duplicate records** and **Matching conditions** tiles show **Queued** or **Refreshing** status.
+   The **Deduplication rules** and **Matching rules** tiles show **Queued** or **Refreshing** status.
 
    [!INCLUDE [progress-details-pane-include](includes/progress-details-pane.md)]
 
-1. When the matching process completes, select **Edit** on the **Matching conditions** tile.
+1. When the matching process completes, select **Edit** on the **Matching rules** tile.
 
    :::image type="content" source="media/match-KPIs.png" alt-text="Cropped screenshot of the key metrics on the Match page with numbers and details.":::
 
@@ -216,7 +216,7 @@ Run matching conditions runs deduplication and match rules only and updates the 
 - To run matching conditions and update the unified profile table *without* impacting dependencies (such as customer cards, enrichments, segments, or measures), select **Unify customer profiles**. Dependent processes aren't run, but will be refreshed as [defined in the refresh schedule](schedule-refresh.md).
 - To run matching conditions, update the unified profile, and run all dependencies, select **Unify customer profiles and dependencies**. All processes are rerun automatically.
 
-All tiles except **Source fields** show **Queued** or **Refreshing**.
+All tiles except **Customer data** show **Queued** or **Refreshing**.
 
 [!INCLUDE [progress-details-pane-include](includes/progress-details-pane.md)]
 

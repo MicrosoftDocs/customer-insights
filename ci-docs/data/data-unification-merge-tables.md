@@ -1,7 +1,7 @@
 ---
 title: "Unify customer fields for data unification"
-description: "Merge tables to create unified customer profiles."
-ms.date: 09/21/2023
+description: "Merge columns to create unified customer profiles."
+ms.date: 11/15/2023
 ms.topic: how-to
 author: v-wendysmith
 ms.author: sstabbert
@@ -21,7 +21,7 @@ In this step, you can create stable and unique customer IDs and for individual c
 
 ## Review and update the customer fields
 
-1. Review the list of fields that will be unified under the **Customer fields** tab of the table. Make any changes if applicable.
+1. Review the list of fields that will be unified under the **Customer columns** tab of the table. Make any changes if applicable.
 
    1. For any combined fields, you can:
       - [Edit](#edit-a-merged-field)
@@ -46,7 +46,7 @@ In this step, you can create stable and unique customer IDs and for individual c
 
 ### Edit a merged field
 
-1. Select a merged field and choose **Edit**. The Combine fields pane displays.
+1. Select a merged column and choose **Edit**. The Combine columns pane displays.
 
 1. Specify how to combine or merge the fields from one of three options:
     - **Importance**: Identifies the winner value based on importance rank specified for the participating fields. It's the default merge option. Select **Move up/down** to set the importance ranking.
@@ -64,7 +64,7 @@ In this step, you can create stable and unique customer IDs and for individual c
 
 1. You can add more fields to participate in the merge process.
 
-1. You can rename the merged field.
+1. You can rename the merged column.
 
 1. Select **Done** to apply your changes.
 
@@ -72,7 +72,7 @@ In this step, you can create stable and unique customer IDs and for individual c
 
 Change the display name of merged or separate fields. You can't change the name of the output table.
 
-1. Select the field and choose **Rename**.
+1. Select the column and choose **Rename**.
 
 1. Enter the new display name.
 
@@ -82,7 +82,7 @@ Change the display name of merged or separate fields. You can't change the name 
 
 To separate merged fields, find the attribute in the table. Separated fields show as individual data points on the unified customer profile.
 
-1. Select the merged field and choose **Separate fields**.
+1. Select the merged column and choose **Separate fields**.
 
 1. Confirm the separation.
 
@@ -90,11 +90,11 @@ To separate merged fields, find the attribute in the table. Separated fields sho
 
 Exclude a merged or separate field from the unified customer profile. If the field is used in other processes, such as a segment, remove it from these processes. Then, exclude it from the customer profile.
 
-1. Select a field and choose **Exclude**.
+1. Select a column and choose **Exclude**.
 
 1. Confirm the exclusion.
 
-To see the list of all excluded fields, select **Excluded fields**. If necessary, you can readd the excluded field.
+To see the list of all excluded fields, select **Excluded columns**. If necessary, you can readd the excluded column.
 
 ### Change the order of fields
 
@@ -108,7 +108,7 @@ Some tables contain more details than others. If a table includes the latest dat
 
 Combine separated fields to create a merged attribute.
 
-1. Select **Combine** > **Fields**. The Combine fields pane displays.
+1. Select **Combine** > **Fields**. The Combine columns pane displays.
 
 1. Specify the merge winner policy in the **Combine fields by** dropdown.
 
@@ -143,7 +143,7 @@ Monica Thomson matches across three data sources: Loyalty, Online, and POS. With
 |----------------|----------------------|-----------|---------|-------|-------|
 | Monica Thomson | 100 Main Street      | Suite 100 | Seattle | WA    | 98121 |
 
-#### Create a group of fields
+#### Create a group of fields (preview)
 
 1. Select **Combine** > **Group of fields**.
 
@@ -173,9 +173,9 @@ Monica Thomson matches across three data sources: Loyalty, Online, and POS. With
 
    :::image type="content" source="media/merge-combine-group-example.png" alt-text="Combine group of fields example.":::
 
-1. Select **Done** to apply the changes. The name for the combined group displays on the **Unified customer fields** page, but not in the Customer profile. 
+1. Select **Done** to apply the changes. The name for the combined group displays on the **Unified data view** page, but not in the Customer profile. 
 
-   :::image type="content" source="media/unify-combine-group-example.png" alt-text="Unified customer fields page highlighting the combine group name.":::
+   :::image type="content" source="media/unify-combine-group-example.png" alt-text="Unified data view page highlighting the combine group name.":::
 
 ## Configure customer ID generation
 

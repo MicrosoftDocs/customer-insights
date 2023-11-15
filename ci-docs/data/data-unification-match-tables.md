@@ -1,7 +1,7 @@
 ---
 title: "Match conditions for data unification"
 description: "Match tables to create unified customer profiles."
-ms.date: 09/21/2023
+ms.date: 11/15/2023
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -9,7 +9,7 @@ ms.reviewer: v-wendysmith
 ms.custom: bap-template
 ---
 
-# Match conditions for data unification
+# Define matching rules for data unification
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
@@ -22,9 +22,9 @@ This step in unification defines the match order and rules for cross-table match
 
 ## Include enriched tables (preview)
 
-If you enriched tables on the data source level to help improve your unification results, select them. For more information, see [Enrichment for data sources](data-sources-enrichment.md). If you selected enriched tables on the **Duplicate records** page, you don't need to select them again.
+If you enriched tables on the data source level to help improve your unification results, select them. For more information, see [Enrichment for data sources](data-sources-enrichment.md). If you selected enriched tables on the **Deduplication rules** page, you don't need to select them again.
 
-1. On the **Matching conditions** page, select **Use enriched tables** at the top of the page.
+1. On the **Matching rules** page, select **Use enriched tables** at the top of the page.
 
 1. From the **Use enriched tables** pane, choose one or more enriched tables.
 
@@ -43,7 +43,7 @@ Each match unifies two or more tables into a single, consolidated table. At the 
 > - Choose the table that has several attributes in common with other tables (for example, name, phone number, or email address) as the primary table.
 > - Tables can only match against other tables that are higher in priority. So Table2 can only match against Table1, and Table3 can match against Table2 *or* Table1.  
 
-1. On the **Matching conditions** page, use the move up and down arrows to move the tables in the order you want, or drag and drop them. For example, select **eCommerceContacts** as the primary table and **loyCustomer** as the second table.
+1. On the **Matching rules** page, use the move up and down arrows to move the tables in the order you want, or drag and drop them. For example, select **eCommerceContacts** as the primary table and **loyCustomer** as the second table.
 
 1. To have every record in the table as a unique customer regardless if a match is found, select **Include all records**. Any records in this table that don't match to records in any other table are included in the unified profile. Records that don't have a match are called singletons.
   
@@ -92,7 +92,7 @@ The warning next to a table name means that no match rule is defined for a match
 1. Select **Next**.
 
 > [!div class="nextstepaction"]
-> [Next step: Unify fields](data-unification-merge-tables.md)
+> [Next step: View unified data](data-unification-merge-tables.md)
 
 ### Add rules to a match pair
 
@@ -164,6 +164,6 @@ Specify conditions that override the default match logic. There are four options
    Each template file ingested is its own data source. If records are discovered that need special matching treatment, update the appropriate data source. The update will be used during the next unification process. For example, you identify twins with nearly the same name living at the same address that had been merged as one person. Update the data source to identify the twins as separate, unique records.
 
 > [!div class="nextstepaction"]
-> [Next step: Unify fields](data-unification-merge-tables.md)
+> [Next step: View unified data](data-unification-merge-tables.md)
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

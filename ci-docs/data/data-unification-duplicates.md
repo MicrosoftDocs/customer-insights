@@ -26,14 +26,14 @@ A good rule identifies a unique customer. Consider your data. It may be enough t
    > [!TIP]
    > If you enriched tables on the data source level to help improve your unification results, select **Use enriched tables** at the top of the page. For more information, see [Enrichment for data sources](data-sources-enrichment.md).
 
-   :::image type="content" source="media/m3_duplicates_showmore.png" alt-text="Screenshot of Duplicate records page with table highlighted and Add rule displayed"  lightbox="media/m3_duplicates_showmore.png":::
+   :::image type="content" source="media/m3_duplicates_showmore.png" alt-text="Screenshot of Deduplication rules page with table highlighted and Add rule displayed"  lightbox="media/m3_duplicates_showmore.png":::
 
    1. In the **Add rule** pane, enter the following information:
       - **Select field**: Choose from the list of available fields from the table that you want to check for duplicates. Choose fields that are likely unique for every single customer. For example, an email address, or the combination of name, city, and phone number.
       - **Normalize**: Select normalization options for the attribute. Normalization only impacts the matching step, and doesn't change the data.
         - **Numerals**: Converts many Unicode symbols that represent numbers to simple numbers.
         - **Symbols**: Removes many common symbols such as !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~. For example, *Head&Shoulder* becomes *HeadShoulder*.
-        - **Text to lower case: Converts all character to lower case**. "ALL CAPS and Title Case" become "all caps and title case".
+        - **Text to lower case: Converts all character to lower case**. "ALL CAPS and Title Case" become "all caps and title case."
         - **Type (Phone, Name, Address, Organization)**: Standardizes names, titles, phone numbers, addresses, etc.
         - **Unicode to ASCII**: Converts Unicode characters to their ASCII equivalent. For example, the accented ề converts to the e character.
         - **Whitespace**: Removes all spaces. *Hello   World* becomes *HelloWorld*.
@@ -71,9 +71,9 @@ A good rule identifies a unique customer. Consider your data. It may be enough t
 1. After defining the deduplication rules and merge preferences, select **Next**.
   
 > [!div class="nextstepaction"]
-> [Next step for a single table: Unify fields](data-unification-merge-tables.md)
+> [Next step for a single table: View unified data](data-unification-merge-tables.md)
 
 > [!div class="nextstepaction"]
-> [Next step for multiple tables: Matching conditions](data-unification-match-tables.md)
+> [Next step for multiple tables: Define matching rules](data-unification-match-tables.md)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

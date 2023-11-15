@@ -1,7 +1,7 @@
 ---
 title: "Data unification overview"
 description: "Learn how to unify your data to create a single master dataset of customer profiles."
-ms.date: 09/01/2023
+ms.date: 11/15/2023
 ms.reviewer: v-wendysmith
 ms.topic: overview
 author: Scott-Stabbert
@@ -21,13 +21,13 @@ Data can be unified on a single table or multiple tables. Tables were previously
 
 The unification process maps customer data from your data sources, removes duplicates, matches the data across tables, and creates a unified profile. Unification is performed in the following order:
 
-1. [Source fields](data-unification-map-tables.md) (previously called Map): In the source fields step, select tables and fields to include in the unify process. Map fields to a common type that describes the purpose of the field.
+1. [Customer data](data-unification-map-tables.md) (previously called Map): In the Customer data step, select tables and columns to include in the unify process. Map fields to a common type that describes the purpose of the field.
 
-1. [Duplicate records](data-unification-duplicates.md) (previously part of Match): In the duplicate records step, optionally define rules to remove duplicate customer records from within each table.
+1. [Deduplication rules](data-unification-duplicates.md) (previously part of Match): In the Deduplication rules step, optionally define rules to remove duplicate customer records from within each table.
 
-1. [Matching conditions](data-unification-match-tables.md) (previously called Match): In the matching conditions step, define rules that match customer records between tables. When a customer is found in two or more tables, a single consolidated record is created with all columns and data from each table.
+1. [Matching rules](data-unification-match-tables.md) (previously called Match): In the matching rules step, define rules that match customer records between tables. When a customer is found in two or more tables, a single consolidated record is created with all columns and data from each table.
 
-1. [Unified customer fields](data-unification-merge-tables.md) (previously called Merge): In the unified customer fields step, determine which source fields should be included, excluded, or merged into a unified customer profile.  
+1. [Unified data view](data-unification-merge-tables.md) (previously called Merge): In the unified data view step, determine which customer columns should be included, excluded, or merged into a unified customer profile.  
 
 1. [Review](data-unification-review.md) and create the unified profile.
 

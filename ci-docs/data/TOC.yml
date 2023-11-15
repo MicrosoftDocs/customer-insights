@@ -68,7 +68,7 @@
   items:
     - name: Data unification overview
       href: data-unification.md
-    - name: Select source fields
+    - name: Describe customer data
       href: data-unification-map-tables.md
     - name: Remove duplicates in each table
       href: data-unification-duplicates.md
