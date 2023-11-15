@@ -1,7 +1,7 @@
 ---
 title: Manage environments
 description: Learn how to to manage environments as an admin.
-ms.date: 10/18/2023
+ms.date: 11/15/2023
 ms.topic: how-to
 ms.reviewer: mhart
 author: kishorem-ms
@@ -51,7 +51,7 @@ The following configuration settings are copied:
 - Role assignments
 
 > [!CAUTION]
-> If you copy to a Dataverse environment, all artifacts related to Customer Insights - Data from existing installations are removed.
+> Don't use the [Copy an environment operation](/power-platform/admin/copy-environment#copy-an-environment-1) in Power Platform admin center if you have Customer Insights - Data installed in the target environment, because that operation removes all artifacts from the existing installation. You can't recover any deleted data.
 
 ### Set up a copied environment
 
@@ -126,6 +126,8 @@ We recommend to [use the **Uninstall** option Power Platform admin center](../jo
 1. Choose **Delete**.
 
 1. To confirm the deletion, enter the environment name and select **Delete**.
+
+After deleting the environment, you can reinstall a new Customer Insights - Data environment on the same Microsoft Dataverse environment. Removing dependencies as isn't required to reinstall.
 
 ## Remove Customer Insights - Data dependencies from a Dataverse environment
 
