@@ -38,7 +38,7 @@ Entities that include [go-live functionality](go-live.md) provide a **Status rea
 ## Create a custom app that includes Customer Insights - Journeys solutions
 
 > [!WARNING]
-> Creating custom apps doesn't change the license requirements for any entities, tables, operations, or components from other Dynamics 365 applications, regardless of whether the custom apps include Customer Insights - Journeys solutions.
+> To use entities, tables, operations, or components associated with a specific app like Sales or Service, you must be licensed for those apps. The license requirement applies regardless of whether you create a custom app to access the data.
 
 Customizers and developers can create custom app modules that include any number of existing solutions, plus other custom elements, as needed. You can include 
 Dynamics 365 Customer Insights - Journeys solutions in custom apps such as these, but the *Marketing email test send* entity won't be included automatically when you add the Marketing solution. As a result, your custom app won't support test sends of marketing emails by default. If you'd like to include this feature in your custom app, then you must add the *Marketing email test send* entity manually to your app after you add the Marketing solution.

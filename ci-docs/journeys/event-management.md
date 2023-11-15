@@ -42,7 +42,8 @@ Customer Insights - Journeys contains a subset of outbound event management feat
 |     Feature     |     Outbound marketing    |     Customer Insights - Journeys    |
 |---|---|---|
 |     Single session event    |     [Yes](set-up-event-outbound.md)    |     [Yes](set-up-event.md)    |
-|     Multi-session event          |     [Yes](set-up-event-outbound.md#manage-event-sessions-and-speakers)    |     Planned    |
+|     Multi-session event          |     [Yes](set-up-event-outbound.md#manage-event-sessions-and-speakers)    |     Yes    |
+|     Session-level registration          |     [Yes](set-up-event-outbound.md#manage-event-sessions-and-speakers)    |     Planned    |
 |     Recurring event    |     [Yes](event-recurring-outbound.md)    |     Planned    |
 |     Event level templates    |     [Yes](event-templates-outbound.md)    |     Planned    |
 |     Sessions, session tracks, speaker management    |     [Yes](set-up-event-outbound.md)    |     [Yes](set-up-event.md)    |

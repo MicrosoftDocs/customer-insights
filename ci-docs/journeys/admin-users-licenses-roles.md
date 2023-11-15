@@ -1,7 +1,7 @@
 ---
 title: Manage user accounts, user licenses, and security roles
 description: How to manage user accounts, add licenses to users, and assign security roles in Dynamics 365 Customer Insights - Journeys.
-ms.date: 11/07/2023
+ms.date: 11/14/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -24,7 +24,7 @@ Read this article to learn how to work with user accounts, user licenses, and se
 ## Create user accounts and assign licenses
 
 > [!WARNING]
-> Creating custom apps doesn't change the license requirements for any entities, tables, operations, or components from other Dynamics 365 applications, regardless of whether the custom apps include Customer Insights - Journeys solutions.
+> To use entities, tables, operations, or components associated with a specific app like Sales or Service, you must be licensed for those apps. The license requirement applies regardless of whether you create a custom app to access the data.
 
 Like most model-driven apps in Dynamics 365 (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Customer Insights - Journeys, and Dynamics 365 Project Service Automation), Customer Insights - Journeys integrates with the user management and licensing features of the Microsoft 365 admin center. To get started, each user who requires access to Customer Insights - Journeys must have a user account on your Microsoft 365 tenant. More information: [Add users individually or in bulk to Microsoft 365](/office365/admin/add-users/add-users)
 
@@ -45,6 +45,9 @@ For Microsoft 365 users that don't have a Dynamics 365 license, you can "purchas
 
 > [!IMPORTANT]
 > If you have a [self-service Customer Insights - Journeys license](direct-purchase.md), your tenant admin must assign users to your license before you can assign them roles. Contact your tenant admin and have them add users to your license.
+
+> [!WARNING]
+> The free Customer Insights (formerly Marketing) user license is intended to only allow user access to the Customer Insights - Journeys and Customer Insights - Data applications. It's not intended to allow unlimited user access to custom applications for Sales, Service, or other Dynamics 365 application scenarios.
 
 To purchase and assign a free Customer Insights - Journeys user license:
 
