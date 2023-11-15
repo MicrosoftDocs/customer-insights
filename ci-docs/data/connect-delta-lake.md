@@ -49,9 +49,9 @@ For example, Contoso Coffee has millions of records coming in on a daily basis. 
 
 1. Select **Add a data source**.
 
-1. Select **Azure Data Lake Storage Gen 2 - Delta tables (Preview)**.
+1. Select **Azure Data Lake - Delta tables (Preview)**.
 
-   :::image type="content" source="media/delta-lake-new.png" alt-text="Dialog box to enter connection details for Delta Lake.":::
+   :::image type="content" source="media/delta-lake-new.svg" alt-text="Dialog box to enter connection details for Delta Lake.":::
 
 1. Enter a **Data source name** and an optional **Description**. The name is referenced in downstream processes and it's not possible to change it after creating the data source.
 
