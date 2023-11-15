@@ -1,7 +1,7 @@
 ---
 title: Qualify the best leads
 description: Learn how to qualify the best leads in Dynamics 365 Customer Insights - Journeys.
-ms.date: 10/30/2023
+ms.date: 11/15/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
