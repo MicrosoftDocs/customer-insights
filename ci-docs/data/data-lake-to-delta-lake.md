@@ -1,5 +1,5 @@
 ---
-title: "Convert a Data Lake data source to a Delta Lake data source"
+title: "Convert a Data Lake data source to a Delta Lake data source (preview)"
 description: "Convert a Data Lake data source to a Delta Lake data source in Customer Insights - Data."
 ms.date: 11/15/2023
 ms.topic: how-to
@@ -9,7 +9,7 @@ ms.reviewer: v-wendysmith
 ms.custom: bap-template
 ---
 
-# Convert a Data Lake data source to a Delta Lake data source
+# Convert a Data Lake data source to a Delta Lake data source (preview)
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
@@ -25,6 +25,8 @@ Key reasons to connect to data stored in Delta format:
 - Better manage large data sources that change frequently
 - Have direct integration with stored data without the need for intermediate staging data copies in other formats or more transforms
 - Minimize the time to prepare data for unification and insights
+
+[!INCLUDE [public-preview-note](./includes/public-preview-note.md)]
 
 ## Prerequisites
 
@@ -49,6 +51,6 @@ Key reasons to connect to data stored in Delta format:
 
    [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
 
-1. We recommend you continue to stream data to the Data Lake Storage location thruogh your pipeline and maintain the manifests and schemas until you determine the update was successful and everything is working as expected.
+1. We recommend you continue to stream data to the Data Lake Storage location through your pipeline and maintain the manifests and schemas until you determine the update was successful and everything is working as expected.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
