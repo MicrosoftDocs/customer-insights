@@ -1,5 +1,5 @@
 ---
-title: "Match conditions for data unification"
+title: "Matching rules for data unification"
 description: "Match tables to create unified customer profiles."
 ms.date: 11/15/2023
 ms.topic: how-to

@@ -1,7 +1,7 @@
 ---
 title: "Update customer, account, or contact unification settings"
 description: "Update duplicate rules, match rules, or unified fields in the customer or account unification settings."
-ms.date: 09/01/2023
+ms.date: 11/16/2023
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -22,7 +22,7 @@ To review or change any unification settings once a unified profile has been cre
    :::image type="content" source="media/m3_unified.png" alt-text="Screenshot of the Data Unify page after data is unified." lightbox="media/m3_unified.png":::
 
 1. Choose what you want to update:
-   - [Customer data](#edit-source-fields) to add attributes or tables or change attribute types. To remove an attribute, see [Remove a unified field](#remove-a-unified-field). To remove a table, see [Remove a unified table](#remove-a-unified-table).
+   - [Customer data](#edit-customer-data) to add attributes or tables or change attribute types. To remove an attribute, see [Remove a unified field](#remove-a-unified-field). To remove a table, see [Remove a unified table](#remove-a-unified-table).
    - [Deduplication rules](#manage-deduplication-rules) to manage deduplication rules or merge preferences.
    - [Matching rules](#manage-match-rules) to update matching rules across two or more tables.
    - [Unified data view](#manage-unified-fields) to combine or exclude fields. You can also group related profiles into clusters.
