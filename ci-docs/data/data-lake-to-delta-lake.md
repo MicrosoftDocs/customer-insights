@@ -44,6 +44,8 @@ Key reasons to connect to data stored in Delta format:
 
 1. Select the Azure Data Lake data source and then select **Update to Delta Lake**.
 
+   :::image type="content" source="media/delta-lake-convert.png" alt-text="Dialog box to enter connection details for Delta Lake.":::
+
    > [!TIP]
    > You can also select **Begin update** from the **Add tables** page if you're editing the Data Lake data source.
 
