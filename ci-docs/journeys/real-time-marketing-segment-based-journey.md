@@ -1,7 +1,7 @@
 ---
 title: Create a segment-based journey 
 description: Learn how to create a segment-based journey in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/23/2023
+ms.date: 11/16/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -31,18 +31,28 @@ Create a segment of your *Most valuable customers*. Segment-based journeys [work
 
 ### Create email and text messages
 
-- **Product announcement email**: This will be the initial email announcement that is sent to your *most valuable customers*. This email must contain a link to the new product.
-- **Product launched text message**: This will be a follow-up text message that is sent after the product is launched. This follow-up message will be sent only to customers who clicked the link in the first email.
+- **Product announcement email**: This is the initial email announcement that is sent to your *most valuable customers*. This email must contain a link to the new product.
+- **Product launched text message**: This is a follow-up text message that is sent after the product is launched. This follow-up message is sent only to customers who clicked the link in the first email.
 
 You can build the journey while the content is in the **Draft** state. In order to publish and go live with the journey, the content must be in the **Ready to send** state.
 
 ## Set the journey start
 
-Customers start a segment-based journey when they qualify to be part of a segment. You can set the following properties for starting the journey:
+> [!div class="mx-imgBorder"]
+>![Create a segment-based journey.](media/real-time-marketing-segment-journey.png "Create a segment-based journey")
 
-- **Audience**: This is the *Most valuable customers* segment.
-- **Frequency**: Select *one-time journey*, since this announcement will only be sent once.
-- **Start date and time**: Specify the start date and time when you want to send the announcement. Everyone who is part of the *most valuable customers* segment at the start date and time will enter the journey at that time.
+To create a segment-based journey, go to **Engagement** > **Journeys** and select **+New journey** in the top toolbar. A window opens allowing you to use [Copilot to create a journey](real-time-marketing-use-copilot-create-journey.md). To create a segment-based journey manually, select the **Skip and create from blank** button.
+
+On the "Create a new journey" screen:
+
+- Create name for the journey
+- Select **Segment-based** for the journey type. Customers start a segment-based journey when they qualify to be part of a segment.
+- Select a segment
+- **Frequency**: You can choose from three frequency settings for the journey: one-time, ongoing, or repeated.
+    - **One-time**: At the journey start, the journey reads the segment. Changes made to the segment after the journey start *aren't* reflected in the journey
+    - **Ongoing**: At the journey start, the journey reads the segment. The journey listens for changes in the segment membership. Newly added segment members are processed in the journey at varying times depending on the complexity of the segment.
+    - **Repeated**: At the journey start, the journey reads the segment. The segment is read again each time the journey restarts. For example, if a journey repeats every day, segment members added after the journey starts will be processed in the journey the next day.
+- **Start date and time**: Specify the start date and time when you want to send the announcement. If you want, you can specify the time zone for the journey.
 
 ## Add the announcement messages
 
@@ -55,7 +65,7 @@ Use the plus sign (**+**) on the journey canvas to add the individual steps in y
 
 ## Publish the journey
 
-After adding all the steps to the journey canvas, the journey is ready to go live and message real customers. Before publishing the journey, make sure all related content (email, text messages, and push notifications) is in the **Ready to send** state. The journey cannot be modified after it is published, so it's a good idea to verify that all the steps in the journey are exactly how you want them before publishing.
+After adding all the steps to the journey canvas, the journey is ready to go live and message real customers. Before publishing the journey, make sure all related content (email, text messages, and push notifications) is in the **Ready to send** state. The journey can't be modified after it's published, so it's a good idea to verify that all the steps in the journey are exactly how you want them before publishing.
 
 Once the journey is published and live, you can look at the journey [analytics page](real-time-marketing-analytics.md) to understand how it's performing.
 
