@@ -210,14 +210,14 @@
       items:
       - name: Segmentation overview
         href: real-time-marketing-segments.md
-      - name: Build segments in Customer Insights - Journeys
+      - name: Build segments
         href: real-time-marketing-build-segments.md
       - name: Copilot - Target the right customers using query assist
         href: real-time-marketing-natural-language-segments.md
-      - name: Use Customer Insights - Data profiles and segments
-        href: real-time-marketing-ci-profile.md
       - name: Create a segment-based journey
         href: real-time-marketing-segment-based-journey.md
+      - name: Use Customer Insights - Data profiles and segments
+        href: real-time-marketing-ci-profile.md
       - name: Improve targeting with the redesigned segment builder
         href: real-time-marketing-redesigned-segment-builder.md
       - name: Create a static snapshot of a segment
