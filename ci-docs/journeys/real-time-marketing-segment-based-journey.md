@@ -48,11 +48,11 @@ On the "Create a new journey" screen:
 - Create name for the journey
 - Select **Segment-based** for the journey type. Customers start a segment-based journey when they qualify to be part of a segment.
 - Select a segment
-- **Frequency**: You can choose from three frequency settings for the journey: one-time, ongoing, or repeated.
-    - **One-time**: At the journey start, the journey reads the segment. Changes made to the segment after the journey start *aren't* reflected in the journey
-    - **Ongoing**: At the journey start, the journey reads the segment. The journey listens for changes in the segment membership. Newly added segment members are processed in the journey at varying times depending on the complexity of the segment.
-    - **Repeated**: At the journey start, the journey reads the segment. The segment is read again each time the journey restarts. For example, if a journey repeats every day, segment members added after the journey starts will be processed in the journey the next day.
-- **Start date and time**: Specify the start date and time when you want to send the announcement. If you want, you can specify the time zone for the journey.
+- Choose the **frequency** at which your journey should run:
+    - A **one-time** journey with a **static** audience runs exactly once.
+    - A **one-time** journey where **newly added members can start at any time** runs right away for anyone currently in the segment and runs again as members are added to the segment. Each person only goes through the journey once, even if they're removed and re-added to the segment later.
+    - A **repeating** journey runs on a schedule that you define. The journey only runs at those times and anyone added to segments in between those times only participates in the journey the next time it's scheduled to run.
+- Set the **start date and time**: Specify the start date and time when you want to send the announcement. If you want, you can specify the time zone for the journey.
 
 ## Add the announcement messages
 
@@ -60,7 +60,7 @@ Use the plus sign (**+**) on the journey canvas to add the individual steps in y
 
 1. **Send an email**: Because the first step of the journey is to send the product announcement, select the *Product announcement email*. For the **Send to** field, select the attribute that contains the email address you want to send the email to.
 1. **Add an if/then branch**: Set the **Branch off this** property to the previous *Product announcement email*. You want to **Wait for** the *Email link clicked* event. For **Which link**, select the link to view the product details. Finally, set the time limit to *1 day* to indicate that customers have up to one day after receiving the email to click the product link.
-1. **Add a wait**: If customers click the view product link within one day, they'll proceed down the **Yes** branch. Under the yes branch, add a Wait and select *Until a specific date and time*. Here, you can specify the exact date and time that the product will launch. This is helpful if, say, the product launches a few days after your email announcement. Customers will wait on this step until the specific date and time. If the date and time has already passed, customers will immediately proceed to the next step.  
+1. **Add a wait**: If customers click the view product link within one day, they'll proceed down the **Yes** branch. Under the yes branch, add a Wait and select *Until a specific date and time*. Here, you can specify the exact date and time that the product will launch. This is helpful if, say, the product launches a few days after your email announcement. Customers wait on this step until the specific date and time. If the date and time has already passed, customers will immediately proceed to the next step.  
 1. **Send a text message**: After waiting for the product launch, you can send the *Product launched text message*. For the **Send to** field, select the attribute that contains the phone number you want to send the text message to.
 
 ## Publish the journey
