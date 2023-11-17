@@ -1,7 +1,7 @@
 ---
 title: Real-time journeys transition FAQs
 description: Answers to frequently asked questions about transitioning to real-time journeys in Customer Insights - Journeys.
-ms.date: 11/09/2023
+ms.date: 11/16/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -185,5 +185,8 @@ The new scale of 100,000,000 contacts and 300,000,000 monthly interactions can o
 There's a contact threshold of 10,000,000 contacts purchased that unlocks the new scale. Existing customers that need to upgrade or new customers must meet the contact threshold to unlock the new scale and receive the increased throughput.
 
 To unlock the new scale, reach out to your Microsoft sales representatives with your requirements. The end-to-end process to upgrade to the new scale will be completed within two weeks.
+
+> [!TIP]
+> If you have questions or comments, visit the [Outbound to real-time transition community forum](https://community.dynamics.com/forums/thread/?partialUrl=Outbound-to-Real-Time-Transition)
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
