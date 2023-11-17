@@ -49,7 +49,7 @@ On the "Create a new journey" screen:
 - Select **Segment-based** for the journey type. Customers start a segment-based journey when they qualify to be part of a segment.
 - Select a segment
 - **Frequency**: You can choose from three frequency settings for the journey: one-time, ongoing, or repeated.
-    - **One-time**: At the journey start, the journey reads the segment. Changes made to the segment after the journey start aren't* reflected in the journey
+    - **One-time**: At the journey start, the journey reads the segment. Changes made to the segment after the journey start *aren't* reflected in the journey
     - **Ongoing**: At the journey start, the journey reads the segment. The journey listens for changes in the segment membership. Newly added segment members are processed in the journey at varying times depending on the complexity of the segment.
     - **Repeated**: At the journey start, the journey reads the segment. The segment is read again each time the journey restarts. For example, if a journey repeats every day, segment members added after the journey starts will be processed in the journey the next day.
 - **Start date and time**: Specify the start date and time when you want to send the announcement. If you want, you can specify the time zone for the journey.
