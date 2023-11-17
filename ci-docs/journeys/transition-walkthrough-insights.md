@@ -1,7 +1,7 @@
 ---
 title: Transition insights and reports
 description: Learn how to transition insights and reporting capabilities from outbound marketing to real-time journeys in Dynamics 365 Customer Insights - Journeys.
-ms.date: 10/04/2023
+ms.date: 11/16/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -30,5 +30,15 @@ Sometimes it's required to consume marketing interaction data outside of the in-
 For custom reporting in real-time journeys, there will soon be an option to use Microsoft Fabric as an export destination. This feature is currently in preview. With this capability, you have even more options to consume data with additional data sources in your own reports.
 
 While the data models are the same between outbound marketing and real-time journeys, existing custom reports and pipelines need to be reconfigured to use the new data sources in Microsoft Fabric.
+
+## Relevant upcoming features
+
+The features listed below may be of interest as you transition from outbound marketing to real-time journeys. These features provide parity, equivalent, or better functionality than what was available in outbound marketing.
+
+- **Custom dashboards**: Effortlessly create custom Power BI reports tailored to your business needs by leveraging Microsoft Fabric capabilities. Learn more: [Build custom reports using Microsoft Fabric integration](/dynamics365/release-plan/2023wave2/marketing/dynamics365-marketing/effortlessly-build-custom-reports-tailored-business-needs-using-fabric-integration)
+- **Bot protection**: Advanced bot protection empowers your business to thrive by safeguarding your business processes. Improve your business decisions with the confidence of knowing that the data you collect is accurate amd represents real human interactions. Learn more: [Improve reliability of insights with advanced bot protection](/dynamics365/release-plan/2023wave2/marketing/dynamics365-marketing/improve-reliability-insights-advanced-bot-protection)
+
+> [!TIP]
+> If you have questions or comments, visit the [Outbound to real-time transition community forum](https://community.dynamics.com/forums/thread/?partialUrl=Outbound-to-Real-Time-Transition)
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
