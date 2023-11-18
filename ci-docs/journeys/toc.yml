@@ -40,9 +40,9 @@
     href: transition-overview.md
   - name: Transition resources
     href: transition-resources.md
-  - name: Feature area guidance
+  - name: Transition guidance
     items:
-    - name: Functional areas overview
+    - name: Overview
       href: transition-walkthrough-functional.md
     - name: Setup changes in real-time journeys
       href: transition-walkthrough-setup.md
