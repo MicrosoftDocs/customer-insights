@@ -1,7 +1,7 @@
 ---
 title: "Describe customer data for data unification"
-description: "The first step in the unification process is selecting tables, attributes, primary keys, and data types to map data to the unified customer profile."
-ms.date: 11/13/2023
+description: "The first step in the unification process is selecting tables, columns, primary keys, and data types to map data to the unified customer profile."
+ms.date: 11/20/2023
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -12,7 +12,7 @@ ms.reviewer: v-wendysmith
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
-The first step in unification is selecting the tables and columns within your datasets that you want to unify. Select tables that contain customer-related details such as name, address, phone number, and email. You can select one or more tables.
+The first step in unification is selecting the tables and columns within your datasets that you want to unify and map fields to a descriptive type. Select tables that contain customer-related details such as name, address, phone number, and email. You can select one or more tables.
 
 [!INCLUDE [m3-first-run-note](includes/m3-first-run-note.md)]
 
@@ -28,7 +28,7 @@ The first step in unification is selecting the tables and columns within your da
 
 1. Select at least one table.
 
-1. For each selected table, identify the columns you want to use to match customer records and fields to include in the unified profile. These columns are called *Attributes*. You can select the required attributes individually from a table or include all attributes from a table by selecting the checkbox on the table level. You can search on keywords across all attributes and tables to select the required attributes you want to map.
+1. For each selected table, identify the columns you want to use to match customer records and fields to include in the unified profile. You can select the required fields individually from a table or include all fields from a table by selecting the checkbox on the table level. You can search on keywords across all attributes and tables to select the required attributes you want to map.
 
    :::image type="content" source="media/m3_select_tables.png" alt-text="Screenshot of selected tables and columns.":::
 
