@@ -1,7 +1,7 @@
 ---
 title: Transition overview
 description: Overview of the transition process from outbound marketing to real-time journeys in Dynamics 365 Customer Insights - Journeys.
-ms.date: 11/07/2023
+ms.date: 11/16/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -64,5 +64,8 @@ Note the following parameters:
 - Don't create support tickets or use other channels for the same requests, you'll be redirected to this form.
 - This form requires an email address. The email address is used to communicate receipt of the request, confirming when the request has been processed, and if needed, ask for additional information.
 - Most requests are processed in about three business days once all needed information is available.
+
+> [!TIP]
+> If you have questions or comments, visit the [Outbound to real-time transition community forum](https://community.dynamics.com/forums/thread/?partialUrl=Outbound-to-Real-Time-Transition)
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]

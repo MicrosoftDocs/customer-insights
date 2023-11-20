@@ -40,9 +40,9 @@
     href: transition-overview.md
   - name: Transition resources
     href: transition-resources.md
-  - name: Feature area guidance
+  - name: Transition guidance
     items:
-    - name: Functional areas overview
+    - name: Overview
       href: transition-walkthrough-functional.md
     - name: Setup changes in real-time journeys
       href: transition-walkthrough-setup.md
@@ -210,14 +210,14 @@
       items:
       - name: Segmentation overview
         href: real-time-marketing-segments.md
-      - name: Build segments in Customer Insights - Journeys
+      - name: Build segments
         href: real-time-marketing-build-segments.md
       - name: Copilot - Target the right customers using query assist
         href: real-time-marketing-natural-language-segments.md
-      - name: Use Customer Insights - Data profiles and segments
-        href: real-time-marketing-ci-profile.md
       - name: Create a segment-based journey
         href: real-time-marketing-segment-based-journey.md
+      - name: Use Customer Insights - Data profiles and segments
+        href: real-time-marketing-ci-profile.md
       - name: Improve targeting with the redesigned segment builder
         href: real-time-marketing-redesigned-segment-builder.md
       - name: Create a static snapshot of a segment
@@ -308,6 +308,8 @@
       href: real-time-marketing-troubleshooting-forms.md
   - name: Lead generation and management
     items:
+    - name: Qualify the best leads
+      href: real-time-marketing-qualify-leads.md
     - name: Create sales activities from lead signals
       href: real-time-marketing-optimize-lead-management.md
     - name: Create a scoring model
