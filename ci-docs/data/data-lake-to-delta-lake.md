@@ -1,7 +1,7 @@
 ---
 title: "Convert a Data Lake data source to a Delta Lake data source (preview)"
 description: "Convert a Data Lake data source to a Delta Lake data source in Customer Insights - Data."
-ms.date: 11/15/2023
+ms.date: 11/20/2023
 ms.topic: how-to
 author: mukeshpo
 ms.author: mukeshpo
@@ -14,6 +14,8 @@ ms.custom: bap-template
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
 [!INCLUDE [public-preview-banner](./includes/public-preview-banner.md)]
+
+<!--- When remove preview, remove preview note from data-sources-manage.md --->
 
 Take an existing Azure Data Lake data source in Customers Insights - Data and convert it to an Azure Data Lake with Delta tables (preview) data source.
 
@@ -36,7 +38,11 @@ Key reasons to connect to data stored in Delta format:
 
 - The user that converts the data source needs at least Storage Blob Data Reader permissions on the Azure Data Lake Storage account.
 
-- The Delta tables must be in a separate folder in the storage container and can't be in the container root directory. The Delta tables must correspond to the tables in the existing Data Lake data source.
+- The Delta tables must be in a separate folder in the storage container and can't be in the container root directory. For example, c:\MyDeltaData\MyDeltaTable\_delta_log.
+
+- The Delta tables must correspond to the tables in the existing Data Lake data source and be in the same storage container. For example:
+
+   :::image type="content" source="media/data-to-delta-file-dir.png" alt-text="Example directory structure to support Data update to Delta.":::
 
 ## Update a Data Lake data source to Delta Lake
 
@@ -49,10 +55,12 @@ Key reasons to connect to data stored in Delta format:
    > [!TIP]
    > You can also select **Begin update** from the **Add tables** page if you're editing the Data Lake data source.
 
-1. Navigate to the folder that contains the data in Delta format and select it. Then, select **Update data source**. The **Data sources** page opens showing the new data source in **Refreshing** status.
+1. Select **Browse** and navigate to the folder that contains the data in Delta format and select it. Then, select **Update data source**. The **Data sources** page opens showing the new data source in **Refreshing** status.
 
+   > [!IMPORTANT]
+   > Don't stop the refreshing process as it could negatively impact updating the data source.
    [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
 
-1. We recommend you continue to stream data to the Data Lake Storage location through your pipeline and maintain the manifests and schemas until you determine the update was successful and everything is working as expected.
+1. We recommend you continue to stream your data to the Data Lake Storage location through your existing pipeline and maintain the manifests and schemas until you determine the update was successful and everything is working as expected.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
