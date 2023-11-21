@@ -1,7 +1,7 @@
 ---
 title: "Connect data stored in Delta Lake format from your Azure Data Lake Storage"
 description: "Work with data stored in Delta Lake format from Azure Data Lake Storage."
-ms.date: 11/09/2023
+ms.date: 11/16/2023
 ms.topic: how-to
 author: mukeshpo
 ms.author: mukeshpo
@@ -9,7 +9,7 @@ ms.reviewer: v-wendysmith
 ms.custom: bap-template
 ---
 
-# Connect to data stored in Delta format from your Azure Data Lake Storage (preview)
+# Connect to data in Azure Data Lake Storage - Delta Lake Storage (preview)
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
@@ -49,7 +49,7 @@ For example, Contoso Coffee has millions of records coming in on a daily basis. 
 
 1. Select **Add a data source**.
 
-1. Select **Azure Data Lake Storage Gen 2 - Delta tables (Preview)**.
+1. Select **Azure Data Lake - Delta tables (Preview)**.
 
    :::image type="content" source="media/delta-lake-new.png" alt-text="Dialog box to enter connection details for Delta Lake.":::
 
@@ -64,9 +64,14 @@ For example, Contoso Coffee has millions of records coming in on a daily basis. 
 
 1. Navigate to the folder that contains the data in Delta format and select it. Then, select **Next**. A list of available tables displays.
 
-   :::image type="content" source="media/delta-review-tables.png" alt-text="Dialog box of a list of tables to select":::
-
 1. Select the tables you want to include.
+
+   :::image type="content" source="media/delta-edit-table.png" alt-text="Dialog box showing Required for Primary key":::
+
+1. For selected tables where a primary key has not been defined, **Required** displays under **Primary key**. For each of these tables:
+   1. Select **Required**. The **Edit table** panel displays.
+   1. Choose the **Primary key**. The primary key is an attribute unique to the table. For an attribute to be a valid primary key, it shouldn't include duplicate values, missing values, or null values. String, integer, and GUID data type attributes are supported as primary keys.
+   1. Select **Close** to save and close the panel.
 
 1. To enable data profiling on any of the columns, select the number of **Columns** for the table. The **Manage attributes** page displays.
 
@@ -83,11 +88,11 @@ Loading data can take time. After a successful refresh, the ingested data can be
 
 ## Schema changes
 
-When a column is added or removed from the schema of a data source, the system runs a complete refresh of the data. Full refreshes have more data and takes longer than incremental refreshes.
+When a column is added or removed from the schema of a Delta folders data source, the system runs a complete refresh of the data. Full refreshes take longer to process all the data than incremental refreshes.
 
-When a column is added to the data source, the information automatically appends to the data in Customer Insights - Data once a refresh occurs.
+When a column is added to the data source, the information automatically appends to the data in Customer Insights - Data once a refresh occurs. If you have already configured unification for the table, the new column must be added to the unification process. From the [**Customer data**](data-unification-update.md#edit-customer-data) step, select **Select tables and columns** and select the new column. In the [**Unified data view**](data-unification-update.md#manage-unified-fields) step, make sure the column is not excluded from the customer profile. Select **Excluded** and readd the column.
 
-When a column is removed from a data source, the system checks for dependencies in other processes. If there's a dependency in the application, the system stops processing so that these dependencies can be removed. These dependencies display in a notification to help you locate and remove them.
+When a column is removed from a data source, the system checks for dependencies in other processes. If there's a dependency on the columns, the system stops the refresh so that these dependencies can be removed. These dependencies display in a notification to help you locate and remove them.
 
 ## Run a full data refresh to data stored in Delta format
 
@@ -95,13 +100,11 @@ A full refresh takes all the data from a table in Delta format and reloads it fr
 
 1. Go to **Data** > **Data sources**.
 
-1. Select the **Azure Data Lake Storage Gen 2 - Delta tables (Preview)** data source.
+1. Select the **Azure Data Lake - Delta tables (Preview)** data source.
 
 1. Select the table you want to refresh. The **Edit table** pane displays.
 
-   <!--- Get a better screenshot when we have access to an env. --->
-
-   :::image type="content" source="media/delta-edit-table.png" alt-text="Edit table pane to select one-time full refresh.":::
+   :::image type="content" source="media/delta-refresh-table.png" alt-text="Edit table pane to select one-time full refresh.":::
 
 1. Select **Run one-time full refresh**.
 
