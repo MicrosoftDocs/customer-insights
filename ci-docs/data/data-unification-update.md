@@ -69,8 +69,8 @@ To remove a field that has been unified, the field must be removed from any depe
 
 1. If the field is used in a rule for deduplication rules or matching rules, perform the following steps. Otherwise, go to the next step.
    1. Select **Edit** on the **Deduplication rules** tile.
-   1. Remove the field from all rules it is used in, if any, and then select **Next**.
-   1. On the **Matching rules** page, remove the field from all rules it is used in, if any, and then select **Save and close**.
+   1. Remove the field from all rules it's used in, if any, and then select **Next**.
+   1. On the **Matching rules** page, remove the field from all rules it's used in, if any, and then select **Save and close**.
    1. Select **Unify** > **Unify customer profiles and dependencies**. Wait for unification to complete before going to the next step.
 
 1. Select **Edit** on the **Customer data** tile.

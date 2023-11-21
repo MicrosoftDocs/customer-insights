@@ -19,7 +19,7 @@ Rules are processed in order.  After all rules have been run on all the records 
 
 ## Define deduplication rules
 
-A good rule identifies a unique customer. Consider your data. It may be enough to identify customers based on a field such as email. However, if you want to differentiate customers that share an email, you may choose to have a rule with two conditions, matching on Email + FirstName. For more information, see [Deduplication considerations](data-unification-duplicates-considerations.md).
+A good rule identifies a unique customer. Consider your data. It might be enough to identify customers based on a field such as email. However, if you want to differentiate customers that share an email, you might choose to have a rule with two conditions, matching on Email + FirstName. For more information, see [Deduplication considerations](data-unification-duplicates-considerations.md).
 
 1. On the **Deduplication rules** page, select a table and select **Add rule** to define the deduplication rules.
 
