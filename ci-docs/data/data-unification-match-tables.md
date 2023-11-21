@@ -16,7 +16,7 @@ ms.custom: bap-template
 This step in unification defines the match order and rules for cross-table matching. This step requires at least two tables. When records are matched, they're concatenated into a single record with all the fields from each table. Alternate rows (nonwinner rows from the Deduplication step) are considered when matching. But, if a row matches an alternate row in a table, the record is matched to the winner row.
 
 > [!NOTE]
-> Once you create your match conditions and select **Next**, you cannot remove a selected table or attribute. If needed, select **Back** to review the selected tables and attributes before continuing.
+> Once you create your match conditions and select **Next**, you cannot remove a selected table or column. If needed, select **Back** to review the selected tables and columns before continuing.
 
 [!INCLUDE [m3-first-run-note](includes/m3-first-run-note.md)]
 
@@ -40,7 +40,7 @@ Each match unifies two or more tables into a single, consolidated table. At the 
 > Important considerations:
 >
 > - Choose the table with the most complete and reliable profile data about your customers as the primary table.
-> - Choose the table that has several attributes in common with other tables (for example, name, phone number, or email address) as the primary table.
+> - Choose the table that has several columns in common with other tables (for example, name, phone number, or email address) as the primary table.
 > - Tables can only match against other tables that are higher in priority. So Table2 can only match against Table1, and Table3 can match against Table2 *or* Table1.  
 
 1. On the **Matching rules** page, use the move up and down arrows to move the tables in the order you want, or drag and drop them. For example, select **eCommerceContacts** as the primary table and **loyCustomer** as the second table.
@@ -63,11 +63,11 @@ The warning next to a table name means that no match rule is defined for a match
 
    :::image type="content" source="media/m3_add_rule.png" alt-text="Screenshot of Add rule pane.":::
 
-   - **Select Table/Field (first row)**: Choose a table and an attribute that is likely unique to a customer. For example, a phone number or email address. Avoid matching by activity-type attributes. For example, a purchase ID will likely find no match in other record types.
+   - **Select Table/Field (first row)**: Choose a table and a column that is likely unique to a customer. For example, a phone number or email address. Avoid matching by activity-type columns. For example, a purchase ID will likely find no match in other record types.
 
-   - **Select Table/Field (second row)**: Choose an attribute that relates to the attribute of the table specified in the first row.
+   - **Select Table/Field (second row)**: Choose a column that relates to the column of the table specified in the first row.
 
-   - **Normalize**: Select from following normalization options for the selected attributes.
+   - **Normalize**: Select from following normalization options for the selected columns.
      - **Numerals**: Converts other numeral systems, such as Roman numerals, to Arabic numerals. *VIII* becomes *8*.
      - **Symbols**: Removes all symbols and special characters. *Head&Shoulder* becomes *HeadShoulder*.
      - **Text to lower case**: Converts all character to lower case. *ALL CAPS and Title Case* becomes *all caps and title case*.
@@ -81,7 +81,7 @@ The warning next to a table name means that no match rule is defined for a match
 
    - **Name**: Name for the rule.
 
-1. To match tables only if attributes meet multiple conditions, select **Add** > **Add condition** to add more conditions to a match rule. Conditions are connected with a logical AND operator and thus only executed if all conditions are met.
+1. To match tables only if columns meet multiple conditions, select **Add** > **Add condition** to add more conditions to a match rule. Conditions are connected with a logical AND operator and thus only executed if all conditions are met.
 
 1. Optionally, consider advanced options such as [exceptions](#add-exceptions-to-a-rule) or [custom match conditions](#specify-custom-match-conditions).
 
@@ -96,7 +96,7 @@ The warning next to a table name means that no match rule is defined for a match
 
 ### Add rules to a match pair
 
-Match rules represent sets of conditions. To match tables by conditions based on multiple attributes, add more rules.
+Match rules represent sets of conditions. To match tables by conditions based on multiple columns, add more rules.
 
 1. Select **Add rule** on the table you want to add rules to.
 

@@ -21,7 +21,7 @@ Data can be unified on a single table or multiple tables. Tables were previously
 
 The unification process maps customer data from your data sources, removes duplicates, matches the data across tables, and creates a unified profile. Unification is performed in the following order:
 
-1. [Customer data](data-unification-map-tables.md): In the Customer data step, select tables and columns to include in the unification process. Map fields to a common type that describes the purpose of the field.
+1. [Customer data](data-unification-map-tables.md): In the Customer data step, select tables and columns to include in the unification process. Map fields to a common type that describes the purpose of the column.
 
 1. [Deduplication rules](data-unification-duplicates.md): In the Deduplication rules step, optionally define rules to remove duplicate customer records from within each table.
 
@@ -37,7 +37,7 @@ After completing data unification, you can optionally:
 
 - [Set up relationships between tables](relationships.md) to create sophisticated segments.
 - [Enrich your data](enrichment-manage.md) to get a wider range of insights about your customers.
-- [Define activities](activities.md) from some of the ingested attributes.
+- [Define activities](activities.md) from some of the ingested columns.
 - [Build measures](measures.md) to better understand customer behaviors and business performance.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

@@ -30,7 +30,7 @@ A good rule identifies a unique customer. Consider your data. It may be enough t
 
    1. In the **Add rule** pane, enter the following information:
       - **Select field**: Choose from the list of available fields from the table that you want to check for duplicates. Choose fields that are likely unique for every single customer. For example, an email address, or the combination of name, city, and phone number.
-      - **Normalize**: Select normalization options for the attribute. Normalization only impacts the matching step, and doesn't change the data.
+      - **Normalize**: Select normalization options for the column. Normalization only impacts the matching step, and doesn't change the data.
         - **Numerals**: Converts many Unicode symbols that represent numbers to simple numbers.
         - **Symbols**: Removes many common symbols such as !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~. For example, *Head&Shoulder* becomes *HeadShoulder*.
         - **Text to lower case: Converts all character to lower case**. "ALL CAPS and Title Case" become "all caps and title case."
@@ -56,13 +56,13 @@ A good rule identifies a unique customer. Consider your data. It may be enough t
 
 1. In the **Merge preferences** pane:
    1. Choose one of three options to determine which record to keep if a duplicate is found:
-      - **Most filled**: Identifies the record with most populated attribute fields as the winner record. It's the default merge option.
+      - **Most filled**: Identifies the record with most populated columns as the winner record. It's the default merge option.
       - **Most recent**: Identifies the winner record based on the most recency. Requires a date or a numeric field to define the recency.
       - **Least recent**: Identifies the winner record based on the least recency. Requires a date or a numeric field to define the recency.
 
       If there's a tie, the winner record is the one with the MAX(PK) or the larger primary key value.
 
-   1. Optionally, to define merge preferences on individual attributes of a table, select **Advanced** at the bottom of the pane. For example, you can choose to keep the most recent email AND the most complete address from different records. Expand the table to see all its attributes and define which option to use for individual attributes. If you choose a recency-based option, you also need to specify a date/time field that defines the recency.
+   1. Optionally, to define merge preferences on individual columns of a table, select **Advanced** at the bottom of the pane. For example, you can choose to keep the most recent email AND the most complete address from different records. Expand the table to see all its columns and define which option to use for individual columns. If you choose a recency-based option, you also need to specify a date/time field that defines the recency.
 
       :::image type="content" source="media/m3_adv_merge.png" alt-text="Advanced merge preferences pane showing recent email and complete address":::
 

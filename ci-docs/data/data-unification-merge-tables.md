@@ -1,5 +1,5 @@
 ---
-title: "Unify customer fields for data unification"
+title: "Unify customer columns for data unification"
 description: "Merge columns to create unified customer profiles."
 ms.date: 11/15/2023
 ms.topic: how-to
@@ -9,19 +9,19 @@ ms.reviewer: v-wendysmith
 ms.custom: bap-template
 ---
 
-# Unify customer fields for data unification
+# Unify customer columns for data unification
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
-In this step of the unification process, choose and exclude attributes to merge within your unified profile table. For example, if three tables had email data, you may want to keep all three separate email fields or merge them into a single email field for the unified profile. Dynamics 365 Customer Insights - Data automatically combines some attributes.
+In this step of the unification process, choose and exclude columns to merge within your unified profile table. For example, if three tables had email data, you may want to keep all three separate email columns or merge them into a single email column for the unified profile. Dynamics 365 Customer Insights - Data automatically combines some columns.
 
 In this step, you can create stable and unique customer IDs and for individual customers, group related profiles into a cluster.
 
 :::image type="content" source="media/m3_unify.png" alt-text="Unify customer fields page in the data unification process showing table with merged fields that define the unified customer profile.":::
 
-## Review and update the customer fields
+## Review and update the customer columns
 
-1. Review the list of fields that will be unified under the **Customer columns** tab of the table. Make any changes if applicable.
+1. Review the list of columns that will be unified under the **Customer columns** tab of the table. Make any changes if applicable.
 
    1. For any combined fields, you can:
       - [Edit](#edit-a-merged-field)
@@ -80,7 +80,7 @@ Change the display name of merged or separate fields. You can't change the name 
 
 ### Separate merged fields
 
-To separate merged fields, find the attribute in the table. Separated fields show as individual data points on the unified customer profile.
+To separate merged fields, find the column in the table. Separated fields show as individual data points on the unified customer profile.
 
 1. Select the merged column and choose **Separate fields**.
 
@@ -106,7 +106,7 @@ Some tables contain more details than others. If a table includes the latest dat
 
 ### Combine fields manually
 
-Combine separated fields to create a merged attribute.
+Combine separated fields to create a merged column.
 
 1. Select **Combine** > **Fields**. The Combine columns pane displays.
 

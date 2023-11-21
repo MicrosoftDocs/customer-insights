@@ -22,7 +22,7 @@ To review or change any unification settings once a unified profile has been cre
    :::image type="content" source="media/m3_unified.png" alt-text="Screenshot of the Data Unify page after data is unified." lightbox="media/m3_unified.png":::
 
 1. Choose what you want to update:
-   - [Customer data](#edit-customer-data) to add attributes or tables or change attribute types. To remove an attribute, see [Remove a unified field](#remove-a-unified-field). To remove a table, see [Remove a unified table](#remove-a-unified-table).
+   - [Customer data](#edit-customer-data) to add columns or tables or change column types. To remove a column, see [Remove a unified field](#remove-a-unified-field). To remove a table, see [Remove a unified table](#remove-a-unified-table).
    - [Deduplication rules](#manage-deduplication-rules) to manage deduplication rules or merge preferences.
    - [Matching rules](#manage-match-rules) to update matching rules across two or more tables.
    - [Unified data view](#manage-unified-fields) to combine or exclude fields. You can also group related profiles into clusters.
@@ -44,9 +44,9 @@ To review or change any unification settings once a unified profile has been cre
 
    The number of mapped and unmapped fields display.
 
-1. To add other attributes or tables, select **Select tables and columns**.
+1. To add other columns or tables, select **Select tables and columns**.
 
-1. Optionally, you can change the primary key for a table or the attribute types. For more information, see [Describe customer data](data-unification-map-tables.md).
+1. Optionally, you can change the primary key for a table or the column types. For more information, see [Describe customer data](data-unification-map-tables.md).
 
 1. Select **Next** to make changes to deduplication rules, or select **Save and close** and return to [Update unification settings](#update-unification-settings).
 
@@ -144,7 +144,7 @@ To remove a table that has been unified, the table must be removed from any depe
 
 1. To change merge preferences, select the table. You can only change the preferences if a rule is created.
    1. Select **Edit merge preferences** and change the **Record to keep** option.
-   1. To change merge preferences on individual attributes of a table, select **Advanced** and make the necessary changes.
+   1. To change merge preferences on individual columns of a table, select **Advanced** and make the necessary changes.
 
    1. Select **Done**.
 

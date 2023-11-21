@@ -34,7 +34,7 @@ The unification algorithm takes some time to complete and you can't change the c
 
 ## View the results of data unification
 
-After unification, the **Data** > **Unify** page shows the number of unified customer profiles. The results of each step in the unification process display on each tile. For example, **Customer data** shows the number of mapped attributes (fields) and **Deduplication rules** shows the number of duplicate records found.
+After unification, the **Data** > **Unify** page shows the number of unified customer profiles. The results of each step in the unification process display on each tile. For example, **Customer data** shows the number of mapped columns and **Deduplication rules** shows the number of duplicate records found.
 
 :::image type="content" source="media/m3_unified.png" alt-text="Screenshot of the Data Unify page after data is unified.":::
 
