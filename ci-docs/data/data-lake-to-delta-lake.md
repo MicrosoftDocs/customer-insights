@@ -42,18 +42,24 @@ Key reasons to connect to data stored in Delta format:
 
 - The Delta tables must correspond to the tables in the existing Data Lake data source and be in the same storage container. For example:
 
-   :::image type="content" source="media/data-to-delta-file-dir.png" alt-text="Example directory structure to support Data update to Delta.":::
+  ```
+  storage_container_root/
+      DeltaLakeDataRoot/
+         ADeltaLakeTable/
+               _delta_log/
+                   0000.json
+                   0001.json
+               part-0001-snappy.parquet
+               part-0002-snappy.parquet
+  ```
 
 ## Update a Data Lake data source to Delta Lake
 
 1. Go to **Data** > **Data sources**.
 
-1. Select the Azure Data Lake data source and then select **Update to Delta Lake**.
+1. Select the Azure Data Lake data source and then select **Update to Delta Lake**. Or, select **Begin update** from the **Add tables** page if you're editing the Data Lake data source.
 
    :::image type="content" source="media/delta-lake-convert.png" alt-text="Dialog box to enter connection details for Delta Lake.":::
-
-   > [!TIP]
-   > You can also select **Begin update** from the **Add tables** page if you're editing the Data Lake data source.
 
 1. Select **Browse** and navigate to the folder that contains the data in Delta format and select it. Then, select **Update data source**. The **Data sources** page opens showing the new data source in **Refreshing** status.
 
@@ -61,6 +67,6 @@ Key reasons to connect to data stored in Delta format:
    > Don't stop the refreshing process as it could negatively impact updating the data source.
    [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
 
-1. We recommend you continue to stream your data to the Data Lake Storage location through your existing pipeline and maintain the manifests and schemas until you determine the update was successful and everything is working as expected.
+We recommend you continue to stream your data to the Data Lake Storage location through your existing pipeline and maintain the manifests and schemas until you determine the update was successful and everything is working as expected.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
