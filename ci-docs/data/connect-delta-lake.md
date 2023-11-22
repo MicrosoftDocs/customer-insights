@@ -9,7 +9,7 @@ ms.reviewer: v-wendysmith
 ms.custom: bap-template
 ---
 
-# Connect to data in Azure Data Lake Storage - Delta Lake Storage (preview)
+# Connect to Delta tables in Azure Data Lake Storage (preview)
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
