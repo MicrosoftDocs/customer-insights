@@ -1,5 +1,5 @@
 ---
-title: Preview: View previously sent emails
+title: "Preview: View previously sent emails"
 description: Learn how to view previously sent emails in Dynamics 365 Customer Insights - Journeys.
 ms.date: 11/22/2023
 ms.topic: how-to
