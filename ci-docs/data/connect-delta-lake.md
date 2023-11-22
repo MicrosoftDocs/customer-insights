@@ -42,6 +42,7 @@ Key reasons to connect to data stored in Delta format:
 
 - The Delta tables must not reside in the storage container’s root, but must instead reside in a Delta root folder. For example:
 
+  ```
    storage_container_root/
       DeltaLakeDataRoot/
          ADeltaLakeTable/
@@ -50,7 +51,8 @@ Key reasons to connect to data stored in Delta format:
                  0001.json
              part-0001-snappy.parquet
              part-0002-snappy.parquet 
-
+  ```  
+  
 ## Connect to Delta data from Azure Data Lake Storage
 
 1. Go to **Data** > **Data sources**.
@@ -76,7 +78,7 @@ Key reasons to connect to data stored in Delta format:
 
    :::image type="content" source="media/delta-edit-table.png" alt-text="Dialog box showing Required for Primary key":::
 
-1. For selected tables where a primary key has not been defined, **Required** displays under **Primary key**. For each of these tables:
+1. For selected tables where a primary key hasn't been defined, **Required** displays under **Primary key**. For each of these tables:
    1. Select **Required**. The **Edit table** panel displays.
    1. Choose the **Primary key**. The primary key is an attribute unique to the table. For an attribute to be a valid primary key, it shouldn't include duplicate values, missing values, or null values. String, integer, and GUID data type attributes are supported as primary keys.
    1. Select **Close** to save and close the panel.
@@ -94,13 +96,13 @@ Key reasons to connect to data stored in Delta format:
 
 Loading data can take time. After a successful refresh, the ingested data can be reviewed from the [**Tables**](tables.md) page.
 
-## Schema changes
+## Manage schema changes
 
 When a column is added or removed from the schema of a Delta folders data source, the system runs a complete refresh of the data. Full refreshes take longer to process all the data than incremental refreshes.
 
 ### Add a column
 
-When a column is added to the data source, the information automatically appends to the data in Customer Insights - Data once a refresh occurs. If you have already configured unification for the table, the new column must be added to the unification process. From the [**Customer data**](data-unification-update.md#edit-customer-data) step, select **Select tables and columns** and select the new column. In the [**Unified data view**](data-unification-update.md#manage-unified-fields) step, make sure the column is not excluded from the customer profile. Select **Excluded** and readd the column.
+When a column is added to the data source, the information automatically appends to the data in Customer Insights - Data once a refresh occurs. If you have already configured unification for the table, the new column must be added to the unification process. From the [**Customer data**](data-unification-update.md#edit-customer-data) step, select **Select tables and columns** and select the new column. In the [**Unified data view**](data-unification-update.md#manage-unified-fields) step, make sure the column isn't excluded from the customer profile. Select **Excluded** and readd the column.
 
 ### Change or remove a column
 
@@ -113,7 +115,7 @@ After the data source has refreshed, go to **Data** > **Tables** page. Select th
 ## Manually run a full data refresh on a Delta table folder
 
 A full refresh takes all the data from a table in Delta format and reloads it from the Delta table version zero (0).
-Changes to Delta folders are versioned, and Customer Insights - Data uses the Delta folder versions to keep track of what data to process. If Customer Insights – Data last synchronized with version 23 of your Delta folder data, it expects to find version 23 and possibly subsequent versions available. If the expected data versions are not available, [data synchronization fails](#data-synchronization-failure).
+Changes to Delta folders are versioned, and Customer Insights - Data uses the Delta folder versions to keep track of what data to process. If Customer Insights – Data last synchronized with version 23 of your Delta folder data, it expects to find version 23 and possibly subsequent versions available. If the expected data versions aren't available, [data synchronization fails](#data-synchronization-failure).
 
 Changes to the Delta folder schema trigger an automatic full refresh. To manually trigger a full refresh, perform the following steps.
 
@@ -133,7 +135,7 @@ Changes to the Delta folder schema trigger an automatic full refresh. To manuall
 
 ### Data synchronization failure
 
-Data synchronization can fail if your Delta folder data was deleted and then recreated. Or if Customer Insights - Data couldn't connect to your Delta folders for an extended period while the versions advanced so the folder versions are no longer available when connection is restored. To minimize the impact where an intermittent data pipeline failure creates the need for a full refresh, we recommend you maintain a reasonable history backlog, such as 15 days.
+Data synchronization can fail if your Delta folder data was deleted and then recreated. Or if Customer Insights - Data couldn't connect to your Delta folders for an extended period while the versions advanced. To minimize the impact where an intermittent data pipeline failure creates the need for a full refresh, we recommend you maintain a reasonable history backlog, such as 15 days.
 
 ## Next steps
 
