@@ -45,7 +45,7 @@
          href: connect-synapse.md
        - name: Connect to data in Microsoft Dataverse
          href: connect-dataverse.md
-       - name: Connect data stored in Delta Lake format from your Azure Data Lake Storage
+       - name: Connect to data in Azure Data Lake Storage - Delta Lake
          href: connect-delta-lake.md
        - name: Add a data sources via Power Query connectors
          href: connect-power-query.md
@@ -70,13 +70,13 @@
   items:
     - name: Data unification overview
       href: data-unification.md
-    - name: Select source fields
+    - name: Describe customer data
       href: data-unification-map-tables.md
     - name: Remove duplicates in each table
       href: data-unification-duplicates.md
     - name: Deduplication considerations
       href: data-unification-duplicates-considerations.md
-    - name: Match conditions
+    - name: Matching rules
       href: data-unification-match-tables.md
     - name: Unify customer fields
       href: data-unification-merge-tables.md
