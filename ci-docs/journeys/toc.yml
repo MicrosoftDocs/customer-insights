@@ -172,6 +172,10 @@
           href: email-check-golive.md      
         - name: Use "Send now" to send emails instantly in Customer Insights - Journeys
           href: email-without-journey.md
+      - name: View previously sent emails
+        items: 
+        - name: Easily reference copies of sent emails in interaction timeline
+          href: view-previously-sent-emails.md
       - name: Email troubleshoot + FAQ
         href: email-troubleshoot.md
     - name: Text messages
