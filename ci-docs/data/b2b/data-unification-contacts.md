@@ -29,7 +29,7 @@ The first few steps to unify contacts are the same as the steps to [unify accoun
 - Accounts with contacts must have a unique key (called a foreign key) that connects them. For example, an account ID that exists in the account record and contact record that ties the account and contact together. Contacts without accounts have a null value for the foreign key.
 - At least one contact table must have a relationship defined to an account table. If none of your contact tables have a relationship to an account, add a blank column in one of the contact tables and map it to an account table.
 
-## Select source fields
+## Describe customer data
 
 1. Sign in to Dynamics 365 Customer Insights - Data.
 
@@ -100,7 +100,7 @@ The unification algorithm takes some time to complete and you can't change the c
 
 ### View the results of contact unification
 
-After unification completes, the **Data** > **Unify** page shows the number of unified contact profiles. The result of each step in the unification process displays on each tile. For example, **Source fields** shows the number of mapped attributes, or columns, and **Duplicate records** shows the number of duplicate records that were found. The **Matching conditions** tile displays only if multiple tables were selected.
+After unification completes, the **Data** > **Unify** page shows the number of unified contact profiles. The result of each step in the unification process displays on each tile. For example, **Customer data** shows the number of mapped attributes, or columns, and **Deduplication rules** shows the number of duplicate records that were found. The **Matching rules** tile displays only if multiple tables were selected.
 
 :::image type="content" source="media/b2b-unified-contacts.svg" alt-text="Screenshot of the Data Unify page after contacts are unified.":::
 
