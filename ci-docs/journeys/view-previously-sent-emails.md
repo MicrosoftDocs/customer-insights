@@ -11,7 +11,7 @@ search.audienceType:
   - enduser
 ---
 
-# Easily reference copies of sent emails in interaction timeline
+# Preview: Easily reference copies of sent emails in interaction timeline
 
 [!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
