@@ -1,5 +1,5 @@
 ---
-title: View previously sent emails
+title: Preview: View previously sent emails
 description: Learn how to view previously sent emails in Dynamics 365 Customer Insights - Journeys.
 ms.date: 11/22/2023
 ms.topic: how-to
@@ -14,6 +14,11 @@ search.audienceType:
 # Easily reference copies of sent emails in interaction timeline
 
 [!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+
+> [!IMPORTANT]
+> A preview feature is a feature that is not complete, but is made available before it’s officially in a release so customers can get early access and provide feedback. Preview features aren’t meant for production use and may have limited or restricted functionality.
+>
+> Microsoft doesn't provide support for this preview feature. Microsoft Dynamics 365 Technical Support won’t be able to help you with issues or questions. Preview features aren’t meant for production use, especially to process personal data or other data that are subject to legal or regulatory compliance requirements.
 
 You can view an exact copy of sent emails on your contacts interaction timeline to deepen your customer understanding and have visibility on what's been previously shared with your customers.
 
