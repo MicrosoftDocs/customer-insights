@@ -23,10 +23,9 @@ Take an existing Azure Data Lake data source in Customers Insights - Data and co
 
 Key reasons to connect to data stored in Delta format:
 
-- Seamlessly bring in data that is already prepared and stored in your lakehouse
-- Better manage large data sources that change frequently
-- Have direct integration with stored data without the need for intermediate staging data copies in other formats or more transforms
-- Minimize the time to prepare data for unification and insights
+- Directly import Delta formatted data saving time and effort.
+- Eliminate the compute and storage costs associated with transforming and storing a copy of your lakehouse data.
+- Automatically improve the reliability of data ingestion to Customer Insights - Data provided by Delta versioning.
 
 [!INCLUDE [public-preview-note](./includes/public-preview-note.md)]
 
@@ -38,9 +37,11 @@ Key reasons to connect to data stored in Delta format:
 
 - The user that converts the data source needs at least Storage Blob Data Reader permissions on the Azure Data Lake Storage account.
 
+- Data stored in online services may be stored in a different location than where data is processed or stored. By importing or connecting to data stored in online services, you agree that data can be transferred. [Learn more at the Microsoft Trust Center](https://www.microsoft.com/trust-center).
+
 - The Delta tables must be in a separate folder in the storage container and can't be in the container root directory. For example, c:\MyDeltaData\MyDeltaTable\_delta_log.
 
-- The Delta tables must correspond to the tables in the existing Data Lake data source and be in the same storage container. For example:
+- The Delta tables must correspond to the tables in the existing Data Lake data source and be in the same storage container. The Delta tables must not reside in the storage container’s root, but must instead reside in a Delta root folder. For example:
 
   ```
   storage_container_root/

@@ -1,7 +1,7 @@
 ---
 title: "Connect to data in Azure Data Lake Storage"
 description: "Work with data from Azure Data Lake Storage."
-ms.date: 11/14/2023
+ms.date: 11/21/2023
 ms.topic: how-to
 author: mukeshpo
 ms.author: mukeshpo
@@ -100,7 +100,7 @@ For optimal performance, the size of a partition should be 1 GB or less and the 
    :::image type="content" source="media/dataprofiling-tables.png" alt-text="Dialog box to select data profiling.":::
 
    1. Create new columns, edit, or delete existing columns. You can change the name, the data format, or add a semantic type.
-   1. To enable analytics and other capabilities, select **Data profiling** for the whole table or for specific columns. By default, no table is enabled for data profiling.
+   1. To enable analytics and other capabilities, select [**Data profiling**](data-sources.md#data-profiling) for the whole table or for specific columns. By default, no table is enabled for data profiling.
    1. Select **Done**.
 
 1. Select **Save**. The **Data sources** page opens showing the new data source in **Refreshing** status.
