@@ -281,4 +281,15 @@ One service user, **# Dynamics Marketing Dataverse Datasource**, is used to impe
 
 **# Dynamics Marketing Dataverse Datasource** has a **Service Reader** role assigned, which allows it privileged access to any Dataverse data within a given environment.
 
+### Customer Insights - Journeys field security profiles
+After deploying Customer Insights - Journeys features, several Field Security Profiles are created under **Advanced Settings > Security> Field Security Profiles**. Deleting these profiles will break text messages (SMS) and push notifications flows.
+
+| Customer Insights - Journeys field security role | Customer Insights - Journeys area |
+| ---- | ------- |
+| CxpApplicationUser - Mobile app channel instance secrets  | Push notification channel |
+| CxpApplicationUser - Mobile app secrets  | Push notification channel |
+| Marketers - Mobile app channel instance secrets | Push notification channel |
+| Marketers - Mobile app secrets   | Push notification channel |
+| Customer Journey Orchestration Shared SMS Channels Profile | SMS channel |
+
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
