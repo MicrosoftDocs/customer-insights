@@ -37,8 +37,9 @@ Limits on segment exports include:
 
 - Third-party target systems may limit the number of customer profiles that you can export.
 - For individual customers, you'll see the actual number of segment members when you select a segment for export. You will get a warning if a segment is too large.
+- The fields available to export from are limited to those from the Customer profile table. This means if you project attributes from other tables when creating a segment, these projected attributes will not be available when exporting a segment. 
 
-## Next steps
+## Next step
 
 - [Set up and manage exports](export-manage.md)
 
