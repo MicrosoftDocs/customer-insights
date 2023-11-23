@@ -57,6 +57,7 @@ Below are the rules currently included for Customer Insights - Journeys:
 | CheckIfProcessesAreActive    | Checks whether there are any process definitions in draft status. If there are processes in draft status, Customer Insights - Journeys will not work correctly. | 
 | MissingMktConfiguration    | Checks for the presence of a Customer Insights - Journeys configuration entity record. If the configuration entity record is missing, Customer Insights - Journeys will not work properly. | 
 | MissingRolesToApplicationUser    | Checks whether MarketingServices ApplicationUser has all required roles assigned. If some of the roles are missing, the Customer Insights - Journeys application might not work properly. |
+| MissingFieldSecurityProfiles    |  Checks whether Field Security Profiles are missing. If it’s the case, Customer Insights – Journeys text message and Push notification flows will not work properly. |
 
 ## View health check results
 
