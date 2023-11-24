@@ -171,7 +171,11 @@
         - name: Check for errors, go live, and deliver
           href: email-check-golive.md      
         - name: Use "Send now" to send emails instantly in Customer Insights - Journeys
-          href: email-without-journey.md
+          href: email-without-journey.
+      - name: Design your email and content
+        items:
+        - name: Enhance email engagement by allowing browser viewing
+          href: view-email-in-browser.md
       - name: View previously sent emails
         items: 
         - name: Easily reference copies of sent emails in interaction timeline
