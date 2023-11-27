@@ -1,7 +1,7 @@
 ---
 title: New and upcoming features
 description: Information about new features, improvements, and bug fixes in Dynamics 365 Customer Insights - Journeys releases.
-ms.date: 11/15/2023
+ms.date: 11/27/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -29,7 +29,7 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 
 | App              | GA release      |
 |------------------|-----------------|
-| Customer Insights - Journeys        |   1.1.32267.116     |
+| Customer Insights - Journeys        |   1.1.32267.120     |
 
 On September 1, 2023, Dynamics 365 Customer Insights - Journeys transitioned to focus on real-time marketing features only. To support this transition, in early August 2023, provisioning of new instances changed in the following ways:
 
