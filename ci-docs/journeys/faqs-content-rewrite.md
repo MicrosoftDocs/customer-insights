@@ -1,7 +1,7 @@
 ---
 title: Responsible AI FAQs for content rewrite
 description: The Responsible AI FAQs discuss content rewrite and the key considerations for making use of this technology responsibly.
-ms.date: 10/19/2023
+ms.date: 11/27/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -18,21 +18,21 @@ search.audienceType:
 These responsible AI FAQs describe the AI impact of Dynamics 365 Customer Insights - Journeys's content rewrite feature.
 
 > [!NOTE]
-> Editing text with content rewrite copilot is available for the following types of content:
+> Editing text with content rewrite, a copilot feature is available for the following types of content:
 > - Email, email template
 > - Form
 > - Text message
 > - Push notification
 
 > [!NOTE]
-> The Content rewrite copilot is currently available in the United States, in the English language only.
+> Content rewrite is currently available in the United States, in the English language only.
 
 > [!Tip]
-> Learn about using the Content ideas copilot to create inspiring email content ideas in our blog: Make email creation fun and more efficient with AI-powered content ideas in Dynamics 365 Customer Insights - Journeys
+> Learn about using the Content ideas to create inspiring email content ideas in our blog: Make email creation fun and more efficient with AI-powered content ideas in Dynamics 365 Customer Insights - Journeys
 
-## What is the Content rewrite copilot?
+## What is Content rewrite?
 
-The content rewrite copilot helps you to rapidly iterate on your content to optimize your messaging. Whether you're creating content for email, text messages, push notifications or forms, using copilot, you can easily rephrase messages, adjust the tone of voice, and shorten or lengthen copy, increasing productivity and delivering better results.
+Content rewrite helps you to rapidly iterate on your content to optimize your messaging. Whether you're creating content for email, text messages, push notifications or forms, using copilot, you can easily rephrase messages, adjust the tone of voice, and shorten or lengthen copy, increasing productivity and delivering better results.
 
 Select any text and leverage copilot to:
 - re-write their text and choose from different variations
