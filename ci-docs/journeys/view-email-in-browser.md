@@ -24,7 +24,7 @@ View in browser is a general setting that is disabled by default.
 
 ## How to enable view in browser
 
-1. Got to **Settings** and select **Feature switches**. 
+1. Go to **Settings** and select **Feature switches**. 
 1. Enable the **View in browser** feature toggle in the “**Email editor**” section.
  
    > [!div class="mx-imgBorder"]
