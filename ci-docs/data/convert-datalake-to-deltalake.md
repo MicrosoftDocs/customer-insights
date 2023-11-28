@@ -45,7 +45,6 @@ Key reasons to connect to data stored in Delta format:
 
   ```
   storage_container_root/
-      ~~contoso_table~~
       DeltaLakeDataRoot/
          ADeltaLakeTable/
                _delta_log/
