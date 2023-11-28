@@ -1,7 +1,7 @@
 ---
 title: "Convert a Data Lake data source to a Delta Lake data source (preview)"
 description: "Convert a Data Lake data source to a Delta Lake data source in Customer Insights - Data."
-ms.date: 11/21/2023
+ms.date: 11/28/2023
 ms.topic: how-to
 author: mukeshpo
 ms.author: mukeshpo
@@ -45,6 +45,7 @@ Key reasons to connect to data stored in Delta format:
 
   ```
   storage_container_root/
+      ~~contoso_table~~
       DeltaLakeDataRoot/
          ADeltaLakeTable/
                _delta_log/
@@ -69,5 +70,26 @@ Key reasons to connect to data stored in Delta format:
    [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
 
 We recommend you continue to stream your data to the Data Lake Storage location through your existing pipeline and maintain the manifests and schemas until you determine the update was successful and everything is working as expected.
+
+## Revert the conversion from Delta Lake to Data Lake
+
+If you tried to [convert an Azure Data Lake data source to a Delta Lake data source](/dynamics365/customer-insights/convert-datalake-to-deltalake) and the process fails, perform the following steps.
+
+### Prerequisites
+
+- Your organization has continued to stream the Data Lake Storage data through your pipeline.
+- Your organization has maintained the Data Lake Storage manifests and schemas.
+
+### Revert back to an Azure Data Lake data source
+
+1. Go to **Data** > **Data sources**.
+
+1. Select the Azure Data Lake data source and then select **Revert to ADLS**.
+
+1. Confirm that you want to revert. The **Data sources** page opens showing the new data source in **Refreshing** status.
+
+   > [!IMPORTANT]
+   > Don't stop the refreshing process as it could negatively impact reverting the data source.
+
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

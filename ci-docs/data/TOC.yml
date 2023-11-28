@@ -50,7 +50,7 @@
        - name: Add a data sources via Power Query connectors
          href: connect-power-query.md
     - name: Convert a Data Lake data source to a Delta Lake data source
-      href: data-lake-to-delta-lake.md
+      href: convert-datalake-to-deltalake.md
     - name: Manage existing data sources
       href: data-sources-manage.md
     - name: Connect to an Azure Data Lake Storage account by using a Microsoft Entra service principal
