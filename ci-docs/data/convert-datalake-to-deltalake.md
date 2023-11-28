@@ -73,7 +73,7 @@ We recommend you continue to stream your data to the Data Lake Storage location 
 
 ## Revert the conversion from Delta Lake to Data Lake
 
-If you tried to [convert an Azure Data Lake data source to a Delta Lake data source](/dynamics365/customer-insights/convert-datalake-to-deltalake) and the process fails, perform the following steps.
+If you tried to convert an Azure Data Lake data source to a Delta Lake data source and the process fails, perform the following steps.
 
 ### Prerequisites
 
