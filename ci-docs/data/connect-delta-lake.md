@@ -1,7 +1,7 @@
 ---
 title: "Connect to Delta tables in Azure Data Lake Storage (preview)"
 description: "Work with data stored in Delta Lake format from Azure Data Lake Storage in Customer Insights - Data."
-ms.date: 11/22/2023
+ms.date: 11/29/2023
 ms.topic: how-to
 author: mukeshpo
 ms.author: mukeshpo
@@ -40,7 +40,7 @@ Key reasons to connect to data stored in Delta format:
 
 - Data in your Azure Data Lake Storage must be in Delta format. Customer Insights - Data relies on the version property in the table's history to identify the latest changes for incremental processing.
 
-- The Delta tables must not reside in the storage container’s root, but must instead reside in a Delta root folder. For example:
+- The Delta tables must be in a folder in the storage container and can't be in the container root directory. For example:
 
   ```
    storage_container_root/

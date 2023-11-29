@@ -39,9 +39,7 @@ Key reasons to connect to data stored in Delta format:
 
 - Data stored in online services may be stored in a different location than where data is processed or stored. By importing or connecting to data stored in online services, you agree that data can be transferred. [Learn more at the Microsoft Trust Center](https://www.microsoft.com/trust-center).
 
-- The Delta tables must be in a separate folder in the storage container and can't be in the container root directory. For example, c:\MyDeltaData\MyDeltaTable\_delta_log.
-
-- The Delta tables must correspond to the tables in the existing Data Lake data source and be in the same storage container. The Delta tables must not reside in the storage container’s root, but must instead reside in a Delta root folder. For example:
+- The Delta tables must be in a folder in the storage container and can't be in the container root directory. For example:
 
   ```
   storage_container_root/
@@ -53,6 +51,8 @@ Key reasons to connect to data stored in Delta format:
                part-0001-snappy.parquet
                part-0002-snappy.parquet
   ```
+
+- The Delta tables and their scehma must match the tables in the existing Data Lake data source and be in the same storage container.
 
 ## Update a Data Lake data source to Delta Lake
 
