@@ -854,24 +854,6 @@
       href: mkt-settings-social-media.md
     - name: Manage LinkedIn Lead Gen
       href: linkedin-configuration.md
-  - name: Learning catalog
-    items:
-    - name: Learning catalog overview
-      href: learning-catalog.yml
-    - name: Business Decision Maker
-      href: learning-bdm.md
-    - name: Business User
-      href: learning-bus-user.md
-    - name: Implementation Project Manager
-      href: learning-project-manager.md
-    - name: Administrator
-      href: learning-administrator.md
-    - name: Developer
-      href: learning-developer.md
-    - name: Functional Consultant
-      href: learning-functional-consultant.md
-    - name: Partner Sales and Customer Insights - Journeys
-      href: learning-sales.md
   - name: Developer guide
     items: 
     - name: Developer guide overview
