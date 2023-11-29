@@ -22,10 +22,6 @@
       href: home.md
     - name: Work with tags and columns
       href: work-with-tags-columns.md
-    - name: Integrate with Customer Insights - Journeys
-      href: marketing-get-started.md
-    - name: Integrate with Dynamics 365 applications
-      href: integrate-d365-apps.md
 
 - name: Troubleshooting
   href: /troubleshoot/dynamics-365/customer-insights/welcome-customer-insights
@@ -358,6 +354,13 @@
       href: connect-service-principal.md
     - name: Manage environment settings
       href: manage-environments.md
+
+- name: Integrations with other apps
+  items:
+    - name: Integrate with Customer Insights - Journeys
+      href: marketing-get-started.md
+    - name: Integrate with other Dynamics 365 applications
+      href: integrate-d365-apps.md
 
 - name: APIs
   items:
