@@ -47,7 +47,7 @@ Dynamics 365 Customer Insights - Journeys may transfer customer data outside of 
         - Your customers can't access forms.
 - Live journeys:
 
-If you opt-out while having a running journey
+    If you opt-out while having a running journey
     - Your customers will receive the emails, but won't be able to see images nor download files, videos or documents.
     - Your customers will receive the emails, but won't be able to open and interact with forms.
 - Email Templates
