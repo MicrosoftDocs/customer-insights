@@ -13,7 +13,7 @@ search.audienceType:
 
 # Impact of disabling CDN
 
-Dynamics 365 Customer Insights - Journeys uses Azure CDN (content delivery network) for caching image embedded in email, as well as lead generation forms and pages outside of the selected Azure geo to ensure performance of our service.
+Dynamics 365 Customer Insights - Journeys uses Azure CDN (content delivery network) for caching image embedded in email, and lead generation forms and pages outside of the selected Azure geo to ensure performance of our service.
 
 Dynamics 365 Customer Insights - Journeys may transfer customer data outside of the selected Azure geographic location when using the following features that use Azure CDN (content delivery network) to operate globally:
 - [Asset library](upload-images-files.md)
@@ -30,40 +30,40 @@ Dynamics 365 Customer Insights - Journeys may transfer customer data outside of 
 ## Impacted product areas if CDN is disabled
 
 - Assets library 
-    - Will not be accessible.
+    - Won't be accessible.
 - Forms 
     - You can view, edit, and create new forms; however, you’ll not be able to publish them.
-    - The forms will not be rendered on the web page. This applies for both forms hosted as standalone page and forms embedded in web page using Javascript.
+    - The forms won't be rendered on the web page. This applies for both forms hosted as standalone page and forms embedded in web page using JavaScript.
 - Emails 
     - Editing or creating emails (In Email Editor):
-        - Cannot utilize assets from the assets library. 
-        - Cannot upload assets to the library.
-        - Cannot add forms
+        - Can't utilize assets from the assets library. 
+        - Can't upload assets to the library.
+        - Can't add forms
     - Previously created email (In Email Editor):
-        - Cannot render used assets, it will show broken links.
+        - Can't render used assets, it shows broken links.
     - Previously sent emails (In customer inbox):
-        - Your customers cannot see images, they will see broken links.
-        - Your customers cannot download files, videos and documents.
-        - Your customers cannot access forms.
+        - Your customers can't see images, they'll see broken links.
+        - Your customers can't download files, videos and documents.
+        - Your customers can't access forms.
 - Live journeys:
 
 If you opt-out while having a running journey
-    - Your customers will receive the emails, but will not be able to see images nor download files, videos or documents.
-    - Your customers will receive the emails, but will not be able to open and interact with forms.
+    - Your customers will receive the emails, but won't be able to see images nor download files, videos or documents.
+    - Your customers will receive the emails, but won't be able to open and interact with forms.
 - Email Templates
-    - Assets in any email templates will not be accessible. 
-    - Cannot upload assets. 
-    - Previously created templates will not render assets.
+    - Assets in any email templates won't be accessible. 
+    - Can't upload assets. 
+    - Previously created templates won't render assets.
 - Content blocks
-    - Assets in any content block will not be accessible. 
-    - Cannot upload assets. 
-    - Previously created content blocks will not render assets.
+    - Assets in any content block won't be accessible. 
+    - Can't upload assets. 
+    - Previously created content blocks won't render assets.
 - Push Notifications
-    - Cannot upload images. 
-    - Previously created notifications will not render images.
+    - Can't upload images. 
+    - Previously created notifications won't render images.
 - Contact timeline
-    - Cannot preview images in sent emails. 
-    - Cannot show information about forms.
+    - Can't preview images in sent emails. 
+    - Can't show information about forms.
 - Analytics and insights 
     - Can't show information regarding filled forms. 
     - Any data of filled forms in all product areas won't be accessible.
