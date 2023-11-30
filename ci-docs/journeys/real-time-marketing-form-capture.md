@@ -22,24 +22,24 @@ search.audienceType:
 
 ## What is form capture and when to use it
 
-The form capture is used to get submissions from existing forms that were not created using Customer Insights - Journeys form editor. The form capture is recommended in case your existing form also sends submissions to other systems than D365 or if the existing form contains complex logic that can't be easily recreated in Customer Insights - Journeys form editor. If the existing form can be recreated using Customer Insights - Journeys form editor, it is strongly recommended NOT to use form capture.
+The form capture is used to get submissions from existing forms that weren't created using Customer Insights - Journeys form editor. The form capture is recommended in case your existing form also sends submissions to other systems than Dynamics 365 or if the existing form contains complex logic that can't be easily recreated in Customer Insights - Journeys form editor. If the existing form can be recreated using Customer Insights - Journeys form editor, it's NOT recommended to use form capture.
 
 > [!IMPORTANT]
-> **The form capture requires developer assistance**. It always easier to create the form using Customer Insights - Journeys form editor and embed the form into you existing page.
+> **The form capture requires developer assistance**. It always easier to create the form using Customer Insights - Journeys form editor and embed the form into your existing page.
 
-The form capture mimics submission of a standard Customer Insights - Journeys form. To link submissions of your existing form into Customer Insights - Journeys you need to create a form using Customer Insights - Journeys form editor. Once you publish that form you will be able to obtain a form capture script, which needs to be embedded into your web page containing your existing form. The script includes the definition of existing form fields mapping on attributes of Lead or Contact entity. You can see all submissions and analytics inside Customer Insights - Journeys. You can also use this form in journey orchestration with Marketing Form Submitted trigger. This form submission can also create or update Contact Point Consent and related Purposes or Topics.
+The form capture mimics submission of a standard Customer Insights - Journeys form. To link submissions of your existing form into Customer Insights - Journeys you need to create a form using Customer Insights - Journeys form editor. Once you publish that form you are able to obtain a form capture script, which needs to be embedded into your web page containing your existing form. The script includes the definition of existing form fields mapping on attributes of Lead or Contact entity. You can see all submissions and analytics inside Customer Insights - Journeys. You can also use this form in journey orchestration with Marketing Form Submitted trigger. This form submission can also create or update Contact Point Consent and related Purposes or Topics.
 
 ## Step by step guide to create form capture
 
 ### Creating the form capture in Customer Insights - Journeys form editor
 
 1. To create a new capture form script, go to **Customer Insights - Journeys** > **Channels** > **Forms** and select **New** on the command bar.
-1. Name the form and choose the right audience. The choice of target audience is important, the form capture script field->attribute mapping will be available only for attributes of the chosen target audience (entity).
-1. Add all fields that will be mapped to your existing form fields. This step is not mandatory, the field->attribute mapping is defined in the form capture code. Adding the right fields into the form will generate placeholder for attribute mapping in the form capture script making the mapping definition easier. 
+1. Name the form and choose the right audience. The choice of target audience is important, the form capture script field->attribute mapping is available only for attributes of the chosen target audience (entity).
+1. Add all fields you want to be mapped to your existing form fields. This step isn't mandatory, the field->attribute mapping is defined in the form capture code. Adding the right fields into the form generates placeholders for attribute mapping in the form capture script making the mapping definition easier. 
 1. Add Consent elements like Purpose or Topic to form and configure them. Learn more about how to [manage consent for email and text messages in Customer Insights - Journeys](real-time-marketing-email-text-consent.md).
     > [!IMPORTANT]
     > The consent definition must be done in the form editor. Changes made to consent settings done in the form capture code snippet will be ignored.
-1. Add Submit button. This is required for successful validation of form before publishing.
+1. Add Submit button. Submit button is required for successful validation of form before publishing.
 1. Publish the form using the **Publish** button in the top right corner of the screen. Copy the form capture code snippet and embed the code snippet to your web page with existing form or hand over the code snippet to your developer. The code snippet already includes link to documentation to provide guidance to your developer.
     > [!div class="mx-imgBorder"]
     > ![Add consent element to the form.](media/real-time-marketing-form-capture-copy-script.png)
@@ -49,13 +49,11 @@ The form capture mimics submission of a standard Customer Insights - Journeys fo
 
 ### Embedding the capture script into your page and mapping definition
 
-The code snippet copied in the previous step serves as a template and needs to be adjusted to the specific use case. You will need to replace all elements marked as `***Please fill***` in the generated template and adjust the logic to your scenario.
+The code snippet copied in the previous step serves as a template and needs to be adjusted to the specific use case. You need to replace all elements marked as `***Please fill***` in the generated template and adjust the logic to your scenario.
 
-Your existing form submission will be sent to Customer Insights - Journeys using a JavaScript API which is defined in the file `FormCapture.bundle.js` and is included in the snippet.
-The integration is achieved via a JavaScript API that is defined in the file `FormCapture.bundle.js` and is included in the snippet.
+Your existing form submission is sent to Customer Insights - Journeys using a JavaScript API, which is defined in the file `FormCapture.bundle.js` and is included in the snippet.
 
 The form capturing setup consists of these steps:
-It is accomplished by the following steps:
 
 1. Get the reference to the form element on the page.
 1. Define the mapping of form fields on fields (entity attributes) in Customer Insights - Journeys.
@@ -64,7 +62,7 @@ It is accomplished by the following steps:
 
 #### 1. Get a reference to the form element
 
-To get a reference to the form element, you can use the `waitForElement` helper function. It also works with dynamically rendered elements and returns a promise that will resolve once the element with the given selector is found on the page. For a reference of CSS selectors, see this [documentation](https://www.w3schools.com/cssref/css_selectors.php).
+To get a reference to the form element, you can use the `waitForElement` helper function. It also works with dynamically rendered elements and returns a promise that is resolved once the element with the given selector is found on the page. For a reference of CSS selectors, see this [documentation](https://www.w3schools.com/cssref/css_selectors.php).
 
 **Example:**
 
@@ -82,7 +80,7 @@ d365mktformcapture.waitForElement("#form1").then(form => {
 
 #### 2. Define the mapping of form fields
 
-Fields in the form need to be mapped to the respective fields (entity attributes0) in Customer Insights - Journeys. That can be achieved using the function `d365mktformcapture.serializeForm(form, mappings)`.
+Fields in the form need to be mapped to the respective fields (entity attributes) in Customer Insights - Journeys. The mapping is defined in the function `d365mktformcapture.serializeForm(form, mappings)`.
 
 **Example:**
 
@@ -145,11 +143,11 @@ export enum FormFieldMappingStatus {
 }
 ```
 
-Make sure you handle all errors returned by the `FormFieldMappingResults`. You can then send the payload to Customer Insights - Journeys by calling `serializedForm.SerializedForm.build()`.
+Make sure you handle all errors returned by the `FormFieldMappingResults`. You can create the payload to Customer Insights - Journeys by calling `serializedForm.SerializedForm.build()`.
 
 ##### 2.1 Mapping of OptionSet Fields
 
-For `OptionSet` fields, you need to define the mapping to the respective value that should be stored in Customer Insights - Journeys. This can be achieved via the `DataverseFieldValue` property.
+For `OptionSet` fields, you need to define the mapping to the respective value that should be stored in Customer Insights - Journeys. You can map your existing form OptionSet fields values in the `DataverseFieldValue` property.
 
 **Example:**
 
@@ -176,7 +174,7 @@ For `OptionSet` fields, you need to define the mapping to the respective value t
 
 ##### 2.2 Mapping of Lookup Fields
 
-Only static (default) values are supported by the out-of-the-box mapping logic for lookup fields. You need to define the name of the field as well as the value that should be stored on Dynamics 365 side.
+You can use only static (default) values in the out-of-the-box mapping logic for lookup fields. You need to define the name of the field and the value that should be stored in Customer Insights - Journeys.
 
 **Example:**
 
@@ -199,7 +197,7 @@ Only static (default) values are supported by the out-of-the-box mapping logic f
 
 ##### 3. Define the mapping of Consent fields
 
-Consent fields need to be configured in the Form editor in Customer Insights - Journeys. The `DataverseFieldName` and `DataverseFieldValue` mappings will be auto-generated accordingly.
+Consent fields need to be configured in the Form editor in Customer Insights - Journeys. The `DataverseFieldName` and `DataverseFieldValue` mappings are autogenerated accordingly.
 
 **Example:**
 
@@ -226,7 +224,7 @@ Consent fields need to be configured in the Form editor in Customer Insights - J
 Once you get a reference to the form, define the mappings, and serialize the form, you can add an event listener to the `submit` event and send it via the `d365mktformcapture.submitForm(captureConfig, payload)` function. This call returns a promise, and errors can be handled in the `catch` logic.
 
 > [!IMPORTANT]
-    > If you have a custom validation in place or a Captcha check, make sure you submit the Form to Customer Insights - Journeys only in case of a successful validation (e.g., check for `isDefaultPrevented` on the `submit` event or explicitly call `submitForm` only after the validation passes)
+> If you have a custom validation in place or a Captcha check, make sure you submit the Form to Customer Insights - Journeys only in case of a successful validation (e.g., check for `isDefaultPrevented` on the `submit` event or explicitly call `submitForm` only after the validation passes)
 
 **Example:**
 
@@ -266,8 +264,8 @@ d365mktformcapture.waitForElement("#form1").then(form => {
 
 ### The call to the submission endpoint fails with a CORS error
 
-This could be a common cause for submissions not to be captured. Please add the domain to be allowed for form hosting. Learn more about [domain authentication](https://learn.microsoft.com/en-us/dynamics365/customer-insights/journeys/domain-authentication).
+Cross-Origin Resource Sharing can cause  form submission capture to fail. Enable your domain for external form hosting. Learn more about [domain authentication](https://learn.microsoft.com/en-us/dynamics365/customer-insights/journeys/domain-authentication).
 
-### Consent values are not updated correctly
+### Consent values aren't updated correctly
 
 Make sure you have setup the respective consent fields in the Form editor (see section "Creating the form capture in Customer Insights - Journeys form editor") and used the correct mappings generated in the publishing process.
