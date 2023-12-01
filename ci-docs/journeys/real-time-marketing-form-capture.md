@@ -1,6 +1,6 @@
 ---
 title: Create Customer Insights - Journeys form capture
-description: Create forms in Dynamics 365 Customer Insights - Journeys.
+description: Create form capture in Dynamics 365 Customer Insights - Journeys.
 ms.date: 11/23/2023
 ms.topic: article
 author: petrjantac
@@ -264,7 +264,7 @@ d365mktformcapture.waitForElement("#form1").then(form => {
 
 ### The call to the submission endpoint fails with a CORS error
 
-Cross-Origin Resource Sharing can cause  form submission capture to fail. Enable your domain for external form hosting. Learn more about [domain authentication](https://learn.microsoft.com/en-us/dynamics365/customer-insights/journeys/domain-authentication).
+Cross-Origin Resource Sharing can cause  form submission capture to fail. Enable your domain for external form hosting. Learn more about [domain authentication](domain-authentication.md).
 
 ### Consent values aren't updated correctly
 
