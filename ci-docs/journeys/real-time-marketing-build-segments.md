@@ -38,7 +38,7 @@ In the right pane of the segment builder, you can search for attributes to add t
 
 In addition to having a segment return its targeting entity (such as contacts or leads), you can also build more complex queries that reference other tables (such as Event Registration or Account) to further enrich your segment definition.
 
-When adding an attribute that relates to a different table, you can search for the attribute, then define how the two tables are related based on your segment definition.
+When adding an attribute that relates to a different table, you can search for the attribute, then define how the two tables are related based on your segment definition. Please note 'Track changes' in related table needs to be enabled. For new or existing tables it can be checked from table properties.
 
 **Example:** Leads whose parent accounts are in the Consumer Services industry.
 
