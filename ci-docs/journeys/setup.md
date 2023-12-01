@@ -1,7 +1,7 @@
 ---
 title: Install and manage Customer Insights
 description: How to install, uninstall, and manage Dynamics 365 Customer Insights environments.
-ms.date: 11/02/2023 
+ms.date: 11/30/2023 
 ms.topic: article
 author: alfergus
 ms.author: alfergus
