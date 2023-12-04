@@ -20,3 +20,7 @@ ms.reviewer: radsay01
 - [Dialog with data](faqs-dialog-data.md)
 - [Environment status summary](faqs-environment-status.md)
 - [Segment creation](faqs-segment-creation.md)
+
+[!INCLUDE [copilot-availability](includes/copilot-availability.md)]
+
+[!INCLUDE [footer-banner](includes/footer-banner.md)]

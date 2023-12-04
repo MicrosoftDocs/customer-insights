@@ -63,6 +63,8 @@ In addition to the data prep report, you get contextual information related to i
 
 On the **Predictions** page under the **Create** tab, models labeled as **Use this model** are most suited to your data while models labeled as **Not ready to use** aren't. For any **Not ready to use** models, review the full data prep report and make the necessary fixes to your data per the guidance of the Issues and recommendations section.
 
+[!INCLUDE [copilot-availability](includes/copilot-availability.md)]
+
 ## Next steps
 
 - [Create and manage predictions](predictions.md)
