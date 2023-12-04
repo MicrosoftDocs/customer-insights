@@ -43,6 +43,6 @@ Once you have added a rule to a table, you can configure which row to select as 
 
 ## Next steps
 
-- [Fuzzy matching](data-unification-concepts-fuzzy.md)
+- [Fuzzy matching](data-unification-concepts-fuzzy-matching.md)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
