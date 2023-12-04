@@ -42,8 +42,8 @@ The basic calculation to determine the edit distance score is: (Base string leng
 
 Customer Insights – Data provides powerful data normalization routines that can handle many data discrepancies more efficiently than fuzzy matching. You can select one or more data normalization patterns for a column. Normalization doesn't change your data in the final output. The normalized data is only used for comparison purposes to match customer records more effectively.
 
-| Normalization       | Examples       |
-| ------------------- | -------------- |
+| Normalization       | Examples               |
+| ------------------- | ---------------------- |
 | Numerals            | Converts Unicode representations of numbers to the number.<br>Examples: □ and Ⅷ are both normalized to the number 8.<br>Note: The symbols must be encoded in Unicode Point Format.  |
 | Symbols             | Removes the following symbols: !"#$%&'()\*+,-./:;<=>?@[\\]^_\`{|}~         |
 | Text to lower case  | Converts upper case characters to lower case. <br>Example: ‘THIS Is aN EXamplE’ is converted to ‘this is an example’   |
@@ -55,7 +55,7 @@ Customer Insights – Data provides powerful data normalization routines that ca
 | Whitespace          | Removes all white space         |
 | Alias mapping       | Allows you to upload a custom list of string pairs that can then be used to indicate strings that should always be considered an exact match. <br>Use alias mapping when you have specific data examples you think should match, and aren't matched using one of the other normalization patterns. <br>Example: Scott and Scooter, or IBM and International Business Machines. |
 | Custom bypass       | Allows you to upload a custom list of strings that can then be used to indicate strings that should never be matched.<br>Custom bypass is useful when you have data that has common values that should be ignored, such as a dummy phone number or dummy email. <br>Example: Never match the phone 555-1212, or test@example.com   |
-                                                      |
+
 ## Performance – use exact match conditions too
 
 Fuzzy matching is powerful, but takes more time and resources than exact matching. It is best to use data normalization as your first approach for data irregularities, and use fuzzy matching strategically.  
