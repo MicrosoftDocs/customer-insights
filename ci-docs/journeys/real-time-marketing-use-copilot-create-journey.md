@@ -24,7 +24,7 @@ ms.custom:
 > 
 > Microsoft doesn't provide support for this preview feature. Microsoft Dynamics 365 Technical Support won’t be able to help you with issues or questions. Preview features aren’t meant for production use, especially to process personal data or other data that are subject to legal or regulatory compliance requirements.
 
-> [!VIDEO cb3e60fb-df67-46b2-b053-10eb0db5e048]
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RW1dihO]
 
 With the journey copilot, anyone can now use every day conversational language to create marketing journeys without requiring deep knowledge about the product. You can even improve the copilot by giving feedback, helping you achieve more detailed results in the future.
 

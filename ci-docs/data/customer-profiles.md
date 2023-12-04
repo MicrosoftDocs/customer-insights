@@ -47,7 +47,7 @@ Filter customers by the *Customer* table fields. Filterable fields are defined b
 
 1. On the **Customers** page, select **Show filters**. The Filter pane displays.
 
-1. Check the boxes next to the attributes you want to filter customers by.
+1. Check the boxes next to the columns you want to filter customers by.
 
 1. Remove all filters by selecting **Clear filters** or clear a checkbox next to a selected attribute.
 
