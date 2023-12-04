@@ -66,12 +66,16 @@
   items:
     - name: Data unification overview
       href: data-unification.md
+    - name: Data unification concepts and scenarios
+      items:
+       - name: Deduplication concepts and scenarios
+         href: data-unification-concepts-dedpulication.md
+       - name: Fuzzy matching
+         href: data-unification-concepts-fuzzy-matching.md
     - name: Describe customer data
       href: data-unification-map-tables.md
     - name: Remove duplicates in each table
       href: data-unification-duplicates.md
-    - name: Deduplication considerations
-      href: data-unification-duplicates-considerations.md
     - name: Matching rules
       href: data-unification-match-tables.md
     - name: Unify customer fields

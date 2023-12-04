@@ -1,7 +1,7 @@
 ---
 title: "Remove duplicates before unifying data"
 description: "The second step in the unification process is selecting which record to keep when duplicates are found."
-ms.date: 11/13/2023
+ms.date: 12/04/2023
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -19,7 +19,7 @@ Rules are processed in order.  After all rules have been run on all the records 
 
 ## Define deduplication rules
 
-A good rule identifies a unique customer. Consider your data. It might be enough to identify customers based on a field such as email. However, if you want to differentiate customers that share an email, you might choose to have a rule with two conditions, matching on Email + FirstName. For more information, see [Deduplication concepts and examples](data-unification-concepts.md#deduplication-example).
+A good rule identifies a unique customer. Consider your data. It might be enough to identify customers based on a field such as email. However, if you want to differentiate customers that share an email, you might choose to have a rule with two conditions, matching on Email + FirstName. For more information, see [Deduplication concepts and scenarios](data-unification-concepts-dedpulication.md).
 
 1. On the **Deduplication rules** page, select a table and select **Add rule** to define the deduplication rules.
 
