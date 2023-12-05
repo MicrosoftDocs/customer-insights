@@ -45,7 +45,7 @@ Customer Insights – Data provides powerful data normalization routines that ca
 | Normalization       | Examples               |
 | ------------------- | ---------------------- |
 | Numerals            | Converts Unicode representations of numbers to the number.<br>Examples: □ and Ⅷ are both normalized to the number 8.<br>Note: The symbols must be encoded in Unicode Point Format.  |
-| Symbols             | Removes the following symbols: !"#$%&'()\*+,-./:;<=>?@[\\]^_\`{|}~         |
+| Symbols             | Removes symbols and special characters.<br>Examples: !?"#$%&'( )+,.-_/:;<=>@^_\~{}`[ ]     |
 | Text to lower case  | Converts upper case characters to lower case. <br>Example: ‘THIS Is aN EXamplE’ is converted to ‘this is an example’   |
 | Type – Phone        | Converts phones in various formats to digits, and accounts for variations in how country codes and extensions are presented. <br>Example: +01 425.555.1212 = 1 (425) 555-1212  |
 | Type - Name         | Converts over 500 common name variations and titles. <br>Examples: "debby" -> "deborah", "prof"  and "professor" -> "Prof." |
