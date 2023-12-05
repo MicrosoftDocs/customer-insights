@@ -15,7 +15,7 @@ ms.custom: bap-template
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
-Dynamics 365 customers can access more data and insights made available by the unified customer profile while working with a contact or lead. When unification is run, Customer Insights – Data creates a relationship from each contact or lead to the associated customer profile table by creating a standard Dataverse lookup column called CustomerID that links the records. From this link, you can view the details of a contact or lead and easily access the extended information and insights for that contact or lead from Customer Insights – Data.
+Dynamics 365 customers can access more data and insights made available by the unified customer profile while working with a contact or lead. When unification is run, Customer Insights – Data creates a relationship from each contact or lead to the associated customer profile table by creating a standard Microsoft Dataverse lookup column called CustomerID that links the records. From this link, you can view the details of a contact or lead and easily access the extended information and insights for that contact or lead from Customer Insights – Data.
 
 To link contacts or leads to a unified customer profile, the contact or lead tables must be imported to Customer Insights – Data through the [Microsoft Dataverse connector](connect-dataverse.md) or the [Power Query Dataverse connector](connect-power-query.md) and [unified.](data-unification.md) Other data connector types will be supported in the upcoming months. When unification runs, a relationship is created between the Dataverse tables that were unified and the customer profile table. Contacts, leads, and other Dataverse records can natively reference their associated unified customer profile using the Dataverse relationship. In addition, the customer profile table provides relationships to [measures](measures.md) tables, making measures easily accessible.
 
@@ -26,5 +26,18 @@ Examples of using this native linking include:
 - A marketing team can personalize email communications and thoughtfully branch a journey based on data in the unified profile, providing a distinct journey experience for customers based on data not previously available in Dynamics 365.
 
 - Service reps can provide personalized service knowing the customer’s loyalty tier or prediction to churn.
+
+## Requirements
+
+- Source tables, such as the contact table, must be ingested directly from the default Dataverse environment, through the [Microsoft Dataverse connector](connect-dataverse.md) or the [Power Query Dataverse connector.](connect-power-query.md)
+- Only source tables from Dataverse that are included in unification can be linked to the customer profile.
+- On the [Describe customer data step for unification](data-unification-map-tables.md), the source table's primary key must correspond to the table's actual primary key. For example, the standard contact and lead tables primary keys are *ContactId* and *LeadId*.
+
+> [!NOTE]
+> Customer Insights - Data environments configured to write output to a private data lake aren't supported.
+
+## Native linking task
+
+The task that updates the Dataverse tables with a link to the customer profile is called **CustomerId Backstamping Hydration**. To see the results from the task, go to **Settings** > **System** and select the **Status** tab. The taks is under **Dataverse Hydration**. This task runs asynchronously and doesn't block or delay any other task.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
