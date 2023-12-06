@@ -1,6 +1,6 @@
 ---
-title: Transition segments, emails, and journeys
-description: Learn how to transition segments, emails, and journeys from outbound marketing to real-time journeys in Dynamics 365 Customer Insights - Journeys.
+title: Transition segments, emails, journeys, and assets
+description: Learn how to transition segments, emails, journeys, and assets from outbound marketing to real-time journeys in Dynamics 365 Customer Insights - Journeys.
 ms.date: 11/16/2023
 ms.topic: article
 author: alfergus
@@ -11,7 +11,7 @@ search.audienceType:
   - enduser
 ---
 
-# Transition segments, emails, and journeys
+# Transition segments, emails, journeys, and assets
 
 [!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
@@ -28,13 +28,17 @@ It's not possible to use outbound marketing e-mails directly in real-time journe
 > [!div class="mx-imgBorder"]
 > ![Select emails screenshot.](media/transition-select-emails.png "Select emails screenshot")
 
-Importing outbound marketing emails not only saves a lot of time, but also protects your investment in expensive designs and layouts. During the import, most of the functionality like personalization and content blocks is also transitioned. After the import, make sure to check to see if all settings and personalizations are correct. Also, you need to choose the right compliance settings for the email before you can go live and use the email in a journey.
+Importing outbound marketing emails not only saves time, but also protects your investment in expensive designs and layouts. During the import, most of the functionality like personalization and content blocks is also transitioned. After the import, make sure to check to see if all settings and personalizations are correct. Also, you need to choose the right compliance settings for the email before you can go live and use the email in a journey.
 
 While reviewing the imported emails, it's worth considering whether you should start using [brand profiles](brand-profiles.md). Brand profiles provide the ability to standardize content like links to your company’s LinkedIn in a similar manner that content settings do for outbound marketing.
 
 ## Journeys
 
 Journeys in real-time journeys are the equivalent to customer journeys in outbound marketing. Journeys are the container that define the sequence of marketing actions that contacts are involved in. The underlying architecture for journeys in the real-time journeys module is fundamentally different from outbound marketing, which is why journeys can't be transferred automatically and manual recreation of the journey is required.
+
+## Asset library
+
+No migration of the asset library should be needed. If you're using the outbound marketing asset library, the same asset library is used by real-time journeys, so you can continue to use all previously uploaded assets. If you're using an external asset library, the process remains the same (get the URL of the asset from the external library and insert it in your messages).
 
 ## Relevant upcoming features
 
@@ -43,7 +47,7 @@ The features listed below may be of interest as you transition from outbound mar
 ### Scheduling
 
 - **Quiet hours**: Control when messages get delivered, increasing engagement and meeting customer preferences. Comply with regulations by only reaching customers at their preferred times. Prevent nighttime, weekend, or holiday deliveries, and adjust settings per channel, message type, or business line. Learn more: [Improve communication timing by setting up quiet times](/dynamics365/release-plan/2023wave2/marketing/dynamics365-marketing/prevent-messages-sending-during-unwanted-times-setting-up-quiet-times-using-copilot)
-- **Send scheduling**: Elevate your customer engagement, conversion rates, and revenue with our send scheduling in real-time journeys. Reach your customers when they are the most active and likely to respond aligning their habits and preferences. Schedule deliveries within specific time frames daily, or on particular days weekly to maximize impact. Learn more: [Reach customers at the right moment with send scheduling](/dynamics365/release-plan/2023wave2/marketing/dynamics365-marketing/reach-customers-at-right-moment-send-scheduling)
+- **Send scheduling**: Elevate your customer engagement, conversion rates, and revenue with our send scheduling in real-time journeys. Reach your customers when they're the most active and likely to respond aligning their habits and preferences. Schedule deliveries within specific time frames daily, or on particular days weekly to maximize impact. Learn more: [Reach customers at the right moment with send scheduling](/dynamics365/release-plan/2023wave2/marketing/dynamics365-marketing/reach-customers-at-right-moment-send-scheduling)
 
 ### Email
 
