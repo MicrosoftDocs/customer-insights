@@ -39,6 +39,9 @@ Before sending your message, select the **Check content** button in the upper ri
 
 Next, test your message by selecting the **Test send** button in the upper right. If you’re using an Azure Communication Services preview toll-free sender number, you can test send the message to any United States mobile number. If you’re using a Twilio or TeleSign sender number, you can send the message to a mobile device in any supported country. You can also add the message to a journey to see how it can be triggered by events.
 
+> [!NOTE]
+> If your text message exceeds 160 characters SMS protocol will split and merge content of a logical single message. SMS providers may charge for more than one message for text messages that exceed 160 characters.
+
 ## Personalize text messages
 
 Personalizing text messages allows you to insert dynamic data that is unique to each message recipient. You might want to dynamically populate a name, an appointment time, a location, or any other unique data.

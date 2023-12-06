@@ -15,16 +15,6 @@ search.audienceType:
 
 [!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
-> [!IMPORTANT]
-> A preview feature is a feature that is not complete, but is made available before it’s officially in a release so customers can get early access and provide feedback. Preview features aren’t meant for production use and may have limited or restricted functionality.
->
-> Microsoft doesn't provide support for this preview feature. Microsoft Dynamics 365 Technical Support won’t be able to help you with issues or questions. Preview features aren’t meant for production use, especially to process personal data or other data that are subject to legal or regulatory compliance requirements.
-
-> [!NOTE]
-> The quiet times preview must be enabled using the developer tools in your web browser. To enable it, open the developer tools, go to the **Console**, and execute the following command: getGlobalContextObject().saveSettingValue('msdynmkt_IsQuietTimeFeatureEnabled', true)
->
-> Once the command has been run, you need to hard refresh your browser. The quiet times preview appears in the **Settings** of the Customer Insights - Journeys app after that.
-
 Quiet times enable you to configure specific times when messages won't send to customers to avoid contacting them when it's inappropriate. You might not want to send messages at specific times due to regulations, business policies, or other factors. Typically, quiet times are configured for overnight hours, weekends, or holidays. When quiet times are in place, the system holds the messages until the quiet times end.
 
 To set up quiet times, visit **Settings** > **Customer engagement** > **Quiet times**. If no quiet time setting exists, use the **New** button in the ribbon to get started.
@@ -32,9 +22,6 @@ To set up quiet times, visit **Settings** > **Customer engagement** > **Quiet ti
 The **New Quiet Time Setting** page allows you to configure weekly quiet hours and quiet dates for your messages. You can also specify different quiet times for commercial and transactional message types. For instance, many organizations want to prevent commercial messages from sending at odd hours, but they expect transactional messages to send immediately.
 
 In addition, you can differentiate your quiet times by message channel, such as email, text message, and custom channels. Often, customers are more sensitive about receiving text messages during off-hours than they're to receive an email, so you can have different quiet times for each channel, if desired.
-
-> [!NOTE]
-> Push notifications will be supported in a follow-on release.
 
 ## Set up quiet times
 
