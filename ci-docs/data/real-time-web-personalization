@@ -14,7 +14,20 @@ ms.custom: bap-template
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
 As customers engage with your business, they constantly provide signals about their interests and preferences, such as adding a product to a cart, viewing your pricing quote, signing up for a trial, and more. It's crucial to build on these signals as they happen so you can deliver the right experience at the right time.
-With Customer Insights - Data, you can now ensure customer profiles are updated in real time based on these signals, allowing you to provide the most targeted and personalized experience as they engage with your website or mobile app. This empowers you to foster loyalty, increase engagement, enhance satisfaction, and drive higher conversion rates.
+With Customer Insights - Data, you can now ensure customer profiles are updated in real-time based on these signals, allowing you to provide the most targeted and personalized experience to your customers as they engage with your website. This empowers you to foster loyalty, increase engagement, enhance satisfaction, and drive higher conversion rates.
+
+Customer Insights - Data enables you to:
+1. Track your customer's website interactions in real-time
+2. Automatically let the system create [unknown profiles](link_to_unknown_profiles.md) if your customers are not authenticated 
+3. Continuously enhance your customer profiles when they return to your website with progressive profiling
+4. Seamlessly merge unknown profiles into known profiles in real-time, so you can always have the 360-degree view of your customers
+5. Personalize your customer's web experience in real-time and engage with them in the moments that matter
+
+This enables you to achieve the following scenarios:
+1. Promote a premium coffee machine on your website if a customer browses other premium coffee machines 
+2. Offer a discount code on the website to all your customers who are members of the 'high lifetime value' segment
+3. Dynamically update the text on your website to add a welcome message to your loyal customers 
+4. Send an email to your customers promoting your premium coffee machines if they read the reviews of similar products in the last 30 days
 
 > [!TIP]
 > To upload a single CSV file, unify the data, and automatically generate insights, go to [Get started using a single data source](data-sources-single.md).
