@@ -1,7 +1,7 @@
 ---
 title: "Data unification concepts and scenarios"
 description: "Understand the concepts behind deduplication when unifying data in Customer Insights - Data."
-ms.date: 12/01/2023
+ms.date: 12/07/2023
 ms.reviewer: v-wendysmith
 ms.topic: conceptual
 author: Scott-Stabbert
@@ -10,6 +10,8 @@ ms.custom: bap-template
 ---
 
 # Deduplication concepts and scenarios
+
+[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
 In this simple example, records 1, 2 and 3 share either an email or phone, and represent the same person.
 
@@ -31,7 +33,7 @@ You decide the number of rules, and the conditions that uniquely identify your c
 
 You can select **Normalization** routines to standardize data to get better matching, such as when you want to ignore extra whitespace or variations in case sensitivity between two strings. Normalization only impacts matching. It doesn't change the data in the final unified customer profile output.
 
-You can select a **Precision** setting less than "Exact" to use fuzzy matching. Fuzzy matching is effective at matching strings that are close, but not exact in order to account for typos and small variations. For example, when comparing bob@contoso.com and bob@contoso.cm.
+You can select a **Precision** setting less than "Exact" to use fuzzy matching. [Fuzzy matching](data-unification-dedup-fuzzy.md) is effective at matching strings that are close, but not exact in order to account for typos and small variations. For example, when comparing bob@contoso.com and bob@contoso.cm.
 
 You can add conditions to a rule, such as matching FirstName and Phone. Conditions within a given rule are "AND" conditions; every condition must match for the rows to match. But separate rules are "OR" conditions. If rows aren't matched by Rule 1, then they can be matched by Rule 2.
 
@@ -43,6 +45,6 @@ Once you have added a rule to a table, you can configure which row to select as 
 
 ## Next steps
 
-- [Precision and fuzzy matching](data-unification-concepts-fuzzy-matching.md)
+- [Remove duplicates in each table](data-unification-duplicates.md)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

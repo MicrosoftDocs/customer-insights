@@ -1,16 +1,3 @@
----
-title: "Precision and fuzzy matching"
-description: "Understand the concepts behind deduplication when unifying data in Customer Insights - Data."
-ms.date: 12/01/2023
-ms.reviewer: v-wendysmith
-ms.topic: conceptual
-author: Scott-Stabbert
-ms.author: sstabbert
-ms.custom: bap-template
----
-
-# Precision and fuzzy matching
-
 Fuzzy matching allows you to deduplicate and match string data when the data doesn’t exactly match. String data with typos and other small differences are good candidates for fuzzy matching.  
 
 Each condition in a rule has a setting called **Precision** where you select how close two strings should be to be considered a match. The default precision setting requires an exact match for the strings being compared to match. Selecting any other value for precision enables fuzzy matching for that condition.
@@ -64,7 +51,3 @@ Fuzzy matching is powerful, but takes more time and resources than exact matchin
 The exact match conditions are run first to obtain a smaller set of values that need to be fuzzy matched. To be effective, the exact matching conditions should have a reasonable degree of uniqueness. For example, if all your customers live in the same country, then having an exact match on country would likely not help narrow the scope.
 
 Columns like full name, email, phone or address fields have good uniqueness and are great columns to use as an exact match.
-
-## Next steps
-
-- [Deduplication concepts and scenarios](data-unification-concepts-dedpulication.md)
