@@ -16,6 +16,9 @@ ms.author: philk
 
 Create visualizations for your data with the Microsoft Power BI Desktop. Generate additional insights and build reports with your unified customer data.
 
+> [!TIP]
+> We recommend using one of the default options [to use Power BI with Dataverse data](/power-apps/maker/data-platform/use-powerbi-dataverse).
+
 ## Prerequisites
 
 - Unified customer profiles.
