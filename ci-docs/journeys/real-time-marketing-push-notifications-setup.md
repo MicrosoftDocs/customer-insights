@@ -1,7 +1,7 @@
 ---
 title: Set up push notifications
 description: Learn how to set up push notifications for Customer Insights - Journeys
-ms.date: 12/01/2023
+ms.date: 12/01/2023 
 ms.topic: article
 author: alfergus
 ms.author: alfergus
