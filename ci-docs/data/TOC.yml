@@ -75,13 +75,13 @@
         - name: Deduplication concepts and scenarios
           href: data-unification-concepts-deduplication.md
         - name: Precision and fuzzy matching
-          href: data-unification-dedup-fuzzy.md
+          href: data-unification-fuzzy-matching.md
     - name: Matching rules
       items: 
         - name: Define matching rules
           href: data-unification-match-tables.md
         - name: Precision and fuzzy matching
-          href: data-unification-match-fuzzy.md
+          href: data-unification-fuzzy-matching.md
     - name: Unify data
       href: data-unification-merge-tables.md
     - name: Review data unification
