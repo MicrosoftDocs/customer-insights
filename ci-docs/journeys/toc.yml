@@ -440,6 +440,14 @@
       href: real-time-marketing-audience-data.md
     - name: Customer Insights - Journeys link tracking mechanics
       href: real-time-marketing-link-tracking-mechanics.md
+  - name: Text message and push notification setup
+    items:
+    - name: Set up text messaging
+      href: real-time-marketing-text-messaging-setup.md
+    - name: Manage SMS (text message) keywords used in customer journeys
+      href: manage-sms-keywords.md
+    - name: Set up push notifications
+      href: real-time-marketing-push-notifications-setup.md
   - name: Email administration
     items:
     - name: Get started with email
@@ -508,14 +516,6 @@
       href: recurring-activity-bulk-delete.md
     - name: Customer Insights - Journeys public IP addresses
       href: marketing-public-ips.md
-  - name: Text message and push setup
-    items:
-    - name: Set up text messaging
-      href: real-time-marketing-text-messaging-setup.md
-    - name: Manage SMS (text message) keywords used in customer journeys
-      href: manage-sms-keywords.md
-    - name: Set up push notifications
-      href: real-time-marketing-push-notifications-setup.md
   - name: Terms and fair use
     items:
     - name: Service limits and fair use policy
