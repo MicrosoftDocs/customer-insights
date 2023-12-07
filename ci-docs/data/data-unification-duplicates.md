@@ -37,7 +37,7 @@ A good rule identifies a unique customer. Consider your data. It might be enough
         - **Type (Phone, Name, Address, Organization)**: Standardizes names, titles, phone numbers, addresses, etc.
         - **Unicode to ASCII**: Converts Unicode characters to their ASCII equivalent. For example, the accented ề converts to the e character.
         - **Whitespace**: Removes all spaces. *Hello   World* becomes *HelloWorld*.
-      - **Precision**: Set the level of precision. Precision is used with fuzzy matching, and determines how close two strings need to be in order to be considered a match.
+      - **Precision**: Set the level of precision. [Precision is used with fuzzy matching](data-unification-concepts-fuzzy-matching.md), and determines how close two strings need to be in order to be considered a match.
         - **Basic**: Choose from *Low (30%)*, *Medium (60%)*, *High (80%)*, and *Exact (100%)*. Select **Exact** to only match records that match 100 percent.
         - **Custom**: Set a percentage that records need to match. The system only matches records passing this threshold.
       - **Name**: Name for the rule.
