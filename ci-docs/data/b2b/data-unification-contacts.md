@@ -1,7 +1,7 @@
 ---
 title: "Create a unified business contact profile"
 description: "Learn how to use the data unification process to create a profile of your business contacts that combines data from multiple sources."
-ms.date: 09/01/2023
+ms.date: 11/28/2023
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -90,7 +90,7 @@ This last step in the unification process shows a summary of the steps in the pr
 
 1. Select **Edit** on any of the contact unification steps to review and make any changes.
 
-1. If you are satisfied with your selections, select **Create contact profiles**. The **Unify** page displays while the unified contact profile is being created.
+1. If you are satisfied with your selections, select **Create contact profiles**. The **Unify** page displays while the unified contact profile is being created. If the message "Object reference not set to an instance of an object" appears, there are references to columns that were deleted or renamed before saving the conflation plans. Update the tables and rerun contact unification.
   
    :::image type="content" source="media/b2b_unify_refreshing.svg" alt-text="Screenshot of Unify Contacts page with tiles showing Queued or Refreshing.":::
 
