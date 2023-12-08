@@ -29,6 +29,18 @@ This enables you to achieve the following scenarios:
 3. Dynamically update the text on your website to add a welcome message to your loyal customers 
 4. Send an email to your customers promoting your premium coffee machines if they read the reviews of similar products in the last 30 days
 
+## Setting up Web Tracking
+To configure web personalization, you need to first set up web tracking. To do this, go to Customer Insights - Data > Web tracking and personalization. From the dropdown, select the Table that the tracking script should use to identify your customers when they authenticate (read more link). Copy the tracking script, and paste it in the <head> tag of your website. If you're using a tag manager such as Google Tag Manager, go to the Google Tag Manager portal > add new tag > tag configuration > custom HTML > paste the Customer Insights - Data tracking script > Save. If you're using a Content Management System (CMS) such as Wordpress, your CMS provider should have an easy way to add a script to the header. Example from Wordpress: https://wordpress.com/support/adding-code-to-headers/
+
+Once you've added the tracking script to your website, browse the website like a visitor. You will see Customer Insights - Data automatically create unknown profiles for your visitors. All unknown profiles will have the cookieId as an identifier and will display the web interactions on the timeline automatically. You can also validate the incoming web events in Dataverse: <add link to table>. <read more link about schema of tables>
+
+<disclaimer here about cookies -> including retention, purpose, how to enable/disable tracking>
+
+## Authenticating customers 
+
+
+
+
 > [!TIP]
 > To upload a single CSV file, unify the data, and automatically generate insights, go to [Get started using a single data source](data-sources-single.md).
 > [!INCLUDE [single-file-us-only](includes/single-file-us-only.md)]
