@@ -111,9 +111,17 @@ When a column is removed from a data source, the system checks for dependencies 
 
 After the data source has refreshed, go to **Data** > **Tables** page. Select the table for the data source and verify the schema.
 
-## Manually run a full data refresh on a Delta table folder
+## Delta lake time travel and data refreshes
 
-A full refresh takes all the data from a table in Delta format and reloads it from the Delta table version zero (0). Changes to Delta folders are versioned, and Customer Insights - Data uses the Delta folder versions to keep track of what data to process. If Customer Insights – Data last synchronized with version 23 of your Delta folder data, it expects to find version 23 and possibly subsequent versions available. If the expected data versions aren't available, [data synchronization fails](#data-synchronization-failure).
+Delta lake time travel is the ability to query through table versions based on a timestamp or version number. Changes to Delta folders are versioned, and Customer Insights - Data uses the Delta folder versions to keep track of what data to process. In a regular delta table refresh, data is pulled from all the data table versions since the last refresh. As long as all versions are present, Customer Insights - Data can process just the changed elements and deliver faster results. [Learn more about time travel](https://www.databricks.com/blog/2019/02/04/introducing-delta-time-travel-for-large-scale-data-lakes.html).
+
+Data synchronization can fail if your Delta folder data was deleted and then recreated. Or if Customer Insights - Data couldn't connect to your Delta folders for an extended period while the versions advanced. In the case where a version of the data is missing, you must perform a full data refresh on the table.
+
+To avoid the need for a full data refresh, we recommend you maintain a reasonable history backlog, such as 15 days.
+
+### Manually run a full data refresh on a Delta table folder
+
+A full refresh takes all the data from a table in Delta format and reloads it from the Delta table version zero (0). If Customer Insights – Data last synchronized with version 23 of your Delta folder data, it expects to find version 23 and possibly subsequent versions available. If the expected data versions aren't available, data synchronization fails and requires a manual full data refresh.
 
 Changes to the Delta folder schema trigger an automatic full refresh. To manually trigger a full refresh, perform the following steps.
 
@@ -130,20 +138,6 @@ Changes to the Delta folder schema trigger an automatic full refresh. To manuall
 1. Select **Save** to run the refresh. The **Data sources** page opens showing the data source in **Refreshing** status, but only the selected table is refreshing.
 
 1. Repeat the process for other tables, if applicable.
-
-### Delta lake time travel
-
-Delta Lake time travel is the ability to query through table versions based on a timestamp or version number. In a regular delta table refresh, data is pulled from all the data table versions since the last refresh. As long as all versions are present, Customer Insights - Data can process just the changed elements and deliver faster results.
-
-In the case that a version of the data is not present, the entire table requires a complete refresh. See the image below for an example of a missing version. In this example, there are changes made between versions 1 and 6 that are no longer logged. 
-
-Tip: To avoid the need for a complete data refresh, it is suggested to keep 15 days' worth of versions. 
-
-To learn more about time travel read here: Introducing Delta Time Travel for Large Scale Data Lakes | Databricks Blog
-
-### Data synchronization failure
-
-Data synchronization can fail if your Delta folder data was deleted and then recreated. Or if Customer Insights - Data couldn't connect to your Delta folders for an extended period while the versions advanced. To minimize the impact where an intermittent data pipeline failure creates the need for a full refresh, we recommend you maintain a reasonable history backlog, such as 15 days.
 
 ## Next steps
 
