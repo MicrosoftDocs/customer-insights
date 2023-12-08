@@ -39,6 +39,11 @@ Once you've added the tracking script to your website, browse the website like a
 ## Authenticating customers 
 
 
+## Personalizing your customers web experience
+There are two ways to personalize your customers web experience:
+1. No-code web personalization using Optimizely (add link)
+2. Pro-code web personalization using APIs
+
 
 
 
