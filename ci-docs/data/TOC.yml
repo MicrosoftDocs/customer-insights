@@ -22,8 +22,6 @@
       href: home.md
     - name: Work with tags and columns
       href: work-with-tags-columns.md
-    - name: Integrate with Customer Insights - Journeys
-      href: marketing-get-started.md
 
 - name: Troubleshooting
   href: /troubleshoot/dynamics-365/customer-insights/welcome-customer-insights
@@ -359,6 +357,13 @@
     - name: Manage environment settings
       href: manage-environments.md
 
+- name: Integrations with other apps
+  items:
+    - name: Integrate with Customer Insights - Journeys
+      href: marketing-get-started.md
+    - name: Integrate with other Dynamics 365 applications
+      href: integrate-d365-apps.md
+
 - name: APIs
   items:
     - name: Dataverse APIs for Customer Insights - Data
@@ -394,27 +399,11 @@
       href: faqs-segment-creation.md
 
 - name: More resources
-  items: 
-  - name: Learning catalog
-    items:
-      - name: B2B documentation
-        href: b2b/work-with-business-accounts.md
-      - name: Certify as Microsoft Customer Data Platform Specialist
-        href: /certifications/exams/mb-260?tab=tab-instructor-led
-      - name: Get started with Customer Insights - Data
-        href: /training/modules/get-started-customer-data-platform/
-      - name: Ingest data
-        href: /training/modules/ingest-data-customer-insights/
-      - name: Create a unified customer profile
-        href: /training/modules/unified-customer-profile/
-      - name: Work with Customer Insights - Data
-        href: /training/modules/working-with-customer-insights/
-      - name: Enrich data and make predictions
-        href: /training/modules/enrich-data/
-      - name: Manage external connections
-        href: /training/modules/configure-third-party-connections/
-      - name: Administer Customer Insights - Data
-        href: /training/modules/administer-customer-data-platform/
+  items:
+  - name: B2B documentation
+    href: b2b/work-with-business-accounts.md
+  - name: Certify as Microsoft Customer Data Platform Specialist
+    href: /certifications/exams/mb-260?tab=tab-instructor-led
   - name: Removed/deprecated features
     href: removed-deprecated-features-customer-insights.md
   - name: Get support
