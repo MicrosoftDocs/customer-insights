@@ -1,7 +1,7 @@
 ---
 title: Responsible AI FAQs for content rewrite
 description: The Responsible AI FAQs discuss content rewrite and the key considerations for making use of this technology responsibly.
-ms.date: 11/27/2023
+ms.date: 12/08/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -18,32 +18,29 @@ search.audienceType:
 These responsible AI FAQs describe the AI impact of Dynamics 365 Customer Insights - Journeys's content rewrite feature.
 
 > [!NOTE]
-> Editing text with content rewrite, a copilot feature is available for the following types of content:
-> - Email, email template
-> - Form
-> - Text message
-> - Push notification
+> Editing text with content rewrite, a Copilot feature, is available for the following types of content:
+> - Email and email templates
+> - Forms
+> - Text messages
+> - Push notifications
 
 > [!NOTE]
 > Content rewrite is currently available in the United States, in the English language only.
 
-> [!Tip]
-> Learn about using the Content ideas to create inspiring email content ideas in our blog: Make email creation fun and more efficient with AI-powered content ideas in Dynamics 365 Customer Insights - Journeys
-
 ## What is Content rewrite?
 
-Content rewrite helps you to rapidly iterate on your content to optimize your messaging. Whether you're creating content for email, text messages, push notifications or forms, using copilot, you can easily rephrase messages, adjust the tone of voice, and shorten or lengthen copy, increasing productivity and delivering better results.
+Content rewrite helps you rapidly iterate on your content to optimize your messaging. Whether you're creating content for email, text messages, push notifications, or forms, using Copilot, you can easily rephrase messages, adjust the tone of voice, and shorten or lengthen copy, increasing productivity and delivering better results.
 
-Select any text and leverage copilot to:
-- re-write their text and choose from different variations
-- change tone of voice to be more engaging, formal, casual, luxury, or adventurous
-- shorten or lengthen copy
+Select any text and leverage Copilot to:
+- Rewrite  text and choose from different variations
+- Change the tone of voice to be more engaging, formal, casual, luxury, or adventurous
+- Shorten or lengthen copy
 
 ## What are the system’s capabilities?
 
 Content rewrite is built on a machine learning model called GPT-3.5. Trained on a vast number of text samples from the internet, GPT-3.5 generates new text that looks and sounds like text that was written by a human. Content rewrite masks any personal data in generated ideas and shows only the results that are long enough and unique enough to be useful.
 
-The only time a human review the content of generated text is if you report it to Microsoft (using a quick feedback survey built into the content rewrite feature).
+The only time a human reviews the content of generated text is if you report it to Microsoft (using a quick feedback survey built into the content rewrite feature).
 
 ## What is the system’s intended use?
 
@@ -57,11 +54,11 @@ Microsoft may disable the content rewrite feature for selected customers if abus
 
 ## What are the limitations of content rewrite? How can users minimize the impact of the content rewrite limitations when using the system?
 
-Content rewrite generates original content, but it isn’t always factual. In addition, because the underlying technology behind content rewrite uses AI that has been trained on a wide range of internet sources, some text suggestions may include questionable or inappropriate content. It's your responsibility to edit generated suggestions so that your final copy is accurate and appropriate.
+Content rewrite generates original content but isn’t always factual. Because the underlying technology behind content rewrite uses AI that has been trained on a wide range of internet sources, some text suggestions may include questionable or inappropriate content. It's your responsibility to edit generated suggestions so that your final copy is accurate and appropriate.
 
 ## What operational factors and settings allow for effective and responsible use of the system?
 
 Follow these procedures to make the most of the content rewrite feature:
-1. Ensure at least 10 words in your initial text.
-1. Ensure high-quality of your initial text.
+1. Ensure that you have at least 10 words in your initial text.
+1. Ensure that your initial text is of high-quality.
 1. Always review and edit content rewrite suggestions before publishing them in a marketing campaign.
