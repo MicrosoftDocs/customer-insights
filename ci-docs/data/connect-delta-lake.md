@@ -111,7 +111,7 @@ When a column is added to the data source, the information automatically appends
 
 1. In the [**Unified data view**](data-unification-update.md#manage-unified-fields) step, make sure the column isn't excluded from the customer profile. Select **Excluded** and readd the column.
 
-1. In the [**Run updates to the unified profile**](data-unification-update#run-updates-to-the-unified-profile) step, select **Unify customer profiles and dependencies**.
+1. In the [**Run updates to the unified profile**](data-unification-update.md#run-updates-to-the-unified-profile) step, select **Unify customer profiles and dependencies**.
 
 ### Change or remove a column
 
