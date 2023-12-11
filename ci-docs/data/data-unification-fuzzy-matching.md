@@ -11,6 +11,8 @@ ms.custom: bap-template
 
 # Precision and fuzzy matching
 
+[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
+
 Fuzzy matching allows you to deduplicate and match string data when the data doesn’t exactly match. String data with typos and other small differences are good candidates for fuzzy matching.  
 
 Each condition in a rule has a setting called **Precision** where you select how close two strings should be to be considered a match. The default precision setting requires an exact match for the strings being compared to match. Selecting any other value for precision enables fuzzy matching for that condition.
