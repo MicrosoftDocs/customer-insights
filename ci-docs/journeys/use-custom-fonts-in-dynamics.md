@@ -97,7 +97,7 @@ Here’s a common @font-face declaration for importing a web font into email usi
 - **Step 1**: Paste the following html into a browser tab: https://fonts.googleapis.com/css2?family="fontName"
 
 > [!NOTE] 
-> This information is available in the side navigation of the Google Fonts page:
+> This information is available in the side navigation of the Google Fonts page.
 
 > [!div class="mx-imgBorder"]
 > ![Add custom fonts using URL](media/add-custom-fonts-using-url.png "Add custom fonts using URL")
