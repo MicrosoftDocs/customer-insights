@@ -15,7 +15,7 @@ search.audienceType:
 
 [!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
-In the fast-changing field of marketing with Dynamics Customer Insights - Journeys, it's important to combine design beauty and accessibility. Typography, especially the use of web fonts, is crucial for achieving this harmony. In this guide, we'll show you how to easily use web fonts in your Dynamics Customer Insights - Journeys marketing channels, making sure they're both attractive and accessible.
+In the fast-changing field of marketing with Dynamics Customer Insights - Journeys, it's important to combine design, beauty, and accessibility. Typography, especially the use of web fonts, is crucial for achieving this harmony. In this guide, we'll show you how to easily use web fonts in your Dynamics Customer Insights - Journeys marketing channels, making sure they're both attractive and accessible.
 
 > [!NOTE]
 > By channels, we mean Emails, Forms and Event management.
@@ -24,11 +24,13 @@ In the fast-changing field of marketing with Dynamics Customer Insights - Journe
 
 In the landscape of Dynamics Customer Insights - Journeys, where visual appeal is non-negotiable, it's essential to discern between web safe fonts and web fonts.
 
-**How Fonts Operate in Dynamics Customer Insights - Journeys**: Your code declares fonts using the font-family CSS property, either as a single font or a stack of multiple fonts for fallback. This distinction lays the foundation for comprehending web fonts and web safe fonts.
-
 **Web Safe Fonts**: Drawing from local font directories, web safe fonts offer reliability. Common choices like Arial, Helvetica, and Times New Roman are preinstalled on most computers.
 
 **Web Fonts**: Pulled from servers like Google or Adobe, web fonts broaden your options but pose challenges in terms of email client, system and browser font support, a crucial consideration within Dynamics Customer Insights - Journeys.
+
+### How Fonts Operate in Dynamics Customer Insights - Journeys**: 
+
+Your code declares fonts using the font-family CSS property, either as a single font or a stack of multiple fonts for fallback. This distinction lays the foundation for comprehending web fonts and web safe fonts.
 
 ## Email Client Support within Dynamics Customer Insights - Journeys
 
@@ -67,32 +69,31 @@ For Dynamics Customer Insights - Journeys, the quest for the perfect web font in
 1. **Adobe Fonts**: Included in Creative Cloud subscriptions.
 
 ## Implementing Web Fonts in Dynamics Customer Insights - Journeys Emails: Step-by-Step
-
 You can embed fonts for use by going to the theme tab in Email and form designer or in theme tab in Brand profile. 
 
 > [!div class="mx-imgBorder"]
 > ![](media/.png "")
 
 Here are the options and steps you can follow: 
-1. Browse font library: upload the font files from the library
+1. **Browse font library**: upload the font files from the library
     - Step 1: Select browse library and you'll be presented with the list of custom fonts available to you for use.
       > [!div class="mx-imgBorder"]
       > ![](media/.png "")
     - Step 2: Select from the list of fonts available or upload new.
       > [!div class="mx-imgBorder"]
       > ![](media/.png "")
-2. Upload font files: Import font files saved in your system. 
+2. **Upload font files**: Import font files saved in your system. 
     - Step 1: Select upload font files from the “Add custom font” dropdown
       > [!div class="mx-imgBorder"]
       > ![](media/.png "")
     - Step 2: Select the respective font file from the system 
-3. Add font using URL: You can import fonts by obtaining the font file URL>
+3. **Add font using URL**: You can import fonts by obtaining the font file URL>
 How to retrieve the web font's URL from your chosen source?
 Web fonts: When you use online web font services, you usually have five file formats to pick from: .eot, .woff, .woff2, .svg, and .ttf. The .woff and .woff2 formats are the most compatible with email, so we recommend using one or both of these formats when possible. 
 
 Here’s a common @font-face declaration for importing a web font into email using Google Fonts as our chosen web font service:
 
-Google fonts:
+**Google fonts**:
 - Step 1: Paste the following html into a browser tab: https://fonts.googleapis.com/css2?family="fontName"
 
 > [!NOTE] 
@@ -101,7 +102,7 @@ Google fonts:
 > [!div class="mx-imgBorder"]
 > ![](media/.png "")
 
-- Step 2: Copy the ‘Latin’ version of the @font-face.
+- Step 2: Copy the ‘**Latin**’ version of the @font-face.
 
 > [!div class="mx-imgBorder"]
 > ![](media/.png "")
