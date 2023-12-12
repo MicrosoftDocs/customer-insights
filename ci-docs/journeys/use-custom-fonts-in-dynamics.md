@@ -38,28 +38,28 @@ Navigating the dynamics of fonts support is imperative for successful web font i
 
 | **Client** | **Support** |  |
 |---|---|---|
-| Outlook 2013-2021 | ✘ No |  |
-| Apple mail | ✓ Yes |  |
+| Outlook   2013-2021 | ✘ No |  |
+| Apple   mail | ✓ Yes |  |
 | Gmail App | ✘ No |  |
-|  | Google changes fonts – default on Android is Roboto, on iOS seems like Helvetica |  |
+|  | Google   changes fonts – default on Android is Roboto, on iOS seems like Helvetica |  |
 | Windows 11 | ✘ No |  |
-|  | maybe? Some of the web fonts appeared, but it could be that the fonts were already on the compute |  |
-| Outlook for Mac | ✓ Yes |  |
-| Outlook Office 365 (Win & Mac) | ✘ No |  |
+|  | maybe?   Some of the web fonts appeared, but it could be that the fonts were already   on the computer |  |
+| Outlook   for Mac | ✓ Yes |  |
+| Outlook   Office 365 (Win & Mac) | ✘ No |  |
 | iOS | ✓ Yes |  |
 | Samsung Mail | ✘ No |  |
-|  | Fonts changed - Roboto is the standard sans-serif |  |
+|  | Fonts   changed - Roboto is the standard sans-serif |  |
 | AOL Mail | ✘ No |  |
 | Outlook App | ✘ No |  |
-|  | Fonts changed - Roboto is the standard sans-serif |  |
+|  | Fonts   changed - Roboto is the standard sans-serif |  |
 | Samsung Mail  | ✘ No |  |
-|  | Fonts changed - Roboto is the standard sans-serif |  |
+|  | Fonts   changed - Roboto is the standard sans-serif |  |
 | AOL Mail | ✘ No |  |
 | Gmail | ✘ No |  |
-|  | kind of. I liked Roboto, so I only support some particular web fonts - maybe   only certain ones from Google Fonts, or maybe just Roboto since it's Google's   default |  |
-| Office 365 | ✘ No |  |
+|  | kind of.   I liked Roboto, so I only support some very particular web fonts - maybe only   certain ones from Google Fonts, or maybe just Roboto since it's Google's   default |  |
+| Office   365 | ✘ No |  |
 | Outlook.com | ✘ No |  |
-| Yahoo! Mail | ✘ No |  |
+| Yahoo!   Mail | ✘ No |  |
 
 ## Discovering Web Fonts for Dynamics Customer Insights - Journeys 
 
