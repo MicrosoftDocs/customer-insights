@@ -28,7 +28,7 @@ In the landscape of Dynamics Customer Insights - Journeys, where visual appeal i
 
 **Web Fonts**: Pulled from servers like Google or Adobe, web fonts broaden your options but pose challenges in terms of email client, system and browser font support, a crucial consideration within Dynamics Customer Insights - Journeys.
 
-### How Fonts Operate in Dynamics Customer Insights - Journeys**: 
+### How Fonts Operate in Dynamics Customer Insights - Journeys: 
 
 Your code declares fonts using the font-family CSS property, either as a single font or a stack of multiple fonts for fallback. This distinction lays the foundation for comprehending web fonts and web safe fonts.
 
@@ -72,20 +72,20 @@ For Dynamics Customer Insights - Journeys, the quest for the perfect web font in
 You can embed fonts for use by going to the theme tab in Email and form designer or in theme tab in Brand profile. 
 
 > [!div class="mx-imgBorder"]
-> ![](media/.png "")
+> ![Select theme to get started with font](media/select-theme-to-use-font.png "Select theme to get started with font")
 
 Here are the options and steps you can follow: 
 1. **Browse font library**: upload the font files from the library
-    - Step 1: Select browse library and you'll be presented with the list of custom fonts available to you for use.
+    - **Step 1**: Select browse library and you'll be presented with the list of custom fonts available to you for use.
       > [!div class="mx-imgBorder"]
-      > ![](media/.png "")
-    - Step 2: Select from the list of fonts available or upload new.
+      > ![Select browse library to get started with font](media/select-browse-library-to-use-font.png "Select browse library to get started with font")
+    - **Step 2**: Select from the list of fonts available or upload new.
       > [!div class="mx-imgBorder"]
-      > ![](media/.png "")
+      > ![Select from list of fonts or add a new one](media/select-fonts-from-list.png "Select from list of fonts or add a new one")
 2. **Upload font files**: Import font files saved in your system. 
-    - Step 1: Select upload font files from the “Add custom font” dropdown
+    - **Step 1**: Select upload font files from the “Add custom font” dropdown
       > [!div class="mx-imgBorder"]
-      > ![](media/.png "")
+      > ![Add custom fonts](media/add-custom-fonts.png "Add custom fonts")
     - Step 2: Select the respective font file from the system 
 3. **Add font using URL**: You can import fonts by obtaining the font file URL>
 How to retrieve the web font's URL from your chosen source?
@@ -94,20 +94,23 @@ Web fonts: When you use online web font services, you usually have five file for
 Here’s a common @font-face declaration for importing a web font into email using Google Fonts as our chosen web font service:
 
 **Google fonts**:
-- Step 1: Paste the following html into a browser tab: https://fonts.googleapis.com/css2?family="fontName"
+- **Step 1**: Paste the following html into a browser tab: https://fonts.googleapis.com/css2?family="fontName"
 
 > [!NOTE] 
 > This information is available in the side navigation of the Google Fonts page:
 
 > [!div class="mx-imgBorder"]
-> ![](media/.png "")
+> ![Add custom fonts using URL](media/add-custom-fonts-using-url.png "Add custom fonts using URL")
 
-- Step 2: Copy the ‘**Latin**’ version of the @font-face.
+- **Step 2**: Copy the ‘**Latin**’ version of the @font-face.
 
 > [!div class="mx-imgBorder"]
-> ![](media/.png "")
+> ![Select the latin version of the font](media/select-latin-version-of-font.png "Select the latin version of the font")
 
-- Step 3: Paste it in the respective dialogue box.
+- **Step 3**: Paste it in the respective dialogue box.
+
+> [!div class="mx-imgBorder"]
+> ![Enter the URL of the font in the dialog box](media/enter-the-respective-font-url.png "Enter the URL of the font in the dialog box")
 
 ## Navigating Web Font Licensing in Dynamics Customer Insights - Journeys
 
