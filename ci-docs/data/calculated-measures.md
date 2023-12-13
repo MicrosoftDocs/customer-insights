@@ -1,7 +1,7 @@
 ---
-title: 
-description: 
-ms.date: 
+title: Use calculated measures in Dataverse-based applications
+description: Write one-dimensional measures to separate tables in Dataverse to use them in other applications.
+ms.date: 12/13/2023
 ms.topic: how-to
 author: JimsonChalissery
 ms.author: jimsonc
@@ -17,12 +17,13 @@ Dynamics 365 Customer Insights lets you create highly personalized experiences f
 
 To create measures that the system stores as tables in Dataverse, ensure you meet these prerequisites:
 
-- Set **Measure Type** to **Customer** and **Table**. Business measures son't support Dataverse tables.
 - Use only one dimension for the measure. The dimension is *CustomerInsights.CustomerId* from the *Customer* table.
 - Provide meaningful names for both your measure and the calculation. It helps to easily identify the table in Customer Insights - Journeys or in apps built with Power Apps.
 
 1. [Create a new measure](measure-builder.md) with the **Build your own** option.
-1. Run the measure and wait until it's fully processed.
+1. Set **Measure Type** to **Customer** and **Table**. Business measures don't support Dataverse tables.
+   :::image type="content" source="media/measures-table-setting.svg" alt-text="Settings for a calculated measure that writes to a Dataverse table.":::
+1. Run the measure and wait until it refreshed.
 
    To check the status, go to **Settings** > **System** and review the **Measures** and **Measures in Dataverse** sections. Depending on the number of customers and the data size that the measure is aggregated against, the process can take several minutes.
 
