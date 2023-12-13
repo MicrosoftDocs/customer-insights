@@ -526,8 +526,6 @@
     href: add-ons.md
   - name: Administration and setup FAQ
     href: setup-troubleshooting.yml
-  - name: Known issues and workarounds
-    href: known-issues.md
   - name: "Deprecation: Dynamics 365 for Customer Engagement"
     href: ce-deprecation.md
   - name: Troubleshoot with Solution Health Hub
@@ -858,6 +856,8 @@
       href: mkt-settings-social-media.md
     - name: Manage LinkedIn Lead Gen
       href: linkedin-configuration.md
+    - name: Known issues in outbound marketing and workarounds
+      href: known-issues.md 
   - name: Developer guide
     items: 
     - name: Developer guide overview
