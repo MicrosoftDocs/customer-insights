@@ -81,6 +81,17 @@ Select any journey component to view near real-time operational analytics in the
 > [!NOTE]
 > Data retention is 12 months for contact insights, lead insights, goal analytics, channel analytics (including delivery and interaction details), and AI optimization analytics.
 
+## Email insights
+Email insights provide a deep dive into how your audience interacts with your emails over time and track the trajectory of delivery rates, open rates, and click-through rates with precision. Beyond delivery and engagement trends, you can evaluate essential email KPIs and access comprehensive delivery and interaction details. To view email insights, go to **Real-time journeys** > **Email** > **Insights tab**.
+
+The following insights categories are provided:
+
+- **Delivery KPIs**: Gain insights into the delivery rate, number of blocks and delivery failures for the selected message.
+- **Engagement KPIs**: Evaluate the open rate, click rate, click-to-open rate, number of messages marked as spam and the count of unsubscriptions related to the selected message. 
+- **Delivery trend** and **Delivery funnel**: Explore the trends and funnel of email sent and delivered interactions, along with unique opens and unique clicks specific to the selected email.
+- **Engagement trend**: Examine the trends for total opens and clicks, providing a comprehensive understanding of the level of engagement associated with the selected email.
+
+
 ## Aggregate cross-journey analytics
 
 The built-in aggregate cross-journey analytics dashboard shows relevant metrics and insights for all your journey orchestrations in one place.
