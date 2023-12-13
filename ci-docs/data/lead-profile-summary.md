@@ -1,5 +1,5 @@
 ---
-title: Add customer insights to Dynamics 365 Sales
+title: Provide lead profile summaries to Dynamics 365 Sales (preview)
 description: Learn how Customer Insights - Data can provide insights for leads in Dynamics 365 Sales.
 author: zacookmsft
 ms.author: zacook
@@ -9,7 +9,7 @@ ms.date: 12/13/2023
 ms.custom: bap-template
 ---
 
-# Add customer insights to Dynamics 365 Sales
+# Provide lead profile summaries to Dynamics 365 Sales (preview)
 
 Dyanmics 365 Sales users can enrich their leads with insights from Customer Insights - Data. The insight is based on the ingested and unified activity data, such as emails, reviews, transactions, purhcases, or web logs. The insight will be an observation of one of the following:
 
@@ -27,3 +27,8 @@ The insight will appear on the Lead summary in Dynamics 365 Sales.
 - [Configured search](search-filter-index.md) includes customer's first name, last name, and email
 - [Defined customer activities](activities.md) for the insights you want
 - [Enabled Copilot consent](copilot-global-consent.md)
+
+## Next steps
+
+- [Responsible AI FAQs for lead profile summaries in Dynamics 365 Sales (preview)](faqs-profile-summary.md)
+- [Responsible AI FAQs for Customer Insights - Data](responsible-ai-overview.md)

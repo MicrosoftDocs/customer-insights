@@ -359,8 +359,8 @@
   items:
     - name: Integrate with Customer Insights - Journeys
       href: marketing-get-started.md
-    - name: Add customer insights to Dynamics 365 Sales
-      href: integrate-d365-sales.md
+    - name: Provide lead profile summaries to Dynamics 365 Sales
+      href: lead-profile-summary.md
     - name: Integrate with other Dynamics 365 applications
       href: integrate-d365-apps.md
 
@@ -397,6 +397,8 @@
       href: faqs-docs-qna.md
     - name: FAQs for segment creation
       href: faqs-segment-creation.md
+    - name: FAQ for lead profile summaries in Dynamics 365 Sales
+      href: faqs-profile-summary.md
 
 - name: More resources
   items:
