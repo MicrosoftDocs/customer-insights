@@ -91,6 +91,7 @@ The following insights categories are provided:
 - **Delivery trend** and **Delivery funnel**: Explore the trends and funnel of email sent and delivered interactions, along with unique opens and unique clicks specific to the selected email.
 - **Engagement trend**: Examine the trends for total opens and clicks, providing a comprehensive understanding of the level of engagement associated with the selected email.
 
+:::image type="content" source="media/email-insights.png" alt-text="Email insights analytics dashboard." lightbox="media/email-insights.png":::
 
 ## Aggregate cross-journey analytics
 
