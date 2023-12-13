@@ -1,7 +1,7 @@
 ---
 title: Build segments in Customer Insights - Journeys 
 description: Learn how to build segments to use in journeys in Dynamics 365 Customer Insights - Journeys.
-ms.date: 12/01/2023
+ms.date: 12/13/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -17,6 +17,11 @@ search.audienceType:
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE50Oqt]
 
 To improve marketing return on investment, it's important to target the right audience. You can build segments directly in Dynamics 365 Customer Insights - Journeys using the powerful, easy-to-use logic builder that doesn’t require specialized knowledge of complex data structures and logical operators. You can even preview the estimated segment size and membership before you mark your segment as "Ready to use" in customer journeys.
+
+When building segments, you can choose to target contacts, leads, or unified profiles from Customer Insights - Data.
+
+> [!NOTE]
+> To target unified profiles, Customer Insights - Journeys and Customer Insights - Data must be installed on the same environment.
 
 ## Create a demographic segment targeting leads
 
@@ -36,7 +41,10 @@ In the right pane of the segment builder, you can search for attributes to add t
 
 ## Create demographic segment using related tables
 
-In addition to having a segment return its targeting entity (such as contacts or leads), you can also build more complex queries that reference other tables (such as Event Registration or Account) to further enrich your segment definition.
+In addition to having a segment return its targeting entity (such as contacts or leads), you can also build more complex queries that reference other tables (such as Event Registration or Account) to further enrich your segment definition. You can even reference customer measures from Customer Insights - Data.
+
+> [!NOTE]
+> To reference customer measures, Customer Insights - Journeys and Customer Insights - Data must be installed on the same environment.
 
 When adding an attribute that relates to a different table, you can search for the attribute and then define how the two tables are related based on your segment definition. To add an attribute from a related table, you must enable **Track changes** in the related table. For new or existing tables, **Track changes** can be checked from the table properties.
 
@@ -54,9 +62,9 @@ Select "Account > **Lead**" for the relationship path, then select the **Next** 
 
 ## Previewing segment members and size estimate
 
-When you're satisfied with your segment definition, select **Refresh** on the bottom toolbar to quickly check if you are on the right track to creating your segment. This will give you an estimated size of how many members are in the segment.
+When you're satisfied with your segment definition, select **Refresh** on the bottom toolbar to quickly check if you are on the right track to creating your segment. This gives you an estimated size of how many members are in the segment.
 
-To see a list of the first set of segment members the app fetched based on your definition, select **View sample of included members** on the bottom toolbar. This will give you an estimate of who is in this segment.
+To see a list of the first set of segment members the app fetched based on your definition, select **View sample of included members** on the bottom toolbar. This gives you an estimate of who is in this segment.
 
 > [!div class="mx-imgBorder"]
 > ![View sample of included segment members.](media/real-time-marketing-build-segment-members.png "View sample of included segment members")
@@ -65,7 +73,7 @@ To see a list of the first set of segment members the app fetched based on your 
 
 **Example:** Leads with company size of more than 10,000 employees, whose parent accounts are in either the Consumer Services or Financial Services industry.
 
-You can choose your attribute to be added to a new subgroup. To do this, search for the attribute, then select the name of the attribute item from the results. A contextual menu will pop up that allows you to add the item to a new or existing subgroup.
+You can choose your attribute to be added to a new subgroup. To do this, search for the attribute, then select the name of the attribute item from the results. A contextual menu pops up that allows you to add the item to a new or existing subgroup.
 
 > [!div class="mx-imgBorder"]
 > ![Add a subgroup.](media/real-time-marketing-segment-builder-subgroup.png "Add a subgroup")
@@ -84,7 +92,7 @@ To include members from either subgroup, select the **or** subgroup operator.
 
 **Example**: Let’s say you want to create a query for leads with a company size of more than 10,000 employees whose parent accounts are in the Consumer Services or Financial Services industries, **but not** leads with a budget of less than $20,000.
 
-To create the segment from the above example, create a new segment in Customer Insights - Journeys for leads whose company size is 10,001 or more. Open the **Elements** pane by selecting the top icon on the menu on the right side of the window. Then, go to the **Attributes** tab and search for the **Budget Amount** attribute. Select the icon to the left of the attribute name from the results list. A contextual menu will appear, allowing you to add the attribute to an existing or new group.
+To create the segment from the above example, create a new segment in Customer Insights - Journeys for leads whose company size is 10,001 or more. Open the **Elements** pane by selecting the top icon on the menu on the right side of the window. Then, go to the **Attributes** tab and search for the **Budget Amount** attribute. Select the icon to the left of the attribute name from the results list. A contextual menu appears, allowing you to add the attribute to an existing or new group.
 
 > [!div class="mx-imgBorder"]
 > ![add a new group to a segment](media/real-time-marketing-add-a-new-group.png "add a new group to a segment")
