@@ -359,6 +359,8 @@
   items:
     - name: Integrate with Customer Insights - Journeys
       href: marketing-get-started.md
+    - name: Add customer insights to Dynamics 365 Sales
+      href: integrate-d365-sales.md
     - name: Integrate with other Dynamics 365 applications
       href: integrate-d365-apps.md
 
