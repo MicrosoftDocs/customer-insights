@@ -1,7 +1,7 @@
 ---
 title: Throughput guidance
 description: Learn about throughput based on your monthly interactions quota in Dynamics 365 Customer Insights - Journeys.
-ms.date: 12/01/2023
+ms.date: 12/04/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -23,7 +23,7 @@ The license purchased also determines the number of resources that are dedicated
 
 The following tables provide directional guidance on the throughput you should expect based on the number of monthly interactions quota while your consumption is within that monthly quota. You can increase your monthly interaction quota by upgrading your license with additional contact packs or interaction packs.
 
-Expected throughput in standalone Dynamics 365 Marketing (outbound marketing):
+Expected throughput in standalone Dynamics 365 Marketing (old SKU):
 
 | Monthly contact quota     | Throughput (interactions/hr) |
 |---------------------------|------------------------------|
@@ -32,7 +32,7 @@ Expected throughput in standalone Dynamics 365 Marketing (outbound marketing):
 
 **Available in preview. Contact your Microsoft representative if you have or are going to purchase a quota of more than 10,000,000 contacts.*
 
-Expected throughput in Dynamics 365 Customer Insights - Journeys:
+Expected throughput in Dynamics 365 Customer Insights (new SKU):
 
 | Interacted people quota         | Throughput (interactions/hr) |
 |---------------------------------|------------------------------|

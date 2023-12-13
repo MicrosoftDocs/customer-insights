@@ -1,7 +1,7 @@
 ---
 title: Install and manage Customer Insights
 description: How to install, uninstall, and manage Dynamics 365 Customer Insights environments.
-ms.date: 11/30/2023 
+ms.date: 12/05/2023 
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -47,7 +47,7 @@ There are several ways to get a Customer Insights license. You can purchase it f
 
 You can have any number of Customer Insights licenses available on your tenant. Licenses translate to "apps" listed in the Power Platform Admin Center. Even old, expired trial licenses have records listed in the Power Platform Admin Center. You can access the installation management experience for any of these apps in the Power Platform Admin Center under **Resources** > **Dynamics 365 apps**. The app listing under **Dynamics 365 apps** is simply a means to access the management page. It shouldn't be considered as representing anything else. 
 
-Once a paid license has been applied to your tenant, it can take up to 24 hours to sync with the Dynamics 365 licensing system and be available for installation. To see your licenses in the Microsoft Admin Center, go to **Your products**. They will not show up under **Licenses** because they are tenant-level application licenses, not assignable seat-based licenses where you pay per user. Only pay-per-user, seat-based licenses are shown on the "Licenses" page. 
+Once a paid license has been applied to your tenant, it can take up to 24 hours to sync with the Dynamics 365 licensing system and be available for installation. To see your licenses in the Microsoft Admin Center, go to **Your products**. They won't show up under **Licenses** because they're tenant-level application licenses, not assignable seat-based licenses where you pay per user. Only pay-per-user, seat-based licenses are shown on the "Licenses" page. 
 
 ## Install, uninstall, or update Customer Insights
 
@@ -117,5 +117,9 @@ In addition to helping you install Customer Insights for the first time, you can
 ## Privacy notice
 
 [!INCLUDE [cc-privacy-marketing-fre](./includes/cc-privacy-marketing-fre.md)]
+
+### Collecting feedback data
+
+As a way to refine and improve the experience, Microsoft may collect feedback data from users within the app. Administrators can disable survey feedback with a PowerShell command by turning the “disableSurveyFeedback” flag to **true**. See [list of tenant settings](/power-platform/admin/list-tenantsettings) for more detail.
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
