@@ -88,7 +88,7 @@ On September 1, 2023, Dynamics 365 Customer Insights - Journeys transitioned to 
 
 - **Remove email addresses from suppression list (Preview)**
     - You can utilize the new communication tab when viewing your contacts to see if the email address is in the suppression list and self-remove it without the need to open a support request, which will accelerate the remediation time for you to be able to send emails to these contacts.
-    - [Docs]()
+    - [Docs](suppression-lists.md)
 
 - **Explore email delivery and engagement trends**
     - In Real-time journeys you can now elevate your understanding of email performance by exploring delivery and engagement trends. Get comprehensive insights into how your audience interacts with your emails over time and track the trajectory of delivery rates, open rates, and click-through rates with precision. Uncover patterns, identify peak engagement periods, and optimize your strategies based on real-time trends.
