@@ -1,7 +1,7 @@
 ---
 title: Create consistent branding with brand profiles in outbound marketing
 description: Learn how to create brand profiles in outbound marketing.
-ms.date: 08/17/2023
+ms.date: 11/29/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -14,9 +14,6 @@ search.audienceType:
 # Create consistent branding with brand profiles in outbound marketing
 
 [!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
-> [!IMPORTANT]
-> This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
 
 Brand profiles allow you to create consistently branded content efficiently, even if your organization has multiple brands. You can create multiple brand profiles for your organization or profiles for each of your business units. You can also define default senders for emails and set default social links. You can even extend your brand profile entity with custom values that you can use when creating content. This article describes how to create a brand profile.
 
@@ -53,6 +50,16 @@ To define social links for your brand profile, open the **Social links** tab and
 > ![Add social links.](media/brand-profiles-social-links.png "Add social links")
 
 After you've added your links, select **Save**.
+
+### Define theme
+
+Open the **Theme** tab in the brand profile and add the theme in accordance with your brand guidelines. You can specify any custom fonts in the theme section (the theme section in the email editor also contains these options). Once your theme is added, select **Save** and your theme will be automatically applied to all of the draft content that includes a brand profile. 
+
+> [!NOTE]
+> To create a theme from scratch, you can also use Copilot. [Learn more](email-theme.md)
+
+> [!div class="mx-imgBorder"]
+> ![Add themes.](media/brand-profiles-themes.png "Add themes")
 
 And that’s it! Your profile is created and is ready to use in your emails. Learn more: [Use brand profiles in email](brand-profiles-email.md).
 
