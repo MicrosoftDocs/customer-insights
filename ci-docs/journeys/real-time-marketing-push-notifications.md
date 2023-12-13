@@ -1,7 +1,7 @@
 ---
 title: Create push notifications
 description: Learn how to create push notifications for Customer Insights - Journeys
-ms.date: 08/23/2023
+ms.date: 12/12/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -37,13 +37,13 @@ To stop messages from being sent, you can deactivate or delete them.
 
 ## Push notification images
 
-To add images to Push Notifications, select any image from the Library or upload a new one by clicking the “Choose an image” field on the Push Notification message editor. When you add images, Copilot will suggest images that match your content when you insert an image.
+To add images to push notifications, select any image from the Library or upload a new one by selecting the **Choose an image** field on the push notification message editor. When you add images, Copilot suggests images that match your content.
 
 There are some additional considerations for images in push notifications:
 
-* Images may be subject to platform size limits for iOS and Andriod
-* The image ratio should be 2:1 for best viewing in push notifications
-* You can preview the message and image in both iOS and Android
+* Images may be subject to platform size limits for iOS and Android.
+* The image ratio should be 2:1 for best viewing in push notifications.
+* You can preview the message and image in both iOS and Android.
 
 ## Personalize your push notifications
 

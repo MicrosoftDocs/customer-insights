@@ -1,7 +1,7 @@
 ---
 title: Set up push notifications
 description: Learn how to set up push notifications for Customer Insights - Journeys
-ms.date: 12/01/2023 
+ms.date: 12/12/2023 
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -65,7 +65,7 @@ For Android applications, Customer Insights - Journeys uses the Firebase Cloud M
 
 ---
 
-3. Review and save your app configuration, then find and select your newly created mobile app configuration in **Settings** > **Customer engagement** > **Push notification**. Go to the **Developer information** tab, copy the details, and share them with your app developer as they will need them to connect your app.
+3. Review and save your app configuration, then find and select your newly created mobile app configuration in **Settings** > **Customer engagement** > **Push notification**. Go to the **Developer information** tab, copy the details, and share them with your app developer as they'll need them to connect your app.
 
 > [!NOTE]
 > To learn more about the developer configuration for push notifications, see [Push notification setup for application developers](real-time-marketing-developer-push.md)
