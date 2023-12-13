@@ -1,6 +1,6 @@
 ---
-title: Personalize content using pre-defined dynamic text
-description: Learn how to personalize content using pre-defined dynamic text in Dynamics 365 Customer Insights - Journeys.
+title: Personalize content using predefined dynamic text
+description: Learn how to personalize content using predefined dynamic text in Dynamics 365 Customer Insights - Journeys.
 ms.date: 08/23/2023
 ms.topic: article
 author: alfergus
@@ -11,13 +11,13 @@ search.audienceType:
   - enduser
 ---
 
-# Personalize content using pre-defined dynamic text
+# Personalize content using predefined dynamic text
 
 [!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 Personalized messages help marketers drive engagement. A common way to personalize content is to use dynamic text (also known as placeholder text) that is automatically replaced with recipients' personal details when the message is sent. For example, rather than using a generic greeting like “Dear customer,” you can use dynamic text (“Dear ``{{FirstName}}``”) that is replaced with the customer name (“Dear John”) upon sending the message.
 
-An instance of placeholder text such as ``{{Firstname}}`` is called pre-defined dynamic text. Before you can use dynamic text, you need to define three pieces of information:
+An instance of placeholder text such as ``{{Firstname}}`` is called predefined dynamic text. Before you can use dynamic text, you need to define three pieces of information:
 
 1. **Data binding**: Where the replacement data for the dynamic text come from (for example, the “firstname” attribute of a “Contact” table).
 1. **Label**: How the dynamic text is referred to within the message text (for example, ``{{Firstname}}``).
@@ -25,11 +25,11 @@ An instance of placeholder text such as ``{{Firstname}}`` is called pre-defined 
 
 Defining data binding requires some understanding of the [Dataverse data model](/powerapps/maker/data-platform/data-platform-intro) to correctly connect the dynamic text to the right data source.
 
-Pre-defined dynamic text is text that has already been defined by someone else and is ready to be used. Customer Insights - Journeys ships with a set of commonly used pieces of pre-defined dynamic text. More can be added by you or your teammates (see [Creating and sharing pre-defined dynamic text](real-time-marketing-predefined-dynamic-text.md#creating-and-sharing-pre-defined-dynamic-text)).
+Predefined dynamic text is text that has already been defined by someone else and is ready to be used. Customer Insights - Journeys ships with a set of commonly used pieces of predefined dynamic text. More can be added by you or your teammates (see [Creating and sharing predefined dynamic text](real-time-marketing-predefined-dynamic-text.md#creating-and-sharing-pre-defined-dynamic-text)).
 
-## Using pre-defined dynamic text
+## Using predefined dynamic text
 
-Select **Personalize** in the email or text message editor to see a list of pre-defined dynamic text fragments. Next, select some pre-defined dynamic text from the list to insert it into the message:
+Select **Personalize** in the email or text message editor to see a list of predefined dynamic text fragments. Next, select some predefined dynamic text from the list to insert it into the message:
 
 **Email editor**:
 
@@ -41,23 +41,23 @@ Select **Personalize** in the email or text message editor to see a list of pre-
 > [!div class="mx-imgBorder"]
 > ![Screenshot of adding pre-defined dynamic text to a text message.](media/real-time-marketing-predefined-tokens-text.png "Screenshot of adding pre-defined dynamic text to a text message")
 
-The pre-defined dynamic text list may be different than shown here because it's dynamic. As your admin and other users create and share more pre-defined dynamic text, the fragments are added to the list. The top 10 items on the list are sorted by org-wide usage. If there are more than 10 items in the list, you'll see the remaining items sorted by alphabetical order after the top 10 items.
+The predefined dynamic text list may be different than shown here because it's dynamic. As your admin and other users create and share more predefined dynamic text, the fragments are added to the list. The top 10 items on the list are sorted by org-wide usage. If there are more than 10 items in the list, you'll see the remaining items sorted by alphabetical order after the top 10 items.
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of the pre-defined dynamic text list.](media/real-time-marketing-predefined-tokens-list.png "Screenshot of the pre-defined dynamic text list")
 
-You can hover on dynamic text in the pre-defined list to see its details. Alternatively, you can select the vertical ellipses next to the dynamic text's name and then select **More info**.
+You can hover on dynamic text in the predefined list to see its details. Alternatively, you can select the vertical ellipses next to the dynamic text's name and then select **More info**.
 
 ### Changing the default value for the current message
 
-Most of the time you should be able to use pre-defined dynamic text as-is, but sometimes you may need to change a default value. For example, the default value “Customer” may not work if your email is to non-customers. In this case, you can change the default value by selecting the pre-defined dynamic text in the editor canvas and then selecting the **Personalization** menu. After changing the default value, make sure to save it. An updated version of the pre-defined dynamic text will be saved, *but only for the current message*.
+Most of the time you should be able to use predefined dynamic text as-is, but sometimes you may need to change a default value. For example, the default value “Customer” may not work if your email is to non-customers. In this case, you can change the default value by selecting the predefined dynamic text in the editor canvas and then selecting the **Personalization** menu. After changing the default value, make sure to save it. An updated version of the predefined dynamic text will be saved, *but only for the current message*.
 
 ### Changing the default value globally
 
 > [!NOTE]
 > You can update the default value of a pre-defined text. Only the default value can be changed if you want to change its definition, you must remove the current pre-defined text and add a new one.
 
-“Update” is shown only when default value is changed (otherwise it isn't shown) and that default value is the only thing that can be changed for a pre-defined dynamic text. To change the global default value, select the vertical ellipses next to the pre-defined dynamic text's name and then select **Update pre-defined dynamic text**. The pre-defined dynamic text will be updated for the current message and globally for future usage of the dynamic text in new messages (existing messages aren't affected).
+“Update” is shown only when default value is changed (otherwise it isn't shown) and that default value is the only thing that can be changed for a predefined dynamic text. To change the global default value, select the vertical ellipses next to the predefined dynamic text's name and then select **Update pre-defined dynamic text**. The predefined dynamic text will be updated for the current message and globally for future usage of the dynamic text in new messages (existing messages aren't affected).
 
   > [!div class="mx-imgBorder"]
   > ![Screenshot of updating pre-defined dynamic text.](media/real-time-marketing-update-predefined-tokens.png "Screenshot of updating pre-defined dynamic text")
@@ -65,14 +65,14 @@ Most of the time you should be able to use pre-defined dynamic text as-is, but s
 > [!IMPORTANT]
 > The **Update pre-defined dynamic text** command only applies to the current message and future messages. It does not retroactively change previous uses of the dynamic text.
 
-## Creating and sharing pre-defined dynamic text
+## Creating and sharing predefined dynamic text
 
-You aren't limited to the pre-defined dynamic text that is included with the Customer Insights - Journeys app. Any user can create new pre-defined dynamic text fragments and share them with their team by adding them to the pre-defined dynamic text list.
+You aren't limited to the predefined dynamic text that is included with the Customer Insights - Journeys app. Any user can create new predefined dynamic text fragments and share them with their team by adding them to the predefined dynamic text list.
 
-To define and share new pre-defined dynamic text, follow these steps:
+To define and share new predefined dynamic text, follow these steps:
 
-1. Place your cursor in an empty space in the text box and then select **Personalization** from the menu bar that pops up. This opens the pre-defined personalization list.
-1. Select **New dynamic text** at the bottom of the pre-defined dynamic text menu and complete steps to define the new dynamic text.
+1. Place your cursor in an empty space in the text box and then select **Personalization** from the menu bar that pops up. This opens the predefined personalization list.
+1. Select **New dynamic text** at the bottom of the predefined dynamic text menu and complete steps to define the new dynamic text.
 
     > [!div class="mx-imgBorder"]
     > ![Screenshot of creating new pre-defined dynamic text.](media/real-time-marketing-predefined-tokens-steps2.png "Screenshot of creating new pre-defined dynamic text")
@@ -85,9 +85,9 @@ To define and share new pre-defined dynamic text, follow these steps:
 > [!NOTE]
 > The **Update** option is only available for pre-defined text if the default value changed.
 
-## Removing pre-defined dynamic text
+## Removing predefined dynamic text
 
-To remove pre-defined dynamic text:
+To remove predefined dynamic text:
 
 1. Place your cursor in an empty space in the text box and then select **Personalization** from the menu bar that pops up.
 1. Select the vertical ellipses next to the dynamic text name.
@@ -120,7 +120,7 @@ If needed, you can change the language and region setting along with time zone b
 > [!div class="mx-imgBorder"]
 > ![locale and time zone](media/real-time-marketing-locale-and-time-zone.png "locale and time zone")
 
-### Using data that is reached by traversing a 1-to-many relation
+### Using data that are reached by traversing a 1-to-many relation
 
 > [!TIP]
 > How to enable the preview for more data for personalization
@@ -189,7 +189,7 @@ The event selection step can then be completed when the message created from thi
 
 The pick list contains up to 50 tables at any given time. To change the pick list tables, select a piece of dynamic text, expand the "Other tables (Needs record selection)" category, then select **Manage list**.
 
-Use the pre-defined filters next to the search bar in the **Manage list** window to quickly filter the tables list to all tables, tables selected by default, tables that you've selected, or tables that are actually in use in the current message.
+Use the predefined filters next to the search bar in the **Manage list** window to quickly filter the tables list to all tables, tables selected by default, tables that you've selected, or tables that are actually in use in the current message.
 
 Select the tables you want to add or remove, then select **Save**.
 
