@@ -11,7 +11,7 @@ ms.custom: bap-template
 
 # Use calculated measures in Dataverse-based applications
 
-Dynamics 365 Customer Insights lets you create highly personalized experiences for your customers by using the unified profile of your customers in journeys. You can further augment these experiences with [customer measures](measures.md) to tailor journeys, deliver personalized offers, and content based on loyalty points, lifetime value, and other calculated measure. Further, you can use simple measures in Power Apps built on top of Microsoft Dataverse.
+Dynamics 365 Customer Insights lets you create highly personalized experiences for your customers by [using the unified profile of your customers in journeys](marketing-get-started.md). You can further augment these experiences with [customer measures](measures.md) to tailor journeys, deliver personalized offers, and content based on loyalty points, lifetime value, and other calculated measures. Further, you can use simple measures in Power Apps built on top of Microsoft Dataverse.
 
 ## Create a calculated measure table
 
@@ -30,7 +30,7 @@ To create measures that the system stores as tables in Dataverse, ensure you mee
 The system writes the measure to a Dataverse table with a relationship to the customer profile in the *Customer* table. You can now use the newly created measure table for customer journey orchestration or personalization in Customer Insights - Journeys or for forms or views in Power Apps.
 
 > [!NOTE]
-> If you're using the Customer Card add-in and want a measure to show up there, continue to build measures of type Customer and Attribute.
+> If you're using the [Customer Card add-in](customer-card-add-in.md) and want a measure to show up there, continue to build measures of type Customer and Attribute.
 
 ## Sample scenarios
 
