@@ -1,7 +1,7 @@
 ---
 title: Use the versions page to enable outbound marketing
 description: Learn how to enable outbound marketing and troubleshoot version control in Dynamics 365 Customer Insights - Journeys.
-ms.date: 10/26/2023
+ms.date: 11/07/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -27,7 +27,7 @@ If you owned the standalone Dynamics 365 Marketing license and used the outbound
 
 ## Why don't I see the option to enable outbound marketing?
 
-- The check to see if other environments had outbound marketing doesn't cross geo boundaries. Therefore, if you had outbound marketing in one geo and are creating a new environment in another geo, the new geo won't know about outbound marketing usage in the other geo. In this case, [follow the instructions](transition-overview.md#create-a-support-ticket-requesting-outbound-marketing) to contact support to get outbound marketing enabled.
+- The check to see if other environments had outbound marketing doesn't cross geo boundaries. Therefore, if you had outbound marketing in one geo and are creating a new environment in another geo, the new geo won't know about outbound marketing usage in the other geo. In this case, follow the guidance for [requesting outbound marketing to be added](transition-overview.md#request-an-exception-to-enable-outbound-marketing)
 - You have a trial. Trials will never have outbound marketing.
 - You didn't have any environments that used outbound marketing prior to September 2023.
 - Solutions-only environments don't have the services, only the user experience solutions. The free installation of the solutions includes the outbound marketing user experience and the real-time journeys user experience but none of the services to allow segmentation, journey orchestration, and message execution. If you want to install the services, select **Manage+Update**, find the environment, and choose **Install** for the Customer Insights - Journeys app. Back on the **Versions** page, you then see the option to enable the outbound marketing user experience and can turn it back on.

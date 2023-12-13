@@ -2485,6 +2485,56 @@
       "source_path": "ci-docs/data/export-teams-bot.md",
       "redirect_url": "/dynamics365/customer-insights/data/removed-deprecated-features-customer-insights",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/real-time-marketing-outbound-text-messaging-setup.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/real-time-marketing-text-messaging-setup",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/real-time-marketing-outbound-text-messaging.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/real-time-marketing-text-messaging",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/learning-catalog.yml",
+      "redirect_url": "/dynamics365/customer-insights/journeys/real-time-marketing-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/learning-bdm.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/real-time-marketing-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/learning-bus-user.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/real-time-marketing-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/learning-project-manager.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/real-time-marketing-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/learning-administrator.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/real-time-marketing-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/learning-developer.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/real-time-marketing-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/learning-functional-consultant.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/real-time-marketing-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/learning-sales.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/real-time-marketing-overview",
+      "redirect_document_id": false
     }
   ]
 }
