@@ -149,7 +149,7 @@
         - name: "Preview: Copilot - Style your emails with AI-assisted themes"
           href: email-theme.md
         - name: Enhance email engagement by allowing browser viewing
-          href: view-email-in-browser.md
+          href: view-email-in-browser.md  
         - name: Generate iCalendar files for events and sessions
           href: add-to-calendar.md
         - name: Use brand profiles in email
@@ -176,6 +176,10 @@
           href: email-check-golive.md      
         - name: Use "Send now" to send emails instantly in Customer Insights - Journeys
           href: email-without-journey.md
+      - name: View previously sent emails
+        items: 
+        - name: "Preview: Reference copies of sent emails in the interaction timeline"
+          href: view-previously-sent-emails.md
       - name: Email troubleshoot + FAQ
         href: email-troubleshoot.md
     - name: Text messages
