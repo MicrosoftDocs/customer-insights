@@ -1,7 +1,7 @@
 ---
 title: Manage user accounts, user licenses, and security roles
 description: How to manage user accounts, add licenses to users, and assign security roles in Dynamics 365 Customer Insights - Journeys.
-ms.date: 11/14/2023
+ms.date: 12/12/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -282,7 +282,8 @@ One service user, **# Dynamics Marketing Dataverse Datasource**, is used to impe
 **# Dynamics Marketing Dataverse Datasource** has a **Service Reader** role assigned, which allows it privileged access to any Dataverse data within a given environment.
 
 ### Customer Insights - Journeys field security profiles
-After deploying Customer Insights - Journeys features, several Field Security Profiles are created under **Advanced Settings > Security> Field Security Profiles**. Deleting these profiles will break text messages (SMS) and push notifications flows.
+
+After deploying Customer Insights - Journeys features, several Field Security Profiles are created under **Advanced Settings** > **Security** > **Field Security Profiles**. Deleting these profiles will break text messages (SMS) and push notifications flows.
 
 | Customer Insights - Journeys field security role | Customer Insights - Journeys area |
 | ---- | ------- |
