@@ -1,7 +1,7 @@
 ---
 title: "What's new in Dynamics 365 Customer Insights - Data"
 description: "Information about new features, improvements, and bug fixes."
-ms.date: 10/27/2023
+ms.date: 12/13/2023
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
@@ -18,6 +18,37 @@ We roll out updates on a region-by-region basis. So certain regions might see fe
 
 > [!TIP]
 > To submit and vote on feature requests and product suggestions, go to the [Dynamics 365 Application Ideas portal](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights).
+
+## December 2023
+
+### General availability features
+
+#### Get insights by asking questions in natural language with Copilot in Customer Insights, now with general and global availability
+
+Ask questions in natural language to have a dialog with your data to explore, assess, and better understand the profiles, behavior, and activity of your customers. Now with general availability and global availability across all geos and 23 supported languages to support enterprise and global customers. Get started today to democratize the power of your customer data platform (CDP) to everyone in your organization in a compliant and secure manner. Enable your end users to seamlessly access insights to make the best decisions in the moments that matter and provide deeply personalized experiences to your customers. For example, marketers can now use everyday words to understand the geographic distribution of loyalty program members and their recent transaction history to better cater customer lifetime value-focused campaigns and achieve higher campaign engagement.
+
+- [Release plan](/dynamics365/release-plan/2023wave2/customer-insights/generate-insights-asking-questions-natural-language-copilot-customer-insights)
+- [Docs](dialog-with-data.md)
+
+#### Personalize customer experiences using calculated metrics
+
+You can already create highly personalized experiences for your customers when you use enriched profiles from Dynamics 365 Customer Insights - Data. Now, you can further personalize journeys and content by using calculated metrics (customer measures) such as lifetime value, total or average spend, total amount insured or number of policies, etc. With such calculated data available seamlessly, you're empowered to deliver experiences such as personalizing offers or level of service (e.g., priority notification ahead of others).
+
+- [Release plan](/dynamics365/release-plan/2023wave2/customer-insights/personalize-customer-experiences-using-calculated-metrics)
+- Docs
+
+### Public preview features
+
+#### Leverage customer insights in other business applications
+
+Insights are available to your business users through their Dynamics 365 applications in the flow of their work. This enables numerous scenarios. For example:
+
+- Marketing teams can personalize the experience of customers with segments and dynamic content based on their lifetime value, irrespective of where they are on the buying journeys and whether they’re targeted as a lead or a contact.
+- Sales and account reps can win more deals and foster stronger relationships, knowing every customer’s interests, activity history, insights such as CLV or predictions such as propensity to buy—all accessible seamlessly in their contact/lead view.
+- Service reps can provide personalized service knowing the customer’s loyalty tier or prediction to churn.
+
+- [Release plan](/dynamics365/release-plan/2023wave2/customer-insights/empower-marketing-sales-service-users-customer-insights-right-within-their-business-applications)
+- [Docs](integrate-d365-apps.md)
 
 ## October 2023
 
