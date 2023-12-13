@@ -281,6 +281,8 @@
       href: measure-templates.md
     - name: Schedule measures
       href: measures-schedule.md
+    - href: calculated-measures.md
+      name: Use measures with Dataverse apps
           
 - name: Predictions and custom models
   items:
