@@ -25,7 +25,7 @@ An instance of placeholder text such as ``{{Firstname}}`` is called predefined d
 
 Defining data binding requires some understanding of the [Dataverse data model](/powerapps/maker/data-platform/data-platform-intro) to correctly connect the dynamic text to the right data source.
 
-Predefined dynamic text is text that has already been defined by someone else and is ready to be used. Customer Insights - Journeys ships with a set of commonly used pieces of predefined dynamic text. More can be added by you or your teammates (see [Creating and sharing predefined dynamic text](real-time-marketing-predefined-dynamic-text.md#creating-and-sharing-pre-defined-dynamic-text)).
+Predefined dynamic text is text that has already been defined by someone else and is ready to be used. Customer Insights - Journeys ships with a set of commonly used pieces of predefined dynamic text. More can be added by you or your teammates (see [Creating and sharing predefined dynamic text](real-time-marketing-predefined-dynamic-text.md#creating-and-sharing-predefined-dynamic-text)).
 
 ## Using predefined dynamic text
 
@@ -34,17 +34,17 @@ Select **Personalize** in the email or text message editor to see a list of pred
 **Email editor**:
 
 > [!div class="mx-imgBorder"]
-> ![Screenshot of adding pre-defined dynamic text to an email message.](media/real-time-marketing-predefined-tokens-email.png "Screenshot of adding pre-defined dynamic text to an email message")
+> ![Screenshot of adding predefined dynamic text to an email message.](media/real-time-marketing-predefined-tokens-email.png "Screenshot of adding predefined dynamic text to an email message")
 
 **Text message editor**:
 
 > [!div class="mx-imgBorder"]
-> ![Screenshot of adding pre-defined dynamic text to a text message.](media/real-time-marketing-predefined-tokens-text.png "Screenshot of adding pre-defined dynamic text to a text message")
+> ![Screenshot of adding predefined dynamic text to a text message.](media/real-time-marketing-predefined-tokens-text.png "Screenshot of adding predefined dynamic text to a text message")
 
 The predefined dynamic text list may be different than shown here because it's dynamic. As your admin and other users create and share more predefined dynamic text, the fragments are added to the list. The top 10 items on the list are sorted by org-wide usage. If there are more than 10 items in the list, you'll see the remaining items sorted by alphabetical order after the top 10 items.
 
 > [!div class="mx-imgBorder"]
-> ![Screenshot of the pre-defined dynamic text list.](media/real-time-marketing-predefined-tokens-list.png "Screenshot of the pre-defined dynamic text list")
+> ![Screenshot of the predefined dynamic text list.](media/real-time-marketing-predefined-tokens-list.png "Screenshot of the predefined dynamic text list")
 
 You can hover on dynamic text in the predefined list to see its details. Alternatively, you can select the vertical ellipses next to the dynamic text's name and then select **More info**.
 
@@ -55,15 +55,15 @@ Most of the time you should be able to use predefined dynamic text as-is, but so
 ### Changing the default value globally
 
 > [!NOTE]
-> You can update the default value of a pre-defined text. Only the default value can be changed if you want to change its definition, you must remove the current pre-defined text and add a new one.
+> You can update the default value of a predefined text. Only the default value can be changed if you want to change its definition, you must remove the current predefined text and add a new one.
 
-“Update” is shown only when default value is changed (otherwise it isn't shown) and that default value is the only thing that can be changed for a predefined dynamic text. To change the global default value, select the vertical ellipses next to the predefined dynamic text's name and then select **Update pre-defined dynamic text**. The predefined dynamic text will be updated for the current message and globally for future usage of the dynamic text in new messages (existing messages aren't affected).
+“Update” is shown only when default value is changed (otherwise it isn't shown) and that default value is the only thing that can be changed for a predefined dynamic text. To change the global default value, select the vertical ellipses next to the predefined dynamic text's name and then select **Update predefined dynamic text**. The predefined dynamic text will be updated for the current message and globally for future usage of the dynamic text in new messages (existing messages aren't affected).
 
   > [!div class="mx-imgBorder"]
-  > ![Screenshot of updating pre-defined dynamic text.](media/real-time-marketing-update-predefined-tokens.png "Screenshot of updating pre-defined dynamic text")
+  > ![Screenshot of updating predefined dynamic text.](media/real-time-marketing-update-predefined-tokens.png "Screenshot of updating predefined dynamic text")
 
 > [!IMPORTANT]
-> The **Update pre-defined dynamic text** command only applies to the current message and future messages. It does not retroactively change previous uses of the dynamic text.
+> The **Update predefined dynamic text** command only applies to the current message and future messages. It does not retroactively change previous uses of the dynamic text.
 
 ## Creating and sharing predefined dynamic text
 
@@ -75,15 +75,15 @@ To define and share new predefined dynamic text, follow these steps:
 1. Select **New dynamic text** at the bottom of the predefined dynamic text menu and complete steps to define the new dynamic text.
 
     > [!div class="mx-imgBorder"]
-    > ![Screenshot of creating new pre-defined dynamic text.](media/real-time-marketing-predefined-tokens-steps2.png "Screenshot of creating new pre-defined dynamic text")
+    > ![Screenshot of creating new predefined dynamic text.](media/real-time-marketing-predefined-tokens-steps2.png "Screenshot of creating new predefined dynamic text")
 
-1. Select the down-facing carat next to the **Save** button and choose the **Save & add to pre-defined list** option.
+1. Select the down-facing carat next to the **Save** button and choose the **Save & add to predefined list** option.
 
     > [!div class="mx-imgBorder"]
-    > ![Screenshot of saving and adding new pre-defined dynamic text.](media/real-time-marketing-predefined-tokens-save.png "Screenshot of saving and adding new pre-defined dynamic text")
+    > ![Screenshot of saving and adding new predefined dynamic text.](media/real-time-marketing-predefined-tokens-save.png "Screenshot of saving and adding new predefined dynamic text")
 
 > [!NOTE]
-> The **Update** option is only available for pre-defined text if the default value changed.
+> The **Update** option is only available for predefined text if the default value changed.
 
 ## Removing predefined dynamic text
 
@@ -91,10 +91,10 @@ To remove predefined dynamic text:
 
 1. Place your cursor in an empty space in the text box and then select **Personalization** from the menu bar that pops up.
 1. Select the vertical ellipses next to the dynamic text name.
-1. Select **Remove pre-defined dynamic text** from the menu.
+1. Select **Remove predefined dynamic text** from the menu.
 
     > [!div class="mx-imgBorder"]
-    > ![Screenshot of removing pre-defined dynamic text.](media/real-time-marketing-predefined-tokens-remove.png "Screenshot of removing pre-defined dynamic text")
+    > ![Screenshot of removing predefined dynamic text.](media/real-time-marketing-predefined-tokens-remove.png "Screenshot of removing predefined dynamic text")
 
 ## Communicate dates and times in various formats
 
@@ -197,6 +197,6 @@ Select the tables you want to add or remove, then select **Save**.
   > ![Change the pick list](media/specific-record-manage-list.png "Change the pick list")
 
 > [!NOTE]
-> Removing dynamic text only removes it from the pre-defined list, it does not remove it from the messages that are already using it.
+> Removing dynamic text only removes it from the predefined list, it does not remove it from the messages that are already using it.
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
