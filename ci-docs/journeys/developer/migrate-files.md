@@ -1,7 +1,7 @@
 ---
 title: Limitations on migrating files between outbound marketing environments
 description: Learn about limitations on migrating files between outbound marketing environments and possible workarounds.
-ms.date: 09/27/2022
+ms.date: 11/16/2023
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
@@ -21,7 +21,7 @@ Out of the box, Dynamics 365 Customer Insights - Journeys doesn't provide tools 
 On a high level, the tool would fetch files from the source environment, download the metadata and content for each file, and then create the file in the target environment. On the source environment, metadata for files are stored in the **msdyncrm_file** entity. The **msdyncrm_blobcdnuri** field contains a URL to the file content.
 
 > [!WARNING]
-> The Customer Insights - Journeys app doesn't currently support migration between different tenant geographic locations (geo to geo).
+> The Customer Insights - Journeys app doesn't currently support migration between different tenant geographic locations (geo to geo). To install Customer Insights - Journeys again on the org in the target geo, you must have uninstalled Customer Insights - Journeys on the source geo before the geo migration. Be aware that when you uninstall Customer Insights - Journeys on the source geo, you lose all Marketing Services data.
 
 ## An example flow to clone files (digital assets) in Customer Insights - Journeys
 

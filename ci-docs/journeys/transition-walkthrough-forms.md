@@ -1,7 +1,7 @@
 ---
 title: Transition marketing pages and forms
 description: Learn how to transition marketing pages and forms capabilities from outbound marketing to real-time journeys in Dynamics 365 Customer Insights - Journeys.
-ms.date: 10/04/2023
+ms.date: 11/16/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -32,5 +32,14 @@ It's worth noting that real-time journeys forms are more advanced than their equ
 Consider the following when transitioning forms:
 -	Because the underlying concept for forms is different between the modules, there's no way to automatically transition an outbound marketing form to a real-time journeys form. 
 -	Real-time journeys forms are continuously improved. However, there are still details that aren't available in real-time journeys forms, for example, custom form fields, capture forms scripts, and web tracking.
+
+## Relevant upcoming features
+
+The features listed below may be of interest as you transition from outbound marketing to real-time journeys. These features provide parity, equivalent, or better functionality than what was available in outbound marketing.
+
+- **Forms capture**: Maximize the potential of your external custom-built forms and generate more leads and contacts for your business without the need to recreate custom forms real-time journeys. Capture submissions from any form on your website and automatically create new leads or contacts in Customer Insights – Journeys. Learn more: [Capture responses from external, third-party forms](/dynamics365/release-plan/2023wave2/marketing/dynamics365-marketing/capture-responses-external-third-party-forms)
+
+> [!TIP]
+> If you have questions or comments, visit the [Outbound to real-time transition community forum](https://community.dynamics.com/forums/thread/?partialUrl=Outbound-to-Real-Time-Transition)
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]

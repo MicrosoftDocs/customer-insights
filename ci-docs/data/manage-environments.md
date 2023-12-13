@@ -1,7 +1,7 @@
 ---
 title: Manage environments
 description: Learn how to to manage environments as an admin.
-ms.date: 10/18/2023
+ms.date: 11/15/2023
 ms.topic: how-to
 ms.reviewer: mhart
 author: kishorem-ms
@@ -49,6 +49,9 @@ The following configuration settings are copied:
 - Enrichments
 - Prediction models
 - Role assignments
+
+> [!CAUTION]
+> Don't use the [Copy an environment operation](/power-platform/admin/copy-environment#copy-an-environment-1) in Power Platform admin center if you have Customer Insights - Data installed in the target environment, because that operation removes all artifacts from the existing installation. You can't recover any deleted data.
 
 ### Set up a copied environment
 
@@ -116,9 +119,6 @@ As the owner of an environment, you can delete it.
 
 We recommend to [use the **Uninstall** option Power Platform admin center](../journeys/setup.md) to decommission a Customer Insights - Data environment.
 
-> [!IMPORTANT]
-> Deleting a Customer Insights - Data environment does not remove the Customer Insights dependencies from the Dataverse environment. If you plan to use same Dataverse environment to install Customer Insights - Data in the future, you must [remove all dependencies to the Dataverse environment](#remove-customer-insights---data-dependencies-from-a-dataverse-environment).
-
 1. Select the **Environment** picker in the header of the app.
 
 1. Select the environment you want to delete and select the vertical ellipsis (&vellip;).
@@ -127,9 +127,11 @@ We recommend to [use the **Uninstall** option Power Platform admin center](../jo
 
 1. To confirm the deletion, enter the environment name and select **Delete**.
 
+After deleting the environment, you can reinstall a new Customer Insights - Data environment on the same Microsoft Dataverse environment. Removing dependencies as isn't required to reinstall.
+
 ## Remove Customer Insights - Data dependencies from a Dataverse environment
 
-Deleting a Customer Insights - Data environment doesn't remove dependencies from the Dataverse environment. Before you can reinstall Customer Insights - Data on a Dataverse environment, all dependencies must be removed.
+Deleting a Customer Insights - Data environment doesn't remove dependencies from the Dataverse environment. However, if you want to remove all dependencies to Customer Insights - Data, go through the following steps.
 
 > [!NOTE]
 > You must be a global administrator on the Dataverse environment. It can take a couple of hours for the dependencies removal to take effect.
@@ -147,12 +149,7 @@ Deleting a Customer Insights - Data environment doesn't remove dependencies from
         - Dynamics Marketing Consent For Customer Insights (*DynamicsMKT_ConsentAttachCI*)
         - DynamicsMKT_OrchestrationEngineAttachCI (*DynamicsMKT_OrchestrationEngineAttachCI*)
 1. Go to **Solutions**.
-1. Uninstall the following Customer Insights - Data solutions:
-   - Dynamics 365 Customer Insights Base (*msdyn_CustomerInsightsAnchor*)
-   - Dynamics 365 Customer Insights Data Tables (*msdyn_CustomerInsightsDataTables*)
-   - Dynamics 365 Customer Insights (*msdyn_CustomerInsights*)
-   - Dynamics 365 Customer Insights Customer Card (*CustomerInsightsCustomerCard*)
-   - Dynamics 365 Customer Insights Prod First Party App User Management (*msdyn_CustomerInsightsAppUserManagementProd*)
+1. Uninstall all solutions that start with *msdyn_CustomerInsights*.
 
 If the removal of the connection fails due to other dependencies, you need to remove these dependencies too. For more information, see [Removing dependencies](/power-platform/alm/removing-dependencies).
 

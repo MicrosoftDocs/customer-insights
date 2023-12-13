@@ -21,16 +21,16 @@ The unification process maps account data from your data sources, removes duplic
 
 Unification is performed in the following order:
 
-1. [Source fields](../data-unification-map-tables.md) (previously called Map): In the source fields step, select tables and fields to include in the unify process. Map fields to a common semantic type that describes the purpose of the field.
+1. [Customer data](../data-unification-map-tables.md) (previously called Map): In the source fields step, select tables and fields to include in the unify process. Map fields to a common semantic type that describes the purpose of the field.
 
    > [!NOTE]
    > When choosing semantic **Type**, the account name should map to *Organization.Name*. Otherwise, the customer cards will appear nameless. An organization logo or image maps to *Organization.LogoImage*.
 
-1. [Duplicate records](../data-unification-duplicates.md) (previously part of Match): In the duplicate records step, optionally define rules to remove duplicate customer records from within each table.
+1. [Deduplication rules](../data-unification-duplicates.md) (previously part of Match): In the duplicate records step, optionally define rules to remove duplicate customer records from within each table.
 
-1. [Matching conditions](../data-unification-match-tables.md) (previously called Match): In the matching conditions step, define rules that match customer records between tables. When a customer is found in two or more tables, a single consolidated record is created with all columns and data from each table.
+1. [Matching rules](../data-unification-match-tables.md) (previously called Match): In the matching conditions step, define rules that match customer records between tables. When a customer is found in two or more tables, a single consolidated record is created with all columns and data from each table.
 
-1. [Unified customer fields](../data-unification-merge-tables.md) (previously called Merge): In the unified customer fields step, determine which source fields should be included, excluded, or merged into a unified customer profile.  
+1. [Unified data view](../data-unification-merge-tables.md) (previously called Merge): In the unified customer fields step, determine which source fields should be included, excluded, or merged into a unified customer profile.  
 
    > [!NOTE]
    > Group profiles into households or clusters is not supported.
@@ -59,6 +59,6 @@ To review or change any unification settings once a unified profile has been cre
 1. After making changes, choose one of the following:
 
    - To run matching conditions and update the unified profile table without impacting dependencies (such as customer cards, enrichments, segments, or measures), select **Unify accounts** > **Unify profiles** to run accounts. For contacts, select **Unify contacts** > **Unify profiles**. Dependent processes aren't run, but will be refreshed as [defined in the refresh schedule](../schedule-refresh.md).
-   - To run matching conditions, update the unified profiles, and run all dependencies, select **Unify accounts** > **Unify profiles and dependencies**. Matching conditions are run for both accounts and contacts updating both unified profiles and all other dependencies are run.
+   - To run matching conditions, update the unified profiles, and run all dependencies, select **Unify accounts** > **Unify profiles and dependencies**. Matching rules are run for both accounts and contacts updating both unified profiles and all other dependencies are run.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
