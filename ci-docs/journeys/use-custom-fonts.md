@@ -84,18 +84,18 @@ To embed a new font, scroll down to the **Add custom font** dropdown and select 
 
 ### Example: Add a font with a URL using Google Fonts
 
-Here’s a common @font-face declaration for importing a web font into email using Google Fonts as a web font service:
+Here’s a common @font-face declaration for importing a web font into an email using Google Fonts as a web font service:
 
-1. Paste the following HTML into a browser tab: https://fonts.googleapis.com/css2?family="fontName"
+1. Paste the following HTML into a browser tab: `https://fonts.googleapis.com/css?family="fontName"`. For example, for the Noto Sans font, you'd paste: `https://fonts.googleapis.com/css?family=Noto+Sans`.
 
-> [!NOTE]
-> This information is available in the side navigation of the Google Fonts page.
+    > [!NOTE]
+    > This information is available in the side navigation of the [Google Fonts](https://fonts.google.com/) page.
 
-1. Copy the **Latin** version of the @font-face.
-1. Paste it into the respective dialogue box.
+1. Copy the URL for the **Latin** version of the @font-face.
+1. Paste it into the **Add font using URL** dialogue box.
 
-> [!div class="mx-imgBorder"]
-> ![Enter the URL of the font in the dialog box](media/enter-the-respective-font-url.png "Enter the URL of the font in the dialog box")
+    > [!div class="mx-imgBorder"]
+    > ![Enter the URL of the font in the dialog box](media/enter-the-respective-font-url.png "Enter the URL of the font in the dialog box")
 
 ## Navigating web font licensing
 
