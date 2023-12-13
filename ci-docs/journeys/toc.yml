@@ -302,6 +302,8 @@
       href: real-time-marketing-form-create.md
     - name: Deploy pages that contain forms
       href: real-time-marketing-deploy-pages.md
+    - name: "Preview: Capture forms in Customer Insights - Journeys"
+      href: real-time-marketing-form-capture.md
     - name: Manage forms
       href: real-time-marketing-manage-forms.md
     - name: Troubleshoot forms
