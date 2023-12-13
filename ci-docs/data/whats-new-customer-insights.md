@@ -35,7 +35,7 @@ Ask questions in natural language to have a dialog with your data to explore, as
 You can already create highly personalized experiences for your customers when you use enriched profiles from Dynamics 365 Customer Insights - Data. Now, you can further personalize journeys and content by using calculated metrics (customer measures) such as lifetime value, total or average spend, total amount insured or number of policies, etc. With such calculated data available seamlessly, you're empowered to deliver experiences such as personalizing offers or level of service (e.g., priority notification ahead of others).
 
 - [Release plan](/dynamics365/release-plan/2023wave2/customer-insights/personalize-customer-experiences-using-calculated-metrics)
-- [Docs](calculated-measures.md)
+- [Docs](dataverse-measures.md)
 
 ### Public preview features
 
