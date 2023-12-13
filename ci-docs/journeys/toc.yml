@@ -152,8 +152,6 @@
           href: add-to-calendar.md
         - name: Use brand profiles in email
           href: brand-profiles-email.md
-        - name: Use Custom fonts in Dynamics 
-          href: use-custom-fonts-in-dynamics.md
         - name: Import outbound emails, templates, and content blocks to Customer Insights - Journeys
           href: real-time-marketing-import-email-to-real-time.md 
       - name: Prepare to send your email
@@ -184,6 +182,8 @@
         href: set-up-automated-sms-keyword-flow.md
     - name: Push notifications
       href: real-time-marketing-push-notifications.md
+    - name: Use custom fonts in Customer Insights - Journeys
+      href: use-custom-fonts-in-dynamics.md
     - name: Create custom channels
       href: real-time-marketing-create-custom-channels.md
     - name: Use AI-driven run-time channel optimization
