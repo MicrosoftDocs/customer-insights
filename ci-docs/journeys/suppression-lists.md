@@ -67,46 +67,52 @@ The pattern suppression is a manual list maintained by the deliverability engine
     - For example: From [admin@contoso.com](mailto:admin@contoso.com) To: [John.Doe@contoso.com](mailto:John.Doe@contoso.com)
         - The hard bounced [John.Doe@contoso.com](mailto:John.Doe@contoso.com) address is eligible for delisting because the user owns the contoso.com domain and the recipient is considered “internal.” The user can confirm that the reason for the hard bounce has already been mitigated from their end.
 
-Eligible email addresses will have an automatic expiration date that will remove the email address from the suppression list once the date comes, each time the same email address enters the suppression list, the default expiration time increases.
+Eligible email addresses have an automatic expiration date that removes the email address from the suppression list once the date arrives. Each time the same email address enters the suppression list, the default expiration time increases.
 
 > [!NOTE]
 > Email addresses listed due to feedback loop/spam complaints will never be eligible for delisting due to privacy and data protection regulations. Such emails can only be requested to be removed by the recipient owner of the email address. Senders cannot get approval to remove such addresses.
 
-## Removing eligible email addresses (Preview)
+## Preview: Removing eligible email addresses
+
+> [!IMPORTANT]
+> A preview feature is a feature that is not complete, but is made available before it’s officially in a release so customers can get early access and provide feedback. Preview features aren’t meant for production use and may have limited or restricted functionality.
+> 
+> Microsoft doesn't provide support for this preview feature. Microsoft Dynamics 365 Technical Support won’t be able to help you with issues or questions. Preview features aren’t meant for production use, especially to process personal data or other data that are subject to legal or regulatory compliance requirements.
 
 To enable the feature:
+
 1. Go to **Settings** and select **Feature switches**.
 1. Enable the **Ability to remove email addresses from suppression** in the **Email sending** section.
 
-Once enabled, you can remove eligible email addresses out of the suppression list by navigating to Contacts and then select the communication tab.
+Once enabled, you can remove eligible email addresses from the suppression list by navigating to **Contacts** and then selecting the **Communication** tab.
 
 > [!div class="mx-imgBorder"]
 > ![Use communication tab to select email addresses to remove from suppression lists](media/select-email-addresses-to-remove.png "Use communication tab to select email addresses to remove from suppression lists")
 
-In the communication tab, email addresses will belong to one of the following categories:
-1. Not in the suppression list
-It means that the email address isn't listed in the suppression list, and you can send emails to this email address.
-1. On suppression list
-It means that the email address is in the suppression list due to Hard bounce or multiple soft bounces. Email addresses under this category are removable, and you can remove them by clicking on **Remove from suppression list**.
-1. Permanently blocked
-It means that the email address is in the suppression list due to a permanent issue or due to a direct spam complaint from your recipient. Email addresses under this category aren't removable, as it’s either ineligible to remove them (e.g., spam complaints) or removing them will not solve the problem and they will go again to the suppression once you try to contact them (e.g., invalid mailbox).
-More details on bounce reasons and categories can be found here: [Email bounce categories](email-bounce-categories.md).
+In the **Communication** tab, email addresses are part of one of the following categories:
+
+1. **Not in the suppression list**: The email address isn't listed in the suppression list and you can send emails to this email address.
+1. **On suppression list** The email address is in the suppression list due to a hard bounce or multiple soft bounces. Email addresses in this category are removable. You can remove them by selecting **Remove from suppression list**.
+1. **Permanently blocked**: The email address is in the suppression list due to a permanent issue or due to a direct spam complaint from a recipient. Email addresses in this category aren't removable as they're either ineligible for removal (because of, for example, spam complaints) or removing doesn't solve the problem and they go back on the suppression once you try to contact them (because of, for example, an invalid mailbox).
+
+Learn more about bounce reasons and categories: [Email bounce categories](email-bounce-categories.md)
 
 > [!IMPORTANT]
-> Please note that you have a limited number of attempts to remove email addresses, so if you face a big amount of suppression after executing a journey (e.g., 100s or 1000s of suppressions), please open a support request to engage our deliverability teams as this is abnormal behavior and will require further investigation to identify the root cause of the problem.
+> You have a limited number of attempts to remove email addresses, so if you're dealing with a lot of suppression after executing a journey (for example, hundreds or thousands of suppressions), open a support to engage with our deliverability team as this is abnormal behavior and requires further investigation to identify the root cause of the problem.
+>
+> **In the support request, provide the following required information**:
+>
+> - A list of the email addresses in question.
+> - Justification as to why you believe each email address was listed by mistake.
+> - Proof that each email address is valid and can be reached by any other email provider by sending a screenshot of such an email or forwarding a copy of an email received from the email address in question.
+> - Measures taken to prevent same bounces for those addresses (if applicable).
+>
+> After that, our deliverability team will review the request and determine if the addresses are eligible for removal.
 
-**In the support request, provide the following required information**:
-- A list of the email addresses in question.
-- Justification as to why you believe each email address was listed by mistake.
-- You should also provide proof that each email address is valid and can be reached by any other email provider by sending a screenshot of such an email or forwarding a copy of an email received from the email address in question.
-- Measures taken to prevent same bounces for those addresses (if applicable).
-
-After that, our deliverability team will review the request and determine if the addresses are eligible for removal.
+> [!TIP]
+> If you have a typo in an email address listed in the suppression list, correcting the email address in the contact fixes the issue without the need to remove the incorrect email address from the suppression list. Deliverability is not affected by incorrect email addresses in the suppression list.
 
 > [!NOTE]
-> If you have a typo in an email address listed in the suppression list, correcting the email address in the contact will fix the issue without the need to remove the incorrect email address from the suppression list. Deliverability is not affected by incorrect email addresses in the suppression list.
-
-> [!NOTE]
-> If an email address of contact is removed from a suppression list that is used in a live journey, the changes will take effect in the next iteration of the journey (if the journey is recurring), not in the current one.
+> If a contact's email address that is used in a live journey is removed from a suppression list, the changes will take effect in the next iteration of the journey (if the journey is recurring), not in the current one.
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
