@@ -1,7 +1,7 @@
 ---
 title: How Customer Insights - Journeys uses suppression lists for email deliverability
 description: Learn how Customer Insights - Journeys uses suppression lists to protect email sending reputations.
-ms.date: 11/06/2023
+ms.date: 12/13/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -67,40 +67,46 @@ The pattern suppression is a manual list maintained by the deliverability engine
     - For example: From [admin@contoso.com](mailto:admin@contoso.com) To: [John.Doe@contoso.com](mailto:John.Doe@contoso.com)
         - The hard bounced [John.Doe@contoso.com](mailto:John.Doe@contoso.com) address is eligible for delisting because the user owns the contoso.com domain and the recipient is considered “internal.” The user can confirm that the reason for the hard bounce has already been mitigated from their end.
 
+Eligible email addresses will have an automatic expiration date that will remove the email address from the suppression list once the date comes, each time the same email address enters the suppression list, the default expiration time increases.
+
 > [!NOTE]
 > Email addresses listed due to feedback loop/spam complaints will never be eligible for delisting due to privacy and data protection regulations. Such emails can only be requested to be removed by the recipient owner of the email address. Senders cannot get approval to remove such addresses.
 
-### The process of delisting an email address
+## Removing eligible email addresses (Preview)
 
-If you find an email address that matches the above eligibility criteria, you can submit a delist request by opening a Support Request.
+To enable the feature:
+1. Go to **Settings** and select **Feature switches**.
+1. Enable the **Ability to remove email addresses from suppression** in the **Email sending** section.
 
-**In the support request, provide the following required information:**
+Once enabled, you can remove eligible email addresses out of the suppression list by navigating to Contacts and then select the communication tab.
 
--	A list of the email addresses in question.
--	Justification as to why you believe each email address was listed by mistake.
--	You should also provide proof that each email address is valid and can be reached by any other email provider by sending a screenshot of such an email or forwarding a copy of an email received from the email address in question.
--	Measures taken to prevent same bounces for those addresses (if applicable).
+> [!div class="mx-imgBorder"]
+> ![Use communication tab to select email addresses to remove from suppression lists](media/select-email-addresses-to-remove.png "Use communication tab to select email addresses to remove from suppression lists")
+
+In the communication tab, email addresses will belong to one of the following categories:
+1. Not in the suppression list
+It means that the email address isn't listed in the suppression list, and you can send emails to this email address.
+1. On suppression list
+It means that the email address is in the suppression list due to Hard bounce or multiple soft bounces. Email addresses under this category are removable, and you can remove them by clicking on **Remove from suppression list**.
+1. Permanently blocked
+It means that the email address is in the suppression list due to a permanent issue or due to a direct spam complaint from your recipient. Email addresses under this category aren't removable, as it’s either ineligible to remove them (e.g., spam complaints) or removing them will not solve the problem and they will go again to the suppression once you try to contact them (e.g., invalid mailbox).
+More details on bounce reasons and categories can be found here: [Email bounce categories](email-bounce-categories.md).
+
+> [!IMPORTANT]
+> Please note that you have a limited number of attempts to remove email addresses, so if you face a big amount of suppression after executing a journey (e.g., 100s or 1000s of suppressions), please open a support request to engage our deliverability teams as this is abnormal behavior and will require further investigation to identify the root cause of the problem.
+
+**In the support request, provide the following required information**:
+- A list of the email addresses in question.
+- Justification as to why you believe each email address was listed by mistake.
+- You should also provide proof that each email address is valid and can be reached by any other email provider by sending a screenshot of such an email or forwarding a copy of an email received from the email address in question.
+- Measures taken to prevent same bounces for those addresses (if applicable).
 
 After that, our deliverability team will review the request and determine if the addresses are eligible for removal.
 
-> [!IMPORTANT]
-> If you have a typo in an email address listed in the suppression list, you can correct the email address in the contact or lead without the need for a support request. Deliverability is not affected by incorrect email addresses in the suppression list.
+> [!NOTE]
+> If you have a typo in an email address listed in the suppression list, correcting the email address in the contact will fix the issue without the need to remove the incorrect email address from the suppression list. Deliverability is not affected by incorrect email addresses in the suppression list.
 
 > [!NOTE]
 > If an email address of contact is removed from a suppression list that is used in a live journey, the changes will take effect in the next iteration of the journey (if the journey is recurring), not in the current one.
-
-## How to prevent email addresses from being listed
-
-To prevent your email addresses from being listed on suppression lists, it's crucial to pay close attention to your email bounce rates. Bounce rates are the number of emails that couldn't be delivered to the recipient's inbox. A [high bounce rate](fix-high-bounce-rate.md) can indicate several issues including invalid email addresses, incorrect email formatting, or email content that triggers spam filters. Addressing these issues can help improve your email deliverability rates and prevent your email addresses from being listed on suppression lists.
-
-Here are some tips to avoid email suppression lists:
-
-1. **Maintain a clean email list**: Regularly clean your email list by removing invalid or inactive email addresses. It's also essential to validate email addresses before adding them to your list to avoid sending emails to fake or spam email addresses.
-1. **Send relevant and valuable content**: Deliver emails with relevant and valuable content to your subscribers. This reduces the likelihood of recipients marking your emails as spam.
-1. **Test your emails**: Test your emails before sending them to ensure that they're well-formatted and don't trigger spam filters.
-1. **Monitor your email deliverability rates**: Keep an eye on your email deliverability rates and investigate any sudden changes. A sudden [drop in deliverability](email-troubleshooting.md) rates could indicate that your emails might have some potential issues.
-1. **Follow email [marketing best practices](get-ready-email-marketing.md)**: Adhere to email marketing best practices such as including an unsubscribe link in your emails and ensure that your email content complies with anti-spam laws.
-
-It's the sender's responsibility to maintain a clean email list and ensure that their email campaigns comply with email marketing best practices. By following these tips, you can avoid having your email addresses bounced and listed on suppression lists and maintain a healthy email reputation.
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
