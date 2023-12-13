@@ -148,6 +148,8 @@
           href: content-rewrite.md
         - name: "Preview: Copilot - Style your emails with AI-assisted themes"
           href: email-theme.md
+        - name: Enhance email engagement by allowing browser viewing
+          href: view-email-in-browser.md
         - name: Generate iCalendar files for events and sessions
           href: add-to-calendar.md
         - name: Use brand profiles in email
