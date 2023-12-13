@@ -199,6 +199,4 @@ Select the tables you want to add or remove, then select **Save**.
 > [!NOTE]
 > Removing dynamic text only removes it from the pre-defined list, it does not remove it from the messages that are already using it.
 
-> The pre-defined dynamic text feature has a few known issues. Learn more: [Known issues in Customer Insights - Journeys](real-time-marketing-known-issues.md#personalization).
-
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
