@@ -1,7 +1,7 @@
 ---
 title: Real-time journeys transition FAQs
 description: Answers to frequently asked questions about transitioning to real-time journeys in Customer Insights - Journeys.
-ms.date: 11/16/2023
+ms.date: 12/12/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -31,7 +31,7 @@ Learn more: [Dynamics 365 Customer Insights FAQs](ci-faq.md)
 Microsoft recently announced three changes to Dynamics 365 Marketing:
 
 1. **Name change**: Dynamics 365 Marketing is now called "Customer Insights – Journeys." This is only a name change. There are no functionality changes on account of the name change. Customer Insights – Journeys continues to contain outbound marketing, real-time journeys, and event planning capabilities (the same as before the name change).
-1. **License and SKU changes**: On September 1, 2023, Microsoft launched a new license and SKU called that allows customers to obtain both “Customer Insights – Data” (previously known as Customer Insights) and “Customer Insights – Journeys” (previously known as Dynamics 365 Marketing) as a single SKU with a single simplified license.
+1. **License and SKU changes**: On September 1, 2023, Microsoft launched a new license and SKU called Customer Insights that allows customers to obtain both “Customer Insights – Data” (previously known as Customer Insights) and “Customer Insights – Journeys” (previously known as Dynamics 365 Marketing) as a single SKU with a single simplified license.
 1. **Transition to real-time**: Generative AI and many other new innovations are only coming to the real-time journeys area. Therefore, we're encouraging all customers who are still using outbound marketing to transition to real-time. Similarly, new customers should start in real-time only to avoid having to transition later. To facilitate this change, **new orgs** are now provisioned only with real-time journeys by default. After provisioning, existing outbound marketing customers will see an "enable" link to add back outbound marketing functionality. If you don't see the enable link, follow the guidance for [requesting outbound marketing to be added](transition-overview.md#request-an-exception-to-enable-outbound-marketing). These changes are only applied to new orgs, they aren't applied to existing orgs. Existing orgs can continue to receive and apply monthly and wave release updates as usual.
 
 ## I'm an existing Dynamics 365 Marketing customer using outbound marketing. How do these changes impact me?
