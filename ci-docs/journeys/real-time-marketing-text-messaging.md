@@ -22,6 +22,10 @@ Text messages (SMS) allow you to reach customers directly on their mobile device
 
 This article explains how to create and send text messages in Customer Insights - Journeys. As [discussed below](real-time-marketing-outbound-text-messaging.md#track-your-text-message-metrics-from-channel-insights), the Customer Insights - Journeys app tracks text messaging metrics for channel insights purposes, including incoming SMS responses.
 
+## Set up text messaging
+
+Before sending text messages, you need to [enter the details for your text messaging provider](real-time-marketing-text-messaging-setup.md) within the Customer Insights - Journeys app.
+
 ## Create text messages
 
 After you add a phone number, you can start authoring text messages by going to **Customer Insights - Journeys** > **Channels** > **Text messages** and selecting **+New text message** in the top ribbon. This takes you to the text messaging editor.
