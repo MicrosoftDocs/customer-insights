@@ -59,14 +59,14 @@ On September 1, 2023, Dynamics 365 Customer Insights - Journeys transitioned to 
     - [Release plan](/dynamics365/release-plan/2023wave2/marketing/dynamics365-marketing/personalize-customer-experiences-using-calculated-metrics-customer-insights)
     - [Docs](real-time-marketing-predefined-dynamic-text.md#access-even-more-data-for-personalization)
 
-- **Create segments using unified profiles and calculated metrics from Customer Insights - Data**
-    - Customer Insights – Journeys now lets you create highly personalized customer segments using unified profiles and customer measures from Customer Insights - Data. This allows you to use the Customer Insights – Journeys app for even more scenarios without having to use Customer Insights – Data app to create unified profile-based segments. This also ensures that all interaction data is captured against the contact, regardless of whether you use the information from contacts or unified profiles. In a Customer Insights – Journeys environment, unified profiles and customer measures are available when you create a segment of contacts.
-    - [Docs](real-time-marketing-build-segments.md)
-
 - **Enhance email engagement by allowing browser viewing**
     - Different email providers have different ways of displaying emails. Sometimes this results in missing or distorted content, messy layouts, and a poor customer experience, especially on mobile devices. The option to “View in browser” in real-time journeys allows your customers to see your emails exactly as you created them, improving their experience and making your marketing campaigns more effective. You can also use the link to preview your emails and share them with your team for feedback and approval.
     - [Release plan](/dynamics365/release-plan/2023wave2/marketing/dynamics365-marketing/enhance-email-engagement-allowing-viewing-browsers)
     - [Docs](view-email-in-browser.md)
+
+- **Create segments using unified profiles and calculated metrics from Customer Insights - Data**
+    - Customer Insights – Journeys now lets you create highly personalized customer segments using unified profiles and customer measures from Customer Insights - Data. This allows you to use the Customer Insights – Journeys app for even more scenarios without having to use Customer Insights – Data app to create unified profile-based segments. This also ensures that all interaction data is captured against the contact, regardless of whether you use the information from contacts or unified profiles. In a Customer Insights – Journeys environment, unified profiles and customer measures are available when you create a segment of contacts.
+    - [Docs](real-time-marketing-build-segments.md)
 
 - **Manage Customer Insights – Journeys trials in the new installation management experience**
     - In September 2023, we launched a new business model offering customers more value in one, simplified offer called Dynamics 365 Customer Insights including both Customer Insights – Journeys and Customer Insights – Data. With the new model, we launched a new installation management experience enabling install, update, and uninstall on paid environments for both Customer Insights – Journeys and Customer Insights – Data. In this release we’re adding the ability to manage install, update, and uninstall of Customer Insights – Journeys on trial environments. In the next release we’ll add support for managing Customer Insights – Data and converting trials to paid using the installation management experience.
@@ -87,7 +87,7 @@ On September 1, 2023, Dynamics 365 Customer Insights - Journeys transitioned to 
 - **Add styles to brand profiles and create reusable themes**
     - Maintaining a consistent and cohesive brand identity is key to building customer experiences and increasing brand recognition. However, replicating brand guidelines in your marketing emails, forms, and event registration pages is often time-consuming and requires back-and-forth styling and formatting. Leveraging Copilot, you can now quickly create branded themes for your content and easily apply them to emails, forms, and event registration pages.
     - [Release plan](/dynamics365/release-plan/2023wave2/marketing/dynamics365-marketing/add-styles-brand-profiles-create-reusable-themes)
-    - [Docs](brand-profiles.md)
+    - [Docs](brand-profiles.md#define-theme)
 
 ### Monthly enhancements
 
