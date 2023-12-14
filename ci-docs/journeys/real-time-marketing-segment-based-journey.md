@@ -1,7 +1,7 @@
 ---
 title: Create a segment-based journey 
 description: Learn how to create a segment-based journey in Dynamics 365 Customer Insights - Journeys.
-ms.date: 11/16/2023
+ms.date: 12/13/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -25,9 +25,9 @@ To illustrate the capabilities of segment-based journeys, we create a simple jou
 
 ### Create segments
 
-Create a segment of your *Most valuable customers*. Segment-based journeys [work with segments from outbound marketing and segments from Customer Insights](real-time-marketing-segments.md).
-- If you choose to use outbound marketing, the email and text content must use **Contact** as the audience data for personalization.
-- If you choose to use Customer Insights, the email and text content must use **Customer Profile** as the audience data for personalization.
+Create a segment of your *Most valuable customers*. You can [create your own contact or lead-based segment](real-time-marketing-build-segments.md). Segment-based journeys can also [work with segments from outbound marketing and segments from Customer Insights - Data](real-time-marketing-segments.md).
+- If you choose to use outbound marketing segments, the email and text content must use **Contact** as the audience data for personalization.
+- If you choose to use Customer Insights - Data segments, the email and text content must use **Customer Profile** as the audience data for personalization.
 
 ### Create email and text messages
 

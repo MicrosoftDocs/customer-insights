@@ -1,7 +1,7 @@
 ---
 title: New and upcoming features
 description: Information about new features, improvements, and bug fixes in Dynamics 365 Customer Insights - Journeys releases.
-ms.date: 11/27/2023
+ms.date: 12/13/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -22,6 +22,94 @@ We're excited to announce our newest updates! This article summarizes early acce
 Customer Insights - Journeys updates are [pushed to customers automatically](https://cloudblogs.microsoft.com/dynamics365/it/2020/04/27/automatic-update-policy-for-dynamics-365-marketing/). Solutions are available for early validations. To manually update your instances, follow the steps in [Keep Customer Insights - Journeys up to date](apply-updates.md).
 
 To submit and vote on **feature requests** and **product suggestions**, go to the [Dynamics 365 Application Ideas portal](https://experience.dynamics.com/ideas/categories/?forum=dfa5b83d-9e4c-e811-a956-000d3a1bef07&forumName=Dynamics%20365%20Marketing).
+
+## December 2023 update
+
+### Version number
+
+| App              | GA release      |
+|------------------|-----------------|
+| Customer Insights - Journeys        |   1.1.35296.75    |
+
+On September 1, 2023, Dynamics 365 Customer Insights - Journeys transitioned to focus on real-time marketing features only. To support this transition, in early August 2023, provisioning of new instances changed in the following ways:
+
+- New customers no longer receive the outbound marketing module. New customers need to contact support to add outbound marketing features.
+- Existing customers see the same provisioning change but can add outbound marketing features themselves using a self-serve interface available on the **Settings** > **Versions page**.
+
+ > [!div class="mx-imgBorder"]
+ > ![New dynamics 365 customer insights org](media/real-time-marketing-transition-graphic.png "New dynamics 365 customer insights org")
+
+> [!IMPORTANT]
+> New requirements from [Google](https://blog.google/products/gmail/gmail-security-authentication-spam-protection) and [Yahoo](https://blog.postmaster.yahooinc.com/post/730172167494483968/more-secure-less-spam) for bulk email senders will go into effect in February 2024 that require emails to support one-click unsubscribe. Dynamics 365 Customer Insights will support this requirement for outbound and real-time journeys. To make use of one-click unsubscribe, you'll need to upgrade to the December 2023 release. A feature switch will become available to enable one-click unsubscribe in January 2024. Communication to administrators in the admin center will be sent once this feature is available.
+
+### General availability
+
+- **Improve appeal and match brand identity with custom fonts**
+    - Create emails that stand out to your customers and convey a consistent brand image. By choosing fonts that align with your style and comply with your identity guidelines, you can also improve email accessibility and readability as well as create content that is consistent across languages, devices, and browsers.
+    - [Release plan](/dynamics365/release-plan/2023wave2/marketing/dynamics365-marketing/improve-appeal-match-brand-identity-custom-fonts)
+    - [Docs](use-custom-fonts.md)
+
+- **Improve communication timing by setting up quiet times**
+    - Quiet time settings ensure that your messages are only sent when you want them to be delivered, increasing engagement and meeting customer expectations. It’s also more important than ever to meet compliance obligations by only contacting your customers when they want to be reached. With quiet times, you can easily prevent messages from being delivered during nights, weekends, or holidays. You can control quiet times separately for different channels and message types as well as create unique settings for each line of business.
+    - [Release plan](/dynamics365/release-plan/2023wave2/marketing/dynamics365-marketing/prevent-messages-sending-during-unwanted-times-setting-up-quiet-times-using-copilot)
+    - [Docs](real-time-marketing-quiet-times.md)
+
+- **Personalize customer experiences using calculated metrics from Customer Insights - Data**
+    - You can already create highly personalized experiences for your customers when you use Customer Insights - Data and Customer Insights - Journeys together by using rich profile data for every customer. Now, you can further augment personalization by using customer measures from Customer Insights - Data and tailoring journeys and content based on loyalty, lifetime value, or any other calculated measure. With such calculated data available seamlessly, you're empowered to deliver experiences such as personalizing offers or levels of service (for example, priority notification ahead of others).
+    - [Release plan](/dynamics365/release-plan/2023wave2/marketing/dynamics365-marketing/personalize-customer-experiences-using-calculated-metrics-customer-insights)
+    - [Docs](real-time-marketing-predefined-dynamic-text.md#access-even-more-data-for-personalization)
+
+- **Enhance email engagement by allowing browser viewing**
+    - Different email providers have different ways of displaying emails. Sometimes this results in missing or distorted content, messy layouts, and a poor customer experience, especially on mobile devices. The option to “View in browser” in real-time journeys allows your customers to see your emails exactly as you created them, improving their experience and making your marketing campaigns more effective. You can also use the link to preview your emails and share them with your team for feedback and approval.
+    - [Release plan](/dynamics365/release-plan/2023wave2/marketing/dynamics365-marketing/enhance-email-engagement-allowing-viewing-browsers)
+    - [Docs](view-email-in-browser.md)
+
+- **Create segments using unified profiles and calculated metrics from Customer Insights - Data**
+    - Customer Insights – Journeys now lets you create highly personalized customer segments using unified profiles and customer measures from Customer Insights - Data. This allows you to use the Customer Insights – Journeys app for even more scenarios without having to use Customer Insights – Data app to create unified profile-based segments. This also ensures that all interaction data is captured against the contact, regardless of whether you use the information from contacts or unified profiles. In a Customer Insights – Journeys environment, unified profiles and customer measures are available when you create a segment of contacts.
+    - [Docs](real-time-marketing-build-segments.md)
+
+- **Manage Customer Insights – Journeys trials in the new installation management experience**
+    - In September 2023, we launched a new business model offering customers more value in one, simplified offer called Dynamics 365 Customer Insights including both Customer Insights – Journeys and Customer Insights – Data. With the new model, we launched a new installation management experience enabling install, update, and uninstall on paid environments for both Customer Insights – Journeys and Customer Insights – Data. In this release we’re adding the ability to manage install, update, and uninstall of Customer Insights – Journeys on trial environments. In the next release we’ll add support for managing Customer Insights – Data and converting trials to paid using the installation management experience.
+    - [Docs](setup.md)
+
+### Public preview
+
+- **Capture responses from external, third-party forms**
+    - Maximize the potential of your external custom-built forms and generate more leads and contacts for your business without the need to recreate them in Customer Insights – Journeys (real-time marketing). You can now capture submissions from any third-party forms on your website and automatically create new leads or contacts in Customer Insights – Journeys. This empowers you to better understand your audience, target them more accurately, and follow up effectively.
+    - [Release plan](/dynamics365/release-plan/2023wave2/marketing/dynamics365-marketing/capture-responses-external-third-party-forms)
+    - [Docs](real-time-marketing-form-capture.md)
+
+- **Easily reference copies of sent emails in interaction timeline**
+    - Understanding your company's customer interactions is key to improving your customer experience. Now you can deepen customer understanding by viewing exact copies of sent emails, allowing you to build more personalized experiences. Reviewing sent emails improves your overall visibility, compliance, and auditing.
+    - [Release plan](/dynamics365/release-plan/2023wave2/marketing/dynamics365-marketing/easily-reference-copies-previously-sent-emails-interaction-timeline)
+    - [Docs](view-previously-sent-emails.md)
+
+- **Add styles to brand profiles and create reusable themes**
+    - Maintaining a consistent and cohesive brand identity is key to building customer experiences and increasing brand recognition. However, replicating brand guidelines in your marketing emails, forms, and event registration pages is often time-consuming and requires back-and-forth styling and formatting. Leveraging Copilot, you can now quickly create branded themes for your content and easily apply them to emails, forms, and event registration pages.
+    - [Release plan](/dynamics365/release-plan/2023wave2/marketing/dynamics365-marketing/add-styles-brand-profiles-create-reusable-themes)
+    - [Docs](brand-profiles.md#define-theme)
+
+### Monthly enhancements
+
+- **Remove email addresses from suppression list (preview)**
+    - You can utilize the new Communication tab when viewing your contacts to see if the email address is in the suppression list and self-remove it without the need to open a support request. This accelerates the remediation time for you to be able to send emails to these contacts.
+    - [Docs](suppression-lists.md)
+
+- **Explore email delivery and engagement trends**
+    - In real-time journeys, you can now elevate your understanding of email performance by exploring delivery and engagement trends. Get comprehensive insights into how your audience interacts with your emails over time and track the trajectory of delivery rates, open rates, and click-through rates with precision. Uncover patterns, identify peak engagement periods, and optimize your strategies based on real-time trends.
+    - [Docs](real-time-marketing-analytics.md)
+
+- **Easily categorize and find images with automatically generated tags**
+    - Thanks to enhanced AI tagging, tags are automatically generated any time you upload images to the Dynamics 365 Customer Insights – Journeys library. Consistent and relevant tagging improves the overall searchability of your assets and makes it easier to find them in the future. 
+    - [Docs](upload-images-files.md)
+
+### New blogs and scenario docs
+
+Learn how to make the most of the new Dynamics 365 Customer Insights - Journeys features in our latest blogs and scenario docs:
+
+- [Moving Pre-defined Dynamic Text in Customer Insights - Journeys](https://community.dynamics.com/blogs/post/?postid=a9a4acbb-af88-ee11-a81c-6045bdafa6f4)
+- [Deliver higher-impact experiences with better data quality and configuration with Copilot](https://cloudblogs.microsoft.com/dynamics365/it/2023/11/22/deliver-higher-impact-experiences-with-better-data-quality-and-configuration-with-copilot/)
+- [AI-infused personalized customer journeys with Dynamics 365 Customer Insights 2023 release wave 2](https://cloudblogs.microsoft.com/dynamics365/bdm/2023/10/30/ai-infused-personalized-customer-journeys-with-dynamics-365-customer-insights-2023-release-wave-2/)
 
 ## October 2023 update
 

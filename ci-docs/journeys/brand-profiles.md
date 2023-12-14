@@ -1,6 +1,6 @@
 ---
-title: Create consistent branding with brand profiles in outbound marketing
-description: Learn how to create brand profiles in outbound marketing.
+title: Create consistent branding with brand profiles in Customer Insights - Journeys
+description: Learn how to create brand profiles in Customer Insights - Journeys.
 ms.date: 11/29/2023
 ms.topic: article
 author: alfergus
@@ -11,7 +11,7 @@ search.audienceType:
   - enduser
 ---
 
-# Create consistent branding with brand profiles in outbound marketing
+# Create consistent branding with brand profiles in Customer Insights - Journeys
 
 [!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
