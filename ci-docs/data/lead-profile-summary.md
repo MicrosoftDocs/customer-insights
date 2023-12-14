@@ -19,7 +19,7 @@ Dyanmics 365 Sales users can enrich their leads with insights from Customer Insi
 
 Adding insights to Dynamics 365 Sales helps sellers understand more about their lead to prioritize engagement and have more effective conversations at the right time. A seller typically spends a significant amount of time trying to track down information about a lead in disparate data sources, but Customer Insights – Data allows sellers to access this information in a single, unified space.
 
-The insight will appear on the Lead summary in Dynamics 365 Sales.
+The insight will appear on the [lead summary in Dynamics 365 Sales](/dynamics365/sales/use-sales-copilot#enrich-leads-with-related-information).
 
 ## Requirements
 

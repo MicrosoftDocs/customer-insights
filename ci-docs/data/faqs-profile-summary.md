@@ -20,7 +20,7 @@ These frequently asked questions (FAQ) describe the AI impact of the lead profil
 
 ## What is lead profile summaries in Dynamics 365 Sales?
 
-This AI-powered feature enables sellers to see a single insight from Customer Insights - Data to help them make better decisions about how to engage and interact with their customer. The insight appears on the Dynamics 365 Sales’ **Lead summary** page when the seller ask Sales Copilot (preview) to sumarize a lead.
+This AI-powered feature enables sellers to see a single insight from Customer Insights - Data to help them make better decisions about how to engage and interact with their customer. The insight appears on the Dynamics 365 Sales’ lead summary when the seller ask Sales Copilot (preview) to sumarize a lead.
 
 ## What are the feature’s capabilities?
 
@@ -50,7 +50,7 @@ The feature is available in the United States and supports English only.
 
 - Administrators in Customer Insights - Data can choose to disable all Copilot functionality for each solution, by using the [consent experience](copilot-global-consent.md).
 
-- Similarly as an Admin in the Sales application can [disable the use of Customer Insights - Data](/dynamics365/sales/enable-setup-copilot#enable-or-disable-copilot-features-in-dynamics-365-apps).
+- Similarly an Administrator in the Sales application can [disable the use of Customer Insights - Data](/dynamics365/sales/enable-setup-copilot#enable-or-disable-copilot-features-in-dynamics-365-apps).
 
 - In general, you should use the feature in a mindful way to ensure responsible and appropriate inputs and outputs to minimize bias and unfairness.
 
