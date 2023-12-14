@@ -82,7 +82,7 @@ On September 1, 2023, Dynamics 365 Customer Insights - Journeys transitioned to 
 - **Easily reference copies of sent emails in interaction timeline**
     - Understanding your company's customer interactions is key to improving your customer experience. Now you can deepen customer understanding by viewing exact copies of sent emails, allowing you to build more personalized experiences. Reviewing sent emails improves your overall visibility, compliance, and auditing.
     - [Release plan](/dynamics365/release-plan/2023wave2/marketing/dynamics365-marketing/easily-reference-copies-previously-sent-emails-interaction-timeline)
-    - [Docs](view-previously-sent-email.md)
+    - [Docs](view-previously-sent-emails.md)
 
 - **Add styles to brand profiles and create reusable themes**
     - Maintaining a consistent and cohesive brand identity is key to building customer experiences and increasing brand recognition. However, replicating brand guidelines in your marketing emails, forms, and event registration pages is often time-consuming and requires back-and-forth styling and formatting. Leveraging Copilot, you can now quickly create branded themes for your content and easily apply them to emails, forms, and event registration pages.
