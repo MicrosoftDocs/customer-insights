@@ -1,6 +1,6 @@
 ---
-title: FAQ for dialog with data (preview)
-description: This FAQ provides information about the AI technology used in dialog with data (preview). It provides key considerations and details about how AI is used, how it was tested and evaluated, and any specific limitations.
+title: FAQ for dialog with data
+description: This FAQ provides information about the AI technology used in dialog with data. It provides key considerations and details about how AI is used, how it was tested and evaluated, and any specific limitations.
 ms.date: 09/01/2023
 ms.custom: 
   - responsible-ai-faqs
@@ -10,13 +10,9 @@ ms.author: rsayyaparaju
 ms.reviewer: m-hartmann
 ---
 
-# FAQ for dialog with data (preview)
+# FAQ for dialog with data
 
-[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
-
-These frequently asked questions (FAQ) describe the AI impact of Dynamics 365 Customer Insights - Data dialog with data (preview) feature.
-
-[!INCLUDE [public-preview-note](includes/public-preview-note.md)]
+These frequently asked questions (FAQ) describe the AI impact of Dynamics 365 Customer Insights - Data dialog with data feature.
 
 ## What is dialog with data?
 
@@ -58,6 +54,6 @@ This feature is available in the United States and supports English only.
 
 ## See also
 
-- [Have a dialog with data using Copilot in Customer Insights - Data (preview)](dialog-with-data.md)
+- [Have a dialog with data using Copilot in Customer Insights - Data](dialog-with-data.md)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
