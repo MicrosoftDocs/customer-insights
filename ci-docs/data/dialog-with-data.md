@@ -1,7 +1,7 @@
 ---
-title: Have a dialog with data using Copilot in Customer Insights - Data (preview)
+title: Have a dialog with data using Copilot in Customer Insights - Data
 description: Learn how to get more insights from your data by asking natural-language questions with Copilot in Dynamics 365 Customer Insights - Data. 
-ms.date: 09/01/2023
+ms.date: 01/15/2024
 ms.topic: how-to
 author: radsay01
 ms.author: rsayyaparaju
@@ -9,17 +9,13 @@ ms.reviewer: mhart
 ms.custom: bap-template
 ---
 
-# Have a dialog with data using Copilot in Customer Insights - Data (preview)
-
-[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
+# Have a dialog with data using Copilot in Customer Insights - Data
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
 Dynamics 365 Customer Insights - Data uses copilot AI capabilities, powered by [Azure OpenAI Service](https://azure.microsoft.com/products/cognitive-services/openai-service) models, to generate insights about your customers. Ask questions in natural language to have a dialog with your data to explore, assess, and better understand the profiles, behavior, and activity of your customers. With these insights, you can create optimal personalized experiences and engage with your customers through the most effective channels.
 
 Responses are generated in accordance with [Microsoft Responsible AI Standards](https://www.microsoft.com/ai/responsible-ai). For more information, see [FAQ for dialog with data](faqs-dialog-data.md)
-
-[!INCLUDE [public-preview-note](includes/public-preview-note.md)]
 
 ## Prerequisites
 
@@ -37,7 +33,7 @@ Responses are generated in accordance with [Microsoft Responsible AI Standards](
 
    :::image type="content" source="media/copilot-customer-insights.png" alt-text="Screenshot of the dialog with data feature, with copilot AI answering a user question.":::
 
-The **Discover insights about your customers in natural language (preview)** page contains four key components:
+The **Discover insights about your customers in natural language** page contains four key components:
 
 - **Prompt box**: Enter your question in natural language; for example, *How many customers in my loyalty program have more than 100 reward points?* Copilot in Customer Insights - Data supports questions in supported languages with up to 2,000 characters. This section also contains the consent setting for sharing your prompts. Ask a specific question about your customers and make sure you have the relevant data imported to answer the question. Avoid asking questions that are too ambiguous or contain inappropriate content.
 
