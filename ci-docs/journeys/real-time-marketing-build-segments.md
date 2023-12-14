@@ -41,7 +41,7 @@ In the right pane of the segment builder, you can search for attributes to add t
 
 ## Create demographic segment using related tables
 
-In addition to having a segment return its targeting entity (such as contacts or leads), you can also build more complex queries that reference other tables (such as Event Registration or Account) to further enrich your segment definition. You can even reference customer measures from Customer Insights - Data.
+In addition to having a segment return its targeting entity (such as contacts or leads), you can also build more complex queries that reference other tables (such as Event Registration or Account) to further enrich your segment definition. You can even reference customer measures from Customer Insights - Data when targeting unified profiles.
 
 > [!NOTE]
 > To reference customer measures, Customer Insights - Journeys and Customer Insights - Data must be installed on the same environment.
