@@ -37,9 +37,9 @@ The system writes the measure to a Dataverse table with a relationship to the cu
 
 The following list contains some inspiration for one-dimensional customer measures and how to use them in a customer journey:
 
-- Use customer measures that measure metrics like lifetime spend in [journeys as a branch condition](./journeys/real-time-marketing-tile-reference.md#branching-the-customer-journey). For example: If the lifetime spend is greater than $ 500, route customers directly to tier 1 support.
-- [Personalize email content](./journeys/real-time-marketing-personalization.md) based on lifetime spend. For example, email a discount offer based on an amount they spent.
-- [Create a segment of contacts in Customer Insights - Journeys](./journeys/real-time-marketing-build-segments.md) based on the lifetime spend.
+- Use customer measures that measure metrics like lifetime spend in [journeys as a branch condition](../journeys/real-time-marketing-tile-reference.md#branching-the-customer-journey). For example: If the lifetime spend is greater than $ 500, route customers directly to tier 1 support.
+- [Personalize email content](../journeys/real-time-marketing-personalization.md) based on lifetime spend. For example, email a discount offer based on an amount they spent.
+- [Create a segment of contacts in Customer Insights - Journeys](../journeys/real-time-marketing-build-segments.md) based on the lifetime spend.
 - Use the measure for a [form in Power Apps](/power-apps/maker/model-driven-apps/create-design-forms). For example: Create a page for your customer support team so they can see the lifetime spend of a customer when looking up customer details.
 
 [!INCLUDE [footer-banner](includes/footer-banner.md)]
