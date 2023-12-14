@@ -1,7 +1,7 @@
 ---
 title: "What's new in Dynamics 365 Customer Insights - Data"
 description: "Information about new features, improvements, and bug fixes."
-ms.date: 12/13/2023
+ms.date: 12/14/2023
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
@@ -23,12 +23,14 @@ We roll out updates on a region-by-region basis. So certain regions might see fe
 
 ### General availability features
 
+<!-- 
 #### Get insights by asking questions in natural language with Copilot in Customer Insights, now with general and global availability
 
 Ask questions in natural language to have a dialog with your data to explore, assess, and better understand the profiles, behavior, and activity of your customers. Now with general availability and global availability across all geos and 23 supported languages to support enterprise and global customers. Get started today to democratize the power of your customer data platform (CDP) to everyone in your organization in a compliant and secure manner. Enable your end users to seamlessly access insights to make the best decisions in the moments that matter and provide deeply personalized experiences to your customers. For example, marketers can now use everyday words to understand the geographic distribution of loyalty program members and their recent transaction history to better cater customer lifetime value-focused campaigns and achieve higher campaign engagement.
 
 - [Release plan](/dynamics365/release-plan/2023wave2/customer-insights/generate-insights-asking-questions-natural-language-copilot-customer-insights)
 - [Docs](dialog-with-data.md)
+-->
 
 #### Personalize customer experiences using calculated metrics
 
