@@ -1,7 +1,7 @@
 ---
 title: Manage environments
 description: Learn how to to manage environments as an admin.
-ms.date: 11/15/2023
+ms.date: 12/15/2023
 ms.topic: how-to
 ms.reviewer: mhart
 author: kishorem-ms
@@ -95,7 +95,7 @@ We recommend having at least one other user with admin permissions in addition t
 
 ## Reset an existing environment
 
-As the owner of an environment, reset an environment to an empty state for a fresh start. Depending on the reason for resetting, consider backing up your environment and your data to avoid data loss. Essentially, it's a quick way to [uninstall and install Customer Insights - Data](../journeys/setup.md) from the user interface.
+You can reset an environment to an empty state for a fresh start. To reset an environment, you need to be the owner of the Customer Insights - Data environment and have a system administrator role on the Dataverse environment. Depending on the reason for resetting, consider backing up your environment and your data to avoid data loss. Essentially, it's a quick way to [uninstall and install Customer Insights - Data](../journeys/setup.md) from the user interface.
 
 When you reset Customer Insights - Data environment, several things happen:
 
