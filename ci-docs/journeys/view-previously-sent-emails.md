@@ -25,7 +25,7 @@ You can view an exact copy of sent emails on your contact interaction timeline t
 ## Enable viewing emails on the contact timeline
 
 1. Go to **Settings** and select **Feature switches**.
-1. Enable **Show exact copy of sent emails** feature toggle in the “**Contact timeline**” section
+1. Enable the **Show exact copy of sent emails** feature toggle in the **Contact timeline** section.
    > [!div class="mx-imgBorder"]
    > ![Enable your email viewing on contact timeline](media/enable-email-view-on-contact-timeline.png "Enable your email viewing on contact timeline")
 
