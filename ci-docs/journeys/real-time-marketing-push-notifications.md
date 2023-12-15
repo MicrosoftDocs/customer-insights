@@ -1,7 +1,7 @@
 ---
 title: Create push notifications
 description: Learn how to create push notifications for Customer Insights - Journeys
-ms.date: 12/12/2023
+ms.date: 12/13/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -18,6 +18,10 @@ search.audienceType:
 Push notifications are messages sent to customers who have installed your mobile app. Push messages allow you to quickly convey offers, messages, or other information directly to users of your app.
 
 You can send push messages as part of your journeys, similar to other outbound messages like text messages.
+
+## Set up push notifications
+
+To set up push notifications, you need administrator privileges. If you have the correct credentials, the first setup step requires [creating a mobile app configuration](real-time-marketing-push-notifications-setup.md). The second setup step requires [developer setup within your mobile app](real-time-marketing-developer-push.md).
 
 ## Create push notification messages
 
