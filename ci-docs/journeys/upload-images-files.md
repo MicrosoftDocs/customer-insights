@@ -1,7 +1,7 @@
 ---
 title: Upload, manage, and use images, files, and videos in online content
 description: How to upload, manage and use images, files, and videos in Dynamics 365 Customer Insights - Journeys.
-ms.date: 11/06/2023
+ms.date: 12/14/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -46,7 +46,7 @@ You can create a collection of images, videos, and files for later use. To uploa
 > [!div class="mx-imgBorder"]
 > ![upload replace asset](media/upload-new-images-from-library.png "upload replace asset")
 
-You can manually add **tags** when you upload a file so it’s easier to organize and find it later.
+You can manually add **tags** when you upload a file so it’s easier to organize and find it later. Additionally, when you upload an image, AI tagging automatically creates additional tags describing your image. You can always delete or add tags as you see suitable.
 
 ## Edit assets
 

@@ -1,7 +1,7 @@
 ---
 title: New and upcoming features
 description: Information about new features, improvements, and bug fixes in Dynamics 365 Customer Insights - Journeys releases.
-ms.date: 12/13/2023
+ms.date: 12/14/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -67,10 +67,6 @@ On September 1, 2023, Dynamics 365 Customer Insights - Journeys transitioned to 
 - **Create segments using unified profiles and calculated metrics from Customer Insights - Data**
     - Customer Insights – Journeys now lets you create highly personalized customer segments using unified profiles and customer measures from Customer Insights - Data. This allows you to use the Customer Insights – Journeys app for even more scenarios without having to use Customer Insights – Data app to create unified profile-based segments. This also ensures that all interaction data is captured against the contact, regardless of whether you use the information from contacts or unified profiles. In a Customer Insights – Journeys environment, unified profiles and customer measures are available when you create a segment of contacts.
     - [Docs](real-time-marketing-build-segments.md)
-
-- **Manage Customer Insights – Journeys trials in the new installation management experience**
-    - In September 2023, we launched a new business model offering customers more value in one, simplified offer called Dynamics 365 Customer Insights including both Customer Insights – Journeys and Customer Insights – Data. With the new model, we launched a new installation management experience enabling install, update, and uninstall on paid environments for both Customer Insights – Journeys and Customer Insights – Data. In this release we’re adding the ability to manage install, update, and uninstall of Customer Insights – Journeys on trial environments. In the next release we’ll add support for managing Customer Insights – Data and converting trials to paid using the installation management experience.
-    - [Docs](setup.md)
 
 ### Public preview
 
