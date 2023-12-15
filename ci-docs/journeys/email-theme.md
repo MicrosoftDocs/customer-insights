@@ -23,7 +23,7 @@ search.audienceType:
 This article describes the email theme functionality, which uses Copilot to customize the appearance of email fields, buttons, and text.
 
 > [!NOTE]
-> Unless style is explicitly set in the element properties, default style will be replaced with Email theme style.
+> Unless a style is explicitly set in the element properties, the default style is replaced with the email theme style.
 
 ## What is the theme functionality?
 
