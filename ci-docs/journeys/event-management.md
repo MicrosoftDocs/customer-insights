@@ -1,7 +1,7 @@
 ---
 title: Plan, publicize, and collect registrations for events
 description: An overview of event-management features (including planning, logistics, sponsors, speakers, promotion, and registration) in  Dynamics 365 Customer Insights - Journeys.
-ms.date: 11/07/2023
+ms.date: 12/15/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -42,8 +42,8 @@ Customer Insights - Journeys contains a subset of outbound event management feat
 |     Feature     |     Outbound marketing    |     Customer Insights - Journeys    |
 |---|---|---|
 |     Single session event    |     [Yes](set-up-event-outbound.md)    |     [Yes](set-up-event.md)    |
-|     Multi-session event          |     [Yes](set-up-event-outbound.md#manage-event-sessions-and-speakers)    |     Yes    |
-|     Session-level registration          |     [Yes](set-up-event-outbound.md#manage-event-sessions-and-speakers)    |     Planned    |
+|     Multi-session event          |     [Yes](set-up-event-outbound.md#manage-event-sessions-and-speakers)    |     [Yes](set-up-event.md)    |
+|     Session-level registration          |     [Yes](set-up-event-outbound.md#manage-event-sessions-and-speakers)    |     [Yes](real-time-journeys-event-session.md)    |
 |     Recurring event    |     [Yes](event-recurring-outbound.md)    |     Planned    |
 |     Event level templates    |     [Yes](event-templates-outbound.md)    |     Planned    |
 |     Sessions, session tracks, speaker management    |     [Yes](set-up-event-outbound.md)    |     [Yes](set-up-event.md)    |
