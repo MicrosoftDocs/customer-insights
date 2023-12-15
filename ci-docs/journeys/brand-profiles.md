@@ -16,7 +16,7 @@ search.audienceType:
 [!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!NOTE]
-> Unless style is explicitly set in the element properties, default style will be replaced with Email theme style.
+> Unless a style is explicitly set in the element properties, the default style is replaced with the email theme style.
 
 Brand profiles allow you to create consistently branded content efficiently, even if your organization has multiple brands. You can create multiple brand profiles for your organization or profiles for each of your business units. You can also define default senders for emails and set default social links. You can even extend your brand profile entity with custom values that you can use when creating content. This article describes how to create a brand profile.
 
