@@ -16,6 +16,9 @@ ms.author: philk
 
 Bring unified customer profiles into your personalized apps with Microsoft Power Apps.
 
+> [!TIP]
+> We recommend using one of the default options [to use Power BI with Dataverse data](/power-apps/maker/data-platform/use-powerbi-dataverse). It ensures you benefit from our [integration into Dataverse](integrate-d365-apps.md).
+
 ## Connect Power Apps and Dynamics 365 Customer Insights - Data
 
 Customer Insights - Data is one of the many [available sources for data in Power Apps](/powerapps/maker/canvas-apps/working-with-data-sources).

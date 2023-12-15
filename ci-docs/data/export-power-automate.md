@@ -16,6 +16,10 @@ ms.author: philk
 
 Trigger specific events to occur automatically when your data changes and manage more complex flows directly in [Microsoft Power Automate](https://flow.microsoft.com/).
 
+> [!TIP]
+> We recommend using one of the default options [to use Power BI with Dataverse data](/power-apps/maker/data-platform/use-powerbi-dataverse). It ensures you benefit from our [integration into Dataverse](integrate-d365-apps.md).
+
+
 ## Known limitations
 
 - A maximum of 100 calls per 60 seconds. Use the [$skip parameter](/connectors/customerinsights/#get-items-from-a-table) to call the API endpoint multiple times.
