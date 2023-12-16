@@ -1,6 +1,6 @@
 ---
-title: Set up session-level registration and waitlisting
-description: Learn how to set up session-level registration and waitlisting in Dynamics 365 Customer Insights - Journeys.
+title: Set up session-level registration
+description: Learn how to set up session-level registration in Dynamics 365 Customer Insights - Journeys.
 ms.date: 12/15/2023
 ms.topic: article
 author: alfergus
@@ -10,7 +10,7 @@ search.audienceType:
   - enduser
 ---
 
-# Set up session-level registration and waitlisting
+# Set up session-level registration
 
 Session-level registration allows event organizers to let attendees assemble their own event agenda by choosing from all available sessions. In most ways, events with session-level registration work the same as those with event-level registration, but there are a few key differences, as outlined in the following table. Keep reading this article for more information about these differences.
 
