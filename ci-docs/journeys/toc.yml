@@ -278,7 +278,7 @@
         href: open-events.md
       - name: Set up an event
         href: set-up-event.md
-      - name: Set up session-level registration and waitlisting
+      - name: Set up session-level registration
         href: real-time-journeys-event-session.md
       - name: Create an event from another event
         href: event-from-event.md
