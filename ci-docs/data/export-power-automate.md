@@ -17,7 +17,7 @@ ms.author: philk
 Trigger specific events to occur automatically when your data changes and manage more complex flows directly in [Microsoft Power Automate](https://flow.microsoft.com/).
 
 > [!TIP]
-> We recommend using one of the default options [to use Power BI with Dataverse data](/power-apps/maker/data-platform/use-powerbi-dataverse). It ensures you benefit from our [integration into Dataverse](integrate-d365-apps.md).
+> We recommend using the default option [to use Power Automate with Dataverse data](/power-automate/dataverse/overview). It ensures you benefit from our [integration into Dataverse](integrate-d365-apps.md).
 
 
 ## Known limitations
