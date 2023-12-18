@@ -1,7 +1,7 @@
 ---
 title: Customer Insights quickstart guide
 description: Customer Insights quickstart guide
-ms.date: 12/13/2023
+ms.date: 12/18/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -48,10 +48,16 @@ For example, if retailer mentioned above wanted to track customer purchases and 
 - A CSV file that contains customer information from the eCommerce system such as name, email, phone, address, purchase history, etc.
 - An SQL database that contains customer information from the loyalty card system, such as name, email, phone number, loyalty status, loyalty points, etc.
 
+> [!div class="mx-imgBorder"]
+> ![Add data source name](media/add-data-source-name.png "Add data source name")
+
 > [!NOTE]
 > Customer Insights - Data supports a variety of data sources such as Azure Data Lake Storage, Azure Synapse Analytics, Microsoft Dataverse, Delta Lake, Power Query, and more. You can also use on-premises data sources using the data gateway. 
 
 Learn more about creating data sources and dataflows in Customer Insights - Data: [Data sources overview](data-sources.md)
+
+> [!div class="mx-imgBorder"]
+> ![List of data sources created](media/list-of-data-sources.png "List of data sources created")
 
 After you’ve created your data sources, you’ll use Customer Insights – Data to connect, import, and transform your data and create unified profiles for your customers.
 
@@ -84,13 +90,22 @@ Next, you’ll want to enrich and visualize your customer data from various sour
     - Create a segment for customers that surpass a loyalty point threshold. 
     - For example, in the retail store scenario, you can create a segment with the following criteria: Loyalty Points > 1000. This will filter the customers who have more than 1000 loyalty points. Learn more: [Create and manage segments](segments.md)
 
+      > [!div class="mx-imgBorder"]
+      > ![Create segments to analyze data](media/create-segments.png "Create segments to analyze data")
+
 - **Measures**: Measures are calculations that help you quantify customer behaviors and business performance. 
     - You can use measures to create metrics, KPIs, or insights based on the data from your unified customer profiles. 
     - For example, in the retail store scenario, you can create a measure that calculates the loyalty points for each customer based on the data from your Loyalty Card system. Learn more: [Create and manage measures](measures.md)
 
+      > [!div class="mx-imgBorder"]
+      > ![Use measures to analyze data](media/create-measures.png "Use measures to analyze data")
+
 - **Predictions**: Predictions are forecasts that help you anticipate customer behavior and outcomes based on the data from your unified customer profiles. 
     - You can use predictions to create scenarios, recommendations, or actions based on the data from your unified customer profiles. 
     - For example, in the retail store scenario, you can use an out-of-box prediction model to predict the product recommendation for each customer based on their purchase behavior and customers with similar purchase patterns. Learn more: [Create and manage predictions - Dynamics 365 Customer Insights | Microsoft Learn](predictions.md)
+
+      > [!div class="mx-imgBorder"]
+      > ![Use predictions to analyze data](media/use-predictions.png "Use predictions to analyze data")
 
 **Step 4: Use Customer Insights - Data profiles in Customer Insights - Journeys**
 
