@@ -11,15 +11,13 @@ ms.custom: bap-template
 
 # Provide lead profile summaries to Dynamics 365 Sales (preview)
 
-Dyanmics 365 Sales users can enrich their leads with insights from Customer Insights - Data. The insight is based on the ingested and unified activity data, such as emails, reviews, transactions, purhcases, or web logs. The insight will be an observation of one of the following:
+Dyanmics 365 Sales users can enrich their lead summary with an insight from Customer Insights - Data. The insight is based on unified activity data ingested by the user, which could include reviews, purchases, appointments, web logs, and more. The insight will be an observation of one of the following:
 
 - Customer's sentiment: their attitudes or feelings toward the business and their products or services
 - Customer's behaviour: the cadence of their activities such as time intervals between appointments
 - Customer's interest: how likely they are to do something such as book an appointment or purchase a specific type of product or churn if they haven't made a transaction in a while
 
-Adding insights to Dynamics 365 Sales helps sellers understand more about their lead to prioritize engagement and have more effective conversations at the right time. A seller typically spends a significant amount of time trying to track down information about a lead in disparate data sources, but Customer Insights – Data allows sellers to access this information in a single, unified space.
-
-The insight will appear on the [lead summary in Dynamics 365 Sales](/dynamics365/sales/use-sales-copilot#enrich-leads-with-related-information).
+Leveraging unified activity data from Customer Insights - Data to add an additional insight to the [lead summary in Dynamics 365 Sales](/dynamics365/sales/use-sales-copilot#enrich-leads-with-related-information) helps sellers understand more about their lead, without leaving their workflow. With lead profile summary, sellers can spend less time manually parsing through disparate data sources to find and synthesize information about their leads, and more time having effective conversations with leads.
 
 ## Requirements
 
