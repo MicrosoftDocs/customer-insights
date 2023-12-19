@@ -14,7 +14,7 @@
     href: license-setup.md
   - name: Purchase Customer Insights
     href: purchase.md
-  - name: Dynamics 365 Customer Insights FAQs
+  - name: Customer Insights FAQs
     href: ci-faq.md
   - name: Key Customer Insights - Journeys scenarios
     items:
@@ -132,6 +132,8 @@
   items:
   - name: Real-time journeys user guide
     href: real-time-marketing-user-guide.yml
+  - name: Customer Insights quickstart guide
+    href: customer-insights-quickstart-guide.md
   - name: Marketing channels
     items:
     - name: Email campaigns
