@@ -1,7 +1,7 @@
 ---
 title: Manage and apply roles to teams
 description: Organize users into teams and apply roles to teams in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/21/2023
+ms.date: 12/19/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -35,10 +35,7 @@ To create a new team:
     - **Description**: Describe the team.
   
 > [!NOTE]
-> The **Administrator** field is only for reference and it doesn't have any special processing. You can use this field to restrict who can add and remove team members by registering a [plug-in](/power-apps/developer/data-platform/plug-ins) on the [associate and disassociate](/power-apps/developer/data-platform/webapi/associate-disassociate-entities-using-web-api) APIs for the **teammembership_association** relationship. These actions can be enforced when the user is the administrator of the team. For more information, see the community [sample code](https://community.dynamics.com/crm/b/mylifemicrosoftdynamiccrm/posts/ms-dynamics-crm-associate-disassociate-message-plugin).
-
-        
-
+> The **Administrator** field is only for reference and doesn't have any special processing. You can use this field to restrict who can add and remove team members by registering a [plug-in](/power-apps/developer/data-platform/plug-ins) on the [associate and disassociate](/power-apps/developer/data-platform/webapi/associate-disassociate-entities-using-web-api) APIs for the **teammembership_association** relationship. These actions can be enforced when the user is the administrator of the team. For more information, see the community [sample code](https://community.dynamics.com/crm/b/mylifemicrosoftdynamiccrm/posts/ms-dynamics-crm-associate-disassociate-message-plugin).
     
 1. Select **Save** on the command bar.
 1. The page reloads, now showing a **Team members** table. Use the settings here to view, add, or remove  members for the team.
@@ -54,7 +51,7 @@ To create a new team:
 1. Save your settings.
    
 > [!NOTE]
-> Privilege requirement: To add or remove a team member from an owner team, the user needs to have **Write**, **Append** and **Append To** privileges on **Team** table, **Append** and **Append To** privileges on **User** table, and also equal or higher privileges than the team has. For example, if the team is assigned with a System Customizer security role, the user will need a System Customizer or a System Administrator security role.
+> Privilege requirement: To add or remove a team member from an owner team, the user needs to have **Write**, **Append**, and **Append To** privileges on the **Team** table, **Append** and **Append To** privileges on the **User** table, and also equal or higher privileges than the team has. For example, if the team is assigned a System Customizer security role, the user needs a System Customizer or a System Administrator security role.
 
 ## Manage roles for a team
 
