@@ -1,7 +1,7 @@
 ---
 title: Access and interpret analytics
 description: How to access and interpret Customer Insights - Journeys analytics in Dynamics 365 Customer Insights - Journeys.
-ms.date: 11/03/2023
+ms.date: 12/18/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -91,7 +91,7 @@ The following insights categories are provided:
 :::image type="content" source="media/email-insights.png" alt-text="Email insights analytics dashboard." lightbox="media/email-insights.png":::
 
 > [!NOTE]
-> Data retention is 12 months for contact insights, lead insights, goal analytics, channel analytics (including email insights and delivery & interaction details), and AI optimization analytics.
+> Data retention is 12 months for contact insights, lead insights, goal analytics, channel analytics (including email insights and delivery and interaction details), and AI optimization analytics.
 
 ## Aggregate cross-journey analytics
 
