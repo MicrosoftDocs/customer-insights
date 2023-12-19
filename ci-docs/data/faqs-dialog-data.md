@@ -46,7 +46,7 @@ The feature transforms your prompts in natural language into a SQL query to run 
 
 ## What are the supported geographies and languages?
 
-This feature is available in the United States and supports English only.
+For more information, see [Copilot International Availability report](https://dynamics.microsoft.com/availability-reports/copilotreport/).
 
 ## What operational factors and settings allow for effective and responsible use of the feature?
 

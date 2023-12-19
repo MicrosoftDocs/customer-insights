@@ -6,6 +6,6 @@ ms.topic: include
 ms.service: customer-insights
 ---
 
-## Languages availability
+### International availability
 
-To learn about the languages that are supported, see the [Copilot International Availability report](https://dynamics.microsoft.com/availability-reports/copilotreport/).
+To learn about the languages and regions that are supported, see the [Copilot International Availability report](https://dynamics.microsoft.com/availability-reports/copilotreport/).

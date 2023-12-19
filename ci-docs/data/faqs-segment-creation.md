@@ -42,13 +42,9 @@ Segment creation with Copilot in Customer Insights - Data democratizes the varyi
 
 We measure performance of the Copilot by the successful creation of AI-generated segment criteria, and the publishing of the segment based on the suggestion of Copilot. We keep track of feedback provided through the thumbs up or thumbs down buttons to understand customer satisfaction with the feature.
 
-## What are the limitations of segment creation? How can users minimize the impact of the limitations when using the system?
-
-The feature is available in the United States and supports English only.  
-
 ## What are the supported geographies and languages?
 
-The feature is available in the United States and supports English only.
+For more information, see [Copilot International Availability report](https://dynamics.microsoft.com/availability-reports/copilotreport/).
 
 ## What operational factors and settings allow for effective and responsible use of the feature?
 
