@@ -13,27 +13,27 @@ search.audienceType:
 
 # Customer Insights quickstart guide
 
-Customer Insights is a one-stop-shop to identify, ingest, and act on customer data. Using Customer Insights, you can harness disparate data and use it to reach customers when and where they’re the most responsive. 
+Customer Insights is a one-stop-shop to identify, ingest, and act on customer data. Using Customer Insights, you can harness disparate data and use it to reach customers when and where they’re the most responsive.
 
-Imagine a scenario where a retail giant wants to reward loyal customers who surpass a loyalty point threshold. Each purchase earns customers loyalty points that are redeemable for exclusive discounts and rewards. 
+Imagine a scenario where a retail giant wants to reward loyal customers who surpass a loyalty point threshold. Each purchase earns customers loyalty points that are redeemable for exclusive discounts and rewards.
 
 The retailer has heaps of information about what people buy, how often they shop, and what they like. They track product purchases and loyalty card usage, generating thousands of data points. Translating the data into action, however, typically involves navigating a maze of data sources, manually building segments, and initiating cumbersome communication processes.
 
 Now, imagine the store being smart! Automatic data processing should allow the store to understand what customers like and how they shop without manual processes. Customers should actively shape marketing campaigns, choosing how and where they interact with the brand automatically. With Dynamics 365 Customer Insights, this vision becomes a reality, empowering you to create personalized, targeted experiences.
 
-In this guide, you'll explore a step-by-step process to seamlessly integrate, analyze, and utilize customer information to craft tailored experiences that resonate with individual preferences and behaviors.
+This guide explores a step-by-step process to seamlessly integrate, analyze, and utilize customer information to craft tailored experiences that resonate with individual preferences and behaviors.
 
 ## Prerequisites
 
 *Setup*:
 
 1. [Install Customer Insights - Data and Customer Insights - Journeys on the same environment](setup.md). 
-1. [Set up Customer Insights - Data](get-started.md)
+1. [Set up Customer Insights - Data](/dynamics365/customer-insights/data/get-started)
 
 *Connect the apps*:
 
 1. After you've installed the Customer Insights - Journeys and Customer Insights - Data apps on the same environment, you need to finish connecting them. To connect the apps, go to **Customer Insights - Journeys** then go to **Settings > Data Management > Customer Insights** and select the **Connect** button. This completes the data sync for segmentation between the two applications.
-1. You can now use [unified profiles from Customer Insights - Data](marketing-get-started.md) in Customer Insights - Journeys.
+1. You can now use [unified profiles from Customer Insights - Data](/dynamics365/customer-insights/data/marketing-get-started) in Customer Insights - Journeys.
 
 > [!NOTE]
 > If the apps are installed on the same Dataverse environment, they share the same data, including any unified profiles or Customer Insights - Data segments created in Customer Insights - Data. Once the button is selected to connect Customer Insights - Journeys and Customer Insights - Data segments, Customer Insights - Journeys sees Customer Insights - Data segments and they can be used in Customer Insights - Journeys for journeys. 
@@ -48,64 +48,59 @@ For example, if retailer mentioned above wanted to track customer purchases and 
 - A CSV file that contains customer information from the eCommerce system such as name, email, phone, address, purchase history, etc.
 - An SQL database that contains customer information from the loyalty card system, such as name, email, phone number, loyalty status, loyalty points, etc.
 
-> [!div class="mx-imgBorder"]
-> ![Add data source name](media/add-data-source-name.png "Add data source name")
+:::image type="content" source="media/add-data-source-name.png" alt-text="Add data source name.":::
 
 > [!NOTE]
 > Customer Insights - Data supports a variety of data sources such as Azure Data Lake Storage, Azure Synapse Analytics, Microsoft Dataverse, Delta Lake, Power Query, and more. You can also use on-premises data sources using the data gateway. 
 
-Learn more about creating data sources and dataflows in Customer Insights - Data: [Data sources overview](data-sources.md)
+Learn more about creating data sources and dataflows in Customer Insights - Data: [Data sources overview](/dynamics365/customer-insights/data/data-sources)
 
-> [!div class="mx-imgBorder"]
-> ![List of data sources created](media/list-of-data-sources.png "List of data sources created")
+:::image type="content" source="media/list-of-data-sources.png" alt-text="List of data sources created.":::
 
-After you’ve created your data sources, you’ll use Customer Insights – Data to connect, import, and transform your data and create unified profiles for your customers.
+After you create your data sources, you’ll use Customer Insights – Data to connect, import, and transform your data and create unified profiles for your customers.
 
 **Step 2: Create unified profiles and set-up relationships in Customer Insights - Data**
 
 Unified profiles are the core of Customer Insights - Data, as they provide a holistic and actionable view of each customer. Once you’ve imported your data, run the data unification process. 
 - Unified profiles are created by matching and merging data from different sources based on a unique identifier such as email, phone number, loyalty status, purchase history, and more. 
-- You can also enrich unified profiles with additional attributes such as demographics, preferences, scores, etc. Learn more: [Data enrichment (preview) overview](enrichment-hub.md)
+- You can also enrich unified profiles with additional attributes such as demographics, preferences, scores, etc. Learn more: [Data enrichment (preview) overview](/dynamics365/customer-insights/data/enrichment-hub)
 
 For example, a unified profile for a customer named John Smith might look like this:
 
-| **Attribute** | **Value** |  |
-|---|---|---|
-|     Name    |     John Smith    |  |
-|     Email    |     john.smith@example.com    |  |
-|     Phone    |     +1 234 567 8901    |  |
-|     Address    |     123 Main Street, New York, NY 10001    |  |
-|     Age    |     35    |  |
-|     Loyalty   Status    |     Gold    |  |
-|     Loyalty   Points    |     1500    |  |
-|     Gender    |     Male    |  |
-|     Purchase   History    |     Shoes, Jacket, Backpack    |  |
+| **Attribute** | **Value** |
+|---|---|
+|     Name    |     John Smith    |
+|     Email    |     john.smith@example.com    |
+|     Phone    |     +1 234 567 8901    |
+|     Address    |     123 Main Street, New York, NY 10001    |
+|     Age    |     35    |
+|     Loyalty   Status    |     Gold    |
+|     Loyalty   Points    |     1500    |
+|     Gender    |     Male    |
+|     Purchase   History    |     Shoes, Jacket, Backpack    |
 
-Learn more about creating unified profiles in Customer Insights - Data: [Data unification overview](data-unification.md)
+Learn more about creating unified profiles in Customer Insights - Data: [Data unification overview](/dynamics365/customer-insights/data/data-unification)
 
-**Step 3: Analyze data**
+**Step 3: Analyze the data**
 
 Next, you’ll want to enrich and visualize your customer data from various sources. This step helps you gain insights into customer behavior, preferences, needs, and value. You can analyze your data through:
 - **Segments**: Segments are groups of customers that share common characteristics or behaviors. 
     - Create a segment for customers that surpass a loyalty point threshold. 
-    - For example, in the retail store scenario, you can create a segment with the following criteria: Loyalty Points > 1000. This will filter the customers who have more than 1000 loyalty points. Learn more: [Create and manage segments](segments.md)
+    - For example, in the retail store scenario, you can create a segment with the following criteria: Loyalty Points > 1,000. This filters the customers who have more than 1,000 loyalty points. Learn more: [Create and manage segments](/dynamics365/customer-insights/data/segments)
 
-      > [!div class="mx-imgBorder"]
-      > ![Create segments to analyze data](media/create-segments.png "Create segments to analyze data")
+        :::image type="content" source="media/create-segments.png" alt-text="Create segments to analyze data.":::
 
 - **Measures**: Measures are calculations that help you quantify customer behaviors and business performance. 
     - You can use measures to create metrics, KPIs, or insights based on the data from your unified customer profiles. 
-    - For example, in the retail store scenario, you can create a measure that calculates the loyalty points for each customer based on the data from your Loyalty Card system. Learn more: [Create and manage measures](measures.md)
+    - For example, in the retail store scenario, you can create a measure that calculates the loyalty points for each customer based on the data from your Loyalty Card system. Learn more: [Create and manage measures](/dynamics365/customer-insights/data/measures)
 
-      > [!div class="mx-imgBorder"]
-      > ![Use measures to analyze data](media/create-measures.png "Use measures to analyze data")
+        :::image type="content" source="media/create-measures.png" alt-text="Use measures to analyze data.":::
 
 - **Predictions**: Predictions are forecasts that help you anticipate customer behavior and outcomes based on the data from your unified customer profiles. 
     - You can use predictions to create scenarios, recommendations, or actions based on the data from your unified customer profiles. 
-    - For example, in the retail store scenario, you can use an out-of-box prediction model to predict the product recommendation for each customer based on their purchase behavior and customers with similar purchase patterns. Learn more: [Create and manage predictions - Dynamics 365 Customer Insights | Microsoft Learn](predictions.md)
+    - For example, in the retail store scenario, you can use an out-of-box prediction model to predict the product recommendation for each customer based on their purchase behavior and customers with similar purchase patterns. Learn more: [Create and manage predictions](/dynamics365/customer-insights/data/predictions)
 
-      > [!div class="mx-imgBorder"]
-      > ![Use predictions to analyze data](media/use-predictions.png "Use predictions to analyze data")
+        :::image type="content" source="media/use-predictions.png" alt-text="Use predictions to analyze data.":::
 
 **Step 4: Use Customer Insights - Data profiles in Customer Insights - Journeys**
 
@@ -113,7 +108,7 @@ Once you’ve connected both the applications, you can use the unified profiles 
 
 In Customer Insights - Journeys, create a journey that targets the segment you created in Customer Insights - Data. You can use the journey designer or the advanced editor to create your journey. For example, you can create a journey with the following steps:
 
-- **Triggers**: Set the trigger to Segment (Customer Insights - Data) and select the segment you created in Customer Insights - Data. This will start the journey for every customer who belongs to that segment.
+- **Triggers**: Set the trigger to Segment (Customer Insights - Data) and select the segment you created in Customer Insights - Data. This starts the journey for every customer who belongs to that segment.
 - **Channels**: 
     - Add an email tile and configure the email content. You can use dynamic content based on measures from the unified customer profile. For example, you can use the following template:
     ```
@@ -126,7 +121,7 @@ In Customer Insights - Journeys, create a journey that targets the segment you c
 - **Analytics**: You can measure the performance and effectiveness of your email campaign based on the Customer Insights - Data profiles. You can track metrics such as open rate, click rate, conversion rate, and revenue generated by your campaign.
 - **Lead scoring**: You can assign scores to your customers based on their loyalty points and other attributes from the Customer Insights - Data profiles. You can use the lead scoring feature to rank your customers based on their engagement and readiness to buy.
 
-**Step 5**: Add an end tile and set the journey status to Completed. This will end the journey for the customer after they receive the email. Publish and activate your journey. This will make your journey live and ready to run. You can monitor the performance of your journey using the analytics dashboard and the insights panel. 
+**Step 5**: Add an end tile and set the journey status to Completed. This will end the journey for the customer after they receive the email. Publish and activate your journey. This makes your journey live and ready to run. You can monitor the performance of your journey using the analytics dashboard and the insights panel. 
 
 **Summary**
 
@@ -135,6 +130,7 @@ Customer Insights effortlessly translates rich data into impactful, automated in
 Once the data is unified, use segments, measures, and predictions to analyze it and unveil valuable insights into customer behavior and preferences. After analyzing the data, it’s you can act on it and reach out to customer using Customer Insights - Journeys, using the rich customer data to craft personalized journeys. This includes setting triggers, defining channels (for example, email content based on dynamic customer attributes), analytics for campaign performance measurement, and lead scoring.
 
 **Next steps**
+
 - [Send a targeted email blast in Customer Insights - Journeys](real-time-marketing-email-get-started.md)
 - [Boost event engagement with journeys](real-time-marketing-event-registration-journey.md)
 - [Send a targeted email blast in Customer Insights - Journeys](real-time-marketing-email-get-started.md)
