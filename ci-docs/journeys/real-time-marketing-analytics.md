@@ -115,7 +115,7 @@ Learn more: [How to use aggregate channel analytics](real-time-marketing-channel
 
 > [!NOTE]
 > There is no data retention policy for Customer Insights - Journeys interactions in aggregate cross-journey analytics and aggregate channel analytics. Dataverse entities are limited to a two-year retention policy after their initial creation date. Keep in mind that the two-year Dataverse entity retention policy might impact analytics views associated with interaction data from Dataverse entities.
-> The aggregate cross-journey analytics, channel analytics and marketing effectiveness analytics dashboards are not supported on mobile devices.
+> The aggregate cross-journey analytics, channel analytics, and marketing effectiveness analytics dashboards are not supported on mobile devices.
 
 ## Marketing effectiveness analytics
 
