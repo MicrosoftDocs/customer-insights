@@ -1,5 +1,5 @@
 ---
-title: "Preview: Reference copies of sent emails in interaction timeline"
+title: "Preview: Reference copies of sent emails in the interaction timeline"
 description: Learn how to view previously sent emails in Dynamics 365 Customer Insights - Journeys.
 ms.date: 12/12/2023
 ms.topic: how-to
@@ -11,7 +11,7 @@ search.audienceType:
   - enduser
 ---
 
-# Preview: Reference copies of sent emails in interaction timeline
+# Preview: Reference copies of sent emails in the interaction timeline
 
 [!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
