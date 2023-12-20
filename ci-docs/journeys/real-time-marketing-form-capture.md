@@ -25,6 +25,10 @@ The form capture is used to get submissions from existing forms that weren't cre
 > [!IMPORTANT]
 > **Form capture requires developer assistance**. It's always easier to create a form using the Customer Insights - Journeys form editor and embed the form into your existing page.
 
+> [!IMPORTANT]
+> **Form capture requires DynamicsMKT_Forms solution of version 1.1.35355 or higher**. When provisioning a trial instance, it doesn't always have to be on latest bits automatically - make sure you've updated marketing product before attempting to try form capturing.
+
+
 ## How form capture works
 
 Form capture mimics submission of a standard Customer Insights - Journeys form. To link submissions of your existing form into Customer Insights - Journeys, you need to create a form using the Customer Insights - Journeys form editor. Once you publish that form, you're able to obtain a form capture script, which needs to be embedded into the web page that contains your existing form. The script includes the definition of existing form fields mapping on attributes of the lead or contact entity. You can see all submissions and analytics inside Customer Insights - Journeys. You can also use this form in journey orchestration with the **Marketing Form Submitted** trigger. This form submission can also create or update Contact Point Consent and related Purposes or Topics.
