@@ -17,6 +17,9 @@ search.audienceType:
 
 Customer Insights - Journeys forms allow you to use custom captcha bot protection to validate form submissions. This article gives an example of how to integrate [Google reCAPTCHA](https://www.google.com/recaptcha/about/). The flow is similar for other captcha services.
 
+> [!NOTE]
+> In current version of product only one implementation of captcha can be active; if you implement your own captcha provider like outlined below existing forms that are using out-of-box captcha will stop working
+
 The process consists of these steps:
 
 1. **Add reCAPTCHA to the form**.
@@ -237,6 +240,7 @@ Once the form is submitted, the `g-recaptcha-response` parameter is added automa
 1. Make sure **Execution Mode** is set as **Synchronous**.
     > [!div class="mx-imgBorder"]
     > ![Make sure Execution Mode is set as Synchonous.](media/real-time-marketing-form-custom-captcha-5.png)
+1. Make sure **Execution order** is set to 10
 1. Make sure **Event Pipeline Stage Of Execution** is set as **Post Operation**.
 1. Select **Register New Step**.
 
