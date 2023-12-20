@@ -94,6 +94,10 @@ When Customer Insights – Data is present and connected, you can use customer m
 
 ### Creating measures
 
+Watch this video:
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RW1fY3B]
+
 See [Use calculated measures in Customer Insights - Journeys and other Dataverse-based applications](/dynamics365/customer-insights/data/dataverse-measures) to learn how to create measures in Customer Insights – Journeys and what types of measures are available for use in the app.
 
 > [!NOTE]
