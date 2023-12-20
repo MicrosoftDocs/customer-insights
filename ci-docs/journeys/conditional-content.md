@@ -1,7 +1,7 @@
 ---
 title: How to use conditional content
 description: Learn how to use conditional content features in Dynamics 365 Customer Insights - Journeys.
-ms.date: 12/13/2023
+ms.date: 12/20/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -90,9 +90,13 @@ Using content blocks can also help drive consistency. For example, a “high-val
 
 ## Customer measures (calculated metrics) as data source
 
-When Customer Insights – Data is present and connected, you can use customer measures (calculated metrics) in conditions when using customer profiles as the target audience. This opens up another source of data to further personalize messages and journeys. For example, you can define a calculated metric such as *LifeTimeSpend* or *CurrentYearSpend* for each customer. These metrics can then be used to create conditional content (for example, high spend customers get higher discount) or differentiated experiences in journeys (for example, high spend customers get flash sale notifications ahead of the others).
+When Customer Insights – Data is present and connected, you can use customer measures (calculated metrics) in conditions when using customer profiles as the target audience. This opens up another source of data to further personalize messages and journeys. For example, you can define a calculated metric such as *LifeTimeSpend* or *CurrentYearSpend* for each customer. These metrics can then be used to create conditional content (for example, high spend customers get higher discount) or differentiated experiences in journeys (for example, high-spend customers get flash sale notifications ahead of the others).
 
 ### Creating measures
+
+Watch this video to learn more:
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RW1fY3B]
 
 See [Use calculated measures in Customer Insights - Journeys and other Dataverse-based applications](/dynamics365/customer-insights/data/dataverse-measures) to learn how to create measures in Customer Insights – Journeys and what types of measures are available for use in the app.
 
