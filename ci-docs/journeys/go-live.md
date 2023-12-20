@@ -81,6 +81,8 @@ If you attempt to stop records such as email messages, forms, or segments utiliz
 | Completed | The journey is completed and is no longer accepting new customers into it. The journey completed because:  (1) the end date passed, (2) a static segment-based journey has run through every member, or (3) the last customer exited the previous journey version and the journey was marked as completed.  **Completed** is a system action. |
 | Publishing | The journey is currently being published. No actions can be taken. |
 | Completing | The journey is currently being completed. No actions can be taken. |
+| Deleted | 
+| Draining |
 
 ## Marketing email go-live operations and status
 
