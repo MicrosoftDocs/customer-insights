@@ -174,7 +174,9 @@ For `OptionSet` fields, you need to define the mapping to the respective value t
 
 ##### 2.2 Mapping of lookup fields
 
-You can use only static (default) values in the out-of-the-box mapping logic for lookup fields. You need to define the name of the field and the value that should be stored in Customer Insights - Journeys.
+###### Set default value for lookup field
+
+You can use static (default) values in the mapping logic for lookup fields. You need to define the name of the field and the value that should be stored in Customer Insights - Journeys.
 
 **Example:**
 
@@ -189,6 +191,33 @@ You can use only static (default) values in the out-of-the-box mapping logic for
     {
         DataverseFieldName: "currency",
         DataverseFieldValue: "{\"Id\":\"ffffd6c1-b32d-ee11-bdf3-6045bded6105\",\"LogicalName\":\"transactioncurrency\"}"
+    },
+  ];
+  ...
+</script>
+```
+
+###### Map value of lookup field to a field in your form
+
+You can also map lookup field value to a respective value in your existing form field.
+
+**Example:**
+
+```HTML
+<form id="form1">
+  <p>Radio: <input type="radio" name="currency" value="usd"/><input type="radio" name="currency" value="eur"/></p>
+</form>
+
+<script>
+  ...
+  const mappings = [
+    {
+        FormFieldName: "currency",
+        DataverseFieldName: "transactioncurrencyid",
+        DataverseFieldValue: [ 
+              { FormValue: "usd", DataverseValue: "{\"Id\":\"cd2cff48-08a3-ea11-a813-000d3a0a82b4\",\"LogicalName\":\"transactioncurrency\"}", }, 
+              { FormValue: "eur", DataverseValue: "{\"Id\":\"91f1a052-259c-4719-a3ae-3a1d2987a3ed\",\"LogicalName\":\"transactioncurrency\"}", }, 
+        ]
     },
   ];
   ...
