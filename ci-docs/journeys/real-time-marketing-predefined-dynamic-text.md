@@ -1,7 +1,7 @@
 ---
 title: Personalize content using predefined dynamic text
 description: Learn how to personalize content using predefined dynamic text in Dynamics 365 Customer Insights - Journeys.
-ms.date: 12/13/2023
+ms.date: 12/20/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -19,7 +19,7 @@ Personalized messages help marketers drive engagement. A common way to personali
 
 An instance of placeholder text such as ``{{Firstname}}`` is called predefined dynamic text. Before you can use dynamic text, you need to define three pieces of information:
 
-1. **Data binding**: Where the replacement data for the dynamic text come from (for example, the “firstname” attribute of a “Contact” table).
+1. **Data binding**: Where the replacement data for the dynamic text comes from (for example, the “firstname” attribute of a “Contact” table).
 1. **Label**: How the dynamic text is referred to within the message text (for example, ``{{Firstname}}``).
 1. **Default value**: What text to use if the source data is empty.
 
@@ -212,7 +212,7 @@ Watch this video to learn more:
 See [Use calculated measures in Customer Insights - Journeys and other Dataverse-based applications](/dynamics365/customer-insights/data/dataverse-measures) to learn how to create measures in Customer Insights – Journeys and what types of measures are available for use in the app.
 
 > [!NOTE]
-> While the user interface presents itself as a one-to-many relationship, the current implementation in Customer Insights – Data only allows single dimension metrics and therefore only one value is returned.
+> While the user interface presents itself as a one-to-many relationship, the current implementation in Customer Insights – Data only allows single-dimension metrics and therefore only one value is returned.
 
 ##### Using measures to define dynamic text
 
