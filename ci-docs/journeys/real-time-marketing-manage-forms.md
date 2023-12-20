@@ -45,6 +45,9 @@ Once you select a field on the canvas, you can see its properties in the right p
 - **Validation**: Configure a rule that checks the content of the field. If the validation rule isn't met, the user can't submit the form. It's important to set the correct validation for email and phone number fields.
 - **Hide field**: If enabled, the field isn't visible in the form. You can use hidden fields to store extra metadata along with the form submission.
 
+> [!NOTE]
+> Make sure that all phone number field Validation is set to "Mobile Phone". This out-of-the-box validation checks if the phone number format is compatible with the phone number format requirements for Contact Consent Point creation. The phone number must be in the international format starting with "+" sign.
+
 ### Custom validation
 
 To create custom validation, enable the **Validation** option and select **Custom**. A pop-up dialog appears where you can enter a Regular Expression (RegExp). You can, for example, use a RegExp to check if the entered value matches a specific phone number format.

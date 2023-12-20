@@ -51,7 +51,7 @@ The following table summarizes the types of forms currently available in Custome
 | Landing page form  | Marketing form  |
 | Subscription center form | Preference center (will be available as part of Consent configuration) |
 | Event registration form | Create event registration forms through [real-time marketing event management](set-up-event.md) |
-| External form submission capture | N/A |
+| External form submission capture | Capture the submissions of your existing form using [real-time marketing form capture](real-time-marketing-form-capture.md) |
 | Refer to friend | N/A |
 
 ## Security notice
