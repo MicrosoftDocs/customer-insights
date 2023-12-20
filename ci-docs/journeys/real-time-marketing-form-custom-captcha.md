@@ -56,6 +56,9 @@ The process consists of these steps:
     ```
 
     Replace the `{sitekey}` placeholder with the one provided by Google. This callback function renders the reCAPTCHA inside the placeholder `<div id="g-recaptcha">` you created earlier.
+1. Register onloadCallback function to be called by form loader
+   
+```document.addEventListener("d365mkt-afterformload", onloadCallback);```
 
 ### 2. Add the captcha text value to the form submission
 
