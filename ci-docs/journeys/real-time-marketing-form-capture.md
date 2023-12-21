@@ -16,14 +16,14 @@ search.audienceType:
 [!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
-> A preview feature is a feature that is not complete, but is made available before it’s officially in a release so customers can get early access and provide feedback. Preview features aren’t meant for production use and may have limited or restricted functionality.
+> A preview feature is a feature that is not complete but is made available before it’s officially in a release so customers can get early access and provide feedback. Preview features aren’t meant for production use and may have limited or restricted functionality.
 >
 > Microsoft doesn't provide support for this preview feature. Microsoft Dynamics 365 Technical Support won’t be able to help you with issues or questions. Preview features aren’t meant for production use, especially to process personal data or other data that are subject to legal or regulatory compliance requirements.
 
 The form capture is used to get submissions from existing forms that weren't created using the Customer Insights - Journeys form editor. Form capture is recommended if your existing form also sends submissions to systems other than Dynamics 365 or if the existing form contains complex logic that can't be easily recreated in the Customer Insights - Journeys form editor. If the existing form can be recreated using Customer Insights - Journeys form editor, it's *not* recommended to use the form capture feature.
 
 > [!IMPORTANT]
-> **Form capture requires developer assistance**. It's always easier to create a form using the Customer Insights - Journeys form editor and embed the form into your existing page.
+> **Form capture requires developer assistance**. It's always easier to create a form using the Customer Insights - Journeys form editor and embed it into your existing page.
 
 > [!IMPORTANT]
 > **Form capture requires DynamicsMKT_Forms solution version 1.1.35355 or higher**. When provisioning a trial instance, you won't always have the latest version automatically. Make sure you've updated Customer Insights - Journeys before attempting form capturing.
@@ -43,8 +43,8 @@ Form capture mimics submission of a standard Customer Insights - Journeys form. 
 1. Add consent elements like Purpose or Topic to form and configure them. Learn more about how to [manage consent for email and text messages in Customer Insights - Journeys](real-time-marketing-email-text-consent.md).
     > [!IMPORTANT]
     > The consent definition must be done in the form editor. Changes made to consent settings done in the form capture code snippet will be ignored.
-1. Add a **Submit** button. The submit button is required for successful validation of form before publishing.
-1. Publish the form using the **Publish** button in the top right corner of the screen. Copy the form capture code snippet and embed the code snippet to your web page with existing form or hand over the code snippet to your developer. The code snippet already includes link to documentation to provide guidance to your developer.
+1. Add a **Submit** button. The submit button is required for successful validation of the form before publishing.
+1. Publish the form using the **Publish** button in the top right corner of the screen. Copy the form capture code snippet and embed the code snippet to your web page with the existing form or hand over the code snippet to your developer. The code snippet already includes a link to documentation to guide your developer.
     > [!div class="mx-imgBorder"]
     > ![Add consent element to the form.](media/real-time-marketing-form-capture-copy-script.png)
 
@@ -53,7 +53,7 @@ Form capture mimics submission of a standard Customer Insights - Journeys form. 
 
 ### Embedding the capture script into your page and mapping definition
 
-The code snippet copied in the previous step serves as a template and needs to be adjusted to the specific use case. You need to replace all elements marked as `***Please fill***` in the generated template and adjust the logic to your scenario.
+The code snippet copied in the previous step is a template and must be adjusted to the specific use case. You need to replace all elements marked as `***Please fill***` in the generated template and adjust the logic to your scenario.
 
 Your existing form submission is sent to Customer Insights - Journeys using a JavaScript API, defined in the file `FormCapture.bundle.js` and included in the snippet.
 
@@ -178,7 +178,9 @@ For `OptionSet` fields, you need to define the mapping to the respective value t
 
 ##### 2.2 Mapping of lookup fields
 
-You can use only static (default) values in the out-of-the-box mapping logic for lookup fields. You need to define the name of the field and the value that should be stored in Customer Insights - Journeys.
+###### Set default value for the lookup field
+
+You can use static (default) values in the mapping logic for lookup fields. You need to define the name of the field and the value that should be stored in Customer Insights - Journeys.
 
 **Example:**
 
@@ -193,6 +195,33 @@ You can use only static (default) values in the out-of-the-box mapping logic for
     {
         DataverseFieldName: "currency",
         DataverseFieldValue: "{\"Id\":\"ffffd6c1-b32d-ee11-bdf3-6045bded6105\",\"LogicalName\":\"transactioncurrency\"}"
+    },
+  ];
+  ...
+</script>
+```
+
+###### Map the value of the lookup field to a field in your form
+
+You can also map the lookup field value to a respective value in your existing form field.
+
+**Example:**
+
+```HTML
+<form id="form1">
+  <p>Radio: <input type="radio" name="currency" value="usd"/><input type="radio" name="currency" value="eur"/></p>
+</form>
+
+<script>
+  ...
+  const mappings = [
+    {
+        FormFieldName: "currency",
+        DataverseFieldName: "transactioncurrencyid",
+        DataverseFieldValue: [ 
+              { FormValue: "usd", DataverseValue: "{\"Id\":\"cd2cff48-08a3-ea11-a813-000d3a0a82b4\",\"LogicalName\":\"transactioncurrency\"}", }, 
+              { FormValue: "eur", DataverseValue: "{\"Id\":\"91f1a052-259c-4719-a3ae-3a1d2987a3ed\",\"LogicalName\":\"transactioncurrency\"}", }, 
+        ]
     },
   ];
   ...
