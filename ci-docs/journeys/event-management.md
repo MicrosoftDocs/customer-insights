@@ -52,6 +52,7 @@ Customer Insights - Journeys contains a subset of outbound event management feat
 |     Creating Teams meetings/live events/webinars    |     [Yes](teams-webinar-outbound.md)    |     [Yes](teams-webinar.md)    |
 |     Support for On24 and other generic webinar providers      |     [Yes](set-up-webinar-outbound.md)    |     Planned    |
 |     Using marketing forms for registrations    |     [Yes](event-forms.md)    |     [Yes](real-time-marketing-form-create.md)   |
+|     Event Portal Landing Page    |    [Yes](set-up-event-portal-outbound.md)    |    Planned    |                     
 |     Waitlist    |     [Yes](event-waitlist-outbound.md)    |     Planned    |
 |     Payments    |     [Yes](event-payment-gateway-outbound.md)    |     Planned    |
 |     Lead entity registration    |     [Yes](set-up-event-outbound.md#the-website-and-form-tab)    |     Planned    |
