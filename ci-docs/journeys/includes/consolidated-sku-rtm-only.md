@@ -3,4 +3,4 @@
 >
 > New Customer Insights - Journeys customers receive real-time journeys features only. For more information, see [Default real-time journeys installation](/dynamics365/marketing/real-time-marketing-move#default-customer-insights---journeys-installation).
 >
-> In Real-Time Marketing, the Event Portal Landing Page (Event Website) is currently not available. However, in the meantime, Marketing Forms for Registration can serve as a viable alternative to showcase event details and facilitate the registration process.
+> In Real-Time Marketing, the Event Portal Landing Page (Event Website) is currently not available. However, in the meantime, [Marketing Forms](../real-time-marketing-form-create.md) for Registration can serve as a viable alternative to showcase event details and facilitate the registration process.
