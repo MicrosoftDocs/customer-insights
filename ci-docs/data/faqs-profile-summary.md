@@ -1,5 +1,5 @@
 ---
-title: FAQ for lead profile summaries in Dynamics 365 Sales (preview)
+title: FAQ for customer profile summary for Dynamics 365 Sales (preview)
 description: This FAQ provides information about the AI technology used in the insights provided by Customer Insights - Data to Dynamics 365 Sales (preview). It provides key considerations and details about how AI is used, how it was tested and evaluated, and any specific limitations.
 ms.date: 12/13/2023
 ms.custom: 
@@ -10,7 +10,7 @@ ms.author: zacook
 ms.reviewer: m-hartmann
 ---
 
-# FAQ for lead profile summaries in Dynamics 365 Sales (preview)
+# FAQ for customer profile summary in Dynamics 365 Sales (preview)
 
 [!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
@@ -18,7 +18,7 @@ These frequently asked questions (FAQ) describe the AI impact of the lead profil
 
 [!INCLUDE [public-preview-note](includes/public-preview-note.md)]
 
-## What is lead profile summaries in Dynamics 365 Sales?
+## What is customer profile summary in Dynamics 365 Sales?
 
 This AI-powered feature enables sellers to see a single insight from Customer Insights - Data to help them make better decisions about how to engage and interact with their customer. The insight appears on the Dynamics 365 Sales’ lead summary when the seller ask Sales Copilot (preview) to sumarize a lead.
 
