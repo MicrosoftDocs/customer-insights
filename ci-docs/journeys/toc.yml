@@ -322,6 +322,8 @@
       href: real-time-marketing-troubleshooting-forms.md
   - name: Lead generation and management
     items:
+    - name: Lead generation and management overview
+      href: lead-generation-overview.md
     - name: Qualify the best leads
       href: real-time-marketing-qualify-leads.md
     - name: Create sales activities from lead signals
@@ -334,6 +336,8 @@
       href: real-time-marketing-security-roles-lead-scoring.md
   - name: Analytics
     items:
+    - name: Analytics overview
+      href: analytics-overview.md
     - name: Access and interpret analytics
       href: real-time-marketing-analytics.md
     - name: How to use aggregate cross-journey analytics
@@ -564,8 +568,14 @@
       href: responsible-ai-overview.md
     - name: Responsible AI FAQs for content ideas
       href: faqs-content-ideas.md
+    - name: Responsible AI FAQs for the segment copilot
+      href: faqs-segment-copilot.md
+    - name: Responsible AI FAQs for image smart recommendation
+      href: faqs-image-smart-recommendation.md
     - name: Responsible AI FAQs for content rewrite
       href: faqs-content-rewrite.md
+    - name: Responsible AI FAQs for the journey copilot
+      href: faqs-journey-copilot.md
 - name: Resources
   items:
   - name: Customer Insights - Journeys forum
