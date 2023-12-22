@@ -1,7 +1,7 @@
 ---
 title: "Preview: Copilot - Refresh and perfect your message"
 description: Learn how to use the Copilot-powered theme feature to rewrite your messages in Dynamics 365 Customer Insights - Journeys.
-ms.date: 10/27/2023
+ms.date: 12/22/2023
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
@@ -20,36 +20,36 @@ search.audienceType:
 > 
 > Microsoft doesn't provide support for this preview feature. Microsoft Dynamics 365 Technical Support won’t be able to help you with issues or questions. Preview features aren’t meant for production use, especially to process personal data or other data that are subject to legal or regulatory compliance requirements.
 
-This article gives an overview of the content rewrite Copilot feature and explains how to use it to rewrite and refine your email, forms, and message content.
+This article is an overview of the content rewrite copilot feature. It explains how to use content rewrite to refine your email, forms, and message content.
 
 > [!NOTE]
-> Editing text with the content rewrite Copilot is available for the following types of content:
+> Editing text with the content rewrite copilot is available for the following types of content:
 > - Emails, email templates
 > - Forms
 > - Text messages
 > - Push notifications
 
 > [!NOTE]
-> The content rewrite Copilot is currently available in the United States in the English language only.
+> The content rewrite copilot is currently available in the United States in the English language only.
 
 > [!Tip]
-> Learn about using the content ideas Copilot to create inspiring email copy: [Make email creation fun and more efficient with AI-powered content ideas in Dynamics 365 Customer Insights - Journeys](https://cloudblogs.microsoft.com/dynamics365/it/2022/11/30/engage-your-customers-faster-with-ai-powered-marketing-email-content/)
+> Learn about using the content ideas copilot to create inspiring email copy: [Make email creation fun and more efficient with AI-powered content ideas in Dynamics 365 Customer Insights - Journeys](https://cloudblogs.microsoft.com/dynamics365/it/2022/11/30/engage-your-customers-faster-with-ai-powered-marketing-email-content/)
 
-## What is the content rewrite Copilot?
+## What is the content rewrite copilot?
 
-The content rewrite Copilot helps you to rapidly iterate on your content to optimize your messaging. Whether you are creating content for email, text messages, push notifications, or forms, using Copilot, you can easily rephrase messages, adjust the tone of voice, and shorten or lengthen copy.
+The content rewrite copilot helps you rapidly iterate on your content to optimize your messaging. Whether you're creating content for email, text messages, push notifications, or forms, using Copilot, you can easily rephrase messages, adjust the tone of voice, and shorten or lengthen copy.
 
-Select any text and leverage the rewrite Copilot to:
-- Re-write the text and choose from different variations
+Select any text and use the content rewrite copilot to:
+- Rewrite the text and choose from different variations
 - Change tone of voice to be more engaging, formal, casual, luxurious, or adventurous  
-- Shorten or lengthen copy 
+- Shorten or lengthen copy
 
 ## Enable Copilot
 
 > [!NOTE]
-> The content rewrite Copilot together with all other Copilot features is now enabled by default and is visible in the email, push notification, SMS, and form editors in the United States.
+> The content rewrite copilot together with all other Copilot features is now enabled by default and is visible in the email, push notification, SMS, and form editors in the United States.
 
-To turn on or off the content rewrite Copilot feature switch:
+To turn on or off the content rewrite copilot feature switch:
 1. Go to **Settings** > **Overview** > **Feature switches**.
 1. Enable or disable the **Global Opt-in consent** toggle.
 
@@ -72,12 +72,12 @@ To turn on or off the content rewrite Copilot feature switch:
 > AI-generated content may be incorrect. It's your responsibility to edit generated content so that your final copy is accurate and appropriate.
 
 > [!NOTE]
-> The content rewrite Copilot is accessible only for text with a minimum of 10 words. If the text snippet is shorter or empty, the content rewrite Copilot feature is disabled.
+> The content rewrite copilot is accessible only for text with a minimum of 10 words. If the text snippet is shorter or empty, the content rewrite copilot feature is disabled.
 
 > [!Tip]
 > You have the option to refresh only a specific part of your paragraph instead of making changes to the entire paragraph. To do this, follow these steps:
 > 1. Select the text you want to update.
-> 1. To make modifications to the selected text, utilize any of the Copilot options: "Get ideas," "Tone," "Shorten," or "Lengthen."
+> 1. To make modifications to the selected text, utilize any of the copilot options: "Get ideas," "Tone," "Shorten," or "Lengthen."
 
 > [!div class="mx-imgBorder"]
 > ![Copilot screenshot with selected editable text facility](media/selected-editable-text-facility.png "Copilot screenshot with selected editable text facility")
@@ -88,7 +88,7 @@ The content rewrite copilot assistant is built on a machine learning model calle
 
 ## What data does Copilot collect?
 
-The only time a human reviews the content of generated ideas is if you report it to Microsoft (using a quick feedback survey built into the content rewrite Copilot feature).
+The only time a human reviews the content of generated ideas is if you report it to Microsoft (using a quick feedback survey built into the content rewrite copilot feature).
 
 ## What if I'm not satisfied with the generated content?
 
@@ -104,6 +104,6 @@ Copilot generates original content, but it isn’t always factual. In addition, 
 > [!IMPORTANT]
 > If you encounter inappropriate content being generated, report it to Microsoft using this feedback form: [Report abuse](https://msrc.microsoft.com/report/abuse?ThreatType=URL&IncidentType=Responsible%20AI&SourceUrl=https://dynamics.microsoft.com/marketing/overview/). It will help improve the functionality moving forward.
 >
-> Microsoft may disable the content rewrite Copilot feature for selected customers if abuse of the functionality is detected.
+> Microsoft may disable the content rewrite copilot feature for selected customers if abuse of the functionality is detected.
 
 [!INCLUDE[footer-include](./includes/footer-banner.md)]
