@@ -1,7 +1,7 @@
 ---
 title: Overview of Customer Insights - Journeys forms
 description: Overview of the forms capabilities in Dynamics 365 Customer Insights - Journeys. 
-ms.date: 09/08/2023
+ms.date: 12/20/2023
 ms.topic: article
 author: petrjantac
 ms.author: alfergus
@@ -14,6 +14,13 @@ search.audienceType:
 # Overview of Customer Insights - Journeys forms
 
 [!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+
+> [!IMPORTANT]
+> Dynamics 365 Customer Insights - Journeys may transfer customer data outside of the selected Azure geographic location when using the following features that use Azure CDN (content delivery network) to operate globally:
+> -	[Asset library](upload-images-files.md)
+> -	[Forms](real-time-marketing-form-overview.md)
+>
+> You can still execute marketing campaigns without using such features by hosting your assets and forms in a content management system of your choice.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5dqbE]
 
@@ -44,7 +51,7 @@ The following table summarizes the types of forms currently available in Custome
 | Landing page form  | Marketing form  |
 | Subscription center form | Preference center (will be available as part of Consent configuration) |
 | Event registration form | Create event registration forms through [real-time marketing event management](set-up-event.md) |
-| External form submission capture | N/A |
+| External form submission capture | Capture submissions to existing forms using [real-time marketing form capture](real-time-marketing-form-capture.md) |
 | Refer to friend | N/A |
 
 ## Security notice

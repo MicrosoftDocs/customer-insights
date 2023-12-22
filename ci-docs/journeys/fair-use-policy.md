@@ -1,7 +1,7 @@
 ---
 title: Service limits and fair use policy
 description: Learn about usage limits and quotas in Dynamics 365 Customer Insights - Journeys.
-ms.date: 10/13/2023
+ms.date: 11/10/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -35,12 +35,6 @@ The following tables show the current usage limits for Customer Insights - Journ
 *† Support for monthly interactions above 100 million is in preview. You can request to be part of the preview by reaching out to your Microsoft representative. See the [Throughput guidance](real-time-marketing-throughput-guidance.md) article for more details.*<br>
 *‡ See the [Throughput guidance](real-time-marketing-throughput-guidance.md) article for more details.*
 
-## Event management
-
-| Feature               | Attribute                                              | Maximum                                                     |
-|-----------------------|--------------------------------------------------------|-------------------------------------------------------------|
-| Event registrations   | Number of event registrations processed simultaneously. | 60 event registrations per second<br>40 concurrent requests |
-
 ## Outbound marketing
 
 | Feature               | Attribute                                              | Maximum                                                     |
@@ -50,6 +44,7 @@ The following tables show the current usage limits for Customer Insights - Journ
 | Email personalization | Number of dynamic attributes.                           | 1,000                                                       |
 | Email personalization | Number of [entity relationships connected](/dynamics365/customerengagement/on-premises/customize/create-edit-entity-relationships) in personalization.                                         | 1 entity relationship (for example, contact.account, contact.events)               |
 | Email sending         | Interactions sent (email).                                            | 10,000,000 per month (1,000,000 daily max)                  |
+| Event registrations   | Number of event registrations processed simultaneously. | 60 event registrations per second 40 concurrent requests |
 | Segmentation          | Number of live dynamic segments per org.                | 1,000 (both user defined and system created*)                |
 | Segmentation          | Total number of segments.                               | 10,000                                                      |
 | Segment-based journeys          | Number of contacts and Customer Insights - Data profiles in a segment used in a customer journey.          | 1,000,000 members                |

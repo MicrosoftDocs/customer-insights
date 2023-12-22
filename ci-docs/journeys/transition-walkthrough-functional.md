@@ -1,7 +1,7 @@
 ---
 title: Functional areas overview
 description: Overview of transitioning functional areas from outbound marketing to real-time journeys in Dynamics 365 Customer Insights - Journeys.
-ms.date: 10/04/2023
+ms.date: 11/16/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -53,5 +53,8 @@ Transition functional areas articles:
 Some Dynamics 365 Marketing customers made customizations in outbound marketing tables like “e-mail” or “customer journey” in order to meet specific requirements. In some cases, the real-time journeys module uses its own tables to provide the functionality (for example, in email and journeys), while in other cases, it retains the same tables (for example, event planning tables). Tables like “e-mail” or “journey” are also customizable and new fields will also show up in the user interface. However, it's recommended to first look at the out-of-the-box capabilities. Many requirements that created a new for customization in the past can now be addressed by standard features.
 
 In most scenarios, it's not possible to transfer outbound marketing customizations. Dynamics 365 Marketing customers are advised to review their requirements and consider that previous customizations may no longer be needed due to the enhancements provided by real-time journeys. Where customizations are still required, it's likely that they'll need to be re-implemented (for example, custom fields re-added).
+
+> [!TIP]
+> If you have questions or comments, visit the [Outbound to real-time transition community forum](https://community.dynamics.com/forums/thread/?partialUrl=Outbound-to-Real-Time-Transition)
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
