@@ -16,6 +16,9 @@ ms.author: philk
 
 Create visualizations for your data with the Microsoft Power BI Desktop. Generate additional insights and build reports with your unified customer data.
 
+> [!TIP]
+> We recommend using one of the default options [to use Power BI with Dataverse data](/power-apps/maker/data-platform/use-powerbi-dataverse). It ensures you benefit from our [integration into Dataverse](integrate-d365-apps.md).
+
 ## Prerequisites
 
 - Unified customer profiles.
@@ -41,7 +44,7 @@ Create visualizations for your data with the Microsoft Power BI Desktop. Generat
 
 ## Large data sets
 
-The Customer Insights - Data connector for Power BI is designed to work for data sets that contain up to 1 million customer profiles. Importing larger data sets may work, but takes a long time and could time-out because of Power BI limitations. For more information, see [Power BI: Recommendations for large data sets](/power-bi/admin/service-premium-what-is#large-datasets).
+The Customer Insights - Data connector for Power BI is designed to work for data sets that contain up to 1 million rows in the table. Importing larger data sets may work, but takes a long time and could time-out because of Power BI limitations. For more information, see [Power BI: Recommendations for large data sets](/power-bi/admin/service-premium-what-is#large-datasets).
 
 ### Work with a subset of data
 

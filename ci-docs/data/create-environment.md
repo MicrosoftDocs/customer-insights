@@ -1,7 +1,7 @@
 ---
 title: "Create a new environment"
 description: Steps to create environments in Dynamics 365 Customer Insights.
-ms.date: 09/01/2023
+ms.date: 11/15/2023
 ms.reviewer: mhart
 ms.topic: how-to
 author: kishorem-ms
@@ -18,7 +18,7 @@ After [your organization purchased a license for Dynamics 365 Customer Insights]
 After the first environment is created, the global administrator of the Microsoft 365 tenant can [add users from their organization as administrators](permissions.md). These administrators can then manage users and environments.
 
 > [!IMPORTANT]
-> In most cases, creating an environment or installing Customer Insights - Data on an existing environment should be done through [Power Platform admin center](../journeys/setup.md). 
+> In most cases, installing Customer Insights - Data should be done through [Power Platform admin center](../journeys/setup.md).
 
 Use the environments creation experience in Customer Insights - Data for the following scenarios:
 
