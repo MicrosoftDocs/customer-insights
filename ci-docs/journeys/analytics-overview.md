@@ -1,7 +1,7 @@
 ---
 title: Analytics overview in Customer Insights - Journeys
-description: How to access and interpret Customer Insights - Journeys analytics in Dynamics 365 Customer Insights - Journeys.
-ms.date: 10/26/2023
+description: An overview of how analytics works in Dynamics 365 Customer Insights - Journeys.
+ms.date: 12/22/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -15,7 +15,7 @@ search.audienceType:
 
 [!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
-Customer Insights - Journeys's dashboards and cross-journey insights show metrics, views, and insights summarized across single or multiple journeys, providing you with a deep understanding of journey, channel, and content performance. The built-in dashboards focus on measuring delivery, engagement and journey goal attainment, so you can fine-tune the effectiveness of your journeys, channels, and content.
+Customer Insights - Journeys's dashboards and cross-journey insights show metrics, views, and insights summarized across single or multiple journeys, providing you with a deep understanding of journey, channel, and content performance. The built-in dashboards focus on measuring delivery, engagement, and journey goal attainment so you can fine-tune the effectiveness of your journeys, channels, and content.
 
 With Customer Insights - Journeys analytics, you can:
 
@@ -25,21 +25,23 @@ With Customer Insights - Journeys analytics, you can:
 - Understand the effectiveness of various messages and channels of communication through key delivery and engagement insights.
 - Gain insights into your audience's behavior and interests and tailor your marketing efforts to their specific needs.
 
-## Comparison of Customer Insights - Journeys and Outbound Marketing Analytics
+## Comparison of outbound marketing and Customer Insights - Journeys analytics
 
-| **Area** | **Feature** | **Outbound Marketing** | **Customer Insights - Journeys** |
+The following table compares the analytics features in outbound marketing and Customer Insights - Journeys.
+
+| **Area** | **Feature** | **Outbound marketing** | **Customer Insights - Journeys** |
 |:---:|:---:|:---:|:---:|
-| Understand cross-journey and channel effectiveness with built-in aggregated dashboards | Analyze your orchestrated journeys and evaluate their performance |   | Y |
-|   | Measure channel effectiveness and track the performance of your marketing assets |   | Y |
-|   | Measure the marketing effectiveness of your campaigns |   | Y |
-| Evaluate journey performance in near real time using operational analytics | Journey analytics | Y | Y |
-|   | Email insights | Y | Y |
-|   | Email variation insights |   | Y |
-|   | Email clicks heat map | Y |   |
-|   | Text message insights |   | Y |
-|   | Push notification insights |   | Y |
-|   | Custom channel insights |   | Y |
-| Gain insights into your audience's behavior and interests | View contact insights | Y | Y |
-|   | View Lead insights | Y | Y |
-|   | View marketing data in Shared Customer Timeline | Y | Y |
-| Build custom reports tailored to your business needs |   | Y | Planned / In   preview |
+| Understand cross-journey and channel effectiveness with built-in aggregated dashboards | Analyze your orchestrated journeys and evaluate their performance | No  | Yes |
+| Understand cross-journey and channel effectiveness with built-in aggregated dashboards  | Measure channel effectiveness and track the performance of your marketing assets | No  | Yes |
+| Understand cross-journey and channel effectiveness with built-in aggregated dashboards  | Measure the marketing effectiveness of your campaigns | No  | Yes |
+| Evaluate journey performance in near real time using operational analytics | Journey analytics | Yes | Yes |
+| Evaluate journey performance in near real time using operational analytics  | Email insights | Yes | Yes |
+| Evaluate journey performance in near real time using operational analytics  | Email variation insights | No  | Yes |
+| Evaluate journey performance in near real time using operational analytics  | Email clicks heat map | Yes | No  |
+| Evaluate journey performance in near real time using operational analytics  | Text message insights | No  | Yes |
+| Evaluate journey performance in near real time using operational analytics  | Push notification insights | No  | Yes |
+| Evaluate journey performance in near real time using operational analytics  | Custom channel insights | No  | Yes |
+| Gain insights into your audience's behavior and interests | View contact insights | Yes | Yes |
+| Gain insights into your audience's behavior and interests  | View lead insights | Yes | Yes |
+| Gain insights into your audience's behavior and interests  | View marketing data in the shared customer timeline | Yes | Yes |
+| Build custom reports tailored to your business needs |   | Yes | Planned / in preview |
