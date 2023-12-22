@@ -1,7 +1,7 @@
 ---
 title: How Customer Insights - Journeys uses suppression lists 
 description: Learn how Customer Insights - Journeys uses suppression lists to protect email sending reputations.
-ms.date: 09/08/2023
+ms.date: 12/22/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -57,7 +57,7 @@ The pattern suppression is a manual list maintained by the deliverability engine
 
 If you find that some contacts were blocked with a “suppression list” reason and you're sure that they're valid and the listing was caused by false-positive, you can submit a support request, providing the following information:
 
--	A list of the email addresses in question.
+-	A list of the email addresses in question (removal is case sensitive, so if an email address has capital letters, you need to provide it with them).
 -	Justification as to why you believe each email address was listed by mistake. You should also provide proof that each email address is valid and can be reached by any other email provider.
 
 After that, our deliverability team will review the request and determine if the addresses should be removed. Keep in mind that if an email address was added to the suppression list because of a typo, you can correct the email address in the contact or lead and the deliverability will be unaffected by the suppression list. In other words, the suppression list functions at an email address level, *not* at a contact or lead level.
