@@ -1,7 +1,7 @@
 ---
 title: Personalize content
 description: Learn how to personalize content in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/23/2023
+ms.date: 10/30/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -63,5 +63,6 @@ Once you’ve selected a field, the full path to that field is displayed in the 
 ## Limitations
 
 - Option sets aren't supported for use in dynamic text. Option sets are supported in conditions, so an inline condition can be used to output option values in messages.
+- Personalization can only use triggers. However, messages that use personalization based on a trigger can only be used in journeys that are started by those triggers. If such a message is included in a journey where the trigger is received mid-journey, the journey designer will give an error message.
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]

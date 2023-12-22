@@ -1,7 +1,7 @@
 ---
 title: "Create a unified business contact profile"
 description: "Learn how to use the data unification process to create a profile of your business contacts that combines data from multiple sources."
-ms.date: 09/01/2023
+ms.date: 11/28/2023
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -29,7 +29,7 @@ The first few steps to unify contacts are the same as the steps to [unify accoun
 - Accounts with contacts must have a unique key (called a foreign key) that connects them. For example, an account ID that exists in the account record and contact record that ties the account and contact together. Contacts without accounts have a null value for the foreign key.
 - At least one contact table must have a relationship defined to an account table. If none of your contact tables have a relationship to an account, add a blank column in one of the contact tables and map it to an account table.
 
-## Select source fields
+## Describe customer data
 
 1. Sign in to Dynamics 365 Customer Insights - Data.
 
@@ -90,7 +90,7 @@ This last step in the unification process shows a summary of the steps in the pr
 
 1. Select **Edit** on any of the contact unification steps to review and make any changes.
 
-1. If you are satisfied with your selections, select **Create contact profiles**. The **Unify** page displays while the unified contact profile is being created.
+1. If you are satisfied with your selections, select **Create contact profiles**. The **Unify** page displays while the unified contact profile is being created. If the message "Object reference not set to an instance of an object" appears, there are references to columns that were deleted or renamed before saving the conflation plans. Update the tables and rerun contact unification.
   
    :::image type="content" source="media/b2b_unify_refreshing.svg" alt-text="Screenshot of Unify Contacts page with tiles showing Queued or Refreshing.":::
 
@@ -100,7 +100,7 @@ The unification algorithm takes some time to complete and you can't change the c
 
 ### View the results of contact unification
 
-After unification completes, the **Data** > **Unify** page shows the number of unified contact profiles. The result of each step in the unification process displays on each tile. For example, **Source fields** shows the number of mapped attributes, or columns, and **Duplicate records** shows the number of duplicate records that were found. The **Matching conditions** tile displays only if multiple tables were selected.
+After unification completes, the **Data** > **Unify** page shows the number of unified contact profiles. The result of each step in the unification process displays on each tile. For example, **Customer data** shows the number of mapped attributes, or columns, and **Deduplication rules** shows the number of duplicate records that were found. The **Matching rules** tile displays only if multiple tables were selected.
 
 :::image type="content" source="media/b2b-unified-contacts.svg" alt-text="Screenshot of the Data Unify page after contacts are unified.":::
 

@@ -1,6 +1,6 @@
 After ingesting the data, begin the data unification process to create a unified customer profile. For more information, see [Data unification](../data-unification.md).
 
-### Select source fields
+### Describe the customer data to be unified
 
 1. After ingesting the data, map contacts from eCommerce and Loyalty data to common data types. Go to **Data** > **Unify**.
 
@@ -12,7 +12,7 @@ After ingesting the data, begin the data unification process to create a unified
 
 1. Select **Next**. Skip duplicate records and select **Next**.
 
-### Match conditions
+### Define matching rules
 
 1. Choose **eCommerceContacts : eCommerce** as the primary table and include all records.
 
@@ -35,7 +35,7 @@ After ingesting the data, begin the data unification process to create a unified
 
 1. Select **Next**.
 
-### Unify fields
+### View unified data
 
 1. Rename the **ContactId** for **loyCustomers** table to **ContactIdLOYALTY** to differentiate it from the other IDs ingested.
 

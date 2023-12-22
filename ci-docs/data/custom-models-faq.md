@@ -1,7 +1,7 @@
 ---
 title: Custom models FAQ
 description: Learn answers to frequently asked questions about using custom machine learning models in Dynamics 365 Customer Insights - Data.
-ms.date: 09/01/2023
+ms.date: 11/01/2023
 ms.topic: faq
 author: radsay01
 ms.author: rsayyaparaju
@@ -23,6 +23,6 @@ This error message usually means the user doesn't have Owner, Admin, or Contribu
 
 ## Can I use a private endpoint with my custom model from Azure Machine Learning?
   
-Customer Insights - Data doesn't allow the use of private endpoints with custom models out of the box. Contact Microsoft support for details.
+Customer Insights - Data doesn't allow the use of private endpoints with custom models out of the box.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
