@@ -1,6 +1,6 @@
 ---
-title: "Step 3: Create a workflow or plug-in to implement your custom logic"
-description: Partners can create a workflow or plug-in to implement their custom logic for a custom channel in Dynamics 365 Marketing.
+title: "Step 3: Create a workflow or plug-in to implement your custom logic in outbound marketing"
+description: Partners can create a workflow or plug-in to implement their custom logic for a custom channel in outbound marketing.
 ms.date: 04/01/2018
 ms.topic: how-to
 author: alfergus
@@ -9,7 +9,7 @@ search.audienceType:
   - developer
 ---
 
-# Step 3: Create a workflow or plug-in to implement your custom logic
+# Step 3: Create a workflow or plug-in to implement your custom logic in outbound marketing
 
 [!INCLUDE [consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
 

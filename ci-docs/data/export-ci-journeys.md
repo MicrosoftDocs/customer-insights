@@ -20,7 +20,7 @@ We recommend using real-time customer journey orchestration because you don't ne
 
 ## Prerequisite
 
-Contact records must be present in Customer Insights - Journeys before you can export a segment from Customer Insights - Data to Customer Insights - Journeys. Read more on how to ingest contacts from [Microsoft Dataverse](connect-dataverse.md).
+Contact records must be present in Customer Insights - Journeys outbound marketing before you can export a segment from Customer Insights - Data to Customer Insights - Journeys. Read more on how to ingest contacts from [Microsoft Dataverse](connect-dataverse.md).
 
 > [!NOTE]
 > Exporting segments won't create new contact records. The contact records must be ingested in Customer Insights - Data and used as a data source. They also need to be included in the unified Customer table to map customer IDs to contact IDs before segments can be exported.

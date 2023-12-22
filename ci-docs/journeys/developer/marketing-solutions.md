@@ -1,6 +1,6 @@
 ---
-title: Dynamics 365 Customer Insights - Journeys solutions
-description: Know about the installed solutions in your marketing organization.
+title: Outbound marketing solutions
+description: Know about the outbound marketing installed solutions in your marketing organization.
 ms.date: 04/01/2018
 ms.topic: reference
 author: alfergus
@@ -9,9 +9,12 @@ search.audienceType:
   - developer
 ---
 
-# Dynamics 365 Customer Insights - Journeys solutions
+# Outbound marketing solutions
 
 [!INCLUDE [consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
+
+> [!IMPORTANT]
+> This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
 
 Dynamics 365 Customer Insights - Journeys adds the following solutions to your instance:
 

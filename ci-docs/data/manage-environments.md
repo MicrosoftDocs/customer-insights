@@ -1,7 +1,7 @@
 ---
-title: "Manage environments"
+title: Manage environments
 description: Learn how to to manage environments as an admin.
-ms.date: 09/01/2023
+ms.date: 12/15/2023
 ms.topic: how-to
 ms.reviewer: mhart
 author: kishorem-ms
@@ -13,7 +13,7 @@ ms.custom: bap-template
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
-Administrators [create](create-environment.md) and manage environments. They can change some settings in existing environments. Region, storage option, and Dataverse settings are fixed after creating the environment. If you want to change these settings, [reset the environment](#reset-an-existing-environment-preview) or [create a new environment](create-environment.md).
+Administrators [create](create-environment.md) and manage environments. They can change some settings in existing environments. Region, storage option, and Dataverse settings are fixed after creating the environment. If you want to change these settings, [reset the environment](#reset-an-existing-environment) or [create a new environment](create-environment.md).
 
 ## Edit an existing environment
 
@@ -49,6 +49,9 @@ The following configuration settings are copied:
 - Enrichments
 - Prediction models
 - Role assignments
+
+> [!CAUTION]
+> Don't use the [Copy an environment operation](/power-platform/admin/copy-environment#copy-an-environment-1) in Power Platform admin center if you have Customer Insights - Data installed in the target environment, because that operation removes all artifacts from the existing installation. You can't recover any deleted data.
 
 ### Set up a copied environment
 
@@ -90,23 +93,23 @@ To claim ownership, select the **Take ownership** button that shows at the top o
 
 We recommend having at least one other user with admin permissions in addition to the owner to enable smooth ownership transfer if the owner leaves the organization.
 
-## Reset an existing environment (preview)
+## Reset an existing environment
 
-[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
+You can reset an environment to an empty state for a fresh start. To reset an environment, you need to be the owner of the Customer Insights - Data environment and have a system administrator role on the Dataverse environment. Depending on the reason for resetting, consider backing up your environment and your data to avoid data loss. Essentially, it's a quick way to [uninstall and install Customer Insights - Data](../journeys/setup.md) from the user interface.
 
-As the owner of an environment, reset an environment to an empty state if you want to delete all configurations and remove the ingested data.
+When you reset Customer Insights - Data environment, several things happen:
 
-[!INCLUDE [public-preview-note](includes/public-preview-note.md)]
+- The system deletes all your configurations for data sources, unification rules, segments, etc. Except [your Azure Data Lake Storage Gen 2 connection](own-data-lake-storage.md) (if configured). However, after the reset, you need to [enable data sharing](own-data-lake-storage.md#enable-data-sharing-with-dataverse-from-your-own-azure-data-lake-storage-preview) (if configured) again.
+- Data stored outside the Dataverse environment, such as your source data or data in your [own Data Lake](own-data-lake-storage.md) is not removed.
+- The system removes permissions from users that had access to the environment. The user who initiated the reset becomes the owner and admin of the reset environment.
+
+The reset operation assigns a new instance ID to your environment. Therefore, update bookmarks for your Customer Insights - Data environment.
 
 1. Select the **Environment** picker in the header of the app.
 
 1. Select the environment you want to reset and select the vertical ellipsis (&vellip;).
 
-1. Choose **Reset (preview)**.
-
-   :::image type="content" source="media/reset-environment.png" alt-text="Control to reset an environment.":::
-
-1. Choose whether you want to reset the entire environment, everything except the data sources, or anything that is configured on top of the unified customer profile.
+1. Choose **Reset**.
 
 1. To confirm, enter the environment name and select **Reset**.
 
@@ -116,22 +119,19 @@ As the owner of an environment, you can delete it.
 
 We recommend to [use the **Uninstall** option Power Platform admin center](../journeys/setup.md) to decommission a Customer Insights - Data environment.
 
-> [!IMPORTANT]
-> Deleting a Customer Insights - Data environment does not remove the Customer Insights dependencies from the Dataverse environment. If you plan to use same Dataverse environment to install Customer Insights - Data in the future, you must [remove all dependencies to the Dataverse environment](#remove-customer-insights---data-dependencies-from-a-dataverse-environment).
-
 1. Select the **Environment** picker in the header of the app.
 
 1. Select the environment you want to delete and select the vertical ellipsis (&vellip;).
 
 1. Choose **Delete**.
 
-   :::image type="content" source="media/delete-environment.png" alt-text="Control to delete the environment.":::
-
 1. To confirm the deletion, enter the environment name and select **Delete**.
+
+After deleting the environment, you can reinstall a new Customer Insights - Data environment on the same Microsoft Dataverse environment. Removing dependencies as isn't required to reinstall.
 
 ## Remove Customer Insights - Data dependencies from a Dataverse environment
 
-Deleting a Customer Insights - Data environment doesn't remove dependencies from the Dataverse environment. Before you can reinstall Customer Insights - Data on a Dataverse environment, all dependencies must be removed.
+Deleting a Customer Insights - Data environment doesn't remove dependencies from the Dataverse environment. However, if you want to remove all dependencies to Customer Insights - Data, go through the following steps.
 
 > [!NOTE]
 > You must be a global administrator on the Dataverse environment. It can take a couple of hours for the dependencies removal to take effect.
@@ -149,12 +149,7 @@ Deleting a Customer Insights - Data environment doesn't remove dependencies from
         - Dynamics Marketing Consent For Customer Insights (*DynamicsMKT_ConsentAttachCI*)
         - DynamicsMKT_OrchestrationEngineAttachCI (*DynamicsMKT_OrchestrationEngineAttachCI*)
 1. Go to **Solutions**.
-1. Uninstall the following Customer Insights - Data solutions:
-   - Dynamics 365 Customer Insights Base (*msdyn_CustomerInsightsAnchor*)
-   - Dynamics 365 Customer Insights Data Tables (*msdyn_CustomerInsightsDataTables*)
-   - Dynamics 365 Customer Insights (*msdyn_CustomerInsights*)
-   - Dynamics 365 Customer Insights Customer Card (*CustomerInsightsCustomerCard*)
-   - Dynamics 365 Customer Insights Prod First Party App User Management (*msdyn_CustomerInsightsAppUserManagementProd*)
+1. Uninstall all solutions that start with *msdyn_CustomerInsights*.
 
 If the removal of the connection fails due to other dependencies, you need to remove these dependencies too. For more information, see [Removing dependencies](/power-platform/alm/removing-dependencies).
 

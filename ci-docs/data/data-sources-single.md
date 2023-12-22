@@ -44,7 +44,7 @@ In a newly provisioned environment, the **Getting Started** page displays. If th
 1. Select **Yes** to verify the primary key or choose another field as the primary key for your data source. Select **Next**. The system checks the data quality.
 
    > [!TIP]
-   > If an error occurs during data processing, you get an explanation of the issue and suggested actions to take. For example, if required attributes needed to generate insights are not identified, select [**Map data**](#map-required-data).
+   > If an error occurs during data processing, you get an explanation of the issue and suggested actions to take. For example, if required columns needed to generate insights are not identified, select [**Map data**](#map-required-data).
 
    After the data quality checks, the system removes duplicate records, creates customer profiles, and generates insights such as segments and measures.
 
