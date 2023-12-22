@@ -1,7 +1,7 @@
 ---
 title: "Preview: Capture forms in Customer Insights - Journeys"
 description: Learn how to capture forms in Dynamics 365 Customer Insights - Journeys.
-ms.date: 12/20/2023
+ms.date: 12/21/2023
 ms.topic: article
 author: petrjantac
 ms.author: alfergus
@@ -24,6 +24,10 @@ The form capture is used to get submissions from existing forms that weren't cre
 
 > [!IMPORTANT]
 > **Form capture requires developer assistance**. It's always easier to create a form using the Customer Insights - Journeys form editor and embed it into your existing page.
+
+> [!IMPORTANT]
+> **Form capture requires DynamicsMKT_Forms solution version 1.1.35355 or higher**. When provisioning a trial instance, you won't always have the latest version automatically. Make sure you've updated Customer Insights - Journeys before attempting form capturing.
+
 
 ## How form capture works
 
@@ -51,13 +55,13 @@ Form capture mimics submission of a standard Customer Insights - Journeys form. 
 
 The code snippet copied in the previous step is a template and must be adjusted to the specific use case. You need to replace all elements marked as `***Please fill***` in the generated template and adjust the logic to your scenario.
 
-Your existing form submission is sent to Customer Insights - Journeys using a JavaScript API, which is defined in the file `FormCapture.bundle.js` and is included in the snippet.
+Your existing form submission is sent to Customer Insights - Journeys using a JavaScript API, defined in the file `FormCapture.bundle.js` and included in the snippet.
 
 The form capturing setup consists of these steps:
 
 1. Get the reference to the form element on the page.
 1. Define the mapping of form fields on fields (entity attributes) in Customer Insights - Journeys.
-1. Define the mapping of Consent fields on the consent model in Customer Insights - Journeys.
+1. Define the mapping of the consent fields on the consent model in Customer Insights - Journeys.
 1. Send the form submission to Customer Insights - Journeys.
 
 #### 1. Get a reference to the form element
@@ -297,4 +301,4 @@ Cross-Origin Resource Sharing (CORS) can cause  form submission capture to fail.
 
 ### Consent values aren't updated correctly
 
-Make sure you have setup the respective consent fields in the form editor (see section [Creating the form capture in Customer Insights - Journeys form editor](real-time-marketing-form-capture.md#creating-the-form-capture-in-the-customer-insights---journeys-form-editor)) and used the correct mappings generated in the publishing process.
+Make sure you've set up the respective consent fields in the form editor (see [Creating the form capture in Customer Insights - Journeys form editor](real-time-marketing-form-capture.md#creating-the-form-capture-in-the-customer-insights---journeys-form-editor)) and that you've used the correct mappings generated in the publishing process.
