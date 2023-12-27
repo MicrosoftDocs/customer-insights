@@ -65,6 +65,9 @@ The **Agenda** tab includes details about the schedule of sessions happening dur
 
 ### The Website and form tab
 
+> [!NOTE]
+> In Real-Time Marketing, the Event Portal Landing Page (Event Website) is currently not available. However, in the meantime, [Marketing Forms](real-time-marketing-form-create.md) for Registration can serve as a viable alternative to showcase event details and facilitate the registration process.
+
 The Website and form tab provides options to set registration parameters. First, you can decide where do you want attendees to register for your event:
 - On a standalone registration page:
     - Use this option if you want to create a registration page using Customer Insights - Journeys registration forms and use Customer Insights - Journeys to host the page.
