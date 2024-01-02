@@ -117,6 +117,9 @@ To set your event-administration options:
     > To make the name-based contact matching strategy work with **Portal Authentication** it is mandatory to provide first and last name after registering.
 
     > [!NOTE]
+    > It not possible to deduplicate registrations for the same contact in out-of-box marketing events: A new registration would be created for the same contact that registered to the same event.
+
+    > [!NOTE]
     > The email templates provided for sending confirmations to the event purchaser and/or attendee are hard coded, so you can't customize or translate their content. If you require custom messaging, then set up a [customer journey](customer-journeys-create-automated-campaigns.md) with event, trigger, and email tiles.
 
 ## Website table configurations
