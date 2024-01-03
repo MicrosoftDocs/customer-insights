@@ -28,11 +28,12 @@ To send push notification messages to your customers, you'll first need to set u
 >
 > If the user or team who is going to create a mobile application doesn't have admin privileges, then an admin needs to complete the following steps:
 >
-> 1. Go to **Advanced Settings** > **Security** > **Field Security Profiles**.
-> 2. Go to **Marketers-Mobile app secrets** and add the corresponding user or team as members. Save and close.
-> 3. Go to **Marketers - Mobile app channel instances secrets** and add the corresponding user or team as members. Save and close.
+> 1. Open the **Settings** menu ![The Settings menu icon.](media/settings-icon.png "The Settings menu icon") at the top of the page and select **Advanced settings**.
+> 1. On the advanced settings page, select **Settings** on the top bar, then go to **System** > **Security** > **Field Security Profiles**.
+> 1. Go to **Marketers - Mobile app secrets** and add the corresponding user or team as members. Save and close.
+> 1. Go to **Marketers - Mobile app channel instances secrets** and add the corresponding user or team as members. Save and close.
 
-To create a new mobile app configuration, go to **Settings** > **Customer engagement** > **Push notifications** and select **+New mobile app** on the top ribbon. The mobile app configuration connects your existing mobile application (already published on the App Store, Google Play, or both) to Dynamics 365 Customer Insights - Journeys.
+To create a new mobile app configuration, go to **Settings** in Customer Insights - Journeys, then go to **Customer engagement** > **Push notifications** and select **+New mobile app** on the top ribbon. The mobile app configuration connects your existing mobile application (already published on the App Store, Google Play, or both) to Dynamics 365 Customer Insights - Journeys.
 
 To create a configuration, complete the following steps:
 

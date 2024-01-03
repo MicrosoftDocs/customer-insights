@@ -1,7 +1,7 @@
 ---
 title: Personalize content using predefined dynamic text
 description: Learn how to personalize content using predefined dynamic text in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/23/2023
+ms.date: 12/20/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -19,7 +19,7 @@ Personalized messages help marketers drive engagement. A common way to personali
 
 An instance of placeholder text such as ``{{Firstname}}`` is called predefined dynamic text. Before you can use dynamic text, you need to define three pieces of information:
 
-1. **Data binding**: Where the replacement data for the dynamic text come from (for example, the “firstname” attribute of a “Contact” table).
+1. **Data binding**: Where the replacement data for the dynamic text comes from (for example, the “firstname” attribute of a “Contact” table).
 1. **Label**: How the dynamic text is referred to within the message text (for example, ``{{Firstname}}``).
 1. **Default value**: What text to use if the source data is empty.
 
@@ -120,7 +120,7 @@ If needed, you can change the language and region setting along with time zone b
 > [!div class="mx-imgBorder"]
 > ![locale and time zone](media/real-time-marketing-locale-and-time-zone.png "locale and time zone")
 
-### Using data that are reached by traversing a 1-to-many relation
+### Using data that is reached by traversing a 1-to-many relation
 
 > [!TIP]
 > How to enable the preview for more data for personalization
@@ -198,5 +198,26 @@ Select the tables you want to add or remove, then select **Save**.
 
 > [!NOTE]
 > Removing dynamic text only removes it from the predefined list, it does not remove it from the messages that are already using it.
+
+#### Customer measures (calculated metrics) as data source
+
+When Customer Insights – Data is present and connected, you can use customer measures (calculated metrics) to define dynamic text when using customer profiles. This opens up another source of data that can be used to further personalize messages and journeys. For example, you can define a calculated metric such as *LifeTimeSpend* or *CurrentYearSpend* for each customer. These metrics can then be used to define dynamic text to include the values in messages, delivering more personalized and useful content.
+
+##### Creating measures
+
+Watch this video to learn more:
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RW1fY3B]
+
+See [Use calculated measures in Customer Insights - Journeys and other Dataverse-based applications](/dynamics365/customer-insights/data/dataverse-measures) to learn how to create measures in Customer Insights – Journeys and what types of measures are available for use in the app.
+
+> [!NOTE]
+> While the user interface presents itself as a one-to-many relationship, the current implementation in Customer Insights – Data only allows single-dimension metrics and therefore only one value is returned.
+
+##### Using measures to define dynamic text
+
+To define dynamic text with measures, go to **Customer Profile**. You should see defined measures as a related table that you can traverse to and use a specific calculation within that table.
+
+:::image type="content" source="media/dynamic-text-cid-measures.png" alt-text="Browsing Customer Insights - Data measures screenshot.":::
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]

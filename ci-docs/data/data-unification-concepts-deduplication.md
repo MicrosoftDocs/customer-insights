@@ -1,17 +1,17 @@
 ---
-title: "Deduplication considerations"
-description: "Learn what to consider when setting up deduplication rules for customer unification."
-ms.date: 09/21/2023
+title: "Data unification concepts and scenarios"
+description: "Understand the concepts behind deduplication when unifying data in Customer Insights - Data."
+ms.date: 12/07/2023
+ms.reviewer: v-wendysmith
 ms.topic: conceptual
 author: Scott-Stabbert
 ms.author: sstabbert
-ms.reviewer: v-wendysmith
 ms.custom: bap-template
 ---
 
-# Deduplication considerations
+# Deduplication concepts and scenarios
 
-This article contains key considerations when setting up your deduplication rules.
+[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
 In this simple example, records 1, 2 and 3 share either an email or phone, and represent the same person.
 
@@ -29,11 +29,11 @@ In this simple example, records 1, 2 and 3 share either an email or phone, and r
 
 You decide the number of rules, and the conditions that uniquely identify your customers. The exact rules depend on the data you have available to match on, the quality of your data, and how exhaustive you want the deduplication process to be.
 
-## Deduplication rule options
+## Deduplication rule options - Normalize and Precision
 
 You can select **Normalization** routines to standardize data to get better matching, such as when you want to ignore extra whitespace or variations in case sensitivity between two strings. Normalization only impacts matching. It doesn't change the data in the final unified customer profile output.
 
-You can select a **Precision** setting less than "Exact" to use fuzzy matching. Fuzzy matching is effective at matching strings that are close, but not exact in order to account for typos and small variations. For example, when comparing bob@contoso.com and bob@contoso.cm.
+You can select a **Precision** setting less than "Exact" to use fuzzy matching. [Fuzzy matching](data-unification-fuzzy-matching.md) is effective at matching strings that are close, but not exact in order to account for typos and small variations. For example, when comparing bob@contoso.com and bob@contoso.cm.
 
 You can add conditions to a rule, such as matching FirstName and Phone. Conditions within a given rule are "AND" conditions; every condition must match for the rows to match. But separate rules are "OR" conditions. If rows aren't matched by Rule 1, then they can be matched by Rule 2.
 
@@ -41,4 +41,10 @@ You can add conditions to a rule, such as matching FirstName and Phone. Conditio
 
 Once rules have been run and duplicate records have been identified, the deduplication process selects a "Winner row." The nonwinner rows are called "Alternate rows." Alternate rows are used in the Matching rules unification step to match records from other tables to the winner row. Rows are matched against the data in the alternate rows in addition to the winner row.
 
-Once you have added a rule to a table, you can configure which row to select as the winner row through **Merge preferences**. Merge preferences are set per table. No matter what merge policy is selected, if there's a tie for a winner row, then first row in the data order is used as the tie breaker. 
+Once you have added a rule to a table, you can configure which row to select as the winner row through **Merge preferences**. Merge preferences are set per table. No matter what merge policy is selected, if there's a tie for a winner row, then first row in the data order is used as the tie breaker.
+
+## Next steps
+
+- [Remove duplicates in each table](data-unification-duplicates.md)
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

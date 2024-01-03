@@ -66,15 +66,23 @@
   items:
     - name: Data unification overview
       href: data-unification.md
-    - name: Describe customer data
+    - name: Customer data
       href: data-unification-map-tables.md
-    - name: Remove duplicates in each table
-      href: data-unification-duplicates.md
-    - name: Deduplication considerations
-      href: data-unification-duplicates-considerations.md
+    - name: Deduplication rules
+      items: 
+        - name: Remove duplicates in each table
+          href: data-unification-duplicates.md
+        - name: Deduplication concepts and scenarios
+          href: data-unification-concepts-deduplication.md
+        - name: Precision and fuzzy matching
+          href: data-unification-fuzzy-matching.md
     - name: Matching rules
-      href: data-unification-match-tables.md
-    - name: Unify customer fields
+      items: 
+        - name: Define matching rules
+          href: data-unification-match-tables.md
+        - name: Precision and fuzzy matching
+          href: data-unification-fuzzy-matching.md
+    - name: Unify data
       href: data-unification-merge-tables.md
     - name: Review data unification
       href: data-unification-review.md
@@ -281,6 +289,8 @@
       href: measure-templates.md
     - name: Schedule measures
       href: measures-schedule.md
+    - href: dataverse-measures.md
+      name: Use measures with Dataverse apps
           
 - name: Predictions and custom models
   items:
