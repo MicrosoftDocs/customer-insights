@@ -1,7 +1,7 @@
 ---
 title: "Convert a Data Lake data source to a Delta Lake data source (preview)"
 description: "Convert a Data Lake data source to a Delta Lake data source in Customer Insights - Data."
-ms.date: 11/28/2023
+ms.date: 01/03/2024
 ms.topic: how-to
 author: mukeshpo
 ms.author: mukeshpo
@@ -42,7 +42,7 @@ Key reasons to connect to data stored in Delta format:
 - The Delta tables must be in a folder in the storage container and can't be in the container root directory. For example:
 
   ```
-  storage_container_root/
+  storageaccountcontainer/
       DeltaLakeDataRoot/
          ADeltaLakeTable/
                _delta_log/
@@ -52,7 +52,16 @@ Key reasons to connect to data stored in Delta format:
                part-0002-snappy.parquet
   ```
 
-- The Delta tables and their scehma must match the tables in the existing Data Lake data source and be in the same storage container.
+- The Delta tables and their schema must match the tables in the existing Data Lake data source and be in the same storage container. The tables in the new data folder must match exactly to the selected tables in the Data Lake data source. The tables names and their schemas must match exactly. In Delta Lake, table names are the same as the folder name where the data is stored. Therefore, the folder names must match exactly to the selected tables in the Data Lake data source. Otherwise, the update fails.
+
+  For example, if the selected Azure Data Lake data source tables are Table1 and Table2, then the folder you choose for the update must resemble the following:
+
+  ```
+  storageaccountroot/
+   DeltaLakeDataRoot/
+      Table1/
+      Table2/
+  ```
 
 ## Update a Data Lake data source to Delta Lake
 
@@ -62,7 +71,9 @@ Key reasons to connect to data stored in Delta format:
 
    :::image type="content" source="media/delta-lake-convert.png" alt-text="Dialog box to enter connection details for Delta Lake.":::
 
-1. Select **Browse** and navigate to the folder that contains the data in Delta format and select it. Then, select **Update data source**. The **Data sources** page opens showing the new data source in **Refreshing** status.
+1. Select **Browse** and navigate to the folder that contains the data in Delta format and *exactly matches* the selected Azure Data Lake data source table. Select it, and then select **Update data source**.
+
+   The **Data sources** page opens showing the new data source in **Refreshing** status.
 
    > [!IMPORTANT]
    > Don't stop the refreshing process as it could negatively impact updating the data source.
