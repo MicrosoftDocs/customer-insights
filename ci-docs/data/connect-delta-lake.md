@@ -1,7 +1,7 @@
 ---
 title: "Connect to Delta tables in Azure Data Lake Storage (preview)"
-description: "Work with data stored in Delta Lake format from Azure Data Lake Storage in Customer Insights - Data."
-ms.date: 11/29/2023
+description: "Work with data stored in Delta Lake format from Azure Data Lake Storage."
+ms.date: 12/11/2023
 ms.topic: how-to
 author: mukeshpo
 ms.author: mukeshpo
@@ -19,9 +19,11 @@ Connect to data in Delta format and bring it into Dynamics 365 Customer Insights
 
 Key reasons to connect to data stored in Delta format:
 
-- Directly import Delta formatted data saving time and effort.
+- Directly import Delta formatted data to save time and effort.
 - Eliminate the compute and storage costs associated with transforming and storing a copy of your lakehouse data.
-- Automatically improve the reliability of data ingestion to Customer Insights - Data provided by Delta versioning.
+- Improve the reliability of data ingestion to Customer Insights - Data provided by [Delta versioning](#delta-lake-time-travel-and-data-refreshes).
+
+<!---
 
 <!--- For example, Contoso Coffee has millions of records coming in on a daily basis. Currently, they do full refreshes of their data every 6 hours. This full refresh takes lots of time to reprocess everything when most data has already been processed. By using the Delta format, Contoso is able to greatly reduce their processing time by only processing the new records, leading to even faster insights from Customer Insights – Data.
 --->
@@ -36,7 +38,7 @@ Key reasons to connect to data stored in Delta format:
 
 - The user that sets up the data source connection needs at least Storage Blob Data Reader permissions on the Azure Data Lake Storage account.
 
-- Data stored in online services may be stored in a different location than where data is processed or stored. By importing or connecting to data stored in online services, you agree that data can be transferred. [Learn more at the Microsoft Trust Center](https://www.microsoft.com/trust-center).
+- Data stored in online services might be stored in a different location than where data is processed or stored. By importing or connecting to data stored in online services, you agree that data can be transferred. [Learn more at the Microsoft Trust Center](https://www.microsoft.com/trust-center).
 
 - Data in your Azure Data Lake Storage must be in Delta format. Customer Insights - Data relies on the version property in the table's history to identify the latest changes for incremental processing.
 
@@ -76,14 +78,14 @@ Key reasons to connect to data stored in Delta format:
 
 1. Select the tables you want to include.
 
-   :::image type="content" source="media/delta-edit-table.png" alt-text="Dialog box showing Required for Primary key":::
-
 1. For selected tables where a primary key hasn't been defined, **Required** displays under **Primary key**. For each of these tables:
    1. Select **Required**. The **Edit table** panel displays.
    1. Choose the **Primary key**. The primary key is an attribute unique to the table. For an attribute to be a valid primary key, it shouldn't include duplicate values, missing values, or null values. String, integer, and GUID data type attributes are supported as primary keys.
    1. Select **Close** to save and close the panel.
 
-1. To enable [data profiling](data-sources.md#data-profiling) on any of the columns, select the number of **Columns** for the table. The **Manage attributes** page displays.
+   :::image type="content" source="media/delta-edit-table.png" alt-text="Dialog box showing Required for Primary key":::
+
+1. To enable data profiling on any of the columns, select the number of **Columns** for the table. The **Manage attributes** page displays.
 
    :::image type="content" source="media/delta-dataprofiling-columns.png" alt-text="Dialog box to select data profiling.":::
 
@@ -102,7 +104,13 @@ When a column is added or removed from the schema of a Delta folders data source
 
 ### Add a column
 
-When a column is added to the data source, the information automatically appends to the data in Customer Insights - Data once a refresh occurs. If you have already configured unification for the table, the new column must be added to the unification process. From the [**Customer data**](data-unification-update.md#edit-customer-data) step, select **Select tables and columns** and select the new column. In the [**Unified data view**](data-unification-update.md#manage-unified-fields) step, make sure the column isn't excluded from the customer profile. Select **Excluded** and readd the column.
+When a column is added to the data source, the information automatically appends to the data in Customer Insights - Data once a refresh occurs. If you have already configured unification for the table, the new column must be added to the unification process.
+
+1. From the [**Customer data**](data-unification-update.md#edit-customer-data) step, select **Select tables and columns** and select the new column.
+
+1. In the [**Unified data view**](data-unification-update.md#manage-unified-fields) step, make sure the column isn't excluded from the customer profile. Select **Excluded** and readd the column.
+
+1. In the [**Run updates to the unified profile**](data-unification-update.md#run-updates-to-the-unified-profile) step, select **Unify customer profiles and dependencies**.
 
 ### Change or remove a column
 
@@ -110,14 +118,19 @@ When a column is removed from a data source, the system checks for dependencies 
 
 ### Validate a schema change
 
-After the data source has refreshed, go to **Data** > **Tables** page. Select the table for the data source and verify the schema.
+After the data source refreshes, go to the **Data** > **Tables** page. Select the table for the data source and verify the schema.
 
-## Manually run a full data refresh on a Delta table folder
+## Delta lake time travel and data refreshes
 
-A full refresh takes all the data from a table in Delta format and reloads it from the Delta table version zero (0).
-Changes to Delta folders are versioned, and Customer Insights - Data uses the Delta folder versions to keep track of what data to process. If Customer Insights – Data last synchronized with version 23 of your Delta folder data, it expects to find version 23 and possibly subsequent versions available. If the expected data versions aren't available, [data synchronization fails](#data-synchronization-failure).
+Delta lake time travel is the ability to query through table versions based on a timestamp or version number. Changes to Delta folders are versioned, and Customer Insights - Data uses the Delta folder versions to keep track of what data to process. In a regular delta table refresh, data is pulled from all the data table versions since the last refresh. As long as all versions are present, Customer Insights - Data can process just the changed elements and deliver faster results. [Learn more about time travel](https://www.databricks.com/blog/2019/02/04/introducing-delta-time-travel-for-large-scale-data-lakes.html).
 
-Changes to the Delta folder schema trigger an automatic full refresh. To manually trigger a full refresh, perform the following steps.
+For example, if Customer Insights – Data last synchronized with version 23 of your Delta folder data, it expects to find version 23 and possibly subsequent versions available. If the expected data versions aren't available, data synchronization fails and requires a [manual full data refresh](#manually-run-a-full-data-refresh-on-a-delta-table-folder). Data synchronization can fail if your Delta folder data was deleted and then recreated. Or if Customer Insights - Data couldn't connect to your Delta folders for an extended period while the versions advanced.
+
+To avoid the need for a full data refresh, we recommend you maintain a reasonable history backlog, such as 15 days.
+
+### Manually run a full data refresh on a Delta table folder
+
+A full refresh takes all the data from a table in Delta format and reloads it from the Delta table version zero (0). Changes to the Delta folder schema trigger an automatic full refresh. To manually trigger a full refresh, perform the following steps.
 
 1. Go to **Data** > **Data sources**.
 

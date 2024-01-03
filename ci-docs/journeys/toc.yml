@@ -14,7 +14,7 @@
     href: license-setup.md
   - name: Purchase Customer Insights
     href: purchase.md
-  - name: Dynamics 365 Customer Insights FAQs
+  - name: Customer Insights FAQs
     href: ci-faq.md
   - name: Key Customer Insights - Journeys scenarios
     items:
@@ -132,6 +132,8 @@
   items:
   - name: Real-time journeys user guide
     href: real-time-marketing-user-guide.yml
+  - name: Customer Insights quickstart guide
+    href: customer-insights-quickstart-guide.md
   - name: Marketing channels
     items:
     - name: Email campaigns
@@ -148,10 +150,14 @@
           href: content-rewrite.md
         - name: "Preview: Copilot - Style your emails with AI-assisted themes"
           href: email-theme.md
+        - name: Enhance email engagement by allowing browser viewing
+          href: view-email-in-browser.md  
         - name: Generate iCalendar files for events and sessions
           href: add-to-calendar.md
         - name: Use brand profiles in email
           href: brand-profiles-email.md
+        - name: Create consistent branding with brand profiles
+          href: brand-profiles.md
         - name: Import outbound emails, templates, and content blocks to Customer Insights - Journeys
           href: real-time-marketing-import-email-to-real-time.md 
       - name: Prepare to send your email
@@ -172,6 +178,10 @@
           href: email-check-golive.md      
         - name: Use "Send now" to send emails instantly in Customer Insights - Journeys
           href: email-without-journey.md
+      - name: View previously sent emails
+        items: 
+        - name: "Preview: Reference copies of sent emails in the interaction timeline"
+          href: view-previously-sent-emails.md
       - name: Email troubleshoot + FAQ
         href: email-troubleshoot.md
     - name: Text messages
@@ -182,6 +192,8 @@
         href: set-up-automated-sms-keyword-flow.md
     - name: Push notifications
       href: real-time-marketing-push-notifications.md
+    - name: Use custom fonts in Customer Insights - Journeys
+      href: use-custom-fonts.md
     - name: Create custom channels
       href: real-time-marketing-create-custom-channels.md
     - name: Use AI-driven run-time channel optimization
@@ -250,7 +262,7 @@
         href: real-time-marketing-multiple-branches.md
       - name: Personalize triggers using conditions
         href: real-time-marketing-personalize-triggers.md
-      - name: "Preview: Set quiet times to prevent messages from sending during unwanted hours"
+      - name: Set quiet times to prevent messages from sending during unwanted hours
         href: real-time-marketing-quiet-times.md
       - name: Limit sent with frequency capping
         href: real-time-marketing-frequency-cap.md
@@ -268,6 +280,8 @@
         href: open-events.md
       - name: Set up an event
         href: set-up-event.md
+      - name: Set up session-level registration
+        href: real-time-journeys-event-session.md
       - name: Create an event from another event
         href: event-from-event.md
     - name: Host a Microsoft Teams webinar
@@ -308,6 +322,8 @@
       href: real-time-marketing-troubleshooting-forms.md
   - name: Lead generation and management
     items:
+    - name: Lead generation and management overview
+      href: lead-generation-overview.md
     - name: Qualify the best leads
       href: real-time-marketing-qualify-leads.md
     - name: Create sales activities from lead signals
@@ -320,6 +336,8 @@
       href: real-time-marketing-security-roles-lead-scoring.md
   - name: Analytics
     items:
+    - name: Analytics overview
+      href: analytics-overview.md
     - name: Access and interpret analytics
       href: real-time-marketing-analytics.md
     - name: How to use aggregate cross-journey analytics
@@ -376,14 +394,18 @@
       href: real-time-marketing-custom-channel-custom-API.md
     - name: 7. Define your channel definition
       href: real-time-marketing-define-channel-definition.md
+  - name: Extend forms functionality
+    items:
+    - name: Client-side extensibility for forms
+      href: developer/realtime-marketing-form-client-side-extensibility.md
+    - name: "Preview: Capture forms in Customer Insights - Journeys"
+      href: real-time-marketing-form-capture.md
+    - name: Integrate a custom captcha service with marketing forms
+      href: real-time-marketing-form-custom-captcha.md
   - name: Push notification setup for application developers
     href: real-time-marketing-developer-push.md
   - name: Receive notifications and create interactions
     href: real-time-marketing-developer-notifications.md
-  - name: Integrate a custom captcha service with marketing forms
-    href: real-time-marketing-form-custom-captcha.md
-  - name: Client-side extensibility for forms
-    href: developer/realtime-marketing-form-client-side-extensibility.md
   - name: Reference guide for Customer Insights - Journeys interactions
     href: real-time-marketing-interactions-reference.md
   - name: Create a Customer Insights - Journeys segment using the Web API
@@ -420,18 +442,6 @@
         href: manage-word-templates.md
     - name: Data management settings
       href: data-management-settings.md
-  - name: Use the versions page to enable outbound marketing
-    href: versions.md
-  - name: Journeys
-    items:
-    - name: Move triggers between environments
-      href: move-triggers-between-environments.md
-    - name: Select the audience source for journeys
-      href: real-time-marketing-audience-data.md
-    - name: Customer Insights - Journeys link tracking mechanics
-      href: real-time-marketing-link-tracking-mechanics.md
-  - name: Customer Insights - Journeys settings
-    items:
     - name: Journeys administrator settings
       href: real-time-marketing-admin-settings.md
     - name: Add or remove sample data
@@ -444,6 +454,24 @@
       href: admin-feature-switches.md
     - name: Control access to designer features
       href: designer-feature-protection.md
+    - name: Use the versions page to enable outbound marketing
+      href: versions.md
+  - name: Journeys
+    items:
+    - name: Move triggers between environments
+      href: move-triggers-between-environments.md
+    - name: Select the audience source for journeys
+      href: real-time-marketing-audience-data.md
+    - name: Customer Insights - Journeys link tracking mechanics
+      href: real-time-marketing-link-tracking-mechanics.md
+  - name: Text message and push notification setup
+    items:
+    - name: Set up text messaging
+      href: real-time-marketing-text-messaging-setup.md
+    - name: Manage SMS (text message) keywords used in customer journeys
+      href: manage-sms-keywords.md
+    - name: Set up push notifications
+      href: real-time-marketing-push-notifications-setup.md
   - name: Email administration
     items:
     - name: Get started with email
@@ -518,16 +546,10 @@
       href: fair-use-policy.md
     - name: Throughput guidance
       href: real-time-marketing-throughput-guidance.md
-  - name: Set up text messaging
-    href: real-time-marketing-text-messaging-setup.md
-  - name: Manage SMS (text message) keywords used in customer journeys
-    href: manage-sms-keywords.md
   - name: Install add-ons
     href: add-ons.md
   - name: Administration and setup FAQ
     href: setup-troubleshooting.yml
-  - name: Known issues and workarounds
-    href: known-issues.md
   - name: "Deprecation: Dynamics 365 for Customer Engagement"
     href: ce-deprecation.md
   - name: Troubleshoot with Solution Health Hub
@@ -546,6 +568,14 @@
       href: responsible-ai-overview.md
     - name: Responsible AI FAQs for content ideas
       href: faqs-content-ideas.md
+    - name: Responsible AI FAQs for the segment copilot
+      href: faqs-segment-copilot.md
+    - name: Responsible AI FAQs for image smart recommendation
+      href: faqs-image-smart-recommendation.md
+    - name: Responsible AI FAQs for content rewrite
+      href: faqs-content-rewrite.md
+    - name: Responsible AI FAQs for the journey copilot
+      href: faqs-journey-copilot.md
 - name: Resources
   items:
   - name: Customer Insights - Journeys forum
@@ -822,8 +852,6 @@
       items:
       - name: Settings overview
         href: marketing-settings.md
-      - name: Create consistent branding with brand profiles
-        href: brand-profiles.md
       - name: Configure lead scoring options
         href: mkt-settings-lead-score-options.md
       - name: Marketing analytics configuration
@@ -856,6 +884,8 @@
       href: mkt-settings-social-media.md
     - name: Manage LinkedIn Lead Gen
       href: linkedin-configuration.md
+    - name: Known issues in outbound marketing and workarounds
+      href: known-issues.md 
   - name: Developer guide
     items: 
     - name: Developer guide overview
