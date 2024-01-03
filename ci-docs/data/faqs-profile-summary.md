@@ -1,7 +1,7 @@
 ---
 title: FAQ for customer profile summary for Dynamics 365 Sales (preview)
 description: This FAQ provides information about the AI technology used in the insights provided by Customer Insights - Data to Dynamics 365 Sales (preview). It provides key considerations and details about how AI is used, how it was tested and evaluated, and any specific limitations.
-ms.date: 12/13/2023
+ms.date: 01/03/2024
 ms.custom: 
   - responsible-ai-faqs
 ms.topic: overview
@@ -56,4 +56,4 @@ The feature is available in the United States and supports English only.
 
 ## See also
 
-- [Provide lead profile summaries to Dynamics 365 Sales (preview)](lead-profile-summary.md)
+- [Enrich Dynamics 365 Sales' lead summaries with an insight from Customer Insights – Data (preview)](lead-profile-summary.md)

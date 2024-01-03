@@ -11,13 +11,13 @@ ms.custom: bap-template
 
 # Enrich Dynamics 365 Sales' lead summaries with an insight from Customer Insights – Data (preview)
 
-Dynamics 365 Sales users can enrich their lead summary with an insight from Customer Insights - Data's customer profile. The insight is based on unified activity data ingested by the user, such as customer reviews, purchases, appointments, web logs, and more. The insight is an observation of one of the following:
+With customer profile summary, Dynamics 365 Sales users can enrich their lead summary with an insight from Customer Insights - Data. The insight is based on unified activity data ingested by the user, such as customer reviews, purchases, appointments, web logs, and more. The insight is an observation of one of the following:
 
 - Customer's sentiment: Their attitudes or feelings toward the business and their products or services.
 - Customer's behavior: The cadence of their activities such as time intervals between appointments.
 - Customer's interest: How likely they're to do something such as book an appointment or purchase a specific type of product, or churn if they haven't made a recent transaction.
 
-Leveraging unified activity data from Customer Insights - Data to add an insight to the [lead summary in Dynamics 365 Sales](/dynamics365/sales/use-sales-copilot#enrich-leads-with-related-information) helps sellers understand more about their lead, without leaving their workflow. Sellers can spend less time manually parsing through disparate data sources to find and synthesize information about their leads, and more time having effective conversations with leads.
+Leveraging unified activity data from Customer Insights - Data to add an insight to the [lead summary in Dynamics 365 Sales](/dynamics365/sales/use-sales-copilot#enrich-leads-with-related-information) helps sellers understand more about their lead, without leaving their workflow. Sellers can spend less time manually parsing through disparate data sources to find and synthesize information about their leads, and more time having effective conversations with them.
 
 ## Requirements
 
