@@ -37,7 +37,7 @@ Key reasons to connect to data stored in Delta format:
 
 - The user that converts the data source needs at least Storage Blob Data Reader permissions on the Azure Data Lake Storage account.
 
-- Data stored in online services may be stored in a different location than where data is processed or stored. By importing or connecting to data stored in online services, you agree that data can be transferred. [Learn more at the Microsoft Trust Center](https://www.microsoft.com/trust-center).
+- Data stored in online services might be stored in a different location than where data is processed or stored. By importing or connecting to data stored in online services, you agree that data can be transferred. [Learn more at the Microsoft Trust Center](https://www.microsoft.com/trust-center).
 
 - The Delta tables must be in a folder in the storage container and can't be in the container root directory. For example:
 
@@ -54,7 +54,7 @@ Key reasons to connect to data stored in Delta format:
 
 - The Delta tables and their schema must match the tables in the existing Data Lake data source and be in the same storage container. The tables in the new data folder must match exactly to the selected tables in the Data Lake data source. The tables names and their schemas must match exactly. In Delta Lake, table names are the same as the folder name where the data is stored. Therefore, the folder names must match exactly to the selected tables in the Data Lake data source. Otherwise, the update fails.
 
-  For example, if the selected Azure Data Lake data source tables are Table1 and Table2, then the folder you choose for the update must resemble the following:
+  For example, if the selected Azure Data Lake data source tables are Table1 and Table2, then the folder you choose for the update must show Table1 and Table2 in the hierarchy.
 
   ```
   storageaccountroot/
