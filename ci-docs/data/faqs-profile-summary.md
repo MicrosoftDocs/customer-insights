@@ -1,5 +1,5 @@
 ---
-title: FAQ for customer insights on Sales lead summaries (preview)
+title: FAQ for customer insights in Sales lead summaries (preview)
 description: This FAQ provides information about the AI technology used in the insights provided by Customer Insights - Data to Dynamics 365 Sales (preview). It provides key considerations and details about how AI is used, how it was tested and evaluated, and any specific limitations.
 ms.date: 01/03/2024
 ms.custom: 
@@ -10,11 +10,11 @@ ms.author: zacook
 ms.reviewer: m-hartmann
 ---
 
-# FAQ for customer insights on Sales lead summaries (preview)
+# FAQ for customer insights in Sales lead summaries (preview)
 
 [!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
-These frequently asked questions (FAQ) describe the AI impact of providing a customer insight on the lead summary in Dynamics 365 Sales (preview).
+These frequently asked questions (FAQ) describe the AI impact of providing a customer insight in the lead summary in Dynamics 365 Sales (preview).
 
 [!INCLUDE [public-preview-note](includes/public-preview-note.md)]
 
