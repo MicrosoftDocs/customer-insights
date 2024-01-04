@@ -1,5 +1,5 @@
 ---
-title: Enrich Dynamics 365 Sales’ lead summaries with an insight from Customer Insights – Data (preview)
+title: Enrich Sales lead summaries with an insight from Customer Insights – Data (preview)
 description: Learn how Customer Insights - Data can provide an insight to the leads summary in Dynamics 365 Sales.
 author: zacookmsft
 ms.author: zacook
@@ -9,9 +9,9 @@ ms.date: 01/03/2024
 ms.custom: bap-template
 ---
 
-# Enrich Dynamics 365 Sales' lead summaries with an insight from Customer Insights – Data (preview)
+# Enrich Sales lead summaries with an insight from Customer Insights – Data (preview)
 
-With customer profile summary, Dynamics 365 Sales users can enrich their lead summary with an insight from Customer Insights - Data. The insight is based on unified activity data ingested by the user, such as customer reviews, purchases, appointments, web logs, and more. The insight is an observation of one of the following:
+Dynamics 365 Sales users can enrich their lead summary with an insight from Customer Insights - Data. The insight is based on unified activity data ingested by the user, such as customer reviews, purchases, appointments, web logs, and more. The insight is an observation of one of the following:
 
 - Customer's sentiment: Their attitudes or feelings toward the business and their products or services.
 - Customer's behavior: The cadence of their activities such as time intervals between appointments.

@@ -1,5 +1,5 @@
 ---
-title: FAQ for customer profile summary for Dynamics 365 Sales (preview)
+title: FAQ for customer insights on Sales lead summaries (preview)
 description: This FAQ provides information about the AI technology used in the insights provided by Customer Insights - Data to Dynamics 365 Sales (preview). It provides key considerations and details about how AI is used, how it was tested and evaluated, and any specific limitations.
 ms.date: 01/03/2024
 ms.custom: 
@@ -10,17 +10,17 @@ ms.author: zacook
 ms.reviewer: m-hartmann
 ---
 
-# FAQ for customer profile summary in Dynamics 365 Sales (preview)
+# FAQ for customer insights on Sales lead summaries (preview)
 
 [!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
-These frequently asked questions (FAQ) describe the AI impact of the lead profile summaries in Dynamics 365 Sales (preview) feature.
+These frequently asked questions (FAQ) describe the AI impact of providing a customer insight on the lead summary in Dynamics 365 Sales (preview).
 
 [!INCLUDE [public-preview-note](includes/public-preview-note.md)]
 
-## What is customer profile summary in Dynamics 365 Sales?
+## What is customer insights on Sales lead summaries?
 
-This AI-powered feature enables sellers to see a single insight from Customer Insights - Data to help them make better decisions about how to engage and interact with their customer. The insight appears on the Dynamics 365 Sales’ lead summary when the seller ask Sales Copilot (preview) to sumarize a lead.
+This AI-powered feature enables sellers to see a single insight from Customer Insights - Data to help them make better decisions about how to engage and interact with their customer. The insight appears on the Dynamics 365 Sales’ lead summary when the seller asks Sales Copilot (preview) to sumarize a lead.
 
 ## What are the feature’s capabilities?
 
@@ -56,4 +56,4 @@ The feature is available in the United States and supports English only.
 
 ## See also
 
-- [Enrich Dynamics 365 Sales' lead summaries with an insight from Customer Insights – Data (preview)](lead-profile-summary.md)
+- [Enrich Sales lead summaries with an insight from Customer Insights – Data (preview)](lead-profile-summary.md)
