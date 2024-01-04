@@ -54,7 +54,7 @@ To create custom validation, enable the **Validation** option and select **Custo
 
 The Theme section can be opened by selecting the brush icon in the right pane. Theme controls the style of all types of fields, buttons, and text. Once you set the theme of a field, it affects all fields of the same type in your form.
 
-Theme feature is an user-friendly interface for editing of CSS classes definitions in form HTML. It works only with out-of-the-box form styles, custom CSS classes are not visualized, but you can still edit your custom CSS classes using the HTML code editor.
+Theme feature is a user-friendly interface for editing of CSS classes definitions in form HTML. It works only with out-of-the-box form styles, custom CSS classes aren't visualized, but you can still edit your custom CSS classes using the HTML code editor.
 
 > [!div class="mx-imgBorder"]
 > ![Edit style of your input field using Theme.](media/real-time-marketing-form-theme.png)
@@ -62,9 +62,9 @@ Theme feature is an user-friendly interface for editing of CSS classes definitio
 **Theme** section allows you to configure:
 
 - **Background** - allows you to define inner background color and border style for the whole form.
-- **Text styles** - you can define Heading 1, Heading 2, Heading 3, Paragraph, Field label. The field label style doesn't affect checkbox and radio button labels, as these can be configured separately. Text style definition includes font family, font size, font color, text style, line height. You can also set inner and outer spacing, width and alignment. On top of these text styles you can also set the label position (top, left, right) and required color for your Field labels.
+- **Text styles** - you can define Heading 1, Heading 2, Heading 3, Paragraph, Field label. The field label style doesn't affect checkbox and radio button labels, as these labels can be configured separately. Text style definition includes font family, font size, font color, text style, line height. You can also set inner and outer spacing, width and alignment. On top of these text styles, you can also set the label position (top, left, right) and required color for your Field labels.
 - **Input fields** are grouped into 3 categories:
-- 1. Text input, Dropdown and Lookup fields - these three visual styles of fields share the same style definition. You can define font family, size, color, style for placeholder and input text styles. You can also set the field background color, menu background color, rounded corners, border, size alignment, inner and outer spacing.Please note that the field label can be configured in Text styles.
+- 1. Text input, Dropdown and Lookup fields - these three visual styles of fields share the same style definition. You can define font family, size, color, style for placeholder and input text styles. You can also set the field background color, menu background color, rounded corners, border, size alignment, inner and outer spacing. Note that the field label can be configured in Text styles.
 - 1. Radio button - radio button has its own label configuration allowing you to set the font family, size. You can set different text color, styles and background color for all options and for the selected option. You can also define rounded corners, width, inner and outer spacing of your radio buttons.
 - 1. Checkbox - checkbox field has its own label configuration allowing you to set the font family, size. You can set different text color, styles and background color for all options and for the selected option. You can also define rounded corners, width, inner and outer spacing of your checkboxes.
 - **Buttons and links** - the Button definition allows you to set font family, size, color, text styles, button color, border alignment, inner and outer spacing. The Hyperlink definition allows you to set font family, size, color and text styles.
@@ -76,8 +76,8 @@ Theme feature is an user-friendly interface for editing of CSS classes definitio
 
 There are two ways how to use custom fonts in your form:
 
-1. Set font to "inherit" - this is recommended for forms **embedded** into your own page. The form will inherit the form from your page.
-1. Add your own custom font - this is recommended for forms **hosted as standalone page**. You can upload your custom font using Theme feature in Custom fonts section. This will allow you to use your custom font in all Text style definitions.
+1. Set font to "inherit" - recommended for forms **embedded** into your own page. The form inherits the form from your page.
+1. Add your own custom font - recommended for forms **hosted as standalone page**. You can upload your custom font using Theme feature in Custom fonts section. Your uploaded custom fonts can be then used in all Text style definitions.
 
 ### Preview: Copilot - Forms theme assistant
 
@@ -89,7 +89,7 @@ There are two ways how to use custom fonts in your form:
 > [!IMPORTANT]
 > You must only use the theme assistant with websites that you own and operate. The theme assistant should not be used to copy third-party websites.
 
-The theme assistant is a Copilot feature in Customer Insights - Journeys. You can use the theme assistant to fetch styles from an existing website that you own and control. To use a theme, enter the website URL and select **Fetch styles**. This process may take a few minutes. You can continue your work and return back later to check the result. Once the assistant fetches the styles from your website, it applies the styles to the theme of your form.
+The theme assistant is a Copilot feature in Customer Insights - Journeys. You can use the theme assistant to fetch styles from an existing website that you own and control. To use a theme, enter the website URL and select **Fetch styles**. This process might take a few minutes. You can continue your work and return back later to check the result. Once the assistant fetches the styles from your website, it applies the styles to the theme of your form.
 
 > [!div class="mx-imgBorder"]
 > ![Fetch styles from your website using Copilot.](media/real-time-marketing-form-theme-copilot.png)
