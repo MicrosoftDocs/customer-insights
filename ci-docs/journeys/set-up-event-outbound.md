@@ -1,7 +1,7 @@
 ---
 title: Set up an event in outbound marketing
 description: How to plan an event, register basic info, set up your team, manage sessions and speakers, set the event schedule, issue passes,  and manage venues in outbound marketing.
-ms.date: 09/22/2023
+ms.date: 01/03/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -109,7 +109,7 @@ Use the **Registration and attendance** tab to see who registered for the event,
 - **Contacts who canceled**: Lists contacts who were registered for the event but who have now canceled their registration. The list includes cancellations made by contacts using the event website and by users using the Customer Insights - Journeys app. If you'd like to communicate with contacts who canceled from one or more events, you can set up a behavioral segment based on `EventRegistrationCancelled` interactions and then use that segment to target a customer journey.
 
     > [!NOTE]
-    > Canceled event registrations are deactivated, not deleted. To cancel an event registration from within Customer Insights - Journeys, simply deactivate the record by setting its status to "Inactive" from top rigth corner on the registration main form.
+    > Canceled event registrations are deactivated, not deleted. To cancel an event registration from within Customer Insights - Journeys, deactivate the record by setting its status to "Inactive" in the top right corner of the main registration form.
     >
     > To determine your current Customer Insights - Journeys version, refer to [Find out which version of Dynamics 365 Customer Insights - Journeys you are running](apply-updates.md#find-out-which-version-of-customer-insights---journeys-you-are-running).
 
