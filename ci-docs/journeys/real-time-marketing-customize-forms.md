@@ -17,7 +17,7 @@ search.audienceType:
 
 The latest [form editor](real-time-marketing-form-overview.md) simplifies the design process of a form or a simple landing page by providing more screen real estate for the design canvas. You can further tailor the form editor to suit your needs by implementing your own customizations.
 
-The list of customizable form entities:
+The list of customizable form editor entities:
 
 - Form (msdynmkt_marketingform)
 - Form Submission (msdynmkt_marketingformsubmission)
