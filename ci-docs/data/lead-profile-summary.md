@@ -31,5 +31,5 @@ Leveraging unified activity data from Customer Insights - Data to add an insight
 
 ## Next steps
 
-- [Responsible AI FAQs for lead profile summaries in Dynamics 365 Sales (preview)](faqs-profile-summary.md)
+- [Responsible AI FAQs for customer insights on Sales lead summaries (preview)](faqs-profile-summary.md)
 - [Responsible AI FAQs for Customer Insights - Data](responsible-ai-overview.md)

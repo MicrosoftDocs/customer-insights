@@ -20,7 +20,7 @@ These frequently asked questions (FAQ) describe the AI impact of providing a cus
 
 ## What is customer insights on Sales lead summaries?
 
-This AI-powered feature enables sellers to see a single insight from Customer Insights - Data to help them make better decisions about how to engage and interact with their customer. The insight appears on the Dynamics 365 Sales’ lead summary when the seller asks Sales Copilot (preview) to sumarize a lead.
+This AI-powered feature enables sellers to see a single insight from Customer Insights - Data to help them make better decisions about how to engage and interact with their customer. The insight appears on the Dynamics 365 Sales’ lead summary when the seller asks Sales Copilot (preview) to summarize a lead.
 
 ## What are the feature’s capabilities?
 
@@ -30,17 +30,17 @@ The feature uses information from the customer’s activity stream and performs 
 
 ## What is the feature’s intended use?
 
-The insight is intended to help sellers understand more about what a customer has done, such as how frequently the customer engages with their business and enable sellers to better customize their interactions with the customer.
+The insight is intended to help sellers understand more about what a customer has done, such as how frequently the customer engages with their business, and enable sellers to better customize their interactions with the customer.
 
 ## How was the feature evaluated? What metrics are used to measure performance?
 
 This feature has only been evaluated in English at this time.
 
-The feature is evaluated from dimensions of accuracy of response and quality of insight. It is evaluated with embedded monitoring for Responsible AI. Specifically, this feature has been tested with an array of scenarios to ensure it captures and mitigates accordingly, including inappropriate language used, malicious intention of jail break, and data fabrication.
+The feature is evaluated from dimensions of accuracy of response and quality of insight. It's evaluated with embedded monitoring for Responsible AI. Specifically, this feature has been tested with an array of scenarios to ensure it captures and mitigates accordingly, including inappropriate language used, malicious intention of jail break, and data fabrication.
 
 ## What are the limitations of the feature? How can users minimize the impact of the feature limitations when using the system?
 
-The feature only analyzes information for a single customer at a time. The system only reviews a subset of the customer's activities, ordered by date, and identifies insights from the information to help sellers better understand how the customer engages with their business. To create better insights, add additional activity information for your customers.
+The feature only analyzes information for a single customer at a time. The system only reviews a subset of the customer's activities, ordered by date, and identifies insights from the information to help sellers better understand how the customer engages with their business. To create better insights, add more activity information for your customers.
 
 ## What are the supported geographies and languages?
 
