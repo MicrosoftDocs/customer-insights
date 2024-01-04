@@ -44,7 +44,7 @@ Once you select a field on the canvas, you can see its properties in the right p
 - **Hide field**: If enabled, the field isn't visible in the form. You can use hidden fields to store extra metadata along with the form submission.
 
 > [!NOTE]
-> Make sure that all phone number field validation is set to "Mobile Phone." This out-of-the-box validation checks if the phone number format is compatible with the phone number format requirements for contact consent point creation. The phone number must be in the international format starting with a "+" sign.
+> Make sure that the phone number field validation is set to "Phone number". This out-of-the-box validation checks if the phone number format is compatible with the phone number format requirements for "contact point consent" creation. The phone number must be in the international format starting with a "+" sign.
 
 ### Custom validation
 
