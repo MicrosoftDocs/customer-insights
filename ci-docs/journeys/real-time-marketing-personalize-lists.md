@@ -15,7 +15,12 @@ search.audienceType:
 
 [!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
-Lists are a common way to organize information to improve readability. Examples include a list of sessions in an event, a list of products, or a list of service tickets. Customer Insights – Journey makes it easy to create lists and personalize those lists to include only the information that is relevant for the recipient in a way that is easy to parse and act upon.
+Lists are a common way to organize information to improve readability. Examples include a list of sessions in an event, a list of products, or a list of service tickets. Customer Insights – Journey makes it easy to create lists and personalize those lists to include only the information that is relevant for the recipient in a way that is easy to parse and act upon. 
+
+Lists need to be related to one of the following, when created:
+* **Audience (contact or lead)**: starting from the audience record itself, select a Dataverse table accross one or multiple relationship 
+* **Triggers**: can use any "Entity reference" input parameter as a starting point to select a table. Bear in mind, that the selected trigger must run the journey where the email is used.
+* **Other tables (Needs record selection)**: select any Dataverse table as a starting point to select a table. Additionally, have to select a specific parent record too
 
 ## Set up a list
 
