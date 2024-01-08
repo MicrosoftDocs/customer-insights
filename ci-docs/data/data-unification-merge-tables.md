@@ -1,7 +1,7 @@
 ---
 title: "Unify customer columns for data unification"
 description: "Merge columns to create unified customer profiles."
-ms.date: 11/15/2023
+ms.date: 01/08/2024
 ms.topic: how-to
 author: v-wendysmith
 ms.author: sstabbert
@@ -179,13 +179,13 @@ Monica Thomson matches across three data sources: Loyalty, Online, and POS. With
 
 ## Configure customer ID generation
 
-Define how to generate customer ID values, the unique customer profile identifiers. The unify fields step in the data unification process generates the unique customer profile identifier. The identifier is the *CustomerId* in the *Customer* table that results from the data unification process.
+Define how to generate customer ID values, the unique customer profile identifiers. The unify fields step in the data unification process generates the unique customer profile identifier. The identifier is the [*CustomerId*](data-unification.md#customer-id) in the *Customer* table that results from the data unification process.
 
-The *CustomerId* is based on a hash of the first value of the non-null winner primary keys. These keys come from the tables used in data unification and are influenced by the match order. So the generated customer ID can change when a primary key value changes in the primary table of the match order. The primary key value might not always represent the same customer.
+The *CustomerId* field is a unique GUID value generated for each unified customer profile. In most cases, use the default logic for generating the *CustomerId*.
 
-Configuring a stable customer ID enables you to avoid that behavior.
+In rare cases, configure a custom, stable ID that specify the columns to use as inputs for the generated *CustomerId*.
 
-1. Select the **Keys** tab.
+1. On the **Customer data** page**, select the **Keys** tab.
 
 1. Hover on the **CustomerId** row and select **Configure**.
    :::image type="content" source="media/customize-stable-id.png" alt-text="Control to customize the ID generation.":::
