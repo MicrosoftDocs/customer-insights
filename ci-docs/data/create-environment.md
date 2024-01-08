@@ -1,7 +1,7 @@
 ---
 title: "Create a new environment"
 description: Steps to create environments in Dynamics 365 Customer Insights.
-ms.date: 11/15/2023
+ms.date: 01/08/2024
 ms.reviewer: mhart
 ms.topic: how-to
 author: kishorem-ms
@@ -77,13 +77,13 @@ We recommend to [use the consolidated environment manager for Customer Insights]
 
 ### Step 3: Choose Dataverse environment
 
-Select an existing Dataverse environment that doesn't already have a Customer Insights - Data environment installed on it. Or you can choose to have a new Microsoft Dataverse environment created. [Learn more about the the required permissions](#prerequisites).
+Select an existing Dataverse environment that doesn't already have a Customer Insights - Data environment installed on it.[Learn more about the the required permissions](#prerequisites).
 
 If you chose to use your own Azure Data Lake storage in the previous step, you can [enable data sharing with Dataverse](own-data-lake-storage.md#enable-data-sharing-with-dataverse-from-your-own-azure-data-lake-storage-preview) to use it with business applications based on Dataverse or model-driven applications in Power Apps.
 
 :::image type="content" source="media/dataverse-provisioning.png" alt-text="data sharing with Microsoft Dataverse auto-enabled for new environments.":::
 
-1. Choose an existing Dataverse environment from the drop-down that you want to install Customer Insights - Data on or select **Create a new Dataverse environment** to have one created for you.
+1. Choose an existing Dataverse environment from the drop-down that you want to install Customer Insights - Data. To create a new environment, [go to the Power Platform admin center and create it](/power-platform/admin/create-environment#create-an-environment-with-a-database). Then, refresh the list of environments and select the newly created environment.
 
 1. If you're using your own Data Lake Storage account:
    1. Select **Enable data sharing** with Dataverse.
