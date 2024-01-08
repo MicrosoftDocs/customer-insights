@@ -14,7 +14,9 @@ searchScope:
   - customerInsights
 ---
 
-# Enrich customer profiles with enhanced addresses
+# Enrich customer profiles with enhanced addresses (preview)
+
+[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
@@ -95,6 +97,8 @@ We currently support enriching addresses in these countries or regions:
 1. Provide a **Name** for the enrichment and the **Output table**.
 
 1. Select **Save enrichment** after reviewing your choices.
+
+1. Select **Run** to start the enrichment process or close to return to the **Enrichments** page.
 
 ## View enrichment results
 

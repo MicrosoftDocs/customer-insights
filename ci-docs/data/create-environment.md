@@ -71,8 +71,6 @@ We recommend to [use the consolidated environment manager for Customer Insights]
    - **Customer Insights storage**: Data storage is managed automatically. It's the default option and unless there are specific requirements to store data in your own storage account, we recommend using this option.
    - **Azure Data Lake Storage Gen2**: Your own Azure Data Lake Storage account to store the data so you have full control where the data is stored. Follow the steps in [Use your own Azure Data Lake Storage account](own-data-lake-storage.md).
 
-   :::image type="content" source="media/data-storage-environment.png" alt-text="Choose the preferred option to store your data.":::
-
 1. Select **Next**.
 
 ### Step 3: Choose Dataverse environment
@@ -88,6 +86,8 @@ If you chose to use your own Azure Data Lake storage in the previous step, you c
 1. If you're using your own Data Lake Storage account:
    1. Select **Enable data sharing** with Dataverse.
    1. Enter the **Permissions identifier**. To get the permission identifier, [enable data sharing with Dataverse from your own Azure Data Lake Storage](own-data-lake-storage.md#enable-data-sharing-with-dataverse-from-your-own-azure-data-lake-storage-preview).
+
+1. Select **Next**.
 
 ### Step 4: Finalize the settings
 
