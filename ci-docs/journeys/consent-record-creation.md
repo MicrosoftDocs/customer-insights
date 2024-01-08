@@ -50,24 +50,24 @@ If we don't find a contact point consent record for the email address, then the 
 Here's a high-level view of the steps that the flow includes –
 
 > [!div class="mx-imgBorder"]
-> ![](media/.png "")
+> ![High level view of building cloud flow](media/building-cloud-flow.png "High level view of building cloud flow")
 
 1. Add action trigger “When a row is added, modified or deleted”.
 
 > [!div class="mx-imgBorder"]
-> ![](media/.png "")
+> ![Screenshot of adding an action trigger](media/add-action-trigger.png "Screenshot of adding an action trigger")
 
 2. Set change type to “Added or Modified” and Table name to “Contacts”. This action triggers the cloud flow when ever a new contact record is added, or an existing record is modified.
 
 > [!div class="mx-imgBorder"]
-> ![](media/.png "")
+> ![Screenshot of changing the attribute type for action trigger](media/changing-the-attribute-type-for-action-trigger.png "Screenshot of changing the attribute type for action trigger")
 
 > [!NOTE]
 > This example assumes that there is a single business unit in the organization and doesn’t cover the scenario for multiple business units. 
 3. Add an action to “Initialize a variable” to set the consent value that you would like the contact point consent record to have. We recommend using the donotemail and donotbulkemail field values here and only set the contact point consent to opt-in if both fields are false (false represents Allowed for Email and Bulk Email). 
 Otherwise, set the contact point consent record to opt-out.
 > [!div class="mx-imgBorder"]
-> ![](media/.png "")
+> ![Screenshot showing initializing a variable](media/add-an-action.png "Screenshot showing initializing a variable")
 
 Here's the logic that can be used for the computation –
 if(and(equals(triggerBody()?['donotemail'], false), equals(triggerBody()?['donotbulkemail'], false)),534120001,534120002)
@@ -78,25 +78,25 @@ In this case, the formula is checking if two fields in the trigger body (donotem
 534120002 is the consent status value for opt-out
 
 > [!div class="mx-imgBorder"]
-> ![](media/.png "")
+> ![Screenshot showing an example of variable initialization](media/example-of-initializing-a-variable.png "Screenshot showing an example of variable initialization")
 
 4. Add an action to “Initialize a variable” to set the GUID of the purpose for which the contact point consent record needs to be created/updated. 
 
 > [!div class="mx-imgBorder"]
-> ![](media/.png "")
+> ![Screenshot showing adding an action for initializing a variable](media/add-an-action-1.png "Screenshot showing adding an action for initializing a variable")
 
 You can find the GUID of the purpose by navigating to the Purpose. Go to the Compliance Profile and then to the Consent Purposes tab and select the Purpose. The GUID for the purpose will be present at the end of the URL.
 
 > [!div class="mx-imgBorder"]
-> ![](media/.png "")
+> ![Screenshot showing GUID of the Purpose](media/guid-of-the-purpose.png "Screenshot showing GUID of the Purpose")
 
 5. Next, add an action to “List rows” to find out if there are existing records present in the contact point consent table for the email address and the purpose combination.
 
 > [!div class="mx-imgBorder"]
-> ![](media/.png "")
+> ![Screenshot showing list of different actions to list rows](media/list-of-different-actions.png "Screenshot showing list of different actions to list rows")
 
 > [!div class="mx-imgBorder"]
-> ![](media/.png "")
+> ![Screenshot showing content point consent records](media/content-point-consent-records.png "Screenshot showing content point consent records")
 
 Here, we're looking for contact point consent records that have the same email address as that of the contact and are for the Purpose for which we want to create/update the consent record.
 
@@ -108,25 +108,28 @@ msdynmkt_contactpointtype attribute specifies the channel – Email, SMS or Cust
 > When selecting table name “Contact Point Consent” from the dropdown list, you will find 4 different records with the same name. Choose the last one.
 
 > [!div class="mx-imgBorder"]
-> ![](media/.png "")
+> ![Screenshot showing contact point table name](media/select-table-name-contact point-table-name.png "Screenshot showing contact point table name")
 
 Make sure you're using consent table “**msdynmkt_contactpointconsent4s**”. To verify the table name select “…” on top right of action and select “Peek code”.
 
 > [!div class="mx-imgBorder"]
-> ![](media/.png "")
+> ![Screenshot showing selecting peek code in the action bar](media/select-peek-code-action.png "Screenshot showing selecting peek code in the action bar")
 
 > [!div class="mx-imgBorder"]
-> ![](media/.png "")
+> ![Screenshot of peek code](media/peek-code.png "Screenshot of peek code")
 
 6. Add a “Condition” action to validate if the consent record exists or not.
 
 > [!div class="mx-imgBorder"]
-> ![](media/.png "")
+> ![Validate consent record's existence](media/check-for-consent-record.png "Validate consent record's existence")
+
+> [!div class="mx-imgBorder"]
+> ![Validate consent record's existence](media/check-for-consent-record-1.png "Validate consent record's existence")
 
 Here's the expression that you can use here by referring to the dynamic content of “value” from the List rows step –
 
 > [!div class="mx-imgBorder"]
-> ![](media/.png "")
+> ![Screenshot of dynamic content value](media/dynamic-content-value.png "Screenshot of dynamic content value")
 
 empty(outputs('List_rows')?['body/value'])
 
@@ -136,12 +139,12 @@ This condition returns true if there were no consent records were found matching
 Select action of “Add a new row”
 
 > [!div class="mx-imgBorder"]
-> ![](media/.png "")
+> ![Create contact point consent record if no records were found](media/create-contact-point-consent-record.png "Create contact point consent record if no records were found")
 
 Create the new row with the values shown below -
 
 > [!div class="mx-imgBorder"]
-> ![](media/.png "")
+> ![Add new row](media/add-new-row.png "Add new row")
 
 **Table name** – Contact Point Consents (again, remember to select msdynmkt_contactpointconsent4s here)
 **Channel** – Email
@@ -158,7 +161,7 @@ Create the new row with the values shown below -
 Here select the “value” of the “List rows” step as the output of the previous step.
 
 > [!div class="mx-imgBorder"]
-> ![](media/.png "")
+> ![Screenshot showing list rows values as output](media/list-rows-values.png "Screenshot showing list rows values as output")
 
 **Table name** – Contact Point Consents (again, remember to select msdynmkt_contactpointconsent4s here)
 **Row ID** – Select “Contact Point Consent” from dynamic content window
@@ -183,7 +186,7 @@ Therefore, your flow should create/update consent records for the purpose and th
 For creating the topic consent record, set the **Consent type** value to Topic and provide the GUID for the topic in the **Topic (Topics)** field as follows – msdynmkt_topics(GUID of the Topic)
 
 > [!div class="mx-imgBorder"]
-> ![](media/.png "")
+> ![Topic consent record creation](media/topic-consent-record-creation.png "Topic consent record creation")
 
 > [!NOTE]
 > Remaining fields are not required but fill the fields according to your use case.
