@@ -169,7 +169,7 @@ Monica Thomson matches across three data sources: Loyalty, Online, and POS. With
      > :::image type="content" source="media/merge-combine-datasource.png" alt-text="Combine group of fields screen with Group drop-down and data source highlighted.":::
    - **Group2**: The field in the next data source that corresponds to the **Name**. Repeat for each data source you include.
 
-1. Provide a **Name** for the combined group of fields, such as mailing address. This name displays on the Unify step but doesn't appear in the Customer profile.
+1. Provide a **Name** for the combined group of fields, such as mailing address. This name displays on the **Unified data view** step but doesn't appear in the Customer profile.
 
    :::image type="content" source="media/merge-combine-group-example.png" alt-text="Combine group of fields example.":::
 
