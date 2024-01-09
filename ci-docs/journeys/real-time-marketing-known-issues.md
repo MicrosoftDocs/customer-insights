@@ -1,7 +1,7 @@
 ---
 title: Known issues in Customer Insights - Journeys with mitigations
 description: Learn about known issues in Customer Insights - Journeys and how to work around them.
-ms.date: 12/12/2023
+ms.date: 01/08/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -16,6 +16,21 @@ search.audienceType:
 [!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 As we continue to work on Customer Insights - Journeys and refine the experience, we've become aware of some outstanding issues for you to bear in mind. These issues are summarized in this article.
+
+## Analytics
+
+- Analytics for a journey can take up to 6-12 hours to show up.
+- Channel/contact/lead insights: Today, there's a limit of 1,000 records when exporting interaction data to CSV in the following insights views. The limit doesn’t apply on PBI aggregated dashboards.
+    - Email, SMS, push, Custom channel delivery and interaction details
+    - Contact/lead insights
+    - Data in email, SMS, push, custom channel delivery and interaction details is presented in UTC format
+- Currently, we have faced issues with events being dropped before they can get to analytics. This can sometimes cause issues in the analytics reporting where customers are shown to be in a ‘processing’ state much after a journey has been completed. We're working on a solution to improve this.
+- In the aggregate cross-journey analytics dashboard, an extra step is needed to load the Power BI report in the Android and iPad native apps. To load the report, go to **Analytics**, then select a row, select the **Show as from** sub menu, then select **CC_Analytics_ReportingControl**.
+- Data retention is 12 months for Contact and Lead insights, goal analytics, channel analytics (including delivery and interaction details such as contacts impacted by delivery and interaction issues), and AI optimization analytics.
+- Some strings in the Power BI aggregate analytics dashboard aren’t localized.
+- In the event of an email remote bounce, the contact/lead timeline might display two "email delivered" interactions for the same message with the same time stamp despite no message being delivered to the contact/lead email address. This is because the second interaction is intended to "erase" the first one. However, this isn't currently being handled in the timeline.
+- When two contacts or leads are merged, only interactions of the primary contact or lead will be visible in contact/lead insights.
+- There might be cases where unique values (for example, unique opens and clicks) in aggregated analytics dashboards have a slight deviation when compared to operational analytics. KPIs in aggregated analytics are calculated once per day to ensure the highest possible accuracy. Operational analytics, designed for near real-time analysis, operate on demand utilizing faster calculation methods for unique values, which may be slightly less precise.
 
 ## Customer journeys
 
@@ -33,6 +48,30 @@ As we continue to work on Customer Insights - Journeys and refine the experience
 - Today, you can't delete journeys once created and made live.
 - The throughput of a journey varies depending on a few factors such as the complexity of your journey, the number of concurrent journeys that you run, the consumption patterns from other applications that you use, and the resource intensive workloads that are being carried out. Read the [Service Limits and Fair Usage policy document](fair-use-policy.md#customer-insights---journeys-real-time-journeys) Opens in new window or tab for more guidance.
 
+## Emails and content blocks
+
+- Subject – 500 characters (including text to insert dynamic/conditional content)
+- Body – 1 MB (including all dynamic/conditional content).
+- Marketers lack the ability to align elements in the email editor.
+- Marketers lack the ability to put layout inside layouts in the email editor.
+- Marketers lack the ability to create full width layout emails.
+- All content blocks, conditional content, lists, and conditions, and other personalization don't have specific limits. However, they're stored within the Email itself and therefore contribute to the size of Email and are therefore subject to Email size limit.
+- Content blocks are inserted into emails by copying. This has the following implications:
+    - The same content block inserted multiple times in the same email is a new and separate copy (and contributes to the Email size).
+    - Updating the original content block doesn't update emails that include those content blocks
+- The handlebar expression language for personalization syntax (for example, {{contact.firstname}}) isn't supported in real-time. All personalization must be defined using the UI inside the designers for Email, SMS, or Push. Workaround: Use the [Email import tool](real-time-marketing-import-email-to-real-time.md) Opens in new window or tab in real-time to copy outbound emails. The tool will automatically migrate personalization expressions.
+
+## Forms and pages
+
+- Customer Insights - Journeys forms can update only one entity (typically a Lead or Contact). Targeting a single entity makes the form configuration and maintenance easier and it allows you to build properly targeted journeys.
+- If your embedded form isn't visible on external pages, ensure that the domain allows external form hosting. Most times, this is the reason why customers aren't able to see the form on their website. You don't need to finish the domain authentication process to enable external form hosting for your domain. Learn more about [domain authentication](domain-authentication.md) Opens in new window or tab.
+- In Customer Insights - Journeys, users may encounter an issue where they can't view the form within Power Pages Studio. This particular situation arises when building a complex marketing website with multiple pages, requiring navigation and user authentication capabilities. To address this challenge, Power Pages Studio emerges as the optimal solution. In order to embed a Customer Insights - Journeys Marketing Form into a website constructed using Power Pages Studio, some modifications to the source code are necessary. Specifically, the addition of a JavaScript code snippet is essential to facilitate the seamless integration of the Marketing form. It's important to note that within Power Pages Studio, the form won't be visible during the editing process. However, once the page goes live and is accessible to the public, the form becomes visible and fully functional on the website. This capability enhances the user experience and ensures the successful implementation of RTM strategies within the marketing website.
+
+## Lead scoring and qualification
+
+- There's a limit of 25 models that can be created in Customer Insights - Journeys.
+- There's also an internal limit of 10 conditions that can be added to a model.
+
 ## Segments
 
 - A segment can be created for up to 100,000,000 contacts.
@@ -49,38 +88,5 @@ As we continue to work on Customer Insights - Journeys and refine the experience
 - When using the ‘Marketing Form Submitted’ standard trigger for your journey, care should be taken to ensure that the audience for the journey, and the form should be the same. Today, we don't display an error or warning when there's a mismatch, but the journey won't start leading to customer confusion.
 - Today, triggers also fire when a record is manually updated in Dynamics 365 Dataverse. This can cause a contact to go through the journey that is based on the trigger even if they themselves don't do anything to activate the trigger.
 - Today, for trigger based journeys that use the if/then tile, we have noticed that sometimes, customers can lose about 1% of all trigger events owing to a slight delay in our system catching them. We're working on a fix for this.
-
-## Forms and pages
-
-- Customer Insights - Journeys forms can update only one entity (typically a Lead or Contact). Targeting a single entity makes the form configuration and maintenance easier and it allows you to build properly targeted journeys.
-- If your embedded form isn't visible on external pages, ensure that the domain allows external form hosting. Most times, this is the reason why customers aren't able to see the form on their website. You don't need to finish the domain authentication process to enable external form hosting for your domain. Learn more about [domain authentication](domain-authentication.md) Opens in new window or tab.
-- In Customer Insights - Journeys, users may encounter an issue where they can't view the form within Power Pages Studio. This particular situation arises when building a complex marketing website with multiple pages, requiring navigation and user authentication capabilities. To address this challenge, Power Pages Studio emerges as the optimal solution. In order to embed a Customer Insights - Journeys Marketing Form into a website constructed using Power Pages Studio, some modifications to the source code are necessary. Specifically, the addition of a JavaScript code snippet is essential to facilitate the seamless integration of the Marketing form. It's important to note that within Power Pages Studio, the form won't be visible during the editing process. However, once the page goes live and is accessible to the public, the form becomes visible and fully functional on the website. This capability enhances the user experience and ensures the successful implementation of RTM strategies within the marketing website.
-
-## Analytics
-
-- Analytics for a journey can take up to 6-12 hours to show up.
-- Channel/contact/lead insights: Today, there's a limit of 1,000 records when exporting interaction data to CSV in the following insights views. The limit doesn’t apply on PBI aggregated dashboards.
-    - Email, SMS, push, Custom channel delivery and interaction details
-    - Contact/lead insights
-    - Data in email, SMS, push, custom channel delivery and interaction details is presented in UTC format
-- Currently, we have faced issues with events being dropped before they can get to analytics. This can sometimes cause issues in the analytics reporting where customers are shown to be in a ‘processing’ state much after a journey has been completed. We're working on a solution to improve this.
-
-## Emails and content blocks
-
-- Subject – 500 characters (including text to insert dynamic/conditional content)
-- Body – 1 MB (including all dynamic/conditional content).
-- Marketers lack the ability to align elements in the email editor.
-- Marketers lack the ability to put layout inside layouts in the email editor.
-- Marketers lack the ability to create full width layout emails.
-- All content blocks, conditional content, lists, and conditions, and other personalization don't have specific limits. However, they're stored within the Email itself and therefore contribute to the size of Email and are therefore subject to Email size limit.
-- Content blocks are inserted into emails by copying. This has the following implications:
-    - The same content block inserted multiple times in the same email is a new and separate copy (and contributes to the Email size).
-    - Updating the original content block doesn't update emails that include those content blocks
-- The handlebar expression language for personalization syntax (for example, {{contact.firstname}}) isn't supported in real-time. All personalization must be defined using the UI inside the designers for Email, SMS, or Push. Workaround: Use the [Email import tool](real-time-marketing-import-email-to-real-time.md) Opens in new window or tab in real-time to copy outbound emails. The tool will automatically migrate personalization expressions.
-
-## Lead scoring and qualification
-
-- There's a limit of 25 models that can be created in Customer Insights - Journeys.
-- There's also an internal limit of 10 conditions that can be added to a model.
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
