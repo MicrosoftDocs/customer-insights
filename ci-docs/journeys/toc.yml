@@ -406,6 +406,8 @@
     href: real-time-marketing-developer-push.md
   - name: Receive notifications and create interactions
     href: real-time-marketing-developer-notifications.md
+  - name: Customize the Customer Insights - Journeys forms interface
+    href: developer/extend-ui.md
   - name: Reference guide for Customer Insights - Journeys interactions
     href: real-time-marketing-interactions-reference.md
   - name: Create a Customer Insights - Journeys segment using the Web API
