@@ -369,7 +369,7 @@
   items:
     - name: Integrate with Customer Insights - Journeys
       href: marketing-get-started.md
-    - name: Enrich Dynamics 365 Sales' lead summaries with a customer insight
+    - name: Enrich Sales' lead summaries
       href: lead-profile-summary.md
     - name: Integrate with other Dynamics 365 applications
       href: integrate-d365-apps.md

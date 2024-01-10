@@ -5,7 +5,7 @@ author: zacookmsft
 ms.author: zacook
 ms.reviewer: v-wendysmith
 ms.topic: conceptual
-ms.date: 01/03/2024
+ms.date: 01/10/2024
 ms.custom: bap-template
 ---
 
@@ -21,6 +21,7 @@ Leveraging unified activity data from Customer Insights - Data to add an insight
 
 ## Requirements
 
+- Both apps must be on the same Dataverse environment.
 - [Enabled Copilot consent](copilot-global-consent.md).
 - [Ingested data sources](data-sources.md).
 - [Unified customer profile](data-unification.md).
