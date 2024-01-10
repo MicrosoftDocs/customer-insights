@@ -13,9 +13,7 @@ ms.custom: bap-template
 
 [!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
-In this step of the unification process, choose and exclude columns to merge within your unified profile table. For example, if three tables had email data, you might want to keep all three separate email columns or merge them into a single email column for the unified profile. Dynamics 365 Customer Insights - Data automatically combines some columns.
-
-In this step, you can create stable and unique customer IDs and for individual customers, group related profiles into a cluster.
+In this step of the unification process, choose and exclude columns to merge within your unified profile table. For example, if three tables had email data, you might want to keep all three separate email columns or merge them into a single email column for the unified profile. Dynamics 365 Customer Insights - Data automatically combines some columns. For individual customers, you can group related profiles into a cluster.
 
 :::image type="content" source="media/m3_unify.png" alt-text="Unify customer fields page in the data unification process showing table with merged fields that define the unified customer profile.":::
 
@@ -177,25 +175,6 @@ Monica Thomson matches across three data sources: Loyalty, Online, and POS. With
 
    :::image type="content" source="media/unify-combine-group-example.png" alt-text="Unified data view page highlighting the combine group name.":::
 
-## Configure customer ID generation
-
-The CustomerId field is a unique GUID value generated for each unified customer profile. The unify fields step in the data unification process generates this unique customer profile identifier. In rare cases, the CustomerId field changes between unification runs as described in [*CustomerId*](data-unification.md#customer-id). In these cases, you can configure a custom, stable ID by specifying the columns to use as inputs for the generated CustomerId.
-
-For each input to the CustomerId generation, the first non-null TableName + field value are used. Tables are checked for non-null values in the table order defined on the **Matching rules** unification step. If the source table or input field values change, the resulting CustomerId will change.
-
-To configure a custom, stable ID, perform the following steps.
-
-1. On the **Customer data** step, select the **Keys** tab.
-
-1. Hover on the **CustomerId** row and select **Configure**.
-   :::image type="content" source="media/customize-stable-id.png" alt-text="Control to customize the ID generation.":::
-
-1. Select up to five fields that will comprise a unique customer ID and are more stable. Records that don’t match your configuration use a system-configured ID instead.
-
-   Only include fields that are either not expected to change or, when changed, a new CustomerId is appropriate. Avoid fields that might change such as phone, email, or address.
-
-1. Select **Done**.
-
 ## Group profiles into households or clusters
 
 For individual customers, you can define rules to group related profiles into a cluster. There are currently two types of clusters available – household and custom clusters. The system automatically chooses a household with predefined rules if the *Customer* table contains the semantic fields *Person.LastName* and *Location.Address*. You can also create a cluster with your own rules and conditions, similar to [match rules](data-unification-match-tables.md#define-rules-for-match-pairs).
@@ -215,6 +194,23 @@ Anyone in a shared group (same last name and address) gets a common cluster ID a
 1. Specify the rules and conditions to define your cluster.
 
 1. Select **Done**. The cluster is created when the unification process is complete. The cluster identifiers are added as new fields to the *Customer* table.
+
+## Configure customer ID generation
+
+The CustomerId field is a unique GUID value that is automatically generated for each unified customer profile. In rare circumstances where you need a custom ID, you can specify the columns to use as inputs for the generated CustomerId.
+
+1. On the **Customer data** step, select the **Keys** tab.
+
+1. Hover on the **CustomerId** row and select **Configure**.
+   :::image type="content" source="media/customize-stable-id.png" alt-text="Control to customize the ID generation.":::
+
+1. Select up to five fields that will comprise a stable, unique customer ID. Records that don’t match your configuration use a system-configured ID instead.
+
+   Only include columns that are either not expected to change such as a government-issued ID, or when changed, a new CustomerId is appropriate. Avoid columns that might change such as phone, email, or address.
+
+1. Select **Done**.
+
+For each input to the CustomerId generation, the first non-null TableName + field value are used. Tables are checked for non-null values in the table order defined on the **Matching rules** unification step. If the source table or input field values change, the resulting CustomerId will change.
 
 > [!div class="nextstepaction"]
 > [Next step: Review unification](data-unification-review.md)
