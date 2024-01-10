@@ -1,7 +1,7 @@
 ---
 title: Known issues in Customer Insights - Journeys with mitigations
 description: Learn about known issues in Customer Insights - Journeys and how to work around them.
-ms.date: 01/08/2024
+ms.date: 01/09/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -20,12 +20,7 @@ As we continue to work on Customer Insights - Journeys and refine the experience
 ## Analytics
 
 - Analytics for a journey can take up to 6-12 hours to show up.
-- Channel/contact/lead insights: Today, there's a limit of 1,000 records when exporting interaction data to CSV in the following insights views. The limit doesn’t apply on PBI aggregated dashboards.
-    - Email, SMS, push, Custom channel delivery and interaction details
-    - Contact/lead insights
-    - Data in email, SMS, push, custom channel delivery and interaction details is presented in UTC format
 - Currently, we have faced issues with events being dropped before they can get to analytics. This can sometimes cause issues in the analytics reporting where customers are shown to be in a ‘processing’ state much after a journey has been completed. We're working on a solution to improve this.
-- In the aggregate cross-journey analytics dashboard, an extra step is needed to load the Power BI report in the Android and iPad native apps. To load the report, go to **Analytics**, then select a row, select the **Show as from** sub menu, then select **CC_Analytics_ReportingControl**.
 - Data retention is 12 months for Contact and Lead insights, goal analytics, channel analytics (including delivery and interaction details such as contacts impacted by delivery and interaction issues), and AI optimization analytics.
 - Some strings in the Power BI aggregate analytics dashboard aren’t localized.
 - In the event of an email remote bounce, the contact/lead timeline might display two "email delivered" interactions for the same message with the same time stamp despite no message being delivered to the contact/lead email address. This is because the second interaction is intended to "erase" the first one. However, this isn't currently being handled in the timeline.
