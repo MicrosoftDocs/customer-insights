@@ -14,7 +14,7 @@
     href: license-setup.md
   - name: Purchase Customer Insights
     href: purchase.md
-  - name: Dynamics 365 Customer Insights FAQs
+  - name: Customer Insights FAQs
     href: ci-faq.md
   - name: Key Customer Insights - Journeys scenarios
     items:
@@ -132,6 +132,8 @@
   items:
   - name: Real-time journeys user guide
     href: real-time-marketing-user-guide.yml
+  - name: Customer Insights quickstart guide
+    href: customer-insights-quickstart-guide.md
   - name: Marketing channels
     items:
     - name: Email campaigns
@@ -278,6 +280,8 @@
         href: open-events.md
       - name: Set up an event
         href: set-up-event.md
+      - name: Set up session-level registration
+        href: real-time-journeys-event-session.md
       - name: Create an event from another event
         href: event-from-event.md
     - name: Host a Microsoft Teams webinar
@@ -318,6 +322,8 @@
       href: real-time-marketing-troubleshooting-forms.md
   - name: Lead generation and management
     items:
+    - name: Lead generation and management overview
+      href: lead-generation-overview.md
     - name: Qualify the best leads
       href: real-time-marketing-qualify-leads.md
     - name: Create sales activities from lead signals
@@ -330,6 +336,8 @@
       href: real-time-marketing-security-roles-lead-scoring.md
   - name: Analytics
     items:
+    - name: Analytics overview
+      href: analytics-overview.md
     - name: Access and interpret analytics
       href: real-time-marketing-analytics.md
     - name: How to use aggregate cross-journey analytics
@@ -398,6 +406,8 @@
     href: real-time-marketing-developer-push.md
   - name: Receive notifications and create interactions
     href: real-time-marketing-developer-notifications.md
+  - name: Customize the Customer Insights - Journeys forms interface
+    href: developer/extend-ui.md
   - name: Reference guide for Customer Insights - Journeys interactions
     href: real-time-marketing-interactions-reference.md
   - name: Create a Customer Insights - Journeys segment using the Web API
@@ -560,8 +570,14 @@
       href: responsible-ai-overview.md
     - name: Responsible AI FAQs for content ideas
       href: faqs-content-ideas.md
+    - name: Responsible AI FAQs for the segment copilot
+      href: faqs-segment-copilot.md
+    - name: Responsible AI FAQs for image smart recommendation
+      href: faqs-image-smart-recommendation.md
     - name: Responsible AI FAQs for content rewrite
       href: faqs-content-rewrite.md
+    - name: Responsible AI FAQs for the journey copilot
+      href: faqs-journey-copilot.md
 - name: Resources
   items:
   - name: Customer Insights - Journeys forum

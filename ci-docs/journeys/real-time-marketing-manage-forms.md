@@ -1,9 +1,7 @@
 ---
 title: Manage Customer Insights - Journeys forms
 description: Learn how to manage forms in Dynamics 365 Customer Insights - Journeys.
-ms.date: 10/24/2023
-ms.custom: 
-  - dyn365-marketing
+ms.date: 12/20/2023
 ms.topic: article
 author: petrjantac
 ms.author: alfergus
@@ -26,11 +24,11 @@ If your form has been already published and you need to update it, select the **
 > [!IMPORTANT]
 > If you choose to create a copy of the form, you will have to publish the newly created copy.
 
-The form is stored on a CDN where all data is cached to provide to shortest possible loading times to the visitors of your webpage. It may take up to 10 minutes before the cache is refreshed and before you can see the changes on your webpage. You can check the result of the changes in your page if you add this parameter `#d365mkt-nocache` to your webpage URL. Never share the link to your page including this parameter with your customers. The parameter bypasses the CDN cache and slows down the page loading.
+The form is stored on a CDN where all data is cached to provide the shortest possible loading times to the visitors of your webpage. It may take up to 10 minutes before the cache is refreshed and before you can see the changes on your webpage. You can check the result of the changes in your page if you add this parameter `#d365mkt-nocache` to your webpage URL. Never share the link to your page including this parameter with your customers. The parameter bypasses the CDN cache and slows down the page loading.
 
 ## Un-publish a form
 
-To un-publish a live form, select the **Stop** button. The form is removed from the CDN, so your web page visitors are no longer able to submit it. The form may be still visible due to browser cache, but it can't be submitted. The form status is changed to *Draft*.
+To un-publish a live form, select the **Stop** button. The form is removed from the CDN, so your web page visitors are no longer able to submit it. The form may be still visible due to the browser cache, but it can't be submitted. The form status is changed to *Draft*.
 
 ## Form field properties
 
@@ -45,13 +43,16 @@ Once you select a field on the canvas, you can see its properties in the right p
 - **Validation**: Configure a rule that checks the content of the field. If the validation rule isn't met, the user can't submit the form. It's important to set the correct validation for email and phone number fields.
 - **Hide field**: If enabled, the field isn't visible in the form. You can use hidden fields to store extra metadata along with the form submission.
 
+> [!NOTE]
+> Make sure that all phone number field validation is set to "Mobile Phone." This out-of-the-box validation checks if the phone number format is compatible with the phone number format requirements for contact consent point creation. The phone number must be in the international format starting with a "+" sign.
+
 ### Custom validation
 
 To create custom validation, enable the **Validation** option and select **Custom**. A pop-up dialog appears where you can enter a Regular Expression (RegExp). You can, for example, use a RegExp to check if the entered value matches a specific phone number format.
 
 ## Style your forms using Theme
 
-The Theme section can be opened by selecting brush icon in the right pane. Theme controls the style of all types of fields, buttons and text. Once you set Theme of a field, it affects all fields of the same type in your form.
+The Theme section can be opened by selecting the brush icon in the right pane. Theme controls the style of all types of fields, buttons, and text. Once you set the theme of a field, it affects all fields of the same type in your form.
 
 > [!div class="mx-imgBorder"]
 > ![Edit style of your input field using Theme.](media/real-time-marketing-form-theme.png)
@@ -59,12 +60,12 @@ The Theme section can be opened by selecting brush icon in the right pane. Theme
 ### Preview: Copilot - Forms theme assistant
 
 > [!IMPORTANT]
-> A preview feature is a feature that is not complete, but is made available before it’s officially in a release so customers can get early access and provide feedback. Preview features aren’t meant for production use and may have limited or restricted functionality.
+> A preview feature is a feature that is not complete but is made available before it’s officially in a release so customers can get early access and provide feedback. Preview features aren’t meant for production use and may have limited or restricted functionality.
 > 
 > Microsoft doesn't provide support for this preview feature. Microsoft Dynamics 365 Technical Support won’t be able to help you with issues or questions. Preview features aren’t meant for production use, especially to process personal data or other data that are subject to legal or regulatory compliance requirements.
 
 > [!IMPORTANT]
-> You must only use the theme assistant with websites that you own and operate. The theme assistant should not be used to copy third party websites.
+> You must only use the theme assistant with websites that you own and operate. The theme assistant should not be used to copy third-party websites.
 
 The theme assistant is a Copilot feature in Customer Insights - Journeys. You can use the theme assistant to fetch styles from an existing website that you own and control. To use a theme, enter the website URL and select **Fetch styles**. This process may take a few minutes. You can continue your work and return back later to check the result. Once the assistant fetches the styles from your website, it applies the styles to the theme of your form.
 
@@ -125,7 +126,7 @@ Field types and formats are defined by the attribute metadata. It isn't possible
 
 A lookup field is linked to a particular entity type, enabling you to add a drop-down list of options that were created in advance to your form. For example, you could use a lookup field called "Currency" to show a drop-down list of all currencies in your form.
 
-After adding a lookup field, or if your lookup field isn't working, ensure that the service user used has permissions to configure the entities you're using with the lookup field. The Marketing Services User Extensible role used by the form editor needs to have read access to the entity used in lookup field. You also have to enable **Make lookup data publicly viewable** in the lookup properties. All values within the lookup are available to anyone that sees the form. Ensure that sensitive data isn't exposed to the public. More information: [Adding lookup fields](marketing-fields.md#adding-lookup-fields-and-troubleshooting).
+After adding a lookup field, or if your lookup field isn't working, ensure that the service user used has permissions to configure the entities you're using with the lookup field. The Marketing Services User Extensible role used by the form editor needs to have read access to the entity used in the lookup field. You also have to enable **Make lookup data publicly viewable** in the lookup properties. All values within the lookup are available to anyone who sees the form. Ensure that sensitive data isn't exposed to the public. More information: [Adding lookup fields](marketing-fields.md#adding-lookup-fields-and-troubleshooting).
 
 ## Form validation
 
@@ -169,7 +170,7 @@ You can add custom JavaScript code to the `<head>` section of the HTML source co
 
 You can apply the EventListeners to trigger actions based on events like `buttonClicked` instead of adding the reference to the JavaScript function directly on the HTML code of the button. See the following examples.
 
-#### Example 1: Update value of form field using values of other form fields
+#### Example 1: Update the value of the form field using values of other form fields
 
 In this example, a script is created that combines the first name and last name field values into the full name.
 
@@ -193,10 +194,10 @@ In this example, a script is created that combines the first name and last name 
 [UTM sources](real-time-marketing-utm.md) provide important information on where your new leads are coming from. This example script extracts the UTM source parameter from a URL and populates it into the value of a hidden field.
 
 1. Create a new custom attribute of your lead entity called "UTM source" with the logical name `utmsource`.
-1. Create a new form with lead as the target audience. You can see the custom attribute "UTM source" in the list of fields.
+1. Create a new form with "lead" as the target audience. You can see the custom attribute "UTM source" in the list of fields.
 1. Add the UTM source field to the canvas and set it as hidden in the field properties.
 1. Open the HTML editor.
-1. Put the following script in the header section. Make sure your put the correct field ID into the code.
+1. Put the following script in the header section. Make sure you put the correct field ID into the code.
 
 ```js
 <script>
@@ -214,7 +215,7 @@ In this example, a script is created that combines the first name and last name 
 
 You can reuse this example to enrich your leads with more UTM parameters like utm_campaign, utm_medium, utm_term, utm_content.
 
-## Integrate a custom captcha into form
+## Integrate a custom captcha into the form
 
 You can [integrate custom captcha](real-time-marketing-form-custom-captcha.md) bot protection services like [Google reCAPTCHA](https://www.google.com/recaptcha/about/) into your form.
 
