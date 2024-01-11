@@ -21,6 +21,7 @@ Select a data source to view available actions.
 
 - [**Edit**](data-sources.md) the data source to change its properties. You can't edit a single CSV data source that was used to automatically generate insights.
 - [**Refresh**](#refresh-data-sources) the data source to include the latest data.
+- **Edit refresh settings** is for Power Query data sources only
 - [**Enrich**](data-sources-enrichment.md) the data source before unification.
 - **Delete** the data source. A data source can be deleted only if the data is not used in any processing such as unification, insights, activations, or exports.
 
