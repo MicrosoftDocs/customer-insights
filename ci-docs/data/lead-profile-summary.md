@@ -5,7 +5,7 @@ author: zacookmsft
 ms.author: zacook
 ms.reviewer: v-wendysmith
 ms.topic: conceptual
-ms.date: 01/10/2024
+ms.date: 01/15/2024
 ms.custom: bap-template
 ---
 
@@ -17,11 +17,11 @@ Dynamics 365 Sales users can enrich their lead summary with an insight from Cust
 - Customer's behavior: The cadence of their activities such as time intervals between appointments.
 - Customer's interest: How likely they're to do something such as book an appointment or purchase a specific type of product, or churn if they haven't made a recent transaction.
 
-Leveraging unified activity data from Customer Insights - Data to add an insight to the [lead summary in Dynamics 365 Sales](/dynamics365/sales/use-sales-copilot#enrich-leads-with-related-information) helps sellers understand more about their lead, without leaving their workflow. Sellers can spend less time manually parsing through disparate data sources to find and synthesize information about their leads, and more time having effective conversations with them.
+Leveraging unified activity data from Customer Insights - Data to add an insight to the [lead summary in Dynamics 365 Sales](/dynamics365/sales/copilot-get-information#enrich-leads-with-related-information) helps sellers understand more about their lead, without leaving their workflow. Sellers can spend less time manually parsing through disparate data sources to find and synthesize information about their leads, and more time having effective conversations with them.
 
 ## Requirements
 
-- Both apps must be on the same Dataverse environment.
+- Both apps are on the same Dataverse environment.
 - [Enabled Copilot consent](copilot-global-consent.md).
 - [Ingested data sources](data-sources.md).
 - [Unified customer profile](data-unification.md).
