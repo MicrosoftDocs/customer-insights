@@ -1,7 +1,7 @@
 ---
 title: "Unify customer columns for data unification"
 description: "Merge columns to create unified customer profiles."
-ms.date: 01/09/2024
+ms.date: 01/11/2024
 ms.topic: how-to
 author: v-wendysmith
 ms.author: sstabbert
@@ -197,7 +197,7 @@ Anyone in a shared group (same last name and address) gets a common cluster ID a
 
 ## Configure customer ID generation
 
-The CustomerId field is a unique GUID value that is automatically generated for each unified customer profile. In rare circumstances where you need a custom ID, you can specify the columns to use as inputs for the generated CustomerId.
+The [CustomerId](data-unification.md#customer-id) field is a unique GUID value that is automatically generated for each unified customer profile. We recommend using this default logic. However, in rare circumstances you can specify the fields to use as inputs to generate the  CustomerId.
 
 1. On the **Customer data** step, select the **Keys** tab.
 
