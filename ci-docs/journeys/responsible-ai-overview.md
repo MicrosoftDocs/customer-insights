@@ -23,3 +23,6 @@ search.audienceType:
 
 - [Responsible AI FAQs for content ideas](faqs-content-ideas.md)
 - [Responsible AI FAQs for content rewrite](faqs-content-rewrite.md)
+- [Responsible AI FAQs for content rewrite](faqs-image-smart-recommendation.md)
+- [Responsible AI FAQs for content rewrite](faqs-journey-copilot.md)
+- [Responsible AI FAQs for content rewrite](faqs-segment-copilot.md)
