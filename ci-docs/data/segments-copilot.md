@@ -36,8 +36,6 @@ Copilot provides personalized, suggested prompts based on data in your environme
 
    :::image type="content" source="media/segment-copilot-result.png" alt-text="Screenshot of a segment rule created by Copilot in Customer Insights - Data.":::
 
-1. You can continue to use copilot to replace the rule, add it to the current rule, or create a new one.
-
 1. To create the segment:
 
    1. Select **Edit details** next to Untitled segment. Provide a name for your segment and update the suggested **Output table name** for the segment. Optionally, add a description and [tags](work-with-tags-columns.md#manage-tags) to the segment.
