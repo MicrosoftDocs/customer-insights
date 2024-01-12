@@ -1,7 +1,7 @@
 ---
 title: FAQ for dialog with data (preview)
 description: This FAQ provides information about the AI technology used in dialog with data (preview). It provides key considerations and details about how AI is used, how it was tested and evaluated, and any specific limitations.
-ms.date: 11/02/2023
+ms.date: 01/12/2024
 ms.custom: 
   - responsible-ai-faqs
 ms.topic: article

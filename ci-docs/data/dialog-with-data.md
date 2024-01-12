@@ -1,7 +1,7 @@
 ---
 title: Have a dialog with data using Copilot in Customer Insights - Data (preview)
 description: Learn how to get more insights from your data by asking natural-language questions with Copilot in Dynamics 365 Customer Insights - Data. 
-ms.date: 11/02/2023
+ms.date: 01/12/2024
 ms.topic: how-to
 author: radsay01
 ms.author: rsayyaparaju
