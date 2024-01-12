@@ -1,7 +1,7 @@
 ---
 title: Prepare for analytic reporting with Power BI
-description: Describes how to set up data sources in Dynamics 365 Customer Insights - Journeys to make them available to Power BI, and how to download and connect a Power BI template to them.
-ms.date: 09/08/2023
+description: Describes how to set up data sources in outbound marketing to make them available to Power BI, and how to download and connect a Power BI template to them.
+ms.date: 10/26/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -18,7 +18,7 @@ search.audienceType:
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
 
-Dynamics 365 Customer Insights - Journeys provides a wide selection of built-in analytics throughout the application. But you can also create your own custom analytics and reports from your Customer Insights - Journeys data by using Power BI. We provide endpoints that you can use to connect Power BI to Customer Insights - Journeys, plus a downloadable Power BI template that you can open in Power BI Desktop, connect to your Dynamics 365 data sources, and then customize as needed. When you're done setting it up, you can publish and share your Power BI report using the standard Power BI online tools.
+Outbound marketing provides a wide selection of built-in analytics throughout the application. But you can also create your own custom analytics and reports from your Customer Insights - Journeys data by using Power BI. We provide endpoints that you can use to connect Power BI to Customer Insights - Journeys, plus a downloadable Power BI template that you can open in Power BI Desktop, connect to your Dynamics 365 data sources, and then customize as needed. When you're done setting it up, you can publish and share your Power BI report using the standard Power BI online tools.
 
 <a name="data-sources"></a>
 
@@ -58,7 +58,7 @@ for a quick overview of all the data that is available for your marketing analyt
 > Here are some considerations related to configuring the Azure Storage Account firewall (limited public network access) when exporting analytics data:
 >
 > 1. If you *do not* need to limit public network access to the Storage Account ([Configure Azure Storage firewalls and virtual networks](/azure/storage/common/storage-network-security?tabs=azure-portal)), proceed with further configuration steps. **If you do not need to limit public network access, you can complete this guide and connect Azure Blob storage to Customer Insights - Journeys**.
-> 1. If you need to limit public network access to the Storage Account&mdash;for example, if you want to limit access to selected virtual networks and IP addresses only&mdash;**you must [contact our customer support team](https://dynamics.microsoft.com/contact-us/) to assist you with the Azure Storage Account firewall configuration**. This is a complicated scenario and support team assistance is required based on the Storage Account location and service instance data. In the meantime, it is possible to continue with remaining steps, but the feature will only work once the firewall is properly configured.
+> 1. If you need to limit public network access to the Storage Account&mdash;for example, if you want to limit access to selected virtual networks and IP addresses only&mdash;**you must [contact our customer support team](https://dynamics.microsoft.com/contact-us/) to assist you with the Azure Storage Account firewall configuration**. This is a complicated scenario and support team assistance is required based on the Storage Account location and service instance data. You can continue with steps 1 through 7 below, but you can't create a new analytics configuration (steps 8 through 10) until your firewall configuration is set up properly.
 > 1. If the Storage Account is required to have public network access disabled entirely and you want to limit access to Private Link Endpoint only, **then this is not a supported scenario for this feature**. Consider using a different Storage Account with lower access restrictions.
 
 1. Sign into [portal.azure.com](https://portal.azure.com) using the same account where you're running Customer Insights - Journeys.
@@ -88,6 +88,13 @@ for a quick overview of all the data that is available for your marketing analyt
         - Write
         - Delete
         - List
+
+    The following services and resource types should be allowed to have the Power BI report work (when using shared access keys):
+
+    - **Allowed services**: Blob, File, Queue, Table
+    - **Allowed resource types**: Service, Container, Object
+
+    :::image type="content" source="media/custom-analytics-services.png" alt-text="Allowed services and resource types.":::
 
 1. Select **Create** to create the signature. The dialog refreshes to show a **URL** and **Query string**. Select the **Copy** button to copy the **URL** shown here and paste in a temporary text file so you can use it later in this procedure.
 

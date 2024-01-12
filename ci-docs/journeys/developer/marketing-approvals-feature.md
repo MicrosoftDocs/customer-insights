@@ -1,6 +1,6 @@
 ---
-title: Build an approvals feature
-description: Build an approvals feature that utilizes Dynamics 365 Customer Insights - Journeys extensibility endpoints.
+title: Build an approvals feature in outbound marketing
+description: Build an approvals feature that utilizes outbound marketing extensibility endpoints.
 ms.date: 02/03/2022
 ms.topic: how-to
 author: alfergus
@@ -9,7 +9,7 @@ search.audienceType:
   - developer
 ---
 
-# Build an approvals feature
+# Build an approvals feature in outbound marketing
 
 [!INCLUDE [consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
 

@@ -1,7 +1,7 @@
 ---
-title: Basic operations on segments using API
-description: Learn how to use the segmentation API in Dynamics 365 Customer Insights - Journeys.
-ms.date: 06/12/2019
+title: Basic operations on segments using API in outbound marketing
+description: Learn how to use the segmentation API in outbound marketing.
+ms.date: 12/22/2023
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
@@ -9,7 +9,7 @@ search.audienceType:
   - developer
 ---
 
-# Basic operations on segments using the segmentation API
+# Basic operations on segments using API in outbound marketing
 
 [!INCLUDE [consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
 
@@ -218,6 +218,8 @@ Some of the important aspects that need to be considered while performing add/re
 - Only instances of entity type **Contact** can be added/removed as members.
 - If provided contact IDs do not exist, they are ignored.
 - Add/remove member requests are processed asynchronously.
+- If using business unit scoping, adding a contact that the segment owner does not have (business unit) access to will hang the segment (make it unusable),
+so ensure that you don't add contacts from the wrong business unit in your code.
 - You can add/remove contacts by invoking the endpoint multiple times, usually in batches of up to 20.000 contacts each time.
 
 **Add segment members by providing IDs**
@@ -355,6 +357,5 @@ POST {{OrgUrl}}/api/data/v9.0/msdyncrm_ValidateSegment
     "ValidationResult": "[{\"ErrorCode\":\"SegmentDciValidator_SegmentInvalid\",\"FieldName\":\"msdyncrm_query\"}]"
 }
 ```
-
 
 [!INCLUDE [footer-include](.././includes/footer-banner.md)]

@@ -1,6 +1,6 @@
 ---
-title: Custom event portal localization
-description: Provides information about how you can extend event management web application functionality.
+title: Custom event portal localization in outbound marketing
+description: Provides information about how you can extend event management web application functionality in outbound marketing.
 ms.date: 02/06/2019
 ms.topic: how-to
 author: alfergus
@@ -9,9 +9,12 @@ search.audienceType:
   - developer
 ---
 
-# Custom event portal localization
+# Custom event portal localization in outbound marketing
 
 [!INCLUDE [consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
+
+> [!IMPORTANT]
+> This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
 
 ## Frontend part
 

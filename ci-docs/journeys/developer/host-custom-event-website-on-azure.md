@@ -1,6 +1,6 @@
 ---
-title: Hosting your custom event website on Azure
-description: Step-by-step tutorial on how to host your custom event website on Azure.
+title: Hosting your custom event website in outbound marketing on Azure
+description: Step-by-step tutorial on how to host your custom event website in outbound marketing on Azure.
 ms.date: 06/12/2019
 ms.topic: how-to
 author: alfergus
@@ -9,9 +9,12 @@ search.audienceType:
   - developer
 ---
 
-# Host your custom event website on Azure
+# Host your custom event website in outbound marketing on Azure
 
 [!INCLUDE [consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
+
+> [!IMPORTANT]
+> This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
 
 This topic walks you through the process of hosting your custom event website on **Azure**. More information [Build and host custom event website](event-management-web-application.md).
 

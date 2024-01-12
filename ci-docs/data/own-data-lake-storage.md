@@ -3,7 +3,7 @@ title: Use your own Azure Data Lake Storage Gen2 account
 author: mukeshpo
 description: Learn about the requirements to use your own Azure Data Lake Storage account in Customer Insights - Data.
 ms.author: mukeshpo
-ms.date: 09/01/2023
+ms.date: 12/20/2023
 ms.topic: how-to
 ms.collection: get-started
 ms.reviewer: mhart
@@ -21,9 +21,8 @@ Administrators in Customer Insights - Data can [create environments](create-envi
 ## Prerequisites
 
 - Azure Data Lake Storage accounts must be in the same Azure region that you selected when creating the Customer Insights - Data environment. To know the region of the environment, go to **Settings** > **System** > **About**.
-- The Data Lake Storage account must be Gen2. Azure Data Lake Gen1 storage accounts are not supported.
+- The Data Lake Storage account must be Gen2. Azure Data Lake Gen1 storage accounts aren't supported.
 - The Data Lake Storage account must have [hierarchical namespace enabled](/azure/storage/blobs/data-lake-storage-namespace).
-- A container named `customerinsights` has to exist on the storage account. Create it before you use your own Data Lake Storage in Customer Insights - Data.
 - The administrator setting up the Customer Insights - Data environment needs the Storage Blob Data Contributor or Storage Blob Data Owner role on the storage account or the `customerinsights` container. For more information on assigning permission in a storage account, see [Create a storage account](/azure/storage/common/storage-account-create?toc=%2Fazure%2Fstorage%2Fblobs%2Ftoc.json&tabs=azure-portal).
 
 ## Connect Customer Insights - Data with your storage account
@@ -50,8 +49,9 @@ Dynamics 365 Customer Insights - Data writes output data like unified profiles a
 
 ### Limitations
 
-- Only one-to-one mapping between a Dataverse organization and an Azure Data Lake Storage account. Once a Dataverse organization is connected to a storage account, it can't connect to another storage account. This limitation prevents Dataverse from populating multiple storage accounts.
-- Data sharing won't work if an Azure Private Link setup is needed to access your Azure Data Lake Storage account because it's behind a firewall. Dataverse currently doesn't support the connection to private endpoints through Private Link.
+- A single one-to-one mapping between a Dataverse organization and an Azure Data Lake Storage account is supported.
+- The target storage account can't be changed.
+- Data sharing doesn't work if an Azure Private Link setup is needed to access your Azure Data Lake Storage account because it's behind a firewall. Dataverse currently doesn't support the connection to private endpoints through Private Link.
 
 ### Set up security groups on your own Azure Data Lake Storage
 
@@ -77,7 +77,7 @@ Set up PowerShell to execute PowerShell scripts.
 
 1. Download the two PowerShell scripts you need to run from our engineer's [GitHub repo](https://github.com/trin-msft/byol).
    - `CreateSecurityGroups.ps1`: Requires tenant admin permissions.
-   - `ByolSetup.ps1`: Requires Storage Blob Data Owner permissions at the storage account/container level. This script will create the permission for you. Your role assignment can be removed manually after successfully running the script.
+   - `ByolSetup.ps1`: Requires Storage Blob Data Owner permissions at the storage account/container level. This script creates the permission for you. Your role assignment can be removed manually after successfully running the script.
 
 1. Execute `CreateSecurityGroups.ps1` in Windows PowerShell by providing the Azure subscription ID containing your Azure Data Lake Storage. Open the PowerShell script in an editor to review additional information and the implemented logic.
 

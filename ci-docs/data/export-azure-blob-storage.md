@@ -17,14 +17,15 @@ ms.author: philk
 Store data from your Dynamics 365 Customer Insights - Data in a Blob storage or use it to transfer your data to other applications.
 
 ## Prerequisites
-
-- An [Azure Blob Storage account](/azure/storage/blobs/create-data-lake-storage-account) name and account key. To find the name and location, see [Manage storage account settings in the Azure portal](/azure/storage/common/storage-account-manage).
-- An [Azure Blob Storage container](/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container).
+- An [Azure Blob Storage account with a container](/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container).
+- User who sets up the connection must have the permission to access the content of the container. For example, a [Blob Storage Contributor](/azure/role-based-access-control/built-in-roles#storage-blob-data-contributor) role.
+- The [Customer Insights Service Principal](connect-service-principal.md) has write permissions on the container. For example, a [Blob Storage Contributor](/azure/role-based-access-control/built-in-roles#storage-blob-data-contributor) role.
 
 ## Known limitations
 
 - For Azure Blob Storage, choose between [Standard performance and Premium performance tier](/azure/storage/blobs/storage-blob-performance-tiers). If you choose the Premium performance tier, select the [premium block blobs as account type](/azure/storage/common/storage-account-overview#types-of-storage-accounts).
 - Enabling public access to your own storage account after [setting up an Azure Private Link](private-link.md) won't work. Private Link is only supported if you disable public access to the storage account. Remove the Private Link setup to re-enable public access.
+- This export works only for CSV formatted files.
 
 ## Set up connection to Blob Storage
 
