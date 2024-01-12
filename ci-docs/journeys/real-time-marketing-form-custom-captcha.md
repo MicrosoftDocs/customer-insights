@@ -18,7 +18,7 @@ search.audienceType:
 Customer Insights - Journeys forms allow you to use custom captcha bot protection to validate form submissions. This article gives an example of how to integrate [Google reCAPTCHA](https://www.google.com/recaptcha/about/). The flow is similar for other captcha services.
 
 > [!NOTE]
-> In the current version of the app, only one captcha implementation can be active. If you implement your own captcha provider (as outlined below), existing forms that use the out-of-the-box captcha will stop working.
+> In the current version of the app, only one captcha implementation can be active. If you implement your own captcha provider (as outlined below), existing forms that use the out-of-the-box captcha will stop working. We are assuming you're having some basic knowledge on how to write and debug [dataverse plugins](https://learn.microsoft.com/en-us/power-apps/developer/data-platform/plug-ins).
 
 The process consists of these steps:
 
