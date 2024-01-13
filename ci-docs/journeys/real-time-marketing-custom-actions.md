@@ -1,7 +1,7 @@
 ---
 title: Raise triggers from a journey to run another journey or Power Automate flow
 description: Learn how to trigger an action outside of a journey in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/22/2023
+ms.date: 12/22/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -47,7 +47,7 @@ After placing a **Custom trigger** tile on the journey canvas, select which cust
 
 ### 2. Understand the selected trigger usage
 
-After you select the custom trigger, the current usage of the custom trigger in all journeys will be displayed in **Used in:** field in the properties pane. By selecting the **Used in:** link, you’ll be able to see all journeys and corresponding states that use the same custom trigger.
+After you select the custom trigger, the current usage of the custom trigger in all journeys will be displayed in **Used in:** field in the properties pane. By selecting the **Used in:** link, you are able to see all journeys and corresponding states that use the same custom trigger.
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of viewing custom trigger usage.](media/viewing-custom-trigger-usage-step2.png "Screenshot of viewing the usage for a custom trigger")
@@ -60,7 +60,7 @@ After you select the custom trigger, the current usage of the custom trigger in 
 
 ### 3. Map attributes
 
-When a customer reaches this stage of the journey, the custom trigger activated needs to know where to get the customer information that it will carry. The **Map attributes** shown in the custom trigger side pane allow you to set/populate the trigger fields in two ways:
+When a customer reaches this stage of the journey, the custom trigger activated needs to know where to get the customer information that it carries. The **Map attributes** shown in the custom trigger side pane allow you to set/populate the trigger fields in two ways:
 
 1. **Specify a fixed value:** In the example here, you can pass the name of the source journey that's activating the custom trigger and, in turn, send the shopper to the nurture journey connected to that custom trigger. This is shown in the screenshot below.
 
@@ -108,13 +108,20 @@ To use a custom trigger with a Power Automate flow, navigate to [Power Apps Port
       > [!div class="mx-imgBorder"]
       > ![Screenshot of creating a new Power Automate Flow.](media/create-automated-flow-step8.png "Screenshot of creating a new Power Automate Flow")
 
-2. Fill in the required fields as follows:
+1. Fill in the required fields as follows:
     - Set Catalog to "Cxp"
     - Set Category to "Custom"
     - Set Table name to "(none)"
     - Set Action name to the name of the custom trigger you activated in your customer journey--in this example, the name of the custom trigger is "Send to Sales agent"
 
-3. Start adding the subsequent step to the flow. In each of these steps, you can use the data fields that came with the custom trigger. In this example, the phone number field mapped in the earlier steps will be available in all the steps of this flow.
+1. Often, you need to pass the **Contact ID** from the journey to the flow. Because the contact ID isn't exposed in the journey, you need to run the flow once for every contact in the journey.
+
+    The contact ID can be passed with `ActionInputs msdynmkt_profileid` as a value. It can also initialize a variable, as shown in the example below:
+
+    > [!div class="mx-imgBorder"]
+    > ![Screenshot of creating a Power Automate Flow using attribute contact ID.](media/automated-flow-step-using-contact-id.png "Screenshot of creating a Power Automate Flow using attribute contact ID.")
+
+1. Start adding the subsequent step to the flow. In each of these steps, you can use the data fields that came with the custom trigger. In this example, the phone number field mapped in the earlier steps will be available in all the steps of this flow.
 
       > [!div class="mx-imgBorder"]
       > ![Screenshot of adding steps to a Power Automate Flow.](media/create-automated-flow-step9.png "Screenshot of adding steps to a Power Automate Flow")

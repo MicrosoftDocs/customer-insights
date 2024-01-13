@@ -4,7 +4,7 @@ description: "Learn how to use business units with Dynamics 365 applications and
 ms.date: 09/01/2023
 ms.reviewer: mhart
 ms.service: customer-insights
-ms.topic: concept-article
+ms.topic: conceptual
 author: jodahl
 ms.author: jodahl
 ms.custom: bap-template

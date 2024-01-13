@@ -1,7 +1,7 @@
 ---
 title: Manage consent for email and text messages in Customer Insights - Journeys
 description: Learn how to manage consent for messages in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/22/2023
+ms.date: 12/14/2023
 ms.topic: reference
 author: alfergus
 ms.author: alfergus
@@ -21,13 +21,15 @@ search.audienceType:
 > [!IMPORTANT]
 > As of December 2022, consent enforcement for real-time journeys for **contacts** was changed to require opt-in for emails sent using the **restrictive** consent enforcement model. If you would like to revert to the previous behavior, you can change your consent enforcement model to **non-restrictive**. Alternatively, if you have previously captured consent on **contact** records in outbound marketing, you can **load consent** to populate the contact-point consent records used to enforce consent in Customer Insights - Journeys. Learn more: [Migrate consent records to Customer Insights - Journeys](real-time-marketing-migrate-consent.md)
 
-> [!TIP]
-> Customer Insights - Journeys will check the **Allow email** and **Allow bulk email** fields of **contact** records to determine if email is allowed to be sent to the contact's email address. Both fields must be set to allow for an email with a commercial purpose type to be sent to a contact. Only the **Allow email** field must be set to allow emails to be sent with a transactional purpose type selected. These checks are done in addition to the Customer Insights - Journeys contact-point consent opt-in/opt-out checks for emails sent by journeys. These checks are not performed for other entity types (for example, leads or Customer Insights - Data profiles).
-
 > [!IMPORTANT]
-> While Customer Insights - Journeys checks the **DoNotEmail** and **DoNotBulkEmail** fields on the contact entity, updates made to consent from messages will not update the **DoNotEmail** and **DoNotBulkEmail** fields on the contact. Updates from messages will only update the contact-point consent records for the email address. This means that outbound marketing messages will not be affected by changes made to consent records based on messages sent by Customer Insights - Journeys.
+> Real-time journeys may check a contact's `DoNotEmail`, `DoNotBulkEmail`, and `DoNotTrack` fields to match outbound marketing's consent enforcement behavior and aid in the transition from outbound marketing to real-time journeys. To learn more, visit [Manage user compliance settings in Customer Insights - Journeys](real-time-marketing-compliance-settings.md)
 
-Whether consent is checked before sending emails and text messages depends on the consent model that you select for the **Purpose** in a specific **Compliance Profile**. Learn more:[Manage user compliance settings in Customer Insights - Journeys](real-time-marketing-compliance-settings.md)
+> [!CAUTION]
+> In July 2023 Customer Insights - Journeys introduced new Dataverse tables to support business units and multi-brand consent compliance profiles. All Customer Insights - Journeys customers have been migrated to the new tables. Customers who have custom workflows (such as Power Automate Flows) that read or write **msdynmkt_contactpointconsent2** or **msdynmkt_contactpointconsent3** consent tables need to take action to ensure they do not lose functionality.
+>
+> If your custom workflows *read* from the **msdynmkt_contactpointconsent2** or **msdynmkt_contactpointconsent3** consent tables, you must update custom workflows to read from the latest **msdynmkt_contactpointconsent4** table to ensure continued functionality.
+>
+> If your custom workflows *write* to the **msdynmkt_contactpointconsent2** or **msdynmkt_contactpointconsent3** consent tables, any writes to these tables automatically have data synced to the **msdynmkt_contactpointconsent4** table after a delay (potentially 24 hours or longer). The data sync will continue until **June 1, 2024**. After that date, you'll need to have moved all workflows that write contact point consent records to target the **msdynmkt_contactpointconsent4** table.
 
 ## How consent is respected for emails
 
@@ -36,7 +38,7 @@ When creating a new email message, you choose a **Compliance Profile**, a **Purp
 > [!div class="mx-imgBorder"]
 > ![Compliance profile and purpose screenshot.](media/real-time-marketing-email-compliance-settings.png " Compliance profile and purpose screenshot ")
 
-An email message is only sent if it passes the consent checks configured by the **Purpose** and (optional) **Topic**. The decision to send or block sending a message is done right before sending the message. This ensures that the app never mistakenly sends a message to someone who has opted out, even if they're mistakenly included in a journey segment. The enforcement rules for consent are governed by the **Enforcement model** setting on the purpose. If the purpose has a "Restrictive" enforcement model, the email is sent only if the email address has explicitly opted into receiving this message. If the purpose has a "Non-restrictive" enforcement model, the email is sent as long as the email address hasn't opted out. The "Disabled" enforcement model disables consent checks on the email address and lets all messages be delivered. The default "Commercial" purposes have a "Non-restrictive" enforcement model. The default "Transactional" purpose has a "Disabled" enforcement model. The enforcement models of the purposes can be changed in the compliance profile.
+An email message is only sent if it passes the consent checks configured by the **Purpose** and (optional) **Topic**. The decision to send or block sending a message is made right before sending the message. This ensures that the app never mistakenly sends a message to someone who has opted out, even if they're mistakenly included in a journey segment. The enforcement rules for consent are governed by the **Enforcement model** setting on the purpose. If the purpose has a "Restrictive" enforcement model, the email is sent only if the email address explicitly opts into receiving the message. If the purpose has a "Non-restrictive" enforcement model, the email is sent as long as the email address hasn't opted out. The "Disabled" enforcement model disables consent checks on the email address and lets all messages be delivered. The default "Commercial" purposes have a "Non-restrictive" enforcement model. The default "Transactional" purpose has a "Disabled" enforcement model. The enforcement models of the purposes can be changed in the compliance profile. To learn more about the **Purpose**, **Topic**, and **Enforcement model** concepts, visit [Manage user compliance settings in Customer Insights - Journeys](real-time-marketing-compliance-settings.md)
 
 As required for commercial email, a **Company Address** placeholder and an **Preference Center** placeholder link are added to the email footer automatically. The company address reflects the value set on the **Compliance profile** and can be edited directly from the email editor if needed. The **Preference center** link leads to the preference management page configured by the **Compliance Profile**, where customers can review and change communication preferences.
 
@@ -153,7 +155,7 @@ The following diagram provides a visual representation of how consent is enforce
 </table>
 
 > [!IMPORTANT]
-> Customer Insights - Journeys checks the **Allow email** and **Allow bulk email** fields of **contact** records to determine if email is allowed to be sent to the contact's email address. Both fields must be set to allow for an email with a commercial purpose type to be sent to a contact. Only the **Allow email** field must be set to allow emails to be sent with a transactional purpose type selected. These checks are done in addition to the Customer Insights - Journeys contact-point consent opt-in/opt-out checks for emails sent by real-time journeys. These checks are not performed for other entity types (for example, leads or Customer Insights - Data profiles).
+> Customer Insights - Journeys always checks the **Allow email** and **Allow bulk email** fields in contact records to determine if email is allowed to be sent to the contact's email address. Both fields must be set to allow for an email with a commercial purpose type to be sent to a contact. Only the **Allow email** field must be set to allow emails to be sent with a transactional purpose type selected. These checks are done in addition to the Customer Insights - Journeys contact-point consent opt-in/opt-out checks for emails sent by journeys. These checks are not performed for other entity types (for example, leads or Customer Insights - Data profiles). To learn more, visit [Manage user compliance settings in Customer Insights - Journeys](real-time-marketing-compliance-settings.md)
 
 ## View consent records
 

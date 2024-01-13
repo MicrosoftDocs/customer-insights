@@ -1,7 +1,7 @@
 ---
 title: FAQ for Data prep report (preview)
 description: This FAQ provides information about the AI technology used in the data prep report (preview). It provides key considerations and details about how AI is used, how it was tested and evaluated, and any specific limitations.
-ms.date: 09/01/2023
+ms.date: 10/11/2023
 ms.custom: 
   - responsible-ai-faqs
 ms.topic: article
@@ -48,12 +48,16 @@ The performance of the data prep report is determined by the successful generati
 
 We recommend that customers adhere to the intended use for the data prep report for the Customer Insights - Data product only. Other products and services have different requirements for data quality that the report can't adequately address. We recommend that customers review the comprehensive data report and not rely solely on the data quality summary before taking action to improve their data quality.
 
+## What are the supported geographies and languages?
+
+The feature is available in the United States and supports English only.
+
 ## What operational factors and settings allow for effective and responsible use of the feature?
 
 The data prep report monitors reliability and performance. It doesn't allow for any user input and relies solely on aggregated data quality content created by evaluating customers’ data. There's no ability to use or generate content that could lead to harm. Opt in consent to the data prep report is provided in the **Settings** page and managed by the Admin role for Customer Insights - Data. Consent can be revoked at any time to turn off the feature.
 
 ## See also
 
-- [Data prep report](data-prep-overview.md)
+- [Data prep report (preview)](data-prep-overview.md)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

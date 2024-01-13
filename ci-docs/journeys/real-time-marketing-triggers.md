@@ -1,7 +1,7 @@
 ---
 title: Customer Insights - Journeys triggers 
 description: Learn about triggers in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/23/2023
+ms.date: 12/14/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -38,7 +38,7 @@ For more information including important notes about security for custom trigger
 
 ### Interaction triggers
 
-Interaction triggers represent customer interactions with journey elements such as email, text message, and push channels. Interaction triggers can’t start or stop journeys; they're used within a journey and represent a logical continuation of a preceding step. For example, when a journey sends an email message, a set of triggers such as *Email delivered*, *Email bounced*, or *Email opened* becomes available to journey authors, allowing them to make decisions about possible next steps.
+Interaction triggers represent customer interactions with journey elements such as email, text message, and push channels. Interaction triggers, today, can't start or stop journeys; some of them are used within the journey and represent a logical continuation of a preceding step. For example, when a journey sends an email message, a set of triggers such as *Email Link Clicked* or *Email Opened* becomes available to journey authors, allowing them to make decisions about possible next steps.
 
 ### Business triggers
 
@@ -51,10 +51,10 @@ Business triggers represent changes in Dynamics 365 applications such as Sales o
 - *Lead created*
 - *Incident created*
 - *Opportunity created*
-- *Customer Insights - Journeys event check-in created*
-- *Customer Insights - Journeys event registration created*
-- *Customer Insights - Journeys event registration canceled*
-- *Customer Insights - Journeys form submitted*
+- *Marketing event check-in created*
+- *Marketing event registration created*
+- *Marketing event registration canceled*
+- *Marketing form submitted*
 
 You can also create your own triggers based on any Dataverse record change. Learn more: [Trigger a journey based on a Dataverse record change](real-time-marketing-dataverse-trigger.md).
 

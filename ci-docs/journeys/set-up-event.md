@@ -1,7 +1,7 @@
 ---
 title: Set up an event
 description: How to plan an event, register basic info, set up your team, manage sessions and speakers, set the event schedule, issue passes,  and manage venues in Dynamics 365 Customer Insights - Journeys.
-ms.date: 09/22/2023
+ms.date: 01/03/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -24,11 +24,6 @@ Creating an event record is the first step when setting up your event in Custome
 Though Customer Insights - Journeys offers many views into other record types, you'll probably do most of your work directly in the relevant event record. When working in the event record, you'll be able to view and create most types of related records and everything that you do will automatically be related to that event.
 
 You can see a list of all your event records by [opening the **Events** work area](open-events.md) and going to **Events** > **Event** > **Events**. From here you can use the standard list-view controls to search, sort, and filter the list to find and open an existing event, or to create a new event record.
-
-If you often run similar events, you can save time by creating one or more [event templates](event-templates.md) and then choosing an appropriate template when you first create a new event.
-
-> [!div class="mx-imgBorder"]
-> ![Example of an event record.](media/event-record2.png)
 
 As with other forms in Dynamics 365, the event form provides a summary of its most important settings at the top, where you'll also find the business workflow timeline, which helps organize your work at each stage of the event-management process. A standard business workflow for events is provided out of the box, but you can customize it to match the process in place at your organization.
 
@@ -69,6 +64,9 @@ The **Agenda** tab includes details about the schedule of sessions happening dur
 - **Sponsors**: Companies who are [sponsoring the event](manage-event-sponsorships.md).
 
 ### The Website and form tab
+
+> [!NOTE]
+> The event portal landing page (event website) isn't currently available in real-time journeys. However, [marketing forms](real-time-marketing-form-create.md) for registration can serve as a viable alternative to showcase event details and facilitate the registration process.
 
 The Website and form tab provides options to set registration parameters. First, you can decide where do you want attendees to register for your event:
 - On a standalone registration page:

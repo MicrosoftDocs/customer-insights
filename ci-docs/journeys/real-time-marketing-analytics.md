@@ -1,7 +1,7 @@
 ---
 title: Access and interpret analytics
 description: How to access and interpret Customer Insights - Journeys analytics in Dynamics 365 Customer Insights - Journeys.
-ms.date: 09/26/2023
+ms.date: 12/18/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -78,8 +78,20 @@ Select any journey component to view near real-time operational analytics in the
 
     :::image type="content" source="media/real-time-marketing-ai-optimization.png" alt-text="AI optimization screenshot." lightbox="media/real-time-marketing-ai-optimization.png":::
 
+## Email insights
+Email insights provide a deep dive into how your audience interacts with your emails over time and track the trajectory of delivery rates, open rates, and click-through rates with precision. Beyond delivery and engagement trends, you can evaluate essential email KPIs and access comprehensive delivery and interaction details. To view email insights, go to **Real-time journeys** > **Email** > **Insights tab**.
+
+The following insights categories are provided:
+
+- **Delivery KPIs**: Gain insights into the delivery rate, number of blocks and delivery failures for the selected message.
+- **Engagement KPIs**: Evaluate the open rate, click rate, click-to-open rate, number of messages marked as spam and the count of unsubscriptions related to the selected message. 
+- **Delivery trend** and **Delivery funnel**: Explore the trends and funnel of email sent and delivered interactions, along with unique opens and unique clicks specific to the selected email.
+- **Engagement trend**: Examine the trends for total opens and clicks, providing a comprehensive understanding of the level of engagement associated with the selected email.
+
+:::image type="content" source="media/email-insights.png" alt-text="Email insights analytics dashboard." lightbox="media/email-insights.png":::
+
 > [!NOTE]
-> Data retention is 12 months for contact insights, lead insights, goal analytics, channel analytics (including delivery and interaction details), and AI optimization analytics.
+> Data retention is 12 months for contact insights, lead insights, goal analytics, channel analytics (including email insights and delivery and interaction details), and AI optimization analytics.
 
 ## Aggregate cross-journey analytics
 
@@ -102,7 +114,8 @@ Use the aggregate channel analytics dashboard to measure campaign effectiveness 
 Learn more: [How to use aggregate channel analytics](real-time-marketing-channel-analytics.md).
 
 > [!NOTE]
-> There is no retention policy for Customer Insights - Journeys interactions in aggregate cross-journey analytics and Aggregate channel analytics. Dataverse entities are limited to a two-year retention policy after their initial creation date. Keep in mind that the two-year Dataverse entity retention policy might impact analytics views associated with interaction data from Dataverse entities.
+> There is no data retention policy for Customer Insights - Journeys interactions in aggregate cross-journey analytics and aggregate channel analytics. Dataverse entities are limited to a two-year retention policy after their initial creation date. Keep in mind that the two-year Dataverse entity retention policy might impact analytics views associated with interaction data from Dataverse entities.
+> The aggregate cross-journey analytics, channel analytics, and marketing effectiveness analytics dashboards are not supported on mobile devices.
 
 ## Marketing effectiveness analytics
 
