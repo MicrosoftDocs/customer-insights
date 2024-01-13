@@ -566,22 +566,20 @@
   items: 
   - name: Give consent to use Copilot in Customer Insights - Journeys
     href: copilot-consent-journeys.md
-- name: Responsible AI transparency notes
+- name: Responsible AI FAQs
   items:
-  - name: Responsible AI FAQs
-    items:
-    - name: Overview
-      href: responsible-ai-overview.md
-    - name: Responsible AI FAQs for content ideas
-      href: faqs-content-ideas.md
-    - name: Responsible AI FAQs for the segment copilot
-      href: faqs-segment-copilot.md
-    - name: Responsible AI FAQs for image smart recommendation
-      href: faqs-image-smart-recommendation.md
-    - name: Responsible AI FAQs for content rewrite
-      href: faqs-content-rewrite.md
-    - name: Responsible AI FAQs for the journey copilot
-      href: faqs-journey-copilot.md
+  - name: Overview
+    href: responsible-ai-overview.md
+  - name: Responsible AI FAQs for content ideas
+    href: faqs-content-ideas.md
+  - name: Responsible AI FAQs for the segment copilot
+    href: faqs-segment-copilot.md
+  - name: Responsible AI FAQs for image smart recommendation
+    href: faqs-image-smart-recommendation.md
+  - name: Responsible AI FAQs for content rewrite
+    href: faqs-content-rewrite.md
+  - name: Responsible AI FAQs for the journey copilot
+    href: faqs-journey-copilot.md
 - name: Resources
   items:
   - name: Customer Insights - Journeys forum
