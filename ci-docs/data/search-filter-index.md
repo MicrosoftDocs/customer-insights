@@ -11,8 +11,6 @@ ms.custom: bap-template
 
 # Manage the search & filter index for customer profiles
 
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
-
 The result of unifying your customer data is a *Customer* table that provides a unified view into your total customer base. For users to quickly [find information on a specific customer or group of customers](customer-profiles.md), an admin must configure the **Search** and **Filter** capabilities for the **Customers** page.
 
    :::image type="content" source="media/search-filter.png" alt-text="Search filter":::

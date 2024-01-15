@@ -11,8 +11,6 @@ ms.custom: bap-template
 
 # Predict subscription churn
 
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
-
 Predict whether a customer is at risk for no longer using your company’s subscription products or periodic services. Subscription data includes active and inactive subscriptions for each customer so there can be multiple entries per customer ID. To find the churn risk for customers not making scheduled purchases, use the [Transaction churn model.](predict-transactional-churn.md)
 
 You must have business knowledge to understand what churn means for your business. For instance, a business with annual events can define their churn measured in years, while a business that caters to weekly sales may measure churn in months. We support time-based churn definitions, meaning a customer is considered to have churned a period of time after their subscription has ended.

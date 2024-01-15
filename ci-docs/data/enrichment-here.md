@@ -12,8 +12,6 @@ ms.author: jodahl
 
 [!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
-
 HERE Technologies is a location platform company that provides location-centric data and services. HERE Technologies' data enrichment services improve the precision of location information about your customers. It provides address normalization, latitude and longitude extraction, and more.
 
 ## Prerequisites

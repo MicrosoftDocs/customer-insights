@@ -11,8 +11,6 @@ ms.custom: bap-template
 
 # Create a new environment
 
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
-
 After [your organization purchased a license for Dynamics 365 Customer Insights](paid-license.md), the global administrator of the Microsoft 365 tenant receives an email that invites them to create an environment.
 
 After the first environment is created, the global administrator of the Microsoft 365 tenant can [add users from their organization as administrators](permissions.md). These administrators can then manage users and environments.

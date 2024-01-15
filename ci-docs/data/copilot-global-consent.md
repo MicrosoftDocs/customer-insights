@@ -11,8 +11,6 @@ ms.custom: bap-template
 
 # Give consent to use Copilot in Customer Insights - Data
 
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
-
 There are three levels of consent to use generative AI Copilot features in Customer Insights - Data. Consent is global for all users and all Copilot features in Customer Insights - Data.
 
 - **Enable Copilot features powered by Azure OpenAI**: **On** indicates you agree to enable all Copilot features and acknowledge that AI-generated content should be reviewed. Default is **On**.

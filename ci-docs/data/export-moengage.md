@@ -12,8 +12,6 @@ ms.author: philk
 
 [!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
-
 Export segments of unified customer profiles to MoEngage and use them for email marketing in MoEngage.
 
 ## Prerequisites for a connection
