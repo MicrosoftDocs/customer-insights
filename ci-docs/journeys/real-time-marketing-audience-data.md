@@ -38,6 +38,6 @@ You can change the default recipient or add more recipient fields. You can selec
 A default value is displayed in the *Send-to* field, but you can select any other recipient field from the dropdown menu.
 
 > [!Important]
-> For contacts, only one recipient email address can be used. This is done to remove consent ambiguity. In outbound marketing, a contact record may store several email addresses with one consent for the entire contact. But in Customer Insights - Journeys, consent is given per each email address. Learn more in [Compliance settings](real-time-marketing-compliance-settings.md).
+> Starting from the February 2024 release, it will be possible to configure multiple email addresses for a contact's email channel. However, for any release version before February 2024, you will only be able to select a single email address for a contact's email channel configuration.
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
