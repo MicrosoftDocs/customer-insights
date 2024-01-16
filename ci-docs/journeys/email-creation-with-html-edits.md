@@ -1,5 +1,5 @@
 ---
-title: "Preview: Using Enhanced HTML Controls and Importing HTML Code Snippets in Email Editor"
+title: "Preview: Using enhanced HTML controls and importing HTML code snippets in email editor"
 description: Learn how to use enhanced HTML controls and importing HTML code snippets in Dynamics 365 Customer Insights - Journeys.
 ms.date: 01/16/2024
 ms.topic: article
