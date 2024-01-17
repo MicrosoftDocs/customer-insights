@@ -34,7 +34,9 @@ Ingest data into Dynamics 365 Customer Insights - Data using your Azure Data Lak
   - Storage Blob Data Owner
   - Storage Blob Data Contributor
 
-- The user that sets up the data source connection needs at least Storage Blob Data Contributor permissions on the storage account.
+- When connecting to your Azure storage using the *Azure subscription* option, the user that sets up the data source connection needs at least the Storage Blob Data Contributor permissions on the storage account.
+
+- When connecting to your Azure storage using the *Azure resource* option, the user that sets up the data source connection needs at least the permission for the **Microsoft.Storage/storageAccounts/read** action on the storage account. An [Azure built-in role](/azure/role-based-access-control/built-in-roles) that includes this action is the **Reader** role. To limit access to just the necessary action, [create an Azure custom role](/azure/role-based-access-control/custom-roles) that includes only this action.
 
 - Data in your Data Lake Storage should follow the Common Data Model standard for storage of your data and have the common data model manifest to represent the schema of the data files (*.csv or *.parquet). The manifest must provide the details of the tables such as table columns and data types, and the data file location and file type. For more information, see [The Common Data Model manifest](/common-data-model/sdk/manifest). If the manifest is not present, Admin users with Storage Blob Data Owner or Storage Blob Data Contributor access can define the schema when ingesting the data.
 
@@ -63,10 +65,12 @@ For optimal performance, the size of a partition should be 1 GB or less and the 
    - **Azure subscription**: Select the **Subscription** and then the **Resource group** and **Storage account**. Optionally, if you want to ingest data from a storage account through an Azure Private Link, select **Enable Private Link**. For more information, see [Private Links](private-link.md).
   
    > [!NOTE]
-   > You need one of the following roles either to the container or the storage account to create the data source:
+   > You need one of the following roles to the container to create the data source:
    >
    >  - Storage Blob Data Reader is sufficient to read from a storage account and ingest the data to Customer Insights - Data.
    >  - Storage Blob Data Contributor or Owner is required if you want to edit the manifest files directly in Customer Insights - Data.  
+   >
+   > Having the role on the storage account will provide the same role on all of its containers.
   
 1. Choose the name of the **Container** that contains the data and schema (model.json or manifest.json file) to import data from, and select **Next**.
    > [!NOTE]
