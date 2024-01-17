@@ -65,10 +65,12 @@ For optimal performance, the size of a partition should be 1 GB or less and the 
    - **Azure subscription**: Select the **Subscription** and then the **Resource group** and **Storage account**. Optionally, if you want to ingest data from a storage account through an Azure Private Link, select **Enable Private Link**. For more information, see [Private Links](private-link.md).
   
    > [!NOTE]
-   > You need one of the following roles either to the container or the storage account to create the data source:
+   > You need one of the following roles to the container to create the data source:
    >
    >  - Storage Blob Data Reader is sufficient to read from a storage account and ingest the data to Customer Insights - Data.
    >  - Storage Blob Data Contributor or Owner is required if you want to edit the manifest files directly in Customer Insights - Data.  
+   >
+   > Having the role on the storage account will provide the same role on all of its containers.
   
 1. Choose the name of the **Container** that contains the data and schema (model.json or manifest.json file) to import data from, and select **Next**.
    > [!NOTE]
