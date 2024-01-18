@@ -1,7 +1,7 @@
 ---
 title: Connect an Azure Synapse Analytics data source (preview)
 description: Use a database in Azure Synapse as a data source in Dynamics 365 Customer Insights.
-ms.date: 09/01/2023
+ms.date: 11/21/2023
 ms.reviewer: v-wendysmith
 ms.topic: how-to
 author: mukeshpo
@@ -70,7 +70,7 @@ For more information, see [Azure Synapse overview](/azure/synapse-analytics/over
 
 1. Select the tables to ingest from the connected database and select **Next**.
 
-1. Optionally, choose the data tables to allow data profiling on.
+1. Optionally, choose the data tables to allow [data profiling](data-sources.md#data-profiling) on.
 
 1. Select **Save** to apply your selection and start the ingestion of the data from your newly created data source linked to the Lake database tables in Azure Synapse Analytics. The **Data sources** page opens showing the new data source in **Refreshing** status.
 
