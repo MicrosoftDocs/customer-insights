@@ -1,7 +1,7 @@
 ---
 title: Personalize lists of content in emails
 description: Learn how to personalize lists in Dynamics 365 Customer Insights - Journeys.
-ms.date: 09/20/2023
+ms.date: 01/17/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -15,7 +15,12 @@ search.audienceType:
 
 [!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
-Lists are a common way to organize information to improve readability. Examples include a list of sessions in an event, a list of products, or a list of service tickets. Customer Insights – Journey makes it easy to create lists and personalize those lists to include only the information that is relevant for the recipient in a way that is easy to parse and act upon.
+Lists are a common way to organize information to improve readability. Examples include a list of sessions in an event, a list of products, or a list of service tickets. Customer Insights – Journey makes it easy to create lists and personalize those lists to include only the information that is relevant for the recipient in a way that is easy to parse and act upon. 
+
+Lists, when created, must be related to one of the following:
+- **Audience (contact or lead)**: Starting from the audience record itself, select a Dataverse table across one or multiple relationships. 
+- **Triggers**: Can use any "Entity reference" input parameter as a starting point to select a table. The selected trigger must run the journey where the email is used.
+- **Other tables (needs record selection)**: Select any Dataverse table as a starting point to select a table. Additionally, you must select a specific parent record.
 
 ## Set up a list
 
