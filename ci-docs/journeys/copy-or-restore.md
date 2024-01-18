@@ -1,7 +1,7 @@
 ---
 title: Copy or restore environments
 description: How to copy a production Dynamics 365 Customer Insights environment to a sandbox environment for experiments and testing.
-ms.date: 09/15/2023
+ms.date: 01/18/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -40,7 +40,6 @@ Because Customer Insights - Journeys interacts with several special services and
 
 > [!NOTE]
 > If you are copying to a support environment, see [Copy a production environment to a support environment](copy-or-restore.md#copy-a-production-environment-to-a-support-environment) for instructions. For all other types of copies, continue reading here.
-
 
 ### Step 1: Prepare your source environment
 
