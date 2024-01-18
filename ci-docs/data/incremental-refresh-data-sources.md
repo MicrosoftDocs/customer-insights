@@ -1,7 +1,7 @@
 ---
 title: "Incremental refresh for Power Query and Data Lake Storage data sources"
 description: "Refresh new and updated data for large data sources based on Power Query or Azure Data Lake Storage data sources."
-ms.date: 09/01/2023
+ms.date: 01/18/2024
 ms.reviewer: v-wendysmith
 ms.topic: how-to
 author: mukeshpo
@@ -23,7 +23,7 @@ Incremental refresh for data sources based on Power Query (preview) or Azure Dat
 
 [!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
-Dynamics 365 Customer Insights - Data allows incremental refresh for data sources imported through Power Query that support incremental ingestion. For example, Azure SQL databases with date and time fields which indicate when data records were last updated.
+Configure any Power Query data source in Customer Insights - Data to incrementally refresh data. The data source must have a primary key column that uniquely identifies records and a datetime column that indicates when the data was last updated.
 
 [!INCLUDE [public-preview-note](includes/public-preview-note.md)]
 
@@ -35,32 +35,34 @@ Dynamics 365 Customer Insights - Data allows incremental refresh for data source
 
 1. Complete the transformation steps and select **Next**.
 
-1. In the **Set up incremental refresh** dialog box, select **Set up** to open the **Incremental refresh settings**. If you select **Skip**, the data source will refresh the entire data set.
+1. In the **Set up incremental refresh** dialog box, select **Set up** to open the **Incremental refresh settings**. If you select **Skip**, the data source refreshes the entire data set.
    > [!TIP]
    > You can also apply incremental refresh later by editing an existing data source.
 
-1. On **Incremental refresh settings**, you'll configure the incremental refresh for all tables that you selected when creating the data source.
+1. On **Incremental refresh settings**, configure the incremental refresh for all tables that you selected when creating the data source.
 
    :::image type="content" source="media/incremental-refresh-settings.png" alt-text="Configure incremental refresh settings.":::
 
 1. Select a table, and provide the following details:
 
    - **Define the primary key**: Select a primary key for the table.
-   - **Define the "last updated" field**: This field will only display attributes of type date or time. Select an attribute that indicates when the records were last updated. This attribute identifies the records that fall within the incremental refresh time frame.
+   - **Define the "last updated" field**: This field only shows attributes of type date or time. Select an attribute that indicates when the records were last updated. This attribute identifies the records that fall within the incremental refresh time frame.
    - **Check for updates every**: Specify how long you want the incremental refresh time frame to be.
 
-1. Select **Save** to complete the creation of the data source. The initial data refresh will be a full refresh. Afterwards, the incremental data refresh happens as configured in the previous step.
+1. Select **Save** to complete the creation of the data source. The initial data refresh is a full refresh. Afterwards, the incremental data refresh happens as configured in the previous step.
 
 ## Configure incremental refresh for Azure Data Lake Storage data sources
 
-Customer Insights - Data allows incremental refresh for data sources connected to Azure Data Lake Storage. To use incremental ingestion and refresh for a table, configure that table when adding the Azure Data Lake data source or later when editing the data source. The table data folder must contain the following folders:
+Microsoft recommends the Delta Lake format to obtain the best performance and results for working with large data sets. Customer Insights - Data provides a [connector that is optimized for Delta Lake formatted data](connect-delta-lake.md). Internal processes such as unification are optimized to incrementally process only the changed data, resulting in shorter processing times.
+
+To use incremental ingestion and refresh for a Data Lake table, configure that table when adding or editing the Azure Data Lake data source. The table data folder must contain the following folders:
 
 - **FullData**: Folder with data files containing initial records
 - **IncrementalData**: Folder with date/time hierarchy folders in **yyyy/mm/dd/hh** format containing the incremental updates. Year, month, day, and hour folders are expected to be four and two digits respectively. **hh** represents the UTC hour of the updates and contains the **Upserts** and **Deletes** folders. **Upserts** contains data files with updates to existing records or new records. **Deletes** contains data files with records to remove.
 
 ### Order of processing incremental data
 
-The system processes the files in the **IncrementalData** folder *after* the specified UTC hour ends. For example, if the system starts processing the incremental refresh on January 21, 2023 at 8:15 AM, all files that are in folder 2023/01/21/07 (representing data files stored from 7 AM to 8 AM) are processed. Any files in folder 2023/01/21/08 (representing the current hour where the files are still being generated) are not processed until the next run.
+The system processes the files in the **IncrementalData** folder *after* the specified UTC hour ends. For example, if the system starts processing the incremental refresh on January 21, 2023 at 8:15 AM, all files that are in folder 2023/01/21/07 (representing data files stored from 7 AM to 8 AM) are processed. Any files in folder 2023/01/21/08 (representing the current hour where the files are still being generated) aren't processed until the next run.
 
 If there are two records for a primary key, an upsert and delete, Customer Insights - Data uses the record with the latest modified date. For example, if the delete timestamp is 2023-01-21T08:00:00 and the upsert timestamp is 2023-01-21T08:30:00, it uses the upsert record. If the deletion occurred after the upsert, the system assumes the record is deleted.
 
@@ -81,7 +83,7 @@ If there are two records for a primary key, an upsert and delete, Customer Insig
 
 1. For **Last updated**, select the date timestamp attribute.
 
-1. If the **Primary key** is not selected, select the primary key. The primary key is an attribute unique to the table. For an attribute to be a valid primary key, it shouldn't include duplicate values, missing values, or null values. String, integer, and GUID data type attributes are supported as primary keys.
+1. If the **Primary key** isn't selected, select the primary key. The primary key is an attribute unique to the table. For an attribute to be a valid primary key, it shouldn't include duplicate values, missing values, or null values. String, integer, and GUID data type attributes are supported as primary keys.
 
 1. Select **Close** to save and close the pane.
 
@@ -89,7 +91,7 @@ If there are two records for a primary key, an upsert and delete, Customer Insig
 
 ## Run a one-time full refresh for Azure Data Lake data sources
 
-After [configuring an incremental refresh for Azure Data Lake data sources](#configure-the-incremental-refresh-for-azure-data-lake-data-sources), there are times when data needs to be processed with a full refresh. The full data folder set up for the incremental refresh must contain the location of the full data.
+After you [configure an incremental refresh for Azure Data Lake data sources](#configure-the-incremental-refresh-for-azure-data-lake-data-sources), there are times when data needs to be processed with a full refresh. The full data folder set up for the incremental refresh must contain the location of the full data.
 
 1. When editing the data source, navigate to the **Select tables** pane and edit the table you want to refresh.
 
@@ -101,6 +103,6 @@ After [configuring an incremental refresh for Azure Data Lake data sources](#con
 
 1. Select **Close** to save and close the pane.
 
-1. Click **Save** to apply your changes and return to the **Data sources** page. The data source is in **Refreshing** status, performing a full refresh.
+1. Select **Save** to apply your changes and return to the **Data sources** page. The data source is in **Refreshing** status, performing a full refresh.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

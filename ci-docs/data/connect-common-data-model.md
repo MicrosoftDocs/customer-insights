@@ -1,7 +1,7 @@
 ---
 title: "Connect to data in Azure Data Lake Storage"
 description: "Work with data from Azure Data Lake Storage."
-ms.date: 11/14/2023
+ms.date: 01/18/2024
 ms.topic: how-to
 author: mukeshpo
 ms.author: mukeshpo
@@ -36,14 +36,16 @@ Ingest data into Dynamics 365 Customer Insights - Data using your Azure Data Lak
 
 - The user that sets up the data source connection needs at least Storage Blob Data Contributor permissions on the storage account.
 
+- For optimal performance, the size of a partition should be 1 GB or less and the number of partition files in a folder must not exceed 1000.
+
 - Data in your Data Lake Storage should follow the Common Data Model standard for storage of your data and have the common data model manifest to represent the schema of the data files (*.csv or *.parquet). The manifest must provide the details of the tables such as table columns and data types, and the data file location and file type. For more information, see [The Common Data Model manifest](/common-data-model/sdk/manifest). If the manifest is not present, Admin users with Storage Blob Data Owner or Storage Blob Data Contributor access can define the schema when ingesting the data.
 
   > [!NOTE]
   > If any of the fields in the .parquet files have data type Int96, the data may not display on the **Tables** page. We recommend using standard data types, such as the Unix timestamp format (which represents time as the number of seconds since January 1, 1970, at midnight UTC).
 
-## Recommendations
+## Limitations
 
-For optimal performance, the size of a partition should be 1 GB or less and the number of partition files in a folder must not exceed 1000.
+- Decimal type columns are precise within 16 decimal points. Precision beyond 16 decimal points aren't supported.
 
 ## Connect to Azure Data Lake Storage
 
