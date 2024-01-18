@@ -21,8 +21,9 @@ As we continue to work on Customer Insights - Journeys and refine the experience
 
 - Analytics for a journey can take up to 6-12 hours to show up.
 - Currently, we have faced issues with events being dropped before they can get to analytics. This can sometimes cause issues in the analytics reporting where customers are shown to be in a ‘processing’ state much after a journey has been completed. We're working on a solution to improve this.
-- Data retention is 12 months for Contact and Lead insights, goal analytics, channel analytics (including delivery and interaction details such as contacts impacted by delivery and interaction issues), and AI optimization analytics.
-- Some strings in the Power BI aggregate analytics dashboard aren’t localized.
+- Data retention is 12 months for contact and lead insights, goal analytics, channel analytics (including email insights and delivery and interaction details such as contacts impacted by delivery and interaction issues), and AI optimization analytics.
+- Some strings in the out-of-the-box Power BI aggregated analytics dashboards aren’t localized.
+- Business units aren't supported in the out-of-the-box Power BI aggregated analytics dashboards.
 - In the event of an email remote bounce, the contact/lead timeline might display two "email delivered" interactions for the same message with the same time stamp despite no message being delivered to the contact/lead email address. This is because the second interaction is intended to "erase" the first one. However, this isn't currently being handled in the timeline.
 - When two contacts or leads are merged, only interactions of the primary contact or lead will be visible in contact/lead insights.
 - There might be cases where unique values (for example, unique opens and clicks) in aggregated analytics dashboards have a slight deviation when compared to operational analytics. KPIs in aggregated analytics are calculated once per day to ensure the highest possible accuracy. Operational analytics, designed for near real-time analysis, operate on demand utilizing faster calculation methods for unique values, which may be slightly less precise.
