@@ -1,7 +1,7 @@
 ---
 title: Integrate a custom captcha service with Customer Insights - Journeys forms 
 description: Learn how to integrate custom captcha bot protection into forms in Dynamics 365 Customer Insights - Journeys.
-ms.date: 12/21/2023
+ms.date: 01/17/2024
 ms.topic: article
 author: petrjantac
 ms.author: alfergus
@@ -18,7 +18,7 @@ search.audienceType:
 Customer Insights - Journeys forms allow you to use custom captcha bot protection to validate form submissions. This article gives an example of how to integrate [Google reCAPTCHA](https://www.google.com/recaptcha/about/). The flow is similar for other captcha services.
 
 > [!NOTE]
-> In the current version of the app, only one captcha implementation can be active. If you implement your own captcha provider (as outlined below), existing forms that use the out-of-the-box captcha will stop working. Custom captcha implementation requires at least basic knowledge on how to write and debug [dataverse plugins](https://learn.microsoft.com/en-us/power-apps/developer/data-platform/plug-ins).
+> In the current app version, only one captcha implementation can be active. If you use your own captcha provider (as outlined below), existing forms that use the out-of-the-box captcha will stop working. A custom captcha implementation requires at least basic knowledge of writing and debugging [dataverse plugins](/power-apps/developer/data-platform/plug-ins).
 
 The process consists of these steps:
 
