@@ -45,7 +45,7 @@ Ingest data into Dynamics 365 Customer Insights - Data using your Azure Data Lak
 
 ## Limitations
 
-- Decimal type columns are precise within 16 decimal points. Precision beyond 16 decimal points aren't supported.
+- Customer Insights - Data doesn't support columns of decimal type with precision greater than 16.
 
 ## Connect to Azure Data Lake Storage
 
