@@ -1,7 +1,7 @@
 ---
 title: Create a consent point record using a cloud flow
 description: Learn how to create a consent point record using a cloud flow in Dynamics 365 Customer Insights - Journeys.
-ms.date: 01/12/2024
+ms.date: 01/18/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -197,9 +197,9 @@ For creating the topic consent record, set the **Consent type** value to Topic a
 
 When following the above solution recommendation, you should also consider instrumenting cloud flow monitoring for queues and failures [reconciliation needed to resubmit the failures].
 
-More information on that can be found here – 
-[View analytics for Power Automate cloud flows - Power Platform | Microsoft Learn](analytics-flow.md)
-[Get notified about flow failures, customize columns for tables, and more! | Blog Power Automate (microsoft.com)](https://powerautomate.microsoft.com/fr-fr/blog/microsoft-forms-tables-flow-failures/)
+More information on that can be found here:
+[View analytics for Power Automate cloud flows](/power-platform/admin/analytics-flow)
+[Get notified about flow failures, customize columns for tables, and more!](https://powerautomate.microsoft.com/blog/microsoft-forms-tables-flow-failures/)
 
 •	**Synchronizing consent with a 3rd party system**
 
@@ -211,7 +211,5 @@ One way to handle this would be by using the “Reason description” field to y
 
 •	**Managing ALM for the cloud flow**
 
-If you have multiple environments (Dev, Test/QA, Production etc.) and need your cloud flow to remain consistent across the environments, you should consider creating the cloud flow in a solution. More information on how you can do that can be found here – 
-
-https://learn.microsoft.com/power-automate/create-flow-solution
+If you have multiple environments (Dev, Test/QA, Production etc.) and need your cloud flow to remain consistent across the environments, you should consider creating the cloud flow in a solution. More information on how you can do that can be found here: [Create a cloud flow in a solution](/power-automate/create-flow-solution)
 
