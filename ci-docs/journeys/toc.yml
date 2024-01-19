@@ -564,6 +564,8 @@
     href: troubleshoot-faq.md
 - name: Copilot in Customer Insights - Journeys
   items: 
+  - name: Copilot Overview in Customer Insights - Journeys
+    href: copilot-overview.md
   - name: Give consent to use Copilot in Customer Insights - Journeys
     href: copilot-consent-journeys.md
 - name: Responsible AI FAQs
