@@ -13,8 +13,6 @@ search.audienceType:
 
 # Set up text messaging
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
 This article explains how to setup and configure providers and phone numbers for text messages.
 
 > [!NOTE]

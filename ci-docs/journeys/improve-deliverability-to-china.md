@@ -13,8 +13,6 @@ search.audienceType:
 
 # Improve email deliverability to China
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
 If you're sending email to China, it will be subjected to stricter email filtering than any other country in the world. This could result in email delays, delivered emails with unclickable links, or flat-out non-deliverability.
 
 Making sure your marketing emails to China are delivered is crucial. China has vast opportunities to win customers (assuming you can reach them). Consumers show less brand loyalty in China than in most other countries, tending to look for the best deal unless they're shopping for high-end products.

@@ -14,8 +14,6 @@ search.audienceType:
 
 # Customer Insights - Journeys trial FAQ
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
 [!INCLUDE [azure-ad-to-microsoft-entra-id](./includes/azure-ad-to-microsoft-entra-id.md)]
 
 > [!NOTE]

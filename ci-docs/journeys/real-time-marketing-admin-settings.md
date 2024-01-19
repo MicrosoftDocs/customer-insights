@@ -13,8 +13,6 @@ search.audienceType:
 
 # Customer Insights - Journeys administrator settings
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
 This article describes administrator settings required for Customer Insights - Journeys features.
 
 ## Journeys

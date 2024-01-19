@@ -13,8 +13,6 @@ search.audienceType:
 
 # Customize Dynamics 365 Customer Insights - Journeys
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
 This article explains how to customize lists, forms, workflows, business processes, validations, and more in Customer Insights - Journeys.
 
 ## Basic customizations

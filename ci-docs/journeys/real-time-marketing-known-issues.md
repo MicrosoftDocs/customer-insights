@@ -13,8 +13,6 @@ search.audienceType:
 
 # Known issues in Customer Insights - Journeys with mitigations
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
 As we continue to work on Customer Insights - Journeys and refine the experience, we've become aware of some outstanding issues for you to bear in mind. These issues are summarized in this article.
 
 ## Analytics

@@ -13,8 +13,6 @@ search.audienceType:
 
 # Transition overview
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
 In July 2023, Microsoft announced significant changes to the former Dynamics 365 Marketing application. The following changes were released to market in September 2023: 
 -	The Dynamics 365 Marketing application was renamed to Customer Insights - Journeys.
 -	The former Customer Insights application was renamed to Customer Insights - Data.

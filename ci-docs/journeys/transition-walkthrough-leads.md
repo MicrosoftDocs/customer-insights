@@ -13,8 +13,6 @@ search.audienceType:
 
 # Transition lead management and scoring
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
 Creating scoring models to identify the best leads is an important aspect of lead management. As of the September 2023 Customer Insights - Journeys release, lead scoring is available in real-time journeys. You can enable the real-time journeys lead scoring feature in the feature switches area in the settings. Improvements compared to the outbound marketing scoring models are:
 -	Simpler and more intuitive design canvas.
 -	Ability to score leads without a parent contact. Because it's possible to market directly to leads in real-time journeys, there's no need for a parent contact.

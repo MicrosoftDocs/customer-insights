@@ -13,8 +13,6 @@ search.audienceType:
 
 # Create a video library and add videos to your designs
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
 
