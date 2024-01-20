@@ -11,8 +11,6 @@ ms.custom: bap-template
 
 # Assign user permissions
 
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
-
 Access to Customer Insights - Data is restricted to users in your organization that an admin adds to the application. An admin can add, edit, or remove users. A user can be a single user, group, or application. [User roles](user-roles.md) determine what the user can access within Customer Insights - Data.
 
 ## Add users

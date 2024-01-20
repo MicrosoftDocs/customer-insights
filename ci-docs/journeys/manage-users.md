@@ -13,8 +13,6 @@ search.audienceType:
 
 # View and edit basic user information in Dynamics 365 Customer Insights - Journeys
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
 The Customer Insights - Journeys application provides an overview of users licensed to use the app and lets you view and edit basic information about them.
 
 To view a list of existing users:

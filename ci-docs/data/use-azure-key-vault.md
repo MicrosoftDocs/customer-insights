@@ -12,8 +12,6 @@ ms.author: bkief
 
 [!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
-
 [!INCLUDE [azure-ad-to-microsoft-entra-id](../journeys/includes/azure-ad-to-microsoft-entra-id.md)]
 
 Linking a dedicated [Azure key vault](/azure/key-vault/general/basic-concepts) to a Dynamics 365 Customer Insights - Data environment helps organizations to meet compliance requirements.

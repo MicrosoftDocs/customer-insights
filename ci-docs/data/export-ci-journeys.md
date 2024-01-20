@@ -12,8 +12,6 @@ ms.author: philk
 
 [!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
-
 Use [segments](segments.md) to generate campaigns and contact specific groups of customers with [Dynamics 365 Customer Insights - Journeys outbound marketing](/dynamics365/marketing/customer-insights-segments). If you are using Customer Insights - Journeys outbound, [learn more about the transition to real time](https://community.dynamics.com/blogs/post/?postid=1b4394d5-7764-4484-aba9-c7f972292c10).
 
 We recommend using real-time customer journey orchestration because you don't need to create exports to Customer Insights - Journeys. Contacts and segments are available directly through Dataverse after connecting the two apps. Review the documentation on [how to connect Customer Insights and Customer Insights - Journeys customer journey orchestration](/dynamics365/marketing/real-time-marketing-ci-profile).

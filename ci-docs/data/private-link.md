@@ -11,8 +11,6 @@ ms.custom: bap-template
 
 # Set up an Azure Private Link
 
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
-
 [Azure Private Link](/azure/private-link/private-link-overview) lets Dynamics 365 Customer Insights - Data connect to your Azure Data Lake Storage account over a private endpoint in your virtual network. For data in a storage account, which isn't exposed to the public internet, Private Link enables the connection to that restricted network.
 
 > [!IMPORTANT]

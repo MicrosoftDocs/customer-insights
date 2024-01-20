@@ -11,8 +11,6 @@ ms.custom: bap-template
 
 # Define matching rules for data unification
 
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
-
 This step in unification defines the match order and rules for cross-table matching. This step requires at least two tables. When records are matched, they're concatenated into a single record with all the fields from each table. Alternate rows (nonwinner rows from the Deduplication step) are considered when matching. But, if a row matches an alternate row in a table, the record is matched to the winner row.
 
 > [!NOTE]

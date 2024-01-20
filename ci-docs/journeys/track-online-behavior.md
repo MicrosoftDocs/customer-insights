@@ -13,8 +13,6 @@ search.audienceType:
 
 # Track website visits, social media clicks, and banner clicks
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide). This feature is coming to the [real-time journeys area](real-time-marketing-overview.md) in the December release. [Learn more](/dynamics365/release-plan/2023wave2/marketing/dynamics365-marketing/engage-customers-content-follow-ups-based-website-interactions).
 

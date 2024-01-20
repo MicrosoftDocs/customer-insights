@@ -9,8 +9,6 @@ ms.author: mhart
 
 # Use unified customer profiles in Dynamics 365 Customer Insights - Journeys
 
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
-
 [Dynamics 365 Customer Insights - Journeys](/dynamics365/marketing/overview) elevates customer experiences, allowing you to orchestrate personalized journeys across all touchpoints to strengthen relationships and earn loyalty. The Customer Insights - Journeys app works seamlessly with Dynamics 365 Sales, Dynamics 365 Customer Insights - Data, Microsoft Teams, and other products and allows you to make faster and better decisions using the power of data and AI.
 
 By connecting both Customer Insights applications, you can:

@@ -13,8 +13,6 @@ search.audienceType:
 
 # Select the audience source for journeys
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
 Audience configuration allows you to manage your audience data sources. Customer Insights - Journeys supports **Contact**, **Lead**, and **Customer profile** entities.
 
 To access the **Audience configuration settings**, go to **Settings** > **Customer engagement** > **Audience configuration**.
