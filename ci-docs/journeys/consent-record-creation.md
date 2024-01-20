@@ -120,7 +120,7 @@ Otherwise, set the contact point consent record to `opt-out`.
 
     1. Select the “Add a new row” action.
 
-    :::image type="content" source="media/create-contact-point-consent-record.png" alt-text="Create contact point consent record if no records were found.":::
+        :::image type="content" source="media/create-contact-point-consent-record.png" alt-text="Create contact point consent record if no records were found.":::
 
     1. Create the new row with the values shown below:
 
@@ -134,7 +134,7 @@ Otherwise, set the contact point consent record to `opt-out`.
     - **Source**: Internal
     - **Consent Type**: Purpose
 
-    :::image type="content" source="media/add-new-row.png" alt-text="Add new row.":::
+        :::image type="content" source="media/add-new-row.png" alt-text="Add new row.":::
 
 1. If a consent record is found in the system, the “Condition” step would result in false and you can update all the records that were found by running an “Apply to each” action and perform an “Update a row” action for each of the rows of the “List rows” step.
 
