@@ -11,8 +11,6 @@ ms.custom: bap-template
 
 # Custom models FAQ
 
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
-
 ## Why can't I see my pipeline when I'm setting up a custom model workflow?
 
 If you can't see a pipeline when you set up a workflow with a custom machine learning model, the cause is often an issue with the pipeline's configuration. Make sure the [input parameter](azure-machine-learning-experiments.md#dataset-configuration) and the [output datastore and path parameters](azure-machine-learning-experiments.md) are configured.

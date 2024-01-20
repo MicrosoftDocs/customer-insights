@@ -11,8 +11,6 @@ ms.custom: bap-template
 
 # Use custom models from Azure Synapse
 
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
-
 Workflows in Dynamics 365 Customer Insights - Data help you choose the data you want to generate insights from and map the results to your unified customer data. Your workflows can include custom models enhanced with artificial intelligence (AI) that you create in [Azure Synapse Analytics](/azure/synapse-analytics/machine-learning/what-is-machine-learning).
 
 ## Prerequisites

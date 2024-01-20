@@ -13,8 +13,6 @@ search.audienceType:
 
 # Overview of lead management
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
 Lead management refers to the set of functionalities in Dynamics 365 Customer Insights - Journeys that empower marketers to manage the end-to-end lead lifecycle successfully. Various features are part of this area, including:
 
 1. Features to identify the best prospects and hand them off to the sales team.

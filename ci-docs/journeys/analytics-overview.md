@@ -13,8 +13,6 @@ search.audienceType:
 
 # Analytics overview in Customer Insights - Journeys
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
 Customer Insights - Journeys's dashboards and cross-journey insights show metrics, views, and insights summarized across single or multiple journeys, providing you with a deep understanding of journey, channel, and content performance. The built-in dashboards focus on measuring delivery, engagement, and journey goal attainment so you can fine-tune the effectiveness of your journeys, channels, and content.
 
 With Customer Insights - Journeys analytics, you can:

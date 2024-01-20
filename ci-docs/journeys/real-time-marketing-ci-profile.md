@@ -13,8 +13,6 @@ search.audienceType:
 
 # Use Customer Insights - Data profiles and segments in Customer Insights - Journeys
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
 Customer Insights - Journeys enables you to deeply personalize your customer engagement using transactional, behavioral, and demographic data from [Dynamics 365 Customer Insights - Data](/dynamics365/customer-insights). With Customer Insights - Data, you can:
 - Target unified Customer Insights - Data customer profiles and segments. This enables you to engage every customer, regardless of whether the customer's data is in Customer Insights - Journeys or Customer Insights - Data.
 - Base dynamic content (such as personalized dynamic text) in emails, text messages, and push notifications on measures such as loyalty status, subscription renewal date, parent account, or any other measure you have captured in the unified customer profile.

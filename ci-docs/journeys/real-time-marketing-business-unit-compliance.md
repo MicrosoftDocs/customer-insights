@@ -13,8 +13,6 @@ search.audienceType:
 
 # Set up business units and compliance profiles to support multi-brand businesses
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
 Dynamics 365 Customer Insights - Journeys provides robust and configurable techniques to manage branding and compliance needs across multi-brand businesses. The approach to take depends on several factors including privacy, compliance, data access, and convenience. This article outlines some approaches, including their pros and cons.  
 
 ## Business units vs. compliance profiles

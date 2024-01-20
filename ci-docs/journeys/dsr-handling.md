@@ -13,8 +13,6 @@ search.audienceType:
 
 # Data subject request (DSR) handling
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
 A data subject request (DSR) is an inquiry from an individual to see or delete the personal data that your organization stores, processes, and transmits. To view, create, or delete DSRs, in your web browser, take the base organization URL and append the following path and query:
 
 ```

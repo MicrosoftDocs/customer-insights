@@ -11,8 +11,6 @@ ms.custom: bap-template
 
 # Schedule segments
 
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
-
 Segments can be refreshed based on the [scheduled system refresh](schedule-refresh.md), weekly, monthly, or refreshed manually on demand. The default is every scheduled system refresh. You might want to schedule last season's segments or segments that don't change often on a slower cadence such as monthly to help your most needed segments refresh faster.
 
 ## Prerequisites for automatic refresh of a segment

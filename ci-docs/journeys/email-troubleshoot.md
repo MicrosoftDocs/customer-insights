@@ -14,8 +14,6 @@ search.audienceType:
 
 # Troubleshoot email campaigns
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
 ## What types of lookup fields are supported?
 
 Dynamics 365 Customer Insights - Journeys uses the [same lookup types as other Dynamics 365 Customer Engagement apps](/dynamics365/customerengagement/on-premises/customize/types-of-fields#different-types-of-lookups). When creating an email template containing [dynamic content](dynamic-email-content.md) that is used in customer journeys, however, you should make note of what entity type any **Customer** lookup field is referring to.

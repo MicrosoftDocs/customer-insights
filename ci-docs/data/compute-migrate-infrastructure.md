@@ -12,8 +12,6 @@ ROBOTS: NOINDEX
 
 # Recreate your private links for the upgrade to the new compute infrastructure
 
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
-
 Dynamics 365 Customer Insights - Data is upgrading the compute infrastructure to newer technology, designed to increase the reliability and performance of the big data computation. The new solution requires access to customer storage protected by private networks and firewalls through Azure Private Links. Existing private links are not transferable to the new infrastructure.
 
 A notification in the application indicates if you have private links you need to recreate.

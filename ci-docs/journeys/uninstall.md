@@ -13,8 +13,6 @@ search.audienceType:
 
 # Uninstall Customer Insights
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
 You can remove Customer Insights from any Dynamics 365 instance where it's installed. After removing it, you'll end up with a Customer Insights license that you can use on another Dynamics 365 instance, if desired.
 
 > [!IMPORTANT]

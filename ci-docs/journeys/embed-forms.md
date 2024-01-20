@@ -13,8 +13,6 @@ search.audienceType:
 
 # Embed forms on external websites
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
 [!INCLUDE [marketing-trial-cta](./includes/marketing-trial-cta.md)]
 
 > [!IMPORTANT]

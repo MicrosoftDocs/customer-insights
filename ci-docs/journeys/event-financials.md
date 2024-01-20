@@ -13,8 +13,6 @@ search.audienceType:
 
 # View and record financial information for events
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
 You can record financial information for your events with Dynamics 365 Customer Insights - Journeys. For example, you can:
 
 - Record speaker costs (standard cost or for an engagement).

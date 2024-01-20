@@ -13,8 +13,6 @@ search.audienceType:
 
 # Integrate Dynamics 365 Customer Insights - Journeys with a CMS system, Dynamics 365 Portals, or Power Apps portals
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
 

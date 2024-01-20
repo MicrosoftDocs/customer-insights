@@ -12,8 +12,6 @@ search.audienceType:
 
 # Public IP addresses used for sending e-mails
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
 Dynamics 365 Customer Insights - Journeys uses a set of dedicated IPv4 public network subnets for sending e-mails. All e-mails sent by Customer Insights - Journeys depart from an IP address belonging to one of the subnets. The subnets are owned by the Customer Insights - Journeys platform; no other product or customer can use an IP address from them.
 
 > [!NOTE]

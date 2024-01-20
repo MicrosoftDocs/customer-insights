@@ -13,8 +13,6 @@ search.audienceType:
 
 # Responsible AI FAQs for the segment copilot
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
 This FAQ provides information about the AI technology used in the segment copilot, along with key considerations and details about how AI is used, how it was tested and evaluated, and any specific limitations.
 
 ## What is the segment copilot?

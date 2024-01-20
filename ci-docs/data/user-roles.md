@@ -11,8 +11,6 @@ ms.custom: bap-template
 
 # User roles
 
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
-
 The user role assigned to a user determines what the user can access within Customer Insights - Data. There are different types of roles a user can have.
 
 ## Viewer

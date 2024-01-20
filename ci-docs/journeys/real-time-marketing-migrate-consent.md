@@ -13,8 +13,6 @@ search.audienceType:
 
 # Migrate consent records to Customer Insights - Journeys
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
 When you install Customer Insights - Journeys, the consent center (**Customer Insights - Journeys** > **Audience** > **Consent center**) contains no records, even if you already gathered consent in outbound marketing. You don't need to re-enter contact consent data from outbound marketing if you plan to run journeys in Customer Insights - Journeys for contacts. If you want to reuse contact consent data for leads or profiles, or wish to add new consents, you can use one of three methods:
 
 - Add new consent records for email and text messages manually by selecting the corresponding option from the top ribbon.
