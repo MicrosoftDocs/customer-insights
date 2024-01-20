@@ -1,7 +1,7 @@
 ---
 title: How Customer Insights - Journeys uses suppression lists for email deliverability
 description: Learn how Customer Insights - Journeys uses suppression lists to protect email sending reputations.
-ms.date: 12/13/2023
+ms.date: 12/22/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -102,7 +102,7 @@ Learn more about bounce reasons and categories: [Email bounce categories](email-
 >
 > **In the support request, provide the following required information**:
 >
-> - A list of the email addresses in question.
+> - A list of the email addresses in question (removal is case sensitive, so if an email address has capital letters, you need to provide it with them).
 > - Justification as to why you believe each email address was listed by mistake.
 > - Proof that each email address is valid and can be reached by any other email provider by sending a screenshot of such an email or forwarding a copy of an email received from the email address in question.
 > - Measures taken to prevent same bounces for those addresses (if applicable).

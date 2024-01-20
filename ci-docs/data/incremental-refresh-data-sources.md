@@ -56,7 +56,7 @@ Dynamics 365 Customer Insights - Data allows incremental refresh for data source
 Customer Insights - Data allows incremental refresh for data sources connected to Azure Data Lake Storage. To use incremental ingestion and refresh for a table, configure that table when adding the Azure Data Lake data source or later when editing the data source. The table data folder must contain the following folders:
 
 - **FullData**: Folder with data files containing initial records
-- **IncrementalData**: Folder with date/time hierarchy folders in **yyyy/mm/dd/hh** format containing the incremental updates. **hh** represents the UTC hour of the updates and contains the **Upserts** and **Deletes** folders. **Upserts** contains data files with updates to existing records or new records. **Deletes** contains data files with records to remove.
+- **IncrementalData**: Folder with date/time hierarchy folders in **yyyy/mm/dd/hh** format containing the incremental updates. Year, month, day, and hour folders are expected to be four and two digits respectively. **hh** represents the UTC hour of the updates and contains the **Upserts** and **Deletes** folders. **Upserts** contains data files with updates to existing records or new records. **Deletes** contains data files with records to remove.
 
 ### Order of processing incremental data
 

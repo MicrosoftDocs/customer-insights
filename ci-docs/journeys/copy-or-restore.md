@@ -1,7 +1,7 @@
 ---
 title: Copy or restore environments
 description: How to copy a production Dynamics 365 Customer Insights environment to a sandbox environment for experiments and testing.
-ms.date: 09/15/2023
+ms.date: 01/18/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -40,9 +40,6 @@ Because Customer Insights - Journeys interacts with several special services and
 
 > [!NOTE]
 > If you are copying to a support environment, see [Copy a production environment to a support environment](copy-or-restore.md#copy-a-production-environment-to-a-support-environment) for instructions. For all other types of copies, continue reading here.
-
-> [!NOTE]
-> If you reinstall Customer Insights – Journeys after a copy, backup, or restore, you will see duplicate quota from the source environment. You will not experience degradation or enforcement for the quota overage. A change in the December 2023 release will track quota by the environment where it was generated and not impact copy/backup/restore. If you see excess quota following the December 2023 release, [file a support ticket](troubleshoot-faq.md#how-can-i-create-a-support-ticket-from-the-power-platform-admin-center) and the copied quota will be removed from the duplicate environment.
 
 ### Step 1: Prepare your source environment
 

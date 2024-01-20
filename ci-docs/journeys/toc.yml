@@ -222,22 +222,26 @@
       items:
       - name: Segmentation overview
         href: real-time-marketing-segments.md
-      - name: Build segments
-        href: real-time-marketing-build-segments.md
-      - name: Copilot - Target the right customers using query assist
-        href: real-time-marketing-natural-language-segments.md
+      - name: Create segments
+        items:
+        - name: Build segments
+          href: real-time-marketing-build-segments.md
+        - name: Improve targeting with the redesigned segment builder
+          href: real-time-marketing-redesigned-segment-builder.md
+        - name: Copilot - Target the right customers using query assist
+          href: real-time-marketing-natural-language-segments.md
+        - name: Sync data tables into the segment builder
+          href: real-time-marketing-sync-data-tables.md
+        - name: Create segments using unified profiles and customer measures
+          href: unified-profile-segment-creation.md
+        - name: Create a static snapshot of a segment
+          href: real-time-marketing-static-snapshot.md
       - name: Create a segment-based journey
         href: real-time-marketing-segment-based-journey.md
       - name: Use Customer Insights - Data profiles and segments
         href: real-time-marketing-ci-profile.md
-      - name: Improve targeting with the redesigned segment builder
-        href: real-time-marketing-redesigned-segment-builder.md
-      - name: Create a static snapshot of a segment
-        href: real-time-marketing-static-snapshot.md
       - name: Individually manage your customer list
         href: real-time-marketing-include-exclude.md
-      - name: Sync data tables into the segment builder
-        href: real-time-marketing-sync-data-tables.md
     - name: Journey goals and A/B testing
       items:
       - name: Set a business goal and measure progress through a journey
@@ -322,6 +326,8 @@
       href: real-time-marketing-troubleshooting-forms.md
   - name: Lead generation and management
     items:
+    - name: Lead generation and management overview
+      href: lead-generation-overview.md
     - name: Qualify the best leads
       href: real-time-marketing-qualify-leads.md
     - name: Create sales activities from lead signals
@@ -334,6 +340,8 @@
       href: real-time-marketing-security-roles-lead-scoring.md
   - name: Analytics
     items:
+    - name: Analytics overview
+      href: analytics-overview.md
     - name: Access and interpret analytics
       href: real-time-marketing-analytics.md
     - name: How to use aggregate cross-journey analytics
@@ -398,6 +406,8 @@
       href: real-time-marketing-form-capture.md
     - name: Integrate a custom captcha service with marketing forms
       href: real-time-marketing-form-custom-captcha.md
+    - name: Customize the Customer Insights - Journeys forms interface
+      href: developer/extend-ui.md
   - name: Reference guide for Customer Insights - Journeys interactions
     href: real-time-marketing-interactions-reference.md
   - name: Push notification setup for application developers
@@ -556,18 +566,24 @@
     href: troubleshoot-faq.md
 - name: Copilot in Customer Insights - Journeys
   items: 
+  - name: Overview
+    href: copilot-overview.md
   - name: Give consent to use Copilot in Customer Insights - Journeys
     href: copilot-consent-journeys.md
-- name: Responsible AI transparency notes
+- name: Responsible AI FAQs
   items:
-  - name: Responsible AI FAQs
-    items:
-    - name: Overview
-      href: responsible-ai-overview.md
-    - name: Responsible AI FAQs for content ideas
-      href: faqs-content-ideas.md
-    - name: Responsible AI FAQs for content rewrite
-      href: faqs-content-rewrite.md
+  - name: Overview
+    href: responsible-ai-overview.md
+  - name: Responsible AI FAQs for content ideas
+    href: faqs-content-ideas.md
+  - name: Responsible AI FAQs for the segment copilot
+    href: faqs-segment-copilot.md
+  - name: Responsible AI FAQs for image smart recommendation
+    href: faqs-image-smart-recommendation.md
+  - name: Responsible AI FAQs for content rewrite
+    href: faqs-content-rewrite.md
+  - name: Responsible AI FAQs for the journey copilot
+    href: faqs-journey-copilot.md
 - name: Resources
   items:
   - name: Customer Insights - Journeys forum

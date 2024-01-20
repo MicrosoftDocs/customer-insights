@@ -1,7 +1,7 @@
 ---
 title: Set up an event
 description: How to plan an event, register basic info, set up your team, manage sessions and speakers, set the event schedule, issue passes,  and manage venues in Dynamics 365 Customer Insights - Journeys.
-ms.date: 09/22/2023
+ms.date: 01/03/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -64,6 +64,9 @@ The **Agenda** tab includes details about the schedule of sessions happening dur
 - **Sponsors**: Companies who are [sponsoring the event](manage-event-sponsorships.md).
 
 ### The Website and form tab
+
+> [!NOTE]
+> The event portal landing page (event website) isn't currently available in real-time journeys. However, [marketing forms](real-time-marketing-form-create.md) for registration can serve as a viable alternative to showcase event details and facilitate the registration process.
 
 The Website and form tab provides options to set registration parameters. First, you can decide where do you want attendees to register for your event:
 - On a standalone registration page:
