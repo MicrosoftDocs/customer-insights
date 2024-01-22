@@ -10,8 +10,6 @@ ms.topic: overview
 
 # Product overview for Dynamics 365 Customer Insights
 
-[!INCLUDE [consolidated-sku](data/includes/consolidated-sku.md)]
-
 Dynamics 365 Customer Insights helps your organization deliver exceptional customer experiences. It lays the foundation to create truly personalized, responsive, and connected customer journeys across sales, marketing, and service teams.
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RW17thC]

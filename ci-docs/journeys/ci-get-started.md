@@ -13,8 +13,6 @@ search.audienceType:
 
 # Connect rich customer data from multiple sources
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
 [Dynamics 365 Customer Insights - Data](/dynamics365/customer-insights/overview) applies artificial intelligence to analyze rich pools of customer data. Customer Insights - Data allows you to unify data from transactional, behavioral, and observational sources to create a 360-degree customer view. This means that you're no longer restricted by siloed data that requires you to look in multiple locations to track customer behavior. With Customer Insights - Data, you can view powerful analytical displays for each contact. And connecting it to Dynamics 365 Customer Insights - Journeys allows you to automate personalized responses to customer actions as they occur.
 
 By connecting Customer Insights - Data with Customer Insights - Journeys, you can:

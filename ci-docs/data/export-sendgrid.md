@@ -12,8 +12,6 @@ ms.author: philk
 
 [!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
-
 Export segments of unified customer profiles to SendGrid contact lists and use them for campaigns and email marketing in SendGrid.
 
 ## Prerequisites

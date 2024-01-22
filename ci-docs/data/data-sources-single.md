@@ -11,8 +11,6 @@ ms.custom: bap-template
 
 # Get started using a single data source
 
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
-
 Dynamics 365 Customer Insights - Data provides ingestion of a single data source to get you up and running quickly. Provide your own data in a .csv file or choose sample data. Customer Insights - Data uploads and unifies the data to create a customer profile, and then automatically generates insights on the data.
 
 > [!NOTE]

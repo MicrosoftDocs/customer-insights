@@ -11,8 +11,6 @@ ms.custom: bap-template
 
 # Customer lifetime value (CLV) prediction sample guide
 
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
-
 This guide walks you through an end-to-end example of Customer lifetime value (CLV) prediction in Dynamics 365 Customer Insights - Data using sample data. We recommend that you try this prediction [in a new environment](manage-environments.md).
 
 ## Scenario

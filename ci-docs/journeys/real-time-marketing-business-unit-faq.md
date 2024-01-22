@@ -13,8 +13,6 @@ search.audienceType:
 
 # Business units FAQs for real-time journeys
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
 This article contains answers to common questions and solutions to known issues related to business units in Customer Insights - Journeys.
 
 ### What are the key differences between business unit scoping support in outbound marketing and Customer Insights - Journeys?

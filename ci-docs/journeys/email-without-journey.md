@@ -13,8 +13,6 @@ search.audienceType:
 
 # Use "Send now" to send emails instantly
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
 > [!IMPORTANT]
 > The "Send now" functionality described in this article, **only** applies to Customer Insights - Journeys, not outbound marketing.
 

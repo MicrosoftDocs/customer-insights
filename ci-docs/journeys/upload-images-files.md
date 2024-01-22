@@ -13,8 +13,6 @@ search.audienceType:
 
 # Upload, manage, and use images, files, and videos in online content
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
 > [!IMPORTANT]
 > Dynamics 365 Customer Insights - Journeys may transfer customer data outside of the selected Azure geographic location when using the following features that use Azure CDN (content delivery network) to operate globally:
 > -	[Asset library](upload-images-files.md)

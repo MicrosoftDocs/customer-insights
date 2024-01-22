@@ -11,8 +11,6 @@ ms.custom: bap-template
 
 # View system configuration
 
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
-
 View system information and system status.
 
 ## View system information

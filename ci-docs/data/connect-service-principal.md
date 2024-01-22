@@ -10,8 +10,6 @@ ms.reviewer: mhart
 
 # Connect to an Azure Data Lake Storage account by using a Microsoft Entra service principal
 
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
-
 [!INCLUDE [azure-ad-to-microsoft-entra-id](../journeys/includes/azure-ad-to-microsoft-entra-id.md)]
 
 Dynamics 365 Customer Insights - Data provides an option to connect to an Azure Data Lake Storage account by using a Microsoft Entra service principal.

@@ -11,8 +11,6 @@ ms.custom: bap-template
 
 # Predict transaction churn
 
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
-
 Transactional churn prediction helps predict if a customer will no longer purchase your products or services in a given time window. Transaction churn is useful to find customers who are no longer purchasing products at any time during the defined churn window. To find customers who might cancel their preset ongoing purchases, we recommend using the [Subscription churn model.](sample-guide-predict-subscription-churn.md)
 
 You must have business knowledge to understand what churn means for your business. For instance, a business with annual events can define their churn measured in years, while a business that caters to weekly sales may measure churn in months. We support time-based churn definitions, meaning a customer is considered to have churned after a period of no purchases.

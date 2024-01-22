@@ -187,3 +187,5 @@ One way to handle this would be by using the “Reason description” field to y
 ### Managing ALM for the cloud flow
 
 If you have multiple environments (dev, test/QA, production, etc.) and need your cloud flow to remain consistent across the environments, you should consider creating the cloud flow in a solution. More information on how you can do that can be found here: [Create a cloud flow in a solution](/power-automate/create-flow-solution)
+
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

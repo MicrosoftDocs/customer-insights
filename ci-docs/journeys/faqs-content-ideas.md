@@ -13,8 +13,6 @@ search.audienceType:
 
 # Responsible AI FAQs for content ideas
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
 These responsible AI FAQs describe the AI impact of Dynamics 365 Customer Insights - Journeys's content ideas feature.
 
 ## What is content ideas?

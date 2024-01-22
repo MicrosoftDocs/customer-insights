@@ -11,8 +11,6 @@ ms.custom: bap-template
 
 # Create complex segments with segment builder
 
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
-
 Define complex filters around the unified customer and its related tables. Each segment, after processing, creates a set of customer records that you can export and take action on.
 
 ## Create a new segment with segment builder

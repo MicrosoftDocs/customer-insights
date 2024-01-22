@@ -13,8 +13,6 @@ search.audienceType:
 
 # Use Microsoft Teams for Dynamics 365 Customer Insights - Journeys online events
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
 [!INCLUDE [azure-ad-to-microsoft-entra-id](./includes/azure-ad-to-microsoft-entra-id.md)]
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4J4cV]
