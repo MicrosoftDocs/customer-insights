@@ -13,7 +13,7 @@ search.audienceType:
 
 # Give consent to use Copilot in Customer Insights - Journeys
 
-There are three levels of consent to use generative AI Copilot features in Customer Insights - Journeys. Consent is global for all users and all Copilot features in Customer Insights - Journeys, except for the Copilot for model-driven apps, which is controlled solely by [the following Power Platform Admin Center settings](https://learn.microsoft.com/power-apps/maker/model-driven-apps/add-ai-copilot). 
+There are three levels of consent to use generative AI Copilot features in Customer Insights - Journeys. Consent is global for all users and all Copilot features in Customer Insights - Journeys, except for the Copilot for model-driven apps, which is controlled solely by [the following Power Platform Admin Center settings](/power-apps/maker/model-driven-apps/add-ai-copilot). 
 Within Customer insights the three levels of consent, which can be found at **Settings** > **Feature switches** > **Copilot**, are the following:
 - **Global Opt-in consent**: **On** indicates you agree to enable all Copilot and/or Bing Search-powered features and acknowledge that AI-generated content should be reviewed before use. Default is **On**.
 - **Global cross-geography data flow consent**: On indicates that you agree that data may be stored and processed outside of your geographic region, compliance boundary, or national cloud instance. If you're in a region where Azure OpenAI is deployed such as the United States and Switzerland, this field doesn't display (the default is **On** and can't be changed). Default is **Off** for all other regions where Azure OpenAI isn't deployed.
