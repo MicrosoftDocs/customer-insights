@@ -1,7 +1,7 @@
 ---
 title: "Manage data sources"
 description: "Learn how to manage data sources attached or imported to Dynamics 365 Customer Insights - Data"
-ms.date: 11/20/2023
+ms.date: 01/22/2024
 ms.topic: how-to
 author: mukeshpo
 ms.author: mukeshpo
@@ -26,7 +26,7 @@ If you have a Data Lake data source, you can [convert it to a Delta Lake data so
 
 ## Refresh data sources
 
-Data sources can be refreshed on an automatic schedule or refreshed manually on demand. [On-premises data sources](connect-power-query.md#add-data-from-on-premises-data-sources) refresh on their own schedules, which are set up during data ingestion.
+Data sources can be refreshed on an automatic schedule or refreshed manually on demand, if you have the correct privileges. [On-premises data sources](connect-power-query.md#add-data-from-on-premises-data-sources) refresh on their own schedules, which are set up during data ingestion.
 
 For attached data sources, data ingestion consumes the latest data available from that data source.
 
