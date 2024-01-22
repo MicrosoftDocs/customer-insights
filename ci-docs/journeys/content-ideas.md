@@ -13,8 +13,6 @@ search.audienceType:
 
 # Copilot - Use AI to kickstart email creation
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
 > [!NOTE]
 > The content ideas copilot is currently available worldwide in the following languages:
 > - Danish (Denmark),

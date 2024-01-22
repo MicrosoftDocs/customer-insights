@@ -11,8 +11,6 @@ ms.custom: bap-template
 
 # Remove duplicates in each table for data unification
 
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
-
 The Deduplication rules step of unification finds and removes duplicate records for a customer from a source table so that each customer is represented by a single row in each table. Each table is deduplicated separately using rules to identify the records for a given customer.
 
 Rules are processed in order.  After all rules have been run on all the records in a table, match groups that share a common row are combined into a single match group.

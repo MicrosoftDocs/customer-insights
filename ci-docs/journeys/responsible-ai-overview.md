@@ -15,11 +15,12 @@ search.audienceType:
 
 # Responsible AI FAQs for Dynamics 365 Customer Insights - Journeys
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
 [!INCLUDE [responsible-ai-intro](./includes/responsible-ai-intro.md)]
 
 [!INCLUDE [responsible-ai-features](./includes/responsible-ai-features.md)]
 
 - [Responsible AI FAQs for content ideas](faqs-content-ideas.md)
 - [Responsible AI FAQs for content rewrite](faqs-content-rewrite.md)
+- [Responsible AI FAQs for smart image recommendation](faqs-image-smart-recommendation.md)
+- [Responsible AI FAQs for journey copilot](faqs-journey-copilot.md)
+- [Responsible AI FAQs for segment copilot](faqs-segment-copilot.md)

@@ -10,8 +10,6 @@ ms.author: mhart
 
 # Use customer consent
 
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
-
 Data protection and privacy regulations provide individuals the right to govern how an organization uses their personal data. Examples of such regulations are the General Data Protection Regulation in the European Union or the California Consumer Privacy Act in the United States. These regulations allow people to opt out of having their personal data collected, processed by, or shared with third parties.  
 
 Customers can choose to withdraw or withhold their consent for specific forms of contact. They may also request you to opt them out of collection, storage, use, or sale of their personal data. It's important your organization honors all customers’ consent and privacy preferences.  

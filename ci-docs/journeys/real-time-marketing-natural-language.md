@@ -13,8 +13,6 @@ search.audienceType:
 
 # Use natural language in journeys
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
 Natural language input enables you to use common words and phrases to describe a condition you want to include in your customer journey. The data model is built on top of Common Data Model (CDM).
 
 ## Use natural language input

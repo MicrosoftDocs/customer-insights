@@ -14,8 +14,6 @@ ms.custom: bap-template
 
 [!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
-
 Data enrichment uses data from sources like Microsoft and other partners to enrich your unified customer data in Dynamics 365 Customer Insights - Data. Enriched data provides better insights into your customers which in turn provides you better opportunities to serve them. Enrichments are configured using [connections](connections.md), which an administrator sets up with credentials and provides consent for data transfers. The connections are used by administrators and contributors to configure enrichments.
 
 You can also enrich your data before unification to help increase the quality of a data match and have fewer duplicates in your unified profiles.

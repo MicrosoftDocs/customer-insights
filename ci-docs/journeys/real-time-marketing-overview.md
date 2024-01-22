@@ -13,8 +13,6 @@ search.audienceType:
 
 # Customer Insights - Journeys overview
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RW17thC]
 
 Dynamics 365 Customer Insights - Journeys isn't just for marketers anymore. With AI and natural language input assistance, business users can build trigger-based journeys that reach customers across multiple touch-points, growing relationships from prospects, through sales and support. Customer Insights - Journeys enables organizations to:

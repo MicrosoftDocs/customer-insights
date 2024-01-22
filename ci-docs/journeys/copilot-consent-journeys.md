@@ -13,8 +13,6 @@ search.audienceType:
 
 # Give consent to use Copilot in Customer Insights - Journeys
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
 There are three levels of consent to use generative AI Copilot features in Customer Insights - Journeys. Consent is global for all users and all Copilot features in Customer Insights - Journeys, except for the Copilot for model-driven apps, which is controlled solely by [the following Power Platform Admin Center settings](https://learn.microsoft.com/power-apps/maker/model-driven-apps/add-ai-copilot). 
 Within Customer insights the three levels of consent, which can be found at **Settings** > **Feature switches** > **Copilot**, are the following:
 - **Global Opt-in consent**: **On** indicates you agree to enable all Copilot and/or Bing Search-powered features and acknowledge that AI-generated content should be reviewed before use. Default is **On**.

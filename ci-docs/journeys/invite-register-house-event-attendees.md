@@ -13,8 +13,6 @@ search.audienceType:
 
 # Invite, register, and house event attendees
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
 After your event is fully modeled in Dynamics 365 Customer Insights - Journeys, you're ready to start promoting it. The system provides many tools to help you do this.
 
 ## Invite contacts to your events
