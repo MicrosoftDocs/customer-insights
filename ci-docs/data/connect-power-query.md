@@ -73,7 +73,7 @@ Data gateways from an existing Power BI or Power Apps environment will be visibl
 
 ## Edit Power Query data sources
 
-You must be the one who created the data source to edit it.
+You must be the owner of the data flow to edit it.
 
 > [!NOTE]
 > It might not be possible to make changes to data sources that are currently being used in one of the app's processes (segmentation or data unification for example).
