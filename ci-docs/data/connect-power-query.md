@@ -1,7 +1,7 @@
 ---
 title: "Connect to a Power Query data source (contains video)"
 description: "Ingest data through a Power Query connector (contains video)."
-ms.date: 09/01/2023
+ms.date: 01/22/2024
 ms.reviewer: v-wendysmith
 ms.topic: how-to
 author: mukeshpo
@@ -72,6 +72,8 @@ Data gateways from an existing Power BI or Power Apps environment will be visibl
 > Errors with on-premises data gateways are often caused by configuration issues. For more information about troubleshooting data gateways, see [Troubleshoot the on-premises data gateway](/data-integration/gateway/service-gateway-tshoot).
 
 ## Edit Power Query data sources
+
+You must be the owner of the dataflow to edit it.
 
 > [!NOTE]
 > It might not be possible to make changes to data sources that are currently being used in one of the app's processes (segmentation or data unification for example).
