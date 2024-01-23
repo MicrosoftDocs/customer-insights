@@ -1,7 +1,7 @@
 ---
-title: Create a consent point record using a cloud flow
-description: Learn how to create a consent point record using a cloud flow in Dynamics 365 Customer Insights - Journeys.
-ms.date: 01/19/2024
+title: Create a consent record using a cloud flow
+description: Learn how to create a consent record using a cloud flow in Dynamics 365 Customer Insights - Journeys.
+ms.date: 01/22/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -11,7 +11,7 @@ search.audienceType:
   - enduser
 ---
 
-# Create a consent point record using a cloud flow
+# Create a consent record using a cloud flow
 
 In real-time journeys, consent is collected, managed, and enforced at a [contact point level](real-time-marketing-compliance-settings.md#contact-point-consent) (that is, an email address, phone number, or a custom channel address). When a message is sent to contacts, leads, or Customer Insights profiles, the Customer Insights - Journeys app [checks the consent](real-time-marketing-email-text-consent.md#how-consent-is-respected-for-emails) for the specific contact point to which the message is being sent and for the specific purpose or topic of the message before sending the message.
 

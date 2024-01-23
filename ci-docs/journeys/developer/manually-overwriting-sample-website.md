@@ -1,7 +1,7 @@
 ---
 title: Manually overwriting a sample event website in outbound marketing
 description: Learn how to manually overwrite an event management sample website in outbound marketing.
-ms.date: 01/23/2023
+ms.date: 01/22/2024
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
@@ -35,6 +35,7 @@ Manually overwriting the event management website overwrites the possible custom
 
 | Release Version |Download link|
 |--|--|
+| 1.12.10056 (December 2023 Release)| [Download](https://download.microsoft.com/download/1/5/0/150757D0-2600-493B-8C9A-3213AD873A73/PortalData-Dec23-1.12.10056.1005.zip) |
 | 1.12.10046 (September 2022 Release)| [Download](https://download.microsoft.com/download/1/5/0/150757D0-2600-493B-8C9A-3213AD873A73/PortalData-Sep22-1.12.10046.1012.zip) |
 | 1.12.10034 (April 2021 Release)| [Download](https://download.microsoft.com/download/1/5/0/150757D0-2600-493B-8C9A-3213AD873A73/PortalData-Apr21-1.12.10034.1001.zip) |
 | 1.12.10030 (December 2020 Release)| [Download](https://download.microsoft.com/download/1/5/0/150757D0-2600-493B-8C9A-3213AD873A73/PortalData-Dec20-1.12.10030.1020.zip) |
