@@ -414,7 +414,7 @@
     href: real-time-marketing-developer-push.md
   - name: Receive notifications and create interactions
     href: real-time-marketing-developer-notifications.md
-  - name: Create a consent point record using a cloud flow
+  - name: Create a consent record using a cloud flow
     href: consent-record-creation.md
   - name: Create a Customer Insights - Journeys segment using the Web API
     href: real-time-marketing-api-segment.md
