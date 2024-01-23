@@ -26,7 +26,7 @@ If you have a Data Lake data source, you can [convert it to a Delta Lake data so
 
 ## Refresh data sources
 
-Data sources can be refreshed on an automatic schedule or refreshed manually on demand. [On-premises data sources](connect-power-query.md#add-data-from-on-premises-data-sources) refresh on their own schedules, which are set up during data ingestion by the owner of the data flow. 
+Data sources can be refreshed on an automatic schedule or refreshed manually on demand. [On-premises data sources](connect-power-query.md#add-data-from-on-premises-data-sources) refresh on their own schedules, which are set up during data ingestion by the owner of the dataflow. 
 
 For attached data sources, data ingestion consumes the latest data available from that data source.
 
