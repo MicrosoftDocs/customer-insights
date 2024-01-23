@@ -1,6 +1,6 @@
 ---
-title: Responsible AI FAQs for the copilot in Customer Insights - Journeys
-description: The Responsible AI FAQs discuss the general Copilot and the key considerations for making use of this technology responsibly.
+title: Responsible AI FAQs for the Customer Insights - Journeys copilot
+description: The Responsible AI FAQs discuss the general copilot and the key considerations for making use of this technology responsibly.
 ms.date: 01/30/2024
 ms.topic: article
 author: alfergus
@@ -11,7 +11,7 @@ search.audienceType:
   - enduser
 ---
 
-# Responsible AI FAQs for the copilot in Customer Insights - Journeys
+# Responsible AI FAQs for the Customer Insights - Journeys copilot
 
 [!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
@@ -19,7 +19,7 @@ These responsible AI FAQs describe the AI impact of Copilot for model-driven app
 
 ## What is the Copilot in model-driven apps in Customer insights - Journeys?
 
-This is the general Copilot available to all Power Apps model-driven apps. Within Customer Insights - Journeys the prompt starters are adapted to fit the marketing scenarios our users focus on. Copilot for model-driven apps in Power Apps is a feature for app users to get insights about the data in their apps through conversation in natural language. Copilot helps app users boost their productivity through AI-powered insights and intuitive app navigation. This feature is available throughout the model-driven app.
+This is the general copilot available to all Power Apps model-driven apps. Within Customer Insights - Journeys the prompt starters are adapted to fit the marketing scenarios our users focus on. Copilot for model-driven apps in Power Apps is a feature for app users to get insights about the data in their apps through conversation in natural language. Copilot helps app users boost their productivity through AI-powered insights and intuitive app navigation. This feature is available throughout the model-driven app.
 [Learn more about Copilot in model-driven apps](/power-apps/maker/common/faqs-copilot-model-driven-app)
 
 ## What can Copilot in model-driven apps in Customer insights do?
@@ -46,5 +46,5 @@ This capability may be subject to usage limits or capacity throttling.
 
 Whether this copilot is available in your environment is controlled by Power Platform administrator settings. [Learn how to add Copilot for model-driven apps](/power-apps/maker/model-driven-apps/add-ai-copilot)
 
-When asking Copilot questions about how to use Customer Insights, we recommend you describe your goal as well as the question itself: "I'm organizing a 2-day event in a venue. How can I get started with setting up registration for it?"
+When asking Copilot questions about how to use Customer Insights, we recommend you describe your goal as well as the question itself: "I'm organizing a two day event in a venue. How can I get started with setting up registration for it?"
 Clearly identify which page you want to navigate to: "Take me to _page name_, " such as "Take me to Accounts."
