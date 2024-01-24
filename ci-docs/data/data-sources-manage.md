@@ -19,7 +19,7 @@ Select a data source to view available actions.
 
 - [**Edit**](data-sources.md) the data source to change its properties. You can't edit a single CSV data source that was used to automatically generate insights.
 - [**Refresh**](#refresh-data-sources) the data source to include the latest data.
-- [**Enrich**](data-sources-enrichment.md) the data source before unification.
+- [**Enrich**](data-sources-enrichment.md) the data source before unification to improve the quality and completeness for better results. 
 - **Delete** the data source. A data source can be deleted only if the data is not used in any processing such as unification, insights, activations, or exports.
 
 If you have a Data Lake data source, you can [convert it to a Delta Lake data source (preview).](convert-datalake-to-deltalake.md)
