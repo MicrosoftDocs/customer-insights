@@ -5,7 +5,7 @@ ms.date: 09/01/2023
 ms.reviewer: mhart
 ms.topic: conceptual
 author: pkieffer
-ms.author: philk
+ms.author: nikeller
 ---
 
 # Export segments to Adobe Campaign Standard (preview)
@@ -18,9 +18,12 @@ Export segments that target relevant audiences to Adobe Campaign Standard.
 
 ## Prerequisites
 
-- An Adobe Campaign Standard license.
-- An [Azure Blob Storage account](/azure/storage/blobs/create-data-lake-storage-account) name and account key. To find the name and key, see [Manage storage account settings in the Azure portal](/azure/storage/common/storage-account-manage).
-- An [Azure Blob Storage container](/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container).
+- An Adobe Campaign Standard license to use Adobe Campaign.
+- To setup the export in Customer insights the same prerequisites as for [Export to Azure Blob storage](export-azure-blob-storage.md) apply:
+  - An [Azure Blob Storage account with a container](/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container).
+  - User who sets up the connection must have the permission to access the content of the container. For example, a [Blob Storage Contributor](/azure/role-based-access-control/built-in-roles#storage-blob-data-contributor) role.
+  - The [Customer Insights Service Principal](connect-service-principal.md) has write permissions on the container. For example, a [Blob Storage Contributor](/azure/role-based-access-control/built-in-roles#storage-blob-data-contributor) role.
+
 
 ## Campaign overview
 
@@ -54,9 +57,7 @@ The offer email that you want to send out will contain the first name, last name
 
 1. Choose who can use this connection. By default, it's only administrators. For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
-1. Enter the **Account name**, **Account key**, and **Container** for your Blob Storage account.  
-
-   :::image type="content" source="media/azure-blob-configuration.png" alt-text="Screenshot of the storage account configuration.":::
+1. Enter **Subscription**, **Resource group**, **Storage account**, and **Container** for your Blob Storage account.
 
 1. Review the [data privacy and compliance](connections.md#data-privacy-and-compliance) and select **I agree**.
 
