@@ -13,8 +13,6 @@ search.audienceType:
 
 # Real-time journeys transition resources
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
 The following resources were created to help you transition from outbound marketing to real-time journeys in Dynamics 365 Customer Insights - Journeys as smoothly as possible. Reach out to FastTrack or your account manager for additional questions or help.
 
 ## Documentation

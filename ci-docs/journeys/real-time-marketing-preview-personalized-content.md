@@ -5,7 +5,6 @@ ms.date: 08/23/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
-manager: shellyha
 search.audienceType: 
   - admin
   - customizer
@@ -16,8 +15,6 @@ search.app:
 ---
 
 # Preview personalized content
-
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!NOTE]
 > When you test send an email and use a sample audience record, the sent email uses condition outcomes or variations you manually select during test send (it will not use audience data for conditions). Always send email through a test journey to fully test emails with conditions and conditional content.

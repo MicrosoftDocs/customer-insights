@@ -13,8 +13,6 @@ search.audienceType:
 
 # Use AI to check your message-content spam score
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
 The spam checker feature applies artificial intelligence to analyze the content of each marketing email message. Spam checker then generates a range that predicts how likely the message is to be flagged by content-based spam filters.
 
 There are two ways to view your spam risk:

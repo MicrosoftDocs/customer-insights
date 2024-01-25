@@ -10,8 +10,6 @@ ms.reviewer: v-wendysmith
 
 # Schedule measures
 
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
-
 Measures can be refreshed on the [scheduled system refresh](schedule-refresh.md), weekly, monthly, or refreshed manually on demand. You might want to schedule last season's measures or measures that don't change often on a slower cadence such as monthly to help your most needed measures refresh faster. The default is every scheduled system refresh.
 
 ## Prerequisites for automatic refresh of a measure

@@ -11,8 +11,6 @@ ms.custom: bap-template
 
 # Create simple segments with quick segments
 
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
-
 Quick segments let you build simple segments with a single operator quickly for faster insights. Quick segments are only supported in environments for **individual customers**.
 
 ## Create a new segment with quick segments

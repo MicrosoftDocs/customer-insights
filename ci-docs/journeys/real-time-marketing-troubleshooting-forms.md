@@ -13,8 +13,6 @@ search.audienceType:
 
 # Troubleshooting Customer Insights - Journeys forms
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
 This article explains how to troubleshoot forms in Customer Insights - Journeys.
 
 ## My embedded form isn't visible on my page

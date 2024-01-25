@@ -13,8 +13,6 @@ search.audienceType:
 
 # Deploy pages that contain Customer Insights - Journeys forms
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
 Once you've [created a form](real-time-marketing-form-create.md) in Customer Insights - Journeys, you need to publish it in a place where customers can access it. This article discusses the various hosting options for Customer Insights - Journeys forms.
 
 ## Hosting options

@@ -13,8 +13,6 @@ search.audienceType:
 
 # Manage Customer Insights - Journeys forms
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
 This article explains how to edit, un-publish, and manage forms in Customer Insights - Journeys.
 
 ## Edit a live form

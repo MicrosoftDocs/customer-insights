@@ -13,8 +13,6 @@ search.audienceType:
 
 # Transition segments, emails, journeys, and assets
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
 Segments, emails, and journeys are the most used components in Customer Insights - Journeys.
 
 ## Segments

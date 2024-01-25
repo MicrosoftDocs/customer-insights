@@ -15,8 +15,6 @@ search.audienceType:
 
 # Responsible AI FAQs for Dynamics 365 Customer Insights - Journeys
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
 [!INCLUDE [responsible-ai-intro](./includes/responsible-ai-intro.md)]
 
 [!INCLUDE [responsible-ai-features](./includes/responsible-ai-features.md)]

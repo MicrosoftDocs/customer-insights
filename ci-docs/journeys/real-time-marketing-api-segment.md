@@ -13,8 +13,6 @@ search.audienceType:
 
 # Create a Customer Insights - Journeys segment using the Web API
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
 You can create a Customer Insights - Journeys segment using the Web API following the same approach you would to [create any entity in a Power App](/power-apps/developer/data-platform/webapi/create-entity-web-api#basic-create). When creating a Customer Insights - Journeys segment, you need to create two entities: **msdynmkt_segmentdefinitions** and **msdynmkt_segments**. The following article shows how to create these entities.
 
 ## Create a segment definition entity

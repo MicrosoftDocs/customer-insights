@@ -7,13 +7,12 @@ ms.topic: how-to
 author: joytaylor
 ms.author: joytaylor
 ms.custom: bap-template
+ms.collection: bap-ai-copilot 
 ---
 
 # Predict product recommendations (preview)
 
 [!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
-
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
 The product recommendation model creates sets of predictive product recommendations. Recommendations are based on previous purchase behavior and customers with similar purchase patterns. You must have business knowledge on the different types of products for your business and how your customers interact with them. We support recommending products that your customers have previously purchased or recommendations for new products.
 

@@ -13,8 +13,6 @@ search.audienceType:
 
 # Manage user accounts, user licenses, and security roles
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
 [!INCLUDE [marketing-trial-cta](./includes/marketing-trial-cta.md)]
 
 [!INCLUDE [azure-ad-to-microsoft-entra-id](./includes/azure-ad-to-microsoft-entra-id.md)]
