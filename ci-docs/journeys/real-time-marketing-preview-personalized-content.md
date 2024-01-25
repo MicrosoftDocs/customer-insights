@@ -5,7 +5,6 @@ ms.date: 08/23/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
-manager: shellyha
 search.audienceType: 
   - admin
   - customizer
