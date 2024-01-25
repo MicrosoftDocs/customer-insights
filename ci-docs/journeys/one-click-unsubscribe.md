@@ -11,10 +11,10 @@ search.audienceType:
   - enduser
 ---
 
-## One-click unsubscribe support for emails 
+# One-click unsubscribe support for emails 
 
 > [!IMPORTANT]
-> Google has clarified that senders that include an unsubscribe link in the email message will have until June 1st, 2024 to implement one-click unsubscribe in all commercial, promotional emails. 
+> Google has clarified that senders that include an unsubscribe link in the email message will have until June 1st, 2024 to implement one-click unsubscribe in all commercial and promotional emails. 
 >
 > Please refer to this FAQ from google for more up-to-date information [here](https://support.google.com/a/answer/14229414?sjid=761938282406717544-NC#zippy=%2Cdo-all-messages-require-one-click-unsubscribe)
 
@@ -49,7 +49,7 @@ Furthermore, email providers presently utilize the presence of this information 
 
 ## General functionality 
 
-When one-click unsubscribe feature is enabled, the product automatically includes two additional headers in the email -
+When one-click unsubscribe feature is enabled, the product automatically includes two additional headers in the email:
 1. List-Unsubscribe
 1. List-Unsubscribe-Post
 
@@ -73,7 +73,7 @@ Commercial emails using an [external link](compliance-overview.md#external-links
 
 If a [subscription center based compliance profile](real-time-marketing-outbound-subscription.md) is used in the email that is sent through Customer Insights - Journeys and the recipient select on the one-click unsubscribe link, then there are "two actions taken:"
 1. The recipient’s email address is set to opted-out for the purpose or the topic for which the email was sent.
-1. The Bulk Email attribute of the recipient’s contact record is set to Do Not Allow (that is, future commercial emails won't be sent to this contact).
+1. The Bulk Email attribute of the recipient’s contact record is set to **Do Not Allow** (that is, future commercial emails won't be sent to this contact).
 
 #### How to identify if a contact point consent record was updated because of a one-click unsubscribe action performed by the recipient?
 
@@ -83,7 +83,7 @@ Contact point consent (CPC) records that are updated due to the recipient clicki
 
 ### Outbound Marketing
 
-If the user opens a commercial email sent from an outbound marketing journey and they select the one-click unsubscribe link presented to them in the email client, then their contact record’s Bulk Email field will be set to Do Not Allow (that is, future commercial emails won't be sent to this contact). 
+If the user opens a commercial email sent from an outbound marketing journey and they select the one-click unsubscribe link presented to them in the email client, then their contact record’s Bulk Email field will be set to **Do Not Allow** (that is, future commercial emails won't be sent to this contact). 
 
 > [!IMPORTANT]
 > If you maintain a consent data store outside of Dynamics Customer Insights – Journeys, you will also need to consider how to synchronize consent changes made from one-click unsubscribe to your external systems.
@@ -91,7 +91,7 @@ If the user opens a commercial email sent from an outbound marketing journey and
 > [!IMPORTANT]
 > Customers who are using outbound marketing journeys and manage consent separately for multiple lines of business may need to update their implementation to properly respond to the one-click unsubscribe. Read the next section to understand how you can use a custom handler to manage this process according to your business needs.
 
-For outbound marketing journeys, one-click unsubscribe will set a contact’s Bulk Email field to Do Not Allow to prevent sending any commercial emails to the contact in the future. One-click unsubscribe for outbound marketing won't update subscription lists or any custom consent fields and additional work may be required at your end for handling that.
+For outbound marketing journeys, one-click unsubscribe will set a contact’s Bulk Email field to **Do Not Allow** to prevent sending any commercial emails to the contact in the future. One-click unsubscribe for outbound marketing won't update subscription lists or any custom consent fields and additional work may be required at your end for handling that.
 
 #### Creating a custom workflow to manage the one-click unsubscribe process
 
@@ -100,10 +100,10 @@ Outbound marketing customers that manage consent for different brands separately
 1. Create a process for custom unsubscribe.
    > [!div class="mx-imgBorder"]
    > ![Create unsubscribe process](media/create-unsubscribe-process.png "Create unsubscribe process")
-1. Create mandatory input parameter "contactid", make sure it is of "EntityReference" type and pointing to "Contact" entity.
+1. Create mandatory input parameter "**contactid**", make sure it is of "**EntityReference**" type and pointing to "**Contact**" entity.
    > [!div class="mx-imgBorder"]
    > ![Create a mandatory input parameter as contactid](media/add-an-input-parameter.png "Create a mandatory input parameter as contactid")
-1. Through "Add Step", describe changes that should happen to contact on unsubscribe (sample - Setting Phone and Fax to "do not allow" on one-click unsubscribe).
+1. Through "**Add Step**", describe changes that should happen to contact on unsubscribe (sample - Setting Phone and Fax to "**do not allow**" on one-click unsubscribe).
    > [!div class="mx-imgBorder"]
    > ![Describe changes when the functionality is unsubscribed](media/describe-changes-when-unsubscribed.png "Describe changes when the functionality is unsubscribed")
 1. Save & close and activate the process.
@@ -112,10 +112,10 @@ Outbound marketing customers that manage consent for different brands separately
 1. Go to [maker portal](https://make.powerapps.com/) and select correct environment.
    > [!div class="mx-imgBorder"]
    > ![Select the environment](media/select-the-environment.png "Select the environment")
-1. Select Setting definition entity, search for Outbound marketing one-click unsubscribe.
+1. Select **Setting definition** entity, search for **Outbound marketing one-click unsubscribe**.
    > [!div class="mx-imgBorder"]
    > ![Select the setting definitions to one-click unsubscribe](media/select-setting-definitions-to-unsubscribe.png "Select the setting definitions to one-click unsubscribe")
-1. Edit this value, make it part of, make sure that is pointing to unique name of your custom workflow we created earlier in step 2. - for example, for our case it would be new_msdyncrm_custom_unsubscribe and save it.
+1. Edit this value, make it part of, make sure that is pointing to unique name of your custom workflow we created earlier in **step 2**. For example, for our case it would be **new_msdyncrm_custom_unsubscribe** and save it.
    > [!div class="mx-imgBorder"]
    > ![Add the attribute values](media/add-the-attribute-values.png "Add the attribute values")
 1. Test that your handler is executed when one-click unsubscribe action is performed.
@@ -144,7 +144,7 @@ No. For all the compliance profile types, the product is designed to include a s
 
 ## In the case of outbound marketing emails that are sent to a subscription list, how does the system manage one-click unsubscribe? Does clicking the unsubscribe link remove the recipient from the subscription list?
 
-No. For any outbound marketing journey, we'll only the Bulk Email field on the recipient’s contact record to Do Not Allow. 
+No. For any outbound marketing journey, we'll only the Bulk Email field on the recipient’s contact record to **Do Not Allow**. 
 
 ## I have turned on the feature switch. Do I need to do anything else to enable one-click unsubscribe in my emails?
 No. 
@@ -159,3 +159,4 @@ Gmail considers several factors before surfacing the one-click unsubscribe link 
 
 If you have turned on the feature switch, all the future emails sent from the system includes the one-click unsubscribe headers. As long as the email contains the headers as per the specification, you can be rest assured that you're complying with google’s guidelines. To verify this, you can download the message or select on “Show Original” in the menu item of the message to verify that the headers are present. 
 
+[!INCLUDE [footer-include](./includes/footer-banner.md)]
