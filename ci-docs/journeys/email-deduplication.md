@@ -18,15 +18,11 @@ search.audienceType:
 > 
 > Microsoft doesn't provide support for this preview feature. Microsoft Dynamics 365 Technical Support won’t be able to help you with issues or questions. Preview features aren’t meant for production use, especially to process personal data or other data that are subject to legal or regulatory compliance requirements.
 
-Email deduplication allows you to prevent sending the same email more than once to the same email address. Email deduplication is a general setting that applies only to segment-based journeys.
+Email deduplication allows you to avoid sending duplicate emails in case of multiple contacts sharing the same email address. Email deduplication is a general setting that applies only to segment-based journeys and is disabled by default.
 
-Email deduplication is enabled in journeys through the email tile. If deduplication isn't enabled, the email tile will:
+When email deduplication is enabled, the journey will check the email addresses of the contacts in the segment once they reach the email tile, and only send one email to each unique address. For example, if three contacts have the same email address, only one of them will receive the email. The other two will be reported as **blocked** under the **Duplicate recipient address** category in the **Delivery and interaction details**. 
 
-- Execute multiple journeys simultaneously on the same email address.  
-- Send the same email twice to an email address if the same email is used in two tiles in the customer journey.  
-- If a customer journey is set to run "every week/day," for example, the same email will be sent to the same email address once per week/day. 
-
-Email deduplication is disabled by default.
+When email deduplication is disabled (default) the journey will send the email to every contact in the segment, even if they sahre an email. 
 
 ## How to enable email deduplication
 
@@ -45,13 +41,12 @@ When you view the insights, you'll see all duplicated email addresses in the **b
 
 ## Known issue
 
-Currently, the deduplication feature doesn't remove the second customer profile from an applicable journey when a duplicated email address is detected.
+Deduplication prevents sending an email more than once to the same email address, but it does not exclude other contacts sharing the same email from the journey logic. 
 
-An example of how this issue might affect you:
+For example, if two contacts share the same email address and the journey is set to "send a follow/up email if the contact does not open the first email":
 
-Let's say you have a customer who has two (or more) customer profiles (CP1 and CP2) with the same email address and you create a journey flow that says, "If my contact doesn't open an email, send a second email after a period of time."
--	The first email is sent only once (as duplication is detected).
--	If CP1 opens the first email, CP1 won't get the second email.
--	However, CP2 goes to “Not opened” branch and receives the second email.
+- the initial email is sent to only one of the contacts (because of deduplication).
+- if the contact who received the email opens it, it will not receive the follow up email.
+- Howver, the other contact sharing the same email address will go in the "not opened" branch and wil lget the follow-up email.
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
