@@ -56,6 +56,11 @@ Because journeys have a time zone set on them, quiet times respect the time zone
 
 The number of messages held for quiet times shows on the journey to provide information.
 
+You can also choose to change or disable quiet times for a specific message on a journey to support scenarios when a particular message in a journey should not be subject to regular quiet times settings.
+
+> [!div class="mx-imgBorder"]
+> ![Change message quiet times screenshot.](media/real-time-marketing-quiet-times-change-quiet-times.png "Change message quiet times screenshot")
+
 ## Quiet times and frequency caps
 
 Quiet times and frequency cap settings are independent. If a message is held for quiet times, the frequency cap is evaluated when the message is released from the quiet times hold.
