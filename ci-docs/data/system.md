@@ -7,6 +7,7 @@ author: NimrodMagen
 ms.author: nimagen
 ms.reviewer: mhart
 ms.custom: bap-template
+ms.collection: bap-ai-copilot 
 ---
 
 # View system configuration
