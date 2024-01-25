@@ -13,8 +13,6 @@ search.audienceType:
 
 # Set up and manage marketing forms for use in marketing pages
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide). To learn about marketing forms in Customer Insights - Journeys, see [Overview of Customer Insights - Journeys forms](real-time-marketing-form-overview.md)
 

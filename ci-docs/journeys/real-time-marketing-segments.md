@@ -13,8 +13,6 @@ search.audienceType:
 
 # Segmentation overview
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
 Customer Insights - Journeys uses [segments](segmentation-lists-subscriptions.md) directly from outbound marketing and [Customer Insights - Data](/dynamics365/customer-insights/index). You can view the segments available to you in Customer Insights - Journeys by going to **Audience** > **Segments**.
 
 ## Segments from outbound marketing

@@ -13,8 +13,6 @@ search.audienceType:
 
 # Set expiration dates for selected email tiles in a customer journey
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
 

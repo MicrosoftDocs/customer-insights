@@ -10,8 +10,6 @@ ms.reviewer: v-wendysmith
 
 # Describe customer data for data unification
 
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
-
 The first step in unification is selecting the tables and columns within your datasets that you want to unify and map columns to a descriptive type. Select tables that contain customer-related details such as name, address, phone number, and email. You can select one or more tables.
 
 [!INCLUDE [m3-first-run-note](includes/m3-first-run-note.md)]

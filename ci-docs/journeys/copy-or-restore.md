@@ -13,8 +13,6 @@ search.audienceType:
 
 # Copy or restore environments
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
 Environment management operations are a standard feature of model-driven apps in Dynamics 365 (Sales, Customer Service, Field Service, Customer Insights - Journeys, and Project Service Automation). Customer Insights - Journeys, introduces a couple of additional steps to ensure that your back-up data that isn't stored in Dataverse if you're managing across environments.
 
 Customer Insights - Journeys services (including the marketing-insights service) run in parallel with your Customer Insights - Journeys environment, and thus follow their own lifecycle. These services aren't directly accessible to users, and the data they contain isn't included when copying, backing up, or restoring a Customer Insights - Journeys environment. This means that interaction records (such as email clicks and website visits) and files (such as those used in emails and marketing pages) aren't included when you copy, backup, or restore an environment.

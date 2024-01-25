@@ -11,8 +11,6 @@ ms.custom: bap-template
 
 # Unify customer columns for data unification
 
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
-
 In this step of the unification process, choose and exclude columns to merge within your unified profile table. For example, if three tables had email data, you might want to keep all three separate email columns or merge them into a single email column for the unified profile. Dynamics 365 Customer Insights - Data automatically combines some columns. For individual customers, you can group related profiles into a cluster.
 
 :::image type="content" source="media/m3_unify.png" alt-text="Unify customer fields page in the data unification process showing table with merged fields that define the unified customer profile.":::

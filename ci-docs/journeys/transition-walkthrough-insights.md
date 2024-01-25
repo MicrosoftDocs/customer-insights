@@ -13,8 +13,6 @@ search.audienceType:
 
 # Transition insights and reports
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
 Marketing analytics reports are a critical component of success campaigns. Among other things, reports determine:
 -	How many emails have bounced, delivered, or opened?
 -	Which contacts went to which path in a journey?

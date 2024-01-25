@@ -12,8 +12,6 @@ search.audienceType:
 ---
 # Create custom channels in Customer Insights - Journeys
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
 This article explains how to extend Customer Insights - Journeys using the communication channels you're familiar with to engage your customers in moments that matter. Use Customer Insights - Journeys personalization, consent, and analytics tools to create compelling content and deliver it over your preferred communication channels such as a local SMS provider or WhatsApp. Capitalize on proven channels, plug any of them into your new or existing journeys, and unfold their true potential with Dynamics 365 Customer Insights - Journeys to maximize customer engagement.
 
 ## Install a custom channel app

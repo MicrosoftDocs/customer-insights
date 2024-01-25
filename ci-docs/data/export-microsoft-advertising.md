@@ -12,8 +12,6 @@ ms.author: philk
 
 [!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
-
 Export Dynamics 365 Customer Insights - Data segments to Microsoft Advertising to create Customer Match audiences. Use these audiences for your ad campaigns.
 
 ## Prerequisites

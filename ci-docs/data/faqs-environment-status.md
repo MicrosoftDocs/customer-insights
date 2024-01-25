@@ -8,6 +8,7 @@ ms.topic: article
 author: m-hartmann
 ms.author: mhart
 ms.reviewer: wameng
+ms.collection: bap-ai-copilot 
 ---
 
 # FAQ for Environment status summary (preview)

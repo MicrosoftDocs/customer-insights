@@ -13,7 +13,6 @@ search.audienceType:
 
 # Enhance email engagement by allowing browser viewing
 
-[!INCLUDE[consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 You can add a link to allow customers to view your emails in a web browser. This enables customers to see emails exactly as you created them, improving their experience and making your marketing campaigns more effective. 
 

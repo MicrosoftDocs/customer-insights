@@ -13,8 +13,6 @@ search.audienceType:
 
 # Integrate a custom captcha service with Customer Insights - Journeys forms
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
 Customer Insights - Journeys forms allow you to use custom captcha bot protection to validate form submissions. This article gives an example of how to integrate [Google reCAPTCHA](https://www.google.com/recaptcha/about/). The flow is similar for other captcha services.
 
 > [!NOTE]

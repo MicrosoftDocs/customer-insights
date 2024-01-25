@@ -12,8 +12,6 @@ ms.author: philk
 
 [!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
-
 Store data from your Dynamics 365 Customer Insights - Data in a Blob storage or use it to transfer your data to other applications.
 
 ## Prerequisites

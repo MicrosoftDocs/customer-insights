@@ -13,8 +13,6 @@ search.audienceType:
 
 # Create branded, customized preference centers to manage customer consent
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
 Preference centers in Customer Insights - Journeys allow you to provide customers with branded experiences to sign up for communications and fine-tune their preferences to ensure they receive the right communications.
 
 ## Creating preference centers

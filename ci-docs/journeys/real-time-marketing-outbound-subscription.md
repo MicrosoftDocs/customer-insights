@@ -13,8 +13,6 @@ search.audienceType:
 
 # Use outbound subscription centers in Customer Insights - Journeys
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
 This article explains how to use outbound marketing subscription centers in real-time journeys. This capability enables you to start using real-time journeys before adopting the newer preference center compliance profiles. You should only use a subscription center in real-time journeys if you're already using outbound marketing to send emails and aren't yet ready to fully transition to real-time journeys. To learn more about transitioning from outbound marketing, visit [Consent management and double opt-in transition guidance](real-time-marketing-consent-transition.md)
 
 > [!IMPORTANT]
