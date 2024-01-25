@@ -1,7 +1,7 @@
 ---
 title: Manage Customer Insights - Journeys forms
 description: Learn how to manage forms in Dynamics 365 Customer Insights - Journeys.
-ms.date: 12/20/2023
+ms.date: 01/16/2024
 ms.topic: article
 author: petrjantac
 ms.author: alfergus
@@ -12,8 +12,6 @@ search.audienceType:
 ---
 
 # Manage Customer Insights - Journeys forms
-
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 This article explains how to edit, un-publish, and manage forms in Customer Insights - Journeys.
 
@@ -44,7 +42,7 @@ Once you select a field on the canvas, you can see its properties in the right p
 - **Hide field**: If enabled, the field isn't visible in the form. You can use hidden fields to store extra metadata along with the form submission.
 
 > [!NOTE]
-> Make sure that all phone number field validation is set to "Mobile Phone." This out-of-the-box validation checks if the phone number format is compatible with the phone number format requirements for contact consent point creation. The phone number must be in the international format starting with a "+" sign.
+> Make sure that the phone number field validation is set to "Phone number." This out-of-the-box validation checks if the phone number format is compatible with the phone number format requirements for contact point consent creation. The phone number must be in the international format starting with a "+" sign.
 
 ### Custom validation
 
@@ -52,10 +50,32 @@ To create custom validation, enable the **Validation** option and select **Custo
 
 ## Style your forms using Theme
 
-The Theme section can be opened by selecting the brush icon in the right pane. Theme controls the style of all types of fields, buttons, and text. Once you set the theme of a field, it affects all fields of the same type in your form.
+The **Theme** section can be opened by selecting the brush icon in the right pane. Theme controls the style of all types of fields, buttons, and text. Once you set the theme of a field, it affects all fields of the same type in your form.
+
+The theme feature is a user-friendly interface for editing CSS class definitions in the form HTML. It works only with out-of-the-box form styles. Custom CSS classes aren't visualized, but you can still edit your custom CSS classes using the HTML code editor.
 
 > [!div class="mx-imgBorder"]
 > ![Edit style of your input field using Theme.](media/real-time-marketing-form-theme.png)
+
+**Theme** section allows you to configure:
+
+- **Background**: Define the inner background color and border style for the whole form.
+- **Text styles**: Define Heading 1, Heading 2, Heading 3, Paragraph, the Field label. The field label style doesn't affect the checkbox and radio button labels, as these labels can be configured separately. The text style definition includes font family, font size, font color, text style, and line height. You can also set the inner and outer spacing, width, and alignment. On top of these text styles, you can also set the label position (top, left, right) and the required color for your field labels.
+- **Input fields** are grouped into 3 categories:
+  1. Text input, dropdown, and lookup fields: These three visual styles of fields share the same style definition. You can define font family, size, color, and style for placeholder and input text styles. You can also set the field background color, menu background color, rounded corners, border, size alignment, and inner and outer spacing. Note that the field label can be configured in text styles.
+  1. Radio button: The radio button has its own label configuration, allowing you to set the font family and size. You can set the text color, styles, and background color for all options and for the selected option. You can also define rounded corners, width, and inner and outer spacing of your radio buttons.
+  1. Checkbox - checkbox field has its own label configuration allowing you to set the font family, size. You can set different text color, styles and background color for all options and for the selected option. You can also define rounded corners, width, the inner and outer spacing of your checkboxes.
+- **Buttons and links**: The button definition allows you to set font family, size, color, text styles, button color, border alignment, and the inner and outer spacing. The hyperlink definition allows you to set the font family, size, color, and text styles.
+
+> [!NOTE]
+> Forms created before the September 2023 release have limited options to change the form styling using the theme feature. You can enable more style options by selecting the **Enable** button in the theme section. This updates your form styles to the latest version compatible with the theme feature.
+
+### Custom fonts
+
+There are two ways to use custom fonts in your form:
+
+1. Set the font to "inherit": Recommended for forms **embedded** into your own page. The form inherits the form from your page.
+1. Add your own custom font: Recommended for forms **hosted as standalone page**. You can upload your custom font using the theme feature in the custom fonts section. Your uploaded custom fonts can be then used in all text style definitions.
 
 ### Preview: Copilot - Forms theme assistant
 
@@ -67,7 +87,7 @@ The Theme section can be opened by selecting the brush icon in the right pane. T
 > [!IMPORTANT]
 > You must only use the theme assistant with websites that you own and operate. The theme assistant should not be used to copy third-party websites.
 
-The theme assistant is a Copilot feature in Customer Insights - Journeys. You can use the theme assistant to fetch styles from an existing website that you own and control. To use a theme, enter the website URL and select **Fetch styles**. This process may take a few minutes. You can continue your work and return back later to check the result. Once the assistant fetches the styles from your website, it applies the styles to the theme of your form.
+The theme assistant is a Copilot feature in Customer Insights - Journeys. You can use the theme assistant to fetch styles from an existing website that you own and control. To use a theme, enter the website URL and select **Fetch styles**. This process might take a few minutes. You can continue your work and return back later to check the result. Once the assistant fetches the styles from your website, it applies the styles to the theme of your form.
 
 > [!div class="mx-imgBorder"]
 > ![Fetch styles from your website using Copilot.](media/real-time-marketing-form-theme-copilot.png)

@@ -7,11 +7,10 @@ ms.topic: how-to
 author: zacookmsft
 ms.author: zacook
 ms.custom: bap-template
+ms.collection: bap-ai-copilot 
 ---
 
 # Create and manage predictions
-
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
 Dynamics 365 Customer Insights - Data comes with various options that leverage AI and machine learning to predict data.
 

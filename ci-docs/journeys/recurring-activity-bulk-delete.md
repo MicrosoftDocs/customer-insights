@@ -13,8 +13,6 @@ search.audienceType:
 
 # Recurring activity bulk deletion
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
 ## What is msdyncrm_mktactivity?
 
 The **Marketing Activity** entity (msdyncrm_mktactivity) is used by Customer Insights - Journeys Services to send system updates. Each activity is processed by the Customer Insights - Journeys data plugin (Microsoft.Dynamics.Crm.MarketingPlugins.Plugins.Data), which then executes the designated action.

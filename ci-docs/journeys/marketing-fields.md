@@ -13,8 +13,6 @@ search.audienceType:
 
 # Create and manage input fields for use in forms
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
 

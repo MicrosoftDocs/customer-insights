@@ -18,8 +18,6 @@ ms.custom:
 
 # Create dynamic email content in multiple languages
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
 When you have customers in multiple countries and regions, you often need to send them email with the same content but with small variations based on their location or language. Dynamics 365 Customer Insights - Journeys offers two ways to do that. Both methods use the [audience profile](./real-time-marketing-audience-data.md) to determine which content to deliver.
 
 - Create a separate email for each country you want to send to and in each language your customers speak. This method is easy to set up, although time-consuming. But because each audience requires a different email, the number of emails is higher.

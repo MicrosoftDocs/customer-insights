@@ -13,8 +13,6 @@ search.audienceType:
 
 # Personalize content using predefined dynamic text
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
 Personalized messages help marketers drive engagement. A common way to personalize content is to use dynamic text (also known as placeholder text) that is automatically replaced with recipients' personal details when the message is sent. For example, rather than using a generic greeting like “Dear customer,” you can use dynamic text (“Dear ``{{FirstName}}``”) that is replaced with the customer name (“Dear John”) upon sending the message.
 
 An instance of placeholder text such as ``{{Firstname}}`` is called predefined dynamic text. Before you can use dynamic text, you need to define three pieces of information:
@@ -203,11 +201,11 @@ Select the tables you want to add or remove, then select **Save**.
 
 When Customer Insights – Data is present and connected, you can use customer measures (calculated metrics) to define dynamic text when using customer profiles. This opens up another source of data that can be used to further personalize messages and journeys. For example, you can define a calculated metric such as *LifeTimeSpend* or *CurrentYearSpend* for each customer. These metrics can then be used to define dynamic text to include the values in messages, delivering more personalized and useful content.
 
-##### Creating measures
-
 Watch this video to learn more:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RW1fY3B]
+
+##### Creating measures
 
 See [Use calculated measures in Customer Insights - Journeys and other Dataverse-based applications](/dynamics365/customer-insights/data/dataverse-measures) to learn how to create measures in Customer Insights – Journeys and what types of measures are available for use in the app.
 

@@ -11,8 +11,6 @@ ms.custom: bap-template
 
 # Deduplication concepts and scenarios
 
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
-
 In this simple example, records 1, 2 and 3 share either an email or phone, and represent the same person.
 
 |ID  |Name |Phone |Email |

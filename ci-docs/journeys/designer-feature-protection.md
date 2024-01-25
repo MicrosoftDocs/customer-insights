@@ -13,8 +13,6 @@ search.audienceType:
 
 # Control access to designer features
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
 > [!IMPORTANT]
 > The designer is only available in real-time journeys. It is not available in outbound marketing.
 

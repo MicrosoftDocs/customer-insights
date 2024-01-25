@@ -1,7 +1,7 @@
 ---
 title: Personalize lists of content in emails
 description: Learn how to personalize lists in Dynamics 365 Customer Insights - Journeys.
-ms.date: 09/20/2023
+ms.date: 01/17/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -12,8 +12,6 @@ search.audienceType:
 ---
 
 # Personalize lists of content in emails
-
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 Lists are a common way to organize information to improve readability. Examples include a list of sessions in an event, a list of products, or a list of service tickets. Customer Insights – Journey makes it easy to create lists and personalize those lists to include only the information that is relevant for the recipient in a way that is easy to parse and act upon.
 

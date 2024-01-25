@@ -13,8 +13,6 @@ search.audienceType:
 
 # Upload, manage, and use images, files, and videos in online content
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
 > [!IMPORTANT]
 > Dynamics 365 Customer Insights - Journeys may transfer customer data outside of the selected Azure geographic location when using the following features that use Azure CDN (content delivery network) to operate globally:
 > -	[Asset library](upload-images-files.md)
@@ -29,7 +27,7 @@ Shareable assets are critical for meaningful and successful customer experiences
 >
 > You'll see an error message if you attempt to upload a file of an unsupported type.
 >
-> The maximum file size is: 
+> The maximum file size is:
 > - 5MB for images
 > - 32MB for documents
 > - 128MB for videos
@@ -73,8 +71,7 @@ To add an image, start by dragging an image element onto your design, which posi
 > [!div class="mx-imgBorder"]
 > ![browse images from asset library and use them](media/use-images-from-library.png "browse images from asset library and use them")
 
-To find an image more quickly, try using the **Filter** search bar to look for specific keywords.
-If the image you need isn't there, select **+Upload** to add a new one.
+To find an image more quickly, try using the **Filter** search bar to look for specific keywords. If the image you need isn't there, select **+Upload** to add a new one.
 
 Additionally, the Copilot assistant automatically identifies a selection of images from your library that best complement your content. Quickly and easily choose images that resonate with your audience without having to spend time searching for them.
 
@@ -82,6 +79,7 @@ When you add an image element to your content or need to [link to a file or vide
 
 > [!IMPORTANT]
 > The copilot assistant smart recommendation feature is currently in preview.
+
 ### See also
 
 [Link to documents stored in the asset library](/dynamics365/marketing/real-time-marketing-email#link-to-documents-and-videos-stored-in-the-asset-library)
