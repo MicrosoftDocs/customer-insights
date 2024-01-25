@@ -7,6 +7,7 @@ ms.topic: how-to
 author: joytaylor
 ms.author: joytaylor
 ms.custom: bap-template
+ms.collection: bap-ai-copilot 
 ---
 
 # Predict product recommendations (preview)

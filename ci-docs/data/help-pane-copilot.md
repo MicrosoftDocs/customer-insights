@@ -7,6 +7,7 @@ ms.topic: how-to
 author: nikeller
 ms.author: nikeller
 ms.custom: bap-template
+ms.collection: bap-ai-copilot 
 ---
 
 # Get answers to questions about capabilities from Copilot (preview)
