@@ -16,7 +16,10 @@ search.audienceType:
 > [!IMPORTANT]
 > Google has clarified that senders that include an unsubscribe link in the email message will have until June 1st, 2024 to implement one-click unsubscribe in all commercial and promotional emails. 
 >
-> Please refer to this FAQ from google for more up-to-date information [here](https://support.google.com/a/answer/14229414?sjid=761938282406717544-NC#zippy=%2Cdo-all-messages-require-one-click-unsubscribe)
+> Please refer to the FAQ from google for more up-to-date information [here](https://support.google.com/a/answer/14229414?sjid=761938282406717544-NC#zippy=%2Cdo-all-messages-require-one-click-unsubscribe)
+
+> [!NOTE]
+> This is a pre release documentation. The feature switch to turn this capability on isn't available yet. We will update this page when the feature switch becomes available.
 
 Email providers and the [underlying protocols](https://datatracker.ietf.org/doc/html/rfc8058) support giving email recipients the ability to unsubscribe from emails in one-click without leaving their email application. For example, Google surfaces an Unsubscribe link at the top of their email UI. 
 
