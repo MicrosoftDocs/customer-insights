@@ -8,6 +8,7 @@ ms.topic: conceptual
 author: nils-2m
 ms.author: nikeller
 ms.reviewer: mhart
+ms.collection: bap-ai-copilot 
 ---
 
 # FAQ for docs-based Q&A capability (preview)

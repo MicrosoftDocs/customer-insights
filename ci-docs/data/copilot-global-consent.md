@@ -7,6 +7,7 @@ ms.topic: conceptual
 author: radsay01
 ms.author: rsayyaparaju 
 ms.custom: bap-template
+ms.collection: bap-ai-copilot 
 ---
 
 # Give consent to use Copilot in Customer Insights - Data
