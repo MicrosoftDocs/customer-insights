@@ -5,10 +5,7 @@ ms.date: 12/08/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
-search.audienceType: 
-  - admin
-  - customizer
-  - enduser
+ms.collection: bap-ai-copilot
 ---
 
 # Use feature switches to enable or disable optional and preview features
