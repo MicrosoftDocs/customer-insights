@@ -33,42 +33,42 @@ Let's add "Campaign" field to your forms in this step-by-step guide.
 1. Go to **Power Apps**, and find the **Form** table (msdynmkt_marketingform) under Dataverse -> Tables
 
     > [!div class="mx-imgBorder"]
-    > ![Add consent element to the form.](media/real-time-marketing-form-customization-step1.png)
+    > ![Form table.](media/real-time-marketing-form-customization-step1.png)
 
 1. Create a new column of Form table, which is used to store the reference to your campaign. Select button New and select Column. Changing Data type to *Lookup* adds drop-down menu *Related table*. Select Campaign in Related table. Add Display name and Save the new column.
 
     > [!div class="mx-imgBorder"]
-    > ![Add consent element to the form.](media/real-time-marketing-form-customization-step2.png)
+    > ![Create a new column of Form table.](media/real-time-marketing-form-customization-step2.png)
 
 1. Go to **Data experiences -> Forms** to access the new form editor form
 
     > [!div class="mx-imgBorder"]
-    > ![Add consent element to the form.](media/real-time-marketing-form-customization-step3.png)
+    > ![Data experiences -> Forms.](media/real-time-marketing-form-customization-step3.png)
 
 1. Select **Form Settings** from the list
 
     > [!div class="mx-imgBorder"]
-    > ![Add consent element to the form.](media/real-time-marketing-form-customization-step4.png)
+    > ![Form Settings.](media/real-time-marketing-form-customization-step4.png)
 
 1. Drag and drop the Campaign field from the left column to the designate place in the form
 
     > [!div class="mx-imgBorder"]
-    > ![Add consent element to the form.](media/real-time-marketing-form-customization-step5.png)
+    > ![Add Campaign field.](media/real-time-marketing-form-customization-step5.png)
 
 1. It's important to add the Campaign field to the main form, otherwise the custom field can't be rendered. Go to Data Experiences -> Forms and select form *Information* with Form type *Main*
 
     > [!div class="mx-imgBorder"]
-    > ![Add consent element to the form.](media/real-time-marketing-form-customization-step6.png)
+    > ![Add the Campaign field to the main form.](media/real-time-marketing-form-customization-step6.png)
 
 1. Select the Campaign field in the left column to add it to the form. Once you see the Campaign field properties in the right column, select Hide checkbox to hide this field on the main form
 
     > [!div class="mx-imgBorder"]
-    > ![Add consent element to the form.](media/real-time-marketing-form-customization-step7.png)
+    > ![Hide the field.](media/real-time-marketing-form-customization-step7.png)
 
 1. Select **Save and publish** button in the top right corner to save your changes
 1. Once you create a new marketing form in Customer Insights – Journeys, you're able to see the Campaign field in the form Settings. You might need to reload the Customer Insights – Journeys app to reflect the customization changes, press F5 to reload the browser tab
     > [!div class="mx-imgBorder"]
-    > ![Add consent element to the form.](media/real-time-marketing-form-customization-step8.png)
+    > ![Final result in form editor.](media/real-time-marketing-form-customization-step8.png)
 
 > [!IMPORTANT]
 > It is recommended to deploy changes of forms entity within a managed solution. [Learn more](https://learn.microsoft.com/power-platform/alm/solution-concepts-alm)
