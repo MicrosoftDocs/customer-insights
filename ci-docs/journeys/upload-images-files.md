@@ -5,10 +5,7 @@ ms.date: 12/14/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
-search.audienceType: 
-  - admin
-  - customizer
-  - enduser
+ms.collection: bap-ai-copilot
 ---
 
 # Upload, manage, and use images, files, and videos in online content
