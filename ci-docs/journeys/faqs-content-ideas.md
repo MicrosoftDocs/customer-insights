@@ -5,10 +5,9 @@ ms.date: 08/18/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
-search.audienceType: 
-  - admin
-  - customizer
-  - enduser
+ms.collection: bap-ai-copilot
+ms.custom: 
+  - transparency-note
 ---
 
 # Responsible AI FAQs for content ideas

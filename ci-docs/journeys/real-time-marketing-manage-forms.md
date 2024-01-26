@@ -5,10 +5,7 @@ ms.date: 01/16/2024
 ms.topic: article
 author: petrjantac
 ms.author: alfergus
-search.audienceType: 
-  - admin
-  - customizer
-  - enduser
+ms.collection: bap-ai-copilot
 ---
 
 # Manage Customer Insights - Journeys forms
