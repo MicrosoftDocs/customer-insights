@@ -53,6 +53,10 @@ To determine how much capacity you need, consider the following:
 -	For high-volume engagement, how many interactions (email/text message/push notification/custom channel) will you send per month? Divide by 10 to get the number of interacted people you need.
 -	For lower-volume engagement, how many leads, contacts, profiles, or custom entities do you think you engage with on an annual basis?
 
+## Step 3: Sign-up for an SMS provider of your choice
+
+If you plan to use SMS, you must select a provider such as Azure Communication Services and create a separate account with that provider. The Dynamics 365 Customer Insights license does not provide phone numbers and SMS delivery services for production use. [See a list](real-time-marketing-text-messaging-setup.md) of supported providers and sign-up for the provider of your choice.
+
 ## Next steps
 
 After purchasing, go to [Install and manage Dynamics 365 Customer Insights](setup.md) to install the Customer Insights - Journeys and Customer Insights - Data applications on your existing Dataverse environments and get set up.
