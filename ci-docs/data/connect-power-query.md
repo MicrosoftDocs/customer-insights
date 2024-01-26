@@ -98,7 +98,7 @@ You can transfer the data source ownership to other people in your organization.
 
 The user performing this action must have a *Dataverse Administrator* role.
 
-1. Go to [PowerApps](https://make.powerapps.com).
+1. Go to [Power Apps](https://make.powerapps.com).
 
 1. Select the Dataverse environment that maps to your Customer Insights environment.
 
