@@ -90,6 +90,26 @@ You must be the owner of the dataflow to edit it.
 
 Loading data can take time. After a successful refresh, review the ingested data from the [**Data** > **Tables**](tables.md) page.
 
+## Transfer Power Query data source ownership
+
+You can transfer the data source ownership to other people in your organization. For example, if the owner leaves the organization or if changes are required for collaboration purposes 
+
+### Transfer the ownership,
+
+The user performing this action must have a *Dataverse Administrator* role.
+
+1. Go to [Power Apps](https://make.powerapps.com).
+
+1. Select the Dataverse environment that maps to your Customer Insights environment.
+
+1. Go to **Dataflows** and select **All Dataflows**.
+
+1. Search for the owner of the dataflow which you want to take ownership.
+
+1. Select the ellipsis &vellip; and select **Change Owner**.
+
+1. Enter the name of the new owner and select **Change Owner**.
+
 ## Next steps
 
 - [Data unification overview](data-unification.md)
