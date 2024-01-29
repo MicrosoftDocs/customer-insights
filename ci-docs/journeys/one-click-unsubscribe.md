@@ -64,6 +64,9 @@ The concepts of consent management differ between Customer Insights - Journeys a
 
 ### Customer Insights - Journeys
 
+> [!NOTE]
+> Customer Insights - Journeys has a multi-brand consent feature that customers need to enable before they can use one-click unsubscribe feature. For outbound marketing, the multi-brand consent feature is irrelevant and does not affect anything.
+
 In Customer Insights - Journeys, consent is collected, managed, and enforced at a [contact point level](real-time-marketing-compliance-settings.md#contact-point-consent) (that is, an email address, phone number or a custom channel address). Each email can be sent to only one purpose and one (optional) topic. Any commercial email, sent from real-time journeys, will include the one-click unsubscribe headers.
 
 If the email only has a commercial purpose selected, then once the recipient selects the one-click unsubscribe link in their email client, we mark them as opted-out for the specific purpose. This would ensure that any future emails for the same purpose wouldn't be sent to that user.
