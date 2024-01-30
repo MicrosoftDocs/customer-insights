@@ -12,8 +12,6 @@ ms.author: philk
 
 [!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
-
 Export segment lists or other data from Dynamics 365 Customer Insights - Data to [InMobi](https://www.inmobi.com/).
 
 ## Prerequisites

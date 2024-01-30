@@ -22,8 +22,6 @@
       href: home.md
     - name: Work with tags and columns
       href: work-with-tags-columns.md
-    - name: Integrate with Customer Insights - Journeys
-      href: marketing-get-started.md
 
 - name: Troubleshooting
   href: /troubleshoot/dynamics-365/customer-insights/welcome-customer-insights
@@ -41,18 +39,18 @@
          href: data-sources-single.md
        - name: Connect to data in Azure Data Lake Storage
          href: connect-common-data-model.md
+       - name: Connect to an Azure Data Lake Storage account by using a Microsoft Entra service principal
+         href: connect-service-principal.md
        - name: Connect to Azure Synapse Analytics
          href: connect-synapse.md
        - name: Connect to data in Microsoft Dataverse
          href: connect-dataverse.md
-       - name: Connect data stored in Delta Lake format from your Azure Data Lake Storage
+       - name: Connect to data in Azure Data Lake Storage - Delta Lake
          href: connect-delta-lake.md
        - name: Add a data sources via Power Query connectors
          href: connect-power-query.md
     - name: Manage existing data sources
       href: data-sources-manage.md
-    - name: Connect to an Azure Data Lake Storage account by using a Microsoft Entra service principal
-      href: connect-service-principal.md
     - name: Enrichment for data sources
       href: data-sources-enrichment.md
     - name: Incremental refresh for data sources
@@ -68,15 +66,23 @@
   items:
     - name: Data unification overview
       href: data-unification.md
-    - name: Select source fields
+    - name: Customer data
       href: data-unification-map-tables.md
-    - name: Remove duplicates in each table
-      href: data-unification-duplicates.md
-    - name: Deduplication considerations
-      href: data-unification-duplicates-considerations.md
-    - name: Match conditions
-      href: data-unification-match-tables.md
-    - name: Unify customer fields
+    - name: Deduplication rules
+      items: 
+        - name: Remove duplicates in each table
+          href: data-unification-duplicates.md
+        - name: Deduplication concepts and scenarios
+          href: data-unification-concepts-deduplication.md
+        - name: Precision and fuzzy matching
+          href: data-unification-fuzzy-matching.md
+    - name: Matching rules
+      items: 
+        - name: Define matching rules
+          href: data-unification-match-tables.md
+        - name: Precision and fuzzy matching
+          href: data-unification-fuzzy-matching.md
+    - name: Unify data
       href: data-unification-merge-tables.md
     - name: Review data unification
       href: data-unification-review.md
@@ -283,6 +289,8 @@
       href: measure-templates.md
     - name: Schedule measures
       href: measures-schedule.md
+    - href: dataverse-measures.md
+      name: Use measures with Dataverse apps
           
 - name: Predictions and custom models
   items:
@@ -357,6 +365,13 @@
     - name: Manage environment settings
       href: manage-environments.md
 
+- name: Integrations with other apps
+  items:
+    - name: Integrate with Customer Insights - Journeys
+      href: marketing-get-started.md
+    - name: Integrate with other Dynamics 365 applications
+      href: integrate-d365-apps.md
+
 - name: APIs
   items:
     - name: Dataverse APIs for Customer Insights - Data
@@ -392,27 +407,11 @@
       href: faqs-segment-creation.md
 
 - name: More resources
-  items: 
-  - name: Learning catalog
-    items:
-      - name: B2B documentation
-        href: b2b/work-with-business-accounts.md
-      - name: Certify as Microsoft Customer Data Platform Specialist
-        href: /certifications/exams/mb-260?tab=tab-instructor-led
-      - name: Get started with Customer Insights - Data
-        href: /training/modules/get-started-customer-data-platform/
-      - name: Ingest data
-        href: /training/modules/ingest-data-customer-insights/
-      - name: Create a unified customer profile
-        href: /training/modules/unified-customer-profile/
-      - name: Work with Customer Insights - Data
-        href: /training/modules/working-with-customer-insights/
-      - name: Enrich data and make predictions
-        href: /training/modules/enrich-data/
-      - name: Manage external connections
-        href: /training/modules/configure-third-party-connections/
-      - name: Administer Customer Insights - Data
-        href: /training/modules/administer-customer-data-platform/
+  items:
+  - name: B2B documentation
+    href: b2b/work-with-business-accounts.md
+  - name: Certify as Microsoft Customer Data Platform Specialist
+    href: /certifications/exams/mb-260?tab=tab-instructor-led
   - name: Removed/deprecated features
     href: removed-deprecated-features-customer-insights.md
   - name: Get support

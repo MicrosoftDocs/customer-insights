@@ -17,8 +17,6 @@ ms.custom:
 
 # A/B tests in Dynamics 365 Customer Insights - Journeys
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
 Customer Insights - Journeys uses powerful A/B tests to examine your trigger-based customer journeys, allowing you to gain insights into how best to reach your customers.
 
 Using A/B tests, you can measure which channel or content messaging strategy leads to higher success. Each test compares a control group of users (version A) against a variant (version B). The control group receives a default experience. The variant group receives a different experience or message. By comparing the results of the groups, you can determine which is the most effective.

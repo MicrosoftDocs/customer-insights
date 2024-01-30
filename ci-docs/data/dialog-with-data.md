@@ -7,6 +7,7 @@ author: radsay01
 ms.author: rsayyaparaju
 ms.reviewer: mhart
 ms.custom: bap-template
+ms.collection: bap-ai-copilot 
 ---
 
 # Have a dialog with data using Copilot in Customer Insights - Data (preview)

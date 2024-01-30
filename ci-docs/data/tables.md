@@ -1,7 +1,7 @@
 ---
 title: "Tables in Customer Insights - Data"
 description: "View data on the Tables page."
-ms.date: 09/01/2023
+ms.date: 01/30/2024
 ms.reviewer: mhart
 ms.topic: conceptual
 author: mukeshpo
@@ -9,8 +9,6 @@ ms.author: mukeshpo
 ---
 
 # Tables in Customer Insights - Data
-
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
 After [configuring your data sources](data-sources.md), evaluate the quality of the ingested data on the **Tables** page. Multiple capabilities of Dynamics 365 Customer Insights - Data are built around these tables. Reviewing them closely can help you validate the output of those capabilities.
 
@@ -69,9 +67,11 @@ Some Customer Insights - Data tables are available in Dataverse. The sections be
 - [Prediction](#prediction)
 - [Segment membership](#segment-membership)
 
+[Measures created as tables](dataverse-measures.md) are also available in Dataverse.
+
 ### CustomerProfile
 
-This table contains the unified customer profile from Customer Insights - Data. The schema for a unified customer profile depends on the tables and attributes used in the data unification process. A customer profile schema usually contains a subset of the attributes from the [Common Data Model definition of CustomerProfile](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsights/customerprofile).
+This table contains the unified customer profile from Customer Insights - Data. The schema for a unified customer profile depends on the tables and attributes used in the data unification process.
 
 ### AlternateKey
 

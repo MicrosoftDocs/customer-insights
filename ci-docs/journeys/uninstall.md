@@ -1,7 +1,7 @@
 ---
 title: Uninstall Customer Insights
 description: How to remove Dynamics 365 Customer Insights.
-ms.date: 09/15/2023 
+ms.date: 12/01/2023 
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -12,8 +12,6 @@ search.audienceType:
 ---
 
 # Uninstall Customer Insights
-
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 You can remove Customer Insights from any Dynamics 365 instance where it's installed. After removing it, you'll end up with a Customer Insights license that you can use on another Dynamics 365 instance, if desired.
 
@@ -63,19 +61,19 @@ To delete Dynamics 365 from an instance, first open the installation management 
 Solutions labelled "Used outside of Customer Insights - Journeys" are used by other Dynamics 365 apps such as Dynamics 365 Sales, Customer Service Hub, Intelligent Order Management Features, and others. It's **not safe to uninstall the shared solutions** as it can break related workloads, so it's recommended to skip those.
 
 > [!NOTE]
-> In the following tables, names of solutions used outside of Customer Insights - Journeys are struck through, indicating that you should not delete them because they affect other apps.
+> In the following tables, names of solutions used outside of Customer Insights - Journeys are bold, indicating that you should not delete them because they affect other apps.
 
 Moments-based marketing:
 
 | Solution name | Used outside of Customer Insights - Journeys |
 | -------------- | ------------------------------ |
 | DynamicsMKT_AnchorSolution | No |
-| ~~DynamicsMKT_CxpAnalytics~~ | Yes |
+| **DynamicsMKT_CxpAnalytics** | Yes |
 | DynamicsMKT_Configuration | No |
 | DynamicsMKT_OcIntegration | No |
 | msdyn_InsightsAnalyticsMKTConfiguration | No |
 | msdyn_DataInsightsAndAnalyticsForMKT | No |
-| ~~msdyn_DataInsightsAndAnalytics~~ | Yes |
+| **msdyn_DataInsightsAndAnalytics** | Yes |
 | DynamicsMKT_Sitemap_RTMDefault | No |
 | DynamicsMKT_StandaloneSitemap | No |
 | DynamicsMKT_Sitemap | No |
@@ -84,14 +82,14 @@ Moments-based marketing:
 | DynamicsMKT_TeamsEventsIntegrationAppUser | No |
 | DynamicsMKT_MarketingAppUserRealtimeLink | No |
 | DynamicsMKT_CxpGoalUser | No |
-| ~~DynamicsMKT_CxpExperimentationUser~~ | Yes |
+| **DynamicsMKT_CxpExperimentationUser** | Yes |
 | DynamicsMKT_CxpAnalyticsConfiguration | No |
 | DynamicsMKT_CxpAIConfiguration | No |
 | DynamicsMKT_AttachCIApplicationUser | No |
 | DynamicsMKT_CxpApplicationUser | No |
 | DynamicsMKT_ChannelsAppUser | No |
 | DynamicsMKT_ConsentAppUser | No |
-| ~~DynamicsMKT_CxpPersonalizationUIAppUser~~ | Yes |
+| **DynamicsMKT_CxpPersonalizationUIAppUser** | Yes |
 | DynamicsMKT_CIConnection | No |
 | DynamicsMKT_BURoles | No |
 | DynamicsMKT_Roles | No |
@@ -110,7 +108,7 @@ Moments-based marketing:
 | DynamicsMKT_FormManagementRealtimeLink | No |
 | DynamicsMKT_CxpConditionalContent | No |
 | DynamicsMKT_QuotaSolution | No |
-| ~~DynamicsMKT_MetadataStore~~ | Yes |
+| **DynamicsMKT_MetadataStore** | Yes |
 | DynamicsMKT_CxpGetStartedEasyModeBaseSolution | No |
 | DynamicsMKT_CxpGetStartedExperience | No |
 | DynamicsMKT_PushNotification | No |
@@ -119,29 +117,29 @@ Moments-based marketing:
 | DynamicsMKT_EmailChannel | No |
 | DynamicsMKT_CxpEmailEditor | No |
 | DynamicsMKT_CxpEmailEditorCanvas | No |
-| ~~MicrosoftDynamics_EmailEditorModule~~ | Yes |
-| ~~MicrosoftDynamics_EmailEditorCanvasModule~~ | Yes |
-| ~~DynamicsMKT_EmailEditorCanvasShared~~ | Yes |
+| **MicrosoftDynamics_EmailEditorModule** | Yes |
+| **MicrosoftDynamics_EmailEditorCanvasModule** | Yes |
+| **DynamicsMKT_EmailEditorCanvasShared** | Yes |
 | DynamicsMKT_EmailEditorShared | No |
 | DynamicsMKT_OrchestrationActions | No |
 | DynamicsMKT_ImageGenerator | No |
 | DynamicsMKT_Tracking | No |
-| ~~DynamicsMKT_PersonalizationUI~~ | Yes |
+| **DynamicsMKT_PersonalizationUI** | Yes |
 | DynamicsMKT_CxpCmsIntegration | No |
 | DynamicsMKT_SmsChannel | No |
 | DynamicsMKT_CustomerVoiceIntegration | No |
-| ~~DynamicsMKT_SharedSmsChannelsUser~~ | Yes |
-| ~~DynamicsMKT_SharedSmsChannels~~ | Yes |
-| ~~DynamicsMKT_ChannelDefinitions~~ | Yes |
-| ~~DynamicsMKT_SharedChannelExtensions~~ | Yes |
-| ~~msdyn_D365ChannelDefinitions~~ | Yes |
-| ~~msdyn_D365ChannelDefinitionsUser~~ | Yes |
-| ~~msdyn_OmnichannelSharedSMS~~ | Yes |
-| ~~msdyn_OmnichannelSharedCommunicationBase~~ | Yes |
-| ~~msdyn_OmnichannelSharedBase~~ | Yes |
-| ~~msdyn_OCModernAdminBase~~ | Yes |
+| **DynamicsMKT_SharedSmsChannelsUser** | Yes |
+| **DynamicsMKT_SharedSmsChannels** | Yes |
+| DynamicsMKT_ChannelDefinitions | No |
+| **DynamicsMKT_SharedChannelExtensions** | Yes |
+| **msdyn_D365ChannelDefinitions** | Yes |
+| **msdyn_D365ChannelDefinitionsUser** | Yes |
+| **msdyn_OmnichannelSharedSMS** | Yes |
+| **msdyn_OmnichannelSharedCommunicationBase** | Yes |
+| **msdyn_OmnichannelSharedBase** | Yes |
+| **msdyn_OCModernAdminBase** | Yes |
 | DynamicsMKT_CxpGoal | No |
-| ~~DynamicsMKT_CxpExperimentation~~ | Yes |
+| **DynamicsMKT_CxpExperimentation** | Yes |
 | DynamicsMKT_CxpAI | No |
 | DynamicsMKT_OrchestrationAnalyticsRealtimeLink | No |
 | DynamicsMKT_OrchestrationAnalytics | No |
@@ -156,11 +154,11 @@ Moments-based marketing:
 | DynamicsMKT_OrchestrationEngineEvents | No |
 | DynamicsMKT_OrchestrationEngine | No |
 | DynamicsMKT_CxpSegmentationUI | No |
-| ~~DynamicsMKT_FeatureConfiguration~~ | Yes |
+| **DynamicsMKT_FeatureConfiguration** | Yes |
 | MicrosoftDynamics_HealthChecker | No |
-| ~~DynamicsMKT_BaseSolution~~ | Yes |
+| **DynamicsMKT_BaseSolution** | Yes |
 | DynamicsMKT_Segmentation | No |
-| ~~DynamicsMKT_AnalyticsUx~~ | Yes |
+| **DynamicsMKT_AnalyticsUx** | Yes |
 
 Segment-based marketing:
 
@@ -207,12 +205,12 @@ Segment-based marketing:
 | MicrosoftDynamics_EventManagement | No |
 | DynamicsMKT_EmailEditorCanvasShared | No |
 | DynamicsMKT_EmailEditorShared | No |
-| ~~MicrosoftDynamics_ContentEditor~~ | Yes |
+| **MicrosoftDynamics_ContentEditor** | Yes |
 | MicrosoftDynamics_Orchestration | No |
 | MicrosoftDynamics_ReusableBlocks | No |
 | DynamicsMKT_SharedMarketingSettings | No |
 | MicrosoftDynamics_DigitalAssets | No |
-| ~~DynamicsMKT_SharedMarketingControls~~ | Yes |
+| **DynamicsMKT_SharedMarketingControls** | Yes |
 | MicrosoftDynamics_Calendar | No |
 | MicrosoftDynamics_DsfSdkAppUser | No |
 | MicrosoftDynamics_ManagedIdentityTIP | No |

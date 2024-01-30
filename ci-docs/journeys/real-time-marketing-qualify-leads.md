@@ -1,7 +1,7 @@
 ---
 title: Qualify the best leads
 description: Learn how to qualify the best leads in Dynamics 365 Customer Insights - Journeys.
-ms.date: 10/30/2023
+ms.date: 11/15/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -12,8 +12,6 @@ search.audienceType:
 ---
 
 # Qualify the best leads
-
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 Define qualification criteria and post-qualification actions to grow your pipeline while ensuring that each qualified lead receives attention from your sales teams. With proper scoring and qualification criteria, you can prioritize the best leads and empower the sales team to spend more time winning deals and less time chasing lukewarm opportunities.
 

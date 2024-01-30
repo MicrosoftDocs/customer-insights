@@ -6,13 +6,12 @@ ms.reviewer: mhart
 ms.topic: conceptual
 author: wmelewong 
 ms.author: wameng
+ms.collection: bap-ai-copilot 
 ---
 
 # Analyze sentiment in customer feedback (preview)
 
 [!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
-
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
 Sentiment analysis enables you to synthesize customer sentiment and identify business aspects as opportunities for improvement. This feature helps you understand what works well and what you need to address. It can help you drive business actions that enable experiences that result in high customer satisfaction and loyalty.
 

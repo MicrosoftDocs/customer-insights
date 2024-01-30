@@ -1,7 +1,7 @@
 ---
-title: "Unify customer fields for data unification"
-description: "Merge tables to create unified customer profiles."
-ms.date: 09/21/2023
+title: "Unify customer columns for data unification"
+description: "Merge columns to create unified customer profiles."
+ms.date: 01/11/2024
 ms.topic: how-to
 author: v-wendysmith
 ms.author: sstabbert
@@ -9,19 +9,15 @@ ms.reviewer: v-wendysmith
 ms.custom: bap-template
 ---
 
-# Unify customer fields for data unification
+# Unify customer columns for data unification
 
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
-
-In this step of the unification process, choose and exclude attributes to merge within your unified profile table. For example, if three tables had email data, you may want to keep all three separate email fields or merge them into a single email field for the unified profile. Dynamics 365 Customer Insights - Data automatically combines some attributes.
-
-In this step, you can create stable and unique customer IDs and for individual customers, group related profiles into a cluster.
+In this step of the unification process, choose and exclude columns to merge within your unified profile table. For example, if three tables had email data, you might want to keep all three separate email columns or merge them into a single email column for the unified profile. Dynamics 365 Customer Insights - Data automatically combines some columns. For individual customers, you can group related profiles into a cluster.
 
 :::image type="content" source="media/m3_unify.png" alt-text="Unify customer fields page in the data unification process showing table with merged fields that define the unified customer profile.":::
 
-## Review and update the customer fields
+## Review and update the customer columns
 
-1. Review the list of fields that will be unified under the **Customer fields** tab of the table. Make any changes if applicable.
+1. Review the list of columns that will be unified under the **Customer columns** tab of the table. Make any changes if applicable.
 
    1. For any combined fields, you can:
       - [Edit](#edit-a-merged-field)
@@ -46,7 +42,7 @@ In this step, you can create stable and unique customer IDs and for individual c
 
 ### Edit a merged field
 
-1. Select a merged field and choose **Edit**. The Combine fields pane displays.
+1. Select a merged column and choose **Edit**. The Combine columns pane displays.
 
 1. Specify how to combine or merge the fields from one of three options:
     - **Importance**: Identifies the winner value based on importance rank specified for the participating fields. It's the default merge option. Select **Move up/down** to set the importance ranking.
@@ -64,7 +60,7 @@ In this step, you can create stable and unique customer IDs and for individual c
 
 1. You can add more fields to participate in the merge process.
 
-1. You can rename the merged field.
+1. You can rename the merged column.
 
 1. Select **Done** to apply your changes.
 
@@ -72,7 +68,7 @@ In this step, you can create stable and unique customer IDs and for individual c
 
 Change the display name of merged or separate fields. You can't change the name of the output table.
 
-1. Select the field and choose **Rename**.
+1. Select the column and choose **Rename**.
 
 1. Enter the new display name.
 
@@ -80,9 +76,9 @@ Change the display name of merged or separate fields. You can't change the name 
 
 ### Separate merged fields
 
-To separate merged fields, find the attribute in the table. Separated fields show as individual data points on the unified customer profile.
+To separate merged fields, find the column in the table. Separated fields show as individual data points on the unified customer profile.
 
-1. Select the merged field and choose **Separate fields**.
+1. Select the merged column and choose **Separate fields**.
 
 1. Confirm the separation.
 
@@ -90,11 +86,11 @@ To separate merged fields, find the attribute in the table. Separated fields sho
 
 Exclude a merged or separate field from the unified customer profile. If the field is used in other processes, such as a segment, remove it from these processes. Then, exclude it from the customer profile.
 
-1. Select a field and choose **Exclude**.
+1. Select a column and choose **Exclude**.
 
 1. Confirm the exclusion.
 
-To see the list of all excluded fields, select **Excluded fields**. If necessary, you can readd the excluded field.
+To see the list of all excluded fields, select **Excluded columns**. If necessary, you can readd the excluded column.
 
 ### Change the order of fields
 
@@ -106,9 +102,9 @@ Some tables contain more details than others. If a table includes the latest dat
 
 ### Combine fields manually
 
-Combine separated fields to create a merged attribute.
+Combine separated fields to create a merged column.
 
-1. Select **Combine** > **Fields**. The Combine fields pane displays.
+1. Select **Combine** > **Fields**. The Combine columns pane displays.
 
 1. Specify the merge winner policy in the **Combine fields by** dropdown.
 
@@ -120,7 +116,7 @@ Combine separated fields to create a merged attribute.
 
 ### Combine a group of fields
 
-When you combine a group of fields, Customer Insights - Data treats the group as a single unit, and chooses the winner record based on a merge policy. When merging fields without combining them into a group, the system chooses the winner record for each field based on the table order ranking set up in the **Match conditions** step. If a field has a null value, Customer Insights - Data continues to look at the other data sources until it finds a value. If this mixes information in an unwanted way or you want to set a merge policy, combine the group of fields.
+When you combine a group of fields, Customer Insights - Data treats the group as a single unit, and chooses the winner record based on a merge policy. When merging fields without combining them into a group, the system chooses the winner record for each field based on the table order ranking set up in the **Matching rules** step. If a field has a null value, Customer Insights - Data continues to look at the other data sources until it finds a value. If this mixes information in an unwanted way or you want to set a merge policy, combine the group of fields.
 
 #### Example
 Monica Thomson matches across three data sources: Loyalty, Online, and POS. Without combining the mailing address fields for Monica, the winner record for each field is based on the first ranked data source (Loyalty), except **Addr2** which is null. The winner record for **Addr2** is Suite 950 resulting in an incorrect mix of address fields (200 Cedar Springs Road, Suite 950, Dallas, TX 75255). To ensure data  integrity, combine the address fields into a group.
@@ -143,7 +139,7 @@ Monica Thomson matches across three data sources: Loyalty, Online, and POS. With
 |----------------|----------------------|-----------|---------|-------|-------|
 | Monica Thomson | 100 Main Street      | Suite 100 | Seattle | WA    | 98121 |
 
-#### Create a group of fields
+#### Create a group of fields (preview)
 
 1. Select **Combine** > **Group of fields**.
 
@@ -169,30 +165,13 @@ Monica Thomson matches across three data sources: Loyalty, Online, and POS. With
      > :::image type="content" source="media/merge-combine-datasource.png" alt-text="Combine group of fields screen with Group drop-down and data source highlighted.":::
    - **Group2**: The field in the next data source that corresponds to the **Name**. Repeat for each data source you include.
 
-1. Provide a **Name** for the combined group of fields, such as mailing address. This name displays on the Unify step but doesn't appear in the Customer profile.
+1. Provide a **Name** for the combined group of fields, such as mailing address. This name displays on the **Unified data view** step but doesn't appear in the Customer profile.
 
    :::image type="content" source="media/merge-combine-group-example.png" alt-text="Combine group of fields example.":::
 
-1. Select **Done** to apply the changes. The name for the combined group displays on the **Unified customer fields** page, but not in the Customer profile. 
+1. Select **Done** to apply the changes. The name for the combined group displays on the **Unified data view** page, but not in the Customer profile. 
 
-   :::image type="content" source="media/unify-combine-group-example.png" alt-text="Unified customer fields page highlighting the combine group name.":::
-
-## Configure customer ID generation
-
-Define how to generate customer ID values, the unique customer profile identifiers. The unify fields step in the data unification process generates the unique customer profile identifier. The identifier is the *CustomerId* in the *Customer* table that results from the data unification process.
-
-The *CustomerId* is based on a hash of the first value of the non-null winner primary keys. These keys come from the tables used in data unification and are influenced by the match order. So the generated customer ID can change when a primary key value changes in the primary table of the match order. The primary key value might not always represent the same customer.
-
-Configuring a stable customer ID enables you to avoid that behavior.
-
-1. Select the **Keys** tab.
-
-1. Hover on the **CustomerId** row and select **Configure**.
-   :::image type="content" source="media/customize-stable-id.png" alt-text="Control to customize the ID generation.":::
-
-1. Select up to five fields that will comprise a unique customer ID and are more stable. Records that don’t match your configuration use a system-configured ID instead.  
-
-1. Select **Done**.
+   :::image type="content" source="media/unify-combine-group-example.png" alt-text="Unified data view page highlighting the combine group name.":::
 
 ## Group profiles into households or clusters
 
@@ -213,6 +192,23 @@ Anyone in a shared group (same last name and address) gets a common cluster ID a
 1. Specify the rules and conditions to define your cluster.
 
 1. Select **Done**. The cluster is created when the unification process is complete. The cluster identifiers are added as new fields to the *Customer* table.
+
+## Configure customer ID generation
+
+The [CustomerId](data-unification.md#customer-id) field is a unique GUID value that is automatically generated for each unified customer profile. We recommend using this default logic. However, in rare circumstances you can specify the fields to use as inputs to generate the  CustomerId.
+
+1. On the **Customer data** step, select the **Keys** tab.
+
+1. Hover on the **CustomerId** row and select **Configure**.
+   :::image type="content" source="media/customize-stable-id.png" alt-text="Control to customize the ID generation.":::
+
+1. Select up to five fields that will comprise a stable, unique customer ID. Records that don’t match your configuration use a system-configured ID instead.
+
+   Only include columns that are either not expected to change such as a government-issued ID, or when changed, a new CustomerId is appropriate. Avoid columns that might change such as phone, email, or address.
+
+1. Select **Done**.
+
+For each input to the CustomerId generation, the first non-null TableName + field value are used. Tables are checked for non-null values in the table order defined on the **Matching rules** unification step. If the source table or input field values change, the resulting CustomerId will change.
 
 > [!div class="nextstepaction"]
 > [Next step: Review unification](data-unification-review.md)

@@ -11,8 +11,6 @@ ms.custom: bap-template
 
 # Get started using a single data source
 
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
-
 Dynamics 365 Customer Insights - Data provides ingestion of a single data source to get you up and running quickly. Provide your own data in a .csv file or choose sample data. Customer Insights - Data uploads and unifies the data to create a customer profile, and then automatically generates insights on the data.
 
 > [!NOTE]
@@ -44,7 +42,7 @@ In a newly provisioned environment, the **Getting Started** page displays. If th
 1. Select **Yes** to verify the primary key or choose another field as the primary key for your data source. Select **Next**. The system checks the data quality.
 
    > [!TIP]
-   > If an error occurs during data processing, you get an explanation of the issue and suggested actions to take. For example, if required attributes needed to generate insights are not identified, select [**Map data**](#map-required-data).
+   > If an error occurs during data processing, you get an explanation of the issue and suggested actions to take. For example, if required columns needed to generate insights are not identified, select [**Map data**](#map-required-data).
 
    After the data quality checks, the system removes duplicate records, creates customer profiles, and generates insights such as segments and measures.
 

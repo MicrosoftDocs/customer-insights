@@ -7,11 +7,10 @@ ms.topic: how-to
 author: radsay01
 ms.author: rsayyaparaju
 ms.custom: bap-template
+ms.collection: bap-ai-copilot 
 ---
 
 # Use custom models from Azure Machine Learning
-
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
 Workflows in Dynamics 365 Customer Insights - Data help you choose the data you want to generate insights from and map the results to your unified customer data. Your workflows can include [custom models](azure-machine-learning-experiments.md) enhanced with artificial intelligence (AI) that you create in [Azure Machine Learning](/azure/machine-learning/overview-what-is-azure-machine-learning).
 

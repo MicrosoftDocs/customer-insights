@@ -7,11 +7,10 @@ author: radsay01
 ms.author: rsayyaparaju
 ms.reviewer: v-wendysmith
 ms.custom: bap-template
+ms.collection: bap-ai-copilot 
 ---
 
 # Custom models FAQ
-
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
 ## Why can't I see my pipeline when I'm setting up a custom model workflow?
 

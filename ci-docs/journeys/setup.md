@@ -1,7 +1,7 @@
 ---
 title: Install and manage Customer Insights
 description: How to install, uninstall, and manage Dynamics 365 Customer Insights environments.
-ms.date: 10/05/2023 
+ms.date: 12/05/2023 
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -12,8 +12,6 @@ search.audienceType:
 ---
 
 # Install and manage Dynamics 365 Customer Insights
-
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 This article explains how to access and use the installation management area for Customer Insights. In this one-stop experience, you can manage to install and uninstall the Customer Insights - Journeys and Customer Insights - Data applications.
 
@@ -47,7 +45,7 @@ There are several ways to get a Customer Insights license. You can purchase it f
 
 You can have any number of Customer Insights licenses available on your tenant. Licenses translate to "apps" listed in the Power Platform Admin Center. Even old, expired trial licenses have records listed in the Power Platform Admin Center. You can access the installation management experience for any of these apps in the Power Platform Admin Center under **Resources** > **Dynamics 365 apps**. The app listing under **Dynamics 365 apps** is simply a means to access the management page. It shouldn't be considered as representing anything else. 
 
-Once a paid license has been applied to your tenant, it can take up to 24 hours to sync with the Dynamics 365 licensing system and be available for installation. To see your licenses in the Microsoft Admin Center, go to **Your products**. They will not show up under **Licenses** because they are tenant-level application licenses, not assignable seat-based licenses where you pay per user. Only pay-per-user, seat-based licenses are shown on the "Licenses" page. 
+Once a paid license has been applied to your tenant, it can take up to 24 hours to sync with the Dynamics 365 licensing system and be available for installation. To see your licenses in the Microsoft Admin Center, go to **Your products**. They won't show up under **Licenses** because they're tenant-level application licenses, not assignable seat-based licenses where you pay per user. Only pay-per-user, seat-based licenses are shown on the "Licenses" page. 
 
 ## Install, uninstall, or update Customer Insights
 
@@ -58,7 +56,7 @@ The following sections detail how to install, uninstall, or apply updates to the
 There are two types of installations for Customer Insights - Journeys:
 
 1. A **paid installation** or **trial** that includes the services and allows you to send messages, execute journeys, etc. You can install a paid license on an environment that has never had the journeys app installed.  
-1. A free, **solutions only** installation that only installs the solutions that include the front-end user experience application components but none of the services. With a solutions only installation, you can test user experience solution customizations but you can't execute any service-related functionality in the application. Solutions only installations get solution upgrades on a monthly basis with the regular releases.
+1. A free, **solutions only** installation that only installs the solutions that include the front-end user experience application components but none of the services. With a solutions only installation, you can test user experience solution customizations but you can't execute any service-related functionality in the application. Solutions only installations get solution upgrades every month with the regular releases. If you convert the solutions only environment to a paid environment by installing the services, the outbound marketing user experience is hidden. You must go to the **Settings** > **Versions** page to re-enable the outbound marketing user experience if you were building customizations on it in the solutions only mode. 
 
 If you uninstall Customer Insights - Journeys paid or trial, the services are disconnected and the environment converts to a solutions only installation state. When the services have been uninstalled by you or by the system due to license expirations, you'll see a banner at the top of the application indicating that the environment only has the user experience solutions installed but not the services.
 
@@ -88,7 +86,7 @@ If your installation fails, you'll see a **Retry** link where the **Install** li
 - You can go to the solutions history view in the Maker portal to see what failed and what actions you can take to prepare your environment for a successful install. Learn more: [View the history of a solution](/power-apps/maker/data-platform/solution-history/)
 - You can also check your solutions using the solution checker. Learn more: [Troubleshoot issues with Solution Health Hub](troubleshoot-marketing-solution-health.md)
 
-If your installation fails and you want to abandon the installation, you must achieve a successful installation so that you can run the uninstall process to free up the license and disconnect any services that may have succeeded during the parts of the installation process that didn't fail. If you still can't resolve the issue after attempting using the solution checker or visiting the solution history in the Maker portal, you should file a support ticket and get help to achieve a successful installation.
+If your installation fails and you want to abandon the installation, you must achieve a successful installation so that you can run the uninstall process to free up the license and disconnect any services that may have succeeded during the parts of the installation process that didn't fail. If you still can't resolve the issue after attempting using the solution checker or visiting the solution history in the Maker portal, you should [file a support ticket](troubleshoot-faq.md#how-can-i-create-a-support-ticket-from-the-power-platform-admin-center) and get help to achieve a successful installation.
 
 ### Uninstall
 
@@ -117,5 +115,9 @@ In addition to helping you install Customer Insights for the first time, you can
 ## Privacy notice
 
 [!INCLUDE [cc-privacy-marketing-fre](./includes/cc-privacy-marketing-fre.md)]
+
+### Collecting feedback data
+
+As a way to refine and improve the experience, Microsoft may collect feedback data from users within the app. Administrators can disable survey feedback with a PowerShell command by turning the “disableSurveyFeedback” flag to **true**. See [list of tenant settings](/power-platform/admin/list-tenantsettings) for more detail.
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]

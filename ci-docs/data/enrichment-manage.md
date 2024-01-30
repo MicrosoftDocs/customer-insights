@@ -13,8 +13,6 @@ ms.collection: get-started
 
 [!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
-
 Use enrichments to enhance your unified customer data. Create the connections for the specific enrichments so that administrators and contributors can configure the enrichments.
 
 To help increase the quality of a data match, [enrich data sources before unification](data-sources-enrichment.md).

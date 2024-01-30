@@ -13,8 +13,6 @@ search.audienceType:
 
 # Create and design a marketing email message
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
 Read this article to learn how to create an email message and design its content. See also the [email marketing overview](prepare-marketing-emails.md) for a summary of the full message creation, delivery, and analysis process for email marketing.
 
 For a step-by-step tutorial on how to create and send your first marketing email message, see also [Create a marketing email and go live](create-marketing-email.md)

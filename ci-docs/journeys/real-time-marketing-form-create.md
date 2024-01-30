@@ -13,8 +13,6 @@ search.audienceType:
 
 # Create Customer Insights - Journeys forms
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
 To create a new form, go to **Customer Insights - Journeys** > **Channels** > **Forms** and select **New** on the command bar.
 
 1. **Select a target audience** that is updated by the form submission. With Customer Insights - Journeys forms, you can select which audience you want to update (Contact or Lead). Each target audience has a default strategy for duplicate records handling:
@@ -121,7 +119,7 @@ To publish your form, select the **Publish** button in the top right corner. The
 Once the form is published, you can still access these options by selecting the **Publishing** options button in the top right corner. It's possible to use multiple publishing options for a single form.
 
 > [!NOTE]
-> The ontent delivery network (CDN) domain for your geographical area used by the *host form as Standalone page* feature is enabled for form hosting by default.
+> The content delivery network (CDN) domain for your geographical area used by the *host form as Standalone page* feature is enabled for form hosting by default.
 > Example for USA:
 > `https://assets-usa.mkt.dynamics.com`
 >

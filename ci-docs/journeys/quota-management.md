@@ -13,8 +13,6 @@ search.audienceType:
 
 # Monitor your monthly quotas
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
 Dynamics 365 Customer Insights - Journeys is a subscription service that is billed monthly and sets organization-level quotas for the maximum number of marketing contact records and monthly outbound interactions that you can send. Other quotas may also apply. You can always upgrade your subscription if you need higher quotas.
 
 The **Quota limits** page shows the total quota levels you have purchased and how much of each quota your organization has already used. To see how much of each quota you've used, go to **Settings** > **Overview** > **Quota limits**.
@@ -38,8 +36,8 @@ The following usages and limits are tracked on this screen:
 - **Litmus email previews**: Shows the total number of Litmus email previews (inbox previews) users at your organization can still use during the current month.
     - The pre-seeded capacity is shown together with your monthly consumption.
     - The pre-seeded capacity automatically resets on a monthly basis.
-- **Free text messages**: For US-based instances, 1,000 free text messages per month can be sent using a toll-free number [created through Azure Communication Services](real-time-marketing-outbound-text-messaging.md#add-a-sender-number-using-the-azure-communication-services-free-trial-preview-us-only).
-- **Paid text messages**: Customer Insights - Journeys offers [native integration with Twilio and TeleSign](real-time-marketing-outbound-text-messaging.md#sign-up-for-and-configure-a-twilio-account), enabling you to easily connect with mobile users.
+- **Free text messages**: For US-based instances, 1,000 free text messages per month can be sent using a toll-free number [created through Azure Communication Services](real-time-marketing-outbound-text-messaging-setup.md#add-a-sender-number-using-the-azure-communication-services-free-trial-preview-us-only).
+- **Paid text messages**: Customer Insights - Journeys offers [native integration with Twilio and TeleSign](real-time-marketing-outbound-text-messaging-setup.md#sign-up-for-and-configure-a-twilio-account), enabling you to easily connect with mobile users.
     - You can purchase or reuse an existing SMS provider account with Twilio or TeleSign.
     - Consumption is recorded and displayed on the Quota limits page, but the allocated quota needs to be verified with the third-party provider.
 

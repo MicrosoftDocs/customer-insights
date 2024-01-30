@@ -13,8 +13,6 @@ search.audienceType:
 
 # Create and deploy marketing pages
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
 [!INCLUDE [marketing-trial-cta](./includes/marketing-trial-cta.md)]
 
 > [!IMPORTANT]

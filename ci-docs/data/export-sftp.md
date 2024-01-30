@@ -12,8 +12,6 @@ ms.author: philk
 
 [!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
-
 Use your customer data in third-party applications by exporting them to a Secure File Transfer Protocol (SFTP) location.
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWO94X]
@@ -26,6 +24,7 @@ Use your customer data in third-party applications by exporting them to a Secure
 
 - SFTP destinations behind firewalls are currently not supported.
 - The runtime of an export depends on your system performance. We recommend two CPU cores and 1 Gb of memory as minimal configuration of your server.
+- This export works only for CSV formatted files.
 - Up to 100 million customer profiles, which can take 90 minutes when using the recommended minimal configuration of two CPU cores and 1 Gb of memory.
 - If you use an SSH key for authentication, make sure you [create your private key](/azure/virtual-machines/linux/create-ssh-keys-detailed#basic-example) as PEM or SSH.COM format. If you are using Putty, convert your private key by exporting is as Open SSH. The following private key formats are supported:
   - RSA in OpenSSL PEM and ssh.com format

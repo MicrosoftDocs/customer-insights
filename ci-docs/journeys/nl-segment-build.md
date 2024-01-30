@@ -13,8 +13,6 @@ search.audienceType:
 
 # Use natural language to create segments
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4IQy2]
 
 > [!NOTE]

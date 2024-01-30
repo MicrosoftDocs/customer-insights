@@ -1,85 +1,31 @@
 ---
 title: Create push notifications
 description: Learn how to create push notifications for Customer Insights - Journeys
-ms.date: 08/23/2023
+ms.date: 12/13/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
-search.audienceType: 
-  - admin
-  - customizer
-  - enduser
+ms.collection: bap-ai-copilot
 ---
 
 # Create push notifications
-
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 Push notifications are messages sent to customers who have installed your mobile app. Push messages allow you to quickly convey offers, messages, or other information directly to users of your app.
 
 You can send push messages as part of your journeys, similar to other outbound messages like text messages.
 
-## Create a mobile app configuration
+## Set up push notifications
 
-To send push notification messages to your customers, you'll first need to set up at least one *Mobile app configuration*. 
-
-> [!IMPORTANT]
-> If the user or team who is going to create a mobile application has admin privileges, then no further action is required.
->
-> If the user or team who is going to create a mobile application doesn't have admin privileges, then an admin needs to complete the following steps:
->
-> 1. Go to **Advanced Settings** > **Security** > **Field Security Profiles**.
-> 2. Go to **Marketers-Mobile app secrets** and add the corresponding user or team as members. Save and close.
-> 3. Go to **Marketers - Mobile app channel instances secrets** and add the corresponding user or team as members. Save and close.
-
-To create a new mobile app configuration, go to **Settings** > **Customer engagement** > **Push notifications** and select **+New mobile app** on the top ribbon. The mobile app configuration connects your existing mobile application (already published on the App Store, Google Play, or both) to Dynamics 365 Customer Insights - Journeys.
-
-To create a configuration, complete the following steps:
-
-1. Start by adding a **Name** and **Description** for the configuration.
-    > [!div class="mx-imgBorder"]
-    > ![Mobile app configuration screenshot.](media/real-time-marketing-mobile-app-configuration.png)
-1. For the next step of the configuration, an app developer will have to help you get the iOS APNs certificate or tokens or Android FCM key for your mobile application. Learn more: [Push notification setup for application developers](real-time-marketing-developer-push.md)
-
-You can choose to configure an iOS application, an Android application, or both at the same time. Customer Insights - Journeys will handle both apps under a single mobile configuration.
-
-> [!div class="mx-imgBorder"]
-> ![Single Mobile app configuration screenshot.](media/real-time-marketing-single-mobile-app-configuration.png)
-
-Select the tab that corresponds with your device's operating system:
-
-# [iOS](#tab/ios)
-
-For iOS applications, Customer Insights - Journeys uses the Apple Push Notification service (APNs), a platform service that enables third-party application developers to send push notifications to iOS users. You can choose from two authentication modes:
-
-- **Certificate**: Uses a certificate to authenticate. Consult Apple developer documentation on how to create a .p12 (PKCS #12) certificate file that you can upload into Customer Insights - Journeys.
-- **Token**: Uses a [token-based connection to the APNs](https://developer.apple.com/documentation/usernotifications/setting_up_a_remote_notification_server/establishing_a_token-based_connection_to_apns). For token authentication, the following strings are required:
-  - *Signing key*: The content of the .p8 file providing the signing key.
-  - *Key ID*: The 10-character Key ID string.
-  - *Bundle ID*: Created together with the APNs certificate for your app.
-  - *Team ID*: Refer to Apple developer documentation to determine how to get your Team ID.
-
-# [Android](#tab/android)
-
-For Android applications, Customer Insights - Journeys uses the Firebase Cloud Messaging (FCM) service. To configure your Android application to work with Customer Insights - Journeys, you need to enter the FCM API key string.
-
----
-
-3. Review and save your app configuration, then find and select your newly created mobile app configuration in **Settings** > **Customer engagement** > **Push notification**. Go to the **Developer information** tab, copy the details, and share them with your app developer as they will need them to connect your app.
-
-> [!NOTE]
-> To learn more about the developer configuration for push notifications, see [Push notification setup for application developers](real-time-marketing-developer-push.md)
+To set up push notifications, you need administrator privileges. If you have the correct credentials, the first setup step requires [creating a mobile app configuration](real-time-marketing-push-notifications-setup.md). The second setup step requires [developer setup within your mobile app](real-time-marketing-developer-push.md).
 
 ## Create push notification messages
 
 After you have successfully created your mobile app configuration, you can start creating push notification messages by going to **Customer Insights - Journeys** > **Channels** > **Push notifications** and selecting **+New push notification** in the top ribbon. You will then be taken to the push notification message editor.
 
 > [!div class="mx-imgBorder"]
-> ![Push editor screenshot.](media/real-time-marketing-push-editor2.png "Push editor screenshot")
+> ![Push editor screenshot.](media/real-time-marketing-push-notification.png "Push editor screenshot")
 
-In the push notification message editor, you can enter a title, a subtitle, a message, and preview how your message will appear in iOS and Android.
-
-When you add images, copilot will suggest images that match your content when you insert an image.
+In the push notification message editor, you can enter a title, a subtitle, a message, an image, and preview how your message will appear in iOS and Android.
 
 Using the On-click behavior field, you can also specify the message behavior when customers tap on the message in their mobile phones.
 - **Open the app**: Opens the mobile application.
@@ -87,6 +33,16 @@ Using the On-click behavior field, you can also specify the message behavior whe
 
 Try test-sending the push notification to your mobile app configuration or add it to a journey to see how it can be used.
 To stop messages from being sent, you can deactivate or delete them.
+
+## Push notification images
+
+To add images to push notifications, select any image from the Library or upload a new one by selecting the **Choose an image** field on the push notification message editor. When you add images, Copilot suggests images that match your content.
+
+There are some additional considerations for images in push notifications:
+
+* Images may be subject to platform size limits for iOS and Android.
+* The image ratio should be 2:1 for best viewing in push notifications.
+* You can preview the message and image in both iOS and Android.
 
 ## Personalize your push notifications
 
@@ -115,6 +71,10 @@ To add a Customer Voice survey to a push notification:
 1. Select **Save**.
 
 When you send the push notification from a journey, it will automatically populate the token with the survey and options you selected.
+
+## Consent and compliance in push notifications
+
+Push notifications require you to set a Compliance Profile and Purpose for a push notification. There are no consent checks performed for push notifications. The compliance profile is used to enforce any quiet times that may be applicable to push notifications.
 
 ## Send push notification messages in a journey
 

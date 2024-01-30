@@ -1,25 +1,24 @@
 ---
 title: Predict transaction churn (contains video)
 description: "Predict whether a customer is at risk for no longer purchasing your products or services."
-ms.date: 10/03/2023
+ms.date: 11/30/2023
 ms.reviewer: mhart
 ms.topic: how-to
 author: zacookmsft
 ms.author: zacook
-ms.custom: bap-template 
+ms.custom: bap-template
+ms.collection: bap-ai-copilot 
 ---
 
 # Predict transaction churn
 
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
-
-Transactional churn prediction helps predict if a customer will no longer purchase your products or services in a given time window.
+Transactional churn prediction helps predict if a customer will no longer purchase your products or services in a given time window. Transaction churn is useful to find customers who are no longer purchasing products at any time during the defined churn window. To find customers who might cancel their preset ongoing purchases, we recommend using the [Subscription churn model.](sample-guide-predict-subscription-churn.md)
 
 You must have business knowledge to understand what churn means for your business. For instance, a business with annual events can define their churn measured in years, while a business that caters to weekly sales may measure churn in months. We support time-based churn definitions, meaning a customer is considered to have churned after a period of no purchases.
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWN6Eg]
 
-For example, Contoso wants to know how engaged customers are so they can run an email campaign dedicated to retention. Through the transaction churn model, Contoso can determine the likelihood that customers will buy again. They can see the leading patterns that lead to customers leaving the brand, allowing them to adjust other strategies.
+For example, Contoso wants to know how engaged customers are for an email campaign dedicated to retention. Contoso's customers visit a storefront on a variable basis, most often around 3-4 times a month. Their transactions are irregular, making it difficult to determine when a customer has stopped purchasing the Contoso brand. Through the transaction churn model, Contoso can determine the likelihood that customers will buy again. They can see the leading patterns that lead to customers leaving the brand, allowing them to adjust other strategies.
 
 ## Prerequisites
 

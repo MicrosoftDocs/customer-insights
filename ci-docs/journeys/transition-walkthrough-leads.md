@@ -1,7 +1,7 @@
 ---
 title: Transition lead management and scoring
 description: Learn how to transition lead management and scoring capabilities from outbound marketing to real-time journeys in Dynamics 365 Customer Insights - Journeys.
-ms.date: 10/04/2023
+ms.date: 11/16/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -12,8 +12,6 @@ search.audienceType:
 ---
 
 # Transition lead management and scoring
-
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 Creating scoring models to identify the best leads is an important aspect of lead management. As of the September 2023 Customer Insights - Journeys release, lead scoring is available in real-time journeys. You can enable the real-time journeys lead scoring feature in the feature switches area in the settings. Improvements compared to the outbound marketing scoring models are:
 -	Simpler and more intuitive design canvas.
@@ -26,5 +24,14 @@ The main difference in the real-time journeys lead scoring functionality compare
 The Marketing Qualification feature is planned for the October 2023 release.
 
 Unfortunately, there's no way to transfer existing scoring models from outbound marketing to real-time journeys. Moving scoring models requires manual effort to rebuild the models and the processes in real-time journeys. However, the fact that the real-time journeys lead scoring entity is the same as in outbound marketing, helps facilitate migration, especially for customizations.
+
+## Relevant upcoming features
+
+The features listed below may be of interest as you transition from outbound marketing to real-time journeys. These features provide parity, equivalent, or better functionality than what was available in outbound marketing.
+
+- **Signal sales for qualified leads**: Easily route qualified leads identified by the marketing team to a seller without customized solutions or manual intervention. This boosts marketing and sales teams' productivity while maintaining focus on the right customers. Learn more: [Increase lead conversions by routing to the correct sales rep](/dynamics365/release-plan/2023wave2/marketing/dynamics365-marketing/increase-lead-conversions-routing-correct-sales-rep)
+
+> [!TIP]
+> If you have questions or comments, visit the [Outbound to real-time transition community forum](https://community.dynamics.com/forums/thread/?partialUrl=Outbound-to-Real-Time-Transition)
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]

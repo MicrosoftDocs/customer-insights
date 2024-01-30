@@ -10,8 +10,6 @@ ms.reviewer: mhart
 
 # Service limits in Dynamics 365 Customer Insights - Data
 
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
-
  Customer Insights has built-in limits designed to ensure the reliability and stability of the service. Any requests for changes can be made through the [Ideas forum](https://go.microsoft.com/fwlink/?linkid=2074172).
 
 ## Customer Insights - Data

@@ -1,7 +1,7 @@
 ---
-title: "Match conditions for data unification"
+title: "Matching rules for data unification"
 description: "Match tables to create unified customer profiles."
-ms.date: 09/21/2023
+ms.date: 11/15/2023
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -9,22 +9,20 @@ ms.reviewer: v-wendysmith
 ms.custom: bap-template
 ---
 
-# Match conditions for data unification
-
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
+# Define matching rules for data unification
 
 This step in unification defines the match order and rules for cross-table matching. This step requires at least two tables. When records are matched, they're concatenated into a single record with all the fields from each table. Alternate rows (nonwinner rows from the Deduplication step) are considered when matching. But, if a row matches an alternate row in a table, the record is matched to the winner row.
 
 > [!NOTE]
-> Once you create your match conditions and select **Next**, you cannot remove a selected table or attribute. If needed, select **Back** to review the selected tables and attributes before continuing.
+> Once you create your match conditions and select **Next**, you cannot remove a selected table or column. If needed, select **Back** to review the selected tables and columns before continuing.
 
 [!INCLUDE [m3-first-run-note](includes/m3-first-run-note.md)]
 
 ## Include enriched tables (preview)
 
-If you enriched tables on the data source level to help improve your unification results, select them. For more information, see [Enrichment for data sources](data-sources-enrichment.md). If you selected enriched tables on the **Duplicate records** page, you don't need to select them again.
+If you enriched tables on the data source level to help improve your unification results, select them. For more information, see [Enrichment for data sources](data-sources-enrichment.md). If you selected enriched tables on the **Deduplication rules** page, you don't need to select them again.
 
-1. On the **Matching conditions** page, select **Use enriched tables** at the top of the page.
+1. On the **Matching rules** page, select **Use enriched tables** at the top of the page.
 
 1. From the **Use enriched tables** pane, choose one or more enriched tables.
 
@@ -40,10 +38,10 @@ Each match unifies two or more tables into a single, consolidated table. At the 
 > Important considerations:
 >
 > - Choose the table with the most complete and reliable profile data about your customers as the primary table.
-> - Choose the table that has several attributes in common with other tables (for example, name, phone number, or email address) as the primary table.
+> - Choose the table that has several columns in common with other tables (for example, name, phone number, or email address) as the primary table.
 > - Tables can only match against other tables that are higher in priority. So Table2 can only match against Table1, and Table3 can match against Table2 *or* Table1.  
 
-1. On the **Matching conditions** page, use the move up and down arrows to move the tables in the order you want, or drag and drop them. For example, select **eCommerceContacts** as the primary table and **loyCustomer** as the second table.
+1. On the **Matching rules** page, use the move up and down arrows to move the tables in the order you want, or drag and drop them. For example, select **eCommerceContacts** as the primary table and **loyCustomer** as the second table.
 
 1. To have every record in the table as a unique customer regardless if a match is found, select **Include all records**. Any records in this table that don't match to records in any other table are included in the unified profile. Records that don't have a match are called singletons.
   
@@ -63,11 +61,11 @@ The warning next to a table name means that no match rule is defined for a match
 
    :::image type="content" source="media/m3_add_rule.png" alt-text="Screenshot of Add rule pane.":::
 
-   - **Select Table/Field (first row)**: Choose a table and an attribute that is likely unique to a customer. For example, a phone number or email address. Avoid matching by activity-type attributes. For example, a purchase ID will likely find no match in other record types.
+   - **Select Table/Field (first row)**: Choose a table and a column that is likely unique to a customer. For example, a phone number or email address. Avoid matching by activity-type columns. For example, a purchase ID will likely find no match in other record types.
 
-   - **Select Table/Field (second row)**: Choose an attribute that relates to the attribute of the table specified in the first row.
+   - **Select Table/Field (second row)**: Choose a column that relates to the column of the table specified in the first row.
 
-   - **Normalize**: Select from following normalization options for the selected attributes.
+   - **Normalize**: Select from following normalization options for the selected columns.
      - **Numerals**: Converts other numeral systems, such as Roman numerals, to Arabic numerals. *VIII* becomes *8*.
      - **Symbols**: Removes all symbols and special characters. *Head&Shoulder* becomes *HeadShoulder*.
      - **Text to lower case**: Converts all character to lower case. *ALL CAPS and Title Case* becomes *all caps and title case*.
@@ -75,13 +73,13 @@ The warning next to a table name means that no match rule is defined for a match
      - **Unicode to ASCII**: Converts unicode notation to ASCII characters. */u00B2* becomes *2*.
      - **Whitespace**: Removes all spaces. *Hello   World* becomes *HelloWorld*.
 
-   - **Precision**: Set the level of precision to apply for this condition.
+   - **Precision**: Set the level of precision to apply for this condition. [Precision is used with fuzzy matching](data-unification-fuzzy-matching.md), and determines how close two strings need to be in order to be considered a match.
      - **Basic**: Choose from *Low (30%)*, *Medium (60%)*, *High (80%)*, and *Exact (100%)*. Select **Exact** to only match records that match 100 percent.
      - **Custom**: Set a percentage that records need to match. The system will only match records passing this threshold.
 
    - **Name**: Name for the rule.
 
-1. To match tables only if attributes meet multiple conditions, select **Add** > **Add condition** to add more conditions to a match rule. Conditions are connected with a logical AND operator and thus only executed if all conditions are met.
+1. To match tables only if columns meet multiple conditions, select **Add** > **Add condition** to add more conditions to a match rule. Conditions are connected with a logical AND operator and thus only executed if all conditions are met.
 
 1. Optionally, consider advanced options such as [exceptions](#add-exceptions-to-a-rule) or [custom match conditions](#specify-custom-match-conditions).
 
@@ -92,11 +90,11 @@ The warning next to a table name means that no match rule is defined for a match
 1. Select **Next**.
 
 > [!div class="nextstepaction"]
-> [Next step: Unify fields](data-unification-merge-tables.md)
+> [Next step: View unified data](data-unification-merge-tables.md)
 
 ### Add rules to a match pair
 
-Match rules represent sets of conditions. To match tables by conditions based on multiple attributes, add more rules.
+Match rules represent sets of conditions. To match tables by conditions based on multiple columns, add more rules.
 
 1. Select **Add rule** on the table you want to add rules to.
 
@@ -164,6 +162,6 @@ Specify conditions that override the default match logic. There are four options
    Each template file ingested is its own data source. If records are discovered that need special matching treatment, update the appropriate data source. The update will be used during the next unification process. For example, you identify twins with nearly the same name living at the same address that had been merged as one person. Update the data source to identify the twins as separate, unique records.
 
 > [!div class="nextstepaction"]
-> [Next step: Unify fields](data-unification-merge-tables.md)
+> [Next step: View unified data](data-unification-merge-tables.md)
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

@@ -11,8 +11,6 @@ ms.custom: bap-template
 
 # Connect to data in Microsoft Dataverse
 
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
-
 Microsoft Dataverse users can quickly connect to analytical tables in Dataverse.
 Only one data source of an environment can simultaneously use the same Dataverse environment.
 

@@ -1,7 +1,7 @@
 ---
 title: How to use conditional content
 description: Learn how to use conditional content features in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/18/2023
+ms.date: 12/20/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -13,9 +13,7 @@ search.audienceType:
 
 # How to use conditional content
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
-Conditional content is an easy way to deliver effective and engaging personalized content. A simple example of conditional content is including different images based on a recipient’s profession, age group, address, interests, or other such factors. Creating this kind of personalized content in Dynamics 365 Customer Insights - Journeys is straightforward, requiring no coding or scripting. Here is a short video that shows conditional content in action:
+Conditional content is an easy way to deliver effective and engaging personalized content. A simple example of conditional content is including different images based on a recipient’s profession, age group, address, interests, or other such factors. Creating this kind of personalized content in Dynamics 365 Customer Insights - Journeys is straightforward, requiring no coding or scripting. Here's a short video that shows conditional content in action:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Yb7B]
 
@@ -65,7 +63,7 @@ This section explains how to create, delete, preview, and test conditional conte
 ### Delete
 
 1. In the email designer, select a conditional section (or a conditional image) and then select the conditional content button
-1. This will convert the conditional section (or the conditional image) into a normal section (or image) by deleting all conditions and associated content. The default content (or the first condition’s content if there's no default) is retained in the designer.
+1. This converts the conditional section (or the conditional image) into a normal section (or image) by deleting all conditions and associated content. The default content (or the first condition’s content if there's no default) is retained in the designer.
 
 ### Preview and test
 
@@ -80,12 +78,33 @@ In the designer, you should always preview and test each variation to make sure 
 
 ## When to use conditional content vs conditions (advanced personalization)
 
-As shown above, conditional content is a great way to deliver different images and content to better match a recipient’s interests and preferences. However, there are situations where you only want to change a few words or a sentence. For example, in many languages, initial greetings are different based on the recipient’s gender. In such situations, it is more efficient and convenient to use [conditions from advanced personalization](real-time-marketing-personalize-inline-conditions.md) than to create a complete duplicate section containing the same set of images and text only to change the greeting.
+As shown above, conditional content is a great way to deliver different images and content to better match a recipient’s interests and preferences. However, there are situations where you only want to change a few words or a sentence. For example, in many languages, initial greetings are different based on the recipient’s gender. In such situations, it's more efficient and convenient to use [conditions from advanced personalization](real-time-marketing-personalize-inline-conditions.md) than to create a complete duplicate section containing the same set of images and text only to change the greeting.
 
 ## Conditional content inside content blocks
 
 Conditional content created at the section level can be saved as a [content block](content-blocks.md). This way, multiple conditions and their associated content are all saved inside a single content block for anyone to use. Creating conditions is easy, but does require some knowledge of customer data and, therefore, some users may find it harder to create conditions without errors. Saving conditional content as a content block is a great way to reduce errors and enable everyone on the team to use advanced conditions.
 
 Using content blocks can also help drive consistency. For example, a “high-value customer” may require using multiple conditions. To make interactions more consistent, you can create a “starter” content block that has advanced conditions (tested and verified) with placeholder content. Anyone can then use the starter content block and update the content, so a standard and correct definition of “high value customer” is applied everywhere.
+
+## Customer measures (calculated metrics) as data source
+
+When Customer Insights – Data is present and connected, you can use customer measures (calculated metrics) in conditions when using customer profiles as the target audience. This opens up another source of data to further personalize messages and journeys. For example, you can define a calculated metric such as *LifeTimeSpend* or *CurrentYearSpend* for each customer. These metrics can then be used to create conditional content (for example, high spend customers get higher discount) or differentiated experiences in journeys (for example, high-spend customers get flash sale notifications ahead of the others).
+
+### Creating measures
+
+Watch this video to learn more:
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RW1fY3B]
+
+See [Use calculated measures in Customer Insights - Journeys and other Dataverse-based applications](/dynamics365/customer-insights/data/dataverse-measures) to learn how to create measures in Customer Insights – Journeys and what types of measures are available for use in the app.
+
+> [!NOTE]
+> While the user interface presents itself as a one-to-many relationship, the current implementation in Customer Insights – Data only allows single dimension metrics and therefore only one value is returned.
+
+### Using measures in conditions, conditional content, and journeys
+
+As shown in the screenshot below, measures can also be used to define conditions that can then be used in inline conditions, conditional content, or attribute branching steps in journeys.
+
+:::image type="content" source="media/conditional-content-measures.png" alt-text="Browsing Customer Insights - Data measures for conditional content screenshot.":::
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]

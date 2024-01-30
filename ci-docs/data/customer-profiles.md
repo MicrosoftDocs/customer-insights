@@ -11,8 +11,6 @@ ms.custom: bap-template
 
 # View customer profiles
 
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
-
 Customer profiles are available once you [create the unified *Customer* table](data-unification.md). The combined view of your unified customer profiles displays on the **Customers** page. Customers can be individuals or organizations.
 
 Go to the **Customers** page to view your customers and their profiles. Each customer profile is represented by a tile. Use the pagination controls to get more records. The card displays fields from the *Customer* table as defined in the **Search & filter index**. The order of the fields within each card is picked by the system.
@@ -47,7 +45,7 @@ Filter customers by the *Customer* table fields. Filterable fields are defined b
 
 1. On the **Customers** page, select **Show filters**. The Filter pane displays.
 
-1. Check the boxes next to the attributes you want to filter customers by.
+1. Check the boxes next to the columns you want to filter customers by.
 
 1. Remove all filters by selecting **Clear filters** or clear a checkbox next to a selected attribute.
 
