@@ -372,7 +372,7 @@
     items:
     - name: Use images, files, and videos in your content
       href: upload-images-files.md
-    - name: Impact of disabling CDN
+    - name: Impact of disabling Azure CDN
       href: cdn-disabling.md
   - name: Known issues in real-time journeys
     href: real-time-marketing-known-issues.md
@@ -524,6 +524,8 @@
       href: customize.md
     - name: Open the Power Apps customization window
       href: customize-open-powerapps.md
+    - name: Customize the form editor
+      href: real-time-marketing-customize-forms.md
     - name: Create and customize marketing calendars
       href: customize-marketing-calendars.md
     - name: Create and customize template labels

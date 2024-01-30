@@ -22,7 +22,11 @@ Select a data source to view available actions.
 - [**Enrich**](data-sources-enrichment.md) the data source before unification to improve the quality and completeness for better results. 
 - **Delete** the data source. A data source can be deleted only if the data is not used in any processing such as unification, insights, activations, or exports.
 
+<!---Add back in when this is released.
+
 If you have a Data Lake data source, you can [convert it to a Delta Lake data source (preview).](convert-datalake-to-deltalake.md)
+
+--->
 
 ## Refresh data sources
 

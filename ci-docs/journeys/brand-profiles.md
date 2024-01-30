@@ -5,10 +5,7 @@ ms.date: 12/15/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
-search.audienceType: 
-  - admin
-  - customizer
-  - enduser
+ms.collection: bap-ai-copilot
 ---
 
 # Create consistent branding with brand profiles in Customer Insights - Journeys
@@ -54,7 +51,7 @@ After you've added your links, select **Save**.
 
 ### Define theme
 
-Open the **Theme** tab in the brand profile and add the theme in accordance with your brand guidelines. You can specify any custom fonts in the theme section (the theme section in the email editor also contains these options). Once your theme is added, select **Save** and your theme will be automatically applied to all of the draft content that includes a brand profile. 
+Open the **Theme** tab in the brand profile and add the theme in accordance with your brand guidelines. You can specify any custom fonts in the theme section (the theme section in the email editor also contains these options). Once your theme is added, select **Save** and your theme will be automatically applied to all of the draft content that includes a brand profile.
 
 > [!NOTE]
 > To create a theme from scratch, you can also use Copilot. [Learn more](email-theme.md)

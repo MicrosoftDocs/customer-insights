@@ -5,10 +5,7 @@ ms.date: 11/08/2023
 ms.topic: get-started
 author: alfergus
 ms.author: alfergus
-search.audienceType:
-  - admin
-  - customizer
-  - enduser
+ms.collection: bap-ai-copilot
 ms.custom:
   - ai-gen-docs-bap
   - ai-gen-desc
