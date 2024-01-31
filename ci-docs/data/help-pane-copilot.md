@@ -7,13 +7,12 @@ ms.topic: how-to
 author: nikeller
 ms.author: nikeller
 ms.custom: bap-template
+ms.collection: bap-ai-copilot 
 ---
 
 # Get answers to questions about capabilities from Copilot (preview)
 
 [!INCLUDE [public-preview-banner](./includes/public-preview-banner.md)]
-
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
 Copilot in Dynamics 365 Customer Insights - Data can help you achieve your goals by answering your questions about the application and its features. You ask questions in natural language about capabilities and Copilot answers it, using the [official documentation](index.yml), [troubleshooting guides](/troubleshoot/dynamics-365/customer-insights/welcome-customer-insights), and blogs from the Microsoft team on how to set up Customer Insights - Data.
 

@@ -13,8 +13,6 @@ search.audienceType:
 
 # Customer Insights - Journeys limits for trials
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
 Trials of Customer Insights - Journeys are subject to the following limits and restrictions:
 
 - A maximum of 10,000 contact records can be loaded and used in the system.

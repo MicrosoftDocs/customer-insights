@@ -12,13 +12,11 @@ ms.author: jodahl
 
 [!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
-
 HERE Technologies is a location platform company that provides location-centric data and services. HERE Technologies' data enrichment services improve the precision of location information about your customers. It provides address normalization, latitude and longitude extraction, and more.
 
 ## Prerequisites
 
-- An active HERE Technologies subscription. To get a subscription, [sign up here](https://developer.here.com/sign-up?utm_medium=referral&utm_source=Microsoft-Dynamics-CI&create=Freemium-Basic) or [contact HERE Technologies](https://developer.here.com/help?utm_medium=referral&utm_source=Microsoft-Dynamics-CI#how-can-we-help-you) directly. [Learn more about HERE Technologies Location Enrichment.](https://developer.here.com/location-enrichment?cid=Dev-MicrosoftDynamics-DB-0-Dev-&utm_source=MicrosoftDynamics&utm_medium=referral&utm_campaign=Online_Dev_ReferralMicrosoft)
+- An active HERE Technologies subscription. To get a subscription, [sign up here](https://developer.here.com/sign-up?utm_medium=referral&utm_source=Microsoft-Dynamics-CI&create=Freemium-Basic) or contact HERE Technologies directly.
 
 - A HERE [connection](connections.md) is [configured](#configure-the-connection-for-here-technologies) by an administrator.
 

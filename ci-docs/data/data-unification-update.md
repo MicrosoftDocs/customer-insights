@@ -11,8 +11,6 @@ ms.custom: bap-template
 
 # Update unification settings
 
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
-
 To review or change any unification settings once a unified profile has been created, perform the following steps.
 
 1. Go to **Data** > **Unify**.
@@ -216,7 +214,7 @@ Run matching conditions runs deduplication and match rules only and updates the 
 - To run matching conditions and update the unified profile table *without* impacting dependencies (such as customer cards, enrichments, segments, or measures), select **Unify customer profiles**. Dependent processes aren't run, but will be refreshed as [defined in the refresh schedule](schedule-refresh.md).
 - To run matching conditions, update the unified profile, and run all dependencies, select **Unify customer profiles and dependencies**. All processes are rerun automatically.
 
-All tiles except **Customer data** show **Queued** or **Refreshing**.
+All tiles except **Customer data** show **Queued** or **Refreshing**. More data, skewed data, or data with lots of duplicates impact processing time.
 
 [!INCLUDE [progress-details-pane-include](includes/progress-details-pane.md)]
 

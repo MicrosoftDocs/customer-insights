@@ -1,8 +1,8 @@
 ---
 title: Customer Insights - Journeys user guide
 description: Contains topics that describe how to do common marketing tasks in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/23/2023
-ms.topic: hub-page
+ms.date: 01/12/2024
+ms.topic: conceptual
 author: alfergus
 ms.author: alfergus
 search.audienceType: 
@@ -12,8 +12,6 @@ search.audienceType:
 ---
 
 # Customer Insights - Journeys user guide
-
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).

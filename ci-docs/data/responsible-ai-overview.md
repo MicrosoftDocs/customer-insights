@@ -8,6 +8,7 @@ ms.topic: article
 author: m-hartmann
 ms.author: mhart
 ms.reviewer: radsay01
+ms.collection: bap-ai-copilot 
 ---
 
 # Responsible AI FAQs for Dynamics 365 Customer Insights - Data

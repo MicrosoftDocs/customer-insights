@@ -7,6 +7,7 @@ ms.topic: how-to
 author: JimsonChalissery
 ms.author: jimsonc
 ms.custom: bap-template
+ms.collection: bap-ai-copilot 
 ---
 
 # Create segments with Copilot for Customer Insights - Data (preview)

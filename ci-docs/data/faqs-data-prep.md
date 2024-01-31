@@ -8,6 +8,7 @@ ms.topic: article
 author: radsay01
 ms.author: rsayyaparaju
 ms.reviewer: m-hartmann
+ms.collection: bap-ai-copilot 
 ---
 
 # FAQ for the data prep report (preview)

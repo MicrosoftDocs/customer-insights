@@ -8,6 +8,7 @@ ms.topic: article
 author: jimsonc
 ms.author: jimsonc
 ms.reviewer: m-hartmann
+ms.collection: bap-ai-copilot 
 ---
 
 # FAQ for segment creation (preview)

@@ -1,7 +1,7 @@
 ---
 title: Create outbound text messages
 description: Learn how to create outbound text messages in Dynamics 365 Customer Insights - Journeys.
-ms.date: 11/16/2023
+ms.date: 12/12/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -13,14 +13,16 @@ search.audienceType:
 
 # Create outbound text messages
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
 Text messages (SMS) allow you to reach customers directly on their mobile devices. You can send text messages from Dynamics 365 Customer Insights - Journeys by signing up with a provider such as Azure Communication Services, Infobip, LINK Mobility, Telesign, Twilio, or Vibes and configuring Customer Insights - Journeys to work with the provider. To learn how to set up a text messaging provider account, see [Set up text messaging](real-time-marketing-text-messaging-setup.md)
 
 > [!IMPORTANT]
 > Phone numbers and messaging services are not included in the Dynamics 365 Customer Insights license. Text messaging within the app requires a separate provider subscription, which you then connect to the app to send messages.
 
 This article explains how to create and send text messages in Customer Insights - Journeys. As [discussed below](real-time-marketing-outbound-text-messaging.md#track-your-text-message-metrics-from-channel-insights), the Customer Insights - Journeys app tracks text messaging metrics for channel insights purposes, including incoming SMS responses.
+
+## Set up text messaging
+
+Before sending text messages, you need to [enter the details for your text messaging provider](real-time-marketing-text-messaging-setup.md) within the Customer Insights - Journeys app.
 
 ## Create text messages
 
@@ -38,6 +40,9 @@ To create a message:
 Before sending your message, select the **Check content** button in the upper right. This runs an error check on the message, much like the error check functionality in the email designer.
 
 Next, test your message by selecting the **Test send** button in the upper right. If you’re using an Azure Communication Services preview toll-free sender number, you can test send the message to any United States mobile number. If you’re using a Twilio or TeleSign sender number, you can send the message to a mobile device in any supported country. You can also add the message to a journey to see how it can be triggered by events.
+
+> [!NOTE]
+> If your text message exceeds 160 characters, SMS protocol will split and merge content of a logical single message. SMS providers may charge for more than one message for text messages that exceed 160 characters.
 
 ## Personalize text messages
 

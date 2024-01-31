@@ -1,16 +1,15 @@
 ---
 title: "Review data unification"
 description: "Review the data unification steps, create unified customer profiles, and review the results"
-ms.date: 11/15/2022
-ms.topic: tutorial
-author: v-wendysmith
-ms.author: adkuppa
+ms.date: 11/27/2023
+ms.topic: how-to
+author: Scott-Stabbert
+ms.author: sstabbert
 ms.reviewer: v-wendysmith
+ms.custom: bap-template
 ---
 
 # Review data unification
-
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
 Review the summary of changes, create the unified profile, and review the results.
 
@@ -60,6 +59,24 @@ A deduplication output table contains the following information:
   - Deduplication_WinnerId: This field contains the winner ID from the identified groups or clusters. If the Deduplication_WinnerId is same as the Primary key value for a record, it means that the record is the winner record.
 - Fields used to define the deduplication rules.
 - Rule and Score fields to denote which of the deduplication rules got applied and the score returned by the matching algorithm.
+
+## Resolve unexpected unification results
+
+If unification completed successfully without any errors but the result is not as expected, check the following:
+
+- Verify data input: Double-check the accuracy and completeness of the data provided for the unification process. Ensure that all relevant records and information are included.
+- Check data quality: Assess the quality of the input data. Look for any anomalies, inconsistencies, or errors that might impact the unification results. It's essential to clean and normalize the data before the unification process to ensure reliable outcomes.
+- Review unification settings: Examine the configuration and settings used for the unification process. Check if the specified criteria for deduplication and profile generation are correctly defined and aligned with the desired outcome.
+  - Validate deduplication results.
+  - Check the order of priority between tables and rules.
+  - Validate matching rules.
+    - Evaluate the matching rules employed by the unification system. Confirm that the rules accurately identify and match records based on the intended criteria. Adjust the matching rules if necessary.
+    - Check the normalization and customer match step that happens as part of the Match process (if any). For example, Mike is normalized to Michael to ensure source records are matched correctly even when nickname is used in one source record, and full name is used in another source record. To bypass common normalization, [set up custom normalization logic](data-unification-match-tables.md#specify-custom-match-conditions).
+  - Check merge policies.
+  - Test with sample data: Perform tests using a subset of sample data to simulate the unification process. Compare the expected results with the actual outcomes to identify any discrepancies or unexpected behaviors.
+- Rerun Deduplication and Matching rules. Go to **Data** > **Unify** > **Run matching conditions only** and compare the results. If the rules provide the expected results, rerun Merge and compare the results. Go to **Data** > **Unify** > **Unify customer profiles**.
+
+If the issue persists or remains unresolved, engage the support or technical team. Please provide detailed information about the problem, including source data records, expected unified customer profile records, reasons why you expect that result, steps to reproduce it, sample data if applicable, and any relevant error messages.
 
 ## Next steps
 

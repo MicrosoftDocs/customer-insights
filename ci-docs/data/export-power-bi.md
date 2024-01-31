@@ -12,9 +12,10 @@ ms.author: philk
 
 [!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
-
 Create visualizations for your data with the Microsoft Power BI Desktop. Generate additional insights and build reports with your unified customer data.
+
+> [!TIP]
+> We recommend using one of the default options [to use Power BI with Dataverse data](/power-apps/maker/data-platform/use-powerbi-dataverse). It ensures you benefit from our [integration into Dataverse](integrate-d365-apps.md).
 
 ## Prerequisites
 

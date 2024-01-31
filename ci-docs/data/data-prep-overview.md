@@ -7,6 +7,7 @@ ms.topic: overview
 author: radsay01
 ms.author: rsayyaparaju 
 ms.custom: bap-template
+ms.collection: bap-ai-copilot 
 ---
 
 # Data prep report overview (preview)

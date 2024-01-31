@@ -1,7 +1,7 @@
 ---
 title: Troubleshoot issues with Solution Health Hub for Customer Insights - Journeys
 description: Troubleshoot issues with Dynamics 365 Customer Insights - Journeys using Solutions Health Hub.
-ms.date: 08/23/2023
+ms.date: 12/12/2023
 ms.topic: troubleshooting
 author: alfergus
 ms.author: alfergus
@@ -12,8 +12,6 @@ search.audienceType:
 ---
 
 # Troubleshoot issues with Solution Health Hub for Customer Insights - Journeys
-
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 Solution Health Hub detects issues in your Dynamics 365 environment, giving you a better picture of the state of your instances. Your environment's configuration might change over time, due to natural system operations. Solution Health Hub runs rules within an instance to validate the environment's configuration. Some of the rules are specific to Dynamics 365 Customer Insights - Journeys. You can run rules on demand when you encounter an issue. Or, you can execute rules automatically, outside of business hours. Automatic execution ensures minimal disruption to your Customer Insights - Journeys processes.
 
@@ -57,6 +55,7 @@ Below are the rules currently included for Customer Insights - Journeys:
 | CheckIfProcessesAreActive    | Checks whether there are any process definitions in draft status. If there are processes in draft status, Customer Insights - Journeys will not work correctly. | 
 | MissingMktConfiguration    | Checks for the presence of a Customer Insights - Journeys configuration entity record. If the configuration entity record is missing, Customer Insights - Journeys will not work properly. | 
 | MissingRolesToApplicationUser    | Checks whether MarketingServices ApplicationUser has all required roles assigned. If some of the roles are missing, the Customer Insights - Journeys application might not work properly. |
+| MissingFieldSecurityProfiles    |  Checks whether Field Security Profiles are missing. If the profiles are missing, Customer Insights – Journeys text message and push notification flows won't work properly. |
 
 ## View health check results
 

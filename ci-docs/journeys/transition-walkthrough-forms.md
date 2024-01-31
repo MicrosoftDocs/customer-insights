@@ -13,8 +13,6 @@ search.audienceType:
 
 # Transition marketing pages and forms
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
 Outbound marketing contains sitemap entries for “Internet Marketing.” The entries and the corresponding real-time journeys equivalent are depicted in the following image:
 
 > [!div class="mx-imgBorder"]

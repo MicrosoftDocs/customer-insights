@@ -1,7 +1,7 @@
 ---
 title: Manage user accounts, user licenses, and security roles
 description: How to manage user accounts, add licenses to users, and assign security roles in Dynamics 365 Customer Insights - Journeys.
-ms.date: 11/14/2023
+ms.date: 12/12/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -12,8 +12,6 @@ search.audienceType:
 ---
 
 # Manage user accounts, user licenses, and security roles
-
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 [!INCLUDE [marketing-trial-cta](./includes/marketing-trial-cta.md)]
 
@@ -280,5 +278,17 @@ The Customer Insights - Journeys product receives continuous update and enhancem
 One service user, **# Dynamics Marketing Dataverse Datasource**, is used to impersonate a service that resolves dynamic content. Dynamic content can be defined through placeholders for personalized messages or through data-bound parameter in customer journeys.
 
 **# Dynamics Marketing Dataverse Datasource** has a **Service Reader** role assigned, which allows it privileged access to any Dataverse data within a given environment.
+
+### Customer Insights - Journeys field security profiles
+
+After deploying Customer Insights - Journeys features, several Field Security Profiles are created under **Advanced Settings** > **Security** > **Field Security Profiles**. Deleting these profiles will break text messages (SMS) and push notifications flows.
+
+| Customer Insights - Journeys field security role | Customer Insights - Journeys area |
+| ---- | ------- |
+| CxpApplicationUser - Mobile app channel instance secrets  | Push notification channel |
+| CxpApplicationUser - Mobile app secrets  | Push notification channel |
+| Marketers - Mobile app channel instance secrets | Push notification channel |
+| Marketers - Mobile app secrets   | Push notification channel |
+| Customer Journey Orchestration Shared SMS Channels Profile | SMS channel |
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]

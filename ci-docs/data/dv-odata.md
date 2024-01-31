@@ -11,8 +11,6 @@ ms.custom: bap-template
 
 # Dataverse APIs for Customer Insights - Data
 
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
-
 > [!NOTE]
 > Dynamics 365 Customer Insights - Data APIs will be deprecated on August 31st, 2024. We recommend you use the [Web API to interact with data in Microsoft Dataverse](/power-apps/developer/data-platform/webapi/perform-operations-web-api).
 
