@@ -77,6 +77,9 @@ If you uninstall Customer Insights - Journeys paid or trial, the services are di
     > ![Installation management area screenshot.](media/new-installation.png "Installation management area screenshot")
 
 1. After you've installed the Customer Insights - Journeys and Customer Insights - Data apps on the same environment, you need to finish connecting them. To connect the apps, go to **Customer Insights - Journeys** then go to **Settings** > **Data Management** > **Customer Insights** and select the **Connect** button. This completes the data sync for segmentation between the two applications.
+1. In Customer Insights - Data there are a few more steps to connect the Dataverse environment and start generating profiles based on the contact and lead entities in Dataverse, in addition to adding more data sources. 
+  1. On the installation management page, choose the i icon to find a link to and open the Customer Insights - Data environment, select **Add Data Source** and choose **Dataverse**. Populate the URL with the environment URL from the Customer Insights - Journeys Dataverse environment. Select the contact and lead tables only and **Save**.
+  1. In **Unify**, choose the contact and lead tables you ingested to add them to the profile and proceed with unification settings. 
 
 #### Troubleshooting a failed installation
 
