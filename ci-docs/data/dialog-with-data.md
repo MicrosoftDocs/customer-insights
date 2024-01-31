@@ -57,6 +57,8 @@ The **Discover insights about your customers in natural language** page contains
 
 We want to hear your feedback so we can continually enhance the relevancy, precision, and value of the results and the user experience in general. Use the thumbs up or down and the feedback box to share your thoughts.
 
+[!INCLUDE [copilot-availability](includes/copilot-availability.md)]
+
 ## Next steps
 
 - [Create complex segments with segment builder](segment-builder.md)  

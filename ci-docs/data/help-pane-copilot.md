@@ -42,6 +42,8 @@ This conversation history is kept temporarily until you close the Customer Insig
 
 To clear the conversation history, select the **Reload** button in the header of the side pane.
 
+[!INCLUDE [copilot-availability](includes/copilot-availability.md)]
+
 ## Next steps
 
 - [Responsible AI FAQs for Dynamics 365 Customer Insights - Data](responsible-ai-overview.md)

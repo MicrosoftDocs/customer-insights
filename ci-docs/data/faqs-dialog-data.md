@@ -53,7 +53,7 @@ The feature transforms your prompts in natural language into a SQL query to run 
 
 ## What are the supported geographies and languages?
 
-This feature is available in all geographies. This feature doesn't restrict any language, but we recommend and officially support only the following languages: Arabic, Chinese (Simplified), Chinese (Traditional), Czech, Danish, Dutch, English, Finnish, French, German, Greek, Hebrew, Italian, Japanese, Korean, Norwegian, Polish, Portuguese (Brazil), Portuguese (Portugal), Russian, Spanish, Swedish, Thai, and Turkish.
+This feature is available in all geographies. This feature doesn't restrict any language, but we recommend and officially support only the languages listed in the [Copilot International Availability report](https://dynamics.microsoft.com/availability-reports/copilotreport/).
 
 ## What operational factors and settings allow for effective and responsible use of the feature?
 
