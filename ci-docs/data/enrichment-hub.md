@@ -19,6 +19,9 @@ Having more complete and accurate data about your customers enables you to engag
 The enrichments create separate enrichment tables with the enriched data that are linked to the unified customer profiles table through a relationship on the customer ID, so that the enrichment data can easily be leveraged but still kept seperate from the original profile data.
 
 ## Correcting missing and inconsistent data
+Oftentimes, customer profile data have address information that is provided as one text string without any separation into street name, zip code, state, etc. This makes it difficult to build segments effectively based on location. Also, spelling errors and non-standardized notation (e.g., US, USA, United States, United States of America, representing the same country) are common. Examples of enrichments that correct missing and inconsistent data are the **enhanced addresses** enrichement from Microsoft and the **Azure Maps** enrichement. Both enrichments can tokenize the address, i.e., split it up into street name, zip code, state, etc., so that you can easily create a segment based on the city or state for example. They also both correct some spelling mistakes and standardizes notation.
+
+The **Azure Maps** enrichment also validates the address, i.e., looks up whether the address actually exists, and it can provide longitude and latitude for each address which can be used for creating geo targeting and store proximity based segments.
 
 ## Augmenting and expanding customer profiles
 
