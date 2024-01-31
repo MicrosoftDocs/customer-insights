@@ -36,4 +36,6 @@ There are three levels of consent to use generative AI Copilot features in Custo
 
 1. Select **Save**.
 
+[!INCLUDE [copilot-availability](includes/copilot-availability.md)]
+
 [!INCLUDE [footer-include](includes/footer-banner.md)]
