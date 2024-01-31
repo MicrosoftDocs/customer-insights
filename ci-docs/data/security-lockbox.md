@@ -13,8 +13,6 @@ ms.custom: bap-template
 
 [!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
-
 Dynamics 365 Customer Insights - Data uses the Power Platform Customer Lockbox capability. Customer Lockbox provides an interface to review and approve (or reject) data access requests. These requests occur when data access to customer data is needed to resolve a support case. To use this feature, Customer Insights - Data must have an existing connection to a Microsoft Dataverse environment in your tenant.
 
 [!INCLUDE [public-preview-note](includes/public-preview-note.md)]

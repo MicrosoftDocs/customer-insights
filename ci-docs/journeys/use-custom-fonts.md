@@ -13,8 +13,6 @@ search.audienceType:
 
 # Use custom fonts in Customer Insights - Journeys
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
 In the fast-changing field of marketing, it's important to combine design, beauty, and accessibility. Typography, especially the use of web fonts, is crucial for achieving this harmony. This article shows you how to use web fonts in your Customer Insights - Journeys marketing channels, making sure they're both attractive and accessible.
 
 > [!NOTE]

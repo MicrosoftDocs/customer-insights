@@ -1,7 +1,7 @@
 ---
 title: Integrate a custom captcha service with Customer Insights - Journeys forms 
 description: Learn how to integrate custom captcha bot protection into forms in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/22/2023
+ms.date: 01/17/2024
 ms.topic: article
 author: petrjantac
 ms.author: alfergus
@@ -13,9 +13,10 @@ search.audienceType:
 
 # Integrate a custom captcha service with Customer Insights - Journeys forms
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
 Customer Insights - Journeys forms allow you to use custom captcha bot protection to validate form submissions. This article gives an example of how to integrate [Google reCAPTCHA](https://www.google.com/recaptcha/about/). The flow is similar for other captcha services.
+
+> [!NOTE]
+> In the current app version, only one captcha implementation can be active. If you use your own captcha provider (as outlined below), existing forms that use the out-of-the-box captcha will stop working. A custom captcha implementation requires at least basic knowledge of writing and debugging [dataverse plugins](/power-apps/developer/data-platform/plug-ins).
 
 The process consists of these steps:
 
@@ -53,6 +54,10 @@ The process consists of these steps:
     ```
 
     Replace the `{sitekey}` placeholder with the one provided by Google. This callback function renders the reCAPTCHA inside the placeholder `<div id="g-recaptcha">` you created earlier.
+   
+1. Register the onloadCallback function to be called by the form loader:
+   
+```document.addEventListener("d365mkt-afterformload", onloadCallback);```
 
 ### 2. Add the captcha text value to the form submission
 
@@ -237,6 +242,7 @@ Once the form is submitted, the `g-recaptcha-response` parameter is added automa
 1. Make sure **Execution Mode** is set as **Synchronous**.
     > [!div class="mx-imgBorder"]
     > ![Make sure Execution Mode is set as Synchonous.](media/real-time-marketing-form-custom-captcha-5.png)
+1. Make sure **Execution order** is set to `10`.
 1. Make sure **Event Pipeline Stage Of Execution** is set as **Post Operation**.
 1. Select **Register New Step**.
 

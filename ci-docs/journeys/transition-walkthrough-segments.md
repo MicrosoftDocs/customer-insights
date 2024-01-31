@@ -5,15 +5,10 @@ ms.date: 11/16/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
-search.audienceType: 
-  - admin
-  - customizer
-  - enduser
+ms.collection: bap-ai-copilot
 ---
 
 # Transition segments, emails, journeys, and assets
-
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 Segments, emails, and journeys are the most used components in Customer Insights - Journeys.
 

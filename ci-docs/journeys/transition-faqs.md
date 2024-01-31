@@ -5,15 +5,10 @@ ms.date: 12/12/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
-search.audienceType: 
-  - admin
-  - customizer
-  - enduser
+ms.collection: bap-ai-copilot
 ---
 
 # Real-time journeys transition FAQs
-
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 ## What is Dynamics 365 Customer Insights? Is it a new product?
 

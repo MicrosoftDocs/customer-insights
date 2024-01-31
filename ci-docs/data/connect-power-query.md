@@ -1,7 +1,7 @@
 ---
 title: "Connect to a Power Query data source (contains video)"
 description: "Ingest data through a Power Query connector (contains video)."
-ms.date: 09/01/2023
+ms.date: 01/22/2024
 ms.reviewer: v-wendysmith
 ms.topic: how-to
 author: mukeshpo
@@ -10,8 +10,6 @@ ms.custom: bap-template
 ---
 
 # Connect to a Power Query data source
-
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
 [Power Query](/power-query/power-query-what-is-power-query) offers a variety of connectors to ingest data, most of which are supported by Dynamics 365 Customer Insights. In the [Power Query connector reference](/power-query/connectors/), connectors with a checkmark in the **Customer Insights (Dataflows)** column you can use to import data to Customer Insights - Data. Review the documentation of a specific connector to learn more about its prerequisites, [query limitations](/power-query/power-query-online-limits), and other details.
 
@@ -75,6 +73,8 @@ Data gateways from an existing Power BI or Power Apps environment will be visibl
 
 ## Edit Power Query data sources
 
+You must be the owner of the dataflow to edit it.
+
 > [!NOTE]
 > It might not be possible to make changes to data sources that are currently being used in one of the app's processes (segmentation or data unification for example).
 >
@@ -89,6 +89,26 @@ Data gateways from an existing Power BI or Power Apps environment will be visibl
    [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
 
 Loading data can take time. After a successful refresh, review the ingested data from the [**Data** > **Tables**](tables.md) page.
+
+## Transfer Power Query data source ownership
+
+You can transfer the data source ownership to other people in your organization. For example, if the owner leaves the organization or if changes are required for collaboration purposes 
+
+### Transfer the ownership,
+
+The user performing this action must have a *Dataverse Administrator* role.
+
+1. Go to [Power Apps](https://make.powerapps.com).
+
+1. Select the Dataverse environment that maps to your Customer Insights environment.
+
+1. Go to **Dataflows** and select **All Dataflows**.
+
+1. Search for the owner of the dataflow which you want to take ownership.
+
+1. Select the ellipsis &vellip; and select **Change Owner**.
+
+1. Enter the name of the new owner and select **Change Owner**.
 
 ## Next steps
 

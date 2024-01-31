@@ -5,15 +5,12 @@ ms.date: 12/08/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
-search.audienceType: 
-  - admin
-  - customizer
-  - enduser
+ms.collection: bap-ai-copilot
+ms.custom: 
+  - transparency-note
 ---
 
 # Responsible AI FAQs for content rewrite
-
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 These responsible AI FAQs describe the AI impact of Dynamics 365 Customer Insights - Journeys's content rewrite feature.
 

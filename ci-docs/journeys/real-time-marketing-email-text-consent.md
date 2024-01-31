@@ -1,7 +1,7 @@
 ---
 title: Manage consent for email and text messages in Customer Insights - Journeys
 description: Learn how to manage consent for messages in Dynamics 365 Customer Insights - Journeys.
-ms.date: 10/30/2023
+ms.date: 12/14/2023
 ms.topic: reference
 author: alfergus
 ms.author: alfergus
@@ -12,8 +12,6 @@ search.audienceType:
 ---
 
 # Manage consent for email, SMS (text) and custom channel messages in Customer Insights - Journeys
-
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!NOTE]
 > Customer Insights - Journeys consent is contact-point based and works for messages sent to contacts, leads, and Customer Insights - Data profiles. Customer consent is stored per email address or phone number, as opposed to being stored per contact record. Outbound marketing consent processes that you have already defined are not influenced by the Customer Insights - Journeys settings.
@@ -155,7 +153,7 @@ The following diagram provides a visual representation of how consent is enforce
 </table>
 
 > [!IMPORTANT]
-> Real-time journeys may check the contact's `DoNotEmail`, `DoNotBulkEmail`, and `DoNotTrack` fields to match outbound marketing's consent enforcement behavior and aid in the transition from outbound marketing to real-time journeys. To learn more, visit [Manage user compliance settings in Customer Insights - Journeys](real-time-marketing-compliance-settings.md)
+> Customer Insights - Journeys always checks the **Allow email** and **Allow bulk email** fields in contact records to determine if email is allowed to be sent to the contact's email address. Both fields must be set to allow for an email with a commercial purpose type to be sent to a contact. Only the **Allow email** field must be set to allow emails to be sent with a transactional purpose type selected. These checks are done in addition to the Customer Insights - Journeys contact-point consent opt-in/opt-out checks for emails sent by journeys. These checks are not performed for other entity types (for example, leads or Customer Insights - Data profiles). To learn more, visit [Manage user compliance settings in Customer Insights - Journeys](real-time-marketing-compliance-settings.md)
 
 ## View consent records
 

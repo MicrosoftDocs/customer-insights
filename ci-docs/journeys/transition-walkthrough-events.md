@@ -13,8 +13,6 @@ search.audienceType:
 
 # Transition event management
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
 Event management comprises three areas:
 - Event setup (including tracks and sessions, speakers, registrants, etc.)
 - Communication about events

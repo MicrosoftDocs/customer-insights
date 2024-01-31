@@ -13,8 +13,6 @@ search.audienceType:
 
 # Troubleshoot event management in outbound marketing
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
 [!INCLUDE [azure-ad-to-microsoft-entra-id](./includes/azure-ad-to-microsoft-entra-id.md)]
 
 > [!IMPORTANT]

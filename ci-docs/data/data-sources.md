@@ -11,8 +11,6 @@ ms.custom: bap-template
 
 # Data sources overview
 
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
-
 Dynamics 365 Customer Insights - Data provides connections to bring data from a broad set of sources. Connecting to a data source is often referred to as the process of *data ingestion*. After ingesting the data, you can [unify](data-unification.md), generate insights, and activate the data for building personalized experiences.
 
 > [!TIP]
@@ -30,7 +28,7 @@ If you have data prepared in one of Microsoft's Azure data services, you can eas
 - [Azure Data Lake Storage (csv or parquet files in a Common Data Model folder)](connect-common-data-model.md)
 - [Azure Synapse Analytics (Lake databases)](connect-synapse.md)
 - [Microsoft Dataverse data lake](connect-dataverse.md)
-- [Delta Lake format from Azure Data Lake Storage (preview)](connect-delta-lake.md)
+- [Delta tables in Azure Data Lake Storage (preview)](connect-delta-lake.md)
 
 **Import and transform**
 

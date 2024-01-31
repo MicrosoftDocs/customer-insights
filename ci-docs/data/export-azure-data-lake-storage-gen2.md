@@ -12,8 +12,6 @@ ms.author: philk
 
 [!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
-
 Store your data from Dynamics 365 Customer Insights - Data in a Data Lake Storage Gen2 account or use it to transfer your data to other applications.
 
 ## Prerequisites

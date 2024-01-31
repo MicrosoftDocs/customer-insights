@@ -1,19 +1,14 @@
 ---
 title: "Preview: Copilot - Style your emails with AI-assisted themes"
 description: Learn how to use the Copilot-powered theme feature to style your emails in Dynamics 365 Customer Insights - Journeys.
-ms.date: 09/19/2023
+ms.date: 12/15/2023
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
-search.audienceType: 
-  - admin
-  - customizer
-  - enduser
+ms.collection: bap-ai-copilot
 ---
 
 # Preview: Copilot - Style your emails with AI-assisted themes
-
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > A preview feature is a feature that is not complete, but is made available before it’s officially in a release so customers can get early access and provide feedback. Preview features aren’t meant for production use and may have limited or restricted functionality.
@@ -21,6 +16,9 @@ search.audienceType:
 > Microsoft doesn't provide support for this preview feature. Microsoft Dynamics 365 Technical Support won’t be able to help you with issues or questions. Preview features aren’t meant for production use, especially to process personal data or other data that are subject to legal or regulatory compliance requirements.
 
 This article describes the email theme functionality, which uses Copilot to customize the appearance of email fields, buttons, and text.
+
+> [!NOTE]
+> Unless a style is explicitly set in the element properties, the default style is replaced with the email theme style.
 
 ## What is the theme functionality?
 

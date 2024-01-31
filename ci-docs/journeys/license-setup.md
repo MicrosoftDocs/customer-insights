@@ -1,7 +1,7 @@
 ---
 title: Customer Insights license guidance
 description: Learn about licensing information in Dynamics 365 Customer Insights.
-ms.date: 12/12/2023
+ms.date: 01/26/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -31,11 +31,12 @@ This article covers important key points about Customer Insights licensing and p
 -	The meters for interacted people and unified people are independent of each other.
 -	Interacted people is the number of Dataverse entities (contacts, leads, accounts, profiles, custom, other) that have received an interaction in the last 12 months. 
 -	Unified people is the number of unique profiles generated using Customer Insights - Data to merge data records across multiple sources and/or Dataverse entities to result in a single, unified profile for a given person. For example using Dataverse, if you have multiple contact and lead entities with the email address "lamar@contoso.com," all these entities resolve to a single unified profile representing lamar@contoso.com.
+-	If you plan to use SMS, you must also sign-up for an account with an SMS service provider to get a phone number and SMS delivery. [See the list of supported providers](real-time-marketing-text-messaging-setup.md) and sign-up for the provider of your choice. 
 -	As of September 2023, application installation licenses are counted at the tenant level. Prior to this change, with the Dynamics 365 Marketing standalone license and installation model, each license was tightly bound to an environment to enforce the use of one license per environment. As of September 2023, this tight binding has been removed to accommodate both the old Dynamics 365 Marketing standalone license model and the new Dynamics 365 Customer Insights license model. Licenses are counted at the tenant level and displayed in the installation quota at the top of the installation management page. Also with this change, listings of the licenses in the **Power Platform Admin Center** under **Resources** > **Dynamics 365 Apps** are only a means to open the installation management page and will always show as non-configured.
 -	If you're a subscriber of the standalone Marketing or Customer Insights offers prior to September 2023 and want to renew on those offers instead of taking advantage of the new, combined Customer Insights offer, you can work with your seller or partner to renew on the legacy, standalone offers.
--	The two license models aren't related. You can either be on the old, standalone model and receive the old, standalone entitlements or be on the new Dynamics 365 Customer Insights model and receive those entitlements. There's no grandfathering of new entitlement definitions for subscribers of the old, standalone model. The pricing and entitlement models are independent and can't be combined. 
--	You can buy the add-ons for each model independently. If you're on the old model, you buy the old add-ons if you previously owned them. If you're on the new model, you can buy the new add-ons. You can't mix and match add-ons for the new model with the old model. 
--	When switching to the new business model and new entitlements, don't reinstall the applications. While the entitlement definition has changed in the new model, the applications for Customer Insights - Journeys and Customer Insights - Data are the same, therefore you shouldn't uninstall or reinstall applications.
+-	There is no grandfathering of new entitlement definitions for subscribers of the old, standalone models. 
+-	If you are on the old Dynamics 365 Marketing standalone license and need to add interacted people (formerly called active contacts) quota but can't buy the old active contacts add-ons because you previously didn't own the exact SKUs, you can buy the new Interacted People T1-T3 add-ons to increase your quota. 
+-	When switching to the new business model and new entitlements, **do not reinstall the applications**. While the entitlement definition has changed in the new model, the applications for Customer Insights - Journeys and Customer Insights - Data are the same, therefore, you shouldn't uninstall or reinstall applications.
 -	Email throughput of 500,000 messages per hour is granted as follows:
     - For customers on the standalone Dynamics 365 Marketing SKU with 10 million or more active contacts.
     - For customers with the new Dynamics 365 Customer Insights SKU with 500,000 or more interacted people.

@@ -12,8 +12,6 @@ ms.author: philk
 
 [!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
-
 Export segments that target relevant audiences to Adobe Experience Platform.
 
 :::image type="content" source="media/AEP-flow.png" alt-text="Process diagram of the steps outlined in this article.":::

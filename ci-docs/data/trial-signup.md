@@ -11,8 +11,6 @@ ms.reviewer: jeffhar
 
 # Sign up for a free Dynamics 365 Customer Insights trial
 
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
-
 Customer Insights offers a free 30-day trial of two applications: Customer Insights - Data and Customer Insights - Journeys. After a quick sign-up, you'll have access to many of the apps' key features. The trial allows you to test the apps with sample data and even try out your own customer data.
 
 **To sign up for the trial**:

@@ -1,7 +1,7 @@
 ---
 title: "Connect to Delta tables in Azure Data Lake Storage (preview)"
 description: "Work with data stored in Delta Lake format from Azure Data Lake Storage."
-ms.date: 12/11/2023
+ms.date: 01/03/2024
 ms.topic: how-to
 author: mukeshpo
 ms.author: mukeshpo
@@ -10,8 +10,6 @@ ms.custom: bap-template
 ---
 
 # Connect to Delta tables in Azure Data Lake Storage (preview)
-
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
 [!INCLUDE [public-preview-banner](./includes/public-preview-banner.md)]
 
@@ -25,8 +23,7 @@ Key reasons to connect to data stored in Delta format:
 
 <!---
 
-For example, Contoso Coffee has millions of records coming in on a daily basis. Currently, they do full refreshes of their data every 6 hours. This full refresh takes lots of time to reprocess everything when most data has already been processed. By using the Delta format, Contoso is able to greatly reduce their processing time by only processing the new records, leading to even faster insights from Customer Insights – Data.
-
+<!--- For example, Contoso Coffee has millions of records coming in on a daily basis. Currently, they do full refreshes of their data every 6 hours. This full refresh takes lots of time to reprocess everything when most data has already been processed. By using the Delta format, Contoso is able to greatly reduce their processing time by only processing the new records, leading to even faster insights from Customer Insights – Data.
 --->
 
 [!INCLUDE [public-preview-banner](./includes/public-preview-note.md)]
@@ -48,14 +45,14 @@ For example, Contoso Coffee has millions of records coming in on a daily basis. 
   ```
    storage_container_root/
       DeltaLakeDataRoot/
-          DeltaLakeTable/
+         ADeltaLakeTable/
              _delta_log/
                  0000.json
                  0001.json
              part-0001-snappy.parquet
              part-0002-snappy.parquet 
   ```  
-
+  
 ## Connect to Delta data from Azure Data Lake Storage
 
 1. Go to **Data** > **Data sources**.
@@ -64,7 +61,7 @@ For example, Contoso Coffee has millions of records coming in on a daily basis. 
 
 1. Select **Azure Data Lake - Delta tables (Preview)**.
 
-   :::image type="content" source="media/delta-lake-new.png" alt-text="Dialog box to enter connection details for Delta Lake.":::
+   :::image type="content" source="media/delta-lake-new.svg" alt-text="Dialog box to enter connection details for Delta Lake.":::
 
 1. Enter a **Data source name** and an optional **Description**. The name is referenced in downstream processes and it's not possible to change it after creating the data source.
 
@@ -79,7 +76,7 @@ For example, Contoso Coffee has millions of records coming in on a daily basis. 
 
 1. Select the tables you want to include.
 
-1. For selected tables where a primary key isn't defined, **Required** displays under **Primary key**. For each of these tables:
+1. For selected tables where a primary key hasn't been defined, **Required** displays under **Primary key**. For each of these tables:
    1. Select **Required**. The **Edit table** panel displays.
    1. Choose the **Primary key**. The primary key is an attribute unique to the table. For an attribute to be a valid primary key, it shouldn't include duplicate values, missing values, or null values. String, integer, and GUID data type attributes are supported as primary keys.
    1. Select **Close** to save and close the panel.
@@ -146,6 +143,10 @@ A full refresh takes all the data from a table in Delta format and reloads it fr
 1. Select **Save** to run the refresh. The **Data sources** page opens showing the data source in **Refreshing** status, but only the selected table is refreshing.
 
 1. Repeat the process for other tables, if applicable.
+
+### Data synchronization failure
+
+Data synchronization can fail if your Delta folder data was deleted and then recreated. Or if Customer Insights - Data couldn't connect to your Delta folders for an extended period while the versions advanced. To minimize the impact where an intermittent data pipeline failure creates the need for a full refresh, we recommend you maintain a reasonable history backlog, such as 15 days.
 
 ## Next steps
 

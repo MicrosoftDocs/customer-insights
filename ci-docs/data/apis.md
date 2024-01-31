@@ -14,8 +14,6 @@ searchScope:
 
 # Work with Customer Insights - Data APIs
 
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
-
 [!INCLUDE [api-deprecate](./includes/api-deprecate.md)]
 
 Dynamics 365 Customer Insights - Data provides APIs to build your own applications based on your data in Customer Insights. Details of these APIs are listed on the [API reference](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights). They include additional information about operations, parameters, and responses.

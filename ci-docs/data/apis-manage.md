@@ -11,8 +11,6 @@ ms.custom: bap-template
 
 # Manage Customer Insights - Data APIs
 
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
-
 [!INCLUDE [api-deprecate](./includes/api-deprecate.md)]
 
 Set up the keys to use the Dynamics 365 Customer Insights - Data APIs and view the API usage.

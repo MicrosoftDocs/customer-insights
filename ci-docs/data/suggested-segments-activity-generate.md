@@ -13,8 +13,6 @@ ms.custom: bap-template
 
 [!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
-
 Find suggested segments based on activity. For more information, see [Suggested segments based on activity](suggested-segments.md).
 
 ## Required data

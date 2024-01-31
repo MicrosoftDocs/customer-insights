@@ -5,15 +5,10 @@ ms.date: 10/30/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
-search.audienceType: 
-  - admin
-  - customizer
-  - enduser
+ms.collection: bap-ai-copilot
 ---
 
 # Give consent to use Copilot in Customer Insights - Journeys
-
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 There are three levels of consent to use generative AI Copilot features in Customer Insights - Journeys. Consent is global for all users and all Copilot features in Customer Insights - Journeys. The three levels of consent, which can be found at **Settings** > **Feature switches** > **Copilot**, are the following:
 - **Global Opt-in consent**: **On** indicates you agree to enable all Copilot and/or Bing Search-powered features and acknowledge that AI-generated content should be reviewed before use. Default is **On**.

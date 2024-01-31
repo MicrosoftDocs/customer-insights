@@ -11,8 +11,6 @@ ms.custom: bap-template
 
 # Create measures with measure builder
 
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
-
 Measure builder lets you define calculations using math operators, aggregation functions, and filters. Define measures using attributes from tables that are related to the unified *Customer* table.
 
 - Customer attribute: Generates output as a new attribute, which gets saved as a new column in the system-generated table named *Customer_Measure*. When refreshing a customer attribute, all the other customer attributes in the *Customer_Measure* table refresh simultaneously. In addition, customer attributes are shown in the customer profile card. Once run or saved, you can't change a customer attribute to a customer measure. Customer attribute measures have a direct relationship to the unified customer profile.

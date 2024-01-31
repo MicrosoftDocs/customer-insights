@@ -6,12 +6,11 @@ ms.reviewer: mhart
 ms.topic: how-to
 author: joytaylor
 ms.author: joytaylor
-ms.custom: bap-template  
+ms.custom: bap-template
+ms.collection: bap-ai-copilot 
 ---
 
 # Predict subscription churn
-
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
 Predict whether a customer is at risk for no longer using your company’s subscription products or periodic services. Subscription data includes active and inactive subscriptions for each customer so there can be multiple entries per customer ID. To find the churn risk for customers not making scheduled purchases, use the [Transaction churn model.](predict-transactional-churn.md)
 

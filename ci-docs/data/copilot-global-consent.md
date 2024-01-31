@@ -7,11 +7,10 @@ ms.topic: conceptual
 author: radsay01
 ms.author: rsayyaparaju 
 ms.custom: bap-template
+ms.collection: bap-ai-copilot 
 ---
 
 # Give consent to use Copilot in Customer Insights - Data
-
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
 There are three levels of consent to use generative AI Copilot features in Customer Insights - Data. Consent is global for all users and all Copilot features in Customer Insights - Data.
 

@@ -13,8 +13,6 @@ search.audienceType:
 
 # Create Customer Insights - Journeys emails
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
 The Customer Insights - Journeys email editor shares much of its look and feel with the [outbound marketing email editor](prepare-marketing-emails.md). As with the outbound marketing email editor, the Customer Insights - Journeys editor allows you to quickly create personalized emails to capture your customers' attention.
 
 Learn more about creating email in Dynamics 365 Customer Insights - Journeys: [Create a new email and design its content](email-design.md)
