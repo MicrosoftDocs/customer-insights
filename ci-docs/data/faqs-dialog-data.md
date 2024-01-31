@@ -13,11 +13,7 @@ ms.collection: bap-ai-copilot
 
 # FAQ for dialog with data
 
-[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
-
 These frequently asked questions (FAQ) describe the AI impact of Dynamics 365 Customer Insights - Data dialog with data feature.
-
-[!INCLUDE [public-preview-note](includes/public-preview-note.md)]
 
 ## What is dialog with data?
 
