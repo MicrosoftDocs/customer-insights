@@ -19,16 +19,17 @@ Having more complete and accurate data about your customers enables you to engag
 The enrichments create separate enrichment tables with the enriched data that are linked to the unified customer profiles table through a relationship on the customer ID, so that the enrichment data can easily be leveraged but still kept seperate from the original profile data.
 
 ## Correcting missing and inconsistent data
-Oftentimes, customer profile data have address information that is provided as one text string without any separation into street name, zip code, state, etc. This makes it difficult to build segments effectively based on location. Also, spelling errors and non-standardized notation (e.g., US, USA, United States, United States of America, representing the same country) are common. Examples of enrichments that correct missing and inconsistent data are the **enhanced addresses** enrichement from Microsoft and the **Azure Maps** enrichement. Both enrichments can tokenize the address, i.e., split it up into street name, zip code, state, etc., so that you can easily create a segment based on the city or state for example. They also both correct some spelling mistakes and standardizes notation.
+Oftentimes, customer profile data have address information that is provided as one text string without any separation into street name, zip code, state, etc. This makes it difficult to build segments effectively based on location and also diminishes the data unification match precision. Also, spelling errors and non-standardized notation (e.g., US, USA, United States, United States of America, representing the same country) are common. Examples of enrichments that correct missing and inconsistent data are the **enhanced addresses** enrichement from Microsoft and the **HERE technologies**, and **Azure Maps** enrichements. All three enrichments can tokenize the address, i.e., split it up into street name, zip code, state, etc., so that you can easily create a segment based on the city or state for example. They also correct some spelling mistakes and standardizes notation.
 
-The **Azure Maps** enrichment also validates the address, i.e., looks up whether the address actually exists, and it can provide longitude and latitude for each address which can be used for creating geo targeting and store proximity based segments.
+The **HERE technologies** and **Azure Maps** enrichments also validate the address, i.e., looks up whether the address actually exists, and they can provide longitude and latitude for each address which can be used for creating geo targeting and store proximity based segments.
 
 ## Augmenting and expanding customer profiles
+Oftentimes, marketers do not have all the information that they need about each customer to create effective campaigns. For example, a reatiler would be interested in whether a customer is likely to be most interested in *wine* or *the outdoors*, so that they can effectively target offers, but this information is not always available. The **Interest**  enrichment from Microsoft uses age, gender, and location information to predict which of a list of selected interests that are most likely to resonate with each customer, so that you can target them with tailored offeres that have the highest likelihood of being engaging.      
+
+Other enrichments, such as the **Experian** enrichment, provides demographics information such as likely income level, buying propensities, etc.
 
 ## How enrichments are configured
-
-
-that  way and ultimately allows you to Data enrichment uses data from sources like Microsoft and other partners to enrich your unified customer data in Dynamics 365 Customer Insights - Data. Enriched data provides better insights into your customers which in turn provides you better opportunities to serve them. Enrichments are configured using [connections](connections.md), which an administrator sets up with credentials and provides consent for data transfers. The connections are used by administrators and contributors to configure enrichments.
+Enrichments are configured using [connections](connections.md), which an administrator sets up with credentials and provides consent for data transfers. The connections are used by administrators and contributors to configure enrichments.
 
 You can also enrich your data before unification to help increase the quality of a data match and have fewer duplicates in your unified profiles.
 
@@ -48,8 +49,7 @@ Contoso LOB systems capture basic contact and transactional information and not 
 
 With these data enrichments, Contoso has a wealth of insights about their customers and their behaviors, and can now delight their customers at every touchpoint.
 
-## Multiple enrichments of the same type
-
+## Enrichment of segments and Multiple enrichments of the same type
 The table to be enriched is specified during the enrichment configuration, which allows you to enrich only a subset of your profiles. For example, enrich data only for a specific segment. You can configure several enrichments of the same type and reuse the same connection. Some enrichments have limits to the number of enrichments of the same type that can be created. The limits and current use can be seen on each tile on the **Discover** tab of the **Enrichment** page.
 
 ## Next steps
