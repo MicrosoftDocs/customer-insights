@@ -19,7 +19,19 @@ search.audienceType:
 > [!TIP]
 > If you don’t see this feature in your app, contact your admin who can activate it by going to **Settings** > **Overview** > **Feature switches**, scrolling to the **Email editor** area, enabling the **Send now** feature switch, and saving the setting by selecting **Save** on the top right corner.
 
-You can now send an email directly from the email editor without the overhead of creating a journey. From the email editor, select the **Ready to Send** option. This directs you to select the **Send** the email option where you can select a segment, preview its contents, and then send the email. The process builds a simple journey in the background to assist you in sending your email.
+You can now send an email directly from the email editor and be guided through a simple flow, provided your email and journey scenarios are simple. From the email editor, select the **Ready to Send** option. This directs you to select the **Send** the email option where you can select a segment, preview its contents, and then send the email. The process builds a simple journey in the background to assist you in sending your email.
+
+Send Now is a simplified workflow which supports limited scenarios. It does not support the complete set of validations and capabilities available in the full journey editor canvas. If you are using any of these scenarios you must use the journey canvas to ensure the features in your email are supported properly: 
+- Send Now only works with contact and lead, segment based journeys. We will expand to support Customer Insights Profiles in the future. 
+- Outbound marketing segments which have never been used in real-time journeys.
+- Send Now will not stop users from selecting an email and a segment from two different business units. If you have permissions to more than one business unit, be careful to make sure you select an email and segment from the same business unit.
+- The following personalization variables DO NOT work in Send Now: 
+  - Triggers, Send Now only supports Segment based journeys. It will not be able to access Trigger data used in email personalization.
+  - Complex inline conditions 1:n relationships such as Contacts -> Accounts.
+  - Dynamic text.
+  - Lists.
+
+If you experience a journey publish failure or email that doesn't send using Send Now, open the journey in the journey canvas and save a copy, edit the journey and email in the journey canvas and republish. 
 
 To begin your email sending process, follow these steps:
 
@@ -40,5 +52,6 @@ To begin your email sending process, follow these steps:
 
 - Outbound marketing segments that have never been used in a Customer Insights - Journeys don't work with the **Send Now** functionality. Once an outbound marketing segment has been used in a Customer Insights - Journeys successfully, it's been processed and you can use it with the **Send Now** functionality.
 - Sending emails without building a journey will not stop the user from selecting an email and a segment from different business units.
+- Triggers, complex inline conditions, dynamic text, and lists in personalization do not work in Send Now. 
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
