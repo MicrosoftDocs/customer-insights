@@ -544,6 +544,8 @@
       href: dsr-handling.md
     - name: Anonymized customer data human review notice
       href: anonymized-data-review.md
+    - name: One-click unsubscribe support for emails
+      href: one-click-unsubscribe.md
   - name: Maintain the Customer Insights - Journeys app
     items:
     - name: Recurring activity bulk deletion
