@@ -14,7 +14,16 @@ ms.custom: bap-template
 
 [!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
-Having more complete and accurate data about your customers enables you to engage with them more effectively and ultimately allows you to improve your business. Dynamics 365 Customer Insights - Data provides a number of enrichments that cleans up your data and augments it for a more consistent and complete view of your customers. Some enrichments, such as brand and interest enrichemtns, are based on Microsoft data and machine learning models - these enrichments are available for free with your Dynamics 365 Customer Insights - Data subscription. Other enrichements are provided by leading 3rd party data providers, such as Azure Maps and HERE Technologies.
+Having more complete and accurate data about your customers enables you to engage with them more effectively and ultimately allows you to improve your business. Dynamics 365 Customer Insights - Data provides a number of enrichments that clean up your data and augments it for a more consistent and complete view of your customers. Some enrichments, such as brand and interest enrichments, are based on Microsoft data and machine learning models - these enrichments are available for free with your Dynamics 365 Customer Insights - Data subscription. Other enrichements are provided by leading 3rd party data providers, such as Azure Maps and HERE Technologies - these enrichments require a subscription with the respective data providers.
+
+The enrichments create separate enrichment tables with the enriched data that are linked to the unified customer profiles table through a relationship on the customer ID, so that the enrichment data can easily be leveraged but still kept seperate from the original profile data.
+
+## Correcting missing and inconsistent data
+
+## Augmenting and expanding customer profiles
+
+## How enrichments are configured
+
 
 that  way and ultimately allows you to Data enrichment uses data from sources like Microsoft and other partners to enrich your unified customer data in Dynamics 365 Customer Insights - Data. Enriched data provides better insights into your customers which in turn provides you better opportunities to serve them. Enrichments are configured using [connections](connections.md), which an administrator sets up with credentials and provides consent for data transfers. The connections are used by administrators and contributors to configure enrichments.
 
