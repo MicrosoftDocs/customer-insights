@@ -23,8 +23,11 @@ Exports allow you to share specific data with various applications. They can inc
 
 There are two main types of exports:  
 
-- **Data-out exports** let you export any type of table available in Dynamics 365 Customer Insights - Data. The tables that you select for export are exported with all data fields, metadata, schemas, and mapping details. A common use case for the export of full tables, which we call a data-out export, is to share data to Azure Data Lake Gen2, from where organizations can further process these tables with their custom solutions.
 - **Segment exports** let you export segment tables from Customer Insights - Data. Segments represent a list of customer profiles. When exporting segments, you choose which data fields to include in each export. A common use case for such exports is sharing lists of your customers to advertising services like Google Ads or Meta Ads for marketing purposes.
+- **Data-out exports** let you export any type of table available in Dynamics 365 Customer Insights - Data. The tables that you select for export are exported with all data fields, metadata, schemas, and mapping details. A common use case for the export of full tables, which we call a data-out export, is to share data to Azure Data Lake Gen2, from where organizations can further process these tables with their custom solutions. We recommend that for these scenarios you use Dataverse's data sharing features with our [tables in Dataverse]([url](/dynamics365/customer-insights/data/tables#customer-insights---data-tables-in-dataverse)):
+   - Use [Power BI with Dataverse data](/power-apps/maker/data-platform/use-powerbi-dataverse). It ensures you benefit from our [integration into Dataverse](integrate-d365-apps.md).
+   - Benefit from insights in Microsoft Fabric with [Dataverse's link to Fabric and Microsoft OneLake]([url](/power-apps/maker/data-platform/azure-synapse-link-view-in-fabric)).
+
 
 ### Segment exports
 
