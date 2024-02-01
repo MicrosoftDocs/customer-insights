@@ -60,7 +60,7 @@ For iOS applications, Customer Insights - Journeys uses the Apple Push Notificat
 
 # [Android](#tab/android)
 
-For Android applications, Customer Insights - Journeys uses the Firebase Cloud Messaging (FCM) service. To configure your Android application to work with Customer Insights - Journeys, you need to upload the Service Account Json file generated in your Firebase account.
+For Android applications, Customer Insights - Journeys uses the Firebase Cloud Messaging (FCM) service.
 
 > [!IMPORTANT]
 > In June FCM Token authentication approach for Android push notifications will be deprecated and replaced with a Service account json file-based approach. You will need to replace an existing FCM Token with the json file generated within your Google Firebase account.
@@ -68,6 +68,11 @@ For Android applications, Customer Insights - Journeys uses the Firebase Cloud M
 > To generate this file, login to your Firebase account, navigate to the Firebase project for your application, and open Project settings. Then, visit the Service accounts tab and click "Generate a new private key." This will create and download a json file that you can save and then upload to your Push notification settings in Customer Insights - Journeys.
 >
 > Once you have the new file, navigate to the Push Notifications Settings area of Customer Insights - Journeys. Open the Push notification configuration that you generated the file above for. Here, you can change your FCM Authentication Mode from "Api Key" to "Service Account Json." Doing so will allow you to upload the json file you created above. Once saved, the authentication method will be updated and Push notifications will be continue sending successfully.
+
+There are two FCM Authentication Modes: Service Account Json and API key.
+
+- **Service Account Json**: Upload the Service Account Json file generated in the Firebase Project Settings. This is the preferred authentication method that will continue to be supported long-term.
+- **API key**: Enter the API key provided in your Firebase account.
 
 ---
 
