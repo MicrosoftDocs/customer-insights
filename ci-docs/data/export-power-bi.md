@@ -16,6 +16,7 @@ Create visualizations for your data with the Microsoft Power BI Desktop. Generat
 
 > [!TIP]
 > We recommend using one of the default options [to use Power BI with Dataverse data](/power-apps/maker/data-platform/use-powerbi-dataverse). It ensures you benefit from our [integration into Dataverse](integrate-d365-apps.md).
+> You can benefit from insights in Microsoft Fabric easily by using [Dataverse's link to Fabric and Microsoft OneLake]([url](/power-apps/maker/data-platform/azure-synapse-link-view-in-fabric)).
 
 ## Prerequisites
 
