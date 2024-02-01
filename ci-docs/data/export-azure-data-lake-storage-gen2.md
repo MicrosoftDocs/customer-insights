@@ -5,7 +5,7 @@ ms.date: 09/01/2023
 ms.reviewer: mhart
 ms.topic: how-to
 author: pkieffer
-ms.author: philk
+ms.author: nikeller
 ---
 
 # Export data to Azure Data Lake Storage Gen2 (preview)
@@ -13,6 +13,10 @@ ms.author: philk
 [!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
 Store your data from Dynamics 365 Customer Insights - Data in a Data Lake Storage Gen2 account or use it to transfer your data to other applications.
+
+> [!TIP]
+> To achieve fastest data syncing to ADLS gen we recommend using [Dataverse's data linking service](/power-apps/maker/data-platform/azure-synapse-link-data-lake). This is the best solution for our [tables in Dataverse]([url](/dynamics365/customer-insights/data/tables#customer-insights---data-tables-in-dataverse)).
+
 
 ## Prerequisites
 
