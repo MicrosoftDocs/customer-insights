@@ -1,7 +1,7 @@
 ---
 title: Select the audience source for journeys
 description: Learn how to select the audience source for journeys in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/22/2023
+ms.date: 02/01/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -38,6 +38,6 @@ You can change the default recipient or add more recipient fields. You can selec
 A default value is displayed in the *Send-to* field, but you can select any other recipient field from the dropdown menu.
 
 > [!Important]
-> Starting from the February 2024 release, it will be possible to configure multiple email addresses for a contact's email channel. However, for any release version before February 2024, you will only be able to select a single email address for a contact's email channel configuration.
+> Starting in the February 2024 release, it's possible to configure multiple email addresses for a contact's email channel. However, for any release version before February 2024, you can only select a single email address for a contact's email channel configuration.
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
