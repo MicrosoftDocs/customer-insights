@@ -1,7 +1,7 @@
 ---
 title: New and upcoming features
 description: Information about new features, improvements, and bug fixes in Dynamics 365 Customer Insights - Journeys releases.
-ms.date: 01/19/2024
+ms.date: 02/01/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -20,20 +20,20 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 
 ## February 2024 update
 
-#### Version number
+### Version number
 
 | App              | GA release      |
 |------------------|-----------------|
 | Customer Insights - Journeys        |   1.1.37290.59    |
 
-#### General availability
+### General availability
 
 - **Stay compliant with one-click unsubscribe for emails**
     - One-click unsubscribe keeps you compliant with new requirements from Google and Yahoo for bulk email senders. Making it easy to unsubscribe from your messages in a single click improves your reputation as a brand and as an email sender. When combined with real-time journey consent topics, one-click unsubscribe encourages your customers to stay subscribed to your other commercial emails while unsubscribing from a single topic. Letting customers opt out easily can improve open rates, click-through rates, and ensure that your messages are less likely to be marked as spam.
     - [Release plan](/dynamics365/release-plan/2023wave2/marketing/dynamics365-marketing/stay-compliant-one-click-unsubscribe-emails)
     - [Docs](one-click-unsubscribe.md)
 
-#### Public preview
+### Public preview
 
 - **Streamline email creation with real-time HTML edits**
     - Easily customize emails in Dynamics 365 Customer Insights - Journeys with the ability to toggle back and forth between the visual editor and HTML code. Get more control over how you display information by marking the code and seeing how it renders across devices and email clients.
@@ -48,14 +48,14 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 - **Ensure messages go to the right contact email address**
     - It's critical that your messages are delivered by the right channel at the right time. Often, you'll need to pick the correct email address among the several you may have for a contact. Now, you can choose which of the contact’s email addresses to target in your journeys. For example, some email messages may be more appropriate for a contact’s work email address, whereas others may best target a personal email address. Now, you have full control over which email address to send email messages to, enabling you to reach your customers where they’re most likely to see your messages and take action.
     - [Release plan](/dynamics365/release-plan/2023wave2/marketing/dynamics365-marketing/ensure-messages-go-right-contact-email-address)
-    - Docs
+    - [Docs](real-time-marketing-audience-data.md)
 
-#### Monthly enhancements
+### Monthly enhancements
 
 - **Analytics: Optimize marketing efforts with enhanced channel insights**
     - With the introduction of improved key performance indicators, you can get a deeper understanding of your text, push notification and custom channels effectiveness. You can also access detailed reports on delivery and interaction metrics, export up to 50,000 records of interaction data, and see the profiles of the people who engaged with your messages.
-- **Personalization: Dynamic data source for Event registration code**
-    - Make your life easier and enhance efficiency by using a single event registration confirmation email for many events. Use triggered-journey and design your emails to use trigger as data source for dynamic data for event details including a QR code that will show personalized registration code for the recipient enabling faster check-ins. You can still use the specific event option, if needed. (Note: this enhancement is available only in real-time, outbound is still limited to using specific event selected at the design time and hence requires a separate email for each event).
+- **Personalization: Dynamic data source for event registration code**
+    - Make your life easier and enhance efficiency by using a single event registration confirmation email for many events. Use triggered-journey and design your emails to use trigger as data source for dynamic data for event details including a QR code that will show personalized registration code for the recipient enabling faster check-ins. You can still use the specific event option, if needed. (Note: this enhancement is available only in real-time journeys. Outbound marketing is still limited to using specific event selected at the design time and hence requires a separate email for each event).
 - **Quiet times: Change or disable quiet times for a specific message**
     - Change or disable quiet times enforcement on a particular message within a journey to support scenarios when a particular message in a journey should not be subject to regular quiet times settings. You can either pick from alternative quiet times settings that have already been created or disable quiet times enforcement entirely for the message.
 
@@ -63,9 +63,8 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 
 Learn how to make the most of the new Dynamics 365 Customer Insights - Journeys features in our latest blogs and scenario docs:
 
-- [Enhanced data collection and journey personalization with unmapped form fields (dynamics.com)](https://community.dynamics.com/blogs/post/?postid=3a361b7e-80b0-ee11-92bd-002248527d3d)
+- [Enhanced data collection and journey personalization with unmapped form fields](https://community.dynamics.com/blogs/post/?postid=3a361b7e-80b0-ee11-92bd-002248527d3d)
 - [Transition to real time journeys – the time is now  - Microsoft Dynamics 365 Blog](https://cloudblogs.microsoft.com/dynamics365/it/2024/01/09/transition-to-real-time-journeys-the-time-is-now/)
-
 
 ## January 2024 update
 
