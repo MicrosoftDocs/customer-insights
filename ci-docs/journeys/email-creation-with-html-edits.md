@@ -1,5 +1,5 @@
 ---
-title: "Preview: Use enhanced HTML controls and import HTML snippets into the email editor"
+title: "Preview: Use enhanced HTML controls and import HTML snippets"
 description: Learn how to use enhanced HTML controls and import HTML code snippets into the email editor in Dynamics 365 Customer Insights - Journeys.
 ms.date: 02/01/2024
 ms.topic: article
@@ -11,7 +11,7 @@ search.audienceType:
   - enduser
 ---
 
-# Preview: Use enhanced HTML controls and import HTML snippets into the email editor
+# Preview: Use enhanced HTML controls and import HTML snippets
 
 > [!IMPORTANT]
 > A preview feature is a feature that is not complete, but is made available before it’s officially in a release so customers can get early access and provide feedback. Preview features aren’t meant for production use and may have limited or restricted functionality.
@@ -27,7 +27,7 @@ This feature lets you:
 - Code in HTML and see the changes right away in the email.
 - Import HTML code into the email editor as a custom section.
 
-The next sections you how to use the enhanced HTML controls feature in the email editor and describe its advantages and limitations.
+The next sections explain how to use the enhanced HTML controls feature in the email editor and describe its advantages and limitations.
 
 > [!NOTE]
 > Be aware that when you create a custom section, any rendering support is lost.
@@ -42,31 +42,29 @@ To turn on or off this feature:
 
 > [!NOTE]
 > To get the best experience, move the dock to the bottom of the page, as shown below.
+> :::image type="content" source="media/use-dock-for-enhanced-experience.png" alt-text="Use dock at the page bottom for better experience.":::
 
-> [!div class="mx-imgBorder"]
-> ![Use dock at the page bottom for better experience](media/use-dock-for-enhanced-experience.png "Use dock at the page bottom for better experience")
-
-To mark sections of the email as custom, you need to use the **Mark section as custom** feature. This feature allows you to indicate that certain parts of the email shouldn't be modified by post-processing and should retain their original rendering behavior. You can also select any section of the email and edit the HTML code directly in the code editor.
+To mark sections of an email as custom, you need to use the **Mark section as custom** feature. This feature allows you to indicate that certain parts of the email shouldn't be modified by post-processing and should retain their original rendering behavior. You can also select any section of the email and edit the HTML code directly in the code editor.
 
 To use the custom code tagging feature, follow these steps:
-- Select the section of the email that you want to mark as custom.
-- Select the “**Mark section as custom**” button on the top left corner of the HTML editor window.
+1. Select the section of the email that you want to mark as custom.
+1. Select the **Mark section as custom** button on the top left corner of the HTML editor window.
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of custom code tagging feature](media/custom-code-tagging.png "Screenshot of custom code tagging feature")
+    > [!div class="mx-imgBorder"]
+    > ![Screenshot of custom code tagging feature](media/custom-code-tagging.png "Screenshot of custom code tagging feature")
 
-- See the selected code wrapped with the Custom code tags in the code editor and marked code highlighted with a green border in the live preview of your email and in HTML window.
+1. See the selected code wrapped with the custom code tags in the code editor and the marked code highlighted with a green border in the live preview of your email and in HTML window.
 
-To import HTML code snippet, you need to select the “**Import code snippet**” button on the top of the HTML editor window. This opens a window where you can import a code snippet that you can use in your emails. 
+To import an HTML code snippet, select the **Import code snippet** button on the top of the HTML editor window. This opens a window where you can import a code snippet that you can use in your emails. 
 
 To insert a code snippet into your email, follow these steps:
-- Select the section where you want to import the code. 
-- Select the “**Import code snippet**” button on the HTML editor window.
+1. Select the section where you want to import the code. 
+1. Select the **Import code snippet** button on the HTML editor window.
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of importing your own code feature](media/custom-code-tagging.png "Screenshot of importing your own code feature")
+    > [!div class="mx-imgBorder"]
+    > ![Screenshot of importing your own code feature](media/custom-code-tagging.png "Screenshot of importing your own code feature")
 
-- See the code snippet added to the HTML editor and the live preview of your email highlighted with a green border in the live preview of your email and in HTML window.
+1. See the code snippet added to the HTML editor and the live preview of your email highlighted with a green border in the live preview of your email and in the HTML window.
 
 ## Benefits and limitations of the enhanced HTML controls feature
 
@@ -79,11 +77,8 @@ The enhanced HTML controls feature provides several benefits for marketers who w
 - It helps you avoid rendering issues and support tickets by providing you with user-friendly HTML editor.
 
 However, the enhanced HTML controls feature also has some limitations that you should be aware of. Some of the limitations are:
+
 - By marking section as custom all email client compatibility processing will be disabled and you should test your emails before sending.
 - It doesn't support dynamic content or personalization tokens. These features may not display correctly or may cause errors in the email client.
 
-Therefore, you should use the enhanced HTML controls feature with caution and follow the best practices for creating emails with custom HTML code. 
-
-## Conclusion
-
-The enhanced HTML controls feature is a handy and powerful tool for marketers who want to use custom HTML code in their emails. It allows you to modify your emails in real-time, label your custom code, and import code snippets that work well with hybrid layouts. It also helps you simplify the email creation process, avoid rendering issues, and reduce support tickets. However, you should also know the limitations of this feature and test your emails before sending them to your customers. 
+You should use the enhanced HTML controls feature with caution and follow best practices for creating emails with custom HTML code.

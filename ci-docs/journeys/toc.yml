@@ -150,7 +150,7 @@
           href: content-rewrite.md
         - name: "Preview: Copilot - Style your emails with AI-assisted themes"
           href: email-theme.md
-        - name: "Preview: Use enhanced HTML controls and import HTML snippets into the email editor"
+        - name: "Preview: Use enhanced HTML controls and import HTML snippets"
           href: email-creation-with-html-edits.md
         - name: Enhance email engagement by allowing browser viewing
           href: view-email-in-browser.md  
