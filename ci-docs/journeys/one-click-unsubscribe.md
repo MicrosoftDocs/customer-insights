@@ -16,10 +16,26 @@ search.audienceType:
 > [!IMPORTANT]
 > Google has clarified that senders that include an unsubscribe link in an email message have until June 1, 2024 to implement one-click unsubscribe in all commercial and promotional emails.
 >
-> Refer [Google's one-click unsubscribe FAQ](https://support.google.com/a/answer/14229414?sjid=761938282406717544-NC#zippy=%2Cdo-all-messages-require-one-click-unsubscribe) for more up-to-date information.
+> Refer to [Google's one-click unsubscribe FAQ](https://support.google.com/a/answer/14229414?sjid=761938282406717544-NC#zippy=%2Cdo-all-messages-require-one-click-unsubscribe) for more up-to-date information.
 
 > [!NOTE]
-> This is pre-release documentation. The feature switch to turn this capability on isn't available yet. We'll update this page when the feature switch becomes available.
+> We are gradually rolling the feature across the regions. Please refer to the table below for the latest updates on the availability of the one-click unsubscribe feature across regions.
+
+| Region | Feature switch available under Settings | Outbound Marketing emails | Real-Time Journeys emails |
+| --------| ---------------------------- | ----------- | ----------- |
+| IND | Available | Supported | Feb 5
+| CAN, SAM, FRA, CHE | Available | Supported | Feb 6
+| UAE, APJ, OCE, GBR, JPN | Available | Supported | Feb 7
+| EUR | Feb 8 | Feb 8 | Feb 8
+| NAM | Feb 12 |Feb 12 | Feb 12
+
+You can learn more about your dataverse region [here](https://learn.microsoft.com/en-us/power-platform/admin/new-datacenter-regions).
+
+> [!NOTE]
+> Once the feature switch is enabled, it enables the one-click unsubscribe functionality for both outbound marketing and real-time journeys. However, currently a known issue is preventing one-click unsubscribe headers from being added to emails sent using real-time journeys even when the feature switch is turned on.
+>
+> For more details, please refer to the known issue [here](https://admin.test.powerplatform.microsoft.com/knownissues/3807453).
+
 
 Email providers and the [underlying protocols](https://datatracker.ietf.org/doc/html/rfc8058) support giving email recipients the ability to unsubscribe from emails using "one click" without leaving their email application. For example, Google surfaces an **Unsubscribe** link at the top of their email user interface:
 
