@@ -1,7 +1,7 @@
 ---
 title: Create and design a marketing email message
 description: Learn how to create and design a marketing email message in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/18/2023
+ms.date: 02/02/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -67,6 +67,9 @@ You can also add a preheader, which shows up next to or below the subject line i
 ### Other important settings
 
 Other important settings are also provided in the **Email header** pane, but these should already show default values that should work fine in most situations.
+
+1. Go to **Settings** in the right panel and select it.
+1. After selecting the settings, you'll be able to see the **Email header**.
 
 > [!div class="mx-imgBorder"]
 > ![Access additional email header settings.](media/email-header-settings.png)
