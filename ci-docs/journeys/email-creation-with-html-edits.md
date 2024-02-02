@@ -1,7 +1,7 @@
 ---
-title: "Preview: Using enhanced HTML controls and importing HTML code snippets in email editor"
-description: Learn how to use enhanced HTML controls and importing HTML code snippets in Dynamics 365 Customer Insights - Journeys.
-ms.date: 01/16/2024
+title: "Preview: Use enhanced HTML controls and import HTML snippets into the email editor"
+description: Learn how to use enhanced HTML controls and import HTML code snippets into the email editor in Dynamics 365 Customer Insights - Journeys.
+ms.date: 02/01/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -11,42 +11,42 @@ search.audienceType:
   - enduser
 ---
 
-# Preview: Using Enhanced HTML Controls and Importing HTML Code Snippets in Email Editor
-
-A guide for marketers on how to use the new feature of live coding and custom code tagging in Dynamics 365 Customer Insights - Journeys email editor.
+# Preview: Use enhanced HTML controls and import HTML snippets into the email editor
 
 > [!IMPORTANT]
 > A preview feature is a feature that is not complete, but is made available before it’s officially in a release so customers can get early access and provide feedback. Preview features aren’t meant for production use and may have limited or restricted functionality.
 >
 > Microsoft doesn't provide support for this preview feature. Microsoft Dynamics 365 Technical Support won’t be able to help you with issues or questions. Preview features aren’t meant for production use, especially to process personal data or other data that are subject to legal or regulatory compliance requirements.
 
-As a marketer, you want to send emails that are engaging and personalized for your customers. Sometimes, you may need to modify the HTML or add a new custom HTML code to get specific design features and layout options. However, editing the HTML or importing a new custom HTML code can cause rendering issues and display differences across various email clients and devices. To help you deal with these issues, Dynamics 365 Customer Insights - Journeys introduces a new feature of enhanced HTML controls that allows you to edit your emails in real-time and protect your custom code from post-processing.
+This article details how to use live coding and custom code tagging in the Customer Insights - Journeys email editor.
+
+As a marketer, you want to send emails that are engaging and personalized for your customers. Sometimes, you may need to modify the HTML or add custom HTML code to achieve specific design features and layout options. However, editing the HTML or importing custom HTML code can cause rendering issues and display differences across various email clients and devices. To help you deal with these issues, the Customer Insights - Journeys email editor includes enhanced HTML controls that allow you to edit emails in real-time and protect your custom code from post-processing.
 
 This feature lets you:
-- Mark a section of the email as custom and make sure that they're kept from post-processing and rendering changes.
+- Mark a section of an email as custom and make sure that it's kept from post-processing and rendering changes.
 - Code in HTML and see the changes right away in the email.
 - Import HTML code into the email editor as a custom section.
 
-This document shows you how to use the enhanced HTML controls feature in Dynamics 365 Customer Insights - Journeys email editor and describe its advantages and limitations.
+The next sections you how to use the enhanced HTML controls feature in the email editor and describe its advantages and limitations.
 
 > [!NOTE]
-> Please be aware that when you create a section custom, any rendering support is lost.
+> Be aware that when you create a custom section, any rendering support is lost.
 
-## Enable Copilot
+## Enable the enhanced HTML controls
 
 To turn on or off this feature:
-1. Go to **Settings > Overview > Feature switches**.
-1. **Enable** or **disable** the enhanced HTML controls toggle inside Email editor section.
+1. Go to **Settings** > **Overview** > **Feature switches**.
+1. **Enable** or **disable** the enhanced HTML controls toggle inside **Email editor** section.
 
-## How to use the enhanced HTML controls feature
+## How to use the enhanced HTML controls
 
 > [!NOTE]
-> To get the best experience, move the dock to the bottom of the page as shown below.
+> To get the best experience, move the dock to the bottom of the page, as shown below.
 
 > [!div class="mx-imgBorder"]
 > ![Use dock at the page bottom for better experience](media/use-dock-for-enhanced-experience.png "Use dock at the page bottom for better experience")
 
-To mark sections of the email as custom, you need to use the “**Mark section as custom**” feature. This feature allows you to indicate that certain parts of the email shouldn't be modified by post-processing and should retain their original rendering behavior. You can also select any section of the email and edit the HTML code directly in the code editor. 
+To mark sections of the email as custom, you need to use the **Mark section as custom** feature. This feature allows you to indicate that certain parts of the email shouldn't be modified by post-processing and should retain their original rendering behavior. You can also select any section of the email and edit the HTML code directly in the code editor.
 
 To use the custom code tagging feature, follow these steps:
 - Select the section of the email that you want to mark as custom.
