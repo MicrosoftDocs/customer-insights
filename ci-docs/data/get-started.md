@@ -15,9 +15,9 @@ Customer Insights - Data can help you build a deeper understanding of your custo
 
 ## Step 1: Create an environment
 
-1. Sign up for a [free trial](trial-signup.md) or [purchase a license](paid-license.md).
+1. If you want to install the Data application on an existing Dynamics 365 environment visit [this page](..\journeys\setup.md) for instructions. If you don't have a paid license you can sign up for a [free trial](trial-signup.md) or [purchase a license](paid-license.md).
 
-1. [Create an environment](create-environment.md). After the environment is created, the **Getting Started** screen displays.
+1. In most cases with global tenant admin permissions, you should create an environment in Power Platform Admin Center and [follow these steps](..\journeys\setup.md) to install Customer Insights - Data. If you want to create an environment from the Customer Insights - Data application you must be a global tenant admin and can follow these steps [Create an environment](create-environment.md). After the environment is created, the **Getting Started** screen displays.
 
    :::image type="content" source="media/get-started.png" alt-text="Screenshot of the Getting Started screen with Insights in minutes.":::
 
