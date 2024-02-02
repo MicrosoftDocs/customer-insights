@@ -1,7 +1,7 @@
 ---
 title: One-click unsubscribe support for emails 
 description: Learn how to use one-click unsubscribe support for emails in Dynamics 365 Customer Insights - Journeys
-ms.date: 01/30/2024
+ms.date: 02/01/2024
 ms.topic: get-started
 author: alfergus
 ms.author: alfergus
@@ -16,26 +16,25 @@ search.audienceType:
 > [!IMPORTANT]
 > Google has clarified that senders that include an unsubscribe link in an email message have until June 1, 2024 to implement one-click unsubscribe in all commercial and promotional emails.
 >
-> Refer to [Google's one-click unsubscribe FAQ](https://support.google.com/a/answer/14229414?sjid=761938282406717544-NC#zippy=%2Cdo-all-messages-require-one-click-unsubscribe) for more up-to-date information.
+> For more up-to-date information, refer to [Google's one-click unsubscribe FAQ](https://support.google.com/a/answer/14229414?sjid=761938282406717544-NC#zippy=%2Cdo-all-messages-require-one-click-unsubscribe).
 
 > [!NOTE]
-> We are gradually rolling the feature across the regions. Please refer to the table below for the latest updates on the availability of the one-click unsubscribe feature across regions.
+> We're gradually rolling out the one-click unsubscribe feature across geographic regions. Refer to the table below for the latest updates on the availability of the one-click unsubscribe feature.
+> 
+> | Region | Feature switch available under **Settings** | Outbound marketing emails | Real-time journeys emails |
+> | --------| ---------------------------- | ----------- | ----------- |
+> | IND | Available | Supported | Feb 5 |
+> | CAN, SAM, FRA, CHE | Available | Supported | Feb 6 |
+> | UAE, APJ, OCE, GBR, JPN | Available | Supported | Feb 7 |
+> | EUR | Feb 8 | Feb 8 | Feb 8 |
+> | NAM | Feb 12 |Feb 12 | Feb 12 |
+> 
+> Learn more about your Dataverse region: [Datacenter regions](/power-platform/admin/new-datacenter-regions)
 
-| Region | Feature switch available under Settings | Outbound Marketing emails | Real-Time Journeys emails |
-| --------| ---------------------------- | ----------- | ----------- |
-| IND | Available | Supported | Feb 5
-| CAN, SAM, FRA, CHE | Available | Supported | Feb 6
-| UAE, APJ, OCE, GBR, JPN | Available | Supported | Feb 7
-| EUR | Feb 8 | Feb 8 | Feb 8
-| NAM | Feb 12 |Feb 12 | Feb 12
-
-You can learn more about your dataverse region [here](https://learn.microsoft.com/en-us/power-platform/admin/new-datacenter-regions).
-
-> [!NOTE]
-> Once the feature switch is enabled, it enables the one-click unsubscribe functionality for both outbound marketing and real-time journeys. However, currently a known issue is preventing one-click unsubscribe headers from being added to emails sent using real-time journeys even when the feature switch is turned on.
+> [!TIP]
+> Once the one-click unsubscribe feature switch is enabled, it enables the one-click unsubscribe functionality for outbound marketing *and* real-time journeys. However, there's currently a known issue that prevents one-click unsubscribe headers from being added to emails sent using real-time journeys, even when the feature switch is turned on.
 >
-> For more details, please refer to the known issue [here](https://admin.test.powerplatform.microsoft.com/knownissues/3807453).
-
+> For more details, refer to the [known issue summary](https://admin.test.powerplatform.microsoft.com/knownissues/3807453).
 
 Email providers and the [underlying protocols](https://datatracker.ietf.org/doc/html/rfc8058) support giving email recipients the ability to unsubscribe from emails using "one click" without leaving their email application. For example, Google surfaces an **Unsubscribe** link at the top of their email user interface:
 
