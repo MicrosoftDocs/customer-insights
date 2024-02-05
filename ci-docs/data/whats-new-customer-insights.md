@@ -36,7 +36,7 @@ If your data is already in Delta tables within the same storage container, you c
 
 #### Incremental unification when using Delta data
 
-To accelerate insights using the power of Delta tables, we now see faster data unification when all the tables used in the unification process are provided in the Delta format. The time to run the match process is approximately 25% faster.
+To accelerate insights using the power of Delta tables, we now see faster data unification when all the tables used in the unification process are provided in the Delta format because data unification runs incrementally. The time to run the match process is approximately 25% faster.
 
 ## December 2023
 
