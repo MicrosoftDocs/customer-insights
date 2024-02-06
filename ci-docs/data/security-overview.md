@@ -1,7 +1,7 @@
 ---
 title: Security overview
 description: Learn about security settings in Dynamics 365 Customer Insights - Data.
-ms.date: 09/01/2023
+ms.date: 02/08/2024
 ms.topic: overview
 author: AndreaAczel
 ms.author: anaczel
@@ -17,4 +17,5 @@ Keeping your data secure is essential to your business. Dynamics 365 Customer In
 - [Bring your own Key Vault](use-azure-key-vault.md)
 - [Securely access customer data with Customer Lockbox](security-lockbox.md)
 - [Set up an Azure Private Link](private-link.md)
+- [Customer-managed keys in Dynamics 365 Customer Insights - Data](customer-managed-keys.md)
 - [Data Subject Rights (DSR) requests](dsr-rights-requests.md)
