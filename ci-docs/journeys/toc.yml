@@ -50,6 +50,8 @@
       href: transition-walkthrough-segments.md
     - name: Consent
       href: transition-walkthrough-consent.md
+    - name: Consent management and double opt-in
+      href: real-time-marketing-consent-transition.md
     - name: Marketing pages and forms
       href: transition-walkthrough-forms.md
     - name: Event management
@@ -106,18 +108,6 @@
       href: domain-authentication.md
     - name: BIMI support
       href: bimi-support.md
-  - name: Privacy and compliance
-    items:
-    - name: Manage consent for email and text messages
-      href: real-time-marketing-email-text-consent.md
-    - name: Preference centers
-      href: real-time-marketing-preference-centers.md
-    - name: Consent management and double opt-in transition guidance
-      href: real-time-marketing-consent-transition.md
-    - name: Migrate consent records to Customer Insights - Journeys
-      href: real-time-marketing-migrate-consent.md
-    - name: Use outbound subscription centers in Customer Insights - Journeys
-      href: real-time-marketing-outbound-subscription.md
   - name: Business units
     items:
     - name: Business unit support in Customer Insights - Journeys
@@ -370,6 +360,22 @@
       href: real-time-marketing-personalize-lists.md
     - name: Preview personalized content
       href: real-time-marketing-preview-personalized-content.md
+  - name: Privacy and compliance
+    items:
+    - name: Consent management overview
+      href: real-time-marketing-compliance-settings.md
+    - name: Customize your preference centers
+      href: real-time-marketing-preference-centers.md
+    - name: Use outbound subscription centers in real-time journeys
+      href: real-time-marketing-outbound-subscription.md
+    - name: Migrate consent records to real-time journeys
+      href: real-time-marketing-migrate-consent.md
+    - name: One-click unsubscribe support for emails
+      href: one-click-unsubscribe.md
+    - name: Create consent records using a cloud flow
+      href: consent-record-creation.md
+    - name: Manage consent for email and text messages
+      href: real-time-marketing-email-text-consent.md
   - name: Image, file, and video assets
     items:
     - name: Use images, files, and videos in your content
@@ -416,8 +422,6 @@
     href: real-time-marketing-developer-push.md
   - name: Receive notifications and create interactions
     href: real-time-marketing-developer-notifications.md
-  - name: Create a consent record using a cloud flow
-    href: consent-record-creation.md
   - name: Create a Customer Insights - Journeys segment using the Web API
     href: real-time-marketing-api-segment.md
   - name: Use binding IDs to correlate across triggers
@@ -534,20 +538,12 @@
       href: customize-template-labels.md
     - name: Customize the email designer
       href: developer/email-designer-customization.md
-  - name: Privacy and compliance
+  - name: Data compliance
     items:
-    - name: Compliance overview
-      href: compliance-overview.md
-    - name: Manage user compliance settings
-      href: real-time-marketing-compliance-settings.md
-    - name: Use privacy features
-      href: privacy-use-features.md
     - name: Data subject request (DSR) handling
       href: dsr-handling.md
     - name: Anonymized customer data human review notice
       href: anonymized-data-review.md
-    - name: One-click unsubscribe support for emails
-      href: one-click-unsubscribe.md
   - name: Maintain the Customer Insights - Journeys app
     items:
     - name: Recurring activity bulk deletion
