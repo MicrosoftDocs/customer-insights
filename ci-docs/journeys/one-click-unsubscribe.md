@@ -23,11 +23,11 @@ search.audienceType:
 > 
 > | Region | Feature switch available under **Settings** | Outbound marketing emails | Real-time journeys emails |
 > | --------| ---------------------------- | ----------- | ----------- |
-> | IND | Available | Supported | Feb 5 |
-> | CAN, SAM, FRA, CHE | Available | Supported | Feb 6 |
-> | UAE, APJ, OCE, GBR, JPN | Available | Supported | Feb 7 |
-> | EUR | Feb 8 | Feb 8 | Feb 8 |
-> | NAM | Feb 12 |Feb 12 | Feb 12 |
+> | IND | Available | Supported | Supported |
+> | CAN, SAM, FRA, CHE | Available | Supported | Supported |
+> | UAE, APJ, OCE, GBR, JPN | Available | Supported | Supported |
+> | EUR | Feb 9 | Feb 9 | Feb 9 |
+> | NAM | Feb 13 |Feb 13 | Feb 13 |
 > 
 > Learn more about your Dataverse region: [Datacenter regions](/power-platform/admin/new-datacenter-regions)
 
