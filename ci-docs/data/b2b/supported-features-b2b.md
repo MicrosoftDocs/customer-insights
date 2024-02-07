@@ -20,18 +20,17 @@ This article describes information specific to legacy B2B environments. For all 
 
 |Feature |What's supported |
 |----------|-----------|
-|Activities |Activities for [accounts](../activities.md) and related [contacts](activities-contacts.md) that can be displayed in a timeline |
-|[Customer profiles](../customer-profiles.md) |In addition to the customer profile, **Contacts for this customer** display. Each contact is shown with their fields. Empty fields are hidden. For more information, see [View customer profiles](../customer-profiles.md). Learn how to [filter contact activities within the timeline.](activities-contacts.md#contact-level-activity-timeline-filtering)|
-|[Data ingestion](../data-sources.md) |Azure Data Lake Storage, Azure Synapse Analytics (Lake databases), Microsoft Dataverse data lake, and Power Query only |
-|[Data unification](data-unification-b2b.md) |Account and contact unification |
-|[Enrichment](#enrichments)| Only some enrichment types are available |
-|[Exports.](#exports) | Most exports are available|
+|Activities |Activities for [accounts](../activities.md) and related [contacts](activities-contacts.md) that can be displayed in a timeline. |
+|[Customer profiles](../customer-profiles.md) |In addition to the customer profile, **Contacts for this customer** appear on the **Customers** page. Each contact is shown with their fields. Empty fields are hidden. For more information, see [View customer profiles](../customer-profiles.md). Learn how to [filter contact activities within the timeline.](activities-contacts.md#contact-level-activity-timeline-filtering)|
+|[Data ingestion](../data-sources.md) |Azure Data Lake Storage, Azure Synapse Analytics (Lake databases), Microsoft Dataverse data lake, and Power Query only. |
+|[Data unification](data-unification-b2b.md) |Account and contact unification. |
+|[Enrichment](#enrichments)| Only some enrichment types are available. |
+|[Exports](#exports) | Most exports are available.|
 |[Measures](../measures.md)| Measures created from the [measure builder](measure-builder-b2b.md) with one calculation. An optional setting allows the roll-up for sub accounts when creating measures.|
-|Predictions |Only [transactional churn predictions](#predict-transactional-churn) |
-|[Relationships](../relationships.md) | Create relationships between tables so the account view can show all activities from contacts. Contacts can drill up to see contact view and [hierarchies](account-hierarchies.md) can be used for account activity aggregations |
+|Predictions |[Transactional churn predictions](#predict-transactional-churn) only. |
+|[Relationships](../relationships.md) | Relationships created between tables so that the account view can show all activities from contacts. Contacts can drill up to see a contact view and [hierarchies](account-hierarchies.md) can be used for account activity aggregations. |
 |[Segments](../segments.md) | Segments that are created from scratch with the [segment builder](segment-builder-b2b.md). Segments can be based on accounts or contacts. |
 |[System settings](../system.md) and [user management](../permissions.md) | All features in this area are the same for business accounts. |
-
 
 <!--- Keep for now
 
@@ -66,7 +65,7 @@ Go to **Data** > **Enrichment**. The **Discover** tab shows all supported enrich
 - [Location data](../enrichment-here.md) provided by HERE Technologies
 - [SFTP custom data](../enrichment-SFTP-custom-import.md) through Secure File Transfer Protocol (SFTP)
 
-For more information, see [data enrichment (preview) overview](../enrichment-hub.md)
+For more information, see [data enrichment (preview) overview](../enrichment-hub.md).
 
 #### Enrichment for data sources (preview)
 

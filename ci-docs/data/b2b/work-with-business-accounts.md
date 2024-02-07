@@ -17,7 +17,7 @@ Dynamics 365 Customers Insights previously offered two distinct, standalone mode
 
 In September 2023, Customer Insights moved to a single mode with Customer Insights - Data that supports B2C functionality. Microsoft is improving Customer Insights - Data to provide functionality for both individual customers and business accounts in a single environment that seamlessly integrates with Dynamics 365 account data.
 
-Advanced account features such as dual unification, hierarchy relationships, and account enrichment will be added to Customer Insights - Data in the future. Meanwhile, current B2B customers can still use their existing Customer Insights environment.
+Advanced account features such as dual unification, hierarchy relationships, and account enrichment will be added to Customer Insights - Data in the future. Meanwhile, current B2B customers can still use their existing B2B Customer Insights environment.
 
 > [!NOTE]
 > The legacy B2B version won't be updated with new features being added to the standard version of Customer Insights - Data. Features added since September 2023 such as copilot capabilities, Delta table data sources, and native linking aren't supported.
