@@ -27,7 +27,7 @@ The primary benefit of contact point consent is that it allows Customer Insights
 In outbound marketing, consent is captured and stored on the contact entity the `DoNotEmail`, `DoNotBulkEmail` and `DoNotTrack` fields that apply to the entire contact record and all its email addresses. This approach doesn't allow for different consent to be captured for a contact’s multiple email addresses, phone numbers, etc.
 
 > [!IMPORTANT]
-> Real-time journeys may check the contact's `DoNotEmail`, `DoNotBulkEmail`, and `DoNotTrack` fields to match outbound marketing's consent enforcement behavior and aid in the transition from outbound marketing to real-time journeys. Learn more below in [Manage user compliance settings in real-time journeys](real-time-marketing-compliance-settings.md#manage-user-compliance-settings-in-real---time-journeys)
+> Real-time journeys may check the contact's `DoNotEmail`, `DoNotBulkEmail`, and `DoNotTrack` fields to match outbound marketing's consent enforcement behavior and aid in the transition from outbound marketing to real-time journeys. Learn more below in [Manage user compliance settings in real-time journeys](real-time-marketing-compliance-settings.md#manage-user-compliance-settings-in-real-time-journeys)
 
 > [!IMPORTANT]
 > Outbound marketing does not check contact point consent records to evaluate consent when sending messages. This means that outbound marketing messages will not be affected by contact point consent records.
