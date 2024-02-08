@@ -144,6 +144,8 @@
         items:
         - name: Create a new email and design its content
           href: email-design.md
+        - name: Use QR Codes to create and design a marketing email message
+          href: email-design-using-QR-Code.md
         - name: Copilot - Use AI to kickstart email creation
           href: content-ideas.md
         - name: "Preview: Copilot - Refresh and perfect your message"
