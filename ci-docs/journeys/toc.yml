@@ -240,6 +240,8 @@
           href: real-time-marketing-static-snapshot.md
       - name: Create a segment-based journey
         href: real-time-marketing-segment-based-journey.md
+      - name: Automatic segment management
+        href: auto-segment-management.md
       - name: Use Customer Insights - Data profiles and segments
         href: real-time-marketing-ci-profile.md
       - name: Individually manage your customer list
