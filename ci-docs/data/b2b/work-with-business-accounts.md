@@ -17,7 +17,7 @@ Dynamics 365 Customers Insights previously offered two distinct, standalone mode
 
 In September 2023, Customer Insights moved to a single mode with Customer Insights - Data that supports B2C functionality. Microsoft is improving Customer Insights - Data to provide functionality for both individual consumers and business accounts in a single environment that seamlessly integrates with Dynamics 365 account data.
 
-Microsoft aims at adding advanced account features to Customer Insights - Data in the future. Meanwhile, current B2B customers can still use their existing B2B Customer Insights environment.
+Microsoft plans to add advanced account features to Customer Insights - Data in the future. Meanwhile, current B2B customers can still use their existing B2B Customer Insights environment.
 
 > [!NOTE]
 > The legacy B2B version won't be updated with new features being added to the standard version of Customer Insights - Data.
