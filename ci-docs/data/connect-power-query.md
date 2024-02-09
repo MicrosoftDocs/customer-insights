@@ -1,7 +1,7 @@
 ---
 title: "Connect to a Power Query data source (contains video)"
 description: "Ingest data through a Power Query connector (contains video)."
-ms.date: 01/22/2024
+ms.date: 02/09/2024
 ms.reviewer: v-wendysmith
 ms.topic: how-to
 author: mukeshpo
@@ -92,48 +92,42 @@ Loading data can take time. After a successful refresh, review the ingested data
 
 ## Transfer Power Query data source ownership
 
-You can transfer the data source ownership to other people in your organization. For example, if the owner leaves the organization or if changes are required for collaboration purposes 
+You can transfer the data source ownership to other people in your organization. For example, if the owner leaves the organization or if changes are required for collaboration purposes. 
 
-### Transfer the ownership,
+### Transfer the ownership
 
 The user performing this action must have a *Dataverse Administrator* role.
 
 1. Go to [Power Apps](https://make.powerapps.com).
 
-1. Select the Dataverse environment that maps to your Customer Insights environment.
+1. Select the Dataverse environment that maps to your Customer Insights - Data environment.
 
 1. Go to **Dataflows** and select **All Dataflows**.
 
-1. Search for the owner of the dataflow which you want to take ownership.
+1. Search for the owner of the dataflow that you want to take ownership.
 
-1. Select the ellipsis &vellip; and select **Change Owner**.
+1. Select the vertical ellipsis (&vellip;) and select **Change Owner**.
 
 1. Enter the name of the new owner and select **Change Owner**.
 
-## Migrate Power Query Schedules to system refresh schedule
+## Migrate Power Query schedules to system refresh schedule
  
-Customer Insights is retiring separate refresh schedules. 
-
-Removing your Power Query refresh schedule ensures that Customer insights - Data reflects current data. Refreshing Power Query data sources as a part of the system refresh will ensure that the data source refresh will be fully complete before the system refresh starts.  
-
-### Which Power Query sources are affected?
-An indication of a Power Query data source needing migration is a refresh status of “Completed with warnings” on the Data Sources homepage.  After migration and a refresh, this status should change to “Completed”.
+Customer Insights - Data is retiring separate refresh schedules. To ensure that Customer Insights - Data reflects current data, remove your Power Query refresh schedules so that these data sources refresh as part of the system refresh. If your Power Query data source shows **Completed with warnings** on the **Data sources** page, your data source must be migrated. After migration and a system refresh, the status changes to **Completed**.
 
 > [!IMPORTANT]
-> This migration will add the refresh time to the total time for a system refresh. It is recommended to revisit the system refresh schedule to make sure this works for your solution. For example, a Power Query source may take on average 30 minutes to refresh. It would be ideal to update the system refresh to start 30 minutes earlier when results are needed 8 hours after the origninal system refresh. 
+> The migration adds the data source refresh time to the total time for a system refresh. We recommend you review the system refresh schedule to make sure this works for your solution. For example, a Power Query source might take on average 30 minutes to refresh so update the system refresh schedule to start 30 minutes earlier.
 
-### Remove Power Query Schudule
+### Remove Power Query schedules
 
-1. Go to [**Data > Data Sources**] (#data-sources-manage.md).
+1. Go to **Data** > **Data Sources**.
 
-2. Select the desired Power Query data source.
+1. Select the desired Power Query data source.
 
-3.  Select the ellipsis &vellip; and select **Edit refresh settings**.
+1. Select the vertical ellipsis (&vellip;) and select **Edit refresh settings**.
 
-4. Select **Refresh manually**.
+1. Select **Refresh manually**.
 
-5. Click **Save** to keep your changes.
-
+1. Select **Save**.
 
 ## Next steps
 
