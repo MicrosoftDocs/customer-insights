@@ -45,7 +45,7 @@ Using QR codes for events, you can:
 - Tailor the QR code functionality to accommodate various event scenarios.
     - For example, if there are different types of events or if the same event occurs multiple times, the QR code can be adapted to convey specific details related to each instance.
 
-To link to an event, you must first [create the event](set-up-event.md). After you've created your event, create an email and add a QR code as described in the steps above. The options you choose for your QR code depend on whether you want to link to a specific event, or whether you want to use a trigger to supply event details for the QR code.
+To link to an event, you must first [create the event](set-up-event.md). After you create your event, create an email and add a QR code as described in the previous steps. The options you choose for your QR code depend on whether you want to link to a specific event, or whether you want to use a trigger to supply event details for the QR code.
 
 ### Link a QR code to a specific event
 
