@@ -110,6 +110,31 @@ The user performing this action must have a *Dataverse Administrator* role.
 
 1. Enter the name of the new owner and select **Change Owner**.
 
+## Migrate Power Query Schedules to system refresh schedule
+ 
+Customer Insights is retiring separate refresh schedules. 
+
+Removing your Power Query refresh schedule ensures that Customer insights - Data reflects current data. Refreshing Power Query data sources as a part of the system refresh will ensure that the data source refresh will be fully complete before the system refresh starts.  
+
+### Which Power Query sources are affected?
+An indication of a Power Query data source needing migration is a refresh status of “Completed with warnings” on the Data Sources homepage.  After migration and a refresh, this status should change to “Completed”.
+
+> [!IMPORTANT]
+> This migration will add the refresh time to the total time for a system refresh. It is recommended to revisit the system refresh schedule to make sure this works for your solution. For example, a Power Query source may take on average 30 minutes to refresh. It would be ideal to update the system refresh to start 30 minutes earlier when results are needed 8 hours after the origninal system refresh. 
+
+### Remove Power Query Schudule
+
+1. Go to [**Data > Data Sources**] (#data-sources-manage.md).
+
+2. Select the desired Power Query data source.
+
+3.  Select the ellipsis &vellip; and select **Edit refresh settings**.
+
+4. Select **Refresh manually**.
+
+5. Click **Save** to keep your changes.
+
+
 ## Next steps
 
 - [Data unification overview](data-unification.md)
