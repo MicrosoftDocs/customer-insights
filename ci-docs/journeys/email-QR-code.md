@@ -68,6 +68,9 @@ You can use a trigger as a data source for dynamic data for event details includ
 1. On the **Select Event/Event registration** dropdown, select **From other source**.
 1. On the **Choose an attribute** dropdown, select the data source to link to.
 
-You can also test your email and journey by sending a preview email to yourself or a colleague.
+> [!div class="mx-imgBorder"]
+> ![Use trigger attributes for event details](media/qr-code-trigger.png "Use trigger attributes for event details")
+
+It's recommended to test your email by sending a preview email to yourself or a colleague.
 
 The integration of QR codes in event-related emails, driven by triggered journeys and dynamic data, not only enhances personalization but also significantly contributes to the efficiency of event management, particularly during the check-in process.
