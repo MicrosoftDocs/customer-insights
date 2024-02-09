@@ -115,7 +115,7 @@ The user performing this action must have a *Dataverse Administrator* role.
 Customer Insights - Data is retiring separate refresh schedules. To ensure that Customer Insights - Data reflects current data, remove your Power Query refresh schedules so that these data sources refresh as part of the system refresh. If your Power Query data source shows **Completed with warnings** on the **Data sources** page, your data source must be migrated. After migration and a system refresh, the status changes to **Completed**.
 
 > [!IMPORTANT]
-> The migration adds the data source refresh time to the total time for a system refresh. We recommend you review the system refresh schedule to make sure this works for your solution. For example, a Power Query source might take on average 30 minutes to refresh so update the system refresh schedule to start 30 minutes earlier.
+> The migration adds the data source refresh time to the total time for a system refresh. We recommend you review the [system refresh schedule](schedule-refresh.md) to make sure this works for your solution. For example, a Power Query source might take on average 30 minutes to refresh. It is reccomended to update the system refresh schedule to start 30 minutes earlier to recieve results at a simaliar time. 
 
 ### Remove Power Query schedules
 
