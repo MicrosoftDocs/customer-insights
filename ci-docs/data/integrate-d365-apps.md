@@ -5,7 +5,7 @@ author: Scott-Stabbert
 ms.author: sstabbert
 ms.reviewer: v-wendysmith
 ms.topic: conceptual
-ms.date: 01/02/2024
+ms.date: 01/31/2024
 ms.custom: bap-template
 ---
 
@@ -27,8 +27,7 @@ Examples of using this native linking include:
 
 ## Requirements
 
-- Source tables, such as the contact table, must be ingested directly from the default Dataverse environment, through the [Microsoft Dataverse connector](connect-dataverse.md) or the [Power Query Dataverse connector.](connect-power-query.md)
-- Only source tables from Dataverse that are included in unification can be linked to the customer profile.
+- Source tables, such as the leads table, must be ingested directly from the default Dataverse environment, through the [Microsoft Dataverse connector](connect-dataverse.md) or the [Power Query Dataverse connector.](connect-power-query.md)
 - On the [Describe customer data step for unification](data-unification-map-tables.md), the source table's primary key must correspond to the table's actual primary key. For example, the standard contact and lead tables primary keys are *ContactId* and *LeadId*.
 
 > [!NOTE]
