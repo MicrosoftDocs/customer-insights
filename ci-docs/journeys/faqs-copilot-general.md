@@ -15,7 +15,7 @@ search.audienceType:
 
 [!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
-These responsible AI FAQs describe the AI impact of Copilot capabilities for model-driven apps in Dynamics 365 Customer Insights - Journeys.
+These responsible AI FAQs describe the AI impact of Copilot capabilities for model-driven apps in Dynamics 365 Customer Insights - Journeys. Please review [the main FAQ for this Copilot capability](power-apps/maker/common/faqs-copilot-model-driven-app)
 
 ## What are the capabilities of Copilot in model-driven apps in Customer insights - Journeys?
 
@@ -38,7 +38,7 @@ Copilot in model-driven apps underwent substantial testing before the feature wa
 
 To use this capability your environment must be in the US region. The Power Platform environment's language needs to be set to English. This capability was tested for English language only. This feature will be available in further regions, please review the [main documentation for these Copilot capabilities](/power-apps/maker/common/faqs-copilot-model-driven-app) where they will update the availability. 
 
-Copilot in model-driven apps is a preview feature. Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
+Copilot in model-driven apps is a preview feature. Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback. Please review [the main FAQ for this Copilot capability](power-apps/maker/common/faqs-copilot-model-driven-app).
 
 This capability may be subject to usage limits or capacity throttling.
 
