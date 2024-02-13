@@ -126,8 +126,16 @@ Customer Insights - Data is retiring separate refresh schedules. To ensure that 
 1. Select the vertical ellipsis (&vellip;) and select **Edit refresh settings**.
 
 1. Select **Refresh manually**.
-
+   
 1. Select **Save**.
+
+### View Power Query run durrations
+
+1. Go to **Data** > **Data Sources**.
+
+1. Select the desired Power Query data source.
+
+1. Select **Status** 
 
 ## Next steps
 
