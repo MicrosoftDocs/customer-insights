@@ -1,7 +1,7 @@
 ---
 title: Use QR codes for event registration, links to content, or URLs
 description: Learn how to use QR codes for event registration, links to content, or URLs in email messages in Dynamics 365 Customer Insights - Journeys.
-ms.date: 02/08/2024
+ms.date: 02/12/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -55,6 +55,9 @@ To link to a specific event:
 1. On the **Link to** dropdown, select **Event registration code**.
 1. On the **Select Event/Event registration** dropdown, select **A specific event**.
 1. In the lookup field below the dropdown, find the event you want to link to.
+
+> [!IMPORTANT]
+> When using a QR code to link to a specific event, the QR code only provides a registration ID. To implement verification, check-in, and registration features, event organizers must do some custom development. One way to do this could be by creating a custom smartphone app.
 
 > [!div class="mx-imgBorder"]
 > ![Attach your specific event with your QR Code](media/add-specific-event-with-qr-code.png "Attach your specific event with your QR Code")
