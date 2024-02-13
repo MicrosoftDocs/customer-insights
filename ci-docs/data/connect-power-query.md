@@ -1,11 +1,11 @@
 ---
 title: "Connect to a Power Query data source (contains video)"
 description: "Ingest data through a Power Query connector (contains video)."
-ms.date: 02/09/2024
+ms.date: 02/12/2024
 ms.reviewer: v-wendysmith
 ms.topic: how-to
-author: mukeshpo
-ms.author: mukeshpo
+author: joytaylor
+ms.author: joytaylor
 ms.custom: bap-template
 ---
 
@@ -115,7 +115,7 @@ The user performing this action must have a *Dataverse Administrator* role.
 Customer Insights - Data is retiring separate refresh schedules. To ensure that Customer Insights - Data reflects current data, remove your Power Query refresh schedules so that these data sources refresh as part of the system refresh. If your Power Query data source shows **Completed with warnings** on the **Data sources** page, your data source must be migrated. After migration and a system refresh, the status changes to **Completed**.
 
 > [!IMPORTANT]
-> The migration adds the data source refresh time to the total time for a system refresh. We recommend you review the [system refresh schedule](schedule-refresh.md) to make sure this works for your solution. For example, a Power Query source might take on average 30 minutes to refresh. It is reccomended to update the system refresh schedule to start 30 minutes earlier to recieve results at a simaliar time. 
+> The migration adds the data source refresh time to the total time for a system refresh. We recommend you [view your Power Query run durations](#view-power-query-run-durations) and then change the [system refresh schedule](schedule-refresh.md) if needed. For example, a Power Query source might take on average 30 minutes to refresh. Therefore, we recommended you update the system refresh schedule to start 30 minutes earlier to recieve results at a simaliar time.
 
 ### Remove Power Query schedules
 
@@ -129,13 +129,13 @@ Customer Insights - Data is retiring separate refresh schedules. To ensure that 
    
 1. Select **Save**.
 
-### View Power Query run durrations
+### View Power Query run durations
 
 1. Go to **Data** > **Data Sources**.
 
 1. Select the desired Power Query data source.
 
-1. Select **Status** 
+1. Select **Status**. 
 
 ## Next steps
 
