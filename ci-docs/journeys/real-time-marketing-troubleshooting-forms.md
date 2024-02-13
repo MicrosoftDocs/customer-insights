@@ -34,6 +34,10 @@ The form submission may fail because of issues with custom plugins or due to inv
 - If the form submission failed because of the plugin issue, you can re-submit the submission from the list of submissions.
 - If the form submission failed because of an invalid value, you can edit the values of submissions from the list of submissions. Select the form submission to see the submitted values. Select the value you need to change and edit the value.
 
+
+> [!IMPORTANT]
+> You can only re-submit failed submissions. Be aware that, by re-submitting, you may create a duplicate contact, such as when the submission fails because of a contact point consent creation error. The replay runs the whole submission process again. You can change the matching strategy before running the replay feature to avoid duplicate records. 
+
 ## Investigating failed form submissions
 Typically manifests as `Failed to create target entity` or `Failed to update target entity` in the logs and is typically related to one of your customizations connected to create or update of contact or lead entity.
 
@@ -49,7 +53,5 @@ Diagnosis:
 
 
 
-> [!IMPORTANT]
-> You can only re-submit failed submissions. Be aware that, by re-submitting, you may create a duplicate contact, such as when the submission fails because of a contact point consent creation error. The replay runs the whole submission process again. You can change the matching strategy before running the replay feature to avoid duplicate records.
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
