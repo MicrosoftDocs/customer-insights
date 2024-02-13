@@ -27,11 +27,11 @@ This feature uploads a page with form on CDN. If the operation fails, try to run
 
 The form editor can remove unknown code from the body. [Learn more](real-time-marketing-manage-forms.md#add-custom-javascript-to-your-form) about how to customize your form using JavaScript.
 
-## My form submission failed. How do I re-submit the submission?
+## My form submission failed. How do I resubmit the submission?
 
 The form submission may fail because of issues with custom plugins or due to invalid values in the submission.
 
-- If the form submission failed because of the plugin issue, you can re-submit the submission from the list of submissions.
+- If the form submission failed because of the plugin issue, you can resubmit the submission from the list of submissions.
 - If the form submission failed because of an invalid value, you can edit the values of submissions from the list of submissions. Select the form submission to see the submitted values. Select the value you need to change and edit the value.
 
 > [!IMPORTANT]
@@ -39,9 +39,9 @@ The form submission may fail because of issues with custom plugins or due to inv
 
 ## Investigating failed form submissions
 
-Failed form submissions typically manifest as "Failed to create target entity" or "Failed to update target entity" in the logs and are usually related to a customization that creates or updates a contact or lead entity.
+Failed form submissions typically manifest as "Failed to create target entity" or "Failed to update target entity" in the logs and are often related to a customization that creates or updates a contact or lead entity.
 
-![image](https://github.com/MicrosoftDocs/customer-insights/assets/5519592/d1084b39-73ad-4966-9062-a9894e7de294)
+:::image type="content" source="media/submission-pipeline.png" alt-text="Chart comparing a successful submission pipeline versus an unsuccessful submission pipeline." lightbox="media/submission-pipeline.png":::
 
 Here's how to troubleshoot a failed form submission issue:
 
@@ -50,6 +50,6 @@ Here's how to troubleshoot a failed form submission issue:
 - Check the logs. If there's a plugin-related error, there should be a plugin name and a reason why the plugin crashed. Follow up with the plugin provider or [disable the plugin](https://community.dynamics.com/blogs/post/?postid=33f947e8-a5f8-4cb2-b2d9-45b444c56060)
 - Check the processes connected to the contact, lead, or other entity you're trying to create through the form submission. Try disabling the process that's interfering with the contact creation.
 
-![image](https://github.com/MicrosoftDocs/customer-insights/assets/5519592/48f48655-f908-4e62-be96-26c7e8cf3c94)
+:::image type="content" source="media/dynamics-processes.png" alt-text="Screenshot of processes list.":::
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
