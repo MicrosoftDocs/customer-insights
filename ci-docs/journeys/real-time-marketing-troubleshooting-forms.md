@@ -42,7 +42,7 @@ Typically manifests as `Failed to create target entity` or `Failed to update tar
 Diagnosis:
 - Temporarily [enable plugin trace logs](https://learn.microsoft.com/en-us/power-apps/developer/data-platform/logging-tracing#enable-trace-logging) this can be having negative performance consequences so make sure to disable them back once you're done
 - Resubmit the form
-- Check the logs - in case of error in plugin there should be plugin name and hopefully reason why the plugin crashed
+- Check the logs - in case of error in plugin there should be plugin name and hopefully reason why the plugin crashed - follow up with plugin provider or [disable the plugin](https://community.dynamics.com/blogs/post/?postid=33f947e8-a5f8-4cb2-b2d9-45b444c56060)
 - Check the processes connected to contact / lead or other entity you're trying to create via form submission / try disabling the one intefering with contact creation
 ![image](https://github.com/MicrosoftDocs/customer-insights/assets/5519592/48f48655-f908-4e62-be96-26c7e8cf3c94)
 
