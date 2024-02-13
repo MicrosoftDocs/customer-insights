@@ -1,38 +1,45 @@
 ---
-title: FAQ for dialog with data (preview)
-description: This FAQ provides information about the AI technology used in dialog with data (preview). It provides key considerations and details about how AI is used, how it was tested and evaluated, and any specific limitations.
-ms.date: 09/01/2023
+title: FAQ for dialog with data
+description: This FAQ provides information about the AI technology used in dialog with data. It provides key considerations and details about how AI is used, how it was tested and evaluated, and any specific limitations.
+ms.date: 01/30/2024
 ms.custom: 
   - responsible-ai-faqs
 ms.topic: article
 author: radsay01
 ms.author: rsayyaparaju
 ms.reviewer: m-hartmann
+ms.collection: bap-ai-copilot 
 ---
 
-# FAQ for dialog with data (preview)
+# FAQ for dialog with data
 
-[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
-
-These frequently asked questions (FAQ) describe the AI impact of Dynamics 365 Customer Insights - Data dialog with data (preview) feature.
-
-[!INCLUDE [public-preview-note](includes/public-preview-note.md)]
+These frequently asked questions (FAQ) describe the AI impact of Dynamics 365 Customer Insights - Data dialog with data feature.
 
 ## What is dialog with data?
 
-This AI-powered feature helps generate insights about your customer data estate using natural language, which empowers you to design personalized and high-ROI business actions.
+Dialog with data lets you ask questions in natural language and uses Copilot in Customer Insights - Data to answer them and generate insights.
 
 ## What are the feature’s capabilities?
 
-Dialog with data allows you to enter your question about customers in natural language and generate answer within seconds. The feature generates extensive information related to your original question that provides further insights and suggested questions to continue discovering new insights about your customers.
+Dialog with data can help you:
+
+- Ask questions to generate insights about your customer’s profiles, such as understanding the gender distribution of your customers.
+
+- Ask questions to generate insights about your customer’s preferences, behaviors, transactions, such as identifying where your highest-value customers live.
+
+- Get more information on your customers that's automatically generated related to the question you asked to help you uncover more insights about customers.
+
+- Get automatically generated suggested questions to enable deeper exploration even beyond your original question.
+
+- Verify AI-generated results with a SQL statement and associated natural language explanation so you can easily understand what tables, columns, and attributes were used to produce results.
 
 ## What is the feature’s intended use?
 
-The intention is to democratize the power of generating customers insights embedded in your data estate. It aims to let you do these tasks faster and without the need of technical data query skills.
+Dialog with data is intended to enable end users like marketers, sellers, and service agents gain insights to better understand and serve customers easily without the support of IT teams or other tools.
 
 ## How was dialog with data evaluated? What metrics are used to measure performance?
 
-The intention is to democratize the power of generating customers insights embedded in your data estate. It aims to let you do these tasks faster and without the need of technical data query skills.
+Dialog with data has been evaluated for usability, accuracy, performance, and adherence to responsible AI principles. Evaluation included usability testing to ensure valid understanding of user intent, accurately generated results, overall system performance, and responsible AI. This feature had scenario testing for inappropriate content, malicious intent, jail break, and more. Ongoing monitoring is in place for system performance and responsible AI.  
 
 ## What are the limitations of dialog with data? How can users minimize the impact of the limitations when using the system?
 
@@ -46,18 +53,16 @@ The feature transforms your prompts in natural language into a SQL query to run 
 
 ## What are the supported geographies and languages?
 
-This feature is available in the United States and supports English only.
+This feature is available in all geographies. This feature doesn't restrict any language, but we recommend and officially support only the languages listed in the [Copilot International Availability report](https://dynamics.microsoft.com/availability-reports/copilotreport/).
 
 ## What operational factors and settings allow for effective and responsible use of the feature?
 
-- When you enter a prompt, you can use a toggle to select your data sharing preference.
+- Administrators in Customer Insights - Data can choose to disable all Copilot functionality for each solution, by using the [consent experience](copilot-global-consent.md).
 
-- There's reminder that the result is AI-generated and can be inaccurate. We suggest you always review and validate the AI-generated result before applying it for business actions.
-
-- In general, you should use the feature in a mindful way to ensure responsible and appropriate inputs and outputs to minimize bias and unfairness.
+- There's a reminder that the result is AI-generated and can be inaccurate. AI feature results should always be reviewed and validated for accuracy and appropriateness before being used to make business decisions. AI features should always be used with caution and responsibility to minimize potential bias and unfairness in business decisions.
 
 ## See also
 
-- [Have a dialog with data using Copilot in Customer Insights - Data (preview)](dialog-with-data.md)
+- [Have a dialog with data using Copilot in Customer Insights - Data](dialog-with-data.md)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

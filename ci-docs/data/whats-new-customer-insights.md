@@ -1,7 +1,7 @@
 ---
 title: "What's new in Dynamics 365 Customer Insights - Data"
 description: "Information about new features, improvements, and bug fixes."
-ms.date: 12/14/2023
+ms.date: 01/30/2024
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
@@ -17,11 +17,10 @@ We roll out updates on a region-by-region basis. So certain regions might see fe
 > [!TIP]
 > To submit and vote on feature requests and product suggestions, go to the [Dynamics 365 Application Ideas portal](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights).
 
-## December 2023
-
+## January 2024
+<!--
 ### General availability features
 
-<!-- 
 #### Get insights by asking questions in natural language with Copilot in Customer Insights, now with general and global availability
 
 Ask questions in natural language to have a dialog with your data to explore, assess, and better understand the profiles, behavior, and activity of your customers. Now with general availability and global availability across all geos and 23 supported languages to support enterprise and global customers. Get started today to democratize the power of your customer data platform (CDP) to everyone in your organization in a compliant and secure manner. Enable your end users to seamlessly access insights to make the best decisions in the moments that matter and provide deeply personalized experiences to your customers. For example, marketers can now use everyday words to understand the geographic distribution of loyalty program members and their recent transaction history to better cater customer lifetime value-focused campaigns and achieve higher campaign engagement.
@@ -29,21 +28,38 @@ Ask questions in natural language to have a dialog with your data to explore, as
 - [Release plan](/dynamics365/release-plan/2023wave2/customer-insights/generate-insights-asking-questions-natural-language-copilot-customer-insights)
 - [Docs](dialog-with-data.md)
 -->
+### Monthly enhancements
+
+#### In-place upgrade of data sources to Delta format
+
+If your data is already in Delta tables within the same storage container, you can update the connection on the Data Sources page. Update the folder and connection points to the folder that contains the same tables, but in the Delta format. Delta tables can significantly reduce the time to generate valuable insights from a data source. Also, if you're currently converting your Delta data into the common data model format to import it to Customer Insights – Data, Delta lake formatted tables help eliminate the processing and storage requirements to convert Delta data to common data model format.
+
+#### Incremental unification when using Delta data
+
+To accelerate insights using the power of Delta tables, we now see faster data unification when all the tables used in the unification process are provided in the Delta format because data unification runs incrementally. The time to run the match process is approximately 25% faster.
+
+#### Exports show most recent update
+
+You can now track changes to exports with newly added columns that show details about when an export was last updated and by whom. This addition addresses user requests for more control over recent modifications. The **Last updated** column shows when an export was updated and the **Updated by** column lists the user who made the most recent change. These columns help foster team collaboration and accountability.
+
+## December 2023
+
+### General availability features
 
 #### Personalize customer experiences using calculated metrics
 
-You can already create highly personalized experiences for your customers when you use enriched profiles from Dynamics 365 Customer Insights - Data. Now, you can further personalize journeys and content by using calculated metrics (customer measures) such as lifetime value, total or average spend, total amount insured or number of policies, etc. With such calculated data available seamlessly, you're empowered to deliver experiences such as personalizing offers or level of service (e.g., priority notification ahead of others).
+You can already create highly personalized experiences for your customers when you use enriched profiles from Dynamics 365 Customer Insights - Data. Now, you can further personalize journeys and content by using calculated metrics (customer measures) such as lifetime value, total or average spend, total amount insured or number of policies, etc. With such calculated data available seamlessly, you're empowered to deliver experiences such as personalizing offers or level of service (for example, priority notification ahead of others).
 
 - [Release plan](/dynamics365/release-plan/2023wave2/customer-insights/personalize-customer-experiences-using-calculated-metrics)
 - [Docs](dataverse-measures.md)
 
 ### Public preview features
 
-#### Leverage customer insights in other business applications
+#### Use customer insights in other business applications
 
 Insights are available to your business users through their Dynamics 365 applications in the flow of their work. This enables numerous scenarios. For example:
 
-- Marketing teams can personalize the experience of customers with segments and dynamic content based on their lifetime value, irrespective of where they are on the buying journeys and whether they’re targeted as a lead or a contact.
+- Marketing teams can personalize the experience of customers with segments and dynamic content based on their lifetime value, irrespective of where they were on the buying journeys and whether they’re targeted as a lead or a contact.
 - Sales and account reps can win more deals and foster stronger relationships, knowing every customer’s interests, activity history, insights such as CLV or predictions such as propensity to buy—all accessible seamlessly in their contact/lead view.
 - Service reps can provide personalized service knowing the customer’s loyalty tier or prediction to churn.
 
@@ -117,7 +133,7 @@ Effective segmentation, while a powerful tool for targeting the right audience, 
 
 #### Understand how various rules impact the number of members in your segment
 
-Segments in Customer Insights - Data, now provides an "Inspection mode" toggle for segments. Enable this when creating or editing a segment to understand the contribution of each rule to the overall size of the segment, after a segment has been processed. Going a step further, inspection mode also provides the cascading effect/contribution of each rule, thus giving you greater visibility and control to tweak the segment definition to match your marketing budget.
+Segments in Customer Insights - Data, now provides an "Inspection mode" toggle for segments. Enable this when creating or editing a segment to understand the contribution of each rule to the overall size of the segment, after a segment has been processed. Additionally, inspection mode also provides the cascading effect/contribution of each rule, thus giving you greater visibility and control to tweak the segment definition to match your marketing budget.
 
 - [Docs](segments.md#view-segment-member-counts-preview)
 
@@ -132,7 +148,7 @@ The data prep report reduces the time and effort encountered by turning your dat
 
 ### Address issues with environment status summary
 
-The System Status page in Customer Insights - Data is an indispensable tool for admins to keep a frequent tab to ensure all jobs are running smoothly. However, when there are errors/issues, the current process of checking through a large table of active jobs can be time-consuming and confusing, especially when there are complex relationships between jobs. Copilot in Dynamics 365 Customer Insights provides a simple, natural language summary of the environment, prominently highlighting the most important jobs tied to key activation events like exports. Armed with this summary, admins can focus on quickly taking the actions required.
+The System Status page in Customer Insights - Data is an indispensable tool for admins to keep a frequent tab to ensure all jobs are running smoothly. However, when there are errors/issues, the current process of checking through a large table of active jobs can be time-consuming and confusing, especially when there are complex relationships between jobs. Copilot in Dynamics 365 Customer Insights provides a simple, natural language summary of the environment, prominently highlighting the most important jobs tied to key activation events like exports. With this summary, admins can focus on quickly taking the actions required.
 
 - [Release plan](/dynamics365/release-plan/2023wave1/customer-insights/address-issues-environment-status-summary-copilot)
 - [Documentation](system.md#environment-status-summary-preview)
@@ -141,16 +157,16 @@ The System Status page in Customer Insights - Data is an indispensable tool for 
 
 [Marketing Contributor role](user-roles.md#marketing-contributor-preview):
 
-- can search for segments by name and only get results from their BU
-- can filter by tags and tags honor BU.Tags created in a BU aren't visible and searchable in other BUs
-- can customize the columns they see in their BU-specific view of the segment list
+- can search for segments by name and only get results from their business unit
+- can filter by tags and tags honor business unit. Tags created in a business unit aren't visible and searchable in other business units
+- can customize the columns they see in their business unit-specific view of the segment list
 - can download a segment
 
 ### New blogs and scenario docs
 
 - [Advanced unification scenario: Create unified customer profiles from functionally unrelated sources](https://community.dynamics.com/blogs/post/?postid=cbf1def2-2a94-4a4d-9535-0489e647157c)
 
-- [Unlocking the power of Dynamics 365 Customer Insights: Best practices for data modelling and data quality](https://community.dynamics.com/blogs/post/?postid=988fae7a-3f37-ee11-bdf4-6045bdebe084)
+- [Unlocking the power of Dynamics 365 Customer Insights: Best practices for data modeling and data quality](https://community.dynamics.com/blogs/post/?postid=988fae7a-3f37-ee11-bdf4-6045bdebe084)
 
 - [Navigating the data platform landscape: Azure Synapse or Microsoft Fabric](https://community.dynamics.com/blogs/post/?postid=4c923e38-8738-ee11-bdf4-000d3a4e511f)
 
@@ -173,7 +189,7 @@ Activities within the Dynamics 365 activity timeline can be filtered, searched, 
 
 ### Generate insights by asking questions in natural language with Copilot in Customer Insights - Data
 
-Copilot in Dynamics 365 Customer Insights - Data is powered by AI to provide you with insights that answer your questions. In an easy and accelerated manner, you can have a dialogue with your data. Ask questions using natural language to explore, analyze, and understand customer segment sizes and preferences. Analysts and marketers can engage directly with customer data and discover new information that they may not have been aware of.
+Copilot in Dynamics 365 Customer Insights - Data is powered by AI to provide you with insights that answer your questions. In an easy and accelerated manner, you can have a dialogue with your data. Ask questions using natural language to explore, analyze, and understand customer segment sizes and preferences. Analysts and marketers can engage directly with customer data and discover new information that they might not have been aware of.
 
 This feature democratizes access to insights, allowing analysts, marketers, and sellers to ask questions using conversational language and receive instant answers, without needing to have the knowledge of SQL programming. Copilot removes the barriers to getting a deeper understanding of customers, enabling users to speed up and scale the delivery of hyper-personalized experiences that customers expect.
 
@@ -182,7 +198,7 @@ This feature democratizes access to insights, allowing analysts, marketers, and 
 
 ### Unify your B2B account and contact data into easy to work with related tables that also support commercial contacts with unknown accounts  
 
-Get a 360-degree view of your B2B contacts by creating unified contact profiles. With this release, your B2B contacts can be unified just like accounts and customers. The unified accounts table and unified contacts table share a simple relationship, allowing you to easily create segments of contacts that have specific account attributes. In addition, you can now identify and engage business contacts where the account is unknown, to discover and create new account relationships
+Get a 360-degree view of your B2B contacts by creating unified contact profiles. With this release, your B2B contacts can be unified just like accounts and customers. The unified accounts table and unified contacts table share a simple relationship, allowing you to easily create segments of contacts that have specific account attributes. In addition, you can now identify and engage business contacts where the account is unknown, to discover and create new account relationships.
 
 - [Release plan](/dynamics365/release-plan/2023wave1/customer-insights/gain-360-degree-view-b2b-contacts-leveraging-all-fields-unified-contacts)
 - [Documentation](b2b/data-unification-contacts.md)
@@ -220,7 +236,7 @@ Because Customer Insights environments are associated with a Dataverse environme
 
 This first run experience (FRE) feature helps you recognize the value of Dynamics 365 Customer Insights - Data faster. Onboarding a new application can be time-consuming and tricky, leaving room for error and leaving you questioning the value it can bring. This feature saves you precious time and takes the guesswork out of setting up your data correctly the first time you use Customer Insights - Data. It works in trial and paid environments and allows you to get valuable insights faster. Use those insights to fuel better customer experiences and drive a higher return on investment.
 
-After an admin successfully provisions your initial environment, the FRE guides you through three easy steps:
+After an admin successfully creates your initial environment, the FRE guides you through three easy steps:
 
 1. Provide data: You're prompted to upload your data file (must be a CSV file containing more than 100 rows and 5 columns).
 2. Get data checked: Use AI-driven models, your data is automatically validated and quality-checked—no manual configuration required.

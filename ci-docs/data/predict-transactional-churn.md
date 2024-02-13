@@ -6,7 +6,8 @@ ms.reviewer: mhart
 ms.topic: how-to
 author: zacookmsft
 ms.author: zacook
-ms.custom: bap-template 
+ms.custom: bap-template
+ms.collection: bap-ai-copilot 
 ---
 
 # Predict transaction churn

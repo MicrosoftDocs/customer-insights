@@ -7,6 +7,7 @@ ms.topic: how-to
 author: radsay01
 ms.author: rsayyaparaju
 ms.custom: bap-template
+ms.collection: bap-ai-copilot 
 ---
 
 # Use custom models from Azure Machine Learning

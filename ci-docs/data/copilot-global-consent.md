@@ -7,6 +7,7 @@ ms.topic: conceptual
 author: radsay01
 ms.author: rsayyaparaju 
 ms.custom: bap-template
+ms.collection: bap-ai-copilot 
 ---
 
 # Give consent to use Copilot in Customer Insights - Data
@@ -34,5 +35,7 @@ There are three levels of consent to use generative AI Copilot features in Custo
 1. Enable or disable consent.
 
 1. Select **Save**.
+
+[!INCLUDE [copilot-availability](includes/copilot-availability.md)]
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

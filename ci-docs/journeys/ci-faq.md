@@ -1,7 +1,7 @@
 ---
 title: Dynamics 365 Customer Insights FAQs
 description: Get answers to frequently asked questions about Dynamics 365 Customer Insights.
-ms.date: 09/05/2023
+ms.date: 01/24/2024
 ms.collection: article
 ms.topic: overview
 author: alfergus
@@ -50,7 +50,7 @@ This FAQ answers questions about the new Customer Insights combined product offe
 
 1. **Is this offer available for US GCC or other sovereign Clouds?**
 
-    This product offering won't be available for US GCC, DoD, GCC High or other sovereign clouds.
+    The product offering isn't yet available for US GCC, DoD, GCC High or other sovereign clouds but may be at a future time.
 
 ## Functionality 
 

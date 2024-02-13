@@ -5,10 +5,7 @@ ms.date: 10/30/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
-search.audienceType: 
-  - admin
-  - customizer
-  - enduser
+ms.collection: bap-ai-copilot
 ---
 
 # Give consent to use Copilot in Customer Insights - Journeys

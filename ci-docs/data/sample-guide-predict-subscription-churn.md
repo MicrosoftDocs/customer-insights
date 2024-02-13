@@ -6,7 +6,8 @@ ms.reviewer: v-wendysmith
 ms.topic: conceptual
 author: joytaylor
 ms.author: joytaylor
-ms.custom: bap-template 
+ms.custom: bap-template
+ms.collection: bap-ai-copilot 
 ---
 
 # Subscription churn prediction sample guide

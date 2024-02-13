@@ -1,7 +1,7 @@
 ---
 title: "Manage data sources"
 description: "Learn how to manage data sources attached or imported to Dynamics 365 Customer Insights - Data"
-ms.date: 11/20/2023
+ms.date: 01/22/2024
 ms.topic: how-to
 author: mukeshpo
 ms.author: mukeshpo
@@ -19,14 +19,18 @@ Select a data source to view available actions.
 
 - [**Edit**](data-sources.md) the data source to change its properties. You can't edit a single CSV data source that was used to automatically generate insights.
 - [**Refresh**](#refresh-data-sources) the data source to include the latest data.
-- [**Enrich**](data-sources-enrichment.md) the data source before unification.
+- [**Enrich**](data-sources-enrichment.md) the data source before unification to improve the quality and completeness for better results. 
 - **Delete** the data source. A data source can be deleted only if the data is not used in any processing such as unification, insights, activations, or exports.
+
+<!---Add back in when this is released.
 
 If you have a Data Lake data source, you can [convert it to a Delta Lake data source (preview).](convert-datalake-to-deltalake.md)
 
+--->
+
 ## Refresh data sources
 
-Data sources can be refreshed on an automatic schedule or refreshed manually on demand. [On-premises data sources](connect-power-query.md#add-data-from-on-premises-data-sources) refresh on their own schedules, which are set up during data ingestion.
+Data sources can be refreshed on an automatic schedule or refreshed manually on demand. [On-premises data sources](connect-power-query.md#add-data-from-on-premises-data-sources) refresh on their own schedules, which are set up during data ingestion by the owner of the dataflow. 
 
 For attached data sources, data ingestion consumes the latest data available from that data source.
 

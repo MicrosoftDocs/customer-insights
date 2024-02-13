@@ -1,7 +1,7 @@
 ---
 title: Install and manage Customer Insights
 description: How to install, uninstall, and manage Dynamics 365 Customer Insights environments.
-ms.date: 12/05/2023 
+ms.date: 02/09/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -69,7 +69,7 @@ If you uninstall Customer Insights - Journeys paid or trial, the services are di
 1. On the [**admin.powerplatform.microsoft.com**](https://admin.powerplatform.microsoft.com) page, find **Resources** in the left-hand site map and select **Dynamics 365 apps**.
     - Whether you have the legacy, standalone Dynamics 365 Customer Insights app or Dynamics 365 Marketing licenses (available to customers who purchased before September 2023) or the new, combined Dynamics 365 Customer Insights license that entitles you to install both the Customer Insights - Journeys and Customer Insights - Data applications, you can find them listed on **admin.powerplatform.microsoft.com** under **Resources** > **Dynamics 365 apps**.
 
-1. To open the installation management area, select the three dots dropdown ("**...**") then select **Manage**.
+1. To open the installation management area, select the three dots dropdown ("**...**") next to the app name then select **Manage**.
 
 1. In the installation management area, you'll see your available environments listed and can choose where you want to install Customer Insights - Journeys or Customer Insights - Data.
 
@@ -77,6 +77,11 @@ If you uninstall Customer Insights - Journeys paid or trial, the services are di
     > ![Installation management area screenshot.](media/new-installation.png "Installation management area screenshot")
 
 1. After you've installed the Customer Insights - Journeys and Customer Insights - Data apps on the same environment, you need to finish connecting them. To connect the apps, go to **Customer Insights - Journeys** then go to **Settings** > **Data Management** > **Customer Insights** and select the **Connect** button. This completes the data sync for segmentation between the two applications.
+    > [!TIP]
+    > If you're enabling the connection on an existing installation, be sure to update the Customer Insights - Journeys application to the latest version before you connect it with the Customer Insights - Data app. Go to **Settings** > **Versions** > **Manage + Update** and update if there's a new version.
+1. In Customer Insights - Data, there are a few more steps to connect the Dataverse environment and start generating profiles based on the contact and lead entities in Dataverse, in addition to adding more data sources.
+    1. On the installation management page, select the circled **i** icon ![Create a subscription list.](media/i-icon.png "Create a subscription list") next to the "Installed" text to find a link to open the Customer Insights - Data environment. In Customer Insights - Data, go to **Data** > **Data sources**, select **Add Data Source**, and choose **Dataverse**. Populate the URL with the environment URL from the Customer Insights - Journeys Dataverse environment. Select the contact and lead tables only and then select **Save**. Learn more: [Connect to Dataverse](/dynamics365/customer-insights/data/connect-dataverse#connect-to-dataverse)
+    1. In **Unify**, choose the contact and lead tables you ingested to add them to the profile and proceed with unification settings. Learn more: [Data unification overview](/dynamics365/customer-insights/data/data-unification)
 
 #### Troubleshooting a failed installation
 

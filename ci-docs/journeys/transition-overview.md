@@ -5,10 +5,7 @@ ms.date: 11/16/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
-search.audienceType: 
-  - admin
-  - customizer
-  - enduser
+ms.collection: bap-ai-copilot
 ---
 
 # Transition overview
@@ -31,7 +28,7 @@ New trials can only be created with real-time journeys.
 
 ## Guidance for new customers
 
-New customers who install Customer Insights - Journeys no longer see the outbound marketing module and can't install it. Because outbound marketing doesn't offer the performance, scale, user experience, and AI copilot capabilities of Customer Insights - Journeys and is no longer being invested in from an engineering perspective, we strongly encourage customers to not adopt outbound marketing.
+New customers who install Customer Insights - Journeys no longer see the outbound marketing module and can't install it. Because outbound marketing doesn't offer the performance, scale, user experience, and AI Copilot capabilities of Customer Insights - Journeys and is no longer being invested in from an engineering perspective, we strongly encourage customers to not adopt outbound marketing.
 
 Here are some recommendations depending on your situation:
 

@@ -6,6 +6,7 @@ ms.reviewer: mhart
 ms.topic: how-to
 author: zacookmsft
 ms.author: zacook
+ms.collection: bap-ai-copilot 
 ---
 
 # Create a segment based on a prediction model (preview)

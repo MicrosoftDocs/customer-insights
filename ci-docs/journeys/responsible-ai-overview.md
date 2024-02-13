@@ -4,13 +4,13 @@ description: Responsible AI FAQs discuss AI technology in Dynamics 365 Customer 
 ms.date: 01/30/2024
 ms.custom: 
   - transparency-note
+
 ms.topic: article
 author: alfergus
 ms.author: alfergus
-search.audienceType: 
-  - admin
-  - customizer
-  - enduser
+ms.collection: bap-ai-copilot
+ms.custom: 
+  - transparency-note
 ---
 
 # Responsible AI FAQs for Dynamics 365 Customer Insights - Journeys

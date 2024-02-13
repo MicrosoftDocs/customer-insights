@@ -1,14 +1,11 @@
 ---
 title: What's new archive
 description: Information about new features, improvements, and bug fixes from previous years in Dynamics 365 Customer Insights - Journeys releases.
-ms.date: 01/19/2024
+ms.date: 01/22/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
-search.audienceType:
-  - admin
-  - customizer
-  - enduser
+ms.collection: bap-ai-copilot
 ---
 
 # What's new archive for Dynamics 365 Customer Insights - Journeys
@@ -60,7 +57,7 @@ On September 1, 2023, Dynamics 365 Customer Insights - Journeys transitioned to 
 
 - **Create segments using unified profiles and calculated metrics from Customer Insights - Data**
     - Customer Insights – Journeys now lets you create highly personalized customer segments using unified profiles and customer measures from Customer Insights - Data. This allows you to use the Customer Insights – Journeys app for even more scenarios without having to use Customer Insights – Data app to create unified profile-based segments. This also ensures that all interaction data is captured against the contact, regardless of whether you use the information from contacts or unified profiles. In a Customer Insights – Journeys environment, unified profiles and customer measures are available when you create a segment of contacts.
-    - [Docs](real-time-marketing-build-segments.md)
+    - [Docs](unified-profile-segment-creation.md)
 
 #### Public preview
 

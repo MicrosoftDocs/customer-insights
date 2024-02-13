@@ -1,7 +1,7 @@
 ---
 title: Create segments using unified profiles and customer measures from Customer Insights - Data
 description: Learn how to create segments using unified profiles and customer measures from Customer Insights - Data in Dynamics 365 Customer Insights - Journeys.
-ms.date: 01/12/2024
+ms.date: 01/30/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -17,8 +17,7 @@ Customer Insights - Journeys lets you create highly personalized segments based 
 
 When a Customer Insights - Journeys environment is [connected to](customer-insights-quickstart-guide.md) a Customer Insights - Data environment, unified profiles and customer measures are available when you create a segment of contacts. For example, you could create a segment of contacts called “Monthly grocery shoppers” that's based on location information from the contact table, the “Rewards member” property from unified profiles, and “MonthlyTotalSpend” from a customer measure (the latter two coming from Customer Insights - Data)
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot showing unified profile segment creation](media/unified-profile-segment-creation.png "Screenshot showing unified profile segment creation")
+:::image type="content" source="media/unified-profile-segment-creation.png" alt-text="Screenshot showing unified profile segment creation." lightbox="media/unified-profile-segment-creation.png":::
 
 ## Creating measures
 

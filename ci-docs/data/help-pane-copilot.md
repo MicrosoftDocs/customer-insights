@@ -7,6 +7,7 @@ ms.topic: how-to
 author: nikeller
 ms.author: nikeller
 ms.custom: bap-template
+ms.collection: bap-ai-copilot 
 ---
 
 # Get answers to questions about capabilities from Copilot (preview)
@@ -40,6 +41,8 @@ While you use Copilot, the previous messages remain in the side pane. You can re
 This conversation history is kept temporarily until you close the Customer Insights - Data app.
 
 To clear the conversation history, select the **Reload** button in the header of the side pane.
+
+[!INCLUDE [copilot-availability](includes/copilot-availability.md)]
 
 ## Next steps
 

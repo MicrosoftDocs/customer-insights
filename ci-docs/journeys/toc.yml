@@ -96,6 +96,8 @@
     href: role-permissions.md
   - name: Integrate with Dynamics 365 Customer Insights - Data
     href: ci-get-started.md
+  - name: Create consistent branding with brand profiles
+    href: brand-profiles.md  
   - name: Import data
     href: import-data.md
   - name: Export data
@@ -150,16 +152,22 @@
           href: content-rewrite.md
         - name: "Preview: Copilot - Style your emails with AI-assisted themes"
           href: email-theme.md
+        - name: Use brand profiles in email
+          href: brand-profiles-email.md
+        - name: Import outbound emails, templates, and content blocks to Customer Insights - Journeys
+          href: real-time-marketing-import-email-to-real-time.md 
+      - name: Enhance your email
+        items:
+        - name: Use QR codes for event registration, links to content, or URLs
+          href: email-QR-Code.md
+        - name: "Preview: Use enhanced HTML controls and import HTML snippets"
+          href: email-creation-with-html-edits.md
+        - name: Use custom fonts in Customer Insights - Journeys
+          href: use-custom-fonts.md
         - name: Enhance email engagement by allowing browser viewing
           href: view-email-in-browser.md  
         - name: Generate iCalendar files for events and sessions
           href: add-to-calendar.md
-        - name: Use brand profiles in email
-          href: brand-profiles-email.md
-        - name: Create consistent branding with brand profiles
-          href: brand-profiles.md
-        - name: Import outbound emails, templates, and content blocks to Customer Insights - Journeys
-          href: real-time-marketing-import-email-to-real-time.md 
       - name: Prepare to send your email
         items:
         - name: Set the sender, receiver, language, and legal designation
@@ -192,8 +200,6 @@
         href: set-up-automated-sms-keyword-flow.md
     - name: Push notifications
       href: real-time-marketing-push-notifications.md
-    - name: Use custom fonts in Customer Insights - Journeys
-      href: use-custom-fonts.md
     - name: Create custom channels
       href: real-time-marketing-create-custom-channels.md
     - name: Use AI-driven run-time channel optimization
@@ -238,6 +244,8 @@
           href: real-time-marketing-static-snapshot.md
       - name: Create a segment-based journey
         href: real-time-marketing-segment-based-journey.md
+      - name: Automatic segment management
+        href: auto-segment-management.md
       - name: Use Customer Insights - Data profiles and segments
         href: real-time-marketing-ci-profile.md
       - name: Individually manage your customer list
@@ -372,7 +380,7 @@
     items:
     - name: Use images, files, and videos in your content
       href: upload-images-files.md
-    - name: Impact of disabling CDN
+    - name: Impact of disabling Azure CDN
       href: cdn-disabling.md
   - name: Known issues in real-time journeys
     href: real-time-marketing-known-issues.md
@@ -414,7 +422,7 @@
     href: real-time-marketing-developer-push.md
   - name: Receive notifications and create interactions
     href: real-time-marketing-developer-notifications.md
-  - name: Create a consent point record using a cloud flow
+  - name: Create a consent record using a cloud flow
     href: consent-record-creation.md
   - name: Create a Customer Insights - Journeys segment using the Web API
     href: real-time-marketing-api-segment.md
@@ -524,6 +532,8 @@
       href: customize.md
     - name: Open the Power Apps customization window
       href: customize-open-powerapps.md
+    - name: Customize the form editor
+      href: real-time-marketing-customize-forms.md
     - name: Create and customize marketing calendars
       href: customize-marketing-calendars.md
     - name: Create and customize template labels
@@ -542,6 +552,8 @@
       href: dsr-handling.md
     - name: Anonymized customer data human review notice
       href: anonymized-data-review.md
+    - name: One-click unsubscribe support for emails
+      href: one-click-unsubscribe.md
   - name: Maintain the Customer Insights - Journeys app
     items:
     - name: Recurring activity bulk deletion
