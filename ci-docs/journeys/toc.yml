@@ -96,6 +96,8 @@
     href: role-permissions.md
   - name: Integrate with Dynamics 365 Customer Insights - Data
     href: ci-get-started.md
+  - name: Create consistent branding with brand profiles
+    href: brand-profiles.md  
   - name: Import data
     href: import-data.md
   - name: Export data
@@ -150,20 +152,22 @@
           href: content-rewrite.md
         - name: "Preview: Copilot - Style your emails with AI-assisted themes"
           href: email-theme.md
+        - name: Use brand profiles in email
+          href: brand-profiles-email.md
+        - name: Import outbound emails, templates, and content blocks to Customer Insights - Journeys
+          href: real-time-marketing-import-email-to-real-time.md 
+      - name: Enhance your email
+        items:
+        - name: Use QR codes for event registration, links to content, or URLs
+          href: email-QR-Code.md
         - name: "Preview: Use enhanced HTML controls and import HTML snippets"
           href: email-creation-with-html-edits.md
+        - name: Use custom fonts in Customer Insights - Journeys
+          href: use-custom-fonts.md
         - name: Enhance email engagement by allowing browser viewing
           href: view-email-in-browser.md  
         - name: Generate iCalendar files for events and sessions
           href: add-to-calendar.md
-        - name: Use brand profiles in email
-          href: brand-profiles-email.md
-        - name: Create consistent branding with brand profiles
-          href: brand-profiles.md
-        - name: Use custom fonts in Customer Insights - Journeys
-          href: use-custom-fonts.md
-        - name: Import outbound emails, templates, and content blocks to Customer Insights - Journeys
-          href: real-time-marketing-import-email-to-real-time.md 
       - name: Prepare to send your email
         items:
         - name: Set the sender, receiver, language, and legal designation
@@ -240,6 +244,8 @@
           href: real-time-marketing-static-snapshot.md
       - name: Create a segment-based journey
         href: real-time-marketing-segment-based-journey.md
+      - name: Automatic segment management
+        href: auto-segment-management.md
       - name: Use Customer Insights - Data profiles and segments
         href: real-time-marketing-ci-profile.md
       - name: Individually manage your customer list

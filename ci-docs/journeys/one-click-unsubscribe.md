@@ -23,11 +23,11 @@ search.audienceType:
 > 
 > | Region | Feature switch available under **Settings** | Outbound marketing emails | Real-time journeys emails |
 > | --------| ---------------------------- | ----------- | ----------- |
-> | IND | Available | Supported | Feb 5 |
-> | CAN, SAM, FRA, CHE | Available | Supported | Feb 6 |
-> | UAE, APJ, OCE, GBR, JPN | Available | Supported | Feb 7 |
-> | EUR | Feb 8 | Feb 8 | Feb 8 |
-> | NAM | Feb 12 |Feb 12 | Feb 12 |
+> | IND | Available | Supported | Supported |
+> | CAN, SAM, FRA, CHE | Available | Supported | Supported |
+> | UAE, APJ, OCE, GBR, JPN | Available | Supported | Supported |
+> | EUR | Feb 9 | Feb 9 | Feb 9 |
+> | NAM | Feb 13 |Feb 13 | Feb 13 |
 > 
 > Learn more about your Dataverse region: [Datacenter regions](/power-platform/admin/new-datacenter-regions)
 
@@ -135,9 +135,7 @@ Outbound marketing users that manage consent for different brands separately and
     
     :::image type="content" source="media/describe-changes-when-unsubscribed.png" alt-text="Describe changes when the functionality is unsubscribed." lightbox="media/describe-changes-when-unsubscribed.png":::
 
-1. Select **Save and close**. Then, on the main process window, select **Save** and then select **Activate** to start the process.
-    
-    :::image type="content" source="media/activate-the-process.png" alt-text="Activate the unsubscribe process." lightbox="media/activate-the-process.png":::
+1. Select **Save and close**. Then, on the main process window, select **Save** and then select **Activate** in the top toolbar to start the process.
 
 1. Go to the [maker portal](https://make.powerapps.com/) and select the applicable environment.
     
