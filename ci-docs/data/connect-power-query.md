@@ -112,10 +112,10 @@ The user performing this action must have a *Dataverse Administrator* role.
 
 ## Update Power Query schedules to system refresh schedule
  
-Customer Insights - Data is retiring separate refresh schedules. To ensure that Customer Insights - Data reflects current data, remove your Power Query refresh schedules so that these data sources refresh as part of the system refresh. If your Power Query data source shows **Completed with warnings** on the **Data sources** page, your data source can still be updated. After successfully saving these changes and a system refresh, the status changes to **Completed**.
+Customer Insights - Data is retiring separate refresh schedules. To ensure that Customer Insights - Data reflects current data, remove your Power Query refresh schedules so that these data sources refresh as part of the system refresh. If your Power Query data source shows **Completed with warnings** on the **Data sources** page, your data source contains a separate refresh schedule. After successfully removing the separate schedule and a system refresh, the status changes to **Completed**.
 
 > [!IMPORTANT]
-> The migration adds the data source refresh time to the total time for a system refresh. We recommend you [view your Power Query run durations](#view-power-query-run-durations) and then change the [system refresh schedule](schedule-refresh.md) if needed. For example, a Power Query source might take on average 30 minutes to refresh. Therefore, we recommended you update the system refresh schedule to start 30 minutes earlier to recieve results at a simaliar time.
+> The data source refresh time is added to the total time for a system refresh. We recommend you [view your Power Query run durations](#view-power-query-run-durations) and then change the [system refresh schedule](schedule-refresh.md) if needed. For example, a Power Query source might take an average of 30 minutes to refresh. Therefore, we recommended you update the system refresh schedule to start 30 minutes earlier to recieve results at a simaliar time.
 
 ### Remove Power Query schedules
 
