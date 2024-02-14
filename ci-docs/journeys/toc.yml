@@ -162,7 +162,7 @@
           href: email-QR-Code.md
         - name: "Preview: Use enhanced HTML controls and import HTML snippets"
           href: email-creation-with-html-edits.md
-        - name: Use custom fonts in Customer Insights - Journeys
+        - name: Use custom fonts in emails
           href: use-custom-fonts.md
         - name: Enhance email engagement by allowing browser viewing
           href: view-email-in-browser.md  
