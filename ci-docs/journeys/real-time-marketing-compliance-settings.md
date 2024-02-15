@@ -36,8 +36,6 @@ In outbound marketing, consent is captured and stored on the contact entity the 
 
 Compliance profiles are the hubs to manage consent and compliance in Customer Insights - Journeys. Compliance profiles govern how consent is captured and enforced. Compliance profiles store information such as company address, the preference management experience, and related configuration. Compliance profile settings vary based on the type of compliance profile you're creating or modifying.  
 
-Learn more: [Compliance profiles](real-time-marketing-compliance-settings.md#compliance-profiles).  
-
 ## User contact preferences
 
 There are four ways that users can manage their contact preferences: preference centers, preference pages, subscription centers, and external links.  
@@ -60,8 +58,6 @@ Learn more: [Create Customer Insights - Journeys preference centers](real-time-m
 > We recommend replacing preference pages with preference centers to take full advantage of the consent features available in Customer Insights - Journeys.
 
 Customer Insights - Journeys uses preference pages as another way to manage user consent. A preference page is a web page where your customers can change their consent settings for receiving emails and text messages and for tracking. You can't create a new preference page. Instead, you can customize the language on the page for updating contact point consent as used in Customer Insights - Journeys. With the introduction of preference centers, existing preference pages will continue to support users updating their consent. However, moving forward, all new compliance profiles use the enhanced functionality of preference centers.  
-
-Learn more: [Customer Insights - Journeys preference centers](real-time-marketing-preference-centers.md)
 
 ### Subscription centers
 
@@ -111,6 +107,10 @@ Another reason for having multiple compliance profiles would be to support diffe
 
 When you create a new compliance profile, you can **Use previously captured consent**. This option is intended to facilitate transitioning from a compliance profile with a preference page to one with a preference center. Doing so ensures that any previously captured consent applies to the new compliance profile.
 
+
+> [!NOTE]
+> Currently, you can deactivate a compliance profile or contact point consent record. However, deactivated profiles and contact point consent records will still be used and enforced because existing journeys or messages sent may rely on them. Should you wish to update a user's consent, go to the contact point consent record itself and change the consent value.
+
 #### Purposes
 
 Data use purpose consent (hereafter called “purpose”) defines the specific reason for which consent is collected. It's often associated with a specific legal basis or reason – for example, consent to be contacted for commercial marketing purposes. A purpose can be one of three types: (1) Commercial Communication, (2) Transactional Communication, and (3) Tracking Consent. When a compliance profile is created, three purposes are created by default: a Commercial, Transactional, and Tracking purpose. These purposes can be customized to meet your specific needs. You can also create and add your own purposes to a compliance profile.
@@ -156,15 +156,6 @@ Similarly, the contact's `DoNotTrack` field and tracking contact point consent r
 Text and custom channel messages to contacts don't use the `DoNotEmail`, `DoNotBulkEmail`, or `DoNotTrack` fields when evaluating consent.
 
 To learn more about transitioning from outbound marketing to real-time journeys here, visit [Consent management and double opt-in transition guidance](real-time-marketing-consent-transition.md)
-
-#### Preference centers
-
-A preference center is a form that allows a message recipient to review and update their current consent settings. Each compliance profile has its own preference center. When you create a new compliance profile, a default preference center is created that you can customize with your own branding. You can choose which purposes and topics appear on the preference center, allowing you to control what consent to show and collect on the form. The unsubscribe links in emails direct recipients to the preference center of the compliance profile chosen on the email they received.
-
-To learn more about preference centers, visit [Customer Insights - Journeys preference centers](real-time-marketing-preference-centers.md)
-
-> [!NOTE]
-> Currently, you can deactivate a compliance profile or contact point consent record. However, deactivated profiles and contact point consent records will still be used and enforced because existing journeys or messages sent may rely on them. Should you wish to update a user's consent, go to the contact point consent record itself and change the consent value.
 
 ## See also
 
