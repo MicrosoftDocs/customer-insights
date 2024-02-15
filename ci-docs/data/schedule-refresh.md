@@ -1,7 +1,7 @@
 ---
 title: "Schedule system refresh"
 description: "Schedule the time when the system should be refreshed"
-ms.date: 11/28/2022
+ms.date: 02/12/2024
 ms.topic: conceptual
 author: NimrodMagen
 ms.author: nimagen
@@ -14,10 +14,6 @@ searchScope:
 # Schedule system refresh
 
 Schedule automatic refreshes of all your [ingested data sources](data-sources.md). Automatic refreshes help ensure that updates from your data sources are reflected in your unified customer profiles.
-
-> [!NOTE]
-> Power Query data sources managed by you refresh on their own schedules. To schedule refresh of these Power Query data sources, configure refresh settings on that specific data source from the **Data sources** page. Align the timing with the upstream data refresh schedule so that refreshes do not all occur at once.
-> :::image type="content" source="media/PPDF-edit-refresh.png" alt-text="Power Platform Dataflow refresh settings.":::
 
 ## Set system refresh schedule
 
