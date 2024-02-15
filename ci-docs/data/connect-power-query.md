@@ -137,6 +137,14 @@ Customer Insights - Data is retiring separate refresh schedules. To ensure that 
 
 1. Select **Status**. 
 
+## Refresh Power Query data sources on demand
+
+Only the owner of a Power Query data source can refresh the data source on demand. If you aren't the owner of the data source, find the data source owner under **Managed by others** on the **Data Sources** page.
+
+1. Go to **Data** > **Data Sources**.
+
+1. Select the desired Power Query data source, and then select **Refresh**.
+
 ## Next steps
 
 - [Data unification overview](data-unification.md)
