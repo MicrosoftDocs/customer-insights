@@ -1,7 +1,7 @@
 ---
 title: User roles
 description: Learn about user roles and what permissions they have in Customer Insights - Data.
-ms.date: 09/07/2023
+ms.date: 02/16/2024
 ms.reviewer: mhart
 ms.topic: conceptual
 author: jodahl
@@ -12,6 +12,37 @@ ms.custom: bap-template
 # User roles
 
 The user role assigned to a user determines what the user can access within Customer Insights - Data. There are different types of roles a user can have.
+
+The table provides an overview of the different roles. For  details, see each individual role.
+
+| Action/View                                 | Viewer | Marketing Contributor\* | Contributor | Administrator | Administrator (environment owner) |
+| ------------------------------------------- | ------ | ----------------------- | ----------- | ------------- | --------------------------------- |
+|                                             |        |                         |             |               |                                   |
+| Access and explore Home page                | x      |                         | x           | x             | x                                 |
+| Access and explore Customer page            | x      | x                       | x           | x             | x                                 |
+| Access and explore Data sources page        | x      |                         | x           | x             | x                                 |
+| Access and explore Enrichments page         | x      |                         | x           | x             | x                                 |
+| Access and explore Tables page              | x      | x                       | x           | x             | x                                 |
+| Access and explore System page              | x      |                         | x           | x             | x                                 |
+| Access and explore Exports page             | x      | x                       | x           | x             | x                                 |
+| Power BI Dashboard                          |        |                         | x           | x             | x                                 |
+| Access, explore and configure segments      |        | x                       | x           | x             | x                                 |
+| Access, explore and configure measures      |        | x                       | x           | x             | x                                 |
+| Access, explore and configure predictions   |        |                         | x           | x             | x                                 |
+| Access, explore and configure data sources  |        |                         | x           | x             | x                                 |
+| Access, explore and configure Unification   |        |                         | x           | x             | x                                 |
+| Accees, explore and configure Activities    |        |                         | x           | x             | x                                 |
+| Access, explore and configure Relationships |        |                         | x           | x             | x                                 |
+| Access, explore and configure Enrichments   |        |                         | x           | x             | x                                 |
+| Access, explore and configure Exports       |        | x                       | x           | x             | x                                 |
+| Access, explore and configure Web Tracking  |        |                         | x           | x             | x                                 |
+| Access, explore and configure System        |        |                         | x           | x             | x                                 |
+| Access, explore and configure Connections   |        |                         |             | x             | x                                 |
+| Access, explore and configure Permissions   |        |                         |             | x             | x                                 |
+| Reset environment                           |        |                         |             |               | x                                 |
+| Delete environment                          |        |                         |             |               | x                                 |
+
+*The Marketing Contributor role is only available in [business unit enabled environments](business-units-data-separation.md). All actions and views for the Marketing Contributor are limited to the business unit(s) they have access to.
 
 ## Viewer
 
