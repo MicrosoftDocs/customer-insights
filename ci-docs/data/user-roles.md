@@ -17,7 +17,6 @@ The table provides an overview of the different roles. For  details, see each in
 
 | Action/View                                 | Viewer | Marketing Contributor\* | Contributor | Administrator | Administrator (environment owner) |
 | ------------------------------------------- | ------ | ----------------------- | ----------- | ------------- | --------------------------------- |
-|                                             |        |                         |             |               |                                   |
 | Access and explore Home page                | x      |                         | x           | x             | x                                 |
 | Access and explore Customer page            | x      | x                       | x           | x             | x                                 |
 | Access and explore Data sources page        | x      |                         | x           | x             | x                                 |
