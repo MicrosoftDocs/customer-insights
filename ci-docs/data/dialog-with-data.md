@@ -10,9 +10,9 @@ ms.custom: bap-template
 ms.collection: bap-ai-copilot 
 ---
 
-# Have a dialog with data using Copilot in Customer Insights - Data
+# Have a dialog with data using Copilot in Customer Insights - Data (preview)
 
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
+[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
 Understanding your customers’ profiles and preferences is essential for driving personalized experiences. Customer Insights – Data uses generative AI capabilities to let you ask questions in natural language to quickly generate insights about your customers. Now end users like marketers, sellers, and service agents can get insights to better understand and serve customers easily without the support of IT teams or other tools.
 
