@@ -11,7 +11,7 @@ ms.custom: bap-template
 
 # Business accounts (B2B) and Customer Insights
 
-[!INCLUDE [consolidated-sku](../includes/consolidated-sku.md)]
+
 
 Dynamics 365 Customers Insights previously offered two distinct, standalone modes: Individual consumers known as B2C and Business accounts known as B2B. These modes and terms can be misleading because the individual consumers mode, which unifies and creates segments of people, meets the requirements of most companies, including those doing account-based marketing.
 
