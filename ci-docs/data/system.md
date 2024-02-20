@@ -125,6 +125,8 @@ Use the summary to help you determine if your environment is running normally or
   - To refresh the summary if you’re waiting for a job to finish, select **Refresh**.
   - To provide your feedback, select the thumbs up or thumbs down icons.
 
+[!INCLUDE [copilot-availability](includes/copilot-availability.md)]
+
 ### Next steps
 
 - [Responsible AI FAQs for the Environment status summary](faqs-environment-status.md)

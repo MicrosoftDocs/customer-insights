@@ -1,11 +1,11 @@
 ---
 title: "Connect to a Power Query data source (contains video)"
 description: "Ingest data through a Power Query connector (contains video)."
-ms.date: 01/22/2024
+ms.date: 02/12/2024
 ms.reviewer: v-wendysmith
 ms.topic: how-to
-author: mukeshpo
-ms.author: mukeshpo
+author: joytaylor
+ms.author: joytaylor
 ms.custom: bap-template
 ---
 
@@ -89,6 +89,61 @@ You must be the owner of the dataflow to edit it.
    [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
 
 Loading data can take time. After a successful refresh, review the ingested data from the [**Data** > **Tables**](tables.md) page.
+
+## Transfer Power Query data source ownership
+
+You can transfer the data source ownership to other people in your organization. For example, if the owner leaves the organization or if changes are required for collaboration purposes. 
+
+### Transfer the ownership
+
+The user performing this action must have a *Dataverse Administrator* role.
+
+1. Go to [Power Apps](https://make.powerapps.com).
+
+1. Select the Dataverse environment that maps to your Customer Insights - Data environment.
+
+1. Go to **Dataflows** and select **All Dataflows**.
+
+1. Search for the owner of the dataflow that you want to take ownership.
+
+1. Select the vertical ellipsis (&vellip;) and select **Change Owner**.
+
+1. Enter the name of the new owner and select **Change Owner**.
+
+## Update Power Query schedules to system refresh schedule
+ 
+Customer Insights - Data is aligning Power Query separate refresh schedules with the system refresh schedule. To ensure that Customer Insights - Data reflects current data, remove your Power Query refresh schedules so that these data sources refresh as part of the system refresh. If your Power Query data source shows **Completed with warnings** on the **Data sources** page, your data source contains a separate refresh schedule. After successfully removing the separate schedule and a system refresh, the status changes to **Completed**.
+
+> [!IMPORTANT]
+> The data source refresh time is added to the total time for a system refresh. We recommend you [view your Power Query run durations](#view-power-query-run-durations) and then change the [system refresh schedule](schedule-refresh.md) if needed. For example, a Power Query source might take an average of 30 minutes to refresh. Therefore, we recommended you update the system refresh schedule to start 30 minutes earlier to recieve results at a simaliar time.
+
+### Remove Power Query schedules
+
+1. Go to **Data** > **Data Sources**.
+
+1. Select the desired Power Query data source.
+
+1. Select the vertical ellipsis (&vellip;) and select **Edit refresh settings**.
+
+1. Select **Refresh manually**.
+   
+1. Select **Save**.
+
+### View Power Query run durations
+
+1. Go to **Data** > **Data Sources**.
+
+1. Select the desired Power Query data source.
+
+1. Select **Status**. 
+
+## Refresh Power Query data sources on demand
+
+Only the owner of a Power Query data source can refresh the data source on demand. If you aren't the owner of the data source, find the data source owner under **Managed by others** on the **Data Sources** page.
+
+1. Go to **Data** > **Data Sources**.
+
+1. Select the desired Power Query data source, and then select **Refresh**.
 
 ## Next steps
 

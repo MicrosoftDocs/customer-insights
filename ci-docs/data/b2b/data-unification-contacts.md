@@ -11,7 +11,7 @@ ms.custom: bap-template
 
 # Create a unified business contact profile
 
-[!INCLUDE [consolidated-sku](../includes/consolidated-sku.md)]
+
 
 Contact unification allows contacts for unified accounts to be separately unified and associated with the accounts. Contact unification also allows contacts without an account to be included in the unified contact profile.
 
@@ -141,6 +141,6 @@ A deduplication output table contains the following information:
 
 ## Next step
 
-Configure [activities](activities-contacts.md), [enrichment](work-with-business-accounts.md#enrichments), and [relationships](../relationships.md) to gain more insights about your contacts.
+Configure [activities](activities-contacts.md), [enrichment](supported-features-b2b.md#enrichments), and [relationships](../relationships.md) to gain more insights about your contacts.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

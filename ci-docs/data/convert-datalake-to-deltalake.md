@@ -11,8 +11,6 @@ ms.custom: bap-template
 
 # Convert a Data Lake data source to a Delta Lake data source (preview)
 
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
-
 [!INCLUDE [public-preview-banner](./includes/public-preview-banner.md)]
 
 <!--- When remove preview, remove preview note from data-sources-manage.md --->

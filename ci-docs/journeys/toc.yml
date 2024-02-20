@@ -50,6 +50,8 @@
       href: transition-walkthrough-segments.md
     - name: Consent
       href: transition-walkthrough-consent.md
+    - name: Consent management and double opt-in
+      href: real-time-marketing-consent-transition.md
     - name: Marketing pages and forms
       href: transition-walkthrough-forms.md
     - name: Event management
@@ -96,6 +98,8 @@
     href: role-permissions.md
   - name: Integrate with Dynamics 365 Customer Insights - Data
     href: ci-get-started.md
+  - name: Create consistent branding with brand profiles
+    href: brand-profiles.md  
   - name: Import data
     href: import-data.md
   - name: Export data
@@ -106,18 +110,6 @@
       href: domain-authentication.md
     - name: BIMI support
       href: bimi-support.md
-  - name: Privacy and compliance
-    items:
-    - name: Manage consent for email and text messages
-      href: real-time-marketing-email-text-consent.md
-    - name: Preference centers
-      href: real-time-marketing-preference-centers.md
-    - name: Consent management and double opt-in transition guidance
-      href: real-time-marketing-consent-transition.md
-    - name: Migrate consent records to Customer Insights - Journeys
-      href: real-time-marketing-migrate-consent.md
-    - name: Use outbound subscription centers in Customer Insights - Journeys
-      href: real-time-marketing-outbound-subscription.md
   - name: Business units
     items:
     - name: Business unit support in Customer Insights - Journeys
@@ -150,16 +142,22 @@
           href: content-rewrite.md
         - name: "Preview: Copilot - Style your emails with AI-assisted themes"
           href: email-theme.md
+        - name: Use brand profiles in email
+          href: brand-profiles-email.md
+        - name: Import outbound emails, templates, and content blocks to Customer Insights - Journeys
+          href: real-time-marketing-import-email-to-real-time.md 
+      - name: Enhance your email
+        items:
+        - name: Use QR codes for event registration, links to content, or URLs
+          href: email-QR-Code.md
+        - name: "Preview: Use enhanced HTML controls and import HTML snippets"
+          href: email-creation-with-html-edits.md
+        - name: Use custom fonts in emails
+          href: use-custom-fonts.md
         - name: Enhance email engagement by allowing browser viewing
           href: view-email-in-browser.md  
         - name: Generate iCalendar files for events and sessions
           href: add-to-calendar.md
-        - name: Use brand profiles in email
-          href: brand-profiles-email.md
-        - name: Create consistent branding with brand profiles
-          href: brand-profiles.md
-        - name: Import outbound emails, templates, and content blocks to Customer Insights - Journeys
-          href: real-time-marketing-import-email-to-real-time.md 
       - name: Prepare to send your email
         items:
         - name: Set the sender, receiver, language, and legal designation
@@ -192,8 +190,6 @@
         href: set-up-automated-sms-keyword-flow.md
     - name: Push notifications
       href: real-time-marketing-push-notifications.md
-    - name: Use custom fonts in Customer Insights - Journeys
-      href: use-custom-fonts.md
     - name: Create custom channels
       href: real-time-marketing-create-custom-channels.md
     - name: Use AI-driven run-time channel optimization
@@ -238,6 +234,8 @@
           href: real-time-marketing-static-snapshot.md
       - name: Create a segment-based journey
         href: real-time-marketing-segment-based-journey.md
+      - name: Automatic segment management
+        href: auto-segment-management.md
       - name: Use Customer Insights - Data profiles and segments
         href: real-time-marketing-ci-profile.md
       - name: Individually manage your customer list
@@ -368,11 +366,27 @@
       href: real-time-marketing-personalize-lists.md
     - name: Preview personalized content
       href: real-time-marketing-preview-personalized-content.md
+  - name: Privacy and compliance
+    items:
+    - name: Consent management overview
+      href: real-time-marketing-compliance-settings.md
+    - name: Customize your preference centers
+      href: real-time-marketing-preference-centers.md
+    - name: Use outbound subscription centers in real-time journeys
+      href: real-time-marketing-outbound-subscription.md
+    - name: Migrate consent records to real-time journeys
+      href: real-time-marketing-migrate-consent.md
+    - name: One-click unsubscribe support for emails
+      href: one-click-unsubscribe.md
+    - name: Create consent records using a cloud flow
+      href: consent-record-creation.md
+    - name: Manage consent for email and text messages
+      href: real-time-marketing-email-text-consent.md
   - name: Image, file, and video assets
     items:
     - name: Use images, files, and videos in your content
       href: upload-images-files.md
-    - name: Impact of disabling CDN
+    - name: Impact of disabling Azure CDN
       href: cdn-disabling.md
   - name: Known issues in real-time journeys
     href: real-time-marketing-known-issues.md
@@ -414,8 +428,6 @@
     href: real-time-marketing-developer-push.md
   - name: Receive notifications and create interactions
     href: real-time-marketing-developer-notifications.md
-  - name: Create a consent record using a cloud flow
-    href: consent-record-creation.md
   - name: Create a Customer Insights - Journeys segment using the Web API
     href: real-time-marketing-api-segment.md
   - name: Use binding IDs to correlate across triggers
@@ -524,20 +536,16 @@
       href: customize.md
     - name: Open the Power Apps customization window
       href: customize-open-powerapps.md
+    - name: Customize the form editor
+      href: real-time-marketing-customize-forms.md
     - name: Create and customize marketing calendars
       href: customize-marketing-calendars.md
     - name: Create and customize template labels
       href: customize-template-labels.md
     - name: Customize the email designer
       href: developer/email-designer-customization.md
-  - name: Privacy and compliance
+  - name: Data compliance
     items:
-    - name: Compliance overview
-      href: compliance-overview.md
-    - name: Manage user compliance settings
-      href: real-time-marketing-compliance-settings.md
-    - name: Use privacy features
-      href: privacy-use-features.md
     - name: Data subject request (DSR) handling
       href: dsr-handling.md
     - name: Anonymized customer data human review notice
