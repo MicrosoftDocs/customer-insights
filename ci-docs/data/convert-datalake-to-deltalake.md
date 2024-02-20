@@ -1,7 +1,7 @@
 ---
 title: "Convert a Data Lake data source to a Delta Lake data source (preview)"
 description: "Convert a Data Lake data source to a Delta Lake data source in Customer Insights - Data."
-ms.date: 01/03/2024
+ms.date: 02/20/2024
 ms.topic: how-to
 author: mukeshpo
 ms.author: mukeshpo

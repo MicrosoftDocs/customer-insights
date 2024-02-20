@@ -51,6 +51,8 @@
          href: connect-power-query.md
     - name: Manage existing data sources
       href: data-sources-manage.md
+    - name: Convert a Data Lake to a Delta Lake data source
+      href: convert-datalake-to-deltalake.md
     - name: Enrichment for data sources
       href: data-sources-enrichment.md
     - name: Incremental refresh for data sources
