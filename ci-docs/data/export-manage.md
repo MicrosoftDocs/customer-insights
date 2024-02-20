@@ -1,8 +1,8 @@
 ---
 title: "Set up and manage exports (preview)"
 description: "Manage exports to share data."
-author: pkieffer
-ms.author: philk
+author: Nils-2m
+ms.author: nikeller
 ms.reviewer: mhart
 ms.date: 10/04/2023
 ms.topic: how-to
@@ -76,6 +76,8 @@ When editing the schedule for several exports, make a selection under **Keep or 
 
 - **Keep individual schedules**: Keep the previously defined schedule for the selected exports and only disable or enable them.
 - **Define new schedule for all selected exports**: Override the existing schedules of the selected exports.
+
+Understanding the status of custom-scheduled exports can be challenging, because the status shown in the exports page is only the most recent one. For an export with custom schedule this often will show as "skipped" due to the custom schedule. You can see the history for an export under **Settings** > **System** > **Status**, where you scroll to **Export destinations**. To view the details of the last several runs, select the task or process name. Note though currently, there's no direct indication of custom-scheduled tasks within this history. [Learn more about system status](system.md#view-system-status)
 
 ### Run exports on demand
 
