@@ -5,11 +5,13 @@ author: zacookmsft
 ms.author: zacook
 ms.reviewer: v-wendysmith
 ms.topic: conceptual
-ms.date: 01/15/2024
+ms.date: 02/20/2024
 ms.custom: bap-template
 ---
 
 # Enrich Sales lead summaries with an insight from Customer Insights – Data (preview)
+
+[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
 Dynamics 365 Sales users can enrich their lead summary with an insight from Customer Insights - Data. The insight is based on unified activity data ingested by the user, such as customer reviews, purchases, appointments, web logs, and more. The insight is an observation of one of the following:
 
@@ -18,6 +20,8 @@ Dynamics 365 Sales users can enrich their lead summary with an insight from Cust
 - Customer's interest: How likely they're to do something such as book an appointment or purchase a specific type of product, or churn if they haven't made a recent transaction.
 
 Leveraging unified activity data from Customer Insights - Data to add an insight to the [lead summary in Dynamics 365 Sales](/dynamics365/sales/copilot-get-information#enrich-leads-with-related-information) helps sellers understand more about their lead, without leaving their workflow. Sellers can spend less time manually parsing through disparate data sources to find and synthesize information about their leads, and more time having effective conversations with them.
+
+[!INCLUDE [public-preview-note](includes/public-preview-note.md)]
 
 ## Requirements
 
