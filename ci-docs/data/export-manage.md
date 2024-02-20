@@ -77,7 +77,7 @@ When editing the schedule for several exports, make a selection under **Keep or 
 - **Keep individual schedules**: Keep the previously defined schedule for the selected exports and only disable or enable them.
 - **Define new schedule for all selected exports**: Override the existing schedules of the selected exports.
 
-Understanding the status of custom-scheduled exports can be challenging, because the status shown in the exports page is only the most recent one. For an export with custom schedule this often will show as "skipped" due to the custom schedule. You can see the history for an export under **Settings** > **System** > **Status**, where you scroll to **Export destinations**. To view the details of the last several runs, select the task or process name. Note though currently, there's no direct indication of custom-scheduled tasks within this history. [Learn more about system status](system.md#view-system-status)
+Understanding the status of custom-scheduled exports is tricky, because the status on the exports page is only the most recent scheduled system refresh. Exports with a custom schedule frequently show the misleading status *Skipped* because they don't run during a system refresh. Instead, they refresh per the custom schedule you defined. To see the history for an export, go to **Settings** > **System** > **Status** and review the **Export destinations** section. To view the details of the last several runs, select the task or process name. At this point, there's no direct indication of custom-scheduled tasks within this history. [Learn more about system status](system.md#view-system-status)
 
 ### Run exports on demand
 
