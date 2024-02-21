@@ -17,6 +17,8 @@ To link contacts or leads to a unified customer profile, the contact or lead tab
 
 Links from the contact or leads tables provide access to customer profile attributes and customer measures. Access to customer measure attributes, business measures, and predictive insights aren't supported.
 
+## Examples
+
 Examples of using this native linking include:
 
 - A sales team member viewing a lead can see additional information from the unified profile such as the customer lifetime value, lifetime purchases, churn risk, and other data. The team member can make better decisions on which leads to pursue and has access to data to help foster stronger relationships, knowing their customer’s interests, activity history, and insights. All of this information is accessible seamlessly in their contact/lead view.
