@@ -1,7 +1,7 @@
 ---
-title: "Convert a Data Lake data source to a Delta Lake data source (preview)"
-description: "Convert a Data Lake data source to a Delta Lake data source in Customer Insights - Data."
-ms.date: 02/20/2024
+title: "Update a Common Data Model data source to use Delta tables (preview)"
+description: "Update Common Data Model tables in Azure Data Lake to Delta format in Customer Insights - Data."
+ms.date: 02/21/2024
 ms.topic: how-to
 author: mukeshpo
 ms.author: mukeshpo
@@ -9,13 +9,13 @@ ms.reviewer: v-wendysmith
 ms.custom: bap-template
 ---
 
-# Convert a Data Lake data source to a Delta Lake data source (preview)
+# Update a Common Data Model data source to use Delta tables (preview)
 
 [!INCLUDE [public-preview-banner](./includes/public-preview-banner.md)]
 
 <!--- When remove preview, remove preview note from data-sources-manage.md --->
 
-Take an existing Azure Data Lake data source in Customers Insights - Data and convert it to an Azure Data Lake with Delta tables (preview) data source.
+Take an existing Azure Data Lake data source with Common Data Model (CDM) tables and update it to use Delta tables (preview).
 
 [Delta](https://go.microsoft.com/fwlink/?linkid=2248260) is a term introduced with Delta Lake, the foundation for storing data and tables in the Databricks Lakehouse Platform. Delta Lake is an open-source storage layer that brings ACID (atomicity, consistency, isolation, and durability) transactions to big data workloads. For more information, see the [Delta Lake Documentation Page.](https://docs.delta.io/latest/delta-intro.html)
 
@@ -50,9 +50,9 @@ Key reasons to connect to data stored in Delta format:
                part-0002-snappy.parquet
   ```
 
-- The Delta tables and their schema must match the tables in the existing Data Lake data source and be in the same storage container. The tables in the new data folder must match exactly to the selected tables in the Data Lake data source. The tables names and their schemas must match exactly. In Delta Lake, table names are the same as the folder name where the data is stored. Therefore, the folder names must match exactly to the selected tables in the Data Lake data source. Otherwise, the update fails.
+- The Delta tables and their schema must match the tables in the existing CDM data source and be in the same storage container. The tables in the new data folder must match exactly to the selected tables in the CDM data source. The tables names and their schemas must match exactly. In Delta, table names are the same as the folder name where the data is stored. Therefore, the folder names must match exactly to the selected tables in the CDM data source. Otherwise, the update fails.
 
-  For example, if the selected Azure Data Lake data source tables are Table1 and Table2, then the folder you choose for the update must show Table1 and Table2 in the hierarchy.
+  For example, if the selected CDM data source tables are Table1 and Table2, then the folder you choose for the update must show Table1 and Table2 in the hierarchy.
 
   ```
   storageaccountroot/
@@ -61,11 +61,11 @@ Key reasons to connect to data stored in Delta format:
       Table2/
   ```
 
-## Update a Data Lake data source to Delta Lake
+## Update a Common Data Model data source to use Delta tables
 
 1. Go to **Data** > **Data sources**.
 
-1. Select the Azure Data Lake data source and then select **Update to Delta Lake**. Or, select **Begin update** from the **Add tables** page if you're editing the Data Lake data source.
+1. Select the Azure Data Lake CDM data source and then select **Update to Delta tables**. Or, select **Begin update** from the **Add tables** page if you're editing the CDM data source.
 
    :::image type="content" source="media/delta-lake-convert.png" alt-text="Dialog box to enter connection details for Delta Lake.":::
 

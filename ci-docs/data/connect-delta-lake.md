@@ -1,7 +1,7 @@
 ---
 title: "Connect to Delta tables in Azure Data Lake Storage (preview)"
-description: "Work with data stored in Delta Lake format from Azure Data Lake Storage."
-ms.date: 01/03/2024
+description: "Work with data stored in Delta tables from Azure Data Lake Storage."
+ms.date: 02/21/2024
 ms.topic: how-to
 author: mukeshpo
 ms.author: mukeshpo
@@ -44,8 +44,8 @@ Key reasons to connect to data stored in Delta format:
 
   ```
    storage_container_root/
-      DeltaLakeDataRoot/
-         ADeltaLakeTable/
+      DeltaDataRoot/
+         ADeltaTable/
              _delta_log/
                  0000.json
                  0001.json
@@ -59,7 +59,7 @@ Key reasons to connect to data stored in Delta format:
 
 1. Select **Add a data source**.
 
-1. Select **Azure Data Lake - Delta tables (Preview)**.
+1. Select **Azure Data Lake Delta tables (Preview)**.
 
    :::image type="content" source="media/delta-lake-new.svg" alt-text="Dialog box to enter connection details for Delta Lake.":::
 
@@ -67,8 +67,10 @@ Key reasons to connect to data stored in Delta format:
 
 1. Choose one of the following options for **Connect your storage using**.
 
-   - **Azure subscription**: Select the **Subscription** and then the **Resource group** and **Storage account**. Optionally, if you want to ingest data from a storage account through an Azure Private Link, select **Enable Private Link**. For more information, see [Private Links](private-link.md).
-   - **Azure resource**: Enter the **Resource Id**. Optionally, if you want to ingest data from a storage account through an Azure Private Link, select **Enable Private Link**. For more information, see [Private Links](private-link.md).
+   - **Azure subscription**: Select the **Subscription** and then the **Resource group** and **Storage account**.
+   - **Azure resource**: Enter the **Resource Id**.
+
+1. Optionally, if you want to ingest data from a storage account through an Azure Private Link, select **Enable Private Link**. For more information, see [Private Links](private-link.md).
 
 1. Choose the name of the **Container** that contains the folder of your data, and select **Next**.
 
@@ -132,7 +134,7 @@ A full refresh takes all the data from a table in Delta format and reloads it fr
 
 1. Go to **Data** > **Data sources**.
 
-1. Select the **Azure Data Lake - Delta tables (Preview)** data source.
+1. Select the **Azure Data Lake Delta tables (Preview)** data source.
 
 1. Select the table you want to refresh. The **Edit table** pane displays.
 

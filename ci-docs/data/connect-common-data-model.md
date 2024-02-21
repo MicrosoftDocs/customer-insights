@@ -1,7 +1,7 @@
 ---
-title: "Connect to data in Azure Data Lake Storage"
+title: "Connect to Common Data Model tables in Azure Data Lake Storage"
 description: "Work with data from Azure Data Lake Storage."
-ms.date: 01/18/2024
+ms.date: 02/21/2024
 ms.topic: how-to
 author: mukeshpo
 ms.author: mukeshpo
@@ -9,11 +9,11 @@ ms.reviewer: v-wendysmith
 ms.custom: bap-template
 ---
 
-# Connect to data in Azure Data Lake Storage
+# Connect to Common Data Model tables in Azure Data Lake Storage
 
 [!INCLUDE [azure-ad-to-microsoft-entra-id](../journeys/includes/azure-ad-to-microsoft-entra-id.md)]
 
-Ingest data into Dynamics 365 Customer Insights - Data using your Azure Data Lake Storage account. Data ingestion can be full or incremental.
+Ingest data into Dynamics 365 Customer Insights - Data using your Azure Data Lake Storage account with Common Data Model (CDM) tables. Data ingestion can be full or incremental.
 
 ## Prerequisites
 
@@ -53,16 +53,16 @@ Ingest data into Dynamics 365 Customer Insights - Data using your Azure Data Lak
 
 1. Select **Add a data source**.
 
-1. Select **Azure Data Lake**.
+1. Select **Azure Data Lake CDM tables**.
 
-   :::image type="content" source="media/data_sources_ADLS.png" alt-text="Dialog box to enter connection details for Azure Data Lake." lightbox="media/data_sources_ADLS.png":::
+   :::image type="content" source="media/data_sources_ADLS.svg" alt-text="Dialog box to enter connection details for Azure Data Lake with Common Data Model tables." lightbox="media/data_sources_ADLS.png":::
 
 1. Enter a **Data source name** and an optional **Description**. The name is referenced in downstream processes and it's not possible to change it after creating the data source.
 
 1. Choose one of the following options for **Connect your storage using**. For more information, see [Connect to an Azure Data Lake Storage account with a Microsoft Entra service principal](connect-service-principal.md).
 
-   - **Azure resource**: Enter the **Resource Id**. Optionally, if you want to ingest data from a storage account through an Azure Private Link, select **Enable Private Link**. For more information, see [Private Links](private-link.md).
-   - **Azure subscription**: Select the **Subscription** and then the **Resource group** and **Storage account**. Optionally, if you want to ingest data from a storage account through an Azure Private Link, select **Enable Private Link**. For more information, see [Private Links](private-link.md).
+   - **Azure resource**: Enter the **Resource Id**. (private-link.md).
+   - **Azure subscription**: Select the **Subscription** and then the **Resource group** and **Storage account**. 
   
    > [!NOTE]
    > You need one of the following roles to the container to create the data source:
@@ -71,7 +71,13 @@ Ingest data into Dynamics 365 Customer Insights - Data using your Azure Data Lak
    >  - Storage Blob Data Contributor or Owner is required if you want to edit the manifest files directly in Customer Insights - Data.  
    >
    > Having the role on the storage account will provide the same role on all of its containers.
-  
+
+1. Optionally, if you want to ingest data from a storage account through an Azure Private Link, select **Enable Private Link**. For more information, see [Private Links](private-link.md).
+
+   <!---
+   1. Optionally, if you want to use managed identities for Azure resources, select **Use managed identities for Azure with your Azure Data Lake Storage**. For more information, see ???.
+   --->  
+
 1. Choose the name of the **Container** that contains the data and schema (model.json or manifest.json file) to import data from, and select **Next**.
    > [!NOTE]
    > Any model.json or manifest.json file associated with another data source in the environment won't show in the list. However, the same model.json or manifest.json file can be used for data sources in multiple environments.
@@ -178,6 +184,8 @@ You can update the *Connect to storage account using* option. For more informati
       > - Storage Blob Data Reader
       > - Storage Blob Data Owner
       > - Storage Blob Data Contributor
+
+   - **Use managed identities for Azure with your Azure Data Lake Storage** ???
 
    - **Enable Private Link** if you want to ingest data from a storage account through an Azure Private Link. For more information, see [Private Links](private-link.md).
 
