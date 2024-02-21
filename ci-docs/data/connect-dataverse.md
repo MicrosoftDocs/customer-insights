@@ -33,7 +33,7 @@ Only one data source of an environment can simultaneously use the same Dataverse
 
 1. Select **Microsoft Dataverse**.
 
-    :::image type="content" source="media/data-source-dataverse.png" alt-text="Dialog box showing a list of tables in the Dataverse environment.":::
+    :::image type="content" source="media/data-source-dataverse.svg" alt-text="Screenshot of adding a Microsoft Dataverse data source.":::
 
 1. Enter a **Name** for the data source and an optional **Description**.
 

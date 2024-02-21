@@ -67,7 +67,7 @@ Key reasons to connect to data stored in Delta format:
 
 1. Select the Azure Data Lake CDM data source and then select **Update to Delta tables**. Or, select **Begin update** from the **Add tables** page if you're editing the CDM data source.
 
-   :::image type="content" source="media/delta-lake-convert.png" alt-text="Dialog box to enter connection details for Delta Lake.":::
+   :::image type="content" source="media/delta-lake-update.svg" alt-text="Dialog box to enter connection details for Delta Lake.":::
 
 1. Select **Browse** and navigate to the folder that contains the data in Delta format and *exactly matches* the selected Azure Data Lake data source table. Select it, and then select **Update data source**.
 
