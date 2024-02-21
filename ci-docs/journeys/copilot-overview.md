@@ -12,6 +12,12 @@ ms.collection: bap-ai-copilot
 
 Copilot is an AI-powered assistant that helps you create and manage marketing journeys using everyday language. Seamlessly integrated, Copilot assists you in creating journeys by interpreting your goals using everyday language. Whether it's sending a welcome email to loyalty members or any other personalized engagement, Copilot simplifies the journey creation process. With the ability to edit, modify, and refine each step, it empowers you to tailor customer journeys to perfection, providing a user-friendly way to connect with customers at every touchpoint. The following are some of the things you can do with Copilot in Customer Insights - Journeys.
 
+## How general Copilot Helps You Learn and Do More with Customer Insights – Journeys
+
+Copilot, your handy tool for learning and doing simple tasks effortlessly. It revolutionizes the learning process by enabling users to seek information and perform tasks using natural language queries, accessing direct answers from the documentation. This eliminates the need to rely on external support channels or forums. 
+
+For example, while exploring products, Copilot provides real-time personalized recommendations, promotions, and addresses potential concerns based on historical data. Additionally, App Copilot offers a seamless plugin that facilitates natural language navigation, making tasks not only more accessible but also contributing to an overall more intuitive and enjoyable user journey. **Learn more**: [Add copilot for app users in model-driven apps](add-ai-copilot.md)
+
 ## Target the right customers using query assist
 
 Use Copilot to create segments for your journeys by describing your criteria in natural language. Users can engage with Copilot in conversational language and it intelligently interprets queries, offering not only search term suggestions but also refining the language for optimal results. Copilot's NLP (natural language processing) capabilities enable it to discern context, allowing for dynamic adjustments based on the evolving conversation.
