@@ -1,5 +1,5 @@
 > [!TIP]
-> [Azure Synapse Link for Dataverse](/power-apps/maker/data-platform/export-to-data-lake) is a generally available service that offers a seamless integration, which enables continuous replication of data from Microsoft Dataverse to Azure Data Lake. You can use Azure Synapse Link for Dataverse for[data-out exports](/dynamics365/customer-insights/data/export-destinations#export-types) to access the following Customer Insights tables:
+> [Azure Synapse Link for Dataverse](/power-apps/maker/data-platform/export-to-data-lake) is a generally available service that offers a seamless, continuous replication of data from Microsoft Dataverse to Azure Data Lake. You can use Azure Synapse Link for Dataverse for[data-out exports](/dynamics365/customer-insights/data/export-destinations#export-types) to access the following Customer Insights tables:
 >
 > - Unified customer profiles (*msdynci_customerprofile*)
 > - Unified activities (*msdynci_unifiedactivity*)
