@@ -11,8 +11,6 @@ ms.custom: bap-template
 
 # Real-time web personalization
 
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
-
 As customers engage with your business, they constantly provide signals about their interests and preferences, such as adding a product to a cart, viewing your pricing, signing up for a trial, and more. It's crucial to build on these signals as they happen so you can deliver the right personalized experiences in the right moment.
 
 Customer Insights - Data can update customer profiles real-time based on web signals. This capability helps you to provide the most targeted and personalized experiences to your customers as they browse your web properties. Foster loyalty, increase engagement, enhance satisfaction, and drive higher conversion rates.
