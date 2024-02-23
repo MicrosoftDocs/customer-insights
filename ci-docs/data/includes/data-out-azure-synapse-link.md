@@ -4,7 +4,7 @@
 > - Unified customer profiles (*msdynci_customerprofile*)
 > - Unified activities (*msdynci_unifiedactivity*)
 > - Segment membership (*msdynci_segmentmembership*)
-> - Customer attribute-based measures (*msdynci_measure*)
+> - Customer attribute measures (*msdynci_customermeasure*)
 > - Enrichment data (*msdynci_enrichment*)
 > - Prediction model output (*msdynci_prediction*)
 >
