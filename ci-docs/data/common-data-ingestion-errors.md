@@ -230,7 +230,7 @@ The datetime fields in the table aren't in ISO 8601 or en-US formats. The defaul
 
 ## Common reasons for ingestion errors or corrupt data with Power Query
 
-### Data Time Values parsing error or Parsed incorrectly
+### Data Time Values parsing error or Parsed incorrectly:
 
 The most common data type mismatch occurs when a date field isn't set to the correct date format. This can be caused by either (a) source data are not formatted correctly OR (b) Incorrect locale is used to parse the data during the ingestion.
 To fix first issue, the data can be fixed at the source and re-ingested. For latter problem, locale can be adjusted in the Power Query transformations. Here is an example:
