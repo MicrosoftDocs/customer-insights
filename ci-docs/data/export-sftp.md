@@ -14,6 +14,8 @@ ms.author: philk
 
 Use your customer data in third-party applications by exporting them to a Secure File Transfer Protocol (SFTP) location.
 
+[!INCLUDE [data-out-azure-synapse-link](includes/data-out-azure-synapse-link.md)]
+
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWO94X]
 
 ## Prerequisites
@@ -71,7 +73,8 @@ Use your customer data in third-party applications by exporting them to a Secure
 1. Choose if you want to export your data **Gzipped** or **Unzipped** and the **field delimiter** for the exported files.
 
 1. Select the tables, for example segments, that you want to export.
-2. Choose **Next** and determine if you want to send all fields in the selected tables. By default, all fields in your selected tables are exported. Clear the checkox next to the fields you don't want to export.
+
+1. Choose **Next** and determine if you want to send all fields in the selected tables. By default, all fields in your selected tables are exported. Clear the checkox next to the fields you don't want to export.
 
    > [!NOTE]
    > Each selected table is split into a maximum of five output files when exported.
