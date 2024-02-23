@@ -236,9 +236,11 @@ The most common data type mismatch occurs when a date field isn't set to the cor
 To fix first issue, the data can be fixed at the source and re-ingested. For latter problem, locale can be adjusted in the Power Query transformations. Here is an example:
 
 In below example, source data are formatted as “MM/DD/YYY” such as English (United States) while the default locale used to parse the data during ingestion used “DD/MM/YYY” such as English(United Kingdom) causing the Dec 8th,2023 to be ingested as “Aug 12th,2023”.  
+
 :::image type="content" source="media/PQO_Locale_Issue" alt-text="Change data type with locale in PQO":::
 
 To fix this issue, ensure to Change type of all date time fields to use correct Locale using Change Type.
+
 :::image type="content" source="media/ChangeType_In_PQO.jpg" alt-text="Date time value default parsing":::
 
 ### Symptoms of this issue:
