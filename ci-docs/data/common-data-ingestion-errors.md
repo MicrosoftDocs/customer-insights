@@ -1,6 +1,6 @@
 ---
 title: "Common reasons for ingestion errors or corrupt data"
-description: "Understand some common reasons for ingestion errors or corrupt data when using Data Lake Storage or Power Query"
+description: "Understand some common reasons for ingestion errors or corrupt data when using Data Lake Storage or Power Query."
 ms.date: 02/23/2024
 ms.topic: conceptual
 author: mukeshpo
@@ -27,7 +27,7 @@ During data ingestion, some of the most common reasons a record might be conside
 
 ## Schema or data type mismatch
 
-If the data doesn't conform to the schema, the ingestion process completes with errors. Correct either the source data or the schema and re-ingest the data.
+If the data doesn't conform to the schema, the ingestion process completes with errors. Correct either the source data or the schema and reingest the data.
 
 ## Partition files are missing
 
@@ -115,27 +115,19 @@ The datetime fields in the table aren't in ISO 8601 or en-US formats. The defaul
 
 ### Data Time Values parsing error or parsed incorrectly
 
-The most common data type mismatch occurs when a date field isn't set to the correct date format. This can be caused by either: source data not formatted correctly OR incorrect locale used to parse the data during the ingestion. To fix an incorrect format, fix the data at the source and re-ingest. To fix incorrect locale, adjust the locale in the Power Query transformations. 
+The most common data type mismatch occurs when a date field isn't set to the correct date format. This mismatch can be caused by either: the source data isn't formatted correctly OR the locale is incorrect. To fix an incorrect format, update the data at the source and reingest. To fix an incorrect locale, adjust the locale in the Power Query transformations. For example:
 
-For example:
-
-The source data is formatted as “MM/DD/YYY” while the default locale used to parse the data during ingestion uses “DD/MM/YYY” causing Dec 8th, 2023 to be ingested as “Aug 12th, 2023”.  
-
-![ChangeType_In_PQO](https://github.com/MicrosoftDocs/customer-insights-pr/assets/98359363/df9c4b5c-427c-4e3c-829f-c4cb26f60be9)
+The source data is formatted as "MM/DD/YYY" while the default locale used to parse the data during ingestion uses "DD/MM/YYY" causing Dec 8, 2023 to be ingested as "Aug 12, 2023".  
 
 :::image type="content" source="media/PQO_Locale_Issue.jpg" alt-text="Change data type with locale in PQO":::
 
 To fix this issue, change the type of all date time fields to use the correct locale using **Change type** > **Using locale**.
 
-
-![PQO_Locale_Issue](https://github.com/MicrosoftDocs/customer-insights-pr/assets/98359363/c5ff6fe6-b7e9-408f-99ff-46a26cc8778b)
-
-
 :::image type="content" source="media/ChangeType_In_PQO.jpg" alt-text="Date time value default parsing":::
 
 Symptoms of incorrect locale include:
- - When the source data can't be parsed by the locale used then an ingestion failure might occur. For example: 29/08/2023 is parsed with MM/DD/YYYY, it fails as it can't parse month 29.
- - When the source data is parsed successfully using an incorrect locale, then the date time values become incorrect. For example: Dec 8, 2023 is ingested as Aug 12, 2023.
+ - When the source data can't be parsed by the locale used causing an ingestion failure. For example: 29/08/2023 is parsed with MM/DD/YYYY, it fails as it can't parse month 29.
+ - When the source data is parsed successfully using an incorrect locale, but the date time values become incorrect. For example: Dec 8, 2023 is ingested as Aug 12, 2023.
 
 Learn more: [Document or project locale](/power-query/data-types#document-or-project-locale).
 
