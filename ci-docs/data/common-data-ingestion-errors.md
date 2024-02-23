@@ -121,9 +121,15 @@ For example:
 
 The source data is formatted as “MM/DD/YYY” while the default locale used to parse the data during ingestion uses “DD/MM/YYY” causing Dec 8th, 2023 to be ingested as “Aug 12th, 2023”.  
 
+![ChangeType_In_PQO](https://github.com/MicrosoftDocs/customer-insights-pr/assets/98359363/df9c4b5c-427c-4e3c-829f-c4cb26f60be9)
+
 :::image type="content" source="media/PQO_Locale_Issue.jpg" alt-text="Change data type with locale in PQO":::
 
 To fix this issue, change the type of all date time fields to use the correct locale using **Change type** > **Using locale**.
+
+
+![PQO_Locale_Issue](https://github.com/MicrosoftDocs/customer-insights-pr/assets/98359363/c5ff6fe6-b7e9-408f-99ff-46a26cc8778b)
+
 
 :::image type="content" source="media/ChangeType_In_PQO.jpg" alt-text="Date time value default parsing":::
 
