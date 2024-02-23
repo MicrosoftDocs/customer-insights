@@ -14,8 +14,7 @@ ms.author: nikeller
 
 Store your data from Dynamics 365 Customer Insights - Data in a Data Lake Storage Gen2 account or use it to transfer your data to other applications.
 
-> [!TIP]
-> To achieve the fastest data sync to Azure Data Lake Storage Gen2 we recommend the [Dataverse data linking service](/power-apps/maker/data-platform/azure-synapse-link-data-lake). It's the ideal solution for [Customer Insights tables in Dataverse](tables.md#customer-insights---data-tables-in-dataverse).
+[!INCLUDE [data-out-azure-synapse-link](includes/data-out-azure-synapse-link.md)]
 
 ## Prerequisites
 
