@@ -28,6 +28,8 @@ There are two main types of exports:
   - Use [Power BI with Dataverse data](/power-apps/maker/data-platform/use-powerbi-dataverse). It ensures you benefit from the [integration with Dataverse](integrate-d365-apps.md).
   - Get insights in Microsoft Fabric with the [Dataverse link to Fabric and Microsoft OneLake](/power-apps/maker/data-platform/azure-synapse-link-view-in-fabric).
 
+  [!INCLUDE [data-out-azure-synapse-link](includes/data-out-azure-synapse-link.md)]
+
 ### Segment exports
 
 Segments are built on the *unified customer profile* table. Every segment that meets the requirements of the target systems (for example, an email address) can get exported. When defining a segment you often want to ensure it's exported as well, to do so you can use the **Manage exports** menu option.
