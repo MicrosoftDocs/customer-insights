@@ -51,10 +51,10 @@
          href: connect-dataverse.md
        - name: Add a data source via Power Query connectors
          href: connect-power-query.md
-    - name: Manage existing data sources
-      href: data-sources-manage.md
     - name: Update a CDM data source to use Delta tables
       href: convert-datalake-to-deltalake.md
+    - name: Manage existing data sources
+      href: data-sources-manage.md
     - name: Enrichment for data sources
       href: data-sources-enrichment.md
     - name: Incremental refresh for data sources
