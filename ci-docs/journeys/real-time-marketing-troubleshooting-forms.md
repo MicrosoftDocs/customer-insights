@@ -48,6 +48,7 @@ Here's how to troubleshoot a failed form submission issue:
 - Temporarily [enable plugin trace logs](/power-apps/developer/data-platform/logging-tracing#enable-trace-logging) Enabling plugin trace logs can impact performance negatively, so make sure to disable them once you're done.
 - Resubmit the form.
 - Check the logs. If there's a plugin-related error, there should be a plugin name and a reason why the plugin crashed. Follow up with the plugin provider or [disable the plugin](https://community.dynamics.com/blogs/post/?postid=33f947e8-a5f8-4cb2-b2d9-45b444c56060)
+  Do not disable microsoft plugins (plugin type name is starting with `Microsoft.Dynamics.Cxp.Forms.`)
 - Check the processes connected to the contact, lead, or other entity you're trying to create through the form submission. Try disabling the process that's interfering with the contact creation.
 
 :::image type="content" source="media/dynamics-processes.png" alt-text="Screenshot of processes list.":::
