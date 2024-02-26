@@ -1,6 +1,6 @@
 - The Azure Data Lake Storage must be in the same tenant and Azure region as Customer Insights - Data.
 
-- The Customer Insights - Data service principal must have Storage Blob Data Contributor permissions to access the storage account. For more information, see [Grant permissions to the service principal to access the storage account](connect-service-principal.md#grant-permissions-to-the-service-principal-to-access-the-storage-account).
+- The Customer Insights - Data service principal must have Storage Blob Data Contributor permissions to access the storage account. For more information, see [Grant permissions to the service principal to access the storage account](../connect-service-principal.md#grant-permissions-to-the-service-principal-to-access-the-storage-account).
 
 - The user that sets up or updates the data source needs at least Storage Blob Data Reader permissions on the Azure Data Lake Storage account.
 
