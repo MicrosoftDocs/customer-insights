@@ -1,7 +1,7 @@
 ---
 title: Use calculated measures in Dataverse-based applications
 description: Write one-dimensional measures to separate tables in Dataverse to use them in other applications.
-ms.date: 12/13/2023
+ms.date: 02/27/2024
 ms.topic: how-to
 author: JimsonChalissery
 ms.author: jimsonc
@@ -12,6 +12,10 @@ ms.custom: bap-template
 # Use calculated measures in Customer Insights - Journeys and other Dataverse-based applications
 
 Dynamics 365 Customer Insights lets you create highly personalized experiences for your customers by [using the unified profile of your customers in journeys](marketing-get-started.md). You can further augment these experiences with [customer measures](measures.md) to tailor journeys, deliver personalized offers, and content based on loyalty points, lifetime value, and other calculated measures. Further, you can use simple measures in Power Apps built on top of Microsoft Dataverse.
+
+## Limitation
+
+- Up to 10 million rows in a measure. For more than 10 million rows, break up the measure into multiple parts.
 
 ## Create a calculated measure table
 
