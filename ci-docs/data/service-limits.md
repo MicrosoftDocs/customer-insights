@@ -17,7 +17,7 @@ ms.reviewer: mhart
 | Area  | Limits  | Notes |
 |-------------|---------------------------------------------------------------------|---------------------------------------------------------------------|
 | Segments and measures | 500  | The total number of active [segments](segments.md) and active [measures](measures.md) combined can't exceed 500 without potential performance degradation. For more information, see [Manage the number of active segments](segments.md#manage-the-number-of-active-segments) or [active measures](measures.md#manage-the-number-of-active-measures).|
-| Calculated measures | 10 million rows in a measure. | For calculated measures containing more than 10 million rows, break up the measure into multiple parts. |
+| Calculated measures | 10 million rows in a measure. | For [calculated measures](dataverse-measures.md) containing more than 10 million rows, break up the measure into multiple parts. |
 | Relationships | 20 levels of depth on relationships in table paths. | When creating [segments](segments.md) or [measures](measures.md) using the builder interface, table paths can have up to 20 relationship hops between the start table and the target table.  |
 |Data ingestion| Concurrent evaluations for Power Query data sources are limited. | Customer Insights - Data has the same [refresh limits like Dataflows in PowerBI.com](/power-query/power-query-online-limits#refresh-limits). |
 
