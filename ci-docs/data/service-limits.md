@@ -1,7 +1,7 @@
 ---
 title: Service limits in Dynamics 365 Customer Insights - Data
 description: Understand limits and restrictions in the Customer Insights - Data SaaS service.
-ms.date: 02/27/2024
+ms.date: 02/28/2024
 ms.topic: conceptual
 author: JimsonChalissery
 ms.author: jimsonc
@@ -17,7 +17,7 @@ ms.reviewer: mhart
 | Area  | Limits  | Notes |
 |-------------|---------------------------------------------------------------------|---------------------------------------------------------------------|
 | Segments and measures | 500  | The total number of active [segments](segments.md) and active [measures](measures.md) combined can't exceed 500 without potential performance degradation. For more information, see [Manage the number of active segments](segments.md#manage-the-number-of-active-segments) or [active measures](measures.md#manage-the-number-of-active-measures).|
-| Calculated measures | 10 million rows in a measure. | For [calculated measures](dataverse-measures.md) containing more than 10 million rows, break up the measure into multiple parts. |
+| Calculated measures | 10 million rows in a measure copied to Dataverse. | If you want to create a [calculated measure](dataverse-measures.md) that is stored in Dataverse, break up the measure into multiple parts if it contains more than 10 million rows. |
 | Relationships | 20 levels of depth on relationships in table paths. | When creating [segments](segments.md) or [measures](measures.md) using the builder interface, table paths can have up to 20 relationship hops between the start table and the target table.  |
 |Data ingestion| Concurrent evaluations for Power Query data sources are limited. | Customer Insights - Data has the same [refresh limits like Dataflows in PowerBI.com](/power-query/power-query-online-limits#refresh-limits). |
 

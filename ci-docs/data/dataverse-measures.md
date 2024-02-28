@@ -15,7 +15,7 @@ Dynamics 365 Customer Insights lets you create highly personalized experiences f
 
 ## Limitation
 
-- Up to 10 million rows in a measure. For more than 10 million rows, break up the measure into multiple parts.
+- Up to 10 million rows in a calculated measure. For more than 10 million rows, break up the measure into multiple parts.
 
 ## Create a calculated measure table
 
