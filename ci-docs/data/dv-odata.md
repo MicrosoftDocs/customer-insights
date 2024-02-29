@@ -47,6 +47,8 @@ Modify the query samples to make them work on the target environments:
 
 - {SegmentName}: String with the output table name of a segment. For example: `Male_under_40`.
 
+- {CookieId}: Identifier for each website visitor. This is automatically generated when using the web tracking script (add link). For example: `3f43317e-d1ef-4cd3-9917-2d3342111d1a`
+
 ### Customer
 
 Sample queries for the *CustomerProfile* table and segment memberships.
@@ -63,6 +65,17 @@ Sample queries for the *CustomerProfile* table and segment memberships.
 |Get all customers that are members of a segment| `{serviceRoot}/msdynci_segmentmemberships?$filter=contains(msdynci_segments,'\"{SegmentName}\"')&$select=msdynci_customerid`  |          |
 |Get a customer if they're a member of a segment| `{serviceRoot}/msdynci_segmentmemberships?$filter=contains(msdynci_segments,'\"{SegmentName}\"') and msdynci_customerid eq '{CID}'&$select=msdynci_customerid`  |   |
 |Get all segment memberships of a customer| `{serviceRoot}/msdynci_segmentmemberships?$filter=msdynci_customerid eq '{CID}'&$select=msdynci_segments`  |      |
+
+### Web Personalization
+
+Sample queries to personalize your website (add link to new web personalization page) based on the CookieId. The response returns both known and unknown customers (add link to new unknown and known profile section on existing page). Read more: 
+
+|Query type |Example  | Note  |
+|---------|---------|---------|
+|Get a customer by CookieId | `{serviceRoot}/msdynci_personalizationprofiles(cookieid='{cookieId}')`  |          |
+|Get a customer by CookieId and include Segments, Measures, Activities | `{serviceRoot}/msdynci_personalizationprofiles(cookieid='{cookieId}',include=['segmentmembership','measures','unifiedactivity'])`  |    |
+|Get recent (last 10) page views of a customer by CookieId | `{serviceRoot}/msdynci_pageviews(cookieid='{cookieId}',top=10)`  |  This can be changed to return up to 200 recent page views  |
+|Get recent (last 10) page clicks of a customer by CookieId | `{serviceRoot}/msdynci_pageclicks(cookieid='{cookieId}',top=10)`  |  This can be changed to return up to 200 recent page clicks  |
 
 ### Unified activity
 
