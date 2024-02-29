@@ -31,6 +31,11 @@ Select any of the following actions:
   > [!NOTE]
   > To use search and filter, an admin must configure the searchable attributes and define the filterable fields using the search & filter index.
 
+## Known and Unknown customers
+Customer Insights - Data supports two types of profile types:
+1. Known Customers: These are profiles that have a known identifier (such as emailId, phone number, loyaltyId, etc.) and are created using the [Unification process](data-unification.md)
+2. Unknown Customers: These are profiles that don't have a known identifier, but instead are only identified via an unknown identifier (such as cookieId) and are automatically created by the web tracking script (add link to set up web tracking section on new RT web personalization page) when an unauthenticated customer visits your website. Unlike known profiles, unknown profiles expire after 7 days of inactivity unless converted to a known profile via Unkown to known (add link to unknown to known section on new RT web personalization page). Unknown profiles are also free, which means they don't count against your profiles used for billing. 
+
 ## Search for customers
 
 To search for customers, enter terms or phrases in the search box **Search customers**. The searchable columns are defined by the admin and come from the unified *Customer* table. Search uses Azure cognitive search (ACS), which looks for matches in columns. However, only columns of data type string are included in search.
