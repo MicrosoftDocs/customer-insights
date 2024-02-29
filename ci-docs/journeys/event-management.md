@@ -1,7 +1,7 @@
 ---
 title: Plan, publicize, and collect registrations for events
 description: An overview of event-management features (including planning, logistics, sponsors, speakers, promotion, and registration) in  Dynamics 365 Customer Insights - Journeys.
-ms.date: 11/07/2023
+ms.date: 12/21/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -13,15 +13,13 @@ search.audienceType:
 
 # Event planning and management
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
-Live events and webinars are a vital sales and marketing channel. But events and webinars can be complex to arrange, execute, and follow up on. The Dynamics 365 Customer Insights - Journeys event management feature helps you every step of the way, from initial planning and budgeting through promotion and publication, attendee registration, webinar broadcasting, final analytics, lead generation, and evaluation of ROI.
+Live events and webinars are vital sales and marketing channels. But events and webinars can be complex to arrange, execute, and follow up on. The Dynamics 365 Customer Insights - Journeys event management feature helps you every step of the way, from initial planning and budgeting through promotion and publication, attendee registration, webinar broadcasting, final analytics, lead generation, and evaluation of ROI.
 
 Key event-management features include:
 
 - Seamless contact, registration, and attendance management features in one system.
 - Business processes that guide users through the essential steps of event planning.
-- Session, session track, and speaker management.
+- Session, session tracking, and speaker management.
 - Managing attendee passes to grant access to specific sessions or tracks.
 - Venue management for tracking buildings, rooms, and room layouts.
 - Guest logistics for registering hotels, room allocation, and reservations.
@@ -42,8 +40,8 @@ Customer Insights - Journeys contains a subset of outbound event management feat
 |     Feature     |     Outbound marketing    |     Customer Insights - Journeys    |
 |---|---|---|
 |     Single session event    |     [Yes](set-up-event-outbound.md)    |     [Yes](set-up-event.md)    |
-|     Multi-session event          |     [Yes](set-up-event-outbound.md#manage-event-sessions-and-speakers)    |     Yes    |
-|     Session-level registration          |     [Yes](set-up-event-outbound.md#manage-event-sessions-and-speakers)    |     Planned    |
+|     Multi-session event          |     [Yes](set-up-event-outbound.md#manage-event-sessions-and-speakers)    |     [Yes](set-up-event.md)    |
+|     Session-level registration          |     [Yes](set-up-event-outbound.md#manage-event-sessions-and-speakers)    |     [Yes](real-time-journeys-event-session.md)    |
 |     Recurring event    |     [Yes](event-recurring-outbound.md)    |     Planned    |
 |     Event level templates    |     [Yes](event-templates-outbound.md)    |     Planned    |
 |     Sessions, session tracks, speaker management    |     [Yes](set-up-event-outbound.md)    |     [Yes](set-up-event.md)    |
@@ -51,7 +49,8 @@ Customer Insights - Journeys contains a subset of outbound event management feat
 |     Tracking sponsors    |     [Yes](manage-event-sponsorships-outbound.md)    |     [Yes](manage-event-sponsorships.md)    |
 |     Creating Teams meetings/live events/webinars    |     [Yes](teams-webinar-outbound.md)    |     [Yes](teams-webinar.md)    |
 |     Support for On24 and other generic webinar providers      |     [Yes](set-up-webinar-outbound.md)    |     Planned    |
-|     Using marketing forms for registrations    |     [Yes](event-forms.md)    |     [Yes](real-time-marketing-form-create.md)   |
+|     Using marketing forms for registrations    |     [Yes](event-forms-outbound.md)    |     [Yes](real-time-marketing-form-create.md)   |
+|     Event portal landing page    |    [Yes](set-up-event-portal-outbound.md)    |    Planned    |                     
 |     Waitlist    |     [Yes](event-waitlist-outbound.md)    |     Planned    |
 |     Payments    |     [Yes](event-payment-gateway-outbound.md)    |     Planned    |
 |     Lead entity registration    |     [Yes](set-up-event-outbound.md#the-website-and-form-tab)    |     Planned    |

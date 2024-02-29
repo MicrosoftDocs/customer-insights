@@ -13,8 +13,6 @@ search.audienceType:
 
 # Purchase a license directly from a trial
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
 You can now purchase a Dynamics 365 Customer Insights license directly from a trial. Tenant admins can directly purchase the Customer Insights environment SKUs (Dynamics 365 Customer Insights App or Dynamics 365 Customer Insights Attach) and convert the trial environment to a paid environment in one streamlined workflow.
 
 This article details who can purchase a license within the app, how can they purchase a license, and what happens after the purchase.

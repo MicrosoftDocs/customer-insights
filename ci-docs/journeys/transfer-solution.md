@@ -13,8 +13,6 @@ search.audienceType:
 
 # Transfer customizations between environments using solution export and import
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
 Dynamics 365 is highly customizable. You can use its online tools to modify or create fields, entities, business processes, and more. Usually, you'll do your customization work on a sandbox environment, test them, and then transfer the final customizations to your production environments when they're ready. Best practices recommend that you proceed as follows:
 
 1. [Create a copy](copy-or-restore.md#copy-a-customer-insights---journeys-environment-to-another-environment) of your current production environment onto a sandbox environment where you can work without affecting your ongoing operations.

@@ -14,8 +14,6 @@ ms.custom: bap-template
 
 [!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
-
 ## Customer Insights - Data with Customer Insights - Journeys
 
 Dynamics 365 Customer Insights - Data and Customer Insights - Journeys are tightly integrated for a streamlined activation journey.

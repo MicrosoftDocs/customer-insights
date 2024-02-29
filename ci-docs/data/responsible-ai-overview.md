@@ -8,6 +8,7 @@ ms.topic: article
 author: m-hartmann
 ms.author: mhart
 ms.reviewer: radsay01
+ms.collection: bap-ai-copilot 
 ---
 
 # Responsible AI FAQs for Dynamics 365 Customer Insights - Data
@@ -20,3 +21,7 @@ ms.reviewer: radsay01
 - [Dialog with data](faqs-dialog-data.md)
 - [Environment status summary](faqs-environment-status.md)
 - [Segment creation](faqs-segment-creation.md)
+
+[!INCLUDE [copilot-availability](includes/copilot-availability.md)]
+
+[!INCLUDE [footer-banner](includes/footer-banner.md)]

@@ -7,6 +7,7 @@ ms.topic: how-to
 author: JimsonChalissery
 ms.author: jimsonc
 ms.custom: bap-template
+ms.collection: bap-ai-copilot 
 ---
 
 # Create segments with Copilot for Customer Insights - Data (preview)
@@ -37,6 +38,8 @@ Copilot provides personalized, suggested prompts based on data in your environme
 :::image type="content" source="media/segment-copilot-result.png" alt-text="Screenshot of a segment rule created by Copilot in Customer Insights - Data.":::
 
 If the resulting segment contains multiple [relationship paths](relationships.md), it uses the shortest path by default. **Edit** the segment to change the relationship path.  
+
+[!INCLUDE [copilot-availability](includes/copilot-availability.md)]
 
 ## Next steps
 

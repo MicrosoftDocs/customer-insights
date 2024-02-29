@@ -10,8 +10,6 @@ ms.collection: get-started
 
 # Purchase a license of Dynamics 365 Customer Insights
 
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
-
 To purchase Dynamics 365 Customer Insights, see our contact options on the [Dynamics 365 Customer Insights website](https://dynamics.microsoft.com/ai/customer-insights/).
 
 If you're looking to try the service and the features, see [Set up a trial environment](trial-signup.md).

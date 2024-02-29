@@ -13,8 +13,6 @@ search.audienceType:
 
 # Invite, register, and house event attendees
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
 After your event is fully modeled in Dynamics 365 Customer Insights - Journeys, you're ready to start promoting it. The system provides many tools to help you do this.
 
 ## Invite contacts to your events
@@ -31,7 +29,7 @@ Event registration enables attendees to sign up for your event and reserve their
 
 Customer Insights - Journeys users can register attendees manually by creating event registrations, session registrations, and pass assignments directly in the app. This lets you provide phone-based registration, for example. Manual registrations also enable users to bypass the waitlist if needed.
 
-Each registration results in an event-registration record, which pulls together a registrant's profile, their passes, the sessions they'll attend, and, eventually, the sessions they did attend. Each registration record has a unique ID, which the system encodes into a QR code that you can embed in a registration confirmation email sent to each registrant. You'll also find the QR code embedded in each registration record so you can use it in other contexts, such as to print badges to be handed out at the event.
+Each registration results in an event-registration record, which pulls together a registrant's profile, their passes, the sessions they'll attend, and, eventually, the sessions they did attend. Each registration record has a unique ID, which the system encodes into a QR code that you can embed in a registration confirmation email sent to each registrant. You'll also find the QR code embedded in each registration record so you can use it in other contexts, such as to print badges to be handed out at the event. Learn more: [Use QR codes for event registration, links to content, or URLs](email-QR-code.md)
 
 At the event, event organizers can scan the QR code presented by each attendee to capture the registration ID, which can then be used to verify the registration and/or register attendance at each event or session. The QR code provides only a registration ID, so event organizers must do some custom development to implement the verification, check-in, and registration features they need. One way to do this could be by creating a custom smartphone app.
 

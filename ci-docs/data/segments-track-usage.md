@@ -11,8 +11,6 @@ ms.custom: bap-template
 
 # Track usage of a segment
 
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
-
 If you use segments in apps which are based on the same Microsoft Dataverse organization that is connected with Dynamics 365 Customer Insights - Data, you can track the usage of a segment. For [Customer Insights - Data segments used in customer journeys](/dynamics365/marketing/real-time-marketing-ci-profile), the system informs you about the usage of that segment.
 
 ## Identify the dependencies of a tracked segment

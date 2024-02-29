@@ -7,11 +7,10 @@ ms.topic: how-to
 author: joytaylor
 ms.author: joytaylor
 ms.custom: bap-template 
+ms.collection: bap-ai-copilot 
 ---
 
 # Predict customer lifetime value (CLV)
-
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
 Predict potential value (revenue) that individual active customers will bring in to your business through a defined future time period. This prediction helps you:
 

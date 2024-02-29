@@ -7,13 +7,12 @@ ms.topic: how-to
 author: nikeller
 ms.author: nikeller
 ms.custom: bap-template
+ms.collection: bap-ai-copilot 
 ---
 
 # Get answers to questions about capabilities from Copilot (preview)
 
 [!INCLUDE [public-preview-banner](./includes/public-preview-banner.md)]
-
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
 Copilot in Dynamics 365 Customer Insights - Data can help you achieve your goals by answering your questions about the application and its features. You ask questions in natural language about capabilities and Copilot answers it, using the [official documentation](index.yml), [troubleshooting guides](/troubleshoot/dynamics-365/customer-insights/welcome-customer-insights), and blogs from the Microsoft team on how to set up Customer Insights - Data.
 
@@ -42,6 +41,8 @@ While you use Copilot, the previous messages remain in the side pane. You can re
 This conversation history is kept temporarily until you close the Customer Insights - Data app.
 
 To clear the conversation history, select the **Reload** button in the header of the side pane.
+
+[!INCLUDE [copilot-availability](includes/copilot-availability.md)]
 
 ## Next steps
 

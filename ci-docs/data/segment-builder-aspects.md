@@ -11,8 +11,6 @@ ms.custom: bap-template
 
 # Aspects of segment builder
 
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
-
 The following image illustrates the various aspects of the segment builder. It shows a segment that results in a group of customers. The customers ordered goods in a specific time frame and gathered reward points or spent a certain amount of money.
 
 :::image type="content" source="media/segment-builder-overview.png" alt-text="Elements of the segment builder." lightbox="media/segment-builder-overview.png":::

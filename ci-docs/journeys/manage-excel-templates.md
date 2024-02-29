@@ -13,8 +13,6 @@ search.audienceType:
 
 # Create and deploy Excel templates
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
 Microsoft Excel provides powerful ways to analyze and present your Dynamics 365 data. With Excel templates, you can easily create and share your customized analysis with others in your organization.
 
 You can use Excel templates for:

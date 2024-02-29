@@ -13,8 +13,6 @@ search.audienceType:
 
 # Create a static snapshot of a segment
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
 Static lists are an important part of audience management. Static lists allow you to:
 
 1) Create point-in-time campaigns for customer segments that satisfy criteria at the time of segment creation.

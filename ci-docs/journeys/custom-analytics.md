@@ -13,8 +13,6 @@ search.audienceType:
 
 # Prepare for analytic reporting with Power BI
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
 
@@ -88,6 +86,13 @@ for a quick overview of all the data that is available for your marketing analyt
         - Write
         - Delete
         - List
+
+    The following services and resource types should be allowed to have the Power BI report work (when using shared access keys):
+
+    - **Allowed services**: Blob, File, Queue, Table
+    - **Allowed resource types**: Service, Container, Object
+
+    :::image type="content" source="media/custom-analytics-services.png" alt-text="Allowed services and resource types.":::
 
 1. Select **Create** to create the signature. The dialog refreshes to show a **URL** and **Query string**. Select the **Copy** button to copy the **URL** shown here and paste in a temporary text file so you can use it later in this procedure.
 

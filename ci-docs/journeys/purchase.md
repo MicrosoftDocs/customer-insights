@@ -1,7 +1,7 @@
 ---
 title: Purchase Customer Insights
 description: How to purchase Dynamics 365 Customer Insights.
-ms.date: 10/19/2023
+ms.date: 01/26/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -12,8 +12,6 @@ search.audienceType:
 ---
 
 # Purchase Dynamics 365 Customer Insights
-
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 [!INCLUDE [marketing-trial-cta](./includes/marketing-trial-cta.md)]
 
@@ -54,6 +52,10 @@ To determine how much capacity you need, consider the following:
 -	How many total customers does your business have? You might be able to estimate this by counting the unique email addresses or phone numbers in your database. Buy this number of unified people.
 -	For high-volume engagement, how many interactions (email/text message/push notification/custom channel) will you send per month? Divide by 10 to get the number of interacted people you need.
 -	For lower-volume engagement, how many leads, contacts, profiles, or custom entities do you think you engage with on an annual basis?
+
+## Step 3: Sign-up for an SMS provider of your choice
+
+If you plan to use SMS, you must select a provider (such as Azure Communication Services) and create a separate account with that provider. The Customer Insights license doesn't provide phone numbers and SMS delivery services for production use. [See the list of supported providers](real-time-marketing-text-messaging-setup.md) and sign-up for the provider of your choice.
 
 ## Next steps
 

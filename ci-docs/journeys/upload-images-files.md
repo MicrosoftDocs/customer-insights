@@ -1,19 +1,14 @@
 ---
 title: Upload, manage, and use images, files, and videos in online content
 description: How to upload, manage and use images, files, and videos in Dynamics 365 Customer Insights - Journeys.
-ms.date: 11/06/2023
+ms.date: 12/14/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
-search.audienceType: 
-  - admin
-  - customizer
-  - enduser
+ms.collection: bap-ai-copilot
 ---
 
 # Upload, manage, and use images, files, and videos in online content
-
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > Dynamics 365 Customer Insights - Journeys may transfer customer data outside of the selected Azure geographic location when using the following features that use Azure CDN (content delivery network) to operate globally:
@@ -29,7 +24,7 @@ Shareable assets are critical for meaningful and successful customer experiences
 >
 > You'll see an error message if you attempt to upload a file of an unsupported type.
 >
-> The maximum file size is: 
+> The maximum file size is:
 > - 5MB for images
 > - 32MB for documents
 > - 128MB for videos
@@ -46,7 +41,7 @@ You can create a collection of images, videos, and files for later use. To uploa
 > [!div class="mx-imgBorder"]
 > ![upload replace asset](media/upload-new-images-from-library.png "upload replace asset")
 
-You can manually add **tags** when you upload a file so it’s easier to organize and find it later.
+You can manually add **tags** when you upload a file so it’s easier to organize and find it later. Additionally, when you upload an image, AI tagging automatically creates additional tags describing your image. You can always delete or add tags as you see suitable.
 
 ## Edit assets
 
@@ -73,8 +68,7 @@ To add an image, start by dragging an image element onto your design, which posi
 > [!div class="mx-imgBorder"]
 > ![browse images from asset library and use them](media/use-images-from-library.png "browse images from asset library and use them")
 
-To find an image more quickly, try using the **Filter** search bar to look for specific keywords.
-If the image you need isn't there, select **+Upload** to add a new one.
+To find an image more quickly, try using the **Filter** search bar to look for specific keywords. If the image you need isn't there, select **+Upload** to add a new one.
 
 Additionally, the Copilot assistant automatically identifies a selection of images from your library that best complement your content. Quickly and easily choose images that resonate with your audience without having to spend time searching for them.
 
@@ -82,6 +76,7 @@ When you add an image element to your content or need to [link to a file or vide
 
 > [!IMPORTANT]
 > The copilot assistant smart recommendation feature is currently in preview.
+
 ### See also
 
 [Link to documents stored in the asset library](/dynamics365/marketing/real-time-marketing-email#link-to-documents-and-videos-stored-in-the-asset-library)
