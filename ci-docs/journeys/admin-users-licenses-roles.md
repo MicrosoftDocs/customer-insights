@@ -1,7 +1,7 @@
 ---
 title: Manage user accounts, user licenses, and security roles
 description: How to manage user accounts, add licenses to users, and assign security roles in Dynamics 365 Customer Insights - Journeys.
-ms.date: 12/12/2023
+ms.date: 02/28/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -30,7 +30,7 @@ Unlike most Dynamics 365 apps, Customer Insights - Journeys is licensed based on
 
 ### Grant access to users that already have a Dynamics 365 license
 
-Any user who already has a license for any model-driven app in Dynamics 365 can also access Customer Insights - Journeys. All you need to do is [assign them the security roles and privileges](#assign-role) required to access the Customer Insights - Journeys features they need and share the URL to the environment you want them to access. There is no explicit user license assignment required in Microsoft Admin Center the way you must with user or seat based licenses.  
+Any user who already has a license for any model-driven app in Dynamics 365 can also access Customer Insights - Journeys. All you need to do is [assign them the security roles and privileges](#assign-role) required to access the Customer Insights - Journeys features they need and share the URL to the environment you want them to access. There's no explicit user license assignment required in Microsoft Admin Center the way you must with user or seat based licenses.  
 
 ### Grant access to users without a Dynamics 365 license
 
@@ -47,9 +47,9 @@ For Microsoft 365 users that don't have a Dynamics 365 license, you can "purchas
 > [!WARNING]
 > The free Customer Insights (formerly Marketing) user license is intended to only allow user access to the Customer Insights - Journeys in an edge case. It's not intended to allow unlimited user access to custom applications for Sales, Service, or other Dynamics 365 application scenarios. It also does not include any additional entitlements to Dataverse capacity. 
 
-In some edge cases, if the automatic user sync does not work, you can use a $0 User License to force the sync to happen. This is an edge case and only a work around if the automatic sync is not working for some reason. 
+In some edge cases, if the automatic user sync doesn't work, you can use a $0 User License to force the sync to happen. This is an edge case and only a work-around if the automatic sync isn't working for some reason. 
 
-To use the 0$ license work around to sync users for the edge case:
+To use the 0$ license work-around to sync users for the edge case:
 
 1. Sign in to your [Microsoft 365 admin center](https://admin.microsoft.com) using an admin account that has permissions to purchase services and assign licenses.
 
@@ -275,7 +275,7 @@ After deploying Customer Insights - Journeys features, several service users are
 | Cxp Sms Services User | Text message sending |
 | Cxp TeamsEventsIntegration Services User | Teams attach scenarios |
 
-The Customer Insights - Journeys product receives continuous update and enhancements, so it's possible new services (and hence more roles) will be added with along with the upgrades. Service user roles (their privileges for marketing entities) can be modified during upgrades for the same reason.
+The Customer Insights - Journeys product receives continuous update and enhancements, so it's possible that new services (and, hence, more roles) will be added with along with the upgrades. Service user roles (their privileges for marketing entities) can be modified during upgrades for the same reason.
 
 One service user, **# Dynamics Marketing Dataverse Datasource**, is used to impersonate a service that resolves dynamic content. Dynamic content can be defined through placeholders for personalized messages or through data-bound parameter in customer journeys.
 
@@ -283,7 +283,7 @@ One service user, **# Dynamics Marketing Dataverse Datasource**, is used to impe
 
 ### Customer Insights - Journeys field security profiles
 
-After deploying Customer Insights - Journeys features, several Field Security Profiles are created under **Advanced Settings** > **Security** > **Field Security Profiles**. Deleting these profiles will break text messages (SMS) and push notifications flows.
+After deploying Customer Insights - Journeys features, several Field Security Profiles are created under **Advanced Settings** > **Security** > **Field Security Profiles**. Deleting these profiles breaks text messages (SMS) and push notifications flows.
 
 | Customer Insights - Journeys field security role | Customer Insights - Journeys area |
 | ---- | ------- |
