@@ -122,10 +122,6 @@
       href: activities-in-d365-timeline.md
     - name: Use consent management
       href: consent-management.md
-    - name: Use web data for personalization
-      href: unknown-to-known.md
-    - name: Manage unknown customer profiles
-      href: manage-unknown-profiles.md
 
 - name: Copilot in Customer Insights - Data
   items:
