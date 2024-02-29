@@ -30,7 +30,7 @@ Unlike most Dynamics 365 apps, Customer Insights - Journeys is licensed based on
 
 ### Grant access to users that already have a Dynamics 365 license
 
-Any user who already has a license for any model-driven app in Dynamics 365 can also access Customer Insights - Journeys. All you need to do is [assign them the security roles and privileges](#assign-role) required to access the Customer Insights - Journeys features they need and share the URL to the environment you want them to access. There's no explicit user license assignment required in Microsoft Admin Center the way you must with user or seat based licenses.  
+Any user who already has a license for any model-driven app in Dynamics 365 can also access Customer Insights - Journeys. All you need to do is [assign them the security roles and privileges](#assign-role) required to access the Customer Insights - Journeys features they need and share the URL to the environment you want them to access. There's no explicit user license assignment required in Microsoft Admin Center the way you must with user or seat-based licenses.  
 
 ### Grant access to users without a Dynamics 365 license
 
@@ -147,7 +147,7 @@ To create a copy of a role:
 Two features of Customer Insights - Journeys require that users have security roles with unexpected privileges for some entities. These are:
 
 - **To go live with marketing pages, elevated privileges are required for the *website* entity**  
-    The error checker for marketing pages requires full organization-level access to the **Website** entity, which enables the feature to confirm that the page is configured correctly to be published on your Power Apps portal. Therefore, all users that need to check and/or go-live with a marketing page published on a portal must have a security role with the privileges shown in the table and illustration following this list. This doesn't affect captured forms or forms embedded on an external site or CMS system.
+    The error checker for marketing pages requires full organization-level access to the **Website** entity, which enables the feature to confirm that the page is configured correctly to be published on your Power Apps portal. Therefore, all users that need to check and/or go-live with a marketing page published on a portal must have a security role with the privileges shown in the table and illustration following this list. This doesn't affect captured forms or forms embedded on an external site or content management system (CMS).
 
 - **To access assist edit, elevated privileges are required the for the *marketing email dynamic-content metadata* entity**    
     The [personalization feature](dynamic-email-content.md#personalization) enables users to generate dynamic expressions for use in email messages and content settings. The feature requires that the user has elevated access to application metadata, which enables assist edit to present details about database entities and records. Therefore, all users that need to use assist edit must have a security role with elevated access to the **Marketing email dynamic-content metadata** entity, as shown in the table and illustration following this list.
@@ -237,13 +237,13 @@ The system uses this account when performing important internal tasks. Customer 
 
 ### Customer Insights - Journeys service users
 
-After deploying Customer Insights - Journeys features, several service users are created. Deleting these users breaks your deployment.
+After Customer Insights - Journeys features are deployed, several service users are created. Deleting these users breaks your deployment.
 
 | Customer Insights - Journeys service user | Microsoft Entra ID | Customer Insights - Journeys area |
 | ---- | ---- | ------- |
 | Customer Experience Platform PROD | 3e56e0fc-542f-4522-bac1-c7cab1017459 | All other areas not listed explicitly in this table |
 | D365 Dataverse Data | ca179245-7fe3-4d70-a945-09c79f85cf41 | Personalization of messages during customer journey execution |
-| D365 Experimentation | 729028a7-33d3-428b-b7be-0cff66ad5495| Customer journey experimentations |
+| D365 Experimentation | 729028a7-33d3-428b-b7be-0cff66ad5495| Customer journey experimentation |
 | D365 Interactives | c88804dd-52b8-4e23-b62d-f0e38f5cef35 | Handling flows triggered by organic users |
 | D365 Lifecycle Mgmt | c5efd687-df01-42cb-a6b6-391f24349886 | Lifecycle and provisioning scenarios |
 | D365 Native Segments | afc9dd19-c23a-4dc8-9fb7-0ad8cec474ff | Segmentation |
@@ -272,7 +272,7 @@ After deploying Customer Insights - Journeys features, several service users are
 | Cxp PushNotification Services User | Push notifications |
 | Cxp Segmentation Services User | Segmentation |
 | Cxp Services User | Shared scenarios |
-| Cxp Sms Services User | Text message sending |
+| Cxp SMS Services User | Text message sending |
 | Cxp TeamsEventsIntegration Services User | Teams attach scenarios |
 
 The Customer Insights - Journeys product receives continuous update and enhancements, so it's possible that new services (and, hence, more roles) will be added with along with the upgrades. Service user roles (their privileges for marketing entities) can be modified during upgrades for the same reason.
@@ -283,7 +283,7 @@ One service user, **# Dynamics Marketing Dataverse Datasource**, is used to impe
 
 ### Customer Insights - Journeys field security profiles
 
-After deploying Customer Insights - Journeys features, several Field Security Profiles are created under **Advanced Settings** > **Security** > **Field Security Profiles**. Deleting these profiles breaks text messages (SMS) and push notifications flows.
+After deploying Customer Insights - Journeys features, several Field Security Profiles are created under **Advanced Settings** > **Security** > **Field Security Profiles**. Deleting these profiles breaks text message (SMS) and push notification flows.
 
 | Customer Insights - Journeys field security role | Customer Insights - Journeys area |
 | ---- | ------- |
