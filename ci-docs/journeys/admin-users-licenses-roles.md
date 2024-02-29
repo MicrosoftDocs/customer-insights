@@ -26,11 +26,11 @@ Read this article to learn how to work with user accounts, user licenses, and se
 
 Like most model-driven apps in Dynamics 365 (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Customer Insights - Journeys, and Dynamics 365 Project Service Automation), Customer Insights - Journeys integrates with the user management and licensing features of the Microsoft 365 admin center. To get started, each user who requires access to Customer Insights - Journeys must have a user account on your Microsoft 365 tenant. More information: [Add users individually or in bulk to Microsoft 365](/office365/admin/add-users/add-users)
 
-Unlike most Dynamics 365 apps, Customer Insights - Journeys is licensed per instance (also based on certain quotas, such as the number of Customer Insights - Journeys contacts and monthly email messages) but it isn't licensed per seat, which means that you can add as many users to each Customer Insights - Journeys instance as you like for no extra charge because Customer Insights - Journeys user licenses are free.
+Unlike most Dynamics 365 apps, Customer Insights - Journeys is licensed based on capacity and not based on users (also called seats) which means that you can add as many users to each Customer Insights - Journeys instance as you like for no extra charge. Any user with an account on your Microsoft 365 tenant can access the Customer Insights - Journeys application if you share the environment URL with them. You can restrict access by setting up security groups. 
 
 ### Grant access to users that already have a Dynamics 365 license
 
-Any user who already has a license for any model-driven app in Dynamics 365 can also access Customer Insights - Journeys without requiring extra licenses. All you need to do is [assign them the security roles and privileges](#assign-role) required to access the Customer Insights - Journeys features they need.  
+Any user who already has a license for any model-driven app in Dynamics 365 can also access Customer Insights - Journeys. All you need to do is [assign them the security roles and privileges](#assign-role) required to access the Customer Insights - Journeys features they need and share the URL to the environment you want them to access. There is no explicit user license assignment required in Microsoft Admin Center the way you must with user or seat based licenses.  
 
 ### Grant access to users without a Dynamics 365 license
 
@@ -45,9 +45,11 @@ For Microsoft 365 users that don't have a Dynamics 365 license, you can "purchas
 > If you have a [self-service Customer Insights - Journeys license](direct-purchase.md), your tenant admin must assign users to your license before you can assign them roles. Contact your tenant admin and have them add users to your license.
 
 > [!WARNING]
-> The free Customer Insights (formerly Marketing) user license is intended to only allow user access to the Customer Insights - Journeys and Customer Insights - Data applications. It's not intended to allow unlimited user access to custom applications for Sales, Service, or other Dynamics 365 application scenarios.
+> The free Customer Insights (formerly Marketing) user license is intended to only allow user access to the Customer Insights - Journeys in an edge case. It's not intended to allow unlimited user access to custom applications for Sales, Service, or other Dynamics 365 application scenarios. It also does not include any additional entitlements to Dataverse capacity. 
 
-To purchase and assign a free Customer Insights - Journeys user license:
+In some edge cases, if the automatic user sync does not work, you can use a $0 User License to force the sync to happen. This is an edge case and only a work around if the automatic sync is not working for some reason. 
+
+To use the 0$ license work around to sync users for the edge case:
 
 1. Sign in to your [Microsoft 365 admin center](https://admin.microsoft.com) using an admin account that has permissions to purchase services and assign licenses.
 
