@@ -1,7 +1,7 @@
 ---
 title: "Dataverse APIs for Customer Insights - Data"
 description: "Overview and examples of Dataverse Open Data Protocol (OData) APIs to query for data."
-ms.date: 09/01/2023
+ms.date: 02/29/2024
 ms.topic: conceptual
 author: srivas15
 ms.author: shsri
@@ -45,7 +45,7 @@ Modify the query samples to make them work on the target environments:
 
 - {SegmentName}: String with the output table name of a segment. For example: `Male_under_40`.
 
-- {CookieId}: Identifier for each website visitor. This is automatically generated when using the web tracking script (add link). For example: `3f43317e-d1ef-4cd3-9917-2d3342111d1a`
+- {CookieId}: Identifier for each website visitor. This is automatically generated when using the [web tracking script](real-time-web-personalization.md). For example: `3f43317e-d1ef-4cd3-9917-2d3342111d1a`.
 
 ### Customer
 
