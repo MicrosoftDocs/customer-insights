@@ -120,12 +120,6 @@ string cookieId = Request.Cookies["_msci"]; //CI-D cookie
 ```
 This cookie can then be used as an identifier to query any of the Customer Insights - Data APIs. 
 
-
-## Creating segments and measures
-
-
-## Common ways to debug
-
 - [No-code web personalization using Optimizely](optimizely-integration.md)
 
 - Pro-code web personalization using APIs
