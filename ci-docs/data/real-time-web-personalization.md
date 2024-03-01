@@ -11,15 +11,17 @@ ms.custom: bap-template
 
 # Set up real-time web personalization
 
-Let Customer Insights - Data automatically create unknown profiles for your visitors and track their website interactions (page views and page clicks) in real time. Set up web tracking, merge customers with their known profiles when they authenticate on your website. Then, personalize your customers web experience.
+Let Customer Insights - Data automatically create unknown profiles for your visitors and track their website interactions (page views and page clicks) in real time. Set up web tracking, merge customers with their known profiles when they authenticate on your website, and then personalize your customers web experience.
 
 Learn more: [Real-time web personalization overview](real-time-web-personalization-overview.md).
 
 ## Prerequisites
 
-- Source data that contains customer demographics are [ingested](data-sources.md) and [unified](data-unification.md). Customer Insights - Data uses the primary key from the unified customer profile to identify your website visitors. The primary key should be a field that uniquely identifies a customer such as  email, phone, or loyaltyId.
+- Source data that contains your website customers are [ingested](data-sources.md) and [unified](data-unification.md). Customer Insights - Data uses the primary key from the unified customer profile to identify your website visitors. The primary key should be a field that uniquely identifies a customer such as  email, phone, or loyaltyId.
 
-## Set up Web Tracking
+  For example, in Customer Insights - Data you have a source table called **LoyaltySignUps** with **LoyaltyId** as the primary key that uniquely identifies a customer in that table.
+
+## Set up web tracking
 
 1. Sign in to Customer Insights - Data and select **Web tracking & personalization**.
 
@@ -27,7 +29,7 @@ Learn more: [Real-time web personalization overview](real-time-web-personalizati
 
    <!--- Sharoon, when and why would they select Save? --->
 
-1. Select the table that the tracking script should use to identify your customers when they [authenticate](#authenticate-unknown-customers-and-convert-to-known).
+1. Select the table that the tracking script should use to identify your customers when they [authenticate](#authenticate-unknown-customers-and-merge-them-to-known).
 
 1. **Copy** the tracking script and paste it in the `<head>` tag of your website.
 
@@ -45,9 +47,7 @@ Learn more: [Real-time web personalization overview](real-time-web-personalizati
 
 ## Authenticate unknown customers and merge them to known
 
-To have Customer Insights - Data automatically merge an [unknown profile](real-time-web-personalization-overview.md#unknown-customer-profiles) into a known profile, select the source  table you use to identify your website customers. This source table has been ingested and unified.
-
-For example, in Customer Insights - Data you have a source table called **LoyaltySignUps** with **LoyaltyId** as the primary key that uniquely identifies a customer in that table. To merge unknown profiles to known, use the 'setUser' function to give Customer Insights - Data the **LoyaltyId** when customers authenticate on your website.
+To have Customer Insights - Data automatically merge an [unknown profile](real-time-web-personalization-overview.md#unknown-customer-profiles) into a known profile, select the source  table you used to identify your website customers.
 
 1. Sign in to Customer Insights - Data and select **Web tracking & personalization**.
 

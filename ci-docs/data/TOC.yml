@@ -124,8 +124,14 @@
       href: customer-profiles.md
     - name: Manage the search & filter index
       href: search-filter-index.md
-    - name: Set up real-time web personalization
-      href: real-time-web-personalization.md
+    - name: Real-time web personalization
+      items:
+        - name: Real-time web personalization overview
+          href: real-time-web-personalization-overview.md
+        - name: Set up real-time web personalization
+          href: real-time-web-personalization.md
+        - name: No-code web personalization using Optimizely
+          href: optimizely-integration.md
     - name: Define customer activities
       href: activities.md
     - name: Integrate activities with Dynamics 365 timelines
