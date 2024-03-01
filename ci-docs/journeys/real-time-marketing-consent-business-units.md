@@ -4,7 +4,7 @@ description: Learn how consent is managed across business units in Dynamics 365 
 ms.date: 02/29/2024
 ms.topic: reference
 author: anubhav-t
-ms.author: anubhav-t
+ms.author: alfergus
 search.audienceType: 
   - admin
   - customizer

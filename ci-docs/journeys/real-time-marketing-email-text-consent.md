@@ -22,7 +22,7 @@ search.audienceType:
 > [!IMPORTANT]
 > For an environment that has both real-time journeys and outbound marketing installed, the app checks a contact's `DoNotEmail`, `DoNotBulkEmail`, and `DoNotTrack` fields to match outbound marketing's consent enforcement behavior and aid in the transition from outbound marketing to real-time journeys. Learn more: [Manage user compliance settings in Customer Insights - Journeys](real-time-marketing-compliance-settings.md).
 >
-> You can configure your environment to ignore the contact field checks. Learn more:[Turn contact-level consent checks off](real-time-marketing-email-text-consent.md#turn-contact-level-consent-checks-off).
+> You can configure your environment to ignore the contact field checks. Learn more:[Disable contact-level consent checks](real-time-marketing-email-text-consent.md#disable-contact-level-consent-checks).
 >
 
 > [!CAUTION]
@@ -161,13 +161,13 @@ The following diagram provides a visual representation of how consent is checked
 > [!IMPORTANT]
 > For an environment that has both real-time journeys and outbound marketing installed, by default, the app always checks the **Allow email** and **Allow bulk email** fields in contact records to determine if email is allowed to be sent to the contact's email address. Both fields must be set to allow for an email with a commercial purpose type to be sent to a contact. Only the **Allow email** field must be set to allow emails to be sent with a transactional purpose type selected. These checks are done in addition to the Customer Insights - Journeys contact-point consent opt-in/opt-out checks for emails sent by journeys. These checks are not performed for other entity types (for example, leads or Customer Insights - Data profiles). Learn more: [Manage user compliance settings in Customer Insights - Journeys](real-time-marketing-compliance-settings.md).
 >
-> You can configure your environment to ignore the contact field checks. Learn more: [Turn contact-level consent checks off](real-time-marketing-email-text-consent.md#turn-contact-level-consent-checks-off).
+> You can configure your environment to ignore the contact field checks. Learn more: [Disable contact-level consent checks](real-time-marketing-email-text-consent.md#disable-contact-level-consent-checks).
 
 ## Disable contact-level consent checks
 
 Starting February 2024, a new feature switch allows you to configure the system to either consider or bypass contact-level consent checks. This enables complete separation of consent by contact point for emails, enabling every entity to have consent captured and enforced by contact point and ignoring consent on the contact record for journeys targeting contacts.  
 
-It's recommended to turn contact-level consent checks off once outbound journeys are no longer in use. To disable contact-level consent checks:
+It's recommended to Disable contact-level consent checks once outbound journeys are no longer in use. To disable contact-level consent checks:
 
 1. Go to **Settings** > **Other settings** > **Feature switches**.
 1. Set the **Check contact consent for real-time journeys** toggle to **Off**.
@@ -181,7 +181,7 @@ Customer Insights - Journeys offers [different options for providing an unsubscr
 
 The consent status shown to the user on an unsubscribe experience depends on several factors:
 
-1. Whether the [check contact consent for real-time journeys feature switch](real-time-marketing-email-text-consent.md#turn-contact-level-consent-checks-off) is on or off.
+1. Whether the [check contact consent for real-time journeys feature switch](real-time-marketing-email-text-consent.md#disable-contact-level-consent-checks) is on or off.
 1. The enforcement model of the purpose.
 1. The channel for which consent is being displayed.
 1. The contact point's consent status.
@@ -214,7 +214,7 @@ When a user submits changes through a subscription center, the states of **DoNot
 
 ### Preference page and preference center  
 
-For journeys **targeting contacts**, each email address consent prefills if they're contactable (**will send**) or traceable (**will track**) based on the specific purpose's enforcement model and its contact point consent record, combined with the contact-level consent fields (only if the [check contact consent](real-time-marketing-email-text-consent.md#turn-contact-level-consent-checks-off) for real-time journeys feature switch is enabled).
+For journeys **targeting contacts**, each email address consent prefills if they're contactable (**will send**) or traceable (**will track**) based on the specific purpose's enforcement model and its contact point consent record, combined with the contact-level consent fields (only if the [check contact consent](real-time-marketing-email-text-consent.md#disable-contact-level-consent-checks) for real-time journeys feature switch is enabled).
 
 1. **Commercial purposes/topics** prefills to opt-in only if the contact point consent record evaluates to **will send** and both **DoNotBulkEmail** and **DoNotEmail** are set to allow emails.
 1. **Transactional purposes/topics** prefills to opt-in only if the contact point consent record evaluates to **will send** and **DoNotEmail** is set to allow emails.
