@@ -124,6 +124,8 @@
       href: customer-profiles.md
     - name: Manage the search & filter index
       href: search-filter-index.md
+    - name: Set up real-time web personalization
+      href: real-time-web-personalization.md
     - name: Define customer activities
       href: activities.md
     - name: Integrate activities with Dynamics 365 timelines
