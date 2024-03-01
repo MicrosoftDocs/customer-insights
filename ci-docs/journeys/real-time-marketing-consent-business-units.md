@@ -11,7 +11,7 @@ search.audienceType:
   - enduser
 ---
 
-# Consent management for business units  
+# Consent management for business units
 
 > [!IMPORTANT]
 > Starting in the December 2023 release, environments that have multiple business units but don't use [business unit scoping](real-time-marketing-business-units.md#enabling-business-unit-scopes-in-customer-insights---journeys) will experience improved handling of consent across business units. This document covers the various scenarios that customers using business units in Dataverse may encounter.
