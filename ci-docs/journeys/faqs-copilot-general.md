@@ -24,7 +24,7 @@ These capabilities of Copilot are shared across any Power Apps model-driven app.
 
 ## What can this Copilot capability do in Customer insights - Journey do?
 It can answer questions about the configured tables in an app, and aids in navigation through queries such as "Take me to _page name_."
-It can answer questions about how to user Customer Insights. These answers are based on [our publicly available documentation](/dynamics365/customer-insights/journeys/). 
+It can answer questions about how to user Customer Insights. These answers are based on [our publicly available documentation](/dynamics365/customer-insights/journeys/). This capability uses a Bing Search index to organize the public documentation. This is the reason for this capability needing consent for Bing Search.
 
 ## What is this capability of Copilot' intended use?
 
@@ -41,6 +41,7 @@ To use this capability your environment must be in the US region. The Power Plat
 Copilot in model-driven apps is a preview feature. Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback. Please review [the main FAQ for this Copilot capability](power-apps/maker/common/faqs-copilot-model-driven-app).
 
 This capability may be subject to usage limits or capacity throttling.
+The capability to answer based on our documentation uses a Bing Search index to organize the pages. If consent for to use Bing Search is not given then this capability will not be available. 
 
 ## What operational factors and settings allow for effective and responsible use of Copilot in model-driven apps in Customer insights - Journeys?
 
