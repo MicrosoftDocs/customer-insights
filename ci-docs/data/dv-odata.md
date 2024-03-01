@@ -66,7 +66,7 @@ Sample queries for the *CustomerProfile* table and segment memberships.
 
 ### Web Personalization
 
-Sample queries to personalize your website (add link to new web personalization page) based on the CookieId. The response returns both known and unknown customers (add link to new unknown and known profile section on existing page). Read more: 
+Sample queries to [personalize your website](real-time-web-personalization.md#personalize-your-customers-web-experience) based on the CookieId. The response returns both [known and unknown customers](customer-profiles.md#known-and-unknown-customers).
 
 |Query type |Example  | Note  |
 |---------|---------|---------|
