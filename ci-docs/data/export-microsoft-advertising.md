@@ -17,9 +17,10 @@ Export Dynamics 365 Customer Insights - Data segments to Microsoft Advertising t
 ## Prerequisites
 
 - A [Microsoft Advertising account](https://ads.microsoft.com/) and corresponding administrator credentials.
-- Microsoft Advertising Customer ID and Account ID. Find the Customer ID (`cid`) and Account ID (`aid`) in the parameters of the URL when you're signed in to Microsoft Advertising.
-- The Customer Match terms of use are accepted.
-- [Configured segments](segments.md).
+- A Microsoft Advertising Customer ID and Account ID. You can find the Customer ID (`cid`) and Account ID (`aid`) in the parameters of the URL when you're signed in to Microsoft Advertising.
+- The [Customer Match](https://help.ads.microsoft.com/#apex/ads/en/56921/1) pre-requisites are fulfilled and the terms of use are accepted. 
+- [Configured custom audiences](https://help.ads.microsoft.com/#apex/ads/en/56720/1) in Microsoft Advertising
+- [Configured segments](segments.md) in Customer Insights Data.
 - Unified customer profiles in the exported segments contain a field representing an email address.
 
 ## Known limitations
@@ -63,9 +64,9 @@ Export Dynamics 365 Customer Insights - Data segments to Microsoft Advertising t
 
 1. Enter a name for the export.
 
-1. Select the segments to export. The Customer Match audiences in Microsoft Advertising are automatically created with the name of the segments selected for export. Each segment will result in a separate Customer Match audience.
+1. Provide the Microsoft Ads custom audience ID to which you want to export your Customer Insights segments. Follow the following instructions in case you do not have a [Microsoft Advertising custom audience](https://help.ads.microsoft.com/#apex/ads/en/56720/1). 
 
-1. Enter your **Microsoft Advertising Customer ID and Account ID**.
+1. Enter your **Microsoft Advertising Account ID**.
 
 1. In the **Data matching** section, in the **Email** field, select the field with a customer's email address.
 
