@@ -240,6 +240,8 @@
         href: real-time-marketing-ci-profile.md
       - name: Individually manage your customer list
         href: real-time-marketing-include-exclude.md
+      - name: "Troubleshooting: Segments show incorrect member count"
+        href: segment-member-count.md
     - name: Journey goals and A/B testing
       items:
       - name: Set a business goal and measure progress through a journey
