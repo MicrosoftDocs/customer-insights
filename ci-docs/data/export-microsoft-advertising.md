@@ -20,7 +20,7 @@ Export Dynamics 365 Customer Insights - Data segments to Microsoft Advertising t
 - A Microsoft Advertising Customer ID and Account ID. You can find the Customer ID (`cid`) and Account ID (`aid`) in the parameters of the URL when you're signed in to Microsoft Advertising.
 - The [Customer Match](https://help.ads.microsoft.com/#apex/ads/en/56921/1) prerequisites are fulfilled and the terms of use are accepted. 
 - [Configured custom audiences](https://help.ads.microsoft.com/#apex/ads/en/56720/1) in Microsoft Advertising.
-- [Configured segments](segments.md) in Customer Insights Data.
+- [Configured segments](segments.md) in Customer Insights - Data.
 - Unified customer profiles in the exported segments contain a field representing an email address.
 
 ## Known limitations
