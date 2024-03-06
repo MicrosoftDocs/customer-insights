@@ -1,7 +1,7 @@
 ---
-title: "Set up real-time web personalization"
-description: "Learn how to track web interactions and personalize experiences in real-time with Customer Insights - Data."
-ms.date: 02/29/2024
+title: Set up real-time web personalization (preview)
+description: Learn how to track web interactions and personalize experiences in real-time with Customer Insights - Data.
+ms.date: 03/06/2024
 ms.topic: overview
 author: srivas15
 ms.author: shsri
@@ -9,7 +9,9 @@ ms.reviewer: v-wendysmith
 ms.custom: bap-template
 ---
 
-# Set up real-time web personalization
+# Set up real-time web personalization (preview)
+
+[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
 Let Customer Insights - Data automatically create unknown profiles for your visitors and track their website interactions (page views and page clicks) in real time. Set up web tracking, merge customers with their known profiles when they authenticate on your website, and then personalize your customers web experience.
 

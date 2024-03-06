@@ -1,7 +1,7 @@
 ---
-title: No-code web personalization using Optimizely
+title: No-code web personalization using Optimizely (preview)
 description: Personalize web experiences with the Customer Insights - Data and Optimizely integration.
-ms.date: 02/22/2024
+ms.date: 03/06/2024
 ms.topic: how-to
 author: philk
 ms.author: philk
@@ -9,7 +9,9 @@ ms.reviewer: mhart
 ms.custom: bap-template
 ---
 
-# No-code web personalization using Optimizely
+# No-code web personalization using Optimizely (preview)
+
+[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
 The Optimizely integration in Customer Insights - Data allows you to share segment from Customer Insights with Optimizely. The system creates audiences in Optimizely based on the segments in Customer Insights – Data and you can use them in your web personalization campaigns or web experiments.
 

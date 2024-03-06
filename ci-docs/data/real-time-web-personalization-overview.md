@@ -1,7 +1,7 @@
 ---
-title: "Real-Time web personalization overview"
-description: "Learn about web interactions and personalized experiences in real time with Customer Insights - Data."
-ms.date: 02/29/2024
+title: Real-time web personalization overview (preview)
+description: Learn about web interactions and personalized experiences in real time with Customer Insights - Data.
+ms.date: 03/06/2024
 ms.topic: overview
 author: srivas15
 ms.author: shsri
@@ -9,11 +9,15 @@ ms.reviewer: v-wendysmith
 ms.custom: bap-template
 ---
 
-# Real-time web personalization overview
+# Real-time web personalization overview (preview)
 
-As customers engage with your business, they constantly provide signals about their interests and preferences, such as adding a product to a cart, viewing your pricing, signing up for a trial, and more. It's crucial to build on these signals as they happen so you can deliver the right personalized experiences in the right moment.
+[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
+
+When customers interact with websites, they constantly provide signals about their interests and preferences. For example, adding a product to a cart, viewing pricing details, signing up for a trial, and more. It's crucial to build on these signals as they happen so you can deliver the right personalized experiences in the right moment.
 
 Customer Insights - Data can update customer profiles in real time based on web signals. This capability helps you provide the most targeted and personalized experiences to your customers as they browse your web properties. Foster loyalty, increase engagement, enhance satisfaction, and drive higher conversion rates.
+
+[!INCLUDE [public-preview-note](includes/public-preview-note.md)]
 
 Once you [set up real-time web personalization](real-time-web-personalization.md), Customer Insights - Data enables you to:
 
@@ -31,7 +35,7 @@ Once you [set up real-time web personalization](real-time-web-personalization.md
 
 Customer Insights - Data uses cookies to identify returning visitors so profiles continue to get enhanced over time, even when a visitor ends a web session and comes back. The expiration for a cookieId is rolling one year, meaning the one year expiration is refreshed every time the customer visits your website.
 
-If the customer aunthenticates on your website, Customer Insights - Data merges their unknown profile with their known profile in real time. For example, you have a known customer named Abbie in Customer Insights - Data who registered their profile in person. When Abbie visits your website for the first time, a new unknown profile is created for Abbie and all their web interactions are tracked to that profile. When Abbie authenticates on your website, their unknown profile automatically merges with their known profile.
+If the customer authenticates on your website, Customer Insights - Data merges their unknown profile with their known profile in real time. For example, you have a known customer named Abbie in Customer Insights - Data who registered their profile in person. When Abbie visits your website for the first time, a new unknown profile is created for Abbie and all their web interactions are tracked to that profile. When Abbie authenticates on your website, their unknown profile automatically merges with their known profile.
 
 This means:
 
