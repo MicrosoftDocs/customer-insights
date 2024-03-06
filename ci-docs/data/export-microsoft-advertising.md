@@ -64,7 +64,7 @@ Export Dynamics 365 Customer Insights - Data segments to Microsoft Advertising t
 
 1. Enter a name for the export.
 
-1. Provide the Microsoft Ads custom audience ID to which you want to export your Customer Insights segments. Follow the following instructions in case you do not have a [Microsoft Advertising custom audience](https://help.ads.microsoft.com/#apex/ads/en/56720/1). 
+1. Provide the Microsoft Advertising custom audience ID to which you want to export your Customer Insights segments. For more information, see [Microsoft Advertising custom audience](https://help.ads.microsoft.com/#apex/ads/en/56720/1). 
 
 1. In the **Data matching** section, in the **Email** field, select the field with a customer's email address.
 
