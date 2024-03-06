@@ -17,8 +17,8 @@ Export segments of unified customer profiles to Braze and use them for marketing
 ## Prerequisites
 
 - A [Braze account](https://www.braze.com/) and corresponding administrator credentials.
-- A [Braze API key](https://www.braze.com/docs/api/basics/)
-- Your [Braze REST Endpoint Hostname](https://www.braze.com/docs/api/basics/#api-definitions)
+- A [Braze API key](https://www.braze.com/docs/api/basics/).
+- Your [Braze REST Endpoint Hostname](https://www.braze.com/docs/api/basics/#api-definitions).
 - [Configured segments in Braze including their segment identifier](https://www.braze.com/docs/user_guide/engagement_tools/segments/creating_a_segment#creating-a-segment). 
 - [Configured segments](segments.md#segments) in Customer Insights.
 - Unified customer profiles in the exported segments contain a field representing an email address and a Braze customer ID.
@@ -64,7 +64,7 @@ Export segments of unified customer profiles to Braze and use them for marketing
 
 1. Enter a name for the export.
    
-1. Provide the segment identifier ID of the segment in Braze you want to export your data to. The segment identifier ID for a segment in Braze can be found in the segment details page at the bottom in the section "API Identifier". 
+1. Provide the segment identifier ID of the segment in Braze you want to export your data to. The segment identifier ID for a segment in Braze can be found in the segment details page at the bottom in the section **API Identifier**. 
 
 1. In the **Data matching** section:
    - In the **Braze customer ID** field, select the field that represents the [User ID of a record in Braze](https://www.braze.com/docs/developer_guide/platform_integration_guides/web/analytics/setting_user_ids#suggested-user-id-naming-convention).
