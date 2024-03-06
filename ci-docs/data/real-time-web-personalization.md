@@ -29,8 +29,6 @@ Learn more: [Real-time web personalization overview](real-time-web-personalizati
 
    :::image type="content" source="media/web-tracking-personalization.png" alt-text="Screenshot of Web tracking & personalization.":::
 
-   <!--- Sharoon, when and why would they select Save? --->
-
 1. Select the table that the tracking script should use to identify your customers when they [authenticate](#authenticate-unknown-customers-and-merge-them-to-known).
 
 1. **Copy** the tracking script and paste it in the `<head>` tag of your website.
@@ -43,7 +41,7 @@ Learn more: [Real-time web personalization overview](real-time-web-personalizati
 
 1. To view the unknown profiles, go to the **Customers** page and select **Unknown**. All unknown profiles have a cookieId as an identifier and the website interactions on the timeline automatically display.
 
-   <!--- need screenshot --->
+   :::image type="content" source="media/customers-unknown.png" alt-text="Screenshot of Unknown tab on Customers page.":::
 
 1. To validate the web events in Dataverse, sign in to [https://make.powerapps.com/](https://make.powerapps.com). Select **Tables** > **All** and select the **PersonalizationView** and **PersonalizationAction** tables.
 
