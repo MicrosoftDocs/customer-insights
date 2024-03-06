@@ -1,7 +1,7 @@
 ---
 title: Raise triggers from a journey to run another journey or Power Automate flow
 description: Learn how to trigger an action outside of a journey in Dynamics 365 Customer Insights - Journeys.
-ms.date: 12/22/2023
+ms.date: 03/06/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -18,7 +18,7 @@ Based on the unique needs of your business, you may want to trigger custom proce
 Here are some examples of where you might trigger custom actions:
 
 1. You’re engaging customers so that they can purchase a subscription, but if they don’t do so by the end of the customer journey, you need to add them to a nurture journey. You can route the customers by activating a custom trigger from the subscription journey and using that as the entry trigger from the nurture journey.
-1. A loan application journey has various steps that require a human agent’s approval. By creating a separate customer journey or Power Automate Flow for loan exception approval, you can trigger it from various points in the loan application journeys where exceptions can occur by activating the custom trigger.
+1. A loan application journey has various steps that require a human agent’s approval. By creating a separate customer journey or Power Automate flow for loan exception approval, you can trigger it from various points in the loan application journeys where exceptions can occur by activating the custom trigger.
 1. You need to engage customers through another application or channel, such as Microsoft Teams, which has a Power Automate connector. You can create a Power Automate flow using this connector and have it start using the custom trigger that you can activate from relevant points in your journey.
 1. You need to create Dynamics 365 activities (such as a sales call or service tickets) from any point in the customer journey. By activating a custom trigger, you can trigger a Power Automate flow that creates these activities on behalf of the journey.
 
@@ -96,15 +96,15 @@ The screenshot below illustrates how the nurture journey is set up using the "Ad
 
 Custom triggers activated through a customer journey can also trigger Power Automate flows. In the example used here, the shopper is routed to a human agent via a Power Automate flow. This flow creates a phone call activity for sales agents using Dynamics 365 Sales. The sales agents then can be alerted that a new shopper needs to be called so that they can be made aware of the loyalty program.
 
-To use a custom trigger with a Power Automate flow, navigate to [Power Apps Portal](https://make.powerapps.com):
+To use a custom trigger with a Power Automate flow, navigate to [Power Apps Portal](https://make.powerapps.com) and select **Flows** from the left navigation.
 
 > [!IMPORTANT]
 > Ensure that you're using the same **environment** in Power Automate as you are for your Dynamics 365 Customer Insights - Journeys application. The environment can be viewed and switched in the top right corner of the Power Apps navigation bar (shown at the top of the screenshots in this section).
     
-1. Create a cloud flow that starts with **When an action is performed (Microsoft Dataverse)**. 
+1. Select **+New flow** from the top navigation bar, select **Automated cloud flow**, and create a flow that starts with **When an action is performed (Microsoft Dataverse)**. 
 
       > [!div class="mx-imgBorder"]
-      > ![Screenshot of creating a new Power Automate Flow.](media/create-automated-flow-step8.png "Screenshot of creating a new Power Automate Flow")
+      > ![Screenshot of creating a new Power Automate flow.](media/create-automated-flow-step8.png "Screenshot of creating a new Power Automate flow")
 
 1. Fill in the required fields as follows:
     - Set Catalog to "Cxp"
@@ -117,12 +117,12 @@ To use a custom trigger with a Power Automate flow, navigate to [Power Apps Port
     The contact ID can be passed with `ActionInputs msdynmkt_profileid` as a value. It can also initialize a variable, as shown in the example below:
 
     > [!div class="mx-imgBorder"]
-    > ![Screenshot of creating a Power Automate Flow using attribute contact ID.](media/automated-flow-step-using-contact-id.png "Screenshot of creating a Power Automate Flow using attribute contact ID.")
+    > ![Screenshot of creating a Power Automate flow using attribute contact ID.](media/automated-flow-step-using-contact-id.png "Screenshot of creating a Power Automate flow using attribute contact ID.")
 
 1. Start adding the subsequent step to the flow. In each of these steps, you can use the data fields that came with the custom trigger. In this example, the phone number field mapped in the earlier steps will be available in all the steps of this flow.
 
       > [!div class="mx-imgBorder"]
-      > ![Screenshot of adding steps to a Power Automate Flow.](media/create-automated-flow-step9.png "Screenshot of adding steps to a Power Automate Flow")
+      > ![Screenshot of adding steps to a Power Automate flow.](media/create-automated-flow-step9.png "Screenshot of adding steps to a Power Automate flow")
 
 > [!IMPORTANT]
 > All attributes must be defined to perform the trigger successfully.
