@@ -20,7 +20,7 @@ Export segments of unified customer profiles to Braze and use them for marketing
 - A [Braze API key](https://www.braze.com/docs/api/basics/).
 - Your [Braze REST Endpoint Hostname](https://www.braze.com/docs/api/basics/#api-definitions).
 - [Segments in Braze including their segment identifier](https://www.braze.com/docs/user_guide/engagement_tools/segments/creating_a_segment#creating-a-segment). 
-- [Segments](segments.md#segments) in Customer Insights.
+- [Segments](segments.md) in Customer Insights.
 - Unified customer profiles in the exported segments contain a field representing an email address and a Braze customer ID.
 
 ## Known limitations
