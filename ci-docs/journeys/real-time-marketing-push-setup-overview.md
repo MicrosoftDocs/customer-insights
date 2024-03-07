@@ -25,7 +25,7 @@ For detailed information about each step, visit the following documents:
 
 ## Register a push notification application with Customer Insights - Journeys
 
-Once you have an application developed, the first step is to register that application with Customer Insights - Journeys. [Learn more about configuring push notification applications in Customer Insights - Journeys.](real-time-marketing-push-notification-setup.md)
+Once you have an application developed, the first step is to register that application with Customer Insights - Journeys. [Learn more about configuring push notification applications in Customer Insights - Journeys.](real-time-marketing-push-notifications-setup.md)
 
 ## Architecture diagram
 
@@ -50,7 +50,7 @@ To perform this mapping, you can use the public API for Customer Insights - Jour
 
 When the mapping is complete and stored, you can use the public API to POST the Dataverse user identifier, device token, and mobile application identifier in the device registration request to CI-J.
 
-View full details about registering devices and users in [Push notification device and user registration](real-time-marketing-push-user-device-registration.md).
+View full details about registering devices and users in [Push notification device registration](real-time-marketing-developer-push.md) and [user registration](real-time-marketing-push-user-mapping.md).
 
 ## Journey execution
 

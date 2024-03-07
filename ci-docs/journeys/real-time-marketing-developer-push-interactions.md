@@ -17,7 +17,7 @@ To learn more about the overall approach to setting up push notifications in Cus
 
 To enable push notifications in Customer Insights - Journeys, you need to complete the following steps:
 
-1. [Push notification application configuration](real-time-marketing-push-notification-setup.md)
+1. [Push notification application configuration](real-time-marketing-push-notifications-setup.md)
 1. [User mapping for push notifications](real-time-marketing-push-user-mapping.md)
 1. [Device registration for push notifications](real-time-marketing-developer-push.md)
 1. [Receiving push notifications on devices](real-time-marketing-developer-notifications.md)
@@ -50,7 +50,7 @@ Returns: 202 if request is correct, 400 otherwise
 
 |Name|Description|
 |---|---|
-|TrackingId|Every notification has a tracking id in its data. This id needs to be sent for event tracking|
+|TrackingId|Every notification has a tracking identifier in its data. This identifier needs to be sent for event tracking|
 |DeviceToken|Unique token for the mobile device registering the event|
 |PushNotificationStatus|Status code for the event. '1' returned for Opened event.|
 |orgId|Identifier of the Customer Insights - Journeys organization|
