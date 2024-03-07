@@ -112,20 +112,19 @@ To use a custom trigger with a Power Automate flow, navigate to [Power Apps Port
     - Set Table name to "(none)"
     - Set Action name to the name of the custom trigger you activated in your customer journey--in this example, the name of the custom trigger is "Send to Sales agent"
 
-1. Often, you need to pass the **Contact ID** from the journey to the flow. Because the contact ID isn't exposed in the journey, you need to run the flow once for every contact in the journey.
+1. Often, you need to pass the **contact ID** from the journey to the flow. Because the contact ID isn't exposed in the journey, you need to run the flow once for every contact in the journey.
 
     The contact ID can be passed with `ActionInputs msdynmkt_profileid` as a value. It can also initialize a variable, as shown in the example below:
 
     > [!div class="mx-imgBorder"]
     > ![Screenshot of creating a Power Automate flow using attribute contact ID.](media/automated-flow-step-using-contact-id.png "Screenshot of creating a Power Automate flow using attribute contact ID.")
 
-1. Start adding the subsequent step to the flow. In each of these steps, you can use the data fields that came with the custom trigger. In this example, the phone number field mapped in the earlier steps will be available in all the steps of this flow.
+1. Start adding subsequent steps to the flow. In each of these steps, you can use the data fields that came with the custom trigger. In this example, the phone number field mapped in the earlier steps will be available in all the steps of the flow.
 
-      > [!div class="mx-imgBorder"]
-      > ![Screenshot of adding steps to a Power Automate flow.](media/create-automated-flow-step9.png "Screenshot of adding steps to a Power Automate flow")
+    :::image type="content" source="media/create-automated-flow-step9.png" alt-text="Screenshot of adding steps to a Power Automate flow.":::
 
 > [!IMPORTANT]
-> All attributes must be defined to perform the trigger successfully.
+> To perform the trigger successfully, all attributes must be defined.
 
 > [!TIP]
 > If you can't find your custom trigger name in the **Action name** list, go to **Customer Insights - Journeys** > **Triggers**, select the custom trigger you want to use, then select **Go to code snippet**. The trigger name (beginning with "msdynmkt") is shown in the first line of the code.
