@@ -26,7 +26,7 @@ To enable push notifications in Customer Insights - Journeys, you need to comple
 > [!IMPORTANT]
 > To track links that recipients open in notifications, you must collect customer tracking consent. To learn more about strategies for collecting customer consent in Customer Insights - Journeys, visit the [Consent Management Overview](real-time-marketing-compliance-settings.md)
 >
-> If you have not collected tracking consent, you must use the **originalLink** URL field described in the code snippet below. If you have acquired consent, you can use the **link** field value, which will be trackable.
+> If you have not collected tracking consent, you must use the **originalLink** URL field described in the following code snippet. If you have acquired consent, you can use the **link** field value, which will be trackable.
 >
 > *PushLinkClicked* will be automatically generated. The URL is a redirect link which will create the interaction if the link from the **link** field is used.
 
@@ -221,7 +221,7 @@ if (remoteMessage.getData().get("imageUrl") != null) {
 
 #### Part 2: Create a notification
 
-Create the notification content and add the tracking ID in the data to generate the event on notification open.
+To generate the event on notification open create the notification content and add the tracking ID in the data.
 
 ```JAVA
 private void sendNotification(String message, String title, String deeplink, String name, String trackingId) { 
