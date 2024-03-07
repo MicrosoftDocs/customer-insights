@@ -1,10 +1,10 @@
 ---
 title: "Update a Common Data Model data source to use Delta tables (preview)"
 description: "Update Common Data Model tables in Azure Data Lake to Delta format in Customer Insights - Data."
-ms.date: 02/26/2024
+ms.date: 03/07/2024
 ms.topic: how-to
-author: mukeshpo
-ms.author: mukeshpo
+author: Scott-Stabbert
+ms.author: sstabbert
 ms.reviewer: v-wendysmith
 ms.custom: bap-template
 ---
@@ -69,7 +69,7 @@ If you tried to update an Azure Data Lake CDM data source to Delta tables and th
 
 1. Go to **Data** > **Data sources**.
 
-1. Select the Azure Data Lake CDM data source and then select **Revert to ADLS**.
+1. Select the Azure Data Lake CDM data source and then select **Revert to CDM tables**.
 
 1. Confirm that you want to revert. The **Data sources** page opens showing the new data source in **Refreshing** status.
 
