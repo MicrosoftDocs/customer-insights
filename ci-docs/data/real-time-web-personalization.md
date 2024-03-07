@@ -41,7 +41,7 @@ Learn more: [Real-time web personalization overview](real-time-web-personalizati
 
 1. To view the unknown profiles, go to the **Customers** page and select **Unknown**. All unknown profiles have a cookieId as an identifier and the website interactions on the timeline automatically display.
 
-   :::image type="content" source="media/customers-unknown.png" alt-text="Screenshot of Unknown tab on Customers page.":::
+   :::image type="content" source="media/customers-unknown.svg" alt-text="Screenshot of Unknown tab on Customers page.":::
 
 1. To validate the web events in Dataverse, sign in to [https://make.powerapps.com/](https://make.powerapps.com). Select **Tables** > **All** and select the **PersonalizationView** and **PersonalizationAction** tables.
 
