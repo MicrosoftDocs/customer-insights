@@ -28,21 +28,21 @@ To enable push notifications in Customer Insights - Journeys, you need to comple
 > [!div class="mx-imgBorder"]
 > ![Push notifications user mapping diagram.](media/real-time-marketing-push-user-mapping.png "Push notifications user mapping diagram")
 
-In order for push notifications from a mobile application to work correctly, you will need to configure mapping from Dynamics 365 Customer Insights - Journeys customers to mobile application users. This ensures that the correct person (represented with the correct entity and record ID) receives the expected mobile push notification.
+In order for push notifications from a mobile application to work correctly, you need to configure mapping from Dynamics 365 Customer Insights - Journeys customers to mobile application users. The mapping ensures that the correct person (represented with the correct entity and record ID) receives the expected mobile push notification.
 
-This step is not related to the mobile application setup (whether on Android or Apple devices), but rather, to the logical connection between the person represented as a Customer Insights - Journeys record and the counterpart record as a mobile application user.
+This step isn't related to the mobile application setup (whether on Android or Apple devices), but rather, to the logical connection between the person represented as a Customer Insights - Journeys record and the counterpart record as a mobile application user.
 
 First, to implement user mapping, the correct entity must be selected. This step is crucial because, in Customer Insights - Journeys, it's possible to orchestrate to multiple Microsoft Dataverse entities (such as a Contact or Lead), or to a Customer Insights - Data profile. Then, the correct record ID should be passed along to the mobile application and the mobile application should identify the user with that ID.
 
 ### User mapping example
 
-As an example, if the Contact Dataverse entity is used and the email address field is used as the unique key for an end user as a Contact, one possibility to retrieve the correct ID using an OData GET call to Dataverse is the following:
+As an example, if the Contact Dataverse entity is used and the email address field is used as the unique key for an end user as a Contact, one possibility to retrieve the correct ID is using an OData GET call to Dataverse is the following example:
 
-```
+```HTTP
 https://<your Customer Insights - Journeys instance>.dynamics.com/api/data/v9.0/contacts?$filter=emailaddress1 eq 'andrew@contosoltd.com'
 ```
 
-This query to Dataverse will return a single contact that has *andrew@contosoltd.com* as the email address. Once this ID is acquired (in this example, a Contact ID), it should be used as the UserId parameter in the mobile application.
+This query to Dataverse returns a single contact that has *andrew@contosoltd.com* as the email address. Once this ID is acquired (in this example, a Contact ID), it should be used as the UserId parameter in the mobile application.
 
 ---
 
