@@ -89,4 +89,6 @@ When creating a Customer Insights - Journeys, you can send push notification mes
 
 You can see how customers reacted to your push messages by checking the push notification analytics in the message itself and within journeys.
 
+---
+
 [!INCLUDE [footer-include](./includes/footer-banner.md)]

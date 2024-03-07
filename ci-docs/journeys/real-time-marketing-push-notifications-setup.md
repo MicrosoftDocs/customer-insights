@@ -1,6 +1,6 @@
 ---
-title: Set up push notifications
-description: Learn how to set up push notifications for Customer Insights - Journeys
+title: Set up push notification applications
+description: Learn how to set up push notification applications for Customer Insights - Journeys
 ms.date: 12/12/2023 
 ms.topic: article
 author: alfergus
@@ -17,9 +17,19 @@ Push notifications are messages sent to customers who have installed your mobile
 
 You can send push messages as part of your journeys, similar to other outbound messages like text messages.
 
+To learn more about the overall approach to setting up push notifications in Customer Insights - Journeys, visit the [Push notification setup overview](real-time-marketing-push-setup-overview.md).
+
+To enable push notifications in Customer Insights - Journeys, you need to complete the following steps:
+
+1. [Push notification application configuration](real-time-marketing-push-notification-setup.md)
+1. [User mapping for push notifications](real-time-marketing-push-user-mapping.md)
+1. [Device registration for push notifications](real-time-marketing-developer-push.md)
+1. [Receiving push notifications on devices](real-time-marketing-developer-notifications.md)
+1. [Interaction reporting for push notifications](real-time-marketing-developer-push-interactions.md)
+
 ## Create a mobile app configuration
 
-To send push notification messages to your customers, you'll first need to set up at least one *Mobile app configuration*. 
+To send push notification messages to your customers, you'll first need to set up at least one *Mobile app configuration*.
 
 > [!IMPORTANT]
 > If the user or team who is going to create a mobile application has admin privileges, then no further action is required.
@@ -63,7 +73,7 @@ For iOS applications, Customer Insights - Journeys uses the Apple Push Notificat
 For Android applications, Customer Insights - Journeys uses the Firebase Cloud Messaging (FCM) service.
 
 > [!IMPORTANT]
-> In June FCM Token authentication approach for Android push notifications will be deprecated and replaced with a Service account json file-based approach. You will need to replace an existing FCM Token with the json file generated within your Google Firebase account.
+> In June 2024 FCM Token authentication approach for Android push notifications will be deprecated and replaced with a Service account json file-based approach. You will need to replace an existing FCM Token with the json file generated within your Google Firebase account.
 >
 > To generate this file, login to your Firebase account, navigate to the Firebase project for your application, and open Project settings. Then, visit the Service accounts tab and click "Generate a new private key." This will create and download a json file that you can save and then upload to your Push notification settings in Customer Insights - Journeys.
 >
@@ -72,7 +82,7 @@ For Android applications, Customer Insights - Journeys uses the Firebase Cloud M
 There are two FCM Authentication Modes: Service Account Json and API key.
 
 - **Service Account Json**: Upload the Service Account Json file generated in the Firebase Project Settings. This is the preferred authentication method that will continue to be supported long-term.
-- **API key**: Enter the API key provided in your Firebase account.
+- **(Deprecated) API key**: Enter the API key provided in your Firebase account.
 
 ---
 
@@ -80,5 +90,7 @@ There are two FCM Authentication Modes: Service Account Json and API key.
 
 > [!NOTE]
 > To learn more about the developer configuration for push notifications, see [Push notification setup for application developers](real-time-marketing-developer-push.md)
+
+---
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]

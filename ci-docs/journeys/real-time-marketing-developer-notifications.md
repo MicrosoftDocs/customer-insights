@@ -1,6 +1,6 @@
 ---
-title: Receiving notifications and creating interactions
-description: Developer - learn how to receive notifications from Customer Insights - Journeys
+title: Receiving push notifications on mobile devices
+description: Developer - learn how to receive push notifications from Customer Insights - Journeys
 ms.date: 08/22/2023
 ms.topic: article
 author: alfergus
@@ -11,24 +11,30 @@ search.audienceType:
   - enduser
 ---
 
-# Receiving notifications and creating interactions
+# Receiving notifications for push messages on mobile devices
 
-Notifications received from Dynamics 365 Customer Insights - Journeys have an additional payload containing links and a **trackingId** for interaction event creation.
+To learn more about the overall approach to setting up push notifications in Customer Insights - Journeys, visit the [Push notification setup overview](real-time-marketing-push-setup-overview.md).
+
+To enable push notifications in Customer Insights - Journeys, you need to complete the following steps:
+
+1. [Push notification application configuration](real-time-marketing-push-notification-setup.md)
+1. [User mapping for push notifications](real-time-marketing-push-user-mapping.md)
+1. [Device registration for push notifications](real-time-marketing-developer-push.md)
+1. [Receiving push notifications on devices](real-time-marketing-developer-notifications.md)
+1. [Interaction reporting for push notifications](real-time-marketing-developer-push-interactions.md)
 
 > [!IMPORTANT]
-> To track links that recipients open in notifications, you must collect customer tracking consent. Customer Insights - Journeys has no way to collect this consent for you.
+> To track links that recipients open in notifications, you must collect customer tracking consent. To learn more about strategies for collecting customer consent in Customer Insights - Journeys, visit the [Consent Management Overview](real-time-marketing-compliance-settings.md)
 >
 > If you have not collected tracking consent, you must use the **originalLink** URL field described in the code snippet below. If you have acquired consent, you can use the **link** field value, which will be trackable.
 >
 > *PushLinkClicked* will be automatically generated. The URL is a redirect link which will create the interaction if the link from the **link** field is used.
 
-## Receive notifications in iOS
-
-
+## Receive push message notifications in iOS
 
 **1. Sample code snippet to parse the incoming notifications in iOS:**
 
-```
+```OBJC
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler
 {
 
@@ -62,10 +68,9 @@ Notifications received from Dynamics 365 Customer Insights - Journeys have an ad
 }
 ```
 
-
 **Sample code snippet to parse the incoming notifications in iOS (Swift version):**
 
-```
+```SWIFT
 func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse,  withCompletionHandler completionHandler: @escaping () -> Void) { 
 
         let userInfo = response.notification.request.content.userInfo 
@@ -93,279 +98,63 @@ func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive
     } 
 ```
 
-
 **2. Sample Swift code snippet to parse the incoming rich push notifications in iOS (notification with image):**
 
-In addition to the didReceive method in AppDelegate we need to add the NotificationExtension to intercept the notification before being displayed, download the image and enrich the notification with the image data. [Learn more](https://developer.apple.com/documentation/usernotifications/unnotificationserviceextension) 
+In addition to the didReceive method in AppDelegate we need to add the NotificationExtension to intercept the notification before being displayed, download the image and enrich the notification with the image data. [Learn more](https://developer.apple.com/documentation/usernotifications/unnotificationserviceextension)
 
-```
-class NotificationService: UNNotificationServiceExtension { 
-
- 
-
-    var contentHandler: ((UNNotificationContent) -> Void)? 
-    var content: UNMutableNotificationContent? 
-
-    override func didReceive(_ request: UNNotificationRequest, withContentHandler contentHandler: @escaping (UNNotificationContent) -> Void) { 
-
-        self.contentHandler = contentHandler 
-        self.content        = (request.content.mutableCopy() as? UNMutableNotificationContent) 
-        if let bca = self.content { 
-            func save(_ identifier: String, 
-                      data: Data, options: [AnyHashable: Any]?) -> UNNotificationAttachment? { 
-
-                    let directory = URL(fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent(ProcessInfo.processInfo.globallyUniqueString, isDirectory: true) 
-
-                    do { 
-
-                        try FileManager.default.createDirectory(at: directory, withIntermediateDirectories: true, attributes: nil) 
-
-                        let fileURL = directory.appendingPathComponent(identifier) 
-
-                        try data.write(to: fileURL, options: []) 
-
-                        return try UNNotificationAttachment.init(identifier: identifier, url: fileURL, options: options) 
-
-                    } catch {} 
-
-                    return nil 
-            } 
-
-            func exitGracefully(_ reason: String = "") { 
-
-                let bca    = request.content.mutableCopy() as? UNMutableNotificationContent 
-
-                bca!.title = reason 
-
-                contentHandler(bca!) 
-            } 
-     
-            DispatchQueue.main.async { 
-
-                guard let content = (request.content.mutableCopy() as? UNMutableNotificationContent) else { 
-
-                    return exitGracefully() 
-
-                } 
-
-                let userInfo : [AnyHashable: Any] = request.content.userInfo; 
-
-                let data = userInfo["data"] as? [String:Any] ?? [:]; 
-
-                guard let attachmentURL = data["imageUrl"] as? String else { 
-
-                    return exitGracefully() 
-
-                } 
-
-                guard let imageData = try? Data(contentsOf: URL(string: attachmentURL)!) else { 
-
-                    return exitGracefully() 
-
-                } 
-
-                guard let attachment = save("image.png", data: imageData, options: nil) else { 
-
-                    return exitGracefully() 
-
-                } 
-
-                content.attachments = [attachment] 
-
-                contentHandler(content) 
-
-            } 
-
-        } 
-
-    } 
-  
-
-    override func serviceExtensionTimeWillExpire() { 
-
-        // Called just before the extension will be terminated by the system. 
-
-        // Use this as an opportunity to deliver your "best attempt" at modified content, otherwise the original push payload will be used. 
-
-        if let contentHandler = contentHandler, let bestAttemptContent =  content { 
-
-            contentHandler(bestAttemptContent) 
-
-        } 
-
-    } 
-
-} 
-
-```
-
-## Send events in iOS
-
-### [iOS - API v.1](#tab/ios-v1)
-
-To send events, the following request should be issued:
-
-Request URL:
-
-```
-POST 
-{PublicEndpoint}/api/v1.0/orgs/{OrganizationId}/pushchannel/event/trackings/{TrackingId}
-```
-Body:
-
-```
-{ 
-    "DeviceToken": "% FCM_OR_APNS_DEVICE_TOKEN%", 
-    "PushNotificationStatus":  0 for "Clicked" event, 1 for "Opened" event 
-} 
-```
-
-**Sample code snippet to send events in iOS:**
-
-```
-- (void) createInteraction: (NSNumber *) typeInteraction stringTracking:(NSString *)trackingId
-{
-    if([trackingId isEqual:@"00000000-0000-0000-0000-000000000000"]){
-        return;
-    }
-    NSString* orgId = [[NSUserDefaults standardUserDefaults] objectForKey:@"organizationId2"]
-    NSString* endP = [[NSUserDefaults standardUserDefaults] objectForKey:@"endpoint2"];
-    
-    if(orgId == NULL || endP == NULL){
-        return;
-    }
-    
-// Create open interaction
-    NSMutableURLRequest *urlRequest = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:[NSString stringWithFormat: @"https://%@/api/v1.0/orgs/%@/pushchannel/event/trackings/%@", endP, orgId, trackingId]]];
-
-// Create the Method "GET" or "POST"
-    [urlRequest setHTTPMethod:@"POST"];
-    [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
-    [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Accept"];
-
-// Convert the String to Data
-    NSString *deviceToken = [[NSUserDefaults standardUserDefaults] objectForKey:@"deviceToken"];
-    NSDictionary *jsonBodyDict = @{@"PushNotificationStatus":typeInteraction, @"DeviceToken":deviceToken};
-    NSData *data = [NSJSONSerialization dataWithJSONObject:jsonBodyDict options:kNilOptions error:nil];
-
-// Apply the data to the body
-    [urlRequest setHTTPBody:data];
-    NSURLSession *session = [NSURLSession sharedSession];
-    NSURLSessionDataTask *dataTask = [session dataTaskWithRequest:urlRequest completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
-        NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *)response;
-        
-        if(httpResponse.statusCode == 200)
-        {
-            NSLog(@"Login SUCCESS");
-        }
-        else
-        {
-            NSLog(@"Error %ld", (long)[httpResponse statusCode]);
-        }
-    }];
-    [dataTask resume];
+```SWIFT
+class NotificationService: UNNotificationServiceExtension { 
+    var contentHandler: ((UNNotificationContent) -> Void)? 
+    var content: UNMutableNotificationContent? 
+    override func didReceive(_ request: UNNotificationRequest, withContentHandler contentHandler: @escaping (UNNotificationContent) -> Void) { 
+        self.contentHandler = contentHandler 
+        self.content        = (request.content.mutableCopy() as? UNMutableNotificationContent) 
+        if let bca = self.content { 
+            func save(_ identifier: String, 
+                      data: Data, options: [AnyHashable: Any]?) -> UNNotificationAttachment? { 
+                    let directory = URL(fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent(ProcessInfo.processInfo.globallyUniqueString, isDirectory: true) 
+                    do { 
+                        try FileManager.default.createDirectory(at: directory, withIntermediateDirectories: true, attributes: nil) 
+                        let fileURL = directory.appendingPathComponent(identifier) 
+                        try data.write(to: fileURL, options: []) 
+                        return try UNNotificationAttachment.init(identifier: identifier, url: fileURL, options: options) 
+                    } catch {} 
+                    return nil 
+            } 
+            func exitGracefully(_ reason: String = "") { 
+                let bca    = request.content.mutableCopy() as? UNMutableNotificationContent 
+                bca!.title = reason 
+                contentHandler(bca!) 
+            }
+            DispatchQueue.main.async { 
+                guard let content = (request.content.mutableCopy() as? UNMutableNotificationContent) else { 
+                    return exitGracefully() 
+                } 
+                let userInfo : [AnyHashable: Any] = request.content.userInfo; 
+                let data = userInfo["data"] as? [String:Any] ?? [:]; 
+                guard let attachmentURL = data["imageUrl"] as? String else { 
+                    return exitGracefully() 
+                } 
+                guard let imageData = try? Data(contentsOf: URL(string: attachmentURL)!) else { 
+                    return exitGracefully() 
+                } 
+                guard let attachment = save("image.png", data: imageData, options: nil) else { 
+                    return exitGracefully() 
+                } 
+                content.attachments = [attachment] 
+                contentHandler(content) 
+            } 
+        } 
+    }   
+    override func serviceExtensionTimeWillExpire() { 
+        // Called just before the extension will be terminated by the system. 
+        // Use this as an opportunity to deliver your "best attempt" at modified content, otherwise the original push payload will be used. 
+        if let contentHandler = contentHandler, let bestAttemptContent =  content { 
+            contentHandler(bestAttemptContent) 
+        } 
+    } 
 }
 ```
-
-### [iOS - API v.2](#tab/ios-v2)
-
-Request URL: 
-```
-POST https://public-eur.mkt.dynamics.com/api/v1.0/orgs/%ORG_ID%/pushdatareceiver/events  
-```
-Body: 
-```
-{ 
-
-    "TrackingId": "%TRACKING_ID_RECEIVED_WITH_PUSH_NOTIFICATION%", 
-    "DeviceToken": "% FCM_OR_APNS_DEVICE_TOKEN%", 
-    "PushNotificationStatus":  0 for "Clicked" event, 1 for "Opened" event 
-
-} 
-```
-
-Returns: 202 on success, 400 if request is not valid 
-
-**Sample Swift code to send events in iOS:**
-
-```
-func createInteraction(typeInteraction: Int, trackingId: String) { 
-
-        if(!trackingId.isEmpty || trackingId == "00000000-0000-0000-0000-000000000000"){ 
-            return; 
-        } 
-
-        let orgId = UserDefaults.standard.string(forKey: "organizationId2"); 
-        let endP = UserDefaults.standard.string(forKey: "endpoint2"); 
-
-        if(orgId == nil || endP == nil){ 
-            return; 
-
-        } 
-
-        let url = URL(string: String(format:"https://%@/api/v1.0/orgs/%@/pushdatareceiver/events", endP ?? "", orgId ?? ""))!; 
-        let session = URLSession.shared 
-
-          // now create the URLRequest object using the url object 
-
-        var request = URLRequest(url: url) 
-        request.httpMethod = "POST" //set http method as POST 
-
-        // add headers for the request 
-
-        request.addValue("application/json", forHTTPHeaderField: "Content-Type") // change as per server requirements 
-        request.addValue("application/json", forHTTPHeaderField: "Accept") 
-
-           
-
-        do { 
-
-        // convert parameters to Data and assign dictionary to httpBody of request 
-
-          let deviceToken = UserDefaults.standard.string(forKey: "deviceToken"); 
-          let jsonBodyDict = ["PushNotificationStatus":String(typeInteraction), "DeviceToken": deviceToken, "TrackingId": trackingId]; 
-          request.httpBody = try JSONSerialization.data(withJSONObject: jsonBodyDict, options: .prettyPrinted) 
-
-        } catch let error { 
-          print(error.localizedDescription) 
-          return 
-
-        } 
-
-        // create dataTask using the session object to send data to the server 
-
-        let task = session.dataTask(with: request) { data, response, error in 
-
-        if let error = error { 
-
-          print("Post Request Error: \(error.localizedDescription)") 
-          return 
-        } 
-
- 
-
-        // ensure there is valid response code returned from this HTTP response 
-
-        guard let httpResponse = response as? HTTPURLResponse, (200...299).contains(httpResponse.statusCode) 
-
-        else { 
-
-          print("Invalid Response received from the server") 
-          return 
-        } 
-
-          print("Interaction creation successful.") 
-
-        } 
-
-        // perform the task 
-
-        task.resume() 
-
-    } 
-
-```
----
 
 ## Receive notifications in Android
 
@@ -373,9 +162,12 @@ func createInteraction(typeInteraction: Int, trackingId: String) {
 
 #### Part 1: Obtaining the tracking ID from the notification message
 
+> [!NOTE]
+> Customer Insights - Journeys uses the data message format instead of the notification format. This requires that the client app parse the data payload sent by Customer Insights - Journeys to extract the correct link (tracked or untracked). [Learn more about the differences between notification and data messages](https://firebase.google.com/docs/cloud-messaging/concept-options)
+
 Override the **OnMessageReceived** method of **FirebaseMessagingService** and extract the required data from the payload as shown:
 
-```
+```JAVA
 @Override 
     public void onMessageReceived(RemoteMessage remoteMessage) { 
          
@@ -431,7 +223,7 @@ if (remoteMessage.getData().get("imageUrl") != null) {
 
 Create the notification content and add the tracking ID in the data to generate the event on notification open.
 
-```
+```JAVA
 private void sendNotification(String message, String title, String deeplink, String name, String trackingId) { 
     NotificationManager notificationManager = (NotificationManager) 
         this.getSystemService(Context.NOTIFICATION_SERVICE); 
@@ -500,7 +292,7 @@ public static Bitmap getBitmapFromURL(String src) {
 
 Handle the application open through the notification in **MainActivity** to obtain the tracking ID.
 
-```
+```JAVA
 @Override
         protected void onCreate(Bundle savedInstanceState) { 
         super.onCreate(savedInstanceState); 
@@ -515,180 +307,6 @@ Handle the application open through the notification in **MainActivity** to obta
         FirebaseService.createChannelAndHandleNotifications(getApplicationContext());
 ```
 
-## Send events in Android
+---
 
-Events are used for tracking notifications as follows:
-
-- **Opened:** User tapped on the notification.
-- **Clicked:** User clicked on the link within the notification.
-
-### [Android - API v.1](#tab/android-v1)
-
-**EventTrackingContract**
-
-**JSON Body:**
-
-```
-{
-    "PushNotificationStatus": "Opened",
-    "DeviceToken": {deviceToken}
-}
-```
-
-**Endpoint URL:**
-
-```
-{PublicEndpoint}api/v1.0/orgs/<orgId>/pushchannel/event/trackings/<trackingId>
-```
-
-- **OrgId:** This is the id for your organization, generated when you registered with Dynamics CRM.
-- **TrackingId:** Every notification has a tracking id in its data. This id needs to be sent for event tracking.
-
-To send events, use the following sample code snippets:
-
-#### Part 1: Generate the payload
-
-```
-EventTrackingContract: 
-public class EventTrackingContract { 
-    private static final String LOG_TAG = "DeviceRegistrationContract"; 
-    private EventType mEvent; 
-    private String mDeviceToken; 
-    public EventTrackingContract(EventType eventName, String deviceToken) { 
-        this.setEventName(eventName); 
-        this.setDeviceToken(deviceToken); 
-    } 
-    public EventType getEventName() { 
-        return mEvent; 
-    } 
-    public void setEventName(EventType eventName) { 
-        this.mEvent = eventName; 
-    } 
-    public String getDeviceToken() { 
-        return mDeviceToken; 
-    } 
-    public void setDeviceToken(String deviceToken) { 
-        this.mDeviceToken = deviceToken; 
-    } 
-    public String toJsonString() { 
-        JSONObject jsonObject = new JSONObject(); 
-        try { 
-            jsonObject.put("PushNotificationStatus", mEvent.toString()); 
-            jsonObject.put("DeviceToken", mDeviceToken); 
-        } catch (JSONException e) { 
-            Log.d(LOG_TAG, "Json exception while creating event tracking contract: " + e.getMessage()); 
-        } 
-        return jsonObject.toString(); 
-    } 
-} 
- 
-EventTypeEnum: 
-public enum EventType { 
-    Clicked(0), 
-    Opened(1); 
- 
-    private int value; 
- 
-    private EventType(int value) { 
-        this.value = value; 
-    } 
- 
-    public int getValue() { 
-        return value; 
-    } 
-} 
-```
-
-#### Part 2: HttpClient for sending the event to the server
-
-```
-AsyncTask.execute(new Runnable() { 
-            @Override 
-            public void run() { 
-                SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(context); 
-                String hostname = sharedPreferences.getString(HOST_NAME, ""); 
-                String organizationId = sharedPreferences.getString(ORGANIZATION_ID, ""); 
-                final HashMap<String, String> headers = new HashMap<>(); 
-                headers.put("Content-Type", "application/json"); 
-                final EventTrackingContract eventTrackingContract = new EventTrackingContract(event); 
-                Log.d(TAG, eventTrackingContract.toJsonString()); 
-                String response = HttpClientWrapper.request(String.format("https://%s/api/v1.0/orgs/%s/pushchannel/event/trackings/%s" 
-
-, hostname, organizationId, trackingId), 
-                        "POST", headers, eventTrackingContract.toJsonString()); 
-                Log.d(TAG, response); 
-            } 
-        }); 
-```
-
-### [Android - API v.2](#tab/android-v2)
-
-
-**EventTrackingContract**
-
-**JSON Body:**
-
-```
-{
- "PushNotificationStatus": "Opened", 
- "DeviceToken": {deviceToken}, 
- "TrackingId": {trackingId},
-}
-```
-
-**Endpoint URL:**
-
-```
-{PublicEndpoint}api/v1.0/orgs/<orgId>/pushdatareceiver/events 
-```
-
-- **TrackingId:** Every notification has a tracking id in its data. This id needs to be sent for event tracking.
-
-To send events, use the following sample code snippets:
-
-#### Part 1: Generate the payload
-
-```
-EventTrackingContract: 
-public String toJsonString() { 
-        JSONObject jsonObject = new JSONObject(); 
-        try { 
-            jsonObject.put("PushNotificationStatus", mEvent.toString()); 
-            jsonObject.put("DeviceToken", mDeviceToken); 
-
-            jsonObject.put("TrackingId", trackingId); 
-        } catch (JSONException e) { 
-            Log.d(LOG_TAG, "Json exception while creating event tracking contract: " + e.getMessage()); 
-        } 
-        return jsonObject.toString(); 
-    } 
- 
-EventTypeEnum: 
-public enum EventType { 
-    Clicked(0), 
-    Opened(1); 
-}
-```
-
-#### Part 2: HttpClient for sending the event to the server
-
-```
-AsyncTask.execute(new Runnable() { 
-            @Override 
-            public void run() { 
-                SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(context); 
-                String hostname = sharedPreferences.getString(HOST_NAME, ""); 
-                String organizationId = sharedPreferences.getString(ORGANIZATION_ID, ""); 
-                final HashMap<String, String> headers = new HashMap<>(); 
-                headers.put("Content-Type", "application/json"); 
-                final EventTrackingContract eventTrackingContract = new EventTrackingContract(event); 
-                Log.d(TAG, eventTrackingContract.toJsonString()); 
-                String response = HttpClientWrapper.request(String.format("https://%s/api/v1.0/orgs/%s/pushdatareceiver/events" 
-
-, hostname, organizationId, trackingId), 
-                        "POST", headers, eventTrackingContract.toJsonString()); 
-                Log.d(TAG, response); 
-            } 
-        }); 
-```
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
