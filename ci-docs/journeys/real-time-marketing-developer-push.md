@@ -135,20 +135,22 @@ Otherwise, empty body.
 #### Device Registration Status
 
 ```HTTP
-GET  https://public-eur.mkt.dynamics.com/api/v1.0/orgs/%ORG_ID%/pushdeviceregistration/devices/status/batch
+POST  {PublicEndpoint}/api/v1.0/orgs/%ORG_ID%/pushdeviceregistration/devices/status/
 ```
 
-Request Body: array of up to 100 items
+Request Body:
+
 ```JSON
-[
-    {
-        "RegistrationRequestId": "%REG_REQUEST_ID%",
-        "ApiToken": "%API_TOKEN%"
-    }
-]
+{
+    "RegistrationRequestIds": [
+        "%REG_REQUEST_ID%"
+    ],
+    "MobileAppId": "%MOBILE_APP_ID%",
+    "ApiToken": "%API_TOKEN%"
+}
 ```
 
-Returns: 202 if provided request is valid, 400 otherwise.
+Returns: 200 if provided request is valid, 400 otherwise.
 
 Response Body: an array of items:
 
@@ -165,17 +167,17 @@ Response Body: an array of items:
 ]
 ```
 
-Each item order corresponds to the order from request body array.
+Each item order corresponds to the order from **RegistrationRequestIds** array.
 
 Important note - there might be two reasons when Status might be stuck in "Pending" state:
 
 1. The original device registration request had invalid API token. To prevent malicious actors from performing a DoS attack against an environment by calling "register device" to lead to infinite throttling, such attempts don't produce storing of registration history. Therefore, there's no information to check success.
 1. CRM stays in throttled state for multiple hours, making the status update operation to fail executing its job after multiple retries.
-1. Device registration request was made without x-ms-track-registration header provided.
+1. Device registration request was made without **x-ms-track-registration** header provided.
 
 #### Device Registration Status Webhook
 
-If an x-ms-status-callback-url is provided the URL when a device registration is successful or failed, Customer Insights - Journeys accesses the value of the header.
+If an **x-ms-status-callback-url** is provided the URL when a device registration is successful or failed, Customer Insights - Journeys accesses the value of the header.
 
 POST to URL provided within **x-ms-status-callback-url** header of device registration request
 
