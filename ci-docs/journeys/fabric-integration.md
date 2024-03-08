@@ -1,18 +1,17 @@
 ---
-title: CI Journeys integration with Microsoft Fabric
-description: CI Journeys integration with Microsoft Fabric
+title: Customer Insights - Journeys integration with Microsoft Fabric
+description: Learn about how to integrate Customer Insights - Journeys with Microsoft Fabric.
 ms.date: 03/05/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
-ms.collection: bap-ai-copilot
-ms.custom: 
-  - transparency-note
+search.audienceType: 
+  - admin
+  - customizer
+  - enduser
 ---
 
-# CI Journeys integration with Microsoft Fabric 
-
-## Overview
+# Customer Insights - Journeys integration with Microsoft Fabric
 
 In Customer Insights - Journeys, you can effortlessly create custom Power BI reports tailored to your business needs by using Microsoft Fabric capabilities. Harness seamless access to data to gain a complete understanding of your campaigns, lead management, market performance, and customer engagement, enabling you to identify new opportunities.
 
