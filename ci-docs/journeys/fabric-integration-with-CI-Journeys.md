@@ -27,20 +27,41 @@ Makers can build low-code apps and automations to orchestrate business processes
 ### Setup PBI
 
 1. Launch Power BI with Microsoft Fabric https://app.powerbi.com 
-1. Enable/ check if MS Fabric is enabled for your tenant. More information can be found here: [Enable Microsoft Fabric for your organization | Microsoft Learn](https://learn.microsoft.com/en-us/fabric/admin/fabric-switch)
-1. This feature is only available in Power BI premium workspaces. If you don’t have Power BI premium capacity, you can sign up for a Free Fabric trial capacity by visiting here: [Fabric (preview) trial - Microsoft Fabric | Microsoft Learn](https://learn.microsoft.com/en-us/fabric/get-started/fabric-trial)
-1. It's highly recommended that you create a new Power BI workspace to direct link to Dataverse. The workspace you choose to link with Dataverse must be assigned to a premium capacity in the same region as your Dataverse environment.
+2. Enable/ check if MS Fabric is enabled for your tenant. More information can be found here: [Enable Microsoft Fabric for your organization | Microsoft Learn](https://learn.microsoft.com/en-us/fabric/admin/fabric-switch)
+ 
+  > [!div class="mx-imgBorder"]
+  > ![Set-up Power BI](media/setting-up-pbi.png "Set-up Power BI")
+
+3. This feature is only available in Power BI premium workspaces. If you don’t have Power BI premium capacity, you can sign up for a Free Fabric trial capacity by visiting here: [Fabric (preview) trial - Microsoft Fabric | Microsoft Learn](https://learn.microsoft.com/en-us/fabric/get-started/fabric-trial)
+4. It's highly recommended that you create a new Power BI workspace to direct link to Dataverse. The workspace you choose to link with Dataverse must be assigned to a premium capacity in the same region as your Dataverse environment.
 1. To confirm that you can create a premium workspace, choose workspace settings > premium and ensure that you have **Trial**, **Fabric**, or **Premium** capacity selected.
+
+  > [!div class="mx-imgBorder"]
+  > ![Create your workspace as per your requirement](media/create-your-workspace.png "Create your workspace as per your requirement")
+
+  > [!div class="mx-imgBorder"]
+  > ![Set your workspace settings as per your requirement](media/set-workspace-settings.png "Create your workspace as per your requirement")
 
 ### Link to MS Fabric from Power Apps
 
 1. Launch Power apps maker portal here: https://make.preview.powerapps.com/ 
-1. Choose the right **environment** on the top right side
-1. Select **Tables** on the left navigation pane, and then select **Analyze > Link to Microsoft Fabric** on the command bar. You need to be a system administrator to link to Fabric.
-1. If you're linking to Fabric for the first time, a wizard appears. You can launch Fabric with the same option in subsequent runs. 
-  - The wizard validates your Fabric subscription settings the first time. If needed, the wizard asks you to create a **one-time connection** to Microsoft Fabric within the same step. 
-  - The wizard asks you to select an existing Fabric workspace or to create a new one. **Choose the workspace that you’ve created in step #1**.  
-  - When done, select **Create** in the wizard to create the workspace, create shortcuts, and to perform the initialization for the first time.
+1. Choose the right **environment** on the top right side.
+
+  > [!div class="mx-imgBorder"]
+  > ![Set your environment as per your requirement](media/set-your-environment.png "Set your environment as per your requirement")
+
+3. Select **Tables** on the left navigation pane, and then select **Analyze > Link to Microsoft Fabric** on the command bar. You need to be a system administrator to link to Fabric.
+ 
+  > [!div class="mx-imgBorder"]
+  > ![Select tables and start linking to Microsoft Fabric](media/link-to-microsoft-fabric.png "Select tables and start linking to Microsoft Fabric")
+
+4. If you're linking to Fabric for the first time, a wizard appears. You can launch Fabric with the same option in subsequent runs. 
+    - The wizard validates your Fabric subscription settings the first time. If needed, the wizard asks you to create a **one-time connection** to Microsoft Fabric within the same step. 
+    - The wizard asks you to select an existing Fabric workspace or to create a new one. **Choose the workspace that you’ve created in step #1**.  
+    - When done, select **Create** in the wizard to create the workspace, create shortcuts, and to perform the initialization for the first time.
+
+  > [!div class="mx-imgBorder"]
+  > ![Review and create your wizard to start using workspace](media/create-a-wizard-for-workspace.png "Review and create your wizard to start using workspace")
 
 When complete, Fabric lakehouse opens in a separate browser tab.
 
@@ -54,15 +75,35 @@ The workspace you choose to link with Dataverse must be assigned to a premium ca
 1. Create or open a Workspace.
 1. Create or open a Lakehouse.
 1. From the Lakehouse choose “Get data” and select “New shortcut”.
-1. Supply your Dataverse environment URL (Example: orgname.crm.dynamic.com) and the credentials that you want to access the environment with.  Dataverse shortcuts utilize a delegated authorization model.  All data access through the shortcut utilizes this credential.  This credential must have the System Administration permission in the Dataverse environment.  Be sure to secure access to this workspace before sharing this data with your users.
-1. Choose the table(s) that you want to create a shortcut to.  Each table will be its own shortcut in the Lakehouse. If you’re not seeing all your tables, you may need to configure your Dataverse environment (step 2).  Use “Link to Fabric” to update the available tables.
-Select Dataverse from the shortcut source types.
+
+  > [!div class="mx-imgBorder"]
+  > ![Create a shortcut through lakehouse to get data](media/create-shortcut-from-lakehouse.png "Create a shortcut through lakehouse to get data")
+
+5. Select Dataverse from the shortcut source types.
+
+  > [!div class="mx-imgBorder"]
+  > ![Select your Dataverse from the shortcut](media/select-your-dataverse.png "Select your Dataverse from the shortcut")
+
+6. Supply your Dataverse environment URL (Example: orgname.crm.dynamic.com) and the credentials that you want to access the environment with.  Dataverse shortcuts utilize a delegated authorization model.  All data access through the shortcut utilizes this credential.  This credential must have the System Administration permission in the Dataverse environment.  Be sure to secure access to this workspace before sharing this data with your users.
+7. Choose the table(s) that you want to create a shortcut to.  Each table will be its own shortcut in the Lakehouse. If you’re not seeing all your tables, you may need to configure your Dataverse environment (step 2).  Use “Link to Fabric” to update the available tables.
+
+  > [!div class="mx-imgBorder"]
+  > ![Link to fabric through shortcut](media/link-to-fabric-through-shortcut.png "Link to fabric through shortcut")
+
+  > [!div class="mx-imgBorder"]
+  > ![Link to fabric through shortcut option](media/link-to-fabric-through-shortcut-1.png "Link to fabric through shortcut option")
 
 ### Work with marketing interactions in PBI
 
 1. With your tables now available in your lakehouse, you can now start analyzing your data with Fabric.  Use Dataverse shortcuts with Spark Notebooks, the SQL endpoint, and Power BI reports.
 
 From your lakehouse, you can open the SQL endpoint and start writing queries against your data.
+
+  > [!div class="mx-imgBorder"]
+  > ![Use SQL analytics endpoint](media/use-sql-analytics-endpoint.png "Use SQL analytics endpoint")
+
+  > [!div class="mx-imgBorder"]
+  > ![Use SQL analytics endpoint to write queries](media/use-sql-analytics-endpoint-to-write-queries.png "Use SQL analytics endpoint to write queries")
 
 2. Choose the **Data** tab, and select **New report**. Use Power BI to create a new report from your data or have Copilot help you get started.
 
