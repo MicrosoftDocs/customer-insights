@@ -39,7 +39,7 @@
          href: data-sources-single.md
        - name: Connect to Azure Data Lake Storage
          items:
-          - name: Connect to CDM tables
+          - name: Connect to Common Data Model tables
             href: connect-common-data-model.md
           - name: Connect to Delta tables
             href: connect-delta-lake.md
@@ -51,7 +51,7 @@
          href: connect-dataverse.md
        - name: Add data via Power Query connectors
          href: connect-power-query.md
-    - name: Update a CDM data source to use Delta tables
+    - name: Update a Common Data Model data source to use Delta tables
       href: convert-datalake-to-deltalake.md
     - name: Manage existing data sources
       href: data-sources-manage.md

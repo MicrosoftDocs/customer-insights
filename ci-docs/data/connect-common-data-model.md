@@ -13,7 +13,7 @@ ms.custom: bap-template
 
 [!INCLUDE [azure-ad-to-microsoft-entra-id](../journeys/includes/azure-ad-to-microsoft-entra-id.md)]
 
-Ingest data into Dynamics 365 Customer Insights - Data using your Azure Data Lake Storage account with Common Data Model (CDM) tables. Data ingestion can be full or incremental.
+Ingest data into Dynamics 365 Customer Insights - Data using your Azure Data Lake Storage account with Common Data Model tables. Data ingestion can be full or incremental.
 
 ## Prerequisites
 
@@ -38,7 +38,7 @@ Ingest data into Dynamics 365 Customer Insights - Data using your Azure Data Lak
 
 - For optimal performance, the size of a partition should be 1 GB or less and the number of partition files in a folder must not exceed 1000.
 
-- Data in your Data Lake Storage should follow the Common Data Model standard for storage of your data and have the common data model manifest to represent the schema of the data files (*.csv or *.parquet). The manifest must provide the details of the tables such as table columns and data types, and the data file location and file type. For more information, see [The Common Data Model manifest](/common-data-model/sdk/manifest). If the manifest is not present, Admin users with Storage Blob Data Owner or Storage Blob Data Contributor access can define the schema when ingesting the data.
+- Data in your Data Lake Storage should follow the Common Data Model standard for storage of your data and have the Common Data Model manifest to represent the schema of the data files (*.csv or *.parquet). The manifest must provide the details of the tables such as table columns and data types, and the data file location and file type. For more information, see [The Common Data Model manifest](/common-data-model/sdk/manifest). If the manifest is not present, Admin users with Storage Blob Data Owner or Storage Blob Data Contributor access can define the schema when ingesting the data.
 
   > [!NOTE]
   > If any of the fields in the .parquet files have data type Int96, the data may not display on the **Tables** page. We recommend using standard data types, such as the Unix timestamp format (which represents time as the number of seconds since January 1, 1970, at midnight UTC).
@@ -53,7 +53,7 @@ Ingest data into Dynamics 365 Customer Insights - Data using your Azure Data Lak
 
 1. Select **Add a data source**.
 
-1. Select **Azure Data Lake CDM tables**.
+1. Select **Azure Data Lake Common Data Model tables**.
 
    :::image type="content" source="media/data_sources_ADLS.svg" alt-text="Dialog box to enter connection details for Azure Data Lake with Common Data Model tables." lightbox="media/data_sources_ADLS.svg":::
 

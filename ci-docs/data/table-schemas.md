@@ -35,6 +35,6 @@ For more information, see the documentation about the [Customer Insights - Data 
 
 View tables in the [Common Data Model Table Navigator](https://microsoft.github.io/CDM/). Select a table from the Insights Application section to get the list of Customer Insights - Data tables and their definitions.
 
-:::image type="content" source="media/CDM-table-navigator.png" alt-text="CDM Table Navigator showing CustomerActivity table.":::
+:::image type="content" source="media/cdm-table-navigator.png" alt-text="Common Data Model Table Navigator showing CustomerActivity table.":::
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

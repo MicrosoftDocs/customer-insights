@@ -1,8 +1,8 @@
-<svg width="1306" height="658" aria-owns="html1" data-stacking-context="true" version="1.1" viewBox="2 6 1306 658" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="1459" height="697" aria-owns="html1" data-stacking-context="true" version="1.1" viewBox="1 1 1459 697" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
  <g data-stacking-context="true" data-tag="html" data-z-index="auto">
   <g data-stacking-context="true" data-tag="body" data-z-index="auto" role="document">
    <g data-stacking-layer="rootBackgroundAndBorders">
-    <rect width="1354" height="758" fill="#fff"/>
+    <rect width="1509" height="831" fill="#fff"/>
    </g>
    <g data-stacking-context="true" data-tag="div" data-z-index="auto">
     <g data-stacking-layer="childStackingContextsWithNegativeStackLevels">
@@ -20,21 +20,21 @@
      </g>
     </g>
    </g>
-   <g mask="url(#cz)" data-stacking-context="true" data-tag="div" data-z-index="auto">
+   <g mask="url(#de)" data-stacking-context="true" data-tag="div" data-z-index="auto">
     <g data-stacking-layer="rootBackgroundAndBorders">
-     <rect width="1354" height="758" fill="#faf9f8"/>
+     <rect width="1509" height="831" fill="#faf9f8"/>
     </g>
-    <mask id="cz">
-     <rect width="1354" height="758" fill="#fff"/>
+    <mask id="de">
+     <rect width="1509" height="831" fill="#fff"/>
     </mask>
-    <g mask="url(#cy)" data-stacking-context="true" data-tag="div" data-z-index="auto">
-     <mask id="cy">
-      <rect y="48" width="1354" height="710" fill="#fff"/>
+    <g mask="url(#dd)" data-stacking-context="true" data-tag="div" data-z-index="auto">
+     <mask id="dd">
+      <rect y="48" width="1509" height="783" fill="#fff"/>
      </mask>
      <g data-stacking-context="true" data-tag="div" data-z-index="auto">
       <g data-stacking-layer="rootBackgroundAndBorders">
-       <rect y="48" width="229" height="710" fill="#f3f2f1"/>
-       <line x1="229" x2="229" y1="48" y2="758" stroke="#edebe9" stroke-linecap="square" stroke-width="2px"/>
+       <rect y="48" width="229" height="783" fill="#f3f2f1"/>
+       <line x1="229" x2="229" y1="48" y2="831" stroke="#edebe9" stroke-linecap="square" stroke-width="2px"/>
       </g>
       <g data-stacking-context="true" data-tag="div" data-z-index="auto">
        <g data-stacking-context="true" data-tag="div" data-z-index="auto">
@@ -51,25 +51,25 @@
        </g>
        <g mask="url(#o)" data-stacking-context="true" data-tag="div" data-z-index="auto">
         <mask id="o">
-         <rect y="96" width="227" height="662" fill="#fff"/>
+         <rect y="96" width="227" height="735" fill="#fff"/>
         </mask>
         <g data-stacking-context="true" data-tag="div" data-z-index="auto">
          <g data-stacking-layer="rootBackgroundAndBorders">
-          <rect y="168" width="227" height="590" fill="#f5f5f5"/>
+          <rect y="168" width="227" height="663" fill="#f5f5f5"/>
          </g>
          <g mask="url(#p)" data-stacking-context="true" data-tag="div" data-z-index="auto">
           <g data-stacking-layer="rootBackgroundAndBorders">
-           <rect y="168" width="227" height="590" fill="#f5f5f5"/>
+           <rect y="168" width="227" height="663" fill="#f5f5f5"/>
           </g>
           <mask id="p">
-           <rect y="168" width="227" height="590" fill="#fff"/>
+           <rect y="168" width="227" height="663" fill="#fff"/>
            <rect y="168" width="227" height="0" fill="#fff"/>
-           <rect y="168" width="227" height="590" fill="#fff"/>
-           <rect y="758" width="227" height="0" fill="#fff"/>
+           <rect y="168" width="227" height="663" fill="#fff"/>
+           <rect y="831" width="227" height="0" fill="#fff"/>
           </mask>
           <g mask="url(#r)" data-stacking-context="true" data-tag="div" data-z-index="auto">
            <mask id="r">
-            <rect y="168" width="227" height="590" fill="#fff"/>
+            <rect y="168" width="227" height="663" fill="#fff"/>
            </mask>
            <g data-stacking-context="true" data-tag="div" data-z-index="auto">
             <g data-stacking-context="true" data-tag="nav" data-z-index="auto" role="navigation">
@@ -126,8 +126,8 @@
                   </g>
                   <g data-stacking-context="true" data-tag="span" data-z-index="auto">
                    <g data-stacking-layer="inFlowNonInlineNonPositionedDescendants">
-                    <g mask="url(#bk)" data-stacking-context="true" data-tag="span" data-z-index="auto">
-                     <mask id="bk">
+                    <g mask="url(#bh)" data-stacking-context="true" data-tag="span" data-z-index="auto">
+                     <mask id="bh">
                       <rect x="44" y="248" width="115" height="40" fill="#fff"/>
                      </mask>
                      <text color="rgb(20, 20, 20)" dominant-baseline="text-after-edge" fill="rgb(20, 20, 20)" font-family='wf_segoe-ui_normal, "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif' font-size="14px" font-stretch="100%" font-weight="400" text-decoration="none solid rgb(20, 20, 20)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="none"><tspan x="44.00" y="277.00" lengthAdjust="spacingAndGlyphs" textLength="28.81" xml:space="preserve">Data</tspan></text>
@@ -153,8 +153,8 @@
                         <rect transform="translate(5 297) matrix(1 0 0 1 0 -12)" width="4" height="24" rx="2" ry="2" fill="#2266e3"/>
                        </g>
                        <g data-stacking-layer="inFlowNonInlineNonPositionedDescendants">
-                        <g mask="url(#bj)" data-stacking-context="true" data-tag="span" data-z-index="auto">
-                         <mask id="bj">
+                        <g mask="url(#bg)" data-stacking-context="true" data-tag="span" data-z-index="auto">
+                         <mask id="bg">
                           <rect x="45" y="289" width="126" height="40" fill="#fff"/>
                          </mask>
                          <text color="rgb(36, 36, 36)" dominant-baseline="text-after-edge" fill="rgb(36, 36, 36)" font-family='wf_segoe-ui_semibold, "Segoe UI Semibold", "Segoe WP Semibold", "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif' font-size="14px" font-stretch="100%" font-weight="700" text-decoration="none solid rgb(36, 36, 36)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="none"><tspan x="45.00" y="318.00" lengthAdjust="spacingAndGlyphs" textLength="81.25" xml:space="preserve">Data sources</tspan></text>
@@ -170,8 +170,8 @@
                      <g data-stacking-context="true" data-tag="span" data-z-index="auto">
                       <g data-stacking-context="true" data-tag="span" data-z-index="auto">
                        <g data-stacking-layer="inFlowNonInlineNonPositionedDescendants">
-                        <g mask="url(#bi)" data-stacking-context="true" data-tag="span" data-z-index="auto">
-                         <mask id="bi">
+                        <g mask="url(#bf)" data-stacking-context="true" data-tag="span" data-z-index="auto">
+                         <mask id="bf">
                           <rect x="45" y="331" width="126" height="40" fill="#fff"/>
                          </mask>
                          <text color="rgb(36, 36, 36)" dominant-baseline="text-after-edge" fill="rgb(36, 36, 36)" font-family='wf_segoe-ui_normal, "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif' font-size="14px" font-stretch="100%" font-weight="400" text-decoration="none solid rgb(36, 36, 36)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="none"><tspan x="45.00" y="360.00" lengthAdjust="spacingAndGlyphs" textLength="32.09" xml:space="preserve">Unify</tspan></text>
@@ -187,8 +187,8 @@
                      <g data-stacking-context="true" data-tag="span" data-z-index="auto">
                       <g data-stacking-context="true" data-tag="span" data-z-index="auto">
                        <g data-stacking-layer="inFlowNonInlineNonPositionedDescendants">
-                        <g mask="url(#bh)" data-stacking-context="true" data-tag="span" data-z-index="auto">
-                         <mask id="bh">
+                        <g mask="url(#be)" data-stacking-context="true" data-tag="span" data-z-index="auto">
+                         <mask id="be">
                           <rect x="45" y="373" width="126" height="40" fill="#fff"/>
                          </mask>
                          <text color="rgb(36, 36, 36)" dominant-baseline="text-after-edge" fill="rgb(36, 36, 36)" font-family='wf_segoe-ui_normal, "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif' font-size="14px" font-stretch="100%" font-weight="400" text-decoration="none solid rgb(36, 36, 36)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="none"><tspan x="45.00" y="402.00" lengthAdjust="spacingAndGlyphs" textLength="69.70" xml:space="preserve">Enrichment</tspan></text>
@@ -204,8 +204,8 @@
                      <g data-stacking-context="true" data-tag="span" data-z-index="auto">
                       <g data-stacking-context="true" data-tag="span" data-z-index="auto">
                        <g data-stacking-layer="inFlowNonInlineNonPositionedDescendants">
-                        <g mask="url(#bg)" data-stacking-context="true" data-tag="span" data-z-index="auto">
-                         <mask id="bg">
+                        <g mask="url(#bd)" data-stacking-context="true" data-tag="span" data-z-index="auto">
+                         <mask id="bd">
                           <rect x="45" y="415" width="126" height="40" fill="#fff"/>
                          </mask>
                          <text color="rgb(36, 36, 36)" dominant-baseline="text-after-edge" fill="rgb(36, 36, 36)" font-family='wf_segoe-ui_normal, "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif' font-size="14px" font-stretch="100%" font-weight="400" text-decoration="none solid rgb(36, 36, 36)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="none"><tspan x="45.00" y="444.00" lengthAdjust="spacingAndGlyphs" textLength="55.13" xml:space="preserve">Activities</tspan></text>
@@ -221,8 +221,8 @@
                      <g data-stacking-context="true" data-tag="span" data-z-index="auto">
                       <g data-stacking-context="true" data-tag="span" data-z-index="auto">
                        <g data-stacking-layer="inFlowNonInlineNonPositionedDescendants">
-                        <g mask="url(#bf)" data-stacking-context="true" data-tag="span" data-z-index="auto">
-                         <mask id="bf">
+                        <g mask="url(#bc)" data-stacking-context="true" data-tag="span" data-z-index="auto">
+                         <mask id="bc">
                           <rect x="45" y="457" width="126" height="40" fill="#fff"/>
                          </mask>
                          <text color="rgb(36, 36, 36)" dominant-baseline="text-after-edge" fill="rgb(36, 36, 36)" font-family='wf_segoe-ui_normal, "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif' font-size="14px" font-stretch="100%" font-weight="400" text-decoration="none solid rgb(36, 36, 36)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="none"><tspan x="45.00" y="486.00" lengthAdjust="spacingAndGlyphs" textLength="37.78" xml:space="preserve">Tables</tspan></text>
@@ -238,8 +238,8 @@
                      <g data-stacking-context="true" data-tag="span" data-z-index="auto">
                       <g data-stacking-context="true" data-tag="span" data-z-index="auto">
                        <g data-stacking-layer="inFlowNonInlineNonPositionedDescendants">
-                        <g mask="url(#be)" data-stacking-context="true" data-tag="span" data-z-index="auto">
-                         <mask id="be">
+                        <g mask="url(#bb)" data-stacking-context="true" data-tag="span" data-z-index="auto">
+                         <mask id="bb">
                           <rect x="45" y="499" width="126" height="40" fill="#fff"/>
                          </mask>
                          <text color="rgb(36, 36, 36)" dominant-baseline="text-after-edge" fill="rgb(36, 36, 36)" font-family='wf_segoe-ui_normal, "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif' font-size="14px" font-stretch="100%" font-weight="400" text-decoration="none solid rgb(36, 36, 36)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="none"><tspan x="45.00" y="528.00" lengthAdjust="spacingAndGlyphs" textLength="45.50" xml:space="preserve">Exports</tspan></text>
@@ -252,7 +252,7 @@
                   </g>
                  </g>
                 </g>
-                <g aria-current="false" aria-expanded="false" aria-label="Insights" aria-labelledby="" data-stacking-context="true" data-tag="button" data-z-index="auto" role="menuitem">
+                <g aria-current="false" aria-expanded="false" aria-label="Insights" aria-labelledby="" data-stacking-context="true" data-tag="button" data-z-index="auto" role="menuitem" tabindex="-1">
                  <g data-stacking-layer="rootBackgroundAndBorders">
                   <rect y="540" width="227" height="40" rx="4" ry="4" fill="#f5f5f5"/>
                  </g>
@@ -262,8 +262,8 @@
                   </g>
                   <g data-stacking-context="true" data-tag="span" data-z-index="auto">
                    <g data-stacking-layer="inFlowNonInlineNonPositionedDescendants">
-                    <g mask="url(#bd)" data-stacking-context="true" data-tag="span" data-z-index="auto">
-                     <mask id="bd">
+                    <g mask="url(#bk)" data-stacking-context="true" data-tag="span" data-z-index="auto">
+                     <mask id="bk">
                       <rect x="44" y="540" width="115" height="40" fill="#fff"/>
                      </mask>
                      <text color="rgb(36, 36, 36)" dominant-baseline="text-after-edge" fill="rgb(36, 36, 36)" font-family='wf_segoe-ui_normal, "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif' font-size="14px" font-stretch="100%" font-weight="400" text-decoration="none solid rgb(36, 36, 36)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="none"><tspan x="44.00" y="569.00" lengthAdjust="spacingAndGlyphs" textLength="47.84" xml:space="preserve">Insights</tspan></text>
@@ -275,7 +275,7 @@
                   </g>
                  </g>
                 </g>
-                <g aria-current="false" aria-expanded="false" aria-label="Settings" aria-labelledby="" data-stacking-context="true" data-tag="button" data-z-index="auto" role="menuitem">
+                <g aria-current="false" aria-expanded="false" aria-label="Settings" aria-labelledby="" data-stacking-context="true" data-tag="button" data-z-index="auto" role="menuitem" tabindex="-1">
                  <g data-stacking-layer="rootBackgroundAndBorders">
                   <rect y="580" width="227" height="40" rx="4" ry="4" fill="#f5f5f5"/>
                  </g>
@@ -285,8 +285,8 @@
                   </g>
                   <g data-stacking-context="true" data-tag="span" data-z-index="auto">
                    <g data-stacking-layer="inFlowNonInlineNonPositionedDescendants">
-                    <g mask="url(#bc)" data-stacking-context="true" data-tag="span" data-z-index="auto">
-                     <mask id="bc">
+                    <g mask="url(#bj)" data-stacking-context="true" data-tag="span" data-z-index="auto">
+                     <mask id="bj">
                       <rect x="44" y="580" width="115" height="40" fill="#fff"/>
                      </mask>
                      <text color="rgb(36, 36, 36)" dominant-baseline="text-after-edge" fill="rgb(36, 36, 36)" font-family='wf_segoe-ui_normal, "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif' font-size="14px" font-stretch="100%" font-weight="400" text-decoration="none solid rgb(36, 36, 36)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="none"><tspan x="44.00" y="609.00" lengthAdjust="spacingAndGlyphs" textLength="49.75" xml:space="preserve">Settings</tspan></text>
@@ -317,9 +317,9 @@
                 </g>
                 <g data-stacking-context="true" data-tag="span" data-z-index="auto">
                  <g data-stacking-layer="inFlowNonInlineNonPositionedDescendants">
-                  <g mask="url(#bb)" data-stacking-context="true" data-tag="span" data-z-index="auto">
-                   <mask id="bb">
-                    <rect x="44" y="718" width="115" height="40" fill="#fff"/>
+                  <g mask="url(#bi)" data-stacking-context="true" data-tag="span" data-z-index="auto">
+                   <mask id="bi">
+                    <rect x="44" y="791" width="115" height="40" fill="#fff"/>
                    </mask>
                    <text color="rgb(36, 36, 36)" dominant-baseline="text-after-edge" fill="rgb(36, 36, 36)" font-family='wf_segoe-ui_normal, "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif' font-size="14px" font-stretch="100%" font-weight="400" text-decoration="none solid rgb(36, 36, 36)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="none"/>
                   </g>
@@ -343,7 +343,7 @@
           </g>
           <g data-stacking-context="true" data-tag="div" data-z-index="auto">
            <g data-stacking-context="true" data-tag="div" data-z-index="auto">
-            <g aria-describedby="id__12887" aria-expanded="false" aria-haspopup="true" aria-label="Primary target audience" aria-labelledby="" data-stacking-context="true" data-tag="button" data-z-index="auto" role="button">
+            <g aria-describedby="id__1352" aria-expanded="false" aria-haspopup="true" aria-label="Primary target audience" aria-labelledby="" data-stacking-context="true" data-tag="button" data-z-index="auto" role="button">
              <g data-stacking-context="true" data-tag="span" data-z-index="auto">
               <g data-stacking-context="true" data-tag="span" data-z-index="auto">
                <g font-family='"Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif' font-stretch="100%" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" data-stacking-context="true" data-tag="span" data-z-index="auto">
@@ -365,18 +365,18 @@
      </g>
      <g mask="url(#k)" data-stacking-context="true" data-tag="div" data-z-index="auto">
       <mask id="k">
-       <rect x="229" y="48" width="1077" height="710" fill="#fff"/>
+       <rect x="229" y="48" width="1232" height="783" fill="#fff"/>
       </mask>
       <g mask="url(#cm)" data-stacking-context="true" data-tag="div" data-z-index="auto">
        <g data-stacking-layer="rootBackgroundAndBorders">
-        <rect x="229" y="48" width="1077" height="710" fill="#fff"/>
+        <rect x="229" y="48" width="1232" height="783" fill="#fff"/>
        </g>
        <mask id="cm">
-        <rect x="229" y="48" width="1077" height="710" fill="#fff"/>
+        <rect x="229" y="48" width="1232" height="783" fill="#fff"/>
        </mask>
        <g data-stacking-context="true" data-tag="div" data-z-index="auto">
         <g data-stacking-layer="rootBackgroundAndBorders">
-         <rect x="229" y="48" width="1077" height="33" rx="4" ry="4" fill="#e7efff"/>
+         <rect x="229" y="48" width="1232" height="33" rx="4" ry="4" fill="#e7efff"/>
         </g>
         <g data-stacking-context="true" data-tag="div" data-z-index="auto">
          <g aria-hidden="true" data-stacking-context="true" data-tag="div" data-z-index="auto">
@@ -392,7 +392,7 @@
            <g data-stacking-context="true" data-tag="span" data-z-index="auto">
             <g data-stacking-context="true" data-tag="div" data-z-index="auto">
              <g data-stacking-context="true" data-tag="div" data-z-index="auto">
-              <text color="rgb(36, 36, 36)" dominant-baseline="text-after-edge" fill="rgb(36, 36, 36)" font-family='"Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif' font-size="12px" font-stretch="100%" font-weight="400" text-decoration="none solid rgb(36, 36, 36)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="auto"><tspan x="265.00" y="72.00" lengthAdjust="spacingAndGlyphs" textLength="555.58" xml:space="preserve">This is a shared trial environment. Your co-workers can see your data. You have 320 days left in your trial. </tspan></text>
+              <text color="#242424" dominant-baseline="text-after-edge" fill="#242424" font-family="'Segoe UI', 'Segoe UI Web (West European)', 'Segoe UI', '-apple-system', BlinkMacSystemFont, Roboto, 'Helvetica Neue', sans-serif" font-size="12px" font-stretch="100%" font-weight="400" text-rendering="auto" word-spacing="0px" style="text-decoration-color:#000000;text-decoration-line:none;text-decoration-style:solid" user-select="auto"><tspan x="265" y="72" lengthAdjust="spacingAndGlyphs" xml:space="preserve">This is a shared trial environment. Your co-workers can see your data. You have 14 days left in your trial. </tspan></text>
               <g aria-labelledby="" data-stacking-context="true" data-tag="button" data-z-index="auto" role="button">
                <text color="rgb(56, 115, 224)" dominant-baseline="text-after-edge" fill="rgb(56, 115, 224)" font-family='"Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif' font-size="12px" font-stretch="100%" font-weight="400" text-decoration="underline solid rgb(56, 115, 224)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="text"><tspan x="820.58" y="72.00" lengthAdjust="spacingAndGlyphs" textLength="98.56" xml:space="preserve">Purchase a license.</tspan></text>
               </g>
@@ -405,22 +405,22 @@
        </g>
        <g mask="url(#l)" data-stacking-context="true" data-tag="div" data-z-index="auto">
         <g data-stacking-layer="rootBackgroundAndBorders">
-         <rect x="229" y="81" width="1077" height="677" fill="#fff"/>
+         <rect x="229" y="81" width="1232" height="750" fill="#fff"/>
         </g>
         <mask id="l">
-         <rect x="229" y="81" width="1077" height="677" fill="#fff"/>
+         <rect x="229" y="81" width="1232" height="750" fill="#fff"/>
         </mask>
         <g mask="url(#j)" data-stacking-context="true" data-tag="main" data-z-index="auto" role="main">
          <g data-stacking-layer="rootBackgroundAndBorders">
-          <rect x="229" y="81" width="1077" height="677" fill="#fafafa"/>
+          <rect x="229" y="81" width="1232" height="750" fill="#fafafa"/>
          </g>
          <mask id="j">
-          <rect x="229" y="81" width="1077" height="677" fill="#fff"/>
+          <rect x="229" y="81" width="1232" height="750" fill="#fff"/>
          </mask>
          <g data-stacking-context="true" data-tag="section" data-z-index="auto" role="region">
           <g data-stacking-context="true" data-tag="div" data-z-index="auto">
            <g data-stacking-layer="rootBackgroundAndBorders">
-            <line x1="229" x2="1306" y1="130" y2="130" stroke="#e0e0e0" stroke-linecap="square" stroke-width="1px"/>
+            <line x1="229" x2="1461" y1="130" y2="130" stroke="#e0e0e0" stroke-linecap="square" stroke-width="1px"/>
            </g>
            <g data-stacking-context="true" data-tag="div" data-z-index="auto">
             <g data-stacking-context="true" data-tag="div" data-z-index="auto">
@@ -428,7 +428,7 @@
               <g data-stacking-context="true" data-tag="div" data-z-index="auto">
                <g data-stacking-context="true" data-tag="div" data-z-index="auto" role="menubar">
                 <g data-stacking-layer="rootBackgroundAndBorders">
-                 <rect x="229" y="81" width="1077" height="48" fill="#f5f5f5"/>
+                 <rect x="229" y="81" width="1232" height="48" fill="#f5f5f5"/>
                 </g>
                 <g data-stacking-context="true" data-tag="div" data-z-index="auto" role="group">
                  <g data-stacking-context="true" data-tag="div" data-z-index="auto" role="none">
@@ -505,35 +505,35 @@
                   </g>
                   <g aria-labelledby="" data-stacking-context="true" data-tag="button" data-z-index="auto" role="button" tabindex="-1">
                    <g data-stacking-layer="rootBackgroundAndBorders">
-                    <rect x="1019.9" y="85" width="102.14" height="40" rx="4" ry="4" fill="#f5f5f5"/>
+                    <rect x="1174.9" y="85" width="102.14" height="40" rx="4" ry="4" fill="#f5f5f5"/>
                    </g>
                    <g data-stacking-context="true" data-tag="span" data-z-index="auto">
                     <g aria-hidden="true" data-stacking-context="true" data-tag="i" data-z-index="auto">
-                     <text color="rgb(36, 36, 36)" dominant-baseline="text-after-edge" fill="rgb(36, 36, 36)" font-family="FabricMDL2Icons" font-size="16px" font-stretch="100%" font-weight="400" text-decoration="none solid rgb(36, 36, 36)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="none"><tspan x="1027.86" y="113.00" lengthAdjust="spacingAndGlyphs" textLength="16.00" xml:space="preserve"></tspan></text>
+                     <text color="rgb(36, 36, 36)" dominant-baseline="text-after-edge" fill="rgb(36, 36, 36)" font-family="FabricMDL2Icons" font-size="16px" font-stretch="100%" font-weight="400" text-decoration="none solid rgb(36, 36, 36)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="none"><tspan x="1182.86" y="113.00" lengthAdjust="spacingAndGlyphs" textLength="16.00" xml:space="preserve"></tspan></text>
                     </g>
                     <g data-stacking-context="true" data-tag="span" data-z-index="auto">
                      <g data-stacking-context="true" data-tag="span" data-z-index="auto">
-                      <text color="rgb(36, 36, 36)" dominant-baseline="text-after-edge" fill="rgb(36, 36, 36)" font-family='"Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif' font-size="14px" font-stretch="100%" font-weight="400" text-decoration="none solid rgb(36, 36, 36)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="none"><tspan x="1051.86" y="113.00" lengthAdjust="spacingAndGlyphs" textLength="62.14" xml:space="preserve">1 selected</tspan></text>
+                      <text color="rgb(36, 36, 36)" dominant-baseline="text-after-edge" fill="rgb(36, 36, 36)" font-family='"Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif' font-size="14px" font-stretch="100%" font-weight="400" text-decoration="none solid rgb(36, 36, 36)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="none"><tspan x="1206.86" y="113.00" lengthAdjust="spacingAndGlyphs" textLength="62.14" xml:space="preserve">1 selected</tspan></text>
                      </g>
                     </g>
                    </g>
                   </g>
                   <g data-stacking-context="true" data-tag="div" data-z-index="auto" role="menuitem">
                    <g stroke-linecap="square" stroke-width="1px" data-stacking-layer="rootBackgroundAndBorders">
-                    <line x1="1124" x2="1292" y1="125" y2="125" stroke="#242424"/>
-                    <line x1="1124" x2="1124" y1="85" y2="125" stroke="#ebebeb"/>
+                    <line x1="1279" x2="1447" y1="125" y2="125" stroke="#242424"/>
+                    <line x1="1279" x2="1279" y1="85" y2="125" stroke="#ebebeb"/>
                    </g>
                    <g aria-hidden="true" data-stacking-context="true" data-tag="div" data-z-index="auto">
                     <g aria-hidden="true" data-stacking-context="true" data-tag="i" data-z-index="auto">
-                     <text color="rgb(56, 115, 224)" dominant-baseline="text-after-edge" fill="rgb(56, 115, 224)" font-family="FabricMDL2Icons" font-size="16px" font-stretch="100%" font-weight="400" text-decoration="none solid rgb(56, 115, 224)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="auto"><tspan x="1137.00" y="112.50" lengthAdjust="spacingAndGlyphs" textLength="16.00" xml:space="preserve"></tspan></text>
+                     <text color="rgb(56, 115, 224)" dominant-baseline="text-after-edge" fill="rgb(56, 115, 224)" font-family="FabricMDL2Icons" font-size="16px" font-stretch="100%" font-weight="400" text-decoration="none solid rgb(56, 115, 224)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="auto"><tspan x="1292.00" y="112.50" lengthAdjust="spacingAndGlyphs" textLength="16.00" xml:space="preserve"></tspan></text>
                     </g>
                    </g>
-                   <g mask="url(#dh)" aria-label="Search" aria-labelledby="" aria-placeholder="Search" data-stacking-context="true" data-tag="input" data-z-index="auto" role="searchbox" tabindex="-1">
+                   <g mask="url(#dm)" aria-label="Search" aria-labelledby="" aria-placeholder="Search" data-stacking-context="true" data-tag="input" data-z-index="auto" role="searchbox" tabindex="-1">
                     <g data-stacking-layer="inFlowInlineLevelNonPositionedDescendants">
-                     <text x="1161.00" y="104.75" color="rgb(36, 36, 36)" dominant-baseline="central" fill="rgba(36, 36, 36, 0.75)" font-family='"Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif' font-size="14px" font-stretch="100%" font-weight="400" text-decoration="none solid rgb(36, 36, 36)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="auto" xml:space="preserve">Search</text>
+                     <text x="1316.00" y="104.75" color="rgb(36, 36, 36)" dominant-baseline="central" fill="rgba(36, 36, 36, 0.75)" font-family='"Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif' font-size="14px" font-stretch="100%" font-weight="400" text-decoration="none solid rgb(36, 36, 36)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="auto" xml:space="preserve">Search</text>
                     </g>
-                    <mask id="dh">
-                     <rect x="1161" y="86" width="131" height="37" fill="#fff"/>
+                    <mask id="dm">
+                     <rect x="1316" y="86" width="131" height="37" fill="#fff"/>
                     </mask>
                    </g>
                   </g>
@@ -546,9 +546,9 @@
            </g>
           </g>
          </g>
-         <g mask="url(#da)" data-stacking-context="true" data-tag="section" data-z-index="auto" role="region">
-          <mask id="da">
-           <rect x="229" y="130" width="1077" height="628" fill="#fff"/>
+         <g mask="url(#df)" data-stacking-context="true" data-tag="section" data-z-index="auto" role="region">
+          <mask id="df">
+           <rect x="229" y="130" width="1232" height="701" fill="#fff"/>
           </mask>
           <g data-stacking-context="true" data-tag="div" data-z-index="auto">
            <g data-stacking-context="true" data-tag="div" data-z-index="auto">
@@ -566,9 +566,9 @@
                </g>
               </g>
              </g>
-             <g aria-describedby="MessageBar12594" data-stacking-context="true" data-tag="div" data-z-index="auto" role="region">
+             <g aria-describedby="MessageBar274" data-stacking-context="true" data-tag="div" data-z-index="auto" role="region">
               <g data-stacking-layer="rootBackgroundAndBorders">
-               <rect x="261" y="274" width="1013" height="36" rx="4" ry="4" fill="#e7efff"/>
+               <rect x="261" y="274" width="1168" height="36" rx="4" ry="4" fill="#e7efff"/>
               </g>
               <g data-stacking-context="true" data-tag="div" data-z-index="auto">
                <g aria-hidden="true" data-stacking-context="true" data-tag="div" data-z-index="auto">
@@ -579,17 +579,17 @@
                <g aria-live="polite" data-stacking-context="true" data-tag="div" data-z-index="auto" role="status">
                 <g mask="url(#s)" data-stacking-context="true" data-tag="span" data-z-index="auto">
                  <mask id="s">
-                  <rect x="297" y="282" width="915.97" height="20" fill="#fff"/>
+                  <rect x="297" y="282" width="1091" height="20" fill="#fff"/>
                  </mask>
                  <g data-stacking-context="true" data-tag="span" data-z-index="auto">
                   <g data-stacking-context="true" data-tag="div" data-z-index="auto">
                    <g data-stacking-context="true" data-tag="div" data-z-index="auto">
                     <g data-stacking-context="true" data-tag="span" data-z-index="auto">
-                     <text color="rgb(36, 36, 36)" dominant-baseline="text-after-edge" fill="rgb(36, 36, 36)" font-family='"Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif' font-size="12px" font-stretch="100%" font-weight="600" text-decoration="none solid rgb(36, 36, 36)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="auto"><tspan x="297.00" y="300.00" lengthAdjust="spacingAndGlyphs" textLength="505.34" xml:space="preserve">Improve performance by updating data sources from CDM tables to use existing Delta tables</tspan></text>
+                     <text color="rgb(36, 36, 36)" dominant-baseline="text-after-edge" fill="rgb(36, 36, 36)" font-family='"Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif' font-size="12px" font-stretch="100%" font-weight="600" text-decoration="none solid rgb(36, 36, 36)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="auto"><tspan x="297.00" y="300.00" lengthAdjust="spacingAndGlyphs" textLength="598.20" xml:space="preserve">Improve performance by updating data sources from Common Data Model tables to use existing Delta tables.</tspan></text>
                     </g>
-                    <text color="rgb(36, 36, 36)" dominant-baseline="text-after-edge" fill="rgb(36, 36, 36)" font-family='"Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif' font-size="12px" font-stretch="100%" font-weight="400" text-decoration="none solid rgb(36, 36, 36)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="auto"><tspan x="808.34" y="300.00" lengthAdjust="spacingAndGlyphs" textLength="340.53" xml:space="preserve">Select 'update' on a Data Lake - CDM connection to get started. </tspan></text>
+                    <text color="rgb(36, 36, 36)" dominant-baseline="text-after-edge" fill="rgb(36, 36, 36)" font-family='"Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif' font-size="12px" font-stretch="100%" font-weight="400" text-decoration="none solid rgb(36, 36, 36)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="auto"><tspan x="901.20" y="300.00" lengthAdjust="spacingAndGlyphs" textLength="422.66" xml:space="preserve">Select update on a Data Lake - Common Data Model connection to get started. </tspan></text>
                     <g data-stacking-context="true" data-tag="a" data-z-index="auto" role="link">
-                     <text color="rgb(56, 115, 224)" dominant-baseline="text-after-edge" fill="rgb(56, 115, 224)" font-family='"Segoe UI", helvetica, arial, sans-serif' font-size="12px" font-stretch="100%" font-weight="400" text-decoration="underline solid rgb(56, 115, 224)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="auto"><tspan x="1152.88" y="300.00" lengthAdjust="spacingAndGlyphs" textLength="60.09" xml:space="preserve">Learn more</tspan></text>
+                     <text color="rgb(56, 115, 224)" dominant-baseline="text-after-edge" fill="rgb(56, 115, 224)" font-family='"Segoe UI", helvetica, arial, sans-serif' font-size="12px" font-stretch="100%" font-weight="400" text-decoration="underline solid rgb(56, 115, 224)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="auto"><tspan x="1327.86" y="300.00" lengthAdjust="spacingAndGlyphs" textLength="60.09" xml:space="preserve">Learn more</tspan></text>
                     </g>
                    </g>
                   </g>
@@ -600,7 +600,7 @@
                 <g aria-label="Close" aria-labelledby="" data-stacking-context="true" data-tag="button" data-z-index="auto" role="button">
                  <g data-stacking-context="true" data-tag="span" data-z-index="auto">
                   <g aria-hidden="true" data-stacking-context="true" data-tag="i" data-z-index="auto">
-                   <text color="rgb(36, 36, 36)" dominant-baseline="text-after-edge" fill="rgb(36, 36, 36)" font-family="FabricMDL2Icons" font-size="10px" font-stretch="100%" font-weight="400" text-decoration="none solid rgb(36, 36, 36)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="none"><tspan x="1253.00" y="297.00" lengthAdjust="spacingAndGlyphs" textLength="10.00" xml:space="preserve"></tspan></text>
+                   <text color="rgb(36, 36, 36)" dominant-baseline="text-after-edge" fill="rgb(36, 36, 36)" font-family="FabricMDL2Icons" font-size="10px" font-stretch="100%" font-weight="400" text-decoration="none solid rgb(36, 36, 36)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="none"><tspan x="1408.00" y="297.00" lengthAdjust="spacingAndGlyphs" textLength="10.00" xml:space="preserve"></tspan></text>
                   </g>
                  </g>
                 </g>
@@ -610,14 +610,14 @@
              <g data-stacking-context="true" data-tag="div" data-z-index="auto">
               <g mask="url(#q)" data-stacking-context="true" data-tag="div" data-z-index="auto">
                <g data-stacking-layer="rootBackgroundAndBorders">
-                <rect x="261" y="310" width="1013" height="448" fill="#fff"/>
+                <rect x="261" y="310" width="1168" height="521" fill="#fff"/>
                </g>
                <mask id="q">
-                <rect x="261" y="310" width="1013" height="448" fill="#fff"/>
+                <rect x="261" y="310" width="1168" height="521" fill="#fff"/>
                </mask>
                <g data-stacking-context="true" data-tag="div" data-z-index="auto">
                 <g data-stacking-layer="rootBackgroundAndBorders">
-                 <rect x="261" y="310" width="1013" height="286" fill="#fff"/>
+                 <rect x="261" y="310" width="1168" height="286" fill="#fff"/>
                 </g>
                 <g data-stacking-context="true" data-tag="div" data-z-index="auto">
                  <g data-stacking-context="true" data-tag="div" data-z-index="auto">
@@ -630,14 +630,14 @@
                         <g data-stacking-context="true" data-tag="div" data-z-index="auto" role="presentation">
                          <g data-stacking-context="true" data-tag="div" data-z-index="auto" role="presentation">
                           <g data-stacking-context="true" data-tag="div" data-z-index="auto" role="presentation">
-                           <g aria-expanded="true" aria-labelledby="GroupHeader12608" aria-rowindex="2" aria-selected="true" data-stacking-context="true" data-tag="div" data-z-index="auto" role="row">
+                           <g aria-expanded="true" aria-labelledby="GroupHeader348" aria-rowindex="2" aria-selected="true" data-stacking-context="true" data-tag="div" data-z-index="auto" role="row">
                             <g data-stacking-layer="rootBackgroundAndBorders">
                              <rect x="261" y="369" width="1434" height="49" fill="#ebebeb"/>
                              <line x1="261" x2="1695" y1="418" y2="418" stroke="#fff" stroke-linecap="square" stroke-width="1px"/>
                             </g>
                             <g data-stacking-context="true" data-tag="div" data-z-index="auto" role="presentation">
                              <g data-stacking-context="true" data-tag="div" data-z-index="auto" role="gridcell">
-                              <g opacity="0" aria-checked="true" aria-label="Toggle element selection" aria-labelledby="GroupHeader12608-check GroupHeader12608" data-stacking-context="true" data-tag="button" data-z-index="auto" role="checkbox">
+                              <g opacity="0" aria-checked="true" aria-label="Toggle element selection" aria-labelledby="GroupHeader348-check GroupHeader348" data-stacking-context="true" data-tag="button" data-z-index="auto" role="checkbox">
                                <g data-stacking-context="true" data-tag="div" data-z-index="auto">
                                 <g data-stacking-context="true" data-tag="span" data-z-index="auto">
                                  <g data-stacking-layer="rootBackgroundAndBorders">
@@ -666,8 +666,8 @@
                                </g>
                               </g>
                              </g>
-                             <g mask="url(#do)" aria-colspan="6" data-stacking-context="true" data-tag="div" data-z-index="auto" role="gridcell">
-                              <mask id="do">
+                             <g mask="url(#dt)" aria-colspan="6" data-stacking-context="true" data-tag="div" data-z-index="auto" role="gridcell">
+                              <mask id="dt">
                                <rect x="345" y="383" width="87.36" height="20" fill="#fff"/>
                               </mask>
                               <g fill="rgb(36, 36, 36)" font-family='"Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif' font-size="16px" font-stretch="100%" font-weight="600" text-decoration="none solid rgb(36, 36, 36)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" data-stacking-context="true" data-tag="span" data-z-index="auto">
@@ -692,7 +692,7 @@
                                  <mask id="al">
                                   <rect x="261" y="418" width="48" height="43" fill="#fff"/>
                                  </mask>
-                                 <g aria-checked="true" aria-label="Row selected" aria-labelledby="row13381-0-checkbox row13381-0-header" data-stacking-context="true" data-tag="div" data-z-index="auto" role="checkbox" tabindex="-1">
+                                 <g aria-checked="true" aria-label="Row selected" aria-labelledby="row1685-0-checkbox row1685-0-header" data-stacking-context="true" data-tag="div" data-z-index="auto" role="checkbox" tabindex="-1">
                                   <g data-stacking-context="true" data-tag="div" data-z-index="auto">
                                    <g data-stacking-context="true" data-tag="span" data-z-index="auto">
                                     <g data-stacking-layer="rootBackgroundAndBorders">
@@ -715,8 +715,8 @@
                                    <rect x="345" y="419" width="270" height="42" fill="#fff"/>
                                   </mask>
                                   <g data-stacking-context="true" data-tag="div" data-z-index="auto">
-                                   <g mask="url(#cx)" data-stacking-context="true" data-tag="div" data-z-index="auto">
-                                    <mask id="cx">
+                                   <g mask="url(#dc)" data-stacking-context="true" data-tag="div" data-z-index="auto">
+                                    <mask id="dc">
                                      <rect x="357" y="419" width="39.55" height="42" fill="#fff"/>
                                     </mask>
                                     <g mask="url(#u)" aria-labelledby="" data-stacking-context="true" data-tag="button" data-z-index="auto" role="link" tabindex="-1">
@@ -735,7 +735,7 @@
                                       </g>
                                      </g>
                                     </g>
-                                    <g aria-controls="id__12619-menu" aria-expanded="true" aria-haspopup="true" aria-label="Show more" aria-labelledby="" data-stacking-context="true" data-tag="button" data-z-index="auto" role="button" tabindex="0">
+                                    <g aria-controls="id__359-menu" aria-expanded="true" aria-haspopup="true" aria-label="Show more" aria-labelledby="" data-stacking-context="true" data-tag="button" data-z-index="auto" role="button" tabindex="0">
                                      <g data-stacking-layer="rootBackgroundAndBorders">
                                       <rect x="575" y="419" width="28" height="42" rx="4" ry="4" fill="#ebebeb"/>
                                      </g>
@@ -752,7 +752,7 @@
                                   <mask id="ac">
                                    <rect x="615" y="419" width="180" height="42" fill="#fff"/>
                                   </mask>
-                                  <text color="rgb(92, 92, 92)" dominant-baseline="text-after-edge" fill="rgb(92, 92, 92)" font-family='"Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif' font-size="12px" font-stretch="100%" font-weight="400" text-decoration="none solid rgb(92, 92, 92)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="none"><tspan x="627.00" y="448.00" lengthAdjust="spacingAndGlyphs" textLength="89.97" xml:space="preserve">Data Lake - CDM</tspan></text>
+                                  <text x="-13.598717" color="#5c5c5c" dominant-baseline="text-after-edge" fill="#5c5c5c" font-family="'Segoe UI', 'Segoe UI Web (West European)', 'Segoe UI', '-apple-system', BlinkMacSystemFont, Roboto, 'Helvetica Neue', sans-serif" font-size="12px" font-stretch="100%" font-weight="400" text-rendering="auto" word-spacing="0px" style="text-decoration-color:#000000;text-decoration-line:none;text-decoration-style:solid" user-select="none"><tspan x="613.40131" y="448" lengthAdjust="spacingAndGlyphs" xml:space="preserve">Data Lake - Common Data Model</tspan></text>
                                  </g>
                                  <g mask="url(#ab)" data-stacking-context="true" data-tag="div" data-z-index="auto" role="gridcell">
                                   <mask id="ab">
@@ -783,18 +783,18 @@
                                   <mask id="z">
                                    <rect x="1155" y="419" width="270" height="42" fill="#fff"/>
                                   </mask>
-                                  <g mask="url(#cu)" data-stacking-context="true" data-tag="span" data-z-index="auto">
-                                   <mask id="cu">
-                                    <rect x="1167" y="430" width="67.91" height="20" fill="#fff"/>
+                                  <g mask="url(#cx)" data-stacking-context="true" data-tag="span" data-z-index="auto">
+                                   <mask id="cx">
+                                    <rect x="1167" y="430" width="73.36" height="20" fill="#fff"/>
                                    </mask>
-                                   <text color="rgb(92, 92, 92)" dominant-baseline="text-after-edge" fill="rgb(92, 92, 92)" font-family='"Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif' font-size="12px" font-stretch="100%" font-weight="400" text-decoration="none solid rgb(92, 92, 92)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="none"><tspan x="1167.00" y="448.00" lengthAdjust="spacingAndGlyphs" textLength="67.91" xml:space="preserve">a month ago</tspan></text>
+                                   <text color="rgb(92, 92, 92)" dominant-baseline="text-after-edge" fill="rgb(92, 92, 92)" font-family='"Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif' font-size="12px" font-stretch="100%" font-weight="400" text-decoration="none solid rgb(92, 92, 92)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="none"><tspan x="1167.00" y="448.00" lengthAdjust="spacingAndGlyphs" textLength="73.36" xml:space="preserve">2 months ago</tspan></text>
                                   </g>
                                  </g>
                                  <g mask="url(#y)" data-stacking-context="true" data-tag="div" data-z-index="auto" role="gridcell">
                                   <mask id="y">
                                    <rect x="1425" y="419" width="270" height="42" fill="#fff"/>
                                   </mask>
-                                  <text color="rgb(92, 92, 92)" dominant-baseline="text-after-edge" fill="rgb(92, 92, 92)" font-family='"Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif' font-size="12px" font-stretch="100%" font-weight="400" text-decoration="none solid rgb(92, 92, 92)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="none"/>
+                                  <text color="rgb(92, 92, 92)" dominant-baseline="text-after-edge" fill="rgb(92, 92, 92)" font-family='"Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif' font-size="12px" font-stretch="100%" font-weight="400" text-decoration="none solid rgb(92, 92, 92)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="none"><tspan x="1437.00" y="448.00" lengthAdjust="spacingAndGlyphs" textLength="135.89" xml:space="preserve">sstabbert@microsoft.com</tspan></text>
                                  </g>
                                 </g>
                                </g>
@@ -802,13 +802,13 @@
                              </g>
                             </g>
                            </g>
-                           <g aria-expanded="true" aria-labelledby="GroupHeader12610" aria-rowindex="4" aria-selected="false" data-stacking-context="true" data-tag="div" data-z-index="auto" role="row" tabindex="0">
+                           <g aria-expanded="true" aria-labelledby="GroupHeader350" aria-rowindex="4" aria-selected="false" data-stacking-context="true" data-tag="div" data-z-index="auto" role="row">
                             <g data-stacking-layer="rootBackgroundAndBorders">
                              <line x1="261" x2="1695" y1="510" y2="510" stroke="#fff" stroke-linecap="square" stroke-width="1px"/>
                             </g>
                             <g data-stacking-context="true" data-tag="div" data-z-index="auto" role="presentation">
                              <g data-stacking-context="true" data-tag="div" data-z-index="auto" role="gridcell">
-                              <g opacity="0" aria-checked="false" aria-label="Toggle element selection" aria-labelledby="GroupHeader12610-check GroupHeader12610" data-stacking-context="true" data-tag="button" data-z-index="auto" role="checkbox">
+                              <g opacity="0" aria-checked="false" aria-label="Toggle element selection" aria-labelledby="GroupHeader350-check GroupHeader350" data-stacking-context="true" data-tag="button" data-z-index="auto" role="checkbox">
                                <g data-stacking-context="true" data-tag="div" data-z-index="auto">
                                 <g aria-hidden="true" data-stacking-context="true" data-tag="i" data-z-index="auto">
                                  <g data-stacking-layer="rootBackgroundAndBorders">
@@ -825,14 +825,14 @@
                               </g>
                              </g>
                              <g data-stacking-context="true" data-tag="div" data-z-index="auto" role="gridcell">
-                              <g aria-expanded="true" aria-label="expand collapse group" aria-labelledby="" data-stacking-context="true" data-tag="button" data-z-index="auto" role="button" tabindex="-1">
+                              <g aria-expanded="true" aria-label="expand collapse group" aria-labelledby="" data-stacking-context="true" data-tag="button" data-z-index="auto" role="button">
                                <g aria-hidden="true" data-stacking-context="true" data-tag="i" data-z-index="auto">
                                 <text color="rgb(92, 92, 92)" dominant-baseline="text-after-edge" fill="rgb(92, 92, 92)" font-family="FabricMDL2Icons-3" font-size="12px" font-stretch="100%" font-weight="400" text-decoration="none solid rgb(92, 92, 92)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="none"><tspan x="321.00" y="491.00" lengthAdjust="spacingAndGlyphs" textLength="12.00" xml:space="preserve"></tspan></text>
                                </g>
                               </g>
                              </g>
-                             <g mask="url(#dn)" aria-colspan="6" data-stacking-context="true" data-tag="div" data-z-index="auto" role="gridcell">
-                              <mask id="dn">
+                             <g mask="url(#ds)" aria-colspan="6" data-stacking-context="true" data-tag="div" data-z-index="auto" role="gridcell">
+                              <mask id="ds">
                                <rect x="345" y="475" width="180.77" height="20" fill="#fff"/>
                               </mask>
                               <g fill="rgb(36, 36, 36)" font-family='"Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif' font-size="16px" font-stretch="100%" font-weight="600" text-decoration="none solid rgb(36, 36, 36)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" data-stacking-context="true" data-tag="span" data-z-index="auto">
@@ -857,7 +857,7 @@
                                  <mask id="x">
                                   <rect x="261" y="510" width="48" height="43" fill="#fff"/>
                                  </mask>
-                                 <g opacity="0" aria-checked="false" aria-label="Row selected" aria-labelledby="row13381-1-checkbox row13381-1-header" data-stacking-context="true" data-tag="div" data-z-index="auto" role="checkbox" tabindex="-1">
+                                 <g opacity="0" aria-checked="false" aria-label="Row selected" aria-labelledby="row1685-1-checkbox row1685-1-header" data-stacking-context="true" data-tag="div" data-z-index="auto" role="checkbox" tabindex="-1">
                                   <g data-stacking-context="true" data-tag="div" data-z-index="auto">
                                    <g aria-hidden="true" data-stacking-context="true" data-tag="i" data-z-index="auto">
                                     <g data-stacking-layer="rootBackgroundAndBorders">
@@ -874,12 +874,12 @@
                                    <rect x="345" y="511" width="270" height="42" fill="#fff"/>
                                   </mask>
                                   <g data-stacking-context="true" data-tag="div" data-z-index="auto">
-                                   <g mask="url(#cw)" data-stacking-context="true" data-tag="div" data-z-index="auto">
-                                    <mask id="cw">
+                                   <g mask="url(#db)" data-stacking-context="true" data-tag="div" data-z-index="auto">
+                                    <mask id="db">
                                      <rect x="357" y="511" width="59.13" height="42" fill="#fff"/>
                                     </mask>
-                                    <g mask="url(#dq)" data-stacking-context="true" data-tag="span" data-z-index="auto">
-                                     <mask id="dq">
+                                    <g mask="url(#dv)" data-stacking-context="true" data-tag="span" data-z-index="auto">
+                                     <mask id="dv">
                                       <rect x="357" y="522" width="59.13" height="20" fill="#fff"/>
                                      </mask>
                                      <text color="#242424" dominant-baseline="text-after-edge" fill="#242424" font-family="'Segoe UI', 'Segoe UI Web (West European)', 'Segoe UI', '-apple-system', BlinkMacSystemFont, Roboto, 'Helvetica Neue', sans-serif" font-size="14px" font-stretch="100%" font-weight="400" text-rendering="auto" word-spacing="0px" style="text-decoration-color:#000000;text-decoration-line:none;text-decoration-style:solid" user-select="none"><tspan x="357" y="541" lengthAdjust="spacingAndGlyphs" xml:space="preserve">Loyalty</tspan></text>
@@ -922,8 +922,8 @@
                                   <mask id="ak">
                                    <rect x="1155" y="511" width="270" height="42" fill="#fff"/>
                                   </mask>
-                                  <g mask="url(#ct)" data-stacking-context="true" data-tag="span" data-z-index="auto">
-                                   <mask id="ct">
+                                  <g mask="url(#cw)" data-stacking-context="true" data-tag="span" data-z-index="auto">
+                                   <mask id="cw">
                                     <rect x="1167" y="522" width="67.91" height="20" fill="#fff"/>
                                    </mask>
                                    <text color="rgb(92, 92, 92)" dominant-baseline="text-after-edge" fill="rgb(92, 92, 92)" font-family='"Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif' font-size="12px" font-stretch="100%" font-weight="400" text-decoration="none solid rgb(92, 92, 92)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="none"><tspan x="1167.00" y="540.00" lengthAdjust="spacingAndGlyphs" textLength="67.91" xml:space="preserve">a month ago</tspan></text>
@@ -933,7 +933,7 @@
                                   <mask id="aj">
                                    <rect x="1425" y="511" width="270" height="42" fill="#fff"/>
                                   </mask>
-                                  <text color="rgb(92, 92, 92)" dominant-baseline="text-after-edge" fill="rgb(92, 92, 92)" font-family='"Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif' font-size="12px" font-stretch="100%" font-weight="400" text-decoration="none solid rgb(92, 92, 92)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="none"/>
+                                  <text color="rgb(92, 92, 92)" dominant-baseline="text-after-edge" fill="rgb(92, 92, 92)" font-family='"Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif' font-size="12px" font-stretch="100%" font-weight="400" text-decoration="none solid rgb(92, 92, 92)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="none"><tspan x="1437.00" y="540.00" lengthAdjust="spacingAndGlyphs" textLength="135.89" xml:space="preserve">sstabbert@microsoft.com</tspan></text>
                                  </g>
                                 </g>
                                </g>
@@ -946,7 +946,7 @@
                                  <mask id="ai">
                                   <rect x="261" y="553" width="48" height="43" fill="#fff"/>
                                  </mask>
-                                 <g opacity="0" aria-checked="false" aria-label="Row selected" aria-labelledby="row13381-2-checkbox row13381-2-header" data-stacking-context="true" data-tag="div" data-z-index="auto" role="checkbox" tabindex="-1">
+                                 <g opacity="0" aria-checked="false" aria-label="Row selected" aria-labelledby="row1685-2-checkbox row1685-2-header" data-stacking-context="true" data-tag="div" data-z-index="auto" role="checkbox" tabindex="-1">
                                   <g data-stacking-context="true" data-tag="div" data-z-index="auto">
                                    <g aria-hidden="true" data-stacking-context="true" data-tag="i" data-z-index="auto">
                                     <g data-stacking-layer="rootBackgroundAndBorders">
@@ -963,12 +963,12 @@
                                    <rect x="345" y="554" width="270" height="42" fill="#fff"/>
                                   </mask>
                                   <g data-stacking-context="true" data-tag="div" data-z-index="auto">
-                                   <g mask="url(#cv)" data-stacking-context="true" data-tag="div" data-z-index="auto">
-                                    <mask id="cv">
+                                   <g mask="url(#da)" data-stacking-context="true" data-tag="div" data-z-index="auto">
+                                    <mask id="da">
                                      <rect x="357" y="554" width="123.44" height="42" fill="#fff"/>
                                     </mask>
-                                    <g mask="url(#dp)" data-stacking-context="true" data-tag="span" data-z-index="auto">
-                                     <mask id="dp">
+                                    <g mask="url(#du)" data-stacking-context="true" data-tag="span" data-z-index="auto">
+                                     <mask id="du">
                                       <rect x="357" y="565" width="123.44" height="20" fill="#fff"/>
                                      </mask>
                                      <text color="#242424" dominant-baseline="text-after-edge" fill="#242424" font-family="'Segoe UI', 'Segoe UI Web (West European)', 'Segoe UI', '-apple-system', BlinkMacSystemFont, Roboto, 'Helvetica Neue', sans-serif" font-size="14px" font-stretch="100%" font-weight="400" text-rendering="auto" word-spacing="0px" style="text-decoration-color:#000000;text-decoration-line:none;text-decoration-style:solid" user-select="none"><tspan x="357" y="584" lengthAdjust="spacingAndGlyphs" xml:space="preserve">POS</tspan></text>
@@ -1011,18 +1011,18 @@
                                   <mask id="ae">
                                    <rect x="1155" y="554" width="270" height="42" fill="#fff"/>
                                   </mask>
-                                  <g mask="url(#cs)" data-stacking-context="true" data-tag="span" data-z-index="auto">
-                                   <mask id="cs">
-                                    <rect x="1167" y="565" width="67.91" height="20" fill="#fff"/>
+                                  <g mask="url(#cv)" data-stacking-context="true" data-tag="span" data-z-index="auto">
+                                   <mask id="cv">
+                                    <rect x="1167" y="565" width="73.36" height="20" fill="#fff"/>
                                    </mask>
-                                   <text color="rgb(92, 92, 92)" dominant-baseline="text-after-edge" fill="rgb(92, 92, 92)" font-family='"Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif' font-size="12px" font-stretch="100%" font-weight="400" text-decoration="none solid rgb(92, 92, 92)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="none"><tspan x="1167.00" y="583.00" lengthAdjust="spacingAndGlyphs" textLength="67.91" xml:space="preserve">a month ago</tspan></text>
+                                   <text color="rgb(92, 92, 92)" dominant-baseline="text-after-edge" fill="rgb(92, 92, 92)" font-family='"Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif' font-size="12px" font-stretch="100%" font-weight="400" text-decoration="none solid rgb(92, 92, 92)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="none"><tspan x="1167.00" y="583.00" lengthAdjust="spacingAndGlyphs" textLength="73.36" xml:space="preserve">2 months ago</tspan></text>
                                   </g>
                                  </g>
                                  <g mask="url(#ad)" data-stacking-context="true" data-tag="div" data-z-index="auto" role="gridcell">
                                   <mask id="ad">
                                    <rect x="1425" y="554" width="270" height="42" fill="#fff"/>
                                   </mask>
-                                  <text color="rgb(92, 92, 92)" dominant-baseline="text-after-edge" fill="rgb(92, 92, 92)" font-family='"Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif' font-size="12px" font-stretch="100%" font-weight="400" text-decoration="none solid rgb(92, 92, 92)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="none"/>
+                                  <text color="rgb(92, 92, 92)" dominant-baseline="text-after-edge" fill="rgb(92, 92, 92)" font-family='"Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif' font-size="12px" font-stretch="100%" font-weight="400" text-decoration="none solid rgb(92, 92, 92)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="none"><tspan x="1437.00" y="583.00" lengthAdjust="spacingAndGlyphs" textLength="135.89" xml:space="preserve">sstabbert@microsoft.com</tspan></text>
                                  </g>
                                 </g>
                                </g>
@@ -1044,7 +1044,7 @@
                       <g data-stacking-layer="rootBackgroundAndBorders">
                        <rect x="261" y="310" width="1434" height="59" fill="#fff"/>
                       </g>
-                      <g aria-labelledby="header12603-checkTooltip" data-stacking-context="true" data-tag="div" data-z-index="auto" role="columnheader">
+                      <g aria-labelledby="header343-checkTooltip" data-stacking-context="true" data-tag="div" data-z-index="auto" role="columnheader">
                        <g data-stacking-context="true" data-tag="span" data-z-index="auto">
                         <g opacity="0" aria-checked="false" aria-label="Toggle element selection" data-stacking-context="true" data-tag="div" data-z-index="auto" role="checkbox" tabindex="0">
                          <g data-stacking-context="true" data-tag="div" data-z-index="auto">
@@ -1068,13 +1068,13 @@
                        <g aria-hidden="true" data-stacking-context="true" data-tag="i" data-z-index="auto">
                         <text color="rgb(92, 92, 92)" dominant-baseline="text-after-edge" fill="rgb(92, 92, 92)" font-family="FabricMDL2Icons-3" font-size="12px" font-stretch="100%" font-weight="400" text-decoration="none solid rgb(92, 92, 92)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="none"><tspan x="321.00" y="353.00" lengthAdjust="spacingAndGlyphs" textLength="12.00" xml:space="preserve"></tspan></text>
                        </g>
-                       <g mask="url(#db)" data-stacking-context="true" data-tag="span" data-z-index="auto">
-                        <mask id="db">
+                       <g mask="url(#dg)" data-stacking-context="true" data-tag="span" data-z-index="auto">
+                        <mask id="dg">
                          <rect x="326.5" y="346.5" width="1" height="1" fill="#fff"/>
                         </mask>
                        </g>
                       </g>
-                      <g aria-describedby="header12603-c_name-tooltip" aria-labelledby="header12603-c_name-name" aria-sort="none" data-stacking-context="true" data-tag="div" data-z-index="auto" role="columnheader">
+                      <g aria-describedby="header343-c_name-tooltip" aria-labelledby="header343-c_name-name" aria-sort="none" data-stacking-context="true" data-tag="div" data-z-index="auto" role="columnheader">
                        <g data-stacking-context="true" data-tag="span" data-z-index="auto">
                         <g mask="url(#bx)" data-stacking-context="true" data-tag="span" data-z-index="auto">
                          <mask id="bx">
@@ -1094,7 +1094,7 @@
                         <rect width="0" height="0" fill="#fff"/>
                        </mask>
                       </g>
-                      <g aria-describedby="header12603-sourceKind-tooltip" aria-labelledby="header12603-sourceKind-name" aria-sort="none" data-stacking-context="true" data-tag="div" data-z-index="auto" role="columnheader">
+                      <g aria-describedby="header343-sourceKind-tooltip" aria-labelledby="header343-sourceKind-name" aria-sort="none" data-stacking-context="true" data-tag="div" data-z-index="auto" role="columnheader">
                        <g data-stacking-context="true" data-tag="span" data-z-index="auto">
                         <g mask="url(#bn)" data-stacking-context="true" data-tag="span" data-z-index="auto">
                          <mask id="bn">
@@ -1114,7 +1114,7 @@
                         <rect width="0" height="0" fill="#fff"/>
                        </mask>
                       </g>
-                      <g aria-describedby="header12603-c_entitiesCount-tooltip" aria-labelledby="header12603-c_entitiesCount-name" aria-sort="none" data-stacking-context="true" data-tag="div" data-z-index="auto" role="columnheader">
+                      <g aria-describedby="header343-c_entitiesCount-tooltip" aria-labelledby="header343-c_entitiesCount-name" aria-sort="none" data-stacking-context="true" data-tag="div" data-z-index="auto" role="columnheader">
                        <g data-stacking-context="true" data-tag="span" data-z-index="auto">
                         <g mask="url(#cd)" data-stacking-context="true" data-tag="span" data-z-index="auto">
                          <mask id="cd">
@@ -1134,7 +1134,7 @@
                         <rect width="0" height="0" fill="#fff"/>
                        </mask>
                       </g>
-                      <g aria-describedby="header12603-dagStatus-tooltip" aria-labelledby="header12603-dagStatus-name" aria-sort="none" data-stacking-context="true" data-tag="div" data-z-index="auto" role="columnheader">
+                      <g aria-describedby="header343-dagStatus-tooltip" aria-labelledby="header343-dagStatus-name" aria-sort="none" data-stacking-context="true" data-tag="div" data-z-index="auto" role="columnheader">
                        <g data-stacking-context="true" data-tag="span" data-z-index="auto">
                         <g mask="url(#bq)" data-stacking-context="true" data-tag="span" data-z-index="auto">
                          <mask id="bq">
@@ -1154,7 +1154,7 @@
                         <rect width="0" height="0" fill="#fff"/>
                        </mask>
                       </g>
-                      <g aria-describedby="header12603-c_lastRefresh-tooltip" aria-labelledby="header12603-c_lastRefresh-name" aria-sort="none" data-stacking-context="true" data-tag="div" data-z-index="auto" role="columnheader">
+                      <g aria-describedby="header343-c_lastRefresh-tooltip" aria-labelledby="header343-c_lastRefresh-name" aria-sort="none" data-stacking-context="true" data-tag="div" data-z-index="auto" role="columnheader">
                        <g data-stacking-context="true" data-tag="span" data-z-index="auto">
                         <g mask="url(#ca)" data-stacking-context="true" data-tag="span" data-z-index="auto">
                          <mask id="ca">
@@ -1174,7 +1174,7 @@
                         <rect width="0" height="0" fill="#fff"/>
                        </mask>
                       </g>
-                      <g aria-describedby="header12603-c_owner-tooltip" aria-labelledby="header12603-c_owner-name" aria-sort="none" data-stacking-context="true" data-tag="div" data-z-index="auto" role="columnheader">
+                      <g aria-describedby="header343-c_owner-tooltip" aria-labelledby="header343-c_owner-name" aria-sort="none" data-stacking-context="true" data-tag="div" data-z-index="auto" role="columnheader">
                        <g data-stacking-context="true" data-tag="span" data-z-index="auto">
                         <g mask="url(#bu)" data-stacking-context="true" data-tag="span" data-z-index="auto">
                          <mask id="bu">
@@ -1184,7 +1184,7 @@
                           <mask id="bw">
                            <rect x="1437" y="326" width="79.44" height="42" fill="#fff"/>
                           </mask>
-                          <text color="rgb(36, 36, 36)" dominant-baseline="text-after-edge" fill="rgb(36, 36, 36)" font-family='"Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif' font-size="14px" font-stretch="100%" font-weight="600" text-decoration="none solid rgb(36, 36, 36)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="none"/>
+                          <text color="rgb(36, 36, 36)" dominant-baseline="text-after-edge" fill="rgb(36, 36, 36)" font-family='"Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif' font-size="14px" font-stretch="100%" font-weight="600" text-decoration="none solid rgb(36, 36, 36)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="none"><tspan x="1437.00" y="356.00" lengthAdjust="spacingAndGlyphs" textLength="79.44" xml:space="preserve">Managed by</tspan></text>
                          </g>
                         </g>
                        </g>
@@ -1245,22 +1245,20 @@
            </g>
           </g>
          </g>
+         <text x="642.62726" y="423.20526" fill="#050505" stroke-width="3" xml:space="preserve"><tspan x="642.62726" y="423.20526"/></text>
         </g>
        </g>
       </g>
      </g>
      <g data-stacking-context="true" data-tag="div" data-z-index="auto">
       <g data-stacking-context="true" data-tag="div" data-z-index="auto">
-       <g data-stacking-layer="rootBackgroundAndBorders">
-        <rect x="1306" y="48" width="48" height="710" fill="#f5f5f5"/>
-       </g>
        <g aria-label="Open Copilot chat" aria-labelledby="" data-stacking-context="true" data-tag="button" data-z-index="auto" role="button">
         <g data-stacking-context="true" data-tag="span" data-z-index="auto">
          <g aria-hidden="true" data-stacking-context="true" data-tag="i" data-z-index="auto">
           <g aria-label="Copilot" data-stacking-context="true" data-tag="span" data-z-index="auto" role="presentation">
            <g mask="url(#d)" aria-label="Copilot" data-stacking-context="true" data-tag="svg" data-z-index="auto">
             <mask id="d">
-             <rect x="1318" y="54" width="24" height="24" fill="#fff"/>
+             <rect x="1473" y="54" width="24" height="24" fill="#fff"/>
             </mask>
            </g>
           </g>
@@ -1270,15 +1268,15 @@
        <g data-stacking-context="true" data-tag="div" data-z-index="auto">
         <g data-stacking-context="true" data-tag="div" data-z-index="auto">
          <g data-stacking-context="true" data-tag="div" data-z-index="auto">
-          <g mask="url(#dc)" data-stacking-context="true" data-tag="div" data-z-index="auto">
-           <mask id="dc">
-            <rect x="1330" y="427" width="0" height="0" fill="#fff"/>
+          <g mask="url(#dh)" data-stacking-context="true" data-tag="div" data-z-index="auto">
+           <mask id="dh">
+            <rect x="1485" y="463.5" width="0" height="0" fill="#fff"/>
            </mask>
            <g data-stacking-context="true" data-tag="div" data-z-index="auto">
             <g data-stacking-context="true" data-tag="div" data-z-index="auto">
-             <g mask="url(#df)" data-stacking-context="true" data-tag="svg" data-z-index="auto" role="img">
-              <mask id="df">
-               <rect x="1330" y="427" width="0" height="0" fill="#fff"/>
+             <g mask="url(#dk)" data-stacking-context="true" data-tag="svg" data-z-index="auto" role="img">
+              <mask id="dk">
+               <rect x="1485" y="463.5" width="0" height="0" fill="#fff"/>
               </mask>
              </g>
              <g aria-level="1" data-stacking-context="true" data-tag="h1" data-z-index="auto" role="heading">
@@ -1287,9 +1285,9 @@
              <g data-stacking-context="true" data-tag="div" data-z-index="auto">
               <text color="rgb(97, 97, 97)" dominant-baseline="text-after-edge" fill="rgb(97, 97, 97)" font-family='"Segoe UI", "Segoe UI Web (West European)", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif' font-size="12px" font-stretch="100%" font-weight="600" text-decoration="none solid rgb(97, 97, 97)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="auto"/>
              </g>
-             <g mask="url(#cp)" aria-label="reload-chat-button" aria-labelledby="" data-stacking-context="true" data-tag="button" data-z-index="auto" role="button">
-              <mask id="cp">
-               <rect x="1330" y="427" width="0" height="0" fill="#fff"/>
+             <g mask="url(#cs)" aria-label="reload-chat-button" aria-labelledby="" data-stacking-context="true" data-tag="button" data-z-index="auto" role="button">
+              <mask id="cs">
+               <rect x="1485" y="463.5" width="0" height="0" fill="#fff"/>
               </mask>
               <g data-stacking-context="true" data-tag="span" data-z-index="auto">
                <g mask="url(#cl)" aria-hidden="true" data-stacking-context="true" data-tag="svg" data-z-index="auto">
@@ -1299,14 +1297,14 @@
                </g>
                <g mask="url(#ci)" aria-hidden="true" data-stacking-context="true" data-tag="svg" data-z-index="auto">
                 <mask id="ci">
-                 <rect x="1330" y="427" width="0" height="0" fill="#fff"/>
+                 <rect x="1485" y="463.5" width="0" height="0" fill="#fff"/>
                 </mask>
                </g>
               </g>
              </g>
-             <g mask="url(#co)" aria-label="close-chat-button" aria-labelledby="" data-stacking-context="true" data-tag="button" data-z-index="auto" role="button">
-              <mask id="co">
-               <rect x="1330" y="427" width="0" height="0" fill="#fff"/>
+             <g mask="url(#cr)" aria-label="close-chat-button" aria-labelledby="" data-stacking-context="true" data-tag="button" data-z-index="auto" role="button">
+              <mask id="cr">
+               <rect x="1485" y="463.5" width="0" height="0" fill="#fff"/>
               </mask>
               <g data-stacking-context="true" data-tag="span" data-z-index="auto">
                <g mask="url(#ck)" aria-hidden="true" data-stacking-context="true" data-tag="svg" data-z-index="auto">
@@ -1316,21 +1314,55 @@
                </g>
                <g mask="url(#ch)" aria-hidden="true" data-stacking-context="true" data-tag="svg" data-z-index="auto">
                 <mask id="ch">
-                 <rect x="1330" y="427" width="0" height="0" fill="#fff"/>
+                 <rect x="1485" y="463.5" width="0" height="0" fill="#fff"/>
                 </mask>
                </g>
               </g>
              </g>
             </g>
            </g>
-           <g mask="url(#dd)" data-stacking-context="true" data-tag="div" data-z-index="auto">
-            <mask id="dd">
-             <rect x="1330" y="427" width="0" height="0" fill="#fff"/>
+           <g mask="url(#di)" data-stacking-context="true" data-tag="div" data-z-index="auto">
+            <mask id="di">
+             <rect x="1485" y="463.5" width="0" height="0" fill="#fff"/>
             </mask>
-            <g mask="url(#de)" data-stacking-context="true" data-tag="div" data-z-index="auto">
-             <mask id="de">
-              <rect x="1330" y="427" width="0" height="0" fill="#fff"/>
+            <g mask="url(#dj)" data-stacking-context="true" data-tag="div" data-z-index="auto">
+             <mask id="dj">
+              <rect x="1485" y="463.5" width="0" height="0" fill="#fff"/>
              </mask>
+             <g data-stacking-context="true" data-tag="div" data-z-index="auto">
+              <g data-stacking-context="true" data-tag="div" data-z-index="auto">
+               <g data-stacking-layer="childStackingContextsWithStackLevelZeroAndPositionedDescendantsWithStackLevelZero">
+                <g data-stacking-context="true" data-tag="div" data-z-index="0">
+                 <g data-stacking-context="true" data-tag="div" data-z-index="auto">
+                  <g data-stacking-context="true" data-tag="div" data-z-index="auto">
+                   <text color="rgb(36, 36, 36)" dominant-baseline="text-after-edge" fill="rgb(36, 36, 36)" font-family='"Segoe UI", "Segoe UI Web (West European)", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif' font-size="14px" font-stretch="100%" font-weight="400" text-decoration="none solid rgb(36, 36, 36)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="auto"/>
+                  </g>
+                  <g mask="url(#cp)" aria-disabled="false" data-stacking-context="true" data-tag="div" data-z-index="auto" role="group">
+                   <mask id="cp">
+                    <rect x="1485" y="463.5" width="0" height="0" fill="#fff"/>
+                    <rect x="1485" y="463.5" width="0" height="0" fill="#fff"/>
+                   </mask>
+                   <text color="rgb(36, 36, 36)" dominant-baseline="text-after-edge" fill="rgb(36, 36, 36)" font-family='"Segoe UI", "Segoe UI Web (West European)", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif' font-size="14px" font-stretch="100%" font-weight="400" text-decoration="none solid rgb(36, 36, 36)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="auto"/>
+                  </g>
+                  <g mask="url(#co)" aria-disabled="false" data-stacking-context="true" data-tag="div" data-z-index="auto" role="group">
+                   <mask id="co">
+                    <rect x="1485" y="463.5" width="0" height="0" fill="#fff"/>
+                    <rect x="1485" y="463.5" width="0" height="0" fill="#fff"/>
+                   </mask>
+                   <text color="rgb(36, 36, 36)" dominant-baseline="text-after-edge" fill="rgb(36, 36, 36)" font-family='"Segoe UI", "Segoe UI Web (West European)", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif' font-size="14px" font-stretch="100%" font-weight="400" text-decoration="none solid rgb(36, 36, 36)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="auto"/>
+                  </g>
+                  <g mask="url(#cn)" aria-disabled="false" data-stacking-context="true" data-tag="div" data-z-index="auto" role="group">
+                   <mask id="cn">
+                    <rect x="1485" y="463.5" width="0" height="0" fill="#fff"/>
+                    <rect x="1485" y="463.5" width="0" height="0" fill="#fff"/>
+                   </mask>
+                   <text color="rgb(36, 36, 36)" dominant-baseline="text-after-edge" fill="rgb(36, 36, 36)" font-family='"Segoe UI", "Segoe UI Web (West European)", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif' font-size="14px" font-stretch="100%" font-weight="400" text-decoration="none solid rgb(36, 36, 36)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="auto"/>
+                  </g>
+                 </g>
+                </g>
+               </g>
+              </g>
+             </g>
             </g>
            </g>
            <g data-stacking-context="true" data-tag="div" data-z-index="auto">
@@ -1338,19 +1370,19 @@
              <g data-stacking-context="true" data-tag="div" data-z-index="auto">
               <g mask="url(#f)" data-stacking-context="true" data-tag="span" data-z-index="auto">
                <mask id="f">
-                <rect x="1330" y="427" width="0" height="0" fill="#fff"/>
+                <rect x="1485" y="463.5" width="0" height="0" fill="#fff"/>
                </mask>
               </g>
-              <g mask="url(#cq)" aria-disabled="false" aria-labelledby="" aria-placeholder="Ask a question about how to use Customer Insights." data-stacking-context="true" data-tag="textarea" data-z-index="auto" role="textbox">
-               <mask id="cq">
-                <rect x="1330" y="427" width="0" height="0" fill="#fff"/>
+              <g mask="url(#ct)" aria-disabled="false" aria-labelledby="" aria-placeholder="Ask a question about how to use Customer Insights." data-stacking-context="true" data-tag="textarea" data-z-index="auto" role="textbox">
+               <mask id="ct">
+                <rect x="1485" y="463.5" width="0" height="0" fill="#fff"/>
                </mask>
               </g>
               <g data-stacking-context="true" data-tag="span" data-z-index="auto">
                <text color="rgb(112, 112, 112)" dominant-baseline="text-after-edge" fill="rgb(112, 112, 112)" font-family='"Segoe UI", "Segoe UI Web (West European)", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif' font-size="10px" font-stretch="100%" font-weight="400" text-decoration="none solid rgb(112, 112, 112)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="auto"/>
-               <g mask="url(#cn)" aria-label="Send" aria-labelledby="" data-stacking-context="true" data-tag="button" data-z-index="auto" role="button">
-                <mask id="cn">
-                 <rect x="1330" y="427" width="0" height="0" fill="#fff"/>
+               <g mask="url(#cq)" aria-label="Send" aria-labelledby="" data-stacking-context="true" data-tag="button" data-z-index="auto" role="button">
+                <mask id="cq">
+                 <rect x="1485" y="463.5" width="0" height="0" fill="#fff"/>
                 </mask>
                 <g data-stacking-context="true" data-tag="span" data-z-index="auto">
                  <g mask="url(#cj)" aria-hidden="true" data-stacking-context="true" data-tag="svg" data-z-index="auto">
@@ -1360,7 +1392,7 @@
                  </g>
                  <g mask="url(#cg)" aria-hidden="true" data-stacking-context="true" data-tag="svg" data-z-index="auto">
                   <mask id="cg">
-                   <rect x="1330" y="427" width="0" height="0" fill="#fff"/>
+                   <rect x="1485" y="463.5" width="0" height="0" fill="#fff"/>
                   </mask>
                  </g>
                 </g>
@@ -1385,11 +1417,11 @@
     <g data-stacking-layer="childStackingContextsWithPositiveStackLevels">
      <g data-stacking-context="true" data-tag="div" data-z-index="2">
       <g data-stacking-layer="rootBackgroundAndBorders">
-       <rect width="1354" height="48" fill="#001433"/>
+       <rect width="1509" height="48" fill="#001433"/>
       </g>
       <g data-stacking-context="true" data-tag="div" data-z-index="auto" role="banner">
        <g data-stacking-layer="rootBackgroundAndBorders">
-        <rect width="1354" height="48"/>
+        <rect width="1509" height="48"/>
        </g>
        <g data-stacking-context="true" data-tag="div" data-z-index="auto">
         <g data-stacking-context="true" data-tag="div" data-z-index="auto">
@@ -1410,15 +1442,15 @@
              <g data-stacking-context="true" data-tag="div" data-z-index="auto">
               <g data-stacking-context="true" data-tag="div" data-z-index="auto">
                <g data-stacking-context="true" data-tag="div" data-z-index="auto">
-                <g mask="url(#dj)" aria-label="Organizational Logo" data-stacking-context="true" data-tag="a" data-z-index="auto" role="link">
-                 <mask id="dj">
+                <g mask="url(#do)" aria-label="Organizational Logo" data-stacking-context="true" data-tag="a" data-z-index="auto" role="link">
+                 <mask id="do">
                   <rect x="56" width="120.53" height="48" fill="#fff"/>
                  </mask>
-                 <g mask="url(#di)" aria-label="Organizational Logo" data-stacking-context="true" data-tag="img" data-z-index="auto" role="img">
-                  <mask id="di">
+                 <g mask="url(#dn)" aria-label="Organizational Logo" data-stacking-context="true" data-tag="img" data-z-index="auto" role="img">
+                  <mask id="dn">
                    <rect x="60" y="12" width="112.53" height="24" fill="#fff"/>
                   </mask>
-                  <image id="ds" x="60" y="12" width="112.53" height="24" aria-label="Organizational Logo" xlink:href="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDI0LjAuMywgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9Ik1TLXN5bWJvbCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiCgkgdmlld0JveD0iMCAwIDMzNy42IDcyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAzMzcuNiA3MjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLnN0MHtmaWxsOiNGRkZGRkY7fQoJLnN0MXtmaWxsOiNGMjUwMjI7fQoJLnN0MntmaWxsOiM3RkJBMDA7fQoJLnN0M3tmaWxsOiMwMEE0RUY7fQoJLnN0NHtmaWxsOiNGRkI5MDA7fQo8L3N0eWxlPgo8Zz4KCTxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0xNDAuMywxNC40djQzLjJoLTcuNVYyMy43aC0wLjFsLTEzLjQsMzMuOWgtNWwtMTMuNy0zMy45aC0wLjF2MzMuOWgtNi45VjE0LjRoMTAuOGwxMi40LDMyaDAuMmwxMy4xLTMyCgkJSDE0MC4zeiBNMTQ2LjYsMTcuN2MwLTEuMiwwLjQtMi4yLDEuMy0zYzAuOS0wLjgsMS45LTEuMiwzLjEtMS4yYzEuMywwLDIuNCwwLjQsMy4yLDEuM2MwLjgsMC44LDEuMywxLjgsMS4zLDNzLTAuNCwyLjItMS4zLDMKCQljLTAuOSwwLjgtMS45LDEuMi0zLjIsMS4ycy0yLjMtMC40LTMuMS0xLjJDMTQ3LDE5LjgsMTQ2LjYsMTguOCwxNDYuNiwxNy43eiBNMTU0LjcsMjYuNnYzMWgtNy4zdi0zMQoJCUMxNDcuNCwyNi42LDE1NC43LDI2LjYsMTU0LjcsMjYuNnogTTE3Ni44LDUyLjNjMS4xLDAsMi4zLTAuMywzLjYtMC44czIuNS0xLjIsMy42LTJ2Ni44Yy0xLjIsMC43LTIuNSwxLjItNCwxLjVzLTMuMSwwLjUtNC45LDAuNQoJCWMtNC42LDAtOC4zLTEuNC0xMS4xLTQuM2MtMi45LTIuOS00LjMtNi42LTQuMy0xMWMwLTUsMS41LTkuMSw0LjQtMTIuM2MyLjktMy4yLDctNC44LDEyLjQtNC44YzEuNCwwLDIuNywwLjIsNC4xLDAuNQoJCWMxLjQsMC40LDIuNSwwLjgsMy4zLDEuMnY3Yy0xLjEtMC44LTIuMy0xLjUtMy40LTEuOWMtMS4yLTAuNS0yLjQtMC43LTMuNi0wLjdjLTIuOSwwLTUuMiwwLjktNywyLjhzLTIuNyw0LjQtMi43LDcuNgoJCWMwLDMuMSwwLjgsNS42LDIuNSw3LjNDMTcxLjYsNTEuNCwxNzMuOSw1Mi4zLDE3Ni44LDUyLjN6IE0yMDQuNywyNi4xYzAuNiwwLDEuMSwwLDEuNiwwLjFzMC45LDAuMiwxLjIsMC4zdjcuNAoJCWMtMC40LTAuMy0wLjktMC41LTEuNy0wLjhjLTAuNy0wLjMtMS42LTAuNC0yLjctMC40Yy0xLjgsMC0zLjMsMC44LTQuNSwyLjNzLTEuOSwzLjgtMS45LDd2MTUuNmgtNy4zdi0zMWg3LjN2NC45aDAuMQoJCWMwLjctMS43LDEuNy0zLDMtNEMyMDEuMiwyNi42LDIwMi44LDI2LjEsMjA0LjcsMjYuMXogTTIwNy45LDQyLjZjMC01LjEsMS40LTkuMiw0LjMtMTIuMnM2LjktNC41LDEyLjEtNC41CgkJYzQuOCwwLDguNiwxLjQsMTEuMyw0LjNjMi43LDIuOSw0LjEsNi44LDQuMSwxMS43YzAsNS0xLjQsOS00LjMsMTJjLTIuOSwzLTYuOCw0LjUtMTEuOCw0LjVjLTQuOCwwLTguNi0xLjQtMTEuNC00LjIKCQlDMjA5LjMsNTEuMywyMDcuOSw0Ny40LDIwNy45LDQyLjZ6IE0yMTUuNSw0Mi4zYzAsMy4yLDAuNyw1LjcsMi4yLDcuNGMxLjUsMS43LDMuNiwyLjYsNi4zLDIuNmMyLjcsMCw0LjctMC45LDYuMS0yLjYKCQlzMi4xLTQuMiwyLjEtNy42YzAtMy4zLTAuNy01LjgtMi4yLTcuNWMtMS40LTEuNy0zLjQtMi41LTYtMi41Yy0yLjcsMC00LjcsMC45LTYuMiwyLjdDMjE2LjIsMzYuNSwyMTUuNSwzOSwyMTUuNSw0Mi4zegoJCSBNMjUwLjUsMzQuOGMwLDEsMC4zLDEuOSwxLDIuNXMyLjEsMS4zLDQuNCwyLjJjMi45LDEuMiw1LDIuNSw2LjEsMy45YzEuMiwxLjUsMS44LDMuMiwxLjgsNS4zYzAsMi45LTEuMSw1LjMtMy40LDcKCQljLTIuMiwxLjgtNS4zLDIuNy05LjEsMi43Yy0xLjMsMC0yLjctMC4yLTQuMy0wLjVjLTEuNi0wLjMtMi45LTAuNy00LTEuMnYtNy4yYzEuMywwLjksMi44LDEuNyw0LjMsMi4yczIuOSwwLjgsNC4yLDAuOAoJCWMxLjYsMCwyLjktMC4yLDMuNi0wLjdjMC44LTAuNSwxLjItMS4yLDEuMi0yLjNjMC0xLTAuNC0xLjktMS4yLTIuNWMtMC44LTAuNy0yLjQtMS41LTQuNi0yLjRjLTIuNy0xLjEtNC42LTIuNC01LjctMy44CgkJcy0xLjctMy4yLTEuNy01LjRjMC0yLjgsMS4xLTUuMSwzLjMtNi45YzIuMi0xLjgsNS4xLTIuNyw4LjYtMi43YzEuMSwwLDIuMywwLjEsMy42LDAuNGMxLjMsMC4yLDIuNSwwLjYsMy40LDAuOVYzNAoJCWMtMS0wLjYtMi4xLTEuMi0zLjQtMS43cy0yLjYtMC43LTMuOC0wLjdjLTEuNCwwLTIuNSwwLjMtMy4yLDAuOEMyNTAuOSwzMy4xLDI1MC41LDMzLjgsMjUwLjUsMzQuOHogTTI2Ni45LDQyLjYKCQljMC01LjEsMS40LTkuMiw0LjMtMTIuMnM2LjktNC41LDEyLjEtNC41YzQuOCwwLDguNiwxLjQsMTEuMyw0LjNjMi43LDIuOSw0LjEsNi44LDQuMSwxMS43YzAsNS0xLjQsOS00LjMsMTIKCQljLTIuOSwzLTYuOCw0LjUtMTEuOCw0LjVjLTQuOCwwLTguNi0xLjQtMTEuNC00LjJDMjY4LjQsNTEuMywyNjYuOSw0Ny40LDI2Ni45LDQyLjZ6IE0yNzQuNSw0Mi4zYzAsMy4yLDAuNyw1LjcsMi4yLDcuNAoJCWMxLjUsMS43LDMuNiwyLjYsNi4zLDIuNmMyLjcsMCw0LjctMC45LDYuMS0yLjZzMi4xLTQuMiwyLjEtNy42YzAtMy4zLTAuNy01LjgtMi4yLTcuNWMtMS40LTEuNy0zLjQtMi41LTYtMi41CgkJYy0yLjcsMC00LjcsMC45LTYuMiwyLjdDMjc1LjMsMzYuNSwyNzQuNSwzOSwyNzQuNSw0Mi4zeiBNMzIyLjksMzIuNkgzMTJ2MjVoLTcuNHYtMjVoLTUuMnYtNmg1LjJ2LTQuM2MwLTMuMywxLjEtNS45LDMuMi04CgkJczQuOC0zLjEsOC4xLTMuMWMwLjksMCwxLjcsMCwyLjQsMC4xYzAuNywwLjEsMS4zLDAuMiwxLjgsMC40VjE4Yy0wLjItMC4xLTAuNy0wLjMtMS4zLTAuNWMtMC42LTAuMi0xLjMtMC4zLTIuMS0wLjMKCQljLTEuNSwwLTIuNywwLjUtMy41LDEuNGMtMC44LDEtMS4yLDIuNC0xLjIsNC4ydjMuN2gxMC45di03bDcuMy0yLjJ2OS4yaDcuNHY2aC03LjRWNDdjMCwxLjksMC4zLDMuMywxLDRjMC43LDAuOCwxLjgsMS4yLDMuMywxLjIKCQljMC40LDAsMC45LTAuMSwxLjUtMC4zYzAuNi0wLjIsMS4xLTAuNCwxLjYtMC43djZjLTAuNSwwLjMtMS4yLDAuNS0yLjMsMC43Yy0xLjEsMC4yLTIuMSwwLjMtMy4yLDAuM2MtMy4xLDAtNS40LTAuOC02LjktMi41CgkJYy0xLjUtMS42LTIuMy00LjEtMi4zLTcuNFYzMi42eiIvPgoJPGc+CgkJPHJlY3QgY2xhc3M9InN0MSIgd2lkdGg9IjM0LjIiIGhlaWdodD0iMzQuMiIvPgoJCTxyZWN0IHg9IjM3LjgiIGNsYXNzPSJzdDIiIHdpZHRoPSIzNC4yIiBoZWlnaHQ9IjM0LjIiLz4KCQk8cmVjdCB5PSIzNy44IiBjbGFzcz0ic3QzIiB3aWR0aD0iMzQuMiIgaGVpZ2h0PSIzNC4yIi8+CgkJPHJlY3QgeD0iMzcuOCIgeT0iMzcuOCIgY2xhc3M9InN0NCIgd2lkdGg9IjM0LjIiIGhlaWdodD0iMzQuMiIvPgoJPC9nPgo8L2c+Cjwvc3ZnPgo="/>
+                  <image id="dx" x="60" y="12" width="112.53" height="24" aria-label="Organizational Logo" xlink:href="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDI0LjAuMywgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9Ik1TLXN5bWJvbCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiCgkgdmlld0JveD0iMCAwIDMzNy42IDcyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAzMzcuNiA3MjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLnN0MHtmaWxsOiNGRkZGRkY7fQoJLnN0MXtmaWxsOiNGMjUwMjI7fQoJLnN0MntmaWxsOiM3RkJBMDA7fQoJLnN0M3tmaWxsOiMwMEE0RUY7fQoJLnN0NHtmaWxsOiNGRkI5MDA7fQo8L3N0eWxlPgo8Zz4KCTxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0xNDAuMywxNC40djQzLjJoLTcuNVYyMy43aC0wLjFsLTEzLjQsMzMuOWgtNWwtMTMuNy0zMy45aC0wLjF2MzMuOWgtNi45VjE0LjRoMTAuOGwxMi40LDMyaDAuMmwxMy4xLTMyCgkJSDE0MC4zeiBNMTQ2LjYsMTcuN2MwLTEuMiwwLjQtMi4yLDEuMy0zYzAuOS0wLjgsMS45LTEuMiwzLjEtMS4yYzEuMywwLDIuNCwwLjQsMy4yLDEuM2MwLjgsMC44LDEuMywxLjgsMS4zLDNzLTAuNCwyLjItMS4zLDMKCQljLTAuOSwwLjgtMS45LDEuMi0zLjIsMS4ycy0yLjMtMC40LTMuMS0xLjJDMTQ3LDE5LjgsMTQ2LjYsMTguOCwxNDYuNiwxNy43eiBNMTU0LjcsMjYuNnYzMWgtNy4zdi0zMQoJCUMxNDcuNCwyNi42LDE1NC43LDI2LjYsMTU0LjcsMjYuNnogTTE3Ni44LDUyLjNjMS4xLDAsMi4zLTAuMywzLjYtMC44czIuNS0xLjIsMy42LTJ2Ni44Yy0xLjIsMC43LTIuNSwxLjItNCwxLjVzLTMuMSwwLjUtNC45LDAuNQoJCWMtNC42LDAtOC4zLTEuNC0xMS4xLTQuM2MtMi45LTIuOS00LjMtNi42LTQuMy0xMWMwLTUsMS41LTkuMSw0LjQtMTIuM2MyLjktMy4yLDctNC44LDEyLjQtNC44YzEuNCwwLDIuNywwLjIsNC4xLDAuNQoJCWMxLjQsMC40LDIuNSwwLjgsMy4zLDEuMnY3Yy0xLjEtMC44LTIuMy0xLjUtMy40LTEuOWMtMS4yLTAuNS0yLjQtMC43LTMuNi0wLjdjLTIuOSwwLTUuMiwwLjktNywyLjhzLTIuNyw0LjQtMi43LDcuNgoJCWMwLDMuMSwwLjgsNS42LDIuNSw3LjNDMTcxLjYsNTEuNCwxNzMuOSw1Mi4zLDE3Ni44LDUyLjN6IE0yMDQuNywyNi4xYzAuNiwwLDEuMSwwLDEuNiwwLjFzMC45LDAuMiwxLjIsMC4zdjcuNAoJCWMtMC40LTAuMy0wLjktMC41LTEuNy0wLjhjLTAuNy0wLjMtMS42LTAuNC0yLjctMC40Yy0xLjgsMC0zLjMsMC44LTQuNSwyLjNzLTEuOSwzLjgtMS45LDd2MTUuNmgtNy4zdi0zMWg3LjN2NC45aDAuMQoJCWMwLjctMS43LDEuNy0zLDMtNEMyMDEuMiwyNi42LDIwMi44LDI2LjEsMjA0LjcsMjYuMXogTTIwNy45LDQyLjZjMC01LjEsMS40LTkuMiw0LjMtMTIuMnM2LjktNC41LDEyLjEtNC41CgkJYzQuOCwwLDguNiwxLjQsMTEuMyw0LjNjMi43LDIuOSw0LjEsNi44LDQuMSwxMS43YzAsNS0xLjQsOS00LjMsMTJjLTIuOSwzLTYuOCw0LjUtMTEuOCw0LjVjLTQuOCwwLTguNi0xLjQtMTEuNC00LjIKCQlDMjA5LjMsNTEuMywyMDcuOSw0Ny40LDIwNy45LDQyLjZ6IE0yMTUuNSw0Mi4zYzAsMy4yLDAuNyw1LjcsMi4yLDcuNGMxLjUsMS43LDMuNiwyLjYsNi4zLDIuNmMyLjcsMCw0LjctMC45LDYuMS0yLjYKCQlzMi4xLTQuMiwyLjEtNy42YzAtMy4zLTAuNy01LjgtMi4yLTcuNWMtMS40LTEuNy0zLjQtMi41LTYtMi41Yy0yLjcsMC00LjcsMC45LTYuMiwyLjdDMjE2LjIsMzYuNSwyMTUuNSwzOSwyMTUuNSw0Mi4zegoJCSBNMjUwLjUsMzQuOGMwLDEsMC4zLDEuOSwxLDIuNXMyLjEsMS4zLDQuNCwyLjJjMi45LDEuMiw1LDIuNSw2LjEsMy45YzEuMiwxLjUsMS44LDMuMiwxLjgsNS4zYzAsMi45LTEuMSw1LjMtMy40LDcKCQljLTIuMiwxLjgtNS4zLDIuNy05LjEsMi43Yy0xLjMsMC0yLjctMC4yLTQuMy0wLjVjLTEuNi0wLjMtMi45LTAuNy00LTEuMnYtNy4yYzEuMywwLjksMi44LDEuNyw0LjMsMi4yczIuOSwwLjgsNC4yLDAuOAoJCWMxLjYsMCwyLjktMC4yLDMuNi0wLjdjMC44LTAuNSwxLjItMS4yLDEuMi0yLjNjMC0xLTAuNC0xLjktMS4yLTIuNWMtMC44LTAuNy0yLjQtMS41LTQuNi0yLjRjLTIuNy0xLjEtNC42LTIuNC01LjctMy44CgkJcy0xLjctMy4yLTEuNy01LjRjMC0yLjgsMS4xLTUuMSwzLjMtNi45YzIuMi0xLjgsNS4xLTIuNyw4LjYtMi43YzEuMSwwLDIuMywwLjEsMy42LDAuNGMxLjMsMC4yLDIuNSwwLjYsMy40LDAuOVYzNAoJCWMtMS0wLjYtMi4xLTEuMi0zLjQtMS43cy0yLjYtMC43LTMuOC0wLjdjLTEuNCwwLTIuNSwwLjMtMy4yLDAuOEMyNTAuOSwzMy4xLDI1MC41LDMzLjgsMjUwLjUsMzQuOHogTTI2Ni45LDQyLjYKCQljMC01LjEsMS40LTkuMiw0LjMtMTIuMnM2LjktNC41LDEyLjEtNC41YzQuOCwwLDguNiwxLjQsMTEuMyw0LjNjMi43LDIuOSw0LjEsNi44LDQuMSwxMS43YzAsNS0xLjQsOS00LjMsMTIKCQljLTIuOSwzLTYuOCw0LjUtMTEuOCw0LjVjLTQuOCwwLTguNi0xLjQtMTEuNC00LjJDMjY4LjQsNTEuMywyNjYuOSw0Ny40LDI2Ni45LDQyLjZ6IE0yNzQuNSw0Mi4zYzAsMy4yLDAuNyw1LjcsMi4yLDcuNAoJCWMxLjUsMS43LDMuNiwyLjYsNi4zLDIuNmMyLjcsMCw0LjctMC45LDYuMS0yLjZzMi4xLTQuMiwyLjEtNy42YzAtMy4zLTAuNy01LjgtMi4yLTcuNWMtMS40LTEuNy0zLjQtMi41LTYtMi41CgkJYy0yLjcsMC00LjcsMC45LTYuMiwyLjdDMjc1LjMsMzYuNSwyNzQuNSwzOSwyNzQuNSw0Mi4zeiBNMzIyLjksMzIuNkgzMTJ2MjVoLTcuNHYtMjVoLTUuMnYtNmg1LjJ2LTQuM2MwLTMuMywxLjEtNS45LDMuMi04CgkJczQuOC0zLjEsOC4xLTMuMWMwLjksMCwxLjcsMCwyLjQsMC4xYzAuNywwLjEsMS4zLDAuMiwxLjgsMC40VjE4Yy0wLjItMC4xLTAuNy0wLjMtMS4zLTAuNWMtMC42LTAuMi0xLjMtMC4zLTIuMS0wLjMKCQljLTEuNSwwLTIuNywwLjUtMy41LDEuNGMtMC44LDEtMS4yLDIuNC0xLjIsNC4ydjMuN2gxMC45di03bDcuMy0yLjJ2OS4yaDcuNHY2aC03LjRWNDdjMCwxLjksMC4zLDMuMywxLDRjMC43LDAuOCwxLjgsMS4yLDMuMywxLjIKCQljMC40LDAsMC45LTAuMSwxLjUtMC4zYzAuNi0wLjIsMS4xLTAuNCwxLjYtMC43djZjLTAuNSwwLjMtMS4yLDAuNS0yLjMsMC43Yy0xLjEsMC4yLTIuMSwwLjMtMy4yLDAuM2MtMy4xLDAtNS40LTAuOC02LjktMi41CgkJYy0xLjUtMS42LTIuMy00LjEtMi4zLTcuNFYzMi42eiIvPgoJPGc+CgkJPHJlY3QgY2xhc3M9InN0MSIgd2lkdGg9IjM0LjIiIGhlaWdodD0iMzQuMiIvPgoJCTxyZWN0IHg9IjM3LjgiIGNsYXNzPSJzdDIiIHdpZHRoPSIzNC4yIiBoZWlnaHQ9IjM0LjIiLz4KCQk8cmVjdCB5PSIzNy44IiBjbGFzcz0ic3QzIiB3aWR0aD0iMzQuMiIgaGVpZ2h0PSIzNC4yIi8+CgkJPHJlY3QgeD0iMzcuOCIgeT0iMzcuOCIgY2xhc3M9InN0NCIgd2lkdGg9IjM0LjIiIGhlaWdodD0iMzQuMiIvPgoJPC9nPgo8L2c+Cjwvc3ZnPgo="/>
                  </g>
                 </g>
                 <g data-stacking-layer="rootBackgroundAndBorders">
@@ -1432,14 +1464,14 @@
                  <g data-stacking-context="true" data-tag="div" data-z-index="auto">
                   <g aria-labelledby="" data-stacking-context="true" data-tag="button" data-z-index="auto" role="button" tabindex="0">
                    <g data-stacking-layer="rootBackgroundAndBorders">
-                    <rect x="874" width="240" height="48"/>
+                    <rect x="1029" width="240" height="48"/>
                    </g>
                    <g data-stacking-context="true" data-tag="div" data-z-index="auto">
                     <g mask="url(#e)" data-stacking-context="true" data-tag="svg" data-z-index="auto">
                      <mask id="e">
-                      <rect x="890" y="14" width="16" height="16" fill="#fff"/>
+                      <rect x="1045" y="14" width="16" height="16" fill="#fff"/>
                      </mask>
-                     <g transform="translate(890 14)" data-height="16px" data-view-box="" data-width="16px">
+                     <g transform="translate(1045 14)" data-height="16px" data-view-box="" data-width="16px">
                       <g color="rgb(255, 255, 255)">
                        <path d="M15,10h-1.809C13.702,9.117,14,8.094,14,7c0-3.314-2.686-6-6-6S2,3.686,2,7c0,1.094,0.298,2.117,0.809,3H1l-1,5h16L15,10z   M4.854,10.854l-0.708-0.708C3.859,9.795,3.606,9.417,3.422,8.997h1.752c0.182,1.03,0.498,1.933,0.91,2.618  C5.632,11.427,5.228,11.16,4.854,10.854z M6.187,8.997h3.626C9.448,10.873,8.619,12,8,12S6.552,10.873,6.187,8.997z M6,7  c0-0.351,0.019-0.682,0.048-1.003h3.904C9.981,6.318,10,6.649,10,7c0,0.349-0.019,0.679-0.048,0.997H6.048C6.019,7.679,6,7.349,6,7z   M8,2c0.619,0,1.447,1.124,1.812,2.997H6.188C6.553,3.124,7.381,2,8,2z M13,7c0,0.341-0.035,0.675-0.101,0.997h-1.944  C10.982,7.672,11,7.341,11,7c0-0.342-0.018-0.676-0.045-1.003h1.944C12.965,6.321,13,6.657,13,7z M10.826,8.997h1.752  c-0.184,0.42-0.437,0.798-0.723,1.148l-0.708,0.708c-0.373,0.305-0.778,0.573-1.229,0.761C10.328,10.93,10.644,10.027,10.826,8.997z   M12.575,4.997h-1.75c-0.182-1.028-0.498-1.929-0.909-2.612C11.104,2.88,12.058,3.821,12.575,4.997z M6.084,2.385  C5.673,3.068,5.357,3.97,5.175,4.997h-1.75C3.942,3.821,4.896,2.88,6.084,2.385z M3.101,5.997h1.944C5.018,6.324,5,6.658,5,7  c0,0.341,0.018,0.672,0.045,0.997H3.101C3.035,7.675,3,7.341,3,7C3,6.657,3.035,6.321,3.101,5.997z M1.22,14l0.6-3h1.717  C4.635,12.225,6.225,13,8,13s3.365-0.775,4.463-2h1.717l0.6,3H1.22z" color="rgb(255, 255, 255)" fill="#fff"/>
                       </g>
@@ -1448,16 +1480,17 @@
                    </g>
                    <g mask="url(#b)" data-stacking-context="true" data-tag="div" data-z-index="auto">
                     <mask id="b">
-                     <rect x="922" y="8" width="158" height="32" fill="#fff"/>
+                     <rect x="1077" y="8" width="158" height="32" fill="#fff"/>
                     </mask>
                     <g data-stacking-context="true" data-tag="div" data-z-index="auto" role="none">
                      <g data-stacking-context="true" data-tag="div" data-z-index="auto">
-                      <text color="rgb(255, 255, 255)" dominant-baseline="text-after-edge" fill="rgb(255, 255, 255)" font-family="Arial" font-size="11px" font-stretch="100%" font-weight="700" text-decoration="none solid rgb(255, 255, 255)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="auto"><tspan x="922.00" y="22.00" lengthAdjust="spacingAndGlyphs" textLength="22.63" xml:space="preserve">Trial</tspan></text>
+                      <text color="rgb(255, 255, 255)" dominant-baseline="text-after-edge" fill="rgb(255, 255, 255)" font-family="Arial" font-size="11px" font-stretch="100%" font-weight="700" text-decoration="none solid rgb(255, 255, 255)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="auto"><tspan x="1077.00" y="22.00" lengthAdjust="spacingAndGlyphs" textLength="22.63" xml:space="preserve">Trial</tspan></text>
                      </g>
                      <g mask="url(#c)" data-stacking-context="true" data-tag="div" data-z-index="auto">
                       <mask id="c">
-                       <rect x="922" y="24" width="158" height="16" fill="#fff"/>
+                       <rect x="1077" y="24" width="158" height="16" fill="#fff"/>
                       </mask>
+                      <text color="rgb(255, 255, 255)" dominant-baseline="text-after-edge" fill="rgb(255, 255, 255)" font-family="Arial" font-size="14px" font-stretch="100%" font-weight="400" text-decoration="none solid rgb(255, 255, 255)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="auto"><tspan x="1077.00" y="40.00" lengthAdjust="spacingAndGlyphs" textLength="161.88" xml:space="preserve">sstabbert standard demos</tspan></text>
                      </g>
                      <g mask="url(#a)" data-stacking-context="true" data-tag="div" data-z-index="auto">
                       <mask id="a">
@@ -1471,44 +1504,44 @@
                 </g>
                 <g aria-expanded="false" aria-label="Feedback" aria-labelledby="" data-stacking-context="true" data-tag="button" data-z-index="auto" role="button">
                  <g data-stacking-layer="rootBackgroundAndBorders">
-                  <rect x="1114" width="48" height="48"/>
+                  <rect x="1269" width="48" height="48"/>
                  </g>
                  <g aria-hidden="true" data-stacking-context="true" data-tag="div" data-z-index="auto">
                   <g data-stacking-context="true" data-tag="span" data-z-index="auto" role="presentation">
-                   <text color="rgb(255, 255, 255)" dominant-baseline="text-after-edge" fill="rgb(255, 255, 255)" font-family="ShellFabricMDL2IconsLite, ShellFabricMDL2Icons" font-size="16px" font-stretch="100%" font-weight="400" text-decoration="none solid rgb(255, 255, 255)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="auto"><tspan x="1130.00" y="32.00" lengthAdjust="spacingAndGlyphs" textLength="16.00" xml:space="preserve"></tspan></text>
+                   <text color="rgb(255, 255, 255)" dominant-baseline="text-after-edge" fill="rgb(255, 255, 255)" font-family="ShellFabricMDL2IconsLite, ShellFabricMDL2Icons" font-size="16px" font-stretch="100%" font-weight="400" text-decoration="none solid rgb(255, 255, 255)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="auto"><tspan x="1285.00" y="32.00" lengthAdjust="spacingAndGlyphs" textLength="16.00" xml:space="preserve"></tspan></text>
                   </g>
                  </g>
                 </g>
                 <g aria-expanded="false" aria-label="Settings" aria-labelledby="" data-stacking-context="true" data-tag="button" data-z-index="auto" role="button">
                  <g data-stacking-layer="rootBackgroundAndBorders">
-                  <rect x="1162" width="48" height="48"/>
+                  <rect x="1317" width="48" height="48"/>
                  </g>
                  <g aria-hidden="true" data-stacking-context="true" data-tag="div" data-z-index="auto">
                   <g data-stacking-context="true" data-tag="span" data-z-index="auto" role="presentation">
                    <g data-stacking-context="true" data-tag="span" data-z-index="auto">
-                    <text color="rgb(255, 255, 255)" dominant-baseline="text-after-edge" fill="rgb(255, 255, 255)" font-family="ShellFabricMDL2IconsLite, ShellFabricMDL2Icons" font-size="16px" font-stretch="100%" font-weight="400" text-decoration="none solid rgb(255, 255, 255)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="auto"><tspan x="1178.00" y="32.00" lengthAdjust="spacingAndGlyphs" textLength="16.00" xml:space="preserve"></tspan></text>
+                    <text color="rgb(255, 255, 255)" dominant-baseline="text-after-edge" fill="rgb(255, 255, 255)" font-family="ShellFabricMDL2IconsLite, ShellFabricMDL2Icons" font-size="16px" font-stretch="100%" font-weight="400" text-decoration="none solid rgb(255, 255, 255)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="auto"><tspan x="1333.00" y="32.00" lengthAdjust="spacingAndGlyphs" textLength="16.00" xml:space="preserve"></tspan></text>
                    </g>
                   </g>
                  </g>
                 </g>
                 <g aria-expanded="false" aria-label="Notifications" aria-labelledby="" data-stacking-context="true" data-tag="button" data-z-index="auto" role="button">
                  <g data-stacking-layer="rootBackgroundAndBorders">
-                  <rect x="1210" width="48" height="48"/>
+                  <rect x="1365" width="48" height="48"/>
                  </g>
                  <g aria-hidden="true" data-stacking-context="true" data-tag="div" data-z-index="auto">
                   <g data-stacking-context="true" data-tag="span" data-z-index="auto" role="presentation">
-                   <text color="rgb(255, 255, 255)" dominant-baseline="text-after-edge" fill="rgb(255, 255, 255)" font-family="ShellFabricMDL2IconsLite, ShellFabricMDL2Icons" font-size="16px" font-stretch="100%" font-weight="400" text-decoration="none solid rgb(255, 255, 255)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="auto"><tspan x="1226.00" y="32.00" lengthAdjust="spacingAndGlyphs" textLength="16.00" xml:space="preserve"></tspan></text>
+                   <text color="rgb(255, 255, 255)" dominant-baseline="text-after-edge" fill="rgb(255, 255, 255)" font-family="ShellFabricMDL2IconsLite, ShellFabricMDL2Icons" font-size="16px" font-stretch="100%" font-weight="400" text-decoration="none solid rgb(255, 255, 255)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="auto"><tspan x="1381.00" y="32.00" lengthAdjust="spacingAndGlyphs" textLength="16.00" xml:space="preserve"></tspan></text>
                   </g>
                  </g>
                 </g>
                 <g aria-expanded="false" aria-label="Help" aria-labelledby="" data-stacking-context="true" data-tag="button" data-z-index="auto" role="button">
                  <g data-stacking-layer="rootBackgroundAndBorders">
-                  <rect x="1258" width="48" height="48"/>
+                  <rect x="1413" width="48" height="48"/>
                  </g>
                  <g aria-hidden="true" data-stacking-context="true" data-tag="div" data-z-index="auto">
                   <g data-stacking-context="true" data-tag="span" data-z-index="auto" role="presentation">
                    <g data-stacking-context="true" data-tag="span" data-z-index="auto">
-                    <text color="rgb(255, 255, 255)" dominant-baseline="text-after-edge" fill="rgb(255, 255, 255)" font-family="ShellFabricMDL2IconsLite, ShellFabricMDL2Icons" font-size="16px" font-stretch="100%" font-weight="400" text-decoration="none solid rgb(255, 255, 255)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="auto"><tspan x="1274.00" y="32.00" lengthAdjust="spacingAndGlyphs" textLength="16.00" xml:space="preserve"></tspan></text>
+                    <text color="rgb(255, 255, 255)" dominant-baseline="text-after-edge" fill="rgb(255, 255, 255)" font-family="ShellFabricMDL2IconsLite, ShellFabricMDL2Icons" font-size="16px" font-stretch="100%" font-weight="400" text-decoration="none solid rgb(255, 255, 255)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="auto"><tspan x="1429.00" y="32.00" lengthAdjust="spacingAndGlyphs" textLength="16.00" xml:space="preserve"></tspan></text>
                    </g>
                   </g>
                  </g>
@@ -1520,34 +1553,26 @@
            </g>
           </g>
          </g>
-        </g>
-        <g data-stacking-layer="rootBackgroundAndBorders">
-         <rect x="1306" width="48" height="48"/>
-        </g>
-        <g data-stacking-context="true" data-tag="div" data-z-index="auto">
          <g aria-expanded="false" aria-label="Account manager for Wendy Smith (AQUENT LLC)" aria-labelledby="" data-stacking-context="true" data-tag="button" data-z-index="auto" role="button">
-          <g data-stacking-layer="rootBackgroundAndBorders">
-           <rect x="1306" width="48" height="48"/>
-          </g>
           <g data-stacking-context="true" data-tag="div" data-z-index="auto">
-           <g mask="url(#dg)" data-stacking-context="true" data-tag="div" data-z-index="auto">
-            <mask id="dg">
-             <rect x="1306" width="0" height="48" fill="#fff"/>
+           <g mask="url(#dl)" data-stacking-context="true" data-tag="div" data-z-index="auto">
+            <mask id="dl">
+             <rect x="1461" width="0" height="48" fill="#fff"/>
             </mask>
            </g>
            <g data-stacking-context="true" data-tag="div" data-z-index="auto">
-            <g mask="url(#dl)" data-stacking-context="true" data-tag="div" data-z-index="auto">
-             <mask id="dl">
-              <rect x="1314" y="8" width="32" height="32" rx="16" ry="16" fill="#fff"/>
+            <g mask="url(#dq)" data-stacking-context="true" data-tag="div" data-z-index="auto">
+             <mask id="dq">
+              <rect x="1469" y="8" width="32" height="32" rx="16" ry="16" fill="#fff"/>
              </mask>
              <g data-stacking-context="true" data-tag="div" data-z-index="auto">
               <g data-stacking-context="true" data-tag="div" data-z-index="auto">
                <g data-stacking-context="true" data-tag="div" data-z-index="auto">
                 <g mask="url(#m)" data-stacking-context="true" data-tag="div" data-z-index="auto">
                  <mask id="m">
-                  <rect x="1314" y="8" width="32" height="32" rx="16" ry="16" fill="#fff"/>
-                  <rect x="1314" y="8" width="31" height="31" fill="#fff"/>
-                  <rect x="1314" y="8" width="32" height="32" fill="#fff"/>
+                  <rect x="1469" y="8" width="32" height="32" rx="16" ry="16" fill="#fff"/>
+                  <rect x="1469" y="8" width="31" height="31" fill="#fff"/>
+                  <rect x="1469" y="8" width="32" height="32" fill="#fff"/>
                  </mask>
                  <g aria-hidden="true" data-stacking-context="true" data-tag="div" data-z-index="auto">
                   <text color="rgb(255, 255, 255)" dominant-baseline="text-after-edge" fill="rgb(255, 255, 255)" font-family='SegoeUI-Regular-final, "Segoe UI", "Segoe UI Web (West European)", Segoe, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Tahoma, Helvetica, Arial, sans-serif' font-size="13px" font-stretch="100%" font-weight="400" text-decoration="none solid rgb(255, 255, 255)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="auto"/>
@@ -1569,14 +1594,14 @@
          </g>
          <g aria-label="Sign in" data-stacking-context="true" data-tag="a" data-z-index="auto" role="button">
           <g data-stacking-context="true" data-tag="div" data-z-index="auto">
-           <g mask="url(#dm)" data-stacking-context="true" data-tag="div" data-z-index="auto">
-            <mask id="dm">
+           <g mask="url(#dr)" data-stacking-context="true" data-tag="div" data-z-index="auto">
+            <mask id="dr">
              <rect width="0" height="0" fill="#fff"/>
             </mask>
            </g>
            <g data-stacking-context="true" data-tag="div" data-z-index="auto">
-            <g mask="url(#dk)" data-stacking-context="true" data-tag="div" data-z-index="auto">
-             <mask id="dk">
+            <g mask="url(#dp)" data-stacking-context="true" data-tag="div" data-z-index="auto">
+             <mask id="dp">
               <rect width="0" height="0" fill="#fff"/>
              </mask>
             </g>
@@ -1594,10 +1619,21 @@
      <rect width="0" height="0" fill="#fff"/>
     </mask>
    </g>
-   <g mask="url(#cr)" aria-live="assertive" data-stacking-context="true" data-tag="div" data-z-index="auto">
-    <mask id="cr">
-     <rect x="-1" y="757" width="1" height="1" fill="#fff"/>
+   <g mask="url(#cu)" aria-live="assertive" data-stacking-context="true" data-tag="div" data-z-index="auto">
+    <mask id="cu">
+     <rect x="-1" y="830" width="1" height="1" fill="#fff"/>
     </mask>
+   </g>
+   <g mask="url(#cy)" opacity="0" data-stacking-context="true" data-tag="div" data-z-index="auto" tabindex="-1">
+    <mask id="cy">
+     <rect width="1" height="1" fill="#fff"/>
+     <rect x="-99999" y="-99999" width="300" height="150" fill="#fff"/>
+    </mask>
+    <g mask="url(#cz)" data-stacking-context="true" data-tag="canvas" data-z-index="auto">
+     <mask id="cz">
+      <rect x="-99999" y="-99999" width="300" height="150" fill="#fff"/>
+     </mask>
+    </g>
    </g>
    <g data-stacking-layer="childStackingContextsWithPositiveStackLevels">
     <g data-stacking-context="true" data-tag="div" data-z-index="1000000">
@@ -1615,11 +1651,11 @@
           <g data-stacking-context="true" data-tag="div" data-z-index="auto">
            <g data-stacking-layer="rootBackgroundAndBorders">
             <defs>
-             <filter id="dr" x="0" y="0" width="1" height="1">
+             <filter id="dw" x="0" y="0" width="1" height="1">
               <feDropShadow dx="0" dy="0" flood-color="rgba(0, 0, 0, 0.26)" stdDeviation="2"/>
              </filter>
             </defs>
-            <rect x="575" y="461" width="190.89" height="188" rx="4" ry="4" fill="#fff" filter="url(#dr)"/>
+            <rect x="575" y="461" width="190.89" height="188" rx="4" ry="4" fill="#fff" filter="url(#dw)"/>
            </g>
            <g data-stacking-context="true" data-tag="ul" data-z-index="auto" role="presentation">
             <g data-stacking-context="true" data-tag="li" data-z-index="auto" role="presentation">
@@ -1869,7 +1905,9 @@ src: local("helvetica");
 font-family: "arial";			
 src: local("arial");			
 }</style>
- <path d="m576.87 81.827h192.37c0.72517 0 1.309 0.13313 1.309 0.29849v43.767c0 0.16537-0.5838 0.29849-1.309 0.29849h-192.37c-0.72517 0-1.309-0.13312-1.309-0.29849v-43.767c0-0.16536 0.5838-0.29849 1.309-0.29849z" fill="none" stroke="#e91c1c" stroke-width="2.7132"/>
- <path d="m6.9184 110.84h217c0.81804 0 1.4766 0.13264 1.4766 0.29739v43.606c0 0.16476-0.65856 0.29739-1.4766 0.29739h-217c-0.81803 0-1.4766-0.13263-1.4766-0.29739v-43.606c0-0.16475 0.65856-0.29739 1.4766-0.29739z" fill="#f5f5f5"/>
- <path d="m580.84 608.08h181.64c0.68473 0 1.236 0.11168 1.236 0.25039v36.714c0 0.13872-0.55125 0.25039-1.236 0.25039h-181.64c-0.68473 0-1.236-0.11167-1.236-0.25039v-36.714c0-0.13871 0.55125-0.25039 1.236-0.25039z" fill="none" stroke="#e91c1c" stroke-width="2.4148"/>
+ <g stroke-width="3">
+  <path d="m575.73 83.365h180.14c0.67906 0 1.2257 0.12472 1.2257 0.27965v41.004c0 0.15493-0.54668 0.27965-1.2257 0.27965h-180.14c-0.67906 0-1.2257-0.12472-1.2257-0.27965v-41.004c0-0.15492 0.54668-0.27965 1.2257-0.27965z" fill="none" stroke="#e91c1c"/>
+  <path d="m575.01 608.3h180.14c0.67906 0 1.2257 0.12472 1.2257 0.27965v41.004c0 0.15493-0.54668 0.27965-1.2257 0.27965h-180.14c-0.67906 0-1.2257-0.12472-1.2257-0.27965v-41.004c0-0.15493 0.54668-0.27965 1.2257-0.27965z" fill="none" stroke="#e91c1c"/>
+  <rect x="1069" y="21.798" width="191.34" height="21.838" fill="#050505"/>
+ </g>
 </svg>
