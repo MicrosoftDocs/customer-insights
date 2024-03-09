@@ -1,7 +1,7 @@
 ---
 title: Receiving push notifications on mobile devices
-description: Developer - learn how to receive push notifications from Customer Insights - Journeys
-ms.date: 08/22/2023
+description: "Developer: Learn how to receive push notifications from Customer Insights - Journeys."
+ms.date: 03/08/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -11,9 +11,9 @@ search.audienceType:
   - enduser
 ---
 
-# Receiving notifications for push messages on mobile devices
+# Receiving push notifications on mobile devices
 
-To learn more about the overall approach to setting up push notifications in Customer Insights - Journeys, visit the [Push notification setup overview](real-time-marketing-push-setup-overview.md).
+To learn more about the overall approach to setting up push notifications in Customer Insights - Journeys, visit the [Push notification setup overview](real-time-marketing-push-setup-overview.md)
 
 To enable push notifications in Customer Insights - Journeys, you need to complete the following steps:
 
@@ -24,11 +24,11 @@ To enable push notifications in Customer Insights - Journeys, you need to comple
 1. [Interaction reporting for push notifications](real-time-marketing-developer-push-interactions.md)
 
 > [!IMPORTANT]
-> To track links that recipients open in notifications, you must collect customer tracking consent. To learn more about strategies for collecting customer consent in Customer Insights - Journeys, visit the [Consent Management Overview](real-time-marketing-compliance-settings.md)
+> To track links that recipients open in notifications, you must collect customer tracking consent. Learn more about strategies for collecting customer consent in Customer Insights - Journeys: [Consent management overview](real-time-marketing-compliance-settings.md)
 >
-> If you have not collected tracking consent, you must use the **originalLink** URL field described in the following code snippet. If you have acquired consent, you can use the **link** field value, which will be trackable.
+> If you haven't collected tracking consent, you must use the **originalLink** URL field described in the code snippet below. If you have acquired consent, you can use the **link** field value, which is trackable.
 >
-> *PushLinkClicked* will be automatically generated. The URL is a redirect link which will create the interaction if the link from the **link** field is used.
+> *PushLinkClicked* is automatically generated. The URL is a redirect link which creates the interaction if the link from the **link** field is used.
 
 ## Receive push message notifications in iOS
 
@@ -100,7 +100,7 @@ func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive
 
 **2. Sample Swift code snippet to parse the incoming rich push notifications in iOS (notification with image):**
 
-In addition to the didReceive method in AppDelegate we need to add the NotificationExtension to intercept the notification before being displayed, download the image and enrich the notification with the image data. [Learn more](https://developer.apple.com/documentation/usernotifications/unnotificationserviceextension)
+In addition to the `didReceive` method in `AppDelegate`, we need to add the `NotificationExtension` to intercept the notification before being displayed, download the image, and enrich the notification with the image data. Learn more: [UNNotificationServiceExtension](https://developer.apple.com/documentation/usernotifications/unnotificationserviceextension)
 
 ```SWIFT
 class NotificationService: UNNotificationServiceExtension { 
@@ -163,9 +163,9 @@ class NotificationService: UNNotificationServiceExtension {
 #### Part 1: Obtaining the tracking ID from the notification message
 
 > [!NOTE]
-> Customer Insights - Journeys uses the data message format instead of the notification format. This requires that the client app parse the data payload sent by Customer Insights - Journeys to extract the correct link (tracked or untracked). [Learn more about the differences between notification and data messages](https://firebase.google.com/docs/cloud-messaging/concept-options)
+> Customer Insights - Journeys uses the data message format instead of the notification format. This requires the client app to parse the data payload sent by Customer Insights - Journeys to extract the correct link (tracked or untracked). Learn more: [About FCM messages](https://firebase.google.com/docs/cloud-messaging/concept-options)
 
-Override the **OnMessageReceived** method of **FirebaseMessagingService** and extract the required data from the payload as shown:
+Override the `OnMessageReceived` method of `FirebaseMessagingService` and extract the required data from the payload as shown:
 
 ```JAVA
 @Override 
@@ -200,8 +200,6 @@ if (remoteMessage.getData().get("imageUrl") != null) {
     imageUrl = remoteMessage.getData().get("imageUrl"); 
 } 
 
- 
-             
 // If tracking consent has been taken, use link otherwise use 'originalLink' 
             if (remoteMessage.getData().get("link") != null) { 
                 deepLink = remoteMessage.getData().get("link"); 
@@ -271,7 +269,6 @@ private PendingIntent createContentIntent(Context context, String deeplink, Stri
     return PendingIntent.getActivity(this, NOTIFICATION_ID, intent, PendingIntent.FLAG_ONE_SHOT); 
 } 
  
-
 public static Bitmap getBitmapFromURL(String src) { 
     try { 
         URL url = new URL(src); 
@@ -290,7 +287,7 @@ public static Bitmap getBitmapFromURL(String src) {
 
 #### Part 3: Generate a notification opened event
 
-Handle the application open through the notification in **MainActivity** to obtain the tracking ID.
+Handle the application open through the notification in `MainActivity` to obtain the tracking ID.
 
 ```JAVA
 @Override
