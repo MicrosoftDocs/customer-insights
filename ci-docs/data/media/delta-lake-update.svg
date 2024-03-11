@@ -666,8 +666,8 @@
                                </g>
                               </g>
                              </g>
-                             <g mask="url(#eb)" aria-colspan="6" data-stacking-context="true" data-tag="div" data-z-index="auto" role="gridcell">
-                              <mask id="eb">
+                             <g mask="url(#dt)" aria-colspan="6" data-stacking-context="true" data-tag="div" data-z-index="auto" role="gridcell">
+                              <mask id="dt">
                                <rect x="345" y="399" width="87.36" height="20" fill="#fff"/>
                               </mask>
                               <g fill="#242424" font-family='"Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif' font-size="16px" font-stretch="100%" font-weight="600" text-decoration="none solid rgb(36, 36, 36)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" data-stacking-context="true" data-tag="span" data-z-index="auto">
@@ -1255,8 +1255,8 @@
         <g data-stacking-context="true" data-tag="span" data-z-index="auto">
          <g aria-hidden="true" data-stacking-context="true" data-tag="i" data-z-index="auto">
           <g aria-label="Copilot" data-stacking-context="true" data-tag="span" data-z-index="auto" role="presentation">
-           <g mask="url(#ec)" aria-label="Copilot" data-stacking-context="true" data-tag="svg" data-z-index="auto">
-            <mask id="ec">
+           <g mask="url(#d)" aria-label="Copilot" data-stacking-context="true" data-tag="svg" data-z-index="auto">
+            <mask id="d">
              <rect x="1343" y="54" width="24" height="24" fill="#fff"/>
             </mask>
            </g>
@@ -1466,8 +1466,8 @@
                     <rect x="899" width="240" height="48"/>
                    </g>
                    <g data-stacking-context="true" data-tag="div" data-z-index="auto">
-                    <g mask="url(#e)" data-stacking-context="true" data-tag="svg" data-z-index="auto">
-                     <mask id="e">
+                    <g mask="url(#du)" data-stacking-context="true" data-tag="svg" data-z-index="auto">
+                     <mask id="du">
                       <rect x="915" y="14" width="16" height="16" fill="#fff"/>
                      </mask>
                      <g transform="translate(915 14)" data-height="16px" data-view-box="" data-width="16px">
@@ -1477,22 +1477,22 @@
                      </g>
                     </g>
                    </g>
-                   <g mask="url(#ee)" data-stacking-context="true" data-tag="div" data-z-index="auto">
-                    <mask id="ee">
+                   <g mask="url(#b)" data-stacking-context="true" data-tag="div" data-z-index="auto">
+                    <mask id="b">
                      <rect x="947" y="8" width="158" height="32" fill="#fff"/>
                     </mask>
                     <g data-stacking-context="true" data-tag="div" data-z-index="auto" role="none">
                      <g data-stacking-context="true" data-tag="div" data-z-index="auto">
                       <text color="rgb(255, 255, 255)" dominant-baseline="text-after-edge" fill="rgb(255, 255, 255)" font-family="Arial" font-size="11px" font-stretch="100%" font-weight="700" text-decoration="none solid rgb(255, 255, 255)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="auto"><tspan x="947.00" y="22.00" lengthAdjust="spacingAndGlyphs" textLength="22.63" xml:space="preserve">Trial</tspan></text>
                      </g>
-                     <g mask="url(#ed)" data-stacking-context="true" data-tag="div" data-z-index="auto">
-                      <mask id="ed">
+                     <g mask="url(#c)" data-stacking-context="true" data-tag="div" data-z-index="auto">
+                      <mask id="c">
                        <rect x="947" y="24" width="158" height="16" fill="#fff"/>
                       </mask>
                       <text color="rgb(255, 255, 255)" dominant-baseline="text-after-edge" fill="rgb(255, 255, 255)" font-family="Arial" font-size="14px" font-stretch="100%" font-weight="400" text-decoration="none solid rgb(255, 255, 255)" text-rendering="auto" word-spacing="0px" writing-mode="horizontal-tb" user-select="auto"><tspan x="947.00" y="40.00" lengthAdjust="spacingAndGlyphs" textLength="161.88" xml:space="preserve">sstabbert standard demos</tspan></text>
                      </g>
-                     <g mask="url(#ef)" data-stacking-context="true" data-tag="div" data-z-index="auto">
-                      <mask id="ef">
+                     <g mask="url(#a)" data-stacking-context="true" data-tag="div" data-z-index="auto">
+                      <mask id="a">
                        <rect width="0" height="0" fill="#fff"/>
                       </mask>
                      </g>
@@ -1907,4 +1907,5 @@ font-family: "arial";
 src: local("arial");			
 }</style>
  <rect x="945.79" y="25.147" width="176.38" height="16.798" fill="#050505" stroke-width="3"/>
+ <rect x="298.02" y="619.38" width="82.941" height="37.796" fill="#fcfcfc" stroke-width="3"/>
 </svg>
