@@ -1,7 +1,7 @@
 ---
 title: "Update a Common Data Model data source to use Delta tables (preview)"
 description: "Update Common Data Model tables in Azure Data Lake to Delta format in Customer Insights - Data."
-ms.date: 03/07/2024
+ms.date: 03/11/2024
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
