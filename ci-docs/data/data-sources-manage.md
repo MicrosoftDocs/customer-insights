@@ -1,7 +1,7 @@
 ---
 title: "Manage data sources"
 description: "Learn how to manage data sources attached or imported to Dynamics 365 Customer Insights - Data"
-ms.date: 02/14/2024
+ms.date: 02/20/2024
 ms.topic: how-to
 author: mukeshpo
 ms.author: mukeshpo
@@ -22,11 +22,7 @@ Select a data source to view available actions.
 - [**Enrich**](data-sources-enrichment.md) the data source before unification to improve the quality and completeness for better results. 
 - **Delete** the data source. A data source can be deleted only if the data is not used in any processing such as unification, insights, activations, or exports.
 
-<!---Add back in when this is released.
-
-If you have a Data Lake data source, you can [convert it to a Delta Lake data source (preview).](convert-datalake-to-deltalake.md)
-
---->
+If you have an Azure Data Lake data source with Common Data Model tables, you can [update it to use Delta tables (preview).](convert-datalake-to-deltalake.md)
 
 ## Refresh data sources
 
