@@ -1,15 +1,15 @@
 ---
-title: Integrate with Dynamics 365 applications (preview)
+title: Integrate with Dynamics 365 applications
 description: Learn how Customer Insights - Data can be used with other Dynamics 365 applications
 author: Scott-Stabbert
 ms.author: sstabbert
 ms.reviewer: v-wendysmith
 ms.topic: conceptual
-ms.date: 02/21/2024
+ms.date: 02/29/2024
 ms.custom: bap-template
 ---
 
-# Integrate with Dynamics 365 applications (preview)
+# Integrate with Dynamics 365 applications
 
 Dynamics 365 customers can access more data and insights made available by the unified customer profile while working with a contact or lead. When unification is run, Customer Insights – Data creates a relationship from each contact or lead to the associated customer profile table by creating a standard Microsoft Dataverse lookup column called CustomerProfile that links the records. From this link, you can view the details of a contact or lead and easily access the extended information and insights for that contact or lead from Customer Insights – Data.
 

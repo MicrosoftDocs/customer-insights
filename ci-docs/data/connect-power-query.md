@@ -1,7 +1,7 @@
 ---
 title: "Connect to a Power Query data source (contains video)"
 description: "Ingest data through a Power Query connector (contains video)."
-ms.date: 02/12/2024
+ms.date: 03/06/2024
 ms.reviewer: v-wendysmith
 ms.topic: how-to
 author: joytaylor
@@ -67,8 +67,10 @@ Data sources that are created after associating a Dataverse environment with Cus
 Data gateways from an existing Power BI or Power Apps environment will be visible and you can reuse them in Customer Insights if the data gateway and the Customer Insights environment are in the same Azure Region. The data sources page shows links to go to the Microsoft Power Platform environment where you can view and configure on-premises data gateways.
 
 > [!IMPORTANT]
-> Make sure your gateways are updated to latest version. You can install an update and reconfigure a gateway from a prompt shown on the gateway screen directly or [download the latest version](https://powerapps.microsoft.com/downloads/). If you don't use the latest gateway version, the dataflow refresh fails with error messages like **The keyword isn't supported: configuration properties. Parameter name: keyword**.
+> Update your gateways to the latest version. You can install an update and reconfigure a gateway from a prompt shown on the gateway screen directly or [download the latest version](https://powerapps.microsoft.com/downloads/). If you don't use the latest gateway version, the dataflow refresh fails with error messages like **The keyword isn't supported: configuration properties. Parameter name: keyword**.
 >
+> Make sure that the gateway VM is sized appropriately. [Power BI recommends that you start with a machine](/power-bi/guidance/gateway-onprem-sizing) with at least 8 CPU cores, 8 GB of RAM, and multiple Gigabit network adapters. You can then [measure a typical gateway workload by logging CPU and memory system counters](/data-integration/gateway/service-gateway-performance).
+> 
 > Errors with on-premises data gateways are often caused by configuration issues. For more information about troubleshooting data gateways, see [Troubleshoot the on-premises data gateway](/data-integration/gateway/service-gateway-tshoot).
 
 ## Edit Power Query data sources
