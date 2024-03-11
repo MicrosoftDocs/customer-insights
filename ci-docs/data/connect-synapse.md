@@ -58,7 +58,7 @@ For more information, see [Azure Synapse overview](/azure/synapse-analytics/over
 
 1. Choose the **Azure Synapse Analytics (Preview)** method.
 
-   :::image type="content" source="media/data_sources_synapse.png" alt-text="Dialog box to connect to Synapse Analytics data":::
+   :::image type="content" source="media/data_sources_synapse.svg" alt-text="Dialog box to connect to Synapse Analytics data":::
   
 1. Enter a **Name** for the data source and an optional **Description**.
 
