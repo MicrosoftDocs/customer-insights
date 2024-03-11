@@ -1,7 +1,7 @@
 ---
 title: Reporting on interactions from push messages
-description: Developer - learn how to implement push notification interactions in Customer Insights - Journeys
-ms.date: 03/01/2024
+description: "Developer: Learn how to implement push notification interactions in Customer Insights - Journeys."
+ms.date: 03/08/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
