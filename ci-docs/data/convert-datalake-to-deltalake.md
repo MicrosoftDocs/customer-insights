@@ -44,7 +44,7 @@ Take an existing Azure Data Lake data source with Common Data Model tables and u
 
 1. Select the Azure Data Lake Common Data Model data source and then select **Update to Delta tables**. Or, select **Begin update** from the **Add tables** page if you're editing the Common Data Model data source.
 
-   :::image type="content" source="media/delta-lake-update.svg" alt-text="Dialog box to enter connection details for Delta Lake.":::
+   :::image type="content" source="media/delta-lake-update.svg" alt-text="Data sources page showing a Common Data Model data source with Update to Delta tables highlighted.":::
 
 1. Select **Browse** and navigate to the folder that contains the data in Delta format and *exactly matches* the selected Azure Data Lake data source table. Select it, and then select **Update data source**.
 
