@@ -99,4 +99,7 @@ Each entity in the `consents` collection should be having following properties:
     1. If the validation of email entity failed, investigate the plugin trace logs for errors in your logic.
     2. If the email went live, make sure to also test a small journey. Create a static segment with your testing email address, create a segment-based journey targeting this segment. The email should be sent out to the given email address. Make sure the unsubscribe URL in the email and `List-Unsubscribe` headers (if your consent system supports one-click unsubscribe) are set correctly.
 
+# Sample consent provider solution
+[Sample Consent Provider Solution](../../data/media/ConsentProviderSample.zip)
+
 [!INCLUDE [footer-include](.././includes/footer-banner.md)]
