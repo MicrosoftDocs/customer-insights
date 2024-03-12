@@ -1,7 +1,7 @@
 ---
 title: New and upcoming features
 description: Information about new features, improvements, and bug fixes in Dynamics 365 Customer Insights - Journeys releases.
-ms.date: 02/07/2024
+ms.date: 03/12/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -34,27 +34,26 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
     - [Docs](faqs-copilot-general.md)
 
 - **Easily manage customer consent from contact and lead forms**
-    - The enhanced contact and lead forms enable you to quickly see and update a customer's consent, helping you effortlessly manage what types of messages are sent to your customers. This comprehensive view gives you one place to manage consent across every channel and line of business for your organization. See if a customer has opted out of all commercial communication from your business. Explore which topics a contact has opted in or out of receiving across all channels: email, text, and custom channels. Get a complete understanding of each contact and lead's consent preferences in one easy-to-use screen.
+    - Enhanced contact and lead forms enable you to quickly see and update a customer's consent, helping you effortlessly manage which types of messages are sent to your customers. This comprehensive view gives you a single place to manage consent across every channel and line of business for your organization. See if a customer has opted out of all commercial communication from your business. Explore which topics a contact has opted in or out of receiving across all channels: email, text, and custom channels. Get a complete understanding of each contact and lead's consent preferences in one easy-to-use screen.
     - [Release plan](/dynamics365/release-plan/2023wave2/marketing/dynamics365-marketing/easily-manage-customer-consent-contact-lead-forms)
     - [Docs](real-time-marketing-email-text-consent.md#view-consent-records)
 
 - **Build custom reports using Microsoft Fabric integration**
-    - In today's data-driven world, marketers face the challenge of gaining a comprehensive view of their campaigns to make informed decisions. Each business has unique needs and requirements for aggregating data from various sources. While Dynamics 365 Marketing already offers powerful out-of-the-box reports, we also offer additional custom reporting capabilities to address your unique scenarios. Now in real-time marketing, you can effortlessly create custom Power BI reports tailored to your business needs by leveraging Microsoft Fabric capabilities. Harness seamless access to data to gain a complete understanding of your campaigns, lead management, market performance, and customer engagement, enabling you to identify new opportunities.
+    - In today's data-driven world, marketers face the challenge of gaining a comprehensive view of their campaigns to make informed decisions. Each business has unique needs and requirements for aggregating data from various sources. While Dynamics 365 Customer Insights - Journeys already offers powerful out-of-the-box reports, the app also offers additional custom reporting capabilities to address your unique scenarios. Now in real-time journeys, you can effortlessly create custom Power BI reports tailored to your business needs by leveraging Microsoft Fabric capabilities. Harness seamless access to data to gain a complete understanding of your campaigns, lead management, market performance, and customer engagement, enabling you to identify new opportunities.
     - [Release plan](/dynamics365/release-plan/2023wave2/marketing/dynamics365-marketing/effortlessly-build-custom-reports-tailored-business-needs-using-fabric-integration)
-    - [Docs](CI-Journeys-integration-with-Microsoft-Fabric.md)
+    - [Docs](fabric-integration.md)
 
 ### Monthly enhancements
 
 - **Email editor**
-    - Accurately preview your emails in a wide variety of target email clients and platforms in real-time journeys with Litmus integration. 
+    - Accurately preview your real-time journeys emails in a wide variety of target email clients and platforms with Litmus integration.
 
 ### New blogs and scenario docs
 
 Learn how to make the most of the new Dynamics 365 Customer Insights features in our latest blogs and scenario docs:
 
-- [What you need to know about the Event Portal in Customer Insights – Journeys (FastTrack blog)](https://community.dynamics.com/blogs/post/?postid=9eef0126-bbbb-ee11-92bd-6045bdb56f43)
-- [Understanding Email Variation in Customer Insights Journeys (FastTrack blog)](https://community.dynamics.com/blogs/post/?postid=adfbe765-9dca-ee11-92bd-000d3a01c528)
-- [Understanding Email Variation in Customer Insights Journeys (FastTrack blog)](https://community.dynamics.com/blogs/post/?postid=adfbe765-9dca-ee11-92bd-000d3a01c528)
+- [What you need to know about the event portal in Customer Insights – Journeys (FastTrack blog)](https://community.dynamics.com/blogs/post/?postid=9eef0126-bbbb-ee11-92bd-6045bdb56f43)
+- [Understanding email variation in Customer Insights - Journeys (FastTrack blog)](https://community.dynamics.com/blogs/post/?postid=adfbe765-9dca-ee11-92bd-000d3a01c528)
 
 ## February 2024 update
 
