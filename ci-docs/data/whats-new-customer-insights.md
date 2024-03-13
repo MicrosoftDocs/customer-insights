@@ -86,9 +86,6 @@ Insights are available to your business users through their Dynamics 365 applica
 - Sales and account reps can win more deals and foster stronger relationships, knowing every customer’s interests, activity history, insights such as CLV or predictions such as propensity to buy—all accessible seamlessly in their contact/lead view.
 - Service reps can provide personalized service knowing the customer’s loyalty tier or prediction to churn.
 
-- [Release plan](/dynamics365/release-plan/2023wave2/customer-insights/empower-marketing-sales-service-users-customer-insights-right-within-their-business-applications)
-- [Docs](integrate-d365-apps.md)
-
 ## October 2023
 
 ### General availability features
