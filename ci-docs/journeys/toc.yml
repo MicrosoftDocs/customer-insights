@@ -350,6 +350,8 @@
       href: real-time-marketing-channel-analytics.md
     - name: "Preview: Marketing effectiveness analytics"
       href: real-time-marketing-effectiveness.md
+    - name: "Preview: Customer Insights - Journeys integration with Microsoft Fabric"
+      href: fabric-integration.md
     - name: Track campaigns with UTM codes
       href: real-time-marketing-utm.md
   - name: Personalization
