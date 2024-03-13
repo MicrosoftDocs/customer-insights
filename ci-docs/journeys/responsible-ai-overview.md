@@ -1,10 +1,7 @@
 ---
 title: Responsible AI FAQs for Dynamics 365 Customer Insights - Journeys
 description: Responsible AI FAQs discuss AI technology in Dynamics 365 Customer Insights - Journeys and the key considerations for making use of this technology responsibly.
-ms.date: 01/30/2024
-ms.custom: 
-  - transparency-note
-
+ms.date: 03/12/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
