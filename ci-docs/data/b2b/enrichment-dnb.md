@@ -13,7 +13,7 @@ ms.custom: bap-template
 
 [!INCLUDE [public-preview-banner](../includes/public-preview-banner.md)]
 
-[!INCLUDE [consolidated-sku](../includes/consolidated-sku.md)]
+
 
 Dun & Bradstreet provides commercial data, analytics, and insights for businesses. It enables customers with unified customer profiles for companies to enrich their data. Enrichments include attributes such as DUNS number, company size, location, industry, and more.
 

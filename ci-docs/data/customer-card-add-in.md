@@ -21,6 +21,9 @@ Get a 360-degree view of your customers directly in Dynamics 365 apps. With the 
 
 [!INCLUDE [public-preview-note](includes/public-preview-note.md)]
 
+## Limitations
+- The card add-in does not respect Dataverse's permission when retreiving data.
+
 ## Prerequisites
 
 - Dynamics 365 model-driven apps, such as Sales or Customer Service, version 9.0 and later.
