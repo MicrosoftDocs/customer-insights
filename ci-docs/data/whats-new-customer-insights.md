@@ -1,7 +1,7 @@
 ---
 title: "What's new in Dynamics 365 Customer Insights - Data"
 description: "Information about new features, improvements, and bug fixes."
-ms.date: 01/30/2024
+ms.date: 03/13/2024
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
@@ -16,6 +16,29 @@ We roll out updates on a region-by-region basis. So certain regions might see fe
 
 > [!TIP]
 > To submit and vote on feature requests and product suggestions, go to the [Dynamics 365 Application Ideas portal](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights).
+
+## February 2024
+
+### General availability features
+
+#### Leverage customer insights in other business applications
+
+Insights are available to your business users through their Dynamics 365 applications in the flow of their work. This enables numerous scenarios. For example:
+
+- Marketing teams can personalize the experience of customers with segments and dynamic content based on their lifetime value, irrespective of where they are on the buying journeys and whether they're targeted as a lead or a contact.
+- Sales and account reps can win more deals and foster stronger relationships, knowing every customer's interests, activity history, insights such as CLV or predictions such as propensity to buy - all accessible seamlessly in their contact or lead view.
+- Service reps can provide personalized service knowing the customer's loyalty tier or prediction to churn.
+
+:::image type="content" source="media/sales-ci-data.png" alt-text="Dynamics 365 Sales user interface with loyalty data from Customer Insights.":::
+
+- [Release plan](/dynamics365/release-plan/2023wave2/customer-insights/empower-marketing-sales-service-users-customer-insights-right-within-their-business-applications)
+- [Docs](integrate-d365-apps.md)
+
+### New blog
+
+Learn how to make the most of the new Dynamics 365 Customer Insights features in our latest blog:
+
+- [Dynamics 365 Customer Insights - Data: Inbound Data Batch Integration Patterns Introduction](https://community.dynamics.com/blogs/post/?postid=f32d115e-d9cb-ee11-92bd-000d3a7e795a)
 
 ## January 2024
 <!--
