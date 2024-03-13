@@ -14,7 +14,7 @@ search.audienceType:
 # Customer Insights - Journeys limits for trials
 
 > [!NOTE]
-> Litmus integration is supported for Customer Insights - Journeys only orgs.
+> Litmus integration is only supported for real-time journeys.
 
 Trials of Customer Insights - Journeys are subject to the following limits and restrictions:
 

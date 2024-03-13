@@ -14,7 +14,7 @@ search.audienceType:
 # Check your work using previews and test sends
 
 > [!NOTE]
-> Litmus integration is supported for Customer Insights - Journeys only orgs.
+> Litmus integration is only supported for real-time journeys.
 
 Your marketing email messages will probably be seen by many potential customers, so you'll want to make sure they look just right when opened, regardless of which combination of device and email software each recipient is using. Dynamics 365 Customer Insights - Journeys provides several tools to help you test and evaluate your design before you use it in an email campaign.
 
