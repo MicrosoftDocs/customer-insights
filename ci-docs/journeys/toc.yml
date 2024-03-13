@@ -586,7 +586,7 @@
   items:
   - name: Overview
     href: responsible-ai-overview.md
-  - name: Responsible AI FAQs for the Customer Insights - Journeys copilot
+  - name: Responsible AI FAQs for the Customer Insights - Journeys copilot preview
     href: faqs-copilot-general.md
   - name: Responsible AI FAQs for content ideas
     href: faqs-content-ideas.md
