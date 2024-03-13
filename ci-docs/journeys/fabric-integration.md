@@ -72,7 +72,7 @@ The workspace you choose to link with Dataverse must be assigned to a premium ca
 
 ### Create Fabric shortcuts for the Customer Insights - Journeys analytics folder (Public preview)
 
-1. Start by [opening Fabric](fabric.microsoft.com).
+1. Start by [opening Fabric](https://app.fabric.microsoft.com).
 1. Create or open a Workspace.
 1. Create or open a Lakehouse.
 1. From the Lakehouse choose **Get data** and select **New shortcut**.
