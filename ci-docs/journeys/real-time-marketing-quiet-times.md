@@ -1,7 +1,7 @@
 ---
 title: Set quiet times to prevent messages from sending during unwanted hours
 description: Learn how to set up quiet times to avoid sending messages during unwanted times.
-ms.date: 12/12/2023
+ms.date: 03/14/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -12,7 +12,6 @@ search.audienceType:
 ---
 
 # Set quiet times to prevent messages from sending during unwanted hours
-
 
 Quiet times enable you to configure specific times when messages won't send to customers to avoid contacting them when it's inappropriate. You might not want to send messages at specific times due to regulations, business policies, or other factors. Typically, quiet times are configured for overnight hours, weekends, or holidays. When quiet times are in place, the system holds the messages until the quiet times end.
 
@@ -56,7 +55,7 @@ Because journeys have a time zone set on them, quiet times respect the time zone
 
 The number of messages held for quiet times shows on the journey to provide information.
 
-You can also choose to change or disable quiet times for a specific message on a journey to support scenarios when a particular message in a journey should not be subject to regular quiet times settings.
+You can also choose to change or disable quiet times for a specific message on a journey to support scenarios when a particular message in a journey shouldn't be subject to regular quiet times settings.
 
 > [!div class="mx-imgBorder"]
 > ![Change message quiet times screenshot.](media/real-time-marketing-quiet-times-change-quiet-times.png "Change message quiet times screenshot")

@@ -1,7 +1,7 @@
 ---
-title: Reporting on interactions from push messages
+title: Implement push notification interaction tracking
 description: "Developer: Learn how to implement push notification interactions in Customer Insights - Journeys."
-ms.date: 03/08/2024
+ms.date: 03/14/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -11,9 +11,9 @@ search.audienceType:
   - enduser
 ---
 
-# Implementing push notification interaction tracking
+# Implement push notification interaction tracking
 
-To learn more about the overall approach to setting up push notifications in Customer Insights - Journeys, visit the [Push notification setup overview](real-time-marketing-push-setup-overview.md).
+To learn more about the overall approach to setting up push notifications in Customer Insights - Journeys, visit the [push notification setup overview](real-time-marketing-push-setup-overview.md).
 
 To enable push notifications in Customer Insights - Journeys, you need to complete the following steps:
 
@@ -26,7 +26,7 @@ To enable push notifications in Customer Insights - Journeys, you need to comple
 In order to report on open rates, the application needs to send this data back to Customer Insights - Journeys.
 
 > [!IMPORTANT]
-> To track links that recipients open in notifications, you must collect customer tracking consent. To learn more about strategies for collecting customer consent in Customer Insights - Journeys, visit the [Consent Management Overview](real-time-marketing-compliance-settings.md)
+> To track links that recipients open in notifications, you must collect customer tracking consent. Learn more about strategies for collecting customer consent in Customer Insights - Journeys: [Consent management overview](real-time-marketing-compliance-settings.md)
 
 ## Send events to Customer Insights - Journeys
 
@@ -50,10 +50,10 @@ Returns: 202 if request is correct, 400 otherwise
 
 |Name|Description|
 |---|---|
-|TrackingId|Every notification has a tracking identifier in its data. This identifier needs to be sent for event tracking|
-|DeviceToken|Unique token for the mobile device registering the event|
+|TrackingId|Every notification has a tracking identifier in its data. This identifier needs to be sent for event tracking.|
+|DeviceToken|Unique token for the mobile device registering the event.|
 |PushNotificationStatus|Status code for the event. '1' returned for Opened event.|
-|orgId|Identifier of the Customer Insights - Journeys organization|
+|orgId|Identifier of the Customer Insights - Journeys organization.|
 
 ### Sample Swift code to send events in iOS
 

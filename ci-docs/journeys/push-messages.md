@@ -1,7 +1,7 @@
 ---
 title: Create push notifications
 description: Learn how to create push notifications for Customer Insights - Journeys.
-ms.date: 12/13/2023
+ms.date: 03/14/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -23,39 +23,38 @@ To set up push notifications, you need administrator privileges. If you have the
 
 ## Create push notification messages
 
-After you create your mobile app configuration, you can start creating push notification messages by going to **Customer Insights - Journeys** > **Channels** > **Push notifications** and selecting **+New push notification** in the top ribbon. **+New push notification** will take you to the push notification message editor.
+After you create your mobile app configuration, you can start creating push notification messages by going to **Customer Insights - Journeys** > **Channels** > **Push notifications** and selecting **+New push notification** in the top ribbon. **+New push notification** takes you to the push notification message editor.
 
 > [!div class="mx-imgBorder"]
 > ![Push editor screenshot.](media/real-time-marketing-push-notification.png "Push editor screenshot")
 
-In the push notification message editor, you can enter a title, a subtitle, a message, an image, and preview how your message would appear in iOS and Android.
+In the push notification message editor, you can enter a title, a subtitle, a message, an image, and preview how your message appears in iOS and Android.
 
-Using the On-click behavior field, you can also specify the message behavior when customers tap on the message in their mobile phones.
+Using the **On-click behavior** field, you can also specify the message behavior when customers tap on the message in their mobile phones.
 - **Open the app**: Opens the mobile application.
 - **Open the browser**: Opens a specified URL.
 
-Try test-sending the push notification to your mobile app configuration or add it to a journey to see how it can be used.
-To stop messages from being sent, you can deactivate or delete them.
+Try test-sending the push notification to your mobile app configuration or add it to a journey to see how it can be used. To stop messages from being sent, you can deactivate or delete them.
 
 ## Push notification images
 
-To add images to push notifications, select any image from the Library or upload a new one by selecting the **Choose an image** field on the push notification message editor. When you add images, Copilot suggests images that match your content.
+To add images to push notifications, select any image from the library or upload a new one by selecting the **Choose an image** field on the push notification message editor. When you add images, Copilot suggests images that match your content.
 
 There are some other considerations for images in push notifications:
 
-* Images might be subject to platform size limits for iOS and Android.
-* The image ratio should be 2:1 for best viewing in push notifications.
-* You can preview the message and image in both iOS and Android.
+- Images might be subject to platform size limits for iOS and Android.
+- The image ratio should be 2:1 for best viewing in push notifications.
+- You can preview the message and image in both iOS and Android.
 
 ## Personalize your push notifications
 
-As with the email editor, you can personalize push notifications to insert dynamic data that is unique to each notification recipient.
+As with the email editor, you can personalize push notifications to insert dynamic data that's unique to each notification recipient.
 
 To personalize a push notification:
 
 1. Select the **Personalization** ![The Personalization button.](media/real-time-marketing-personalization2.png "The Personalization button") button in the **Message** field.
-1. Select **Select a data field** to choose a data source. Your data source can be based on an **Audience**, a **Trigger**, or **Compliance**.
-1. After choosing the data source, you can search for the specific attribute or trigger you want.
+1. Choose a data source by selecting **Select a data field**. Your data source can be based on an **Audience**, a **Trigger**, or **Compliance**.
+1. After choosing the data source, search for the specific attribute or trigger you want.
 1. Add a **Label** to quickly identify your token in the message content.
 
 When you send the push notification from a journey, it automatically populates the token according to the attribute you selected.

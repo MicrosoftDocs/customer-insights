@@ -1,7 +1,7 @@
 ---
 title: Receiving push notifications on mobile devices
 description: "Developer: Learn how to receive push notifications from Customer Insights - Journeys."
-ms.date: 03/08/2024
+ms.date: 03/14/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -13,7 +13,7 @@ search.audienceType:
 
 # Receiving push notifications on mobile devices
 
-To learn more about the overall approach to setting up push notifications in Customer Insights - Journeys, visit the [Push notification setup overview](real-time-marketing-push-setup-overview.md)
+To learn more about the overall approach to setting up push notifications in Customer Insights - Journeys, visit the [push notification setup overview](real-time-marketing-push-setup-overview.md)
 
 To enable push notifications in Customer Insights - Journeys, you need to complete the following steps:
 

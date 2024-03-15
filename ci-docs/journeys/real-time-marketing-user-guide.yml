@@ -28,7 +28,7 @@ landingContent:
         links:
           - text: Customer Insights - Journeys overview
             url: real-time-marketing-overview.md
-          - text: Use Customer Insights profiles and segments in Customer Insights - Journeys
+          - text: Use Customer Insights - Data profiles and segments in Customer Insights - Journeys
             url: real-time-marketing-ci-profile.md
           - text: Known issues in Customer Insights - Journeys
             url: real-time-marketing-known-issues.md

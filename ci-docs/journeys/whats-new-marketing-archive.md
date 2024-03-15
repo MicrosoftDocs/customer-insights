@@ -1766,7 +1766,7 @@ The Dynamics 365 Customer Insights - Journeys October 2021 update includes a new
 - **Real-time marketing**
     - Live customer journeys can now be updated by creating a new version.
     - The journey designer and the content designer UI is more consistent, improving navigation and workflow.
-    - Trigger-based journeys that target Customer Insights profile can be started even if the customer's full profile is not available. Customers without a full profile will start the journey immediately using defaults for any missing profile data.
+    - Trigger-based journeys that target Customer Insights - Data profile can be started even if the customer's full profile is not available. Customers without a full profile will start the journey immediately using defaults for any missing profile data.
 
 #### Bug fixes
 

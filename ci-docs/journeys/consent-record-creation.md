@@ -13,7 +13,7 @@ search.audienceType:
 
 # Create a consent record using a cloud flow
 
-In real-time journeys, consent is collected, managed, and enforced at a [contact point level](real-time-marketing-compliance-settings.md#contact-point-consent) (that is, an email address, phone number, or a custom channel address). When a message is sent to contacts, leads, or Customer Insights profiles, the Customer Insights - Journeys app [checks the consent](real-time-marketing-email-text-consent.md#how-consent-is-respected-for-emails) for the specific contact point to which the message is being sent and for the specific purpose or topic of the message before sending the message.
+In real-time journeys, consent is collected, managed, and enforced at a [contact point level](real-time-marketing-compliance-settings.md#contact-point-consent) (that is, an email address, phone number, or a custom channel address). When a message is sent to contacts, leads, or Customer Insights - Data profiles, the Customer Insights - Journeys app [checks the consent](real-time-marketing-email-text-consent.md#how-consent-is-respected-for-emails) for the specific contact point to which the message is being sent and for the specific purpose or topic of the message before sending the message.
 
 If you're collecting consent using Customer Insights - Journeys forms, contact point consent records are automatically created for you. However, if you're managing consent in an external system or have custom built user experiences (such as landing pages or preference centers) where you're collecting consent from your customers, you may need to create or update contact point consent records in the consent center (the `msdynmkt_contactpointconsent4` table) to send messages from the system.
 

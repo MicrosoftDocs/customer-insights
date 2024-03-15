@@ -62,7 +62,7 @@ For the example scenario, you need to create a trigger that gets raised when the
 As shown above, a business trigger has been created that gets raised every time a lead’s status or rating attributes are updated in the system. The business trigger is now ready to use to create the milestone. 
 
 > [!NOTE]
-> Ensure that you create the custom or business trigger using the correct audience type (Contact, Lead, or Customer Insights profile) since the milestone will directly leverage the trigger’s audience type.
+> Ensure that you create the custom or business trigger using the correct audience type (contact, lead, or Customer Insights - Data profile) since the milestone will directly leverage the trigger’s audience type.
 
 Next, to start creating a milestone, go to the **Dynamics 365 Marketing effectiveness analytics dashboard** from the **Analytics** site navigation. You can create and delete milestones from the dashboard settings page. To access dashboard settings, select **“Set up my dashboard”** if you’re using the dashboard for the first time, or the **“Edit dashboard”** button on the upper right corner of the dashboard if you have already set up the dashboard.
 
