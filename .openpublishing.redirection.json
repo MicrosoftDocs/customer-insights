@@ -2555,11 +2555,6 @@
       "source_path": "ci-docs/journeys/real-time-marketing-developer-notifications.md",
       "redirect_url": "/dynamics365/customer-insights/journeys/developer-notifications",
       "redirect_document_id": false
-    },
-    {
-      "source_path": "ci-docs/journeys/real-time-marketing-push-notifications.md",
-      "redirect_url": "/dynamics365/customer-insights/journeys/push-messages",
-      "redirect_document_id": false
     }
   ]
   ]
