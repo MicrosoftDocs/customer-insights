@@ -7,6 +7,7 @@ author: radsay01
 ms.author: rsayyaparaju
 ms.reviewer: v-wendysmith
 ms.custom: bap-template
+ms.collection: bap-ai-copilot 
 ---
 
 # Custom models FAQ

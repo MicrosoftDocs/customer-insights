@@ -5,14 +5,10 @@ ms.date: 12/22/2023
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
-search.audienceType: 
-  - admin
-  - customizer
-  - enduser
+ms.collection: bap-ai-copilot
 ---
 
 # Preview: Copilot - Refresh and perfect your message
-
 
 > [!IMPORTANT]
 > A preview feature is a feature that is not complete, but is made available before it’s officially in a release so customers can get early access and provide feedback. Preview features aren’t meant for production use and may have limited or restricted functionality.

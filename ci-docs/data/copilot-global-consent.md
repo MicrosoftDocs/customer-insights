@@ -1,19 +1,20 @@
 ---
 title: Give consent to use Copilot in Customer Insights - Data
 description: As an admin, give consent to use all Copilot features in Customer Insights - Data
-ms.date: 10/30/2023
+ms.date: 03/01/2024
 ms.reviewer: v-wendysmith
 ms.topic: conceptual
 author: radsay01
 ms.author: rsayyaparaju 
 ms.custom: bap-template
+ms.collection: bap-ai-copilot 
 ---
 
 # Give consent to use Copilot in Customer Insights - Data
 
 There are three levels of consent to use generative AI Copilot features in Customer Insights - Data. Consent is global for all users and all Copilot features in Customer Insights - Data.
 
-- **Enable Copilot features powered by Azure OpenAI**: **On** indicates you agree to enable all Copilot features and acknowledge that AI-generated content should be reviewed. Default is **On**.
+- **Enable Copilot features powered by Azure OpenAI**: **On** indicates you agree to enable all Copilot and/or Bing Search-powered features and acknowledge that AI-generated content should be reviewed. Default is **On**.
 
 - **Allow cross-geography data flow for Copilot features**: **On** indicates you agree that data may be stored and processed outside of your geographic region, compliance boundary, or national cloud instance. If you're in a region where Azure OpenAI is deployed such as the United States and Switzerland, this field doesn't display (the default is **On** and can't be changed). Default is **Off** for all other regions where Azure OpenAI isn't deployed. To view where Azure OpenAI services are currently deployed, see [Azure products by region](https://azure.microsoft.com/explore/global-infrastructure/products-by-region/?products=cognitive-services&regions=all).
 
@@ -34,5 +35,7 @@ There are three levels of consent to use generative AI Copilot features in Custo
 1. Enable or disable consent.
 
 1. Select **Save**.
+
+[!INCLUDE [copilot-availability](includes/copilot-availability.md)]
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

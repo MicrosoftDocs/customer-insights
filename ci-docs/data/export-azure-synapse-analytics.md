@@ -1,7 +1,7 @@
 ---
 title: "Export data to Azure Synapse Analytics (preview)"
 description: "Learn how to configure the connection to Azure Synapse Analytics."
-ms.date: 09/01/2023
+ms.date: 02/01/2024
 ms.reviewer: mhart
 ms.topic: how-to
 author: pkieffer
@@ -15,6 +15,8 @@ ms.author: philk
 [!INCLUDE [azure-ad-to-microsoft-entra-id](../journeys/includes/azure-ad-to-microsoft-entra-id.md)]
 
 Azure Synapse is an analytics service that accelerates time to insight across data warehouses and big data systems. You can ingest and use data from Dynamics 365 Customer Insights - Data in [Azure Synapse](/azure/synapse-analytics/overview-what-is).
+
+[!INCLUDE [data-out-azure-synapse-link](includes/data-out-azure-synapse-link.md)]
 
 ## Prerequisites
 

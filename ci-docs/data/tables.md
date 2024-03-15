@@ -1,7 +1,7 @@
 ---
 title: "Tables in Customer Insights - Data"
 description: "View data on the Tables page."
-ms.date: 11/21/2023
+ms.date: 01/30/2024
 ms.reviewer: mhart
 ms.topic: conceptual
 author: mukeshpo
@@ -66,6 +66,8 @@ Some Customer Insights - Data tables are available in Dataverse. The sections be
 - [Enrichment](#enrichment)
 - [Prediction](#prediction)
 - [Segment membership](#segment-membership)
+
+[Measures created as tables](dataverse-measures.md) are also available in Dataverse.
 
 ### CustomerProfile
 

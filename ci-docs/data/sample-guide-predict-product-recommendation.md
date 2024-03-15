@@ -6,7 +6,8 @@ ms.reviewer: mhart
 ms.topic: conceptual
 author: joytaylor
 ms.author: joytaylor
-ms.custom: bap-template 
+ms.custom: bap-template
+ms.collection: bap-ai-copilot 
 ---
 
 # Product recommendation prediction (preview) sample guide

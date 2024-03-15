@@ -5,10 +5,7 @@ ms.date: 08/23/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
-search.audienceType: 
-  - admin
-  - customizer
-  - enduser
+ms.collection: bap-ai-copilot
 ---
 
 # Copilot - Target the right customers using query assist

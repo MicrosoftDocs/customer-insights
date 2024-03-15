@@ -6,6 +6,7 @@ ms.reviewer: mhart
 ms.topic: conceptual
 author: wmelewong 
 ms.author: wameng
+ms.collection: bap-ai-copilot 
 ---
 
 # Analyze sentiment in customer feedback (preview)

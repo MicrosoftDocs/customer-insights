@@ -1,5 +1,6 @@
 # Business accounts in Customer Insights - Data
-## [Work with business accounts](work-with-business-accounts.md)
+## [Business accounts (B2B) and Customer Insights](work-with-business-accounts.md)
+## [Supported feature areas](supported-features-b2b.md)
 
 ## [Set up account hierarchies](account-hierarchies.md)
 ## [Set up business contact activities](activities-contacts.md)

@@ -5,10 +5,7 @@ ms.date: 01/22/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
-search.audienceType:
-  - admin
-  - customizer
-  - enduser
+ms.collection: bap-ai-copilot
 ---
 
 # What's new archive for Dynamics 365 Customer Insights - Journeys
@@ -2851,7 +2848,7 @@ The Dynamics 365 Customer Insights - Journeys June 2020 update includes several 
 - **Marketing forms**
     - Resolved an issue where custom registration fields were sometimes not propagated to event management client services.
 - **Marketing pages**
-    - Fixed an error where the ContactID for a SegmentSubscribed interaction was missing after using a confirmation link.
+    - Fixed an error where the ContactId for a SegmentSubscribed interaction was missing after using a confirmation link.
     - Resolved an error where a duplicated query parameter caused a program exception.
 - **Social posting**
     - Resolved an issue where LinkedIn form submission consent field values were occasionally imported incorrectly.

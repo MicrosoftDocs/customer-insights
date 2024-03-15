@@ -5,10 +5,7 @@ ms.date: 12/13/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
-search.audienceType: 
-  - admin
-  - customizer
-  - enduser
+ms.collection: bap-ai-copilot
 ---
 
 # Create a segment-based journey

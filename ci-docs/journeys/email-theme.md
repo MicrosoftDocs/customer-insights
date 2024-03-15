@@ -5,10 +5,7 @@ ms.date: 12/15/2023
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
-search.audienceType: 
-  - admin
-  - customizer
-  - enduser
+ms.collection: bap-ai-copilot
 ---
 
 # Preview: Copilot - Style your emails with AI-assisted themes

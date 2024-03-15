@@ -7,6 +7,7 @@ author: NimrodMagen
 ms.author: nimagen
 ms.reviewer: mhart
 ms.custom: bap-template
+ms.collection: bap-ai-copilot 
 ---
 
 # View system configuration
@@ -123,6 +124,8 @@ Use the summary to help you determine if your environment is running normally or
   - To copy the summary to your clipboard, select **Copy**.
   - To refresh the summary if you’re waiting for a job to finish, select **Refresh**.
   - To provide your feedback, select the thumbs up or thumbs down icons.
+
+[!INCLUDE [copilot-availability](includes/copilot-availability.md)]
 
 ### Next steps
 

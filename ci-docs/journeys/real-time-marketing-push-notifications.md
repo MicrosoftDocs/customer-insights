@@ -5,10 +5,7 @@ ms.date: 03/14/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
-search.audienceType: 
-  - admin
-  - customizer
-  - enduser
+ms.collection: bap-ai-copilot
 ---
 
 # Create push notifications
