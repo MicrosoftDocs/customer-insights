@@ -418,11 +418,11 @@
       href: real-time-marketing-define-channel-definition.md
   - name: Push notification setup for application developers
     items:
-    - name: Push notification user mapping for application developers
+    - name: User mapping for application developers
       href: developer-push-user-mapping.md
-    - name: Push notification device registration for application developers
+    - name: Device registration for application developers
       href: developer-push-device-registration.md
-    - name: Receiving push notifications on mobile devices
+    - name: Receive push notifications on mobile devices
       href: developer-notifications.md
     - name: Implement push notification interaction tracking
       href: developer-push-interactions.md
@@ -438,8 +438,6 @@
       href: developer/extend-ui.md
   - name: Reference guide for Customer Insights - Journeys interactions
     href: real-time-marketing-interactions-reference.md
-  - name: Push notification setup for application developers
-    href: developer-push-device-registration.md
   - name: Receive notifications and create interactions
     href: developer-notifications.md
   - name: Create a Customer Insights - Journeys segment using the Web API
@@ -506,7 +504,7 @@
       href: manage-sms-keywords.md
   - name: Push notification setup
     items:
-    - name: Push notification overview for application developers
+    - name: Overview for application developers
       href: push-setup-overview.md
     - name: Set up push notification applications
       href: push-notifications-setup.md
