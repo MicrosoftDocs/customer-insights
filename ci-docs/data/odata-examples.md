@@ -1,7 +1,7 @@
 ---
 title: "OData query examples"
 description: "Commonly used examples of for the Open Data Protocol (OData) to query the Customer Insights - Data APIs to review data."
-ms.date: 09/01/2023
+ms.date: 03/15/2024
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
@@ -55,7 +55,7 @@ Sample queries for the *UnifiedActivity* table.
 
 ### Manage Workflows
 
-Sample queries to run a process in Customer Insights - Data such as refresh a data source, unify data, etc. 
+Sample queries to run a process in Customer Insights - Data such as refresh a data source or unify data.
 
 |Query type |Example  | Note  |
 |---------|---------|---------|
