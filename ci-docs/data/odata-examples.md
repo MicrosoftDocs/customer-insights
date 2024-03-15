@@ -1,7 +1,7 @@
 ---
 title: "OData query examples"
 description: "Commonly used examples of for the Open Data Protocol (OData) to query the Customer Insights - Data APIs to review data."
-ms.date: 09/01/2023
+ms.date: 03/15/2024
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
@@ -19,7 +19,7 @@ To help you build your own implementations based on the [Dynamics 365 Customer I
 
 Modify the query samples to make them work on the target environments:
 
-- {serviceRoot}: `https://api.ci.ai.dynamics.com/v1/instances/{instanceId}/data` where {instanceId} is the GUID of the Customer Insights - Data environment you want to query. The [ListAllInstances operation](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights&operation=Get-all-instances) lets you find the {InstanceId} you have access to.
+- {serviceRoot}: `https://api.ci.ai.dynamics.com/v1/instances/{instanceId}` where {instanceId} is the GUID of the Customer Insights - Data environment you want to query. The [ListAllInstances operation](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights&operation=Get-all-instances) lets you find the {InstanceId} you have access to.
 - {CID}: GUID of a unified customer record. Example: `ce759201f786d590bf2134bff576c369`.
 - {AlternateKey}: Identifier of the primary key of a customer record in a data source. Example: `CNTID_1002`
 - {DSname}: String with the table name of a data source that gets ingested to Customer Insights - Data. Example: `Website_contacts`.
@@ -31,14 +31,14 @@ Sample queries for the *Customer* table.
 
 |Query type |Example  | Note  |
 |---------|---------|---------|
-|Single customer ID     | `{serviceRoot}/Customer?$filter=CustomerId eq '{CID}'`          |  |
-|Alternate key    | `{serviceRoot}/Customer?$filter={DSname_TableName_PrimaryKeyColumnName} eq '{AlternateKey}'`         |  Alternate keys persist in the unified customer table       |
-|Select   | `{serviceRoot}/Customer?$select=CustomerId,FullName&$filter=customerid eq '1'`        |         |
-|In    | `{serviceRoot}/Customer?$filter=CustomerId in ('{CID1}',’{CID2}’)`        |         |
-|Alternate Key + In   | `{serviceRoot}/Customer?$filter={DSname_TableName_PrimaryKeyColumnName} in ('{AlternateKey}','{AlternateKey}')`         |         |
-|Search  | `{serviceRoot}/Customer?$top=10&$skip=0&$search="string"`        |   Returns top 10 results for a search string      |
-|Segment membership  | `{serviceRoot}/Customer?select=*&$filter=IsMemberOfSegment('{SegmentName}')&$top=10`     | Returns a preset number of rows from the segmentation table.      |
-|Segment membership for a customer | `{serviceRoot}/Customer?$filter=CustomerId eq '{CID}'&IsMemberOfSegment('{SegmentName}')`     | Returns the customer profile if they're a member of the given segment     |
+|Single customer ID     | `{serviceRoot}/data/Customer?$filter=CustomerId eq '{CID}'`          |  |
+|Alternate key    | `{serviceRoot}/data/Customer?$filter={DSname_TableName_PrimaryKeyColumnName} eq '{AlternateKey}'`         |  Alternate keys persist in the unified customer table       |
+|Select   | `{serviceRoot}/data/Customer?$select=CustomerId,FullName&$filter=customerid eq '1'`        |         |
+|In    | `{serviceRoot}/data/Customer?$filter=CustomerId in ('{CID1}',’{CID2}’)`        |         |
+|Alternate Key + In   | `{serviceRoot}/data/Customer?$filter={DSname_TableName_PrimaryKeyColumnName} in ('{AlternateKey}','{AlternateKey}')`         |         |
+|Search  | `{serviceRoot}/data/Customer?$top=10&$skip=0&$search="string"`        |   Returns top 10 results for a search string      |
+|Segment membership  | `{serviceRoot}/data/Customer?select=*&$filter=IsMemberOfSegment('{SegmentName}')&$top=10`     | Returns a preset number of rows from the segmentation table.      |
+|Segment membership for a customer | `{serviceRoot}/data/Customer?$filter=CustomerId eq '{CID}'&IsMemberOfSegment('{SegmentName}')`     | Returns the customer profile if they're a member of the given segment     |
 
 ## Unified activity
 
@@ -46,12 +46,21 @@ Sample queries for the *UnifiedActivity* table.
 
 |Query type |Example  | Note  |
 |---------|---------|---------|
-|Activity of CID     | `{serviceRoot}/UnifiedActivity?$filter=CustomerId eq '{CID}'`          | Lists activities of a specific customer profile |
-|Activity time frame    | `{serviceRoot}/UnifiedActivity?$filter=CustomerId eq '{CID}' and ActivityTime gt 2017-01-01T00:00:00.000Z and ActivityTime lt 2020-01-01T00:00:00.000Z`     |  Activities of a customer profile in a time frame       |
-|Activity type    |   `{serviceRoot}/UnifiedActivity?$filter=CustomerId eq '{CID}' and ActivityType eq '{ActivityName}'`        |         |
-|Activity by display name     | `{serviceRoot}/UnifiedActivity$filter=CustomerId eq ‘{CID}’ and ActivityTypeDisplay eq ‘{ActivityDisplayName}’`        | |
-|Activity sorting    | `{serviceRoot}/UnifiedActivity?$filter=CustomerId eq ‘{CID}’ & $orderby=ActivityTime asc`     |  Sort activities ascending or descending       |
-|All activities and measures for a customer  |   `{serviceRoot}/Customer?$expand=UnifiedActivity,Customer_Measure&$filter=CustomerId eq '{CID}'`     | Activities and measures are additional key/value pairs on the returned customer profile       |
+|Activity of CID     | `{serviceRoot}/data/UnifiedActivity?$filter=CustomerId eq '{CID}'`          | Lists activities of a specific customer profile |
+|Activity time frame    | `{serviceRoot}/data/UnifiedActivity?$filter=CustomerId eq '{CID}' and ActivityTime gt 2017-01-01T00:00:00.000Z and ActivityTime lt 2020-01-01T00:00:00.000Z`     |  Activities of a customer profile in a time frame       |
+|Activity type    |   `{serviceRoot}/data/UnifiedActivity?$filter=CustomerId eq '{CID}' and ActivityType eq '{ActivityName}'`        |         |
+|Activity by display name     | `{serviceRoot}/data/UnifiedActivity$filter=CustomerId eq ‘{CID}’ and ActivityTypeDisplay eq ‘{ActivityDisplayName}’`        | |
+|Activity sorting    | `{serviceRoot}/data/UnifiedActivity?$filter=CustomerId eq ‘{CID}’ & $orderby=ActivityTime asc`     |  Sort activities ascending or descending       |
+|All activities and measures for a customer  |   `{serviceRoot}/data/Customer?$expand=UnifiedActivity,Customer_Measure&$filter=CustomerId eq '{CID}'`     | Activities and measures are additional key/value pairs on the returned customer profile       |
+
+### Manage Workflows
+
+Sample queries to run a process in Customer Insights - Data such as refresh a data source or unify data.
+
+|Query type |Example  | Note  |
+|---------|---------|---------|
+|Get data source IDs| `{serviceRoot}/manage/datasources/v2 |   This returns all data sources on your environment. From the response, you can check the 'friendlyName' for a specific data source and then use it's 'dataSourceId'  |
+|Refresh a data source| `{serviceRoot}/manage/workflows/main/jobs?operationType=Ingestion&identifiers='{dataSourceId}'&forceRunRequested=true | Use the 'dataSourceId' from the above respose to refresh a data source|
 
 ## Other examples
 
@@ -59,10 +68,10 @@ Sample queries for other tables.
 
 |Query type |Example  | Note  |
 |---------|---------|---------|
-|Measures of CID    | `{serviceRoot}/Customer_Measure?$filter=CustomerId eq '{CID}'`          |  |
-|Enriched brands of CID    | `{serviceRoot}/BrandShareOfVoiceFromMicrosoft?$filter=CustomerId eq '{CID}'`  |       |
-|Enriched interests of CID    |   `{serviceRoot}/InterestShareOfVoiceFromMicrosoft?$filter=CustomerId eq '{CID}'`       |         |
-|In-Clause + Expand     | `{serviceRoot}/Customer?$expand=UnifiedActivity,Customer_Measure&$filter=CustomerId in ('{CID}', '{CID}')`         | |
+|Measures of CID    | `{serviceRoot}/data/Customer_Measure?$filter=CustomerId eq '{CID}'`          |  |
+|Enriched brands of CID    | `{serviceRoot}/data/BrandShareOfVoiceFromMicrosoft?$filter=CustomerId eq '{CID}'`  |       |
+|Enriched interests of CID    |   `{serviceRoot}/data/InterestShareOfVoiceFromMicrosoft?$filter=CustomerId eq '{CID}'`       |         |
+|In-Clause + Expand     | `{serviceRoot}/data/Customer?$expand=UnifiedActivity,Customer_Measure&$filter=CustomerId in ('{CID}', '{CID}')`         | |
 
 ## Limitations
 

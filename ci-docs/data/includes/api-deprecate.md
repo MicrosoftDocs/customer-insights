@@ -1,2 +1,2 @@
 > [!NOTE]
-> Customer Insights APIs will be deprecated on August 31st, 2024. Customer Insights recommends you use Dataverse APIs to query Customer Insights data. For more information, see [Dataverse APIs for Customer Insights](../dv-odata.md).
+> Customer Insights - Data tables can also be accessed using Dataverse APIs. We recommend you use Dataverse APIs to query Customer Insights data as they offer more extensive filtering, greater throughput, and lower latency. For more information, see [Dataverse APIs for Customer Insights](../dv-odata.md).
