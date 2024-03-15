@@ -13,15 +13,15 @@ search.audienceType:
 
 # Implement push notification interaction tracking
 
-To learn more about the overall approach to setting up push notifications in Customer Insights - Journeys, visit the [push notification setup overview](real-time-marketing-push-setup-overview.md).
+To learn more about the overall approach to setting up push notifications in Customer Insights - Journeys, visit the [push notification setup overview](push-setup-overview.md).
 
 To enable push notifications in Customer Insights - Journeys, you need to complete the following steps:
 
-1. [Push notification application configuration](real-time-marketing-push-notifications-setup.md)
+1. [Push notification application configuration](push-notifications-setup.md)
 1. [User mapping for push notifications](real-time-marketing-push-user-mapping.md)
-1. [Device registration for push notifications](real-time-marketing-developer-push.md)
-1. [Receiving push notifications on devices](real-time-marketing-developer-notifications.md)
-1. [Interaction reporting for push notifications](real-time-marketing-developer-push-interactions.md)
+1. [Device registration for push notifications](developer-push-device-registration.md)
+1. [Receiving push notifications on devices](developer-notifications.md)
+1. [Interaction reporting for push notifications](developer-push-interactions.md)
 
 In order to report on open rates, the application needs to send this data back to Customer Insights - Journeys.
 

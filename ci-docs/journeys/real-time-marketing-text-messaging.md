@@ -59,7 +59,7 @@ When you send the text message from a journey, it will automatically populate th
 
 ## Add a Customer Voice survey to a text message
 
-Adding a Customer Voice survey link to a text message or [push notification](real-time-marketing-push-notifications.md#add-a-customer-voice-survey-to-a-push-notification) allows you to seek feedback from customers on the channels they use the most.
+Adding a Customer Voice survey link to a text message or [push notification](push-messages.md#add-a-customer-voice-survey-to-a-push-notification) allows you to seek feedback from customers on the channels they use the most.
 
 To add a Customer Voice survey to a text message:
 

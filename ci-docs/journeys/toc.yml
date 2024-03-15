@@ -189,7 +189,7 @@
       - name: Set up an automated text message keyword flow
         href: set-up-automated-sms-keyword-flow.md
     - name: Push notifications
-      href: real-time-marketing-push-notifications.md
+      href: push-messages.md
     - name: Create custom channels
       href: real-time-marketing-create-custom-channels.md
     - name: Use AI-driven run-time channel optimization
@@ -439,9 +439,9 @@
   - name: Reference guide for Customer Insights - Journeys interactions
     href: real-time-marketing-interactions-reference.md
   - name: Push notification setup for application developers
-    href: real-time-marketing-developer-push.md
+    href: developer-push-device-registration.md
   - name: Receive notifications and create interactions
-    href: real-time-marketing-developer-notifications.md
+    href: developer-notifications.md
   - name: Create a Customer Insights - Journeys segment using the Web API
     href: real-time-marketing-api-segment.md
   - name: Use binding IDs to correlate across triggers

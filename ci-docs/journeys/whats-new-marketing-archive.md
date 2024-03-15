@@ -336,12 +336,12 @@ Learn how to make the most of the new Dynamics 365 Customer Insights - Journeys 
 - **Make your push notifications more engaging by adding images**
     - Orchestrate beautiful, personalized push notifications with images to increase customer engagement. Add product images, promotional graphics, brand logos, or appealing illustrations to your push notifications to make them more informative and persuasive. New, eye-catching push notifications lead to higher user engagement and better campaign results.
     - [Release plan](/dynamics365/release-plan/2023wave1/marketing/dynamics365-marketing/make-push-notifications-more-engaging-adding-images)
-    - [Docs](real-time-marketing-push-notifications.md)
+    - [Docs](push-messages.md)
 
 - **Easily set up your push notifications and engage customers worldwide**
     - We’ve streamlined the configuration process for push notifications with an enhanced, guided experience. It's now easier to set up the push notification channel and incorporate it into your marketing mix, reducing the time and effort required for implementation. Additionally, push notifications are now available worldwide, so you can engage customers across the globe, expand your market presence, and drive growth.
     - [Release plan](/dynamics365/release-plan/2023wave1/marketing/dynamics365-marketing/easily-set-up-push-notifications-engage-customers-worldwide)
-    - [Docs](real-time-marketing-developer-push.md)
+    - [Docs](developer-push-device-registration.md)
 
 - **Easily import outbound emails, content blocks, and templates to Customer Insights - Journeys**
     - Save time and resources, reuse and adapt your existing outbound assets to create engaging and relevant Customer Insights - Journeys experiences. Easily import your outbound marketing emails, templates, and content blocks into Customer Insights - Journeys to plug them into your real-time journeys.
@@ -1678,7 +1678,7 @@ With the Dynamics 365 Customer Insights - Journeys November 2021 update you can 
 - **Marketing emails**
     - The content ideas feature is now available in Customer Insights - Journeys, allowing you to use AI-powered suggestions to automatically generate content for emails. Learn more: [Use AI to kickstart email creation with content ideas](content-ideas.md).
 - **Mobile channel**
-    - Send Customer Voice surveys in text messages and push notifications. Learn more: [Add a Customer Voice survey to a text message](real-time-marketing-outbound-text-messaging.md#add-a-customer-voice-survey-to-a-text-message) and [Add a Customer Voice survey to a push notification](real-time-marketing-push-notifications.md#add-a-customer-voice-survey-to-a-push-notification).
+    - Send Customer Voice surveys in text messages and push notifications. Learn more: [Add a Customer Voice survey to a text message](real-time-marketing-outbound-text-messaging.md#add-a-customer-voice-survey-to-a-text-message) and [Add a Customer Voice survey to a push notification](push-messages.md#add-a-customer-voice-survey-to-a-push-notification).
 - **Scale**
     - Send up to 100 million outbound interactions (emails, text messages, or push notifications) per month to a maximum of 20 million contacts using journeys in Customer Insights - Journeys. Learn more: [Reach more customers with a 10X increase in the scale of interactions in journeys in Customer Insights - Journeys](/dynamics365-release-plan/2021wave2/marketing/dynamics365-marketing/increase-reach-improved-scalability-real-time-marketing).
 
@@ -2056,7 +2056,7 @@ The May 2021 Customer Insights - Journeys monthly update includes email editor i
     - [Docs](real-time-marketing-outbound-text-messaging.md)
 - **Deliver push notifications to any Android or iOS app**
     - [Release plan](/dynamics365-release-plan/2021wave1/marketing/dynamics365-marketing/deliver-push-notifications-android-or-ios-app)
-    - [Docs](real-time-marketing-push-notifications.md)
+    - [Docs](push-messages.md)
 - **Event catalog with built-in and custom events for triggering customer journeys**
     - [Release plan](/dynamics365-release-plan/2021wave1/marketing/dynamics365-marketing/event-catalog-built-in-custom-events-triggering-customer-journeys)
     - [Docs](real-time-marketing-triggers.md)

@@ -16,7 +16,7 @@ You can send push messages as part of your journeys, similar to other outbound m
 
 ## Set up push notifications
 
-To set up push notifications, you need administrator privileges. If you have the correct credentials, the first setup step requires [creating a mobile app configuration](real-time-marketing-push-notifications-setup.md). The second setup step requires [developer setup within your mobile app](real-time-marketing-developer-push.md).
+To set up push notifications, you need administrator privileges. If you have the correct credentials, the first setup step requires [creating a mobile app configuration](push-notifications-setup.md). The second setup step requires [developer setup within your mobile app](developer-push-device-registration.md).
 
 ## Create push notification messages
 

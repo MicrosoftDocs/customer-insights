@@ -17,15 +17,15 @@ Setting up push notifications requires a few distinct steps for application deve
 
 For detailed information about each step, visit the following documents:
 
-1. [Push notification application configuration](real-time-marketing-push-notifications-setup.md)
+1. [Push notification application configuration](push-notifications-setup.md)
 1. [User mapping for push notifications](real-time-marketing-push-user-mapping.md)
-1. [Device registration for push notifications](real-time-marketing-developer-push.md)
-1. [Receiving push notifications on devices](real-time-marketing-developer-notifications.md)
-1. [Interaction reporting for push notifications](real-time-marketing-developer-push-interactions.md)
+1. [Device registration for push notifications](developer-push-device-registration.md)
+1. [Receiving push notifications on devices](developer-notifications.md)
+1. [Interaction reporting for push notifications](developer-push-interactions.md)
 
 ## Register a push notification application with Customer Insights - Journeys
 
-Once you have an application developed, the first step is to register that application with Customer Insights - Journeys. Learn more: [Set up push notification applications](real-time-marketing-push-notifications-setup.md)
+Once you have an application developed, the first step is to register that application with Customer Insights - Journeys. Learn more: [Set up push notification applications](push-notifications-setup.md)
 
 ## Architecture diagram
 
@@ -49,7 +49,7 @@ To perform this mapping, you can use the public API for Customer Insights - Jour
 
 When the mapping is complete and stored, you can use the public API to `POST` the Dataverse user identifier, device token, and mobile application identifier in the device registration request to Customer Insights - Journeys.
 
-View full details about registering devices and users in [push notification device registration](real-time-marketing-developer-push.md) and [user registration](real-time-marketing-push-user-mapping.md).
+View full details about registering devices and users in [push notification device registration](developer-push-device-registration.md) and [user registration](real-time-marketing-push-user-mapping.md).
 
 ## Journey execution
 
@@ -59,6 +59,6 @@ When a journey runs and tries to send a push notification to a user, Customer In
 
 To report on sending and interaction metrics for push notifications within Customer Insights - Journeys, you need to configure the application to send this information back to the Customer Insights - Journeys API.
 
-View full details about send and interaction reporting in [Push notification send and interaction reporting](real-time-marketing-developer-notifications.md).
+View full details about send and interaction reporting in [Push notification send and interaction reporting](developer-notifications.md).
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]

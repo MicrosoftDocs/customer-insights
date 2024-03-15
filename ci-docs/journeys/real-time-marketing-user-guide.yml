@@ -83,7 +83,7 @@ landingContent:
           - text: Create Customer Insights - Journeys emails
             url: real-time-marketing-email.md
           - text: Create push notifications
-            url: real-time-marketing-push-notifications.md
+            url: push-messages.md
           - text: Create outbound text messages
             url: real-time-marketing-outbound-text-messaging.md
           - text: Use AI-driven run-time channel optimization
@@ -103,4 +103,4 @@ landingContent:
       - linkListType: reference
         links:
           - text: Push notification setup for application developers
-            url: real-time-marketing-developer-push.md
+            url: developer-push-device-registration.md

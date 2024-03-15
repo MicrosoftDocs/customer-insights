@@ -17,15 +17,15 @@ Push notifications are messages sent to customers who installed your mobile app.
 
 You can send push messages as part of your journeys, similar to other outbound messages like text messages.
 
-To learn more about the overall approach to setting up push notifications in Customer Insights - Journeys, visit the [push notification setup overview](real-time-marketing-push-setup-overview.md).
+To learn more about the overall approach to setting up push notifications in Customer Insights - Journeys, visit the [push notification setup overview](push-setup-overview.md).
 
 To enable push notifications in Customer Insights - Journeys, you need to complete the following steps:
 
-1. [Push notification application configuration](real-time-marketing-push-notifications-setup.md)
+1. [Push notification application configuration](push-notifications-setup.md)
 1. [User mapping for push notifications](real-time-marketing-push-user-mapping.md)
-1. [Device registration for push notifications](real-time-marketing-developer-push.md)
-1. [Receiving push notifications on devices](real-time-marketing-developer-notifications.md)
-1. [Interaction reporting for push notifications](real-time-marketing-developer-push-interactions.md)
+1. [Device registration for push notifications](developer-push-device-registration.md)
+1. [Receiving push notifications on devices](developer-notifications.md)
+1. [Interaction reporting for push notifications](developer-push-interactions.md)
 
 ## Create a mobile app configuration
 
@@ -48,7 +48,7 @@ To create a configuration, complete the following steps:
 1. Start by adding a **Name** and **Description** for the configuration.
     > [!div class="mx-imgBorder"]
     > ![Mobile app configuration screenshot.](media/real-time-marketing-mobile-app-configuration.png)
-1. For the next step of the configuration, an app developer needs to help you get the iOS APNs certificate or tokens or Android FCM key for your mobile application. Learn more: [Push notification setup for application developers](real-time-marketing-developer-push.md)
+1. For the next step of the configuration, an app developer needs to help you get the iOS APNs certificate or tokens or Android FCM key for your mobile application. Learn more: [Push notification setup for application developers](developer-push-device-registration.md)
 
 You can choose to configure an iOS application, an Android application, or both at the same time. Customer Insights - Journeys handles both apps under a single mobile configuration.
 
@@ -89,7 +89,7 @@ There are two FCM authentication modes: Service Account JSON and API key.
 3. Review and save your app configuration, then find and select your newly created mobile app configuration in **Settings** > **Customer engagement** > **Push notification**. Go to the **Developer information** tab, copy the details, and share them with your app developer as they need them to connect your app.
 
 > [!NOTE]
-> To learn more about the developer configuration for push notifications, see [Push notification setup for application developers](real-time-marketing-developer-push.md)
+> To learn more about the developer configuration for push notifications, see [Push notification setup for application developers](developer-push-device-registration.md)
 
 ---
 
