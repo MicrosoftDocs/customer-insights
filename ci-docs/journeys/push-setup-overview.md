@@ -18,7 +18,7 @@ Setting up push notifications requires a few distinct steps for application deve
 For detailed information about each step, visit the following documents:
 
 1. [Push notification application configuration](push-notifications-setup.md)
-1. [User mapping for push notifications](real-time-marketing-push-user-mapping.md)
+1. [User mapping for push notifications](developer-push-user-mapping.md)
 1. [Device registration for push notifications](developer-push-device-registration.md)
 1. [Receiving push notifications on devices](developer-notifications.md)
 1. [Interaction reporting for push notifications](developer-push-interactions.md)
@@ -49,7 +49,7 @@ To perform this mapping, you can use the public API for Customer Insights - Jour
 
 When the mapping is complete and stored, you can use the public API to `POST` the Dataverse user identifier, device token, and mobile application identifier in the device registration request to Customer Insights - Journeys.
 
-View full details about registering devices and users in [push notification device registration](developer-push-device-registration.md) and [user registration](real-time-marketing-push-user-mapping.md).
+View full details about registering devices and users in [push notification device registration](developer-push-device-registration.md) and [user registration](developer-push-user-mapping.md).
 
 ## Journey execution
 

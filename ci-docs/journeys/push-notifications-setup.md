@@ -22,7 +22,7 @@ To learn more about the overall approach to setting up push notifications in Cus
 To enable push notifications in Customer Insights - Journeys, you need to complete the following steps:
 
 1. [Push notification application configuration](push-notifications-setup.md)
-1. [User mapping for push notifications](real-time-marketing-push-user-mapping.md)
+1. [User mapping for push notifications](developer-push-user-mapping.md)
 1. [Device registration for push notifications](developer-push-device-registration.md)
 1. [Receiving push notifications on devices](developer-notifications.md)
 1. [Interaction reporting for push notifications](developer-push-interactions.md)
