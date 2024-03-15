@@ -189,7 +189,7 @@
       - name: Set up an automated text message keyword flow
         href: set-up-automated-sms-keyword-flow.md
     - name: Push notifications
-      href: real-time-marketing-push-notifications.md
+      href: push-messages.md
     - name: Create custom channels
       href: real-time-marketing-create-custom-channels.md
     - name: Use AI-driven run-time channel optimization
@@ -416,6 +416,16 @@
       href: real-time-marketing-custom-channel-custom-API.md
     - name: 7. Define your channel definition
       href: real-time-marketing-define-channel-definition.md
+  - name: Push notification setup for application developers
+    items:
+    - name: Push notification user mapping for application developers
+      href: developer-push-user-mapping.md
+    - name: Push notification device registration for application developers
+      href: developer-push-device-registration.md
+    - name: Receiving push notifications on mobile devices
+      href: developer-notifications.md
+    - name: Implement push notification interaction tracking
+      href: developer-push-interactions.md
   - name: Extend forms functionality
     items:
     - name: Client-side extensibility for forms
@@ -429,9 +439,9 @@
   - name: Reference guide for Customer Insights - Journeys interactions
     href: real-time-marketing-interactions-reference.md
   - name: Push notification setup for application developers
-    href: real-time-marketing-developer-push.md
+    href: developer-push-device-registration.md
   - name: Receive notifications and create interactions
-    href: real-time-marketing-developer-notifications.md
+    href: developer-notifications.md
   - name: Create a Customer Insights - Journeys segment using the Web API
     href: real-time-marketing-api-segment.md
   - name: Use binding IDs to correlate across triggers
@@ -488,14 +498,18 @@
       href: real-time-marketing-audience-data.md
     - name: Customer Insights - Journeys link tracking mechanics
       href: real-time-marketing-link-tracking-mechanics.md
-  - name: Text message and push notification setup
+  - name: Text message setup
     items:
     - name: Set up text messaging
       href: real-time-marketing-text-messaging-setup.md
     - name: Manage SMS (text message) keywords used in customer journeys
       href: manage-sms-keywords.md
-    - name: Set up push notifications
-      href: real-time-marketing-push-notifications-setup.md
+  - name: Push notification setup
+    items:
+    - name: Push notification overview for application developers
+      href: push-setup-overview.md
+    - name: Set up push notification applications
+      href: push-notifications-setup.md
   - name: Email administration
     items:
     - name: Get started with email
