@@ -56,7 +56,7 @@ Customer Insights - Journeys customer journeys let you reach customers through v
 
 - [Send an email](real-time-marketing-email.md)
 - [Send a text message](real-time-marketing-outbound-text-messaging.md)
-- [Send a push notification](real-time-marketing-push-notifications.md)
+- [Send a push notification](push-messages.md)
 
 ### A/B test
 

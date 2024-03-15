@@ -18,7 +18,6 @@ This article explains how to setup and configure providers and phone numbers for
 > [!NOTE]
 > Customer Insight - Journeys offers native integration with Azure Communication Services, Infobip, LINK Mobility, Telesign, Twilio, or Vibes (US and Canada). You can bring your own provider by creating up a [custom channel](real-time-marketing-create-custom-channels.md).
 
-
 ## Sign up for and configure your text messaging provider
 
 You can purchase or reuse an existing Azure Communication Services, Infobip, LINK Mobility, Telesign, Twilio, or Vibes SMS account to send text messages in Customer Insights - Journeys. 
