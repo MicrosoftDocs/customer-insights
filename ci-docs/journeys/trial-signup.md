@@ -28,6 +28,15 @@ Customer Insights offers a free 30-day trial. After a quick sign-up, you'll have
 1. Choose your starting app: Customer Insights - Journeys or Customer Insights - Data. If you choose Customer Insights - Data, complete the following steps:
     1. For the Customer Insights - Data app, you start in a demo experience. To enable Customer Insights - Data on the same Dataverse environment as Customer Insights - Journeys, select the **Start Trial** button in the upper right corner. This completes the installation of the Customer Insights - Data application.
     1. To sync the segmentation data between Customer Insights - Journeys and Customer Insights - Data, in the Customer Insights - Journeys app area switcher go to **Settings** > **Data Management** > **Customer Insights data connector** and select **Connect**.
+1. Customers can have only one concurrent self-service trial on the tenant at a time. They can also have an additional admin (subscription-based trial) on the tenant concurrently if they have an admin trial license. Users on the same tenant who sign-up for the self-service trial are added to the existing self-service trial environment if one is already active. The trial can be coverted to a production type environment once a paid license is on the tenant. To start the trial over, delete the trial environment in [Power Platform Admin Center](https://admin.powerplatform.microsoft.com) and sign-up for a new one. Trials nearing expiration can be extended one time via a self-service button click. 
+
+**To setup an admin trial** 
+
+1. If your tenant admin does not allow self-service trials, they can get an admin trial license via the [Microsoft Admin Center](https://admin.microsoft.com) or through the Microsoft salesperson.
+1. Once the admin trial license is added to the tenant via purchase services (marketplace) or a promocode URL from a Microsoft salesperson, you can create a new subscription-based trial environment in Power Platform Admin Center and install Customer Insights - Journeys and Customer Insights - Data.
+    1. On the **Environments** page in [Power Platform Admin Center](https://admin.powerplatform.microsoft.com), click **New** and fill out the environment details. Select **Subsription-based Trial** as the type of environment. Also, toggle **Allow D365 Apps** to ensure you can install apps on the environment. 
+    1. On the **Resources** page, find either Dynamics 365 Customer Insights or Dynamics 365 Marketing and click the **...** elipsis and click **Manage** to open the installation management page. 
+    1. Click on **Trials** to manage installation of trials. You will see the subscription-based trial environment you just created and can install Customer Insights - Journeys and Customer Insights - Data. 
 
 ## Customer Insights - Data trial
 
