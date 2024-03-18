@@ -47,6 +47,8 @@ To securely connect data in a private network, Power Query supports the use of [
 
 1. To add additional tables to your data source in the **Edit queries** dialog, go to **Home** and select **Get data**. Repeat steps 5-10 until you have added all tables for this data source. If you have a database that includes multiple datasets, each dataset is its own table.
 
+1. Select whether you want to refresh the data source manually or automatically. To refresh automatically, set the time frame. 
+
 1. Select **Save**. The **Data sources** page opens showing the new data source in **Refreshing** status.
 
    [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
