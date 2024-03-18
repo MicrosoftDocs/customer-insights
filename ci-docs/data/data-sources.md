@@ -63,5 +63,6 @@ If your environment was configured to use the default system storage and you use
 
 - [Manage data sources](data-sources-manage.md)
 - [Unify data sources](data-unification.md)
+- [FastTrack blog: Data integration patterns - introduction](https://community.dynamics.com/blogs/post/?postid=f32d115e-d9cb-ee11-92bd-000d3a7e795a)
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

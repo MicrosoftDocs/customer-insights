@@ -18,24 +18,6 @@ search.audienceType:
 >
 > For more up-to-date information, refer to [Google's one-click unsubscribe FAQ](https://support.google.com/a/answer/14229414?sjid=761938282406717544-NC#zippy=%2Cdo-all-messages-require-one-click-unsubscribe).
 
-> [!NOTE]
-> We're gradually rolling out the one-click unsubscribe feature across geographic regions. Refer to the table below for the latest updates on the availability of the one-click unsubscribe feature.
-> 
-> | Region | Feature switch available under **Settings** | Outbound marketing emails | Real-time journeys emails |
-> | --------| ---------------------------- | ----------- | ----------- |
-> | IND | Available | Supported | Feb 5 |
-> | CAN, SAM, FRA, CHE | Available | Supported | Feb 6 |
-> | UAE, APJ, OCE, GBR, JPN | Available | Supported | Feb 7 |
-> | EUR | Feb 8 | Feb 8 | Feb 8 |
-> | NAM | Feb 12 |Feb 12 | Feb 12 |
-> 
-> Learn more about your Dataverse region: [Datacenter regions](/power-platform/admin/new-datacenter-regions)
-
-> [!TIP]
-> Once the one-click unsubscribe feature switch is enabled, it enables the one-click unsubscribe functionality for outbound marketing *and* real-time journeys. However, there's currently a known issue that prevents one-click unsubscribe headers from being added to emails sent using real-time journeys, even when the feature switch is turned on.
->
-> For more details, refer to the [known issue summary](https://admin.powerplatform.microsoft.com/knownissues/3807453).
-
 Email providers and the [underlying protocols](https://datatracker.ietf.org/doc/html/rfc8058) support giving email recipients the ability to unsubscribe from emails using "one click" without leaving their email application. For example, Google surfaces an **Unsubscribe** link at the top of their email user interface:
 
 > [!div class="mx-imgBorder"]
@@ -135,9 +117,7 @@ Outbound marketing users that manage consent for different brands separately and
     
     :::image type="content" source="media/describe-changes-when-unsubscribed.png" alt-text="Describe changes when the functionality is unsubscribed." lightbox="media/describe-changes-when-unsubscribed.png":::
 
-1. Select **Save and close**. Then, on the main process window, select **Save** and then select **Activate** to start the process.
-    
-    :::image type="content" source="media/activate-the-process.png" alt-text="Activate the unsubscribe process." lightbox="media/activate-the-process.png":::
+1. Select **Save and close**. Then, on the main process window, select **Save** and then select **Activate** in the top toolbar to start the process.
 
 1. Go to the [maker portal](https://make.powerapps.com/) and select the applicable environment.
     

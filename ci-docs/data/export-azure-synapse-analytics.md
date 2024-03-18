@@ -16,8 +16,7 @@ ms.author: philk
 
 Azure Synapse is an analytics service that accelerates time to insight across data warehouses and big data systems. You can ingest and use data from Dynamics 365 Customer Insights - Data in [Azure Synapse](/azure/synapse-analytics/overview-what-is).
 
-> [!TIP]
-> To achieve the fastest data syncing with Azure Synapse Analytics we recommend the [Dataverse data linking service](/power-apps/maker/data-platform/azure-synapse-link-data-lake). It's the ideal solution for [Customer Insights tables in Dataverse](/dynamics365/customer-insights/data/tables#customer-insights---data-tables-in-dataverse).
+[!INCLUDE [data-out-azure-synapse-link](includes/data-out-azure-synapse-link.md)]
 
 ## Prerequisites
 

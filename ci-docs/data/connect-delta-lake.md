@@ -1,7 +1,7 @@
 ---
 title: "Connect to Delta tables in Azure Data Lake Storage (preview)"
-description: "Work with data stored in Delta Lake format from Azure Data Lake Storage."
-ms.date: 01/03/2024
+description: "Work with data stored in Delta tables from Azure Data Lake Storage."
+ms.date: 03/11/2024
 ms.topic: how-to
 author: mukeshpo
 ms.author: mukeshpo
@@ -13,13 +13,11 @@ ms.custom: bap-template
 
 [!INCLUDE [public-preview-banner](./includes/public-preview-banner.md)]
 
-Connect to data in Delta format and bring it into Dynamics 365 Customer Insights - Data. [Delta](https://go.microsoft.com/fwlink/?linkid=2248260) is a term introduced with Delta Lake, the foundation for storing data and tables in the Databricks Lakehouse Platform. Delta Lake is an open-source storage layer that brings ACID (atomicity, consistency, isolation, and durability) transactions to big data workloads. For more information, see the [Delta Lake Documentation Page.](https://docs.delta.io/latest/delta-intro.html)
+Connect to data in Delta tables and bring it into Dynamics 365 Customer Insights - Data. 
 
-Key reasons to connect to data stored in Delta format:
+[!INCLUDE [delta-lake-info](./includes/delta-lake-info.md)]
 
-- Directly import Delta formatted data to save time and effort.
-- Eliminate the compute and storage costs associated with transforming and storing a copy of your lakehouse data.
-- Improve the reliability of data ingestion to Customer Insights - Data provided by [Delta versioning](#delta-lake-time-travel-and-data-refreshes).
+[!INCLUDE [delta-lake-benefits](./includes/delta-lake-benefits.md)]
 
 <!---
 
@@ -30,36 +28,17 @@ Key reasons to connect to data stored in Delta format:
 
 ## Prerequisites
 
-- The Azure Data Lake Storage must be in the same tenant and Azure region as Customer Insights - Data.
+[!INCLUDE [delta-lake-prereqs](./includes/delta-lake-prereqs.md)]
 
-- The Customer Insights - Data service principal must have Storage Blob Data Contributor permissions to access the storage account. For more information, see [Grant permissions to the service principal to access the storage account](connect-service-principal.md#grant-permissions-to-the-service-principal-to-access-the-storage-account).
+- Data in your Azure Data Lake Storage must be in Delta tables. Customer Insights - Data relies on the version property in the table's history to identify the latest changes for incremental processing.
 
-- The user that sets up the data source connection needs at least Storage Blob Data Reader permissions on the Azure Data Lake Storage account.
-
-- Data stored in online services might be stored in a different location than where data is processed or stored. By importing or connecting to data stored in online services, you agree that data can be transferred. [Learn more at the Microsoft Trust Center](https://www.microsoft.com/trust-center).
-
-- Data in your Azure Data Lake Storage must be in Delta format. Customer Insights - Data relies on the version property in the table's history to identify the latest changes for incremental processing.
-
-- The Delta tables must be in a folder in the storage container and can't be in the container root directory. For example:
-
-  ```
-   storage_container_root/
-      DeltaLakeDataRoot/
-         ADeltaLakeTable/
-             _delta_log/
-                 0000.json
-                 0001.json
-             part-0001-snappy.parquet
-             part-0002-snappy.parquet 
-  ```  
-  
 ## Connect to Delta data from Azure Data Lake Storage
 
 1. Go to **Data** > **Data sources**.
 
 1. Select **Add a data source**.
 
-1. Select **Azure Data Lake - Delta tables (Preview)**.
+1. Select **Azure Data Lake Delta tables (Preview)**.
 
    :::image type="content" source="media/delta-lake-new.svg" alt-text="Dialog box to enter connection details for Delta Lake.":::
 
@@ -67,12 +46,14 @@ Key reasons to connect to data stored in Delta format:
 
 1. Choose one of the following options for **Connect your storage using**.
 
-   - **Azure subscription**: Select the **Subscription** and then the **Resource group** and **Storage account**. Optionally, if you want to ingest data from a storage account through an Azure Private Link, select **Enable Private Link**. For more information, see [Private Links](private-link.md).
-   - **Azure resource**: Enter the **Resource Id**. Optionally, if you want to ingest data from a storage account through an Azure Private Link, select **Enable Private Link**. For more information, see [Private Links](private-link.md).
+   - **Azure subscription**: Select the **Subscription** and then the **Resource group** and **Storage account**.
+   - **Azure resource**: Enter the **Resource Id**.
+
+1. Optionally, if you want to ingest data from a storage account through an Azure Private Link, select **Enable Private Link**. For more information, see [Private Links](private-link.md).
 
 1. Choose the name of the **Container** that contains the folder of your data, and select **Next**.
 
-1. Navigate to the folder that contains the data in Delta format and select it. Then, select **Next**. A list of available tables displays.
+1. Navigate to the folder that contains the data in Delta tables and select it. Then, select **Next**. A list of available tables displays.
 
 1. Select the tables you want to include.
 
@@ -132,7 +113,7 @@ A full refresh takes all the data from a table in Delta format and reloads it fr
 
 1. Go to **Data** > **Data sources**.
 
-1. Select the **Azure Data Lake - Delta tables (Preview)** data source.
+1. Select the **Azure Data Lake Delta tables (Preview)** data source.
 
 1. Select the table you want to refresh. The **Edit table** pane displays.
 
