@@ -33,6 +33,8 @@ The following usages and limits are tracked on this screen:
     - For more information about marketing contacts and how they are counted, see [How Customer Insights - Journeys is licensed](purchase.md#how-licensed) and the [Administration and setup FAQ](setup-troubleshooting.yml#licensing).
     > [!NOTE]
     > Active marketing contacts are counted as contact entities in the Dataverse database if they have received a marketing interaction within the last 12 months prior to the current date. Once a contact hasn't received an interaction in the last 12 months, it is no longer counted as an active contact.
+    - Quota entitled is calculated at the tenant level. If your entitled quota looks higher than the paid SKUs you own, you probably have trials on your teannt. 
+    - Quota usage is shown at the environment (organization) level. Total tenant level quota is captured in the 'Other orgs in your tenant' line item. 
 - **Litmus email previews**: Shows the total number of Litmus email previews (inbox previews) users at your organization can still use during the current month.
     - The pre-seeded capacity is shown together with your monthly consumption.
     - The pre-seeded capacity automatically resets on a monthly basis.
