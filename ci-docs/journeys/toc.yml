@@ -556,8 +556,6 @@
       href: customize-marketing-calendars.md
     - name: Create and customize template labels
       href: customize-template-labels.md
-    - name: Customize the email designer
-      href: developer/email-designer-customization.md
   - name: Data compliance
     items:
     - name: Data subject request (DSR) handling
@@ -1002,6 +1000,8 @@
         href: developer/filter-cities.md
       - name: Extend outbound marketing forms using code
         href: developer/marketing-form-client-side-extensibility.md
+    - name: Customize the email designer
+      href: developer/email-designer-customization.md
     - name: Work with segments using code
       href: developer/extend-segments.md
     - name: Export Dynamics 365 Customer Voice survey responses to Microsoft Excel
