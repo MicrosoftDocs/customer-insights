@@ -1,7 +1,7 @@
 ---
 title: User roles
 description: Learn about user roles and what permissions they have in Customer Insights - Data.
-ms.date: 02/16/2024
+ms.date: 03/19/2024
 ms.reviewer: mhart
 ms.topic: conceptual
 author: jodahl
@@ -92,7 +92,7 @@ An organization owns two different lines of businesses Automobile and Luxury ret
 ## Admin
 
 - All permissions available to the Contributor.
-- Change settings on the **System** page, including the working language, refresh schedules for your system processes, and exporting diagnostic logs.
+- Change settings on the **System** page, including the working language, refresh schedules for your system processes, giving consent for Copilot, and exporting diagnostic logs.
 - Change settings on the **Permissions** page, including users, API keys, private links, and key vault.
 - Set search and filter definitions for the Customers page using the **Search & filter index** page (accessible via the **Customers** page).
 - Manage connections and allow them for other user roles on **Connections** page.
