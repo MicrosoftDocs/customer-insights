@@ -1,7 +1,7 @@
 ---
 title: One-click unsubscribe support for emails 
 description: Learn how to use one-click unsubscribe support for emails in Dynamics 365 Customer Insights - Journeys
-ms.date: 02/01/2024
+ms.date: 03/18/2024
 ms.topic: get-started
 author: alfergus
 ms.author: alfergus
@@ -17,6 +17,9 @@ search.audienceType:
 > Google has clarified that senders that include an unsubscribe link in an email message have until June 1, 2024 to implement one-click unsubscribe in all commercial and promotional emails.
 >
 > For more up-to-date information, refer to [Google's one-click unsubscribe FAQ](https://support.google.com/a/answer/14229414?sjid=761938282406717544-NC#zippy=%2Cdo-all-messages-require-one-click-unsubscribe).
+
+> [!TIP]
+> Starting on April 15, 2024, unsubscribe links will expire one year after the link is created and will no longer work.
 
 Email providers and the [underlying protocols](https://datatracker.ietf.org/doc/html/rfc8058) support giving email recipients the ability to unsubscribe from emails using "one click" without leaving their email application. For example, Google surfaces an **Unsubscribe** link at the top of their email user interface:
 
