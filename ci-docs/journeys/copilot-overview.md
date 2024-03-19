@@ -12,6 +12,12 @@ ms.collection: bap-ai-copilot
 
 Copilot is an AI-powered assistant that helps you create and manage marketing campaigns using everyday language. Whether you're creating segments, emails, or journeys, Copilot simplifies the process and empowers you to reach customers more effectively. With the ability to edit, modify, and refine at each step, Copilot allows you to tailor customer journeys, providing a user-friendly way to connect with customers at every touchpoint. Here are some of the things you can do with Copilot in Customer Insights - Journeys:
 
+## How general Copilot helps you learn and do more with Customer Insights – Journeys
+
+Copilot, your handy tool for learning and doing simple tasks effortlessly. It revolutionizes the learning process by enabling users to seek information and perform tasks using natural language queries, accessing direct answers from the documentation. This eliminates the need to rely on external support channels or forums. 
+
+For example, while exploring products, Copilot provides real-time personalized recommendations, promotions, and addresses potential concerns based on historical data. Additionally, App Copilot offers a seamless plugin that facilitates natural language navigation, making tasks not only more accessible but also contributing to an overall more intuitive and enjoyable user journey. Learn more [here](add-ai-copilot.md)
+
 ## Target the right customers using query assist
 
 Describe your criteria in natural language and let Copilot create segments for your journeys. When you engage with Copilot using conversational language, Copilot offers search term suggestions and even refines the language for optimal results. Copilot's natural language processing (NLP) capabilities enable it to discern context, allowing for dynamic adjustments based on the evolving conversation.
