@@ -83,7 +83,7 @@ The workspace you choose to link with Dataverse must be assigned to a premium ca
     > [!div class="mx-imgBorder"]
     > ![Create a shortcut through lakehouse to get data](media/create-shortcut-from-lakehouse.png "Create a shortcut through lakehouse to get data")
 
-1. Select **Datavers**e from the shortcut source types.
+1. Select **Dataverse** from the shortcut source types.
 
     > [!div class="mx-imgBorder"]
     > ![Select your Dataverse from the shortcut](media/select-your-dataverse.png "Select your Dataverse from the shortcut")
@@ -106,6 +106,9 @@ The workspace you choose to link with Dataverse must be assigned to a premium ca
     :::image type="content" source="media/use-sql-analytics-endpoint-to-write-queries.png" alt-text="Use SQL analytics endpoint to write queries." lightbox="media/use-sql-analytics-endpoint-to-write-queries.png":::
 
 1. Choose the **Data** tab, and select **New report**. Use Power BI to create a new report from your data or have Copilot help you get started.
+
+> [!NOTE]
+> You can find detailed information on CI Journeys interaction data schema here: [overview of CustomerInsightsJourneys - Common Data Model](/https://learn.microsoft.com/en-us/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsightsjourneys/overview)
 
 ## Known limitations during preview
 
