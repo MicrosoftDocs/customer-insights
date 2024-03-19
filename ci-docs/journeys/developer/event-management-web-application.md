@@ -37,7 +37,7 @@ You can host a custom event website in two ways:
 You can build your front end or customize the provided demo event website.
 
 > [!TIP]
-> You need a local development environment to customize your event website. It's not possible to customize it through Power Pages.
+> The outbound marketing event website cannot be customized using Power Pages Studio.
 
 > [!NOTE]
 > The provided demo event website is an [Angular framework](https://angular.io/guide/quickstart) based website. However, since the backend is not dependent on the front end, you can use any framework of your choice.
