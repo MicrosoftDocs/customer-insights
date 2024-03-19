@@ -1,7 +1,7 @@
 ---
 title: "Preview: Customer Insights - Journeys integration with Microsoft Fabric"
 description: Learn about how to integrate Customer Insights - Journeys with Microsoft Fabric.
-ms.date: 03/12/2024
+ms.date: 03/19/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -12,9 +12,6 @@ search.audienceType:
 ---
 
 # Preview: Customer Insights - Journeys integration with Microsoft Fabric
-
-> [!IMPORTANT]
-> This feature is not yet available but is coming soon.
 
 > [!IMPORTANT]
 > A preview feature is a feature that is not complete, but is made available before it’s officially in a release so customers can get early access and provide feedback. Preview features aren’t meant for production use and may have limited or restricted functionality.
@@ -83,7 +80,7 @@ The workspace you choose to link with Dataverse must be assigned to a premium ca
     > [!div class="mx-imgBorder"]
     > ![Create a shortcut through lakehouse to get data](media/create-shortcut-from-lakehouse.png "Create a shortcut through lakehouse to get data")
 
-1. Select **Datavers**e from the shortcut source types.
+1. Select **Dataverse** from the shortcut source types.
 
     > [!div class="mx-imgBorder"]
     > ![Select your Dataverse from the shortcut](media/select-your-dataverse.png "Select your Dataverse from the shortcut")
@@ -107,11 +104,14 @@ The workspace you choose to link with Dataverse must be assigned to a premium ca
 
 1. Choose the **Data** tab, and select **New report**. Use Power BI to create a new report from your data or have Copilot help you get started.
 
+> [!NOTE]
+> You can find detailed information on Customer Insights - Journeys interaction data schema here: [Overview of Customer Insights - Journeys - Common Data Model](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsightsjourneys/overview)
+
 ## Known limitations during preview
 
 - You need to have a Power BI premium capacity, Fabric premium capacity, or trial capacity in the same region as your Dataverse environment. Power BI premium per user capacity isn't sufficient.
-- Don't delete any Fabric artifacts such as Lakehouse, SQL endpoint, etc. during preview.
-- Depending on the size of data, initial sync may take 30 minutes or more. In the case of large tables, initial sync may take longer before you can consume data in Fabric. 
+- Don't delete any Fabric artifacts such as Lakehouse, SQL endpoint, etc. during the preview.
+- Depending on the size of the data, initial sync may take 30 minutes or more. In the case of large tables, initial sync may take longer before you can consume data in Fabric. 
 - After the initial sync, data changes in tables will be reflected in Fabric up to 24 hours later.
 - Initially, only new data (real-time journeys and some outbound marketing data) generated after the date of activating the preview will be available for custom reporting. 
 - It's possible that there will be changes (for example, new attributes) in the real-time journeys schema during preview. 
