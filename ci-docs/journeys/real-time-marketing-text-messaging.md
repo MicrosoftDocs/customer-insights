@@ -14,7 +14,7 @@ search.audienceType:
 # Create outbound text messages
 
 > [!TIP]
-> Links in SMS messages are automatically shorted to reduce character count. Starting on April 15, 2024, URL sent in SMS messages will expire one year after the message is sent and will no longer work.
+> Links in SMS messages are automatically shorted to reduce character count. Starting on April 15, 2024, URLs sent in SMS messages will expire one year after the message is sent and will no longer work.
 
 Text messages (SMS) allow you to reach customers directly on their mobile devices. You can send text messages from Dynamics 365 Customer Insights - Journeys by signing up with a provider such as Azure Communication Services, Infobip, LINK Mobility, Telesign, Twilio, or Vibes and configuring Customer Insights - Journeys to work with the provider. To learn how to set up a text messaging provider account, see [Set up text messaging](real-time-marketing-text-messaging-setup.md)
 

@@ -1,7 +1,7 @@
 ---
 title: New and upcoming features
 description: Information about new features, improvements, and bug fixes in Dynamics 365 Customer Insights - Journeys releases.
-ms.date: 03/12/2024
+ms.date: 03/18/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -25,6 +25,13 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 | App              | GA release      |
 |------------------|-----------------|
 | Customer Insights - Journeys        |   1.1.38813.71    |
+
+> [!IMPORTANT]
+> Starting on April 15, 2024, changes to link functionality will affect the following areas:
+>
+> - **Link tracking**: Links in messages that were sent more than one year prior will no longer produce tracking results, but will otherwise function correctly. Links in messages sent less than one year prior will continue to generate tracking analytics.
+> - **Text messages**: URLs sent in SMS messages will expire one year after the message is sent and will no longer work.
+> - **Unsubscribe links**: Unsubscribe links will expire one year after the link is created and will no longer work.
 
 ### Public preview
 
