@@ -55,12 +55,15 @@ Sample queries for the *UnifiedActivity* table.
 
 ### Manage Workflows
 
-Sample queries to run a process in Customer Insights - Data such as refresh a data source or unify data.
+Sample queries to related to processes in Customer Insights - Data such as refresh a data source or unify data or get the status of unification job
 
 |Query type |Example  | Note  |
 |---------|---------|---------|
-|Get data source IDs| `{serviceRoot}/manage/datasources/v2 |   This returns all data sources on your environment. From the response, you can check the 'friendlyName' for a specific data source and then use it's 'dataSourceId'  |
-|Refresh a data source| `{serviceRoot}/manage/workflows/main/jobs?operationType=Ingestion&identifiers='{dataSourceId}'&forceRunRequested=true | Use the 'dataSourceId' from the above respose to refresh a data source|
+|Get data source IDs| `{serviceRoot}/manage/datasources/v2` |   This returns all data sources on your environment. From the response, you can check the 'friendlyName' for a specific data source and then use it's 'dataSourceId'  |
+|Refresh a data source| `{serviceRoot}/manage/workflows/main/jobs?operationType=Ingestion&identifiers='{dataSourceId}'&forceRunRequested=true` | Use the 'dataSourceId' from the above respose to refresh a data source. This is a POST request|
+|Run a full refresh| `{serviceRoot}/manage/workflows/main/jobs?operationType=all&forceRunRequested=true` | This refreshes all processes on your environment. This is a POST request|
+|Get status of processes| `{serviceRoot}/manage/workflows/main/jobs` | |
+
 
 ## Other examples
 
