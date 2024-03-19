@@ -37,6 +37,9 @@ You can host a custom event website in two ways:
 You can build your frontend or customize the provided demo event website.
 
 > [!NOTE]
+> You will need local development to customize your event website. It is not possible to customize it through Power Pages.
+
+> [!NOTE]
 > The provided demo event website is an [Angular framework](https://angular.io/guide/quickstart) based website. However, since the backend is not dependent on the frontend, you can use any framework of your choice.
 
 To get started with customizing the demo event website, you need to follow these steps:
