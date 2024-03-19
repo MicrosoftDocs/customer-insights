@@ -10,7 +10,9 @@ ms.author: cadesantha
 
 # Relationships between tables and table paths
 
-Relationships connect tables and define a graph of your data when tables share a common identifier, a foreign key. This foreign key can be referenced from one table to another. Connected tables enable the definition of segments and measures based on multiple data sources. A relationship consists of a *source table* containing the foreign key and a *target table* that the source table's foreign key points to.
+Customer data is often spread across multiple tables. For example, you could have a table for users, orders, orderDetails, products. It's critical for this data to be connected to each other so you can leverage it for your scenarios. For example, let's say you want to get a segment of all users who placed an order recently. To achieve this, you can't use the 'users' table alone, but would instead need to use the 'orders' table with the 'users' table. In this case, your 'users' and 'orders' table need to be linked to each other, for example - the 'orders' table will likely have a column for 'userId' that represents the ID of the user who placed the order. Relationships in Customer Insights - Data let you link your tables together, which enables you to use all of your data across segments and measures and other Customer Insights - Data processes. 
+
+Relationships define a graph of your data when tables share a common identifier, a foreign key. This foreign key can be referenced from one table to another. A relationship consists of a *source table* containing the foreign key and a *target table* that the source table's foreign key points to.
 
 There are three types of relationships: 
 - Non-editable system relationships are created by the system as part of the data unification process
