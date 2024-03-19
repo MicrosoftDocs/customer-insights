@@ -37,3 +37,5 @@ If you're using outbound marketing segments, you should delay the start of your 
 After a journey runs, the **Journey insights** view shows links to the segments used. To make sure that the exported segment is always up to date, the app cleans up the exported real-time journeys segments three days after a journey completes its run (if the segment isn't used in any other journey).
 
 The insights when an outbound marketing segment is used in a real-time journey aren't linked to the original outbound marketing segment. Additionally, the original outbound marketing segment isn't cleaned up. This issue will be addressed in a future bug fix.
+
+[!INCLUDE [footer-include](./includes/footer-banner.md)]
