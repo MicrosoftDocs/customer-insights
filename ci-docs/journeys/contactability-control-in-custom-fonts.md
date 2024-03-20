@@ -34,3 +34,5 @@ search.audienceType:
 1. Once done, it would look like this - 
  > [!div class="mx-imgBorder"]
  > ![You can add your contact points](media/add-your-contact-points.png "You can add your contact points")
+
+[!INCLUDE [footer-include](./includes/footer-banner.md)]
