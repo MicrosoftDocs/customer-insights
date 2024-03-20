@@ -1,7 +1,7 @@
 ---
 title: "OData query examples"
 description: "Commonly used examples of for the Open Data Protocol (OData) to query the Customer Insights - Data APIs to review data."
-ms.date: 03/15/2024
+ms.date: 03/20/2024
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
@@ -55,14 +55,14 @@ Sample queries for the *UnifiedActivity* table.
 
 ### Manage Workflows
 
-Sample queries to related to processes in Customer Insights - Data such as refresh a data source or unify data or get the status of unification job
+Sample queries related to processes in Customer Insights - Data such as refresh a data source, unify data, or get the status of a unification job.
 
 |Query type |Example  | Note  |
 |---------|---------|---------|
-|Get data source IDs| `{serviceRoot}/manage/datasources/v2` |   This returns all data sources on your environment. From the response, you can check the 'friendlyName' for a specific data source and then use it's 'dataSourceId'  |
-|Refresh a data source| `{serviceRoot}/manage/workflows/main/jobs?operationType=Ingestion&identifiers='{dataSourceId}'&forceRunRequested=true` | Use the 'dataSourceId' from the above respose to refresh a data source. This is a POST request|
-|Run a full refresh| `{serviceRoot}/manage/workflows/main/jobs?operationType=all&forceRunRequested=true` | This refreshes all processes on your environment. This is a POST request|
-|Get status of processes| `{serviceRoot}/manage/workflows/main/jobs` | |
+|Get data source IDs| `{serviceRoot}/manage/datasources/v2` | Returns all data sources on your environment. From the response, you can check the 'friendlyName' for a specific data source and then use its 'dataSourceId'.  |
+|Refresh a data source| `{serviceRoot}/manage/workflows/main/jobs?operationType=Ingestion&identifiers='{dataSourceId}'&forceRunRequested=true` | Use the 'dataSourceId' from the above response to refresh a data source. This is a POST request. |
+|Run a full refresh| `{serviceRoot}/manage/workflows/main/jobs?operationType=all&forceRunRequested=true` | Refreshes all processes on your environment. This is a POST request. |
+|Get status of processes| `{serviceRoot}/manage/workflows/main/jobs` |  |
 
 
 ## Other examples
