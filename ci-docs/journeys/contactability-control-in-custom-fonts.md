@@ -22,7 +22,7 @@ search.audienceType:
 1. From the list of components, add a new **1-column tab** to the layout of the form.
    > [!div class="mx-imgBorder"]
    > ![For the layout, add a section of one column tab](media/add-1-column-tab.png "For the layout, add a section of one column tab")
-1. Select the "Expand this tab by default" and "Expand first component to full tab" options for this tab and name the tab "Communication".
+1. Select the "Expand this tab by default" and "Expand first component to full tab" options for this tab and name the tab "Communication."
    > [!div class="mx-imgBorder"]
    > ![Expand column tab to full display](media/expand-column-tab-to full-display.png "Expand column tab to full display")
 1. Add a **1-column section** component on this tab. 
