@@ -45,6 +45,9 @@ The following sections explain how to set up Power BI and link to Fabric.
 
 ### Link to Fabric from Power Apps
 
+> [!NOTE]
+> You can find detailed information on prerequisites and instructions on how to [Link your Dataverse environment to Microsoft Fabric here.](https://learn.microsoft.com/en-us/power-apps/maker/data-platform/azure-synapse-link-view-in-fabric)
+
 1. Launch the [Power apps maker portal](https://make.preview.powerapps.com/).
 1. Choose the correct **environment** on the top right side.
 
@@ -102,7 +105,9 @@ The workspace you choose to link with Dataverse must be assigned to a premium ca
 
     :::image type="content" source="media/use-sql-analytics-endpoint-to-write-queries.png" alt-text="Use SQL analytics endpoint to write queries." lightbox="media/use-sql-analytics-endpoint-to-write-queries.png":::
 
-1. Choose the **Data** tab, and select **New report**. Use Power BI to create a new report from your data or have Copilot help you get started.
+1. Leverage Fabric capabilities including Power BI to create reports from your data or have Copilot help you get started. Here are a few resources to get started:
+   1. [Tutorial: Fabric for Power BI users](https://learn.microsoft.com/en-us/power-bi/fundamentals/fabric-get-started)
+   2. [Get started with Microsoft Fabric](https://learn.microsoft.com/en-us/training/paths/get-started-fabric/)
 
 > [!NOTE]
 > You can find detailed information on Customer Insights - Journeys interaction data schema here: [Overview of Customer Insights - Journeys - Common Data Model](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsightsjourneys/overview)
@@ -114,4 +119,12 @@ The workspace you choose to link with Dataverse must be assigned to a premium ca
 - Depending on the size of the data, initial sync may take 30 minutes or more. In the case of large tables, initial sync may take longer before you can consume data in Fabric. 
 - After the initial sync, data changes in tables will be reflected in Fabric up to 24 hours later.
 - Initially, only new data (real-time journeys and some outbound marketing data) generated after the date of activating the preview will be available for custom reporting. 
-- It's possible that there will be changes (for example, new attributes) in the real-time journeys schema during preview. 
+- It's possible that there will be changes (for example, new attributes) in the real-time journeys schema during preview.
+
+## Learn more
+
+Here are additional resources for this topic:
+- [OneLake shortcuts](https://learn.microsoft.com/en-us/fabric/onelake/onelake-shortcuts)
+- [Tutorial: Fabric for Power BI users](https://learn.microsoft.com/en-us/power-bi/fundamentals/fabric-get-started)
+- [Get started with Microsoft Fabric](https://learn.microsoft.com/en-us/training/paths/get-started-fabric/)
+- [Develop dynamic reports with Microsoft Power BI](https://learn.microsoft.com/en-us/training/paths/develop-dynamic-reports-microsoft-power-bi/)
