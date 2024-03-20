@@ -1,7 +1,7 @@
 ---
 title: Event management web application in outbound marketing overview
 description: Learn how you can extend event management web application functionality in outbound marketing.
-ms.date: 01/22/2024
+ms.date: 03/19/2024
 ms.topic: overview
 author: alfergus
 ms.author: alfergus
@@ -22,10 +22,10 @@ The event management feature helps you to organize, manage, and process the even
 
 The event portal consists of two parts:
 
-1. Frontend
+1. Front end
 1. REST API backend
 
-You can implement the frontend using any of the available frameworks. The frontend part is a single page application and is fully customizable. The backend and the customization of the backend depends on the hosting type.
+You can implement the front end using any of the available frameworks. The front end is a single-page application and is fully customizable. The backend and the customization of the backend depend on the hosting type.
 
 You can host a custom event website in two ways:
 
@@ -34,10 +34,13 @@ You can host a custom event website in two ways:
 
 ## Prerequisites
 
-You can build your frontend or customize the provided demo event website.
+You can build your front end or customize the provided demo event website.
+
+> [!TIP]
+> The outbound marketing event website cannot be customized using Power Pages Studio.
 
 > [!NOTE]
-> The provided demo event website is an [Angular framework](https://angular.io/guide/quickstart) based website. However, since the backend is not dependent on the frontend, you can use any framework of your choice.
+> The provided demo event website is an [Angular framework](https://angular.io/guide/quickstart) based website. However, since the backend is not dependent on the front end, you can use any framework of your choice.
 
 To get started with customizing the demo event website, you need to follow these steps:
 
@@ -69,7 +72,7 @@ To get started with customizing the demo event website, you need to follow these
    > You need to run the command in the same directory where the `package.json` file is located.
 
 6. See [public API documentation](https://go.microsoft.com/fwlink/?linkid=2042224) to interact with the backend services.
-7. You must also have a Dynamics 365 Customer Insights - Journeys instance with Event Management solution and Portals solution installed. To install, see [Sign up for a free Dynamics 365 Customer Insights - Journeys trial](/dynamics365/marketing/trial-signup).
+7. You must also have a Dynamics 365 Customer Insights - Journeys instance with Event Management and Portals solutions installed. To install, see [Sign up for a free Dynamics 365 Customer Insights - Journeys trial](/dynamics365/marketing/trial-signup).
 
 ## Download sample event website
 
@@ -80,7 +83,7 @@ Select the version you would like to download from the table below.
 
 | Name | Release | Changes | Uploaded |
 |--|--|--|--|
-|Sample Event Website| 1.56.0 (December-release)|- Fixed waitlisting issue. <br/>- Minor improvements and bugfixes.| [Download](https://download.microsoft.com/download/1/5/0/150757D0-2600-493B-8C9A-3213AD873A73/231205-EventWebsite.zip) |
+|Sample Event Website| 1.56.0 (December-release)|- Fixed waitlisting issue. <br/>- Minor improvements and bug fixes.| [Download](https://download.microsoft.com/download/1/5/0/150757D0-2600-493B-8C9A-3213AD873A73/231205-EventWebsite.zip) |
 |Sample Event Website| 1.46.0 (September release)|- Fix accessibility issues. <br/>- Minor improvements and bug fixes.| [Download](https://download.microsoft.com/download/1/5/0/150757D0-2600-493B-8C9A-3213AD873A73/220921-EventWebsite.zip) |
 |Sample Event Website| 1.34.0 (April release)| - Minor improvements and bug fixes.| [Download](https://download.microsoft.com/download/1/5/0/150757D0-2600-493B-8C9A-3213AD873A73/210413_EventWebsite.zip) |
 |Sample Event Website| 1.30.0 (December release)| - Minor improvements and bug fixes.| [Download](https://download.microsoft.com/download/1/5/0/150757D0-2600-493B-8C9A-3213AD873A73/201205-EventWebsite.zip) |
@@ -93,18 +96,18 @@ Select the version you would like to download from the table below.
 |Sample Event Website| 1.20.0 (February release)| - Integrate marketing forms for event registrations. <br/>- Minor improvements and bug fixes.| [Download](https://download.microsoft.com/download/1/5/0/150757D0-2600-493B-8C9A-3213AD873A73/200205-EventWebsite.zip) |
 |Sample Event Website| 1.19.0 (December release)| - Fix accessibility issues. <br/>- Update website languages. <br/>- Improve speaker page. <br/>- Minor improvements and bug fixes.| [Download](https://download.microsoft.com/download/1/5/0/150757D0-2600-493B-8C9A-3213AD873A73/191201-EventWebsite.zip) |
 |Sample Event Website| 1.18.0 (October release)| - Minor improvements and bug fixes. | [Download](https://download.microsoft.com/download/1/5/0/150757D0-2600-493B-8C9A-3213AD873A73/191001-EventWebsite.zip) |
-|Sample Event Website| 1.17.0 (September release)|- Improve workflow for paid events. <br/>- Fix compatibility issues for IE11. <br/>- Improve event details page. <br/>- Minor improvements and bug fixes.| [Download](https://download.microsoft.com/download/1/5/0/150757D0-2600-493B-8C9A-3213AD873A73/190901-EventWebsite.zip) |
+|Sample Event Website| 1.17.0 (September release)|- Improve workflow for paid events. <br/>- Fix compatibility issues for IE11. <br/>- Improve the event details page. <br/>- Minor improvements and bug fixes.| [Download](https://download.microsoft.com/download/1/5/0/150757D0-2600-493B-8C9A-3213AD873A73/190901-EventWebsite.zip) |
 |Sample Event Website| 1.16.0 (August release)|- Improve loading behavior of event page. <br/>- Improve UI/UX of custom registration field of type boolean. <br/>- Minor improvements and bug fixes.| [Download](https://download.microsoft.com/download/1/5/0/150757D0-2600-493B-8C9A-3213AD873A73/190802-EventWebsite.zip) |
 |Sample Event Website| 1.15.0 (July release)| - Add information to the session list view, if the session is full. <br/>- Add validation to custom registration fields. <br/>- Improve translations. <br/>- Fixing missing font-awesome icons after deploying to Portals. <br/>- Minor improvements and bug fixes.| [Download](https://download.microsoft.com/download/1/5/0/150757D0-2600-493B-8C9A-3213AD873A73/190701-EventWebsite.zip) |
-| Sample Event Website | 1.14.0 (June release) | Upgrade to Angular 7, improve UI & UX of checkout page, update and improve translations, improve DeployToD365Instance.ps1 script, improve custom registration field validation, other bug fixes | [Download](https://download.microsoft.com/download/1/5/0/150757D0-2600-493B-8C9A-3213AD873A73/190601-EventWebsite.zip) |
+| Sample Event Website | 1.14.0 (June release) | Upgrade to Angular 7, improve UI and UX of the checkout page, update and improve translations, improve DeployToD365Instance.ps1 script, improve custom registration field validation, other bug fixes | [Download](https://download.microsoft.com/download/1/5/0/150757D0-2600-493B-8C9A-3213AD873A73/190601-EventWebsite.zip) |
 | Sample Event Website | 1.13.0 (April release) | Waitlist functionality on session level, UI polishing, bug fixes | [Download](https://download.microsoft.com/download/1/5/0/150757D0-2600-493B-8C9A-3213AD873A73/190401-EventWebsite.zip) |
 | Sample Event Website | 1.12.2 (March release) | UI & UX improvements, bug fixes | [Download](https://download.microsoft.com/download/1/5/0/150757D0-2600-493B-8C9A-3213AD873A73/190302-EventWebsite.zip) |
 
-## Environment Configuration parameters
+## Environment configuration parameters
 
- The **src\environments** folder contains sample configuration files for different environments (self-hosted, portal hosted, development). The configuration set up for the custom event website is made by creating an `environment.ts` file inside the `\src\environments` folder. You can find instructions on how to change the configuration in the related articles [Environment configuration for self-hosted](self-hosted.md) and [Environment configuration for Portal hosted](portal-hosted.md).
+The **src\environments** folder contains sample configuration files for different environments (self-hosted, portal-hosted, development). The configuration set up for the custom event website is made by creating an `environment.ts` file inside the `\src\environments` folder. You can find instructions on how to change the configuration in the related articles [Environment configuration for self-hosted](self-hosted.md) and [Environment configuration for Portal hosted](portal-hosted.md).
 
-Some of the parameters that you need to understand before you start configuring your custom event website:
+Here are some of the parameters that you need to understand before you start configuring your custom event website:
 
 |Parameter|Description|
 |-----|-----|
@@ -119,12 +122,12 @@ Some of the parameters that you need to understand before you start configuring 
 |**useAadB2C** | Specifies whether you want to use **Microsoft Entra ID identity management** for authentication. If you want to use **Power Apps portals identity management**, this flag needs to be set to false. If Microsoft Entra ID is enabled, then you need to configure the `aadB2CConfig` variable.|
 |**aadB2CConfig** | Configuration object used by event management application when **Microsoft Entra ID identity management** is enabled. |
 |**useMockData** | This setting can be used to return mock objects instead of making real API calls.|
-|**dateSettings** | This setting can be used to configure how the dates will be formatted in the website. If `convertToLocalDate` flag is set to true, all dates are automatically converted to the end users local time. |
-|**languageSettings** | This setting can be used to configure how languages will be loaded in the website. If `forceSingleLanguage` flag is set to true, the website will be loaded in the language specified in `websiteLanguageLcid`. The `showLanguageDropdown` flag allows to show or hide the language dropdown. By default, language dropdown is visible and the website will use the end users browser language. |
+|**dateSettings** | This setting can be used to configure how the dates will be formatted on the website. If `convertToLocalDate` flag is set to true, all dates are automatically converted to the end user's local time. |
+|**languageSettings** | This setting can be used to configure how languages will be loaded on the website. If `forceSingleLanguage` flag is set to true, the website will be loaded in the language specified in `websiteLanguageLcid`. The `showLanguageDropdown` flag allows to show or hide the language dropdown. By default, the language dropdown is visible and the website will use the end user's browser language. |
 
 ## Backend customization
 
- System customizer wants to add a new field to the existing event management entity and wants to see that field in the event website. For example if the **custom_new_field** field is added to the **evtmgmt_pass** entity. The passes for the event can be retrieved using the API endpoint `api/v2.0/events/{readableEventId}/passes`, but the result doesn't contain the newly added field.
+You may run into a situation where you want to customize the backend of the event management application. Let's say a system customizer wants to add a new field to the existing event management entity and wants to see that field on the event website. For example, if the **custom_new_field** field is added to the **evtmgmt_pass** entity. The passes for the event can be retrieved using the API endpoint `api/v2.0/events/{readableEventId}/passes`, but the result doesn't contain the newly added field.
 
 To expose the new field to be visible in the API, follow the steps below:
 
@@ -134,6 +137,6 @@ To expose the new field to be visible in the API, follow the steps below:
 1. Select **New Website table configuration** to create a new record.
 1. Enter the name of your choice in the **Name** field.
 1. Select the entity that you want an extra field to be visible in the **Selected Entity** field.
-1. Write a JSON array that contains the new custom field that should be visible through the API in the **Selected fields**. This exposes the new custom field through the API, and you can utilize it in the frontend.
+1. Write a JSON array that contains the new custom field that should be visible through the API in the **Selected fields**. This exposes the new custom field through the API, and you can utilize it in the front end.
 
 [!INCLUDE [footer-include](.././includes/footer-banner.md)]
