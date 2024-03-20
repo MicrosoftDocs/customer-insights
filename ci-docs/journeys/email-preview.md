@@ -69,6 +69,7 @@ Select **Test Send** on the command bar to send your current design to one or mo
 Select the **Save** button the bottom of the flyout panel to send the message to your specified email address(s).
 
 > [!NOTE]
-> You can test-send both draft and live email messages, so you don't have to go live to do a test send. In a live email message, select the three dots on the right of the command bar to see the **Test send** button.
+> - You can test-send both draft and live email messages, so you don't have to go live to do a test send. In a live email message, select the three dots on the right of the command bar to see the **Test send** button.
+> - The Email analytics are not affected by the test send feature.
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
