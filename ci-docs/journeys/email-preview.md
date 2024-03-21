@@ -1,7 +1,7 @@
 ---
 title: Check your work using previews and test sends
 description: Learn how to use in-app previews and test sends to inspect and test your email message design in Dynamics 365 Customer Insights - Journeys.
-ms.date: 03/11/2024
+ms.date: 03/21/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -49,7 +49,7 @@ Use the form-factor icons in the right pane to switch between the available form
 
 ## Use the advanced inbox preview feature
 
-Go to the **Email designer** > **Preview and test** > **Email clients** tab to see real-world inbox previews that show your design exactly as it will appear in a wide variety of target email clients and platforms. This feature renders your message by using native code from each of the listed target platforms, and then delivers your preview as an image file showing the precise results.
+Go to the **Email designer** > **Preview and test** > **Email clients** tab to see real-world inbox previews that show your design exactly as it will appear in a wide variety of target email clients and platforms. This feature renders your message by using native code from each of the listed target platforms and then delivers your preview as an image file showing the precise results.
 
 The inbox preview is provided by a Microsoft partner called Litmus Software, Inc. ([litmus.com](https://litmus.com/)). Your Dynamics 365 Customer Insights - Journeys license includes 100 inbox previews per month, and this quota is shared by your entire organization. After your organization has used all the available previews for the month, each user must set up their own Litmus account if they want to create additional previews. Personal Litmus quotas apply to individual users, not to the entire organization. When you've used all your free previews, you'll be given the option to sign in to Litmus directly from the **Inbox Preview** tab in Dynamics 365 Customer Insights - Journeys. After you're signed in, the integration is seamless.
 
@@ -64,12 +64,12 @@ Select **Test Send** on the command bar to send your current design to one or mo
 
 - **Email address**: Enter one or more target email addresses (comma-separated). You'll typically just use your own email address here.
 - **Test contact**: Select a contact record to supply values for dynamic content (such as a first name in the salutation). For a live message, these values come from the contact record for each individual recipient.
-- **Test content settings**: Select a content-settings record to supply values for dynamic content (such as a subscription-center URL or the sender postal address). For a live message, the content-settings record is specified by the customer journey that sends the message.
+- **Test content settings**: Select a content-settings record to supply values for dynamic content (such as a subscription-center URL or the sender's postal address). For a live message, the content-settings record is specified by the customer journey that sends the message.
 
-Select the **Save** button the bottom of the flyout panel to send the message to your specified email address(s).
+Select the **Save** button at the bottom of the flyout panel to send the message to your specified email address(s).
 
 > [!NOTE]
-> - You can test-send both draft and live email messages, so you don't have to go live to do a test send. In a live email message, select the three dots on the right of the command bar to see the **Test send** button.
-> - The Email analytics are not affected by the test send feature.
+> - You can test-send draft *and* live email messages, so you don't have to go live to do a test send. In a live email message, select the three dots on the right of the command bar to see the **Test send** button.
+> - Email analytics aren't affected by the test send feature.
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
