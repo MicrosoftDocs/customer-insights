@@ -1,7 +1,7 @@
 ---
 title: Use Microsoft Teams for Dynamics 365 Customer Insights - Journeys online events
 description: Learn how to create and host live events in Dynamics 365 Customer Insights - Journeys using Microsoft Teams as the webinar provider.
-ms.date: 08/23/2023
+ms.date: 03/21/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -15,9 +15,9 @@ search.audienceType:
 
 [!INCLUDE [azure-ad-to-microsoft-entra-id](./includes/azure-ad-to-microsoft-entra-id.md)]
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4J4cV]
-
 [!INCLUDE [marketing-trial-cta](./includes/marketing-trial-cta.md)]
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4J4cV]
 
 This article explains how to use Microsoft Teams as an online meeting provider for Customer Insights - Journeys events. Teams event functionality is incorporated directly into the Customer Insights - Journeys app, allowing you to use Teams webinars or Teams live events for one/some to many online events, and Teams meetings for interactive online meetings.
 
@@ -142,7 +142,12 @@ After you save your event, your settings will be reflected in your Teams calenda
 ### Teams live events
 
 > [!NOTE]
-> We recommend that you use Teams webinars for your presentation event needs. Although Teams live events are still available, Teams webinars provide richer functionality (such as the ability to use [breakout rooms](https://support.microsoft.com/office/use-breakout-rooms-in-teams-meetings-7de1f48a-da07-466c-a5ab-4ebace28e461)) out of the box.
+> Teams Live Events will be discontinued as of September 30, 2024. Learn more:[Teams Live Events retiring September 30, 2024](/lifecycle/announcements/teams-live-events-retiring-09-30-2024).
+>
+> It's recommended to utilize [Teams Webinars](#teams-webinar) to schedule your events beyond this date.
+
+> [!NOTE]
+> We recommend that you use Teams webinars for your presentation event needs. Teams webinars provide richer functionality (such as the ability to use [breakout rooms](https://support.microsoft.com/office/use-breakout-rooms-in-teams-meetings-7de1f48a-da07-466c-a5ab-4ebace28e461)) out of the box.
 
 You can use Teams live events to create webinar-style online meetings. Live event presenters can share content, video, and audio. Attendees can view the content, but can’t share their own audio, video, or content.
 
