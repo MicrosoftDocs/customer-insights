@@ -15,7 +15,9 @@ search.audienceType:
 
 [!INCLUDE [azure-ad-to-microsoft-entra-id](./includes/azure-ad-to-microsoft-entra-id.md)]
 
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4J4cV]
+
 
 [!INCLUDE [marketing-trial-cta](./includes/marketing-trial-cta.md)]
 
@@ -142,7 +144,10 @@ After you save your event, your settings will be reflected in your Teams calenda
 ### Teams live events
 
 > [!NOTE]
-> We recommend that you use Teams webinars for your presentation event needs. Although Teams live events are still available, Teams webinars provide richer functionality (such as the ability to use [breakout rooms](https://support.microsoft.com/office/use-breakout-rooms-in-teams-meetings-7de1f48a-da07-466c-a5ab-4ebace28e461)) out of the box.
+> [Teams Live Events will be discontinued as of September 30, 2024]([url](https://learn.microsoft.com/en-us/lifecycle/announcements/teams-live-events-retiring-09-30-2024)). We recommend utilizing [Teams Webinars](#teams-webinar) to schedule your events beyond this date.
+
+> [!NOTE]
+> We recommend that you use Teams webinars for your presentation event needs. Teams webinars provide richer functionality (such as the ability to use [breakout rooms](https://support.microsoft.com/office/use-breakout-rooms-in-teams-meetings-7de1f48a-da07-466c-a5ab-4ebace28e461)) out of the box.
 
 You can use Teams live events to create webinar-style online meetings. Live event presenters can share content, video, and audio. Attendees can view the content, but can’t share their own audio, video, or content.
 
