@@ -1,7 +1,7 @@
 ---
 title: Copilot features in Customer Insights - Journeys
 description: Copilot features in Dynamics 365 Customer Insights - Journeys.
-ms.date: 02/21/2024
+ms.date: 03/20/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -12,11 +12,11 @@ ms.collection: bap-ai-copilot
 
 Copilot is an AI-powered assistant that helps you create and manage marketing campaigns using everyday language. Whether you're creating segments, emails, or journeys, Copilot simplifies the process and empowers you to reach customers more effectively. With the ability to edit, modify, and refine at each step, Copilot allows you to tailor customer journeys, providing a user-friendly way to connect with customers at every touchpoint. Here are some of the things you can do with Copilot in Customer Insights - Journeys:
 
-## How general Copilot helps you learn and do more with Customer Insights – Journeys
+## How the general Customer Insights - Journeys copilot helps you learn and do more
 
-Copilot, your handy tool for learning and doing simple tasks effortlessly. It revolutionizes the learning process by enabling users to seek information and perform tasks using natural language queries, accessing direct answers from the documentation. This eliminates the need to rely on external support channels or forums. 
+The general Customer Insights - Journeys copilot is your handy tool for learning and accomplishing tasks effortlessly. It revolutionizes the learning process by enabling users to seek information and perform tasks using natural language queries, accessing direct answers from the documentation. This eliminates the need to rely on external support channels or forums.
 
-For example, while exploring products, Copilot provides real-time personalized recommendations, promotions, and addresses potential concerns based on historical data. Additionally, App Copilot offers a seamless plugin that facilitates natural language navigation, making tasks not only more accessible but also contributing to an overall more intuitive and enjoyable user journey. Learn more [here](add-ai-copilot.md)
+For example, while exploring products, Copilot provides real-time personalized recommendations, promotions, and addresses potential concerns based on historical data. Additionally, the Customer Insights - Journeys copilot offers a seamless plugin that facilitates natural language navigation, making tasks not only more accessible but also contributing to an overall more intuitive and enjoyable user experience. **Learn more**: [Responsible AI FAQs for the Customer Insights - Journeys copilot preview](faqs-copilot-general.md)
 
 ## Target the right customers using query assist
 
