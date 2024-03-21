@@ -386,6 +386,8 @@
       href: consent-record-creation.md
     - name: Manage consent for email and text messages
       href: real-time-marketing-email-text-consent.md
+    - name: Add a contactability grid control to custom forms
+      href: contactability-control-custom-forms.md
   - name: Image, file, and video assets
     items:
     - name: Use images, files, and videos in your content
