@@ -1,7 +1,7 @@
 ---
 title: "Preview: Customer Insights - Journeys integration with Microsoft Fabric"
 description: Learn about how to integrate Customer Insights - Journeys with Microsoft Fabric.
-ms.date: 03/19/2024
+ms.date: 03/20/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -14,7 +14,7 @@ search.audienceType:
 # Preview: Customer Insights - Journeys integration with Microsoft Fabric
 
 > [!IMPORTANT]
-> A preview feature is a feature that is not complete, but is made available before it’s officially in a release so customers can get early access and provide feedback. Preview features aren’t meant for production use and may have limited or restricted functionality.
+> A preview feature is a feature that is not complete but is made available before it’s officially in a release so customers can get early access and provide feedback. Preview features aren’t meant for production use and may have limited or restricted functionality.
 > 
 > Microsoft doesn't provide support for this preview feature. Microsoft Dynamics 365 Technical Support won’t be able to help you with issues or questions. Preview features aren’t meant for production use, especially to process personal data or other data that are subject to legal or regulatory compliance requirements.
 
@@ -24,7 +24,7 @@ The integration of Dynamics 365 Customer Insights - Journeys with Microsoft Fabr
 
 Dynamics 365 data doesn’t leave the Dataverse governance boundary. As data gets updated, changes are reflected in Microsoft Fabric automatically. Dataverse also generates an enterprise-ready Synapse Lakehouse and SQL endpoint for your Dynamics 365 data. This makes it easier for data engineers and Database (DB) admins to combine data from multiple sources and build custom analytics with Spark, Python, or SQL. 
 
-Makers can build low-code apps and automations to orchestrate business processes and react to insights found in Microsoft Fabric using connectors to over 1,000 apps. Add those insights back to Dataverse as external or virtual tables through the SQL endpoint and makers can turn them into low-code apps with Power Apps, Power Pages, or Power Automate using skills they already have.
+Makers can build low-code apps and automation to orchestrate business processes and react to insights found in Microsoft Fabric using connectors to over 1,000 apps. Add those insights back to Dataverse as external or virtual tables through the SQL endpoint and makers can turn them into low-code apps with Power Apps, Power Pages, or Power Automate using skills they already have.
 
 ## Onboarding
 
@@ -44,6 +44,9 @@ The following sections explain how to set up Power BI and link to Fabric.
     :::image type="content" source="media/set-workspace-settings.png" alt-text="Create your workspace as per your requirement." lightbox="media/set-workspace-settings.png":::
 
 ### Link to Fabric from Power Apps
+
+> [!NOTE]
+> Learn more about prerequisites and review setup instructions: [Link your Dataverse environment to Microsoft Fabric and unlock deep insights](/power-apps/maker/data-platform/azure-synapse-link-view-in-fabric)
 
 1. Launch the [Power apps maker portal](https://make.preview.powerapps.com/).
 1. Choose the correct **environment** on the top right side.
@@ -102,7 +105,9 @@ The workspace you choose to link with Dataverse must be assigned to a premium ca
 
     :::image type="content" source="media/use-sql-analytics-endpoint-to-write-queries.png" alt-text="Use SQL analytics endpoint to write queries." lightbox="media/use-sql-analytics-endpoint-to-write-queries.png":::
 
-1. Choose the **Data** tab, and select **New report**. Use Power BI to create a new report from your data or have Copilot help you get started.
+1. Leverage Fabric capabilities including Power BI to create reports from your data or have Copilot help you get started. Here are a couple of resources to get started:
+   - [Tutorial: Fabric for Power BI users](/power-bi/fundamentals/fabric-get-started)
+   - [Get started with Microsoft Fabric](/training/paths/get-started-fabric/)
 
 > [!NOTE]
 > You can find detailed information on Customer Insights - Journeys interaction data schema here: [Overview of Customer Insights - Journeys - Common Data Model](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsightsjourneys/overview)
@@ -114,4 +119,12 @@ The workspace you choose to link with Dataverse must be assigned to a premium ca
 - Depending on the size of the data, initial sync may take 30 minutes or more. In the case of large tables, initial sync may take longer before you can consume data in Fabric. 
 - After the initial sync, data changes in tables will be reflected in Fabric up to 24 hours later.
 - Initially, only new data (real-time journeys and some outbound marketing data) generated after the date of activating the preview will be available for custom reporting. 
-- It's possible that there will be changes (for example, new attributes) in the real-time journeys schema during preview. 
+- It's possible that there will be changes (for example, new attributes) in the real-time journeys schema during preview.
+
+## Next steps
+
+Here are some additional resources for this topic:
+- [OneLake shortcuts](/fabric/onelake/onelake-shortcuts)
+- [Tutorial: Fabric for Power BI users](/power-bi/fundamentals/fabric-get-started)
+- [Get started with Microsoft Fabric](/training/paths/get-started-fabric/)
+- [Develop dynamic reports with Microsoft Power BI](/training/paths/develop-dynamic-reports-microsoft-power-bi/)
