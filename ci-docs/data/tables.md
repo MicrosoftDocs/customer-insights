@@ -1,7 +1,7 @@
 ---
 title: "Tables in Customer Insights - Data"
 description: "View data on the Tables page."
-ms.date: 01/30/2024
+ms.date: 03/21/2024
 ms.reviewer: mhart
 ms.topic: conceptual
 author: mukeshpo
@@ -68,6 +68,12 @@ Some Customer Insights - Data tables are available in Dataverse. The sections be
 - [Segment membership](#segment-membership)
 
 [Measures created as tables](dataverse-measures.md) are also available in Dataverse.
+
+Use [Power Apps](https://make.powerapps.com) to vew the Customer Insights - Data [tables in Dataverse](/power-apps/maker/data-platform/create-edit-entities-portal#view-tables).
+
+Select **Tables** on the left navigation and set the filter to show **All** tables. The default filter is set to **Recommended**, which doesn't include Customer Insights - Data tables.
+
+In the search field, enter `msdynci`, which is prepended to all Customer Insights - Data table names.
 
 ### CustomerProfile
 
