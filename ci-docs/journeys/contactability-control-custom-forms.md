@@ -13,7 +13,7 @@ search.audienceType:
 
 # Add a contactability grid control to custom forms
 
-This article explains how to add a contactability consent control to custom forms. Learn more: [View and manage consent records](real-time-marketing-email-text-consent.md#view-and-manage-consent-records)
+This article explains how to add a contactability consent control to custom forms. Learn more: [View and manage consent records](real-time-marketing-email-text-consent.md#view-and-manage-consent-records).
 
 > [!IMPORTANT]
 > Ensure that the ["Manage consent on contact and lead forms"](real-time-marketing-email-text-consent.md#view-and-manage-consent-records) feature switch is turned on, as that is a pre-requisite for the custom control to work.
@@ -35,7 +35,7 @@ This article explains how to add a contactability consent control to custom form
 1. Once added, expand the **More Components** section, and add the **ContactabilityGrid** control onto the new section.
     > [!div class="mx-imgBorder"]
     > ![Select the contactability grid by expanding the section](media/select-contactability-grid.png "Select the contactability grid by expanding the section")
-1. Once complete, the contactability grid looks like the the screenshot below:
+1. Once complete, the contactability consent control looks like the screenshot below:
     > [!div class="mx-imgBorder"]
     > ![You can add your contact points](media/add-your-contact-points.png "You can add your contact points")
 
