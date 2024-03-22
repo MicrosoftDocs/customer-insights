@@ -89,7 +89,7 @@ The workspace you choose to link with Dataverse must be assigned to a premium ca
     > ![Select your Dataverse from the shortcut](media/select-your-dataverse.png "Select your Dataverse from the shortcut")
 
 1. Supply your Dataverse environment URL (Example: orgname.crm.dynamic.com) and the credentials that you want to access the environment with.  Dataverse shortcuts utilize a delegated authorization model. All data access through the shortcut utilizes this credential. This credential must have System Administration permission in the Dataverse environment. Be sure to secure access to this workspace before sharing this data with your users.
-1. Choose the tables that you want to create a shortcut to. Each table is its own shortcut in the Lakehouse. Customer Insights - Journeys tables appear in the left menu under the **"msdynmkt_analytics"** folder. If you don't see all your Dataverse tables (CDS2 folder), you may need to configure your Dataverse environment. Use **Link to Fabric** to update the available tables.
+1. Choose the tables that you want to create a shortcut to. Each table is its own shortcut in the Lakehouse. Customer Insights - Journeys interaction data tables appear in the left menu under the **"msdynmkt_analytics"** folder. If you don't see all your Dataverse tables (CDS2 folder), you may need to configure your Dataverse environment. Use **Link to Fabric** to update the available tables.
 
     :::image type="content" source="media/link-to-fabric-through-shortcut.png" alt-text="Link to fabric through shortcut." lightbox="media/link-to-fabric-through-shortcut.png":::
 
@@ -121,7 +121,7 @@ The workspace you choose to link with Dataverse must be assigned to a premium ca
 - Initially, only new data (real-time journeys and some outbound marketing data) generated after the date of activating the preview will be available for custom reporting. 
 - It's possible that there will be changes (for example, new attributes) in the real-time journeys schema during preview.
 
-## Next steps
+## Learn more
 
 Here are some additional resources for this topic:
 - [OneLake shortcuts](/fabric/onelake/onelake-shortcuts)
