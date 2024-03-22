@@ -1,7 +1,7 @@
 ---
 title: "Preview: Customer Insights - Journeys integration with Microsoft Fabric"
 description: Learn about how to integrate Customer Insights - Journeys with Microsoft Fabric.
-ms.date: 03/21/2024
+ms.date: 03/22/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
