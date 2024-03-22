@@ -85,7 +85,7 @@ After creating your copy, you must complete the following steps:
 As with copy operations, backup and restore operations typically require a few extra steps when Customer Insights - Journeys is installed.
 
 > [!IMPORTANT]
-> Backups **do not** include Customer Insights - Journeys services or the data they contain. When you restore a backup, all organizational data, solutions, apps, and customizations will be present, but no interaction data, insights, or previously uploaded files will be available on the restored system. The situation is similar to that of copying a Customer Insights - Journeys environment.
+>Unlike the copy operation or backup and restore to a different environment, backup and restore on the SAME environment does not clear any analytics data. Analytics data will be restored back to the point in time for which you have selected the restore as long as you are restoring to the same environment. For all backup and restore operations, journeys and emails need to be republished to ensure that any journeys that ran during the period between the restore date and the current day are not inadvertently re-run, duplicating messaging to customers. 
 
 > [!WARNING]
 > If you restore data in Customer Insights - Journeys, all consents will return to the state they were in at the time backup was made. This may result in consent data being obsolete. To avoid complications, export all consent data into Excel before starting the restore process and use it as a reference after the restore is completed.
@@ -108,6 +108,13 @@ You can create an on-demand backup at any time, but when Customer Insights - Jou
     ![Create an on-demand backup.](media/instances-backup.png "Create an on-demand backup")
 
 As with automatic backups, on-demand backups include the full organizational database, but not the interaction records or image files stored in the marketing services. For more information about how to export marketing-services data to blob storage, see [Create custom analytics with Power BI](custom-analytics.md).
+
+### Restore a backup on the same environment
+1. To restore a backup on the same environment, if you are doing this on a Production type environment you must first convert it to a Sandbox type. 
+1. Next to the environment choose *...* and *Backup and restore** and then **Restore or manage**. 
+1. Choose a date and type to select a System backup or choose **Manual** to select a manual backup.
+1. On the side pane, select the current environment. 
+1. Click **Restore** to complete the action.
 
 ### Restore a backup onto another environment
 
