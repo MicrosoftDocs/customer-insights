@@ -44,6 +44,10 @@ To install *only* a Customer Insights - Data trial on the same environment as th
 
 To sign up for a separate Customer Insights - Data trial, go to the [Customer Insights - Data trial sign up form](https://signup.microsoft.com/get-started/signup?SKU=036c2481-aa8a-47cd-ab43-324f0c157c2d&ali=1&RU=https%3a%2f%2fhome.ci.ai.dynamics.com%2fstart%2ftrial&products=036c2481-aa8a-47cd-ab43-324f0c157c2d&brandingId=28b276fb-d2a0-4379-a7c0-57dce33da0f9) and follow the prompts.
 
+## Trials don't meet your needs?
+
+If you need to test enterprise scale concepts prior to committing to a long-term agreement you can directly purchase a month to month subscription and cancel it at the monthly renewal date if you find the application doesn't meet your needs. Visit the [Microsoft Admin Center](https://admin.microsoft.com) and search for **Customer Insights** in the purchase catalog to find the different subscription options. 
+
 ## What to try
 
 Your trial environment includes many of the same features as the paid version. The links below guide you through some of the key features.
