@@ -28,10 +28,10 @@ Customer Insights - Journeys services (including the marketing-insights service)
 Because Customer Insights - Journeys interacts with several special services and other components, you must be extra careful when creating copies to or from environments that have Customer Insights - Journeys installed on them.
 
 > [!WARNING]
-> You cannot do a simple copy of a Customer Insights - Journeys environment like you can with most other Dynamics 365 environments that don't have Customer Insights - Journeys installed. If you do a simple copy without following the steps here, the resulting copy won't fully function.
+> You can't do a simple copy of a Customer Insights - Journeys environment like you can with most other Dynamics 365 environments that don't have Customer Insights - Journeys installed. If you do a simple copy without following the steps in this article, the resulting copy won't fully function.
 
 > [!WARNING]
-> This procedure will completely delete the target environment. If Customer Insights - Journeys is installed on the target environment, then it will be completely uninstalled and all data (including interaction records) will be deleted. Even if you backup the target environment first, the backup won't include interaction data. If you need to preserve interaction data from the target environment, be sure to back up the database for interaction data. For outbound marketing data, see more information about how to backup interaction data to blob storage, see [Create custom analytics with Power BI](custom-analytics.md). For real-time journeys, use the (Dataverse connector to Fabric)[/customer-insights/journeys/fabric-integration] to export and store your interaction data. 
+> This procedure will completely delete the target environment. If Customer Insights - Journeys is installed on the target environment, then it will be completely uninstalled and all data (including interaction records) will be deleted. Even if you back up the target environment first, the backup won't include interaction data. If you need to preserve interaction data from the target environment, be sure to back up the database for the interaction data. For outbound marketing data and more information about how to back up interaction data to blob storage, see [Create custom analytics with Power BI](custom-analytics.md). For real-time journeys, use the [Dataverse connector to Fabric](fabric-integration.md) to export and store your interaction data.
 
 > [!IMPORTANT]
 > Your copied environment requires its own Customer Insights - Journeys license. If the target environment already has Customer Insights - Journeys installed, the copy will automatically take over that license (you don't have to do anything). If the target environment doesn't have Customer Insights - Journeys installed, we recommend that you have an unused Customer Insights - Journeys license for your tenant before you start the copy, and purchase one if you don't. If you don't have a Customer Insights - Journeys license available before copying, the copy will end in a *disconnected state*, which means that many key features won't work (relevant error messages will be shown). In this case, you can purchase a new Customer Insights - Journeys license and [use the installation management experience](setup.md) to apply it to your new copy.
@@ -48,7 +48,7 @@ The _source environment_ is the Customer Insights - Journeys environment you're 
 The _target environment_ is the environment you're copying _to_. As with the source environment, you must prepare the target environment before you copy _if Customer Insights - Journeys is installed on the source environment, the target environment, or both_.
 
 > [!NOTE]
-> To backup and restore a production environment, first convert it to a sandbox to perform the operations and then convert it back to production afterwards. Environment lifecycle operations like copy and backup and restore are not allowed on production environments. See [convert a sandbox into a production environment](copy-or-restore.md#switch-an-environment-between-sandbox-and-production-status) for details. You must already have the target environment available on your tenant. You will be able to see it on the **Environments** page of the Power Platform admin center. If you don't have one, please  [contact Microsoft Support](/power-platform/admin/get-help-support) for assistance.
+> To back up and restore a production environment, first convert it to a sandbox, perform the backup operations, and then convert it back to a production environment. Environment lifecycle operations like copy and backup and restore are not allowed on production environments. See [Convert a sandbox into a production environment](copy-or-restore.md#switch-an-environment-between-sandbox-and-production-status) for details. You must already have the target environment available on your tenant. You can see the target environment on the **Environments** page of the Power Platform admin center. If you don't have a target environment (sandbox), [contact Microsoft Support](/power-platform/admin/get-help-support) for assistance.
 
 To prepare your target environment, do the following _before_ starting the copy:
 
@@ -85,7 +85,7 @@ After creating your copy, you must complete the following steps:
 As with copy operations, backup and restore operations typically require a few extra steps when Customer Insights - Journeys is installed.
 
 > [!IMPORTANT]
-> Unlike the copy operation or backup and restore to a different environment, backup and restore on the SAME environment maintains all of the analytics and interaction data. Analytics data are restored back to the point in time for which you have selected the restore as long as you are restoring to the same environment. For all backup and restore operations, journeys and emails need to be republished to ensure that any journeys that ran during the period between the restore date and the current day are not inadvertently re-run, duplicating messaging to your customers. 
+> Unlike the copy operation or backup and restore to a different environment, backup and restore on the *same* environment maintains all of the analytics and interaction data. Analytics data are restored back to the point in time for which you have selected the restore, as long as you're restoring to the same environment. For all backup and restore operations, journeys and emails need to be republished to ensure that any journeys that ran during the period between the restore date and the current day are not inadvertently re-run, duplicating messaging to your customers.
 
 > [!WARNING]
 > If you restore data in Customer Insights - Journeys, all consents will return to the state they were in at the time backup was made. This may result in consent data being obsolete. To avoid complications, export all consent data into Excel before starting the restore process and use it as a reference after the restore is completed.
@@ -111,30 +111,27 @@ As with automatic backups, on-demand backups include the full organizational dat
 
 ### Restore a backup on the same environment
 
-1. To restore a backup on the same environment, if you are doing this on a Production type environment you must first convert it to a Sandbox type. On the **Environments** page in Power Platform Admin Center, select the environment and click the button for **Convert to Sandbox** in the button ribbon at the top of the page.  
-1. Next to the environment choose *...* and *Backup and restore** and then **Restore or manage**. 
-1. Choose a date and time to select a **System** backup or choose **Manual** to select a manual backup.
+1. To restore a backup on the same environment, if you're doing this on a Production type environment, you must first convert it to a Sandbox environment. On the **Environments** page in Power Platform Admin Center, select the environment and select the button for **Convert to Sandbox** in the button ribbon at the top of the page.  
+1. Next to the environment choose **...**, **Backup and restore**, and then **Restore or manage**. 
+1. To select a **System** backup, choose a date and time or choose **Manual** to select a manual backup.
 1. On the side pane, select the current environment. 
-1. Click **Restore** to complete the action.
+1. Select **Restore** to complete the action.
 
 ### Restore a backup onto another environment
 
 You can easily restore any on-demand or automatic system backup to any available sandbox environment (other than the environment you took the backup from). But as with copy operations, you need to prepare the target environment first.
 
 > [!WARNING]
-> This procedure will completely erase the target environment. If Customer Insights - Journeys is installed on the target environment, then it will be completely uninstalled (which will release the license) and all data (including files and interaction records) will be deleted. Even if you backup the target environment first, the backup won't include interaction data, so if you need to preserve these separately. For outbound marketing data, see more information about how to backup interaction data to blob storage, see [Create custom analytics with Power BI](custom-analytics.md). For real-time journeys, use the (Dataverse connector to Fabric)[/customer-insights/journeys/fabric-integration] to export and store your interaction data. 
+> This procedure will completely erase the target environment. If Customer Insights - Journeys is installed on the target environment, then it will be completely uninstalled (which will release the license) and all data (including files and interaction records) will be deleted. Even if you back up the target environment first, the backup won't include interaction data, so you need to preserve these separately. For outbound marketing data and more information about how to backup interaction data to blob storage, see [Create custom analytics with Power BI](custom-analytics.md). For real-time journeys, use the [Dataverse connector to Fabric](fabric-integration.md) to export and store your interaction data.
 
 > [!IMPORTANT]
-> Your copied environment requires its own Customer Insights - Journeys license. If the target environment already has Customer Insights - Journeys installed, the copy will automatically take over that license (you don't have to do anything). If the target environment doesn't have Customer Insights - Journeys installed, we recommend that you have an unused Customer Insights - Journeys license for your tenant before you start the copy, and purchase one if you don't. If you don't have a Customer Insights - Journeys license available before copying, the copy will end in a *disconnected state*, which means that many key features won't work (relevant error messages will be shown). In this case, you can purchase a new Customer Insights - Journeys license via the [Microsoft Admin Center](https://admin.microsoft.com) and [use the installation management experience](setup.md) to apply it to your new copy.
+> Your copied environment requires its own Customer Insights - Journeys license. If the target environment already has Customer Insights - Journeys installed, the copy automatically takes over that license (you don't have to do anything). If the target environment doesn't have Customer Insights - Journeys installed, you should have an unused Customer Insights - Journeys license for your tenant before you start the copy or purchase one if you don't. If you don't have a Customer Insights - Journeys license available before copying, the copy will end in a *disconnected state*, which means that many key features won't work (relevant error messages will be shown). In this case, you can purchase a new Customer Insights - Journeys license through the [Microsoft Admin Center](https://admin.microsoft.com) and [use the installation management experience](setup.md) to apply it to your new copy.
 
 To restore a backup onto a sandbox environment:
 
 1. If your target environment includes outbound marketing that is connected to a [Power Apps portal](portal-optional.md), then reset the portal as described in [Reset a portal](/powerapps/maker/portals/admin/reset-portal). This is important because it frees your portal license to be used elsewhere. After the reset, the portal will still be shown as "Configured" in the Power Platform admin center, but you'll now be able to select it when you use the installation management experience to set up a new, copied, or restored environment.
-
 1. Restore the backup onto the newly prepared sandbox as usual, as described in [Backup and restore environments](/power-platform/admin/backup-restore-environments).
-
 1. Prepare the restored environment for use by doing the following:
-
    - Make sure the restored environment isn't in administration mode. For more information about this setting and how to disable it, see [Administration mode](/power-platform/admin/sandbox-environments#administration-mode).
    - Reinstall the application to refresh the services installation. To refresh the services:
        1. Go to [**admin.powerplatform.microsoft.com**](https://admin.powerplatform.microsoft.com) > **Resources** > **Dynamics 365 Apps** and select Dynamics 365 Customer Insights or Dynamics 365 Marketing.
@@ -146,7 +143,7 @@ To restore a backup onto a sandbox environment:
 
 Copy and restore are about backing up your Dataverse database and application solution settings and customizations. Copy, backup, and restore don't include initiating the application services, authentication tokens, etc. After copying or restoring an environment, your target environment will be set up as follows:
 
-- The resulting copy or restore on a different environment will begin as a real-time journeys only environment with the application solutions but not the services. To turn on the back-end services on the target of the copy or restore, you must complete the additional steps of "installing" the real-time journeys services (described in [Install and manage Customer Insights](setup.md)) if you want the environment to function versus just back-up. Additionally, if you expect to use the legacy outbound marketing solution on the target environment, you must also go to **Settings** > **Versions** > **Enable outbound marketing** in the Customer Insights - Journeys app to add the solutions and services onto the target.
+- The resulting copy or restore on a different environment will begin as a real-time journeys-only environment with the application solutions but not the services. To enable the back-end services on the target of the copy or restore, you must complete the additional steps of "installing" the real-time journeys services (described in [Install and manage Customer Insights](setup.md)) if you want the environment to function versus just back-up. Additionally, if you expect to use the legacy outbound marketing solution on the target environment, you must also go to **Settings** > **Versions** > **Enable outbound marketing** in the Customer Insights - Journeys app to add the solutions and services onto the target.
 - For copies, if you chose to do an "Everything" copy, the entire organizational database of your source environment will be copied to the target environment. This means that copied data from your source environment will be visible on the target environment, but your work in the target environment won't affect your source database from now on.
 - For copies, if you chose to do a "Customizations and schemas only" copy, all your apps and customizations will still be present on the target environment, but the organizational database will be nearly empty, so none of your source data (including email messages, portal content, and customer journeys) will be there.
 - All records (except for customer journeys) that were live on the source environment (such as emails, lead-scoring records, and more) will revert to **Draft** state on the target environment. You must go live again with any of these records that you want to use on the target environment.
@@ -159,7 +156,7 @@ Copy and restore are about backing up your Dataverse database and application so
     1. Select the three dots dropdown ("**...**") then select **Manage**.
     1. To reinstall the services, find the environment you're working on and select **Install** for Customer Insights - Journeys.
     1. If you had outbound marketing installed on the source of the copy, you'll see an option in the Customer Insights - Journeys app to **Enable** in **Settings** > **Versions**. Re-enable outbound marketing to match the target.
-- Because a new set of Customer Insights - Journeys services is created on the target environment, interaction data from your source environment (such as email clicks or website visits) won't be available to the target environment unless you have done a backup and restore on the same environment. In the case of operating on the same environment all analytics and interaction data is maintained. For a different target environment you can freely generate new interaction data on the target environment without affecting your source environment.
+- Because a new set of Customer Insights - Journeys services is created on the target environment, interaction data from your source environment (such as email clicks or website visits) won't be available to the target environment unless you've done a backup and restore on the same environment. In the case of operating on the same environment, all analytics and interaction data is maintained. For a different target environment, you can freely generate new interaction data on the target environment without affecting your source environment.
 - If you go live with an email or page that was previously published on the source environment, the published design will continue to use the previous image URLs from the source environment&mdash;these images will still appear in the republished designs provided they're still available on the source environment, but to avoid confusion, we strongly recommend that you edit your emails and pages to use those images before going live with them again.
 - If the Customer Insights - Journeys app on your source environment used outbound marketing and a Power Apps portal, then you might choose to also set up a new portal on the target environment to host its marketing pages and event websites (requires an unconfigured Power Apps portals license to be available on your tenant). [Portals are optional](portal-optional.md), so you can choose not to use a portal with the copied environment if you prefer, even if the source environment was using one.
 - After a Customer Insights - Journeys is migrated, restored, or copied, its state is changed from **Live** to **Stopped**. To restart a migrated, restored, or copied journey, you need to first duplicate the journey, and then execute it.
@@ -181,22 +178,15 @@ Microsoft Support offers a service for testing pending changes (usually updates)
 
 To copy a production environment to a support environment:
 
-1. If you don't already have a support environment available, [contact Microsoft Support](/power-platform/admin/get-help-support) to request one. Once your support environment is available on your tenant, you'll be able to see it in the Power Platform admin center.
-
+1. If you don't already have a support environment available, [contact Microsoft Support](/power-platform/admin/get-help-support) to request one. Once your support environment is available on your tenant, you are able to see it in the Power Platform admin center.
 1. Select the production environment that you want to copy and then select **Copy** in the top ribbon.
-
     ![Select the source environment and then choose Copy.](media/instances-copy.png "Select the source environment and then choose Copy")
-
 1. The **Copy environment** pane opens on the right side of the page. Make the following settings:
-
    - **Copy environment**: This should already show the name of the environment you have chosen to copy at the top of the pane.
    - **Copy over**: Select **Everything**.
    - **Select environment to overwrite**: Select the name of the support environment that was created for you. The name of your support environment includes your case number.
-
     ![Choose your copy options.](media/instances-overwrite-support4.png "Choose your copy options")
-
 1. When you select the target environment, most of the other settings here are set automatically, and a notice is shown to alert you that Microsoft Support will be able to access the support environment. Read the notice and select **OK** if you agree with the terms.
-
 1. Your production environment is now copied to the support environment.
 
 ## Delete or reset a Customer Insights - Journeys environment
