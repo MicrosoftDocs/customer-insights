@@ -1,7 +1,7 @@
 ---
 title: Sign up for a free trial
 description: Learn how to quickly sign up for and start a free Dynamics 365 Customer Insights - Journeys trial. Explore the app with tours and videos, and find additional learning resources.
-ms.date: 03/18/2024
+ms.date: 03/22/2024
 ms.topic: get-started
 ms.custom: template-trial-setup
 author: alfergus
@@ -43,6 +43,10 @@ Customer Insights offers a free 30-day trial. After a quick sign-up, you'll have
 To install *only* a Customer Insights - Data trial on the same environment as the Customer Insights - Journeys trial, go to the **Get Started** page in Customer Insights - Journeys and select the **Launch Customer Insights - Data** button on the top banner. This allows the Customer Insights - Data application to know your environment ID and user ID and add the Customer Insights - Data application to the existing trial environment. Select the **Start Trial** button in the upper right to complete the Customer Insights - Data app installation.
 
 To sign up for a separate Customer Insights - Data trial, go to the [Customer Insights - Data trial sign up form](https://signup.microsoft.com/get-started/signup?SKU=036c2481-aa8a-47cd-ab43-324f0c157c2d&ali=1&RU=https%3a%2f%2fhome.ci.ai.dynamics.com%2fstart%2ftrial&products=036c2481-aa8a-47cd-ab43-324f0c157c2d&brandingId=28b276fb-d2a0-4379-a7c0-57dce33da0f9) and follow the prompts.
+
+## What if the standard trial doesn't meet your needs?
+
+If you need to test enterprise-scale concepts prior to committing to a long-term agreement, you can directly purchase a month to month subscription and cancel it at the monthly renewal date if you find the application doesn't meet your needs. Visit the [Microsoft Admin Center](https://admin.microsoft.com) and search for **Customer Insights** in the purchase catalog to find the different subscription options.
 
 ## What to try
 
