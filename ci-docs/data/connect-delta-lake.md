@@ -1,7 +1,7 @@
 ---
-title: "Connect to Delta tables in Azure Data Lake Storage (preview)"
+title: "Connect to Delta tables in Azure Data Lake Storage"
 description: "Work with data stored in Delta tables from Azure Data Lake Storage."
-ms.date: 03/11/2024
+ms.date: 03/27/2024
 ms.topic: how-to
 author: mukeshpo
 ms.author: mukeshpo
@@ -9,11 +9,9 @@ ms.reviewer: v-wendysmith
 ms.custom: bap-template
 ---
 
-# Connect to Delta tables in Azure Data Lake Storage (preview)
+# Connect to Delta tables in Azure Data Lake Storage
 
-[!INCLUDE [public-preview-banner](./includes/public-preview-banner.md)]
-
-Connect to data in Delta tables and bring it into Dynamics 365 Customer Insights - Data. 
+Connect to data in Delta tables and bring it into Dynamics 365 Customer Insights - Data.
 
 [!INCLUDE [delta-lake-info](./includes/delta-lake-info.md)]
 
@@ -23,8 +21,6 @@ Connect to data in Delta tables and bring it into Dynamics 365 Customer Insights
 
 <!--- For example, Contoso Coffee has millions of records coming in on a daily basis. Currently, they do full refreshes of their data every 6 hours. This full refresh takes lots of time to reprocess everything when most data has already been processed. By using the Delta format, Contoso is able to greatly reduce their processing time by only processing the new records, leading to even faster insights from Customer Insights – Data.
 --->
-
-[!INCLUDE [public-preview-banner](./includes/public-preview-note.md)]
 
 ## Prerequisites
 
@@ -38,7 +34,7 @@ Connect to data in Delta tables and bring it into Dynamics 365 Customer Insights
 
 1. Select **Add a data source**.
 
-1. Select **Azure Data Lake Delta tables (Preview)**.
+1. Select **Azure Data Lake Delta tables**.
 
    :::image type="content" source="media/delta-lake-new.svg" alt-text="Dialog box to enter connection details for Delta Lake.":::
 
@@ -113,7 +109,7 @@ A full refresh takes all the data from a table in Delta format and reloads it fr
 
 1. Go to **Data** > **Data sources**.
 
-1. Select the **Azure Data Lake Delta tables (Preview)** data source.
+1. Select the **Azure Data Lake Delta tables** data source.
 
 1. Select the table you want to refresh. The **Edit table** pane displays.
 
