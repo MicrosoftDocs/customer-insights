@@ -1,7 +1,7 @@
 ---
 title: Set up an event in outbound marketing
 description: How to plan an event, register basic info, set up your team, manage sessions and speakers, set the event schedule, issue passes,  and manage venues in outbound marketing.
-ms.date: 01/03/2024
+ms.date: 03/26/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
