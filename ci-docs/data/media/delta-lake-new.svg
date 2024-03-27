@@ -2845,7 +2845,7 @@
                                    data-z-index="auto"
                                    data-stacking-context="true"
                                    role="img"
-                                   aria-label="Azure Data Lake Delta tables (Preview)​"
+                                   aria-label="Azure Data Lake Delta tables​"
                                    mask="url(#mask-for-ms-Image-image31)">
                                 <mask
                                    id="mask-for-ms-Image-image31">
@@ -2864,7 +2864,7 @@
                                    y="335.00"
                                    width="30.00"
                                    height="30.00"
-                                   aria-label="Azure Data Lake Delta tables (Preview)​"
+                                   aria-label="Azure Data Lake Delta tables​"
                                    data-src="https://c360-dev-vzn-cdn-endpoint.azureedge.net/WebClient-Dev-2024.3.3.13/9be5c87f7f1a23183ae38d25358b74e0.png" />
                                 </g>
                                 </g>
