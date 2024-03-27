@@ -22,7 +22,10 @@ There are two ways to view your spam risk:
 
 To manually view and interpret the spam risk for a message:
 
-1. Go to **Outbound marketing** > **Channels** > **Emails**, and then either create or open an email message.
+1. Go to **Outbound marketing** > **Marketing execution** > **Marketing Emails**, and then either create or open an email message.
+
+> [!NOTE]
+> Spam checker feature is coming to Customer Insights - Journeys soon, but for now it's only available in Outbound Marketing.
 
 1. Design your email content as usual using the email designer.
 
