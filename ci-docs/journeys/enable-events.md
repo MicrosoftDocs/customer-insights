@@ -13,21 +13,21 @@ search.audienceType:
 
 # Enable event management in real-time journeys
 
-Dynamics 365 Customer Insights – Journeys’ Real-time event management feature helps you arrange, execute and follow up on live events and webinars. It assists you from initial planning and budgeting through promotion and publication, attendee registration, webinar broadcasting to final analytics and more.
+Dynamics 365 Customer Insights – Journeys’ Real-time event management feature helps you arrange, execute, and follow up on live events and webinars. It assists you from initial planning and budgeting through promotion and publication, attendee registration, webinar broadcasting to final analytics and more.
 
 How to enable real-time event management:
 
-1. Turn the feature switch on: Settings > Feature switches
+1. Turn on the feature switch: Settings > Feature switches
 1. Under Event management, turn on the **Enable events creation in real-time journeys** toggle
     :::image type="content" source="media/real-time-journeys-toggle.png" alt-text="":::
 1. Create a real-time event: Settings > Event planning
-1. Click the drop down arrow next to New event labelled **In real-time journeys**
+1. Click the drop down arrow next to New event labeled **In real-time journeys**
     :::image type="content" source="media/in-real-time-marketing-dropdown.png":::
-1. Click **Go live** to go live with your event 
+1. Select **Go live** to go live with your event 
 1. Open default registration form
    :::image type="content" source="media/rtm-registration-form.png" alt-text="":::
 1. You can customize the default registration form or create your own form:
-    1.	Event > Website and form > Click on the selected form
+    1.	Event > Website and form > Select on the selected form
         :::image type="content" source="media/rtm-website-and-form.png" alt-text="":::
     2.	Edit the form
          :::image type="content" source="media/rtm-edit-form.png" alt-text="":::
