@@ -59,7 +59,7 @@ Security is an important aspect of forms. Dynamics 365 Customer Insights - Journ
 - The Customer Insights - Journeys app accepts form submissions only from [domains allowed for external form hosting](domain-authentication.md). This security precaution applies for both forms and form capture.
 - The form can be rendered only on domains allowed for external form hosting.
 - The out-of-box domain for forms hosted as standalone page is enabled for external form hosting by default. [Learn more](real-time-marketing-form-create.md#publish-your-form)
-- We recommend protecting the form with a captcha to avoid form submissions by bots. There's out-of-the-box captcha available in the form editor, but you can also use any other third party captcha service to improve the user experience. [Learn more](real-time-marketing-form-custom-captcha).
+- We recommend protecting the form with a captcha to avoid form submissions by bots. There's out-of-the-box captcha available in the form editor, but you can also use any other third party captcha service to improve the user experience. [Learn more](real-time-marketing-form-custom-captcha.md).
 - The Customer Insights - Journeys app infrastructure contains necessary precautions to minimize the consequences of a possible DDoS attack. There's a limit of 2,000 requests/minute per org to prevent DoS attacks. The request limit includes visits, lookup, CAPTCHA, and form submission. The limit allows around 100 to 500 submissions/minute, depending on the form.
 
 ## Next steps

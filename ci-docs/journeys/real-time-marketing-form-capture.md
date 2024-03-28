@@ -26,7 +26,7 @@ The form capture uses the same API to process the submission as the standard for
 
 The form capture feature is disabled by default. You can enable the *Form capture* toggle in Settings -> Feature switches -> Forms.
 > [!div class="mx-imgBorder"]
-> ![Add consent element to the form.](media/real-time-marketing-enable-form-capture.png)
+> ![Enable form capture in feature switches.](media/real-time-marketing-enable-form-capture.png)
 
 ## How form capture works
 
