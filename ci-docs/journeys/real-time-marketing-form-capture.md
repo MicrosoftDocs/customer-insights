@@ -11,7 +11,7 @@ search.audienceType:
   - enduser
 ---
 
-# Preview: Capture forms in Customer Insights - Journeys
+# Capture forms in Customer Insights - Journeys
 
 The form capture is used to get submissions from existing forms that weren't created using the Customer Insights - Journeys form editor. Form capture is recommended if your existing form also sends submissions to systems other than Dynamics 365 or if the existing form contains complex logic that can't be easily recreated in the Customer Insights - Journeys form editor. If the existing form can be recreated using Customer Insights - Journeys form editor, it's *not* recommended to use the form capture feature.
 The form capture uses the same API to process the submission as the standard form. The same [security notice](real-time-marketing-form-overview.md#security-notice) applies for form capture.
