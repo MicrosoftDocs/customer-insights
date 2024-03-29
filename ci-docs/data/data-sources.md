@@ -1,7 +1,7 @@
 ---
 title: "Data sources overview"
 description: "Learn how to import or ingest data from various sources."
-ms.date: 12/08/2023
+ms.date: 03/27/2024
 ms.topic: overview
 author: mukeshpo
 ms.author: mukeshpo
@@ -28,7 +28,7 @@ If you have data prepared in one of Microsoft's Azure data services, you can eas
 - [Azure Data Lake Storage (csv or parquet files in a Common Data Model folder)](connect-common-data-model.md)
 - [Azure Synapse Analytics (Lake databases)](connect-synapse.md)
 - [Microsoft Dataverse data lake](connect-dataverse.md)
-- [Delta tables in Azure Data Lake Storage (preview)](connect-delta-lake.md)
+- [Delta tables in Azure Data Lake Storage](connect-delta-lake.md)
 
 **Import and transform**
 
