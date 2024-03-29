@@ -1,6 +1,6 @@
 ---
 title: Known issues for journeys
-description: Learn about known issues related to real-time journey functionality in Dynamics 365 Customer Insights - Journeys.
+description: Learn about known issues related to real-time journeys functionality in Dynamics 365 Customer Insights - Journeys.
 ms.date: 03/29/2024
 ms.topic: article
 author: alfergus
@@ -13,7 +13,7 @@ search.audienceType:
 
 # Known issues for journeys
 
-This article documents known issues related to real-time journey functionality.
+This article documents known issues related to real-time journeys functionality.
 
 ## Active journeys that were created on or before May 5, 2022 will stop working on July 1, 2024
 
