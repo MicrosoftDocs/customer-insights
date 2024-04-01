@@ -27,8 +27,8 @@ If you have data prepared in one of Microsoft's Azure data services, you can eas
 
 - [Azure Data Lake Storage (csv or parquet files in a Common Data Model folder)](connect-common-data-model.md)
 - [Azure Synapse Analytics (Lake databases)](connect-synapse.md)
-- [Microsoft Dataverse data lake](connect-dataverse.md)
-- [Delta tables in Azure Data Lake Storage](connect-delta-lake.md)
+- [Microsoft Dataverse](connect-dataverse.md)
+- [Delta tables in Azure Data Lake Storage (preview)](connect-delta-lake.md)
 
 **Import and transform**
 
