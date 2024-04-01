@@ -1,7 +1,7 @@
 ---
 title: "Manage data sources"
-description: "Learn how to manage data sources attached or imported to Dynamics 365 Customer Insights - Data"
-ms.date: 02/20/2024
+description: "Learn how to manage data sources attached or imported to Dynamics 365 Customer Insights - Data."
+ms.date: 03/25/2024
 ms.topic: how-to
 author: mukeshpo
 ms.author: mukeshpo
@@ -20,13 +20,13 @@ Select a data source to view available actions.
 - [**Edit**](data-sources.md) the data source to change its properties. You can't edit a single CSV data source that was used to automatically generate insights.
 - [**Refresh**](#refresh-data-sources) the data source to include the latest data.
 - [**Enrich**](data-sources-enrichment.md) the data source before unification to improve the quality and completeness for better results. 
-- **Delete** the data source. A data source can be deleted only if the data is not used in any processing such as unification, insights, activations, or exports.
+- **Delete** the data source. A data source can be deleted only if the data isn't used in any processing such as unification, insights, activations, or exports.
 
-If you have an Azure Data Lake data source with Common Data Model tables, you can [update it to use Delta tables (preview).](convert-datalake-to-deltalake.md)
+If you have an Azure Data Lake data source with Common Data Model tables, you can [update it to use Delta tables.](convert-datalake-to-deltalake.md)
 
 ## Refresh data sources
 
-Data sources can be refreshed on an automatic schedule or refreshed manually on demand. Only the owner can manually refres an [pn-premises data source](connect-power-query.md#add-data-from-on-premises-data-sources). 
+Data sources can be refreshed on an automatic schedule or refreshed manually on demand. Only the owner can manually refresh an [on-premises data source](connect-power-query.md#refresh-power-query-data-sources-on-demand). 
 
 For attached data sources, data ingestion consumes the latest data available from that data source.
 
@@ -36,7 +36,7 @@ To refresh a data source on demand:
 
 1. Go to **Data** > **Data sources**.
 
-1. Select the data source you want to refresh and select **Refresh**. The data source is now triggered for a manual refresh. Refreshing a data source will update both the table schema and data for all the tables specified in the data source.
+1. Select the data source you want to refresh and select **Refresh**. The data source is now triggered for a manual refresh. Refreshing a data source updates both the table schema and data for all the tables specified in the data source.
 
 1. Select the status to open the **Progress details** pane and view the progress. To cancel the job, select **Cancel job** at the bottom of the pane.
 
