@@ -47,6 +47,8 @@ You can have any number of Customer Insights licenses available on your tenant. 
 
 Once a paid license has been applied to your tenant, it can take up to 24 hours to sync with the Dynamics 365 licensing system and be available for installation. To see your licenses in the Microsoft Admin Center, go to **Your products**. They won't show up under **Licenses** because they're tenant-level application licenses, not assignable seat-based licenses where you pay per user. Only pay-per-user, seat-based licenses are shown on the "Licenses" page. 
 
+To see your license in Power Platform Admin Center, if you do not have a global tenant, you must select the geography that matches the home tenant geography on which the license was installed. For example, if the tenant home geo is Canada, you will only see the license in Power Platform Admin Center when you select Canada. To see the license in all geographies regardless of the tenant home geography, support or a Microsoft product manager must make your tenant a multi-geo tenant. 
+
 ## Install, uninstall, or update Customer Insights
 
 The following sections detail how to install, uninstall, or apply updates to the Customer Insights apps.
@@ -67,7 +69,7 @@ If you uninstall Customer Insights - Journeys paid or trial, the services are di
 
 1. If you haven't installed other Dynamics 365 apps on the [Microsoft Power Platform admin center](/power-platform/admin/), go to [**admin.powerplatform.microsoft.com**](https://admin.powerplatform.microsoft.com) to create an environment of the desired type (production, sandbox, or trial). Learn more: [Create and manage environments in the Power Platform admin center](/power-platform/admin/create-environment).
 1. On the [**admin.powerplatform.microsoft.com**](https://admin.powerplatform.microsoft.com) page, find **Resources** in the left-hand site map and select **Dynamics 365 apps**.
-    - Whether you have the legacy, standalone Dynamics 365 Customer Insights app or Dynamics 365 Marketing licenses (available to customers who purchased before September 2023) or the new, combined Dynamics 365 Customer Insights license that entitles you to install both the Customer Insights - Journeys and Customer Insights - Data applications, you can find them listed on **admin.powerplatform.microsoft.com** under **Resources** > **Dynamics 365 apps**.
+    - Whether you have the legacy, standalone Dynamics 365 Customer Insights app or Dynamics 365 Marketing licenses (available to customers who purchased before September 2023) or the new, combined Dynamics 365 Customer Insights license that entitles you to install both the Customer Insights - Journeys and Customer Insights - Data applications, you can find them listed on **admin.powerplatform.microsoft.com** under **Resources** > **Dynamics 365 apps**. If you don't see the license, check the geography that is selected. If you don't have a multi-geo tenant, you must have your tenant converted to a multi-geo tenant by a Microsoft employee or select the geography that matches the tenants home geography. Environments must also be created in that geography to install the applications. 
 
 1. To open the installation management area, select the three dots dropdown ("**...**") next to the app name then select **Manage**.
 
