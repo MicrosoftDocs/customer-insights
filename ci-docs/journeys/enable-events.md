@@ -18,7 +18,7 @@ Dynamics 365 Customer Insights – Journeys’ Real-time event management featur
 How to enable real-time event management:
 
 1. Turn on the feature switch: **Settings** > **Feature switches**.
-1. Under Event management, turn on the **Enable events creation in real-time journeys** toggle.
+1. Under **Event management**, turn on the **Enable events creation in real-time journeys** toggle.
     :::image type="content" source="media/real-time-journeys-toggle.png" alt-text="Real time journeys toggle" :::
 1. Create a real-time event: **Settings** > **Event planning**.
 1. Click the drop down arrow next to **New event** labeled **In real-time journeys**.
