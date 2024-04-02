@@ -37,7 +37,7 @@ The following sections explain how to set up Power BI and link to Fabric.
 
     :::image type="content" source="media/setting-up-pbi.png" alt-text="Set-up Power BI screenshot." lightbox="media/setting-up-pbi.png":::
 
-1. The Fabric integration feature is only available in Power BI premium workspaces. If you don’t have Power BI premium capacity, you can sign up for free Fabric trial capacity: [Fabric (preview) trial](/fabric/get-started/fabric-trial)
+1. The Fabric integration feature is only available in premium workspaces. If you don’t have a [Fabric capacity](/fabric/enterprise/licenses) or Power BI premium capacity, you can sign up for free Fabric trial capacity: [Fabric (preview) trial](/fabric/get-started/fabric-trial)
 1. It's highly recommended that you create a new Power BI workspace to directly link to Dataverse. The workspace you choose to link with Dataverse must be assigned to a premium capacity in the same region as your Dataverse environment.
 1. To confirm that you can create a premium workspace, go to **Workspace settings** > **Premium** and ensure that you have **Trial**, **Fabric**, or **Premium** capacity selected.
 
