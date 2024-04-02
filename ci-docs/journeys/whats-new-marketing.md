@@ -33,6 +33,9 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 > - **Text messages**: URLs sent in SMS messages will expire one year after the message is sent and will no longer work.
 > - **Unsubscribe links**: Unsubscribe links will expire one year after the link is created and will no longer work.
 
+> [!NOTE]
+> On July 1, 2024, active journeys in the real-time journeys area that were created on or before May 5, 2022 will stop working. To avoid disruption, follow the steps outlined in the [Known issues for journeys](journey-known-issues.md#steps-to-avoid-journey-disruption) article before July 1, 2024.
+
 ### Public preview
 
 - **Receive in-app task assistance from Copilot**
