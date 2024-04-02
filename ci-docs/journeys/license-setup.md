@@ -1,7 +1,7 @@
 ---
 title: Customer Insights license guidance
 description: Learn about licensing information in Dynamics 365 Customer Insights.
-ms.date: 03/29/2024
+ms.date: 04/02/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -28,9 +28,9 @@ Because Customer Insights licenses aren't seat-based (that is, you don't pay per
 
 ### Purchase guidance for Dynamics 365 Customer Insights
 
-- Official published pricing and license details, including the downloadable Power Platform and Dynamics 365 license guide, can be found on our [marketing website pricing page](https://dynamics.microsoft.com/ai/customer-insights/pricing/). Review the license guide for detailed entitlements.
-- The attach priced base offer has the same entitlement definition as the full priced base offer. It is simply discounted for customers who already own pre-qualifying Dynamics 365 applications offers. 
-- You can find official published pricing and license details, including the downloadable Power Platform and Dynamics 365 license guide, on the [Customer Insights pricing page](https://dynamics.microsoft.com/ai/customer-insights/pricing/). Review the license guide for detailed entitlements.
+- Official published pricing and license details, including the downloadable Power Platform and Dynamics 365 license guide, can be found on the [marketing website pricing page](https://dynamics.microsoft.com/ai/customer-insights/pricing/). Review the license guide for detailed entitlements.
+- The "attach" priced base offer (the price for customers that already have other qualifying Dynamics 365 apps) has the same entitlement definition as the full-priced base offer. It's simply discounted for customers who already own pre-qualifying Dynamics 365 application offers. 
+- You can find officially published pricing and license details, including the downloadable Power Platform and Dynamics 365 license guide, on the [Customer Insights pricing page](https://dynamics.microsoft.com/ai/customer-insights/pricing/). Review the license guide for detailed entitlements.
 - If you purchased before September 2023, you probably own one or both of the standalone licenses: Dynamics 365 Marketing (standalone) or Dynamics 365 Customer Insights (standalone). The new entitlements given with the currently available Dynamics 365 Customer Insights license don't transfer to the old standalone licenses. To get the new entitlements, you can add the new Dynamics 365 Customer Insights license to your tenant at any time in your contract cycle. Depending on your purchase channel, you can remove the standalone licenses on your renewal date.
 - As of September 2023 (when the new licenses and entitlements were launched), licenses are no longer associated with individual application installations as they were prior for the Marketing standalone license model. The applications for Customer Insights - Journeys (formerly called Marketing) and Customer Insights - Data are the same for the old licenses and the new license. **Do not uninstall and reinstall the applications when you change license types**.
 - The new entitlements don't apply to subscribers of the old, standalone models. For example, if you own the old standalone Dynamics 365 Marketing license, you don't gain access to install Customer Insights - Data. You must buy the new Dynamics 365 Customer Insights base license to gain the new entitlements.
@@ -56,7 +56,7 @@ Because Customer Insights licenses aren't seat-based (that is, you don't pay per
     - For customers on the standalone Dynamics 365 Marketing SKU with 10,000,000 or more active contacts.
     - For customers with the new Dynamics 365 Customer Insights SKU with 500,000 or more interacted people.
     - For customers with the new Dynamics 365 Customer Insights SKU who have less than 500,000 interacted people but have purchased the 500,000 sending burst add-on through their seller.
-- The Dataverse entitlements on both the full price and attach base offers are the same, in other words you get the same amount of Dataverse entitlements on the full price base offer as you do for the attach priced base offer. You can only get the Dataverse entitlements for the base offer (either full priced or attached priced) one time regardless of how many instances of the base offer you buy. You receive incremental Dataverse entitlements for each unit of add-on packs you buy of interacted people and unified people respectively.
+- The Dataverse entitlements on both the full price and attach base offers are the same. In other words, you get the same amount of Dataverse entitlements on the full price base offer as you do for the attach priced base offer. You can only get the Dataverse entitlements for the base offer (either full-priced or attached priced) one time, regardless of how many instances of the base offer you buy. You receive incremental Dataverse entitlements for each unit of add-on packs you buy of interacted people and unified people, respectively.
 
 ### Licenses vs. applications
 
