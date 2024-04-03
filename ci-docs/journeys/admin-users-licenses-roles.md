@@ -21,7 +21,7 @@ Read this article to learn how to work with user accounts, user licenses, and se
 
 ## User access and security groups
 
-When creating new environments in the Power Platform Admin Center, if no security group is selected, all Microsoft Entra users have default access to the environment through an automatic user sync. To restrict access to an environment when creating it in the Power Platform Admin Center, select a security group for the environment. Users must be members of the security group to access the environment. If you've already created environments and want to restrict access, create a security group, select the environment in the Power Platform Admin Center, then select **Edit** in the upper right corner. In the flyout, select the security group and apply it to the environment. Learn more: [Control user access to environments: security groups and licenses](power-platform/admin/control-user-access)
+When creating new environments in the Power Platform Admin Center, if no security group is selected, all Microsoft Entra users have default access to the environment through an automatic user sync. To restrict access to an environment when creating it in the Power Platform Admin Center, select a security group for the environment. Users must be members of the security group to access the environment. If you've already created environments and want to restrict access, create a security group, select the environment in the Power Platform Admin Center, then select **Edit** in the upper right corner. In the flyout, select the security group and apply it to the environment. Learn more: [Control user access to environments: security groups and licenses](/power-platform/admin/control-user-access)
 
 ## Create user accounts and assign licenses
 
