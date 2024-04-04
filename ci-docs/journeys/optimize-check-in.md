@@ -1,7 +1,7 @@
 ---
 title: Make the most of your event check-in flow 
 description: Learn how to optimize your event check-in flow in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/21/2023
+ms.date: 04/04/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
