@@ -21,6 +21,7 @@ To ensure that your attendees can check in before an event, implement the follow
 
 - Test your event invite email to ensure that it populates the correct personalized meeting link for each contact.
 - Each contact must already be registered for the event when they receive the "Join" email, thus, the timing of your invite emails is important! Send the "Join" email only after the contact is registered for the event or session. Use segments to trigger the email sending action at the right time.
+- We recommend verifying prior to the event that your Teams policies are appropriately configured based on your chosen Teams streaming options. Learn more: [View webinar engagement data](teams-webinar.md#view-webinar-engagement-data).
 
 ## Make the most of your check-in monitoring *after* an event
 
@@ -36,6 +37,8 @@ In Dynamics 365 Customer Insights - Journeys, you can monitor your event attenda
 > [!WARNING]
 > Check-ins are created only by selecting the [Join in Teams button](teams-webinar.md#view-webinar-engagement-data) in the email or the [Add to Calendar Join button](add-to-calendar.md#customize-the-icalendar-file-descriptions).
 >
+> Check-out times (or leave times) will be automatically generated only for events that are streamed via Teams webinars.
+> 
 > If an attendee selects the **Join in Teams** button *more than 120 minutes* before the event starts, the check-in *won't* be created. This cannot be controlled or changed by the meeting organizer. This is a hard-coded feature to prevent accidental check-ins when a recipient tests the link after they receive the email.
 >
 > Contacts must use their personalized meeting link for a check-in to be created (forwarded emails won't work). To prevent privacy issues, the Customer Insights - Journeys app does not track attendee actions unless they use the personalized link.
