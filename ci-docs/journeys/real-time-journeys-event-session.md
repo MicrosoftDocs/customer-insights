@@ -22,7 +22,9 @@ Session-level registration allows event organizers to let attendees assemble the
 ## Enable session-based registration
 
 1. Go to **Settings** and select **Feature switches**.
-1. Enable the **Enable session level registration in Real-time Journeys** feature toggle in the **Event management** section.
+2. Enable the **Enable session level registration in Real-time Journeys** feature toggle in the **Event management** section.
+
+<img width="296" alt="image" src="https://github.com/MicrosoftDocs/customer-insights/assets/123373049/4263424f-015c-4e13-ac37-090e39df67f4">
 
 ## Use session-level registration
 
@@ -30,9 +32,24 @@ To use session-based registration, start by [setting up the event](set-up-event.
 
 :::image type="content" source="media/journeys-session-enable.png" alt-text="Enable session-level registration in real-time journeys events.":::
 
-It’s important to note that session level registration requires the registration form to include the sessions. This is done by using the **Sessions** element in the form editor so that attendees can see the sessions and have the option to sign up for the sessions they select. To access the registration form for the event, select the event, then go to **Website and form** and select the **Registration form**. This opens a special version of the form editor that has extra elements for your event including the **About**, **Sessions**, and **Speakers** elements.
+It’s important to note that session level registration requires the registration form to include the sessions. This is done by using the **Sessions** element in the form editor so that attendees can see the sessions and have the option to sign up for the sessions they select. 
 
-When session-level registration is enabled (allow registrants to create their own agenda), the registration form automatically allows the attendees to select the sessions they're interested in.
+![image](https://github.com/MicrosoftDocs/customer-insights/assets/123373049/6ef45802-d08b-4be5-8798-ae28fa40efba)
+
+To access the registration form for the event, select the event, then go to **Website and form** and select the **Registration form**. 
+
+![image](https://github.com/MicrosoftDocs/customer-insights/assets/123373049/a62f2c06-e2fc-48ec-835a-696cdedb53b0)
+
+This opens a special version of the form editor that has extra elements for your event including the **About**, **Sessions**, and **Speakers** elements.
+
+When session-level registration is enabled for an event (allow registrants to create their own agenda), the registration form that has session tiles in it, automatically allows the attendees to select the sessions they're interested in.
+
+**Session Capacity Utilization:** Additionally, session capacity can be allocated to sessions with limited seating, by navigating to Session > Summary > Maximum session capacity:
+
+![image](https://github.com/MicrosoftDocs/customer-insights/assets/123373049/269a71f1-5774-4cf9-9e2f-539c47016b19)
+
+> [!WARNING]
+> To ensure successful registration for an event with a custom agenda, at least one session must be published and available for selection (with seats available).
 
 ## View and edit event session registrations
 
