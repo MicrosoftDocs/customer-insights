@@ -24,6 +24,6 @@ Once bot protection is enabled, suspected bot clicks are filterd out going forwa
 Since bot protection filters out non-human link clicks, some journey triggers and branching conditions that use 'email clicked' may be impacted. Bot protection does not impact email open rates. 
 
 ## How bots are detected
-<need to add 2-3 lines about fingerprinting and also mention IP based filtering which is not impacted>
+When bot protection is enabled, anytime a link is clicked, it goes through an intermediate page. Customer Insights - Journeys runs some checks on this intermediate page to determine if the click was made by a bot or a human. 
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
