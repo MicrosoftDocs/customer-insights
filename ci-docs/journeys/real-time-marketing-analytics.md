@@ -127,6 +127,6 @@ Learn more: [Preview: Marketing effectiveness analytics](real-time-marketing-eff
 
 Here are some advanced resources for this topic:
 
-- [Extracting Marketing Interactions in Dynamics 365 Customer Insights - Journeys](https://community.dynamics.com/blogs/post/?postid=4e96ca1e-52ed-4ae4-9887-af8d6e563304)
+- [Custom reporting with MS Fabric](fabric-integration.md)
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
