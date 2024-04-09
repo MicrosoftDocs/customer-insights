@@ -1,6 +1,6 @@
 ---
-title: Tenant to tenant migration for Dynamics 365 Customer Insights - Journeys
-description: How to prepare for and request to move an environment from one tenant to another.
+title: Migrate Dynamics 365 Customer Insights - Journeys between tenants
+description: Discover how to set up your environment for a tenant-to-tenant migration to start the transfer process between tenants.
 ms.date: 08/23/2023
 ms.topic: article
 author: alfergus
@@ -11,7 +11,7 @@ search.audienceType:
   - enduser
 ---
 
-# Tenant to tenant migration for Dynamics 365 Customer Insights - Journeys
+# Migrate Dynamics 365 Customer Insights - Journeys between tenants
 
 Migrating a Customer Insights - Journeys environment between tenants requires assistance from our technical support team. To request tenant to tenant migration within the same Azure geographic location (geo), [contact technical support](/power-platform/admin/get-help-support) and submit a support request.
 
