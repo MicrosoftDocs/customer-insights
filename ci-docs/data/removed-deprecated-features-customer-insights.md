@@ -18,6 +18,28 @@ This article describes features that have been removed, or that are planned for 
 
 This list is intended to help you consider these removals and deprecations for your own planning. Where possible, we share option to use similar capabilities for removed or deprecated features.
 
+## Features removed or deprecated in April 2024
+
+### HERE enrichment Dynamics 365 Customer Insights - Data
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Reason for deprecation/removal** | Replaced by alternative solutions: [Azure Maps enrichment](https://learn.microsoft.com/en-us/dynamics365/customer-insights/data/enrichment-azure-maps). |
+| **Replaced by another feature?**   | Yes |
+| **Product areas affected**         | Enrichments |
+| **Deployment option**              | All |
+| **Status**                         | Removed as of April 15, 2024.. |
+
+### Enhanced company data enrichment Dynamics 365 Customer Insights - Data
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Reason for deprecation/removal** | Replaced by alternative solutions: [LeadSpace enrichment](/dynamics365/customer-insights/data/b2b/enrichment-leadspace) or [Dun & Bradstreet enrichment](/dynamics365/customer-insights/data/b2b/enrichment-dnb). |
+| **Replaced by another feature?**   | Yes |
+| **Product areas affected**         | Enrichments |
+| **Deployment option**              | All |
+| **Status**                         | Removed as of April 15, 2024. |
+
 ## Features removed or deprecated in October 2023
 
 ### Teams bot for Dynamics 365 Customer Insights - Data
