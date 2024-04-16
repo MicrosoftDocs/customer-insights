@@ -41,7 +41,6 @@ The features listed below may be of interest as you transition from outbound mar
 
 ### Scheduling
 
-- **Quiet hours**: Control when messages get delivered, increasing engagement and meeting customer preferences. Comply with regulations by only reaching customers at their preferred times. Prevent nighttime, weekend, or holiday deliveries, and adjust settings per channel, message type, or business line. Learn more: [Improve communication timing by setting up quiet times](/dynamics365/release-plan/2023wave2/marketing/dynamics365-marketing/prevent-messages-sending-during-unwanted-times-setting-up-quiet-times-using-copilot)
 - **Send scheduling**: Elevate your customer engagement, conversion rates, and revenue with our send scheduling in real-time journeys. Reach your customers when they're the most active and likely to respond aligning their habits and preferences. Schedule deliveries within specific time frames daily, or on particular days weekly to maximize impact. Learn more: [Reach customers at the right moment with send scheduling](/dynamics365/release-plan/2023wave2/marketing/dynamics365-marketing/reach-customers-at-right-moment-send-scheduling)
 
 ### Email
