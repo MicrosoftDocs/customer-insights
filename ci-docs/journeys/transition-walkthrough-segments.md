@@ -31,6 +31,8 @@ While reviewing the imported emails, it's worth considering whether you should s
 
 Journeys in real-time journeys are the equivalent to customer journeys in outbound marketing. Journeys are the container that define the sequence of marketing actions that contacts are involved in. The underlying architecture for journeys in the real-time journeys module is fundamentally different from outbound marketing, which is why journeys can't be transferred automatically and manual recreation of the journey is required.
 
+Using quiet times you can control when messages get delivered, increasing engagement and meeting customer preferences. Quiet times allow you to comply with regulations by only reaching customers at their preferred times or prevent nighttime, weekend, or holiday deliveries. Learn more: [Improve communication timing by setting up quiet times](real-time-marketing-quiet-times.md)
+
 ## Asset library
 
 No migration of the asset library should be needed. If you're using the outbound marketing asset library, the same asset library is used by real-time journeys, so you can continue to use all previously uploaded assets. If you're using an external asset library, the process remains the same (get the URL of the asset from the external library and insert it in your messages).
