@@ -33,7 +33,7 @@ You can host a custom event website in two ways:
 2. [Power Apps portal hosted](portal-hosted.md)
 
 > [!WARNING]
-> We would like to inform our customers that the upkeep of customizations on the sample Angular website is their responsibility.
+> We'd like to gently remind our customers that maintaining customizations on the sample Angular website is part of their responsibility.
 
 ## Prerequisites
 
