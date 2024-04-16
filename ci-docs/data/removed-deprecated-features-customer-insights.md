@@ -34,7 +34,7 @@ This list is intended to help you consider these removals and deprecations for y
 
 | &nbsp;  | &nbsp;  |
 |---|---|
-| **Reason for deprecation/removal** | Replaced by alternative solutions: [LeadSpace enrichment](/b2b/enrichment-leadspace.md) or [Dun & Bradstreet enrichment](enrichment-dnb.md). |
+| **Reason for deprecation/removal** | Replaced by alternative solutions: [LeadSpace enrichment](b2b/enrichment-leadspace.md) or [Dun & Bradstreet enrichment](b2b/enrichment-dnb.md). |
 | **Replaced by another feature?**   | Yes |
 | **Product areas affected**         | Enrichments |
 | **Deployment option**              | All |
