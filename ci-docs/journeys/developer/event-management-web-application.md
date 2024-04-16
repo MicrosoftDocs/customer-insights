@@ -30,7 +30,10 @@ You can implement the front end using any of the available frameworks. The front
 You can host a custom event website in two ways:
 
 1. [Self-hosted](self-hosted.md)
-1. [Power Apps portal hosted](portal-hosted.md)
+2. [Power Apps portal hosted](portal-hosted.md)
+
+> [!WARNING]
+> We would like to inform our customers that the upkeep of customizations on the sample Angular website is their responsibility.
 
 ## Prerequisites
 
