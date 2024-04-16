@@ -1,7 +1,7 @@
 ---
 title: Removed or deprecated features in Dynamics 365 Customer Insights
 description: Overview about features that are going away or are no longer available.
-ms.date: 09/14/2023
+ms.date: 04/16/2024
 ms.topic: whats-new
 author: m-hartmann
 ms.author: mhart
@@ -20,21 +20,21 @@ This list is intended to help you consider these removals and deprecations for y
 
 ## Features removed or deprecated in April 2024
 
-### HERE enrichment Dynamics 365 Customer Insights - Data
+### HERE enrichment
 
 | &nbsp;  | &nbsp;  |
 |---|---|
-| **Reason for deprecation/removal** | Replaced by alternative solutions: [Azure Maps enrichment](https://learn.microsoft.com/en-us/dynamics365/customer-insights/data/enrichment-azure-maps). |
+| **Reason for deprecation/removal** | Replaced by alternative solutions: [Azure Maps enrichment](enrichment-azure-maps.md). |
 | **Replaced by another feature?**   | Yes |
 | **Product areas affected**         | Enrichments |
 | **Deployment option**              | All |
-| **Status**                         | Removed as of April 15, 2024.. |
+| **Status**                         | Removed as of April 15, 2024. |
 
-### Enhanced company data enrichment Dynamics 365 Customer Insights - Data
+### Enhanced company data enrichment
 
 | &nbsp;  | &nbsp;  |
 |---|---|
-| **Reason for deprecation/removal** | Replaced by alternative solutions: [LeadSpace enrichment](/dynamics365/customer-insights/data/b2b/enrichment-leadspace) or [Dun & Bradstreet enrichment](/dynamics365/customer-insights/data/b2b/enrichment-dnb). |
+| **Reason for deprecation/removal** | Replaced by alternative solutions: [LeadSpace enrichment](/b2b/enrichment-leadspace.md) or [Dun & Bradstreet enrichment](enrichment-dnb.md). |
 | **Replaced by another feature?**   | Yes |
 | **Product areas affected**         | Enrichments |
 | **Deployment option**              | All |
