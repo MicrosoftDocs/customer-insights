@@ -69,7 +69,7 @@ If your organization maintains environments for B2C and B2B, you can use the swi
 
 ### Exports
 
-Most exports are available for business accounts. Go to [Set up and manage exports](../export-manage.md). Business accounts aren't supported for Microsoft Teams bot.
+Most exports are available for business accounts. Go to [Set up and manage exports](../export-manage.md).
 
 Some exports require extra configuration and contact information projected in the underlying segments to be valid for business accounts. For more information, see [Segment exports](#segment-exports).
 
