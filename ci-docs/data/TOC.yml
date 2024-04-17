@@ -117,8 +117,6 @@
       href: enrichment-liveramp.md
     - name: Location from Azure Maps
       href: enrichment-azure-maps.md
-    - name: Location from HERE Technologies
-      href: enrichment-here.md
     - name: SFTP custom import
       href: enrichment-SFTP-custom-import.md
 
@@ -375,6 +373,8 @@
   items:
     - name: Integrate with Customer Insights - Journeys
       href: marketing-get-started.md
+    - name: Enrich Sales' lead summaries
+      href: lead-profile-summary.md
     - name: Integrate with other Dynamics 365 applications
       href: integrate-d365-apps.md
 
@@ -411,6 +411,8 @@
       href: faqs-docs-qna.md
     - name: FAQs for segment creation
       href: faqs-segment-creation.md
+    - name: FAQ for customer insights in Sales lead summaries
+      href: faqs-profile-summary.md
 
 - name: More resources
   items:

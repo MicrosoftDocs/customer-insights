@@ -42,7 +42,7 @@ Only one data source of an environment can simultaneously use the same Dataverse
 1. Select the tables you want to import from the list.
 
    > [!NOTE]
-   > If some tables are already selected, they might be used by other Dynamics 365 applications (such as Dynamics 365 Sales Insights or Customer Service Insights). You can't change the selection. These tables will be available once the data source is created.
+   > If some tables are already selected, they might be used by other Dynamics 365 applications (such as Dynamics 365 Sales Insights or Customer Service Insights - Journeys). You can't change the selection. These tables will be available once the data source is created.
 
     :::image type="content" source="media/select-dataverse-tables.png" alt-text="Dialog box showing a list of tables in the Dataverse environment.":::
 
