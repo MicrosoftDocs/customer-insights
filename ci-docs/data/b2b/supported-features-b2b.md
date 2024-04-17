@@ -44,16 +44,10 @@ Go to **Data** > **Enrichment**. The **Discover** tab shows all supported enrich
 - [Company data](enrichment-dnb.md) provided by Dun & Bradstreet
 - [Company data](enrichment-leadspace.md) provided by Leadspace
 - [Enhanced addresses](../enrichment-enhanced-addresses.md) provided by Microsoft
-- [Enhanced company data](enrichment-enhanced-company-data.md) provided by Microsoft
 - [Location data](../enrichment-azure-maps.md) provided by Microsoft Azure Maps
-- [Location data](../enrichment-here.md) provided by HERE Technologies
 - [SFTP custom data](../enrichment-SFTP-custom-import.md) through Secure File Transfer Protocol (SFTP)
 
 For more information, see [data enrichment (preview) overview](../enrichment-hub.md).
-
-#### Enrichment for data sources (preview)
-
-[Enhanced company data](enrichment-enhanced-company-data.md) is supported for enriching your customer data before data unification.
 
 ### Environment
 
@@ -69,7 +63,7 @@ If your organization maintains environments for B2C and B2B, you can use the swi
 
 ### Exports
 
-Most exports are available for business accounts. Go to [Set up and manage exports](../export-manage.md). Business accounts aren't supported for Microsoft Teams bot.
+Most exports are available for business accounts. Go to [Set up and manage exports](../export-manage.md).
 
 Some exports require extra configuration and contact information projected in the underlying segments to be valid for business accounts. For more information, see [Segment exports](#segment-exports).
 

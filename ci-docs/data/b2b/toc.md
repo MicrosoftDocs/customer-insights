@@ -11,7 +11,6 @@
 
 ## Data enrichment
 ### [Company data from Dun & Bradstreet](enrichment-dnb.md)
-### [Enhanced company data](enrichment-enhanced-company-data.md)
 ### [Company data from Leadspace](enrichment-leadspace.md)
 ### [Accounts from Microsoft Office 365](enrichment-office.md)
 
