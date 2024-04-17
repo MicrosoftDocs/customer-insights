@@ -1,5 +1,5 @@
 ---
-title: Link contacts or leads to a unified customer profile
+title: Automatically link Dynamics 365 apps to customer profiles
 description: Learn how the Customer Insights - Data unified profile can be used with other Dynamics 365 applications.
 author: Scott-Stabbert
 ms.author: sstabbert
