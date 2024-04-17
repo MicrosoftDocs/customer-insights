@@ -117,8 +117,6 @@
       href: enrichment-liveramp.md
     - name: Location from Azure Maps
       href: enrichment-azure-maps.md
-    - name: Location from HERE Technologies
-      href: enrichment-here.md
     - name: SFTP custom import
       href: enrichment-SFTP-custom-import.md
 
