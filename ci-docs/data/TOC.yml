@@ -375,7 +375,7 @@
       href: marketing-get-started.md
     - name: Enrich Sales' lead summaries
       href: lead-profile-summary.md
-    - name: Integrate with other Dynamics 365 applications
+    - name: Automatically link Dynamics 365 apps to customer profiles
       href: integrate-d365-apps.md
 
 - name: APIs
