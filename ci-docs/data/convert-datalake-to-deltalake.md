@@ -11,11 +11,11 @@ ms.custom: bap-template
 
 # Update a Common Data Model data source to use Delta tables
 
-Update an existing data connection that reads tables in Common Data Model format to read the same tables in Delta format.
-
-[!INCLUDE [delta-lake-info](./includes/delta-lake-info.md)]
+Update an existing data connection with Common Data Model tables and move to Delta-formatted tables without removing and recreating an existing configuration that depends on the data connection.
 
 [!INCLUDE [delta-lake-benefits](./includes/delta-lake-benefits.md)]
+
+[!INCLUDE [delta-lake-info](./includes/delta-lake-info.md)]
 
 ## Prerequisites
 
