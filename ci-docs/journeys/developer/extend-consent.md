@@ -1,7 +1,7 @@
 ---
 title: Extend and customize consent
 description: Learn how to extend and customize consent capabilities in Dynamics 365 Customer Insights - Journeys.
-ms.date: 03/11/2024
+ms.date: 04/18/2024
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
@@ -77,7 +77,7 @@ The consent provider entity is the main configuration entry describing your cons
 | ------------- | ---- | ----------- |
 | consents | `EntityCollection` | List of consents for given request |
 
-Each entity in the `consents` collection should be having following properties:
+Each entity in the `consents` collection should have the following properties:
 
 | Property name | Type | Description | Sample |
 | ------------- | ---- | ----------- | ------ |
@@ -89,17 +89,17 @@ Each entity in the `consents` collection should be having following properties:
 # Create your own consent provider solution
 
 1. Create a new blank solution.
-1. Add a custom API that matches the contract of Custom API for consent checks.
+1. Add a custom API that matches the contract of the custom API for consent checks.
 1. Declare your consent provider entity in the solution (should be located under `unmanaged/msdynmkt_consentproviders/msdynmkt_cpmconsentprovider/new_contosoconsentcheck.xml`).
 1. Pack your solution and import it into your dev org.
 1. Go to **Settings** > **Compliance profiles** > **New profile** > **With external consent provider**, select your consent provider and save the form.
 1. Enable plugin trace logs.
-1. Create an email entity under **Settings** > **Compliance**, make sure to select the newly created compliance profile.
+1. Create an email entity under **Settings** > **Compliance**. Make sure to select the newly created compliance profile.
 1. Publish the email entity. At this point, the request to your consent provider should be made under the `john.doe@contoso.com` email.
-    1. If the validation of email entity failed, investigate the plugin trace logs for errors in your logic.
-    2. If the email went live, make sure to also test a small journey. Create a static segment with your testing email address, create a segment-based journey targeting this segment. The email should be sent out to the given email address. Make sure the unsubscribe URL in the email and `List-Unsubscribe` headers (if your consent system supports one-click unsubscribe) are set correctly.
+    1. If the email entity validation failed, investigate the plugin trace logs for errors in your logic.
+    2. If the email went live, make sure to also test a small journey. Create a static segment with your testing email address and create a segment-based journey targeting this segment. The email should be sent out to the given email address. Make sure the unsubscribe URL in the email and the `List-Unsubscribe` headers (if your consent system supports one-click unsubscribe) are set correctly.
 
 # Sample consent provider solution
-[Sample Consent Provider Solution](../../data/media/ConsentProviderSample.zip)
+[Sample consent provider solution](../../data/media/ConsentProviderSample.zip)
 
 [!INCLUDE [footer-include](.././includes/footer-banner.md)]
