@@ -51,8 +51,6 @@ This article demonstrates how to perform operations on the `msdyncrm_customerjou
 > [!NOTE]
 > The `statuscode` and `statecode` fields define the state of the customer journey. Changing their values can result in `Publishing` or `Stopping` of customer journey workflow. If you wish to `go live` save the record in `Going Live` state (statuscode = 192350006). To stop a customer journey record, save the Live record in `Stopping` state (statuscode = 192350007).
 
-Use the Postman tool to test the operations. More information: [Use Postman With Web API](/powerapps/developer/common-data-service/webapi/use-postman-web-api).
-
 ## Create, retrieve, update, and delete operations
 
 ### Create request

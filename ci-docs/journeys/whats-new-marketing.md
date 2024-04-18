@@ -1,7 +1,7 @@
 ---
 title: New and upcoming features
 description: Information about new features, improvements, and bug fixes in Dynamics 365 Customer Insights - Journeys releases.
-ms.date: 02/07/2024
+ms.date: 04/16/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -17,6 +17,108 @@ We're excited to announce our newest updates! This article summarizes early acce
 Customer Insights - Journeys updates are [pushed to customers automatically](https://cloudblogs.microsoft.com/dynamics365/it/2020/04/27/automatic-update-policy-for-dynamics-365-marketing/). Solutions are available for early validations. To manually update your instances, follow the steps in [Keep Customer Insights - Journeys up to date](apply-updates.md).
 
 To submit and vote on **feature requests** and **product suggestions**, go to the [Dynamics 365 Application Ideas portal](https://experience.dynamics.com/ideas/categories/?forum=dfa5b83d-9e4c-e811-a956-000d3a1bef07&forumName=Dynamics%20365%20Marketing).
+
+## April 2024 update
+
+### Version number
+
+| App              | GA release      |
+|------------------|-----------------|
+| Customer Insights - Journeys        |   1.1.40197.68    |
+
+> [!IMPORTANT]
+> Starting on April 15, 2024, changes to link functionality affected the following areas:
+>
+> - **Link tracking**: Links in messages sent more than one year prior to April 15 no longer produce tracking results, but otherwise function correctly. Links in messages sent less than one year prior continue to generate tracking analytics.
+> - **Text messages**: URLs sent in SMS messages expire one year after the message was sent and no longer work.
+> - **Unsubscribe links**: Unsubscribe links expire one year after the link was created and no longer work.
+
+> [!NOTE]
+> On July 1, 2024, active journeys in the real-time journeys area that were created on or before May 5, 2022 will stop working. To avoid disruption, follow the steps outlined in the [Known issues for journeys](journey-known-issues.md#steps-to-avoid-journey-disruption) article before July 1, 2024.
+
+### General availability
+
+- **Easily reference copies of sent emails in the timeline**
+    - Understanding your company's customer interactions is key to improving your customer experience. Now you can deepen customer understanding by viewing exact copies of sent emails, allowing you to build more personalized experiences. Reviewing sent emails improves your overall visibility, compliance, and auditing.
+    - [Release plan](/dynamics365/release-plan/2024wave1/customer-insights/dynamics365-customer-insights-journeys/easily-reference-copies-sent-emails-timeline)
+    - [Docs](view-previously-sent-emails.md)
+
+- **Capture responses from external, third-party forms**
+    - Maximize the potential of your external custom-built forms and generate more leads and contacts for your business without the need to recreate them in real-time journeys. Capture submissions from any third-party form on your website and automatically create new leads or contacts in real-time journeys. This empowers you to better understand your audience, target them more accurately, and follow up effectively.
+    - [Release plan](/dynamics365/release-plan/2024wave1/customer-insights/dynamics365-customer-insights-journeys/capture-responses-external-third-party-forms)
+    - [Docs](real-time-marketing-form-capture.md)
+
+### Public preview
+
+- **Take campaigns from concept to launch using Copilot**
+    - Defining campaigns and creating high-performing assets to achieve campaign goals can be a time-consuming and difficult task. Now, Copilot transforms the way you create campaigns, enhancing your productivity. To create a campaign, describe the outcomes you're looking to drive or provide a creative brief. Copilot leverages the power of data and AI to generate audiences, content, images, journeys, and more, allowing you to curate, edit, and launch your project in record time. You'll save countless hours by using Copilot to create a connected solution that you can update to achieve the goals that you've defined. Rest assured that you'll always be in the loop to refine, approve, and complete the campaign before it goes out to your customers.
+    > [!NOTE]
+    > The public preview is rolling out in phases, starting with selected customers who signed up previously. Sign up [here](https://adoption.microsoft.com/dynamics-365/customer-insights/) to get access as the preview program is expanded.
+    - [Release plan](/dynamics365/release-plan/2024wave1/customer-insights/dynamics365-customer-insights-journeys/take-campaigns-concept-launch-using-copilot)
+
+- **Improve reliability of insights with advanced bot protection**
+    - In today’s world, ensuring the integrity of your data and the efficiency of your operations is paramount. Advanced bot protection in Customer Insights - Journeys empowers your business to thrive by safeguarding your business processes. Improve your business decisions with the confidence of knowing that the data you collect is accurate and represents real human interactions. With bot protection, you not only enhance the quality of your insights but also elevate the customer experience by minimizing disruptions caused by malicious bots.
+    - [Release plan](/dynamics365/release-plan/2024wave1/customer-insights/dynamics365-customer-insights-journeys/improve-reliability-insights-advanced-bot-protection)
+    - [Docs](bot-protection.md)
+
+### Monthly enhancements
+
+- **Email editor**
+    - Email spam score is now available in real-time journeys, even when outbound marketing isn’t present (real-time journeys-only environments). Previously, spam score in real-time journeys was only available in mixed configurations (outbound marketing + real-time journeys).
+
+### New blogs and scenario docs
+
+Learn how to make the most of the new Dynamics 365 Customer Insights features in our latest blogs and scenario docs:
+
+- [Revolutionizing marketing workflows with Copilot in Dynamics 365 Customer Insights - Microsoft Dynamics 365 blog](https://cloudblogs.microsoft.com/dynamics365/bdm/2024/04/02/revolutionizing-marketing-workflows-with-copilot-in-dynamics-365-customer-insights/)
+- [Journey and email approval process in Customer Insights - Journeys (FastTrack blog)](https://community.dynamics.com/blogs/post/?postid=e2f9169d-eef7-ee11-a73d-000d3ae2664e)
+
+## March 2024 update
+
+### Version number
+
+| App              | GA release      |
+|------------------|-----------------|
+| Customer Insights - Journeys        |   1.1.38813.71    |
+
+> [!IMPORTANT]
+> Starting on April 15, 2024, changes to link functionality will affect the following areas:
+>
+> - **Link tracking**: Links in messages that were sent more than one year prior will no longer produce tracking results, but will otherwise function correctly. Links in messages sent less than one year prior will continue to generate tracking analytics.
+> - **Text messages**: URLs sent in SMS messages will expire one year after the message is sent and will no longer work.
+> - **Unsubscribe links**: Unsubscribe links will expire one year after the link is created and will no longer work.
+
+> [!NOTE]
+> On July 1, 2024, active journeys in the real-time journeys area that were created on or before May 5, 2022 will stop working. To avoid disruption, follow the steps outlined in the [Known issues for journeys](journey-known-issues.md#steps-to-avoid-journey-disruption) article before July 1, 2024.
+
+### Public preview
+
+- **Receive in-app task assistance from Copilot**
+    - Use Copilot to receive timely in-app guidance in everyday language. You can also ask questions, which Copilot answers with reference to the Dynamics 365 Customer Insights - Journeys documentation.
+    - [Release plan](/dynamics365/release-plan/2023wave2/marketing/dynamics365-marketing/receive-in-app-task-assistance-copilot)
+    - [Docs](faqs-copilot-general.md)
+
+- **Easily manage customer consent from contact and lead forms**
+    - Enhanced contact and lead forms enable you to quickly see and update a customer's consent, helping you effortlessly manage which types of messages are sent to your customers. This comprehensive view gives you a single place to manage consent across every channel and line of business for your organization. See if a customer has opted out of all commercial communication from your business. Explore which topics a contact has opted in or out of receiving across all channels: email, text, and custom channels. Get a complete understanding of each contact and lead's consent preferences in one easy-to-use screen.
+    - [Release plan](/dynamics365/release-plan/2023wave2/marketing/dynamics365-marketing/easily-manage-customer-consent-contact-lead-forms)
+    - [Docs](real-time-marketing-email-text-consent.md#view-and-manage-consent-records)
+
+- **Build custom reports using Microsoft Fabric integration**
+    - In today's data-driven world, marketers face the challenge of gaining a comprehensive view of their campaigns to make informed decisions. Each business has unique needs and requirements for aggregating data from various sources. While Dynamics 365 Customer Insights - Journeys already offers powerful out-of-the-box reports, the app also offers additional custom reporting capabilities to address your unique scenarios. Now in real-time journeys, you can effortlessly create custom Power BI reports tailored to your business needs by leveraging Microsoft Fabric capabilities. Harness seamless access to data to gain a complete understanding of your campaigns, lead management, market performance, and customer engagement, enabling you to identify new opportunities.
+    - [Release plan](/dynamics365/release-plan/2023wave2/marketing/dynamics365-marketing/effortlessly-build-custom-reports-tailored-business-needs-using-fabric-integration)
+    - [Docs](fabric-integration.md)
+
+### Monthly enhancements
+
+- **Email editor**
+    - Accurately preview your real-time journeys emails in a wide variety of target email clients and platforms with Litmus integration.
+
+### New blogs and scenario docs
+
+Learn how to make the most of the new Dynamics 365 Customer Insights features in our latest blogs and scenario docs:
+
+- [What you need to know about the event portal in Customer Insights – Journeys (FastTrack blog)](https://community.dynamics.com/blogs/post/?postid=9eef0126-bbbb-ee11-92bd-6045bdb56f43)
+- [Understanding email variation in Customer Insights - Journeys (FastTrack blog)](https://community.dynamics.com/blogs/post/?postid=adfbe765-9dca-ee11-92bd-000d3a01c528)
 
 ## February 2024 update
 

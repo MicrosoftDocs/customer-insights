@@ -32,8 +32,6 @@ This topic demonstrates how to perform basic operations on **msdyncrm_segment** 
 |Status Reason|statuscode|Current status of the segment. Following are the available status codes: <br /> - Draft `192350000`<br /> - Live `192350001`<br /> - Stopped `192350002`<br /> - GoingLive `192350006`<br /> - Stopping `192350007`|Yes.|
 |Segment Query|msdyncrm_query|Query in the segmentation query.|Yes (only for dynamic and compound segments).|
 
-To test the operations, you can use the Postman tool. More information: [Use Postman with Web API](/powerapps/developer/common-data-service/webapi/use-postman-web-api).
-
 ## CRUD operations on static segments
 
 This section shows how to perform basic CRUD (create, update, retrieve, and delete) operations on static segments.

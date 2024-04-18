@@ -1,7 +1,7 @@
 ---
 title: "Data sources overview"
 description: "Learn how to import or ingest data from various sources."
-ms.date: 12/08/2023
+ms.date: 03/27/2024
 ms.topic: overview
 author: mukeshpo
 ms.author: mukeshpo
@@ -27,7 +27,7 @@ If you have data prepared in one of Microsoft's Azure data services, you can eas
 
 - [Azure Data Lake Storage (csv or parquet files in a Common Data Model folder)](connect-common-data-model.md)
 - [Azure Synapse Analytics (Lake databases)](connect-synapse.md)
-- [Microsoft Dataverse data lake](connect-dataverse.md)
+- [Microsoft Dataverse](connect-dataverse.md)
 - [Delta tables in Azure Data Lake Storage (preview)](connect-delta-lake.md)
 
 **Import and transform**
@@ -63,5 +63,6 @@ If your environment was configured to use the default system storage and you use
 
 - [Manage data sources](data-sources-manage.md)
 - [Unify data sources](data-unification.md)
+- [FastTrack blog: Data integration patterns - introduction](https://community.dynamics.com/blogs/post/?postid=f32d115e-d9cb-ee11-92bd-000d3a7e795a)
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
