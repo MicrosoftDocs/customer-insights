@@ -1,7 +1,7 @@
 ---
 title: Overview of Customer Insights - Journeys forms
 description: Overview of the forms capabilities in Dynamics 365 Customer Insights - Journeys. 
-ms.date: 12/20/2023
+ms.date: 04/18/2024
 ms.topic: article
 author: petrjantac
 ms.author: alfergus
@@ -57,10 +57,10 @@ The following table summarizes the types of forms currently available in Custome
 Security is an important aspect of forms. Dynamics 365 Customer Insights - Journeys takes the following precautions to avoid any security risks:
 
 - The Customer Insights - Journeys app accepts form submissions only from [domains allowed for external form hosting](domain-authentication.md). This security precaution applies for both forms and form capture.
-- The form can be rendered only on domains allowed for external form hosting.
-- The out-of-box domain for forms hosted as standalone page is enabled for external form hosting by default. [Learn more](real-time-marketing-form-create.md#publish-your-form)
-- We recommend protecting the form with a captcha to avoid form submissions by bots. There's out-of-the-box captcha available in the form editor, but you can also use any other third party captcha service to improve the user experience. [Learn more](real-time-marketing-form-custom-captcha.md).
-- The Customer Insights - Journeys app infrastructure contains necessary precautions to minimize the consequences of a possible DDoS attack. There's a limit of 2,000 requests/minute per org to prevent DoS attacks. The request limit includes visits, lookup, CAPTCHA, and form submission. The limit allows around 100 to 500 submissions/minute, depending on the form.
+- Forms can be rendered only on domains allowed for external form hosting.
+- The out-of-box domain for forms hosted as a standalone page is enabled for external form hosting by default. [Learn more](real-time-marketing-form-create.md#publish-your-form)
+- To avoid form submissions by bots, you should protect forms with a captcha. The form editor includes an out-of-the-box captcha option, but you can use any other third-party captcha service to improve the user experience. [Learn more](real-time-marketing-form-custom-captcha.md)
+- The Customer Insights - Journeys app infrastructure contains necessary precautions to minimize the consequences of a possible DDoS attack. To prevent DoS attacks, there's a limit of 2,000 requests/minute per org. The request limit includes visits, lookups, CAPTCHA, and form submissions. The limit allows around 100 to 500 submissions/minute, depending on the form.
 
 ## Next steps
 
