@@ -428,8 +428,6 @@
       href: developer/extend-ui.md
   - name: Push notification setup for application developers
     href: real-time-marketing-developer-push.md
-  - name: Reference guide for Customer Insights - Journeys interactions
-    href: real-time-marketing-interactions-reference.md
   - name: Receive notifications and create interactions
     href: real-time-marketing-developer-notifications.md
   - name: Extend and customize consent
