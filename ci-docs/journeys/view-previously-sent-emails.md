@@ -1,5 +1,5 @@
 ---
-title: "Preview: Reference copies of sent emails in the interaction timeline"
+title: Reference copies of sent emails in the interaction timeline
 description: Learn how to view previously sent emails in Dynamics 365 Customer Insights - Journeys.
 ms.date: 12/12/2023
 ms.topic: how-to
@@ -11,13 +11,7 @@ search.audienceType:
   - enduser
 ---
 
-# Preview: Reference copies of sent emails in the interaction timeline
-
-
-> [!IMPORTANT]
-> A preview feature is a feature that is not complete, but is made available before it’s officially in a release so customers can get early access and provide feedback. Preview features aren’t meant for production use and may have limited or restricted functionality.
->
-> Microsoft doesn't provide support for this preview feature. Microsoft Dynamics 365 Technical Support won’t be able to help you with issues or questions. Preview features aren’t meant for production use, especially to process personal data or other data that are subject to legal or regulatory compliance requirements.
+# Reference copies of sent emails in the interaction timeline
 
 You can view an exact copy of sent emails on your contact interaction timeline to deepen your customer understanding and have visibility into what's been previously shared with your customers.
 
