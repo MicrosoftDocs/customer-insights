@@ -14,8 +14,6 @@ ms.author: philk
 
 Export segments of unified customer profiles to Facebook Ads Manager to create campaigns on Facebook and Instagram.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5dsVH]
-
 ## Prerequisites
 
 - A [Facebook Ads Account](https://www.facebook.com/business/learn/lessons/step-by-step-ads-manager-account) that includes a [Facebook Business Account](https://business.facebook.com/).
@@ -51,8 +49,6 @@ Export segments of unified customer profiles to Facebook Ads Manager to create c
 
    1. Select the **Facebook Ads Account** that you want to work with.
 
-   1. Select an **Existing custom audience** from the dropdown list or create a **New custom audience**.
-
 1. Review the [data privacy and compliance](connections.md#data-privacy-and-compliance) and select **I agree**.
 
 1. Select **Save** to complete the connection.
@@ -68,6 +64,8 @@ Export segments of unified customer profiles to Facebook Ads Manager to create c
 1. In the **Connection for export** field, choose a connection from the Facebook Ads Manager section. Contact an administrator if no connection is available.
 
 1. Enter a name for the export.
+
+1. Enter the **Facebook Ads custom audience ID**, this defines which audience this export will update. You can see the audience ID in Facebook ads manager on the audience page, then choose columns and choose to display it in the table.
 
 1. In the **Connect data** field, select **Email**, **Name and address**, or **Phone** to send to Facebook Ads Manager.
 
