@@ -1,7 +1,7 @@
 ---
-title: "Export segments to Facebook Ads Manager (preview) (contains video)"
+title: "Export segments to Facebook Ads Manager (preview)"
 description: "Learn how to configure the connection and export to Facebook Ads Manager."
-ms.date: 09/01/2023
+ms.date: 04/18/2024
 ms.reviewer: mhart
 ms.topic: how-to
 author: pkieffer
@@ -65,7 +65,7 @@ Export segments of unified customer profiles to Facebook Ads Manager to create c
 
 1. Enter a name for the export.
 
-1. Enter the **Facebook Ads custom audience ID**, this defines which audience this export will update. We display the FB ads account name and ID which are defined in the connection you have choosen, please add an audience for that account. To find the audience ID in Facebook ads manager, go to the audience page, then choose columns and choose to display it in the table.
+1. Enter the **Facebook Ads custom audience ID**, which defines the audience this export updates. We show the Facebook Ads account name and ID configured in the selected connection, Choose an audience for that account. To find the audience ID in Facebook Ads Manager, go to the audience page and set it to show the audience ID column in the table.
 
 1. In the **Connect data** field, select **Email**, **Name and address**, or **Phone** to send to Facebook Ads Manager. Map the corresponding attributes from your unified customer table for the selected key identifier.
    > [!TIP]
