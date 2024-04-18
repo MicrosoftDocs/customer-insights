@@ -1,7 +1,7 @@
 ---
 title: "Update a Common Data Model data source to use Delta tables"
-description: "Update Common Data Model tables in Azure Data Lake to Delta format in Customer Insights - Data."
-ms.date: 03/28/2024
+description: "Learn how to convert Common Data Model tables in Azure Data Lake to Delta format in Customer Insights - Data."
+ms.date: 04/17/2024
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -11,11 +11,11 @@ ms.custom: bap-template
 
 # Update a Common Data Model data source to use Delta tables
 
-Take an existing Azure Data Lake data source with Common Data Model tables and update it to use Delta tables.
-
-[!INCLUDE [delta-lake-info](./includes/delta-lake-info.md)]
+Update an existing data connection with Common Data Model tables and move to Delta-formatted tables without removing and recreating an existing configuration that depends on the data connection.
 
 [!INCLUDE [delta-lake-benefits](./includes/delta-lake-benefits.md)]
+
+[!INCLUDE [delta-lake-info](./includes/delta-lake-info.md)]
 
 ## Prerequisites
 
@@ -32,7 +32,7 @@ Take an existing Azure Data Lake data source with Common Data Model tables and u
       Table2/
   ```
 
-## Update a Common Data Model data source to use Delta tables
+## Update Common Data Model data tables to Delta tables
 
 1. Go to **Data** > **Data sources**.
 

@@ -1,7 +1,7 @@
 ---
 title: Event management web application in outbound marketing overview
 description: Learn how you can extend event management web application functionality in outbound marketing.
-ms.date: 03/19/2024
+ms.date: 04/18/2024
 ms.topic: overview
 author: alfergus
 ms.author: alfergus
@@ -30,7 +30,10 @@ You can implement the front end using any of the available frameworks. The front
 You can host a custom event website in two ways:
 
 1. [Self-hosted](self-hosted.md)
-1. [Power Apps portal hosted](portal-hosted.md)
+2. [Power Apps portal hosted](portal-hosted.md)
+
+> [!WARNING]
+> Customizations to the sample Angular website are performed at your own risk. Microsoft Dynamics 365 Technical Support can't help you with issues or questions related to sample website customizations.
 
 ## Prerequisites
 
