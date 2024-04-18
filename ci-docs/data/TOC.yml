@@ -51,7 +51,7 @@
          href: connect-dataverse.md
        - name: Add data via Power Query connectors
          href: connect-power-query.md
-    - name: Update a Common Data Model data source to use Delta tables
+    - name: Update data source to use Delta tables
       href: convert-datalake-to-deltalake.md
     - name: Manage existing data sources
       href: data-sources-manage.md
@@ -375,7 +375,7 @@
       href: marketing-get-started.md
     - name: Enrich Sales' lead summaries
       href: lead-profile-summary.md
-    - name: Integrate with other Dynamics 365 applications
+    - name: Automatically link Dynamics 365 apps to customer profiles
       href: integrate-d365-apps.md
 
 - name: APIs

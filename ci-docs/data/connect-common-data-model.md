@@ -17,8 +17,6 @@ Ingest data into Dynamics 365 Customer Insights - Data using your Azure Data Lak
 
 ## Prerequisites
 
-- Data ingestion supports Azure Data Lake Storage *Gen2* accounts exclusively. You can't use Data Lake Storage Gen1 accounts to ingest data.
-
 - The Azure Data Lake Storage account must have [hierarchical namespace enabled](/azure/storage/blobs/data-lake-storage-namespace). The data must be stored in a hierarchical folder format that defines the root folder and has subfolders for each table. The subfolders can have full data or incremental data folders.
 
 - To authenticate with a Microsoft Entra service principal, make sure it's configured in your tenant. For more information, see [Connect to an Azure Data Lake Storage account with a Microsoft Entra service principal](connect-service-principal.md).
