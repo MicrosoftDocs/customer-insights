@@ -1,7 +1,7 @@
 ---
 title: Use "Send now" to send emails instantly
 description: Learn how to send emails in Dynamics 365 Customer Insights - Journeys without building a journey.
-ms.date: 03/27/2024
+ms.date: 04/18/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -20,6 +20,9 @@ search.audienceType:
 > If you don’t see this feature in your app, contact your admin who can activate it by going to **Settings** > **Overview** > **Feature switches**, scrolling to the **Email editor** area, enabling the **Send now** feature switch, and saving the setting by selecting **Save** on the top right corner.
 
 You can now send an email directly from the email editor with guidance through a straightforward flow, provided your email and journey scenarios are noncomplex. From the email editor, select the **Ready to Send** option. This directs you to select the **Send** option where you can select a segment, preview its contents, and then send the email. The process builds a simple journey in the background to assist you in sending your email.
+
+> [!NOTE]
+> If you have a business unit assigned to the email, the journey created in the background doesn't pick up the business unit. The journey created in the background is owned by the user who created the email.
 
 ## Use send now
 
@@ -45,6 +48,8 @@ To begin your email sending process, follow these steps:
 
 Send now is a simplified workflow that supports limited scenarios. It doesn't support the complete set of validations and capabilities available in the full journey editor canvas. If any of the following scenarios apply to you, you must use the journey canvas to ensure the features in your email are supported properly:
 
+- If there's a business unit assigned to the email, the resulting journey doesn't pick up the business unit assignment.
+- The journey created in the background is owned by the user who created the email and the "send now" flow.
 - Send now only works with contact and lead segment-based journeys. We'll expand to support Customer Insights profiles in the future.
 - Send now doesn't work with outbound marketing segments that you haven't used in real-time journeys. Once you use an outbound marketing segment in a real-time journey successfully, it's been processed and you can use it with the send now functionality.
 - Send now doesn't stop users from selecting an email and a segment from two different business units. If you have permissions to more than one business unit, be careful to make sure you select an email and segment from the same business unit.
