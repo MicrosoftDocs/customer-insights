@@ -1,7 +1,7 @@
 ---
-title: "Export segments to Facebook Ads Manager (preview) (contains video)"
+title: "Export segments to Facebook Ads Manager (preview)"
 description: "Learn how to configure the connection and export to Facebook Ads Manager."
-ms.date: 09/01/2023
+ms.date: 04/18/2024
 ms.reviewer: mhart
 ms.topic: how-to
 author: pkieffer
@@ -13,8 +13,6 @@ ms.author: philk
 [!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
 Export segments of unified customer profiles to Facebook Ads Manager to create campaigns on Facebook and Instagram.
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5dsVH]
 
 ## Prerequisites
 
@@ -51,8 +49,6 @@ Export segments of unified customer profiles to Facebook Ads Manager to create c
 
    1. Select the **Facebook Ads Account** that you want to work with.
 
-   1. Select an **Existing custom audience** from the dropdown list or create a **New custom audience**.
-
 1. Review the [data privacy and compliance](connections.md#data-privacy-and-compliance) and select **I agree**.
 
 1. Select **Save** to complete the connection.
@@ -69,9 +65,9 @@ Export segments of unified customer profiles to Facebook Ads Manager to create c
 
 1. Enter a name for the export.
 
-1. In the **Connect data** field, select **Email**, **Name and address**, or **Phone** to send to Facebook Ads Manager.
+1. Enter the **Facebook Ads custom audience ID**, which defines the audience this export updates. We show the Facebook Ads account name and ID configured in the selected connection, Choose an audience for that account. To find the audience ID in Facebook Ads Manager, go to the audience page and set it to show the audience ID column in the table.
 
-1. Map the corresponding attributes from your unified customer table for the selected key identifier.
+1. In the **Connect data** field, select **Email**, **Name and address**, or **Phone** to send to Facebook Ads Manager. Map the corresponding attributes from your unified customer table for the selected key identifier.
    > [!TIP]
    > The best chances for a match occur if you select **Email** as key identifier. Adding additional identifiers may improve the matching.
 

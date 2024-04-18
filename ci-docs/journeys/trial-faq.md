@@ -1,7 +1,7 @@
 ---
 title: Customer Insights - Journeys trial FAQ
 description: Solutions to common questions related to Dynamics 365 Customer Insights trial setup and management. Learn how to resolve platform and app-specific issues.
-ms.date: 10/03/2023
+ms.date: 03/22/2024
 ms.topic: get-started
 ms.custom: template-trial-faq
 author: alfergus
@@ -61,12 +61,18 @@ The following limitations apply for the trial:
 
 Limits and quotas specific to the Customer Insights trial:
 
+- The self-service trial is limited to 1,000 interactions per month. 
+- Customer Insights - Data doesn't allow you to bring your own data lake into the trial. 
 - Your system is constrained by certain limits and quotas that apply to the number of contacts you can market to, monthly email messages you can send, Litmus previews you can view, and more.
 - Familiarize yourself with the terms and limits of the product before you begin to use it. The limits are different based on whether you're running a trial, preview, or subscribed version of the product.
 - For subscribed (paid) versions, download the [Microsoft Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/p/?linkid=866544) and visit the [Fair use policy](fair-use-policy.md) page.
 - For trials, see [Dynamics 365 Customer Insights limits for trials](trial-preview-limits.md).
 
 You can monitor your usage levels by going to  **Settings**  >  **Advanced settings**  >  **Other settings**  >  **Quota limits**  in Customer Insights - Journeys. More information: [Quota limits](quota-management.md).
+
+### What if the trial limits don't meet my needs?
+
+- If you need to test enterprise-scale concepts prior to committing to a long-term agreement, you can directly purchase a month to month subscription and cancel it at the monthly renewal date if you find the application doesn't meet your needs. Visit the [Microsoft Admin Center](https://admin.microsoft.com) and search for **Customer Insights** in the purchase catalog to find the different subscription options.
 
 ### I have an existing Dynamics 365 application license for Sales, Customer Service, or another app and existing production, sandbox, and development environments. Can I put a Customer Insights trial on my paid environment?
 

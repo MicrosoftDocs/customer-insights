@@ -18,7 +18,7 @@ search.audienceType:
 Dynamics 365 Customer Insights - Journeys isn't just for marketers anymore. With AI and natural language input assistance, business users can build trigger-based journeys that reach customers across multiple touch-points, growing relationships from prospects, through sales and support. Customer Insights - Journeys enables organizations to:
 
 - **Engage customers in real time**
-    - With [trigger-based customer journeys](real-time-marketing-trigger-based-journey.md) using [email](real-time-marketing-email.md), [text message](real-time-marketing-outbound-text-messaging.md), or [push notification](real-time-marketing-push-notifications.md) channels, organizations can trigger customer journeys in real time, pick the right channel for each individual, and react to customer-led actions in the moments that matter.
+    - With [trigger-based customer journeys](real-time-marketing-trigger-based-journey.md) using [email](real-time-marketing-email.md), [text message](real-time-marketing-outbound-text-messaging.md), or [push notification](push-messages.md) channels, organizations can trigger customer journeys in real time, pick the right channel for each individual, and react to customer-led actions in the moments that matter.
 - **Win customers and earn loyalty faster**
     - Working across all customer touchpoints, real-time customer journeys are truly an end-to-end experience.
 - **Personalize customer experiences with AI**
@@ -42,7 +42,7 @@ The **who** is your audience – who is this communication for? In Customer Insi
 The **what** is the content and form of your communication - what are you sending? In Customer Insights - Journeys, this can be an *email*, a *push notification*, or a *text message*. These channels can be used separately or together in one campaign. Learn more about channels:
 
 - [Create an email](real-time-marketing-email.md)
-- [Create a push notification](real-time-marketing-push-notifications.md)
+- [Create a push notification](push-messages.md)
 - [Create a text message](real-time-marketing-outbound-text-messaging.md)
 
 The **when** can be as straightforward as a planned time when you want to send the communication, but with Customer Insights - Journeys, it can also be an event that triggers the communication as part of a *journey*. You can combine emails, push notifications, and text messages into journeys that can operate over either a segment of contacts at a planned time or that can respond to a *trigger* to reach customers in the moments that matter. Learn more about journeys:

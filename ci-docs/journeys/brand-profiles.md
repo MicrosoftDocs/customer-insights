@@ -1,7 +1,7 @@
 ---
 title: Create consistent branding with brand profiles in Customer Insights - Journeys
 description: Learn how to create brand profiles in Customer Insights - Journeys.
-ms.date: 12/15/2023
+ms.date: 02/08/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -14,10 +14,6 @@ ms.collection: bap-ai-copilot
 > Unless a style is explicitly set in the element properties, the default style is replaced with the email theme style.
 
 Brand profiles allow you to create consistently branded content efficiently, even if your organization has multiple brands. You can create multiple brand profiles for your organization or profiles for each of your business units. You can also define default senders for emails and set default social links. You can even extend your brand profile entity with custom values that you can use when creating content. This article describes how to create a brand profile.
-
-## How to enable the brand profiles preview
-
-This article refers to a feature that is in preview and may not be enabled in your environment. If you don’t see this feature in your app, contact your admin who can activate it by going to **Settings** > **Other settings** > **Feature switches** > **Email editor** and enabling the **Brand profiles*** feature switch.
 
 ## Create a brand profile
 

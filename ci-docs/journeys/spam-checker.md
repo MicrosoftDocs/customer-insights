@@ -1,7 +1,7 @@
 ---
 title: Use AI to check your message-content spam score
 description: How to check the content of your email messages to see whether they might get flagged as spam by recipient systems in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/23/2023
+ms.date: 03/29/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -22,11 +22,14 @@ There are two ways to view your spam risk:
 
 To manually view and interpret the spam risk for a message:
 
-1. Go to **Outbound marketing** > **Channels** > **Emails**, and then either create or open an email message.
+1. Go to **Outbound marketing** > **Marketing execution** > **Marketing Emails** and then either create or open an email message.
+
+    > [!NOTE]
+    > The spam checker feature is currently only available in outbound marketing.
 
 1. Design your email content as usual using the email designer.
 
-1. Before you go live, open the designer, open the drop down menu to the right of **Check content** in the top toolbar, and select **Spam checker** to run the check on your current content. The check may take a couple of minutes but is usually faster.
+1. Before you go live, open the designer, open the drop-down menu to the right of **Check content** in the top toolbar, and select **Spam checker** to run the check on your current content. The check may take a couple of minutes but is usually faster.
     
     > [!div class="mx-imgBorder"]
     > ![The path to getting spam risk result.](media/spam-checker.png)

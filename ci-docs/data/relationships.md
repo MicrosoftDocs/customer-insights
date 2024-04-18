@@ -1,16 +1,19 @@
 ---
 title: "Relationships between tables and table paths"
 description: "Create and manage relationships between tables from multiple data sources."
-ms.date: 10/03/2023
+ms.date: 03/20/2024
 ms.reviewer: mhart
 ms.topic: conceptual
-author: CadeSanthaMSFT
-ms.author: cadesantha
+author: srivas15
+ms.author:  shsri
+ms.custom: bap-template
 ---
 
 # Relationships between tables and table paths
 
-Relationships connect tables and define a graph of your data when tables share a common identifier, a foreign key. This foreign key can be referenced from one table to another. Connected tables enable the definition of segments and measures based on multiple data sources. A relationship consists of a *source table* containing the foreign key and a *target table* that the source table's foreign key points to.
+Customer data is often spread across multiple tables. It's critical for this data to be connected to each other so you can leverage it for your scenarios. For example, you have a table for users, orders, order details, and products. Let's say you want a segment of all users who placed an order recently. To create this segment, you can't use the *Users* table alone, but would need the *Orders* table and the *Users* table. Your *Users* and *Orders* table must be linked to each other with a key like **userId**. Relationships in Customer Insights - Data let you link your tables together, enabling you to use all of your data across segments and measures and other Customer Insights - Data processes.
+
+Relationships define a graph of your data when tables share a common identifier, a foreign key. This foreign key can be referenced from one table to another. A relationship consists of a *source table* containing the foreign key and a *target table* that the source table's foreign key points to.
 
 There are three types of relationships: 
 - Non-editable system relationships are created by the system as part of the data unification process
@@ -35,7 +38,7 @@ During the data ingestion process, the system checks data sources for existing r
 
 Custom relationships allow you to connect two tables that can then be used together in downstream segments and measures. 
 
-For example, you want to build a segment of all customers who purchased coffee from a store in New York. Your data is stored in 3 tables:
+For example, you want to build a segment of all customers who purchased coffee from a store in New York. Your data is stored in three tables:
 - loyaltyContacts: contains a list of all customers. Columns include LoyaltyId and FullName.
 - Purchases: contains purchase history of all customers. Columns include Timestamp, LoyaltyId, PurchasePrice, and StoreId.
 - Stores: contains more details about each store. Columns include StoreId, StoreSize, and StoreLocation.
@@ -102,7 +105,7 @@ For example, the table *eCommerce_eCommercePurchases* has the following relation
 - eCommerce_eCommercePurchases > eCommerce_eCommerceContacts > POS_posPurchases > Customer
 - eCommerce_eCommercePurchases > eCommerce_eCommerceContacts > POS_posPurchases > loyaltyScheme_loyCustomers > Customer
 
-A relationship path determines which tables you can use when creating rules for measures or segments. Choosing the option with the longest relationship path will likely yield fewer results because the matching records need to be part of all tables. In this example, a customer has to have purchased goods through e-commerce(eCommerce_eCommercePurchases) at a point of sale(POS_posPurchases) and participate in our loyalty program (loyaltyScheme_loyCustomers). When choosing the first option, you'd likely get more results because customers only need to exist in one additional table.
+A relationship path determines which tables you can use when creating rules for measures or segments. Choosing the option with the longest relationship path will likely yield fewer results because the matching records need to be part of all tables. In this example, a customer has to have purchased goods through e-commerce(eCommerce_eCommercePurchases) at a point of sale(POS_posPurchases) and participate in our loyalty program (loyaltyScheme_loyCustomers). When choosing the first option, you'd likely get more results because customers only need to exist in one other table.
 
 ### Direct relationship
 
@@ -122,7 +125,7 @@ For example, if an activity table called *eCommerce_eCommercePurchases* relates 
 
 ### Indirect relationship
 
-A relationship is classified as an **indirect relationship** when a source table relates to one or more additional tables before relating to a target table.
+A relationship is classified as an **indirect relationship** when a source table relates to one or more other tables before relating to a target table.
 
 #### Multi-hop relationship
 

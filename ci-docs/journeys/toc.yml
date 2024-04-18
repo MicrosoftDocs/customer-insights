@@ -50,6 +50,8 @@
       href: transition-walkthrough-segments.md
     - name: Consent
       href: transition-walkthrough-consent.md
+    - name: Consent management and double opt-in
+      href: real-time-marketing-consent-transition.md
     - name: Marketing pages and forms
       href: transition-walkthrough-forms.md
     - name: Event management
@@ -96,6 +98,8 @@
     href: role-permissions.md
   - name: Integrate with Dynamics 365 Customer Insights - Data
     href: ci-get-started.md
+  - name: Create consistent branding with brand profiles
+    href: brand-profiles.md  
   - name: Import data
     href: import-data.md
   - name: Export data
@@ -106,18 +110,6 @@
       href: domain-authentication.md
     - name: BIMI support
       href: bimi-support.md
-  - name: Privacy and compliance
-    items:
-    - name: Manage consent for email and text messages
-      href: real-time-marketing-email-text-consent.md
-    - name: Preference centers
-      href: real-time-marketing-preference-centers.md
-    - name: Consent management and double opt-in transition guidance
-      href: real-time-marketing-consent-transition.md
-    - name: Migrate consent records to Customer Insights - Journeys
-      href: real-time-marketing-migrate-consent.md
-    - name: Use outbound subscription centers in Customer Insights - Journeys
-      href: real-time-marketing-outbound-subscription.md
   - name: Business units
     items:
     - name: Business unit support in Customer Insights - Journeys
@@ -150,18 +142,24 @@
           href: content-rewrite.md
         - name: "Preview: Copilot - Style your emails with AI-assisted themes"
           href: email-theme.md
+        - name: Use brand profiles in email
+          href: brand-profiles-email.md
+        - name: Import outbound emails, templates, and content blocks to Customer Insights - Journeys
+          href: real-time-marketing-import-email-to-real-time.md 
+      - name: Enhance your email
+        items:
+        - name: Use QR codes for event registration, links to content, or URLs
+          href: email-QR-Code.md
+        - name: "Preview: Use enhanced HTML controls and import HTML snippets"
+          href: email-creation-with-html-edits.md
+        - name: Use custom fonts in emails
+          href: use-custom-fonts.md
+        - name: "Preview: Exclude bot interactions"
+          href: bot-protection.md
         - name: Enhance email engagement by allowing browser viewing
           href: view-email-in-browser.md  
         - name: Generate iCalendar files for events and sessions
           href: add-to-calendar.md
-        - name: Use brand profiles in email
-          href: brand-profiles-email.md
-        - name: Create consistent branding with brand profiles
-          href: brand-profiles.md
-        - name: Use custom fonts in Customer Insights - Journeys
-          href: use-custom-fonts.md
-        - name: Import outbound emails, templates, and content blocks to Customer Insights - Journeys
-          href: real-time-marketing-import-email-to-real-time.md 
       - name: Prepare to send your email
         items:
         - name: Set the sender, receiver, language, and legal designation
@@ -193,7 +191,7 @@
       - name: Set up an automated text message keyword flow
         href: set-up-automated-sms-keyword-flow.md
     - name: Push notifications
-      href: real-time-marketing-push-notifications.md
+      href: push-messages.md
     - name: Create custom channels
       href: real-time-marketing-create-custom-channels.md
     - name: Use AI-driven run-time channel optimization
@@ -236,12 +234,18 @@
           href: unified-profile-segment-creation.md
         - name: Create a static snapshot of a segment
           href: real-time-marketing-static-snapshot.md
+      - name: Best practices for outbound segments in real-time journeys
+        href: outbound-marketing-segments-in-customer-insights-journeys.md
+      - name: Use Customer Insights - Data profiles and segments
+        href: real-time-marketing-ci-profile.md      
       - name: Create a segment-based journey
         href: real-time-marketing-segment-based-journey.md
-      - name: Use Customer Insights - Data profiles and segments
-        href: real-time-marketing-ci-profile.md
+      - name: Automatic segment management
+        href: auto-segment-management.md
       - name: Individually manage your customer list
         href: real-time-marketing-include-exclude.md
+      - name: "Troubleshooting: Segments show incorrect member count"
+        href: segment-member-count.md
     - name: Journey goals and A/B testing
       items:
       - name: Set a business goal and measure progress through a journey
@@ -274,10 +278,14 @@
         href: real-time-marketing-branches.md
       - name: Customize the journey designer
         href: real-time-marketing-journey-designer.md
+    - name: Known issues for journeys
+      href: journey-known-issues.md
   - name: Event planning and management
     items:
     - name: Event management overview
       href: event-management.md
+    - name: Enable event management in real-time journeys
+      href: enable-events.md
     - name: Create an event
       items:
       - name: Open the event management work area
@@ -348,6 +356,8 @@
       href: real-time-marketing-cross-journey-analytics.md
     - name: How to use aggregate channel analytics
       href: real-time-marketing-channel-analytics.md
+    - name: "Preview: Customer Insights - Journeys integration with Microsoft Fabric"
+      href: fabric-integration.md
     - name: "Preview: Marketing effectiveness analytics"
       href: real-time-marketing-effectiveness.md
     - name: Track campaigns with UTM codes
@@ -368,6 +378,26 @@
       href: real-time-marketing-personalize-lists.md
     - name: Preview personalized content
       href: real-time-marketing-preview-personalized-content.md
+  - name: Privacy and compliance
+    items:
+    - name: Consent management overview
+      href: real-time-marketing-compliance-settings.md
+    - name: Customize your preference centers
+      href: real-time-marketing-preference-centers.md
+    - name: One-click unsubscribe support for emails
+      href: one-click-unsubscribe.md    
+    - name: Use outbound subscription centers in real-time journeys
+      href: real-time-marketing-outbound-subscription.md    
+    - name: Migrate consent records to real-time journeys
+      href: real-time-marketing-migrate-consent.md
+    - name: Consent management for business units
+      href: real-time-marketing-consent-business-units.md
+    - name: Create consent records using a cloud flow
+      href: consent-record-creation.md
+    - name: Manage consent for email and text messages
+      href: real-time-marketing-email-text-consent.md
+    - name: Add a contactability grid control to custom forms
+      href: contactability-control-custom-forms.md
   - name: Image, file, and video assets
     items:
     - name: Use images, files, and videos in your content
@@ -398,6 +428,16 @@
       href: real-time-marketing-custom-channel-custom-API.md
     - name: 7. Define your channel definition
       href: real-time-marketing-define-channel-definition.md
+  - name: Push notification setup for application developers
+    items:
+    - name: User mapping for application developers
+      href: developer-push-user-mapping.md
+    - name: Device registration for application developers
+      href: developer-push-device-registration.md
+    - name: Receive push notifications on mobile devices
+      href: developer-notifications.md
+    - name: Implement push notification interaction tracking
+      href: developer-push-interactions.md
   - name: Extend forms functionality
     items:
     - name: Client-side extensibility for forms
@@ -410,12 +450,6 @@
       href: developer/extend-ui.md
   - name: Reference guide for Customer Insights - Journeys interactions
     href: real-time-marketing-interactions-reference.md
-  - name: Push notification setup for application developers
-    href: real-time-marketing-developer-push.md
-  - name: Receive notifications and create interactions
-    href: real-time-marketing-developer-notifications.md
-  - name: Create a consent record using a cloud flow
-    href: consent-record-creation.md
   - name: Create a Customer Insights - Journeys segment using the Web API
     href: real-time-marketing-api-segment.md
   - name: Use binding IDs to correlate across triggers
@@ -472,14 +506,18 @@
       href: real-time-marketing-audience-data.md
     - name: Customer Insights - Journeys link tracking mechanics
       href: real-time-marketing-link-tracking-mechanics.md
-  - name: Text message and push notification setup
+  - name: Text message setup
     items:
     - name: Set up text messaging
       href: real-time-marketing-text-messaging-setup.md
     - name: Manage SMS (text message) keywords used in customer journeys
       href: manage-sms-keywords.md
-    - name: Set up push notifications
-      href: real-time-marketing-push-notifications-setup.md
+  - name: Push notification setup
+    items:
+    - name: Overview for application developers
+      href: push-setup-overview.md
+    - name: Set up push notification applications
+      href: push-notifications-setup.md
   - name: Email administration
     items:
     - name: Get started with email
@@ -530,22 +568,12 @@
       href: customize-marketing-calendars.md
     - name: Create and customize template labels
       href: customize-template-labels.md
-    - name: Customize the email designer
-      href: developer/email-designer-customization.md
-  - name: Privacy and compliance
+  - name: Data compliance
     items:
-    - name: Compliance overview
-      href: compliance-overview.md
-    - name: Manage user compliance settings
-      href: real-time-marketing-compliance-settings.md
-    - name: Use privacy features
-      href: privacy-use-features.md
     - name: Data subject request (DSR) handling
       href: dsr-handling.md
     - name: Anonymized customer data human review notice
       href: anonymized-data-review.md
-    - name: One-click unsubscribe support for emails
-      href: one-click-unsubscribe.md
   - name: Maintain the Customer Insights - Journeys app
     items:
     - name: Recurring activity bulk deletion
@@ -578,6 +606,8 @@
   items:
   - name: Overview
     href: responsible-ai-overview.md
+  - name: Responsible AI FAQs for the Customer Insights - Journeys copilot preview
+    href: faqs-copilot-general.md
   - name: Responsible AI FAQs for content ideas
     href: faqs-content-ideas.md
   - name: Responsible AI FAQs for the segment copilot
@@ -982,6 +1012,8 @@
         href: developer/filter-cities.md
       - name: Extend outbound marketing forms using code
         href: developer/marketing-form-client-side-extensibility.md
+    - name: Customize the email designer
+      href: developer/email-designer-customization.md
     - name: Work with segments using code
       href: developer/extend-segments.md
     - name: Export Dynamics 365 Customer Voice survey responses to Microsoft Excel

@@ -35,20 +35,24 @@
       href: data-sources.md
     - name: Add a data source
       items:
-       - name: Get started with using a single data source
+       - name: Get started with a single data source
          href: data-sources-single.md
-       - name: Connect to data in Azure Data Lake Storage
-         href: connect-common-data-model.md
-       - name: Connect to an Azure Data Lake Storage account by using a Microsoft Entra service principal
-         href: connect-service-principal.md
+       - name: Connect to Azure Data Lake Storage
+         items:
+          - name: Connect to Common Data Model tables
+            href: connect-common-data-model.md
+          - name: Connect to Delta tables
+            href: connect-delta-lake.md
+          - name: Connect using a Microsoft Entra service principal
+            href: connect-service-principal.md
        - name: Connect to Azure Synapse Analytics
          href: connect-synapse.md
-       - name: Connect to data in Microsoft Dataverse
+       - name: Connect to Microsoft Dataverse
          href: connect-dataverse.md
-       - name: Connect to data in Azure Data Lake Storage - Delta Lake
-         href: connect-delta-lake.md
-       - name: Add a data sources via Power Query connectors
+       - name: Add data via Power Query connectors
          href: connect-power-query.md
+    - name: Update data source to use Delta tables
+      href: convert-datalake-to-deltalake.md
     - name: Manage existing data sources
       href: data-sources-manage.md
     - name: Enrichment for data sources
@@ -113,8 +117,6 @@
       href: enrichment-liveramp.md
     - name: Location from Azure Maps
       href: enrichment-azure-maps.md
-    - name: Location from HERE Technologies
-      href: enrichment-here.md
     - name: SFTP custom import
       href: enrichment-SFTP-custom-import.md
 
@@ -341,6 +343,8 @@
       href: user-roles.md
     - name: Bring your own Key Vault
       href: use-azure-key-vault.md
+    - name: Use customer-managed keys
+      href: customer-managed-keys.md
     - name: Securely access customer data with Customer Lockbox
       href: security-lockbox.md
     - name: Set up an Azure Private Link
@@ -369,7 +373,9 @@
   items:
     - name: Integrate with Customer Insights - Journeys
       href: marketing-get-started.md
-    - name: Integrate with other Dynamics 365 applications
+    - name: Enrich Sales' lead summaries
+      href: lead-profile-summary.md
+    - name: Automatically link Dynamics 365 apps to customer profiles
       href: integrate-d365-apps.md
 
 - name: APIs
@@ -405,6 +411,8 @@
       href: faqs-docs-qna.md
     - name: FAQs for segment creation
       href: faqs-segment-creation.md
+    - name: FAQ for customer insights in Sales lead summaries
+      href: faqs-profile-summary.md
 
 - name: More resources
   items:

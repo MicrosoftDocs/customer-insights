@@ -1,7 +1,7 @@
 ---
 title: Create segments with Copilot for Customer Insights - Data (preview)
 description: Let Copilot in Customer Insights - Data help you in creating segments based on data in your environment.
-ms.date: 10/11/2023
+ms.date: 01/08/2024
 ms.reviewer: mhart
 ms.topic: how-to
 author: JimsonChalissery
@@ -27,7 +27,7 @@ Create segments using everyday words in Dynamics 365 Customer Insights - Data wi
 
 Copilot provides personalized, suggested prompts based on data in your environment to help you get started. Describe the segment you want and Copilot helps you create it. For example, a simple segment: All customers that live in Seattle, Washington. You can also create segments based on existing measures: All customers that have a lifetime value of at least 500 and also purchased an item within the past 30 days.
 
-1. In Customer Insights - Data, go to **Insights** > **Segments** and select **New** to create a segment.
+1. In Customer Insights - Data, go to **Insights** > **Segments** and select **New** > **Build your own** to create a segment.
 
 1. Select the Copilot icon (:::image type="icon" source="media/copilot-icon.png" border="false":::) to open the **Copilot** pane.
 
@@ -35,7 +35,13 @@ Copilot provides personalized, suggested prompts based on data in your environme
 
 1. Select **Use** to apply the result to a rule.
 
-:::image type="content" source="media/segment-copilot-result.png" alt-text="Screenshot of a segment rule created by Copilot in Customer Insights - Data.":::
+   :::image type="content" source="media/segment-copilot-result.png" alt-text="Screenshot of a segment rule created by Copilot in Customer Insights - Data.":::
+
+1. To create the segment:
+
+   1. Select **Edit details** next to Untitled segment. Provide a name for your segment and update the suggested **Output table name** for the segment. Optionally, add a description and [tags](work-with-tags-columns.md#manage-tags) to the segment.
+
+   1. To save the configuration, select **Save** and then **Close**. The segment is in draft mode or inactive so you can make changes to the configuration before actually creating the segment. Or, select **Run** to save and create the segment.
 
 If the resulting segment contains multiple [relationship paths](relationships.md), it uses the shortest path by default. **Edit** the segment to change the relationship path.  
 

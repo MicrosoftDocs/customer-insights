@@ -33,7 +33,6 @@ Go to **Data** > **Enrichment**. The **Discover** tab shows all supported enrich
 - [Enhanced addresses](enrichment-enhanced-addresses.md) provided by Microsoft
 - [Interests](enrichment-microsoft.md) provided by Microsoft
 - [Location data](enrichment-azure-maps.md) provided by Microsoft Azure Maps
-- [Location data](enrichment-here.md) provided by HERE Technologies
 - [SFTP custom data](enrichment-SFTP-custom-import.md) through Secure File Transfer Protocol (SFTP)
 
 ## Manage existing enrichments
