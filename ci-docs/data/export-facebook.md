@@ -65,11 +65,9 @@ Export segments of unified customer profiles to Facebook Ads Manager to create c
 
 1. Enter a name for the export.
 
-1. Enter the **Facebook Ads custom audience ID**, this defines which audience this export will update. You can see the audience ID in Facebook ads manager on the audience page, then choose columns and choose to display it in the table.
+1. Enter the **Facebook Ads custom audience ID**, this defines which audience this export will update. We display the FB ads account name and ID which are defined in the connection you have choosen, please add an audience for that account. To find the audience ID in Facebook ads manager, go to the audience page, then choose columns and choose to display it in the table.
 
-1. In the **Connect data** field, select **Email**, **Name and address**, or **Phone** to send to Facebook Ads Manager.
-
-1. Map the corresponding attributes from your unified customer table for the selected key identifier.
+1. In the **Connect data** field, select **Email**, **Name and address**, or **Phone** to send to Facebook Ads Manager. Map the corresponding attributes from your unified customer table for the selected key identifier.
    > [!TIP]
    > The best chances for a match occur if you select **Email** as key identifier. Adding additional identifiers may improve the matching.
 
