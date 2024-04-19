@@ -1,7 +1,7 @@
 ---
 title: Transition segments, emails, journeys, and assets
 description: Learn how to transition segments, emails, journeys, and assets from outbound marketing to real-time journeys in Dynamics 365 Customer Insights - Journeys.
-ms.date: 11/16/2023
+ms.date: 04/18/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -31,7 +31,7 @@ While reviewing the imported emails, it's worth considering whether you should s
 
 Journeys in real-time journeys are the equivalent to customer journeys in outbound marketing. Journeys are the container that define the sequence of marketing actions that contacts are involved in. The underlying architecture for journeys in the real-time journeys module is fundamentally different from outbound marketing, which is why journeys can't be transferred automatically and manual recreation of the journey is required.
 
-Using quiet times you can control when messages get delivered, increasing engagement and meeting customer preferences. Quiet times allow you to comply with regulations by only reaching customers at their preferred times or prevent nighttime, weekend, or holiday deliveries. Learn more: [Improve communication timing by setting up quiet times](real-time-marketing-quiet-times.md)
+Using quiet times, you can control when messages get delivered, increasing engagement and meeting customer preferences. Quiet times allow you to comply with regulations by only reaching customers at their preferred times or by preventing nighttime, weekend, or holiday deliveries. Learn more: [Improve communication timing by setting up quiet times](real-time-marketing-quiet-times.md)
 
 ## Asset library
 
