@@ -448,8 +448,8 @@
       href: real-time-marketing-form-custom-captcha.md
     - name: Customize the Customer Insights - Journeys forms interface
       href: developer/extend-ui.md
-  - name: Reference guide for Customer Insights - Journeys interactions
-    href: real-time-marketing-interactions-reference.md
+  - name: Extend and customize consent
+    href: extend-consent.md
   - name: Create a Customer Insights - Journeys segment using the Web API
     href: real-time-marketing-api-segment.md
   - name: Use binding IDs to correlate across triggers
