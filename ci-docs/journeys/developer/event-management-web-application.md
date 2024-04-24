@@ -86,6 +86,7 @@ Select the version you would like to download from the table below.
 
 | Name | Release | Changes | Uploaded |
 |--|--|--|--|
+|Sample Event Website| 1.60.0 (May-release)|- Performance improvements for event portal website. <br/>- Minor improvements and bug fixes.| [Download](https://download.microsoft.com/download/1/5/0/150757D0-2600-493B-8C9A-3213AD873A73/240419-EventWebsite.zip) |
 |Sample Event Website| 1.56.0 (December-release)|- Fixed waitlisting issue. <br/>- Minor improvements and bug fixes.| [Download](https://download.microsoft.com/download/1/5/0/150757D0-2600-493B-8C9A-3213AD873A73/231205-EventWebsite.zip) |
 |Sample Event Website| 1.46.0 (September release)|- Fix accessibility issues. <br/>- Minor improvements and bug fixes.| [Download](https://download.microsoft.com/download/1/5/0/150757D0-2600-493B-8C9A-3213AD873A73/220921-EventWebsite.zip) |
 |Sample Event Website| 1.34.0 (April release)| - Minor improvements and bug fixes.| [Download](https://download.microsoft.com/download/1/5/0/150757D0-2600-493B-8C9A-3213AD873A73/210413_EventWebsite.zip) |
