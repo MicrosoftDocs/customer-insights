@@ -1,7 +1,7 @@
 ---
 title: Troubleshooting Customer Insights - Journeys forms
 description: Learn how to troubleshoot forms in Dynamics 365 Customer Insights - Journeys.
-ms.date: 02/26/2024
+ms.date: 04/26/2024
 ms.topic: article
 author: petrjantac
 ms.author: alfergus
@@ -25,11 +25,11 @@ This feature uploads a page with form on CDN. If the operation fails, try to run
 
 ## Form editor removed my custom JavaScript or other custom code from the HTML body
 
-With version **1.1.38813.80 or newer**, you can add JavaScript code into the `<body>` section of the HTML. If you add JavaScript into `<head>` section, it is automatically moved to the top of the `<body>` section.
+With Customer Insights - Journeys version **1.1.38813.80 or newer**, you can add JavaScript code into the `<body>` section of the HTML. If you add JavaScript into the `<head>` section, it's automatically moved to the top of the `<body>` section.
 
-With version **older than 1.1.38813.80** you can add custom JavaScript code only to the `<head>` section of the HTML source code using the HTML editor. If the code JavaScript code is placed inside the `<body>` section, the form editor automatically removes the code without any warning.
+With Customer Insights - Journeys version **older than 1.1.38813.80**, you can add custom JavaScript code only to the `<head>` section of the HTML source code using the HTML editor. If the code JavaScript code is placed inside the `<body>` section, the form editor automatically removes the code without warning.
 
-To follow the security best practices, the form editor can remove unknown code from the body. [Learn more](real-time-marketing-manage-forms.md#add-custom-javascript-to-your-form) about how to customize your form using JavaScript.
+To follow security best practices, the form editor can remove unknown code from the body. [Learn more](real-time-marketing-manage-forms.md#add-custom-javascript-to-your-form) about how to customize your form using JavaScript.
 
 ## My form submission failed. How do I resubmit the submission?
 
