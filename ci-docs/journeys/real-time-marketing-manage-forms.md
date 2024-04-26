@@ -1,7 +1,7 @@
 ---
 title: Manage Customer Insights - Journeys forms
 description: Learn how to manage forms in Dynamics 365 Customer Insights - Journeys.
-ms.date: 01/16/2024
+ms.date: 04/26/2024
 ms.topic: article
 author: petrjantac
 ms.author: alfergus
@@ -184,12 +184,12 @@ You can change the CSS class definitions in the HTML editor. Editing CSS allows 
 ### Add custom JavaScript to your form
 
 > [!IMPORTANT]
-> With version **1.1.38813.80 or newer**, you can add JavaScript code into the `<body>` section of the HTML. If you add JavaScript into `<head>` section, it is automatically moved to the top of the `<body>` section. The `<script>` tag is automatically renamed to `<safe-script>` to prevent script execution in the form editor. The `<safe-script>` tag is then automatically renamed back to `<script>` in the final form HTML served by the formLoader script.
+> With Customer Insights - Journeys version **1.1.38813.80 or newer**, you can add JavaScript code into the `<body>` section of the HTML. If you add JavaScript into `<head>` section, it's automatically moved to the top of the `<body>` section. The `<script>` tag is automatically renamed `<safe-script>` to prevent script execution in the form editor. The `<safe-script>` tag is then automatically renamed back to `<script>` in the final form HTML served by the formLoader script.
 
 > [!IMPORTANT]
-> With version **older than 1.1.38813.80** you can add custom JavaScript code only to the `<head>` section of the HTML source code using the HTML editor. If the code JavaScript code is placed inside the `<body>` section, the form editor automatically removes the code without any warning.
+> With Customer Insights - Journeys version **older than 1.1.38813.80**, you can add custom JavaScript code only to the `<head>` section of the HTML source code using the HTML editor. If the code JavaScript code is placed inside the `<body>` section, the form editor automatically removes the code without warning.
 
-All `onEvent`HTML attributes triggering execution of JavaScript code like `onClick`, `onChange`, etc. are automatically sanitized (removed from the code).
+All `onEvent` HTML attributes triggering execution of JavaScript code like `onClick` or `onChange` are automatically sanitized (removed from the code).
 
 The following example is **not supported**:
 
@@ -197,7 +197,7 @@ The following example is **not supported**:
 <button onClick="runMyFunction()">
 ```
 
-You can place the EventListeners inside the JavaScript code to trigger execution of JavaScript functions, as you can see in the following examples.
+As shown in the examples below, you can place the EventListeners inside the JavaScript code to trigger the execution of JavaScript functions.
 
 #### Example 1: Update the value of the form field using values of other form fields
 
