@@ -1,7 +1,7 @@
 ---
 title: Set up a subscription center
 description: How to create subscription lists and add them to a subscription center in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/23/2023
+ms.date: 04/26/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -54,9 +54,22 @@ To find, customize, and view the default subscription center:
 1. Select **Save** when you are done customizing. The page automatically publishes your changes and returns to the live state.
 
 > [!IMPORTANT]
-> Never delete the default subscription center page! This is the only page that is published on the service fabric rather than on a portal or external site. There is no way to create a new page that is published in this way, so if you delete the default subscription center, you'll need to create an alternative on your portal or external site.
+> Never delete the default subscription center page. The default subscription center is the only page that's published on the service fabric rather than on a portal or external site. There's no way to create a new page that's published in this way, so if you delete the default subscription center, you need to create an alternative on your portal or external site, or through a manual workaround.
 
-As with all marketing pages, the subscription form on the default marketing page is a marketing form that is defined separately and placed on the page using a form design element. You can edit the form directly and don't need to open the page to do so. To find, customize, and view the default subscription form:
+#### Manual workaround to reprovision a subscription center outside of the portal for outbound marketing
+
+1. To open the marketing page list, go to **Outbound marketing** > **Internet marketing** > **Marketing pages**.
+1. Create a new marketing page, make sure the type is **Subscription center**, and save it (don't go live yet).
+1. Take note of the marketing page ID. The page ID is the highlighted part in the following URL: `https://yourorg.crm.dynamics.com/main.aspx?appid=06fdc062-36fc-ee11-9f89-000d3a33584b&pagetype=entityrecord&etn=msdyncrm_marketingpage&id=**`ac15f536-6d02-ef11-9f89-6045bd011505`**
+1. Open the developer console by pressing <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>I</kbd>.
+1. Enter the following command in the developer console: `Xrm.WebApi.updateRecord("msdyncrm_marketingpage", "ac15f536-6d02-ef11-9f89-6045bd011505", { "msdyncrm_forceportalless": true })` and press <kbd>Enter</kbd>.
+   > [!NOTE]
+   > Replace `ac15f536-6d02-ef11-9f89-6045bd011505` with your marketing page ID.
+1. After the command is finished, reload the page in your browser and go live with the marketing page.
+
+#### Make edits to the default subscription form
+
+As with all marketing pages, the subscription form on the default marketing page is a marketing form that's defined separately and placed on the page using a form design element. You can edit the form directly and don't need to open the page to do so. To find, customize, and view the default subscription form:
 
 1. Go to **Outbound marketing** > **Internet marketing** > **Marketing forms** to open a list of available marketing forms.
 1. Find the form called **Default Subscription Center Form** in the list. This is the default subscription form.
