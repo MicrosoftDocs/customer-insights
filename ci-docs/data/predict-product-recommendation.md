@@ -1,27 +1,32 @@
 ---
 title: "Predict product recommendations (preview)"
 description: "Predict the products a customer is likely to purchase or interact with."
-ms.date: 10/09/2023
+ms.date: 01/12/2024
 ms.reviewer: mhart
 ms.topic: how-to
 author: joytaylor
 ms.author: joytaylor
 ms.custom: bap-template
+ms.collection: bap-ai-copilot 
 ---
 
 # Predict product recommendations (preview)
 
 [!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
-
 The product recommendation model creates sets of predictive product recommendations. Recommendations are based on previous purchase behavior and customers with similar purchase patterns. You must have business knowledge on the different types of products for your business and how your customers interact with them. We support recommending products that your customers have previously purchased or recommendations for new products.
+
+The product recommendation model helps you:
+- Recommend other products to go with a purchase
+- Reach out to customers with products they might be interested in
+- Improve discovery with other relevant products and services
+- Create personalized customer experiences
 
 Product recommendations might be subject to local laws and regulations and customer expectations, which the model isn't built to specifically take into account. Therefore, **you must review the recommendations prior to delivering them to your customers** to ensure you're complying with any applicable laws or regulations, and customer expectations for what you might recommend.
 
 The output of this model provides recommendations based on the product ID. Your delivery mechanism must map the predicted product IDs to appropriate content for your customers to account for localization, image content, and other business-specific content or behavior.
 
-For example, Contoso wants to increase their revenue by customizing webpages to show more products and services customers might enjoy. They're able to create customer-specific product recommendations from the product recommendation model and feed the data to their site. Consoto is able to upsell their customers by encouraging them to view products and services similar to ones they have purchased before, increasing revenue. 
+For example, Contoso wants to increase their revenue by customizing webpages to show more products and services customers might enjoy. They're able to create customer-specific product recommendations from the product recommendation model and feed the data to their site. Contoso is able to upsell their customers by encouraging them to view products and services similar to ones they have purchased before, increasing revenue. 
 
 
 > [!TIP]
@@ -75,7 +80,7 @@ Select **Save draft** at any time to save the prediction as a draft. The draft p
 
 1. Select **Add data**  for **Customer transaction history**.
 
-1. Select the semantic activity type **SalesOrderLine** that contains the required transaction or purchase history information. If the activity hasn't been set up, select **here** and create it.
+1. Select the semantic activity type **SalesOrderLine** that contains the required transaction or purchase history information. If the activity isn't set up, select **here** and create it.
 
 1. Under **Activities**, if the activity attributes were semantically mapped when the activity was created, choose the specific attributes or table you'd like the calculation to focus on. If semantic mapping didn't occur, select **Edit** and map your data.
 
@@ -142,7 +147,7 @@ There are five primary sections of data within the results page.
   - **B** when the "Success @ K" metric is 0% to 10% more than the baseline.
   - **C** when the "Success @ K" metric is less than the baseline.
   - **Baseline**: The top most recommended products by purchase count across all customers + learned rules identified by the model = a set of recommendations for the customers. The predictions are then compared to the top products, as calculated by the number of customers that purchased the product. If a customer has at least one product in their recommended products that was also seen in the top purchased products, they're considered a part of the baseline. For example, if 10 of these customers had a recommended product purchased out of 100 total customers, the baseline is 10%.
-  - **Success @ K**: Recommendations are created for all customers and compared against the validation set of time period of transactions. For example, in a 12-month period, month 12 is set aside as a validation set of data. If the model predicts at least one thing you would purchase in month 12 based on what it learned from the previous 11 months, the customer would increase the "Success @ K" metric.
+  - **Success @ K**: Recommendations are created for all customers and compared against the validation set of time period of transactions. For example, in a 12-month period, month 12 is set aside as a validation set of data. If the model predicts at least one thing you would purchase in month 12 based on what it learned from the previous 11 months, the customer increases the "Success @ K" metric.
 
 - **Most suggested products (with tally):** The top five products that were predicted for your customers.
   
@@ -151,10 +156,10 @@ There are five primary sections of data within the results page.
 - **Key recommendation factors:** The model uses the customers' transaction history to make product recommendations. It learns patterns based on past purchases and finds similarities between customers and products. These similarities are then utilized to generate product recommendations.
   The following factors could influence a product recommendation generated by the model.
   - **Past transactions**: A recommended product was based on past purchase patterns. For example, the model can recommend a *Surface Arc Mouse* if someone recently purchased a *Surface Book 3* and a *Surface Pen*. The model learned that historically, many customers purchased a *Surface Arc Mouse* after purchasing a *Surface Book 3* and a *Surface Pen*.
-  - **Customer similarity**: A recommended product was historically purchased by other customers who show similar purchase patterns. For example, John was recommended *Surface Headphones 2* because Jennifer and Brad recently purchased *Surface Headphones 2*. The model believes John is similar to Jennifer and Brad because they have historically had similar purchase patterns.
-  - **Product similarity**: A recommended product is similar to other products that the customer previously purchased. The model considers two products to be similar if they were bought together or by similar customers. For example, someone gets a recommendation for a *USB Storage Drive* because they previously purchased a *USB-C to USB Adapter* and the model believes that *USB Storage Drive* is similar to *USB-C to USB Adapter* based on historical purchase patterns.
+  - **Customer similarity**: A recommended product is historically purchased by other customers who show similar purchase patterns. For example, John was recommended *Surface Headphones 2* because Jennifer and Brad recently purchased *Surface Headphones 2*. The model believes John is similar to Jennifer and Brad because they historically have similar purchase patterns.
+  - **Product similarity**: A recommended product is similar to other products that the customer previously purchased. The model considers two products to be similar if they were bought together or by similar customers. For example, someone gets a recommendation for a *USB Storage Drive* because they previously purchased a *USB-C to USB Adapter*. The model believes that *USB Storage Drive* is similar to *USB-C to USB Adapter* based on historical purchase patterns.
 
-  Every product recommendation is influenced by one or more of these factors. The percentage of recommendations where each influencing factor played a role is visualized in a chart. In the following example, 100% of the recommendations were influenced by past transactions, 60% by customer similarity and 22% by product similarity. Hover over the bars in the chart to see the exact percentage where the influencing factors contributed.
+  One or more of these factors influence every product recommendation. The percentage of recommendations where each influencing factor played a role is visualized in a chart. In the following example, 100% of the recommendations are influenced by past transactions, 60% by customer similarity and 22% by product similarity. Hover over the bars in the chart to see the exact percentage where the influencing factors contributed.
   
   :::image type="content" source="media/product-recommendation-keyrecommendationfactors.png" alt-text="Key recommendation factors learned by the model to generate product recommendations.":::
 

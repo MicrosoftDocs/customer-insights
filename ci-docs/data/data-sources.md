@@ -1,7 +1,7 @@
 ---
 title: "Data sources overview"
 description: "Learn how to import or ingest data from various sources."
-ms.date: 10/02/2023
+ms.date: 03/27/2024
 ms.topic: overview
 author: mukeshpo
 ms.author: mukeshpo
@@ -10,8 +10,6 @@ ms.custom: bap-template
 ---
 
 # Data sources overview
-
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
 Dynamics 365 Customer Insights - Data provides connections to bring data from a broad set of sources. Connecting to a data source is often referred to as the process of *data ingestion*. After ingesting the data, you can [unify](data-unification.md), generate insights, and activate the data for building personalized experiences.
 
@@ -29,13 +27,27 @@ If you have data prepared in one of Microsoft's Azure data services, you can eas
 
 - [Azure Data Lake Storage (csv or parquet files in a Common Data Model folder)](connect-common-data-model.md)
 - [Azure Synapse Analytics (Lake databases)](connect-synapse.md)
-- [Microsoft Dataverse data lake](connect-dataverse.md)
-- [Delta Lake format from Azure Data Lake Storage (preview)](connect-delta-lake.md)
+- [Microsoft Dataverse](connect-dataverse.md)
+- [Delta tables in Azure Data Lake Storage (preview)](connect-delta-lake.md)
 
 **Import and transform**
 
 If you use on-premises data sources, Microsoft, or third-party data, import and transform the data using Power Query connectors.
 - [Power Query connectors](connect-power-query.md)
+
+## Data profiling
+
+With data profiling, Customer Insights - Data looks at the frequency of values in a column and provides data to help you identify commonly duplicated values. When you have large numbers of duplicate values on a column that is expected to be unique, such as Email or Phone, it can skew your unification results. Enable data profiling when you add your Azure Data Lake, Delta tables, or Azure Synapse data sources.
+
+After you have ingested the data, view the results of data profiling to look for duplicate values and also see analytics of your data. To view the results:
+
+Go to **Data** > **Tables** and select a table. Select the **Summary** icon for a field, such as DateOfBirth.
+
+   :::image type="content" source="media/tables-summary-icon.png" alt-text="Tables page showing Summary icon highlighted on DateOfBirth.":::
+
+View the details for any errors or missing values.
+
+   :::image type="content" source="media/tables-dateofbirth.png" alt-text="Summary graph for DateOfBirth.":::
 
 ## Data sources page
 
@@ -51,5 +63,6 @@ If your environment was configured to use the default system storage and you use
 
 - [Manage data sources](data-sources-manage.md)
 - [Unify data sources](data-unification.md)
+- [FastTrack blog: Data integration patterns - introduction](https://community.dynamics.com/blogs/post/?postid=f32d115e-d9cb-ee11-92bd-000d3a7e795a)
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

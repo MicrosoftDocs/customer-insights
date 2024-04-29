@@ -1,7 +1,7 @@
 ---
 title: Basic operations on segments using API in outbound marketing
 description: Learn how to use the segmentation API in outbound marketing.
-ms.date: 06/12/2019
+ms.date: 12/22/2023
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
@@ -31,8 +31,6 @@ This topic demonstrates how to perform basic operations on **msdyncrm_segment** 
 |Segment Type|msdyncrm_segmenttype|Type of segment. There are 3 types of segments:<br /> - Static `192350001`<br />- Dynamic `192350000`<br >- Compound `192350002`|Yes.|
 |Status Reason|statuscode|Current status of the segment. Following are the available status codes: <br /> - Draft `192350000`<br /> - Live `192350001`<br /> - Stopped `192350002`<br /> - GoingLive `192350006`<br /> - Stopping `192350007`|Yes.|
 |Segment Query|msdyncrm_query|Query in the segmentation query.|Yes (only for dynamic and compound segments).|
-
-To test the operations, you can use the Postman tool. More information: [Use Postman with Web API](/powerapps/developer/common-data-service/webapi/use-postman-web-api).
 
 ## CRUD operations on static segments
 
@@ -218,6 +216,8 @@ Some of the important aspects that need to be considered while performing add/re
 - Only instances of entity type **Contact** can be added/removed as members.
 - If provided contact IDs do not exist, they are ignored.
 - Add/remove member requests are processed asynchronously.
+- If using business unit scoping, adding a contact that the segment owner does not have (business unit) access to will hang the segment (make it unusable),
+so ensure that you don't add contacts from the wrong business unit in your code.
 - You can add/remove contacts by invoking the endpoint multiple times, usually in batches of up to 20.000 contacts each time.
 
 **Add segment members by providing IDs**
@@ -355,6 +355,5 @@ POST {{OrgUrl}}/api/data/v9.0/msdyncrm_ValidateSegment
     "ValidationResult": "[{\"ErrorCode\":\"SegmentDciValidator_SegmentInvalid\",\"FieldName\":\"msdyncrm_query\"}]"
 }
 ```
-
 
 [!INCLUDE [footer-include](.././includes/footer-banner.md)]

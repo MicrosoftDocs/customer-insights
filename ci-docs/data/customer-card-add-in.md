@@ -12,13 +12,17 @@ ms.author: philk
 
 [!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
+> [!TIP]
+> We recommend using the default option [to customize your apps with Dataverse data](/power-apps/maker/canvas-apps/connections/connection-common-data-service). It ensures you benefit from our [integration into Dataverse](integrate-d365-apps.md).
 
 Get a 360-degree view of your customers directly in Dynamics 365 apps. With the Customer Card Add-in installed in a supported Dynamics 365 app, you can choose to display customer profile fields, insights, and activity timeline. The add-in will retrieve data from Dynamics 365 Customer Insights without affecting the data in the connected Dynamics 365 app.
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWN1qv]
 
 [!INCLUDE [public-preview-note](includes/public-preview-note.md)]
+
+## Limitations
+- The card add-in does not respect Dataverse's permission when retreiving data.
 
 ## Prerequisites
 

@@ -13,8 +13,6 @@ search.audienceType:
 
 # Qualify the best leads
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
 Define qualification criteria and post-qualification actions to grow your pipeline while ensuring that each qualified lead receives attention from your sales teams. With proper scoring and qualification criteria, you can prioritize the best leads and empower the sales team to spend more time winning deals and less time chasing lukewarm opportunities.
 
 Dynamics 365 Customer Insights - Journeys allows you to set the qualification criteria that trigger a set of “post qualification actions.” For example, you can define qualification criteria that allow only high-potential leads to trigger the qualification actions. Once a lead meets this value, then the lead is flagged as Sales-Ready or Marketing qualified. You can use this flag in multiple ways inside the Dynamics 365 ecosystem, including triggering journeys or sales assignment.

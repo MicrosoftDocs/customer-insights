@@ -1,7 +1,7 @@
 ---
 title: "Unify customer columns for data unification"
 description: "Merge columns to create unified customer profiles."
-ms.date: 11/15/2023
+ms.date: 01/08/2024
 ms.topic: how-to
 author: v-wendysmith
 ms.author: sstabbert
@@ -11,11 +11,7 @@ ms.custom: bap-template
 
 # Unify customer columns for data unification
 
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
-
-In this step of the unification process, choose and exclude columns to merge within your unified profile table. For example, if three tables had email data, you may want to keep all three separate email columns or merge them into a single email column for the unified profile. Dynamics 365 Customer Insights - Data automatically combines some columns.
-
-In this step, you can create stable and unique customer IDs and for individual customers, group related profiles into a cluster.
+In this step of the unification process, choose and exclude columns to merge within your unified profile table. For example, if three tables had email data, you might want to keep all three separate email columns or merge them into a single email column for the unified profile. Dynamics 365 Customer Insights - Data automatically combines some columns. For individual customers, you can group related profiles into a cluster.
 
 :::image type="content" source="media/m3_unify.png" alt-text="Unify customer fields page in the data unification process showing table with merged fields that define the unified customer profile.":::
 
@@ -169,30 +165,13 @@ Monica Thomson matches across three data sources: Loyalty, Online, and POS. With
      > :::image type="content" source="media/merge-combine-datasource.png" alt-text="Combine group of fields screen with Group drop-down and data source highlighted.":::
    - **Group2**: The field in the next data source that corresponds to the **Name**. Repeat for each data source you include.
 
-1. Provide a **Name** for the combined group of fields, such as mailing address. This name displays on the Unify step but doesn't appear in the Customer profile.
+1. Provide a **Name** for the combined group of fields, such as mailing address. This name displays on the **Unified data view** step but doesn't appear in the Customer profile.
 
    :::image type="content" source="media/merge-combine-group-example.png" alt-text="Combine group of fields example.":::
 
 1. Select **Done** to apply the changes. The name for the combined group displays on the **Unified data view** page, but not in the Customer profile. 
 
    :::image type="content" source="media/unify-combine-group-example.png" alt-text="Unified data view page highlighting the combine group name.":::
-
-## Configure customer ID generation
-
-Define how to generate customer ID values, the unique customer profile identifiers. The unify fields step in the data unification process generates the unique customer profile identifier. The identifier is the *CustomerId* in the *Customer* table that results from the data unification process.
-
-The *CustomerId* is based on a hash of the first value of the non-null winner primary keys. These keys come from the tables used in data unification and are influenced by the match order. So the generated customer ID can change when a primary key value changes in the primary table of the match order. The primary key value might not always represent the same customer.
-
-Configuring a stable customer ID enables you to avoid that behavior.
-
-1. Select the **Keys** tab.
-
-1. Hover on the **CustomerId** row and select **Configure**.
-   :::image type="content" source="media/customize-stable-id.png" alt-text="Control to customize the ID generation.":::
-
-1. Select up to five fields that will comprise a unique customer ID and are more stable. Records that don’t match your configuration use a system-configured ID instead.  
-
-1. Select **Done**.
 
 ## Group profiles into households or clusters
 
@@ -213,6 +192,23 @@ Anyone in a shared group (same last name and address) gets a common cluster ID a
 1. Specify the rules and conditions to define your cluster.
 
 1. Select **Done**. The cluster is created when the unification process is complete. The cluster identifiers are added as new fields to the *Customer* table.
+
+## Configure customer ID generation
+
+The [CustomerId](data-unification.md#customer-id) field is a unique GUID value that is automatically generated for each unified customer profile. We recommend using this default logic. However, in rare circumstances you can specify the fields to use as inputs to generate the  CustomerId.
+
+1. On the **Customer data** step, select the **Keys** tab.
+
+1. Hover on the **CustomerId** row and select **Configure**.
+   :::image type="content" source="media/customize-stable-id.png" alt-text="Control to customize the ID generation.":::
+
+1. Select up to five fields that will comprise a stable, unique customer ID. Records that don’t match your configuration use a system-configured ID instead.
+
+   Only include columns that are either not expected to change such as a government-issued ID, or when changed, a new CustomerId is appropriate. Avoid columns that might change such as phone, email, or address.
+
+1. Select **Done**.
+
+For each input to the CustomerId generation, the first non-null TableName + field value are used. Tables are checked for non-null values in the table order defined on the **Matching rules** unification step. If the source table or input field values change, the resulting CustomerId will change.
 
 > [!div class="nextstepaction"]
 > [Next step: Review unification](data-unification-review.md)

@@ -1,7 +1,7 @@
 ---
 title: Manage user accounts, user licenses, and security roles
 description: How to manage user accounts, add licenses to users, and assign security roles in Dynamics 365 Customer Insights - Journeys.
-ms.date: 11/14/2023
+ms.date: 04/03/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -13,13 +13,15 @@ search.audienceType:
 
 # Manage user accounts, user licenses, and security roles
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
 [!INCLUDE [marketing-trial-cta](./includes/marketing-trial-cta.md)]
 
 [!INCLUDE [azure-ad-to-microsoft-entra-id](./includes/azure-ad-to-microsoft-entra-id.md)]
 
 Read this article to learn how to work with user accounts, user licenses, and security roles in Dynamics 365 Customer Insights - Journeys.
+
+## User access and security groups
+
+When creating new environments in the Power Platform Admin Center, if no security group is selected, all Microsoft Entra users have default access to the environment through an automatic user sync. To restrict access to an environment when creating it in the Power Platform Admin Center, select a security group for the environment. Users must be members of the security group to access the environment. If you've already created environments and want to restrict access, create a security group, select the environment in the Power Platform Admin Center, then select **Edit** in the upper right corner. In the flyout, select the security group and apply it to the environment. Learn more: [Control user access to environments: security groups and licenses](/power-platform/admin/control-user-access)
 
 ## Create user accounts and assign licenses
 
@@ -28,11 +30,11 @@ Read this article to learn how to work with user accounts, user licenses, and se
 
 Like most model-driven apps in Dynamics 365 (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Customer Insights - Journeys, and Dynamics 365 Project Service Automation), Customer Insights - Journeys integrates with the user management and licensing features of the Microsoft 365 admin center. To get started, each user who requires access to Customer Insights - Journeys must have a user account on your Microsoft 365 tenant. More information: [Add users individually or in bulk to Microsoft 365](/office365/admin/add-users/add-users)
 
-Unlike most Dynamics 365 apps, Customer Insights - Journeys is licensed per instance (also based on certain quotas, such as the number of Customer Insights - Journeys contacts and monthly email messages) but it isn't licensed per seat, which means that you can add as many users to each Customer Insights - Journeys instance as you like for no extra charge because Customer Insights - Journeys user licenses are free.
+Unlike most Dynamics 365 apps, Customer Insights - Journeys is licensed based on capacity and not based on users (also called seats) which means that you can add as many users to each Customer Insights - Journeys instance as you like for no extra charge. Any user with an account on your Microsoft 365 tenant can access the Customer Insights - Journeys application if you share the environment URL with them. You can restrict access by setting up security groups. 
 
 ### Grant access to users that already have a Dynamics 365 license
 
-Any user who already has a license for any model-driven app in Dynamics 365 can also access Customer Insights - Journeys without requiring extra licenses. All you need to do is [assign them the security roles and privileges](#assign-role) required to access the Customer Insights - Journeys features they need.  
+Any user who already has a license for any model-driven app in Dynamics 365 can also access Customer Insights - Journeys. All you need to do is [assign them the security roles and privileges](#assign-role) required to access the Customer Insights - Journeys features they need and share the URL to the environment you want them to access. There's no explicit user license assignment required in Microsoft Admin Center the way you must with user or seat-based licenses.  
 
 ### Grant access to users without a Dynamics 365 license
 
@@ -47,9 +49,11 @@ For Microsoft 365 users that don't have a Dynamics 365 license, you can "purchas
 > If you have a [self-service Customer Insights - Journeys license](direct-purchase.md), your tenant admin must assign users to your license before you can assign them roles. Contact your tenant admin and have them add users to your license.
 
 > [!WARNING]
-> The free Customer Insights (formerly Marketing) user license is intended to only allow user access to the Customer Insights - Journeys and Customer Insights - Data applications. It's not intended to allow unlimited user access to custom applications for Sales, Service, or other Dynamics 365 application scenarios.
+> The free Customer Insights (formerly Marketing) user license is intended to only allow user access to the Customer Insights - Journeys in an edge case. It's not intended to allow unlimited user access to custom applications for Sales, Service, or other Dynamics 365 application scenarios. It also does not include any additional entitlements to Dataverse capacity. 
 
-To purchase and assign a free Customer Insights - Journeys user license:
+In some edge cases, if the automatic user sync doesn't work, you can use a $0 User License to force the sync to happen. This is an edge case and only a work-around if the automatic sync isn't working for some reason. 
+
+To use the 0$ license work-around to sync users for the edge case:
 
 1. Sign in to your [Microsoft 365 admin center](https://admin.microsoft.com) using an admin account that has permissions to purchase services and assign licenses.
 
@@ -147,7 +151,7 @@ To create a copy of a role:
 Two features of Customer Insights - Journeys require that users have security roles with unexpected privileges for some entities. These are:
 
 - **To go live with marketing pages, elevated privileges are required for the *website* entity**  
-    The error checker for marketing pages requires full organization-level access to the **Website** entity, which enables the feature to confirm that the page is configured correctly to be published on your Power Apps portal. Therefore, all users that need to check and/or go-live with a marketing page published on a portal must have a security role with the privileges shown in the table and illustration following this list. This doesn't affect captured forms or forms embedded on an external site or CMS system.
+    The error checker for marketing pages requires full organization-level access to the **Website** entity, which enables the feature to confirm that the page is configured correctly to be published on your Power Apps portal. Therefore, all users that need to check and/or go-live with a marketing page published on a portal must have a security role with the privileges shown in the table and illustration following this list. This doesn't affect captured forms or forms embedded on an external site or content management system (CMS).
 
 - **To access assist edit, elevated privileges are required the for the *marketing email dynamic-content metadata* entity**    
     The [personalization feature](dynamic-email-content.md#personalization) enables users to generate dynamic expressions for use in email messages and content settings. The feature requires that the user has elevated access to application metadata, which enables assist edit to present details about database entities and records. Therefore, all users that need to use assist edit must have a security role with elevated access to the **Marketing email dynamic-content metadata** entity, as shown in the table and illustration following this list.
@@ -237,13 +241,13 @@ The system uses this account when performing important internal tasks. Customer 
 
 ### Customer Insights - Journeys service users
 
-After deploying Customer Insights - Journeys features, several service users are created. Deleting these users breaks your deployment.
+After Customer Insights - Journeys features are deployed, several service users are created. Deleting these users breaks your deployment.
 
 | Customer Insights - Journeys service user | Microsoft Entra ID | Customer Insights - Journeys area |
 | ---- | ---- | ------- |
 | Customer Experience Platform PROD | 3e56e0fc-542f-4522-bac1-c7cab1017459 | All other areas not listed explicitly in this table |
 | D365 Dataverse Data | ca179245-7fe3-4d70-a945-09c79f85cf41 | Personalization of messages during customer journey execution |
-| D365 Experimentation | 729028a7-33d3-428b-b7be-0cff66ad5495| Customer journey experimentations |
+| D365 Experimentation | 729028a7-33d3-428b-b7be-0cff66ad5495| Customer journey experimentation |
 | D365 Interactives | c88804dd-52b8-4e23-b62d-f0e38f5cef35 | Handling flows triggered by organic users |
 | D365 Lifecycle Mgmt | c5efd687-df01-42cb-a6b6-391f24349886 | Lifecycle and provisioning scenarios |
 | D365 Native Segments | afc9dd19-c23a-4dc8-9fb7-0ad8cec474ff | Segmentation |
@@ -272,13 +276,25 @@ After deploying Customer Insights - Journeys features, several service users are
 | Cxp PushNotification Services User | Push notifications |
 | Cxp Segmentation Services User | Segmentation |
 | Cxp Services User | Shared scenarios |
-| Cxp Sms Services User | Text message sending |
+| Cxp SMS Services User | Text message sending |
 | Cxp TeamsEventsIntegration Services User | Teams attach scenarios |
 
-The Customer Insights - Journeys product receives continuous update and enhancements, so it's possible new services (and hence more roles) will be added with along with the upgrades. Service user roles (their privileges for marketing entities) can be modified during upgrades for the same reason.
+The Customer Insights - Journeys product receives continuous update and enhancements, so it's possible that new services (and, hence, more roles) will be added with along with the upgrades. Service user roles (their privileges for marketing entities) can be modified during upgrades for the same reason.
 
 One service user, **# Dynamics Marketing Dataverse Datasource**, is used to impersonate a service that resolves dynamic content. Dynamic content can be defined through placeholders for personalized messages or through data-bound parameter in customer journeys.
 
 **# Dynamics Marketing Dataverse Datasource** has a **Service Reader** role assigned, which allows it privileged access to any Dataverse data within a given environment.
+
+### Customer Insights - Journeys field security profiles
+
+After deploying Customer Insights - Journeys features, several Field Security Profiles are created under **Advanced Settings** > **Security** > **Field Security Profiles**. Deleting these profiles breaks text message (SMS) and push notification flows.
+
+| Customer Insights - Journeys field security role | Customer Insights - Journeys area |
+| ---- | ------- |
+| CxpApplicationUser - Mobile app channel instance secrets  | Push notification channel |
+| CxpApplicationUser - Mobile app secrets  | Push notification channel |
+| Marketers - Mobile app channel instance secrets | Push notification channel |
+| Marketers - Mobile app secrets   | Push notification channel |
+| Customer Journey Orchestration Shared SMS Channels Profile | SMS channel |
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]

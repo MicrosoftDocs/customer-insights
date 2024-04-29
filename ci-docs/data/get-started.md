@@ -4,22 +4,20 @@ description: An overview of help resources to get started quickly.
 ms.reviewer: mhart
 ms.author: mhart
 author: m-hartmann
-ms.date: 09/01/2023
+ms.date: 02/05/2024
 ms.topic: how-to
 ms.custom: bap-template
 ---
 
 # Get started with Dynamics 365 Customer Insights - Data
 
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
-
 Customer Insights - Data can help you build a deeper understanding of your customers. Connect data from various transactional, behavioral, and observational sources to create a 360-degree customer view. Use these insights to drive customer-centric experiences and processes. Unify and understand customer data and harness it for intelligent insights and actions.
 
 ## Step 1: Create an environment
 
-1. Sign up for a [free trial](trial-signup.md) or [purchase a license](paid-license.md).
+1. If you want to install Customer Insights - Data on an existing Dynamics 365 environment, visit [this page](..\journeys\setup.md) for instructions. If you don't have a paid license, you can sign up for a [free trial](trial-signup.md) or [purchase a license](paid-license.md).
 
-1. [Create an environment](create-environment.md). After the environment is created, the **Getting Started** screen displays.
+1. In most cases with global tenant admin permissions, to install Customer Insights - Data, you should create an environment in the Power Platform Admin Center and [follow these steps](..\journeys\setup.md). If you want to create an environment from the Customer Insights - Data application, you must be a global tenant admin and you can follow the steps in [Create an environment](create-environment.md). After the environment is created, the **Getting Started** screen displays.
 
    :::image type="content" source="media/get-started.png" alt-text="Screenshot of the Getting Started screen with Insights in minutes.":::
 
@@ -33,7 +31,7 @@ Customer Insights - Data can help you build a deeper understanding of your custo
 
    :::image type="content" source="media/home-step-by-step.png" alt-text="Screenshot of the Getting Started screen with Step-by-step guide selected.":::
 
-1. Import your data. Choose between [Azure Data Lake Storage, including Common Data Model](connect-common-data-model.md), [Azure Synapse Analytics](connect-synapse.md), [Microsoft Dataverse](connect-dataverse.md), or  [Power Query connectors](connect-power-query.md).
+1. Import your data. Choose between [Azure Data Lake Storage, including Common Data Model](connect-common-data-model.md), [Azure Synapse Analytics](connect-synapse.md), [Microsoft Dataverse](connect-dataverse.md), [Delta tables in Azure Data Lake](connect-delta-lake.md) or  [Power Query connectors](connect-power-query.md).
 
 ## Step 3: Unify the data and set up relationships
 

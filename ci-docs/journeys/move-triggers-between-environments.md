@@ -13,11 +13,9 @@ search.audienceType:
 
 # Move triggers between environments (ALM process for triggers)
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
 You may use multiple Dynamics 365 environments to support different stages of your application lifecycle management process. For example, you may have a development environment for creating and testing new features, a staging environment for pre-production testing, and a production environment for  final application deployment. Using multiple environments allows you to maintain separate configurations, isolate changes, and avoid potential conflicts that could impact your system’s stability.
 
-Migrating triggers between environments is a key process that ensures that your team is using the most recent version of the triggers. [Power Platform solutions](transfer-solution.md) are the mechanism for implementing ALM by defining how code and metadata are packaged for transportation from one environment to another. Solutions include components such as entities, segments, journeys, connectors, flows, and forms but don't include customer data by default.
+Migrating triggers between environments is a key process that ensures that your team is using the most recent version of the triggers. [Power Platform solutions](transfer-solution.md) are the mechanism for implementing ALM by defining how code and metadata are packaged for transportation from one environment to another. Solutions include components such as entities, connectors, flows, and forms but don't include customer data by default.
 
 For ALM support, Dynamics 365 features must be built as "Solution-Aware," with entities modeled as solution components and dependencies known to Dataverse so they can be resolved during import. Environment-specific data, including usage data, is excluded from the solution, allowing for a streamlined and efficient ALM process. By utilizing solutions, you can achieve better control over your system's configuration, reduce errors, and ensure consistency across environments.
 

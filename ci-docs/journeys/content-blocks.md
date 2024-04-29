@@ -1,7 +1,7 @@
 ---
 title: Create content blocks that you can reuse in multiple designs
 description: How to create reusable content blocks and use them in your email designs in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/18/2023
+ms.date: 12/15/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -13,7 +13,8 @@ search.audienceType:
 
 # Create content blocks that you can reuse in multiple designs
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+> [!NOTE]
+> Unless a style is explicitly set in the element properties, the default style is replaced with the email theme style.
 
 Content blocks are pre-made pieces of content that you can insert into emails. They can contain text, images, links, buttons, and more – anything that can be used as content in an email. They also can include formatting and layout. When inserted, all of the content (including the layout, if present) contained within the content block becomes part of the email.
 

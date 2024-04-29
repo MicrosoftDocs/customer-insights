@@ -11,8 +11,6 @@ ms.custom: bap-template
 
 # Data unification overview
 
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
-
 After [setting up the data sources](data-sources.md), you can unify the data. Data unification lets you unify once-disparate data sources into a single master dataset that provides a unified view of your customers.
 
 Data can be unified on a single table or multiple tables. Tables were previously called entities.
@@ -41,13 +39,13 @@ When unification runs, a unique **CustomerId** is assigned to each customer prof
 - **Split a profile**
   When one unified customer profile exists and the source data or rules change such that the records no longer match, then the next unification run creates two or more customer profiles where one previously existed. One record retains the previous CustomerId, while the others are assigned a new CustomerID. The **PreviousCustomerId** field for the customer profile with the newly assigned CustomerId shows the CustomerId the profile was split off from.
 
-## Next steps
-
-After completing data unification, you can optionally:
+## See also
 
 - [Set up relationships between tables](relationships.md) to create sophisticated segments.
 - [Enrich your data](enrichment-manage.md) to get a wider range of insights about your customers.
 - [Define activities](activities.md) from some of the ingested columns.
 - [Build measures](measures.md) to better understand customer behaviors and business performance.
+- [FastTrack blog: Best practices for data modelling](https://community.dynamics.com/blogs/post/?postid=988fae7a-3f37-ee11-bdf4-6045bdebe084)
+- [FastTrack blog: Advanced unification scenario for unrelated sources](https://community.dynamics.com/blogs/post/?postid=cbf1def2-2a94-4a4d-9535-0489e647157c)
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

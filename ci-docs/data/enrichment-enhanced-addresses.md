@@ -14,9 +14,9 @@ searchScope:
   - customerInsights
 ---
 
-# Enrich customer profiles with enhanced addresses
+# Enrich customer profiles with enhanced addresses (preview)
 
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
+[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
 Addresses in your data can be unstructured, incomplete, or incorrect. Use Microsoft's models to normalize and enrich your addresses into the [Common Data Model format](/common-data-model/schema/core/applicationcommon/address) for better accuracy and insights.
 
@@ -95,6 +95,8 @@ We currently support enriching addresses in these countries or regions:
 1. Provide a **Name** for the enrichment and the **Output table**.
 
 1. Select **Save enrichment** after reviewing your choices.
+
+1. Select **Run** to start the enrichment process or close to return to the **Enrichments** page.
 
 ## View enrichment results
 

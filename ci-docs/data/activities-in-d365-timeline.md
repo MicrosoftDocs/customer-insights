@@ -11,8 +11,6 @@ ms.custom: bap-template
 
 # Show activities with Dynamics 365 timelines
 
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
-
 If you use Dynamics 365 Customer Insights - Data and other Dynamics 365 apps such as Dynamics 365 Sales, Customer Insights - Journeys, or Customer Service, you can integrate activities so that they display on Dynamics 365 activity timelines.
 
 Once enabled by a Dynamics 365 administrator, sellers and representatives can view activities such as notes, posts, emails, and appointments as well as transactional and behavioral data for a customer. They can search and filter activity records within the shared timeline.

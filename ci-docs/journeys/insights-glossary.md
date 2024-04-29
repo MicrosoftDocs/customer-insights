@@ -13,8 +13,6 @@ search.audienceType:
 
 # Glossary of common insights terms
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
 This article provides definitions of terms commonly used to describe marketing results, insights, and KPIs. Many, but not all, of these relate to email results, and the definitions here also include a few technical details about how these results are found and calculated.
 
 More information: [Analyze results to gain insights from your marketing activities](insights.md)
@@ -85,7 +83,7 @@ The number of leads generated as a result of an email message. A new lead is cou
 
 ### Unsubscribes
 - **Outbound marketing**: A recipient selected the subscription center link in an email and then unsubscribed from one or more *mailing lists*. This value counts, at most, one unsubscribe per message per recipient. Unchecking the "Do not e-mail" field is not considered an unsubscribe, as it is a change of a contact preference which is different than unsubscribing from a particular mailing or subscription list.
-- **Customer Insights - Journeys**: A recipient selected the preference center link in an email sent from Customer Insights - Journeys and then unsubscribed one or more *email addresses* associated with the recipient profile used in the journey (contact, lead, or Customer Insights profile).<br>
+- **Customer Insights - Journeys**: A recipient selected the preference center link in an email sent from Customer Insights - Journeys and then unsubscribed one or more *email addresses* associated with the recipient profile used in the journey (contact, lead, or Customer Insights - Data profile).<br>
 ``Unsubscribes = (total unsubscribed / emails that were delivered)*100``
 
 ### Web beacon

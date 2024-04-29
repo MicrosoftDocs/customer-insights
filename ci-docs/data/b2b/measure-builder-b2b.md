@@ -11,7 +11,7 @@ ms.custom: bap-template
 
 # Create business account measures with measure builder
 
-[!INCLUDE [consolidated-sku](../includes/consolidated-sku.md)]
+
 
 Create measures on the level of individual accounts (customer measure) or on the level of all accounts (business measure).
 

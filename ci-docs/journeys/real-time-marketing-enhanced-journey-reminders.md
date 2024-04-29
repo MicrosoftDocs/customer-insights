@@ -13,11 +13,9 @@ search.audienceType:
 
 # Enhanced journey reminders
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
 Create action-oriented journeys that remind customers to complete a call to action until a certain date or time. Built-in reminder orchestration eliminates the need to create cascading branches that check for the qualifying action after each step or specify conditions with more than two possibilities. This simplifies not only the journey logic required to capture the whole scenario in a single journey, but also preserves all analytics for the journey actions in a single place when journeys are live.
 
-## Create reminders using the Series tile
+## Send a series of messages
 
 The best way to show how journey reminders work is to walk through a real-life scenario. Let's say you're working for a loan company. You want to create a customer journey to remind current and future homeowners to fill out their loan applications. First, you'll need to create a [segment-based journey](real-time-marketing-build-segments.md) that sends out an initial loan application email.
 

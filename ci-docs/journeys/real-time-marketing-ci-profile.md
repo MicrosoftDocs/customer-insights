@@ -1,7 +1,7 @@
 ---
 title: Use Customer Insights - Data profiles and segments in Customer Insights - Journeys
 description: Learn how to use Customer Insights - Data profiles and segments in Customer Insights - Journeys.
-ms.date: 08/22/2023
+ms.date: 02/28/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -12,8 +12,6 @@ search.audienceType:
 ---
 
 # Use Customer Insights - Data profiles and segments in Customer Insights - Journeys
-
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 Customer Insights - Journeys enables you to deeply personalize your customer engagement using transactional, behavioral, and demographic data from [Dynamics 365 Customer Insights - Data](/dynamics365/customer-insights). With Customer Insights - Data, you can:
 - Target unified Customer Insights - Data customer profiles and segments. This enables you to engage every customer, regardless of whether the customer's data is in Customer Insights - Journeys or Customer Insights - Data.

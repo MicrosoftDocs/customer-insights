@@ -13,8 +13,6 @@ search.audienceType:
 
 # Data protection and privacy
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
 Dynamics 365 Customer Insights - Journeys is prepared to help organizations work in compliance with privacy laws and regulations when using the system, but some development work, consultancy assistance, or both, is still necessary. As part of a comprehensive, organization-wide effort, most organizations need to review and update all their information systems to come into complete compliance.
 
 ## Learn more about privacy laws and regulations

@@ -13,8 +13,6 @@ search.audienceType:
 
 # Analyze results to gain insights from your marketing activities
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
 

@@ -13,8 +13,6 @@ search.audienceType:
 
 # Create interactive features with or without portals in outbound marketing
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
 

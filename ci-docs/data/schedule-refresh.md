@@ -1,7 +1,7 @@
 ---
 title: "Schedule system refresh"
 description: "Schedule the time when the system should be refreshed"
-ms.date: 11/28/2022
+ms.date: 02/12/2024
 ms.topic: conceptual
 author: NimrodMagen
 ms.author: nimagen
@@ -13,23 +13,17 @@ searchScope:
 
 # Schedule system refresh
 
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
-
 Schedule automatic refreshes of all your [ingested data sources](data-sources.md). Automatic refreshes help ensure that updates from your data sources are reflected in your unified customer profiles.
-
-> [!NOTE]
-> Power Query data sources managed by you refresh on their own schedules. To schedule refresh of these Power Query data sources, configure refresh settings on that specific data source from the **Data sources** page. Align the timing with the upstream data refresh schedule so that refreshes do not all occur at once.
-> :::image type="content" source="media/PPDF-edit-refresh.png" alt-text="Power Platform Dataflow refresh settings.":::
 
 ## Set system refresh schedule
 
 1. Go to **Settings** > **System** and select the **Schedule** tab.
 
-   :::image type="content" source="media/schedule_refresh.png" alt-text="Schedule refresh tab from System page.":::
+   :::image type="content" source="media/schedule_refresh.svg" alt-text="Schedule refresh tab from System page.":::
 
 1. The default state for the scheduled refresh is **Off**. To enable scheduled refreshes, change the toggle at the top of the screen to **On**.
 
-1. Choose between **Weekly** (default) and **Daily** refreshes. If you intend to schedule weekly refreshes, select one or more days on which you want to run the refresh.
+1. Choose between **Weekly** and **Daily** refreshes. If you intend to schedule weekly refreshes, select one or more days on which you want to run the refresh.
 
 1. Set your **Time zone**, then use the **Time** dropdown to set your refresh timing. If you'd like to schedule multiple refreshes in a single day, select **Add another time**. You can add up to four refreshes.
 

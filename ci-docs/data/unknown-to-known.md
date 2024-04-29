@@ -10,8 +10,6 @@ ms.author: andreatapia
 
 # Personalize your customer experiences with data for unknown and known users
 
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
-
 Managing data gets increasingly challenging as customers interact with brands across different digital touchpoints. **Known users** (customer profiles with contact information) are often **signed in** or **authenticated** in one channel but **unknown users** (without contact information) and **unauthenticated** in others. This leads to disjointed customer experiences instead of seamless personalization across channels. Personalization becomes even more challenging for unknown customers who do not have unique identifiers.
 
 Dynamics 365 Customer Insights - Data helps collect meaningful profile attributes and create unified customer profiles for unknown and known users. You can import data to generate insights and create seamless experiences for all your customers. Over time, with the collection of historical transactions, behaviors, and demographics, unknown customers can become known customers. Their identities can be merged into one complete 360° view. The system allows you to unify customer activity across channels, including websites, loyalty programs, CRM systems, and more.
@@ -75,8 +73,6 @@ Since some of the users in our data are known, we can use the system to combine 
 ## Get insights
 
 If customer profiles are created for unknown and known users, the high value web event data can be used as [activities](activities.md). These activities can be used to create more insights. For example, customers that visited a website six months ago (when they were still unknown) or customers that don't have a loyalty ID never completed a checkout.
-
-:::image type="content" source="media/website-known-unknown.png" alt-text="Screenshot of the customer page with known and unknown customers.":::
 
 [Enrich](enrichment-manage.md) your data, build [measures](measures.md), and create [segments](segments.md) for further activation.
 

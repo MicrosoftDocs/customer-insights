@@ -10,8 +10,6 @@ ms.author: wameng
 
 # Explore the user interface
 
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
-
 You can access [Dynamics 365 Customer Insights - Data](https://home.ci.ai.dynamics.com/) on the following URL: [https://home.ci.ai.dynamics.com/](https://home.ci.ai.dynamics.com/).
 
 The **Home** page guides you through the configuration process for key features and provides an overview of segments, measures, and enrichment data. The default home page shows how to get insights in minutes by adding data in a single file.
@@ -53,7 +51,7 @@ This section contains a card to upload a single file and receive automatic insig
 
 This section contains cards that help you walk through the process of setting up your environment.
 
-1. The **Add data** card assists you with your data import. Customer Insights - Data supports [several options to bring in data about your customers](data-sources.md). Select **Add a data sources** to get started.
+1. The **Add data** card assists you with your data import. Customer Insights - Data supports [several options to bring in data about your customers](data-sources.md). Select **Add data sources** to get started.
 1. Once the initial data import successfully completes, you can use the **Unify data** card to harmonize the data and [create unified customer profiles](data-unification.md) from disparate sources. 
 1. With unified customer profiles in place, it's time to review the **Analyze data** options and get additional insights. Give it a try to create [business measures](measures.md) to track KPIs, [define segments](segments.md) to reach specific audiences, or [configure predictions](predictions.md) with the help of AI.
 1. Now that your customer data is imported, unified, and neatly structured, you use our [various export destinations](export-destinations.md) to take action on the data. Select **Add connections** to connect your favorite services. For example, export the data to Dynamics 365 Customer Insights - Journeys to create marketing campaigns and build customer journeys.

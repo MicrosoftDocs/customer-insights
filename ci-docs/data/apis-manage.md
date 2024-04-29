@@ -1,7 +1,7 @@
 ---
 title: Manage Customer Insights - Data APIs
 description: Manage the Customer Insights - Data API keys and view API usage.
-ms.date: 09/01/2023
+ms.date: 03/15/2024
 ms.topic: how-to
 author: wimohabb
 ms.author: wimohabb
@@ -10,8 +10,6 @@ ms.custom: bap-template
 ---
 
 # Manage Customer Insights - Data APIs
-
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
 [!INCLUDE [api-deprecate](./includes/api-deprecate.md)]
 
@@ -23,7 +21,7 @@ View and manage the keys to use the [Customer Insights - Data APIs](apis.md) wit
 
 1. Go to **Settings** > **Permissions** and select the **APIs** tab.
 
-1. If API access to the environment has not been set up, select **Enable**. Or, to block API access to the environment, select **Disable** and confirm.
+1. If API access to the environment hasn't been set up, select **Enable**. Or, to block API access to the environment, select **Disable**, and confirm.
 
 1. Manage the primary and secondary API keys:
 

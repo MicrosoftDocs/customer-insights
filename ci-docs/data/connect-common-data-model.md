@@ -1,7 +1,7 @@
 ---
-title: "Connect to data in Azure Data Lake Storage"
+title: "Connect to Common Data Model tables in Azure Data Lake Storage"
 description: "Work with data from Azure Data Lake Storage."
-ms.date: 11/14/2023
+ms.date: 03/11/2024
 ms.topic: how-to
 author: mukeshpo
 ms.author: mukeshpo
@@ -9,17 +9,13 @@ ms.reviewer: v-wendysmith
 ms.custom: bap-template
 ---
 
-# Connect to data in Azure Data Lake Storage
-
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
+# Connect to Common Data Model tables in Azure Data Lake Storage
 
 [!INCLUDE [azure-ad-to-microsoft-entra-id](../journeys/includes/azure-ad-to-microsoft-entra-id.md)]
 
-Ingest data into Dynamics 365 Customer Insights - Data using your Azure Data Lake Storage account. Data ingestion can be full or incremental.
+Ingest data into Dynamics 365 Customer Insights - Data using your Azure Data Lake Storage account with Common Data Model tables. Data ingestion can be full or incremental.
 
 ## Prerequisites
-
-- Data ingestion supports Azure Data Lake Storage *Gen2* accounts exclusively. You can't use Data Lake Storage Gen1 accounts to ingest data.
 
 - The Azure Data Lake Storage account must have [hierarchical namespace enabled](/azure/storage/blobs/data-lake-storage-namespace). The data must be stored in a hierarchical folder format that defines the root folder and has subfolders for each table. The subfolders can have full data or incremental data folders.
 
@@ -34,16 +30,20 @@ Ingest data into Dynamics 365 Customer Insights - Data using your Azure Data Lak
   - Storage Blob Data Owner
   - Storage Blob Data Contributor
 
-- The user that sets up the data source connection needs at least Storage Blob Data Contributor permissions on the storage account.
+- When connecting to your Azure storage using the *Azure subscription* option, the user that sets up the data source connection needs at least the Storage Blob Data Contributor permissions on the storage account.
 
-- Data in your Data Lake Storage should follow the Common Data Model standard for storage of your data and have the common data model manifest to represent the schema of the data files (*.csv or *.parquet). The manifest must provide the details of the tables such as table columns and data types, and the data file location and file type. For more information, see [The Common Data Model manifest](/common-data-model/sdk/manifest). If the manifest is not present, Admin users with Storage Blob Data Owner or Storage Blob Data Contributor access can define the schema when ingesting the data.
+- When connecting to your Azure storage using the *Azure resource* option, the user that sets up the data source connection needs at least the permission for the **Microsoft.Storage/storageAccounts/read** action on the storage account. An [Azure built-in role](/azure/role-based-access-control/built-in-roles) that includes this action is the **Reader** role. To limit access to just the necessary action, [create an Azure custom role](/azure/role-based-access-control/custom-roles) that includes only this action.
+
+- For optimal performance, the size of a partition should be 1 GB or less and the number of partition files in a folder must not exceed 1000.
+
+- Data in your Data Lake Storage should follow the Common Data Model standard for storage of your data and have the Common Data Model manifest to represent the schema of the data files (*.csv or *.parquet). The manifest must provide the details of the tables such as table columns and data types, and the data file location and file type. For more information, see [The Common Data Model manifest](/common-data-model/sdk/manifest). If the manifest is not present, Admin users with Storage Blob Data Owner or Storage Blob Data Contributor access can define the schema when ingesting the data.
 
   > [!NOTE]
   > If any of the fields in the .parquet files have data type Int96, the data may not display on the **Tables** page. We recommend using standard data types, such as the Unix timestamp format (which represents time as the number of seconds since January 1, 1970, at midnight UTC).
 
-## Recommendations
+## Limitations
 
-For optimal performance, the size of a partition should be 1 GB or less and the number of partition files in a folder must not exceed 1000.
+- Customer Insights - Data doesn't support columns of decimal type with precision greater than 16.
 
 ## Connect to Azure Data Lake Storage
 
@@ -51,23 +51,31 @@ For optimal performance, the size of a partition should be 1 GB or less and the 
 
 1. Select **Add a data source**.
 
-1. Select **Azure Data Lake**.
+1. Select **Azure Data Lake Common Data Model tables**.
 
-   :::image type="content" source="media/data_sources_ADLS.png" alt-text="Dialog box to enter connection details for Azure Data Lake." lightbox="media/data_sources_ADLS.png":::
+   :::image type="content" source="media/data_sources_ADLS.svg" alt-text="Dialog box to enter connection details for Azure Data Lake with Common Data Model tables." lightbox="media/data_sources_ADLS.svg":::
 
 1. Enter a **Data source name** and an optional **Description**. The name is referenced in downstream processes and it's not possible to change it after creating the data source.
 
 1. Choose one of the following options for **Connect your storage using**. For more information, see [Connect to an Azure Data Lake Storage account with a Microsoft Entra service principal](connect-service-principal.md).
 
-   - **Azure resource**: Enter the **Resource Id**. Optionally, if you want to ingest data from a storage account through an Azure Private Link, select **Enable Private Link**. For more information, see [Private Links](private-link.md).
-   - **Azure subscription**: Select the **Subscription** and then the **Resource group** and **Storage account**. Optionally, if you want to ingest data from a storage account through an Azure Private Link, select **Enable Private Link**. For more information, see [Private Links](private-link.md).
+   - **Azure resource**: Enter the **Resource Id**. (private-link.md).
+   - **Azure subscription**: Select the **Subscription** and then the **Resource group** and **Storage account**. 
   
    > [!NOTE]
-   > You need one of the following roles either to the container or the storage account to create the data source:
+   > You need one of the following roles to the container to create the data source:
    >
    >  - Storage Blob Data Reader is sufficient to read from a storage account and ingest the data to Customer Insights - Data.
    >  - Storage Blob Data Contributor or Owner is required if you want to edit the manifest files directly in Customer Insights - Data.  
-  
+   >
+   > Having the role on the storage account will provide the same role on all of its containers.
+
+1. Optionally, if you want to ingest data from a storage account through an Azure Private Link, select **Enable Private Link**. For more information, see [Private Links](private-link.md).
+
+   <!---
+   1. Optionally, if you want to use managed identities for Azure resources, select **Use managed identities for Azure with your Azure Data Lake Storage**. For more information, see ???.
+   --->  
+
 1. Choose the name of the **Container** that contains the data and schema (model.json or manifest.json file) to import data from, and select **Next**.
    > [!NOTE]
    > Any model.json or manifest.json file associated with another data source in the environment won't show in the list. However, the same model.json or manifest.json file can be used for data sources in multiple environments.
@@ -100,7 +108,7 @@ For optimal performance, the size of a partition should be 1 GB or less and the 
    :::image type="content" source="media/dataprofiling-tables.png" alt-text="Dialog box to select data profiling.":::
 
    1. Create new columns, edit, or delete existing columns. You can change the name, the data format, or add a semantic type.
-   1. To enable analytics and other capabilities, select **Data profiling** for the whole table or for specific columns. By default, no table is enabled for data profiling.
+   1. To enable analytics and other capabilities, select [**Data profiling**](data-sources.md#data-profiling) for the whole table or for specific columns. By default, no table is enabled for data profiling.
    1. Select **Done**.
 
 1. Select **Save**. The **Data sources** page opens showing the new data source in **Refreshing** status.
@@ -174,6 +182,8 @@ You can update the *Connect to storage account using* option. For more informati
       > - Storage Blob Data Reader
       > - Storage Blob Data Owner
       > - Storage Blob Data Contributor
+
+   - **Use managed identities for Azure with your Azure Data Lake Storage** ???
 
    - **Enable Private Link** if you want to ingest data from a storage account through an Azure Private Link. For more information, see [Private Links](private-link.md).
 

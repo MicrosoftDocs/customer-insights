@@ -1,7 +1,7 @@
 ---
 title: Raise triggers from a journey to run another journey or Power Automate flow
 description: Learn how to trigger an action outside of a journey in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/22/2023
+ms.date: 03/06/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -13,14 +13,12 @@ search.audienceType:
 
 # Raise triggers from a journey to run another journey or Power Automate flow
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
 Based on the unique needs of your business, you may want to trigger custom processes or Power Automate flows at certain points in a customer journey. Or, you might want to create multiple journeys that logically function together. Triggering custom actions allows you to accomplish these tasks, working as the glue between journeys, or between journeys and custom processes.
 
 Here are some examples of where you might trigger custom actions:
 
 1. You’re engaging customers so that they can purchase a subscription, but if they don’t do so by the end of the customer journey, you need to add them to a nurture journey. You can route the customers by activating a custom trigger from the subscription journey and using that as the entry trigger from the nurture journey.
-1. A loan application journey has various steps that require a human agent’s approval. By creating a separate customer journey or Power Automate Flow for loan exception approval, you can trigger it from various points in the loan application journeys where exceptions can occur by activating the custom trigger.
+1. A loan application journey has various steps that require a human agent’s approval. By creating a separate customer journey or Power Automate flow for loan exception approval, you can trigger it from various points in the loan application journeys where exceptions can occur by activating the custom trigger.
 1. You need to engage customers through another application or channel, such as Microsoft Teams, which has a Power Automate connector. You can create a Power Automate flow using this connector and have it start using the custom trigger that you can activate from relevant points in your journey.
 1. You need to create Dynamics 365 activities (such as a sales call or service tickets) from any point in the customer journey. By activating a custom trigger, you can trigger a Power Automate flow that creates these activities on behalf of the journey.
 
@@ -47,7 +45,7 @@ After placing a **Custom trigger** tile on the journey canvas, select which cust
 
 ### 2. Understand the selected trigger usage
 
-After you select the custom trigger, the current usage of the custom trigger in all journeys will be displayed in **Used in:** field in the properties pane. By selecting the **Used in:** link, you’ll be able to see all journeys and corresponding states that use the same custom trigger.
+After you select the custom trigger, the current usage of the custom trigger in all journeys will be displayed in **Used in:** field in the properties pane. By selecting the **Used in:** link, you are able to see all journeys and corresponding states that use the same custom trigger.
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of viewing custom trigger usage.](media/viewing-custom-trigger-usage-step2.png "Screenshot of viewing the usage for a custom trigger")
@@ -60,7 +58,7 @@ After you select the custom trigger, the current usage of the custom trigger in 
 
 ### 3. Map attributes
 
-When a customer reaches this stage of the journey, the custom trigger activated needs to know where to get the customer information that it will carry. The **Map attributes** shown in the custom trigger side pane allow you to set/populate the trigger fields in two ways:
+When a customer reaches this stage of the journey, the custom trigger activated needs to know where to get the customer information that it carries. The **Map attributes** shown in the custom trigger side pane allow you to set/populate the trigger fields in two ways:
 
 1. **Specify a fixed value:** In the example here, you can pass the name of the source journey that's activating the custom trigger and, in turn, send the shopper to the nurture journey connected to that custom trigger. This is shown in the screenshot below.
 
@@ -98,29 +96,35 @@ The screenshot below illustrates how the nurture journey is set up using the "Ad
 
 Custom triggers activated through a customer journey can also trigger Power Automate flows. In the example used here, the shopper is routed to a human agent via a Power Automate flow. This flow creates a phone call activity for sales agents using Dynamics 365 Sales. The sales agents then can be alerted that a new shopper needs to be called so that they can be made aware of the loyalty program.
 
-To use a custom trigger with a Power Automate flow, navigate to [Power Apps Portal](https://make.powerapps.com):
+To use a custom trigger with a Power Automate flow, navigate to [Power Apps Portal](https://make.powerapps.com) and select **Flows** from the left navigation.
 
 > [!IMPORTANT]
 > Ensure that you're using the same **environment** in Power Automate as you are for your Dynamics 365 Customer Insights - Journeys application. The environment can be viewed and switched in the top right corner of the Power Apps navigation bar (shown at the top of the screenshots in this section).
     
-1. Create a cloud flow that starts with **When an action is performed (Microsoft Dataverse)**. 
+1. Select **+New flow** from the top navigation bar, select **Automated cloud flow**, and create a flow that starts with **When an action is performed (Microsoft Dataverse)**. 
 
       > [!div class="mx-imgBorder"]
-      > ![Screenshot of creating a new Power Automate Flow.](media/create-automated-flow-step8.png "Screenshot of creating a new Power Automate Flow")
+      > ![Screenshot of creating a new Power Automate flow.](media/create-automated-flow-step8.png "Screenshot of creating a new Power Automate flow")
 
-2. Fill in the required fields as follows:
+1. Fill in the required fields as follows:
     - Set Catalog to "Cxp"
     - Set Category to "Custom"
     - Set Table name to "(none)"
     - Set Action name to the name of the custom trigger you activated in your customer journey--in this example, the name of the custom trigger is "Send to Sales agent"
 
-3. Start adding the subsequent step to the flow. In each of these steps, you can use the data fields that came with the custom trigger. In this example, the phone number field mapped in the earlier steps will be available in all the steps of this flow.
+1. Often, you need to pass the **contact ID** from the journey to the flow. Because the contact ID isn't exposed in the journey, you need to run the flow once for every contact in the journey.
 
-      > [!div class="mx-imgBorder"]
-      > ![Screenshot of adding steps to a Power Automate Flow.](media/create-automated-flow-step9.png "Screenshot of adding steps to a Power Automate Flow")
+    The contact ID can be passed with `ActionInputs msdynmkt_profileid` as a value. It can also initialize a variable, as shown in the example below:
+
+    > [!div class="mx-imgBorder"]
+    > ![Screenshot of creating a Power Automate flow using attribute contact ID.](media/automated-flow-step-using-contact-id.png "Screenshot of creating a Power Automate flow using attribute contact ID.")
+
+1. Start adding subsequent steps to the flow. In each of these steps, you can use the data fields that came with the custom trigger. In this example, the phone number field mapped in the earlier steps will be available in all the steps of the flow.
+
+    :::image type="content" source="media/create-automated-flow-step9.png" alt-text="Screenshot of adding steps to a Power Automate flow.":::
 
 > [!IMPORTANT]
-> All attributes must be defined to perform the trigger successfully.
+> To perform the trigger successfully, all attributes must be defined.
 
 > [!TIP]
 > If you can't find your custom trigger name in the **Action name** list, go to **Customer Insights - Journeys** > **Triggers**, select the custom trigger you want to use, then select **Go to code snippet**. The trigger name (beginning with "msdynmkt") is shown in the first line of the code.

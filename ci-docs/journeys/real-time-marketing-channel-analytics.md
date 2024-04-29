@@ -1,7 +1,7 @@
 ---
 title: How to use aggregate channel analytics
 description: Learn how to use and interpret aggregate channel analytics in Dynamics 365 Customer Insights - Journeys.
-ms.date: 09/27/2023
+ms.date: 04/08/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -12,8 +12,6 @@ search.audienceType:
 ---
 
 # How to use aggregate channel analytics
-
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 The built-in aggregate channel analytics dashboard shows important metrics and insights about the delivery and engagement of your marketing assets at any level of aggregation. You can access insights across all journeys and channels as well as zoom in on a particular channel or message. This helps you stay on top of your marketing campaign effectiveness and track the performance of your marketing assets.
 
@@ -69,12 +67,12 @@ This section highlights the spam rate and unsubscribe rate for emails. The follo
 For text messages and push notifications, there's no signal to identify negative engagement, hence metrics in this section don't apply to such communications.
 
 > [!NOTE]
-> Depending on your selection of filters, you might see some metrics show “N/A.” This is because such metrics are not applicable for some or all of the communications based on your selected filters. For example, Hard Bounce/Soft Bounce/Unsubscribe Rate/Spam Rate are applicable only to emails. Select emails to show these KPIs.
+> Depending on your selection of filters, you might see some metrics show “N/A.” This is because such metrics are not applicable for some or all of the communications based on your selected filters. For example, Hard Bounce, Soft Bounce, Unsubscribe Rate, and Spam Rate apply only to emails. Select emails to show these KPIs.
 
 ## Learn more
 
 Here are some advanced resources for this topic:
 
-- [Extracting Marketing Interactions in Dynamics 365 Customer Insights - Journeys](https://community.dynamics.com/blogs/post/?postid=4e96ca1e-52ed-4ae4-9887-af8d6e563304)
+- [Custom reporting with Microsoft Fabric](fabric-integration.md)
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]

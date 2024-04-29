@@ -1,7 +1,7 @@
 ---
 title: Set up an event in outbound marketing
 description: How to plan an event, register basic info, set up your team, manage sessions and speakers, set the event schedule, issue passes,  and manage venues in outbound marketing.
-ms.date: 09/22/2023
+ms.date: 03/26/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -12,8 +12,6 @@ search.audienceType:
 ---
 
 # Set up an event in outbound marketing
-
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -84,7 +82,9 @@ The **Website and form** tab provides options for creating a custom [event websi
 - **Readable event ID**: This is a unique ID for the event. It is generated the first time you save the event, and is based on the event name. The readable event ID becomes [part of the URL](set-up-event-portal.md#open-site) for opening the event website to a particular event.
 - **Event image**: Choose a banner image to show on the event website when browsing the event. You can choose any image that is already [uploaded to your file library](upload-images-files.md), or upload a new one from here.
 - **Portal payment gateway**: To enable online payment during online event registration, set up an account with a third-party online payment provider and then [prepare a payment page](event-payment-gateway.md) on your portal according to their instructions. Then choose that page here. This setting only has an effect for event websites [hosted on the Power Apps portal](set-up-event-portal.md#customize) (it has no effect on externally hosted event websites).
-- **Set registrations end date**: Set this toggle to **Yes** to set a date and time after which contacts will no longer be able to register for the event. Setting an end date for registrations is useful if you would like a cutoff to allow you to finalize your attendee list before the event starts. You can also include a **Website message** regarding the event registration stop date. Set the toggle to **No** to leave registration open until the start of the event.
+- **Set registrations end date**: To establish an end date for event registrations, set the **Set registrations end date** toggle to **Yes**. After the registration end date and time, contacts can no longer register for the event. This feature is useful if you need a cutoff point to finalize your attendee list before the event commences. Additionally, you can include a **Registration closed message** that's displayed when the registration form is accessed after the registration end date has passed. This message hides the registration button. Alternatively, if you want to keep registration open until the start of the event, set the toggle to **No**.
+    > [!NOTE]
+    > The message _"Registration for this event is closed"_ displayed upon submission doesn't correspond to the _Registration closed message_ configured in the user interface. To customize the message displayed upon submission, you need to customize the event website code. For more information, see the [Event management web application in outbound marketing overview](developer/event-management-web-application.md) article.
 - **Use marketing form for registration**: Set the toggle to **Yes** to use a previously prepared [marketing form](marketing-forms.md) for event registration. When the toggle is set to yes, a **Marketing form** option appears below, allowing you to search for the marketing form you would like to use. If you select **No**, the event will use the default event marketing form.
 - **Enable CAPTCHA**: Set the toggle to **Yes** to include a [CAPTCHA](http://www.captcha.net/) on the [registration page](set-up-event-portal.md#registration) of your event website. Set the toggle to **No** to disable the CAPTCHA.
     > [!IMPORTANT]
@@ -109,7 +109,7 @@ Use the **Registration and attendance** tab to see who registered for the event,
 - **Contacts who canceled**: Lists contacts who were registered for the event but who have now canceled their registration. The list includes cancellations made by contacts using the event website and by users using the Customer Insights - Journeys app. If you'd like to communicate with contacts who canceled from one or more events, you can set up a behavioral segment based on `EventRegistrationCancelled` interactions and then use that segment to target a customer journey.
 
     > [!NOTE]
-    > Canceled event registrations are deactivated, not deleted. To cancel an event registration from within Customer Insights - Journeys, simply deactivate the record.
+    > Canceled event registrations are deactivated, not deleted. To cancel an event registration from within Customer Insights - Journeys, deactivate the record by setting its status to "Inactive" in the top right corner of the main registration form.
     >
     > To determine your current Customer Insights - Journeys version, refer to [Find out which version of Dynamics 365 Customer Insights - Journeys you are running](apply-updates.md#find-out-which-version-of-customer-insights---journeys-you-are-running).
 

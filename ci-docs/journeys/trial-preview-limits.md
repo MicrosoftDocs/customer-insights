@@ -1,7 +1,7 @@
 ---
 title: Customer Insights - Journeys limits for trials
 description: Limitations and conditions that apply to trials of Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/23/2023
+ms.date: 03/11/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -13,7 +13,8 @@ search.audienceType:
 
 # Customer Insights - Journeys limits for trials
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+> [!NOTE]
+> Litmus integration is only supported for real-time journeys.
 
 Trials of Customer Insights - Journeys are subject to the following limits and restrictions:
 

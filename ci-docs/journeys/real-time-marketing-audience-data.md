@@ -1,7 +1,7 @@
 ---
 title: Select the audience source for journeys
 description: Learn how to select the audience source for journeys in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/22/2023
+ms.date: 02/01/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -12,8 +12,6 @@ search.audienceType:
 ---
 
 # Select the audience source for journeys
-
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 Audience configuration allows you to manage your audience data sources. Customer Insights - Journeys supports **Contact**, **Lead**, and **Customer profile** entities.
 
@@ -38,6 +36,6 @@ You can change the default recipient or add more recipient fields. You can selec
 A default value is displayed in the *Send-to* field, but you can select any other recipient field from the dropdown menu.
 
 > [!Important]
-> For contacts, only one recipient email address can be used. This is done to remove consent ambiguity. In outbound marketing, a contact record may store several email addresses with one consent for the entire contact. But in Customer Insights - Journeys, consent is given per each email address. Learn more in [Compliance settings](real-time-marketing-compliance-settings.md).
+> Starting in the February 2024 release, it's possible to configure multiple email addresses for a contact's email channel. However, for any release version before February 2024, you can only select a single email address for a contact's email channel configuration.
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]

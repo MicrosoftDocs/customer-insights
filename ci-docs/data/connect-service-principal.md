@@ -10,8 +10,6 @@ ms.reviewer: mhart
 
 # Connect to an Azure Data Lake Storage account by using a Microsoft Entra service principal
 
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
-
 [!INCLUDE [azure-ad-to-microsoft-entra-id](../journeys/includes/azure-ad-to-microsoft-entra-id.md)]
 
 Dynamics 365 Customer Insights - Data provides an option to connect to an Azure Data Lake Storage account by using a Microsoft Entra service principal.
@@ -20,7 +18,6 @@ Automated tools that use Azure services must have restricted permissions. Instea
 
 ## Prerequisites
 
-- The Data Lake Storage account that will use the service principal must be Gen2. Azure Data Lake Gen1 storage accounts are not supported.
 - The Data Lake Storage account has [hierarchical namespace enabled](/azure/storage/blobs/data-lake-storage-namespace).
 - Admin permissions for your Azure tenant, if you have to create a new service principal.
 
@@ -64,7 +61,7 @@ To grant permissions to the service principal for the storage account you want t
 
 |Credential|Requirements|
 |----------|------------|
-|Currently logged in user|**Role**: Storage Blob Data Reader, Storage Blob Contributor, or Storage Blob Owner.<br>**Level**: Permissions granted on the storage account or the container.</br>|
+|Currently logged in user| When connecting to the Azure Data Lake using the *Azure subscription* option: <ul><li>**Role**: Storage Blob Data Reader, Storage Blob Contributor, or Storage Blob Owner.</li><li>**Level**: Permissions granted on the storage account or the container.</li></ul><br>When connecting to the Azure Data Lake using the *Azure resource* option: <ul><li>**Role**: Microsoft.Storage/storageAccounts/read action</li><li>**Level**: Permission granted on the storage account</li></ul><br>AND<br><ul><li>**Role**: Storage Blob Data Reader, Storage Blob Contributor, or Storage Blob Owner.</li><li>**Level**: Permissions granted on the storage account or the container.</li></ul><br>Storage Blob Data Reader role is sufficient to read and ingest data to Customer Insights – Data. However, the Storage Blob Data Contributor or Owner role is required to edit the manifest files from within the data connection experience.|
 |Customer Insights Service Principal -<br>Using Azure Data Lake Storage as a data source</br>|Option 1<ul><li>**Role**: Storage Blob Data Reader, Storage Blob Data     Contributor, or Storage Blob Data Owner.</li><li>**Level**: Permissions granted on the storage account.</li></ul>Option 2 *(without sharing Service Principal access to the storage account)*<ul><li>**Role 1**: Storage Blob Data Reader, Storage Blob Data Contributor, or Storage Blob Data Owner.</li><li>**Level**: Permissions granted on the container.</li><li>**Role 2**: Storage Blob Data Delegator.</li><li>**Level**: Permissions granted on the storage account.</li></ul>|
 |Customer Insights Service Principal - <br>Using Azure Data Lake Storage as an output or destination</br>|Option 1<ul><li>**Role**: Storage Blob Data Contributor or Storage Blob Owner.</li><li>**Level**: Permissions granted on the storage account.</li></ul>Option 2 *(without sharing Service Principal access to the storage account)*<ul><li>**Role**: Storage Blob Data Contributor or Storage Blob Owner.</li><li>**Level**: Permissions granted on the container.</li><li>**Role 2**: Storage Blob Delegator.</li><li>**Level**: Permissions granted on the storage account.</li></ul>|
 

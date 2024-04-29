@@ -1,6 +1,6 @@
 ---
-title: Known issues and workarounds
-description: This article documents known issues and workarounds for Dynamics 365 Customer Insights - Journeys.
+title: Known issues in outbound marketing and workarounds
+description: This article documents known issues in outbound marketing and workarounds.
 ms.date: 08/18/2023
 ms.topic: article
 author: alfergus
@@ -11,9 +11,10 @@ search.audienceType:
   - enduser
 ---
 
-# Known issues and workarounds
+# Known issues in outbound marketing and workarounds
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
+> [!IMPORTANT]
+> This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
 
 This document provides important, late-breaking information about known issues and workarounds for Dynamics 365 Customer Insights - Journeys. For information about monthly bug fixes, visit the [What's new in Dynamics 365 Customer Insights - Journeys](whats-new-marketing.md) article.
 

@@ -7,6 +7,7 @@ ms.topic: overview
 author: radsay01
 ms.author: rsayyaparaju 
 ms.custom: bap-template
+ms.collection: bap-ai-copilot 
 ---
 
 # Data prep report overview (preview)
@@ -62,6 +63,8 @@ There are four primary sections within the data prep report.
 In addition to the data prep report, you get contextual information related to insights, specifically prediction models. Use this information to understand which prediction models are best suited to your data before you go through the time and effort of configuration and running the model.
 
 On the **Predictions** page under the **Create** tab, models labeled as **Use this model** are most suited to your data while models labeled as **Not ready to use** aren't. For any **Not ready to use** models, review the full data prep report and make the necessary fixes to your data per the guidance of the Issues and recommendations section.
+
+[!INCLUDE [copilot-availability](includes/copilot-availability.md)]
 
 ## Next steps
 

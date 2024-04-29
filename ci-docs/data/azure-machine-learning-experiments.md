@@ -10,8 +10,6 @@ ms.reviewer: mhart
 
 # Use Azure Machine Learning-based models
 
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
-
 The unified data in Dynamics 365 Customer Insights- Data is a source for building machine learning models that can generate additional business insights. Customer Insights - Data integrates with Azure Machine Learning to use your own custom models.
 
 ## Prerequisites

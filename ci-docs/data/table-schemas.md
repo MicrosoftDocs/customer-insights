@@ -11,8 +11,6 @@ ms.custom: bap-template
 
 # Table schemas in Common Data Model
 
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
-
 [Common Data Model](/common-data-model/) is a declarative specification, and a definition of standard tables that represent commonly used concepts and activities across business and productivity applications. This model is being extended to observational and analytical data as well. Common Data Model provides well-defined, modular, and extensible business tables—such as Account, Business Unit, Case, Contact, Lead, Opportunity, and Product—as well as interactions with vendors, workers, and customers—such as activities and service level agreements. Anyone can build on and extend Common Data Model definitions to capture additional business-specific ideas.
 
 This shared data model allows applications and data integrators to collaborate more easily by providing a unified definition of data. Common Data Model includes a rich metadata system with standard tables, relationships, hierarchies, traits, and more. It originated from Dynamics 365 apps and is open-sourced on GitHub with over 260 standard tables. A large system of internal and external partners contributes industry-specific concepts to Common Data Model.
@@ -37,6 +35,6 @@ For more information, see the documentation about the [Customer Insights - Data 
 
 View tables in the [Common Data Model Table Navigator](https://microsoft.github.io/CDM/). Select a table from the Insights Application section to get the list of Customer Insights - Data tables and their definitions.
 
-:::image type="content" source="media/CDM-table-navigator.png" alt-text="CDM Table Navigator showing CustomerActivity table.":::
+:::image type="content" source="media/cdm-table-navigator.png" alt-text="Common Data Model Table Navigator showing CustomerActivity table.":::
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

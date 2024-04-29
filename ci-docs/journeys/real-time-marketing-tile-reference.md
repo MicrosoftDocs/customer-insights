@@ -13,8 +13,6 @@ search.audienceType:
 
 # Customer Insights - Journeys tile reference
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
 This article describes the various journey capabilities available in Customer Insights - Journeys. For complete examples of creating customer journeys, see [Create a trigger-based journey](real-time-marketing-trigger-based-journey.md) and [Create a segment-based journey](real-time-marketing-segment-based-journey.md).
 
 ## Journey start
@@ -58,7 +56,7 @@ Customer Insights - Journeys customer journeys let you reach customers through v
 
 - [Send an email](real-time-marketing-email.md)
 - [Send a text message](real-time-marketing-outbound-text-messaging.md)
-- [Send a push notification](real-time-marketing-push-notifications.md)
+- [Send a push notification](push-messages.md)
 
 ### A/B test
 

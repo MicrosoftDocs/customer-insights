@@ -1,7 +1,7 @@
 ---
 title: Create and design a marketing email message
 description: Learn how to create and design a marketing email message in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/18/2023
+ms.date: 02/05/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -12,8 +12,6 @@ search.audienceType:
 ---
 
 # Create and design a marketing email message
-
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 Read this article to learn how to create an email message and design its content. See also the [email marketing overview](prepare-marketing-emails.md) for a summary of the full message creation, delivery, and analysis process for email marketing.
 
@@ -30,15 +28,13 @@ For a step-by-step tutorial on how to create and send your first marketing email
 
 To create a new email marketing message, go to **Customer Insights - Journeys** > **Channels** > **Emails** and select **New** on the command bar.
 
-> [!div class="mx-imgBorder"]
-> ![Location of the new-email button.](media/new-email-button-location4.png)
+:::image type="content" source="media/new-email-button-location4.png" alt-text="Location of the new-email button." lightbox="media/new-email-button-location4.png":::
 
 ## Establish your basic layout by choosing the right template
 
 The first thing you are asked when you create a new message is to select a template. Dynamics 365 Customer Insights - Journeys includes many templates, each of which includes both structural and style elements. You can select **Skip** to start with a  blank template, which lets you start from scratch with an empty message. After you select a template or choose **Skip**, you'll be in the email designer, where you can finish creating your email content.
 
-> [!div class="mx-imgBorder"]
-> ![Dialog for choosing an email template.](media/email-template-dialog.png)
+:::image type="content" source="media/email-template-dialog.png" alt-text="Dialog for choosing an email template." lightbox="media/email-template-dialog.png":::
 
 When you create a new message from a template, the template content is copied into your new message. The message and template aren't linked, so when you edit the message, the template won't change. Likewise, any future changes that you make to a template won't affect any existing messages that were created using it.
 
@@ -54,8 +50,7 @@ After choosing a template, a new email message opens showing the initial content
 
 Each email message must have a name, which identifies the message when you're looking at the list view or when selecting messages to include in a customer journey. To enter a name, select the **Email name** field on the left side of the header and enter a name for your new message.
 
-> [!div class="mx-imgBorder"]
-> ![Enter a name for your new email.](media/email-edit-header-fields.png)
+:::image type="content" source="media/email-edit-header-fields.png" alt-text="Enter a name for your new email." lightbox="media/email-edit-header-fields.png":::
 
 ### Enter a subject for the message
 
@@ -63,15 +58,16 @@ Enter a subject for your message by selecting **Add a subject** in the email hea
 
 You can also add a preheader, which shows up next to or below the subject line in the recipient's inbox. Preheader allows you to create custom text that displays in your recipient's inbox before they open the email message. The preheader is your chance to create a line that grabs the recipient's attention as soon as they see your message.
 
-> [!div class="mx-imgBorder"]
-> ![Enter a subject for your new email.](media/email-edit-subject.png)
+:::image type="content" source="media/email-edit-subject.png" alt-text="Enter a subject for your new email." lightbox="media/email-edit-subject.png":::
 
 ### Other important settings
 
 Other important settings are also provided in the **Email header** pane, but these should already show default values that should work fine in most situations.
 
-> [!div class="mx-imgBorder"]
-> ![Access additional email header settings.](media/email-header-settings.png)
+1. Go to **Settings** in the right panel and select it.
+1. After selecting the settings, you'll be able to see the **Email header**.
+
+:::image type="content" source="media/email-header-settings.png" alt-text="Access additional email header settings." lightbox="media/email-header-settings.png":::
 
 To access all the **Email header** settings, select a section when hovering over it. The **Email header** settings include the following:
 

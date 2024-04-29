@@ -13,8 +13,6 @@ search.audienceType:
 
 # Create branded, customized preference centers to manage customer consent
 
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
-
 Preference centers in Customer Insights - Journeys allow you to provide customers with branded experiences to sign up for communications and fine-tune their preferences to ensure they receive the right communications.
 
 ## Creating preference centers
@@ -43,11 +41,13 @@ In addition, you can add content and update the branding and styling of the page
 > Customer Insights - Journeys preference centers will update the contact point consent record for the email and phone number channels. It will not make updates to the **DoNotEmail** and **DoNotBulkEmail** fields on the contact or lead record. This is because there is no mapping between Customer Insights - Journeys purposes and topics to the fields on the contact or lead.
 
 ## Advanced preference center customization
+
 Preference center forms are built on top of Customer Insights - Journeys forms which enable you to customize the forms by applying your own CSS and add custom JavaScript.
 
 Learn more: [Manage Customer Insights - Journeys forms](real-time-marketing-manage-forms.md#advanced-form-customization)
 
 ## Replacing a preference page with a preference center
+
 > [!IMPORTANT]
 > We recommend replacing preference pages with preference centers to take full advantage of the consent features available in Customer Insights - Journeys.
 

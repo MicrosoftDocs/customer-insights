@@ -1,8 +1,8 @@
 ---
 title: "Set up and manage exports (preview)"
 description: "Manage exports to share data."
-author: pkieffer
-ms.author: philk
+author: Nils-2m
+ms.author: nikeller
 ms.reviewer: mhart
 ms.date: 10/04/2023
 ms.topic: how-to
@@ -12,8 +12,6 @@ ms.custom: bap-template
 # Set up and manage exports (preview)
 
 [!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
-
-[!INCLUDE [consolidated-sku](./includes/consolidated-sku.md)]
 
 All exports follow the same general set up and management process. You can also schedule exports. A common use case for exports of segments is to share lists of your customers to advertising services like Google Ads or Meta Ads for marketing purposes. A common use case for the export of full tables, which we call a data-out export, is to share data to Azure Data Lake Gen2, from where organizations can further process these tables with their custom solutions.
 
@@ -78,6 +76,8 @@ When editing the schedule for several exports, make a selection under **Keep or 
 
 - **Keep individual schedules**: Keep the previously defined schedule for the selected exports and only disable or enable them.
 - **Define new schedule for all selected exports**: Override the existing schedules of the selected exports.
+
+Understanding the status of custom-scheduled exports is tricky, because the status on the exports page is only the most recent scheduled system refresh. Exports with a custom schedule frequently show the misleading status *Skipped* because they don't run during a system refresh. Instead, they refresh per the custom schedule you defined. To see the history for an export, go to **Settings** > **System** > **Status** and review the **Export destinations** section. To view the details of the last several runs, select the task or process name. At this point, there's no direct indication of custom-scheduled tasks within this history. [Learn more about system status](system.md#view-system-status).
 
 ### Run exports on demand
 
