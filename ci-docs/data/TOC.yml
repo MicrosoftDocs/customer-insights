@@ -126,16 +126,20 @@
       href: customer-profiles.md
     - name: Manage the search & filter index
       href: search-filter-index.md
+    - name: Real-time web personalization
+      items:
+        - name: Real-time web personalization overview
+          href: real-time-web-personalization-overview.md
+        - name: Set up real-time web personalization
+          href: real-time-web-personalization.md
+        - name: No-code web personalization using Optimizely
+          href: optimizely-integration.md
     - name: Define customer activities
       href: activities.md
     - name: Integrate activities with Dynamics 365 timelines
       href: activities-in-d365-timeline.md
     - name: Use consent management
       href: consent-management.md
-    - name: Use web data for personalization
-      href: unknown-to-known.md
-    - name: Manage unknown customer profiles
-      href: manage-unknown-profiles.md
 
 - name: Copilot in Customer Insights - Data
   items:
