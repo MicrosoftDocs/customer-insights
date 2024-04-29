@@ -26,8 +26,8 @@ Create a segment of your *Most valuable customers*. You can [create your own con
 
 ### Create email and text messages
 
-- **Product announcement email**: This is the initial email announcement that is sent to your *most valuable customers*. This email must contain a link to the new product.
-- **Product launched text message**: This is a follow-up text message that is sent after the product is launched. This follow-up message is sent only to customers who clicked the link in the first email.
+- **Product announcement email**: Initial email announcement that is sent to your *most valuable customers*. This email must contain a link to the new product.
+- **Product launched text message**: Follow-up text message that is sent after the product is launched. This follow-up message is sent only to customers who clicked the link in the first email.
 
 You can build the journey while the content is in the **Draft** state. In order to publish and go live with the journey, the content must be in the **Ready to send** state.
 
@@ -44,9 +44,9 @@ On the "Create a new journey" screen:
 - Select **Segment-based** for the journey type. Customers start a segment-based journey when they qualify to be part of a segment.
 - Select a segment
 - Choose the **frequency** at which your journey should run:
-    - A **one-time** journey with a **static** audience runs exactly once.
-    - A **one-time** journey where **newly added members can start at any time** runs right away for anyone currently in the segment and runs again as members are added to the segment. Each person only goes through the journey once, even if they're removed and re-added to the segment later.
-    - A **repeating** journey runs on a schedule that you define. The journey only runs at those times and anyone added to segments in between those times only participates in the journey the next time it's scheduled to run.
+  - A **one-time** journey with a **static** audience that runs one time. When the journey starts, the current members of the segment start the journey.
+  - A **one-time** journey where **newly added members can start at any time** responds to changes in the segment membership, letting more people start the journey after it starts. When the journey starts, the current members of the segment start the journey. Newly added segment members start the journey when the segment is refreshed. Each person goes through the journey one time, even if they're removed and then later added again to the segment.
+  - A **repeating** journey runs on a schedule that you define. Every time the journey reaches the scheduled run time all current members of the segment start the journey. Members added to the segment between the scheduled run times will be included in the next run of the journey. Every time the journey runs all members of the segment start the journey, even if they previously entered the journey.
 - Set the **start date and time**: Specify the start date and time when you want to send the announcement. If you want, you can specify the time zone for the journey.
 
 ## Add the announcement messages
