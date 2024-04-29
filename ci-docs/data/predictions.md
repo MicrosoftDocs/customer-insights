@@ -1,20 +1,20 @@
 ---
 title: Create and manage predictions
 description: Learn how to create and manage predictions in Dynamics 365 Customer Insights - Data."
-ms.date: 09/01/2023
+ms.date: 04/29/2024
 ms.reviewer: mhart
 ms.topic: how-to
-author: zacookmsft
-ms.author: zacook
+author: radsay01
+ms.author: rsayyaparaju 
 ms.custom: bap-template
 ms.collection: bap-ai-copilot 
 ---
 
 # Create and manage predictions
 
-Dynamics 365 Customer Insights - Data comes with various options that leverage AI and machine learning to predict data.
+Dynamics 365 Customer Insights - Data comes with various options that use AI and machine learning to predict data.
 
-Predictions offer capabilities to create better customer experiences, improve business capabilities, and revenue streams. We strongly recommend you balance the value of your prediction against the impact it has and biases that may be introduced in an ethical manner. Learn more about how Microsoft is [addressing Responsible AI](https://www.microsoft.com/ai/responsible-ai?activetab=pivot1%3aprimaryr6).
+Predictions offer capabilities to create better customer experiences, improve business capabilities, and revenue streams. We strongly recommend you balance the value of your prediction against the effect it has and biases that might be introduced in an ethical manner. Learn more about how Microsoft is [addressing Responsible AI](https://www.microsoft.com/ai/responsible-ai?activetab=pivot1%3aprimaryr6).
 
 ## Generate insights using out-of-box prediction models
 
@@ -25,13 +25,13 @@ The following models are available:
 - [Customer lifetime value](predict-customer-lifetime-value.md): Predicts the potential revenue of a customer throughout the entire interaction with a business.
 - [Product recommendation](predict-product-recommendation.md): Suggests sets of predictive product recommendations based on purchase behavior and customers with similar purchase patterns.
 - [Subscription churn](predict-subscription-churn.md): Predicts whether a customer is at risk for no longer using your company’s subscription products or services.
-- [Transactional churn](predict-transactional-churn.md): Predicts if an individual customer will no longer purchase your products or services in a certain time frame.
+- [Transactional churn](predict-transactional-churn.md): Predicts if an individual customer might no longer purchase your products or services in a certain time frame.
 - [Sentiment analysis](sentiment-analysis.md): Analyzes sentiment of customer feedback and identifies business aspects that are frequently mentioned.
 
 To understand the readiness of your data to produce insights, see [Data prep report overview](data-prep-overview.md).
 
 > [!TIP]
-> We recommend that you regularly refresh out-of-the box models with updated data to ensure they accurately inform your business use case. Data is refreshed ad-hoc when the system ingests new or updated data sources. However, models will only rescore in this case and continue to use the existing training data.
+> We recommend that you regularly refresh out-of-the-box models with updated data to ensure they accurately inform your business use case. Data is refreshed ad-hoc when the system ingests new or updated data sources. However, models will only rescore in this case and continue to use the existing training data.
 >
 > Configure an **Update schedule** by setting the model retraining schedule during configuration. The model will retrain and rescore on this schedule, which you can change at any time.
 
@@ -39,7 +39,7 @@ To understand the readiness of your data to produce insights, see [Data prep rep
 
 Go to the **Insights** > **Predictions** page. On the **My predictions** tab, view the predictions you created, their prediction type, output table name, status, the last time the prediction was edited, and the last time the data was refreshed. You can sort the list of predictions by any column.
 
-Select a prediction to view available actions.
+To view available actions, select a prediction.
 
 :::image type="content" source="media/predictions.png" alt-text="My predictions page.":::
 
@@ -57,9 +57,9 @@ Predictions can be refreshed on an automatic schedule or refreshed manually on d
 
 ### View the input data usability report
 
-The input data usability report provides a consolidated view of the errors and warnings that your out-of-box predictions may be generating. It also gives recommendations on how to improve the model performance.
+The input data usability report provides a consolidated view of the errors and warnings that your out-of-box predictions might be generating. It also gives recommendations on how to improve the model performance.
 
-The report is available after a model has completed its training process. It's created for each model separately, regardless of whether it completed training successfully or not.
+The report is available after a model completed its training process. Each model gets a separate report, regardless of whether it completed training successfully or not.
 
 On the **My predictions** tab, select the prediction and choose **Input data usability report**. Or from the prediction details view, select **Input data usability report**.
 
@@ -68,7 +68,7 @@ On the **My predictions** tab, select the prediction and choose **Input data usa
 The report includes:
 
 - **Name:** Descriptive name of the error, warning, or recommendation.
-- **Step:** Model phase, train or score, the information refers to.
+- **Step:** Model phase, train or score, and the information refers to.
 - **State:** Severity of the information (error, warning, recommendation).
 - **Column name:** Column in a table that needs to be modified to improve the model performance.
 - **Table:** Name of the table that needs to be modified to improve the model performance.

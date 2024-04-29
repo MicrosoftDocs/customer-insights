@@ -1,6 +1,6 @@
 ---
-title: Use custom fonts in Customer Insights - Journeys
-description: Learn how to use custom fonts in Dynamics 365 Customer Insights - Journeys.
+title: Use custom fonts in emails
+description: Learn how to use custom fonts in emails in Dynamics 365 Customer Insights - Journeys.
 ms.date: 12/12/2023
 ms.topic: article
 author: alfergus
@@ -11,7 +11,7 @@ search.audienceType:
   - enduser
 ---
 
-# Use custom fonts in Customer Insights - Journeys
+# Use custom fonts in emails
 
 In the fast-changing field of marketing, it's important to combine design, beauty, and accessibility. Typography, especially the use of web fonts, is crucial for achieving this harmony. This article shows you how to use web fonts in your Customer Insights - Journeys marketing channels, making sure they're both attractive and accessible.
 

@@ -1,11 +1,11 @@
 ---
 title: "Connect to a Power Query data source (contains video)"
 description: "Ingest data through a Power Query connector (contains video)."
-ms.date: 01/22/2024
+ms.date: 03/06/2024
 ms.reviewer: v-wendysmith
 ms.topic: how-to
-author: mukeshpo
-ms.author: mukeshpo
+author: joytaylor
+ms.author: joytaylor
 ms.custom: bap-template
 ---
 
@@ -47,6 +47,8 @@ To securely connect data in a private network, Power Query supports the use of [
 
 1. To add additional tables to your data source in the **Edit queries** dialog, go to **Home** and select **Get data**. Repeat steps 5-10 until you have added all tables for this data source. If you have a database that includes multiple datasets, each dataset is its own table.
 
+1. Select whether you want to refresh the data source manually or automatically. To refresh automatically, set the time frame. 
+
 1. Select **Save**. The **Data sources** page opens showing the new data source in **Refreshing** status.
 
    [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
@@ -67,8 +69,10 @@ Data sources that are created after associating a Dataverse environment with Cus
 Data gateways from an existing Power BI or Power Apps environment will be visible and you can reuse them in Customer Insights if the data gateway and the Customer Insights environment are in the same Azure Region. The data sources page shows links to go to the Microsoft Power Platform environment where you can view and configure on-premises data gateways.
 
 > [!IMPORTANT]
-> Make sure your gateways are updated to latest version. You can install an update and reconfigure a gateway from a prompt shown on the gateway screen directly or [download the latest version](https://powerapps.microsoft.com/downloads/). If you don't use the latest gateway version, the dataflow refresh fails with error messages like **The keyword isn't supported: configuration properties. Parameter name: keyword**.
+> Update your gateways to the latest version. You can install an update and reconfigure a gateway from a prompt shown on the gateway screen directly or [download the latest version](https://powerapps.microsoft.com/downloads/). If you don't use the latest gateway version, the dataflow refresh fails with error messages like **The keyword isn't supported: configuration properties. Parameter name: keyword**.
 >
+> Make sure that the gateway VM is sized appropriately. [Power BI recommends that you start with a machine](/power-bi/guidance/gateway-onprem-sizing) with at least 8 CPU cores, 8 GB of RAM, and multiple Gigabit network adapters. You can then [measure a typical gateway workload by logging CPU and memory system counters](/data-integration/gateway/service-gateway-performance).
+> 
 > Errors with on-premises data gateways are often caused by configuration issues. For more information about troubleshooting data gateways, see [Troubleshoot the on-premises data gateway](/data-integration/gateway/service-gateway-tshoot).
 
 ## Edit Power Query data sources
@@ -92,23 +96,58 @@ Loading data can take time. After a successful refresh, review the ingested data
 
 ## Transfer Power Query data source ownership
 
-You can transfer the data source ownership to other people in your organization. For example, if the owner leaves the organization or if changes are required for collaboration purposes 
+You can transfer the data source ownership to other people in your organization. For example, if the owner leaves the organization or if changes are required for collaboration purposes. 
 
-### Transfer the ownership,
+### Transfer the ownership
 
 The user performing this action must have a *Dataverse Administrator* role.
 
 1. Go to [Power Apps](https://make.powerapps.com).
 
-1. Select the Dataverse environment that maps to your Customer Insights environment.
+1. Select the Dataverse environment that maps to your Customer Insights - Data environment.
 
 1. Go to **Dataflows** and select **All Dataflows**.
 
-1. Search for the owner of the dataflow which you want to take ownership.
+1. Search for the owner of the dataflow that you want to take ownership.
 
-1. Select the ellipsis &vellip; and select **Change Owner**.
+1. Select the vertical ellipsis (&vellip;) and select **Change Owner**.
 
 1. Enter the name of the new owner and select **Change Owner**.
+
+## Update Power Query schedules to system refresh schedule
+ 
+Customer Insights - Data is aligning Power Query separate refresh schedules with the system refresh schedule. To ensure that Customer Insights - Data reflects current data, remove your Power Query refresh schedules so that these data sources refresh as part of the system refresh. If your Power Query data source shows **Completed with warnings** on the **Data sources** page, your data source contains a separate refresh schedule. After successfully removing the separate schedule and a system refresh, the status changes to **Completed**.
+
+> [!IMPORTANT]
+> The data source refresh time is added to the total time for a system refresh. We recommend you [view your Power Query run durations](#view-power-query-run-durations) and then change the [system refresh schedule](schedule-refresh.md) if needed. For example, a Power Query source might take an average of 30 minutes to refresh. Therefore, we recommended you update the system refresh schedule to start 30 minutes earlier to recieve results at a simaliar time.
+
+### Remove Power Query schedules
+
+1. Go to **Data** > **Data Sources**.
+
+1. Select the desired Power Query data source.
+
+1. Select the vertical ellipsis (&vellip;) and select **Edit refresh settings**.
+
+1. Select **Refresh manually**.
+   
+1. Select **Save**.
+
+### View Power Query run durations
+
+1. Go to **Data** > **Data Sources**.
+
+1. Select the desired Power Query data source.
+
+1. Select **Status**. 
+
+## Refresh Power Query data sources on demand
+
+Only the owner of a Power Query data source can refresh the data source on demand. If you aren't the owner of the data source, find the data source owner under **Managed by others** on the **Data Sources** page.
+
+1. Go to **Data** > **Data Sources**.
+
+1. Select the desired Power Query data source, and then select **Refresh**.
 
 ## Next steps
 

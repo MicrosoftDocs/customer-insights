@@ -1,24 +1,24 @@
 ---
 title: Predict transaction churn (contains video)
 description: "Predict whether a customer is at risk for no longer purchasing your products or services."
-ms.date: 11/30/2023
+ms.date: 04/29/2024
 ms.reviewer: mhart
 ms.topic: how-to
-author: zacookmsft
-ms.author: zacook
+author: radsay01
+ms.author: rsayyaparaju 
 ms.custom: bap-template
 ms.collection: bap-ai-copilot 
 ---
 
 # Predict transaction churn
 
-Transactional churn prediction helps predict if a customer will no longer purchase your products or services in a given time window. Transaction churn is useful to find customers who are no longer purchasing products at any time during the defined churn window. To find customers who might cancel their preset ongoing purchases, we recommend using the [Subscription churn model.](sample-guide-predict-subscription-churn.md)
+Transactional churn prediction helps predict if a customer no longer purchase your products or services in a given time window. Transaction churn is useful to find customers who are no longer purchasing products at any time during the defined churn window. To find customers who might cancel their preset ongoing purchases, we recommend using the [Subscription churn model.](sample-guide-predict-subscription-churn.md)
 
-You must have business knowledge to understand what churn means for your business. For instance, a business with annual events can define their churn measured in years, while a business that caters to weekly sales may measure churn in months. We support time-based churn definitions, meaning a customer is considered to have churned after a period of no purchases.
+You must have business knowledge to understand what churn means for your business. For instance, a business with annual events can define their churn measured in years, while a business that caters to weekly sales measures churn in months. We support time-based churn definitions, meaning a customer is considered as churned after a period of no purchases.
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWN6Eg]
 
-For example, Contoso wants to know how engaged customers are for an email campaign dedicated to retention. Contoso's customers visit a storefront on a variable basis, most often around 3-4 times a month. Their transactions are irregular, making it difficult to determine when a customer has stopped purchasing the Contoso brand. Through the transaction churn model, Contoso can determine the likelihood that customers will buy again. They can see the leading patterns that lead to customers leaving the brand, allowing them to adjust other strategies.
+For example, Contoso wants to know how engaged customers are for an email campaign dedicated to retention. Contoso's customers visit a storefront on a variable basis, most often around 3-4 times a month. Their transactions are irregular, making it difficult to determine when a customer stops purchasing the Contoso brand. Through the transaction churn model, Contoso can determine the likelihood that customers buy again. They can see the leading patterns that lead to customers leaving the brand, allowing them to adjust other strategies.
 
 ## Prerequisites
 
@@ -37,7 +37,7 @@ For example, Contoso wants to know how engaged customers are for an email campai
   - **Timestamp:** Date and time of the event identified by the primary key.
   - **Event:** Name of the event you want to use. For example, a field called "UserAction" in a grocery store might be a coupon use by the customer.
   - **Details:** Detailed information about the event. For example, a field called "CouponValue" in a grocery store might be the currency value of the coupon.
-- Less than 20% of missing values in the data field of the table provided
+- Less than 20% of missing values in the data field of the table provided.
 
 ## Create a transaction churn prediction
 
@@ -57,7 +57,7 @@ Select **Save draft** at any time to save the prediction as a draft. The draft p
 
 1. Set the **Prediction window**. For example, predict the risk of churn for your customers over the next 90 days to align to your marketing retention efforts. Predicting churn risk for a longer or shorter period of time can make it more difficult to address the factors in your churn risk profile, but it depends on your specific business requirements.
 
-1. Enter the number of days to define churn in the **Churn definition** field. For example, if a customer hasn't made a purchase in the last 30 days, they might be considered as churned for your business.
+1. Enter the number of days to define churn in the **Churn definition** field. For example, if a customer has no purchase in the last 30 days, they might be considered as churned for your business.
 
 1. Select **Next**.
 
@@ -65,7 +65,7 @@ Select **Save draft** at any time to save the prediction as a draft. The draft p
 
 1. Select **Add data** for **Customer transaction history**.
 
-1. Select the semantic activity type, **SalesOrder** or **SalesOrderLine**, that contains the transaction history information. If the activity hasn't been set up, select **here** and create it.
+1. Select the semantic activity type, **SalesOrder** or **SalesOrderLine**, that contains the transaction history information. If the activity isn't set up, select **here** and create it.
 
 1. Under **Activities**, if the activity attributes were semantically mapped when the activity was created, choose the specific attributes or table you'd like the calculation to focus on. If semantic mapping didn't occur, select **Edit** and map your data.
 
@@ -77,11 +77,11 @@ Select **Save draft** at any time to save the prediction as a draft. The draft p
 
 1. Add more activities or select **Next**.
 
-### Add additional data (optional)
+### Add more data (optional)
 
 1. Select **Add data** for **Customer activities**.
 
-1. Select the semantic activity type that contains the data you would like to use. If the activity hasn't been set up, select **here** and create it.
+1. Select the semantic activity type that contains the data you would like to use. If the activity isn't been set up, select **here** and create it.
 
 1. Under **Activities**, if the activity attributes were semantically mapped when the activity was created, choose the specific attributes or table you'd like the calculation to focus on. If semantic mapping didn't occur, select **Edit** and map your data.
 
@@ -89,7 +89,7 @@ Select **Save draft** at any time to save the prediction as a draft. The draft p
 
 1. Select **Save**.
 
-1. Select **Next**
+1. Select **Next**.
 
 ### Set update schedule
 
@@ -103,7 +103,7 @@ The **Review and run** step shows a summary of the configuration and provides a 
 
 1. Select **Edit** on any of the steps to review and make any changes.
 
-1. If you're satisfied with your selections, select **Save and run** to start running the model. Select **Done**. The **My predictions** tab displays while the prediction is being created. The process may take several hours to complete depending on the amount of data used in the prediction.
+1. If you're satisfied with your selections, select **Save and run** to start running the model. Select **Done**. The **My predictions** tab displays while the prediction is being created. The process can take several hours to complete depending on the amount of data used in the prediction.
 
 [!INCLUDE [progress-details](includes/progress-details-pane.md)]
 

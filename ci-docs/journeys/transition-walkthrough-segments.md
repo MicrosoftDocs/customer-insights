@@ -1,7 +1,7 @@
 ---
 title: Transition segments, emails, journeys, and assets
 description: Learn how to transition segments, emails, journeys, and assets from outbound marketing to real-time journeys in Dynamics 365 Customer Insights - Journeys.
-ms.date: 11/16/2023
+ms.date: 04/18/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -31,6 +31,8 @@ While reviewing the imported emails, it's worth considering whether you should s
 
 Journeys in real-time journeys are the equivalent to customer journeys in outbound marketing. Journeys are the container that define the sequence of marketing actions that contacts are involved in. The underlying architecture for journeys in the real-time journeys module is fundamentally different from outbound marketing, which is why journeys can't be transferred automatically and manual recreation of the journey is required.
 
+Using quiet times, you can control when messages get delivered, increasing engagement and meeting customer preferences. Quiet times allow you to comply with regulations by only reaching customers at their preferred times or by preventing nighttime, weekend, or holiday deliveries. Learn more: [Improve communication timing by setting up quiet times](real-time-marketing-quiet-times.md)
+
 ## Asset library
 
 No migration of the asset library should be needed. If you're using the outbound marketing asset library, the same asset library is used by real-time journeys, so you can continue to use all previously uploaded assets. If you're using an external asset library, the process remains the same (get the URL of the asset from the external library and insert it in your messages).
@@ -41,7 +43,6 @@ The features listed below may be of interest as you transition from outbound mar
 
 ### Scheduling
 
-- **Quiet hours**: Control when messages get delivered, increasing engagement and meeting customer preferences. Comply with regulations by only reaching customers at their preferred times. Prevent nighttime, weekend, or holiday deliveries, and adjust settings per channel, message type, or business line. Learn more: [Improve communication timing by setting up quiet times](/dynamics365/release-plan/2023wave2/marketing/dynamics365-marketing/prevent-messages-sending-during-unwanted-times-setting-up-quiet-times-using-copilot)
 - **Send scheduling**: Elevate your customer engagement, conversion rates, and revenue with our send scheduling in real-time journeys. Reach your customers when they're the most active and likely to respond aligning their habits and preferences. Schedule deliveries within specific time frames daily, or on particular days weekly to maximize impact. Learn more: [Reach customers at the right moment with send scheduling](/dynamics365/release-plan/2023wave2/marketing/dynamics365-marketing/reach-customers-at-right-moment-send-scheduling)
 
 ### Email

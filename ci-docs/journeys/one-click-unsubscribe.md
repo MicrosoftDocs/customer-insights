@@ -1,7 +1,7 @@
 ---
 title: One-click unsubscribe support for emails 
 description: Learn how to use one-click unsubscribe support for emails in Dynamics 365 Customer Insights - Journeys
-ms.date: 01/30/2024
+ms.date: 03/18/2024
 ms.topic: get-started
 author: alfergus
 ms.author: alfergus
@@ -16,10 +16,10 @@ search.audienceType:
 > [!IMPORTANT]
 > Google has clarified that senders that include an unsubscribe link in an email message have until June 1, 2024 to implement one-click unsubscribe in all commercial and promotional emails.
 >
-> Refer [Google's one-click unsubscribe FAQ](https://support.google.com/a/answer/14229414?sjid=761938282406717544-NC#zippy=%2Cdo-all-messages-require-one-click-unsubscribe) for more up-to-date information.
+> For more up-to-date information, refer to [Google's one-click unsubscribe FAQ](https://support.google.com/a/answer/14229414?sjid=761938282406717544-NC#zippy=%2Cdo-all-messages-require-one-click-unsubscribe).
 
-> [!NOTE]
-> This is pre-release documentation. The feature switch to turn this capability on isn't available yet. We'll update this page when the feature switch becomes available.
+> [!TIP]
+> Starting on April 15, 2024, unsubscribe links will expire one year after the link is created and will no longer work.
 
 Email providers and the [underlying protocols](https://datatracker.ietf.org/doc/html/rfc8058) support giving email recipients the ability to unsubscribe from emails using "one click" without leaving their email application. For example, Google surfaces an **Unsubscribe** link at the top of their email user interface:
 
@@ -109,26 +109,31 @@ Outbound marketing users that manage consent for different brands separately and
 1. Open the **Settings** menu ![The Settings menu icon.](media/settings-icon.png "The Settings menu icon") at the top of the page and select **Advanced settings**.
 1. The advanced-settings area opens in a new browser tab. Note that this area uses a horizontal navigator at the top of the page instead of a side navigator. Navigate to **Settings** > **Process center** > **Processes**.
 1. To create a process for custom unsubscribe, select the **+New** icon. Add a **Process name**. For **Category**, select **Action** and for **Entity**, select **None (global)**.
-   > [!div class="mx-imgBorder"]
-   > ![Create unsubscribe process](media/create-unsubscribe-process.png "Create unsubscribe process")
+
+    :::image type="content" source="media/create-unsubscribe-process.png" alt-text="Create unsubscribe process." lightbox="media/create-unsubscribe-process.png":::
+
 1. A new window opens to add process details. Create a mandatory input parameter name **contactid**. Make sure it's of the **EntityReference** type and points to the **Contact** entity.
-   > [!div class="mx-imgBorder"]
-   > ![Create a mandatory input parameter as contactid](media/add-an-input-parameter.png "Create a mandatory input parameter as contactid")
+    
+    :::image type="content" source="media/add-an-input-parameter.png" alt-text="Create a mandatory input parameter as contactid." lightbox="media/add-an-input-parameter.png":::
+
 1. Select the **Add Step** dropdown at the bottom of the window and select **Update record**. Enter a description for the changes that should happen to contact on unsubscribe, then select **Set properties**. A new window opens where you can set the **Contact preferences** that change when a customer uses the one-click unsubscribe button. For example, in the image below, **Phone** and **Fax** are set to **Do not allow** on one-click unsubscribe.
-   > [!div class="mx-imgBorder"]
-   > ![Describe changes when the functionality is unsubscribed](media/describe-changes-when-unsubscribed.png "Describe changes when the functionality is unsubscribed")
-1. Select **Save and close**. Then, on the main process window, select **Save** and then select **Activate** to start the process.
-   > [!div class="mx-imgBorder"]
-   > ![Activate the unsubscribe process](media/activate-the-process.png "Activate the unsubscribe process")
+    
+    :::image type="content" source="media/describe-changes-when-unsubscribed.png" alt-text="Describe changes when the functionality is unsubscribed." lightbox="media/describe-changes-when-unsubscribed.png":::
+
+1. Select **Save and close**. Then, on the main process window, select **Save** and then select **Activate** in the top toolbar to start the process.
+
 1. Go to the [maker portal](https://make.powerapps.com/) and select the applicable environment.
-   > [!div class="mx-imgBorder"]
-   > ![Select the environment](media/select-the-environment.png "Select the environment")
+    
+    :::image type="content" source="media/select-the-environment.png" alt-text="Select the environment." lightbox="media/select-the-environment.png":::
+
 1. Select the **Setting definition** entity and search for **Outbound marketing one-click unsubscribe**.
-   > [!div class="mx-imgBorder"]
-   > ![Select the setting definitions to one-click unsubscribe](media/select-setting-definitions-to-unsubscribe.png "Select the setting definitions to one-click unsubscribe")
+    
+    :::image type="content" source="media/select-setting-definitions-to-unsubscribe.png" alt-text="Select the setting definitions to one-click unsubscribe." lightbox="media/select-setting-definitions-to-unsubscribe.png":::
+
 1. Edit this value and make sure that it's pointing to the unique name of your custom workflow that you created earlier in **Step 2**. For example, in this case the name of the workflow is **new_msdyncrm_custom_unsubscribe**. Save the changes.
-   > [!div class="mx-imgBorder"]
-   > ![Add the attribute values](media/add-the-attribute-values.png "Add the attribute values")
+    
+    :::image type="content" source="media/add-the-attribute-values.png" alt-text="Add the attribute values." lightbox="media/add-the-attribute-values.png":::
+
 1. Test that your handler is executed when the one-click unsubscribe action is performed.
 
 ## Frequently asked questions

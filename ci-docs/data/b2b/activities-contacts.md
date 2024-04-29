@@ -13,7 +13,7 @@ ms.custom: bap-template
 
 [!INCLUDE [public-preview-banner](../includes/public-preview-banner.md)]
 
-[!INCLUDE [consolidated-sku](../includes/consolidated-sku.md)]
+
 
 Business contact activities are actions or events performed by business contacts. For example, transactions, support call duration, website reviews, purchases, or returns. These activities are contained in one or more data sources. With Customers Insights, consolidate your contact activities from these data sources and associate them with customer profiles. These activities appear chronologically in a timeline on the customer profile. Include the timeline in Dynamics 365 apps with the [Customer Insights - Data Timeline Integration](../activities-in-d365-timeline.md) or the [Customer Card Add-in](../customer-card-add-in.md) solution.
 

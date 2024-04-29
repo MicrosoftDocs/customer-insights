@@ -1,29 +1,21 @@
 ### YamlMime:Hub
 
-# This template provides the structure of a product hub page. For additional guidance and information, see the article, Create a Dynamics 365 product hub page in the Contributors guide.
-# To provide feedback on this template, contact [bace feedback team](mailto:templateswg@microsoft.com).
-
-# Remove all comments and capitalized text in this template before you sign off or merge to the main branch
-
-title:  Dynamics 365 Customer Insights - Data documentation # < 60 chars
-summary: Learn how to deliver personalized customer experiences with a 360-degree view of your customers. # < 160 chars
-# brand: aspnet | azure | dotnet | dynamics | m365 | office | sql | windows | visual-studio | xamarin
+title:  Dynamics 365 Customer Insights - Data documentation 
+summary: Learn how to deliver personalized customer experiences with a 360-degree view of your customers. 
 brand: dynamics
 
 metadata:
-  title: Dynamics 365 Customer Insights - Data documentation # Required; page title displayed in search results. Include the brand. For example, Dynamics 365 Commerce < 60 chars.
-  description: Learn how to deliver personalized customer experiences with a 360-degree view of your customers. # Required; product description that is displayed in search results. < 160 chars. 
-  ms.topic: hub-page # Required
-  author: m-hartmann #Required; your GitHub user alias, with correct capitalization.
-  ms.author: mhart #Required; microsoft alias of author; optional team alias.
-  ms.date: 06/02/2023 #Required; mm/dd/yyyy format.
+  title: Dynamics 365 Customer Insights - Data documentation
+  description: Learn how to deliver personalized customer experiences with a 360-degree view of your customers.
+  ms.topic: hub-page 
+  author: m-hartmann
+  ms.author: mhart
+  ms.reviewer: mhart
+  ms.date: 04/29/2024 
   ms.custom: bap-template
   hide_bc: true
 
 highlightedContent:
-# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
-
-# Do not change the following cards. You should only need to update the URLs to provide the correct links to your product documentation.
 
   items:
     - title: Get started

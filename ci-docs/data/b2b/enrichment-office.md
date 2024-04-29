@@ -13,7 +13,7 @@ ms.custom: bap-template
 
 [!INCLUDE [public-preview-banner](../includes/public-preview-banner.md)]
 
-[!INCLUDE [consolidated-sku](../includes/consolidated-sku.md)]
+
 
 [!INCLUDE [azure-ad-to-microsoft-entra-id](../../journeys/includes/azure-ad-to-microsoft-entra-id.md)]
 
