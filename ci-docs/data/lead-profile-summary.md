@@ -1,11 +1,11 @@
 ---
 title: Enrich Sales lead summaries with an insight from Customer Insights – Data (preview)
 description: Learn how Customer Insights - Data can provide an insight to the leads summary in Dynamics 365 Sales.
-author: zacookmsft
-ms.author: zacook
+author: radsay01
+ms.author: rsayyaparaju 
 ms.reviewer: v-wendysmith
 ms.topic: conceptual
-ms.date: 02/20/2024
+ms.date: 04/29/2024
 ms.custom: bap-template
 ---
 
