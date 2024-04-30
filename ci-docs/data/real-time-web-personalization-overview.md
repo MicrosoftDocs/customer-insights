@@ -1,7 +1,7 @@
 ---
 title: Real-time web personalization overview (preview)
 description: Learn about web interactions and personalized experiences in real time with Customer Insights - Data.
-ms.date: 03/06/2024
+ms.date: 05/02/2024
 ms.topic: overview
 author: srivas15
 ms.author: shsri
@@ -16,6 +16,9 @@ ms.custom: bap-template
 When customers interact with websites, they constantly provide signals about their interests and preferences. For example, adding a product to a cart, viewing pricing details, signing up for a trial, and more. It's crucial to build on these signals as they happen so you can deliver the right personalized experiences in the right moment.
 
 Customer Insights - Data can update customer profiles in real time based on web signals. This capability helps you provide the most targeted and personalized experiences to your customers as they browse your web properties. Foster loyalty, increase engagement, enhance satisfaction, and drive higher conversion rates.
+
+> [!TIP]
+> Sign up to [request access to the preview version](https://forms.office.com/r/6NK6uj6f7f) of the real-time personalization features and [read the blog about the annoucement](https://cloudblogs.microsoft.com/dynamics365/?p=188733).
 
 [!INCLUDE [public-preview-note](includes/public-preview-note.md)]
 

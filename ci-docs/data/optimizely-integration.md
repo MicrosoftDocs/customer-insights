@@ -1,7 +1,7 @@
 ---
 title: No-code web personalization using Optimizely (preview)
 description: Personalize web experiences with the Customer Insights - Data and Optimizely integration.
-ms.date: 03/06/2024
+ms.date: 05/02/2024
 ms.topic: how-to
 author: philk
 ms.author: philk
@@ -16,6 +16,9 @@ ms.custom: bap-template
 The Optimizely integration in Customer Insights - Data allows you to share segment from Customer Insights with Optimizely. The system creates audiences in Optimizely based on the segments in Customer Insights – Data and you can use them in your web personalization campaigns or web experiments.
 
 Customer Insights identifies website visitors who are members of a segment and let you provide a personalized web experience to these visitors in real-time. You can also track user behavior for events that real-time tracking supports and specific events in Optimizely: Campaign & Experiment.
+
+> [!TIP]
+> Sign up to [request access to the preview version](https://forms.office.com/r/6NK6uj6f7f) of the real-time personalization features and [read the blog about the annoucement](https://cloudblogs.microsoft.com/dynamics365/?p=188733).
 
 <!--video when live https://go.microsoft.com/fwlink/?linkid=2260871 -->
 
