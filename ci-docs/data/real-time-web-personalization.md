@@ -51,7 +51,7 @@ To have Customer Insights - Data automatically merge an [unknown profile](real-t
 
 1. Sign in to Customer Insights - Data and select **Web tracking & personalization**.
 
-1. Select the desired table.
+1. Select the desired table: The table selected in the dropdown is used to identify and merge an unknown profile with a known profile. For example, let's say you have a source table 'LoyaltySignUps' in Customer Insights - Data that has contains the 'LoyaltyId' as the primary key which uniquely identifies a customer in that table. The value in the LoyaltyId column is like - Loyalty1, Loyalty2, Loyalty3, and so on. If you select the LoyaltySignUps table to identify and merge unknown and known profiles, you will need to tell Customer Insights - Data what the LoyaltyId is of the visitor when they authenticate on your website. So in the above example, to merge Abbie's unknown profile to her known profile, you need to tell Customer Insights - Data the LoyaltyId of Abbie when she authenticates on your website. This is done by calling the 'SetUser' function. 
 
 1. Define the *setUser* function on your website. Typically, you only define this function on the page that authenticates visitors.
 
@@ -69,6 +69,8 @@ To have Customer Insights - Data automatically merge an [unknown profile](real-t
    ```
    <button type="submit" onclick="setUser()">Submit</button>
    ```
+> [!NOTE]
+> You can only select tables in the dropdown that were used as one of the source tables in Unification. Customer Insights - Data automatically uses the primary key of this table to identify the visitor and the merge logic is the same as Map, Match, Merge. Customer Insights - Data does not restrict which column to use as the primary key - it could be email, phone, loyaltyId, etc. 
 
 ## Personalize your customers web experience
 
