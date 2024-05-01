@@ -1,7 +1,7 @@
 ---
 title: Warm-up process for marketing senders
 description: Learn the domain warm-up process for marketing email senders in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/23/2023
+ms.date: 04/30/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -109,8 +109,8 @@ Pros and cons of dedicated vs shared IPs
 |    <br>Shared IP    |    <br>- Avoid the need to "warm up" your IPs<br>- Benefit from other senders' good reputations<br>- Decreased risk of damaging the IP reputation<br>- Works well for inconsistent senders (spikes in sending volumes and unpredictable sending schedule)    |    <br>- Deliverability can be affected by other senders<br>- No IP reputation control    |
 
 ## Dedicated IP prerequisites
-### Volume and frequency
-To sustain a dedicated IP, you need to send enough volume to maintain it. Maintain a minimum of 50,000 messages, three times per week (150,000 messages per week total).
+### Eligibility
+By default, shared IPs are utilized for all new customers. Dedicated IPs must be requested. To be eligible to request a dedicated IP, a sustained volume of (minimum) one million messages is required, three times per week (three million messages per week total).
 ### List quality
 Carefully review your email practices, list quality, list hygiene, and list acquisition process. We strongly recommend using a double opt-in process and targeting only engaged recipients. Engaged recipients are typically those who have interacted with your emails in the past six months.
 Also, review your sending stats and make sure that you comply with the following thresholds:
