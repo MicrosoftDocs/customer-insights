@@ -24,7 +24,7 @@ This document discusses some of the key elements for managing Customer Insights 
 
 ## Licensing model
 
-Customer Insights - Journeys has a different licensing model than other Dynamics 365 applications. You can find more details about the Customer Insights - Journeys licensing model in the [license guidance article](license-setup.md) as well as in the [Dynamics 365 licensing guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409). 
+Customer Insights - Journeys has a different licensing model than other Dynamics 365 applications. You can find more details about the Customer Insights - Journeys licensing model in the [license guidance article](license-setup.md) and in the [Dynamics 365 licensing guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409). 
 
 ## Customer Insights - Journeys quota limits
 
@@ -82,9 +82,7 @@ Currently, Customer Insights - Journeys, like other Dynamics 365 model apps (Sal
 
 ## Trials
 
-See details about creating trials here [Sign-up for trials](trial-signup.md).
-
-You can convert a trial app to a paid subscription using the in-app purchase process. Learn more: [Purchase a license directly from a Customer Insights - Journeys trial](direct-purchase.md).
+See details about creating trials here: [Sign-up for trials](trial-signup.md). You can convert a trial app to a paid subscription using the in-app purchase process. Learn more: [Purchase a license directly from a Customer Insights - Journeys trial](direct-purchase.md).
 
 ## Data transfer
 
