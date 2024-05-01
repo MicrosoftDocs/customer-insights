@@ -1,7 +1,7 @@
 ---
 title: Best practices for administration
 description: Learn about best practices for Dynamics 365 Customer Insights - Journeys administration and management.
-ms.date: 08/22/2022
+ms.date: 05/01/2024
 ms.custom:
   - dyn365-admin
   - dyn365-marketing
@@ -24,7 +24,7 @@ This document discusses some of the key elements for managing Customer Insights 
 
 ## Licensing model
 
-Customer Insights - Journeys has a different licensing model than other Dynamics 365 applications. You can find more details about the Customer Insights - Journeys licensing model in [License guidance](license-setup.md) as well as in the [Dynamics 365 licensing guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409). 
+Customer Insights - Journeys has a different licensing model than other Dynamics 365 applications. You can find more details about the Customer Insights - Journeys licensing model in the [license guidance article](license-setup.md) as well as in the [Dynamics 365 licensing guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409). 
 
 ## Customer Insights - Journeys quota limits
 
@@ -51,9 +51,7 @@ Depending on the environment and its usage, you might have different needs when 
 
 ## Customer Insights - Journeys app types
 
-Customer Insights - Journeys is composed of several components. Each Dynamics 365 environment requires a dedicated Customer Insights - Journeys app. 
-
-Here are some of the common pitfalls (from a management perspective) that you might face when working with multiple Customer Insights - Journeys apps/environments:
+Customer Insights - Journeys is composed of several components. Each Dynamics 365 environment requires a dedicated Customer Insights - Journeys app. Here are some of the common pitfalls (from a management perspective) that you might face when working with multiple Customer Insights - Journeys apps or environments:
 
 - **Encountering an error about missing components when importing a custom solution build from a source environment containing a Customer Insights - Journeys app to a target environment that does not contain a Customer Insights - Journeys app, such as transitioning from QA to UAT.** In this scenario, you might believe that the source environment Customer Insights - Journeys solution is the cause of the problem. You might then try to remove or uninstall the Customer Insights - Journeys app from the source environment. Instead, deploy the solution-only Customer Insights - Journeys app on the target environment so that both the source and the target have the same level of solution level metadata.
 - **Not noting that when a Customer Insights - Journeys environment is installed as solution-only, no Customer Insights - Journeys processes (such as customer journey or segmentation) will execute.** The solution-only environment only supports Customer Insights - Journeys entity availability and extensibility. If you require marketing process execution, the full Customer Insights - Journeys app should be installed.
@@ -80,7 +78,6 @@ You can remove the Customer Insights - Journeys app from any Dynamics 365 enviro
 Currently, Customer Insights - Journeys, like other Dynamics 365 model apps (Sales, Service, etc.), can only be deployed on CE environments (also known as orgs).
 
 - [This documentation](/power-platform/admin/create-environment) describes how to add CE environments via purchase into a tenant on which Customer Insights - Journeys can be deployed.
-
 - A CE environment could also be [provisioned via the Power Platform Admin Center with a CE DB](/power-platform/admin/create-environment). If you need to create a Customer Insights - Journeys template-based CE environment, you should open a support ticket to resolve the issue.
 
 ## Trials
