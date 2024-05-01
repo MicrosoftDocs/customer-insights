@@ -13,7 +13,7 @@ ms.custom: bap-template
 
 [!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
-Dynamics 365 Sales users can enrich their lead summary with an insight from Customer Insights - Data. The insight is based on unified activity data ingested by the user, such as customer reviews, purchases, appointments, web logs, and more. The insight is an observation of the following characteristics:
+Dynamics 365 Sales users can enrich their lead summary with an insight from Customer Insights - Data. The insight is based on unified activity data ingested by the user, such as customer reviews, purchases, appointments, web logs, and more. The insight is an observation of one of the following characteristics:
 
 - **Customer's sentiment**: Their attitudes or feelings toward the business and their products or services.
 - **Customer's behavior**: The cadence of their activities such as time intervals between appointments.
