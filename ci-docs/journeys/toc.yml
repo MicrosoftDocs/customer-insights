@@ -524,6 +524,8 @@
       href: email-get-started.md
     - name: Best practices for email marketing
       href: get-ready-email-marketing.md
+    - name: Requirements for bulk senders
+      href: requirements-for-bulk-senders.md
     - name: Setup guides
       items:
       - name: Warm-up process for marketing senders

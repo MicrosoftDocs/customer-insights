@@ -1,7 +1,7 @@
 ---
 title: Add email carbon copy recipients to journeys
 description: Learn how to add carbon copy recipients to journeys in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/22/2023
+ms.date: 04/30/2023
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -19,6 +19,7 @@ You can add carbon copy (CC) recipients to your journeys when sending emails. Wh
 > [!IMPORTANT]
 >
 >- When you add CC recipients to your emails, the sent email will be identical for both primary and CC contacts. The interactions from CC recipients with sent emails (open, forward, clicks, unsubscribe) will be counted as a primary recipient interactions and will have direct impact on your insights and analytics.
+>- Email interactions (sent, delivered, bounced, etc.) are not shown for CC.
 >- If a CC recipient clicks on the unsubscribe button for marketing emails, they will unsubscribe the primary contact.
 >- The CC recipient interaction will trigger the next step in the journey if you are utilizing the **Respond to an action** element in your journey based on the customer interaction.
 >- CC contacts are counted for marketable contact quota.
