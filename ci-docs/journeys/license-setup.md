@@ -81,6 +81,9 @@ Customer Insights - Journeys is licensed per tenant, with each tenant priced acc
 - **How long is a person considered interacted?**  
     When an entity is interacted with, it's counted as an interacted person and stays that way until it hasn't been interacted with for 12 months. Interacted person consumption is cumulative throughout the license period and even post-license extension, subject to the 12-month rule mentioned above.
 
+- **Why can't I see my licenses in geos other than my home tenant geo?**
+    In order to see your licenses in all geos you need to have your tenant made a 'multi-geo' tenant. Any employee in business applications or support can do this for you. Reach out to your account manager to get help having your tenant made multi-geo so that licenses replicate across all geographies. 
+
 ### Do I have to install the four Customer Insights - Journeys and Customer Insights - Data app installs on the same four environments?
 
 No. You can install each app four times. You can choose the same four environments or four different environments for a total of eight independent installations.
