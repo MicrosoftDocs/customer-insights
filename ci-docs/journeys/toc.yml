@@ -449,7 +449,7 @@
     - name: Customize the Customer Insights - Journeys forms interface
       href: developer/extend-ui.md
   - name: Extend and customize consent
-    href: extend-consent.md
+    href: developer/extend-consent.md
   - name: Create a Customer Insights - Journeys segment using the Web API
     href: real-time-marketing-api-segment.md
   - name: Use binding IDs to correlate across triggers
@@ -524,6 +524,8 @@
       href: email-get-started.md
     - name: Best practices for email marketing
       href: get-ready-email-marketing.md
+    - name: Requirements for bulk senders
+      href: requirements-for-bulk-senders.md
     - name: Setup guides
       items:
       - name: Warm-up process for marketing senders
