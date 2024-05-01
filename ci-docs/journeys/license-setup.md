@@ -1,7 +1,7 @@
 ---
 title: Customer Insights license guidance
 description: Learn about licensing information in Dynamics 365 Customer Insights.
-ms.date: 04/02/2024
+ms.date: 05/01/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -80,9 +80,8 @@ Customer Insights - Journeys is licensed per tenant, with each tenant priced acc
     Your monthly interaction quota is equal to 10 times the number of interacted people you have purchased, per month. For example, if you own 1 interacted person, you can interact with them 10 times per month. If you need more than 10 interactions, you should increase the number of interacted people you own to allow for the volume of monthly interactions you need to send. Consider the peak month of the year you need to optimize for and ensure that you have the right number of interacted people to allow for that volume and corresponding performance.
 - **How long is a person considered interacted?**  
     When an entity is interacted with, it's counted as an interacted person and stays that way until it hasn't been interacted with for 12 months. Interacted person consumption is cumulative throughout the license period and even post-license extension, subject to the 12-month rule mentioned above.
-
 - **Why can't I see my licenses in geos other than my home tenant geo?**
-    In order to see your licenses in all geos you need to have your tenant made a 'multi-geo' tenant. Any employee in business applications or support can do this for you. Reach out to your account manager to get help having your tenant made multi-geo so that licenses replicate across all geographies. 
+    To see your licenses in all geos, you need to have your tenant made into a "multi-geo" tenant. Any employee in business applications or support can do this for you. To get help converting your tenant to multi-geo so that licenses replicate across all geographies, reach out to your account manager. 
 
 ### Do I have to install the four Customer Insights - Journeys and Customer Insights - Data app installs on the same four environments?
 
