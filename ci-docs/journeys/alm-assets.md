@@ -19,17 +19,18 @@ Files in the Assets Library now support ALM. This means that you can create a so
 
 To utilize this feature, you need to follow these steps:
 
-1. Navigate to the “Advanced Settings” section.
-2. In the “Solutions” tab, select the option to create a new solution.
-3. After creating the solution, choose “Add existing”. A dropdown will appear with all the entities that are solution aware.
-4. Select “File”. A dialog will open, displaying all existing files. Choose the files you want to export and save the changes.
+1. Navigate to the **Advanced Settings** section.
+2. In the **Solutions** tab, select the option to create a new solution.
+3. After creating the solution, choose **Add existing**. A dropdown will appear with all the entities that are solution aware.
+ :::image type="content" source="media/add-assets-library.png" alt-text="Add within assets library" :::
+4. Select **File**. A dialog will open, displaying all existing files. Choose the files you want to export and save the changes.
 5. Export the newly created solution.
 
 These steps will generate a zip folder that can be later imported into a different organization.
 
 The imported files will be added to the target organization, and the links will point correctly to the target organization.
 
-### Notes for emails and templates
+## Notes for emails and templates
 
 Additionally, emails and templates already support ALM. With the latest changes, if the files referenced in those emails and templates exist in the target organization, the references after the import process will point to the target organization.
 
