@@ -1,7 +1,7 @@
 ---
 title: Requirements for bulk senders
 description: Learn about Google and Yahoo requirements for bulk email senders.
-ms.date: 04/30/2024
+ms.date: 05/02/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -13,7 +13,7 @@ search.audienceType:
 
 # Requirements for bulk senders
 
-In October 2023, Google and Yahoo announced that they would require email senders to start supporting email authentication, alignment, one-click unsubscribe, and include a visible unsubscribe link in the message body for all promotional emails. Google made it a specific requirement for any sender who sends more than 5,000 emails.
+In October 2023, Google and Yahoo announced that they would require email senders to start supporting email authentication, alignment, one-click unsubscribe, and include a visible unsubscribe link in the message body for all promotional emails. Google made it a specific requirement for any sender who sends more than 5,000 emails per day.
 
 Email providers presently utilize the presence of this information to determine spam and reputation scores for email senders, even if it isn't a strict requirement. Effective February 2024, Gmail and Yahoo require the following from bulk email senders:
 
