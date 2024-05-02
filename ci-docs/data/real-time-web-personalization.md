@@ -13,7 +13,7 @@ ms.custom: bap-template
 
 [!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
-Let Customer Insights - Data automatically create unknown profiles for your visitors and track their website interactions (page views and page clicks) in real time. Set up web tracking, merge customers with their known profiles when they authenticate on your website, and then personalize your customers web experience.
+Let Customer Insights - Data automatically create unknown profiles for your visitors and track their website interactions (page views and interactions) in real time. Set up web tracking, merge customers with their known profiles when they authenticate on your website, and then personalize your customers web experience.
 
 Learn more: [Real-time web personalization overview](real-time-web-personalization-overview.md).
 
@@ -53,7 +53,7 @@ To have Customer Insights - Data automatically merge an [unknown profile](real-t
 
 1. Select the table that identifies an unknown profile to merge it with a known profile. For example, the source table 'LoyaltySignUps' in Customer Insights - Data uses 'LoyaltyId' as the primary key, which uniquely identifies a customer in that table. To identify and merge unknown and known profiles, the system needs to know the 'LoyaltyId' of the visitor when they authenticate on your website. This is done by calling the 'SetUser' function.
 
-1. Define the *setUser* function on your website. Typically, you only define this function on the page that authenticates visitors.
+1. Define the *setUser* function on your website. Typically, you only define this function on the page that authenticates visitors. The *identifier* is the visitor ID. For example, Loyalty1.
 
    ```
    <script>
@@ -62,7 +62,6 @@ To have Customer Insights - Data automatically merge an [unknown profile](real-t
     }
    </script>
    ```
-   where the *identifier* is the visitor ID. For example, Loyalty1.
 
 1. Call the *setUser* function when a visitor authenticates.
 
