@@ -1,11 +1,11 @@
 ---
 title: Use customer consent
 description: "Honor you customers' consent preferences in Customer Insights by importing consent data."
-ms.date: 09/01/2023
+ms.date: 05/03/2024
 ms.reviewer: mhart
 ms.topic: conceptual
-author: m-hartmann
-ms.author: mhart
+author: Scott-Stabbert 
+ms.author: sstabbert
 ---
 
 # Use customer consent
