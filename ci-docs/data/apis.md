@@ -2,10 +2,10 @@
 title: Work with Customer Insights - Data APIs
 description: Use APIs and understand limitations.
 ms.date: 03/15/2024
-ms.reviewer: wimohabb
 ms.topic: how-to
-author: m-hartmann
-ms.author: wimohabb
+author: srivas15
+ms.author: shsri
+ms.reviewer: mhart
 ms.custom: baptemplate
 searchScope: 
   - ci-system-api-usage

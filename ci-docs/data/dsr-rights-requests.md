@@ -1,11 +1,11 @@
 ---
 title: Respond to Data Subject Rights (DSR) requests
 description: Learn how to respond to Data Subject Requests with Dynamics 365 Customer Insights - Data.
-ms.date: 09/01/2023
-ms.reviewer: mhart
+ms.date: 05/03/2024
 ms.topic: conceptual
-author: m-hartmann
-ms.author: wimohabb
+author: srivas15
+ms.author: shsri
+ms.reviewer: mhart
 ms.custom: bap-template
 ---
 
