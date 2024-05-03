@@ -1,6 +1,7 @@
 ---
-author: m-hartmann
-ms.author: mhart
+author: radsay01
+ms.author: rsayyaparaju
+ms.reviewer: mharts
 ms.date: 08/16/2023
 ms.topic: include
 ms.service: customer-insights

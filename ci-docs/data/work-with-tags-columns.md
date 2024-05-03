@@ -1,11 +1,11 @@
 ---
 title: "Work with tags and columns"
 description: "How to work with tags and columns to organize list views"
-ms.date: 09/01/2023
+ms.date: 05/03/2024
 ms.topic: overview
-author: m-hartmann
-ms.author: mhart
-ms.reviewer: v-wendysmith
+author: JimsonChalissery
+ms.author: jimsonc
+ms.reviewer: mhart
 ms.custom: bap-template
 ---
 
