@@ -23,58 +23,14 @@ The API access is over HTTPS protocol and is accessed from the API endpoint that
 In Settings section under Event management and Web Applications create a new Web Application. It is important to correctly select origin - for example if you select https://contoso.com javascript hosted on different domain won't be able to access the event management api.
 ![image](https://github.com/MicrosoftDocs/customer-insights/assets/5519592/80e859d3-201e-4ef4-b4f1-4c60ed077d4b)
 
+After you create a webapplication you'll see a link to the OpenAPI specification in `Endpoint documentation (Preview)`
 
+![image](https://github.com/svejdo1/customer-insights/assets/5519592/5a0163c8-dfd9-41d1-a310-8f5efe09425b)
 
+You can click on the link, and copy & paster the api contract to open api editor - such as [https://editor.swagger.io/](https://editor-next.swagger.io/) - which will automatically pregenerate wrapper you can use to discover your api.
 
-Every customer has their own endpoint URL. The Event API endpoint URL consists of two parts:
+## Backward compatibility with outbound marketing API 
+The aim for RTM api is to be backward-compatible contract-wise. There are however few limitations - RTM api doesn't support user authentication, and operations like captcha and registration to outbound event is supported only as long as organization has outbound marketing provisioned. If you were previously using angular client application you can switch the 'apiEndpoint' property from outbound marketing endpoint that looked like `https://<your org alias>.svc-tip.dynamics.com/EvtMgmt/api/v2.0/` to endpoint specified in `Endpoint (Preview)` - e.g. something like `https://public-<your org geo>.mkt.dynamics.com/api/v1.0/orgs/<your org id>/eventmanagement/`
 
-- The endpoint domain
-- The subdirectory  
-
-You will get the root endpoint after creating a web application token. You can find more information on how to create a web application token here: [Register web application](#bkmk_registerwebapp). 
-
-**Example for root endpoint**
-
-```http
-https://b7c1ad1ab7fa4a7482b16315d94a26af.svc.dynamics.com 
-``` 
-
-The subdirectory always starts with `EvtMgmt/api` followed by the API version (which can be retrieved from the API documentation available here: [Event management API reference docs](https://go.microsoft.com/fwlink/?linkid=2042224). 
-
-**Example for subdirectory**
-
-```http
-EvtMgmt/api/v2.0/ 
-``` 
-
-**Example for full endpoint URL** 
-
-```http
-https://b7c1ad1ab7fa4a7482b16315d94a26af.svc.dynamics.com/EvtMgmt/api/v2.0/ 
-```
-
-## Authentication 
-
-To use the events API, you need to provide a `web application token` as a URL parameter in each request. The web application token is used to control API requests that are associated with your organization. See [Register web application](#bkmk_registerwebapp) for more information on how to create and retrieve a web application. 
-
-The `web application token` can be added to the request by adding a URL parameter called `emApplicationtoken`. 
-
-**Example** 
-
-```http
-https://b7c1ad1ab7fa4a7482b16315d94a26af.svc.dynamics.com/EvtMgmt/api/v2.0/events/published?emApplicationtoken=B7vdzdhCiLt9c5iT….
-```
-
-Additionally, the origin from where the request is sent must be equal to the origin specified when creating the web application token.
-
-If you do not provide a web application token or the Origin Header, the events API will return `HTTP 400 Bad Request`.
-
-If the web application token is invalid, the events API will return `HTTP 401 Unauthorized`.
-
-<a name="bkmk_registerwebapp"></a>
-
-## Register your web application
-
-To use the events API, you need to provide a web application token in each request. The web application token is used to control API requests that are associated with your organization. More information: [Register your web application](host-custom-event-website-on-azure.md#step-2-register-your-web-application)
 
 [!INCLUDE [footer-include](.././includes/footer-banner.md)]
