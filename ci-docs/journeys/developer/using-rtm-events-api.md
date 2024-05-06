@@ -27,7 +27,7 @@ After you create a webapplication you'll see a link to the OpenAPI specification
 
 ![image](https://github.com/svejdo1/customer-insights/assets/5519592/5a0163c8-dfd9-41d1-a310-8f5efe09425b)
 
-You can click on the link, and copy & paster the api contract to open api editor - such as [https://editor.swagger.io/](https://editor-next.swagger.io/) - which will automatically pregenerate wrapper you can use to discover your api.
+You can click on the link, and copy & paster the api contract to open api editor - such as [https://editor.swagger.io/](https://editor-next.swagger.io/) - which will automatically pregenerate wrapper you can use to discover your api. You have to be authorized - e.g. provide the `Token` column.
 
 ## Backward compatibility with outbound marketing API 
 The aim for RTM api is to be backward-compatible contract-wise. There are however few limitations - RTM api doesn't support user authentication, and operations like captcha and registration to outbound event is supported only as long as organization has outbound marketing provisioned. If you were previously using angular client application you can switch the 'apiEndpoint' property from outbound marketing endpoint that looked like `https://<your org alias>.svc-tip.dynamics.com/EvtMgmt/api/v2.0/` to endpoint specified in `Endpoint (Preview)` - e.g. something like `https://public-<your org geo>.mkt.dynamics.com/api/v1.0/orgs/<your org id>/eventmanagement/`
