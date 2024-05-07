@@ -27,7 +27,7 @@ After you create a webapplication you'll see a link to the OpenAPI specification
 
 ![image](https://github.com/svejdo1/customer-insights/assets/5519592/5a0163c8-dfd9-41d1-a310-8f5efe09425b)
 
-You can click on the link, and copy & paster the api contract to open api editor - such as [https://editor.swagger.io/](https://editor-next.swagger.io/) - which will automatically pregenerate wrapper you can use to discover your api. You have to be authorized - e.g. provide the `Token` column.
+You can click on the link, and copy & paster the api contract to open api editor - such as [https://editor-next.swagger.io/](https://editor-next.swagger.io/) - which will automatically pregenerate wrapper you can use to discover your api. You have to be authorized - e.g. provide the `Token` column.
 
 ![image](https://github.com/svejdo1/customer-insights/assets/5519592/4b5c0aa7-d41e-4c5e-bd01-f85ee5501b3e)
 
