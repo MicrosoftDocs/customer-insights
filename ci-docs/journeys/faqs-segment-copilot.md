@@ -1,7 +1,7 @@
 ---
 title: Responsible AI FAQs for the segment copilot
 description: The Responsible AI FAQs discuss the segment copilot and the key considerations for making use of this technology responsibly.
-ms.date: 12/22/2023
+ms.date: 05/08/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -36,7 +36,7 @@ The performance of the segment copilot is determined by the successful generatio
 
 ## What are the limitations of the segment copilot? How can users minimize the impact of the limitations when using the system?
 
-The segment copilot feature is currently only available in the US region and in English.
+The segment copilot feature is currently only available in North America and Europe; it's available in English only.
 
 ## What operational factors and settings allow for effective and responsible use of the feature?
 
