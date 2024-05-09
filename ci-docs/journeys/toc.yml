@@ -987,7 +987,7 @@
       - name: Events API
         items: 
         - name: Using the events API
-          href: using-events-api.md
+          href: developer/using-events-api.md
         - name: Register your web application
           href: developer/register-web-application-events-api.md
         - name: User authentication
