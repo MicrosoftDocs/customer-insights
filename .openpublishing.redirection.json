@@ -2585,11 +2585,6 @@
       "source_path": "ci-docs/data/b2b/enrichment-enhanced-company-data.md",
       "redirect_url": "/dynamics365/customer-insights/data/removed-deprecated-features-customer-insights",
       "redirect_document_id": false
-    },
-    {
-      "source_path": "ci-docs/journeys/developer/using-events-api.md",
-      "redirect_url": "/dynamics365/customer-insights/journeys/developer/using-rtm-events-api",
-      "redirect_document_id": false
     }
   ]
 }

@@ -20,7 +20,7 @@ The events API is a programmatic method to access data of events, sessions, sess
 
 The API access is over HTTPS protocol and is accessed from the API endpoint that you receive while creating a web application token. All data is sent and received as JSON.
 
-# Register for the event API
+## Register for the events API
 
 In the **Settings** section under **Event management** > **Web Applications** create a new web application. It's important to select the correct origin. For example, if you select https://contoso.com, JavaScript hosted on different domain won't be able to access the event management API.
 

@@ -452,7 +452,7 @@
       href: developer/extend-ui.md
   - name: Extend and customize consent
     href: developer/extend-consent.md
-  - name: Use the events API in real-time journeys
+  - name: Using the events API in real-time journeys
     href: developer/using-rtm-events-api.md
   - name: Create a Customer Insights - Journeys segment using the Web API
     href: real-time-marketing-api-segment.md
@@ -986,6 +986,8 @@
           href: developer/manually-overwriting-sample-website.md
       - name: Events API
         items: 
+        - name: Using the events API
+          href: using-events-api.md
         - name: Register your web application
           href: developer/register-web-application-events-api.md
         - name: User authentication
