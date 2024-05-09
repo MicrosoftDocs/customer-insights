@@ -69,7 +69,7 @@ The following section outlines some "do's" and "don'ts" for using the journey co
     - **Example 1**: "After a landing page is completed, send the customer a thank you message to the contact in their preferred channel. Then wait two days and send a survey."
         - *Explanation*: This prompt is good because each step is described and it includes a specific timing element (waiting two days), enhancing Copilot's ability to generate the right output.
     - **Example 2**: "Use an A/B test to try out two different promotional emails when a customer completes a purchase."
-        - *Explanation*: This prompt is effective as it suggests utilizing A/B testing for optimizing promotional emails after a purchase and lets copilot generate the test for you.
+        - *Explanation*: This prompt is effective as it suggests utilizing A/B testing for optimizing promotional emails after a purchase and lets Copilot generate the test for you.
     - **Example 3**: "Journey will start for all contacts."
         - *Explanation*: This prompt specifies a segment but doesn't include what sequence of actions that should come after
 - **Don't: Create prompts that don't start with a segment or a trigger. Journey copilot requires an existing segment or trigger to build the journey. Copilot cannot create the segment or trigger for you.**
@@ -77,12 +77,10 @@ The following section outlines some "do's" and "don'ts" for using the journey co
         - *Explanation*: This prompt doesn't specify a segment.
     - **Example 2**: "Send a series of three emails and SMS messages to Tier 1 contacts regarding loan options."
         - *Explanation*:  This prompt is good as it specifies the target audience (Tier 1 contacts), ensuring the journey is relevant and targeted.
-- **Do: Create prompts that are at least 70 characters long. This helps provide enough information for copilot to interpret.**
-
-    Here are a few examples that fall within this range:
-    - "Use an A/B test to try out two different promotional emails when a customer completes a purchase." (96 characters)
-    - "Send a series of 3 emails and SMS messages regarding Contoso's new product line." (75 characters)
-    - "Send personalized messages to contacts when they submit a marketing form." (73 characters)
+- **Do: Create prompts that are at least 70 characters long. This helps provide enough information for Copilot to interpret.**
+    - **Example 1**: "Use an A/B test to try out two different promotional emails when a customer completes a purchase." (96 characters)
+    - **Example 2**: "Send a series of 3 emails and SMS messages regarding Contoso's new product line." (75 characters)
+    - **Example 3**: "Send personalized messages to contacts when they submit a marketing form." (73 characters)
 - **Don't: Use vague statements.**
     - **Example 1**: "Create a nurture journey with monthly emails."
         - *Explanation*: While the prompt isn't explicitly bad, it lacks detail. The term "nurture journey" is vague. Providing more specifics about the content or purpose of the journey would help Copilot generate a better journey suggestion.
