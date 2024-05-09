@@ -1,7 +1,7 @@
 ---
 title: Manage Customer Insights - Journeys forms
 description: Learn how to manage forms in Dynamics 365 Customer Insights - Journeys.
-ms.date: 01/16/2024
+ms.date: 04/26/2024
 ms.topic: article
 author: petrjantac
 ms.author: alfergus
@@ -183,9 +183,21 @@ You can change the CSS class definitions in the HTML editor. Editing CSS allows 
 
 ### Add custom JavaScript to your form
 
-You can add custom JavaScript code to the `<head>` section of the HTML source code using the HTML editor. If the code JavaScript code is placed inside the `<body>` section, the form editor automatically removes the code without any warning.
+> [!IMPORTANT]
+> With Customer Insights - Journeys version **1.1.38813.80 or newer**, you can add JavaScript code into the `<body>` section of the HTML. If you add JavaScript into `<head>` section, it's automatically moved to the top of the `<body>` section. The `<script>` tag is automatically renamed `<safe-script>` to prevent script execution in the form editor. The `<safe-script>` tag is then automatically renamed back to `<script>` in the final form HTML served by the formLoader script.
 
-You can apply the EventListeners to trigger actions based on events like `buttonClicked` instead of adding the reference to the JavaScript function directly on the HTML code of the button. See the following examples.
+> [!IMPORTANT]
+> With Customer Insights - Journeys version **older than 1.1.38813.80**, you can add custom JavaScript code only to the `<head>` section of the HTML source code using the HTML editor. If the code JavaScript code is placed inside the `<body>` section, the form editor automatically removes the code without warning.
+
+All `onEvent` HTML attributes triggering execution of JavaScript code like `onClick` or `onChange` are automatically sanitized (removed from the code).
+
+The following example is **not supported**:
+
+```html
+<button onClick="runMyFunction()">
+```
+
+As shown in the examples below, you can place the EventListeners inside the JavaScript code to trigger the execution of JavaScript functions.
 
 #### Example 1: Update the value of the form field using values of other form fields
 
@@ -214,7 +226,7 @@ In this example, a script is created that combines the first name and last name 
 1. Create a new form with "lead" as the target audience. You can see the custom attribute "UTM source" in the list of fields.
 1. Add the UTM source field to the canvas and set it as hidden in the field properties.
 1. Open the HTML editor.
-1. Put the following script in the header section. Make sure you put the correct field ID into the code.
+1. Put the following script in the body section. Make sure you put the correct field ID into the code.
 
 ```js
 <script>

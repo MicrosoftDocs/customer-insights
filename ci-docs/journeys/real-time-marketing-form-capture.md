@@ -1,7 +1,7 @@
 ---
-title: "Preview: Capture forms in Customer Insights - Journeys"
+title: Capture forms in Customer Insights - Journeys
 description: Learn how to capture forms in Dynamics 365 Customer Insights - Journeys.
-ms.date: 12/21/2023
+ms.date: 04/26/2024
 ms.topic: article
 author: petrjantac
 ms.author: alfergus
@@ -11,14 +11,11 @@ search.audienceType:
   - enduser
 ---
 
-# Preview: Capture forms in Customer Insights - Journeys
-
-> [!IMPORTANT]
-> A preview feature is a feature that is not complete but is made available before it’s officially in a release so customers can get early access and provide feedback. Preview features aren’t meant for production use and may have limited or restricted functionality.
->
-> Microsoft doesn't provide support for this preview feature. Microsoft Dynamics 365 Technical Support won’t be able to help you with issues or questions. Preview features aren’t meant for production use, especially to process personal data or other data that are subject to legal or regulatory compliance requirements.
+# Capture forms in Customer Insights - Journeys
 
 The form capture is used to get submissions from existing forms that weren't created using the Customer Insights - Journeys form editor. Form capture is recommended if your existing form also sends submissions to systems other than Dynamics 365 or if the existing form contains complex logic that can't be easily recreated in the Customer Insights - Journeys form editor. If the existing form can be recreated using Customer Insights - Journeys form editor, it's *not* recommended to use the form capture feature.
+
+Form capture uses the same API as the standard forms to process submissions. The same [security notice](real-time-marketing-form-overview.md#security-notice) applies for form capture.
 
 > [!IMPORTANT]
 > **Form capture requires developer assistance**. It's always easier to create a form using the Customer Insights - Journeys form editor and embed it into your existing page.
@@ -26,6 +23,11 @@ The form capture is used to get submissions from existing forms that weren't cre
 > [!IMPORTANT]
 > **Form capture requires DynamicsMKT_Forms solution version 1.1.35355 or higher**. When provisioning a trial instance, you won't always have the latest version automatically. Make sure you've updated Customer Insights - Journeys before attempting form capturing.
 
+## Enable form capture
+
+The form capture feature is disabled by default. You can enable the *Form capture* toggle in **Settings** > **Feature switches** > **Forms**.
+> [!div class="mx-imgBorder"]
+> ![Enable form capture in feature switches.](media/real-time-marketing-enable-form-capture.png)
 
 ## How form capture works
 
@@ -37,7 +39,7 @@ Form capture mimics submission of a standard Customer Insights - Journeys form. 
 
 1. To create a new capture form script, go to **Customer Insights - Journeys** > **Channels** > **Forms** and select **New** on the command bar.
 1. Name the form and choose the right audience. The choice of target audience is important. The form capture script field->attribute mapping is available only for attributes of the chosen target audience (entity).
-1. Add all fields you want to be mapped to your existing form fields. This step isn't mandatory, the field->attribute mapping is defined in the form capture code. Adding the right fields into the form generates placeholders for attribute mapping in the form capture script making the mapping definition easier. 
+1. Add all fields you want to map to your existing form fields. This step isn't mandatory; **field > attribute** mapping is defined in the form capture code. Adding the right fields into the form generates placeholders for attribute mapping in the form capture script making the mapping definition easier.
 1. Add consent elements like Purpose or Topic to form and configure them. Learn more about how to [manage consent for email and text messages in Customer Insights - Journeys](real-time-marketing-email-text-consent.md).
     > [!IMPORTANT]
     > The consent definition must be done in the form editor. Changes made to consent settings done in the form capture code snippet will be ignored.
@@ -176,7 +178,7 @@ For `OptionSet` fields, you need to define the mapping to the respective value t
 
 ##### 2.2 Mapping of lookup fields
 
-###### Set default value for the lookup field
+###### Set the default value for the lookup field
 
 You can use static (default) values in the mapping logic for lookup fields. You need to define the name of the field and the value that should be stored in Customer Insights - Journeys.
 
@@ -226,7 +228,39 @@ You can also map the lookup field value to a respective value in your existing f
 </script>
 ```
 
-##### 3. Define the mapping of consent fields
+##### 2.3 Mapping multi-select field values
+
+For `multi-select` fields, you need to define the mapping to the respective value that should be stored in Customer Insights - Journeys. You can map your existing form multi-select field values in the `DataverseFieldValue` property.
+
+**Example:**
+
+```HTML
+  <form id="form1">
+    <p>Fieldset: <fieldset name="multiOptionInput">
+      <input type="checkbox" name="multiOptionInput" value="100000000">0</input>
+      <input type="checkbox" name="multiOptionInput" value="100000001">1</input>
+      <input type="checkbox" name="multiOptionInput" value="100000002">2</input>
+    </fieldset></p>
+  </form>
+ 
+<script>
+...
+const mappings = [
+  {
+    FormFieldName: "multiOptionInput",
+    DataverseFieldName: "dvmultiOptionInput",
+    DataverseFieldValue: [
+      { FormValue: "100000000", DataverseValue: "0" },
+      { FormValue: "100000001", DataverseValue: "1" },
+      { FormValue: "100000002", DataverseValue: "2" },
+    ]
+  },
+];
+...
+</script>
+```
+
+#### 3. Define consent field mapping
 
 Consent fields need to be configured in the form editor in Customer Insights - Journeys. The `DataverseFieldName` and `DataverseFieldValue` mappings are autogenerated accordingly.
 

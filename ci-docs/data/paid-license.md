@@ -1,9 +1,10 @@
 ---
 title: Purchase a license of Dynamics 365 Customer Insights
-author: m-hartmann
+author: JimsonChalissery
 description: Purchase a license of Dynamics 365 Customer Insights, sign in, and get familiar with the app.
-ms.author: mhart
-ms.date: 09/01/2023
+ms.author: jimsonc
+ms.reviewer: mhart
+ms.date: 04/29/2024
 ms.topic: conceptual
 ms.collection: get-started
 ---
@@ -15,6 +16,7 @@ To purchase Dynamics 365 Customer Insights, see our contact options on the [Dyna
 If you're looking to try the service and the features, see [Set up a trial environment](trial-signup.md).
 
 Customer Insights is licensed per tenant and includes multiple capabilities. You can purchase more capacity and licenses to increase the default quota.
+
 - [Pricing overview](https://dynamics.microsoft.com/ai/customer-insights/pricing/)
 - Capacity and entitlements: [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544)
 

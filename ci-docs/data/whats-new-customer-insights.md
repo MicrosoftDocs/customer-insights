@@ -4,8 +4,8 @@ description: "Information about new features, improvements, and bug fixes."
 ms.date: 03/13/2024
 ms.topic: conceptual
 author: m-hartmann
-ms.author: mhart
-ms.reviewer: skumm
+ms.author: skumm
+ms.reviewer: mhart
 ---
 
 # What's new in Dynamics 365 Customer Insights - Data

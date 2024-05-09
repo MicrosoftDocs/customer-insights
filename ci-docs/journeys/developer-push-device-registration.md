@@ -264,7 +264,7 @@ POST {PublicEndpoint}/api/v1.0/orgs/%ORG_ID%/pushdeviceregistration/devices/clea
     "MobileAppId": "00000000-0000-0000-0000-000000000000",
     "ApiToken": "%API_TOKEN%",
     "UserId": "00000000-0000-0000-0000-000000000000",
-    "DeviceToken": "%OPTIONAL_FCM_OR_APNS_DEVICE_TOKEN% )"
+    "DeviceToken": "%OPTIONAL_FCM_OR_APNS_DEVICE_TOKEN%"
 }
 ```
 
@@ -292,7 +292,7 @@ POST {PublicEndpoint}/api/v1.0/orgs/%ORG_ID%/pushdeviceregistration/devices/clea
     "MobileAppId": "00000000-0000-0000-0000-000000000000",
     "ApiToken": "%API_TOKEN%",
     "UserId": "00000000-0000-0000-0000-000000000000",
-    "DeviceToken": "%OPTIONAL_FCM_OR_APNS_DEVICE_TOKEN% )"
+    "DeviceToken": "%OPTIONAL_FCM_OR_APNS_DEVICE_TOKEN%"
 }
 ```
 

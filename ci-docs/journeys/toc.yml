@@ -180,7 +180,7 @@
           href: email-without-journey.md
       - name: View previously sent emails
         items: 
-        - name: "Preview: Reference copies of sent emails in the interaction timeline"
+        - name: Reference copies of sent emails in the interaction timeline
           href: view-previously-sent-emails.md
       - name: Email troubleshoot + FAQ
         href: email-troubleshoot.md
@@ -438,11 +438,13 @@
       href: developer-notifications.md
     - name: Implement push notification interaction tracking
       href: developer-push-interactions.md
+    - name: Transition Android push notifications to Firebase Cloud Messaging (FCM) tokens
+      href: push-notification-fcm-token-transition.md
   - name: Extend forms functionality
     items:
     - name: Client-side extensibility for forms
       href: developer/realtime-marketing-form-client-side-extensibility.md
-    - name: "Preview: Capture forms in Customer Insights - Journeys"
+    - name: Capture forms in Customer Insights - Journeys
       href: real-time-marketing-form-capture.md
     - name: Integrate a custom captcha service with marketing forms
       href: real-time-marketing-form-custom-captcha.md
@@ -450,6 +452,8 @@
       href: developer/extend-ui.md
   - name: Extend and customize consent
     href: developer/extend-consent.md
+  - name: Use the events API in real-time journeys
+    href: developer/using-rtm-events-api.md
   - name: Create a Customer Insights - Journeys segment using the Web API
     href: real-time-marketing-api-segment.md
   - name: Use binding IDs to correlate across triggers
@@ -524,6 +528,8 @@
       href: email-get-started.md
     - name: Best practices for email marketing
       href: get-ready-email-marketing.md
+    - name: Requirements for bulk senders
+      href: requirements-for-bulk-senders.md
     - name: Setup guides
       items:
       - name: Warm-up process for marketing senders
@@ -980,8 +986,6 @@
           href: developer/manually-overwriting-sample-website.md
       - name: Events API
         items: 
-        - name: Using the events API
-          href: developer/using-events-api.md
         - name: Register your web application
           href: developer/register-web-application-events-api.md
         - name: User authentication
