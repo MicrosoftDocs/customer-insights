@@ -1,7 +1,7 @@
 ---
 title: "Preview: Copilot - Create journeys using AI assistance"
 description: Enable the journey copilot to create marketing journeys using everyday language and provide feedback to improve results.
-ms.date: 11/08/2023
+ms.date: 05/08/2024
 ms.topic: get-started
 author: alfergus
 ms.author: alfergus
@@ -60,5 +60,35 @@ As shown in the image below, Copilot automatically detected the **Loyalty member
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot showing ready to create a journey](media/real-time-marketing-ready-to-create-journey.png "Screenshot showing ready to create a journey")
+
+## Journey copilot 101: A guide to creating awesome marketing journeys
+
+The following section outlines some "do's" and "don'ts" for using the journey copilot.
+
+- **Do: Clearly outline a sequence of actions that you want to see in the journey.**
+    - **Example 1**: "After a landing page is completed, send the customer a thank you message to the contact in their preferred channel. Then wait two days and send a survey."
+        - *Explanation*: This prompt is good because each step is described and it includes a specific timing element (waiting two days), enhancing Copilot's ability to generate the right output.
+    - **Example 2**: "Use an A/B test to try out two different promotional emails when a customer completes a purchase."
+        - *Explanation*: This prompt is effective as it suggests utilizing A/B testing for optimizing promotional emails after a purchase and lets copilot generate the test for you.
+    - **Example 3**: "Journey will start for all contacts."
+        - *Explanation*: This prompt specifies a segment but doesn't include what sequence of actions that should come after
+- **Don't: Create prompts that don't start with a segment or a trigger. Journey copilot requires an existing segment or trigger to build the journey. Copilot cannot create the segment or trigger for you.**
+    - **Example 1**: "Send a series of three emails regarding Contoso's new product line."
+        - *Explanation*: This prompt doesn't specify a segment.
+    - **Example 2**: "Send a series of three emails and SMS messages to Tier 1 contacts regarding loan options."
+        - *Explanation*:  This prompt is good as it specifies the target audience (Tier 1 contacts), ensuring the journey is relevant and targeted.
+- **Do: Create prompts that are at least 70 characters long. This helps provide enough information for copilot to interpret.**
+
+    Here are a few examples that fall within this range:
+    - "Use an A/B test to try out two different promotional emails when a customer completes a purchase." (96 characters)
+    - "Send a series of 3 emails and SMS messages regarding Contoso's new product line." (75 characters)
+    - "Send personalized messages to contacts when they submit a marketing form." (73 characters)
+- **Don't: Use vague statements.**
+    - **Example 1**: "Create a nurture journey with monthly emails."
+        - *Explanation*: While the prompt isn't explicitly bad, it lacks detail. The term "nurture journey" is vague. Providing more specifics about the content or purpose of the journey would help Copilot generate a better journey suggestion.
+    - **Example 2**: "Access customer measures from Customer Insights - Data."
+        - *Explanation*: This prompt is irrelevant to building journeys. Copilot is still learning and for the time being is only useful for creating the journey outline.
+- **Don't: Use prompts that involve social media posts. Copilot doesn't support anything beyond what already exists in the product today.**
+    - **Example 1**: "Create a social media post on Facebook and if anyone interacts with it, send them a personalized message."
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
