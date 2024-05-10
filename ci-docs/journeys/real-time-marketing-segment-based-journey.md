@@ -1,7 +1,7 @@
 ---
 title: Create a segment-based journey 
 description: Learn how to create a segment-based journey in Dynamics 365 Customer Insights - Journeys.
-ms.date: 12/13/2023
+ms.date: 05/10/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -27,9 +27,9 @@ Create a segment of your *Most valuable customers*. You can [create your own con
 ### Create email and text messages
 
 - **Product announcement email**: Initial email announcement that is sent to your *most valuable customers*. This email must contain a link to the new product.
-- **Product launched text message**: Follow-up text message that is sent after the product is launched. This follow-up message is sent only to customers who clicked the link in the first email.
+- **Product launched text message**: Follow-up text message that's sent after the product is launched. This follow-up message is sent only to customers who clicked the link in the first email.
 
-You can build the journey while the content is in the **Draft** state. In order to publish and go live with the journey, the content must be in the **Ready to send** state.
+You can build the journey while the content is in the **Draft** state. To publish and go live with the journey, the content must be in the **Ready to send** state.
 
 ## Set the journey start
 
@@ -40,13 +40,13 @@ To create a segment-based journey, go to **Engagement** > **Journeys** and selec
 
 On the "Create a new journey" screen:
 
-- Create name for the journey
+- Create a name for the journey
 - Select **Segment-based** for the journey type. Customers start a segment-based journey when they qualify to be part of a segment.
 - Select a segment
 - Choose the **frequency** at which your journey should run:
   - A **one-time** journey with a **static** audience that runs one time. When the journey starts, the current members of the segment start the journey.
-  - A **one-time** journey where **newly added members can start at any time** responds to changes in the segment membership, letting more people start the journey after it starts. When the journey starts, the current members of the segment start the journey. Newly added segment members start the journey when the segment is refreshed. Each person goes through the journey one time, even if they're removed and then later added again to the segment.
-  - A **repeating** journey runs on a schedule that you define. Every time the journey reaches the scheduled run time all current members of the segment start the journey. Members added to the segment between the scheduled run times will be included in the next run of the journey. Every time the journey runs all members of the segment start the journey, even if they previously entered the journey.
+  - A **one-time** journey where **newly added members can start at any time**. Responds to changes in the segment membership, letting more people start the journey after it starts. When the journey starts, the current members of the segment start the journey. Newly added segment members start the journey when the segment is refreshed. Each person goes through the journey one time, even if they're removed and then later added again to the segment.
+  - A **repeating** journey runs on a schedule that you define. Every time the journey reaches the scheduled run time, all current members of the segment start the journey. Members added to the segment between the scheduled run times are included in the next run of the journey. Every time the journey runs, all segment members start the journey even if they previously entered the journey.
 - Set the **start date and time**: Specify the start date and time when you want to send the announcement. If you want, you can specify the time zone for the journey.
 
 ## Add the announcement messages
