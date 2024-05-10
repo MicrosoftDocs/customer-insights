@@ -11,7 +11,7 @@ search.audienceType:
   - enduser
 ---
 
-# Integrate outbound marketing only with a CMS system, Dynamics 365 Portals, or Power Apps portals
+# Integrate outbound marketing with a CMS system, Dynamics 365 Portals, or Power Apps portals
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
