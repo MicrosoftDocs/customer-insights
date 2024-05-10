@@ -1,7 +1,7 @@
 ---
 title: Customer Insights - Journeys tile reference
 description: Learn about tiles in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/23/2023
+ms.date: 05/10/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -110,6 +110,6 @@ You can configure the wait step using the following parameters:
 
 - **A set amount of time**: Customers wait for the specified amount of time (for example, one hour or one day). The time period starts as soon as customers enter the wait step.
 - **Until a specific date and time**: Customers wait until the specified date and time. If the date and time are already in the past, customers will immediately proceed to the next step.
-- **Until a time specified by a trigger**: Customers wait for the date and time that are specified by a trigger attribute. This configuration is useful for scenarios like appointment reminders, where you can choose to wait one day before the appointment to send a reminder. The date and time information must be included in a trigger that has previously occurred in the journey.
+- **Until a time specified by a trigger**: For trigger-based journeys, customers wait for the date and time specified by a trigger attribute. This configuration is useful for scenarios like appointment reminders, where you can choose to wait one day before the appointment to send a reminder. The date and time information must be included in the trigger that started the journey for the customer.
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]

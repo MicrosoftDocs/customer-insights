@@ -1,7 +1,7 @@
 ---
 title: Create a segment-based journey 
 description: Learn how to create a segment-based journey in Dynamics 365 Customer Insights - Journeys.
-ms.date: 12/13/2023
+ms.date: 05/10/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -26,10 +26,10 @@ Create a segment of your *Most valuable customers*. You can [create your own con
 
 ### Create email and text messages
 
-- **Product announcement email**: This is the initial email announcement that is sent to your *most valuable customers*. This email must contain a link to the new product.
-- **Product launched text message**: This is a follow-up text message that is sent after the product is launched. This follow-up message is sent only to customers who clicked the link in the first email.
+- **Product announcement email**: Initial email announcement that is sent to your *most valuable customers*. This email must contain a link to the new product.
+- **Product launched text message**: Follow-up text message that's sent after the product is launched. This follow-up message is sent only to customers who clicked the link in the first email.
 
-You can build the journey while the content is in the **Draft** state. In order to publish and go live with the journey, the content must be in the **Ready to send** state.
+You can build the journey while the content is in the **Draft** state. To publish and go live with the journey, the content must be in the **Ready to send** state.
 
 ## Set the journey start
 
@@ -40,13 +40,13 @@ To create a segment-based journey, go to **Engagement** > **Journeys** and selec
 
 On the "Create a new journey" screen:
 
-- Create name for the journey
+- Create a name for the journey
 - Select **Segment-based** for the journey type. Customers start a segment-based journey when they qualify to be part of a segment.
 - Select a segment
 - Choose the **frequency** at which your journey should run:
-    - A **one-time** journey with a **static** audience runs exactly once.
-    - A **one-time** journey where **newly added members can start at any time** runs right away for anyone currently in the segment and runs again as members are added to the segment. Each person only goes through the journey once, even if they're removed and re-added to the segment later.
-    - A **repeating** journey runs on a schedule that you define. The journey only runs at those times and anyone added to segments in between those times only participates in the journey the next time it's scheduled to run.
+  - A **one-time** journey with a **static** audience that runs one time. When the journey starts, the current members of the segment start the journey.
+  - A **one-time** journey where **newly added members can start at any time**. Responds to changes in the segment membership, letting more people start the journey after it starts. When the journey starts, the current members of the segment start the journey. Newly added segment members start the journey when the segment is refreshed. Each person goes through the journey one time, even if they're removed and then later added again to the segment.
+  - A **repeating** journey runs on a schedule that you define. Every time the journey reaches the scheduled run time, all current members of the segment start the journey. Members added to the segment between the scheduled run times are included in the next run of the journey. Every time the journey runs, all segment members start the journey even if they previously entered the journey.
 - Set the **start date and time**: Specify the start date and time when you want to send the announcement. If you want, you can specify the time zone for the journey.
 
 ## Add the announcement messages
@@ -55,7 +55,7 @@ Use the plus sign (**+**) on the journey canvas to add the individual steps in y
 
 1. **Send an email**: Because the first step of the journey is to send the product announcement, select the *Product announcement email*. For the **Send to** field, select the attribute that contains the email address you want to send the email to.
 1. **Add an if/then branch**: Set the **Branch off this** property to the previous *Product announcement email*. You want to **Wait for** the *Email link clicked* event. For **Which link**, select the link to view the product details. Finally, set the time limit to *1 day* to indicate that customers have up to one day after receiving the email to click the product link.
-1. **Add a wait**: If customers click the view product link within one day, they'll proceed down the **Yes** branch. Under the yes branch, add a Wait and select *Until a specific date and time*. Here, you can specify the exact date and time that the product will launch. This is helpful if, say, the product launches a few days after your email announcement. Customers wait on this step until the specific date and time. If the date and time has already passed, customers will immediately proceed to the next step.  
+1. **Add a wait**: If customers click the view product link within one day, they proceed down the **Yes** branch. Under the yes branch, add a Wait and select *Until a specific date and time*. Here, you can specify the exact date and time that the product will launch. This is helpful if, say, the product launches a few days after your email announcement. Customers wait on this step until the specific date and time. If the date and time has already passed, customers will immediately proceed to the next step.  
 1. **Send a text message**: After waiting for the product launch, you can send the *Product launched text message*. For the **Send to** field, select the attribute that contains the phone number you want to send the text message to.
 
 ## Publish the journey
