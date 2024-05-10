@@ -108,6 +108,7 @@ Moments-based marketing:
 | DynamicsMKT_ConsentFormsLink | No |
 | DynamicsMKT_EventManagementRealtimeLinkData | No |
 | DynamicsMKT_EventManagementRealtimeLink | No |
+| DynamicsMKT_FormsData | No |
 | DynamicsMKT_Forms | No |
 | DynamicsMKT_FrequencyCapping | No |
 | DynamicsMKT_BrandProfiles | No |
