@@ -848,7 +848,7 @@
       href: score-manage-leads.md
   - name: Customer engagement via portals and surveys
     items:
-    - name: Integrate Customer Insights - Journeys with a CMS system or a Power Apps portal
+    - name: Integrate outbound marketing with a CMS system or a Power Apps portal
       href: portal-optional.md
     - name: Create interactive features with or without portals
       href: portals.md

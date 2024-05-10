@@ -1,7 +1,7 @@
 ---
-title: Integrate Dynamics 365 Customer Insights - Journeys with a CMS system, Dynamics 365 Portals, or Power Apps portals
+title: Integrate outbound marketing with a CMS system, Dynamics 365 Portals, or Power Apps portals
 description: Learn how you can run interactive marketing features for Dynamics 365 Customer Insights - Journeys by using an integrated Dynamics 365 Portal or by using your own website or CMS system.
-ms.date: 09/15/2023
+ms.date: 05/10/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -11,7 +11,7 @@ search.audienceType:
   - enduser
 ---
 
-# Integrate Dynamics 365 Customer Insights - Journeys with a CMS system, Dynamics 365 Portals, or Power Apps portals
+# Integrate outbound marketing with a CMS system, Dynamics 365 Portals, or Power Apps portals
 
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
@@ -29,7 +29,7 @@ For details about portal licensing, see the [Power Apps and Flow licensing FAQ](
 
 Beyond these few differences, Dynamics 365 Portals and Power Apps portals work exactly the same from the perspective of Customer Insights - Journeys, so you can consider these two terms to be interchangeable for the remainder of this topic and elsewhere in the Customer Insights - Journeys documentation.
 
-## How portal integration affects Customer Insights - Journeys features
+## How portal integration affects outbound marketing features
 
 Customer Insights - Journeys provides several features that enable contacts to interact directly with the system. These are:
 
@@ -52,15 +52,9 @@ The following table compares how each of the public-facing interactive features 
 | Forward-to-a-friend pages | Design and publish forwarding pages using the [graphical page designer](create-deploy-marketing-pages.md) in Customer Insights - Journeys.  The pages run directly on the portal. | Not supported. |
 | Event website | The then-current version of the [event website](set-up-event-portal.md) is published automatically on the portal when you install Customer Insights - Journeys.<br><br>To update or customize the site, [download the latest version](developer/event-management-web-application.md) as an Angular project, customize it as needed using your preferred development tools, and then [publish the result on the portal](developer/portal-hosted.md). | [Download the current version](developer/event-management-web-application.md) of the [event website](set-up-event-portal.md) as an Angular project, customize it using your preferred development tools, and then [publish the result on your own website](developer/self-hosted.md). |
 
-## Choose whether to use a portal when setting up a new Customer Insights - Journeys instance
+## Adding a Power Apps portal to an outbound marketing instance 
 
-Each time you install Customer Insights - Journeys, you must choose whether to integrate it with a portal.
-
-If you choose to enable portals integration when installing Customer Insights - Journeys, the setup wizard will automatically check whether you have an unconfigured Power Apps portals license available. If you do, then the setup wizard will claim that license and integrate with it. If you don't have any Power Apps portals licenses available, then the setup wizard will create a trial Power Apps Portals instance for you and integrate with that. The trial is free, but expires in 30 days, after which you must either begin paying for it or stop using it. For details about portal licensing, see the [Power Apps and Flow licensing FAQ](/power-platform/admin/powerapps-flow-licensing-faq#can-you-share-more-details-regarding-the-new-powerapps-portals-licensing).
-
-If you choose the non-portals option, then the setup wizard won't attempt to claim a Dynamics 365 Portal or set up a demo Power Apps portal.
-
-You can use portal features in parallel with website/CMS features provided you have a portal. You could, for example, start by using a portal for all interactive features and then slowly transition to an external website until you're ready to remove the portal entirely.
+This integration is only available in legacy outbound marketing application solutions. To add portals to an instance of outbound marketing, you must request it on the outbound marketing request form (located at **Settings** > **Versions**) at the same time you request to add outbound marketing to your real-time journeys instance. You must provide the details of the portal URL at the time of the request and it can be enabled for you by exception.
 
 > [!NOTE]
 > If have integrated Power Apps portals with your Customer Insights - Journeys instance and the portal suddenly stops working or disappear, the portal trial license may have expired. To determine whether this is the case: 
