@@ -119,10 +119,10 @@ This FAQ answers questions about the new Customer Insights combined product offe
 
     On September 1, 2023, only the new Customer Insights combined offering will be available for new customers.
 
-    Existing, standalone Dynamics 365 Marketing and/or Customers Insights customers will have an opportunity to renew their existing licensing for one contractual cycle before transitioning to the new Customer Insights combined licensing.  This renewal, however, must be contracted before September 1, 2024.
+    Existing, standalone Dynamics 365 Marketing and/or Customers Insights customers will have an opportunity to renew their existing licensing for one contractual cycle before transitioning to the new Customer Insights combined licensing.  This renewal, however, must be contracted before September 1, 2025.
 
 1. **What happens to customers who only have a Dynamics 365 Marketing or Dynamics 365 Customer Insights license or have licensed both applications?**  
 
-    After GA on September 1, 2023, existing customers can choose to remain and renew on the standalone licensing model for another contractual cycle. This renewal must be made during the transitional offer window that will run through September 1, 2024, with a final contract maturity date that can't extend beyond September 1, 2027.  At the end of the renewed contractual period, customers will then need to transition to the new Customer Insights licensing.
+    After GA on September 1, 2023, existing customers can choose to remain and renew on the standalone licensing model for another contractual cycle. This renewal must be made during the transitional offer window that will run through September 1, 2025, with a final contract maturity date that can't extend beyond September 1, 2027.  At the end of the renewed contractual period, customers will then need to transition to the new Customer Insights licensing.
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
