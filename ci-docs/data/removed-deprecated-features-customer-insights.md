@@ -18,6 +18,18 @@ This article describes features that have been removed, or that are planned for 
 
 This list is intended to help you consider these removals and deprecations for your own planning. Where possible, we share option to use similar capabilities for removed or deprecated features.
 
+## Features removed or deprecated in October 2023
+
+### Account engagement enrichment for Dynamics 365 Customer Insights - Data
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Reason for deprecation/removal** | Features in public preview are continously being evaluated based on the balance between customer value and cost of maintaining the service.  |
+| **Replaced by another feature?**   | No |
+| **Product areas affected**         | Enrichment |
+| **Deployment option**              | All |
+| **Status**                         | Removed as of May 16, 2024. |
+
 ## Features removed or deprecated in April 2024
 
 ### HERE enrichment
