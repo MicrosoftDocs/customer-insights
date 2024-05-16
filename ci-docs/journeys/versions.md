@@ -1,7 +1,7 @@
 ---
 title: Use the versions page to enable outbound marketing
 description: Learn how to enable outbound marketing and troubleshoot version control in Dynamics 365 Customer Insights - Journeys.
-ms.date: 05/15/2024
+ms.date: 05/16/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -21,7 +21,7 @@ The versions page shows you the current version of the solutions on your environ
 
 ## How do I enable outbound marketing?
 
-If you have outbound marketing installed on one or more of your environments in the same geography, you see a self-service link to **Enable outbound marketing** on the current environment. Otherwise, you can request it [through this form](https://go.microsoft.com/fwlink/?linkid=2272241)and, if you qualify, outbound marketing can be enabled for you. If you need Power Apps portals provisioned on your outbound marketing instance, you can provide the details in [this request form](https://go.microsoft.com/fwlink/?linkid=2272236)and portals can be added to outbound marketing for you. 
+If you have outbound marketing installed on one or more of your environments in the same geography, you see a self-service link to **Enable outbound marketing** on the current environment. Otherwise, you can request it [through this form](https://go.microsoft.com/fwlink/?linkid=2272241) and, if you qualify, outbound marketing can be enabled for you. If you need Power Apps portals provisioned on your outbound marketing instance, you can provide the details in [this request form](https://go.microsoft.com/fwlink/?linkid=2272236) and portals can be added to outbound marketing for you. 
 
 In the following scenarios, you need to re-enable outbound marketing solutions:
 - If you've performed a copy, backup, or restore of an environment, you only see the real-time journeys solutions in the user experience and don't have any of the services turned on. To add outbound marketing back to the user experience, per the instructions for [copy, backup, and restore](copy-or-restore.md), go to the **Versions** page, choose **Manage+Update**, find the copy or backup environment, and choose **Install**. Once installation has completed, go back to the **Versions** page and select "Enable outbound marketing."
