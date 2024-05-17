@@ -1,7 +1,7 @@
 ---
 title: Make the most of your event check-in flow 
 description: Learn how to optimize your event check-in flow in Dynamics 365 Customer Insights - Journeys.
-ms.date: 04/04/2024
+ms.date: 05/14/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -29,7 +29,6 @@ In Dynamics 365 Customer Insights - Journeys, you can monitor your event attenda
 
 - If check-ins are missing, ensure that the event invite and join emails were sent in the correct order [as mentioned above](optimize-check-in.md#make-the-most-of-your-check-in-monitoring-before-an-event).
 - Pay attention to changes to daylight savings, if any, for the time zone selected for your event or session start time. Some "Join" button clicks may fail the 120-minute criteria if there was a change in daylight savings between the event or session creation time and the event or session start time. Learn more about the 120-minute criteria: [Inviting registrants to attend the Teams event through email](teams-webinar.md#inviting-registrants-to-attend-the-teams-event-through-email).
-- If you're hosting a Teams webinar, select the **Sync with Teams** button on the event page. The button pulls Teams attendance data to create check-ins in Customer Insights - Journeys.
 - Look at the Teams Attendance Report to see the join information. The report will only list a contact if they have certain Teams policies enabled. Learn more: [View webinar engagement data](teams-webinar.md#view-webinar-engagement-data).
 
 - Review the [email](insights.md#email-insights) and [contact](insights.md#contact-insights) insights for your event invite and event attendees. This data will only be collected if the email was sent from the Marketing app and contained the tracking link. Learn more: [How marketing email works in Dynamics 365 Marketing](prepare-marketing-emails.md#how-marketing-email-works-in-customer-insights---journeys).
