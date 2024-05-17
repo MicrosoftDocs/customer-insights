@@ -34,7 +34,7 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 - **Ensure messages go to the right contact email address**
     - It's critical that your messages are delivered by the right channel at the right time. Often, you'll need to pick the correct email address among the several you may have for a contact. Now you can choose which of a contact’s email addresses to target in your journeys. For example, some email messages may be more appropriate for a contact’s work email address, whereas others may best target a personal email address. Now, you have full control over which email address to send email messages to, enabling you to reach your customers where they’re most likely to see your messages and take action.
     - [Release plan](/dynamics365/release-plan/2024wave1/customer-insights/dynamics365-customer-insights-journeys/ensure-messages-go-right-contact-email-address)
-    - [Docs](real-time-marketing-audience-data.md)
+    - [Docs](real-time-marketing-audience-data.md#change-your-audience-configuration)
 
 ### Monthly enhancements
 
