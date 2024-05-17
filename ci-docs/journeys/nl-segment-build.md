@@ -15,9 +15,6 @@ search.audienceType:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4IQy2]
 
-> [!NOTE]
-> You will need your administrator to [turn on the feature switch](admin-feature-switches.md) for the **Natural Language queries for Segmentation** functionality under **Segmentation** before you are able to access it.
-
 > [!IMPORTANT]
 > The the natural language feature for segments currently only supports English language queries.
 
