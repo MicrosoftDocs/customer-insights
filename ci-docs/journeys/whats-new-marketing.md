@@ -24,7 +24,7 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 
 | App              | GA release      |
 |------------------|-----------------|
-| Customer Insights - Journeys        |   1.1.40197.68    |
+| Customer Insights - Journeys        |   1.1.41881.62    |
 
 > [!NOTE]
 > On July 1, 2024, active journeys in the real-time journeys area that were created on or before May 5, 2022 will stop working. To avoid disruption, follow the steps outlined in the [Known issues for journeys](journey-known-issues.md#steps-to-avoid-journey-disruption) article before July 1, 2024.
