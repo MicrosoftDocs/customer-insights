@@ -37,7 +37,7 @@ To use the journey copilot, an administrator needs to enable the feature switch.
 1. Enable the "Tile entry and drop-off analytics (preview)" feature switch toggle, then select **Save** in the upper right.
 
 > [!div class="mx-imgBorder"]
-> ![Enable copilot feature](media/real-time-tile-analytics-feature-switch.png "Enable tile entry and drop-off analytics feature")
+> ![Enable entry and exit analytics](media/real-time-tile-analytics-feature-switch.png "Enable entry and exit analytics feature")
 
 > [!NOTE]
 > The tile entry and exit analytics require the May 2024 update of Customer Insights - Journeys to be installed. The Preview feature will be made available to all customers before the end of May 2024.
@@ -79,6 +79,6 @@ For example, immediately after a segment based journey starts the system starts 
 In the screenshot below, you can see that there are 36 people in the audience segment that have entered this journey. Five of those people in the segment haven't yet moved on to the next step in the journey. Thirty-one people have been analyzed and have moved on to the next step in the journey. And nobody exited the journey due to the processing at this step in the journey.
 
 > [!div class="mx-imgBorder"]
-> ![Enable copilot feature](media/real-time-tile-analytics-entry-tile-in-progress.png "Entry action analytics showing an in-progress journey.")
+> ![Entry action analytics example](media/real-time-tile-analytics-entry-tile-in-progress.png "Entry action analytics showing an in-progress journey.")
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
