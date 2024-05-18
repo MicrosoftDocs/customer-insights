@@ -1,0 +1,84 @@
+---
+title: "Journey analytics"
+description: Real-time journey analytics show the number of people who enter each step in a Customer Insights journey, who left each step, and why they left each step.
+ms.date: 05/17/2024
+ms.topic: article
+author: alfergus
+ms.author: alfergus
+search.audienceType: 
+  - admin
+  - enduser
+---
+
+# Journey analytics
+
+It’s critical to understand exactly what happened to each customer who entered and exit your Customer Insights – Journeys. The analytics provided by each journey answer questions like, "how many people started this journey", "how many people received email from this journey", and "what path are people taking through this journey". While a journey is running you can see the progress of customers through the journey in real time to monitor journey progress. You are also able to export the list of people who've taken each path or action in the journey for further analysis.
+
+## Preview: Confidently understand inflow and exit of customers at every step in a journey
+
+> [!IMPORTANT]
+> A preview feature is a feature that is not complete, but is made available before it’s officially in a release so customers can get early access and provide feedback. Preview features aren’t meant for production use and may have limited or restricted functionality.
+>
+> Microsoft doesn't provide support for this preview feature. Microsoft Dynamics 365 Technical Support won’t be able to help you with issues or questions. Preview features aren’t meant for production use, especially to process personal data or other data that are subject to legal or regulatory compliance requirements.
+
+The improved journey analytics will increase confidence in the processing of every step in your journey through improved metrics and the increased ability to export data. The Preview feature updates the user experience to clearly communicate the number of people who entered each journey step, the number of people who exit the journey at each step, and why people exit the journey.
+
+For example, if your journey makes use of exit or exclusion segments, you will be able to see and understand why there are fewer customers who started your journey than were in your audience segment.
+
+Additionally, you are able to see the list of customers who entered and exited each step in the journey, and export lists of up to 50,000 people for further analysis.
+
+> [!NOTE]
+> This feature is under active development. In the future we'll add additional capabilities to the analytics UX and capabilities for each journey action. At this time, we've updated the Entry action step. The Entry step now shows which people exited the journey and why. We'll be bringing these same capabilities to every action in the journey between now and when this feature becomes Generally Available.
+
+### Enable tile entry and exit analytics preview
+
+To use the journey copilot, an administrator needs to enable the feature switch. To enable the switch:
+1. Go to **Settings** > **Overview** > **Feature switches** > **Journey**.
+1. Enable the "Tile entry and drop-off analytics (preview)" feature switch toggle, then select **Save** in the upper right.
+
+> [!div class="mx-imgBorder"]
+> ![Enable copilot feature](media/real-time-tile-analytics-feature-switch.png "Enable tile entry and drop-off analytics feature")
+
+> [!NOTE]
+> The tile entry and exit analytics require the May 2024 update of Customer Insights - Journeys to be installed. The Preview feature will be made available to all customers before the end of May 2024.
+
+> [!IMPORTANT]
+> Journeys published after the preview feature switch is turned on will have the new journey analytics metrics enabled by this feature. Journeys published before the feature is enabled will not have the additional metrics.
+
+## Understanding journey analytics
+
+> [!IMPORTANT]
+> This section applies to the new journey analytics enabled by the tile entry and exit analytics preview.
+
+After a journey is published, analytics are available for each action (i.e. step or tile) of the a journey. To see the analytics, open a journey that has been published. Analytics are available for journeys which have *Live*, *Completed*, *Completing* and *Stopped* statuses. Analytics are available for every action in the journey.
+
+### Journey flow metrics
+The following metrics are available on every tile in a journey:
+
+* **Inflow** counts the total number of people who have entered this journey step.
+    *  For the entry step in the journey, the **Inflow** counts the number of people who entered the journey from a segment or trigger. For a segment based journey, it's the total size of the audience segment. For a trigger based journey, it's the total number of people who were triggered to start this journey. **Inflow** also includes people who are later excluded from the journey due to journey configuration such as trigger filters or exit segments.
+    * For all other journey steps, the **Inflow** counts the people who have entered this step in the journey from the previous step.
+    * **Inflow** counts a person every time they enter this journey step, including people who enter this journey step multiple times (for journeys that are configured to allow that to happen).
+* **Processing** counts the number of people who have entered this step in the journey but have not yet continued to the next step in the journey or exited the journey due to processing at this step. When a journey is in the **Completed** status, all tiles should have no people in **Processing** at any step.
+* **Processed** counts the number of people who have been evaluated by this step and have continued on to the next step in the journey.
+* **Exit** counts the people who have exited the journey while in this step. These people will not be evaluated by any later step in the journey. A person can exit a journey due to a number of reasons, such as:
+    * *Exit or suppression member*: the person was one of the exit or suppression segments configured by the journey entry or exit conditions.
+    * *Repeat journey entry blocked by configuration*: an ongoing journey such as a trigger-based journey was configured not to allow the same person to enter the journey more than once. Each time the same person tries to start the journey an additional time they'll exit the journey immediately and be counted here.
+    * *Unmet trigger condition*: for a trigger based journey that has conditions configured, this exit reason counts the number of people who did not meet the trigger condition.
+    * *Inactive or missing audience member*: the person's entity in Dataverse cannot be found or is marked as inactive.
+    * *Different business unit*: if Business Unit Scoping is enabled, the journey will prevent Dataverse entities that do not have the same Business Unit as the Journey to start the journey.
+
+> [!TIP]
+> Because journey analytics are real-time and updated as a journey is running, there are situations where the metrics may not appear consistent temporarily. You should expect that the metrics will reach a steady state, final value once the processing of the journey step has completed. When that happens, you should expect that **Inflow** = (**Processing** + **Processed** + **Exit**).
+
+### Entry analytics
+The first step in every journey is the *Entry* action which represents the actions around processing the audience segment or triggers at the start of the customer journey.
+
+For example, immediately after a segment based journey starts the system starts to process each member of the segment. If you view a journey while the system is working on processing the audience segment you'll see the number of people in the segment (i.e. the **Inflow**), the number of people who are in the segment which have not yet moved to the next step in the journey (i.e. **Processing**), and the number of people who have completed this step in the journey and have been sent to the next step (i.e. **Processed**).
+
+In the screen shot below, you can see that there are 36 people in the audience segment that have entered this journey. Five of those people in the segment have not yet moved on to the next step in the journey. 31 people have been analyzed and have moved on to the next step in the journey. And nobody exited the journey due to the processing at this step in the journey.
+
+> [!div class="mx-imgBorder"]
+> ![Enable copilot feature](media/real-time-tile-analytics-entry-tile-in-progress.png "Entry action analytics showing an in-progress journey.")
+
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

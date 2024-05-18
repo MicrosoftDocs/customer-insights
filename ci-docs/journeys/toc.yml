@@ -200,6 +200,8 @@
     items:
     - name: "Preview: Copilot - Create journeys using AI assistance"
       href: real-time-marketing-use-copilot-create-journey.md
+    - name: "Journey analytics"
+      href: real-time-marketing-journey-analytics.md
     - name: Trigger-based journeys
       items:
       - name: Create a trigger-based journey
