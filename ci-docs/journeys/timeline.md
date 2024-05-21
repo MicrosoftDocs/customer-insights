@@ -61,7 +61,6 @@ For more information, see [Use custom connectors with the timeline control](/pow
     - Forms
     - Events
 - You can use filtering to focus on specific types of marketing interactions like all emails that were opened by a contact
-- You can search the timeline for interactions related to a specific marketing asset
 - Preview the communications (emails, text messages, and push notifications) that a contact received or interacted with as part of your marketing campaigns within the timeline
 
 > [!IMPORTANT]
