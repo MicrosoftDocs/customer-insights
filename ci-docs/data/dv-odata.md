@@ -11,9 +11,6 @@ ms.custom: bap-template
 
 # Dataverse APIs for Customer Insights - Data
 
-> [!NOTE]
-> Dynamics 365 Customer Insights - Data APIs will be deprecated on August 31st, 2024. We recommend you use the [Web API to interact with data in Microsoft Dataverse](/power-apps/developer/data-platform/webapi/perform-operations-web-api).
-
 If you're already using Customer Insights - Data APIs, such as query a Customer Profile or get segment memberships, we recommend you migrate your APIs to Dataverse APIs instead. Support for querying metadata, such as get segment definition and workflow management, is coming soon to Dataverse APIs.
 
 If you're getting started with querying data using APIs, we recommend using Dataverse APIs instead.
