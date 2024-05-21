@@ -1,7 +1,7 @@
 ---
 title: New and upcoming features
 description: Information about new features, improvements, and bug fixes in Dynamics 365 Customer Insights - Journeys releases.
-ms.date: 05/16/2024
+ms.date: 05/20/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -36,11 +36,21 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
     - [Release plan](/dynamics365/release-plan/2024wave1/customer-insights/dynamics365-customer-insights-journeys/ensure-messages-go-right-contact-email-address)
     - [Docs](real-time-marketing-audience-data.md#change-your-audience-configuration)
 
+### Public preview
+
+- **Confidently understand inflow and exit of customers at every step in a journey**
+    - Understanding exactly what happened to each customer who entered and exit your real-time journeys is crucial. With the improved journey analytics, you’ll gain confidence in the processing of every step in your journey through improved metrics and the increased ability to export data. For example, if your journey makes use of exit or exclusion segments, you can see and understand why there are fewer customers who started your journey than were in the entry segment. You can also see the list of customers who entered and exited each step in the journey and export lists of up to 50,000 people for further analysis.
+    - [Docs](real-time-marketing-journey-analytics.md)
+
 ### Monthly enhancements
 
-- **Real-time journey segments**
-    - A fix is rolling out for an issue that causes inflated segment membership for some segments that use three or more entities and have repeating data in the columns.
+- **Real-time journey segment membership**
+    - Fixed an issue that causes inflated segment membership for some segments that use three or more entities and have repeating data in the columns.
 This fix makes the membership data for those segments accurate, thus showing a lower count than before.
+- **Real-time journeys now respect daylight savings time**
+    - Recurring journeys that are scheduled to run repeatedly at a future date and time now adjust their schedules so that they are run at the expected time. For example, if you have a daily journey that runs at 9:00 AM in the Pacific Time Zone, that journey will continue to run at 9:00 AM after the next daylight savings time change. Before this fix, the journey would have run at 8:00 AM (or 10:00 AM), depending on the direction of the daylight savings time change.
+- **Customers who have transitioned to real-time journeys can hide outbound marketing from their user experience**
+    - Customers who have transitioned to real-time journeys can enable a cleaner, simplified user experience without outbound marketing. On the **Settings** > **Versions** page, customers who have outbound marketing enabled now see the option to "Hide outbound marketing," which removes it from the application user experience, discouraging users from continuing to use any of its features.
 
 ### New blogs and scenario docs
 
