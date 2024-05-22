@@ -1,7 +1,7 @@
 ---
 title: "Preview: Exclude bot interactions"
 description: Learn how to exclude bot and nonhuman interactions on your emails in Dynamics 365 Customer Insights - Journeys.
-ms.date: 04/08/2024
+ms.date: 05/21/2024
 ms.topic: article
 author: srivas15
 ms.author: alfergus
@@ -18,7 +18,7 @@ search.audienceType:
 >
 > Microsoft doesn't provide support for this preview feature. Microsoft Dynamics 365 Technical Support won’t be able to help you with issues or questions. Preview features aren’t meant for production use, especially to process personal data or other data that are subject to legal or regulatory compliance requirements.
 
-Teams rely on email analytics to evaluate campaign performance and to drive future improvements. Having reliable analytics data is critical to achieve this. Bot protection in Customer Insights - Journeys captures and filters out bot clicks on emails. This provides a more reliable view of analytics data and prevents unexpected outcomes such as inflated metrics, incorrect journeys, and fraudulent double opt-ins.
+Teams rely on channel analytics to evaluate campaign performance and to drive future improvements. Having reliable analytics data is critical to achieve this. Bot protection in Customer Insights - Journeys captures and filters out bot clicks on emails, text messages, push notifications, and custom channels. This provides a more reliable view of analytics data and prevents unexpected outcomes such as inflated metrics, incorrect journeys, and fraudulent double opt-ins.
 
 ## Enable bot protection
 
@@ -26,9 +26,9 @@ To enable bot protection, go to **Settings** > **Feature switches** and enable t
 
 ## Impact of bot protection
 
-Once bot protection is enabled, suspected bot clicks are filtered out going forward and no historical data is impacted. After bot protection is enabled, you may observe a drop in the click rate in your email analytics.
+Once bot protection is enabled, suspected bot clicks are filtered out going forward and no historical data is impacted. After bot protection is enabled, you may observe a drop in the click rate in your email or other channel analytics.
 
-Because bot protection filters out nonhuman link clicks, some journey triggers and branching conditions that use "email clicked" may be impacted. Bot protection doesn't impact email open rates.
+Because bot protection filters out nonhuman link clicks, some journey triggers and branching conditions that use "email clicked" may be impacted. Bot protection doesn't impact email or push notification open rates.
 
 ## How bots are detected
 
