@@ -1,7 +1,7 @@
 ---
 title: Customer Insights - Journeys tile reference
 description: Learn about tiles in Dynamics 365 Customer Insights - Journeys.
-ms.date: 05/10/2024
+ms.date: 05/21/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -84,12 +84,7 @@ The attribute branch lets you branch the journey based on various attributes inc
 
 The attribute branch checks for attribute values the moment a customer enters this step. For example, when a customer enters the attribute branch step, the segment membership condition will check whether the customer is part of the specified segment at that instant.
 
-## Preview: Activate a custom trigger
-
-> [!IMPORTANT]
-> A preview feature is a feature that is not complete, but is made available before it’s officially in a release so customers can get early access and provide feedback. Preview features aren’t meant for production use and may have limited or restricted functionality.
-> 
-> Microsoft doesn't provide support for this preview feature. Microsoft Dynamics 365 Technical Support won’t be able to help you with issues or questions. Preview features aren’t meant for production use, especially to process personal data or other data that are subject to legal or regulatory compliance requirements.
+## Activate a custom trigger
 
 Triggering a custom event allows you to use activate a custom event at any point in the customer journey. Additional journeys or [Power Automate flows](/power-automate) connected to the custom event will be triggered immediately when a customer reaches the tile. This includes custom triggers used in exit criteria, goals, and if/then branches for journeys.
 
