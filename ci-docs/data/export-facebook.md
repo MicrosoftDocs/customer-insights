@@ -53,6 +53,21 @@ Export segments of unified customer profiles to Facebook Ads Manager to create c
 
 1. Select **Save** to complete the connection.
 
+### Refresh authentication for Facebook Ads connection
+Your authentication provided with a connection to Facebook Ads will be valid for 60 days. This is a limitation enforced by Facebook. You can refresh the authentication of a connection at any time.
+
+1. Go to **Settings** > **Connections**.
+
+1. Select the connection from the list of existsing connection you want to refresh the authentication by clicking **Edit**.
+
+1. Authenticate with Facebook Ads:
+
+   1. Select **Continue with Facebook** to sign in to your Facebook Ads account.
+
+   1. Allow the **ads_management** permission after authenticating with Facebook in case it is not already given.
+
+1. Select **Save** to complete the update to the connection.
+
 ## Configure an export
 
 [!INCLUDE [export-permission-include](includes/export-permission.md)]
