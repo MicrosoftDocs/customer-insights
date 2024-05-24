@@ -1,7 +1,7 @@
 ---
 title: New and upcoming features
 description: Information about new features, improvements, and bug fixes in Dynamics 365 Customer Insights - Journeys releases.
-ms.date: 05/20/2024
+ms.date: 05/24/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -49,8 +49,6 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 This fix makes the membership data for those segments accurate, thus showing a lower count than before.
 - **Real-time journeys now respect daylight savings time**
     - Recurring journeys that are scheduled to run repeatedly at a future date and time now adjust their schedules so that they are run at the expected time. For example, if you have a daily journey that runs at 9:00 AM in the Pacific Time Zone, that journey will continue to run at 9:00 AM after the next daylight savings time change. Before this fix, the journey would have run at 8:00 AM (or 10:00 AM), depending on the direction of the daylight savings time change.
-- **Customers who have transitioned to real-time journeys can hide outbound marketing from their user experience**
-    - Customers who have transitioned to real-time journeys can enable a cleaner, simplified user experience without outbound marketing. On the **Settings** > **Versions** page, customers who have outbound marketing enabled now see the option to "Hide outbound marketing," which removes it from the application user experience, discouraging users from continuing to use any of its features.
 
 ### New blogs and scenario docs
 
