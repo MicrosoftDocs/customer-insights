@@ -102,6 +102,17 @@ If the user opens a commercial email sent from an outbound marketing journey and
 
 In outbound marketing journeys, one-click unsubscribe sets a contact’s **Bulk Email** field to **Do Not Allow** to prevent sending any commercial emails to the contact in the future. One-click unsubscribe for outbound marketing doesn't update subscription lists or custom consent fields. Additional work may be required to handle subscription lists or custom content fields.
 
+#### Troubleshooting unsubscribe in outbound marketing
+
+Typicall problem with unsubscribe not working is customization hooked on contact update (in synchronous manner)
+![image](https://github.com/MicrosoftDocs/customer-insights/assets/129884575/cbeaeb22-f685-4282-9957-4aa7a5ce61d8)
+
+Steps:
+- Temporarily [enable plugin trace logs](/power-apps/developer/data-platform/logging-tracing#enable-trace-logging) Enabling plugin trace logs can impact performance negatively, so make sure to disable them once you're done.
+- Trigger the one click unsubscribe flow (click on unsubscribe button in email or craft a POST request agains one-click unsubscribe header)
+- Check the logs. If there's a plugin-related error, there should be a plugin name and a reason why the plugin crashed. Follow up with the plugin provider or [disable the plugin](https://community.dynamics.com/blogs/post/?postid=33f947e8-a5f8-4cb2-b2d9-45b444c56060). Don't disable Microsoft plugins (any plugin name that starts with "Microsoft.Dynamics.Cxp.Forms.")
+- If there is a log indicating priviledge failure during contact update, make sure the `Marketing Service user extensible role` does have privileges for such operation
+
 #### Creating a custom workflow to manage the one-click unsubscribe process
 
 Outbound marketing users that manage consent for different brands separately and want to update different properties of the contact (instead of the **Bulk Email** property) can use the steps below to create and register a custom workflow to manage this process themselves.
