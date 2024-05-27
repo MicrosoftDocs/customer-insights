@@ -1,7 +1,7 @@
 ---
 title: "Export segments to Facebook Ads Manager (preview)"
 description: "Learn how to configure the connection and export to Facebook Ads Manager."
-ms.date: 04/18/2024
+ms.date: 05/27/2024
 ms.reviewer: mhart
 ms.topic: how-to
 author: pkieffer
@@ -52,6 +52,22 @@ Export segments of unified customer profiles to Facebook Ads Manager to create c
 1. Review the [data privacy and compliance](connections.md#data-privacy-and-compliance) and select **I agree**.
 
 1. Select **Save** to complete the connection.
+
+### Refresh authentication for Facebook Ads connection
+
+The authentication of a connection to Facebook Ads is valid for 60 days, which is enforced by Facebook. You can refresh the authentication of a connection at any time.
+
+1. Go to **Settings** > **Connections**.
+
+1. Select the connection to reauthenticate from the list of connections and select **Edit**.
+
+1. Authenticate with Facebook Ads:
+
+   1. Select **Continue with Facebook** to sign in to your Facebook Ads account.
+
+   1. Allow the **ads_management** permission after authenticating with Facebook when asked for.
+
+1. Select **Save** to update the connection.
 
 ## Configure an export
 
