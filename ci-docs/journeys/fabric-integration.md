@@ -128,3 +128,6 @@ Here are some additional resources for this topic:
 - [Tutorial: Fabric for Power BI users](/power-bi/fundamentals/fabric-get-started)
 - [Get started with Microsoft Fabric](/training/paths/get-started-fabric/)
 - [Develop dynamic reports with Microsoft Power BI](/training/paths/develop-dynamic-reports-microsoft-power-bi/)
+- [Lakehouse end-to-end scenario: overview and architecture](/fabric/data-engineering/tutorial-lakehouse-introduction)
+- [Implement medallion lakehouse architecture in Microsoft Fabric](/fabric/onelake/onelake-medallion-lakehouse-architecture)
+- [Organize a Fabric lakehouse using medallion architecture design](/training/modules/describe-medallion-architecture/)
