@@ -1,7 +1,7 @@
 ---
 title: One-click unsubscribe support for emails 
 description: Learn how to use one-click unsubscribe support for emails in Dynamics 365 Customer Insights - Journeys
-ms.date: 03/18/2024
+ms.date: 05/28/2024
 ms.topic: get-started
 author: alfergus
 ms.author: alfergus
@@ -102,16 +102,17 @@ If the user opens a commercial email sent from an outbound marketing journey and
 
 In outbound marketing journeys, one-click unsubscribe sets a contact’s **Bulk Email** field to **Do Not Allow** to prevent sending any commercial emails to the contact in the future. One-click unsubscribe for outbound marketing doesn't update subscription lists or custom consent fields. Additional work may be required to handle subscription lists or custom content fields.
 
-#### Troubleshooting unsubscribe in outbound marketing
+#### Troubleshooting one-click unsubscribe in outbound marketing
 
-Typicall problem with unsubscribe not working is customization hooked on contact update (in synchronous manner)
-![image](https://github.com/MicrosoftDocs/customer-insights/assets/129884575/cbeaeb22-f685-4282-9957-4aa7a5ce61d8)
+Problems with one-click unsubscribe functionality in outbound marketing are typically related to customizations tied to synchronous contact updates.
 
-Steps:
-- Temporarily [enable plugin trace logs](/power-apps/developer/data-platform/logging-tracing#enable-trace-logging) Enabling plugin trace logs can impact performance negatively, so make sure to disable them once you're done.
-- Trigger the one click unsubscribe flow (click on unsubscribe button in email or craft a POST request agains one-click unsubscribe header)
-- Check the logs. If there's a plugin-related error, there should be a plugin name and a reason why the plugin crashed. Follow up with the plugin provider or [disable the plugin](https://community.dynamics.com/blogs/post/?postid=33f947e8-a5f8-4cb2-b2d9-45b444c56060). Don't disable Microsoft plugins (any plugin name that starts with "Microsoft.Dynamics.Cxp.Forms.")
-- If there is a log indicating priviledge failure during contact update, make sure the `Marketing Service user extensible role` does have privileges for such operation
+:::image type="content" source="media/outbound-unsubscribe-flow.png" alt-text="Diagram of outbound marketing contact update flow." lightbox="media/outbound-unsubscribe-flow.png":::
+
+To resolve one-click unsubscribe problems in outbound marketing:
+- Temporarily [enable plugin trace logs](/power-apps/developer/data-platform/logging-tracing#enable-trace-logging). Enabling plugin trace logs can impact performance negatively, so make sure to disable them once you're done.
+- Trigger the one click unsubscribe flow (select the unsubscribe button in an email *or* create a POST request against a one-click unsubscribe header).
+- Check the logs. If there's a plugin-related error, there should be a plugin name and a reason why the plugin crashed. Follow up with the plugin provider or [disable the plugin](https://community.dynamics.com/blogs/post/?postid=33f947e8-a5f8-4cb2-b2d9-45b444c56060). Don't disable Microsoft plugins (any plugin name that starts with "Microsoft.Dynamics.Cxp.Forms.").
+- If there's a log indicating a privilege failure during a contact update, make sure the `Marketing Service user extensible role` has privileges for such an operation.
 
 #### Creating a custom workflow to manage the one-click unsubscribe process
 
@@ -146,10 +147,10 @@ Outbound marketing users that manage consent for different brands separately and
     :::image type="content" source="media/add-the-attribute-values.png" alt-text="Add the attribute values." lightbox="media/add-the-attribute-values.png":::
 
 1. Test that your handler is executed when the one-click unsubscribe action is performed.
-   - Temporarily [enable plugin trace logs](/power-apps/developer/data-platform/logging-tracing#enable-trace-logging) Enabling plugin trace logs can impact performance negatively, so make sure to disable them once you're done.
-   - Open developer console (Ctrl+Shift+I) on any dataverse page
-   - Paste the following snippet to the console (adjust as needed) - it will execute the unsubscribe action
-   - Make sure it executed correctly, be mindfull about the fact in real scenario marketing service will execute this action so if you're accessing some entities make sure `Marketing Service user extensible role` does have privileges for such 
+   - Temporarily [enable plugin trace logs](/power-apps/developer/data-platform/logging-tracing#enable-trace-logging). Enabling plugin trace logs can impact performance negatively, so make sure to disable them once you're done.
+   - Open the developer console (<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd>) on any Dataverse page.
+   - Paste the following snippet into the console (adjust as needed); it will execute the unsubscribe action.
+   - Make sure it executed correctly. You should be aware that in a real scenario the marketing service will execute this action, so if you're accessing any entities, ensure that `Marketing Service user extensible role` has privileges for such.
 ```
 var Sdk = window.Sdk || {};
 
