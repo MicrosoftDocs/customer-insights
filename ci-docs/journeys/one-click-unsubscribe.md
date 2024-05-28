@@ -109,10 +109,11 @@ Problems with one-click unsubscribe functionality in outbound marketing are typi
 :::image type="content" source="media/outbound-unsubscribe-flow.png" alt-text="Diagram of outbound marketing contact update flow." lightbox="media/outbound-unsubscribe-flow.png":::
 
 To resolve one-click unsubscribe problems in outbound marketing:
-- Temporarily [enable plugin trace logs](/power-apps/developer/data-platform/logging-tracing#enable-trace-logging). Enabling plugin trace logs can impact performance negatively, so make sure to disable them once you're done.
-- Trigger the one click unsubscribe flow (select the unsubscribe button in an email *or* create a POST request against a one-click unsubscribe header).
-- Check the logs. If there's a plugin-related error, there should be a plugin name and a reason why the plugin crashed. Follow up with the plugin provider or [disable the plugin](https://community.dynamics.com/blogs/post/?postid=33f947e8-a5f8-4cb2-b2d9-45b444c56060). Don't disable Microsoft plugins (any plugin name that starts with "Microsoft.Dynamics.Cxp.Forms.").
-- If there's a log indicating a privilege failure during a contact update, make sure the `Marketing Service user extensible role` has privileges for such an operation.
+
+1. Temporarily [enable plugin trace logs](/power-apps/developer/data-platform/logging-tracing#enable-trace-logging). Enabling plugin trace logs can impact performance negatively, so make sure to disable them once you're done.
+1. Trigger the one click unsubscribe flow (select the unsubscribe button in an email *or* create a POST request against a one-click unsubscribe header).
+1. Check the logs. If there's a plugin-related error, there should be a plugin name and a reason why the plugin crashed. Follow up with the plugin provider or [disable the plugin](https://community.dynamics.com/blogs/post/?postid=33f947e8-a5f8-4cb2-b2d9-45b444c56060). Don't disable Microsoft plugins (any plugin name that starts with "Microsoft.Dynamics.Cxp.Forms.").
+1. If there's a log indicating a privilege failure during a contact update, make sure the `Marketing Service user extensible role` has privileges for such an operation.
 
 #### Creating a custom workflow to manage the one-click unsubscribe process
 
@@ -146,11 +147,11 @@ Outbound marketing users that manage consent for different brands separately and
     
     :::image type="content" source="media/add-the-attribute-values.png" alt-text="Add the attribute values." lightbox="media/add-the-attribute-values.png":::
 
-1. Test that your handler is executed when the one-click unsubscribe action is performed.
-   - Temporarily [enable plugin trace logs](/power-apps/developer/data-platform/logging-tracing#enable-trace-logging). Enabling plugin trace logs can impact performance negatively, so make sure to disable them once you're done.
-   - Open the developer console (<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd>) on any Dataverse page.
-   - Paste the following snippet into the console (adjust as needed); it will execute the unsubscribe action.
-   - Make sure it executed correctly. You should be aware that in a real scenario the marketing service will execute this action, so if you're accessing any entities, ensure that `Marketing Service user extensible role` has privileges for such.
+1. Test that your handler is executed when the one-click unsubscribe action is performed. To test this:
+    1. Temporarily [enable plugin trace logs](/power-apps/developer/data-platform/logging-tracing#enable-trace-logging). Enabling plugin trace logs can impact performance negatively, so make sure to disable them once you're done.
+    1. Open the developer console (<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd>) on any Dataverse page.
+    1. Paste the following snippet into the console (adjust as needed); it will execute the unsubscribe action.
+    1. Make sure it executed correctly. You should be aware that in a real scenario the marketing service will execute this action, so if you're accessing any entities, ensure that `Marketing Service user extensible role` has privileges for such.
 ```
 var Sdk = window.Sdk || {};
 
@@ -195,7 +196,6 @@ Xrm.WebApi.online.execute(request)
     console.log("The response is: %s", responseBody);
 })
 ```
-   
 
 ## Frequently asked questions
 
