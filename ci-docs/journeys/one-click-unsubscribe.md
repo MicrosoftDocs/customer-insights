@@ -1,7 +1,7 @@
 ---
 title: One-click unsubscribe support for emails 
 description: Learn how to use one-click unsubscribe support for emails in Dynamics 365 Customer Insights - Journeys
-ms.date: 03/18/2024
+ms.date: 05/28/2024
 ms.topic: get-started
 author: alfergus
 ms.author: alfergus
@@ -102,6 +102,19 @@ If the user opens a commercial email sent from an outbound marketing journey and
 
 In outbound marketing journeys, one-click unsubscribe sets a contact’s **Bulk Email** field to **Do Not Allow** to prevent sending any commercial emails to the contact in the future. One-click unsubscribe for outbound marketing doesn't update subscription lists or custom consent fields. Additional work may be required to handle subscription lists or custom content fields.
 
+#### Troubleshooting one-click unsubscribe in outbound marketing
+
+Problems with one-click unsubscribe functionality in outbound marketing are typically related to customizations tied to synchronous contact updates.
+
+:::image type="content" source="media/outbound-unsubscribe-flow.png" alt-text="Diagram of outbound marketing contact update flow." lightbox="media/outbound-unsubscribe-flow.png":::
+
+To resolve one-click unsubscribe problems in outbound marketing:
+
+1. Temporarily [enable plugin trace logs](/power-apps/developer/data-platform/logging-tracing#enable-trace-logging). Enabling plugin trace logs can impact performance negatively, so make sure to disable them once you're done.
+1. Trigger the one click unsubscribe flow (select the unsubscribe button in an email *or* create a POST request against a one-click unsubscribe header).
+1. Check the logs. If there's a plugin-related error, there should be a plugin name and a reason why the plugin crashed. Follow up with the plugin provider or [disable the plugin](https://community.dynamics.com/blogs/post/?postid=33f947e8-a5f8-4cb2-b2d9-45b444c56060). Don't disable Microsoft plugins (any plugin name that starts with "Microsoft.Dynamics.Cxp.Forms.").
+1. If there's a log indicating a privilege failure during a contact update, make sure the `Marketing Service user extensible role` has privileges for such an operation.
+
 #### Creating a custom workflow to manage the one-click unsubscribe process
 
 Outbound marketing users that manage consent for different brands separately and want to update different properties of the contact (instead of the **Bulk Email** property) can use the steps below to create and register a custom workflow to manage this process themselves.
@@ -134,7 +147,55 @@ Outbound marketing users that manage consent for different brands separately and
     
     :::image type="content" source="media/add-the-attribute-values.png" alt-text="Add the attribute values." lightbox="media/add-the-attribute-values.png":::
 
-1. Test that your handler is executed when the one-click unsubscribe action is performed.
+1. Test that your handler is executed when the one-click unsubscribe action is performed. To test this:
+    1. Temporarily [enable plugin trace logs](/power-apps/developer/data-platform/logging-tracing#enable-trace-logging). Enabling plugin trace logs can impact performance negatively, so make sure to disable them once you're done.
+    1. Open the developer console (<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd>) on any Dataverse page.
+    1. Paste the following snippet into the console (adjust as needed); it will execute the unsubscribe action.
+    1. Make sure it executed correctly. You should be aware that in a real scenario the marketing service will execute this action, so if you're accessing any entities, ensure that `Marketing Service user extensible role` has privileges for such.
+```
+var Sdk = window.Sdk || {};
+
+Sdk.OneClickUnsubscribe = function(contactid) {
+    this.contactid = contactid;
+};
+
+Sdk.OneClickUnsubscribe.prototype.getMetadata = function() {
+    return {
+        boundParameter: null,
+        parameterTypes: {
+            "contactid": {
+                "typeName": "mscrm.crmbaseentity",
+                "structuralProperty": 5
+            }
+        },
+        operationType: 0, // This is an action. Use '1' for functions and '2' for CRUD
+        operationName: "new_msdyncrm_custom_unsubscribe"
+    };
+};
+
+// replace c60e0283-5bf2-e311-945f-6c3be5a8dd64 with actual valid contact id
+var contactId = {
+    "contactid@odata.bind": "/contacts(c60e0283-5bf2-e311-945f-6c3be5a8dd64)"
+}
+
+// Create variable calculateRollupFieldRequest and pass those variables created above
+var request = new Sdk.OneClickUnsubscribe(contactId);
+
+// Use the request object to execute the function
+Xrm.WebApi.online.execute(request)
+.then(function(response) {
+    if (response.ok) { // If a response was received.
+        console.log("Status: %s %s", response.status, response.statusText);
+
+        // Use response.json() to access the content of the response body.
+        return response.json();
+    }
+})
+.then(function(responseBody) { 
+    //Do something with the response
+    console.log("The response is: %s", responseBody);
+})
+```
 
 ## Frequently asked questions
 
