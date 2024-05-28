@@ -146,6 +146,55 @@ Outbound marketing users that manage consent for different brands separately and
     :::image type="content" source="media/add-the-attribute-values.png" alt-text="Add the attribute values." lightbox="media/add-the-attribute-values.png":::
 
 1. Test that your handler is executed when the one-click unsubscribe action is performed.
+   - Temporarily [enable plugin trace logs](/power-apps/developer/data-platform/logging-tracing#enable-trace-logging) Enabling plugin trace logs can impact performance negatively, so make sure to disable them once you're done.
+   - Open developer console (Ctrl+Shift+I) on any dataverse page
+   - Paste the following snippet to the console (adjust as needed) - it will execute the unsubscribe action
+   - Make sure it executed correctly, be mindfull about the fact in real scenario marketing service will execute this action so if you're accessing some entities make sure `Marketing Service user extensible role` does have privileges for such 
+```
+var Sdk = window.Sdk || {};
+
+Sdk.OneClickUnsubscribe = function(contactid) {
+    this.contactid = contactid;
+};
+
+Sdk.OneClickUnsubscribe.prototype.getMetadata = function() {
+    return {
+        boundParameter: null,
+        parameterTypes: {
+            "contactid": {
+                "typeName": "mscrm.crmbaseentity",
+                "structuralProperty": 5
+            }
+        },
+        operationType: 0, // This is an action. Use '1' for functions and '2' for CRUD
+        operationName: "new_msdyncrm_custom_unsubscribe"
+    };
+};
+
+// replace c60e0283-5bf2-e311-945f-6c3be5a8dd64 with actual valid contact id
+var contactId = {
+    "contactid@odata.bind": "/contacts(c60e0283-5bf2-e311-945f-6c3be5a8dd64)"
+}
+
+// Create variable calculateRollupFieldRequest and pass those variables created above
+var request = new Sdk.OneClickUnsubscribe(contactId);
+
+// Use the request object to execute the function
+Xrm.WebApi.online.execute(request)
+.then(function(response) {
+    if (response.ok) { // If a response was received.
+        console.log("Status: %s %s", response.status, response.statusText);
+
+        // Use response.json() to access the content of the response body.
+        return response.json();
+    }
+})
+.then(function(responseBody) { 
+    //Do something with the response
+    console.log("The response is: %s", responseBody);
+})
+```
+   
 
 ## Frequently asked questions
 
