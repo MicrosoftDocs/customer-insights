@@ -1,7 +1,7 @@
 ---
 title: "What's new in Dynamics 365 Customer Insights - Data"
 description: "Information about new features, improvements, and bug fixes."
-ms.date: 03/13/2024
+ms.date: 05/29/2024
 ms.topic: conceptual
 author: m-hartmann
 ms.author: skumm
@@ -17,7 +17,26 @@ We roll out updates on a region-by-region basis. So certain regions might see fe
 > [!TIP]
 > To submit and vote on feature requests and product suggestions, go to the [Dynamics 365 Application Ideas portal](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights).
 
-## February 2024
+## April/May 2024
+
+### General availability
+
+#### Segments and measures limits increased
+
+We have increased the limit for active segments and measures in Dynamics 365 Customer Insights – Data from 500 to 1000. You can now create and manage more campaigns using up to 1000 segments or measures based on your customer data and use them for targeted marketing, personalized experiences, or sales actions.  
+
+- [Docs](service-limits.md)
+
+### Public preview
+
+#### Keep Facebook audiences in sync with a single connection
+
+The exports feature in Dynamics 365 Customer Insights lets you choose which customer segments you want to synchronize with Facebook for targeted advertisements. That flexibility can also mean ongoing administration due to Facebook’s requirement to reauthenticate every 60 days.
+With this release, managing your exports to Facebook becomes easier. Now, you can manage all your Facebook Ads exports through a single connection. This reduces your effort to managing one connection, regardless of the number of exports you've set up.
+
+- [Docs](export-facebook.md)
+
+## February/March 2024
 
 ### General availability features
 
