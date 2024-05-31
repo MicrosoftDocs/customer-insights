@@ -20,6 +20,47 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 
 ## June 2024 update
 
+### Version number
+
+| App              | GA release      |
+|------------------|-----------------|
+| Customer Insights - Journeys        |      |
+
+> [!NOTE]
+> On July 1, 2024, active journeys in the real-time journeys area that were created on or before May 5, 2022 will stop working. To avoid disruption, follow the steps outlined in the [Known issues for journeys](journey-known-issues.md#steps-to-avoid-journey-disruption) article before July 1, 2024.
+
+### General availability
+
+- **Prevent duplicate emails to shared email addresses**
+    - Effective email management is crucial for maintaining strong customer relationships and ensuring your business's success. By enabling email deduplication, you can ensure that even if your data has multiple contacts with the same email address, your message will be sent only once to your customers, keeping their inboxes clutter-free and preserving your brand reputation.
+    - [Release plan]()
+    - [Docs](email-deduplication.md)
+
+- **Orchestrate journeys using any marketing interaction**
+    - Transform the way you communicate with your customers. By leveraging marketing interaction triggers to orchestrate or branch customer journeys, you can now engage your customers based on the interactions they have with your marketing messages. Instantly adapt your strategies based on your customers' real-time interactions, ensuring that every message you send hits the right note. By engaging customers based on their interactions, you can significantly ramp up your chances of conversion with greater personalization. For example, you can branch and orchestrate journeys based on customer interactions with emails such as "email link clicked" or "email blocked."
+    - [Release plan]()
+    - [Docs]()
+
+- **Easily manage customer consent from contact and lead forms**
+    - Enhanced contact and lead forms allow you to quickly see and update customer consent, helping you effortlessly manage what types of messages are sent to your customers. This comprehensive view gives you one place to manage consent across every channel and line of business for your organization. Quickly see if a customer has opted out of all commercial communication from your business. Explore which topics a contact has opted into or out of receiving across all channels: email, text, and custom channels. Get a complete understanding of each contact and lead's consent preferences in one easy-to-use screen.
+    - [Release plan]()
+    - [Docs]()
+
+### Public preview
+
+- **Improve engagement and compliance with double opt-in**
+    - Double opt-in is a valuable tool for email marketing, ensuring a high-quality, engaged subscriber base by requiring users to confirm their subscription through a follow-up email. This process not only reduces spam complaints and bounce rates but also enhances sender reputation and supports compliance with data protection regulations. By implementing double opt-in, marketers can cultivate a more effective email marketing strategy, leading to increased open and click-through rates and a better overall brand experience for subscribers.
+    - [Release plan]()
+    - [Docs]()
+
+### Monthly enhancements
+
+### New blogs and scenario docs
+
+Learn how to make the most of the new Dynamics 365 Customer Insights features in our latest blogs and scenario docs:
+
+- [Revolutionizing marketing workflows with Copilot in Dynamics 365 Customer Insights - Microsoft Dynamics 365 blog](https://cloudblogs.microsoft.com/dynamics365/bdm/2024/04/02/revolutionizing-marketing-workflows-with-copilot-in-dynamics-365-customer-insights/)
+
 ## May 2024 update
 
 ### Version number
