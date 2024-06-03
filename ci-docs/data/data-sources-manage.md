@@ -40,7 +40,7 @@ To refresh a data source on demand:
 
 1. Select the status to open the **Progress details** pane and view the progress. To cancel the job, select **Cancel job** at the bottom of the pane.
 
-## Corrupt data sources
+## Review corrupt data sources
 
 Data being ingested may have corrupt records that can cause the data ingestion process to complete with errors or warnings.
 
