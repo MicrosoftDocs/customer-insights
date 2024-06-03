@@ -1643,7 +1643,7 @@
     },
     {
       "source_path": "ci-docs/common-data-ingestion-errors.md",
-      "redirect_url": "/dynamics365/customer-insights/data/common-data-ingestion-errors",
+      "redirect_url": "/troubleshoot/dynamics-365/customer-insights/data/data-ingestion/common-data-ingestion-errors",
       "redirect_document_id": false
     },
     {
