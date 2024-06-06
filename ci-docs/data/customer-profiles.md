@@ -80,6 +80,10 @@ Customer details include:
 
 To return to the **Customers** page, select **Back to Customers**.
 
+## Removing customer profiles
+
+Profiles are dynamically generated based on source data. To modify the profiles that are created, you must modify the source to remove customer data from the source, thereby eliminating the resulting profile creation in Customer Insights - Data. [Read more](dsr-rights-requests.md) about removing profiles. 
+
 ## Next steps
 
 [Add more data sources](data-sources.md), [enrich unified profiles](enrichment-manage.md), or [create segments](segments.md) to work with unified customer profiles in other applications.
