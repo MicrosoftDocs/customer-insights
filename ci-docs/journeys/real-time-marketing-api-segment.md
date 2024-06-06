@@ -210,7 +210,7 @@ The API request is sent via HTTP POST to the API endpoint. The API method `(msdy
 
 ```
 {
-    "SegmentId: "<Segment ID>"
+    "SegmentId": "<Segment ID>"
 }
 ```
 
