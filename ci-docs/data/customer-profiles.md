@@ -1,7 +1,7 @@
 ---
 title: "View customer profiles"
 description: "View your unified customer data including using search and filter in Dynamics 365 Customer Insights"
-ms.date: 09/27/2023
+ms.date: 06/07/2024
 ms.reviewer: mhart
 ms.topic: conceptual
 author: Nils-2m
@@ -79,6 +79,10 @@ Customer details include:
 - **Potential interests, potential brands** show if you configured a [brand or interest affinity enrichment](enrichment-microsoft.md). It represents potential interests and affinities for brands based on other customers whose profile is similar to the selected customer profile.
 
 To return to the **Customers** page, select **Back to Customers**.
+
+## Removing customer profiles
+
+Profiles are generated dynamically based on source data. To modify generated profiles, you must modify the source to remove customer data, thus eliminating the resulting profile generation in Customer Insights - Data. [Learn more](dsr-rights-requests.md) 
 
 ## Next steps
 
