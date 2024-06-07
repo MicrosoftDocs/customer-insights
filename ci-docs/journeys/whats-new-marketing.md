@@ -1,7 +1,7 @@
 ---
 title: New and upcoming features
 description: Information about new features, improvements, and bug fixes in Dynamics 365 Customer Insights - Journeys releases.
-ms.date: 05/24/2024
+ms.date: 06/06/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -35,12 +35,6 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
     - It's critical that your messages are delivered by the right channel at the right time. Often, you'll need to pick the correct email address among the several you may have for a contact. Now you can choose which of a contact’s email addresses to target in your journeys. For example, some email messages may be more appropriate for a contact’s work email address, whereas others may best target a personal email address. Now, you have full control over which email address to send email messages to, enabling you to reach your customers where they’re most likely to see your messages and take action.
     - [Release plan](/dynamics365/release-plan/2024wave1/customer-insights/dynamics365-customer-insights-journeys/ensure-messages-go-right-contact-email-address)
     - [Docs](real-time-marketing-audience-data.md#change-your-audience-configuration)
-
-### Public preview
-
-- **Confidently understand inflow and exit of customers at every step in a journey**
-    - Understanding exactly what happened to each customer who entered and exit your real-time journeys is crucial. With the improved journey analytics, you’ll gain confidence in the processing of every step in your journey through improved metrics and the increased ability to export data. For example, if your journey makes use of exit or exclusion segments, you can see and understand why there are fewer customers who started your journey than were in the entry segment. You can also see the list of customers who entered and exited each step in the journey and export lists of up to 50,000 people for further analysis.
-    - [Docs](real-time-marketing-journey-analytics.md)
 
 ### Monthly enhancements
 
