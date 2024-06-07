@@ -1,5 +1,5 @@
 ---
-title: Predict transaction churn (contains video)
+title: Predict transaction churn
 description: "Predict whether a customer is at risk for no longer purchasing your products or services."
 ms.date: 04/29/2024
 ms.reviewer: mhart
@@ -7,7 +7,7 @@ ms.topic: how-to
 author: radsay01
 ms.author: rsayyaparaju 
 ms.custom: bap-template
-ms.collection: bap-ai-copilot 
+ms.collection: bap-ai-copilot
 ---
 
 # Predict transaction churn
