@@ -37,9 +37,9 @@ Consider the following when transitioning forms:
 
 The following features may be of interest as you transition from outbound marketing to real-time journeys. These features provide parity, equivalent, or better functionality than what was available in outbound marketing.
 
-- **Form prefill** - 2024, wave 2
-- **Lead linked to parent contact**
-- **Custom unmapped fields**
+- **Form prefill** - 2024, wave 2 - Forms populate with information (e.g., first and last name) when user visits the form using the link provided in the message sent by Customer Insights Journeys  
+- **Lead linked to parent contact** - When a lead is created upon form submission, it is linked to its contact.
+- **Custom unmapped fields** - Ability to include fields in a form that are not connected to any table. Usually this is used for information that is temporary in nature and needed only during the current journey (e.g., meals choices for attending an event).
 
 > [!TIP]
 > If you have questions or comments, visit the [Outbound to real-time transition community forum](https://community.dynamics.com/forums/thread/?partialUrl=Outbound-to-Real-Time-Transition)
