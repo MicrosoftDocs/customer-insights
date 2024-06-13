@@ -1,7 +1,7 @@
 ---
 title: Set up an event website in outbound marketing
 description: Set up a Dynamics 365 Customer Insights - Journeys outbound marketing event website, where people can read about your event and its speakers, create an account, register for the event, purchase passes, view their session schedule, and more.
-ms.date: 08/23/2023
+ms.date: 06/13/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -115,7 +115,7 @@ When a visitor to the website decides to register for your event, they proceed a
     - If you are hosting the event website on a Power Apps portal, then visitors who use the site to create a registration account must do so using an email address that doesn't belong to any contact already in your database.
 1. If your event requires payment, a payment gateway opens and the visitor must enter their payment details.
 1. When payment confirmation is received (or right away, if no payment is required), contact records are matched or created (as required) and registration records are created and linked to each new or existing contact that was entered into the registration form.
-1. When lead generation is activated for an event, a unique lead record is created for every contact that registers. However, if a contact who has previously registered for the same event registers again, a new lead record would not be created.
+1. When lead generation is activated for an event, a unique lead record is created for every contact that registers. However, if a contact who previously registered for an event registers for the same event again, a new lead record *is not* created.
 
 Here's how to configure each of the options that's described as optional in the previous procedure:
 
@@ -150,7 +150,7 @@ When a new event registration is received, Customer Insights - Journeys looks to
 
 Your admin can choose to match incoming registrations by email alone; first name and last name; or email, first name, and last name. For details about how to choose your matching strategy, see [Event administration](events-settings.md#event-admin).
 
-If you choose to enable lead generation for events, then a new lead will also be generated for each registration and linked to the appropriate contact. However, if a contact who has previously registered for the same event registers again, a new lead record would not be created. To control whether or not to generate new leads for any event, open the event record and set the **Create leads for event registrations** option to **Yes** or **No**.
+If you choose to enable lead generation for events, then a new lead will also be generated for each registration and linked to the appropriate contact. However, if a contact who previously registered an event registers for the same event again, a new lead record *is not* created. To control whether to generate new leads for any event, open the event record and set the **Create leads for event registrations** option to **Yes** or **No**.
 
 <a name="open-site"></a>
 
