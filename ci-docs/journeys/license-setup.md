@@ -1,7 +1,7 @@
 ---
 title: Customer Insights license guidance
 description: Learn about licensing information in Dynamics 365 Customer Insights.
-ms.date: 06/05/2024
+ms.date: 06/12/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -13,7 +13,7 @@ search.audienceType:
 
 # Customer Insights license guidance
 
-This article covers important key points about Customer Insights licensing and provides answers to frequently asked questions about licensing.
+This article covers key points about Customer Insights licensing and answers frequently asked questions about licensing.
 
 ## Customer Insights licensing key points
 
@@ -24,7 +24,7 @@ This article covers important key points about Customer Insights licensing and p
 
 As a tenant admin, you can see what licenses are on your tenant by going to the [Microsoft Admin Center](https://admin.microsoft.com) then going to **Billing** > **Your Products**.
 
-Because Customer Insights licenses aren't seat-based (that is, you don't pay per user), they aren't listed under **Licenses**. Only licenses where you pay per user and assign users show up under **Licenses**.
+Because Customer Insights licenses aren't seat-based (that is, you don't pay per user), they aren't listed under **Licenses**. Only licenses where you pay per user and assign users appear under **Licenses**.
 
 ### Add licenses to your tenant
 
@@ -42,7 +42,7 @@ Depending on how you acquire your license, there are different pathways to get t
 - If you purchased before September 2023, you probably own one or both of the standalone licenses: Dynamics 365 Marketing (standalone) or Dynamics 365 Customer Insights (standalone). The new entitlements given with the currently available Dynamics 365 Customer Insights license don't transfer to the old standalone licenses. To get the new entitlements, you can add the new Dynamics 365 Customer Insights license to your tenant at any time in your contract cycle. Depending on your purchase channel, you can remove the standalone licenses on your renewal date.
 - As of September 2023 (when the new licenses and entitlements were launched), licenses are no longer associated with individual application installations as they were prior for the Marketing standalone license model. The applications for Customer Insights - Journeys (formerly called Marketing) and Customer Insights - Data are the same for the old licenses and the new license. **Do not uninstall and reinstall the applications when you change license types**.
 - The new entitlements don't apply to subscribers of the old, standalone models. For example, if you own the old standalone Dynamics 365 Marketing license, you don't gain access to install Customer Insights - Data. You must buy the new Dynamics 365 Customer Insights base license to gain the new entitlements.
-- If you're a subscriber of the standalone Marketing or Customer Insights offers prior to September 2023 and you want to renew on those offers instead of taking advantage of the new, combined Customer Insights offer, you can work with your seller or partner to renew on the legacy, standalone offers.
+- If you're a subscriber of the standalone Marketing or Customer Insights offers from before September 2023 and you want to renew on those offers instead of taking advantage of the new, combined Customer Insights offer, you can work with your seller or partner to renew on the legacy, standalone offers.
 - If you're on the old Dynamics 365 Marketing standalone license and need to add interacted people (formerly called "active contacts") quota but can't buy the old active contacts add-ons because you previously didn't own the exact SKUs, you can buy the new Interacted People T1-T3 add-ons to increase your quota.
 - To scale your needs for the application you're using, you can buy add-ons of interacted people (for the Customer Insights - Journeys app) or unified people (for the Customer Insights - Data app) independently of each other.
     - The meters for interacted people and unified people are independent of each other.
@@ -55,16 +55,16 @@ Depending on how you acquire your license, there are different pathways to get t
 - The new base Customer Insights license entitles you to:
     - 10,000 interacted people at the tenant level for use with the Customer Insights - Journeys app to engage contacts, leads, profiles, and other Dataverse entities.
     - 100,000 unified people at the tenant level for use with the Customer Insights - Data app to unify, enrich, and know the customer.
-- You get 10x interactions per month for the Customer Insights - Journeys app as a [safe use limit](fair-use-policy.md). This means that you can send interactions up to 10 times the total number of interacted people you own at the tenant level. For example, if you own 10,000 interacted people, you can send up to 100,000 interactions per month. Interactions aren't tied to the number of interacted people they're distributed to. In the example, you can choose whether to send all 100,000 interactions to one interacted person or allocate the interactions among interacted people. Interactions reset monthly and don't roll over. To get more than 100,000 interactions per month, increase the number of interacted people you own. Interaction usage and performance is subject to environment level [safe use limits](fair-use-policy.md).
+- You get 10x interactions per month for the Customer Insights - Journeys app as a [safe use limit](fair-use-policy.md). This means that you can send interactions up to 10 times the total number of interacted people you own at the tenant level. For example, if you own 10,000 interacted people, you can send up to 100,000 interactions per month. Interactions aren't tied to the number of interacted people they're distributed to. In the example, you can choose whether to send all 100,000 interactions to one interacted person or allocate the interactions among many interacted people. Interactions reset monthly and don't roll over. To get more than 10x interactions per month, increase your interacted people entitlement. Interaction usage and performance are subject to environment-level [safe use limits](fair-use-policy.md).
 - All quota counts at the tenant level across different environment types (sandbox or production) because the database capacity and services cost Microsoft the same amount of money regardless of the type of environment or application lifecycle development cycle in which it's being used. All quota usage is summed at the tenant level across all environment types.
 - By June 30, 2024, if you own paid licenses there are no longer application installation limits for either **Customer Insights - Journeys (real-time only)** or **Customer Insights - Data** on your production and sandbox Dataverse environments. 
 - For Customer Insights - Journeys, outbound marketing solution installations are still limited by the prior application licensing constraints. If you own Dynamics 365 Marketing or the add-ons for sandbox or production installations, you get one installation of outbound marketing solutions per license. If you own the Dynamics 365 Customer Insights license available after September 2023, you get four outbound marketing solutions.
 - Trial installations are still limited to one environment per trial license. 
-- Email throughput of 500,000 messages per hour is granted as follows:
+- See [detailed documentation about email throughput](real-time-marketing-throughput-guidance.md). Email throughput of 500,000 messages per hour is granted as follows:
     - For customers on the standalone Dynamics 365 Marketing SKU with 10,000,000 or more active contacts.
     - For customers with the new Dynamics 365 Customer Insights SKU with 500,000 or more interacted people.
     - For customers with the new Dynamics 365 Customer Insights SKU who have less than 500,000 interacted people but have purchased the 500,000 sending burst add-on through their seller.
-- The Dataverse entitlements on both the full price and attach base offers are the same. In other words, you get the same number of Dataverse entitlements on the full price base offer as you do for the attach priced base offer. You can only get the Dataverse entitlements for the base offer (either full-priced or attached priced) one time, regardless of how many instances of the base offer you buy. You receive incremental Dataverse entitlements for each unit of add-on packs you buy of interacted people and unified people, respectively.
+- The Dataverse entitlements on the full price and the attach base offers are the same. In other words, you get the same number of Dataverse entitlements on the full price base offer as you do for the attach priced base offer. You can only get the Dataverse entitlements for the base offer (either full-priced or attached priced) one time, regardless of how many instances of the base offer you buy. You receive incremental Dataverse entitlements for each unit of add-on packs you buy of interacted people and unified people, respectively.
 
 ### Licenses vs. applications
 
