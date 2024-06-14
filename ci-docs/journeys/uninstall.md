@@ -1,7 +1,7 @@
 ---
 title: Uninstall Customer Insights
 description: How to remove Dynamics 365 Customer Insights.
-ms.date: 02/05/2024 
+ms.date: 05/10/2024 
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -108,6 +108,7 @@ Moments-based marketing:
 | DynamicsMKT_ConsentFormsLink | No |
 | DynamicsMKT_EventManagementRealtimeLinkData | No |
 | DynamicsMKT_EventManagementRealtimeLink | No |
+| DynamicsMKT_FormsData | No |
 | DynamicsMKT_Forms | No |
 | DynamicsMKT_FrequencyCapping | No |
 | DynamicsMKT_BrandProfiles | No |

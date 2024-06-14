@@ -86,7 +86,7 @@ Each entity in the `consents` collection should have the following properties:
 | unsubscribeurl | `string` | URL pointing to page where customers can manage their consent | `https://contoso.com/manage-email-sending-preferences?for=1253515123` |
 | oneclickunsubscribeurl | `string` | URL pointing to page where customers can manage their consent; the URL implements [RFC 8085](https://datatracker.ietf.org/doc/html/rfc8058) | `https://contoso.com/manage-email-list?for=1253515123` |
 
-# Create your own consent provider solution
+## Create your own consent provider solution
 
 1. Create a new blank solution.
 1. Add a custom API that matches the contract of the custom API for consent checks.
@@ -99,7 +99,7 @@ Each entity in the `consents` collection should have the following properties:
     1. If the email entity validation failed, investigate the plugin trace logs for errors in your logic.
     2. If the email went live, make sure to also test a small journey. Create a static segment with your testing email address and create a segment-based journey targeting this segment. The email should be sent out to the given email address. Make sure the unsubscribe URL in the email and the `List-Unsubscribe` headers (if your consent system supports one-click unsubscribe) are set correctly.
 
-# Sample consent provider solution
+### Sample consent provider solution
 [Sample consent provider solution](../../data/media/ConsentProviderSample.zip)
 
 [!INCLUDE [footer-include](.././includes/footer-banner.md)]

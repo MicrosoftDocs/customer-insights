@@ -55,7 +55,6 @@ The table provides an overview of the different roles. For  details, see each in
 
 ## Marketing contributor (preview)
 
-- The Marketing contributor role is only available in [business unit enabled environments](business-units-data-separation.md)
 - Can only access customer profiles that belong to the business unit of the user.
 - Create segments using the **Segments** page (only *Build your own*, no projected attributes).
 - Create measures using the **Measures** page (only *Build your own*). Can only create measures on tables that have a relationship path to customer profiles.
@@ -64,7 +63,7 @@ The table provides an overview of the different roles. For  details, see each in
 
 > [!NOTE]
 > Marketing contributors can only create segments and measures from customer profiles, unified activities, segments, and customer measures. This permission has limited functionality in some areas compared to the Contributor role.
-> Marketing contributors can't search for customers in the *customers* view.
+> Marketing contributors cannot search for customers in the *customers* view. They also cannot see measures and activities on the customer card in the *customers* view.
 
 ### Marketing contributor role examples
 

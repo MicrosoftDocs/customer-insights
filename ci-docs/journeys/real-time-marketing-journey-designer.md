@@ -1,7 +1,7 @@
 ---
 title: Customize the journey designer in Customer Insights - Journeys
 description: Learn how to customize the journey designer in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/22/2023
+ms.date: 05/10/2024
 ms.topic: get-started
 author: alfergus
 ms.author: alfergus
@@ -15,36 +15,44 @@ search.audienceType:
 
 Customization of your customer journeys is now available in Dynamics 365 Customer Insights - Journeys. Not only can you use out-of-the-box Customer Insights - Journeys capabilities to engage customers, but you can also now create personalized, flexible, and efficient solutions through Power Apps to better tailor Customer Insights - Journeys to meet your specific business needs.
 
-For example, you can extend the journey canvas, adding custom fields through Dataverse to streamline your business processes for higher efficiency. This allows you to add custom fields such as "Campaign" to your journeys to better manage your assets, collaborate amongst your team members, and give you more flexibility to create customized analytics reports.
+For example, you can extend the journey canvas, adding custom fields through Dataverse to streamline your business processes for higher efficiency. For example, you could add a custom "Campaign" field to your journeys to better manage your assets, collaborate with your team members, and give you more flexibility to create customized analytics reports.
 
-Here's how you can achieve the above scenario through adding a campaign field in the new journey designer in Customer Insights - Journeys:  
-1.	Go to Power Apps, and find the ‘**Journey**’ table under **Dataverse -> Tables**
+Here's how you can achieve the above scenario by adding a campaign field in the new journey designer in Customer Insights - Journeys:
 
-> [!div class="mx-imgBorder"]
-> ![dataverse tables](media/real-time-marketing-dataverse-tables.png "dataverse tables")
+1. Go to [Power Apps](https://make.powerapps.com/) for the Customer Journeys - Insights environment and find the **Journey** table under **Dataverse** > **Tables**.
 
-2.	Go to **Data experiences -> Forms** to access the new journey designer form 
+    > [!div class="mx-imgBorder"]
+    > ![dataverse tables](media/real-time-marketing-dataverse-tables.png "dataverse tables")
 
-> [!div class="mx-imgBorder"]
-> ![data experiences forms](media/real-time-marketing-data-experiences-forms.png "data experiences forms")
+1. To access the new journey designer form, go to **Data experiences** > **Forms**.
 
-3.	Choose ‘**Main**’ under ‘**Form type**’ to get started. 
+    > [!div class="mx-imgBorder"]
+    > ![data experiences forms](media/real-time-marketing-data-experiences-forms.png "data experiences forms")
 
-> [!div class="mx-imgBorder"]
-> ![form type](media/real-time-marketing-form-type.png "form type")
+1. Choose **Main** under **Form type** to get started.
 
-4.	You can now add new fields under ‘**Settings**’ under the new journey form. 
+    > [!div class="mx-imgBorder"]
+    > ![form type](media/real-time-marketing-form-type.png "form type")
 
-> [!div class="mx-imgBorder"]
-> ![new journey form](media/real-time-marketing-new-journey-form.png "new journey form")
+1. You should see a form designer that looks like the new journey creation experience under the **Design** tab. Navigate to the **Settings** tab in the new journey form.
 
-5.	Go to ‘**Components**’ to add a new section. Select the ‘**campaign**’ field under the new section. 
+    > [!div class="mx-imgBorder"]
+    > ![new journey form](media/real-time-marketing-new-journey-form.png "new journey form")
 
-> [!div class="mx-imgBorder"]
-> ![new journey campaign](media/real-time-marketing-new-journey-campaign.png "new journey campaign")
+    > [!IMPORTANT]
+    > The **Settings** tab may be hidden by default. To view hidden elements, enable the **Show hidden** switch at the bottom of the form designer.
 
-6.	Your customized fields will then render under the ‘**Settings**’ pane on the journey designer. 
+1. Add the fields you want to show on the journey designer on the **Settings** tab. You can add sections to organize your fields. In this example, a section labeled *Campaign* is added to the form with a custom *Campaign* field.
 
-**Warning**: Please note that if you add a new tab on the journey designer, it will not be rendered. Only sections and fields under Settings show up on the journey canvas. 
+    > [!div class="mx-imgBorder"]
+    > ![new journey campaign](media/real-time-marketing-new-journey-campaign.png "new journey campaign")
+
+    > [!CAUTION]
+    > Only sections and fields under **Settings** will show up in the **Other Settings** side pane in the journey designer. Other tabs added in the form designer aren't rendered in the journey designer.
+
+1. The fields added on the **Settings** tab are visible in the **Other Settings** pane in the journey designer.
+
+    > [!div class="mx-imgBorder"]
+    > ![other settings journey designer](media/real-time-marketing-new-journey-campaign-custom-settings.png "Other Settings in real-time journey designer")
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]

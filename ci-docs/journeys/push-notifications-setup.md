@@ -1,7 +1,7 @@
 ---
 title: Set up push notification applications
 description: Learn how to set up push notification applications for Customer Insights - Journeys
-ms.date: 03/14/2023 
+ms.date: 05/01/2024 
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -78,6 +78,8 @@ For Android applications, Customer Insights - Journeys uses the Firebase Cloud M
 > To generate this file, login to your Firebase account, navigate to the Firebase project for your application, and open project settings. Then, visit the service accounts tab and select **Generate a new private key**. This creates and downloads a JSON file that you can save and then upload to your push notification settings in Customer Insights - Journeys.
 >
 > Once you have the new file, navigate to the push notifications settings area of Customer Insights - Journeys. Open the push notification configuration. Here, you can change your FCM authentication mode from "API Key" to "Service Account JSON." Doing so allows you to upload the JSON file you created. Once saved, the authentication method is updated and push notifications continue sending successfully.
+>
+> For detailed instructions, visit [Transition Andriod push notifications to FCM tokens for authorization](push-notification-fcm-token-transition.md)
 
 There are two FCM authentication modes: Service Account JSON and API key.
 

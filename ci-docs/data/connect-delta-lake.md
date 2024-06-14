@@ -128,6 +128,5 @@ Data synchronization can fail if your Delta folder data was deleted and then rec
 ## Next steps
 
 - [Data unification overview](data-unification.md)
-- [Common reasons for ingestion errors or corrupt data with Azure Data Lake Storage](common-data-ingestion-errors.md#common-reasons-for-ingestion-errors-or-corrupt-data-with-azure-data-lake-storage)
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

@@ -1,7 +1,7 @@
 ---
 title: How Customer Insights - Journeys uses suppression lists for email deliverability
 description: Learn how Customer Insights - Journeys uses suppression lists to protect email sending reputations.
-ms.date: 12/22/2023
+ms.date: 04/30/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -55,6 +55,19 @@ The spam complaint suppression list stores information about spam complaints (*f
 ### Pattern suppression
 
 The pattern suppression is a manual list maintained by the deliverability engineers. It contains domains or email addresses that may not be a good idea to send to. For example, test mailboxes that will never read emails or domains that host temporary or disposable email addresses. Such mailboxes and domains are accessible to anyone and sending to them may harm your sending reputation.
+
+## Suppression expiration
+
+An email address that goes to the suppression list has a default expiration date. Expiration means that the email address is automatically removed from suppression after that date and you can send emails to that address again.
+
+The expiration is gradual. The more frequently an email address goes to suppression, the longer its expiration. The table below correlates suppression occurrences with suppression period length.
+
+| Suppression occurrence | Suppression period |
+|------------------------|--------------------|
+| First time             | 7 days             |
+| Second time            | 14 days            |
+| Third time             | 30 days            |
+| Fourth time or more    | 180 days           |
 
 ## How to delist email addresses
 

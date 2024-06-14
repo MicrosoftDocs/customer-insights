@@ -1,12 +1,12 @@
 ---
 title: "Sign up for a free Dynamics 365 Customer Insights trial"
 description: "Learn how to quickly sign up for and start a free Customer Insights trial. Explore the app and find additional learning resources."
-author: m-hartmann
-ms.author: mhart
-ms.date: 09/01/2023
+author: JimsonChalissery
+ms.author: jimsonc
+ms.date: 05/03/2024
 ms.topic: get-started
 ms.custom: bap-template 
-ms.reviewer: jeffhar
+ms.reviewer: mhart
 ---
 
 # Sign up for a free Dynamics 365 Customer Insights trial

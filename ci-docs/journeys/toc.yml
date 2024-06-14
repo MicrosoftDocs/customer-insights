@@ -402,6 +402,8 @@
     items:
     - name: Use images, files, and videos in your content
       href: upload-images-files.md
+    - name: How to use ALM in assets library
+      href: alm-assets.md
     - name: Impact of disabling Azure CDN
       href: cdn-disabling.md
   - name: Known issues in real-time journeys
@@ -438,6 +440,8 @@
       href: developer-notifications.md
     - name: Implement push notification interaction tracking
       href: developer-push-interactions.md
+    - name: Transition Android push notifications to Firebase Cloud Messaging (FCM) tokens
+      href: push-notification-fcm-token-transition.md
   - name: Extend forms functionality
     items:
     - name: Client-side extensibility for forms
@@ -449,7 +453,9 @@
     - name: Customize the Customer Insights - Journeys forms interface
       href: developer/extend-ui.md
   - name: Extend and customize consent
-    href: extend-consent.md
+    href: developer/extend-consent.md
+  - name: Using the events API in real-time journeys
+    href: developer/using-rtm-events-api.md
   - name: Create a Customer Insights - Journeys segment using the Web API
     href: real-time-marketing-api-segment.md
   - name: Use binding IDs to correlate across triggers
@@ -524,6 +530,8 @@
       href: email-get-started.md
     - name: Best practices for email marketing
       href: get-ready-email-marketing.md
+    - name: Requirements for bulk senders
+      href: requirements-for-bulk-senders.md
     - name: Setup guides
       items:
       - name: Warm-up process for marketing senders
@@ -842,7 +850,7 @@
       href: score-manage-leads.md
   - name: Customer engagement via portals and surveys
     items:
-    - name: Integrate Customer Insights - Journeys with a CMS system or a Power Apps portal
+    - name: Integrate outbound marketing with a CMS system or a Power Apps portal
       href: portal-optional.md
     - name: Create interactive features with or without portals
       href: portals.md

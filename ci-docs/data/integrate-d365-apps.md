@@ -5,7 +5,7 @@ author: Scott-Stabbert
 ms.author: sstabbert
 ms.reviewer: v-wendysmith
 ms.topic: conceptual
-ms.date: 04/17/2024
+ms.date: 05/16/2024
 ms.custom: bap-template
 ---
 
@@ -31,6 +31,7 @@ Examples of using this native linking include:
 
 - Source tables, such as the leads table, must be ingested directly from the default Dataverse environment, through the [Microsoft Dataverse connector](connect-dataverse.md) or the [Power Query Dataverse connector](connect-power-query.md). Don't change the names of the tables.
 - On the [Describe customer data step for unification](data-unification-map-tables.md), the source table's primary key must correspond to the table's actual primary key. For example, the standard contact and lead tables primary keys are *ContactId* and *LeadId*.
+- Your environment is set up for individual customers. Linking contacts and leads to the customer profile is supported in the current release of Customer Insights – Data only. This capability isn't supported for B2B environments.
 
 > [!NOTE]
 > Customer Insights - Data environments configured to write output to a private data lake aren't supported.

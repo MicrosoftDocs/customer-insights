@@ -115,7 +115,7 @@ Technically it is possible to add www.yourdomain.com to use it for sending email
 
 ### Updating a domain's SPF record
 
-The domain authentication wizard described above provides all the configuration needed according the RFC standards. However, there are a few email providers that don't follow the RFCs and validate received emails by verifying the From address with the SPF record. To prevent email bounces from these email providers, you can update the SPF record in your domain to include the Customer Insights - Journeys domain. To do this, update the existing SPF record by adding `include: &lt;dynamicssendingdomain&gt;`, where `&lt;dynamicssendingdomain&gt;` is the value as obtained in the registration for the Envelope-From (*ind.pb-dynmktga.com* in the screenshot shown above).
+The domain authentication wizard described above provides all the configuration needed according the RFC standards. However, there are a few email providers that don't follow the RFCs and validate received emails by verifying the From address with the SPF record. To prevent email bounces from these email providers, you can update the SPF record in your domain to include the Customer Insights - Journeys domain. To do this, update the existing SPF record by adding `include: <dynamicssendingdomain>`, where `<dynamicssendingdomain>` is the value as obtained in the registration for the Envelope-From (*ind.pb-dynmktga.com* in the screenshot shown above).
 
 ## Domain authentication for modernized business units
 

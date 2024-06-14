@@ -63,8 +63,6 @@
       href: real-time-data-ingestion.md
     - name: Data prep report
       href: data-prep-overview.md
-    - name: Common reasons for ingestion errors
-      href: common-data-ingestion-errors.md
 
 - name: Unification
   items:
