@@ -1,7 +1,7 @@
 ---
 title: Create and manage input fields for use in forms
 description: How to set up a form input field and map it to a database field in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/21/2023
+ms.date: 06/13/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -129,7 +129,7 @@ After creating a custom entity to use with a lookup field, or if your lookup fie
     > 1. The advanced settings area opens in a new browser tab. Note that this area uses a horizontal navigator at the top of the page instead of a side navigator. Navigate to **Settings** > **System** > **Security**.
     > 1. Select the **Field Security Profiles** icon.
     > 1. Select the **New** icon to create a new Field Security profile and enter a name in the General section.
-    > 1. In the **Users** section, add the system user "**# Dynamics 365 Marketing**".
+    > 1. In the **Users** section, add the system users: "**# Dynamics 365 Marketing**" (for outbound marketing), "**# D365 Landing Forms**" (for real-time journeys forms), and "**# D365 Event Mgmt**" (for event registration forms).
     > 1. In the **Field Permissions** section, add the **Read** permission to all required fields.
 
 ### Set lookup fields via API
