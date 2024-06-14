@@ -13,9 +13,11 @@ ms.custom: bap-template
 
 [!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
-The Optimizely integration in Customer Insights - Data allows you to share segment from Customer Insights with Optimizely. The system creates audiences in Optimizely based on the segments in Customer Insights – Data and you can use them in your web personalization campaigns or web experiments.
+Personalizing the web experience for your visitors is critical to foster loyalty, increase engagement, enhance satisfaction, and drive higher conversion rates. However, personalizing the website often requires a team of web developers working with the marketing teams to make changes to the website based on the latest business logic and integrating the APIs. But with Optimizely's native integration with Customer Insights - Data, marketers are empowered to personalize the web experience for their visitors in a no-code way. 
 
-Customer Insights identifies website visitors who are members of a segment and let you provide a personalized web experience to these visitors in real-time. You can also track user behavior for events that real-time tracking supports and specific events in Optimizely: Campaign & Experiment.
+The Optimizely integration in Customer Insights - Data allows you to share segments from Customer Insights with Optimizely. The system creates audiences in Optimizely based on the segments in Customer Insights – Data and you can use them in your web personalization campaigns or web experiments. For example, let's say you create a segment in Customer Insights - Data for 'high value customers', this segment will also show up in Optimizely - now you can add a promotional banner to the homepage that will only be displayed to the visitors that are part of the 'high value customers' segment. 
+
+Customer Insights identifies website visitors who are members of a segment and lets you provide a personalized web experience to these visitors in real-time. You can also track user behavior for events that real-time tracking supports and specific events in Optimizely: Campaign & Experiment.
 
 > [!TIP]
 > Sign up to [request access to the preview version](https://forms.office.com/r/6NK6uj6f7f) of the real-time personalization features and [read the blog about the annoucement](https://cloudblogs.microsoft.com/dynamics365/?p=188733).
