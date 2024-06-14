@@ -19,9 +19,9 @@ Automatic linking lets you work with your Dynamics 365 contacts, leads, and othe
 
 ## Examples
 
-- A Dynamics 365 Sales admin can easily link to a customer lifetime value (CLV) or Lead score from Customer Insights – Data based on unified activity data from various sources. Sales team members can view the data on the Lead page learning more about their customer’s interests, activity history, and insights.
-- A Dynamics 365 Support admin can update their contact measures showing the count of support issues in the last month, year, and lifetime for a customer.
-- A Customer Insights – Journeys marketing manager can personalize communications, define segments, or branch journeys using unified customer profile attributes that come from external data not previously available in Dynamics 365.
+- A Dynamics 365 Sales admin easily links to a customer lifetime value (CLV) or lead score from Customer Insights - Data. A Sales agent sees the data on their **Leads** page, providing more details about their customer’s interests, activity history, and insights.
+- A Dynamics 365 Support admin updates their contact measures showing the number of support issues in the last month, year, and lifetime for a customer.
+- A Customer Insights – Journeys marketing manager uses the loyalty tier data to personalize a new product announcement.
 
 ## Requirements
 
