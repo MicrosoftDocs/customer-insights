@@ -1,7 +1,7 @@
 ---
 title: "View customer profiles"
 description: "View your unified customer data including using search and filter in Dynamics 365 Customer Insights"
-ms.date: 06/07/2024
+ms.date: 06/14/2024
 ms.reviewer: mhart
 ms.topic: conceptual
 author: Nils-2m
