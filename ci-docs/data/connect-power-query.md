@@ -1,6 +1,6 @@
 ---
-title: "Connect to a Power Query data source (contains video)"
-description: "Ingest data through a Power Query connector (contains video)."
+title: "Connect to a Power Query data source"
+description: "Ingest data through a Power Query connector."
 ms.date: 03/06/2024
 ms.reviewer: v-wendysmith
 ms.topic: how-to

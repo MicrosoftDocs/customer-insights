@@ -1,5 +1,5 @@
 ---
-title: "Predict subscription churn (contains video)"
+title: "Predict subscription churn"
 description: "Predict whether a customer is at risk for no longer using your company’s subscription products or services."
 ms.date: 11/30/2023
 ms.reviewer: mhart
@@ -7,7 +7,7 @@ ms.topic: how-to
 author: joytaylor
 ms.author: joytaylor
 ms.custom: bap-template
-ms.collection: bap-ai-copilot 
+ms.collection: bap-ai-copilot
 ---
 
 # Predict subscription churn
