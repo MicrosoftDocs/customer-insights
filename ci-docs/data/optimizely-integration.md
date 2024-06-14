@@ -30,7 +30,6 @@ Customer Insights identifies website visitors who are members of a segment and l
 - [Customer Insights real-time tracking script](real-time-web-personalization.md) added to your website.
 - [Optimizely tracking script](https://support.optimizely.com/hc/articles/4410284311565-Optimizely-Web-Experimentation-JavaScript-snippet) added to your website.
 - CookieID in Optimizely set to the Customer Insights cookie ID: `_msci`.
-- SetUserID to enable unknown to known flows. [Learn how to setup unknown to known user tracking](unknown-to-known.md).
 
 ## Connect to Optimizely
 
