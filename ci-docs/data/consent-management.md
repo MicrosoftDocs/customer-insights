@@ -1,7 +1,7 @@
 ---
 title: Use customer consent
 description: "Honor you customers' consent preferences in Customer Insights by importing consent data."
-ms.date: 05/03/2024
+ms.date: 06/17/2024
 ms.reviewer: mhart
 ms.topic: conceptual
 author: Scott-Stabbert 
@@ -12,7 +12,7 @@ ms.author: sstabbert
 
 Data protection and privacy regulations provide individuals the right to govern how an organization uses their personal data. Examples of such regulations are the General Data Protection Regulation in the European Union or the California Consumer Privacy Act in the United States. These regulations allow people to opt out of having their personal data collected, processed by, or shared with third parties.  
 
-Customers can choose to withdraw or withhold their consent for specific forms of contact. They may also request you to opt them out of collection, storage, use, or sale of their personal data. It's important your organization honors all customers’ consent and privacy preferences.  
+Customers can choose to withdraw or withhold their consent for specific forms of contact. They might also request you to opt them out of collection, storage, use, or sale of their personal data. It's important your organization honors all customers’ consent and privacy preferences.  
 
 Dynamics 365 Customer Insights helps you honor your customers’ requests by importing and storing their preferences as part of the unified customer profiles.
 
@@ -23,7 +23,7 @@ If consent data is stored separately from your customer profiles, [add your cons
 The following information must be available in your source data to unify consent data with other customer profiles:
 
 - Alternate key to map the consent information to user profiles in Customer Insights - Data. For example, an email address or a phone number.
-- Consent value to determine the status of the customer's consent.
+- Consent value to determine the status of the customer's consent. Each table contributing data must represent that customers data on a single row. The deduplication process removes multiple rows.
 
 Consider adding the following *optional* information:
 
@@ -31,14 +31,24 @@ Consider adding the following *optional* information:
 - Type of consent, if there's more than one way to process customer information.
 - Date of consent or any other type of data relevant to your consent scenarios.
 
-Example table of a simple consent database with multiple consent options:
+## Example 1 - Consent data in a single row for each customer
 
-|Consent ID (primary key)   |Email (alternate key)  |Consent option  |Consent value  |
+|Consent ID (primary key)   |Email (alternate key)  |Newsletter consent  |Product update consent  |
 |---------|---------|---------|---------|
-|1    |  holly@contoso.com       |  Newsletter       |  False       |
-|2    |  holly@contoso.com       |  Product updates       |  True       |
-|3    |  frank@contoso.com       |  Newsletter       | True        |
-|4    |  frank@contoso.com       |  Product updates       |  False       |
+|1    |  holly@contoso.com       |  True       | True       |
+|2    |  frank@contoso.com       |  True       | False      |
+
+## Example 2 - Consent data in separate tables
+
+|Consent ID (primary key)   |Email (alternate key)  | Newsletter consent  |
+|---------|---------|---------|---------|
+|1    |  holly@contoso.com       |  True       |
+|2    |  frank@contoso.com       |  True       |
+
+|Consent ID (primary key)   |Email (alternate key)  | Product update consent  |
+|---------|---------|---------|---------|
+|1    |  holly@contoso.com       |  True       |
+|2    |  frank@contoso.com       |  False       |
 
 ## Import and unify consent data
 
@@ -50,7 +60,7 @@ For more information about unifying your data sources, see [Data unification ove
 
 Once your consent data is part of your unified customer profiles, you can use it in Customer Insights - Data. For example, create a segment with a rule to ensure you honor your customers’ privacy and data protection preferences. Rules supporting consent preferences are used to exclude users from a segment based on profile attributes. Add a rule to a segment that excludes customer profiles that didn't provide consent to contact.
 
-Referring to the sample table above, a segment could contain this rule: `Consent option=Newsletter & Consent value=True`. This configuration results in a segment that honors contact preferences to send a newsletter.
+In example 1, a segment could contain this rule: `Newsletter consent value=True`. This configuration results in a segment that honors contact preferences to send a newsletter.
 
 For more information about building segments, see [Create segments](segment-builder.md).
 
