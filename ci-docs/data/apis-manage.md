@@ -3,8 +3,8 @@ title: Manage Customer Insights - Data APIs
 description: Manage the Customer Insights - Data API keys and view API usage.
 ms.date: 03/15/2024
 ms.topic: how-to
-author: wimohabb
-ms.author: wimohabb
+author: srivas15
+ms.author: shsri
 ms.reviewer: v-wendysmith
 ms.custom: bap-template
 ---

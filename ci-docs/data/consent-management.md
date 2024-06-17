@@ -31,7 +31,7 @@ Consider adding the following *optional* information:
 - Type of consent, if there's more than one way to process customer information.
 - Date of consent or any other type of data relevant to your consent scenarios.
 
-## Example 1 - Consent data in a single row for each customer
+## Example 1 - Consent data in a single row
 
 |Consent ID (primary key)   |Email (alternate key)  |Newsletter consent  |Product update consent  |
 |---------|---------|---------|---------|
