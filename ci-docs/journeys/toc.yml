@@ -398,6 +398,8 @@
       href: real-time-marketing-email-text-consent.md
     - name: Add a contactability grid control to custom forms
       href: contactability-control-custom-forms.md
+    - name: Use double opt-in
+      href: double-opt-in-doc.md
   - name: Image, file, and video assets
     items:
     - name: Use images, files, and videos in your content
