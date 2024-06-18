@@ -21,7 +21,7 @@ The following tables show the current usage limits for Customer Insights - Journ
 
 | Feature              | Attribute                                                   | Maximum                                                    |
 |----------------------|-------------------------------------------------------------|------------------------------------------------------------|
-| Interactions         | Number of interactions each month per interacted person owned   | 10 interactions per interacted people owned |
+| Interactions         | Number of interactions each month per interacted person owned   | 10 interactions per interacted people owned (if you need more, increase the number of interacted people owned) |
 | Data sync            | Number of rows in a single [synchronized table](./mkt-settings-sync.md) (for example, number of marketing contacts). | 100,000,000 rows |
 | Data sync            | Total rows across all [synchronized tables](./mkt-settings-sync.md).| 100,000,000 rows |
 | Interaction personalization | Number of distinct dynamic attributes used in a single message. | 100 |
