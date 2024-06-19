@@ -1,20 +1,15 @@
 ---
 title: Use customer consent
 description: "Honor you customers' consent preferences in Customer Insights by importing consent data."
-ms.date: 06/17/2024
+ms.date: 06/19/2024
 ms.reviewer: mhart
 ms.topic: conceptual
 author: Scott-Stabbert 
 ms.author: sstabbert
 ---
-
 # Use customer consent
 
-Data protection and privacy regulations provide individuals the right to govern how an organization uses their personal data. Examples of such regulations are the General Data Protection Regulation in the European Union or the California Consumer Privacy Act in the United States. These regulations allow people to opt out of having their personal data collected, processed by, or shared with third parties.  
-
-Customers can choose to withdraw or withhold their consent for specific forms of contact. They might also request you to opt them out of collection, storage, use, or sale of their personal data. It's important your organization honors all customers’ consent and privacy preferences.  
-
-Dynamics 365 Customer Insights helps you honor your customers’ requests by importing and storing their preferences as part of the unified customer profiles.
+Dynamics 365 Customer Insights helps you honor your customers’ consent requests by importing and storing their preferences as part of the unified customer profiles.
 
 If consent data is stored separately from your customer profiles, [add your consent data as a new data source](#import-and-unify-consent-data). The data source that contains the consent data is added to the data unification process. Successful unification of consent data and customer profiles then leads to unified customer profiles that contain the consent information. For customer profiles that already contain consent information, go directly to the [use consent data](#use-consent-data) section.
 
@@ -22,33 +17,35 @@ If consent data is stored separately from your customer profiles, [add your cons
 
 The following information must be available in your source data to unify consent data with other customer profiles:
 
-- Alternate key to map the consent information to user profiles in Customer Insights - Data. For example, an email address or a phone number.
-- Consent value to determine the status of the customer's consent. Each table contributing data must represent that customers data on a single row. The deduplication process removes multiple rows.
+- A key to match the consent information to user profiles in Customer Insights - Data. For example, an email address or a phone number.
+- Consent value to determine the status of the customer's consent.
 
-Consider adding the following *optional* information:
+Consent data can be unified from a single table or multiple tables as long as a customer is represented as a single row in each table.
 
-- Primary key to update the consent status if a customer requests a change.
-- Type of consent, if there's more than one way to process customer information.
-- Date of consent or any other type of data relevant to your consent scenarios.
+## Example 1 - Consent data in a single table
 
-## Example 1 - Consent data in a single row
+### ConsentData Table
 
-|Consent ID (primary key)   |Email (alternate key)  |Newsletter consent  |Product update consent  |
+|Consent ID |Email |Newsletter consent  |Product update consent  |
 |---------|---------|---------|---------|
 |1    |  holly@contoso.com       |  True       | True       |
 |2    |  frank@contoso.com       |  True       | False      |
 
 ## Example 2 - Consent data in separate tables
 
-|Consent ID (primary key)   |Email (alternate key)  | Newsletter consent  |
-|---------|---------|---------|---------|
+### NewsletterConsent Table
+
+|Consent ID  |Email  | Newsletter consent  |
+|---------|---------|----------|
 |1    |  holly@contoso.com       |  True       |
 |2    |  frank@contoso.com       |  True       |
 
-|Consent ID (primary key)   |Email (alternate key)  | Product update consent  |
-|---------|---------|---------|---------|
+### ProductUpdateConsent Table
+
+|Consent ID   |Email  | Product update consent  |
+|---------|---------|---------|
 |1    |  holly@contoso.com       |  True       |
-|2    |  frank@contoso.com       |  False       |
+|2    |  frank@contoso.com       |  False      |
 
 ## Import and unify consent data
 
