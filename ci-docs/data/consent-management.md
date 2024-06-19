@@ -57,12 +57,4 @@ For more information about building segments, see [Create segments](segment-buil
 
 Once the segment is created, you can use one of the many [export options](export-manage.md) to use the segment in other applications.
 
-## Ensure updated consent status
-
-It's important to keep the consent status for your customers updated. The scheduled refresh always imports the latest state of your data sources. This information is then processed through data unification and results in updated customer profiles. These updated profiles are then used to refresh segments to make sure you work with the most up-to-date information.
-
-In other words, make sure the source data that gets imported always has the latest information.
-
-For more information, see [Refresh segments manually or schedule segments](segments-schedule.md).
-
 [!INCLUDE [footer-include](includes/footer-banner.md)]
