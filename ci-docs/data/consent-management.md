@@ -24,8 +24,6 @@ Consent data can be unified from a single table or multiple tables as long as a 
 
 ## Example 1 - Consent data in a single table
 
-### ConsentData Table
-
 |Consent ID |Email |Newsletter consent  |Product update consent  |
 |---------|---------|---------|---------|
 |1    |  holly@contoso.com       |  True       | True       |
@@ -33,14 +31,10 @@ Consent data can be unified from a single table or multiple tables as long as a 
 
 ## Example 2 - Consent data in separate tables
 
-### NewsletterConsent Table
-
 |Consent ID  |Email  | Newsletter consent  |
 |---------|---------|----------|
 |1    |  holly@contoso.com       |  True       |
 |2    |  frank@contoso.com       |  True       |
-
-### ProductUpdateConsent Table
 
 |Consent ID   |Email  | Product update consent  |
 |---------|---------|---------|
