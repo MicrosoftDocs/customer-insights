@@ -17,17 +17,15 @@ The double opt-in process (also known as confirmed opt-in) asks contacts who sig
 
 The double opt-in process works as follows:
 
-1. A new or existing contact or lead uses a form to provide their consent.
+1. A new or existing contact or lead uses a [form](real-time-marketing-form-overview.md) to provide their consent.
 1. On submitting the form, the contact (or lead) is shown a page that tells them to check their email for a confirmation message that includes a link the contact must click on to confirm their request.
 1. Customer Insights - Journeys sends a confirmation email to the address registered for the contact (or lead).
 1. The contact (or lead) opens the confirmation email, reads the text, and clicks the link. This opens a web browser, which submits a coded URL that identifies the contact (or lead) to Customer Insights - Journeys.
 1. Customer Insights - Journeys acts upon the click, creates a contact (or lead) record or updates it (if already existing), records the consent, and immediately redirects to a thank you page that is shown to the contact.
 
 > [!IMPORTANT]
-
-The link in the confirmation email remains valid for only 28 days. After that period, the user that received the email will not be able to confirm their opt-in.
-
-Please refer to this section for the current limitations of this preview feature.
+> The link in the confirmation email remains valid for only 28 days. After that period, the user that received the email will not be able to confirm their opt-in.
+> Please refer to this section for the current limitations of this preview feature.
 
 ## Who should use Double Opt-In?
 
@@ -57,17 +55,16 @@ Starting with June 2024 release, customers can now leverage the double opt-in ca
 
 To enable double opt-in:
 
-1. Go to Settings > Other settings > Feature switches.
-1. Set the Double Opt-In toggle to On.
-1. Select Save in the upper right corner of the page.
+1. Go to **Settings** > **Other settings** > **Feature switches**.
+1. Set the **Double Opt-In** toggle to **On**.
+1. Select **Save** in the upper right corner of the page.
 
 > [!IMPORTANT]
-
-Enabling the feature switch does not automatically turn on double opt-in for all form submissions. It merely enables the capability. There is additional setup required to enable double opt-in for the different compliance profiles in the system.
+> Enabling the feature switch does not automatically turn on double opt-in for all form submissions. It merely enables the capability. There is additional setup required to enable double opt-in for the different compliance profiles in the system.
 
 ## Where is double opt-in configured?
 
-Unlike Outbound Marketing, where Double opt-in could be configured at a global or form level, Customer Insights – Journeys enables users to configure double opt-in for each compliance profile.
+Unlike Outbound Marketing, where Double opt-in could be configured at a [global](double-opt-in.md) or [form](form-double-opt-in.md) level, Customer Insights – Journeys enables users to configure double opt-in for each [compliance profile](real-time-marketing-compliance-settings.md#compliance-profiles).
 
 Once you enable double opt-in for a compliance profile, any form that captures consent for the purposes/topics of the compliance profile will automatically have double opt-in enabled for their submissions.
 
@@ -86,16 +83,14 @@ Here are the steps that you need to follow to enable double opt-in for the compl
 1. Once you have reviewed and edited the email, you can go to the double opt-in tab of the compliance profile and turn on double opt-in for the compliance profile. This would ensure that any new form submissions (from forms that capture consent for purposes/topics of the compliance profile) will automatically go through the double opt-in journey.
 
 > [!NOTE]
-
-Once the feature switch for Double Opt-In is turned on from Settings --> Feature Switches, any new form created in the system will automatically be eligible for getting double opt-in enabled for it once double opt-in is enabled for the associated compliance profile.
+> Once the feature switch for Double Opt-In is turned on from Settings --> Feature Switches, any new form created in the system will automatically be eligible for getting double opt-in enabled for it once double opt-in is enabled for the associated compliance profile.
 
 The system will prevent a form from having elements from more than one compliance profile at a time to ensure that it can properly handle double opt-in.
 
 Enabling double opt-in for a compliance profile will only enable double opt-in flow for eligible forms (forms created after the feature switch was turned on). Any forms that existed prior to the feature enablement will, by default, have double opt-in turned off for them.
 
 > [!IMPORTANT]
-
-Even though the system creates a journey to send the double opt-in confirmation emails on form submission, the journey itself is not editable in the June 2024 release. This journey will be enabled for editing in an upcoming release and will enable you to manage more advanced double opt-in scenarios – for example – sending a reminder email to anyone that has not confirmed their opt-in within a specified period.
+> Even though the system creates a journey to send the double opt-in confirmation emails on form submission, the journey itself is not editable in the June 2024 release. This journey will be enabled for editing in an upcoming release and will enable you to manage more advanced double opt-in scenarios – for example – sending a reminder email to anyone that has not confirmed their opt-in within a specified period.
 
 ## Form level override for Double Opt-In
 
@@ -123,12 +118,10 @@ Here are the key features of this email:
 1. Email uses the default brand profile of the system and the default sender from the brand profile.
 
 > [!IMPORTANT]
+> In case the default brand profile doesn’t exist for the entire org or for the specific business unit (in case there are multiple business units) then the email creation will fail and will not resolve unless a default brand profile is created.
+>Do not delete the Confirmation preferences button or {{OptedinPurposes&Topics}} token as you will have to restart from the double opt-in template afresh to get them back.
 
-In case the default brand profile doesn’t exist for the entire org or for the specific business unit (in case there are multiple business units) then the email creation will fail and will not resolve unless a default brand profile is created.
-
-Do not delete the Confirmation preferences button or {{OptedinPurposes&Topics}} token as you will have to restart from the double opt-in template afresh to get them back. 
-
-1. If this email is deleted, then the double opt-in journey will not function properly.
+6. If this email is deleted, then the double opt-in journey will not function properly.
 
 ## Double opt-in confirmation journey
 
