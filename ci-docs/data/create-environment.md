@@ -1,7 +1,7 @@
 ---
 title: "Create a new environment"
 description: Steps to create environments in Dynamics 365 Customer Insights.
-ms.date: 01/08/2024
+ms.date: 06/20/2024
 ms.reviewer: mhart
 ms.topic: how-to
 author: kishorem-ms
@@ -96,11 +96,6 @@ To change some of the settings later, see [Manage environments](manage-environme
 ## Work with your new environment
 
 Review the following articles to help you get started:
-
-- [Get started in minutes with a single CSV file](data-sources-single.md).
-
-  > [!NOTE]
-  > [!INCLUDE [single-file-us-only](includes/single-file-us-only.md)]
 
 - [Add more users and assign permissions](permissions.md).
 - [Ingest several of your data sources](data-sources.md) and run them through the [data unification process](data-unification.md) to get [unified customer profiles](customer-profiles.md).

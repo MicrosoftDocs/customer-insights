@@ -1,7 +1,7 @@
 ---
 title: "Connect to a Power Query data source"
 description: "Ingest data through a Power Query connector."
-ms.date: 03/06/2024
+ms.date: 06/20/2024
 ms.reviewer: v-wendysmith
 ms.topic: how-to
 author: joytaylor
@@ -12,6 +12,8 @@ ms.custom: bap-template
 # Connect to a Power Query data source
 
 [Power Query](/power-query/power-query-what-is-power-query) offers a variety of connectors to ingest data, most of which are supported by Dynamics 365 Customer Insights. In the [Power Query connector reference](/power-query/connectors/), connectors with a checkmark in the **Customer Insights (Dataflows)** column you can use to import data to Customer Insights - Data. Review the documentation of a specific connector to learn more about its prerequisites, [query limitations](/power-query/power-query-online-limits), and other details.
+
+Power Query has data size and performance limitations. It makes copies of data in the Dataverse managed data lake in the CSV format so you'll see longer data synchronization times as opposed to the other data source connections.
 
 To securely connect data in a private network, Power Query supports the use of [virtual network data gateways (preview)](/data-integration/vnet/data-gateway-power-platform-dataflows).
 

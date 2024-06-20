@@ -271,7 +271,7 @@ Because Customer Insights environments are associated with a Dataverse environme
 ### Generate insights in minutes with first run experience
 
 > [!NOTE]
-> [!INCLUDE [single-file-us-only](includes/single-file-us-only.md)]
+> Currently, this feature is available for customers in the United States only.
 
 This first run experience (FRE) feature helps you recognize the value of Dynamics 365 Customer Insights - Data faster. Onboarding a new application can be time-consuming and tricky, leaving room for error and leaving you questioning the value it can bring. This feature saves you precious time and takes the guesswork out of setting up your data correctly the first time you use Customer Insights - Data. It works in trial and paid environments and allows you to get valuable insights faster. Use those insights to fuel better customer experiences and drive a higher return on investment.
 
