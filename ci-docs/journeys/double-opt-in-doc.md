@@ -39,15 +39,15 @@ It ensures that customers are actively confirming their desire to join a mailing
 
 **Gain customer trust**
 
-demonstrates commitment to transparency and respect for customers' preferences
+Demonstrates commitment to transparency and respect for customers' preferences
 
 **Better profiling & segmentation**
 
-accurate and verified customer data allows for advanced personalization and segmentation options
+Accurate and verified customer data allows for advanced personalization and segmentation options
 
 **Improved engagement**
 
-customers are more likely to open emails, click on links, and demonstrate a higher level of engagement overall
+Customers are more likely to open emails, click on links, and demonstrate a higher level of engagement overall
 
 ## How to enable Double Opt-In (Preview)?
 
@@ -76,81 +76,81 @@ Here are the steps that you need to follow to enable double opt-in for the compl
 
 1. On the double opt-in tab, click the **Setup** button.
 1. As soon as you click the setup button, the system automatically creates a ready to send confirmation email and a triggered journey that sends this confirmation email to every customer that submits the form. The journey is published and live, however, it will not target any user until the toggle for the double opt-in is enabled for the compliance profile.
-1. The setup runs asynchronously and allows you to work on other areas in the product, while it is running, without impacting the setup at all. You can come back to the setup process, and it will always show you the latest information on how far it has progressed.
+1. The setup runs asynchronously and allows you to work on other areas in the product while it is running, without impacting the setup at all. You can come back to the setup process, and it will always show you the latest information on how far it has progressed.
 1. Once the setup is complete, you can find the link to the confirmation email that the system created on your behalf.
 1. You should review this email and edit it to suit your business needs.
 1. Finalize what message you want to show to your customers, after they click on the confirm preferences button in their confirmation email. You can have a system hosted confirmation page with a message of your choice or redirect the customer to a URL of your choice.
-1. Once you have reviewed and edited the email, you can go to the double opt-in tab of the compliance profile and turn on double opt-in for the compliance profile. This would ensure that any new form submissions (from forms that capture consent for purposes/topics of the compliance profile) will automatically go through the double opt-in journey.
+1. Once you have reviewed and edited the email, you can go to the double opt-in tab of the compliance profile and turn on double opt-in. This would ensure that any new form submissions (from forms that capture consent for purposes/topics of the compliance profile) will automatically go through the double opt-in journey.
 
 > [!NOTE]
-> Once the feature switch for Double Opt-In is turned on from Settings --> Feature Switches, any new form created in the system will automatically be eligible for getting double opt-in enabled for it once double opt-in is enabled for the associated compliance profile.
+> Once the feature switch for Double Opt-In is turned on from Settings → Feature Switches, any new form created in the system will automatically be eligible for double opt-in once double opt-in is enabled for the associated compliance profile.
 
 The system will prevent a form from having elements from more than one compliance profile at a time to ensure that it can properly handle double opt-in.
 
 Enabling double opt-in for a compliance profile will only enable double opt-in flow for eligible forms (forms created after the feature switch was turned on). Any forms that existed prior to the feature enablement will, by default, have double opt-in turned off for them.
 
 > [!WARNING]
-> For 6.1, a warning will be shown but you can still publish the form.
-> However, for 7.1, an error will stop you from publishing the form.
+> For version 6.1, a warning is shown but you are still allowed to publish the form.
+> For version 7.1, an error stops you from publishing the form.
 
 This applies to orgs with the DOI feature flag enabled.
 
 > [!IMPORTANT]
-> Even though the system creates a journey to send the double opt-in confirmation emails on form submission, the journey itself is not editable in the June 2024 release. This journey will be enabled for editing in an upcoming release and will enable you to manage more advanced double opt-in scenarios – for example – sending a reminder email to anyone that has not confirmed their opt-in within a specified period.
+> Even though the system creates a journey to send the double opt-in confirmation emails on form submission, the journey itself is not editable in the June 2024 release. This journey will be enabled for editing in an upcoming release and will enable you to manage more advanced double opt-in scenarios. For example, sending a reminder email to anyone that has not confirmed their opt-in within a specified period.
 
 ## Form level override for Double Opt-In
 
 Once double opt-in is enabled for a compliance profile, submissions of any eligible form that captures consent for the purposes/topics of the compliance profile will automatically trigger the double opt-in journey and the contact/lead that submitted the form will receive the confirmation email.
 
-However, sometimes, you may want a specific form to not trigger the double opt-in flow. In case you find yourself in this situation, a user with sufficient privileges (edit privileges on both the forms and compliance profiles) can go to the settings of a form and manually disable double opt-in for it even if the double opt-in settings are enabled for the associated compliance profile.
+However, sometimes, you may want a specific form to not trigger the double opt-in flow. In this situation, a user with sufficient privileges (edit privileges on both the forms and compliance profiles) can go to the settings of a form and manually disable double opt-in for even if the double opt-in settings are enabled for the associated compliance profile.
 
-Once double opt-in is disabled for a form, it will remain disabled irrespective of the state of double opt-in at the compliance profile level. 
+Once double opt-in is disabled for a form, it will remain disabled irrespective of the state of double opt-in at the compliance profile level.
 
 ## Double opt-in confirmation email
 
 The system automatically generates a double opt-in confirmation email for the compliance profile once you initiate the double opt-in setup for it.
 
-The system generates this using a default template that we ship the product with for creating double opt-in confirmation emails. Deleting or renaming this template will lead to issues with setting up double opt-in for a compliance profile.
+The system generates this using a default template that we ship with the product for creating double opt-in confirmation emails. Deleting or renaming this template will lead to issues with setting up double opt-in for a compliance profile.
 
 Here are the key features of this email:
 
 1. The email has a content type of confirmation message and this is not permitted to be changed.
 1. The email’s compliance profile is set to the compliance profile for which double opt-in setup was initiated and its purpose is set to the transactional purpose of the compliance profile.
 1. Email follows a naming convention that incorporates the name of the compliance profile in its name to enable you to easily find it in the list of all emails in the system
-1. Email contains 3 key personalization attributes –
-    1. {{OptedInPurposes&Topics}} - List of all the purposes or topics that the user opted into prior to submitting the form.
+1. Email contains 3 key personalization attributes:
+    1. {{OptedInPurposes&Topics}} – List of all the purposes or topics that the user opted into prior to submitting the form.
     1. {{CompanyAddress}} – Company address of the compliance profile
     1. Confirmation preferences button – a button that contains a personalized confirmation link to allow the user to confirm their preferences  
 1. Email uses the default brand profile of the system and the default sender from the brand profile.
 
 > [!IMPORTANT]
-> In case the default brand profile doesn’t exist for the entire org or for the specific business unit (in case there are multiple business units) then the email creation will fail and will not resolve unless a default brand profile is created.
->Do not delete the Confirmation preferences button or {{OptedinPurposes&Topics}} token as you will have to restart from the double opt-in template afresh to get them back.
+> In cases where the default brand profile doesn’t exist for the entire org or for the specific business unit (if there are multiple business units) then the email creation will fail and will not resolve unless a default brand profile is created.
+>Do not delete the Confirmation preferences button or {{OptedinPurposes&Topics}} token as you will have to restart from the double opt-in template to get them back.
 
 6. If this email is deleted, then the double opt-in journey will not function properly.
 
 ## Double opt-in confirmation journey
 
-The system automatically generates a double opt-in confirmation journey and publishes it as well. With June 2024 release, it is not possible to edit this journey but it will be enabled for editing in one of the upcoming releases.
+The system automatically generates a double opt-in confirmation journey and publishes it. With the June 2024 release, it is not possible to edit this journey but it will be enabled for editing in one of the upcoming releases.
 
 ## Double opt-in analytics
 
-For any form that has double opt-in enabled for it you will be able to see additional analytics that represent how many users have confirmed their preferences and how many are pending.
+For any form that has double opt-in enabled you will be able to see additional analytics that represent how many users have confirmed their preferences and how many are pending.
 
 ## Known limitations
 
 This public preview release has the following known limitations:
 
-1. Double Opt-in does not work for event registration or preference center forms.
+1. Double opt-in does not work for event registration or preference center forms.
 1. The journey created for double opt-in flow is not editable.
-1. Emails cannot include any profile-based personalization attributes, such as, first name, last name etc.
+1. Emails cannot include any profile-based personalization attributes, such as first name, last name etc.
 1. If a default brand profile is not present for a given business unit, the double opt-in setup will fail unless a brand profile is created for the business unit.
 
 ## Frequently asked questions
 
 ***Double opt-in journey is not triggering on submissions of pre-existing forms even though double opt-in is enabled for my compliance profile. Why is that so?***
 
-These forms must have been published before you enabled double opt-in feature switch from the settings and thus are not eligible for automatic double opt-in enablement. Such forms are set to double opt-in disabled automatically by the system but you can go to the settings of such forms and enable double opt-in for them yourself.
+These forms must have been published before you enabled double opt-in feature switch from the settings and therefore are not eligible for automatic double opt-in enablement. Such forms are set to double opt-in disabled automatically by the system but you can go to the settings of such forms and enable double opt-in for them yourself.
 
 ***I am unable to enable double opt-in on an existing form.***
 
@@ -158,11 +158,11 @@ If the form uses purposes and topics from multiple compliance profiles, you will
 
 ***Why am I unable to create a form with purposes and topics from multiple compliance profiles anymore?***
 
-The features within compliance profiles enables our customers to accomplish even the most complicated of setups. It is for this reason that we will now require every new form to have elements from only a single compliance profile. This also removes the conflict situation that the system can get into if you choose elements from two different compliance profiles – one of which has double opt-in enabled and the other one does not.
+The features within compliance profiles enables our customers to accomplish even the most complicated of setups. It is for this reason that we will now require every new form to have elements from only a single compliance profile. This also removes the conflict situation that the system can get into if you choose elements from two different compliance profiles; one which has double opt-in enabled and the other which does not.
 
 ***I clicked on the setup button in the double opt-in tab but the process is repeatedly failing. What could be the issue?***
 
-There could be multiple things affecting the setup of double opt-in for your compliance profile. Ensure that you follow the below mentioned troubleshooting steps in order to identify and resolve the issue:
+There could be multiple things affecting the setup of double opt-in for your compliance profile. Ensure that you follow the mentioned troubleshooting steps below in order to identify and resolve the issue:
 
 1. Do you have permission to create an email and a journey? If not, then work with your administrator to get those privileges assigned or ask another user that has those permissions to kick-off the setup.
 1. The double opt-in template has been removed or modified in ways that leads to validation errors for the auto-created confirmation email – Wait for the next release to have your template reset or create a support request if you cannot wait for the next release.
