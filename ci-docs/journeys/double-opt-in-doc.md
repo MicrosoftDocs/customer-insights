@@ -89,6 +89,12 @@ The system will prevent a form from having elements from more than one complianc
 
 Enabling double opt-in for a compliance profile will only enable double opt-in flow for eligible forms (forms created after the feature switch was turned on). Any forms that existed prior to the feature enablement will, by default, have double opt-in turned off for them.
 
+> [!WARNING]
+> For 6.1, a warning will be shown but you can still publish the form.
+> However, for 7.1, an error will stop you from publishing the form.
+
+This applies to orgs with the DOI feature flag enabled.
+
 > [!IMPORTANT]
 > Even though the system creates a journey to send the double opt-in confirmation emails on form submission, the journey itself is not editable in the June 2024 release. This journey will be enabled for editing in an upcoming release and will enable you to manage more advanced double opt-in scenarios – for example – sending a reminder email to anyone that has not confirmed their opt-in within a specified period.
 
@@ -144,7 +150,7 @@ This public preview release has the following known limitations:
 
 ***Double opt-in journey is not triggering on submissions of pre-existing forms even though double opt-in is enabled for my compliance profile. Why is that so?***
 
-These forms must have been created before you enabled double opt-in feature switch from the settings and thus are not eligible for automatic double opt-in enablement. Such forms are set to double opt-in disabled automatically by the system but you can go to the settings of such forms and enable double opt-in for them yourself.
+These forms must have been published before you enabled double opt-in feature switch from the settings and thus are not eligible for automatic double opt-in enablement. Such forms are set to double opt-in disabled automatically by the system but you can go to the settings of such forms and enable double opt-in for them yourself.
 
 ***I am unable to enable double opt-in on an existing form.***
 
