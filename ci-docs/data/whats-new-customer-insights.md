@@ -284,7 +284,6 @@ After an admin successfully creates your initial environment, the FRE guides you
 This FRE works with a single CSV file only. If you have multiple data files, or different data sources, [Customer Insights - Data provides connections to a broad set of sources](data-sources.md).
 
 - [Release plan](/dynamics365-release-plan/2022wave2/customer-insights/generate-insights-minutes-first-run-experience)
-- [Documentation](data-sources-single.md) 
 
 ## January 2023
 
