@@ -1748,7 +1748,7 @@
     },
     {
       "source_path": "ci-docs/data-sources-single.md",
-      "redirect_url": "/dynamics365/customer-insights/data/data-sources-single",
+      "redirect_url": "/dynamics365/customer-insights/data/data-sources",
       "redirect_document_id": false
     },
     {
