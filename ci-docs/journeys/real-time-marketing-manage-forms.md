@@ -147,7 +147,7 @@ If you don't plan to use the phone number for sending text messages, you can col
 > [!NOTE]
 > If the form submission for a form containing a phone number field fails, upgrade your application to the latest version to get the latest fixes and improvements to the phone number format processing.
 
-#### Preset phone number country code
+#### Pre-set phone number country code
 
 If your business is located in a single region with the same phone number country code, you can pre-set the *Country code* parameter of the phone number field.
 
