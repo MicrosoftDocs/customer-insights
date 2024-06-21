@@ -386,6 +386,8 @@
       href: real-time-marketing-preference-centers.md
     - name: One-click unsubscribe support for emails
       href: one-click-unsubscribe.md    
+    - name: Double opt-in in real-time journeys
+      href: real-time-marketing-double-opt-in.md
     - name: Use outbound subscription centers in real-time journeys
       href: real-time-marketing-outbound-subscription.md    
     - name: Migrate consent records to real-time journeys
@@ -398,8 +400,6 @@
       href: real-time-marketing-email-text-consent.md
     - name: Add a contactability grid control to custom forms
       href: contactability-control-custom-forms.md
-    - name: Use double opt-in
-      href: double-opt-in-doc.md
   - name: Image, file, and video assets
     items:
     - name: Use images, files, and videos in your content

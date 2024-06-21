@@ -1,17 +1,17 @@
 ---
-title: How to use double opt-in
+title: Double opt-in in real-time journeys
 description: Learn how to use double opt-in in Dynamics 365 Customer Insights - Journeys.
-ms.date: 06/20/2024
+ms.date: 06/21/2024
 ms.topic: article
 author: cbirkett
-ms.author: cbirkett
+ms.author: alfergus
 search.audienceType: 
   - admin
   - customizer
   - enduser
 ---
 
-# What is double opt-in?
+# Double opt-in in real-time journeys
 
 The double opt-in process (also known as confirmed opt-in) asks contacts who sign up for new Purposes or Topics to confirm their request by clicking on a link sent to their registered email address. This system helps make sure that the request is intentional, and that the supplied email address is legitimate and functional.
 
