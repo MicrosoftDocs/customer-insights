@@ -1748,7 +1748,7 @@
     },
     {
       "source_path": "ci-docs/data-sources-single.md",
-      "redirect_url": "/dynamics365/customer-insights/data/data-sources",
+      "redirect_url": "/dynamics365/customer-insights/data/data-sources-single",
       "redirect_document_id": false
     },
     {
@@ -2584,6 +2584,11 @@
     {
       "source_path": "ci-docs/data/enrichment-here.md",
       "redirect_url": "/dynamics365/customer-insights/data/removed-deprecated-features-customer-insights",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/data/data-sources-single.md",
+      "redirect_url": "/dynamics365/customer-insights/data/data-sources",
       "redirect_document_id": false
     },
     {
