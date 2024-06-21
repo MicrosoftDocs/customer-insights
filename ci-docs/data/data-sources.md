@@ -13,9 +13,9 @@ ms.custom: bap-template
 
 Dynamics 365 Customer Insights - Data provides connections to bring data from a broad set of sources. Connecting to a data source is often referred to as the process of *data ingestion*. After ingesting the data, you can [unify](data-unification.md), generate insights, and activate the data for building personalized experiences.
 
-Customer Insights - Data provides several different data connectors. Consider the format of your data as well as whether you want to attach or copy your data.
+Customer Insights - Data provides several different data connectors. Consider the format of your data and whether you want to attach or copy your data.
 
-Customer Insights - Data recommend you ingest data in the Delta format because it offers significant advantages.
+Customer Insights - Data recommends you ingest data in the Delta format because it offers significant advantages.
 
 ## Delta format benefits
 
@@ -26,7 +26,7 @@ The advantages of using Delta format include:
 - **Faster unification**: With the [Delta time travel feature](connect-delta-lake.md#delta-lake-time-travel-and-data-refreshes), Customer Insights – Data unifies just the changed data rather than reprocessing the entire set of data. Incremental unification requires all data inputs to unification be in the Delta format.
 - **Reduction in data corruption issues**: Reduces corrupted partitions and common data corruption issues caused by older formats such as CSV.
 - **More reliable data management design**: Delta format doesn't require manual updates to manifests, schemas, and partition files.
-- **Higher data validity**: Delta format provides atomicity, consistency, isolation, durability (ACID) transactions and isloations levels in Spark.
+- **Higher data validity**: Delta format provides atomicity, consistency, isolation, durability (ACID) transactions, and isolation levels in Spark.
 
 You can use Delta format with the following connectors:
 
@@ -35,7 +35,7 @@ You can use Delta format with the following connectors:
 
 ## Data source attachment or import
 
-A key consideration when choosing how to ingest your data is whether the connector attaches to the data or makes copies of the data. Customer Insights - Data recommends attaching to data because the data is directly accessed when its time to process data. Copying the data contains delays when the data is updated.
+A key consideration when choosing how to ingest your data is whether the connector attaches to the data or makes copies of the data. Customer Insights - Data recommends attaching to data because the data is directly accessed when it's time to process data. Copying the data contains delays when the data is updated.
 
 The following data connectors attach to your data.
 
@@ -44,13 +44,13 @@ The following data connectors attach to your data.
 - [Microsoft Dataverse](connect-dataverse.md)
 - [Azure Synapse Analytics (preview)](connect-synapse.md)
 
-If you can't use one of the attach connectors, copy data with one of the [Power Query connectors](connect-power-query.md). Power Query provides a useful way to transform the data.
+If you can't use one of the attached connectors, copy data with one of the [Power Query connectors](connect-power-query.md). Power Query provides a useful way to transform the data.
 
 ## Data profiling
 
-When data is ingested, Customer Insights – Data performs some basic data profiling such as the frequency of repeated values in a column. You can use profile data to understand your data and address issues.  For example, if you are matching on the column FullName, data profile can help you detect that a default value of “Enter your name” appears on 10K rows. Matching on this value would cause 10K rows to match that shouldn’t. You can enable data profiling for additional columns when you add your Azure Data Lake, Delta tables, or Azure Synapse data sources.
+When data is ingested, Customer Insights – Data performs some basic data profiling such as the frequency of repeated values in a column. You can use profile data to understand your data and address issues. For example, if you're matching on the column FullName, data profile can help you detect that a default value of "Enter your name" appears on 10K rows. Matching on this value would cause 10K rows to match that shouldn’t. You can enable data profiling for more columns when you add your Azure Data Lake, Delta tables, or Azure Synapse data sources.
 
-After you have ingested the data, view the results of data profiling:
+After you ingest the data, view the results of data profiling:
 
 Go to **Data** > **Tables** and select a table. Select the **Summary** icon for a field, such as DateOfBirth.
 

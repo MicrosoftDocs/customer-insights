@@ -25,7 +25,15 @@ Customer Insights - Data can help you build a deeper understanding of your custo
 
 1. Select **Add data sources** on the **Home** page.
 
-1. Import your data. Choose between [Azure Data Lake Storage, including Common Data Model](connect-common-data-model.md), [Azure Synapse Analytics](connect-synapse.md), [Microsoft Dataverse](connect-dataverse.md), [Delta tables in Azure Data Lake](connect-delta-lake.md) or  [Power Query connectors](connect-power-query.md).
+1. Import your data. Choose between:
+
+   - [Delta tables in Azure Data Lake](connect-delta-lake.md)
+   - [Azure Data Lake Storage, including Common Data Model](connect-common-data-model.md)
+   - [Microsoft Dataverse](connect-dataverse.md)
+   - [Azure Synapse Analytics (Preview)](connect-synapse.md)
+   - [Power Query connectors](connect-power-query.md).
+
+   For more information on these options, see [Data sources overview](data-sources.md)
 
 ## Step 3: Unify the data and set up relationships
 
