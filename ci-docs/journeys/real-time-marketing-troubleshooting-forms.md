@@ -1,7 +1,7 @@
 ---
 title: Troubleshooting Customer Insights - Journeys forms
 description: Learn how to troubleshoot forms in Dynamics 365 Customer Insights - Journeys.
-ms.date: 04/26/2024
+ms.date: 06/21/2024
 ms.topic: article
 author: petrjantac
 ms.author: alfergus
@@ -25,7 +25,7 @@ This feature uploads a page with form on CDN. If the operation fails, try to run
 
 ## Lead source is missing for newly created leads
 
-The lead source attribute is represented by a form field in the editor. You can add the Lead source as a field in the form editor. Set this field as hidden and set the right default value to enrich your newly created leads data.
+The lead source attribute is represented by a form field in the editor. You can add the lead source as a field in the form editor. Set this field as hidden and set the correct default value to enrich your newly created lead's data.
 
 ## Form editor removed my custom JavaScript or other custom code from the HTML body
 

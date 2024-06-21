@@ -1,7 +1,7 @@
 ---
 title: Transition marketing pages and forms
 description: Learn how to transition marketing pages and forms capabilities from outbound marketing to real-time journeys in Dynamics 365 Customer Insights - Journeys.
-ms.date: 11/16/2023
+ms.date: 06/21/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -24,9 +24,9 @@ Notice that there isn't a one-to-one relationship between the outbound marketing
 -	Outbound marketing forms allow you to design forms for landing pages, event registrations, or subscription centers. This functionality is covered in real-time journeys forms, which can be published as a standalone page.
 -	Marketing websites and redirect URLs allow you to track web activity, a feature that isn't yet available in real-time journeys but it's planned (see [Engage customers with content and follow-ups based on website interactions](/dynamics365/release-plan/2023wave2/marketing/dynamics365-marketing/engage-customers-content-follow-ups-based-website-interactions)).
 
-Real-time journeys forms cover all functionality from outbound marketing forms and they also take over the publishing part from marketing pages (see [Deploy pages that contain Customer Insights - Journeys forms](real-time-marketing-deploy-pages.md)). Real-time journeys forms can also be used for event registration (in the **Website and form** tab in the event management module) and preference centers, which are the equivalent of subscription centers in outbound marketing (see [Transition consent](transition-walkthrough-consent.md) and [Create branded, customized preference centers to manage customer consent](real-time-marketing-preference-centers.md)).
+Real-time journeys forms cover all functionality from outbound marketing forms and they also take over the publishing part from marketing pages (see [Deploy pages that contain Customer Insights - Journeys forms](real-time-marketing-deploy-pages.md)). Real-time journeys forms can also be used for event registration (in the **Website and form** tab in the event management module) and preference centers, which are equivalent to subscription centers in outbound marketing (see [Transition consent](transition-walkthrough-consent.md) and [Create branded, customized preference centers to manage customer consent](real-time-marketing-preference-centers.md)).
 
-It's worth noting that real-time journeys forms are more advanced than their equivalent on the outbound marketing side. Real-time journeys forms have an intuitive, modern interface with an advanced form designer. Real-time journeys event registration forms also offer enhanced personalization options, allowing you to reuse forms by bringing in dynamic content (for example, for events).
+It's worth noting that real-time journeys forms are more advanced than an equivalent to the outbound marketing side. Real-time journeys forms have an intuitive, modern interface with an advanced form designer. Real-time journeys event registration forms also offer enhanced personalization options, allowing you to reuse forms by bringing in dynamic content (for example, for events).
 
 Consider the following when transitioning forms:
 
@@ -37,9 +37,9 @@ Consider the following when transitioning forms:
 
 The following features may be of interest as you transition from outbound marketing to real-time journeys. These features provide parity, equivalent, or better functionality than what was available in outbound marketing.
 
-- **Form prefill** - 2024, wave 2 - Forms populate with information (e.g., first and last name) when user visits the form using the link provided in the message sent by Customer Insights Journeys  
-- **Lead linked to parent contact** - When a lead is created upon form submission, it is linked to its contact.
-- **Custom unmapped fields** - Ability to include fields in a form that are not connected to any table. Usually this is used for information that is temporary in nature and needed only during the current journey (e.g., meals choices for attending an event).
+- **Form prefill** (2024, wave 2): Forms populate with information (for example, first and last name) when a user visits the form using the link provided in the message sent by Customer Insights - Journeys  
+- **Lead linked to parent contact**: When a lead is created upon form submission, it's linked to its contact.
+- **Custom unmapped fields**: Ability to include fields in a form that aren't connected to any table. Usually this is used for information that's temporary in nature and needed only during the current journey (for example, meals choices for attending an event).
 
 > [!TIP]
 > If you have questions or comments, visit the [Outbound to real-time transition community forum](https://community.dynamics.com/forums/thread/?partialUrl=Outbound-to-Real-Time-Transition)
