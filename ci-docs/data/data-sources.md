@@ -1,7 +1,7 @@
 ---
 title: "Data sources overview"
 description: "Learn how to import or ingest data from various sources."
-ms.date: 06/20/2024
+ms.date: 06/21/2024
 ms.topic: overview
 author: mukeshpo
 ms.author: mukeshpo
@@ -13,18 +13,20 @@ ms.custom: bap-template
 
 Dynamics 365 Customer Insights - Data provides connections to bring data from a broad set of sources. Connecting to a data source is often referred to as the process of *data ingestion*. After ingesting the data, you can [unify](data-unification.md), generate insights, and activate the data for building personalized experiences.
 
-Customer Insights - Data provides five different data connectors. We recommend the connectors that use the Delta format because they offer significant advantages.
+Customer Insights - Data provides several different data connectors. Consider the format of your data as well as whether you want to attach or copy your data.
+
+Customer Insights - Data recommend you ingest data in the Delta format because it offers significant advantages.
 
 ## Delta format benefits
 
 The advantages of using Delta format include:
 
-- Works efficiently with your Delta source data because Customer Insights - Data uses Delta format.
-- Processes only changed data through the [Delta time travel feature](connect-delta-lake.md#delta-lake-time-travel-and-data-refreshes) so Customer Insights – Data unifies just the changed data rather than reprocessing the entire set of data. Incremental unification requires all data inputs to unification be in the Delta format.
-- Provides faster data ingestion.
-- Reduces corrupted partitions and common data corruption issues caused by older formats such as CSV.
-- Provides a more reliable data management design than other data formats that required manual updates to manifests, schemas, and partition files.
-- Provides atomicity, consistency, isolation, durability (ACID) transactions and isloations levels in Spark.
+- **Better efficiency with Customer Insights - Data**: Delta format is the native format used internally by Customer Insights - Data.
+- **Faster data ingestion**: Delta format provides superior compression for faster data transfers.
+- **Faster unification**: With the [Delta time travel feature](connect-delta-lake.md#delta-lake-time-travel-and-data-refreshes), Customer Insights – Data unifies just the changed data rather than reprocessing the entire set of data. Incremental unification requires all data inputs to unification be in the Delta format.
+- **Reduction in data corruption issues**: Reduces corrupted partitions and common data corruption issues caused by older formats such as CSV.
+- **More reliable data management design**: Delta format doesn't require manual updates to manifests, schemas, and partition files.
+- **Higher data validity**: Delta format provides atomicity, consistency, isolation, durability (ACID) transactions and isloations levels in Spark.
 
 You can use Delta format with the following connectors:
 
@@ -38,11 +40,11 @@ A key consideration when choosing how to ingest your data is whether the connect
 The following data connectors attach to your data.
 
 - [Azure Data Lake Delta tables](connect-delta-lake.md)
-- [Azure Data Lake Storage Common Data Model tables)](connect-common-data-model.md)
+- [Azure Data Lake Storage Common Data Model tables](connect-common-data-model.md)
 - [Microsoft Dataverse](connect-dataverse.md)
 - [Azure Synapse Analytics (preview)](connect-synapse.md)
 
-If you can't use one of the attach connectors, use [Power Query connectors](connect-power-query.md). Power Query copies the data.
+If you can't use one of the attach connectors, copy data with one of the [Power Query connectors](connect-power-query.md). Power Query provides a useful way to transform the data.
 
 ## Data profiling
 
