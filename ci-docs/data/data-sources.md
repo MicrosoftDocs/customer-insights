@@ -11,17 +11,15 @@ ms.custom: bap-template
 
 # Data sources overview
 
-Dynamics 365 Customer Insights - Data provides connections to bring data from a broad set of sources. Connecting to a data source is often referred to as the process of *data ingestion*. After ingesting the data, you can [unify](data-unification.md), generate insights, and activate the data for building personalized experiences.
+To configure Dynamics 365 Customer Insights - Data, first bring in source data for processing. Customer Insights - Data provides several types of data connectors to connect to and ingest data from a broad set of sources.
 
-Customer Insights - Data provides several different data connectors. Consider the format of your data and whether you want to attach or copy your data.
+This article describes options that can affect data ingestion performance.
 
-Customer Insights - Data recommends you ingest data in the Delta format because it offers significant advantages.
+## Delta format
 
-## Delta format benefits
+The Delta data format is the native processing format used by Customer Insights – Data. If you can provide source data in the Delta format, there are many advantages.
 
-The advantages of using Delta format include:
-
-- **Better efficiency with Customer Insights - Data**: Delta format is the native format used internally by Customer Insights - Data.
+- **Better efficiency with Customer Insights - Data**: Delta format is used internally by Customer Insights - Data.
 - **Faster data ingestion**: Delta format provides superior compression for faster data transfers.
 - **Faster unification**: With the [Delta time travel feature](connect-delta-lake.md#delta-lake-time-travel-and-data-refreshes), Customer Insights – Data unifies just the changed data rather than reprocessing the entire set of data. Incremental unification requires all data inputs to unification be in the Delta format.
 - **Reduction in data corruption issues**: Reduces corrupted partitions and common data corruption issues caused by older formats such as CSV.
