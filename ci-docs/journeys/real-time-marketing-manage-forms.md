@@ -1,7 +1,7 @@
 ---
 title: Manage Customer Insights - Journeys forms
 description: Learn how to manage forms in Dynamics 365 Customer Insights - Journeys.
-ms.date: 04/26/2024
+ms.date: 06/21/2024
 ms.topic: article
 author: petrjantac
 ms.author: alfergus
@@ -10,7 +10,7 @@ ms.collection: bap-ai-copilot
 
 # Manage Customer Insights - Journeys forms
 
-This article explains how to edit, un-publish, and manage forms in Customer Insights - Journeys.
+This article explains how to edit, unpublish, and manage forms in Customer Insights - Journeys.
 
 ## Edit a live form
 
@@ -21,9 +21,9 @@ If your form has been already published and you need to update it, select the **
 
 The form is stored on a CDN where all data is cached to provide the shortest possible loading times to the visitors of your webpage. It may take up to 10 minutes before the cache is refreshed and before you can see the changes on your webpage. You can check the result of the changes in your page if you add this parameter `#d365mkt-nocache` to your webpage URL. Never share the link to your page including this parameter with your customers. The parameter bypasses the CDN cache and slows down the page loading.
 
-## Un-publish a form
+## Unpublish a form
 
-To un-publish a live form, select the **Stop** button. The form is removed from the CDN, so your web page visitors are no longer able to submit it. The form may be still visible due to the browser cache, but it can't be submitted. The form status is changed to *Draft*.
+To unpublish a live form, select the **Stop** button. The form is removed from the CDN, so your web page visitors are no longer able to submit it. The form may be still visible due to the browser cache, but it can't be submitted. The form status is changed to *Draft*.
 
 ## Form field properties
 
@@ -37,9 +37,6 @@ Once you select a field on the canvas, you can see its properties in the right p
 - **Required**: If enabled, the user can't submit the form if this field is empty.
 - **Validation**: Configure a rule that checks the content of the field. If the validation rule isn't met, the user can't submit the form. It's important to set the correct validation for email and phone number fields.
 - **Hide field**: If enabled, the field isn't visible in the form. You can use hidden fields to store extra metadata along with the form submission.
-
-> [!NOTE]
-> Make sure that the phone number field validation is set to "Phone number." This out-of-the-box validation checks if the phone number format is compatible with the phone number format requirements for contact point consent creation. The phone number must be in the international format starting with a "+" sign.
 
 ### Custom validation
 
@@ -65,7 +62,7 @@ The theme feature is a user-friendly interface for editing CSS class definitions
 - **Buttons and links**: The button definition allows you to set font family, size, color, text styles, button color, border alignment, and the inner and outer spacing. The hyperlink definition allows you to set the font family, size, color, and text styles.
 
 > [!NOTE]
-> Forms created before the September 2023 release have limited options to change the form styling using the theme feature. You can enable more style options by selecting the **Enable** button in the theme section. This updates your form styles to the latest version compatible with the theme feature.
+> The form styles are constantly being improved. Forms created in an older version of real-time journeys form editor have limited options to change the form styling using the theme feature. You can enable more style options by selecting the **Enable** button in the theme section. This updates your form styles to the latest version compatible with the theme feature.
 
 ### Custom fonts
 
@@ -139,11 +136,38 @@ Field types and formats are defined by the attribute metadata. It isn't possible
 | Date and time          | Date and Time | Date-Time Picker      | Date and time picker to select a date from a pop-up calendar and a time from a drop-down list.                                                                   |
 | Lookup field          | n/a | Lookup      | A lookup field is linked to a particular entity type, enabling you to add a drop-down list of options that were created in advance to your form. [More information](#lookup-fields). |
 
-## Lookup fields
+### Phone number field
+
+For the best results with Customer Insight - Journeys, you should only use the international phone number format starting with a "+" sign. This ensures that consent to send text messages can be collected. To improve your customers' experience, we recommend using the phone number label or placeholder to explain the expected format of phone number.
+
+Make sure that the phone number field validation is set to **Phone number**. This out-of-the-box validation checks if the phone number format is compatible with the phone number format requirements for contact point consent creation. The expected phone number format is the international one starting with a "+" sign. If your customer enters a wrong value for the phone number, the default error message generated by the browser is displayed. The forms use the default browser validation to show error messages if the entered field value doesn't match the expected pattern. You can override the default browser validation with custom JavaScript to introduce your own error messages.
+
+If you don't plan to use the phone number for sending text messages, you can collect the phone number in any format. In such a case, you should avoid adding consent for the "Text" channel to the form. Contact point consent strictly requires the international phone number format. If an incompatible format is used, the form submission is processed with a warning about failure when trying to create contact point consent for the entered phone number.
+
+> [!NOTE]
+> If the form submission for a form containing a phone number field fails, upgrade your application to the latest version to get the latest fixes and improvements to the phone number format processing.
+
+#### Preset phone number country code
+
+If your business is located in a single region with the same phone number country code, you can pre-set the *Country code* parameter of the phone number field.
+
+> [!div class="mx-imgBorder"]
+> ![Set the country code for phone number](media/real-time-marketing-form-country-code.png)
+
+If the country code is pre-set, the correct phone number country code is automatically added once the form is submitted. If the customer enters a phone number including the country code, the pre-set phone number country code is ignored.
+
+### Lookup fields
 
 A lookup field is linked to a particular entity type, enabling you to add a drop-down list of options that were created in advance to your form. For example, you could use a lookup field called "Currency" to show a drop-down list of all currencies in your form.
 
 After adding a lookup field, or if your lookup field isn't working, ensure that the service user used has permissions to configure the entities you're using with the lookup field. The Marketing Services User Extensible role used by the form editor needs to have read access to the entity used in the lookup field. You also have to enable **Make lookup data publicly viewable** in the lookup properties. All values within the lookup are available to anyone who sees the form. Ensure that sensitive data isn't exposed to the public. More information: [Adding lookup fields](marketing-fields.md#adding-lookup-fields-and-troubleshooting).
+
+### Custom fields
+
+The form editor allows you to use all attributes of lead or contact entities as form fields. If you create a new custom attribute of a contact or lead entity, it's automatically available as a form field in the editor. Using this approach, you can easily create reusable form fields.
+
+> [!NOTE]
+> The custom **unmapped** form fields (form fields not linked to any existing lead or contact attribute) are currently on our roadmap. There's a possible workaround mentioned in this [blog post](https://community.dynamics.com/blogs/post/?postid=3a361b7e-80b0-ee11-92bd-002248527d3d).
 
 ## Form validation
 
@@ -243,6 +267,10 @@ In this example, a script is created that combines the first name and last name 
 ```
 
 You can reuse this example to enrich your leads with more UTM parameters like utm_campaign, utm_medium, utm_term, utm_content.
+
+## Customize the form and form submission entities
+
+You can [add custom attributes to the form or form submission entities](real-time-marketing-customize-forms.md) to enhance your experience with the form editor.
 
 ## Integrate a custom captcha into the form
 
