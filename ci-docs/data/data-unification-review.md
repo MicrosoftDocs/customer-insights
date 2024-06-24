@@ -45,8 +45,8 @@ We recommend you review the results, particularly the quality of your [match rul
 When needed, [make changes to the unification settings](data-unification-update.md) and rerun the unified profile.
 
 > [!IMPORTANT]
-      > If data unification is not behaving as expected, please validate the results using this [troubleshooting guide](/troubleshoot/dynamics-365/customer-insights/data/profile-unification/troubleshoot-unification-results).
-s
+> If data unification is not behaving as expected, please validate the results using this [troubleshooting guide](/troubleshoot/dynamics-365/customer-insights/data/profile-unification/troubleshoot-unification-results).
+
 ## Next steps
 
 Configure [activities](activities.md), [enrichments](enrichment-manage.md), [relationships](relationships.md), or [measures](measures.md) to gain more insights about your customers.
