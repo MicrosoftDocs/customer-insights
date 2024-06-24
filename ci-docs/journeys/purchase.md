@@ -1,7 +1,7 @@
 ---
 title: Purchase Customer Insights
 description: How to purchase Dynamics 365 Customer Insights.
-ms.date: 01/26/2024
+ms.date: 06/04/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -41,11 +41,11 @@ If you need the application to run in a specific data center region, be sure to 
 >
 > The current Dynamics 365 Customer Insights license entitles 10,000 interacted people (formerly "active contacts"), 100,000 unified people (formerly "unified profiles"), 4 installations of the journeys app, and 4 installations of the data app. You no longer have to pay a higher unit price for add-ons to unify accounts. Learn more: [Dynamics 365 Customer Insights FAQs](ci-faq.md)
 
-## Step 1: Buy the base license
+### Step 1: Buy the base license
 
 The Dynamics 365 Customer Insights base license includes four application installations of Customer Insights - Journeys and four of Customer Insights - Data. If you own a pre-qualifying Dynamics 365 license, you're entitled to the "attach" pricing. See the [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409) for details on pricing and entitlements.
 
-## Step 2: Buy additional capacity
+### Step 2: Buy additional capacity
 
 To determine how much capacity you need, consider the following:
 
@@ -53,13 +53,30 @@ To determine how much capacity you need, consider the following:
 -	For high-volume engagement, how many interactions (email/text message/push notification/custom channel) will you send per month? Divide by 10 to get the number of interacted people you need.
 -	For lower-volume engagement, how many leads, contacts, profiles, or custom entities do you think you engage with on an annual basis?
 
-## Step 3: Sign-up for an SMS provider of your choice
+### Step 3: Sign up for an SMS provider of your choice
 
 If you plan to use SMS, you must select a provider (such as Azure Communication Services) and create a separate account with that provider. The Customer Insights license doesn't provide phone numbers and SMS delivery services for production use. [See the list of supported providers](real-time-marketing-text-messaging-setup.md) and sign-up for the provider of your choice.
+
+### Step 4: Add Customer Insights to your Microsoft 365 tenant
+
+There are several ways to acquire a Customer Insights license. You can purchase a license from the [Dynamics 365 Customer Insights overview page](https://dynamics.microsoft.com/marketing/overview/). Or, you can go to **Billing** > **Purchase services** in your Microsoft 365 admin center. You can also purchase a license by contacting your Microsoft sales representative or channel partner. After you've purchased a license and it's added to your tenant, you’ll find it in the Power Platform Admin Center under **Resources** > **Dynamics 365 apps**.
+
+You can have any number of Customer Insights licenses available on your tenant. Licenses translate to "apps" listed in the Power Platform Admin Center. Even old, expired trial licenses have records listed in the Power Platform Admin Center. You can access the installation management experience for any of these apps in the Power Platform Admin Center under **Resources** > **Dynamics 365 apps**. The app listing under **Dynamics 365 apps** is just a means to access the management page; it doesn't represent anything else.
+
+Once a paid license has been applied to your tenant, it can take up to 24 hours to sync with the Dynamics 365 licensing system and be available for installation. To see your licenses in the Microsoft Admin Center, go to **Your products**. They won't show up under **Licenses** because they're tenant-level application licenses, not assignable seat-based licenses where you pay per user. Only pay-per-user, seat-based licenses are shown on the "Licenses" page.
+
+To see your license in the Power Platform Admin Center, if you don't have a global tenant, you must select the geography that matches the home tenant geography on which the license was installed. For example, if the tenant home geo is Canada, you'll only see the license in the Power Platform Admin Center when you select Canada. To see the license in all geographies regardless of the tenant's home geography, Microsoft support or a Microsoft product manager must convert your tenant to a multi-geo tenant.
 
 ## Next steps
 
 After purchasing, go to [Install and manage Dynamics 365 Customer Insights](setup.md) to install the Customer Insights - Journeys and Customer Insights - Data applications on your existing Dataverse environments and get set up.
+
+> [!IMPORTANT]
+> Your system is constrained by certain limits and quotas that apply to the number of contacts you can market to, monthly email messages you can send, Litmus previews you can view, and more. Familiarize yourself with the terms and limits of the product before you use it. The limits are different based on whether you're running a trial or subscribed version of the product.
+> - For subscribed (paid) versions, download the [Microsoft Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/p/?linkid=866544) and visit the [Fair use policy](fair-use-policy.md) page.
+> - For trials, see [Dynamics 365 Customer Insights limits for trials](trial-preview-limits.md).
+> 
+> You can monitor your usage levels by going to  **Settings**  >  **Advanced settings**  >  **Other settings**  >  **Quota limits**. More information: [Quota limits](quota-management.md)
 
 ## User and portal licensing
 

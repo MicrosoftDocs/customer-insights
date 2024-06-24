@@ -69,12 +69,6 @@ Learn how to make the most of the new Dynamics 365 Customer Insights features in
     - [Release plan](/dynamics365/release-plan/2024wave1/customer-insights/dynamics365-customer-insights-journeys/ensure-messages-go-right-contact-email-address)
     - [Docs](real-time-marketing-audience-data.md#change-your-audience-configuration)
 
-### Public preview
-
-- **Confidently understand inflow and exit of customers at every step in a journey**
-    - Understanding exactly what happened to each customer who entered and exit your real-time journeys is crucial. With the improved journey analytics, you’ll gain confidence in the processing of every step in your journey through improved metrics and the increased ability to export data. For example, if your journey makes use of exit or exclusion segments, you can see and understand why there are fewer customers who started your journey than were in the entry segment. You can also see the list of customers who entered and exited each step in the journey and export lists of up to 50,000 people for further analysis.
-    - [Docs](real-time-marketing-journey-analytics.md)
-
 ### Monthly enhancements
 
 - **Real-time journey segment membership**

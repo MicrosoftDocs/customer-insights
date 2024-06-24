@@ -70,6 +70,5 @@ Loading data can take time. After a successful refresh, review the ingested data
 ## Next steps
 
 - [Data unification overview](data-unification.md)
-- [Common reasons for ingestion errors or corrupt data](common-data-ingestion-errors.md)
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

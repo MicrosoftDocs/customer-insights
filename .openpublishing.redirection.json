@@ -1647,6 +1647,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "ci-docs/data/common-data-ingestion-errors.md",
+      "redirect_url": "/troubleshoot/dynamics-365/customer-insights/data/data-ingestion/common-data-ingestion-errors",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "ci-docs/compute-migrate-infrastructure.md",
       "redirect_url": "/dynamics365/customer-insights/data/compute-migrate-infrastructure",
       "redirect_document_id": false
