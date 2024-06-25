@@ -15,6 +15,8 @@ ms.custom: bap-template
 
 Let Customer Insights - Data automatically create unknown profiles for your visitors and track their website interactions (page views and interactions) in real time. Set up web tracking, merge customers with their known profiles when they authenticate on your website, and then personalize your customers web experience.
 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RW1hyhp]
+
 Learn more: [Real-time web personalization overview](real-time-web-personalization-overview.md).
 
 ## Prerequisites
