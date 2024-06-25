@@ -33,7 +33,7 @@ You can use Delta format with the following connectors:
 
 ## Data source attachment or import
 
-A key consideration when choosing how to ingest your data is whether the connector attaches to the data or makes copies of the data. Customer Insights - Data recommends attaching to data because the data is directly accessed when it's time to process data. Copying the data contains delays when the data is updated.
+A key consideration when choosing how to ingest your data is whether the connector attaches to the data or makes copies of the data. Customer Insights - Data recommends attaching to data because the data is directly accessed when it's time to process it. Copying the data causes delays when the data is updated.
 
 The following data connectors attach to your data.
 

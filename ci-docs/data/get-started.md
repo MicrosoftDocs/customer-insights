@@ -19,7 +19,7 @@ Customer Insights - Data can help you build a deeper understanding of your custo
 
 1. In most cases with global tenant admin permissions, to install Customer Insights - Data, you should create an environment in the Power Platform Admin Center and [follow these steps](..\journeys\setup.md). If you want to create an environment from the Customer Insights - Data application, you must be a global tenant admin and you can follow the steps in [Create an environment](create-environment.md). After the environment is created, the **Home** page displays.
 
-   :::image type="content" source="media/home-page.svg" alt-text="Screenshot of the Home screen with Insights in minutes.":::
+   :::image type="content" source="media/home-page.svg" alt-text="Screenshot of the Home screen.":::
 
 ## Step 2: Import data
 
