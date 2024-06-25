@@ -112,8 +112,8 @@ additionalContent:
         text: View customer profiles
       - url: consent-management.md
         text: Use customer consent
-      - url: manage-unknown-profiles.md
-        text: Manage unknown users
+      - url: real-time-web-personalization-overview.md
+        text: Deliver web personalization
   - title: Related products
     items:
         # Card

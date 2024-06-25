@@ -2587,6 +2587,16 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "ci-docs/data/manage-unknown-profiles.md",
+      "redirect_url": "/dynamics365/customer-insights/data/customer-profiles#known-and-unknown-customers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/data/unknown-to-known.md",
+      "redirect_url": "/dynamics365/customer-insights/data/customer-profiles#known-and-unknown-customers",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "ci-docs/data/b2b/enrichment-enhanced-company-data.md",
       "redirect_url": "/dynamics365/customer-insights/data/removed-deprecated-features-customer-insights",
       "redirect_document_id": false
