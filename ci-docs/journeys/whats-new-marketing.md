@@ -1,7 +1,7 @@
 ---
 title: New and upcoming features
 description: Information about new features, improvements, and bug fixes in Dynamics 365 Customer Insights - Journeys releases.
-ms.date: 05/24/2024
+ms.date: 06/24/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -17,6 +17,39 @@ We're excited to announce our newest updates! This article summarizes early acce
 Customer Insights - Journeys updates are [pushed to customers automatically](https://cloudblogs.microsoft.com/dynamics365/it/2020/04/27/automatic-update-policy-for-dynamics-365-marketing/). Solutions are available for early validations. To manually update your instances, follow the steps in [Keep Customer Insights - Journeys up to date](apply-updates.md).
 
 To submit and vote on **feature requests** and **product suggestions**, go to the [Dynamics 365 Application Ideas portal](https://experience.dynamics.com/ideas/categories/?forum=dfa5b83d-9e4c-e811-a956-000d3a1bef07&forumName=Dynamics%20365%20Marketing).
+
+## June 2024 update
+
+### Version number
+
+| App              | GA release      |
+|------------------|-----------------|
+| Customer Insights - Journeys        |   1.1.43992.110   |
+
+> [!NOTE]
+> On July 1, 2024, active journeys in the real-time journeys area that were created on or before May 5, 2022 will stop working. To avoid disruption, follow the steps outlined in the [Known issues for journeys](journey-known-issues.md#steps-to-avoid-journey-disruption) article before July 1, 2024.
+
+> [!IMPORTANT]
+> After July 30, 2024, custom workflows that *write* to the **msdynmkt_contactpointconsent2** or **msdynmkt_contactpointconsent3** consent tables will no longer automatically have data synced to the latest **msdynmkt_contactpointconsent4** table. To ensure continued functionality of custom workflows, update the workflows to write to the **msdynmkt_contactpointconsent4** table *before* July 30.
+
+### General availability
+
+- **Easily manage customer consent from contact and lead forms**
+    - Enhanced contact and lead forms allow you to quickly see and update customer consent, helping you effortlessly manage what types of messages are sent to your customers. This comprehensive view gives you one place to manage consent across every channel and line of business for your organization. Quickly see if a customer has opted out of all commercial communication from your business. Explore which topics a contact has opted into or out of receiving across all channels: email, text, and custom channels. Get a complete understanding of each contact and lead's consent preferences in one easy-to-use screen.
+    - [Release plan](/dynamics365/release-plan/2024wave1/customer-insights/dynamics365-customer-insights-journeys/easily-manage-customer-consent-contact-lead-forms)
+    - [Docs](real-time-marketing-email-text-consent.md#view-and-manage-consent-records)
+
+### Monthly enhancements
+
+- **Pre-set country code for your phone number form fields**
+    - Simplify the experience of entering the phone number into form by pre-setting the right country code. Once the code is pre-set, form submissions will no longer fail if wrong phone number format was entered.
+    - [Docs](real-time-marketing-manage-forms.md#pre-set-phone-number-country-code)
+
+### New blogs and scenario docs
+
+Learn how to make the most of the new Dynamics 365 Customer Insights features in our latest blogs and scenario docs:
+
+- [Announcing unlimited application installs in Dynamics 365 Customer Insights - Microsoft Dynamics 365 blog](https://www.microsoft.com/dynamics-365/blog/it-professional/2024/06/18/announcing-unlimited-application-installs-in-dynamics-365-customer-insights/)
 
 ## May 2024 update
 
@@ -35,12 +68,6 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
     - It's critical that your messages are delivered by the right channel at the right time. Often, you'll need to pick the correct email address among the several you may have for a contact. Now you can choose which of a contact’s email addresses to target in your journeys. For example, some email messages may be more appropriate for a contact’s work email address, whereas others may best target a personal email address. Now, you have full control over which email address to send email messages to, enabling you to reach your customers where they’re most likely to see your messages and take action.
     - [Release plan](/dynamics365/release-plan/2024wave1/customer-insights/dynamics365-customer-insights-journeys/ensure-messages-go-right-contact-email-address)
     - [Docs](real-time-marketing-audience-data.md#change-your-audience-configuration)
-
-### Public preview
-
-- **Confidently understand inflow and exit of customers at every step in a journey**
-    - Understanding exactly what happened to each customer who entered and exit your real-time journeys is crucial. With the improved journey analytics, you’ll gain confidence in the processing of every step in your journey through improved metrics and the increased ability to export data. For example, if your journey makes use of exit or exclusion segments, you can see and understand why there are fewer customers who started your journey than were in the entry segment. You can also see the list of customers who entered and exited each step in the journey and export lists of up to 50,000 people for further analysis.
-    - [Docs](real-time-marketing-journey-analytics.md)
 
 ### Monthly enhancements
 

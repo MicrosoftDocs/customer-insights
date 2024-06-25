@@ -1,7 +1,7 @@
 ---
 title: Troubleshooting Customer Insights - Journeys forms
 description: Learn how to troubleshoot forms in Dynamics 365 Customer Insights - Journeys.
-ms.date: 04/26/2024
+ms.date: 06/21/2024
 ms.topic: article
 author: petrjantac
 ms.author: alfergus
@@ -23,6 +23,10 @@ Make sure that your domain is allowed for external form hosting. You don't need 
 
 This feature uploads a page with form on CDN. If the operation fails, try to run it again after a few minutes.
 
+## Lead source is missing for newly created leads
+
+The lead source attribute is represented by a form field in the editor. You can add the lead source as a field in the form editor. Set this field as hidden and set the correct default value to enrich your newly created lead's data.
+
 ## Form editor removed my custom JavaScript or other custom code from the HTML body
 
 With Customer Insights - Journeys version **1.1.38813.80 or newer**, you can add JavaScript code into the `<body>` section of the HTML. If you add JavaScript into the `<head>` section, it's automatically moved to the top of the `<body>` section.
@@ -39,7 +43,7 @@ The form submission may fail because of issues with custom plugins or due to inv
 - If the form submission failed because of an invalid value, you can edit the values of submissions from the list of submissions. Select the form submission to see the submitted values. Select the value you need to change and edit the value.
 
 > [!IMPORTANT]
-> You can only re-submit failed submissions. Be aware that, by re-submitting, you may create a duplicate contact, such as when the submission fails because of a contact point consent creation error. The replay runs the entire submission process again. To avoid duplicate records, you can change the matching strategy before running the replay feature. 
+> You can only re-submit failed submissions. Be aware that, by re-submitting, you may create a duplicate contact, such as when the submission fails because of a contact point consent creation error. The replay runs the entire submission process again. To avoid duplicate records, you can change the matching strategy before running the replay feature.
 
 ## Investigating failed form submissions
 

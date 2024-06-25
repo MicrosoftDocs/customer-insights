@@ -352,8 +352,6 @@
       href: analytics-overview.md
     - name: Access and interpret analytics
       href: real-time-marketing-analytics.md
-    - name: Real-time tile analytics in journeys
-      href: real-time-marketing-journey-analytics.md
     - name: How to use aggregate cross-journey analytics
       href: real-time-marketing-cross-journey-analytics.md
     - name: How to use aggregate channel analytics
@@ -632,10 +630,10 @@
   items:
   - name: Customer Insights - Journeys forum
     href: https://community.dynamics.com/forums/thread/?discussionforumid=401fa082-89fa-4aea-b90f-fcadb0d9f76a
-  - name: Customer Insights - Journeys Business Decision Makers blog
-    href: https://cloudblogs.microsoft.com/dynamics365/bdm/product/dynamics-365-marketing/?sort-by=newest-oldest&date=any&s=
-  - name: Customer Insights - Journeys IT Professionals blog
-    href: https://cloudblogs.microsoft.com/dynamics365/it/product/dynamics-365-marketing/?sort-by=newest-oldest&date=any&s=
+  - name: Customer Insights Business Decision Makers blog
+    href: https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/product/dynamics-365-customer-insights/?sort-by=newest-oldest&date=any&s=
+  - name: Customer Insights IT Professionals blog
+    href: https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/product/dynamics-365-customer-insights/?sort-by=newest-oldest&date=any&s=
 - name: Troubleshoot
   items:
   - name: Customer Insights - Journeys troubleshooting
