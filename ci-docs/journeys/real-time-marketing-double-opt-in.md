@@ -13,14 +13,14 @@ search.audienceType:
 
 # Double opt-in in real-time journeys
 
-The double opt-in process (also known as confirmed opt-in) asks contacts who sign up for new Purposes or Topics to confirm their request by clicking on a link sent to their registered email address. This system helps make sure that the request is intentional, and that the supplied email address is legitimate and functional.
+The double opt-in process (also known as confirmed opt-in) asks contacts who sign up for new Purposes or Topics to confirm their request by selecting a link sent to their registered email address. This system helps make sure that the request is intentional, and that the supplied email address is legitimate and functional.
 
 The double opt-in process works as follows:
 
 1. A new or existing contact or lead uses a [form](real-time-marketing-form-overview.md) to provide their consent.
-1. On submitting the form, the contact (or lead) is shown a page that tells them to check their email for a confirmation message that includes a link the contact must click on to confirm their request.
+1. On submitting the form, the contact (or lead) is shown a page that tells them to check their email for a confirmation message that includes a link the contact must select to confirm their request.
 1. Customer Insights - Journeys sends a confirmation email to the address registered for the contact (or lead).
-1. The contact (or lead) opens the confirmation email, reads the text, and clicks the link. This opens a web browser, which submits a coded URL that identifies the contact (or lead) to Customer Insights - Journeys.
+1. The contact (or lead) opens the confirmation email, reads the text, and selects the link. This opens a web browser, which submits a coded URL that identifies the contact (or lead) to Customer Insights - Journeys.
 1. Customer Insights - Journeys acts upon the click, creates a contact (or lead) record or updates it (if already existing), records the consent, and immediately redirects to a thank you page that is shown to the contact.
 
 > [!IMPORTANT]
@@ -47,11 +47,11 @@ Accurate and verified customer data allows for advanced personalization and segm
 
 **Improved engagement**
 
-Customers are more likely to open emails, click on links, and demonstrate a higher level of engagement overall
+Customers are more likely to open emails, select links, and demonstrate a higher level of engagement overall
 
 ## Enable double opt-in (preview)
 
-Starting with June 2024 release, customers can now leverage the double opt-in capability within the product.
+Starting with the June 2024 release, customers can now use the double opt-in capability within the product.
 
 To enable double opt-in:
 
@@ -79,7 +79,7 @@ Here are the steps that you need to follow to enable double opt-in for the compl
 1. The setup runs asynchronously and allows you to work on other areas in the product while it's running, without impacting the setup at all. You can come back to the setup process, and it will always show you the latest information on how far it has progressed.
 1. Once the setup is complete, you can find the link to the confirmation email that the system created on your behalf.
 1. You should review this email and edit it to suit your business needs.
-1. Finalize what message you want to show to your customers, after they click on the confirm preferences button in their confirmation email. You can have a system hosted confirmation page with a message of your choice or redirect the customer to a URL of your choice.
+1. Finalize what message you want to show to your customers, after they select the confirm preferences button in their confirmation email. You can have a system hosted confirmation page with a message of your choice or redirect the customer to a URL of your choice.
 1. Once you have reviewed and edited the email, you can go to the double opt-in tab of the compliance profile and turn on double opt-in. This would ensure that any new form submissions (from forms that capture consent for purposes/topics of the compliance profile) will automatically go through the double opt-in journey.
 
 > [!NOTE]
@@ -123,11 +123,11 @@ Here are the key features of this email:
     1. Confirmation preferences button – a button that contains a personalized confirmation link to allow the user to confirm their preferences  
 1. Email uses the default brand profile of the system and the default sender from the brand profile.
 
-> [!IMPORTANT]
-> In cases where the default brand profile doesn’t exist for the entire org or for the specific business unit (if there are multiple business units) then the email creation will fail and will not resolve unless a default brand profile is created.
->Do not delete the Confirmation preferences button or {{OptedinPurposes&Topics}} token as you will have to restart from the double opt-in template to get them back.
+    > [!IMPORTANT]
+    > In cases where the default brand profile doesn’t exist for the entire org or for the specific business unit (if there are multiple business units) then the email creation will fail and will not resolve unless a default brand profile is created.
+    > Don't delete the Confirmation preferences button or {{OptedinPurposes&Topics}} token as you will have to restart from the double opt-in template to get them back.
 
-6. If this email is deleted, then the double opt-in journey won't function properly.
+1. If this email is deleted, then the double opt-in journey won't function properly.
 
 ## Double opt-in confirmation journey
 
@@ -135,7 +135,7 @@ The system automatically generates a double opt-in confirmation journey and publ
 
 ## Double opt-in analytics
 
-For any form that has double opt-in enabled you will be able to see additional analytics that represent how many users have confirmed their preferences and how many are pending.
+For any form that has double opt-in enabled you'll be able to see additional analytics that represent how many users have confirmed their preferences and how many are pending.
 
 ## Known limitations
 
@@ -143,8 +143,8 @@ This public preview release has the following known limitations:
 
 1. Double opt-in doesn't work for event registration or preference center forms.
 1. The journey created for double opt-in flow isn't editable.
-1. Emails can't include any profile-based personalization attributes, such as first name, last name etc.
-1. If a default brand profile is not present for a given business unit, the double opt-in setup fails unless a brand profile is created for the business unit.
+1. Emails can't include any profile-based personalization attributes, such as first name, last name, etc.
+1. If a default brand profile isn't present for a given business unit, the double opt-in setup fails unless a brand profile is created for the business unit.
 
 ## Frequently asked questions
 
@@ -154,11 +154,11 @@ These forms must have been published before you enabled double opt-in feature sw
 
 ***I am unable to enable double opt-in on an existing form.***
 
-If the form uses purposes and topics from multiple compliance profiles, you will not be able to enable double opt-in for it.
+If the form uses purposes and topics from multiple compliance profiles, you won't be able to enable double opt-in for it.
 
 ***Why am I unable to create a form with purposes and topics from multiple compliance profiles anymore?***
 
-The features within compliance profiles enables our customers to accomplish even the most complicated of setups. It is for this reason that we will now require every new form to have elements from only a single compliance profile. This also removes the conflict situation that the system can get into if you choose elements from two different compliance profiles; one which has double opt-in enabled and the other which doesn't.
+The features within compliance profiles enables our customers to accomplish even the most complicated of setups. It is for this reason that we'll now require every new form to have elements from only a single compliance profile. This also removes the conflict situation that the system can get into if you choose elements from two different compliance profiles; one which has double opt-in enabled and the other which doesn't.
 
 ***I clicked on the setup button in the double opt-in tab but the process is repeatedly failing. What could be the issue?***
 
