@@ -1,7 +1,7 @@
 ---
 title: Export segments to Customer Insights - Journeys outbound marketing (preview)
 description: "Learn how to configure the connection and export to Dynamics 365 Customer Insights - Journeys."
-ms.date: 01/29/2024
+ms.date: 06/26/2024
 ms.reviewer: mhart
 ms.topic: how-to
 author: pkieffer
@@ -37,7 +37,7 @@ Consider the following restrictions before exporting to Customer Insights - Jour
 
 [!INCLUDE [export-connection-include](includes/export-connection-admn.md)]
 
-1. Go to **Settings** > **Connections**.
+1. In Customer Insights - Data, go to **Settings** > **Connections**.
 
 1. Select **Add connection** and choose **Customer Insights - Journeys**.
 
