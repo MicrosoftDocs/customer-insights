@@ -3,8 +3,8 @@ title: "Connect to data in Microsoft Dataverse"
 description: "Attach data from a Microsoft Dataverse to Customer Insights - Data."
 ms.date: 06/26/2024
 ms.topic: how-to
-author: mukeshpo
-ms.author: mukeshpo
+author: Scott-Stabbert
+ms.author: sstabbert
 ms.reviewer: v-wendysmith
 ms.custom: bap-template
 ---
@@ -38,9 +38,9 @@ Because your Dataverse tables are ingested into Customer Insights - Data in Delt
 
 1. Select the tables you want to import from the list.
 
-<!--- 
+   <!--- 
     :::image type="content" source="media/select-dataverse-tables.png" alt-text="Dialog box showing a list of tables in the Dataverse environment.":::
---->
+   --->
 
 1. Save your selection to start syncing the selected tables from Dataverse. You find the newly added connection on the **Data sources** page. It's queued for refresh and show the table count as 0 until all the selected tables are synced.
 
