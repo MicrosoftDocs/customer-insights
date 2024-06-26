@@ -1,1 +1,1 @@
-You must be an [administrator](../user-roles.md) in Customer Insights to add a connection.
+You must be an [administrator](../user-roles.md) in Customer Insights - Data to add a connection.
