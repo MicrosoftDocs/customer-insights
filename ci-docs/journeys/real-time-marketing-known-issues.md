@@ -32,9 +32,9 @@ As we continue to work on Customer Insights - Journeys and refine the experience
 - Journeys tiles that create branches can create up to 25 branches for a single tile. To create more branches, add a second branching tile to the “Other” branch of the first tile.
 - Journeys with nested branches (a branching tile within the branch of another branching tile) have a maximum nested depth of eight branching conditions. To avoid nesting, limits consolidate branching logic or consider splitting the journey into separate journeys for large branches.
 - Journeys with multiple complex conditions or large amounts of tiles can fail to publish. If retrying a journey publish doesn’t succeed, consider splitting the journey into smaller journeys. You can also reach out to MS Support to seek product support on this.
-- A single journey instance can't run for more than 365 days. Once a participant starts a journey, that journey must end within that time frame or failures will occur. If a journey longer than 365 days is needed, consider splitting the journey into multiple journeys.
+- A single journey instance can't run for more than 365 days. Once a participant starts a journey, that journey must end within that time frame or failures occur. If a journey longer than 365 days is needed, consider splitting the journey into multiple journeys.
 - A single wait tile can't wait for longer than 90 days. If a longer than 90-day wait tile is needed, consider splitting the journey into multiple journeys.
-- When a new journey version is created, only participants who enter the journey after the version has been published will get the new journey version. In-progress journey participants remain on the journey version they started on. This will have an impact on the way analytics is shown across the journeys as well.
+- When a new journey version is created, only participants who enter the journey after the version has been published will get the new journey version. In-progress journey participants remain on the journey version they started on. This impacts the way analytics are shown across the journeys as well.
 - Sometimes, journeys that have a large exclusion audience list, specially for a large segment that orchestrates the journey, will encounter issues. In these cases, it's better to bring the exclusion list into the segment definition so that it can be processed better.
 - Changing email links that are used for branching logic in live journeys may prevent participants from going down the correct path and isn't recommended.
 - One-time journeys with start dates that have already passed can't be edited (even after being copied).
@@ -51,7 +51,7 @@ As we continue to work on Customer Insights - Journeys and refine the experience
 - Marketers lack the ability to create full width layout emails.
 - All content blocks, conditional content, lists, and conditions, and other personalization don't have specific limits. However, they're stored within the Email itself and therefore contribute to the size of Email and are therefore subject to Email size limit.
 - Content blocks are inserted into emails by copying. This has the following implications:
-    - The same content block inserted multiple times in the same email is a new and separate copy (and contributes to the Email size).
+    - The same content block inserted multiple times in the same email are new and separate copies (and contribute to the email size).
     - Updating the original content block doesn't update emails that include those content blocks
 - The handlebar expression language for personalization syntax (for example, {{contact.firstname}}) isn't supported in real-time. All personalization must be defined using the UI inside the designers for Email, SMS, or Push. Workaround: Use the [Email import tool](real-time-marketing-import-email-to-real-time.md) Opens in new window or tab in real-time to copy outbound emails. The tool will automatically migrate personalization expressions.
 
@@ -64,7 +64,7 @@ As we continue to work on Customer Insights - Journeys and refine the experience
 ## Segments
 
 - A segment can be created for up to 100,000,000 contacts.
-- A segment-based journey will only work when the size of the segment is under 10M contacts. Any segment with a larger size will fail to be executed. To ensure that campaigns can run effectively, break down the larger segments into multiple segments that can use the same repeatable journey.
+- A segment-based journey will only work when the size of the segment is under 10M contacts. Any segment with a larger size fails to execute. To ensure that campaigns can run effectively, break down the larger segments into multiple segments that can use the same repeatable journey.
 (1) This is also true for any trigger based journeys that rely on segments in the journey flow
 - There's a limit of 100 contacts that can be added to an inclusion/exclusion group as part of the segment definition. To get around this, you can create a separate segment of customers and use that segment in your master segment definition thereby creating a compound segment.
 - Today, users can't edit a segment that is being used in a live journey in Customer Insights - Journeys. To be able to edit the segment, stop the journey and then make the edits to the segments.
@@ -74,7 +74,7 @@ As we continue to work on Customer Insights - Journeys and refine the experience
 - Today, there's a limit of 500 custom triggers that can be fired in an org per day. To increase this for your organization, create a support ticket or reach out to your Microsoft Representative, and we can work with you to support your use case.
 - When defining custom triggers, ensure that all attributes are defined. Any attribute that has a null value causes the trigger to fail leading to the customers not going through the journey. Today, we don't have the ability to allow null values to be passed in a custom, which then results in a System Failure as the error message at journey runtime.
 - Usage of Entity References in Custom or CDS triggers is limited to five hops. Any entity that is more than 5 hops away from the COLA entity, can't be used as an attribute in a journey.
-- When using the ‘Marketing Form Submitted’ standard trigger for your journey, care should be taken to ensure that the audience for the journey, and the form should be the same. Today, we don't display an error or warning when there's a mismatch, but the journey won't start leading to customer confusion.
+- When using the "Marketing Form Submitted" standard trigger for your journey care should be taken to ensure that the audience for the journey and the form is the same. Today, we don't display an error or warning when there's a mismatch, but the journey won't start leading to customer confusion.
 - Today, triggers also fire when a record is manually updated in Dynamics 365 Dataverse. This can cause a contact to go through the journey that is based on the trigger even if they themselves don't do anything to activate the trigger.
 - Today, for trigger based journeys that use the if/then tile, we have noticed that sometimes, customers can lose about 1% of all trigger events owing to a slight delay in our system catching them. We're working on a fix for this.
 
