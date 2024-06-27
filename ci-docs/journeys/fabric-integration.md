@@ -1,7 +1,7 @@
 ---
 title: "Preview: Customer Insights - Journeys integration with Microsoft Fabric"
 description: Learn about how to integrate Customer Insights - Journeys with Microsoft Fabric.
-ms.date: 06/05/2024
+ms.date: 06/26/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -64,7 +64,7 @@ The following sections explain how to set up Power BI and link to Fabric.
     :::image type="content" source="media/link-to-fabric-through-shortcut.png" alt-text="Link to fabric through shortcut." lightbox="media/link-to-fabric-through-shortcut.png":::
 
 > [!NOTE]
-> If some of your Dataverse tables are not visible from Fabric, use the Link to Microsoft Fabric feature from the PowerApps maker portal. Learn more about prerequisites and review setup instructions: [Link your Dataverse environment to Microsoft Fabric and unlock deep insights](/power-apps/maker/data-platform/azure-synapse-link-view-in-fabric)
+> If some of your Dataverse tables aren't visible in Fabric, use the **Link to Microsoft Fabric** feature in the PowerApps maker portal. Learn more about prerequisites and review the setup instructions: [Link your Dataverse environment to Microsoft Fabric and unlock deep insights](/power-apps/maker/data-platform/azure-synapse-link-view-in-fabric)
 
 ### Work with marketing interactions in Power BI
 
