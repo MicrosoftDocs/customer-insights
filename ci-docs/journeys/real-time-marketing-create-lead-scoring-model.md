@@ -1,7 +1,7 @@
 ---
 title: Create scoring models for Customer Insights - Journeys
 description: Learn how to create scoring models in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/22/2023
+ms.date: 06/26/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -51,8 +51,11 @@ To create a new condition, start by selecting attributes or interactions on the 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of adding a new condition](media/real-time-marketing-add-new-condition.png "Screenshot of adding a new condition")
 
+> [!TIP]
+> You can add up to 40 groups per scoring model.
+
 > [!NOTE]
-> As of July 2023, you can only use Dynamics 365 standard interactions to create conditions.
+> You can only use Dynamics 365 standard interactions to create conditions.
 
 ## Create a demographic condition using related tables
 
