@@ -37,10 +37,14 @@ Customer Insights helps you collect web interactions in real time, enabling pers
 
 This capability includes the following features:
 
-- **Real-time web tracking**: Ensure that your customer data is ingested in real time with a tracking script that can be added to your website. Capture high-intent signals such as "viewed pricing page," "added item to the cart," or "downloaded e-book" in real time.
-- **Real-time unknown profiles**: Capture web data from all your visitors even if they're not authenticated and let the system automatically create unknown profiles in real time.
-- **Real-time unknown-to-known**: Merge unknown profiles into known profiles in real time, so you can always have the 360-degree view of your customers.
-- **Real-time web personalization**: Leverage our APIs to read your customer data, including segment memberships, web events, or demographic data in real time to personalize the web experience for your visitors.
+**Real-time web tracking**: Ensure that your customer data is ingested in real time with a tracking script that can be added to your website. Capture high-intent signals such as "viewed pricing page," "added item to the cart," or "downloaded e-book" in real time.
+
+**Real-time unknown profiles**: Capture web data from all your visitors even if they're not authenticated and let the system automatically create unknown profiles in real time.
+
+**Real-time unknown-to-known**: Merge unknown profiles into known profiles in real time, so you can always have the 360-degree view of your customers.
+
+**Real-time web personalization**: Leverage our APIs to read your customer data, including segment memberships, web events, or demographic data in real time to personalize the web experience for your visitors.
+
 
 - [Release plan](/dynamics365/release-plan/2024wave1/customer-insights/dynamics365-customer-insights-data/elevate-customer-experiences-real-time)
 - [Docs](real-time-web-personalization-overview.md)
