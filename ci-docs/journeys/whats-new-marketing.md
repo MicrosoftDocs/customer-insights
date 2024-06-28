@@ -33,7 +33,7 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 > After July 30, 2024, custom workflows that *write* to the **msdynmkt_contactpointconsent2** or **msdynmkt_contactpointconsent3** consent tables will no longer automatically have data synced to the latest **msdynmkt_contactpointconsent4** table. To ensure continued functionality of custom workflows, update the workflows to write to the **msdynmkt_contactpointconsent4** table *before* July 30.
 
 > [!NOTE]
-> Double opt-in for real-time journeys isn't included in the June release. It's projected to roll out in a future release, likely in late July.
+> Double opt-in for real-time journeys is not included in the June release. It's projected to roll out in a future release, likely in late July.
 
 ### General availability
 
