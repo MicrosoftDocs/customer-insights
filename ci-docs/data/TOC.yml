@@ -35,8 +35,6 @@
       href: data-sources.md
     - name: Add a data source
       items:
-       - name: Get started with a single data source
-         href: data-sources-single.md
        - name: Connect to Azure Data Lake Storage
          items:
           - name: Connect to Common Data Model tables

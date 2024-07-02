@@ -4,7 +4,7 @@ description: An overview of help resources to get started quickly.
 ms.reviewer: mhart
 ms.author: nikeller
 author: Nils-2m
-ms.date: 05/03/2024
+ms.date: 06/24/2024
 ms.topic: how-to
 ms.custom: bap-template
 ---
@@ -17,25 +17,27 @@ Customer Insights - Data can help you build a deeper understanding of your custo
 
 1. If you want to install Customer Insights - Data on an existing Dynamics 365 environment, visit [this page](..\journeys\setup.md) for instructions. If you don't have a paid license, you can sign up for a [free trial](trial-signup.md) or [purchase a license](paid-license.md).
 
-1. In most cases with global tenant admin permissions, to install Customer Insights - Data, you should create an environment in the Power Platform Admin Center and [follow these steps](..\journeys\setup.md). If you want to create an environment from the Customer Insights - Data application, you must be a global tenant admin and you can follow the steps in [Create an environment](create-environment.md). After the environment is created, the **Getting Started** screen displays.
+1. In most cases with global tenant admin permissions, to install Customer Insights - Data, you should create an environment in the Power Platform Admin Center and [follow these steps](..\journeys\setup.md). If you want to create an environment from the Customer Insights - Data application, you must be a global tenant admin and you can follow the steps in [Create an environment](create-environment.md). After the environment is created, the **Home** page displays.
 
-   :::image type="content" source="media/get-started.png" alt-text="Screenshot of the Getting Started screen with Insights in minutes.":::
+   :::image type="content" source="media/home-page.svg" alt-text="Screenshot of the Home screen.":::
 
 ## Step 2: Import data
 
-> [!TIP]
-> To quickly get started and have Customer Insights - Data automatically generate insights, upload your own data from a single CSV file. Go to [Get started using a single data source](data-sources-single.md).
-> [!INCLUDE [single-file-us-only](includes/single-file-us-only.md)]
+1. Select **Add data sources** on the **Home** page.
 
-1. To get started with data from multiple sources, select **Not now** on the **Getting started** screen. On the **Home** screen, change Get insights in mins to **Step-by-step guide**.
+1. Import your data. Choose between:
 
-   :::image type="content" source="media/home-step-by-step.png" alt-text="Screenshot of the Getting Started screen with Step-by-step guide selected.":::
+   - [Delta tables in Azure Data Lake](connect-delta-lake.md)
+   - [Azure Data Lake Storage, including Common Data Model](connect-common-data-model.md)
+   - [Microsoft Dataverse](connect-dataverse.md)
+   - [Azure Synapse Analytics (Preview)](connect-synapse.md)
+   - [Power Query connectors](connect-power-query.md).
 
-1. Import your data. Choose between [Azure Data Lake Storage, including Common Data Model](connect-common-data-model.md), [Azure Synapse Analytics](connect-synapse.md), [Microsoft Dataverse](connect-dataverse.md), [Delta tables in Azure Data Lake](connect-delta-lake.md) or  [Power Query connectors](connect-power-query.md).
+   For more information on these options, see [Data sources overview](data-sources.md)
 
 ## Step 3: Unify the data and set up relationships
 
-Run the data unification process to combine unified profiles. Unified profiles are the foundation to get insights and take action on the data. Specify relationships between the ingested tables and use enrichment features to add information to the profiles.
+To combine unified profiles, run the data unification process. Unified profiles are the foundation to get insights and take action on the data. Specify relationships between the ingested tables and use enrichment features to add information to the profiles.
 
 1. Run the [data unification process](data-unification.md) by identifying the [source fields](data-unification-map-tables.md), removing [duplicates](data-unification-duplicates.md), [matching conditions](data-unification-match-tables.md), and [unifying fields](data-unification-merge-tables.md).
 
