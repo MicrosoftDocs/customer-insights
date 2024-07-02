@@ -51,9 +51,9 @@ To request to enable the FLS-protected attributes, contact the support team and 
 
 Once you've been notified that the FLS is enabled, you can start using FLS-protected attributes in Customer Insights – Journeys.
 
-For more information, see [submit a support request](/dynamics365/field-service/field-service-get-help).
+For more information, see [Submit a support request](/dynamics365/field-service/field-service-get-help).
 
 ## More information
 
-- [Form and field level security](admin-users-licenses-roles.md#dont-modify-or-remove-marketing-service-users#form-and-field-level-security)
-- [Don't modify or remove marketing service users](admin-users-licenses-roles.md#dont-modify-or-remove-marketing-service-users).
+- [Form and field level security](admin-users-licenses-roles.md#form-and-field-level-security)
+- [Don't modify or remove marketing service users](admin-users-licenses-roles.md#dont-modify-or-remove-service-users).
