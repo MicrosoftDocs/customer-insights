@@ -1,6 +1,6 @@
 ---
-title: Overriding FLS Attributes in Dynamics Customer Insights
-description: Learn how to override FLS attributes in Dynamics Customer Insights - Journeys.
+title: Override FLS attributes in Dynamics 365 Customer Insights
+description: Learn how to override FLS attributes in Dynamics 365 Customer Insights - Journeys.
 ms.date: 06/02/2024
 ms.topic: article
 author: cbirkett
@@ -11,47 +11,45 @@ search.audienceType:
   - enduser
 ---
 
-# How FLS attributes are handled in Dynamics 365 Customer Insights – Journeys
+# Override FLS attributes in Dynamics 365 Customer Insights
 
-This is a  guide for customers who want to understand the impact of FLS-protected attributes in personalization, journey branching, and real-time segmentation.
+This article provides details about the impact of Field Level Security (FLS)-protected attributes in personalization, journey branching, and real-time segmentation.
 
-## What is FLS and how does it affect Customer Insights - Journeys?
-
-Field Level Security (FLS) is a backend feature that allows you to restrict access to certain fields on dataverse entities, such as contact, account, or lead. For example, you can use FLS to protect sensitive information like your Social Security number or salary from unauthorized users. FLS is configured by creating field security profiles and adding users or teams to them.
+FLS is a backend feature that allows you to restrict access to certain fields on dataverse entities such as contact, account, or lead. For example, you can use FLS to protect sensitive information, like your Social Security number or salary, from unauthorized users. FLS is configured by creating field security profiles and adding users or teams to them.
 
 By default, Customer Insights - Journeys prevents you from using FLS-protected attributes in the following scenarios:
 
-- Content personalization—You can't define dynamic text that uses FLS-protected attributes.
-- Journey personalization/branching—You can't use FLS-protected attributes in conditions for journey branching or personalization.
-- Real-time segmentation—You can't use FLS-protected attributes in filters or expressions for real-time segments.
+- Content personalization: You can't define dynamic text that uses FLS-protected attributes.
+- Journey personalization/branching: You can't use FLS-protected attributes in conditions for journey branching or personalization.
+- Real-time segmentation: You can't use FLS-protected attributes in filters or expressions for real-time segments.
 
-With Customer Insights – Journeys, using [Dataverse table data](/power-apps/maker/data-platform/entity-overview) you can create and send personalized messages to your customers and branch journeys to automate sending personalized messages to large real-time audience segments. However, this action also increases the risk of exposing sensitive data if everyone in your team can access and use FLS-protected fields in the messages. By default, Customer Insights – Journeys doesn't let everyone use FLS-protected fields in the messages to prevent privacy issues.
+Using [Dataverse table data](/power-apps/maker/data-platform/entity-overview) with Customer Insights – Journeys, you can create and send personalized messages to your customers and branch journeys to automate sending personalized messages to large real-time audience segments. However, doing so also increases the risk of exposing sensitive data if everyone in your team can access and use FLS-protected fields in the messages. By default, Customer Insights – Journeys doesn't let everyone use FLS-protected fields in the messages to prevent privacy issues.
 
-## What are the prerequisites of overriding FLS?
+## Prerequisites for overriding FLS
 
-Some customers might want to override the FLS limitation in CI-J and use FLS-protected attributes in personalization, journey branching, or real-time segmentation. This is possible with additional steps and considerations.
+You can override the FLS limitation and use FLS-protected attributes in personalization, journey branching, or real-time segmentation by following additional steps.
 
 Before you request to override FLS, you need to do the following:
 
-- Add all CI-J application/system users to the respective FLS profiles, so that these users have access to the FLS-protected attributes. You can find the names of the CI-J application users in [Manage user accounts, user licenses, and security roles](/ci-docs/journeys/admin-users-licenses-roles.md#form-and-field-level-security).
-- Understand and accept the change to your security model and sign off on it. After you add the Customer Insights – Journeys application users to the FLS profiles, all Dynamics 365 users who can publish journeys are able to access the FLS-protected attributes even if users aren't in the FLS profiles themselves. Customer Insights – Journeys doesn't impersonate the user who publishes the journey. Instead, Customer Insights – Journeys uses the application user.  
+1. Add all Customer Insights – Journeys application/system users to the respective FLS profiles, so that these users have access to the FLS-protected attributes. To find the names of the application users, refer to [Manage user accounts, user licenses, and security roles](/ci-docs/journeys/admin-users-licenses-roles.md#form-and-field-level-security).
+1. Understand the change to your security model and sign off on it. After you add the Customer Insights – Journeys application users to the FLS profiles, all Dynamics 365 users who can publish journeys are able to access the FLS-protected attributes, even if users aren't in the FLS profiles. Customer Insights – Journeys doesn't impersonate the user who publishes the journey. Instead, Customer Insights – Journeys uses the application user.  
 
-If you don't follow these steps, you might encounter serious issues, such as:
+If you don't follow these steps, you may encounter serious issues, such as:
 
-- Journeys/personalization not working, empty emails being sent, branching behaving wrongly, and journeys crashing completely.
-- You might violate your data privacy and compliance policies by exposing FLS-protected data to unauthorized users.
+- Journeys/personalization not working, empty emails being sent, branching behaving wrongly, and journeys crashing.
+- You may violate your data privacy and compliance policies by exposing FLS-protected data to unauthorized users.
 
-## How to override FLS?
+## Override FLS
 
-If you have completed the prerequisites and accepted the risks of overriding FLS, you can request to enable the FLS-protected attributes in Customer Insights – Journeys. It can be enabled for your organization by the support team.
+If you complete the prerequisites and accept the risks of overriding FLS, you can request to enable the FLS-protected attributes in Customer Insights – Journeys. To enable the attributes for your organization, contact your support team.
 
-To request to enable the FLS-protected attributes, you need to contact the support team and provide the following information:
+To request to enable the FLS-protected attributes, contact the support team and provide the following information:
 
 - Your org name.
-- A confirmation that you have added all Customer Insights – Journeys application/system users to the FLS profiles.
-- A confirmation that you understand and accept the change to your security model and the potential risks of overriding FLS.
+- Confirmation that you added all Customer Insights – Journeys application/system users to the FLS profiles.
+- Confirmation that you understand and accept the change to your security model and the potential risks of overriding FLS.
 
-You're notified when the FLS is enabled and you can start using FLS-protected attributes in Customer Insights – Journeys.
+Once you're notified that the FLS is enabled, you can start using FLS-protected attributes in Customer Insights – Journeys.
 
 For more information, see [submit a support request](/dynamics365/field-service/field-service-get-help).
 
