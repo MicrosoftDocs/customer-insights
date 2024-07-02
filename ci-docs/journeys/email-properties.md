@@ -1,7 +1,7 @@
 ---
 title: Set the sender, receiver, language and legal designation for a message
 description: Learn how to use the email settings provided on the Summary tab, including to and from options, language, and the legal designation in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/18/2023
+ms.date: 06/28/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -22,36 +22,6 @@ When you're designing an email message, use the **Summary** tab to set a few bas
 - View and edit the text-only version of your message.
 
 ![The Summary tab for emails.](media/email-summary-tab.png "The Summary tab for emails")
-
-<a name="designation"></a>
-
-## Set the legal designation to identify each message as either commercial or transactional
-
-Most of the messages you send using Dynamics 365 Customer Insights - Journeys will probably be commercial messages, which are bulk messages sent to many recipients and once. However, you can also use the solution to send transactional messages. Transactional messages must relate exclusively to a specific transaction between your organization and another individual or organization (such as a receipt, account statement, or consent request), and must not include advertisements or promotional content.
-
-Transactional messages are typically regulated differently from commercial messages. They are considered personal communications, not promotional communications, and therefore have different content and consent requirements. In Dynamics 365 Customer Insights - Journeys, the main practical different between transactional and commercial messages is that different validation rules apply. Specifically, commercial messages require a subscription-center link while transactional messages do not. Also, Customer Insights - Journeys manages consent independently for each of these two types of messages.
-
-By default, all new messages that you create will be commercial messages. To change the legal designation of a message:
-
-1. Open the message.
-1. Go to the **Summary** tab.
-1. Set the **Legal Designation** to **Commercial** or **Transactional**, as required.
-
-Take care not include promotional content in messages that you have set as transactional. It is your responsibility to be familiar with, and conform to, all relevant laws that apply in the countries/regions where you deliver commercial and transactional messages.
-
-Each [contact record](manage-customer-information.md#contacts) has two settings that establish that contact's consent for receiving email messages from your organization. You can find these consent settings for any contact by opening the relevant contact record, going to the **Details** tab and looking in the **Contact preferences** section, which includes the following two settings:
-
-- **Email**: This setting is among the standard fields for the contact record, and is included with nearly all Dynamics 365 applications. Contacts where this is set to **Do not allow** have indicated that do not want to receive any type of email from your organization, so Customer Insights - Journeys will send neither commercial nor transactional messages to these contacts.
-- **Bulk email**: This setting is added to the contact record when you install Customer Insights - Journeys. Contacts where this is set to **Do not allow** have indicated that do not want to receive commercial email from your organization, but they may still allow transactional messages. Each contact can enable or disable this option for themselves using any subscription center (all subscription centers provide a check box for controlling this).
-
-The following table shows the result of attempting to send a commercial or transactional email message to contacts with each combination of settings for these two options.
-
-| Email        | Bulk email   | Commercial email | Transaction email |
-|--------------|--------------|------------------|-------------------|
-| Allow        | Allow        | Sent             | Sent              |
-| Allow        | Do not allow | Not sent         | Sent              |
-| Do not allow | Allow        | Not sent         | Not sent          |
-| Do not allow | Do not allow | Not sent         | Not sent          |
 
 ## Set the email language
 
