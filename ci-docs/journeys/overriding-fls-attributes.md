@@ -4,7 +4,7 @@ description: Learn how to override FLS attributes in Dynamics 365 Customer Insig
 ms.date: 06/02/2024
 ms.topic: article
 author: cbirkett
-ms.author: cbirkett
+ms.author: colinbirkett
 search.audienceType: 
   - admin
   - customizer
@@ -31,7 +31,7 @@ You can override the FLS limitation and use FLS-protected attributes in personal
 
 Before you request to override FLS, complete these steps:
 
-1. Add all Customer Insights – Journeys application/system users to the respective FLS profiles, so that these users have access to the FLS-protected attributes. To find the names of the application users, refer to [Manage user accounts, user licenses, and security roles](/ci-docs/journeys/admin-users-licenses-roles.md#form-and-field-level-security).
+1. Add all Customer Insights – Journeys application/system users to the respective FLS profiles, so that these users have access to the FLS-protected attributes. To find the names of the application users, refer to [Manage user accounts, user licenses, and security roles](admin-users-licenses-roles.md#form-and-field-level-security).
 1. Understand the change to your security model and sign off on it. After you add the Customer Insights – Journeys application users to the FLS profiles, all Dynamics 365 users who can publish journeys are able to access the FLS-protected attributes, even if users aren't in the FLS profiles. Customer Insights – Journeys doesn't impersonate the user who publishes the journey. Instead, Customer Insights – Journeys uses the application user.  
 
 If you don't follow these steps, you may encounter serious issues, such as:
@@ -55,5 +55,5 @@ For more information, see [submit a support request](/dynamics365/field-serv
 
 ## More information
 
-- [Form and field level security](/ci-docs/journeys/admin-users-licenses-roles.md#dont-modify-or-remove-marketing-service-users#form-and-field-level-security)
-- [Don't modify or remove marketing service users](/ci-docs/journeys/admin-users-licenses-roles.md#dont-modify-or-remove-marketing-service-users).
+- [Form and field level security](admin-users-licenses-roles.md#dont-modify-or-remove-marketing-service-users#form-and-field-level-security)
+- [Don't modify or remove marketing service users](admin-users-licenses-roles.md#dont-modify-or-remove-marketing-service-users).
