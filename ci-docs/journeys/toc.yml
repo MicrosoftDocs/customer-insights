@@ -470,6 +470,8 @@
     items:
     - name: Use business units
       href: business-units.md
+    - name: Override FLS attributes
+      href: overriding-fls-attributes.md
   - name: Administration settings
     items:
     - name: Open the administration settings
