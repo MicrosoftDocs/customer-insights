@@ -2602,7 +2602,7 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "ci-docs/data/dat-sources-single.md",
+      "source_path": "ci-docs/data/data-sources-single.md",
       "redirect_url": "/dynamics365/customer-insights/data/data-sources",
       "redirect_document_id": false
     }
