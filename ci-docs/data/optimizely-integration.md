@@ -9,12 +9,6 @@ ms.reviewer: mhart
 ms.custom: bap-template
 ---
 
-<!-- EDITOR'S NOTES: 
-In line 52, please confirm the UI label. In the video, it's "Web tracking & personalization."
-In line 53, please confirm the UI label. In the video, it's "Advanced option - web personalization" and you don't select it; you just select "Set up" in the Optimizely tile.
-In line 78, is the URL a sample? The project ID seems to be "1234567890" and when I click the link, it asks to me sign in to Optimizely.
- -->
-
 # No-code web personalization using Optimizely (preview)
 
 [!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
@@ -49,8 +43,8 @@ Connect to Optimizely in either of the following ways.
 
 Going through the first run experience creates a connection to Optimizely and exports all segments. You can edit the export and remove segments as you prefer.
 
-1. In Customer Insights - Data, go to **Real time & Personalization**.
-1. Select **Advanced** and select **Setup on Optimizely**.
+1. In Customer Insights - Data, go to **Web tracking & personalization**.
+1. Select **Set up** in the Optimizely tile.
 1. Enter a name for the connection to Optimizely.
 1. Enter an Optimizely API key. Learn more at [Personal access token](https://docs.developers.optimizely.com/web-experimentation/docs/personal-access-token).
 1. Agree to the data privacy and compliance notice, and then select **Connect**.
@@ -75,7 +69,7 @@ Create a connection to Optimizely and export your segments manually. This connec
 
 1. In Customer Insights - Data, go to **Exports**.
 1. Create an export and choose the Optimizely connection you want to use. If you don't see a connection, create one or ask your administrator to create the connection and share it with you.
-1. Name your export and [provide the Optimizely Project ID](https://app.optimizely.com/v2/projects/1234567890/audiences).
+1. Name your export and provide the Optimizely Project ID.
 1. To export the segments to Optimizely right away, select **Save and Run**. You can also schedule the export to run on system refresh.
 
 ## Known limitations
