@@ -13,9 +13,9 @@ search.audienceType:
 
 # Override FLS attributes in Dynamics 365 Customer Insights
 
-This article provides details about the impact of Field Level Security (FLS)-protected attributes in personalization, journey branching, and real-time segmentation.
+This article provides details about the impact of Field Level Security (FLS)-protected attributes in personalization, journey branching, and real-time segmentation, and how to override the FLS attributes.
 
-FLS is a backend feature that allows you to restrict access to certain fields on dataverse entities such as contact, account, or lead. For example, you can use FLS to protect sensitive information, like your Social Security number or salary, from unauthorized users. FLS is configured by creating field security profiles and adding users or teams to them.
+FLS is a backend feature that allows you to restrict access to certain fields on dataverse entities such as contact, account, or lead. For example, you can use FLS to protect sensitive information from unauthorized users, like your Social Security number or salary. FLS is configured by creating field security profiles and adding users or teams to them.
 
 By default, Customer Insights - Journeys prevents you from using FLS-protected attributes in the following scenarios:
 
@@ -23,9 +23,9 @@ By default, Customer Insights - Journeys prevents you from using FLS-protected a
 - Journey personalization/branching: You can't use FLS-protected attributes in conditions for journey branching or personalization.
 - Real-time segmentation: You can't use FLS-protected attributes in filters or expressions for real-time segments.
 
-Using [Dataverse table data](/power-apps/maker/data-platform/entity-overview) with Customer Insights – Journeys, you can create and send personalized messages to your customers and branch journeys to automate sending personalized messages to large real-time audience segments. However, doing so also increases the risk of exposing sensitive data if everyone in your team can access and use FLS-protected fields in the messages. By default, Customer Insights – Journeys doesn't let everyone use FLS-protected fields in the messages to prevent privacy issues.
+Using [Dataverse table data](/power-apps/maker/data-platform/entity-overview) with Customer Insights – Journeys, you can create and send personalized messages to your customers and branch journeys to automate sending personalized messages to large real-time audience segments. However, doing so also increases the risk of exposing sensitive data if everyone in your team can access and use FLS-protected fields in the messages. By default, Customer Insights – Journeys doesn't let everyone use FLS-protected fields in the messages in order to prevent privacy issues.
 
-## Prerequisites for overriding FLS
+## Prerequisites to override FLS
 
 You can override the FLS limitation and use FLS-protected attributes in personalization, journey branching, or real-time segmentation by following additional steps.
 
