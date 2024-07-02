@@ -17,7 +17,7 @@ When customers interact with websites&mdash;for example, adding a product to a c
 
 Watch this brief video to learn more about real-time web personalization.
 
-:::video source="https://www.microsoft.com/en-us/videoplayer/embed/RW1hyhp":::
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RW1hyhp]
 
 > [!TIP]
 > Sign up to [request access to the preview version](https://forms.office.com/r/6NK6uj6f7f) of the real-time personalization features.
