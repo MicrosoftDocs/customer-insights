@@ -27,9 +27,9 @@ Using [Dataverse table data](/power-apps/maker/data-platform/entity-overview) wi
 
 ## Prerequisites to override FLS
 
-You can override the FLS limitation and use FLS-protected attributes in personalization, journey branching, or real-time segmentation by following additional steps.
+You can override the FLS limitation and use FLS-protected attributes in personalization, journey branching, or real-time segmentation by completing the following instructions.
 
-Before you request to override FLS, you need to do the following:
+Before you request to override FLS, complete these steps:
 
 1. Add all Customer Insights – Journeys application/system users to the respective FLS profiles, so that these users have access to the FLS-protected attributes. To find the names of the application users, refer to [Manage user accounts, user licenses, and security roles](/ci-docs/journeys/admin-users-licenses-roles.md#form-and-field-level-security).
 1. Understand the change to your security model and sign off on it. After you add the Customer Insights – Journeys application users to the FLS profiles, all Dynamics 365 users who can publish journeys are able to access the FLS-protected attributes, even if users aren't in the FLS profiles. Customer Insights – Journeys doesn't impersonate the user who publishes the journey. Instead, Customer Insights – Journeys uses the application user.  
@@ -49,7 +49,7 @@ To request to enable the FLS-protected attributes, contact the support team and 
 - Confirmation that you added all Customer Insights – Journeys application/system users to the FLS profiles.
 - Confirmation that you understand and accept the change to your security model and the potential risks of overriding FLS.
 
-Once you're notified that the FLS is enabled, you can start using FLS-protected attributes in Customer Insights – Journeys.
+Once you've been notified that the FLS is enabled, you can start using FLS-protected attributes in Customer Insights – Journeys.
 
 For more information, see [submit a support request](/dynamics365/field-service/field-service-get-help).
 
