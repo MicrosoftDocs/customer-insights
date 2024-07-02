@@ -1,7 +1,7 @@
 ---
 title: "What's new in Dynamics 365 Customer Insights - Data"
 description: "Information about new features, improvements, and bug fixes."
-ms.date: 05/29/2024
+ms.date: 06/27/2024
 ms.topic: conceptual
 author: m-hartmann
 ms.author: skumm
@@ -16,6 +16,45 @@ We roll out updates on a region-by-region basis. So certain regions might see fe
 
 > [!TIP]
 > To submit and vote on feature requests and product suggestions, go to the [Dynamics 365 Application Ideas portal](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights).
+
+## June 2024
+
+### General availability
+
+#### Unlimited application installs now in Customer Insights
+
+Limiting application installations creates unnecessary friction for customers wanting to install and use real-time journeys and Customer Insights – Data on their environments across different departments and geographies.
+
+To reduce this friction, we're removing the limitations on [application installations for real-time journeys and Customer Insights - Data](../journeys/setup.md). This enhancement enables you to install and use Customer Insights - Journeys (real-time journeys) and Customer Insights - Data across all your departments and locations. By removing these obstacles, we enable you to fully tap into the power of Customer Insights.
+
+- [Blog post](https://www.microsoft.com/dynamics-365/blog/it-professional/2024/06/18/announcing-unlimited-application-installs-in-dynamics-365-customer-insights/)
+
+### Public preview
+
+#### Elevate customer experiences in real time
+
+Customer Insights helps you collect web interactions in real time, enabling personalized experiences and a deeper understanding of your customers' needs and preferences.
+
+This capability includes the following features:
+
+**Real-time web tracking**: Ensure that your customer data is ingested in real time with a tracking script that can be added to your website. Capture high-intent signals such as "viewed pricing page," "added item to the cart," or "downloaded e-book" in real time.
+
+**Real-time unknown profiles**: Capture web data from all your visitors even if they're not authenticated and let the system automatically create unknown profiles in real time.
+
+**Real-time unknown-to-known**: Merge unknown profiles into known profiles in real time, so you can always have the 360-degree view of your customers.
+
+**Real-time web personalization**: Leverage our APIs to read your customer data, including segment memberships, web events, or demographic data in real time to personalize the web experience for your visitors.
+
+
+- [Release plan](/dynamics365/release-plan/2024wave1/customer-insights/dynamics365-customer-insights-data/elevate-customer-experiences-real-time)
+- [Docs](real-time-web-personalization-overview.md)
+
+#### Personalize omnichannel experiences with no code using Optimizely
+
+Customer Insights and Optimizely now unlock omnichannel personalization and experimentation capabilities, enabling marketers and citizen developers to personalize every customer touchpoint with no code or prior expertise required. By combining insights and segments from Customer Insights with Optimizely audiences, you can create experiences that are tailored to your customer's browsing activity, their loyalty, past engagement history, and other real-time signals. Moreover, you can continue the conversation or re-target your visitors by delivering the same consistent experience through customer journeys, based on which Optimizely treatment cohort the customer was part of.
+
+- [Release plan](/dynamics365/release-plan/2024wave1/customer-insights/dynamics365-customer-insights-data/personalize-omnichannel-experiences-no-code-using-optimizely)
+- [Docs](optimizely-integration.md)
 
 ## April/May 2024
 

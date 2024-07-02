@@ -1,7 +1,7 @@
 ---
 title: "Preview: Customer Insights - Journeys integration with Microsoft Fabric"
 description: Learn about how to integrate Customer Insights - Journeys with Microsoft Fabric.
-ms.date: 06/05/2024
+ms.date: 06/26/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -43,36 +43,6 @@ The following sections explain how to set up Power BI and link to Fabric.
 
     :::image type="content" source="media/set-workspace-settings.png" alt-text="Create your workspace as per your requirement." lightbox="media/set-workspace-settings.png":::
 
-### Link to Fabric from Power Apps
-
-> [!NOTE]
-> Learn more about prerequisites and review setup instructions: [Link your Dataverse environment to Microsoft Fabric and unlock deep insights](/power-apps/maker/data-platform/azure-synapse-link-view-in-fabric)
-
-1. Launch the [Power apps maker portal](https://make.preview.powerapps.com/).
-1. Choose the correct **environment** on the top right side.
-
-    > [!div class="mx-imgBorder"]
-    > ![Set your environment as per your requirement](media/set-your-environment.png "Set your environment as per your requirement")
-
-1. Select **Tables** on the left navigation pane, then select **Analyze** > **Link to Microsoft Fabric** on the command bar. You need to be a system administrator to link to Fabric.
- 
-    > [!div class="mx-imgBorder"]
-    > ![Select tables and start linking to Microsoft Fabric](media/link-to-microsoft-fabric.png "Select tables and start linking to Microsoft Fabric")
-
-1. If you're linking to Fabric for the first time, a wizard appears. You can launch Fabric with the same option in subsequent runs.
-    - The wizard validates your Fabric subscription settings the first time. If needed, the wizard asks you to create a **one-time connection** to Fabric within the same step.
-    - The wizard asks you to select an existing Fabric workspace or to create a new one. **Choose the workspace that you created in the previous section**.  
-    - When done, select **Create** in the wizard to create the workspace, create shortcuts, and to perform the initialization for the first time.
-
-    > [!div class="mx-imgBorder"]
-    > ![Review and create your wizard to start using workspace](media/create-a-wizard-for-workspace.png "Review and create your wizard to start using workspace")
-
-When complete, Fabric Lakehouse opens in a separate browser tab.
-
-It may take up to 60 minutes to update data in OneLake including the conversion to Delta parquet format. If your environment contains a lot of data, the initial load time might take longer. When you open Fabric Lakehouse, the links appear as **unidentified** until the initial sync is completed. Learn more: [Troubleshooting common issues](/power-apps/maker/data-platform/azure-synapse-link-view-in-fabric#troubleshooting-common-issues)
-
-The workspace you choose to link with Dataverse must be assigned to a premium capacity in the same region as your Dataverse environment. If you choose to create a new workspace, the system requires that you have access to a Power BI and Fabric premium capacity within the same region as your Dataverse environment. The wizard might detect missing prerequisites including insufficient capacity at the beginning.
-
 ### Create Fabric shortcuts for the Customer Insights - Journeys analytics folder (Public preview)
 
 1. Start by [opening Fabric](https://app.fabric.microsoft.com).
@@ -92,6 +62,9 @@ The workspace you choose to link with Dataverse must be assigned to a premium ca
 1. Choose the tables that you want to create a shortcut to. Each table is its own shortcut in the Lakehouse. Customer Insights - Journeys interaction data tables appear in the left menu under the **"msdynmkt_analytics"** folder. The Customer Insights - Journeys folder only lists the interaction types for which data has been generated up to that point. If you don't see all your Dataverse tables (CDS2 folder), you may need to configure your Dataverse environment. Use **Link to Fabric** to update the available tables.
 
     :::image type="content" source="media/link-to-fabric-through-shortcut.png" alt-text="Link to fabric through shortcut." lightbox="media/link-to-fabric-through-shortcut.png":::
+
+> [!NOTE]
+> If some of your Dataverse tables aren't visible in Fabric, use the **Link to Microsoft Fabric** feature in the PowerApps maker portal. Learn more about prerequisites and review the setup instructions: [Link your Dataverse environment to Microsoft Fabric and unlock deep insights](/power-apps/maker/data-platform/azure-synapse-link-view-in-fabric)
 
 ### Work with marketing interactions in Power BI
 

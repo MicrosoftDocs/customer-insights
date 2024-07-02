@@ -17,6 +17,8 @@ When customers interact with websites, they constantly provide signals about the
 
 Customer Insights - Data can update customer profiles in real time based on web signals. This capability helps you provide the most targeted and personalized experiences to your customers as they browse your web properties. Foster loyalty, increase engagement, enhance satisfaction, and drive higher conversion rates.
 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RW1hyhp]
+
 > [!TIP]
 > Sign up to [request access to the preview version](https://forms.office.com/r/6NK6uj6f7f) of the real-time personalization features.
 

@@ -1,7 +1,7 @@
 ---
 title: "Troubleshooting: Segments show incorrect member count"
 description: Troubleshoot issues related to segments showing an incorrect member count in Dynamics 365 Customer Insights - Journeys.
-ms.date: 03/04/2024
+ms.date: 06/26/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -46,7 +46,7 @@ When working with complex segments with multiple conditions or rules, reduce com
 
 Check if business unit scoping is enabled for the org. If enabled, real-time journeys will only return members from your business unit.
 
-- Real-time journeys enables business units by default. In outbound marketing, business units may or may not be turned on.
+- Real-time journeys enable business units by default. In outbound marketing, business units may or may not be turned on.
 - While outbound marketing allows every segment to include or not to include business units, in real-time journeys, either all segments have business units enabled or none of them have it.
 
 #### Step 4: Validate empty tables
@@ -65,20 +65,16 @@ To determine why a segment has more members than expected, try the following tro
 
 - Start from the complete segment and remove conditions and rules one by one. Run the segment after each change until it adds the expected member.
 - Check if your segment has any except clauses or exclusion segments and verify if the expected contacts are a part of it and aren't getting filtered out.
-- Once the rule which causes the member to get added is identified, verify if the data correlates to the output. For example if the rule says `firstname = 'Frank'`, the segment should only add contacts where `firstname = 'Frank'`.
+- Once the rule that causes the member to get added is identified, verify if the data correlates to the output. For example if the rule says `firstname = 'Frank'`, the segment should only add contacts where `firstname = 'Frank'`.
 
-#### Step 2: Possible join explosion
-
-There's a chance that there might be a join explosion occurring while adding multiple filters to a segment. This is an ongoing bug and will be fixed in an upcoming release.
-
-#### Step 3: Discrepancy with outbound marketing or Advanced Find members
+#### Step 2: Discrepancy with outbound marketing or Advanced Find members
 
 If you observe a discrepancy with outbound marketing or Advanced Find members, verify the following:
 
 - Verify if the relationships used are in the same order. An "account" entity being used in a segment is a relationship between "contact" and "account". It's different from applying filters directly on the "account" entity in Advanced Find.
 - Real-time journeys allow creating segments on contact and lead entities only. Verify that these are the primary entities used in outbound marketing or Advanced Find segments.
 
-#### Step 4: Validate that virtual fields aren't being used
+#### Step 3: Validate that virtual fields aren't being used
 
 Currently, virtual fields created in Dataverse in tables aren't supported by the segmentation feature.
 
@@ -91,5 +87,5 @@ If all the above conditions are met and if the expected contacts still don't mat
 - Discrepancy source: Advanced Find or outbound marketing
     - FetchXML for Advanced Find
     - Segment ID for outbound marketing
-- Sample ContactIds which should or shouldn't show up in the segment.
+- Sample ContactIds that should or shouldn't show up in the segment.
 - Attributes and the entities where the ContactId is causing the potential discrepancy.
