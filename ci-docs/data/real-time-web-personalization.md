@@ -17,7 +17,7 @@ Let Customer Insights - Data automatically create unknown profiles for unauthent
 
 Watch this brief video to learn more about real-time web personalization.
 
-:::video source="https://www.microsoft.com/en-us/videoplayer/embed/RW1hyhp":::
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RW1hyhp]
 
 ## Prerequisites
 
