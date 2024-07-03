@@ -26,7 +26,7 @@ Watch this brief video for an overview of the Optimizely integration with Custom
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RW1hyhp]
 
 > [!TIP]
-> Sign up to [request access to the preview version](https://forms.office.com/r/6NK6uj6f7f) of the real-time personalization features and [read the blog about the annoucement](https://cloudblogs.microsoft.com/dynamics365/?p=188733).
+> Sign up to [request access to the preview version](https://forms.office.com/r/6NK6uj6f7f) of the real-time personalization features and [read the blog about the announcement](https://cloudblogs.microsoft.com/dynamics365/?p=188733).
 
 ## Prerequisites
 
