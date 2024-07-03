@@ -197,9 +197,10 @@ Anyone in a shared group (same last name and address) gets a common cluster ID a
 
 The [CustomerId](data-unification.md#customer-id) field is a unique GUID value that is automatically generated for each unified customer profile. We recommend using this default logic. However, in rare circumstances you can specify the fields to use as inputs to generate the  CustomerId.
 
-1. On the **Customer data** step, select the **Keys** tab.
+1. Select the **Keys** tab.
 
 1. Hover on the **CustomerId** row and select **Configure**.
+
    :::image type="content" source="media/customize-stable-id.png" alt-text="Control to customize the ID generation.":::
 
 1. Select up to five fields that will comprise a stable, unique customer ID. Records that don’t match your configuration use a system-configured ID instead.
