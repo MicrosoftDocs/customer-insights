@@ -1,6 +1,6 @@
 ---
-title: How to use ALM in asset library
-description: Describes how to use ALM in the asset library in Dynamics 365 Customer Insights - Journeys.
+title: How to use ALM for digital assets
+description: Describes how to use ALM for digital assets in Dynamics 365 Customer Insights - Journeys.
 ms.date: 07/04/2024
 ms.topic: article
 author: colinbirkett
@@ -10,6 +10,10 @@ search.audienceType:
   - customizer
   - enduser
 ---
+
+# How to use ALM for digital assets
+
+Read this article to learn how to use ALM for digital assets.
 
 ## Move digital assets between environments
 
