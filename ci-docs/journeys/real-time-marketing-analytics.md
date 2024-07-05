@@ -58,19 +58,15 @@ Select any journey component to view near real-time operational analytics in the
 
     :::image type="content" source="media/real-time-marketing-channel-analytics.png" alt-text="Email channel analytics screenshot." lightbox="media/real-time-marketing-channel-analytics.png":::
 
-    To view delivery and interaction statistics, select the **Delivery and interaction details** link at the bottom of the channel analytics pane. Delivery and interaction details allow you to analyze delivery, engagement, and performance data for your email, text, or push notification messages. The **Delivery** tab provides details on messages sent, delivered, blocked, or bounced along with the respective reasons. The **Interactions** tab provides detailed data on customers that opened or clicked a message, as well as unsubscription interaction data. It's important to note that a message’s unique opens and clicks are calculated based on the journey run of a customer. This means that if the same customer enters the same journey multiple times and opens or clicks the same message each time, the system will record multiple unique opens or clicks. For example, if a customer clicks the same message in two different journey executions, two unique clicks will be recorded.
+    In the Overview section, you can monitor key performance indicators per channel message such as:
+    - **Delivery rate**: the percentage of email/text/custom channel messages delivered divided by the number of email/text/custom channel messages sent.
+    - **Open rate**: the percentage of unique email/push notification opens divided by the number of emails/push notifications delivered.
+    - **Click rate**: the percentage of unique email/text/push notification/custom channel clicks divided by the number of email/text/push notification/custom channel delivered.
+    - **Response rate**: the percentage of unique text message responses divided by the number of text messages sent.
+  
+  To view delivery and interaction statistics, select the **View details** link in the **Delivery funnel** or **Delivery issues** section on the channel analytics pane. Delivery and interaction details allow you to analyze delivery, engagement, and performance data for your email, text, push notification or custom channel messages. You can view deliverability details on messages sent, delivered, blocked, or bounced along with the respective reasons, as well as detailed data on customers that opened or clicked a message, as well as unsubscription interaction data. It's important to note that a message’s unique opens and clicks are calculated based on the journey run of a customer. This means that if the same customer enters the same journey multiple times and opens or clicks the same message each time, the system will record multiple unique opens or clicks. For example, if a customer clicks the same message in two different journey executions, two unique clicks will be recorded. Moreover, you can export up to 50,000 records of interaction data, search through data using the profile's email address, and access links to audience profiles that interacted with your email messages. Additionally, timestamps are reported according to the organization's timezone.
 
     :::image type="content" source="media/real-time-marketing-analytics-interactions.png" alt-text="Delivery and interactions details screenshot." lightbox="media/real-time-marketing-analytics-interactions.png":::
-  
-> [!IMPORTANT]
-> As of September 2023, several enhancements have been introduced in email analytics, including key performance indicators such as:
-> - **Delivery rate**: the percentage of emails delivered divided by the number of emails sent.
-> - **Open rate**: the percentage of unique email opens divided by the number of emails delivered.
-> - **Click rate**: the percentage of unique email clicks divided by the number of emails delivered.
->
-> In the delivery and interaction details, you can now export up to 50,000 records of interaction data, search through data using the profile's email address, and access links to audience profiles that interacted with your email messages. Additionally, timestamps are reported according to the organization's timezone.
-> 
-> While these enhancements initially apply to email analytics, they will be gradually rolled out to journey operational analytics and other channel analytics.
   
 - **AI optimization**: Near real-time data to help you evaluate how applying AI optimization has helped your engagement rate.
 
