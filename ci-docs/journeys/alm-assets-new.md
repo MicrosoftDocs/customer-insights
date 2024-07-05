@@ -31,17 +31,24 @@ To import or export digital assets, follow these steps:
 
 1. In your source Customer Insights application, click on the **Settings** gear on the top right corner.
 1. Click on **Advanced Settings**, a **Power App** page will open.
-1. Click on **Solutions** and select **New solution**.  
+![Power app page](media/alm-power-page.png)
+1. Click on **Solutions** and select **New solution**. 
+![New solution within power app](media/alm-new-solution.png)
 Choose a **Name**, select a **publisher**, and then click **Create**.
 1. After creating a new solution. Click on **Add existing** -> **more** -> **other** -> **file**.  
+![Other file for exporting digital assets](media/alm-add-existing.png)
 This will open all the files you have in your Digital Assets library.
 1. Select the files you want to export and click **Add**.
 1. Go back to **Solutions**, select the solution that you created and click **Export solution**.
-1. Click on **Publish**. This will take few minutes.
+1. Click on **Publish**.  
+![Publish solution](media/alm-publish.png)
+This will take few minutes.  
 1. Once completed, click **Next**.
 1. Select **Managed solution**, then click **Export**.  
-Managed solutions are ALM best practice and must be utilized for exporting. To learn more refer to [Solution concepts](https://learn.microsoft.com/en-us/power-platform/alm/solution-concepts-alm#managed-and-unmanaged-solutions)
-1. Click on **Download** in the pop up to download your files.
+Managed solutions are ALM best practice and must be utilized for exporting. To learn more refer to [Solution concepts](https://learn.microsoft.com/en-us/power-platform/alm/solution-concepts-alm#managed-and-unmanaged-solutions)  
+![Export solution](media/alm-export.png)
+1. Click on **Download** in the pop up to download your files.  
+![Download solution](media/alm-download.png)
 
 ### Step 2: Import your digital asset files to the target environment
 
@@ -50,7 +57,8 @@ You need to download a zip folder to import your digital asset files to the new 
 1. Go to your target Customer Insights environment.
 1. Click on **Advanced settings**.
 1. Click on **Solutions**.
-1. Click on **Import solution**.
+1. Click on **Import solution**.  
+![Import solution](media/alm-import.png)
 1. Browse and select the download zip file, then click **Next**.
 1. Click **Import**.  
 After the import is completed, you can see all your selected digital assets with their URLs referencing the target environment.
