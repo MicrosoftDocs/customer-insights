@@ -21,7 +21,7 @@ When you use multiple Dynamics 365 environments for your application lifecycle m
 
 You can now move digital assets between environments. Once you move your digital assets, all their references point to the target environment and your team can immediately use them.
 
-You can learn more about the copy and restore of environments as it’s described in [Copy or restore environments](https://learn.microsoft.com/en-us/dynamics365/customer-insights/journeys/copy-or-restore#copy-a-customer-insights---journeys-environment-to-another-environment).
+You can learn more about the copy and restore of environments as it’s described in [Copy or restore environments](/journeys/copy-or-restore.md#copy-a-customer-insights---journeys-environment-to-another-environment).
 
 ## Import/Export of digital assets files
 
@@ -45,7 +45,7 @@ This will open all the files you have in your Digital Assets library.
 This will take few minutes.  
 1. Once completed, click **Next**.
 1. Select **Managed solution**, then click **Export**.  
-Managed solutions are ALM best practice and must be utilized for exporting. To learn more refer to [Solution concepts](https://learn.microsoft.com/en-us/power-platform/alm/solution-concepts-alm#managed-and-unmanaged-solutions)  
+Managed solutions are ALM best practice and must be utilized for exporting. To learn more, see [Solution concepts](/power-platform/alm/solution-concepts-alm#managed-and-unmanaged-solutions).
 ![Export solution](media/alm-export.png)
 1. Click on **Download** in the pop up to download your files.  
 ![Download solution](media/alm-download.png)
