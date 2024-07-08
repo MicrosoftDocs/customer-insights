@@ -19,7 +19,7 @@ Read this article to learn how to use application lifecycle management (ALM) for
 
 When you use multiple Dynamics 365 environments for your application lifecycle management, ensure that you're migrating your production-ready digital assets between environments so your team can utilize them in your content.
 
-You can learn more about the copy and restore of environments as described in [Copy or restore environments](/journeys/copy-or-restore.md#copy-a-customer-insights---journeys-environment-to-another-environment).
+You can learn more about the copy and restore of environments as described in [Copy or restore environments](/dynamics365/customer-insights/journeys/copy-or-restore#copy-a-customer-insights---journeys-environment-to-another-environment).
 
 ## Import/Export of digital assets files
 
@@ -43,7 +43,7 @@ This opens all the files you have in your Digital Assets library.
 This takes few minutes.  
 1. Once completed, click **Next**.
 1. Select **Managed solution**, then click **Export**.  
-Managed solutions are ALM best practice and must be utilized for exporting. To learn more, see [Solution concepts](/power-platform/alm/solution-concepts-alm#managed-and-unmanaged-solutions).
+Managed solutions are ALM best practice and must be utilized for exporting. To learn more, see [solution concepts](/power-platform/alm/solution-concepts-alm#managed-and-unmanaged-solutions).
 ![Export solution](media/alm-export.png)
 1. Click on **Download** in the pop up to download your files.  
 ![Download solution](media/alm-download.png)
@@ -68,7 +68,7 @@ If you want to export emails that have references to Digital Assets files from o
 1. First, import/export your digital assets files to target environment.
 1. Next, export another solution from the source environment for emails.
 1. Import the solution to the new environment.  
-During the import, all links within emails will refer to the target environment you’re using. We’ll update the reference of the files that already exist in the target environment.
+During the import, all links within emails refer to the target environment you’re using. We’ll update the reference of the files that already exist in the target environment.
 
 If you export and then import a solution for emails without first exporting or importing a solution for digital assets files, all the links in your emails will be referring to the source environment. If you want to fix that:
 
