@@ -11,17 +11,15 @@ search.audienceType:
   - enduser
 ---
 
-# How to use ALM for digital assets
+# How to use Application Lifecycle Management for digital assets
 
-Read this article to learn how to use ALM for digital assets.
+Read this article to learn how to use application lifecycle management (ALM) for digital assets.
 
 ## Move digital assets between environments
 
-When you use multiple Dynamics 365 environments for your application lifecycle management, please ensure that you are migrating your production-ready digital assets between environments so your team can utilize them in your content.
+When you use multiple Dynamics 365 environments for your application lifecycle management, ensure that you're migrating your production-ready digital assets between environments so your team can utilize them in your content.
 
-You can now move digital assets between environments. Once you move your digital assets, all their references point to the target environment and your team can immediately use them.
-
-You can learn more about the copy and restore of environments as it’s described in [Copy or restore environments](/journeys/copy-or-restore.md#copy-a-customer-insights---journeys-environment-to-another-environment).
+You can learn more about the copy and restore of environments as described in [Copy or restore environments](/journeys/copy-or-restore.md#copy-a-customer-insights---journeys-environment-to-another-environment).
 
 ## Import/Export of digital assets files
 
@@ -30,19 +28,19 @@ To import or export digital assets, follow these steps:
 ### Step 1: Prepare and export your files
 
 1. In your source Customer Insights application, click on the **Settings** gear on the top right corner.
-1. Click on **Advanced Settings**, a **Power App** page will open.
+1. Click on **Advanced Settings**, a **Power App** page opens.
 ![Power app page](media/alm-power-page.png)
 1. Click on **Solutions** and select **New solution**. 
 ![New solution within power app](media/alm-new-solution.png)
 Choose a **Name**, select a **publisher**, and then click **Create**.
 1. After creating a new solution. Click on **Add existing** -> **more** -> **other** -> **file**.  
 ![Other file for exporting digital assets](media/alm-add-existing.png)
-This will open all the files you have in your Digital Assets library.
+This opens all the files you have in your Digital Assets library.
 1. Select the files you want to export and click **Add**.
 1. Go back to **Solutions**, select the solution that you created and click **Export solution**.
 1. Click on **Publish**.  
 ![Publish solution](media/alm-publish.png)
-This will take few minutes.  
+This takes few minutes.  
 1. Once completed, click **Next**.
 1. Select **Managed solution**, then click **Export**.  
 Managed solutions are ALM best practice and must be utilized for exporting. To learn more, see [Solution concepts](/power-platform/alm/solution-concepts-alm#managed-and-unmanaged-solutions).
@@ -68,7 +66,7 @@ After the import is completed, you can see all your selected digital assets with
 If you want to export emails that have references to Digital Assets files from one environment to another, and you want to have the links pointing to the new org, it’s important that you:
 
 1. First, import/export your digital assets files to target environment.
-1. Following this, export another solution from the source environment for emails.
+1. Next, export another solution from the source environment for emails.
 1. Import the solution to the new environment.  
 During the import, all links within emails will refer to the target environment you’re using. We’ll update the reference of the files that already exist in the target environment.
 
@@ -91,8 +89,8 @@ No. You have first to move the Digital Asset files then the email.
 
 *Given that digital assets are a dependency on files, would the digital assets automatically be added to the solution if I add the email to the solution?*
 
-No. Moving emails that have digital assets will not move the digital assets files. It’s important to move first the Digital Asset files then the emails.
+No. Moving emails that have digital assets won't move the digital assets files. It’s important to move first the Digital Asset files then the emails.
 
 *Can I delete digital assets from source environment after migration?*
 
-It’s not possible to delete files from managed solutions. The reason is to ensure that your solution doesn’t have references to the deleted assets that will leave you with orphan dependency (e.g., emails that has a reference to digital asset). If you wish to delete digital assets, you have to delete the managed solution.
+It’s not possible to delete files from managed solutions. The reason is to ensure that your solution doesn’t have references to the deleted assets that leave you with orphan dependency (for example, emails that have a reference to digital asset). If you wish to delete digital assets, you have to delete the managed solution.
