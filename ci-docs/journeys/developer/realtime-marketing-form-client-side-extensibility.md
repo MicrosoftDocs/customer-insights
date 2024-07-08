@@ -115,6 +115,15 @@ Waiting for `DOMContentLoaded` can be inconvenient, especially for scenarios lik
 </html>
 ```
 
+For event registration forms you also do need to pass the readable event id; the modified syntax looks like
+```JS
+d365mktforms.createForm(
+  'formId',
+  'https://{server-api}/api/v1.0/orgs/{organizationid}/eventmanagement',
+  'https://{server-load}/{organizationid}/digitalassets/forms/{msdynmkt_marketingformid}',
+  { 'data-readable-event-id': 'My_Test_Event_123_replace_with_actual_readable_event_id' })
+```
+
 ### Injecting a marketing form into a React application
 
 You can use marketing forms within React applications. The form loader exposes the `d365mktforms.FormPlaceholder` React component, which you can inject into your application.
@@ -138,6 +147,16 @@ You can use marketing forms within React applications. The form loader exposes t
     </script>
   </body>
 </html>
+```
+
+For event registration forms you also do need to pass the readable event id; the modified syntax looks like (introduced in 6.1 version of marketing)
+```JS
+      root.render(React.createElement(d365mktforms.FormPlaceholder, {
+        formId:'{msdynmkt_marketingformid}',
+        formApiBaseUrl:'https://{server-api}/api/v1.0/orgs/{organizationid}/eventmanagement',
+        formUrl:'https://{server-load}/{organizationid}/digitalassets/forms/{msdynmkt_marketingformid}',
+        readableEventId:'My_Test_Event_123_replace_with_actual_readable_event_id'
+      }, null));
 ```
 
 > [!NOTE]
