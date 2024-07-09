@@ -132,7 +132,7 @@ After deleting the environment, you can reinstall a new Customer Insights - Data
 Deleting a Customer Insights - Data environment doesn't remove dependencies from the Dataverse environment. However, if you want to remove all dependencies to Customer Insights - Data, go through the following steps.
 
 > [!NOTE]
-> You must be a global administrator on the Dataverse environment. It can take a couple of hours for the dependencies removal to take effect.
+> It can take a couple of hours for the dependencies removal to take effect.
 
 1. Go to [Power Apps](https://make.powerapps.com).
 1. Select the environment from the environment picker.

@@ -1,7 +1,7 @@
 ---
 title: "Create a new environment"
 description: Steps to create environments in Dynamics 365 Customer Insights.
-ms.date: 01/08/2024
+ms.date: 07/08/2024
 ms.reviewer: mhart
 ms.topic: how-to
 author: kishorem-ms
@@ -11,9 +11,7 @@ ms.custom: bap-template
 
 # Create a new environment
 
-After [your organization purchased a license for Dynamics 365 Customer Insights](paid-license.md), the global administrator of the Microsoft 365 tenant receives an email that invites them to create an environment.
-
-After the first environment is created, the global administrator of the Microsoft 365 tenant can [add users from their organization as administrators](permissions.md). These administrators can then manage users and environments.
+After [your organization purchased a license for Dynamics 365 Customer Insights](paid-license.md), the administrator of the Microsoft 365 tenant receives an email that invites them to create an environment and [add users from their organization as administrators](permissions.md). These administrators can then manage users and Customer Insights environments.
 
 > [!IMPORTANT]
 > In most cases, installing Customer Insights - Data should be done through [Power Platform admin center](../journeys/setup.md).
@@ -30,7 +28,7 @@ Use the environments creation experience in Customer Insights - Data for the fol
 
 To install Customer Insights - Data on an existing Dataverse environment:
 
-- A global administrator role is set up in the Dataverse environment.
+- A user [role that allows the creation of Dataverse environments](/power-platform/admin/create-environment).
 - Verify if the Dataverse environment is associated to certain security groups and make sure you're added to those security groups.
 - A Dataverse license is assigned to you to get Read-Write access mode. Unlicensed administrators get Administrative access mode only.
 - Customer Insights - Data isn't already installed. [Learn how to delete an existing environment](manage-environments.md#delete-an-existing-environment).
