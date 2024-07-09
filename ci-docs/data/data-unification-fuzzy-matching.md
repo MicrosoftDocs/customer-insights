@@ -1,7 +1,7 @@
 ---
 title: "Precision and fuzzy matching"
 description: "Understand the concepts behind fuzzy matching when unifying data in Customer Insights - Data."
-ms.date: 12/07/2023
+ms.date: 06/26/2024
 ms.reviewer: v-wendysmith
 ms.topic: conceptual
 author: Scott-Stabbert
@@ -32,9 +32,9 @@ The basic calculation to determine the edit distance score is: (Base string leng
 
 |Base string |Comparison string |Score |
 |----|-----|------|
-|Jacqueline |Jaclyne |(10-5)/10=.5 |
+|Jacqueline |Jaclyne |(10-4)/10=.6 |
 |fred@gmail.com |fred@gmal.cm |(14-2) / 14 = 0.857 |
-|franklin |frank |(8-2) / 8 = 0.75 |
+|franklin |frank |(8-3) / 8 = 0.625 |
 
 ## Normalization and fuzzy matching
 

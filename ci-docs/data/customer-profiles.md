@@ -38,7 +38,7 @@ Customer Insights - Data supports two types of profile types:
 
 - Known customers: Profiles that have a known identifier, such as emailId, phone number, or loyaltyId, and are created through the [data unification process](data-unification.md).
 
-- Unknown customers: Profiles that don't have a known identifier, but are identified through an unknown identifier such as cookieId. The [web tracking script](real-time-web-personalization.md) automatically creates these profiles when an unauthenticated customer visits your website. Unlike known profiles, unknown profiles expire after seven days of inactivity unless [converted to a known profile](real-time-web-personalization.md#authenticate-unknown-customers-and-merge-them-to-known). Unknown profiles are free so that they don't count against your profiles used for billing.
+- Unknown customers: Profiles that don't have a known identifier, but are identified through an unknown identifier such as cookieId. The [web tracking script](real-time-web-personalization.md) automatically creates these profiles when an unauthenticated customer visits your website. Unlike known profiles, unknown profiles expire after seven days of inactivity unless [converted to a known profile](real-time-web-personalization.md). Unknown profiles are free so that they don't count against your profiles used for billing.
 
 ## Search for customers
 

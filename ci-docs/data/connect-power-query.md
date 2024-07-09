@@ -1,7 +1,7 @@
 ---
 title: "Connect to a Power Query data source"
 description: "Ingest data through a Power Query connector."
-ms.date: 03/06/2024
+ms.date: 07/04/2024
 ms.reviewer: v-wendysmith
 ms.topic: how-to
 author: joytaylor
@@ -11,7 +11,9 @@ ms.custom: bap-template
 
 # Connect to a Power Query data source
 
-[Power Query](/power-query/power-query-what-is-power-query) offers a variety of connectors to ingest data, most of which are supported by Dynamics 365 Customer Insights. In the [Power Query connector reference](/power-query/connectors/), connectors with a checkmark in the **Customer Insights (Dataflows)** column you can use to import data to Customer Insights - Data. Review the documentation of a specific connector to learn more about its prerequisites, [query limitations](/power-query/power-query-online-limits), and other details.
+[Power Query](/power-query/power-query-what-is-power-query) offers various connectors to ingest data, most of which Dynamics 365 Customer Insights supports. In the [Power Query connector reference](/power-query/connectors/), connectors with a checkmark in the **Customer Insights (Dataflows)** column you can use to import data to Customer Insights - Data. Review the documentation of a specific connector to learn more about its prerequisites, [query limitations](/power-query/power-query-online-limits), and other details.
+
+Power Query has data size and performance limitations. It makes copies of data in the Dataverse managed data lake in the CSV format so data synchronization takes longer as opposed to other data source connections.
 
 To securely connect data in a private network, Power Query supports the use of [virtual network data gateways (preview)](/data-integration/vnet/data-gateway-power-platform-dataflows).
 
@@ -37,7 +39,7 @@ To securely connect data in a private network, Power Query supports the use of [
 
    :::image type="content" source="media/data-manager-configure-edit-queries.png" alt-text="Edit queries dialog":::
 
-1. Transform your data. Select a table to edit or transform. Use the options in the Power Query window to apply transformations. Each transformation is listed under **Applied steps**. Power Query provides numerous [pre-built transformation](/power-query/power-query-what-is-power-query#transformations) options.
+1. Transform your data. Select a table to edit or transform. To apply transformations, use the options in the Power Query window. Each transformation is listed under **Applied steps**. Power Query provides numerous [prebuilt transformation](/power-query/power-query-what-is-power-query#transformations) options.
 
    > [!IMPORTANT]
    > We recommend you use the following transformations:
@@ -45,7 +47,7 @@ To securely connect data in a private network, Power Query supports the use of [
    > - If you're ingesting data from a CSV file, the first row often contains headers. Go to **Transform** and select **Use first row as headers**.
    > - Ensure the data type is set appropriately and matches the data. For example, for date fields, select a date type.
 
-1. To add additional tables to your data source in the **Edit queries** dialog, go to **Home** and select **Get data**. Repeat steps 5-10 until you have added all tables for this data source. If you have a database that includes multiple datasets, each dataset is its own table.
+1. To add more tables to your data source in the **Edit queries** dialog, go to **Home** and select **Get data**. Repeat steps 5-10 until you add all tables for this data source. If you have a database that includes multiple datasets, each dataset is its own table.
 
 1. Select whether you want to refresh the data source manually or automatically. To refresh automatically, set the time frame. 
 
@@ -64,15 +66,37 @@ Loading data can take time. After a successful refresh, the ingested data can be
 
 Ingesting data from on-premises data sources is supported based on Microsoft Power Platform dataflows (PPDFs). You can enable dataflows in Customer Insights - Data by [providing the Microsoft Dataverse environment URL](create-environment.md) when setting up the environment.
 
-Data sources that are created after associating a Dataverse environment with Customer Insights - Data use [Power Platform dataflows](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365) by default. Dataflows support on-premises connectivity using the data gateway. You can remove and recreate data sources that existed before a Dataverse environment was associated [using on-premises data gateways](/data-integration/gateway/service-gateway-app).
+Data sources that are created after associating a Dataverse environment with Customer Insights - Data use [Power Platform dataflows](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365) by default. [Dataflows support on-premises connectivity using the data gateway](/data-integration/gateway/service-gateway-onprem-indepth). You can remove and recreate data sources that existed before a Dataverse environment was associated [using on-premises data gateways](/data-integration/gateway/service-gateway-app).
 
-Data gateways from an existing Power BI or Power Apps environment will be visible and you can reuse them in Customer Insights if the data gateway and the Customer Insights environment are in the same Azure Region. The data sources page shows links to go to the Microsoft Power Platform environment where you can view and configure on-premises data gateways.
+Data gateways from an existing Power BI or Power Apps environment are visible and you can reuse them in Customer Insights if the data gateway and the Customer Insights environment are in the same Azure Region. The data sources page shows links to go to the Microsoft Power Platform environment where you can view and configure on-premises data gateways.
+
+### Best practices and troubleshooting
+
+Because an on-premises data gateway is in organization's network, Microsoft can't check its health. The following recommendations can help address gateway timeouts when importing data to Customer Insights:
+
+- [Monitor and optimize on-premises data gateway performance](/data-integration/gateway/service-gateway-performance) and follow the [on-premises data gateway sizing guide](/power-bi/guidance/gateway-onprem-sizing).
+
+- [Separate the ingestion and transformation dataflow](/power-query/dataflows/best-practices-developing-complex-dataflows#split-data-transformation-dataflows-from-stagingextraction-dataflows). Separation of dataflows for ingestion and transformation is helpful when dealing with multiple queries of slower data sources in one dataflow or multiple dataflows querying the same data sources.
+
+- [Separate the entities into multiple dataflows](/power-query/dataflows/best-practices-reusing-dataflows#separate-entities-in-multiple-dataflows).
+
+- [Choose the right connector and filter early](/power-query/best-practices?source=recommendations#choose-the-right-connector).
+
+- Make sure all on-premises data gateway nodes are healthy and configured at decent network latency between the nodes and data source for SQL instances.
+
+- Use a scalable data gateway cluster if you expect heavy data requests.
+
+- Ensure the data source is scaled out appropriately and the resource utilization on the source isn't abnormally high.  
+
+- Consider partitioning large tables into smaller tables.
+
+- Consider hosting the data source and data gateway in the same geographical region.
+
+- Optimize the data source query and indexes. Properly indexed and partitioned data can be accessed more quickly and efficiently, leading to better query and dataflow performance.
 
 > [!IMPORTANT]
 > Update your gateways to the latest version. You can install an update and reconfigure a gateway from a prompt shown on the gateway screen directly or [download the latest version](https://powerapps.microsoft.com/downloads/). If you don't use the latest gateway version, the dataflow refresh fails with error messages like **The keyword isn't supported: configuration properties. Parameter name: keyword**.
 >
-> Make sure that the gateway VM is sized appropriately. [Power BI recommends that you start with a machine](/power-bi/guidance/gateway-onprem-sizing) with at least 8 CPU cores, 8 GB of RAM, and multiple Gigabit network adapters. You can then [measure a typical gateway workload by logging CPU and memory system counters](/data-integration/gateway/service-gateway-performance).
-> 
 > Errors with on-premises data gateways are often caused by configuration issues. For more information about troubleshooting data gateways, see [Troubleshoot the on-premises data gateway](/data-integration/gateway/service-gateway-tshoot).
 
 ## Edit Power Query data sources
@@ -116,7 +140,7 @@ The user performing this action must have a *Dataverse Administrator* role.
 
 ## Update Power Query schedules to system refresh schedule
  
-Customer Insights - Data is aligning Power Query separate refresh schedules with the system refresh schedule. To ensure that Customer Insights - Data reflects current data, remove your Power Query refresh schedules so that these data sources refresh as part of the system refresh. If your Power Query data source shows **Completed with warnings** on the **Data sources** page, your data source contains a separate refresh schedule. After successfully removing the separate schedule and a system refresh, the status changes to **Completed**.
+Customer Insights - Data is aligning Power Query separate refresh schedules with the system refresh schedule. To ensure that Customer Insights - Data reflects current data, remove your Power Query refresh schedules so that these data sources refresh as part of the system refresh. If your Power Query data source shows **Completed with warnings** on the **Data sources** page, your data source contains a separate refresh schedule. Remove the separate schedule. After a system refresh, the status changes to **Completed**.
 
 > [!IMPORTANT]
 > The data source refresh time is added to the total time for a system refresh. We recommend you [view your Power Query run durations](#view-power-query-run-durations) and then change the [system refresh schedule](schedule-refresh.md) if needed. For example, a Power Query source might take an average of 30 minutes to refresh. Therefore, we recommended you update the system refresh schedule to start 30 minutes earlier to recieve results at a simaliar time.
