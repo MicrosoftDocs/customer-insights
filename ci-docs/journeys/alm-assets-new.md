@@ -33,7 +33,7 @@ To import or export digital assets, follow these steps:
 1. Click on **solutions** and select **new solution**.
 ![New solution within power app](media/alm-new-solution.png)
 Choose a **name**, select a **publisher**, and then click **create**.
-1. After creating a new solution. Click on **add existing** > **more** > **other** > **file**.  
+1. After creating a new solution, click on **add existing** > **more** > **other** > **file**.  
 ![Other file for exporting digital assets](media/alm-add-existing.png)
 This opens all the files you have in your Digital Assets library.
 1. Select the files you want to export and click **add**.
