@@ -1,7 +1,7 @@
 ---
 title: Extend Customer Insights - Journeys marketing forms using code
 description: Extend Customer Insights - Journeys marketing forms with JavaScript to apply custom business logic in Dynamics 365 Customer Insights - Journeys.
-ms.date: 06/21/2023
+ms.date: 07/09/2024
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
@@ -115,7 +115,7 @@ Waiting for `DOMContentLoaded` can be inconvenient, especially for scenarios lik
 </html>
 ```
 
-For event registration forms you also do need to pass the readable event id; the modified syntax looks like
+You must also pass the readable event ID for the event registration forms. The modified syntax is as follows:
 ```JS
 d365mktforms.createForm(
   'formId',
@@ -149,7 +149,7 @@ You can use marketing forms within React applications. The form loader exposes t
 </html>
 ```
 
-For event registration forms you also do need to pass the readable event id; the modified syntax looks like (introduced in 6.1 version of marketing)
+You must also pass the readable event ID for the event registration forms. The modified syntax (introduced in Marketing version 6.1) is as follows:
 ```JS
       root.render(React.createElement(d365mktforms.FormPlaceholder, {
         formId:'{msdynmkt_marketingformid}',
