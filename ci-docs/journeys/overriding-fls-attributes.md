@@ -27,17 +27,17 @@ Using [dataverse table data](/power-apps/maker/data-platform/entity-overview) wi
 
 ## Prerequisites to override FLS
 
-You can override the FLS limitation and use FLS-protected attributes in personalization, journey branching, or real-time segmentation. Note that this override can only be enabled by the product team.
+You can override the FLS limitation and use FLS-protected attributes in personalization, journey branching, or real-time segmentation. This override is enabled by the product team.
 
 Before you request to override FLS, complete these steps:
 
 1. Identify all application/system users who should have access to FLS protected attributes and add them to the respective FLS profiles. You can find the details of security roles, refer to [manage user accounts, user licenses, and security roles](admin-users-licenses-roles.md#form-and-field-level-security).
 
-1. Ensure that journey publishing is allowed only for FLS-enabled users. This is to prevent accidental exposure of sensitive information by unauthorized users.
+1. Ensure that journey publishing is allowed only for FLS-enabled users. This step prevents accidental exposure of sensitive information by unauthorized users.
 
-1. Review the details of how FLS works and the following information with the personnel/teams in your company who are tasked with ensuring security & privacy and get their sign-off:
+1. Review the details of how FLS works with the personnel tasked with ensuring security and privacy in your company. Sign off on the following information:
 
-    After the FLS override is in place, all journeys will be able to access the FLS-protected attributes even if they are published by users who are not in the FLS profiles themselves. This is because Journeys runs in the application user context and not in the context of the publishing user.
+    After the FLS override is in place, all journeys will be able to access the FLS-protected attributes even if they're published by users who aren't in the FLS profiles themselves. This is because Journeys runs in the application user context and not in the context of the publishing user.
 
 If you don't follow these steps, you may encounter serious issues, such as:
 
@@ -53,10 +53,10 @@ To request to enable the FLS-protected attributes, contact the support team and 
 - Your org name.
 - Confirmation that you added all Customer Insights – Journeys application/system users to the FLS profiles.
 - Confirmation that you understand and accept the change to your security model and the potential risks of overriding FLS.
-- Include this confirmation statement:
-    *Please enable FLS-Override for the above Org(s). We have completed all pre-requisite steps and required security/privacy reviews. Our company understands and accepts the risks associated with this change to our security model.*
+- Include the following confirmation statement:
+    *Please enable FLS-Override for the above org(s). We have completed all prerequisite steps and required security/privacy reviews. Our company understands and accepts the risks associated with this change to our security model.*
 
-Once you've been notified that the FLS is enabled, you can start using FLS-protected attributes in Customer Insights – Journeys.
+Once you're notified that the FLS is enabled, you can start using FLS-protected attributes in Customer Insights – Journeys.
 
 For more information, see [submit a support request](/dynamics365/field-service/field-service-get-help).
 
