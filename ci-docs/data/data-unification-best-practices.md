@@ -1,7 +1,7 @@
 ---
 title: "Data unification best practices"
 description: "Learn about the concepts and best practices when unifying data in Customer Insights - Data."
-ms.date: 12/07/2023
+ms.date: 07/09/2024
 ms.reviewer: v-wendysmith
 ms.topic: conceptual
 author: Scott-Stabbert
@@ -13,33 +13,33 @@ ms.custom: bap-template
 
 When you set up rules to unify your data into a customer profile, consider these best practices:
 
-- **Avoid creating too many rules**. Too many rules provide diminishing returns but increase processing time.
+- [**Avoid creating too many rules**](#unification-performance). Too many rules provide diminishing returns but increase processing time.
 
-- **Add rules progressively and track the results**. Remove rules that don’t improve the match result.
+- [**Add rules progressively and track the results**](#unification-performance). Remove rules that don’t improve the match result.
 
-- **Deduplicate each table** so that every customer is represented in a single row.
+- [**Deduplicate](#deduplication) each table** so that every customer is represented in a single row.
 
-- **Use normalization to standardize variations** in how data was entered such as Street vs. St vs. St. vs. st.
+- **Use [normalization](#normalization) to standardize variations** in how data was entered such as Street vs. St vs. St. vs. st.
 
-- **Use fuzzy matching to correct typos and errors** in how data was entered such as bob@contoso.com and bob@contoso.cm.
+- **Use [fuzzy matching](#fuzzy-matching) to correct typos and errors** in how data was entered such as bob@contoso.com and bob@contoso.cm.
 
-- **Narrow the scope of matches with exact match**. Make sure every rule with fuzzy conditions has at least 1 exact match condition.
+- **Narrow the scope of matches with [exact match](#exact-match)**. Make sure every rule with fuzzy conditions has at least one exact match condition.
 
-- **Don’t match columns that contain heavily repeated data**. Make sure fuzzy-matched columns don’t have values repeated frequently, such as a form’s default value of "Firstname".
+- **Don’t match columns that contain heavily repeated data**. Make sure fuzzy-matched columns don’t have values repeated frequently, such as a form’s default value of "Firstname."
 
 ## Unification performance
 
-Each rule takes time to run. Patterns such as comparing every table to every other table using every rule pattern makes your unification plan take hours longer to run. It also returns few if any additional matches over a plan that compares each table to a base table.  
+Each rule takes time to run. Patterns such as comparing every table to every other table using every rule pattern makes your unification plan take hours longer to run. It also returns few if any more matches over a plan that compares each table to a base table.  
 
 The best approach is to start with a basic set of rules you know are needed, such as comparing each table to your primary table. Your primary table should be the table with the most complete and accurate data. This table should be ordered at the top in the Matching rules unification step.  
 
 Progressively add several rules and see how long the changes take to run, and if your results improve. Go to **Settings** > **System** > **Status** and select Match to see how long Match took for each unification run.
 
-View the rule statistics on the Deduplication and Match pages to see if the number of Unique records changes. If a new rule matches some records, and the unique record count doesn't change, then those matches were already identified by a previous rule.
+View the rule statistics on the Deduplication and Match pages to see if the number of Unique records changes. If a new rule matches some records, and the unique record count doesn't change, then a previous rule identified those matches.
 
 ## Deduplication
 
-Use deduplication rules to remove duplicate customer records within a table so that each customer is represented by a single row in each table. A good rule identifies a unique customer.
+Use deduplication rules to remove duplicate customer records within a table so that a single row in each table represents each customer. A good rule identifies a unique customer.
 
 In this simple example, records 1, 2 and 3 share either an email or phone, and represent the same person.
 
@@ -62,9 +62,9 @@ You decide the number of rules, and the conditions that uniquely identify your c
 
 ## Winner and alternate records
 
-Once rules have been run and duplicate records have been identified, the deduplication process selects a "Winner row." The nonwinner rows are called "Alternate rows." Alternate rows are used in the Matching rules unification step to match records from other tables to the winner row. Rows are matched against the data in the alternate rows in addition to the winner row.
+Once rules are run and duplicate records are identified, the deduplication process selects a "Winner row." The nonwinner rows are called "Alternate rows." Alternate rows are used in the Matching rules unification step to match records from other tables to the winner row. Rows are matched against the data in the alternate rows in addition to the winner row.
 
-Once you have added a rule to a table, you can configure which row to select as the winner row through **Merge preferences**. Merge preferences are set per table. No matter what merge policy is selected, if there's a tie for a winner row, then first row in the data order is used as the tie breaker.
+Once you add a rule to a table, you can configure which row to select as the winner row through **Merge preferences**. Merge preferences are set per table. No matter what merge policy is selected, if there's a tie for a winner row, then first row in the data order is used as the tie breaker.
 
 ## Normalization
 
@@ -77,11 +77,11 @@ The normalized data is only used for comparison purposes to match customer recor
 | ------------------- | ---------------------- |
 | Numerals            | Converts Unicode representations of numbers to the number.<br>Examples: ❽ and Ⅷ are both normalized to the number 8.<br>Note: The symbols must be encoded in Unicode Point Format.  |
 | Symbols             | Removes symbols and special characters.<br>Examples: !?"#$%&'( )+,.-_/:;<=>@^_\~{}`[ ]     |
-| Text to lower case  | Converts upper case characters to lower case. <br>Example: ‘THIS Is aN EXamplE’ is converted to 'this is an example’   |
+| Text to lower case  | Converts upper case characters to lower case. <br>Example: "THIS Is aN EXamplE" is converted to "this is an example"   |
 | Type – Phone        | Converts phones in various formats to digits, and accounts for variations in how country codes and extensions are presented. <br>Example: +01 425.555.1212 = 1 (425) 555-1212  |
 | Type - Name         | Converts over 500 common name variations and titles. <br>Examples: "debby" -> "deborah" "prof" and "professor" -> "Prof." |
 | Type - Address      | Converts common parts of addresses <br>Examples: "street" -> "st" and "northwest" -> "nw"  |
-| Type - Organization | Removes around 50 company name ‘noise words’ such as "co," "corp," "corporation," and "ltd."  |
+| Type - Organization | Removes around 50 company name "noise words" such as "co," "corp," "corporation," and "ltd."  |
 | Unicode to ASCII    | Converts Unicode characters to their ASCII letter equivalent <br>Example: The characters 'à,' 'á,' 'â,' 'À,' 'Á,' 'Â,' 'Ã,' 'Ä,' 'Ⓐ,' and 'Ａ' are all converted to 'a.'  |
 | Whitespace          | Removes all white space         |
 | Alias mapping       | Allows you to upload a custom list of string pairs that can then be used to indicate strings that should always be considered an exact match. <br>Use alias mapping when you have specific data examples you think should match, and aren't matched using one of the other normalization patterns. <br>Example: Scott and Scooter, or IBM and International Business Machines. |
@@ -91,23 +91,23 @@ The normalized data is only used for comparison purposes to match customer recor
 
 Use precision to determine how close two strings should be to be considered a match. The default precision setting requires an exact match. Any other value enables fuzzy matching for that condition.
 
-Precision can be set to low (30% match), medium (60% match), and high (80% match).  Or you can customize and set the precision in 1% increments.
+Precision can be set to low (30% match), medium (60% match), and high (80% match). Or you can customize and set the precision in 1% increments.
 
 ### Exact match conditions
 
-The exact match conditions are run first to obtain a smaller set of values to fuzzy match. To be effective, the exact matching conditions should have a reasonable degree of uniqueness. For example, if all your customers live in the same country, then having an exact match on country would not help narrow the scope.
+The exact match conditions are run first to obtain a smaller set of values to fuzzy match. To be effective, the exact matching conditions should have a reasonable degree of uniqueness. For example, if all your customers live in the same country, then having an exact match on country wouldn't help narrow the scope.
 
 Columns like full name, email, phone, or address fields have good uniqueness and are great columns to use as an exact match. 
 
-Ensure the column you use for an exact match condition don’t have any values that are repeated frequently, such as a default value of ‘Firstname’ captured by a form. Customer insights can profile data columns to provide insight into top repeating values. You can enable data profiling on Azure Data Lake (using Common Data Model or Delta format) connections and Synapse. Data profile is run when the data source is next refreshed. For more information, go to Data profiling.
+Ensure the column you use for an exact match condition don’t have any values that are repeated frequently, such as a default value of "Firstname" captured by a form. Customer insights can profile data columns to provide insight into top repeating values. You can enable data profiling on Azure Data Lake (using Common Data Model or Delta format) connections and Synapse. Data profile is run when the data source is next refreshed. For more information, go to Data profiling.
 
 ## Fuzzy matching
 
 Use fuzzy matching to match strings that are close but aren’t exact because of typos or other small variations. Use fuzzy matching strategically as it slows down processing and can result in timeouts. Make sure at least one exact match condition in any rule that has fuzzy conditions.  
 
-Fuzzy matching is not intended to capture name variations like Suzzie and Suzanne. These are better captured with the Normalize pattern **Type: Name** or the custom **Alias matching** where customers can enter their own list of name variations they want to consider as matches.
+Fuzzy matching isn't intended to capture name variations like Suzzie and Suzanne. These variations are better captured with the Normalization pattern **Type: Name** or the custom **Alias matching** where customers can enter their own list of name variations they want to consider as matches.
 
-You can add conditions to a rule, such as matching FirstName and Phone. Conditions within a given rule are "AND" conditions; every condition must match for the rows to match. But separate rules are "OR" conditions. If rows aren't matched by Rule 1, then they can be matched by Rule 2.
+You can add conditions to a rule, such as matching FirstName and Phone. Conditions within a given rule are "AND" conditions; every condition must match for the rows to match. But separate rules are "OR" conditions. If Rule 1 doesn't match rows, then the rows are compared to Rule 2.
 
 > [!NOTE]
 > Only string data type columns can use fuzzy matching. For columns with other data types such as integer, double, or datetime, the precision field is set to exact match and is read only.

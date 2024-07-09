@@ -73,7 +73,7 @@ The warning next to a table name means that no match rule is defined for a match
      - **Unicode to ASCII**: Converts unicode notation to ASCII characters. */u00B2* becomes *2*.
      - **Whitespace**: Removes all spaces. *Hello   World* becomes *HelloWorld*.
 
-   - **Precision**: Set the level of precision to apply for this condition. [Precision is used with fuzzy matching](data-unification-fuzzy-matching.md), and determines how close two strings need to be in order to be considered a match.
+   - **Precision**: Set the level of precision to apply for this condition. [Precision is used for exact match and fuzzy matching](data-unification-best-practices.md), and determines how close two strings need to be in order to be considered a match.
      - **Basic**: Choose from *Low (30%)*, *Medium (60%)*, *High (80%)*, and *Exact (100%)*. Select **Exact** to only match records that match 100 percent.
      - **Custom**: Set a percentage that records need to match. The system will only match records passing this threshold.
 
