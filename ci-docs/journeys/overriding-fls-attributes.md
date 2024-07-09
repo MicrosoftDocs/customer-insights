@@ -23,7 +23,7 @@ By default, Customer Insights - Journeys prevents you from using FLS-protected a
 - Journey personalization/branching: You can't use FLS-protected attributes in conditions for journey branching or personalization.
 - Real-time segmentation: You can't use FLS-protected attributes in filters or expressions for real-time segments.
 
-Using [Dataverse table data](/power-apps/maker/data-platform/entity-overview) with Customer Insights – Journeys, you can create and send personalized messages to your customers and branch journeys to automate sending personalized messages to large real-time audience segments. However, doing so also increases the risk of exposing sensitive data if everyone in your team can access and use FLS-protected fields in the messages. By default, Customer Insights – Journeys doesn't let everyone use FLS-protected fields in the messages in order to prevent privacy issues.
+Using [dataverse table data](/power-apps/maker/data-platform/entity-overview) with Customer Insights – Journeys, you can create and send personalized messages to your customers and branch journeys to automate sending personalized messages to large real-time audience segments. However, doing so also increases the risk of exposing sensitive data if everyone in your team can access and use FLS-protected fields in the messages. By default, Customer Insights – Journeys doesn't let everyone use FLS-protected fields in the messages in order to prevent privacy issues.
 
 ## Prerequisites to override FLS
 
@@ -31,7 +31,7 @@ You can override the FLS limitation and use FLS-protected attributes in personal
 
 Before you request to override FLS, complete these steps:
 
-1. Identify all application/system users who should have access to FLS protected attributes and add them to the respective FLS profiles. You can find the details of security roles, refer to [Manage user accounts, user licenses, and security roles](admin-users-licenses-roles.md#form-and-field-level-security).
+1. Identify all application/system users who should have access to FLS protected attributes and add them to the respective FLS profiles. You can find the details of security roles, refer to [manage user accounts, user licenses, and security roles](admin-users-licenses-roles.md#form-and-field-level-security).
 
 1. Ensure that journey publishing is allowed only for FLS-enabled users. This is to prevent accidental exposure of sensitive information by unauthorized users.
 
@@ -58,7 +58,7 @@ To request to enable the FLS-protected attributes, contact the support team and 
 
 Once you've been notified that the FLS is enabled, you can start using FLS-protected attributes in Customer Insights – Journeys.
 
-For more information, see [Submit a support request](/dynamics365/field-service/field-service-get-help).
+For more information, see [submit a support request](/dynamics365/field-service/field-service-get-help).
 
 ## More information
 
