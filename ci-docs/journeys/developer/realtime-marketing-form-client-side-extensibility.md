@@ -1,7 +1,7 @@
 ---
 title: Extend Customer Insights - Journeys marketing forms using code
 description: Extend Customer Insights - Journeys marketing forms with JavaScript to apply custom business logic in Dynamics 365 Customer Insights - Journeys.
-ms.date: 06/21/2023
+ms.date: 07/09/2024
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
@@ -115,6 +115,15 @@ Waiting for `DOMContentLoaded` can be inconvenient, especially for scenarios lik
 </html>
 ```
 
+You must also pass the readable event ID for the event registration forms. The modified syntax is as follows:
+```JS
+d365mktforms.createForm(
+  'formId',
+  'https://{server-api}/api/v1.0/orgs/{organizationid}/eventmanagement',
+  'https://{server-load}/{organizationid}/digitalassets/forms/{msdynmkt_marketingformid}',
+  { 'data-readable-event-id': 'My_Test_Event_123_replace_with_actual_readable_event_id' })
+```
+
 ### Injecting a marketing form into a React application
 
 You can use marketing forms within React applications. The form loader exposes the `d365mktforms.FormPlaceholder` React component, which you can inject into your application.
@@ -138,6 +147,16 @@ You can use marketing forms within React applications. The form loader exposes t
     </script>
   </body>
 </html>
+```
+
+You must also pass the readable event ID for the event registration forms. The modified syntax (introduced in Marketing version 6.1) is as follows:
+```JS
+      root.render(React.createElement(d365mktforms.FormPlaceholder, {
+        formId:'{msdynmkt_marketingformid}',
+        formApiBaseUrl:'https://{server-api}/api/v1.0/orgs/{organizationid}/eventmanagement',
+        formUrl:'https://{server-load}/{organizationid}/digitalassets/forms/{msdynmkt_marketingformid}',
+        readableEventId:'My_Test_Event_123_replace_with_actual_readable_event_id'
+      }, null));
 ```
 
 > [!NOTE]
