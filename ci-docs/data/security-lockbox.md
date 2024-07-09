@@ -20,6 +20,6 @@ Dynamics 365 Customer Insights - Data uses the Power Platform Customer Lockbox c
 For more information about Customer Lockbox, see the [summary](/power-platform/admin/about-lockbox#summary) of Power Platform Customer Lockbox. The article also describes the [workflow](/power-platform/admin/about-lockbox#workflow) and the required [setup](/power-platform/admin/about-lockbox#enable-the-lockbox-policy) to enable Customer Lockbox.
 
 > [!IMPORTANT]
-> Global administrators for Power Platform or Power Platform administrators can approve Customer Lockbox requests issued for Customer Insights - Data.
+> Power Platform administrators can approve Customer Lockbox requests issued for Customer Insights - Data.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
