@@ -1,7 +1,7 @@
 ---
 title: Override FLS attributes in Dynamics 365 Customer Insights
 description: Learn how to override FLS attributes in Dynamics 365 Customer Insights - Journeys.
-ms.date: 06/02/2024
+ms.date: 07/10/2024
 ms.topic: article
 author: colinbirkett
 ms.author: colinbirkett
