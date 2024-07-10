@@ -1,7 +1,7 @@
 ---
 title: Plan, publicize, and collect registrations for events
 description: An overview of event-management features (including planning, logistics, sponsors, speakers, promotion, and registration) in  Dynamics 365 Customer Insights - Journeys.
-ms.date: 12/21/2023
+ms.date: 07/10/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -31,30 +31,6 @@ To create, view, and edit your events and all event-related records, go to the *
 
 Use other parts of the **Events** work area to work with specific record types that relate to event planning, such as logistics, sessions, attendees, sponsors, and more. Depending on what you are doing at the time, you might access these types of records when working in the parent event record, or you could go to the area dedicated to a specific record type to work with that type of record only, or work across events.
 
-Dynamics 365 Customer Insights - Journeys offers two solutions for event management: outbound marketing and real-time journeys.
-
-## When to use Customer Insights - Journeys and when to use outbound marketing for event management
-
-Customer Insights - Journeys contains a subset of outbound event management features plus several improvements. The following table compares the Customer Insights - Journeys and outbound marketing event management features.
-
-|     Feature     |     Outbound marketing    |     Customer Insights - Journeys    |
-|---|---|---|
-|     Single session event    |     [Yes](set-up-event-outbound.md)    |     [Yes](set-up-event.md)    |
-|     Multi-session event          |     [Yes](set-up-event-outbound.md#manage-event-sessions-and-speakers)    |     [Yes](set-up-event.md)    |
-|     Session-level registration          |     [Yes](set-up-event-outbound.md#manage-event-sessions-and-speakers)    |     [Yes](real-time-journeys-event-session.md)    |
-|     Recurring event    |     [Yes](event-recurring-outbound.md)    |     Planned    |
-|     Event level templates    |     [Yes](event-templates-outbound.md)    |     Planned    |
-|     Sessions, session tracks, speaker management    |     [Yes](set-up-event-outbound.md)    |     [Yes](set-up-event.md)    |
-|     Venue management    |     [Yes](set-up-event-outbound.md#set-up-the-event-venue)    |     [Yes](set-up-event.md#set-up-the-event-venue)    |
-|     Tracking sponsors    |     [Yes](manage-event-sponsorships-outbound.md)    |     [Yes](manage-event-sponsorships.md)    |
-|     Creating Teams meetings/live events/webinars    |     [Yes](teams-webinar-outbound.md)    |     [Yes](teams-webinar.md)    |
-|     Support for On24 and other generic webinar providers      |     [Yes](set-up-webinar-outbound.md)    |     Planned    |
-|     Using marketing forms for registrations    |     [Yes](event-forms-outbound.md)    |     [Yes](real-time-marketing-form-create.md)   |
-|     Event portal landing page    |    [Yes](set-up-event-portal-outbound.md)    |    Planned    |                     
-|     Waitlist    |     [Yes](event-waitlist-outbound.md)    |     Planned    |
-|     Payments    |     [Yes](event-payment-gateway-outbound.md)    |     Planned    |
-|     Lead entity registration    |     [Yes](set-up-event-outbound.md#the-website-and-form-tab)    |     Planned    |
-|     Custom registration fields    |     [Yes](custom-registration-fields-outbound.md)    |     Planned    |
-|     Set registrations end date    |    Yes   |    Planned    |
+Dynamics 365 Customer Insights - Journeys offers two solutions for event management: outbound marketing and real-time journeys. Learn more: [Transition event management](transition-walkthrough-events.md)
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
