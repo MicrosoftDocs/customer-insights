@@ -15,6 +15,9 @@ search.audienceType:
 
 When you're done designing and previewing your email, you're ready to start sending it. First, you need to check it for errors. Then, once it passes the error check, you must go live to activate it and make it available on the marketing services. Finally, set up a customer journey to establish the target segment, delivery schedule, and follow-up actions.
 
+> [!IMPORTANT]
+> To build an approval process in real-time journeys, see [Journey and email approval process in Customer Insights - Journeys](https://community.dynamics.com/blogs/post/?postid=e2f9169d-eef7-ee11-a73d-000d3ae2664e)
+
 <a name="error-check"></a>
 
 ## Required elements: How to pass the error check

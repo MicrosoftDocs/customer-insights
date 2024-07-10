@@ -14,11 +14,11 @@ search.audienceType:
 [!INCLUDE [consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
-> This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
+> This article only applies to [outbound marketing](/dynamics365/marketing/user-guide). To build an approval process in real-time journeys, see [Journey and email approval process in Customer Insights - Journeys](https://community.dynamics.com/blogs/post/?postid=e2f9169d-eef7-ee11-a73d-000d3ae2664e)
 
 Dynamics 365 Customer Insights - Journeys provides an infrastructure with extensibility features that offer new possibilities for developers, and one way to take advantage of this new extensibility is to create an approvals feature, possibly including integration with Power Automate.
 
-This topic outlines one way that you could develop an approvals feature for Customer Insights - Journeys. The feature described here would enable organizations to implement an approval workflow in which most users can't make some types of important entities (such as emails, customer journeys, or segments) **Go live** right away. Instead, an approver must inspect each record and decide whether to allow it to **Go live**, or whether more work is needed. The approver is typically an administrator or manager who is identified as an approver in the system.
+This article outlines one way that you could develop an approvals feature for Customer Insights - Journeys. The feature described here would enable organizations to implement an approval workflow in which most users can't make some types of important entities (such as emails, customer journeys, or segments) **Go live** right away. Instead, an approver must inspect each record and decide whether to allow it to **Go live**, or whether more work is needed. The approver is typically an administrator or manager who is identified as an approver in the system.
 
 > [!IMPORTANT]
 > The approval feature described here is intended to support a collaborative workflow among colleagues and helps prevent accidentally going live with an entity that is not yet ready. We recommend that you also develop plug-ins that prevent users from going live from any state that isn't approved and also prevent users from editing fields on the records that are in the approval-required, approved, or live state.
@@ -31,9 +31,9 @@ This topic outlines one way that you could develop an approvals feature for Cust
 
 ## The approval process
 
-The customizations outlined in this topic will help you design and implement an approval workflow that works as described below:
+The customizations outlined in this article help you design and implement an approval workflow that works as described below:
 
-1. Standard users (non-approvers who we will call Marketers) no longer see a **Go live** button on entity forms where approvals are enabled. Instead, this is replaced by a **Request approval** button on the command bar. These entities use a custom collection of Status reason values, which are used to track the approval status of each record. Records requiring approval begin with a Status reason of **Approval required**.
+1. Standard users (non-approvers who we call Marketers) no longer see a **Go live** button on entity forms where approvals are enabled. Instead, this is replaced by a **Request approval** button on the command bar. These entities use a custom collection of Status reason values, which are used to track the approval status of each record. Records requiring approval begin with a Status reason of **Approval required**.
 
 1. When the marketer has finished creating a new record (such as an email design), they select **Send for approval**, which checks that the entity is valid and triggers the following changes:
    - The Status reason for this record changes to **Approval requested**.
@@ -60,9 +60,9 @@ The following functions are added inside the Customer Insights - Journeys soluti
 The only limitations that remain to customize the Customer Insights - Journeys solution are:
 
 1. New states between transient state (Going live and Stopping) and fix stage are ignored.
-2. If you want to go directly into **Live** state, without passing through **Going live** state, make sure the entity values are not changed.
-3. Do not remove any of the existing states.
-4. When an entity enters into an inactive state, it cannot be reactivated.
+2. If you want to go directly into **Live** state, without passing through **Going live** state, make sure the entity values aren't changed.
+3. Don't remove any of the existing states.
+4. When an entity enters into an inactive state, it can't be reactivated.
 
 ## Implementation
 
@@ -97,17 +97,17 @@ To make our solution to work, we need to create three custom ribbon buttons, as 
 |Reject| - Be an Approver <br/> - Be in Approval-required state| Move the entity back to the previous state (use the `msdyncrm_rstorestatuscode` field to retrieve).|
 |Ask approval| - Be a Marketer <br/> - Be in draft, error, or stopped state| Store the actual state of the entity in the `msdyncrm_restorestatuscode` field, run a validation check on the entity, and if the entity is valid move the entity to the **Approval requested** state.|
 
-We must remove the possibility for the marketer to enter the **live editable** state. This is important because when a request for approval comes from a draft, error, or stopped state, and the approver decides to reject the changes, the changes are kept and it's up to the marketer to make new ones. This logic can't be applied to the live-editable state because if the approver rejects a live-editable record, it will revert back to live. If we were to keep the changes, the user could be confused because what they see in the form will be different from what is saved in our services. 
+We must remove the possibility for the marketer to enter the **live editable** state. This is important because when a request for approval comes from a draft, error, or stopped state, and the approver decides to reject the changes, the changes are kept and it's up to the marketer to make new ones. This logic can't be applied to the live-editable state because if the approver rejects a live-editable record, it reverts back to live. If we were to keep the changes, the user could be confused because what they see in the form will be different from what is saved in our services. 
 
 To prevent this problem, we should revert the changes proposed by the marketer. If the entity isn't strongly customized, we suggest achieving this by introducing an extra field inside the entity and use this field to serialize the entity when a record enters the live-editable state. 
 
-For this scope, we introduce a new extensibility point **MsDynCrmMkt.ExtensibilityCallback.liveEditablePreAction**. If we create an event on load of the form, named as above, this code will be called when the record enters a live-editable state. The deserialization can be done both inside the action of the Reject ribbon or inside a plug-in. We strongly suggest the second approach because it gives better control of the typing and is compatible with Power Automate integration.
+For this scope, we introduce a new extensibility point **MsDynCrmMkt.ExtensibilityCallback.liveEditablePreAction**. If we create an event on load of the form, named as above, this code is called when the record enters a live-editable state. The deserialization can be done both inside the action of the Reject ribbon or inside a plug-in. We strongly suggest the second approach because it gives better control of the typing and is compatible with Power Automate integration.
 
 ### Step 3: Leverage extensibility points
 
-For our example, we will need to use two of the extensibility points mentioned above. Both should be added as an event on load on the main form of the customer journey inside the new solution created before.
+For our example, we need to use two of the extensibility points mentioned above. Both should be added as an event on load on the main form of the customer journey inside the new solution created before.
 
-- **MsDynCrmMkt.ExtensibilityCallback.canGoLive**: This function, if defined, is used to decide when to show the **Go live** button. For our example, we will need to check that the entity is in draft, error, stop state and the logged-in user is a marketer, or we are in the approved state. 
+- **MsDynCrmMkt.ExtensibilityCallback.canGoLive**: This function, if defined, is used to decide when to show the **Go live** button. For our example, we need to check that the entity is in draft, error, stop state and the logged-in user is a marketer, or we are in the approved state. 
 - **MsDynCrmMkt.ExtensibilityCallback.customUpdateFormControls**: This function, if defined, is executed after the form is fully loaded. In our specific case, we can use it to unlock the fields we want to make editable for the marketers.
 
 ### Step 4: Create two system views

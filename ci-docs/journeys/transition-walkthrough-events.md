@@ -37,11 +37,31 @@ The one thing that changes with real-time journeys events is the publishing of e
 
 With real-time journeys events, the Power Pages dependency changes and only the registration form is provided. Registration forms can be either self-hosted or embedded into a website. This allows you to create the online presence you require for events using your technology of choice while capturing event registrations into Customer Insights - Journeys. Your technology of choice can include Power Pages (as it did with outbound marketing) if so desired, but you need to create the necessary pages for the event.
 
-<!--## Relevant upcoming features
-
-The features listed below may be of interest as you transition from outbound marketing to real-time journeys. These features provide parity, equivalent, or better functionality than what was available in outbound marketing.
--->
 > [!TIP]
 > If you have questions or comments, visit the [Outbound to real-time transition community forum](https://community.dynamics.com/forums/thread/?partialUrl=Outbound-to-Real-Time-Transition)
+
+## When to use real-time journeys and when to use outbound marketing for event management
+
+Real-time journeys contains a subset of outbound event management features plus several improvements. The following table compares the real-time journeys and outbound marketing event management features.
+
+|     Feature     |     Outbound marketing    |    Real-time journeys    |
+|---|---|---|
+|     Single session event    |     [Yes](set-up-event-outbound.md)    |     [Yes](set-up-event.md)    |
+|     Multi-session event          |     [Yes](set-up-event-outbound.md#manage-event-sessions-and-speakers)    |     [Yes](set-up-event.md)    |
+|     Session-level registration          |     [Yes](set-up-event-outbound.md#manage-event-sessions-and-speakers)    |     [Yes](real-time-journeys-event-session.md)    |
+|     Recurring event    |     [Yes](event-recurring-outbound.md)    |     Planned    |
+|     Event level templates    |     [Yes](event-templates-outbound.md)    |     Planned    |
+|     Sessions, session tracks, speaker management    |     [Yes](set-up-event-outbound.md)    |     [Yes](set-up-event.md)    |
+|     Venue management    |     [Yes](set-up-event-outbound.md#set-up-the-event-venue)    |     [Yes](set-up-event.md#set-up-the-event-venue)    |
+|     Tracking sponsors    |     [Yes](manage-event-sponsorships-outbound.md)    |     [Yes](manage-event-sponsorships.md)    |
+|     Creating Teams meetings/live events/webinars    |     [Yes](teams-webinar-outbound.md)    |     [Yes](teams-webinar.md)    |
+|     Support for On24 and other generic webinar providers      |     [Yes](set-up-webinar-outbound.md)    |     Planned    |
+|     Using marketing forms for registrations    |     [Yes](event-forms-outbound.md)    |     [Yes](real-time-marketing-form-create.md)   |
+|     Event portal landing page    |    [Yes](set-up-event-portal-outbound.md)    |    Planned    |                     
+|     Waitlist    |     [Yes](event-waitlist-outbound.md)    |     Planned    |
+|     Payments    |     [Yes](event-payment-gateway-outbound.md)    |     Planned    |
+|     Lead entity registration    |     [Yes](set-up-event-outbound.md#the-website-and-form-tab)    |     Planned    |
+|     Custom registration fields    |     [Yes](custom-registration-fields-outbound.md)    |     Planned    |
+|     Set registrations end date    |    Yes   |    Planned    |
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
