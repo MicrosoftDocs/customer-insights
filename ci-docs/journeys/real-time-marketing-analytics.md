@@ -1,7 +1,7 @@
 ---
 title: Access and interpret analytics
 description: How to access and interpret Customer Insights - Journeys analytics in Dynamics 365 Customer Insights - Journeys.
-ms.date: 04/08/2024
+ms.date: 07/10/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -13,7 +13,7 @@ search.audienceType:
 
 # Access and interpret analytics
 
-Customer Insights - Journeys's dashboards and cross-journey insights show metrics, views, and insights summarized across single or multiple journeys, providing you with a deep understanding of journey, channel, and content performance. The built-in dashboards focus on measuring delivery, engagement and journey goal attainment, so you can fine-tune the effectiveness of your journeys, channels, and content.
+Customer Insights - Journeys's dashboards and cross-journey insights show metrics, views, and insights summarized across single or multiple journeys, providing a deep understanding of journey, channel, and content performance. The built-in dashboards focus on measuring delivery, engagement, and journey goal attainment so that you can fine-tune the effectiveness of your journeys, channels, and content.
 
 ## Customer Insights - Journeys analytics overview
 
@@ -29,7 +29,7 @@ With Customer Insights - Journeys analytics, you can:
 
 Get a comprehensive view of how a contact has engaged with your journeys in Customer Insights - Journeys, including all past email sends, opens, clicks, form submissions, and more. Better understand your audience's behavior and interests, make informed decisions based on past engagement, and tailor your marketing efforts to their needs and preferences. To view contact insights, go to **Real-time journeys** > **Audience** > **Contacts**, select a contact record, and then open its **Insights** tab.
 
-The following insights categories are provided:
+The following insight categories are provided:
 
 - **Overview**: View a chart of the engagement interactions and a summary of the most important KPIs for each channel for the selected contact.
 - **Email insights**: View complete details of email interactions for the selected contact, including a list of all messages sent to them, plus lists of all opens, clicks, bounces, and more. 
@@ -46,11 +46,11 @@ Just like with Contact insights, you can access a complete overview of your sele
 
 ## Journey operational analytics
 
-Evaluate journey performance in near real time using built-in operational analytics. The Sankey view in the designer helps you understand the user flow through the journey, highlighting which branches are working well.
+Evaluate journey performance in near real-time using built-in operational analytics. The Sankey view in the designer helps you understand the user flow through the journey, highlighting which branches are working well.
 
 Select any journey component to view near real-time operational analytics in the right pane, including:
 
-- **Goal analytics**: If a goal has been defined a target set, you can view how the journey is progressing toward its goal and if it has met the goal.
+- **Goal analytics**: If a goal has been defined as a target set, you can view how the journey is progressing toward its goal and if it has met the goal.
 
     :::image type="content" source="media/real-time-marketing-goal-analytics.png" alt-text="Goal analytics screenshot." lightbox="media/real-time-marketing-goal-analytics.png":::
 
@@ -58,13 +58,13 @@ Select any journey component to view near real-time operational analytics in the
 
     :::image type="content" source="media/real-time-marketing-channel-analytics.png" alt-text="Email channel analytics screenshot." lightbox="media/real-time-marketing-channel-analytics.png":::
 
-    In the Overview section, you can monitor key performance indicators per channel message such as:
-    - **Delivery rate**: the percentage of email/text/custom channel messages delivered divided by the number of email/text/custom channel messages sent.
-    - **Open rate**: the percentage of unique email/push notification opens divided by the number of emails/push notifications delivered.
-    - **Click rate**: the percentage of unique email/text/push notification/custom channel clicks divided by the number of email/text/push notification/custom channel delivered.
-    - **Response rate**: the percentage of unique text message responses divided by the number of text messages sent.
+In the Overview section, you can monitor key performance indicators per channel message such as:
+    - **Delivery rate**: The percentage of email, text, or custom channel messages delivered divided by the number of email, text, or custom channel messages sent.
+    - **Open rate**: The percentage of unique email or push notification opens divided by the number of emails or push notifications delivered.
+    - **Click rate**: The percentage of unique email, text, or push notification/custom channel clicks divided by the number of email, text, or push notification/custom channel links delivered.
+    - **Response rate**: The percentage of unique text message responses divided by the number of text messages sent.
   
-  To view delivery and interaction statistics, select the **View details** link in the **Delivery funnel** or **Delivery issues** section on the channel analytics pane. Delivery and interaction details allow you to analyze delivery, engagement, and performance data for your email, text, push notification or custom channel messages. You can view deliverability details on messages sent, delivered, blocked, or bounced along with the respective reasons, as well as detailed data on customers that opened or clicked a message, as well as unsubscription interaction data. It's important to note that a message’s unique opens and clicks are calculated based on the journey run of a customer. This means that if the same customer enters the same journey multiple times and opens or clicks the same message each time, the system will record multiple unique opens or clicks. For example, if a customer clicks the same message in two different journey executions, two unique clicks will be recorded. Moreover, you can export up to 50,000 records of interaction data, search through data using the profile's email address, and access links to audience profiles that interacted with your email messages. Additionally, timestamps are reported according to the organization's timezone.
+To view delivery and interaction statistics, select the **View details** link in the **Delivery funnel** or **Delivery issues** section on the channel analytics pane. Delivery and interaction details allow you to analyze delivery, engagement, and performance data for your email, text, push notification, or custom channel messages. You can view deliverability details on messages sent, delivered, blocked, or bounced along with the respective reasons, detailed data on customers who opened or clicked a message, as well as unsubscription interaction data. It's important to note that a message’s unique opens and clicks are calculated based on the customer's journey run. This means that if the same customer enters the same journey multiple times and opens or clicks the same message each time, the system records multiple unique opens or clicks. For example, if a customer clicks the same message in two different journey executions, two unique clicks are recorded. You can export up to 50,000 records of interaction data, search through data using the profile's email address, and access links to audience profiles that interacted with your email messages. Timestamps are reported according to the organization's time zone.
 
     :::image type="content" source="media/real-time-marketing-analytics-interactions.png" alt-text="Delivery and interactions details screenshot." lightbox="media/real-time-marketing-analytics-interactions.png":::
   
@@ -75,10 +75,10 @@ Select any journey component to view near real-time operational analytics in the
 ## Email insights
 Email insights provide a deep dive into how your audience interacts with your emails over time and track the trajectory of delivery rates, open rates, and click-through rates with precision. Beyond delivery and engagement trends, you can evaluate essential email KPIs and access comprehensive delivery and interaction details. To view email insights, go to **Real-time journeys** > **Email** > **Insights tab**.
 
-The following insights categories are provided:
+The following insight categories are provided:
 
-- **Delivery KPIs**: Gain insights into the delivery rate, number of blocks and delivery failures for the selected message.
-- **Engagement KPIs**: Evaluate the open rate, click rate, click-to-open rate, number of messages marked as spam and the count of unsubscriptions related to the selected message. 
+- **Delivery KPIs**: Gain insights into the delivery rate, number of blocks, and delivery failures for the selected message.
+- **Engagement KPIs**: Evaluate the open rate, click rate, click-to-open rate, number of messages marked as spam, and the count of unsubscriptions related to the selected message. 
 - **Delivery trend** and **Delivery funnel**: Explore the trends and funnel of email sent and delivered interactions, along with unique opens and unique clicks specific to the selected email.
 - **Engagement trend**: Examine the trends for total opens and clicks, providing a comprehensive understanding of the level of engagement associated with the selected email.
 
