@@ -17,7 +17,7 @@ When you set up rules to unify your data into a customer profile, consider these
 
 - [**Add rules progressively and track the results**](#unification-performance). Remove rules that don’t improve the match result.
 
-- [**Deduplicate](#deduplication) each table** so that every customer is represented in a single row.
+- [**Deduplicate each table**](#deduplication) so that every customer is represented in a single row.
 
 - **Use [normalization](#normalization) to standardize variations** in how data was entered such as Street vs. St vs. St. vs. st.
 
