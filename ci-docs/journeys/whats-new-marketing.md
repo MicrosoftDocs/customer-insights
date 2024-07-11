@@ -3,8 +3,8 @@ title: New and upcoming features
 description: Information about new features, improvements, and bug fixes in Dynamics 365 Customer Insights - Journeys releases.
 ms.date: 06/28/2024
 ms.topic: article
-author: alfergus, colinbirkett
-ms.author: alfergus, colinbirkett
+author: colinbirkett
+ms.author: colinbirkett
 ms.collection: bap-ai-copilot
 ---
 
