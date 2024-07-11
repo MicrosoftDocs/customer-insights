@@ -1,7 +1,7 @@
 ---
 title: "Data unification best practices"
 description: "Learn about the concepts and best practices when unifying data in Customer Insights - Data."
-ms.date: 07/09/2024
+ms.date: 07/11/2024
 ms.reviewer: v-wendysmith
 ms.topic: conceptual
 author: Scott-Stabbert
@@ -33,9 +33,13 @@ Each rule takes time to run. Patterns such as comparing every table to every oth
 
 The best approach is to start with a basic set of rules you know are needed, such as comparing each table to your primary table. Your primary table should be the table with the most complete and accurate data. This table should be ordered at the top in the Matching rules unification step.  
 
-Progressively add several rules and see how long the changes take to run, and if your results improve. Go to **Settings** > **System** > **Status** and select Match to see how long Match took for each unification run.
+Progressively add several rules and see how long the changes take to run and if your results improve. Go to **Settings** > **System** > **Status** and select **Match** to see how long deduplication and matching took for each unification run.
+
+:::image type="content" source="media/status-match-times.png" alt-text="Screenshot of Status page showing Match run times.":::
 
 View the rule statistics on the Deduplication and Match pages to see if the number of Unique records changes. If a new rule matches some records, and the unique record count doesn't change, then a previous rule identified those matches.
+
+:::image type="content" source="media/unify-unique-records.png" alt-text="Screenshot of Matching rules page highlighting Unique records.":::
 
 ## Deduplication
 
