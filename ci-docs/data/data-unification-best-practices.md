@@ -13,7 +13,7 @@ ms.custom: bap-template
 
 When you set up rules to unify your data into a customer profile, consider these best practices:
 
-- [**Avoid creating too many rules**](#unification-performance). Too many rules provide diminishing returns but increase processing time.
+- [**Balance time to unify vs. complete matching**](#unification-performance). Attempting to capture every possible match leads to many rules and unification taking a long time.
 
 - [**Add rules progressively and track the results**](#unification-performance). Remove rules that don’t improve the match result.
 
@@ -21,7 +21,7 @@ When you set up rules to unify your data into a customer profile, consider these
 
 - **Use [normalization](#normalization) to standardize variations** in how data was entered such as Street vs. St vs. St. vs. st.
 
-- **Use [fuzzy matching](#fuzzy-matching) to correct typos and errors** in how data was entered such as bob@contoso.com and bob@contoso.cm.
+- **Use [fuzzy matching](#fuzzy-matching) strategically to correct typos and errors** in how data was entered such as bob@contoso.com and bob@contoso.cm. Fuzzy matches take longer to run than exact matches. Always test to see if the extra time spent on fuzzy matching is worth the extra match rate.
 
 - **Narrow the scope of matches with [exact match](#exact-match)**. Make sure every rule with fuzzy conditions has at least one exact match condition.
 
@@ -29,7 +29,7 @@ When you set up rules to unify your data into a customer profile, consider these
 
 ## Unification performance
 
-Each rule takes time to run. Patterns such as comparing every table to every other table using every rule pattern makes your unification plan take hours longer to run. It also returns few if any more matches over a plan that compares each table to a base table.  
+Each rule takes time to run. Patterns such as comparing every table to every other table or trying to capture every possible record match can lead to long unification processing times. It also returns few if any more matches over a plan that compares each table to a base table.  
 
 The best approach is to start with a basic set of rules you know are needed, such as comparing each table to your primary table. Your primary table should be the table with the most complete and accurate data. This table should be ordered at the top in the Matching rules unification step.  
 
@@ -107,7 +107,7 @@ Ensure the column you use for an exact match condition don’t have any values t
 
 ## Fuzzy matching
 
-Use fuzzy matching to match strings that are close but aren’t exact because of typos or other small variations. Use fuzzy matching strategically as it slows down processing and can result in timeouts. Make sure at least one exact match condition in any rule that has fuzzy conditions.  
+Use fuzzy matching to match strings that are close but aren’t exact because of typos or other small variations. Use fuzzy matching strategically as it's slower than exact matches. Make sure at least one exact match condition in any rule that has fuzzy conditions.  
 
 Fuzzy matching isn't intended to capture name variations like Suzzie and Suzanne. These variations are better captured with the Normalization pattern **Type: Name** or the custom **Alias matching** where customers can enter their own list of name variations they want to consider as matches.
 
