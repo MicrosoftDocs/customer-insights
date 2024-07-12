@@ -1,7 +1,7 @@
 ---
 title: "Remove duplicates before unifying data"
 description: "The second step in the unification process is selecting which record to keep when duplicates are found."
-ms.date: 12/04/2023
+ms.date: 07/12/2024
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -17,7 +17,7 @@ Rules are processed in order.  After all rules have been run on all the records 
 
 ## Define deduplication rules
 
-A good rule identifies a unique customer. Consider your data. It might be enough to identify customers based on a field such as email. However, if you want to differentiate customers that share an email, you might choose to have a rule with two conditions, matching on Email + FirstName. For more information, see [Deduplication concepts and scenarios](data-unification-concepts-deduplication.md).
+A good rule identifies a unique customer. Consider your data. It might be enough to identify customers based on a field such as email. However, if you want to differentiate customers that share an email, you might choose to have a rule with two conditions, matching on Email + FirstName. For more information, see [Deduplication best practices](data-unification-best-practices.md#deduplication).
 
 1. On the **Deduplication rules** page, select a table and select **Add rule** to define the deduplication rules.
 
@@ -28,14 +28,18 @@ A good rule identifies a unique customer. Consider your data. It might be enough
 
    1. In the **Add rule** pane, enter the following information:
       - **Select field**: Choose from the list of available fields from the table that you want to check for duplicates. Choose fields that are likely unique for every single customer. For example, an email address, or the combination of name, city, and phone number.
-      - **Normalize**: Select normalization options for the column. Normalization only impacts the matching step, and doesn't change the data.
-        - **Numerals**: Converts many Unicode symbols that represent numbers to simple numbers.
-        - **Symbols**: Removes many common symbols such as !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~. For example, *Head&Shoulder* becomes *HeadShoulder*.
-        - **Text to lower case: Converts all character to lower case**. "ALL CAPS and Title Case" become "all caps and title case."
-        - **Type (Phone, Name, Address, Organization)**: Standardizes names, titles, phone numbers, addresses, etc.
-        - **Unicode to ASCII**: Converts Unicode characters to their ASCII equivalent. For example, the accented ề converts to the e character.
+
+      - **Normalize**: Select [normalization options](data-unification-best-practices.md#normalization) for the column. Normalization only impacts the matching step, and doesn't change the data.
+        - **Numerals**: Converts Unicode symbols that represent numbers to simple numbers.
+        - **Symbols**: Removes symbols and special characters such as !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~. For example, *Head&Shoulder* becomes *HeadShoulder*.
+        - **Text to lower case**: Converts upper case characters to lower case. "ALL CAPS and Title Case" become "all caps and title case."
+        - **Type (Phone, Name, Address, Organization)**: Standardizes names, titles, phone numbers, and addresses.
+        - **Unicode to ASCII**: Converts Unicode characters to their ASCII letter equivalent. For example, the accented ề converts to the e character.
         - **Whitespace**: Removes all spaces. *Hello   World* becomes *HelloWorld*.
-      - **Precision**: Set the level of precision. [Precision is used with fuzzy matching](data-unification-fuzzy-matching.md), and determines how close two strings need to be in order to be considered a match.
+        - **Alias mapping**: Allows you to upload a custom list of string pairs to indicate strings that should always be considered an exact match.
+        - **Custom bypass**: Allows you to upload a custom list of strings to indicate strings that should never be matched.
+
+      - **Precision**: Set the level of precision. [Precision is used for exact match and fuzzy matching](data-unification-best-practices.md), and determines how close two strings need to be in order to be considered a match.
         - **Basic**: Choose from *Low (30%)*, *Medium (60%)*, *High (80%)*, and *Exact (100%)*. Select **Exact** to only match records that match 100 percent.
         - **Custom**: Set a percentage that records need to match. The system only matches records passing this threshold.
       - **Name**: Name for the rule.

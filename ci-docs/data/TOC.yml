@@ -66,22 +66,14 @@
   items:
     - name: Data unification overview
       href: data-unification.md
+    - name: Data unification best practices
+      href: data-unification-best-practices.md
     - name: Customer data
       href: data-unification-map-tables.md
     - name: Deduplication rules
-      items: 
-        - name: Remove duplicates in each table
-          href: data-unification-duplicates.md
-        - name: Deduplication concepts and scenarios
-          href: data-unification-concepts-deduplication.md
-        - name: Precision and fuzzy matching
-          href: data-unification-fuzzy-matching.md
+      href: data-unification-duplicates.md
     - name: Matching rules
-      items: 
-        - name: Define matching rules
-          href: data-unification-match-tables.md
-        - name: Precision and fuzzy matching
-          href: data-unification-fuzzy-matching.md
+      href: data-unification-match-tables.md
     - name: Unify data
       href: data-unification-merge-tables.md
     - name: Review data unification
