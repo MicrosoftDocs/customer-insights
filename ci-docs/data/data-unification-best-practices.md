@@ -87,8 +87,8 @@ The normalized data is only used for comparison purposes to match customer recor
 | Type - Organization | Removes around 50 company name "noise words" such as "co," "corp," "corporation," and "ltd."  |
 | Unicode to ASCII    | Converts Unicode characters to their ASCII letter equivalent <br>Example: The characters 'à,' 'á,' 'â,' 'À,' 'Á,' 'Â,' 'Ã,' 'Ä,' 'Ⓐ,' and 'Ａ' are all converted to 'a.'  |
 | Whitespace          | Removes all white space         |
-| Alias mapping       | Allows you to upload a custom list of string pairs that can then be used to indicate strings that should always be considered an exact match. <br>Use alias mapping when you have specific data examples you think should match, and aren't matched using one of the other normalization patterns. <br>Example: Scott and Scooter, or IBM and International Business Machines. |
-| Custom bypass       | Allows you to upload a custom list of strings that can then be used to indicate strings that should never be matched.<br>Custom bypass is useful when you have data that has common values that should be ignored, such as a dummy phone number or dummy email. <br>Example: Never match the phone 555-1212, or test@example.com   |
+| Alias mapping       | Allows you to upload a custom list of string pairs that can then be used to indicate strings that should always be considered an exact match. <br>Use alias mapping when you have specific data examples you think should match, and aren't matched using one of the other normalization patterns. <br>Example: Scott and Scooter, or MSFT and Microsoft. |
+| Custom bypass       | Allows you to upload a custom list of strings that can then be used to indicate strings that should never be matched.<br>Custom bypass is useful when you have data that has common values that should be ignored, such as a dummy phone number or dummy email. <br>Example: Never match the phone 555-1212, or test@contoso.com   |
 
 ## Exact match
 
@@ -102,7 +102,7 @@ The exact match conditions are run first to obtain a smaller set of values to fu
 
 Columns like full name, email, phone, or address fields have good uniqueness and are great columns to use as an exact match. 
 
-Ensure the column you use for an exact match condition don’t have any values that are repeated frequently, such as a default value of "Firstname" captured by a form. Customer insights can profile data columns to provide insight into top repeating values. You can enable data profiling on Azure Data Lake (using Common Data Model or Delta format) connections and Synapse. Data profile is run when the data source is next refreshed. For more information, go to Data profiling.
+Ensure the column you use for an exact match condition don’t have any values that are repeated frequently, such as a default value of "Firstname" captured by a form. Customer insights can profile data columns to provide insight into top repeating values. You can enable data profiling on Azure Data Lake (using Common Data Model or Delta format) connections and Synapse. Data profile is run when the data source is next refreshed. For more information, go to [Data profiling](data-sources.md#data-profiling).
 
 ## Fuzzy matching
 
@@ -128,7 +128,7 @@ The basic calculation to determine the edit distance score is: (Base string leng
 |Base string |Comparison string |Score |
 |----|-----|------|
 |Jacqueline |Jaclyne |(10-4)/10=.6 |
-|fred@gmail.com |fred@gmal.cm |(14-2) / 14 = 0.857 |
+|fred@contoso.com |fred@contso.cm |(14-2) / 14 = 0.857 |
 |franklin |frank |(8-3) / 8 = 0.625 |
 
 
