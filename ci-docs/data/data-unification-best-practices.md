@@ -21,7 +21,7 @@ When you set up rules to unify your data into a customer profile, consider these
 
 - **Use [normalization](#normalization) to standardize variations** in how data was entered such as Street vs. St vs. St. vs. st.
 
-- **Use [fuzzy matching](#fuzzy-matching) strategically to correct typos and errors** in how data was entered such as bob@contoso.com and bob@contoso.cm. Fuzzy matches take longer to run than exact matches. Always test to see if the extra time spent on fuzzy matching is worth the extra match rate.
+- **Use [fuzzy matching](#fuzzy-matching) strategically to correct typos and errors** such as bob@contoso.com and bob@contoso.cm. Fuzzy matches take longer to run than exact matches. Always test to see if the extra time spent on fuzzy matching is worth the additional match rate.
 
 - **Narrow the scope of matches with [exact match](#exact-match)**. Make sure every rule with fuzzy conditions has at least one exact match condition.
 
@@ -37,7 +37,7 @@ Progressively add several rules and see how long the changes take to run and if 
 
 :::image type="content" source="media/status-match-times.png" alt-text="Screenshot of Status page showing Match run times.":::
 
-View the rule statistics on the Deduplication and Match pages to see if the number of Unique records changes. If a new rule matches some records, and the unique record count doesn't change, then a previous rule identified those matches.
+View the rule statistics on the **Deduplication rules** and **Matching rules** pages to see if the number of **Unique records** changes. If a new rule matches some records, and the unique record count doesn't change, then a previous rule identified those matches.
 
 :::image type="content" source="media/unify-unique-records.png" alt-text="Screenshot of Matching rules page highlighting Unique records.":::
 
@@ -76,10 +76,9 @@ Use normalization to standardize data for better matching. Normalization per
 
 The normalized data is only used for comparison purposes to match customer records more effectively. It doesn't change the data in the final unified customer profile output.
 
-
 | Normalization       | Examples               |
 | ------------------- | ---------------------- |
-| Numerals            | Converts Unicode representations of numbers to the number.<br>Examples: ❽ and Ⅷ are both normalized to the number 8.<br>Note: The symbols must be encoded in Unicode Point Format.  |
+| Numerals            | Converts many Unicode symbols that represent numbers to simple numbers.<br>Examples: ❽ and Ⅷ are both normalized to the number 8.<br>Note: The symbols must be encoded in Unicode Point Format.  |
 | Symbols             | Removes symbols and special characters.<br>Examples: !?"#$%&'( )+,.-_/:;<=>@^_\~{}`[ ]     |
 | Text to lower case  | Converts upper case characters to lower case. <br>Example: "THIS Is aN EXamplE" is converted to "this is an example"   |
 | Type – Phone        | Converts phones in various formats to digits, and accounts for variations in how country codes and extensions are presented. <br>Example: +01 425.555.1212 = 1 (425) 555-1212  |
