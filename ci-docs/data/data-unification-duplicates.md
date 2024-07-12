@@ -28,8 +28,17 @@ A good rule identifies a unique customer. Consider your data. It might be enough
 
    1. In the **Add rule** pane, enter the following information:
       - **Select field**: Choose from the list of available fields from the table that you want to check for duplicates. Choose fields that are likely unique for every single customer. For example, an email address, or the combination of name, city, and phone number.
+
       - **Normalize**: Select [normalization options](data-unification-best-practices.md#normalization) for the column. Normalization only impacts the matching step, and doesn't change the data.
-        - [!INCLUDE[normalization](includes/normalization.md)]
+        - **Numerals**: Converts Unicode symbols that represent numbers to simple numbers.
+        - **Symbols**: Removes symbols and special characters such as !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~. For example, *Head&Shoulder* becomes *HeadShoulder*.
+        - **Text to lower case**: Converts upper case characters to lower case. "ALL CAPS and Title Case" become "all caps and title case."
+        - **Type (Phone, Name, Address, Organization)**: Standardizes names, titles, phone numbers, and addresses.
+        - **Unicode to ASCII**: Converts Unicode characters to their ASCII letter equivalent. For example, the accented ề converts to the e character.
+        - **Whitespace**: Removes all spaces. *Hello   World* becomes *HelloWorld*.
+        - **Alias mapping**: Allows you to upload a custom list of string pairs to indicate strings that should always be considered an exact match.
+        - **Custom bypass**: Allows you to upload a custom list of strings to indicate strings that should never be matched.
+
       - **Precision**: Set the level of precision. [Precision is used for exact match and fuzzy matching](data-unification-best-practices.md), and determines how close two strings need to be in order to be considered a match.
         - **Basic**: Choose from *Low (30%)*, *Medium (60%)*, *High (80%)*, and *Exact (100%)*. Select **Exact** to only match records that match 100 percent.
         - **Custom**: Set a percentage that records need to match. The system only matches records passing this threshold.
