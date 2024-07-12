@@ -2605,6 +2605,16 @@
       "source_path": "ci-docs/data/data-sources-single.md",
       "redirect_url": "/dynamics365/customer-insights/data/data-sources",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/data/data-unification-concepts-deduplication.md",
+      "redirect_url": "/dynamics365/customer-insights/data/data-unification-best-practices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/data/data-unification-fuzzy-matching.md",
+      "redirect_url": "/dynamics365/customer-insights/data/data-unification-best-practices",
+      "redirect_document_id": false
     }
   ]
 }

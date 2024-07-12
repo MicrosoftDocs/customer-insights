@@ -1,7 +1,7 @@
 ---
 title: "Matching rules for data unification"
 description: "Match tables to create unified customer profiles."
-ms.date: 11/15/2023
+ms.date: 07/12/2024
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -65,18 +65,19 @@ The warning next to a table name means that no match rule is defined for a match
 
    - **Select Table/Field (second row)**: Choose a column that relates to the column of the table specified in the first row.
 
-   - **Normalize**: Select from following normalization options for the selected columns.
-     - **Numerals**: Converts other numeral systems, such as Roman numerals, to Arabic numerals. *VIII* becomes *8*.
-     - **Symbols**: Removes all symbols and special characters. *Head&Shoulder* becomes *HeadShoulder*.
-     - **Text to lower case**: Converts all character to lower case. *ALL CAPS and Title Case* becomes *all caps and title case*.
-     - **Type (Phone, Name, Address, Organization)**: Standardizes names, titles, phone numbers, addresses, and organizations.
-     - **Unicode to ASCII**: Converts unicode notation to ASCII characters. */u00B2* becomes *2*.
-     - **Whitespace**: Removes all spaces. *Hello   World* becomes *HelloWorld*.
+   - **Normalize**: Select [normalization options](data-unification-best-practices.md#normalization) for the column.
+      - **Numerals**: Converts Unicode symbols that represent numbers to simple numbers.
+      - **Symbols**: Removes symbols and special characters such as !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~. For example, *Head&Shoulder* becomes *HeadShoulder*.
+      - **Text to lower case**: Converts upper case characters to lower case. "ALL CAPS and Title Case" become "all caps and title case."
+      - **Type (Phone, Name, Address, Organization)**: Standardizes names, titles, phone numbers, and addresses.
+      - **Unicode to ASCII**: Converts Unicode characters to their ASCII letter equivalent. For example, the accented ề converts to the e character.
+      - **Whitespace**: Removes all spaces. *Hello   World* becomes *HelloWorld*.
+      - **Alias mapping**: Allows you to upload a custom list of string pairs to indicate strings that should always be considered an exact match.
+      - **Custom bypass**: Allows you to upload a custom list of strings to indicate strings that should never be matched.
 
-   - **Precision**: Set the level of precision to apply for this condition. [Precision is used with fuzzy matching](data-unification-fuzzy-matching.md), and determines how close two strings need to be in order to be considered a match.
+   - **Precision**: Set the level of precision to apply for this condition. [Precision is used for exact match and fuzzy matching](data-unification-best-practices.md), and determines how close two strings need to be in order to be considered a match.
      - **Basic**: Choose from *Low (30%)*, *Medium (60%)*, *High (80%)*, and *Exact (100%)*. Select **Exact** to only match records that match 100 percent.
      - **Custom**: Set a percentage that records need to match. The system will only match records passing this threshold.
-
    - **Name**: Name for the rule.
 
 1. To match tables only if columns meet multiple conditions, select **Add** > **Add condition** to add more conditions to a match rule. Conditions are connected with a logical AND operator and thus only executed if all conditions are met.
