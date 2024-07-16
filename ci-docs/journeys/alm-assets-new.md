@@ -56,7 +56,7 @@ You need to download a zip folder to import your digital asset files to the new 
 1. Click on **solutions**.
 1. Click on **import solution**.  
 ![Import solution](media/alm-import.png)
-1. Browse and select the download zip file, then click **next**.
+1. Click **browse** and select the download zip file, then click **next**.
 1. Click **import**.  
 After the import is completed, you can see all your selected digital assets with their URLs referencing the target environment.
 
