@@ -1,6 +1,6 @@
 ---
-title: How to use ALM for digital assets
-description: Describes how to use ALM for digital assets in Dynamics 365 Customer Insights - Journeys.
+title: Application lifecycle management for digital assets
+description: Describes how to use a application lifecycle management (ALM) for digital assets in Dynamics 365 Customer Insights - Journeys.
 ms.date: 07/04/2024
 ms.topic: article
 author: colinbirkett
@@ -11,7 +11,7 @@ search.audienceType:
   - enduser
 ---
 
-# How to use application lifecycle management for digital assets
+# Application lifecycle management for digital assets
 
 Read this article to learn how to use application lifecycle management (ALM) for digital assets.
 

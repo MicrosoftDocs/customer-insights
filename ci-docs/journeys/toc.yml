@@ -402,8 +402,8 @@
     items:
     - name: Use images, files, and videos in your content
       href: upload-images-files.md
-    - name: How to use ALM in assets library
-      href: alm-assets-new.md
+    - name: Application lifecycle management for digital assets
+      href: alm-assets-cjo.md
     - name: Impact of disabling Azure CDN
       href: cdn-disabling.md
   - name: Known issues in real-time journeys
