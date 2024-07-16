@@ -37,7 +37,7 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 - **Build custom reports using Microsoft Fabric integration**
     - In today's data-driven world, marketers face the challenge of gaining a comprehensive view of their campaigns to make informed decisions. Each business has unique needs and requirements for aggregating data from various sources. While Dynamics 365 Customer Insights - Journeys already offers powerful out-of-the-box reports, the app also offers additional custom reporting capabilities to address your unique scenarios. Now in real-time journeys, you can effortlessly create custom Power BI reports tailored to your business needs by leveraging Microsoft Fabric capabilities. Harness seamless access to data to gain a complete understanding of your campaigns, lead management, market performance, and customer engagement, enabling you to identify new opportunities.
     - [Release plan](/dynamics365/release-plan/2024wave1/customer-insights/dynamics365-customer-insights-journeys/build-custom-reports-using-fabric-integration)
-    - [Docs]()
+    - [Docs](fabric-integration.md)
 
 ### Public preview
 
