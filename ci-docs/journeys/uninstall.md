@@ -1,7 +1,7 @@
 ---
 title: Uninstall Customer Insights
 description: How to remove Dynamics 365 Customer Insights.
-ms.date: 05/10/2024 
+ms.date: 07/18/2024 
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -44,11 +44,9 @@ The Customer Insights automatic uninstall process handles most uninstall operati
 To run the uninstall process:
 
 1. If you have sample data installed, remove it. More information: [Add or remove sample data](/power-platform/admin/add-remove-sample-data).
-
+1. Disable the [Block unmanaged customizations](/power-platform/admin/settings-features#block-unmanaged-customizations) setting in your environment. To do so, go to [admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com) > **Environments** and select the three dots ("**...**") next to the environment name. Then go to **Settings** > **Product** > **Features** and set the toggle next to **Block unmanaged customizations** to **Off**. Learn more: [Block unmanaged customizations in Dataverse](/power-platform/alm/block-unmanaged-customizations)
 1. [Access the installation management area](setup.md#install-uninstall-or-update-customer-insights) and find the environment where you want to uninstall the Customer Insights - Journeys application. Make sure the correct environment is listed.
-
 1. Select **Uninstall** next to the instance that you want to remove.
-
 1. The uninstall process takes place and updates the environment when it's complete.
 
 ## Reset any Power Apps portals connected to the uninstalled Customer Insights - Journeys app (outbound marketing only)
