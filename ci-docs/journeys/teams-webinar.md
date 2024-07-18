@@ -140,10 +140,6 @@ After you save your event, your settings will be reflected in your Teams calenda
 > Synchronization between Teams and Customer Insights - Journeys works in one direction: from Customer Insights - Journeys to Teams. The Teams calendar item for your event is read-only. Any changes you make in Teams may be overwritten by Customer Insights - Journeys. Make sure to manage and edit your meeting only from the Customer Insights - Journeys app.
 
 ### Teams live events
-
-> [!NOTE]
-> Teams Live Events will be discontinued as of September 30, 2024. Learn more:[Teams Live Events retiring September 30, 2024](/lifecycle/announcements/teams-live-events-retiring-09-30-2024).
->
 > It's recommended to utilize [Teams Webinars](#teams-webinar) to schedule your events beyond this date.
 
 > [!NOTE]
