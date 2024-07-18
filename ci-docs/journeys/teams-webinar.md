@@ -1,7 +1,7 @@
 ---
 title: Use Microsoft Teams for Dynamics 365 Customer Insights - Journeys online events
 description: Learn how to create and host live events in Dynamics 365 Customer Insights - Journeys using Microsoft Teams as the webinar provider.
-ms.date: 03/21/2024
+ms.date: 07/18/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -140,21 +140,20 @@ After you save your event, your settings will be reflected in your Teams calenda
 > Synchronization between Teams and Customer Insights - Journeys works in one direction: from Customer Insights - Journeys to Teams. The Teams calendar item for your event is read-only. Any changes you make in Teams may be overwritten by Customer Insights - Journeys. Make sure to manage and edit your meeting only from the Customer Insights - Journeys app.
 
 ### Teams live events
-> It's recommended to utilize [Teams Webinars](#teams-webinar) to schedule your events beyond this date.
 
 > [!NOTE]
 > We recommend that you use Teams webinars for your presentation event needs. Teams webinars provide richer functionality (such as the ability to use [breakout rooms](https://support.microsoft.com/office/use-breakout-rooms-in-teams-meetings-7de1f48a-da07-466c-a5ab-4ebace28e461)) out of the box.
 
 You can use Teams live events to create webinar-style online meetings. Live event presenters can share content, video, and audio. Attendees can view the content, but can’t share their own audio, video, or content.
 
-Live events are useful for conference keynotes or meetings where a few presenters are presenting to a large audience. The audience can submit questions using the Q&A feature for the live event. More information on Teams live events: [What are Microsoft Teams live events?](/microsoftteams/teams-live-events/what-are-teams-live-events).
+Live events are useful for conference keynotes or meetings where a few presenters present to a large audience. The audience can submit questions using the Q&A feature for the live event. More information on Teams live events: [What are Microsoft Teams live events?](/microsoftteams/teams-live-events/what-are-teams-live-events).
 
 > [!NOTE]
 > You can only create "public" Teams live events from Customer Insights - Journeys. These events are open to anyone. Attendees are not required to sign in to attend an event.
 
 #### Enable Teams live events in Customer Insights - Journeys
 
-To enable Teams live events, the following policies need to be set by the Teams tenant administrator. Customer Insights - Journeys only supports creating public live events. These settings ensure that anyone can watch the event, including anonymous users.
+To enable Teams live events, the Teams tenant administrator must set the following policies. Customer Insights - Journeys only supports creating public live events. These settings ensure that anyone can watch the event, including anonymous users.
 
 To allow anyone to watch the live event, run the following PowerShell command:
 
