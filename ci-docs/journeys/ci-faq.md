@@ -1,7 +1,7 @@
 ---
 title: Dynamics 365 Customer Insights FAQs
 description: Get answers to frequently asked questions about Dynamics 365 Customer Insights.
-ms.date: 01/24/2024
+ms.date: 07/19/2024
 ms.collection: article
 ms.topic: overview
 author: alfergus
@@ -27,7 +27,7 @@ This FAQ answers questions about the new Customer Insights combined product offe
 
 1. **Why are are the Dynamics 365 Marketing and current Dynamics 365 Customer Insights apps being combined into one offering?**
 
-    To provide the most value to users and empower them with the most personalized experiences, we're combining the power of a unified customer profile with the ability to orchestrate customer journeys in real-time, at every customer touchpoint, into one, simple, low-priced offering.  The new, combined offering simplifies licensing to make it easier for customers to buy and use the applications as their business grows.
+    To provide the most value to users and empower them with the most personalized experiences, we're combining the power of a unified customer profile with the ability to orchestrate customer journeys in real-time, at every customer touchpoint, into one, simple, low-priced offering. The new, combined offering simplifies licensing to make it easier for customers to buy and use the applications as their business grows.
 
 1. **When is the new Customer Insights offering generally available (GA)?**
 
@@ -35,7 +35,7 @@ This FAQ answers questions about the new Customer Insights combined product offe
 
 1. **What current certifications are in place for the new Customer Insights offering?**
 
-    The current *Exam MB-260: Microsoft Customer Data Platform Specialist* and *Exam MB-230: Microsoft Dynamics 365 Marketing Functional Consultant* won't be combined at this time, but they'll be renamed to reflect the product changes.
+    The current *Exam MB-260: Microsoft Customer Data Platform Specialist* and *Exam MB-230: Microsoft Dynamics 365 Marketing Functional Consultant* won't be combined at this time, but they're renamed to reflect the product changes.
 
 ## Availability
 
@@ -57,12 +57,12 @@ This FAQ answers questions about the new Customer Insights combined product offe
 1. **Are there any changes to product functionality due to the consolidation of the offer?**
 
     There will be no changes to product functionality due to the consolidation of the product offering.
-      - We'll continue to invest in new capabilities that will enable stronger, insights-based marketing, making it easier for marketers to glean insights from data with one of the most tightly integrated Customer Data Platform and Marketing Automation Platform products on the market.
-      - New customers will be able to take advantage of real-time marketing capabilities. Refer to the next question for more details. 
+      - We continue to invest in new capabilities that enable stronger, insights-based marketing, making it easier for marketers to glean insights from data with one of the most tightly integrated Customer Data Platform and Marketing Automation Platform products on the market.
+      - New customers are able to take advantage of real-time marketing capabilities. Refer to the next question for more details. 
 
 1. **Can customers have access to both outbound and real-time marketing with the new Customer Insights offer?**
 
-    New customers will only be able to access the real-time marketing module. Current outbound customers provisioning new environments will also get the real-time module only by default, but can add outbound using a self-serve UX.  Learn more about the real-time marketing only module: [Real-time marketing transition FAQ](transition-faqs.md)
+    New customers will only be able to access the real-time marketing module. Current outbound customers provisioning new environments will also get the real-time module only by default, but can add outbound using a self-serve UX. Learn more about the real-time marketing only module: [Real-time marketing transition FAQ](transition-faqs.md)
 
 1. **Why is there a shift from outbound marketing to a real-time marketing-only experience?**
  
@@ -79,11 +79,11 @@ This FAQ answers questions about the new Customer Insights combined product offe
     The previous model had four capacity units, while the new model has only the following two capacity units:
 
       1. **People Interacted** (equivalent to the previous "marketable contact" unit in Dynamics 365 Marketing) that powers the use of **Customer Insights – Journeys**. Refer to question five below for the definition of People Interacted.  
-      1. **People Unified** (equivalent to the previous "profile" meter in Dynamics 365 Customers Insights) which powers **Customer Insights – Data**.  Refer to question four for the definition of People Unified.
+      1. **People Unified** (equivalent to the previous "profile" meter in Dynamics 365 Customers Insights) which powers **Customer Insights – Data**. Refer to question four for the definition of People Unified.
 
-    All customers must start with the base SKU, or a minimum, required quantity of 10,000 People Interacted and 100,000 People Unified. This base SKU is priced at $1,700 per tenant per month (ptpm) for new Dynamics 365 customers, or at a discounted price of $1,000 ptpm for existing, qualifying Dynamics 365 customers.  After purchasing the base SKU, customers can then purchase additional capacity SKUs of either capacity unit as needed.
+    All customers must start with the base SKU, or a minimum, required quantity of 10,000 People Interacted and 100,000 People Unified. This base SKU is priced at $1,700 per tenant per month (ptpm) for new Dynamics 365 customers, or at a discounted price of $1,000 ptpm for existing, qualifying Dynamics 365 customers. After purchasing the base SKU, customers can then purchase additional capacity SKUs of either capacity unit as needed.
 
-1. **How do customers purchase additional capacity?**
+1. **How do customers purchase more capacity?**
 
     The additional capacity SKUs of People Interacted and People Unified are sold standalone and separately from one another. Customers have the flexibility to choose how much Customer Insights – Journeys and Customer Insights – Data they would like to use.
 
@@ -91,11 +91,11 @@ This FAQ answers questions about the new Customer Insights combined product offe
 
 1. **What license do customers need to use Customer Insights?**
 
-    There are no prerequisites for purchasing the updated Dynamics 365 Customers Insights. Customers need a license for the new Customer Insights and licenses for any additional capacity.
+    There are no prerequisites for purchasing the updated Dynamics 365 Customers Insights. Customers need a license for the new Customer Insights and licenses for any more capacity.
 
-1. **What if I need more than four application installations for either the Customer Insights - Journeys or Customer Insights - Data apps?**
+1. **How many application installations can I have for either the Customer Insights - Journeys or Customer Insights - Data apps?**
 
-    The base license (Dynamics 365 Customer Insights or Dynamics 365 Customer Insights Attach if you qualify for attach pricing) allows four installations of each application. If you need to install either application more than four times, purchase additional base licenses. For example, if you need to install the Customer Insights - Journeys app six times, purchasing two base applications entitles you to a total of eight installations of the Customer Insights - Journeys app.
+    Customer Insights includes rights to install both Customer Insights - Journeys (real-time journeys) and Customer Insights - Data applications in an unlimited number of production or sandbox Dataverse environments.
 
 1. **How do you define People Unified?**
 
@@ -119,10 +119,10 @@ This FAQ answers questions about the new Customer Insights combined product offe
 
     On September 1, 2023, only the new Customer Insights combined offering will be available for new customers.
 
-    Existing, standalone Dynamics 365 Marketing and/or Customers Insights customers will have an opportunity to renew their existing licensing for one contractual cycle before transitioning to the new Customer Insights combined licensing.  This renewal, however, must be contracted before September 1, 2025.
+    Existing, standalone Dynamics 365 Marketing and/or Customers Insights customers have an opportunity to renew their existing licensing for one contractual cycle before transitioning to the new Customer Insights combined licensing. This renewal, however, must be contracted before September 1, 2025.
 
 1. **What happens to customers who only have a Dynamics 365 Marketing or Dynamics 365 Customer Insights license or have licensed both applications?**  
 
-    After GA on September 1, 2023, existing customers can choose to remain and renew on the standalone licensing model for another contractual cycle. This renewal must be made during the transitional offer window that will run through September 1, 2025, with a final contract maturity date that can't extend beyond September 1, 2027.  At the end of the renewed contractual period, customers will then need to transition to the new Customer Insights licensing.
+    After GA on September 1, 2023, existing customers can choose to remain and renew on the standalone licensing model for another contractual cycle. This renewal must be made during the transitional offer window that will run through September 1, 2025, with a final contract maturity date that can't extend beyond September 1, 2027. At the end of the renewed contractual period, customers will then need to transition to the new Customer Insights licensing.
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
