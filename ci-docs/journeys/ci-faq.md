@@ -1,7 +1,7 @@
 ---
 title: Dynamics 365 Customer Insights FAQs
 description: Get answers to frequently asked questions about Dynamics 365 Customer Insights.
-ms.date: 01/24/2024
+ms.date: 07/19/2024
 ms.collection: article
 ms.topic: overview
 author: alfergus
@@ -93,9 +93,9 @@ This FAQ answers questions about the new Customer Insights combined product offe
 
     There are no prerequisites for purchasing the updated Dynamics 365 Customers Insights. Customers need a license for the new Customer Insights and licenses for any additional capacity.
 
-1. **What if I need more than four application installations for either the Customer Insights - Journeys or Customer Insights - Data apps?**
+1. **How many application installations can I have for either the Customer Insights - Journeys or Customer Insights - Data apps?**
 
-    The base license (Dynamics 365 Customer Insights or Dynamics 365 Customer Insights Attach if you qualify for attach pricing) allows four installations of each application. If you need to install either application more than four times, purchase additional base licenses. For example, if you need to install the Customer Insights - Journeys app six times, purchasing two base applications entitles you to a total of eight installations of the Customer Insights - Journeys app.
+    Customer Insights includes rights to install both Customer Insights - Journeys (real-time journeys) and Customer Insights - Data applications in an unlimited number of production or sandbox Dataverse environments.
 
 1. **How do you define People Unified?**
 
