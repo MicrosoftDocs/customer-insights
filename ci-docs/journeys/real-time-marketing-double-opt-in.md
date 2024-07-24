@@ -27,6 +27,18 @@ The double opt-in process works as follows:
 > The link in the confirmation email remains valid for only 28 days. After that period, the user that received the email will not be able to confirm their opt-in.
 > Please refer to this section for the current limitations of this preview feature.
 
+## Availability
+
+Double opt-in for real time journeys is rolling out in July and August of 2024. The table below shows the availability date for each region.
+
+| Region             | Availability date |
+|--------------------|-------------------|
+| IND                | July 23           |
+| FRA, CHE, CAN, SAM | July 29           |
+| OCE, GBR, JPN, APJ | July 30           |
+| EU                 | July 31           |
+| US                 | August 1          |
+
 ## Who should use double opt-in?
 
 Organizations operating in Germany, Austria, and Switzerland may need to implement Double Opt-In functionality to comply with local regulations. Additionally, any entity subject to GDPR regulations may require double opt-in. It's also becoming increasingly common for businesses outside of GDPR jurisdictions to adopt double opt-in practices. This approach not only ensures informed consent but also helps validate email addresses, therefore enhancing data accuracy and lead quality.
