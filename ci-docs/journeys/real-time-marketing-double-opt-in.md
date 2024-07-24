@@ -33,7 +33,7 @@ Double opt-in for real time journeys is rolling out in July and August of 2024. 
 
 | Region             | Availability date |
 |--------------------|-------------------|
-| IND                | July 23           |
+| IND                | Now               |
 | FRA, CHE, CAN, SAM | July 29           |
 | OCE, GBR, JPN, APJ | July 30           |
 | EU                 | July 31           |
