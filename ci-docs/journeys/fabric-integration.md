@@ -59,14 +59,14 @@ The following sections explain how to set up Power BI and link to Fabric.
     > ![Select your Dataverse from the shortcut](media/select-your-dataverse.png "Select your Dataverse from the shortcut")
 
 1. Supply your Dataverse environment URL (Example: orgname.crm.dynamic.com) and the credentials that you want to access the environment with.  Dataverse shortcuts utilize a delegated authorization model. All data access through the shortcut utilizes this credential. This credential must have System Administration permission in the Dataverse environment. Be sure to secure access to this workspace before sharing this data with your users.
-1. Choose the tables that you want to create a shortcut to. Each table is its own shortcut in the Lakehouse. Customer Insights - Journeys interaction data tables appear in the left menu under the **"msdynmkt_analytics"** folder. The Customer Insights - Journeys folder only lists the interaction types for which data has been generated up to that point. If you don't see all your Dataverse tables (CDS2 folder), you may need to configure your Dataverse environment. Use **Link to Fabric** to update the available tables.
+1. Choose the tables that you want to create a shortcut to. Each table is its own shortcut in the Lakehouse. Customer Insights - Journeys interaction data tables appear in the left menu under the **"Customer Insights Journeys (Preview)"** folder. The Customer Insights - Journeys folder only lists the interaction types for which data has been generated up to that point. If you don't see all your Dataverse tables (CDS2 folder), you may need to configure your Dataverse environment. Use **Link to Fabric** to update the available tables.
 
     :::image type="content" source="media/link-to-fabric-through-shortcut.png" alt-text="Link to fabric through shortcut." lightbox="media/link-to-fabric-through-shortcut.png":::
 
 > [!NOTE]
 > If some of your Dataverse tables aren't visible in Fabric, use the **Link to Microsoft Fabric** feature in the PowerApps maker portal. Learn more about prerequisites and review the setup instructions: [Link your Dataverse environment to Microsoft Fabric and unlock deep insights](/power-apps/maker/data-platform/azure-synapse-link-view-in-fabric)
 
-### Work with marketing interactions in Power BI
+### Work with Customer Insights Journeys interactions in Power BI
 
 1. With your tables now available in your Lakehouse, you can now start analyzing your data with Fabric. Use Dataverse shortcuts with Spark Notebooks, the SQL endpoint, and Power BI reports.
 
@@ -87,12 +87,20 @@ The following sections explain how to set up Power BI and link to Fabric.
 
 ## Known limitations during preview
 
-- You need to have a Power BI premium capacity, Fabric premium capacity, or trial capacity in the same region as your Dataverse environment. Power BI premium per user capacity isn't sufficient.
+- You need to have a Power BI premium capacity, Fabric premium capacity, or trial capacity. Power BI premium per user capacity isn't sufficient.
 - Don't delete any Fabric artifacts such as Lakehouse, SQL endpoint, etc. during the preview.
 - Depending on the size of the data, initial sync may take 30 minutes or more. In the case of large tables, initial sync may take longer before you can consume data in Fabric.
 - After the initial sync, data changes in tables will be reflected in Fabric up to 24 hours later.
 - Initially, only new data (real-time journeys and some outbound marketing data) generated after the date of activating the preview will be available for custom reporting. 
 - It's possible that there will be changes (for example, new attributes) in the real-time journeys schema during preview.
+
+## Frequently asked questions
+
+| Question                      | Answer               | 
+|:-----------------------------------|:------------------------------|
+| What license do I need to enable CI Journeys integration with Fabric? | You will need a Power BI premium license or [Fabric capacity](/fabric/enterprise/licenses). If you don't have a Power BI premium license or Fabric capacity, you can sign up for a free Fabric trial capacity: [Fabric (preview) trial](/fabric/get-started/fabric-trial). | 
+| Why don't I see all CI Journeys interaction tables when creating shortcuts in Fabric? | The Customer Insights - Journeys folder only lists the interaction types for which data has been generated up to that point. | 
+| Why do I see more email delivered vs email sent interactions? | In the event of an email remote bounce, we emit two "email delivered" interactions for the same message with the same time stamp despite no message being delivered to the contact/lead/CI Profile email address. This is because the second interaction is intended to "erase" the first one. To count them properly you should be using the ["DeliveredCount"](https://learn.microsoft.com/en-us/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsightsjourneys/emaildelivered#DeliveredCount) field. |
 
 ## Learn more
 
