@@ -1,7 +1,7 @@
 ---
 title: Add dynamic content to email messages
 description: How to add field values, set up content settings information, conditional statements, and while loops to your email designs in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/18/2023
+ms.date: 07/25/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -14,10 +14,20 @@ search.audienceType:
 
 # Add dynamic content to email messages
 
-[!INCLUDE [marketing-trial-cta](./includes/marketing-trial-cta.md)]
-
 > [!IMPORTANT]
 > This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
+
+> [!WARNING]
+> If you're using field-level security for some of your email fields, you must add the correct permissions or Customer Insights - Journeys can't process your email.
+>
+> To set up field-level security:
+>
+> 1. At the top right, select the **Settings** icon then select **Advanced settings**.
+> 1. In the **System** section, select **Security**.
+> 1. Select **Column Security Profiles**.
+> 1. To create a new Field Security profile, select **New Profile** and enter a name in the General section.
+> 1. In the **Users** section, add the system user: "**# D365 Marketing Core Sending**".
+> 1. In the **Field Permissions** section, add **Read** permission to all required fields.
 
 Dynamic content gets resolved just before a message is sent to a specific individual. You'll typically use dynamic content to merge information from the recipient's contact record (such as first and last name), to place special links, and to place information and links from the content settings. If you're comfortable working in code, you can also create custom logic that includes conditional statements, for-each loops, and more. You can use dynamic content anywhere in your message body and can also use a few types of dynamic values in the message header fields (subject, from address, and from name).
 
