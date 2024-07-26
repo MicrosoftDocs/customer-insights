@@ -42,7 +42,7 @@ Let’s imagine you want to test two different emails on a trigger-based journey
     - **Initial Audience**: This is the audience group you would want to hold back from the A/B test before you get the results. This option is only available for segment-based journeys since you already have a total number of customers to help you decide how many you wish to hold back. Trigger-based journeys don’t have this option as customers enter when they complete an action. As such, the total number of customers who enter the journey is unknown.
     - **Experiment distribution**: Choose the audience distribution you would like. The slider is automatically on 50-50, but you can set the slider to your desired distribution. The minimum a version can receive is 10 percent, and the maximum is 90 percent. Remember that, traditionally, version A is your control group and version B is your variant.
     - **Winning metric**: You can set the winning condition for your test by choosing a winning metric: The version with the most journey goal events hit, the most clicks, or the most opens. For this case, you want to increase your open rates so you'll choose the open rate option.
-    - **This test ends**: You can also choose between ending the test automatically or at a specific date and time. Letting the test determine a winner automatically when the results reach statistical significance. This means once a clear winner is determined with 80-95 percent confidence, the system sends the winning version to the rest of your audience. The losing version is discarded. If you choose statistical significance as an option to end the A/B test but there's no clear winner after 30 days, the system automatically sends the default version.
+    - **This test ends**: You can also choose between ending the test automatically or at a specific date and time. Letting the test determine a winner automatically when the results reach statistical significance. This means once a clear winner is determined, the system sends the winning version to the rest of your audience. The losing version is discarded. If you choose statistical significance as an option to end the A/B test but there's no clear winner after 30 days, the system automatically sends the default version.
     - **Default version**: Lastly, choose a default version in case the test doesn't end successfully. In cases where a winner hasn't been determined by the deadline specified through the date and time, the default version is automatically sent.
 1. The A/B test should look like this by the time you configure everything and you're ready to publish the journey:
 
@@ -88,8 +88,6 @@ There are three possible A/B test result outcomes:
 
 ## FAQ
 
-1. Why is my A/B test reading inconclusive when one version clearly seems to be performing better than another?
-    - For a large audience set with at least 1,000 customers, the confidence level for the winning variant needs to be at least 95 percent. In a smaller audience set, the confidence level can be as low as 80 percent. If you're okay with a smaller confidence level or you're testing on an audience smaller than 1,000, you always have the option to end the test early and send the version you're happiest with.
 1. Can I have an A/B test with more than two versions?
     - Not at the moment.
 1. Why am I not seeing the control group option for segment-based journeys?
