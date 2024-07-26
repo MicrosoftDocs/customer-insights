@@ -121,6 +121,12 @@ Export segments to other apps to further use the data. Export a segment from the
 
 1. Select **Back** to return to the main page for segments.
 
+## Automated deactivation of unused segments
+
+To optimize refresh performance, the system automatically deactivates unused segments every day. Unused segments are segments that aren't used in exports, measures, other segments, or in Customer Insights - Journeys in the past 30 days and create more than 45 days ago.
+
+Admins get a weekly summary of the deactivated segments for their information. They can then delete these segments if they are no longer needed or reactivate them if they intend to use them again. Alternatively, segment owners can [specify segments that are excluded from the automated deactivation](tbd.md). Deactivated segments don't refresh automatically when the system refreshes.
+
 ## Manage the number of active segments
 
 When you approach or exceed the number of active segments based on the [service limits](service-limits.md), you might experience the following:
