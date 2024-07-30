@@ -274,6 +274,8 @@
         href: real-time-marketing-quiet-times.md
       - name: Limit sent with frequency capping
         href: real-time-marketing-frequency-cap.md
+      - name: Split your audience into groups to deliver unique customer experiences
+        href: real-time-marketing-split-audience.md
       - name: When to use attribute versus if/then branches
         href: real-time-marketing-branches.md
       - name: Customize the journey designer
