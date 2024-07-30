@@ -11,7 +11,7 @@ search.audienceType:
   - enduser
 ---
 
-## Split your audience into groups to deliver unique customer experiences
+# Split your audience into groups to deliver unique customer experiences
 
 When you want customers to have different experiences in one journey, you have the option of using attribute branches or segments. Both of these methods use customer attributes to group similar customers together to deliver an experience. There can be times when you simply want a group of a certain size or you want to select a set of customers randomly rather than based on what they have in common. For example, you might want to send a survey out to a random subset of your customers for feedback or provide a coupon to the first 100 customers. Split tile allows you to implement such situations.
 
@@ -19,7 +19,7 @@ Split tile divides your audience to provide a subset of your audience with uniqu
 
 The journey split tile creates branches in your journey to split up the participant population. You can add other journey tiles in each branch to deliver different experiences. All branches merge in the end so customers continue to have a common journey.
 
- ![Split audience by branch in journeys](media/split-audience-journey.png "Split audience by branch in journeys")
+![Split audience by branch in journeys](media/split-audience-journey.png "Split audience by branch in journeys")
   
 You have two ways to split the audience:
 
