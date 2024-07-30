@@ -154,7 +154,7 @@
           href: email-creation-with-html-edits.md
         - name: Use custom fonts in emails
           href: use-custom-fonts.md
-        - name: "Preview: Exclude bot interactions"
+        - name: Exclude bot interactions
           href: bot-protection.md
         - name: Enhance email engagement by allowing browser viewing
           href: view-email-in-browser.md  
