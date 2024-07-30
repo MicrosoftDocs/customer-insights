@@ -1,7 +1,7 @@
 ---
-title: "Preview: Exclude bot interactions"
+title: Exclude bot interactions
 description: Learn how to exclude bot and nonhuman interactions on your emails in Dynamics 365 Customer Insights - Journeys.
-ms.date: 05/21/2024
+ms.date: 07/30/2024
 ms.topic: article
 author: srivas15
 ms.author: alfergus
@@ -11,7 +11,7 @@ search.audienceType:
   - enduser
 ---
 
-Exclude bot interactions
+# Exclude bot interactions
 
 Teams rely on channel analytics to evaluate campaign performance and to drive future improvements. Having reliable analytics data is critical to achieve this. Bot protection in Customer Insights - Journeys captures and filters out bot clicks on emails, text messages, push notifications, and custom channels. This provides a more reliable view of analytics data and prevents unexpected outcomes such as inflated metrics, incorrect journeys, and fraudulent double opt-ins.
 
@@ -20,7 +20,7 @@ Teams rely on channel analytics to evaluate campaign performance and to drive fu
 To enable bot protection, go to **Settings** > **Feature switches** and enable the **Bot Protection (preview)** toggle.
 
 > [!IMPORTANT]
-> Organizations created after July 22, 2024, will have bot advanced protection enabled by default.
+> Organizations created after July 22, 2024 have advanced bot protection enabled by default.
 
 ## Impact of bot protection
 
