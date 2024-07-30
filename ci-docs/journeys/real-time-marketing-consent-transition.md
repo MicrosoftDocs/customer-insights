@@ -100,19 +100,9 @@ An important point to consider in the creation of topic and purpose-based segmen
 
 Because the contact-point consent settings are only updated when using preference centers, outbound marketing forms and pages that update consent shouldn't be used once the migration has been done.
 
-### Implement double opt-in and Customer Insights - Journeys at the same time, contact level consent is required
+### Implement double opt-in and Customer Insights - Journeys
 
-As mentioned above, double opt-in is currently provided only through outbound marketing. The functionality will be implemented later to be natively available in Customer Insights - Journeys. If possible, it's best to wait for this functionality to become available natively in Customer Insights - Journeys. If that isn't an option, it's possible to set up double opt-in in outbound marketing and make use of those settings in Customer Insights - Journeys. In this scenario, it's important that you understand how the two modules work together:
-
-1. Forms and double opt-in must be set up in outbound marketing.
-1. If double opt-in is enabled on an outbound marketing form, any contact that gets created won't actually be in the system until the link is clicked in the confirmation email triggered by completing the form.
-    - This means that you can "trust" that a contact has double opted-in if they were created from a form that requires double opt-in.
-    - As part of the form, they could sign up for various subscription lists, or just have **DoNotBulkEmail** and **DoNotEmail** fields set to **0** (equals **Allow**), depending on whether the customer is using subscription lists.
-    - If subscription lists are used and the customer decides to opt into additional subscription lists using the subscription center and **Global Double Opt-in** is enabled, any changes a customer makes to join a new subscription list will trigger a confirmation email.
-1. Real-time marketing respects the **DoNotBulkEmail** and **DoNotEmail** fields on the contact.
-1. If a customer unsubscribes from a subscription list that is used to create a segment in a journey in Customer Insights - Journeys, the customer won't receive messages from the journey.
-
-Using both modules (outbound and real-time) at the same time is considered as a temporary solution until double opt-in becomes available in Customer Insights - Journeys. There are situations where double opt-in is only required the first time. In that case, the setup is still the same as described above. In addition, it's possible to use Customer Insights - Journeys features like purposes and topics. It's also possible to use the Customer Insights - Journeys preference center that allows customers to opt in for new topics. In that case, the corresponding Customer Insights - Journeys email won't require a second (double) opt-in.
+Double opt-in is now available in real-time journeys. To enable double-opt-in, see [Double opt-in in real-time journeys](real-time-marketing-double-opt-in.md).
 
 ### Use Customer Insights - Journeys and lead consent, manage consent on contact-point level
 
