@@ -49,7 +49,7 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 - **Improve engagement and compliance with double opt-in**
     - Double opt-in is a valuable tool for email marketing, ensuring a high-quality, engaged subscriber base by requiring users to confirm their subscription through a follow-up email. This process not only reduces spam complaints and bounce rates but also enhances sender reputation and supports compliance with data protection regulations. By implementing double opt-in, marketers can cultivate a more effective email marketing strategy, leading to increased open and click-through rates and a better overall brand experience for subscribers.
     - [Release plan](/dynamics365/release-plan/2024wave1/customer-insights/dynamics365-customer-insights-journeys/improve-engagement-compliance-double-opt-in)
-    - [Docs]()
+    - [Docs](real-time-marketing-double-opt-in.md)
 
 ## June 2024 update
 
