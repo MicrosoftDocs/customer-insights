@@ -11,18 +11,16 @@ search.audienceType:
   - enduser
 ---
 
-# Preview: Exclude bot interactions
-
-> [!IMPORTANT]
-> A preview feature is a feature that is not complete, but is made available before it’s officially in a release so customers can get early access and provide feedback. Preview features aren’t meant for production use and may have limited or restricted functionality.
->
-> Microsoft doesn't provide support for this preview feature. Microsoft Dynamics 365 Technical Support won’t be able to help you with issues or questions. Preview features aren’t meant for production use, especially to process personal data or other data that are subject to legal or regulatory compliance requirements.
+Exclude bot interactions
 
 Teams rely on channel analytics to evaluate campaign performance and to drive future improvements. Having reliable analytics data is critical to achieve this. Bot protection in Customer Insights - Journeys captures and filters out bot clicks on emails, text messages, push notifications, and custom channels. This provides a more reliable view of analytics data and prevents unexpected outcomes such as inflated metrics, incorrect journeys, and fraudulent double opt-ins.
 
 ## Enable bot protection
 
 To enable bot protection, go to **Settings** > **Feature switches** and enable the **Bot Protection (preview)** toggle.
+
+> [!IMPORTANT]
+> Organizations created after July 22, 2024, will have bot advanced protection enabled by default.
 
 ## Impact of bot protection
 
