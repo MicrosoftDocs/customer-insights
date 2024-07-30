@@ -34,7 +34,7 @@ Double opt-in for real time journeys is rolling out in July and August of 2024. 
 | Region             | Availability date |
 |--------------------|-------------------|
 | IND                | Now               |
-| FRA, CHE, CAN, SAM | July 29           |
+| FRA, CHE, CAN, SAM | Now          |
 | OCE, GBR, JPN, APJ | July 30           |
 | EU                 | July 31           |
 | US                 | August 1          |
@@ -108,7 +108,7 @@ Enabling double opt-in for a compliance profile will only enable double opt-in f
 This applies to orgs with the DOI feature flag enabled.
 
 > [!IMPORTANT]
-> Even though the system creates a journey to send the double opt-in confirmation emails on form submission, the journey itself is not editable in the June 2024 release. This journey will be enabled for editing in an upcoming release and will enable you to manage more advanced double opt-in scenarios. For example, sending a reminder email to anyone that has not confirmed their opt-in within a specified period.
+> The system creates a journey to send the double opt-in confirmation emails on form submission. With July 2024 release, you can edit this journey to manage more advanced double opt-in scenarios, for example, sending a reminder email to anyone that has not confirmed their opt-in within a specified period.
 
 ## Form level override for double opt-in
 
