@@ -1,7 +1,7 @@
 ---
 title: Customer Insights - Journeys integration with Microsoft Fabric
 description: Learn about how to integrate Customer Insights - Journeys with Microsoft Fabric.
-ms.date: 07/26/2024
+ms.date: 07/31/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -88,11 +88,11 @@ The following sections explain how to set up Power BI and access your Customer I
 | Question                      | Answer               | 
 |:-----------------------------------|:------------------------------|
 | What license do I need to enable Customer Insights - Journeys integration with Fabric? | You need a Power BI premium license or [Fabric capacity](/fabric/enterprise/licenses). If you don't have a Power BI premium license or Fabric capacity, you can sign up for a free Fabric trial capacity: [Fabric (preview) trial](/fabric/get-started/fabric-trial). | 
-| What is the Customer Insights Journeys interactiond data schema? | You can find detailed information on Customer Insights - Journeys interaction data schema here: [Overview of Customer Insights - Journeys - Common Data Model](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsightsjourneys/overview) |
+| What is the Customer Insights - Journeys interaction data schema? | You can find detailed information on the Customer Insights - Journeys interaction data schema here: [Overview of Customer Insights - Journeys - Common Data Model](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsightsjourneys/overview) |
 | Why don't I see all Customer Insights - Journeys interaction tables when creating shortcuts in Fabric? | The Customer Insights - Journeys folder only lists the interaction types for which data has been generated up to that point. | 
 | Why do I see more email-delivered versus email-sent interactions? | In the event of an email remote bounce, we list two "email delivered" interactions for the same message with the same time stamp despite no message being delivered to the contact/lead/Customer Insights - Data Profile email address. This is because the second interaction is intended to "erase" the first one. To count them properly, you should use the ["DeliveredCount"](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsightsjourneys/emaildelivered#DeliveredCount) field. |
-| How often do Customer Insigths Journeys data get updated in Fabric? | Data changes in Customer Insights Journeys tables will be reflected in Fabric up to 3 hours later. |
-| Why don't I see all my data in Fabric? | Initially, only new data (real-time journeys and some outbound marketing data) generated after the General Availability date (July 2024) of the feature will be available for custom reporting. We're in the process of performing historical data migrations for real-time journeys and outbound marketing data for all orgs. Please contact us to assist you. |
+| How often does Customer Insights - Journeys data get updated in Fabric? | Data changes in Customer Insights - Journeys tables will be reflected in Fabric up to three hours later. |
+| Why don't I see all my data in Fabric? | Initially, only new data (real-time journeys and some outbound marketing data) generated after the feature's general availability date (July 2024) will be available for custom reporting. We're in the process of performing historical data migrations for real-time journeys and outbound marketing data for all orgs. [Contact us](troubleshoot-faq.d#how-can-i-create-a-support-ticket-from-the-power-platform-admin-center) for further assistance. |
 
 ## Transition to general availability
 
