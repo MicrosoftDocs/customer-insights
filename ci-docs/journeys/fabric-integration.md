@@ -26,7 +26,7 @@ Makers can build low-code apps and automation to orchestrate business processes 
 
 ## Onboarding
 
-The following sections explain how to set up Power BI and link to Fabric.
+The following sections explain how to set up Power BI and access your Customer Insights - Journeys data by creating shortcuts in Fabric.
 
 ### Set up Power BI
 
@@ -36,12 +36,12 @@ The following sections explain how to set up Power BI and link to Fabric.
     :::image type="content" source="media/setting-up-pbi.png" alt-text="Set-up Power BI screenshot." lightbox="media/setting-up-pbi.png":::
 
 1. The Fabric integration feature is only available in premium workspaces. If you don’t have [Fabric capacity](/fabric/enterprise/licenses) or Power BI premium capacity, you can sign up for free Fabric trial capacity: [Fabric (preview) trial](/fabric/get-started/fabric-trial).
-1. It's highly recommended that you create a new Power BI workspace to directly link to Dataverse. The workspace you choose to link with Dataverse must be assigned to a premium capacity in the same region as your Dataverse environment.
-1. To confirm that you can create a premium workspace, go to **Workspace settings** > **Premium** and ensure that you have **Trial**, **Fabric**, or **Premium** capacity selected.
+1. It's highly recommended that you create a new Power BI workspace to work with your Customer Insights - Journeys data.
+1. To confirm that you can create a premium workspace, go to **Workspace settings** > **License info** and ensure that you have **Trial**, **Fabric**, or **Premium** capacity selected.
 
     :::image type="content" source="media/set-workspace-settings.png" alt-text="Create your workspace as per your requirement." lightbox="media/set-workspace-settings.png":::
 
-### Create Fabric shortcuts for the Customer Insights - Journeys analytics folder (Public preview)
+### Create Fabric shortcuts for the Customer Insights Journeys folder
 
 1. Start by [opening Fabric](https://app.fabric.microsoft.com).
 1. Create or open a Workspace.
@@ -56,8 +56,8 @@ The following sections explain how to set up Power BI and link to Fabric.
     > [!div class="mx-imgBorder"]
     > ![Select your Dataverse from the shortcut](media/select-your-dataverse.png "Select your Dataverse from the shortcut")
 
-1. Supply your Dataverse environment URL (Example: orgname.crm.dynamic.com) and the credentials that you want to access the environment with.  Dataverse shortcuts utilize a delegated authorization model. All data access through the shortcut utilizes this credential. This credential must have System Administration permission in the Dataverse environment. Be sure to secure access to this workspace before sharing this data with your users.
-1. Choose the tables that you want to create a shortcut to. Each table is its own shortcut in the Lakehouse. Customer Insights - Journeys interaction data tables appear in the left menu under the **"Customer Insights - Journeys (Preview)"** folder. The Customer Insights - Journeys folder only lists the interaction types for which data has been generated up to that point. If you don't see all your Dataverse tables (CDS2 folder), you may need to configure your Dataverse environment. Use **Link to Fabric** to update the available tables.
+1. Supply your Dataverse environment URL (Example: orgname.crm.dynamic.com) and the credentials that you want to access the environment with. Dataverse shortcuts utilize a delegated authorization model. All data access through the shortcut utilizes this credential. This credential must have System Administration permission in the Dataverse environment. Be sure to secure access to this workspace before sharing this data with your users.
+1. Choose the tables that you want to create a shortcut to. Each table is its own shortcut in the Lakehouse. Customer Insights - Journeys interaction data tables appear in the left menu under the **"Customer Insights Journeys"** folder. The Customer Insights Journeys folder only lists the interaction types for which data has been generated up to that point. If you don't see all your Dataverse tables (CDS2 folder), you may need to configure your Dataverse environment. Use **Link to Fabric** to update the available tables.
 
     :::image type="content" source="media/link-to-fabric-through-shortcut.png" alt-text="Link to fabric through shortcut." lightbox="media/link-to-fabric-through-shortcut.png":::
 
@@ -83,27 +83,21 @@ The following sections explain how to set up Power BI and link to Fabric.
 > [!NOTE]
 > You can find detailed information on Customer Insights - Journeys interaction data schema here: [Overview of Customer Insights - Journeys - Common Data Model](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsightsjourneys/overview)
 
-## Known limitations during preview
-
-- You must have a Power BI premium capacity, Fabric premium capacity, or trial capacity. Power BI premium per user capacity isn't sufficient.
-- Don't delete any Fabric artifacts such as Lakehouse, SQL endpoint, etc. during the preview.
-- Depending on the size of the data, initial sync may take 30 minutes or more. In the case of large tables, initial sync may take longer before you can consume data in Fabric.
-- After the initial sync, data changes in tables will be reflected in Fabric up to 24 hours later.
-- Initially, only new data (real-time journeys and some outbound marketing data) generated after the date of activating the preview will be available for custom reporting. 
-- It's possible that there will be changes (for example, new attributes) in the real-time journeys schema during preview.
-
 ## Frequently asked questions
 
 | Question                      | Answer               | 
 |:-----------------------------------|:------------------------------|
 | What license do I need to enable Customer Insights - Journeys integration with Fabric? | You need a Power BI premium license or [Fabric capacity](/fabric/enterprise/licenses). If you don't have a Power BI premium license or Fabric capacity, you can sign up for a free Fabric trial capacity: [Fabric (preview) trial](/fabric/get-started/fabric-trial). | 
+| What is the Customer Insights Journeys interactiond data schema? | You can find detailed information on Customer Insights - Journeys interaction data schema here: [Overview of Customer Insights - Journeys - Common Data Model](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsightsjourneys/overview) |
 | Why don't I see all Customer Insights - Journeys interaction tables when creating shortcuts in Fabric? | The Customer Insights - Journeys folder only lists the interaction types for which data has been generated up to that point. | 
 | Why do I see more email-delivered versus email-sent interactions? | In the event of an email remote bounce, we list two "email delivered" interactions for the same message with the same time stamp despite no message being delivered to the contact/lead/Customer Insights - Data Profile email address. This is because the second interaction is intended to "erase" the first one. To count them properly, you should use the ["DeliveredCount"](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsightsjourneys/emaildelivered#DeliveredCount) field. |
+| How often do Customer Insigths Journeys data get updated in Fabric? | Data changes in Customer Insights Journeys tables will be reflected in Fabric up to 3 hours later. |
+| Why don't I see all my data in Fabric? | Initially, only new data (real-time journeys and some outbound marketing data) generated after the General Availability date (July 2024) of the feature will be available for custom reporting. We're in the process of performing historical data migrations for real-time journeys and outbound marketing data for all orgs. Please contact us to assist you. |
 
 ## Transition to general availability
 
 > [!NOTE]
-> Preview customers in IND, SAM, CAN, FRA, CHE, OCE, APJ, GBR, JPN, UAE can already start the transition to the general availability version of the feature.
+> Preview customers can start the transition to the general availability version of the feature.
 
 To transition from the public preview to the general availability (GA) version of the custom reporting with Fabric feature, follow these steps in order:
 
