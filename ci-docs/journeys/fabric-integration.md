@@ -1,5 +1,5 @@
 ---
-title: "Preview: Customer Insights - Journeys integration with Microsoft Fabric"
+title: Customer Insights - Journeys integration with Microsoft Fabric
 description: Learn about how to integrate Customer Insights - Journeys with Microsoft Fabric.
 ms.date: 07/26/2024
 ms.topic: article
@@ -11,12 +11,10 @@ search.audienceType:
   - enduser
 ---
 
-# Preview: Customer Insights - Journeys integration with Microsoft Fabric
+# Customer Insights - Journeys integration with Microsoft Fabric
 
 > [!IMPORTANT]
-> A preview feature is a feature that is not complete but is made available before it’s officially in a release so customers can get early access and provide feedback. Preview features aren’t meant for production use and may have limited or restricted functionality.
-> 
-> Microsoft doesn't provide support for this preview feature. Microsoft Dynamics 365 Technical Support won’t be able to help you with issues or questions. Preview features aren’t meant for production use, especially to process personal data or other data that are subject to legal or regulatory compliance requirements.
+> To avoid service disruptions, preview users of the integration with Microsoft Fabric  must follow the [Transition to general availability guidance](fabric-integration.md#transition-to-general-availability).
 
 In Customer Insights - Journeys, you can effortlessly create custom Power BI reports tailored to your business needs by using Microsoft Fabric capabilities. Harness seamless access to data to gain a complete understanding of your campaigns, lead management, market performance, and customer engagement, enabling you to identify new opportunities.
 
@@ -102,6 +100,22 @@ The following sections explain how to set up Power BI and link to Fabric.
 | Why don't I see all Customer Insights - Journeys interaction tables when creating shortcuts in Fabric? | The Customer Insights - Journeys folder only lists the interaction types for which data has been generated up to that point. | 
 | Why do I see more email-delivered versus email-sent interactions? | In the event of an email remote bounce, we list two "email delivered" interactions for the same message with the same time stamp despite no message being delivered to the contact/lead/Customer Insights - Data Profile email address. This is because the second interaction is intended to "erase" the first one. To count them properly, you should use the ["DeliveredCount"](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsightsjourneys/emaildelivered#DeliveredCount) field. |
 
+## Transition to general availability
+
+> [!NOTE]
+> Preview customers in IND, SAM, CAN, FRA, CHE, OCE, APJ, GBR, JPN, UAE can already start the transition to the general availability version of the feature.
+
+To transition from the public preview to the general availability (GA) version of the custom reporting with Fabric feature, follow these steps in order:
+
+1. **Delete preview shortcuts**: Remove any shortcuts that point to the preview analytics folder.
+    :::image type="content" source="media/fabric-ga-delete-shortcuts.png" alt-text="Screenshot showing where to delete shortcuts.":::
+1. **Create new shortcuts**: Navigate to the **Customer Insights - Journeys** folder and create new shortcuts following the same steps you used previously.
+    :::image type="content" source="media/fabric-ga-create-shortcuts.png" alt-text="Screenshot showing Customer Insights - Journeys folder.":::
+    :::image type="content" source="media/fabric-ga-create-shortcuts-2.png" alt-text="Screenshot showing an example of creating a shortcut.":::
+1. **Update the semantic model**: Go to the SQL analytics endpoint view. Select the **Reporting** tab and update the semantic model.
+    :::image type="content" source="media/fabric-ga-update-semantic.png" alt-text="Screenshot showing button to update the semantic model.":::
+1. **Refresh Power BI reports**: Refresh your Power BI reports. Data from the GA folder should now be visible.
+
 ## Learn more
 
 Here are some additional resources for this topic:
@@ -112,3 +126,5 @@ Here are some additional resources for this topic:
 - [Lakehouse end-to-end scenario: overview and architecture](/fabric/data-engineering/tutorial-lakehouse-introduction)
 - [Implement medallion lakehouse architecture in Microsoft Fabric](/fabric/onelake/onelake-medallion-lakehouse-architecture)
 - [Organize a Fabric lakehouse using medallion architecture design](/training/modules/describe-medallion-architecture/)
+
+[!INCLUDE [footer-include](./includes/footer-banner.md)]
