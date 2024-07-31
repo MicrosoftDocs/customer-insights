@@ -154,7 +154,7 @@
           href: email-creation-with-html-edits.md
         - name: Use custom fonts in emails
           href: use-custom-fonts.md
-        - name: "Preview: Exclude bot interactions"
+        - name: Exclude bot interactions
           href: bot-protection.md
         - name: Enhance email engagement by allowing browser viewing
           href: view-email-in-browser.md  
@@ -356,7 +356,7 @@
       href: real-time-marketing-cross-journey-analytics.md
     - name: How to use aggregate channel analytics
       href: real-time-marketing-channel-analytics.md
-    - name: "Preview: Customer Insights - Journeys integration with Microsoft Fabric"
+    - name: Customer Insights - Journeys integration with Microsoft Fabric
       href: fabric-integration.md
     - name: "Preview: Marketing effectiveness analytics"
       href: real-time-marketing-effectiveness.md
