@@ -1,7 +1,7 @@
 ---
 title: Consent management and double opt-in transition guidance
 description: Learn the capabilities of consent management in Dynamics 365 Customer Insights - Journeys and how to use them in specific scenarios.
-ms.date: 10/23/2023
+ms.date: 08/01/2024
 ms.topic: article
 author: petkra
 ms.author: petkra
@@ -100,7 +100,7 @@ An important point to consider in the creation of topic and purpose-based segmen
 
 Because the contact-point consent settings are only updated when using preference centers, outbound marketing forms and pages that update consent shouldn't be used once the migration has been done.
 
-### Implement double opt-in and Customer Insights - Journeys
+### Implement double opt-in in real-time journeys
 
 Double opt-in is now available in real-time journeys. To enable double-opt-in, see [Double opt-in in real-time journeys](real-time-marketing-double-opt-in.md).
 
