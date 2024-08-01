@@ -1,7 +1,7 @@
 ---
 title: Personalize content
 description: Learn how to personalize content in Dynamics 365 Customer Insights - Journeys.
-ms.date: 10/30/2023
+ms.date: 07/31/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -12,6 +12,9 @@ search.audienceType:
 ---
 
 # Personalize content
+
+> [!NOTE]
+> Personalization tokens created within a given business unit are limited *only* to that business unit. If you want to use the same tokens in other business units, you must recreate the tokens in the other respective business units. Learn more: [Business unit support in real-time journeys](real-time-marketing-business-units.md)
 
 Dynamics 365 Customer Insights - Journeys's features offer powerful personalization capabilities. In this article, you'll learn how to set default values for personalized data, preview personalized content, personalize text messages and push notifications, and use related tables.
 

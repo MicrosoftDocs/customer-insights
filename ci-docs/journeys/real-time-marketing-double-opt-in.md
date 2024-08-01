@@ -1,7 +1,7 @@
 ---
 title: Double opt-in in real-time journeys
 description: Learn how to use double opt-in in Dynamics 365 Customer Insights - Journeys.
-ms.date: 06/21/2024
+ms.date: 07/31/2024
 ms.topic: article
 author: cbirkett
 ms.author: alfergus
@@ -33,9 +33,9 @@ Double opt-in for real time journeys is rolling out in July and August of 2024. 
 
 | Region             | Availability date |
 |--------------------|-------------------|
-| IND                | Now               |
-| FRA, CHE, CAN, SAM | July 29           |
-| OCE, GBR, JPN, APJ | July 30           |
+| IND                | Available         |
+| FRA, CHE, CAN, SAM | Available         |
+| OCE, GBR, JPN, APJ | Available         |
 | EU                 | July 31           |
 | US                 | August 1          |
 
