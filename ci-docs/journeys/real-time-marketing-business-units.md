@@ -1,5 +1,5 @@
 ---
-title: Business unit support in Customer Insights - Journeys
+title: Business unit support in real-time journeys
 description: Learn how to use business unit support in Dynamics 365 Customer Insights - Journeys.
 ms.date: 03/18/2023
 ms.topic: article
@@ -11,7 +11,7 @@ search.audienceType:
   - enduser
 ---
 
-# Business unit support in Customer Insights - Journeys
+# Business unit support in real-time journeys
 
 Business unit scoping in Customer Insights - Journeys can be enabled at an environment level by an administrator. Once this feature is enabled, all real-time journeys and segments created within the environment will be automatically scoped to the record owner’s business unit.
 

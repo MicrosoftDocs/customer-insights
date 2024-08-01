@@ -42,4 +42,4 @@ The following table compares the analytics features in outbound marketing and Cu
 | Gain insights into your audience's behavior and interests | View contact insights | Yes | Yes |
 | Gain insights into your audience's behavior and interests  | View lead insights | Yes | Yes |
 | Gain insights into your audience's behavior and interests  | View marketing data in the shared customer timeline | Yes | Yes |
-| Build custom reports tailored to your business needs |   | Yes | Yes / in preview |
+| Build custom reports tailored to your business needs |   | Yes | Yes |
