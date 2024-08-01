@@ -23,7 +23,7 @@ Outbound marketing and real-time journeys have equivalent in-app reporting capab
 
 :::image type="content" source="media/real-time-marketing-effectiveness-analytics-dashboard.png" alt-text="Customer Insights - Journeys effectiveness analytics dashboard." lightbox="media/real-time-marketing-effectiveness-analytics-dashboard.png":::
 
-Sometimes it's required to consume marketing interaction data outside of the in-app experiences. This could mean the creation of reports or integration with other systems. Outbound marketing provides a mechanism to export this data to an Azure Blob storage and sample Power BI reports. This has allowed customers to also build their own custom reports or integration pipelines.
+Sometimes users need to consume marketing interaction data outside of the in-app experiences. This could mean the creation of reports or integration with other systems. Outbound marketing provides a mechanism to export this data to an Azure Blob storage and sample Power BI reports. This allows customers to also build their own custom reports or integration pipelines.
 
 For custom reporting in real-time journeys, you can now effortlessly create custom Power BI reports tailored to your business needs or export your data using Microsoft Fabric capabilities. Learn more: [Build custom reports using Microsoft Fabric integration](fabric-integration.md). With this capability, you have even more options to consume data with more data sources in your reports. While the data models are the same between outbound marketing and real-time journeys, existing custom reports and pipelines must be reconfigured to use the new data sources in Microsoft Fabric.
 
