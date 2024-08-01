@@ -1,7 +1,7 @@
 ---
 title: Edit email components in a live journey
 description: Learn how to edit email components in live journey in Dynamics 365 Customer Insights - Journeys
-ms.date: 10/30/2023
+ms.date: 08/01/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -44,10 +44,12 @@ The email editor components that can be edited in a live journey are:
 | Compliance profile and consent related settings | Yes | You can update the settings. |
 | Subject and preheader | Yes | You can add or edit the text content. |
 | QR code | Yes | You can add or edit the QR code without any   personalization. |
-| Survey links | Yes | You can add or edit the   survey links without any personalization. |
+| Survey links | Yes | You can add or edit the survey links without any personalization. |
 | Personalization | Yes | You can add or edit the personalization and rules. |
 | Conditional content | Yes | You can only edit the existing condition. |
 
 > [!NOTE]
 > - To easily track and identify links in analytics, we incorporate editable "link aliases" into the URL. 
-> - When editing personalization and conditional content in live emails, enable the "Live email editing with Link alias" feature flag. If you need to disable this feature, please [contact the support team](/power-platform/admin/get-help-support#view-solutions-or-create-a-support-request).
+> - When editing personalization and conditional content in live emails, enable the "Live email editing with Link alias" feature flag. If you need to disable this feature, [contact the support team](/power-platform/admin/get-help-support#view-solutions-or-create-a-support-request)
+
+[!INCLUDE [footer-include](./includes/footer-banner.md)]
