@@ -1,7 +1,7 @@
 ---
 title: Double opt-in in real-time journeys
 description: Learn how to use double opt-in in Dynamics 365 Customer Insights - Journeys.
-ms.date: 06/21/2024
+ms.date: 08/01/2024
 ms.topic: article
 author: cbirkett
 ms.author: alfergus
@@ -33,11 +33,11 @@ Double opt-in for real time journeys is rolling out in July and August of 2024. 
 
 | Region             | Availability date |
 |--------------------|-------------------|
-| IND                | Now               |
-| FRA, CHE, CAN, SAM | Now          |
-| OCE, GBR, JPN, APJ | July 30           |
-| EU                 | July 31           |
-| US                 | August 1          |
+| IND                | Available         |
+| FRA, CHE, CAN, SAM | Available         |
+| OCE, GBR, JPN, APJ | Available         |
+| EU                 | Available         |
+| US                 | Available         |
 
 ## Who should use double opt-in?
 
@@ -108,7 +108,7 @@ Enabling double opt-in for a compliance profile will only enable double opt-in f
 This applies to orgs with the DOI feature flag enabled.
 
 > [!IMPORTANT]
-> The system creates a journey to send the double opt-in confirmation emails on form submission. With July 2024 release, you can edit this journey to manage more advanced double opt-in scenarios, for example, sending a reminder email to anyone that has not confirmed their opt-in within a specified period.
+> The system creates a journey to send the double opt-in confirmation emails on form submission. With the July 2024 release, you can edit this journey to manage more advanced double opt-in scenarios, for example, sending a reminder email to anyone that has not confirmed their opt-in within a specified period.
 
 ## Form level override for double opt-in
 
