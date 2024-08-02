@@ -1,7 +1,7 @@
 ---
 title: New and upcoming features
 description: Information about new features, improvements, and bug fixes in Dynamics 365 Customer Insights - Journeys releases.
-ms.date: 06/28/2024
+ms.date: 08/02/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -24,13 +24,7 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 
 | App              | GA release      |
 |------------------|-----------------|
-| Customer Insights - Journeys        |     |
-
-> [!NOTE]
-> On July 1, 2024, active journeys in the real-time journeys area that were created on or before May 5, 2022 will stop working. To avoid disruption, follow the steps outlined in the [Known issues for journeys](journey-known-issues.md#steps-to-avoid-journey-disruption) article before July 1, 2024.
-
-> [!IMPORTANT]
-> After July 30, 2024, custom workflows that *write* to the **msdynmkt_contactpointconsent2** or **msdynmkt_contactpointconsent3** consent tables will no longer automatically have data synced to the latest **msdynmkt_contactpointconsent4** table. To ensure continued functionality of custom workflows, update the workflows to write to the **msdynmkt_contactpointconsent4** table *before* July 30.
+| Customer Insights - Journeys        |  1.1.46046.74   |
 
 ### General availability
 
@@ -39,17 +33,32 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
     - [Release plan](/dynamics365/release-plan/2024wave1/customer-insights/dynamics365-customer-insights-journeys/build-custom-reports-using-fabric-integration)
     - [Docs](fabric-integration.md)
 
+- **Improve reliability of insights with advanced bot protection**
+    - Ensuring the integrity of your data and the efficiency of your operations is paramount. Advanced bot protection in Customer Insights - Journeys empowers your business to thrive by safeguarding your business processes. Improve your business decisions with the confidence of knowing that the data you collect is accurate and represents real human interactions. With bot protection, you not only enhance the quality of your insights but also elevate the customer experience by minimizing disruptions caused by malicious bots.
+    - [Release plan](/dynamics365/release-plan/2024wave1/customer-insights/dynamics365-customer-insights-journeys/improve-reliability-insights-advanced-bot-protection)
+    - [Docs](bot-protection.md)
+
+- **Optimize email content based on customer behavior across devices**
+    - In real-time journeys email insights, you can now delve into comprehensive device data, including operating systems, browsers, device types, and email clients. Leverage the power of detailed engagement analysis across different platforms to fine-tune your marketing strategy. Tailor your email's design and content to align with the devices most used by your audience, ensuring seamless readability for your messages and, ultimately, leading to heightened customer interaction and loyalty.
+    - [Release plan](/dynamics365/release-plan/2024wave1/customer-insights/dynamics365-customer-insights-journeys/increase-email-engagement-optimizing-content-based-customers-behavior-across-devices)
+
 ### Public preview
+
+- **Improve engagement and compliance with double opt-in**
+    - Privacy and data protection laws in many regions require double opt-in functionality to help verify customer information. Double opt-in requires users to confirm subscription preferences through a follow-up email after the initial subscription. By confirming subscription preferences a second time, you comply with legal requirements and improve engagement by ensuring that users who’ve subscribed are intent on receiving future communications. When customers are certain they want to receive email communications, spam complaints and bounce rates are reduced, and your sender reputation is improved.
+    - [Release plan](/dynamics365/release-plan/2024wave1/customer-insights/dynamics365-customer-insights-journeys/improve-engagement-compliance-double-opt-in)
+    - [Docs](real-time-marketing-double-opt-in.md)
 
 - **Split your audience into groups to deliver unique customer experiences**
     - When you want customers to have different experiences in one journey, you need to divide them into groups. While this is possible today using attribute branches or segments, sometimes the number of customers in each branch is more important than what those customers have in common. For example, you may want to send a survey out to a random subset of your customers for feedback, something that would be time-consuming to configure today. The new journey split tile allows you to split your audience into branches to provide a subset of your audience with unique experiences, whether that be a survey, a new type of experience to test, or a first-come promotional offer. You can split your audience by percentages (for cases where you need randomness) or by numbers (for cases where you want to deliver specific experiences to a set number of people).
     - [Release plan](/dynamics365/release-plan/2024wave1/customer-insights/dynamics365-customer-insights-journeys/provide-varied-experiences-one-journey-using-journey-split-tiles)
     - [Docs](real-time-marketing-split-audience.md)
 
-- **Improve engagement and compliance with double opt-in**
-    - Double opt-in is a valuable tool for email marketing, ensuring a high-quality, engaged subscriber base by requiring users to confirm their subscription through a follow-up email. This process not only reduces spam complaints and bounce rates but also enhances sender reputation and supports compliance with data protection regulations. By implementing double opt-in, marketers can cultivate a more effective email marketing strategy, leading to increased open and click-through rates and a better overall brand experience for subscribers.
-    - [Release plan](/dynamics365/release-plan/2024wave1/customer-insights/dynamics365-customer-insights-journeys/improve-engagement-compliance-double-opt-in)
-    - [Docs](real-time-marketing-double-opt-in.md)
+### Monthly enhancements
+
+- **Optimize your email content with enhanced variation insights**
+    - You can now effortlessly compare the performance of different email variants within real-time journeys. Gain valuable insights into key metrics such as open rates, click rates, and unique clicks for each variant, enabling you to identify what resonates best with your audience. Optimize your email campaigns by leveraging data-driven decisions to improve engagement and drive better results.
+    - [Docs](real-time-marketing-analytics.md#email-insights)
 
 ## June 2024 update
 

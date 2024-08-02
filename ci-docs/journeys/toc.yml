@@ -262,7 +262,7 @@
         href: real-time-marketing-enhanced-journey-reminders.md
       - name: Add email CC recipients to journeys
         href: real-time-marketing-add-cc-recipients.md
-      - name: Customer Insights - Journeys journey tile reference
+      - name: Real-time journeys tile reference
         href: real-time-marketing-tile-reference.md
     - name: Advanced journey capabilities
       items:
@@ -274,7 +274,7 @@
         href: real-time-marketing-quiet-times.md
       - name: Limit sent with frequency capping
         href: real-time-marketing-frequency-cap.md
-      - name: Split your audience into groups to deliver unique customer experiences
+      - name: "Preview: Split your audience into groups"
         href: real-time-marketing-split-audience.md
       - name: When to use attribute versus if/then branches
         href: real-time-marketing-branches.md
