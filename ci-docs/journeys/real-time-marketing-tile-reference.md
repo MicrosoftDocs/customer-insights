@@ -1,7 +1,7 @@
 ---
-title: Customer Insights - Journeys tile reference
+title: Real-time journeys tile reference
 description: Learn about tiles in Dynamics 365 Customer Insights - Journeys.
-ms.date: 05/21/2024
+ms.date: 08/02/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -11,7 +11,7 @@ search.audienceType:
   - enduser
 ---
 
-# Customer Insights - Journeys tile reference
+# Real-time journeys tile reference
 
 This article describes the various journey capabilities available in Customer Insights - Journeys. For complete examples of creating customer journeys, see [Create a trigger-based journey](real-time-marketing-trigger-based-journey.md) and [Create a segment-based journey](real-time-marketing-segment-based-journey.md).
 
@@ -83,6 +83,10 @@ The attribute branch lets you branch the journey based on various attributes inc
 - **Attributes in triggers**: You can branch the journey based on attribute values in triggers. For attribute values to be shown, the trigger must have previously occurred in the journey. Thus, you can only check the attribute values for a trigger that starts a trigger-based journey, or triggers being used in an if/then branch.
 
 The attribute branch checks for attribute values the moment a customer enters this step. For example, when a customer enters the attribute branch step, the segment membership condition will check whether the customer is part of the specified segment at that instant.
+
+### Audience split
+
+The audience split tile allows you to divide your audience to give a unique set of experiences to random sets of the audience. You can split by percentage or split by number. Learn more: [Preview: Split your audience into groups](real-time-marketing-split-audience.md)
 
 ## Activate a custom trigger
 
