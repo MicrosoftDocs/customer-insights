@@ -56,7 +56,7 @@ Select any journey component to view near real-time operational analytics in the
 
 - **Channel analytics**: For any message in the journey (email, text, or push notification), view the delivery funnel and additional metrics to diagnose the content performance.
 
-    :::image type="content" source="media/real-time-marketing-channel-analytics.png" alt-text="Email channel analytics screenshot." lightbox="media/real-time-marketing-channel-analytics.png":::
+    :::image type="content" source="media/analytics-channel-side-pane.png" alt-text="Email channel analytics screenshot." lightbox="media/analytics-channel-side-pane.png":::
 
     In the Overview section, you can monitor key performance indicators per channel message such as:
     - **Delivery rate**: The percentage of email, text, or custom channel messages delivered divided by the number of email, text, or custom channel messages sent.
@@ -64,7 +64,7 @@ Select any journey component to view near real-time operational analytics in the
     - **Click rate**: The percentage of unique email, text, or push notification/custom channel clicks divided by the number of email, text, or push notification/custom channel links delivered.
     - **Response rate**: The percentage of unique text message responses divided by the number of text messages sent.
   
-    To view delivery and interaction statistics, select the **View details** link in the **Delivery funnel** or **Delivery issues** section on the channel analytics pane. Delivery and interaction details allow you to analyze delivery, engagement, and performance data for your email, text, push notification, or custom channel messages.
+    To view **delivery and interaction statistics**, select the **View details** link in the **Delivery funnel** or **Delivery issues** section on the channel analytics pane. Delivery and interaction details allow you to analyze delivery, engagement, and performance data for your email, text, push notification, or custom channel messages.
 
     - You can view deliverability details on messages sent, delivered, blocked, or bounced along with the respective reasons, detailed data on customers who opened or clicked a message, as well as unsubscription interaction data.
     - For emails, delivery and interactions statistics include data on user agents your customers are using to engage with your emails. Under total opens you can see data about email clients and under total clicks you can find data on types of devices, operating systems, and browsers.
