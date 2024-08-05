@@ -1,7 +1,7 @@
 ---
 title: New and upcoming features
 description: Information about new features, improvements, and bug fixes in Dynamics 365 Customer Insights - Journeys releases.
-ms.date: 08/02/2024
+ms.date: 08/05/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -41,6 +41,7 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 - **Optimize email content based on customer behavior across devices**
     - In real-time journeys email insights, you can now delve into comprehensive device data, including operating systems, browsers, device types, and email clients. Leverage the power of detailed engagement analysis across different platforms to fine-tune your marketing strategy. Tailor your email's design and content to align with the devices most used by your audience, ensuring seamless readability for your messages and, ultimately, leading to heightened customer interaction and loyalty.
     - [Release plan](/dynamics365/release-plan/2024wave1/customer-insights/dynamics365-customer-insights-journeys/increase-email-engagement-optimizing-content-based-customers-behavior-across-devices)
+    - [Docs](real-time-marketing-analytics.md#email-insights)
 
 ### Public preview
 
