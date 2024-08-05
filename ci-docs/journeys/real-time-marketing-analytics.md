@@ -27,22 +27,22 @@ With Customer Insights - Journeys analytics, you can:
 
 ## Contact insights
 
-Get a comprehensive view of how a contact has engaged with your journeys in Customer Insights - Journeys, including all past email sends, opens, clicks, form submissions, and more. Better understand your audience's behavior and interests, make informed decisions based on past engagement, and tailor your marketing efforts to their needs and preferences. To view contact insights, go to **Real-time journeys** > **Audience** > **Contacts**, select a contact record, and then open its **Insights** tab.
+Contact insights is a comprehensive view of how a contact has engaged with your journeys, including all past email sends, opens, clicks, form submissions, and more. Better understand your audience's behavior and interests, make informed decisions based on past engagement, and tailor your marketing efforts to their needs and preferences. To view contact insights, go to **Real-time journeys** > **Audience** > **Contacts**, select a contact record, and then open its **Insights** tab.
 
-The following insight categories are provided:
+The following insights categories are provided:
 
-- **Overview**: View a chart of the engagement interactions and a summary of the most important KPIs for each channel for the selected contact.
-- **Email insights**: View complete details of email interactions for the selected contact, including a list of all messages sent to them, plus lists of all opens, clicks, bounces, and more. 
-- **Form insights**: See which marketing forms the Contact has visited and submitted. View the content of each submission.
-- **Text message insights**: View complete details of text message interactions for the selected contact, including a list of all messages sent to them, plus lists of all clicks, replies, and more.
-- **Push notification insights**: See complete details of push notification interactions for the selected Contact, including a list of all messages sent to them and more.
-- **Custom channels insights**: View complete details of custom channel interactions for the selected Contact, including messages sent, clicked, and more.
+- **Overview**: A chart of the engagement interactions and a summary of the most important KPIs for each channel for the selected contact.
+- **Email insights**: Complete details of email interactions for the selected contact, including a list of all messages sent to them, plus lists of all opens, clicks, bounces, and more. View the email clients used to open emails and the device types, operating systems, and browsers used to click on emails.
+- **Form insights**: See which marketing forms the contact has visited and submitted. View the content of each submission.
+- **Text message insights**: Complete details of text message interactions for the selected contact, including a list of all messages sent to them, plus lists of all clicks, replies, and more.
+- **Push notification insights**: Complete details of push notification interactions for the selected contact, including a list of all messages sent to them and more.
+- **Custom channels insights**: Complete details of custom channel interactions for the selected contact, including messages sent, clicked and more.
 
     :::image type="content" source="media/real-time-marketing-custom-channel-contact-insights.png" alt-text="Screenshot of custom channel contact insights." lightbox="media/real-time-marketing-custom-channel-contact-insights.png":::
 
 ## Lead insights
 
-Just like with Contact insights, you can access a complete overview of your selected Lead's interactions with your marketing initiatives. The insights categories displayed for a Lead are the same as previously described in [Contact insights](#contact-insights). To view Lead insights, go to **Real-time journeys** > **Audience** > **Leads**, select a Lead record, and then open its Insights tab.
+Just like with contact insights, you can access a complete overview of your selected lead's interactions with your marketing initiatives. The insights categories displayed for a lead are the same as previously described in contact insights. To view lead insights, go to **Real-time journeys** > **Audience** > **Leads**, select a lead record, and then open its **Insights** tab.
 
 ## Journey operational analytics
 
@@ -64,59 +64,18 @@ Select any journey component to view near real-time operational analytics in the
     - **Click rate**: The percentage of unique email, text, or push notification/custom channel clicks divided by the number of email, text, or push notification/custom channel links delivered.
     - **Response rate**: The percentage of unique text message responses divided by the number of text messages sent.
   
-    To view delivery and interaction statistics, select the **View details** link in the **Delivery funnel** or **Delivery issues** section on the channel analytics pane. Delivery and interaction details allow you to analyze delivery, engagement, and performance data for your email, text, push notification, or custom channel messages. You can view deliverability details on messages sent, delivered, blocked, or bounced along with the respective reasons, detailed data on customers who opened or clicked a message, as well as unsubscription interaction data. It's important to note that a message’s unique opens and clicks are calculated based on the customer's journey run. This means that if the same customer enters the same journey multiple times and opens or clicks the same message each time, the system records multiple unique opens or clicks. For example, if a customer clicks the same message in two different journey executions, two unique clicks are recorded. You can export up to 50,000 records of interaction data, search through data using the profile's email address, and access links to audience profiles that interacted with your email messages. Timestamps are reported according to the organization's time zone.
+    To view delivery and interaction statistics, select the **View details** link in the **Delivery funnel** or **Delivery issues** section on the channel analytics pane. Delivery and interaction details allow you to analyze delivery, engagement, and performance data for your email, text, push notification, or custom channel messages.
 
-    :::image type="content" source="media/real-time-marketing-analytics-interactions.png" alt-text="Delivery and interactions details screenshot." lightbox="media/real-time-marketing-analytics-interactions.png":::
+    - You can view deliverability details on messages sent, delivered, blocked, or bounced along with the respective reasons, detailed data on customers who opened or clicked a message, as well as unsubscription interaction data.
+    - For emails, delivery and interactions statistics include data on user agents your customers are using to engage with your emails. Under total opens you can see data about email clients and under total clicks you can find data on types of devices, operating systems, and browsers.
+
+    A message’s unique opens and clicks are calculated based on the customer's journey run. This means that if the same customer enters the same journey multiple times and opens or clicks the same message each time, the system records multiple unique opens or clicks. For example, if a customer clicks the same message in two different journey executions, two unique clicks are recorded. You can export up to 50,000 records of interaction data, search through data using the profile's email address, and access links to audience profiles that interacted with your email messages. Timestamps are reported according to the organization's time zone.
+
+    :::image type="content" source="media/analytics-delivery-and-interaction-details.png" alt-text="Screenshot of delivery and interaction details." lightbox="media/analytics-delivery-and-interaction-details.png":::
   
 - **AI optimization**: Near real-time data to help you evaluate how applying AI optimization has helped your engagement rate.
 
     :::image type="content" source="media/real-time-marketing-ai-optimization.png" alt-text="AI optimization screenshot." lightbox="media/real-time-marketing-ai-optimization.png":::
-
-## Email insights
-Email insights provide a deep dive into how your audience interacts with your emails over time and track the trajectory of delivery rates, open rates, and click-through rates with precision. Beyond delivery and engagement trends, you can evaluate essential email KPIs and access comprehensive delivery and interaction details. To view email insights, go to **Real-time journeys** > **Email** > **Insights tab**.
-
-The following insight categories are provided:
-
-- **Delivery KPIs**: Gain insights into the delivery rate, number of blocks, and delivery failures for the selected message.
-- **Engagement KPIs**: Evaluate the open rate, click rate, click-to-open rate, number of messages marked as spam, and the count of unsubscriptions related to the selected message. 
-- **Delivery trend** and **Delivery funnel**: Explore the trends and funnel of email sent and delivered interactions, along with unique opens and unique clicks specific to the selected email.
-- **Engagement trend**: Examine the trends for total opens and clicks, providing a comprehensive understanding of the level of engagement associated with the selected email.
-
-:::image type="content" source="media/email-insights.png" alt-text="Email insights analytics dashboard." lightbox="media/email-insights.png":::
-
-> [!NOTE]
-> Data retention is 12 months for contact insights, lead insights, goal analytics, channel analytics (including email insights and delivery and interaction details), and AI optimization analytics.
-
-## Contact insights
-
-Contact insights is a comprehensive view of how a contact has engaged with your journeys, including all past email sends, opens, clicks, form submissions, and more. Better understand your audience's behavior and interests, make informed decisions based on past engagement, and tailor your marketing efforts to their needs and preferences. To view contact insights, go to **Real-time journeys** > **Audience** > **Contacts**, select a contact record, and then open its **Insights** tab.
-
-The following insights categories are provided:
-
-- **Overview**: A chart of the engagement interactions and a summary of the most important KPIs for each channel for the selected contact.
-- **Email insights**: Complete details of email interactions for the selected contact, including a list of all messages sent to them, plus lists of all opens, clicks, bounces, and more. View the email clients used to open emails and the device types, operating systems, and browsers used to click on emails.
-- **Form insights**: See which marketing forms the contact has visited and submitted. View the content of each submission.
-- **Text message insights**: Complete details of text message interactions for the selected contact, including a list of all messages sent to them, plus lists of all clicks, replies, and more.
-- **Push notification insights**: Complete details of push notification interactions for the selected contact, including a list of all messages sent to them and more.
-- **Custom channels insights**: Complete details of custom channel interactions for the selected contact, including messages sent, clicked and more.
-
-:::image type="content" source="media/analytics-contact-insights.png" alt-text="Screenshot of contact insights." :::
-
-## Lead insights
-
-Just like with contact insights, you can access a complete overview of your selected lead's interactions with your marketing initiatives. The insights categories displayed for a lead are the same as previously described in contact insights. To view lead insights, go to **Real-time journeys** > **Audience** > **Leads**, select a lead record, and then open its **Insights** tab.
-
-## Journey operational analytics
-
-To view delivery and interaction statistics, select the **View details** link in the **Delivery funnel** or **Delivery issues** section on the channel analytics pane. Delivery and interaction details allow you to analyze delivery, engagement, and performance data for your email, text, push notification, or custom channel messages.
-
-You can view deliverability details on messages sent, delivered, blocked, or bounced along with the respective reasons, detailed data on customers who opened or clicked a message, as well as unsubscription interaction data.
-
-For emails, delivery and interactions statistics include data on user agents your customers are using to engage with your emails. Under total opens you can see data about email clients and under total clicks you can find data on types of devices, operating systems, and browsers.
-
-A message’s unique opens and clicks are calculated based on the customer's journey run. This means that if the same customer enters the same journey multiple times and opens or clicks the same message each time, the system records multiple unique opens or clicks. For example, if a customer clicks the same message in two different journey executions, two unique clicks are recorded. You can export up to 50,000 records of interaction data, search through data using the profile's email address, and access links to audience profiles that interacted with your email messages. Timestamps are reported according to the organization's time zone.
-
-:::image type="content" source="media/analytics-delivery-and-interaction.png" alt-text="Screenshot of delivery and interaction details." :::
 
 ## Email insights
 
@@ -139,7 +98,7 @@ The following insights categories are provided:
     > Not all email clients, device types, browsers, and operating systems can be detected. They are labelled as “Unknown” when the user agent used by the customer could not be detected. They are labelled as “Other” when the user agent used by the customer can be detected but is non-categorized such as a smaller provider. 
 - **Variation insights**: Gain valuable insights into key metrics such as unique opens, unique clicks, number of delivered messages, open rate, click rate, spam messages, and unsubscriptions for each variant, enabling you to identify what resonates best with your audience.
 
-:::image type="content" source="media/analytics-email-insights.png" alt-text="Screenshot of email insights dashboard." :::
+    :::image type="content" source="media/analytics-email-insights.png" alt-text="Screenshot of email insights dashboard." lightbox="media/analytics-email-insights.png":::
 
 > [!NOTE]
 > Data retention is 12 months for contact insights, lead insights, goal analytics, channel analytics (including email insights and delivery and interaction details), and AI optimization analytics.
