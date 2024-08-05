@@ -1,7 +1,7 @@
 ---
 title: Migrate Dynamics 365 Customer Insights - Journeys between tenants
 description: Discover how to set up your environment for a tenant-to-tenant migration to start the transfer process between tenants.
-ms.date: 08/23/2023
+ms.date: 08/05/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -32,6 +32,6 @@ After tenant to tenant migration, the Customer Insights - Journeys environment w
 - Content assets uploaded to your source environment (such as images used in emails and landing pages) aren't available on the migrated environment. If you go live on the migrated environment with an email or page that was previously published on the source environment, the published design shows defunct links.
 - Other aspects of the org state not specific to Customer Insights - Journeys align with the [general tenant to tenant migration norms](/power-platform/admin/move-environment-tenant).
 - When migrating a Customer Insights - Journeys environment between tenants, interaction data (such as email clicks), analytics data (such as journey analytics), and Customer Voice data *isn't* migrated.
-- Migrating a Customer Insights - Journeys environment between tenants with Customer Insights attached is unsupported at this time.
+- Migrating a Customer Insights - Journeys environment between tenants with Customer Insights - Data connected is unsupported at this time. If attempted, the connection to Customer Insights - Data will be broken and will need to be reset.
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
