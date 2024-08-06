@@ -22,7 +22,7 @@ NOTE: Some GUIDs are labeled as "Unknown" when the email clients, device types, 
 > [!NOTE]
 > Some GUIDs are labelled as “Unknown” when the email clients, device types, browsers or operating systems used by the customer could not be detected. They are labelled as “Other” when it can be detected but is non-categorized such as a smaller provider.
 
-### Email Clients
+## Email Clients
 
 | EmailClientsId    | Name      |
 | ------------- | ------------- |
@@ -35,7 +35,7 @@ NOTE: Some GUIDs are labeled as "Unknown" when the email clients, device types, 
 | 108B4DC5-F39F-4005-B189-BD0E41ED5C7B | Other |
 | 87BDC7DA-02A6-4CE5-9B98-B4C9A6143D0E | Unknown |
 
-### Browsers
+## Browsers
 
 | BrowserId     | Name     |
 | ------------- | ------------- |
@@ -59,7 +59,7 @@ NOTE: Some GUIDs are labeled as "Unknown" when the email clients, device types, 
 | F5B513F6-AD0A-4515-9A63-4E7BCC3C928F | Other |
 | 92362E2A-B4BD-4AB1-8CA5-69340ABC2846 | Unknown |
 
-### Operating systems
+## Operating systems
 
 | OperatingSystemId     | Name      |
 | ------------- | ------------- |
@@ -79,7 +79,7 @@ NOTE: Some GUIDs are labeled as "Unknown" when the email clients, device types, 
 | 6B467D92-4CA8-4EA5-BC36-6FC1BA779F43 | Other |
 | BE048716-CA07-4A72-A61A-1AC558D5D591 | Unknown |
 
-### Device types
+## Device types
 
 | DeviceTypeId      | Name    |
 | ------------- | ------------- |
