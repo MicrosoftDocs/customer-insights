@@ -17,7 +17,7 @@ Teams rely on channel analytics to evaluate campaign performance and to drive fu
 
 ## Enable bot protection
 
-To enable bot protection, go to **Settings** > **Feature switches** and enable the **Bot Protection (preview)** toggle.
+To enable bot protection, go to **Settings** > **Feature switches** and enable the **Bot Protection** toggle.
 
 > [!IMPORTANT]
 > Organizations created after July 22, 2024 have advanced bot protection enabled by default.
