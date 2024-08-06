@@ -17,8 +17,6 @@ Customer Insights Journeys interactions like **EmailOpened** and **EmailClic
 
 The list below contains the Globally Unique Identifiers (GUIDs) to map data on **email clients**, **device type**, **browsers**, and **operating systems**.
 
-NOTE: Some GUIDs are labeled as "Unknown" when the email clients, device types, browsers, or operating systems used by the customer couldn't be detected. They're labeled as “Other” when it can be detected but is noncategorized such as a smaller provider.
-
 > [!NOTE]
 > Some GUIDs are labelled as “Unknown” when the email clients, device types, browsers or operating systems used by the customer could not be detected. They are labelled as “Other” when it can be detected but is non-categorized such as a smaller provider.
 
