@@ -39,8 +39,8 @@ The following usages and limits are tracked on this screen:
     - The pre-seeded capacity is shown together with your monthly consumption.
     - The pre-seeded capacity automatically resets on a monthly basis.
 - **Free text messages**: For US-based instances, 1,000 free text messages per month can be sent using a toll-free number [created through Azure Communication Services](real-time-marketing-outbound-text-messaging-setup.md#add-a-sender-number-using-the-azure-communication-services-free-trial-preview-us-only).
-- **Paid text messages**: Customer Insights - Journeys offers [native integration with Twilio and TeleSign](real-time-marketing-outbound-text-messaging-setup.md#sign-up-for-and-configure-a-twilio-account), enabling you to easily connect with mobile users.
-    - You can purchase or reuse an existing SMS provider account with Twilio or TeleSign.
+- **Paid text messages**: Customer Insights - Journeys offers [native integration with several providers](real-time-marketing-text-messaging-setup.md), enabling you to easily connect with mobile users.
+    - You can purchase or reuse an existing SMS provider account.
     - Consumption is recorded and displayed on the Quota limits page, but the allocated quota needs to be verified with the third-party provider.
 
 The quota limits page also includes charts that show the monthly interaction usage and the annual total marketing contact usage.

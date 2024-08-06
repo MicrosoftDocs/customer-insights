@@ -1,7 +1,7 @@
 ---
 title: Warm-up process for marketing senders
 description: Learn the domain warm-up process for marketing email senders in Dynamics 365 Customer Insights - Journeys.
-ms.date: 04/30/2024
+ms.date: 08/06/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -95,7 +95,7 @@ A gradual warm-up doesn't always guarantee a perfect sending reputation. It's st
 
 There's no general rule, numbers or standard warm-up schedule to suit every sender. Every warm-up plan is unique and may require additional analysis done by deliverability expert to make the process smooth and effective. It depends on several factors like overall planned daily/monthly volume of emails, target recipient IPS’s frequency of the email campaigns, type of emails(marketing/transactional) etc.
 
-If you need assistance and help with navigating this delicate process of the warm-up planning and email sending habits analysis, please reach out to our  [Deliverability and Compliance team](mailto:dynmktdeliverability@microsoft.com).
+If you need assistance navigating warm-up planning or an email sending habits analysis, create a support request for the email deliverability team.
 
 ## Dedicated vs Shared IP for email delivery
 ### Definitions
@@ -118,4 +118,6 @@ Also, review your sending stats and make sure that you comply with the following
 - Spam complaint rate: < 0.1%
 - Unsubscribe rate: < 1%
 ### How to apply
-To request a dedicated IP address for your organization, please reach out to our [Deliverability and Compliance team](mailto:dynmktdeliverability@microsoft.com) that will help you evaluate if your sending strategy and if it qualifies for usage of dedicated IP addresses.
+To request a dedicated IP address for your organization, create a support request for the email deliverability team. The team will help you evaluate your sending strategy and determine if it qualifies for usage of dedicated IP addresses.
+
+[!INCLUDE[footer-include](./includes/footer-banner.md)]
