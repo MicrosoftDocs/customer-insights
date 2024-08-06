@@ -1,7 +1,7 @@
 ---
 title: Map GUIDs to email clients, browsers, operating systems, and other device types
 description: Presents a list of GUIDs to map data on email clients, device type, browsers, and operating systems in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/05/2023
+ms.date: 08/06/2023
 ms.topic: article
 author: colinbirkett
 ms.author: colinbirkett
