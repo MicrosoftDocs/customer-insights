@@ -39,7 +39,7 @@ NOTE: Some GUIDs are labeled as "Unknown" when the email clients, device types, 
 
 | BrowserId     | Name     |
 | ------------- | ------------- |
-| 2F5C5058-9D1F-4969-84DD-17D0E67BB4A4 | Microsoft Edge  |
+| 2F5C5058-9D1F-4969-84DD-17D0E67BB4A4 | Microsoft Edge |
 | 5BAEADFC-25D3-4059-BC7B-F5AE56E6D530 | Opera |
 | F9B18F1B-89DC-48E3-A0AF-0532CE0E23F7 | Netscape |
 | A44C2F62-82FA-4E28-B3FF-E5DB4861CCDB | Sea Monkey |
