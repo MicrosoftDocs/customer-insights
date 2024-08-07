@@ -1,6 +1,6 @@
 ---
-title: "Data unification best practices"
-description: "Learn about the concepts and best practices when unifying data in Customer Insights - Data."
+title: Data unification best practices
+description: Learn about the concepts and best practices when unifying data in Customer Insights - Data.
 ms.date: 07/11/2024
 ms.reviewer: v-wendysmith
 ms.topic: conceptual
@@ -35,9 +35,9 @@ The best approach is to start with a basic set of rules you know are needed, suc
 
 Progressively add several rules and see how long the changes take to run and if your results improve. Go to **Settings** > **System** > **Status** and select **Match** to see how long deduplication and matching took for each unification run.
 
-:::image type="content" source="media/status-match-times.png" alt-text="Screenshot of Status page showing Match run times.":::
+:::image type="content" source="media/status-match-times.png" alt-text="Screenshot of the Status page showing Match run times.":::
 
-View the rule statistics on the **Deduplication rules** and **Matching rules** pages to see if the number of **Unique records** changes. If a new rule matches some records, and the unique record count doesn't change, then a previous rule identified those matches.
+View the rule statistics on the **Deduplication rules** and **Matching rules** pages to see if the number of **Unique records** changes. If a new rule matches some records, and the unique record count doesn't change, then a previous rule identifies those matches.
 
 :::image type="content" source="media/unify-unique-records.png" alt-text="Screenshot of Matching rules page highlighting Unique records.":::
 
@@ -45,7 +45,7 @@ View the rule statistics on the **Deduplication rules** and **Matching rules** p
 
 Use deduplication rules to remove duplicate customer records within a table so that a single row in each table represents each customer. A good rule identifies a unique customer.
 
-In this simple example, records 1, 2 and 3 share either an email or phone, and represent the same person.
+In this simple example, records 1, 2, and 3 share either an email or phone number, and represent the same person.
 
 |ID  |Name |Phone |Email |
 |----|-----|------|------|
@@ -62,13 +62,13 @@ We don’t want to match on just name as that would match different people with 
 
 The combination of Rule 1 and Rule 2 creates a single match group because they share record 2.
 
-You decide the number of rules, and the conditions that uniquely identify your customers. The exact rules depend on the data you have available to match on, the quality of your data, and how exhaustive you want the deduplication process to be.
+You decide the number of rules and conditions that uniquely identify your customers. The exact rules depend on the data you have available to match, the quality of your data, and how exhaustive you want the deduplication process to be.
 
 ## Winner and alternate records
 
 Once rules are run and duplicate records are identified, the deduplication process selects a "Winner row." The nonwinner rows are called "Alternate rows." Alternate rows are used in the Matching rules unification step to match records from other tables to the winner row. Rows are matched against the data in the alternate rows in addition to the winner row.
 
-Once you add a rule to a table, you can configure which row to select as the winner row through **Merge preferences**. Merge preferences are set per table. No matter what merge policy is selected, if there's a tie for a winner row, then first row in the data order is used as the tie breaker.
+Once you add a rule to a table, you can configure which row to select as the winner row through **Merge preferences**. Merge preferences are set per table. No matter what merge policy is selected, if there's a tie for a winner row, then the first row in the data order is used as the tiebreaker.
 
 ## Normalization
 
@@ -88,7 +88,7 @@ The normalized data is only used for comparison purposes to match customer recor
 | Unicode to ASCII    | Converts Unicode characters to their ASCII letter equivalent <br>Example: The characters 'à,' 'á,' 'â,' 'À,' 'Á,' 'Â,' 'Ã,' 'Ä,' 'Ⓐ,' and 'Ａ' are all converted to 'a.'  |
 | Whitespace          | Removes all white space         |
 | Alias mapping       | Allows you to upload a custom list of string pairs that can then be used to indicate strings that should always be considered an exact match. <br>Use alias mapping when you have specific data examples you think should match, and aren't matched using one of the other normalization patterns. <br>Example: Scott and Scooter, or MSFT and Microsoft. |
-| Custom bypass       | Allows you to upload a custom list of strings that can then be used to indicate strings that should never be matched.<br>Custom bypass is useful when you have data that has common values that should be ignored, such as a dummy phone number or dummy email. <br>Example: Never match the phone 555-1212, or test@contoso.com   |
+| Custom bypass       | Allows you to upload a custom list of strings that can then be used to indicate strings that should never be matched.<br>Custom bypass is useful when you have data with common values that should be ignored, such as a dummy phone number or a dummy email. <br>Example: Never match the phone 555-1212, or test@contoso.com   |
 
 ## Exact match
 
@@ -98,32 +98,32 @@ Precision can be set to low (30% match), medium (60% match), and high (80% match
 
 ### Exact match conditions
 
-The exact match conditions are run first to obtain a smaller set of values to fuzzy match. To be effective, the exact matching conditions should have a reasonable degree of uniqueness. For example, if all your customers live in the same country, then having an exact match on country wouldn't help narrow the scope.
+The exact match conditions are run first to obtain a smaller set of values for fuzzy matches. To be effective, the exact matching conditions should have a reasonable degree of uniqueness. For example, if all your customers live in the same country/region, then having an exact match on the country/region wouldn't help narrow the scope.
 
 Columns like full name, email, phone, or address fields have good uniqueness and are great columns to use as an exact match. 
 
-Ensure the column you use for an exact match condition don’t have any values that are repeated frequently, such as a default value of "Firstname" captured by a form. Customer insights can profile data columns to provide insight into top repeating values. You can enable data profiling on Azure Data Lake (using Common Data Model or Delta format) connections and Synapse. Data profile is run when the data source is next refreshed. For more information, go to [Data profiling](data-sources.md#data-profiling).
+Ensure the column you use for an exact match condition doesn’t have any values that are repeated frequently, such as a default value of "Firstname" captured by a form. Customer insights can profile data columns to provide insight into top repeating values. You can enable data profiling on Azure Data Lake (using Common Data Model or Delta format) connections and Synapse. The data profile is run when the data source is next refreshed. For more information, go to [Data profiling](data-sources.md#data-profiling).
 
 ## Fuzzy matching
 
 Use fuzzy matching to match strings that are close but aren’t exact because of typos or other small variations. Use fuzzy matching strategically as it's slower than exact matches. Make sure at least one exact match condition in any rule that has fuzzy conditions.  
 
-Fuzzy matching isn't intended to capture name variations like Suzzie and Suzanne. These variations are better captured with the Normalization pattern **Type: Name** or the custom **Alias matching** where customers can enter their own list of name variations they want to consider as matches.
+Fuzzy matching isn't intended to capture name variations like Suzzie and Suzanne. These variations are better captured with the Normalization pattern **Type: Name** or the custom **Alias matching** where customers can enter their list of name variations they want to consider as matches.
 
-You can add conditions to a rule, such as matching FirstName and Phone. Conditions within a given rule are "AND" conditions; every condition must match for the rows to match. But separate rules are "OR" conditions. If Rule 1 doesn't match rows, then the rows are compared to Rule 2.
+You can add conditions to a rule, such as matching FirstName and Phone. Conditions within a given rule are "AND" conditions. Every condition must match for the rows to match. Separate rules are "OR" conditions. If Rule 1 doesn't match the rows, then the rows are compared to Rule 2.
 
 > [!NOTE]
-> Only string data type columns can use fuzzy matching. For columns with other data types such as integer, double, or datetime, the precision field is set to exact match and is read only.
+> Only string data type columns can use fuzzy matching. For columns with other data types such as integer, double, or datetime, the precision field is read-only and set to the exact match.
 
 ### Fuzzy matching calculations
 
-Fuzzy matches are made by computing the edit distance score for two strings. If the score meets or exceeds the precision threshold, then the strings are considered a match.
+Fuzzy matches are determined by computing the edit distance score between two strings. If the score meets or exceeds the precision threshold, the strings are considered a match.
 
-The edit distance is the number of edits required to turn one string into another string, by adding, deleting, or changing a character.
+The edit distance is the number of edits required to turn one string into another, by adding, deleting, or changing a character.
 
 For example, the strings "Jacqueline" and "Jaclyne" have an edit distance of five when we remove the q, u, e, i, and e characters, and insert the y character.
 
-The basic calculation to determine the edit distance score is: (Base string length – Edit Distance) / Base string length.
+To calculate the edit distance score, use this formula: (Base string length – Edit Distance) / Base string length.
 
 |Base string |Comparison string |Score |
 |----|-----|------|
