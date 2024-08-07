@@ -1,5 +1,5 @@
 ---
-title: Customer Insights - Journeys integration with Microsoft Fabric
+title: Customer Insights - Journeys integration with Microsoft Fabric overview
 description: Learn about how to integrate Customer Insights - Journeys with Microsoft Fabric.
 ms.date: 07/31/2024
 ms.topic: article
@@ -11,7 +11,7 @@ search.audienceType:
   - enduser
 ---
 
-# Customer Insights - Journeys integration with Microsoft Fabric
+# Customer Insights - Journeys integration with Microsoft Fabric overview
 
 > [!IMPORTANT]
 > To avoid service disruptions, preview users of the integration with Microsoft Fabric  must follow the [Transition to general availability guidance](fabric-integration.md#transition-to-general-availability).
@@ -92,7 +92,7 @@ The following sections explain how to set up Power BI and access your Customer I
 | Why don't I see all Customer Insights - Journeys interaction tables when creating shortcuts in Fabric? | The Customer Insights - Journeys folder only lists the interaction types for which data has been generated up to that point. | 
 | Why do I see more email-delivered versus email-sent interactions? | In the event of an email remote bounce, we list two "email delivered" interactions for the same message with the same time stamp despite no message being delivered to the contact/lead/Customer Insights - Data Profile email address. This is because the second interaction is intended to "erase" the first one. To count them properly, you should use the ["DeliveredCount"](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsightsjourneys/emaildelivered#DeliveredCount) field. |
 | How often does Customer Insights - Journeys data get updated in Fabric? | Data changes in Customer Insights - Journeys tables will be reflected in Fabric up to three hours later. |
-| Why don't I see all my data in Fabric? | Initially, only new data (real-time journeys and some outbound marketing data) generated after the feature's general availability date (July 2024) will be available for custom reporting. We're in the process of performing historical data migrations for real-time journeys and outbound marketing data for all orgs. [Contact us](troubleshoot-faq.d#how-can-i-create-a-support-ticket-from-the-power-platform-admin-center) for further assistance. |
+| Why don't I see all my data in Fabric? | Initially, only new data (real-time journeys and some outbound marketing data) generated after the feature's general availability date (July 2024) will be available for custom reporting. We're in the process of performing historical data migrations for real-time journeys and outbound marketing data for all orgs. [Contact us](troubleshoot-faq.md#how-can-i-create-a-support-ticket-from-the-power-platform-admin-center) for further assistance. |
 
 ## Transition to general availability
 

@@ -359,7 +359,11 @@
     - name: How to use aggregate channel analytics
       href: real-time-marketing-channel-analytics.md
     - name: Customer Insights - Journeys integration with Microsoft Fabric
-      href: fabric-integration.md
+      items:
+      - name: Customer Insights - Journeys integration with Microsoft Fabric overview
+        href: fabric-integration.md
+      - name: Map GUIDs to email clients, browsers, operating systems, and device types
+        href: map-guids.md
     - name: "Preview: Marketing effectiveness analytics"
       href: real-time-marketing-effectiveness.md
     - name: Track campaigns with UTM codes
