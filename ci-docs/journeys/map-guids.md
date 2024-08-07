@@ -1,6 +1,6 @@
 ---
-title: Map GUIDs to email clients, browsers, operating systems, and other device types
-description: Presents a list of GUIDs to map data on email clients, device type, browsers, and operating systems in Dynamics 365 Customer Insights - Journeys.
+title: Map GUIDs to email clients, browsers, operating systems, and device types
+description: GUIDs to map data on email clients, device types, browsers, and operating systems in Dynamics 365 Customer Insights - Journeys.
 ms.date: 08/06/2023
 ms.topic: article
 author: colinbirkett
@@ -13,23 +13,23 @@ search.audienceType:
 
 # Map GUIDs to email clients, browsers, operating systems, and device types
 
-Customer Insights Journeys interactions like **EmailOpened** and **EmailClicked** contain information about **email clients**, **device types**, **browsers**, and **operating systems** used by recipients.
+Customer Insights - Journeys interactions like **EmailOpened** and **EmailClicked** contain information about email clients, device types, browsers, and operating systems used by recipients.
 
-The list below contains the Globally Unique Identifiers (GUIDs) to map data on **email clients**, **device type**, **browsers**, and **operating systems**.
+The list below contains the Globally Unique Identifiers (GUIDs) to map data on email clients, device types, browsers, and operating systems.
 
 > [!NOTE]
-> Some GUIDs are labelled as “Unknown” when the email clients, device types, browsers or operating systems used by the customer could not be detected. They are labelled as “Other” when it can be detected but is non-categorized such as a smaller provider.
+> Some GUIDs are labelled as “Unknown” when the email clients, device types, browsers, or operating systems used by the customer can't be detected. They are labelled as “Other” when the information can be detected but is non-categorized, such as an app by a smaller provider.
 
-## Email Clients
+## Email clients
 
 | EmailClientsId    | Name      |
 | ------------- | ------------- |
 | 391123EE-6312-4DCF-9E2D-9027022804D8 | Gmail |
-| BB63337D-D8DA-489A-9EE3-857154E5080C | AppleMail |
+| BB63337D-D8DA-489A-9EE3-857154E5080C | Apple Mail |
 | 89945E01-90E2-408F-AC99-CD46B19E51D8 | Outlook |
 | CAF15DBA-5B51-4146-900D-6A8F5D2CAFBF | Yahoo |
 | 7DC97A79-128E-4F2B-8E09-1708465C958A | Thunderbird |
-| 64F0740E-3B26-45B9-83E2-54822F256828 | SamsungBrowser |
+| 64F0740E-3B26-45B9-83E2-54822F256828 | Samsung Browser |
 | 108B4DC5-F39F-4005-B189-BD0E41ED5C7B | Other |
 | 87BDC7DA-02A6-4CE5-9B98-B4C9A6143D0E | Unknown |
 
@@ -64,7 +64,7 @@ The list below contains the Globally Unique Identifiers (GUIDs) to map data on *
 | 2FD14342-0556-42BF-A155-7F1343CE16DF | Windows |
 | 307E8C83-FA4E-4D6D-8973-73B79F9D0101 | Symbian |
 | F2372FF7-5AA7-482C-99D7-EF2B1C8D64FF | Solaris |
-| 691FEE8E-7C8D-4EE4-BB40-5C924AFFD9FE | macOS X |
+| 691FEE8E-7C8D-4EE4-BB40-5C924AFFD9FE | macOS |
 | 407890B5-651F-4935-9D1C-4D146076BBFE | Linux |
 | CC324703-9D00-4CF9-BEE7-FA65B373841D | iOS |
 | 9D1DACFC-3270-40E8-85E3-64BB62B2C562 | Chrome OS |
