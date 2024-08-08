@@ -1,7 +1,7 @@
 ---
 title: Access and interpret analytics
 description: How to access and interpret Customer Insights - Journeys analytics in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/05/2024
+ms.date: 08/08/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -64,12 +64,13 @@ Select any journey component to view near real-time operational analytics in the
     - **Click rate**: The percentage of unique email, text, or push notification/custom channel clicks divided by the number of email, text, or push notification/custom channel links delivered.
     - **Response rate**: The percentage of unique text message responses divided by the number of text messages sent.
   
-    To view **delivery and interaction statistics**, select the **View details** link in the **Delivery funnel** or **Delivery issues** section on the channel analytics pane. Delivery and interaction details allow you to analyze delivery, engagement, and performance data for your email, text, push notification, or custom channel messages.
+    To view **delivery and interaction statistics**, select the **View details** link in the **Delivery funnel** or **Delivery issues** section on the channel analytics pane. Delivery and interaction details allow you to analyze delivery, engagement, and performance data for your email, text, push notification, or custom channel messages. Timestamps are reported according to the organization's time zone. In this area, you can:
 
-    - You can view deliverability details on messages sent, delivered, blocked, or bounced along with the respective reasons, detailed data on customers who opened or clicked a message, as well as unsubscription interaction data.
+    - View deliverability details on messages sent, delivered, blocked, or bounced along with the respective reasons, detailed data on customers who opened or clicked a message, as well as unsubscription interaction data. A message’s unique opens and clicks are calculated based on the customer's journey run. This means that if the same customer enters the same journey multiple times and opens or clicks the same message each time, the system records multiple unique opens or clicks. For example, if a customer clicks the same message in two different journey executions, two unique clicks are recorded. 
     - For emails, delivery and interactions statistics include data on user agents your customers are using to engage with your emails. Under total opens you can see data about email clients and under total clicks you can find data on types of devices, operating systems, and browsers.
-
-    A message’s unique opens and clicks are calculated based on the customer's journey run. This means that if the same customer enters the same journey multiple times and opens or clicks the same message each time, the system records multiple unique opens or clicks. For example, if a customer clicks the same message in two different journey executions, two unique clicks are recorded. You can export up to 50,000 records of interaction data, search through data using the profile's email address, and access links to audience profiles that interacted with your email messages. Timestamps are reported according to the organization's time zone.
+    - Use the search option in the top right to search for interactions by email address.
+    - Access links to audience profiles that interacted with your messages. 
+    - Export up to 50,000 records by selecting the export icon under the search bar.
 
     :::image type="content" source="media/analytics-delivery-and-interaction-details.png" alt-text="Screenshot of delivery and interaction details." lightbox="media/analytics-delivery-and-interaction-details.png":::
   
@@ -95,8 +96,8 @@ The following insights categories are provided:
     > 
     > The detection of device types, browsers, and operating systems is dependent on email clicks.
     >
-    > Not all email clients, device types, browsers, and operating systems can be detected. They are labelled as “Unknown” when the user agent used by the customer could not be detected. They are labelled as “Other” when the user agent used by the customer can be detected but is non-categorized such as a smaller provider. 
-- **Variation insights**: Gain valuable insights into key metrics such as unique opens, unique clicks, number of delivered messages, open rate, click rate, spam messages, and unsubscriptions for each variant, enabling you to identify what resonates best with your audience.
+    > Not all email clients, device types, browsers, and operating systems can be detected. They are labelled as “Unknown” when the user agent used by the customer could not be detected. They are labelled as “Other” when the user agent used by the customer can be detected but is non-categorized such as a local provider. 
+- **Variation insights**: Gain valuable insights into key metrics such as unique opens, unique clicks, number of delivered messages, open rate, click rate, spam messages, and unsubscriptions for each variant, enabling you to identify what resonates best with your audience. Variation insights are visible only if the email contains conditional content.
 
     :::image type="content" source="media/analytics-email-insights.png" alt-text="Screenshot of email insights dashboard." lightbox="media/analytics-email-insights.png":::
 
