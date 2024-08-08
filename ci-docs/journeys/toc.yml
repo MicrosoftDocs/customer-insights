@@ -183,7 +183,7 @@
         - name: Reference copies of sent emails in the interaction timeline
           href: view-previously-sent-emails.md
       - name: Use custom attributes to enable designer features in emails, pages, and forms
-        href: customer-template-attributes.md
+        href: custom-template-attributes.md
       - name: Email troubleshoot + FAQ
         href: email-troubleshoot.md
     - name: Text messages
