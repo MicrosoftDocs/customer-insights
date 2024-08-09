@@ -14,7 +14,7 @@ search.audienceType:
 # Record and publicize sponsorship details in outbound marketing
 
 > [!IMPORTANT]
-> This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
+> **This article only applies to [outbound marketing](user-guide.md), which will be removed from the product on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](transition-overview.md)
 
 *Sponsors* are people or organizations who contribute funds, equipment, or services in return for having their logos and messages placed in your event materials (including the event website) or at the event itself.
 

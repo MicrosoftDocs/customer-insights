@@ -14,7 +14,7 @@ search.audienceType:
 # Personalized marketing page content
 
 > [!IMPORTANT]
-> This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
+> **This article only applies to [outbound marketing](user-guide.md), which will be removed from the product on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](transition-overview.md)
 
 As with marketing emails, you can create landing pages, and other types of web pages that display content that's personalized for known contacts. The solution makes use of the following techniques:
 

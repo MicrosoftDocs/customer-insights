@@ -1,7 +1,7 @@
 ---
 title: Transition overview
 description: Overview of the transition process from outbound marketing to real-time journeys in Dynamics 365 Customer Insights - Journeys.
-ms.date: 05/17/2023
+ms.date: 08/12/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -10,17 +10,9 @@ ms.collection: bap-ai-copilot
 
 # Transition overview
 
-In July 2023, Microsoft announced significant changes to the former Dynamics 365 Marketing application. The following changes were released to market in September 2023: 
--	The Dynamics 365 Marketing application was renamed to Customer Insights - Journeys.
--	The former Customer Insights application was renamed to Customer Insights - Data.
--	Both applications are now sold together under a single product SKU called Customer Insights.
+Dynamics 365 Customer Insights – Journeys includes two modules: outbound marketing and real-time journeys. Released in August 2021, real-time journeys offers advanced enterprise capabilities and has been the default offering to new customers since August 2023.  
 
-The real-time journeys module covers most of the functionalities of the outbound module while exceeding its capabilities in many areas. To mitigate uncertainty and confusion, the articles in the "Transition from outbound marketing" section of the documentation walk-through how to successfully transition to the real-time journeys module and answer frequently asked questions about this topic.
-
-The following diagram shows how the changes affect new and existing customers:
-
-> [!div class="mx-imgBorder"]
-> ![Customer Insights - Journeys transition comparison.](media/real-time-marketing-transition-graphic.png "Customer Insights - Journeys transition comparison")
+In August 2024, Microsoft announced that outbound marketing will be removed as of June 30, 2025. To avoid any business continuity issues, all customers still using outbound marketing must transition to real-time journeys before this date. We'll also remove social posting and LinkedIn lead generation capabilities on December 2, 2024. We don’t plan to support social posting in real-time journeys because it has low demand and usage. We're considering adding LinkedIn lead generation to real-time journeys in a future release.
 
 ## Guidance for trials
 
@@ -28,37 +20,35 @@ New trials can only be created with real-time journeys.
 
 ## Guidance for new customers
 
-New customers who install Customer Insights - Journeys no longer see the outbound marketing module and can't install it. Because outbound marketing doesn't offer the performance, scale, user experience, and AI Copilot capabilities of Customer Insights - Journeys and is no longer being invested in from an engineering perspective, we strongly encourage customers to not adopt outbound marketing.
+New customers who install Customer Insights - Journeys no longer see the outbound marketing module and can't install it. Because outbound marketing is being removed as described above, we require new customers to adopt real-time journeys.
 
 Here are some recommendations depending on your situation:
 
 | Situation                                                                        | Action                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 |----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| I purchased before September 1, 2023 and planned to implement outbound marketing | We strongly recommend using real-time journeys. See [Why should I transition to real-time journeys?](transition-faqs.md#why-should-i-transition-to-real-time-journeys)                                                                                                                                                                                                                                                                                                     |
-| I evaluated the real-time journeys module and determined that I can't use it    | Review the [transition functional areas](transition-walkthrough-functional.md) guide and the other [transition resources](transition-resources.md). After review, if you still have concerns that prevent you from using real-time journeys, follow the guidance for [requesting outbound marketing to be added](transition-overview.md#request-an-exception-to-enable-outbound-marketing) |
+| I had planned to implement outbound marketing | Outbound marketing will be removed on June 30, 2025. You should update your plans and implement real-time journeys. See [Why should I transition to real-time journeys?](transition-faqs.md#why-should-i-transition-to-real-time-journeys)                                                                                                                                                                                                                                                                                                     |
+| I evaluated the real-time journeys module and determined that I can't use it    | Review the [transition functional areas](transition-walkthrough-functional.md) guide (it has feature-specific guidance, workarounds, and a roadmap) and the other [transition resources](transition-resources.md). Given that outbound marketing will be removed, you should still implement real-time journeys even if there are some current gaps for your use cases, as we're adding new features all the time. We won't approve requests for adding outbound marketing. |
 
-## Guidance for existing customers
+## Guidance for existing customers currently using outbound marketing
 
-Existing customers are encouraged to transition from outbound marketing to the real-time journeys engine for optimal performance, scale, and to take advantage of ongoing product investments and AI Copilot features. Learn more: [Customer Insights - Journeys transition FAQs](transition-faqs.md)
+Existing customers still on outbound marketing must transition to real-time journeys before June 30, 2025 to avoid interruption and gain optimal performance, scale, ongoing product investments, and AI Copilot features. Learn more: [Customer Insights - Journeys transition FAQs](transition-faqs.md)
 
-> [!NOTE]
-> Existing customers who complete new installations can add outbound features through a self-serve interface. To add outbound marketing features, go to **Settings** > **Versions** and select the **Enable** link.
-
-Here's some recommendation actions for existing customers depending on your needs:
+Here are some recommendation actions for existing customers depending on your needs:
 
 | Situation                                                                                                          | Action                                                                                                                                                                                                                                                       |
 |--------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **New org**: I provisioned a new org and don't see outbound marketing                                             | This is expected; outbound marketing is no longer included in new orgs. We strongly recommend using real-time journeys. See [Why should I transition to real-time journeys?](transition-faqs.md#why-should-i-transition-to-real-time-journeys) |
-| **New org**: I'm unable to transition to real-time journeys                                                        | Review the [transition functional areas](transition-walkthrough-functional.md) guide and the other [transition resources](transition-resources.md). We strongly recommend using real-time journeys. After review, if you still have concerns that prevent you from using real-time journeys, you can add outbound marketing back using the **Enable** link available on the **Settings** > **Versions** page. **Important**: To see the link and add outbound marketing, you need to be an admin. If you aren't an admin, ask someone who is to do this step. If you don't see the link, follow the guidance for [requesting outbound marketing to be added](transition-overview.md#request-an-exception-to-enable-outbound-marketing).                                                                                                                                                                                                                                                           |
-| **Existing org**: I updated an existing org that had outbound marketing, but after the update I don't see outbound | Do you need outbound marketing? Review the [transition functional areas](transition-walkthrough-functional.md) guide and the other [transition resources](transition-resources.md). We strongly recommend using real-time journeys. After review, if you still want to enable outbound marketing, use the **Enable** link available on the **Settings** > **Versions** page. **Important**: To see the link and add outbound marketing, you need to be an admin. If you aren't an admin, ask someone who is to do this step. If you don't see the link, follow the guidance for [requesting outbound marketing to be added](transition-overview.md#request-an-exception-to-enable-outbound-marketing).                                                                                                                                                                                                                                                           |
+| I provisioned a new org (or copied, migrated, or restored an existing org) and don't see outbound marketing                                             | This is expected; outbound marketing is no longer included in new orgs. We strongly recommend using real-time journeys as outbound marketing will be removed on June 30, 2025. See [Why should I transition to real-time journeys?](transition-faqs.md#why-should-i-transition-to-real-time-journeys) |
+| I'm planning to transition to real-time journeys soon but need outbound marketing until then.  | You can add outbound marketing back using the **Enable** link available on the **Settings** > **Versions** page. <br><br> **Important**: To see the link and add outbound marketing, you need to be an admin. If you're not an admin, ask someone who is to do this step. If you still don't see the link, follow the guidance for [requesting outbound marketing to be added](transition-overview.md#request-an-exception-to-enable-outbound-marketing).                 |
+
 ## Request an exception to enable outbound marketing
 
-If you have valid business reasons that require outbound marketing to be enabled in your environment, you can request an exception by filling out [the outbound marketing request form](https://go.microsoft.com/fwlink/?linkid=2251742).
+If you're an existing outbound marketing user and require outbound marketing to be enabled in your environment, you can request an exception by filling out [the outbound marketing request form](https://go.microsoft.com/fwlink/?linkid=2251742).
 
 Note the following parameters:
-- Don't create support tickets or use other channels for the same requests, you'll be redirected to this form.
+- This request should only be made by customers who already have been using outbound marketing. Requests from customers who never had outbound marketing will be denied.
+- Don't create support tickets or use other channels for the same requests; you'll be redirected to this form.
 - This form requires an email address. The email address is used to communicate receipt of the request, confirming when the request has been processed, and if needed, ask for additional information.
-- Most requests are processed in about three business days once all needed information is available.
+- Most requests are processed in about three business days once all required information is available.
 
 > [!TIP]
 > If you have questions or comments, visit the [Outbound to real-time transition community forum](https://community.dynamics.com/forums/thread/?partialUrl=Outbound-to-Real-Time-Transition)

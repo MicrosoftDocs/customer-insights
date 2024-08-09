@@ -14,7 +14,7 @@ search.audienceType:
 # Marketing segments vs. marketing lists
 
 > [!IMPORTANT]
-> This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
+> **This article only applies to [outbound marketing](user-guide.md), which will be removed from the product on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](transition-overview.md)
 
 Even without Dynamics 365 Customer Insights - Journeys installed, some Dynamics 365 apps provide a few basic marketing features, which include the ability to create both static and dynamic _marketing lists_ that you can use with the _quick campaigns_ feature also included with these apps. However, Customer Insights - Journeys predominantly uses a separate feature called _marketing segments_ to target its full-featured _customer journeys_, both of which are unique to Customer Insights - Journeys.
 

@@ -14,7 +14,7 @@ search.audienceType:
 [!INCLUDE [consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
-> This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
+> **This article only applies to [outbound marketing](user-guide.md), which will be removed from the product on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](transition-overview.md)
 
 A custom channel contains custom entities, workflows or plug-ins containing your custom logic, and a couple of web resources that help surface the custom channel as a “tile” in the customer journey designer. All these components are bundled into a solution that can be imported into a Dynamics 365 Customer Insights - Journeys instance to enable a custom channel.
 

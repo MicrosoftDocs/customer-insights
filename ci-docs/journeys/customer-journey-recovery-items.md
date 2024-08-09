@@ -14,7 +14,7 @@ search.audienceType:
 # Troubleshoot customer journey customization errors
 
 > [!IMPORTANT]
-> This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
+> **This article only applies to [outbound marketing](user-guide.md), which will be removed from the product on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](transition-overview.md)
 
 The Recovery items tab allows system administrators to track customization errors, improving the customer journey workflow creation process. If there are items in the Recovery items tab, non-system admin users receive a notification that says, "There are work items to recover. Check the recovery items tab."
 

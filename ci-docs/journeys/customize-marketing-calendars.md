@@ -14,7 +14,7 @@ search.audienceType:
 # Create and customize marketing calendars
 
 > [!IMPORTANT]
-> This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
+> **This article only applies to [outbound marketing](user-guide.md), which will be removed from the product on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](transition-overview.md)
 
 The [marketing calendar](marketing-calendar.md) is supplied as a standard control that you can add to any entity or form. The following subsections explain how to customize the settings of any calendar, and how to add a calendar display to an entity or form.
 
