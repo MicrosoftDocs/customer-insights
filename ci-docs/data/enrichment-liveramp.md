@@ -4,8 +4,8 @@ description: "Enrich customer profiles with LiveRamp data."
 ms.date: 09/01/2023
 ms.reviewer: mhart
 ms.topic: how-to
-author: kishorem-ms
-ms.author: kishorem
+author: Scott-Stabbert
+ms.author: sstabbert
 ---
 
 # Enrich customer profiles with identity data from LiveRamp (preview)
