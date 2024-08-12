@@ -45,8 +45,6 @@ Copilot provides personalized, suggested prompts based on data in your environme
 
 If the resulting segment contains multiple [relationship paths](relationships.md), it uses the shortest path by default. **Edit** the segment to change the relationship path.  
 
-[!INCLUDE [copilot-availability](includes/copilot-availability.md)]
-
 ## Next steps
 
 - [Create and manage segments](segments.md)

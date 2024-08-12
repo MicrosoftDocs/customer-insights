@@ -4,8 +4,8 @@ description: Steps to create environments in Dynamics 365 Customer Insights.
 ms.date: 07/08/2024
 ms.reviewer: mhart
 ms.topic: how-to
-author: kishorem-ms
-ms.author: kishorem
+author: Scott-Stabbert
+ms.author: sstabbert
 ms.custom: bap-template
 ---
 

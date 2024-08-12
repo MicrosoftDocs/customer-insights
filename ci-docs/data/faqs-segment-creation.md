@@ -45,7 +45,7 @@ We measure performance of the Copilot by the successful creation of AI-generated
 
 ## What are the supported geographies and languages?
 
-For more information, see [Copilot International Availability report](https://dynamics.microsoft.com/availability-reports/copilotreport/).
+For more information, see [Copilot International Availability report](https://releaseplans.microsoft.com/availability-reports/?report=copilotfeaturereport).
 
 ## What operational factors and settings allow for effective and responsible use of the feature?
 
