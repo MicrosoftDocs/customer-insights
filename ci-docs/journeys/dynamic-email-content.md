@@ -1,7 +1,7 @@
 ---
 title: Add dynamic content to email messages
 description: How to add field values, set up content settings information, conditional statements, and while loops to your email designs in Dynamics 365 Customer Insights - Journeys.
-ms.date: 07/25/2024
+ms.date: 08/12/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -82,7 +82,7 @@ To view, edit, or create a content-settings record:
 Personalization helps you construct valid dynamic expressions to position field values from recipient contact records, the message content settings, and other database values. This button is provided on the text formatting toolbar whenever you select a text element in the graphical designer. The button is also provided for some settings fields, such as the subject, from-address, and from-name fields.
 
 > [!NOTE]
-> The personalization dialog only shows entities and relations that are synced with the marketing-insights service. If you need to show information or use relations for one or more entities that aren't listed, then ask your admin to add the relevant entities to the marketing-insights service. If you are an admin, then see [Choose entities to sync with the marketing-insights service](mkt-settings-sync.md) for instructions.
+> The personalization dialog only shows entities and relations that are synced with the marketing-insights service. If you need to show information or use relations for one or more entities that aren't listed, then ask your admin to add the relevant entities to the marketing-insights service. If you are an admin, then see [Choose entities to sync with the marketing-insights service](mkt-settings-sync.md) for instructions. The *owner* entity is no longer supported for email personalization. Replace it with either the *systemuser* or *team* entity, depending on which entity represents the owner of the record.
 
 ### Use personalization to place a dynamic expression
 
