@@ -15,13 +15,13 @@ search.audienceType:
 
 ## What is a feedback loop?
 
-A feedback loop is a mechanism that allows Internet Service Providers (ISPs) to notify Email Service Providers (ESPs) when a recipient marks an email as spam. For example, if a subscriber uses Outlook and clicks the "Report Spam" button on an email, Outlook will send a message to the ESP that sent the email, informing them of the complaint.
+A feedback loop is a mechanism that allows Internet Service Providers (ISPs) to notify Email Service Providers (ESPs) when a recipient marks an email as spam. For example, if a subscriber uses Outlook and selects the "Report Spam" button on an email, Outlook sends a message to the ESP that sent the email, informing them of the complaint.
 
 Feedback loops are important for email deliverability, which is the ability to reach the inbox of your subscribers without being blocked or filtered by ISPs. Feedback loops help senders to monitor and reduce the number of complaints they receive, which can affect their reputation and sender score. A high complaint rate can indicate that the sender is sending unwanted or irrelevant emails, which can trigger spam filters and lower deliverability.
 
 ## How Customer Insights Journeys record and report complaints?
 
-Complaints are recorded in your sent email analytics, which shows the number and percentage of subscribers who marked your email as spam. For example, if you send 10,000 emails and 8 people mark them as spam, your complaint rate is 0.08%.
+Complaints are recorded in your sent email analytics, which shows the number and percentage of subscribers who marked your email as spam. For example, if you send 10,000 emails and eight people mark them as spam, your complaint rate is 0.08%.
 
 These analytics also show the ISPs that generated the complaints, which can help you to identify and segment your subscribers based on their email provider. For example, you can see if your emails are more likely to be marked as spam by Outlook.com, Yahoo, or other ISPs.
 
@@ -29,20 +29,20 @@ Every complaint received is recorded in our system, and we regularly calculate t
 
 ## How are complaints handled?
 
-Recipients who report your email as spam are immediately unsubscribed from your list, meaning you will no longer be able to send emails to that individual. Their email address is also added to your suppression list, which is a list of contacts who have bounced, or complained about your emails.
+Recipients who report your email as spam are immediately unsubscribed from your list, meaning you'll no longer be able to send emails to that individual. Their email address is also added to your suppression list, which is a list of contacts who have bounced, or complained about your emails.
 
-Unsubscribing and suppressing complainants is a best practice that helps you to maintain a clean permission-based list, which is essential for email deliverability. It also prevents you from sending emails to people who do not want to receive them, which can reduce your complaint rate and improve your sender reputation.
+Unsubscribing and suppressing complainants is a best practice that helps you to maintain a clean permission-based list, which is essential for email deliverability. It also prevents you from sending emails to people who don't want to receive them, which can reduce your complaint rate and improve your sender reputation.
 
 ## Tips for preventing complaints
 
 The best ways to avoid your emails being marked as spam are:
 
 * Only send emails to subscribers who have given you explicit permission and make it easy for them to opt out anytime.
-* Never use subscriber lists that you have bought, rented, or borrowed, as they are not permission-based and may contain spam traps. Spam traps are email addresses that ISPs and anti-spam organizations use to catch and blacklist spammers.
+* Never use subscriber lists that you have bought, rented, or borrowed, as they aren't permission-based and may contain spam traps. Spam traps are email addresses that ISPs and anti-spam organizations use to catch and blacklist spammers.
 * Use a confirmed opt-in list to prevent fake signups, bots, and typos from sending your emails to the wrong people. A confirmed opt-in list requires subscribers to verify their email address by clicking a link in a confirmation email before they join your list.
 * Make sure your "From" details show the business name behind the email. Use a consistent and recognizable name and email address that aligns with your brand and website.
 * Keep your content relevant by using personalization and dynamic content. Customize your emails based on your subscribers' preferences, interests, and behavior, and provide them with useful and engaging information.
-* Tell subscribers how often you will send them emails. Set clear expectations about the email frequency and content and stick to them.  
+* Tell subscribers how often you'll send them emails. Set clear expectations about the email frequency and content and stick to them.  
 * Don't send too many emails to your subscribers. Sending too many emails can irritate your subscribers and make them lose interest in your content. Track your open, click, and unsubscribe rates to find the best email frequency for your audience. Additionally, sending low number of emails on irregular cadence can make your subscribers forget who you are and why they subscribed to your list. Maintain regular and consistent communication with your subscribers to keep them engaged and loyal.
 
 > [!NOTE]
