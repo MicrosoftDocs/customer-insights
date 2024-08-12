@@ -14,7 +14,7 @@ search.audienceType:
 [!INCLUDE [consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
-> This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
+> **This article only applies to [outbound marketing](../user-guide.md), which will be removed from the product on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](../transition-overview.md)
 
 Customer journey orchestration in Dynamics 365 Customer Insights - Journeys lets marketers create multi-step, multi-channel marketing campaigns that target a specific segment, deliver marketing email messages, respond to contact interactions, launch workflows, and more. More information: [Use customer journeys to create automated campaigns](../../journeys/customer-journeys-create-automated-campaigns.md)
 

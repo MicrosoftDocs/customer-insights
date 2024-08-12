@@ -13,6 +13,9 @@ search.audienceType:
 
 # Transition lead management and scoring
 
+> [!IMPORTANT]
+> **[Outbound marketing](user-guide.md) will be removed from the product on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](transition-overview.md)
+
 Creating scoring models to identify the best leads is an important aspect of lead management. As of the September 2023 Customer Insights - Journeys release, lead scoring is available in real-time journeys. You can enable the real-time journeys lead scoring feature in the feature switches area in the settings. Improvements compared to the outbound marketing scoring models are:
 -	Simpler and more intuitive design canvas.
 -	Ability to score leads without a parent contact. Because it's possible to market directly to leads in real-time journeys, there's no need for a parent contact.

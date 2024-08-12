@@ -13,6 +13,9 @@ search.audienceType:
 
 # Transition marketing pages and forms
 
+> [!IMPORTANT]
+> **[Outbound marketing](user-guide.md) will be removed from the product on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](transition-overview.md)
+
 Outbound marketing contains sitemap entries for "Internet Marketing." The entries and the corresponding real-time journeys equivalent are depicted in the following image:
 
 > [!div class="mx-imgBorder"]

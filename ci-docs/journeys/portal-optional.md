@@ -14,7 +14,7 @@ search.audienceType:
 # Integrate outbound marketing with a CMS system, Dynamics 365 Portals, or Power Apps portals
 
 > [!IMPORTANT]
-> This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
+> **This article only applies to [outbound marketing](user-guide.md), which will be removed from the product on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](transition-overview.md)
 
 Read this topic to learn how you can run interactive marketing features for Customer Insights - Journeys by using an integrated Dynamics 365 Portal, Power Apps portals, or by using your own website or CMS system.
 

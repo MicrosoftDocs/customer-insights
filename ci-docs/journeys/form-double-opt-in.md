@@ -14,7 +14,7 @@ search.audienceType:
 # Set up form double opt-in in outbound marketing
 
 > [!IMPORTANT]
-> This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
+> **This article only applies to [outbound marketing](user-guide.md), which will be removed from the product on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](transition-overview.md)
 
 Instead of enabling [global double opt-in](double-opt-in.md), you can choose to require double opt-in on a form by form basis. Form double opt-in allows customers to select multiple subscription lists and opt-in through a single confirmation email. Form double opt-in results in many benefits:
 

@@ -1,7 +1,7 @@
 ---
 title: Real-time journeys transition FAQs
 description: Answers to frequently asked questions about transitioning to real-time journeys in Customer Insights - Journeys.
-ms.date: 12/12/2023
+ms.date: 08/12/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -10,77 +10,57 @@ ms.collection: bap-ai-copilot
 
 # Real-time journeys transition FAQs
 
-## What is Dynamics 365 Customer Insights? Is it a new product?
+> [!IMPORTANT]
+> **[Outbound marketing](user-guide.md) will be removed from the product on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](transition-overview.md)
 
-The new Dynamics 365 Customer Insights offering combines the standalone Dynamics 365 Customer Insights and Dynamics 365 Marketing apps into a single offering. While the name is unchanged, the new Customer Insights offering is expanded to include both the Dynamics 365 Customer Insights – Journeys (formerly Dynamics 365 Marketing) and Dynamics 365 Customer Insights – Data (formerly the standalone Dynamics 365 Customer Insights) applications.
+## What changes to Dynamics 365 Customer Insights – Journeys did Microsoft recently announce?
 
-> [!div class="mx-imgBorder"]
-> ![SKU and name change diagram.](media/ci-faq-sku-name-change.png "SKU and name change diagram")
+Customer Insights – Journeys includes two modules: outbound marketing and real-time journeys. Released in August 2021, real-time journeys offers advanced enterprise capabilities and has been the default offering to new customers since August 2023.
 
-As shown in the visual above, Customer Insights - Data and Customer Insights – Journeys are sold together but they're still separate apps and are provisioned separately. You don't need to have or use Customer Insights – Data to be able to use Customer Insights – Journeys (and vice versa). We offer them together as part of the new licensing because they work better together and complement each other.
+After announcing in August 2023 that we'll only be investing in real-time journeys, we're now officially announcing that we're removing outbound marketing as of June 30, 2025. To avoid any business continuity issues, all customers still using outbound marketing must transition to real-time journeys before this date. We'll also remove social posting and LinkedIn lead generation capabilities on December 2, 2024. We don’t plan to support social posting in real-time journeys because it has low demand and usage. However, we're considering adding LinkedIn lead generation to real-time journeys in a future release.
 
-Learn more: [Dynamics 365 Customer Insights FAQs](ci-faq.md)
+No new licensing or provisioning is required to use real-time journeys; every one of your existing environments already has it. In fact, the updated license has removed limits on number of environments (see [Announcing unlimited application installs in Dynamics 365 Customer Insights](https://www.microsoft.com/dynamics-365/blog/it-professional/2024/06/18/announcing-unlimited-application-installs-in-dynamics-365-customer-insights/)) so you can easily try real-time journeys in a separate environment if needed.
 
-## What changes to Dynamics 365 Marketing did Microsoft announce recently?
+We have a dedicated section in our documentation for transition guidance: [Transition overview](transition-overview.md). You should bookmark this section as we update it regularly based on product updates, questions, and feedback.
 
-Microsoft recently announced three changes to Dynamics 365 Marketing:
+## I'm an existing Dynamics 365 Customer Insights - Journeys customer using outbound marketing. How do these changes impact me?
 
-1. **Name change**: Dynamics 365 Marketing is now called "Customer Insights – Journeys." This is only a name change. There are no functionality changes on account of the name change. Customer Insights – Journeys continues to contain outbound marketing, real-time journeys, and event planning capabilities (the same as before the name change).
-1. **License and SKU changes**: On September 1, 2023, Microsoft launched a new license and SKU called Customer Insights that allows customers to obtain both “Customer Insights – Data” (previously known as Customer Insights) and “Customer Insights – Journeys” (previously known as Dynamics 365 Marketing) as a single SKU with a single simplified license.
-1. **Transition to real-time**: Generative AI and many other new innovations are only coming to the real-time journeys area. Therefore, we're encouraging all customers who are still using outbound marketing to transition to real-time. Similarly, new customers should start in real-time only to avoid having to transition later. To facilitate this change, **new orgs** are now provisioned only with real-time journeys by default. After provisioning, existing outbound marketing customers will see an "enable" link to add back outbound marketing functionality. If you don't see the enable link, follow the guidance for [requesting outbound marketing to be added](transition-overview.md#request-an-exception-to-enable-outbound-marketing). These changes are only applied to new orgs, they aren't applied to existing orgs. Existing orgs can continue to receive and apply monthly and wave release updates as usual.
+As an existing outbound marketing customer, you must make a note of removal dates above and transition to real-time journeys before that to avoid interruption. If you're using social posting or LinkedIn lead generation capabilities, note that they'll be removed sooner and your ability to create new social posts or LinkedIn leads will be restricted ahead of the removal date. Your data will still be available for reporting.
 
-## I'm an existing Dynamics 365 Marketing customer using outbound marketing. How do these changes impact me?
+As is the case currently, newly created, copied, migrated, or restored environments will only include real-time journeys. You may be able to add outbound using the **Enable** link on the **Settings** > **Version** page. This link is only available when another existing environment with outbound marketing is present. If you don't see the enable link, follow the guidance for [requesting outbound marketing to be added](transition-overview.md#request-an-exception-to-enable-outbound-marketing-existing-outbound-customers-only)
 
-As an existing outbound marketing customer, you can expect the following:
+## I'm a new Dynamics 365 Customer Insights - Journeys customer. How do these changes impact me?
 
-1. **Name change**
-    1. This is a name change only and doesn't change any functionality.
-    1. The name change is applied automatically with the September 2023 monthly update.
-1. **License and SKU changes**
-    1. **No immediate changes or impact**: Your current license and entitlements continue to work as before.
-    1. **When it's time to renew your license**, you'll have the option to renew your current license or switch to the new Customer Insights license. Until then, there's no change to your current license or entitlement. More details about what is included in the license and pricing is available on the [Customer Insights pricing page](https://dynamics.microsoft.com/ai/customer-insights/pricing/). Your partner or authorized reseller can also provide more detailed information and offers available to you.
-1. **Transition to real-time journeys** - As an existing outbound customer, you won't see any change in your existing orgs, but you'll see the following changes in new orgs:
-    1. **New org creation**: By default, the new org will only include real-time journeys. To add outbound marketing, use the "enable" link on the **Settings** > **Version** page. The same process is required if an existing org is reinstalled, copied, or otherwise put through any steps that cause a reset or reinstall. If you don't see the enable link, follow the guidance for [requesting outbound marketing to be added](transition-overview.md#request-an-exception-to-enable-outbound-marketing)
-    1. **New features available only in real-time journeys**: You should start planning for transitioning to real-time journeys. At this time, we haven't announced a date for removing outbound. However, product enhancements and many new exciting capabilities with generative AI and Copilots will only be available in real-time journeys.
+As a new customer, when you provision Customer Insights – Journeys, you'll only see real-time journeys. We're not offering outbound marketing to new customers anymore, so your plan should be to implement and go live with real-time journeys. We're unable to make any exceptions to this, so please don't raise any support requests for adding outbound marketing.
 
-## I'm a new Dynamics 365 Marketing customer. How do these changes impact me?
+## I can't transition by the outbound marketing removal date. Can I request an exception?
 
-As a new customer, you can expect the following:
+Unfortunately, no. In August 2023, we communicated that outbound marketing will no longer receive investments and migration to real-time journeys was an important next step. We're now giving customers nearly a year advanced notice of the removal date, so customers have adequate time to plan and complete the transition to real-time journeys. You should prioritize and complete transitioning to real-time journeys before the outbound marketing removal date. We're not able to offer any exceptions because outbound marketing won't be supported past this date.
 
-1. **Name change**
-    1. This is a name change only and doesn't change any functionality.
-    1. The name change is applied automatically with the September 2023 monthly update.
-1. **License and SKU changes**
-    1. **Already purchased a Dynamics 365 Marketing license previously**: You can use a previously purchased license and there's no need to purchase the new license. When your license is up for renewal, you have the option to renew your current license or switch to the new Customer Insights license. More details about what is included in the license and pricing are available on the [Customer Insights pricing page](https://dynamics.microsoft.com/ai/customer-insights/pricing/). Your partner or authorized reseller can also provide more detailed information and offers available to you.
-    1. If you haven't yet purchased a Dynamics 365 Marketing license, you're no longer able to purchase that specific license (if you were in the process of purchase, you may work with your sales team to get an exception to purchase the previous license). Work with your partner or reseller to purchase the new Customer Insights license that provides a better value and includes additional benefits.
-1. **Transition to real-time journeys** - As a new customer, when you provision Customer Insights – Journeys (previously Dynamics 365 Marketing), you'll only see real-time journeys by default. If you have specific reasons that prevent you from using real-time journeys and you need outbound marketing, contact support and request an exception. Upon review and approval, the product team will add outbound marketing to your org.
+## Why aren't you supporting social posting in real-time journeys? Do you have a recommendation on what to use instead?
 
-## How is Dynamics 365 Marketing impacted by this announcement?
+We decided not to support social posting capabilities in real-time journeys because it has low demand and usage. It's also not core to our real-time orchestration strategy. While there are many point solutions for social posting, we're unable to provide any single recommendation. That said, we'll continue to collect customer feedback and evaluate market demand to update our plans as needed.
 
-Dynamics 365 Marketing is becoming Dynamics 365 Customer Insights - Journeys. This is a change in a name, not a merge between or within apps. The current Marketing app functionality remains the same. It continues to have outbound and real-time modules. For new Dynamics 365 Customer Insights - Journeys customers, the focus will solely be on Customer Insights - Journeys, ensuring a modernized and efficient approach to customer engagement. This shift highlights the commitment to providing businesses with powerful tools to deliver personalized experiences, ultimately driving growth and fostering stronger customer connections.
+## How should I plan for the transition? What transition resources are available for me?
 
-Over the next year, we invite all customers to fully transition from outbound to Customer Insights - Journeys. Customer Insights - Journeys has already surpassed traditional outbound marketing in functionality, effectiveness, usability testing results, satisfaction surveys, and our innovations and upcoming AI features are exclusively focused on Customer Insights - Journeys.
-
-Starting in August 2023, new customers will access Customer Insights - Journeys only. Current customers provisioning new environments will also get Customer Insights - Journeys by default, but if necessary, can add outbound using a self-serve experience. More details: [Move from outbound to Customer Insights - Journeys](transition-overview.md)
+We're not able to provide any funding for this transition. We've prepared extensive resources (guidance, tools, and discussion forums) to help with the transition. See [Transition overview](transition-overview.md)
 
 ## Why should I transition to real-time journeys?
 
-Customer Insights - Journeys introduces new ways of marketing by integrating the latest AI technologies, while covering and enhancing traditional outbound scenarios. It offers a wealth of benefits to deliver engaging B2C and B2B experiences.  
+Real-time journeys introduces new ways of marketing by integrating the latest generative AI capabilities, while covering and enhancing traditional outbound scenarios. It offers a wealth of benefits to deliver engaging B2C and B2B experiences.
 
-By transitioning to Customer Insights - Journeys now, you can enjoy the following benefits:
+By transitioning to real-time journeys now, you can enjoy the following benefits:
 
-**Leverage AI to do more with less**
+**Leverage generative AI to do more with less**
 
-Customer Insights - Journeys already assists marketers with several Copilot capabilities to:
+Real-time journeys already assists marketers with several built-in Copilot capabilities to:
 
 - Target the right audience simply by describing your segments using everyday words.
 - Generate engaging email content within seconds simply by writing key points or selecting a topic and a tone of voice matching your message.
 - Receive images recommendations from the library that complement your emails.
-    
-Furthermore, in the upcoming months, you'll be able to use new innovative Copilot capabilities to:
-
 - Easily rewrite your existing content to make your messages more compelling.
 - Create new journeys just by describing them in simple words.
+- Target the right audience simply by describing your segments using everyday words.
 - Prevent messages from sending during unwanted times.
 - Effortlessly style your emails and forms based on your website design.
 - Get step by step guidance to authenticate your domain.
@@ -98,60 +78,52 @@ Furthermore, in the upcoming months, you'll be able to use new innovative Copilo
 
 - Easily create powerful registration forms, identify leads, organize events or create nurturing journeys.
 - Define granular qualification criteria to better identify and prioritize leads with the upcoming enhanced lead scoring builder.
-    
-Thanks to the deep integration of Customer Insights - Journeys and Dynamics 365 Sales, you can:
-
 - Align your efforts with sellers by sharing a unified timeline of customer activities.
-- Seamlessly transfer qualified leads to the sales team (upcoming) or engage sales representatives within your customer journey at exactly the right time by assigning a sales call or triggering a sales sequence to further increase the likelihood of closing deals.
-- Continuously optimize your marketing efforts by using AI-powered attribution analytics to understand how your marketing activities contribute to your defined milestones.
+- Seamlessly transfer qualified leads to the sales team or engage sales representatives within your customer journey at exactly the right time by assigning a sales call or triggering a sales sequence to further increase the likelihood of closing deals.
 
 **Scale your business**
 
-- Leverage business units, brand profiles, and the new consent center to tailor Customer Insights - Journeys to cater to your business’ unique requirements.
+- Leverage business units, brand profiles, and the new consent center to tailor real-time journeys to cater to your business’ unique requirements.
 - Scale your business with 300 million monthly interactions and reach up to 100 million marketing contacts.
 
-Overall, transitioning to Customer Insights - Journeys is a powerful way for your businesses to improve marketing strategies, enhance customer engagement, and drive growth.
+Overall, transitioning to real-time journeys is a powerful way for your businesses to improve marketing strategies, enhance customer engagement, and drive growth.
 
-## How do I start with Customer Insights - Journeys?
+## What about my outbound marketing features that are currently unavailable in real-time journeys?
 
-New customers will directly start in Customer Insights - Journeys. As a new customer you can start by exploring the main functionalities, create a journey, or send a quick email.  
+Since the announcement of the transition to real-time journeys in August 2023, we've made several feature advancements to bridge majority of top gaps. For example, double-opt in and multiple improvements to segmentation, forms, journeys, etc., have been released. Over the next several months, we'll continue to make improvements wherever possible to bring you a seamless experience. However, our roadmap may not bring full parity with what was offered in outbound marketing. For more information, review the individual pages for each feature area in the transition guidance section: [Functional areas overview](transition-walkthrough-functional.md)
 
-If you're a current customer using outbound, you are in “mixed-mode” where both outbound and Customer Insights - Journeys capabilities are available and can be used simultaneously. Our recommended approach is to start progressively with Customer Insights - Journeys and then ramp up after you have gained confidence. You can start using Customer Insights - Journeys for running new journeys. This way you have time to train and troubleshoot any dependencies or issues that may arise. Having created and successfully run a few real-time journeys, continue by moving your outbound journeys. This would be a great time to revisit and redesign them. For instance, many of your outbound journeys could flow more naturally and be reused by using triggers in Customer Insights - Journeys.  
+## How do I start with real-time journeys?
+
+New customers directly start in real-time journeys. As a new customer you can start by exploring the main functionalities, create a journey, or send a quick email.  
+
+If you're a current customer using outbound, you are in “mixed-mode” where both outbound and real-time journeys capabilities are available and can be used simultaneously. Our recommended approach is to start progressively with real-time journeys and then ramp up after you have gained confidence. You can start using real-time journeys for running new journeys. This way you have time to train and troubleshoot any dependencies or issues that may arise. Having created and successfully run a few real-time journeys, continue by moving your outbound journeys. This would be a great time to revisit and redesign them. For instance, many of your outbound journeys could flow more naturally and be reused by using triggers in real-time journeys.  
 
 > [!div class="mx-imgBorder"]
-> ![Graphic showing a gradual transition from outbound to Customer Insights - Journeys.](media/outbound-to-real-time.png "Graphic showing a gradual transition from outbound to Customer Insights - Journeys")
+> ![Graphic showing a gradual transition from outbound to real-time journeys.](media/outbound-to-real-time.png "Graphic showing a gradual transition from outbound to real-time journeys")
 
-To make sure your transition to Customer Insights - Journeys is a success, we have designed a user-friendly interface that doesn't require extensive retraining - you'll experience interface enhancements that significantly improve usability and efficiency.
+To make sure your transition to real-time journeys is a success, we've designed a user-friendly interface that doesn't require extensive retraining - you'll experience interface enhancements that significantly improve usability and efficiency.
 
-To easily kickstart delivering experiences using Customer Insights - Journeys, we've designed an email transition tool, made outbound segments available directly in Customer Insights - Journeys, and empowered you to generate more engaging content and revisit or create new journey within minutes thanks to our new AI-powered Copilot features.
+To easily kickstart delivering experiences using real-time journeys, we've designed an email transition tool, made outbound segments available directly in real-time journeys, and empowered you to generate more engaging content and revisit or create new journey within minutes thanks to our new AI-powered Copilot features.
 
-## Where can I get help setting up Customer Insights - Journeys?
+## Where can I get help setting up real-time journeys?
 
-Customer Insights - Journeys is already available. To get started, you can consult our learning center: [Customer Insights - Journeys overview](real-time-marketing-overview.md)
+Real-time journeys is already available. To get started, you can consult our learning center: [Customer Insights - Journeys overview](real-time-marketing-overview.md)
 
-If you're transitioning from outbound marketing, review our resource page ([Real-time transition resources](transition-resources.md)) to receive guidance and prepare your transition to Customer Insights - Journeys.
+If you're transitioning from outbound marketing, review our resource page ([Real-time journeys transition resources](transition-resources.md)) to receive guidance and prepare your transition to real-time journeys.
 
 Reach out to your account manager with further questions or if help is needed.
 
-## What does this mean for outbound marketing?
+## Will transitioning to real-time journeys require significant user retraining due to a new user interface?**
 
-Customer Insights - Journeys has already surpassed traditional outbound marketing in functionality and effectiveness, and our innovations and upcoming AI features are exclusively focused on the Customer Insights - Journeys. In the coming year, we'll be transitioning all customers to Customer Insights - Journeys to benefit from improved features to better engage your customers in the moment that matters. We'll continue to support outbound, but we don't intend to add new enhancements.
-
-## When will outbound marketing be deprecated?
-
-At this time, we haven't announced a date for removing outbound marketing. However, product enhancements and many new exciting capabilities with generative AI and copilots will only be available in real-time journeys, therefore, we strongly encourage all customers still using outbound marketing to start transitioning to real-time journeys. We have many transition resources available for you here: [Real-time journeys transition resources](transition-resources.md)
-
-## Will transitioning to Customer Insights - Journeys require significant user retraining due to a new user interface?**
-
-Transitioning to Customer Insights - Journeys doesn't require extensive user retraining, particularly for the most common marketing activities listed below. In these areas, you'll either encounter no differences in the user interface (UI) between outbound and Customer Insights - Journeys, or you'll experience UI enhancements that significantly improve usability and efficiency.
+Transitioning to real-time journeys doesn't require extensive user retraining, particularly for the most common marketing activities listed below. In these areas, you'll either encounter no differences in the user interface (UI) between outbound and real-time journeys, or you'll experience UI enhancements that significantly improve usability and efficiency.
 
 **Email creation**
 
-- Users familiar with the outbound email designer will find the same interface in Customer Insights - Journeys for basic design and editing capabilities. The interface offers easier and more efficient personalization without need for any coding/scripting.
-    
+- Users familiar with the outbound email designer will find the same interface in real-time journeys for basic design and editing capabilities. The interface offers easier and more efficient personalization without need for any coding/scripting.
+
 **Event planning**
 
-- The user experience for event planning and forms remains the same in both outbound and Customer Insights - Journeys, eliminating the need for additional training.
+- The user experience for event planning and forms remains the same in both outbound and real-time journeys, eliminating the need for additional training.
 
 **Forms**
 
@@ -159,21 +131,21 @@ Transitioning to Customer Insights - Journeys doesn't require extensive user ret
 
 **Segment building**
 
-- The segment builder in Customer Insights - Journeys has a user-friendly and intuitive UI. It now supports natural language instructions, simplifying segment creation. Users can provide instructions in everyday language instead of complex queries.
+- The segment builder in real-time journeys has a user-friendly and intuitive UI. It now supports natural language instructions, simplifying segment creation. Users can provide instructions in everyday language instead of complex queries.
 
 **Journeys**
 
-- The journey UI has been completely redesigned in Customer Insights - Journeys. Customer feedback indicates that the new UI is more user-friendly, efficient, and natural. Any retraining required for the redesigned journey UI is considered a worthwhile investment, as it improves usability and effectiveness.
+- The journey UI has been redesigned in real-time journeys. Customer feedback indicates that the new UI is more user-friendly, efficient, and natural. Any retraining required for the redesigned journey UI is considered a worthwhile investment, as it improves usability and effectiveness.
 
-## What is the new scale of Customer Insights - Journeys and how does it compare to the previous level?
+## What's the new scale of real-time journeys and how does it compare to the previous level?
 
-Marketers can now reach up to reach up to 100,000,000 contacts or leads and send up to 300,000,000 messages per month in Customer Insights - Journeys. This is over 3x the previous outbound marketing limit of 30,000,000 contacts and 100,000,000 monthly interactions.
+Marketers can now reach up to reach up to 100,000,000 contacts or leads and send up to 300,000,000 messages per month in real-time journeys. This is over 3x the previous outbound marketing limit of 30,000,000 contacts and 100,000,000 monthly interactions.
 
 This added capacity empowers marketers to deliver personalized experiences at scale and delight their customers in new ways. Additional interactions help marketers grow their business, whether by increasing their customer base in new markets, reaching additional geographies, promoting new products, or expanding their prospective customer pipeline to reach higher sales targets.
 
-## When is the increased scale available and is it available only for Customer Insights - Journeys?
+## When is the increased scale available and is it available only for real-time journeys?
 
-The new scale of 100,000,000 contacts and 300,000,000 monthly interactions can only be unlocked with Customer Insights - Journeys. This is available immediately for customers who need to operate at the new scale. To learn more, reach out to your Microsoft representative.
+The new scale of 100,000,000 contacts and 300,000,000 monthly interactions can only be unlocked with real-time journeys. This is available immediately for customers who need to operate at the new scale. To learn more, reach out to your Microsoft representative.
 
 ## Are there any additional costs associated with the increased scalability level? What is the implementation process?
 

@@ -14,7 +14,7 @@ search.audienceType:
 # Manage information about your current and prospective customers
 
 > [!IMPORTANT]
-> This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
+> **This article only applies to [outbound marketing](user-guide.md), which will be removed from the product on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](transition-overview.md)
 
 Three of the most important and common types of database records are contacts, accounts, and leads. These fundamental business entities are shared by most model-driven apps in Dynamics 365, including Dynamics 365 Customer Insights - Journeys. Read this article to learn how these basic entities are used and affected by the Customer Insights - Journeys app.
 

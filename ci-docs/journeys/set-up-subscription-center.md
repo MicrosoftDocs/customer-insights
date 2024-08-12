@@ -14,7 +14,7 @@ search.audienceType:
 # Set up subscription lists and subscription centers
 
 > [!IMPORTANT]
-> This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
+> **This article only applies to [outbound marketing](user-guide.md), which will be removed from the product on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](transition-overview.md)
 
 A subscription center is a marketing page that known contacts can use to manage their communication preferences and contact details with your organization. All marketing email messages that you create by using Dynamics 365 Customer Insights - Journeys must include a link to a subscription center. Marketing email messages will fail the error check if you try to go live with a message that lacks this link.
 
