@@ -10,6 +10,9 @@ ms.collection: bap-ai-copilot
 
 # Real-time journeys transition FAQs
 
+> [!IMPORTANT]
+> **[Outbound marketing](user-guide.md) will be removed from the product on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](transition-overview.md)
+
 ## What changes to Dynamics 365 Customer Insights – Journeys did Microsoft recently announce?
 
 Customer Insights – Journeys includes two modules: outbound marketing and real-time journeys. Released in August 2021, real-time journeys offers advanced enterprise capabilities and has been the default offering to new customers since August 2023.
