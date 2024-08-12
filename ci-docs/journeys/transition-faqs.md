@@ -90,7 +90,7 @@ Overall, transitioning to real-time journeys is a powerful way for your business
 
 ## What about my outbound marketing features that are currently unavailable in real-time journeys?
 
-Since the announcement of the transition to real-time journeys in August 2023, we've made several feature advancements to bridge some of the gaps. For example, double-opt in and improvements to event management will be released in October 2024. Over the next several months, we'll continue to make improvements wherever possible to bring you a seamless experience. However, our roadmap may not bring full parity with what was offered in outbound marketing. Keep an eye out for announcements of new features available in real-time marketing here: [New and planned features for Dynamics 365 Customer Insights - Journeys](/dynamics365/release-plan/2024wave2/customer-insights/dynamics365-customer-insights-journeys/planned-features)
+Since the announcement of the transition to real-time journeys in August 2023, we've made several feature advancements to bridge majority of top gaps. For example, double-opt in and multiple improvements to segmentation, forms, journeys, etc., have been released. Over the next several months, we'll continue to make improvements wherever possible to bring you a seamless experience. However, our roadmap may not bring full parity with what was offered in outbound marketing. For more information, review the individual pages for each feature area in the transition guidance section: [Functional areas overview](transition-walkthrough-functional.md)
 
 ## How do I start with real-time journeys?
 
