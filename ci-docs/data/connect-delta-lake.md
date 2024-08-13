@@ -1,7 +1,7 @@
 ---
 title: "Connect to Delta tables in Azure Data Lake Storage"
 description: "Work with data stored in Delta tables from Azure Data Lake Storage."
-ms.date: 06/27/2024
+ms.date: 08/13/2024
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -27,8 +27,6 @@ Connect to data in Delta tables and bring it into Dynamics 365 Customer Insights
 [!INCLUDE [delta-lake-prereqs](./includes/delta-lake-prereqs.md)]
 
 - Data in your Azure Data Lake Storage must be in Delta tables. Customer Insights - Data relies on the version property in the table's history to identify the latest changes for incremental processing.
-
-- Customer Insights - Data supports Databricks reader version 2. Delta tables using features that require Databricks reader version 3 or above aren't supported. Learn more: [How does Databricks manage Delta Lake feature compatibility](https://docs.databricks.com/delta/feature-compatibility.html#how-does-databricks-manage-delta-lake-feature-compatibility)?
 
 ## Connect to Delta data from Azure Data Lake Storage
 
