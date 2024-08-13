@@ -14,7 +14,7 @@ search.audienceType:
 # Transition insights and reports
 
 > [!IMPORTANT]
-> **[Outbound marketing](user-guide.md) will be removed from the product on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](transition-overview.md)
+> **The [outbound marketing](user-guide.md) module will be removed from Customer Insights - Journeys on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](transition-overview.md)
 
 Marketing analytics reports are a critical component of success campaigns. Among other things, reports determine:
 -	How many emails have bounced, delivered, or opened?
