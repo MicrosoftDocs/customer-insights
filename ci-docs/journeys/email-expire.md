@@ -14,7 +14,7 @@ search.audienceType:
 # Set expiration dates for selected email tiles in a customer journey
 
 > [!IMPORTANT]
-> This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
+> **This article only applies to [outbound marketing](user-guide.md), which will be removed from the product on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](transition-overview.md)
 
 Some of your customer journeys may include email messages with time-sensitive content. Time-sensitive emails could include time-limited offers, holiday promotions, or a two-week reminder for an upcoming event. Because contacts might join the journey at any time, you can now prevent delivering outdated information by setting an expiration date for one or more selected email messages. Any contact who enters an email tile after its expiration date has passed will pass through the tile without being sent the message. In other words, any contact who enters an email tile after the expiration date will not receive any message produced by the expired email tile and will continue to be processed by the subsequent tiles.
 

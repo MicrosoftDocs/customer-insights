@@ -14,7 +14,7 @@ search.audienceType:
 [!INCLUDE [consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
-> This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
+> **This article only applies to [outbound marketing](../user-guide.md), which will be removed from the product on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](../transition-overview.md)
 
 The export to Excel feature uses Microsoft Dataverse information to join and pull the contact record information for Customer Insights - Journeys integration customers, making it available in Excel.
 

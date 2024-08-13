@@ -14,7 +14,7 @@ search.audienceType:
 # Design dynamic demographic or firmographic segments
 
 > [!IMPORTANT]
-> This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
+> **This article only applies to [outbound marketing](user-guide.md), which will be removed from the product on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](transition-overview.md)
 
 _Demographic and firmographic segments_ are dynamic segments that query _profile records_ stored in the marketing insights database. Profile records include the entities you normally work with in the Dynamics 365 Customer Insights - Journeys UI, such as contacts, accounts, leads, and any other entities. They are synced between your Customer Insights - Journeys organizational database (where you can work with them in the UI and other Dynamics 365 apps) and the marketing insights database (where you can query them from a segment).
 

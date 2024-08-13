@@ -14,7 +14,7 @@ search.audienceType:
 [!INCLUDE [consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
-> This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
+> **This article only applies to [outbound marketing](../user-guide.md), which will be removed from the product on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](../transition-overview.md)
 
 Potential customers follow a path as they engage with your company. They start by discovering your product, evaluating whether it meets their needs, looking for a good offer, then finally making a purchase. This process is called the *customer journey*.
 

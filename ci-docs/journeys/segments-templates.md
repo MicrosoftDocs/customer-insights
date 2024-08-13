@@ -14,7 +14,7 @@ search.audienceType:
 # Work with segment templates
 
 > [!IMPORTANT]
-> This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
+> **This article only applies to [outbound marketing](user-guide.md), which will be removed from the product on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](transition-overview.md)
 
 Like many entities in Dynamics 365 Customer Insights - Journeys, segments support templates, each of which provides an initial collection of settings that help users get started creating common types of segments more quickly.
 

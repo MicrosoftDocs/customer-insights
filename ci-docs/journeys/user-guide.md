@@ -1,5 +1,5 @@
 ---
-title: Customer Insights - Journeys user guide
+title: Outbound marketing user guide
 description: Contains topics that describe how to do common marketing tasks in Dynamics 365 Customer Insights - Journeys.
 ms.date: 01/12/2024
 ms.topic: conceptual
@@ -11,10 +11,10 @@ search.audienceType:
   - enduser
 ---
 
-# Customer Insights - Journeys user guide
+# Outbound marketing user guide
 
 > [!IMPORTANT]
-> This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
+> **This article only applies to [outbound marketing](user-guide.md), which will be removed from the product on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](transition-overview.md)
 
 <table>
 

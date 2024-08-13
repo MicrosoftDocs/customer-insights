@@ -13,6 +13,9 @@ search.audienceType:
 
 # Transition event management
 
+> [!IMPORTANT]
+> **[Outbound marketing](user-guide.md) will be removed from the product on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](transition-overview.md)
+
 Event management comprises three areas:
 - Event setup (including tracks and sessions, speakers, registrants, etc.)
 - Communication about events

@@ -14,7 +14,10 @@ search.audienceType:
 # Prepare for analytic reporting with Power BI
 
 > [!IMPORTANT]
-> This article only applies to [outbound marketing](/dynamics365/marketing/user-guide) data export. To access interaction data for real-time journeys, see [Customer Insights - Journeys integration with Microsoft Fabric](fabric-integration.md)
+> **This article only applies to [outbound marketing](user-guide.md), which will be removed from the product on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](transition-overview.md)
+
+> [!TIP]
+> To access interaction data for real-time journeys, see [Customer Insights - Journeys integration with Microsoft Fabric](fabric-integration.md)
 
 Outbound marketing provides a wide selection of built-in analytics throughout the application. But you can also create your own custom analytics and reports from your Customer Insights - Journeys data by using Power BI. We provide endpoints that you can use to connect Power BI to Customer Insights - Journeys, plus a downloadable Power BI template that you can open in Power BI Desktop, connect to your Dynamics 365 data sources, and then customize as needed. When you're done setting it up, you can publish and share your Power BI report using the standard Power BI online tools.
 
