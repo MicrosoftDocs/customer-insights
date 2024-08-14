@@ -47,7 +47,7 @@ The best ways to avoid your emails being marked as spam are:
 
 > [!NOTE]
 > Not all ISPs are offering feedback loop, Microsoft Dynamics Customer Insights Journeys will receive and process spam complaints only from the ISP’s offering such feature.
-> Gmail does not offer a traditional feedback loops, they only show reputation data on their Google postmaster dashboard. 
+> Gmail does not offer a traditional feedback loops, they only show reputation data on their Google postmaster dashboard.
 
 Supported complaint feedback loops (FBLs) listed below:
 

@@ -568,7 +568,7 @@
         href: email-policies.md
       - name: How Customer Insights - Journeys uses suppression lists
         href: suppression-lists.md
-      - name: Feedback loop overview and how to prevent complaints
+      - name: "Feedback loop: What is it and how to prevent complaints"
         href: feedback-loop.md
     - name: Troubleshoot email issues
       href: email-troubleshooting.md
