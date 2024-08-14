@@ -20,6 +20,8 @@ ms.collection: bap-ai-copilot
 > - Italian (Italy), 
 > - Spanish (Spain)
 
+<!--- ADD NEW LANGUAGES HERE --->
+
 > [!Tip]
 > Learn about using Copilot to create inspiring email content ideas in our latest blog: [Make email creation fun and more efficient with AI-powered content ideas in Dynamics 365 Customer Insights - Journeys](https://cloudblogs.microsoft.com/dynamics365/it/2022/11/30/engage-your-customers-faster-with-ai-powered-marketing-email-content/).
 
