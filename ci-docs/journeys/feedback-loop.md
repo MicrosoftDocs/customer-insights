@@ -1,5 +1,5 @@
 ---
-title: Feedback loop overview
+title: "Feedback loop: What is it and how to prevent complaints"
 description: Describes what a feedback loop is in Dynamics 365 Customer Insights - Journeys.
 ms.date: 08/07/2024
 ms.topic: article
@@ -58,9 +58,9 @@ Supported complaint feedback loops (FBLs) listed below:
 
 * Fastmail
 
-* gandi.net  
+* [gandi.net](http://gandi.net/)  
 
-* LaPoste.net  
+* [LaPoste.net](http://laposte.net/)  
 
 * Libero
 
@@ -108,6 +108,6 @@ Supported complaint feedback loops (FBLs) listed below:
 
 * Earthlink (Send IPs and FBL address to: fblrequest@abuse.earthlink.net)
 
-* Outlook.com  (Hotmail)
+* [Outlook.com](http://outlook.com/) (Hotmail)
 
 * Zoho
