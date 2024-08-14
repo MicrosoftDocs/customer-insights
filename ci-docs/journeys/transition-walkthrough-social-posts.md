@@ -14,7 +14,7 @@ search.audienceType:
 # Social posts
 
 > [!IMPORTANT]
-> **[Outbound marketing](user-guide.md) will be removed from the product on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](transition-overview.md)
+> **The [outbound marketing](user-guide.md) module will be removed from Customer Insights - Journeys on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](transition-overview.md)
 
 The posting to social media feature from outbound marketing has no equivalent in real-time journeys. There are currently no plans to incorporate the feature.
 
