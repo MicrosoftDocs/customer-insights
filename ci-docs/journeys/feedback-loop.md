@@ -39,7 +39,7 @@ The best ways to avoid your emails being marked as spam are:
 
 * Only send emails to subscribers who have given you explicit permission.
 * Make it easy for subscribers to opt out anytime.
-* Never use subscriber lists that you have bought, rented, or borrowed. These lists aren't permission-based and may contain spam traps. Spam traps are email addresses that ISPs and anti-spam organizations use to catch and black-list spammers.
+* Never use subscriber lists that you have bought, rented, or borrowed. These lists aren't permission-based and may contain spam traps. Spam traps are email addresses that ISPs and anti-spam organizations use to catch and expel spammers.
 * Use a confirmed opt-in list to prevent fake signups, bots, and typos from sending your emails to the wrong recipients. A confirmed opt-in list requires subscribers to verify their email address by clicking a link in a confirmation email before they join your list.
 * Make sure your "From" details show the business name behind the email. Use a consistent and recognizable name and email address that aligns with your brand and website.
 * Keep your content relevant by using personalization and dynamic content. Customize your emails based on your subscribers' preferences, interests, and behavior. Provide your subscribers with useful and engaging information.
@@ -108,6 +108,6 @@ Supported complaint feedback loops (FBLs) listed below:
 
 * Earthlink (Send IPs and FBL address to: fblrequest@abuse.earthlink.net)
 
-* [Outlook.com](http://outlook.com/) (Hotmail)
+* [Outlook.com](https://outlook.com/) (Hotmail)
 
 * Zoho
