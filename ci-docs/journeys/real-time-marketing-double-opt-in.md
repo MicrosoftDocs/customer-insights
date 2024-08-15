@@ -32,18 +32,6 @@ The double opt-in process works as follows:
 > The link in the confirmation email remains valid for only 28 days. After that period, the user that received the email will not be able to confirm their opt-in.
 > Please refer to this section for the current limitations of this preview feature.
 
-## Availability
-
-Double opt-in for real time journeys is rolling out in July and August of 2024. The table below shows the availability date for each region.
-
-| Region             | Availability date |
-|--------------------|-------------------|
-| IND                | Available         |
-| FRA, CHE, CAN, SAM | Available         |
-| OCE, GBR, JPN, APJ | Available         |
-| EU                 | Available         |
-| US                 | August 1          |
-
 ## Who should use double opt-in?
 
 Organizations operating in Germany, Austria, and Switzerland may need to implement Double Opt-In functionality to comply with local regulations. Additionally, any entity subject to GDPR regulations may require double opt-in. It's also becoming increasingly common for businesses outside of GDPR jurisdictions to adopt double opt-in practices. This approach not only ensures informed consent but also helps validate email addresses, therefore enhancing data accuracy and lead quality.
@@ -107,8 +95,8 @@ The system prevents a form from having elements from more than one compliance pr
 Enabling double opt-in for a compliance profile will only enable double opt-in flow for eligible forms (forms created after the feature switch was turned on). Any forms that existed prior to the feature enablement will, by default, have double opt-in turned off for them.
 
 > [!WARNING]
-> For version 6.1, a warning is shown but you are still allowed to publish the form.
-> For version 7.1, an error stops you from publishing the form.
+> For the June 2024 release, a warning is shown but you are still allowed to publish the form.
+> For July 2024 release, an error stops you from publishing the form.
 
 This applies to orgs with the DOI feature flag enabled.
 
@@ -159,8 +147,6 @@ For any form that has double opt-in enabled you see additional analytics that re
 This public preview release has the following known limitations:
 
 1. Double opt-in doesn't work for event registration or preference center forms.
-1. The journey created for double opt-in flow isn't editable.
-1. Emails can't include any profile-based personalization attributes, such as first name, last name, etc.
 1. If a default brand profile isn't present for a given business unit, the double opt-in setup fails unless a brand profile is created for the business unit.
 
 ## Frequently asked questions
