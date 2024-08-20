@@ -96,7 +96,7 @@ Enabling double opt-in for a compliance profile will only enable double opt-in f
 
 > [!WARNING]
 > For the June 2024 release, a warning is shown but you are still allowed to publish the form.
-> For July 2024 release, an error stops you from publishing the form.
+> For the July 2024 release, an error stops you from publishing the form.
 
 This applies to orgs with the DOI feature flag enabled.
 
