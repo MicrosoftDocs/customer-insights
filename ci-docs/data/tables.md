@@ -4,8 +4,8 @@ description: "View data on the Tables page."
 ms.date: 03/21/2024
 ms.reviewer: mhart
 ms.topic: conceptual
-author: mukeshpo
-ms.author: mukeshpo
+author: Scott-Stabbert
+ms.author: sstabbert
 ---
 
 # Tables in Customer Insights - Data

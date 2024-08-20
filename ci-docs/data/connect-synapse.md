@@ -4,8 +4,8 @@ description: Use a database in Azure Synapse as a data source in Dynamics 365 Cu
 ms.date: 11/21/2023
 ms.reviewer: v-wendysmith
 ms.topic: how-to
-author: mukeshpo
-ms.author: mukeshpo
+author: Scott-Stabbert
+ms.author: sstabbert
 ms.custom: bap-template
 ---
 

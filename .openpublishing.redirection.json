@@ -2615,6 +2615,16 @@
       "source_path": "ci-docs/data/data-unification-fuzzy-matching.md",
       "redirect_url": "/dynamics365/customer-insights/data/data-unification-best-practices",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/data/lead-profile-summary.md",
+      "redirect_url": "/dynamics365/customer-insights/data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/data/faqs-profile-summary.md",
+      "redirect_url": "/dynamics365/customer-insights/data/",
+      "redirect_document_id": false
     }
   ]
 }
