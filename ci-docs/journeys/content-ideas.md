@@ -1,7 +1,7 @@
 ---
 title: Copilot - Use AI to kickstart email creation
 description: Learn how to use Copilot to kickstart email content ideas in Dynamics 365 Customer Insights - Journeys.
-ms.date: 10/03/2023
+ms.date: 08/21/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -12,13 +12,26 @@ ms.collection: bap-ai-copilot
 
 > [!NOTE]
 > The content ideas copilot is currently available worldwide in the following languages:
-> - Danish (Denmark),
-> - Dutch (Netherlands), 
-> - English (United States), 
-> - French (France), 
-> - German (Germany), 
-> - Italian (Italy), 
-> - Spanish (Spain)
+> - **cs**: Czech
+> - **da**: Danish
+> - **de**: German
+> - **el**: Greek
+> - **en**: English
+> - **es**: Spanish
+> - **fi**: Finnish
+> - **fr**: French
+> - **it**: Italian
+> - **ja**: Japanese
+> - **ko**: Korean
+> - **nb**: Norwegian Bokmål
+> - **nl**: Dutch
+> - **pl**: Polish
+> - **pt-br**: Brazilian Portuguese
+> - **ru**: Russian
+> - **sv**: Swedish
+> - **th**: Thai
+> - **tr**: Turkish
+> - **zh-Hans**: Simplified Chinese
 
 > [!Tip]
 > Learn about using Copilot to create inspiring email content ideas in our latest blog: [Make email creation fun and more efficient with AI-powered content ideas in Dynamics 365 Customer Insights - Journeys](https://cloudblogs.microsoft.com/dynamics365/it/2022/11/30/engage-your-customers-faster-with-ai-powered-marketing-email-content/).
