@@ -17,18 +17,27 @@ Connect to data in Delta tables and bring it into Dynamics 365 Customer Insights
 
 [!INCLUDE [delta-lake-benefits](./includes/delta-lake-benefits.md)]
 
-<!---
+## Supported Databricks features
 
-<!--- For example, Contoso Coffee has millions of records coming in on a daily basis. Currently, they do full refreshes of their data every 6 hours. This full refresh takes lots of time to reprocess everything when most data has already been processed. By using the Delta format, Contoso is able to greatly reduce their processing time by only processing the new records, leading to even faster insights from Customer Insights – Data.
---->
+Customer Insights - Data supports Databricks reader version 2. The Databricks features that are supported with a reader version of 2 or less include:
+
+- Basic functionality
+- Check constraints
+- Change data feed
+- Generate columns
+- Column mapping
+- Identity columns
+- Table features read
+- Row tracking
+- UniForm
+
+Databricks features, such as Deletion vectors or Table features write, that require Databricks reader version 3 or above aren't supported. Learn more: [How does Databricks manage Delta Lake feature compatibility?](https://docs.databricks.com/delta/feature-compatibility.html#how-does-databricks-manage-delta-lake-feature-compatibility).
 
 ## Prerequisites
 
 [!INCLUDE [delta-lake-prereqs](./includes/delta-lake-prereqs.md)]
 
 - Data in your Azure Data Lake Storage must be in Delta tables. Customer Insights - Data relies on the version property in the table's history to identify the latest changes for incremental processing.
-
-- Customer Insights - Data supports Databricks reader version 2. Delta tables using features that require Databricks reader version 3 or above aren't supported. Learn more: [How does Databricks manage Delta Lake feature compatibility](https://docs.databricks.com/delta/feature-compatibility.html#how-does-databricks-manage-delta-lake-feature-compatibility)?
 
 ## Connect to Delta data from Azure Data Lake Storage
 
@@ -55,7 +64,7 @@ Connect to data in Delta tables and bring it into Dynamics 365 Customer Insights
 
 1. Select the tables you want to include.
 
-1. For selected tables where a primary key hasn't been defined, **Required** displays under **Primary key**. For each of these tables:
+1. For selected tables where a primary key isn't defined, **Required** displays under **Primary key**. For each of these tables:
    1. Select **Required**. The **Edit table** panel displays.
    1. Choose the **Primary key**. The primary key is an attribute unique to the table. For an attribute to be a valid primary key, it shouldn't include duplicate values, missing values, or null values. String, integer, and GUID data type attributes are supported as primary keys.
    1. Select **Close** to save and close the panel.
@@ -81,7 +90,7 @@ When a column is added or removed from the schema of a Delta folders data source
 
 ### Add a column
 
-When a column is added to the data source, the information automatically appends to the data in Customer Insights - Data once a refresh occurs. If you have already configured unification for the table, the new column must be added to the unification process.
+When a column is added to the data source, the information automatically appends to the data in Customer Insights - Data once a refresh occurs. If unification is already configured for the table, the new column must be added to the unification process.
 
 1. From the [**Customer data**](data-unification-update.md#edit-customer-data) step, select **Select tables and columns** and select the new column.
 
