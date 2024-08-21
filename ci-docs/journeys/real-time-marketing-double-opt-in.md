@@ -1,7 +1,7 @@
 ---
 title: "Preview: Double opt-in in real-time journeys"
 description: Learn how to use double opt-in in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/01/2024
+ms.date: 08/20/2024
 ms.topic: article
 author: cbirkett
 ms.author: alfergus
@@ -29,8 +29,8 @@ The double opt-in process works as follows:
 1. Customer Insights - Journeys acts upon selection, creates a contact (or lead), records or updates it, and records the consent. A 'Thank you' page is then redirected to the contact.
 
 > [!IMPORTANT]
-> The link in the confirmation email remains valid for only 28 days. After that period, the user that received the email will not be able to confirm their opt-in.
-> Please refer to this section for the current limitations of this preview feature.
+> The link in the confirmation email remains valid for only 28 days. After that period, the user who received the email cannot confirm their opt-in.
+> Refer to this section for the current limitations of this preview feature.
 
 ## Who should use double opt-in?
 
