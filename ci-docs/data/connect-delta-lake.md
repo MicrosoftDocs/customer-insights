@@ -17,19 +17,21 @@ Connect to data in Delta tables and bring it into Dynamics 365 Customer Insights
 
 ## Supported Databricks features and versions
 
-Customer Insights - Data supports Databricks reader version 2. The Databricks features that are supported with a 'minReaderVersion' of 2 or earlier include:
+Customer Insights - Data supports Databricks features with a 'minReaderVersion' of 2 or earlier. Databricks features that require Databricks reader version 3 or later aren't supported. The table shows the supported and unsupported Databricks features.
 
-- Basic functionality
-- Check constraints
-- Change data feed
-- Generate columns
-- Column mapping
-- Identity columns
-- Table features read
-- Row tracking
-- UniForm
+| Supported features  | Unsupported features |
+| ------------------- | -------------------- |
+| Basic functionality | Deletion vectors     |
+| Change data feed    | Liquid clustering    |
+| Check constraints   | Table features write |
+| Column mapping      | TimestampNTZ         |
+| Generate columns    | Type widening        |
+| Identity columns    | Variant              |
+| Row tracking        |                      |
+| Table features read |                      |
+| UniForm             |                      |
 
-Databricks features that require Databricks reader version 3 or later aren't supported. Learn more: [How does Databricks manage Delta Lake feature compatibility?](https://docs.databricks.com/en/delta/feature-compatibility.html#features-by-protocol-version).
+ Learn more: [How does Databricks manage Delta Lake feature compatibility?](https://docs.databricks.com/en/delta/feature-compatibility.html#features-by-protocol-version).
 
 ## Prerequisites
 

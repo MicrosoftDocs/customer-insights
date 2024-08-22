@@ -4,16 +4,14 @@ description: "Learn how to set up account hierarchies for business accounts"
 ms.date: 09/01/2023
 ms.reviewer: v-wendysmith
 ms.topic: how-to
-author: CadeSanthaMSFT
-ms.author:  cadesantha
+author: Scott-Stabbert
+ms.author: sstabbert
 ms.custom: bap-template
 ---
 
 # Set up account hierarchies (preview)
 
 [!INCLUDE [public-preview-banner](../includes/public-preview-banner.md)]
-
-
 
 Environments that are configured to use business accounts (B2B) as the primary target audience can configure account hierarchies for related business accounts. For example, a company that has separate business units.
 
