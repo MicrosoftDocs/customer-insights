@@ -14,7 +14,7 @@ search.audienceType:
 # Open the event management work area in outbound marketing
 
 > [!IMPORTANT]
-> This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
+> **This article only applies to [outbound marketing](user-guide.md), which will be removed from the product on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](transition-overview.md)
 
 The event management features of Dynamics 365 Customer Insights - Journeys are collected into their own work area to make it easy to find all the relevant entities and settings while you are focusing on events.
 

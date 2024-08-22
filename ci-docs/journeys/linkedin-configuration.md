@@ -1,7 +1,7 @@
 ---
 title: Set up the LinkedIn Lead Gen integration and define lead matching
 description: Map lead fields and match leads between LinkedIn to Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/21/2023
+ms.date: 08/12/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -14,7 +14,10 @@ search.audienceType:
 # Set up the LinkedIn Lead Gen integration and define lead matching
 
 > [!IMPORTANT]
-> This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
+> **This article only applies to [outbound marketing](user-guide.md), which will be removed from the product on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](transition-overview.md)
+
+> [!WARNING]
+> Social posting and LinkedIn lead generation capabilities will be removed from Customer Insights - Journeys on December 2, 2024.
 
 Use the settings pages under the **Settings** > **Lead management** heading to configure the LinkedIn feature. A few LinkedIn security roles are also provided to let administrators control access to these features.
 

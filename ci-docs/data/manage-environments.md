@@ -4,8 +4,8 @@ description: Learn how to to manage environments as an admin.
 ms.date: 12/15/2023
 ms.topic: how-to
 ms.reviewer: mhart
-author: kishorem-ms
-ms.author: kishorem
+author: Scott-Stabbert
+ms.author: sstabbert
 ms.custom: bap-template
 ---
 

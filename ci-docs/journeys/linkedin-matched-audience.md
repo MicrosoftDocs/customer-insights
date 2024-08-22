@@ -1,7 +1,7 @@
 ---
 title: Market to segments on LinkedIn with LinkedIn Matched Audiences
 description: How to use an existing Dynamics 365 segment to find matching LinkedIn users and create a LinkedIn Matched Audience.
-ms.date: 08/21/2023
+ms.date: 08/12/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -14,7 +14,10 @@ search.audienceType:
 # Market to segments on LinkedIn with LinkedIn Matched Audiences
 
 > [!IMPORTANT]
-> This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
+> **This article only applies to [outbound marketing](user-guide.md), which will be removed from the product on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](transition-overview.md)
+
+> [!WARNING]
+> Social posting and LinkedIn lead generation capabilities will be removed from Customer Insights - Journeys on December 2, 2024.
 
 [LinkedIn Matched Audiences](https://www.linkedin.com/help/lms/answer/86492/linkedin-matched-audiences-overview?lang=en) is a LinkedIn feature that lets you match a collection of contacts stored on an external system, like Dynamics 365 Customer Insights - Journeys, to an audience of LinkedIn members with matching email addresses. Customer Insights - Journeys comes ready to take advantage of this capability, so you can leverage your Customer Insights - Journeys static segments to create a matching audience of LinkedIn members. Then, when you run a campaign on LinkedIn, you can target the same segments that you set up in Customer Insights - Journeys and also turn any leads generated on LinkedIn into Dynamics 365 leads through the [LinkedIn Lead Gen Forms integration](linkedin-lead-gen-integration.md) feature also offered by Customer Insights - Journeys.
 

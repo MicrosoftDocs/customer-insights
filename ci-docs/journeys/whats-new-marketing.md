@@ -1,7 +1,7 @@
 ---
 title: New and upcoming features
 description: Information about new features, improvements, and bug fixes in Dynamics 365 Customer Insights - Journeys releases.
-ms.date: 08/05/2024
+ms.date: 08/13/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -10,6 +10,9 @@ ms.collection: bap-ai-copilot
 
 # What's new in Dynamics 365 Customer Insights - Journeys
 
+> [!IMPORTANT]
+> **The [outbound marketing](user-guide.md) module will be removed from Customer Insights - Journeys on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](transition-overview.md)
+
 [!INCLUDE [marketing-trial-cta](./includes/marketing-trial-cta.md)]
 
 We're excited to announce our newest updates! This article summarizes early access features, preview features, general availability enhancements, monthly updates, and bug fixes. To see the long-term feature plans, take a look at the [Dynamics 365 and Power Platform release plans](/dynamics365/release-plans/).
@@ -17,6 +20,10 @@ We're excited to announce our newest updates! This article summarizes early acce
 Customer Insights - Journeys updates are [pushed to customers automatically](https://cloudblogs.microsoft.com/dynamics365/it/2020/04/27/automatic-update-policy-for-dynamics-365-marketing/). Solutions are available for early validations. To manually update your instances, follow the steps in [Keep Customer Insights - Journeys up to date](apply-updates.md).
 
 To submit and vote on **feature requests** and **product suggestions**, go to the [Dynamics 365 Application Ideas portal](https://experience.dynamics.com/ideas/categories/?forum=dfa5b83d-9e4c-e811-a956-000d3a1bef07&forumName=Dynamics%20365%20Marketing).
+
+## August 2024 update
+
+There is no Dynamics 365 Customer Insights - Journeys release for August. We will be back in September with new feature improvements, updates, and bug fixes.
 
 ## July 2024 update
 
@@ -58,7 +65,7 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 ### Monthly enhancements
 
 - **Optimize your email content with enhanced variation insights**
-    - You can now effortlessly compare the performance of different email variants within real-time journeys. Gain valuable insights into key metrics such as open rates, click rates, and unique clicks for each variant, enabling you to identify what resonates best with your audience. Optimize your email campaigns by leveraging data-driven decisions to improve engagement and drive better results.
+    - You can now effortlessly compare the performance of different email variants using conditional content within real-time journeys. Gain valuable insights into key metrics such as open rates, click rates, and unique clicks for each conditional content variant, enabling you to identify what resonates best with your audience. Optimize your email campaigns by leveraging data-driven decisions to improve engagement and drive better results.
     - [Docs](real-time-marketing-analytics.md#email-insights)
 
 ## June 2024 update

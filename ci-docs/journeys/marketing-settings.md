@@ -14,7 +14,7 @@ search.audienceType:
 # Overview of marketing settings in outbound marketing
 
 > [!IMPORTANT]
-> This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
+> **This article only applies to [outbound marketing](user-guide.md), which will be removed from the product on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](transition-overview.md)
 
 The **Settings** work area contains pages that let you configure the core marketing functionality of Customer Insights - Journeys. See the following topics for information about how to work with each page in the **Marketing settings** section:
 

@@ -4,8 +4,8 @@ description: "Use proprietary data from Microsoft to enrich your customer data w
 ms.date: 11/15/2022
 ms.reviewer: mhart
 ms.topic: how-to
-author: kishorem-MS
-ms.author: kishorem
+author: Scott-Stabbert
+ms.author: sstabbert
 searchScope: 
   - ci-enrichments
   - ci-enrichment-wizard

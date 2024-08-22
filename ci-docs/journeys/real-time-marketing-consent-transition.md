@@ -13,6 +13,9 @@ search.audienceType:
 
 # Consent management and double opt-in transition guidance
 
+> [!IMPORTANT]
+> **The [outbound marketing](user-guide.md) module will be removed from Customer Insights - Journeys on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](transition-overview.md)
+
 More functionality and features are added Dynamics 365 Customer Insights - Journeys each month. Currently, there are two engines to engage customers in the Customer Insights - Journeys app: the outgoing outbound marketing engine and the current Customer Insights - Journeys engine. The two engines work differently, so feature parity can come in different forms. You should consider this when transitioning from outbound marketing to Customer Insights - Journeys.
 
 This is an introductory article to explain how consent works in real-time journeys and the differences from outbound marketing. For a more detailed discussion, see [Understanding consent management in Dynamics 365 Customer Insights - Journeys - Dynamics FastTrack Blogs](https://community.dynamics.com/blogs/post/?postid=8b2a4ee8-1069-ee11-a81c-000d3a7a1a66)

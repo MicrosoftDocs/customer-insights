@@ -14,7 +14,7 @@ search.audienceType:
 # Data protections in outbound marketing
 
 > [!IMPORTANT]
-> This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
+> **This article only applies to [outbound marketing](user-guide.md), which will be removed from the product on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](transition-overview.md)
 
 Use the **Settings** > **Email marketing** > **Data protections** page to enable data privacy features of Dynamics 365 Customer Insights - Journeys. For more information, including how to use the settings here, see [Data protection and privacy](privacy.md).
 

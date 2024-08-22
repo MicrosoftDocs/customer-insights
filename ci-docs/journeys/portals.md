@@ -14,7 +14,7 @@ search.audienceType:
 # Create interactive features with or without portals in outbound marketing
 
 > [!IMPORTANT]
-> This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
+> **This article only applies to [outbound marketing](user-guide.md), which will be removed from the product on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](transition-overview.md)
 
 Dynamics 365 Customer Insights - Journeys provides features for creating landing pages, subscription centers, online forms, event websites, and other ways of interacting with your customers online. Each of these features is intended to be used by marketing contacts to view and submit information to and from the Customer Insights - Journeys app. There are two ways to provide these interactive features:
 

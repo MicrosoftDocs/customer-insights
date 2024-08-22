@@ -56,7 +56,7 @@
       href: transition-walkthrough-forms.md
     - name: Event management
       href: transition-walkthrough-events.md
-    - name: Lead management and scoring
+    - name: Lead management, scoring, and LinkedIn Lead Gen
       href: transition-walkthrough-leads.md
     - name: Insights and reports
       href: transition-walkthrough-insights.md
@@ -574,6 +574,8 @@
         href: email-policies.md
       - name: How Customer Insights - Journeys uses suppression lists
         href: suppression-lists.md
+      - name: "Feedback loop: What is it and how to prevent complaints"
+        href: feedback-loop.md
     - name: Troubleshoot email issues
       href: email-troubleshooting.md
   - name: Customization

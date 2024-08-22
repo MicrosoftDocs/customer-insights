@@ -97,7 +97,7 @@ Because an on-premises data gateway is in organization's network, Microsoft can'
 > [!IMPORTANT]
 > Update your gateways to the latest version. You can install an update and reconfigure a gateway from a prompt shown on the gateway screen directly or [download the latest version](https://powerapps.microsoft.com/downloads/). If you don't use the latest gateway version, the dataflow refresh fails with error messages like **The keyword isn't supported: configuration properties. Parameter name: keyword**.
 >
-> Errors with on-premises data gateways are often caused by configuration issues. For more information about troubleshooting data gateways, see [Troubleshoot the on-premises data gateway](/data-integration/gateway/service-gateway-tshoot).
+> Errors with on-premises data gateways are often caused by configuration issues. For more information about troubleshooting data gateways, go to [Troubleshoot the on-premises data gateway](/data-integration/gateway/service-gateway-tshoot).
 
 ## Edit Power Query data sources
 
@@ -143,7 +143,7 @@ The user performing this action must have a *Dataverse Administrator* role.
 Customer Insights - Data is aligning Power Query separate refresh schedules with the system refresh schedule. To ensure that Customer Insights - Data reflects current data, remove your Power Query refresh schedules so that these data sources refresh as part of the system refresh. If your Power Query data source shows **Completed with warnings** on the **Data sources** page, your data source contains a separate refresh schedule. Remove the separate schedule. After a system refresh, the status changes to **Completed**.
 
 > [!IMPORTANT]
-> The data source refresh time is added to the total time for a system refresh. We recommend you [view your Power Query run durations](#view-power-query-run-durations) and then change the [system refresh schedule](schedule-refresh.md) if needed. For example, a Power Query source might take an average of 30 minutes to refresh. Therefore, we recommended you update the system refresh schedule to start 30 minutes earlier to recieve results at a simaliar time.
+> The data source refresh time is added to the total time for a system refresh. We recommend you [view your Power Query run durations](#view-power-query-run-durations) and then change the [system refresh schedule](schedule-refresh.md) if needed. For example, a Power Query source might take an average of 30 minutes to refresh. Therefore, we recommended you update the system refresh schedule to start 30 minutes earlier to receive results at a similar time.
 
 ### Remove Power Query schedules
 

@@ -14,7 +14,7 @@ search.audienceType:
 # Create an interactive customer journey with conditions and signup
 
 > [!IMPORTANT]
-> This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
+> **This article only applies to [outbound marketing](user-guide.md), which will be removed from the product on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](transition-overview.md)
 
 In [Create a simple customer journey with email messaging](create-simple-customer-journey.md), you created a customer journey that sends an email message to all contacts in a segment. Now we'll go a bit deeper into customer journeys to see how to add interactive features and decision points by including landing pages and conditions in the design.
 
