@@ -34,7 +34,7 @@ The following table lists each available feature, preview status, and links for 
 | Send now | Preview | [Enable Send Now to send emails without having to build a journey.](email-without-journey.md)|
 | View in browser | Production | [Enable adding a link to view emails in web browsers.](view-email-in-browser.md) |
 | Configurable compliance settings in email editor | Preview | [Enable configurable compliance settings in email editor.](real-time-marketing-email-text-consent.md) |
-| Copilot | Production | [Enable the use of an AI service to generate text suggestions based on a wide range of internet sources and (if enabled) on your organization's emails.](content-ideas.md) |
+| Copilot | Production | [Enable the use of an AI service to generate text suggestions based on a wide range of internet sources and on your organization's emails.](content-ideas.md) |
 | Data sharing program | Production | Enable Microsoft to manually access (human review) customer data to build, improve, and validate the feature's AI models. |
 | AI tagging for images | Preview | [Enable AI-generated tags to be added when you upload images to the asset library.](upload-images-files.md) |
 | Smart recommendation for images | Preview | [Enable suggestions of images from your asset library based on tags.](upload-images-files.md) |
