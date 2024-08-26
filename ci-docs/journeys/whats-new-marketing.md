@@ -31,11 +31,27 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 
 ### General availability
 
-<!-- Test -->
+- **Scale your business with confidence with 300M maximum monthly interactions**
+    - Reach up to 100 million contacts or leads and send up to 300 million messages per month in real-time journeys. Added capacity empowers you to deliver personalized experiences at scale and delight customers in new ways. Additional interactions help you grow your business, whether you’re increasing your customer base in new markets, reaching additional geographies, promoting new products, or expanding your prospective customer pipeline to reach higher sales targets.
+    - [Release plan](/dynamics365/release-plan/2024wave1/customer-insights/dynamics365-customer-insights-journeys/scale-business-confidence-300m-maximum-monthly-interactions)
+    - [Docs]()
+
+- **Reach customers with greater throughput for trigger-based journeys**
+    - In an increasingly digital and interconnected world, businesses are learning that the key to winning over customers lies in capturing their attention in the most crucial moments. Businesses must deliver the right experience, tailored and timely, effectively engaging customers when it matters most. This often involves delivering millions of personalized messages within a span of a few hours. With this release, you can reach customers faster by reacting to customers’ behavior in moments that matter with up to 500,000 interactions per hour for trigger-based journeys. This allows you to connect with customers at pivotal moments, making your outreach more timely and relevant and amplifying the effectiveness of each interaction.
+    - [Release plan](/dynamics365/release-plan/2024wave1/customer-insights/dynamics365-customer-insights-journeys/reach-customers-quickly-10x-increased-throughput)
+    - [Docs]()
+
+- **Automate seamless handoffs between marketing and sales**
+    - Invite your sales team to engage with qualified leads at the right time and stage of their journey by creating sales activities and records directly from customer journeys. Real-time journeys are a key part of nurturing and qualifying leads and opportunities. When your customer has sent the right signals through your direct engagement, the next step is often for your sales team to act. You can now create sales activities such as tasks and phone calls directly from journeys so that leads get individualized attention when they’re most likely to engage. You can also create lead or opportunity records based on a customer’s interaction with your campaign, ensuring that the sales team has the right information to close leads generated from marketing activities.
+    - [Release plan](/dynamics365/release-plan/2024wave1/customer-insights/dynamics365-customer-insights-journeys/close-leads-faster-automating-seamless-handoffs-between-marketing-sales)
+    - [Docs]()
 
 ### Public preview
 
-<!-- Test -->
+- **Refine email content in running journeys**
+    - To maximize customer engagement, it's crucial for customer experience teams to regularly refine email content, ensuring that communication remains current, relevant, and impactful. You can now easily edit content, layout, links, buttons, or dynamic content in your email messages while a journey is running, without creating a new version or interrupting the customer experience. Changing email messages in live journey gives you more freedom and power over your email marketing campaigns and helps you to respond to changing business or customer needs.
+    - [Release plan](/dynamics365/release-plan/2024wave1/customer-insights/dynamics365-customer-insights-journeys/improve-engagement-editing-emails-live-journeys)
+    - [Docs]()
 
 ## August 2024 update
 
