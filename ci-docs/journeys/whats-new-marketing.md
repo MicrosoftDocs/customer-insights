@@ -3,8 +3,8 @@ title: New and upcoming features
 description: Information about new features, improvements, and bug fixes in Dynamics 365 Customer Insights - Journeys releases.
 ms.date: 08/13/2024
 ms.topic: article
-author: alfergus
-ms.author: alfergus
+author: colinbirkett
+ms.author: colinbirkett
 ms.collection: bap-ai-copilot
 ---
 
@@ -20,6 +20,22 @@ We're excited to announce our newest updates! This article summarizes early acce
 Customer Insights - Journeys updates are [pushed to customers automatically](https://cloudblogs.microsoft.com/dynamics365/it/2020/04/27/automatic-update-policy-for-dynamics-365-marketing/). Solutions are available for early validations. To manually update your instances, follow the steps in [Keep Customer Insights - Journeys up to date](apply-updates.md).
 
 To submit and vote on **feature requests** and **product suggestions**, go to the [Dynamics 365 Application Ideas portal](https://experience.dynamics.com/ideas/categories/?forum=dfa5b83d-9e4c-e811-a956-000d3a1bef07&forumName=Dynamics%20365%20Marketing).
+
+## September 2024 update
+
+### Version number
+
+| App              | GA release      |
+|------------------|-----------------|
+| Customer Insights - Journeys        |     |
+
+### General availability
+
+<!-- Test -->
+
+### Public preview
+
+<!-- Test -->
 
 ## August 2024 update
 
