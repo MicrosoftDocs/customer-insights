@@ -27,7 +27,7 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 
 | App              | GA release      |
 |------------------|-----------------|
-| Customer Insights - Journeys        |     |
+| Customer Insights - Journeys        |   <!-- ADD NUMBER -->  |
 
 ### General availability
 
@@ -51,7 +51,7 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 - **Refine email content in running journeys**
     - To maximize customer engagement, it's crucial for customer experience teams to regularly refine email content, ensuring that communication remains current, relevant, and impactful. You can now easily edit content, layout, links, buttons, or dynamic content in your email messages while a journey is running, without creating a new version or interrupting the customer experience. Changing email messages in live journey gives you more freedom and power over your email marketing campaigns and helps you to respond to changing business or customer needs.
     - [Release plan](/dynamics365/release-plan/2024wave1/customer-insights/dynamics365-customer-insights-journeys/improve-engagement-editing-emails-live-journeys)
-    - [Docs]()
+    - [Docs](edit-email-in-live-journey.md)
 
 ## August 2024 update
 
