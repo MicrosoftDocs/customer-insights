@@ -1,7 +1,7 @@
 ---
 title: Lead management, scoring, and LinkedIn Lead Gen
 description: Learn how to transition lead management and scoring capabilities from outbound marketing to real-time journeys in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/12/2024
+ms.date: 08/27/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -27,13 +27,15 @@ Creating scoring models to identify the best leads is an important aspect of lea
 -	Ability to target a specific audience when creating the scoring model.
 -	New set of insights.
 
-The main difference in the real-time journeys lead scoring functionality compared to outbound marketing is in how marketers signal to their sales team that the lead is ready for them. This is called "Marketing Qualification" in real-time journeys. In outbound marketing, leads were marketing-qualified within the context of a scoring model (“update sales-ready flag if lead reaches 50 points”). In real-time journeys leads are qualified in a separate feature. This provides extra flexibility (“update sales-ready if score model 1 > 50 points and/or score model 2 > 30 points") and is the foundation for more sophisticated qualification conditions. In the future, we're adding qualification based on high-value actions or attributes without the need for a scoring model.
+The main difference in the real-time journeys lead scoring functionality compared to outbound marketing is in how marketers signal to their sales team that the lead is ready for them. This is called "Marketing Qualification" in real-time journeys. In outbound marketing, leads were marketing-qualified within the context of a scoring model (“update sales-ready flag if lead reaches 50 points”). In real-time journeys, leads are qualified in a separate feature. This provides extra flexibility (“update sales-ready if score model 1 > 50 points and/or score model 2 > 30 points") and is the foundation for more sophisticated qualification conditions. In the future, we're adding qualification based on high-value actions or attributes without the need for a scoring model.
 
 Unfortunately, there's no way to transfer existing scoring models from outbound marketing to real-time journeys. Moving scoring models requires manual effort to rebuild the models and the processes in real-time journeys. However, the fact that the real-time journeys lead scoring entity is the same as in outbound marketing, helps facilitate migration, especially for customizations.
 
 ## LinkedIn Lead Gen
 
-LinkedIn Lead Gen capabilities are being removed from outbound marketing on December 2, 2024. We're considering adding LinkedIn Lead Gen to real-time journeys in a future release, but there is no timeline for the feature currently.
+LinkedIn Lead Gen capabilities are being removed from outbound marketing on December 2, 2024. We're considering adding LinkedIn Lead Gen to real-time journeys in a future release, but there's no timeline for the feature currently.
+
+Once LinkedIn Lead Gen capabilities are removed, Customer Insights – Journeys will stop receiving data from LinkedIn forms. You won't be able to sign up for new LinkedIn accounts or reauthenticate existing accounts. You'll still be able to access existing data (it won't be removed) and campaigns in LinkedIn will continue unaffected.
 
 ## Relevant upcoming features
 
