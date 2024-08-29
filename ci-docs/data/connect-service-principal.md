@@ -94,8 +94,6 @@ Attach a Data Lake Storage account in Customer Insights - Data to [store output 
 
 1. Copy the storage account resource ID value.
 
-   :::image type="content" source="media/ADLS-SP-ResourceId.png" alt-text="Copy the storage account resource ID.":::
-
 1. In Customer Insights - Data, insert the resource ID in the resource field displayed on the storage account connection screen.
 
    :::image type="content" source="media/ADLS-SP-ResourceIdConnection.png" alt-text="Enter the storage account resource ID information.":::
