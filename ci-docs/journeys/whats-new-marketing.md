@@ -43,6 +43,11 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
     - [Release plan](/dynamics365/release-plan/2024wave1/customer-insights/dynamics365-customer-insights-journeys/improve-engagement-editing-emails-live-journeys)
     - [Docs](edit-email-in-live-journey.md)
 
+- **Streamline form filling and event registration with form prefill**
+    - The repetitive task of filling out forms can be a significant deterrent to event registration. Nobody likes to repeat information that they've already provided. Imagine loyal customers who attend multiple conferences each year having to input their contact information and preferences every time. Form prefill in Dynamics 365 Customer Insights eliminates the need to repeatedly request basic details from your customers, reducing redundancy and saving time. This not only expedites the registration process but also allows for more strategic collection of customer data over time.
+    - [Release plan](/dynamics365/release-plan/2024wave2/customer-insights/dynamics365-customer-insights-journeys/form-prefill-simplifies-form-filling-event-sign-up)
+    - [Docs]()
+
 ## August 2024 update
 
 There is no Dynamics 365 Customer Insights - Journeys release for August. We will be back in September with new feature improvements, updates, and bug fixes.
