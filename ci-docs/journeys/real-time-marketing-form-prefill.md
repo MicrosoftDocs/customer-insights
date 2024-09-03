@@ -20,7 +20,7 @@ search.audienceType:
 
 The form prefill feature enhances the customer experience by automatically filling in form fields with known values for existing customers. This feature is available for both *marketing* and *event registration* forms. However, preference center forms use a different method for prefilling.
 
-An existing customer is identified based on the prefill context in the URL, which is derived from a link in an email. Therefore, the form can only be prefilled if the customer arrives at the page by clicking a link in the email. The prefill context in the email link is valid for 30 days. If the customer clicks a link in an email older than 30 days, the visited form will not be prefilled. Additionally, the form can only be prefilled if the existing customer has provided consent for the Tracking purpose. You should inform your customers that by forwarding an email containing a link to a prefilled form, they may inadvertently expose their personal information.
+An existing customer is identified based on the prefill context in the URL, which is derived from a link in an email. Therefore, the form can only be prefilled if the customer arrives at the page by clicking a link in the email. The prefill context in the email link is valid for 30 days. If the customer selects a link in an email older than 30 days, the visited form won't be prefilled. Additionally, the form can only be prefilled if the existing customer provided consent for the Tracking purpose. You should inform your customers that by forwarding an email containing a link to a prefilled form, they might inadvertently expose their personal information.
 
 The default values of form fields are replaced by the prefilled values.
 
@@ -43,7 +43,7 @@ You can enable your domain for Form prefill in Settings -> Domains. The out-of-t
 > [!IMPORTANT]
 > Make sure you enable the form prefill only for trusted and secure domains that are under your control. Do not enable prefill for shared domains.
 
-It is not required to verify the ownership of domain enabled for prefill of real-time journeys forms.
+It isn't required to verify the ownership of domain enabled for prefill of real-time journeys forms.
 
 ### Configure prefill in the form editor
 
@@ -54,8 +54,8 @@ Open the form editor and enable Form prefill in the form settings. Enabling form
 
 ### Check your consent model configuration
 
-The prefill requires the customer to provide a consent with the *Tracking* purpose. The state of *Tracking* purpose is cached for 15 minutes for prefill scenario. That means the form can be prefilled up to 15 minutes after the customer revoked the consent for the *Tracking* purpose.
+The prefill requires the customer to provide consent with the *Tracking* purpose. The state of *Tracking* purpose is cached for 15 minutes for prefill scenario. That means the form can be prefilled up to 15 minutes after the customer revoked the consent for the *Tracking* purpose.
 
-The goal of form prefill is to maintain the consent already provided for specific topics and purposes. If a purpose or topic is linked to multiple channels (such as email and text), the form prefill will set the consent checkbox as if consent was given for all linked channels.
+The goal of form prefill is to maintain the consent already provided for specific topics and purposes. If a purpose or topic is linked to multiple channels (such as email and text), the form prefill sets the consent checkbox as if consent was given for all linked channels.
 
-For example, the Commercial purpose is represented in the form by a single checkbox linked to both email and text channels. If the customer has provided consent for the Commercial purpose via the email channel but not the text channel, submitting the prefilled form will result in consent being provided for both channels.
+For example, the Commercial purpose is represented in the form by a single checkbox linked to both email and text channels. If the customer provided consent for the Commercial purpose via the email channel but not the text channel, submitting the prefilled form results in consent being provided for both channels.
