@@ -38,7 +38,7 @@ To increase the level of security of the form prefill feature there are several 
 You can enable your domain for Form prefill in Settings -> Domains. The out-of-the-box domain for forms hosted as standalone page is enabled for form hosting by default. You can contact the technical support if you want to disable form prefill for this domain.
   
 > [!div class="mx-imgBorder"]
-> ![Fetch styles from your website using Copilot.](media/real-time-marketing-enable-prefill-for-domain.png)
+> ![Enable your domain for form prefill.](media/real-time-marketing-enable-prefill-for-domain.png)
 
 > [!IMPORTANT]
 > Make sure you enable the form prefill only for trusted and secure domains that are under your control. Do not enable prefill for shared domains.
@@ -50,7 +50,7 @@ It isn't required to verify the ownership of domain enabled for prefill of real-
 Open the form editor and enable Form prefill in the form settings. Enabling form prefill in settings makes all fields of that specific form prefilled. You can also enable or disable prefill for a specific field in the fields properties. The form editor indicates which fields are prefilled with an icon and the editor also shows the total count of prefilled fields.
 
 > [!div class="mx-imgBorder"]
-> ![Fetch styles from your website using Copilot.](media/real-time-marketing-configure-form-prefill.png)
+> ![Set up form prefill in form editor.](media/real-time-marketing-configure-form-prefill.png)
 
 ### Check your consent model configuration
 
