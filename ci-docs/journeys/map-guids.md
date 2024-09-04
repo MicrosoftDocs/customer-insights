@@ -1,7 +1,7 @@
 ---
 title: Map GUIDs to email clients, browsers, operating systems, and device types
 description: GUIDs to map data on email clients, device types, browsers, and operating systems in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/06/2023
+ms.date: 09/03/2024
 ms.topic: article
 author: colinbirkett
 ms.author: colinbirkett
@@ -16,6 +16,8 @@ search.audienceType:
 Customer Insights - Journeys interactions like **EmailOpened** and **EmailClicked** contain information about email clients, device types, browsers, and operating systems used by recipients.
 
 The list below contains the Globally Unique Identifiers (GUIDs) to map data on email clients, device types, browsers, and operating systems.
+
+The data related to user agents may be partial or missing, depending on when your journey was running, especially if it was active before August 2024. The detection of email clients relies on email opens and is dependent on the response received from the email provider. Certain email clients, like Apple, have privacy protections in place that may prevent detection. The detection of device types, browsers, and operating systems is dependent on email clicks.
 
 > [!NOTE]
 > Some GUIDs are labelled as “Unknown” when the email clients, device types, browsers, or operating systems used by the customer can't be detected. They are labelled as “Other” when the information can be detected but is non-categorized, such as an app by a smaller provider.
