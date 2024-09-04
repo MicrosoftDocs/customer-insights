@@ -27,7 +27,7 @@ We have a dedicated section in our documentation for transition guidance: [Trans
 
 As an existing outbound marketing customer, you must make a note of removal dates above and transition to real-time journeys before that to avoid interruption. If you're using social posting or LinkedIn lead generation capabilities, note that they'll be removed sooner and your ability to create new social posts or LinkedIn leads will be restricted ahead of the removal date. Your data will still be available for reporting.
 
-As is the case currently, newly created, copied, migrated, or restored environments will only include real-time journeys. You may be able to add outbound using the **Enable** link on the **Settings** > **Version** page. This link is only available when another existing environment with outbound marketing is present. If you don't see the enable link, follow the guidance for [requesting outbound marketing to be added](transition-overview.md#request-an-exception-to-enable-outbound-marketing-existing-outbound-customers-only)
+As is the case currently, newly created, copied, migrated, or restored environments will only include real-time journeys. You may be able to add outbound using the **Enable** link on the **Settings** > **Version** page. This link is only available when another existing environment with outbound marketing is present. If you don't see the enable link, follow the guidance for [requesting outbound marketing to be added](transition-overview.md#if-the-enable-link-isnt-available-or-doesnt-work)
 
 ## I'm a new Dynamics 365 Customer Insights - Journeys customer. How do these changes impact me?
 
