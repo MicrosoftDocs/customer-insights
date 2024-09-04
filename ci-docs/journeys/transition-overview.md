@@ -1,7 +1,7 @@
 ---
 title: Transition overview
 description: Overview of the transition process from outbound marketing to real-time journeys in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/12/2024
+ms.date: 09/03/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -43,15 +43,15 @@ Here are some recommendation actions for existing customers depending on your ne
 | I provisioned a new org (or copied, migrated, or restored an existing org) and don't see outbound marketing                                             | This is expected; outbound marketing is no longer included in new orgs. We strongly recommend using real-time journeys as outbound marketing will be removed on June 30, 2025. See [Why should I transition to real-time journeys?](transition-faqs.md#why-should-i-transition-to-real-time-journeys) |
 | I'm planning to transition to real-time journeys soon but need outbound marketing until then.  | You can add outbound marketing back using the **Enable** link available on the **Settings** > **Versions** page. <br><br> **Important**: To see the link and add outbound marketing, you need to be an admin. If you're not an admin, ask someone who is to do this step. If you still don't see the link, follow the guidance for [requesting outbound marketing to be added](transition-overview.md#request-an-exception-to-enable-outbound-marketing-existing-outbound-customers-only).                 |
 
-## Request an exception to enable outbound marketing (existing outbound customers only)
+### If the "Enable" link isn't available or doesn't work
 
-If you're an existing outbound marketing user and require outbound marketing to be enabled in your environment, you can request an exception by filling out [the outbound marketing request form](https://go.microsoft.com/fwlink/?linkid=2251742).
+If you're an existing outbound marketing user and the "Enable" outbound marketing link as described above isn't available or doesn't work, you can fill out [the outbound marketing request form](https://go.microsoft.com/fwlink/?linkid=2251742).
 
-Note the following parameters:
+- As described in [Real-time journeys transition FAQs](transition-faqs.md#i-cant-transition-by-the-outbound-marketing-removal-date-can-i-request-an-exception), there are no exceptions for using outbound marketing past its removal date. This form is only for existing customers currently using outbound marketing who are unable to use the "Enable" link as described above. Requests for any other reasons will be rejected.
 - This request should only be made by customers who already have been using outbound marketing. Requests from customers who never had outbound marketing will be denied.
 - Don't create support tickets or use other channels for the same requests; you'll be redirected to this form.
-- This form requires an email address. The email address is used to communicate receipt of the request, confirming when the request has been processed, and if needed, ask for additional information.
-- Most requests are processed in about three business days once all required information is available.
+- This form requires an email address. The email address is used to communicate receipt of the request, confirming when the request has been reviewed, and if needed, ask for additional information.
+- Most requests are reviewed in about three to five business days once all required information is available.
 
 > [!TIP]
 > If you have questions or comments, visit the [Outbound to real-time transition community forum](https://community.dynamics.com/forums/thread/?partialUrl=Outbound-to-Real-Time-Transition)
