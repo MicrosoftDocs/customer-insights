@@ -53,10 +53,18 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
     - [Release plan](/dynamics365/release-plan/2024wave1/customer-insights/dynamics365-customer-insights-journeys/improve-customer-experience-controlling-how-fast-customers-enter-journey)
     - [Docs]()
 
+### Private preview
+
+- **Increased throughput of email open interactions from xx to xx**
+    - 
+    - [Release plan]()
+    - [Docs]()
+
 ### Monthly enhancements
 
-- **Marketers can confidently stop any journey**
-    - TEST
+- **Queued messages are not sent when journey is stopped**
+    - When a journey is stopped, you can now see an immediate change in the journey state to “Stopping.” This assures that your request was received and is being processed. Furthermore, if your messages are still pending in the send queue (can happen when there is high volume of messages), such messages will now be removed immediately and will not be sent. This avoids a situation where messages continue to be delivered even though the journey has been stopped.
+    - [Release plan]()
     - [Docs]()
 
 ## August 2024 update
