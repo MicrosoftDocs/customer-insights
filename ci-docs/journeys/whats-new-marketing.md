@@ -64,7 +64,7 @@ There is no Dynamics 365 Customer Insights - Journeys release for August. We wil
 
 ### Monthly enhancements
 
-- **Optimize your email content with enhanced variation insights**
+- **Optimize your email content with enhanced insights for conditional content variations**
     - You can now effortlessly compare the performance of different email variants using conditional content within real-time journeys. Gain valuable insights into key metrics such as open rates, click rates, and unique clicks for each conditional content variant, enabling you to identify what resonates best with your audience. Optimize your email campaigns by leveraging data-driven decisions to improve engagement and drive better results.
     - [Docs](real-time-marketing-analytics.md#email-insights)
 
