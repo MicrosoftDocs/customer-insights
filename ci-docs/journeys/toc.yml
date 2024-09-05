@@ -285,7 +285,7 @@
       - name: "Preview: Control how fast customers can enter a journey"
         href: control-how-fast-enter-journey.md
     - name: Known issues for journeys
-      href: journey-known-issues.md``
+      href: journey-known-issues.md
   - name: Event planning and management
     items:
     - name: Event management overview
