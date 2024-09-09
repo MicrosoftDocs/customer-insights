@@ -97,6 +97,9 @@ The following insights categories are provided:
     > The detection of device types, browsers, and operating systems is dependent on email clicks.
     >
     > Not all email clients, device types, browsers, and operating systems can be detected. They are labelled as “Unknown” when the user agent used by the customer could not be detected. They are labelled as “Other” when the user agent used by the customer can be detected but is non-categorized such as a local provider. 
+- **Link insights**: Unlock valuable insights into your email's URLs engagement and make data-driven decisions to enhance the effectiveness of your email marketing campaigns with link insights. Using link insights, you can understand the performance of each link within your email campaigns and identify the top-performing links based on total clicks, unique clicks, and click rate. Get more clarity by grouping your links by URL or link alias. Learn more: [Edit email components in a live journey](edit-email-in-live-journey.md).
+    > [!NOTE]
+    > Links insights will only display data for emails (with links) that have been created after September 2024.
 - **Variation insights**: Gain valuable insights into key metrics such as unique opens, unique clicks, number of delivered messages, open rate, click rate, spam messages, and unsubscriptions for each variant, enabling you to identify what resonates best with your audience. Variation insights are visible only if the email contains conditional content.
 
     :::image type="content" source="media/analytics-email-insights.png" alt-text="Screenshot of email insights dashboard." lightbox="media/analytics-email-insights.png":::
