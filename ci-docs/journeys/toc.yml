@@ -338,6 +338,8 @@
       href: real-time-marketing-manage-forms.md
     - name: Troubleshoot forms
       href: real-time-marketing-troubleshooting-forms.md
+    - name: Prefill values for forms and event registration
+      href: real-time-marketing-form-prefill.md
   - name: Lead generation and management
     items:
     - name: Lead generation and management overview
