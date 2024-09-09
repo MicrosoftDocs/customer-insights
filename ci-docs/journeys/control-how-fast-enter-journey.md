@@ -24,7 +24,7 @@ With journey rate limiting, you can space out message sending or other actions o
 
 To set rate-limit, open the journey in the journey designer and select the entry tile and then settings tab from the toolbar.
 
-:::image type="content" source="media/rate-limit.png" alt-text="Enable a rate limit to control how fast audience members enter this journey.":::
+:::image type="content" source="media/rate-limit.png" alt-text="Enable a rate limit to control how fast audience members enter this journey." lightbox="media/rate-limit.png":::
 
 A few key points to note:
 
