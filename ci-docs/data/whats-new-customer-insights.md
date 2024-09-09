@@ -24,7 +24,7 @@ We roll out updates on a region-by-region basis. So certain regions might see fe
 - **Accelerate time to insights with data in Delta Lake format**
     - Your customer data updates constantly, with rapidly changing signals like online activities and mobile interactions. When a traditional data warehouse is used to generate customer insights, this leads to increased time to insight with each update while the volume of unprocessed signals keeps growing. Longer queues result in slow or stale insights. With native support for Delta Lake storage format in Customer Insights, you can now accelerate processing times even with a higher volume of fast-changing data updates. Get customer profiles and associated insights updated more frequently and react to customer engagements based on the most current information available. This empowers you to create the most relevant and personalized experiences for your customers and the most up-to-date and timely insights for your business users.
     - [Release plan](/dynamics365/release-plan/2024wave2/customer-insights/dynamics365-customer-insights-data/accelerate-time-insights-data-delta-lake-format)
-    - [Docs]()
+    - [Docs](connect-delta-lake.md)
 
 ## June 2024
 
