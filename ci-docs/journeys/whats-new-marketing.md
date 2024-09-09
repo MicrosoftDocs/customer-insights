@@ -63,9 +63,13 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
     - Link insights in real-time journeys allow you to analyze the performance of individual links in your emails. You can now view key metrics such as click rate and unique clicks per link and easily compare the performance of each link within your email campaigns. Use this data to optimize your content, improve engagement, and make more informed decisions to drive better results.
     - [Docs](real-time-marketing-analytics.md)
 
+<!---
+
 - **Outbound marketing removal notification and ability to hide outbound**
     - In-product banners are now shown to all users to inform them that Outbound marketing will be removed as of June 30th, 2025 and that social posting and LinkedIn lead generation will be removed as of Dec 2nd, 2024. We also added a highly visible card in the Settings > Versions page that talks about moving to real-time and now provide a button that can be used to hide outbound from the site map once the transition is complete.
     - [Docs]()
+
+-->
 
 ## August 2024 update
 
