@@ -284,6 +284,8 @@
         href: real-time-marketing-branches.md
       - name: Customize the journey designer
         href: real-time-marketing-journey-designer.md
+      - name: "Preview: Control how fast customers can enter a journey"
+        href: control-how-fast-enter-journey.md
     - name: Known issues for journeys
       href: journey-known-issues.md
   - name: Event planning and management
