@@ -1,5 +1,5 @@
 ---
-title: Edit email components in a live journey
+title: "Preview: Edit email components in a live journey"
 description: Learn how to edit email components in live journey in Dynamics 365 Customer Insights - Journeys
 ms.date: 08/01/2024
 ms.topic: article
@@ -11,7 +11,12 @@ search.audienceType:
   - enduser
 ---
 
-# Edit email components in a live journey
+# PREVIEW: Edit email components in a live journey
+
+> [!IMPORTANT]
+> A preview feature is a feature that is not complete, but is made available before it’s officially in a release so customers can get early access and provide feedback. Preview features aren’t meant for production use and may have limited or restricted functionality.
+> 
+> Microsoft doesn't provide support for this preview feature. Microsoft Dynamics 365 Technical Support won’t be able to help you with issues or questions. Preview features aren’t meant for production use, especially to process personal data or other data that are subject to legal or regulatory compliance requirements.
 
 The email editor in Dynamics 365 Customer Insights – Journeys allows you to create and design engaging email messages for your customers. You can use various components such as text, images, buttons, links, and dynamic content to customize your email layout and content.
 
