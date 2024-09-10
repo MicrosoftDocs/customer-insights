@@ -1,7 +1,7 @@
 ---
 title: New and upcoming features
 description: Information about new features, improvements, and bug fixes in Dynamics 365 Customer Insights - Journeys releases.
-ms.date: 08/13/2024
+ms.date: 09/10/2024
 ms.topic: article
 author: colinbirkett
 ms.author: colinbirkett
@@ -28,6 +28,12 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 | App              | GA release      |
 |------------------|-----------------|
 | Customer Insights - Journeys        |   1.1.48225.52   |
+
+> [!IMPORTANT]
+> Starting on October 10, 2024, changes to link functionality will affect the following areas:
+> - **Link tracking**: Links in messages that were sent more than six months prior will no longer produce tracking results, but will otherwise function correctly. Links in messages sent less than six months prior will continue to generate tracking analytics.
+> - **Text messages**: URLs sent in SMS messages will expire six months after the message is sent and will no longer work.
+> - **Unsubscribe links**: Unsubscribe links will expire six months after the link is created and will no longer work.
 
 ### General availability
 
@@ -193,13 +199,6 @@ Learn how to make the most of the new Dynamics 365 Customer Insights features in
 | App              | GA release      |
 |------------------|-----------------|
 | Customer Insights - Journeys        |   1.1.40197.68    |
-
-> [!IMPORTANT]
-> Starting on April 15, 2024, changes to link functionality affected the following areas:
->
-> - **Link tracking**: Links in messages sent more than one year prior to April 15 no longer produce tracking results, but otherwise function correctly. Links in messages sent less than one year prior continue to generate tracking analytics.
-> - **Text messages**: URLs sent in SMS messages expire one year after the message was sent and no longer work.
-> - **Unsubscribe links**: Unsubscribe links expire one year after the link was created and no longer work.
 
 > [!NOTE]
 > On July 1, 2024, active journeys in the real-time journeys area that were created on or before May 5, 2022 will stop working. To avoid disruption, follow the steps outlined in the [Known issues for journeys](journey-known-issues.md#steps-to-avoid-journey-disruption) article before July 1, 2024.
