@@ -1,7 +1,7 @@
 ---
 title: Consent management overview
 description: Learn how to manage consent settings in Dynamics 365 Customer Insights - Journeys.
-ms.date: 02/06/2024
+ms.date: 09/10/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -14,7 +14,7 @@ search.audienceType:
 # Consent management overview
 
 > [!IMPORTANT]
-> This article applies to real-time journey *and* outbound marketing.
+> This article applies to real-time journeys *and* outbound marketing.
 
 Real-time journeys and outbound marketing have distinct but related constructs for supporting consent and regulatory compliance for communications with customers. This article provides an overview of these differences along with references to more detailed information on ways to approach compliance.
 
@@ -37,6 +37,9 @@ In outbound marketing, consent is captured and stored on the contact entity the 
 Compliance profiles are the hubs to manage consent and compliance in Customer Insights - Journeys. Compliance profiles govern how consent is captured and enforced. Compliance profiles store information such as company address, the preference management experience, and related configuration. Compliance profile settings vary based on the type of compliance profile you're creating or modifying.  
 
 ## User contact preferences
+
+> [!IMPORTANT]
+> Starting on October 10, 2024, unsubscribe links will expire six months after the link is created and will no longer work.
 
 There are four ways that users can manage their contact preferences: preference centers, preference pages, subscription centers, and external links.  
 

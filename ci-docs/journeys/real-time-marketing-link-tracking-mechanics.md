@@ -1,9 +1,7 @@
 ---
 title: Customer Insights - Journeys link tracking mechanics
 description: Learn about link tracking mechanics in Dynamics 365 Customer Insights - Journeys.
-ms.date: 03/18/2024
-ms.custom: 
-  - dyn365-marketing
+ms.date: 09/10/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -15,8 +13,8 @@ search.audienceType:
 
 # Customer Insights - Journeys link tracking mechanics
 
-> [!TIP]
-> Starting on April 15, 2024, links in messages that were sent *more* than one year prior will no longer produce tracking results, but will otherwise function correctly. Links in messages sent *less* than one year prior will continue to generate tracking analytics.
+> [!IMPORTANT]
+> Starting on October 10, 2024, links in messages that were sent more than six months prior will no longer produce tracking results, but will otherwise function correctly. Links in messages sent less than six months prior will continue to generate tracking analytics.
 
 When executing customer journeys, all relevant hyperlinks are replaced with trackable links. If the content of a message is HTML, we also create an invisible pixel inside the message body. The invisible pixel is necessary to determine whether a user clicked on a link or opened the message.
 
