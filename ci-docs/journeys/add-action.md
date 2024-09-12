@@ -11,7 +11,7 @@ search.audienceType:
   - enduser
 ---
 
-# Add an action in Journey
+# Add an action within Journey
 
 Test
 
