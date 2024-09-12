@@ -1,17 +1,17 @@
 ---
-title: Real-time journeys tile reference
-description: Learn about tiles in Dynamics 365 Customer Insights - Journeys.
+title: Journey flow and tile reference
+description: Learn about journey flow and tiles in Dynamics 365 Customer Insights - Journeys.
 ms.date: 08/02/2024
 ms.topic: article
-author: alfergus
-ms.author: alfergus
+author: colinbirkett
+ms.author: colinbirkett
 search.audienceType: 
   - admin
   - customizer
   - enduser
 ---
 
-# Real-time journeys tile reference
+# Journey flow and tile reference
 
 This article describes the various journey capabilities available in Customer Insights - Journeys. For complete examples of creating customer journeys, see [Create a trigger-based journey](real-time-marketing-trigger-based-journey.md) and [Create a segment-based journey](real-time-marketing-segment-based-journey.md).
 

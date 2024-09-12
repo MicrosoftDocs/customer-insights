@@ -267,7 +267,7 @@
       - name: Add email CC recipients to journeys
         href: real-time-marketing-add-cc-recipients.md
       - name: Journey flow and tile reference
-        href: real-time-marketing-tile-reference.md
+        href: journey-flow-tile-ref.md
         items:
         -  name: Journey start
            href: journey-start.md
