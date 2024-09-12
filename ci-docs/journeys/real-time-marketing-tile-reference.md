@@ -1,6 +1,6 @@
 ---
-title: Real-time journeys tile reference
-description: Learn about tiles in Dynamics 365 Customer Insights - Journeys.
+title: Journey flow and tile reference
+description: Learn about journey flow and tiles in Dynamics 365 Customer Insights - Journeys.
 ms.date: 08/02/2024
 ms.topic: article
 author: alfergus
