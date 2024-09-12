@@ -1,6 +1,6 @@
 ---
 title: Journey end
-description: An overview of the Journey end configuration in Dynamics 365 Customer INsights - Journeys.
+description: An overview of the Journey end configuration in Dynamics 365 Customer Insights - Journeys.
 ms.date: 09/12/2024
 ms.topic: article
 author: colinbirkett
