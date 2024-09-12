@@ -20,3 +20,5 @@ The journey start configuration lets you define how customers can start the jour
 Test
 
 ### Segment-based journey
+
+Test
