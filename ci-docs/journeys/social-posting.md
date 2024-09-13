@@ -1,7 +1,7 @@
 ---
 title: Social media posting with Dynamics 365 Customer Insights - Journeys
 description: Create social media posts for immediate or scheduled publishing in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/12/2024
+ms.date: 09/13/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -18,9 +18,6 @@ search.audienceType:
 
 > [!WARNING]
 > Social posting and LinkedIn lead generation capabilities will be removed from Customer Insights - Journeys on December 2, 2024.
-
-> [!IMPORTANT]
-> Due to recent changes to Twitter's APIs, social posts to Twitter are temporarily unavailable in Customer Insights - Journeys.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4J4cQ]
 
@@ -44,10 +41,10 @@ To schedule and publish a message to one of your social-media channels:
 
 1. A new social post record is created. Make the following settings:
     - **Name**: Enter an internal name for the post. This name will be shown on the calendar, but won't appear in the post itself.
-    - **Social channel**: Choose the social channel on which to post your message (such as Facebook, LinkedIn, or Twitter). This drop-down list only shows those channels that your administrator has set up in Customer Insights - Journeys. If you don't see the channel you are looking for, contact your admin. More information: [Configure your social media accounts](mkt-settings-social-media.md)
+    - **Social channel**: Choose the social channel on which to post your message (such as Facebook, LinkedIn, or X (Twitter)). This drop-down list only shows those channels that your administrator has set up in Customer Insights - Journeys. If you don't see the channel you are looking for, contact your admin. More information: [Configure your social media accounts](mkt-settings-social-media.md)
     - **Social configuration**: Select the specific account through which to post your message. This drop-down list shows each account that your admin has set up and authenticated in Customer Insights - Journeys for the selected channel. If you don't see the account you are looking for, contact your admin. More information: [Configure your social media accounts](mkt-settings-social-media.md)
     - **Message**: Enter the text content of your post here.
-        - The countdown will inform you how many characters you have left. Use the countdown to align your message length with social network requirements, such as Twitter.
+        - The countdown will inform you how many characters you have left. Use the countdown to align your message length with social network requirements, such as X (Twitter).
         - You can enhance your messages with Emojis.
         - You can use hashtags to tag your messages across social media sites.
     - **Media**: If you'd like to include an image with your post, select the **Add media** button.
@@ -70,5 +67,10 @@ Posts that were already sent are read-only, so you can't change or reschedule th
 
 > [!NOTE]
 > Posts that were made to the Instagram channel cannot be removed by the Customer Insights - Journeys app; Instagram does not provide this functionality. To remove the post from Instagram, go to Instagram and manually remove it.
+
+## Known issues
+
+- X (Twitter) posting no longer works due to changes in terms and conditions by X.
+- Facebook and Instagram: Due to API changes, authenticated accounts can continue posting but can't re-authenticate.
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
