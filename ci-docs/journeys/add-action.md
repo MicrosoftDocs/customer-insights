@@ -1,6 +1,6 @@
 ---
 title: Add an action within a Journey
-description: An overvire of possible actions within a journey in Dynamics 365 Customer Insights - Journeys.
+description: An overview of possible actions within a journey in Dynamics 365 Customer Insights - Journeys.
 ms.date: 09/12/2024
 ms.topic: article
 author: colinbirkett
@@ -13,7 +13,9 @@ search.audienceType:
 
 # Add an action within Journey
 
-Test
+This page provides an overview of all the possible actions one can do in a Journey.
+
+:::image type="content" source="media/journeys-actions.png" alt-text="An overview of all possible actions in a Journey." lightbox="media/journeys-actions.png":::
 
 ## Types of actions
 
