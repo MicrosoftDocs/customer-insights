@@ -71,6 +71,6 @@ Posts that were already sent are read-only, so you can't change or reschedule th
 ## Known issues
 
 - X (Twitter) posting no longer works due to changes in terms and conditions by X.
-- Facebook and Instagram: Due to API changes, authenticated accounts can continue posting but can't re-authenticate.
+- Facebook and Instagram: due to API changes, authenticated accounts can continue posting but can't re-authenticate.
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
