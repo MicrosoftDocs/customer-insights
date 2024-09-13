@@ -1,7 +1,7 @@
 ---
 title: "Connect to Common Data Model tables in Azure Data Lake Storage"
 description: "Work with data from Azure Data Lake Storage."
-ms.date: 03/11/2024
+ms.date: 09/13/2024
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -59,7 +59,7 @@ Ingest data into Dynamics 365 Customer Insights - Data using your Azure Data Lak
 
 1. Choose one of the following options for **Connect your storage using**. For more information, see [Connect to an Azure Data Lake Storage account with a Microsoft Entra service principal](connect-service-principal.md).
 
-   - **Azure resource**: Enter the **Resource Id**. (private-link.md).
+   - **Azure resource**: Enter the **Resource Id**.
    - **Azure subscription**: Select the **Subscription** and then the **Resource group** and **Storage account**. 
   
    > [!NOTE]
@@ -70,11 +70,7 @@ Ingest data into Dynamics 365 Customer Insights - Data using your Azure Data Lak
    >
    > Having the role on the storage account will provide the same role on all of its containers.
 
-1. Optionally, if you want to ingest data from a storage account through an Azure Private Link, select **Enable Private Link**. For more information, see [Private Links](private-link.md).
-
-   <!---
-   1. Optionally, if you want to use managed identities for Azure resources, select **Use managed identities for Azure with your Azure Data Lake Storage**. For more information, see ???.
-   --->  
+1. Optionally, if you want to ingest data from a storage account behind a firewall, select **This storage account is behind a firewall**. Learn more: [Managed identities for Azure resources](private-link.md).
 
 1. Choose the name of the **Container** that contains the data and schema (model.json or manifest.json file) to import data from, and select **Next**.
    > [!NOTE]
@@ -183,9 +179,7 @@ You can update the *Connect to storage account using* option. For more informati
       > - Storage Blob Data Owner
       > - Storage Blob Data Contributor
 
-   - **Use managed identities for Azure with your Azure Data Lake Storage** ???
-
-   - **Enable Private Link** if you want to ingest data from a storage account through an Azure Private Link. For more information, see [Private Links](private-link.md).
+   - **This storage account is behind a firewall** if you want to ingest data from a storage account through an Azure Private Link. Learn more: [Managed identities for Azure resources](private-link.md)
 
 1. Select **Next**.
 1. Change any of the following:
