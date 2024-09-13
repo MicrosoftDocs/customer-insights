@@ -17,11 +17,15 @@ Test
 
 ## Types of actions
 
-Test
+WIthin Customer Inisghts - Journeys, you can do a variety of actions. Some of these actions include messaging, 
 
 ### Messages
 
-Test
+Customer Insights - Journeys customer journeys let you reach customers through various channels including:
+
+- [Send an email](real-time-marketing-email.md)
+- [Send a text message](real-time-marketing-outbound-text-messaging.md)
+- [Send a push notification](push-messages.md)
 
 ### AI powered actions
 
