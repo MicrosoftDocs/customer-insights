@@ -92,6 +92,15 @@
           "customerinsights-docs",
           "customerinsightsdata-docs"
         ]
+      }, 
+      "products":
+      {
+        "journeys/**.*": [
+          "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/2812d699-d85f-4a7f-839d-44e218b35d24"
+        ],
+        "data/**.*": [
+          "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/d00fc77b-d769-49ff-a0d6-f14988127436"
+        ]
       }
     },
     "template": [],
