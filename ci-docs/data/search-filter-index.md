@@ -58,6 +58,19 @@ The **Search & filter index** page displays the following information:
 - **Included in search**: Specifies whether this attribute can be used for searching customers on the **Customers** page using the **Search** field.
 - **Add Filter**: Control to define how this attribute can be used for filtering on the **Customers** page.
 
+## Performance considerations
+Customer profiles search is build on top of [dataverse search](https://go.microsoft.com/fwlink/?linkid=2167645) which utilizes Azure Cognitive Search service.
+
+For optimized (fast) search index only fields that have these characteristics:
+ - **Low cardinality**: A small number of distinct values that repeat throughout documents in your search corpus.
+ - **Short descriptive values**: One or two words that render nicely in a navigation tree.
+ - Use the values within a field, and not the field name itself, for example if there is a string field named "Color" the values could be "Blue" "Green" or any other value for that field.
+
+Best practices:
+ - Check for null values, misspellings, or case discrepancies: Ensure consistency in your data to avoid redundant facets.
+ - Handle single and plural versions of the same word: By default, filters and facets don't undergo lexical analysis or spell check, which means that all values of a "facetable" field are potential facets, even if the words differ by one character.
+ - Use normalizers: Optionally, you can assign a normalizer to a "filterable" and "facetable" field to smooth out variations in casing and characters.
+
 ## Next steps
 
 Review the [unified profiles page](customer-profiles.md) to search for profiles or use the indexed fields to see a subset of all unified profiles.
