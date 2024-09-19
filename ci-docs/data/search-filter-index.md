@@ -62,7 +62,7 @@ The **Search & filter index** page displays the following information:
 
 For fast and optimized searches, add only fields with the following characteristics to the index:
 
- - **Low cardinality**: A small number of distinct values that repeat throughout database.
+ - **Low cardinality**: A small number of distinct values that repeat throughout your database.
  - **Short descriptive values**: One or two words that render nicely in a navigation tree.
  - Use the values within a field, and not the field name itself. For example, instead of the field name *Color*, add the values *Blue* or *Green* to the index.
 
