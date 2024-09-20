@@ -1,11 +1,11 @@
 ---
 title: "Manage the search & filter index for customer profiles"
 description: "Quickly find information about unified customer profiles and filter for specified attributes."
-ms.date: 09/27/2023
+ms.date: 09/19/2024
 ms.reviewer: mhart
 ms.topic: conceptual
-author: NimrodMagen
-ms.author: nimagen
+author: ScottStabbert
+ms.author: sstabbert
 ms.custom: bap-template
 ---
 
@@ -57,6 +57,21 @@ The **Search & filter index** page displays the following information:
 - **Data type**: Specifies whether the data type is a string, a number, or a date.
 - **Included in search**: Specifies whether this attribute can be used for searching customers on the **Customers** page using the **Search** field.
 - **Add Filter**: Control to define how this attribute can be used for filtering on the **Customers** page.
+
+## Performance considerations
+
+For fast and optimized searches, add only fields with the following characteristics to the index:
+
+ - **Low cardinality**: A small number of distinct values that repeat throughout your database.
+ - **Short descriptive values**: One or two words that render nicely in a navigation tree.
+ - Use the values within a field, and not the field name itself. For example, instead of the field name *Color*, add the values *Blue* or *Green* to the index.
+
+Best practices:
+ - Check for missing values, misspellings, or case discrepancies. Ensure consistency in your data to avoid repetitions.
+ - Handle single and plural versions of the same word. Filters don't get spell-checked or analyzed, so every value in a searchable field can be included, even if they differ by just one character.
+ - Normalize searchable fields to make sure variations in case and characters are consistent.
+
+Learn more about [Dataverse search](/power-platform/admin/configure-relevance-search-organization#set-up-dataverse-search).
 
 ## Next steps
 
