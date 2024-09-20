@@ -21,7 +21,7 @@ The journey start configuration lets you define how customers can start the jour
 
 ### Trigger-based journey
 
- Trigger-based journeys start as a reaction to a customer action (for example, filling out a form or registering for an event).
+ A trigger-based journeys start as a reaction to a customer action (for example, filling out a form or registering for an event).
 
 - **Trigger to start the journey**: Customers start the journey as soon as the selected trigger occurs.  
 - **Repeating the journey**: Lets you configure how soon customers can repeat the journey if the trigger to start the journey occurs again. You can allow customers to repeat the journey immediately, or only allow them to repeat the journey after a delay interval.
@@ -32,7 +32,7 @@ For journeys such as sending purchase order confirmations, both new customers an
 
 ### Segment-based journey
 
-Segment-based journeys start independently and target customers that share certain attributes (for example, loyalty club members in the state of Washington).
+A segment-based journeys start independently and target customers that share certain attributes (for example, loyalty club members in the state of Washington).
 
 - **Audience**: The audience property lets you specify the segment of people that start the journey. Segment-based journeys [support segments from outbound marketing as well as segments created in Dynamics 365 Customer Insights - Data](real-time-marketing-segments.md). The journey uses audience data based upon the segment selected. For example, if the journey is started with an outbound marketing segment that contains a segment of **Contacts**, the journey uses Contacts as its Audience data. Similarly, if the journey is started using a Customer Insights - Data segment that is a segment of **Customer Profiles**, the journey uses Customer Profile as its Audience data. Once an audience segment has been selected, all other segments used in the journey must be of the same type (segment from outbound marketing or Customer Insights - Data segment).
 - **Exclude this segment**: Members of this segment won't be allowed to start the journey. Specifying an exclusion segment lets you remove anyone from the Audience that starts the journey.
