@@ -1,7 +1,7 @@
 ---
-title: "Preview: Connect to Delta tables in Azure Data Lake Storage"
+title: "Connect to Delta tables in Azure Data Lake Storage"
 description: "Work with data stored in Delta tables from Azure Data Lake Storage."
-ms.date: 08/21/2024
+ms.date: 09/21/2024
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -9,12 +9,7 @@ ms.reviewer: v-wendysmith
 ms.custom: bap-template
 ---
 
-# PREVIEW: Connect to Delta tables in Azure Data Lake Storage
-
-> [!IMPORTANT]
-> A preview feature is a feature that is not complete, but is made available before it’s officially in a release so customers can get early access and provide feedback. Preview features aren’t meant for production use and may have limited or restricted functionality.
-> 
-> Microsoft doesn't provide support for this preview feature. Microsoft Dynamics 365 Technical Support won’t be able to help you with issues or questions. Preview features aren’t meant for production use, especially to process personal data or other data that are subject to legal or regulatory compliance requirements.
+# Connect to Delta tables in Azure Data Lake Storage
 
 Connect to data in Delta tables and bring it into Dynamics 365 Customer Insights - Data.
 
