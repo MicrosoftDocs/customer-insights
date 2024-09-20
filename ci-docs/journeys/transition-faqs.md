@@ -1,7 +1,7 @@
 ---
 title: Real-time journeys transition FAQs
 description: Answers to frequently asked questions about transitioning to real-time journeys in Customer Insights - Journeys.
-ms.date: 08/12/2024
+ms.date: 09/20/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -15,23 +15,23 @@ ms.collection: bap-ai-copilot
 
 ## What changes to Dynamics 365 Customer Insights – Journeys did Microsoft recently announce?
 
-Customer Insights – Journeys includes two modules: outbound marketing and real-time journeys. Released in August 2021, real-time journeys offers advanced enterprise capabilities and has been the default offering to new customers since August 2023.
+Customer Insights – Journeys includes two modules: outbound marketing and real-time journeys. Released in August 2021, real-time journeys offers advanced enterprise capabilities. Real-time journeys has been the default offering to new customers since August 2023.
 
 After announcing in August 2023 that we'll only be investing in real-time journeys, we're now officially announcing that we're removing outbound marketing as of June 30, 2025. To avoid any business continuity issues, all customers still using outbound marketing must transition to real-time journeys before this date. We'll also remove social posting and LinkedIn lead generation capabilities on December 2, 2024. We don’t plan to support social posting in real-time journeys because it has low demand and usage. However, we're considering adding LinkedIn lead generation to real-time journeys in a future release.
 
-No new licensing or provisioning is required to use real-time journeys; every one of your existing environments already has it. In fact, the updated license has removed limits on number of environments (see [Announcing unlimited application installs in Dynamics 365 Customer Insights](https://www.microsoft.com/dynamics-365/blog/it-professional/2024/06/18/announcing-unlimited-application-installs-in-dynamics-365-customer-insights/)) so you can easily try real-time journeys in a separate environment if needed.
+No new licensing or provisioning is required to use real-time journeys; every one of your existing environments already has it. In fact, the updated license removes limits on number of environments (see [Announcing unlimited application installs in Dynamics 365 Customer Insights](https://www.microsoft.com/dynamics-365/blog/it-professional/2024/06/18/announcing-unlimited-application-installs-in-dynamics-365-customer-insights/)), so you can easily try real-time journeys in a separate environment if needed.
 
 We have a dedicated section in our documentation for transition guidance: [Transition overview](transition-overview.md). You should bookmark this section as we update it regularly based on product updates, questions, and feedback.
 
 ## I'm an existing Dynamics 365 Customer Insights - Journeys customer using outbound marketing. How do these changes impact me?
 
-As an existing outbound marketing customer, you must make a note of removal dates above and transition to real-time journeys before that to avoid interruption. If you're using social posting or LinkedIn lead generation capabilities, note that they'll be removed sooner and your ability to create new social posts or LinkedIn leads will be restricted ahead of the removal date. Your data will still be available for reporting.
+As an existing outbound marketing customer, you must make a note of removal dates and transition to real-time journeys before that to avoid interruption. If you're using social posting or LinkedIn lead generation capabilities, note that they'll be removed sooner and your ability to create new social posts or LinkedIn leads will be restricted ahead of the removal date. Your data will still be available for reporting.
 
 As is the case currently, newly created, copied, migrated, or restored environments will only include real-time journeys. You may be able to add outbound using the **Enable** link on the **Settings** > **Version** page. This link is only available when another existing environment with outbound marketing is present. If you don't see the enable link, follow the guidance for [requesting outbound marketing to be added](transition-overview.md#if-the-enable-link-isnt-available-or-doesnt-work)
 
 ## I'm a new Dynamics 365 Customer Insights - Journeys customer. How do these changes impact me?
 
-As a new customer, when you provision Customer Insights – Journeys, you'll only see real-time journeys. We're not offering outbound marketing to new customers anymore, so your plan should be to implement and go live with real-time journeys. We're unable to make any exceptions to this, so please don't raise any support requests for adding outbound marketing.
+As a new customer, when you provision Customer Insights – Journeys, you'll only see real-time journeys. We're not offering outbound marketing to new customers anymore, so your plan should be to implement and go live with real-time journeys. We're unable to make any exceptions to this, so you shouldn't raise any support requests for adding outbound marketing.
 
 ## I can't transition by the outbound marketing removal date. Can I request an exception?
 
@@ -41,9 +41,9 @@ Unfortunately, no. In August 2023, we communicated that outbound marketing will 
 
 We decided not to support social posting capabilities in real-time journeys because it has low demand and usage. It's also not core to our real-time orchestration strategy. While there are many point solutions for social posting, we're unable to provide any single recommendation. That said, we'll continue to collect customer feedback and evaluate market demand to update our plans as needed.
 
-## How should I plan for the transition? What transition resources are available for me?
+## How should I plan for the transition?
 
-We're not able to provide any funding for this transition. We've prepared extensive resources (guidance, tools, and discussion forums) to help with the transition. See [Transition overview](transition-overview.md)
+We've prepared extensive resources (guidance, tools, and discussion forums) to help with the transition. See [Transition overview](transition-overview.md)
 
 ## Why should I transition to real-time journeys?
 
@@ -90,7 +90,7 @@ Overall, transitioning to real-time journeys is a powerful way for your business
 
 ## What about my outbound marketing features that are currently unavailable in real-time journeys?
 
-Since the announcement of the transition to real-time journeys in August 2023, we've made several feature advancements to bridge majority of top gaps. For example, double-opt in and multiple improvements to segmentation, forms, journeys, etc., have been released. Over the next several months, we'll continue to make improvements wherever possible to bring you a seamless experience. However, our roadmap may not bring full parity with what was offered in outbound marketing. For more information, review the individual pages for each feature area in the transition guidance section: [Functional areas overview](transition-walkthrough-functional.md)
+Since the announcement of the transition to real-time journeys in August 2023, we've made several feature advancements to bridge most top gaps. For example, double-opt in and multiple improvements to segmentation, forms, journeys, etc., have been released. Over the next several months, we'll continue to make improvements wherever possible to bring you a seamless experience. However, our roadmap may not bring full parity with what was offered in outbound marketing. For more information, review the individual pages for each feature area in the transition guidance section: [Functional areas overview](transition-walkthrough-functional.md)
 
 ## How do I start with real-time journeys?
 
@@ -113,7 +113,7 @@ If you're transitioning from outbound marketing, review our resource page ([Real
 
 Reach out to your account manager with further questions or if help is needed.
 
-## Will transitioning to real-time journeys require significant user retraining due to a new user interface?**
+## Will transitioning to real-time journeys require significant user retraining due to a new user interface?
 
 Transitioning to real-time journeys doesn't require extensive user retraining, particularly for the most common marketing activities listed below. In these areas, you'll either encounter no differences in the user interface (UI) between outbound and real-time journeys, or you'll experience UI enhancements that significantly improve usability and efficiency.
 
