@@ -5,7 +5,7 @@ author: Scott-Stabbert
 ms.author: sstabbert
 ms.reviewer: v-wendysmith
 ms.topic: conceptual
-ms.date: 06/13/2024
+ms.date: 09/23/2024
 ms.custom: bap-template
 ---
 
@@ -31,7 +31,7 @@ With automatic linking, you can use extended insights from the unified customer 
 - Your Customer Insights - Data environment is set up for individual customers. Linking isn't supported for business (B2B) environments.
 
 > [!NOTE]
-> Customer Insights - Data environments that are configured to write output to a private data lake aren't supported.
+> Automatic linking isn't supported when Customer Insights - Data output is configured to use your own Azure Data Lake Storage.
 
 ## Link to a customer profile
 
