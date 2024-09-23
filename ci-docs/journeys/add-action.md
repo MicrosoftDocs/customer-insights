@@ -25,13 +25,27 @@ Main actions are grouped under [messages](#messages), [AI-powered actions](#ai-p
 
 ### Messages
 
-Customer Insights - Journeys customer journeys let you reach customers through various channels including:
+Customer Insights - Journeys lets you reach customers through common messaging capabilities such as email, text message, push notifications, and more. See common mesaging actions below.
 
-- [Send an email](real-time-marketing-email.md)
-- [Send a text message](real-time-marketing-outbound-text-messaging.md)
-- [Send a push notification](push-messages.md)
+#### Email
+
+You can send personalized emails to capture your customers' attention. For more information, see [send an email](real-time-marketing-email.md)
+
+#### Text message
+
+You can send a text message (SMS) from Dynamics 365 Customer Insights - Journeys by signing up with a provider such as Azure Communication Services, Infobip, LINK Mobility, Telesign, Twilio, or Vibes and configuring Customer Insights - Journeys to work with the provider. For more information, see [send a text message](real-time-marketing-outbound-text-messaging.md)
+
+#### Push notifcations
+
+You can send push notifcations. Push messages allow you to quickly convey offers, messages, or other information directly to users of your app. For more information, see [send a push notification](push-messages.md)
+
+#### Other channel
+
+You can also send other types of channels.
 
 ### AI powered actions
+
+You can better cultivate messages to customers in Customer Insights - Journeys through AI-powered actions such as A/B testing and channel optimization. See available AI-powered actions below. 
 
 #### A/B test
 
@@ -43,7 +57,9 @@ Channel optimization uses AI to find the best channel to reach each individual c
 
 ### Conditions
 
-#### Wait
+You can set conditions throughout customers' journeys such as scheduling wait times at specific times, waiting for a specific trigger from a customer, setting up attribute branches, or splitting an audience by number or percentage. See available conditions below. 
+
+#### Wait time
 
 The wait step holds the customer in the journey for the specified wait period.
 
@@ -54,7 +70,14 @@ You can configure the wait step using the following parameters:
 
 - **A set amount of time**: Customers wait for the specified amount of time (for example, one hour or one day). The time period starts as soon as customers enter the wait step.
 - **Until a specific date and time**: Customers wait until the specified date and time. If the date and time are already in the past, customers will immediately proceed to the next step.
-- **Until a time specified by a trigger**: For trigger-based journeys, customers wait for the date and time specified by a trigger attribute. This configuration is useful for scenarios like appointment reminders, where you can choose to wait one day before the appointment to send a reminder. The date and time information must be included in the trigger that started the journey for the customer.
+
+#### Wait for a trigger
+
+For trigger-based journeys, customers wait for the date and time specified by a trigger attribute. This configuration is useful for scenarios like appointment reminders, where you can choose to wait one day before the appointment to send a reminder. The date and time information must be included in the trigger that started the journey for the customer.
+
+#### Series
+
+Send a series of messages until certain conditions are met.
 
 #### Attribute branch
 
@@ -72,11 +95,21 @@ The audience split tile allows you to divide your audience to give a unique set 
 
 ### Activities
 
-Test
+You can create activities for customers at specific instances in a journey such as creating and assigning a phone call or task activity. See available activities below. 
+
+#### Phone call
+
+You can create and assign a phone call for customers to sales.
+
+#### Task
+
+You can create and assign a task activity for customers.
 
 ### Connectors
 
-### Activate a custom trigger
+Connectors provide additional features beyond actions above. For example, you can activate a custom trigger where additional journeys or [Power Automate flows](/power-automate) connected to a custom event will be triggered when a customer does a specific action.
+
+#### Activate a custom trigger
 
 Triggering a custom event allows you to use activate a custom event at any point in the customer journey. Additional journeys or [Power Automate flows](/power-automate) connected to the custom event will be triggered immediately when a customer reaches the tile. This includes custom triggers used in exit criteria, goals, and if/then branches for journeys.
 

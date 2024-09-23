@@ -32,7 +32,7 @@ For journeys such as sending purchase order confirmations, both new customers an
 
 ### Segment-based journey
 
-A segment-based journeys start independently and target customers that share certain attributes (for example, loyalty club members in the state of Washington).
+A segment-based journeys starts independently and target customers that share certain attributes (for example, loyalty club members in the state of Washington).
 
 - **Audience**: The audience property lets you specify the segment of people that start the journey. Segment-based journeys [support segments from outbound marketing as well as segments created in Dynamics 365 Customer Insights - Data](real-time-marketing-segments.md). The journey uses audience data based upon the segment selected. For example, if the journey is started with an outbound marketing segment that contains a segment of **Contacts**, the journey uses Contacts as its Audience data. Similarly, if the journey is started using a Customer Insights - Data segment that is a segment of **Customer Profiles**, the journey uses Customer Profile as its Audience data. Once an audience segment has been selected, all other segments used in the journey must be of the same type (segment from outbound marketing or Customer Insights - Data segment).
 - **Exclude this segment**: Members of this segment won't be allowed to start the journey. Specifying an exclusion segment lets you remove anyone from the Audience that starts the journey.
@@ -40,13 +40,6 @@ A segment-based journeys start independently and target customers that share cer
   - *One time*: One time journeys run only once with a static audience segment. This is useful for scenarios like one-time email blasts that are sent on a specific date to a fixed set of customers.
   - *Ongoing*: Ongoing journeys run only once with a dynamic audience segment. This is useful for scenarios like nurture campaigns where anyone who gets added to the audience segment can start the journey as soon as they're added to the segment.
   - *Repeating*: These journeys repeat based on the time interval specified. Every time the journey repeats, all the members of the audience segment go through the journey. If any new members get added to the segment between the repeat interval, those new members will only go through the journey the next time the journey repeats. This type of journey is useful for scenarios like renewal reminders, where you might want to send people through the journey every time they're up for a renewal.
-
-## Journey end
-
-By default, customers end the journey when they complete all the steps. You can set additional ways for customers to exit the journey by using triggers or segments.
-
-- **Exit when an event occurs**: Customers who perform this trigger will immediately exit the journey no matter where they are in the journey. This provides an easy way to remove customers who perform the trigger from the journey, ensuring that customers don't receive irrelevant messages from your customer journey.
-- **Exit by segment**: Customers who are part of this segment will immediately exit the journey. This capability is often referred to as a suppression segment and helps you ensure that members of this segment are suppressed from the customer journey. Exit by segment removes members of that segment from wherever they are in the customer journey. This is notably different from the *exclude by segment* property in journey start, which will only exclude members of the exclusion segment from starting the journey.
 
 ## Journey goal
 
