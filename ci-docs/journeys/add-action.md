@@ -15,21 +15,21 @@ search.audienceType:
 
 This page provides an overview of all the possible actions one can do in a Journey.
 
-:::image type="content" source="media/journeys-actions.png" alt-text="An overview of all possible actions in a Journey." lightbox="media/journeys-actions.png":::
-
 ## Types of actions
 
 WIthin Customer Inisghts - Journeys, you can do a variety of actions. Some of these actions include sending messages, channel optmiziation, conditon actions, audience splitting, and more.
 
-Main actions are grouped under [messages](#messages), [AI-powered actions](#ai-powered-actions), [conditions](#conditions), [activities](#activities), and [connectors](#connectors). You can see all available Journeys actions under each section below.
+Main actions are grouped under [messages](#messages), [AI-powered actions](#ai-powered-actions), [conditions](#conditions), [activities](#activities), and [connectors](#connectors). You can see all available actions under each section below.
+
+:::image type="content" source="media/journeys-actions.png" alt-text="An overview of all possible actions in a Journey." lightbox="media/journeys-actions.png":::
 
 ### Messages
 
 Customer Insights - Journeys lets you reach customers through common messaging capabilities such as email, text message, push notifications, and more. See common mesaging actions below.
 
-#### Email
+  #### Email
 
-You can send personalized emails to capture your customers' attention. For more information, see [send an email](real-time-marketing-email.md)
+  You can send personalized emails to capture your customers' attention. For more information, see [send an email](real-time-marketing-email.md)
 
 #### Text message
 
