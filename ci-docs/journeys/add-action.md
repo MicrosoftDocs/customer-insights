@@ -27,9 +27,9 @@ Main actions are grouped under [messages](#messages), [AI-powered actions](#ai-p
 
 Customer Insights - Journeys lets you reach customers through common messaging capabilities such as email, text message, push notifications, and more. See common mesaging actions below.
 
-  #### Email
+#### Email
 
-  You can send personalized emails to capture your customers' attention. For more information, see [send an email](real-time-marketing-email.md)
+You can send personalized emails to capture your customers' attention. For more information, see [send an email](real-time-marketing-email.md)
 
 #### Text message
 
