@@ -19,9 +19,9 @@ This page provides an overview of all the possible actions one can do in a Journ
 
 WIthin Customer Inisghts - Journeys, you can do a variety of actions. Some of these actions include sending messages, channel optmiziation, conditon actions, audience splitting, and more.
 
-Main actions are grouped under [messages](#messages), [AI-powered actions](#ai-powered-actions), [conditions](#conditions), [activities](#activities), and [connectors](#connectors). You can see all available actions under each section below.
-
 :::image type="content" source="media/journeys-actions.png" alt-text="An overview of all possible actions in a Journey." lightbox="media/journeys-actions.png":::
+
+Main actions are grouped under [messages](#messages), [AI-powered actions](#ai-powered-actions), [conditions](#conditions), [activities](#activities), and [connectors](#connectors). You can see all available actions under each section below.
 
 ### Messages
 
