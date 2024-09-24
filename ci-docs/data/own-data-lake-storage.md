@@ -22,7 +22,7 @@ Administrators in Customer Insights - Data can [create environments](create-envi
 - The Data Lake Storage account must have [hierarchical namespace enabled](/azure/storage/blobs/data-lake-storage-namespace).
 - The administrator setting up the Customer Insights - Data environment needs the Storage Blob Data Contributor or Storage Blob Data Owner role on the storage account or the `customerinsights` container. For more information on assigning permission in a storage account, see [Create a storage account](/azure/storage/common/storage-account-create?toc=%2Fazure%2Fstorage%2Fblobs%2Ftoc.json&tabs=azure-portal).
 
-## Connect Customer Insights - Data with your storage account
+## Connect Customer Insights - Data with your own Azure Data Lake Storage
 
 When you create a new environment, make sure the Data Lake Storage account exists and all prerequisites are met.
 
@@ -36,7 +36,7 @@ When system processes like data ingestion complete, the system creates correspon
 
 If you create multiple environments and choose to save the output tables from those environments to your storage account, the system creates separate folders for each environment with `ci_environmentID` in the container.
 
-## Enable data sharing with Dataverse (preview)
+## Enable data sharing with Dataverse from your own Azure Data Lake Storage (preview)
 
 [!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
