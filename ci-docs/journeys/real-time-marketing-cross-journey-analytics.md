@@ -36,7 +36,7 @@ You can filter the dashboard views based on the date, one or more journeys, jour
 KPI summary charts summarize the cross-journey key performance indicators for the specified time period. You can further filter the charts by journey name, journey status, or journey goal.
 - **Email engagement rate**: The number of unique users that opened or clicked on the links divided by the total number of emails sent.
 - **Push notification engagement rate**: The number of unique users that opened or clicked on the links divided by the total number of push notifications sent.
-- **Text message engagement rate**: The number of unique users that opened or clicked on the links divided by the total number of text messages sent.
+- **Text message engagement rate**: The number of unique users that clicked on the links divided by the total number of text messages sent.
 
 ## Overall effectiveness
 
