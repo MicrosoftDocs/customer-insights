@@ -54,7 +54,7 @@ The following table compares how each of the public-facing interactive features 
 
 ## Adding a Power Apps portal to an outbound marketing instance 
 
-This integration is only available in legacy outbound marketing application solutions. To add portals to an instance of outbound marketing, you must request it on the outbound marketing request form (located at **Settings** > **Versions**) at the same time you request to add outbound marketing to your real-time journeys instance. You must provide the details of the desired portal URL at the time of the request and it can be enabled for you by exception. Only new portals can be created and attached to outbound marketing. You cannot attach an existing portal. 
+This integration is only available in legacy outbound marketing application solutions. To add portals to an instance of outbound marketing, you must request it on the outbound marketing request form (located at **Settings** > **Versions**) at the same time you request to add outbound marketing to your real-time journeys instance. You must provide the details of the desired portal URL at the time of the request and it can be enabled for you by exception. Only new portals can be created and attached to outbound marketing. You can't attach an existing portal. 
 
 > [!NOTE]
 > If have integrated Power Apps portals with your Customer Insights - Journeys instance and the portal suddenly stops working or disappear, the portal trial license may have expired. To determine whether this is the case: 
