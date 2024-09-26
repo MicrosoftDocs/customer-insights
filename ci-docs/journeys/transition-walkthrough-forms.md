@@ -38,7 +38,7 @@ Consider the following when transitioning forms:
 
 #### Workaround for custom form templates
 
-You can create a form and name it "template." Advise your users to avoid creating new forms from scratch. Instead, they should open the "template" form and save it as a new one.
+You can create a form and name it "template." Your users should avoid creating new forms from scratch. Instead, they should open the "template" form and save it as a new one.
 
 ## Relevant upcoming features
 
