@@ -1,7 +1,7 @@
 ---
 title: Transition marketing pages and forms
 description: Learn how to transition marketing pages and forms capabilities from outbound marketing to real-time journeys in Dynamics 365 Customer Insights - Journeys.
-ms.date: 06/21/2024
+ms.date: 09/26/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -34,7 +34,7 @@ It's worth noting that real-time journeys forms are more advanced than an equiva
 Consider the following when transitioning forms:
 
 -	Because the underlying concept for forms is different between the modules, there's no way to automatically transition an outbound marketing form to a real-time journeys form.
--	Real-time journeys forms are continuously improved. However, there are still details that aren't available in real-time journeys forms, for example, lead linked to parent contact, custom unmapped form fields, cascading forms fields, custom form templates and web tracking.
+-	Real-time journeys forms are continuously improved. However, there are still details that aren't available in real-time journeys forms, for example, lead linked to parent contact, custom unmapped form fields, cascading forms fields, custom form templates, and web tracking.
 
 #### Workaround for custom form templates
 
