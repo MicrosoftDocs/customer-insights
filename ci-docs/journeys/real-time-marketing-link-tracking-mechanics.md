@@ -32,7 +32,7 @@ When the recipient selects a link or opens a message with a tracking pixel, two 
 1. The recipient is redirected to the original URL.
 1. The link click interaction is recorded.
 
-If the recipient previously opted out from tracking, the interaction is generated as anonymous. When the recipient has opted out, the interaction doesn't store a customer profile reference.
+If the recipient previously opted out from tracking, the interaction is generated as anonymous. When the recipient has opted out, the interaction doesn't store a customer profile reference. The consent for tracking is cached for 24 hours. That means the interaction can be stored as non-anonymous although the customer has opted out in the past 24 hours.
 
 > [!NOTE]
 > All links generated in the [text message channel](real-time-marketing-outbound-text-messaging.md) are shortened, regardless of whether they are replaced with tracking links.
