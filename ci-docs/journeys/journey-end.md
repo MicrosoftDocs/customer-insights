@@ -1,5 +1,5 @@
 ---
-title: Journey end
+title: End a journey
 description: An overview of the Journey end configuration in Dynamics 365 Customer Insights - Journeys.
 ms.date: 09/12/2024
 ms.topic: article
@@ -11,7 +11,7 @@ search.audienceType:
   - enduser
 ---
 
-# Journey end
+# End a journey
 
 By default, customers end the journey when they complete all the steps. You can set additional ways for customers to exit the journey by using triggers or segments.
 
