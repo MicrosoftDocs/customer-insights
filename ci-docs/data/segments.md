@@ -49,6 +49,7 @@ Select next to a segment to view available actions.
 - [**Manage exports**](#export-segments) to see export-related segments and manage them. [Learn more about exports.](export-destinations.md)
 - **Delete** one or more segments.
 - [**Schedule**](segments-schedule.md) to customize schedules for segments.
+- [**Disable auto cleanup**](#automated-deactivation-of-unused-segments).
 - **Columns** to [customize the columns](work-with-tags-columns.md#customize-columns) that display.
 - **Filter** to [filter on tags](work-with-tags-columns.md#filter-on-tags).
 - **Search name** to search by segment name.
@@ -125,7 +126,19 @@ Export segments to other apps to further use the data. Export a segment from the
 
 To optimize refresh performance, the system automatically deactivates unused segments every day. Unused segments are segments that aren't used in exports, measures, other segments, or in Customer Insights - Journeys in the past 30 days and created more than 45 days ago.
 
-Admins get a weekly summary of the deactivated segments for their information. They can then delete these segments if they are no longer needed or reactivate them if they intend to use them again. Alternatively, segment owners can [specify segments that are excluded from the automated deactivation](tbd.md). Deactivated segments don't refresh automatically when the system refreshes.
+Admins get a weekly summary of the deactivated segments for their information. They can then delete these segments if they are no longer needed or reactivate them if they intend to use them again. Alternatively, segment owners can [specify segments that are excluded from the automated deactivation](#specify-segments-that-never-expire).
+
+Deactivated segments don't refresh automatically when the system refreshes. They are tagged with **SystemDeactivated** when updated by automated cleanup.
+
+### Specify segments that never expire
+
+To avoid automated deactivation if a segment is no longer in use, segment owners can mark these segments. 
+
+1. Go to the **Insights** > **Segments** page and select a segment.
+
+1. In the command bar, select **Never expires**.
+
+1. Confirm the selection.
 
 ## Manage the number of active segments
 

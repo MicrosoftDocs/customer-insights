@@ -43,12 +43,25 @@ Select next to a measure to view available actions. Select the measure name to p
 - **Columns** to [customize the columns](work-with-tags-columns.md#customize-columns) that display.
 - **Filter** to [filter on tags](work-with-tags-columns.md#filter-on-tags).
 - **Search name** to search by measure name.
+- [**Disable auto cleanup**](#automated-deactivation-of-unused-measures).
 
 ## Automated deactivation of unused measures
 
 To optimize refresh performance, the system automatically deactivates unused measures every day. Unused measures are measures that aren't used in exports, other measures, segments, or in Customer Insights - Journeys in the past 30 days and created more than 45 days ago.
 
-Admins get a weekly summary of the deactivated measures for their information. They can then delete these measures if they are no longer needed or reactivate them if they intend to use them again. Alternatively, measure owners can [specify measures that are excluded from the automated deactivation](tbd.md). Deactivated measures don't refresh automatically when the system refreshes.
+Admins get a weekly summary of the deactivated measures for their information. They can then delete these measures if they are no longer needed or reactivate them if they intend to use them again. Alternatively, measure owners can [specify measures that are excluded from the automated deactivation](#specify-measures-that-never-expire).
+
+Deactivated measures don't refresh automatically when the system refreshes. They are tagged with **SystemDeactivated** when updated by automated cleanup.
+
+### Specify measures that never expire
+
+To avoid automated deactivation if a measure is no longer in use, measure owners can mark these segments.
+
+1. Go to the **Insights** > **Measures** page and select a measure.
+
+1. In the command bar, select **Never expires**.
+
+1. Confirm the selection.
 
 ## Manage the number of active measures
 
