@@ -269,11 +269,11 @@
       - name: Journey flow and tile reference
         href: journey-flow-tile-ref.md
         items:
-        -  name: Journey start
+        -  name: Start a journey
            href: journey-start.md
         -  name: Add an action in a Journey
            href: add-action.md
-        -  name: Journey end
+        -  name: End a journey
            href: journey-end.md
     - name: Advanced journey capabilities
       items:
