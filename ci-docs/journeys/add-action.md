@@ -17,7 +17,7 @@ This page provides an overview of all the possible actions one can do in a Journ
 
 ## Types of actions
 
-WIthin Customer Inisghts - Journeys, you can do a variety of actions. Some of these actions include sending messages, channel optmiziation, conditon actions, audience splitting, and more.
+Within Customer Inisghts - Journeys, you can do a variety of actions. Some of these actions include sending messages, channel optmiziation, conditon actions, audience splitting, and more.
 
 :::image type="content" source="media/journeys-actions.png" alt-text="An overview of all possible actions in a Journey." lightbox="media/journeys-actions.png":::
 
@@ -29,23 +29,23 @@ Customer Insights - Journeys lets you reach customers through common messaging c
 
 **Email**
 
-You can send personalized emails to capture your customers' attention. For more information, see [send an email](real-time-marketing-email.md)
+You can send personalized emails to capture your customers' attention. For more information, see [send an email](real-time-marketing-email.md).
 
 **Text message**
 
-You can send a text message (SMS) from Dynamics 365 Customer Insights - Journeys by signing up with a provider such as Azure Communication Services, Infobip, LINK Mobility, Telesign, Twilio, or Vibes and configuring Customer Insights - Journeys to work with the provider. For more information, see [send a text message](real-time-marketing-outbound-text-messaging.md)
+You can send a text message (SMS) from Dynamics 365 Customer Insights - Journeys by signing up with a provider such as Azure Communication Services, Infobip, LINK Mobility, Telesign, Twilio, or Vibes and configuring Customer Insights - Journeys to work with the provider. For more information, see [send a text message](real-time-marketing-outbound-text-messaging.md).
 
 **Push notifcations**
 
-You can send push notifcations. Push messages allow you to quickly convey offers, messages, or other information directly to users of your app. For more information, see [send a push notification](push-messages.md)
+You can send push notifcations. Push messages allow you to quickly convey offers, messages, or other information directly to users of your app. For more information, see [send a push notification](push-messages.md).
 
 **Other channel**
 
-You can also send other types of channels.
+You can also send other types of channels to capture customers' attention.
 
 ### AI powered actions
 
-You can better cultivate messages to customers in Customer Insights - Journeys through AI-powered actions such as A/B testing and channel optimization. See available AI-powered actions below. 
+You can cultivate customer-specific messages  in Customer Insights - Journeys through AI-powered actions such as A/B testing and channel optimization. See available AI-powered actions below. 
 
 **A/B test**
 
@@ -91,7 +91,7 @@ The attribute branch checks for attribute values the moment a customer enters th
 
 **Audience split**
 
-The audience split tile allows you to divide your audience to give a unique set of experiences to random sets of the audience. You can split by percentage or split by number. Learn more: [Preview: Split your audience into groups](real-time-marketing-split-audience.md)
+The audience split tile allows you to divide your audience to give a unique set of experiences to random sets of the audience. You can split by percentage or split by number. Learn more: [Preview: Split your audience into groups](real-time-marketing-split-audience.md).
 
 ### Activities
 

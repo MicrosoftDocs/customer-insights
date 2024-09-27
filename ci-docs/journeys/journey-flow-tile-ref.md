@@ -19,11 +19,6 @@ This article describes the various journey capabilities available in Customer In
 
 The journey start configuration lets you define how customers can start the journey. There are two types of journeys you can create: [Trigger-based journeys](journey-start.md#trigger-based-journey) and [Segment-based journeys](journey-start.md#segment-based-journey). For more information, see [Start a journey](journey-start.md).
 
-## Journey goal
-
-Journey goals let you track and [analyze the performance of the journey](real-time-marketing-analytics.md). You can use a trigger as the journey goal and measure the success of the journey based on the customers who perform the trigger as they're going through the journey.
-
-Journey goals can also help you determine the winner of A/B tests and find the best channel for channel optimization. For more information about using A/B tests, see [A/B tests in Customer Insights - Journeys](real-time-marketing-ab-tests-in-marketing-journeys.md).
 
 ## Messaging customers
 
@@ -87,5 +82,7 @@ You can configure the wait step using the following parameters:
 - **Until a time specified by a trigger**: For trigger-based journeys, customers wait for the date and time specified by a trigger attribute. This configuration is useful for scenarios like appointment reminders, where you can choose to wait one day before the appointment to send a reminder. The date and time information must be included in the trigger that started the journey for the customer.
 
 ## Journey end
+
+By default, customers end the journey when they complete all the steps. You can set additional ways for customers to exit the journey by using triggers or segments such as when an event occurs. For more information, see [End a journey](journey-end.md).
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
