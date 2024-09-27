@@ -42,8 +42,14 @@ The email click-to-open rate indicates how often a message that was opened also 
 ``EmailCTOR = (UniqueMessageClicks/UniqueMessageOpens) * 100%``
 
 ### Email delivered
-A marketing email message is considered to have been delivered if it was sent (not blocked) by Customer Insights - Journeys and no bounce was reported. Messages reported as delivered might still end up unopened or caught in a spam filter along the way.<br/>
+A marketing email message is considered to have been delivered if it was sent (not blocked) by Customer Insights - Journeys and no bounce was reported. For senders, a delivered status is often understood to mean that the email has reached the recipient's inbox. However, this status only indicates that the email has been accepted by the recipient's server. Once accepted, the recipient's spam solution decides whether to place the email in the inbox, mark it as suspicious and send it to the junk/spam folder, or even to silently delete or 'drop' the email, making it invisible to the final recipient. 
+
+In cases where emails are sent to internal users, the most common scenario is that the spam filter solution will add the email to an internal quarantine, which requires manual review by their admin. Until this manual review is completed, the email will not be forwarded to the final recipient's inbox. 
+
+Messages reported as delivered might still end up unopened or caught in a spam filter along the way.<br/>
 ``Delivered = SegmentContacts –  DuplicateContacts – BlockedContacts – StoppedContacts –  HardBounces – SoftBounces – BlockBounces``
+
+
 
 ### Email feedback loop
 A feedback loop occurs when an email gets delivered and then a recipient's email client  returns a feedback message to Customer Insights - Journeys. This typically means that the recipient used their email client to mark the message as spam. If you continue to send messages to an address that has returned this feedback, you risk lowering your server's send reputation, which will reduce your delivery rate. When feedback is received, Customer Insights - Journeys will automatically stop sending new messages to that address, but your email results will still show each attempt as a feedback loop. In Customer Insights – Journeys analytics, you can see the feedback loops under the Marked as spam interaction, which shows you recipients who have marked your email as a spam. To learn more, read [Feedback loop](feedback-loop.md).
