@@ -51,7 +51,7 @@ If you're an existing outbound marketing user and the "Enable" outbound marketin
 - This request should only be made by customers who already have been using outbound marketing. Requests from customers who never had outbound marketing will be denied.
 - Don't create support tickets or use other channels for the same requests; you'll be redirected to this form.
 - This form requires an email address. The email address is used to communicate receipt of the request, confirming when the request has been reviewed, and if needed, ask for additional information.
-- Most requests are reviewed in about three to five business days once all required information is available.
+- Most requests are reviewed in about three to five business days once all required information is available..
 
 > [!TIP]
 > If you have questions or comments, visit the [Outbound to real-time transition community forum](https://community.dynamics.com/forums/thread/?partialUrl=Outbound-to-Real-Time-Transition)
