@@ -91,7 +91,7 @@ To add inline conditions in your text message, you have to:
     :::image type="content" source="media/select-condition-text-message.png" alt-text="" lightbox="media/select-condition-text-message.png":::
 1. Once done, click on **Save**.
     :::image type="content" source="media/save-text-message.png" alt-text="" lightbox="media/save-text-message.png":::
-1. Repeat this practice on all your needed conditions. 
+1. Repeat this practice on all your needed conditions.
 
 ## Add a Customer Voice survey to a text message
 
