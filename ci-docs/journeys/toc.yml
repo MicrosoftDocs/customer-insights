@@ -1024,8 +1024,6 @@
       items: 
       - name: Work with customer journeys using an API
         href: developer/basic-operations-on-customer-journey.md
-      - name: Extend customer journeys using code
-        href: developer/extend-customer-journey-using-code.md
     - name: Metadata reference for your organization
       items: 
       - name: Metadata reference for your organization
