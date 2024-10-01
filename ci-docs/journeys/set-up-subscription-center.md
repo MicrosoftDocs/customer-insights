@@ -263,8 +263,6 @@ To view, add, or remove list memberships for a displayed contact:
     - To remove the contact from any of these subscriptions, select the **More options** button (which looks like an ellipsis) next to the target list and then select **Remove**.
     - To add the contact to any existing subscription list, select the **More commands** button (which looks like an ellipsis) in the **Subscription lists** heading and then select **Add existing marketing list**. A flyout opens. Use it to search for and select each list that you want to add the selected contact(s) to. The select **Add** to add the contacts and close the flyout.
 
-    ![Lists a contact subscribes to.](media/subscription-list-contact.png "Lists a contact subscribes to")
-
 ### Add contacts to lists from a contact list or form view
 
 To add displayed contacts to a subscription list or static marketing list:

@@ -31,9 +31,6 @@ To use the events API, you need to provide a web application token in each reque
 5. Enter details in the **Name** field.
 6. For the **Origin** field enter the  URL from where your application is served in the **Primary endpoint** value that you got while enabling the static website. For example: `https://localhost:4200` or `https://contoso.com`.
    
-   > [!div class="mx-imgBorder"]
-   > ![Web application token details.](../media/enter-web-application-token-details.png "Web application token details")
-   
    > [!NOTE]
    > When you enter the Primary endpoint value, make sure that you don't have a trailing slash (/) at the end of the url.
    

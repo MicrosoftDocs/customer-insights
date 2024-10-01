@@ -78,8 +78,6 @@ In this step, create an application user and associate the application user with
 
 1. Make sure the **User: Application User** view is selected. If not, select the drop-down arrow, select **Application User**, and then enter the **User Name**, **Application ID**, **Full Name** and **Primary Email** values.
 
-   ![Application user form sample.](../media/application-user-form-sample.png "Application user form sample")
-
 1. Select **Save**. After you save the record, the **Application ID URI** and **Microsoft Entra ID Object ID** values should be automatically filled. If not, make sure that you entered the correct application ID and that you registered your application correctly. 
 
 ## Step 3: Assigning a security role to an application user 
