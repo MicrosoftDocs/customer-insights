@@ -21,6 +21,32 @@ Customer Insights - Journeys updates are [pushed to customers automatically](htt
 
 To submit and vote on **feature requests** and **product suggestions**, go to the [Dynamics 365 Application Ideas portal](https://experience.dynamics.com/ideas/categories/?forum=dfa5b83d-9e4c-e811-a956-000d3a1bef07&forumName=Dynamics%20365%20Marketing).
 
+## October 2024 update
+
+| App              | GA release      |
+|------------------|-----------------|
+| Customer Insights - Journeys        |      |
+
+> [!IMPORTANT]
+> Starting on October 10, 2024, changes to link functionality will affect the following areas:
+> - **Link tracking**: Links in messages that were sent more than six months prior will no longer produce tracking results, but will otherwise function correctly. Links in messages sent less than six months prior will continue to generate tracking analytics.
+> - **Text messages**: URLs sent in SMS messages will expire six months after the message is sent and will no longer work.
+> - **Unsubscribe links**: Unsubscribe links will expire six months after the link is created and will no longer work.
+
+### General availability
+
+N/A
+
+### Public preview
+
+N/A
+
+### Monthly enhancements
+
+- **Easily engage multiple audiences in a single journey with multiple segments**
+    - If you already have created specific segments for different purposes and need to reach some or all of them, you can now easily do so by specifying multiple segments for a journey. There's no need to create another segment from scratch, combine existing segments into a composite one, or make multiple copies of the same journeys. Specifying multiple segments is not only straightforward and efficient but also enables marketers without segment creation roles to engage multiple audiences without waiting for a new segment to be created. Additionally, it reduces the number of segments that need maintenance or cleanup later and does not add to the overall segment limit. (Note: you could already specify multiple segments as exit segments or exclusion segments, this enhancement extends the ability to specify multiple segments to start a journey. Outbound segments cannot be used when specifying multiple segments).
+    - [Docs](.md)
+
 ## September 2024 update
 
 ### Version number
