@@ -27,7 +27,7 @@ Connect to data in Delta tables and bring it into Dynamics 365 Customer Insights
 [!INCLUDE [delta-lake-prereqs](./includes/delta-lake-prereqs.md)]
 
 - Data in your Azure Data Lake Storage must be in Delta tables. Customer Insights - Data relies on the version property in the table's history to identify the latest changes for incremental processing.
-- To connect to storage protected by firewalls, [Set up managed identities](private-links.md).
+- To connect to storage protected by firewalls, [Set up managed identities](private-link.md).
 
 ## Connect to Delta data from Azure Data Lake Storage
 

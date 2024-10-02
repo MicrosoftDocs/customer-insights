@@ -74,9 +74,9 @@ Perform these steps for each storage account or container.
 1. For the **Resource type**, select **Microsot.PowerPlatform/enterprisePolicies** and the instance name for the enterprise policy.
 1. Select **Save**.
 
-<!--- Has this been updated? --->
 ## Set up a managed identity when creating a Customer Insights - Data environment
 
+<!--- Has this been updated? 
 When creating a [Customer Insights - Data environment](create-environment.md) that connects to your virtual network protected storage:
 
 1. Select **Enable Azure Private Link**.
@@ -85,9 +85,10 @@ When creating a [Customer Insights - Data environment](create-environment.md) th
 
 1. Select **Create Private Link** to initiate the creation process.
 
-1. [Approve the Private Link](#approve-your-private-link-in-the-azure-portal) in the Azure portal.
+1. [Approve the Private Link](#) in the Azure portal.
 
 1. Once all links are approved, select **Validate Private Link**. Upon successful validation, you can continue configuring your new environment.
+--->
 
 ## Delete a managed identity
 
