@@ -18,7 +18,7 @@ Email insights provide a deep dive into how your audience interacts with your em
 To view email insights, go to **Real-time journeys** > **Email** > **Insights** tab.
 
 > [!NOTE]
-> Email insights will display interaction data for the last 12 months only. However, all historical interaction data is still retained in the data storage.
+> Email insights display interaction data for the last 12 months only. However, all historical interaction data is still retained in the data storage.
 
 ## Email delivery and interactions
 
@@ -45,7 +45,7 @@ User agents are labeled as:
 
 > [!NOTE]
 > Data related to user agents may be partial or missing depending on when your journey was running, especially if it was active before August 2024.
-> If you are building custom reports learn more about the list of Globally Unique Identifiers (GUIDs) to map data on email clients, device types, browsers, and operating systems as this appear in Microsoft Fabric: [Map GUIDs to email clients, browsers, operating systems, and device types](map-guids.md)
+> If you're building custom reports, you can learn more about the list of Globally Unique Identifiers (GUIDs) as they appear in Microsoft Fabric to map data on email clients, device types, browsers, and operating systems: [Map GUIDs to email clients, browsers, operating systems, and device types](map-guids.md)
 
 ## Link insights
 
