@@ -2625,6 +2625,11 @@
       "source_path": "ci-docs/data/faqs-profile-summary.md",
       "redirect_url": "/dynamics365/customer-insights/data/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/developer/extend-customer-journey-using-code.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/real-time-marketing-overview",
+      "redirect_document_id": false
     }
   ]
 }

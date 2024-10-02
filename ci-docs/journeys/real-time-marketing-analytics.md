@@ -1,7 +1,7 @@
 ---
 title: Access and interpret analytics
 description: How to access and interpret Customer Insights - Journeys analytics in Dynamics 365 Customer Insights - Journeys.
-ms.date: 09/13/2024
+ms.date: 10/01/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -80,32 +80,11 @@ Select any journey component to view near real-time operational analytics in the
 
 ## Email insights
 
-Email insights provide a deep dive into how your audience interacts with your emails over time and track the trajectory of delivery rates, open rates, and click-through rates with precision. Beyond delivery and engagement trends, you can evaluate essential email KPIs and access comprehensive delivery and interaction details. To view email insights, go to **Real-time journeys** > **Email** > **Insights** tab.
+Email insights provide a deep dive into how your audience interacts with your emails over time.
 
-The following insights categories are provided:
+Learn more: [Email insights](email-insights.md)
 
-- **Delivery KPIs**: Gain insights into the delivery rate, number of blocks, and delivery failures for the selected message.
-- **Engagement KPIs**: Evaluate the open rate, click rate, click-to-open rate, number of messages marked as spam, and the count of unsubscriptions related to the selected message.
-- **Delivery trend** and **Delivery funnel**: Explore the trends and funnel of emails sent and delivered interactions, along with unique opens and unique clicks specific to the selected email.
-- **Engagement trend**: Examine the trends for total opens and clicks, providing a comprehensive understanding of the level of engagement associated with the selected email.
-- **Device type and user agents' analysis**: Gain a deeper understanding of the various device types, email clients, operating systems, and browsers that customers utilize to engage with your emails.
-    > [!NOTE]
-    > The data related to user agents may be partial or missing depending on when your journey was running, especially if it was active before August 2024.
-    > 
-    > The detection of email clients relies on email opens and is dependent on the response received from the email provider. Certain email clients, like Apple, have privacy protections in place that may prevent detection.
-    > 
-    > The detection of device types, browsers, and operating systems is dependent on email clicks.
-    >
-    > Not all email clients, device types, browsers, and operating systems can be detected. They are labelled as “Unknown” when the user agent used by the customer could not be detected. They are labelled as “Other” when the user agent used by the customer can be detected but is non-categorized such as a local provider. 
-- **Link insights**: Unlock valuable insights into your email's URL engagement and make data-driven decisions to enhance the effectiveness of your email marketing campaigns. Using link insights, you can understand the performance of each link within your email campaigns and identify the top-performing links based on total clicks, unique clicks, and click rate. Get more clarity by grouping your links by URL or link alias. Learn more: [Edit email components in a live journey](edit-email-in-live-journey.md)
-    > [!NOTE]
-    > Links insights only displays data for emails (with links) created after September 2024.
-- **Variation insights**: Gain valuable insights into key metrics such as unique opens, unique clicks, number of delivered messages, open rate, click rate, spam messages, and unsubscriptions for each variant, enabling you to identify what resonates best with your audience. Variation insights are visible only if the email contains conditional content.
-
-    :::image type="content" source="media/analytics-email-insights.png" alt-text="Screenshot of email insights dashboard." lightbox="media/analytics-email-insights.png":::
-
-> [!NOTE]
-> Data retention is 12 months for contact insights, lead insights, goal analytics, channel analytics (including email insights and delivery and interaction details), and AI optimization analytics.
+:::image type="content" source="media/analytics-email-insights.png" alt-text="Screenshot of email insights dashboard." lightbox="media/analytics-email-insights.png":::
 
 ## Aggregate cross-journey analytics
 

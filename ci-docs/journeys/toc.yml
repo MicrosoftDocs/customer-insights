@@ -366,6 +366,8 @@
       href: real-time-marketing-cross-journey-analytics.md
     - name: How to use aggregate channel analytics
       href: real-time-marketing-channel-analytics.md
+    - name: How to use email insights
+      href: email-insights.md
     - name: Customer Insights - Journeys integration with Microsoft Fabric
       items:
       - name: Customer Insights - Journeys integration with Microsoft Fabric overview
@@ -1024,8 +1026,6 @@
       items: 
       - name: Work with customer journeys using an API
         href: developer/basic-operations-on-customer-journey.md
-      - name: Extend customer journeys using code
-        href: developer/extend-customer-journey-using-code.md
     - name: Metadata reference for your organization
       items: 
       - name: Metadata reference for your organization
