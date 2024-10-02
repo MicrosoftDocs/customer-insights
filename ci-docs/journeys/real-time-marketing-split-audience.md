@@ -11,7 +11,7 @@ search.audienceType:
   - enduser
 ---
 
-# Preview: Split your audience into groups
+# PREVIEW: Split your audience into groups
 
 > [!IMPORTANT]
 > A preview feature is a feature that is not complete, but is made available before it’s officially in a release so customers can get early access and provide feedback. Preview features aren’t meant for production use and may have limited or restricted functionality.

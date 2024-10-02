@@ -1,7 +1,7 @@
 ---
 title: Create branded, customized preference centers to manage customer consent
 description: Learn how to set up preference centers to collect and manage consent from your customers.
-ms.date: 08/23/2023
+ms.date: 09/10/2024
 ms.topic: reference
 author: alfergus
 ms.author: alfergus
@@ -12,6 +12,9 @@ search.audienceType:
 ---
 
 # Create branded, customized preference centers to manage customer consent
+
+> [!IMPORTANT]
+> Starting on October 10, 2024, unsubscribe links will expire six months after the link is created and will no longer work.
 
 Preference centers in Customer Insights - Journeys allow you to provide customers with branded experiences to sign up for communications and fine-tune their preferences to ensure they receive the right communications.
 

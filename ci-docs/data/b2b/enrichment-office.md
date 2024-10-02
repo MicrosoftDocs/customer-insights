@@ -44,8 +44,6 @@ We currently support the following regions: UK, Europe, North America.
 
 1. Enter email addresses from your organization for which Office data is going to be aggregated. Only data from the listed email addresses gets processed for relevant communication. A best practice is to use email groups, for example, *US Sales team*, which you can manage in Office 365. The number of email addresses in the groups are resolved and shown. The total number of email addresses must be at least 2 and can't exceed 2,500.
 
-   :::image type="content" source="media/enrichment-office-email-addresses.png" alt-text="Account engagement email addresses.":::
-
 1. Review and provide your consent for [Office 365 tenant administrator consent](#office-365-tenant-administrator-consent) by selecting **I agree**.
 
 1. Select **Next**.
@@ -106,8 +104,6 @@ All data is aggregated up to the account level. The system calculates an engagem
 ## See enrichment data on the customer card
 
 Account engagement can also be viewed on individual customer cards. Go to **Customers** and select a customer profile. In the customer card, you'll find the account's engagement score, the total number of emails, and the total number of meetings aggregated over the last year. You also find charts that show the email and meeting history.
-
-:::image type="content" source="media/enrichment-office-customer-card.png" alt-text="Customer card with enriched data.":::
 
 ## Next steps
 

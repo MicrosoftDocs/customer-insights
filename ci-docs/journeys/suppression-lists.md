@@ -1,7 +1,7 @@
 ---
 title: How Customer Insights - Journeys uses suppression lists for email deliverability
 description: Learn how Customer Insights - Journeys uses suppression lists to protect email sending reputations.
-ms.date: 04/30/2024
+ms.date: 09/03/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -85,12 +85,7 @@ Eligible email addresses have an automatic expiration date that removes the emai
 
 ## Removing eligible email addresses
 
-To enable the feature:
-
-1. Go to **Settings** and select **Feature switches**.
-1. Enable the **Ability to remove email addresses from suppression** in the **Email sending** section.
-
-Once enabled, you can remove eligible email addresses from the suppression list by navigating to **Contacts** and then selecting the **Communication** tab.
+You can remove eligible email addresses from the suppression list by navigating to **Contacts** and then selecting the **Communication** tab.
 
 > [!div class="mx-imgBorder"]
 > ![Use communication tab to select email addresses to remove from suppression lists](media/select-email-addresses-to-remove.png "Use communication tab to select email addresses to remove from suppression lists")

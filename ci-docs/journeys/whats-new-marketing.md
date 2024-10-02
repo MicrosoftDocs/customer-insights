@@ -1,10 +1,10 @@
 ---
 title: New and upcoming features
 description: Information about new features, improvements, and bug fixes in Dynamics 365 Customer Insights - Journeys releases.
-ms.date: 08/13/2024
+ms.date: 09/10/2024
 ms.topic: article
-author: alfergus
-ms.author: alfergus
+author: colinbirkett
+ms.author: colinbirkett
 ms.collection: bap-ai-copilot
 ---
 
@@ -20,6 +20,62 @@ We're excited to announce our newest updates! This article summarizes early acce
 Customer Insights - Journeys updates are [pushed to customers automatically](https://cloudblogs.microsoft.com/dynamics365/it/2020/04/27/automatic-update-policy-for-dynamics-365-marketing/). Solutions are available for early validations. To manually update your instances, follow the steps in [Keep Customer Insights - Journeys up to date](apply-updates.md).
 
 To submit and vote on **feature requests** and **product suggestions**, go to the [Dynamics 365 Application Ideas portal](https://experience.dynamics.com/ideas/categories/?forum=dfa5b83d-9e4c-e811-a956-000d3a1bef07&forumName=Dynamics%20365%20Marketing).
+
+## September 2024 update
+
+### Version number
+
+| App              | GA release      |
+|------------------|-----------------|
+| Customer Insights - Journeys        |   1.1.48225.52   |
+
+> [!IMPORTANT]
+> Starting on October 10, 2024, changes to link functionality will affect the following areas:
+> - **Link tracking**: Links in messages that were sent more than six months prior will no longer produce tracking results, but will otherwise function correctly. Links in messages sent less than six months prior will continue to generate tracking analytics.
+> - **Text messages**: URLs sent in SMS messages will expire six months after the message is sent and will no longer work.
+> - **Unsubscribe links**: Unsubscribe links will expire six months after the link is created and will no longer work.
+
+### General availability
+
+- **Automate seamless handoffs between marketing and sales**
+    - Invite your sales team to engage with qualified leads at the right time and stage of their journey by creating sales activities and records directly from customer journeys. Real-time journeys are a key part of nurturing and qualifying leads and opportunities. When your customer has sent the right signals through your direct engagement, the next step is often for your sales team to act. You can now create sales activities such as tasks and phone calls directly from journeys so that leads get individualized attention when they’re most likely to engage. You can also create lead or opportunity records based on a customer’s interaction with your campaign, ensuring that the sales team has the right information to close leads generated from marketing activities.
+    - [Release plan](/dynamics365/release-plan/2024wave1/customer-insights/dynamics365-customer-insights-journeys/close-leads-faster-automating-seamless-handoffs-between-marketing-sales)
+    - [Docs](real-time-marketing-tile-reference.md)
+
+### Public preview
+
+- **Refine email content in running journeys**
+    - To maximize customer engagement, it's crucial for customer experience teams to regularly refine email content, ensuring that communication remains current, relevant, and impactful. You can now easily edit content, layout, links, buttons, or dynamic content in your email messages while a journey is running—without creating a new version or interrupting the customer experience. Changing email messages in live journey gives you more freedom and power over your email marketing campaigns and helps you to respond to changing business or customer needs.
+    - [Release plan](/dynamics365/release-plan/2024wave1/customer-insights/dynamics365-customer-insights-journeys/improve-engagement-editing-emails-live-journeys)
+    - [Docs](edit-email-in-live-journey.md)
+
+- **Streamline form filling and event registration with form prefill**
+    - The repetitive task of filling out forms can be a significant deterrent to event registration. Nobody likes to repeat information that they've already provided. Imagine loyal customers who attend multiple conferences each year having to input their contact information and preferences every time. Form prefill in Dynamics 365 Customer Insights eliminates the need to repeatedly request basic details from your customers, reducing redundancy and saving time. This not only expedites the registration process but also allows for more strategic collection of customer data over time.
+    - [Release plan](/dynamics365/release-plan/2024wave2/customer-insights/dynamics365-customer-insights-journeys/form-prefill-simplifies-form-filling-event-sign-up)
+    - [Docs](real-time-marketing-form-prefill.md)
+
+- **Control how fast customers can enter a journey**
+    - There are times when you want to reach a large audience, but sending a message to the entire audience at the same time would cause problems for your business. With journey rate limiting, you’ll be able to space out message sending over time by setting how quickly you want customers to enter your journey. This feature helps prevent overwhelming downstream operations with a large influx of requests from customers who receive messages from your journey. For example, let's say you have a journey that sends messages to your entire customer base with a call to action to contact your call center. You may want to avoid creating a poor customer experience due to long wait times from an overwhelmed help desk if you send messages at the same time to everyone. Instead, you can now slow down how fast customers enter the journey, avoiding thousands of phone calls at the same time.
+    - [Release plan](/dynamics365/release-plan/2024wave1/customer-insights/dynamics365-customer-insights-journeys/improve-customer-experience-controlling-how-fast-customers-enter-journey)
+    - [Docs](control-how-fast-enter-journey.md)
+
+### Monthly enhancements
+
+- **Queued messages are not sent when journey is stopped**
+    - When a journey is stopped, you now see an immediate change in the journey state to “Stopping.” This assures that your request was received and is being processed. Furthermore, if your messages are still pending in the send queue (this can happen when there is high volume of messages), such messages will now be removed immediately and will not be sent. This avoids a situation where messages continue to be delivered even though the journey has been stopped.
+    - [Docs](journeys-overview.md)
+
+- **Maximize email engagement and optimize content with link insights**
+    - Link insights in real-time journeys allow you to analyze the performance of individual links in your emails. You can now view key metrics such as click rate and unique clicks per link and easily compare the performance of each link within your email campaigns. Use this data to optimize your content, improve engagement, and make more informed decisions to drive better results.
+    - [Docs](real-time-marketing-analytics.md)
+
+<!---
+
+- **Outbound marketing removal notification and ability to hide outbound**
+    - In-product banners are now shown to all users to inform them that Outbound marketing will be removed as of June 30th, 2025 and that social posting and LinkedIn lead generation will be removed as of Dec 2nd, 2024. We also added a highly visible card in the Settings > Versions page that talks about moving to real-time and now provide a button that can be used to hide outbound from the site map once the transition is complete.
+    - [Docs]()
+
+-->
 
 ## August 2024 update
 
@@ -64,7 +120,7 @@ There is no Dynamics 365 Customer Insights - Journeys release for August. We wil
 
 ### Monthly enhancements
 
-- **Optimize your email content with enhanced variation insights**
+- **Optimize your email content with enhanced insights for conditional content variations**
     - You can now effortlessly compare the performance of different email variants using conditional content within real-time journeys. Gain valuable insights into key metrics such as open rates, click rates, and unique clicks for each conditional content variant, enabling you to identify what resonates best with your audience. Optimize your email campaigns by leveraging data-driven decisions to improve engagement and drive better results.
     - [Docs](real-time-marketing-analytics.md#email-insights)
 
@@ -143,13 +199,6 @@ Learn how to make the most of the new Dynamics 365 Customer Insights features in
 | App              | GA release      |
 |------------------|-----------------|
 | Customer Insights - Journeys        |   1.1.40197.68    |
-
-> [!IMPORTANT]
-> Starting on April 15, 2024, changes to link functionality affected the following areas:
->
-> - **Link tracking**: Links in messages sent more than one year prior to April 15 no longer produce tracking results, but otherwise function correctly. Links in messages sent less than one year prior continue to generate tracking analytics.
-> - **Text messages**: URLs sent in SMS messages expire one year after the message was sent and no longer work.
-> - **Unsubscribe links**: Unsubscribe links expire one year after the link was created and no longer work.
 
 > [!NOTE]
 > On July 1, 2024, active journeys in the real-time journeys area that were created on or before May 5, 2022 will stop working. To avoid disruption, follow the steps outlined in the [Known issues for journeys](journey-known-issues.md#steps-to-avoid-journey-disruption) article before July 1, 2024.
