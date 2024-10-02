@@ -1,7 +1,7 @@
 ---
 title: "Connect to Delta tables in Azure Data Lake Storage"
 description: "Work with data stored in Delta tables from Azure Data Lake Storage."
-ms.date: 08/13/2024
+ms.date: 10/02/2024
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -27,6 +27,7 @@ Connect to data in Delta tables and bring it into Dynamics 365 Customer Insights
 [!INCLUDE [delta-lake-prereqs](./includes/delta-lake-prereqs.md)]
 
 - Data in your Azure Data Lake Storage must be in Delta tables. Customer Insights - Data relies on the version property in the table's history to identify the latest changes for incremental processing.
+- To connect to storage protected by firewalls, [Set up managed identities](private-links.md).
 
 ## Connect to Delta data from Azure Data Lake Storage
 
@@ -36,7 +37,7 @@ Connect to data in Delta tables and bring it into Dynamics 365 Customer Insights
 
 1. Select **Azure Data Lake Delta tables**.
 
-   :::image type="content" source="media/delta-lake-new.svg" alt-text="Dialog box to enter connection details for Delta Lake.":::
+   :::image type="content" source="media/delta-lake-new.svg" alt-text="Dialog box to enter connection details for Delta Lake." lightbox="media/delta-lake-new.svg":::
 
 1. Enter a **Data source name** and an optional **Description**. The name is referenced in downstream processes and it's not possible to change it after creating the data source.
 
@@ -45,9 +46,9 @@ Connect to data in Delta tables and bring it into Dynamics 365 Customer Insights
    - **Azure subscription**: Select the **Subscription** and then the **Resource group** and **Storage account**.
    - **Azure resource**: Enter the **Resource Id**.
 
-1. Optionally, if you want to ingest data from a storage account through an Azure Private Link, select **Enable Private Link**. For more information, see [Private Links](private-link.md).
-
-1. Choose the name of the **Container** that contains the folder of your data, and select **Next**.
+1. Choose the name of the **Container** that contains the folder of your data.
+1. Optionally, if you want to ingest data from a storage account behind a firewall, select **This storage account is behind a firewall**. Learn more: [Set up managed identities for storage accounts behind firewalls](private-link.md).
+1. Select **Next**.
 
 1. Navigate to the folder that contains the data in Delta tables and select it. Then, select **Next**. A list of available tables displays.
 

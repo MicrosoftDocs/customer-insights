@@ -46,8 +46,8 @@ Perform these steps once per subscription.
 1. [Create the enterprise policy](/power-apps/maker/data-platform/azure-synapse-link-msi#create-enterprise-policy). One policy can be used for multiple Dataverse environments.
 1. For each policy, [grant reader access to the enterprise policy](/power-apps/maker/data-platform/azure-synapse-link-msi#grant-reader-access-to-the-enterprise-policy-via-azure).
 1. [Connect the enterprise policy to the Dataverse environment](/power-apps/maker/data-platform/azure-synapse-link-msi#connect-enterprise-policy-to-dataverse-environment). First, make sure there isn't an existing policy.
-1. Grant enterprise policy access to Azure storage.
-1. Allow enterprise policy access to the storage account behind the firewall.
+1. [Grant enterprise policy access] to Azure storage(#grant-enterprise-policy-access-to-azure-storage).
+1. [Allow enterprise policy access](#allow-enterprise-policy-access-to-the-storage-account-behind-the-firewall) to the storage account behind the firewall.
 
 ### Grant enterprise policy access to Azure storage
 
@@ -69,3 +69,5 @@ Perform these steps for each storage account or container.
 1. Select **Enabled from selected virtual networks and IP addresses**.
 1. For the **Resource type**, select **Microsot.PowerPlatform/enterprisePolicies** and the instance name for the enterprise policy.
 1. Select **Save**.
+
+[!INCLUDE [footer-include](includes/footer-banner.md)]
