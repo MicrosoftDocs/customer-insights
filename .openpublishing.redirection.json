@@ -1653,7 +1653,7 @@
     },
     {
       "source_path": "ci-docs/compute-migrate-infrastructure.md",
-      "redirect_url": "/dynamics365/customer-insights/data/compute-migrate-infrastructure",
+      "redirect_url": "/dynamics365/customer-insights/data/private-link",
       "redirect_document_id": false
     },
     {

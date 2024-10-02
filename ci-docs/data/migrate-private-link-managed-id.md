@@ -29,14 +29,12 @@ This article explains how to update existing data connections using Private Link
 1. Sign in to Customer Insights - Data.
    A message says that you have one or more storage accounts that must be upgraded.
 1. From the Action required message, select **See details**.
-
    :::image type="content" source="media/upgrade-to-managed-id.jpg" alt-text="Dialog box to upgrade to managed identities for Azure.":::
-
-1. Expand Step 1.
+1. Expand **Step 1 Enable Azure Managed Identity in Azure admin portal**.
 1. Select **Copy storage account information**. If you want to view the information, select **Expand**.
 1. Paste the information so it's easily accessible.
 1. Enable access to managed identity.
-1. Expand Step 2 to view the status of your connections.
+1. Expand **Step 2 Update your connections** to view the status of your connections.
 
 ## Enable access to storage through managed identities
 
@@ -46,7 +44,7 @@ Perform these steps once per subscription.
 1. [Create the enterprise policy](/power-apps/maker/data-platform/azure-synapse-link-msi#create-enterprise-policy). One policy can be used for multiple Dataverse environments.
 1. For each policy, [grant reader access to the enterprise policy](/power-apps/maker/data-platform/azure-synapse-link-msi#grant-reader-access-to-the-enterprise-policy-via-azure).
 1. [Connect the enterprise policy to the Dataverse environment](/power-apps/maker/data-platform/azure-synapse-link-msi#connect-enterprise-policy-to-dataverse-environment). First, make sure there isn't an existing policy.
-1. [Grant enterprise policy access] to Azure storage(#grant-enterprise-policy-access-to-azure-storage).
+1. [Grant enterprise policy access](#grant-enterprise-policy-access-to-azure-storage) to Azure storage.
 1. [Allow enterprise policy access](#allow-enterprise-policy-access-to-the-storage-account-behind-the-firewall) to the storage account behind the firewall.
 
 ### Grant enterprise policy access to Azure storage
