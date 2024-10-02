@@ -17,6 +17,9 @@ Email insights provide a deep dive into how your audience interacts with your em
 
 To view email insights, go to **Real-time journeys** > **Email** > **Insights** tab.
 
+> [!NOTE]
+> Email insights will display interaction data for the last 12 months only. However, all historical interaction data is still retained in the data storage.
+
 ## Email delivery and interactions
 
 - **Delivery KPIs**: Gain insights into the delivery rate, number of blocks, and delivery failures for the selected message.
@@ -25,9 +28,6 @@ To view email insights, go to **Real-time journeys** > **Email** > **I
 - **Engagement trend**: Examine the trends for total opens and clicks, providing a comprehensive understanding of the level of engagement associated with the selected email.
 
 :::image type="content" source="media/analytics-email-insights.png" alt-text="Screenshot of email insights dashboard." lightbox="media/analytics-email-insights.png":::
-
-> [!NOTE]
-> Data retention is 12 months for contact insights, lead insights, goal analytics, channel analytics (including email insights and delivery and interaction details), and AI optimization analytics.
 
 ## Device type and user agents' analysis
 
@@ -39,14 +39,13 @@ Gain a deeper understanding of the various device types, email clients, operatin
 User agents are labeled as:
 
 - "Unknown" when the agent couldn't be detected.
-- "Other" when the agent can be detected but is noncategorized, such as a local provider.
-
-Learn more about the list of Globally Unique Identifiers (GUIDs) to map data on email clients, device types, browsers, and operating systems to Fabric: [Map GUIDs to email clients, browsers, operating systems, and device types](map-guids.md)
+- "Other" when the agent can be detected but is non-categorized yet, such as a local provider.
 
 :::image type="content" source="media/email-insights-device.png" alt-text="Screenshot of email insights device type dashboard." lightbox="media/email-insights-device.png":::
 
 > [!NOTE]
 > Data related to user agents may be partial or missing depending on when your journey was running, especially if it was active before August 2024.
+> If you are building custom reports learn more about the list of Globally Unique Identifiers (GUIDs) to map data on email clients, device types, browsers, and operating systems as this appear in Microsoft Fabric: [Map GUIDs to email clients, browsers, operating systems, and device types](map-guids.md)
 
 ## Link insights
 
@@ -54,12 +53,6 @@ Unlock valuable insights into your email's URL engagement and make data-driven d
 
 > [!NOTE]
 > Link insights displays data for emails (with links) that have been created after September 2024.
-
-## Variation insights
-
-Gain valuable insights into key metrics such as unique opens, unique clicks, number of delivered messages, open rate, click rate, spam messages, and unsubscriptions for each variant, enabling you to identify what resonates best with your audience. Variation insights are visible only if an email contains conditional content.
-
-:::image type="content" source="media/email-insights-variation.png" alt-text="Screenshot of email insights variation dashboard." lightbox="media/email-insights-variation.png":::
 
 ## Click map
 
@@ -79,5 +72,11 @@ Using the click map insights, you can optimize your content placement, layout, a
 > - The click map might contain incomplete data or miss some data depending on when your journey and email content was created and running, especially if it was active before October 2024.
 > - For older emails, to start displaying the click map, use [live editing](edit-email-in-live-journey.md) and update the email. The links included in your email will be updated and tracked for the new interactions.
 > - For emails that contain variations (conditional content and in-line conditions), the click map only displays the design and interactions for the default variation.
+
+## Variation insights (Conditional content)
+
+Gain valuable insights into key metrics such as unique opens, unique clicks, number of delivered messages, open rate, click rate, spam messages, and unsubscriptions for each variant, enabling you to identify what resonates best with your audience. Variation insights are visible only if an email contains conditional content.
+
+:::image type="content" source="media/email-insights-variation.png" alt-text="Screenshot of email insights variation dashboard." lightbox="media/email-insights-variation.png":::
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
