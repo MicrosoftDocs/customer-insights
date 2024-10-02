@@ -86,6 +86,9 @@ Learn more: [Email insights](email-insights.md)
 
 :::image type="content" source="media/analytics-email-insights.png" alt-text="Screenshot of email insights dashboard." lightbox="media/analytics-email-insights.png":::
 
+> [!NOTE]
+> Contact insights, lead insights, journey and channel analytics (including, goal analytics, AI optimization, email insights and delivery and interaction details) will display interaction data for the last 12 months only. However, all historical interaction data is still retained in the data storage.
+
 ## Aggregate cross-journey analytics
 
 The built-in aggregate cross-journey analytics dashboard shows relevant metrics and insights for all your journey orchestrations in one place.
