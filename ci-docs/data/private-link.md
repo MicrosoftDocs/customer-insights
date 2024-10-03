@@ -19,7 +19,7 @@ Configure Customer Insights - Data to connect with Azure storage containers prot
 - Data input - Create data connections to ingest source data from your Azure storage containers.
 - Exports - Configure exports to write specific tables to Azure storage containers.
 
-<!--->
+<!---
 In Customers Insights you can create private links in the following ways:
 
 - When creating a new Customer Insights - Data environment for which you would like to [Use your own Azure Data Lake Storage account](own-data-lake-storage.md) that is protected by your virtual network.
@@ -28,6 +28,7 @@ In Customers Insights you can create private links in the following ways:
 
 Regardless of the method you use to create the connection, it shows under the **Settings** > **Permissions** > **Private Links** tab in Customer Insights - Data.
 --->
+
 ## Prerequisites
 
 - You have an Azure subscription Owner role.
