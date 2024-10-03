@@ -66,7 +66,7 @@ As we continue to work on Customer Insights - Journeys and refine the experience
 - A segment can be created for up to 100,000,000 contacts.
 - A segment-based journey will only work when the size of the segment is under 10M contacts. Any segment with a larger size fails to execute. To ensure that campaigns can run effectively, break down the larger segments into multiple segments that can use the same repeatable journey.
 (1) This is also true for any trigger-based journeys that rely on segments in the journey flow.
-- When multiple segments are selected for the journey start, exit, or exclusion, total members count across the selected segments cannot exceed the segment size limit of 10M contacts for a journey.
+- When multiple segments are selected for the journey start, exit, or exclusion, total members count across the selected segments cannot exceed the segment size limit of 100M contacts for a journey.
 - There's a limit of 100 contacts that can be added to an inclusion/exclusion group as part of the segment definition. To get around this, you can create a separate segment of customers and use that segment in your master segment definition thereby creating a compound segment.
 - Today, users can't edit a segment that is being used in a live journey in Customer Insights - Journeys. To be able to edit the segment, stop the journey, and then make the edits to the segments.
 
