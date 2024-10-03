@@ -34,8 +34,6 @@ When creating a [Customer Insights - Data environment](create-environment.md) th
 
 1. Select **Enable Azure Private Link**.
 
-   :::image type="content" source="media/Private-Endpoint-Creation.png" alt-text="Private endpoint creation.":::
-
 1. Select **Create Private Link** to initiate the creation process.
 
 1. [Approve the Private Link](#approve-your-private-link-in-the-azure-portal) in the Azure portal.

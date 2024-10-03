@@ -1,7 +1,7 @@
 ---
 title: "What's new in Dynamics 365 Customer Insights - Data"
 description: "Information about new features, improvements, and bug fixes."
-ms.date: 06/27/2024
+ms.date: 09/11/2024
 ms.topic: conceptual
 author: m-hartmann
 ms.author: skumm
@@ -16,6 +16,17 @@ We roll out updates on a region-by-region basis. So certain regions might see fe
 
 > [!TIP]
 > To submit and vote on feature requests and product suggestions, go to the [Dynamics 365 Application Ideas portal](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights).
+
+## September 2024
+
+### Public preview
+
+#### Accelerate time to insights with data in Delta Lake format
+
+Your data updates constantly, with rapidly changing signals like online activities and mobile interactions. When a traditional data warehouse is used to generate customer insights, this leads to increased time to insight with each update while the volume of unprocessed signals keeps growing. Longer queues result in slow or stale insights. With native support for Delta Lake storage format in Customer Insights, you can now accelerate processing times even with a higher volume of fast-changing data updates. You can get customer profiles and associated insights updated more frequently and react to customer engagements based on the most current information available. This empowers you to create the most relevant and personalized experiences for your customers and the most up-to-date and timely insights for your business users.
+
+- [Release plan](/dynamics365/release-plan/2024wave2/customer-insights/dynamics365-customer-insights-data/accelerate-time-insights-data-delta-lake-format)
+- [Docs](connect-delta-lake.md)
 
 ## June 2024
 
@@ -44,7 +55,6 @@ This capability includes the following features:
 **Real-time unknown-to-known**: Merge unknown profiles into known profiles in real time, so you can always have the 360-degree view of your customers.
 
 **Real-time web personalization**: Leverage our APIs to read your customer data, including segment memberships, web events, or demographic data in real time to personalize the web experience for your visitors.
-
 
 - [Release plan](/dynamics365/release-plan/2024wave1/customer-insights/dynamics365-customer-insights-data/elevate-customer-experiences-real-time)
 - [Docs](real-time-web-personalization-overview.md)

@@ -1,9 +1,7 @@
 ---
 title: Customer Insights - Journeys link tracking mechanics
 description: Learn about link tracking mechanics in Dynamics 365 Customer Insights - Journeys.
-ms.date: 03/18/2024
-ms.custom: 
-  - dyn365-marketing
+ms.date: 09/26/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -15,8 +13,8 @@ search.audienceType:
 
 # Customer Insights - Journeys link tracking mechanics
 
-> [!TIP]
-> Starting on April 15, 2024, links in messages that were sent *more* than one year prior will no longer produce tracking results, but will otherwise function correctly. Links in messages sent *less* than one year prior will continue to generate tracking analytics.
+> [!IMPORTANT]
+> Starting on October 10, 2024, links in messages that were sent more than six months prior will no longer produce tracking results, but will otherwise function correctly. Links in messages sent less than six months prior will continue to generate tracking analytics.
 
 When executing customer journeys, all relevant hyperlinks are replaced with trackable links. If the content of a message is HTML, we also create an invisible pixel inside the message body. The invisible pixel is necessary to determine whether a user clicked on a link or opened the message.
 
@@ -34,7 +32,7 @@ When the recipient selects a link or opens a message with a tracking pixel, two 
 1. The recipient is redirected to the original URL.
 1. The link click interaction is recorded.
 
-If the recipient previously opted out from tracking, the interaction is generated as anonymous. When the recipient has opted out, the interaction doesn't store a customer profile reference.
+If the recipient previously opted out from tracking, the interaction is generated as anonymous. When the recipient has opted out, the interaction doesn't store a customer profile reference. The consent for tracking is cached for 24 hours, meaning the interaction can be stored as non-anonymous although the customer has opted out in the past 24 hours.
 
 > [!NOTE]
 > All links generated in the [text message channel](real-time-marketing-outbound-text-messaging.md) are shortened, regardless of whether they are replaced with tracking links.

@@ -1,7 +1,7 @@
 ---
 title: Create outbound text messages
 description: Learn how to create outbound text messages in Dynamics 365 Customer Insights - Journeys.
-ms.date: 03/18/2024
+ms.date: 09/10/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -13,12 +13,12 @@ search.audienceType:
 
 # Create outbound text messages
 
-> [!TIP]
-> Links in SMS messages are automatically shorted to reduce character count. Starting on April 15, 2024, URLs sent in SMS messages will expire one year after the message is sent and will no longer work.
+> [!IMPORTANT]
+> Links in SMS messages are automatically shortened to reduce character count. Starting on October 10, 2024, URLs sent in SMS messages will expire six months after the message is sent and will no longer work.
 
 Text messages (SMS) allow you to reach customers directly on their mobile devices. You can send text messages from Dynamics 365 Customer Insights - Journeys by signing up with a provider such as Azure Communication Services, Infobip, LINK Mobility, Telesign, Twilio, or Vibes and configuring Customer Insights - Journeys to work with the provider. To learn how to set up a text messaging provider account, see [Set up text messaging](real-time-marketing-text-messaging-setup.md)
 
-> [!IMPORTANT]
+> [!TIP]
 > Phone numbers and messaging services are not included in the Dynamics 365 Customer Insights license. Text messaging within the app requires a separate provider subscription, which you then connect to the app to send messages.
 
 This article explains how to create and send text messages in Customer Insights - Journeys. As [discussed below](real-time-marketing-outbound-text-messaging.md#track-your-text-message-metrics-from-channel-insights), the Customer Insights - Journeys app tracks text messaging metrics for channel insights purposes, including incoming SMS responses.

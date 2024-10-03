@@ -111,7 +111,7 @@ To create a new form, go to **Customer Insights - Journeys** > **Channels** > **
 
 ## Publish your form
 
-To publish your form, select the **Publish** button in the top right corner. There are three options to publish a form:
+To publish your form, select the **Publish** button in the top right corner. There are two options to publish a form:
 
 - **Embed to an external page using JavaScript**: This is the most common way to integrate the form into your own web page. You can reuse the same code snippet on multiple web pages. The form submission data includes the URL of the page where the form is embedded. There's also a tracking script included to count the statistics of visitors to the page that the form is embedded on.
 - **Create a standalone page**: A new page is automatically created and the form is embedded into the page. As a result of this process, you get a public URL, which you can share to allow your visitors to visit and submit the form.

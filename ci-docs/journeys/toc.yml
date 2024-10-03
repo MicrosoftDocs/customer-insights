@@ -200,6 +200,8 @@
       href: real-time-marketing-channel-optimization.md
   - name: Journeys
     items:
+    - name: Journeys overview
+      href: journeys-overview.md
     - name: "Preview: Copilot - Create journeys using AI assistance"
       href: real-time-marketing-use-copilot-create-journey.md
     - name: Trigger-based journeys
@@ -282,6 +284,8 @@
         href: real-time-marketing-branches.md
       - name: Customize the journey designer
         href: real-time-marketing-journey-designer.md
+      - name: "Preview: Control how fast customers can enter a journey"
+        href: control-how-fast-enter-journey.md
     - name: Known issues for journeys
       href: journey-known-issues.md
   - name: Event planning and management
@@ -336,6 +340,8 @@
       href: real-time-marketing-manage-forms.md
     - name: Troubleshoot forms
       href: real-time-marketing-troubleshooting-forms.md
+    - name: Prefill values for forms and event registration
+      href: real-time-marketing-form-prefill.md
   - name: Lead generation and management
     items:
     - name: Lead generation and management overview
@@ -360,6 +366,8 @@
       href: real-time-marketing-cross-journey-analytics.md
     - name: How to use aggregate channel analytics
       href: real-time-marketing-channel-analytics.md
+    - name: How to use email insights
+      href: email-insights.md
     - name: Customer Insights - Journeys integration with Microsoft Fabric
       items:
       - name: Customer Insights - Journeys integration with Microsoft Fabric overview
@@ -1018,8 +1026,6 @@
       items: 
       - name: Work with customer journeys using an API
         href: developer/basic-operations-on-customer-journey.md
-      - name: Extend customer journeys using code
-        href: developer/extend-customer-journey-using-code.md
     - name: Metadata reference for your organization
       items: 
       - name: Metadata reference for your organization
