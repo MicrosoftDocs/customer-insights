@@ -87,7 +87,7 @@ To add inline conditions in a push notification message:
 
     :::image type="content" source="media/save-text-message.png" alt-text="Save condition." lightbox="media/save-text-message.png":::
     
-1. Repeat these steps for all your needed conditions.
+1. Repeat these steps for each condition you add.
 
 ## Add a Customer Voice survey to a push notification
 
