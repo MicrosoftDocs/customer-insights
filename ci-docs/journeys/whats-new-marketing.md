@@ -35,14 +35,14 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 
 ### General availability
 
-  <!--- 
+<!--- 
 
 - **Create journeys by using Copilot to describe them**
     - With Dynamics 365 Customer Insights - Journeys, anybody can create journeys in minutes, even if they've never done it before. Simply describe in everyday words what you want to create and rely on generative AI to build the journey for you. This empowers you to do more with less. Instead of spending time getting the mechanics of the journey right, you can now ensure that you’re delivering the most personalized experience for your customers by collaborating with your entire team and quickly driving stakeholder alignment. Using the journey creator functionality together with content ideas for email creation, you can now get your customer experience ideas to market in no time.
     - [Release plan](/dynamics365/release-plan/2024wave2/customer-insights/dynamics365-customer-insights-journeys/create-journeys-describing-them-using-copilot)
     - [Docs](.md)  
   
-  -->
+-->
 
 ### Public preview
 
