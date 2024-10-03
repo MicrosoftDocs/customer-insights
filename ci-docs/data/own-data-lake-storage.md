@@ -49,7 +49,7 @@ Dynamics 365 Customer Insights - Data writes output data like unified profiles a
 - A single one-to-one mapping between a Dataverse organization and an Azure Data Lake Storage account is supported.
 - The target storage account can't be changed.
 - Data sharing doesn't work if an Azure Private Link setup is needed to access your Azure Data Lake Storage account because it's behind a firewall. Dataverse currently doesn't support the connection to private endpoints through Private Link.
-- [Automatic linking of customer profiles](integrate-d365-apps.md) in Dataverse isn't supported when using your own Azure Data Lake Storage.
+- [Automatic linking of customer profiles](integrate-d365-apps.md) in Dataverse isn't supported when using your own Azure Data Lake Storage. Customer Insights storage is recommended.
 
 ### Set up security groups on your own Azure Data Lake Storage
 
