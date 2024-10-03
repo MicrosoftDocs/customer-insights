@@ -1,7 +1,7 @@
 ---
 title: Create outbound text messages
 description: Learn how to create outbound text messages in Dynamics 365 Customer Insights - Journeys.
-ms.date: 09/10/2024
+ms.date: 10/03/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -62,42 +62,36 @@ When you send the text message from a journey, it will automatically populate th
 
 ## Conditional content for text messages
 
-To add inline conditions in your text message, you have to: 
+To add inline conditions in a text message: 
 
 1. Add the conditional (if-then-else) statement in the text message editor:
 
     ```
     {{#if placeholderName}} 
-
       Content displayed when the expression is true 
-
     {{else if placeholderName2}} 
-
       Content displayed when the first expression is false and the second one is true 
     .
     .
     .
-
     {{else}} 
-
       Content displayed when all expressions are false 
-
     {{/if}} 
     ```
 
-1. To set up the condition, select the **placeholder** name to configure (e.g., placehoderName) and click on the personalization icon:
+1. To set up the condition, select the **placeholder** name to configure (for example, "placeholderName") and select the personalization icon:
 
     :::image type="content" source="media/code-text-message.png" alt-text="Set up condition using placeholder name to personalize." lightbox="media/code-text-message.png":::
 
-1. Select the condition you want. In the is example, the first placeholder will activate the condition if the contact’s address is in Spain:
+1. Select the condition you want. In this example, the first placeholder activates the condition if the contact’s address is in Spain:
     
     :::image type="content" source="media/select-condition-text-message.png" alt-text="Select condition." lightbox="media/select-condition-text-message.png":::
 
-1. Once done, click on **Save**.
+1. Once done, select **Save**.
 
     :::image type="content" source="media/save-text-message.png" alt-text="Save condition." lightbox="media/save-text-message.png":::
     
-1. Repeat this practice on all your needed conditions.
+1. Repeat these steps for each condition you add.
 
 ## Add a Customer Voice survey to a text message
 
