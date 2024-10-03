@@ -77,7 +77,8 @@ Perform these steps for each storage account or container.
 
 ## Set up a managed identity when creating a Customer Insights - Data environment
 
-<!--- Has this been updated? 
+*Has this been updated?*
+
 When creating a [Customer Insights - Data environment](create-environment.md) that connects to your virtual network protected storage:
 
 1. Select **Enable Azure Private Link**.
@@ -87,7 +88,8 @@ When creating a [Customer Insights - Data environment](create-environment.md) th
 1. [Approve the Private Link](#) in the Azure portal.
 
 1. Once all links are approved, select **Validate Private Link**. Upon successful validation, you can continue configuring your new environment.
---->
+
+*Can they delete a managed identity?*
 
 ## Delete a managed identity
 
