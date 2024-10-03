@@ -44,6 +44,10 @@ The best way to show how journey reminders work is to walk through a real-life s
     > [!div class="mx-imgBorder"]
     > ![Screenshot showing message tile selection.](media/real-time-marketing-set-end-date.png "Screenshot showing message tile selection")
 
+
+> [!IMPORTANT]
+> **You must have atleast one Wait tile within the series otherwise series will exit immediately (even if you have setup a condition and selected wait until a specific date and time).
+
 ## View analytics of the Series tile and your reminder journey
 
 After the journey has been live for a while, select the **Analytics** tab in the Series tile properties to see how many customers are flowing through each exit branch and analytics on the delivery and interactions details of each message inside the Series tile.
