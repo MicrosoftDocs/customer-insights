@@ -54,7 +54,7 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 - **Get insights on email engagement with heatmap analytics**
     - Understanding the effectiveness of email campaigns can often be complex, particularly when information and links are abundant. Gaining clarity on which areas or links captivate your audience and drive them to act is crucial for refining the user experience and boosting email performance. Real-time journeys email insights now offer a clear view of your audience's preferences by illustrating their interactions within your emails. This immediate visual feedback highlights the content that resonates the most, empowering you to adjust your messaging for heightened impact and better conversion rates. 
     - [Release plan](/dynamics365/release-plan/2024wave2/customer-insights/dynamics365-customer-insights-journeys/get-insights-email-engagement-heatmap-analytics)
-   <!--- - [Docs](.md)  -->
+    - [Docs](email-insights.md)
 
 ### Private preview
 
