@@ -63,15 +63,9 @@ By default, the business unit of a record is set to the business unit of the use
 While there's support for modernized business units across most of the areas in the app, there are some areas that won't be supported until a later release.
 
 Areas that support business units but don't yet support modernized business units (that is, allowing users to modify the business unit of a record) include:
-- Consent center
-- Settings > Customer engagement > Compliance profiles
-- Settings > Customer engagement > SMS providers
-- Settings > Customer engagement > Custom channels
-- Settings > Customer engagement > Push notifications
 - Settings > Customer engagement > SMS keywords
 
 Areas that don't yet support business units at all (that is, all records are created at the organization level) include:
-- Domains 
 - Audience configuration
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
