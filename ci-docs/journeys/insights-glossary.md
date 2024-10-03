@@ -1,7 +1,7 @@
 ---
 title: Glossary of common insights terms
 description: Definitions of terms commonly used to describe marketing results, insights, and KPIs in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/18/2023
+ms.date: 10/03/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -42,17 +42,15 @@ The email click-to-open rate indicates how often a message that was opened also 
 ``EmailCTOR = (UniqueMessageClicks/UniqueMessageOpens) * 100%``
 
 ### Email delivered
-A marketing email message is considered to have been delivered if it was sent (not blocked) by Customer Insights - Journeys and no bounce was reported. For senders, a delivered status is often understood to mean that the email has reached the recipient's inbox. However, this status only indicates that the email has been accepted by the recipient's server. Once accepted, the recipient's spam solution decides whether to place the email in the inbox, mark it as suspicious and send it to the junk/spam folder, or even to silently delete or 'drop' the email, making it invisible to the final recipient. 
+A marketing email message is considered to have been delivered if it was sent (not blocked) by Customer Insights - Journeys and no bounce was reported. For senders, a delivered status is often understood to mean that the email reached the recipient's inbox. However, this status only indicates that the recipient's server accepted the email. Once accepted, the recipient's spam solution decides whether to place the email in the inbox, mark it as suspicious and send it to the junk or spam folder, or even to silently delete or "drop" the email, making it invisible to the final recipient. 
 
-In cases where emails are sent to internal users, the most common scenario is that the spam filter solution will add the email to an internal quarantine, which requires manual review by their admin. Until this manual review is completed, the email will not be forwarded to the final recipient's inbox. 
+In cases where emails are sent to internal users, the most common scenario is that the spam filter solution adds the email to an internal quarantine, which requires manual review by the admin. Until this manual review is completed, the email isn't forwarded to the final recipient's inbox. 
 
 Messages reported as delivered might still end up unopened or caught in a spam filter along the way.<br/>
 ``Delivered = SegmentContacts –  DuplicateContacts – BlockedContacts – StoppedContacts –  HardBounces – SoftBounces – BlockBounces``
 
-
-
 ### Email feedback loop
-A feedback loop occurs when an email gets delivered and then a recipient's email client  returns a feedback message to Customer Insights - Journeys. This typically means that the recipient used their email client to mark the message as spam. If you continue to send messages to an address that has returned this feedback, you risk lowering your server's send reputation, which will reduce your delivery rate. When feedback is received, Customer Insights - Journeys will automatically stop sending new messages to that address, but your email results will still show each attempt as a feedback loop. In Customer Insights – Journeys analytics, you can see the feedback loops under the Marked as spam interaction, which shows you recipients who have marked your email as a spam. To learn more, read [Feedback loop](feedback-loop.md).
+A feedback loop occurs when an email gets delivered, and then a recipient's email client returns a feedback message to Customer Insights - Journeys. This typically means the recipient used their email client to mark the message as spam. If you continue sending messages to an address that has returned this feedback, you risk lowering your server's sending reputation, which reduces your delivery rate. When feedback is received, Customer Insights - Journeys automatically stops sending new messages to that address, but your email results still show each attempt as a feedback loop. In Customer Insights – Journeys analytics, you can see the feedback loops under the **Marked as spam** interaction, which shows you recipients who marked your email as spam. To learn more, see [Feedback loop](feedback-loop.md)
 
 ### Email forwarded
 An email is registered as forwarded each time an original recipient uses a Customer Insights - Journeys forward-to-a-friend marketing page to forward it. If a contact instead forwards a message using their email client, then no forward will be record in Customer Insights - Journeys, and the forwarded message will still include links and a web beacon that identify the original recipient, so all subsequent opens and clicks will continue to be matched to the original recipient in Customer Insights - Journeys. If the original recipient instead forwards using a forward-to-a-friend form, then new links and a new web beacon will be generated for the new recipients and all opens and clicks will be correctly attributed to the new recipients. We therefore recommend that you include forward-to-a-friend links in all of your marketing messages and encourage recipients to use them instead of forwarding with their email clients. For more information about web beacons and how email clicks and opens are counted, see [Email clicked](insights-glossary.md#email-clicked) and [Email opened](insights-glossary.md#email-opened) in this glossary.
