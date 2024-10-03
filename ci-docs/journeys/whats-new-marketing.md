@@ -33,17 +33,6 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 > - **Text messages**: URLs sent in SMS messages will expire six months after the message is sent and will no longer work.
 > - **Unsubscribe links**: Unsubscribe links will expire six months after the link is created and will no longer work.
 
-### General availability
-
-<!--- 
-
-- **Create journeys by using Copilot to describe them**
-    - With Dynamics 365 Customer Insights - Journeys, anybody can create journeys in minutes, even if they've never done it before. Simply describe in everyday words what you want to create and rely on generative AI to build the journey for you. This empowers you to do more with less. Instead of spending time getting the mechanics of the journey right, you can now ensure that you’re delivering the most personalized experience for your customers by collaborating with your entire team and quickly driving stakeholder alignment. Using the journey creator functionality together with content ideas for email creation, you can now get your customer experience ideas to market in no time.
-    - [Release plan](/dynamics365/release-plan/2024wave2/customer-insights/dynamics365-customer-insights-journeys/create-journeys-describing-them-using-copilot)
-    - [Docs](.md)  
-  
--->
-
 ### Public preview
 
 - **Understand customer inflows and exits at every journey step**
@@ -72,6 +61,8 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 - **Easily engage multiple audiences in a single journey with multiple segments**
     - If you already have created specific segments for different purposes and need to reach some or all of them, you can now easily do so by specifying multiple segments for a journey. There's no need to create another segment from scratch, combine existing segments into a composite one, or make multiple copies of the same journeys. Specifying multiple segments is not only straightforward and efficient but also enables marketers without segment creation roles to engage multiple audiences without waiting for a new segment to be created. Additionally, it reduces the number of segments that need maintenance or cleanup later and does not add to the overall segment limit. (Note: All segments should be of the same entity, either leads or contacts or profiles.). (Note: You can already specify multiple segments as exit segments or exclusion segments, this enhancement extends the ability to specify multiple segments to start a journey. Outbound segments cannot be used when specifying multiple segments.).
     - [Release plan](/dynamics365/customer-insights/journeys/real-time-marketing-segment-based-journey#set-the-journey-start)
+
+    :::image type="content" source="media/select-segment-journey.png" alt-text="Engage multiple audiences in a single journey with multiple segments." lightbox="media/select-segment-journey.png":::
 
 ### New blogs and scenario docs
 
