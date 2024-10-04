@@ -46,25 +46,25 @@ Just like with contact insights, you can access a complete overview of your sele
 
 ## Journey operational analytics
 
-Journey operational analytics allows you to monitor and understand journey execution. Operational analytics is different than reporting. With operational analytics, we prioritize speed which can sometimes lead to data getting processed out of sequence, resulting in numbers that may not add up. These numbers total once journey execution is complete and all of the data has been processed. 
+Journey operational analytics allows you to monitor and understand journey execution. Operational analytics is different from reporting. With operational analytics, we prioritize speed that can sometimes lead to data getting processed out of sequence, and this can result in numbers that may not add up. However, numbers total once journey execution is complete and all of the data has been processed. 
 
 Operational analytics provides these capabilities:
-•	Export lists of customers who exited a step in the journey (up to 50,000 records).
-•	Understand why the number of customers in your starting segment is different than the number of customers who reached the first step in your journey. 
-•	Understand why and where customers exited your journey before completing each step in the journey flow.
-•	Understand why customers triggered to start your journey didn’t reach the first step in your journey.
+- Export lists of customers who exited a step in the journey (up to 50,000 records).
+- Understand why the number of customers in your starting segment is different than the number of customers who reached the first step in your journey. 
+- Understand why and where customers exited your journey before completing each step in the journey flow.
+- Understand why customers triggered to start your journey didn’t reach the first step in your journey.
 
 Operational analytics has two parts:
 
-**The Sankey view**: Numbers on the journey paths indicate how many customers went through the path. The widths of the connecting lines are in relative proportions and helps you understand the user flow through the journey, highlighting which branches are working well. For example, see the image below: 
+- **The Sankey view**: Numbers on the journey paths indicate how many customers went through the path. The widths of the connecting lines are in relative proportions and helps you understand the user flow through the journey, highlighting which branches are working well. For example, see the image below: 
  
-**Step analytics**: When you select any step in the journey, the right pane shows much information. There are 3 areas/groups:
+- **Step analytics**: When you select any step in the journey, the right pane shows much information. There are three areas/groups:
 
- - **Inflow and outflow information**: For every step, the top shows the number of customers who entered the step (Inflow), the number currently being processed (Processing), the number who have moved to the next step (Processed), and the number who have exited the journey (Exit). The percentage is calculated from the inflow volume. When the journey is running and counts are small, we prioritize showing these numbers as soon as possible (within minutes) and this can lead to inconsistencies (for example, a processed data point may be counted and shown before its corresponding inflow data point is shown). This will self-correct once journey execution is complete.
+    - **Inflow and outflow information**: For every step, the top shows the number of customers who entered the step (Inflow), the number currently being processed (Processing), the number who have moved to the next step (Processed), and the number who have exited the journey (Exit). The percentage is calculated from the inflow volume. When the journey is running and counts are small, we prioritize showing these numbers as soon as possible (within minutes) and this can lead to inconsistencies (for example, a processed data point may be counted and shown before its corresponding inflow data point is shown). This will self-correct once journey execution is complete.
 
-- **Flow details**: The flow details section shows additional details such as rate limits (if applied), unique people who entered the journey (different than Inflow which counts each entry rather than unique person), and exit reasons. You can click on the export button to get a detailed view of the individual customers and export this data to Excel (with a limit of 50,000).
+    - **Flow details**: The flow details section shows additional details such as rate limits (if applied), unique people who entered the journey (different than Inflow which counts each entry rather than unique person), and exit reasons. You can click on the export button to get a detailed view of the individual customers and export this data to Excel (with a limit of 50,000).
 
-- **Goal analytics**: If a goal has been defined as a target set, you can view how the journey is progressing toward its goal and if it has met the goal.
+    - **Goal analytics**: If a goal has been defined as a target set, you can view how the journey is progressing toward its goal and if it has met the goal.
 
 ## Email insights
 
