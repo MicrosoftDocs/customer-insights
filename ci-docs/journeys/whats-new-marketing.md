@@ -1,7 +1,7 @@
 ---
 title: New and upcoming features
 description: Information about new features, improvements, and bug fixes in Dynamics 365 Customer Insights - Journeys releases.
-ms.date: 09/10/2024
+ms.date: 10/07/2024
 ms.topic: article
 author: colinbirkett
 ms.author: colinbirkett
@@ -39,6 +39,8 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
     - It’s critical to understand exactly what happened to each customer who entered and exited your real-time journeys. With improved journey analytics, you’ll gain confidence in the processing of every step in your journey through improved metrics and an increased ability to export data. For example, if your journey uses exit or exclusion segments, you'll be able to see and understand why fewer customers started your journey than were in the entry segment. You'll also be able to see the list of customers who entered and exited each step in the journey and export lists of up to 50,000 people for further analysis. 
     - [Release plan](/dynamics365/release-plan/2024wave2/customer-insights/dynamics365-customer-insights-journeys/confidently-understand-customer-inflows-exits-at-every-step-journey)
     - [Docs](real-time-marketing-analytics.md#journey-operational-analytics)
+
+       :::image type="content" source="media/operational-analytics-1.png" alt-text="An overview of customer inflow, processed, and exit analytics." lightbox="media/operational-analytics-1.png":::
 
 - **Get insights on email engagement with heatmap analytics**
     - Understanding the effectiveness of email campaigns can often be complex, particularly when information and links are abundant. Gaining clarity on which areas or links captivate your audience and drive them to act is crucial for refining the user experience and boosting email performance. Real-time journeys email insights now offer a clear view of your audience's preferences by illustrating their interactions within your emails. This immediate visual feedback highlights the content that resonates the most, empowering you to adjust your messaging for heightened impact and better conversion rates. 

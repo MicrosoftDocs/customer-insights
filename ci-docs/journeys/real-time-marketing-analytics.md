@@ -1,10 +1,10 @@
 ---
 title: Access and interpret analytics
 description: How to access and interpret Customer Insights - Journeys analytics in Dynamics 365 Customer Insights - Journeys.
-ms.date: 10/01/2024
+ms.date: 10/07/2024
 ms.topic: article
-author: alfergus
-ms.author: alfergus
+author: colinbirkett
+ms.author: colinbirkett
 search.audienceType: 
   - admin
   - customizer
@@ -56,13 +56,17 @@ Operational analytics provides these capabilities:
 
 Operational analytics has two parts:
 
-- **The Sankey view**: Numbers on the journey paths indicate how many customers went through the path. The widths of the connecting lines are in relative proportions and helps you understand the user flow through the journey, highlighting which branches are working well. For example, see the image below: 
+- **The Sankey view**: In the Sankey view, numbers listed on journey paths indicate how many customers went through that path. The widths of the connecting lines are in relative proportions and helps you understand the user flow through the journey, highlighting which branches are working well. An example is shown below:
+
+ :::image type="content" source="media/sankey_view.png" alt-text="Snapshot of the Sankey view within Customer Insights - Journeys." lightbox="media/sankey_view.png":::
  
 - **Step analytics**: When you select any step in the journey, the right pane shows much information. There are three areas/groups:
 
     - **Inflow and outflow information**: For every step, the top shows the number of customers who entered the step (Inflow), the number currently being processed (Processing), the number who have moved to the next step (Processed), and the number who have exited the journey (Exit). The percentage is calculated from the inflow volume. When the journey is running and counts are small, we prioritize showing these numbers as soon as possible (within minutes) and this can lead to inconsistencies (for example, a processed data point may be counted and shown before its corresponding inflow data point is shown). This will self-correct once journey execution is complete.
 
     - **Flow details**: The flow details section shows additional details such as rate limits (if applied), unique people who entered the journey (different than Inflow which counts each entry rather than unique person), and exit reasons. You can click on the export button to get a detailed view of the individual customers and export this data to Excel (with a limit of 50,000).
+
+     :::image type="content" source="media/operational-analytics-2.png" alt-text="An overview of customer inflow, processed, and exit analytics with email performance metrics." lightbox="media/operational-analytics-2.png":::
 
     - **Goal analytics**: If a goal has been defined as a target set, you can view how the journey is progressing toward its goal and if it has met the goal.
 
