@@ -58,7 +58,7 @@ Operational analytics has two parts:
 
 - **The Sankey view**: In the Sankey view, numbers listed on journey paths indicate how many customers went through that path. The widths of the connecting lines are in relative proportions and helps you understand the user flow through the journey, highlighting which branches are working well. An example is shown below:
 
- :::image type="content" source="media/sankey_view.png" alt-text="Snapshot of the Sankey view within Customer Insights - Journeys." lightbox="media/sankey_view.png":::
+    :::image type="content" source="media/sankey_view.png" alt-text="Snapshot of the Sankey view within Customer Insights - Journeys." lightbox="media/sankey_view.png":::
  
 - **Step analytics**: When you select any step in the journey, the right pane shows much information. There are three areas/groups:
 
@@ -66,7 +66,7 @@ Operational analytics has two parts:
 
     - **Flow details**: The flow details section shows additional details such as rate limits (if applied), unique people who entered the journey (different than Inflow which counts each entry rather than unique person), and exit reasons. You can click on the export button to get a detailed view of the individual customers and export this data to Excel (with a limit of 50,000).
 
-     :::image type="content" source="media/operational-analytics-2.png" alt-text="An overview of customer inflow, processed, and exit analytics with email performance metrics." lightbox="media/operational-analytics-2.png":::
+        :::image type="content" source="media/operational-analytics-2.png" alt-text="An overview of customer inflow, processed, and exit analytics with email performance metrics." lightbox="media/operational-analytics-2.png":::
 
     - **Goal analytics**: If a goal has been defined as a target set, you can view how the journey is progressing toward its goal and if it has met the goal.
 
