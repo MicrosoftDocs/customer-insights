@@ -45,7 +45,7 @@ User agents are labeled as:
 
 > [!NOTE]
 > - Data related to user agents may be partial or missing depending on when your journey was running, especially if it was active before August 2024.
-> - If you're building custom reports, you can learn more about the list of Globally Unique Identifiers (GUIDs) as they appear in RTM storage (accessible using Microsoft Fabric) to map data on email clients, device types, browsers, and operating systems: [Map GUIDs to email clients, browsers, operating systems, and device types](map-guids.md)
+> - If you're building custom reports, you can learn more about the list of Globally Unique Identifiers (GUIDs) as they appear in real-time marketing storage (accessible using Microsoft Fabric) to map data on email clients, device types, browsers, and operating systems: [Map GUIDs to email clients, browsers, operating systems, and device types](map-guids.md)
 
 ## Link insights
 
