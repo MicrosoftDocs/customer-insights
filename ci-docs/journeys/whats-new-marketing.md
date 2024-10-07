@@ -47,9 +47,9 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
     - [Release plan](/dynamics365/release-plan/2024wave2/customer-insights/dynamics365-customer-insights-journeys/get-insights-email-engagement-heatmap-analytics)
     - [Docs](email-insights.md)
 
-### Private preview
-
 <!--- 
+
+### Private preview
 
 - **Nascar**
  - Test.
