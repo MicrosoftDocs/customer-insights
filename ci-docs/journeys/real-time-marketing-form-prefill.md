@@ -1,5 +1,5 @@
 ---
-title: "Preview: Create Customer Insights - Journeys form prefill"
+title: "Preview: Prefill values for forms and event registration"
 description: Prefill values for forms in Dynamics 365 Customer Insights - Journeys.
 ms.date: 09/03/2024
 ms.topic: article
@@ -11,7 +11,7 @@ search.audienceType:
   - enduser
 ---
 
-# PREVIEW: Form prefill in Customer Insights - Journeys
+# Preview: Prefill values for forms and event registration
 
 > [!IMPORTANT]
 > A preview feature is a feature that is not complete but is made available before it’s officially in a release so customers can get early access and provide feedback. Preview features aren’t meant for production use and may have limited or restricted functionality.
