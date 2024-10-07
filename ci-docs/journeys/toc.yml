@@ -260,7 +260,7 @@
       items:
       - name: Edit a live journey
         href: real-time-marketing-edit-journey.md
-      - name: Edit email components in a live journey
+      - name: "Preview: Edit email components in a live journey"
         href: edit-email-in-live-journey.md
       - name: Enhanced journey reminders
         href: real-time-marketing-enhanced-journey-reminders.md
@@ -340,7 +340,7 @@
       href: real-time-marketing-manage-forms.md
     - name: Troubleshoot forms
       href: real-time-marketing-troubleshooting-forms.md
-    - name: Prefill values for forms and event registration
+    - name: "Preview: Prefill values for forms and event registration"
       href: real-time-marketing-form-prefill.md
   - name: Lead generation and management
     items:
