@@ -14,7 +14,7 @@ search.audienceType:
 # Add (customized) contact or lead insights to custom forms
 
 > [!NOTE]
-> If you’re not familiar with editing forms using the form designer, follow the instructions here: [Create, edit, or configure forms using the form designer](create-and-edit-forms.md)
+> If you’re not familiar with editing forms using the form designer, follow the instructions here: [Create, edit, or configure forms using the form designer](/power-apps/maker/model-driven-apps/create-and-edit-forms)
 
 To add the **Insights** tab to custom forms:
 
@@ -51,7 +51,7 @@ To create a JSON file with layout definition:
     - **compoundWidgets**: The definition of content for each separate card on the layout. Consult the layout JSON description section for more detailed information.
 1. After making changes, save the file on your local drive with a ".js" extension.
 1. In the admin portal (**Settings** ![The Settings menu icon.](media/settings-icon.png "The Settings menu icon") > **Advanced settings**), go to **Solutions** and select the solution that the web resource should belong to.
-    :::image type="content" source="media/add-insights-admin-portal.png" alt-text="Screenshot showing the Static value field.":::
+    :::image type="content" source="media/add-insights-admin-portal.png" alt-text="Screenshot showing the admin portal.":::
 1. Upload the file. In the custom control configuration, make sure to use the value of the “Name” field (including the solution prefix).
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
