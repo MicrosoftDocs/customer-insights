@@ -594,6 +594,8 @@
       href: customize-open-powerapps.md
     - name: Customize the form editor
       href: real-time-marketing-customize-forms.md
+    - name: Add (customized) contact or lead insights to custom forms
+      href: add-insights-to-custom-forms.md
     - name: Create and customize marketing calendars
       href: customize-marketing-calendars.md
     - name: Create and customize template labels
