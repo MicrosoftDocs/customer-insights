@@ -260,7 +260,7 @@
       items:
       - name: Edit a live journey
         href: real-time-marketing-edit-journey.md
-      - name: Edit email components in a live journey
+      - name: "Preview: Edit email components in a live journey"
         href: edit-email-in-live-journey.md
       - name: Enhanced journey reminders
         href: real-time-marketing-enhanced-journey-reminders.md
