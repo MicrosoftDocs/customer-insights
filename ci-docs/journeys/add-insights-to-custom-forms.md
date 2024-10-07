@@ -21,11 +21,11 @@ To add the **Insights** tab to custom forms:
 1. Open the form editor where you want to have the control placed.
 1. Add a new tab to that form.
 1. Make sure to check the "Expand first component to full tab" checkbox.
-    :::image type="content" source="media/add-insights-expand-tab.png" alt-text="Screenshot showing "Expand first component to full tab" checkbox.":::
+    :::image type="content" source="media/add-insights-expand-tab.png" alt-text="Screenshot showing Expand first component to full tab checkbox.":::
 1. Select the **Components** section on the left side then select **Get more components**.
-    :::image type="content" source="media/add-insights-get-more-components.png" alt-text="Screenshot showing "Get more components" link.":::
+    :::image type="content" source="media/add-insights-get-more-components.png" alt-text="Screenshot showing Get more components link.":::
 1. In the side panel that opens, search for "InsightsControl."
-    :::image type="content" source="media/add-insights-insights-control.png" alt-text="Screenshot showing "InsightsControl" component.":::
+    :::image type="content" source="media/add-insights-insights-control.png" alt-text="Screenshot showing InsightsControl component.":::
 1. Select the “InsightsControl” component then select **Add**.
 1. The control now appears under the **More components** section. You can now add the control to the form.
 1. Fill out the **Custom configuration** property. This is the web resource name (including extension) that's loaded to display the widgets. The “CC_filter” property shouldn't be used. Here are the default insights configurations:
