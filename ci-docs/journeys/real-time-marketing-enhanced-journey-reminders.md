@@ -1,7 +1,7 @@
 ---
 title: Enhanced journey reminders
 description: Learn how to boost your productivity with enhanced journey reminders in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/22/2023
+ms.date: 10/07/2024
 ms.topic: get-started
 author: alfergus
 ms.author: alfergus
@@ -46,7 +46,7 @@ The best way to show how journey reminders work is to walk through a real-life s
 
 
 > [!IMPORTANT]
-> **You must have atleast one Wait tile within the series otherwise series will exit immediately (even if you have setup a condition and selected wait until a specific date and time).
+> You must have at least one **Wait** tile within the series, otherwise the series will exit immediately (even if you set up a condition and configured it to wait until a specific date and time).
 
 ## View analytics of the Series tile and your reminder journey
 
