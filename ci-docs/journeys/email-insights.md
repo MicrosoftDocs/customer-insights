@@ -44,8 +44,8 @@ User agents are labeled as:
 :::image type="content" source="media/email-insights-device.png" alt-text="Screenshot of email insights device type dashboard." lightbox="media/email-insights-device.png":::
 
 > [!NOTE]
-> Data related to user agents may be partial or missing depending on when your journey was running, especially if it was active before August 2024.
-> If you're building custom reports, you can learn more about the list of Globally Unique Identifiers (GUIDs) as they appear in Microsoft Fabric to map data on email clients, device types, browsers, and operating systems: [Map GUIDs to email clients, browsers, operating systems, and device types](map-guids.md)
+> - Data related to user agents may be partial or missing depending on when your journey was running, especially if it was active before August 2024.
+> - If you're building custom reports, you can learn more about the list of Globally Unique Identifiers (GUIDs) as they appear in RTM storage (accessible using Microsoft Fabric) to map data on email clients, device types, browsers, and operating systems: [Map GUIDs to email clients, browsers, operating systems, and device types](map-guids.md)
 
 ## Link insights
 
