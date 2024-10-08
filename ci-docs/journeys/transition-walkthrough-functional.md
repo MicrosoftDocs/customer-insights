@@ -55,6 +55,14 @@ Some Dynamics 365 Marketing customers made customizations in outbound marketing 
 
 In most scenarios, it's not possible to transfer outbound marketing customizations. Dynamics 365 Marketing customers are advised to review their requirements and consider that previous customizations may no longer be needed due to the enhancements provided by real-time journeys. Where customizations are still required, it's likely that they'll need to be re-implemented (for example, custom fields re-added).
 
+## Hide outbound marketing
+
+When you are finished migrating to real-time journeys from outbound, you can clean up the user experience by hiding outbound marketing! In the area switche, choose **Settings** and then **Versions** where you will see a button to **Hide outbound marketing**. Clicking this button simply hides it from the user experience so your team can no longer navigate to the module and spin up new content or journeys there. 
+
+## What happens when outbound marketing is removed by Microsoft?
+
+When outbound marketing is formally retired, Microsoft will be cleaning up the services in the background.[Read this article](transition-faqs.md#what-will-happen-to-outbound-tables-and-data-when-outbound-marketing-is-removed)  to understand the details of exactly what will be cleaned up and what happens to your data. 
+
 > [!TIP]
 > If you have questions or comments, visit the [Outbound to real-time transition community forum](https://community.dynamics.com/forums/thread/?partialUrl=Outbound-to-Real-Time-Transition)
 
