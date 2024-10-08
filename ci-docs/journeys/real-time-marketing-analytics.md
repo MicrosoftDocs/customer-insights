@@ -1,10 +1,10 @@
 ---
 title: Access and interpret analytics
 description: How to access and interpret Customer Insights - Journeys analytics in Dynamics 365 Customer Insights - Journeys.
-ms.date: 10/01/2024
+ms.date: 10/07/2024
 ms.topic: article
-author: alfergus
-ms.author: alfergus
+author: colinbirkett
+ms.author: colinbirkett
 search.audienceType: 
   - admin
   - customizer
@@ -46,37 +46,29 @@ Just like with contact insights, you can access a complete overview of your sele
 
 ## Journey operational analytics
 
-Evaluate journey performance in near real-time using built-in operational analytics. The Sankey view in the designer helps you understand the user flow through the journey, highlighting which branches are working well.
+Journey operational analytics allows you to monitor and understand journey execution. Operational analytics is different from reporting. With operational analytics, we prioritize speed that can sometimes lead to data getting processed out of sequence, and this can result in numbers that may not add up. However, numbers total once journey execution is complete and all of the data has been processed. 
 
-Select any journey component to view near real-time operational analytics in the right pane, including:
+Operational analytics provides these capabilities:
+- Export lists of customers who exited a step in the journey (up to 50,000 records).
+- Understand why the number of customers in your starting segment is different than the number of customers who reached the first step in your journey. 
+- Understand why and where customers exited your journey before completing each step in the journey flow.
+- Understand why customers triggered to start your journey didn’t reach the first step in your journey.
 
-- **Goal analytics**: If a goal has been defined as a target set, you can view how the journey is progressing toward its goal and if it has met the goal.
+Operational analytics has two parts:
 
-    :::image type="content" source="media/real-time-marketing-goal-analytics.png" alt-text="Goal analytics screenshot." lightbox="media/real-time-marketing-goal-analytics.png":::
+- **The Sankey view**: In the Sankey view, numbers listed on journey paths indicate how many customers went through that path. The widths of the connecting lines are in relative proportions and helps you understand the user flow through the journey, highlighting which branches are working well. An example is shown below:
 
-- **Channel analytics**: For any message in the journey (email, text, or push notification), view the delivery funnel and additional metrics to diagnose the content performance.
+    :::image type="content" source="media/sankey_view.png" alt-text="Snapshot of the Sankey view within Customer Insights - Journeys." lightbox="media/sankey_view.png":::
+ 
+- **Step analytics**: When you select any step in the journey, the right pane shows much information. There are three areas/groups:
 
-    :::image type="content" source="media/analytics-channel-side-pane.png" alt-text="Email channel analytics screenshot." lightbox="media/analytics-channel-side-pane.png":::
+    - **Inflow and outflow information**: For every step, the top shows the number of customers who entered the step (Inflow), the number currently being processed (Processing), the number who have moved to the next step (Processed), and the number who have exited the journey (Exit). The percentage is calculated from the inflow volume. When the journey is running and counts are small, we prioritize showing these numbers as soon as possible (within minutes) and this can lead to inconsistencies (for example, a processed data point may be counted and shown before its corresponding inflow data point is shown). This will self-correct once journey execution is complete.
 
-    In the Overview section, you can monitor key performance indicators per channel message such as:
-    - **Delivery rate**: The percentage of email, text, or custom channel messages delivered divided by the number of email, text, or custom channel messages sent.
-    - **Open rate**: The percentage of unique email or push notification opens divided by the number of emails or push notifications delivered.
-    - **Click rate**: The percentage of unique email, text, or push notification/custom channel clicks divided by the number of email, text, or push notification/custom channel links delivered.
-    - **Response rate**: The percentage of unique text message responses divided by the number of text messages sent.
-  
-    To view **delivery and interaction statistics**, select the **View details** link in the **Delivery funnel** or **Delivery issues** section on the channel analytics pane. Delivery and interaction details allow you to analyze delivery, engagement, and performance data for your email, text, push notification, or custom channel messages. Timestamps are reported according to the organization's time zone. In this area, you can:
+    - **Flow details**: The flow details section shows additional details such as rate limits (if applied), unique people who entered the journey (different than Inflow which counts each entry rather than unique person), and exit reasons. You can click on the export button to get a detailed view of the individual customers and export this data to Excel (with a limit of 50,000).
 
-    - View deliverability details on messages sent, delivered, blocked, or bounced along with the respective reasons, detailed data on customers who opened or clicked a message, as well as unsubscription interaction data. A message’s unique opens and clicks are calculated based on the customer's journey run. This means that if the same customer enters the same journey multiple times and opens or clicks the same message each time, the system records multiple unique opens or clicks. For example, if a customer clicks the same message in two different journey executions, two unique clicks are recorded. 
-    - For emails, delivery and interactions statistics include data on user agents your customers are using to engage with your emails. Under total opens you can see data about email clients and under total clicks you can find data on types of devices, operating systems, and browsers.
-    - Use the search option in the top right to search for interactions by email address.
-    - Access links to audience profiles that interacted with your messages. 
-    - Export up to 50,000 records by selecting the export icon under the search bar.
+        :::image type="content" source="media/operational-analytics-2.png" alt-text="An overview of customer inflow, processed, and exit analytics with email performance metrics." lightbox="media/operational-analytics-2.png":::
 
-    :::image type="content" source="media/analytics-delivery-and-interaction-details.png" alt-text="Screenshot of delivery and interaction details." lightbox="media/analytics-delivery-and-interaction-details.png":::
-  
-- **AI optimization**: Near real-time data to help you evaluate how applying AI optimization has helped your engagement rate.
-
-    :::image type="content" source="media/real-time-marketing-ai-optimization.png" alt-text="AI optimization screenshot." lightbox="media/real-time-marketing-ai-optimization.png":::
+    - **Goal analytics**: If a goal has been defined as a target set, you can view how the journey is progressing toward its goal and if it has met the goal.
 
 ## Email insights
 
