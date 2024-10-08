@@ -11,7 +11,7 @@ search.audienceType:
   - enduser
 ---
 
-# Journey flow and tile reference
+# Journey flow
 
 This article describes the various journey capabilities available in Customer Insights - Journeys. For complete examples of creating customer journeys, see [Create a trigger-based journey](real-time-marketing-trigger-based-journey.md) and [Create a segment-based journey](real-time-marketing-segment-based-journey.md).
 
