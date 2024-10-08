@@ -35,7 +35,7 @@ The following table compares the analytics features in outbound marketing and Cu
 | Evaluate journey performance in near real time using operational analytics | Journey analytics | Yes | Yes |
 | Evaluate journey performance in near real time using operational analytics  | Email insights | Yes | Yes |
 | Evaluate journey performance in near real time using operational analytics  | Email variation insights | No  | Yes |
-| Evaluate journey performance in near real time using operational analytics  | Email clicks heat map | Yes | No  |
+| Evaluate journey performance in near real time using operational analytics  | Email clicks heat map | Yes | Yes  |
 | Evaluate journey performance in near real time using operational analytics  | Text message insights | No  | Yes |
 | Evaluate journey performance in near real time using operational analytics  | Push notification insights | No  | Yes |
 | Evaluate journey performance in near real time using operational analytics  | Custom channel insights | No  | Yes |
