@@ -57,11 +57,11 @@ In most scenarios, it's not possible to transfer outbound marketing customizatio
 
 ## Hide outbound marketing
 
-When you are finished migrating to real-time journeys from outbound, you can clean up the user experience by hiding outbound marketing! In the area switche, choose **Settings** and then **Versions** where you will see a button to **Hide outbound marketing**. Clicking this button simply hides it from the user experience so your team can no longer navigate to the module and spin up new content or journeys there. 
+When you're finished migrating to real-time journeys from outbound marketing, you can clean up the user experience by hiding outbound marketing. In the area switcher, choose **Settings** and then **Versions** where you'll see a button to **Hide outbound marketing**. Selecting this button hides outbound marketing from the user experience so your team can no longer navigate to the module and spin up new content or journeys there.
 
 ## What happens when outbound marketing is removed by Microsoft?
 
-When outbound marketing is formally retired, Microsoft will be cleaning up the services in the background.[Read this article](transition-faqs.md#what-will-happen-to-outbound-tables-and-data-when-outbound-marketing-is-removed)  to understand the details of exactly what will be cleaned up and what happens to your data. 
+When outbound marketing is formally retired, Microsoft will clean up the services in the background. To understand the details of exactly what will be cleaned up and what happens to your data, see [Real-time journeys transition FAQs](transition-faqs.md#what-will-happen-to-outbound-tables-and-data-when-outbound-marketing-is-removed)
 
 > [!TIP]
 > If you have questions or comments, visit the [Outbound to real-time transition community forum](https://community.dynamics.com/forums/thread/?partialUrl=Outbound-to-Real-Time-Transition)
