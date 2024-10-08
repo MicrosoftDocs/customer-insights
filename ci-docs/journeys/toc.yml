@@ -214,7 +214,6 @@
          href: add-action.md
       -  name: End a journey
          href: journey-end.md
-      href: real-time-marketing-use-copilot-create-journey.md
     - name: Trigger-based journeys
       items:
       - name: Create a trigger-based journey
