@@ -13,7 +13,7 @@ search.audienceType:
 
 # Automated segment management
 
-To optimize resources, Customer Insights - Journeys automatically manages the refresh frequency of your unused segments. "Unused segments" are segments that were created more than 45 days ago and haven't been used in journeys, emails, or other segments in last 15 days. The feature aims to improve the customer experience by reducing the impact of unused segments on the performance of active campaigns, allowing improved processing speed for segments in active use.
+To optimize resources, Customer Insights - Journeys automatically manages the refresh frequency of your unused segments. "Unused segments" are segments that were created more than 30 days ago and haven't been used in journeys, emails, or other segments in last 15 days. The feature aims to improve the customer experience by reducing the impact of unused segments on the performance of active campaigns, allowing improved processing speed for segments in active use.
 
 ## How automated segment management works
 
