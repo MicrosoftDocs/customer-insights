@@ -204,14 +204,15 @@
       href: journeys-overview.md
     - name: "Preview: Copilot - Create journeys using AI assistance"
     - name: Journey flow and tile reference
-        href: journey-flow-tile-ref.md
-        items:
-        -  name: Start a journey
-           href: journey-start.md
-        -  name: Add an action in a Journey
-           href: add-action.md
-        -  name: End a journey
-           href: journey-end.md
+      items:
+      -  name: Journey flow
+         href: journey-flow-tile-ref.md
+      -  name: Start a journey
+         href: journey-start.md
+      -  name: Add an action in a Journey
+         href: add-action.md
+      -  name: End a journey
+         href: journey-end.md
       href: real-time-marketing-use-copilot-create-journey.md
     - name: Trigger-based journeys
       items:
