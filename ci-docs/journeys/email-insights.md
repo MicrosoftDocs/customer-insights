@@ -52,7 +52,7 @@ User agents are labeled as:
 Unlock valuable insights into your email's URL engagement and make data-driven decisions to enhance the effectiveness of your email marketing campaigns with link insights. Using link insights, you can understand the performance of each link within your email campaigns and identify the top-performing links based on total clicks, unique clicks, and click rate. Get more clarity by grouping your links by URL or link alias. Learn more: [Edit email components in a live journey](edit-email-in-live-journey.md)
 
 > [!NOTE]
-> Link insights displays data for emails (with links) that have been created after September 2024.
+> Link insights displays data for emails (with links) and journeys that have been created after September 2024.
 
 ## Click map
 
