@@ -36,7 +36,7 @@ The following insights categories are provided:
 - **Form insights**: See which marketing forms the contact has visited and submitted. View the content of each submission.
 - **Text message insights**: Complete details of text message interactions for the selected contact, including a list of all messages sent to them, plus lists of all clicks, replies, and more.
 - **Push notification insights**: Complete details of push notification interactions for the selected contact, including a list of all messages sent to them and more.
-- **Custom channels insights**: Complete details of custom channel interactions for the selected contact, including messages sent, clicked and more.
+- **Custom channels insights**: Complete details of custom channel interactions for the selected contact, including messages sent, clicked, and more.
 
     :::image type="content" source="media/real-time-marketing-custom-channel-contact-insights.png" alt-text="Screenshot of custom channel contact insights." lightbox="media/real-time-marketing-custom-channel-contact-insights.png":::
 
