@@ -1,7 +1,7 @@
 ---
 title: Exclude bot interactions
 description: Learn how to exclude bot and nonhuman interactions on your emails in Dynamics 365 Customer Insights - Journeys.
-ms.date: 07/30/2024
+ms.date: 10/10/2024
 ms.topic: article
 author: srivas15
 ms.author: alfergus
@@ -21,7 +21,7 @@ To enable bot protection, go to **Settings** > **Feature switches** and enable t
 
 > [!IMPORTANT]
 > - Organizations created after July 22, 2024 have advanced bot protection enabled by default.
-> - Bot protection doesn't apply to email opens. [Learn more](https://www.microsoft.com/en-us/dynamics-365/blog/?p=192346&preview=1&_ppp=3fd22f5f35) about the challenges of relying solely on email opens to measure your campaign performance.
+> - Bot protection doesn't apply to email opens. Learn more about the challenges of relying solely on email opens to measure campaign performance: [Rethinking email marketing metrics: The evolving landscape of ‘Open Rate’](https://www.microsoft.com/dynamics-365/blog/?p=192346&preview=1&_ppp=3fd22f5f35).
 
 ## Impact of bot protection
 
