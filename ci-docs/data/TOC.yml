@@ -53,8 +53,6 @@
       href: convert-datalake-to-deltalake.md
     - name: Manage existing data sources
       href: data-sources-manage.md
-    - name: Migrate Private Links to managed identities for Azure resources
-      href: migrate-private-link-managed-id.md
     - name: Enrichment for data sources
       href: data-sources-enrichment.md
     - name: Incremental refresh for data sources

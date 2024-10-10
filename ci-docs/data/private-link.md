@@ -1,7 +1,7 @@
 ---
 title: Set up managed identities for storage accounts behind firewalls
 description: Learn how to set up managed identities for Azure resources to connect your Data Lake Storage behind firewalls.
-ms.date: 10/02/2024
+ms.date: 10/10/2024
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -19,15 +19,8 @@ Configure Customer Insights - Data to connect with Azure storage containers prot
 - Data input - Create data connections to ingest source data from your Azure storage containers.
 - Exports - Configure exports to write specific tables to Azure storage containers.
 
-<!---
-In Customers Insights you can create private links in the following ways:
-
-- When creating a new Customer Insights - Data environment for which you would like to [Use your own Azure Data Lake Storage account](own-data-lake-storage.md) that is protected by your virtual network.
-- When creating a [data source](connect-common-data-model.md) for which the data is stored in your protected account.
-- Directly from the **Settings** > **Permissions** > **Private Links** page in Customer Insights - Data.
-
-Regardless of the method you use to create the connection, it shows under the **Settings** > **Permissions** > **Private Links** tab in Customer Insights - Data.
---->
+> [!NOTE]
+> If you currently have Azure Private Links to grant access to Azure storage behind a firewall, review the prerequisites and then [migrate your private links to managed identities](#migrate-private-links-to-managed-identities-for-azure-resources).
 
 ## Prerequisites
 
@@ -47,19 +40,23 @@ Regardless of the method you use to create the connection, it shows under the **
 
 Perform these steps once per subscription.
 
+1. Determine if there is an existing enterprise policy for the Dataverse environment. Run the script:
+   `GetIdentityEnterprisePolicyForEnvironment`
+   - If there is an existing policy, perform the following steps with the existing policy. Don't create a new policy.
+   - If there isn't an existing enterprise policy, perform the following steps and create a new policy.  
 1. [Enable the enterprise policy](/power-apps/maker/data-platform/azure-synapse-link-msi#enable-enterprise-policy-for-the-selected-azure-subscription) for the Azure subscription.
-1. [Create the enterprise policy](/power-apps/maker/data-platform/azure-synapse-link-msi#create-enterprise-policy). One policy can be used for multiple Dataverse environments.
+1. [Create the enterprise policy, if one doesn't exist](/power-apps/maker/data-platform/azure-synapse-link-msi#create-enterprise-policy). One policy can be used for multiple Dataverse environments.
 1. For each policy, [grant reader access to the enterprise policy](/power-apps/maker/data-platform/azure-synapse-link-msi#grant-reader-access-to-the-enterprise-policy-via-azure).
-1. [Connect the enterprise policy to the Dataverse environment](/power-apps/maker/data-platform/azure-synapse-link-msi#connect-enterprise-policy-to-dataverse-environment). First, make sure there isn't an existing policy.
-1. Grant enterprise policy access to Azure storage.
-1. Allow enterprise policy access to the storage account behind the firewall.
+1. [Connect the enterprise policy to the Dataverse environment](/power-apps/maker/data-platform/azure-synapse-link-msi#connect-enterprise-policy-to-dataverse-environment).
+1. [Grant enterprise policy access to Azure storage](#grant-enterprise-policy-access-to-azure-storage).
+1. [Allow enterprise policy access to the storage account behind the firewall](#allow-enterprise-policy-access-to-the-storage-account-behind-the-firewall).
 
 ### Grant enterprise policy access to Azure storage
 
 Perform these steps for each storage account or container.
 
 1. Sign in to the [Azure portal](https://portal.azure.com/).
-1. Open the storage account connected to your Dataverse environment.
+1. Open the storage account that you want to connect.
 1. On the left navigation pane, select **Access Control (IAM)**.
 1. Select the **Role assignments** tab. Select **Add** > **Add role assignment**.
 1. Search for and select **Storage Blob Data Contributor**.
@@ -75,28 +72,18 @@ Perform these steps for each storage account or container.
 1. For the **Resource type**, select **Microsot.PowerPlatform/enterprisePolicies** and the instance name for the enterprise policy.
 1. Select **Save**.
 
-## Set up a managed identity when creating a Customer Insights - Data environment
+## Migrate Private Links to managed identities for Azure resources
 
-*Has this been updated?*
+Update existing data connections using Private Links to managed identities for Azure resources.
 
-When creating a [Customer Insights - Data environment](create-environment.md) that connects to your virtual network protected storage:
-
-1. Select **Enable Azure Private Link**.
-
-1. Select **Create Private Link** to initiate the creation process.
-
-1. [Approve the Private Link](#) in the Azure portal.
-
-1. Once all links are approved, select **Validate Private Link**. Upon successful validation, you can continue configuring your new environment.
-
-*Can they delete a managed identity?*
-
-## Delete a managed identity
-
-1. In Customer Insights - Data, go to **Settings** > **Permissions** and select the **Private Links** tab.
-
-1. Select the storage account name for which you would like to delete the managed identity.
-
-1. Select **Delete**.
+1. Sign in to Customer Insights - Data.
+   A message says that you have one or more storage accounts that must be upgraded.
+1. From the Action required message, select **See details**.
+   :::image type="content" source="media/upgrade-to-managed-id.jpg" alt-text="Dialog box to upgrade to managed identities for Azure.":::
+1. Expand **Step 1 Enable Azure Managed Identity in Azure admin portal**.
+1. Select **Copy storage account information**. If you want to view the information, select **Expand**.
+1. Paste the information so it's easily accessible.
+1. [Enable access to managed identity](#enable-access-to-storage-through-managed-identities).
+1. Expand **Step 2 Update your connections** and select **Attempt connections updates**.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

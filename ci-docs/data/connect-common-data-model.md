@@ -163,7 +163,7 @@ You can update the *Connect to storage account using* option. For more informati
       > - Storage Blob Data Owner
       > - Storage Blob Data Contributor
 
-   - **This storage account is behind a firewall** if you want to ingest data from a storage account through an Azure Private Link. Learn more: [Managed identities for Azure resources](private-link.md)
+   - **This storage account is behind a firewall** if you want to ingest data from a storage account behind a firewall. Learn more: [Set up managed identities for storage accounts behind firewalls](private-link.md).
 
 1. Select **Next**.
 1. Change any of the following:

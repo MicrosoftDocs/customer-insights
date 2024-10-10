@@ -24,7 +24,7 @@ Export segments of unified customer profiles to SendGrid contact lists and use t
 
 ## Known limitations
 
-- Private link in combination with Bring your own storage (BYOS) is not supported.
+- Bring your own Azure storage account behind a firewall isn't supported.
 - Up to 100,000 customer profiles in total to SendGrid, which can take up to a few hours to complete. The number of customer profiles that you can export to SendGrid depends on your contract with SendGrid.
 - Segments only.
 

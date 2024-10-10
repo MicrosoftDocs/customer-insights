@@ -23,7 +23,7 @@ Export segments of unified customer profiles to Omnisend and use them for market
 
 ## Known limitations
 
-- Private link in combination with Bring your own storage (BYOS) is not supported.
+- Bring your own Azure storage account behind a firewall isn't supported.
 - Up to 1 million customer profiles per export to Omnisend, which can take up to four hours to complete. The number of customer profiles that you can export to Omnisend depends on your contract with Omnisend.
 - Segments only.
 

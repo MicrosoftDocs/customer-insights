@@ -23,7 +23,7 @@ Export segments of unified customer profiles to Mailchimp to create newsletters 
 
 ## Known limitations
 
-- Private link in combination with Bring your own storage (BYOS) is not supported.
+- Bring your own Azure storage account behind a firewall isn't supported.
 - Up to 1 million customer profiles per export to Mailchimp, which can take up to three hours. The number of customer profiles that you can export to Mailchimp depends on your contract with Mailchimp.
 - Segments only.
 

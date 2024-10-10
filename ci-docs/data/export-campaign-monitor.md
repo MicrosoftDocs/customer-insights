@@ -24,7 +24,7 @@ Export segments of unified customer profiles to Campaign Monitor and use them fo
 
 ## Known limitations
 
-- Private link in combination with Bring your own storage (BYOS) is not supported.
+- Bring your own Azure storage account behind a firewall isn't supported.
 - Up to 1 million customer profiles per export to Campaign Monitor, which can take up to 20 minutes to complete. The number of customer profiles that you can export to Campaign Monitor depends on your contract with Campaign Monitor.
 - Segments only.
 
