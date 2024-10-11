@@ -63,6 +63,9 @@ Operational analytics has two parts:
  
 - **Step analytics**: When you select any step in the journey, the right pane shows much information. There are three areas or groups:
 
+    > [!NOTE]
+    > Entry and exit details are in preview. If you don't see these details, go to **Settings** > **Feature switches** > **Journey** and enable the "Tile entry and exit analytics (preview)" feature switch.
+
     - **Inflow and outflow information**: For every step, the top shows the number of customers who entered the step (Inflow), the number currently being processed (Processing), the number who have moved to the next step (Processed), and the number who have exited the journey (Exit). The percentage is calculated from the inflow volume. When the journey is running and counts are small, we prioritize showing these numbers as soon as possible (within minutes) and this can lead to inconsistencies (for example, a processed data point may be counted and shown before its corresponding inflow data point is shown). This self-corrects once journey execution is complete.
 
     - **Flow details**: The flow details section shows other details such as rate limits (if applied), unique people who entered the journey (different than inflow, which counts each entry rather than unique person - this data is available only for channel tiles), and exit reasons. You can select the export button to get a detailed view of the individual customers and export the data to Excel (with a limit of 50,000 records).
