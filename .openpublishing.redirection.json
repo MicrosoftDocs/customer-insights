@@ -1752,6 +1752,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "ci-docs/compute-migrate-infrastructure.md",
+      "redirect_url": "/dynamics365/customer-insights/data/compute-migrate-infrastructure",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "ci-docs/data-unification-contacts.md",
       "redirect_url": "/dynamics365/customer-insights/data/b2b/data-unification-contacts",
       "redirect_document_id": false
