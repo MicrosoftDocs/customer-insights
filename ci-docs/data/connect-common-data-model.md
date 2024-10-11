@@ -1,7 +1,7 @@
 ---
 title: "Connect to Common Data Model tables in Azure Data Lake Storage"
 description: "Work with data from Azure Data Lake Storage."
-ms.date: 03/11/2024
+ms.date: 10/02/2024
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -18,24 +18,18 @@ Ingest data into Dynamics 365 Customer Insights - Data using your Azure Data Lak
 ## Prerequisites
 
 - The Azure Data Lake Storage account must have [hierarchical namespace enabled](/azure/storage/blobs/data-lake-storage-namespace). The data must be stored in a hierarchical folder format that defines the root folder and has subfolders for each table. The subfolders can have full data or incremental data folders.
-
 - To authenticate with a Microsoft Entra service principal, make sure it's configured in your tenant. For more information, see [Connect to an Azure Data Lake Storage account with a Microsoft Entra service principal](connect-service-principal.md).
-
+- To connect to storage protected by firewalls, [Set up managed identities](private-link.md).
 - The Azure Data Lake Storage you want to connect and ingest data from has to be in the same Azure region as the Dynamics 365 Customer Insights environment and the subscriptions must be in the same tenant. Connections to a Common Data Model folder from a data lake in a different Azure region is not supported. To know the Azure region of the environment, go to **Settings** > **System** > **About** in Customer Insights - Data.
-
 - Data stored in online services may be stored in a different location than where data is processed or stored. By importing or connecting to data stored in online services, you agree that data can be transferred. [Learn more at the Microsoft Trust Center](https://www.microsoft.com/trust-center).
-
 - The Customer Insights - Data service principal must be in one of the following roles to access the storage account. For more information, see [Grant permissions to the service principal to access the storage account](connect-service-principal.md#grant-permissions-to-the-service-principal-to-access-the-storage-account).
   - Storage Blob Data Reader
   - Storage Blob Data Owner
   - Storage Blob Data Contributor
 
 - When connecting to your Azure storage using the *Azure subscription* option, the user that sets up the data source connection needs at least the Storage Blob Data Contributor permissions on the storage account.
-
 - When connecting to your Azure storage using the *Azure resource* option, the user that sets up the data source connection needs at least the permission for the **Microsoft.Storage/storageAccounts/read** action on the storage account. An [Azure built-in role](/azure/role-based-access-control/built-in-roles) that includes this action is the **Reader** role. To limit access to just the necessary action, [create an Azure custom role](/azure/role-based-access-control/custom-roles) that includes only this action.
-
 - For optimal performance, the size of a partition should be 1 GB or less and the number of partition files in a folder must not exceed 1000.
-
 - Data in your Data Lake Storage should follow the Common Data Model standard for storage of your data and have the Common Data Model manifest to represent the schema of the data files (*.csv or *.parquet). The manifest must provide the details of the tables such as table columns and data types, and the data file location and file type. For more information, see [The Common Data Model manifest](/common-data-model/sdk/manifest). If the manifest is not present, Admin users with Storage Blob Data Owner or Storage Blob Data Contributor access can define the schema when ingesting the data.
 
   > [!NOTE]
@@ -48,55 +42,42 @@ Ingest data into Dynamics 365 Customer Insights - Data using your Azure Data Lak
 ## Connect to Azure Data Lake Storage
 
 1. Go to **Data** > **Data sources**.
-
 1. Select **Add a data source**.
-
 1. Select **Azure Data Lake Common Data Model tables**.
-
    :::image type="content" source="media/data_sources_ADLS.svg" alt-text="Dialog box to enter connection details for Azure Data Lake with Common Data Model tables." lightbox="media/data_sources_ADLS.svg":::
 
 1. Enter a **Data source name** and an optional **Description**. The name is referenced in downstream processes and it's not possible to change it after creating the data source.
-
 1. Choose one of the following options for **Connect your storage using**. For more information, see [Connect to an Azure Data Lake Storage account with a Microsoft Entra service principal](connect-service-principal.md).
-
-   - **Azure resource**: Enter the **Resource Id**. (private-link.md).
+   - **Azure resource**: Enter the **Resource Id**.
    - **Azure subscription**: Select the **Subscription** and then the **Resource group** and **Storage account**. 
   
    > [!NOTE]
    > You need one of the following roles to the container to create the data source:
    >
-   >  - Storage Blob Data Reader is sufficient to read from a storage account and ingest the data to Customer Insights - Data.
-   >  - Storage Blob Data Contributor or Owner is required if you want to edit the manifest files directly in Customer Insights - Data.  
+   > - Storage Blob Data Reader is sufficient to read from a storage account and ingest the data to Customer Insights - Data.
+   > - Storage Blob Data Contributor or Owner is required if you want to edit the manifest files directly in Customer Insights - Data.  
    >
    > Having the role on the storage account will provide the same role on all of its containers.
 
-1. Optionally, if you want to ingest data from a storage account through an Azure Private Link, select **Enable Private Link**. For more information, see [Private Links](private-link.md).
-
-   <!---
-   1. Optionally, if you want to use managed identities for Azure resources, select **Use managed identities for Azure with your Azure Data Lake Storage**. For more information, see ???.
-   --->  
-
-1. Choose the name of the **Container** that contains the data and schema (model.json or manifest.json file) to import data from, and select **Next**.
+1. Choose the name of the **Container** that contains the data and schema (model.json or manifest.json file) to import data from.
    > [!NOTE]
    > Any model.json or manifest.json file associated with another data source in the environment won't show in the list. However, the same model.json or manifest.json file can be used for data sources in multiple environments.
 
+1. If your storage account is behind a firewall, select **This storage account is behind a firewall** to connect using [managed identities for Azure resources](private-link.md).
+1. Select **Next**.
+
 1. To create a new schema, go to [Create a new schema file](#create-a-new-schema-file).
-
 1. To use an existing schema, navigate to the folder containing the model.json or manifest.cdm.json file. You can search within a directory to find the file.
-
 1. Select the json file and select **Next**. A list of available tables displays.
-
    :::image type="content" source="media/review-tables.png" alt-text="Dialog box of a list of tables to select":::
 
 1. Select the tables you want to include.
-
    :::image type="content" source="media/ADLS_required.png" alt-text="Dialog box showing Required for Primary key":::
 
    > [!TIP]
    > To edit a table in a JSON editing interface, select the table and then **Edit schema file**. Make changes and select **Save**.
 
 1. For selected tables that require incremental ingestion, **Required** displays under **Incremental refresh**. For each of these tables, see [Configure an incremental refresh for Azure Data Lake data sources](incremental-refresh-data-sources.md).
-
 1. For selected tables where a primary key has not been defined, **Required** displays under **Primary key**. For each of these tables:
    1. Select **Required**. The **Edit table** panel displays.
    1. Choose the **Primary key**. The primary key is an attribute unique to the table. For an attribute to be a valid primary key, it shouldn't include duplicate values, missing values, or null values. String, integer, and GUID data type attributes are supported as primary keys.
@@ -104,7 +85,6 @@ Ingest data into Dynamics 365 Customer Insights - Data using your Azure Data Lak
    1. Select **Close** to save and close the panel.
 
 1. Select the number of **Columns** for each included table. The **Manage attributes** page displays.
-
    :::image type="content" source="media/dataprofiling-tables.png" alt-text="Dialog box to select data profiling.":::
 
    1. Create new columns, edit, or delete existing columns. You can change the name, the data format, or add a semantic type.
@@ -183,9 +163,7 @@ You can update the *Connect to storage account using* option. For more informati
       > - Storage Blob Data Owner
       > - Storage Blob Data Contributor
 
-   - **Use managed identities for Azure with your Azure Data Lake Storage** ???
-
-   - **Enable Private Link** if you want to ingest data from a storage account through an Azure Private Link. For more information, see [Private Links](private-link.md).
+   - **This storage account is behind a firewall** if you want to ingest data from a storage account behind a firewall. Learn more: [Set up managed identities for storage accounts behind firewalls](private-link.md).
 
 1. Select **Next**.
 1. Change any of the following:

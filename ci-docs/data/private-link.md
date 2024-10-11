@@ -1,86 +1,89 @@
 ---
-title: Set up an Azure Private Link
-description: Learn how to set up an Azure Private Link to connect your Data Lake Storage.
-ms.date: 09/01/2023
+title: Set up managed identities for storage accounts behind firewalls
+description: Learn how to set up managed identities for Azure resources to connect your Data Lake Storage behind firewalls.
+ms.date: 10/11/2024
 ms.topic: how-to
-author: AndreaAczel
-ms.author: anaczel
+author: Scott-Stabbert
+ms.author: sstabbert
 ms.reviewer: mhart
 ms.custom: bap-template
 ---
 
-# Set up an Azure Private Link
+# Set up managed identities for storage accounts behind firewalls
 
-[Azure Private Link](/azure/private-link/private-link-overview) lets Dynamics 365 Customer Insights - Data connect to your Azure Data Lake Storage account over a private endpoint in your virtual network. For data in a storage account, which isn't exposed to the public internet, Private Link enables the connection to that restricted network.
+If you have Azure storage protected by firewalls, use managed identities for Azure resources to connect to Customer Insights - Data. Managed identities for Azure provides improved connection security with a system-assigned managed identity that can't be accessed or used outside of its configured endpoints.
 
-> [!IMPORTANT]
-> Minimum role requirement to set up a Private Link connection:
->
-> - Customer Insights - Data: Administrator
-> - Azure built-in role: [Storage Account Contributor](/azure/role-based-access-control/built-in-roles#storage-account-contributor)
-> - Permissions for custom Azure role: [Microsoft.Storage/storageAccounts/read and Microsoft.Storage/storageAccounts/PrivateEndpointConnectionsApproval/action](/azure/role-based-access-control/resource-provider-operations#microsoftstorage)
+Configure Customer Insights - Data to connect to Azure storage containers protected by firewalls in the following scenarios:
 
-In Customers Insights you can create private links in the following ways:
+- Data output - Configure Customer Insights - Data at setup to write processed customer insights output data to your private Azure storage container.
+- Data input - Create data connections to ingest source data from your Azure storage containers.
+- Exports - Configure exports to write specific tables to Azure storage containers.
 
-   - When creating a new Customer Insights - Data environment for which you would like to [Use your own Azure Data Lake Storage account](own-data-lake-storage.md) that is protected by your virtual network.
-   - When creating a [data source](connect-common-data-model.md) for which the data is stored in your protected account.
-   - Directly from the **Settings** > **Permissions** > **Private Links** page in Customer Insights - Data.
+> [!NOTE]
+> If you currently use Azure Private Links, review the prerequisites and then [migrate your private links to managed identities](#migrate-private-links-to-managed-identities-for-azure-resources).
 
-Regardless of the method you use to create the Private Link, it shows under the **Settings** > **Permissions** > **Private Links** tab in Customer Insights - Data.
+## Prerequisites
 
-## Set up a Private Link when creating a Customer Insights - Data environment
+- You have an Azure Subscription Owner role.
+- You have access to the Power Platform admin center and Azure portal.
+- The Azure storage account is in the same region as the Customer Insights – Data Dataverse environment.
+- You have the Dataverse environment ID for Customers Insights - Data. [Edit the environment](manage-environments.md#edit-an-existing-environment) and obtain the Customers Insights - Data environment URL. Then, obtain the [environment ID from the Power Platform admin center](/power-platform/admin/determine-org-id-name#find-your-environment-and-organization-id).
+- You have the [Azure subscription ID](/azure/azure-portal/get-subscription-tenant-id), location, and resource group name for each storage container.
+- The [Azure CLI is downloaded and installed](https://aka.ms/InstallAzureCliWindows).
+- The following PowerShell modules are installed
+  - Azure Az PowerShell module: `Install-Module -Name Az`
+  - Azure Az.Resources PowerShell module: `Install-Module -Name Az.Resources`
+  - Power Platform admin PowerShell module: `Install-Module -Name Microsoft.PowerApps.Administration.PowerShell`
+- This [GitHub compressed file](https://github.com/microsoft/PowerApps-Samples/blob/master/powershell/managed-identities/Common.zip) is downloaded and extracted in a location where you can run PowerShell commands.
 
-When creating a [Customer Insights - Data environment](create-environment.md) that connects to your virtual network protected storage:
+## Enable access to storage through managed identities
 
-1. Select **Enable Azure Private Link**.
+Perform these steps once per subscription.
 
-1. Select **Create Private Link** to initiate the creation process.
+1. Determine if there is an existing enterprise policy for the Dataverse environment. Run the script:
+   `GetIdentityEnterprisePolicyForEnvironment`
+   If a policy exists, the policy ID is returned.
+   - If there is an existing policy, obtain the policy ID and skip to step 5.
+   - If there isn't an existing enterprise policy, perform the following steps.  
+1. [Enable the enterprise policy](/power-apps/maker/data-platform/azure-synapse-link-msi#enable-enterprise-policy-for-the-selected-azure-subscription) for the Azure subscription.
+1. [Create the enterprise policy](/power-apps/maker/data-platform/azure-synapse-link-msi#create-enterprise-policy). One policy can be used for multiple Dataverse environments.
+1. [Grant reader access to the enterprise policy](/power-apps/maker/data-platform/azure-synapse-link-msi#grant-reader-access-to-the-enterprise-policy-via-azure).
+1. [Connect the enterprise policy to the Dataverse environment](/power-apps/maker/data-platform/azure-synapse-link-msi#connect-enterprise-policy-to-dataverse-environment).
+1. Continue to grant enterprise policy access to Azure storage and then allow the enterprise policy access to the storage account or container.
 
-1. [Approve the Private Link](#approve-your-private-link-in-the-azure-portal) in the Azure portal.
+### Grant enterprise policy access to Azure storage
 
-1. Once all links are approved, select **Validate Private Link**. Upon successful validation, you can continue configuring your new environment.
+Perform these steps for each storage account or container.
 
-## Set up a Private Link when creating a data source
+1. Sign in to the [Azure portal](https://portal.azure.com/).
+1. Open the storage account that you want to connect. To grant access to a specific container, go to containers under the **Data storage** section and select the container.
+1. On the left navigation pane, select **Access Control (IAM)**.
+1. Select the **Role assignments** tab. Select **Add** > **Add role assignment**.
+1. Search for and select **Storage Blob Data Contributor**.
+1. Select the **Members** tab. Under **Assign access to**, select **Managed identity**.
+1. Select **Select members**, select the correct subscription, and the **microsoft.powerplatform/enterprisepolicies[Identity]** option.
+1. Select the enterprise policy you created and **Save**.
 
-When creating an [Azure Data Lake Storage data source](connect-common-data-model.md) that needs to connect to a storage protected by a virtual network, follow the same steps as described under [Setting up a private link when creating a Customer Insights - Data environment](#set-up-a-private-link-when-creating-a-customer-insights---data-environment).
+### Allow enterprise policy access to the storage account behind the firewall
 
-## Set up a Private Link directly from the Private Links page in Customer Insights - Data
-
-1. In Customer Insights - Data, go to **Settings** > **Permissions** and select the **Private Links** tab.
-
-1. Select **Add Private Link**.
-
-   The **Add Private Link** pane lists storage accounts in your tenant that you can see.
-
-1. Select the subscription, resource group, and storage account.
-
-1. Review the [data privacy and compliance](connections.md#data-privacy-and-compliance) and select **I agree**.
-
+1. Open the storage account in the Azure portal.
+1. Select the **Networking** tab.
+1. Select **Enabled from selected virtual networks and IP addresses**.
+1. For the **Resource type**, select **Microsot.PowerPlatform/enterprisePolicies** and the instance name for the enterprise policy.
 1. Select **Save**.
 
-## Approve your Private Link in the Azure portal
+## Migrate Private Links to managed identities for Azure resources
 
-After configuring the Private Link between Customer Insights - Data and your virtual network protected storage, four Private Links show on the **Private Links** tab in Customer Insights - Data with a status of **Pending**.
+If you currently use Azure Private Links, update existing data connections using Private Links to managed identities for Azure resources.
 
-1. In the Azure portal, go to your Data Lake Storage account, and select **Networking** > **Private endpoints connections** to see the four new Private Links.
-
-1. Select **Yes** to approve them.
-
-   > [!TIP]
-   > For easy identification, consider adding a description when approving the Private Links.
-
-    :::image type="content" source="media/Private-Endpoint-Approval.png" alt-text="Description for the private endpoint approval step.":::
-
-1. In Customer Insights - Data, go to **Settings** > **Permissions** and select the **Private Links** tab. The Private Links now show the status **Approved**.
-
-1. Continue to add your [data sources](connect-common-data-model.md) that are linked to your protected storage.
-
-## Delete an Azure Private link
-
-1. In Customer Insights - Data, go to **Settings** > **Permissions** and select the **Private Links** tab.
-
-1. Select the storage account name for which you would like to delete the Private Links.
-
-1. Select **Delete**.
+1. Sign in to Customer Insights - Data.
+   A message says that you have one or more storage accounts that must be upgraded.
+1. From the Action required message, select **See details**.
+   :::image type="content" source="media/upgrade-to-managed-id.jpg" alt-text="Dialog box to upgrade to managed identities for Azure.":::
+1. Expand **Step 1 Enable Azure Managed Identity in Azure admin portal**.
+1. Select **Copy storage account information**. If you want to view the information, select **Expand**.
+1. Paste the information so it's easily accessible.
+1. [Enable access to managed identity](#enable-access-to-storage-through-managed-identities).
+1. Expand **Step 2 Update your connections** and select **Attempt connections updates**.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

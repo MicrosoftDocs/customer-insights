@@ -1,7 +1,7 @@
 ---
 title: "Connect to Delta tables in Azure Data Lake Storage"
 description: "Work with data stored in Delta tables from Azure Data Lake Storage."
-ms.date: 09/21/2024
+ms.date: 10/02/2024
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -47,7 +47,7 @@ Customer Insights - Data supports Databricks features with a 'minReaderVersion' 
 
 1. Select **Azure Data Lake Delta tables**.
 
-   :::image type="content" source="media/delta-lake-new.svg" alt-text="Dialog box to enter connection details for Delta Lake.":::
+   :::image type="content" source="media/delta-lake-new.svg" alt-text="Dialog box to enter connection details for Delta Lake." lightbox="media/delta-lake-new.svg":::
 
 1. Enter a **Data source name** and an optional **Description**. The name is referenced in downstream processes and it's not possible to change it after creating the data source.
 
@@ -56,9 +56,9 @@ Customer Insights - Data supports Databricks features with a 'minReaderVersion' 
    - **Azure subscription**: Select the **Subscription** and then the **Resource group** and **Storage account**.
    - **Azure resource**: Enter the **Resource Id**.
 
-1. Optionally, if you want to ingest data from a storage account through an Azure Private Link, select **Enable Private Link**. For more information, see [Private Links](private-link.md).
-
-1. Choose the name of the **Container** that contains the folder of your data, and select **Next**.
+1. Choose the name of the **Container** that contains the folder of your data.
+1. If your storage account is behind a firewall, select **This storage account is behind a firewall** to connect using [managed identities for Azure resources](private-link.md).
+1. Select **Next**.
 
 1. Navigate to the folder that contains the data in Delta tables and select it. Then, select **Next**. A list of available tables displays.
 
