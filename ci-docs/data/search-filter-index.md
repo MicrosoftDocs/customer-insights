@@ -4,7 +4,7 @@ description: "Quickly find information about unified customer profiles and filte
 ms.date: 09/19/2024
 ms.reviewer: mhart
 ms.topic: conceptual
-author: ScottStabbert
+author: Scott-Stabbert
 ms.author: sstabbert
 ms.custom: bap-template
 ---

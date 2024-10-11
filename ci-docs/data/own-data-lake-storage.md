@@ -3,7 +3,7 @@ title: Use your own Azure Data Lake Storage Gen2 account
 description: Learn about the requirements to use your own Azure Data Lake Storage account in Customer Insights - Data.
 author: Scott-Stabbert
 ms.author: sstabbert
-ms.date: 12/20/2023
+ms.date: 10/10/2024
 ms.topic: how-to
 ms.collection: get-started
 ms.reviewer: mhart
@@ -30,7 +30,7 @@ When you create a new environment, make sure the Data Lake Storage account exist
 1. Choose how to **Connect your storage**. You can choose between a resource-based option and a subscription-based option for authentication. For more information, see [Connect to an Azure Data Lake Storage account by using a Microsoft Entra service principal](connect-service-principal.md).
    - For **Azure subscription**, choose the **Subscription**, **Resource group**, and **Storage account** that contains the `customerinsights` container.
    - For **Account key**, provide the **Account name** and the **Account key** for the Data Lake Storage account. Using this authentication method implies that you're informed if your organization rotates the keys. You must [update the environment configuration](manage-environments.md#edit-an-existing-environment) with the new key when it's rotated.
-1. Choose if you want to use Azure Private Link to connect to the storage account and [create the connection to Private Link](private-link.md).
+1. If your storage account is behind a firewall, select **This storage account is behind a firewall** to connect using [managed identities for Azure resources](private-link.md).
 
 When system processes like data ingestion complete, the system creates corresponding folders in the storage account. Data files and model.json files are created and added to folders based on the process name.
 
@@ -48,7 +48,7 @@ Dynamics 365 Customer Insights - Data writes output data like unified profiles a
 
 - A single one-to-one mapping between a Dataverse organization and an Azure Data Lake Storage account is supported.
 - The target storage account can't be changed.
-- Data sharing doesn't work if an Azure Private Link setup is needed to access your Azure Data Lake Storage account because it's behind a firewall. Dataverse currently doesn't support the connection to private endpoints through Private Link.
+- Data sharing doesn't work if your Azure Data Lake Storage account is behind a firewall.
 
 ### Set up security groups on your own Azure Data Lake Storage
 
