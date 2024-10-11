@@ -24,17 +24,17 @@ Configure Customer Insights - Data to connect to Azure storage containers protec
 
 ## Prerequisites
 
-- You have an Azure subscription Owner role.
+- You have an Azure Subscription Owner role.
 - You have access to the Power Platform admin center and Azure portal.
 - The Azure storage account is in the same region as the Customer Insights – Data Dataverse environment.
 - You have the Dataverse environment ID for Customers Insights - Data. [Edit the environment](manage-environments.md#edit-an-existing-environment) and obtain the Customers Insights - Data environment URL. Then, obtain the [environment ID from the Power Platform admin center](/power-platform/admin/determine-org-id-name#find-your-environment-and-organization-id).
 - You have the [Azure subscription ID](/azure/azure-portal/get-subscription-tenant-id), location, and resource group name for each storage container.
-- The [Azure CLI is download and installed](https://aka.ms/InstallAzureCliWindows).
+- The [Azure CLI is downloaded and installed](https://aka.ms/InstallAzureCliWindows).
 - The following PowerShell modules are installed
   - Azure Az PowerShell module: `Install-Module -Name Az`
   - Azure Az.Resources PowerShell module: `Install-Module -Name Az.Resources`
   - Power Platform admin PowerShell module: `Install-Module -Name Microsoft.PowerApps.Administration.PowerShell`
-- This [GitHub compressed file](https://github.com/microsoft/PowerApps-Samples/blob/master/powershell/managed-identities/Common.zip) is downloaded and extracted in a location where you can run PowerShell commands. This file contains PowerShell comments put it where you can run it.
+- This [GitHub compressed file](https://github.com/microsoft/PowerApps-Samples/blob/master/powershell/managed-identities/Common.zip) is downloaded and extracted in a location where you can run PowerShell commands.
 
 ## Enable access to storage through managed identities
 
