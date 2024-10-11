@@ -57,7 +57,7 @@ Customer Insights - Data supports Databricks features with a 'minReaderVersion' 
    - **Azure resource**: Enter the **Resource Id**.
 
 1. Choose the name of the **Container** that contains the folder of your data.
-1. Optionally, if you want to ingest data from a storage account behind a firewall, select **This storage account is behind a firewall**. Learn more: [Set up managed identities for storage accounts behind firewalls](private-link.md).
+1. If your storage account is behind a firewall, select **This storage account is behind a firewall** to connect using [managed identities for Azure resources](private-link.md).
 1. Select **Next**.
 
 1. Navigate to the folder that contains the data in Delta tables and select it. Then, select **Next**. A list of available tables displays.

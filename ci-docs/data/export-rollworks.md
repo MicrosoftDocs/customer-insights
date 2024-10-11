@@ -23,7 +23,6 @@ Export segments of unified customer profiles to RollWorks and use them for adver
 
 ## Known limitations
 
-- Bring your own Azure storage account behind a firewall isn't supported.
 - Up to 250,000 customer profiles per export to RollWorks, which can take up to 10 minutes to complete. The number of customer profiles that you can export to RollWorks depends on your contract with RollWorks.
 - Segments only.
 

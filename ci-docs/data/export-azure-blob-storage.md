@@ -1,7 +1,7 @@
 ---
 title: "Export data to an Azure Blob Storage (preview)"
 description: "Learn how to configure the connection and export to Blob storage."
-ms.date: 09/01/2023
+ms.date: 10/11/2024
 ms.reviewer: mhart
 ms.topic: how-to
 author: pkieffer
@@ -41,6 +41,8 @@ Store data from your Dynamics 365 Customer Insights - Data in a Blob storage or 
 1. Choose who can use this connection. By default, it's only administrators. For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
 1. Enter **Subscription**, **Resource group**, **Storage account**, and **Container** for your Blob Storage account.
+
+1. If your storage account is behind a firewall, select **This storage account is behind a firewall** to connect using [managed identities for Azure resources](private-link.md).
 
 1. Review the [data privacy and compliance](connections.md#data-privacy-and-compliance) and select **I agree**.
 

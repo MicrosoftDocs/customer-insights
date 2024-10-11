@@ -24,7 +24,6 @@ Export segments of unified customer profiles to Klaviyo and use them for marketi
 
 ## Known limitations
 
-- Bring your own Azure storage account behind a firewall isn't supported.
 - Up to 1 million customer profiles per export to Klaviyo, which can take up to 20 minutes to complete. The number of customer profiles that you can export to Klaviyo depends on your contract with Klaviyo.
 - Segments only.
 

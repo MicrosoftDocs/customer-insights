@@ -63,7 +63,7 @@ Ingest data into Dynamics 365 Customer Insights - Data using your Azure Data Lak
    > [!NOTE]
    > Any model.json or manifest.json file associated with another data source in the environment won't show in the list. However, the same model.json or manifest.json file can be used for data sources in multiple environments.
 
-1. Optionally, if you want to ingest data from a storage account behind a firewall, select **This storage account is behind a firewall**. Learn more: [Set up managed identities for storage accounts behind firewalls](private-link.md).
+1. If your storage account is behind a firewall, select **This storage account is behind a firewall** to connect using [managed identities for Azure resources](private-link.md).
 1. Select **Next**.
 
 1. To create a new schema, go to [Create a new schema file](#create-a-new-schema-file).

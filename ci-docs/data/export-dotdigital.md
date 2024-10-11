@@ -23,7 +23,6 @@ Export segments of unified customer profiles to DotDigital address books and use
 
 ## Known limitations
 
-- Bring your own Azure storage account behind a firewall isn't supported.
 - Up to 1 million customer profiles per export to DotDigital, which can take up to three hours to complete because of limitations on the provider side. The number of customer profiles that you can export to DotDigital depends on your contract with DotDigital.
 - Segments only.
 - The connector doesn't support deleting DotDigital address books or members in the address books.
