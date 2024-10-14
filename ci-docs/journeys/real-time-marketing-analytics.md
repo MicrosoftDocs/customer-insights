@@ -1,7 +1,7 @@
 ---
 title: Access and interpret analytics
 description: How to access and interpret Customer Insights - Journeys analytics in Dynamics 365 Customer Insights - Journeys.
-ms.date: 10/11/2024
+ms.date: 10/14/2024
 ms.topic: article
 author: colinbirkett
 ms.author: colinbirkett
@@ -78,7 +78,7 @@ Operational analytics has two parts:
 
 In addition to journey-level analytics, for every message within a journey (email, text message, push notification, or custom channel), you can view detailed delivery funnel insights and performance metrics to assess the content's effectiveness. You can access channel-specific analytics by selecting the individual message tile within the journey, or by navigating to the message details page for each channel.
 
-In the **Overview** section of the right pane, you can monitor key performance indicators per channel message such as:
+In the **Overview** section of the right pane, you can monitor key performance indicators (KPIs) per channel message such as:
 
 - **Delivery rate**: The percentage of email, text, or custom channel messages delivered divided by the number of email, text, or custom channel messages sent.
 - **Open rate**: The percentage of unique email or push notification opens divided by the number of emails or push notifications delivered.
