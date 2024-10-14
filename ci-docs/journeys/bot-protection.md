@@ -38,7 +38,7 @@ When bot protection is enabled, any time a link is selected, it goes through an 
 | Question                      | Answer               | 
 |:-----------------------------------|:------------------------------|
 | Why do I see multiple email open interactions for the same contact with the exact same timestamp? | Bot protection doesn't apply to email opens. This could be due to bot-related activity, resulting in multiple open interactions. | 
-| I’ve noticed an inflated email open rate recently. What’s happening? | Because bot protection doesn't apply to email opens, non-human traffic can increase the open rate. Learn more about improving engagement measurement: [Rethinking email marketing metrics: The evolving landscape of ‘Open Rate’](https://www.microsoft.com/dynamics-365/blog/?p=192346&preview=1&_ppp=3fd22f5f35).|
-| Why are there no email opens or clicks recorded? | Please ensure compliance profiles are correctly configured and tracking is allowed for the contacts, leads, or Customer Insights - Data profiles that received the email. Learn more: [Consent management overview](real-time-marketing-compliance-settings.md) | 
+| I’ve noticed an inflated email open rate recently. What’s happening? | Because bot protection doesn't apply to email opens, nonhuman traffic can increase the open rate. Learn more about improving engagement measurement: [Rethinking email marketing metrics: The evolving landscape of ‘Open Rate’](https://www.microsoft.com/dynamics-365/blog/?p=192346&preview=1&_ppp=3fd22f5f35).|
+| Why are there no email opens or clicks recorded? | Ensure compliance profiles are correctly configured and tracking is allowed for the contacts, leads, or Customer Insights - Data profiles that received the email. Learn more: [Consent management overview](real-time-marketing-compliance-settings.md) | 
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
