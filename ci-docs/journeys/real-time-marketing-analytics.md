@@ -76,14 +76,14 @@ Operational analytics has two parts:
 
 ### Channel analytics
 
-For any message in the journey (email, text, or push notification), view the delivery funnel and additional metrics to diagnose the content performance.
+In addition to journey-level analytics, for every message within a journey (email, text message, push notification, or custom channel), you can view detailed delivery funnel insights and performance metrics to assess the content's effectiveness. You can access channel-specific analytics by selecting the individual message tile within the journey, or by navigating to the message details page for each channel.
 
-In the **Overview** section, you can monitor key performance indicators per channel message such as:
+In the **Overview** section of the right pane, you can monitor key performance indicators per channel message such as:
 
 - **Delivery rate**: The percentage of email, text, or custom channel messages delivered divided by the number of email, text, or custom channel messages sent.
 - **Open rate**: The percentage of unique email or push notification opens divided by the number of emails or push notifications delivered.
 - **Click rate**: The percentage of unique email, text, or push notification/custom channel clicks divided by the number of email, text, or push notification/custom channel links delivered.
-- **Response rate**: The percentage of unique text message responses divided by the number of text messages sent.
+- **Response rate**: The percentage of unique text message responses divided by the number of text messages sent. This KPI applies to text messages only.
 
 To view **delivery and interaction statistics**, select the **View details** link in the **Delivery funnel** or **Delivery issues** section on the channel analytics pane. Delivery and interaction details allow you to analyze delivery, engagement, and performance data for your email, text, push notification, or custom channel messages.
 
