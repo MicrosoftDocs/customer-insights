@@ -33,4 +33,12 @@ Because bot protection filters out nonhuman link clicks, some journey triggers a
 
 When bot protection is enabled, any time a link is selected, it goes through an intermediate page. Customer Insights - Journeys runs some checks on the intermediate page to determine if the click was made by a bot or a human. 
 
+## Frequently asked questions
+
+| Question                      | Answer               | 
+|:-----------------------------------|:------------------------------|
+| Why do I see multiple email open interactions for the same contact with the exact same timestamp? | Bot protection doesn't apply to email opens. This could be due to bot-related activity, resulting in multiple open interactions. | 
+| I’ve noticed an inflated email open rate recently. What’s happening? | Since bot protection doesn't apply to email opens, non-human traffic can increase the open rate. Learn more about improving engagement measurement: [Rethinking email marketing metrics: The evolving landscape of ‘Open Rate’](https://www.microsoft.com/dynamics-365/blog/?p=192346&preview=1&_ppp=3fd22f5f35).|
+| Why are there no email opens or clicks recorded? | Please ensure that compliance profiles are correctly configured and tracking is allowed for contacts, leads, or CI profiles that received the email. [Learn more: Consent management overview.](/real-time-marketing-compliance-settings) | 
+
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
