@@ -26,7 +26,7 @@ The following tables show the current usage limits for Customer Insights - Journ
 | Data sync            | Number of rows in a single [synchronized table](./mkt-settings-sync.md) (for example, number of marketing contacts). | 500,000,000 rows |
 | Interaction personalization | Number of distinct dynamic attributes used in a single message. | 100 |
 | Interaction personalization | Number of [entity relationships connected](/dynamics365/customerengagement/on-premises/customize/create-edit-entity-relationships) in personalization. | Up to 6 levels of relationship traversal is supported (in the traversal path, there can be at most 1 relationship of type 1:N or N:M) |
-| Segment limits | Total number of segments that can be created in real-time journeys. | 10,000 total segments (2,000 dynamic segments, 8,000 static segments) |
+| Segment limits | Total number of segments that can be created in real-time journeys. | 13,000 total segments (3,000 dynamic segments, 10,000 static segments) |
 | Segment limits for journey start | Number of contacts, leads, and Customer Insights - Data profiles in a real-time journeys segment used to start a journey. | 10,000,000 members |
 | Segment limits for journey branching | Number of contacts, leads, and Customer Insights - Data profiles in a real-time journeys segment used to branch in a journey. | 10,000,000 members |
 | Throughput (for segment-based journeys) | Total number of interactions sent per unit of time. | Up to 500,000 interactions/hr‡ |
