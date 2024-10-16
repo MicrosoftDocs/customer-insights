@@ -58,7 +58,7 @@ Generally, we recommend starting fresh with your own data when upgrading to the 
 
 Optionally, if you only use Customer Insights, you can copy your data from a trial environment if you purchase Customer Insights. You must be the administrator of the Customer Insights trial and the Dynamics 365 administrator in your organization to migrate the settings from a trial environment to a paid environment.
 
-After signing in to your paid environment of Customer Insights for the first time, you're asked to create a new environment. In this process, you can choose to copy the configuration from an existing environment and migrate most of the settings. If you have the permissions mentioned above, the trial environment will show in this list. For more information, see [Copy the environment configuration (preview)](manage-environments.md#copy-the-environment-configuration).
+After signing in to your paid environment of Customer Insights for the first time, you're asked to create a new environment. In this process, you can choose to copy the configuration from an existing environment and migrate most of the settings. If you have the permissions mentioned above, the trial environment will show in this list. For more information, see [Copy the environment configuration (preview)](manage-environments.md#copy-the-environment-configuration-preview).
 
 ### What are the trial limits and quotas?
 
