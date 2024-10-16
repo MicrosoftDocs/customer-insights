@@ -360,7 +360,7 @@ This FRE works with a single CSV file only. If you have multiple data files, or 
 Dynamics 365 Customer Insights - Data starts supporting application and environment lifecycle management capabilities for common enterprise-grade requirements. For example, you can copy, reset, or delete your Customer Insights - Data environments. Additionally, the system ensures your Customer Insights - Data environment and the associated Dataverse environment are always in sync.
 
 - [Release plan](/dynamics365-release-plan/2022wave2/customer-insights/achieve-business-scenarios-application-lifetime-management)
-- [Documentation](manage-environments.md#copy-the-environment-configuration)
+- [Documentation](manage-environments.md#copy-the-environment-configuration-preview)
 
 <!--
 ## September 2022 updates
