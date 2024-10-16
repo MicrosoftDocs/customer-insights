@@ -9,11 +9,6 @@ ms.reviewer: mhart
 ms.custom: bap-template
 ---
 
-<!-- EDITOR'S NOTES:
-1. The screenshot shows PII of a real person. Please replace it ASAP with a fictitious name.
-1. Please confirm, in the final step at the bottom of the article, is it "**Attempt connections updates**" or "**Attempt connection updates**"?
-1. Is there anything else the user must do after attempting the connection(s) updates?
- -->
 # Set up managed identities for storage accounts behind firewalls
 
 If you have Azure storage protected by firewalls, use managed identities for Azure resources to connect to Customer Insights - Data. Managed identities provide an automatically managed identity in Microsoft Entra ID for applications, such as Customer Insights - Data, to use when connecting to resources that support Microsoft Entra authentication. The managed identity can't be accessed or used outside of its configured endpoints. Learn more in [Managed identities for Azure resources](/entra/identity/managed-identities-azure-resources).
@@ -107,5 +102,7 @@ Change the data connections that use Azure Private Link to use managed identitie
 1. [Enable access to storage through managed identities](#enable-access-to-storage-through-managed-identities).
 
 1. In the *Action required: Upgrade to Azure Managed Identities* message box, expand **Step 2: Update your connections**, and then select **Attempt connections updates**.
+
+1. Wait for the connections to be updated.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
