@@ -93,16 +93,14 @@ Change the data connections that use Azure Private Link to use managed identitie
 
    :::image type="content" source="media/upgrade-to-managed-id.jpg" alt-text="Screenshot showing the 'Action required' banner and message box to upgrade to managed identities for Azure.":::
 
-1. In the *Action required: Upgrade to Azure Managed Identities* message box, expand **Step 1: Enable Azure Managed Identity in Azure admin portal**.
+1. Expand **Step 1: Enable Azure Managed Identity in Azure admin portal**.
 
-1. Select **Copy storage account information**. If you want to view the information, select **Expand**.
+1. Select **Copy storage account information**. All the information required for migration is copied. Send the information to your Azure subscription owner to enable managed identities. If you want to view the connection details, select **Expand**.
 
-1. Paste the information where it's easily accessible.
+1. When your Azure subscription owner confirms they enabled managed identities for Azure access, [Enable access to managed identities](#enable-access-to-storage-through-managed-identities).
 
-1. [Enable access to storage through managed identities](#enable-access-to-storage-through-managed-identities).
+1. Expand **Step 2: Update your connections**, and then select **Attempt connections updates**.
 
-1. In the *Action required: Upgrade to Azure Managed Identities* message box, expand **Step 2: Update your connections**, and then select **Attempt connections updates**.
-
-1. Wait for the connections to be updated.
+1. Wait for the connections to be updated. If an error occurs, contact your Azure subscription owner.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
