@@ -1,7 +1,7 @@
 ---
 title: Anonymized customer data human review notice
 description: Learn about Microsoft's human data review policy in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/17/2023
+ms.date: 10/17/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -63,7 +63,9 @@ Sharing your data can benefit you in two ways:
 
 ## How do I opt out?
 
-You can opt out by going to the settings page and turning off the digital data sharing toggle.
+A user with administrator privileges can opt out by going to **Settings** > **Feature switches** > **Copilot** and setting the "Global data sharing consent" toggle to **Off**.
+
+:::image type="content" source="media/data-sharing-toggle.png" alt-text="Screenshot of the data sharing toggle.":::
 
 ## What happens when I opt out?
 
