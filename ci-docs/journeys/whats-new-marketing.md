@@ -1,7 +1,7 @@
 ---
 title: New and upcoming features
 description: Information about new features, improvements, and bug fixes in Dynamics 365 Customer Insights - Journeys releases.
-ms.date: 10/07/2024
+ms.date: 10/17/2024
 ms.topic: article
 author: colinbirkett
 ms.author: colinbirkett
@@ -76,13 +76,6 @@ Learn how to make the most of the new Dynamics 365 Customer Insights features in
 > - **Link tracking**: Links in messages that were sent more than six months prior will no longer produce tracking results, but will otherwise function correctly. Links in messages sent less than six months prior will continue to generate tracking analytics.
 > - **Text messages**: URLs sent in SMS messages will expire six months after the message is sent and will no longer work.
 > - **Unsubscribe links**: Unsubscribe links will expire six months after the link is created and will no longer work.
-
-### General availability
-
-- **Automate seamless handoffs between marketing and sales**
-    - Invite your sales team to engage with qualified leads at the right time and stage of their journey by creating sales activities and records directly from customer journeys. Real-time journeys are a key part of nurturing and qualifying leads and opportunities. When your customer has sent the right signals through your direct engagement, the next step is often for your sales team to act. You can now create sales activities such as tasks and phone calls directly from journeys so that leads get individualized attention when they’re most likely to engage. You can also create lead or opportunity records based on a customer’s interaction with your campaign, ensuring that the sales team has the right information to close leads generated from marketing activities.
-    - [Release plan](/dynamics365/release-plan/2024wave1/customer-insights/dynamics365-customer-insights-journeys/close-leads-faster-automating-seamless-handoffs-between-marketing-sales)
-    - [Docs](real-time-marketing-tile-reference.md)
 
 ### Public preview
 
