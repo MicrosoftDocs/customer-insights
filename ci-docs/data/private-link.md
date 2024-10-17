@@ -85,7 +85,7 @@ Perform these steps for each storage account or container.
 
 ## Migrate private links to managed identities for Azure resources
 
-Existing Azure Private Links must be updated to managed identities for Azure resources by November 30, 2024. Customer Insights - Data provides the information your Azure Subscription Owner needs to enable managed identities. If you're unable to update your instance by the deadline, request a 30 day extension at CIDManagedIdentity@Microsoft.com.
+Existing Azure Private Links must be updated to managed identities for Azure resources by November 30, 2024. Customer Insights - Data provides the information your Azure Subscription Owner needs to enable managed identities. If you're unable to update your instance by the deadline, request a 30 day extension at [CIDManagedIdentity@Microsoft.com](mailto:CIDManagedIdentity@Microsoft.com).
 
 An *Action required* banner tells you that you have one or more storage accounts that must be upgraded to meet security requirements. In the banner, select **See details**.
 
