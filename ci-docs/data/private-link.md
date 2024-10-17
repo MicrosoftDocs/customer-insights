@@ -16,7 +16,7 @@ If you have Azure storage protected by firewalls, use managed identities for Azu
 There are three scenarios where Customer Insights - Data can be configured to connect to firewall-protected Azure storage containers:
 
 - Output storage can be configured at setup to use your own Azure data lake.
-- Data sources that read from an Azure data lake storage, Common Data Models (CDM), Delta tables, or Synapse.
+- Data sources that read from an Azure data lake storage (Common Data Models (CDM), Delta tables, or Synapse).
 - Exports that write to an Azure data lake.
 
 If you use Azure Private Link, review the [prerequisites](#prerequisites) and then [migrate your private links to managed identities](#migrate-private-links-to-managed-identities-for-azure-resources).
@@ -85,7 +85,7 @@ Perform these steps for each storage account or container.
 
 ## Migrate private links to managed identities for Azure resources
 
-Existing Azure Private Links must be updated to managed identities for Azure resources by November 30, 2024. Customer Insights - Data provides the information your Azure subscription owner needs to enable managed identities. If you're unable to update your instance by the deadline, request a 30 day extension at CIDManagedIdentity@Microsoft.com.
+Existing Azure Private Links must be updated to managed identities for Azure resources by November 30, 2024. Customer Insights - Data provides the information your Azure Subscription Owner needs to enable managed identities. If you're unable to update your instance by the deadline, request a 30 day extension at CIDManagedIdentity@Microsoft.com.
 
 An *Action required* banner tells you that you have one or more storage accounts that must be upgraded to meet security requirements. In the banner, select **See details**.
 
@@ -93,11 +93,11 @@ An *Action required* banner tells you that you have one or more storage accounts
 
 1. Expand **Step 1: Enable Azure Managed Identity in Azure admin portal**.
 
-   - Select **Copy storage account information**. All the information required for migration is copied. Send the information to your Azure subscription owner to enable managed identities. If you want to view the connection details, select **Expand**.
+   - Select **Copy storage account information**. All the information required for migration is copied. Send the information to your Azure Subscription Owner to enable managed identities. If you want to view the connection details, select **Expand**.
 
-   - When your Azure subscription owner confirms they enabled managed identities for Azure access, go to step 2 to update your connections.
+   - When your Azure Subscription Owner confirms they enabled managed identities for Azure access, go to step 2 to update your connections.
 
-1. Expand **Step 2: Update your connections**, and then select **Attempt connections updates**. Wait for the connections to be updated. If an error occurs, contact your Azure subscription owner.
+1. Expand **Step 2: Update your connections**, and then select **Attempt connection updates**. Wait for the connections to be updated. If an error occurs, contact your Azure Subscription Owner.
 
 ### FAQ
 
@@ -111,7 +111,7 @@ Go to [Managed identities for Azure resources](/entra/identity/managed-identitie
 
 #### How do I enable managed identity for Azure resources access to storage containers?
 
-The Azure subscription owner enables managed identities in the Azure CLI using a script provided by Microsoft. Go to [Set up managed identities for storage accounts behind firewalls](#set-up-managed-identities-for-storage-accounts-behind-firewalls).
+The Azure Subscription Owner enables managed identities in the Azure CLI using a script provided by Microsoft. Go to [Set up managed identities for storage accounts behind firewalls](#set-up-managed-identities-for-storage-accounts-behind-firewalls).
 
 #### How do I configure connections in Customer Insights - Data to use managed identities for Azure resources?
 
