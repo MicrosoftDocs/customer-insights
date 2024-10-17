@@ -121,7 +121,7 @@ Select **This storage account is behind a firewall** when creating a connection.
 
 Yes, existing private links will continue to function. If you no longer need them, we recommend removing the private links in Azure after moving to managed identities.
 
-#### I’m still seeing "Enable private links" in my instance.
+#### I’m still seeing "Enable private links" in my instance
 
 Instances where connections show **Enable private links** will be updated soon. Your instance is ready to use managed identities when new data connections show **This storage account is behind a firewall**.
 
@@ -135,9 +135,9 @@ There are three scenarios where CI-Data connects to an Azure data lake that can 
 
 #### How do we request an extension?
 
-Send extension requests to CIDManagedIdentity@Microsoft.com. Include all Customer Insights – Data InstanceIDs (located on the URL) in the request.
+Send extension requests to [CIDManagedIdentity@Microsoft.com](mailto:CIDManagedIdentity@Microsoft.com). Include all Customer Insights – Data InstanceIDs (located on the URL) in the request.
 
-For other questions, contact CIDManagedIdentity@Microsoft.com.
+For other questions, contact [CIDManagedIdentity@Microsoft.com](mailto:CIDManagedIdentity@Microsoft.com).
 
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
