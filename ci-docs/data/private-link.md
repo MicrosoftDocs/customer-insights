@@ -15,7 +15,7 @@ If you have Azure storage protected by firewalls, use managed identities for Azu
 
 There are three scenarios where Customer Insights - Data can be configured to connect to firewall-protected Azure storage containers:
 
-- Output storage can be configured at setup to use your own Azure data lake.
+- Output storage that can be configured at setup to use your own Azure data lake.
 - Data sources that read from an Azure data lake storage (Common Data Models (CDM), Delta tables, or Synapse).
 - Exports that write to an Azure data lake.
 
@@ -129,9 +129,9 @@ Instances where connections show **Enable private links** will be updated soon. 
 
 There are three scenarios where CI-Data connects to an Azure data lake that can be behind a firewall:
 
-1. Output storage. At setup, the instance primary output can be configured to be your own data lake.
-1. Data sources using Azure data lake storage with CDM tables, Delta tables, or Synapse.
-1. Exports that write to an Azure data lake.
+- Output storage that can be configured at setup to use your own Azure data lake.
+- Data sources that read from an Azure data lake storage (Common Data Models (CDM), Delta tables, or Synapse).
+- Exports that write to an Azure data lake.
 
 #### How do we request an extension?
 

@@ -1298,7 +1298,7 @@
     },
     {
       "source_path": "ci-docs/audience-insights/incremental-refresh-data-sources.md",
-      "redirect_url": "/dynamics365/customer-insights/incremental-refresh-data-sources",
+      "redirect_url": "/dynamics365/customer-insights/data-sources",
       "redirect_document_id": false
     },
     {
@@ -2108,7 +2108,7 @@
     },
     {
       "source_path": "ci-docs/incremental-refresh-data-sources.md",
-      "redirect_url": "/dynamics365/customer-insights/data/incremental-refresh-data-sources",
+      "redirect_url": "/dynamics365/customer-insights/data/data-sources",
       "redirect_document_id": false
     },
     {
