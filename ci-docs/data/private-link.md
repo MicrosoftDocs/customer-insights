@@ -85,13 +85,13 @@ Perform these steps for each storage account or container.
 
 ## Migrate private links to managed identities for Azure resources
 
-Change the data connections that use Azure Private Link to use managed identities for Azure resources.
+Existing Azure Private Links must be updated to managed identities for Azure resources by November 30, 2024. Customer Insights - Data provides the information your Azure subscription owner needs to enable managed identities. If you're unable to update your instance by the deadline, reach out to your support team to request a 30 day extension.
 
 1. Sign in to Customer Insights - Data.
 
 1. An *Action required* banner tells you that you have one or more storage accounts that must be upgraded to meet security requirements. In the banner, select **See details**.
 
-   :::image type="content" source="media/upgrade-to-managed-id.jpg" alt-text="Screenshot showing the 'Action required' banner and message box to upgrade to managed identities for Azure.":::
+   :::image type="content" source="media/upgrade-to-managed-id.png" alt-text="Screenshot showing the 'Action required' banner and message box to upgrade to managed identities for Azure.":::
 
 1. Expand **Step 1: Enable Azure Managed Identity in Azure admin portal**.
 
