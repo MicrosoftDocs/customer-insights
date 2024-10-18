@@ -103,7 +103,7 @@ An *Action required* banner tells you that you have one or more storage accounts
 
 #### Why are we doing this?
 
-Managed identities for Azure resources is the new recommended way to connect to Azure resources behind a firewall using a restricted service principal that can only be used between two designated endpoints. The credentials for the service principal can't be exported or viewed.
+Managed identities for Azure resources is the recommended way to connect to Azure resources behind a firewall using a restricted service principal that can only be used between two designated endpoints. The credentials for the service principal can't be exported or viewed.
 
 #### Where can I learn more about managed identities for Azure resources? 
 
