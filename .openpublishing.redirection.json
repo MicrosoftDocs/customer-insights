@@ -2108,7 +2108,7 @@
     },
     {
       "source_path": "ci-docs/incremental-refresh-data-sources.md",
-      "redirect_url": "/dynamics365/customer-insights/data/data-sources",
+      "redirect_url": "/dynamics365/customer-insights/data/incremental-refresh-data-sources",
       "redirect_document_id": false
     },
     {
@@ -2635,6 +2635,11 @@
       "source_path": "ci-docs/data/compute-migrate-infrastructure.md",
       "redirect_url": "/dynamics365/customer-insights/data/private-link",
       "redirect_document_id": false
-    }
+    },
+    {
+      "source_path": "ci-docs/data/incremental-refresh-data-sources.md",
+      "redirect_url": "/dynamics365/customer-insights/data/data-sources",
+      "redirect_document_id": false
+    },
   ]
 }
