@@ -3,7 +3,7 @@ title: Use your own Azure Data Lake Storage account
 description: Learn about the requirements to use your own Azure Data Lake Storage account in Customer Insights - Data.
 author: Scott-Stabbert
 ms.author: sstabbert
-ms.date: 10/10/2024
+ms.date: 10/18/2024
 ms.topic: how-to
 ms.collection: get-started
 ms.reviewer: mhart
