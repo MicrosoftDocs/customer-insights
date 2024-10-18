@@ -33,7 +33,7 @@ Before creating a new service principal for Customer Insights, check whether it 
 
 3. Under **Manage**, select **Microsoft Application**.
 
-4. Add a filter for **Application ID start with** `0bfc4568-a4ba-4c58-bd3e-5d3e76bd7fff` or search for the name `Dynamics 365 AI for Customer Insights`.
+4. Add a filter for **Application ID start with** `00001111-aaaa-2222-bbbb-3333cccc4444` or search for the name `Dynamics 365 AI for Customer Insights`.
 
 5. If you find a matching record, it means that the service principal already exists. [Grant permissions](#grant-permissions-to-the-service-principal-to-access-the-storage-account) for the service principal to access the storage account.
 
@@ -53,7 +53,7 @@ Before creating a new service principal for Customer Insights, check whether it 
 
    1. In the PowerShell window, enter `Connect-AzureAD -TenantId "[your Directory ID]" -AzureEnvironmentName Azure`. Replace *[your Directory ID]* with the actual Directory ID of your Azure subscription where you want to create the service principal. The environment name parameter, `AzureEnvironmentName`, is optional.
   
-   1. Enter `New-AzureADServicePrincipal -AppId "0bfc4568-a4ba-4c58-bd3e-5d3e76bd7fff" -DisplayName "Dynamics 365 AI for Customer Insights"`. This command creates the service principal on the selected Azure subscription.
+   1. Enter `New-AzureADServicePrincipal -AppId "00001111-aaaa-2222-bbbb-3333cccc4444" -DisplayName "Dynamics 365 AI for Customer Insights"`. This command creates the service principal on the selected Azure subscription.
 
 ## Grant permissions to the service principal to access the storage account
 
