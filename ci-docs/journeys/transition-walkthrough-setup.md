@@ -22,7 +22,6 @@ This doesn't mean that real-time journeys can't work with Power Pages as a publi
 
 Due to the lack of Power Pages requirement, the event management module also works differently from outbound marketing. Learn more: [Transition event management](transition-walkthrough-events.md)
 
-> [!TIP]
-> If you have questions or comments, visit the [Outbound to real-time transition community forum](https://community.dynamics.com/forums/thread/?partialUrl=Outbound-to-Real-Time-Transition)
+[!INCLUDE [transition-comments](./includes/transition-comments.md)]
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]

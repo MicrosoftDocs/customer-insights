@@ -35,7 +35,6 @@ For custom reporting in real-time journeys, you can now effortlessly create cust
 
 Additionally, advanced bot protection for real-time journeys empowers your business to thrive by safeguarding your business processes. Improve your business decisions with the confidence of knowing that the data you collect is accurate and represents real human interactions. Learn more: [Improve reliability of insights with advanced bot protection](/dynamics365/customer-insights/journeys/bot-protection).
 
-> [!TIP]
-> If you have questions or comments, visit the [Outbound to real-time transition community forum](https://community.dynamics.com/forums/thread/?partialUrl=Outbound-to-Real-Time-Transition)
+[!INCLUDE [transition-comments](./includes/transition-comments.md)]
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
