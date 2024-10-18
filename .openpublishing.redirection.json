@@ -1652,11 +1652,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "ci-docs/compute-migrate-infrastructure.md",
-      "redirect_url": "/dynamics365/customer-insights/data/compute-migrate-infrastructure",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "ci-docs/connect-common-data-model.md",
       "redirect_url": "/dynamics365/customer-insights/data/connect-common-data-model",
       "redirect_document_id": false
@@ -1754,6 +1749,11 @@
     {
       "source_path": "ci-docs/data-sources.md",
       "redirect_url": "/dynamics365/customer-insights/data/data-sources",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/compute-migrate-infrastructure.md",
+      "redirect_url": "/dynamics365/customer-insights/data/compute-migrate-infrastructure",
       "redirect_document_id": false
     },
     {
@@ -2630,6 +2630,16 @@
       "source_path": "ci-docs/journeys/developer/extend-customer-journey-using-code.md",
       "redirect_url": "/dynamics365/customer-insights/journeys/real-time-marketing-overview",
       "redirect_document_id": false
-    }
+    },
+    {
+      "source_path": "ci-docs/data/compute-migrate-infrastructure.md",
+      "redirect_url": "/dynamics365/customer-insights/data/private-link",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/data/incremental-refresh-data-sources.md",
+      "redirect_url": "/dynamics365/customer-insights/data/data-sources",
+      "redirect_document_id": false
+    },
   ]
 }

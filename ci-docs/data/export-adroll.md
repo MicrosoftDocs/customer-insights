@@ -23,7 +23,6 @@ Export segments of unified customer profiles to AdRoll and use them for advertis
 
 ## Known limitations
 
-- Private link in combination with Bring your own storage (BYOS) is not supported.
 - Up to 250,000 customer profiles per export to AdRoll, which can take up to 10 minutes to complete. The number of customer profiles that you can export to AdRoll depends on your contract with AdRoll.
 - Segments only. A segment must contain at least 100 customer profiles.
 

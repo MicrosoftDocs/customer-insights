@@ -32,14 +32,6 @@ To create custom analytics, you can connect two different data sources, each of 
 
 You'll be able to connect directly to your Customer Insights - Journeys  database from Power BI to fetch your profile data, but to access interaction data you'll need to set up Azure Blob Storage, configure Customer Insights - Journeys to save interaction data there, and then connect Power BI to your blob storage.
 
-<!-- [kfm: this video is being edited and will be hosted elsewhere. Revive this section and update the embed when it's ready]
-
-Watch [the following video](https://www.youtube.com/watch?v=pBrB1BohUrE)
-for a quick overview of all the data that is available for your marketing analytical reports.<br/><br/>
-
-> [!VIDEO https://www.youtube.com/embed/pBrB1BohUrE]
--->
-
 <a name="connect-blob"></a>
 
 ## Set up Azure Blob storage and connect it to Customer Insights - Journeys
@@ -60,7 +52,6 @@ for a quick overview of all the data that is available for your marketing analyt
 >
 > 1. If you *do not* need to limit public network access to the Storage Account ([Configure Azure Storage firewalls and virtual networks](/azure/storage/common/storage-network-security?tabs=azure-portal)), proceed with further configuration steps. **If you do not need to limit public network access, you can complete this guide and connect Azure Blob storage to Customer Insights - Journeys**.
 > 1. If you need to limit public network access to the Storage Account&mdash;for example, if you want to limit access to selected virtual networks and IP addresses only&mdash;**you must [contact our customer support team](https://dynamics.microsoft.com/contact-us/) to assist you with the Azure Storage Account firewall configuration**. This is a complicated scenario and support team assistance is required based on the Storage Account location and service instance data. You can continue with steps 1 through 7 below, but you can't create a new analytics configuration (steps 8 through 10) until your firewall configuration is set up properly.
-> 1. If the Storage Account is required to have public network access disabled entirely and you want to limit access to Private Link Endpoint only, **then this is not a supported scenario for this feature**. Consider using a different Storage Account with lower access restrictions.
 
 1. Sign into [portal.azure.com](https://portal.azure.com) using the same account where you're running Customer Insights - Journeys.
 

@@ -24,7 +24,6 @@ Export segments of unified customer profiles to generate campaigns, provide emai
 
 ## Known limitations
 
-- Private link in combination with Bring your own storage (BYOS) is not supported.
 - Up to 1 million customer profiles per export to Marketo, which can take up to 3 hours. The number of customer profiles that you can export to Marketo depends on your contract with Marketo.
 - Segments only.
 

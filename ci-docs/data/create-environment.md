@@ -1,7 +1,7 @@
 ---
 title: "Create a new environment"
 description: Steps to create environments in Dynamics 365 Customer Insights.
-ms.date: 07/08/2024
+ms.date: 10/10/2024
 ms.reviewer: mhart
 ms.topic: how-to
 author: Scott-Stabbert
@@ -18,7 +18,7 @@ After [your organization purchased a license for Dynamics 365 Customer Insights]
 
 Use the environments creation experience in Customer Insights - Data for the following scenarios:
 
-- Use your [own Azure Data Lake Storage Account](own-data-lake-storage.md) AND [Azure Private Link](private-link.md)
+- Use your [own Azure Data Lake Storage Account](own-data-lake-storage.md)
 - [Enable data sharing](own-data-lake-storage.md#enable-data-sharing-with-dataverse-from-your-own-azure-data-lake-storage-preview) between your own Data Lake Storage Account and Microsoft Dataverse
 - [Create a copy of an existing environment configuration](manage-environments.md#copy-the-environment-configuration)
 

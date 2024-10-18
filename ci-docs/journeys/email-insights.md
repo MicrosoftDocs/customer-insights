@@ -44,15 +44,15 @@ User agents are labeled as:
 :::image type="content" source="media/email-insights-device.png" alt-text="Screenshot of email insights device type dashboard." lightbox="media/email-insights-device.png":::
 
 > [!NOTE]
-> Data related to user agents may be partial or missing depending on when your journey was running, especially if it was active before August 2024.
-> If you're building custom reports, you can learn more about the list of Globally Unique Identifiers (GUIDs) as they appear in Microsoft Fabric to map data on email clients, device types, browsers, and operating systems: [Map GUIDs to email clients, browsers, operating systems, and device types](map-guids.md)
+> - Data related to user agents may be partial or missing depending on when your journey was running, especially if it was active before August 2024.
+> - If you're building custom reports, you can learn more about the list of Globally Unique Identifiers (GUIDs) as they appear in real-time marketing storage (accessible using Microsoft Fabric) to map data on email clients, device types, browsers, and operating systems: [Map GUIDs to email clients, browsers, operating systems, and device types](map-guids.md)
 
 ## Link insights
 
 Unlock valuable insights into your email's URL engagement and make data-driven decisions to enhance the effectiveness of your email marketing campaigns with link insights. Using link insights, you can understand the performance of each link within your email campaigns and identify the top-performing links based on total clicks, unique clicks, and click rate. Get more clarity by grouping your links by URL or link alias. Learn more: [Edit email components in a live journey](edit-email-in-live-journey.md)
 
 > [!NOTE]
-> Link insights displays data for emails (with links) that have been created after September 2024.
+> Link insights displays data for emails (with links) and journeys created after September 2024.
 
 ## Click map
 
