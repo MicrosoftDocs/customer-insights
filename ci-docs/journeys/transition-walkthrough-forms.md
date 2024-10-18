@@ -47,7 +47,6 @@ The following features may be of interest as you transition from outbound market
 - **Lead linked to parent contact** (2024, wave 2): When a lead is created upon form submission, it's linked to its contact. You can configure the form submission to avoid updating the lead or contact entity if you have a custom flow in place to handle these updates.
 - **Custom unmapped fields** (2024, wave 2): Ability to include fields in a form that aren't connected to any table. Usually this is used for information that's temporary in nature and needed only during the current journey (for example, meals choices for attending an event).
 
-> [!TIP]
-> If you have questions or comments, visit the [Outbound to real-time transition community forum](https://community.dynamics.com/forums/thread/?partialUrl=Outbound-to-Real-Time-Transition)
+[!INCLUDE [transition-comments](./includes/transition-comments.md)]
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
