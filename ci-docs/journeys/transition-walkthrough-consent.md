@@ -36,7 +36,6 @@ The features listed below may be of interest as you transition from outbound mar
 - **Double opt-in**: Double opt-in enables explicit consent requests from customers, allowing you to meet data protection regulations. Double opt-in helps reduce spam, lowering bounce rates and enhancing your sender reputation. Learn more: [Improve engagement and compliance with double opt-in](/dynamics365/release-plan/2023wave2/marketing/dynamics365-marketing/improve-engagement-compliance-double-opt-in)
 - **Consent management view**: Streamline consent management with a new unified view. Quickly update customer consents, see if a customer has opted out of communications, and understand their preferences across all mediums - emails, texts, and custom channels. Control and manage what messages your customers receive, all at a glance. Learn more: [Easily manage customer consent from contact and lead forms](/dynamics365/release-plan/2023wave2/marketing/dynamics365-marketing/easily-manage-customer-consent-contact-lead-forms)
 
-> [!TIP]
-> If you have questions or comments, visit the [Outbound to real-time transition community forum](https://community.dynamics.com/forums/thread/?partialUrl=Outbound-to-Real-Time-Transition)
+[!INCLUDE [transition-comments](./includes/transition-comments.md)]
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]

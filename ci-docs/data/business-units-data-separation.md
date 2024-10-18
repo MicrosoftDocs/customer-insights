@@ -63,7 +63,7 @@ Teams within business units (not business units directly) own customer profiles 
 - The unification rules and customer profile schema are the same for all business units.
 
 > [!NOTE]
-> Any changes to the business unit data separation configuration triggers a full refresh. If your data sources use incremental updates, a [full refresh](incremental-refresh-data-sources.md#run-a-one-time-full-refresh-for-azure-data-lake-data-sources) needs to be triggered manually after changes have been made.
+> Any changes to the business unit data separation configuration triggers a full refresh.
 
 Data relates to a customer profile, for example activities, inherit the business unit ownership from the associated profile.
 

@@ -1,7 +1,7 @@
 ---
 title: Set up managed identities for storage accounts behind firewalls
 description: Learn how to set up managed identities for Azure resources to connect your Data Lake Storage behind firewalls.
-ms.date: 10/11/2024
+ms.date: 10/17/2024
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -13,11 +13,11 @@ ms.custom: bap-template
 
 If you have Azure storage protected by firewalls, use managed identities for Azure resources to connect to Customer Insights - Data. Managed identities provide an automatically managed identity in Microsoft Entra ID for applications, such as Customer Insights - Data, to use when connecting to resources that support Microsoft Entra authentication. The managed identity can't be accessed or used outside of its configured endpoints. Learn more in [Managed identities for Azure resources](/entra/identity/managed-identities-azure-resources).
 
-The following scenarios are appropriate for configuring Customer Insights - Data to use managed identities to connect to firewall-protected Azure storage containers:
+There are three scenarios where Customer Insights - Data can be configured to connect to firewall-protected Azure storage containers:
 
-- Configure Customer Insights - Data at setup to write processed customer insights output data to your private Azure storage container.
-- Create data connections to ingest source data from your Azure storage containers.
-- Configure exports to write specific tables to Azure storage containers.
+- Output storage that can be configured at setup to use your own Azure data lake.
+- Data sources that read from an Azure data lake storage (Common Data Models (CDM), Delta tables, or Synapse).
+- Exports that write to an Azure data lake.
 
 If you use Azure Private Link, review the [prerequisites](#prerequisites) and then [migrate your private links to managed identities](#migrate-private-links-to-managed-identities-for-azure-resources).
 
@@ -85,24 +85,59 @@ Perform these steps for each storage account or container.
 
 ## Migrate private links to managed identities for Azure resources
 
-Change the data connections that use Azure Private Link to use managed identities for Azure resources.
+Existing Azure Private Links must be updated to managed identities for Azure resources by November 30, 2024. Customer Insights - Data provides the information your Azure Subscription Owner needs to enable managed identities. If you're unable to update your instance by the deadline, request a 30 day extension at [CIDManagedIdentity@Microsoft.com](mailto:CIDManagedIdentity@Microsoft.com).
 
-1. Sign in to Customer Insights - Data.
+An *Action required* banner tells you that you have one or more storage accounts that must be upgraded to meet security requirements. In the banner, select **See details**.
 
-1. An *Action required* banner tells you that you have one or more storage accounts that must be upgraded to meet security requirements. In the banner, select **See details**.
+   :::image type="content" source="media/upgrade-to-managed-id.png" alt-text="Screenshot showing the 'Action required' banner and message box to upgrade to managed identities for Azure.":::
 
-   :::image type="content" source="media/upgrade-to-managed-id.jpg" alt-text="Screenshot showing the 'Action required' banner and message box to upgrade to managed identities for Azure.":::
+1. Expand **Step 1: Enable Azure Managed Identity in Azure admin portal**.
 
-1. In the *Action required: Upgrade to Azure Managed Identities* message box, expand **Step 1: Enable Azure Managed Identity in Azure admin portal**.
+   - Select **Copy storage account information**. All the information required for migration is copied. Send the information to your Azure Subscription Owner to enable managed identities. If you want to view the connection details, select **Expand**.
 
-1. Select **Copy storage account information**. If you want to view the information, select **Expand**.
+   - When your Azure Subscription Owner confirms they enabled managed identities for Azure access, go to step 2 to update your connections.
 
-1. Paste the information where it's easily accessible.
+1. Expand **Step 2: Update your connections**, and then select **Attempt connection updates**. Wait for the connections to be updated. If an error occurs, contact your Azure Subscription Owner.
 
-1. [Enable access to storage through managed identities](#enable-access-to-storage-through-managed-identities).
+### FAQ
 
-1. In the *Action required: Upgrade to Azure Managed Identities* message box, expand **Step 2: Update your connections**, and then select **Attempt connections updates**.
+#### Why are we doing this?
 
-1. Wait for the connections to be updated.
+Managed identities for Azure resources is the recommended way to connect to Azure resources behind a firewall using a restricted service principal that can only be used between two designated endpoints. The credentials for the service principal can't be exported or viewed.
+
+#### Where can I learn more about managed identities for Azure resources? 
+
+Go to [Managed identities for Azure resources](/entra/identity/managed-identities-azure-resources/overview).
+
+#### How do I enable managed identity for Azure resources access to storage containers?
+
+The Azure Subscription Owner enables managed identities in the Azure CLI using a script provided by Microsoft. Go to [Set up managed identities for storage accounts behind firewalls](#set-up-managed-identities-for-storage-accounts-behind-firewalls).
+
+#### How do I configure connections in Customer Insights - Data to use managed identities for Azure resources?
+
+Select **This storage account is behind a firewall** when creating a connection. The storage container must exist and be configured to allow access via managed identities for Azure resources before the data connection can be saved.
+
+#### We have other products that use private links to these containers. Will they continue to function after we move to managed identities? 
+
+Yes, existing private links will continue to function. If you no longer need them, we recommend removing the private links in Azure after moving to managed identities.
+
+#### I’m still seeing "Enable private links" in my instance
+
+Instances where connections show **Enable private links** will be updated soon. Your instance is ready to use managed identities when new data connections show **This storage account is behind a firewall**.
+
+#### What are the scenarios in Customer Insights – Data that use managed identities for Azure?
+
+There are three scenarios where CI-Data connects to an Azure data lake that can be behind a firewall:
+
+- Output storage that can be configured at setup to use your own Azure data lake.
+- Data sources that read from an Azure data lake storage (Common Data Models (CDM), Delta tables, or Synapse).
+- Exports that write to an Azure data lake.
+
+#### How do we request an extension?
+
+Send extension requests to [CIDManagedIdentity@Microsoft.com](mailto:CIDManagedIdentity@Microsoft.com). Include all Customer Insights – Data InstanceIDs (located on the URL) in the request.
+
+For other questions, contact [CIDManagedIdentity@Microsoft.com](mailto:CIDManagedIdentity@Microsoft.com).
+
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
