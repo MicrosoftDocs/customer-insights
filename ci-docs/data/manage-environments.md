@@ -27,11 +27,15 @@ Edit details of an existing environment such as the name or setting the default 
 
 1. Select **Review and finish**, then **Update** to apply the changes.
 
-## Copy the environment configuration
+## Copy the environment configuration (preview)
+
+[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
 You can copy the configuration of an existing environment when [creating a new one](create-environment.md). Select the source from the list of all available environments in your organization.
 
 :::image type="content" source="media/environment-settings-dialog.png" alt-text="Screenshot of the settings options in the environment settings.":::
+
+[!INCLUDE [public-preview-note](includes/public-preview-note.md)]
 
 The following configuration settings are copied:
 
