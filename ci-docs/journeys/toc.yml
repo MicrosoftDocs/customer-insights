@@ -198,58 +198,58 @@
       href: real-time-marketing-create-custom-channels.md
     - name: Use AI-driven run-time channel optimization
       href: real-time-marketing-channel-optimization.md
-  - name: Journeys
+  - name: Triggers
+    items:
+    - name: Create a trigger-based journey
+      href: real-time-marketing-trigger-based-journey.md
+    - name: Real-time journeys triggers
+      href: real-time-marketing-triggers.md
+    - name: Use natural language in journeys
+      href: real-time-marketing-natural-language.md
+    - name: Create custom triggers
+      href: real-time-marketing-custom-triggers.md
+    - name: Trigger a journey based on a Dataverse record change
+      href: real-time-marketing-dataverse-trigger.md
+    - name: Trigger an action outside of a journey
+      href: real-time-marketing-custom-actions.md
+    - name: Test custom triggers before using them
+      href: real-time-marketing-test-triggers.md
+  - name: Segments
+    items:
+    - name: Segmentation overview
+      href: real-time-marketing-segments.md
+    - name: Create segments
+      items:
+      - name: Build segments
+        href: real-time-marketing-build-segments.md
+      - name: Improve targeting with the redesigned segment builder
+        href: real-time-marketing-redesigned-segment-builder.md
+      - name: Copilot - Target the right customers using query assist
+        href: real-time-marketing-natural-language-segments.md
+      - name: Sync data tables into the segment builder
+        href: real-time-marketing-sync-data-tables.md
+      - name: Create segments using unified profiles and customer measures
+        href: unified-profile-segment-creation.md
+      - name: Create a static snapshot of a segment
+        href: real-time-marketing-static-snapshot.md
+    - name: Create a segment-based journey
+      href: real-time-marketing-segment-based-journey.md    
+    - name: Best practices for outbound segments in real-time journeys
+      href: outbound-marketing-segments-in-customer-insights-journeys.md
+    - name: Use Customer Insights - Data profiles and segments
+      href: real-time-marketing-ci-profile.md      
+    - name: Automatic segment management
+      href: auto-segment-management.md
+    - name: Individually manage your customer list
+      href: real-time-marketing-include-exclude.md
+    - name: "Troubleshooting: Segments show incorrect member count"
+      href: segment-member-count.md
+  - name: Create real-time journeys
     items:
     - name: Journeys overview
       href: journeys-overview.md
     - name: "Preview: Copilot - Create journeys using AI assistance"
       href: real-time-marketing-use-copilot-create-journey.md
-    - name: Trigger-based journeys
-      items:
-      - name: Create a trigger-based journey
-        href: real-time-marketing-trigger-based-journey.md
-      - name: Customer Insights - Journeys triggers
-        href: real-time-marketing-triggers.md
-      - name: Use natural language in journeys
-        href: real-time-marketing-natural-language.md
-      - name: Create custom triggers
-        href: real-time-marketing-custom-triggers.md
-      - name: Trigger a journey based on a Dataverse record change
-        href: real-time-marketing-dataverse-trigger.md
-      - name: Trigger an action outside of a journey
-        href: real-time-marketing-custom-actions.md
-      - name: Test custom triggers before using them
-        href: real-time-marketing-test-triggers.md
-    - name: Segment-based journeys
-      items:
-      - name: Segmentation overview
-        href: real-time-marketing-segments.md
-      - name: Create segments
-        items:
-        - name: Build segments
-          href: real-time-marketing-build-segments.md
-        - name: Improve targeting with the redesigned segment builder
-          href: real-time-marketing-redesigned-segment-builder.md
-        - name: Copilot - Target the right customers using query assist
-          href: real-time-marketing-natural-language-segments.md
-        - name: Sync data tables into the segment builder
-          href: real-time-marketing-sync-data-tables.md
-        - name: Create segments using unified profiles and customer measures
-          href: unified-profile-segment-creation.md
-        - name: Create a static snapshot of a segment
-          href: real-time-marketing-static-snapshot.md
-      - name: Best practices for outbound segments in real-time journeys
-        href: outbound-marketing-segments-in-customer-insights-journeys.md
-      - name: Use Customer Insights - Data profiles and segments
-        href: real-time-marketing-ci-profile.md      
-      - name: Create a segment-based journey
-        href: real-time-marketing-segment-based-journey.md
-      - name: Automatic segment management
-        href: auto-segment-management.md
-      - name: Individually manage your customer list
-        href: real-time-marketing-include-exclude.md
-      - name: "Troubleshooting: Segments show incorrect member count"
-        href: segment-member-count.md
     - name: Journey goals and A/B testing
       items:
       - name: Set a business goal and measure progress through a journey
