@@ -198,7 +198,53 @@
       href: real-time-marketing-create-custom-channels.md
     - name: Use AI-driven run-time channel optimization
       href: real-time-marketing-channel-optimization.md
-  - name: Journeys
+  - name: Triggers
+    items:
+    - name: Create a trigger-based journey
+      href: real-time-marketing-trigger-based-journey.md
+    - name: Real-time journeys triggers
+      href: real-time-marketing-triggers.md
+    - name: Use natural language in journeys
+      href: real-time-marketing-natural-language.md
+    - name: Create custom triggers
+      href: real-time-marketing-custom-triggers.md
+    - name: Trigger a journey based on a Dataverse record change
+      href: real-time-marketing-dataverse-trigger.md
+    - name: Trigger an action outside of a journey
+      href: real-time-marketing-custom-actions.md
+    - name: Test custom triggers before using them
+      href: real-time-marketing-test-triggers.md
+  - name: Segments
+    items:
+    - name: Segmentation overview
+      href: real-time-marketing-segments.md
+    - name: Create segments
+      items:
+      - name: Build segments
+        href: real-time-marketing-build-segments.md
+      - name: Improve targeting with the redesigned segment builder
+        href: real-time-marketing-redesigned-segment-builder.md
+      - name: Copilot - Target the right customers using query assist
+        href: real-time-marketing-natural-language-segments.md
+      - name: Sync data tables into the segment builder
+        href: real-time-marketing-sync-data-tables.md
+      - name: Create segments using unified profiles and customer measures
+        href: unified-profile-segment-creation.md
+      - name: Create a static snapshot of a segment
+        href: real-time-marketing-static-snapshot.md
+    - name: Create a segment-based journey
+      href: real-time-marketing-segment-based-journey.md    
+    - name: Best practices for outbound segments in real-time journeys
+      href: outbound-marketing-segments-in-customer-insights-journeys.md
+    - name: Use Customer Insights - Data profiles and segments
+      href: real-time-marketing-ci-profile.md      
+    - name: Automatic segment management
+      href: auto-segment-management.md
+    - name: Individually manage your customer list
+      href: real-time-marketing-include-exclude.md
+    - name: "Troubleshooting: Segments show incorrect member count"
+      href: segment-member-count.md
+  - name: Create real-time journeys
     items:
     - name: Journeys overview
       href: journeys-overview.md
@@ -270,7 +316,7 @@
       items:
       - name: Edit a live journey
         href: real-time-marketing-edit-journey.md
-      - name: Edit email components in a live journey
+      - name: "Preview: Edit email components in a live journey"
         href: edit-email-in-live-journey.md
       - name: Enhanced journey reminders
         href: real-time-marketing-enhanced-journey-reminders.md
@@ -348,7 +394,7 @@
       href: real-time-marketing-manage-forms.md
     - name: Troubleshoot forms
       href: real-time-marketing-troubleshooting-forms.md
-    - name: Prefill values for forms and event registration
+    - name: "Preview: Prefill values for forms and event registration"
       href: real-time-marketing-form-prefill.md
   - name: Lead generation and management
     items:
@@ -374,6 +420,8 @@
       href: real-time-marketing-cross-journey-analytics.md
     - name: How to use aggregate channel analytics
       href: real-time-marketing-channel-analytics.md
+    - name: How to use email insights
+      href: email-insights.md
     - name: Customer Insights - Journeys integration with Microsoft Fabric
       items:
       - name: Customer Insights - Journeys integration with Microsoft Fabric overview
@@ -600,6 +648,8 @@
       href: customize-open-powerapps.md
     - name: Customize the form editor
       href: real-time-marketing-customize-forms.md
+    - name: Add (customized) contact or lead insights to custom forms
+      href: add-insights-to-custom-forms.md
     - name: Create and customize marketing calendars
       href: customize-marketing-calendars.md
     - name: Create and customize template labels
@@ -1032,8 +1082,6 @@
       items: 
       - name: Work with customer journeys using an API
         href: developer/basic-operations-on-customer-journey.md
-      - name: Extend customer journeys using code
-        href: developer/extend-customer-journey-using-code.md
     - name: Metadata reference for your organization
       items: 
       - name: Metadata reference for your organization

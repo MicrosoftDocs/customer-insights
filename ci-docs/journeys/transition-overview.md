@@ -23,7 +23,7 @@ New trials can only be created with real-time journeys.
 
 ## Guidance for new customers
 
-New customers who install Customer Insights - Journeys no longer see the outbound marketing module and can't install it. Because outbound marketing is being removed as described above, we require new customers to adopt real-time journeys.
+New customers who install Customer Insights - Journeys no longer see the outbound marketing module and can't install it. Because outbound marketing is being removed, we require new customers to adopt real-time journeys.
 
 Here are some recommendations depending on your situation:
 
@@ -41,7 +41,7 @@ Here are some recommendation actions for existing customers depending on your ne
 | Situation                                                                                                          | Action                                                                                                                                                                                                                                                       |
 |--------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | I provisioned a new org (or copied, migrated, or restored an existing org) and don't see outbound marketing                                             | This is expected; outbound marketing is no longer included in new orgs. We strongly recommend using real-time journeys as outbound marketing will be removed on June 30, 2025. See [Why should I transition to real-time journeys?](transition-faqs.md#why-should-i-transition-to-real-time-journeys) |
-| I'm planning to transition to real-time journeys soon but need outbound marketing until then.  | You can add outbound marketing back using the **Enable** link available on the **Settings** > **Versions** page. <br><br> **Important**: To see the link and add outbound marketing, you need to be an admin. If you're not an admin, ask someone who is to do this step. If you still don't see the link, follow the guidance for [requesting outbound marketing to be added](transition-overview.md#if-the-enable-link-isnt-available-or-doesnt-work).                 |
+| I'm planning to transition to real-time journeys soon but need outbound marketing until then.  | You can add outbound marketing back using the **Enable** link available on the **Settings** > **Versions** page. <br><br> **Important**: To see the link and add outbound marketing, you need to be an admin. If you're not an admin, ask someone who is to do this step. If you still don't see the link, follow the guidance for [requesting outbound marketing to be added](transition-overview.md#if-the-enable-link-isnt-available-or-doesnt-work). If you need a new portal provisioned with your outbound marketing instance, you can request it at the time of provisioning or afterwards. You can't attach an existing portal; you can only have a new one provisioned for your outbound marketing instance.                |
 
 ### If the "Enable" link isn't available or doesn't work
 
@@ -53,7 +53,6 @@ If you're an existing outbound marketing user and the "Enable" outbound marketin
 - This form requires an email address. The email address is used to communicate receipt of the request, confirming when the request has been reviewed, and if needed, ask for additional information.
 - Most requests are reviewed in about three to five business days once all required information is available.
 
-> [!TIP]
-> If you have questions or comments, visit the [Outbound to real-time transition community forum](https://community.dynamics.com/forums/thread/?partialUrl=Outbound-to-Real-Time-Transition)
+[!INCLUDE [transition-comments](./includes/transition-comments.md)]
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]

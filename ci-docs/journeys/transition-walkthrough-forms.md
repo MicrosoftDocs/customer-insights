@@ -1,7 +1,7 @@
 ---
 title: Transition marketing pages and forms
 description: Learn how to transition marketing pages and forms capabilities from outbound marketing to real-time journeys in Dynamics 365 Customer Insights - Journeys.
-ms.date: 06/21/2024
+ms.date: 09/26/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -34,17 +34,19 @@ It's worth noting that real-time journeys forms are more advanced than an equiva
 Consider the following when transitioning forms:
 
 -	Because the underlying concept for forms is different between the modules, there's no way to automatically transition an outbound marketing form to a real-time journeys form.
--	Real-time journeys forms are continuously improved. However, there are still details that aren't available in real-time journeys forms, for example, form prefill, lead linked to parent contact, custom unmapped form fields, and web tracking.
+-	Real-time journeys forms are continuously improved. However, there are still details that aren't available in real-time journeys forms, for example, lead linked to parent contact, custom unmapped form fields, cascading forms fields, custom form templates, and web tracking.
+
+#### Workaround for custom form templates
+
+You can create a form and name it "template." Your users should avoid creating new forms from scratch. Instead, they should open the "template" form and save it as a new one.
 
 ## Relevant upcoming features
 
 The following features may be of interest as you transition from outbound marketing to real-time journeys. These features provide parity, equivalent, or better functionality than what was available in outbound marketing.
 
-- **Form prefill** (2024, wave 2): Forms populate with information (for example, first and last name) when a user visits the form using the link provided in the message sent by Customer Insights - Journeys  
-- **Lead linked to parent contact**: When a lead is created upon form submission, it's linked to its contact.
-- **Custom unmapped fields**: Ability to include fields in a form that aren't connected to any table. Usually this is used for information that's temporary in nature and needed only during the current journey (for example, meals choices for attending an event).
+- **Lead linked to parent contact** (2024, wave 2): When a lead is created upon form submission, it's linked to its contact. You can configure the form submission to avoid updating the lead or contact entity if you have a custom flow in place to handle these updates.
+- **Custom unmapped fields** (2024, wave 2): Ability to include fields in a form that aren't connected to any table. Usually this is used for information that's temporary in nature and needed only during the current journey (for example, meals choices for attending an event).
 
-> [!TIP]
-> If you have questions or comments, visit the [Outbound to real-time transition community forum](https://community.dynamics.com/forums/thread/?partialUrl=Outbound-to-Real-Time-Transition)
+[!INCLUDE [transition-comments](./includes/transition-comments.md)]
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
