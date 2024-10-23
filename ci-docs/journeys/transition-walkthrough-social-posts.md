@@ -21,7 +21,6 @@ search.audienceType:
 
 The posting to social media feature from outbound marketing has no equivalent in real-time journeys. There are currently no plans to incorporate the feature.
 
-> [!TIP]
-> If you have questions or comments, visit the [Outbound to real-time transition community forum](https://community.dynamics.com/forums/thread/?partialUrl=Outbound-to-Real-Time-Transition)
+[!INCLUDE [transition-comments](./includes/transition-comments.md)]
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]

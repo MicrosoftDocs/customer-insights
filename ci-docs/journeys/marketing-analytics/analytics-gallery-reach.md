@@ -30,10 +30,6 @@ Use the following links to download a template for running the report on your ow
 > [!NOTE]
 > You can find the full list of marketing analytics downloads in the [marketing analytics reporting gallery](analytics-gallery-start.md#gallery).
 
-![Marketing reach analysis.](media/MarketingReach/MarketingReach-ReachPerJourneyWithActivities.png "Show journeys and the activities of your audience")
-
-![Contacts in marketing automation.](media/MarketingReach/MarketingReach-ContactsInMarketingAutomation.png "Find contacts included in customer journeys and their activities")
-
 ***Happy analytics reporting with Dynamics 365 Customer Insights - Journeys!***
 
 

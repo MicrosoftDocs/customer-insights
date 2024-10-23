@@ -92,7 +92,7 @@ An organization owns two different lines of businesses Automobile and Luxury ret
 
 - All permissions available to the Contributor.
 - Change settings on the **System** page, including the working language, refresh schedules for your system processes, giving consent for Copilot, and exporting diagnostic logs.
-- Change settings on the **Permissions** page, including users, API keys, private links, and key vault.
+- Change settings on the **Permissions** page, including users, API keys, and key vault.
 - Set search and filter definitions for the Customers page using the **Search & filter index** page (accessible via the **Customers** page).
 - Manage connections and allow them for other user roles on **Connections** page.
 - Manage configuration and enrich customer profiles from the **Enrichment** page (for all enrichments).

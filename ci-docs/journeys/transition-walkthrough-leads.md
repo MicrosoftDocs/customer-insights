@@ -43,7 +43,6 @@ The features listed below may be of interest as you transition from outbound mar
 
 - **Signal sales for qualified leads**: Easily route qualified leads identified by the marketing team to a seller without customized solutions or manual intervention. This boosts marketing and sales teams' productivity while maintaining focus on the right customers. Learn more: [Increase lead conversions by routing to the correct sales rep](/dynamics365/release-plan/2023wave2/marketing/dynamics365-marketing/increase-lead-conversions-routing-correct-sales-rep)
 
-> [!TIP]
-> If you have questions or comments, visit the [Outbound to real-time transition community forum](https://community.dynamics.com/forums/thread/?partialUrl=Outbound-to-Real-Time-Transition)
+[!INCLUDE [transition-comments](./includes/transition-comments.md)]
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]

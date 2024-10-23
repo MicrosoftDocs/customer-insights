@@ -1,6 +1,6 @@
 ---
-title: "Data sources overview"
-description: "Learn how to import or ingest data from various sources."
+title: Data sources overview
+description: Learn how to import or ingest data from various sources.
 ms.date: 06/24/2024
 ms.topic: overview
 author: Scott-Stabbert
@@ -13,64 +13,64 @@ ms.custom: bap-template
 
 To configure Dynamics 365 Customer Insights - Data, first bring in source data for processing. Customer Insights - Data provides several types of data connectors to connect to and ingest data from a broad set of sources.
 
-This article describes options that can affect data ingestion performance.
+This article describes options that can affect the performance of data ingestion.
 
 ## Delta format
 
-The Delta data format is the native processing format used by Customer Insights – Data. If you can provide source data in the Delta format, there are many advantages.
+The Delta data format is the native processing format that Customer Insights – Data uses. If you can provide source data in the Delta format, there are many advantages.
 
-- **Better efficiency with Customer Insights - Data**: Delta format is used internally by Customer Insights - Data.
+- **Better efficiency with Customer Insights - Data**: Customer Insights - Data uses Delta format internally.
 - **Faster data ingestion**: Delta format provides superior compression for faster data transfers.
-- **Faster unification**: With the [Delta time travel feature](connect-delta-lake.md#delta-lake-time-travel-and-data-refreshes), Customer Insights – Data unifies just the changed data rather than reprocessing the entire set of data. Incremental unification requires all data inputs to unification be in the Delta format.
-- **Reduction in data corruption issues**: Reduces corrupted partitions and common data corruption issues caused by older formats such as CSV.
+- **Faster unification**: When the [Delta time travel feature](connect-delta-lake.md#delta-lake-time-travel-and-data-refreshes) is used, Customer Insights – Data unifies only data that changed. It doesn't reprocess the whole set of data. For incremental unification, all data inputs to unification must be in the Delta format.
+- **Fewer data corruption issues**: Delta format reduces the corrupted partitions and common data corruption issues that are caused by older formats, such as comma-separated value (CSV) format.
 - **More reliable data management design**: Delta format doesn't require manual updates to manifests, schemas, and partition files.
 - **Higher data validity**: Delta format provides atomicity, consistency, isolation, durability (ACID) transactions, and isolation levels in Spark.
 
 You can use Delta format with the following connectors:
 
-- [Azure Data Lake Delta tables](connect-delta-lake.md)
+- [Azure Data Lake Storage Delta tables](connect-delta-lake.md)
 - [Microsoft Dataverse](connect-dataverse.md)
 
 [!INCLUDE [delta-lake-info](./includes/delta-lake-info.md)]
 
 ## Data source attachment or import
 
-A key consideration when choosing how to ingest your data is whether the connector attaches to the data or makes copies of the data. Customer Insights - Data recommends attaching to data because the data is directly accessed when it's time to process it. Copying the data causes delays when the data is updated.
+When you're deciding how to ingest your data, a key consideration is whether the data connector attaches to the data or makes copies of it. When you use Customer Insights - Data, we recommend that you use a connector that attaches to the data. In this way, the data is directly accessed when it's time to process it. If you use a connector that copies the data, delays can occur when the data is updated.
 
-The following data connectors attach to your data.
+The following data connectors attach to your data:
 
-- [Azure Data Lake Delta tables](connect-delta-lake.md)
+- [Azure Data Lake Storage Delta tables](connect-delta-lake.md)
 - [Azure Data Lake Storage Common Data Model tables](connect-common-data-model.md)
 - [Microsoft Dataverse](connect-dataverse.md)
 - [Azure Synapse Analytics (preview)](connect-synapse.md)
 
-If you can't use one of the attached connectors, copy data with one of the [Power Query connectors](connect-power-query.md). Power Query provides a useful way to transform the data.
+If you can't use a connector that attaches to your data, copy the data by using one of the [Power Query connectors](connect-power-query.md). Power Query provides a useful way to transform the data.
 
 ## Data profiling
 
-When data is ingested, Customer Insights – Data performs some basic data profiling such as the frequency of repeated values in a column. You can use profile data to understand your data and address issues. For example, if you're matching on the column FullName, data profile can help you detect that a default value of "Enter your name" appears on 10K rows. Matching on this value would cause 10K rows to match that shouldn’t. You can enable data profiling for more columns when you add your Azure Data Lake, Delta tables, or Azure Synapse data sources.
+When data is ingested, Customer Insights – Data performs some basic data profiling. For example, it profiles the frequency of repeated values in a column. You can use profile data to understand your data and address issues. For example, if you're matching on the `FullName` column, data profiling can help you detect that the default value, *Enter your name*, appears in 10,000 rows. Therefore, if you match on this value, 10,000 rows that should not be matched are matched. When you add your Azure data lake, Delta tables, or Azure Synapse data sources, you can enable data profiling for more columns.
 
-After you ingest the data, view the results of data profiling:
+After you ingest the data, you can view the results of data profiling.
 
-Go to **Data** > **Tables** and select a table. Select the **Summary** icon for a field, such as DateOfBirth.
+1. Go to **Data** \> **Tables**, and select a table. Then, in the row for a field (for example, `DateOfBirth`), in the **Summary** column, select the **Summary** icon.
 
-   :::image type="content" source="media/tables-summary-icon.png" alt-text="Tables page showing Summary icon highlighted on DateOfBirth.":::
+    :::image type="content" source="media/tables-summary-icon.png" alt-text="Screenshot of the Attributes tab on the page for the Customer table, highlighting the Summary icon for the DateOfBirth field.":::
 
-View the details for any errors or missing values.
+1. Review the details for any errors or missing values.
 
-   :::image type="content" source="media/tables-dateofbirth.png" alt-text="Summary graph for DateOfBirth.":::
+    :::image type="content" source="media/tables-dateofbirth.png" alt-text="Screenshot that shows the summary for the DateOfBirth field, including the chart of top values by count.":::
 
 ## Data sources page
 
-The **Data Sources** page lists the data sources in two sections:
+The **Data sources** page lists the data sources in two sections:
 
-- **Managed by me**: Power Platform dataflows created and managed only by you. Other users can only view these dataflows but not edit, refresh, or delete them.
-- **Managed by others**: Power Platform dataflows created by other admins. You can only view them. It lists the owner of the dataflow to reach out to for any assistance.
+- **Managed by me**: Microsoft Power Platform dataflows that you created and manage. Other users can only view these dataflows. They can't edit, refresh, or delete them.
+- **Managed by others**: Microsoft Power Platform dataflows that other admins created. You can only view these dataflows. This section shows the owner of each dataflow, so that you can contact them if you need any assistance.
 
 > [!NOTE]
-> All tables can be viewed and used by other users. While data sources are owned by the user who created them, the resulting tables from the data ingestion can be used by every user of Customer Insights - Data.
+> Other users can view and use all tables. Although each *data source* is owned by the user who created it, every user of Customer Insights - Data can use all the *tables* that result from data ingestion.
 
-:::image type="content" source="media/data-sources.png" alt-text="Screenshot of the Data sources screen.":::
+:::image type="content" source="media/data-sources.png" alt-text="Screenshot of the Data sources page.":::
 
 ## Next steps
 

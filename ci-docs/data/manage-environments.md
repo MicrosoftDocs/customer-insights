@@ -1,7 +1,7 @@
 ---
 title: Manage environments
 description: Learn how to to manage environments as an admin.
-ms.date: 12/15/2023
+ms.date: 09/26/2024
 ms.topic: how-to
 ms.reviewer: mhart
 author: Scott-Stabbert
@@ -27,15 +27,22 @@ Edit details of an existing environment such as the name or setting the default 
 
 1. Select **Review and finish**, then **Update** to apply the changes.
 
-## Copy the environment configuration
+## Copy the environment configuration (preview)
+
+[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
 You can copy the configuration of an existing environment when [creating a new one](create-environment.md). Select the source from the list of all available environments in your organization.
 
 :::image type="content" source="media/environment-settings-dialog.png" alt-text="Screenshot of the settings options in the environment settings.":::
 
+[!INCLUDE [public-preview-note](includes/public-preview-note.md)]
+
 The following configuration settings are copied:
 
 - Data sources imported via Power Query
+- Data sources based on Azure Data Lake Storage
+- Data sources based on Delta tables
+- Data sources based on Dataverse tables
 - Data unification configuration
 - Segments
 - Measures
@@ -97,8 +104,8 @@ You can reset an environment to an empty state for a fresh start. To reset an en
 
 When you reset Customer Insights - Data environment, several things happen:
 
-- The system deletes all your configurations for data sources, unification rules, segments, etc. Except [your Azure Data Lake Storage Gen 2 connection](own-data-lake-storage.md) (if configured). However, after the reset, you need to [enable data sharing](own-data-lake-storage.md#enable-data-sharing-with-dataverse-from-your-own-azure-data-lake-storage-preview) (if configured) again.
-- Data stored outside the Dataverse environment, such as your source data or data in your [own Data Lake](own-data-lake-storage.md) is not removed.
+- The system deletes all your configurations. Except [your Azure Data Lake Storage Gen 2 connection](own-data-lake-storage.md) (if configured). However, after the reset, you need to [enable data sharing](own-data-lake-storage.md#enable-data-sharing-with-dataverse-from-your-own-azure-data-lake-storage-preview) (if configured) again.
+- Data stored outside the Dataverse environment, such as your source data or data in your [own Data Lake](own-data-lake-storage.md) is not removed. So if you want to change data sources, consider creating a new environment.
 - The system removes permissions from users that had access to the environment. The user who initiated the reset becomes the owner and admin of the reset environment.
 
 The reset operation assigns a new instance ID to your environment. Therefore, update bookmarks for your Customer Insights - Data environment.

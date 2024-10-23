@@ -1,7 +1,7 @@
 ---
 title: Functional areas overview
 description: Overview of transitioning functional areas from outbound marketing to real-time journeys in Dynamics 365 Customer Insights - Journeys.
-ms.date: 11/16/2023
+ms.date: 10/08/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -16,7 +16,7 @@ search.audienceType:
 > [!IMPORTANT]
 > **The [outbound marketing](user-guide.md) module will be removed from Customer Insights - Journeys on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](transition-overview.md)
 
-The [playbook for transitioning from outbound marketing to real-time journeys](https://community.dynamics.com/blogs/post/?postid=1b4394d5-7764-4484-aba9-c7f972292c10) suggests looking at logical marketing campaigns that might contain a number of different marketing artifacts like segments, emails, and journeys. It's also important to know how the different building blocks in outbound can be transitioned or implemented in real-time journeys.
+The [playbook for transitioning from outbound marketing to real-time journeys](https://community.dynamics.com/blogs/post/?postid=1b4394d5-7764-4484-aba9-c7f972292c10) suggests looking at logical marketing campaigns that might contain many different marketing artifacts like segments, emails, and journeys. It's also important to know how the different building blocks in outbound can be transitioned or implemented in real-time journeys.
 
 This article explores some general concepts to think about before diving into transition details for individual feature areas.
 
@@ -53,9 +53,16 @@ Transition functional areas articles:
 
 Some Dynamics 365 Marketing customers made customizations in outbound marketing tables like “e-mail” or “customer journey” in order to meet specific requirements. In some cases, the real-time journeys module uses its own tables to provide the functionality (for example, in email and journeys), while in other cases, it retains the same tables (for example, event planning tables). Tables like “e-mail” or “journey” are also customizable and new fields will also show up in the user interface. However, it's recommended to first look at the out-of-the-box capabilities. Many requirements that created a new for customization in the past can now be addressed by standard features.
 
-In most scenarios, it's not possible to transfer outbound marketing customizations. Dynamics 365 Marketing customers are advised to review their requirements and consider that previous customizations may no longer be needed due to the enhancements provided by real-time journeys. Where customizations are still required, it's likely that they'll need to be re-implemented (for example, custom fields re-added).
+In most scenarios, it's not possible to transfer outbound marketing customizations. Dynamics 365 Marketing customers are advised to review their requirements and consider that previous customizations may no longer be needed due to the enhancements provided by real-time journeys. Where customizations are still required, it's likely that they'll need to be reimplemented (for example, custom fields readded).
 
-> [!TIP]
-> If you have questions or comments, visit the [Outbound to real-time transition community forum](https://community.dynamics.com/forums/thread/?partialUrl=Outbound-to-Real-Time-Transition)
+## Hide outbound marketing
+
+When you're finished migrating to real-time journeys from outbound marketing, you can clean up the user experience by hiding outbound marketing. In the area switcher, choose **Settings** and then **Versions** where you'll see a button to **Hide outbound marketing**. Selecting this button hides outbound marketing from the user experience so your team can no longer navigate to the module and spin up new content or journeys there.
+
+## What happens when outbound marketing is removed by Microsoft?
+
+When outbound marketing is formally retired, Microsoft will clean up the services in the background. To understand the details of exactly what will be cleaned up and what happens to your data, see [Real-time journeys transition FAQs](transition-faqs.md#what-will-happen-to-outbound-tables-and-data-when-outbound-marketing-is-removed)
+
+[!INCLUDE [transition-comments](./includes/transition-comments.md)]
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]

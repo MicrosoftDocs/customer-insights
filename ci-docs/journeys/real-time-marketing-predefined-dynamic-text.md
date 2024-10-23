@@ -120,11 +120,6 @@ If needed, you can change the language and region setting along with time zone b
 
 ### Using data that is reached by traversing a 1-to-many relation
 
-> [!TIP]
-> How to enable the preview for more data for personalization
->
-> If you don’t see this feature in your app, contact your admin who can activate it by going to **Settings > Overview > Feature switches**, scrolling to **Personalization** area, enabling the **One-to-many-relation for Dynamic text** feature switch, and saving the setting by selecting on **Save** on the top right corner.
-
 Personalized messages drive engagement that helps deliver desired business outcomes. [Dynamic text](real-time-marketing-predefined-dynamic-text.md) in Customer Insights - Journeys makes it easy to include personalized information for each recipient. Previously, dynamic text was limited to data that could be reached by 1-to-1 or many-to-1 relations. Now, you can use data that requires traversing 1-to-many or many-to-many relations, unlocking even more data for personalization. 
 
 Watch this video to learn more:
