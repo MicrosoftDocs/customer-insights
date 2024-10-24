@@ -21,6 +21,60 @@ Customer Insights - Journeys updates are [pushed to customers automatically](htt
 
 To submit and vote on **feature requests** and **product suggestions**, go to the [Dynamics 365 Application Ideas portal](https://experience.dynamics.com/ideas/categories/?forum=dfa5b83d-9e4c-e811-a956-000d3a1bef07&forumName=Dynamics%20365%20Marketing).
 
+## November 2024 update
+
+| App              | GA release      |
+|------------------|-----------------|
+| Customer Insights - Journeys        |   |
+
+### General availability
+
+- **TITLE** 
+
+	- Text
+	
+	- [Release plan]() 
+	- [Docs]()  
+	- [Watch the video]()
+
+- **TITLE** 
+
+	- Text
+	
+	- [Release plan]() 
+	- [Docs]()  
+	- [Watch the video]()
+
+- **TITLE** 
+
+	- Text
+	
+	- [Release plan]() 
+	- [Docs]()  
+	- [Watch the video]()
+
+### Public preview
+
+- **TITLE** 
+
+	- Text
+	
+	- [Release plan]() 
+	- [Docs]()  
+	- [Watch the video]()
+
+### Private preview
+
+- **TITLE** 
+
+	- Text
+	
+	- [Release plan]() 
+	- [Docs]()  
+	- [Watch the video]()
+
+### Monthly enhancements
+
 ## October 2024 update
 
 | App              | GA release      |
