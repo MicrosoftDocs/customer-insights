@@ -54,9 +54,16 @@ You can extend the trial in the app directly. You can extend your trial once.
 
 ### Can I convert the trial to a paid license?
 
-Generally, we recommend starting fresh with your own data when upgrading to the paid version of Customer Insights.
+You cannot convert your trial instance of Customer Insights - Data to production once you have a paid license. To save your work, as the administrator you can copy the trial settings to a production instance. 
 
-Optionally, if you only use Customer Insights, you can copy your data from a trial environment if you purchase Customer Insights. You must be the administrator of the Customer Insights trial and the Dynamics 365 administrator in your organization to migrate the settings from a trial environment to a paid environment.
+You should begin with a **Production** type power platform environment which you can create once you have a paid Dynamics 365 Customer Insights license on your tenant: 
+1. Go to [admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com) and create an environment of the desired type (production, sandbox, or subscription-based trial).
+1. To install Dynamics 365 applications, you must activate the "Enable Dataverse" and "Enable D365 Apps" toggles for the environment to allow apps.
+
+Back in Customer Insights - Data you can create a new instance and associate it with the new production environment you just created and copy the settings and configuration you created in the trial: 
+1. In Customer Insights - Data, in the upper right corner open the environment chooser and click **+ New**. 
+1. Choose the 'Copy from existing environment' checkbox and select your trial environment from the dropdown to copy data from.
+1. When it asks you which Dataverse environment to associate with, choose the new production environment you created. 
 
 After signing in to your paid environment of Customer Insights for the first time, you're asked to create a new environment. In this process, you can choose to copy the configuration from an existing environment and migrate most of the settings. If you have the permissions mentioned above, the trial environment will show in this list. For more information, see [Copy the environment configuration (preview)](manage-environments.md#copy-the-environment-configuration-preview).
 
