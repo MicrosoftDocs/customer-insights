@@ -1,7 +1,7 @@
 ---
 title: FAQ for segment creation (preview)
 description: This FAQ provides information about the AI technology used in segment creation (preview). It provides key considerations and details about how AI is used, how it was tested and evaluated, and any specific limitations.
-ms.date: 10/11/2023
+ms.date: 10/23/2024
 ms.custom: 
   - responsible-ai-faqs
 ms.topic: article
@@ -49,7 +49,7 @@ For more information, see [Copilot International Availability report](https://re
 
 ## What operational factors and settings allow for effective and responsible use of the feature?
 
-Copilot doesn't share data across environments. Opt-in consent is provided through the Settings page and managed by admins of Customer Insights - Data. Admins can revoke consent at any time and turn the feature off.
+Copilot doesn't share data across environments. Opt-in consent is provided through the Settings page and managed by admins of Customer Insights - Data. Admins can revoke consent at any time and turn off the feature.
 
 ## See also
 
