@@ -13,9 +13,9 @@ search.audienceType:
 
 # Add protected fields in segment criteria
 
-Protected fields allow you to restrict segment access to certain Dataverse columns. For example, you could choose to restrict access to the Social Security number column. Restricting access to this column means that regular users looking at the table can't see the Social Security number column. In segmentation, restricting access to the Social Security number column means that, by default, the column isn't available for use as a query condition.
-
-The protected fields setting allows admins flexibility in restriction. An admin can designate a protected field, but still allow users to use the field for querying purposes. This way, the admin could designate, for example, the gender column as restricted while allowing users to still create a segment of male customers, even though they can't see the values in the gender column.
+Dataverse offers protection for your data, allowing only authorized users to access attributes like Social Security number or bank balance. By default, such columns aren't available for use as a query condition in segmentation.
+ 
+The protected fields setting allows admins to override the use of such restricted columns as a query conditions, by regular users. For instance, a user can now create a segment of customers with varying ranges of bank balances, without revealing the actual bank balance of each individual.
 
 ## Enable protected fields
 
