@@ -1,7 +1,7 @@
 ---
-title: Add an action in a Journey
+title: Add an action in a journey
 description: An overview of possible actions you can do in a journey in Dynamics 365 Customer Insights - Journeys.
-ms.date: 09/12/2024
+ms.date: 10/25/2024
 ms.topic: article
 author: colinbirkett
 ms.author: colinbirkett
@@ -11,21 +11,21 @@ search.audienceType:
   - enduser
 ---
 
-# Add an action in Journey
+# Add an action in journey
 
-This page provides an overview of all the possible actions one can do in a Journey.
+This page provides an overview of all the possible actions one can do in a journey.
 
 ## Types of actions
 
-Within Customer Inisghts - Journeys, you can do a variety of actions. Some of these actions include sending messages, channel optmiziation, conditon actions, audience splitting, and more.
+Within real-time journeys, you can launch various actions. Some of these actions include sending messages, channel optimization, condition actions, audience splitting, and more.
 
-:::image type="content" source="media/journeys-actions.png" alt-text="An overview of all possible actions in a Journey." lightbox="media/journeys-actions.png":::
+:::image type="content" source="media/journeys-actions.png" alt-text="An overview of all possible actions in a journey." lightbox="media/journeys-actions.png":::
 
-Main actions are grouped under [messages](#messages), [AI-powered actions](#ai-powered-actions), [conditions](#conditions), [activities](#activities), and [connectors](#connectors). You can see all available actions under each section below.
+The main actions are grouped under [messages](#messages), [AI-powered actions](#ai-powered-actions), [conditions](#conditions), [activities](#activities), and [connectors](#connectors). You can see all available actions under each section below.
 
 ### Messages
 
-Customer Insights - Journeys lets you reach customers through common messaging capabilities such as email, text message, push notifications, and more. See common mesaging actions below.
+Customer Insights - Journeys lets you reach customers through common messaging capabilities such as email, text message, push notifications, and more. See common messaging actions below.
 
 **Email**
 
@@ -33,23 +33,23 @@ You can send personalized emails to capture your customers' attention. For more 
 
 **Text message**
 
-You can send a text message (SMS) from Dynamics 365 Customer Insights - Journeys by signing up with a provider such as Azure Communication Services, Infobip, LINK Mobility, Telesign, Twilio, or Vibes and configuring Customer Insights - Journeys to work with the provider. For more information, see [send a text message](real-time-marketing-outbound-text-messaging.md).
+You can send a text message (SMS) from Customer Insights - Journeys by signing up with a provider such as Azure Communication Services, Infobip, LINK Mobility, Telesign, Twilio, or Vibes and configuring Customer Insights - Journeys to work with the provider. For more information, see [send a text message](real-time-marketing-outbound-text-messaging.md).
 
-**Push notifcations**
+**Push notifications**
 
-You can send push notifcations. Push messages allow you to quickly convey offers, messages, or other information directly to users of your app. For more information, see [send a push notification](push-messages.md).
+You can send push notifications. Push messages allow you to quickly convey offers, messages, or other information directly to users of your app. For more information, see [send a push notification](push-messages.md).
 
 **Other channel**
 
-You can also send other types of channels to capture customers' attention.
+You can also send messages through custom channels to capture customers' attention. For more information, see [create custom channels](real-time-marketing-create-custom-channels).
 
-### AI powered actions
+### AI-powered actions
 
-You can cultivate customer-specific messages  in Customer Insights - Journeys through AI-powered actions such as A/B testing and channel optimization. See available AI-powered actions below. 
+You can cultivate customer-specific messages in Customer Insights - Journeys through AI-powered actions such as A/B testing and channel optimization.
 
 **A/B test**
 
-A/B tests allow you to measure which channel or content messaging strategy leads to higher success. For more information about using A/B tests, see [A/B tests in Customer Insights - Journeys ](real-time-marketing-ab-tests-in-marketing-journeys.md).
+A/B tests allow you to measure which channel or content messaging strategy leads to higher success. For more information about using A/B tests, see [A/B tests in Customer Insights - Journeys](real-time-marketing-ab-tests-in-marketing-journeys.md).
 
 **Channel optimization**
 
@@ -81,23 +81,23 @@ Send a series of messages until certain conditions are met.
 
 **If/then branch**
 
-The if/then branch lets you branch the customer journey based on customer actions like opening an email or completing a purchase. The if/then branch waits for the customer to perform the trigger within the time limit specified. If the customer performs the trigger, they'll immediately proceed down the yes branch. If the customer doesn't perform the trigger within the time limit specified, they'll proceed down the no branch after the time limit has passed.
+An if/then branch lets you branch the customer journey based on customer actions like opening an email or completing a purchase. The if/then branch waits for the customer to perform the trigger within the time limit specified. If the customer performs the trigger, they immediately proceed down the yes branch. If the customer doesn't perform the trigger within the time limit specified, they proceed down the no branch after the time limit has passed.
 
-For example, you can configure the if/then branch to wait for the *Email opened* event on a previously sent email. If the time limit is set to *1 day*, the if/then branch waits for the customer to open the email within that day. If the customer opens the email within that day, they'll immediately proceed down the yes branch. If the customer doesn't open the email within that day, they'll proceed down the no branch after one day.
+For example, you can configure the if/then branch to wait for the *Email opened* event on a previously sent email. If the time limit is set to *1 day*, the if/then branch waits for the customer to open the email within that day. If the customer opens the email within that day, they immediately proceed down the yes branch. If the customer doesn't open the email within that day, they proceed down the no branch after one day.
 
 **Attribute branch**
 
-The attribute branch lets you branch the journey based on various attributes including:
+An attribute branch lets you branch the journey based on various attributes including:
 
-- **Customer's attributes**: You can branch the journey based on the customer's attributes like address or age. The journey's audience defines which attributes will be shown. For example, if the journey is for Contacts, only attributes for Contacts will be shown.
-- **Customer's segment membership**: You can branch the journey based on whether the customer is part of a segment. The journey's audience defines which segments will be shown. For example, only Contacts-based segments will be shown for journeys that are meant for Contacts.
+- **Customer's attributes**: You can branch the journey based on the customer's attributes like address or age. The journey's audience defines which attributes are shown. For example, if the journey is for contacts, only attributes for contacts are shown.
+- **Customer's segment membership**: You can branch the journey based on whether the customer is part of a segment. The journey's audience defines which segments are shown. For example, only contacts-based segments are shown for journeys that are meant for contacts.
 - **Attributes in triggers**: You can branch the journey based on attribute values in triggers. For attribute values to be shown, the trigger must have previously occurred in the journey. Thus, you can only check the attribute values for a trigger that starts a trigger-based journey, or triggers being used in an if/then branch.
 
-The attribute branch checks for attribute values the moment a customer enters this step. For example, when a customer enters the attribute branch step, the segment membership condition will check whether the customer is part of the specified segment at that instant.
+The attribute branch checks for attribute values the moment a customer enters this step. For example, when a customer enters the attribute branch step, the segment membership condition checks whether the customer is part of the specified segment at that instant.
 
 **Audience split**
 
-The audience split tile allows you to divide your audience to give a unique set of experiences to random sets of the audience. You can split by percentage or split by number. Learn more: [Preview: Split your audience into groups](real-time-marketing-split-audience.md).
+The audience split tile allows you to divide your audience to give a unique set of experiences to random portions of the audience. You can split by percentage or split by number. Learn more: [Preview: Split your audience into groups](real-time-marketing-split-audience.md).
 
 ### Activities
 
@@ -113,13 +113,13 @@ You can create and assign a task activity for customers.
 
 ### Connectors
 
-Connectors provide additional features beyond actions above. For example, you can activate a custom trigger where additional journeys or [Power Automate flows](/power-automate) connected to a custom event will be triggered when a customer does a specific action.
+Connectors provide additional features beyond actions above. For example, you can activate a custom trigger where additional journeys or [Power Automate flows](/power-automate) connected to a custom event are triggered when a customer does a specific action.
 
 **Activate a custom trigger**
 
-Triggering a custom event allows you to use activate a custom event at any point in the customer journey. Additional journeys or [Power Automate flows](/power-automate) connected to the custom event will be triggered immediately when a customer reaches the tile. This includes custom triggers used in exit criteria, goals, and if/then branches for journeys.
+Triggering a custom event allows you to use activate a custom event at any point in the customer journey. Additional journeys or [Power Automate flows](/power-automate) connected to the custom event are triggered immediately when a customer reaches the tile. This includes custom triggers used in exit criteria, goals, and if/then branches for journeys.
 
-When using a custom trigger, you can choose which data to send as part of the trigger. You can choose customer profile data (for instance, attributes of the target audience such as contacts, leads, etc.) and data from other triggers used in the journey (for instance, attributes of the trigger that starts the journey).
+When using a custom trigger, you can choose which data to send as part of the trigger. You can choose customer profile data (for instance, attributes of the target audience such as contacts, leads, etc.) or data from other triggers used in the journey (for instance, attributes of the trigger that starts the journey).
 
 For example, a loan application journey could have various steps that require a human agent’s approval. By creating a separate customer journey or Power Automate Flow for loan exception approval, you can trigger it from various points in the loan application journeys where exceptions can occur. The data you send with the trigger can be used to populate dynamic content or as inputs to other Flow actions.
 

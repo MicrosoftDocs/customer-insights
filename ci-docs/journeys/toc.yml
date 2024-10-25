@@ -256,7 +256,7 @@
          href: journey-flow-tile-ref.md
       -  name: Start a journey
          href: journey-start.md
-      -  name: Add an action in a Journey
+      -  name: Add an action in a journey
          href: add-action.md
       -  name: End a journey
          href: journey-end.md
