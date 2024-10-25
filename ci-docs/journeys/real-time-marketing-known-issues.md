@@ -78,6 +78,10 @@ As we continue to work on Customer Insights - Journeys and refine the experience
 - When using the "Marketing Form Submitted" standard trigger for your journey care should be taken to ensure that the audience for the journey and the form are the same. Today, we don't display an error or warning when there's a mismatch, but the journey won't start leading to customer confusion.
 - Today, triggers also fire when a record is manually updated in Dynamics 365 Dataverse. This can cause a contact to go through the journey based on the trigger even if they don't do anything to activate it.
 - Today, for trigger-based journeys that use the if/then tile, you can sometimes lose about 1% of all trigger events due to a slight delay in our system catching them.
-- Triggers can have at most 30 attributes. If the trigger has a table reference, then such a reference is counted as one attribute toward the limit of 30. There's an additional limit of 1,024 on the number of columns from all such entity references. 
+- Triggers can have at most 30 attributes. If the trigger has a table reference, then such a reference is counted as one attribute toward the limit of 30. There's an additional limit of 1,024 on the number of columns from all such entity references.
+
+## Lead scoring
+
+Currently, the usage of parent contact scoring will affect the needed time for scoring, and we recommend avoiding utilizing it especially if you have a large number of contacts.
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]

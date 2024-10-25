@@ -13,7 +13,7 @@ search.audienceType:
 
 # Reference copies of sent emails in the interaction timeline
 
-You can view an exact copy of sent emails on your contact and lead interaction timelines to deepen your customer understanding and have visibility into what's been previously shared with your customers.
+You can view an exact copy of sent emails on your contact and lead interaction timelines to deepen your customer understanding and have visibility into what's been previously shared with your customers. Email copies will be available for 1 year on the interaction timeline.
 
 ## Enable viewing emails on the interaction timeline
 
