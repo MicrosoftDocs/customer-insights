@@ -15,11 +15,11 @@ search.audienceType:
 
 Dataverse offers protection for your data, allowing only authorized users to access attributes like Social Security number or bank balance. By default, such columns aren't available for use as a query condition in segmentation.
  
-The protected fields setting allows admins to override the use of such restricted columns as a query conditions, by regular users. For instance, a user can now create a segment of customers with varying ranges of bank balances, without revealing the actual bank balance of each individual.
+The protected fields setting in Customer Insights - Journeys allows admins to override the use of such restricted columns as a query conditions, by regular users. For instance, a user can now create a segment of customers with varying ranges of bank balances, without revealing the actual bank balance of each individual.
 
-## Enable protected fields
+## Enable protected fields in query conditions
 
-To enable protected fields:
+To enable access to protected fields in query conditions:
 
 1. Go to **Settings** > **Overview** > **Feature switches**.
 1. Enable the **Use protected fields in segments** feature switch under the Segmentation section and select **Save** in the upper right corner.
