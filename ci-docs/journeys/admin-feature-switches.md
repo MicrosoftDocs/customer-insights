@@ -12,7 +12,7 @@ ms.collection: bap-ai-copilot
 
 Use the **Feature switches** page to enable or disable optional and preview features in Dynamics 365 Customer Insights - Journeys.
 
-To enable or disable a feature, go to **Settings** > **settings** under Overview > **Feature switches** and set the various feature sliders to **On** or **Off** as needed. After you set the feature sliders, click **Save** in the upper right corner of the window.
+To enable or disable a feature, go to **Settings** > **Overview** > **Feature switches** and set the various feature sliders to **On** or **Off** as needed. After you set the feature sliders, click **Save** in the upper right corner of the window.
 
 The following tables list each available feature, preview status, and links for more information.
 
