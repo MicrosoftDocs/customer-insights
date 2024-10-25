@@ -63,7 +63,7 @@ For iOS applications, Customer Insights - Journeys uses the Apple Push Notificat
 
 - **Certificate**: Uses a certificate to authenticate. Consult Apple developer documentation on how to create a .p12 (PKCS #12) certificate file that you can upload into Customer Insights - Journeys.
 - **Token**: Uses a [token-based connection to the APNs](https://developer.apple.com/documentation/usernotifications/setting_up_a_remote_notification_server/establishing_a_token-based_connection_to_apns). For token authentication, the following strings are required:
-  - *Signing key*: The content of the .p8 file providing the signing key.
+  - *Signing key*: The content of the .p8 file providing the signing key. Copy and paste the content between “BEGIN PRIVATE KEY” and “END PRIVATE KEY” and remove all the link breaks (e.g., CR|LF).
   - *Key ID*: The 10-character Key ID string.
   - *Bundle ID*: Created together with the APNs certificate for your app.
   - *Team ID*: Refer to Apple developer documentation to determine how to get your Team ID.
