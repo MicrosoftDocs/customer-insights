@@ -29,51 +29,30 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 
 ### General availability
 
-- **TITLE** 
+- **Split audience into groups to deliver unique customer experiences** 
+	- When you want customers to have different experiences in one journey, you need to divide them into groups. While this is possible today using attribute branches or segments, sometimes the number of customers in each branch is more important than what those customers have in common. For example, you may want to send a survey out to a random subset of your customers for feedback, something that would be time-consuming to configure today. The new journey split tile allows you to split your audience into branches to provide a subset of your audience with unique experiences, whether that be a survey, a new type of experience to test, or a first-come promotional offer. You can split your audience by percentages (for cases where you need randomness) or by numbers (for cases where you want to deliver specific experiences to a set number of people). 
+	- [Release plan](/dynamics365/release-plan/2024wave2/customer-insights/dynamics365-customer-insights-journeys/provide-varied-experiences-one-journey-using-journey-split-tiles) 
+	- [Docs]()
 
-	- Text
-	
-	- [Release plan]() 
-	- [Docs]()  
-	- [Watch the video]()
+    :::image type="content" source="media/split-number-nov.png" alt-text="Split journey audience by number." lightbox="media/split-number-nov.png":::
+    
+    :::image type="content" source="media/split-percentage-nov.png" alt-text="Split journey audience by percentage." lightbox="media/split-percentage-nov.png":::
 
-- **TITLE** 
+- **Improve engagement and compliance with double opt-in** 
+	- By implementing double opt-in, you can cultivate a more effective email marketing strategy, leading to improved compliance, increased open and click-through rates, and a better overall brand experience for subscribers. Privacy and data protection laws in many regions require double opt-in functionality to help verify customer information. Double opt-in requires users to confirm subscription preferences through a follow-up email after the initial subscription. By confirming subscription preferences a second time, you comply with legal requirements and improve engagement by ensuring that users who’ve subscribed are intent on receiving future communications. When customers are certain they want to receive email communications, spam complaints and bounce rates are reduced, and your sender reputation is improved. 
+	- [Release plan](/dynamics365/release-plan/2024wave2/customer-insights/dynamics365-customer-insights-journeys/improve-engagement-compliance-double-opt-in) 
+	- [Docs]()
 
-	- Text
-	
-	- [Release plan]() 
-	- [Docs]()  
-	- [Watch the video]()
-
-- **TITLE** 
-
-	- Text
-	
-	- [Release plan]() 
-	- [Docs]()  
-	- [Watch the video]()
+    :::image type="content" source="media/double-opt-in-nov.png" alt-text="An overview of double opt-in within Customer Insights - Journeys." lightbox="media/double-opt-in-nov.png":::
 
 ### Public preview
 
-- **TITLE** 
+- **Wait on segment membership to trigger the next step in a journey** 
+	- Gain even more control over your customers' experience by waiting for them to become a member of a segment before continuing to the next steps in a journey. This added capability lets you personalize each customer's experience by choosing the correct path and actions relevant to individual customers based on whether they're in a segment. This capability adds to existing if/then capabilities that let you wait for a customer to open an email, click a link, or wait for another trigger to be activated before moving on to the next step in the journey. For example, let's say you use your journey to send credit card activation emails and you want to wait for the customer to activate their card before sending a welcome email. If the customer doesn’t activate their credit card within a few days, you want to send another reminder email. If you have a segment that includes all customers who have activated credit cards, you can use that segment as the condition for the if/then branch to wait for each customer to activate their credit card and send them the right communications. 
+	- [Release plan](/dynamics365/release-plan/2024wave2/customer-insights/dynamics365-customer-insights-journeys/use-segments-decide-which-path-customer-should-take-journey) 
+	- [Docs]()
 
-	- Text
-	
-	- [Release plan]() 
-	- [Docs]()  
-	- [Watch the video]()
-
-### Private preview
-
-- **TITLE** 
-
-	- Text
-	
-	- [Release plan]() 
-	- [Docs]()  
-	- [Watch the video]()
-
-### Monthly enhancements
+    :::image type="content" source="media/wait-segment-membership-release-planner.png" alt-text="Create a journey that waits until a customer becomes part of a segment then continues to the next step in the journey." lightbox="media/wait-segment-membership-release-planner.png":::
 
 ## October 2024 update
 
