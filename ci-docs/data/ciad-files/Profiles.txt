@@ -1,0 +1,2 @@
+CustomerID,Index,Name,FamilyName,PhoneNum
+CNTID_1001,0,Kenneth,Beraun,384.995.7852
