@@ -1,7 +1,7 @@
 ---
 title: "Connect to Common Data Model tables in Azure Data Lake Storage"
 description: "Work with data from Azure Data Lake Storage."
-ms.date: 10/02/2024
+ms.date: 10/29/2024
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -63,7 +63,11 @@ Ingest data into Dynamics 365 Customer Insights - Data using your Azure Data Lak
    > [!NOTE]
    > Any model.json or manifest.json file associated with another data source in the environment won't show in the list. However, the same model.json or manifest.json file can be used for data sources in multiple environments.
 
-1. If your storage account is behind a firewall, select **This storage account is behind a firewall** to connect using [managed identities for Azure resources](private-link.md).
+1. If your storage account is behind a firewall, determine your next step:
+   - If **This storage account is behind a firewall** appears, connect to the account using [managed identities for Azure resources](managed-identities.md).
+     :::image type="content" source="media/enable-msi.png" alt-text="Portion of dialog box showing storage account is behind a firewall.":::
+   - If **Enable private link** appears, connect to the account using [Azure private links](private-link.md)
+     :::image type="content" source="media/enable-private-link.png" alt-text="Portion of dialog box showing enable private link.":::
 1. Select **Next**.
 
 1. To create a new schema, go to [Create a new schema file](#create-a-new-schema-file).
