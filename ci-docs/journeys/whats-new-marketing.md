@@ -25,7 +25,7 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 
 | App              | GA release      |
 |------------------|-----------------|
-| Customer Insights - Journeys        |   |
+| Customer Insights - Journeys        |  1.1.50062.76  |
 
 ### General availability
 
