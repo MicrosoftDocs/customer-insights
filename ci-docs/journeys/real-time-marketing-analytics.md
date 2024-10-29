@@ -65,6 +65,7 @@ Operational analytics has two parts:
 
     > [!NOTE]
     > Entry and exit details are in preview. If you don't see these details, go to **Settings** > **Feature switches** > **Journey** and enable the "Tile entry and exit analytics (preview)" feature switch.
+    > This feature switch is being rolled out and will be visible in all geos by December 16, 2024.
 
     - **Inflow and outflow information**: For every step, the top shows the number of customers who entered the step (Inflow), the number currently being processed (Processing), the number who have moved to the next step (Processed), and the number who have exited the journey (Exit). The percentage is calculated from the inflow volume. When the journey is running and counts are small, we prioritize showing these numbers as soon as possible (within minutes) and this can lead to inconsistencies (for example, a processed data point may be counted and shown before its corresponding inflow data point is shown). This self-corrects once journey execution is complete.
 
