@@ -11,10 +11,12 @@ ms.custom: bap-template
 
 # Set up managed identities for storage accounts behind firewalls
 
-If you have Azure storage protected by firewalls, use managed identities for Azure resources to connect to Customer Insights - Data. Managed identities provide an automatically managed identity in Microsoft Entra ID for applications, such as Customer Insights - Data, to use when connecting to resources that support Microsoft Entra authentication. The managed identity can't be accessed or used outside of its configured endpoints. Learn more in [Managed identities for Azure resources](/entra/identity/managed-identities-azure-resources).
+Customer Insights - Data is migrating to managed identities for Azure resources. Managed identities is the recommended way to connect to Azure resources behind a firewall using a restricted service principal that can only be used between two designated endpoints. The credentials for the service principal can't be exported or viewed.
 
 > [!IMPORTANT]
 > Managed identities can't connect to storage accounts with external Azure Private Links. [Create a support ticket](/power-platform/admin/get-help-support) for assistance.
+
+If you have Azure storage protected by firewalls, use managed identities for Azure resources to connect to Customer Insights - Data. Managed identities provide an automatically managed identity in Microsoft Entra ID for applications, such as Customer Insights - Data, to use when connecting to resources that support Microsoft Entra authentication. The managed identity can't be accessed or used outside of its configured endpoints. Learn more in [Managed identities for Azure resources](/entra/identity/managed-identities-azure-resources).
 
 There are three scenarios where Customer Insights - Data can be configured to connect to firewall-protected Azure storage containers:
 
@@ -103,11 +105,9 @@ An *Action required* banner tells you that you have one or more storage accounts
 
 1. Expand **Step 2: Update your connections**, and then select **Attempt connection updates**. Wait for the connections to be updated. If an error occurs, contact your Azure Subscription Owner.
 
+1. During migration, don't remove your Azure private links.
+
 ### FAQ
-
-#### Why are we doing this?
-
-Managed identities for Azure resources is the recommended way to connect to Azure resources behind a firewall using a restricted service principal that can only be used between two designated endpoints. The credentials for the service principal can't be exported or viewed.
 
 #### Where can I learn more about managed identities for Azure resources? 
 
