@@ -53,7 +53,6 @@ If you're an existing outbound marketing user and the "Enable" outbound marketin
 - This form requires an email address. The email address is used to communicate receipt of the request, confirming when the request has been reviewed, and if needed, ask for additional information.
 - Most requests are reviewed in about three to five business days once all required information is available.
 
-> [!TIP]
-> If you have questions or comments, visit the [Outbound to real-time transition community forum](https://community.dynamics.com/forums/thread/?partialUrl=Outbound-to-Real-Time-Transition)
+[!INCLUDE [transition-comments](./includes/transition-comments.md)]
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]

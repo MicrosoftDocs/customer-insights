@@ -63,7 +63,6 @@ When you're finished migrating to real-time journeys from outbound marketing, yo
 
 When outbound marketing is formally retired, Microsoft will clean up the services in the background. To understand the details of exactly what will be cleaned up and what happens to your data, see [Real-time journeys transition FAQs](transition-faqs.md#what-will-happen-to-outbound-tables-and-data-when-outbound-marketing-is-removed)
 
-> [!TIP]
-> If you have questions or comments, visit the [Outbound to real-time transition community forum](https://community.dynamics.com/forums/thread/?partialUrl=Outbound-to-Real-Time-Transition)
+[!INCLUDE [transition-comments](./includes/transition-comments.md)]
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
