@@ -58,8 +58,10 @@ The following sections explain how to set up Power BI and access your Customer I
 
 1. Supply your Dataverse environment URL (Example: orgname.crm.dynamic.com) and the credentials that you want to access the environment with. Dataverse shortcuts utilize a delegated authorization model. All data access through the shortcut utilizes this credential. This credential must have System Administration permission in the Dataverse environment. Be sure to secure access to this workspace before sharing this data with your users.
 1. Choose the tables that you want to create a shortcut to. Each table is its own shortcut in the Lakehouse. Customer Insights - Journeys interaction data tables appear in the left menu under the **"Customer Insights Journeys"** folder. The Customer Insights Journeys folder only lists the interaction types for which data has been generated up to that point.
+
     > [!IMPORTANT]
     > If you don't see all your Dataverse tables (CDS2 folder), you may need to configure your Dataverse environment. Use [Link to Fabric](/power-apps/maker/data-platform/azure-synapse-link-view-in-fabric) to update the available tables.
+    
     :::image type="content" source="media/link-to-fabric-through-shortcut.png" alt-text="Link to fabric through shortcut." lightbox="media/link-to-fabric-through-shortcut.png":::
 
 > [!NOTE]
