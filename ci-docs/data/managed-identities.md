@@ -11,12 +11,14 @@ ms.custom: bap-template
 
 # Set up managed identities for storage accounts behind firewalls
 
-Customer Insights - Data is migrating to managed identities for Azure resources. Managed identities is the recommended way to connect to Azure resources behind a firewall using a restricted service principal that can only be used between two designated endpoints. The credentials for the service principal can't be exported or viewed.
+Customer Insights - Data is migrating from Azure Private Link to managed identities for Azure resources. Managed identities is the recommended way to connect to Azure resources behind a firewall using a restricted service principal that can only be used between two designated endpoints. The credentials for the service principal can't be exported or viewed.
+
+During the migration, you might set up connections using Azure Private Link or managed identities. When setting up a connection to you Azure storage container, **Enable private link** indicates you'll use Private Link. Go to [Set up an Azure Private Link](private-link.md). **This storage account is behind a firewall** indicates you'll use managed identities. This article explains the set up process.
 
 > [!IMPORTANT]
 > Managed identities can't connect to storage accounts with external Azure Private Links. [Create a support ticket](/power-platform/admin/get-help-support) for assistance.
 
-If you have Azure storage protected by firewalls, use managed identities for Azure resources to connect to Customer Insights - Data. Managed identities provide an automatically managed identity in Microsoft Entra ID for applications, such as Customer Insights - Data, to use when connecting to resources that support Microsoft Entra authentication. The managed identity can't be accessed or used outside of its configured endpoints. Learn more in [Managed identities for Azure resources](/entra/identity/managed-identities-azure-resources).
+Managed identities provide an automatically managed identity in Microsoft Entra ID for applications, such as Customer Insights - Data, to use when connecting to resources that support Microsoft Entra authentication. The managed identity can't be accessed or used outside of its configured endpoints. Learn more in [Managed identities for Azure resources](/entra/identity/managed-identities-azure-resources).
 
 There are three scenarios where Customer Insights - Data can be configured to connect to firewall-protected Azure storage containers:
 
@@ -127,7 +129,7 @@ If you can't remove the external private links, [create a support ticket](/power
 
 #### I’m still seeing "Enable private links" in my instance
 
-Instances where connections show **Enable private links** will be updated soon. Your instance is ready to use managed identities when new data connections show **This storage account is behind a firewall**. Meanwhile, use [Azure Private Links](private-links.md) to connect to your storage accounts.
+Instances where connections show **Enable private links** will be updated soon. Your instance is ready to use managed identities when new data connections show **This storage account is behind a firewall**. Meanwhile, use [Azure Private Links](private-link.md) to connect to your storage accounts.
 
 #### What are the scenarios in Customer Insights – Data that use managed identities for Azure?
 

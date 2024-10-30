@@ -13,20 +13,21 @@ ms.custom: bap-template
 
 [Azure Private Link](/azure/private-link/private-link-overview) lets Dynamics 365 Customer Insights - Data connect to your Azure Data Lake Storage account over a private endpoint in your virtual network. For data in a storage account, which isn't exposed to the public internet, Private Link enables the connection to that restricted network.
 
-> [!IMPORTANT]
-> Minimum role requirement to set up a Private Link connection:
->
-> - Customer Insights - Data: Administrator
-> - Azure built-in role: [Storage Account Contributor](/azure/role-based-access-control/built-in-roles#storage-account-contributor)
-> - Permissions for custom Azure role: [Microsoft.Storage/storageAccounts/read and Microsoft.Storage/storageAccounts/PrivateEndpointConnectionsApproval/action](/azure/role-based-access-control/resource-provider-operations#microsoftstorage)
+There are three scenarios where Customer Insights - Data can be configured to connect to firewall-protected Azure storage containers:
 
-In Customers Insights you can create private links in the following ways:
+- Output storage that can be configured at setup to use your own Azure data lake.
+- Data sources that read from an Azure data lake storage (Common Data Models (CDM) or Delta tables).
+- Exports that write to an Azure data lake.
 
-- When creating a new Customer Insights - Data environment for which you would like to [Use your own Azure Data Lake Storage account](own-data-lake-storage.md) that is protected by your virtual network.
-- When creating a data source for which the data is stored in your protected account.
-- Directly from the **Settings** > **Permissions** > **Private Links** page in Customer Insights - Data.
+> [!NOTE]
+> Customer Insights - Data is migrating from Azure Private Link to managed identities for Azure resources. During the migration, you might set up connections using Azure Private Link or managed identities. When setting up a connection to you Azure storage container, **Enable private link** indicates you'll use Private Link. This article explains the set up process. **This storage account is behind a firewall** indicates you'll use managed identities. Go to [Set up managed identities](managed-identities.md).
 
-Regardless of the method you use to create the Private Link, it shows under the **Settings** > **Permissions** > **Private Links** tab in Customer Insights - Data.
+## Prerequisites
+
+- Minimum role requirement to set up a Private Link connection:
+  - Customer Insights - Data: Administrator
+  - Azure built-in role: [Storage Account Contributor](/azure/role-based-access-control/built-in-roles#storage-account-contributor)
+  - Permissions for custom Azure role: [Microsoft.Storage/storageAccounts/read and Microsoft.Storage/storageAccounts/PrivateEndpointConnectionsApproval/action](/azure/role-based-access-control/resource-provider-operations#microsoftstorage)
 
 ## Set up a Private Link when creating a Customer Insights - Data environment
 
