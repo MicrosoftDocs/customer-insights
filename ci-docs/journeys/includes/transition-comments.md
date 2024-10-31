@@ -1,0 +1,2 @@
+> [!TIP]
+> If you have questions or comments, visit the [Customer Insights - Journeys community forum](https://community.dynamics.com/forums/thread/?groupid=7bba1e6d-e4eb-444f-ae29-6d8ed7dd0616&page=1)

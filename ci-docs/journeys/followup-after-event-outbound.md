@@ -14,7 +14,7 @@ search.audienceType:
 # Evaluate your event and follow up with attendees in outbound marketing
 
 > [!IMPORTANT]
-> This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
+> **This article only applies to [outbound marketing](user-guide.md), which will be removed from the product on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](transition-overview.md)
 
 After an event is over, you'll want to evaluate how it went and start following up.
 

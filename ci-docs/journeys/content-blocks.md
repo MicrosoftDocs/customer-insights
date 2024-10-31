@@ -13,6 +13,8 @@ search.audienceType:
 
 # Create content blocks that you can reuse in multiple designs
 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4XNCb]
+
 > [!NOTE]
 > Unless a style is explicitly set in the element properties, the default style is replaced with the email theme style.
 

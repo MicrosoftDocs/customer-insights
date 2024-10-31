@@ -15,7 +15,7 @@ search.audienceType:
 # Tutorials for specific scenarios
 
 > [!IMPORTANT]
-> This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
+> **This article only applies to [outbound marketing](user-guide.md), which will be removed from the product on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](transition-overview.md)
 
 The tutorials in this section are more general than the guides in the [Core marketing tutorials](basic-tutorials.md) section. The features covered here are all important parts of Dynamics 365 Customer Insights - Journeys, but they are more specialized so some may only be needed occasionally, and you don't need to do the tutorials in order.
 

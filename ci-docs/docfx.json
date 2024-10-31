@@ -4,7 +4,8 @@
       {
         "files": [
           "**/*.md",
-          "**/*.yml"
+          "**/*.yml",
+          "**/*.txt"
         ],
         "exclude": [
           "**/obj/**",
@@ -63,7 +64,7 @@
         "**.*": "MSDocsHeader-Dynamics365-Customer-Insights"
       },
       "feedback_system": {
-        "*.md": "GitHub"
+        "*.md": "Standard"
        },
       "feedback_product_url": {
         "*.md": "https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights"        
@@ -91,6 +92,15 @@
         "data/**.*": [
           "customerinsights-docs",
           "customerinsightsdata-docs"
+        ]
+      }, 
+      "products":
+      {
+        "journeys/**.*": [
+          "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/c0439c36-80e3-415f-8e4c-6951e3f1b136"
+        ],
+        "data/**.*": [
+          "https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/a18421f4-197c-4da4-9ffd-bac0653a2b79"
         ]
       }
     },

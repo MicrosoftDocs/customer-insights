@@ -14,7 +14,7 @@ search.audienceType:
 # Manually schedule contacts and email delivery
 
 > [!IMPORTANT]
-> This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
+> **This article only applies to [outbound marketing](user-guide.md), which will be removed from the product on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](transition-overview.md)
 
 Customer journeys feature multiple mechanisms that allow you to set schedules so you can target contacts at the right time. You can use these mechanisms to select the days and time window during which an action (such as sending an email or creating a task) should happen. This article discusses how to manually schedule actions in customer journeys.
 

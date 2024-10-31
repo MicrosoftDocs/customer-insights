@@ -1,7 +1,7 @@
 ---
 title: How Customer Insights - Journeys uses suppression lists for email deliverability
 description: Learn how Customer Insights - Journeys uses suppression lists to protect email sending reputations.
-ms.date: 04/30/2024
+ms.date: 09/03/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -83,19 +83,9 @@ Eligible email addresses have an automatic expiration date that removes the emai
 > [!NOTE]
 > Email addresses listed due to feedback loop/spam complaints will never be eligible for delisting due to privacy and data protection regulations. Such emails can only be requested to be removed by the recipient owner of the email address. Senders cannot get approval to remove such addresses.
 
-## Preview: Removing eligible email addresses
+## Removing eligible email addresses
 
-> [!IMPORTANT]
-> A preview feature is a feature that is not complete, but is made available before it’s officially in a release so customers can get early access and provide feedback. Preview features aren’t meant for production use and may have limited or restricted functionality.
-> 
-> Microsoft doesn't provide support for this preview feature. Microsoft Dynamics 365 Technical Support won’t be able to help you with issues or questions. Preview features aren’t meant for production use, especially to process personal data or other data that are subject to legal or regulatory compliance requirements.
-
-To enable the feature:
-
-1. Go to **Settings** and select **Feature switches**.
-1. Enable the **Ability to remove email addresses from suppression** in the **Email sending** section.
-
-Once enabled, you can remove eligible email addresses from the suppression list by navigating to **Contacts** and then selecting the **Communication** tab.
+You can remove eligible email addresses from the suppression list by navigating to **Contacts** and then selecting the **Communication** tab.
 
 > [!div class="mx-imgBorder"]
 > ![Use communication tab to select email addresses to remove from suppression lists](media/select-email-addresses-to-remove.png "Use communication tab to select email addresses to remove from suppression lists")

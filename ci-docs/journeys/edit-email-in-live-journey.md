@@ -1,7 +1,7 @@
 ---
-title: Edit email components in a live journey
+title: "Preview: Edit email components in a live journey"
 description: Learn how to edit email components in live journey in Dynamics 365 Customer Insights - Journeys
-ms.date: 10/30/2023
+ms.date: 09/13/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -11,7 +11,12 @@ search.audienceType:
   - enduser
 ---
 
-# Edit email components in a live journey
+# Preview: Edit email components in a live journey
+
+> [!IMPORTANT]
+> A preview feature is a feature that is not complete, but is made available before it’s officially in a release so customers can get early access and provide feedback. Preview features aren’t meant for production use and may have limited or restricted functionality.
+> 
+> Microsoft doesn't provide support for this preview feature. Microsoft Dynamics 365 Technical Support won’t be able to help you with issues or questions. Preview features aren’t meant for production use, especially to process personal data or other data that are subject to legal or regulatory compliance requirements.
 
 The email editor in Dynamics 365 Customer Insights – Journeys allows you to create and design engaging email messages for your customers. You can use various components such as text, images, buttons, links, and dynamic content to customize your email layout and content.
 
@@ -44,4 +49,13 @@ The email editor components that can be edited in a live journey are:
 | Compliance profile and consent related settings | Yes | You can update the settings. |
 | Subject and preheader | Yes | You can add or edit the text content. |
 | QR code | Yes | You can add or edit the QR code without any   personalization. |
-| Survey links | Yes | You can add or edit the   survey links without any personalization. |
+| Survey links | Yes | You can add or edit the survey links without any personalization. |
+| Personalization | Yes | You can add or edit the personalization and rules. |
+| Conditional content | Yes | You can only edit the existing condition. |
+
+> [!NOTE]
+> - Link insights displays data for emails (with links) that have this feature enabled and were created after September 2024. 
+> - To easily track and identify links in analytics, we incorporate editable "link aliases" into the URL. 
+> - When editing personalization and conditional content in live emails, enable the "Live email editing with Link alias" feature flag. If you need to disable this feature, [contact the support team](/power-platform/admin/get-help-support#view-solutions-or-create-a-support-request)
+
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

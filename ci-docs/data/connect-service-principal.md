@@ -3,8 +3,8 @@ title: "Connect to an Azure Data Lake Storage account by using a Microsoft Entra
 description: "Use a Microsoft Entra service principal to connect to your own data lake."
 ms.date: 09/01/2023
 ms.topic: how-to
-author: mukeshpo
-ms.author: mukeshpo
+author: Scott-Stabbert
+ms.author: sstabbert
 ms.reviewer: mhart
 ---
 
@@ -93,8 +93,6 @@ Attach a Data Lake Storage account in Customer Insights - Data to [store output 
 1. On the left pane, go to **Settings** > **Endpoints**.
 
 1. Copy the storage account resource ID value.
-
-   :::image type="content" source="media/ADLS-SP-ResourceId.png" alt-text="Copy the storage account resource ID.":::
 
 1. In Customer Insights - Data, insert the resource ID in the resource field displayed on the storage account connection screen.
 

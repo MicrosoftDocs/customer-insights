@@ -14,7 +14,7 @@ search.audienceType:
 # Create an inbound customer journey
 
 > [!IMPORTANT]
-> This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
+> **This article only applies to [outbound marketing](user-guide.md), which will be removed from the product on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](transition-overview.md)
 
 *Inbound customer journeys* seek to attract new, unknown contacts, so they typically target new contacts who submit a form on a landing page to register for a newsletter, download a whitepaper, or receive some other perk. You'd typically promote your inbound campaign by running ads and posting links on social media. (In comparison, an *outbound* customer journey is one that starts with a segment made up of contacts that are already included in your Dynamics 365 Customer Insights - Journeys database. An outbound journey usually starts by sending out marketing emails to the members of a segment.)
 

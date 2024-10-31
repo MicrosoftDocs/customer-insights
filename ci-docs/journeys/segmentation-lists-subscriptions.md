@@ -14,7 +14,7 @@ search.audienceType:
 # Working with segments
 
 > [!IMPORTANT]
-> This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
+> **This article only applies to [outbound marketing](user-guide.md), which will be removed from the product on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](transition-overview.md)
 
 Segments let you create groups of related contacts that you can target with customer journeys. Segments are created using the segment designer. One way to build segments is by querying across related entities including contacts, leads, accounts, events, marketing lists, and more. You can also query the marketing-insights service to find contacts that have engaged with your marketing initiatives. The marketing-insights service also allows you to query contacts that you aren't reaching because of issues such as email bounces.
 

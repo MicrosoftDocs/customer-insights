@@ -14,7 +14,7 @@ search.audienceType:
 # Set up subscription lists and subscription centers
 
 > [!IMPORTANT]
-> This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
+> **This article only applies to [outbound marketing](user-guide.md), which will be removed from the product on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](transition-overview.md)
 
 A subscription center is a marketing page that known contacts can use to manage their communication preferences and contact details with your organization. All marketing email messages that you create by using Dynamics 365 Customer Insights - Journeys must include a link to a subscription center. Marketing email messages will fail the error check if you try to go live with a message that lacks this link.
 
@@ -262,8 +262,6 @@ To view, add, or remove list memberships for a displayed contact:
     - Each subscription list that the contact already belongs to is listed here.
     - To remove the contact from any of these subscriptions, select the **More options** button (which looks like an ellipsis) next to the target list and then select **Remove**.
     - To add the contact to any existing subscription list, select the **More commands** button (which looks like an ellipsis) in the **Subscription lists** heading and then select **Add existing marketing list**. A flyout opens. Use it to search for and select each list that you want to add the selected contact(s) to. The select **Add** to add the contacts and close the flyout.
-
-    ![Lists a contact subscribes to.](media/subscription-list-contact.png "Lists a contact subscribes to")
 
 ### Add contacts to lists from a contact list or form view
 

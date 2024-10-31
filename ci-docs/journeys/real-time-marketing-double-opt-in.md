@@ -1,7 +1,7 @@
 ---
-title: Double opt-in in real-time journeys
+title: "Preview: Double opt-in in real-time journeys"
 description: Learn how to use double opt-in in Dynamics 365 Customer Insights - Journeys.
-ms.date: 06/21/2024
+ms.date: 08/20/2024
 ms.topic: article
 author: cbirkett
 ms.author: alfergus
@@ -11,7 +11,12 @@ search.audienceType:
   - enduser
 ---
 
-# Double opt-in in real-time journeys
+# Preview: Double opt-in in real-time journeys
+
+> [!IMPORTANT]
+> A preview feature is a feature that is not complete, but is made available before it’s officially in a release so customers can get early access and provide feedback. Preview features aren’t meant for production use and may have limited or restricted functionality.
+> 
+> Microsoft doesn't provide support for this preview feature. Microsoft Dynamics 365 Technical Support won’t be able to help you with issues or questions. Preview features aren’t meant for production use, especially to process personal data or other data that are subject to legal or regulatory compliance requirements.
 
 The double opt-in process (also known as confirmed opt-in) asks contacts who sign up for new Purposes or Topics to confirm their request by selecting a link sent to their registered email address. This system helps make sure that the request is intentional, and that the supplied email address is legitimate and functional.
 
@@ -24,20 +29,8 @@ The double opt-in process works as follows:
 1. Customer Insights - Journeys acts upon selection, creates a contact (or lead), records or updates it, and records the consent. A 'Thank you' page is then redirected to the contact.
 
 > [!IMPORTANT]
-> The link in the confirmation email remains valid for only 28 days. After that period, the user that received the email will not be able to confirm their opt-in.
-> Please refer to this section for the current limitations of this preview feature.
-
-## Availability
-
-Double opt-in for real time journeys is rolling out in July and August of 2024. The table below shows the availability date for each region.
-
-| Region             | Availability date |
-|--------------------|-------------------|
-| IND                | Now               |
-| FRA, CHE, CAN, SAM | July 29           |
-| OCE, GBR, JPN, APJ | July 30           |
-| EU                 | July 31           |
-| US                 | August 1          |
+> The link in the confirmation email remains valid for only 28 days. After that period, the user who received the email cannot confirm their opt-in.
+> Refer to this section for the current limitations of this preview feature.
 
 ## Who should use double opt-in?
 
@@ -102,13 +95,13 @@ The system prevents a form from having elements from more than one compliance pr
 Enabling double opt-in for a compliance profile will only enable double opt-in flow for eligible forms (forms created after the feature switch was turned on). Any forms that existed prior to the feature enablement will, by default, have double opt-in turned off for them.
 
 > [!WARNING]
-> For version 6.1, a warning is shown but you are still allowed to publish the form.
-> For version 7.1, an error stops you from publishing the form.
+> For the June 2024 release, a warning is shown but you are still allowed to publish the form.
+> For the July 2024 release, an error stops you from publishing the form.
 
 This applies to orgs with the DOI feature flag enabled.
 
 > [!IMPORTANT]
-> Even though the system creates a journey to send the double opt-in confirmation emails on form submission, the journey itself is not editable in the June 2024 release. This journey will be enabled for editing in an upcoming release and will enable you to manage more advanced double opt-in scenarios. For example, sending a reminder email to anyone that has not confirmed their opt-in within a specified period.
+> The system creates a journey to send the double opt-in confirmation emails on form submission. With the July 2024 release, you can edit this journey to manage more advanced double opt-in scenarios, for example, sending a reminder email to anyone that has not confirmed their opt-in within a specified period.
 
 ## Form level override for double opt-in
 
@@ -143,7 +136,7 @@ Here are the key features of this email:
 
 ## Double opt-in confirmation journey
 
-The system automatically generates a double opt-in confirmation journey and publishes it. With the June 2024 release, it isn't possible to edit this journey. This feature is enabled for editing in upcoming releases.
+The system automatically generates a double opt-in confirmation journey and publishes it. With the June 2024 release, it isn't possible to edit this journey. Starting in the July 2024 release, you can edit these journeys to adapt the double opt-in flow to your business needs. For example, you can send a reminder confirmation email if the customer hasn't confirmed their preference within a certain duration. Or, you can send a different confirmation email to a specific set of customers.
 
 ## Double opt-in analytics
 
@@ -154,8 +147,6 @@ For any form that has double opt-in enabled you see additional analytics that re
 This public preview release has the following known limitations:
 
 1. Double opt-in doesn't work for event registration or preference center forms.
-1. The journey created for double opt-in flow isn't editable.
-1. Emails can't include any profile-based personalization attributes, such as first name, last name, etc.
 1. If a default brand profile isn't present for a given business unit, the double opt-in setup fails unless a brand profile is created for the business unit.
 
 ## Frequently asked questions
@@ -177,7 +168,7 @@ The features within compliance profiles enable our customers to accomplish even 
 There could be multiple things affecting the setup of double opt-in for your compliance profile. Ensure that you follow the mentioned troubleshooting steps in order to identify and resolve the issue:
 
 1. Do you have permission to create an email and a journey? If not, then work with your administrator to get those privileges assigned or ask another user that has those permissions to kick off the setup.
-1. The double opt-in template has been removed or modified in ways that leads to validation errors for the autocreated confirmation email. Please wait for the next release to have your template reset or create a support request if you can't wait for the next release.
+1. The double opt-in template has been removed or modified in ways that leads to validation errors for the auto-created confirmation email. Wait for the next release to have your template reset or create a support request if you can't wait for the next release.
 1. A brand profile doesn't exist for your environment or for the specific business unit (if you use business units) – create a default brand profile.
 1. Transient issues are preventing the creation or publishing of an email or the journey – Wait for a few minutes and then retry again.
 1. If you have tried all these troubleshooting steps above and you're still unable to set up double opt-in, you should create a support request.

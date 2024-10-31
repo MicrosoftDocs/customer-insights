@@ -55,8 +55,6 @@
       href: data-sources-manage.md
     - name: Enrichment for data sources
       href: data-sources-enrichment.md
-    - name: Incremental refresh for data sources
-      href: incremental-refresh-data-sources.md
     - name: Real-time data ingestion
       href: real-time-data-ingestion.md
     - name: Data prep report
@@ -339,7 +337,7 @@
       href: customer-managed-keys.md
     - name: Securely access customer data with Customer Lockbox
       href: security-lockbox.md
-    - name: Set up an Azure Private Link
+    - name: Set up managed identities for storage accounts behind firewalls
       href: private-link.md
     - name: Export diagnostic logs
       href: diagnostics.md
@@ -365,8 +363,6 @@
   items:
     - name: Integrate with Customer Insights - Journeys
       href: marketing-get-started.md
-    - name: Enrich Sales' lead summaries
-      href: lead-profile-summary.md
     - name: Automatically link Dynamics 365 apps to customer profiles
       href: integrate-d365-apps.md
 
@@ -403,8 +399,6 @@
       href: faqs-docs-qna.md
     - name: FAQs for segment creation
       href: faqs-segment-creation.md
-    - name: FAQ for customer insights in Sales lead summaries
-      href: faqs-profile-summary.md
 
 - name: More resources
   items:

@@ -1,14 +1,17 @@
 ---
 title: New and upcoming features
 description: Information about new features, improvements, and bug fixes in Dynamics 365 Customer Insights - Journeys releases.
-ms.date: 06/28/2024
+ms.date: 10/17/2024
 ms.topic: article
-author: alfergus
-ms.author: alfergus
+author: colinbirkett
+ms.author: colinbirkett
 ms.collection: bap-ai-copilot
 ---
 
 # What's new in Dynamics 365 Customer Insights - Journeys
+
+> [!IMPORTANT]
+> **The [outbound marketing](user-guide.md) module will be removed from Customer Insights - Journeys on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](transition-overview.md)
 
 [!INCLUDE [marketing-trial-cta](./includes/marketing-trial-cta.md)]
 
@@ -17,6 +20,144 @@ We're excited to announce our newest updates! This article summarizes early acce
 Customer Insights - Journeys updates are [pushed to customers automatically](https://cloudblogs.microsoft.com/dynamics365/it/2020/04/27/automatic-update-policy-for-dynamics-365-marketing/). Solutions are available for early validations. To manually update your instances, follow the steps in [Keep Customer Insights - Journeys up to date](apply-updates.md).
 
 To submit and vote on **feature requests** and **product suggestions**, go to the [Dynamics 365 Application Ideas portal](https://experience.dynamics.com/ideas/categories/?forum=dfa5b83d-9e4c-e811-a956-000d3a1bef07&forumName=Dynamics%20365%20Marketing).
+
+## October 2024 update
+
+| App              | GA release      |
+|------------------|-----------------|
+| Customer Insights - Journeys        |  1.1.49129.84   |
+
+> [!IMPORTANT]
+> Starting on October 10, 2024, changes to link functionality affect the following areas:
+> - **Link tracking**: Links in messages that were sent more than six months prior no longer produce tracking results, but otherwise function correctly. Links in messages sent less than six months prior continue to generate tracking analytics.
+> - **Text messages**: URLs sent in SMS messages expire six months after the message is sent and no longer work.
+> - **Unsubscribe links**: Unsubscribe links expire six months after the link is created and no longer work.
+
+### Public preview
+
+- **Understand customer inflows and exits at every journey step**
+    - It’s critical to understand exactly what happened to each customer who entered and exited your real-time journeys. With improved journey analytics, you’ll gain confidence in the processing of every step in your journey through improved metrics and an increased ability to export data. For example, if your journey uses exit or exclusion segments, you'll be able to see and understand why fewer customers started your journey than were in the entry segment. You'll also be able to see the list of customers who entered and exited each step in the journey and export lists of up to 50,000 people for further analysis. (This preview will be available in all geos by December 16, 2024.)
+    - [Release plan](/dynamics365/release-plan/2024wave2/customer-insights/dynamics365-customer-insights-journeys/confidently-understand-customer-inflows-exits-at-every-step-journey)
+    - [Docs](real-time-marketing-analytics.md#journey-operational-analytics)
+    
+    :::image type="content" source="media/operational-analytics-1.png" alt-text="An overview of customer inflow, processed, and exit analytics." lightbox="media/operational-analytics-1.png":::
+
+- **Get insights on email engagement with heatmap analytics**
+    - Understanding the effectiveness of email campaigns can often be complex, particularly when information and links are abundant. Gaining clarity on which areas or links captivate your audience and drive them to act is crucial for refining the user experience and boosting email performance. Real-time journeys email insights now offer a clear view of your audience's preferences by illustrating their interactions within your emails. This immediate visual feedback highlights the content that resonates the most, empowering you to adjust your messaging for heightened impact and better conversion rates.
+    - [Release plan](/dynamics365/release-plan/2024wave2/customer-insights/dynamics365-customer-insights-journeys/get-insights-email-engagement-heatmap-analytics)
+    - [Docs](email-insights.md)
+
+### Monthly enhancements
+
+- **Easily engage multiple audiences in a single journey with multiple segments**
+    - If you already have created specific segments for different purposes and need to reach some or all of them, you can now easily do so by specifying multiple segments for a journey. There's no need to create another segment from scratch, combine existing segments into a composite one, or make multiple copies of the same journeys. Specifying multiple segments is not only straightforward and efficient but also enables marketers without segment creation roles to engage multiple audiences without waiting for a new segment to be created. Additionally, it reduces the number of segments that need maintenance or cleanup and does not add to the overall segment limit. 
+        > [!NOTE]
+        > All segments should be of the same entity, either leads or contacts or profiles. You can already specify multiple segments as exit segments or exclusion segments. This enhancement extends the ability to specify multiple segments to start a journey. Outbound marketing segments can't be used when specifying multiple segments.
+    - [Docs](real-time-marketing-segment-based-journey.md#set-the-journey-start)
+    
+    :::image type="content" source="media/select-segment-journey.png" alt-text="Engage multiple audiences in a single journey with multiple segments." lightbox="media/select-segment-journey.png":::
+
+### New blogs and scenario docs
+
+Learn how to make the most of the new Dynamics 365 Customer Insights features in our latest blogs and scenario docs:
+
+- [Customizable error messages for form field validation - FastTrack blog](https://community.dynamics.com/blogs/post/?postid=cdcd1dbf-2b7f-ef11-ac20-7c1e521a63a7)
+
+## September 2024 update
+
+### Version number
+
+| App              | GA release      |
+|------------------|-----------------|
+| Customer Insights - Journeys        |   1.1.48225.52   |
+
+> [!IMPORTANT]
+> Starting on October 10, 2024, changes to link functionality will affect the following areas:
+> - **Link tracking**: Links in messages that were sent more than six months prior will no longer produce tracking results, but will otherwise function correctly. Links in messages sent less than six months prior will continue to generate tracking analytics.
+> - **Text messages**: URLs sent in SMS messages will expire six months after the message is sent and will no longer work.
+> - **Unsubscribe links**: Unsubscribe links will expire six months after the link is created and will no longer work.
+
+### Public preview
+
+- **Refine email content in running journeys**
+    - To maximize customer engagement, it's crucial for customer experience teams to regularly refine email content, ensuring that communication remains current, relevant, and impactful. You can now easily edit content, layout, links, buttons, or dynamic content in your email messages while a journey is running—without creating a new version or interrupting the customer experience. Changing email messages in live journey gives you more freedom and power over your email marketing campaigns and helps you to respond to changing business or customer needs.
+    - [Release plan](/dynamics365/release-plan/2024wave1/customer-insights/dynamics365-customer-insights-journeys/improve-engagement-editing-emails-live-journeys)
+    - [Docs](edit-email-in-live-journey.md)
+
+- **Streamline form filling and event registration with form prefill**
+    - The repetitive task of filling out forms can be a significant deterrent to event registration. Nobody likes to repeat information that they've already provided. Imagine loyal customers who attend multiple conferences each year having to input their contact information and preferences every time. Form prefill in Dynamics 365 Customer Insights eliminates the need to repeatedly request basic details from your customers, reducing redundancy and saving time. This not only expedites the registration process but also allows for more strategic collection of customer data over time.
+    - [Release plan](/dynamics365/release-plan/2024wave2/customer-insights/dynamics365-customer-insights-journeys/form-prefill-simplifies-form-filling-event-sign-up)
+    - [Docs](real-time-marketing-form-prefill.md)
+
+- **Control how fast customers can enter a journey**
+    - There are times when you want to reach a large audience, but sending a message to the entire audience at the same time would cause problems for your business. With journey rate limiting, you’ll be able to space out message sending over time by setting how quickly you want customers to enter your journey. This feature helps prevent overwhelming downstream operations with a large influx of requests from customers who receive messages from your journey. For example, let's say you have a journey that sends messages to your entire customer base with a call to action to contact your call center. You may want to avoid creating a poor customer experience due to long wait times from an overwhelmed help desk if you send messages at the same time to everyone. Instead, you can now slow down how fast customers enter the journey, avoiding thousands of phone calls at the same time.
+    - [Release plan](/dynamics365/release-plan/2024wave1/customer-insights/dynamics365-customer-insights-journeys/improve-customer-experience-controlling-how-fast-customers-enter-journey)
+    - [Docs](control-how-fast-enter-journey.md)
+
+### Monthly enhancements
+
+- **Queued messages are not sent when journey is stopped**
+    - When a journey is stopped, you now see an immediate change in the journey state to “Stopping.” This assures that your request was received and is being processed. Furthermore, if your messages are still pending in the send queue (this can happen when there is high volume of messages), such messages will now be removed immediately and will not be sent. This avoids a situation where messages continue to be delivered even though the journey has been stopped.
+    - [Docs](journeys-overview.md)
+
+- **Maximize email engagement and optimize content with link insights**
+    - Link insights in real-time journeys allow you to analyze the performance of individual links in your emails. You can now view key metrics such as click rate and unique clicks per link and easily compare the performance of each link within your email campaigns. Use this data to optimize your content, improve engagement, and make more informed decisions to drive better results.
+    - [Docs](real-time-marketing-analytics.md)
+
+<!---
+
+- **Outbound marketing removal notification and ability to hide outbound**
+    - In-product banners are now shown to all users to inform them that Outbound marketing will be removed as of June 30th, 2025 and that social posting and LinkedIn lead generation will be removed as of Dec 2nd, 2024. We also added a highly visible card in the Settings > Versions page that talks about moving to real-time and now provide a button that can be used to hide outbound from the site map once the transition is complete.
+    - [Docs]()
+
+-->
+
+## August 2024 update
+
+There is no Dynamics 365 Customer Insights - Journeys release for August. We will be back in September with new feature improvements, updates, and bug fixes.
+
+## July 2024 update
+
+### Version number
+
+| App              | GA release      |
+|------------------|-----------------|
+| Customer Insights - Journeys        |  1.1.46046.74   |
+
+### General availability
+
+- **Build custom reports using Microsoft Fabric integration**
+    - In today's data-driven world, marketers face the challenge of gaining a comprehensive view of their campaigns to make informed decisions. Each business has unique needs and requirements for aggregating data from various sources. While Dynamics 365 Customer Insights - Journeys already offers powerful out-of-the-box reports, the app also offers additional custom reporting capabilities to address your unique scenarios. Now in real-time journeys, you can effortlessly create custom Power BI reports tailored to your business needs by leveraging Microsoft Fabric capabilities. Harness seamless access to data to gain a complete understanding of your campaigns, lead management, market performance, and customer engagement, enabling you to identify new opportunities.
+    - [Release plan](/dynamics365/release-plan/2024wave1/customer-insights/dynamics365-customer-insights-journeys/build-custom-reports-using-fabric-integration)
+    - [Docs](fabric-integration.md)
+
+- **Improve reliability of insights with advanced bot protection**
+    - Ensuring the integrity of your data and the efficiency of your operations is paramount. Advanced bot protection in Customer Insights - Journeys empowers your business to thrive by safeguarding your business processes. Improve your business decisions with the confidence of knowing that the data you collect is accurate and represents real human interactions. With bot protection, you not only enhance the quality of your insights but also elevate the customer experience by minimizing disruptions caused by malicious bots.
+    - [Release plan](/dynamics365/release-plan/2024wave1/customer-insights/dynamics365-customer-insights-journeys/improve-reliability-insights-advanced-bot-protection)
+    - [Docs](bot-protection.md)
+
+- **Optimize email content based on customer behavior across devices**
+    - In real-time journeys email insights, you can now delve into comprehensive device data, including operating systems, browsers, device types, and email clients. Leverage the power of detailed engagement analysis across different platforms to fine-tune your marketing strategy. Tailor your email's design and content to align with the devices most used by your audience, ensuring seamless readability for your messages and, ultimately, leading to heightened customer interaction and loyalty.
+    - [Release plan](/dynamics365/release-plan/2024wave1/customer-insights/dynamics365-customer-insights-journeys/increase-email-engagement-optimizing-content-based-customers-behavior-across-devices)
+    - [Docs](real-time-marketing-analytics.md#email-insights)
+
+### Public preview
+
+- **Improve engagement and compliance with double opt-in**
+    - Privacy and data protection laws in many regions require double opt-in functionality to help verify customer information. Double opt-in requires users to confirm subscription preferences through a follow-up email after the initial subscription. By confirming subscription preferences a second time, you comply with legal requirements and improve engagement by ensuring that users who’ve subscribed are intent on receiving future communications. When customers are certain they want to receive email communications, spam complaints and bounce rates are reduced, and your sender reputation is improved.
+    - [Release plan](/dynamics365/release-plan/2024wave1/customer-insights/dynamics365-customer-insights-journeys/improve-engagement-compliance-double-opt-in)
+    - [Docs](real-time-marketing-double-opt-in.md)
+
+- **Split your audience into groups to deliver unique customer experiences**
+    - When you want customers to have different experiences in one journey, you need to divide them into groups. While this is possible today using attribute branches or segments, sometimes the number of customers in each branch is more important than what those customers have in common. For example, you may want to send a survey out to a random subset of your customers for feedback, something that would be time-consuming to configure today. The new journey split tile allows you to split your audience into branches to provide a subset of your audience with unique experiences, whether that be a survey, a new type of experience to test, or a first-come promotional offer. You can split your audience by percentages (for cases where you need randomness) or by numbers (for cases where you want to deliver specific experiences to a set number of people).
+    - [Release plan](/dynamics365/release-plan/2024wave1/customer-insights/dynamics365-customer-insights-journeys/provide-varied-experiences-one-journey-using-journey-split-tiles)
+    - [Docs](real-time-marketing-split-audience.md)
+
+### Monthly enhancements
+
+- **Optimize your email content with enhanced insights for conditional content variations**
+    - You can now effortlessly compare the performance of different email variants using conditional content within real-time journeys. Gain valuable insights into key metrics such as open rates, click rates, and unique clicks for each conditional content variant, enabling you to identify what resonates best with your audience. Optimize your email campaigns by leveraging data-driven decisions to improve engagement and drive better results.
+    - [Docs](real-time-marketing-analytics.md#email-insights)
 
 ## June 2024 update
 
@@ -93,13 +234,6 @@ Learn how to make the most of the new Dynamics 365 Customer Insights features in
 | App              | GA release      |
 |------------------|-----------------|
 | Customer Insights - Journeys        |   1.1.40197.68    |
-
-> [!IMPORTANT]
-> Starting on April 15, 2024, changes to link functionality affected the following areas:
->
-> - **Link tracking**: Links in messages sent more than one year prior to April 15 no longer produce tracking results, but otherwise function correctly. Links in messages sent less than one year prior continue to generate tracking analytics.
-> - **Text messages**: URLs sent in SMS messages expire one year after the message was sent and no longer work.
-> - **Unsubscribe links**: Unsubscribe links expire one year after the link was created and no longer work.
 
 > [!NOTE]
 > On July 1, 2024, active journeys in the real-time journeys area that were created on or before May 5, 2022 will stop working. To avoid disruption, follow the steps outlined in the [Known issues for journeys](journey-known-issues.md#steps-to-avoid-journey-disruption) article before July 1, 2024.

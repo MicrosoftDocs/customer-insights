@@ -1,7 +1,7 @@
 ---
 title: "Connect to Delta tables in Azure Data Lake Storage"
 description: "Work with data stored in Delta tables from Azure Data Lake Storage."
-ms.date: 06/27/2024
+ms.date: 10/02/2024
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -13,22 +13,31 @@ ms.custom: bap-template
 
 Connect to data in Delta tables and bring it into Dynamics 365 Customer Insights - Data.
 
-[!INCLUDE [delta-lake-info](./includes/delta-lake-info.md)]
-
 [!INCLUDE [delta-lake-benefits](./includes/delta-lake-benefits.md)]
 
-<!---
+## Supported Databricks features and versions
 
-<!--- For example, Contoso Coffee has millions of records coming in on a daily basis. Currently, they do full refreshes of their data every 6 hours. This full refresh takes lots of time to reprocess everything when most data has already been processed. By using the Delta format, Contoso is able to greatly reduce their processing time by only processing the new records, leading to even faster insights from Customer Insights – Data.
---->
+Customer Insights - Data supports Databricks features with a 'minReaderVersion' of 2 or earlier. Databricks features that require Databricks reader version 3 or later aren't supported. The table shows the supported and unsupported Databricks features.
+
+| Supported features  | Unsupported features |
+| ------------------- | -------------------- |
+| Basic functionality | Deletion vectors     |
+| Change data feed    | Liquid clustering    |
+| Check constraints   | Table features write |
+| Column mapping      | TimestampNTZ         |
+| Generate columns    | Type widening        |
+| Identity columns    | Variant              |
+| Row tracking        |                      |
+| Table features read |                      |
+| UniForm             |                      |
+
+ Learn more: [How does Databricks manage Delta Lake feature compatibility?](https://docs.databricks.com/en/delta/feature-compatibility.html#features-by-protocol-version).
 
 ## Prerequisites
 
 [!INCLUDE [delta-lake-prereqs](./includes/delta-lake-prereqs.md)]
 
 - Data in your Azure Data Lake Storage must be in Delta tables. Customer Insights - Data relies on the version property in the table's history to identify the latest changes for incremental processing.
-
-- Customer Insights - Data supports Databricks reader version 2. Delta tables using features that require Databricks reader version 3 or above aren't supported. Learn more: [How does Databricks manage Delta Lake feature compatibility](https://docs.databricks.com/delta/feature-compatibility.html#how-does-databricks-manage-delta-lake-feature-compatibility)?
 
 ## Connect to Delta data from Azure Data Lake Storage
 
@@ -38,7 +47,7 @@ Connect to data in Delta tables and bring it into Dynamics 365 Customer Insights
 
 1. Select **Azure Data Lake Delta tables**.
 
-   :::image type="content" source="media/delta-lake-new.svg" alt-text="Dialog box to enter connection details for Delta Lake.":::
+   :::image type="content" source="media/delta-lake-new.svg" alt-text="Dialog box to enter connection details for Delta Lake." lightbox="media/delta-lake-new.svg":::
 
 1. Enter a **Data source name** and an optional **Description**. The name is referenced in downstream processes and it's not possible to change it after creating the data source.
 
@@ -47,15 +56,15 @@ Connect to data in Delta tables and bring it into Dynamics 365 Customer Insights
    - **Azure subscription**: Select the **Subscription** and then the **Resource group** and **Storage account**.
    - **Azure resource**: Enter the **Resource Id**.
 
-1. Optionally, if you want to ingest data from a storage account through an Azure Private Link, select **Enable Private Link**. For more information, see [Private Links](private-link.md).
-
-1. Choose the name of the **Container** that contains the folder of your data, and select **Next**.
+1. Choose the name of the **Container** that contains the folder of your data.
+1. If your storage account is behind a firewall, select **This storage account is behind a firewall** to connect using [managed identities for Azure resources](private-link.md).
+1. Select **Next**.
 
 1. Navigate to the folder that contains the data in Delta tables and select it. Then, select **Next**. A list of available tables displays.
 
 1. Select the tables you want to include.
 
-1. For selected tables where a primary key hasn't been defined, **Required** displays under **Primary key**. For each of these tables:
+1. For selected tables where a primary key isn't defined, **Required** displays under **Primary key**. For each of these tables:
    1. Select **Required**. The **Edit table** panel displays.
    1. Choose the **Primary key**. The primary key is an attribute unique to the table. For an attribute to be a valid primary key, it shouldn't include duplicate values, missing values, or null values. String, integer, and GUID data type attributes are supported as primary keys.
    1. Select **Close** to save and close the panel.
@@ -81,7 +90,7 @@ When a column is added or removed from the schema of a Delta folders data source
 
 ### Add a column
 
-When a column is added to the data source, the information automatically appends to the data in Customer Insights - Data once a refresh occurs. If you have already configured unification for the table, the new column must be added to the unification process.
+When a column is added to the data source, the information automatically appends to the data in Customer Insights - Data once a refresh occurs. If unification is already configured for the table, the new column must be added to the unification process.
 
 1. From the [**Customer data**](data-unification-update.md#edit-customer-data) step, select **Select tables and columns** and select the new column.
 

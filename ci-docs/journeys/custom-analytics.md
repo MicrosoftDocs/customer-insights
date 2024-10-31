@@ -14,7 +14,10 @@ search.audienceType:
 # Prepare for analytic reporting with Power BI
 
 > [!IMPORTANT]
-> This article only applies to [outbound marketing](/dynamics365/marketing/user-guide) data export. To access interaction data for real-time journeys, see [Customer Insights - Journeys integration with Microsoft Fabric](fabric-integration.md)
+> **This article only applies to [outbound marketing](user-guide.md), which will be removed from the product on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](transition-overview.md)
+
+> [!TIP]
+> To access interaction data for real-time journeys, see [Customer Insights - Journeys integration with Microsoft Fabric](fabric-integration.md)
 
 Outbound marketing provides a wide selection of built-in analytics throughout the application. But you can also create your own custom analytics and reports from your Customer Insights - Journeys data by using Power BI. We provide endpoints that you can use to connect Power BI to Customer Insights - Journeys, plus a downloadable Power BI template that you can open in Power BI Desktop, connect to your Dynamics 365 data sources, and then customize as needed. When you're done setting it up, you can publish and share your Power BI report using the standard Power BI online tools.
 
@@ -28,14 +31,6 @@ To create custom analytics, you can connect two different data sources, each of 
 - **Interaction data** is stored in the marketing-insights service database and includes information about how your contacts interacted with your marketing initiatives, including email opens, email clicks, event registrations, page submissions, and more. You can see this type of information when you look at the insights built into Customer Insights - Journeys, but you can't create these records nor view them directly. In the current release, you'll use the Power BI "Azure Blob Storage" connector for this type of data. In future releases, you'll also be able to use the dataflow connector.
 
 You'll be able to connect directly to your Customer Insights - Journeys  database from Power BI to fetch your profile data, but to access interaction data you'll need to set up Azure Blob Storage, configure Customer Insights - Journeys to save interaction data there, and then connect Power BI to your blob storage.
-
-<!-- [kfm: this video is being edited and will be hosted elsewhere. Revive this section and update the embed when it's ready]
-
-Watch [the following video](https://www.youtube.com/watch?v=pBrB1BohUrE)
-for a quick overview of all the data that is available for your marketing analytical reports.<br/><br/>
-
-> [!VIDEO https://www.youtube.com/embed/pBrB1BohUrE]
--->
 
 <a name="connect-blob"></a>
 
@@ -57,7 +52,6 @@ for a quick overview of all the data that is available for your marketing analyt
 >
 > 1. If you *do not* need to limit public network access to the Storage Account ([Configure Azure Storage firewalls and virtual networks](/azure/storage/common/storage-network-security?tabs=azure-portal)), proceed with further configuration steps. **If you do not need to limit public network access, you can complete this guide and connect Azure Blob storage to Customer Insights - Journeys**.
 > 1. If you need to limit public network access to the Storage Account&mdash;for example, if you want to limit access to selected virtual networks and IP addresses only&mdash;**you must [contact our customer support team](https://dynamics.microsoft.com/contact-us/) to assist you with the Azure Storage Account firewall configuration**. This is a complicated scenario and support team assistance is required based on the Storage Account location and service instance data. You can continue with steps 1 through 7 below, but you can't create a new analytics configuration (steps 8 through 10) until your firewall configuration is set up properly.
-> 1. If the Storage Account is required to have public network access disabled entirely and you want to limit access to Private Link Endpoint only, **then this is not a supported scenario for this feature**. Consider using a different Storage Account with lower access restrictions.
 
 1. Sign into [portal.azure.com](https://portal.azure.com) using the same account where you're running Customer Insights - Journeys.
 

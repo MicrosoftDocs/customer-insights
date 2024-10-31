@@ -16,7 +16,7 @@ search.audienceType:
 [!INCLUDE [azure-ad-to-microsoft-entra-id](../includes/azure-ad-to-microsoft-entra-id.md)]
 
 > [!IMPORTANT]
-> This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
+> **This article only applies to [outbound marketing](../user-guide.md), which will be removed from the product on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](../transition-overview.md)
 
 The events API supports user authentication with Microsoft Entra ID. To link the events API to your Microsoft Entra ID, you need to add your `Microsoft Entra ID Client ID` and `Microsoft Entra ID Metadata Endpoint` to your `web application setting`.  More information: [Creating a Microsoft Entra ID tenant and adding a web application to the tenant](event-management-aad-b2c-setup.md#creating-a-microsoft-entra-id-tenant-and-adding-a-web-application-to-the-tenant)
 

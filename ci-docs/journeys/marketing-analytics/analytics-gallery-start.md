@@ -21,7 +21,7 @@ search.audienceType:
 [!INCLUDE [marketing-trial-cta](.././includes/marketing-trial-cta.md)]
 
 > [!IMPORTANT]
-> This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
+> **This article only applies to [outbound marketing](../user-guide.md), which will be removed from the product on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](../transition-overview.md)
 
 This article provides a gallery with links to downloads and details for each Microsoft Power BI template and sample report that's currently available for Dynamics 365 Customer Insights - Journeys. It also explains how to connect a downloaded template to your Dynamics 365 Customer Insights - Journeys instance. These resources help you produce custom analytics reports with Power BI for your Dynamics 365 Customer Insights - Journeys organization.
 

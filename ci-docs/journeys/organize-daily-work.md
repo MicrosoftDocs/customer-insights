@@ -14,7 +14,7 @@ search.audienceType:
 # Manage your everyday activates
 
 > [!IMPORTANT]
-> This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
+> **This article only applies to [outbound marketing](user-guide.md), which will be removed from the product on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](transition-overview.md)
 
 You can use common features of Dynamics 365 to organize your daily work, including using dashboards to get an overview of your most important information, planning and recording activities (such as appointments, tasks, and phone calls), creating new records quickly, and assigning records (including activities) to a user or a team.
 
