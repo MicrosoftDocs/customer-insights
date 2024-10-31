@@ -1,9 +1,8 @@
 ---
 title: "Create and manage measures"
 description: "Create and manage measures to help analyze and reflect the performance of your business."
-author: v-wendysmith
-ms.author: wameng
-ms.reviewer: v-wendysmith
+author: JimsonChalissery
+ms.author: jimsonc
 ms.topic: how-to
 ms.date: 10/31/2024
 ms.custom: bap-template
