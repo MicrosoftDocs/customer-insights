@@ -1,7 +1,7 @@
 ---
 title: Set up outbound text messaging
 description: Learn how to set up outbound text messaging in Dynamics 365 Customer Insights - Journeys.
-ms.date: 11/08/2023
+ms.date: 10/31/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -100,33 +100,5 @@ To set up a new SMS provider for the Customer Insights - Journeys app:
     > ![Twilio number config screenshot.](media/real-time-marketing-text-message-twilio-config.png "Twilio number config screenshot")
 
 For Infobip, LINK Mobility, Telesign, and Vibes, you'll need to contact customer support to set this up for you.
-
-## Add a sender number using the Azure Communication Services free trial preview (US only)
-> [!IMPORTANT]
-> Effective November 8, 2023, unverified toll-free numbers sending messages to US phone numbers will have its traffic blocked. Due to this new restriction, the Azure SMS Preview feature is temporarily unavailable. Numbers that were previously verified will continue to send text messages.
-
-> [!NOTE]
-> Text messaging using a toll-free number generated in the Azure Communication Services preview is only supported in the countries/regions listed below.
->
->| Supported countries/regions | Supported type | Legal designation | Range    |
->|---------------------|----------------|-------------------|----------|
->| United States                 | Toll-free      | Transactional     | Domestic |
-
-> > [!NOTE]
-> During the Azure Communication Services free trial preview, the text message service is limited to a single toll-free phone number with a limited number of outbound messages per month (1,000 per organization). The phone number you receive will be your dedicated number for the duration of the preview.
-> 
-> If you want to integrate an already active Azure Communication Services subscription, refer to the section above instead.
-
-To generate an Azure Communication Services free trial preview phone number to use in Customer Insights - Journeys, go to **Settings** in the area switcher menu. Then go to **Customer engagement** > **Azure SMS preview** and select **+New text message sender** on the top ribbon.
-
-Once you agree to the *Voice and text message terms* and select your country or region, you’ll be provided with a toll-free United States phone number.
-
-> [!div class="mx-imgBorder"]
-> ![Generate phone number screenshot.](media/real-time-marketing-text-number.png "Generate phone number screenshot")
-
-> [!TIP]
-> Carriers, just like email providers, have ways of filtering spam messages. This results in the phone number being blocked and becoming unusable. Due to carrier filtering, you should only use toll-free numbers for transactional messages (as opposed to promotional messages). You should avoid sending promotional content or misleading information. Promotional content includes free products or discount offers.
-
-You can view all active provider integrations in the **SMS providers** tab. You can also edit, update, delete, or add more numbers to an existing integration.
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
