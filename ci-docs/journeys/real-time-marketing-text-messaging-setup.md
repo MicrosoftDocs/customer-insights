@@ -1,7 +1,7 @@
 ---
 title: Set up outbound text messaging
 description: Learn how to set up outbound text messaging in Dynamics 365 Customer Insights - Journeys.
-ms.date: 11/08/2023
+ms.date: 10/31/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
