@@ -1,7 +1,7 @@
 ---
 title: Known issues in Customer Insights - Journeys with mitigations
 description: Learn about known issues in Customer Insights - Journeys and how to work around them.
-ms.date: 09/24/2024
+ms.date: 10/31/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -18,7 +18,7 @@ As we continue to work on Customer Insights - Journeys and refine the experience
 ## Analytics
 
 - Analytics for a journey can take up to 6-12 hours to show up.
-- Currently, we have faced issues with events being dropped before they can get to analytics. This can sometimes cause issues in the analytics reporting where customers are shown to be in a ‘processing’ state much after a journey has been completed. We're working on a solution to improve this.
+- Occasionally events are dropped before they can get to analytics. This can cause issues in the analytics reporting where customers are shown to be in a ‘processing’ state much after a journey has been completed. We're working on a solution to improve this.
 - Data retention is 12 months for contact and lead insights, goal analytics, channel analytics (including email insights and delivery and interaction details such as contacts impacted by delivery and interaction issues), and AI optimization analytics.
 - Some strings in the out-of-the-box Power BI aggregated analytics dashboards aren’t localized.
 - Business units aren't supported in the out-of-the-box Power BI aggregated analytics dashboards.
@@ -61,6 +61,10 @@ As we continue to work on Customer Insights - Journeys and refine the experience
 - If your embedded form isn't visible on external pages, ensure that the domain allows external form hosting. Most times, this is the reason why customers aren't able to see the form on their website. You don't need to finish the domain authentication process to enable external form hosting for your domain. Learn more about [domain authentication](domain-authentication.md) Opens in a new window or tab.
 - In Customer Insights - Journeys, users may encounter an issue where they can't view the form within Power Pages Studio. This particular situation arises when building a complex marketing website with multiple pages, requiring navigation and user authentication capabilities. To address this challenge, Power Pages Studio emerges as the optimal solution. To embed a Customer Insights - Journeys marketing form into a website constructed using Power Pages Studio, some modifications to the source code are necessary. Specifically, the addition of a JavaScript code snippet is essential to facilitate the seamless integration of the Marketing form. It's important to note that within Power Pages Studio, the form won't be visible during the editing process. However, once the page goes live and is accessible to the public, the form becomes visible and fully functional on the website. This capability enhances the user experience and ensures the successful implementation of RTM strategies within the marketing website.
 
+## Lead scoring
+
+- Parent contact scoring affects the time needed for scoring processing. We recommend avoiding parent contact scoring, especially if you have a large number of contacts.
+
 ## Segments
 
 - A segment can be created for up to 100,000,000 contacts.
@@ -79,9 +83,5 @@ As we continue to work on Customer Insights - Journeys and refine the experience
 - Today, triggers also fire when a record is manually updated in Dynamics 365 Dataverse. This can cause a contact to go through the journey based on the trigger even if they don't do anything to activate it.
 - Today, for trigger-based journeys that use the if/then tile, you can sometimes lose about 1% of all trigger events due to a slight delay in our system catching them.
 - Triggers can have at most 30 attributes. If the trigger has a table reference, then such a reference is counted as one attribute toward the limit of 30. There's an additional limit of 1,024 on the number of columns from all such entity references.
-
-## Lead scoring
-
-Currently, the usage of parent contact scoring will affect the needed time for scoring, and we recommend avoiding utilizing it especially if you have a large number of contacts.
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
