@@ -43,7 +43,7 @@ On the "Create a new journey" screen:
 - Create a name for the journey
 - Select **Segment-based** for the journey type. Customers start a segment-based journey when they qualify to be part of a segment.
 - Select one or more segments. Note the following when selecting multiple segments:
-  - The total combined member count of all segments can't exceed the limit noted [here](real-time-marketing-known-issues.md#segments) for a journey. You can select at most 25 segments (or fewer if the segment size limit is reached sooner).
+  - The total combined member count of all segments can't exceed the limit noted [here](real-time-marketing-known-issues.md#segments) for a journey. You can select at most 15 segments (or fewer if the segment size limit is reached sooner).
   - Outbound marketing segments or mixed audience types (for example, contacts and leads) can't be selected. 
   - Only one-time journeys are supported at this time (recurring journeys and ongoing journeys where audience can enter any time will be supported in an upcoming release).
   - Environments that use their own [Azure Data Lake storage account](../data/own-data-lake-storage.md#connect-customer-insights---data-with-your-storage-account) aren't supported.
