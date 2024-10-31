@@ -1,7 +1,7 @@
 ---
 title: Glossary of common insights terms
 description: Definitions of terms commonly used to describe marketing results, insights, and KPIs in Dynamics 365 Customer Insights - Journeys.
-ms.date: 10/03/2024
+ms.date: 10/31/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
