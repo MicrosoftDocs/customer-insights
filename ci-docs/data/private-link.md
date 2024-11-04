@@ -1,7 +1,7 @@
 ---
 title: Set up an Azure Private Link
 description: Learn how to set up an Azure Private Link to connect your Data Lake Storage.
-ms.date: 10/29/2024
+ms.date: 11/04/2024
 ms.topic: how-to
 author: AndreaAczel
 ms.author: anaczel
@@ -14,7 +14,7 @@ ms.custom: bap-template
 [Azure Private Link](/azure/private-link/private-link-overview) lets Dynamics 365 Customer Insights - Data connect to your Azure Data Lake Storage account over a private endpoint in your virtual network. For data in a storage account, which isn't exposed to the public internet, Private Link enables the connection to that restricted network.
 
 > [!NOTE]
-> Customer Insights - Data is migrating from Azure Private Link to managed identities for Azure resources. During the migration, you might set up connections using Azure Private Link or managed identities. When setting up a connection to you Azure storage container, **Enable private link** indicates you'll use Private Link. This article explains the set up process. **This storage account is behind a firewall** indicates you'll use managed identities. Go to [Set up managed identities](managed-identities.md).
+> Customer Insights - Data is migrating from Azure Private Link to managed identities for Azure resources. During the migration, you might set up connections using Azure Private Link or managed identities. When setting up a connection to your Azure storage container, **Enable private link** indicates you'll use Private Link. This article explains the set up process for private links. **This storage account is behind a firewall** indicates you'll use managed identities. Go to [Set up managed identities](managed-identities.md).
 
 There are three scenarios where Customer Insights - Data can be configured to connect to firewall-protected Azure storage containers:
 
