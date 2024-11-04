@@ -1,5 +1,5 @@
 ---
-title: "Preview: Split your audience into groups"
+title: Split your audience into groups
 description: Learn how to split your audience into groups to deliver customer experiences in Dynamics 365 Customer Insights - Journeys.
 ms.date: 08/02/2024
 ms.topic: article
@@ -11,12 +11,7 @@ search.audienceType:
   - enduser
 ---
 
-# PREVIEW: Split your audience into groups
-
-> [!IMPORTANT]
-> A preview feature is a feature that is not complete, but is made available before it’s officially in a release so customers can get early access and provide feedback. Preview features aren’t meant for production use and may have limited or restricted functionality.
-> 
-> Microsoft doesn't provide support for this preview feature. Microsoft Dynamics 365 Technical Support won’t be able to help you with issues or questions. Preview features aren’t meant for production use, especially to process personal data or other data that are subject to legal or regulatory compliance requirements.
+# Split your audience into groups
 
 When you want customers to have different experiences in one journey, you have the option of using attribute branches or segments. Both of these methods use customer attributes to group similar customers together to deliver a targeted experience. There are other times when you want a group of a certain size or you want to select a set of customers randomly rather than based on what they have in common. For example, you might want to send a survey out to a random subset of customers for feedback or provide a coupon to the first 100 customers. The split tile allows you to implement such randomized situations.
 
