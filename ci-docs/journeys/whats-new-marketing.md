@@ -54,6 +54,12 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 
     :::image type="content" source="media/wait-segment-membership-release-planner.png" alt-text="Create a journey that waits until a customer becomes part of a segment then continues to the next step in the journey." lightbox="media/wait-segment-membership-release-planner.png":::
 
+### New blogs and scenario docs
+
+Learn how to make the most of the new Dynamics 365 Customer Insights features in our latest blogs and scenario docs:
+
+- [Implementing cascading dropdown fields in RTM forms - FastTrack blog](https://community.dynamics.com/blogs/post/?postid=ff86d88f-d892-ef11-ac21-6045bdd7e1ae)
+
 ## October 2024 update
 
 | App              | GA release      |
