@@ -39,7 +39,7 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
     :::image type="content" source="media/split-percentage-nov.png" alt-text="Split journey audience by percentage." lightbox="media/split-percentage-nov.png":::
 
 - **Improve engagement and compliance with double opt-in** 
-	- By implementing double opt-in, you can cultivate a more effective email marketing strategy, leading to improved compliance, increased open and click-through rates, and a better overall brand experience for subscribers. Privacy and data protection laws in many regions require double opt-in functionality to help verify customer information. Double opt-in requires users to confirm subscription preferences through a follow-up email after the initial subscription. By confirming subscription preferences a second time, you comply with legal requirements and improve engagement by ensuring that users who’ve subscribed are intent on receiving future communications. When customers are certain they want to receive email communications, spam complaints and bounce rates are reduced, and your sender reputation is improved. 
+	- By implementing double opt-in, you can cultivate a more effective email marketing strategy, leading to improved compliance, increased open and click-through rates, and a better overall brand experience for subscribers. Privacy and data protection laws in many regions require double opt-in functionality to help verify customer information. Double opt-in requires users to confirm subscription preferences through a follow-up email after the initial subscription. By confirming subscription preferences a second time, you comply with legal requirements and improve engagement by ensuring that users who’ve subscribed are intent on receiving future communications. When customers are certain they want to receive email communications, spam complaints and bounce rates are reduced, and your sender reputation is improved. You can now configure if the double opt-in email is sent with each form submission or just once for the newly registered customers. 
 	- [Release plan](/dynamics365/release-plan/2024wave2/customer-insights/dynamics365-customer-insights-journeys/improve-engagement-compliance-double-opt-in) 
 	- [Docs](real-time-marketing-double-opt-in.md)
 
@@ -54,11 +54,28 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 
     :::image type="content" source="media/wait-segment-membership-release-planner.png" alt-text="Create a journey that waits until a customer becomes part of a segment then continues to the next step in the journey." lightbox="media/wait-segment-membership-release-planner.png":::
 
+### Private preview
+
+- **Export your data to your own storage for custom reporting** 
+	- While Customer Insights Journeys offers advanced custom reporting capabilities with Microsoft Fabric, we recognize that integrating with existing reporting systems may be simpler for some customers. For this reason, we've enabled eight customers including Lego, Rexel, and Albertsons to access and export their Customer Insights Journeys interaction data to their own storage solution without requiring a Fabric license. This empowers them to conduct custom reporting and analysis aligned with their existing systems. 
+	- [Release plan]() 
+
+### Monthly enhancements
+
+- **Flexible enforcement model for Text and Custom Channels** 
+	- The enforcement model could be selected only for the email channel. With the latest update, you can select restrictive or non-restrictive enforcement model for Text (SMS) and Custom channels.
+	- [Docs](real-time-marketing-compliance-settings.md#consent-enforcement)  
+
+- **Form with new layout structure improving accessibility and responsivity** 
+	- All newly created Customer Insights Journeys forms have a new layout structure which no longer relies on the tables. This feature comes disabled by default. You can enable it in the feature switches.
+	- [Docs]()  
+
 ### New blogs and scenario docs
 
 Learn how to make the most of the new Dynamics 365 Customer Insights features in our latest blogs and scenario docs:
 
 - [Implementing cascading dropdown fields in RTM forms - FastTrack blog](https://community.dynamics.com/blogs/post/?postid=ff86d88f-d892-ef11-ac21-6045bdd7e1ae)
+- [Beyond open rate: Rethinking email marketing metrics - Microsoft Dynamics 365 Blog](https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2024/10/16/rethinking-email-metrics-the-evolving-landscape-of-open-rates/)
 
 ## October 2024 update
 
