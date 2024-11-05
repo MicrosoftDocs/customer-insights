@@ -54,12 +54,6 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 
     :::image type="content" source="media/wait-segment-membership-release-planner.png" alt-text="Create a journey that waits until a customer becomes part of a segment then continues to the next step in the journey." lightbox="media/wait-segment-membership-release-planner.png":::
 
-### Private preview
-
-- **Export your data to your own storage for custom reporting** 
-	- While Customer Insights Journeys offers advanced custom reporting capabilities with Microsoft Fabric, we recognize that integrating with existing reporting systems may be simpler for some customers. For this reason, we've enabled eight customers including Lego, Rexel, and Albertsons to access and export their Customer Insights Journeys interaction data to their own storage solution without requiring a Fabric license. This empowers them to conduct custom reporting and analysis aligned with their existing systems. 
-	- [Release plan]() 
-
 ### Monthly enhancements
 
 - **Flexible enforcement model for Text and Custom Channels** 
@@ -68,7 +62,6 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 
 - **Form with new layout structure improving accessibility and responsivity** 
 	- All newly created Customer Insights Journeys forms have a new layout structure which no longer relies on the tables. This feature comes disabled by default. You can enable it in the feature switches.
-	- [Docs]()  
 
 ### New blogs and scenario docs
 
