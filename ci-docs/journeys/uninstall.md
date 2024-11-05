@@ -1,7 +1,7 @@
 ---
 title: Uninstall Customer Insights
 description: How to remove Dynamics 365 Customer Insights.
-ms.date: 07/18/2024 
+ms.date: 11/05/2024 
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -23,7 +23,7 @@ You can remove Customer Insights from any Dynamics 365 instance where it's insta
 Uninstalling Customer Insights - Journeys should be done with care. Depending on the reason for uninstalling, you may want to back up your environment and your interaction data to prevent data loss. When you uninstall, several things happen to the application on your environment including:
 
 - The services disconnect from the environment leaving behind only the user experience solutions. You can no longer send emails, orchestrate journeys, create segments, and so on, on the environment.
-- All tracking links in emails or other communication channels, including links to the Preference Center, will become non-functional upon uninstallation of Customer Insights - Journeys. Please allow sufficient time before uninstalling Customer Insights - Journeys if you need these links to stay active.
+- All tracking links in emails or other communication channels, including links to the Preference Center, will become non-functional upon uninstallation of Customer Insights - Journeys. Allow sufficient time before uninstalling Customer Insights - Journeys if you need these links to stay active.
 - The Azure Data Lake that stores your historical interaction data is disconnected and cleaned up. As such, if you don't want to lose this data, you should back it up before uninstalling.
 - The available application installation quota increases by one.
 - The solutions remain on the environment unless you go through the manual process of removing them with help from a support engineer as [described later in this article](uninstall.md#solution-uninstall-order-for-removing-customer-insights---journeys).
