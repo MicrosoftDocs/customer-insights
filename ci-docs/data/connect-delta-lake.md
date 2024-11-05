@@ -59,10 +59,10 @@ Customer Insights - Data supports Databricks features with a 'minReaderVersion' 
 1. Choose the name of the **Container** that contains the folder of your data.
 
 1. If your storage account is behind a firewall, determine your next step:
-   - If **This storage account is behind a firewall** appears, connect to the account using [managed identities for Azure resources](managed-identities.md).
-     :::image type="content" source="media/enable-msi.png" alt-text="Portion of dialog box showing storage account is behind a firewall.":::
    - If **Enable private link** appears, connect to the account using [Azure private links](private-link.md)
      :::image type="content" source="media/enable-private-link.png" alt-text="Portion of dialog box showing enable private link.":::
+   - If **This storage account is behind a firewall** appears, connect to the account using [managed identities for Azure resources (preview)](managed-identities.md).
+     :::image type="content" source="media/enable-msi.png" alt-text="Portion of dialog box showing storage account is behind a firewall.":::
 
 1. Select **Next**.
 

@@ -1,5 +1,5 @@
 ---
-title: Set up managed identities for storage accounts behind firewalls
+title: Set up managed identities for storage accounts behind firewalls (preview)
 description: Learn how to set up managed identities for Azure resources to connect your Data Lake Storage behind firewalls.
 ms.date: 11/04/2024
 ms.topic: how-to
@@ -9,7 +9,9 @@ ms.reviewer: mhart
 ms.custom: bap-template
 ---
 
-# Set up managed identities for storage accounts behind firewalls
+# Set up managed identities for storage accounts behind firewalls (preview)
+
+[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
 Customer Insights - Data is migrating from Azure Private Link to managed identities for Azure resources. Managed identities is the recommended way to connect to Azure resources behind a firewall using a restricted service principal that can only be used between two designated endpoints. The credentials for the service principal can't be exported or viewed.
 
@@ -28,6 +30,8 @@ There are three scenarios where Customer Insights - Data can be configured to co
 - Exports that write to an Azure data lake.
 
 If you use Azure Private Link in Customer Insights - Data, review the [prerequisites](#prerequisites) and then [migrate your private links to managed identities](#migrate-private-links-to-managed-identities-for-azure-resources).
+
+[!INCLUDE [public-preview-note](includes/public-preview-note.md)]
 
 ## Prerequisites
 
@@ -94,11 +98,9 @@ Perform these steps for each storage account or container.
 
 ## Migrate private links to managed identities for Azure resources
 
-Existing Azure Private Links must be updated to managed identities for Azure resources by November 30, 2024. Customer Insights - Data provides the information your Azure Subscription Owner needs to enable managed identities. If you're unable to update your instance by the deadline, request a 30 day extension at [CIDManagedIdentity@Microsoft.com](mailto:CIDManagedIdentity@Microsoft.com).
+Customer Insights - Data provides the information your Azure Subscription Owner needs to enable managed identities. An *Action required* banner tells you that you have one or more storage accounts that must be upgraded to meet security requirements. In the banner, select **See details**.
 
-An *Action required* banner tells you that you have one or more storage accounts that must be upgraded to meet security requirements. In the banner, select **See details**.
-
-   :::image type="content" source="media/upgrade-to-managed-id.png" alt-text="Screenshot showing the 'Action required' banner and message box to upgrade to managed identities for Azure.":::
+:::image type="content" source="media/upgrade-to-managed-id.png" alt-text="Screenshot showing the 'Action required' banner and message box to upgrade to managed identities for Azure.":::
 
 1. Expand **Step 1: Enable Azure Managed Identity in Azure admin portal**.
 
