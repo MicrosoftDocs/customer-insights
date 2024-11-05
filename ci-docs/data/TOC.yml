@@ -337,10 +337,10 @@
       href: customer-managed-keys.md
     - name: Securely access customer data with Customer Lockbox
       href: security-lockbox.md
-    - name: Set up managed identities for storage accounts behind firewalls
-      href: managed-identities.md
     - name: Set up an Azure Private Link
       href: private-link.md
+    - name: Set up managed identities for storage accounts behind firewalls
+      href: managed-identities.md
     - name: Export diagnostic logs
       href: diagnostics.md
     - name: Manage connections

@@ -120,7 +120,7 @@ Go to [Managed identities for Azure resources](/entra/identity/managed-identitie
 
 #### How do I enable managed identity for Azure resources access to storage containers?
 
-The Azure Subscription Owner enables managed identities in the Azure CLI using a script provided by Microsoft. Go to [Set up managed identities for storage accounts behind firewalls](#set-up-managed-identities-for-storage-accounts-behind-firewalls).
+The Azure Subscription Owner enables managed identities in the Azure CLI using a script provided by Microsoft. Go to [Set up managed identities for storage accounts behind firewalls](#set-up-managed-identities-for-storage-accounts-behind-firewalls-preview).
 
 #### How do I configure connections in Customer Insights - Data to use managed identities for Azure resources?
 
