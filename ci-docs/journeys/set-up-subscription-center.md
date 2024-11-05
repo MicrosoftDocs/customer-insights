@@ -60,7 +60,7 @@ To find, customize, and view the default subscription center:
 
 1. To open the marketing page list, go to **Outbound marketing** > **Internet marketing** > **Marketing pages**.
 1. Create a new marketing page, make sure the type is **Subscription center**, and save it (don't go live yet).
-1. Take note of the marketing page ID. The page ID is the highlighted part in the following URL: `https://yourorg.crm.dynamics.com/main.aspx?appid=00001111-aaaa-2222-bbbb-3333cccc4444&pagetype=entityrecord&etn=msdyncrm_marketingpage&id=11112222-bbbb-3333-cccc-4444dddd5555`
+1. Take note of the marketing page ID. The page ID is the highlighted part in the following URL: `https://yourorg.crm.dynamics.com/main.aspx?appid=00001111-aaaa-2222-bbbb-3333cccc4444&pagetype=entityrecord&etn=msdyncrm_marketingpage&id=**11112222-bbbb-3333-cccc-4444dddd5555**`
 1. Open the developer console by pressing <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>I</kbd>.
 1. Enter the following command in the developer console: `Xrm.WebApi.updateRecord("msdyncrm_marketingpage", "11112222-bbbb-3333-cccc-4444dddd5555", { "msdyncrm_forceportalless": true })` and press <kbd>Enter</kbd>.
    > [!NOTE]
