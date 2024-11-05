@@ -33,7 +33,7 @@ Before creating a new service principal for Customer Insights, check whether it 
 
 3. Under **Manage**, select **Microsoft Application**.
 
-4. Add a filter for **Application ID start with** `00001111-aaaa-2222-bbbb-3333cccc4444` or search for the name `Dynamics 365 AI for Customer Insights`.
+4. Add a filter for **Application ID start with** `0bfc4568-a4ba-4c58-bd3e-5d3e76bd7fff` or search for the name `Dynamics 365 AI for Customer Insights`.
 
 5. If you find a matching record, it means that the service principal already exists. [Grant permissions](#grant-permissions-to-the-service-principal-to-access-the-storage-account) for the service principal to access the storage account.
 
