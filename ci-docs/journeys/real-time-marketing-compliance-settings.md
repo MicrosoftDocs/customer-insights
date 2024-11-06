@@ -137,7 +137,7 @@ The **Enforcement model** settings on a purposes control how consent is evaluate
 - **Disabled**: Messages are sent to all contact points. Contact point consent records aren't checked before sending messages to this purpose (or topic).
 
 > [!NOTE]
-> Since December 2024 release, you can set the enforcement model to all channels including Text and Custom channel.
+> Since November 2024 release, you can set the enforcement model to all channels including Text and Custom channel.
 
 Topics use the enforcement model of their parent purpose. Messages that are configured with both a purpose and a topic must have consent for both the purpose and the topic in order for the message to be sent. If a contact point doesn't have consent to send to a purpose, no messages to that purpose's topics are sent to the contact point. For example, if the parent purpose has a restrictive enforcement model, sending a message to a topic requires an opt-in contact point consent record for both the purpose and the topic associated with the contact point consent.
 
