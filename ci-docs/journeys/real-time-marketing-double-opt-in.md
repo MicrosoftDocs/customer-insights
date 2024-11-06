@@ -1,5 +1,5 @@
 ---
-title: "Preview: Double opt-in in real-time journeys"
+title: Double opt-in in real-time journeys
 description: Learn how to use double opt-in in Dynamics 365 Customer Insights - Journeys.
 ms.date: 08/20/2024
 ms.topic: article
@@ -11,12 +11,7 @@ search.audienceType:
   - enduser
 ---
 
-# Preview: Double opt-in in real-time journeys
-
-> [!IMPORTANT]
-> A preview feature is a feature that is not complete, but is made available before it’s officially in a release so customers can get early access and provide feedback. Preview features aren’t meant for production use and may have limited or restricted functionality.
-> 
-> Microsoft doesn't provide support for this preview feature. Microsoft Dynamics 365 Technical Support won’t be able to help you with issues or questions. Preview features aren’t meant for production use, especially to process personal data or other data that are subject to legal or regulatory compliance requirements.
+# Double opt-in in real-time journeys
 
 The double opt-in process (also known as confirmed opt-in) asks contacts who sign up for new Purposes or Topics to confirm their request by selecting a link sent to their registered email address. This system helps make sure that the request is intentional, and that the supplied email address is legitimate and functional.
 
