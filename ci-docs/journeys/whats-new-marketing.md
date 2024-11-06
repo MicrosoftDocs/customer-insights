@@ -1,7 +1,7 @@
 ---
 title: New and upcoming features
 description: Information about new features, improvements, and bug fixes in Dynamics 365 Customer Insights - Journeys releases.
-ms.date: 10/17/2024
+ms.date: 11/05/2024
 ms.topic: article
 author: colinbirkett
 ms.author: colinbirkett
@@ -33,12 +33,10 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 	- When you want customers to have different experiences in one journey, you need to divide them into groups. While this is possible today using attribute branches or segments, sometimes the number of customers in each branch is more important than what those customers have in common. For example, you may want to send a survey out to a random subset of your customers for feedback, something that would be time-consuming to configure today. The new journey split tile allows you to split your audience into branches to provide a subset of your audience with unique experiences, whether that be a survey, a new type of experience to test, or a first-come promotional offer. You can split your audience by percentages (for cases where you need randomness) or by numbers (for cases where you want to deliver specific experiences to a set number of people). 
 	- [Release plan](/dynamics365/release-plan/2024wave2/customer-insights/dynamics365-customer-insights-journeys/provide-varied-experiences-one-journey-using-journey-split-tiles) 
 	- [Docs](real-time-marketing-split-audience.md)
-
-    :::image type="content" source="media/split-number-nov.png" alt-text="Split journey audience by number." lightbox="media/split-number-nov.png":::
     
     :::image type="content" source="media/split-percentage-nov.png" alt-text="Split journey audience by percentage." lightbox="media/split-percentage-nov.png":::
 
-- **Improve engagement and compliance with double opt-in** 
+- **Improve engagement and compliance with double opt-in**
 	- By implementing double opt-in, you can cultivate a more effective email marketing strategy, leading to improved compliance, increased open and click-through rates, and a better overall brand experience for subscribers. Privacy and data protection laws in many regions require double opt-in functionality to help verify customer information. Double opt-in requires users to confirm subscription preferences through a follow-up email after the initial subscription. By confirming subscription preferences a second time, you comply with legal requirements and improve engagement by ensuring that users who’ve subscribed are intent on receiving future communications. When customers are certain they want to receive email communications, spam complaints and bounce rates are reduced, and your sender reputation is improved. You can now configure if the double opt-in email is sent with each form submission or just once for the newly registered customers. 
 	- [Release plan](/dynamics365/release-plan/2024wave2/customer-insights/dynamics365-customer-insights-journeys/improve-engagement-compliance-double-opt-in) 
 	- [Docs](real-time-marketing-double-opt-in.md)
@@ -56,8 +54,8 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 
 ### Monthly enhancements
 
-- **Flexible enforcement model for Text and Custom Channels** 
-	- The enforcement model could be selected only for the email channel. With the latest update, you can select restrictive or non-restrictive enforcement model for Text (SMS) and Custom channels.
+- **Flexible enforcement model for text and custom channels**
+	- The enforcement model could be selected only for the email channel. With the latest update, you can select restrictive or non-restrictive enforcement model for text (SMS) and custom channels.
 	- [Docs](real-time-marketing-compliance-settings.md#consent-enforcement)  
 
 - **Form with new layout structure improving accessibility and responsivity** 
@@ -69,7 +67,7 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 Learn how to make the most of the new Dynamics 365 Customer Insights features in our latest blogs and scenario docs:
 
 - [Implementing cascading dropdown fields in RTM forms - FastTrack blog](https://community.dynamics.com/blogs/post/?postid=ff86d88f-d892-ef11-ac21-6045bdd7e1ae)
-- [Beyond open rate: Rethinking email marketing metrics - Microsoft Dynamics 365 Blog](https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2024/10/16/rethinking-email-metrics-the-evolving-landscape-of-open-rates/)
+- [Beyond open rate: Rethinking email marketing metrics - Microsoft Dynamics 365 blog](https://www.microsoft.com/dynamics-365/blog/it-professional/2024/10/16/rethinking-email-metrics-the-evolving-landscape-of-open-rates/)
 
 ## October 2024 update
 
@@ -86,7 +84,7 @@ Learn how to make the most of the new Dynamics 365 Customer Insights features in
 ### Public preview
 
 - **Understand customer inflows and exits at every journey step**
-    - It’s critical to understand exactly what happened to each customer who entered and exited your real-time journeys. With improved journey analytics, you’ll gain confidence in the processing of every step in your journey through improved metrics and an increased ability to export data. For example, if your journey uses exit or exclusion segments, you'll be able to see and understand why fewer customers started your journey than were in the entry segment. You'll also be able to see the list of customers who entered and exited each step in the journey and export lists of up to 50,000 people for further analysis.
+    - It’s critical to understand exactly what happened to each customer who entered and exited your real-time journeys. With improved journey analytics, you’ll gain confidence in the processing of every step in your journey through improved metrics and an increased ability to export data. For example, if your journey uses exit or exclusion segments, you'll be able to see and understand why fewer customers started your journey than were in the entry segment. You'll also be able to see the list of customers who entered and exited each step in the journey and export lists of up to 50,000 people for further analysis. (This preview will be available in all geos by December 16, 2024.)
     - [Release plan](/dynamics365/release-plan/2024wave2/customer-insights/dynamics365-customer-insights-journeys/confidently-understand-customer-inflows-exits-at-every-step-journey)
     - [Docs](real-time-marketing-analytics.md#journey-operational-analytics)
     
