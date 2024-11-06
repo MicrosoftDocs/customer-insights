@@ -1,7 +1,7 @@
 ---
 title: Troubleshooting Customer Insights - Journeys forms
 description: Learn how to troubleshoot forms in Dynamics 365 Customer Insights - Journeys.
-ms.date: 06/21/2024
+ms.date: 11/06/2024
 ms.topic: article
 author: petrjantac
 ms.author: alfergus
@@ -19,15 +19,13 @@ This article explains how to troubleshoot forms in Customer Insights - Journeys.
 
 Make sure that your domain is allowed for external form hosting. You don't need to finish the domain authentication process to enable external form hosting for your domain. Learn more about [domain authentication](domain-authentication.md).
 
-## The form styles seem broken after embedding into my page, screen reader issues with the form
+## The form styles seem broken after embedding into my page or I'm having screen reader issues with the form
 
-Some web pages may have a generic style definition for `<table>` element. This style definition is inherited by the embedded form, which may look differently than in the form editor.
-You can try the new "table-less" layout of form, which uses div containers. This will help to resolve the conflict in styles between your page and the form and it will also improve the screen reader performance for better accessibility. The new layout will be applied only to the newly created forms. It will not be applied to any existing forms.
+Some web pages may have a generic style definition for `<table>` elements. This style definition is inherited by the embedded form, which may look different than in the form editor. You can try the new "table-less" form layout, which uses div containers. This helps resolve the style conflict between your page and the form. The table-less layout also improves screen reader performance for better accessibility. The new layout is applied only to the newly created forms; it isn't applied to existing forms.
 
-The "table-less" layout is disabled by default. You can activate it in Feature switches section of Settings. Don't forget to Save the settings once the feature switch is enabled.
+The "table-less" layout is disabled by default. You can activate it by navigating to **Settings** > **Feature switches** > **Forms** and turning on the **Enable table-less layouts in Form editor** toggle. Don't forget to save the settings once the feature switch is enabled.
 
-> [!div class="mx-imgBorder"]
-> ![Enable div-based layout for forms.](media/real-time-marketing-form-enable-div-layout.png)
+:::image type="content" source="media/real-time-marketing-form-enable-div-layout.png" alt-text="Enable div-based layout for forms.":::
 
 ## Publishing a form as a standalone page fails
 
