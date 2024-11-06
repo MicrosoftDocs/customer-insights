@@ -1,7 +1,7 @@
 ---
 title: Double opt-in in real-time journeys
 description: Learn how to use double opt-in in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/20/2024
+ms.date: 11/06/2024
 ms.topic: article
 author: cbirkett
 ms.author: alfergus
@@ -25,7 +25,6 @@ The double opt-in process works as follows:
 
 > [!IMPORTANT]
 > The link in the confirmation email remains valid for only 28 days. After that period, the user who received the email cannot confirm their opt-in.
-> Refer to this section for the current limitations of this preview feature.
 
 ## Who should use double opt-in?
 
@@ -49,9 +48,9 @@ Accurate and verified customer data allows for advanced personalization and segm
 
 Customers are more likely to open emails, select links, and demonstrate a higher level of engagement overall
 
-## Enable double opt-in (preview)
+## Enable double opt-in
 
-Beginning with the June 2024 release, customers can now use the double opt-in capability within the product.
+Beginning with the June 2024 release, customers can now use the double opt-in capability within real-time journeys.
 
 To enable double opt-in:
 
@@ -60,11 +59,11 @@ To enable double opt-in:
 1. Select **Save** in the upper right corner of the page.
 
 > [!IMPORTANT]
-> Enabling the feature switch does not automatically turn on double opt-in for all form submissions. It merely enables the capability. There is additional setup required to enable double opt-in for the different compliance profiles in the system.
+> Enabling the feature switch does not automatically turn on double opt-in for all form submissions. It merely enables the capability. Additional setup is required to enable double opt-in for the different compliance profiles in the system.
 
 ## Where is double opt-in configured?
 
-Unlike Outbound Marketing, where Double opt-in could be configured at a [global](double-opt-in.md) or [form](form-double-opt-in.md) level, Customer Insights – Journeys enables users to configure double opt-in for each [compliance profile](real-time-marketing-compliance-settings.md#compliance-profiles).
+Unlike in outbound marketing, where double opt-in could be configured at a [global](double-opt-in.md) or [form](form-double-opt-in.md) level, real-time journeys enables users to configure double opt-in for each [compliance profile](real-time-marketing-compliance-settings.md#compliance-profiles).
 
 Once you enable double opt-in for a compliance profile, any form that captures consent for the purposes/topics of the compliance profile automatically has double opt-in enabled for their submissions.
 
@@ -75,12 +74,13 @@ Once the feature switch is turned on, you can go to any compliance profile and n
 Here are the steps that you need to follow to enable double opt-in for the compliance profile -
 
 1. On the double opt-in tab, select the **Setup** button.
-1. As soon as you select the setup button, the system automatically creates a ready to send confirmation email and a triggered journey that sends this confirmation email to every customer that submits the form. The journey is published and live, however, it will not target any user until the toggle for the double opt-in is enabled for the compliance profile.
+1. As soon as you select the setup button, the system automatically creates a ready-to-send confirmation email and a triggered journey that sends this confirmation email to every customer who submits the form. The journey is published and live, however, it will not target any user until the toggle for the double opt-in is enabled for the compliance profile.
 1. The setup runs asynchronously and allows you to work on other areas in the product while it's running, without impacting the setup at all. You can come back to the setup process, and it will always show you the latest information on how far it has progressed.
 1. Once the setup is complete, you can find the link to the confirmation email that the system created on your behalf.
+1. You can select whether the double opt-in email is sent with every form submission or whether it's sent only to newly created customers. The condition to determine if the customer is considered new is based on the presence of the contact point consent for the specific email address. If there's no contact point consent for the customer's email address linked to the selected compliance profile, the customer is considered a new one.
 1. You should review this email and edit it to suit your business needs.
-1. Finalize what message you want to show to your customers, after they select the confirmed preferences button in their confirmation email. You can have a system hosted confirmation page with a message of your choice or redirect the customer to a URL of your choice.
-1. Once you have reviewed and edited the email, you can go to the double opt-in tab of the compliance profile and turn on double opt-in. This ensures that any new form submissions (from forms that capture consent for purposes/topics of the compliance profile) automatically goes through the double opt-in journey.
+1. Finalize what message you want to show to your customers after they select the confirmed preferences button in their confirmation email. You can have a system-hosted confirmation page with a message of your choice or redirect the customer to a URL of your choice.
+1. Once you have reviewed and edited the email, you can go to the double opt-in tab of the compliance profile and turn on double opt-in. This ensures that any new form submissions (from forms that capture consent for purposes/topics of the compliance profile) automatically go through the double opt-in journey.
 
 > [!NOTE]
 > Once the feature switch for Double Opt-In is turned on from Settings → Feature Switches, any new form created in the system will automatically be eligible for double opt-in once double opt-in is enabled for the associated compliance profile.
