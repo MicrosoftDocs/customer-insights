@@ -62,6 +62,7 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 
 - **Form with new layout structure improving accessibility and responsivity** 
 	- All newly created Customer Insights Journeys forms have a new layout structure which no longer relies on the tables. This feature comes disabled by default. You can enable it in the feature switches.
+    - [Docs](real-time-marketing-troubleshooting-forms.md#the-form-styles-seem-broken-after-embedding-into-my-page-screen-reader-issues-with-the-form)  
 
 ### New blogs and scenario docs
 
