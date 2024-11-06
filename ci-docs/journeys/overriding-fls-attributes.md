@@ -1,7 +1,7 @@
 ---
 title: Override field-level security attributes
 description: Learn how to override field-level security attributes in Dynamics 365 Customer Insights - Journeys.
-ms.date: 07/10/2024
+ms.date: 10/30/2024
 ms.topic: article
 author: colinbirkett
 ms.author: colinbirkett
@@ -44,7 +44,7 @@ If you don't follow these steps, you may encounter serious issues, such as:
 - Journeys or personalization won't work as expected. For example, empty emails may be sent, branching may behave wrongly, or Customer Insights - Journeys may crash.
 - You may violate your data privacy and compliance policies by exposing FLS-protected data to unauthorized users.
 
-## Override FLS
+## Override FLS in journeys or personalization
 
 If you complete the prerequisites and accept the risks of overriding FLS, you can request to enable the FLS-protected attributes in Customer Insights – Journeys. To enable FLS-protected attributes, [contact the support team](/power-platform/admin/get-help-support#view-solutions-or-create-a-support-request) and provide the following information:
 
@@ -56,6 +56,10 @@ If you complete the prerequisites and accept the risks of overriding FLS, you ca
 Once you're notified that FLS is enabled, you can start using FLS-protected attributes in Customer Insights – Journeys.
 
 For more information, see [Submit a support request](/dynamics365/field-service/field-service-get-help).
+
+### Override FLS in segmentation
+
+To override FLS in segmentation, you can enable the "Use protected fields in segments" feature switch. Learn more: [Add protected fields in segment criteria](protected-fields.md)
 
 ## More information
 

@@ -232,16 +232,20 @@
         href: unified-profile-segment-creation.md
       - name: Create a static snapshot of a segment
         href: real-time-marketing-static-snapshot.md
+    - name: Enhance your segments
+      items:
+      - name: Best practices for outbound segments in real-time journeys
+        href: outbound-marketing-segments-in-customer-insights-journeys.md
+      - name: Automatic segment management
+        href: auto-segment-management.md
+      - name: Individually manage your customer list
+        href: real-time-marketing-include-exclude.md
+      - name: Add protected fields in segment criteria
+        href: protected-fields.md
     - name: Create a segment-based journey
       href: real-time-marketing-segment-based-journey.md    
-    - name: Best practices for outbound segments in real-time journeys
-      href: outbound-marketing-segments-in-customer-insights-journeys.md
     - name: Use Customer Insights - Data profiles and segments
       href: real-time-marketing-ci-profile.md      
-    - name: Automatic segment management
-      href: auto-segment-management.md
-    - name: Individually manage your customer list
-      href: real-time-marketing-include-exclude.md
     - name: "Troubleshooting: Segments show incorrect member count"
       href: segment-member-count.md
   - name: Create real-time journeys
