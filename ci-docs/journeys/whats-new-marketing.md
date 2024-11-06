@@ -1,7 +1,7 @@
 ---
 title: New and upcoming features
 description: Information about new features, improvements, and bug fixes in Dynamics 365 Customer Insights - Journeys releases.
-ms.date: 11/05/2024
+ms.date: 11/06/2024
 ms.topic: article
 author: colinbirkett
 ms.author: colinbirkett
@@ -44,7 +44,7 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
     :::image type="content" source="media/double-opt-in-nov.png" alt-text="An overview of double opt-in within Customer Insights - Journeys." lightbox="media/double-opt-in-nov.png":::
 
 - **Export segment membership data for offline analysis** 
-	- Marketers often need deeper insights and offline access to customer segment data. With this latest enhancement, you can now export segment membership data directly to Excel, supporting up to 100,000 rows per segment. This new capability makes it easier to analyze customer data in your preferred tools, without the need for complex integrations or manual data handling. Previously, extracting large sets of data from segments required cumbersome workarounds. Now, you can seamlessly export detailed segment data for offline analysis and verification, enhancing your ability to make data-driven decisions. The export feature is available for segments with up to 100,000 members and includes a predefined set of columns: Contact/Lead ID, First Name, Last Name, Email, and Phone Number. This streamlined export ensures consistency and accuracy in your data analysis while maintaining simplicity. Custom columns or attributes are not supported at this time.
+	- Marketers often need deeper insights and offline access to customer segment data. With this latest enhancement, you can now export segment membership data directly to Excel, supporting up to 100,000 rows per segment. This new capability makes it easier to analyze customer data in your preferred tools without the need for complex integrations or manual data handling. Previously, extracting large sets of data from segments required cumbersome workarounds. Now, you can seamlessly export detailed segment data for offline analysis and verification, enhancing your ability to make data-driven decisions. The export feature is available for segments with up to 100,000 members and includes a predefined set of columns: Contact/Lead ID, First Name, Last Name, Email, and Phone Number. This streamlined export ensures consistency and accuracy in your data analysis while maintaining simplicity. Custom columns or attributes aren't supported at this time.
 
      :::image type="content" source="media/export-segment-membership.png" alt-text="An overview exporting segment membership data for offline analysis within Customer Insights - Journeys." lightbox="media/export-segment-membership.png":::
 
