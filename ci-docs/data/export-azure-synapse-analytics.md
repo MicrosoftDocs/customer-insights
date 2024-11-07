@@ -1,7 +1,7 @@
 ---
 title: "Export data to Azure Synapse Analytics (preview)"
 description: "Learn how to configure the connection to Azure Synapse Analytics."
-ms.date: 10/11/2024
+ms.date: 11/07/2024
 ms.reviewer: mhart
 ms.topic: how-to
 author: pkieffer
@@ -47,6 +47,7 @@ In Azure:
 
 - Azure Synapse export doesn't support incremental refresh for data sources if an environment uses a custom Azure Data Lake for data storage.
 - [Power Query data sources](connect-power-query.md) as input tables are only supported if your environment stores data in your [own Azure Data Lake Storage](own-data-lake-storage.md).
+- Enabling public access to your own storage account after [setting up an Azure Private Link](private-link.md) won't work. Private Link is only supported if you disable public access to the storage account. Remove the Private Link setup to re-enable public access.
 - This export works only for CSV formatted files.
 
 ## Set up connection to Azure Synapse
@@ -63,7 +64,7 @@ In Azure:
 
 1. Select or search for the subscription you want to use the Customer Insights data in. As soon as you select a subscription, you can also select **Workspace**, **Storage account**, and **Container**.
 
-1. If your storage account is behind a firewall, select **This storage account is behind a firewall** to connect using [managed identities for Azure resources](private-link.md).
+1. Optionally, if your storage account is behind a firewall, select **Enable Private Link**. For more information, go to [Private Links](private-link.md).
 
 1. Review the [data privacy and compliance](connections.md#data-privacy-and-compliance) and select **I agree**.
 

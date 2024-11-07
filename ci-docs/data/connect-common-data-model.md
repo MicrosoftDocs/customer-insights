@@ -1,7 +1,7 @@
 ---
 title: "Connect to Common Data Model tables in Azure Data Lake Storage"
 description: "Work with data from Azure Data Lake Storage."
-ms.date: 10/29/2024
+ms.date: 11/06/2024
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -19,7 +19,7 @@ Ingest data into Dynamics 365 Customer Insights - Data using your Azure Data Lak
 
 - The Azure Data Lake Storage account must have [hierarchical namespace enabled](/azure/storage/blobs/data-lake-storage-namespace). The data must be stored in a hierarchical folder format that defines the root folder and has subfolders for each table. The subfolders can have full data or incremental data folders.
 - To authenticate with a Microsoft Entra service principal, make sure it's configured in your tenant. For more information, see [Connect to an Azure Data Lake Storage account with a Microsoft Entra service principal](connect-service-principal.md).
-- To connect to storage protected by firewalls, [Set up managed identities](private-link.md).
+- To connect to storage protected by firewalls, [Set up Azure Private Links](private-link.md).
 - The Azure Data Lake Storage you want to connect and ingest data from has to be in the same Azure region as the Dynamics 365 Customer Insights environment and the subscriptions must be in the same tenant. Connections to a Common Data Model folder from a data lake in a different Azure region is not supported. To know the Azure region of the environment, go to **Settings** > **System** > **About** in Customer Insights - Data.
 - Data stored in online services may be stored in a different location than where data is processed or stored. By importing or connecting to data stored in online services, you agree that data can be transferred. [Learn more at the Microsoft Trust Center](https://www.microsoft.com/trust-center).
 - The Customer Insights - Data service principal must be in one of the following roles to access the storage account. For more information, see [Grant permissions to the service principal to access the storage account](connect-service-principal.md#grant-permissions-to-the-service-principal-to-access-the-storage-account).
@@ -63,13 +63,7 @@ Ingest data into Dynamics 365 Customer Insights - Data using your Azure Data Lak
    > [!NOTE]
    > Any model.json or manifest.json file associated with another data source in the environment won't show in the list. However, the same model.json or manifest.json file can be used for data sources in multiple environments.
 
-1. If your storage account is behind a firewall, determine your next step:
-   - If **Enable private link** appears, connect to the account using [Azure private links](private-link.md)
-     :::image type="content" source="media/enable-private-link.png" alt-text="Portion of dialog box showing enable private link.":::
-   - If **This storage account is behind a firewall** appears, connect to the account using [managed identities for Azure resources (preview)](managed-identities.md).
-     :::image type="content" source="media/enable-msi.png" alt-text="Portion of dialog box showing storage account is behind a firewall.":::
-1. Select **Next**.
-
+1. Optionally, if you want to ingest data from a storage account through an Azure Private Link, select **Enable Private Link**. For more information, go to [Private Links](private-link.md).
 1. To create a new schema, go to [Create a new schema file](#create-a-new-schema-file).
 1. To use an existing schema, navigate to the folder containing the model.json or manifest.cdm.json file. You can search within a directory to find the file.
 1. Select the json file and select **Next**. A list of available tables displays.
@@ -164,7 +158,7 @@ You can update the *Connect to storage account using* option. For more informati
       > - Storage Blob Data Owner
       > - Storage Blob Data Contributor
 
-   - **This storage account is behind a firewall** if you want to ingest data from a storage account behind a firewall. Learn more: [Set up managed identities for storage accounts behind firewalls](private-link.md).
+   - **Enable Private Link** if you want to ingest data from a storage account through an Azure Private Link. For more information, go to [Private Links](private-link.md).
 
 1. Select **Next**.
 1. Change any of the following:
