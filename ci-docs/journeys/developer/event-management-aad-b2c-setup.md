@@ -110,7 +110,7 @@ An example of the full aadB2cConfig object would be:
 aadB2CConfig: {
     authorityHost: 'contoso.b2clogin.com',
     tenant: 'contoso.onmicrosoft.com',
-    clientID: '7e67b9fe-d976-4db0-be90-05d797332658',
+    clientID: '00001111-aaaa-2222-bbbb-3333cccc4444',
     signUpSignInPolicy: 'B2C_1_default-sign-up',
     b2cScopes: ['https://contoso.onmicrosoft.com/events/registration'],
     redirectUri: 'https://localhost:4200'

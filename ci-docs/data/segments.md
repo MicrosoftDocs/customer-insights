@@ -136,7 +136,7 @@ To avoid automated deactivation if a segment is no longer in use, admins can mar
 
 1. Go to the **Insights** > **Segments** page and select a segment.
 
-1. In the command bar, select **Never expires**.
+1. In the command bar, select **Disable auto cleanup**.
 
 1. Confirm the selection.
 
