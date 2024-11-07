@@ -57,11 +57,17 @@ Customers provide their consent typically through a form and a checkbox, which e
 
 This process applies too on the update of marketing preferences (opt-in or opt-out).
 
-## Global vs. form-based double opt-in
+## Double opt-in in real-time journeys
 
-Management of double opt-in is currently only available using outbound marketing features. However, it's possible to use Customer Insights - Journeys with the double opt-in settings in outbound marketing. This means that customers can use Customer Insights - Journeys for the execution of their marketing campaigns while using outbound marketing to manage the double opt-in process. As described previously, both engines provide an evaluation marketing preferences attributes on a contact level (**DoNotBulkEmail** and **DoNotEmail**). [This article](https://community.dynamics.com/blogs/post/?postid=24df8cbc-5724-4734-b898-24cfe57d3c33) describes how to set everything up to use double opt-in in Customer Insights - Journeys.
+The double opt-in in real-time journeys can be trigger for each form submission, or it can be triggered only for the new customers.
 
-When global double opt-in is enabled, a customer always receives an email message to confirm a new subscription or if a change of consent occurs. This could also be set up for specific forms only (instead of globally).
+- **Double opt-in for each form submission** -
+The DOI flow is triggered with every form submission if the form is associated with the DOI enabled compliance profile.
+
+- **Double opt-in only for new customers** -
+"New customer" means that there is no contact point consent for this customer's email address associated with the compliance profile. If there is no contact point consent for customer's email address, this customer is considered as a new one and the DOI flow is triggered. If there is an existing contact point consent for customer's email address, the DOI is not triggered.
+
+To enable double-opt-in, see [Double opt-in in real-time journeys](real-time-marketing-double-opt-in.md).
 
 ## Real-time marketing enhancements to consent
 
@@ -102,10 +108,6 @@ Once subscription lists have been migrated as described above, you can create se
 An important point to consider in the creation of topic and purpose-based segments is that the available criteria for the segment is “will send” or “will not send.” This takes into account not just the existence of an opt-in/opt-out record but also the enforcement model of the topic (restrictive, non-restrictive, or disabled). For example, if a topic has been configured in a non-restrictive model and then used in the segment creation, the resulting list of contacts would be all who could actually receive the communication, which is all available opt-ins and any contacts that have not opted out. Conversely, if the model was restrictive, the segment will include only explicitly opted-in contacts.
 
 Because the contact-point consent settings are only updated when using preference centers, outbound marketing forms and pages that update consent shouldn't be used once the migration has been done.
-
-### Implement double opt-in in real-time journeys
-
-Double opt-in is now available in real-time journeys. To enable double-opt-in, see [Double opt-in in real-time journeys](real-time-marketing-double-opt-in.md).
 
 ### Use Customer Insights - Journeys and lead consent, manage consent on contact-point level
 
