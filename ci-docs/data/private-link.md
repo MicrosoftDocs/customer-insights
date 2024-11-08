@@ -11,11 +11,11 @@ ms.custom: bap-template
 
 # Set up connections for storage accounts behind firewalls
 
-[Transition from Azure Private Link to managed identities for Azure resources has been delayed.]
-
 If you have Azure Data Lake Storage accounts protected by firewalls, use [Azure Private Link](/azure/private-link/private-link-overview) to connect to Dynamics 365 Customer Insights - Data. Azure Private Link lets Customer Insights - Data connect to your Azure storage over a private endpoint in your virtual network.
 
 > [!IMPORTANT]
+> The announced transition from Private Links to managed identities for Azure resources has been paused while we look at options to reduce the impact. The original due date of November 30, 2024 no longer applies. Updated guidance will be provided early next year.
+> 
 > If your instance doesn't already use private links, your instance must be updated first to support private links. Contact [Support](https://admin.powerplatform.microsoft.com/support) to get your instance updated.
 
 There are three scenarios where Customer Insights - Data can be configured to connect to firewall-protected Azure storage containers:
