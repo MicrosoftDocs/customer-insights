@@ -1,7 +1,7 @@
 ---
 title: "Export data to an Azure Blob Storage (preview)"
 description: "Learn how to configure the connection and export to Blob storage."
-ms.date: 10/11/2024
+ms.date: 11/07/2024
 ms.reviewer: mhart
 ms.topic: how-to
 author: pkieffer
@@ -25,7 +25,7 @@ Store data from your Dynamics 365 Customer Insights - Data in a Blob storage or 
 ## Known limitations
 
 - For Azure Blob Storage, choose between [Standard performance and Premium performance tier](/azure/storage/blobs/storage-blob-performance-tiers). If you choose the Premium performance tier, select the [premium block blobs as account type](/azure/storage/common/storage-account-overview#types-of-storage-accounts).
-- Enabling public access to your own storage account after [setting up managed identities for Azure resources](private-link.md) won't work. Managed identities is only supported if you disable public access to the storage account. Remove the managed identities setup to re-enable public access.
+- Enabling public access to your own storage account after [setting up an Azure Private Link](private-link.md) won't work. Private Link is only supported if you disable public access to the storage account. Remove the Private Link setup to re-enable public access.
 - This export works only for CSV formatted files.
 
 ## Set up connection to Blob Storage
@@ -42,7 +42,7 @@ Store data from your Dynamics 365 Customer Insights - Data in a Blob storage or 
 
 1. Enter **Subscription**, **Resource group**, **Storage account**, and **Container** for your Blob Storage account.
 
-1. If your storage account is behind a firewall, select **This storage account is behind a firewall** to connect using [managed identities for Azure resources](private-link.md).
+1. Optionally, if your storage account is behind a firewall, select **Enable Private Link**. For more information, go to [Private Links](private-link.md).
 
 1. Review the [data privacy and compliance](connections.md#data-privacy-and-compliance) and select **I agree**.
 

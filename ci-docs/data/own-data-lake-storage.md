@@ -3,7 +3,7 @@ title: Use your own Azure Data Lake Storage account
 description: Learn about the requirements to use your own Azure Data Lake Storage account in Customer Insights - Data.
 author: Scott-Stabbert
 ms.author: sstabbert
-ms.date: 10/18/2024
+ms.date: 11/06/2024
 ms.topic: how-to
 ms.collection: get-started
 ms.reviewer: mhart
@@ -29,8 +29,8 @@ When you create a new environment, make sure the Data Lake Storage account exist
 1. In the **Data storage** step during environment creation, set **Save output data** to **Azure Data Lake Storage Gen2**.
 1. Choose how to **Connect your storage**. You can choose between a resource-based option and a subscription-based option for authentication. For more information, see [Connect to an Azure Data Lake Storage account by using a Microsoft Entra service principal](connect-service-principal.md).
    - For **Azure subscription**, choose the **Subscription**, **Resource group**, and **Storage account** that contains the `customerinsights` container.
-   - For **Account key**, provide the **Account name** and the **Account key** for your Data Lake Storage account. Using this authentication method implies that you're informed if your organization rotates the keys. You must [update the environment configuration](manage-environments.md#edit-an-existing-environment) with the new key when it's rotated.
-1. If your storage account is behind a firewall, select **This storage account is behind a firewall** to connect using [managed identities for Azure resources](private-link.md).
+   - For **Account key**, provide the **Account name** and the **Account key** for the Data Lake Storage account. Using this authentication method implies that you're informed if your organization rotates the keys. You must [update the environment configuration](manage-environments.md#edit-an-existing-environment) with the new key when it's rotated.
+1. If your storage account is behind a firewall, select **Enable private link** to connect to the account using [Azure private links](private-link.md)
 
 When system processes like data ingestion complete, the system creates corresponding folders in the storage account. Data files and model.json files are created and added to folders based on the process name.
 
