@@ -3,8 +3,8 @@ title: Set up connections for storage accounts behind firewalls
 description: Learn how to set up an Azure Private Link to connect your Data Lake Storage.
 ms.date: 11/08/2024
 ms.topic: how-to
-author: AndreaAczel
-ms.author: anaczel
+author: Scott-Stabbert
+ms.author: sstabbert
 ms.reviewer: mhart
 ms.custom: bap-template
 ---
