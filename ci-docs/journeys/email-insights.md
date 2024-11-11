@@ -69,7 +69,7 @@ Using the click map insights, you can optimize your content placement, layout, a
 
 > [!NOTE]
 > - The click map only displays the interactions and design for the latest email version created.
-> - For the click map feature to be display, the journey must be created after the feature release in October 2024.
+> - For the click map feature to be displayed, the journey must be created after the feature release in October 2024.
 > - When adding older emails to your journey, to start displaying the click map, use [live editing](edit-email-in-live-journey.md) and update the email. The links included in your email will be updated and tracked for the new interactions.
 > - The click map might contain incomplete data or miss some data depending on when your journey and email content was created and running, especially if it was active before October 2024.
 > - For emails that contain variations (conditional content and in-line conditions), the click map only displays the design and interactions for the default variation.
