@@ -43,3 +43,8 @@ Customer Insights is licensed per tenant. You can purchase more capacity to meet
 Start a [free Customer Insights trial](https://dynamics.microsoft.com/ai/customer-insights/) today. Find out how you can quickly access and explore many of the application’s key features in [Customer Insights - Data](data/trial-signup.md) and [Customer Insights - Journeys](journeys/trial-signup.md).
 
 [!INCLUDE[footer-include](data/includes/footer-banner.md)]
+
+
+## Related information
+
+[What is Microsoft's marketing solution?](https://youtu.be/8o9s74gIGNA)

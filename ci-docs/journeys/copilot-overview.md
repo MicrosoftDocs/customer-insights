@@ -61,3 +61,7 @@ Elevate your email communication to new heights with AI-assisted themes. Define 
 For example, you can type "give this email a professional and modern theme" or "create a friendly and inviting look for this message," and Copilot transforms your vision into a stunning email theme. **Learn more**: [Style your emails with AI-assisted themes](email-theme.md)
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
+
+## Related information
+
+[How AI can Transform Your Marketing](https://youtu.be/zk_QcHAb4cU)
