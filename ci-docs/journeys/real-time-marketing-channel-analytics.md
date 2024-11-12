@@ -35,6 +35,8 @@ This section highlights the open rate, click-through rate, and click-to-open rat
 - **ChannelClickThroughRate**: The number of unique emails/text messages/push notifications with at least one link click divided by the total number of emails/text messages delivered and/or push notifications sent.
 - **ChannelClickToOpenRate**: The number of unique emails/push notifications with at least one link click divided by the number of unique emails/push notifications opened.
 
+When multiple messages are selected in the dashboard, metrics like open rate and click-through rate are recalculated as if all selected messages e.g. emails were a single combined email. This means aggregated metrics are not averages of individual email metrics but represent engagement across all selected emails combined.
+
 The trend chart shows the number of opens and clicks over the selected time. Use this section to analyze the performance of all the links in your marketing communications. This will help you learn about the best and worst-performing links in your campaigns. If applicable, the call-to-action (CTA) or link text for each link is also showcased. For each link, the number of unique clicks for the link is highlighted along with the link’s click-through rate (number of unique clicks on a particular link divided by the number of emails/text messages delivered and/or push notifications sent containing that link) to depict its performance.
 
 Opens aren't recorded for text messages, hence, the open rate and click-to-open rate metrics don't apply to text messages. Be mindful when text messages are selected in your filtering criteria, as the trend chart will potentially show clicks to be greater than opens since the text message opens aren't recorded.
