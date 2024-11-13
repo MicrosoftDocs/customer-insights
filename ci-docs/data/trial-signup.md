@@ -47,4 +47,4 @@ The links below guide you through some of the key features and other resources.
 - [Target the right customers using the query assist copilot](../journeys/real-time-marketing-natural-language-segments.md)
 - [Use Copilot to create journeys by describing them in their own words](../journeys/real-time-marketing-use-copilot-create-journey.md)
 - [Create a demographic segment targeting leads](../journeys/real-time-marketing-build-segments.md#create-a-demographic-segment-targeting-leads)
-- [Create forms](real-time-marketing-form-create.md)
+- [Create forms](../journeys/real-time-marketing-form-create.md)
