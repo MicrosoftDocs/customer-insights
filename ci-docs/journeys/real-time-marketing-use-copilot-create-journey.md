@@ -93,4 +93,4 @@ The following section outlines some "do's" and "don'ts" for using the journey co
 
 ## Related information
 
-[Take campaigns from concept to launch](https://youtu.be/tgHOPefdYzA)
+[Take campaigns from concept to launch (video)](https://youtu.be/tgHOPefdYzA)

@@ -70,4 +70,4 @@ Now that your data is complete and contains a wide range of information about yo
 
 ## Related information
 
-[Ready to Boost Sales? Customer Insight](https://youtu.be/z0aXIx7sSro)
+[Ready to Boost Sales? Customer Insight (video)](https://youtu.be/z0aXIx7sSro)

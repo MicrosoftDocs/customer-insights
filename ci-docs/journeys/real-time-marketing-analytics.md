@@ -155,4 +155,4 @@ Here are some advanced resources for this topic:
 
 ## Related information
 
-[Understand and Improve Your Marketing Journeys](https://youtu.be/HtIvnS8IS9I)
+[Understand and Improve Your Marketing Journeys (video)](https://youtu.be/HtIvnS8IS9I)

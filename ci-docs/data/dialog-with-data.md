@@ -69,4 +69,4 @@ We want to hear your feedback so we can continually enhance the relevancy, preci
 
 ## Related information
 
-[Create personalized content in seconds](https://youtu.be/1Lgodu6A2ZM)
+[Create personalized content in seconds (video)](https://youtu.be/1Lgodu6A2ZM)

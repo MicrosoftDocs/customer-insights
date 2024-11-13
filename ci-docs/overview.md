@@ -47,4 +47,4 @@ Start a [free Customer Insights trial](https://dynamics.microsoft.com/ai/custome
 
 ## Related information
 
-[What is Microsoft's marketing solution?](https://youtu.be/8o9s74gIGNA)
+[What is Microsoft's marketing solution? (video)](https://youtu.be/8o9s74gIGNA)

@@ -64,4 +64,4 @@ For example, you can type "give this email a professional and modern theme" or "
 
 ## Related information
 
-[How AI can Transform Your Marketing](https://youtu.be/zk_QcHAb4cU)
+[How AI can Transform Your Marketing (video)](https://youtu.be/zk_QcHAb4cU)

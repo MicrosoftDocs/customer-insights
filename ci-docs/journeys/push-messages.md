@@ -125,4 +125,4 @@ You can see how customers reacted to your push messages by checking the push not
 
 ## Related information
 
-[Push notifications](https://youtu.be/Z-nkQFE5i8c)
+[Push notifications (video)](https://youtu.be/Z-nkQFE5i8c)
