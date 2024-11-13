@@ -1,7 +1,7 @@
 ---
 title: Get answers to questions about capabilities from Copilot (preview)
 description: Learn how to use Copilot across Customer Insights - Data.
-ms.date: 03/01/2024
+ms.date: 11/12/2024
 ms.reviewer: mhart
 ms.topic: how-to
 author: nikeller
