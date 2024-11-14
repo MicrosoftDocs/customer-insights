@@ -90,3 +90,7 @@ The following section outlines some "do's" and "don'ts" for using the journey co
     - **Example 1**: "Create a social media post on Facebook and if anyone interacts with it, send them a personalized message."
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
+
+## Related information
+
+[Take campaigns from concept to launch (video)](https://youtu.be/tgHOPefdYzA)

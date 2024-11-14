@@ -151,3 +151,8 @@ Here are some advanced resources for this topic:
 - [Custom reporting with Microsoft Fabric](fabric-integration.md)
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
+
+
+## Related information
+
+[Understand and Improve Your Marketing Journeys (video)](https://youtu.be/HtIvnS8IS9I)
