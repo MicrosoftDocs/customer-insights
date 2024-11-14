@@ -121,3 +121,8 @@ You can see how customers reacted to your push messages by checking the push not
 ---
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
+
+
+## Related information
+
+[Push notifications (video)](https://youtu.be/Z-nkQFE5i8c)
