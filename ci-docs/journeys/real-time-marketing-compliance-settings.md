@@ -143,7 +143,7 @@ Topics use the enforcement model of their parent purpose. Messages that are conf
 > [!div class="mx-imgBorder"]
 > ![Set enforcement model for channels.](media/real-time-marketing-configure-enforcement-model-configuration.png)
 
-There can be a different ![enforcement model set for each channels by default](real-time-marketing-email-text-consent.md#how-consent-is-respected-for-emails).
+There can be a different ![enforcement model set for each channel by default](real-time-marketing-email-text-consent.md#how-consent-is-respected-for-emails).
 
 ##### Considerations for contact entities
 
