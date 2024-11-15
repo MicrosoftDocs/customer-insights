@@ -1,7 +1,7 @@
 ---
 title: Consent management overview
 description: Learn how to manage consent settings in Dynamics 365 Customer Insights - Journeys.
-ms.date: 09/10/2024
+ms.date: 11/15/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -110,7 +110,6 @@ Another reason for having multiple compliance profiles would be to support diffe
 
 When you create a new compliance profile, you can **Use previously captured consent**. This option is intended to facilitate transitioning from a compliance profile with a preference page to one with a preference center. Doing so ensures that any previously captured consent applies to the new compliance profile.
 
-
 > [!NOTE]
 > Currently, you can deactivate a compliance profile or contact point consent record. However, deactivated profiles and contact point consent records will still be used and enforced because existing journeys or messages sent may rely on them. Should you wish to update a user's consent, go to the contact point consent record itself and change the consent value.
 
@@ -137,7 +136,7 @@ The **Enforcement model** settings on a purposes control how consent is evaluate
 - **Disabled**: Messages are sent to all contact points. Contact point consent records aren't checked before sending messages to this purpose (or topic).
 
 > [!NOTE]
-> Since November 2024 release, you can set the enforcement model to all channels including Text and Custom channel.
+> Since the November 2024 release, you can set the enforcement model to all channels including text and custom channels.
 
 Topics use the enforcement model of their parent purpose. Messages that are configured with both a purpose and a topic must have consent for both the purpose and the topic in order for the message to be sent. If a contact point doesn't have consent to send to a purpose, no messages to that purpose's topics are sent to the contact point. For example, if the parent purpose has a restrictive enforcement model, sending a message to a topic requires an opt-in contact point consent record for both the purpose and the topic associated with the contact point consent.
 

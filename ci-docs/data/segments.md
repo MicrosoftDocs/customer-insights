@@ -128,7 +128,7 @@ To optimize refresh performance, the system automatically deactivates unused seg
 
 Admins can delete these segments if they are no longer needed or reactivate them if they intend to use them again. Alternatively, admins can [specify segments that are excluded from the automated deactivation](#specify-segments-that-never-expire).
 
-Deactivated segments don't refresh automatically when the system refreshes. They are tagged with **SystemDeactivated** when updated by automated cleanup.
+Deactivated segments don't refresh automatically when the system refreshes. They are tagged with **AutoDeactivated** when updated by automated cleanup.
 
 ### Specify segments that never expire
 
@@ -136,7 +136,7 @@ To avoid automated deactivation if a segment is no longer in use, admins can mar
 
 1. Go to the **Insights** > **Segments** page and select a segment.
 
-1. In the command bar, select **Never expires**.
+1. In the command bar, select **Disable auto cleanup**.
 
 1. Confirm the selection.
 

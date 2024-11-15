@@ -25,16 +25,7 @@ Customers going through the transition to real-time journeys are recommended to 
 -	Switch emails to use the newly created compliance profile.
 -	Recreate segments based on topics (optional).
 
-When capturing consent from contacts, implementing a double opt-in (DOI) feature is sometimes necessary. DOI isn't currently available in real-time journeys natively. However, the consent management and double opt-in article above also describes how DOI can be achieved using both modules (outbound marketing and real-time journeys). This DOI method could make sense, especially if you've already set up DOI in outbound marketing.
-
-Customers who want to start with real-time journeys and need DOI implemented will need to wait until this feature becomes available.
-
-## Relevant upcoming features
-
-The features listed below may be of interest as you transition from outbound marketing to real-time journeys. These features provide parity, equivalent, or better functionality than what was available in outbound marketing.
-
-- **Double opt-in**: Double opt-in enables explicit consent requests from customers, allowing you to meet data protection regulations. Double opt-in helps reduce spam, lowering bounce rates and enhancing your sender reputation. Learn more: [Improve engagement and compliance with double opt-in](/dynamics365/release-plan/2023wave2/marketing/dynamics365-marketing/improve-engagement-compliance-double-opt-in)
-- **Consent management view**: Streamline consent management with a new unified view. Quickly update customer consents, see if a customer has opted out of communications, and understand their preferences across all mediums - emails, texts, and custom channels. Control and manage what messages your customers receive, all at a glance. Learn more: [Easily manage customer consent from contact and lead forms](/dynamics365/release-plan/2023wave2/marketing/dynamics365-marketing/easily-manage-customer-consent-contact-lead-forms)
+When capturing consent from contacts, implementing a double opt-in (DOI) feature is sometimes necessary. You can [activate the DOI for your compliance profile in real-time journeys](real-time-marketing-double-opt-in.md).
 
 [!INCLUDE [transition-comments](./includes/transition-comments.md)]
 

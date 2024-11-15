@@ -1,7 +1,7 @@
 ---
 title: New and upcoming features
 description: Information about new features, improvements, and bug fixes in Dynamics 365 Customer Insights - Journeys releases.
-ms.date: 10/17/2024
+ms.date: 11/06/2024
 ms.topic: article
 author: colinbirkett
 ms.author: colinbirkett
@@ -20,6 +20,59 @@ We're excited to announce our newest updates! This article summarizes early acce
 Customer Insights - Journeys updates are [pushed to customers automatically](https://cloudblogs.microsoft.com/dynamics365/it/2020/04/27/automatic-update-policy-for-dynamics-365-marketing/). Solutions are available for early validations. To manually update your instances, follow the steps in [Keep Customer Insights - Journeys up to date](apply-updates.md).
 
 To submit and vote on **feature requests** and **product suggestions**, go to the [Dynamics 365 Application Ideas portal](https://experience.dynamics.com/ideas/categories/?forum=dfa5b83d-9e4c-e811-a956-000d3a1bef07&forumName=Dynamics%20365%20Marketing).
+
+## November 2024 update
+
+| App              | GA release      |
+|------------------|-----------------|
+| Customer Insights - Journeys        |  1.1.50062.76  |
+
+### General availability
+
+- **Split audience into groups to deliver unique customer experiences** 
+	- When you want customers to have different experiences in one journey, you need to divide them into groups. While this is possible today using attribute branches or segments, sometimes the number of customers in each branch is more important than what those customers have in common. For example, you may want to send a survey out to a random subset of your customers for feedback, something that would be time-consuming to configure today. The new journey split tile allows you to split your audience into branches to provide a subset of your audience with unique experiences, whether that be a survey, a new type of experience to test, or a first-come promotional offer. You can split your audience by percentages (for cases where you need randomness) or by numbers (for cases where you want to deliver specific experiences to a set number of people). 
+	- [Release plan](/dynamics365/release-plan/2024wave2/customer-insights/dynamics365-customer-insights-journeys/provide-varied-experiences-one-journey-using-journey-split-tiles) 
+	- [Docs](real-time-marketing-split-audience.md)
+    
+    :::image type="content" source="media/split-percentage-nov.png" alt-text="Split journey audience by percentage." lightbox="media/split-percentage-nov.png":::
+
+- **Improve engagement and compliance with double opt-in**
+	- By implementing double opt-in, you can cultivate a more effective email marketing strategy, leading to improved compliance, increased open and click-through rates, and a better overall brand experience for subscribers. Privacy and data protection laws in many regions require double opt-in functionality to help verify customer information. Double opt-in requires users to confirm subscription preferences through a follow-up email after the initial subscription. By confirming subscription preferences a second time, you comply with legal requirements and improve engagement by ensuring that users who’ve subscribed are intent on receiving future communications. When customers are certain they want to receive email communications, spam complaints and bounce rates are reduced, and your sender reputation is improved. You can now configure if the double opt-in email is sent with each form submission or just once for the newly registered customers. 
+	- [Release plan](/dynamics365/release-plan/2024wave2/customer-insights/dynamics365-customer-insights-journeys/improve-engagement-compliance-double-opt-in) 
+	- [Docs](real-time-marketing-double-opt-in.md)
+
+    :::image type="content" source="media/double-opt-in-nov.png" alt-text="An overview of double opt-in within Customer Insights - Journeys." lightbox="media/double-opt-in-nov.png":::
+
+- **Export segment membership data for offline analysis** 
+	- Marketers often need deeper insights and offline access to customer segment data. With this latest enhancement, you can now export segment membership data directly to Excel, supporting up to 100,000 rows per segment. This new capability makes it easier to analyze customer data in your preferred tools without the need for complex integrations or manual data handling. Previously, extracting large sets of data from segments required cumbersome workarounds. Now, you can seamlessly export detailed segment data for offline analysis and verification, enhancing your ability to make data-driven decisions. The export feature is available for segments with up to 100,000 members and includes a predefined set of columns: Contact/Lead ID, First Name, Last Name, Email, and Phone Number. This streamlined export ensures consistency and accuracy in your data analysis while maintaining simplicity. Custom columns or attributes aren't supported at this time.
+
+     :::image type="content" source="media/export-segment-membership.png" alt-text="An overview exporting segment membership data for offline analysis within Customer Insights - Journeys." lightbox="media/export-segment-membership.png":::
+
+### Public preview
+
+- **Wait on segment membership to trigger the next step in a journey** 
+	- Gain even more control over your customers' experience by waiting for them to become a member of a segment before continuing to the next steps in a journey. This added capability lets you personalize each customer's experience by choosing the correct path and actions relevant to individual customers based on whether they're in a segment. This capability adds to existing if/then capabilities that let you wait for a customer to open an email, click a link, or wait for another trigger to be activated before moving on to the next step in the journey. For example, let's say you use your journey to send credit card activation emails and you want to wait for the customer to activate their card before sending a welcome email. If the customer doesn’t activate their credit card within a few days, you want to send another reminder email. If you have a segment that includes all customers who have activated credit cards, you can use that segment as the condition for the if/then branch to wait for each customer to activate their credit card and send them the right communications. (Note: Due to holiday deployment lockdowns, we expect this capability to be rolled out in all regions by the week of Dec 9, 2024).
+	- [Release plan](/dynamics365/release-plan/2024wave2/customer-insights/dynamics365-customer-insights-journeys/use-segments-decide-which-path-customer-should-take-journey) 
+	- [Docs](real-time-marketing-tile-reference.md#branching-the-customer-journey)
+
+    :::image type="content" source="media/wait-segment-membership-release-planner.png" alt-text="Create a journey that waits until a customer becomes part of a segment then continues to the next step in the journey." lightbox="media/wait-segment-membership-release-planner.png":::
+
+### Monthly enhancements
+
+- **Flexible enforcement model for text and custom channels**
+	- The enforcement model could be selected only for the email channel. With the latest update, you can select restrictive or non-restrictive enforcement model for text (SMS) and custom channels.
+	- [Docs](real-time-marketing-compliance-settings.md#consent-enforcement)  
+
+- **Form with new layout structure improving accessibility and responsivity** 
+	- All newly created Customer Insights Journeys forms have a new layout structure which no longer relies on the tables. This feature comes disabled by default. You can enable it in the feature switches.
+    - [Docs](real-time-marketing-troubleshooting-forms.md#the-form-styles-seem-broken-after-embedding-into-my-page-or-im-having-screen-reader-issues-with-the-form)
+
+### New blogs and scenario docs
+
+Learn how to make the most of the new Dynamics 365 Customer Insights features in our latest blogs and scenario docs:
+
+- [Implementing cascading dropdown fields in RTM forms - FastTrack blog](https://community.dynamics.com/blogs/post/?postid=ff86d88f-d892-ef11-ac21-6045bdd7e1ae)
+- [Beyond open rate: Rethinking email marketing metrics - Microsoft Dynamics 365 blog](https://www.microsoft.com/dynamics-365/blog/it-professional/2024/10/16/rethinking-email-metrics-the-evolving-landscape-of-open-rates/)
 
 ## October 2024 update
 

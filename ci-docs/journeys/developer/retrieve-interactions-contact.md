@@ -159,7 +159,7 @@ OData-Version: 4.0
   
 {
     "InteractionType": "WebsiteClicked",
-    "ContactId": "0dbe0fa3-8e18-e811-a951-000d3a37caec",
+    "ContactId": "33dd33dd-ee44-ff55-aa66-77bb77bb77bb",
 }
 ```
 
@@ -174,7 +174,7 @@ OData-Version: 4.0
 
 {
     "@odata.context":"[Organization URI]/api/data/v9.0/$metadata#Microsoft.Dynamics.CRM.msdyncrm_LoadInteractionsPublicResponse",
-    "Data":"[{\"InteractionId\":\"172C1E59A3CD4D85B392316DD76651CE\",\"InteractionType\":\"EmailSent\",\"Timestamp\":\"2018-02-23T13:10:48Z\",\"OrganizationId\":\"e47e99c2-20e3-4ef3-bbd4-288258bd6bf9\",\"EmailDomain\":\"microsoft.com\",\"ActivityId\":\"b6aeb700-f1c1-4cb1-e8f8-e883eac6bfbc\",\"SendingId\":\"5a019802-f763-3b72-fc91-0a9c95b67c5f\",\"ContactId\":\"0dbe0fa3-8e18-e811-a951-000d3a37caec\",\"MessageId\":\"5a2f3e76-9518-e811-a951-000d3a38caec\",\"CustomerJourneyId\":\"4c3846a1-9618-e811-a951-000d3a37cafc\",\"CustomerJourneyIterationId\":\"538825cf-fe1c-4fee-a671-7984eabb62eb\",\"UsageType\":\"CustomerJourney\",\"EmailAddressUsed\":\"sample@adventure-works.com\"}]",
+    "Data":"[{\"InteractionId\":\"172C1E59A3CD4D85B392316DD76651CE\",\"InteractionType\":\"EmailSent\",\"Timestamp\":\"2018-02-23T13:10:48Z\",\"OrganizationId\":\"00aa00aa-bb11-cc22-dd33-44ee44ee44ee\",\"EmailDomain\":\"microsoft.com\",\"ActivityId\":\"11bb11bb-cc22-dd33-ee44-55ff55ff55ff\",\"SendingId\":\"22cc22cc-dd33-ee44-ff55-66aa66aa66aa\",\"ContactId\":\"33dd33dd-ee44-ff55-aa66-77bb77bb77bb\",\"MessageId\":\"44ee44ee-ff55-aa66-bb77-88cc88cc88cc\",\"CustomerJourneyId\":\"55ff55ff-aa66-bb77-cc88-99dd99dd99dd\",\"CustomerJourneyIterationId\":\"66aa66aa-bb77-cc88-dd99-00ee00ee00ee\",\"UsageType\":\"CustomerJourney\",\"EmailAddressUsed\":\"sample@adventure-works.com\"}]",
     "NextSkipToken":null
 }
 ```
