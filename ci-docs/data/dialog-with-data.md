@@ -65,8 +65,3 @@ We want to hear your feedback so we can continually enhance the relevancy, preci
 - [Responsible AI FAQs for Dynamics 365 Customer Insights - Data](responsible-ai-overview.md)
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
-
-
-## Related information
-
-[Create personalized content in seconds (video)](https://youtu.be/1Lgodu6A2ZM)
