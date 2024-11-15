@@ -70,13 +70,12 @@ As we continue to work on Customer Insights - Journeys and refine the experience
 - A segment can be created for up to 100,000,000 contacts.
 - A segment-based journey will only work when the size of the segment is under 10M contacts. Any segment with a larger size fails to execute. To ensure that campaigns can run effectively, break down the larger segments into multiple segments that can use the same repeatable journey.
 (1) This is also true for any trigger-based journeys that rely on segments in the journey flow.
-- When multiple segments are selected for the journey start, exit, or exclusion, the total member count across the selected segments can't exceed the segment size limit of 100,000,000 contacts for a journey.
 - There's a limit of 100 contacts that can be added to an inclusion/exclusion group as part of the segment definition. To get around this, you can create a separate segment of customers and use that segment in your master segment definition thereby creating a compound segment.
 - Today, users can't edit a segment that is being used in a live journey in Customer Insights - Journeys. To be able to edit the segment, stop the journey, and then make the edits to the segments.
 
 ## Triggers
 
-- Today, there's a limit of 500 custom triggers that can be fired in an org per day. To increase this for your organization, create a support ticket or reach out to your Microsoft Representative, and we can work with you to support your use case.
+- Today, there's a limit of 100 custom triggers that can be fired in an org per day. To increase this for your organization, create a support ticket or reach out to your Microsoft Representative, and we can work with you to support your use case.
 - When defining custom triggers, ensure that all attributes are defined. Any attribute that has a null value causes the trigger to fail leading to the customers not going through the journey. Today, we don't have the ability to allow null values to be passed in a custom, which then results in a System Failure as the error message at journey runtime.
 - Usage of Entity References in Custom or CDS triggers is limited to five hops. Any entity that is more than 5 hops away from the COLA entity, can't be used as an attribute in a journey.
 - When using the "Marketing Form Submitted" standard trigger for your journey care should be taken to ensure that the audience for the journey and the form are the same. Today, we don't display an error or warning when there's a mismatch, but the journey won't start leading to customer confusion.
