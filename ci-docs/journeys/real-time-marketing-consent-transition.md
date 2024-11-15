@@ -1,7 +1,7 @@
 ---
 title: Consent management and double opt-in transition guidance
 description: Learn the capabilities of consent management in Dynamics 365 Customer Insights - Journeys and how to use them in specific scenarios.
-ms.date: 08/01/2024
+ms.date: 11/15/2024
 ms.topic: article
 author: petkra
 ms.author: petkra
