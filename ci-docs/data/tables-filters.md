@@ -14,9 +14,9 @@ Improve the quality of your unified customer profiles and insights by filtering 
 
 Key benefits include:
 
-- **Improved processing time**: By removing unwanted rows, the system no longer processes data that isn’t needed, reducing time and resources.
-- **Streamlined data sets**: Removing unnecessary data improves processing time, particularly with large data sets. Columns that aren’t used for matching or needed in the final output can now be filtered out before processing.
-- **Targeted final output**: Filtering out irrelevant data, such as old records or data from regions where you don’t operate anymore, results in a more focused and relevant output.
+- **Improved processing time**: When you remove unwanted rows, the system no longer processes data that isn’t needed, reducing time and resources.
+- **Streamlined data sets**: When you remove unnecessary data, processing time improves, particularly with large data sets. <!---Columns that aren’t used for matching or needed in the final output can now be filtered out before processing.-->
+- **Targeted final output**: When you filter out irrelevant data, such as old records or data from regions where you don’t operate anymore, the result is a more focused and relevant output.
 
 Apply row filters directly to any source table you ingest, reducing the data scope to just what you need.
 
@@ -29,7 +29,7 @@ Select row filters for just the rows you need in any source table. Only the filt
    :::image type="content" source="media/tables-source-tab.png" alt-text="Screenshot of the Source tab on the Tables page.":::
 
 1. Select the **Source** tab.
-1. Selec the row filter link for any table and set the filters. The type of data determines the filter options.
+1. Select the row filter link for any table and set the filters. The type of data determines the filter options.
 
    :::image type="content" source="media/tables-filter-rows.png" alt-text="Screenshot of the Filter rows dialog box.":::
 
