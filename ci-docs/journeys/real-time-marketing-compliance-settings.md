@@ -140,6 +140,11 @@ The **Enforcement model** settings on a purposes control how consent is evaluate
 
 Topics use the enforcement model of their parent purpose. Messages that are configured with both a purpose and a topic must have consent for both the purpose and the topic for the message to be sent. If a contact point doesn't have consent to send to a purpose, no messages to that purpose's topics are sent to the contact point. For example, if the parent purpose has a restrictive enforcement model, sending a message to a topic requires an opt-in contact point consent record for both the purpose and the topic associated with the contact point consent.
 
+> [!div class="mx-imgBorder"]
+> ![Set enforcement model for channels.](media/real-time-marketing-configure-enforcement-model-configuration.png)
+
+There can be a different ![enforcement model set for each channel by default](real-time-marketing-email-text-consent.md#how-consent-is-respected-for-emails).
+
 ##### Considerations for contact entities
 
 > [!NOTE]

@@ -48,9 +48,12 @@ The presence of a company address and unsubscribe link is checked when you selec
 > [!NOTE]
 > The app will display warnings if, for example, you accidentally delete either the company address or link to the preference center. However, it does not block you from sending such an email. Thus, you are able to replace the given company address field with another one of your choice or add a link to a custom preference center if you like.
 
-## How consent is respected for SMS (text) and custom channel messages
+## How consent is respected for SMS (text) and custom channel messages by default
 
-The Customer Insights - Journeys rules for sending SMS and custom channel messages are slightly different than the rules for sending emails. A user must always opt in to consent to receive commercial SMS or commercial custom channel messages, irrespective of the consent enforcement model. Transactional SMS and custom channel messages are always sent and don't have consent checked or enforced.
+> [!NOTE]
+> Since November 2024 release, it is possible to change the default enforcement model settings for test (SMS) and custom channels.
+
+The Customer Insights - Journeys rules for sending SMS and custom channel messages are slightly different than the rules for sending emails by default. A user must always opt in to consent to receive commercial SMS or commercial custom channel messages. By default the transactional SMS and custom channel messages are always sent, unless you change the enforcement model from disabled.
 
 ## Consent to track user behavior
 
@@ -66,7 +69,7 @@ If you would like to collect tracking consent, you can add the tracking purpose 
 
 ## Consent enforcement diagram
 
-The following diagram provides a visual representation of how consent is checked while executing journeys in Customer Insights - Journeys.
+The following diagram provides a visual representation of how consent is checked by default while executing journeys in Customer Insights - Journeys.
 
 <table>
   <tr>
