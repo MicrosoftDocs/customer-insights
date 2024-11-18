@@ -1,7 +1,7 @@
 ---
 title: Transition marketing pages and forms
 description: Learn how to transition marketing pages and forms capabilities from outbound marketing to real-time journeys in Dynamics 365 Customer Insights - Journeys.
-ms.date: 11/15/2024
+ms.date: 11/18/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -25,10 +25,10 @@ Notice that there isn't a one-to-one relationship between the outbound marketing
 
 - Marketing pages in outbound marketing serve as a hosting container for outbound marketing forms. They have a dependency on Power Pages, which is removed in the real-time journeys module and therefore have no equivalent in real-time journeys.
 -	Outbound marketing forms allow you to design forms for landing pages, event registrations, or subscription centers. This functionality is covered in real-time journeys forms, which can be published as a standalone page.
--	Marketing websites and redirect URLs allow you to track web activity. With web tracking, a feature that isn't yet available in real-time journeys but it's planned (see [Engage customers with content and follow-ups based on website interactions](/dynamics365/release-plan/2023wave2/marketing/dynamics365-marketing/engage-customers-content-follow-ups-based-website-interactions)) you'll be able to create customer experiences based on your customers' web behavior. There are no plans to support "Redirect URLs" in real-time journeys. 
+-	Marketing websites and redirect URLs allow you to track web activity. With web tracking (a feature that isn't yet available in real-time journeys but is planned (see [Engage customers with content and follow-ups based on website interactions](/dynamics365/release-plan/2023wave2/marketing/dynamics365-marketing/engage-customers-content-follow-ups-based-website-interactions))) you can create customer experiences based on your customers' web behavior. There are no plans to support "redirect URLs" in real-time journeys. 
 
 > [!NOTE]
-> Outbound marketing "Redirect URLs" capabilities will not be supported in real-time journeys.
+> Outbound marketing "redirect URLs" capabilities won't be supported in real-time journeys.
 
 Real-time journeys forms cover all functionality from outbound marketing forms and they also take over the publishing part from marketing pages (see [Deploy pages that contain Customer Insights - Journeys forms](real-time-marketing-deploy-pages.md)). Real-time journeys forms can also be used for event registration (in the **Website and form** tab in the event management module) and preference centers, which are equivalent to subscription centers in outbound marketing (see [Transition consent](transition-walkthrough-consent.md) and [Create branded, customized preference centers to manage customer consent](real-time-marketing-preference-centers.md)).
 
