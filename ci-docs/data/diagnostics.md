@@ -1,7 +1,7 @@
 ---
 title: "Export diagnostic logs (preview)"
 description: "Learn how to send logs to Microsoft Azure Monitor."
-ms.date: 09/01/2023
+ms.date: 11/19/2024
 ms.reviewer: mhart
 ms.topic: article
 author: brndkfr
@@ -39,7 +39,7 @@ Customer Insights sends the following event logs:
 - A valid resource on Azure that follows the [destination requirements](/azure/azure-monitor/platform/diagnostic-settings#destination-requirements) for Azure Storage, Azure Event Hub, or Azure Log Analytics.
 - [Contributor and User Access Administrator role](/azure/role-based-access-control/role-assignments-portal) on the destination resource on Azure. The resource can be an Azure Data Lake Storage account, an Azure Event Hub, or an Azure Log Analytics workspace. This permission is necessary while configuring diagnostic settings, but it can be changed after successful setup.
 - At least the **Reader** role on the resource group the resource belongs to.
-- Authorization to perform the **Microsoft.Insights/register/action** on the Azure subscription the resource belongs to. For instance, the [Monitoring Contributor](/azure/role-based-access-control/built-in-roles/monitor#monitoring-contributor) role includes this action.
+- Permission to perform the **Microsoft.Insights/register/action** on the Azure subscription the resource belongs to. For example, the [Monitoring Contributor](/azure/role-based-access-control/built-in-roles/monitor#monitoring-contributor) role includes this action.
 
 ### Set up diagnostics with Azure Monitor
 
@@ -60,7 +60,7 @@ Customer Insights sends the following event logs:
 1. Select **Connect to system** to connect to the destination resource. The logs start to appear in the destination after 15 minutes, if the API is in use and generates events.
 
 > [!NOTE]
-> If the Azure subscription that contains the target resource does not already have the **Microsoft.Insights** resource provider registered, you might experience a generic network error when trying to set up diagnostics. In that case, please go to **Azure portal** -> **Subscription** -> **Settings** -> **Resource providers**, and look for **Microsoft.Insights** provider. If the status is **Registering**, wait until it changes to **Registered** (this can take up to a few hours in rare cases). Then, retry the diagnostics setup.
+> If the Azure subscription that contains the target resource doesn't already have the **Microsoft.Insights** resource provider registered, you might experience a generic network error when trying to set up diagnostics. To check the status, go to **Azure portal** > **Subscription** > **Settings** > **Resource providers** and find the **Microsoft.Insights** provider. If the status is **Registering**, wait until it changes to **Registered**, which can take a couple of hours in rare cases and retry the diagnostics setup.
 
 ## Configuration on the destination resource
 
