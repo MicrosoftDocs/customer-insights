@@ -218,6 +218,8 @@
     items:
     - name: Segmentation overview
       href: real-time-marketing-segments.md
+    - name: Create a segment-based journey
+      href: real-time-marketing-segment-based-journey.md  
     - name: Create segments
       items:
       - name: Build segments
@@ -232,6 +234,12 @@
         href: unified-profile-segment-creation.md
       - name: Create a static snapshot of a segment
         href: real-time-marketing-static-snapshot.md
+    - name: Use Customer Insights - Data segments
+      items:
+      - name: Use Customer Insights - Data profiles and segments
+        href: real-time-marketing-ci-profile.md     
+      - name: Use your own Azure Data Lake Storage account for segments
+        href: bring-your-own-azure-data-lake.md   
     - name: Enhance your segments
       items:
       - name: Best practices for outbound segments in real-time journeys
@@ -241,11 +249,7 @@
       - name: Individually manage your customer list
         href: real-time-marketing-include-exclude.md
       - name: Add protected fields in segment criteria
-        href: protected-fields.md
-    - name: Create a segment-based journey
-      href: real-time-marketing-segment-based-journey.md    
-    - name: Use Customer Insights - Data profiles and segments
-      href: real-time-marketing-ci-profile.md      
+        href: protected-fields.md   
     - name: "Troubleshooting: Segments show incorrect member count"
       href: segment-member-count.md
   - name: Create real-time journeys
@@ -754,26 +758,30 @@
       href: segmentation-lists-subscriptions.md
     - name: Segments vs. lists
       href: segments-vs-lists.md
-    - name: Design dynamic demographic or firmographic segments
-      href: segments-profile.md
-    - name: Design behavioral segments
-      href: segments-interaction.md
-    - name: Generate behavioral segments from journey results
-      href: generate-segment-from-journey.md
-    - name: Use natural language to create segments
-      href: nl-segment-build.md
-    - name: Export dynamic-segment members to Excel
-      href: segments-export-members.md
-    - name: Design static segments
-      href: segments-static.md
-    - name: Manage segment memberships from a contact record
-      href: manage-segments-from-contacts.md
+    - name: Design and create segments
+      items:
+      - name: Design dynamic demographic or firmographic segments
+        href: segments-profile.md
+      - name: Design behavioral segments
+        href: segments-interaction.md
+      - name: Generate behavioral segments from journey results
+        href: generate-segment-from-journey.md
+      - name: Use natural language to create segments
+        href: nl-segment-build.md
+      - name: Design static segments
+        href: segments-static.md
+    - name: Manage segments
+      items:
+      - name: Manage segment memberships from a contact record
+        href: manage-segments-from-contacts.md
+      - name: Export dynamic-segment members to Excel
+        href: segments-export-members.md
+    - name: Use Customer Insights - Data segments in Customer Insights - Journeys
+      href: customer-insights-segments.md
     - name: Work with segment templates
       href: segments-templates.md
     - name: Market to Dynamics 365 segments on LinkedIn
       href: linkedin-matched-audience.md
-    - name: Use Customer Insights - Data segments in Customer Insights - Journeys
-      href: customer-insights-segments.md
   - name: Marketing emails
     items:
     - name: Email marketing overview

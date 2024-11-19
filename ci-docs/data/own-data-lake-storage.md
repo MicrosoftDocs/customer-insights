@@ -3,7 +3,7 @@ title: Use your own Azure Data Lake Storage account
 description: Learn about the requirements to use your own Azure Data Lake Storage account in Customer Insights - Data.
 author: Scott-Stabbert
 ms.author: sstabbert
-ms.date: 11/06/2024
+ms.date: 11/19/2024
 ms.topic: how-to
 ms.collection: get-started
 ms.reviewer: mhart
@@ -21,6 +21,7 @@ Administrators in Customer Insights - Data can [create environments](create-envi
 - Azure Data Lake Storage accounts must be in the same Azure region that you selected when creating the Customer Insights - Data environment. To know the region of the environment, go to **Settings** > **System** > **About**.
 - The Data Lake Storage account must have [hierarchical namespace enabled](/azure/storage/blobs/data-lake-storage-namespace).
 - The administrator setting up the Customer Insights - Data environment needs the Storage Blob Data Contributor or Storage Blob Data Owner role on the storage account or the `customerinsights` container. For more information on assigning permission in a storage account, see [Create a storage account](/azure/storage/common/storage-account-create?toc=%2Fazure%2Fstorage%2Fblobs%2Ftoc.json&tabs=azure-portal).
+- To allow segmentation features access to the storage account, follow the steps in this article.
 
 ## Connect Customer Insights - Data with your storage account
 
