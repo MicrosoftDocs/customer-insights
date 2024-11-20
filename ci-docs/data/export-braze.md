@@ -4,8 +4,8 @@ description: "Learn how to configure the connection and export to Braze."
 ms.date: 03/06/2024
 ms.reviewer: mhart
 ms.topic: conceptual
-author: pkieffer
-ms.author: philk
+author: Scott-Stabbert
+ms.author: sstabbert
 ---
 
 # Export segments to Braze (preview)
