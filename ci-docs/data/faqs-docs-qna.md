@@ -5,8 +5,8 @@ ms.date: 10/22/2024
 ms.custom:
   - responsible-ai-faqs
 ms.topic: conceptual
-author: nils-2m
-ms.author: nikeller
+author: jimsonc
+ms.author: jimsonc
 ms.reviewer: mhart
 ms.collection: bap-ai-copilot 
 ---

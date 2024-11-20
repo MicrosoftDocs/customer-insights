@@ -4,8 +4,8 @@ description: Manage your encryption of data at rest with customer-managed keys.
 ms.date: 02/06/2024
 ms.reviewer: mhart
 ms.topic: conceptual
-author: nils-2m
-ms.author: nikeller
+author: Scott-Stabbert
+ms.author: sstabbert
 ms.custom: bap-template
 ---
 

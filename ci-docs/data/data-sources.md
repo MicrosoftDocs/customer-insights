@@ -3,8 +3,8 @@ title: Data sources overview
 description: Learn how to import or ingest data from various sources.
 ms.date: 06/24/2024
 ms.topic: overview
-author: Scott-Stabbert
-ms.author: sstabbert
+author: jimsonc
+ms.author: jimsonc
 ms.reviewer: v-wendysmith
 ms.custom: bap-template
 ---

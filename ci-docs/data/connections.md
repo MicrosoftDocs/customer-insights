@@ -4,8 +4,8 @@ description: "Connections to other services from Customer Insights - Data."
 ms.date: 12/21/2023
 ms.reviewer: mhart
 ms.topic: overview
-author: Nils-2m
-ms.author: nikeller
+author: Scott-Stabbert
+ms.author: sstabbert
 ---
 
 # Connections (preview) overview
