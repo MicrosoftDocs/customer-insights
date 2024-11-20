@@ -22,11 +22,11 @@ Responses are generated in accordance with [Microsoft Responsible AI Standards.]
 
 ## Prerequisites
 
-- Customer data is [imported](data-sources.md) and [unified.](data-unification.md)
-- For optimal results, we recommend imported and unified [activity data.](activities.md)
+- Customer data is [imported](data-sources.md) and [unified](data-unification.md).
+- For optimal results, we recommend imported and unified [activity data](activities.md).
 - You have Admin or Contributor permissions.
 - [Enable Copilot features powered by Azure OpenAI](copilot-global-consent.md) setting turned **On**. Default is **On**.
-- Environment is in a [supported geography and uses a supported language](faqs-dialog-data.md#what-are-the-supported-geographies-and-languages).
+- Environment is in a [supported geography and uses a supported language](https://releaseplans.microsoft.com/availability-reports/?report=copilotfeaturereport).
 
 ## Discover insights from your data
 

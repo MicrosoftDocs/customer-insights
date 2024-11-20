@@ -41,7 +41,7 @@ More evaluation was performed over custom datasets for offensive and malicious p
 
 ## What are the supported geographies and languages?
 
-For more information, see [Copilot International Availability report](https://releaseplans.microsoft.com/availability-reports/?report=copilotfeaturereport).
+Go to [Copilot International Availability report](https://releaseplans.microsoft.com/availability-reports/?report=copilotfeaturereport).
 
 ## What operational factors and settings allow for effective and responsible use of the feature?
 
