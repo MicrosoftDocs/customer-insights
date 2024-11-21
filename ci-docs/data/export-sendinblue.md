@@ -5,7 +5,7 @@ ms.date: 09/01/2023
 ms.reviewer: mhart
 ms.topic: how-to
 author: phkieffer
-ms.author: philk
+ms.author: sstabbert
 ---
 
 # Export segments to Sendinblue (preview)

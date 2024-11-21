@@ -1,8 +1,8 @@
 ---
 title: "Set up and manage exports (preview)"
 description: "Manage exports to share data."
-author: Nils-2m
-ms.author: nikeller
+author: Scott-Stabbert
+ms.author: sstabbert
 ms.reviewer: mhart
 ms.date: 10/04/2023
 ms.topic: how-to

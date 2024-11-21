@@ -4,8 +4,8 @@ description: "Learn how to configure the connection and export to Dynamics 365 C
 ms.date: 06/26/2024
 ms.reviewer: mhart
 ms.topic: how-to
-author: pkieffer
-ms.author: philk
+author: Scott-Stabbert
+ms.author: sstabbert
 ---
 
 # Export segments to Customer Insights - Journeys outbound marketing (preview)

@@ -4,8 +4,8 @@ description: "Learn how to configure the connection to Azure Data Lake Storage G
 ms.date: 11/07/2024
 ms.reviewer: mhart
 ms.topic: how-to
-author: pkieffer
-ms.author: nikeller
+author: Scott-Stabbert
+ms.author: sstabbert
 ---
 
 # Export data to Azure Data Lake Storage Gen2 (preview)

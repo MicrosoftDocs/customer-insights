@@ -4,8 +4,8 @@ description: "Learn how to configure the connection and export to SendGrid."
 ms.date: 09/01/2023
 ms.reviewer: mhart
 ms.topic: how-to
-author: pkieffer
-ms.author: philk
+author: Scott-Stabbert
+ms.author: sstabbert
 ---
 
 # Export segments to SendGrid (preview)

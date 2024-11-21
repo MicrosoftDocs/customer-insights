@@ -4,8 +4,8 @@ description: "Learn how to configure the connection and export to Salesforce Mar
 ms.date: 09/01/2023
 ms.reviewer: mhart
 ms.topic: how-to
-author: pkieffer
-ms.author: philk
+author: Scott-Stabbert
+ms.author: sstabbert
 ---
 
 # Export data to Salesforce Marketing Cloud (preview)

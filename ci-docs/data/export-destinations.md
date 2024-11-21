@@ -1,8 +1,8 @@
 ---
 title: "Exports (preview) overview"
 description: "Overview on exports in Dynamics 365 Customer Insights - Data."
-author: pkieffer
-ms.author: philk
+author: Scott-Stabbert
+ms.author: sstabbert
 ms.reviewer: mhart
 ms.date: 02/01/2024
 ms.topic: overview

@@ -4,8 +4,8 @@ description: "View your unified customer data including using search and filter 
 ms.date: 06/14/2024
 ms.reviewer: mhart
 ms.topic: conceptual
-author: Nils-2m
-ms.author: nikeller
+author: Scott-Stabbert
+ms.author: sstabbert
 ms.custom: bap-template
 ---
 

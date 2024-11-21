@@ -4,8 +4,8 @@ description: "Learn how use Customer Insights - Data segments in Adobe Campaign 
 ms.date: 11/06/2024
 ms.reviewer: mhart
 ms.topic: conceptual
-author: pkieffer
-ms.author: nikeller
+author: Scott-Stabbert
+ms.author: sstabbert
 ---
 
 # Export segments to Adobe Campaign Standard (preview)

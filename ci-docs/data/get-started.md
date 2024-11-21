@@ -2,8 +2,8 @@
 title: Get started with Dynamics 365 Customer Insights - Data
 description: An overview of help resources to get started quickly. 
 ms.reviewer: mhart
-ms.author: nikeller
-author: Nils-2m
+author: jimsonc
+ms.author: jimsonc
 ms.date: 06/24/2024
 ms.topic: how-to
 ms.custom: bap-template

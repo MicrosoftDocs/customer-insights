@@ -3,8 +3,8 @@ title: No-code web personalization using Optimizely (preview)
 description: Learn how to personalize web experiences with the Customer Insights - Data and Optimizely integration.
 ms.date: 06/14/2024
 ms.topic: how-to
-author: philk
-ms.author: philk
+author: JimsonChalissery
+ms.author: jimsonc
 ms.reviewer: mhart
 ms.custom: bap-template
 ---

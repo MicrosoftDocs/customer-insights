@@ -4,8 +4,8 @@ description: "Learn how to configure the connection and export to Blob storage."
 ms.date: 11/07/2024
 ms.reviewer: mhart
 ms.topic: how-to
-author: pkieffer
-ms.author: philk
+author: Scott-Stabbert
+ms.author: sstabbert
 ---
 
 # Export data to an Azure Blob Storage (preview)
