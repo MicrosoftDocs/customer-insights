@@ -5,8 +5,8 @@ ms.date: 10/22/2024
 ms.custom:
   - responsible-ai-faqs
 ms.topic: conceptual
-author: nils-2m
-ms.author: nikeller
+author: jimsonc
+ms.author: jimsonc
 ms.reviewer: mhart
 ms.collection: bap-ai-copilot 
 ---
@@ -41,7 +41,7 @@ More evaluation was performed over custom datasets for offensive and malicious p
 
 ## What are the supported geographies and languages?
 
-For more information, see [Copilot International Availability report](https://releaseplans.microsoft.com/availability-reports/?report=copilotfeaturereport).
+Go to [Copilot International Availability report](https://releaseplans.microsoft.com/availability-reports/?report=copilotfeaturereport).
 
 ## What operational factors and settings allow for effective and responsible use of the feature?
 

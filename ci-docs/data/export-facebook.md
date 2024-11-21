@@ -4,8 +4,8 @@ description: "Learn how to configure the connection and export to Facebook Ads M
 ms.date: 05/27/2024
 ms.reviewer: mhart
 ms.topic: how-to
-author: pkieffer
-ms.author: philk
+author: Scott-Stabbert
+ms.author: sstabbert
 ---
 
 # Export segments to Facebook Ads Manager (preview)

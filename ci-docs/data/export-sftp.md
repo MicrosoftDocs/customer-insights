@@ -4,8 +4,8 @@ description: "Learn how to configure the connection and export to an SFTP locati
 ms.date: 04/03/2023
 ms.reviewer: mhart
 ms.topic: how-to
-author: pkieffer
-ms.author: philk
+author: Scott-Stabbert
+ms.author: sstabbert
 ---
 
 # Export data to SFTP hosts (preview)

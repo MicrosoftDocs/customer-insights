@@ -50,7 +50,7 @@ The feature reports only on these jobs and one at a time based on the priority o
 
 ## What are the supported geographies and languages?
 
-For more information, see [Copilot International Availability report](https://releaseplans.microsoft.com/availability-reports/?report=copilotfeaturereport).
+Go to [Copilot International Availability report](https://releaseplans.microsoft.com/availability-reports/?report=copilotfeaturereport).
 
 ## What operational factors and settings allow for effective and responsible use of the feature?
 
