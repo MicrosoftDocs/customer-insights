@@ -1,11 +1,15 @@
 ---
 title: Transition segments, emails, journeys, and assets
-description: Learn how to transition segments, emails, journeys, and assets from outbound marketing to real-time journeys in Dynamics 365 Customer Insights - Journeys.
-ms.date: 04/18/2023
+description: Transition your segments, emails, journeys, and assets to real-time journeys in Dynamics 365 Customer Insights - Journeys. Follow our guide to ensure a smooth transition.
+ms.date: 11/22/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
 ms.collection: bap-ai-copilot
+ms.custom:
+  - ai-gen-docs-bap
+  - ai-gen-description
+  - ai-seo-date:11/22/2024
 ---
 
 # Transition segments, emails, journeys, and assets
@@ -51,7 +55,7 @@ The features listed below may be of interest as you transition from outbound mar
 ### Email
 
 - **View email in browser**: With varied display formats across email providers, your emails can sometimes be displayed incorrectly. "View in Browser" in real-time journeys allows your customers to see your emails exactly as you created them. Learn more: [Enhance email engagement by allowing browser viewing](/dynamics365/release-plan/2023wave2/marketing/dynamics365-marketing/enhance-email-engagement-allowing-viewing-browsers)
-- **Email A/B testing**: Leverage email A/B testing in real-time journeys to compare and test variations of your emails on different subsets of your recipients to determine which variation performs best. Easily create alternate email versions by changing elements such as subject, body, or from address and optimize content for your audience. Learn more: [Optimize engagement, increase conversion rates with email A/B testing](/dynamics365/release-plan/2023wave2/marketing/dynamics365-marketing/optimize-engagement-increase-conversion-rates-email-ab-testing)
+- **Email A/B testing**: Use email A/B testing in real-time journeys to compare and test variations of your emails on different subsets of your recipients to determine which variation performs best. Easily create alternate email versions by changing elements such as subject, body, or from address and optimize content for your audience. Learn more: [Optimize engagement, increase conversion rates with email A/B testing](/dynamics365/release-plan/2023wave2/marketing/dynamics365-marketing/optimize-engagement-increase-conversion-rates-email-ab-testing)
 - **Orchestrate across multiple email address contact points**: Maximize customer reach, choose the right email address for each journey. Now, whether it's a contact’s work or personal email address, you have full control over where your messages are delivered, ensuring they’re seen where customers are most likely to take action. Learn more: [Ensure messages go to the right contact email address](/dynamics365/release-plan/2023wave2/marketing/dynamics365-marketing/ensure-messages-go-right-contact-email-address)
 
 ### Journeys

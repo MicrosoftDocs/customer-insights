@@ -1,11 +1,15 @@
 ---
 title: Upload, manage, and use images, files, and videos in online content
-description: How to upload, manage and use images, files, and videos in Dynamics 365 Customer Insights - Journeys.
-ms.date: 12/14/2023
+description: Find out how to efficiently upload, manage, and use images, files, and videos in Dynamics 365 Customer Insights - Journeys. Streamline your content creation.
+ms.date: 11/22/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
 ms.collection: bap-ai-copilot
+ms.custom:
+  - ai-gen-docs-bap
+  - ai-gen-description
+  - ai-seo-date:11/22/2024
 ---
 
 # Upload, manage, and use images, files, and videos in online content
@@ -45,7 +49,7 @@ You can manually add **tags** when you upload a file so it’s easier to organiz
 
 ## Edit assets
 
-You can easily see and edit asset details in the side pane. Simply select the asset to rename, add tags and alt text, and copy the asset URL.
+You can easily see and edit asset details in the side pane. Select the asset to rename, add tags and alt text, and copy the asset URL.
 
 You can **replace** your assets with newer versions whenever needed. To replace an asset:
 
