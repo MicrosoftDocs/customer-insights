@@ -1,20 +1,24 @@
 ---
 title: Add email carbon copy recipients to journeys
-description: Learn how to add carbon copy recipients to journeys in Dynamics 365 Customer Insights - Journeys.
-ms.date: 04/30/2023
+description: Enable and use the CC feature in Dynamics 365 Customer Insights - Journeys. Follow our guide to add up to five CC recipients to your emails.
+ms.date: 11/22/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
-search.audienceType: 
+search.audienceType:
   - admin
   - enduser
+ms.custom:
+  - ai-gen-docs-bap
+  - ai-gen-description
+  - ai-seo-date:11/22/2024
 ---
 
 # Add email carbon copy recipients to journeys
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RW10sVQ]
 
-You can add carbon copy (CC) recipients to your journeys when sending emails. When designing your journey, you can select up to five recipients for your emails from the email tile. You can dynamically choose your CC recipients by mapping them to your marketable contacts.
+You can add carbon copy (CC) recipients to your journeys when sending emails. When designing your journey, select up to five recipients for your emails from the email tile. Dynamically choose your CC recipients by mapping them to your marketable contacts.
 
 > [!IMPORTANT]
 >
@@ -24,6 +28,7 @@ You can add carbon copy (CC) recipients to your journeys when sending emails. Wh
 >- The CC recipient interaction will trigger the next step in the journey if you are utilizing the **Respond to an action** element in your journey based on the customer interaction.
 >- CC contacts are counted for marketable contact quota.
 >- CC contacts interactions are counted for interaction quota.
+>- Only the communication consent of the primary recipient is verified. The communication consent of CC recipients is not verified.
 >
 > CC recipients will receive the same amount of emails as the overall emails sent to primary recipients, meaning, if you send 1,000 emails to primary recipients with two people in CC, your overall sent emails will be 3,000. It's recommended that you select people in the CC field who are aware of how this feature functions.  
 >
