@@ -1,11 +1,15 @@
 ---
 title: Copilot - Target the right customers using query assist
-description: Target the right customers using the query assist copilot in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/23/2023
+description: Discover how to target the right customers using query assist copilot in Dynamics 365 Customer Insights - Journeys. Simplify segment creation today.
+ms.date: 11/22/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
 ms.collection: bap-ai-copilot
+ms.custom:
+  - ai-gen-docs-bap
+  - ai-gen-description
+  - ai-seo-date:11/22/2024
 ---
 
 # Copilot - Target the right customers using query assist

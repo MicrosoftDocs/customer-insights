@@ -1,11 +1,15 @@
 ---
 title: New and upcoming features
-description: Information about new features, improvements, and bug fixes in Dynamics 365 Customer Insights - Journeys releases.
-ms.date: 11/06/2024
+description: Discover the latest features, improvements, and bug fixes in Dynamics 365 Customer Insights - Journeys. Stay updated with our monthly release notes.
+ms.date: 11/22/2024
 ms.topic: article
 author: colinbirkett
 ms.author: colinbirkett
 ms.collection: bap-ai-copilot
+ms.custom:
+  - ai-gen-docs-bap
+  - ai-gen-description
+  - ai-seo-date:11/22/2024
 ---
 
 # What's new in Dynamics 365 Customer Insights - Journeys
