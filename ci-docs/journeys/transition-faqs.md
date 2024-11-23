@@ -1,11 +1,15 @@
 ---
 title: Real-time journeys transition FAQs
-description: Answers to frequently asked questions about transitioning to real-time journeys in Customer Insights - Journeys.
-ms.date: 10/07/2024
+description: Discover how to transition from outbound marketing to real-time journeys in Customer Insights - Journeys. Get answers to frequently asked questions.
+ms.date: 11/22/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
 ms.collection: bap-ai-copilot
+ms.custom:
+  - ai-gen-docs-bap
+  - ai-gen-description
+  - ai-seo-date:11/22/2024
 ---
 
 # Real-time journeys transition FAQs
@@ -94,20 +98,20 @@ Since announcing the transition to real-time journeys in August 2023, we've made
 
 ## What will happen to outbound tables and data when outbound marketing is removed?
 
-When outbound marketing is removed, the sitemap entry and outbound marketing services will be removed. We will not delete any publicly documented outbound marketing tables or data from those tables, with some exceptions (see below). While these tables and data remain in the system, they will **not** be updated or refreshed, and they may not be usable or accessible from the user interface once the outbound marketing sitemap entry has been removed. See additional details below (this information is subject to change and will be updated as we get closer to the outbound marketing removal date):
-- The **asset library** is common to both outbound marketing and real-time journeys. As such, the library and the items in it will continue to be available and useable.	
+When outbound marketing is removed, the sitemap entry and outbound marketing services will be removed. We won't delete any publicly documented outbound marketing tables or data from those tables, with some exceptions (see below). While these tables and data remain in the system, they will **not** be updated or refreshed, and they may not be usable or accessible from the user interface once the outbound marketing sitemap entry has been removed. See additional details below (this information is subject to change and will be updated as we get closer to the outbound marketing removal date):
+- The **asset library** is common to both outbound marketing and real-time journeys. As such, the library and the items in it continue to be available and useable.	
 - Outbound marketing **analytics** data will be merged with real-time journeys data. 
   - Existing Power BI custom reports for outbound marketing won't work with the consolidated data because the data format, its location, and access methods are different in real-time journeys. 
   - Insights reports that are part of the outbound marketing user interface won't be available anymore.	
 - **Events** is a shared capability between real-time journeys and outbound marketing and the same tables are used. These tables and the data won't be removed. 
   - However, there are some critical differences in the event forms and pages between outbound marketing and real-time journeys. Therefore, events created from outbound marketing will stop working once outbound marketing is removed. Outbound marketing events that go past the outbound marketing removal date must be recreated in real-time journeys.
-- Outbound marketing **segments** won't be removed but will not be usable.
+- Outbound marketing **segments** won't be removed but won't be usable.
   - The segment table itself doesn't contain the actual list of members; this information is stored in an internal table that will be removed. If you want to retain segment member data, you must export the segment data before outbound marketing services are removed.
   - Outbound marketing segments are currently available for use in real-time journeys. This functionality won't be supported once outbound marketing is removed. Any journey that uses outbound marketing segments will stop working.
 - While the outbound marketing user interface won't be available in the sitemap, outbound marketing tables can still be accessed using the advanced search (or in some cases using the standard user interface such as in the contact timeline, which has links to outbound marketing messages). These forms, while available, may not work correctly and won't be supported.	
 - The **import email tool** in real-time journeys will be kept for an additional few months after outbound marketing is removed.	
 - Outbound marketing emails, content blocks, forms, segments, marketing pages, consent data, journeys, templates, lead scoring models, social posts, subscription lists, etc. won't be deleted. 
-  - As these assets can't be used in real-time journeys, they will need to be migrated or recreated (for more information, review the individual pages for each feature area in the transition guidance section: [Functional areas overview](transition-walkthrough-functional.md)).
+  - As these assets can't be used in real-time journeys, they'll need to be migrated or recreated (for more information, review the individual pages for each feature area in the transition guidance section: [Functional areas overview](transition-walkthrough-functional.md)).
   - While these tables will remain, any custom user interface that updated or added records to them and relied on outbound marketing services may fail (for example, any custom user interface that had plugins reacting on retrieve/retrieve multiple messages).
 
 ## How do I start with real-time journeys?

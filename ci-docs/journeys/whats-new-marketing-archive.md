@@ -1,11 +1,15 @@
 ---
 title: What's new archive
-description: Information about new features, improvements, and bug fixes from previous years in Dynamics 365 Customer Insights - Journeys releases.
-ms.date: 01/22/2024
+description: Access archived information on new features, improvements, and bug fixes in Dynamics 365 Customer Insights - Journeys.
+ms.date: 11/22/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
 ms.collection: bap-ai-copilot
+ms.custom:
+  - ai-gen-docs-bap
+  - ai-gen-description
+  - ai-seo-date:11/22/2024
 ---
 
 # What's new archive for Dynamics 365 Customer Insights - Journeys

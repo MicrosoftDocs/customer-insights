@@ -1,13 +1,16 @@
 ---
 title: Responsible AI FAQs for content rewrite
-description: The Responsible AI FAQs discuss content rewrite and the key considerations for making use of this technology responsibly.
-ms.date: 12/08/2023
+description: Understand how to responsibly use the content rewrite feature in Dynamics 365 to improve your email, text, and push notification content.
+ms.date: 11/22/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
 ms.collection: bap-ai-copilot
-ms.custom: 
+ms.custom:
   - transparency-note
+  - ai-gen-docs-bap
+  - ai-gen-description
+  - ai-seo-date:11/22/2024
 ---
 
 # Responsible AI FAQs for content rewrite
@@ -28,7 +31,7 @@ These responsible AI FAQs describe the AI impact of Dynamics 365 Customer Insigh
 
 Content rewrite helps you rapidly iterate on your content to optimize your messaging. Whether you're creating content for email, text messages, push notifications, or forms, using Copilot, you can easily rephrase messages, adjust the tone of voice, and shorten or lengthen copy, increasing productivity and delivering better results.
 
-Select any text and leverage Copilot to:
+Select any text and use Copilot to:
 - Rewrite  text and choose from different variations
 - Change the tone of voice to be more engaging, formal, casual, luxury, or adventurous
 - Shorten or lengthen copy
