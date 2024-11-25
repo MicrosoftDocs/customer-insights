@@ -97,7 +97,7 @@ Sample queries for other tables.
 
 ## Next steps
 
-- Most Customer Insights - Data tables are available in Dataverse. For more information, see [Tables in Dataverse](tables.md#customer-insights---data-tables-in-dataverse).
+- Most Customer Insights - Data tables are available in Dataverse. For more information, see [Tables in Dataverse](tables.md#view-customer-insights---data-tables-in-dataverse).
 
 - Dataverse offers extensive support for testing their APIs, for example via Insomnia. For more information see, [Use Insomnia with Dataverse Web API](/power-apps/developer/data-platform/webapi/insomnia).
 
