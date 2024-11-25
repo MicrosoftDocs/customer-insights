@@ -120,6 +120,6 @@ There are three primary sections of data within the results page:
 > [!NOTE]
  > In the output table for this model, *ChurnScore* shows the predicted probability of churn and *IsChurn* is a binary label based on *ChurnScore* with 0.5 threshold. If this default threshold doesn't work for your scenario, [create a new segment](segments.md) with your preferred threshold. Not all customers are necessarily active customers. Some of them may not have had any activity for a long time and are considered as churned already, based on you churn definition. Predicting the churn risk for customers who already churned isn't useful because they are not the audience of interest.
 >
-> To view the churn score, go to **Data** > **Tables** and view the data tab for the output table you defined for this model.
+> To view the churn score, go to **Data** > **Tables** > **Output** and view the data tab for the output table you defined for this model.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

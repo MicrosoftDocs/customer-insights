@@ -37,7 +37,7 @@ The example illustrates the segmentation capability. We've defined a segment for
 
 When creating a segment using the segment builder, keep in mind the following tips:
 
-- The segment builder doesn't suggest valid values from tables when setting the operators for the conditions. You can go to **Data** > **Tables** and download the table data to see which values are available.
+- The segment builder doesn't suggest valid values from tables when setting the operators for the conditions. You can go to **Data** > **Tables** > **Output** and download the table data to see which values are available.
  Conditions based on dates let you switch between fixed dates and a floating date range.
 - If you have multiple rules for your segment, the rule you're editing has a vertical blue line next to it.
 - You can move rules and conditions to other places in the segment definition. Select the vertical ellipsis (&vellip;) next to a rule or condition and choose how and where to move it.

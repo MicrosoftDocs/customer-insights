@@ -19,7 +19,7 @@ ms.service: customer-insights
 
 ## View the results
 
-Results from a workflow are stored in the **Output table name** you defined. View it from the [**Data** > **Tables**](../tables.md) page or with [API access](../apis.md).
+Results from a workflow are stored in the **Output table name** you defined. View it from the [**Data** > **Tables** > **Output**](../tables.md) page or with [API access](../apis.md).
 
 ### API Access
 

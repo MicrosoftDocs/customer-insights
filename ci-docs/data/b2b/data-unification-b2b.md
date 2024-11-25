@@ -37,7 +37,7 @@ Unification is performed in the following order:
 
 1. [Review](../data-unification-review.md) and select **Create account profiles** to create the unified profile.
 
-   After unification, the **Data** > **Unify** page shows the number of unified customer (account) profiles. The unified account profile table is called *Customer* and displays in the **Profiles** section of the **Data** > **Tables** page.
+   After unification, the **Data** > **Unify** page shows the number of unified customer (account) profiles. The unified account profile table is called *Customer* and displays in the **Profiles** section of the **Data** > **Tables** > **Output** page.
 
 1. Optionally, [unify contacts](data-unification-contacts.md).
 

@@ -133,6 +133,6 @@ There are three primary sections of data within the results page:
   :::image type="content" source="media/subscription-churn-influentialfactors.PNG" alt-text="List showing influential factors and their importance in predicting the churn result.":::
 
 > [!NOTE]
-> In the output table for this model, *ChurnScore* is the predicted probability of churn and *IsChurn* is a binary label based on *ChurnScore* with 0.5 threshold. If this default threshold doesn't work for your scenario, [create a new segment](segments.md) with your preferred threshold. To view the churn score, go to **Data** > **Tables** and view the data tab for the output table you defined for this model.
+> In the output table for this model, *ChurnScore* is the predicted probability of churn and *IsChurn* is a binary label based on *ChurnScore* with 0.5 threshold. If this default threshold doesn't work for your scenario, [create a new segment](segments.md) with your preferred threshold. To view the churn score, go to **Data** > **Tables** > **Output** and view the data tab for the output table you defined for this model.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

@@ -174,6 +174,6 @@ There are five primary sections of data within the results page.
   :::image type="content" source="media/product-recommendation-highconfidence.PNG" alt-text="List showing high confidence suggestions for a select set of individual customers.":::
 
 > [!NOTE]
-> In the output table for this model, *Score* shows the quantitative measure of the recommendation. The model recommends products with a higher score over products with a lower score. To view the score, go to **Data** > **Tables** and view the data tab for the output table you defined for this model.
+> In the output table for this model, *Score* shows the quantitative measure of the recommendation. The model recommends products with a higher score over products with a lower score. To view the score, go to **Data** > **Tables** > **Output** and view the data tab for the output table you defined for this model.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

@@ -107,7 +107,7 @@ We currently support the following country/region options: Australia, Canada (En
 
 The results include **Affinity Level** or **Share of Voice** charts.
 
-The tables created from the enrichments are listed under the **Enrichment** group in **Data** > **Tables**. Enriched data for brands goes to the **BrandAffinityFromMicrosoft** and **BrandShareOfVoiceFromMicrosoft** tables. Data for interests is in the **InterestAffinityFromMicrosoft** and **InterestShareOfVoiceFromMicrosoft** tables.
+The tables created from the enrichments are listed under the **Enrichment** group in **Data** > **Tables** > **Output**. Enriched data for brands goes to the **BrandAffinityFromMicrosoft** and **BrandShareOfVoiceFromMicrosoft** tables. Data for interests is in the **InterestAffinityFromMicrosoft** and **InterestShareOfVoiceFromMicrosoft** tables.
 
 ## See enrichment data on the customer card
 

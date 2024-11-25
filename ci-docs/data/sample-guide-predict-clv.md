@@ -173,7 +173,7 @@ Let the model complete the training and scoring of the data. Review the [CLV mod
 
 ## Task 6 - Create a segment of high value customers
 
-Running the model creates a new table, which is listed on **Data** > **Tables**. You can create a new customer segment based on the table created by the model.
+Running the model creates a new table, which is listed on **Data** > **Tables** > **Output**. You can create a new customer segment based on the table created by the model.
 
 1. On the results page, select **Create segment**.
 

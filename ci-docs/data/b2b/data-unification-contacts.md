@@ -108,7 +108,7 @@ We recommend that you review the results, particularly the quality of your [matc
 
 ### Verify output tables from data unification
 
-Go to **Data** > **Tables** to verify the output tables.
+Go to **Data** > **Tables** > **Output** to verify the output tables.
 
 The unified contact profile table, called *UnifiedContact*, appears in the **Profiles** section. The first successful unification run creates the the table. All subsequent runs expand it.
 
