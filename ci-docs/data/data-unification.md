@@ -11,7 +11,7 @@ ms.custom: bap-template
 
 # Data unification overview
 
-After [setting up the data sources](data-sources.md), you can unify the data. Data unification lets you unify once-disparate data sources into a single master dataset that provides a unified view of your customers. Before unification, we recommend that you review your ingested source data and [remove any unwanted rows](tables-filters.md).
+After [setting up the data sources](data-sources.md), you can unify the data. Data unification lets you unify once-disparate data sources into a single master dataset that provides a unified view of your customers. Before unification, we recommend that you review your ingested source data and [remove any unwanted rows (preview)](tables-filters.md).
 
 Data can be unified on a single table or multiple tables. Tables were previously called entities.
 
