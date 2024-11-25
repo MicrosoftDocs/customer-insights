@@ -41,7 +41,7 @@ You can send push notifications. Push messages allow you to quickly convey offer
 
 **Other channel**
 
-You can also send messages through custom channels to capture customers' attention. For more information, see [create custom channels](real-time-marketing-create-custom-channels).
+You can also send messages through custom channels to capture customers' attention. For more information, see [create custom channels](real-time-marketing-create-custom-channels.md).
 
 ### AI-powered actions
 
@@ -83,9 +83,9 @@ Send a series of messages until certain conditions are met.
 
 There are two ways to create a branch in a journey:
 
-* Branch based on whether a certain action was taken or not. A common example is branching based on whether or not the customer opened the last email that was sent. This type of branching is achieved by the [Wait for trigger](#wait-for-trigger-branch) tile.  
+- Branch based on whether a certain action was taken or not. A common example is branching based on whether or not the customer opened the last email that was sent. This type of branching is achieved by the [Wait for trigger](#wait-for-trigger-branch) tile.  
 
-* Branch based on current information such as customer’s demographic (for example, gender) or other related information (for example, loyalty program tier). This type of branching is achieved by the [Attribute branch](#attribute-branch).  
+- Branch based on current information such as customer’s demographic (for example, gender) or other related information (for example, loyalty program tier). This type of branching is achieved by the [Attribute branch](#attribute-branch).  
 
 The key differences between these two branching methods are: 
 
@@ -93,7 +93,7 @@ Wait for trigger branch supports specifying a duration for how long to wait unti
 
 Attribute branch does not have a provision for waiting. Attribute branches use the data available at the time of execution and allows for multiple way branching.
 
-**Wait for trigger branch**
+#### Wait for trigger branch
 
 The "wait for trigger" branch lets you branch the customer journey based on customer actions such as opening an email or completing a purchase. The "wait for trigger" branch waits for the customer to perform the trigger within the time limit specified. If the customer performs the trigger, they immediately proceed down the yes branch. If the customer doesn't perform the trigger within the time limit specified, they proceed down the no branch after the time limit has passed.
 
@@ -108,7 +108,7 @@ The wait for segment membership feature allows for more complex set of actions t
 > 
 > Microsoft doesn't provide support for this preview feature. Microsoft Dynamics 365 Technical Support won’t be able to help you with issues or questions. Preview features aren’t meant for production use, especially to process personal data or other data that are subject to legal or regulatory compliance requirements.
 
-**Attribute branch**
+#### Attribute branch**
 
 An attribute branch lets you branch the journey based on various attributes including:
 
