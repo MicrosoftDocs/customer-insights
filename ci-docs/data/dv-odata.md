@@ -1,7 +1,7 @@
 ---
 title: "Dataverse APIs for Customer Insights - Data"
 description: "Overview and examples of Dataverse Open Data Protocol (OData) APIs to query for data."
-ms.date: 06/14/2024
+ms.date: 11/26/2024
 ms.topic: conceptual
 author: srivas15
 ms.author: shsri
@@ -78,11 +78,11 @@ Sample queries for the *UnifiedActivity* table.
 
 |Query type |Example  | Note  |
 |---------|---------|---------|
-|Get all activities of a customer| `{serviceRoot}/msdynci_unifiedactivities?$filter=msdynci_customerid eq '{CID}'`  |      |
-|Get all activities of a customer within a time period| `{serviceRoot}/msdynci_unifiedactivities?$filter=msdynci_customerid eq '{CID}' and msdynci_activitytime gt 2017-01-01T00:00:00Z and msdynci_activitytime lt 2017-01-01T00:00:00Z`  |      |
-|Get all activities of an activityType of a customer | `{serviceRoot}/msdynci_unifiedactivities?$filter=msdynci_customerid eq '{CID}' and msdynci_activitytype eq '{ActivityType}'`  |      |
-|Get all activities of activityDisplayName of a customer | `{serviceRoot}/msdynci_unifiedactivities?$filter=msdynci_customerid eq '{CID}' and msdynci_activitytypedisplay eq '{ActivityDisplayName}'`  |      |
-|Get all activities of a customer and sort them| `{serviceRoot}/msdynci_unifiedactivities?$filter=msdynci_customerid eq '{CID}'&$orderby=msdynci_activitytime asc`  |      |
+|Get all activities of a customer| `{serviceRoot}/msdynci_p13nprofile?$filter=msdynci_customerid eq '{CID}'`  |      |
+|Get all activities of a customer within a time period| `{serviceRoot}/msdynci_p13nprofile?$filter=msdynci_customerid eq '{CID}' and msdynci_activitytime gt 2017-01-01T00:00:00Z and msdynci_activitytime lt 2017-01-01T00:00:00Z`  |      |
+|Get all activities of an activityType of a customer | `{serviceRoot}/msdynci_p13nprofile?$filter=msdynci_customerid eq '{CID}' and msdynci_activitytype eq '{ActivityType}'`  |      |
+|Get all activities of activityDisplayName of a customer | `{serviceRoot}/msdynci_p13nprofile?$filter=msdynci_customerid eq '{CID}' and msdynci_activitytypedisplay eq '{ActivityDisplayName}'`  |      |
+|Get all activities of a customer and sort them| `{serviceRoot}/msdynci_p13nprofile?$filter=msdynci_customerid eq '{CID}'&$orderby=msdynci_activitytime asc`  |      |
 
 ### Other examples
 
