@@ -1,7 +1,7 @@
 ---
 title: Access and interpret analytics
 description: How to access and interpret Customer Insights - Journeys analytics in Dynamics 365 Customer Insights - Journeys.
-ms.date: 10/14/2024
+ms.date: 11/26/2024
 ms.topic: article
 author: colinbirkett
 ms.author: colinbirkett
@@ -57,15 +57,15 @@ Operational analytics provides these capabilities:
 
 Operational analytics has two parts:
 
-- **The Sankey view**: In the Sankey view, numbers listed on journey paths indicate how many customers went through that path. The widths of the connecting lines are in relative proportions and helps you understand the user flow through the journey, highlighting which branches are working well. An example is shown below:
+- **The Sankey view**: In the Sankey view, numbers listed on journey paths indicate how many customers went through that path. The widths of the connecting lines are in relative proportions and help you understand the user flow through the journey, highlighting which branches are working well. An example is shown below:
 
     :::image type="content" source="media/sankey_view.png" alt-text="Snapshot of the Sankey view within Customer Insights - Journeys." lightbox="media/sankey_view.png":::
  
 - **Step analytics**: When you select any step in the journey, the right pane shows much information. There are three areas or groups:
 
     > [!NOTE]
-    > Entry and exit details are in preview. If you don't see these details, go to **Settings** > **Feature switches** > **Journey** and enable the "Tile entry and exit analytics (preview)" feature switch.
-    > This feature switch is being rolled out and will be visible in all geos by December 16, 2024.
+    > Entry and exit details are in preview. If you don't see these details, go to **Settings** > **Feature switches** > **Journey** and enable the "Tile entry and exit analytics (preview)" feature switch. Entry and exit details are available for journeys published (or updated) after the preview is enabled.
+    > This feature is currently available for one-time journeys with static audiences. Support for repeating journeys is planned by December 16, 2024. Support for ongoing journeys will be available in the February 2025 release. 
 
     - **Inflow and outflow information**: For every step, the top shows the number of customers who entered the step (Inflow), the number currently being processed (Processing), the number who have moved to the next step (Processed), and the number who have exited the journey (Exit). The percentage is calculated from the inflow volume. When the journey is running and counts are small, we prioritize showing these numbers as soon as possible (within minutes) and this can lead to inconsistencies (for example, a processed data point may be counted and shown before its corresponding inflow data point is shown). This self-corrects once journey execution is complete.
 
