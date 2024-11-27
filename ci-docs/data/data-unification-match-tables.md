@@ -1,7 +1,7 @@
 ---
 title: "Matching rules for data unification"
 description: "Match tables to create unified customer profiles."
-ms.date: 07/12/2024
+ms.date: 11/27/2024
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
