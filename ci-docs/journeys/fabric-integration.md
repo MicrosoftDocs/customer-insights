@@ -15,6 +15,7 @@ search.audienceType:
 
 > [!IMPORTANT]
 > As of July 31, 2024, Customer Insights - Journeys integration with Microsoft Fabric is generally available. To avoid service disruptions, preview users of the integration with Microsoft Fabric must follow the [Transition to general availability guidance](fabric-integration.md#transition-to-general-availability).
+> Access to the Preview version/folder will be removed on December 7.
 
 In Customer Insights - Journeys, you can effortlessly create custom Power BI reports tailored to your business needs by using Microsoft Fabric capabilities. Harness seamless access to data to gain a complete understanding of your campaigns, lead management, market performance, and customer engagement, enabling you to identify new opportunities.
 
@@ -100,7 +101,8 @@ The following sections explain how to set up Power BI and access your Customer I
 ## Transition to general availability
 
 > [!NOTE]
-> Preview customers can start the transition to the general availability version of the feature.
+> Preview customers should transition to the general availability version of the feature.
+> Access to the Preview version/folder will be removed on December 7.
 
 To transition from the public preview to the general availability (GA) version of the custom reporting with Fabric feature, follow these steps in order:
 
