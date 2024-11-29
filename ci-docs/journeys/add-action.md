@@ -1,7 +1,7 @@
 ---
 title: Add an action in a journey
 description: An overview of possible actions you can do in a journey in Dynamics 365 Customer Insights - Journeys.
-ms.date: 10/25/2024
+ms.date: 11/28/2024
 ms.topic: article
 author: colinbirkett
 ms.author: colinbirkett
@@ -13,7 +13,7 @@ search.audienceType:
 
 # Add an action in journey
 
-This page provides an overview of all the possible actions one can do in a journey.
+This page provides an overview of all the possible actions one can do in a journey. To get to the Add an action dashboard, go to Customer Insights - Journeys > **Journeys** and select your desired journey or create a new journey by selecting **+New journey**. To add an action once in your journey, select **+Add an action** under the Journey start node.
 
 ## Types of actions
 

@@ -1,7 +1,7 @@
 ---
-title: Journey flow
+title: Understanding the flow of a journey
 description: Learn about journey flow and tiles in Dynamics 365 Customer Insights - Journeys.
-ms.date: 10/25/2024
+ms.date: 11/28/2024
 ms.topic: article
 author: colinbirkett
 ms.author: colinbirkett
@@ -11,9 +11,9 @@ search.audienceType:
   - enduser
 ---
 
-# Journey flow
+# Understand the flow of a journey
 
-This article describes the various journey capabilities available in Customer Insights - Journeys. For complete examples of creating customer journeys, see [Create a trigger-based journey](real-time-marketing-trigger-based-journey.md) and [Create a segment-based journey](real-time-marketing-segment-based-journey.md).
+This article provides an overview of the flow of a journey, from start to finish, in Customer Insights - Journeys.
 
 ## Journey start
 
