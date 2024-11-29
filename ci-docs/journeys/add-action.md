@@ -13,7 +13,9 @@ search.audienceType:
 
 # Add an action in journey
 
-This page provides an overview of all the possible actions one can do in a journey. To get to the Add an action dashboard, go to Customer Insights - Journeys > **Journeys** and select your desired journey or create a new journey by selecting **+New journey**. To add an action once in your journey, select **+Add an action** under the Journey start node.
+This page provides an overview of all the possible actions one can do in a journey. 
+
+To get to the Add an action dashboard, go to Customer Insights - Journeys > **Journeys** and select your desired journey or create a new journey by selecting **+New journey**. To add an action once in your journey, select **+Add an action** under the Journey start node.
 
 ## Types of actions
 

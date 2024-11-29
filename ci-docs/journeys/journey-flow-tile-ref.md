@@ -11,9 +11,9 @@ search.audienceType:
   - enduser
 ---
 
-# Understand the flow of a journey
+# Understanding the flow of a journey
 
-This article provides an overview of the flow of a journey, from start to finish, in Customer Insights - Journeys.
+This page provides an overview of the flow of a journey, from start to finish, in Customer Insights - Journeys.
 
 ## Journey start
 

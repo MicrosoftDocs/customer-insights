@@ -252,7 +252,7 @@
       href: real-time-marketing-use-copilot-create-journey.md
     - name: Journey flow and tile reference
       items:
-      -  name: Journey flow
+      -  name: Understanding journey flow
          href: journey-flow-tile-ref.md
       -  name: Start a journey
          href: journey-start.md
