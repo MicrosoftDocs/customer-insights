@@ -13,7 +13,7 @@ search.audienceType:
 
 # Start a journey
 
-The journey start configuration lets you define how customers can start the journey. 
+The journey start configuration lets you define how customers can start a journey. 
 
 To start a journey, go to Customer Insights - Journeys > **Journeys** > **Create a journey** and select either a **Trigger-based** or **Segment-based** journey.
 
