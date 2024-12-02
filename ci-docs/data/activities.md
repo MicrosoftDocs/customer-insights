@@ -1,7 +1,7 @@
 ---
 title: "Set up customer activities"
 description: "Define customer activities and view them in a timeline on customer profiles." 
-ms.date: 09/01/2023
+ms.date: 12/02/2024
 ms.reviewer: v-wendysmith
 ms.topic: how-to
 author: srivas15
