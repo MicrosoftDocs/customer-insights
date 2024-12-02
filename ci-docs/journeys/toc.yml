@@ -230,6 +230,8 @@
         href: real-time-marketing-redesigned-segment-builder.md
       - name: Copilot - Target the right customers using query assist
         href: real-time-marketing-natural-language-segments.md
+      - name: Tabs and settings for segments
+        href: segment-tabs-settings.md
       - name: Sync data tables into the segment builder
         href: real-time-marketing-sync-data-tables.md
       - name: Create segments using unified profiles and customer measures
