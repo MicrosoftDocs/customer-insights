@@ -35,6 +35,8 @@ To set up quiet times overnight, you need to create a separate evening quiet tim
 - One time for every day from 6:00 PM to midnight
 - One time from midnight to 8:00 AM
 
+Do not setup quiet times that result in more than three consecutive days. This may cause the message queue to excessively back-up and messages won't get delivered. 
+
 > [!div class="mx-imgBorder"]
 > ![Quiet times configured for overnight screenshot.](media/real-time-marketing-quiet-times-overnight.png "Quiet times configured for overnight screenshot")
 
