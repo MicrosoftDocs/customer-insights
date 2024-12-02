@@ -29,7 +29,7 @@ The **General** tab provides a few basic settings and general information about 
 
 - **Name**: The name of the segment as it appears in the segment list and when selecting segments for a customer journey.
 - **Created on**: The date the segment was created.
-- **Segment Type**: Shows the [segment type](#segment-types) (dynamic or static). This is permanently established when you first [create the segment](#create-segment).
+- **Segment Type**: Shows the segment type (dynamic or static). This is permanently established when you first create the segment.
 - **External source**: For segments that are synced from an external source, such as Customer Insights, information about the external source is shown here.
 - **External segment URL**: For segments that are synced from an external source, such as Customer Insights, the URL of the external source is shown here.
 - **Time Zone**: Shows the time zone of the segment. This is the timezone that the segment uses to calculate dates relative to the current time. For example, if you choose the partial date operator "All contacts who registered for an event in the last three days," the three-day duration is calculated using the segment time zone.
