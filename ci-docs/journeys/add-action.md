@@ -29,19 +29,19 @@ The main actions are grouped under [messages](#messages), [AI-powered actions](#
 
 Customer Insights - Journeys lets you reach customers through common messaging capabilities such as email, text message, push notifications, and more. See common messaging actions below.
 
-**Email**
+##### Email
 
 You can send personalized emails to capture your customers' attention. For more information, see [send an email](real-time-marketing-email.md).
 
-**Text message**
+##### Text message
 
 You can send a text message (SMS) from Customer Insights - Journeys by signing up with a provider such as Azure Communication Services, Infobip, LINK Mobility, Telesign, Twilio, or Vibes and configuring Customer Insights - Journeys to work with the provider. For more information, see [send a text message](real-time-marketing-outbound-text-messaging.md).
 
-**Push notifications**
+##### Push notifications
 
 You can send push notifications. Push messages allow you to quickly convey offers, messages, or other information directly to users of your app. For more information, see [send a push notification](push-messages.md).
 
-**Other channel**
+##### Other channel
 
 You can also send messages through custom channels to capture customers' attention. For more information, see [create custom channels](real-time-marketing-create-custom-channels.md).
 
@@ -49,11 +49,11 @@ You can also send messages through custom channels to capture customers' attenti
 
 You can cultivate customer-specific messages in Customer Insights - Journeys through AI-powered actions such as A/B testing and channel optimization.
 
-**A/B test**
+##### A/B test
 
 A/B tests allow you to measure which channel or content messaging strategy leads to higher success. For more information about using A/B tests, see [A/B tests in Customer Insights - Journeys](real-time-marketing-ab-tests-in-marketing-journeys.md).
 
-**Channel optimization**
+##### Channel optimization
 
 Channel optimization uses AI to find the best channel to reach each individual customer and improve your engagement. To learn more about channel optimization, see [Use AI-driven run-time channel optimization](real-time-marketing-channel-optimization.md).
 
@@ -61,7 +61,7 @@ Channel optimization uses AI to find the best channel to reach each individual c
 
 You can set conditions throughout customers' journeys such as scheduling wait times at specific times, waiting for a specific trigger from a customer, setting up attribute branches, or splitting an audience by number or percentage. See available conditions below. 
 
-**Wait time**
+##### Wait time
 
 The wait step holds the customer in the journey for the specified wait period.
 
@@ -73,11 +73,11 @@ You can configure the wait step using the following parameters:
 - **A set amount of time**: Customers wait for the specified amount of time (for example, one hour or one day). The time period starts as soon as customers enter the wait step.
 - **Until a specific date and time**: Customers wait until the specified date and time. If the date and time are already in the past, customers will immediately proceed to the next step.
 
-**Wait for a trigger**
+##### Wait for a trigger
 
 For trigger-based journeys, customers wait for the date and time specified by a trigger attribute. This configuration is useful for scenarios like appointment reminders, where you can choose to wait one day before the appointment to send a reminder. The date and time information must be included in the trigger that started the journey for the customer.
 
-**Series**
+##### Series
 
 Send a series of messages until certain conditions are met.
 
@@ -101,7 +101,7 @@ The "wait for trigger" branch lets you branch the customer journey based on cust
 
 For example, you can configure the "wait for trigger" branch to wait for the *Email opened* event on a previously sent email within a specific time period (such as one day). The customer opens the email within that period. The customer immediately proceeds down the yes branch. If the customer doesn't open the email within that period, they proceed down the no branch after the period is over.
 
-**Wait for segment membership**
+##### Wait for segment membership
 
 The wait for segment membership feature allows for more complex set of actions to take place beyond a single trigger. For example, you may want to create a branch based on how much customer spent through multiple transactions in a specific period. In this scenario, rather than wait for a specific trigger, you can simply define a dynamic segment such as 'big purchaser' and wait for the customer to become a member of that segment.
 
@@ -122,7 +122,7 @@ The attribute branch checks for attribute values the moment a customer enters th
 
 Attribute branch supports multi-way branching. For example, if you have 'customer spend' as an attribute, you can create different branches for different ranges of spending. For more details, see [Personalize journey variations using multiple journey branches](real-time-marketing-multiple-branches.md).
 
-**Audience split**
+##### Audience split
 
 The audience split tile allows you to divide your audience to give a unique set of experiences to random portions of the audience. You can split by percentage or split by number. Learn more: [Preview: Split your audience into groups](real-time-marketing-split-audience.md).
 
@@ -130,11 +130,11 @@ The audience split tile allows you to divide your audience to give a unique set 
 
 You can create activities for customers at specific instances in a journey such as creating and assigning a phone call or task activity. See available activities below. 
 
-**Phone call**
+##### Phone call
 
 You can create and assign a phone call for customers to sales.
 
-**Task**
+##### Task
 
 You can create and assign a task activity for customers.
 
@@ -142,7 +142,7 @@ You can create and assign a task activity for customers.
 
 Connectors provide additional features beyond actions above. For example, you can activate a custom trigger where additional journeys or [Power Automate flows](/power-automate) connected to a custom event are triggered when a customer does a specific action.
 
-**Activate a custom trigger**
+##### Activate a custom trigger
 
 Triggering a custom event allows you to use activate a custom event at any point in the customer journey. Additional journeys or [Power Automate flows](/power-automate) connected to the custom event are triggered immediately when a customer reaches the tile. This includes custom triggers used in exit criteria, goals, and "wait for trigger" branches for journeys.
 
