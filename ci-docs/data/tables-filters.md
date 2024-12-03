@@ -7,20 +7,19 @@ ms.topic: conceptual
 author: Scott-Stabbert
 ms.author: sstabbert
 ---
-
 # Filter out unwanted data from your ingested data (preview)
 
 [!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
-Remove unwanted rows from your source data before processing in Customer Insights – Data to improve the performance and quality of your unified customer profiles and insights.
+Remove unwanted rows from your source data before processing in Customer Insights - Data to improve the performance and quality of your unified customer profiles and insights.
 
 [!INCLUDE [public-preview-note](includes/public-preview-note.md)]
 
 Key benefits include:
 
 - **Improved processing time**: Filtering out unnecessary data like old or obsolete rows can reduce the time required to process the data. Filtering out a significant percentage of unwanted rows can substantially improve performance.
-- **Simplify data configuration**: Removing unwanted data at the source eliminates the need to create rules in multiple locations to avoid incorporating the unwanted data. Unification, segments, measures, activities, and predictive insights will use the filtered source data.
-- **Improve data quality**: Removing old or obsolete data at the source prevents it from being accidentally included in your results, such as when a new team member creates a segment that includes obsolete data.
+- **Simplified data configuration**: Removing unwanted data at the source eliminates the need to create rules in multiple locations to avoid incorporating the unwanted data. Unification, segments, measures, activities, and predictive insights will use the filtered source data.
+- **Improved data quality**: Removing old or obsolete data at the source prevents it from being accidentally included in your results, such as when a new team member creates a segment that includes obsolete data.
 
 ## Filter out unwanted rows
 
