@@ -17,16 +17,16 @@ Creating a new form can be quite challenging for non-technical users due to the 
 
 The new global form configuration feature allows you to preset all your new forms, eliminating the need to think about all the details each time you create a form. You can configure defaults for all your newly created marketing or event registration forms on the *Form Settings* page, located in the Customer Engagement section of *Settings*.
 
-[!div class="mx-imgBorder"]
-![Global form settings.](media/real-time-marketing-form-global-settings.png)
+> [!div class="mx-imgBorder"]
+> ![Global form settings.](media/real-time-marketing-form-global-settings.png)
 
 There are two out-of-the-box configurations for default form values following the form type:
 
 1. Event registration form defaults
 1. Marketing form defaults
 
-    > [!IMPORTANT]
-    > Do not delete these out-of-the-box configurations! This may result in configuration malfunction. If you delete the out-of-the-box configuration, create a new configuration of the same type and set it as default one.
+> [!IMPORTANT]
+> Do not delete these out-of-the-box configurations! This may result in configuration malfunction. If you delete the out-of-the-box configuration, create a new configuration of the same type and set it as default one.
 
 You can select the configuration to edit default values for its respective form type.
 
@@ -37,8 +37,8 @@ There are 4 tabs representing various areas of form configuration:
 1. **[Lead-Contact Mapping](real-time-marketing-form-global-settings.md#lead-contact-mapping)** - available only for marketing form type. Review the platform mapping between attributes of lead and contact entities.
 1. **reCAPTCHA** - set up 3rd party form captcha.
 
-[!div class="mx-imgBorder"]
-![General section of global form settings.](media/real-time-marketing-form-global-settings-general.png)
+> [!div class="mx-imgBorder"]
+> ![General section of global form settings.](media/real-time-marketing-form-global-settings-general.png)
 
 ## General
 
@@ -54,8 +54,8 @@ The *Audience* section allows you to set default target audience for your newly 
 
 You can either modify the details of the out-of-the-box *Audience settings* or you can create your new one.
 
-[!div class="mx-imgBorder"]
-![Audience section of global form settings.](media/real-time-marketing-form-global-settings-audience.png)
+> [!div class="mx-imgBorder"]
+> ![Audience section of global form settings.](media/real-time-marketing-form-global-settings-audience.png)
 
 **Marketing form** type comes with 3 out-of-the-box Audience settings:
 
@@ -71,8 +71,8 @@ You can either modify the details of the out-of-the-box *Audience settings* or y
 
 You can modify audience settings to specify when a new record is created and how to update existing record to meet your business process requirements. The following example is valid for *Contact* audience.
 
-[!div class="mx-imgBorder"]
-![Audience details in global form settings.](media/real-time-marketing-form-global-settings-audience-details.png)
+> [!div class="mx-imgBorder"]
+> ![Audience details in global form settings.](media/real-time-marketing-form-global-settings-audience-details.png)
 
 - **Name** - name your audience settings. This name is visible in the form editor. Use short, but descriptive names.
 - **Target entity** - select which entity will be targeted by the form submission processing. Marketing form supports both lead and contact entities, but event registration form is limited to contact only.
@@ -104,8 +104,8 @@ The combined Lead & Contact audience relies on [entity columns mapping](https://
 > [!IMPORTANT]
 > If you use solutions as the mechanism for implementing application lifecycle management (ALM) you should define the mappings as a [solution in Power Apps](https://learn.microsoft.com/power-apps/maker/data-platform/solutions-overview).
 
-[!div class="mx-imgBorder"]
-![Mapping in global form settings.](media/real-time-marketing-form-global-settings-mapping.png)
+> [!div class="mx-imgBorder"]
+> ![Mapping in global form settings.](media/real-time-marketing-form-global-settings-mapping.png)
 
 In case you don't use solutions as the mechanism for implementing application lifecycle management (ALM), you can use the *Generate mappings* button to automatically link lead attributes to contact or you can select the *Edit in Power Apps* button to manually define the mappings.
 
