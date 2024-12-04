@@ -1,7 +1,7 @@
 ---
 title: Set quiet times to prevent messages from sending during unwanted hours
 description: Learn how to set up quiet times to avoid sending messages during unwanted times.
-ms.date: 10/31/2024
+ms.date: 12/03/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -35,7 +35,7 @@ To set up quiet times overnight, you need to create a separate evening quiet tim
 - One time for every day from 6:00 PM to midnight
 - One time from midnight to 8:00 AM
 
-Do not setup quiet times that result in more than three consecutive days. This may cause the message queue to excessively back-up and messages won't get delivered. 
+Don't set up quiet times that result in more than three consecutive days. This may cause the message queue to excessively back-up and messages won't get delivered. 
 
 > [!div class="mx-imgBorder"]
 > ![Quiet times configured for overnight screenshot.](media/real-time-marketing-quiet-times-overnight.png "Quiet times configured for overnight screenshot")
