@@ -1,7 +1,7 @@
 ---
 title: Start a journey
 description: An overview of the journey start configuration in Dynamics 365 Customer Insights - Journeys.
-ms.date: 11/28/2024
+ms.date: 12/04/2024
 ms.topic: article
 author: colinbirkett
 ms.author: colinbirkett
