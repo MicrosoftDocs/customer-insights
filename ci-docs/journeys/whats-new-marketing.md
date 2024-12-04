@@ -1,7 +1,7 @@
 ---
 title: New and upcoming features
 description: Discover the latest features, improvements, and bug fixes in Dynamics 365 Customer Insights - Journeys. Stay updated with our monthly release notes.
-ms.date: 11/22/2024
+ms.date: 12/03/2024
 ms.topic: article
 author: colinbirkett
 ms.author: colinbirkett
