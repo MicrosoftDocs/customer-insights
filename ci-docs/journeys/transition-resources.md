@@ -1,7 +1,7 @@
 ---
 title: Real-time journeys transition resources
 description: Resources to assist transitioning to real-time journeys in Dynamics 365 Customer Insights - Journeys.
-ms.date: 11/16/2023
+ms.date: 12/03/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus

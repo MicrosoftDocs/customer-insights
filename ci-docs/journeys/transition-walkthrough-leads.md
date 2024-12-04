@@ -1,7 +1,7 @@
 ---
 title: Lead management and scoring
 description: Learn how to transition lead management and scoring capabilities from outbound marketing to real-time journeys in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/27/2024
+ms.date: 12/03/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -11,13 +11,10 @@ search.audienceType:
   - enduser
 ---
 
-# Lead management, scoring, and LinkedIn Lead Gen
+# Lead management and scoring
 
 > [!IMPORTANT]
 > **The [outbound marketing](user-guide.md) module will be removed from Customer Insights - Journeys on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](transition-overview.md)
-
-
-## Lead management and scoring
 
 Creating scoring models to identify the best leads is an important aspect of lead management. As of the September 2023 Customer Insights - Journeys release, lead scoring is available in real-time journeys. You can enable the real-time journeys lead scoring feature in the feature switches area in the settings. Improvements compared to the outbound marketing scoring models are:
 -	Simpler and more intuitive design canvas.
