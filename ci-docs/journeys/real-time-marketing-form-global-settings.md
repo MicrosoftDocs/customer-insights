@@ -33,8 +33,8 @@ You can select the configuration to edit default values for its respective form 
 There are 4 tabs representing various areas of form configuration:
 
 1. **[General](real-time-marketing-form-global-settings.md#general)** - set details of configuration and configure common settings of the form.
-1. **Audience** - select what target audience (which entity record) will be created or updated by the form submission.
-1. **Lead-contact Mapping** - available only for marketing form type. Review the platform mapping between attributes of lead and contact entities.
+1. **[Audience](real-time-marketing-form-global-settings.md#audience)** - select what target audience (which entity record) will be created or updated by the form submission.
+1. **[Lead-Contact Mapping](real-time-marketing-form-global-settings.md#lead-contact-mapping)** - available only for marketing form type. Review the platform mapping between attributes of lead and contact entities.
 1. **reCAPTCHA** - set up 3rd party form captcha.
 
 [!div class="mx-imgBorder"]
@@ -59,19 +59,54 @@ You can either modify the details of the out-of-the-box *Audience settings* or y
 
 **Marketing form** type comes with 3 out-of-the-box Audience settings:
 
-- Contact - Update existing contact using the selected matching rule (email address by default). Create a new contact if no existing was matched.
-- Lead - Always create new lead, even if the same lead already exists (no matching rules are applied).
-- Lead & Contact - Update existing contact using the selected matching rule (email address by default). Create a new contact if no existing was matched. Always create new lead, even if the same lead already exists (no matching rules are applied).
+- **Contact** - Update existing contact using the selected matching rule (email address by default). Create a new contact if no existing was matched.
+- **Lead** - Always create new lead, even if the same lead already exists (no matching rules are applied).
+- **Lead & Contact** - Update existing contact using the selected matching rule (email address by default). Create a new contact if no existing was matched. Always create new lead, even if the same lead already exists (no matching rules are applied).
 
 **Event registration form** type comes with a single out-of-the-box Audience setting:
 
-- Contact - Update existing contact using the selected matching rule (email address by default). Create a new contact if no existing was matched.
+- **Contact** - Update existing contact using the selected matching rule (email address by default). Create a new contact if no existing was matched.
 
 ### Audience settings details
 
-You can modify all audience settings to specify when new records are created and how to update existing ones to meet your business process requirements.
+You can modify audience settings to specify when a new record is created and how to update existing record to meet your business process requirements. The following example is valid for *Contact* audience.
 
 [!div class="mx-imgBorder"]
 ![Audience details in global form settings.](media/real-time-marketing-form-global-settings-audience-details.png)
+
+- **Name** - name your audience settings. This name is visible in the form editor. Use short, but descriptive names.
+- **Target entity** - select which entity will be targeted by the form submission processing. Marketing form supports both lead and contact entities, but event registration form is limited to contact only.
+
+#### Matching rules
+
+Matching rules helps to configure how an existing record can be updated or when to create a new one. Matching rules follow the selected *Target entity*. You can see *Contact matching rules* if Contact is selected or *Lead matching rules* if Lead is selected.
+
+> [!NOTE]
+> We use *Contact* audience in this example. You can se the same details for *Lead* audience. The *Lead & Contact* audience allows you to set separate details for both contact and lead.
+
+- **Choose how to handle duplicate contacts** - there are two options:
+  - Always create a new contact - new contact is always created, no matching rules are applied.
+  - Use a rule to match existing record - use *matching rule* to find an existing record and avoid duplicates. Selecting this value unlocks the following extra options.
+- **Select contact matching rule** - matching rule defines how to find and prioritize existing records. You can use the out-of-the-box matching rule *Update contact using email* or you can create you own custom matching rules. Custom matching rules can be created in Settings -> Matching rules.
+- **Update matched contact with submitted data**
+  - Yes - the best matching record is updated with form submission data.
+  - No - the matched record is not updated with form submission data. The forms submission data is only linked to the matched record.
+- **Create a new contact if there was no match to an existing one?**
+  - Yes - if the matching rule doesn't find any suitable record to update, a new record is created.
+  - No - no new record is created. The form submission data can be accessed only through the Form submission.
+
+## Lead-Contact Mapping
+
+The Lead-Contact Mapping section is available only for *marketing form* type. To use a combined Lead & Contact audience, it's important to define how the attributes are mapped to each other. For example, you need to link the Contact First Name attribute to the Lead First Name attribute, so the form field First Name can update attributes for both entities.
+
+The combined Lead & Contact audience relies on [entity columns mapping](https://learn.microsoft.com/power-apps/maker/data-platform/map-entity-fields), which can be defined In Power Apps. The mapping uses the *Parent contact* relationship.
+
+> [!IMPORTANT]
+> If you use solutions as the mechanism for implementing application lifecycle management (ALM) you should define the mappings as a [solution in Power Apps](https://learn.microsoft.com/power-apps/maker/data-platform/solutions-overview).
+
+[!div class="mx-imgBorder"]
+![Mapping in global form settings.](media/real-time-marketing-form-global-settings-mapping.png)
+
+In case you don't use solutions as the mechanism for implementing application lifecycle management (ALM), you can use the *Generate mappings* button to automatically link lead attributes to contact or you can select the *Edit in Power Apps* button to manually define the mappings.
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
