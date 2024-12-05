@@ -49,7 +49,7 @@ Consider the following when transitioning forms:
 
 ### Form types comparison
 
-The following table summarizes the types of forms currently available in Customer Insights - Journeys. More form types will be available soon.
+The following table summarizes the types of forms available in Customer Insights - Journeys.
 
 | Form type in outbound marketing | Form type in Customer Insights - Journeys |  
 |---|---|
@@ -57,7 +57,7 @@ The following table summarizes the types of forms currently available in Custome
 | Subscription center form | [Preference center](real-time-marketing-preference-centers.md) |
 | Event registration form | Create event registration forms through [real-time journeys event management](set-up-event.md) |
 | External form submission capture | Capture submissions to existing forms using [real-time journeys form capture](real-time-marketing-form-capture.md) |
-| Refer to friend | This form type is not available in real-time journeys |
+| Refer to friend | This form type isn't available in real-time journeys |
 
 ## Relevant upcoming features
 
@@ -68,7 +68,7 @@ The following features may be of interest as you transition from outbound market
 ## Blogs and workarounds
 
 - Workaround for custom unmapped fields: [Enhanced data collection and journey personalization with unmapped form fields - FastTrack blog](https://community.dynamics.com/blogs/post/?postid=3a361b7e-80b0-ee11-92bd-002248527d3d)
-- Cascaded fields (where options provided in a field depend on a value in an earlier field) are not yet supported. See this blog for a workaround: [Implementing cascading dropdown fields in RTM forms - FastTrack blog](https://community.dynamics.com/blogs/post/?postid=ff86d88f-d892-ef11-ac21-6045bdd7e1ae)
+- Cascaded fields (where options provided in a field depend on a value in an earlier field) aren't yet supported. See this blog for a workaround: [Implementing cascading dropdown fields in RTM forms - FastTrack blog](https://community.dynamics.com/blogs/post/?postid=ff86d88f-d892-ef11-ac21-6045bdd7e1ae)
 - Workaround to implement customized error messages for field validation: [Customizable error messages for form field validation - FastTrack blog](https://community.dynamics.com/blogs/post/?postid=cdcd1dbf-2b7f-ef11-ac20-7c1e521a63a7)
 
 ### Workaround for custom form templates
