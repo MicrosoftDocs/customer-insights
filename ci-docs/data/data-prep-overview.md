@@ -1,7 +1,7 @@
 ---
 title: Data prep report overview (preview)
 description: Discover the overall quality of ingested and unified data and if it can generate predictions.
-ms.date: 11/12/2024
+ms.date: 12/05/2024
 ms.reviewer: v-wendysmith
 ms.topic: overview
 author: radsay01
@@ -35,6 +35,9 @@ The data prep report automatically runs if the following prerequisites are met:
 ## Data prep report
 
 After unification is completed, the system automatically generates a data prep report based on your ingested and unified data, and analyzes contextual information on your data. This information is updated anytime you run unification.
+
+> [!NOTE]
+> Because the data quality checks are based on the ingested and unified data, any issues that surface would involve updating the source data.
 
 Access the **Data prep report** from the **Home** page, the **Data sources** page, or the **Predictions** page.
 
