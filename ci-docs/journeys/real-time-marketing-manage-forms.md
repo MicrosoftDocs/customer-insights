@@ -107,7 +107,7 @@ To use a combined Lead & Contact audience, it's important to [define how the att
 Once you select *Lead & Contact* audience, you will see 3 sections of fields in the right pane:
 
 > [!div class="mx-imgBorder"]
-> ![Form settings.](media/real-time-marketing-form-lead-contact.png)
+> ![Lead & Contact audience.](media/real-time-marketing-form-lead-contact.png)
 
 The fields in *Contact* section will update only the corresponding Contact attributes. The fields in *Lead* section will update only the corresponding Lead attributes. If you want the field to update both lead and contact, use a field from the *Lead & Contact* section. If the *Lead & Contact* section is empty you have to [define attribute mapping](real-time-marketing-form-global-settings.md#lead-contact-mapping).
 

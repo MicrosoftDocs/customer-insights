@@ -15,7 +15,7 @@ search.audienceType:
 
 > [!IMPORTANT]
 > Dynamics 365 Customer Insights - Journeys may transfer customer data outside of the selected Azure geographic location when using the following features that use Azure CDN (content delivery network) to operate globally:
-> -	[Asset library](upload-images-files.md)
+> - [Asset library](upload-images-files.md)
 > -	[Forms](real-time-marketing-form-overview.md)
 >
 > You can still execute marketing campaigns without using such features by hosting your assets and forms in a content management system of your choice.
