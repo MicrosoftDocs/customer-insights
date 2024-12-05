@@ -63,19 +63,19 @@ You can set conditions throughout customers' journeys such as scheduling wait ti
 
 ##### Wait time
 
-The wait step holds the customer in the journey for the specified wait period.
+The wait tile holds the customer in the journey for the specified wait period.
 
 > [!IMPORTANT]
 > The maximum time a wait tile can wait for is 90 days or 12 weeks. The maximum time limitation applies whether selecting an amount of time or setting a fixed date.
 
-You can configure the wait step using the following parameters:
+You can configure the wait tile using the following parameters:
 
-- **A set amount of time**: Customers wait for the specified amount of time (for example, one hour or one day). The time period starts as soon as customers enter the wait step.
+- **A set amount of time**: Customers wait for the specified amount of time (for example, one hour or one day). The time period starts as soon as customers enter the wait tile.
 - **Until a specific date and time**: Customers wait until the specified date and time. If the date and time are already in the past, customers will immediately proceed to the next step.
 
 ##### Wait for a trigger
 
-For trigger-based journeys, customers wait for the date and time specified by a trigger attribute. This configuration is useful for scenarios like appointment reminders, where you can choose to wait one day before the appointment to send a reminder. The date and time information must be included in the trigger that started the journey for the customer.
+For trigger-based journeys, customers wait for the date and time specified by a trigger attribute. Once the interaction, occurs, the attribute is triggered. There are three condition types for the wait for trigger tile. The first condition type, you specify to wait until a previous message in your journey gets an interaction. The second, you specify a trigger attribute at a specific date and time. The third, you can specify to wait until a person becomes a member of a dynamic segment in your journey before the attribute is triggered. For more information on this condition type, see [Wait for segment membership](#wait-for-segment-membership). The wait for trigger configuration is useful for scenarios like appointment reminders, where you can choose to wait one day before the appointment to send a reminder. The date and time information must be included in the trigger that started the journey for the customer.
 
 ##### Series
 
@@ -106,7 +106,7 @@ For example, you can configure the "wait for trigger" branch to wait for the *Em
 The wait for segment membership feature allows for more complex set of actions to take place beyond a single trigger. For example, you may want to create a branch based on how much customer spent through multiple transactions in a specific period. In this scenario, rather than wait for a specific trigger, you can simply define a dynamic segment such as 'big purchaser' and wait for the customer to become a member of that segment.
 
 > [!IMPORTANT]
-> This feature is a preview and won't be available until December 9th, 2024. A preview feature is a feature that is not complete, but is made available before it’s officially in a release so customers can get early access and provide feedback. Preview features aren’t meant for production use and may have limited or restricted functionality.
+> This feature is a preview and won't be available until January 9th, 2024. A preview feature is a feature that is not complete, but is made available before it’s officially in a release so customers can get early access and provide feedback. Preview features aren’t meant for production use and may have limited or restricted functionality.
 > 
 > Microsoft doesn't provide support for this preview feature. Microsoft Dynamics 365 Technical Support won’t be able to help you with issues or questions. Preview features aren’t meant for production use, especially to process personal data or other data that are subject to legal or regulatory compliance requirements.
 
@@ -118,7 +118,7 @@ An attribute branch lets you branch the journey based on various attributes incl
 - **Customer's segment membership**: You can branch the journey based on whether the customer is part of a segment. The journey's audience defines which segments are shown. For example, only contacts-based segments are shown for journeys that are meant for contacts.
 - **Attributes in triggers**: You can branch the journey based on attribute values in triggers. For attribute values to be shown, the trigger must have previously occurred in the journey. Thus, you can only check the attribute values for a trigger that starts a trigger-based journey, or triggers being used in an "wait for trigger" branch.
 
-The attribute branch checks for attribute values the moment a customer enters this step. For example, when a customer enters the attribute branch step, the segment membership condition checks whether the customer is part of the specified segment at that instant.
+The attribute branch checks for attribute values the moment a customer enters this tile. For example, when a customer enters the attribute branch tile, the segment membership condition checks whether the customer is part of the specified segment at that instant.
 
 Attribute branch supports multi-way branching. For example, if you have 'customer spend' as an attribute, you can create different branches for different ranges of spending. For more details, see [Personalize journey variations using multiple journey branches](real-time-marketing-multiple-branches.md).
 
