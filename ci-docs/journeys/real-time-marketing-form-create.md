@@ -32,6 +32,14 @@ You can change the target audience using the Audience picker in the top right co
     - **Lead & Contact**: If a contact with the same email address already exists, it's updated. New lead is always created.
     You can change the duplicate record handling in the [form settings](real-time-marketing-manage-forms.md#form-settings). Or you can [change the defaults](real-time-marketing-form-global-settings.md) for all your new form.
 
+    > [!IMPORTANT]
+    > **Lead & Contact** audience is a preview feature.
+    > You can activate this new type of audience in Settings - Feature Switches - Forms.
+    >
+    > A preview feature is a feature that is not complete but is made available before it’s officially in a release so customers can get early access and provide feedback. Preview features aren’t meant for production use and may have limited or restricted functionality.
+    >
+    > Microsoft doesn't provide support for this preview feature. Microsoft Dynamics 365 Technical Support won’t be able to help you with issues or questions. Preview features aren’t meant for production use, especially to process personal data or other data that are subject to legal or regulatory compliance requirements.
+
     In this example, enter a name for your new form and select **Contact** as the target audience.
 
     > [!div class="mx-imgBorder"]
@@ -128,11 +136,12 @@ Once the form is published, you can still access these options by selecting the 
 > Example for USA:
 > `https://assets-usa.mkt.dynamics.com`
 >
-> If you would like to disable the domain for form hosting, reach out to support. 
+> If you would like to disable the domain for form hosting, reach out to support.
 
 ### See also
 
-[Grow your business with multi-brand, custom preference centers](real-time-marketing-compliance-settings.md)
-[Customer Insights - Journeys preference centers](real-time-marketing-preference-centers.md)
+- [Management and advanced configuration of forms](real-time-marketing-manage-forms.md)
+- [Grow your business with multi-brand, custom preference centers](real-time-marketing-compliance-settings.md)
+- [Customer Insights - Journeys preference centers](real-time-marketing-preference-centers.md)
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]

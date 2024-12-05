@@ -39,8 +39,8 @@ Customer Insights - Journeys marketing forms consist of two parts:
 
 | Custom event | Description |
 |------|-------|
-|`d365mkt-beforeformload`|Triggered when the form placeholder is recognized before the actual form content is fetched. |
-|`d365mkt-formrender`|Triggered after the form content is fetched and right before it is injected into the form placeholder. |
+|`d365mkt-beforeformload`|Triggered when the form placeholder is recognized before the actual form content is fetched. This event is triggered before the page is loaded, so it isn't visible in the developer console. |
+|`d365mkt-formrender`|Triggered after the form content is fetched and right before it is injected into the form placeholder. This event is triggered before the page is loaded, so it isn't visible in the developer console. |
 |`d365mkt-afterformload`|Triggered after the form is injected into the placeholder. |
 |`d365mkt-formsubmit`| Triggered when the form is submitted, cancellable. |
 |`d365mkt-afterformsubmit`| Triggered after form is submitted |

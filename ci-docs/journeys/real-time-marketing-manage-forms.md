@@ -79,7 +79,7 @@ There are two ways to use custom fonts in your form:
 
 > [!IMPORTANT]
 > A preview feature is a feature that is not complete but is made available before it’s officially in a release so customers can get early access and provide feedback. Preview features aren’t meant for production use and may have limited or restricted functionality.
-> 
+>
 > Microsoft doesn't provide support for this preview feature. Microsoft Dynamics 365 Technical Support won’t be able to help you with issues or questions. Preview features aren’t meant for production use, especially to process personal data or other data that are subject to legal or regulatory compliance requirements.
 
 > [!IMPORTANT]
@@ -89,6 +89,27 @@ The theme assistant is a Copilot feature in Customer Insights - Journeys. You ca
 
 > [!div class="mx-imgBorder"]
 > ![Fetch styles from your website using Copilot.](media/real-time-marketing-form-theme-copilot.png)
+
+## PREVIEW: Parent contact for lead
+
+> [!IMPORTANT]
+> **Lead & Contact** audience is a preview feature.
+> You can activate this new type of audience in Settings - Feature Switches - Forms.
+>
+> A preview feature is a feature that is not complete but is made available before it’s officially in a release so customers can get early access and provide feedback. Preview features aren’t meant for production use and may have limited or restricted functionality.
+>
+> Microsoft doesn't provide support for this preview feature. Microsoft Dynamics 365 Technical Support won’t be able to help you with issues or questions. Preview features aren’t meant for production use, especially to process personal data or other data that are subject to legal or regulatory compliance requirements.
+
+The **Lead & Contact** audience allows you to update both lead and contact entity with a single form submission. You can change the audience using the picker in the top right corner.
+
+To use a combined Lead & Contact audience, it's important to [define how the attributes are mapped to each other](real-time-marketing-form-global-settings.md#lead-contact-mapping). For example, you need to link the Contact First Name attribute to the Lead First Name attribute, so the form field First Name can update attributes for both entities.
+
+Once you select *Lead & Contact* audience, you will see 3 sections of fields in the right pane:
+
+> [!div class="mx-imgBorder"]
+> ![Form settings.](media/real-time-marketing-form-lead-contact.png)
+
+The fields in *Contact* section will update only the corresponding Contact attributes. The fields in *Lead* section will update only the corresponding Lead attributes. If you want the field to update both lead and contact, use a field from the *Lead & Contact* section. If the *Lead & Contact* section is empty you have to [define attribute mapping](real-time-marketing-form-global-settings.md#lead-contact-mapping).
 
 ## Form settings
 
@@ -109,20 +130,20 @@ The default approach to duplicate records is different for contact and lead enti
 - **Contact (default: Update contact using email)**: If the user submits a form with an existing email address, the form submission updates the existing record. There's no new record created.
 - **Lead (default: Always create a new record)**: If the user submits a form with an existing email address, a new record with the same email address is created.
 
-You can change the default strategy using the **Duplicate records** drop-down in **Forms** settings. You can also create a [custom matching strategy](#create-a-custom-matching-strategy).
+You can change the default matching rule using the **Duplicate records** drop-down in **Forms** settings. You can also create a [custom matching rule](#create-a-custom-matching-rule).
 
-### Create a custom matching strategy
+### Create a custom matching rule
 
-You can choose how to handle duplicate records by creating a new matching strategy.
+You can choose how to handle duplicate records by creating a new matching rule.
 
 1. Select the bottom left menu to access **Settings**.
-1. Open **Form matching strategy** in the **Customer engagement** section.
-1. Select the plus icon to create a new matching strategy.
-1. Name the matching strategy and select the **Target entity**.
-1. Save the matching strategy (don't select **Save & close** as you need to stay on this record).
+1. Open **Form matching rules** in the **Customer engagement** section.
+1. Select the plus icon to create a new matching rule.
+1. Name the matching rule and select the **Target entity**.
+1. **Save the matching rule** (don't select Save & close as you need to stay on this record).
 1. Add matching strategy attributes (fields) that are used to check if the record exists.
-1. Save your new matching strategy.
-1. The newly created matching strategy can now be selected in the **Duplicate records** list in the form settings.
+1. Save your new matching rule.
+1. The newly created matching rule can now be selected in the **Duplicate records** list in the form settings.
 
 ## Field types
 
@@ -139,6 +160,8 @@ Field types and formats are defined by the attribute metadata. It isn't possible
 | Date and time          | Date Only     | Date Picker           | Date picker to select a date from a pop-up calendar display. It doesn't accept a time.                                                                           |
 | Date and time          | Date and Time | Date-Time Picker      | Date and time picker to select a date from a pop-up calendar and a time from a drop-down list.                                                                   |
 | Lookup field          | n/a | Lookup      | A lookup field is linked to a particular entity type, enabling you to add a drop-down list of options that were created in advance to your form. [More information](#lookup-fields). |
+
+The **File** field type is not supported in forms.
 
 ### Phone number field
 
@@ -166,7 +189,7 @@ A lookup field is linked to a particular entity type, enabling you to add a drop
 
 After adding a lookup field, or if your lookup field isn't working, ensure that the service user used has permissions to configure the entities you're using with the lookup field. The Marketing Services User Extensible role used by the form editor needs to have read access to the entity used in the lookup field. You also have to enable **Make lookup data publicly viewable** in the lookup properties. All values within the lookup are available to anyone who sees the form. Ensure that sensitive data isn't exposed to the public. More information: [Adding lookup fields](marketing-fields.md#adding-lookup-fields-and-troubleshooting).
 
-### Custom fields
+### Custom mapped fields
 
 The form editor allows you to use all attributes of lead or contact entities as form fields. If you create a new custom attribute of a contact or lead entity, it's automatically available as a form field in the editor. Using this approach, you can easily create reusable form fields.
 
@@ -186,7 +209,7 @@ The following conditions prevent forms from being published and display an error
 - Is a **Submit** button included?
 - Are the form fields linked to an editable attribute?
 - Does the form contain duplicated fields?
-- Does the form include all attributes required by the matching strategy (email field by default)?
+- Does the form include all attributes required by the matching rule (email field by default)?
 - Is the target audience set?
 
 ### Warnings that don't stop form publishing
@@ -195,6 +218,21 @@ The following conditions don't prevent forms from being published. A warning mes
 
 - Does the form include all fields linked to attributes of a selected entity that are mandatory to create or update a record?
 - Are all required attributes labeled as required="required" in HTML?
+
+## Form submission processing
+
+Once the form is submitted, the submitted values can be found in **Submissions** section of Form editor. It may take up to few minutes before the entities targeted by the form are updated and the submission moves from *Pending* to *Success* state.
+
+The following Contact or Lead attributes are automatically updated by the form submission only if a new record is created:
+
+- msdynmkt_emailid
+- msdynmkt_customerjourneyid
+- msdynmkt_marketingformid
+- ownerid
+- owningbusinessunit (if BU feature is enabled)
+- subject (only for leads) - form name is used as the value
+
+The above listed attributes are not updated in case of updating an existing record with form submission.
 
 ## Advanced form customization
 
@@ -272,16 +310,16 @@ In this example, a script is created that combines the first name and last name 
 
 You can reuse this example to enrich your leads with more UTM parameters like utm_campaign, utm_medium, utm_term, utm_content.
 
-## Customize the form and form submission entities
+### Customize the form and form submission entities
 
 You can [add custom attributes to the form or form submission entities](real-time-marketing-customize-forms.md) to enhance your experience with the form editor.
 
-## Integrate a custom captcha into the form
+### Integrate a custom captcha into the form
 
 You can [integrate custom captcha](real-time-marketing-form-custom-captcha.md) bot protection services like [Google reCAPTCHA](https://www.google.com/recaptcha/about/) into your form.
 
 ### Custom back-end validation of form submission
 
-It's possible to build custom back-end form submission validation that prevents form submission processing. It shows an error message to the user who tried to submit the form. You can find the inspiration for this back-end validation in the article about [integrating custom captcha](real-time-marketing-form-custom-captcha.md), where the form makes back-end validation to evaluate the result of a captcha challenge.
+It's possible to build [custom back-end form submission validation](real-time-marketing-form-customize-submission-validation.md) that prevents or extends form submission processing.
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
