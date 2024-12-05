@@ -30,7 +30,7 @@ There are multiple types of forms in Customer Insights - Journeys:
 1. [Event registration form](set-up-event.md) - allow registration to events
 1. [Preference center](real-time-marketing-preference-centers.md) - manage consent preferences
 
-The **marketing** and **event registration** form types are similar. All feature of marketing forms apply to event registration forms, with the exception of audience configuration. The event registration forms can target only the Contact audience. On the other hand event registration forms have some extra features like dynamic components to render list of sessions, speakers or details about event. Event registration forms can also create *event registration* records. Event registration forms also have a different publishing UI.
+The **marketing** and **event registration** form types are similar. All features of marketing forms apply to event registration forms, except for audience configuration. The event registration forms can target only the Contact audience. On the other hand event registration forms have some extra features like dynamic components to render list of sessions, speakers, or details about event. Event registration forms can also create *event registration* records. Event registration forms also have a different publishing UI.
 
 ### Marketing form
 
@@ -55,7 +55,7 @@ Security is an important aspect of marketing and event registration forms. Dynam
 
 ## Privacy notice
 
-- Marketing and event registration forms do not use any cookies. The form visit and form submit interactions use [journey link tracking mechanism](real-time-marketing-link-tracking-mechanism) to get details about known users.
+- Marketing and event registration forms don't use any cookies. The form visit and form submit interactions use [journey link tracking mechanism](real-time-marketing-link-tracking-mechanics.md) to get details about known users.
 
 ## Next steps
 

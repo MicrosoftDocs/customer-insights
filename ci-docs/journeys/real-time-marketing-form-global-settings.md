@@ -13,7 +13,7 @@ search.audienceType:
 
 # Form settings - set default configuration of all your new forms
 
-Creating a new form can be quite challenging for non-technical users due to the complexity of the form configuration, which requires system knowledge. Each time you create a new form, going through the configuration process can be time-consuming and may introduce errors.
+Creating a new form can be quite challenging for nontechnical users due to the complexity of the form configuration, which requires system knowledge. Each time you create a new form, going through the configuration process can be time-consuming and can introduce errors.
 
 The new form configuration feature allows you to preset all your new forms, eliminating the need to think about all the details each time you create a form. You can configure defaults for all your newly created marketing or event registration forms on the *Form Settings* page, located in the Customer Engagement section of *Settings*.
 
@@ -30,7 +30,7 @@ There are two out-of-the-box configurations for default form values following th
 
 You can select the configuration to edit default values for its respective form type.
 
-There are 4 tabs representing various areas of form configuration:
+There are four tabs representing various areas of form configuration:
 
 1. **[General](real-time-marketing-form-global-settings.md#general)** - set details of configuration and configure common settings of the form.
 1. **[Audience](real-time-marketing-form-global-settings.md#audience)** - select what target audience (which entity record) will be created or updated by the form submission.
@@ -44,7 +44,7 @@ There are 4 tabs representing various areas of form configuration:
 
 The first part of *General* section allows you to set details of the form configuration itself. You can set the name, select form type, and label the configuration as default. There can be only one default configuration of the same type.
 
-You can also select if the [Form prefill](real-time-marketing-form-prefill.md) will be automatically enabled for your newly created forms.
+You can also select if the [Form prefill](real-time-marketing-form-prefill.md) is automatically enabled for your newly created forms.
 
 The second part of *General* section allows you to choose the default action, which will be taken after the form is submitted. Once submitted, the form can show *Thank you* notification or you can set the *Error* notification. You can customize the content of both notifications.
 
@@ -83,7 +83,7 @@ You can modify audience settings to specify when a new record is created and how
 > ![Audience details in global form settings.](media/real-time-marketing-form-global-settings-audience-details.png)
 
 - **Name** - name your audience settings. This name is visible in the form editor. Use short, but descriptive names.
-- **Target entity** - select which entity will be targeted by the form submission processing. Marketing form supports both lead and contact entities, but event registration form is limited to contact only.
+- **Target entity** - select which entity is targeted by the form submission processing. Marketing form supports both lead and contact entities, but event registration form is limited to contact only.
 
 #### Matching rules
 
@@ -98,7 +98,7 @@ Matching rules helps to configure how an existing record can be updated or when 
 - **Select contact matching rule** - matching rule defines how to find and prioritize existing records. You can use the out-of-the-box matching rule *Update contact using email* or you can create you own custom matching rules. Custom matching rules can be created in Settings -> Matching rules.
 - **Update matched contact with submitted data**
   - Yes - the best matching record is updated with form submission data.
-  - No - the matched record is not updated with form submission data. The forms submission data is only linked to the matched record.
+  - No - the matched record isn't updated with form submission data. The forms submission data is only linked to the matched record.
 - **Create a new contact if there was no match to an existing one?**
   - Yes - if the matching rule doesn't find any suitable record to update, a new record is created.
   - No - no new record is created. The form submission data can be accessed only through the Form submission.
