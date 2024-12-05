@@ -13,24 +13,29 @@ search.audienceType:
 
 # Create Customer Insights - Journeys forms
 
-To create a new form, go to **Customer Insights - Journeys** > **Channels** > **Forms** and select **New** on the command bar.
+To create a new marketing form, go to **Customer Insights - Journeys** > **Channels** > **Forms** and select **New** on the command bar. The event registration forms can be created in [Website and form tab of your event](set-up-event.md#the-website-and-form-tab).
 
-1. **Select a target audience** that is updated by the form submission. With Customer Insights - Journeys forms, you can select which audience you want to update (Contact or Lead). Each target audience has a default strategy for duplicate records handling:
+> [!NOTE]
+> Your newly created form is automatically configured according to the default configuration. Ask your administrator to change the [default configuration](real-time-marketing-form-global-settings.md) which includes target audience, matching of existing records and other important settings.
+
+You can change the target audience using the Audience picker in the top right corner, and change all other [settings](real-time-marketing-manage-forms.md#form-settings) for each individual form.
+
+1. **Choose a template.** The list of templates is filtered according to the target audience. If you want to start with a blank form, you can skip the template selection. After you select a template or choose to skip, you’ll be in the form editor where you can finish creating your form.
+
+    > [!div class="mx-imgBorder"]
+    > ![Choose a template or skip the selection.](media/real-time-marketing-form-template-gallery.png)
+
+1. Check the **target audience** in to top right corner and **name your form**. With marketing forms, you can select which audience you want to update (Contact, Lead or Lead & Contact). Event registration form can only update Contact target audience. Each target audience has a default strategy for duplicate records handling:
 
     - **Lead**: Each form submission creates a new record, even if the same email address is used.
     - **Contact**: If a record with the same email address already exists, it's updated. No duplicate contact is created if the same email address is used.
-
-    You can change the duplicate record handling in the [form settings](real-time-marketing-manage-forms.md#form-settings).
+    - **Lead & Contact**: If a contact with the same email address already exists, it's updated. New lead is always created.
+    You can change the duplicate record handling in the [form settings](real-time-marketing-manage-forms.md#form-settings). Or you can [change the defaults](real-time-marketing-form-global-settings.md) for all your new form.
 
     In this example, enter a name for your new form and select **Contact** as the target audience.
 
     > [!div class="mx-imgBorder"]
     > ![Select target audience for the form submission.](media/real-time-marketing-form-audience.png)
-
-1. **Choose a template.** The list of templates is filtered according to the target audience selected in the previous step. If you want to start with a blank form, you can skip the template selection. After you select a template or choose to skip, you’ll be in the form editor where you can finish creating your form.
-
-    > [!div class="mx-imgBorder"]
-    > ![Choose a template or skip the selection.](media/real-time-marketing-form-template-gallery.png)
 
 1. Now you can see the list of questions represented by **form fields**. The list of available fields can be found in the right pane and it includes all attributes of the selected target audience (entity). If you create a new custom attribute for the entity, it's visible in this list, and you can immediately use it as a field in your form. Some system fields may be hidden, as they can't be used in the form. You can use the search bar in the list of fields to filter the field you're looking for.
 

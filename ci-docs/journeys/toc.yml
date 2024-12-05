@@ -350,6 +350,8 @@
       href: real-time-marketing-deploy-pages.md
     - name: Manage forms
       href: real-time-marketing-manage-forms.md
+    - name: Form default settings
+      href: real-time-marketing-form-global-settings.md
     - name: Troubleshoot forms
       href: real-time-marketing-troubleshooting-forms.md
     - name: "Preview: Prefill values for forms and event registration"
@@ -480,6 +482,8 @@
       href: real-time-marketing-form-capture.md
     - name: Integrate a custom captcha service with marketing forms
       href: real-time-marketing-form-custom-captcha.md
+    - name: Customize form submission validation
+      href: real-time-marketing-form-customize-submission-validation.md
     - name: Customize the Customer Insights - Journeys forms interface
       href: developer/extend-ui.md
   - name: Extend and customize consent

@@ -1,7 +1,7 @@
 ---
-title: Create Customer Insights - Journeys forms
-description: Create forms in Dynamics 365 Customer Insights - Journeys.
-ms.date: 09/13/2023
+title: Set default configuration for Customer Insights - Journeys forms
+description: Set default configuration for all newly created forms in Dynamics 365 Customer Insights - Journeys.
+ms.date: 12/05/2024
 ms.topic: article
 author: petrjantac
 ms.author: alfergus
@@ -15,7 +15,7 @@ search.audienceType:
 
 Creating a new form can be quite challenging for non-technical users due to the complexity of the form configuration, which requires system knowledge. Each time you create a new form, going through the configuration process can be time-consuming and may introduce errors.
 
-The new global form configuration feature allows you to preset all your new forms, eliminating the need to think about all the details each time you create a form. You can configure defaults for all your newly created marketing or event registration forms on the *Form Settings* page, located in the Customer Engagement section of *Settings*.
+The new form configuration feature allows you to preset all your new forms, eliminating the need to think about all the details each time you create a form. You can configure defaults for all your newly created marketing or event registration forms on the *Form Settings* page, located in the Customer Engagement section of *Settings*.
 
 > [!div class="mx-imgBorder"]
 > ![Global form settings.](media/real-time-marketing-form-global-settings.png)
@@ -35,7 +35,7 @@ There are 4 tabs representing various areas of form configuration:
 1. **[General](real-time-marketing-form-global-settings.md#general)** - set details of configuration and configure common settings of the form.
 1. **[Audience](real-time-marketing-form-global-settings.md#audience)** - select what target audience (which entity record) will be created or updated by the form submission.
 1. **[Lead-Contact Mapping](real-time-marketing-form-global-settings.md#lead-contact-mapping)** - available only for marketing form type. Review the platform mapping between attributes of lead and contact entities.
-1. **reCAPTCHA** - set up 3rd party form captcha.
+1. **[reCAPTCHA](real-time-marketing-form-global-settings.md#recaptcha)** - set up 3rd party form captcha.
 
 > [!div class="mx-imgBorder"]
 > ![General section of global form settings.](media/real-time-marketing-form-global-settings-general.png)
@@ -108,5 +108,14 @@ The combined Lead & Contact audience relies on [entity columns mapping](https://
 > ![Mapping in global form settings.](media/real-time-marketing-form-global-settings-mapping.png)
 
 In case you don't use solutions as the mechanism for implementing application lifecycle management (ALM), you can use the *Generate mappings* button to automatically link lead attributes to contact or you can select the *Edit in Power Apps* button to manually define the mappings.
+
+## reCAPTCHA
+
+Protecting your forms against bot attacks and malicious actors is crucial to ensure the quality of captured data. Marketing and event registration forms come with standard captcha, but you can also [implement a custom captcha](real-time-marketing-form-custom-captcha.md) to improve the user experience.
+
+reCAPTCHA section allows you to enter the Private key for and activate the reCAPTCHA plugin.
+
+> [!div class="mx-imgBorder"]
+> ![Enter key for reCAPTCHA.](media/real-time-marketing-configure-form-recaptcha.png)
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
