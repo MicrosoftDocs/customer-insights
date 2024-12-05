@@ -4,7 +4,7 @@ description: "Manage exports to share data."
 author: Scott-Stabbert
 ms.author: sstabbert
 ms.reviewer: mhart
-ms.date: 10/04/2023
+ms.date: 12/05/2024
 ms.topic: how-to
 ms.custom: bap-template
 ---
@@ -18,6 +18,7 @@ All exports follow the same general set up and management process. You can also 
 ## Set up a new export
 
 To set up or edit an export, you need the right connections available to you. Connections depend on your [user role](permissions.md):
+
 - **Administrators** have access to all connections. They can also create new connections when setting up an export.
 - **Contributors** can have access to specific connections. They depend on administrators to configure and share connections. The exports list shows contributors whether they can edit or only view an export in the **Your permissions** column. For more information, go to [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
 - **Viewers** can only view existing exports—not create them.
