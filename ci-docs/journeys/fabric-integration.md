@@ -1,7 +1,7 @@
 ---
 title: Customer Insights - Journeys integration with Microsoft Fabric overview
 description: Learn about how to integrate Customer Insights - Journeys with Microsoft Fabric.
-ms.date: 10/30/2024
+ms.date: 12/03/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -14,7 +14,7 @@ search.audienceType:
 # Customer Insights - Journeys integration with Microsoft Fabric overview
 
 > [!IMPORTANT]
-> As of July 31, 2024, Customer Insights - Journeys integration with Microsoft Fabric is generally available. To avoid service disruptions, preview users of the integration with Microsoft Fabric must follow the [Transition to general availability guidance](fabric-integration.md#transition-to-general-availability).
+> As of July 31, 2024, Customer Insights - Journeys integration with Microsoft Fabric is generally available. To avoid service disruptions, preview users of the integration with Microsoft Fabric must follow the [Transition to general availability guidance](fabric-integration.md#transition-to-general-availability). Access to the preview version/folder will be removed on December 7.
 
 In Customer Insights - Journeys, you can effortlessly create custom Power BI reports tailored to your business needs by using Microsoft Fabric capabilities. Harness seamless access to data to gain a complete understanding of your campaigns, lead management, market performance, and customer engagement, enabling you to identify new opportunities.
 
@@ -100,7 +100,7 @@ The following sections explain how to set up Power BI and access your Customer I
 ## Transition to general availability
 
 > [!NOTE]
-> Preview customers can start the transition to the general availability version of the feature.
+> Preview customers should transition to the general availability version of the feature. Access to the preview version/folder will be removed on December 7.
 
 To transition from the public preview to the general availability (GA) version of the custom reporting with Fabric feature, follow these steps in order:
 
@@ -110,7 +110,7 @@ To transition from the public preview to the general availability (GA) version o
     :::image type="content" source="media/fabric-ga-create-shortcuts.png" alt-text="Screenshot showing Customer Insights - Journeys folder.":::
     :::image type="content" source="media/fabric-ga-create-shortcuts-2.png" alt-text="Screenshot showing an example of creating a shortcut.":::
 1. **Update the semantic model**: Go to the SQL analytics endpoint view. Select the **Reporting** tab and update the semantic model.
-    :::image type="content" source="media/fabric-ga-update-semantic.png" alt-text="Screenshot showing button to update the semantic model.":::
+    :::image type="content" source="media/fabric-ga-update-semantic.png" alt-text="Screenshot showing a button to update the semantic model.":::
 1. **Refresh Power BI reports**: Refresh your Power BI reports. Data from the GA folder should now be visible.
 
 ## Learn more
