@@ -1,7 +1,7 @@
 ---
 title: "Dataverse APIs for Customer Insights - Data"
 description: "Overview and examples of Dataverse Open Data Protocol (OData) APIs to query for data."
-ms.date: 11/26/2024
+ms.date: 12/06/2024
 ms.topic: conceptual
 author: srivas15
 ms.author: shsri
@@ -67,8 +67,8 @@ Sample queries to [personalize your website](real-time-web-personalization.md#pe
 
 |Query type |Example  | Note  |
 |---------|---------|---------|
-|Get a customer by CookieId | `{serviceRoot}/msdynci_personalizationprofiles(cookieid='{cookieId}')`  |          |
-|Get a customer by CookieId and include Segments, Measures, Activities | `{serviceRoot}/msdynci_personalizationprofiles(cookieid='{cookieId}',include=['segmentmembership','measures','unifiedactivity'])`  |    |
+|Get a customer by CookieId | `{serviceRoot}/msdynci_p13nprofile(cookieid='{cookieId}')`  |          |
+|Get a customer by CookieId and include Segments, Measures, Activities | `{serviceRoot}/msdynci_p13nprofile(cookieid='{cookieId}',include=['segmentmembership','measures','unifiedactivity'])`  |    |
 |Get recent (last 10) page views of a customer by CookieId | `{serviceRoot}/msdynci_pageviews(cookieid='{cookieId}',top=10)`  |  This can be changed to return up to 200 recent page views  |
 |Get recent (last 10) page clicks of a customer by CookieId | `{serviceRoot}/msdynci_pageclicks(cookieid='{cookieId}',top=10)`  |  This can be changed to return up to 200 recent page clicks  |
 
