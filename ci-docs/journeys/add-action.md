@@ -73,9 +73,14 @@ You can configure the wait tile using the following parameters:
 - **A set amount of time**: Customers wait for the specified amount of time (for example, one hour or one day). The time period starts as soon as customers enter the wait tile.
 - **Until a specific date and time**: Customers wait until the specified date and time. If the date and time are already in the past, customers will immediately proceed to the next step.
 
+<!--
+
+
 ##### Wait for a trigger
 
-For trigger-based journeys, customers wait for an attribute to be triggered based on a specified condition type. Once the condition is met, the attribute is triggered. There are three condition types for the wait for trigger tile. For the first condition type, you can specify to wait until a previous message in your journey gets an interaction. For the second condition type, you can specify a trigger attribute at a specific date and time for your customers. For the third condition type, you can specify to wait until a person or customer becomes a member of a dynamic segment in your journey. For more information on this condition type, see [Wait for segment membership](#wait-for-segment-membership). The wait for trigger configuration is useful for scenarios like appointment reminders, where you can choose to wait one day before the appointment to send a reminder. Date and time information must be included in the trigger that started the journey for the customer.
+There are three condition types for the wait for trigger tile. For the first condition type, you can specify to wait until a previous message in your journey gets an interaction. For the second condition type, you can specify a trigger attribute at a specific date and time for your customers. For the third condition type, you can specify to wait until a person or customer becomes a member of a dynamic segment in your journey. For more information on this condition type, see [Wait for segment membership](#wait-for-segment-membership). The wait for trigger configuration is useful for scenarios like appointment reminders, where you can choose to wait one day before the appointment to send a reminder. Date and time information must be included in the trigger that started the journey for the customer.
+
+-->
 
 ##### Series
 
@@ -97,9 +102,11 @@ Attribute branch does not have a provision for waiting. Attribute branches use t
 
 ##### Wait for trigger branch
 
-The "wait for trigger" branch lets you branch the customer journey based on customer actions such as opening an email or completing a purchase. The "wait for trigger" branch waits for the customer to perform the trigger within the time limit specified. If the customer performs the trigger, they immediately proceed down the yes branch. If the customer doesn't perform the trigger within the time limit specified, they proceed down the no branch after the time limit has passed.
+The "wait for trigger" (if/then branch) tile lets you branch the customer journey based on customer actions like opening an email or completing a purchase. The wait tile (if/then branch) waits for the customer to perform the trigger within the time limit specified. If the customer performs the trigger, they'll immediately proceed down the yes branch. If the customer doesn't perform the trigger within the time limit specified, they'll proceed down the no branch after the time limit has passed.
 
-For example, you can configure the "wait for trigger" branch to wait for the *Email opened* event on a previously sent email within a specific time period (such as one day). The customer opens the email within that period. The customer immediately proceeds down the yes branch. If the customer doesn't open the email within that period, they proceed down the no branch after the period is over.
+For example, you can configure the wait tile to wait for the *Email opened* event on a previously sent email. If the time limit is set to 1 day, the wait branch waits for the customer to open the email within that day. If the customer opens the email within that day, they'll immediately proceed down the yes branch. If the customer doesn't open the email within that day, they'll proceed down the no branch after one day.
+
+<!-- HIDING UNTIL FEBRUARY RELEASE
 
 ##### Wait for segment membership
 
@@ -109,6 +116,8 @@ The wait for segment membership feature allows for more complex set of actions t
 > This feature is a preview and won't be available until January 9th, 2024. A preview feature is a feature that is not complete, but is made available before it’s officially in a release so customers can get early access and provide feedback. Preview features aren’t meant for production use and may have limited or restricted functionality.
 > 
 > Microsoft doesn't provide support for this preview feature. Microsoft Dynamics 365 Technical Support won’t be able to help you with issues or questions. Preview features aren’t meant for production use, especially to process personal data or other data that are subject to legal or regulatory compliance requirements.
+
+ -->
 
 ##### Attribute branch
 
