@@ -9,6 +9,7 @@ search.audienceType:
   - admin
   - customizer
   - enduser
+ms.custom: outbound-marketing
 ---
 
 # Integrate outbound marketing with a CMS system, Dynamics 365 Portals, or Power Apps portals

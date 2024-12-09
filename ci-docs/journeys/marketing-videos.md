@@ -9,6 +9,7 @@ search.audienceType:
   - admin
   - customizer
   - enduser
+ms.custom: outbound-marketing
 ---
 
 # Video overviews and instructions for Dynamics 365 Customer Insights - Journeys
