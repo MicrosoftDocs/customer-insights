@@ -7,6 +7,7 @@ author: alfergus
 ms.author: alfergus
 search.audienceType: 
   - developer
+ms.custom: outbound-marketing
 ---
 
 # Filter cities based on countries using lookup fields and custom entities in outbound marketing
