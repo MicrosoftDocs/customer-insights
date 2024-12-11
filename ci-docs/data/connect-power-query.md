@@ -1,7 +1,7 @@
 ---
 title: "Connect to a Power Query data source"
 description: "Ingest data through a Power Query connector."
-ms.date: 07/04/2024
+ms.date: 12/11/2024
 ms.reviewer: v-wendysmith
 ms.topic: how-to
 author: joytaylor
@@ -20,6 +20,8 @@ To securely connect data in a private network, Power Query supports the use of [
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWN6EK]
 
 ## Create a new data source
+
+[!INCLUDE [data-connection-names](./includes/data-connection-names.md)]
 
 1. Go to **Data** > **Data sources**.
 
