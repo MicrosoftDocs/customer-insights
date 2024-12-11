@@ -1,7 +1,7 @@
 ---
 title: Manage Customer Insights - Journeys forms
 description: Discover how to manage and style forms in Dynamics 365 Customer Insights - Journeys. Edit, unpublish, and customize forms with ease. Learn more now!
-ms.date: 11/22/2024
+ms.date: 12/10/2024
 ms.topic: article
 author: petrjantac
 ms.author: alfergus
@@ -90,26 +90,26 @@ The theme assistant is a Copilot feature in Customer Insights - Journeys. You ca
 > [!div class="mx-imgBorder"]
 > ![Fetch styles from your website using Copilot.](media/real-time-marketing-form-theme-copilot.png)
 
-## PREVIEW: Parent contact for lead
+## Preview: Parent contact for lead
 
 > [!IMPORTANT]
-> **Lead & Contact** audience is a preview feature.
-> You can activate this new type of audience in Settings - Feature Switches - Forms.
->
 > A preview feature is a feature that is not complete but is made available before it’s officially in a release so customers can get early access and provide feedback. Preview features aren’t meant for production use and may have limited or restricted functionality.
 >
 > Microsoft doesn't provide support for this preview feature. Microsoft Dynamics 365 Technical Support won’t be able to help you with issues or questions. Preview features aren’t meant for production use, especially to process personal data or other data that are subject to legal or regulatory compliance requirements.
 
-The **Lead & Contact** audience allows you to update both lead and contact entity with a single form submission. You can change the audience using the picker in the top right corner.
+> [!TIP]
+> **Lead & Contact** audience is a preview feature. To activate the new audience, go to **Settings** > **Feature Switches** > **Forms**.
 
-To use a combined Lead & Contact audience, it's important to [define how the attributes are mapped to each other](real-time-marketing-form-global-settings.md#lead-contact-mapping). For example, you need to link the Contact First Name attribute to the Lead First Name attribute, so the form field First Name can update attributes for both entities.
+The **Lead & Contact** audience allows you to update a lead and contact entity with a single form submission. You can change the audience using the picker in the top right corner of the form editor.
 
-Once you select *Lead & Contact* audience, you will see 3 sections of fields in the right pane:
+To use a combined Lead & Contact audience, it's important to [define how the attributes are mapped to each other](real-time-marketing-form-global-settings.md#lead-contact-mapping). For example, you need to link the contact *First Name* attribute to the lead *First Name* attribute, so the form field *First Name* can update attributes for both entities.
+
+Once you select the *Lead & Contact* audience, you see three sections of fields in the right pane:
 
 > [!div class="mx-imgBorder"]
 > ![Lead & Contact audience.](media/real-time-marketing-form-lead-contact.png)
 
-The fields in *Contact* section will update only the corresponding Contact attributes. The fields in *Lead* section will update only the corresponding Lead attributes. If you want the field to update both lead and contact, use a field from the *Lead & Contact* section. If the *Lead & Contact* section is empty you have to [define attribute mapping](real-time-marketing-form-global-settings.md#lead-contact-mapping).
+The fields in the *Contact* section update only the corresponding contact attributes. The fields in *Lead* section update only the corresponding lead attributes. If you want the field to update both lead and contact attributes, use a field from the *Lead & Contact* section. If the *Lead & Contact* section is empty, you have to [define attribute mapping](real-time-marketing-form-global-settings.md#lead-contact-mapping).
 
 ## Form settings
 
