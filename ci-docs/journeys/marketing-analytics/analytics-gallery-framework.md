@@ -10,6 +10,7 @@ search.audienceType:
   - admin
   - customizer
   - enduser
+ms.custom: outbound-marketing
 ---
 
 # The marketing analytics reporting framework (generic template)

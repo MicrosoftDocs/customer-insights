@@ -1,11 +1,15 @@
 ---
 title: Copilot features in Customer Insights - Journeys
-description: Copilot features in Dynamics 365 Customer Insights - Journeys.
-ms.date: 03/20/2024
+description: Use Copilot in Customer Insights - Journeys to streamline your marketing campaigns. Create and manage segments, emails, and journeys with AI assistance.
+ms.date: 11/22/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
 ms.collection: bap-ai-copilot
+ms.custom:
+  - ai-gen-docs-bap
+  - ai-gen-description
+  - ai-seo-date:11/22/2024
 ---
 
 # Copilot features in Customer Insights - Journeys

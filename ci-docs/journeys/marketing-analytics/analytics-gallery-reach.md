@@ -10,6 +10,7 @@ search.audienceType:
   - admin
   - customizer
   - enduser
+ms.custom: outbound-marketing
 ---
 
 # Marketing reach analysis for Dynamics 365 Customer Insights - Journeys

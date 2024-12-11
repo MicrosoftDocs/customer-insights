@@ -1,11 +1,15 @@
 ---
-title: "Preview: Copilot - Refresh and perfect your message"
-description: Learn how to use the Copilot-powered theme feature to rewrite your messages in Dynamics 365 Customer Insights - Journeys.
-ms.date: 12/22/2023
+title: 'Preview: Copilot - Refresh and perfect your message'
+description: Use the content rewrite copilot to rephrase messages, adjust tone, and optimize your content in Dynamics 365 Customer Insights - Journeys.
+ms.date: 11/22/2024
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
 ms.collection: bap-ai-copilot
+ms.custom:
+  - ai-gen-docs-bap
+  - ai-gen-description
+  - ai-seo-date:11/22/2024
 ---
 
 # Preview: Copilot - Refresh and perfect your message

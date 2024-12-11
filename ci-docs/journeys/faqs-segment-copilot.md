@@ -1,13 +1,16 @@
 ---
 title: Responsible AI FAQs for the segment copilot
-description: The Responsible AI FAQs discuss the segment copilot and the key considerations for making use of this technology responsibly.
-ms.date: 05/08/2024
+description: Learn about the segment copilot's AI capabilities and responsible use in our FAQs. Discover how to generate segments using natural language prompts.
+ms.date: 11/22/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
 ms.collection: bap-ai-copilot
-ms.custom: 
+ms.custom:
   - transparency-note
+  - ai-gen-docs-bap
+  - ai-gen-description
+  - ai-seo-date:11/22/2024
 ---
 
 # Responsible AI FAQs for the segment copilot
