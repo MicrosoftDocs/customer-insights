@@ -1,11 +1,15 @@
 ---
 title: Give consent to use Copilot in Customer Insights - Journeys
-description: As an admin, give consent to use all Copilot features in Dynamics 365 Customer Insights - Journeys.
-ms.date: 03/12/2024
+description: Learn to enable Copilot in Customer Insights - Journeys. Follow steps to give consent for AI features, data sharing, and cross-geography data flow.
+ms.date: 11/22/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
 ms.collection: bap-ai-copilot
+ms.custom:
+  - ai-gen-docs-bap
+  - ai-gen-description
+  - ai-seo-date:11/22/2024
 ---
 
 # Give consent to use Copilot in Customer Insights - Journeys

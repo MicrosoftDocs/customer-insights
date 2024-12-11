@@ -1,14 +1,14 @@
 ---
-title: Create consistent branding with brand profiles in Customer Insights - Journeys
-description: Learn how to create brand profiles in Customer Insights - Journeys.
-ms.date: 02/08/2024
+title: Create consistent branding with brand profiles
+description: Discover how to create brand profiles in Customer Insights - Journeys. Manage multiple brands, set default senders, and define social links and themes.
+ms.date: 11/22/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
 ms.collection: bap-ai-copilot
 ---
 
-# Create consistent branding with brand profiles in Customer Insights - Journeys
+# Create consistent branding with brand profiles
 
 > [!NOTE]
 > Unless a style is explicitly set in the element properties, the default style is replaced with the email theme style.

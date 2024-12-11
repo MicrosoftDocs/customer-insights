@@ -1,11 +1,15 @@
 ---
 title: Create push notifications
-description: Learn how to create push notifications for Customer Insights - Journeys.
-ms.date: 10/03/2024
+description: Create effective push notifications for Customer Insights - Journeys. Learn how to set up, personalize, and send push messages to engage your app users.
+ms.date: 11/22/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
 ms.collection: bap-ai-copilot
+ms.custom:
+  - ai-gen-docs-bap
+  - ai-gen-description
+  - ai-seo-date:11/22/2024
 ---
 
 # Create push notifications

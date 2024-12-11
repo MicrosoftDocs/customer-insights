@@ -1,11 +1,15 @@
 ---
 title: Manage Customer Insights - Journeys forms
-description: Learn how to manage forms in Dynamics 365 Customer Insights - Journeys.
-ms.date: 06/21/2024
+description: Discover how to manage and style forms in Dynamics 365 Customer Insights - Journeys. Edit, unpublish, and customize forms with ease. Learn more now!
+ms.date: 11/22/2024
 ms.topic: article
 author: petrjantac
 ms.author: alfergus
 ms.collection: bap-ai-copilot
+ms.custom:
+  - ai-gen-docs-bap
+  - ai-gen-description
+  - ai-seo-date:11/22/2024
 ---
 
 # Manage Customer Insights - Journeys forms
@@ -56,9 +60,9 @@ The theme feature is a user-friendly interface for editing CSS class definitions
 - **Background**: Define the inner background color and border style for the whole form.
 - **Text styles**: Define Heading 1, Heading 2, Heading 3, Paragraph, the Field label. The field label style doesn't affect the checkbox and radio button labels, as these labels can be configured separately. The text style definition includes font family, font size, font color, text style, and line height. You can also set the inner and outer spacing, width, and alignment. On top of these text styles, you can also set the label position (top, left, right) and the required color for your field labels.
 - **Input fields** are grouped into 3 categories:
-  1. Text input, dropdown, and lookup fields: These three visual styles of fields share the same style definition. You can define font family, size, color, and style for placeholder and input text styles. You can also set the field background color, menu background color, rounded corners, border, size alignment, and inner and outer spacing. Note that the field label can be configured in text styles.
+  1. Text input, dropdown, and lookup fields: These three visual styles of fields share the same style definition. You can define font family, size, color, and style for placeholder and input text styles. You can also set the field background color, menu background color, rounded corners, border, size alignment, and inner and outer spacing. The field label can be configured in text styles.
   1. Radio button: The radio button has its own label configuration, allowing you to set the font family and size. You can set the text color, styles, and background color for all options and for the selected option. You can also define rounded corners, width, and inner and outer spacing of your radio buttons.
-  1. Checkbox - checkbox field has its own label configuration allowing you to set the font family, size. You can set different text color, styles and background color for all options and for the selected option. You can also define rounded corners, width, the inner and outer spacing of your checkboxes.
+  1. Checkbox - checkbox field has its own label configuration allowing you to set the font family, size. You can set different text color, styles, and background color for all options and for the selected option. You can also define rounded corners, width, the inner and outer spacing of your checkboxes.
 - **Buttons and links**: The button definition allows you to set font family, size, color, text styles, button color, border alignment, and the inner and outer spacing. The hyperlink definition allows you to set the font family, size, color, and text styles.
 
 > [!NOTE]

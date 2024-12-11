@@ -69,6 +69,7 @@ For more information, see [Use custom connectors with the timeline control](/pow
 > -	msdyncrm_marketingemail
 > -	msevtmgt_event
 > -	msdyncrm_marketingform
+> -	msdynmkt_marketingform
 > -	msdyncrm_website
 > -	msdynmkt_email
 > -	msdynmkt_pushnotification

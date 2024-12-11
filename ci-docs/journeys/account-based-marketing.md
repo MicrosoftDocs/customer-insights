@@ -7,6 +7,7 @@ author: alfergus
 ms.author: alfergus
 search.audienceType: 
   - enduser
+ms.custom: outbound-marketing
 ---
 
 # Account-based marketing
