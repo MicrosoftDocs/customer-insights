@@ -30,6 +30,7 @@ Watch this brief video for an overview of the Optimizely integration with Custom
 > [!TIP]
 > Sign up to [request access to the preview version](https://forms.office.com/r/6NK6uj6f7f) of the real-time personalization features and [read the blog about the announcement](https://cloudblogs.microsoft.com/dynamics365/?p=188733).
 --->
+
 > [!NOTE]
 > The preview is currently at capacity and new requests to join aren't being accepted at this time. Please check back next week as we work to increase preview capacity.
 
