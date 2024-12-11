@@ -1,10 +1,10 @@
 ---
 title: "Export segments to Google Ads (preview)"
 description: "Learn how to configure the connection and export to Google Ads."
-ms.date: 12/05/2024
+ms.date: 12/11/2024
 ms.topic: how-to
-author: Scott-Stabbert
-ms.author: sstabbert
+author: JimsonChalissery
+ms.author: jimsonc
 ms.reviewer: mhart
 ---
 

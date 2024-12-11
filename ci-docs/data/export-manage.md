@@ -1,10 +1,10 @@
 ---
 title: "Set up and manage exports (preview)"
 description: "Manage exports to share data."
-author: Scott-Stabbert
-ms.author: sstabbert
+author: JimsonChalissery
+ms.author: jimsonc
 ms.reviewer: mhart
-ms.date: 12/05/2024
+ms.date: 12/11/2024
 ms.topic: how-to
 ms.custom: bap-template
 ---
