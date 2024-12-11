@@ -19,6 +19,12 @@ Watch this brief video to learn more about real-time web personalization.
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RW1hyhp]
 
+<!--- Form accidently removed. Go back to original wording when the form is back
+
+> [!TIP]
+> Sign up to [request access to the preview version](https://forms.office.com/r/6NK6uj6f7f) of the real-time personalization features
+--->
+
 > [!NOTE]
 > The preview is currently at capacity and new requests to join aren't being accepted at this time. Please check back next week as we work to increase preview capacity.
 
