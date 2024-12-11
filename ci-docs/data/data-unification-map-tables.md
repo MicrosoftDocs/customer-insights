@@ -1,7 +1,7 @@
 ---
 title: "Describe customer data for data unification"
 description: "The first step in the unification process is selecting tables, columns, primary keys, and data types to map data to the unified customer profile."
-ms.date: 11/27/2024
+ms.date: 12/11/2024
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert

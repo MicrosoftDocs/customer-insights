@@ -1,7 +1,7 @@
 ---
 title: "Data unification overview"
 description: "Learn how to unify your data to create a single master dataset of customer profiles."
-ms.date: 11/27/2024
+ms.date: 12/11/2024
 ms.reviewer: v-wendysmith
 ms.topic: overview
 author: Scott-Stabbert
