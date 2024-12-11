@@ -7,6 +7,7 @@ author: alfergus
 ms.author: alfergus
 search.audienceType: 
   - developer
+ms.custom: outbound-marketing
 ---
 
 # Build an outbound marketing approvals feature using Power Automate

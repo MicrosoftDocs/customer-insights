@@ -9,6 +9,7 @@ search.audienceType:
   - admin
   - customizer
   - enduser
+ms.custom: outbound-marketing
 ---
 
 # Configure and authenticate social media accounts in outbound marketing

@@ -7,6 +7,7 @@ author: alfergus
 ms.author: alfergus
 search.audienceType: 
   - developer
+ms.custom: outbound-marketing
 ---
 
 # Self-hosted custom event website in outbound marketing

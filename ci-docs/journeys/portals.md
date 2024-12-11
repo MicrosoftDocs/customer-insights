@@ -9,6 +9,7 @@ search.audienceType:
   - admin
   - customizer
   - enduser
+ms.custom: outbound-marketing
 ---
 
 # Create interactive features with or without portals in outbound marketing

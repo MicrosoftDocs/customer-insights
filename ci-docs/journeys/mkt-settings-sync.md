@@ -9,6 +9,7 @@ search.audienceType:
   - admin
   - customizer
   - enduser
+ms.custom: outbound-marketing
 ---
 
 # Sync entities and track insights using Dataset configuration in outbound marketing

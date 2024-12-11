@@ -9,6 +9,7 @@ search.audienceType:
   - admin
   - customizer
   - enduser
+ms.custom: outbound-marketing
 ---
 
 # The lead lifecycle

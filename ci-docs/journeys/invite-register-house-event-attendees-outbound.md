@@ -9,6 +9,7 @@ search.audienceType:
   - admin
   - customizer
   - enduser
+ms.custom: outbound-marketing
 ---
 
 # Invite, register, and house event attendees in outbound marketing

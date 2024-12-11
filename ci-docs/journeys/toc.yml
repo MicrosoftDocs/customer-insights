@@ -230,6 +230,8 @@
         href: real-time-marketing-redesigned-segment-builder.md
       - name: Copilot - Target the right customers using query assist
         href: real-time-marketing-natural-language-segments.md
+      - name: Tabs and settings for segments
+        href: segment-tabs-settings.md
       - name: Sync data tables into the segment builder
         href: real-time-marketing-sync-data-tables.md
       - name: Create segments using unified profiles and customer measures
@@ -356,12 +358,12 @@
     items:
     - name: Lead generation and management overview
       href: lead-generation-overview.md
+    - name: Create a scoring model
+      href: real-time-marketing-create-lead-scoring-model.md    
     - name: Qualify the best leads
       href: real-time-marketing-qualify-leads.md
     - name: Create sales activities from lead signals
       href: real-time-marketing-optimize-lead-management.md
-    - name: Create a scoring model
-      href: real-time-marketing-create-lead-scoring-model.md
     - name: Visualize results from your scoring model
       href: real-time-marketing-visualize-scoring-model.md
     - name: Security roles for lead scoring and qualification

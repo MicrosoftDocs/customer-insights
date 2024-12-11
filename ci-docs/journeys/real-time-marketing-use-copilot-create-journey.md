@@ -1,7 +1,7 @@
 ---
-title: "Preview: Copilot - Create journeys using AI assistance"
-description: Enable the journey copilot to create marketing journeys using everyday language and provide feedback to improve results.
-ms.date: 05/08/2024
+title: 'Preview: Copilot - Create journeys using AI assistance'
+description: Create marketing journeys using everyday language with Copilot. Enable the feature, provide feedback, and streamline your marketing efforts.
+ms.date: 11/22/2024
 ms.topic: get-started
 author: alfergus
 ms.author: alfergus
@@ -10,6 +10,7 @@ ms.custom:
   - ai-gen-docs-bap
   - ai-gen-desc
   - ai-seo-date:08/15/2023
+  - ai-gen-description
 ---
 
 # Preview: Copilot - Create journeys using AI assistance
@@ -79,7 +80,7 @@ The following section outlines some "do's" and "don'ts" for using the journey co
         - *Explanation*:  This prompt is good as it specifies the target audience (Tier 1 contacts), ensuring the journey is relevant and targeted.
 - **Do: Create prompts that are at least 70 characters long. This helps provide enough information for Copilot to interpret.**
     - **Example 1**: "Use an A/B test to try out two different promotional emails when a customer completes a purchase." (96 characters)
-    - **Example 2**: "Send a series of 3 emails and SMS messages regarding Contoso's new product line." (75 characters)
+    - **Example 2**: "Send a series of three emails and SMS messages regarding Contoso's new product line." (75 characters)
     - **Example 3**: "Send personalized messages to contacts when they submit a marketing form." (73 characters)
 - **Don't: Use vague statements.**
     - **Example 1**: "Create a nurture journey with monthly emails."

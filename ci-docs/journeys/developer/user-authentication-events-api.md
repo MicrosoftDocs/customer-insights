@@ -7,6 +7,7 @@ author: alfergus
 ms.author: alfergus
 search.audienceType: 
   - developer
+ms.custom: outbound-marketing
 ---
 
 # User authentication using events API in outbound marketing

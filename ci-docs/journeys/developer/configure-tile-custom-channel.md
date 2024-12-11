@@ -7,6 +7,7 @@ author: alfergus
 ms.author: alfergus
 search.audienceType: 
   - developer
+ms.custom: outbound-marketing
 ---
 
 # Step 2: Configure the custom channel tile in outbound marketing

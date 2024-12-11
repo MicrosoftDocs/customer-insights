@@ -1,11 +1,15 @@
 ---
 title: Copilot - Use AI to kickstart email creation
-description: Learn how to use Copilot to kickstart email content ideas in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/21/2024
+description: Discover how Copilot in Dynamics 365 Customer Insights - Journeys can help you create engaging email content. Follow our guide to get started with AI-generated ideas.
+ms.date: 11/22/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
 ms.collection: bap-ai-copilot
+ms.custom:
+  - ai-gen-docs-bap
+  - ai-gen-description
+  - ai-seo-date:11/22/2024
 ---
 
 # Copilot - Use AI to kickstart email creation
@@ -61,7 +65,7 @@ The content ideas copilot is like a brainstorming partner that can help inspire 
 ## How to use Copilot to generate content ideas
 
 1. Select the **Copilot** button in the email editor toolbox or the Copilot button above editing text on canvas to open the Copilot pane.
-1. If your email is not empty (contains at least 10 words), the copilot, based on your email content, will automatically fill in recommended **key points** to generate new ideas. You can then refine them according to your needs. If your email is empty (or contains less than 10 words), choose the **Topic of your email** from the list of suggested topics or select **Custom**.
+1. If your email isn't empty (contains at least 10 words), the copilot, based on your email content, will automatically fill in recommended **key points** to generate new ideas. You can then refine them according to your needs. If your email is empty (or contains fewer than 10 words), choose the **Topic of your email** from the list of suggested topics or select **Custom**.
     1. If you select one of the suggested topics, Copilot automatically fills in sample key points for you, which you can modify according to your needs.
     1. If you select a custom topic, add up to five key points that you want to get across in your email (a minimum of three words per key point is recommended). You can also use premade examples (select the **See examples** link and then **Use this example** for a selected set of key points).
 1. Select the **Tone of voice**.
