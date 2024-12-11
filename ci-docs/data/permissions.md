@@ -1,7 +1,7 @@
 ---
 title: "Assign user permissions"
 description: "Learn how to add user permissions in Customer Insights - Data."
-ms.date: 09/07/2023
+ms.date: 12/02/2024
 ms.reviewer: mhart
 ms.topic: how-to
 author: Scott-Stabbert
