@@ -1,7 +1,7 @@
 ---
 title: "Connect to Common Data Model tables in Azure Data Lake Storage"
 description: "Work with data from Azure Data Lake Storage."
-ms.date: 12/09/2024
+ms.date: 12/11/2024
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -41,6 +41,8 @@ Ingest data into Dynamics 365 Customer Insights - Data using your Azure Data Lak
 - Customer Insights - Data doesn't support columns of decimal type with precision greater than 16.
 
 ## Connect to Azure Data Lake Storage
+
+[!INCLUDE [data-connection-names](./includes/data-connection-names.md)]
 
 1. Go to **Data** > **Data sources**.
 1. Select **Add a data source**.

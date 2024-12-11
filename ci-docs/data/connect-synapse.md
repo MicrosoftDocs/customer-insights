@@ -1,7 +1,7 @@
 ---
 title: Connect an Azure Synapse Analytics data source (preview)
 description: Use a database in Azure Synapse as a data source in Dynamics 365 Customer Insights.
-ms.date: 11/21/2023
+ms.date: 12/11/2024
 ms.reviewer: v-wendysmith
 ms.topic: how-to
 author: Scott-Stabbert
@@ -51,6 +51,8 @@ For more information, see [Azure Synapse overview](/azure/synapse-analytics/over
 - If your Customer Insights environment stores data in your [own Azure Data Lake Storage](own-data-lake-storage.md), the user who sets up the connection to Azure Synapse Analytics needs at least the built-in **Reader** role on the Data Lake Storage account. For more information, see [Assign Azure roles using the Azure portal](/azure/role-based-access-control/role-assignments-portal).
 
 ## Connect to the data lake database in Azure Synapse Analytics
+
+[!INCLUDE [data-connection-names](./includes/data-connection-names.md)]
 
 1. Go to **Data** > **Data sources**.
 
