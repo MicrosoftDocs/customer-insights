@@ -1,7 +1,7 @@
 ---
 title: "Remove duplicates before unifying data"
 description: "The second step in the unification process is selecting which record to keep when duplicates are found."
-ms.date: 11/26/2024
+ms.date: 12/11/2024
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -50,6 +50,8 @@ A good rule identifies a unique customer. Consider your data. It might be enough
 
 ## Select merge preferences
 
+When rules are run and duplicate records are identified for a customer, a "winner row" is selected based on the merge policy. The winner row represents the customer in the next unification step that matches records between tables. Data in the non-winner (“alternate") rows is used in the Matching rules unification step to match records from other tables to the winner row. This approach improves matching results by allowing information like previous phone numbers to help identify matching records. The winner row can be configured to be the most filled, most recent, or least recent of the duplicate records found.
+
 1. Select a table and then **Edit merge preferences**. The **Merge preferences** pane appears.
 
 1. Choose one of three options to determine which record to keep if a duplicate is found:
@@ -67,13 +69,6 @@ A good rule identifies a unique customer. Consider your data. It might be enough
 
 After defining the deduplication rules and merge preferences, select **Next**.
 
-### Winner and alternate records
-
-Once rules are run and duplicate records are identified, the deduplication process selects a "Winner row." The nonwinner rows are called "Alternate rows." Alternate rows are used in the Matching rules unification step to match records from other tables to the winner row. Rows are matched against the data in the alternate rows in addition to the winner row.
-
-Once you add a rule to a table, you can configure which row to select as the winner row through **Merge preferences**. Merge preferences are set per table. No matter what merge policy is selected, if there's a tie for a winner row, then the first row in the data order is used as the tiebreaker.
-
-  
 > [!div class="nextstepaction"]
 > [Next step for a single table: View unified data](data-unification-merge-tables.md)
 
