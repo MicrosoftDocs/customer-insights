@@ -1,7 +1,7 @@
 ---
 title: Set default configuration for Customer Insights - Journeys forms
 description: Set default configuration for all newly created forms in Dynamics 365 Customer Insights - Journeys.
-ms.date: 12/05/2024
+ms.date: 12/12/2024
 ms.topic: article
 author: petrjantac
 ms.author: alfergus
@@ -107,10 +107,10 @@ Matching rules helps to configure how an existing record can be updated or when 
 
 The Lead-Contact Mapping section is available only for *marketing form* type. To use a combined Lead & Contact audience, it's important to define how the attributes are mapped to each other. For example, you need to link the Contact First Name attribute to the Lead First Name attribute, so the form field First Name can update attributes for both entities.
 
-The combined Lead & Contact audience relies on [entity columns mapping](https://learn.microsoft.com/power-apps/maker/data-platform/map-entity-fields), which can be defined In Power Apps. The mapping uses the *Parent contact* relationship.
+The combined Lead & Contact audience relies on [entity columns mapping](/power-apps/maker/data-platform/map-entity-fields), which can be defined In Power Apps. The mapping uses the *Parent contact* relationship.
 
 > [!IMPORTANT]
-> If you use solutions as the mechanism for implementing application lifecycle management (ALM) you should define the mappings as a [solution in Power Apps](https://learn.microsoft.com/power-apps/maker/data-platform/solutions-overview).
+> If you use solutions as the mechanism for implementing application lifecycle management (ALM) you should define the mappings as a [solution in Power Apps](/power-apps/maker/data-platform/solutions-overview).
 
 > [!div class="mx-imgBorder"]
 > ![Mapping in global form settings.](media/real-time-marketing-form-global-settings-mapping.png)
