@@ -26,25 +26,25 @@ A good rule identifies a unique customer. Consider your data. It might be enough
 
    :::image type="content" source="media/m3_duplicates_showmore.png" alt-text="Screenshot of Deduplication rules page with table highlighted and Add rule displayed"  lightbox="media/m3_duplicates_showmore.png":::
 
-   1. In the **Add rule** pane, enter the following information:
-      - **Select field**: Choose from the list of available fields from the table that you want to check for duplicates. Choose fields that are likely unique for every single customer. For example, an email address, or the combination of name, city, and phone number.
+1. In the **Add rule** pane, enter the following information:
+   - **Select field**: Choose from the list of available fields from the table that you want to check for duplicates. Choose fields that are likely unique for every single customer. For example, an email address, or the combination of name, city, and phone number.
 
       - **Normalize**: Select normalization options for the column. Normalization only impacts the matching step, and doesn't change the data.
 
          [!INCLUDE [normalization-include](includes/normalization.md)]
 
-      - **Precision**: Set the level of precision. [Precision is used for exact match and fuzzy matching](data-unification-best-practices.md), and determines how close two strings need to be in order to be considered a match.
-        - **Basic**: Choose from *Low (30%)*, *Medium (60%)*, *High (80%)*, and *Exact (100%)*. Select **Exact** to only match records that match 100 percent.
-        - **Custom**: Set a percentage that records need to match. The system only matches records passing this threshold.
-      - **Name**: Name for the rule.
+   - **Precision**: Set the level of precision. [Precision is used for exact match and fuzzy matching](data-unification-best-practices.md), and determines how close two strings need to be in order to be considered a match.
+      - **Basic**: Choose from *Low (30%)*, *Medium (60%)*, *High (80%)*, and *Exact (100%)*. Select **Exact** to only match records that match 100 percent.
+      - **Custom**: Set a percentage that records need to match. The system only matches records passing this threshold.
+   - **Name**: Name for the rule.
 
       :::image type="content" source="media/m3_duplicates_add.png" alt-text="Screenshot of Add rule pane for removing duplicates.":::
 
-   1. Optionally, select **Add** > **Add condition** to add more conditions to the rule. Conditions are connected with a logical AND operator and thus only executed if all conditions are met.
+1. Optionally, select **Add** > **Add condition** to add more conditions to the rule. Conditions are connected with a logical AND operator and thus only executed if all conditions are met.
 
-   1. Optionally, **Add** > **Add exception** to [add exceptions to the rule](data-unification-match-tables.md#add-exceptions-to-a-rule). Exceptions are used to address rare cases of false positives and false negatives.
+1. Optionally, **Add** > **Add exception** to [add exceptions to the rule](data-unification-match-tables.md#add-exceptions-to-a-rule). Exceptions are used to address rare cases of false positives and false negatives.
 
-   1. Select **Done** to create the rule.
+1. Select **Done** to create the rule.
 
 1. Optionally, [add more rules](#define-deduplication-rules).
 
