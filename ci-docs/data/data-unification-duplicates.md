@@ -13,7 +13,7 @@ ms.custom: bap-template
 
 The Deduplication rules step of unification finds and removes duplicate records for a customer from a source table so that each customer is represented by a single row in each table. Each table is deduplicated separately using rules to identify the records for a given customer.
 
-Rules are processed in order.  After all rules have been run on all the records in a table, match groups that share a common row are combined into a single match group.
+Rules are processed in order. After all rules have been run on all the records in a table, match groups that share a common row are combined into a single match group.
 
 ## Define deduplication rules
 
@@ -29,15 +29,9 @@ A good rule identifies a unique customer. Consider your data. It might be enough
 1. In the **Add rule** pane, enter the following information:
    - **Select field**: Choose from the list of available fields from the table that you want to check for duplicates. Choose fields that are likely unique for every single customer. For example, an email address, or the combination of name, city, and phone number.
 
-   - **Normalize**: Select [normalization options](data-unification-best-practices.md#normalization) for the column. Normalization only impacts the matching step, and doesn't change the data.
-      - **Numerals**: Converts Unicode symbols that represent numbers to simple numbers.
-      - **Symbols**: Removes symbols and special characters such as !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~. For example, *Head&Shoulder* becomes *HeadShoulder*.
-      - **Text to lower case**: Converts upper case characters to lower case. "ALL CAPS and Title Case" become "all caps and title case."
-      - **Type (Phone, Name, Address, Organization)**: Standardizes names, titles, phone numbers, and addresses.
-      - **Unicode to ASCII**: Converts Unicode characters to their ASCII letter equivalent. For example, the accented ề converts to the e character.
-      - **Whitespace**: Removes all spaces. *Hello   World* becomes *HelloWorld*.
-      - **Alias mapping**: Allows you to upload a custom list of string pairs to indicate strings that should always be considered an exact match.
-      - **Custom bypass**: Allows you to upload a custom list of strings to indicate strings that should never be matched.
+      - **Normalize**: Select normalization options for the column. Normalization only impacts the matching step, and doesn't change the data.
+
+         [!INCLUDE [normalization-include](includes/normalization.md)]
 
    - **Precision**: Set the level of precision. [Precision is used for exact match and fuzzy matching](data-unification-best-practices.md), and determines how close two strings need to be in order to be considered a match.
       - **Basic**: Choose from *Low (30%)*, *Medium (60%)*, *High (80%)*, and *Exact (100%)*. Select **Exact** to only match records that match 100 percent.
@@ -54,11 +48,13 @@ A good rule identifies a unique customer. Consider your data. It might be enough
 
 1. Optionally, [add more rules](#define-deduplication-rules).
 
-## Edit merge preferences
+## Select merge preferences
 
-1. Select a table and then **Edit merge preferences**.
+When rules are run and duplicate records are identified for a customer, a "winner row" is selected based on the merge policy. The winner row represents the customer in the next unification step that matches records between tables. Data in the non-winner (“alternate") rows is used in the Matching rules unification step to match records from other tables to the winner row. This approach improves matching results by allowing information like previous phone numbers to help identify matching records. The winner row can be configured to be the most filled, most recent, or least recent of the duplicate records found.
 
-1. In the **Merge preferences** pane, choose one of three options to determine which record to keep if a duplicate is found:
+1. Select a table and then **Edit merge preferences**. The **Merge preferences** pane appears.
+
+1. Choose one of three options to determine which record to keep if a duplicate is found:
    - **Most filled**: Identifies the record with most populated columns as the winner record. It's the default merge option.
    - **Most recent**: Identifies the winner record based on the most recency. Requires a date or a numeric field to define the recency.
    - **Least recent**: Identifies the winner record based on the least recency. Requires a date or a numeric field to define the recency.
@@ -71,8 +67,8 @@ A good rule identifies a unique customer. Consider your data. It might be enough
 
 1. Select **Done** to apply your merge preferences.
 
-1. After defining the deduplication rules and merge preferences, select **Next**.
-  
+After defining the deduplication rules and merge preferences, select **Next**.
+
 > [!div class="nextstepaction"]
 > [Next step for a single table: View unified data](data-unification-merge-tables.md)
 

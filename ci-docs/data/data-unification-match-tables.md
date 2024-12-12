@@ -65,15 +65,9 @@ The warning next to a table name means that no match rule is defined for a match
 
    - **Select Table/Field (second row)**: Choose a column that relates to the column of the table specified in the first row.
 
-   - **Normalize**: Select [normalization options](data-unification-best-practices.md#normalization) for the column.
-      - **Numerals**: Converts Unicode symbols that represent numbers to simple numbers.
-      - **Symbols**: Removes symbols and special characters such as !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~. For example, *Head&Shoulder* becomes *HeadShoulder*.
-      - **Text to lower case**: Converts upper case characters to lower case. "ALL CAPS and Title Case" become "all caps and title case."
-      - **Type (Phone, Name, Address, Organization)**: Standardizes names, titles, phone numbers, and addresses.
-      - **Unicode to ASCII**: Converts Unicode characters to their ASCII letter equivalent. For example, the accented ề converts to the e character.
-      - **Whitespace**: Removes all spaces. *Hello   World* becomes *HelloWorld*.
-      - **Alias mapping**: Allows you to upload a custom list of string pairs to indicate strings that should always be considered an exact match.
-      - **Custom bypass**: Allows you to upload a custom list of strings to indicate strings that should never be matched.
+   - **Normalize**: Select normalization options for the column.
+
+      [!INCLUDE [normalization-include](includes/normalization.md)]
 
    - **Precision**: Set the level of precision to apply for this condition. [Precision is used for exact match and fuzzy matching](data-unification-best-practices.md), and determines how close two strings need to be in order to be considered a match.
      - **Basic**: Choose from *Low (30%)*, *Medium (60%)*, *High (80%)*, and *Exact (100%)*. Select **Exact** to only match records that match 100 percent.
