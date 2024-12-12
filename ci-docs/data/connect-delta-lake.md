@@ -1,7 +1,7 @@
 ---
 title: "Connect to Delta tables in Azure Data Lake Storage"
 description: "Work with data stored in Delta tables from Azure Data Lake Storage."
-ms.date: 11/06/2024
+ms.date: 12/11/2024
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -40,6 +40,8 @@ Customer Insights - Data supports Databricks features with a 'minReaderVersion' 
 - Data in your Azure Data Lake Storage must be in Delta tables. Customer Insights - Data relies on the version property in the table's history to identify the latest changes for incremental processing.
 
 ## Connect to Delta data from Azure Data Lake Storage
+
+[!INCLUDE [data-connection-names](./includes/data-connection-names.md)]
 
 1. Go to **Data** > **Data sources**.
 
