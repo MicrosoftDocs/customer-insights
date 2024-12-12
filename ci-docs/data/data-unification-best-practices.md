@@ -1,7 +1,7 @@
 ---
 title: Data unification best practices
 description: Learn about the concepts and best practices when unifying data in Customer Insights - Data.
-ms.date: 07/11/2024
+ms.date: 12/11/2024
 ms.reviewer: v-wendysmith
 ms.topic: conceptual
 author: Scott-Stabbert
@@ -64,31 +64,11 @@ The combination of Rule 1 and Rule 2 creates a single match group because they s
 
 You decide the number of rules and conditions that uniquely identify your customers. The exact rules depend on the data you have available to match, the quality of your data, and how exhaustive you want the deduplication process to be.
 
-## Winner and alternate records
-
-Once rules are run and duplicate records are identified, the deduplication process selects a "Winner row." The nonwinner rows are called "Alternate rows." Alternate rows are used in the Matching rules unification step to match records from other tables to the winner row. Rows are matched against the data in the alternate rows in addition to the winner row.
-
-Once you add a rule to a table, you can configure which row to select as the winner row through **Merge preferences**. Merge preferences are set per table. No matter what merge policy is selected, if there's a tie for a winner row, then the first row in the data order is used as the tiebreaker.
-
 ## Normalization
 
-Use normalization to standardize data for better matching. Normalization performs well on large sets of data. 
+Use normalization to standardize data for better matching. Normalization performs well on large sets of data.
 
 The normalized data is only used for comparison purposes to match customer records more effectively. It doesn't change the data in the final unified customer profile output.
-
-| Normalization       | Examples               |
-| ------------------- | ---------------------- |
-| Numerals            | Converts many Unicode symbols that represent numbers to simple numbers.<br>Examples: ❽ and Ⅷ are both normalized to the number 8.<br>Note: The symbols must be encoded in Unicode Point Format.  |
-| Symbols             | Removes symbols and special characters.<br>Examples: !?"#$%&'( )+,.-_/:;<=>@^_\~{}`[ ]     |
-| Text to lower case  | Converts upper case characters to lower case. <br>Example: "THIS Is aN EXamplE" is converted to "this is an example"   |
-| Type – Phone        | Converts phones in various formats to digits, and accounts for variations in how country codes and extensions are presented. <br>Example: +01 425.555.1212 = 1 (425) 555-1212  |
-| Type - Name         | Converts over 500 common name variations and titles. <br>Examples: "debby" -> "deborah" "prof" and "professor" -> "Prof." |
-| Type - Address      | Converts common parts of addresses <br>Examples: "street" -> "st" and "northwest" -> "nw"  |
-| Type - Organization | Removes around 50 company name "noise words" such as "co," "corp," "corporation," and "ltd."  |
-| Unicode to ASCII    | Converts Unicode characters to their ASCII letter equivalent <br>Example: The characters 'à,' 'á,' 'â,' 'À,' 'Á,' 'Â,' 'Ã,' 'Ä,' 'Ⓐ,' and 'Ａ' are all converted to 'a.'  |
-| Whitespace          | Removes all white space         |
-| Alias mapping       | Allows you to upload a custom list of string pairs that can then be used to indicate strings that should always be considered an exact match. <br>Use alias mapping when you have specific data examples you think should match, and aren't matched using one of the other normalization patterns. <br>Example: Scott and Scooter, or MSFT and Microsoft. |
-| Custom bypass       | Allows you to upload a custom list of strings that can then be used to indicate strings that should never be matched.<br>Custom bypass is useful when you have data with common values that should be ignored, such as a dummy phone number or a dummy email. <br>Example: Never match the phone 555-1212, or test@contoso.com   |
 
 ## Exact match
 
