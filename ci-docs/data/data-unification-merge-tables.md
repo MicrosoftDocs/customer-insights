@@ -1,7 +1,7 @@
 ---
 title: "Unify customer columns for data unification"
 description: "Merge columns to create unified customer profiles."
-ms.date: 01/08/2024
+ms.date: 12/11/2024
 ms.topic: how-to
 author: v-wendysmith
 ms.author: sstabbert
