@@ -1,7 +1,7 @@
 ---
-title: Customize form submission validation with Customer Insights - Journeys forms 
+title: Customize form submission validation
 description: Learn how to extend the back-end validation of form submission in Dynamics 365 Customer Insights - Journeys.
-ms.date: 12/5/2024
+ms.date: 12/12/2024
 ms.topic: article
 author: petrjantac
 ms.author: alfergus
@@ -11,24 +11,24 @@ search.audienceType:
   - enduser
 ---
 
-# Customize back-end validation of form submission
+# Customize form submission validation
 
-The client-side validation in marketing and event registration forms helps to ensure the validity of the data submitted by the customer. However, in some cases you may need a more complex validation. For example to compare submitted data with the data already existing in your system. To achieve that you can **build a custom plugin to validate the submitted data on the back-end** and trigger extra data processing logic.
+The client-side validation in marketing and event registration forms helps to ensure the validity of the data submitted by the customer. However, in some cases you may need a more complex validation. For example, you may need to compare submitted data with the data already existing in your system. To facilitate complex validation, this article details how you can build a custom plugin to validate the submitted data on the back-end and trigger extra data processing logic.
 
 ## Create a plugin
 
 > [!NOTE]
-> This example of custom plugin shows how to build back-end validation for the reCAPTCHA key. It can work as an inspiration for your validation flow. In case you want to integrate reCAPTCHA to your form, you can use the prebuilt plugin, and [follow this guide](real-time-marketing-form-custom-captcha.md).
+> This example of custom plugin shows how to build back-end validation for the reCAPTCHA key. It can work as inspiration for your validation flow. If you want to integrate reCAPTCHA to your form, you can use the prebuilt plugin, and [follow this guide](real-time-marketing-form-custom-captcha.md).
 
-### Create a Visual Studio Project for the plugin
+### Create a Visual Studio project for the plugin
 
-1. Open Visual Studio and create a new Class Library project using .NET Framework 4.6.2.
-1. In Solution Explorer, select **Manage NuGet Packages** and install `Microsoft.CrmSdk.CoreAssemblies`.
+1. Open **Visual Studio** and create a new class library project using .NET framework 4.6.2.
+1. In **Solution Explorer**, select **Manage NuGet Packages**, and install `Microsoft.CrmSdk.CoreAssemblies`.
 
 ### Create the plugin class
 
 1. Rename `Class1.cs` to `CustomValidationPlugin.cs`.
-1. Make the CustomValidationPlugin class inherit from the IPlugin interface and add the Execute method.
+1. Make the CustomValidationPlugin class inherit from the IPlugin interface and add the execute method.
 
     ```cs
     public class CustomValidationPlugin : IPlugin
@@ -40,7 +40,7 @@ The client-side validation in marketing and event registration forms helps to en
     }
     ```
 
-1. Add the following code into the execute method to retrieve context and tracing service.
+1. To retrieve context and tracing service, add the following code into the execute method.
 
     ```cs
     public void Execute(IServiceProvider serviceProvider)
@@ -55,7 +55,7 @@ The client-side validation in marketing and event registration forms helps to en
     }
     ```
 
-1. Add this code to retrieve the form submission parameter string. It's a JSON encoded string representing the fields that the user submitted in the form. This process retrieves this string and deserializes it using a Deserialize helper method and FormSubmissionRequest class that is defined later. This code checks that the Fields array contains a key for g-recaptcha-response. If the reCAPTCHA key isn't found, it returns skipping validation as the form that's processing didn't contain a recaptcha element.
+1. Add this code to retrieve the form submission parameter string. It's a JSON encoded string representing the fields that the user submitted in the form. This process retrieves the string and deserializes it using a deserialize helper method and FormSubmissionRequest class that is defined later. This code checks that the fields array contains a key for g-recaptcha-response. If the reCAPTCHA key isn't found, it returns skipping validation as the form that's processing didn't contain a recaptcha element.
 
     ```cs
     var requestString = (string)context.InputParameters["msdynmkt_formsubmissionrequest"];
@@ -67,7 +67,7 @@ The client-side validation in marketing and event registration forms helps to en
     }
     ```
 
-1. Add the following code to return if `g-recaptcha-token` value is null or empty.
+1. Add the following code to return if the `g-recaptcha-token` value is null or empty.
 
     ```cs
     if (String.IsNullOrEmpty(recaptchaToken))
@@ -116,9 +116,9 @@ The client-side validation in marketing and event registration forms helps to en
     }
     ```
 
-    First, the URL is defined, then an instance of `HttpClient` is created. A `FormUrlEncodedContent` object is created containing the `recaptchaToken` retrieved in previous steps and the secret key that is provided by Google. Then a `POST` request is sent and the status code is checked, if not successful it returns. If successful, it deserializes the response using the Deserialize helper method and `GRecaptchaResponse` that's defined later. It then creates a new `ValidateFormSubmissionResponse` object, serializes it, and sets it as the value of the output parameter `msdynmkt_validationresponse`, which is the one Microsoft service it uses to accept or reject the submission. Adding the `g-recaptcha-response` string to the `ValidationOnlyFields` list hides this field from the form submission in the UI.
+    First, the URL is defined, then an instance of `HttpClient` is created. A `FormUrlEncodedContent` object is created containing the `recaptchaToken` retrieved in previous steps and the secret key that is provided by Google. Then a `POST` request is sent and the status code is checked, if not successful it returns. If successful, it deserializes the response using the deserialize helper method and `GRecaptchaResponse` that's defined later. It then creates a new `ValidateFormSubmissionResponse` object, serializes it, and sets it as the value of the output parameter `msdynmkt_validationresponse`, which is the one Microsoft service it uses to accept or reject the submission. Adding the `g-recaptcha-response` string to the `ValidationOnlyFields` list hides this field from the form submission in the user interface.
 
-1. Add the following code to define Serialize and Deserialize helper methods.
+1. Add the following code to define serialize and deserialize helper methods.
 
     ```cs
     private T Deserialize<T>(string jsonString)
@@ -145,7 +145,7 @@ The client-side validation in marketing and event registration forms helps to en
     }
     ```
 
-1. Add the following code to define the classes needed to Serialize/Deserialize JSON strings objects.
+1. Add the following code to define the classes needed to serialize and deserialize JSON strings objects.
 
     ```cs
     public class FormSubmissionRequest
@@ -181,28 +181,25 @@ The client-side validation in marketing and event registration forms helps to en
 1. Choose **Office 365**.
 1. Select **Login**.
 1. Select **Register** and then **Register new assembly**.
-    > [!div class="mx-imgBorder"]
-    > ![Select Register and then Register new assembly.](media/real-time-marketing-form-custom-captcha-4.png)
+    :::image type="content" source="media/real-time-marketing-form-custom-captcha-4.png" alt-text="Select Register and then Register new assembly." lightbox="media/real-time-marketing-form-custom-captcha-4.png":::
 1. Select the **(...)** button in step 1 and select the dll built in previous steps.
 1. Select **Register selected plugin**.
 
-### Register Step
+### Register step
 
 1. Select **CustomValidationPlugin** from the list of the registered assemblies.
 1. Select **Register New Step**.
-1. Enter `msdynmkt_validateformsubmission` into Message text field.
+1. Enter `msdynmkt_validateformsubmission` into the message text field.
 1. Make sure **Execution Mode** is set as **Synchronous**.
-    > [!div class="mx-imgBorder"]
-    > ![Make sure Execution Mode is set as Synchonous.](media/real-time-marketing-form-custom-captcha-5.png)
+    :::image type="content" source="media/real-time-marketing-form-custom-captcha-5.png" alt-text="Make sure Execution Mode is set as Synchronous." lightbox="media/real-time-marketing-form-custom-captcha-5.png":::
 1. Make sure **Execution order** is set to `10`.
 1. Make sure **Event Pipeline Stage Of Execution** is set as **Post Operation**.
 1. Select **Register New Step**.
 
 ## Conclusion
 
-When a form with the `data-validate-submission` attribute is submitted, your custom plugin runs and validates the reCAPTCHA response with Google services. The custom plugin will run after the default Microsoft validation plugin. If there are no Microsoft captcha fields in the form, the Microsoft plugin sets `IsValid:false` and the submission fails unless you overwrite it with `IsValid:true`.
+When a form with the `data-validate-submission` attribute is submitted, your custom plugin runs and validates the reCAPTCHA response with Google services. The custom plugin runs after the default Microsoft validation plugin. If there are no Microsoft captcha fields in the form, the Microsoft plugin sets `IsValid:false` and the submission fails unless you overwrite it with `IsValid:true`.
 
-> [!div class="mx-imgBorder"]
-> ![Validation flow.](media/real-time-marketing-form-custom-captcha-6.png)
+:::image type="content" source="media/real-time-marketing-form-custom-captcha-6.png" alt-text="Validation flow." lightbox="media/real-time-marketing-form-custom-captcha-6.png":::
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
