@@ -54,7 +54,7 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 - **Personalize messages and make journey decisions based on web interactions** 
 	- With Customer Insights - Journeys, you can now track and leverage your customers’ online behavior to deliver personalized experiences across your digital channels. For example, you can boost conversions and customer loyalty by sending tailored offers after customers visit your website and show interest in a product or service. By tracking additional data about customers' online journeys, you can get valuable insights into your customers' preferences and needs and easily measure your campaign’s effectiveness.
 	- [Release plan](/dynamics365/release-plan/2024wave2/customer-insights/dynamics365-customer-insights-journeys/engage-customers-personalized-messages-based-website-interactions) 
-	- [Docs]() 
+	- [Docs](interaction-journey-decision.md) 
 
     :::image type="content" source="media/event-portal.png" alt-text="Create event portal with Power Pages." lightbox="media/event-portal.png":::
 	

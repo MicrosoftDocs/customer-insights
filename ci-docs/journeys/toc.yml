@@ -380,6 +380,8 @@
       href: real-time-marketing-cross-journey-analytics.md
     - name: How to use aggregate channel analytics
       href: real-time-marketing-channel-analytics.md
+    - name: "Preview: Make journey decisions based on web interactions"
+      href: interaction-journey-decision.md
     - name: How to use email insights
       href: email-insights.md
     - name: Customer Insights - Journeys integration with Microsoft Fabric
