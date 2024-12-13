@@ -25,6 +25,67 @@ Customer Insights - Journeys updates are [pushed to customers automatically](htt
 
 To submit and vote on **feature requests** and **product suggestions**, go to the [Dynamics 365 Application Ideas portal](https://experience.dynamics.com/ideas/categories/?forum=dfa5b83d-9e4c-e811-a956-000d3a1bef07&forumName=Dynamics%20365%20Marketing).
 
+## December 2024 update
+
+| App              | GA release      |
+|------------------|-----------------|
+| Customer Insights - Journeys        | 1.1.51539.118   |
+
+### General availability
+
+- **Boost participation, simplify planning with session-based registrations** 
+	- Event attendees can register for specific sessions in a multi-session event to ensure their event experience is relevant to their interests. With session registration data, you’ll be able to identify which sessions have the highest demand and tailor post-event follow-ups based on session participation.
+	- [Release plan](/dynamics365/release-plan/2024wave2/customer-insights/dynamics365-customer-insights-journeys/boost-participation-simplify-planning-session-based-event-registrations) 
+	- [Docs](real-time-journeys-event-session.md)  
+
+- **Easily deliver a common experience to multiple audiences with a single journey** 
+	- Reuse existing segments to deliver a common experience in a single journey – no need to create a new segment for the combined audience. If you already have segments for different purposes, you can easily create many different audiences by using one or more of them in a journey. There's no need to create another segment from scratch, combine existing segments into a composite segment, or make multiple copies of the same journeys. Specifying multiple segments is not only straightforward and efficient but also enables you to create different audiences quickly (no need to get the segment creation role or wait on other team members to create a segment for you). Additionally, it reduces the number of segments that need maintenance or cleanup later and doesn't add to the overall segment limit.
+	- [Docs](real-time-marketing-segment-based-journey.md#set-the-journey-start)  
+
+### Public preview
+
+- **Understand customer inflows and exits at every journey step** 
+	- It’s critical to understand exactly what happened to each customer who entered and exited your real-time journeys. With improved journey analytics, you’ll gain confidence in the processing of every step in your journey through improved metrics and an increased ability to export data. For example, if your journey uses exit or exclusion segments, you'll be able to see and understand why fewer customers started your journey than were in the entry segment. You'll also be able to see the list of customers who entered and exited each step in the journey and export lists of up to 50,000 people for further analysis. 
+	- [Release plan](/dynamics365/release-plan/2024wave2/customer-insights/dynamics365-customer-insights-journeys/confidently-understand-customer-inflows-exits-at-every-step-journey)
+	- [Docs](real-time-marketing-analytics.md#journey-operational-analytics)
+
+    :::image type="content" source="media/tile-analytics-release-planner.png" alt-text="Analytics shows you customer inflow and exit data at each step in the journey." lightbox="media/tile-analytics-release-planner.png":::
+	
+- **Personalize messages and make journey decisions based on web interactions** 
+	- With Customer Insights - Journeys, you can now track and leverage your customers’ online behavior to deliver personalized experiences across your digital channels. For example, you can boost conversions and customer loyalty by sending tailored offers after customers visit your website and show interest in a product or service. By tracking additional data about customers' online journeys, you can get valuable insights into your customers' preferences and needs and easily measure your campaign’s effectiveness.
+	- [Release plan](/dynamics365/release-plan/2024wave2/customer-insights/dynamics365-customer-insights-journeys/engage-customers-personalized-messages-based-website-interactions) 
+	- [Docs]() 
+
+    :::image type="content" source="media/event-portal.png" alt-text="Create event portal with Power Pages." lightbox="media/event-portal.png":::
+	
+- **Generate leads that link to an existing contact** 
+	- Your business has unique ways of organizing customer data and classifying potential leads. Now with real-time journey forms, you can manage your contacts and leads more effectively, according to your company's established processes. For example, you can recognize existing customers who fill out a lead form, so they're not mistaken for new leads.With this new set of capabilities to connect lead and contact data, you can choose how existing contact or lead details should be updated and define advanced matching rules to prevent duplicate records. Additionally, you can set defaults so everything is already configured each time a new form is created. All these new capabilities allow you to fine-tune how form data is handled to provide better quality leads and match your company's established processes.
+	- [Release plan](/dynamics365/release-plan/2024wave2/customer-insights/dynamics365-customer-insights-journeys/generate-leads-that-link-existing-contact) 
+	- [Docs](real-time-marketing-manage-forms.md#preview-parent-contact-for-lead)
+
+    :::image type="content" source="media/feature-release.png" alt-text="Generate leads that link to an existing contact." lightbox="media/feature-release.png":::
+	
+### Monthly enhancements
+
+- **Protect your forms with reCAPTCHA**
+    - Protecting your forms against bot attacks and malicious actors is crucial to ensure the quality of captured data. You can now leverage the new Customer Insights - Journeys reCAPTCHA plugin and simplified setup to integrate reCAPTCHA into your forms.
+    - [Docs](real-time-marketing-form-custom-captcha.md)
+
+- **Form with new layout structure improving accessibility and responsiveness**
+	- All newly created Customer Insights - Journeys forms have a new layout structure which no longer relies on the tables. This feature comes disabled by default. You can enable it in the feature switches.
+
+- **Streamline segment management with the ability to stop live segments**
+	- Marketers can now stop segments that are in a live state, eliminating the need for cumbersome workarounds like deleting the segment—risking loss of segment definitions—or leaving it in a draft state, which creates confusion about its usability. This capability enhances segment management by allowing marketers and admins to clearly distinguish between segments actively in use and those paused for adjustments. It reduces the risk of errors, such as using incorrect segments in journeys, and provides greater transparency and control over the segment catalog. By simplifying segment status management, this feature supports cleaner workflows, better organization, and more confident decision-making in audience targeting.
+
+### New blogs and scenario docs
+
+Learn how to make the most of the new Dynamics 365 Customer Insights features in our latest blogs and scenario docs:
+
+- [Optimize your email marketing campaigns with advanced analytics features - Microsoft Dynamics 365 Blog](https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2024/12/02/optimize-your-email-marketing-with-advanced-analytics-features/)
+- [Import contacts from excel to create segments in RTM – FastTrack blog](https://nam06.safelinks.protection.outlook.com/GetUrlReputation)
+- [LinkedIn Lead Sync Integration with Dynamics 365 Customer Insights – Journeys – FastTrack blog](https://community.dynamics.com/blogs/post/?postid=fb6ed89f-67a1-ef11-8a69-7c1e520b1f9b)
+- [Transition Customer Voice responses](transition-walkthrough-customer-voice.md)
+
 ## November 2024 update
 
 | App              | GA release      |
@@ -66,10 +127,6 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 - **Flexible enforcement model for text and custom channels**
 	- The enforcement model could be selected only for the email channel. With the latest update, you can select restrictive or non-restrictive enforcement model for text (SMS) and custom channels.
 	- [Docs](real-time-marketing-compliance-settings.md#consent-enforcement)  
-
-- **Form with new layout structure improving accessibility and responsivity** 
-	- All newly created Customer Insights Journeys forms have a new layout structure which no longer relies on the tables. This feature comes disabled by default. You can enable it in the feature switches.
-    - [Docs](real-time-marketing-troubleshooting-forms.md#the-form-styles-seem-broken-after-embedding-into-my-page-or-im-having-screen-reader-issues-with-the-form)
 
 ### New blogs and scenario docs
 
