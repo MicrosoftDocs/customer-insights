@@ -49,11 +49,12 @@ The second part of the **General** section allows you to choose the default acti
 ## Audience
 
 > [!IMPORTANT]
-> **Lead & Contact** audience is a preview feature. You can activate this new type of audience by going to **Settings** > **Feature Switches** > **Forms**.
->
 > A preview feature is a feature that is not complete but is made available before it’s officially in a release so customers can get early access and provide feedback. Preview features aren’t meant for production use and may have limited or restricted functionality.
 >
 > Microsoft doesn't provide support for this preview feature. Microsoft Dynamics 365 Technical Support won’t be able to help you with issues or questions. Preview features aren’t meant for production use, especially to process personal data or other data that are subject to legal or regulatory compliance requirements.
+
+> [!TIP]
+> **Lead & Contact** audience is a preview feature. To activate the new audience, go to **Settings** > **Feature switches** > **Forms**.
 
 The **Audience** section allows you to set the default target audience for your newly created forms. The *Audience settings* determine which audience (entity record) is used in the submission processing and conditions under which a new record is created or an existing record is updated. All *Audience settings* are visible in the form editor, allowing users to select their preferred audience when creating a new form.
 

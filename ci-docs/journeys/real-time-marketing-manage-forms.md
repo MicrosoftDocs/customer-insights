@@ -1,7 +1,7 @@
 ---
 title: Manage Customer Insights - Journeys forms
 description: Discover how to manage and style forms in Dynamics 365 Customer Insights - Journeys. Edit, unpublish, and customize forms with ease. Learn more now!
-ms.date: 12/10/2024
+ms.date: 12/12/2024
 ms.topic: article
 author: petrjantac
 ms.author: alfergus
@@ -18,12 +18,12 @@ This article explains how to edit, unpublish, and manage forms in Customer Insig
 
 ## Edit a live form
 
-If your form has been already published and you need to update it, select the **Edit** button on the top ribbon. You can continue editing your live form and all changes are automatically published once you select the **Save** button.
+If your form is already published and you need to update it, select the **Edit** button on the top ribbon. You can continue editing your live form and all changes are automatically published once you select the **Save** button.
 
 > [!IMPORTANT]
 > If you choose to create a copy of the form, you will have to publish the newly created copy.
 
-The form is stored on a CDN where all data is cached to provide the shortest possible loading times to the visitors of your webpage. It may take up to 10 minutes before the cache is refreshed and before you can see the changes on your webpage. You can check the result of the changes in your page if you add this parameter `#d365mkt-nocache` to your webpage URL. Never share the link to your page including this parameter with your customers. The parameter bypasses the CDN cache and slows down the page loading.
+The form is stored on a content delivery network (CDN) where all data is cached to provide the shortest possible loading times to the visitors of your webpage. It can take up to 10 minutes before the cache is refreshed and before you can see the changes on your webpage. You can check the result of the changes in your page if you add this parameter `#d365mkt-nocache` to your webpage URL. Never share the link to your page including this parameter with your customers. The parameter bypasses the CDN cache and slows down the page loading.
 
 ## Unpublish a form
 
@@ -33,8 +33,7 @@ To unpublish a live form, select the **Stop** button. The form is removed from t
 
 Once you select a field on the canvas, you can see its properties in the right pane.
 
-> [!div class="mx-imgBorder"]
-> ![Field properties are opened once you add a field to the form.](media/real-time-marketing-form-properties.png)
+:::image type="content" source="media/real-time-marketing-form-properties.png" alt-text="Field properties are opened once you add a field to the form." lightbox="media/real-time-marketing-form-properties.png":::
 
 - **Placeholder text**: The placeholder inside the field. The placeholder automatically disappears once the user starts typing into the field.
 - **Default value**: Set the default value for this field. The placeholder isn't visible if the default value is set.
@@ -52,8 +51,7 @@ The **Theme** section can be opened by selecting the brush icon in the right pan
 
 The theme feature is a user-friendly interface for editing CSS class definitions in the form HTML. It works only with out-of-the-box form styles. Custom CSS classes aren't visualized, but you can still edit your custom CSS classes using the HTML code editor.
 
-> [!div class="mx-imgBorder"]
-> ![Edit style of your input field using Theme.](media/real-time-marketing-form-theme.png)
+:::image type="content" source="media/real-time-marketing-form-theme.png" alt-text="Edit style of your input field using Theme." lightbox="media/real-time-marketing-form-theme.png":::
 
 **Theme** section allows you to configure:
 
@@ -87,8 +85,7 @@ There are two ways to use custom fonts in your form:
 
 The theme assistant is a Copilot feature in Customer Insights - Journeys. You can use the theme assistant to fetch styles from an existing website that you own and control. To use a theme, enter the website URL and select **Fetch styles**. This process might take a few minutes. You can continue your work and return back later to check the result. Once the assistant fetches the styles from your website, it applies the styles to the theme of your form.
 
-> [!div class="mx-imgBorder"]
-> ![Fetch styles from your website using Copilot.](media/real-time-marketing-form-theme-copilot.png)
+:::image type="content" source="media/real-time-marketing-form-theme-copilot.png" alt-text="Fetch styles from your website using Copilot." lightbox="media/real-time-marketing-form-theme-copilot.png":::
 
 ## Preview: Parent contact for lead
 
@@ -98,7 +95,7 @@ The theme assistant is a Copilot feature in Customer Insights - Journeys. You ca
 > Microsoft doesn't provide support for this preview feature. Microsoft Dynamics 365 Technical Support won’t be able to help you with issues or questions. Preview features aren’t meant for production use, especially to process personal data or other data that are subject to legal or regulatory compliance requirements.
 
 > [!TIP]
-> **Lead & Contact** audience is a preview feature. To activate the new audience, go to **Settings** > **Feature Switches** > **Forms**.
+> **Lead & Contact** audience is a preview feature. To activate the new audience, go to **Settings** > **Feature switches** > **Forms**.
 
 The **Lead & Contact** audience allows you to update a lead and contact entity with a single form submission. You can change the audience using the picker in the top right corner of the form editor.
 
@@ -106,17 +103,15 @@ To use a combined Lead & Contact audience, it's important to [define how the att
 
 Once you select the *Lead & Contact* audience, you see three sections of fields in the right pane:
 
-> [!div class="mx-imgBorder"]
-> ![Lead & Contact audience.](media/real-time-marketing-form-lead-contact.png)
+:::image type="content" source="media/real-time-marketing-form-lead-contact.png" alt-text="Lead & Contact audience." lightbox="media/real-time-marketing-form-lead-contact.png":::
 
-The fields in the *Contact* section update only the corresponding contact attributes. The fields in *Lead* section update only the corresponding lead attributes. If you want the field to update both lead and contact attributes, use a field from the *Lead & Contact* section. If the *Lead & Contact* section is empty, you have to [define attribute mapping](real-time-marketing-form-global-settings.md#lead-contact-mapping).
+The fields in the *Contact* section update only the corresponding contact attributes. The fields in the *Lead* section update only the corresponding lead attributes. If you want the field to update both lead and contact attributes, use a field from the *Lead & Contact* section. If the *Lead & Contact* section is empty, you have to [define attribute mapping](real-time-marketing-form-global-settings.md#lead-contact-mapping).
 
 ## Form settings
 
 Form settings allow you to configure advanced properties of your form and define what happens after the form submission.
 
-> [!div class="mx-imgBorder"]
-> ![Form settings.](media/real-time-marketing-form-settings.png)
+:::image type="content" source="media/real-time-marketing-form-settings.png" alt-text="Form settings." lightbox="media/real-time-marketing-form-settings.png":::
 
 - **Duplicate records**: Choose your strategy on [how to handle duplicate records](#how-to-handle-duplicate-records).
 - **Thank you notification**: This message appears if the user successfully submits the form.
@@ -130,7 +125,7 @@ The default approach to duplicate records is different for contact and lead enti
 - **Contact (default: Update contact using email)**: If the user submits a form with an existing email address, the form submission updates the existing record. There's no new record created.
 - **Lead (default: Always create a new record)**: If the user submits a form with an existing email address, a new record with the same email address is created.
 
-You can change the default matching rule using the **Duplicate records** drop-down in **Forms** settings. You can also create a [custom matching rule](#create-a-custom-matching-rule).
+You can change the default matching rule using the **Duplicate records** drop-down in the **Forms** settings. You can also create a [custom matching rule](real-time-marketing-manage-forms.md#create-a-custom-matching-rule).
 
 ### Create a custom matching rule
 
@@ -138,7 +133,7 @@ You can choose how to handle duplicate records by creating a new matching rule.
 
 1. Select the bottom left menu to access **Settings**.
 1. Open **Form matching rules** in the **Customer engagement** section.
-1. Select the plus icon to create a new matching rule.
+1. Select the plus icon (**+**) to create a new matching rule.
 1. Name the matching rule and select the **Target entity**.
 1. **Save the matching rule** (don't select Save & close as you need to stay on this record).
 1. Add matching strategy attributes (fields) that are used to check if the record exists.
@@ -161,7 +156,7 @@ Field types and formats are defined by the attribute metadata. It isn't possible
 | Date and time          | Date and Time | Date-Time Picker      | Date and time picker to select a date from a pop-up calendar and a time from a drop-down list.                                                                   |
 | Lookup field          | n/a | Lookup      | A lookup field is linked to a particular entity type, enabling you to add a drop-down list of options that were created in advance to your form. [More information](#lookup-fields). |
 
-The **File** field type is not supported in forms.
+The **File** field type isn't supported in forms.
 
 ### Phone number field
 
@@ -178,8 +173,7 @@ If you don't plan to use the phone number for sending text messages, you can col
 
 If your business is located in a single region with the same phone number country code, you can pre-set the *Country code* parameter of the phone number field.
 
-> [!div class="mx-imgBorder"]
-> ![Set the country code for phone number](media/real-time-marketing-form-country-code.png)
+:::image type="content" source="media/real-time-marketing-form-country-code.png" alt-text="Set the country code for phone number." lightbox="media/real-time-marketing-form-country-code.png":::
 
 If the country code is pre-set, the correct phone number country code is automatically added once the form is submitted. If the customer enters a phone number including the country code, the pre-set phone number country code is ignored.
 
@@ -221,18 +215,18 @@ The following conditions don't prevent forms from being published. A warning mes
 
 ## Form submission processing
 
-Once the form is submitted, the submitted values can be found in **Submissions** section of Form editor. It may take up to few minutes before the entities targeted by the form are updated and the submission moves from *Pending* to *Success* state.
+Once the form is submitted, the submitted values can be found in the **Submissions** section of the form editor. It may take up to a few minutes before the entities targeted by the form are updated and the submission moves from a *Pending* to a *Success* state.
 
-The following Contact or Lead attributes are automatically updated by the form submission only if a new record is created:
+The following contact or lead attributes are automatically updated by the form submission only if a new record is created:
 
 - msdynmkt_emailid
 - msdynmkt_customerjourneyid
 - msdynmkt_marketingformid
 - ownerid
-- owningbusinessunit (if BU feature is enabled)
-- subject (only for leads) - form name is used as the value
+- owningbusinessunit (if the business units feature is enabled)
+- subject (only for leads) - the form name is used as the value
 
-The above listed attributes are not updated in case of updating an existing record with form submission.
+The above-listed attributes aren't updated when an existing record is updated with a form submission.
 
 ## Advanced form customization
 
