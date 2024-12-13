@@ -1,7 +1,7 @@
 ---
 title: No-code web personalization using Optimizely (preview)
 description: Learn how to personalize web experiences with the Customer Insights - Data and Optimizely integration.
-ms.date: 12/11/2024
+ms.date: 12/13/2024
 ms.topic: how-to
 author: JimsonChalissery
 ms.author: jimsonc
@@ -25,14 +25,8 @@ Watch this brief video for an overview of the Optimizely integration with Custom
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RW1hyhp]
 
-<!--- Form accidently removed. Go back to original wording when the form is back
-
 > [!TIP]
-> Sign up to [request access to the preview version](https://forms.office.com/r/6NK6uj6f7f) of the real-time personalization features and [read the blog about the announcement](https://cloudblogs.microsoft.com/dynamics365/?p=188733).
---->
-
-> [!NOTE]
-> The preview is currently at capacity and new requests to join aren't being accepted at this time. Please check back next week as we work to increase preview capacity.
+> Sign up to [request access to the preview version](https://forms.office.com/r/TJEE62xTD3) of the real-time personalization features and [read the blog about the announcement](https://cloudblogs.microsoft.com/dynamics365/?p=188733).
 
 ## Prerequisites
 
