@@ -1,7 +1,7 @@
 ---
 title: Extend Customer Insights - Journeys marketing forms using code
 description: Extend Customer Insights - Journeys marketing forms with JavaScript to apply custom business logic in Dynamics 365 Customer Insights - Journeys.
-ms.date: 07/09/2024
+ms.date: 12/12/2024
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
@@ -39,8 +39,8 @@ Customer Insights - Journeys marketing forms consist of two parts:
 
 | Custom event | Description |
 |------|-------|
-|`d365mkt-beforeformload`|Triggered when the form placeholder is recognized before the actual form content is fetched. |
-|`d365mkt-formrender`|Triggered after the form content is fetched and right before it is injected into the form placeholder. |
+|`d365mkt-beforeformload`|Triggered when the form placeholder is recognized before the actual form content is fetched. This event is triggered before the page is loaded, so it isn't visible in the developer console. |
+|`d365mkt-formrender`|Triggered after the form content is fetched and right before it is injected into the form placeholder. This event is triggered before the page is loaded, so it isn't visible in the developer console. |
 |`d365mkt-afterformload`|Triggered after the form is injected into the placeholder. |
 |`d365mkt-formsubmit`| Triggered when the form is submitted, cancellable. |
 |`d365mkt-afterformsubmit`| Triggered after form is submitted |
