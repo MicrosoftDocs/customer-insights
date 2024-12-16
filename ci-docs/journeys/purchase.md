@@ -41,9 +41,9 @@ If you need the application to run in a specific data center region, be sure to 
 > Customers who purchased before September 2023 may own the legacy, Dynamics 365 Customer Insights and Dynamics 365 Marketing standalone licenses. The standalone licenses have different entitlements from the new Dynamics 365 Customer Insights license sold after September 2023. The differences are as follows:
 >
 > - Dynamics 365 Marketing (standalone) entitles 10,000 active contacts (renamed "interacted people" after September 2023) and 1 application installation. You can buy add-on subscriptions to entitle additional application installations.
-> - Dynamics 365 Customer Insights (standalone) entitles 100,000 customer profiles (renamed "unified people" after September 2023) and unlimited installations of the application. You can buy add-ons to unify accounts.
+> - Dynamics 365 Customer Insights (standalone) entitles 100,000 customer profiles (renamed "unified people" after September 2023) and unlimited application installations. You can buy add-ons to unify accounts.
 >
-> The current Customer Insights license entitles 10,000 interacted people (formerly "active contacts"), 100,000 unified people (formerly "unified profiles"), unlimited installations of Customer Insights - Journeys, and unlimited installations of Customer Insights - Data. You no longer have to pay a higher unit price for add-ons to unify accounts. Learn more: [Dynamics 365 Customer Insights FAQs](ci-faq.md)
+> The current Customer Insights license entitles 10,000 interacted people (formerly "active contacts"), 100,000 unified people (formerly "unified profiles"), unlimited installations of Customer Insights - Journeys and Customer Insights - Data. You no longer have to pay a higher unit price for add-ons to unify accounts. Learn more: [Dynamics 365 Customer Insights FAQs](ci-faq.md)
 
 ### Step 1: Buy the base license
 
