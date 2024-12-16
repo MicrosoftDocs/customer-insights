@@ -107,6 +107,8 @@ Once you select the *Lead & Contact* audience, you see three sections of fields 
 
 The fields in the *Contact* section update only the corresponding contact attributes. The fields in the *Lead* section update only the corresponding lead attributes. If you want the field to update both lead and contact attributes, use a field from the *Lead & Contact* section. If the *Lead & Contact* section is empty, you have to [define attribute mapping](real-time-marketing-form-global-settings.md#lead-contact-mapping).
 
+Once the form using audience *lead & contact* is submitted, there are two interactions emitted: one for contact and one for lead. Therefore, you can see the form submission on both lead timeline and contact timeline. While creating a new journey using *Marketing form submitted* trigger, you are asked to select if the journey is executed for a lead or for a contact.
+
 ## Form settings
 
 Form settings allow you to configure advanced properties of your form and define what happens after the form submission.
