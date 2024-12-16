@@ -47,15 +47,18 @@ To set up web tracking:
 
     :::image type="content" source="media/interaction-journey-script.png" alt-text="Screenshot of tracking script to copy." lightbox="media/interaction-journey-script.png":::
 
-1. Copy the JavaScript code (be sure to select all of it) and place it in the <head> tag of your website. Make sure you don't already have a script set up for your site.
+1. Copy the JavaScript code (be sure to select all of it) and place it in the `<head>` tag of your website. Make sure you don't already have a script set up for your site.
 
 ## Personalize customer experiences based on web interaction
 
 Web interactions can be utilized to create personalized customer experiences in the following ways:
 
 - As triggers to initiate a real-time journey to known contacts or leads.
+
     :::image type="content" source="media/interaction-journey-trigger.png" alt-text="Screenshot of using a web interaction as a trigger." lightbox="media/interaction-journey-trigger.png":::
+  
 - In an if/then branch to respond to your customers’ website actions.
+  
     :::image type="content" source="media/interaction-journey-if-then.png" alt-text="Screenshot of using a web interaction in an if/then branch." lightbox="media/interaction-journey-if-then.png":::
 
 In both instances, you can define conditions based on webpage URL, webpage title, etc., to differentiate the experience based on a specific web property or specific web action such as viewing the shopping cart.
