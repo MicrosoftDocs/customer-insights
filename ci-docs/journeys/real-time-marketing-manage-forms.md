@@ -107,7 +107,9 @@ Once you select the *Lead & Contact* audience, you see three sections of fields 
 
 The fields in the *Contact* section update only the corresponding contact attributes. The fields in the *Lead* section update only the corresponding lead attributes. If you want the field to update both lead and contact attributes, use a field from the *Lead & Contact* section. If the *Lead & Contact* section is empty, you have to [define attribute mapping](real-time-marketing-form-global-settings.md#lead-contact-mapping).
 
-Once the form using the *Lead & Contact* audience is submitted, two interactions are produced: one for a contact and one for a lead. Therefore, you can see the form submission on both the lead timeline and the contact timeline. When creating a new journey using the *Marketing form submitted* trigger, you're asked to select if the journey is executed for a lead or for a contact.
+Once the form using the *Lead & Contact* audience is submitted, two interactions are produced: one for a contact and one for a lead. Therefore, you can see the form submission on both the lead timeline and the contact timeline. 
+
+When creating a new journey using the *Marketing form submitted* trigger, you can choose whether the journey is executed for a lead or for a contact. Your journey uses the interaction you choose for the trigger (contact or lead). The journey can only have a single audience: contact *or* lead.
 
 ## Form settings
 
