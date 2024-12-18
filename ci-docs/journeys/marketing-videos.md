@@ -55,7 +55,7 @@ More information:
 
 ## Qualify your hottest leads with automated lead scoring
 
-> [!VIDEO e3cdfa78-f787-4095-a7e1-92b1d7ed4828]
+> [!VIDEO 7e595aa9-7c2e-4402-82c4-056a999a22ca]
 More information:
 
 - Tutorial: [Set up lead scoring](set-up-lead-scoring.md)
