@@ -13,7 +13,7 @@ search.audienceType:
 
 # Create a marketing email and go live
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/17c3476e-9383-413b-98ec-0b1ac6659824]
+> [!VIDEO 582704c0-0a8d-4a6c-a89b-2fa86cfa4e3b]
 [!INCLUDE [marketing-trial-cta](./includes/marketing-trial-cta.md)]
 
 Email is a vital marketing channel for most modern organizations. It's also a core feature of Dynamics 365 Customer Insights - Journeys, which provides tools for creating graphically rich marketing emails with dynamic, personalized content. Customer Insights - Journeys can send large volumes of personalized marketing emails, monitor how each recipient interacts with them, drive customer-journey automation based on these interactions, and present results both for individual contacts and with aggregate statistical analytics.
