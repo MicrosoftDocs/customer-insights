@@ -29,7 +29,7 @@ For an even more detailed video overview of the features and benefits of Dynamic
 
 ## Design marketing emails
 
-> [!VIDEO 582704c0-0a8d-4a6c-a89b-2fa86cfa4e3b]
+> [!VIDEO 2323f320-856a-443e-9311-d802b7ccc345]
 More information:
 
 - Tutorial: [Create a marketing email and go live](create-marketing-email.md)
