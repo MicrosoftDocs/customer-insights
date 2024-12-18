@@ -29,7 +29,7 @@ For an even more detailed video overview of the features and benefits of Dynamic
 
 ## Design marketing emails
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/17c3476e-9383-413b-98ec-0b1ac6659824]
+> [!VIDEO 582704c0-0a8d-4a6c-a89b-2fa86cfa4e3b]
 More information:
 
 - Tutorial: [Create a marketing email and go live](create-marketing-email.md)
@@ -55,7 +55,7 @@ More information:
 
 ## Qualify your hottest leads with automated lead scoring
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/ae6596f2-4df4-420e-9635-df776e4e5398]
+> [!VIDEO e3cdfa78-f787-4095-a7e1-92b1d7ed4828]
 More information:
 
 - Tutorial: [Set up lead scoring](set-up-lead-scoring.md)
