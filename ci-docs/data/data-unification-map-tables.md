@@ -28,7 +28,7 @@ The first step in unification is selecting the tables and columns within your da
 
 1. For each selected table, identify the columns you want to use to match customer records and fields to include in the unified profile. You can select the required columns individually from a table or include all columns from a table by selecting the checkbox on the table level. You can search on keywords across all columns and tables to select the required columns you want to map.
 
-   Exclude any columns that aren't used for matching or needed by your downstream business users. Including excessive, unnecessary columns slows down processing. If you have more than 1,000 columns, look closely at the value of the selected columns against the extra processing time and added complexity.
+   Exclude any columns that aren't used for matching or needed by your downstream business users. Including excessive, unnecessary columns slows down processing and adds unwanted complexity to the customer profile. If you have more than 1,000 columns, look closely at the value of the selected columns against the extra processing time and added complexity.
 
    :::image type="content" source="media/m3_select_tables.png" alt-text="Screenshot of selected tables and columns.":::
 
