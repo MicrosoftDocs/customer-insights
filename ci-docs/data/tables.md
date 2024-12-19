@@ -34,7 +34,7 @@ For more information about the **Relationships** tab, see [Relationships](relati
 1. Select a table to open the details page.  
 1. Explore the different fields and records included for that table.
 
-- The **Attributes** tab is selected by default and shows details for the selected table, such as field names, data types, and types. The **Type** column shows Common Data Model associated types, which are either auto-identified by the system or [manually mapped](data-unification-map-tables.md) by users. These types are semantic types that can differ from the attributes' data types. For example, the field *Email* below has a data type *String* but its (semantic) Common Data Model type might be *Email*, *EmailAddress*, or *Identity.Service.Email*.
+- The **Attributes** tab is selected by default and shows details for the selected table, such as field names, data types, and types. The **Type** column shows Common Data Model associated types, which are either auto-identified by the system or [manually mapped](data-unification-map-tables.md) by users. These types are semantic types that can differ from the attributes' data types. For example, the field *Email* has a data type *String* but its (semantic) Common Data Model type might be *Email*, *EmailAddress*, or *Identity.Service.Email*.
 
    :::image type="content" source="media/data-manager-tables-fields.png" alt-text="Fields table.":::
 
@@ -57,7 +57,7 @@ For more information about the **Relationships** tab, see [Relationships](relati
 
 ## Customer Insights - Data tables in Dataverse
 
-Some Customer Insights - Data tables are available in Dataverse. The sections below describe the expected schema of these tables. The logical name of the tables is prepended with the string `msdynci`.
+Some Customer Insights - Data tables are available in Dataverse. The following sections describe the expected schema of these tables. The logical name of the tables is prepended with the string `msdynci`.
 
 - [CustomerProfile](#customerprofile)
 - [AlternateKey](#alternatekey)
@@ -168,7 +168,7 @@ This table contains web tracking and personalization data.
 | Column        | Type | Description                        |
 |--------------------|--------------|-----------------------------|
 |PersonalizationUser | Text | Anonymous user data |
-|PersonalizationCookie | Text | Cookies associated with an anonymous user|
+|PersonalizationCookie | Unique identifier | Cookie associated with an anonymous user |
 |PersonalizationView | Text | Data tracking page views |
 |PersonalizationAction | Text | Data tracking actions performed (links clicked) |
 

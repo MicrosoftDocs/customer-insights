@@ -101,15 +101,11 @@ Fuzzy matches are determined by computing the edit distance score between two st
 
 The edit distance is the number of edits required to turn one string into another, by adding, deleting, or changing a character.
 
-For example, the strings "robert2020@hotmail.com" and "robrt2020@hotmail.cm" have an edit distance of two when we remove the e and o characters.
-
-To calculate the edit distance score, use this formula: (Base string length – Edit Distance) / Base string length.
+For example, the strings "robert2020@hotmail.com" and "robrt2020@hotmail.cm" have an edit distance of two when we remove the e and o characters. To calculate the edit distance score, use this formula: (Base string length – Edit Distance) / Base string length.
 
 |Base string |Comparison string |Score |
 |----|-----|------|
-|robert2020@hotmail.com |robrt2020@hotmail.cm |(20 - 2)/20 = .9 |
-|fred@contoso.com |fred@contso.cm |(14-2) / 14 = 0.857 |
-|franklin |frank |(8-3) / 8 = 0.625 |
+|robert2020@hotmail.com |robrt2020@hotmail.cm |(20 - 2)/20 = 0.9 |
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
