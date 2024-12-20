@@ -164,10 +164,10 @@ This table contains segment membership information of the customer profiles.
 
 The following four tables are created when real-time personalization is set up.
 
-- PersonalizationUser: Contains anonymous user data
-- PersonalizationCookie: Contains a unique identifier as a cookie associated with an anonymous user
-- PersonalizationView: Contains data tracking page views
-- PersonalizationAction: Contains data tracking actions performed (links clicked)
+- PersonalizationUser: This table contains data that associates unknown users to known users when the setUser API is used.
+- PersonalizationCookie: This table contains the personalization cookie values.
+- PersonalizationView: This table contains data tracking on what pages were viewed.
+- PersonalizationAction: This table contains data tracking on what actions were performed such as links clicked.
 
 While you can view and query these tables, we recommend using the [web personalization API](dv-odata.md#web-personalization) to get an understanding of a customer in real time. This API pulls data from multiple tables including the unified profile for known users, and measures, segment memberships, and activity data.
 
