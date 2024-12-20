@@ -169,6 +169,6 @@ The following four tables are created when real-time personalization is set up.
 - PersonalizationView: This table contains data tracking on what pages were viewed.
 - PersonalizationAction: This table contains data tracking on what actions were performed such as links clicked.
 
-While you can view and query these tables, we recommend using the [web personalization API](dv-odata.md#web-personalization) to get an understanding of a customer in real time. This API pulls data from multiple tables including the unified profile for known users, and measures, segment memberships, and activity data.
+While you can view and query these tables, we recommend using the [web personalization API](dv-odata.md#web-personalization) to get an understanding of a customer in real time. This API pulls data from multiple tables including the unified profile for known users, measures, segment memberships, and activity data.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
