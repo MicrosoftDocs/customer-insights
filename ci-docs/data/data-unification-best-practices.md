@@ -1,7 +1,7 @@
 ---
 title: Data unification best practices
 description: Learn about the concepts and best practices when unifying data in Customer Insights - Data.
-ms.date: 12/11/2024
+ms.date: 12/19/2024
 ms.reviewer: v-wendysmith
 ms.topic: conceptual
 author: Scott-Stabbert
@@ -101,15 +101,11 @@ Fuzzy matches are determined by computing the edit distance score between two st
 
 The edit distance is the number of edits required to turn one string into another, by adding, deleting, or changing a character.
 
-For example, the strings "Jacqueline" and "Jaclyne" have an edit distance of five when we remove the q, u, e, i, and e characters, and insert the y character.
-
-To calculate the edit distance score, use this formula: (Base string length – Edit Distance) / Base string length.
+For example, the strings "robert2020@hotmail.com" and "robrt2020@hotmail.cm" have an edit distance of two when we remove the e and o characters. To calculate the edit distance score, use this formula: (Base string length – Edit Distance) / Base string length.
 
 |Base string |Comparison string |Score |
 |----|-----|------|
-|Jacqueline |Jaclyne |(10-4)/10=.6 |
-|fred@contoso.com |fred@contso.cm |(14-2) / 14 = 0.857 |
-|franklin |frank |(8-3) / 8 = 0.625 |
+|robert2020@hotmail.com |robrt2020@hotmail.cm |(20 - 2)/20 = 0.9 |
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
