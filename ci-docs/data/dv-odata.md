@@ -1,7 +1,7 @@
 ---
 title: "Dataverse APIs for Customer Insights - Data"
 description: "Overview and examples of Dataverse Open Data Protocol (OData) APIs to query for data."
-ms.date: 12/06/2024
+ms.date: 12/20/2024
 ms.topic: conceptual
 author: srivas15
 ms.author: shsri
@@ -63,7 +63,7 @@ Sample queries for the *CustomerProfile* table and segment memberships.
 
 ### Web Personalization
 
-Sample queries to [personalize your website](real-time-web-personalization.md#personalize-your-customers-web-experience) based on the CookieId. The response returns both [known and unknown customers](customer-profiles.md#known-and-unknown-customers).
+Sample queries to [personalize your website](real-time-web-personalization.md#personalize-your-customers-web-experience) based on the CookieId. The response returns both [known and unknown customers](customer-profiles.md#known-and-unknown-customers). The tables created for [web tracking and personalization](tables.md#real-time-web-personalization-tables-preview) are available in Dataverse.
 
 |Query type |Example  | Note  |
 |---------|---------|---------|

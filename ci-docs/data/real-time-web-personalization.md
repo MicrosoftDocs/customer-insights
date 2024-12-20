@@ -1,7 +1,7 @@
 ---
 title: Set up real-time web personalization (preview)
 description: Learn how to track web interactions and personalize experiences in real time with Customer Insights - Data.
-ms.date: 06/14/2024
+ms.date: 12/20/2024
 ms.topic: how-to
 author: srivas15
 ms.author: shsri
@@ -92,6 +92,8 @@ You can personalize your customers' web experience in either of the following wa
   ```
 
   Then, use the cookie as an identifier to query any of the Customer Insights - Data APIs.
+
+The [web tracking and personalization tables](tables.md#real-time-web-personalization-tables-preview) are available in Dataverse.
 
 ## Related information
 
