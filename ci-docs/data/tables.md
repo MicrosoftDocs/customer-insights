@@ -1,7 +1,7 @@
 ---
 title: "Tables in Customer Insights - Data"
 description: "View data on the Tables page."
-ms.date: 12/19/2024
+ms.date: 12/20/2024
 ms.reviewer: mhart
 ms.topic: conceptual
 author: Scott-Stabbert
@@ -66,9 +66,8 @@ Some Customer Insights - Data tables are available in Dataverse. The following s
 - [Enrichment](#enrichment)
 - [Prediction](#prediction)
 - [Segment membership](#segment-membership)
-- [Real-time web personalization (preview)](#real-time-web-personalization-preview)
 
-[Measures created as tables](dataverse-measures.md) are also available in Dataverse.
+Other tables available in Dataverse are [measures](dataverse-measures.md) and [real-time web personalization (preview)](#real-time-web-personalization-tables-preview).
 
 Use [Power Apps](https://make.powerapps.com) to view the Customer Insights - Data [tables in Dataverse](/power-apps/maker/data-platform/create-edit-entities-portal#view-tables).
 
@@ -161,15 +160,15 @@ This table contains segment membership information of the customer profiles.
 | Identifier  | Text   | Unique identifier of the segment membership record. `CustomerId|SegmentProvider|SegmentMembershipType|Name`  |
 | SegmentMembershipId | Unique identifier      | Deterministic GUID generated from `Identifier`          |
 
-### Real-time web personalization (preview)
+### Real-time web personalization tables (preview)
 
-This table contains web tracking and personalization data.
+The following four tables are created when real-time personalization is set up.
 
-| Column        | Type | Description                        |
-|--------------------|--------------|-----------------------------|
-|PersonalizationUser | Text | Anonymous user data |
-|PersonalizationCookie | Unique identifier | Cookie associated with an anonymous user |
-|PersonalizationView | Text | Data tracking page views |
-|PersonalizationAction | Text | Data tracking actions performed (links clicked) |
+- PersonalizationUser: This table contains data that associates unknown users to known users when the setUser API is used.
+- PersonalizationCookie: This table contains the personalization cookie values.
+- PersonalizationView: This table contains data tracking on what pages were viewed.
+- PersonalizationAction: This table contains data tracking on what actions were performed such as links clicked.
+
+While you can view and query these tables, we recommend using the [web personalization API](dv-odata.md#web-personalization) to get an understanding of a customer in real time. This API pulls data from multiple tables including the unified profile for known users, measures, segment memberships, and activity data.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
