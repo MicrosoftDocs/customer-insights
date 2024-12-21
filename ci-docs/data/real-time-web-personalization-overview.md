@@ -1,7 +1,7 @@
 ---
 title: Real-time web personalization overview (preview)
 description: Learn how to provide personalized web interactions and experiences in real time with Customer Insights - Data.
-ms.date: 12/13/2024
+ms.date: 12/20/2024
 ms.topic: overview
 author: srivas15
 ms.author: shsri
@@ -54,6 +54,7 @@ This means:
 
 ## Next steps
 
-[Set up real-time web personalization](real-time-web-personalization.md)
+- [Set up real-time web personalization](real-time-web-personalization.md)
+- [Web tracking and personalization tables](tables.md#real-time-web-personalization-tables-preview)
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
