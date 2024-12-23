@@ -15,6 +15,11 @@ The Deduplication rules step of unification finds and removes duplicate records 
 
 Rules are processed in order. After all rules have been run on all the records in a table, match groups that share a common row are combined into a single match group.
 
+Customer Insights - Data automaticaly performs the following actions:
+
+- Deduplicate records with the same primary key value, selecting the first row in the data set as the winner.
+- Deduplicate records using the **Matching Rules** page that are defined for the table when matching rows between tables.
+
 ## Define deduplication rules
 
 A good rule identifies a unique customer. Consider your data. It might be enough to identify customers based on a field such as email. However, if you want to differentiate customers that share an email, you might choose to have a rule with two conditions, matching on Email + FirstName. For more information, see [Deduplication best practices](data-unification-best-practices.md#deduplication).
