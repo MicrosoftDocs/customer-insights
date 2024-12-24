@@ -61,6 +61,11 @@ Web interactions can be utilized to create personalized customer experiences in 
   
     :::image type="content" source="media/interaction-journey-if-then.png" alt-text="Screenshot of using a web interaction in an if/then branch." lightbox="media/interaction-journey-if-then.png":::
 
-In both instances, you can define conditions based on webpage URL, webpage title, etc., to differentiate the experience based on a specific web property or specific web action such as viewing the shopping cart.
+In both instances, you can define conditions based on webpage URL, webpage title, etc., to differentiate the experience based on a specific web property or specific web action such as viewing the shopping cart. Examples:
+- Page URL (msdynci_viewuri): The uri of the visited page (e.g. https://www.contoso.com/home)
+- Page Name (msdynci_viewname): The name of the visited page (e.g. "home.html")
+- Page Title (msdynci_viewtitle): The title of the visited page (e.g. "Home")
+- View Type (msdynci_viewtype): The type of the visited page (e.g. "page")
+- Previous Page Name (msdynci_viewpreviousviews): The url of the previous visited page for the session (e.g. https://www.contoso.com)
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
