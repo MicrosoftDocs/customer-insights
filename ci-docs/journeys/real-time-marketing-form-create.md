@@ -109,6 +109,9 @@ You can change the target audience using the **Audience** picker in the top righ
 
 1. Set up a thank you email for web page visitors who submitted the form. You can create a new journey using the *Marketing Form Submitted* trigger, which is executed every time your form is submitted. Learn more about creating a [trigger-based journey](real-time-marketing-trigger-based-journey.md).
 
+> [!TIP]
+> You can enable the [Form prefill](real-time-marketing-form-prefill.md) feature so that existing users don't have to re-enter known information.
+
 ## Publish your form
 
 To publish your form, select the **Publish** button in the top right corner. There are two options to publish a form:
