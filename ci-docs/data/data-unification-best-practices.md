@@ -1,7 +1,7 @@
 ---
 title: Data unification best practices
 description: Learn about the concepts and best practices when unifying data in Customer Insights - Data.
-ms.date: 12/19/2024
+ms.date: 01/06/2025
 ms.reviewer: v-wendysmith
 ms.topic: conceptual
 author: Scott-Stabbert
@@ -40,6 +40,12 @@ Progressively add several rules and see how long the changes take to run and if 
 View the rule statistics on the **Deduplication rules** and **Matching rules** pages to see if the number of **Unique records** changes. If a new rule matches some records, and the unique record count doesn't change, then a previous rule identifies those matches.
 
 :::image type="content" source="media/unify-unique-records.png" alt-text="Screenshot of Matching rules page highlighting Unique records.":::
+
+## Customer data
+
+When selecting your source data, include only columns in rules that can identify customers, or that you want in the final output. Including only columns you need makes the unification process run faster and makes your output easier to work with.
+
+Review column descriptions selected by intelligent mapping.
 
 ## Deduplication
 

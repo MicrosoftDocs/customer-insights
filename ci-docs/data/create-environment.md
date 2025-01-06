@@ -1,7 +1,7 @@
 ---
 title: "Create a new environment"
 description: Steps to create environments in Dynamics 365 Customer Insights.
-ms.date: 01/03/2025
+ms.date: 01/06/2025
 ms.reviewer: mhart
 ms.topic: how-to
 author: Scott-Stabbert
