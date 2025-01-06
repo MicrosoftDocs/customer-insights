@@ -35,9 +35,6 @@ You can change the target audience using the **Audience** picker in the top righ
     >
     > Microsoft doesn't provide support for this preview feature. Microsoft Dynamics 365 Technical Support won’t be able to help you with issues or questions. Preview features aren’t meant for production use, especially to process personal data or other data that are subject to legal or regulatory compliance requirements.
 
-    > [!TIP]
-    > **Lead & Contact** audience is a preview feature. To activate the new audience, go to **Settings** > **Feature switches** > **Forms**.
-
     In this example, enter a name for your new form and select **Contact** as the target audience.
 
     :::image type="content" source="media/real-time-marketing-form-audience.png" alt-text="Select target audience for the form submission." lightbox="media/real-time-marketing-form-audience.png":::
