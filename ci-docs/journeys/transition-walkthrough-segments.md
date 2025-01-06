@@ -34,6 +34,8 @@ Importing outbound marketing emails not only saves time, but also protects your 
 
 While reviewing the imported emails, it's worth considering whether you should start using [brand profiles](brand-profiles.md). Brand profiles provide the ability to standardize content like links to your company’s LinkedIn in a similar manner that content settings do for outbound marketing.
 
+You can use the same tool to import email templates. Go to Email Templates area in the real-time journey and use "Import template" option.
+
 ## Journeys
 
 Journeys in real-time journeys are the equivalent to customer journeys in outbound marketing. Journeys are the container that define the sequence of marketing actions that contacts are involved in. The underlying architecture for journeys in the real-time journeys module is fundamentally different from outbound marketing, which is why journeys can't be transferred automatically and manual recreation of the journey is required.
