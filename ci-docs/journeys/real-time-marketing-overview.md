@@ -13,7 +13,7 @@ search.audienceType:
 
 # Customer Insights - Journeys overview
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RW17thC]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=1f5957db-7990-4c3b-bd59-4e868a0d9f92]
 
 > [!IMPORTANT]
 > **The [outbound marketing](user-guide.md) module will be removed from Customer Insights - Journeys on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](transition-overview.md)
