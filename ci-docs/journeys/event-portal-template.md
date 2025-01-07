@@ -13,7 +13,16 @@ search.audienceType:
 
 # Create a Comprehensive Event Registration Experience
 
-The event registration experience enables new attendees to register seamlessly. It's crucial to ensure the registration process is smooth while collecting all necessary information. This entire experience is facilitated by the registration form, a type of [Customer Insights - Journeys forms](real-time-marketing-form-overview.md).
+The event registration experience enables new attendees to register seamlessly. It's crucial to ensure the registration process is smooth while collecting all necessary information. This entire experience is facilitated by the [registration form](event-portal-template.md#event-registration-form), a type of [Customer Insights - Journeys forms](real-time-marketing-form-overview.md).
+
+There are various options how to build event registration experience:
+
+- Registration form hosted as standalone page - a single page containing the registration form with all details about the event. The page is hosted on Customer Insights infrastructure and no extra license is needed. [Learn more](real-time-marketing-form-create.md#publish-your-form)
+- Registration form embedded into your website - you can embed the event registration form into your own website. [Learn more](real-time-marketing-form-create.md#publish-your-form)
+- Registration portal on Power Pages - you can leverage the event registration template to build a website using Power Pages Studio.
+- Custom solution using event API - [learn more](developer/using-rtm-events-api.md)
+
+## Event registration form
 
 The event registration form can dynamically display the following event-related information:
 
@@ -27,11 +36,27 @@ The event registration form can dynamically display the following event-related 
 
 The event registration forms can be created or updated using the form editor. [Learn more](real-time-marketing-form-create.md).
 
-There are multiple ways 
-
 > [!TIP]
 > You can enable the [Form prefill](real-time-marketing-form-prefill.md) feature so that existing users don't have to re-enter known information.
 
-prefill
+## Build event registration website using Power Pages Studio
+
+Microsoft [Power Pages](https://learn.microsoft.com/power-pages/introduction) is a secure, enterprise-grade, low-code software as a service (SaaS) platform for creating, hosting, and administering modern external-facing business websites.
+
+You can create an event registration website simply by leveraging the Event Registration template. The template contains multiple pages for the whole registration process:
+
+- Home - list of all events, which were enabled to be displayed on this website
+- Events - detail of event including list of speakers and sessions
+- Register to Event - page with event registration form
+
+### Step-by-step guide to build event registration website in Power Pages Studio
+
+
+
+prefill in power pages
 
 mutiple websites
+
+and other
+
+TOC
