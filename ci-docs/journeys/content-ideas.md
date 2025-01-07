@@ -38,7 +38,7 @@ ms.collection: bap-ai-copilot
 
 Copilot-powered content ideas help you discover new ways to express your thoughts, helping you move from email concept to completion faster. This article explains how the content ideas copilot works and how you can start using it to kickstart your emails.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWZDEE]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=3bd21ca7-e598-4d73-895a-37dbf678f7fc]
 
 ## What is the content ideas copilot?
 

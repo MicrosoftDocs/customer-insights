@@ -16,7 +16,7 @@ Transactional churn prediction helps predict if a customer no longer purchase yo
 
 You must have business knowledge to understand what churn means for your business. For instance, a business with annual events can define their churn measured in years, while a business that caters to weekly sales measures churn in months. We support time-based churn definitions, meaning a customer is considered as churned after a period of no purchases.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWN6Eg]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=028ef401-6131-44b0-9cd0-89b9e88f81c6]
 
 For example, Contoso wants to know how engaged customers are for an email campaign dedicated to retention. Contoso's customers visit a storefront on a variable basis, most often around 3-4 times a month. Their transactions are irregular, making it difficult to determine when a customer stops purchasing the Contoso brand. Through the transaction churn model, Contoso can determine the likelihood that customers buy again. They can see the leading patterns that lead to customers leaving the brand, allowing them to adjust other strategies.
 

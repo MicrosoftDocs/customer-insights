@@ -15,7 +15,7 @@ search.audienceType:
 
 Conditional content is an easy way to deliver effective and engaging personalized content. A simple example of conditional content is including different images based on a recipient’s profession, age group, address, interests, or other such factors. Creating this kind of personalized content in Dynamics 365 Customer Insights - Journeys is straightforward, requiring no coding or scripting. Here's a short video that shows conditional content in action:
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Yb7B]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=290e1e2a-8c49-471e-ac52-0ece32669b80]
 
 Conditional content, as the name implies, consists of two parts: condition and content. The combination of these two parts is called a “variation.” You can create as many variations as needed. At the time an email is sent, conditions are evaluated in the order they're present in the email. When a condition is satisfied, the corresponding content is included and the conditional evaluation stops. If none of the conditions are satisfied, the default content is used. If there's no default content, then no content is included.
 
@@ -46,7 +46,7 @@ This section explains how to create, delete, preview, and test conditional conte
 
 ### Create
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Yb7A]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=384d880c-19a1-44e0-8c70-f393a0baf4d2]
 
 1. In the email designer, select a section (or an image) and then select the conditional content button.
 
@@ -67,7 +67,7 @@ This section explains how to create, delete, preview, and test conditional conte
 
 ### Preview and test
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4YmOM]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=3ffeaab6-3c24-4e2f-a630-5fae9e5ed97b]
 
 In the designer, you should always preview and test each variation to make sure there are no unexpected results. To preview and test, follow the steps below.
 
@@ -94,7 +94,7 @@ When Customer Insights – Data is present and connected, you can use customer m
 
 Watch this video to learn more:
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RW1fY3B]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=7c905e7e-853e-49e7-85d2-72cdea87a770]
 
 See [Use calculated measures in Customer Insights - Journeys and other Dataverse-based applications](/dynamics365/customer-insights/data/dataverse-measures) to learn how to create measures in Customer Insights – Journeys and what types of measures are available for use in the app.
 

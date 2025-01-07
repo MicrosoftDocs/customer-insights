@@ -17,7 +17,7 @@ Power Query has data size and performance limitations. It makes copies of data i
 
 To securely connect data in a private network, Power Query supports the use of [virtual network data gateways (preview)](/data-integration/vnet/data-gateway-power-platform-dataflows).
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWN6EK]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=ef3f2af9-7a02-44e6-9465-5ae4bebab382]
 
 ## Create a new data source
 

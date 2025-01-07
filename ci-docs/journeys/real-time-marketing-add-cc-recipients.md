@@ -12,7 +12,7 @@ search.audienceType:
 
 # Add email carbon copy recipients to journeys
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RW10sVQ]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=65391eee-50a1-477a-b00b-fabf937b640e]
 
 You can add carbon copy (CC) recipients to your journeys when sending emails. When designing your journey, you can select up to five recipients for your emails from the email tile. You can dynamically choose your CC recipients by mapping them to your marketable contacts.
 
