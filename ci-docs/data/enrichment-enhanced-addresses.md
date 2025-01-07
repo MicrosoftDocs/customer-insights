@@ -26,7 +26,7 @@ You can also [enrich addresses on data sources](data-sources-enrichment.md) to i
 
 Our model goes through a two-step process to enhance an address. First, it parses the address to identify its components and puts them into a structured format. Then, we use AI to correct, complete, and standardize the values in the address.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWNewo]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=3ff1ab6f-d625-4cc3-a688-a8aa6b866e43]
 
 ### Example
 

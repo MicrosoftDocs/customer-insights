@@ -15,7 +15,7 @@ ms.custom: bap-template
 
 Exports allow you to share specific data with various applications. They can include customer profiles, tables, schemas, and mapping details. Each export requires a [connection, set up by an administrator, to manage authentication and access](connections.md). The **Exports** page shows all configured exports.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5dsVH]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=16eaf464-5b0a-4aa0-9775-df95da16e89d]
 
 [!INCLUDE [public-preview-note](includes/public-preview-note.md)]
 

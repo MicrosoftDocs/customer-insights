@@ -23,7 +23,7 @@ You can also track user behavior for events that real-time tracking supports and
 
 Watch this brief video for an overview of the Optimizely integration with Customer Insights - Data.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RW1hyhp]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=0374bff9-f481-4324-8237-ebbaaffaed27]
 
 > [!TIP]
 > Sign up to [request access to the preview version](https://forms.office.com/r/TJEE62xTD3) of the real-time personalization features and [read the blog about the announcement](https://cloudblogs.microsoft.com/dynamics365/?p=188733).
