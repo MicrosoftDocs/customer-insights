@@ -1,6 +1,6 @@
 ---
 title: "Data unification overview"
-description: "Learn how to unify your data to create a single master dataset of customer profiles."
+description: "Learn how to unify your customer data sources to create a single master dataset of customer profiles in Customer Insights - Data."
 ms.date: 01/06/2025
 ms.reviewer: v-wendysmith
 ms.topic: overview
