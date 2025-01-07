@@ -21,7 +21,7 @@ When you set up rules to unify your data into a customer profile, consider these
 
 - **Use [normalization](#normalization) to standardize variations** in how data was entered such as Street vs. St vs. St. vs. st.
 
-- **Use [fuzzy matching](#fuzzy-matching) strategically to correct typos and errors** such as bob@contoso.com and bob@contoso.cm. Fuzzy matches take longer to run than exact matches. Always test to see if the extra time spent on fuzzy matching is worth the additional match rate.
+- **Use [fuzzy matching](#fuzzy-matching) strategically to correct typos and errors** such as bob@contoso.com and bob@contoso.cm. Fuzzy matches take longer to run than exact matches. Always test to see if the extra time spent on fuzzy matching is worth the extra match rate.
 
 - **Narrow the scope of matches with [exact match](#exact-match)**. Make sure every rule with fuzzy conditions has at least one exact match condition.
 
@@ -43,9 +43,13 @@ View the rule statistics on the **Deduplication rules** and **Matching rules** p
 
 ## Customer data
 
-When selecting your source data, include only columns in rules that can identify customers, or that you want in the final output. Including only columns you need makes the unification process run faster and makes your output easier to work with.
+In the **Customer data** step:
 
-Review column descriptions selected by intelligent mapping.
+- Exclude columns that aren't needed for matching rules or that you don't want included in the final customer profile.
+
+- Review column descriptions selected by intelligent mapping.
+
+- Not all columns need to be mapped. Mapping common columns such as email and address fields allows Customer Insights to make downstream processes easier, but columns with a unique ID or purpose to your business can be left unmapped.
 
 ## Deduplication
 

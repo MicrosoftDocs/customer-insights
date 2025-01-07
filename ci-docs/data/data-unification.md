@@ -11,23 +11,21 @@ ms.custom: bap-template
 
 # Data unification overview
 
-After [setting up the data sources](data-sources.md), you can unify the data. Data unification brings together customer data from different sources, and matches records based on demographic attributes like name and email. The result of unification is a single output table called Customer Profile where each customer is represented on a single row. That row contains the best data from all your various data sources.
+After [setting up the data sources](data-sources.md), you then unify the data. Unification combines your various customer data sources and creates a single customer profile record per customer. Unification eliminates duplicate data and combines all the important fields from your various data sources into a single record, eliminating data silos.
 
 Data can be unified on a single table or multiple tables. Tables were previously called entities.
 
 ## Data unification process
 
-The unification process maps customer data from your data sources, removes duplicates, matches the data across tables, and creates a unified profile. Unification is performed in the following order:
+The unification process consists of four steps:
 
-1. **[Customer data](data-unification-map-tables.md)**: Select only your source data that contains customer information like name, phone, and address. Don't include customer activity data such as purchases or support tickets that has a one-to-many relationship to the customer. Map fields to a common type that describes the purpose of the column.
+1. **[Customer data](data-unification-map-tables.md)**: Select your source data that contains customer profile information like name, phone, and address. Don't include customer activity data such as purchases that have a one-to-many relationship to the customer. Map columns to descriptive types.
 
-1. **[Deduplication](data-unification-duplicates.md)**: Reduce duplicate customer records in each of your source tables to just one row per customer. Deduplication rules are optional if you're certain your data has no duplicates. Otherwise, it's important to remove duplicates to ensure the best unification results.
+1. **[Deduplication](data-unification-duplicates.md)**: Define rules to find multiple rows for a single customer and select the best row to represent the customer. Deduplication is an important step to remove duplicates to ensure the best unification results.
 
-1. **[Matching conditions](data-unification-match-tables.md)**: Define rules that match customer records between tables. When a customer is found in two or more tables, a single consolidated record is created with all columns and data from each table.
+1. **[Matching conditions](data-unification-match-tables.md)**: Define rules that match customer records between tables. Matching rules create a single consolidated record with all columns and data from each table.
 
-1. **[Unified data view](data-unification-merge-tables.md)**: Determine which customer columns should be included, excluded, or merged into a unified customer profile. For example, if you unify 10 tables and each table has an email, you likely don't want 10 email columns in your final customer profile.
-
-1. [Review](data-unification-review.md) and create the unified profile.
+1. **[Unified data view](data-unification-merge-tables.md)**: Determine which columns from the source tables should be included, excluded, or merged into a unified customer profile. For example, if you unify six tables and each table has an email column, you can merge them into a single email column.
 
 ## Customer ID
 
