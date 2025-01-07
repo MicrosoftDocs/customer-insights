@@ -46,17 +46,75 @@ Microsoft [Power Pages](https://learn.microsoft.com/power-pages/introduction) is
 You can create an event registration website simply by leveraging the Event Registration template. The template contains multiple pages for the whole registration process:
 
 - Home - list of all events, which were enabled to be displayed on this website
-- Events - detail of event including list of speakers and sessions
-- Register to Event - page with event registration form
+- Events - detail of event including list of speakers and sessions. This page is dynamic and the content is loaded based on the event selected in the Home page.
+- Register to Event - page with event registration form. The registration form is dynamic. Each event can have a different registration form.
 
-### Step-by-step guide to build event registration website in Power Pages Studio
+> [!IMPORTANT]
+> Using Power Pages requires extra license. You can test Power Pages using a free trial. [Learn more](https://learn.microsoft.com/power-pages/go-live/assign-licensing) about licensing.
 
+Power Pages combined with event registration template unlocks powerful scenarios such as:
+
+- Style and customize your website in Power Pages Studio editor
+- [Set custom domain name for event registration website](#set-custom-domain-name-for-event-registration-website)
+- [Create multiple event registration websites](#create-multiple-event-registration-websites)
+- Each event can have a different registration form without the need to change any code
+- Explore more [Power Pages capabilities](https://learn.microsoft.com/power-pages/capabilities)
+
+### Step-by-step guide to build event registration website
+
+This guide shows all step to create event registration website using Power Pages Studio and the new event registration template for Customer Insights - Journeys. If you encounter any issues while creating or editing your website, please refer to [Power Pages documentation](https://learn.microsoft.com/power-pages/introduction).
+
+#### Power Pages
+
+1. **Create a new website**. Enter [https://make.powerpages.microsoft.com/](https://make.powerpages.microsoft.com/) in your browser to open Power Pages Studio. Select the right environment in the top right corner. Select *Start with a template*.
+    :::image type="content" source="media/event-pp-template-create.png" alt-text="Create a new website." lightbox="media/event-pp-template-create.png":::
+1. **Find Event Portal** template in Dynamics 365 section and select *Choose this template*.
+    :::image type="content" source="media/event-pp-template-select.png" alt-text="Select a template." lightbox="media/event-pp-template-select.png":::
+1. **Name your site**, set language. You can change the web address later to [use your own domain name](#set-custom-domain-name-for-event-registration-website). Select *Done* in the bottom right corner. It takes a few minutes to get your site ready. You can check the status of your newly created website in the list of Active sites.
+1. Once your site is ready, select the *Edit* button to customize your website. Your new website is created as Private, not accessible for external audience.
+1. The **Home** page contains the list of events. You can [customize what information about event will be displayed](#customize-displayed-information-about-event-in-card-gallery-control) in the list of events by selecting the *Card gallery* control on the canvas. You can also easily change the hero image, logo in the page header, page footer etc.
+1. Preview your website by selecting the Preview button in the top right corner once you finish all customizations. You may need to enable pop-up windows to display the preview.
+
+#### Customer Insights - Journeys
+
+
+
+
+!!!!!!!! Enable external form hosting and optionally prefill
+
+### Event registration website customization
+
+#### Customize displayed information about event in card gallery control
+
+The card gallery control renders the list of events. You can choose from variety of layouts.
+
+Select the *Data* section of card gallery design to change what information will be displayed about the vent. The Data source defines which entity records are listed. Always keep *Event* as the Data source. You can limit which events will be displayed on this website by selecting a custom view as the *View* for card gallery.
+:::image type="content" source="media/event-pp-template-card-gallery.png" alt-text="Customize card gallery." lightbox="media/event-pp-template-card-gallery.png":::
+
+#### Set custom domain name for event registration website
+
+The custom domain name can be set in Power Platform admin center. [Learn more](https://learn.microsoft.com/power-pages/admin/add-custom-domain). You custom domain name has to be enabled for [external form hosting](domain-authentication.md), otherwise the registration form can not be rendered on your website.
+
+#### Create multiple event registration websites
+
+It is possible to create multiple event registration websites and set which event is displayed on which website. Some events can be public while other events can be private only for authenticated users.
+
+1. Build at least two websites in Power Pages using the Event Registration template.
+1. Create multiple *Power Pages Website* configuration in Customer Insights - Journeys Settings and link each configuration to the correct Power Pages website. This will allow the event planner to select the correct website while setting up the event in Event Management.
+1. Set up two custom views that will list only events for the corresponding website.
+1. Open the card gallery control in Power Pages Studio, which lists the events on the Home page, and [set the corresponding view as the *View*](#customize-displayed-information-about-event-in-card-gallery-control).
+
+#### Custom components for event registration
+
+The event registration template uses multiple custom components such as Event Registration Form, Event Speaker Section, Event Session Section, etc. To add one of these custom components, click the plus icon on the canvas and review the list of Custom components. You can build your own pages leveraging these custom components as the building blocks.
+
+#### Private website with authentication
 
 
 prefill in power pages
 
-mutiple websites
+mutiple websites - how to create the view
 
-and other
+chatbot
 
 TOC
