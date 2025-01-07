@@ -21,7 +21,7 @@ The unification process consists of four steps:
 
 1. **[Customer data](data-unification-map-tables.md)**: Select your source data that contains customer profile information like name, phone, and address. Don't include customer activity data such as purchases that have a one-to-many relationship to the customer. Map columns to descriptive types.
 
-1. **[Deduplication](data-unification-duplicates.md)**: Define rules to find multiple rows for a single customer and select the best row to represent the customer. Deduplication is an important step to remove duplicates to ensure the best unification results.
+1. **[Deduplication](data-unification-duplicates.md)**: Define rules to find multiple rows for a single customer and select the best row to represent the customer. Deduplication rules remove duplicate rows to help ensure the best unification results.
 
 1. **[Matching conditions](data-unification-match-tables.md)**: Define rules that match customer records between tables. Matching rules create a single consolidated record with all columns and data from each table.
 
