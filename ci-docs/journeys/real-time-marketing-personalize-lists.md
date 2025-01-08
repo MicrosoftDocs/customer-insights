@@ -64,7 +64,7 @@ The conditional statement can include one condition, for simple filtering, or ma
 
 ## List personalization –  date time formatting, related tables, and conditions within list
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RW10RFA]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=3c5a6a13-9b59-453e-a8cd-321aaac76ab2]
 
 A lot of personalization can be achieved with simple lists with filters. However, you aren't limited to only these types of personalization. This section describes additional capabilities available to build advanced and more personalized lists. To access these capabilities, select the **Advanced option** link.
 

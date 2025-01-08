@@ -20,7 +20,7 @@ search.audienceType:
 >
 > You can still execute marketing campaigns without using such features by hosting your assets and forms in a content management system of your choice.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5dqbE]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=ed9b04ef-a9b2-48b4-ac72-5b8f58d95c5a]
 
 ## Form types
 

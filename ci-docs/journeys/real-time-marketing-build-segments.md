@@ -12,7 +12,7 @@ search.audienceType:
 ---
 # Build segments in Customer Insights - Journeys
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE50Oqt]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=a1240d08-395b-4041-ba4f-853a32afaea3]
 
 To improve marketing return on investment, it's important to target the right audience. You can build segments directly in Dynamics 365 Customer Insights - Journeys using the powerful, easy-to-use logic builder that doesn’t require specialized knowledge of complex data structures and logical operators. You can even preview the estimated segment size and membership before you mark your segment as "Ready to use" in customer journeys.
 
