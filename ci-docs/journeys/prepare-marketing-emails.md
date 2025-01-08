@@ -13,7 +13,7 @@ search.audienceType:
 
 # Email marketing overview
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5dOgZ]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=640e5cfb-a60b-4982-9aa1-66da88d7a50a]
 
 The process for creating marketing emails in Dynamics 365 Customer Insights - Journeys begins with understanding what makes them such a powerful tool for your marketing campaigns. After you create a good design aimed at a specific segment of your audience, you preview it and check for errors before going live. You can fine-tune the reach and effectiveness of your message through advanced operations like merging database values, adding dynamic content, and introduce programming logic.
 

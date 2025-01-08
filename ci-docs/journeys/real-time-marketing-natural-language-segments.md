@@ -14,7 +14,7 @@ ms.custom:
 
 # Copilot - Target the right customers using query assist
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5csiL]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=09814d5e-7d78-4bc3-81ed-978d572c80cb]
 
 Segment creation traditionally required extensive knowledge of the complex data structures defined by your business. To simplify creating segments in Customer Insights - Journeys, you can use the query assist copilot to describe the segment definition in simple English. The query assist copilot lets you add the results query onto the segment builder at any level of the query logic, either as a new group or as an additional condition in your existing logic. You can even improve the copilot by giving feedback, helping you achieve more detailed results in the future.
 
