@@ -1,7 +1,7 @@
 ---
 title: "Remove duplicates before unifying data"
 description: "The second step in the unification process is selecting which record to keep when duplicates are found."
-ms.date: 12/11/2024
+ms.date: 01/06/2025
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -11,9 +11,14 @@ ms.custom: bap-template
 
 # Remove duplicates in each table for data unification
 
-The Deduplication rules step of unification finds and removes duplicate records for a customer from a source table so that each customer is represented by a single row in each table. Each table is deduplicated separately using rules to identify the records for a given customer.
+Deduplication finds and removes duplicate records for a customer from a source table so that each customer is represented by a single row in each table. Each table is deduplicated separately using rules to identify the records for a given customer.
 
-Rules are processed in order. After all rules have been run on all the records in a table, match groups that share a common row are combined into a single match group.
+Each deduplication rule is run against every row. If your first rule matches rows 1 and 2, and rule 2 matches rows 2 and 3, then rows 1, 2, and 3 are matched. When matched rows are found, a winner row is selected to represent that customer based on the **Merge preferences** (*Most filled*, *Most recent*, or *Least recent*). Use the **Advanced** option to create a winner row by selecting fields from the various matched rows, such as the most recent email, but the most filled address.
+
+Customer Insights - Data automatically performs the following actions:
+
+- Deduplicate records with the same primary key value, selecting the first row in the data set as the winner.
+- Deduplicate records using the **Matching Rules** defined for the table when matching rows between tables.
 
 ## Define deduplication rules
 
