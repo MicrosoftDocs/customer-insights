@@ -1,7 +1,7 @@
 ---
 title: 'Preview: Personalize messages, make journey decisions based on web interactions'
 description: Learn how to personalize messages and make journey decisions based on web interactions in Dynamics 365 Customer Insights - Journeys.
-ms.date: 12/13/2024
+ms.date: 01/09/2025
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -61,11 +61,11 @@ Web interactions can be utilized to create personalized customer experiences in 
   
     :::image type="content" source="media/interaction-journey-if-then.png" alt-text="Screenshot of using a web interaction in an if/then branch." lightbox="media/interaction-journey-if-then.png":::
 
-In both instances, you can define conditions based on webpage URL, webpage title, etc., to differentiate the experience based on a specific web property or specific web action such as viewing the shopping cart. Examples:
-- Page URL (msdynci_viewuri): The uri of the visited page (e.g. https://www.contoso.com/home)
-- Page Name (msdynci_viewname): The name of the visited page (e.g. "home.html")
-- Page Title (msdynci_viewtitle): The title of the visited page (e.g. "Home")
-- View Type (msdynci_viewtype): The type of the visited page (e.g. "page")
-- Previous Page Name (msdynci_viewpreviousviews): The url of the previous visited page for the session (e.g. https://www.contoso.com)
+In both instances, you can define conditions based on webpage URL, webpage title, etc., to differentiate the experience based on a specific web property or specific web action such as viewing the shopping cart. Here are some examples:
+- Page URL (msdynci_viewuri): The URL of the visited page (for example, https://www.contoso.com/home)
+- Page name (msdynci_viewname): The name of the visited page (for example, "home.html")
+- Page title (msdynci_viewtitle): The title of the visited page (for example, "Home")
+- View type (msdynci_viewtype): The type of the visited page (for example, "page")
+- Previous page name (msdynci_viewpreviousviews): The URL of the previous visited page for the session (for example, https://www.contoso.com)
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
