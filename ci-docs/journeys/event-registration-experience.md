@@ -13,7 +13,7 @@ search.audienceType:
 
 # Create a Comprehensive Event Registration Experience
 
-The event registration experience enables new attendees to register seamlessly. It's crucial to ensure the registration process is smooth while collecting all necessary information. The registration experience is powered by the [registration form](event-portal-template.md#event-registration-form), a type of [Customer Insights - Journeys forms](real-time-marketing-form-overview.md).
+The event registration experience enables new attendees to register seamlessly. It's crucial to ensure the registration process is smooth while collecting all necessary information. The registration experience is powered by the [registration form](event-registration-experience.md#event-registration-form), a type of [Customer Insights - Journeys forms](real-time-marketing-form-overview.md).
 
 There are various options how to build event registration experience:
 
