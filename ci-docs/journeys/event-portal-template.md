@@ -11,35 +11,12 @@ search.audienceType:
   - enduser
 ---
 
-# Create a Comprehensive Event Registration Experience
+# PREVIEW: Build event registration website using Power Pages Studio
 
-The event registration experience enables new attendees to register seamlessly. It's crucial to ensure the registration process is smooth while collecting all necessary information. The registration experience is powered by the [registration form](event-portal-template.md#event-registration-form), a type of [Customer Insights - Journeys forms](real-time-marketing-form-overview.md).
-
-There are various options how to build event registration experience:
-
-- Registration form hosted as standalone page - a single page containing the registration form with all details about the event. The page is hosted on Customer Insights infrastructure and no extra license is needed. [Learn more](real-time-marketing-form-create.md#publish-your-form)
-- Registration form embedded into your website - you can embed the event registration form into your own website. [Learn more](real-time-marketing-form-create.md#publish-your-form)
-- Registration portal on Power Pages - you can use the event registration template to build a website using Power Pages Studio.
-- Custom solution using event API - [learn more](developer/using-rtm-events-api.md)
-
-## Event registration form
-
-The event registration form can dynamically display the following event-related information:
-
-- Name of the event
-- Description including the date, time, location, and other information
-- List of speakers
-- List of sessions - you can enable session registration or show the read-only list of sessions
-
-> [!TIP]
-> A single registration form can be used for multiple events. This event-related information is dynamically updated based on the *readableEventId* parameter provided in the page URL.
-
-The event registration forms can be created or updated using the form editor. [Learn more](real-time-marketing-form-create.md).
-
-> [!TIP]
-> You can enable the [Form prefill](real-time-marketing-form-prefill.md) feature so that existing users don't have to reenter known information.
-
-## Build event registration website using Power Pages Studio
+> [!IMPORTANT]
+> A preview feature is a feature that is not complete but is made available before it’s officially in a release so customers can get early access and provide feedback. Preview features aren’t meant for production use and may have limited or restricted functionality.
+>
+> Microsoft doesn't provide support for this preview feature. Microsoft Dynamics 365 Technical Support won’t be able to help you with issues or questions. Preview features aren’t meant for production use, especially to process personal data or other data that are subject to legal or regulatory compliance requirements.
 
 Microsoft [Power Pages](https://learn.microsoft.com/power-pages/introduction) is a secure, enterprise-grade, low-code software as a service (SaaS) platform for creating, hosting, and administering modern external-facing business websites.
 
@@ -60,7 +37,7 @@ Power Pages combined with event registration template unlock powerful scenarios 
 - Each event can have a different registration form without the need to change any code
 - Explore more [Power Pages capabilities](https://learn.microsoft.com/power-pages/capabilities)
 
-### Step-by-step guide to build event registration website
+## Step-by-step guide to build event registration website
 
 This guide shows all step to create event registration website using Power Pages Studio and the new event registration template for Customer Insights - Journeys. The guide has two parts:
 
@@ -69,7 +46,7 @@ This guide shows all step to create event registration website using Power Pages
 
 If you encounter any issues while creating or editing your website, please refer to [Power Pages documentation](https://learn.microsoft.com/power-pages/introduction).
 
-#### Create website in Power Pages
+### Create website in Power Pages
 
 1. **Create a new website**. Enter [https://make.powerpages.microsoft.com/](https://make.powerpages.microsoft.com/) in your browser to open Power Pages Studio. Select the right environment in the top right corner. Select *Start with a template*.
     :::image type="content" source="media/event-pp-template-create.png" alt-text="Create a new website." lightbox="media/event-pp-template-create.png":::
@@ -81,7 +58,7 @@ If you encounter any issues while creating or editing your website, please refer
 1. **Preview your website** by selecting the Preview button in the top right corner. You may need to enable pop-up windows to display the preview.
 1. **Publish your website** by following the [Go-live checklist](https://learn.microsoft.com/power-pages/go-live/checklist).
 
-#### Configure website in Customer Insights - Journeys
+### Configure website in Customer Insights - Journeys
 
 1. **Create a new Power Pages Website configuration** to link your Power Pages website with Customer Insights - Journeys and simplify the event publishing for your event planners. Navigate to *Power Pages Websites* section of Event Management in *Settings*. Select *+ New* to create a new configuration.
     :::image type="content" source="media/event-pp-template-website-config.png" alt-text="Create a new website configuration." lightbox="media/event-pp-template-website-config.png":::
@@ -92,16 +69,16 @@ If you encounter any issues while creating or editing your website, please refer
 1. Save your event and **Go live**.
 1. Check your event listed in the preview or live version of your Power Pages website.
 
-### Event registration website customization
+## Event registration website customization
 
-#### Customize displayed information about event in card gallery control
+### Customize displayed information about event in card gallery control
 
 The card gallery control renders the list of events. You can choose from variety of layouts.
 
 You can change what information is displayed about the event in the *Data* section of card gallery design. The Data source defines which entity records are listed. Always keep *Event* as the Data source. You can limit which events are displayed on this website by selecting a custom view as the *View* for card gallery.
 :::image type="content" source="media/event-pp-template-card-gallery.png" alt-text="Customize card gallery." lightbox="media/event-pp-template-card-gallery.png":::
 
-#### Set custom domain name for event registration website
+### Set custom domain name for event registration website
 
 The custom domain name can be set in Power Platform admin center. [Learn more](https://learn.microsoft.com/power-pages/admin/add-custom-domain).
 
@@ -111,20 +88,19 @@ The custom domain name can be set in Power Platform admin center. [Learn more](h
 > - Your custom domain name is enabled for [external form hosting](domain-authentication.md). Otherwise the registration form cannot be rendered on your website.
 > - The Power Pages Website configuration in Customer Insights - Journeys points to the right Home page URL. [Learn more](#power-pages-website-configuration-in-customer-insights---journeys).
 
-#### Create multiple event registration websites
+### Create multiple event registration websites
 
 It's possible to create multiple event registration websites and set which event is displayed on which website. Some events can be public while other events can be private only for authenticated users.
 
 1. Build at least two websites in Power Pages using the Event Registration template.
-1. Create multiple [*Power Pages Website* configuration in Customer Insights - Journeys Settings](#power-pages-website-configuration-in-customer-insights---journeys) and link each configuration to the correct Power Pages website. This allows the event planner to select the correct website while setting up the event in Event Management.
-1. Set up two custom views that lists only events for the corresponding website.
+1. Create multiple [*Power Pages Website* configuration in Customer Insights - Journeys Settings](#power-pages-website-configuration-in-customer-insights---journeys) and link each configuration to the correct Power Pages website. This allows the event planner to select the correct website while setting up the event in Event Management. A savedQuery with the filtering of events for that specific website is automatically created. This automatically generated view can't be customized, but you can save it as a new view to customize it.
 1. Open the card gallery control in Power Pages Studio, which lists the events on the Home page, and [set the corresponding view as the *View*](#customize-displayed-information-about-event-in-card-gallery-control).
 
-#### Custom components for event registration
+### Custom components for event registration
 
 The event registration template uses multiple custom components such as Event Registration Form, Event Speaker Section, Event Session Section, etc. To add one of these custom components, select the plus icon on the canvas and review the list of Custom components. You can build your own pages applying these custom components as the building blocks.
 
-#### Power Pages Website configuration in Customer Insights - Journeys
+### Power Pages Website configuration in Customer Insights - Journeys
 
 This configuration links your Power Pages website with Customer Insights - Journeys and simplifies the event publishing for your event planners. Navigate to *Power Pages Websites* section of Event Management in *Settings*. Select *+ New* to create a new configuration. Or select an existing configuration to edit it.
 
