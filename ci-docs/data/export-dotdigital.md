@@ -39,7 +39,7 @@ Export segments of unified customer profiles to DotDigital address books and use
 
 1. Choose who can use this connection. By default, it's only administrators. For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
-1. Enter your **DotDigital API username and password**.
+1. Enter your credentials for the DotDigital API.
 
 1. Enter your **DotDigital address book ID**.
 
