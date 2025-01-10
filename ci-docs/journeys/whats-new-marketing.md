@@ -82,7 +82,7 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 Learn how to make the most of the new Dynamics 365 Customer Insights features in our latest blogs and scenario docs:
 
 - [Optimize your email marketing campaigns with advanced analytics features - Microsoft Dynamics 365 Blog](https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2024/12/02/optimize-your-email-marketing-with-advanced-analytics-features/)
-- [Import contacts from excel to create segments in RTM – FastTrack blog](https://nam06.safelinks.protection.outlook.com/GetUrlReputation)
+- [Import contacts from excel to create segments in RTM – FastTrack blog](https://community.dynamics.com/blogs/post/?postid=cc6aa275-47a3-ef11-8a69-7c1e52481105))
 - [LinkedIn Lead Sync Integration with Dynamics 365 Customer Insights – Journeys – FastTrack blog](https://community.dynamics.com/blogs/post/?postid=fb6ed89f-67a1-ef11-8a69-7c1e520b1f9b)
 - [Transition Customer Voice responses](transition-walkthrough-customer-voice.md)
 
