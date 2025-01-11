@@ -1,7 +1,7 @@
 ---
 title: 'Preview: Personalize messages, make journey decisions based on web interactions'
 description: Learn how to personalize messages and make journey decisions based on web interactions in Dynamics 365 Customer Insights - Journeys.
-ms.date: 01/09/2025
+ms.date: 01/10/2025
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -18,12 +18,12 @@ ms.custom:
 # Preview: Personalize messages, make journey decisions based on web interactions
 
 > [!IMPORTANT]
-> A preview feature is a feature that is not complete, but is made available before it’s officially in a release so customers can get early access and provide feedback. Preview features aren’t meant for production use and may have limited or restricted functionality.
+> A preview feature is a feature that isn't complete, but is made available before it’s officially in a release so customers can get early access and provide feedback. Preview features aren’t meant for production use and may have limited or restricted functionality.
 > 
 > Microsoft doesn't provide support for this preview feature. Microsoft Dynamics 365 Technical Support won’t be able to help you with issues or questions. Preview features aren’t meant for production use, especially to process personal data or other data that are subject to legal or regulatory compliance requirements.
 
 > [!NOTE]
-> This feature will be available in all regions on December 20, 2024.
+> This feature applies to known contacts or leads, such as contacts who have visited a webpage by selecting a tracking link in a Customer Insights - Journeys email.
 
 In Customer Insights - Journeys, you can track and leverage your customers’ online behavior to deliver personalized experiences across your digital channels. For example, you can boost conversions and customer loyalty by sending tailored offers after customers visit your website and show interest in a product or service. By tracking additional data about customers' online journeys, you can gain valuable insights into your customers' preferences and needs and easily measure your campaign’s effectiveness. Web tracking helps you understand website usage by capturing:
 
@@ -48,6 +48,9 @@ To set up web tracking:
     :::image type="content" source="media/interaction-journey-script.png" alt-text="Screenshot of tracking script to copy." lightbox="media/interaction-journey-script.png":::
 
 1. Copy the JavaScript code (be sure to select all of it) and place it in the `<head>` tag of your website. Make sure you don't already have a script set up for your site.
+    - If you're using Power Pages, go to the Portal Management app. Go to **Content** > **Web Templates** > **Header**, paste the Customer Insights - Journeys tracking script, and then **Save**.
+    - If you're using a tag manager such as Google Tag Manager, go to the Google Tag Manager portal. Select **Add new tag** > **Tag configuration** > **Custom HTML**, paste the Customer Insights - Journeys tracking script, and then **Save**.
+    - If you're using another Content Management System (CMS) such as Wordpress, your CMS provider should have an easy way to add a script to the site header. Here's an example from Wordpress: [Add Code to Headers](https://wordpress.com/support/adding-code-to-headers/).
 
 ## Personalize customer experiences based on web interaction
 
@@ -62,10 +65,18 @@ Web interactions can be utilized to create personalized customer experiences in 
     :::image type="content" source="media/interaction-journey-if-then.png" alt-text="Screenshot of using a web interaction in an if/then branch." lightbox="media/interaction-journey-if-then.png":::
 
 In both instances, you can define conditions based on webpage URL, webpage title, etc., to differentiate the experience based on a specific web property or specific web action such as viewing the shopping cart. Here are some examples:
-- Page URL (msdynci_viewuri): The URL of the visited page (for example, https://www.contoso.com/home)
-- Page name (msdynci_viewname): The name of the visited page (for example, "home.html")
-- Page title (msdynci_viewtitle): The title of the visited page (for example, "Home")
-- View type (msdynci_viewtype): The type of the visited page (for example, "page")
-- Previous page name (msdynci_viewpreviousviews): The URL of the previous visited page for the session (for example, https://www.contoso.com)
+- Page URL (msdynci_viewuri): The URL of the visited page (for example, https://www.contoso.com/home).
+- Page name (msdynci_viewname): The name of the visited page (for example, "home.html").
+- Page title (msdynci_viewtitle): The title of the visited page (for example, "Home").
+- View type (msdynci_viewtype): The type of the visited page (for example, "page").
+- Previous page name (msdynci_viewpreviousviews): The URL of the previous visited page for the session (for example, https://www.contoso.com).
+- Action Type (msdynci_actiontype): The type of user interaction captured during a web interaction (for example, LClick). Possible values:
+  - leftClick: "LClick"
+  - rightClick: "RClick"
+  - middleClick: "MClick"
+  - keyboardEnter: "KEnter"
+  - keyboardSpace: "KSpace"
+- Action is outbound (msdynci_actionisoutbound): Refers to whether the user’s click leads them to a destination outside of the current domain (for example, false).
+- Click coordinates (msdynci_clickcoordinates): The exact click location on the webpage (for example, 23456).
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
