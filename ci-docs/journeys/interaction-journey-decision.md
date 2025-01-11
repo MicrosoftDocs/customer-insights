@@ -1,7 +1,7 @@
 ---
 title: 'Preview: Personalize messages, make journey decisions based on web interactions'
 description: Learn how to personalize messages and make journey decisions based on web interactions in Dynamics 365 Customer Insights - Journeys.
-ms.date: 01/09/2025
+ms.date: 01/10/2025
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -23,7 +23,7 @@ ms.custom:
 > Microsoft doesn't provide support for this preview feature. Microsoft Dynamics 365 Technical Support won’t be able to help you with issues or questions. Preview features aren’t meant for production use, especially to process personal data or other data that are subject to legal or regulatory compliance requirements.
 
 > [!NOTE]
-> This feature applies to known contacts or leads, such as contacts who have visited a webpage by clicking a tracking link in a Customer Insights - Journeys email.
+> This feature applies to known contacts or leads, such as contacts who have visited a webpage by selecting a tracking link in a Customer Insights - Journeys email.
 
 In Customer Insights - Journeys, you can track and leverage your customers’ online behavior to deliver personalized experiences across your digital channels. For example, you can boost conversions and customer loyalty by sending tailored offers after customers visit your website and show interest in a product or service. By tracking additional data about customers' online journeys, you can gain valuable insights into your customers' preferences and needs and easily measure your campaign’s effectiveness. Web tracking helps you understand website usage by capturing:
 
