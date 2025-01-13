@@ -1,7 +1,7 @@
 ---
-title: Build event registration portal with Power Pages Studio
-description: Build event registration portal with Power Pages template designed for Customer Insights - Journeys Event Management
-ms.date: 1/3/2025
+title: 'Preview: Build event registration portal with Power Pages Studio'
+description: Build event registration portal with Power Pages template designed for Customer Insights - Journeys Event Management.
+ms.date: 1/13/2025
 ms.topic: article
 author: petrjantac
 ms.author: alfergus
@@ -14,7 +14,7 @@ search.audienceType:
 # PREVIEW: Build event registration website using Power Pages Studio
 
 > [!IMPORTANT]
-> A preview feature is a feature that is not complete but is made available before it’s officially in a release so customers can get early access and provide feedback. Preview features aren’t meant for production use and may have limited or restricted functionality.
+> A preview feature is a feature that isn't complete but is made available before it’s officially in a release so customers can get early access and provide feedback. Preview features aren’t meant for production use and may have limited or restricted functionality.
 >
 > Microsoft doesn't provide support for this preview feature. Microsoft Dynamics 365 Technical Support won’t be able to help you with issues or questions. Preview features aren’t meant for production use, especially to process personal data or other data that are subject to legal or regulatory compliance requirements.
 
@@ -27,7 +27,7 @@ You can create an event registration website simply by using the Event Registrat
 - Register to Event—Page with event registration form. The registration form is dynamic. Each event can have a different registration form.
 
 > [!IMPORTANT]
-> Using Power Pages requires extra license. You can test Power Pages using a free trial. [Learn more](https://learn.microsoft.com/power-pages/go-live/assign-licensing) about licensing.
+> Using Power Pages requires extra license. You can test Power Pages using a free trial. For more information, see [licensing](https://learn.microsoft.com/power-pages/go-live/assign-licensing).
 
 Power Pages combined with event registration template unlocks powerful scenarios such as:
 
@@ -58,7 +58,11 @@ If you encounter any issues while creating or editing your website, please refer
 1. **Preview your website** by selecting the Preview button in the top right corner. You may need to enable pop-up windows to display the preview.
 1. **Publish your website** by following the [Go-live checklist](https://learn.microsoft.com/power-pages/go-live/checklist).
 
+<!--- HIDING SINCE THERE IS NO CONTENT UNDER THE SECTION HEADING
+
 ### Configure website in Customer Insights - Journeys
+
+-->
 
 1. **Create a new Power Pages Website configuration** to link your Power Pages website with Customer Insights - Journeys and simplify the event publishing for your event planners. Navigate to *Power Pages Websites* section of Event Management in *Settings*. Select *+ New* to create a new configuration.
     :::image type="content" source="media/event-pp-template-website-config.png" alt-text="Create a new website configuration." lightbox="media/event-pp-template-website-config.png":::
@@ -85,8 +89,8 @@ The custom domain name can be set in Power Platform admin center. For more infor
 > [!IMPORTANT]
 > Once you assign a custom domain name to your Power Pages website, check the following:
 >
-> - Your custom domain name is enabled for [external form hosting](domain-authentication.md). Otherwise the registration form cannot be rendered on your website.
-> - The Power Pages Website configuration in Customer Insights - Journeys points to the right Home page URL. [Learn more](#power-pages-website-configuration-in-customer-insights---journeys).
+> - Your custom domain name is enabled for [external form hosting](domain-authentication.md). If your custom domain name is not emabled, the registration form cannot be rendered on your website.
+> - The Power Pages Website configuration in Customer Insights - Journeys points to the Home page URL. For more information, see [Power Pages Website configuration in Customer Insights - Journeys](#power-pages-website-configuration-in-customer-insights---journeys).
 
 ### Create multiple event registration websites
 
