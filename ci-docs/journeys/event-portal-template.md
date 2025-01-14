@@ -78,6 +78,7 @@ The following sections cover event registration website customization.
 The card gallery control renders the list of events. You can choose from variety of layouts.
 
 You can change what information is displayed about the event in the *Data* section of card gallery design. The Data source defines which entity records are listed. Always keep *Event* as the Data source. You can limit which events are displayed on this website by selecting a custom view as the *View* for card gallery.
+
 :::image type="content" source="media/event-pp-template-card-gallery.png" alt-text="Customize card gallery." lightbox="media/event-pp-template-card-gallery.png":::
 
 ### Set custom domain name for event registration website
