@@ -1,6 +1,6 @@
 ---
-title: 'Preview: Build event registration portal with Power Pages Studio'
-description: Build event registration portal with Power Pages template designed for Customer Insights - Journeys Event Management.
+title: 'Preview: Build an event registration portal with Power Pages Studio'
+description: Build an event registration portal with Power Pages template designed for Customer Insights - Journeys Event Management.
 ms.date: 1/13/2025
 ms.topic: article
 author: petrjantac
@@ -11,7 +11,7 @@ search.audienceType:
   - enduser
 ---
 
-# PREVIEW: Build event registration website using Power Pages Studio
+# PREVIEW: Build an event registration website using Power Pages Studio
 
 > [!IMPORTANT]
 > A preview feature is a feature that isn't complete but is made available before it’s officially in a release so customers can get early access and provide feedback. Preview features aren’t meant for production use and may have limited or restricted functionality.
