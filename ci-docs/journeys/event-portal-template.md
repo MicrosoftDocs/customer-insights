@@ -31,11 +31,11 @@ You can create an event registration website simply by using the Event Registrat
 
 Power Pages combined with event registration template unlocks powerful scenarios such as:
 
-- Style and customize your website in Power Pages Studio editor
-- [Set the custom domain name for event registration website](#set-custom-domain-name-for-event-registration-website)
-- [Create multiple event registration websites](#create-multiple-event-registration-websites)
-- Each event can have a different registration form without the need to change any code
-- Explore more [Power Pages capabilities](/power-pages/capabilities)
+- Style and customize your website in Power Pages Studio editor.
+- [Set the custom domain name for event registration website](#set-custom-domain-name-for-event-registration-website).
+- [Create multiple event registration websites](#create-multiple-event-registration-websites).
+- Each event can have a different registration form without the need to change any code.
+- Explore more [Power Pages capabilities](/power-pages/capabilities).
 
 ## Step-by-step guide to build event registration website
 
@@ -58,11 +58,7 @@ If you encounter any issues while creating or editing your website, please refer
 1. **Preview your website** by selecting the Preview button in the top right corner. You may need to enable pop-up windows to display the preview.
 1. **Publish your website** by following the [Go-live checklist](/power-pages/go-live/checklist).
 
-<!--- HIDING SINCE THERE IS NO CONTENT UNDER THE SECTION HEADING
-
 ### Configure website in Customer Insights - Journeys
-
--->
 
 1. **Create a new Power Pages Website configuration** to link your Power Pages website with Customer Insights - Journeys and simplify the event publishing for your event planners. Navigate to *Power Pages Websites* section of Event Management in *Settings*. Select *+ New* to create a new configuration.
     :::image type="content" source="media/event-pp-template-website-config.png" alt-text="Create a new website configuration." lightbox="media/event-pp-template-website-config.png":::
@@ -73,7 +69,11 @@ If you encounter any issues while creating or editing your website, please refer
 1. Save your event and **Go live**.
 1. Check your event listed in the preview or live version of your Power Pages website.
 
+<!--- HIDING SINCE SECTION HAS NO CONTENT
+
 ## Event registration website customization
+
+-->
 
 ### Customize displayed information about event in card gallery control
 
