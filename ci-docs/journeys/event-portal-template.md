@@ -69,11 +69,9 @@ If you encounter any issues while creating or editing your website, please refer
 1. Save your event and **Go live**.
 1. Check your event listed in the preview or live version of your Power Pages website.
 
-<!--- HIDING SINCE SECTION HAS NO CONTENT
-
 ## Event registration website customization
 
--->
+The following sections cover event registration website customization.
 
 ### Customize displayed information about event in card gallery control
 
