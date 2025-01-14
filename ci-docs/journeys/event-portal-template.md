@@ -48,7 +48,7 @@ If you encounter any issues while creating or editing your website, please refer
 
 ### Create website in Power Pages
 
-1. Create a new website: Enter [Power Pages Get started](https://make.powerpages.microsoft.com/) in your browser to open Power Pages Studio. Select the right environment in the top right corner. Select **Start with a template**.
+1. Create a new website: Enter "[Power Pages Get started](https://make.powerpages.microsoft.com/)" in your browser to open Power Pages Studio. Select the right environment in the top right corner. Select **Start with a template**.
     :::image type="content" source="media/event-pp-template-create.png" alt-text="Create a new website." lightbox="media/event-pp-template-create.png":::
 1. Find an Event Portal template in **Dynamics 365** and select **Choose this template**.
     :::image type="content" source="media/event-pp-template-select.png" alt-text="Select a template." lightbox="media/event-pp-template-select.png":::
@@ -96,8 +96,8 @@ The custom domain name can be set in Power Platform admin center. For more infor
 It's possible to create multiple event registration websites and set which event is displayed on which website. Some events can be public while other events can be private only for authenticated users.
 
 1. Build at least two websites in Power Pages using the Event Registration template.
-1. Create multiple [*Power Pages Website* configuration in Customer Insights - Journeys Settings](#power-pages-website-configuration-in-customer-insights---journeys) and link each configuration to the correct Power Pages website. This allows the event planner to select the correct website while setting up the event in Event Management. A savedQuery with the filtering of events for that specific website is automatically created. This automatically generated view can't be customized but you can save it as a new view to customize it.
-1. Open the card gallery control in Power Pages Studio and [Customize the corresponding view as the *View*](#customize-displayed-information-about-event-in-card-gallery-control).
+1. Create multiple [Power Pages Website configurations in Customer Insights - Journeys settings](#power-pages-website-configuration-in-customer-insights---journeys) and link each configuration to the correct Power Pages website. This allows the event planner to select the correct website while setting up the event in Event Management. A *savedQuery* with the filtering of events for that specific website is automatically created. This automatically generated view can't be customized but you can save it as a new view to customize it.
+1. Open the card gallery control in Power Pages Studio and [Customize the corresponding view](#customize-displayed-information-about-event-in-card-gallery-control) as the **View**.
 
 ### Custom components for event registration
 
@@ -112,7 +112,7 @@ This configuration links your Power Pages website with Customer Insights - Journ
 You can set the following parameters of your website:
 
 - The **Name** of your website configuration is visible to event planners so they can select on which website the event is hosted.
-- The **Homepage URL** is the URL of your Power Pages website. To get your website URL, navigate to Power Pages Studio, select *Set up* in the left pane and find the URL in the Site details.
+- The **Homepage URL** is the URL of your Power Pages website. To get your website URL, navigate to Power Pages Studio, select **Set up** in the left pane and find the URL in the Site details.
 - The **Registration page URL** is an optional parameter. If you want to use a custom registration page instead of the Events page provided in the template, enter the page URL here.
 - **Default website** defines if this configuration is selected as default for your newly created events hosted on Power Pages website.
 
