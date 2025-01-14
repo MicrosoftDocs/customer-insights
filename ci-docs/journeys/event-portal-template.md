@@ -18,7 +18,7 @@ search.audienceType:
 >
 > Microsoft doesn't provide support for this preview feature. Microsoft Dynamics 365 Technical Support won’t be able to help you with issues or questions. Preview features aren’t meant for production use, especially to process personal data or other data that are subject to legal or regulatory compliance requirements.
 
-Microsoft [Power Pages](https://learn.microsoft.com/power-pages/introduction) is a secure, enterprise-grade, low-code software as a service (SaaS) platform for creating, hosting, and administering modern external-facing business websites.
+Microsoft [Power Pages](/power-pages/introduction) is a secure, enterprise-grade, low-code software as a service (SaaS) platform for creating, hosting, and administering modern external-facing business websites.
 
 You can create an event registration website simply by using the Event Registration template. The template contains multiple pages for the whole registration process:
 
@@ -27,7 +27,7 @@ You can create an event registration website simply by using the Event Registrat
 - Register to Event—Page with event registration form. The registration form is dynamic. Each event can have a different registration form.
 
 > [!IMPORTANT]
-> Using Power Pages requires extra license. You can test Power Pages using a free trial. For more information, see [licensing](https://learn.microsoft.com/power-pages/go-live/assign-licensing).
+> Using Power Pages requires extra license. You can test Power Pages using a free trial. For more information, see [licensing](/power-pages/go-live/assign-licensing).
 
 Power Pages combined with event registration template unlocks powerful scenarios such as:
 
@@ -35,7 +35,7 @@ Power Pages combined with event registration template unlocks powerful scenarios
 - [Set the custom domain name for event registration website](#set-custom-domain-name-for-event-registration-website)
 - [Create multiple event registration websites](#create-multiple-event-registration-websites)
 - Each event can have a different registration form without the need to change any code
-- Explore more [Power Pages capabilities](https://learn.microsoft.com/power-pages/capabilities)
+- Explore more [Power Pages capabilities](/power-pages/capabilities)
 
 ## Step-by-step guide to build event registration website
 
@@ -44,11 +44,11 @@ This guide shows all steps to create event registration website using Power Page
 - Create s website in Power Pages
 - Configure the website in Customer Insights - Journeys
 
-If you encounter any issues while creating or editing your website, please refer to [Power Pages documentation](https://learn.microsoft.com/power-pages/introduction).
+If you encounter any issues while creating or editing your website, please refer to [Power Pages documentation](/power-pages/introduction).
 
 ### Create website in Power Pages
 
-1. **Create a new website**. Enter [https://make.powerpages.microsoft.com/](https://make.powerpages.microsoft.com/) in your browser to open Power Pages Studio. Select the right environment in the top right corner. Select *Start with a template*.
+1. **Create a new website**. Enter [Power Pages Get started](https://make.powerpages.microsoft.com/) in your browser to open Power Pages Studio. Select the right environment in the top right corner. Select *Start with a template*.
     :::image type="content" source="media/event-pp-template-create.png" alt-text="Create a new website." lightbox="media/event-pp-template-create.png":::
 1. **Find Event Portal** template in Dynamics 365 section and select *Choose this template*.
     :::image type="content" source="media/event-pp-template-select.png" alt-text="Select a template." lightbox="media/event-pp-template-select.png":::
@@ -56,7 +56,7 @@ If you encounter any issues while creating or editing your website, please refer
 1. Once your site is ready, select the *Edit* button to customize your website. Your new website is created as Private, not accessible for external audience.
 1. The **Home** page contains the list of events. You can [customize what information about event is displayed](#customize-displayed-information-about-event-in-card-gallery-control) in the list of events by selecting the *Card gallery* control on the canvas. You can also easily change the hero image, logo in the page header, page footer, etc.
 1. **Preview your website** by selecting the Preview button in the top right corner. You may need to enable pop-up windows to display the preview.
-1. **Publish your website** by following the [Go-live checklist](https://learn.microsoft.com/power-pages/go-live/checklist).
+1. **Publish your website** by following the [Go-live checklist](/power-pages/go-live/checklist).
 
 <!--- HIDING SINCE THERE IS NO CONTENT UNDER THE SECTION HEADING
 
@@ -84,7 +84,7 @@ You can change what information is displayed about the event in the *Data* secti
 
 ### Set custom domain name for event registration website
 
-The custom domain name can be set in Power Platform admin center. For more information, see [Add a custom domain name](https://learn.microsoft.com/power-pages/admin/add-custom-domain).
+The custom domain name can be set in Power Platform admin center. For more information, see [Add a custom domain name](/power-pages/admin/add-custom-domain).
 
 > [!IMPORTANT]
 > Once you assign a custom domain name to your Power Pages website, check the following:
