@@ -294,6 +294,8 @@
         href: real-time-marketing-split-audience.md
       - name: When to use attribute versus if/then branches
         href: real-time-marketing-branches.md
+      - name: 'Tutorial: Implement approval workflows in real-time journeys'
+        href: approval-workflows.md
       - name: Customize the journey designer
         href: real-time-marketing-journey-designer.md
       - name: "Preview: Control how fast customers can enter a journey"
