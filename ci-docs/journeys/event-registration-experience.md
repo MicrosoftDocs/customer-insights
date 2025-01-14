@@ -13,7 +13,7 @@ search.audienceType:
 
 # Create a comprehensive event registration experience
 
-The event registration experience enables new attendees to register seamlessly. It's crucial to ensure the registration process is smooth while collecting all necessary information. The registration experience is powered by the [registration form](event-registration-experience.md#event-registration-form), a type of [Customer Insights - Journeys form](real-time-marketing-form-overview.md).
+The event registration experience enables new attendees to register for events seamlessly. It's crucial to ensure the registration process is smooth while collecting all necessary information. The registration experience is powered by the [registration form](event-registration-experience.md#event-registration-form), a type of [Customer Insights - Journeys form](real-time-marketing-form-overview.md).
 
 There are various options how to build event registration experience:
 
@@ -22,15 +22,15 @@ There are various options how to build event registration experience:
 - Registration portal on Power Pages—you can use the event registration template to build a website using Power Pages Studio.
   > [!NOTE]
   > As of January 2025, this feature is not available. General availability is scheduled soon. 
-- Custom solution using event API. For more information, see [Using events API in real-time journeys](developer/using-rtm-events-api.md).
+- Custom solution using events API. For more information, see [Using events API in real-time journeys](developer/using-rtm-events-api.md).
 
 ## Event registration form
 
 The event registration form can dynamically display the following event-related information:
 
 - Name of the event.
-- Description including the date, time, location, and other information.
-- List of speakers.
+- Description of event including the date, time, location, and other information.
+- List of speakers in the event.
 - List of sessions—you can enable session registration or show the read-only list of sessions.
 
 > [!TIP]
