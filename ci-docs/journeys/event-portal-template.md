@@ -62,9 +62,9 @@ If you encounter any issues while creating or editing your website, please refer
 
 1. Create a new Power Pages Website configuration to link your Power Pages website with Customer Insights - Journeys and simplify the event publishing for your event planners: Navigate to **Power Pages Websites** section of Event Management in **Settings**. Select **+ New** to create a new configuration.
     :::image type="content" source="media/event-pp-template-website-config.png" alt-text="Create a new website configuration." lightbox="media/event-pp-template-website-config.png":::
-    Set the **Name** of your website configuration, which is visible to event planners so they can select on which website the event is hosted. Fill in the *Homepage URL* with the URL of your Power Pages website. To get your website URL, navigate to Power Pages Studio, select **Set up** in the left pane, and find the URL under **Site details**. Select **Save & Close**.
+    Set the **Name** of your website configuration, which is visible to event planners so they can select on which website the event is hosted. Fill in the **Homepage URL** with the URL of your Power Pages website. To get your website URL, navigate to Power Pages Studio, select **Set up** in the left pane, and find the URL under **Site details**. Select **Save & Close**.
 1. Enable [external form hosting](domain-authentication.md) and optionally prefill for your Power Pages domain. **External form hosting** and **Prefill** can be enabled in **Settings** > **Domains**.
-1. Create a new event or edit an existing one: Navigate to the **Website and form** tab. Select **Power Pages Website** as the destination of *Where do you want attendees to register for this event*. Your default **Registration website** is automatically set. You can also change the form that is used for this event. Each event can use a different form although these events are hosted on the same website.
+1. Create a new event or edit an existing one: Navigate to the **Website and form** tab. Select **Power Pages Website** as the destination of *Where do you want attendees to register for this event?* Your default **Registration website** is automatically set. You can also change the form that is used for this event. Each event can use a different form although these events are hosted on the same website.
     :::image type="content" source="media/event-pp-template-new-event.png" alt-text="Create a new event." lightbox="media/event-pp-template-new-event.png":::
 1. Save your event and select **Go live**.
 1. View your event listed in the preview or live version of your Power Pages website.
@@ -77,7 +77,7 @@ The following sections cover event registration website customization.
 
 The card gallery control renders the list of events. You can choose from variety of layouts.
 
-You can change what information is displayed about the event in the *Data* section of card gallery design. The Data source defines which entity records are listed. Always keep *Event* as the Data source. You can limit which events are displayed on this website by selecting a custom view as the *View* for card gallery.
+You can change what information is displayed about the event in the **Data** section of card gallery design. The **Data source** defines which entity records are listed. Always select **Event** as the Data source. You can limit which events are displayed on this website by selecting a custom view as the **View** for card gallery.
 
 :::image type="content" source="media/event-pp-template-card-gallery.png" alt-text="Customize card gallery." lightbox="media/event-pp-template-card-gallery.png":::
 
@@ -105,16 +105,16 @@ The event registration template uses multiple custom components such as Event Re
 
 ### Power Pages Website configuration in Customer Insights - Journeys
 
-This configuration links your Power Pages website with Customer Insights - Journeys and simplifies the event publishing for your event planners. Navigate to *Power Pages Websites* section of Event Management in *Settings*. Select *+ New* to create a new configuration or select an existing configuration to edit it.
+This configuration links your Power Pages website with Customer Insights - Journeys and simplifies the event publishing for your event planners. Navigate to **Power Pages Websites** section of Event Management in **Settings**. Select **+ New** to create a new configuration or select an existing configuration to edit it.
 
 :::image type="content" source="media/event-pp-template-website-config.png" alt-text="Create a new website configuration." lightbox="media/event-pp-template-website-config.png":::
 
 You can set the following parameters of your website:
 
-- The *Name* of your website configuration is visible to event planners so they can select on which website the event is hosted.
-- The *Homepage URL* is the URL of your Power Pages website. To get your website URL, navigate to Power Pages Studio, select *Set up* in the left pane and find the URL in the Site details.
-- The *Registration page URL* is an optional parameter. If you want to use a custom registration page instead of the Events page provided in the template, enter the page URL here.
-- *Default website* defines if this configuration is selected as default for your newly created events hosted on Power Pages website.
+- The **Name** of your website configuration is visible to event planners so they can select on which website the event is hosted.
+- The **Homepage URL** is the URL of your Power Pages website. To get your website URL, navigate to Power Pages Studio, select *Set up* in the left pane and find the URL in the Site details.
+- The **Registration page URL** is an optional parameter. If you want to use a custom registration page instead of the Events page provided in the template, enter the page URL here.
+- **Default website** defines if this configuration is selected as default for your newly created events hosted on Power Pages website.
 
 > [!IMPORTANT]
-> Updating the Homepage URL and/or Registration page URL of the existing configuration automatically updates the public URL of all the events using this website configuration.
+> Updating the **Homepage URL** and/or **Registration page URL** of the existing configuration automatically updates the public URL of all the events using this website configuration.
