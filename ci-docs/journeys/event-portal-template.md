@@ -48,26 +48,26 @@ If you encounter any issues while creating or editing your website, please refer
 
 ### Create website in Power Pages
 
-1. **Create a new website**. Enter [Power Pages Get started](https://make.powerpages.microsoft.com/) in your browser to open Power Pages Studio. Select the right environment in the top right corner. Select *Start with a template*.
+1. Create a new website. Enter [Power Pages Get started](https://make.powerpages.microsoft.com/) in your browser to open Power Pages Studio. Select the right environment in the top right corner. Select **Start with a template**.
     :::image type="content" source="media/event-pp-template-create.png" alt-text="Create a new website." lightbox="media/event-pp-template-create.png":::
-1. **Find Event Portal** template in Dynamics 365 section and select *Choose this template*.
+1. Find Event Portal template in Dynamics 365 section and select **Choose this template**.
     :::image type="content" source="media/event-pp-template-select.png" alt-text="Select a template." lightbox="media/event-pp-template-select.png":::
-1. **Name your site** and set the language. You can change the web address later to [use your own domain name](#set-custom-domain-name-for-event-registration-website). Select *Done* in the bottom right corner. It takes a few minutes to get your site ready. You can check the status of your newly created website in the list of Active sites.
-1. Once your site is ready, select the *Edit* button to customize your website. Your new website is created as Private, not accessible for external audience.
-1. The **Home** page contains the list of events. You can [customize what information about event is displayed](#customize-displayed-information-about-event-in-card-gallery-control) in the list of events by selecting the *Card gallery* control on the canvas. You can also easily change the hero image, logo in the page header, page footer, etc.
-1. **Preview your website** by selecting the Preview button in the top right corner. You may need to enable pop-up windows to display the preview.
-1. **Publish your website** by following the [Go-live checklist](/power-pages/go-live/checklist).
+1. Name your site and set the language. You can change the web address later to [use your own domain name](#set-custom-domain-name-for-event-registration-website). Select **Done** in the bottom right corner. It takes a few minutes to get your site ready. You can check the status of your newly created website in the list of Active sites.
+1. Once your site is ready, select **Edit** to customize your website. Your new website is created as Private, not accessible for external audience.
+1. The Home page contains the list of events. You can [customize what information about event is displayed](#customize-displayed-information-about-event-in-card-gallery-control) in the list of events by selecting the **Card gallery** control on the canvas. You can also easily change the hero image, logo in the page header, page footer, etc.
+1. Preview your website: Select **Preview** in the top right corner. You may need to enable pop-up windows to display the preview.
+1. Publish your website: Follow the [Go-live checklist](/power-pages/go-live/checklist).
 
 ### Configure website in Customer Insights - Journeys
 
-1. **Create a new Power Pages Website configuration** to link your Power Pages website with Customer Insights - Journeys and simplify the event publishing for your event planners. Navigate to *Power Pages Websites* section of Event Management in *Settings*. Select *+ New* to create a new configuration.
+1. Create a new Power Pages Website configuration to link your Power Pages website with Customer Insights - Journeys and simplify the event publishing for your event planners: Navigate to **Power Pages Websites** section of Event Management in **Settings**. Select **+ New** to create a new configuration.
     :::image type="content" source="media/event-pp-template-website-config.png" alt-text="Create a new website configuration." lightbox="media/event-pp-template-website-config.png":::
-    Set the *Name* of your website configuration, which is visible to event planners so they can select on which website the event is hosted. Fill in the *Homepage URL*, which is the URL of your Power Pages website. To get your website URL, navigate to Power Pages Studio, select *Set up* in the left pane, and find the URL under Site details. Select *Save & Close*.
-1. **Enable [external form hosting](domain-authentication.md)** and optionally prefill for your Power Pages domain. *External form hosting* and *Prefill* can be enabled in *Settings* -> *Domains*.
-1. **Create a new event** or edit an existing one. Navigate to the *Website and form* tab. Select *Power Pages website* as the destination of *Where do you want attendees to register for this event*. You default *Registration website* is automatically set. You can also change the form that is used for this event. Each event can use a different form although these events are hosted on the same website.
+    Set the **Name** of your website configuration, which is visible to event planners so they can select on which website the event is hosted. Fill in the *Homepage URL* with the URL of your Power Pages website. To get your website URL, navigate to Power Pages Studio, select **Set up** in the left pane, and find the URL under **Site details**. Select **Save & Close**.
+1. Enable [external form hosting](domain-authentication.md) and optionally prefill for your Power Pages domain. **External form hosting** and **Prefill** can be enabled in **Settings** -> **Domains**.
+1. Create a new event or edit an existing one: Navigate to the **Website and form** tab. Select **Power Pages Website** as the destination of *Where do you want attendees to register for this event*. Your default **Registration website** is automatically set. You can also change the form that is used for this event. Each event can use a different form although these events are hosted on the same website.
     :::image type="content" source="media/event-pp-template-new-event.png" alt-text="Create a new event." lightbox="media/event-pp-template-new-event.png":::
-1. Save your event and **Go live**.
-1. Check your event listed in the preview or live version of your Power Pages website.
+1. Save your event and select **Go live**.
+1. View your event listed in the preview or live version of your Power Pages website.
 
 ## Event registration website customization
 
