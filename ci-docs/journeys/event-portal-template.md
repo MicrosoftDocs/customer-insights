@@ -22,9 +22,9 @@ Microsoft [Power Pages](/power-pages/introduction) is a secure, enterprise-grade
 
 You can create an event registration website simply by using the Event Registration template. The template contains multiple pages for the whole registration process:
 
-- Home—List of all events, which are enabled for this website.
-- Events—Details of event including list of speakers and sessions. This page is dynamic and the content is loaded based on the event selected in the Home page.
-- Register to Event—Page with event registration form. The registration form is dynamic. Each event can have a different registration form.
+- **Home**—Lists all events, which are enabled for this website.
+- **Events**—Details event including list of speakers and sessions. This page is dynamic and the content is loaded based on the event selected in the Home page.
+- **Register to event**—Provides the event registration form. The registration form is dynamic. Each event can have a different registration form.
 
 > [!IMPORTANT]
 > Using Power Pages requires extra license. You can test Power Pages using a free trial. For more information, see [licensing](/power-pages/go-live/assign-licensing).
@@ -41,7 +41,7 @@ Power Pages combined with event registration template unlocks powerful scenarios
 
 This guide shows all steps to create event registration website using Power Pages Studio and the new event registration template for Customer Insights - Journeys. The guide has two parts:
 
-- Create s website in Power Pages
+- Create a website in Power Pages
 - Configure the website in Customer Insights - Journeys
 
 If you encounter any issues while creating or editing your website, please refer to [Power Pages documentation](/power-pages/introduction).
