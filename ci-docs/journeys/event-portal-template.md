@@ -41,8 +41,8 @@ Power Pages combined with event registration template unlocks powerful scenarios
 
 This guide shows all steps to create event registration website using Power Pages Studio and the new event registration template for Customer Insights - Journeys. The guide has two parts:
 
-- Create a website in Power Pages
-- Configure the website in Customer Insights - Journeys
+- Create a website in Power Pages.
+- Configure the website in Customer Insights - Journeys.
 
 If you encounter any issues while creating or editing your website, please refer to [Power Pages documentation](/power-pages/introduction).
 
