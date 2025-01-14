@@ -17,9 +17,9 @@ The event registration experience enables new attendees to register for events s
 
 There are various options how to build event registration experience:
 
-- Registration form hosted as a standalone page—a single page containing the registration form with all details about the event. The page is hosted on Customer Insights infrastructure and no extra license is needed. For more information, see [Publish your form](real-time-marketing-form-create.md#publish-your-form).
-- Registration form embedded into your website—you can embed the event registration form into your own website. For more information, see [Publish your form](real-time-marketing-form-create.md#publish-your-form).
-- Registration portal on Power Pages—you can use the event registration template to build a website using Power Pages Studio.
+- Registration form hosted as a standalone page–a single page containing the registration form with all details about the event. The page is hosted on Customer Insights infrastructure and no extra license is needed. For more information, see [Publish your form](real-time-marketing-form-create.md#publish-your-form).
+- Registration form embedded into your website–you can embed the event registration form into your own website. For more information, see [Publish your form](real-time-marketing-form-create.md#publish-your-form).
+- Registration portal on Power Pages–you can use the event registration template to build a website using Power Pages Studio.
   > [!NOTE]
   > As of January 2025, this feature is not available. General availability is scheduled soon. 
 - Custom solution using events API. For more information, see [Using events API in real-time journeys](developer/using-rtm-events-api.md).
@@ -31,7 +31,7 @@ The event registration form can dynamically display the following event-related 
 - Name of the event.
 - Description of event including the date, time, location, and other information.
 - List of speakers in the event.
-- List of sessions—you can enable session registration or show the read-only list of sessions.
+- List of sessions–you can enable session registration or show the read-only list of sessions.
 
 > [!TIP]
 > A single registration form can be used for multiple events. This event-related information is dynamically updated based on the *readableEventId* parameter provided in the page URL.

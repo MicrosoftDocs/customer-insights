@@ -22,9 +22,9 @@ Microsoft [Power Pages](/power-pages/introduction) is a secure, enterprise-grade
 
 You can create an event registration website simply by using the Event Registration template. The template contains multiple pages for the whole registration process:
 
-- **Home**—Lists all events, which are enabled for this website.
-- **Events**—Details event including list of speakers and sessions. This page is dynamic and the content is loaded based on the event selected in the Home page.
-- **Register to event**—Provides the event registration form. The registration form is dynamic. Each event can have a different registration form.
+- **Home**–Lists all events, which are enabled for this website.
+- **Events**–Details event including list of speakers and sessions. This page is dynamic and the content is loaded based on the event selected in the Home page.
+- **Register to event**–Provides the event registration form. The registration form is dynamic. Each event can have a different registration form.
 
 > [!IMPORTANT]
 > Using Power Pages requires extra license. You can test Power Pages using a free trial. For more information, see [licensing](/power-pages/go-live/assign-licensing).
@@ -48,12 +48,12 @@ If you encounter any issues while creating or editing your website, please refer
 
 ### Create website in Power Pages
 
-1. Create a new website. Enter [Power Pages Get started](https://make.powerpages.microsoft.com/) in your browser to open Power Pages Studio. Select the right environment in the top right corner. Select **Start with a template**.
+1. Create a new website: Enter [Power Pages Get started](https://make.powerpages.microsoft.com/) in your browser to open Power Pages Studio. Select the right environment in the top right corner. Select **Start with a template**.
     :::image type="content" source="media/event-pp-template-create.png" alt-text="Create a new website." lightbox="media/event-pp-template-create.png":::
-1. Find Event Portal template in Dynamics 365 section and select **Choose this template**.
+1. Find an Event Portal template in **Dynamics 365** and select **Choose this template**.
     :::image type="content" source="media/event-pp-template-select.png" alt-text="Select a template." lightbox="media/event-pp-template-select.png":::
 1. Name your site and set the language. You can change the web address later to [use your own domain name](#set-custom-domain-name-for-event-registration-website). Select **Done** in the bottom right corner. It takes a few minutes to get your site ready. You can check the status of your newly created website in the list of Active sites.
-1. Once your site is ready, select **Edit** to customize your website. Your new website is created as Private, not accessible for external audience.
+1. Once your site is ready, select **Edit** to customize your website. Your new website is created as Private–not accessible for external audience.
 1. The Home page contains the list of events. You can [customize what information about event is displayed](#customize-displayed-information-about-event-in-card-gallery-control) in the list of events by selecting the **Card gallery** control on the canvas. You can also easily change the hero image, logo in the page header, page footer, etc.
 1. Preview your website: Select **Preview** in the top right corner. You may need to enable pop-up windows to display the preview.
 1. Publish your website: Follow the [Go-live checklist](/power-pages/go-live/checklist).
