@@ -27,6 +27,7 @@ To set up quiet times, first, choose a channel for the quiet times and then sele
 
 > [!NOTE]
 > You can set up quiet times for a maximum of three consecutive days.
+> Quite times work only for Journeys, and doesn't support quick send.
 
 ## Set up overnight quiet times
 
