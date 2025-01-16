@@ -1,7 +1,7 @@
 ---
 title: Manage consent for email, SMS (text), and custom channel messages
 description: Learn how to manage consent for messages in Dynamics 365 Customer Insights - Journeys.
-ms.date: 02/29/2024
+ms.date: 01/16/2025
 ms.topic: reference
 author: alfergus
 ms.author: alfergus
@@ -90,7 +90,7 @@ The following diagram provides a visual representation of how consent is checked
   <tr>
    <td><b>SMS/custom channel</b></td>
     <td>Blocked</td>
-    <td>Blocked</td>
+    <td>Sent</td>
     <td>Sent</td>
   </tr>
   <tr>
