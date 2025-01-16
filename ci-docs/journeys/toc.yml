@@ -282,24 +282,32 @@
         href: real-time-marketing-tile-reference.md
     - name: Advanced journey capabilities
       items:
-      - name: Personalize journey variations using multiple journey branches
-        href: real-time-marketing-multiple-branches.md
-      - name: Personalize triggers using conditions
-        href: real-time-marketing-personalize-triggers.md
-      - name: Set quiet times to prevent messages from sending during unwanted hours
-        href: real-time-marketing-quiet-times.md
-      - name: Limit sent with frequency capping
-        href: real-time-marketing-frequency-cap.md
-      - name: "Preview: Split your audience into groups"
-        href: real-time-marketing-split-audience.md
-      - name: When to use attribute versus if/then branches
-        href: real-time-marketing-branches.md
-      - name: 'Tutorial: Implement approval workflows in real-time journeys'
-        href: approval-workflows.md
-      - name: Customize the journey designer
-        href: real-time-marketing-journey-designer.md
-      - name: "Preview: Control how fast customers can enter a journey"
-        href: control-how-fast-enter-journey.md
+      - name: Control journey entry
+        items:
+        - name: Personalize triggers using conditions
+          href: real-time-marketing-personalize-triggers.md
+        - name: "Preview: Control how fast customers can enter a journey"
+          href: control-how-fast-enter-journey.md      
+      - name: Split journey audiences
+        items:
+        - name: Personalize journey variations using multiple journey branches
+          href: real-time-marketing-multiple-branches.md
+        - name: When to use attribute versus if/then branches
+          href: real-time-marketing-branches.md
+        - name: "Preview: Split your audience into groups"
+          href: real-time-marketing-split-audience.md
+      - name: Control messages sent from journeys
+        items:
+        - name: Set quiet times to prevent messages from sending during unwanted hours
+          href: real-time-marketing-quiet-times.md
+        - name: Limit messages sent with frequency capping
+          href: real-time-marketing-frequency-cap.md
+      - name: Create approval workflows and customize the journey designer
+        items:
+        - name: 'Tutorial: Implement approval workflows in real-time journeys'
+          href: approval-workflows.md
+        - name: Customize the journey designer
+          href: real-time-marketing-journey-designer.md
     - name: Known issues for journeys
       href: journey-known-issues.md
   - name: Event planning and management
