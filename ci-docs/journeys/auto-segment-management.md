@@ -1,7 +1,7 @@
 ---
 title: Automated segment management
 description: Learn about how segments are automatically managed in Customer Insights - Journeys.
-ms.date: 10/08/2024
+ms.date: 01/15/2025
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -17,4 +17,4 @@ To optimize resources, Customer Insights - Journeys automatically manages the re
 
 ## How automated segment management works
 
-This feature detects segments created more than 14 days ago that haven't been used in the last 2 days and sets them to a once-a-day refresh cadence. This means that the unused segments are still refreshed, but only once per day. When an unused segment is used again in a journey, email, or other segment, the refresh rate is automatically restored to the normal cadence. This feature is fully automated and doesn't require any input or action from users.
+This feature detects segments created more than 14 days ago that haven't been used in the last 2 days and sets them to a once-a-day refresh cadence. In other words, the unused segments are still refreshed, but only once per day. When an unused segment is used again in a journey, email, or other segment, the refresh rate is automatically restored to the normal cadence. This feature is fully automated and doesn't require any input or action from users.
