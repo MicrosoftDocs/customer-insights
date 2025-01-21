@@ -1,7 +1,7 @@
 ---
 title: Social media posting with Dynamics 365 Customer Insights - Journeys
 description: Create social media posts for immediate or scheduled publishing in Dynamics 365 Customer Insights - Journeys.
-ms.date: 09/13/2024
+ms.date: 12/09/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -9,6 +9,7 @@ search.audienceType:
   - admin
   - customizer
   - enduser
+ms.custom: outbound-marketing
 ---
 
 # Social media posting with Dynamics 365 Customer Insights - Journeys
@@ -17,9 +18,9 @@ search.audienceType:
 > **This article only applies to [outbound marketing](user-guide.md), which will be removed from the product on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](transition-overview.md)
 
 > [!WARNING]
-> Social posting and LinkedIn lead generation capabilities will be removed from Customer Insights - Journeys on December 2, 2024.
+> Social posting and LinkedIn lead generation capabilities have been removed from Customer Insights - Journeys.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4J4cQ]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=660e7570-b093-40ee-bd99-5d68165b0fa2]
 
 Customer Insights - Journeys can schedule and post messages directly to your organization's accounts on social media sites. Customer Insights - Journeys's powerful social post designer allows you to create rich content to engage your audience. Use the **Social posts** settings to author and schedule your posts.
 

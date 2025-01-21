@@ -1,7 +1,7 @@
 ---
 title: "What's new in Dynamics 365 Customer Insights - Data"
 description: "Information about new features, improvements, and bug fixes."
-ms.date: 09/11/2024
+ms.date: 11/22/2024
 ms.topic: conceptual
 author: m-hartmann
 ms.author: skumm
@@ -143,10 +143,6 @@ Ask questions in natural language to have a dialog with your data to explore, as
 #### In-place upgrade of data sources to Delta format
 
 If your data is already in Delta tables within the same storage container, you can update the connection on the Data Sources page. Update the folder and connection points to the folder that contains the same tables, but in the Delta format. Delta tables can significantly reduce the time to generate valuable insights from a data source. Also, if you're currently converting your Delta data into the common data model format to import it to Customer Insights – Data, Delta lake formatted tables help eliminate the processing and storage requirements to convert Delta data to common data model format.
-
-#### Incremental unification when using Delta data
-
-To accelerate insights using the power of Delta tables, we now see faster data unification when all the tables used in the unification process are provided in the Delta format because data unification runs incrementally. The time to run the match process is approximately 25% faster.
 
 #### Exports show most recent update
 

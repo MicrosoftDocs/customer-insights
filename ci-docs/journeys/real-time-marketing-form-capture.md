@@ -334,3 +334,5 @@ Cross-Origin Resource Sharing (CORS) can cause  form submission capture to fail.
 ### Consent values aren't updated correctly
 
 Make sure you've set up the respective consent fields in the form editor (see [Creating the form capture in Customer Insights - Journeys form editor](real-time-marketing-form-capture.md#creating-the-form-capture-in-the-customer-insights---journeys-form-editor)) and that you've used the correct mappings generated in the publishing process.
+
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

@@ -66,15 +66,15 @@
       href: data-unification.md
     - name: Data unification best practices
       href: data-unification-best-practices.md
-    - name: Customer data
+    - name: Select customer data
       href: data-unification-map-tables.md
-    - name: Deduplication rules
+    - name: Define deduplication
       href: data-unification-duplicates.md
-    - name: Matching rules
+    - name: Define matching rules
       href: data-unification-match-tables.md
-    - name: Unify data
+    - name: Merge data
       href: data-unification-merge-tables.md
-    - name: Review data unification
+    - name: Review unification summary
       href: data-unification-review.md
     - name: Update unification settings
       href: data-unification-update.md  

@@ -21,7 +21,7 @@ Create segments using everyday words in Dynamics 365 Customer Insights - Data wi
 ## Prerequisites
 
 - [Enable Copilot features powered by Azure OpenAI](copilot-global-consent.md) setting turned **On**. Default is **On**.
-- [Environment is in a supported geography and uses a supported language.](faqs-segment-creation.md#what-are-the-supported-geographies-and-languages).
+- Environment is in a [supported geography and uses a supported language](https://releaseplans.microsoft.com/availability-reports/?report=copilotfeaturereport).
 
 ## Create a segment with Copilot
 

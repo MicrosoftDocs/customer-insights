@@ -1,7 +1,7 @@
 ---
 title: Consent management overview
 description: Learn how to manage consent settings in Dynamics 365 Customer Insights - Journeys.
-ms.date: 11/05/2024
+ms.date: 11/15/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -90,7 +90,7 @@ External links allow you to configure a website URL that points to an externally
 
 Managing compliance settings is key to ensuring your business processes conform with privacy laws and regulations. This article gives an overview of administrator compliance setup, preference centers, and real-time journeys concepts. For information on outbound marketing compliance, visit [Outbound marketing compliance settings](privacy-use-features.md).
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RW137KU]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=51f182de-841f-41e8-85c4-49af1caaeeb0]
 
 ### Real-time journeys compliance overview
 
@@ -138,7 +138,7 @@ The **Enforcement model** settings on a purposes control how consent is evaluate
 > [!NOTE]
 > Since the November 2024 release, you can set the enforcement model to all channels including text and custom channels.
 
-Topics use the enforcement model of their parent purpose. Messages that are configured with both a purpose and a topic must have consent for both the purpose and the topic for the message to be sent. If a contact point doesn't have consent to send to a purpose, no messages to that purpose's topics are sent to the contact point. For example, if the parent purpose has a restrictive enforcement model, sending a message to a topic requires an opt-in contact point consent record for both the purpose and the topic associated with the contact point consent.
+Topics use the enforcement model of their parent purpose. Messages that are configured with both a purpose and a topic must have consent for both the purpose and the topic in order for the message to be sent. If a contact point doesn't have consent to send to a purpose, no messages to that purpose's topics are sent to the contact point. For example, if the parent purpose has a restrictive enforcement model, sending a message to a topic requires an opt-in contact point consent record for both the purpose and the topic associated with the contact point consent.
 
 ##### Considerations for contact entities
 

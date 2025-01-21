@@ -65,8 +65,6 @@ As mentioned above, you can also build more complex queries that reference other
 
 Scores help identify the best customers, however, not everyone in your organization will easily understand what a good or poor score is. To solve this, you can assign a grade. To do this, select the second option on the vertical bar on the right of the window and add a new grade. You can add multiple grades, but for each grade you must name the grade (example: Hot or Cold), define the operator (such as less than, more than, or between), and define the score range that applies to that grade (example: 0 to 12 points). Once you publish your model, leads are scored but also assigned a grade. As a reminder, grades aren't mandatory and you can publish the model without defining any grades.
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of adding a lead grade](media/real-time-marketing-lead-grading.png "Screenshot of adding a lead grade")
 
 ## Review scoring model settings
 

@@ -2,8 +2,8 @@
 title: Get started with Dynamics 365 Customer Insights - Data
 description: An overview of help resources to get started quickly. 
 ms.reviewer: mhart
-ms.author: nikeller
-author: Nils-2m
+author: jimsonc
+ms.author: jimsonc
 ms.date: 06/24/2024
 ms.topic: how-to
 ms.custom: bap-template
@@ -65,9 +65,8 @@ Now that your data is complete and contains a wide range of information about yo
 
 1. Review integration options, for example to other Dynamics 365 apps with the [Customer Card add-in](customer-card-add-in.md).  
 
-[!INCLUDE [footer-include](includes/footer-banner.md)]
-
-
 ## Related information
 
 [Ready to Boost Sales? Customer Insight (video)](https://youtu.be/z0aXIx7sSro)
+
+[!INCLUDE [footer-include](includes/footer-banner.md)]

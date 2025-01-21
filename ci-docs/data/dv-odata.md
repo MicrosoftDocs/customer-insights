@@ -1,7 +1,7 @@
 ---
 title: "Dataverse APIs for Customer Insights - Data"
 description: "Overview and examples of Dataverse Open Data Protocol (OData) APIs to query for data."
-ms.date: 06/14/2024
+ms.date: 12/20/2024
 ms.topic: conceptual
 author: srivas15
 ms.author: shsri
@@ -42,7 +42,7 @@ Modify the query samples to make them work on the target environments:
 
 - {SegmentName}: String with the output table name of a segment. For example: `Male_under_40`.
 
-- {CookieId}: Identifier for each website visitor. This is automatically generated when using the [web tracking script](real-time-web-personalization.md). For example: `3f43317e-d1ef-4cd3-9917-2d3342111d1a`.
+- {CookieId}: Identifier for each website visitor, which is automatically generated when using the [web tracking script](real-time-web-personalization.md). For example: `3f43317e-d1ef-4cd3-9917-2d3342111d1a`.
 
 ### Customer
 
@@ -63,14 +63,14 @@ Sample queries for the *CustomerProfile* table and segment memberships.
 
 ### Web Personalization
 
-Sample queries to [personalize your website](real-time-web-personalization.md#personalize-your-customers-web-experience) based on the CookieId. The response returns both [known and unknown customers](customer-profiles.md#known-and-unknown-customers).
+Sample queries to [personalize your website](real-time-web-personalization.md#personalize-your-customers-web-experience) based on the CookieId. The response returns both [known and unknown customers](customer-profiles.md#known-and-unknown-customers). The tables created for [web tracking and personalization](tables.md#real-time-web-personalization-tables-preview) are available in Dataverse.
 
 |Query type |Example  | Note  |
 |---------|---------|---------|
-|Get a customer by CookieId | `{serviceRoot}/msdynci_personalizationprofiles(cookieid='{cookieId}')`  |          |
-|Get a customer by CookieId and include Segments, Measures, Activities | `{serviceRoot}/msdynci_personalizationprofiles(cookieid='{cookieId}',include=['segmentmembership','measures','unifiedactivity'])`  |    |
-|Get recent (last 10) page views of a customer by CookieId | `{serviceRoot}/msdynci_pageviews(cookieid='{cookieId}',top=10)`  |  This can be changed to return up to 200 recent page views  |
-|Get recent (last 10) page clicks of a customer by CookieId | `{serviceRoot}/msdynci_pageclicks(cookieid='{cookieId}',top=10)`  |  This can be changed to return up to 200 recent page clicks  |
+|Get a customer by CookieId | `{serviceRoot}/msdynci_p13nprofile(cookieid='{cookieId}')`  |          |
+|Get a customer by CookieId and include Segments, Measures, Activities | `{serviceRoot}/msdynci_p13nprofile(cookieid='{cookieId}',include=['segmentmembership','measures','unifiedactivity'])`  |    |
+|Get recent (last 10) page views of a customer by CookieId | `{serviceRoot}/msdynci_pageviews(cookieid='{cookieId}',top=10)`  |  This query can be changed to return up to 200 recent page views  |
+|Get recent (last 10) page clicks of a customer by CookieId | `{serviceRoot}/msdynci_pageclicks(cookieid='{cookieId}',top=10)`  |  This query can be changed to return up to 200 recent page clicks  |
 
 ### Unified activity
 
@@ -78,11 +78,11 @@ Sample queries for the *UnifiedActivity* table.
 
 |Query type |Example  | Note  |
 |---------|---------|---------|
-|Get all activities of a customer| `{serviceRoot}/msdynci_unifiedactivities?$filter=msdynci_customerid eq '{CID}'`  |      |
-|Get all activities of a customer within a time period| `{serviceRoot}/msdynci_unifiedactivities?$filter=msdynci_customerid eq '{CID}' and msdynci_activitytime gt 2017-01-01T00:00:00Z and msdynci_activitytime lt 2017-01-01T00:00:00Z`  |      |
-|Get all activities of an activityType of a customer | `{serviceRoot}/msdynci_unifiedactivities?$filter=msdynci_customerid eq '{CID}' and msdynci_activitytype eq '{ActivityType}'`  |      |
-|Get all activities of activityDisplayName of a customer | `{serviceRoot}/msdynci_unifiedactivities?$filter=msdynci_customerid eq '{CID}' and msdynci_activitytypedisplay eq '{ActivityDisplayName}'`  |      |
-|Get all activities of a customer and sort them| `{serviceRoot}/msdynci_unifiedactivities?$filter=msdynci_customerid eq '{CID}'&$orderby=msdynci_activitytime asc`  |      |
+|Get all activities of a customer| `{serviceRoot}/msdynci_p13nprofile?$filter=msdynci_customerid eq '{CID}'`  |      |
+|Get all activities of a customer within a time period| `{serviceRoot}/msdynci_p13nprofile?$filter=msdynci_customerid eq '{CID}' and msdynci_activitytime gt 2017-01-01T00:00:00Z and msdynci_activitytime lt 2017-01-01T00:00:00Z`  |      |
+|Get all activities of an activityType of a customer | `{serviceRoot}/msdynci_p13nprofile?$filter=msdynci_customerid eq '{CID}' and msdynci_activitytype eq '{ActivityType}'`  |      |
+|Get all activities of activityDisplayName of a customer | `{serviceRoot}/msdynci_p13nprofile?$filter=msdynci_customerid eq '{CID}' and msdynci_activitytypedisplay eq '{ActivityDisplayName}'`  |      |
+|Get all activities of a customer and sort them| `{serviceRoot}/msdynci_p13nprofile?$filter=msdynci_customerid eq '{CID}'&$orderby=msdynci_activitytime asc`  |      |
 
 ### Other examples
 
@@ -99,7 +99,7 @@ Sample queries for other tables.
 
 - Most Customer Insights - Data tables are available in Dataverse. For more information, see [Tables in Dataverse](tables.md#view-customer-insights---data-tables-in-dataverse).
 
-- Dataverse offers extensive support for testing their APIs, for example via Insomnia. For more information see, [Use Insomnia with Dataverse Web API](/power-apps/developer/data-platform/webapi/insomnia).
+- Dataverse offers extensive support for testing their APIs, for example via Insomnia. For more information, see [Use Insomnia with Dataverse Web API](/power-apps/developer/data-platform/webapi/insomnia).
 
 - For more information on Dataverse API service limits, see [Microsoft Dataverse API limits overview](/power-apps/maker/data-platform/api-limits-overview).
 

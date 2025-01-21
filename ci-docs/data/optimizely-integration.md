@@ -1,10 +1,10 @@
 ---
 title: No-code web personalization using Optimizely (preview)
 description: Learn how to personalize web experiences with the Customer Insights - Data and Optimizely integration.
-ms.date: 06/14/2024
+ms.date: 12/13/2024
 ms.topic: how-to
-author: philk
-ms.author: philk
+author: JimsonChalissery
+ms.author: jimsonc
 ms.reviewer: mhart
 ms.custom: bap-template
 ---
@@ -23,10 +23,10 @@ You can also track user behavior for events that real-time tracking supports and
 
 Watch this brief video for an overview of the Optimizely integration with Customer Insights - Data.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RW1hyhp]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=0374bff9-f481-4324-8237-ebbaaffaed27]
 
 > [!TIP]
-> Sign up to [request access to the preview version](https://forms.office.com/r/6NK6uj6f7f) of the real-time personalization features and [read the blog about the announcement](https://cloudblogs.microsoft.com/dynamics365/?p=188733).
+> Sign up to [request access to the preview version](https://forms.office.com/r/TJEE62xTD3) of the real-time personalization features and [read the blog about the announcement](https://cloudblogs.microsoft.com/dynamics365/?p=188733).
 
 ## Prerequisites
 

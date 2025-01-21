@@ -16,7 +16,7 @@ Predict whether a customer is at risk for no longer using your company’s subsc
 
 You must have business knowledge to understand what churn means for your business. For instance, a business with annual events can define their churn measured in years, while a business that caters to weekly sales may measure churn in months. We support time-based churn definitions, meaning a customer is considered to have churned a period of time after their subscription has ended.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWOKNQ]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=e4c2c0ea-d39c-493e-aae9-56c096cccf19]
 
 For example, Contoso offers a monthly coffee service. They want to know which customers might be questioning service renewal so they can offer a discount. Through the subscription churn model, Contoso can see which customers might not renew the service next year and how large that population might be.  
 

@@ -1,7 +1,7 @@
 ---
 title: "View tables in Customer Insights - Data"
 description: "View data on the Tables page."
-ms.date: 11/25/2024
+ms.date: 12/20/2024
 ms.reviewer: mhart
 ms.topic: how-to
 author: Scott-Stabbert
@@ -38,7 +38,7 @@ For more information about the **Relationships** tab, see [Relationships](relati
 1. Select a table to open the details page.  
 1. Explore the different fields and records included for that table.
 
-   - The **Attributes** tab is selected by default and shows details for the selected table, such as field names, data types, and types. The **Type** column shows Common Data Model associated types, which are either autoidentified by the system or [manually mapped](data-unification-map-tables.md) by users. These types are semantic types that can differ from the attributes' data types. For example, the field *Email* in the screenshot has a data type *String* but its (semantic) Common Data Model type might be *Email*, *EmailAddress*, or *Identity.Service.Email*.
+- The **Attributes** tab is selected by default and shows details for the selected table, such as field names, data types, and types. The **Type** column shows Common Data Model associated types, which are either auto-identified by the system or [manually mapped](data-unification-map-tables.md) by users. These types are semantic types that can differ from the attributes' data types. For example, the field *Email* has a data type *String* but its (semantic) Common Data Model type might be *Email*, *EmailAddress*, or *Identity.Service.Email*.
 
      :::image type="content" source="media/data-manager-tables-fields.png" alt-text="Fields table.":::
 
@@ -71,7 +71,7 @@ Some Customer Insights - Data tables are available in Dataverse. The following s
 - [Prediction](#prediction)
 - [Segment membership](#segment-membership)
 
-[Measures created as tables](dataverse-measures.md) are also available in Dataverse.
+Other tables available in Dataverse are [measures](dataverse-measures.md) and [real-time web personalization (preview)](#real-time-web-personalization-tables-preview).
 
 1. Sign in to [Power Apps](https://make.powerapps.com).
 
@@ -164,5 +164,15 @@ This table contains segment membership information of the customer profiles.
 | Identifier  | Text   | Unique identifier of the segment membership record. `CustomerId|SegmentProvider|SegmentMembershipType|Name`  |
 | SegmentMembershipId | Unique identifier      | Deterministic GUID generated from `Identifier`          |
 
+### Real-time web personalization tables (preview)
+
+The following four tables are created when real-time personalization is set up.
+
+- PersonalizationUser: This table contains data that associates unknown users to known users when the setUser API is used.
+- PersonalizationCookie: This table contains the personalization cookie values.
+- PersonalizationView: This table contains data tracking on what pages were viewed.
+- PersonalizationAction: This table contains data tracking on what actions were performed such as links clicked.
+
+While you can view and query these tables, we recommend using the [web personalization API](dv-odata.md#web-personalization) to get an understanding of a customer in real time. This API pulls data from multiple tables including the unified profile for known users, measures, segment memberships, and activity data.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

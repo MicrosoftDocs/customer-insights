@@ -1,7 +1,7 @@
 ---
 title: Customer Insights - Journeys integration with Microsoft Fabric overview
 description: Learn about how to integrate Customer Insights - Journeys with Microsoft Fabric.
-ms.date: 10/30/2024
+ms.date: 12/03/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -14,7 +14,7 @@ search.audienceType:
 # Customer Insights - Journeys integration with Microsoft Fabric overview
 
 > [!IMPORTANT]
-> As of July 31, 2024, Customer Insights - Journeys integration with Microsoft Fabric is generally available. To avoid service disruptions, preview users of the integration with Microsoft Fabric must follow the [Transition to general availability guidance](fabric-integration.md#transition-to-general-availability).
+> As of July 31, 2024, Customer Insights - Journeys integration with Microsoft Fabric is generally available. To avoid service disruptions, preview users of the integration with Microsoft Fabric must follow the [Transition to general availability guidance](fabric-integration.md#transition-to-general-availability). Access to the preview version/folder will be removed on December 7.
 
 In Customer Insights - Journeys, you can effortlessly create custom Power BI reports tailored to your business needs by using Microsoft Fabric capabilities. Harness seamless access to data to gain a complete understanding of your campaigns, lead management, market performance, and customer engagement, enabling you to identify new opportunities.
 
@@ -69,7 +69,7 @@ The following sections explain how to set up Power BI and access your Customer I
 
 ### Work with Customer Insights - Journeys interactions in Power BI
 
-1. With your tables now available in your Lakehouse, you can now start analyzing your data with Fabric. Use Dataverse shortcuts with Spark Notebooks, the SQL endpoint, and Power BI reports.
+1. With your tables now available in your Lakehouse, you can now start analyzing your Customer Insights - Journeys data with Fabric. Use Dataverse shortcuts with Spark Notebooks, the SQL endpoint, and Power BI reports.
 
     From your Lakehouse, you can open the SQL endpoint.
 
@@ -95,12 +95,12 @@ The following sections explain how to set up Power BI and access your Customer I
 | Why don't I see all Customer Insights - Journeys interaction tables when creating shortcuts in Fabric? | The Customer Insights - Journeys folder only lists the interaction types for which data has been generated up to that point. | 
 | Why do I see more email delivered versus email sent interactions? | In the event of an email remote bounce, we list two "email delivered" interactions for the same message with the same time stamp despite no message being delivered to the contact/lead/Customer Insights - Data Profile email address. This is because the second interaction is intended to "erase" the first one. To count them properly, you should use the ["DeliveredCount"](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsightsjourneys/emaildelivered#DeliveredCount) field. |
 | How quickly is Customer Insights - Journeys data available? | Data changes in Customer Insights - Journeys tables will be available within up to three hours. |
-| Why don't I see all my data in Fabric? | Initially, only new data (real-time journeys and some outbound marketing data) generated after the feature's general availability date (July 2024) will be available for custom reporting. We're in the process of performing historical data migrations for real-time journeys and outbound marketing data for all orgs. [Contact us](troubleshoot-faq.md#how-can-i-create-a-support-ticket-from-the-power-platform-admin-center) for further assistance. |
+| Why don't I see all my **outbound marketing** data in Fabric? | Initially, only some outbound marketing data generated after the feature's general availability date (July 2024) will be available for custom reporting. We're in the process of performing historical outbound marketing data migrations for all orgs. [Contact us](troubleshoot-faq.md#how-can-i-create-a-support-ticket-from-the-power-platform-admin-center) for further assistance. |
 
 ## Transition to general availability
 
 > [!NOTE]
-> Preview customers can start the transition to the general availability version of the feature.
+> Preview customers should transition to the general availability version of the feature. Access to the preview version/folder will be removed on December 7.
 
 To transition from the public preview to the general availability (GA) version of the custom reporting with Fabric feature, follow these steps in order:
 
@@ -110,7 +110,7 @@ To transition from the public preview to the general availability (GA) version o
     :::image type="content" source="media/fabric-ga-create-shortcuts.png" alt-text="Screenshot showing Customer Insights - Journeys folder.":::
     :::image type="content" source="media/fabric-ga-create-shortcuts-2.png" alt-text="Screenshot showing an example of creating a shortcut.":::
 1. **Update the semantic model**: Go to the SQL analytics endpoint view. Select the **Reporting** tab and update the semantic model.
-    :::image type="content" source="media/fabric-ga-update-semantic.png" alt-text="Screenshot showing button to update the semantic model.":::
+    :::image type="content" source="media/fabric-ga-update-semantic.png" alt-text="Screenshot showing a button to update the semantic model.":::
 1. **Refresh Power BI reports**: Refresh your Power BI reports. Data from the GA folder should now be visible.
 
 ## Learn more

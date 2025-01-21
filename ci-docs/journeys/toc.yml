@@ -56,12 +56,14 @@
       href: transition-walkthrough-forms.md
     - name: Event management
       href: transition-walkthrough-events.md
-    - name: Lead management, scoring, and LinkedIn Lead Gen
+    - name: Lead management and scoring
       href: transition-walkthrough-leads.md
     - name: Insights and reports
       href: transition-walkthrough-insights.md
-    - name: Social posts
+    - name: Social posting and LinkedIn Lead Gen
       href: transition-walkthrough-social-posts.md
+    - name: Customer Voice responses
+      href: transition-walkthrough-customer-voice.md
   - name: Real-time journeys transition FAQs
     href: transition-faqs.md
 - name: Install and manage
@@ -218,6 +220,8 @@
     items:
     - name: Segmentation overview
       href: real-time-marketing-segments.md
+    - name: Create a segment-based journey
+      href: real-time-marketing-segment-based-journey.md  
     - name: Create segments
       items:
       - name: Build segments
@@ -226,12 +230,20 @@
         href: real-time-marketing-redesigned-segment-builder.md
       - name: Copilot - Target the right customers using query assist
         href: real-time-marketing-natural-language-segments.md
+      - name: Tabs and settings for segments
+        href: segment-tabs-settings.md
       - name: Sync data tables into the segment builder
         href: real-time-marketing-sync-data-tables.md
       - name: Create segments using unified profiles and customer measures
         href: unified-profile-segment-creation.md
       - name: Create a static snapshot of a segment
         href: real-time-marketing-static-snapshot.md
+    - name: Use Customer Insights - Data segments
+      items:
+      - name: Use Customer Insights - Data profiles and segments
+        href: real-time-marketing-ci-profile.md     
+      - name: Use your own Azure Data Lake Storage account for segments
+        href: bring-your-own-azure-data-lake.md   
     - name: Enhance your segments
       items:
       - name: Best practices for outbound segments in real-time journeys
@@ -241,11 +253,7 @@
       - name: Individually manage your customer list
         href: real-time-marketing-include-exclude.md
       - name: Add protected fields in segment criteria
-        href: protected-fields.md
-    - name: Create a segment-based journey
-      href: real-time-marketing-segment-based-journey.md    
-    - name: Use Customer Insights - Data profiles and segments
-      href: real-time-marketing-ci-profile.md      
+        href: protected-fields.md   
     - name: "Troubleshooting: Segments show incorrect member count"
       href: segment-member-count.md
   - name: Create real-time journeys
@@ -274,22 +282,32 @@
         href: real-time-marketing-tile-reference.md
     - name: Advanced journey capabilities
       items:
-      - name: Personalize journey variations using multiple journey branches
-        href: real-time-marketing-multiple-branches.md
-      - name: Personalize triggers using conditions
-        href: real-time-marketing-personalize-triggers.md
-      - name: Set quiet times to prevent messages from sending during unwanted hours
-        href: real-time-marketing-quiet-times.md
-      - name: Limit sent with frequency capping
-        href: real-time-marketing-frequency-cap.md
-      - name: "Preview: Split your audience into groups"
-        href: real-time-marketing-split-audience.md
-      - name: When to use attribute versus if/then branches
-        href: real-time-marketing-branches.md
-      - name: Customize the journey designer
-        href: real-time-marketing-journey-designer.md
-      - name: "Preview: Control how fast customers can enter a journey"
-        href: control-how-fast-enter-journey.md
+      - name: Control journey entry
+        items:
+        - name: Personalize triggers using conditions
+          href: real-time-marketing-personalize-triggers.md
+        - name: "Preview: Control how fast customers can enter a journey"
+          href: control-how-fast-enter-journey.md      
+      - name: Split journey audiences
+        items:
+        - name: Personalize journey variations using multiple journey branches
+          href: real-time-marketing-multiple-branches.md
+        - name: When to use attribute versus if/then branches
+          href: real-time-marketing-branches.md
+        - name: "Preview: Split your audience into groups"
+          href: real-time-marketing-split-audience.md
+      - name: Control messages sent from journeys
+        items:
+        - name: Set quiet times to prevent messages from sending during unwanted hours
+          href: real-time-marketing-quiet-times.md
+        - name: Limit messages sent with frequency capping
+          href: real-time-marketing-frequency-cap.md
+      - name: Create approval workflows and customize the journey designer
+        items:
+        - name: 'Tutorial: Implement approval workflows in real-time journeys'
+          href: approval-workflows.md
+        - name: Customize the journey designer
+          href: real-time-marketing-journey-designer.md
     - name: Known issues for journeys
       href: journey-known-issues.md
   - name: Event planning and management
@@ -342,6 +360,8 @@
       href: real-time-marketing-deploy-pages.md
     - name: Manage forms
       href: real-time-marketing-manage-forms.md
+    - name: Set the default configuration for forms
+      href: real-time-marketing-form-global-settings.md
     - name: Troubleshoot forms
       href: real-time-marketing-troubleshooting-forms.md
     - name: "Preview: Prefill values for forms and event registration"
@@ -350,12 +370,12 @@
     items:
     - name: Lead generation and management overview
       href: lead-generation-overview.md
+    - name: Create a scoring model
+      href: real-time-marketing-create-lead-scoring-model.md    
     - name: Qualify the best leads
       href: real-time-marketing-qualify-leads.md
     - name: Create sales activities from lead signals
       href: real-time-marketing-optimize-lead-management.md
-    - name: Create a scoring model
-      href: real-time-marketing-create-lead-scoring-model.md
     - name: Visualize results from your scoring model
       href: real-time-marketing-visualize-scoring-model.md
     - name: Security roles for lead scoring and qualification
@@ -370,6 +390,8 @@
       href: real-time-marketing-cross-journey-analytics.md
     - name: How to use aggregate channel analytics
       href: real-time-marketing-channel-analytics.md
+    - name: "Preview: Make journey decisions based on web interactions"
+      href: interaction-journey-decision.md
     - name: How to use email insights
       href: email-insights.md
     - name: Customer Insights - Journeys integration with Microsoft Fabric
@@ -472,6 +494,8 @@
       href: real-time-marketing-form-capture.md
     - name: Integrate a custom captcha service with marketing forms
       href: real-time-marketing-form-custom-captcha.md
+    - name: Customize form submission validation
+      href: real-time-marketing-form-customize-submission-validation.md
     - name: Customize the Customer Insights - Journeys forms interface
       href: developer/extend-ui.md
   - name: Extend and customize consent
@@ -488,6 +512,8 @@
     href: admin-guide.md
   - name: Best practices for administration
     href: admin-best-practices.md
+  - name: How the real-time journeys app uses cookies
+    href: real-time-journeys-cookies.md
   - name: User administration and permissions
     items:
     - name: Use business units
@@ -754,26 +780,30 @@
       href: segmentation-lists-subscriptions.md
     - name: Segments vs. lists
       href: segments-vs-lists.md
-    - name: Design dynamic demographic or firmographic segments
-      href: segments-profile.md
-    - name: Design behavioral segments
-      href: segments-interaction.md
-    - name: Generate behavioral segments from journey results
-      href: generate-segment-from-journey.md
-    - name: Use natural language to create segments
-      href: nl-segment-build.md
-    - name: Export dynamic-segment members to Excel
-      href: segments-export-members.md
-    - name: Design static segments
-      href: segments-static.md
-    - name: Manage segment memberships from a contact record
-      href: manage-segments-from-contacts.md
+    - name: Design and create segments
+      items:
+      - name: Design dynamic demographic or firmographic segments
+        href: segments-profile.md
+      - name: Design behavioral segments
+        href: segments-interaction.md
+      - name: Generate behavioral segments from journey results
+        href: generate-segment-from-journey.md
+      - name: Use natural language to create segments
+        href: nl-segment-build.md
+      - name: Design static segments
+        href: segments-static.md
+    - name: Manage segments
+      items:
+      - name: Manage segment memberships from a contact record
+        href: manage-segments-from-contacts.md
+      - name: Export dynamic-segment members to Excel
+        href: segments-export-members.md
+    - name: Use Customer Insights - Data segments in Customer Insights - Journeys
+      href: customer-insights-segments.md
     - name: Work with segment templates
       href: segments-templates.md
     - name: Market to Dynamics 365 segments on LinkedIn
       href: linkedin-matched-audience.md
-    - name: Use Customer Insights - Data segments in Customer Insights - Journeys
-      href: customer-insights-segments.md
   - name: Marketing emails
     items:
     - name: Email marketing overview

@@ -4,8 +4,8 @@ description: Learn how to use Copilot across Customer Insights - Data.
 ms.date: 11/12/2024
 ms.reviewer: mhart
 ms.topic: how-to
-author: nikeller
-ms.author: nikeller
+author: jimsonc
+ms.author: jimsonc
 ms.custom: bap-template
 ms.collection: bap-ai-copilot 
 ---

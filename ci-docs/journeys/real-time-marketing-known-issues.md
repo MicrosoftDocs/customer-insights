@@ -1,7 +1,7 @@
 ---
 title: Known issues in Customer Insights - Journeys with mitigations
 description: Learn about known issues in Customer Insights - Journeys and how to work around them.
-ms.date: 10/31/2024
+ms.date: 01/13/2025
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -19,7 +19,7 @@ As we continue to work on Customer Insights - Journeys and refine the experience
 
 - Analytics for a journey can take up to 6-12 hours to show up.
 - Occasionally events are dropped before they can get to analytics. This can cause issues in the analytics reporting where customers are shown to be in a ‘processing’ state much after a journey has been completed. We're working on a solution to improve this.
-- Data retention is 12 months for contact and lead insights, goal analytics, channel analytics (including email insights and delivery and interaction details such as contacts impacted by delivery and interaction issues), and AI optimization analytics.
+- Contact insights, lead insights, journey analytics, and channel analytics (including, goal analytics, AI optimization, email insights, and delivery and interaction details) display interaction data for the last 12 months only. All historical interaction data, however, is retained in the data storage.
 - Some strings in the out-of-the-box Power BI aggregated analytics dashboards aren’t localized.
 - Business units aren't supported in the out-of-the-box Power BI aggregated analytics dashboards.
 - In the event of an email remote bounce, the contact/lead timeline might display two "email delivered" interactions for the same message with the same time stamp despite no message being delivered to the contact/lead email address. This is because the second interaction is intended to "erase" the first one. However, this isn't currently being handled in the timeline.
@@ -70,13 +70,12 @@ As we continue to work on Customer Insights - Journeys and refine the experience
 - A segment can be created for up to 100,000,000 contacts.
 - A segment-based journey will only work when the size of the segment is under 10M contacts. Any segment with a larger size fails to execute. To ensure that campaigns can run effectively, break down the larger segments into multiple segments that can use the same repeatable journey.
 (1) This is also true for any trigger-based journeys that rely on segments in the journey flow.
-- When multiple segments are selected for the journey start, exit, or exclusion, the total member count across the selected segments can't exceed the segment size limit of 100,000,000 contacts for a journey.
 - There's a limit of 100 contacts that can be added to an inclusion/exclusion group as part of the segment definition. To get around this, you can create a separate segment of customers and use that segment in your master segment definition thereby creating a compound segment.
 - Today, users can't edit a segment that is being used in a live journey in Customer Insights - Journeys. To be able to edit the segment, stop the journey, and then make the edits to the segments.
 
 ## Triggers
 
-- Today, there's a limit of 500 custom triggers that can be fired in an org per day. To increase this for your organization, create a support ticket or reach out to your Microsoft Representative, and we can work with you to support your use case.
+- Today, there's a limit of 100 custom triggers that can be fired in an org per day. To increase this for your organization, create a support ticket or reach out to your Microsoft Representative, and we can work with you to support your use case.
 - When defining custom triggers, ensure that all attributes are defined. Any attribute that has a null value causes the trigger to fail leading to the customers not going through the journey. Today, we don't have the ability to allow null values to be passed in a custom, which then results in a System Failure as the error message at journey runtime.
 - Usage of Entity References in Custom or CDS triggers is limited to five hops. Any entity that is more than 5 hops away from the COLA entity, can't be used as an attribute in a journey.
 - When using the "Marketing Form Submitted" standard trigger for your journey care should be taken to ensure that the audience for the journey and the form are the same. Today, we don't display an error or warning when there's a mismatch, but the journey won't start leading to customer confusion.

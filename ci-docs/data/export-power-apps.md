@@ -4,8 +4,8 @@ description: "Connect with Power Apps and Power Automate."
 ms.date: 09/01/2023
 ms.reviewer: mhart
 ms.topic: how-to
-author: pkieffer
-ms.author: philk
+author: Scott-Stabbert
+ms.author: sstabbert
 ---
 
 # Power Apps connector (preview)
