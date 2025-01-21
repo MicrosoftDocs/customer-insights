@@ -1,14 +1,18 @@
 ---
 title: Edit a live journey in Customer Insights - Journeys
-description: Learn how to edit and update live journeys in Customer Insights - Journeys.
-ms.date: 08/22/2023
+description: Edit live journeys in Customer Insights - Journeys without stopping them. Learn how to make lightweight edits and major changes with version control.
+ms.date: 01/21/2025
 ms.topic: article
 author: alfergus
 ms.author: alfergus
-search.audienceType: 
+search.audienceType:
   - admin
   - customizer
   - enduser
+ms.custom:
+  - ai-gen-docs-bap
+  - ai-gen-description
+  - ai-seo-date:01/21/2025
 ---
 
 # Edit a live journey in Customer Insights - Journeys
@@ -23,6 +27,9 @@ In your journey, select the **Edit** button in the top right of the screen. Make
 > ![Published journey edit confirmation.](media/real-time-marketing-journey-edit-published.png "Published journey edit confirmation")
 
 ## How to make changes that impact your customer experience
+
+> [!NOTE]
+> You *can only* edit the following types of live journeys: (1) trigger-based journeys, (2) long-running journeys, or (3) one-time journeys that are scheduled for a future time. You *can't* edit one-time journeys that are already running *or* are scheduled to start very soon. If a journey is scheduled to start soon, the **Edit** button isn't available in the interface.
 
 In your journey, select the **Edit** button and make your changes. If the change impacts your customer experience, for example, deleting an email in an existing journey, it will result in a new version of the journey. Your existing customers will complete the current version of their journey while new customers will enter the new version.
 
