@@ -45,7 +45,7 @@ Here you can see and edit your basic event information, including:
 - **Timeline**: As with most types of entities in Dynamics 365, you can use this section to build a record of the activities (such as calls, emails, and appointments) that you and others do in relation to the current record. You can also share notes here. Use the links, buttons, and menus at the top of this area to create new items and to search and sort the list.
 - **Stream this event online**: Set up your event as a Microsoft Teams webinar,a Teams Live Event, a Teams Meeting, or on-site only.
 - **Location**: Specify the location where your event will take place. The location is hierarchical, and you can specify only as much detail as you need. For example, you can specify just a building. But to specify a room, you must first choose the building that contains that room. You can assign a separate location to each session if applicable. You can create location records from here, or choose from among existing venue records. Each location record can contain useful information such as address, facilities, capacity, and more.
-- **Venue constraints**: The venue constraints section only appears for on-site events. Each time you set a new Location, the Maximum event capacity value shown here updates to match the capacity configured for your last selected building, room, or layout (if available). You can then edit the value manually to override the capacity figure if needed. You can also enable the waitlist here to handle registrations that arrive after the event is full.
+- **Capacity**: THis setting allows you to set capacity for your event. For on-site events, the Maximum event capacity value shown here updates to match the capacity configured for your last selected building, room, or layout (if available). You can then edit the value manually to override the capacity figure if needed. 
 - **Webinar setup**: The webinar setup section only appears for webinar and hybrid events. Use the settings here to set up your webinar configuration and find the URLs for viewing and presenting the webinar.
 
 <a name="agenda-tab"></a>
@@ -54,7 +54,6 @@ Here you can see and edit your basic event information, including:
 
 The **Agenda** tab includes details about the schedule of sessions happening during your event. Here you can find, create, and edit each of the following options for the current event:
 
-- **Allow registrants to create their own agenda**: This setting is only available for events that don't have any [passes](#event-passes) set up. It's shown above the calendar when no passes are defined, but is hidden when passes are defined.
 - **Sessions calendar**: Shows a calendar of sessions defined for your event. You can create and edit sessions using the calendar. More information: [Work with marketing calendars](marketing-calendar.md).
 - **Sessions list**: Each [session](#sessions) is typically a single presentation, class, discussion, or webinar. This table repeats the information also shown in the calendar. You can also create or edit sessions here.
 - **Session tracks**: Each (external) [track](#sessions) is a collection of related, non-conflicting sessions that likely would be of interest to the same audience. Attendees might sign up for a specific track, which you can manage by using [passes](#event-passes). You can also set up internal tracks, which are not exposed to attendees but can help you with your planning.
@@ -77,6 +76,10 @@ The Website and form tab provides options to set registration parameters. First,
       > ![Screenshot of using personal website form to fill registration](media/real-time-marketing-personal-website-registration-details.png "Screenshot of using personal website form to fill registration")
 - This event does not have a website:
     - Use this option if you want to collect registrations elsewhere or not collect them at all.
+ 
+Under Registration page options you can edit an existing event registration form, select another, create new and define other registration settings: 
+- Create leads for event registrations - if enabled, a new lead will also be generated for each registration and linked to the appropriate contact.
+- Allow attendees to register for sessions - if enabled, attandees will be able to register for sessions. Visit https://learn.microsoft.com/en-us/dynamics365/customer-insights/journeys/real-time-journeys-event-session for more information. Important: this setting used to be on Agenda tab and it used to be called "Allow registrants to create their own agenda"
 
 ### The Registration and attendance tab
 
