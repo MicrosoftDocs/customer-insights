@@ -1,7 +1,7 @@
 ---
 title: Filter out unwanted data from your ingested data (preview)
 description: Filter out unwanted rows from your ingested source data in Customer Insights - Data
-ms.date: 11/25/2024
+ms.date: 01/21/2025
 ms.reviewer: v-wendysmith
 ms.topic: conceptual
 author: Scott-Stabbert
