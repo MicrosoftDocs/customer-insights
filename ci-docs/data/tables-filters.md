@@ -1,5 +1,5 @@
 ---
-title: Filter out unwanted data from your ingested data (preview)
+title: Filter out unwanted data from your ingested data
 description: Filter out unwanted rows from your ingested source data in Customer Insights - Data
 ms.date: 01/21/2025
 ms.reviewer: v-wendysmith
@@ -7,13 +7,9 @@ ms.topic: conceptual
 author: Scott-Stabbert
 ms.author: sstabbert
 ---
-# Filter out unwanted data from your ingested data (preview)
-
-[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
+# Filter out unwanted data from your ingested data
 
 Remove unwanted rows from your source data before processing in Customer Insights - Data to improve the performance and quality of your unified customer profiles and insights.
-
-[!INCLUDE [public-preview-note](includes/public-preview-note.md)]
 
 Key benefits include:
 

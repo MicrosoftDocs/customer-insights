@@ -10,7 +10,7 @@ ms.author: sstabbert
 
 # View tables in Customer Insights - Data
 
-After [configuring your data sources](data-sources.md), evaluate the quality of the ingested data on the **Tables** page under the **Source** tab. Multiple capabilities of Dynamics 365 Customer Insights - Data are built around these tables. Reviewing them closely can help you validate the output of those capabilities. [Remove unwanted rows (preview)](tables-filters.md) from your source data before processing in Customer Insights - Data.
+After [configuring your data sources](data-sources.md), evaluate the quality of the ingested data on the **Tables** page under the **Source** tab. Multiple capabilities of Dynamics 365 Customer Insights - Data are built around these tables. Reviewing them closely can help you validate the output of those capabilities. [Remove unwanted rows](tables-filters.md) from your source data before processing in Customer Insights - Data.
 
 As you work in Customer Insights - Data enriching your data or creating segments, measures, activities, and predictions, the tables that are created from those actions display on the **Tables** page under the **Output** tab.
 
@@ -40,24 +40,24 @@ For more information about the **Relationships** tab, see [Relationships](relati
 
 - The **Attributes** tab is selected by default and shows details for the selected table, such as field names, data types, and types. The **Type** column shows Common Data Model associated types, which are either auto-identified by the system or [manually mapped](data-unification-map-tables.md) by users. These types are semantic types that can differ from the attributes' data types. For example, the field *Email* has a data type *String* but its (semantic) Common Data Model type might be *Email*, *EmailAddress*, or *Identity.Service.Email*.
 
-     :::image type="content" source="media/data-manager-tables-fields.png" alt-text="Fields table.":::
+  :::image type="content" source="media/data-manager-tables-fields.png" alt-text="Fields table.":::
 
-     > [!NOTE]
-     > This page shows only a sample of your table's data. To view the full data set, go to the **Data sources** page, select a table, select **Edit**, and then view this table's data with the Power Query editor as explained in [Data sources](data-sources.md).
+  > [!NOTE]
+  > This page shows only a sample of your table's data. To view the full data set, go to the **Data sources** page, select a table, select **Edit**, and then view this table's data with the Power Query editor as explained in [Data sources](data-sources.md).
 
-     To learn more about the data ingested in the table, the **Summary** column provides important data characteristics, such as nulls, missing values, unique values, counts, and distributions, whatever is applicable to your data. Select the chart icon to see the summary of the data.
+  To learn more about the data ingested in the table, the **Summary** column provides important data characteristics, such as nulls, missing values, unique values, counts, and distributions, whatever is applicable to your data. Select the chart icon to see the summary of the data.
 
-   - The **Data** tab shows details about individual records of the table. Details listed depend on the table's data type.
+- The **Data** tab shows details about individual records of the table. Details listed depend on the table's data type.
 
-     :::image type="content" source="media/data-manager-tables-data.png" alt-text="Select a table.":::
+  :::image type="content" source="media/data-manager-tables-data.png" alt-text="Select a table.":::
 
-   - The **Reports** tab (available for some tables) helps you to visualize your data by creating a report, which includes these columns:
+- The **Reports** tab (available for some tables) helps you to visualize your data by creating a report, which includes these columns:
 
-     - **Report name**: Name of the report.
-     - **Created by**: Name of the person who created the table.
-     - **Created**: Date and time of the table creation.
-     - **Edited by**: Name of the person who modified the table.
-     - **Edited**: Date and time of the table modification.
+  - **Report name**: Name of the report.
+  - **Created by**: Name of the person who created the table.
+  - **Created**: Date and time of the table creation.
+  - **Edited by**: Name of the person who modified the table.
+  - **Edited**: Date and time of the table modification.
 
 ## View Customer Insights - Data tables in Dataverse
 
