@@ -28,9 +28,6 @@ In your journey, select the **Edit** button in the top right of the screen. Make
 
 ## How to make changes that impact your customer experience
 
-> [!NOTE]
-> You *can only* edit the following types of live journeys: (1) trigger-based journeys, (2) long-running journeys, or (3) one-time journeys that are scheduled for a future time. You *can't* edit one-time journeys that are already running *or* are scheduled to start very soon. If a journey is scheduled to start soon, the **Edit** button isn't available in the interface.
-
 In your journey, select the **Edit** button and make your changes. If the change impacts your customer experience, for example, deleting an email in an existing journey, it will result in a new version of the journey. Your existing customers will complete the current version of their journey while new customers will enter the new version.
 
 The following are examples of changes that will result in a new version:
