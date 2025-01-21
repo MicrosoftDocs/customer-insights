@@ -89,27 +89,3 @@ To change a single event that is part of a series:
     ![Open just one event from a series.](media/event-recurring-open-single.png "Open just one event from a series")
 
 1. Edit your custom occurrence as required and save your settings.
-
-## Revert a custom occurrence to a standard occurrence
-
-Customized event occurrences from a series don't track changes made for the series itself. But you can still revert a customized occurrence to return it to a standard occurrence, which will then adopt all current settings for the series and return to tracking the series.
-
-To revert a customized event-series occurrence to a standard occurrence from that series:
-
-1. [Open the Events work area](open-events.md) and go to **Events** > **Event** > **Events** to open the events list view.
-
-1. Set the view selector to **Active Events** (or almost anything other than **Event Series** or **Event Templates**). You should now see a list of individual event occurrences (and non-recurring events). 
-
-    ![Screenshot of setting the view selector to Active Events.](media/events-recurring-view-selector2.png "Screenshot of setting the view selector to Active Events")
-
-1. Find and select the custom occurrence that you want to revert. The **Open recurring item** dialog opens; select **Just this one** to edit the custom occurrence and then select **OK**.  
-
-    ![Open just one event from a series.](media/event-recurring-open-single.png "Open just one event from a series")
-
-1. In the banner at the top of the page, choose **As Default** to revert the current custom occurrence to a standard occurrence.  
-
-    ![Revert the custom occurrence to a standard occurrence.](media/event-recurring-custom-revert.png "Revert the custom occurrence to a standard occurrence")
-
-1. Confirm the operation and then save your settings.
-
-[!INCLUDE [footer-include](./includes/footer-banner.md)]
