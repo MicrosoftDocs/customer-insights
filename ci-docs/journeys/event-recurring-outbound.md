@@ -1,7 +1,7 @@
 ---
 title: Create and manage recurring events in outbound marketing
 description: Describes how recurring events work in outbound marketing.
-ms.date: 08/18/2023
+ms.date: 01/22/2025
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -89,3 +89,5 @@ To change a single event that is part of a series:
     ![Open just one event from a series.](media/event-recurring-open-single.png "Open just one event from a series")
 
 1. Edit your custom occurrence as required and save your settings.
+
+[!INCLUDE [footer-include](./includes/footer-banner.md)]
