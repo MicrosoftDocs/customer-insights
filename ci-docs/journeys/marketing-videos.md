@@ -21,7 +21,7 @@ If you are new to Dynamics 365 Customer Insights - Journeys, then these videos w
 
 ## Get a quick overview
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4FRAO]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=f2db806c-cdda-4f7b-b6f7-cadceb93d516]
 
 More information: [Overview (Marketing)](real-time-marketing-overview.md)
 
@@ -42,7 +42,7 @@ More information:
 
 ## Use customer journeys to create automated campaigns
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4IO58]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=cfb4272b-cdad-4cdc-b2e3-edb61017020f]
 More information:
 
 - Tutorial: [Create a simple customer journey](create-simple-customer-journey.md)

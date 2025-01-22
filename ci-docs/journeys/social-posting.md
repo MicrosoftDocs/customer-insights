@@ -20,7 +20,7 @@ ms.custom: outbound-marketing
 > [!WARNING]
 > Social posting and LinkedIn lead generation capabilities have been removed from Customer Insights - Journeys.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4J4cQ]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=660e7570-b093-40ee-bd99-5d68165b0fa2]
 
 Customer Insights - Journeys can schedule and post messages directly to your organization's accounts on social media sites. Customer Insights - Journeys's powerful social post designer allows you to create rich content to engage your audience. Use the **Social posts** settings to author and schedule your posts.
 

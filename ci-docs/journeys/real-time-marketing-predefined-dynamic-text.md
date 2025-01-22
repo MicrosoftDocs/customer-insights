@@ -124,7 +124,7 @@ Personalized messages drive engagement that helps deliver desired business outco
 
 Watch this video to learn more:
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RW10ZeH]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=faf37920-4363-4da4-b655-4374ebbde094]
 
 Consider a university alumni donation campaign where you would want to include name of the college attended by each alum to drive maximum engagement. An alum might have attended multiple colleges in that university, resulting in a "1-to-many" relationship between student and college records. Dynamic text can now be defined for such data.
 
@@ -198,7 +198,7 @@ When Customer Insights – Data is present and connected, you can use customer m
 
 Watch this video to learn more:
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RW1fY3B]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=7c905e7e-853e-49e7-85d2-72cdea87a770]
 
 ##### Creating measures
 

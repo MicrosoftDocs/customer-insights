@@ -1,7 +1,7 @@
 ---
 title: Data unification best practices
 description: Learn about the concepts and best practices when unifying data in Customer Insights - Data.
-ms.date: 12/19/2024
+ms.date: 01/06/2025
 ms.reviewer: v-wendysmith
 ms.topic: conceptual
 author: Scott-Stabbert
@@ -21,7 +21,7 @@ When you set up rules to unify your data into a customer profile, consider these
 
 - **Use [normalization](#normalization) to standardize variations** in how data was entered such as Street vs. St vs. St. vs. st.
 
-- **Use [fuzzy matching](#fuzzy-matching) strategically to correct typos and errors** such as bob@contoso.com and bob@contoso.cm. Fuzzy matches take longer to run than exact matches. Always test to see if the extra time spent on fuzzy matching is worth the additional match rate.
+- **Use [fuzzy matching](#fuzzy-matching) strategically to correct typos and errors** such as bob@contoso.com and bob@contoso.cm. Fuzzy matches take longer to run than exact matches. Always test to see if the extra time spent on fuzzy matching is worth the extra match rate.
 
 - **Narrow the scope of matches with [exact match](#exact-match)**. Make sure every rule with fuzzy conditions has at least one exact match condition.
 
@@ -40,6 +40,16 @@ Progressively add several rules and see how long the changes take to run and if 
 View the rule statistics on the **Deduplication rules** and **Matching rules** pages to see if the number of **Unique records** changes. If a new rule matches some records, and the unique record count doesn't change, then a previous rule identifies those matches.
 
 :::image type="content" source="media/unify-unique-records.png" alt-text="Screenshot of Matching rules page highlighting Unique records.":::
+
+## Customer data
+
+In the **Customer data** step:
+
+- Exclude columns that aren't needed for matching rules or that you don't want included in the final customer profile.
+
+- Review column descriptions selected by intelligent mapping.
+
+- Not all columns need to be mapped. Mapping common columns such as email and address fields allows Customer Insights to make downstream processes easier, but columns with a unique ID or purpose to your business can be left unmapped.
 
 ## Deduplication
 

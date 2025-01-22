@@ -1,7 +1,7 @@
 ---
 title: Real-time web personalization overview (preview)
 description: Learn how to provide personalized web interactions and experiences in real time with Customer Insights - Data.
-ms.date: 12/13/2024
+ms.date: 12/20/2024
 ms.topic: overview
 author: srivas15
 ms.author: shsri
@@ -17,7 +17,7 @@ When customers interact with websites&mdash;for example, adding a product to a c
 
 Watch this brief video to learn more about real-time web personalization.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RW1hyhp]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=0374bff9-f481-4324-8237-ebbaaffaed27]
 
 > [!TIP]
 > Sign up to [request access to the preview version](https://forms.office.com/r/TJEE62xTD3) of the real-time personalization features
@@ -54,6 +54,7 @@ This means:
 
 ## Next steps
 
-[Set up real-time web personalization](real-time-web-personalization.md)
+- [Set up real-time web personalization](real-time-web-personalization.md)
+- [Web tracking and personalization tables](tables.md#real-time-web-personalization-tables-preview)
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

@@ -16,7 +16,7 @@ Use your customer data in third-party applications by exporting them to a Secure
 
 [!INCLUDE [data-out-azure-synapse-link](includes/data-out-azure-synapse-link.md)]
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWO94X]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=4b890285-3115-4a4b-8379-f06af29a0460]
 
 ## Prerequisites
 

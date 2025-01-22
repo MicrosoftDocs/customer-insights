@@ -14,7 +14,7 @@ ms.custom: outbound-marketing
 
 # Use Microsoft Teams for Dynamics 365 Customer Insights - Journeys online events in outbound marketing
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4J4cV]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=46b08db8-059a-40c7-928e-6b596f087907]
 
 [!INCLUDE [marketing-trial-cta](./includes/marketing-trial-cta.md)]
 

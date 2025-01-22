@@ -13,7 +13,7 @@ search.audienceType:
 
 # Use natural language to create segments
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4IQy2]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=d681824c-8959-49b1-858b-ec7912303ef1]
 
 > [!IMPORTANT]
 > The the natural language feature for segments currently only supports English language queries.

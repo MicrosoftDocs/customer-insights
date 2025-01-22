@@ -90,7 +90,7 @@ External links allow you to configure a website URL that points to an externally
 
 Managing compliance settings is key to ensuring your business processes conform with privacy laws and regulations. This article gives an overview of administrator compliance setup, preference centers, and real-time journeys concepts. For information on outbound marketing compliance, visit [Outbound marketing compliance settings](privacy-use-features.md).
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RW137KU]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=51f182de-841f-41e8-85c4-49af1caaeeb0]
 
 ### Real-time journeys compliance overview
 
