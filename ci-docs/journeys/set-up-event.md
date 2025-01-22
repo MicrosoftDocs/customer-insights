@@ -1,7 +1,7 @@
 ---
 title: Set up an event
 description: How to plan an event, register basic info, set up your team, manage sessions and speakers, set the event schedule, issue passes,  and manage venues in Dynamics 365 Customer Insights - Journeys.
-ms.date: 01/03/2024
+ms.date: 01/22/2025
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -45,7 +45,7 @@ Here you can see and edit your basic event information, including:
 - **Timeline**: As with most types of entities in Dynamics 365, you can use this section to build a record of the activities (such as calls, emails, and appointments) that you and others do in relation to the current record. You can also share notes here. Use the links, buttons, and menus at the top of this area to create new items and to search and sort the list.
 - **Stream this event online**: Set up your event as a Microsoft Teams webinar,a Teams Live Event, a Teams Meeting, or on-site only.
 - **Location**: Specify the location where your event will take place. The location is hierarchical, and you can specify only as much detail as you need. For example, you can specify just a building. But to specify a room, you must first choose the building that contains that room. You can assign a separate location to each session if applicable. You can create location records from here, or choose from among existing venue records. Each location record can contain useful information such as address, facilities, capacity, and more.
-- **Capacity**: THis setting allows you to set capacity for your event. For on-site events, the Maximum event capacity value shown here updates to match the capacity configured for your last selected building, room, or layout (if available). You can then edit the value manually to override the capacity figure if needed. 
+- **Capacity**: Set the capacity for your event. For on-site events, the maximum event capacity value shown updates to match the capacity configured for your last selected building, room, or layout (if available). If needed, you can edit the value manually to override the capacity figure. 
 - **Webinar setup**: The webinar setup section only appears for webinar and hybrid events. Use the settings here to set up your webinar configuration and find the URLs for viewing and presenting the webinar.
 
 <a name="agenda-tab"></a>
@@ -77,9 +77,11 @@ The Website and form tab provides options to set registration parameters. First,
 - This event does not have a website:
     - Use this option if you want to collect registrations elsewhere or not collect them at all.
  
-Under Registration page options you can edit an existing event registration form, select another, create new and define other registration settings: 
-- Create leads for event registrations - if enabled, a new lead will also be generated for each registration and linked to the appropriate contact.
-- Allow attendees to register for sessions - if enabled, attandees will be able to register for sessions. Visit https://learn.microsoft.com/en-us/dynamics365/customer-insights/journeys/real-time-journeys-event-session for more information. Important: this setting used to be on Agenda tab and it used to be called "Allow registrants to create their own agenda"
+Under the registration page options, you can edit an existing event registration form, select another, create a new form, or define other registration settings: 
+- **Create leads for event registrations**: If enabled, a new lead is generated for each registration and linked to the appropriate contact.
+- **Allow attendees to register for sessions**: If enabled, attendees can register for sessions. Learn more: [Set up session-level registration](real-time-journeys-event-session.md). 
+  > [!Important]
+  > The **Allow attendees to register for sessions** setting used to be on the **Agenda** tab and was called "Allow registrants to create their own agenda."
 
 ### The Registration and attendance tab
 
