@@ -1,7 +1,7 @@
 ---
 title: "Relationships between tables and table paths"
 description: "Create and manage relationships between tables from multiple data sources."
-ms.date: 01/08/2025
+ms.date: 01/22/2025
 ms.reviewer: mhart
 ms.topic: conceptual
 author: srivas15
