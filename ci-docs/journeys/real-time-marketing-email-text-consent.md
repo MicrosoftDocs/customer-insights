@@ -90,7 +90,7 @@ The following diagram provides a visual representation of how consent is checked
   <tr>
    <td><b>SMS/custom channel</b></td>
     <td>Blocked</td>
-    <td>Sent</td>
+    <td>Blocked</td>
     <td>Sent</td>
   </tr>
   <tr>
