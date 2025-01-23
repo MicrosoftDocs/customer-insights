@@ -51,6 +51,9 @@ For more information about the **Relationships** tab, see [Relationships](relati
 
   :::image type="content" source="media/data-manager-tables-data.png" alt-text="Select a table.":::
 
+  > [!NOTE]
+  > The full, unfiltered data displays.
+
 - The **Reports** tab (available for some tables) helps you to visualize your data by creating a report, which includes these columns:
 
   - **Report name**: Name of the report.
