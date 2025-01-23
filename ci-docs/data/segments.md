@@ -5,7 +5,7 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: v-wendysmith
 ms.topic: how-to
-ms.date: 10/31/2024
+ms.date: 01/21/2025
 ms.custom: bap-template
 ---
 
@@ -123,6 +123,9 @@ Export segments to other apps to further use the data. Export a segment from the
 1. Select **Back** to return to the main page for segments.
 
 ## Automated deactivation of unused segments
+
+> [!IMPORTANT]
+> This feature is only available to users with an Administrator user role.
 
 To optimize refresh performance, the system automatically deactivates unused segments every day. Unused segments are segments that aren't used in exports, measures, other segments, or in Customer Insights - Journeys and created or updated more than 45 days ago.
 
