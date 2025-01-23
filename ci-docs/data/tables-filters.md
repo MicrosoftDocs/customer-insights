@@ -32,6 +32,6 @@ After [configuring your data sources](data-sources.md), apply row filters before
 1. After setting the filter criteria, select **Apply**. All processes will use the filtered tables.
 
 > [!NOTE]
-> The **Data** tab shows the full, unfiltered data. If you export a source table ingested in .csv or .parquet format, the export includes the full, unfiltered data. 
+> If you [explore a specific table's data](tables.md#explore-a-specific-tables-data), the full, unfiltered data dispays. If you export a source table ingested in .csv or .parquet format, the export includes the full, unfiltered data.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

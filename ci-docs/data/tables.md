@@ -47,12 +47,9 @@ For more information about the **Relationships** tab, see [Relationships](relati
 
   To learn more about the data ingested in the table, the **Summary** column provides important data characteristics, such as nulls, missing values, unique values, counts, and distributions, whatever is applicable to your data. Select the chart icon to see the summary of the data.
 
-- The **Data** tab shows details about individual records of the table. Details listed depend on the table's data type.
+- The **Data** tab shows details about individual records of the table. The records show the full, unfiltered data. Details listed depend on the table's data type.
 
   :::image type="content" source="media/data-manager-tables-data.png" alt-text="Select a table.":::
-
-  > [!NOTE]
-  > The full, unfiltered data displays.
 
 - The **Reports** tab (available for some tables) helps you to visualize your data by creating a report, which includes these columns:
 
