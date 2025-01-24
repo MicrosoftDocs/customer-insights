@@ -36,7 +36,7 @@ You can create an event registration website in Power Pages simply by using the 
 Power Pages combined with the event registration template unlocks powerful scenarios:
 
 - Style and customize your website in the Power Pages studio editor.
-- [Set the custom domain name for event registration website](#set-custom-domain-name-for-event-registration-website).
+- [Set the custom domain name for event registration website](#set-a-custom-domain-name-for-the-event-registration-website).
 - [Create multiple event registration websites](#create-multiple-event-registration-websites).
 - Each event can have a different registration form without the need to change any code.
 - Explore more [Power Pages capabilities](/power-pages/capabilities).
@@ -56,9 +56,9 @@ If you encounter any issues while creating or editing your website, refer to the
     :::image type="content" source="media/event-pp-template-create.png" alt-text="Create a new website." lightbox="media/event-pp-template-create.png":::
 1. Find an Event Portal template in **Dynamics 365** and select **Choose this template**.
     :::image type="content" source="media/event-pp-template-select.png" alt-text="Select a template." lightbox="media/event-pp-template-select.png":::
-1. Name your site and set the language. You can change the web address later to [use your own domain name](#set-custom-domain-name-for-event-registration-website). Select **Done** in the bottom right corner. It takes a few minutes to get your site ready. You can check the status of your newly created website in the list of Active sites.
+1. Name your site and set the language. You can change the web address later to [use your own domain name](#set-a-custom-domain-name-for-the-event-registration-website). Select **Done** in the bottom right corner. It takes a few minutes to get your site ready. You can check the status of your newly created website in the list of Active sites.
 1. Once your site is ready, select **Edit** to customize your website. Your new website is created as Private–not accessible for external audience.
-1. The Home page contains the list of events. You can [customize what information about event is displayed](#customize-displayed-information-about-event-in-card-gallery-control) in the list of events by selecting the **Card gallery** control on the canvas. You can also easily change the hero image, logo in the page header, page footer, etc.
+1. The Home page contains the list of events. You can [customize what information about event is displayed](#customize-displayed-information-about-the-event-in-the-card-gallery-control) in the list of events by selecting the **Card gallery** control on the canvas. You can also easily change the hero image, logo in the page header, page footer, etc.
 1. Preview your website: Select **Preview** in the top right corner. You may need to enable pop-up windows to display the preview.
 1. Publish your website: Follow the [Go-live checklist](/power-pages/go-live/checklist).
 
@@ -101,7 +101,7 @@ It's possible to create multiple event registration websites and set which event
 
 1. Build at least two websites in Power Pages using the Event Registration template.
 1. Create multiple [Power Pages Website configurations in Customer Insights - Journeys settings](#power-pages-website-configuration-in-customer-insights---journeys) and link each configuration to the correct Power Pages website. This allows the event planner to select the correct website while setting up the event in Event Management. A *savedQuery* with the filtering of events for that specific website is automatically created. This automatically generated view can't be customized but you can save it as a new view to customize it.
-1. Open the card gallery control in Power Pages studio and [Customize the corresponding view](#customize-displayed-information-about-event-in-card-gallery-control) as the **View**.
+1. Open the card gallery control in Power Pages studio and [Customize the corresponding view](#customize-displayed-information-about-the-event-in-the-card-gallery-control) as the **View**.
 
 ### Custom components for event registration
 
