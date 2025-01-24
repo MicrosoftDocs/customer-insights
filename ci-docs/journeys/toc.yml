@@ -336,6 +336,8 @@
       items:
       - name: Invite, register, and house event attendees
         href: invite-register-house-event-attendees.md
+      - name: Create event registration experience
+        href: event-registration-experience.md
     - name: Manage events
       items:
       - name: Event management dashboard
