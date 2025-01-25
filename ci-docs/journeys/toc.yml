@@ -314,8 +314,6 @@
     items:
     - name: Event management overview
       href: event-management.md
-    - name: Enable event management in real-time journeys
-      href: enable-events.md
     - name: Create an event
       items:
       - name: Open the event management work area
