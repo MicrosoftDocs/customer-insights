@@ -20,73 +20,73 @@ search.audienceType:
 
 Outbound marketing and real-time journeys events are jointly presented under the Event planning work area in Dynamics 365 Customer Insights – Journeys.
 
-The experience of creating events in real-time journeys is mostly unchanged, but with the introduction of each new feature, we’re improving and enhancing the experience you may have been used to from outbound marketing.
+The experience of creating events in real-time journeys is mostly unchanged. However, with the introduction of new features, we’re improving and enhancing your experience with outbound marketing.
 
 > [!NOTE]
-> When creating Outbound marketing events with start or end date post the Outbound-removal date, you'll see a warning that you'll have to acknowledge every time.
+> When creating Outbound marketing events with start or end date post the Outbound-removal date, you see a warning that you have to acknowledge every time.
 
 ## Comparison of Outbound and Real-time marketing event
 
-Event management comprises of three areas:
+Event management comprises three areas:
 
-1.  **Event set up**: Creation of event, set up of sessions, tracks, speakers, room reservations and more.
-2.  **Event registration**: Registration form, custom unmapped fields, and publishing of the event
-3.  **Event communication**: Invitations, event registration confirmation, reminders and post-even follow ups
+1. **Event set up**: Create events, set up sessions, tracks, speakers, room reservations, and more.
+1. **Event registration**: Registration form, custom unmapped fields, publishing of the event.
+1. **Event communication**: Invitations, event registration confirmation, reminders, and post follow ups.
 
 ### Event set up
 
 Creation and setup of events, tracks and sessions, speakers, and registrants work the same way in Real-time journeys with two differences:
 
 -   Multi-session registration in real-time journeys events allows you to manage capacity of event and sessions more efficiently. For more information, see [learn more](real-time-journeys-event-session.md)
--   Improved registration and publishing experience – [learn more](event-registration-experience.md)
+-   Improved registration and publishing experience. For more information, see [Create an event registration experience in Customer Insights - Journeys](event-registration-experience.md).
 
-**Relevant upcoming features for event set up:**
+The following features are relevant as you transition from outbound marketing to real-time journeys. These features provide better functionality than those available in outbound marketing.
 
-The following features may be of interest as you transition from outbound marketing to real-time journeys. These features provide equivalent, or better functionality than what was available in outbound marketing.
-
--   [Maximize event capacity with waitlist registration](/dynamics365/release-plan/2024wave2/customer-insights/dynamics365-customer-insights-journeys/maximize-event-capacity-waitlist-registrations)
--   Registration end date (release note will be available next month)
--   Event passes (release note will be available next month)
+- [Maximize event capacity with waitlist registration](/dynamics365/release-plan/2024wave2/customer-insights/dynamics365-customer-insights-journeys/maximize-event-capacity-waitlist-registrations)
+- Registration end date (available March 2025)
+- Event passes (available March 2025)
 
 ### Event registration and publishing
 
-The registration experience in Real-time journeys is different and is powered by default by a [registration form](https://review.learn.microsoft.com/en-us/dynamics365/customer-insights/journeys/event-registration-experience#event-registration-form), a type of [Customer Insights - Journeys form](https://review.learn.microsoft.com/en-us/dynamics365/customer-insights/journeys/real-time-marketing-form-overview). Real-time journeys event registration forms offer enhanced personalization options, allowing you to reuse forms between events by bringing in dynamic content (such as event name, location, list of speakers, sessions, and more). There are various options how to [create event registration experience:](https://learn.microsoft.com/en-us/dynamics365/customer-insights/journeys/event-registration-experience)
+The registration experience in Real-time journeys is different and is powered by default by a [registration form](https://review.learn.microsoft.com/en-us/dynamics365/customer-insights/journeys/event-registration-experience#event-registration-form), a type of [Customer Insights - Journeys form](https://review.learn.microsoft.com/en-us/dynamics365/customer-insights/journeys/real-time-marketing-form-overview). Real-time journeys event registration forms offer enhanced personalization options, allowing you to reuse forms between events by bringing in dynamic content (such as event name, location, list of speakers, sessions, and more). There are various options how to [Create event registration experience:](event-registration-experience.md).
 
--   Registration form hosted as a standalone page–a single page containing the registration form with all details about the event. The page is hosted on Customer Insights infrastructure and no extra license is needed. For more information, see [Publish your form](https://review.learn.microsoft.com/en-us/dynamics365/customer-insights/journeys/real-time-marketing-form-create#publish-your-form).
--   Registration form embedded into your website–you can embed the event registration form into your own website. For more information, see [Publish your form](https://review.learn.microsoft.com/en-us/dynamics365/customer-insights/journeys/real-time-marketing-form-create#publish-your-form).
--   Registration portal on Power Pages – you can use the event registration template to [build a website using Power Pages Studio.](event-portal-template.md)
--   Custom solution using events API. For more information, see [Using events API in real-time journeys](https://review.learn.microsoft.com/en-us/dynamics365/customer-insights/journeys/developer/using-rtm-events-api).
+- Registration form hosted as a standalone page–a single page containing the registration form with all details about the event. The page is hosted on Customer Insights infrastructure and no extra license is needed. For more information, see [Publish your form](https://review.learn.microsoft.com/en-us/dynamics365/customer-insights/journeys/real-time-marketing-form-create#publish-your-form).
+- Registration form embedded into your website–you can embed the event registration form into your own website. For more information, see [Publish your form](https://review.learn.microsoft.com/en-us/dynamics365/customer-insights/journeys/real-time-marketing-form-create#publish-your-form).
+- Registration portal on Power Pages – you can use the event registration template to [build a website using Power Pages Studio.](event-portal-template.md)
+- Custom solution using events API. For more information, see [Using events API in real-time journeys](https://review.learn.microsoft.com/en-us/dynamics365/customer-insights/journeys/developer/using-rtm-events-api).
 
 **Relevant upcoming features for event registration and publishing:**
 
--   [Custom unmapped fields](https://learn.microsoft.com/en-us/dynamics365/release-plan/2024wave2/customer-insights/dynamics365-customer-insights-journeys/collect-extra-customer-information-without-creating-custom-attributes)
--   [Create event portals with event and registration details using Power Pages](https://learn.microsoft.com/en-us/dynamics365/release-plan/2024wave2/customer-insights/dynamics365-customer-insights-journeys/enable-customers-find-sign-up-events-easily)
--   [Create event portals with event and registration details on your own website](https://learn.microsoft.com/en-us/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/create-event-portal-own-website)
+- [Custom unmapped fields](/dynamics365/release-plan/2024wave2/customer-insights/dynamics365-customer-insights-journeys/collect-extra-customer-information-without-creating-custom-attributes).
+- [Create event portals with event and registration details using Power Pages](/dynamics365/release-plan/2024wave2/customer-insights/dynamics365-customer-insights-journeys/enable-customers-find-sign-up-events-easily).
+- [Create event portals with event and registration details on your own website](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/create-event-portal-own-website).
 
 ### Event communication
 
-Event-related communication in real-time journeys is more efficient, thanks to the availability of out of box triggers such as Marketing event registration created, Marketing event check in created, and Marketing event registration canceled.
+Event-related communication in real-time journeys is now more efficient due to the availability of out of box triggers such as Marketing event registration created, Marketing event check-in created, and Marketing event registration canceled.
 
-Event-based communications in real-time journeys allow for more timely communication with attendees. This is illustrated below:
+Event-based communications in real-time journeys allow for more timely communication with attendees. This can be seen in the diagram below:
 
-![Transition event planning diagram.](media/c08b005c346146769e47c64d9f33e77a.png)
+:::image type="content" source="media/event-planning-rtjourneys.png" alt-text="Transition event planning diagram." lightbox="media/event-planning-rtjourneys.png":::
 
-While the process of inviting and registering attendees is consistent with what was available in outbound marketing, communication about events will require new emails and journeys to be created. Refer to transition [segments, emails, journeys, and assets]()
+While the process of inviting and registering attendees is consistent with what was available in outbound marketing, communication about events require new emails and journeys to be created. Refer to transition [segments, emails, journeys, and assets](transition-walkthrough-segments.md)
 
 ## Transition guidance
 
+The following sections cover transition guidance for Real-time events.
+
 ### Timing of the transition
 
-Real-time events are available for all customers, and it is recommended to start transitioning as soon as possible, taking advantage of the available functionality.
+Real-time events are available for all customers. It's recommended to start transitioning as soon as possible.
 
-All events that do not require features that are in the roadmap should be created as Real-time events by default.
+All events that don't require features that are in the roadmap should be created as Real-time events by default.
 
 The event schedule should also be taken into consideration when crafting the transition schedule.
 
 ### Migration path
 
 1.  Migrate all event related communication to Real-time marketing regardless of if you’re using Outbound or Real-time events. Journey orchestration, segmentation, and other assets work with Outbound event registrations as well.
-2.  Identify existing events that will have a registration period open post-Outbound marketing removal and recreate them using Real-time marketing.
+2.  Identify existing events that have a registration period open post-Outbound marketing removal and recreate them using Real-time marketing.
 3.  Identify new events you're planning to run and check whether there's any critical functionality stopping you from using Real-time marketing currently. If there are no gaps identified, then all new events should be created in RTM only.
 4.  Recreate the event registration experience as per the guidance in the next section.
 
@@ -101,17 +101,17 @@ There were multiple options on how to build event registration experience in out
     2.  OBM Marketing form for event registration - replace these forms with RTM Event Registration forms. Learn more
     3.  Custom solution using OBM Event Management API, not using Angular application – use the new Event API. Learn more about EM API
 
-Please refer to the [RTM migration path for OBM event registration experience.docx](https://microsofteur-my.sharepoint.com/:w:/g/personal/petrjantac_microsoft_com/EWk-2RlWMFdKgGpKyaVZnlQBv8-eCxD9iUK0yX628V4YHQ?e=X7OmIE) document for more details.
+Refer to the [RTM migration path for OBM event registration experience.docx](https://microsofteur-my.sharepoint.com/:w:/g/personal/petrjantac_microsoft_com/EWk-2RlWMFdKgGpKyaVZnlQBv8-eCxD9iUK0yX628V4YHQ?e=X7OmIE) document for more details.
 
 ## Frequently asked questions for post-Outbound removal
 
 *How are Outbound and Real-time marketing events different?*
 
-As with other parts of the system, real-time marketing events have been built on the latest most advanced technology and infrastructure that will allow us to scale our product and offer the most up-to-date security first-driven experience. The biggest difference as described above, is the event registration experience. Another difference is that when introducing new capabilities to real-time events, we are taking into consideration feedback received from years of experience with Outbound events and introducing several improvements. Read more about the overall [Real-time transition](transition-faqs.md#why-should-i-transition-to-real-time-journeys)
+As with other parts of the system, real-time marketing events have been built on the latest most advanced technology and infrastructure that will allow us to scale our product and offer the most up-to-date security first-driven experience. The biggest difference as described above, is the event registration experience. Another difference is that when introducing new capabilities to real-time events, we're taking into consideration feedback received from years of experience with Outbound events and introducing several improvements. Read more about the overall [Real-time transition](transition-faqs.md#why-should-i-transition-to-real-time-journeys)
 
 *In a few words, what will happen once Outbound marketing is removed?*
 
-Events are a shared capability between real-time journeys and outbound marketing and the same tables are used. These tables and the data won't be removed. However, there are some critical differences in the event forms and pages between outbound marketing and real-time journeys. Therefore, events created from outbound marketing stops working once outbound marketing is removed.
+Events are a shared capability between real-time journeys and outbound marketing and the same tables are used. These tables and the data won't be removed. However, there are some critical differences in the event forms and pages between outbound marketing and real-time journeys. Therefore, events created from outbound marketing stop working once outbound marketing is removed.
 
 *What will happen to the existing Outbound marketing event records?*
 
