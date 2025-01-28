@@ -96,14 +96,14 @@ RTM migration path for OBM event registration experience.docx
 
 There were multiple options on how to build event registration experience in outbound marketing (OBM). Each of these will have a slightly different migration path.
 
-1.  Event portal hosted on Power Portals - build a new event registration website using Power Pages template. [Learn more](https://review.learn.microsoft.com/en-us/dynamics365/customer-insights/journeys/event-portal-template?branch=Event_portal)
-    1.  Event portal NOT hosted on Power Portals - recommended migration path is to build new event registration experience using the new code snippet listing, once available.
-    2.  OBM Marketing form for event registration - replace these forms with RTM Event Registration forms. Learn more
-    3.  Custom solution using OBM Event Management API, not using Angular application – use the new Event API. Learn more about EM API
+- **Event portal hosted on Power Portals** – Build a new event registration website using Power Pages template. [Learn more](https://review.learn.microsoft.com/en-us/dynamics365/customer-insights/journeys/event-portal-template?branch=Event_portal).
+- **Event portal NOT hosted on Power Portals** – The recommended migration path is to build new event registration experience using the new code snippet listing, once available.
+- **OBM Marketing form for event registration** – Replace these forms with RTM Event Registration forms. Learn more
+- **Custom solution using OBM Event Management API (not using Angular application)** – Use the new Event API. Learn more about EM API.
 
 Refer to the [RTM migration path for OBM event registration experience.docx](https://microsofteur-my.sharepoint.com/:w:/g/personal/petrjantac_microsoft_com/EWk-2RlWMFdKgGpKyaVZnlQBv8-eCxD9iUK0yX628V4YHQ?e=X7OmIE) document for more details.
 
-## Frequently asked questions for post-Outbound removal
+## Frequently asked questions
 
 *How are Outbound and Real-time marketing events different?*
 
@@ -150,8 +150,6 @@ The most used features have a planned release date before the Outbound removal d
 -   Workaround for custom unmapped fields: Enhanced data collection and journey personalization with unmapped form fields - [FastTrack blog](https://community.dynamics.com/blogs/post/?postid=3a361b7e-80b0-ee11-92bd-002248527d3d)
 -   Cascaded fields (where options provided in a field depend on a value in an earlier field) aren't yet supported. See this blog for a workaround: Implementing cascading dropdown fields in RTM forms - [FastTrack blog](https://community.dynamics.com/blogs/post/?postid=ff86d88f-d892-ef11-ac21-6045bdd7e1ae)
 -   Sending timed reminders before event – [learn more](https://learn.microsoft.com/en-us/dynamics365/customer-insights/journeys/real-time-marketing-event-registration-journey#step-2-send-email-reminders-seven-days-and-one-day-before-the-event)
-
-
 
 <!---
 
