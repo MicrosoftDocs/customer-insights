@@ -63,13 +63,13 @@ The registration experience in Real-time journeys is different and is powered by
 
 ### Event communication
 
-Event-related communication in real-time journeys is now more efficient due to the availability of out of box triggers such as Marketing event registration created, Marketing event check-in created, and Marketing event registration canceled.
+Event-related communication in real-time journeys is now more efficient due to the availability of out of box triggers such as Marketing event registration created, Marketing event check in created, and Marketing event registration canceled.
 
-Event-based communications in real-time journeys allow for more timely communication with attendees. This can be seen in the diagram below:
+Event-based communications in real-time journeys allow for more timely communication with attendees. This feature is illustrated in the following diagram:
 
 :::image type="content" source="media/event-planning-rtjourneys.png" alt-text="Transition event planning diagram." lightbox="media/event-planning-rtjourneys.png":::
 
-While the process of inviting and registering attendees is consistent with what was available in outbound marketing, communication about events require new emails and journeys to be created. Refer to transition [segments, emails, journeys, and assets](transition-walkthrough-segments.md)
+While the process of inviting and registering attendees is consistent with what was available in outbound marketing, communication about events requires new emails and journeys to be created. Refer to transition [segments, emails, journeys, and assets](transition-walkthrough-segments.md)
 
 ## Transition guidance
 
@@ -115,7 +115,7 @@ Events are a shared capability between real-time journeys and outbound marketing
 
 *What will happen to the existing Outbound marketing event records?*
 
-The event record will still be visible in the UI, but it will be in read-only mode, which means that you will be able to see the event, its settings and registrations, but you will not be able to edit the event anymore.
+The event record will still be visible in the UI. However, it will be in read-only mode. This means that you will be able to see the event, its settings, and registrations but you will not be able to edit the event any longer.
 
 *What will happen with registrations in Outbound marketing events?*
 
@@ -125,9 +125,9 @@ The OBM registration records will continue to be visible in the contact record a
 
 The data structure for Real-time marketing events is the same now, but as we are introducing changes and enhancements to the system, we may implement certain features differently.
 
-*For any features that haven't been introduced yet, can we assume that they will work the same way?*
+*For any features that haven't been introduced yet, can we assume that they'll work the same way?*
 
-We are trying to avoid making any model changes to the basic event entities, but we do not recommend building custom solutions on system entities for features that aren't yet available in real-time marketing as this may present a certain level of risk.
+We're trying to avoid making any model changes to the basic event entities, but we do not recommend building custom solutions on system entities for features that aren't yet available in real-time marketing as this may present a certain level of risk.
 
 *Will my event portal continue to work post-Outbound removal?*
 
@@ -135,15 +135,15 @@ Once outbound marketing is removed, it will be no longer possible to create Outb
 
 *What will happen to the portals that are still live post-Outbound removal?*
 
-The services will stop processing registrations, and the site will no longer be available. There will be a user-friendly message informing them that the event registration page is no longer available. The recommendation is to unpublish all the existing portals before Outbound removal.
+The services stop processing registrations, and the site will no longer be available. There will be a user-friendly message informing them that the event registration page is no longer available. The recommendation is to unpublish all the existing portals before Outbound removal.
 
 *Is there any tool that will help me transition my live events?*
 
 No, any events that are live and are accepting registrations will have to have the registration closed before the Outbound removal as post this date, we will no longer process registrations submitted via Outbound forms.
 
-*What should I do if the features I need for event planning are not yet available?*
+*What should I do if the features I need for event planning aren't available?*
 
-The most used features have a planned release date before the Outbound removal date, but we understand there might be some features that are important for your business and might not be available yet. You can **phase your transition**. Any events that do not need those features can be already created as Real-time events. You can also transition all your communication to Real-time as Outbound events can be used with Real-time journeys and Emails. This will reduce the number of assets you'll need to transition closer to the date.
+The most used features have a planned release date before the Outbound removal date, but we understand there might be some features that are important for your business and might not be available yet. You can **phase your transition**. Any events that don't need those features can be already created as Real-time events. You can also transition all your communication to Real-time as Outbound events can be used with Real-time journeys and Emails. This reduces the number of assets you'll need to transition closer to the date.
 
 ## Blogs and workarounds
 
@@ -154,7 +154,6 @@ The most used features have a planned release date before the Outbound removal d
 
 
 <!---
-
 
 # Transition event management
 
