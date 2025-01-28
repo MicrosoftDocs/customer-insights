@@ -37,8 +37,8 @@ Event management comprises three areas:
 
 Creation and setup of events, tracks and sessions, speakers, and registrants work the same way in Real-time journeys with two differences:
 
--   Multi-session registration in real-time journeys events allows you to manage capacity of event and sessions more efficiently. For more information, see [learn more](real-time-journeys-event-session.md)
--   Improved registration and publishing experience. For more information, see [Create an event registration experience in Customer Insights - Journeys](event-registration-experience.md).
+- Multi-session registration in real-time journeys events allows you to manage capacity of event and sessions more efficiently. For more information, see [learn more](real-time-journeys-event-session.md)
+- Improved registration and publishing experience. For more information, see [Create an event registration experience in Customer Insights - Journeys](event-registration-experience.md).
 
 The following features are relevant as you transition from outbound marketing to real-time journeys. These features provide better functionality than those available in outbound marketing.
 
@@ -147,9 +147,9 @@ The most used features have a planned release date before the Outbound removal d
 
 ## Blogs and workarounds
 
--   Workaround for custom unmapped fields: Enhanced data collection and journey personalization with unmapped form fields - [FastTrack blog](https://community.dynamics.com/blogs/post/?postid=3a361b7e-80b0-ee11-92bd-002248527d3d)
--   Cascaded fields (where options provided in a field depend on a value in an earlier field) aren't yet supported. See this blog for a workaround: Implementing cascading dropdown fields in RTM forms - [FastTrack blog](https://community.dynamics.com/blogs/post/?postid=ff86d88f-d892-ef11-ac21-6045bdd7e1ae)
--   Sending timed reminders before event – [learn more](https://learn.microsoft.com/en-us/dynamics365/customer-insights/journeys/real-time-marketing-event-registration-journey#step-2-send-email-reminders-seven-days-and-one-day-before-the-event)
+- Workaround for custom unmapped fields: Enhanced data collection and journey personalization with unmapped form fields. For more information, see [FastTrack blog](https://community.dynamics.com/blogs/post/?postid=3a361b7e-80b0-ee11-92bd-002248527d3d)
+- Cascaded fields where options provided in a field depend on a value in an earlier field aren't yet supported. For more information, see the blog [Implementing cascading dropdown fields in RTM forms](https://community.dynamics.com/blogs/post/?postid=ff86d88f-d892-ef11-ac21-6045bdd7e1ae)
+- Sending timed reminders before event. For more information, see [Boost event engagement with journeys](real-time-marketing-event-registration-journey.md#step-2-send-email-reminders-seven-days-and-one-day-before-the-event).
 
 <!---
 
