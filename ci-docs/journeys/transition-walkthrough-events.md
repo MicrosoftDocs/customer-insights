@@ -20,7 +20,7 @@ search.audienceType:
 
 Outbound marketing and real-time journeys events are jointly presented under the Event planning work area in Dynamics 365 Customer Insights – Journeys.
 
-The experience of creating events in real-time journeys is mostly unchanged. However, with the introduction of new features, we’re improving and enhancing your experience with outbound marketing.
+The experience of creating events in real-time journeys is mostly unchanged. However, with the introduction of new features, we're improving and enhancing your experience with outbound marketing.
 
 > [!NOTE]
 > When creating Outbound marketing events with start or end date post the Outbound-removal date, you see a warning that you have to acknowledge every time.
@@ -101,8 +101,6 @@ The event schedule should also be taken into consideration when crafting the tra
 4.  Recreate the event registration experience as per the guidance in the next section.
 
 #### Transition of event registration experience
-
-RTM migration path for OBM event registration experience.docx
 
 There were multiple options on how to build event registration experience in outbound marketing (OBM). Each of these will have a slightly different migration path.
 
