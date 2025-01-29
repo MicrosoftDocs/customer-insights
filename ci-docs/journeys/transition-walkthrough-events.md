@@ -96,7 +96,7 @@ RTM migration path for OBM event registration experience.docx
 
 There were multiple options on how to build event registration experience in outbound marketing (OBM). Each of these will have a slightly different migration path.
 
-- **Event portal hosted on Power Portals** – Build a new event registration website using Power Pages template. [Learn more](https://review.learn.microsoft.com/en-us/dynamics365/customer-insights/journeys/event-portal-template?branch=Event_portal).
+- **Event portal hosted on Power Portals** – Build a new event registration website using Power Pages template. For more information, see [Build an event registration website using Power Pages](event-portal-template.md).
 - **Event portal NOT hosted on Power Portals** – The recommended migration path is to build new event registration experience using the new code snippet listing, once available.
 - **OBM Marketing form for event registration** – Replace these forms with RTM Event Registration forms. Learn more
 - **Custom solution using OBM Event Management API (not using Angular application)** – Use the new Event API. Learn more about EM API.
@@ -131,7 +131,7 @@ We're trying to avoid making any model changes to the basic event entities, but 
 
 *Will my event portal continue to work post-Outbound removal?*
 
-Once outbound marketing is removed, it will be no longer possible to create Outbound marketing events or to register for Outbound marketing events. There were multiple options on how to build event registration experience and portals in outbound marketing. Each of these will have a slightly different migration path, please refer to Real-time journeys' migration path for Outbound marketing event registration \<need to link it to the correct section once this one is published too https://microsofteur-my.sharepoint.com/:w:/g/personal/petrjantac_microsoft_com/EWk-2RlWMFdKgGpKyaVZnlQBv8-eCxD9iUK0yX628V4YHQ?e=X7OmIE \>.
+Once outbound marketing is removed, it will be no longer possible to create Outbound marketing events or to register for Outbound marketing events. There were multiple options on how to build event registration experience and portals in outbound marketing. Each of these will have a different migration path. <!--- For more information, see Real-time journeys' migration path for Outbound marketing event registration \<need to link it to the correct section once this one is published too https://microsofteur-my.sharepoint.com/:w:/g/personal/petrjantac_microsoft_com/EWk-2RlWMFdKgGpKyaVZnlQBv8-eCxD9iUK0yX628V4YHQ?e=X7OmIE -->
 
 *What will happen to the portals that are still live post-Outbound removal?*
 
