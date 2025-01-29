@@ -22,11 +22,11 @@ The journey start configuration lets you define how customers can start the jour
 ### Trigger-based journey
 
 - **Trigger to start the journey**: Customers start the journey as soon as the selected trigger occurs.  
-- **Repeating the journey**: Lets you configure how soon customers can repeat the journey if the trigger to start the journey occurs again. You can allow customers to repeat the journey immediately, or only allow them to repeat the journey after a delay interval.
+- **Repeating the journey**: Lets you configure how soon customers can repeat the journey if the trigger to start the journey occurs again. You can allow customers to repeat the journey, or only allow them to repeat the journey after a delay interval.
 - **Exclude this segment**: Members of this segment won't be allowed to start the journey. This is an easy way to filter out certain segments of customers from starting the journey, even if they performed the trigger to start the journey.  
 - **Journey Timing**: Lets you specify the time window in which customers can start the journey. Customers must perform the journey start trigger after the start time to enter the journey. No new customers will be allowed to start the journey after the end time. The end time only affects when customers can start the journey. If a customer is already in the journey, they'll be allowed to continue the journey even after the end time.
-- **Handling unresolved profile**: This option is only available for trigger-based journeys that target Customer Insights - Data profiles. It takes time to create a full Customer Insights - Data profile. If the full profile isn’t available at the time the person triggers the journey, they can either start the journey immediately using defaults for any missing profile data or wait for the full profile to be available before starting the journey. To successfully communicate with someone without a profile, the trigger must specify email (contactpoint_email) or phone (contactpoint_phone) attributes. See [Create a custom trigger](real-time-marketing-custom-triggers.md). <br>
-For journeys such as sending purchase order confirmations, both new customers and existing customers can trigger the journey. A new customer may not have a full profile when they make the purchase. By selecting the option to start the journey immediately even if the full profile isn't available, you can ensure new users get the order confirmation immediately without having to wait. All profile attributes for these new users will be treated as empty, so it's important to always include default fallbacks in personalized content as well as attribute branches.
+- **Handling unresolved profile**: This option is only available for trigger-based journeys that target Customer Insights - Data profiles. It takes time to create a full Customer Insights - Data profile. If the full profile isn’t available at the time the person triggers the journey, they can either start the journey using defaults for any missing profile data or wait for the full profile to be available before starting the journey. To successfully communicate with someone without a profile, the trigger must specify email (contactpoint_email) or phone (contactpoint_phone) attributes. See [Create a custom trigger](real-time-marketing-custom-triggers.md). <br>
+For journeys such as sending purchase order confirmations, both new customers and existing customers can trigger the journey. A new customer may not have a full profile when they make the purchase. By selecting the option to start the journey even if the full profile isn't available, you can ensure new users get the order confirmation without having to wait. All profile attributes for these new users will be treated as empty, so it's important to always include default fallbacks in personalized content as well as attribute branches.
 
 ### Segment-based journey
 
@@ -41,8 +41,8 @@ For journeys such as sending purchase order confirmations, both new customers an
 
 By default, customers end the journey when they complete all the steps. You can set additional ways for customers to exit the journey by using triggers or segments.
 
-- **Exit when an event occurs**: Customers who perform this trigger will immediately exit the journey no matter where they are in the journey. This provides an easy way to remove customers who perform the trigger from the journey, ensuring that customers don't receive irrelevant messages from your customer journey.
-- **Exit by segment**: Customers who are part of this segment will immediately exit the journey. This capability is often referred to as a suppression segment and helps you ensure that members of this segment are suppressed from the customer journey. Exit by segment removes members of that segment from wherever they are in the customer journey. This is notably different from the *exclude by segment* property in journey start, which will only exclude members of the exclusion segment from starting the journey.
+- **Exit when an event occurs**: Customers who perform this trigger will exit the journey after the trigger. This provides an easy way to remove customers who perform the trigger from the journey, ensuring that customers don't receive irrelevant messages from your customer journey. This requires the trigger be evaluated and the existing journey to be stopped for that customer and in some cases can result in customers not exiting immediately. One way to better ensure customers who perform the trigger exit is to add a wait tile after the trigger and before the customer continues the rest of the flow. That can allow the necessary processes to complete and the customer to exit. 
+- **Exit by segment**: Customers who are part of this segment will  exit the journey. This capability is often referred to as a suppression segment and helps you ensure that members of this segment are suppressed from the customer journey. Exit by segment removes members of that segment from wherever they are in the customer journey. This is notably different from the *exclude by segment* property in journey start, which will only exclude members of the exclusion segment from starting the journey.
 - **End on a date**: You can set a date to stop accepting new customers into the journeys. After this end date, customers that have already entered the journey will complete all the steps but no new customers will enter the journey. If you were previously using the legacy, outbound marketing module, this behavior differs in that in the outbound marketing module customers mid-journey would stop and not complete the remaining steps after the end date. 
 
 ## Journey goal
@@ -71,9 +71,9 @@ Channel optimization uses AI to find the best channel to reach each individual c
 
 ### If/then branch
 
-The if/then branch lets you branch the customer journey based on customer actions like opening an email or completing a purchase. The if/then branch waits for the customer to perform the trigger within the time limit specified. If the customer performs the trigger, they'll immediately proceed down the yes branch. If the customer doesn't perform the trigger within the time limit specified, they'll proceed down the no branch after the time limit has passed.
+The if/then branch lets you branch the customer journey based on customer actions like opening an email or completing a purchase. The if/then branch waits for the customer to perform the trigger within the time limit specified. If the customer performs the trigger, they'll proceed down the yes branch. If the customer doesn't perform the trigger within the time limit specified, they'll proceed down the no branch after the time limit has passed.
 
-For example, you can configure the if/then branch to wait for the *Email opened* event on a previously sent email. If the time limit is set to *1 day*, the if/then branch waits for the customer to open the email within that day. If the customer opens the email within that day, they'll immediately proceed down the yes branch. If the customer doesn't open the email within that day, they'll proceed down the no branch after one day.
+For example, you can configure the if/then branch to wait for the *Email opened* event on a previously sent email. If the time limit is set to *1 day*, the if/then branch waits for the customer to open the email within that day. If the customer opens the email within that day, they'll proceed down the yes branch. If the customer doesn't open the email within that day, they'll proceed down the no branch after one day.
 
 ### Attribute branch
 
@@ -91,7 +91,7 @@ The audience split tile allows you to divide your audience to give a unique set 
 
 ## Activate a custom trigger
 
-Triggering a custom event allows you to use activate a custom event at any point in the customer journey. Additional journeys or [Power Automate flows](/power-automate) connected to the custom event will be triggered immediately when a customer reaches the tile. This includes custom triggers used in exit criteria, goals, and if/then branches for journeys.
+Triggering a custom event allows you to use activate a custom event at any point in the customer journey. Additional journeys or [Power Automate flows](/power-automate) connected to the custom event will be triggered when a customer reaches the tile. This includes custom triggers used in exit criteria, goals, and if/then branches for journeys.
 
 When using a custom trigger, you can choose which data to send as part of the trigger. You can choose customer profile data (for instance, attributes of the target audience such as contacts, leads, etc.) and data from other triggers used in the journey (for instance, attributes of the trigger that starts the journey).
 
@@ -109,7 +109,7 @@ The wait step holds the customer in the journey for the specified wait period.
 You can configure the wait step using the following parameters:
 
 - **A set amount of time**: Customers wait for the specified amount of time (for example, one hour or one day). The time period starts as soon as customers enter the wait step.
-- **Until a specific date and time**: Customers wait until the specified date and time. If the date and time are already in the past, customers will immediately proceed to the next step.
+- **Until a specific date and time**: Customers wait until the specified date and time. If the date and time are already in the past, customers will proceed to the next step.
 - **Until a time specified by a trigger**: For trigger-based journeys, customers wait for the date and time specified by a trigger attribute. This configuration is useful for scenarios like appointment reminders, where you can choose to wait one day before the appointment to send a reminder. The date and time information must be included in the trigger that started the journey for the customer.
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
