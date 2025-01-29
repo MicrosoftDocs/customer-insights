@@ -48,12 +48,12 @@ The following features are relevant as you transition from outbound marketing to
 
 ### Event registration and publishing
 
-The registration experience in Real-time journeys is different and is powered by default by a [registration form](https://review.learn.microsoft.com/en-us/dynamics365/customer-insights/journeys/event-registration-experience#event-registration-form), a type of [Customer Insights - Journeys form](https://review.learn.microsoft.com/en-us/dynamics365/customer-insights/journeys/real-time-marketing-form-overview). Real-time journeys event registration forms offer enhanced personalization options, allowing you to reuse forms between events by bringing in dynamic content (such as event name, location, list of speakers, sessions, and more). There are various options how to [Create event registration experience:](event-registration-experience.md).
+The registration experience in Real-time journeys is different and is powered by default by a [registration form](event-registration-experience.md#event-registration-form), a type of [Customer Insights - Journeys form](real-time-marketing-form-overview.md). Real-time journeys event registration forms offer enhanced personalization options, allowing you to reuse forms between events by bringing in dynamic content (such as event name, location, list of speakers, sessions, and more). There are various options how to [Create event registration experience:](event-registration-experience.md).
 
-- Registration form hosted as a standalone page–a single page containing the registration form with all details about the event. The page is hosted on Customer Insights infrastructure and no extra license is needed. For more information, see [Publish your form](https://review.learn.microsoft.com/en-us/dynamics365/customer-insights/journeys/real-time-marketing-form-create#publish-your-form).
-- Registration form embedded into your website–you can embed the event registration form into your own website. For more information, see [Publish your form](https://review.learn.microsoft.com/en-us/dynamics365/customer-insights/journeys/real-time-marketing-form-create#publish-your-form).
+- Registration form hosted as a standalone page–a single page containing the registration form with all details about the event. The page is hosted on Customer Insights infrastructure and no extra license is needed. For more information, see [Publish your form](real-time-marketing-form-create.md#publish-your-form).
+- Registration form embedded into your website–you can embed the event registration form into your own website. For more information, see [Publish your form](real-time-marketing-form-create.md#publish-your-form).
 - Registration portal on Power Pages – you can use the event registration template to [build a website using Power Pages Studio.](event-portal-template.md)
-- Custom solution using events API. For more information, see [Using events API in real-time journeys](https://review.learn.microsoft.com/en-us/dynamics365/customer-insights/journeys/developer/using-rtm-events-api).
+- Custom solution using events API. For more information, see [Using events API in real-time journeys](/dynamics365/customer-insights/journeys/developer/using-rtm-events-api).
 
 **Relevant upcoming features for event registration and publishing:**
 
