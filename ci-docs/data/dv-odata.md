@@ -72,7 +72,7 @@ Sample queries to [personalize your website](real-time-web-personalization.md#pe
 |Get recent (last 10) page views of a customer by CookieId | `{serviceRoot}/msdynci_pageviews(cookieid='{cookieId}',top=10)`  |  This query can be changed to return up to 200 recent page views  |
 |Get recent (last 10) page clicks of a customer by CookieId | `{serviceRoot}/msdynci_pageclicks(cookieid='{cookieId}',top=10)`  |  This query can be changed to return up to 200 recent page clicks  |
 |Get all activities of a customer| `{serviceRoot}/msdynci_p13nprofile?$filter=msdynci_customerid eq '{CID}'`  |      |
-|Get all activities of a customer within a time period| `{serviceRoot}/msdynci_p13nprofile?$filter=msdynci_customerid eq '{CID}' and msdynci_activitytime gt 2017-01-01T00:00:00Z and msdynci_activitytime lt 2017-01-01T00:00:00Z`  |      |
+|Get all activities of a customer within a time period| `{serviceRoot}/msdynci_p13nprofile?$filter=msdynci_customerid eq '{CID}' and msdynci_activitytime gt 2024-01-01T00:00:00Z and msdynci_activitytime lt 2024-06-01T00:00:00Z`  |      |
 |Get all activities of an activityType of a customer | `{serviceRoot}/msdynci_p13nprofile?$filter=msdynci_customerid eq '{CID}' and msdynci_activitytype eq '{ActivityType}'`  |      |
 |Get all activities of activityDisplayName of a customer | `{serviceRoot}/msdynci_p13nprofile?$filter=msdynci_customerid eq '{CID}' and msdynci_activitytypedisplay eq '{ActivityDisplayName}'`  |      |
 |Get all activities of a customer and sort them| `{serviceRoot}/msdynci_p13nprofile?$filter=msdynci_customerid eq '{CID}'&$orderby=msdynci_activitytime asc`  |      |
@@ -84,7 +84,7 @@ Sample queries for the *UnifiedActivity* table if Web Personalization isn't in u
 |Query type |Example  | Note  |
 |---------|---------|---------|
 |Get all activities of a customer| `{serviceRoot}/msdynci_unifiedactivities?$filter=msdynci_customerid eq '{CID}'`  |      |
-|Get all activities of a customer within a time period| `{serviceRoot}/msdynci_unifiedactivities?$filter=msdynci_customerid eq '{CID}' and msdynci_activitytime gt 2017-01-01T00:00:00Z and msdynci_activitytime lt 2017-01-01T00:00:00Z`  |      |
+|Get all activities of a customer within a time period| `{serviceRoot}/msdynci_unifiedactivities?$filter=msdynci_customerid eq '{CID}' and msdynci_activitytime gt 2024-01-01T00:00:00Z and msdynci_activitytime lt 2024-06-01T00:00:00Z`  |      |
 |Get all activities of an activityType of a customer | `{serviceRoot}/msdynci_unifiedactivities?$filter=msdynci_customerid eq '{CID}' and msdynci_activitytype eq '{ActivityType}'`  |      |
 |Get all activities of activityDisplayName of a customer | `{serviceRoot}/msdynci_unifiedactivities?$filter=msdynci_customerid eq '{CID}' and msdynci_activitytypedisplay eq '{ActivityDisplayName}'`  |      |
 |Get all activities of a customer and sort them| `{serviceRoot}/msdynci_unifiedactivities?$filter=msdynci_customerid eq '{CID}'&$orderby=msdynci_activitytime asc`  |      |
