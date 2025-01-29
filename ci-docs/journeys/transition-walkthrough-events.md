@@ -1,7 +1,7 @@
 ---
 title: Transition event management
 description: Learn how to transition event management capabilities from outbound marketing to real-time journeys in Dynamics 365 Customer Insights - Journeys.
-ms.date: 01/28/2024
+ms.date: 01/29/2024
 ms.topic: article
 author: colinbirkett
 ms.author: colinbirkett
@@ -29,9 +29,19 @@ The experience of creating events in real-time journeys is mostly unchanged. How
 
 Event management comprises three areas:
 
-1. **Event set up**: Create events, set up sessions, tracks, speakers, room reservations, and more.
+1. **Event set up**: Creation of events, set up sessions, tracks, speakers, room reservations, and more.
 1. **Event registration**: Registration form, custom unmapped fields, publishing of the event.
 1. **Event communication**: Invitations, event registration confirmation, reminders, and post follow ups.
+
+<!-- TABLE FOR ABOVE INFORMATION, WAITING ON CONTENT FROM VINAY
+
+|          |         |
+| -------- | ------- |
+|          |         |
+|          |         |
+|          |         |
+
+-->
 
 ### Event set up
 
@@ -151,7 +161,7 @@ The most used features have a planned release date before the Outbound removal d
 - Cascaded fields where options provided in a field depend on a value in an earlier field aren't yet supported. For more information, see the blog [Implementing cascading dropdown fields in RTM forms](https://community.dynamics.com/blogs/post/?postid=ff86d88f-d892-ef11-ac21-6045bdd7e1ae)
 - Sending timed reminders before event. For more information, see [Boost event engagement with journeys](real-time-marketing-event-registration-journey.md#step-2-send-email-reminders-seven-days-and-one-day-before-the-event).
 
-<!---
+<!--- WILL REMOVE CONTENT BELOW ONCE UPDATED DOC IS FINISHED
 
 # Transition event management
 
