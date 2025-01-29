@@ -13,7 +13,7 @@ search.audienceType:
 
 # Select the audience source for journeys
 
-Audience configuration allows you to manage your audience data sources. Customer Insights - Journeys supports **Contact**, **Lead**, and **Customer profile** entities.
+Audience configuration allows you to manage your audience data sources. Customer Insights - Journeys supports **Contact**, **Lead**, and **Customer profile** entities. In the audience configuration, you can map the default attributes for these entities which are then used by other components of Customer Insights - Journeys to find audience members, personalize content, or send messages. In this configuration you can map the core contact point types (e.g. email, text message) to the fields on those entities which should be used. 
 
 To access the **Audience configuration settings**, go to **Settings** > **Customer engagement** > **Audience configuration**.
 
