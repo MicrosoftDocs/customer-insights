@@ -44,7 +44,7 @@ As we continue to work on Customer Insights - Journeys and refine the experience
 
 ## Emails and content blocks
 
-- Subject – 500 characters (including text to insert dynamic/conditional content)
+- Subject – 500 characters (including text to insert dynamic/conditional content) to 4000 characters.
 - Body – 1 MB (including all dynamic/conditional content).
 - Marketers lack the ability to align elements in the email editor.
 - Marketers lack the ability to put layouts inside layouts in the email editor.
