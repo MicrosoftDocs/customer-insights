@@ -40,7 +40,7 @@ The creation and setup of events, tracks and sessions, speakers, and registrants
 - Multi-session registration in Real-time journeys events allows you to manage the capacity of events and sessions more efficiently. For more information, see [Set up session-level registration](real-time-journeys-event-session.md).
 - The registration and publishing experience is improved. For more information, see [Create an event registration experience in Customer Insights - Journeys](event-registration-experience.md).
 
-The following features in Real-time journeys provide better functionality than those available in Outbound marketing.
+Relevant upcoming features for event set up provide better functionality than those available in Outbound marketing.
 
 - [Maximize event capacity with waitlist registration](/dynamics365/release-plan/2024wave2/customer-insights/dynamics365-customer-insights-journeys/maximize-event-capacity-waitlist-registrations).
 - Registration end date (available soon).
