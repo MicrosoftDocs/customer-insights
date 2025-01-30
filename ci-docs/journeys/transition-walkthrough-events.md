@@ -48,14 +48,14 @@ The following features in Real-time journeys provide better functionality than t
 
 ### Event registration and publishing
 
-The registration experience in Real-time journeys is powered by an [event registration form](event-registration-experience.md#event-registration-form); a type of [Customer Insights - Journeys form](real-time-marketing-form-overview.md). Real-time journeys event registration forms offer enhanced personalization options, allowing you to re-use forms between events by bringing in dynamic content (such as event name, location, list of speakers, sessions, and more). There are various options how to [Create event registration experience](event-registration-experience.md):
+The registration experience in Real-time journeys is powered by an [event registration form](event-registration-experience.md#event-registration-form); a type of [Customer Insights - Journeys form](real-time-marketing-form-overview.md). Real-time journeys event registration forms offer enhanced personalization options that allow you to re-use forms for different events. The forms can bring in dynamic content including event name, location, list of speakers, sessions, and more. You can [Create an event registration experience](event-registration-experience.md) in the following ways.
 
-- Registration form hosted as a standalone page: A single page containing the registration form with all details about the event. The page is hosted on Customer Insights - Journeys infrastructure and no extra license is needed. For more information, see [Publish your form](real-time-marketing-form-create.md#publish-your-form).
-- Registration form embedded into your website: You can embed the event registration form into your website. For more information, see [Publish your form](real-time-marketing-form-create.md#publish-your-form).
-- Registration portal on Power Pages: You can use the event registration template to [build a website using Power Pages Studio](event-portal-template.md).
-- Custom solution using events API. For more information, see [Using events API in real-time journeys](/dynamics365/customer-insights/journeys/developer/using-rtm-events-api).
+- **Registration form hosted as a standalone page**: A single page containing the registration form with all details about the event. The page is hosted by the Customer Insights - Journeys infrastructure and no extra license is needed. For more information, see [Publish your form](real-time-marketing-form-create.md#publish-your-form).
+- **Registration form embedded into your website**: You can embed the event registration form into your website. For more information, see [Publish your form](real-time-marketing-form-create.md#publish-your-form).
+- **Registration portal on Power Pages**: You can use the event registration template to [build a website using Power Pages Studio](event-portal-template.md).
+- **Custom solution using events API**. For more information, see [Using events API in real-time journeys](/dynamics365/customer-insights/journeys/developer/using-rtm-events-api).
 
-**Relevant upcoming features for event registration and publishing:**
+The following features are being planned to enhance event registration and publishing.
 
 - [Custom unmapped fields](/dynamics365/release-plan/2024wave2/customer-insights/dynamics365-customer-insights-journeys/collect-extra-customer-information-without-creating-custom-attributes).
 - [Create event portals with event and registration details using Power Pages](/dynamics365/release-plan/2024wave2/customer-insights/dynamics365-customer-insights-journeys/enable-customers-find-sign-up-events-easily).
@@ -63,13 +63,11 @@ The registration experience in Real-time journeys is powered by an [event regist
 
 ### Event communication
 
-Event-related communication in Real-time journeys is more efficient due to the availability of out of box triggers such as Marketing event registration created, Marketing event check in created, and Marketing event registration canceled.
-
-Event-based communications in Real-time journeys allow for more timely communication with attendees. This is illustrated in the following diagram:
+Event-related communication in Real-time journeys provides out-of-box triggers such as **Marketing event registration created**, **Marketing event check in created**, and **Marketing event registration canceled**. You can communicate with attendees in a more timely way, as illustrated in the following diagram.
 
 :::image type="content" source="media/event-planning-rtjourneys.png" alt-text="Transition event planning diagram." lightbox="media/event-planning-rtjourneys.png":::
 
-While the process of inviting and registering attendees is consistent with what was available in Outbound marketing, communication about events requires new emails and journeys to be created. For more information, see [transition segments, emails, journeys, and assets](transition-walkthrough-segments.md).
+While the process of inviting and registering attendees is consistent with that in Outbound marketing, you must create new emails and journeys for communication about events. For more information, see [transition segments, emails, journeys, and assets](transition-walkthrough-segments.md).
 
 ## Transition guidance
 
