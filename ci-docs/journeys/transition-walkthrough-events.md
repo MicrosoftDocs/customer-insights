@@ -1,7 +1,7 @@
 ---
 title: Transition events from Outbound marketing to real-time journeys
 description: Learn how to transition event management capabilities from outbound marketing to real-time journeys in Dynamics 365 Customer Insights - Journeys.
-ms.date: 01/29/2024
+ms.date: 01/30/2024
 ms.topic: article
 author: colinbirkett
 ms.author: colinbirkett
@@ -43,8 +43,8 @@ The creation and setup of events, tracks and sessions, speakers, and registrants
 The following features in Real-time journeys provide better functionality than those available in Outbound marketing.
 
 - [Maximize event capacity with waitlist registration](/dynamics365/release-plan/2024wave2/customer-insights/dynamics365-customer-insights-journeys/maximize-event-capacity-waitlist-registrations).
-- Registration end date (available March 2025).
-- Event passes (available March 2025).
+- Registration end date (available soon).
+- Event passes (available soon).
 
 ### Event registration and publishing
 
