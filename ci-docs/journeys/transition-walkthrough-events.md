@@ -29,7 +29,7 @@ The experience of creating events in Real-time journeys remains mostly the same 
 
 Event management comprises three areas:
 
-1. **Event se up**: Setup includes the creation of events, setup sessions, tracks, speakers, room reservations, and more.
+1. **Event set up**: Setup includes the creation of events, setup sessions, tracks, speakers, room reservations, and more.
 1. **Event registration**: Registration includes the registration form, custom unmapped fields, and publishing the event.
 1. **Event communication**: Communications include invitations, event registration confirmation, reminders, and post-event follow-ups.
 
