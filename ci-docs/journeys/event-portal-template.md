@@ -107,6 +107,10 @@ It's possible to create multiple event registration websites and set which event
 
 The event registration template uses multiple custom components such as the Event Registration form, Event Speaker section, Event Session section, etc. To add one of these custom components, select the plus icon (**+**) on the canvas and review the list of custom components. You can build your own pages applying these custom components as the building blocks.
 
+The custom components visualize data about your event, which are stored as Event entity attributes. To review or change the attributes used by the custom component, select the custom component on canvas in Power Pages Studio, select Edit custom component and then select Open Power Pages Management. This opens the source code of the custom component, where you can review which attributes are fetched and how these attributes are visualized by the component.
+
+:::image type="content" source="media/event-pp-template-customize-component.png" alt-text="Edit custom component." lightbox="media/event-pp-template-customize-component.png":::
+
 ### Power Pages website configuration in Customer Insights - Journeys
 
 This configuration links your Power Pages website with Customer Insights - Journeys and simplifies the event publishing for your event planners. Navigate to the **Power Pages Websites** section of Event Management in **Settings**. Select **+ New** to create a new configuration or select an existing configuration to edit it.

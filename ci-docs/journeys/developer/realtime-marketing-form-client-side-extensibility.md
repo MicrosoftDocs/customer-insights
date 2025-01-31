@@ -91,7 +91,8 @@ You can customize the form behavior by including a configuration script before t
  var d365mkt = {
    // disable showing of progress bar during form loading
    hideProgressBar: true
-   // disable the default feedback UI (submission success or submission error) allowing to implement custom UI
+   // disable the default feedback UI (submission success or submission error) 
+   // allowing implementation of custom UI
    preventSubmissionUi: true
  };
  </script>
