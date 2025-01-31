@@ -48,14 +48,14 @@ Relevant upcoming features for event set up provide better functionality than th
 
 ### Event registration and publishing
 
-The registration experience in Real-time journeys is powered by an [event registration form](event-registration-experience.md#event-registration-form); a type of [Customer Insights - Journeys form](real-time-marketing-form-overview.md). Real-time journeys event registration forms offer enhanced personalization options that allow you to re-use forms for different events. The forms can bring in dynamic content including event name, location, list of speakers, sessions, and more. You can [Create an event registration experience](event-registration-experience.md) in the following ways.
+The registration experience in Real-time journeys is powered by an [event registration form](event-registration-experience.md#event-registration-form); a type of [Customer Insights - Journeys form](real-time-marketing-form-overview.md). Real-time journeys event registration forms offer enhanced personalization options that allow you to re-use forms for different events. The forms can bring in dynamic content including event name, location, list of speakers, sessions, and more. You can [create an event registration experience](event-registration-experience.md) in the following ways:
 
 - **Registration form hosted as a standalone page**: A single page containing the registration form with all details about the event. The page is hosted by the Customer Insights - Journeys infrastructure and no extra license is needed. For more information, see [Publish your form](real-time-marketing-form-create.md#publish-your-form).
 - **Registration form embedded into your website**: You can embed the event registration form into your website. For more information, see [Publish your form](real-time-marketing-form-create.md#publish-your-form).
 - **Registration portal on Power Pages**: You can use the event registration template to [build a website using Power Pages Studio](event-portal-template.md).
 - **Custom solution using events API**. For more information, see [Using events API in real-time journeys](/dynamics365/customer-insights/journeys/developer/using-rtm-events-api).
 
-The following features are being planned to enhance event registration and publishing.
+The following features are being planned to enhance event registration and publishing:
 
 - [Custom unmapped fields](/dynamics365/release-plan/2024wave2/customer-insights/dynamics365-customer-insights-journeys/collect-extra-customer-information-without-creating-custom-attributes).
 - [Create event portals with event and registration details using Power Pages](/dynamics365/release-plan/2024wave2/customer-insights/dynamics365-customer-insights-journeys/enable-customers-find-sign-up-events-easily).
@@ -90,10 +90,10 @@ To transition your events and related communication, please do the following ste
 
 #### Transition of event registration experience
 
-There were multiple options on how to build event registration experience in Outbound marketing. Each of these options has a slightly different migration path.
+There were multiple options on how to build an event registration experience in Outbound marketing. Each of these options has a slightly different migration path:
 
 - **Event portal hosted on Power Portals** – Build a new event registration website using Power Pages template. For more information, see [Build an event registration website using Power Pages](event-portal-template.md).
-- **Event portal NOT hosted on Power Portals** – The recommended migration path is to build new event registration experience using the new code snippet listing once available.
+- **Event portal NOT hosted on Power Portals** – The recommended migration path is to build a new event registration experience using the new code snippet listing once available.
 - **OBM Marketing form for event registration** – Replace these forms with RTM Event registration forms. For more information, see [Open the event management work area](open-events.md).
 - **Custom solution using OBM Event Management API (not using Angular application)** – Use the new Events API. For more information, see [Using the events API in Real-time journeys](developer/using-rtm-events-api.md).
 
@@ -125,7 +125,7 @@ We're trying to avoid making any model changes to the basic event entities. We d
 
 *Will my event portal continue to work post-Outbound removal?*
 
-Once Outbound marketing is removed, it will no longer be possible to create Outbound marketing events or to register for Outbound marketing events. There were multiple options on how to build event registration experience and portals in Outbound marketing. Each of these will have a different migration path. <!--- For more information, see Real-time journeys' migration path for Outbound marketing event registration \<need to link it to the correct section once this one is published too https://microsofteur-my.sharepoint.com/:w:/g/personal/petrjantac_microsoft_com/EWk-2RlWMFdKgGpKyaVZnlQBv8-eCxD9iUK0yX628V4YHQ?e=X7OmIE -->
+Once Outbound marketing is removed, it will no longer be possible to create Outbound marketing events or to register for Outbound marketing events. There were multiple options on how to build an event registration experience and portals in Outbound marketing. Each of these will have a different migration path. <!--- For more information, see Real-time journeys' migration path for Outbound marketing event registration \<need to link it to the correct section once this one is published too https://microsofteur-my.sharepoint.com/:w:/g/personal/petrjantac_microsoft_com/EWk-2RlWMFdKgGpKyaVZnlQBv8-eCxD9iUK0yX628V4YHQ?e=X7OmIE -->
 
 *What will happen to the portals that are still live post-Outbound removal?*
 
@@ -142,7 +142,7 @@ The most used features have a planned release date before the Outbound removal d
 ## Blogs and workarounds
 
 - Workaround for custom unmapped fields: Enhanced data collection and journey personalization with unmapped form fields. For more information, see [FastTrack blog](https://community.dynamics.com/blogs/post/?postid=3a361b7e-80b0-ee11-92bd-002248527d3d).
-- Cascaded fields where options provided in a field depend on a value in an earlier field that isn't yet supported. For more information, see the blog [Implementing cascading dropdown fields in RTM forms](https://community.dynamics.com/blogs/post/?postid=ff86d88f-d892-ef11-ac21-6045bdd7e1ae).
+- Cascaded fields where options provided in a field depend on a value in an earlier field that isn't yet supported. For more information, see the blog "[Implementing cascading dropdown fields in RTM forms](https://community.dynamics.com/blogs/post/?postid=ff86d88f-d892-ef11-ac21-6045bdd7e1ae)."
 - Sending timed reminders before event. For more information, see [Boost event engagement with journeys](real-time-marketing-event-registration-journey.md#step-2-send-email-reminders-seven-days-and-one-day-before-the-event).
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
