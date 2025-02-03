@@ -84,19 +84,34 @@ document.addEventListener("d365mkt-afterformsubmit", function(event) {
 
 ### Form behavior customization
 
-You can customize the form behavior by including a configuration script before the loader script is injected into a page.
+Some form features can be customized by adding custom scripts, while others can be modified by injecting additional data into the form placeholder.
+
+#### Disable form loading progress bar
+
+You can customize the form behavior by including a configuration script before the loader script is injected into a page. For example, you can hide the form loading progress bar.
 
  ```HTML
  <script>
  var d365mkt = {
    // disable showing of progress bar during form loading
    hideProgressBar: true
-   // disable the default feedback UI (submission success or submission error) 
-   // allowing implementation of custom UI
-   preventSubmissionUi: true
  };
  </script>
 ``` 
+
+#### Disable default feedback UI
+
+If you want to introduce a custom UI that appears after form submission, you can disable the default success or failure messages by adding `data-preventsubmissionui="true"` to the form placeholder.
+
+**Example:**
+```HTML
+<div>
+  data-preventsubmissionui="true"
+  data-form-id='{msdynmkt_marketingformid}'
+  data-form-api-url='https://{server}.dynamics.com/api/v1.0/orgs/{organizationid}/landingpageforms/forms/{msdynmkt_marketingformid}'
+  data-cached-form-url='https://{server}.dynamics.com/{organizationid}/digitalassets/forms/{msdynmkt_marketingformid}'
+</div>
+```
 
 ### Rendering a marketing form using a JavaScript API
 
