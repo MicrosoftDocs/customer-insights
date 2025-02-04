@@ -25,6 +25,62 @@ Customer Insights - Journeys updates are [pushed to customers automatically](htt
 
 To submit and vote on **feature requests** and **product suggestions**, go to the [Dynamics 365 Application Ideas portal](https://experience.dynamics.com/ideas/categories/?forum=dfa5b83d-9e4c-e811-a956-000d3a1bef07&forumName=Dynamics%20365%20Marketing).
 
+### February 2025 update
+
+| App              | GA release      |
+|------------------|-----------------|
+| Customer Insights - Journeys        |    |
+
+#### General availability
+
+- **TITLE** 
+	- Text
+	- [Release plan]() 
+	- [Docs]()
+
+#### Public preview
+
+- **TITLE** 
+	- Text
+	- [Release plan]() 
+	- [Docs]()
+
+- **TITLE** 
+	- Text
+	- [Release plan]() 
+	- [Docs]()
+
+- **TITLE** 
+	- Text
+	- [Release plan]() 
+	- [Docs]()
+
+- **TITLE** 
+	- Text
+	- [Release plan]() 
+	- [Docs]()
+
+- **TITLE** 
+	- Text
+	- [Release plan]() 
+	- [Docs]()
+
+- **TITLE** 
+	- Text
+	- [Release plan]() 
+	- [Docs]()
+    
+#### Monthly enhancements
+
+- **TITLE** 
+	- Text
+	- [Release plan]() 
+	- [Docs]()
+
+#### New blogs and scenario docs
+
+Learn how to make the most of the new Dynamics 365 Customer Insights features in our latest blogs and scenario docs:
+
 ### January 2025 update
 
 There's no Dynamics 365 Customer Insights - Journeys release for January. We'll be back in February with new feature improvements, updates, and bug fixes.
