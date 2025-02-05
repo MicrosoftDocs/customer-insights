@@ -152,7 +152,7 @@
         items:
         - name: Use QR codes for event registration, links to content, or URLs
           href: email-QR-Code.md
-        - name: "Preview: Use enhanced HTML controls and import HTML snippets"
+        - name: Use enhanced HTML controls and import HTML snippets
           href: email-creation-with-html-edits.md
         - name: Use custom fonts in emails
           href: use-custom-fonts.md
