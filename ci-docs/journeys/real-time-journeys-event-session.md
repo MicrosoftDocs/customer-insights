@@ -23,7 +23,7 @@ To set up sessions, start by [setting up the event](set-up-event.md), including 
 
 ## Use session-level registration
 
-After setting the agenda, event organizers can let attendees assemble their own event schedule by choosing from all available sessions. Session-level registration can be enabled in the **Website and Form** tab. Under registration settings, enable **Allow attendees to register for sessions**. When session-level registration is enabled for an event, the registration form that has the session tiles in it automatically allows the attendees to select the sessions they're interested in. To ensure successful registration for an event with a custom agenda, at least one session must be published and available for selection (with seats available).
+After setting the agenda, event organizers can let attendees assemble their own event schedule by choosing from all available sessions. You can enable session-level registration in the **Website and Form** tab. Under registration settings, enable **Allow attendees to register for sessions**. When session-level registration is enabled for an event, the registration form that has the session tiles in it automatically allows the attendees to select the sessions they're interested in. To ensure successful registration for an event with a custom agenda, at least one session must be published and available for selection (with seats available).
 
 Additional settings include: 
 - **Allow single session registration only**: This changes the multi-select field on the form to a single-select field and allows attendees to register for one session only.
@@ -32,7 +32,7 @@ Additional settings include:
 > [!Important]
 > The **Allow attendees to register for sessions** setting used to be on the **Agenda** tab and was called "Allow registrants to create their own agenda."
 
-It’s important to note that session-level registration requires the registration form to include the sessions. This is done by using the **Sessions** element in the form editor so that attendees can see the sessions and have the option to sign up for the sessions they select. We have recently updated the styling of the Sessions list element to include better date & time formatting and full capacity notification. If you are using a form with sessions that has been customized, you will have to remove the sessions element and add it back in to see the latest changes.
+It’s important to note that session-level registration requires the registration form to include the sessions. This is done by using the **Sessions** element in the form editor so that attendees can see the sessions and have the option to sign up for sessions they select. We've recently updated the styling of the sessions list element to include better date and time formatting and full capacity notification. If you're using a form with sessions that's been customized, you'll have to remove the sessions element and add it back in to see the latest changes.
 
 :::image type="content" source="media/sessions-form-element.png" alt-text="Screenshot of the sessions form element.":::
 
@@ -43,7 +43,7 @@ To access the registration form for the event, select the event, then go to **We
 This opens a special version of the form editor that has extra elements for your event including the **About**, **Sessions**, and **Speakers** elements. 
 
 > [!NOTE]
-> The sessions element is using a personalized list functionality, but it does have a few limitations at the moment. At present, it is not possible to customize the date and time format of the sessions and it is by default displayed in the US format. We plan to address this in the future.
+> The sessions element uses a personalized list functionality, but it has a few limitations. At present, it's not possible to customize the date and time format of the sessions; the date and time is by default displayed in United States format. We plan to address this in the future.
 
 ## Style your default registration forms with sessions using Theme
 
