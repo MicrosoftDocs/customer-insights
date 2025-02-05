@@ -1,7 +1,7 @@
 ---
 title: Data unification best practices
 description: Learn about the concepts and best practices when unifying data in Customer Insights - Data.
-ms.date: 07/11/2024
+ms.date: 01/06/2025
 ms.reviewer: v-wendysmith
 ms.topic: conceptual
 author: Scott-Stabbert
@@ -21,7 +21,7 @@ When you set up rules to unify your data into a customer profile, consider these
 
 - **Use [normalization](#normalization) to standardize variations** in how data was entered such as Street vs. St vs. St. vs. st.
 
-- **Use [fuzzy matching](#fuzzy-matching) strategically to correct typos and errors** such as bob@contoso.com and bob@contoso.cm. Fuzzy matches take longer to run than exact matches. Always test to see if the extra time spent on fuzzy matching is worth the additional match rate.
+- **Use [fuzzy matching](#fuzzy-matching) strategically to correct typos and errors** such as bob@contoso.com and bob@contoso.cm. Fuzzy matches take longer to run than exact matches. Always test to see if the extra time spent on fuzzy matching is worth the extra match rate.
 
 - **Narrow the scope of matches with [exact match](#exact-match)**. Make sure every rule with fuzzy conditions has at least one exact match condition.
 
@@ -40,6 +40,16 @@ Progressively add several rules and see how long the changes take to run and if 
 View the rule statistics on the **Deduplication rules** and **Matching rules** pages to see if the number of **Unique records** changes. If a new rule matches some records, and the unique record count doesn't change, then a previous rule identifies those matches.
 
 :::image type="content" source="media/unify-unique-records.png" alt-text="Screenshot of Matching rules page highlighting Unique records.":::
+
+## Customer data
+
+In the **Customer data** step:
+
+- Exclude columns that aren't needed for matching rules or that you don't want included in the final customer profile.
+
+- Review column descriptions selected by intelligent mapping.
+
+- Not all columns need to be mapped. Mapping common columns such as email and address fields allows Customer Insights to make downstream processes easier, but columns with a unique ID or purpose to your business can be left unmapped.
 
 ## Deduplication
 
@@ -64,31 +74,11 @@ The combination of Rule 1 and Rule 2 creates a single match group because they s
 
 You decide the number of rules and conditions that uniquely identify your customers. The exact rules depend on the data you have available to match, the quality of your data, and how exhaustive you want the deduplication process to be.
 
-## Winner and alternate records
-
-Once rules are run and duplicate records are identified, the deduplication process selects a "Winner row." The nonwinner rows are called "Alternate rows." Alternate rows are used in the Matching rules unification step to match records from other tables to the winner row. Rows are matched against the data in the alternate rows in addition to the winner row.
-
-Once you add a rule to a table, you can configure which row to select as the winner row through **Merge preferences**. Merge preferences are set per table. No matter what merge policy is selected, if there's a tie for a winner row, then the first row in the data order is used as the tiebreaker.
-
 ## Normalization
 
-Use normalization to standardize data for better matching. Normalization performs well on large sets of data. 
+Use normalization to standardize data for better matching. Normalization performs well on large sets of data.
 
 The normalized data is only used for comparison purposes to match customer records more effectively. It doesn't change the data in the final unified customer profile output.
-
-| Normalization       | Examples               |
-| ------------------- | ---------------------- |
-| Numerals            | Converts many Unicode symbols that represent numbers to simple numbers.<br>Examples: ❽ and Ⅷ are both normalized to the number 8.<br>Note: The symbols must be encoded in Unicode Point Format.  |
-| Symbols             | Removes symbols and special characters.<br>Examples: !?"#$%&'( )+,.-_/:;<=>@^_\~{}`[ ]     |
-| Text to lower case  | Converts upper case characters to lower case. <br>Example: "THIS Is aN EXamplE" is converted to "this is an example"   |
-| Type – Phone        | Converts phones in various formats to digits, and accounts for variations in how country codes and extensions are presented. <br>Example: +01 425.555.1212 = 1 (425) 555-1212  |
-| Type - Name         | Converts over 500 common name variations and titles. <br>Examples: "debby" -> "deborah" "prof" and "professor" -> "Prof." |
-| Type - Address      | Converts common parts of addresses <br>Examples: "street" -> "st" and "northwest" -> "nw"  |
-| Type - Organization | Removes around 50 company name "noise words" such as "co," "corp," "corporation," and "ltd."  |
-| Unicode to ASCII    | Converts Unicode characters to their ASCII letter equivalent <br>Example: The characters 'à,' 'á,' 'â,' 'À,' 'Á,' 'Â,' 'Ã,' 'Ä,' 'Ⓐ,' and 'Ａ' are all converted to 'a.'  |
-| Whitespace          | Removes all white space         |
-| Alias mapping       | Allows you to upload a custom list of string pairs that can then be used to indicate strings that should always be considered an exact match. <br>Use alias mapping when you have specific data examples you think should match, and aren't matched using one of the other normalization patterns. <br>Example: Scott and Scooter, or MSFT and Microsoft. |
-| Custom bypass       | Allows you to upload a custom list of strings that can then be used to indicate strings that should never be matched.<br>Custom bypass is useful when you have data with common values that should be ignored, such as a dummy phone number or a dummy email. <br>Example: Never match the phone 555-1212, or test@contoso.com   |
 
 ## Exact match
 
@@ -121,15 +111,11 @@ Fuzzy matches are determined by computing the edit distance score between two st
 
 The edit distance is the number of edits required to turn one string into another, by adding, deleting, or changing a character.
 
-For example, the strings "Jacqueline" and "Jaclyne" have an edit distance of five when we remove the q, u, e, i, and e characters, and insert the y character.
-
-To calculate the edit distance score, use this formula: (Base string length – Edit Distance) / Base string length.
+For example, the strings "robert2020@hotmail.com" and "robrt2020@hotmail.cm" have an edit distance of two when we remove the e and o characters. To calculate the edit distance score, use this formula: (Base string length – Edit Distance) / Base string length.
 
 |Base string |Comparison string |Score |
 |----|-----|------|
-|Jacqueline |Jaclyne |(10-4)/10=.6 |
-|fred@contoso.com |fred@contso.cm |(14-2) / 14 = 0.857 |
-|franklin |frank |(8-3) / 8 = 0.625 |
+|robert2020@hotmail.com |robrt2020@hotmail.cm |(20 - 2)/20 = 0.9 |
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

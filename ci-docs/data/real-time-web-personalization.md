@@ -1,7 +1,7 @@
 ---
 title: Set up real-time web personalization (preview)
 description: Learn how to track web interactions and personalize experiences in real time with Customer Insights - Data.
-ms.date: 06/14/2024
+ms.date: 12/20/2024
 ms.topic: how-to
 author: srivas15
 ms.author: shsri
@@ -17,7 +17,7 @@ Let Customer Insights - Data automatically create unknown profiles for unauthent
 
 Watch this brief video to learn more about real-time web personalization.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RW1hyhp]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=0374bff9-f481-4324-8237-ebbaaffaed27]
 
 ## Prerequisites
 
@@ -92,6 +92,8 @@ You can personalize your customers' web experience in either of the following wa
   ```
 
   Then, use the cookie as an identifier to query any of the Customer Insights - Data APIs.
+
+The [web tracking and personalization tables](tables.md#real-time-web-personalization-tables-preview) are available in Dataverse.
 
 ## Related information
 

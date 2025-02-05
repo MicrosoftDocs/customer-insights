@@ -1,7 +1,7 @@
 ---
 title: Extend and customize consent
 description: Learn how to extend and customize consent capabilities in Dynamics 365 Customer Insights - Journeys.
-ms.date: 04/18/2024
+ms.date: 12/10/2024
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
@@ -100,6 +100,7 @@ Each entity in the `consents` collection should have the following properties:
     2. If the email went live, make sure to also test a small journey. Create a static segment with your testing email address and create a segment-based journey targeting this segment. The email should be sent out to the given email address. Make sure the unsubscribe URL in the email and the `List-Unsubscribe` headers (if your consent system supports one-click unsubscribe) are set correctly.
 
 ### Sample consent provider solution
-[Sample consent provider solution](../../data/media/ConsentProviderSample.zip)
+
+[Sample consent provider solution](https://download.microsoft.com/download/7/0/3/703e096a-c89c-4dbd-8a08-f2b43cd4edd9/ConsentProviderSample.zip)
 
 [!INCLUDE [footer-include](.././includes/footer-banner.md)]

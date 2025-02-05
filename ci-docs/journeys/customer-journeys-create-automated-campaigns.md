@@ -9,6 +9,7 @@ search.audienceType:
   - admin
   - customizer
   - enduser
+ms.custom: outbound-marketing
 ---
 
 # Use customer journeys to create automated campaigns
@@ -16,7 +17,7 @@ search.audienceType:
 > [!IMPORTANT]
 > **This article only applies to [outbound marketing](user-guide.md), which will be removed from the product on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](transition-overview.md)
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4IO58]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=cfb4272b-cdad-4cdc-b2e3-edb61017020f]
 
 Dynamics 365 Customer Insights - Journeys can help you visualize and automate the journey that customers take on their way to making a purchase. A simple customer journey could include a short interaction, such as a single email campaign. A complex journey might include the full process from discovery, through nurturing, and on to identifying qualified leads. Customer journeys can also generate and assign tasks (such as a scheduled follow-up phone call) and trigger business workflows.
 

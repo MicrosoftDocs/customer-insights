@@ -9,6 +9,7 @@ search.audienceType:
   - admin
   - customizer
   - enduser
+ms.custom: outbound-marketing
 ---
 
 # Create a simple customer journey with email messaging
@@ -16,7 +17,7 @@ search.audienceType:
 > [!IMPORTANT]
 > **This article only applies to [outbound marketing](user-guide.md), which will be removed from the product on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](transition-overview.md)
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4IO58]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=cfb4272b-cdad-4cdc-b2e3-edb61017020f]
 
 As you engage potential customers, they start by discovering your product, evaluate whether it meets their needs, look for a good offer, and finally make a purchase. We call this process the *customer journey*. Use customer journeys to create a model that helps you guide the members of a selected marketing segment through this process by using automated messaging, activity generation, interactive decision points, and more.
 

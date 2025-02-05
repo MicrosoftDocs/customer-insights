@@ -56,11 +56,11 @@
       href: transition-walkthrough-forms.md
     - name: Event management
       href: transition-walkthrough-events.md
-    - name: Lead management, scoring, and LinkedIn Lead Gen
+    - name: Lead management and scoring
       href: transition-walkthrough-leads.md
     - name: Insights and reports
       href: transition-walkthrough-insights.md
-    - name: Social posts
+    - name: Social posting and LinkedIn Lead Gen
       href: transition-walkthrough-social-posts.md
     - name: Customer Voice responses
       href: transition-walkthrough-customer-voice.md
@@ -282,30 +282,38 @@
         href: real-time-marketing-tile-reference.md
     - name: Advanced journey capabilities
       items:
-      - name: Personalize journey variations using multiple journey branches
-        href: real-time-marketing-multiple-branches.md
-      - name: Personalize triggers using conditions
-        href: real-time-marketing-personalize-triggers.md
-      - name: Set quiet times to prevent messages from sending during unwanted hours
-        href: real-time-marketing-quiet-times.md
-      - name: Limit sent with frequency capping
-        href: real-time-marketing-frequency-cap.md
-      - name: "Preview: Split your audience into groups"
-        href: real-time-marketing-split-audience.md
-      - name: When to use attribute versus if/then branches
-        href: real-time-marketing-branches.md
-      - name: Customize the journey designer
-        href: real-time-marketing-journey-designer.md
-      - name: "Preview: Control how fast customers can enter a journey"
-        href: control-how-fast-enter-journey.md
+      - name: Control journey entry
+        items:
+        - name: Personalize triggers using conditions
+          href: real-time-marketing-personalize-triggers.md
+        - name: "Preview: Control how fast customers can enter a journey"
+          href: control-how-fast-enter-journey.md      
+      - name: Split journey audiences
+        items:
+        - name: Personalize journey variations using multiple journey branches
+          href: real-time-marketing-multiple-branches.md
+        - name: When to use attribute versus if/then branches
+          href: real-time-marketing-branches.md
+        - name: "Preview: Split your audience into groups"
+          href: real-time-marketing-split-audience.md
+      - name: Control messages sent from journeys
+        items:
+        - name: Set quiet times to prevent messages from sending during unwanted hours
+          href: real-time-marketing-quiet-times.md
+        - name: Limit messages sent with frequency capping
+          href: real-time-marketing-frequency-cap.md
+      - name: Create approval workflows and customize the journey designer
+        items:
+        - name: 'Tutorial: Implement approval workflows in real-time journeys'
+          href: approval-workflows.md
+        - name: Customize the journey designer
+          href: real-time-marketing-journey-designer.md
     - name: Known issues for journeys
       href: journey-known-issues.md
   - name: Event planning and management
     items:
     - name: Event management overview
       href: event-management.md
-    - name: Enable event management in real-time journeys
-      href: enable-events.md
     - name: Create an event
       items:
       - name: Open the event management work area
@@ -326,6 +334,8 @@
       items:
       - name: Invite, register, and house event attendees
         href: invite-register-house-event-attendees.md
+      - name: Create event registration experience
+        href: event-registration-experience.md
     - name: Manage events
       items:
       - name: Event management dashboard
@@ -350,6 +360,8 @@
       href: real-time-marketing-deploy-pages.md
     - name: Manage forms
       href: real-time-marketing-manage-forms.md
+    - name: Set the default configuration for forms
+      href: real-time-marketing-form-global-settings.md
     - name: Troubleshoot forms
       href: real-time-marketing-troubleshooting-forms.md
     - name: "Preview: Prefill values for forms and event registration"
@@ -358,12 +370,12 @@
     items:
     - name: Lead generation and management overview
       href: lead-generation-overview.md
+    - name: Create a scoring model
+      href: real-time-marketing-create-lead-scoring-model.md    
     - name: Qualify the best leads
       href: real-time-marketing-qualify-leads.md
     - name: Create sales activities from lead signals
       href: real-time-marketing-optimize-lead-management.md
-    - name: Create a scoring model
-      href: real-time-marketing-create-lead-scoring-model.md
     - name: Visualize results from your scoring model
       href: real-time-marketing-visualize-scoring-model.md
     - name: Security roles for lead scoring and qualification
@@ -378,6 +390,8 @@
       href: real-time-marketing-cross-journey-analytics.md
     - name: How to use aggregate channel analytics
       href: real-time-marketing-channel-analytics.md
+    - name: "Preview: Make journey decisions based on web interactions"
+      href: interaction-journey-decision.md
     - name: How to use email insights
       href: email-insights.md
     - name: Customer Insights - Journeys integration with Microsoft Fabric
@@ -480,6 +494,8 @@
       href: real-time-marketing-form-capture.md
     - name: Integrate a custom captcha service with marketing forms
       href: real-time-marketing-form-custom-captcha.md
+    - name: Customize form submission validation
+      href: real-time-marketing-form-customize-submission-validation.md
     - name: Customize the Customer Insights - Journeys forms interface
       href: developer/extend-ui.md
   - name: Extend and customize consent
@@ -496,6 +512,8 @@
     href: admin-guide.md
   - name: Best practices for administration
     href: admin-best-practices.md
+  - name: How the real-time journeys app uses cookies
+    href: real-time-journeys-cookies.md
   - name: User administration and permissions
     items:
     - name: Use business units

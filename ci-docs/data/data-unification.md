@@ -1,7 +1,7 @@
 ---
 title: "Data unification overview"
-description: "Learn how to unify your data to create a single master dataset of customer profiles."
-ms.date: 11/21/2023
+description: "Learn how to unify your customer data sources to create a single master dataset of customer profiles in Customer Insights - Data."
+ms.date: 01/06/2025
 ms.reviewer: v-wendysmith
 ms.topic: overview
 author: Scott-Stabbert
@@ -11,23 +11,21 @@ ms.custom: bap-template
 
 # Data unification overview
 
-After [setting up the data sources](data-sources.md), you can unify the data. Data unification lets you unify once-disparate data sources into a single master dataset that provides a unified view of your customers.
+After [setting up the data sources](data-sources.md), you then unify the data. Unification combines your various customer data sources and creates a single customer profile record per customer. Unification eliminates duplicate data and combines all the important fields from your various data sources into a single record, eliminating data silos.
 
 Data can be unified on a single table or multiple tables. Tables were previously called entities.
 
 ## Data unification process
 
-The unification process maps customer data from your data sources, removes duplicates, matches the data across tables, and creates a unified profile. Unification is performed in the following order:
+The unification process consists of four steps:
 
-1. [Customer data](data-unification-map-tables.md): In the Customer data step, select tables and columns to include in the unification process. Map fields to a common type that describes the purpose of the column.
+1. **[Customer data](data-unification-map-tables.md)**: Select your source data that contains customer profile information like name, phone, and address. Don't include customer activity data such as purchases that have a one-to-many relationship to the customer. Map columns to descriptive types.
 
-1. [Deduplication rules](data-unification-duplicates.md): In the Deduplication rules step, optionally define rules to remove duplicate customer records from within each table.
+1. **[Deduplication](data-unification-duplicates.md)**: Define rules to find multiple rows for a single customer and select the best row to represent the customer. Deduplication rules remove duplicate rows to help ensure the best unification results.
 
-1. [Matching rules](data-unification-match-tables.md): In the matching rules step, define rules that match customer records between tables. When a customer is found in two or more tables, a single consolidated record is created with all columns and data from each table.
+1. **[Matching conditions](data-unification-match-tables.md)**: Define rules that match customer records between tables. Matching rules create a single consolidated record with all columns and data from each table.
 
-1. [Unified data view](data-unification-merge-tables.md): In the unified data view step, determine which customer columns should be included, excluded, or merged into a unified customer profile.  
-
-1. [Review](data-unification-review.md) and create the unified profile.
+1. **[Unified data view](data-unification-merge-tables.md)**: Determine which columns from the source tables should be included, excluded, or merged into a unified customer profile. For example, if you unify six tables and each table has an email column, you can merge them into a single email column.
 
 ## Customer ID
 
@@ -45,7 +43,7 @@ When unification runs, a unique **CustomerId** is assigned to each customer prof
 - [Enrich your data](enrichment-manage.md) to get a wider range of insights about your customers.
 - [Define activities](activities.md) from some of the ingested columns.
 - [Build measures](measures.md) to better understand customer behaviors and business performance.
-- [FastTrack blog: Best practices for data modelling](https://community.dynamics.com/blogs/post/?postid=988fae7a-3f37-ee11-bdf4-6045bdebe084)
+- [FastTrack blog: Best practices for data modeling](https://community.dynamics.com/blogs/post/?postid=988fae7a-3f37-ee11-bdf4-6045bdebe084)
 - [FastTrack blog: Advanced unification scenario for unrelated sources](https://community.dynamics.com/blogs/post/?postid=cbf1def2-2a94-4a4d-9535-0489e647157c)
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

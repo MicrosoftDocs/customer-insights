@@ -1,7 +1,7 @@
 ---
 title: "Connect to a Power Query data source"
 description: "Ingest data through a Power Query connector."
-ms.date: 07/04/2024
+ms.date: 12/11/2024
 ms.reviewer: v-wendysmith
 ms.topic: how-to
 author: joytaylor
@@ -17,9 +17,11 @@ Power Query has data size and performance limitations. It makes copies of data i
 
 To securely connect data in a private network, Power Query supports the use of [virtual network data gateways (preview)](/data-integration/vnet/data-gateway-power-platform-dataflows).
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWN6EK]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=ef3f2af9-7a02-44e6-9465-5ae4bebab382]
 
 ## Create a new data source
+
+[!INCLUDE [data-connection-names](./includes/data-connection-names.md)]
 
 1. Go to **Data** > **Data sources**.
 
