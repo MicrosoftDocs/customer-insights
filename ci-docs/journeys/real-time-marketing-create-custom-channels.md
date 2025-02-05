@@ -13,7 +13,7 @@ search.audienceType:
 # Create custom channels in Customer Insights - Journeys
 
 > [!IMPORTANT]
-> Links in custom channel messages are automatically shortened to reduce character count. Starting on October 10, 2024, URLs sent in custom channel messages will expire six months after the message is sent and will no longer work.
+> Links in custom channel messages are automatically shortened to reduce character count. Starting October 10, 2024, URLs sent in custom channel messages expire six months after the message is sent and no longer work.
 
 This article explains how to extend Customer Insights - Journeys using the communication channels you're familiar with to engage your customers in moments that matter. Use Customer Insights - Journeys personalization, consent, and analytics tools to create compelling content and deliver it over your preferred communication channels such as a local SMS provider or WhatsApp. Capitalize on proven channels, plug any of them into your new or existing journeys, and unfold their true potential with Dynamics 365 Customer Insights - Journeys to maximize customer engagement.
 
