@@ -2130,7 +2130,7 @@ With the Dynamics 365 Customer Insights - Journeys December 2021 update you can 
     - Fixed an error that caused form submission data rendering to sometimes fail when the form included multi-select option sets.
 - **Segmentation**
     - Improved German translations in dynamic segments.
-    - Resolved an error that occassionally caused a static segement grid custom control to show editing buttons when a user did not have editing privileges.
+    - Resolved an error that occasionally caused a static segement grid custom control to show editing buttons when a user did not have editing privileges.
 - **Shared UX**
     - Fixed an error that caused the start date in a LATAM time zone marketing task template to subtract one day when adding tasks to a customer journey.
 

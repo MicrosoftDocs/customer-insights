@@ -63,17 +63,26 @@ There are no general availability features as part of this release.
 	- Events are a pivotal element of your business strategy, aiding in customer acquisition and engagement. A centralized location is essential for your clients to discover and learn about events you are organizing. The new event portal allows for the swift creation of a comprehensive hub where customers can access event details, session specifics, and speaker schedules, and conveniently register using the event registration form. The portal can be seamlessly integrated into your existing CMS using a Javascript code snippet or the new event API
 	- [Release plan](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/create-event-portal-own-website) 
 	- [Docs]()
+
+
     
 #### Monthly enhancements
 
-- **TITLE** 
-	- Text
-	- [Release plan]() 
-	- [Docs]()
+<!---
+
+TBA
+
+--->
 
 #### New blogs and scenario docs
 
 Learn how to make the most of the new Dynamics 365 Customer Insights features in our latest blogs and scenario docs:
+
+<!---
+
+TBA
+
+--->
 
 ### January 2025 update
 
