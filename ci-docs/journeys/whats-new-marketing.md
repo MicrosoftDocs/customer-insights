@@ -36,11 +36,6 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 There are no general availability features as part of this release.
 
 #### Public preview
-
-- **Export your data to your own storage for custom reporting** 
-	- In today's data-driven world, marketers face the challenge of gaining a comprehensive view of their campaigns to make informed decisions. While Customer Insights - Journeys offers advanced custom reporting capabilities with Microsoft Fabric, in some cases it's easier to integrate with your existing reporting systems. Now, in real-time journeys, you can export your Customer Insights - Journeys data to your own storage solution without requiring Fabric, empowering you to conduct custom reporting and analysis that aligns with your existing systems. 
-	- [Release plan](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/export-data-own-storage-custom-reporting) 
-	- [Docs]()
 	
 - **Wait on segment membership to trigger the next step in a journey** 
 	- Gain even more control over your customers' experience by waiting for them to become a member of a segment before continuing to the next steps in a journey. This added capability lets you personalize each customer's experience by choosing the correct path and actions relevant to individual customers based on whether they're in a segment. This capability adds to existing if/then capabilities that let you wait for a customer to open an email, click a link, or wait for another trigger to be activated before moving on to the next step in the journey. For example, let's say you use your journey to send credit card activation emails and you want to wait for the customer to activate their card before sending a welcome email. If the customer doesn’t activate their credit card within a few days, you want to send another reminder email. If you have a segment that includes all customers who have activated credit cards, you can use that segment as the condition for the if/then branch to wait for each customer to activate their credit card and send them the right communications. 
