@@ -99,8 +99,7 @@ If you want the call-to-action of the card gallery to be a click through to the 
 3. Link Type - Data Column
 4. Data Column - Event URL
 
-:::image type="content" source="media/card-gallery-cta" alt-text="Customize card gallery CTA." lightbox="media/card-gallery-cta
-":::
+:::image type="content" source="media/card-gallery-cta.png" alt-text="Customize card gallery call-to-action." lightbox="media/card-gallery-cta.png":::
 
 To change the label of the call-to-action button, navigate to Power Pages Management and under Content Snippets, search for "Register" content snippet for your portal. In the value field, you can provide copy that you want to appear as the call-to-action on the card gallery component.
 
