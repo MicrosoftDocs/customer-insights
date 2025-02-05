@@ -103,7 +103,7 @@ You can customize the form behavior by including a configuration script before t
 
 If you want to introduce a custom UI that appears after form submission, you can disable the default success or failure messages by adding `data-preventsubmissionui="true"` to the form placeholder.
 
-**Example:**
+**Example:** 
 ```HTML
 <div>
   data-preventsubmissionui="true"
