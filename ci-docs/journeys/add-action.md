@@ -73,14 +73,9 @@ You can configure the wait tile using the following parameters:
 - **A set amount of time**: Customers wait for the specified amount of time (for example, one hour or one day). The time period starts as soon as customers enter the wait tile.
 - **Until a specific date and time**: Customers wait until the specified date and time. If the date and time are already in the past, customers will immediately proceed to the next step.
 
-<!--
-
-
 ##### Wait for a trigger
 
 There are three condition types for the wait for trigger tile. For the first condition type, you can specify to wait until a previous message in your journey gets an interaction. For the second condition type, you can specify a trigger attribute at a specific date and time for your customers. For the third condition type, you can specify to wait until a person or customer becomes a member of a dynamic segment in your journey. For more information on this condition type, see [Wait for segment membership](#wait-for-segment-membership). The wait for trigger configuration is useful for scenarios like appointment reminders, where you can choose to wait one day before the appointment to send a reminder. Date and time information must be included in the trigger that started the journey for the customer.
-
--->
 
 ##### Series
 
@@ -106,8 +101,6 @@ The "wait for trigger" (if/then branch) tile lets you branch the customer journe
 
 For example, you can configure the wait tile to wait for the *Email opened* event on a previously sent email. If the time limit is set to 1 day, the wait branch waits for the customer to open the email within that day. If the customer opens the email within that day, they'll immediately proceed down the yes branch. If the customer doesn't open the email within that day, they'll proceed down the no branch after one day.
 
-<!-- HIDING UNTIL FEBRUARY RELEASE
-
 ##### Wait for segment membership
 
 The wait for segment membership feature allows for more complex set of actions to take place beyond a single trigger. For example, you may want to create a branch based on how much customer spent through multiple transactions in a specific period. In this scenario, rather than wait for a specific trigger, you can simply define a dynamic segment such as 'big purchaser' and wait for the customer to become a member of that segment.
@@ -116,8 +109,6 @@ The wait for segment membership feature allows for more complex set of actions t
 > This feature is a preview and won't be available until January 9th, 2024. A preview feature is a feature that is not complete, but is made available before it’s officially in a release so customers can get early access and provide feedback. Preview features aren’t meant for production use and may have limited or restricted functionality.
 > 
 > Microsoft doesn't provide support for this preview feature. Microsoft Dynamics 365 Technical Support won’t be able to help you with issues or questions. Preview features aren’t meant for production use, especially to process personal data or other data that are subject to legal or regulatory compliance requirements.
-
- -->
 
 ##### Attribute branch
 
