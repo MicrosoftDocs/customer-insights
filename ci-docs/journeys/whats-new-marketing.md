@@ -64,8 +64,6 @@ There are no general availability features as part of this release.
 	- [Release plan](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/create-event-portal-own-website) 
 	- [Docs]()
 
-
-    
 #### Monthly enhancements
 
 <!---
