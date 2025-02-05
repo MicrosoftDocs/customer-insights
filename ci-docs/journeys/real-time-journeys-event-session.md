@@ -1,7 +1,7 @@
 ---
 title: Set up session-level registration
 description: Learn how to set up session-level registration in Dynamics 365 Customer Insights - Journeys.
-ms.date: 04/05/2024
+ms.date: 02/05/2025
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -34,7 +34,7 @@ To use session-based registration, start by [setting up the event](set-up-event.
 
 It’s important to note that session-level registration requires the registration form to include the sessions. This is done by using the **Sessions** element in the form editor so that attendees can see the sessions and have the option to sign up for the sessions they select.
 
-:::image type="content" source="media/sessions-form-element.png" alt-text="Screenshot of the sessions form element.":::
+:::image type="content" source="media/sessions-form-element.png" alt-text="Screenshot of the sessions form element." lightbox="media/sessions-form-element.png":::
 
 To access the registration form for the event, select the event, then go to **Website and form** and select the **Registration form**.
 
