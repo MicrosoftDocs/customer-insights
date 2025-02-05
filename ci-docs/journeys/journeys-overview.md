@@ -1,19 +1,23 @@
 ---
 title: Journeys overview
-description: Learn how to create automated campaigns with real-time journeys in Dynamics 365 Customer Insights - Journeys.
-ms.date: 09/06/2024
+description: Create and manage automated customer journeys with Dynamics 365 Customer Insights - Journeys.
+ms.date: 02/04/2025
 ms.topic: overview
 author: alfergus
 ms.author: alfergus
-search.audienceType: 
+search.audienceType:
   - admin
   - customizer
   - enduser
+ms.custom:
+  - ai-gen-docs-bap
+  - ai-gen-description
+  - ai-seo-date:02/04/2025
 ---
 
 # Journeys overview
 
-Dynamics 365 Customer Insights - Journeys helps you visualize and automate the journey that your customers take as they engage with your product or services. A simple customer journey could include a short interaction, such as a single email campaign where you send them product or service information and include a link to your website for more information. A complex journey might include the full process from discovery, through nurturing, and on to identifying qualified leads.
+Dynamics 365 Customer Insights - Journeys helps you visualize and automate the journey that your customers take as they engage with your product or services. A simple customer journey might include a short interaction, such as a single email campaign where you send them product or service information and include a link to your website for more information. A complex journey might include the full process from discovery, through nurturing, and on to identifying qualified leads.
 
 ## Trigger-based vs segment-based
 
@@ -31,7 +35,7 @@ All journeys have a life cycle: they're created and then published, once publish
 Legend:
 
 1. Automatic transition to the next state when required system actions are complete.
-1. Automatic transition to “Completing” when journey stops accepting new customers, journey has expired, or a new version is published.
+Automatic transition to “Completing” when the journey stops accepting new customers, the journey has expired, or a new version is published.
 1. Automatic transition to “Completed” when all customers in the journey have completed their journey.
 1. Automatic transition to “Live” when the scheduled start time is reached.
 
@@ -46,10 +50,10 @@ The following table shows additional details about journey states and the transi
 | **Live**       | The journey is Live (or running). A trigger-based journey accepts and reacts to triggers and lets customers who raised the trigger enter the journey. A segment-based journey processes the segment and lets the members enter the journey. (A journey may be Live and still not let new customers enter if the scheduled start time of the journey isn't yet reached.) | **Edit:** Goes into the Live edit state where the journey can be edited. <br> **Stop:** Stops the journey. <br> **Copy:** Makes a copy of the journey (the copy is a new journey in Draft state). |
 | **Completing** | A journey in this state doesn’t allow new customers to enter but lets the current customers already in the journey finish. This state is reached for many reasons, such as when it’s past the journey’s scheduled end time, the journey has finished all its recurrences (for a repeating journey), all members of the segments have entered the journey (for a one-time segment-based journey), etc. | No user actions are possible in this state. |
 | **Completed**  | The journey has finished its run. This state is reached when all eligible customers have completed their journey. | **Copy:** Makes a copy of the journey (the copy is a new journey in Draft state). |
-| **Stopping**   | The journey is being stopped. No new customers are accepted, and current customers are being removed from the journey. As this action may take some time, it’s possible that some customers may still complete their journeys before the journey is stopped. | When there’s a backlog of messages due to high volume, those messages are deleted immediately and aren’t sent. This greatly reduces but doesn't always prevent messages from being delivered (some messages may have already been sent to the intermediate providers who will still deliver those messages even though journey has been stopped). <br> No user actions are possible in this state. |
+| **Stopping**   | The journey is being stopped. No new customers are accepted, and current customers are being removed from the journey. As this action might take some time, it’s possible that some customers might still complete their journeys before the journey is stopped. | When there’s a backlog of messages due to high volume, those messages are deleted immediately and aren’t sent. This greatly reduces but doesn't always prevent messages from being delivered (some messages might have already been sent to the intermediate providers who will still deliver those messages even though the journey has been stopped). <br> No user actions are possible in this state. |
 | **Stopped**    | The journey has stopped. No new customers are accepted and there are no customers in the journey. | **Copy:** Makes a copy of the journey (the copy is a new journey in Draft state). |
-| **Live, editing** | A new version of journey is available that can be edited. The current version of the journey is still live and accepting customers. | **Publish:** Publishes the new version of the journey. The previous version of the journey moves to the Stopping state. All new customers are accepted in the new version. <br> **(Discard):** The new version is discarded and focus returns to the current version of the journey that’s still Live. |
+| **Live, editing** | A new journey version is available that can be edited. The current version of the journey is still live and accepting customers. | **Publish:** Publishes the new version of the journey. The previous version of the journey moves to the Stopping state. All new customers are accepted in the new version. <br> **(Discard):** The new version is discarded and focus returns to the current version of the journey that’s still Live. |
 
 ## Journey audit history
 
-To enable journey audit history, in the Power Apps [maker portal](https://make.powerapps.com) using the CRMToolbox enable the Audit History Extractor.  
+To enable journey audit history, go to the Power Apps [maker portal](https://make.powerapps.com) using CRMToolbox and enable the Audit History Extractor.
