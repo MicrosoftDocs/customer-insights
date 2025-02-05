@@ -117,7 +117,7 @@ This configuration links your Power Pages website with Customer Insights - Journ
 
 :::image type="content" source="media/event-pp-template-website-config.png" alt-text="Create a new website configuration." lightbox="media/event-pp-template-website-config.png":::
 
-You can set the following parameters for your website:
+You can set the following parameters for your website: 
 
 - The **Name** of your website configuration is visible to event planners so they can select which website the event is hosted on.
 - The **Homepage URL** is the URL of your Power Pages website. To get your website URL, navigate to Power Pages Studio, select **Set up** in the left pane and find the URL in the Site details.
