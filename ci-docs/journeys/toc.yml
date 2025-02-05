@@ -152,7 +152,7 @@
         items:
         - name: Use QR codes for event registration, links to content, or URLs
           href: email-QR-Code.md
-        - name: "Preview: Use enhanced HTML controls and import HTML snippets"
+        - name: Use enhanced HTML controls and import HTML snippets
           href: email-creation-with-html-edits.md
         - name: Use custom fonts in emails
           href: use-custom-fonts.md
@@ -314,8 +314,6 @@
     items:
     - name: Event management overview
       href: event-management.md
-    - name: Enable event management in real-time journeys
-      href: enable-events.md
     - name: Create an event
       items:
       - name: Open the event management work area
@@ -336,6 +334,8 @@
       items:
       - name: Invite, register, and house event attendees
         href: invite-register-house-event-attendees.md
+      - name: Create event registration experience
+        href: event-registration-experience.md
     - name: Manage events
       items:
       - name: Event management dashboard

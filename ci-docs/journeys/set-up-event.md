@@ -56,7 +56,6 @@ The **Agenda** tab includes details about the schedule of sessions happening dur
 
 - **Sessions calendar**: Shows a calendar of sessions defined for your event. You can create and edit sessions using the calendar. More information: [Work with marketing calendars](marketing-calendar.md).
 - **Sessions list**: Each [session](#sessions) is typically a single presentation, class, discussion, or webinar. This table repeats the information also shown in the calendar. You can also create or edit sessions here.
-- **Session tracks**: Each (external) [track](#sessions) is a collection of related, non-conflicting sessions that likely would be of interest to the same audience. Attendees might sign up for a specific track, which you can manage by using [passes](#event-passes). You can also set up internal tracks, which aren't exposed to attendees but can help you with your planning.
 - **Speaker engagements**: Each [speaker engagement](#speakers) maps a speaker to a session occurring at your event.
 - **Sponsors**: Companies who are [sponsoring the event](manage-event-sponsorships.md).
 
@@ -145,14 +144,10 @@ The core attractions of your event offering will typically be its sessions and s
 
 A session represents a subdivision of things that are happening at your event. Each session is usually a something like a seminar or keynote, but the concept is flexible so you can adapt it as needed. For example, if your event is a trade show rather than a conference, you can use sessions to represent booths.
 
-A large conference might have several sessions running concurrently, and might even feature several session *tracks*, which organize multiple related and non-conflicting sessions by audience so attendees can easily choose the best track for themselves without having to study the entire offering. Later, you'll be able to set up event and session passes to manage ticketing.
-
-There are two types of tracks: _internal_ and _external_. Use internal tracks during the planning phase to group sessions along organization lines, such as according to team resources or required equipment. Use external tracks to group sessions by content or audience. External tracks are published on customer-facing platforms such as event websites and mobile apps. As needed, you can set up a pass type for each relevant external track, but you wouldn't set up passes for internal tracks. Use the **Track Type** setting, at the top of the form to set the track to internal or external.
-
 Use the **Agenda** tab of an event record to view and set up sessions and sessions tracks for that event.
 
 - Each session is associated with a specific event and speaker, and includes scheduling details. You can view, create, and edit sessions using either the [calendar display](marketing-calendar.md) or the table.
-- For each track, you can assign an audience and a few other descriptive details and then add member sessions, one at a time. All sessions in a track must be from the same event.
+- For each track, you can assign an audience and a few other descriptive details and then add member sessions, one at a time.
 
 <a name="speakers"></a>
 
