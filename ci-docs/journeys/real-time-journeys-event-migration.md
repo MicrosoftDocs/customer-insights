@@ -50,7 +50,7 @@ The recommended migration path for event registration marketing forms is to repl
 
 The outbound marketing event management API is being deprecated along with the outbound marketing module.
 
-The new event management API in real-time journeys is backward compatible. It lets you list all events (outbound marketing and real-time journeys) and enables registration for both types of events. You can either adjust your user interface to use the real-time journeys event registration endpoints or embed an event registration form into your website to enable registration for real-time journeys events. Learn more: [Using the events API in real-time journeys](using-rtm-events-api.md).
+The new event management API in real-time journeys is backward compatible. It lets you list all events (outbound marketing and real-time journeys) and enables registration for both types of events. You can either adjust your user interface to use the real-time journeys event registration endpoints or embed an event registration form into your website to enable registration for real-time journeys events. Learn more: [Using the events API in real-time journeys](./developer/using-rtm-events-api.md).
 
 > [!NOTE]
 > The outbound marketing-related flow in the new real-time journeys event API is being deprecated along with the outbound marketing module.
@@ -59,7 +59,7 @@ The new event management API in real-time journeys is backward compatible. It le
 
 Out of the box, the outbound Angular portal doesn't work with real-time journeys. You can make it work with some modifications, but we don't recommend continuing to use the outbound Angular portal. After the outbound module is deprecated, the Angular app will no longer be supported and there will be no future security updates. If your Angular app is hosted on Power Portals, you'll also need to migrate the portal to a new data model, as the old data model will be deprecated.
 
-If you still want to use the Angular portal despite the risks and limitations above, you can rebuild the Angular app to use the new real-time journeys event management API for the “list of events” functionality. Learn more: [Using the events API in real-time journeys](using-rtm-events-api.md).
+If you still want to use the Angular portal despite the risks and limitations above, you can rebuild the Angular app to use the new real-time journeys event management API for the “list of events” functionality. Learn more: [Using the events API in real-time journeys](./developer/using-rtm-events-api.md).
 
 For the event registration functionality, there are two options:
 
