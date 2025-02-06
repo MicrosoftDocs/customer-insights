@@ -1,16 +1,20 @@
 ---
-title: Migrate event registration and marketing pages to real-time journeys
-description: Learn how to set up event registration and marketing pages in Dynamics 365 Customer Insights - Journeys.
+title: Migrate outbound marketing event registration to real-time journeys
+description: Learn how to migrate outbound marketing event registration to real-time journeys in Dynamics 365 Customer Insights - Journeys.
 ms.date: 02/06/2025
 ms.topic: article
 author: alfergus
 ms.author: alfergus
-search.audienceType: 
+search.audienceType:
   - admin
   - enduser
+ms.custom:
+  - ai-gen-docs-bap
+  - ai-gen-description
+  - ai-seo-date:02/06/2025
 ---
 
-# Migrate event registration and marketing pages to real-time journeys
+# Migrate outbound marketing event registration to real-time journeys
 
 After the outbound marketing module is removed from Customer Insights - Journeys, it will be no longer possible to create outbound marketing events or to register for outbound marketing events. You can start building events in real-time journeys, but this new type of event requires a different registration process.
 
@@ -38,7 +42,7 @@ If you're currently hosting the Angular app event portal on your own infrastruct
 
 The recommended migration path is to build a new event registration experience using the new code snippet listing all your events and the real-time journeys event registration form. The code snippet listing your events can be used on the main page where you showcase all your events. The real-time journeys event registration form is reusable for multiple events and can list all sessions, speakers, and information associated with the selected event. You can create one registration page where you embed the real-time journeys event registration form. The registration form reads the `readableEventId` parameter from the URL to dynamically render details about the selected event.
 
-An alternative is to build a new event registration website using Power Pages studio or use the provided Power Pages template, as described in the [previous section](real-time-journeys-event-migration.md#event-portal-hosted-on-power-portals).
+An alternative is to build a new event registration website using Power Pages studio or use the provided Power Pages template, as described in the [previous section](migrate-event-registration.md#event-portal-hosted-on-power-portals).
 
 ## Outbound marketing event registration marketing form
 

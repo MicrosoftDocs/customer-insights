@@ -334,8 +334,10 @@
       items:
       - name: Invite, register, and house event attendees
         href: invite-register-house-event-attendees.md
-      - name: Create event registration experience
+      - name: Create an event registration experience
         href: event-registration-experience.md
+      - name: Migrate outbound marketing event registration to real-time journeys
+        href: migrate-event-registration.md
     - name: Manage events
       items:
       - name: Event management dashboard
