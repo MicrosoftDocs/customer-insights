@@ -146,4 +146,3 @@ The most used features have a planned release date before the outbound removal d
 - Sending timed reminders before an event. For more information, see [Boost event engagement with journeys](real-time-marketing-event-registration-journey.md#step-2-send-email-reminders-seven-days-and-one-day-before-the-event).
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
- 
