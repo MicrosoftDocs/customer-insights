@@ -27,7 +27,7 @@ Microsoft [Power Pages](/power-pages/introduction) is a secure, enterprise-grade
 You can create an event registration website in Power Pages simply by using the **Event Registration** template. The template contains multiple pages to encompass the entire registration process:
 
 - **Home**: Lists all events that are enabled for the website.
-- **Events**: Details event including the list of speakers and sessions. This page is dynamic and the content is loaded based on the event selected in the home page.
+- **Events**: Details the event, including the list of speakers and sessions. This page is dynamic and the content is loaded based on the event selected in the home page.
 - **Register to an event**: Provides the event registration form. The registration form is dynamic. Each event can have a different registration form.
 
 > [!IMPORTANT]
@@ -43,24 +43,24 @@ Power Pages combined with the event registration template unlocks powerful scena
 
 ## Step-by-step guide to build an event registration website
 
-This guide shows all steps to create an event registration website using Power Pages studio and the event registration template for Customer Insights - Journeys. The guide has two parts:
+This guide shows all steps to create an event registration website using Power Pages studio and the event registration template for Customer Insights - Journeys. The guide has three parts:
 
 1. Create a website in Power Pages.
 1. Configure the website in Customer Insights - Journeys.
-2. Publish events to your Power Pages Event Portal.
+1. Publish events to your Power Pages event portal.
 
 If you encounter any issues while creating or editing your website, refer to the [Power Pages documentation](/power-pages/introduction).
 
 ### Create a website in Power Pages
 
-1. Create a new website: To open Power Pages studio, go to [Power Pages Get started](https://make.powerpages.microsoft.com/) in your browser. Select the correct environment in the top right corner. Then, select **Start with a template**.
+1. Create a new website: To open Power Pages studio, go to [Power Pages Get started](https://make.powerpages.microsoft.com/) in your browser. Select the correct environment in the top right corner, then select **Start with a template**.
     :::image type="content" source="media/event-pp-template-create.png" alt-text="Create a new website." lightbox="media/event-pp-template-create.png":::
 1. Find an Event Portal template in **Dynamics 365** and select **Choose this template**.
     :::image type="content" source="media/event-pp-template-select.png" alt-text="Select a template." lightbox="media/event-pp-template-select.png":::
 1. Name your site and set the language. You can change the web address later to [use your own domain name](#set-a-custom-domain-name-for-the-event-registration-website). Select **Done** in the bottom right corner. It takes a few minutes to get your site ready. You can check the status of your newly created website in the list of Active sites.
 1. Once your site is ready, select **Edit** to customize your website. Your new website is created as Private–not accessible for external audience.
-1. The Home page contains the list of events. You can [customize what information about event is displayed](#customize-displayed-information-about-the-event-in-the-card-gallery-control) in the list of events by selecting the **Card gallery** control on the canvas. You can also easily change the hero image, logo in the page header, page footer, etc.
-1. Preview your website: Select **Preview** in the top right corner. You may need to enable pop-up windows to display the preview.
+1. The Home page contains the list of events. You can [customize what information about the event is displayed](#customize-displayed-information-about-the-event-in-the-card-gallery-control) in the list of events by selecting the **Card gallery** control on the canvas. You can also easily change the hero image, logo in the page header, page footer, etc.
+1. Preview your website: Select **Preview** in the top right corner. You might need to enable pop-up windows to display the preview.
 1. Publish your website: Follow the [Go-live checklist](/power-pages/go-live/checklist).
 
 ### Configure your website in Customer Insights - Journeys
@@ -71,51 +71,54 @@ If you encounter any issues while creating or editing your website, refer to the
 1. Enable [external form hosting](domain-authentication.md) and optionally prefill for your Power Pages domain. **External form hosting** and **Prefill** can be enabled in **Settings** > **Domains**.
 
 ### Publish events to the Power Pages Event Portal
-1. Create a new event or edit an existing one: Navigate to the **Website and form** tab. Select **Power Pages Website** as the destination of *Where do you want attendees to register for this event?* Your default **Registration website** is automatically set. You can also change the form that's used for this event. Each event can use a different form, although these events are hosted on the same website.
+
+1. Create a new event or edit an existing one: Navigate to the **Website and form** tab. Select **Power Pages Website** as the destination of *Where do you want attendees to register for this event?* Your default **Registration website** is automatically set. You can also change the form used for the event. Each event can use a different form, although these events are hosted on the same website.
     :::image type="content" source="media/event-pp-template-new-event.png" alt-text="Create a new event." lightbox="media/event-pp-template-new-event.png":::
-1. Save your event and select **Go live**.
-1. View your event listed in the preview or the live version of your Power Pages website.
+1. Save your event and select **Go Live**.
+1. View your event listed in the preview or live version of your Power Pages website.
 
 > [!NOTE]
 > It can take several minutes to see the new event or a change published on your portal. Please clear your browser cache and refresh to see the changes.
 
 ## Event registration website customization
 
-The next sections cover event registration website customization.
+The next sections cover customizing the event registration website.
+
 
 ### Customize displayed information about the event in the card gallery control
 
 The card gallery control renders the list of events. You can choose from various layouts.
 
-You can change what information is displayed about the event in the **Data** section of the card gallery design. The **Data source** defines which event records are listed. Always select **Event** as the Data source. You can limit which events are displayed on this website by selecting a custom view as the **View** for the card gallery. By default, the View provided will list all events in Customer Insights Journeys published to Power Pages Website. If you are using multiple Portals or you want to create a new view that should be used for this card gallery component, please refer to the steps in the next section.
+You can change what information is displayed about the event in the **Data** section of the card gallery design. The **Data source** defines which event records are listed. Always select **Event** as the Data source. You can limit which events are displayed on this website by selecting a custom view as the **View** for the card gallery. By default, the view provided lists all events in Customer Insights - Journeys published to the Power Pages website. If you're using multiple portals or you want to create a new view that should be used for the card gallery component, refer to the steps in the next section.
 
-You can customize which fields will be displayed on the card gallery component and map it to the respective field in the event entity. 
+You can customize the fields that are displayed on the card gallery component and map them to the respective fields in the event entity.
 
 :::image type="content" source="media/event-pp-template-card-gallery.png" alt-text="Customize card gallery." lightbox="media/event-pp-template-card-gallery.png":::
 
-If you want the call-to-action of the card gallery to be a click through to the detail page of the event, you will want to set the button settings to: 
-1. Label Type - Content Snippet
-2. Label - Register to Event
-3. Link Type - Data Column
-4. Data Column - Event URL
+To make the call-to-action of the card gallery a click through to the detail page of the event, set the button settings to:
+
+1. Label Type: Content Snippet
+2. Label: Register to Event
+3. Link Type: Data Column
+4. Data Column: Event URL
 
 :::image type="content" source="media/card-gallery-cta.png" alt-text="Customize card gallery call-to-action." lightbox="media/card-gallery-cta.png":::
 
-To change the label of the call-to-action button, navigate to Power Pages Management and under Content Snippets, search for "Register" content snippet for your portal. In the value field, you can provide copy that you want to appear as the call-to-action on the card gallery component.
+To change the label of the call-to-action button, navigate to **Power Pages Management**. Under **Content Snippets**, search for "Register" content snippet for your portal. In the value field, provide copy that you want to appear as the call-to-action on the card gallery component.
 
 ### Create multiple event registration websites
 
 It's possible to create multiple event registration websites and set which event is displayed on each website. Some events can be public while other events can be private only for authenticated users.
 
 1. Build at least two websites in Power Pages using the Event Registration template.
-1. Create multiple [Power Pages Website configurations in Customer Insights - Journeys seLinttings](#power-pages-website-configuration-in-customer-insights---journeys) and link each configuration to the correct Power Pages website. This allows the event planner to select the correct website while setting up the event in Event Management. A *savedQuery* with the filtering of events for that specific website is automatically created. This automatically generated view can't be customized but you can save it as a new view to customize it.
+1. Create multiple [Power Pages Website configurations in Customer Insights - Journeys settings](#power-pages-website-configuration-in-customer-insights---journeys) and link each configuration to the correct Power Pages website. This allows the event planner to select the correct website while setting up the event in Event Management. A *savedQuery* with the filtering of events for that specific website is automatically created. This automatically generated view can't be customized but you can save it as a new view to customize it.
 1. Open the card gallery control in Power Pages studio and [Customize the corresponding view](#customize-displayed-information-about-the-event-in-the-card-gallery-control) as the **View**.
 
 ### Custom components for event registration
 
 The event registration template uses multiple custom components such as the Event Registration form, Event Speaker section, Event Session section, etc. To add one of these custom components, select the plus icon (**+**) on the canvas and review the list of custom components. You can build your own pages applying these custom components as the building blocks.
 
-The custom components visualize data about your event, which are stored as Event entity attributes. To review or change the attributes used by the custom component, select the custom component on canvas in Power Pages Studio, select Edit custom component and then select Open Power Pages Management. This opens the source code of the custom component, where you can review which attributes are fetched and how these attributes are visualized by the component.
+The custom components visualize data about your event, which is stored as Event entity attributes. To review or change the attributes used by the custom component, select the custom component on the canvas in Power Pages studio, select **Edit custom component**, and then select **Open Power Pages Management**. This opens the source code of the custom component where you can review which attributes are fetched and how the attributes are visualized by the component.
 
 :::image type="content" source="media/event-pp-template-customize-component.png" alt-text="Edit custom component." lightbox="media/event-pp-template-customize-component.png":::
 
@@ -126,12 +129,12 @@ A custom domain name can be set in Power Platform admin center. For more informa
 > [!IMPORTANT]
 > Once you assign a custom domain name to your Power Pages website, check the following:
 >
-> - Your custom domain name is enabled for [external form hosting](domain-authentication.md). If your custom domain name isn't enabled, the registration form can't be rendered on your website.
-> - The Power Pages website configuration in Customer Insights - Journeys points to the Home page URL. For more information, see [Power Pages Website configuration in Customer Insights - Journeys](#power-pages-website-configuration-in-customer-insights---journeys).
+> - Your custom domain name must be enabled for [external form hosting](domain-authentication.md). If your custom domain name isn't enabled, the registration form can't be rendered on your website.
+> - The Power Pages website configuration in Customer Insights - Journeys must point to the home page URL. For more information, see [Power Pages Website configuration in Customer Insights - Journeys](#power-pages-website-configuration-in-customer-insights---journeys).
 
 ### Power Pages website configuration in Customer Insights - Journeys
 
-This configuration links your Power Pages website with Customer Insights - Journeys and simplifies the event publishing for your event planners. Navigate to the **Power Pages Websites** section of Event Management in **Settings**. Select **+ New** to create a new configuration or select an existing configuration to edit it.
+This configuration links your Power Pages website with Customer Insights - Journeys and simplifies the event publishing process for your event planners. Navigate to the **Power Pages Websites** section of Event Management in **Settings**. Select **+ New** to create a new configuration or select an existing configuration to edit it.
 
 :::image type="content" source="media/event-pp-template-website-config.png" alt-text="Create a new website configuration." lightbox="media/event-pp-template-website-config.png":::
 
@@ -143,6 +146,6 @@ You can set the following parameters for your website:
 - **Default website** defines if this configuration is selected as default for your newly created events hosted on your Power Pages website.
 
 > [!IMPORTANT]
-> Updating the **Homepage URL** and/or **Registration page URL** of the existing configuration automatically updates the public URL of all the events using this website configuration.
+> Updating the **Homepage URL** or **Registration page URL** of the existing configuration automatically updates the public URL of all the events using this website configuration.
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
