@@ -61,7 +61,7 @@ There are no general availability features as part of this release.
 
 - **Accelerate journey creation using journey templates** 
 	- Increase your productivity by using journey templates to kickstart building your customer journeys. Save time using a template from common customer journey scenarios, make final updates with your chosen content and any slight adjustments to the flows, and publish.
-	- [Release plan](/dynamics365-customer-insights-journeys/marketers-accelerate-journey-creation-using-journey-templates) 
+	- [Release plan](/dynamics365/release-plan/2024wave2/customer-insights/dynamics365-customer-insights-journeys/marketers-accelerate-journey-creation-using-journey-templates) 
 	- [Docs]()  
 
 #### Monthly enhancements
@@ -74,7 +74,7 @@ There are no general availability features as part of this release.
 
 Learn how to make the most of the new Dynamics 365 Customer Insights features in our latest blogs and scenario docs:
 
-- [Updated transition guidance for Event management](https://learn.microsoft.com/en-us/dynamics365/customer-insights/journeys/transition-walkthrough-events)
+- [Updated transition guidance for Event management](https://learn.microsoft.com/dynamics365/customer-insights/journeys/transition-walkthrough-events)
 - [RTM Event Management - Multiple Locations and Languages Events](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fcommunity.dynamics.com%2Fblogs%2Fpost%2F%3Fpostid%3D7b86ce12-2ae3-ef11-a730-6045bdf005c5&data=05%7C02%7Cterezakirk%40microsoft.com%7C170d9045d5c544e57d1508dd454fe3f3%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C638742931619208032%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=47PfISJWkwCk02OOG%2Fch%2BnW5oSDkcKWII2AVfXzdpuY%3D&reserved=0)
 
 ### January 2025 update
