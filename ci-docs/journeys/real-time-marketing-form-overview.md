@@ -27,7 +27,7 @@ search.audienceType:
 There are multiple types of forms in Customer Insights - Journeys:
 
 1. [Marketing form](real-time-marketing-form-overview.md#marketing-form): Capture new leads or contacts.
-1. [Event registration form](set-up-event.md): Allow registration to events.
+1. [Event registration form](event-registration-experience.md): Allow registration to events.
 1. [Preference center](real-time-marketing-preference-centers.md): Manage consent preferences.
 
 The **marketing** and **event registration** form types are similar. All features of marketing forms apply to event registration forms, except for audience configuration. Event registration forms can only target a contact audience. Event registration forms have some extra features like dynamic components to render list of sessions, speakers, or details about event. Event registration forms can also create *event registration* records. Event registration forms also have a different publishing user interface.
@@ -42,6 +42,28 @@ The form editor allows you to easily and quickly create and publish forms. You c
 
 > [!IMPORTANT]
 > There's a limit of 2,000 requests/minute per org. The request limit includes visits, lookup, CAPTCHA, and form submission. The limit allows around 100 to 500 submissions/minute, depending on the form.
+
+## Form templates
+
+There are several default form templates provisioned with Customer Insights - Journeys, which are called out-of-the-box templates in this article. You can also create your custom form templates.
+
+### Out-of-the-box form templates
+
+You can use the out-of-the-box templates to quickly create a new form.
+
+> [!IMPORTANT]
+> All changes to the out-of-the-box templates can be reverted with an update to a newer version of Customer Insights - Journeys. If you want to customize out-of-the-box template, create a copy using the *Save as* feature.
+
+### Custom form templates
+
+The custom form template can simplify the creation of your marketing and event registration forms. The custom template can reflect styling adjustments to align with your style guide. You can also set the audience configuration and adjust the consent to meet your requirements.
+
+To create a new custom form, navigate to Templates section in the left site navigation. Select *New template* button in the top ribbon and choose *Form*. You can also access the list of all you form templates from this *Templates* page by selecting the *Form* tile.
+
+:::image type="content" source="media/real-time-marketing-custom-form.png" alt-text="Customize card gallery." lightbox="media/real-time-marketing-custom-form.png":::
+
+> [!TIP]
+> In case you want to use an existing form as a new custom template, you can copy its HTML code and paste it into the newly created custom template.
 
 ## Security notice
 
