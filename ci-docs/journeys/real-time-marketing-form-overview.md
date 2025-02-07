@@ -1,10 +1,10 @@
 ---
 title: Overview of Customer Insights - Journeys forms
 description: Overview of the forms capabilities in Dynamics 365 Customer Insights - Journeys. 
-ms.date: 12/12/2024
+ms.date: 02/09/2025
 ms.topic: article
 author: petrjantac
-ms.author: alfergus
+ms.author: colinbirkett
 search.audienceType: 
   - admin
   - customizer
@@ -45,7 +45,7 @@ The form editor allows you to easily and quickly create and publish forms. You c
 
 ## Form templates
 
-There are several default form templates provisioned with Customer Insights - Journeys, which are called out-of-the-box templates in this article. You can also create your custom form templates.
+There are several default form templates provisioned with Customer Insights - Journeys that are called out-of-the-box templates. You can also create your custom form templates.
 
 ### Out-of-the-box form templates
 
@@ -56,9 +56,9 @@ You can use the out-of-the-box templates to quickly create a new form.
 
 ### Custom form templates
 
-The custom form template can simplify the creation of your marketing and event registration forms. The custom template can reflect styling adjustments to align with your style guide. You can also set the audience configuration and adjust the consent to meet your requirements.
+The custom form template can simplify the creation of your marketing and event registration forms. The custom template can reflect styling adjustments to align with your style guide. You can set the audience configuration and adjust the consent to meet your requirements.
 
-To create a new custom form, navigate to Templates section in the left site navigation. Select *New template* button in the top ribbon and choose *Form*. You can also access the list of all you form templates from this *Templates* page by selecting the *Form* tile.
+To create a new custom form, navigate to **Templates** section in the left site navigation. Select **New template** button in the top ribbon and choose **Form**. You can also access the list of all your form templates from this **Templates** page by selecting the **Form** tile.
 
 :::image type="content" source="media/real-time-marketing-custom-form.png" alt-text="Customize card gallery." lightbox="media/real-time-marketing-custom-form.png":::
 
