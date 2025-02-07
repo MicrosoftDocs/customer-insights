@@ -47,7 +47,7 @@ There are no general availability features as part of this release.
 - **Allow individuals to reenter a one-time, dynamic segment journey** 
 	- Audience members who move between stages of the customer lifecycle may need to repeat a lifecycle-specific state of the journey. For example, if a customer repeats a buying journey for a different product, they may reenter the dynamic segment conditions as they reenter the purchase funnel. As such, they should be allowed to reenter a journey for that dynamic segment when they come back into it. 
 	- [Release plan](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/allow-individuals-re-enter-one-time-dynamic-segment-journey) 
-	- [Docs]()
+	- [Docs](real-time-marketing-segment-based-journey.md)
 
 - **Create event portals with event and registration details using Power Pages** 
 	- Events are a pivotal element of your business strategy, aiding in customer acquisition and engagement. A centralized location is essential for your clients to discover and learn about events that you're organizing. The new event portal allows for the swift creation of a comprehensive hub where customers can access event details, session specifics, and speaker schedules and conveniently register using the event registration form. The portal can be seamlessly deployed through Power Pages, where it can be tailored to align with your brand identity using Power Pages Studio. 
@@ -61,21 +61,16 @@ There are no general availability features as part of this release.
 
 #### Monthly enhancements
 
-<!---
-
-TBA
-
---->
+- **Create custom form templates** 
+	- Creating marketing and event registration forms is now easier, as you can leverage a custom template. The custom template can reflect styling adjustments to align with your style guide. You can also set the audience configuration and adjust the consent to meet your requirements.
+	- [Docs](real-time-marketing-form-overview.md#form-templates)  
 
 #### New blogs and scenario docs
 
 Learn how to make the most of the new Dynamics 365 Customer Insights features in our latest blogs and scenario docs:
 
-<!---
-
-TBA
-
---->
+- [Updated transition guidance for Event management](https://learn.microsoft.com/en-us/dynamics365/customer-insights/journeys/transition-walkthrough-events)
+- [RTM Event Management - Multiple Locations and Languages Events](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fcommunity.dynamics.com%2Fblogs%2Fpost%2F%3Fpostid%3D7b86ce12-2ae3-ef11-a730-6045bdf005c5&data=05%7C02%7Cterezakirk%40microsoft.com%7C170d9045d5c544e57d1508dd454fe3f3%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C638742931619208032%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=47PfISJWkwCk02OOG%2Fch%2BnW5oSDkcKWII2AVfXzdpuY%3D&reserved=0)
 
 ### January 2025 update
 
