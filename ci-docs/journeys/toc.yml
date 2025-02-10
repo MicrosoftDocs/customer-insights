@@ -56,6 +56,8 @@
       href: transition-walkthrough-forms.md
     - name: Event management
       href: transition-walkthrough-events.md
+    - name: Event registration
+      href: migrate-event-registration.md
     - name: Lead management and scoring
       href: transition-walkthrough-leads.md
     - name: Insights and reports
@@ -152,7 +154,7 @@
         items:
         - name: Use QR codes for event registration, links to content, or URLs
           href: email-QR-Code.md
-        - name: "Preview: Use enhanced HTML controls and import HTML snippets"
+        - name: Use enhanced HTML controls and import HTML snippets
           href: email-creation-with-html-edits.md
         - name: Use custom fonts in emails
           href: use-custom-fonts.md
@@ -390,7 +392,7 @@
       items:
       - name: Invite, register, and house event attendees
         href: invite-register-house-event-attendees.md
-      - name: Create event registration experience
+      - name: Create an event registration experience
         href: event-registration-experience.md
     - name: Manage events
       items:
