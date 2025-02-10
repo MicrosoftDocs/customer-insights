@@ -1,7 +1,7 @@
 ---
 title: Add an action in a journey
 description: An overview of possible actions you can do in a journey in Dynamics 365 Customer Insights - Journeys.
-ms.date: 02/06/2024
+ms.date: 02/06/2025
 ms.topic: article
 author: colinbirkett
 ms.author: colinbirkett

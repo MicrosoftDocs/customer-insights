@@ -376,6 +376,8 @@
         href: set-up-event.md
       - name: Set up session-level registration
         href: real-time-journeys-event-session.md
+      - name: "Preview: Build an event registration portal with Power Pages"
+        href: event-portal-template.md
       - name: Create an event from another event
         href: event-from-event.md
     - name: Host a Microsoft Teams webinar
