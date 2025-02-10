@@ -22,6 +22,10 @@ There are two types of journeys:
 1. [Trigger-based journeys](real-time-marketing-trigger-based-journey.md) that react to customer action (for example, filling out a form or registering for an event).
 1. [Segment-based journeys](real-time-marketing-segment-based-journey.md) that target customers that share certain attributes (for example, loyalty club members in the state of Washington).
 
+## Journey templates
+
+You can create templates to make it easier for anyone to start with a pre-existing journey that represents common customer journey patterns for your business. You can create a journey template by building a journey and choosing 'Save as template'.
+
 ## The journey life cycle
 
 All journeys have a life cycle: they're created and then published, once published they complete or can be stopped. A journey moves through these stages or states as shown in the diagram below:
