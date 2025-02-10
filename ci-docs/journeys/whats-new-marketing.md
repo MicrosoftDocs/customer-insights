@@ -62,7 +62,7 @@ There are no general availability features as part of this release.
 - **Accelerate journey creation using journey templates** 
 	- Increase your productivity by using journey templates to kickstart building your customer journeys. Save time using a template from common customer journey scenarios, make final updates with your chosen content and any slight adjustments to the flows, and publish.
 	- [Release plan](/dynamics365/release-plan/2024wave2/customer-insights/dynamics365-customer-insights-journeys/marketers-accelerate-journey-creation-using-journey-templates) 
-	- [Docs](journeys-overview.md)  
+	- [Docs](journeys-overview.md#journey-templates)  
 
 #### Monthly enhancements
 
