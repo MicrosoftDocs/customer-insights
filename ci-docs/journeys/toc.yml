@@ -56,6 +56,8 @@
       href: transition-walkthrough-forms.md
     - name: Event management
       href: transition-walkthrough-events.md
+    - name: Event registration
+      href: migrate-event-registration.md
     - name: Lead management and scoring
       href: transition-walkthrough-leads.md
     - name: Insights and reports
@@ -336,8 +338,6 @@
         href: invite-register-house-event-attendees.md
       - name: Create an event registration experience
         href: event-registration-experience.md
-      - name: Migrate outbound marketing event registration to real-time journeys
-        href: migrate-event-registration.md
     - name: Manage events
       items:
       - name: Event management dashboard
