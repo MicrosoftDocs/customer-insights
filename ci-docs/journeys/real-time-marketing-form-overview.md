@@ -45,7 +45,7 @@ The form editor allows you to easily and quickly create and publish forms. You c
 
 ## Form templates
 
-There are several default form templates provisioned with Customer Insights - Journeys that are called out-of-the-box templates. You can also create your custom form templates.
+There are several default, out-of-the-box form templates that are provisioned with Customer Insights - Journeys. You can also create your own custom form templates.
 
 ### Out-of-the-box form templates
 
@@ -56,14 +56,14 @@ You can use the out-of-the-box templates to quickly create a new form.
 
 ### Custom form templates
 
-The custom form template can simplify the creation of your marketing and event registration forms. The custom template can reflect styling adjustments to align with your style guide. You can set the audience configuration and adjust the consent to meet your requirements.
+Custom form templates simplify creating marketing and event registration forms. Custom templates can reflect styling adjustments to align with your style guide. You can set the audience configuration for the template and adjust the consent to meet your requirements.
 
-To create a new custom form, navigate to **Templates** section in the left site navigation. Select **New template** button in the top ribbon and choose **Form**. You can also access the list of all your form templates from this **Templates** page by selecting the **Form** tile.
+To create a new custom form, navigate to the **Templates** section in the left site navigation. Select the **New template** button in the top ribbon and choose **Form**. You can access the list of all your form templates from the **Templates** page by selecting the **Form** tile.
 
 :::image type="content" source="media/real-time-marketing-custom-form.png" alt-text="Customize card gallery." lightbox="media/real-time-marketing-custom-form.png":::
 
 > [!TIP]
-> In case you want to use an existing form as a new custom template, you can copy its HTML code and paste it into the newly created custom template.
+> If you want to use an existing form as a new custom template, you can copy its HTML code and paste it into the newly created custom template.
 
 ## Security notice
 
