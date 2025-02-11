@@ -2,7 +2,7 @@
 title: "Dataverse APIs for Customer Insights - Data"
 description: "Overview and examples of Dataverse Open Data Protocol (OData) APIs to query for data."
 ms.date: 01/28/2025
-ms.topic: conceptual
+ms.topic: reference
 author: srivas15
 ms.author: shsri
 ms.reviewer: mhart
