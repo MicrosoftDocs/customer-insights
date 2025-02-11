@@ -1,7 +1,7 @@
 ---
 title: Journeys overview
-description: Create and manage automated customer journeys with Dynamics 365 Customer Insights - Journeys.
-ms.date: 02/04/2025
+description: Learn how to create automated campaigns with real-time journeys in Dynamics 365 Customer Insights - Journeys.
+ms.date: 02/10/2025
 ms.topic: overview
 author: alfergus
 ms.author: alfergus
@@ -25,6 +25,10 @@ There are two types of journeys:
 
 1. [Trigger-based journeys](real-time-marketing-trigger-based-journey.md) that react to customer action (for example, filling out a form or registering for an event).
 1. [Segment-based journeys](real-time-marketing-segment-based-journey.md) that target customers that share certain attributes (for example, loyalty club members in the state of Washington).
+
+## Journey templates
+
+You can create templates to make it easier for anyone to start with a pre-existing journey that represents common customer journey patterns for your business. Create a journey template by building a journey and selecting **Save as template**.
 
 ## The journey life cycle
 

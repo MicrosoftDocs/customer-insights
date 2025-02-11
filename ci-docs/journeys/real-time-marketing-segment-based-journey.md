@@ -1,10 +1,10 @@
 ---
 title: Create a segment-based journey
 description: Create a segment-based journey in Dynamics 365 Customer Insights - Journeys. Learn how to send announcements and nurture campaigns to your most valuable customers.
-ms.date: 12/04/2024
+ms.date: 02/07/2025
 ms.topic: article
 author: alfergus
-ms.author: alfergus
+ms.author: colinbirkett
 ms.collection: bap-ai-copilot
 ms.custom:
   - ai-gen-docs-bap
@@ -37,8 +37,7 @@ You can build the journey while the content is in the **Draft** state. To publis
 
 ## Set the journey start
 
-> [!div class="mx-imgBorder"]
->![Create a segment-based journey.](media/real-time-marketing-segment-journey.png "Create a segment-based journey")
+:::image type="content" source="media/segment-journey-allow-individuals.png" alt-text="Create a segment-based journey." lightbox="media/segment-journey-allow-individuals.png":::
 
 To create a segment-based journey, go to **Engagement** > **Journeys** and select **+New journey** in the top toolbar. A window opens allowing you to use [Copilot to create a journey](real-time-marketing-use-copilot-create-journey.md). To create a segment-based journey manually, select the **Skip and create from blank** button.
 

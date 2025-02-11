@@ -109,7 +109,7 @@ Learn how to make the most of the new Dynamics 365 Customer Insights features in
 #### Public preview
 
 - **Wait on segment membership to trigger the next step in a journey** 
-    - Gain even more control over your customers' experience by waiting for them to become a member of a segment before continuing to the next steps in a journey. This added capability lets you personalize each customer's experience by choosing the correct path and actions relevant to individual customers based on whether they're in a segment. This capability adds to existing if/then capabilities that let you wait for a customer to open an email, click a link, or wait for another trigger to be activated before moving on to the next step in the journey. For example, let's say you use your journey to send credit card activation emails and you want to wait for the customer to activate their card before sending a welcome email. If the customer doesn’t activate their credit card within a few days, you want to send another reminder email. If you have a segment that includes all customers who have activated credit cards, you can use that segment as the condition for the if/then branch to wait for each customer to activate their credit card and send them the right communications. (Note: Due to holiday deployment lockdowns, we expect this capability to be rolled out in all regions by January 9, 2025).
+    - Gain even more control over your customers' experience by waiting for them to become a member of a segment before continuing to the next steps in a journey. This added capability lets you personalize each customer's experience by choosing the correct path and actions relevant to individual customers based on whether they're in a segment. This capability adds to existing if/then capabilities that let you wait for a customer to open an email, click a link, or wait for another trigger to be activated before moving on to the next step in the journey. For example, let's say you use your journey to send credit card activation emails and you want to wait for the customer to activate their card before sending a welcome email. If the customer doesn’t activate their credit card within a few days, you want to send another reminder email. If you have a segment that includes all customers who have activated credit cards, you can use that segment as the condition for the if/then branch to wait for each customer to activate their credit card and send them the right communications.
     - [Release plan](/dynamics365/release-plan/2024wave2/customer-insights/dynamics365-customer-insights-journeys/use-segments-decide-which-path-customer-should-take-journey) 
     - [Docs](real-time-marketing-tile-reference.md#branching-the-customer-journey)
 
@@ -2130,7 +2130,7 @@ With the Dynamics 365 Customer Insights - Journeys December 2021 update you can 
     - Fixed an error that caused form submission data rendering to sometimes fail when the form included multi-select option sets.
 - **Segmentation**
     - Improved German translations in dynamic segments.
-    - Resolved an error that occassionally caused a static segement grid custom control to show editing buttons when a user did not have editing privileges.
+    - Resolved an error that occasionally caused a static segement grid custom control to show editing buttons when a user did not have editing privileges.
 - **Shared UX**
     - Fixed an error that caused the start date in a LATAM time zone marketing task template to subtract one day when adding tasks to a customer journey.
 
