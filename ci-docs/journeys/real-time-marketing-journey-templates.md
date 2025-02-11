@@ -12,3 +12,18 @@ search.audienceType:
 ---
 
 # Journey templates
+
+Journey templates in real-time journeys make it easy for people across your organzation with various skill levels to get going with a journey quickly and ensure it's setup with the right parameters, content, and logic. When starting a journey from a template, journey authors can simply swap out segments, emails, or other tile content to match the needs of the customer experience they want to deliver without having to build the whole logic tree. 
+
+Creating and accessing journey templates is easy. 
+
+## Creating journey templates
+
+To create a journey template, after saving a journey you've authored, simply choose **Save as template** next to the **Save** button. Provide a title and description that helps others in your organization understand what kind of customer journey engagement the template is for and when to use it. 
+
+You can save journeys as templates with placeholder content selected or only with tiles in place and no content populated. 
+
+## Start a journey from a template
+
+Anyone creating a journey can select your template from the list of available templates when creating a journey from scratch in the journey editor. 
+
