@@ -49,3 +49,5 @@ Almost all types of entities in Customer Insights - Journeys include a **Related
 
 > [!NOTE]
 > The **Related** tab for segments sometimes includes an entry for **Customer journeys**, but this entry only finds journeys where the current segment is a *suppression segment*. It doesn't find journeys that use the current segment as a target segment. The reason for this is that suppression segments are related directly to the customer journey entity, while target segments are linked to journeys less directly, through a tile configuration, and therefore aren't resolved in the **Related** tab.
+
+[!INCLUDE [footer-include](./includes/footer-banner.md)]
