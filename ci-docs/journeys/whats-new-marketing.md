@@ -62,6 +62,11 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 	- [Release plan](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/create-event-portal-own-website) 
 	- [Docs](../journeys/developer/using-rtm-events-api.md)
 
+- **Accelerate journey creation using journey templates**
+	- Increase your productivity by using journey templates to kickstart building your customer journeys. Save time using a template from common customer journey scenarios, make final updates with your chosen content and any slight adjustments to the flows, and publish.
+	- [Release plan](/dynamics365/release-plan/2024wave2/customer-insights/dynamics365-customer-insights-journeys/marketers-accelerate-journey-creation-using-journey-templates)
+	- [Docs](real-time-marketing-journey-templates.md)  
+
 #### Monthly enhancements
 
 - **Create custom form templates** 
