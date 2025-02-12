@@ -56,6 +56,8 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 	- Events are a pivotal element of your business strategy, aiding in customer acquisition and engagement. A centralized location is essential for your clients to discover and learn about events that you're organizing. The new event portal allows for the swift creation of a comprehensive hub where customers can access event details, session specifics, and speaker schedules and conveniently register using the event registration form. The portal can be seamlessly deployed through Power Pages, where it can be tailored to align with your brand identity using Power Pages Studio. 
 	- [Release plan](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/enable-customers-find-sign-up-events-easily) 
 	- [Docs](event-portal-template.md)
+    > [!NOTE]
+    > Due to rollout delays, the event registration template functionality for Power Pages won't be available until late February 2025.
 
 - **Create an event portal on your own website** 
 	- Events are a pivotal element of your business strategy, aiding in customer acquisition and engagement. A centralized location is essential for your clients to discover and learn about events you are organizing. The new event portal allows for the swift creation of a comprehensive hub where customers can access event details, session specifics, and speaker schedules, and conveniently register using the event registration form. The portal can be seamlessly integrated into your existing CMS using a Javascript code snippet or the new event API.
