@@ -1,7 +1,7 @@
 ---
 title: Transition marketing pages and forms
 description: Learn how to transition marketing pages and forms capabilities from outbound marketing to real-time journeys in Dynamics 365 Customer Insights - Journeys.
-ms.date: 12/12/2024
+ms.date: 02/11/2025
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -23,7 +23,7 @@ Outbound marketing contains sitemap entries for "Internet Marketing." The entrie
 Notice that there isn't a one-to-one relationship between the outbound marketing objects and the real-time journeys objects:
 
 - Marketing pages in outbound marketing serve as a hosting container for outbound marketing forms. They have a dependency on Power Pages, which is removed in the real-time journeys module and therefore have no equivalent in real-time journeys.
-- The outbound marketing pages will continue to be rendered after outbound removal as the page itself is hosted on the Power Pages infrastructure that is independent of outbound. However, the pages will no longer be managed from outbound. It will not be possible to update existing or publish new pages. The only way to manage outbound marketing pages would then be to be update the HTML code stored on Power Pages. The Power Pages infrastructure used for hosting these pages will be also deprecated soon. Therefore, we strongly advise customers to recreate all marketing pages in new Power pages or other hosting infrastructure.
+- Outbound marketing pages will continue to be rendered after outbound removal as the page itself is hosted on the Power Pages infrastructure, which is independent of outbound marketing. However, the pages will no longer be managed from outbound marketing. It will not be possible to update existing or publish new pages. The only way to manage outbound marketing pages will be to be update the HTML code stored on Power Pages. The Power Pages infrastructure used for hosting these pages will also be deprecated soon. Therefore, we strongly advise customers to recreate all marketing pages in new Power pages or other hosting infrastructure.
 -	Outbound marketing forms allow you to design forms for landing pages, event registrations, or subscription centers. This functionality is covered in real-time journeys forms, which can be published as a standalone page.
 -	Marketing websites and redirect URLs allow you to track web activity. With web tracking (a feature that isn't yet available in real-time journeys but is planned (see [Engage customers with content and follow-ups based on website interactions](/dynamics365/release-plan/2023wave2/marketing/dynamics365-marketing/engage-customers-content-follow-ups-based-website-interactions))) you can create customer experiences based on your customers' web behavior. There are no plans to support "redirect URLs" in real-time journeys. 
 
