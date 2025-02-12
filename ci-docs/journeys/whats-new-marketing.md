@@ -1,7 +1,7 @@
 ---
 title: New and upcoming features
 description: Discover the latest features, improvements, and bug fixes in Dynamics 365 Customer Insights - Journeys. Stay updated with our monthly release notes.
-ms.date: 02/11/2025
+ms.date: 02/12/2025
 ms.topic: article
 author: colinbirkett
 ms.author: colinbirkett
@@ -61,11 +61,6 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 	- Events are a pivotal element of your business strategy, aiding in customer acquisition and engagement. A centralized location is essential for your clients to discover and learn about events you are organizing. The new event portal allows for the swift creation of a comprehensive hub where customers can access event details, session specifics, and speaker schedules, and conveniently register using the event registration form. The portal can be seamlessly integrated into your existing CMS using a Javascript code snippet or the new event API.
 	- [Release plan](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/create-event-portal-own-website) 
 	- [Docs](../journeys/developer/using-rtm-events-api.md)
-
-- **Accelerate journey creation using journey templates**
-	- Increase your productivity by using journey templates to kickstart building your customer journeys. Save time using a template from common customer journey scenarios, make final updates with your chosen content and any slight adjustments to the flows, and publish.
-	- [Release plan](/dynamics365/release-plan/2024wave2/customer-insights/dynamics365-customer-insights-journeys/marketers-accelerate-journey-creation-using-journey-templates)
-	- [Docs](real-time-marketing-journey-templates.md)  
 
 #### Monthly enhancements
 
