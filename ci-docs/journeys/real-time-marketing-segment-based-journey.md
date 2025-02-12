@@ -48,7 +48,6 @@ On the "Create a new journey" screen:
 - Select one or more segments. Note the following when selecting multiple segments:
   - The total combined member count of all segments can't exceed the limit noted [here](real-time-marketing-known-issues.md#segments) for a journey. You can select at most 15 segments (or fewer if the segment size limit is reached sooner).
   - Outbound marketing segments or mixed audience types (for example, contacts and leads) can't be selected.
-  - Only one-time journeys are supported at this time (recurring journeys and ongoing journeys where the audience can enter at any time will be supported in an upcoming release).
   - Environments that use their own [Azure Data Lake storage account](../data/own-data-lake-storage.md#connect-customer-insights---data-with-your-storage-account) aren't supported.
 - Choose the **frequency** at which your journey should run:
   - A **one-time** journey with a **static** audience that runs one time. When the journey starts, the current members of the segment start the journey.
