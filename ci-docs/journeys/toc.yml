@@ -46,8 +46,10 @@
       href: transition-walkthrough-functional.md
     - name: Setup changes in real-time journeys
       href: transition-walkthrough-setup.md
-    - name: Segments, emails, journeys, and assets
+    - name: Segments
       href: transition-walkthrough-segments.md
+    - name: Emails, journeys, and assets
+      href: transition-walkthrough-journeys.md
     - name: Consent
       href: transition-walkthrough-consent.md
     - name: Consent management and double opt-in
