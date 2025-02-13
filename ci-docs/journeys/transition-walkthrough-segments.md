@@ -1,7 +1,7 @@
 ---
 title: Migrate segments to real-time journeys
 description: Learn how to use the Segment Migration Solution to migrate segments from outbound marketing to real-time journeys Dynamics 365 Customer Insights - Journeys.
-ms.date: 02/11/2025
+ms.date: 02/12/2025
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
@@ -16,7 +16,7 @@ search.audienceType:
 > [!IMPORTANT]
 > **The [outbound marketing](user-guide.md) module will be removed from Customer Insights - Journeys on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](transition-overview.md)
 
-You can use outbound marketing segments in real-time journeys; however, it's recommended that you create the segments in real-time journeys for increased performance and smaller refresh cycles. We've introduced the [*Segment Migration Solution*](transition-walkthrough-segments.md#segment-migration-solution-purpose) to help customers migrate segments from outbound marketing to real-time marketing. It's also possible to use [natural language and Copilot](real-time-marketing-natural-language-segments.md) to create a real-time journeys segment.
+You can use outbound marketing segments also in real-time journeys, however, it's recommended to rebuild the segments in real-time journeys for not only increased performance and smaller refresh cycles but also because once outbound marketing is removed, segments created in outbound won't refresh and may not be available for use in real-time journeys anymore. You can either migrate outbound segments using the [*Segment Migration Solution*](transition-walkthrough-segments.md#segment-migration-solution-purpose) or use [natural language and Copilot](real-time-marketing-natural-language-segments.md) to create real-time journeys segments.
 
 > [!NOTE]
 > The *Segment Migration Solution* isn't a comprehensive solution that can migrate all outbound marketing segments to real-time marketing. It's provided to customers to help start segment migration. Read about the nuances of the *Segment Migration Solution* before using the tool.
