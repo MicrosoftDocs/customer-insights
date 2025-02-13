@@ -1,7 +1,7 @@
 ---
 title: Create sales activities from lead signals
 description: Learn how to optimize lead management by engaging sellers right away in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/23/2023
+ms.date: 02/12/2025
 ms.topic: get-started
 author: alfergus
 ms.author: alfergus
@@ -20,7 +20,7 @@ With Dynamics 365 Customer Insights - Journeys, you can leverage this informatio
 This feature allows you to seamlessly integrate your marketing and sales efforts, providing a more cohesive and streamlined experience for your leads and customers. With the ability to create sales activities directly from the journey, you can better track and measure the effectiveness of your marketing and sales efforts and make data-driven decisions to optimize your campaigns for maximum impact.
 
 [!NOTE]
-> The current implementation of creating a task, phone call, lead, or opportunity has a limited set of values exposed in the journey editor which can be set on each entity type. The ability to set additional fields, including custom ones, is a known feature ask that does not yet have an estimated date. Please check the release plans to see when this feature will be prioritized and delivered.
+> The current implementation of creating a task, phone call, lead, or opportunity has a limited set of values exposed in the journey editor that can be set on each entity type. The ability to set additional fields (including custom) is a known feature ask that doesn't yet have an estimated date. Check the [release plans](/dynamics365/release-plans/) to see when this feature will be prioritized and delivered.
 
 ## Scenario 1: Handing off high value leads timely to drive paid conversion rate
 
@@ -62,15 +62,15 @@ You can also send a "System Down" email after the task has been completed by you
 
 ## Scenario 3: Create a lead for a seller to follow-up on
 
-You can create a lead in Dynamics 365 Sales for a seller to follow-up on and specify a Topic, Owner, determine what should happen if there is already a lead record for that person, and add any note you'd like the seller to consider when taking action. 
+You can create a lead in Dynamics 365 Sales for a seller to follow-up on and specify a topic, owner, determine what should happen if there's already a lead record for that person, and add any note you'd like the seller to consider when taking action. 
 
 ## Scenario 4: Create an opportunity for a seller to follow-up on
 
-You can create an opportunity in Dynamics 365 Sales for a seller to follow-up on and specify a Topic, Owner, and any notes you want the seller to know when taking action. 
+You can create an opportunity in Dynamics 365 Sales for a seller to follow-up on and specify a topic, owner, and any notes you want the seller to know when taking action. 
 
 ## Scenario 5: Activate a custom trigger to initiate a sales sequence
 
-You can activate a custom trigger anywhere in a journey, including a custom trigger that initiates a sales sequence in Dynamics 365 Sales. This is powerful if there are already sales sequences configured and you want to start them off after a marketing journey. 
+You can activate a custom trigger anywhere in a journey, including a custom trigger that initiates a sales sequence in Dynamics 365 Sales. This is a powerful tool if there are already sales sequences configured and you want to start them off after a marketing journey. 
 
 ## View analytics for your activities  
 
