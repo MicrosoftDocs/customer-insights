@@ -13,7 +13,7 @@ search.audienceType:
 
 # Email policies and suspension standards
 
-Dynamics 365 Customer Insights - Journeys has a deliverability protection system that detects excessive hard bounces, spam reports, spam traps hits block listing, abuse complaints or direct complaints from either recipients or third-party email security solutions. This system protects our entire customer base. If email criteria are violated, accounts are suspended or terminated.
+Dynamics 365 Customer Insights - Journeys has a deliverability protection system that detects excessive hard bounces, spam reports, spam traps hits block listing, abuse complaints, or direct complaints from either recipients or third-party email security solutions. This system protects our entire customer base. If email criteria are violated, accounts are suspended or terminated.
 
 ## Stages of review
 
@@ -23,11 +23,11 @@ Dynamics 365 Customer Insights - Journeys has a deliverability protection system
 
     When email sending is suspended, you see a warning banner in your email tool about a problem detected by the deliverability protection system. The banner contains details about the problem and recommendations to improve future email messages.
 
-    If your email sending is suspended, create a support ticket first and then reach out directly to our [Email Deliverability team](mailto:dynmktdeliverability@microsoft.com). When it is proven that you have taken sufficient steps to address the cause of suspension, we will reinstate your account.
+    If your email sending is suspended, create a support ticket first and then reach out directly to our [Email Deliverability team](mailto:dynmktdeliverability@microsoft.com). When it's proven that you have taken sufficient steps to address the cause of suspension, we'll reinstate your account.
 
 -   *Terminated*
 
-    In case we detect concrete signs of abuse or lack of cooperation we will terminate your account sending capabilities.
+    In case we detect concrete signs of abuse or lack of cooperation we terminate your account sending capabilities.
 
 ## Suspension criteria for Dynamics 365 Customer Insights - Journeys?
 
