@@ -34,7 +34,7 @@ Dynamics 365 Customer Insights - Journeys has a deliverability protection system
 -   *Hard bounces*: The hard bounce limit is 8%. The preferred bounce rate is less than 2%.
 -   *Spam reports*: The spam complaint rate limit is 0.3% (1 in 1,000 messages sent).
 -   *Direct complaints*: Direct complaints are sent to the Dynamics 365 abuse desk and are reviewed on a case by case basis.
--   *Spamtrap hits:* Spam traps are a tool used by ISPs or Email Filters to identify unsolicited traffic. It cannot be identified by the sender and can cause IP blocks and delivery incidents especially on a shared environment.
+-   *Spamtrap hits:* Spam traps are a tool used by ISPs or Email Filters to identify unsolicited traffic. Spam traps cannot be identified by the sender and can cause IP blocks and delivery incidents especially on a shared environment.
 -   Lists scraped, purchased, or rented from third party providers are prohibited and are grounds for termination.
 
 ## Other reasons that can cause account suspensions
