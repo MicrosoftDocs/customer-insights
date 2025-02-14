@@ -16,7 +16,7 @@ search.audienceType:
 > [!IMPORTANT]
 > **The [outbound marketing](user-guide.md) module will be removed from Customer Insights - Journeys on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](transition-overview.md)
 
-You can use outbound marketing segments also in real-time journeys, however, it's recommended to rebuild the segments in real-time journeys for not only increased performance and smaller refresh cycles but also because once outbound marketing is removed, segments created in outbound won't refresh and may not be available for use in real-time journeys anymore. You can either migrate outbound segments using the [*Segment Migration Solution*](transition-walkthrough-segments.md#segment-migration-solution-purpose) or use [natural language and Copilot](real-time-marketing-natural-language-segments.md) to create real-time journeys segments.
+You can use outbound marketing segments also in real-time journeys, however, it's recommended to rebuild the segments in real-time journeys for not only increased performance and smaller refresh cycles but also because once outbound marketing is removed, segments created in outbound won't refresh and may not be available for use in real-time journeys anymore. You can either migrate outbound segments using the [*Segment Migration Solution*](transition-walkthrough-segments.md#segment-migration-solution) or use [natural language and Copilot](real-time-marketing-natural-language-segments.md) to create real-time journeys segments.
 
 > [!NOTE]
 > The *Segment Migration Solution* isn't a comprehensive solution that can migrate all outbound marketing segments to real-time marketing. It's provided to customers to help start segment migration. Read about the nuances of the *Segment Migration Solution* before using the tool.
@@ -25,15 +25,7 @@ Customers should set aside time to migrate the most important segments to real-t
 
 We've also increased the segmentation limits for real-time marketing to be better than outbound marketing, as shown in the [Service Limits and Fair Use Policy](fair-use-policy.md) page.
 
-## Relevant upcoming features
-
-The features listed below might interest you as you transition segments from outbound marketing to real-time journeys. These features provide parity, equivalent, or better functionality than what was available in outbound marketing.
-
-- **Editing segments that are used in a live journey**: The ability to edit segments used in live journeys lets marketers make timely updates to audience definitions, ensuring that their campaigns remain relevant and accurate. Previously, customers couldn't modify segments in live journeys without stopping the journey, leading to poor campaign management and overhead. With this new capability, marketers can seamlessly refine targeting strategies to align with evolving business needs while maintaining the integrity of their campaigns. This reduces errors, improves efficiency, and provides a smoother workflow for managing audiences and campaigns in real time.
-- **Include or exclude up to 20,000 members as part of the segment builder**: Currently, real-time marketing only allows 100 members to be added to a static segment as part of the segment builder capabilities. In 2025, this limit increases to 20,000 so that customers can add more members to their segments based on business criteria rather than employing cumbersome mechanisms such as using marketing lists. This lets customers use segmentation with less complexity and streamline operations leading to journey creation.
-- **Include large segments in real-time marketing journeys**: Soon, with real-time marketing journeys, customers can use segments as large as 50 million members in their journeys. This is a significant upgrade from the current 10 million member limit that's present in outbound marketing.
-
-## Segment Migration Solution purpose
+## Segment Migration Solution
 
 Migrating segments from outbound marketing to real-time marketing can be time consuming and operationally heavy. The *Segment Migration Solution* helps users migrate their segments from outbound marketing to real-time marketing with an intuitive solution that has a clean interface, allowing for a seamless and straightforward migration experience.
 
