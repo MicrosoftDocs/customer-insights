@@ -40,9 +40,7 @@ Journey branches let you create personalized journeys for customers, engaging th
     > ![Mix and match branching types screenshot.](media/real-time-marketing-multiple-branches-types2.png "Mix and match branching types screenshot")
 
 > [!NOTE]
-> Branches are evaluated in priority order. The same customer will not go down multiple branches simultaneously.
-> For dynamic segments with frequent membership changes, when using segment membership as a branching condition in a journey, be aware that in rare cases, processing delays may cause evaluations to reflect an earlier segment status. To improve accuracy, consider adding a wait time of ~ two hours or more before evaluating segment membership.
-
+> Branches are evaluated in priority order. The same customer won't go down multiple branches simultaneously. For dynamic segments with frequent membership changes, when using segment membership as a branching condition in a journey, be aware that in rare cases processing delays may cause evaluations to reflect an earlier segment status. To improve accuracy, consider adding a wait time of about two hours or more before evaluating segment membership.
 
 ## How to create multiple journey branches based on customer interactions to a channel
 
