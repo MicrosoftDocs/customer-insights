@@ -13,7 +13,7 @@ search.audienceType:
 
 # Email policies and suspension standards
 
-Dynamics 365 Customer Insights - Journeys has a deliverability protection system that detects excessive hard bounces, spam reports, spam traps hits block listing, abuse complaints or direct complaints from either recipients or third-party email security solutions. This system protects our entire customer base. If email criteria are violated, accounts will be suspended or terminated.
+Dynamics 365 Customer Insights - Journeys has a deliverability protection system that detects excessive hard bounces, spam reports, spam traps hits block listing, abuse complaints or direct complaints from either recipients or third-party email security solutions. This system protects our entire customer base. If email criteria are violated, accounts are suspended or terminated.
 
 ## Stages of review
 
