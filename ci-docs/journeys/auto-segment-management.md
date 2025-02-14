@@ -11,10 +11,17 @@ search.audienceType:
   - enduser
 ---
 
+To enhance the customer experience by minimizing the impact of unused segments on active campaigns and improving processing speed for segments in use, we are optimizing how segments are refreshed in Dynamics 365 Customer Insights – Journeys.
+Starting February 17, 2025, segment refreshes will dynamically adjust based on usage to ensure marketers always have accurate, up-to-date audience data while optimizing system performance.
+
 # Automated segment management
+Newly Created Unused Segments: Segments that are not actively used in a journey will refresh every 30 minutes for the first 24 hours to ensure initial accuracy. 
+After this period, they will transition to a 24-hour refresh cycle unless they become actively used.
+Segments in Active Journeys: Segments actively used in a journey or referenced by another segment or emails will continue refreshing every 30 minutes, ensuring they stay updated with the latest audience data.
+Segments Exiting a Journey: Once a segment is no longer used in a journey, it will move to a 24-hour refresh cycle, ensuring it remains relevant while optimizing system performance.
 
-To optimize resources, Customer Insights - Journeys automatically manages the refresh frequency of your unused segments. "Unused segments" are segments that were created more than 14 days ago and/or haven't been used in journeys, emails, or other segments in the last 2 days. This feature aims to improve the customer experience by reducing the impact of unused segments on the performance of active campaigns, allowing improved processing speed for segments in active use.
-
-## How automated segment management works
-
-This feature detects segments created more than 14 days ago that haven't been used in the last 2 days and sets them to a once-a-day refresh cadence. In other words, the unused segments are still refreshed, but only once per day. When an unused segment is used again in a journey, email, or other segment, the refresh rate is automatically restored to the normal cadence. This feature is fully automated and doesn't require any input or action from users.
+# Why This Matters
+These updates ensure that marketers can rely on automated segment management to:
+✅ Maintain timely and relevant audience updates for active campaigns.
+✅ Optimize system performance by reducing unnecessary refreshes for inactive segments.
+✅ Streamline audience management, allowing teams to focus on strategy while the system ensures data freshness.
