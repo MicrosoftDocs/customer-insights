@@ -20,6 +20,14 @@ To enable or disable a feature, go to **Settings** > **Overview** > **Feature sw
 
 The following tables list each available feature, preview status, and links for more information.
 
+## Segmentation
+
+| Feature switch | Preview or production | Description |
+|---|---|---|
+| Use protected fields in segments | Production | Allow the use of protected columns/fields in segment criteria in Realtime Marketing. Use with caution. |
+| Use system command bar | Preview | Utilize the system command bar to enhance the segmentation user experience. This feature enables customers to customize the ribbon and activates default CRM actions. |
+
+
 ## Analytics
 
 | Feature switch | Preview or production | Description |
@@ -39,6 +47,7 @@ The following tables list each available feature, preview status, and links for 
 |---|---|---|
 | UTM tracking | Production | [Enable UTM values to be automatically added to every link in your messages. This allows source tracking within third-party tools like Google Analytics.](real-time-marketing-utm.md)|
 | Bot protection | Production| [Filter out non-human click interactions.](bot-protection.md) |
+| Web tracking | Preview| Enable Web tracking feature in real-time journeys. This will allow tracking web page visits and web page link clicks that can be used in journey orchestration. |
 
 ## Event management
 
@@ -64,6 +73,8 @@ The following tables list each available feature, preview status, and links for 
 | Easy email creation experience | Production | [Enable easy content creation with in-place editing and an improved template gallery.](real-time-marketing-email.md)|
 | Send now | Preview | [Enable Send Now to send emails without having to build a journey.](email-without-journey.md)|
 | View in browser | Production | [Enable adding a link to view emails in web browsers.](view-email-in-browser.md) |
+| Email clickmap | Preview | Understand customers' interactions and gain insights into which links receive the most and least engagement based on your email design. |
+| Litmus integration | Production | By enabling Litmus, you agree to the Litmus terms of service and privacy policy. Litmus is an external, third-party product made available to you on an optional trial basis. It is subject to the terms of service set forth by Litmus. This is not a Microsoft product so you must provide consent before Litmus can be enabled. |
 
 ## Copilot
 
@@ -104,6 +115,8 @@ The following tables list each available feature, preview status, and links for 
 | Form capture | Production | [Enable form capture in real-time journeys.](real-time-marketing-form-capture.md) |
 | Enable custom JavaScript in forms |Production | [If disabled, custom JavaScript is automatically removed from real-time journey forms.](real-time-marketing-manage-forms.md#add-custom-javascript-to-your-form) |
 | Form prefill | Preview | [Enable form prefill in real-time journeys.](form-prefill.md) |
+| Enable table-less layouts in Form editor | Production |Use Div containers instead of table-based layouts in Form editor. |
+| Custom unmapped fields | Production | Enable custom unmapped fields. |
 
 ## Journey
 
@@ -111,12 +124,15 @@ The following tables list each available feature, preview status, and links for 
 |---|---|---|
 | Lead and opportunity creation | Preview | [Enables the creation of leads and opportunities within journeys using built-in journey activities.](lead-generation-overview.md) |
 | Tile entry and exit analytics | Preview | [View additional information on journey tiles, such as which customers entered a journey step, which customers have exited the journey, and why they exited the journey.](real-time-marketing-tile-reference.md) |
+| Wait for segment membership | Production | Enhances the "Wait for trigger" tile (also known as the if/then tile) to verify and pause until the audience becomes a member of the specified segment. |
+| Ongoing journey reentry | Production | Enables an enhancement for ongoing journeys to allow audience members to re-enter journeys when re-joining the segments. |
 
 ## Integrations
 
 | Feature switch | Preview or production | Description |
 |---|---|---|
 | Customer Voice integration | Production | [Enable Dynamics 365 Customer Voice integrations with Customer Insights - Journeys.](customer-voice.md) |
+| Contact Center integration | Production | Enable Dynamics 365 Contact Center integrations with Customer Insights - Journeys. |
 
 ## Compliance
 
