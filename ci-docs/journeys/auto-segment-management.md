@@ -1,7 +1,7 @@
 ---
 title: Automated segment management
 description: Learn about how segments are automatically managed in Customer Insights - Journeys.
-ms.date: 01/15/2025
+ms.date: 02/18/2025
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -13,8 +13,19 @@ search.audienceType:
 
 # Automated segment management
 
-To optimize resources, Customer Insights - Journeys automatically manages the refresh frequency of your unused segments. "Unused segments" are segments that were created more than 14 days ago and/or haven't been used in journeys, emails, or other segments in the last 2 days. This feature aims to improve the customer experience by reducing the impact of unused segments on the performance of active campaigns, allowing improved processing speed for segments in active use.
+To minimize the impact of unused segments on active campaigns and improve processing speed for segments in use, we're optimizing how segments are refreshed in Dynamics 365 Customer Insights – Journeys. Starting February 17, 2025, segments refresh dynamically adjust based on usage, ensuring that marketers always have accurate, up-to-date audience data while optimizing system performance.
 
-## How automated segment management works
+## Automated segment management
 
-This feature detects segments created more than 14 days ago that haven't been used in the last 2 days and sets them to a once-a-day refresh cadence. In other words, the unused segments are still refreshed, but only once per day. When an unused segment is used again in a journey, email, or other segment, the refresh rate is automatically restored to the normal cadence. This feature is fully automated and doesn't require any input or action from users.
+- **Newly created unused segments**: Segments that aren't actively used in a journey now refresh every 30 minutes for the first 24 hours to ensure initial accuracy. After this period, they transition to a 24-hour refresh cycle unless they become actively used.
+- **Segments in active journeys**: Segments actively used in a journey or referenced by another segment or emails continue refreshing every 30 minutes, ensuring that they stay updated with the latest audience data.
+- **Segments exiting a journey**: Once a segment is no longer used in a journey, it moves to a 24-hour refresh cycle, ensuring that it remains relevant while optimizing system performance.
+
+## Why this matters
+
+These updates ensure that marketers can rely on automated segment management to:
+- Maintain timely and relevant audience updates for active campaigns.
+- Optimize system performance by reducing unnecessary refreshes for inactive segments.
+- Streamline audience management, allowing teams to focus on strategy while the system ensures data freshness.
+
+[!INCLUDE [footer-include](./includes/footer-banner.md)]
