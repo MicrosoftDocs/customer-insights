@@ -1,19 +1,24 @@
 ---
-title: Automated segment management
-description: Learn about how segments are automatically managed in Customer Insights - Journeys.
+title: Optimize segment refresh
+description: Optimize segment refresh in Dynamics 365 Customer Insights – Journeys for accurate, up-to-date audience data and improved system performance.
 ms.date: 02/18/2025
 ms.topic: article
 author: alfergus
 ms.author: alfergus
-search.audienceType: 
+search.audienceType:
   - admin
   - customizer
   - enduser
+ms.custom:
+  - ai-gen-docs-bap
+  - ai-gen-title
+  - ai-seo-date:02/18/2025
+  - ai-gen-description
 ---
 
 # Automated segment management
 
-To minimize the impact of unused segments on active campaigns and improve processing speed for segments in use, we're optimizing how segments are refreshed in Dynamics 365 Customer Insights – Journeys. Starting February 17, 2025, segments refresh dynamically adjust based on usage, ensuring that marketers always have accurate, up-to-date audience data while optimizing system performance.
+To minimize the impact of unused segments on active campaigns and improve processing speed for segments in use, we're optimizing how segments are refreshed in Dynamics 365 Customer Insights – Journeys. Starting February 17, 2025, segments refresh dynamically based on usage, ensuring that marketers always have accurate, up-to-date audience data while optimizing system performance.
 
 ## Automated segment management
 
