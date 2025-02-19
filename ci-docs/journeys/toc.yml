@@ -744,6 +744,8 @@
     href: faqs-journey-copilot.md
 - name: Resources
   items:
+  - name: Removed/deprecated features
+    href: removed-deprecated-features.md
   - name: Customer Insights - Journeys forum
     href: https://community.dynamics.com/forums/thread/?discussionforumid=401fa082-89fa-4aea-b90f-fcadb0d9f76a
   - name: Customer Insights Business Decision Makers blog
