@@ -24,7 +24,7 @@ The following tables list each available feature, preview status, and links for 
 
 | Feature switch | Preview or production | Description |
 |---|---|---|
-| Use protected fields in segments | Production | Allow the use of protected columns/fields in segment criteria in real-time marketing. Use with caution. [Learn more](journeys/protected-fields.md). |
+| Use protected fields in segments | Production | Allow the use of protected columns/fields in segment criteria in real-time marketing. Use with caution. [Learn more](protected-fields.md). |
 | Use system command bar | Preview | Utilize the system command bar to enhance the segmentation user experience. This feature enables customers to customize the ribbon and activates default CRM actions. |
 
 
