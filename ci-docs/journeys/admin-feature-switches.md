@@ -24,7 +24,7 @@ The following tables list each available feature, preview status, and links for 
 
 | Feature switch | Preview or production | Description |
 |---|---|---|
-| Use protected fields in segments | Production | Allow the use of protected columns/fields in segment criteria in Realtime Marketing. Use with caution. [Learn more](journeys/protected-fields.md). |
+| Use protected fields in segments | Production | Allow the use of protected columns/fields in segment criteria in real-time marketing. Use with caution. [Learn more](journeys/protected-fields.md). |
 | Use system command bar | Preview | Utilize the system command bar to enhance the segmentation user experience. This feature enables customers to customize the ribbon and activates default CRM actions. |
 
 
@@ -46,8 +46,8 @@ The following tables list each available feature, preview status, and links for 
 | Feature switch | Preview or production | Description |
 |---|---|---|
 | UTM tracking | Production | [Enable UTM values to be automatically added to every link in your messages. This allows source tracking within third-party tools like Google Analytics](real-time-marketing-utm.md).|
-| Bot protection | Production| [Filter out non-human click interactions](bot-protection.md). |
-| Web tracking | Preview| Enable Web tracking feature in real-time journeys. This will allow tracking web page visits and web page link clicks that can be used in journey orchestration. |
+| Bot protection | Production| [Filter out nonhuman click interactions](bot-protection.md). |
+| Web tracking | Preview| Enable Web tracking feature in real-time journeys. This allows tracking web page visits and web page link clicks that can be used in journey orchestration. |
 
 ## Event management
 
