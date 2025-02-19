@@ -126,7 +126,7 @@ The following tables list each available feature, preview status, and links for 
 | Lead and opportunity creation | Preview | [Enables the creation of leads and opportunities within journeys using built-in journey activities](lead-generation-overview.md). |
 | Tile entry and exit analytics | Preview | View additional information on journey tiles, such as which customers entered a journey step, which customers have exited the journey, and why they exited the journey.[Learn more](real-time-marketing-tile-reference.md). |
 | Wait for segment membership | Production | Enhances the "Wait for trigger" tile (also known as the if/then tile) to verify and pause until the audience becomes a member of the specified segment. |
-| Ongoing journey reentry | Production | Enables an enhancement for ongoing journeys to allow audience members to re-enter journeys when re-joining the segments. |
+| Ongoing journey re-entry | Production | Enables an enhancement for ongoing journeys to allow audience members to re-enter journeys when rejoining the segments. |
 
 ## Integrations
 
