@@ -55,6 +55,8 @@
       href: data-sources-manage.md
     - name: Enrichment for data sources
       href: data-sources-enrichment.md
+    - name: Incremental refresh for Azure Data Lake Storage
+      href: incremental-refresh-data-sources.md
     - name: Real-time data ingestion
       href: real-time-data-ingestion.md
     - name: Data prep report
