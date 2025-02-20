@@ -13,6 +13,10 @@ search.audienceType:
 
 # Preview: Marketing effectiveness analytics
 
+> [!WARNING]
+> The Marketing effectiveness analytics public preview will be discontinued and removed on February 28, 2025.
+
+
 > [!IMPORTANT]
 > A preview feature is a feature that is not complete, but is made available before it’s officially in a release so customers can get early access and provide feedback. Preview features aren’t meant for production use and may have limited or restricted functionality.
 > 
