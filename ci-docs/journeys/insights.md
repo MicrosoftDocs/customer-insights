@@ -17,6 +17,9 @@ ms.custom: outbound-marketing
 > [!IMPORTANT]
 > **This article only applies to [outbound marketing](user-guide.md), which will be removed from the product on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](transition-overview.md)
 
+> [!NOTE]
+> Contact insights, lead insights, journey and channel analytics will display interaction data for the last 12 months only. However, all historical interaction data is still retained in the data storage.
+
 Dynamics 365 Customer Insights - Journeys keeps track of the way your contacts react to your marketing initiatives and provides detailed analytical views to help you understand your impact and learn what works best. Each of the following entities provides statistics, analytics, and key performance indicators (KPIs) based on your marketing results:
 
 - Contacts
