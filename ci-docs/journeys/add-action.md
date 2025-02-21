@@ -1,7 +1,7 @@
 ---
 title: Add an action in a journey
 description: An overview of possible actions you can do in a journey in Dynamics 365 Customer Insights - Journeys.
-ms.date: 02/06/2025
+ms.date: 02/20/2025
 ms.topic: article
 author: colinbirkett
 ms.author: colinbirkett
@@ -11,11 +11,11 @@ search.audienceType:
   - enduser
 ---
 
-# Add an action in journey
+# Add an action in a journey
 
-This page provides an overview of all the possible actions you can do in a journey. 
+This page provides an overview of all the possible actions you can take in a journey.
 
-To get to the Add an action dashboard, go to Customer Insights - Journeys > **Journeys** and select your desired journey or create a new journey by selecting **+New journey**. To add an action once in your journey, select **+Add an action** under the Journey start node.
+To get to the Add an action dashboard, go to Customer Insights - Journeys > **Journeys** and select your desired journey or create a new journey by selecting **+New journey**. To add an action when in your journey, select **+Add an action** under the Journey start node.
 
 ## Types of actions
 
@@ -91,24 +91,24 @@ There are two ways to create a branch in a journey:
 
 The key differences between these two branching methods are: 
 
-Wait for trigger branch supports specifying a duration for how long to wait until the desired action is taken. Wait for trigger branching also supports simple 2-way branching. This is why the tile is also referred to as an “if/then branch”. 
+Wait for trigger branch supports specifying a duration for how long to wait until the desired action is taken. Wait for trigger branching also supports simple two-way branching. This is why the tile is also referred to as an “if/then branch”. 
 
-Attribute branch does not have a provision for waiting. Attribute branches use the data available at the time of execution and allows for multiple way branching.
+Attribute branch doesn't have a provision for waiting. Attribute branches use the data available at the time of execution and allow for multiple way branchings.
 
 ##### Wait for trigger branch
 
 The "wait for trigger" (if/then branch) tile lets you branch the customer journey based on customer actions like opening an email or completing a purchase. The wait tile (if/then branch) waits for the customer to perform the trigger within the time limit specified. If the customer performs the trigger, they'll immediately proceed down the yes branch. If the customer doesn't perform the trigger within the time limit specified, they'll proceed down the no branch after the time limit has passed.
 
-For example, you can configure the wait tile to wait for the *Email opened* event on a previously sent email. If the time limit is set to 1 day, the wait branch waits for the customer to open the email within that day. If the customer opens the email within that day, they'll immediately proceed down the yes branch. If the customer doesn't open the email within that day, they'll proceed down the no branch after one day.
+For example, you can configure the wait tile to wait for the *Email opened* event on a previously sent email. If the time limit is set to one day, the wait branch waits for the customer to open the email within that day. If the customer opens the email within that day, they'll immediately proceed down the yes branch. If the customer doesn't open the email within that day, they'll proceed down the no branch after one day.
 
-##### Wait for segment membership
-
-The wait for segment membership feature allows for more complex set of actions to take place beyond a single trigger. For example, you may want to create a branch based on how much a customer spent through multiple transactions in a specific period. In this scenario, rather than wait for a specific trigger, you can simply define a dynamic segment such as 'big purchaser' and wait for the customer to become a member of that segment.
+##### Preview: Wait for segment membership
 
 > [!IMPORTANT]
-> This feature is a preview and won't be available until January 9th, 2024. A preview feature is a feature that is not complete, but is made available before it’s officially in a release so customers can get early access and provide feedback. Preview features aren’t meant for production use and may have limited or restricted functionality.
+> A preview feature is a feature that isn't complete, but is made available before it’s officially in a release so customers can get early access and provide feedback. Preview features aren’t meant for production use and may have limited or restricted functionality.
 > 
 > Microsoft doesn't provide support for this preview feature. Microsoft Dynamics 365 Technical Support won’t be able to help you with issues or questions. Preview features aren’t meant for production use, especially to process personal data or other data that are subject to legal or regulatory compliance requirements.
+
+The wait for segment membership feature allows for more complex set of actions to take place beyond a single trigger. For example, you may want to create a branch based on how much a customer spent through multiple transactions in a specific period. In this scenario, rather than wait for a specific trigger, you can simply define a dynamic segment such as 'big purchaser' and wait for the customer to become a member of that segment.
 
 ##### Attribute branch
 
@@ -116,11 +116,11 @@ An attribute branch lets you branch the journey based on various attributes incl
 
 - **Customer's attributes**: You can branch the journey based on the customer's attributes like address or age. The journey's audience defines which attributes are shown. For example, if the journey is for contacts, only attributes for contacts are shown.
 - **Customer's segment membership**: You can branch the journey based on whether the customer is part of a segment. The journey's audience defines which segments are shown. For example, only contacts-based segments are shown for journeys that are meant for contacts.
-- **Attributes in triggers**: You can branch the journey based on attribute values in triggers. For attribute values to be shown, the trigger must have previously occurred in the journey. Thus, you can only check the attribute values for a trigger that starts a trigger-based journey, or triggers being used in an "wait for trigger" branch.
+- **Attributes in triggers**: You can branch the journey based on attribute values in triggers. For attribute values to be shown, the trigger must have previously occurred in the journey. Thus, you can only check the attribute values for a trigger that starts a trigger-based journey, or triggers being used in a "wait for trigger" branch.
 
 The attribute branch checks for attribute values the moment a customer enters this tile. For example, when a customer enters the attribute branch tile, the segment membership condition checks whether the customer is part of the specified segment at that instant.
 
-Attribute branch supports multi-way branching. For example, if you have 'customer spend' as an attribute, you can create different branches for different ranges of spending. For more details, see [Personalize journey variations using multiple journey branches](real-time-marketing-multiple-branches.md).
+Attribute branch supports multi-way branching. For example, if you have 'customer spend' as an attribute, you can create different branches for different ranges of spending. For more information, see [Personalize journey variations using multiple journey branches](real-time-marketing-multiple-branches.md).
 
 ##### Audience split
 
