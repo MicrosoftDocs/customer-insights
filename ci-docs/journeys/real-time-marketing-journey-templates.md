@@ -13,6 +13,9 @@ search.audienceType:
 
 # Journey templates
 
+> [!NOTE]
+> Due to rollout delays, journey templates aren't available until mid-March 2025.
+
 Journey templates in real-time journeys make it easy for people across your organization with various skill levels to start a journey quickly and ensure it's setup with the right parameters, content, and logic. When starting a journey from a template, journey authors can swap out segments, emails, or other tile content to match the needs of the customer experience they want to deliver without having to build the whole logic tree.
 
 ## Creating journey templates
