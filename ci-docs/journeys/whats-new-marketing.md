@@ -36,7 +36,9 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 - **Accelerate journey creation using journey templates**
 	- Increase your productivity by using journey templates to kickstart building your customer journeys. Save time using a template from common customer journey scenarios, make final updates with your chosen content and any slight adjustments to the flows, and publish.
 	- [Release plan](/dynamics365/release-plan/2024wave2/customer-insights/dynamics365-customer-insights-journeys/marketers-accelerate-journey-creation-using-journey-templates)
-	- [Docs](journeys-overview.md#journey-templates)  
+	- [Docs](real-time-marketing-journey-templates.md)
+    > [!NOTE]
+    > Due to rollout delays, journey templates aren't available until mid-March 2025.
 
 #### Public preview
 	
@@ -57,7 +59,7 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 	- [Release plan](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/enable-customers-find-sign-up-events-easily) 
 	- [Docs](event-portal-template.md)
     > [!NOTE]
-    > Due to rollout delays, the event registration template functionality for Power Pages won't be available until late February 2025.
+    > Due to rollout delays, the event registration template functionality for Power Pages aren't available until late February 2025.
 
 - **Create an event portal on your own website** 
 	- Events are a pivotal element of your business strategy, aiding in customer acquisition and engagement. A centralized location is essential for your clients to discover and learn about events you are organizing. The new events API offers a programmatic method to access data of events, sessions, session tracks, passes, speakers, and sponsorships. Additionally, it allows you to register for events and sessions.
