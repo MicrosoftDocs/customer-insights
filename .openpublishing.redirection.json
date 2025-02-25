@@ -2640,6 +2640,11 @@
       "source_path": "ci-docs/journeys/enable-events.md",
       "redirect_url": "/dynamics365/customer-insights/journeys/open-events",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/real-time-marketing-tile-reference.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/add-action",
+      "redirect_document_id": false
     }
   ]
 }
