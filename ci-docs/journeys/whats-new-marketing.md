@@ -30,15 +30,13 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 | App              | GA release      |
 |------------------|-----------------|
 | Customer Insights - Journeys        | 1.1.52649.82  |
-
+<!---
 #### General availability
 
 - **Accelerate journey creation using journey templates**
 	- Increase your productivity by using journey templates to kickstart building your customer journeys. Save time using a template from common customer journey scenarios, make final updates with your chosen content and any slight adjustments to the flows, and publish.
 	- [Release plan](/dynamics365/release-plan/2024wave2/customer-insights/dynamics365-customer-insights-journeys/marketers-accelerate-journey-creation-using-journey-templates)
-	- [Docs](real-time-marketing-journey-templates.md)
-    > [!NOTE]
-    > Due to rollout delays, journey templates aren't available until mid-March 2025.
+	- [Docs](real-time-marketing-journey-templates.md)-->
 
 #### Public preview
 	
