@@ -43,7 +43,7 @@ To access the registration form for the event, select the event, then go to **We
 This opens a special version of the form editor that has extra elements for your event including the **About**, **Sessions**, and **Speakers** elements. 
 
 > [!NOTE]
-> The sessions element uses a personalized list functionality, but it has a few limitations. At present, it's not possible to customize the date and time format of the sessions; the date and time is by default displayed in United States format. We plan to address this in the future.
+> The sessions element uses a dynamic list functionality, but it has a few limitations. At present, it's not possible to customize the date and time format of the sessions; the date and time is by default displayed in United States format. It is also not possible to change the order of the sessions; they are ordered based on the record creation date. Lastly, it is not possible to add more attributes and information about the sessions. We plan to address this limitation in the neat future.
 
 ## Style your default registration forms with sessions using Theme
 
