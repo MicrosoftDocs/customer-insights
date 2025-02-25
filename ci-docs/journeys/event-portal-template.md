@@ -1,7 +1,7 @@
 ---
 title: 'Preview: Build an event registration portal with Power Pages'
 description: Build an event registration portal with Power Pages. Learn how to create, customize, and publish your event registration website using the event registration template.
-ms.date: 02/12/2025
+ms.date: 02/25/2025
 ms.topic: article
 author: petrjantac
 ms.author: alfergus
@@ -21,9 +21,6 @@ ms.custom:
 > A preview feature is a feature that isn't complete but is made available before it’s officially in a release so customers can get early access and provide feedback. Preview features aren’t meant for production use and may have limited or restricted functionality.
 >
 > Microsoft doesn't provide support for this preview feature. Microsoft Dynamics 365 Technical Support won’t be able to help you with issues or questions. Preview features aren’t meant for production use, especially to process personal data or other data that are subject to legal or regulatory compliance requirements.
-
-> [!NOTE]
-> Due to rollout delays, the event registration template functionality for Power Pages won't be available until late February 2025.
 
 Microsoft [Power Pages](/power-pages/introduction) is a secure, enterprise-grade, low-code software as a service (SaaS) platform for creating, hosting, and administering modern external-facing business websites.
 
