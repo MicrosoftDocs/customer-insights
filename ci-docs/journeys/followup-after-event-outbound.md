@@ -47,7 +47,7 @@ Event and session attendance records are available for all contacts. This inform
 
 By the time your event is finished, you'll have generated a wealth of new data in Dynamics 365, and the system is well-equipped to help you analyze that data by using detailed analytics. Here are a few places where you can look for event analytics:
 
-- **The event management dashboard**: This dashboard gives a broad overview of your event planning activities and results from all your events. You can view it by choosing **Event Management Dashboard** from the view selector at the top of any dashboard page in Dynamics 365. More information: [The event management dashboard](event-management-dashboard.md)
+- **The event management dashboard**: This dashboard gives a broad overview of your event planning activities and results from all your events. You can view it by choosing **Event Management Dashboard** from the view selector at the top of any dashboard page in Dynamics 365.
 - **Event records**: [Open the Events work area](open-events.md), go to **Events** > **Event** > **Events**, and open the main event record for your event to see results and analytics that relate to that event only. These offer much more detail than the dashboard does about many aspects of the event.
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]

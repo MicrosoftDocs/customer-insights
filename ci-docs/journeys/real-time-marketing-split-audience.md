@@ -38,6 +38,6 @@ The other difference is that an attribute branch permanently forks the journey i
 
 Similar to an attribute branch, segments rely on attributes of customers, so they're useful only when you need to create groups of customers who share certain attributes. Segment-based journeys are best for providing different experiences, whereas split allows you to provide a differentiated experience for a small part of the journey.
 
-Learn more about journey tiles: [Real-time journeys tile reference](real-time-marketing-tile-reference.md)
+Learn more about journey tiles: [Add an action in a journey](add-action.md)
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
