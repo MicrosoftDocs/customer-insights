@@ -24,7 +24,7 @@ Creating events in real-time journeys is mostly the same as in outbound marketin
 
 To create a new real-time event, you can select **+ Real-time event** in the top navigation bar. You can now easily see whether the event is created using the outbound marketing or the real-time marketing module in the event record:
 
-:::image type="content" source="media/real-time event.png" alt-text="Navigation menu of an event." lightbox="media/real-time event.png":::
+:::image type="content" source="media/real-time-event.png" alt-text="Navigation menu of an event." lightbox="media/real-time-event.png":::
 
 > [!NOTE]
 The system displays a warning if you create outbound marketing events with a start or end date that falls after the removal of outbound marketing.
