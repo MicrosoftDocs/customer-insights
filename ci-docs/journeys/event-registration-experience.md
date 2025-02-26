@@ -24,8 +24,6 @@ There are various options to build event registration experience:
 - **Registration form hosted as a standalone page**: A single page containing the registration form with all details about the event. The page is hosted on Customer Insights infrastructure and no extra license is needed. For more information, see [Publish your form](real-time-marketing-form-create.md#publish-your-form).
 - **Registration form embedded into your website**: You can embed the event registration form into your own website. For more information, see [Publish your form](real-time-marketing-form-create.md#publish-your-form).
 - **Registration portal on Power Pages**: You can use the event registration template to build a website using Power Pages studio.
-    > [!NOTE]
-    > As of January 2025, this feature isn't available. General availability is scheduled soon.
 - **Custom solution using the events API**: For more information, see [Using events API in real-time journeys](developer/using-rtm-events-api.md).
 
 ## Event registration form

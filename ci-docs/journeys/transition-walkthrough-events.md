@@ -1,7 +1,7 @@
 ---
 title: Transition events from outbound marketing to real-time journeys
 description: Learn how to transition event management capabilities from outbound marketing to real-time journeys in Dynamics 365 Customer Insights - Journeys.
-ms.date: 01/30/2024
+ms.date: 02/25/2025
 ms.topic: article
 author: colinbirkett
 ms.author: colinbirkett
@@ -21,6 +21,10 @@ search.audienceType:
 You can find outbound marketing and real-time journeys events in the **Event planning** work area in Dynamics 365 Customer Insights – Journeys.
 
 Creating events in real-time journeys is mostly the same as in outbound marketing. However, with new features in real-time journeys, the experience is improved and enhanced.
+
+To create a new real-time event, you can select **+ Real-time event** in the top navigation bar. You can now easily see whether the event is created using the outbound marketing or the real-time marketing module in the event record:
+
+:::image type="content" source="media/real-time event.png" alt-text="Navigation menu of an event." lightbox="media/real-time event.png":::
 
 > [!NOTE]
 The system displays a warning if you create outbound marketing events with a start or end date that falls after the removal of outbound marketing.
@@ -77,16 +81,16 @@ The following sections cover transition guidance for real-time events.
 
 Real-time events are available for all customers. It's recommended to start transitioning as soon as possible. All events that don't require features in the roadmap should be created as real-time events by default.
 
-The event schedule should also be taken into consideration when crafting the transition schedule.
+The event schedule should also be taken into consideration when crafting the transition schedule. The key decision point is registration start and end date. If the registration period ends before the planned outbound marketing removal date, the event can still be created as outbound marketing event, even if the event takes place in the future. 
 
 ### Migration path
 
 To transition your events and related communication, please do the following steps:
 
 1. Migrate all event-related communication to real-time journeys regardless of whether you’re using outbound or real-time events. Journey orchestration, segmentation, and other assets also work with outbound event registrations.
-1. Identify existing events that have a registration period open after outbound marketing removal and recreate them using real-time journeys.
 1. Identify new events you're planning to run and check whether there's any critical functionality stopping you from using real-time journeys. If there are no gaps identified, then create all new events in real-time journeys only.
 1. Recreate the event registration experience per the guidance in the next section.
+1. If possible, minimize the number of events that have a registration period open after outbound marketing removal. 
 
 #### Transition of event registration experience
 
@@ -144,5 +148,13 @@ The most used features have a planned release date before the outbound removal d
 - Workaround for custom unmapped fields: enhanced data collection and journey personalization with unmapped form fields. For more information, see [FastTrack blog](https://community.dynamics.com/blogs/post/?postid=3a361b7e-80b0-ee11-92bd-002248527d3d).
 - Cascaded fields where options provided in a field depend on a value in an earlier field that isn't yet supported. For more information, see the blog [Implementing cascading dropdown fields in real-time journeys forms](https://community.dynamics.com/blogs/post/?postid=ff86d88f-d892-ef11-ac21-6045bdd7e1ae).
 - Sending timed reminders before an event. For more information, see [Boost event engagement with journeys](real-time-marketing-event-registration-journey.md#step-2-send-email-reminders-seven-days-and-one-day-before-the-event).
+
+## Developer guidance 
+
+If you're not using the out-of-the-box event record creation form, the way to distinguish an outbound marketing versus a real-time journeys record is by setting the **Marketing Module** attribute on the Event table (**msevtmgt_sourcesystem**).
+- **100000001** - Outbound marketing
+- **100000002** - Real-time journeys
+
+If the value is **null**, the record created will be an **outbound marketing** event. For non-customized forms and the out-of-the-box flow, this is automatically defined.
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
