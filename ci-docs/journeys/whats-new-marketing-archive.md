@@ -2096,7 +2096,7 @@ With the Dynamics 365 Customer Insights - Journeys December 2021 update you can 
 ##### Real-time marketing
 
 - **Customer journeys**
-    - As announced in [2021 release wave 2](/dynamics365-release-plan/2021wave2/marketing/dynamics365-marketing/gain-more-control-over-journey-branching-conditions-through-increased-attribute-availability), you can now create journey branches based on any attribute associated with the customer or trigger that started the journey. In addition, for attributes based on date and time, you can create branches based on relative or partial dates. Learn more: [Attribute branch](real-time-marketing-tile-reference.md#attribute-branch).
+    - As announced in [2021 release wave 2](/dynamics365-release-plan/2021wave2/marketing/dynamics365-marketing/gain-more-control-over-journey-branching-conditions-through-increased-attribute-availability), you can now create journey branches based on any attribute associated with the customer or trigger that started the journey. In addition, for attributes based on date and time, you can create branches based on relative or partial dates. Learn more: [Attribute branch](add-action.md#attribute-branch).
 - **Marketing insights**
     - Track the number of email recipients who have selected the preference center link from a Customer Insights - Journeys email and unsubscribed one or more email addresses from being used in future journeys in Customer Insights - Journeys with the newly supported **Unsubscribe** interaction type. Learn more: [Insights glossary](insights-glossary.md#unsubscribes).
 

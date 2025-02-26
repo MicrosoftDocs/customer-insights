@@ -1,7 +1,7 @@
 ---
 title: Set up session-level registration
 description: Learn how to set up session-level registration in Dynamics 365 Customer Insights - Journeys.
-ms.date: 02/05/2025
+ms.date: 02/25/2025
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -43,7 +43,7 @@ To access the registration form for the event, select the event, then go to **We
 This opens a special version of the form editor that has extra elements for your event including the **About**, **Sessions**, and **Speakers** elements. 
 
 > [!NOTE]
-> The sessions element uses a personalized list functionality, but it has a few limitations. At present, it's not possible to customize the date and time format of the sessions; the date and time is by default displayed in United States format. We plan to address this in the future.
+> The sessions element uses a dynamic list functionality, but it has a few limitations. At present, it's not possible to customize the date and time format of the sessions; the date and time is by default displayed in United States format. It's also not possible to change the order of the sessions; they are ordered based on the record creation date. Lastly, it's not possible to add more attributes and information about the sessions. We plan to address this limitation in the near future.
 
 ## Style your default registration forms with sessions using Theme
 

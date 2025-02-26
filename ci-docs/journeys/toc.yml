@@ -380,8 +380,6 @@
         href: set-up-event.md
       - name: Set up session-level registration
         href: real-time-journeys-event-session.md
-      - name: "Preview: Build an event registration portal with Power Pages"
-        href: event-portal-template.md
       - name: Create an event from another event
         href: event-from-event.md
     - name: Host a Microsoft Teams webinar
@@ -396,10 +394,10 @@
         href: invite-register-house-event-attendees.md
       - name: Create an event registration experience
         href: event-registration-experience.md
+      - name: "Preview: Build an event registration portal with Power Pages"
+        href: event-portal-template.md
     - name: Manage events
       items:
-      - name: Event management dashboard
-        href: event-management-dashboard.md
       - name: Manage event sponsorships
         href: manage-event-sponsorships.md
       - name: Manage attendee logistics and accommodation
