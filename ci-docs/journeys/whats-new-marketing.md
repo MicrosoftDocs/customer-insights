@@ -46,7 +46,7 @@ N/A
 	- [Release plan](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/maximize-event-capacity-waitlist-registrations) 
 	- [Docs]()
 
-	 :::image type="content" source="media/waitlist-feature-screen1.png" alt-text="Maximize event capacity with waitlist registrations." lightbox="media/waitlist-feature-screen1.png":::
+	 :::image type="content" source="media/waitlist-feature-screen.png" alt-text="Maximize event capacity with waitlist registrations." lightbox="media/waitlist-feature-screen.png":::
 
 - **Collect extra customer info without updating your data model** 
 	- Easily gather additional information about your customers by creating any kind of question directly in the form editor without the need to create new custom attributes for your lead or contact entity. For example, you can create fields to ask, “What is your meal preference?” or create contest questions to increase your customer satisfaction and retention.
