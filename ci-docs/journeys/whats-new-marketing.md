@@ -55,9 +55,13 @@ N/A
 
 	 :::image type="content" source="media/custom-form-fields-resized.png" alt-text="Collect extra customer info without updating your data model ." lightbox="media/custom-form-fields-resized.png":::
 
+<!---
+
 #### Monthly enhancements
 
 - [Title](link)
+
+-->
 
 ### February 2025 update
 
