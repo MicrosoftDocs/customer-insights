@@ -53,7 +53,7 @@ N/A
 	- [Release plan](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/collect-extra-customer-information-without-creating-custom-attributes) 
 	- [Docs]()
 
-	 :::image type="content" source="media/custom-form-fields-resized.png" alt-text="Collect extra customer info without updating your data model ." lightbox="media/custom-form-fields-resized.png":::
+	 :::image type="content" source="media/custom-form-fields-resized.png" alt-text="Collect extra customer info without updating your data model." lightbox="media/custom-form-fields-resized.png":::
 
 <!---
 
