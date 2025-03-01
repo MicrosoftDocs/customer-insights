@@ -60,7 +60,7 @@ Custom form templates simplify creating marketing and event registration forms. 
 
 To create a new custom form, navigate to the **Templates** section in the left site navigation. Select the **New template** button in the top ribbon and choose **Form**. You can access the list of all your form templates from the **Templates** page by selecting the **Form** tile.
 
-:::image type="content" source="media/real-time-marketing-custom-form.png" alt-text="Customize card gallery." lightbox="media/real-time-marketing-custom-form.png":::
+:::image type="content" source="media/real-time-marketing-custom-form.png" alt-text="Custom form template" lightbox="media/real-time-marketing-custom-form.png":::
 
 > [!TIP]
 > If you want to use an existing form as a new custom template, you can copy its HTML code and paste it into the newly created custom template.
