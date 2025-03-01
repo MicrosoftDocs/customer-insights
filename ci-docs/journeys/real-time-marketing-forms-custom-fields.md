@@ -54,6 +54,18 @@ The following field types are available for creating unmapped fields:
 
 ### Branch journey using unmapped field value
 
+All submitted values of unmapped fields are stored in the form submission. The *Form Submission Fields Snapshot* attribute of form submission interaction is a string containing all submitted values in *key: value* format. The *key* is *Field Value Localized name* of the form submission. The *value* is represented by the *Value* in form submission.
+
+You can follow these steps to branch your journey using submitted values of unmapped fields for journeys started by *Marketing form submitted* trigger:
+
+1. Insert an “Attribute branch” tile anywhere in the journey where you want to check the values and give it a meaningful name (for example “Check unmapped field”).
+1. For the first branch (“Branch 1”), select the “add conditions” link on the right side of the journey canvas to configure the branching statement.
+1. Provide a name for the branch (for example “option 1”), choose “make condition on an attribute” and choose “Trigger -> Marketing Form Submitted -> Form Submission Field Snapshot”.
+1. Change the value of operator from *Equals* to *Contains*.
+1. Enter the condition in this format: *Field Value Localized Name*: *Value*. For example “unmapped_field_name: 1”.
+
+:::image type="content" source="media/real-time-marketing-branch-journey-using-unmapped-field.png" alt-text="Branch journey using unmapped field" lightbox="media/real-time-marketing-custom-form.png":::
+
 ## Save fields to reuse them in other forms
 
 Both unmapped fields and modified mapped fields can be saved for later reuse in other forms. The saved fields are shared across your whole organization allowing your colleagues tou use fields created by you.
