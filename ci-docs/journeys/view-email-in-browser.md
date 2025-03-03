@@ -1,7 +1,7 @@
 ---
 title: Enhance email engagement by allowing browser viewing
 description: Learn how to enhance email engagement by allowing browser viewing in Dynamics 365 Customer Insights - Journeys.
-ms.date: 11/24/2023
+ms.date: 03/03/2025
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
@@ -19,7 +19,7 @@ You can add a link to allow customers to view your emails in a web browser. This
 View in browser is a general setting that is disabled by default.
 
 > [!NOTE]
-> View in browser links are only functional when you send emails to your **contacts**, **leads**, or **CID Profiles** through **journeys**.
+> View in browser links are only functional when you send emails to your **contacts**, **leads**, or **Customer Insights - Data Profiles** through journeys.
 
 ## Enable view in browser
 
