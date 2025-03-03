@@ -19,7 +19,7 @@ You can add a link to allow customers to view your emails in a web browser. This
 View in browser is a general setting that is disabled by default.
 
 > [!NOTE]
-> View in browser links are only functional when you send emails to your **contacts** through **journeys**.
+> View in browser links are only functional when you send emails to your **contacts**, **leads**, or **CID Profiles** through **journeys**.
 
 ## Enable view in browser
 
