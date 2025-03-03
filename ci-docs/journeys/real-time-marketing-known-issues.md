@@ -63,6 +63,7 @@ As we continue to work on Customer Insights - Journeys and refine the experience
 ## Lead scoring
 
 - Parent contact scoring affects the time needed for scoring processing. We recommend avoiding parent contact scoring, especially if you have a large number of contacts.
+- If you enable Parent contact scoring, form submissions interactions will be counted twice in the lead scoring model.
 
 ## Segments
 
