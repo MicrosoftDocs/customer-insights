@@ -1,7 +1,7 @@
 ---
 title: Real-time journeys transition FAQs
 description: Discover how to transition from outbound marketing to real-time journeys in Customer Insights - Journeys. Get answers to frequently asked questions.
-ms.date: 12/03/2024
+ms.date: 03/04/2025
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -39,7 +39,11 @@ As a new customer, when you provision Customer Insights – Journeys, you'll onl
 
 ## I can't transition by the outbound marketing removal date. Can I request an exception?
 
-Unfortunately, no. In August 2023, we communicated that outbound marketing will no longer receive investments and migration to real-time journeys was an important next step. We're now giving customers nearly a year advanced notice of the removal date, so customers have adequate time to plan and complete the transition to real-time journeys. You should prioritize and complete transitioning to real-time journeys before the outbound marketing removal date. We're not able to offer any exceptions because outbound marketing won't be supported past this date.
+We first announced removal of outbound marketing in August 2023 and later set June 30, 2025 as the removal date, which remains unchanged. As detailed in [the next question](), after June 30, 2025 we'll begin taking steps to reduce outbound marketing usage and eventually remove it. If you have begun your transition and require additional time, you can submit a request for an extension as explained in the [Outbound marketing to real-time marketing]() downloadable PDF. Extension requests aren't automatic, they're evaluated on a case-by-case basis. If approved, extensions are granted for a very limited period only.
+
+## What will happen after Jun 30, 2025? Will outbound marketing stop working?
+
+We'll gradually phase out outbound marketing rather than removing it abruptly. Starting in April and May 2025, users trying to create new outbound marketing emails, journeys, segments, forms, or events will see a message dialog advising them to use real-time journeys instead and informing them of the upcoming removal of outbound marketing. Initially, users can dismiss the dialog and continue to create outbound marketing objects. However, starting in July 2025, the dialog become non-dismissible and will block users from creating new outbound marketing content. Existing journeys, segments, forms, and events will continue to work. Unused segments won't be evaluated and in-use segments will be evaluated less frequently. Outbound marketing support will be limited to critical issues only. As outbound marketing usage declines and eventually stops, we will first hide it from the interface and then remove it completely. See also [What will happen to outbound tables and data when outbound marketing is removed?]().
 
 ## Why aren't you supporting social posting in real-time journeys? Do you have a recommendation on what to use instead?
 
