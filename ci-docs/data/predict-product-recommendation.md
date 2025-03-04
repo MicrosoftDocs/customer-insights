@@ -1,7 +1,7 @@
 ---
 title: "Predict product recommendations (preview)"
 description: "Predict the products a customer is likely to purchase or interact with."
-ms.date: 01/12/2024
+ms.date: 03/04/2025
 ms.reviewer: mhart
 ms.topic: how-to
 author: joytaylor
@@ -45,7 +45,7 @@ For example, Contoso wants to increase their revenue by customizing webpages to 
   - **Value of the transaction**: Numerical value of the purchase or transaction.
   - **Unique product ID**: ID of the product or service purchased if your data is at a line item level.
   - **Purchase or return**: A boolean true/false value where *true* identifies that a transaction was a return. If the Purchase or Return data isn't provided in the model and the **Value of the transaction** is negative, we infer a return.
-- A product catalog data table to use as a product filter.
+- A product catalog data table to use as a product filter. Limit the number of products to less than 50,000. More than 50,000 products decreases effectiveness and increases production time. Consider removing rare or outdated products. Alternately, consider configuring the model using a higher level in your product hierarchy.
 
 > [!NOTE]
 > - The model requires the transaction history of your customers where transaction is any data that describes a user-product interaction. For example, purchasing a product, taking a class, or attending an event.
