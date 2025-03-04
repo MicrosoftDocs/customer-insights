@@ -38,14 +38,14 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 	- [Release plan](/dynamics365/release-plan/2024wave2/customer-insights/dynamics365-customer-insights-journeys/improve-engagement-editing-emails-live-journeys) 
 	- [Docs]()
 
-	   :::image type="content" source="media/editable-emails.png" alt-text="Editable email links with alias." lightbox="media/editable-emails.png":::
+	  :::image type="content" source="media/editable-emails.png" alt-text="Editable email links with alias." lightbox="media/editable-emails.png":::
 
 - **Understand customer inflows and exits at every journey step** 
 	- It’s critical to understand exactly what happened to each customer who entered and exited your real-time journeys. With improved journey analytics, you’ll gain confidence in the processing of every step in your journey through improved metrics and an increased ability to export data. For example, if your journey uses exit or exclusion segments, you can see and understand why fewer customers started your journey than were in the entry segment. You can also see the list of customers who entered and exited each step in the journey and export lists of up to 50,000 people for further analysis.
 	- [Release plan](/dynamics365/release-plan/2024wave2/customer-insights/dynamics365-customer-insights-journeys/confidently-understand-customer-inflows-exits-at-every-step-journey) 
 	- [Docs]()
 
-	   :::image type="content" source="media/tile-analytics-release-planner.png" alt-text="View of journey entry tile analytics showing the inflow, processing, processed, and exit statistics." lightbox="media/tile-analytics-release-planner.png":::
+	  :::image type="content" source="media/tile-analytics-release-planner.png" alt-text="View of journey entry tile analytics showing the inflow, processing, processed, and exit statistics." lightbox="media/tile-analytics-release-planner.png":::
 
 - **Personalize messages and make journey decisions based on web interactions** 
 	- With Customer Insights - Journeys, you can now track and leverage your customers’ online behavior to deliver personalized experiences across your digital channels. For example, you can boost conversions and customer loyalty by sending tailored offers after customers visit your website and show interest in a product or service. By tracking additional data about customers' online journeys, you can get valuable insights into your customers' preferences and needs and easily measure your campaign’s effectiveness.
@@ -57,14 +57,14 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 	- [Release plan](/dynamics365/release-plan/2024wave2/customer-insights/dynamics365-customer-insights-journeys/marketers-accelerate-journey-creation-using-journey-templates) 
 	- [Docs]()
 
-	   :::image type="content" source="media/journey-templates.png" alt-text="Journey templates gallery." lightbox="media/journey-templates.png":::
+	  :::image type="content" source="media/journey-templates.png" alt-text="Journey templates gallery." lightbox="media/journey-templates.png":::
 
 - **Generate leads that link to an existing contact** 
 	- Your business has unique ways of organizing customer data and classifying potential leads. Now, with real-time journey forms, you can manage your contacts and leads more effectively according to your company's established processes. For example, you can recognize existing customers who fill out a lead form, so they're not mistaken for new leads. With this new set of capabilities to connect lead and contact data, you can choose how existing contact or lead details should be updated and define advanced matching rules to prevent duplicate records. Additionally, you can set defaults so everything is already configured each time a new form is created. All these new capabilities allow you to fine-tune how form data is handled to provide better quality leads and match your company's established processes.
 	- [Release plan](/dynamics365/release-plan/2024wave2/customer-insights/dynamics365-customer-insights-journeys/planned-features) 
 	- [Docs]()
-
-	   :::image type="content" source="media/generate-leads.png" alt-text="Generate leads that link to an existing contact." lightbox="media/generate-leads.png":::
+		
+	  :::image type="content" source="media/generate-leads.png" alt-text="Generate leads that link to an existing contact." lightbox="media/generate-leads.png":::
 
 #### Public preview
 
