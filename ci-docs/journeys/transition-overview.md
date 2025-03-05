@@ -1,7 +1,7 @@
 ---
 title: Transition overview
 description: Transition from outbound marketing to real-time journeys in Dynamics 365 Customer Insights. Follow our guide to avoid interruptions before June 30, 2025.
-ms.date: 11/22/2024
+ms.date: 03/05/2025
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -55,7 +55,7 @@ If you're an existing outbound marketing user and the "Enable" outbound marketin
 - This request should only be made by customers who already have been using outbound marketing. Requests from customers who never had outbound marketing will be denied.
 - Don't create support tickets or use other channels for the same requests; you'll be redirected to this form.
 - This form requires an email address. The email address is used to communicate receipt of the request, confirming when the request has been reviewed, and if needed, ask for additional information.
-- If you need a new portal provisioned with your outbound marketing instance, you can ask for it in the same request. You can't attach an existing portal; you can only have a new one provisioned for your outbound marketing instance. If you need to add portals  to other existing outbound orgs, dont use this form. Instead follow guidance at <https://learn.microsoft.com/en-us/dynamics365/customer-insights/journeys/portal-optional#adding-a-power-apps-portal-to-an-outbound-marketing-instance>. 
+- If you need a new portal provisioned with your outbound marketing instance, you can ask for it in the same request. You can't attach an existing portal; you can only have a new one provisioned for your outbound marketing instance. If you need to add portals  to other existing outbound orgs, dont use this form. Instead follow guidance at [Adding a Power Apps portal to an outbound marketing instance](portal-optional.md#adding-a-power-apps-portal-to-an-outbound-marketing-instance). 
 - Most requests are reviewed in about three to five business days once all required information is available.
 
 [!INCLUDE [transition-comments](./includes/transition-comments.md)]
