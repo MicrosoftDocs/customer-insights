@@ -1,7 +1,7 @@
 ---
 title: Personalize messages, make journey decisions based on web interactions
 description: Learn how to personalize messages and make journey decisions based on web interactions in Dynamics 365 Customer Insights - Journeys.
-ms.date: 01/21/2025
+ms.date: 03/10/2025
 ms.topic: article
 author: alfergus
 ms.author: alfergus
