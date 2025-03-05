@@ -332,7 +332,7 @@
       items:
       - name: Edit a live journey
         href: real-time-marketing-edit-journey.md
-      - name: "Preview: Edit email components in a live journey"
+      - name: Edit email components in a live journey
         href: edit-email-in-live-journey.md
       - name: Enhanced journey reminders
         href: real-time-marketing-enhanced-journey-reminders.md
@@ -448,7 +448,7 @@
       href: real-time-marketing-cross-journey-analytics.md
     - name: How to use aggregate channel analytics
       href: real-time-marketing-channel-analytics.md
-    - name: "Preview: Make journey decisions based on web interactions"
+    - name: Make journey decisions based on web interactions
       href: interaction-journey-decision.md
     - name: How to use email insights
       href: email-insights.md
