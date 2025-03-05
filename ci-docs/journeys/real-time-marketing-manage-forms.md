@@ -87,12 +87,7 @@ The theme assistant is a Copilot feature in Customer Insights - Journeys. You ca
 
 :::image type="content" source="media/real-time-marketing-form-theme-copilot.png" alt-text="Fetch styles from your website using Copilot." lightbox="media/real-time-marketing-form-theme-copilot.png":::
 
-## Preview: Parent contact for lead
-
-> [!IMPORTANT]
-> A preview feature is a feature that is not complete but is made available before it’s officially in a release so customers can get early access and provide feedback. Preview features aren’t meant for production use and may have limited or restricted functionality.
->
-> Microsoft doesn't provide support for this preview feature. Microsoft Dynamics 365 Technical Support won’t be able to help you with issues or questions. Preview features aren’t meant for production use, especially to process personal data or other data that are subject to legal or regulatory compliance requirements.
+## Parent contact for lead
 
 The **Lead & Contact** audience allows you to update a lead and contact entity with a single form submission. You can change the audience using the picker in the top right corner of the form editor.
 
