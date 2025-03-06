@@ -39,7 +39,7 @@ As a new customer, when you provision Customer Insights – Journeys, you'll onl
 
 ## I can't transition by the outbound marketing removal date. Can I request an exception?
 
-We first announced the removal of outbound marketing in August 2023 and later set June 30, 2025, as the removal date, which remains unchanged. As detailed in [the next question](transition-faqs.md#what-will-happen-after-june-30-2025-will-outbound-marketing-stop-working), after June 30, 2025, we begin taking steps to reduce outbound marketing usage and eventually remove it. If you have begun your transition and require additional time, you can submit a request for an extension as explained in the [Outbound marketing to real-time marketing]() downloadable PDF. Extension requests aren't automatic; they're evaluated on a case-by-case basis. If approved, extensions are granted for a limited period only.
+We first announced the removal of outbound marketing in August 2023 and later set June 30, 2025, as the removal date, which remains unchanged. As detailed in [the next question](transition-faqs.md#what-will-happen-after-june-30-2025-will-outbound-marketing-stop-working), after June 30, 2025, we begin taking steps to reduce outbound marketing usage and eventually remove it. If you have begun your transition and require additional time, you can submit a request for an extension as explained in the [Requesting an extension for outbound marketing removal]() downloadable PDF. Extension requests aren't automatic; they're evaluated on a case-by-case basis. If approved, extensions are granted for a limited period only.
 
 ## What will happen after June 30, 2025? Will outbound marketing stop working?
 
