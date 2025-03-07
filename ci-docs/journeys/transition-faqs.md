@@ -1,7 +1,7 @@
 ---
 title: Real-time journeys transition FAQs
 description: Discover how to transition from outbound marketing to real-time journeys in Customer Insights - Journeys. Get answers to frequently asked questions.
-ms.date: 03/06/2025
+ms.date: 03/07/2025
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -37,9 +37,9 @@ As is the case currently, newly created, copied, migrated, or restored environme
 
 As a new customer, when you provision Customer Insights – Journeys, you'll only see real-time journeys. We're not offering outbound marketing to new customers anymore, so your plan should be to implement and go live with real-time journeys. We can't make any exceptions to this, so you shouldn't raise any support requests for adding outbound marketing.
 
-## I can't transition by the outbound marketing removal date. Can I request an exception?
+## I can't transition by the outbound marketing removal date. Can I request an extension?
 
-We first announced the removal of outbound marketing in August 2023 and later set June 30, 2025, as the removal date, which remains unchanged. As detailed in [the next question](transition-faqs.md#what-will-happen-after-june-30-2025-will-outbound-marketing-stop-working), after June 30, 2025, we begin taking steps to reduce outbound marketing usage and eventually remove it. If you have begun your transition and require additional time, you can submit a request for an extension as explained in the [Requesting an extension for outbound marketing removal](https://download.microsoft.com/download/ef2db164-d7ef-4fdd-be9a-308939d1b4e1/OBMtoRTM.pdf) downloadable PDF. Extension requests aren't automatic; they're evaluated on a case-by-case basis. If approved, extensions are granted for a limited period only.
+We first announced the removal of outbound marketing in August 2023 and later set June 30, 2025, as the removal date, which remains unchanged. As detailed in [the next question](transition-faqs.md#what-will-happen-after-june-30-2025-will-outbound-marketing-stop-working), after June 30, 2025, we begin taking steps to reduce outbound marketing usage and eventually remove it. If you have begun your transition and require additional time, you can submit a request for an extension as explained in this document: [Requesting an extension for outbound marketing removal](https://download.microsoft.com/download/ef2db164-d7ef-4fdd-be9a-308939d1b4e1/OBMtoRTM.pdf) (downloadable PDF). Extension requests aren't automatic; they're evaluated on a case-by-case basis. If approved, extensions are granted for a limited period only.
 
 ## What will happen after June 30, 2025? Will outbound marketing stop working?
 
