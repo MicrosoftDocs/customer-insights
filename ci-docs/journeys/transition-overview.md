@@ -64,7 +64,7 @@ Go back to **Settings** > **Versions** in Customer Insights - Journeys and selec
 
 ## Past communications about outbound marketing removal
 
-| Date       | Communication                                                                                                      |
+| Date       | Communication    |                                                                                                  |
 |------------|--------------------------------------------------------------------------------------------------------------------|
 | December 2022   | [Transition playbook](https://community.dynamics.com/blogs/post/?postid=1b4394d5-7764-4484-aba9-c7f972292c10) published.                                                                                      |
 Announcement that outbound marketing isn't available to new customers, receives no new features, and is being removed in the future: [Transition to real-time marketing and transform your customer experience](https://www.microsoft.com/dynamics-365/blog/it-professional/2023/07/18/transition-to-real-time-marketing-and-transform-your-customer-experience/).
