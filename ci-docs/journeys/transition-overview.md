@@ -27,7 +27,7 @@ New trials can only be created with real-time journeys.
 
 ## Guidance for new customers
 
-New customers who install Customer Insights - Journeys no longer see the outbound marketing module and can't install it. Because outbound marketing is being removed, new customers need to adopt real-time journeys.
+New customers who install Customer Insights - Journeys no longer see the outbound marketing module and can't install it. Because outbound marketing is being removed, new customers need to use real-time journeys.
 
 Here are some recommendations depending on your situation:
 
@@ -38,7 +38,7 @@ Here are some recommendations depending on your situation:
 
 ## Guidance for existing customers currently using outbound marketing
 
-Existing customers still on outbound marketing must transition to real-time journeys before June 30, 2025 to avoid interruption and gain optimal performance, scale, ongoing product investments, and AI Copilot features. Learn more: [Customer Insights - Journeys transition FAQs](transition-faqs.md)
+Existing customers still on outbound marketing must transition to real-time journeys before June 30, 2025 to avoid interruption and gain optimal performance, scale, ongoing product investments, and AI Copilot features. Learn more: [Customer Insights - Journeys transition FAQs](transition-faqs.md).
 
 Here are some recommended actions for existing customers depending on their needs:
 
@@ -53,7 +53,7 @@ If you're an existing outbound marketing user, you should see the "Enable" outbo
   1. Sign in to the Customer Insights - Journeys app using a system admin user account.
   1. Go to **Settings** > **Versions** and select the **Manage + Update** link. This takes you to the marketing installation page.
   1. In the browser address bar, add `&redirecttolegacyexp=true` to the page address URL and then reload the page.
-Go back to **Settings** > **Versions** in Customer Insights - Journeys and select the "Enable" link again. If this still doesn't work, complete the outbound marketing request form mentioned earlier and add this note: "Already completed the user token generation step, the Enable link still failed."
+  1. Go back to **Settings** > **Versions** in Customer Insights - Journeys and select the "Enable" link again. If this still doesn't work, complete the outbound marketing request form mentioned earlier and add this note: "Already completed the user token generation step, the Enable link still failed."
 
 - This form is only for existing customers currently using outbound marketing who are unable to use the "Enable" link as described above. Requests for any other reasons will be rejected.
 - This request should only be made by customers who have already been using outbound marketing. Requests from customers who never had outbound marketing will be denied.
@@ -67,7 +67,7 @@ Go back to **Settings** > **Versions** in Customer Insights - Journeys and selec
 | Date       | Communication    | 
 |------------|--------------------------------------------------------------------------------------------------------------------|
 | December 2022   | [Transition playbook](https://community.dynamics.com/blogs/post/?postid=1b4394d5-7764-4484-aba9-c7f972292c10) published.                                                                                  |
-| July 2023 | Announcement that outbound marketing isn't available to new customers, receives no new features, and is being removed in the future: [Transition to real-time marketing and transform your customer experience](https://www.microsoft.com/dynamics-365/blog/it-professional/2023/07/18/transition-to-real-time-marketing-and-transform-your-customer-experience/). |
+| July 2023 | Announced that outbound marketing isn't available to new customers, receives no new features, and is being removed in the future: [Transition to real-time marketing and transform your customer experience](https://www.microsoft.com/dynamics-365/blog/it-professional/2023/07/18/transition-to-real-time-marketing-and-transform-your-customer-experience/). |
 | October 2023   | Added [transition resources](transition-resources.md) and area-specific [transition guidance](transition-walkthrough-functional.md).                                 |
 | January 2024   | Transition blog: [Transition to real time journeys – the time is now](https://www.microsoft.com/dynamics-365/blog/it-professional/2024/01/09/transition-to-real-time-journeys-the-time-is-now/).                                   |
 | August 2024   | Announced that outbound marketing is being [removed after June 30, 2025](real-time-marketing-overview.md). In-product banner announcing outbound marketing removal added. Admin email and message in the message center. |
