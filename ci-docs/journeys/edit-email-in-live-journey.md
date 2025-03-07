@@ -1,5 +1,5 @@
 ---
-title: "Edit email components in a live journey"
+title: Edit email components in a live journey
 description: Learn how to edit email components in live journey in Dynamics 365 Customer Insights - Journeys
 ms.date: 09/13/2024
 ms.topic: article
