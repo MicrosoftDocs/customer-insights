@@ -1,7 +1,7 @@
 ---
 title: Transition overview
 description: Transition from outbound marketing to real-time journeys in Dynamics 365 Customer Insights. Follow our guide to avoid interruptions before June 30, 2025.
-ms.date: 11/22/2024
+ms.date: 03/06/2025
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -45,7 +45,7 @@ Here are some recommendation actions for existing customers depending on your ne
 | Situation                                                                                                          | Action                                                                                                                                                                                                                                                       |
 |--------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | I provisioned a new org (or copied, migrated, or restored an existing org) and don't see outbound marketing                                             | This is expected; outbound marketing is no longer included in new orgs. We strongly recommend using real-time journeys as outbound marketing will be removed on June 30, 2025. See [Why should I transition to real-time journeys?](transition-faqs.md#why-should-i-transition-to-real-time-journeys) |
-| I'm planning to transition to real-time journeys soon but need outbound marketing until then.  | You can add outbound marketing back using the **Enable** link available on the **Settings** > **Versions** page. <br><br> **Important**: To see the link and add outbound marketing, you need to be an admin. If you're not an admin, ask someone who is to do this step. If you still don't see the link, follow the guidance for [requesting outbound marketing to be added](transition-overview.md#if-the-enable-link-isnt-available-or-doesnt-work). If you need a new portal provisioned with your outbound marketing instance, you can request it at the time of provisioning or afterwards. You can't attach an existing portal; you can only have a new one provisioned for your outbound marketing instance.                |
+| I'm planning to transition to real-time journeys soon but need outbound marketing until then.  | You can add outbound marketing back using the **Enable** link available on the **Settings** > **Versions** page. <br><br> **Important**: To see the link and add outbound marketing, you need to be an admin. If you're not an admin, ask someone who is to do this step. If you still don't see the link, follow the guidance for [requesting outbound marketing to be added](transition-overview.md#if-the-enable-link-isnt-available-or-doesnt-work).                |
 
 ### If the "Enable" link isn't available or doesn't work
 
@@ -55,6 +55,7 @@ If you're an existing outbound marketing user and the "Enable" outbound marketin
 - This request should only be made by customers who already have been using outbound marketing. Requests from customers who never had outbound marketing will be denied.
 - Don't create support tickets or use other channels for the same requests; you'll be redirected to this form.
 - This form requires an email address. The email address is used to communicate receipt of the request, confirming when the request has been reviewed, and if needed, ask for additional information.
+- If you need a new portal provisioned with your outbound marketing instance, you can ask for it in the same request. You can't attach an existing portal; you can only have a new one provisioned for your outbound marketing instance. If you need to add portals  to other existing outbound orgs, dont use this form. Instead follow guidance at [Adding a Power Apps portal to an outbound marketing instance](portal-optional.md#adding-a-power-apps-portal-to-an-outbound-marketing-instance). 
 - Most requests are reviewed in about three to five business days once all required information is available.
 
 [!INCLUDE [transition-comments](./includes/transition-comments.md)]
