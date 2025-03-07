@@ -80,7 +80,7 @@ As we continue to work on Customer Insights - Journeys and refine the experience
 - Usage of Entity References in Custom or CDS triggers is limited to five hops. Any entity that is more than 5 hops away from the COLA entity, can't be used as an attribute in a journey.
 - When using the "Marketing Form Submitted" standard trigger for your journey care should be taken to ensure that the audience for the journey and the form are the same. Today, we don't display an error or warning when there's a mismatch, but the journey won't start leading to customer confusion.
 - Today, triggers also fire when a record is manually updated in Dynamics 365 Dataverse. This can cause a contact to go through the journey based on the trigger even if they don't do anything to activate it.
-- Today, for trigger-based journeys that use the if/then tile, you can sometimes lose about 1% of all trigger events due to a slight delay in our system catching them.
+- In rare instances, trigger-based journeys that use the if/then tile may encounter a delay in processing certain trigger events, which, in extreme situations, could result in the event not being captured. While this occurrence is highly uncommon, we continuously monitor and enhance our system to minimize any potential impact.
 - Triggers can have at most 30 attributes. If the trigger has a table reference, then such a reference is counted as one attribute toward the limit of 30. There's an additional limit of 1,024 on the number of columns from all such entity references.
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
