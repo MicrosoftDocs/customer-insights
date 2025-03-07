@@ -91,14 +91,14 @@ Real-time journeys already assists marketers with several built-in Copilot capab
 
 **Scale your business**
 
-- Leverage business units, brand profiles, and the new consent center to tailor real-time journeys to cater to your business’s unique requirements.
+- Use business units, brand profiles, and the new consent center to tailor real-time journeys to cater to your business’s unique requirements.
 - Scale your business with 300 million monthly interactions and reach up to 100 million marketing contacts.
 
 Overall, transitioning to real-time journeys is a powerful way for your business to improve marketing strategies, enhance customer engagement, and drive growth.
 
 ## What about my outbound marketing features that are currently unavailable in real-time journeys?
 
-Since announcing the transition to real-time journeys in August 2023, we've made several feature advancements to bridge most top gaps. For example, double opt-in and multiple improvements to segmentation, forms, and journeys have been released. Over the next several months, we'll continue to make improvements wherever possible to bring you a seamless experience. However, our roadmap might not bring full parity with what was offered in outbound marketing. For more information, review the individual pages for each feature area in the transition guidance section: [Functional areas overview](transition-walkthrough-functional.md).
+Real-time journeys is based on newer technology and has a different approach so that it can offer capabilities that outbound marketing can't. Customers might need to change their approach from what they used in outbound marketing. For instance, many scenarios are better solved with triggered journeys instead of segment-based journeys. While this requires designing journeys differently using triggers instead of segments, it's important to focus on the long-term benefits such as scale, Copilot, and other innovations that outbound marketing can't offer. That said, since the announcement we have prioritized many specific features in real-time journeys based on customer feedback and usage. Review [functional area-specific pages](transition-walkthrough-functional.md) to see more details on specific differences and workarounds.
 
 ## What will happen to outbound tables and data when outbound marketing is removed?
 
