@@ -27,7 +27,7 @@ New trials can only be created with real-time journeys.
 
 ## Guidance for new customers
 
-New customers who install Customer Insights - Journeys no longer see the outbound marketing module and can't install it. Because outbound marketing is being removed, we require new customers to adopt real-time journeys.
+New customers who install Customer Insights - Journeys no longer see the outbound marketing module and can't install it. Because outbound marketing is being removed, new customers need to adopt real-time journeys.
 
 Here are some recommendations depending on your situation:
 
@@ -40,7 +40,7 @@ Here are some recommendations depending on your situation:
 
 Existing customers still on outbound marketing must transition to real-time journeys before June 30, 2025 to avoid interruption and gain optimal performance, scale, ongoing product investments, and AI Copilot features. Learn more: [Customer Insights - Journeys transition FAQs](transition-faqs.md)
 
-Here are some recommendation actions for existing customers depending on your needs:
+Here are some recommended actions for existing customers depending on your needs:
 
 | Situation                                                                                                          | Action                                                                                                                                                                                                                                                       |
 |--------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -49,11 +49,11 @@ Here are some recommendation actions for existing customers depending on your ne
 
 ### If the "Enable" link isn't available or doesn't work
 
-If you're an existing outbound marketing user, you should see the "Enable" outbound marketing link as described above. If you dont see the Enable link (and have confirmed you have an admin role), you can fill out [the outbound marketing request form](https://go.microsoft.com/fwlink/?linkid=2251742). If the Enable link is available but didn't work, complete these steps: 
-  1. Log into the Customer Insights - Journeys app using system admin user account. 
+If you're an existing outbound marketing user, you should see the "Enable" outbound marketing link as described above. If you don't see the Enable link (and you confirmed that you have an admin role), fill out [the outbound marketing request form](https://go.microsoft.com/fwlink/?linkid=2251742). If the Enable link is available but didn't work, complete these steps:
+  1. Log in to the Customer Insights - Journeys app using system admin user account. 
   1. Navigate to the **Settings** > **Versions** page and select the **Manage + Update** link. This takes you to the marketing installation page. 
   1. In the browser address bar, add `&redirecttolegacyexp=true` to the page address URL and then reload the page. 
-  1. Go back to the **Settings** > **Version** page in the Customer Insights - Journeys and select the "Enable" link again. If this still doesn't work, complete the outbound marketing request form mentioned earlier and add this note in the form: "Already completed the user token generation step, the Enable link still failed."
+Go back to **Settings** > **Version** in Customer Insights - Journeys and select the "Enable" link again. If this still doesn't work, complete the outbound marketing request form mentioned earlier and add this note: "Already completed the user token generation step, the Enable link still failed."
 
 - This form is only for existing customers currently using outbound marketing who are unable to use the "Enable" link as described above. Requests for any other reasons will be rejected.
 - This request should only be made by customers who have already been using outbound marketing. Requests from customers who never had outbound marketing will be denied.
