@@ -39,7 +39,7 @@ As a new customer, when you provision Customer Insights – Journeys, you'll onl
 
 ## I can't transition by the outbound marketing removal date. Can I request an extension?
 
-We first announced the removal of outbound marketing in August 2023 and later set June 30, 2025, as the removal date, which remains unchanged. As detailed in [the next question](transition-faqs.md#what-will-happen-after-june-30-2025-will-outbound-marketing-stop-working), after June 30, 2025, we begin taking steps to reduce outbound marketing usage and eventually remove it. If you have begun your transition and require additional time, you can submit a request for an extension as explained in this document: [Requesting an extension for outbound marketing removal](https://download.microsoft.com/download/ef2db164-d7ef-4fdd-be9a-308939d1b4e1/OBMtoRTM.pdf) (downloadable PDF). Extension requests aren't automatic; they're evaluated on a case-by-case basis. If approved, extensions are granted for a limited period only.
+We first announced the removal of outbound marketing in August 2023 and later set June 30, 2025, as the removal date, which remains unchanged. As detailed in [the next question](transition-faqs.md#what-will-happen-after-june-30-2025-will-outbound-marketing-stop-working), after June 30, 2025, we'll begin taking steps to reduce outbound marketing usage and eventually remove it. If you've begun your transition and need additional time, you can request an extension as explained in this document: [Requesting an extension for outbound marketing removal](https://download.microsoft.com/download/ef2db164-d7ef-4fdd-be9a-308939d1b4e1/OBMtoRTM.pdf) (downloadable PDF). Extension requests aren't automatic; they're evaluated on a case-by-case basis. If approved, extensions are granted for a limited period only.
 
 ## What will happen after June 30, 2025? Will outbound marketing stop working?
 
@@ -115,21 +115,21 @@ When outbound marketing is removed, the sitemap entry and outbound marketing ser
 - While the outbound marketing user interface won't be available in the sitemap, outbound marketing tables can still be accessed using the advanced search (or in some cases using the standard user interface such as in the contact timeline, which has links to outbound marketing messages). These forms, while available, may not work correctly and won't be supported.	
 - The **import email tool** in real-time journeys will be kept for an additional few months after outbound marketing is removed.	
 - Outbound marketing emails, content blocks, forms, segments, marketing pages, consent data, journeys, templates, lead scoring models, social posts, subscription lists, etc. won't be deleted. 
-- As these assets can't be used in real-time journeys, they need to be migrated or recreated (for more information, review the individual pages for each feature area in the transition guidance section: [Functional areas overview](transition-walkthrough-functional.md)).
+As these assets can't be used in real-time journeys, they need to be migrated or recreated. For more information, review the individual pages for each feature area in the transition guidance section: [Functional areas overview](transition-walkthrough-functional.md).
   - While these tables will remain, any custom user interface that updated or added records to them and relied on outbound marketing services may fail (for example, any custom user interface that had plugins reacting on retrieve/retrieve multiple messages).
 
 ## How do I start with real-time journeys?
 
-New customers start directly in real-time journeys. As a new customer, you can start by exploring the main functionalities, creating a journey, or sending a quick email.
+New customers start directly in real-time journeys. As a new customer, start by exploring the main functionalities, creating a journey, or sending a quick email.
 
-If you're a current customer using outbound, you're in “mixed-mode” where both outbound and real-time journeys capabilities are available and can be used simultaneously. We recommend starting progressively with real-time journeys and then ramping up after you gain confidence. Start using real-time journeys for running new journeys. This way, you have time to train and troubleshoot any dependencies or issues that might arise. After creating and successfully running a few real-time journeys, continue by moving your outbound journeys. This is a great time to revisit and redesign them. For instance, many of your outbound journeys could flow more naturally and be reused by using triggers in real-time journeys.
+If you're a current customer using outbound, you're in “mixed-mode” where both outbound and real-time journeys capabilities are available and can be used simultaneously. Start progressively with real-time journeys and then ramp up after you gain confidence. Use real-time journeys for running new journeys. This way, you have time to train and troubleshoot any dependencies or issues that might arise. After creating and successfully running a few real-time journeys, continue by moving your outbound journeys. This is a great time to revisit and redesign them. For instance, many of your outbound journeys could flow more naturally and be reused by using triggers in real-time journeys.
 
 > [!div class="mx-imgBorder"]
 > ![Graphic showing a gradual transition from outbound to real-time journeys.](media/outbound-to-real-time.png "Graphic showing a gradual transition from outbound to real-time journeys")
 
 To ensure your transition to real-time journeys is a success, we've designed a user-friendly interface that doesn't require extensive retraining. You'll experience interface enhancements that significantly improve usability and efficiency.
 
-To easily kickstart delivering experiences using real-time journeys, we've designed an email transition tool, made outbound segments available directly in real-time journeys, and empowered you to generate more engaging content and revisit or create new journeys within minutes thanks to our new AI-powered Copilot features.
+To easily kickstart delivering experiences using real-time journeys, we've designed an email transition tool, made outbound segments available directly in real-time journeys, and empowered you to generate more engaging content and revisit or create new journeys within minutes with our new AI-powered Copilot features.
 
 ## Where can I get help setting up real-time journeys?
 
@@ -165,20 +165,19 @@ Transitioning to real-time journeys doesn't require extensive user retraining, p
 
 ## What's the new scale of real-time journeys and how does it compare to the previous level?
 
-Marketers can now reach up to 100,000,000 contacts or leads and send up to 300,000,000 messages per month in real-time journeys. This is over three times the previous outbound marketing limit of 30,000,000 contacts and 100,000,000 monthly interactions.
+Marketers can now reach up to 100 million contacts or leads and send up to 300 million messages per month in real-time journeys. This is over three times the previous outbound marketing limit of 30 million contacts and 100 million monthly interactions.
 
 This added capacity empowers marketers to deliver personalized experiences at scale and delight their customers in new ways. Additional interactions help marketers grow their business, whether by increasing their customer base in new markets, reaching additional geographies, promoting new products, or expanding their prospective customer pipeline to reach higher sales targets.
 
 ## When is the increased scale available and is it available only for real-time journeys?
 
-The new scale of 100,000,000 contacts and 300,000,000 monthly interactions can only be unlocked with real-time journeys. It's available immediately for customers who need to operate at the new scale. To learn more, reach out to your Microsoft representative.
-
+The new scale of 100 million contacts and 300 million monthly interactions can only be unlocked with real-time journeys. It's available immediately for customers who need to operate at the new scale. To learn more, contact your Microsoft representative.
 
 ## Are there any additional costs associated with the increased scalability level? What is the implementation process?
 
-There's a contact threshold of 10,000,000 contacts purchased that unlocks the new scale. Existing customers that need to upgrade or new customers must meet the contact threshold to unlock the new scale and receive the increased throughput.
+There's a contact threshold of 10 million contacts purchased that unlocks the new scale. Existing customers who need to upgrade or new customers must meet the contact threshold to unlock the new scale and receive the increased throughput.
 
-To unlock the new scale, reach out to your Microsoft sales representatives with your requirements. The end-to-end process to upgrade to the new scale will be completed within two weeks.
+To unlock the new scale, reach out to your Microsoft sales representative with your requirements. The end-to-end process to upgrade to the new scale is completed within two weeks.
 
 [!INCLUDE [transition-comments](./includes/transition-comments.md)]
 
