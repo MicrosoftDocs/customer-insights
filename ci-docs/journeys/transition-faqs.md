@@ -1,7 +1,7 @@
 ---
 title: Real-time journeys transition FAQs
 description: Discover how to transition from outbound marketing to real-time journeys in Customer Insights - Journeys. Get answers to frequently asked questions.
-ms.date: 03/06/2025
+ms.date: 03/07/2025
 ms.topic: article
 author: alfergus
 ms.author: alfergus
