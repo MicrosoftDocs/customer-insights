@@ -32,48 +32,48 @@ There are two general types of fields: mapped and unmapped. If you want to store
 
 ## Creating unmapped form fields
 
-You can drag and drop a Field type from the Elements to create unmapped fields of the corresponding type.
+You can drag and drop a Field type from the Elements panel to create unmapped fields of the corresponding type.
 
-:::image type="content" source="media/real-time-marketing-add-custom-form-field.png" alt-text="Add unmapped field" lightbox="media/real-time-marketing-custom-form.png":::
+:::image type="content" source="media/real-time-marketing-add-custom-form-field.png" alt-text="Add unmapped field" lightbox="media/real-time-marketing-custom-form-field.png":::
 
-Each unmapped field has **Logical name**. There can be multiple fields with the same logical name, but you can use only a single field of the same logical name in a single form. Once you add a filed to canvas, all fields with the same logical name are disabled in the right pane and they can’t be added to the form. The logical name is used as the key for the submitted value and it is also used in journey orchestration based on submitted values of unmapped field. You can define field label, placeholder text, default value and set if the unmapped field is required for the submission. The unmapped field can be also set as hidden and you can set up a custom validation of the submitted value.
+Each unmapped field has a **Logical name**. There can be multiple fields with the same logical name, but you can use only a single field of the same logical name in a single form. Once you add a field to canvas, all fields with the same logical name are disabled in the right pane and they can’t be added to the form. The logical name is used as the key for the submitted value and it is also used in journey orchestration based on submitted values of unmapped field. You can define field label, placeholder text, default value, and set if the unmapped field is required for the submission. The unmapped field can be also set as hidden and you can set up a custom validation of the submitted value.
 
 The following field types are available for creating unmapped fields:
 
-- **Short text** - represented as a standard input
-- **Long Text** - suitable for longer text inputs
-- **Option set** - you can select if the field is displayed as *dropdown* or *radio button*. You can create multiple options. The user submitting the form can select only a single value.
-- **Multi-select** - rendered as a list of checkboxes. You can create multiple options. The user submitting the form can select multiple values.
-- **Radio button** - is limited to only two options.
-- **Number** - is a special type of input field that accepts only numeric values.
-- **Checkbox** - a single checkbox.
-- **Date & Time** - you can define if it's rendered as Date only or Date & Time field.
+- **Short text**—Represented as a standard input
+- **Long Text**—Suitable for longer text inputs
+- **Option set**—You can select if the field is displayed as *dropdown* or *radio button*. You can create multiple options. The user submitting the form can select only a single value
+- **Multi-select**—Rendered as a list of checkboxes. You can create multiple options. The user submitting the form can select multiple values
+- **Radio button**—Limited to only two options
+- **Number**—A special type of input field that accepts only numeric values
+- **Checkbox**—A single checkbox
+- **Date & Time**—You can define if it's rendered as *Date* only or a *Date & Time* field
 
 > [!WARNING]
-> The unmapped field code has to be always present in the stored form HTML code. If you create an unmapped field by DOM manipulation of an already rendered form, such field's submitted value won't be processed once the back-end validation of form submission is introduced.
+> The unmapped field code must always present in the stored form HTML code. If you create an unmapped field by DOM manipulation of an already rendered form, such field's submitted value won't be processed once the backend validation of form submission is introduced.
 
 ### Branch journey using unmapped field value
 
 All submitted values of unmapped fields are stored in the form submission. The *Form Submission Fields Snapshot* attribute of form submission interaction is a string containing all submitted values in *key: value* format. The *key* is *Field Value Localized name* of the form submission. The *value* is represented by the *Value* in form submission.
 
-You can follow these steps to branch your journey using submitted values of unmapped fields for journeys started by *Marketing form submitted* trigger:
+To branch your journey using submitted values of unmapped fields for journeys started by the *Marketing form submitted* trigger, please perform the following steps:
 
-1. Insert an "Attribute branch" tile anywhere in the journey where you want to check the values and give it a meaningful name (for example "Check unmapped field").
-1. For the first branch ("Branch 1"), select the "add conditions" link on the right side of the journey canvas to configure the branching statement.
-1. Provide a name for the branch (for example "option 1"), choose "make condition on an attribute" and choose "Trigger -> Marketing Form Submitted -> Form Submission Field Snapshot".
-1. Change the value of operator from *Equals* to *Contains*.
+1. Insert an **Attribute branch** tile anywhere in the journey where you want to check the values and give it a meaningful name (for example, "Check unmapped field").
+1. For the first branch ("Branch 1"), select the **Add conditions** link on the right side of the journey canvas to configure the branching statement.
+1. Provide a name for the branch (for example "option 1"), select **make condition on an attribute** and choose **Trigger** > **Marketing Form Submitted** > **Form Submission Field Snapshot**.
+1. Change the value of operator from *Equals* to *Contains.*
 1. Enter the condition in this format: *Field Value Localized Name*: *Value*. For example "unmapped_field_name: 1".
 
 :::image type="content" source="media/real-time-marketing-branch-journey-using-unmapped-field.png" alt-text="Branch journey using unmapped field" lightbox="media/real-time-marketing-custom-form.png":::
 
 ## Save fields to reuse them in other forms
 
-Both unmapped fields and modified mapped fields can be saved for later reuse in other forms. The saved fields are shared across your whole organization allowing your colleagues to use fields created by you.
+Both unmapped fields and modified mapped fields can be saved for reuse later in other forms. The saved fields are shared across your whole organization allowing your colleagues to use your created fields.
 
-:::image type="content" source="media/real-time-marketing-save-field.png" alt-text="Save field" lightbox="media/real-time-marketing-custom-form.png":::
+:::image type="content" source="media/real-time-marketing-save-field.png" alt-text="Save field" lightbox="media/real-time-marketing-save-field.png":::
 
-- The **saved unmapped fields** are located in section *Unmapped* of the Fields right hand side pane.
-- The **saved mapped fields** can be found in the respective *Contact*, *Lead*, or *Lead & Contact* section of the Fields right hand side pane.
+- The **saved unmapped fields** are located in the *Unmapped* section of the **Fields** right hand side pane.
+- The **saved mapped fields** can be found in the respective *Contact*, *Lead*, or *Lead & Contact* sections of the Fields right hand side pane.
 
 Once you add a saved field to canvas and modify it, you can save the changes to the original saved field by selecting *Update field* button.
 
