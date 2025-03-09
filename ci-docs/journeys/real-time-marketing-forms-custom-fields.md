@@ -34,7 +34,7 @@ There are two general types of fields: mapped and unmapped. If you want to store
 
 You can drag and drop a Field type from the Elements panel to create unmapped fields of the corresponding type.
 
-:::image type="content" source="media/real-time-marketing-add-custom-form-field.png" alt-text="Add unmapped field" lightbox="media/real-time-marketing-custom-form-field.png":::
+:::image type="content" source="media/real-time-marketing-add-custom-form-field.png" alt-text="Add unmapped field" lightbox="media/real-time-marketing-add-custom-form-field.png":::
 
 Each unmapped field has a **Logical name**. There can be multiple fields with the same logical name, but you can use only a single field of the same logical name in a single form. Once you add a field to canvas, all fields with the same logical name are disabled in the right pane and they can’t be added to the form. The logical name is used as the key for the submitted value and it is also used in journey orchestration based on submitted values of unmapped field. You can define field label, placeholder text, default value, and set if the unmapped field is required for the submission. The unmapped field can be also set as hidden and you can set up a custom validation of the submitted value.
 
