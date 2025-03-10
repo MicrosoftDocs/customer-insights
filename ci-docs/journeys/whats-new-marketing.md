@@ -82,15 +82,12 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 	 :::image type="content" source="media/custom-form-fields-resized.png" alt-text="Collect extra customer info without updating your data model." lightbox="media/custom-form-fields-resized.png":::
 
 	> [!NOTE]
-	> Custom unmapped fields for event registration forms will be introduced in the April release.  
-
-<!---
+	> Custom unmapped fields for event registration forms will be introduced in the April release.
 
 #### Monthly enhancements
 
-N/A
-
--->
+- **Create enhanced matching rules for forms and journeys**
+	- Maintaining a consistent customer database without duplicate records is crucial for business operations. The new visual editor for matching rules allows you to build complex rules how to match existing contact or lead.
 
 ### February 2025 update
 
