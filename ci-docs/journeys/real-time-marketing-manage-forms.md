@@ -130,16 +130,7 @@ You can change the default matching rule using the **Duplicate records** drop-do
 
 ### Create a custom matching rule
 
-You can choose how to handle duplicate records by creating a new matching rule.
-
-1. Select the bottom left menu to access **Settings**.
-1. Open **Form matching rules** in the **Customer engagement** section.
-1. Select the plus icon (**+**) to create a new matching rule.
-1. Name the matching rule and select the **Target entity**.
-1. **Save the matching rule** (don't select Save & close as you need to stay on this record).
-1. Add matching strategy attributes (fields) that are used to check if the record exists.
-1. Save your new matching rule.
-1. The newly created matching rule can now be selected in the **Duplicate records** list in the form settings.
+The custom matching rule enables you to specify criteria for identifying existing leads or contacts, thereby preventing the creation of duplicate records. [Create custom matching rule](real-time-marketing-matching-rules.md).
 
 ## Field types
 

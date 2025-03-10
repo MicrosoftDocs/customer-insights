@@ -32,8 +32,27 @@ Choose an intuitive name for your new rule, as this name will be used to select 
 
 You can define details of your matching rule in the **Rules** tab.
 
+### Define matching rules
 
+The matching rule builder consists of 3 main parts:
+
+- **Summary** - a human language interpretation of the logic created by your rules
+- **Main rule** - is always executed first to get a group of most relevant records. This is a direct query to database, so the degree of match is always 100% (it is not possible to set up fuzzy matching). You can add multiple attributes to the Main rule. There is always the "OR" operator between the attributes of the rule.
+- **Additional rules** - are executed on the group of records filtered out by the Main rule. You can add multiple attributes to every Additional rule. There is always the "OR" operator between the attributes of the rule. You can create multiple Additional rules. All rules are always linked by the "AND" operator. You can set the "Degree of match", which defines if exact match (100%) is required or what extend of fuzzy match is applied.
+
+:::image type="content" source="media/real-time-marketing-define-matching-rule.png" alt-text="Create a new matching rule" lightbox="media/real-time-marketing-define-matching-rule.png":::
+
+> [!IMPORTANT]
+>
+> - If there is no existing record found by the matching rule, a new record is created.
+> - If there are multiple existing records found by the matching rule, the *latest updated* record is used.
 
 ## Matching existing records in marketing and registration forms
 
-tracking context
+Matching rules can be used for both marketing and event registration form types.
+
+Important consideration for matching evaluation:
+
+- When the existing user is identified by Tracking (tracking context can be used to find the right contact or lead ID) and the submitted values are aligned with the matching rule, the existing user identified by Tracking is updated.
+- When the form targets the combined "lead & contact" audience, the matching rule for contacts is applied first. If a child lead is found for the matched contact, this child lead is prioritized in the lead matching rule evaluation, provided the existing lead meets all the conditions defined in the lead matching rule.
+- To prevent unexpected results, do not use empty values for matching. Make sure all form fields used for matching are set as required.
