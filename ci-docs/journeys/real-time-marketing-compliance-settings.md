@@ -1,7 +1,7 @@
 ---
 title: Consent management overview
 description: Learn how to manage consent settings in Dynamics 365 Customer Insights - Journeys.
-ms.date: 02/06/2024
+ms.date: 11/15/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -14,7 +14,7 @@ search.audienceType:
 # Consent management overview
 
 > [!IMPORTANT]
-> This article applies to real-time journey *and* outbound marketing.
+> This article applies to real-time journeys *and* outbound marketing.
 
 Real-time journeys and outbound marketing have distinct but related constructs for supporting consent and regulatory compliance for communications with customers. This article provides an overview of these differences along with references to more detailed information on ways to approach compliance.
 
@@ -37,6 +37,9 @@ In outbound marketing, consent is captured and stored on the contact entity the 
 Compliance profiles are the hubs to manage consent and compliance in Customer Insights - Journeys. Compliance profiles govern how consent is captured and enforced. Compliance profiles store information such as company address, the preference management experience, and related configuration. Compliance profile settings vary based on the type of compliance profile you're creating or modifying.  
 
 ## User contact preferences
+
+> [!IMPORTANT]
+> Starting on October 10, 2024, unsubscribe links will expire six months after the link is created and will no longer work.
 
 There are four ways that users can manage their contact preferences: preference centers, preference pages, subscription centers, and external links.  
 
@@ -87,7 +90,7 @@ External links allow you to configure a website URL that points to an externally
 
 Managing compliance settings is key to ensuring your business processes conform with privacy laws and regulations. This article gives an overview of administrator compliance setup, preference centers, and real-time journeys concepts. For information on outbound marketing compliance, visit [Outbound marketing compliance settings](privacy-use-features.md).
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RW137KU]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=51f182de-841f-41e8-85c4-49af1caaeeb0]
 
 ### Real-time journeys compliance overview
 
@@ -106,7 +109,6 @@ Compliance profiles are the containers of consent settings. In some instances, c
 Another reason for having multiple compliance profiles would be to support different compliance requirements across regions. For example, a company that operates in the United States and France might choose to have a separate compliance profile for those two locations. Within the United States version, the commercial purpose could be set to a nonrestrictive enforcement model because the U.S. isn't subject to European regulations. Within the France version, however, they might set the commercial purpose to the restrictive enforcement model to require explicit consent before sending any commercial or promotional materials.
 
 When you create a new compliance profile, you can **Use previously captured consent**. This option is intended to facilitate transitioning from a compliance profile with a preference page to one with a preference center. Doing so ensures that any previously captured consent applies to the new compliance profile.
-
 
 > [!NOTE]
 > Currently, you can deactivate a compliance profile or contact point consent record. However, deactivated profiles and contact point consent records will still be used and enforced because existing journeys or messages sent may rely on them. Should you wish to update a user's consent, go to the contact point consent record itself and change the consent value.
@@ -127,16 +129,16 @@ Each Purpose can contain topics to add specific communications types to allow cu
 
 #### Consent enforcement
 
-The **Enforcement model** settings on a purposes control how consent is evaluated before an email is sent. Emails sent to a purpose use that purpose's enforcement model to evaluate if the email is or is not sent. There are three enforcement models that can be chosen depending on your regulatory needs:
+The **Enforcement model** settings on a purposes control how consent is evaluated before a message is sent. Messages sent to a purpose use that purpose's enforcement model to evaluate if the message is or is not sent. There are three enforcement models that can be chosen depending on your regulatory needs:
 
-- **Restrictive**: Emails are sent only to contact points that have opted-in contact point consent records for this purpose (or topic).
-- **Non-restrictive**: Emails are sent to all contact points unless they have an opted-out contact point consent record for this purpose (or topic).
-- **Disabled**: Emails are sent to all contact points. Contact point consent records aren't checked before sending messages to this purpose (or topic).
+- **Restrictive**: Messages are sent only to contact points that have opted-in contact point consent records for this purpose (or topic).
+- **Non-restrictive**: Messages are sent to all contact points unless they have an opted-out contact point consent record for this purpose (or topic).
+- **Disabled**: Messages are sent to all contact points. Contact point consent records aren't checked before sending messages to this purpose (or topic).
 
 > [!NOTE]
-> Currently, the **Enforcement model** setting only applies to email messages. All SMS and custom messages are subject to the restrictive enforcement model, even if their designated purpose has a non-restrictive or disabled enforcement model set.
+> Since the November 2024 release, you can set the enforcement model to all channels including text and custom channels.
 
-Topics use the enforcement model of their parent purpose. Emails that are configured with both a purpose and a topic must have consent for both the purpose and the topic in order for the message to be sent. If a contact point doesn't have consent to send to a purpose, no messages to that purpose's topics are sent to the contact point. For example, if the parent purpose has a restrictive enforcement model, sending an email to a topic requires an opt-in contact point consent record for both the purpose and the topic associated with the email.
+Topics use the enforcement model of their parent purpose. Messages that are configured with both a purpose and a topic must have consent for both the purpose and the topic in order for the message to be sent. If a contact point doesn't have consent to send to a purpose, no messages to that purpose's topics are sent to the contact point. For example, if the parent purpose has a restrictive enforcement model, sending a message to a topic requires an opt-in contact point consent record for both the purpose and the topic associated with the contact point consent.
 
 ##### Considerations for contact entities
 

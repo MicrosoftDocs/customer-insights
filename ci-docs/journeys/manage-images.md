@@ -9,12 +9,13 @@ search.audienceType:
   - admin
   - customizer
   - enduser
+ms.custom: outbound-marketing
 ---
 
 # Manage images for landing pages and email messages
 
 > [!IMPORTANT]
-> This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
+> **This article only applies to [outbound marketing](user-guide.md), which will be removed from the product on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](transition-overview.md)
 
 In [Create a marketing email and go live](create-marketing-email.md), you saw how to upload an image while adding it to an email message, and you can use similar techniques to add images to your marketing page designs. Another way to make images (and other files) available in Dynamics 365 Customer Insights - Journeys is to upload them directly to the file library, which is shared by all users. Your library will typically include brand-identity graphics such as logos, product images, and clip art.
 

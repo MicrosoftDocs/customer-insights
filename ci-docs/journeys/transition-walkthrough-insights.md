@@ -1,7 +1,7 @@
 ---
 title: Transition insights and reports
 description: Learn how to transition insights and reporting capabilities from outbound marketing to real-time journeys in Dynamics 365 Customer Insights - Journeys.
-ms.date: 11/16/2023
+ms.date: 02/05/2025
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -13,30 +13,30 @@ search.audienceType:
 
 # Transition insights and reports
 
+> [!IMPORTANT]
+> **The [outbound marketing](user-guide.md) module will be removed from Customer Insights - Journeys on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](transition-overview.md)
+
 Marketing analytics reports are a critical component of success campaigns. Among other things, reports determine:
 -	How many emails have bounced, delivered, or opened?
 -	Which contacts went to which path in a journey?
 -	How many leads have been generated?
 -	How many journeys ran last month?
 
-Outbound marketing and real-time journeys have equivalent in-app reporting capabilities. Both modules report on KPIs for email sending at a contact, email, or journey level. Additionally, real-time journeys provides an aggregate set of dashboards for journey and channel analytics. Real-time journeys also includes a marketing effectiveness dashboard, which provides valuable information about different marketing assets and their campaign impact.
+Outbound marketing and real-time journeys have equivalent in-app reporting capabilities. Both modules report on KPIs for email sending at a contact, email, or journey level. Additionally, real-time journeys provides an aggregate set of dashboards for journey and channel analytics, as well as individual SMS, push notification, custom channel, and form insights. Real-time journeys also includes a marketing effectiveness dashboard, which provides valuable information about marketing assets and their campaign impacts. Learn more: [Access and interpret analytics](real-time-marketing-analytics.md).
+
+> [!NOTE]
+> If you're migrating outbound marketing emails to real-time journeys, you can't view past outbound marketing email data in the real-time journeys email insights after the migration date. Outbound marketing emails are recreated in real-time journeys and retain their data history separately. However, historical outbound marketing data remains in Customer Insights - Journeys storage and is accessible through Microsoft Fabric.
 
 :::image type="content" source="media/real-time-marketing-effectiveness-analytics-dashboard.png" alt-text="Customer Insights - Journeys effectiveness analytics dashboard." lightbox="media/real-time-marketing-effectiveness-analytics-dashboard.png":::
 
-Sometimes it's required to consume marketing interaction data outside of the in-app experiences. This could mean the creation of reports or integration with other systems. Outbound marketing provides a mechanism to export this data to an Azure Blob storage and sample Power BI reports. This has allowed customers to also build their own custom reports or integration pipelines.
+Sometimes users need to consume marketing interaction data outside of the in-app experiences. This could mean creating reports or integration with other systems. Outbound marketing provides a mechanism to export this data to an Azure Blob storage and sample Power BI reports. This allows users to also build their own custom reports or integration pipelines.
 
-For custom reporting in real-time journeys, there will soon be an option to use Microsoft Fabric as an export destination. This feature is currently in preview. With this capability, you have even more options to consume data with more data sources in your own reports.
+For custom reporting in real-time journeys, you can now create custom Power BI reports tailored to your business needs without data movement. Or, you can export your data using Microsoft Fabric capabilities. Learn more: [Build custom reports using Microsoft Fabric integration](fabric-integration.md). With this capability, you have even more options to consume data with more data sources in your reports. Real-time journeys storage contains real-time journeys as well as outbound marketing interaction data. While the data models are the same between outbound marketing and real-time journeys, you must reconfigure existing custom reports and pipelines to use the new data sources in Microsoft Fabric. Here is the data schema: [Overview of Customer Insights - Journeys interaction data schema](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsightsjourneys/overview). The *SourceSystem* attribute refers to the source system (outbound marketing or real-time journeys) that generated the interaction.
 
-While the data models are the same between outbound marketing and real-time journeys, existing custom reports and pipelines need to be reconfigured to use the new data sources in Microsoft Fabric.
+If you prefer not to use Fabric, we're working on a low-level solution that allows you to access Customer Insights - Journeys interaction data directly in storage and export it to your own third-party system. Using this solution, you need to implement your own data pipelines to export and process the data (in Delta Lake format) based on your specific requirements and reporting systems.
 
-## Relevant upcoming features
+Additionally, advanced bot protection for real-time journeys empowers your business to thrive by safeguarding your business processes. Improve your business decisions with the confidence of knowing that the data you collect is accurate and represents real human interactions. Learn more: [Improve reliability of insights with advanced bot protection](/dynamics365/customer-insights/journeys/bot-protection).
 
-The features listed below may be of interest as you transition from outbound marketing to real-time journeys. These features provide parity, equivalent, or better functionality than what was available in outbound marketing.
-
-- **Custom dashboards**: Effortlessly create custom Power BI reports tailored to your business needs using Microsoft Fabric capabilities. Learn more: [Build custom reports using Microsoft Fabric integration](/dynamics365/release-plan/2023wave2/marketing/dynamics365-marketing/effortlessly-build-custom-reports-tailored-business-needs-using-fabric-integration)
-- **Bot protection**: Advanced bot protection empowers your business to thrive by safeguarding your business processes. Improve your business decisions with the confidence of knowing that the data you collect is accurate and represents real human interactions. Learn more: [Improve reliability of insights with advanced bot protection](/dynamics365/release-plan/2023wave2/marketing/dynamics365-marketing/improve-reliability-insights-advanced-bot-protection)
-
-> [!TIP]
-> If you have questions or comments, visit the [Outbound to real-time transition community forum](https://community.dynamics.com/forums/thread/?partialUrl=Outbound-to-Real-Time-Transition)
+[!INCLUDE [transition-comments](./includes/transition-comments.md)]
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]

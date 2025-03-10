@@ -4,8 +4,8 @@ description: "Learn how to configure the connection and export to Constant Conta
 ms.date: 09/01/2023
 ms.reviewer: mhart
 ms.topic: conceptual
-author: pkieffer
-ms.author: philk
+author: Scott-Stabbert
+ms.author: sstabbert
 ---
 
 # Export segments to Constant Contact (preview)
@@ -23,7 +23,6 @@ Export segments of unified customer profiles to Constant Contact and use them fo
 
 ## Known limitations
 
-- Private link in combination with Bring your own storage (BYOS) is not supported.
 - Up to 1 million customer profiles per export to Constant Contact, which can take up to one hour to complete. The number of customer profiles that you can export to Constant Contact depends on your contract with Constant Contact.
 - Segments only.
 

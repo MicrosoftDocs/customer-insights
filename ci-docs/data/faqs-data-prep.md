@@ -1,7 +1,7 @@
 ---
 title: FAQ for Data prep report (preview)
 description: This FAQ provides information about the AI technology used in the data prep report (preview). It provides key considerations and details about how AI is used, how it was tested and evaluated, and any specific limitations.
-ms.date: 10/11/2023
+ms.date: 11/12/2024
 ms.custom: 
   - responsible-ai-faqs
 ms.topic: article
@@ -51,7 +51,7 @@ We recommend that customers adhere to the intended use for the data prep report 
 
 ## What are the supported geographies and languages?
 
-For more information, see [Copilot International Availability report](https://dynamics.microsoft.com/availability-reports/copilotreport/).
+Go to [Copilot International Availability report](https://releaseplans.microsoft.com/availability-reports/?report=copilotfeaturereport).
 
 ## What operational factors and settings allow for effective and responsible use of the feature?
 

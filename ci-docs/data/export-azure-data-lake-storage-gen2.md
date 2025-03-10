@@ -1,11 +1,11 @@
 ---
 title: "Export data to Azure Data Lake Storage Gen2 (preview)"
 description: "Learn how to configure the connection to Azure Data Lake Storage Gen2."
-ms.date: 02/01/2024
+ms.date: 11/07/2024
 ms.reviewer: mhart
 ms.topic: how-to
-author: pkieffer
-ms.author: nikeller
+author: Scott-Stabbert
+ms.author: sstabbert
 ---
 
 # Export data to Azure Data Lake Storage Gen2 (preview)
@@ -41,6 +41,8 @@ Store your data from Dynamics 365 Customer Insights - Data in a Data Lake Storag
 1. Choose who can use this connection. By default, it's only administrators. For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
 1. Enter **Subscription**, **Resource group**, **Storage account**, and **Container** for your Azure Data Lake Storage Gen2.
+
+1. Optionally, if your storage account is behind a firewall, select **Enable Private Link**. For more information, go to [Private Links](private-link.md).
 
 1. Review the [data privacy and compliance](connections.md#data-privacy-and-compliance) and select **I agree**.
 

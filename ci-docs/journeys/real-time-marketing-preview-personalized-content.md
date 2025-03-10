@@ -16,6 +16,8 @@ search.app:
 
 # Preview personalized content
 
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=79c92ff1-7637-4200-997f-e6e0840a7cec]
+
 > [!NOTE]
 > When you test send an email and use a sample audience record, the sent email uses condition outcomes or variations you manually select during test send (it will not use audience data for conditions). Always send email through a test journey to fully test emails with conditions and conditional content.
 

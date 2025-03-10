@@ -4,8 +4,8 @@ description: "Learn how to configure the connection and export to DotDigital."
 ms.date: 10/10/2023
 ms.reviewer: mhart
 ms.topic: how-to
-author: pkieffer
-ms.author: philk
+author: Scott-Stabbert
+ms.author: sstabbert
 ---
 
 # Export segments to DotDigital (preview)
@@ -23,7 +23,6 @@ Export segments of unified customer profiles to DotDigital address books and use
 
 ## Known limitations
 
-- Private link in combination with Bring your own storage (BYOS) is not supported.
 - Up to 1 million customer profiles per export to DotDigital, which can take up to three hours to complete because of limitations on the provider side. The number of customer profiles that you can export to DotDigital depends on your contract with DotDigital.
 - Segments only.
 - The connector doesn't support deleting DotDigital address books or members in the address books.
@@ -40,7 +39,7 @@ Export segments of unified customer profiles to DotDigital address books and use
 
 1. Choose who can use this connection. By default, it's only administrators. For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
-1. Enter your **DotDigital API username and password**.
+1. Enter your credentials for the DotDigital API.
 
 1. Enter your **DotDigital address book ID**.
 

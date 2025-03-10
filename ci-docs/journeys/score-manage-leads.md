@@ -9,14 +9,15 @@ search.audienceType:
   - admin
   - customizer
   - enduser
+ms.custom: outbound-marketing
 ---
 
 # Design lead-scoring models
 
 > [!IMPORTANT]
-> This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
+> **This article only applies to [outbound marketing](user-guide.md), which will be removed from the product on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](transition-overview.md)
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/ae6596f2-4df4-420e-9635-df776e4e5398]
+> [!VIDEO 7e595aa9-7c2e-4402-82c4-056a999a22ca]
 
 Dynamics 365 Customer Insights - Journeys can calculate a score for each lead based on demographic details, firmographic details, and actions taken by the associated contact (or for account-based leads, contacts belonging to the associated account). Scoreable interactions include, for example: opening an email, submitting a landing page, visiting your website, or attending an event.
 

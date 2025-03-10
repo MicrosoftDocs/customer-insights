@@ -1,40 +1,41 @@
 ---
-title: Set up an Azure Private Link
+title: Set up connections for storage accounts behind firewalls
 description: Learn how to set up an Azure Private Link to connect your Data Lake Storage.
-ms.date: 09/01/2023
+ms.date: 11/08/2024
 ms.topic: how-to
-author: AndreaAczel
-ms.author: anaczel
+author: Scott-Stabbert
+ms.author: sstabbert
 ms.reviewer: mhart
 ms.custom: bap-template
 ---
 
-# Set up an Azure Private Link
+# Set up connections for storage accounts behind firewalls
 
-[Azure Private Link](/azure/private-link/private-link-overview) lets Dynamics 365 Customer Insights - Data connect to your Azure Data Lake Storage account over a private endpoint in your virtual network. For data in a storage account, which isn't exposed to the public internet, Private Link enables the connection to that restricted network.
+If you have Azure Data Lake Storage accounts protected by firewalls, use [Azure Private Link](/azure/private-link/private-link-overview) to connect to Dynamics 365 Customer Insights - Data. Azure Private Link lets Customer Insights - Data connect to your Azure storage over a private endpoint in your virtual network.
 
 > [!IMPORTANT]
-> Minimum role requirement to set up a Private Link connection:
->
-> - Customer Insights - Data: Administrator
-> - Azure built-in role: [Storage Account Contributor](/azure/role-based-access-control/built-in-roles#storage-account-contributor)
-> - Permissions for custom Azure role: [Microsoft.Storage/storageAccounts/read and Microsoft.Storage/storageAccounts/PrivateEndpointConnectionsApproval/action](/azure/role-based-access-control/resource-provider-operations#microsoftstorage)
+> The announced transition from Private Links to managed identities for Azure resources has been paused while we look at options to reduce the impact. The original due date of November 30, 2024 no longer applies. Updated guidance will be provided early next year. For questions, contact CIDManagedIdentity@Microsoft.com.
+> 
+> If your instance doesn't already use private links, your instance must be updated first to support private links. Contact [Support](https://admin.powerplatform.microsoft.com/support) to get your instance updated.
 
-In Customers Insights you can create private links in the following ways:
+There are three scenarios where Customer Insights - Data can be configured to connect to firewall-protected Azure storage containers:
 
-   - When creating a new Customer Insights - Data environment for which you would like to [Use your own Azure Data Lake Storage account](own-data-lake-storage.md) that is protected by your virtual network.
-   - When creating a [data source](connect-common-data-model.md) for which the data is stored in your protected account.
-   - Directly from the **Settings** > **Permissions** > **Private Links** page in Customer Insights - Data.
+- When creating a new Customer Insights - Data environment for which you would like to [Use your own Azure Data Lake Storage account](own-data-lake-storage.md) that is protected by your virtual network.
+- When creating a [data source](data-sources.md) for which the data is stored in your protected Azure Data Lake Storage account.
+- Directly from the **Settings** > **Permissions** > **Private Links** page in Customer Insights - Data.
 
-Regardless of the method you use to create the Private Link, it shows under the **Settings** > **Permissions** > **Private Links** tab in Customer Insights - Data.
+## Prerequisites
+
+- Minimum role requirement to set up a Private Link connection:
+  - Customer Insights - Data: Administrator
+  - Azure built-in role: [Storage Account Contributor](/azure/role-based-access-control/built-in-roles#storage-account-contributor)
+  - Permissions for custom Azure role: [Microsoft.Storage/storageAccounts/read and Microsoft.Storage/storageAccounts/PrivateEndpointConnectionsApproval/action](/azure/role-based-access-control/resource-provider-operations#microsoftstorage)
 
 ## Set up a Private Link when creating a Customer Insights - Data environment
 
 When creating a [Customer Insights - Data environment](create-environment.md) that connects to your virtual network protected storage:
 
 1. Select **Enable Azure Private Link**.
-
-   :::image type="content" source="media/Private-Endpoint-Creation.png" alt-text="Private endpoint creation.":::
 
 1. Select **Create Private Link** to initiate the creation process.
 
@@ -74,8 +75,6 @@ After configuring the Private Link between Customer Insights - Data and your vir
     :::image type="content" source="media/Private-Endpoint-Approval.png" alt-text="Description for the private endpoint approval step.":::
 
 1. In Customer Insights - Data, go to **Settings** > **Permissions** and select the **Private Links** tab. The Private Links now show the status **Approved**.
-
-1. Continue to add your [data sources](connect-common-data-model.md) that are linked to your protected storage.
 
 ## Delete an Azure Private link
 

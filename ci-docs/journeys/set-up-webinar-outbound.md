@@ -9,12 +9,13 @@ search.audienceType:
   - admin
   - customizer
   - enduser
+ms.custom: outbound-marketing
 ---
 
 # Set up a webinar in outbound marketing
 
 > [!IMPORTANT]
-> This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
+> **This article only applies to [outbound marketing](user-guide.md), which will be removed from the product on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](transition-overview.md)
 
 A *webinar* (short for "web seminar") is a live event that one or more people can watch simultaneously online. You can set up any session or event to function as a webinar. An event or session can be webinar-only (where live attendance isn't possible) or a simulcast for attendees who can't make it to the venue to attend a live event. You can also set an event or session as onsite only, which will disable webinars for that item and hide its webinar settings.
 

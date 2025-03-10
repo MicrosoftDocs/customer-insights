@@ -1,7 +1,7 @@
 ---
 title: Create segments with Copilot for Customer Insights - Data (preview)
 description: Let Copilot in Customer Insights - Data help you in creating segments based on data in your environment.
-ms.date: 01/08/2024
+ms.date: 10/23/2024
 ms.reviewer: mhart
 ms.topic: how-to
 author: JimsonChalissery
@@ -21,7 +21,7 @@ Create segments using everyday words in Dynamics 365 Customer Insights - Data wi
 ## Prerequisites
 
 - [Enable Copilot features powered by Azure OpenAI](copilot-global-consent.md) setting turned **On**. Default is **On**.
-- [Environment is in a supported geography and uses a supported language.](faqs-segment-creation.md#what-are-the-supported-geographies-and-languages).
+- Environment is in a [supported geography and uses a supported language](https://releaseplans.microsoft.com/availability-reports/?report=copilotfeaturereport).
 
 ## Create a segment with Copilot
 
@@ -44,8 +44,6 @@ Copilot provides personalized, suggested prompts based on data in your environme
    1. To save the configuration, select **Save** and then **Close**. The segment is in draft mode or inactive so you can make changes to the configuration before actually creating the segment. Or, select **Run** to save and create the segment.
 
 If the resulting segment contains multiple [relationship paths](relationships.md), it uses the shortest path by default. **Edit** the segment to change the relationship path.  
-
-[!INCLUDE [copilot-availability](includes/copilot-availability.md)]
 
 ## Next steps
 

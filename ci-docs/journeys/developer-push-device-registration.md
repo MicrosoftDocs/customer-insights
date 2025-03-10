@@ -47,7 +47,7 @@ POST {PublicEndpoint}/api/v1.0/orgs/%ORG_ID%/pushdeviceregistration/devices
 ```JSON
 {
     "MobileAppId": "00000000-0000-0000-0000-000000000000",
-    "UserId": "00000000-0000-0000-0000-000000000000",
+    "UserId": "00aa00aa-bb11-cc22-dd33-44ee44ee44ee",
     "ApiToken": "%API_TOKEN%",
     "ApnsDeviceToken": "%APNS_TOKEN%"
 }
@@ -62,7 +62,7 @@ POST {PublicEndpoint}/api/v1.0/orgs/%ORG_ID%/pushdeviceregistration/devices
 ```JSON
 {
     "MobileAppId": "00000000-0000-0000-0000-000000000000",
-    "UserId": "00000000-0000-0000-0000-000000000000",
+    "UserId": "00aa00aa-bb11-cc22-dd33-44ee44ee44ee",
     "ApiToken": "%API_TOKEN%",
     "FcmDeviceToken": "%FCM_TOKEN%"
 }
@@ -112,13 +112,13 @@ POST {PublicEndpoint}/api/v1.0/orgs/%ORG_ID%/pushdeviceregistration/devices/batc
 [
     {
         "MobileAppId": "00000000-0000-0000-0000-000000000000",      
-        "UserId": "00000000-0000-0000-0000-000000000000",
+        "UserId": "00aa00aa-bb11-cc22-dd33-44ee44ee44ee",
         "ApiToken": "%API_TOKEN%",
         "ApnsDeviceToken": "%APNS_TOKEN%"
     },
     {
         "MobileAppId": "00000000-0000-0000-0000-000000000000",
-        "UserId": "00000000-0000-0000-0000-000000000000",
+        "UserId": "00aa00aa-bb11-cc22-dd33-44ee44ee44ee",
         "ApiToken": "%API_TOKEN%",
         "ApnsDeviceToken": "%APNS_TOKEN%"
     }
@@ -135,13 +135,13 @@ POST {PublicEndpoint}/api/v1.0/orgs/%ORG_ID%/pushdeviceregistration/devices/batc
 [
     {
         "MobileAppId": "00000000-0000-0000-0000-000000000000",      
-        "UserId": "00000000-0000-0000-0000-000000000000",
+        "UserId": "00aa00aa-bb11-cc22-dd33-44ee44ee44ee",
         "ApiToken": "%API_TOKEN%",
         "FcmDeviceToken": "%FCM_TOKEN%"
     },
     {
         "MobileAppId": "00000000-0000-0000-0000-000000000000",
-        "UserId": "00000000-0000-0000-0000-000000000000",
+        "UserId": "00aa00aa-bb11-cc22-dd33-44ee44ee44ee",
         "ApiToken": "%API_TOKEN%",
         "FcmDeviceToken": "%FCM_TOKEN%"
     }
@@ -263,7 +263,7 @@ POST {PublicEndpoint}/api/v1.0/orgs/%ORG_ID%/pushdeviceregistration/devices/clea
 {
     "MobileAppId": "00000000-0000-0000-0000-000000000000",
     "ApiToken": "%API_TOKEN%",
-    "UserId": "00000000-0000-0000-0000-000000000000",
+    "UserId": "00aa00aa-bb11-cc22-dd33-44ee44ee44ee",
     "DeviceToken": "%OPTIONAL_FCM_OR_APNS_DEVICE_TOKEN%"
 }
 ```
@@ -291,7 +291,7 @@ POST {PublicEndpoint}/api/v1.0/orgs/%ORG_ID%/pushdeviceregistration/devices/clea
 {
     "MobileAppId": "00000000-0000-0000-0000-000000000000",
     "ApiToken": "%API_TOKEN%",
-    "UserId": "00000000-0000-0000-0000-000000000000",
+    "UserId": "00aa00aa-bb11-cc22-dd33-44ee44ee44ee",
     "DeviceToken": "%OPTIONAL_FCM_OR_APNS_DEVICE_TOKEN%"
 }
 ```

@@ -4,8 +4,8 @@ description: "Learn how to configure the connection and export to RollWorks."
 ms.date: 09/01/2023
 ms.reviewer: mhart
 ms.topic: conceptual
-author: pkieffer
-ms.author: philk
+author: Scott-Stabbert
+ms.author: sstabbert
 ---
 
 # Export segments to RollWorks (preview)
@@ -23,7 +23,6 @@ Export segments of unified customer profiles to RollWorks and use them for adver
 
 ## Known limitations
 
-- Private link in combination with Bring your own storage (BYOS) is not supported.
 - Up to 250,000 customer profiles per export to RollWorks, which can take up to 10 minutes to complete. The number of customer profiles that you can export to RollWorks depends on your contract with RollWorks.
 - Segments only.
 

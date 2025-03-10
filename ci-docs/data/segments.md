@@ -5,7 +5,7 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: v-wendysmith
 ms.topic: how-to
-ms.date: 09/01/2023
+ms.date: 01/21/2025
 ms.custom: bap-template
 ---
 
@@ -49,6 +49,7 @@ Select next to a segment to view available actions.
 - [**Manage exports**](#export-segments) to see export-related segments and manage them. [Learn more about exports.](export-destinations.md)
 - **Delete** one or more segments.
 - [**Schedule**](segments-schedule.md) to customize schedules for segments.
+- [**Disable auto cleanup**](#automated-deactivation-of-unused-segments).
 - **Columns** to [customize the columns](work-with-tags-columns.md#customize-columns) that display.
 - **Filter** to [filter on tags](work-with-tags-columns.md#filter-on-tags).
 - **Search name** to search by segment name.
@@ -120,6 +121,27 @@ Export segments to other apps to further use the data. Export a segment from the
    - To create a new export with the selected segment, select **Add export**. For more information about creating exports, see [Set up a new export](export-manage.md#set-up-a-new-export).
 
 1. Select **Back** to return to the main page for segments.
+
+## Automated deactivation of unused segments
+
+> [!IMPORTANT]
+> This feature is only available to users with an Administrator user role.
+
+To optimize refresh performance, the system automatically deactivates unused segments every day. Unused segments are segments that aren't used in exports, measures, other segments, or in Customer Insights - Journeys and created or updated more than 45 days ago.
+
+Admins can delete these segments if they are no longer needed or reactivate them if they intend to use them again. Alternatively, admins can [specify segments that are excluded from the automated deactivation](#specify-segments-that-never-expire).
+
+Deactivated segments don't refresh automatically when the system refreshes. They are tagged with **AutoDeactivated** when updated by automated cleanup.
+
+### Specify segments that never expire
+
+To avoid automated deactivation if a segment is no longer in use, admins can mark these segments.
+
+1. Go to the **Insights** > **Segments** page and select a segment.
+
+1. In the command bar, select **Disable auto cleanup**.
+
+1. Confirm the selection.
 
 ## Manage the number of active segments
 

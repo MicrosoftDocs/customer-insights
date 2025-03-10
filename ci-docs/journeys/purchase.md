@@ -1,14 +1,18 @@
 ---
-title: Purchase Customer Insights
-description: How to purchase Dynamics 365 Customer Insights.
-ms.date: 06/04/2024
+title: Purchase Dynamics 365 Customer Insights
+description: Learn how to purchase Dynamics 365 Customer Insights, including licensing options and installation steps.
+ms.date: 12/16/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
-search.audienceType: 
+search.audienceType:
   - admin
   - customizer
   - enduser
+ms.custom:
+  - ai-gen-docs-bap
+  - ai-gen-description
+  - ai-seo-date:12/16/2024
 ---
 
 # Purchase Dynamics 365 Customer Insights
@@ -27,7 +31,7 @@ To install Customer Insights, you need to first purchase a base license. How you
 
 Which base license you choose depends on whether you already have a qualifying Dynamics 365 application. If you have Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Supply Chain Management, Dynamics 365 Finance, or Dynamics 365 Commerce **with 10 or more users**, you can purchase the reduced price "attach" license. Otherwise, you need to purchase a standard Customer Insights license.
 
-Once you have a base license, you can purchase add-ons to increase the number of allowed interacted people you are actively engaging or unified people you are unifying and enriching. Learn more: [Dynamics 365 Customer Insights pricing](https://dynamics.microsoft.com/ai/customer-insights/pricing/)
+Once you have a base license, you can purchase add-ons to increase the number of allowed interacted people you're actively engaging or unified people you're unifying and enriching. Learn more: [Dynamics 365 Customer Insights pricing](https://dynamics.microsoft.com/ai/customer-insights/pricing/)
 
 If you need the application to run in a specific data center region, be sure to check the application data center geo availability. See the [geo availability map](https://dynamics.microsoft.com/availability-reports/georeport/) to check availability. 
 
@@ -37,9 +41,9 @@ If you need the application to run in a specific data center region, be sure to 
 > Customers who purchased before September 2023 may own the legacy, Dynamics 365 Customer Insights and Dynamics 365 Marketing standalone licenses. The standalone licenses have different entitlements from the new Dynamics 365 Customer Insights license sold after September 2023. The differences are as follows:
 >
 > - Dynamics 365 Marketing (standalone) entitles 10,000 active contacts (renamed "interacted people" after September 2023) and 1 application installation. You can buy add-on subscriptions to entitle additional application installations.
-> - Dynamics 365 Customer Insights (standalone) entitles 100,000 customer profiles (renamed "unified people" after September 2023) and 4 installations of the application. You can buy add-ons to unify accounts.
+> - Dynamics 365 Customer Insights (standalone) entitles 100,000 customer profiles (renamed "unified people" after September 2023) and unlimited application installations. You can buy add-ons to unify accounts.
 >
-> The current Dynamics 365 Customer Insights license entitles 10,000 interacted people (formerly "active contacts"), 100,000 unified people (formerly "unified profiles"), 4 installations of the journeys app, and 4 installations of the data app. You no longer have to pay a higher unit price for add-ons to unify accounts. Learn more: [Dynamics 365 Customer Insights FAQs](ci-faq.md)
+> The current Customer Insights license entitles 10,000 interacted people (formerly "active contacts"), 100,000 unified people (formerly "unified profiles"), unlimited installations of Customer Insights - Journeys and Customer Insights - Data. You no longer have to pay a higher unit price for add-ons to unify accounts. Learn more: [Dynamics 365 Customer Insights FAQs](ci-faq.md)
 
 ### Step 1: Buy the base license
 
@@ -80,7 +84,7 @@ After purchasing, go to [Install and manage Dynamics 365 Customer Insights](setu
 
 ## User and portal licensing
 
-Dynamics 365 Customer Insights is a tenant-level application that charges for interacted people in the Customer Insights - Journeys app and unified people in the Customer Insights - Data app. There is no charge for users to access and use the application. For customers with existing Dynamics 365 applications, any [Microsoft Entra ID](/azure/active-directory/fundamentals/whatis) users given the URL to either the Customer Insights - Journeys or Customer Insights - Data applications should be automatically given access. If they are not, there is a $0 user license that can be added to any tenant and used to assign users and force the user sync. The $0 user license can be added to purchase contracts or obtained directly through the Microsoft 365 admin center.
+Dynamics 365 Customer Insights is a tenant-level application that charges for interacted people in the Customer Insights - Journeys app and unified people in the Customer Insights - Data app. There's no charge for users to access and use the application. For customers with existing Dynamics 365 applications, any [Microsoft Entra ID](/azure/active-directory/fundamentals/whatis) users given the URL to either the Customer Insights - Journeys or Customer Insights - Data applications should be automatically given access. If they aren't, there's a $0 user license that can be added to any tenant and used to assign users and force the user sync. The $0 user license can be added to purchase contracts or obtained directly through the Microsoft 365 admin center.
 
 - To add a user license through the Microsoft 365 admin center, go to [https://admin.microsoft.com/#/catalog](https://admin.microsoft.com/#/catalog) and search for "Dynamics 365 Customer Insights User License" under the Dynamics 365 category.
 

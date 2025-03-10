@@ -1,7 +1,7 @@
 ---
 title: "What's new in Dynamics 365 Customer Insights - Data"
 description: "Information about new features, improvements, and bug fixes."
-ms.date: 06/27/2024
+ms.date: 11/22/2024
 ms.topic: conceptual
 author: m-hartmann
 ms.author: skumm
@@ -16,6 +16,36 @@ We roll out updates on a region-by-region basis. So certain regions might see fe
 
 > [!TIP]
 > To submit and vote on feature requests and product suggestions, go to the [Dynamics 365 Application Ideas portal](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights).
+
+## October 2024
+
+### General availability
+
+#### Use automation to manage segments and measures
+
+As your Dynamics 365 Customer Insights usage increases, so does the number of segments and measures. Large numbers of segments and measures can result in longer system refresh times, which delay time-sensitive insights. 
+Customer Insights now automatically deactivates segments and measures based on their usage to ensure your active segments and measures refresh faster. As an admin you get to control the retention period that applies and can support your organization to scale confidently.
+
+- [Release plan](/dynamics365/release-plan/2024wave1/customer-insights/dynamics365-customer-insights-data/use-automation-manage-segments-measures)
+<!--- - [Docs](.md) -->
+
+#### Accelerate time to insights with data in Delta Lake format
+
+Your customer data updates constantly, with rapidly changing signals like online activities and mobile interactions. When a traditional data warehouse is used to generate customer insights, this leads to increased time to insight with each update while the volume of unprocessed signals keeps growing. Longer queues result in slow or stale insights. With native support for Delta Lake storage format in Customer Insights, you can now accelerate processing times even with a higher volume of fast-changing data updates. Get customer profiles and associated insights updated more frequently and react to customer engagements based on the most current information available. This empowers you to create the most relevant and personalized experiences for your customers and the most up-to-date and timely insights for your business users.
+
+- [Release plan](/dynamics365/release-plan/2024wave1/customer-insights/dynamics365-customer-insights-data/accelerate-time-insights-data-delta-lake-format)
+<!--- - [Docs](.md) -->
+
+## September 2024
+
+### Public preview
+
+#### Accelerate time to insights with data in Delta Lake format
+
+Your data updates constantly, with rapidly changing signals like online activities and mobile interactions. When a traditional data warehouse is used to generate customer insights, this leads to increased time to insight with each update while the volume of unprocessed signals keeps growing. Longer queues result in slow or stale insights. With native support for Delta Lake storage format in Customer Insights, you can now accelerate processing times even with a higher volume of fast-changing data updates. You can get customer profiles and associated insights updated more frequently and react to customer engagements based on the most current information available. This empowers you to create the most relevant and personalized experiences for your customers and the most up-to-date and timely insights for your business users.
+
+- [Release plan](/dynamics365/release-plan/2024wave2/customer-insights/dynamics365-customer-insights-data/accelerate-time-insights-data-delta-lake-format)
+- [Docs](connect-delta-lake.md)
 
 ## June 2024
 
@@ -44,7 +74,6 @@ This capability includes the following features:
 **Real-time unknown-to-known**: Merge unknown profiles into known profiles in real time, so you can always have the 360-degree view of your customers.
 
 **Real-time web personalization**: Leverage our APIs to read your customer data, including segment memberships, web events, or demographic data in real time to personalize the web experience for your visitors.
-
 
 - [Release plan](/dynamics365/release-plan/2024wave1/customer-insights/dynamics365-customer-insights-data/elevate-customer-experiences-real-time)
 - [Docs](real-time-web-personalization-overview.md)
@@ -114,10 +143,6 @@ Ask questions in natural language to have a dialog with your data to explore, as
 #### In-place upgrade of data sources to Delta format
 
 If your data is already in Delta tables within the same storage container, you can update the connection on the Data Sources page. Update the folder and connection points to the folder that contains the same tables, but in the Delta format. Delta tables can significantly reduce the time to generate valuable insights from a data source. Also, if you're currently converting your Delta data into the common data model format to import it to Customer Insights – Data, Delta lake formatted tables help eliminate the processing and storage requirements to convert Delta data to common data model format.
-
-#### Incremental unification when using Delta data
-
-To accelerate insights using the power of Delta tables, we now see faster data unification when all the tables used in the unification process are provided in the Delta format because data unification runs incrementally. The time to run the match process is approximately 25% faster.
 
 #### Exports show most recent update
 
@@ -331,7 +356,7 @@ This FRE works with a single CSV file only. If you have multiple data files, or 
 Dynamics 365 Customer Insights - Data starts supporting application and environment lifecycle management capabilities for common enterprise-grade requirements. For example, you can copy, reset, or delete your Customer Insights - Data environments. Additionally, the system ensures your Customer Insights - Data environment and the associated Dataverse environment are always in sync.
 
 - [Release plan](/dynamics365-release-plan/2022wave2/customer-insights/achieve-business-scenarios-application-lifetime-management)
-- [Documentation](manage-environments.md#copy-the-environment-configuration)
+- [Documentation](manage-environments.md#copy-the-environment-configuration-preview)
 
 <!--
 ## September 2022 updates

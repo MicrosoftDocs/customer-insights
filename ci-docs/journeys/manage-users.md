@@ -1,6 +1,6 @@
 ---
-title: View and edit basic user information in Dynamics 365 Customer Insights - Journeys
-description: Learn how to view a list of users licensed to access Dynamics 365 Customer Insights - Journeys, and how to view and edit basic user information.
+title: User account management in Customer Insights - Journeys
+description: Discover how to manage licensed user accounts in Dynamics 365 Customer Insights - Journeys, including viewing and modifying user details.
 ms.date: 08/21/2023
 ms.topic: article
 author: alfergus
@@ -11,7 +11,7 @@ search.audienceType:
   - enduser
 ---
 
-# View and edit basic user information in Dynamics 365 Customer Insights - Journeys
+# User account management in Customer Insights - Journeys
 
 The Customer Insights - Journeys application provides an overview of users licensed to use the app and lets you view and edit basic information about them.
 

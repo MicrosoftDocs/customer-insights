@@ -3,8 +3,8 @@ title: "Manage data sources"
 description: "Learn how to manage data sources attached or imported to Dynamics 365 Customer Insights - Data."
 ms.date: 6/03/2024
 ms.topic: how-to
-author: mukeshpo
-ms.author: mukeshpo
+author: Scott-Stabbert
+ms.author: sstabbert
 ms.reviewer: v-wendysmith
 ms.custom: bap-template
 ---

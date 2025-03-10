@@ -1,7 +1,7 @@
 ---
 title: Marketing on LinkedIn
 description: Get an overview of all the various ways that Dynamics 365 Customer Insights - Journeys can be integrated with the marketing features of LinkedIn.
-ms.date: 08/21/2023
+ms.date: 12/09/2024
 ms.topic: overview
 author: alfergus
 ms.author: alfergus
@@ -9,12 +9,16 @@ search.audienceType:
   - admin
   - customizer
   - enduser
+ms.custom: outbound-marketing
 ---
 
 # Marketing on LinkedIn
 
 > [!IMPORTANT]
-> This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
+> **This article only applies to [outbound marketing](user-guide.md), which will be removed from the product on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](transition-overview.md)
+
+> [!WARNING]
+> Social posting and LinkedIn lead generation capabilities have been removed from Customer Insights - Journeys.
 
 LinkedIn is a social network that focuses on companies, professionals, and working life. It can be a great source for running targeted campaigns, exploring professional networks, and generating new leads. Dynamics 365 Customer Insights - Journeys offers several features for running and integrating marketing campaigns on LinkedIn. Integration points include:
 

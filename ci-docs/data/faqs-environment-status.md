@@ -1,7 +1,7 @@
 ---
 title: FAQ for environment status summary (preview)
 description: This FAQ provides information about the AI technology used in the environment status summary. It includes key considerations and details about how AI is used, how it was tested and evaluated, and any specific limitations.
-ms.date: 04/29/2024
+ms.date: 11/13/2024
 ms.custom: 
   - responsible-ai-faqs
 ms.topic: article
@@ -50,7 +50,7 @@ The feature reports only on these jobs and one at a time based on the priority o
 
 ## What are the supported geographies and languages?
 
-For more information, see [Copilot International Availability report](https://dynamics.microsoft.com/availability-reports/copilotreport/).
+Go to [Copilot International Availability report](https://releaseplans.microsoft.com/availability-reports/?report=copilotfeaturereport).
 
 ## What operational factors and settings allow for effective and responsible use of the feature?
 

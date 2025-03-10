@@ -1,11 +1,11 @@
 ---
 title: "Export segments to Facebook Ads Manager (preview)"
 description: "Learn how to configure the connection and export to Facebook Ads Manager."
-ms.date: 05/27/2024
+ms.date: 02/26/2025
 ms.reviewer: mhart
 ms.topic: how-to
-author: pkieffer
-ms.author: philk
+author: JimsonChalissery
+ms.author: jimsonc
 ---
 
 # Export segments to Facebook Ads Manager (preview)
@@ -17,8 +17,9 @@ Export segments of unified customer profiles to Facebook Ads Manager to create c
 ## Prerequisites
 
 - A [Facebook Ads Account](https://www.facebook.com/business/learn/lessons/step-by-step-ads-manager-account) that includes a [Facebook Business Account](https://business.facebook.com/).
-- Administrator privileges on the [Facebook Ads Account](https://www.facebook.com/business/learn/lessons/step-by-step-ads-manager-account).
-- Custom Audience Terms need to be accepted by the user setting up the connection in Dynamics 365 Customer Insights - Data.
+- Administrator privileges on the Facebook Ads Account.
+- A Facebook Ads custom audience ID. In Facebook Ads Manager, go to the audience page and set it to show the audience ID column in the table.
+- Custom Audience Terms are accepted by the user setting up the connection in Dynamics 365 Customer Insights - Data.
 
 ## Known limitations
 
@@ -55,7 +56,7 @@ Export segments of unified customer profiles to Facebook Ads Manager to create c
 
 ### Refresh authentication for Facebook Ads connection
 
-The authentication of a connection to Facebook Ads is valid for 60 days, which is enforced by Facebook. You can refresh the authentication of a connection at any time.
+The authentication of a connection to Facebook Ads is valid for 60 days, which Facebook enforces. You can refresh the authentication of a connection at any time.
 
 1. Go to **Settings** > **Connections**.
 
@@ -81,11 +82,11 @@ The authentication of a connection to Facebook Ads is valid for 60 days, which i
 
 1. Enter a name for the export.
 
-1. Enter the **Facebook Ads custom audience ID**, which defines the audience this export updates. We show the Facebook Ads account name and ID configured in the selected connection, Choose an audience for that account. To find the audience ID in Facebook Ads Manager, go to the audience page and set it to show the audience ID column in the table.
+1. Enter the **Facebook Ads custom audience ID**, which defines the audience this export updates. We show the Facebook Ads account name and ID configured in the selected connection. Choose an audience for that account.
 
 1. In the **Connect data** field, select **Email**, **Name and address**, or **Phone** to send to Facebook Ads Manager. Map the corresponding attributes from your unified customer table for the selected key identifier.
    > [!TIP]
-   > The best chances for a match occur if you select **Email** as key identifier. Adding additional identifiers may improve the matching.
+   > The best chances for a match occur if you select **Email** as key identifier. Adding other identifiers might improve the matching.
 
 1. Select **Add attribute** to map more attributes to send to Facebook Ads Manager. Attributes from Facebook Ads Manager are mapping to the following user-friendly names:
     **FN** = **First Name**, **LN** = **Last Name**, **FI** = **First Initial**, **PHONE** = **Phone**, **GEN** = **Gender**, **DOB** = **Date of birth**, **ST** = **State**, **CT** = **City**, **ZIP** = **Postal code / ZIP Code**, **COUNTRY** = **Country / Region**

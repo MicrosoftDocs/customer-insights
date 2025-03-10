@@ -56,8 +56,8 @@ landingContent:
             url: real-time-marketing-custom-triggers.md
           - text: Work with segments in Customer Insights - Journeys
             url: real-time-marketing-segments.md
-          - text: Customer Insights - Journeys journey tile reference
-            url: real-time-marketing-tile-reference.md
+          - text: Add an action in a journey
+            url: add-action.md
 
   # Card
   - title: Administration

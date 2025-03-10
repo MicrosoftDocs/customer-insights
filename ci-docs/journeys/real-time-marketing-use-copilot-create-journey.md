@@ -1,7 +1,7 @@
 ---
-title: "Preview: Copilot - Create journeys using AI assistance"
-description: Enable the journey copilot to create marketing journeys using everyday language and provide feedback to improve results.
-ms.date: 05/08/2024
+title: 'Preview: Copilot - Create journeys using AI assistance'
+description: Create marketing journeys using everyday language with Copilot. Enable the feature, provide feedback, and streamline your marketing efforts.
+ms.date: 11/22/2024
 ms.topic: get-started
 author: alfergus
 ms.author: alfergus
@@ -10,6 +10,7 @@ ms.custom:
   - ai-gen-docs-bap
   - ai-gen-desc
   - ai-seo-date:08/15/2023
+  - ai-gen-description
 ---
 
 # Preview: Copilot - Create journeys using AI assistance
@@ -19,7 +20,7 @@ ms.custom:
 > 
 > Microsoft doesn't provide support for this preview feature. Microsoft Dynamics 365 Technical Support won’t be able to help you with issues or questions. Preview features aren’t meant for production use, especially to process personal data or other data that are subject to legal or regulatory compliance requirements.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RW1dihO]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=9a5b5096-35bb-4bf9-a886-bb8def28ad2c]
 
 With the journey copilot, anyone can now use every day conversational language to create marketing journeys without requiring deep knowledge about the product. You can even improve the copilot by giving feedback, helping you achieve more detailed results in the future.
 
@@ -79,7 +80,7 @@ The following section outlines some "do's" and "don'ts" for using the journey co
         - *Explanation*:  This prompt is good as it specifies the target audience (Tier 1 contacts), ensuring the journey is relevant and targeted.
 - **Do: Create prompts that are at least 70 characters long. This helps provide enough information for Copilot to interpret.**
     - **Example 1**: "Use an A/B test to try out two different promotional emails when a customer completes a purchase." (96 characters)
-    - **Example 2**: "Send a series of 3 emails and SMS messages regarding Contoso's new product line." (75 characters)
+    - **Example 2**: "Send a series of three emails and SMS messages regarding Contoso's new product line." (75 characters)
     - **Example 3**: "Send personalized messages to contacts when they submit a marketing form." (73 characters)
 - **Don't: Use vague statements.**
     - **Example 1**: "Create a nurture journey with monthly emails."
@@ -88,5 +89,9 @@ The following section outlines some "do's" and "don'ts" for using the journey co
         - *Explanation*: This prompt is irrelevant to building journeys. Copilot is still learning and for the time being is only useful for creating the journey outline.
 - **Don't: Use prompts that involve social media posts. Copilot doesn't support anything beyond what already exists in the product today.**
     - **Example 1**: "Create a social media post on Facebook and if anyone interacts with it, send them a personalized message."
+
+## Related information
+
+[Take campaigns from concept to launch (video)](https://youtu.be/tgHOPefdYzA)
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]

@@ -1,7 +1,7 @@
 ---
 title: Event management in outbound marketing overview
 description: An overview of event-management features (including planning, logistics, sponsors, speakers, promotion, and registration) in outbound marketing.
-ms.date: 08/18/2023
+ms.date: 02/06/2025
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -9,12 +9,13 @@ search.audienceType:
   - admin
   - customizer
   - enduser
+ms.custom: outbound-marketing
 ---
 
 # Event management in outbound marketing overview
 
 > [!IMPORTANT]
-> This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
+> **This article only applies to [outbound marketing](user-guide.md), which will be removed from the product on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](transition-overview.md)
 
 Live events and webinars are a vital sales and marketing channel. But events and webinars can be complex to arrange, execute, and follow up on. The Dynamics 365 Customer Insights - Journeys event management feature helps you every step of the way, from initial planning and budgeting through promotion and publication, attendee registration, webinar broadcasting, final analytics, lead generation, and evaluation of ROI.
 
@@ -48,25 +49,8 @@ Dynamics 365 Customer Insights - Journeys offers two solutions for Event Managem
 >
 > If your event website is [self-hosted](./developer/self-hosted.md), you must [install the latest self-hosted sample website](./developer/event-management-web-application.md) to maintain functionality after applying any Customer Insights - Journeys update.
 
-## When to use Customer Insights - Journeys and when to use outbound marketing for event management
+## Transition events to real-time journeys
 
-Customer Insights - Journeys contains a subset of outbound event management features plus several improvements. The following table compares the Customer Insights - Journeys and outbound marketing event management features.
-
-|     Feature     |     Outbound marketing    |     Customer Insights - Journeys    |
-|---|---|---|
-|     Single session event    |     Yes    |     Yes    |
-|     Multi-session event          |     Yes    |     Yes    |
-|     Recurring event    |     Yes    |     N/A    |
-|     Event level templates    |     Yes    |     N/A    |
-|     Sessions, session tracks, speaker management    |     Yes    |     Yes    |
-|     Venue management    |     Yes    |     Yes    |
-|     Tracking sponsors    |     Yes    |     Yes    |
-|     Creating Teams meetings/live events/webinars    |     Yes    |     Yes    |
-|     Support for On24 and other generic webinar providers      |     Yes    |     N/A    |
-|     Using marketing forms for registrations    |     Yes    |     Yes    |
-|     Waitlist    |     Yes    |     N/A    |
-|     Payments    |     Yes    |     N/A    |
-|     Lead entity registration    |     Yes    |     N/A    |
-|     Set registrations end date    |    Yes    |    N/A    |
+To learn about event management in real-time journeys, see [Transition events from outbound marketing to real-time journeys](transition-walkthrough-events.md).
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]

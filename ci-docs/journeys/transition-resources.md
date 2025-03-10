@@ -1,7 +1,7 @@
 ---
 title: Real-time journeys transition resources
 description: Resources to assist transitioning to real-time journeys in Dynamics 365 Customer Insights - Journeys.
-ms.date: 11/16/2023
+ms.date: 12/03/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -12,6 +12,9 @@ search.audienceType:
 ---
 
 # Real-time journeys transition resources
+
+> [!IMPORTANT]
+> **The [outbound marketing](user-guide.md) module will be removed from Customer Insights - Journeys on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](transition-overview.md)
 
 The following resources were created to help you transition from outbound marketing to real-time journeys in Dynamics 365 Customer Insights - Journeys as smoothly as possible. Reach out to FastTrack or your account manager for additional questions or help.
 
@@ -48,8 +51,8 @@ These blogs give conceptual overviews on the benefits of moving your workflows t
 - [Transition to real-time marketing and transform your Customer Experience - Microsoft Dynamics 365 Blogs](https://cloudblogs.microsoft.com/dynamics365/it/2023/07/18/transition-to-real-time-marketing-and-transform-your-customer-experience/)
 - [Double Opt-In in Real-Time Marketing - Dynamics FastTrack Blogs](https://community.dynamics.com/blogs/post/?postid=24df8cbc-5724-4734-b898-24cfe57d3c33)
 - [Understanding consent management in Dynamics 365 Customer Insights - Journeys - Dynamics FastTrack Blogs](https://community.dynamics.com/blogs/post/?postid=8b2a4ee8-1069-ee11-a81c-000d3a7a1a66)
+- [LinkedIn Lead Sync Integration with Dynamics 365 Customer Insights – Journeys](https://community.dynamics.com/blogs/post/?postid=fb6ed89f-67a1-ef11-8a69-7c1e520b1f9b)
 
-> [!TIP]
-> If you have questions or comments, visit the [Outbound to real-time transition community forum](https://community.dynamics.com/forums/thread/?partialUrl=Outbound-to-Real-Time-Transition)
+[!INCLUDE [transition-comments](./includes/transition-comments.md)]
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]

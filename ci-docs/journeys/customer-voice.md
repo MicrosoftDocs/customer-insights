@@ -1,7 +1,7 @@
 ---
 title: Add surveys to your campaigns
 description: Learn how to create surveys in Dynamics 365 Customer Insights - Journeys using Microsoft Dynamics 365 Customer Voice.
-ms.date: 08/18/2023
+ms.date: 08/06/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -90,6 +90,9 @@ To add a Dynamics 365 Customer Voice survey to customer journey:
     - If/then based on source (email or survey)
     - If/then based on a specific question
     - If/then based on an answer
+
+> [!NOTE]
+> Survey responses are logged as "Marketing respondent."
 
 > [!IMPORTANT]
 > Entity names related to Forms Pro have changed to "Customer Voice." For example, if you are using [Advanced Find](/dynamics365/customerengagement/on-premises/basics/save-advanced-find-search) to search entities related to your surveys, you will need to search for Customer Voice, not Forms Pro.

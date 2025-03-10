@@ -4,8 +4,8 @@ description: "Learn how to configure the connection and export to Mailchimp."
 ms.date: 09/01/2023
 ms.reviewer: mhart
 ms.topic: how-to
-author: pkieffer
-ms.author: philk
+author: Scott-Stabbert
+ms.author: sstabbert
 ---
 
 # Export segments to Mailchimp (preview)
@@ -23,7 +23,6 @@ Export segments of unified customer profiles to Mailchimp to create newsletters 
 
 ## Known limitations
 
-- Private link in combination with Bring your own storage (BYOS) is not supported.
 - Up to 1 million customer profiles per export to Mailchimp, which can take up to three hours. The number of customer profiles that you can export to Mailchimp depends on your contract with Mailchimp.
 - Segments only.
 

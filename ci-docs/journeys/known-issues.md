@@ -9,12 +9,13 @@ search.audienceType:
   - admin
   - customizer
   - enduser
+ms.custom: outbound-marketing
 ---
 
 # Known issues in outbound marketing and workarounds
 
 > [!IMPORTANT]
-> This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
+> **This article only applies to [outbound marketing](user-guide.md), which will be removed from the product on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](transition-overview.md)
 
 This document provides important, late-breaking information about known issues and workarounds for Dynamics 365 Customer Insights - Journeys. For information about monthly bug fixes, visit the [What's new in Dynamics 365 Customer Insights - Journeys](whats-new-marketing.md) article.
 

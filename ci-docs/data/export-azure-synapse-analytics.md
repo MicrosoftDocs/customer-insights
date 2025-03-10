@@ -1,11 +1,11 @@
 ---
 title: "Export data to Azure Synapse Analytics (preview)"
 description: "Learn how to configure the connection to Azure Synapse Analytics."
-ms.date: 02/01/2024
+ms.date: 11/07/2024
 ms.reviewer: mhart
 ms.topic: how-to
-author: pkieffer
-ms.author: philk
+author: Scott-Stabbert
+ms.author: sstabbert
 ---
 
 # Export data to Azure Synapse Analytics (preview)
@@ -46,8 +46,8 @@ In Azure:
 ## Known limitation
 
 - Azure Synapse export doesn't support incremental refresh for data sources if an environment uses a custom Azure Data Lake for data storage.
-- Enabling public access to your own storage account after [setting up an Azure Private Link](private-link.md) won't work. Private Link only works if you disable public access to the storage account. Remove the Private Link setup to re-enable public access.
 - [Power Query data sources](connect-power-query.md) as input tables are only supported if your environment stores data in your [own Azure Data Lake Storage](own-data-lake-storage.md).
+- Enabling public access to your own storage account after [setting up an Azure Private Link](private-link.md) won't work. Private Link is only supported if you disable public access to the storage account. Remove the Private Link setup to re-enable public access.
 - This export works only for CSV formatted files.
 
 ## Set up connection to Azure Synapse
@@ -63,6 +63,8 @@ In Azure:
 1. Choose who can use this connection. By default, it's only administrators. For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
 1. Select or search for the subscription you want to use the Customer Insights data in. As soon as you select a subscription, you can also select **Workspace**, **Storage account**, and **Container**.
+
+1. Optionally, if your storage account is behind a firewall, select **Enable Private Link**. For more information, go to [Private Links](private-link.md).
 
 1. Review the [data privacy and compliance](connections.md#data-privacy-and-compliance) and select **I agree**.
 

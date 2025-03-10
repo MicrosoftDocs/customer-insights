@@ -1,7 +1,7 @@
 ---
 title: "Preview: Customer Insights - Journeys effectiveness analytics"
 description: Learn how to create personalized experiences with marketing effectiveness analytics in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/22/2023
+ms.date: 02/20/2025
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -13,12 +13,15 @@ search.audienceType:
 
 # Preview: Marketing effectiveness analytics
 
+> [!WARNING]
+> The marketing effectiveness analytics public preview will be discontinued and removed on February 28, 2025.
+
 > [!IMPORTANT]
 > A preview feature is a feature that is not complete, but is made available before it’s officially in a release so customers can get early access and provide feedback. Preview features aren’t meant for production use and may have limited or restricted functionality.
 > 
 > Microsoft doesn't provide support for this preview feature. Microsoft Dynamics 365 Technical Support won’t be able to help you with issues or questions. Preview features aren’t meant for production use, especially to process personal data or other data that are subject to legal or regulatory compliance requirements.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RW14d7h]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=aea64917-1a1d-43b9-b20c-7d527554b1c0]
 
 Dynamics 365 Customer Insights - Journeys enables you to create highly personalized experiences to nudge customers toward important milestones in the buyer's journey. With the marketing effectiveness analytics dashboard, you can define key customer milestones, measure them over time, and assess the contribution and effectiveness of your journeys, channels, and marketing assets in driving customers to the milestones. The dashboard uses AI-powered multi-touch and single-touch attribution models. This provides you with a feedback loop to gain a comprehensive view of the effectiveness of your Customer Insights - Journeys tactics in driving key business outcomes, empowering you to optimize your marketing mix by learning from tactics that worked well and improving or dropping tactics that didn’t.  
 

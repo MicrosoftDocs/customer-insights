@@ -1,11 +1,15 @@
 ---
 title: Create push notifications
-description: Learn how to create push notifications for Customer Insights - Journeys.
-ms.date: 03/14/2024
+description: Create effective push notifications for Customer Insights - Journeys. Learn how to set up, personalize, and send push messages to engage your app users.
+ms.date: 11/22/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
 ms.collection: bap-ai-copilot
+ms.custom:
+  - ai-gen-docs-bap
+  - ai-gen-description
+  - ai-seo-date:11/22/2024
 ---
 
 # Create push notifications
@@ -56,6 +60,39 @@ To personalize a push notification:
 
 When you send the push notification from a journey, it automatically populates the token according to the attribute you selected.
 
+## Conditional content for push notifications
+
+To add inline conditions in a push notification message: 
+
+1. Add the conditional (if-then-else) statement in the push notification message editor:
+
+    ```
+    {{#if placeholderName}} 
+      Content displayed when the expression is true 
+    {{else if placeholderName2}} 
+      Content displayed when the first expression is false and the second one is true 
+    .
+    .
+    .
+    {{else}} 
+      Content displayed when all expressions are false 
+    {{/if}} 
+    ```
+
+1. To set up the condition, select the **placeholder** name to configure (for example, "placeholderName") and select the personalization icon.
+
+    :::image type="content" source="media/code-text-message.png" alt-text="Set up condition using placeholder name to personalize." lightbox="media/code-text-message.png":::
+
+1. Select the condition you want. In this example, the first placeholder activates the condition if the contact’s address is in Spain.
+    
+    :::image type="content" source="media/select-condition-text-message.png" alt-text="Select condition." lightbox="media/select-condition-text-message.png":::
+
+1. Once done, select **Save**.
+
+    :::image type="content" source="media/save-text-message.png" alt-text="Save condition." lightbox="media/save-text-message.png":::
+    
+1. Repeat these steps for each condition you add.
+
 ## Add a Customer Voice survey to a push notification
 
 Adding a Customer Voice survey link to a push notification or [text message](real-time-marketing-outbound-text-messaging.md#add-a-customer-voice-survey-to-a-text-message) allows you to seek feedback from customers on the channels they use the most.
@@ -86,5 +123,9 @@ When creating a Customer Insights - Journeys, you can send push notification mes
 You can see how customers reacted to your push messages by checking the push notification analytics in the message itself and within journeys.
 
 ---
+
+## Related information
+
+[Push notifications (video)](https://youtu.be/Z-nkQFE5i8c)
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]

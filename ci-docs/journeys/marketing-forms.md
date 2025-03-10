@@ -9,12 +9,13 @@ search.audienceType:
   - admin
   - customizer
   - enduser
+ms.custom: outbound-marketing
 ---
 
 # Set up and manage marketing forms for use in marketing pages
 
 > [!IMPORTANT]
-> This article only applies to [outbound marketing](/dynamics365/marketing/user-guide). To learn about marketing forms in Customer Insights - Journeys, see [Overview of Customer Insights - Journeys forms](real-time-marketing-form-overview.md)
+> **This article only applies to [outbound marketing](user-guide.md), which will be removed from the product on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](transition-overview.md) To learn about marketing forms in Customer Insights - Journeys, see [Overview of Customer Insights - Journeys forms](real-time-marketing-form-overview.md)
 
 A marketing form defines a set of input fields arranged into a form layout. You'll probably build a small library of reusable forms that you can place on all your various marketing pages as needed. To add a marketing form to a specific marketing page, use a form element to position the form and choose local settings for it, which apply to that page only.
 

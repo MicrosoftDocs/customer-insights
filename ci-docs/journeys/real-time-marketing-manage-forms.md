@@ -1,11 +1,15 @@
 ---
 title: Manage Customer Insights - Journeys forms
-description: Learn how to manage forms in Dynamics 365 Customer Insights - Journeys.
-ms.date: 06/21/2024
+description: Discover how to manage and style forms in Dynamics 365 Customer Insights - Journeys. Edit, unpublish, and customize forms with ease. Learn more now!
+ms.date: 12/16/2024
 ms.topic: article
 author: petrjantac
 ms.author: alfergus
 ms.collection: bap-ai-copilot
+ms.custom:
+  - ai-gen-docs-bap
+  - ai-gen-description
+  - ai-seo-date:11/22/2024
 ---
 
 # Manage Customer Insights - Journeys forms
@@ -14,12 +18,12 @@ This article explains how to edit, unpublish, and manage forms in Customer Insig
 
 ## Edit a live form
 
-If your form has been already published and you need to update it, select the **Edit** button on the top ribbon. You can continue editing your live form and all changes are automatically published once you select the **Save** button.
+If your form is already published and you need to update it, select the **Edit** button on the top ribbon. You can continue editing your live form and all changes are automatically published once you select the **Save** button.
 
 > [!IMPORTANT]
 > If you choose to create a copy of the form, you will have to publish the newly created copy.
 
-The form is stored on a CDN where all data is cached to provide the shortest possible loading times to the visitors of your webpage. It may take up to 10 minutes before the cache is refreshed and before you can see the changes on your webpage. You can check the result of the changes in your page if you add this parameter `#d365mkt-nocache` to your webpage URL. Never share the link to your page including this parameter with your customers. The parameter bypasses the CDN cache and slows down the page loading.
+The form is stored on a content delivery network (CDN) where all data is cached to provide the shortest possible loading times to the visitors of your webpage. It can take up to 10 minutes before the cache is refreshed and before you can see the changes on your webpage. You can check the result of the changes in your page if you add this parameter `#d365mkt-nocache` to your webpage URL. Never share the link to your page including this parameter with your customers. The parameter bypasses the CDN cache and slows down the page loading.
 
 ## Unpublish a form
 
@@ -29,8 +33,7 @@ To unpublish a live form, select the **Stop** button. The form is removed from t
 
 Once you select a field on the canvas, you can see its properties in the right pane.
 
-> [!div class="mx-imgBorder"]
-> ![Field properties are opened once you add a field to the form.](media/real-time-marketing-form-properties.png)
+:::image type="content" source="media/real-time-marketing-form-properties.png" alt-text="Field properties are opened once you add a field to the form." lightbox="media/real-time-marketing-form-properties.png":::
 
 - **Placeholder text**: The placeholder inside the field. The placeholder automatically disappears once the user starts typing into the field.
 - **Default value**: Set the default value for this field. The placeholder isn't visible if the default value is set.
@@ -48,17 +51,16 @@ The **Theme** section can be opened by selecting the brush icon in the right pan
 
 The theme feature is a user-friendly interface for editing CSS class definitions in the form HTML. It works only with out-of-the-box form styles. Custom CSS classes aren't visualized, but you can still edit your custom CSS classes using the HTML code editor.
 
-> [!div class="mx-imgBorder"]
-> ![Edit style of your input field using Theme.](media/real-time-marketing-form-theme.png)
+:::image type="content" source="media/real-time-marketing-form-theme.png" alt-text="Edit style of your input field using Theme." lightbox="media/real-time-marketing-form-theme.png":::
 
 **Theme** section allows you to configure:
 
 - **Background**: Define the inner background color and border style for the whole form.
 - **Text styles**: Define Heading 1, Heading 2, Heading 3, Paragraph, the Field label. The field label style doesn't affect the checkbox and radio button labels, as these labels can be configured separately. The text style definition includes font family, font size, font color, text style, and line height. You can also set the inner and outer spacing, width, and alignment. On top of these text styles, you can also set the label position (top, left, right) and the required color for your field labels.
 - **Input fields** are grouped into 3 categories:
-  1. Text input, dropdown, and lookup fields: These three visual styles of fields share the same style definition. You can define font family, size, color, and style for placeholder and input text styles. You can also set the field background color, menu background color, rounded corners, border, size alignment, and inner and outer spacing. Note that the field label can be configured in text styles.
+  1. Text input, dropdown, and lookup fields: These three visual styles of fields share the same style definition. You can define font family, size, color, and style for placeholder and input text styles. You can also set the field background color, menu background color, rounded corners, border, size alignment, and inner and outer spacing. The field label can be configured in text styles.
   1. Radio button: The radio button has its own label configuration, allowing you to set the font family and size. You can set the text color, styles, and background color for all options and for the selected option. You can also define rounded corners, width, and inner and outer spacing of your radio buttons.
-  1. Checkbox - checkbox field has its own label configuration allowing you to set the font family, size. You can set different text color, styles and background color for all options and for the selected option. You can also define rounded corners, width, the inner and outer spacing of your checkboxes.
+  1. Checkbox - checkbox field has its own label configuration allowing you to set the font family, size. You can set different text color, styles, and background color for all options and for the selected option. You can also define rounded corners, width, the inner and outer spacing of your checkboxes.
 - **Buttons and links**: The button definition allows you to set font family, size, color, text styles, button color, border alignment, and the inner and outer spacing. The hyperlink definition allows you to set the font family, size, color, and text styles.
 
 > [!NOTE]
@@ -75,7 +77,7 @@ There are two ways to use custom fonts in your form:
 
 > [!IMPORTANT]
 > A preview feature is a feature that is not complete but is made available before it’s officially in a release so customers can get early access and provide feedback. Preview features aren’t meant for production use and may have limited or restricted functionality.
-> 
+>
 > Microsoft doesn't provide support for this preview feature. Microsoft Dynamics 365 Technical Support won’t be able to help you with issues or questions. Preview features aren’t meant for production use, especially to process personal data or other data that are subject to legal or regulatory compliance requirements.
 
 > [!IMPORTANT]
@@ -83,15 +85,34 @@ There are two ways to use custom fonts in your form:
 
 The theme assistant is a Copilot feature in Customer Insights - Journeys. You can use the theme assistant to fetch styles from an existing website that you own and control. To use a theme, enter the website URL and select **Fetch styles**. This process might take a few minutes. You can continue your work and return back later to check the result. Once the assistant fetches the styles from your website, it applies the styles to the theme of your form.
 
-> [!div class="mx-imgBorder"]
-> ![Fetch styles from your website using Copilot.](media/real-time-marketing-form-theme-copilot.png)
+:::image type="content" source="media/real-time-marketing-form-theme-copilot.png" alt-text="Fetch styles from your website using Copilot." lightbox="media/real-time-marketing-form-theme-copilot.png":::
+
+## Preview: Parent contact for lead
+
+> [!IMPORTANT]
+> A preview feature is a feature that is not complete but is made available before it’s officially in a release so customers can get early access and provide feedback. Preview features aren’t meant for production use and may have limited or restricted functionality.
+>
+> Microsoft doesn't provide support for this preview feature. Microsoft Dynamics 365 Technical Support won’t be able to help you with issues or questions. Preview features aren’t meant for production use, especially to process personal data or other data that are subject to legal or regulatory compliance requirements.
+
+The **Lead & Contact** audience allows you to update a lead and contact entity with a single form submission. You can change the audience using the picker in the top right corner of the form editor.
+
+To use a combined Lead & Contact audience, it's important to [define how the attributes are mapped to each other](real-time-marketing-form-global-settings.md#lead-contact-mapping). For example, you need to link the contact *First Name* attribute to the lead *First Name* attribute, so the form field *First Name* can update attributes for both entities.
+
+Once you select the *Lead & Contact* audience, you see three sections of fields in the right pane:
+
+:::image type="content" source="media/real-time-marketing-form-lead-contact.png" alt-text="Lead & Contact audience." lightbox="media/real-time-marketing-form-lead-contact.png":::
+
+The fields in the *Contact* section update only the corresponding contact attributes. The fields in the *Lead* section update only the corresponding lead attributes. If you want the field to update both lead and contact attributes, use a field from the *Lead & Contact* section. If the *Lead & Contact* section is empty, you have to [define attribute mapping](real-time-marketing-form-global-settings.md#lead-contact-mapping).
+
+Once the form using the *Lead & Contact* audience is submitted, two interactions are produced: one for a contact and one for a lead. Therefore, you can see the form submission on both the lead timeline and the contact timeline. 
+
+When creating a new journey using the *Marketing form submitted* trigger, you can choose whether the journey is executed for a lead or for a contact. Your journey uses the interaction you choose for the trigger (contact or lead). The journey can only have a single audience: contact *or* lead.
 
 ## Form settings
 
 Form settings allow you to configure advanced properties of your form and define what happens after the form submission.
 
-> [!div class="mx-imgBorder"]
-> ![Form settings.](media/real-time-marketing-form-settings.png)
+:::image type="content" source="media/real-time-marketing-form-settings.png" alt-text="Form settings." lightbox="media/real-time-marketing-form-settings.png":::
 
 - **Duplicate records**: Choose your strategy on [how to handle duplicate records](#how-to-handle-duplicate-records).
 - **Thank you notification**: This message appears if the user successfully submits the form.
@@ -105,20 +126,20 @@ The default approach to duplicate records is different for contact and lead enti
 - **Contact (default: Update contact using email)**: If the user submits a form with an existing email address, the form submission updates the existing record. There's no new record created.
 - **Lead (default: Always create a new record)**: If the user submits a form with an existing email address, a new record with the same email address is created.
 
-You can change the default strategy using the **Duplicate records** drop-down in **Forms** settings. You can also create a [custom matching strategy](#create-a-custom-matching-strategy).
+You can change the default matching rule using the **Duplicate records** drop-down in the **Forms** settings. You can also create a [custom matching rule](real-time-marketing-manage-forms.md#create-a-custom-matching-rule).
 
-### Create a custom matching strategy
+### Create a custom matching rule
 
-You can choose how to handle duplicate records by creating a new matching strategy.
+You can choose how to handle duplicate records by creating a new matching rule.
 
 1. Select the bottom left menu to access **Settings**.
-1. Open **Form matching strategy** in the **Customer engagement** section.
-1. Select the plus icon to create a new matching strategy.
-1. Name the matching strategy and select the **Target entity**.
-1. Save the matching strategy (don't select **Save & close** as you need to stay on this record).
+1. Open **Form matching rules** in the **Customer engagement** section.
+1. Select the plus icon (**+**) to create a new matching rule.
+1. Name the matching rule and select the **Target entity**.
+1. **Save the matching rule** (don't select Save & close as you need to stay on this record).
 1. Add matching strategy attributes (fields) that are used to check if the record exists.
-1. Save your new matching strategy.
-1. The newly created matching strategy can now be selected in the **Duplicate records** list in the form settings.
+1. Save your new matching rule.
+1. The newly created matching rule can now be selected in the **Duplicate records** list in the form settings.
 
 ## Field types
 
@@ -136,6 +157,8 @@ Field types and formats are defined by the attribute metadata. It isn't possible
 | Date and time          | Date and Time | Date-Time Picker      | Date and time picker to select a date from a pop-up calendar and a time from a drop-down list.                                                                   |
 | Lookup field          | n/a | Lookup      | A lookup field is linked to a particular entity type, enabling you to add a drop-down list of options that were created in advance to your form. [More information](#lookup-fields). |
 
+The **File** field type isn't supported in forms.
+
 ### Phone number field
 
 For the best results with Customer Insight - Journeys, you should only use the international phone number format starting with a "+" sign. This ensures that consent to send text messages can be collected. To improve your customers' experience, we recommend using the phone number label or placeholder to explain the expected format of phone number.
@@ -151,8 +174,7 @@ If you don't plan to use the phone number for sending text messages, you can col
 
 If your business is located in a single region with the same phone number country code, you can pre-set the *Country code* parameter of the phone number field.
 
-> [!div class="mx-imgBorder"]
-> ![Set the country code for phone number](media/real-time-marketing-form-country-code.png)
+:::image type="content" source="media/real-time-marketing-form-country-code.png" alt-text="Set the country code for phone number." lightbox="media/real-time-marketing-form-country-code.png":::
 
 If the country code is pre-set, the correct phone number country code is automatically added once the form is submitted. If the customer enters a phone number including the country code, the pre-set phone number country code is ignored.
 
@@ -162,7 +184,7 @@ A lookup field is linked to a particular entity type, enabling you to add a drop
 
 After adding a lookup field, or if your lookup field isn't working, ensure that the service user used has permissions to configure the entities you're using with the lookup field. The Marketing Services User Extensible role used by the form editor needs to have read access to the entity used in the lookup field. You also have to enable **Make lookup data publicly viewable** in the lookup properties. All values within the lookup are available to anyone who sees the form. Ensure that sensitive data isn't exposed to the public. More information: [Adding lookup fields](marketing-fields.md#adding-lookup-fields-and-troubleshooting).
 
-### Custom fields
+### Custom mapped fields
 
 The form editor allows you to use all attributes of lead or contact entities as form fields. If you create a new custom attribute of a contact or lead entity, it's automatically available as a form field in the editor. Using this approach, you can easily create reusable form fields.
 
@@ -182,7 +204,7 @@ The following conditions prevent forms from being published and display an error
 - Is a **Submit** button included?
 - Are the form fields linked to an editable attribute?
 - Does the form contain duplicated fields?
-- Does the form include all attributes required by the matching strategy (email field by default)?
+- Does the form include all attributes required by the matching rule (email field by default)?
 - Is the target audience set?
 
 ### Warnings that don't stop form publishing
@@ -191,6 +213,21 @@ The following conditions don't prevent forms from being published. A warning mes
 
 - Does the form include all fields linked to attributes of a selected entity that are mandatory to create or update a record?
 - Are all required attributes labeled as required="required" in HTML?
+
+## Form submission processing
+
+Once the form is submitted, the submitted values can be found in the **Submissions** section of the form editor. It may take up to a few minutes before the entities targeted by the form are updated and the submission moves from a *Pending* to a *Success* state.
+
+The following contact or lead attributes are automatically updated by the form submission only if a new record is created:
+
+- msdynmkt_emailid
+- msdynmkt_customerjourneyid
+- msdynmkt_marketingformid
+- ownerid
+- owningbusinessunit (if the business units feature is enabled)
+- subject (only for leads) - the form name is used as the value
+
+The above-listed attributes aren't updated when an existing record is updated with a form submission.
 
 ## Advanced form customization
 
@@ -268,16 +305,16 @@ In this example, a script is created that combines the first name and last name 
 
 You can reuse this example to enrich your leads with more UTM parameters like utm_campaign, utm_medium, utm_term, utm_content.
 
-## Customize the form and form submission entities
+### Customize the form and form submission entities
 
 You can [add custom attributes to the form or form submission entities](real-time-marketing-customize-forms.md) to enhance your experience with the form editor.
 
-## Integrate a custom captcha into the form
+### Integrate a custom captcha into the form
 
 You can [integrate custom captcha](real-time-marketing-form-custom-captcha.md) bot protection services like [Google reCAPTCHA](https://www.google.com/recaptcha/about/) into your form.
 
 ### Custom back-end validation of form submission
 
-It's possible to build custom back-end form submission validation that prevents form submission processing. It shows an error message to the user who tried to submit the form. You can find the inspiration for this back-end validation in the article about [integrating custom captcha](real-time-marketing-form-custom-captcha.md), where the form makes back-end validation to evaluate the result of a captcha challenge.
+It's possible to build [custom back-end form submission validation](real-time-marketing-form-customize-submission-validation.md) that prevents or extends form submission processing.
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]

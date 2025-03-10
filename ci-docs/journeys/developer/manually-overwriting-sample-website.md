@@ -7,6 +7,7 @@ author: alfergus
 ms.author: alfergus
 search.audienceType: 
   - developer
+ms.custom: outbound-marketing
 ---
 
 # Manually overwriting sample website in outbound marketing
@@ -14,7 +15,7 @@ search.audienceType:
 [!INCLUDE [consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
-> This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
+> **This article only applies to [outbound marketing](../user-guide.md), which will be removed from the product on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](../transition-overview.md)
 
 The standard process of updating an event management website is to download a newer version and run the provided script to push the changes to the [Dynamics 365 Customer Insights - Journeys](/dynamics365/customer-engagement/marketing/trial-signup) instance described in [Power Apps portal hosted](portal-hosted.md#deployment). 
 

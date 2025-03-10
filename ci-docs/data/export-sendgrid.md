@@ -4,8 +4,8 @@ description: "Learn how to configure the connection and export to SendGrid."
 ms.date: 09/01/2023
 ms.reviewer: mhart
 ms.topic: how-to
-author: pkieffer
-ms.author: philk
+author: Scott-Stabbert
+ms.author: sstabbert
 ---
 
 # Export segments to SendGrid (preview)
@@ -24,7 +24,6 @@ Export segments of unified customer profiles to SendGrid contact lists and use t
 
 ## Known limitations
 
-- Private link in combination with Bring your own storage (BYOS) is not supported.
 - Up to 100,000 customer profiles in total to SendGrid, which can take up to a few hours to complete. The number of customer profiles that you can export to SendGrid depends on your contract with SendGrid.
 - Segments only.
 

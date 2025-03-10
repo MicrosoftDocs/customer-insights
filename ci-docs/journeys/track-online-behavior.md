@@ -9,12 +9,13 @@ search.audienceType:
   - admin
   - customizer
   - enduser
+ms.custom: outbound-marketing
 ---
 
 # Track website visits, social media clicks, and banner clicks
 
 > [!IMPORTANT]
-> This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
+> **This article only applies to [outbound marketing](user-guide.md), which will be removed from the product on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](transition-overview.md)
 
 Dynamics 365 Customer Insights - Journeys provides several ways to help you get to know your potential customers and to see how they interact with your various marketing initiatives. We've already mentioned that you can see when email recipients open a message or select a message link—and when new or existing contacts submit a form from a marketing page. You've also seen that these actions can affect lead scores and the way contacts flow through your customer journeys.
 

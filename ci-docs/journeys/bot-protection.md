@@ -1,7 +1,7 @@
 ---
-title: "Preview: Exclude bot interactions"
+title: Exclude bot interactions
 description: Learn how to exclude bot and nonhuman interactions on your emails in Dynamics 365 Customer Insights - Journeys.
-ms.date: 05/21/2024
+ms.date: 10/17/2024
 ms.topic: article
 author: srivas15
 ms.author: alfergus
@@ -11,18 +11,17 @@ search.audienceType:
   - enduser
 ---
 
-# Preview: Exclude bot interactions
-
-> [!IMPORTANT]
-> A preview feature is a feature that is not complete, but is made available before it’s officially in a release so customers can get early access and provide feedback. Preview features aren’t meant for production use and may have limited or restricted functionality.
->
-> Microsoft doesn't provide support for this preview feature. Microsoft Dynamics 365 Technical Support won’t be able to help you with issues or questions. Preview features aren’t meant for production use, especially to process personal data or other data that are subject to legal or regulatory compliance requirements.
+# Exclude bot interactions
 
 Teams rely on channel analytics to evaluate campaign performance and to drive future improvements. Having reliable analytics data is critical to achieve this. Bot protection in Customer Insights - Journeys captures and filters out bot clicks on emails, text messages, push notifications, and custom channels. This provides a more reliable view of analytics data and prevents unexpected outcomes such as inflated metrics, incorrect journeys, and fraudulent double opt-ins.
 
 ## Enable bot protection
 
-To enable bot protection, go to **Settings** > **Feature switches** and enable the **Bot Protection (preview)** toggle.
+To enable bot protection, go to **Settings** > **Feature switches** and enable the **Bot Protection** toggle.
+
+> [!IMPORTANT]
+> - Organizations created after July 22, 2024 have advanced bot protection enabled by default.
+> - Bot protection doesn't apply to email opens. Learn more about the challenges of relying solely on email opens to measure campaign performance: [Beyond open rate: Rethinking email marketing metrics](https://www.microsoft.com/dynamics-365/blog/it-professional/2024/10/16/rethinking-email-metrics-the-evolving-landscape-of-open-rates/).
 
 ## Impact of bot protection
 
@@ -33,5 +32,14 @@ Because bot protection filters out nonhuman link clicks, some journey triggers a
 ## How bots are detected
 
 When bot protection is enabled, any time a link is selected, it goes through an intermediate page. Customer Insights - Journeys runs some checks on the intermediate page to determine if the click was made by a bot or a human. 
+
+## Frequently asked questions
+
+| Question                      | Answer               | 
+|:-----------------------------------|:------------------------------|
+| Why do I see multiple email open interactions for the same contact with the exact same timestamp? | Bot protection doesn't apply to email opens. This could be due to bot-related activity, resulting in multiple open interactions. | 
+| I’ve noticed an inflated email open rate recently. What’s happening? | Because bot protection doesn't apply to email opens, nonhuman traffic can increase the open rate. Learn more about improving engagement measurement: [Beyond open rate: Rethinking email marketing metrics](https://www.microsoft.com/dynamics-365/blog/it-professional/2024/10/16/rethinking-email-metrics-the-evolving-landscape-of-open-rates/).|
+| Why are no or limited email opens being recorded? | Many modern email clients block image loading by default to protect user privacy. Because email open tracking relies on images being loaded, this may limit the app's ability to accurately capture email open interactions. Learn more: [Beyond open rate: Rethinking email marketing metrics](https://www.microsoft.com/dynamics-365/blog/it-professional/2024/10/16/rethinking-email-metrics-the-evolving-landscape-of-open-rates/). |
+| Why are there no email opens or clicks recorded? | Ensure compliance profiles are correctly configured and tracking is allowed for the contacts, leads, or Customer Insights - Data profiles that received the email. Learn more: [Consent management overview](real-time-marketing-compliance-settings.md). | 
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]

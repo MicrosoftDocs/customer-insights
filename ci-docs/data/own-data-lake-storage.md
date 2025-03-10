@@ -1,18 +1,18 @@
 ---
-title: Use your own Azure Data Lake Storage Gen2 account
-author: mukeshpo
+title: Use your own Azure Data Lake Storage account
 description: Learn about the requirements to use your own Azure Data Lake Storage account in Customer Insights - Data.
-ms.author: mukeshpo
-ms.date: 12/20/2023
+author: Scott-Stabbert
+ms.author: sstabbert
+ms.date: 11/19/2024
 ms.topic: how-to
 ms.collection: get-started
 ms.reviewer: mhart
 ms.custom: bap-template
 ---
 
-# Use your own Azure Data Lake Storage Gen2 account
+# Use your own Azure Data Lake Storage account
 
-Dynamics 365 Customer Insights - Data gives you the option to store your customer data in [Azure Data Lake Storage Gen2](/azure/storage/blobs/data-lake-storage-introduction). Customer data includes data that you import and the output data like unified profiles and segments. [Some of the output data](tables.md#customer-insights---data-tables-in-dataverse) is also stored as tables in Microsoft Dataverse along with metadata like match rules or segment configuration, and search index. By saving data to Data Lake Storage, you agree that data will be transferred to and stored in the appropriate geographic location for that Azure storage account. For more information, see [Microsoft Trust Center](https://www.microsoft.com/trust-center).
+Dynamics 365 Customer Insights - Data gives you the option to store your customer data in [Azure Data Lake Storage](/azure/storage/blobs/data-lake-storage-introduction). Customer data includes data that you import and the output data like unified profiles and segments. [Some of the output data](tables.md#customer-insights---data-tables-in-dataverse) is also stored as tables in Microsoft Dataverse along with metadata like match rules or segment configuration, and search index. By saving data to Data Lake Storage, you agree that data will be transferred to and stored in the appropriate geographic location for that Azure storage account. For more information, see [Microsoft Trust Center](https://www.microsoft.com/trust-center).
 
 Administrators in Customer Insights - Data can [create environments](create-environment.md) and [specify the data storage option](create-environment.md#step-2-configure-data-storage) in the process.
 
@@ -21,6 +21,7 @@ Administrators in Customer Insights - Data can [create environments](create-envi
 - Azure Data Lake Storage accounts must be in the same Azure region that you selected when creating the Customer Insights - Data environment. To know the region of the environment, go to **Settings** > **System** > **About**.
 - The Data Lake Storage account must have [hierarchical namespace enabled](/azure/storage/blobs/data-lake-storage-namespace).
 - The administrator setting up the Customer Insights - Data environment needs the Storage Blob Data Contributor or Storage Blob Data Owner role on the storage account or the `customerinsights` container. For more information on assigning permission in a storage account, see [Create a storage account](/azure/storage/common/storage-account-create?toc=%2Fazure%2Fstorage%2Fblobs%2Ftoc.json&tabs=azure-portal).
+- To allow segmentation features access to the storage account, follow the steps in this article.
 
 ## Connect Customer Insights - Data with your storage account
 
@@ -30,7 +31,7 @@ When you create a new environment, make sure the Data Lake Storage account exist
 1. Choose how to **Connect your storage**. You can choose between a resource-based option and a subscription-based option for authentication. For more information, see [Connect to an Azure Data Lake Storage account by using a Microsoft Entra service principal](connect-service-principal.md).
    - For **Azure subscription**, choose the **Subscription**, **Resource group**, and **Storage account** that contains the `customerinsights` container.
    - For **Account key**, provide the **Account name** and the **Account key** for the Data Lake Storage account. Using this authentication method implies that you're informed if your organization rotates the keys. You must [update the environment configuration](manage-environments.md#edit-an-existing-environment) with the new key when it's rotated.
-1. Choose if you want to use Azure Private Link to connect to the storage account and [create the connection to Private Link](private-link.md).
+1. If your storage account is behind a firewall, select **Enable private link** to connect to the account using [Azure private links](private-link.md)
 
 When system processes like data ingestion complete, the system creates corresponding folders in the storage account. Data files and model.json files are created and added to folders based on the process name.
 
@@ -48,7 +49,8 @@ Dynamics 365 Customer Insights - Data writes output data like unified profiles a
 
 - A single one-to-one mapping between a Dataverse organization and an Azure Data Lake Storage account is supported.
 - The target storage account can't be changed.
-- Data sharing doesn't work if an Azure Private Link setup is needed to access your Azure Data Lake Storage account because it's behind a firewall. Dataverse currently doesn't support the connection to private endpoints through Private Link.
+- Data sharing doesn't work if your Azure Data Lake Storage account is behind a firewall.
+- [Automatic linking of customer profiles](integrate-d365-apps.md) in Dataverse isn't supported when using your own Azure Data Lake Storage. Customer Insights storage is recommended.
 
 ### Set up security groups on your own Azure Data Lake Storage
 

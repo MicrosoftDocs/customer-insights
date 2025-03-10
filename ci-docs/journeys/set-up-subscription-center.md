@@ -9,12 +9,13 @@ search.audienceType:
   - admin
   - customizer
   - enduser
+ms.custom: outbound-marketing
 ---
 
 # Set up subscription lists and subscription centers
 
 > [!IMPORTANT]
-> This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
+> **This article only applies to [outbound marketing](user-guide.md), which will be removed from the product on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](transition-overview.md)
 
 A subscription center is a marketing page that known contacts can use to manage their communication preferences and contact details with your organization. All marketing email messages that you create by using Dynamics 365 Customer Insights - Journeys must include a link to a subscription center. Marketing email messages will fail the error check if you try to go live with a message that lacks this link.
 
@@ -60,11 +61,11 @@ To find, customize, and view the default subscription center:
 
 1. To open the marketing page list, go to **Outbound marketing** > **Internet marketing** > **Marketing pages**.
 1. Create a new marketing page, make sure the type is **Subscription center**, and save it (don't go live yet).
-1. Take note of the marketing page ID. The page ID is the highlighted part in the following URL: `https://yourorg.crm.dynamics.com/main.aspx?appid=06fdc062-36fc-ee11-9f89-000d3a33584b&pagetype=entityrecord&etn=msdyncrm_marketingpage&id=**`ac15f536-6d02-ef11-9f89-6045bd011505`**
+1. Take note of the marketing page ID. The page ID is the highlighted part in the following URL: `https://yourorg.crm.dynamics.com/main.aspx?appid=00001111-aaaa-2222-bbbb-3333cccc4444&pagetype=entityrecord&etn=msdyncrm_marketingpage&id=11112222-bbbb-3333-cccc-4444dddd5555`
 1. Open the developer console by pressing <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>I</kbd>.
-1. Enter the following command in the developer console: `Xrm.WebApi.updateRecord("msdyncrm_marketingpage", "ac15f536-6d02-ef11-9f89-6045bd011505", { "msdyncrm_forceportalless": true })` and press <kbd>Enter</kbd>.
+1. Enter the following command in the developer console: `Xrm.WebApi.updateRecord("msdyncrm_marketingpage", "11112222-bbbb-3333-cccc-4444dddd5555", { "msdyncrm_forceportalless": true })` and press <kbd>Enter</kbd>.
    > [!NOTE]
-   > Replace `ac15f536-6d02-ef11-9f89-6045bd011505` with your marketing page ID.
+   > Replace `11112222-bbbb-3333-cccc-4444dddd5555` with your marketing page ID.
 1. After the command is finished, reload the page in your browser and go live with the marketing page.
 
 #### Make edits to the default subscription form
@@ -262,8 +263,6 @@ To view, add, or remove list memberships for a displayed contact:
     - Each subscription list that the contact already belongs to is listed here.
     - To remove the contact from any of these subscriptions, select the **More options** button (which looks like an ellipsis) next to the target list and then select **Remove**.
     - To add the contact to any existing subscription list, select the **More commands** button (which looks like an ellipsis) in the **Subscription lists** heading and then select **Add existing marketing list**. A flyout opens. Use it to search for and select each list that you want to add the selected contact(s) to. The select **Add** to add the contacts and close the flyout.
-
-    ![Lists a contact subscribes to.](media/subscription-list-contact.png "Lists a contact subscribes to")
 
 ### Add contacts to lists from a contact list or form view
 

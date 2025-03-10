@@ -1,7 +1,7 @@
 ---
 title: Configure and authenticate social media accounts in outbound marketing
 description: Configure and authenticate each social media account where you'd like to author, schedule, and post updates in the outbound marketing area of Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/21/2023
+ms.date: 08/12/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -9,12 +9,16 @@ search.audienceType:
   - admin
   - customizer
   - enduser
+ms.custom: outbound-marketing
 ---
 
 # Configure and authenticate social media accounts in outbound marketing
 
 > [!IMPORTANT]
-> This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
+> **This article only applies to [outbound marketing](user-guide.md), which will be removed from the product on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](transition-overview.md)
+
+> [!WARNING]
+> Social posting and LinkedIn lead generation capabilities will be removed from Customer Insights - Journeys on December 2, 2024.
 
 Social posting enables Dynamics 365 Customer Insights - Journeys users to author, schedule, and publish posts to a variety of social media channels and accounts. You must configure and authenticate each channel and account that you'd like to make available for use with this feature. In the current version, you can configure accounts for Twitter, LinkedIn, and Facebook.
 

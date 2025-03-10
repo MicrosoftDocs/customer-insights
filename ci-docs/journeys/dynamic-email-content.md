@@ -1,7 +1,7 @@
 ---
 title: Add dynamic content to email messages
 description: How to add field values, set up content settings information, conditional statements, and while loops to your email designs in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/18/2023
+ms.date: 08/12/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -10,14 +10,25 @@ search.audienceType:
   - admin
   - customizer
   - enduser
+ms.custom: outbound-marketing
 ---
 
 # Add dynamic content to email messages
 
-[!INCLUDE [marketing-trial-cta](./includes/marketing-trial-cta.md)]
-
 > [!IMPORTANT]
-> This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
+> **This article only applies to [outbound marketing](user-guide.md), which will be removed from the product on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](transition-overview.md)
+
+> [!WARNING]
+> If you're using field-level security for some of your email fields, you must add the correct permissions or Customer Insights - Journeys can't process your email.
+>
+> To set up field-level security:
+>
+> 1. At the top right, select the **Settings** icon then select **Advanced settings**.
+> 1. In the **System** section, select **Security**.
+> 1. Select **Column Security Profiles**.
+> 1. To create a new Field Security profile, select **New Profile** and enter a name in the General section.
+> 1. In the **Users** section, add the system user: "**# D365 Marketing Core Sending**".
+> 1. In the **Field Permissions** section, add **Read** permission to all required fields.
 
 Dynamic content gets resolved just before a message is sent to a specific individual. You'll typically use dynamic content to merge information from the recipient's contact record (such as first and last name), to place special links, and to place information and links from the content settings. If you're comfortable working in code, you can also create custom logic that includes conditional statements, for-each loops, and more. You can use dynamic content anywhere in your message body and can also use a few types of dynamic values in the message header fields (subject, from address, and from name).
 
@@ -72,7 +83,7 @@ To view, edit, or create a content-settings record:
 Personalization helps you construct valid dynamic expressions to position field values from recipient contact records, the message content settings, and other database values. This button is provided on the text formatting toolbar whenever you select a text element in the graphical designer. The button is also provided for some settings fields, such as the subject, from-address, and from-name fields.
 
 > [!NOTE]
-> The personalization dialog only shows entities and relations that are synced with the marketing-insights service. If you need to show information or use relations for one or more entities that aren't listed, then ask your admin to add the relevant entities to the marketing-insights service. If you are an admin, then see [Choose entities to sync with the marketing-insights service](mkt-settings-sync.md) for instructions.
+> The personalization dialog only shows entities and relations that are synced with the marketing-insights service. If you need to show information or use relations for one or more entities that aren't listed, then ask your admin to add the relevant entities to the marketing-insights service. If you are an admin, then see [Choose entities to sync with the marketing-insights service](mkt-settings-sync.md) for instructions. The *owner* entity is no longer supported for email personalization. Replace it with either the *systemuser* or *team* entity, depending on which entity represents the owner of the record.
 
 ### Use personalization to place a dynamic expression
 
@@ -219,7 +230,7 @@ Non-contextual field expressions (which use the form  `{{EntityName(RecordID).Fi
 
 1. Open the record you want to reference.
 2. Look at the URL shown in your browser's address bar, which should show a URL such as:  
-`https://<MyOrg>.crm.dynamics.com/main.aspx?appid=c8cba597-4754-e811-a859-000d3a1be1a3&pagetype=entityrecord&etn=msevtmgt_event&id=5acc43d5-356e-e811-a960-000d3a1cae35`
+`https://<MyOrg>.crm.dynamics.com/main.aspx?appid=00001111-aaaa-2222-bbbb-3333cccc4444&pagetype=entityrecord&etn=msevtmgt_event&id=11112222-bbbb-3333-cccc-4444dddd5555`
 3. Find the part of the URL that starts with `&id=`, which is followed by the ID number of your current record. Copy that number (the value only) and use it in your expression.
 
 <a name="advanced-dynamic-content"></a>

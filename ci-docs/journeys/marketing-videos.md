@@ -9,18 +9,19 @@ search.audienceType:
   - admin
   - customizer
   - enduser
+ms.custom: outbound-marketing
 ---
 
 # Video overviews and instructions for Dynamics 365 Customer Insights - Journeys
 
 > [!IMPORTANT]
-> This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
+> **This article only applies to [outbound marketing](user-guide.md), which will be removed from the product on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](transition-overview.md)
 
 If you are new to Dynamics 365 Customer Insights - Journeys, then these videos will help you gain a quick understanding of the system and how to work with some of its most-used features.
 
 ## Get a quick overview
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4FRAO]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=f2db806c-cdda-4f7b-b6f7-cadceb93d516]
 
 More information: [Overview (Marketing)](real-time-marketing-overview.md)
 
@@ -28,7 +29,7 @@ For an even more detailed video overview of the features and benefits of Dynamic
 
 ## Design marketing emails
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/17c3476e-9383-413b-98ec-0b1ac6659824]
+> [!VIDEO 2323f320-856a-443e-9311-d802b7ccc345]
 More information:
 
 - Tutorial: [Create a marketing email and go live](create-marketing-email.md)
@@ -41,7 +42,7 @@ More information:
 
 ## Use customer journeys to create automated campaigns
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4IO58]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=cfb4272b-cdad-4cdc-b2e3-edb61017020f]
 More information:
 
 - Tutorial: [Create a simple customer journey](create-simple-customer-journey.md)
@@ -54,7 +55,7 @@ More information:
 
 ## Qualify your hottest leads with automated lead scoring
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/ae6596f2-4df4-420e-9635-df776e4e5398]
+> [!VIDEO 7e595aa9-7c2e-4402-82c4-056a999a22ca]
 More information:
 
 - Tutorial: [Set up lead scoring](set-up-lead-scoring.md)

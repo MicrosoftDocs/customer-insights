@@ -4,8 +4,8 @@ description: "Learn how to configure the connection and export to Autopilot."
 ms.date: 09/01/2023
 ms.reviewer: mhart
 ms.topic: conceptual
-author: pkieffer
-ms.author: philk
+author: Scott-Stabbert
+ms.author: sstabbert
 ---
 
 # Export segments to Autopilot (preview)
@@ -23,7 +23,6 @@ Export segments of unified customer profiles to Autopilot and use them for email
 
 ## Known limitations
 
-- Private link in combination with Bring your own storage (BYOS) is not supported.
 - Up up to 100,000 customer profiles per export to Autopilot, which can take up to a few hours to complete. The number of customer profiles that you can export to Autopilot depends on your contract with Autopilot.
 - Segments only.
 

@@ -1,7 +1,7 @@
 ---
 title: Have a dialog with data using Copilot in Customer Insights - Data
 description: Learn how to get more insights from your data by asking natural-language questions with Copilot in Dynamics 365 Customer Insights - Data. 
-ms.date: 01/30/2024
+ms.date: 11/12/2024
 ms.topic: how-to
 author: radsay01
 ms.author: rsayyaparaju
@@ -22,11 +22,11 @@ Responses are generated in accordance with [Microsoft Responsible AI Standards.]
 
 ## Prerequisites
 
-- Customer data is [imported](data-sources.md) and [unified.](data-unification.md)
-- For optimal results, we recommend imported and unified [activity data.](activities.md)
+- Customer data is [imported](data-sources.md) and [unified](data-unification.md).
+- For optimal results, we recommend imported and unified [activity data](activities.md).
 - You have Admin or Contributor permissions.
 - [Enable Copilot features powered by Azure OpenAI](copilot-global-consent.md) setting turned **On**. Default is **On**.
-- Environment uses a [supported language.](faqs-dialog-data.md#what-are-the-supported-geographies-and-languages)
+- Environment is in a [supported geography and uses a supported language](https://releaseplans.microsoft.com/availability-reports/?report=copilotfeaturereport).
 
 ## Discover insights from your data
 
@@ -56,8 +56,6 @@ The **Discover insights about your customers in natural language** page contains
 ## Share your feedback
 
 We want to hear your feedback so we can continually enhance the relevancy, precision, and value of the results and the user experience in general. Use the thumbs up or down and the feedback box to share your thoughts.
-
-[!INCLUDE [copilot-availability](includes/copilot-availability.md)]
 
 ## Next steps
 

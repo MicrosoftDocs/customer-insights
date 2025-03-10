@@ -1,11 +1,11 @@
 ---
 title: "Export segments to Adobe Campaign Standard (preview)"
 description: "Learn how use Customer Insights - Data segments in Adobe Campaign Standard."
-ms.date: 09/01/2023
+ms.date: 11/06/2024
 ms.reviewer: mhart
 ms.topic: conceptual
-author: pkieffer
-ms.author: nikeller
+author: Scott-Stabbert
+ms.author: sstabbert
 ---
 
 # Export segments to Adobe Campaign Standard (preview)
@@ -23,7 +23,6 @@ Export segments that target relevant audiences to Adobe Campaign Standard.
   - An [Azure Blob Storage account with a container](/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container).
   - User who sets up the connection must have the permission to access the content of the container. For example, a [Blob Storage Contributor](/azure/role-based-access-control/built-in-roles#storage-blob-data-contributor) role.
   - The [Customer Insights Service Principal](connect-service-principal.md) has write permissions on the container. For example, a [Blob Storage Contributor](/azure/role-based-access-control/built-in-roles#storage-blob-data-contributor) role.
-
 
 ## Campaign overview
 
@@ -59,6 +58,8 @@ The offer email that you want to send out will contain the first name, last name
 
 1. Enter **Subscription**, **Resource group**, **Storage account**, and **Container** for your Blob Storage account.
 
+1. Optionally, if your storage account is behind a firewall, select **Enable Private Link**. For more information, go to [Private Links](private-link.md).
+
 1. Review the [data privacy and compliance](connections.md#data-privacy-and-compliance) and select **I agree**.
 
 1. Select **Save** to complete the connection.
@@ -75,7 +76,7 @@ The offer email that you want to send out will contain the first name, last name
 
 1. Enter a name for the export.
 
-1. Choose the segment that you want to export. In this example, it’s **ChurnProneCustomers**.
+1. Choose the segment that you want to export. In this example, it's **ChurnProneCustomers**.
 
    :::image type="content" source="media/select-segment-churnpronecustomers.png" alt-text="Screenshot of the segment selection user interface with ChurnProneCustomers segment selected.":::
 

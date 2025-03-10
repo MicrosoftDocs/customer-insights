@@ -55,7 +55,7 @@
       href: data-sources-manage.md
     - name: Enrichment for data sources
       href: data-sources-enrichment.md
-    - name: Incremental refresh for data sources
+    - name: Incremental refresh for Azure Data Lake Storage
       href: incremental-refresh-data-sources.md
     - name: Real-time data ingestion
       href: real-time-data-ingestion.md
@@ -68,15 +68,15 @@
       href: data-unification.md
     - name: Data unification best practices
       href: data-unification-best-practices.md
-    - name: Customer data
+    - name: Select customer data
       href: data-unification-map-tables.md
-    - name: Deduplication rules
+    - name: Define deduplication
       href: data-unification-duplicates.md
-    - name: Matching rules
+    - name: Define matching rules
       href: data-unification-match-tables.md
-    - name: Unify data
+    - name: Merge data
       href: data-unification-merge-tables.md
-    - name: Review data unification
+    - name: Review unification summary
       href: data-unification-review.md
     - name: Update unification settings
       href: data-unification-update.md  
@@ -365,8 +365,6 @@
   items:
     - name: Integrate with Customer Insights - Journeys
       href: marketing-get-started.md
-    - name: Enrich Sales' lead summaries
-      href: lead-profile-summary.md
     - name: Automatically link Dynamics 365 apps to customer profiles
       href: integrate-d365-apps.md
 
@@ -403,8 +401,6 @@
       href: faqs-docs-qna.md
     - name: FAQs for segment creation
       href: faqs-segment-creation.md
-    - name: FAQ for customer insights in Sales lead summaries
-      href: faqs-profile-summary.md
 
 - name: More resources
   items:

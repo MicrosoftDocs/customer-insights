@@ -9,12 +9,13 @@ search.audienceType:
   - admin
   - customizer
   - enduser
+ms.custom: outbound-marketing
 ---
 
 # Design behavioral segments
 
 > [!IMPORTANT]
-> This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
+> **This article only applies to [outbound marketing](user-guide.md), which will be removed from the product on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](transition-overview.md)
 
 _Behavioral segments_ query the _interaction_ records stored in the marketing insights database. Each of these records is generated automatically in response to something a contact did (such as open an email or visit a web page), and is related to the specific contact record associated with that action (if known). Interaction records are used to generate various insights displays in the Dynamics 365 Customer Insights - Journeys UI, but they aren't synced to the Customer Insights - Journeys organizational database.
 
@@ -52,7 +53,7 @@ Often, you'll want to find interactions associated with a specific form, custome
 1. Open the record (such as event or email) that you want to refer to.
 1. Check the address bar in your browser, which should show a URL such as:
 
-    `https://<MyOrg>.crm.dynamics.com/main.aspx?appid=c8cba597-4754-e811-a859-000d3a1be1a3&pagetype=entityrecord&etn=msevtmgt_event&id=5acc43d5-356e-e811-a960-000d3a1cae35`
+    `https://<MyOrg>.crm.dynamics.com/main.aspx?appid=00001111-aaaa-2222-bbbb-3333cccc4444&pagetype=entityrecord&etn=msevtmgt_event&id=11112222-bbbb-3333-cccc-4444dddd5555`
 
 1. Find the part of the URL that starts with **&amp;id=**, which is followed by the ID number of your current record. Copy that number (the value only) and use it in your expression.
 

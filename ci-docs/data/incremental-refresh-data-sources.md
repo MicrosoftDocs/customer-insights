@@ -1,53 +1,21 @@
 ---
-title: "Incremental refresh for Power Query and Data Lake Storage data sources"
-description: "Refresh new and updated data for large data sources based on Power Query or Azure Data Lake Storage data sources."
-ms.date: 01/18/2024
+title: "Incremental refresh for Data Lake Storage data sources"
+description: "Refresh new and updated data for large data sources based on Azure Data Lake Storage data sources."
+ms.date: 02/14/2025
 ms.reviewer: v-wendysmith
 ms.topic: how-to
-author: mukeshpo
-ms.author: mukeshpo
+author: Scott-Stabbert
+ms.author: sstabbert
 ms.custom: bap-template
 ---
 
-# Incremental refresh for Power Query and Data Lake Storage data sources
+# Incremental refresh for Data Lake Storage data sources
 
-Incremental refresh for data sources based on Power Query (preview) or Azure Data Lake Storage provides the following advantages:
+Incremental refresh for data sources based on Azure Data Lake Storage provides the following advantages:
 
 - **Faster refreshes** - Only data that has changed gets refreshed. For example, you might refresh only the past five days of a historical dataset.
 - **Increased reliability** - With smaller refreshes, you don't need to maintain connections to volatile source systems for as long, reducing the risk of connection issues.
 - **Reduced resource consumption** - Refreshing only a subset of your total data leads to more efficient use of computing resources and decreases the environmental footprint.
-
-## Configure incremental refresh for data sources based on Power Query (preview)
-
-[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
-
-Configure any Power Query data source in Customer Insights - Data to incrementally refresh data. The data source must have a primary key column that uniquely identifies records and a datetime column that indicates when the data was last updated.
-
-[!INCLUDE [public-preview-note](includes/public-preview-note.md)]
-
-1. [Create a new data source based on Power Query](connect-power-query.md).
-
-1. Select a data source that supports incremental refresh, such as [Azure SQL database](/power-query/connectors/azuresqldatabase).
-
-1. Select the tables to ingest.
-
-1. Complete the transformation steps and select **Next**.
-
-1. In the **Set up incremental refresh** dialog box, select **Set up** to open the **Incremental refresh settings**. If you select **Skip**, the data source refreshes the entire data set.
-   > [!TIP]
-   > You can also apply incremental refresh later by editing an existing data source.
-
-1. On **Incremental refresh settings**, configure the incremental refresh for all tables that you selected when creating the data source.
-
-   :::image type="content" source="media/incremental-refresh-settings.png" alt-text="Configure incremental refresh settings.":::
-
-1. Select a table, and provide the following details:
-
-   - **Define the primary key**: Select a primary key for the table.
-   - **Define the "last updated" field**: This field only shows attributes of type date or time. Select an attribute that indicates when the records were last updated. This attribute identifies the records that fall within the incremental refresh time frame.
-   - **Check for updates every**: Specify how long you want the incremental refresh time frame to be.
-
-1. Select **Save** to complete the creation of the data source. The initial data refresh is a full refresh. Afterwards, the incremental data refresh happens as configured in the previous step.
 
 ## Configure incremental refresh for Azure Data Lake Storage data sources
 

@@ -1,7 +1,7 @@
 ---
 title: Install and manage Customer Insights
 description: How to install, uninstall, and manage Dynamics 365 Customer Insights environments.
-ms.date: 06/05/2024
+ms.date: 07/18/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -24,10 +24,11 @@ To install Customer Insights, you must meet all the following requirements:
 - You must already have a Microsoft 365 tenant.
 - You must have Dynamics 365 Customer Insights, Dynamics 365 Marketing, or Dynamics 365 Customer Insights – Standalone license on your tenant.
 - You must sign into your tenant with a user account that has all the following:
-   - A security role (such as _Global admin_ or [_Service support admin_](/power-platform/admin/use-service-admin-role-manage-tenant)) that allows you to modify the target Dynamics 365 environment. (If you're reinstalling Customer Insights on an environment where Customer Insights was previously installed, then _Service support admin_ users [_Dynamics 365 administrator_ or _Power Platform administrator_] must use the same user ID as was used for the initial install. If you're not sure which ID was used for the initial install, or if you're getting errors, then try to install as a _Global admin_.)
-   - Permissions to register applications in Azure. The global administrator always has this right, but other accounts can also have it. See [Do I have permissions to register applications on Azure?](setup-troubleshooting.yml#register-apps-azure) for information about how to confirm this setting for your account.
+   - A security role (such [_Service support admin_](/power-platform/admin/use-service-admin-role-manage-tenant)) that allows you to modify the target Dynamics 365 environment. (If you're reinstalling Customer Insights on an environment where Customer Insights was previously installed, then _Service support admin_ users [_Dynamics 365 administrator_ or _Power Platform administrator_] must use the same user ID as was used for the initial install.
+   - Permissions to register applications in Azure. See [Do I have permissions to register applications on Azure?](setup-troubleshooting.yml#register-apps-azure) for information about how to confirm this setting for your account.
    - A Dynamics 365 license with the _System Administrator_ security role assigned on your target Dynamics 365 environment. (The Customer Insights license agreement doesn't legally require the installing user to have this license, but a known technical issue currently makes it necessary.)
 - You must be located in a country/region where the product is supported. To read the latest list of countries/regions where you can use Customer Insights, download the [Microsoft Dynamics 365 International Availability](https://go.microsoft.com/fwlink/p/?linkid=875097) document (PDF).
+- You must disable the [Block unmanaged customizations](/power-platform/admin/settings-features#block-unmanaged-customizations) setting in your environment. To do so, go to [admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com) > **Environments** and select the three dots ("**...**") next to the environment name. Then go to **Settings** > **Product** > **Features** and set the toggle next to **Block unmanaged customizations** to **Off**. Learn more: [Block unmanaged customizations in Dataverse](/power-platform/alm/block-unmanaged-customizations)
 
 Before starting an install, close all other browser windows and tabs and clear your browser cache. If you run into trouble while installing, see the [Administration and setup FAQ](setup-troubleshooting.yml) for some possible solutions.
 
@@ -48,14 +49,14 @@ If you **Uninstall** Customer Insights - Journeys paid or trial, the services ar
 
 If you don't already have one, you must first create an environment in [Microsoft Power Platform admin center](/power-platform/admin/). To create an environment:
 
-1. Go to [**admin.powerplatform.microsoft.com**](https://admin.powerplatform.microsoft.com) and create an environment of the desired type (production, sandbox, or subscription-based trial).
+1. Go to [admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com) and create an environment of the desired type (production, sandbox, or subscription-based trial).
 1. To install Dynamics 365 applications, you must activate the "Enable Dataverse" and "Enable D365 Apps" toggles for the environment to allow apps. 
 
 Learn more: [Create and manage environments in the Power Platform admin center](/power-platform/admin/create-environment)
 
 #### Install Customer Insights - Journeys and Customer Insights - Data
 
-1. On the [**admin.powerplatform.microsoft.com**](https://admin.powerplatform.microsoft.com) page, find **Resources** in the left-hand site map and select **Dynamics 365 apps**.
+1. On the [admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com) page, find **Resources** in the left-hand site map and select **Dynamics 365 apps**.
 1. Select the geo in the upper right corner of the Power Platform Admin Center that matches the environments you want to target for the installation. Find either **Dynamics 365 Customer Insights** or **Dynamics 365 Marketing** in the list and select the three dots ("**...**") next to the app name, then select **Manage**.
 1. In the installation management area, you see your available environments listed and can choose where you want to install Customer Insights - Journeys or Customer Insights - Data. To install either application, select **Install**. If you don't own any paid licenses and want to learn how to buy, select **Buy now**. If you have trial licenses, use the **Trial** tab to install on a subscription-based trial environment or manage a viral trial.
 1. If the installation fails, select **Diagnose** to learn more about the failure and determine if there's anything you need to do differently. If there's no actionable reason for failure, select **Retry**.
@@ -107,7 +108,7 @@ If your installation fails and you want to abandon the installation, you must ac
 
 ### Uninstall
 
-Find detailed guidance for [uninstalling Dynamics 365 Customer Insights - Journeys](uninstall.md). 
+Find detailed guidance for [uninstalling Dynamics 365 Customer Insights - Journeys](uninstall.md).
 
 ### Update
 

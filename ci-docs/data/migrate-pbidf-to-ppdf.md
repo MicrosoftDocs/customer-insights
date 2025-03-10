@@ -4,8 +4,8 @@ description: Learn how to upgrade dataflows when your Power Query data sources a
 ms.date: 09/01/2023
 ms.reviewer: mhart
 ms.topic: how-to
-author: mukeshpo
-ms.author: mukeshpo
+author: Scott-Stabbert
+ms.author: sstabbert
 ms.custom: bap-template
 ---
 

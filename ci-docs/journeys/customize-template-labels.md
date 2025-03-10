@@ -9,12 +9,13 @@ search.audienceType:
   - admin
   - customizer
   - enduser
+ms.custom: outbound-marketing
 ---
 
 # Create and customize template labels
 
 > [!IMPORTANT]
-> This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
+> **This article only applies to [outbound marketing](user-guide.md), which will be removed from the product on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](transition-overview.md)
 
 The template labelling feature enables users to add any of several available labels to list and tile displays of templates for emails, pages, forms, and segments. Read this topic to learn how to create and customize the labelling options available to users for each type of template. You'll establish these options by creating option-set fields and values for each relevant entity (these can be local or global option sets), and by configuring each entity to identify the option-set field to use for the labels.
 

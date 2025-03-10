@@ -1,11 +1,15 @@
 ---
 title: Copilot features in Customer Insights - Journeys
-description: Copilot features in Dynamics 365 Customer Insights - Journeys.
-ms.date: 03/20/2024
+description: Use Copilot in Customer Insights - Journeys to streamline your marketing campaigns. Create and manage segments, emails, and journeys with AI assistance.
+ms.date: 11/22/2024
 ms.topic: article
 author: alfergus
 ms.author: alfergus
 ms.collection: bap-ai-copilot
+ms.custom:
+  - ai-gen-docs-bap
+  - ai-gen-description
+  - ai-seo-date:11/22/2024
 ---
 
 # Copilot features in Customer Insights - Journeys
@@ -59,5 +63,10 @@ For example, you can type "revise this paragraph for a more formal tone" or "mak
 Elevate your email communication to new heights with AI-assisted themes. Define the visual appeal of your emails effortlessly by describing your preferences using natural language and Copilot takes care of the rest.
 
 For example, you can type "give this email a professional and modern theme" or "create a friendly and inviting look for this message," and Copilot transforms your vision into a stunning email theme. **Learn more**: [Style your emails with AI-assisted themes](email-theme.md)
+
+## Related information
+
+[How AI can Transform Your Marketing (video)](https://youtu.be/zk_QcHAb4cU)
+[Create personalized content in seconds (video)](https://youtu.be/1Lgodu6A2ZM)
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]

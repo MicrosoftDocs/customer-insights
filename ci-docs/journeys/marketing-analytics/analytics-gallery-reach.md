@@ -10,6 +10,7 @@ search.audienceType:
   - admin
   - customizer
   - enduser
+ms.custom: outbound-marketing
 ---
 
 # Marketing reach analysis for Dynamics 365 Customer Insights - Journeys
@@ -17,7 +18,7 @@ search.audienceType:
 [!INCLUDE [consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
-> This article only applies to [outbound marketing](/dynamics365/marketing/user-guide).
+> **This article only applies to [outbound marketing](../user-guide.md), which will be removed from the product on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](../transition-overview.md)
 
 Use this report to identify contacts and how you're reaching out to them. See all audiences that have been reached in selected journeys, together with their related interactions.
 
@@ -29,10 +30,6 @@ Use the following links to download a template for running the report on your ow
 
 > [!NOTE]
 > You can find the full list of marketing analytics downloads in the [marketing analytics reporting gallery](analytics-gallery-start.md#gallery).
-
-![Marketing reach analysis.](media/MarketingReach/MarketingReach-ReachPerJourneyWithActivities.png "Show journeys and the activities of your audience")
-
-![Contacts in marketing automation.](media/MarketingReach/MarketingReach-ContactsInMarketingAutomation.png "Find contacts included in customer journeys and their activities")
 
 ***Happy analytics reporting with Dynamics 365 Customer Insights - Journeys!***
 

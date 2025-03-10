@@ -120,16 +120,11 @@ If needed, you can change the language and region setting along with time zone b
 
 ### Using data that is reached by traversing a 1-to-many relation
 
-> [!TIP]
-> How to enable the preview for more data for personalization
->
-> If you don’t see this feature in your app, contact your admin who can activate it by going to **Settings > Overview > Feature switches**, scrolling to **Personalization** area, enabling the **One-to-many-relation for Dynamic text** feature switch, and saving the setting by selecting on **Save** on the top right corner.
-
 Personalized messages drive engagement that helps deliver desired business outcomes. [Dynamic text](real-time-marketing-predefined-dynamic-text.md) in Customer Insights - Journeys makes it easy to include personalized information for each recipient. Previously, dynamic text was limited to data that could be reached by 1-to-1 or many-to-1 relations. Now, you can use data that requires traversing 1-to-many or many-to-many relations, unlocking even more data for personalization. 
 
 Watch this video to learn more:
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RW10ZeH]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=faf37920-4363-4da4-b655-4374ebbde094]
 
 Consider a university alumni donation campaign where you would want to include name of the college attended by each alum to drive maximum engagement. An alum might have attended multiple colleges in that university, resulting in a "1-to-many" relationship between student and college records. Dynamic text can now be defined for such data.
 
@@ -203,7 +198,7 @@ When Customer Insights – Data is present and connected, you can use customer m
 
 Watch this video to learn more:
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RW1fY3B]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=7c905e7e-853e-49e7-85d2-72cdea87a770]
 
 ##### Creating measures
 

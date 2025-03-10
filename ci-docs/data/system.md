@@ -1,7 +1,7 @@
 ---
 title: "View system configuration"
 description: "Learn about system settings in Dynamics 365 Customer Insights - Data."
-ms.date: 10/11/2023
+ms.date: 11/13/2024
 ms.topic: conceptual
 author: NimrodMagen
 ms.author: nimagen
@@ -110,7 +110,7 @@ The Environment status summary is designed to help you quickly understand the st
 ### Prerequisites
 
 - [Enable Copilot features powered by Azure OpenAI](copilot-global-consent.md) setting turned **On**. Default is **On**.
-- [Environment is in a supported geography and uses a supported language.](faqs-environment-status.md#what-are-the-supported-geographies-and-languages).
+- Environment is in a [supported geography and uses a supported language](https://releaseplans.microsoft.com/availability-reports/?report=copilotfeaturereport).
 
 ### View the Environment status summary
 
