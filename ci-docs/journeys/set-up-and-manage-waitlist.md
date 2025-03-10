@@ -12,6 +12,8 @@ search.audienceType:
 ---
 
 # Preview: Preview: Set up and manage event waitlist
+> [!NOTE]
+> Due to release rollout delays, this feature will be available the last week of March. You will be able to see "Waitlist in Real-time journeys" in Feature switches in the Settings section, once the feature is available in your region.
 
 > [!IMPORTANT]
 > A preview feature is a feature that isn't complete but is made available before it’s officially in a release so customers can get early access and provide feedback. Preview features aren’t meant for production use and may have limited or restricted functionality.
@@ -41,7 +43,7 @@ To enable or disable the waitlist for any event:
   - **Maximum event capacity** (event-level registration only): Enter the maximum number of people who can attend your event. The waitlist will only take effect after this number of contacts have registered. If you are using session-level registrations, you can also set up a waitlist for each session, see the section below.
     - **Waitlist this event:** Set to **Yes** to enable the waitlist feature for an event.
     - **Auto-register waitlisted contacts**: set this to **Yes** to automatically register the next contact in line when space becomes available. When this is set to **No**, then you will have to manually invite waitlisted contacts to confirm their interest and once they do, you can change the status reason of their registration from "Waitlisted" to "Registered"
-   :::image type="content" source="media/waitlist settings.png" alt-text="Event general tab settings screen" lightbox="media/waitlist settings.png":::
+   :::image type="content" source="media/media/waitlistedmanualupdate.png" alt-text="Event general tab settings screen" lightbox="media/waitlistedmanualupdate.png":::
 
 ### Enable a waitlist for a session
 If you are using [session-level registration]([url](https://learn.microsoft.com/en-us/dynamics365/customer-insights/journeys/real-time-journeys-event-session)), you can also use waitlisting for sessions. Waitlist for sessions can be used together with event waitlist or just for individual sessions. 
