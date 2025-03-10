@@ -71,11 +71,11 @@ Based on the set up you choose, event might have a larger capacity then individu
     - For sessions, that have capacity the session registration status will be "**On hold**" as **no attendee can be registered for a session without having secured spot in an event**
     - Once a spot opens up in an event, the attendee will be registered to an event and all of the respective sessions that were "On hold" for them
 1. **Event is full and sessions are too**: i.e. Event and session capacity is equal, session registration is required.
-- Registrants will be able to register for an event and session waitlist
-- Given that neither event nor session capacity is available, both registrations will have a status "**Waitlisted**"
-- Registrants will only get registered once a spot opens up in the event. 
+    - Registrants will be able to register for an event and session waitlist
+    - Given that neither event nor session capacity is available, both registrations will have a status "**Waitlisted**"
+    - Registrants will only get registered once a spot opens up in the event. 
 
-**##View the waitlist**
+## View the waitlist
 To see who is currently on the waitlist for any event or session:
 
 1. Open the Events work area, go to the events list (Events > Event > Events), and then open the event.
