@@ -40,7 +40,7 @@ The matching rule builder consists of three main parts:
 - **Main rule** - is always executed first to get a group of most relevant records. This is a direct query to database, so the degree of match is always 100% (it isn't possible to set up fuzzy matching). You can add multiple attributes to the Main rule. There's always the "OR" operator between the attributes of the rule.
 - **Additional rules** - are executed on the group of records filtered out by the Main rule. You can add multiple attributes to every Additional rule. There's always the "OR" operator between the attributes of the rule. You can create multiple Additional rules. All rules are always linked by the "AND" operator. You can set the "Degree of match", which defines if exact match (100%) is required or what extend of fuzzy match is applied.
 
-:::image type="content" source="media/real-time-marketing-define-matching-rule.png" alt-text="Create a new matching rule" lightbox="media/real-time-marketing-define-matching-rule.png":::
+:::image type="content" source="media/real-time-marketing-define-matching-rule.png" alt-text="Define your matching rule" lightbox="media/real-time-marketing-define-matching-rule.png":::
 
 > [!IMPORTANT]
 >
