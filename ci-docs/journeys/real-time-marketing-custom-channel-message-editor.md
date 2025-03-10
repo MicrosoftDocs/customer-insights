@@ -90,6 +90,6 @@ Next, create a form for the custom entity that will be loaded in the Customer In
 
 The form ID of this entity is assigned to **msdyn_messageformid attribute** at the [channel definition step](real-time-marketing-define-channel-definition.md).
 
-You can use custom controls on the form or out-of-the-box controls like **MsdynmktControls.RichTextControl.RichTextControl** that support personalization.
+You can use custom controls on the form or out-of-the-box controls that support personalization.
 
 [!INCLUDE [footer-include] (./includes/footer-banner.md)]
