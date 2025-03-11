@@ -1,16 +1,14 @@
 ---
-title: "Export diagnostic logs (preview)"
+title: "Export diagnostic logs"
 description: "Learn how to send logs to Microsoft Azure Monitor."
-ms.date: 11/19/2024
+ms.date: 03/11/2025
 ms.reviewer: mhart
 ms.topic: article
 author: brndkfr
 ms.author: bkief
 ---
 
-# Export diagnostic logs (preview)
-
-[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
+# Export diagnostic logs
 
 [!INCLUDE [azure-ad-to-microsoft-entra-id](../journeys/includes/azure-ad-to-microsoft-entra-id.md)]
 
@@ -27,8 +25,6 @@ Customer Insights sends the following event logs:
 - **Operational Events**
   - **WorkflowEvent** - lets you set up [data sources](data-sources.md), [unify](data-unification.md), [enrich](enrichment-manage.md), and [export](export-manage.md) data into other systems. These steps can be done individually (for example, trigger a single export). They can also run orchestrated (for example, data refresh from data sources that trigger the unification process, which will pull in enrichments and export the data into another system). For more information, see the [WorkflowEvent Schema](#workflow-event-schema).
   - **APIEvent** - sends all API calls of the environment. For more information, see the [APIEvent Schema](#api-event-schema).
-
-[!INCLUDE [public-preview-note](includes/public-preview-note.md)]
 
 ## Set up the diagnostic settings
 
