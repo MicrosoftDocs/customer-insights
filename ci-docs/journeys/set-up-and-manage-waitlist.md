@@ -51,7 +51,7 @@ To enable or disable the waitlist for any event:
     - **Waitlist this event**: Set to **Yes** to enable the waitlist feature for an event.
     - **Auto-register waitlisted contacts**: Set this to *Yes* to automatically register the next contact when space becomes available. When this is set to *No*, you will have to manually invite waitlisted contacts to confirm their interest. Once they confirm their interest, you can change the status reason of their registration from "Waitlisted" to "Registered."
 
-   :::image type="content" source="media/media/waitlistedmanualupdate.png" alt-text="Event general tab settings screen" lightbox="media/waitlistedmanualupdate.png":::
+   :::image type="content" source="media/waitlistedmanualupdate.png" alt-text="Event general tab settings screen" lightbox="media/waitlistedmanualupdate.png":::
 
 ### Enable a waitlist for a session
 
