@@ -1,7 +1,7 @@
 ---
 title: Event management in outbound marketing overview
 description: An overview of event-management features (including planning, logistics, sponsors, speakers, promotion, and registration) in outbound marketing.
-ms.date: 08/18/2023
+ms.date: 02/06/2025
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -49,25 +49,8 @@ Dynamics 365 Customer Insights - Journeys offers two solutions for Event Managem
 >
 > If your event website is [self-hosted](./developer/self-hosted.md), you must [install the latest self-hosted sample website](./developer/event-management-web-application.md) to maintain functionality after applying any Customer Insights - Journeys update.
 
-## When to use Customer Insights - Journeys and when to use outbound marketing for event management
+## Transition events to real-time journeys
 
-Customer Insights - Journeys contains a subset of outbound event management features plus several improvements. The following table compares the Customer Insights - Journeys and outbound marketing event management features.
-
-|     Feature     |     Outbound marketing    |     Customer Insights - Journeys    |
-|---|---|---|
-|     Single session event    |     Yes    |     Yes    |
-|     Multi-session event          |     Yes    |     Yes    |
-|     Recurring event    |     Yes    |     N/A    |
-|     Event level templates    |     Yes    |     N/A    |
-|     Sessions, session tracks, speaker management    |     Yes    |     Yes    |
-|     Venue management    |     Yes    |     Yes    |
-|     Tracking sponsors    |     Yes    |     Yes    |
-|     Creating Teams meetings/live events/webinars    |     Yes    |     Yes    |
-|     Support for On24 and other generic webinar providers      |     Yes    |     N/A    |
-|     Using marketing forms for registrations    |     Yes    |     Yes    |
-|     Waitlist    |     Yes    |     N/A    |
-|     Payments    |     Yes    |     N/A    |
-|     Lead entity registration    |     Yes    |     N/A    |
-|     Set registrations end date    |    Yes    |    N/A    |
+To learn about event management in real-time journeys, see [Transition events from outbound marketing to real-time journeys](transition-walkthrough-events.md).
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]

@@ -1,7 +1,7 @@
 ---
 title: Upload, manage, and use images, files, and videos in online content
 description: Find out how to efficiently upload, manage, and use images, files, and videos in Dynamics 365 Customer Insights - Journeys. Streamline your content creation.
-ms.date: 11/22/2024
+ms.date: 02/12/2025
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -56,10 +56,10 @@ You can **replace** your assets with newer versions whenever needed. To replace 
 1. Select the image.
 1. Select **Upload file** in the command bar.
 1. Select a new image.
-1. A new version of the asset appears in the asset library. The new version will also appear wherever the asset is currently being used.
-    > [!TIP]
-    > To ensure that you see the newest version of the asset after it's replaced, clear your browser cache and refresh the browser window.
-1. If you open the asset, you can see the version number, but you can't view the previous versions.
+1. A new version of the asset appears in the asset library. If you open the asset, you can see the version number, but you can't view the previous versions.
+
+> [!TIP]
+> The asset library utilizes a [Content Delivery Network (CDN)](cdn-disabling.md) to distribute content across multiple servers. When an asset is uploaded, each CDN caches its own version for up to 30 days. If you replace an asset with a newer version, the time it takes to update varies across CDNs depending on their cache refresh cycles. Because users access content from different CDNs, they may continue to see the previous asset version until the cache updates. To ensure that the latest version is displayed consistently, we recommend uploading a new asset and updating the link in your message rather than replacing the existing asset.
 
 ## Find assets
 

@@ -47,7 +47,7 @@ When creating a trigger-based journey, you can specify the following properties 
 > [!div class="mx-imgBorder"]
 > ![Create a trigger-based journey screenshot.](media/real-time-marketing-trigger-based-journey.png "Create a trigger-based journey screenshot")
 
-Additional configurations for starting the journey can be found in the journey task pane. See [Customer Insights - Journeys journey tile reference](real-time-marketing-tile-reference.md).
+Additional configurations for starting the journey can be found in the journey task pane. See [Add an action in a journey](add-action.md).
 
 ## Add journey conditions
 

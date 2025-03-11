@@ -1,7 +1,7 @@
 ---
 title: "Preview: Customer Insights - Journeys effectiveness analytics"
 description: Learn how to create personalized experiences with marketing effectiveness analytics in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/22/2023
+ms.date: 02/20/2025
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -12,6 +12,9 @@ search.audienceType:
 ---
 
 # Preview: Marketing effectiveness analytics
+
+> [!WARNING]
+> The marketing effectiveness analytics public preview will be discontinued and removed on February 28, 2025.
 
 > [!IMPORTANT]
 > A preview feature is a feature that is not complete, but is made available before it’s officially in a release so customers can get early access and provide feedback. Preview features aren’t meant for production use and may have limited or restricted functionality.

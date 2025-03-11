@@ -1,10 +1,10 @@
 ---
 title: Create a segment-based journey
 description: Create a segment-based journey in Dynamics 365 Customer Insights - Journeys. Learn how to send announcements and nurture campaigns to your most valuable customers.
-ms.date: 12/04/2024
+ms.date: 02/24/2025
 ms.topic: article
 author: alfergus
-ms.author: alfergus
+ms.author: colinbirkett
 ms.collection: bap-ai-copilot
 ms.custom:
   - ai-gen-docs-bap
@@ -37,8 +37,7 @@ You can build the journey while the content is in the **Draft** state. To publis
 
 ## Set the journey start
 
-> [!div class="mx-imgBorder"]
->![Create a segment-based journey.](media/real-time-marketing-segment-journey.png "Create a segment-based journey")
+:::image type="content" source="media/segment-journey-allow-individuals.png" alt-text="Create a segment-based journey." lightbox="media/segment-journey-allow-individuals.png":::
 
 To create a segment-based journey, go to **Engagement** > **Journeys** and select **+New journey** in the top toolbar. A window opens allowing you to use [Copilot to create a journey](real-time-marketing-use-copilot-create-journey.md). To create a segment-based journey manually, select the **Skip and create from blank** button.
 
@@ -49,11 +48,11 @@ On the "Create a new journey" screen:
 - Select one or more segments. Note the following when selecting multiple segments:
   - The total combined member count of all segments can't exceed the limit noted [here](real-time-marketing-known-issues.md#segments) for a journey. You can select at most 15 segments (or fewer if the segment size limit is reached sooner).
   - Outbound marketing segments or mixed audience types (for example, contacts and leads) can't be selected.
-  - Only one-time journeys are supported at this time (recurring journeys and ongoing journeys where the audience can enter at any time will be supported in an upcoming release).
   - Environments that use their own [Azure Data Lake storage account](../data/own-data-lake-storage.md#connect-customer-insights---data-with-your-storage-account) aren't supported.
 - Choose the **frequency** at which your journey should run:
   - A **one-time** journey with a **static** audience that runs one time. When the journey starts, the current members of the segment start the journey.
-  - A **one-time** journey where **newly added members can start at any time**. Responds to changes in the segment membership, letting more people start the journey after it starts. When the journey starts, the current members of the segment start the journey. Newly added segment members start the journey when the segment is refreshed. Each person goes through the journey one time, even if they're removed and then later added again to the segment.
+  - A **one-time** journey where **newly added members can start at any time**. This journey responds to changes in the segment membership, letting more people start the journey after it starts. When the journey starts, the current members of the segment start the journey. Newly added segment members start the journey when the segment is refreshed. If "Allow audience members who re-join the segment to re-eneter the journey" *isn't* selected, each person goes through the journey only one time even if they're removed and later added back to the segment. If that option *is* selected, a person leaving the segment and then re-joining goes through journey again. 
+    - Selecting the "Allow audience members who re-join the segment to re-eneter the journey" option enables advanced scenarios such as this: A business wants to maintain two segments of “Active” and “Inactive” customers and has journeys specific to such segments. Customers who make a purchase are placed in the “Active” segment whose journey promotes other products. After some time, these customers may be moved to the “Inactive” segment where they get different communications (for example, offers to come back). When customers in the "Inactive" segment make a purchase, they are moved back into the “Active” segment. This option allows the business to control whether such "re-joined" people can start the journey for the “Active” segment once again.  
   - A **repeating** journey runs on a schedule that you define. Every time the journey reaches the scheduled run time, all current members of the segment start the journey. Members added to the segment between the scheduled run times are included in the next run of the journey. Every time the journey runs, all segment members start the journey even if they previously entered the journey.
 
       The repeating schedule is evaluated from the start date and time using 24 hours for days and 7 days for weeks. For months, the same date on the new month is used and if the month doesn't have that date, the last day of the month is used. For example, a journey starting on January 31 and repeating every month will run on January 31, February 28 (or February 29 if it's a leap year), March 30, April 31, and so on.

@@ -46,8 +46,10 @@
       href: transition-walkthrough-functional.md
     - name: Setup changes in real-time journeys
       href: transition-walkthrough-setup.md
-    - name: Segments, emails, journeys, and assets
+    - name: Segments
       href: transition-walkthrough-segments.md
+    - name: Emails, journeys, and assets
+      href: transition-walkthrough-journeys.md
     - name: Consent
       href: transition-walkthrough-consent.md
     - name: Consent management and double opt-in
@@ -56,6 +58,8 @@
       href: transition-walkthrough-forms.md
     - name: Event management
       href: transition-walkthrough-events.md
+    - name: Event registration
+      href: migrate-event-registration.md
     - name: Lead management and scoring
       href: transition-walkthrough-leads.md
     - name: Insights and reports
@@ -152,7 +156,7 @@
         items:
         - name: Use QR codes for event registration, links to content, or URLs
           href: email-QR-Code.md
-        - name: "Preview: Use enhanced HTML controls and import HTML snippets"
+        - name: Use enhanced HTML controls and import HTML snippets
           href: email-creation-with-html-edits.md
         - name: Use custom fonts in emails
           href: use-custom-fonts.md
@@ -262,6 +266,62 @@
       href: journeys-overview.md
     - name: "Preview: Copilot - Create journeys using AI assistance"
       href: real-time-marketing-use-copilot-create-journey.md
+    - name: Journey flow and tile reference
+      items:
+      -  name: Understanding journey flow
+         href: journey-flow-tile-ref.md
+      -  name: Start a journey
+         href: journey-start.md
+      -  name: Add an action in a journey
+         href: add-action.md
+      -  name: End a journey
+         href: journey-end.md
+    - name: Trigger-based journeys
+      items:
+      - name: Create a trigger-based journey
+        href: real-time-marketing-trigger-based-journey.md
+      - name: Customer Insights - Journeys triggers
+        href: real-time-marketing-triggers.md
+      - name: Use natural language in journeys
+        href: real-time-marketing-natural-language.md
+      - name: Create custom triggers
+        href: real-time-marketing-custom-triggers.md
+      - name: Trigger a journey based on a Dataverse record change
+        href: real-time-marketing-dataverse-trigger.md
+      - name: Trigger an action outside of a journey
+        href: real-time-marketing-custom-actions.md
+      - name: Test custom triggers before using them
+        href: real-time-marketing-test-triggers.md
+    - name: Segment-based journeys
+      items:
+      - name: Segmentation overview
+        href: real-time-marketing-segments.md
+      - name: Create segments
+        items:
+        - name: Build segments
+          href: real-time-marketing-build-segments.md
+        - name: Improve targeting with the redesigned segment builder
+          href: real-time-marketing-redesigned-segment-builder.md
+        - name: Copilot - Target the right customers using query assist
+          href: real-time-marketing-natural-language-segments.md
+        - name: Sync data tables into the segment builder
+          href: real-time-marketing-sync-data-tables.md
+        - name: Create segments using unified profiles and customer measures
+          href: unified-profile-segment-creation.md
+        - name: Create a static snapshot of a segment
+          href: real-time-marketing-static-snapshot.md
+      - name: Best practices for outbound segments in real-time journeys
+        href: outbound-marketing-segments-in-customer-insights-journeys.md
+      - name: Use Customer Insights - Data profiles and segments
+        href: real-time-marketing-ci-profile.md      
+      - name: Create a segment-based journey
+        href: real-time-marketing-segment-based-journey.md
+      - name: Automatic segment management
+        href: auto-segment-management.md
+      - name: Individually manage your customer list
+        href: real-time-marketing-include-exclude.md
+      - name: "Troubleshooting: Segments show incorrect member count"
+        href: segment-member-count.md
     - name: Journey goals and A/B testing
       items:
       - name: Set a business goal and measure progress through a journey
@@ -272,14 +332,12 @@
       items:
       - name: Edit a live journey
         href: real-time-marketing-edit-journey.md
-      - name: "Preview: Edit email components in a live journey"
+      - name: Edit email components in a live journey
         href: edit-email-in-live-journey.md
       - name: Enhanced journey reminders
         href: real-time-marketing-enhanced-journey-reminders.md
       - name: Add email CC recipients to journeys
         href: real-time-marketing-add-cc-recipients.md
-      - name: Real-time journeys tile reference
-        href: real-time-marketing-tile-reference.md
     - name: Advanced journey capabilities
       items:
       - name: Control journey entry
@@ -314,8 +372,6 @@
     items:
     - name: Event management overview
       href: event-management.md
-    - name: Enable event management in real-time journeys
-      href: enable-events.md
     - name: Create an event
       items:
       - name: Open the event management work area
@@ -336,10 +392,12 @@
       items:
       - name: Invite, register, and house event attendees
         href: invite-register-house-event-attendees.md
+      - name: Create an event registration experience
+        href: event-registration-experience.md
+      - name: "Preview: Build an event registration portal with Power Pages"
+        href: event-portal-template.md
     - name: Manage events
       items:
-      - name: Event management dashboard
-        href: event-management-dashboard.md
       - name: Manage event sponsorships
         href: manage-event-sponsorships.md
       - name: Manage attendee logistics and accommodation
@@ -358,14 +416,16 @@
       href: real-time-marketing-form-create.md
     - name: Deploy pages that contain forms
       href: real-time-marketing-deploy-pages.md
+    - name: "Preview: Prefill values for forms and event registration"
+      href: real-time-marketing-form-prefill.md
+    - name: "Preview: Create unmapped fields for marketing forms"
+      href: real-time-marketing-forms-custom-fields.md
     - name: Manage forms
       href: real-time-marketing-manage-forms.md
     - name: Set the default configuration for forms
       href: real-time-marketing-form-global-settings.md
     - name: Troubleshoot forms
       href: real-time-marketing-troubleshooting-forms.md
-    - name: "Preview: Prefill values for forms and event registration"
-      href: real-time-marketing-form-prefill.md
   - name: Lead generation and management
     items:
     - name: Lead generation and management overview
@@ -500,7 +560,7 @@
       href: developer/extend-ui.md
   - name: Extend and customize consent
     href: developer/extend-consent.md
-  - name: Using the events API in real-time journeys
+  - name: "Preview: Using the events API in real-time journeys"
     href: developer/using-rtm-events-api.md
   - name: Create a Customer Insights - Journeys segment using the Web API
     href: real-time-marketing-api-segment.md

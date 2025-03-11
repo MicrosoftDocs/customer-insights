@@ -1,7 +1,7 @@
 ---
 title: "Connect to Common Data Model tables in Azure Data Lake Storage"
 description: "Work with data from Azure Data Lake Storage."
-ms.date: 12/11/2024
+ms.date: 02/14/2025
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -78,6 +78,8 @@ Ingest data into Dynamics 365 Customer Insights - Data using your Azure Data Lak
    > [!TIP]
    > To edit a table in a JSON editing interface, select the table and then **Edit schema file**. Make changes and select **Save**.
 
+1. For selected tables that require incremental ingestion, **Required** displays under **Incremental refresh**. For each of these tables, see [Configure an incremental refresh for Azure Data Lake data sources](incremental-refresh-data-sources.md).
+
 1. For selected tables where a primary key has not been defined, **Required** displays under **Primary key**. For each of these tables:
    1. Select **Required**. The **Edit table** panel displays.
    1. Choose the **Primary key**. The primary key is an attribute unique to the table. For an attribute to be a valid primary key, it shouldn't include duplicate values, missing values, or null values. String, integer, and GUID data type attributes are supported as primary keys.
@@ -133,6 +135,8 @@ Loading data can take time. After a successful refresh, the ingested data can be
 
    :::image type="content" source="media/ADLS_required.png" alt-text="Dialog box showing Required for Primary key":::
 
+1. For selected tables that require incremental ingestion, **Required** displays under **Incremental refresh**. For each of these tables, see [Configure an incremental refresh for Azure Data Lake data sources](incremental-refresh-data-sources.md).
+
 1. For selected tables where a primary key has not been defined, **Required** displays under **Primary key**. For each of these tables:
    1. Select **Required**. The **Edit table** panel displays.
    1. Choose the **Primary key**. The primary key is an attribute unique to the table. For an attribute to be a valid primary key, it shouldn't include duplicate values, missing values, or null values. String, integer, and GUID data type attributes are supported as primary keys.
@@ -171,6 +175,7 @@ You can update the *Connect to storage account using* option. For more informati
       > [!IMPORTANT]
       > If there are dependencies on the existing model.json or manifest.json file and the set of tables, you'll see an error message and can't select a different model.json or manifest.json file. Remove those dependencies before changing the model.json or manifest.json file or create a new data source with the model.json or manifest.json file that you want to use to avoid removing the dependencies.
    - To change data file location or the primary key, select **Edit**.
+   - To change the incremental ingestion data, see [Configure an incremental refresh for Azure Data Lake data sources](incremental-refresh-data-sources.md).
    - Only change the table name to match the table name in the .json file.
 
      > [!NOTE]

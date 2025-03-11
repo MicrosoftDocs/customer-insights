@@ -106,15 +106,6 @@ Learn how to make the most of the new Dynamics 365 Customer Insights features in
 
      :::image type="content" source="media/export-segment-membership.png" alt-text="An overview exporting segment membership data for offline analysis within Customer Insights - Journeys." lightbox="media/export-segment-membership.png":::
 
-#### Public preview
-
-- **Wait on segment membership to trigger the next step in a journey** 
-    - Gain even more control over your customers' experience by waiting for them to become a member of a segment before continuing to the next steps in a journey. This added capability lets you personalize each customer's experience by choosing the correct path and actions relevant to individual customers based on whether they're in a segment. This capability adds to existing if/then capabilities that let you wait for a customer to open an email, click a link, or wait for another trigger to be activated before moving on to the next step in the journey. For example, let's say you use your journey to send credit card activation emails and you want to wait for the customer to activate their card before sending a welcome email. If the customer doesn’t activate their credit card within a few days, you want to send another reminder email. If you have a segment that includes all customers who have activated credit cards, you can use that segment as the condition for the if/then branch to wait for each customer to activate their credit card and send them the right communications. (Note: Due to holiday deployment lockdowns, we expect this capability to be rolled out in all regions by January 9, 2025).
-    - [Release plan](/dynamics365/release-plan/2024wave2/customer-insights/dynamics365-customer-insights-journeys/use-segments-decide-which-path-customer-should-take-journey) 
-    - [Docs](real-time-marketing-tile-reference.md#branching-the-customer-journey)
-
-    :::image type="content" source="media/wait-segment-membership-release-planner.png" alt-text="Create a journey that waits until a customer becomes part of a segment then continues to the next step in the journey." lightbox="media/wait-segment-membership-release-planner.png":::
-
 #### Monthly enhancements
 
 - **Flexible enforcement model for text and custom channels**
@@ -1284,7 +1275,7 @@ This month, the new Customer Insights - Journeys segment builder is generally av
 - **Support for multi-line conditions in inline conditions**
     - Inline conditions are used to create HTML code for scenarios where conditional content is not appropriate such as changing one word in otherwise common content (for example, a salutation word). This user experience is now enhanced with the same condition builder experience used everywhere in the product, improving ease of use and delivering the added functionality of multi-line conditions. Learn more: [How to use inline conditions](real-time-marketing-personalize-inline-conditions.md).
 - **No-code approach to adding marketing interactions to the unified timeline in custom contact/lead forms**
-    - When using out-of-the-box contact/lead forms, marketing interactions based on journeys in Customer Insights - Journeys and outbound marketing are automatically populated in the unified timeline. But when marketers used custom contact/lead forms, they had to manually add the marketing interactions into the timeline by making code changes. With the February release, you can add marketing interactions to your custom contact/lead forms through a simple no-code approach by adding a custom connector to your custom forms through the Power Apps maker experience. Learn more: [How to enable marketing interactions in your contact/lead timeline](timeline.md#how-to-enable-marketing-interactions-in-your-contactlead-timeline).
+    - When using out-of-the-box contact/lead forms, marketing interactions based on journeys in Customer Insights - Journeys and outbound marketing are automatically populated in the unified timeline. But when marketers used custom contact/lead forms, they had to manually add the marketing interactions into the timeline by making code changes. With the February release, you can add marketing interactions to your custom contact/lead forms through a simple no-code approach by adding a custom connector to your custom forms through the Power Apps maker experience. Learn more: [How to enable marketing interactions in your contact or lead timeline](timeline.md#how-to-enable-marketing-interactions-in-your-contact-or-lead-timeline).
 - **Customer Insights - Journeys interactions in the unified timeline now showcase specific links clicked by contacts/leads in messages**
     - Sales reps and customer service agents now have visibility into specific links that a contact/lead clicked in their marketing messages. Viewing the specific links helps them understand the contact/lead’s past activities at a more granular level, enabling more personalized engagement. For instance, a credit card agent in a financial services firm can now understand which credit card offer (among many) a contact clicked on in a promotional message, allowing them to make a personalized follow-up call. Learn more: [Customer interactions timeline](timeline.md).
 
@@ -2105,7 +2096,7 @@ With the Dynamics 365 Customer Insights - Journeys December 2021 update you can 
 ##### Real-time marketing
 
 - **Customer journeys**
-    - As announced in [2021 release wave 2](/dynamics365-release-plan/2021wave2/marketing/dynamics365-marketing/gain-more-control-over-journey-branching-conditions-through-increased-attribute-availability), you can now create journey branches based on any attribute associated with the customer or trigger that started the journey. In addition, for attributes based on date and time, you can create branches based on relative or partial dates. Learn more: [Attribute branch](real-time-marketing-tile-reference.md#attribute-branch).
+    - As announced in [2021 release wave 2](/dynamics365-release-plan/2021wave2/marketing/dynamics365-marketing/gain-more-control-over-journey-branching-conditions-through-increased-attribute-availability), you can now create journey branches based on any attribute associated with the customer or trigger that started the journey. In addition, for attributes based on date and time, you can create branches based on relative or partial dates. Learn more: [Attribute branch](add-action.md#attribute-branch).
 - **Marketing insights**
     - Track the number of email recipients who have selected the preference center link from a Customer Insights - Journeys email and unsubscribed one or more email addresses from being used in future journeys in Customer Insights - Journeys with the newly supported **Unsubscribe** interaction type. Learn more: [Insights glossary](insights-glossary.md#unsubscribes).
 
@@ -2130,7 +2121,7 @@ With the Dynamics 365 Customer Insights - Journeys December 2021 update you can 
     - Fixed an error that caused form submission data rendering to sometimes fail when the form included multi-select option sets.
 - **Segmentation**
     - Improved German translations in dynamic segments.
-    - Resolved an error that occassionally caused a static segement grid custom control to show editing buttons when a user did not have editing privileges.
+    - Resolved an error that occasionally caused a static segement grid custom control to show editing buttons when a user did not have editing privileges.
 - **Shared UX**
     - Fixed an error that caused the start date in a LATAM time zone marketing task template to subtract one day when adding tasks to a customer journey.
 

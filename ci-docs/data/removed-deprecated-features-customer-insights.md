@@ -1,7 +1,7 @@
 ---
-title: Removed or deprecated features in Dynamics 365 Customer Insights
+title: Removed or deprecated features in Dynamics 365 Customer Insights - Data
 description: Overview about features that are going away or are no longer available.
-ms.date: 05/29/2024
+ms.date: 02/18/2025
 ms.topic: whats-new
 author: jimsonc
 ms.author: jimsonc
@@ -9,9 +9,9 @@ ms.reviewer: mhart
 ms.custom: bap-template
 ---
 
-# Removed or deprecated features in Dynamics 365 Customer Insights
+# Removed or deprecated features in Dynamics 365 Customer Insights - Data
 
-This article describes features that have been removed, or that are planned for removal from Dynamics 365 Customer Insights.
+This article describes features that have been removed, or that are planned for removal from Dynamics 365 Customer Insights - Data.
 
 - A *removed* feature is no longer available in the product.
 - A *deprecated* feature is not in active development and may be removed in a future update.

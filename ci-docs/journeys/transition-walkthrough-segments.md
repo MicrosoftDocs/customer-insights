@@ -1,71 +1,161 @@
 ---
-title: Transition segments, emails, journeys, and assets
-description: Transition your segments, emails, journeys, and assets to real-time journeys in Dynamics 365 Customer Insights - Journeys. Follow our guide to ensure a smooth transition.
-ms.date: 01/10/2025
-ms.topic: article
+title: Migrate segments to real-time journeys
+description: Learn how to use the Segment Migration Solution to migrate segments from outbound marketing to real-time journeys Dynamics 365 Customer Insights - Journeys.
+ms.date: 02/12/2025
+ms.topic: how-to
 author: alfergus
 ms.author: alfergus
-ms.collection: bap-ai-copilot
-ms.custom:
-  - ai-gen-docs-bap
-  - ai-gen-description
-  - ai-seo-date:11/22/2024
+search.audienceType: 
+  - admin
+  - customizer
+  - enduser
 ---
 
-# Transition segments, emails, journeys, and assets
+# Transition segments to real-time journeys
 
 > [!IMPORTANT]
 > **The [outbound marketing](user-guide.md) module will be removed from Customer Insights - Journeys on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](transition-overview.md)
 
-Segments, emails, and journeys are the most used components in Customer Insights - Journeys.
+You can use outbound marketing segments also in real-time journeys, however, it's recommended to rebuild the segments in real-time journeys for not only increased performance and smaller refresh cycles but also because once outbound marketing is removed, segments created in outbound won't refresh and may not be available for use in real-time journeys anymore. You can either migrate outbound segments using the [*Segment Migration Solution*](transition-walkthrough-segments.md#segment-migration-solution) or use [natural language and Copilot](real-time-marketing-natural-language-segments.md) to create real-time journeys segments.
 
-## Segments
+> [!NOTE]
+> The *Segment Migration Solution* isn't a comprehensive solution that can migrate all outbound marketing segments to real-time marketing. It's provided to customers to help start segment migration. Read about the nuances of the *Segment Migration Solution* before using the tool.
 
-You can use outbound marketing segments also in real-time journeys, however, it's recommended to rebuild the segments in real-time journeys for increased performance and smaller refresh cycles. There's no way to automatically create a real-time journeys segment from an outbound marketing segment, but it's possible to use [natural language and Copilot](real-time-marketing-natural-language-segments.md) to create a real-time journeys segment.
+Customers should set aside time to migrate the most important segments to real-time marketing.
 
-## Emails
+We've also increased the segmentation limits for real-time marketing to be better than outbound marketing, as shown in the [Service Limits and Fair Use Policy](fair-use-policy.md) page.
 
-It's not possible to use outbound marketing e-mails directly in real-time journeys. However, you can use the **Import emails** button in the real-time journeys email editor to select and transfer any outbound marketing emails you want to use.
+## Segment Migration Solution
 
-> [!div class="mx-imgBorder"]
-> ![Select emails screenshot.](media/transition-select-emails.png "Select emails screenshot")
+Migrating segments from outbound marketing to real-time marketing can be time consuming and operationally heavy. The *Segment Migration Solution* helps users migrate their segments from outbound marketing to real-time marketing with an intuitive solution that has a clean interface, allowing for a seamless and straightforward migration experience.
 
-Importing outbound marketing emails not only saves time, but also protects your investment in expensive designs and layouts. During the import, most of the functionality like personalization and content blocks is also transitioned. After the import, make sure to check to see if all settings and personalizations are correct. Also, you need to choose the right compliance settings for the email before you can go live and use the email in a journey.
+The *Segment Migration Solution* is user friendly, featuring four distinct screens that guide users through the migration process. It helps users migrate their most important segments from outbound marketing to real-time marketing rather than carrying out mass migration. Here are some key points about the *Segment Migration Solution* features:
 
-While reviewing the imported emails, it's worth considering whether you should start using [brand profiles](brand-profiles.md). Brand profiles provide the ability to standardize content like links to your company’s LinkedIn in a similar manner that content settings do for outbound marketing.
+1. This is a Power Apps solution that needs to be installed and isn't integrated within the real-time marketing product.
+1. To complete a successful migration, users of this tool must ensure that they have *create* segment permissions in real-time marketing.
+1. The solution allows users to migrate a maximum of 2,000 segments from outbound marketing to real-time marketing.
+1. Previously migrated segments are replaced when they're migrated again and don't count toward the overall quota.
+1. Each migrated segment contains the prefix “Migrated –“ to indicate that it was migrated using the *Segment Migration Solution*.
 
-You can use the same tool to import email templates. To import templates, go to the email templates area in the real-time journeys email editor and select the **Import template** option.
+The *Segment Migration Solution* isn't designed to address all outbound marketing segment migration requirements comprehensively. Instead, it serves as an initial resource to support users in starting their migration journey. The tool's limitations are outlined below:
 
-## Journeys
+1. Migrated segments are created in a draft state regardless of their actual state in outbound marketing. Users can choose which segments to publish post migration.
+1. Exporting outbound marketing segments with NULL definitions isn't supported.
+1. Exporting *Expired* segments in outbound marketing isn't supported.
+1. Behavioral and interaction segment migration from outbound marketing to real-time marketing isn't supported.
+1. Static segments that have more than 100 members aren't supported by the solution.
+1. Complex segments that contain multiple nested conditions aren't supported by the solution.
+1. Segments that contain traversal of entities (starting with an entity and navigating to contact) aren't supported by the solution.
 
-Journeys in real-time journeys are the equivalent to customer journeys in outbound marketing. Journeys are the container that define the sequence of marketing actions that contacts are involved in. The underlying architecture for journeys in the real-time journeys module is fundamentally different from outbound marketing, which is why journeys can't be transferred automatically and manual recreation of the journey is required.
+## Install the Segment Migration Solution
 
-Using quiet times, you can control when messages get delivered, increasing engagement and meeting customer preferences. Quiet times allow you to comply with regulations by only reaching customers at their preferred times or by preventing nighttime, weekend, or holiday deliveries. Learn more: [Improve communication timing by setting up quiet times](real-time-marketing-quiet-times.md)
+1. Download the [managed solution zip](https://download.microsoft.com/download/a/b/a/abad6460-a4db-4c34-b36b-34a1b6508a5f/Segment%20Migration%20Tool.zip).
+1. For the environment where this solution is used, go to the [Power Apps page](https://make.powerapps.com).
+    1. Ensure the org name on the top right of the screen matches the organization you're testing the solution for. If there's a discrepancy, select the correct org.
+1. Select **Solutions** on the left pane, then select **Import Solution** on the action ribbon at the top.
+1. Follow the steps to select the shared zip solution file.
+1. During the solution import, append the URL of the Customer Insights - Journeys app to your organization's URL.
+    1. Ensure you copy the URL through the entire app-ID. For example: `https://<organizationname>.crm.dynamics.com/main.aspx?appid=<appid>`
+1. Select **Import**. This takes about two to three minutes to import. Don't exit the screen.
+1. Once done, you're ready to work with the *Segment Migration Solution*.
 
-Journey end dates behave differently in real-time journeys. In outbound marketing, if a journey had a set end date, customers who already entered the journey would stop and not finish the journey. In real-time journeys, customers who have already entered the journey after the end date complete the journey but no new customers are allowed to enter the journey.
+## Working with the Segment Migration Solution
 
-## Asset library
+Find the **Segment Migration Tool App** in the catalog of **Apps** in your environment by selecting the **Apps** button on the left navigation pane. Hover over the app to find the **Play** button. Select the **Play** button to start using the solution.
 
-No migration of the asset library should be needed. If you're using the outbound marketing asset library, the same asset library is used by real-time journeys, so you can continue to use all previously uploaded assets. If you're using an external asset library, the process remains the same (get the URL of the asset from the external library and insert it in your messages).
+:::image type="content" source="media/solution-play-button.png" alt-text="Screenshot of the solution play button." lightbox="media/solution-play-button.png":::
 
-## Relevant upcoming features
+> [!NOTE]
+> Directly selecting the app name takes you to the editor, which isn't the intended action for this tool.
 
-The features listed below may be of interest as you transition from outbound marketing to real-time journeys. These features provide parity, equivalent, or better functionality than what was available in outbound marketing.
+## Overview of each screen and its functionality
 
-### Scheduling
+### Screen 1: Segment selection
 
-- **Send scheduling**: Elevate your customer engagement, conversion rates, and revenue with our send scheduling in real-time journeys. Reach your customers when they're the most active and likely to respond aligning their habits and preferences. Schedule deliveries within specific time frames daily, or on particular days weekly to maximize impact. Learn more: [Reach customers at the right moment with send scheduling](/dynamics365/release-plan/2023wave2/marketing/dynamics365-marketing/reach-customers-at-right-moment-send-scheduling)
+On the left side, you see a list of all outbound marketing segments in the organization along with an option for multi-select. This screen includes details on the attributes of the segment such as the link to the segment in outbound marketing, date created, segment type, whether it contains nesting, status, and whether it was previously migrated. It also contains a toggle on top to switch between migrated and nonmigrated segments.
 
-### Email
+On the right side, there's a list of segments that were successfully migrated to real-time marketing along with the links to those segments in real-time marketing. When you use the solution for the first time, the right side is blank.
 
-- **View email in browser**: With varied display formats across email providers, your emails can sometimes be displayed incorrectly. "View in Browser" in real-time journeys allows your customers to see your emails exactly as you created them. Learn more: [Enhance email engagement by allowing browser viewing](/dynamics365/release-plan/2023wave2/marketing/dynamics365-marketing/enhance-email-engagement-allowing-viewing-browsers)
-- **Email A/B testing**: Use email A/B testing in real-time journeys to compare and test variations of your emails on different subsets of your recipients to determine which variation performs best. Easily create alternate email versions by changing elements such as subject, body, or from address and optimize content for your audience. Learn more: [Optimize engagement, increase conversion rates with email A/B testing](/dynamics365/release-plan/2023wave2/marketing/dynamics365-marketing/optimize-engagement-increase-conversion-rates-email-ab-testing)
-- **Orchestrate across multiple email address contact points**: Maximize customer reach, choose the right email address for each journey. Now, whether it's a contact’s work or personal email address, you have full control over where your messages are delivered, ensuring they’re seen where customers are most likely to take action. Learn more: [Ensure messages go to the right contact email address](/dynamics365/release-plan/2023wave2/marketing/dynamics365-marketing/ensure-messages-go-right-contact-email-address)
+:::image type="content" source="media/solution-segment-selection.png" alt-text="Screenshot of segment selection in the Segment Migration Solution." lightbox="media/solution-segment-selection.png":::
 
-### Journeys
+Select a list of outbound segments to migrate and then select **Transition Pre-check**. This helps validate segment migration eligibility and allows only segments that pass the validation to be migrated.
 
-- **Journey split by percentage or absolute number**: Split your audience into branches to provide a subset of your audience with unique experiences. Split your audience by percentages (for cases where you need randomness) or by number (for cases where you want to deliver specific experiences to a set of people). Learn more: [Provide varied experiences in one journey using journey split tiles](/dynamics365/release-plan/2023wave2/marketing/dynamics365-marketing/provide-varied-experiences-one-journey-using-journey-split-tiles)
-- **Web tracking**: Trigger journeys and make decisions based on all known user interactions, from messages to web pages, making it even easier to create consistent personalized experiences across your brand's digital touchpoints. For example, you can engage your customers when they show interest by sending a personalized offer after they visit your website. Learn more: [Engage customers with content and follow-ups based on website interactions](/dynamics365/release-plan/2023wave2/marketing/dynamics365-marketing/engage-customers-content-follow-ups-based-website-interactions)
+## Screen 2: Prevalidation
+
+In prevalidation, segments are checked for validity. Issues such as behavioral interaction and multiple sub–segments are highlighted in the **limitations** section. The pre–validation plugin checks if the outbound marketing segment has all the components intact in the query that are required to move it to real-time marketing. It also ensures that all required mappings and configurations are completed.
+
+Segments that pass the validation (and those that fail the validation) are shown so that you know exactly which segments won't be migrated and which ones will. This gives you the option to review the segment before final migration.
+
+For the segments that don't meet the criteria for migration, the reasons why the segment failed migration checks are detailed in the **Response** column. This allows you to either modify the underlying segment definition or recreate the segment manually in real-time marketing.
+
+Once validation is complete, a summary screen is shown:
+
+:::image type="content" source="media/solution-summary-screen.png" alt-text="Screenshot of the precheck summary screen in the Segment Migration Solution." lightbox="media/solution-summary-screen.png":::
+
+When you select the **Migrate** button on this screen, the solution starts the process of recreating the segment in real-time marketing while showing a dynamic tracker of the progress until all valid segments complete migration.
+
+## Screen 3: Migration and execution confirmation
+
+Another set of checks is performed to see if the query is empty and if the segment name is valid. If any issues are caught during real-time marketing segment creation, the **Response** column provides the reason for failure and the error message.
+
+:::image type="content" source="media/solution-migration-confirmation.png" alt-text="Screenshot of the solution migration confirmation screen in the Segment Migration Solution." lightbox="media/solution-migration-confirmation.png":::
+
+At this time, the segments that have successfully migrated are in **Draft** state, and you can decide if you want to publish them.
+
+> [!NOTE]
+> Given that the segments are in **Draft** state, the solution doesn't have the ability to check for the membership of the segment. This can be done in the next screen once the segments are published in real-time marketing.
+
+In the next screen, select the segments you want to publish after migration.
+
+## Screen 4: Publish
+
+This screen lets you select the migrated segments you want to publish. Here, we list all the real-time marketing segments that have successfully migrated (up to 2,000) and then let you multi-select the segments you want to publish or select all to publish everything.
+
+:::image type="content" source="media/solution-publish.png" alt-text="Screenshot of the segment publish screen in the Segment Migration Solution." lightbox="media/solution-publish.png":::
+
+Here, you can see the count of the segment members in outbound marketing and decide which of these you want to publish to a **Live** state in real-time marketing.
+
+By following these steps, you can seamlessly transition your marketing efforts from outbound marketing to real-time marketing, ensuring continuity and applying the enhanced capabilities of real-time marketing.
+
+## Known limitation of the Segment Migration Solution
+
+1. Currently, users can't sort or search for the segments they want to migrate to outbound marketing.
+1. Sometimes, users experience a bug when publishing the migrated segments in real-time marketing where, after selecting **Publish** on the final screen, there's an issue with rendering success. The segments are successfully migrated to real-time marketing and published, but users don't get that indication. You can verify this by selecting the **Home** button and seeing the segments show up in the real-time marketing **Segments** pane.
+
+## Frequently asked questions
+
+### I have more than 2,000 segments that I want to migrate using this tool. What should I do?
+
+Our telemetry shows that 99% of our customers have fewer than 2,000 outbound marketing segments, so this covers almost the entire customer base. For those with more than 2,000 segments, when moving from outbound marketing to real-time marketing, we ask that customers prioritize moving segments needed for real-time marketing. Evaluate segments created long ago that aren't used in journeys carefully before bringing them into real-time marketing.
+
+### Why can't interaction or behavioral segments be moved from outbound marketing to real-time marketing using this tool?
+
+The tool doesn't allow interaction or behavioral segments between outbound marketing and real-time marketing because interactions work differently in each, and there isn't a 1:1 mapping between all interactions.
+
+### Why is this provided as a Power Apps solution file rather than being integrated into the product like other features?
+
+The migration tool helps customers speed up migration from outbound marketing to real-time marketing. This one-time process doesn't need to reside in the product long term. So, we decided to share the solution file with customers to use as they move from outbound marketing to real-time marketing.
+
+
+### You mention a "one-time process" above. Does that mean I have to do this in one iteration?
+
+No. You can use this multiple times as long as the total number of segments being migrated is 2,000 or less.
+
+### I'm not allowed to download this per my organization’s settings. What should I do?
+
+If you don't have permissions, reach out to your admin for help with setting up the solution based on the provided instructions.
+
+### My organization uses business unit scoping heavily. Is that part of the tool or can I see everything that was created for the org?
+
+The Segment Migration Solution doesn't consider business unit scoping, so you can see all outbound marketing segments for the organization.
+
+### I migrated a segment already and made some changes to the definition in outbound marketing. Do I need to migrate it again? Would that add to my quota?
+
+No. If it's the same segment, we overwrite the previously migrated segment. This doesn't add to the quota as a different segment.
+
+### Are there plans to improve the tool based on new features added to real-time marketing to close the gap to outbound marketing segmentation?
+
+Our focus is on closing the feature gaps in real-time marketing compared to outbound marketing. While we recognize the importance of broader coverage, we can't currently prioritize enhancements to the tool's coverage.
 
 [!INCLUDE [transition-comments](./includes/transition-comments.md)]
 

@@ -1,11 +1,11 @@
 ---
 title: "Predict product recommendations (preview)"
 description: "Predict the products a customer is likely to purchase or interact with."
-ms.date: 01/12/2024
+ms.date: 03/04/2025
 ms.reviewer: mhart
 ms.topic: how-to
-author: joytaylor
-ms.author: joytaylor
+author: Scott-Stabbert
+ms.author: sstabbert
 ms.custom: bap-template
 ms.collection: bap-ai-copilot 
 ---
@@ -28,7 +28,6 @@ The output of this model provides recommendations based on the product ID. Your 
 
 For example, Contoso wants to increase their revenue by customizing webpages to show more products and services customers might enjoy. They're able to create customer-specific product recommendations from the product recommendation model and feed the data to their site. Contoso is able to upsell their customers by encouraging them to view products and services similar to ones they have purchased before, increasing revenue. 
 
-
 > [!TIP]
 > Try the product recommendation prediction using sample data: [Product recommendation prediction sample guide](sample-guide-predict-product-recommendation.md).
 
@@ -45,7 +44,7 @@ For example, Contoso wants to increase their revenue by customizing webpages to 
   - **Value of the transaction**: Numerical value of the purchase or transaction.
   - **Unique product ID**: ID of the product or service purchased if your data is at a line item level.
   - **Purchase or return**: A boolean true/false value where *true* identifies that a transaction was a return. If the Purchase or Return data isn't provided in the model and the **Value of the transaction** is negative, we infer a return.
-- A product catalog data table to use as a product filter.
+- A product catalog data table to use as a product filter. Limit the number of products to less than 50,000. More than 50,000 products decreases effectiveness and increases processing time. Consider removing rare or outdated products. Alternately, consider configuring the model using a higher level in your product hierarchy.
 
 > [!NOTE]
 > - The model requires the transaction history of your customers where transaction is any data that describes a user-product interaction. For example, purchasing a product, taking a class, or attending an event.

@@ -1,7 +1,7 @@
 ---
 title: "Connect to Delta tables in Azure Data Lake Storage"
 description: "Work with data stored in Delta tables from Azure Data Lake Storage."
-ms.date: 12/11/2024
+ms.date: 02/10/2025
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -85,6 +85,8 @@ Customer Insights - Data supports Databricks features with a 'minReaderVersion' 
    [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
 
 Loading data can take time. After a successful refresh, the ingested data can be reviewed from the [**Tables**](tables.md) page.
+
+Once you've saved the data source, you can't go back and add more tables. To add other tables, create another data source to bring the tables into Customer Insights - Data.
 
 ## Manage schema changes
 

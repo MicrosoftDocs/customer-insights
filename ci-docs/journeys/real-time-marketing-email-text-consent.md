@@ -1,7 +1,7 @@
 ---
 title: Manage consent for email, SMS (text), and custom channel messages
 description: Learn how to manage consent for messages in Dynamics 365 Customer Insights - Journeys.
-ms.date: 01/16/2025
+ms.date: 01/22/2025
 ms.topic: reference
 author: alfergus
 ms.author: alfergus
@@ -82,15 +82,9 @@ The following diagram provides a visual representation of how consent is checked
     <td><b>Opted in</b></td>
   </tr>
   <tr>
-   <td><b>Email channel</b></td>
+   <td><b>All channels</b></td>
     <td>Blocked</td>
     <td>Blocked</td>
-    <td>Sent</td>
-  </tr>
-  <tr>
-   <td><b>SMS/custom channel</b></td>
-    <td>Blocked</td>
-    <td>Sent</td>
     <td>Sent</td>
   </tr>
   <tr>
@@ -112,15 +106,9 @@ The following diagram provides a visual representation of how consent is checked
     <td><b>Opted in</b></td>
   </tr>
   <tr>
-   <td><b>Email channel</b></td>
+   <td><b>All channels</b></td>
     <td>Blocked</td>
     <td>Sent</td>
-    <td>Sent</td>
-  </tr>
-  <tr>
-   <td><b>SMS/custom channel</b></td>
-    <td>Blocked</td>
-    <td>Blocked</td>
     <td>Sent</td>
   </tr>
   <tr>
@@ -142,13 +130,7 @@ The following diagram provides a visual representation of how consent is checked
     <td><b>Opted in</b></td>
   </tr>
   <tr>
-   <td><b>Email channel</b></td>
-    <td>Sent</td>
-    <td>Sent</td>
-    <td>Sent</td>
-  </tr>
-  <tr>
-   <td><b>SMS/Custom channel</b></td>
+   <td><b>All channels</b></td>
     <td>Sent</td>
     <td>Sent</td>
     <td>Sent</td>
@@ -160,6 +142,9 @@ The following diagram provides a visual representation of how consent is checked
     <td>Tracked</td>
   </tr>
 </table>
+
+> [!NOTE]
+> All channels include email, text, and custom channels.
 
 > [!IMPORTANT]
 > For an environment that has both real-time journeys and outbound marketing installed, by default, the app always checks the **Allow email** and **Allow bulk email** fields in contact records to determine if email is allowed to be sent to the contact's email address. Both fields must be set to allow for an email with a commercial purpose type to be sent to a contact. Only the **Allow email** field must be set to allow emails to be sent with a transactional purpose type selected. These checks are done in addition to the Customer Insights - Journeys contact-point consent opt-in/opt-out checks for emails sent by journeys. These checks aren't performed for other entity types (for example, leads or Customer Insights - Data profiles). Learn more: [Manage user compliance settings in Customer Insights - Journeys](real-time-marketing-compliance-settings.md).
