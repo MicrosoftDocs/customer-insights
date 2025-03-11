@@ -157,4 +157,6 @@ If you're not using the out-of-the-box event record creation form, the way to di
 
 If the value is **null**, the record created will be an **outbound marketing** event. For non-customized forms and the out-of-the-box flow, this is automatically defined.
 
+Existing event main forms that were customized for Outbound marketing events would not work for Real-time marketing events. Crucial tabs could also be hidden on a customized form: E.g. "Website and Forms" tab is needed for Real-time events to operate as registration form and session level registrations are set on that tab.
+
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
