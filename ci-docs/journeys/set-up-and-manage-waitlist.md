@@ -11,21 +11,24 @@ search.audienceType:
   - enduser
 ---
 
-# Preview: Preview: Set up and manage event waitlist
+# Preview: Set up and manage event waitlist
+
 > [!NOTE]
-> Due to release rollout delays, this feature will be available the last week of March. You will be able to see "Waitlist in Real-time journeys" in Feature switches in the Settings section, once the feature is available in your region.
+> Due to release rollout delays, this feature will be available in the last week of March. You will be able to see "Waitlist in Real-time journeys" in Feature switches in the Settings section, once the feature is available in your region.
 
 > [!IMPORTANT]
-> A preview feature is a feature that isn't complete but is made available before it’s officially in a release so customers can get early access and provide feedback. Preview features aren’t meant for production use and may have limited or restricted functionality.
+> A preview feature is a feature that is not complete but is made available before it’s officially released so customers can get early access and provide feedback. Preview features aren’t meant for full use and may have limited or restricted functionality.
 >
 > Microsoft doesn't provide support for this preview feature. Microsoft Dynamics 365 Technical Support will not be able to help you with issues or questions. Preview features aren’t meant for production use, especially to process personal data, or other data that are subject to legal or regulatory compliance requirements.
 
 Ensuring marketing events are filled to capacity is crucial for success and return on investment. To encourage a high turnout for marketing events, you can now enable waitlist registrations, which ensures spots are filled when registered attendees cancel. By setting the capacity for events and sessions, prospective attendees are placed on a waitlist when events and sessions are full. Should a slot open, the system automatically registers the individual next on the waitlist. That individual then automatically receives registration confirmation and personalized event information, ensuring your event is filled to capacity.
 
 ## How the waitlist works
+
 You can assign a maximum capacity to each event and/or session when needed. When the number of registrations reaches that capacity, the system won't accept any more active registrations, but you can still allow new registrants to add themselves to a waitlist. The waitlist holds a list of contacts who submitted a registration through the event website after an event or session was fully booked. The waitlist registers the time and day that each contact registered, so when space becomes available, contacts are either automatically registered or offered an invitation to register in the same order that they joined the waitlist. 
 
 **When new space becomes available, the waitlist reacts as follows:**
+
 1. The oldest existing waitlist record is identified by checking the registration date/time.
 1. One of the following occurs, depending on whether the contact is using automatic registration or not:
     - If the identified waitlist record has **Automatically register** set to **Yes**, then an event registration record is generated for the contact and the associated.
@@ -33,7 +36,9 @@ You can assign a maximum capacity to each event and/or session when needed. When
 1. All registrations that are placed on the waitlist will have a status reason "Waitlisted" and once the spot becomes available, the status reason will either automatically or manually change to "Registered".
 
 ## Enable a waitlist 
+
 ### Enable a waitlist for an event
+
 To enable or disable the waitlist for any event:
 1. Open the Events work area, go to the events list (Events > Event > Events), and then open or create an event.
 1. Open the General tab and find the Capacity area.
@@ -46,6 +51,7 @@ To enable or disable the waitlist for any event:
    :::image type="content" source="media/media/waitlistedmanualupdate.png" alt-text="Event general tab settings screen" lightbox="media/waitlistedmanualupdate.png":::
 
 ### Enable a waitlist for a session
+
 If you are using [session-level registration]([url](https://learn.microsoft.com/en-us/dynamics365/customer-insights/journeys/real-time-journeys-event-session)), you can also use waitlisting for sessions. Waitlist for sessions can be used together with event waitlist or just for individual sessions. 
 
 To enable or disable the waitlist for a session:
@@ -60,7 +66,9 @@ To enable or disable the waitlist for a session:
 > If you have used Waitlist in Outbound marketing in the past, it was not possible to use event and session capacity & waitlisting together. This has now changed in Real-time marketing so you can benefit from greater flexibility when setting up multi-session events.
 
 ### How does event & session waitlisting work together
+
 Based on the set up you choose, event might have a larger capacity then individual sessions. In other scenarios, the capacity might be equal and each time, the waitlisting will behave slightly differently. Below are some common scenarios worth noting: 
+
 1. **Event still has capacity but sessions do not**: i.e. Event has capacity a higher capacity and attendees can attend talks and networking opportunities, there is also a number of sessions with limited capacity such as roundtables and workshops, registration to sessions is optional.
     - Sessions might run out of capacity first and in this case registrants will see a "Join a waitlist" notification for the session that is out of capacity
     - Event still has capacity and will allow them to register
@@ -76,6 +84,7 @@ Based on the set up you choose, event might have a larger capacity then individu
     - Registrants will only get registered once a spot opens up in the event. 
 
 ## View the waitlist
+
 To see who is currently on the waitlist for any event or session:
 
 1. Open the Events work area, go to the events list (Events > Event > Events), and then open the event.
