@@ -47,11 +47,6 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 
 	 :::image type="content" source="media/tile-analytics-release-planner.png" alt-text="View of journey entry tile analytics showing the inflow, processing, processed, and exit statistics." lightbox="media/tile-analytics-release-planner.png":::
 
-- **Personalize messages and make journey decisions based on web interactions**
-	- With Customer Insights - Journeys, you can now track and leverage your customers’ online behavior to deliver personalized experiences across your digital channels. For example, you can boost conversions and customer loyalty by sending tailored offers after customers visit your website and show interest in a product or service. By tracking additional data about customers' online journeys, you can get valuable insights into your customers' preferences and needs and easily measure your campaign’s effectiveness.
-	- [Release plan](/dynamics365/release-plan/2024wave2/customer-insights/dynamics365-customer-insights-journeys/engage-customers-personalized-messages-based-website-interactions)
-	- [Docs](interaction-journey-decision.md)  
-
 - **Accelerate journey creation using journey templates**
 	- Increase your productivity by using journey templates to kickstart building your customer journeys. Save time using a template from common customer journey scenarios, make final updates with your chosen content and any slight adjustments to the flows, and publish. 
 	- [Release plan](/dynamics365/release-plan/2024wave2/customer-insights/dynamics365-customer-insights-journeys/marketers-accelerate-journey-creation-using-journey-templates)
