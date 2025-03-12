@@ -380,7 +380,7 @@
         href: set-up-event.md
       - name: Set up session-level registration
         href: real-time-journeys-event-session.md
-      - name: Set up and manage waitlist
+      - name: "Preview: Set up and manage waitlist"
         href: set-up-and-manage-waitlist.md
       - name: Create an event from another event
         href: event-from-event.md
