@@ -1,7 +1,7 @@
 ---
 title: Access and interpret analytics
 description: How to access and interpret Customer Insights - Journeys analytics in Dynamics 365 Customer Insights - Journeys.
-ms.date: 12/16/2024
+ms.date: 03/10/2025
 ms.topic: article
 author: colinbirkett
 ms.author: colinbirkett

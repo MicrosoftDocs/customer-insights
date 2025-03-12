@@ -54,7 +54,7 @@ This article contains archived information about new features, improvements, and
 - **Generate leads that link to an existing contact** 
     - Your business has unique ways of organizing customer data and classifying potential leads. Now with real-time journey forms, you can manage your contacts and leads more effectively, according to your company's established processes. For example, you can recognize existing customers who fill out a lead form, so they're not mistaken for new leads.With this new set of capabilities to connect lead and contact data, you can choose how existing contact or lead details should be updated and define advanced matching rules to prevent duplicate records. Additionally, you can set defaults so everything is already configured each time a new form is created. All these new capabilities allow you to fine-tune how form data is handled to provide better quality leads and match your company's established processes.
     - [Release plan](/dynamics365/release-plan/2024wave2/customer-insights/dynamics365-customer-insights-journeys/generate-leads-that-link-existing-contact) 
-    - [Docs](real-time-marketing-manage-forms.md#preview-parent-contact-for-lead)
+    - [Docs](real-time-marketing-manage-forms.md#parent-contact-for-lead)
 
     :::image type="content" source="media/feature-release.png" alt-text="Generate leads that link to an existing contact." lightbox="media/feature-release.png":::
     
