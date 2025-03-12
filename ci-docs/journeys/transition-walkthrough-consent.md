@@ -27,10 +27,12 @@ Customers going through the transition to real-time journeys are recommended to 
 
 When capturing consent from contacts, implementing a double opt-in (DOI) feature is sometimes necessary. You can [activate the DOI for your compliance profile in real-time journeys](real-time-marketing-double-opt-in.md).
 
-# FAQ
-### Can I continue using outbound's subscription center after outbound is removed?
-Outbound marketing subscription center will not be available once outbound marketing is removed.
-### Can I embed Preference Center on my own web page?
+## Consent transition FAQ
+
+### Can I continue using outbound marketing's subscription center after outbound is removed?
+The outbound marketing subscription center isn't available once outbound marketing is removed.
+
+### Can I embed a preference center on my own web page?
 Not at this time. 
  
 [!INCLUDE [transition-comments](./includes/transition-comments.md)]
