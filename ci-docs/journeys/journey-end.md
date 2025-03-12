@@ -1,7 +1,7 @@
 ---
 title: End a journey
 description: An overview of the journey end configuration in Dynamics 365 Customer Insights - Journeys.
-ms.date: 12/04/2024
+ms.date: 03/11/2025
 ms.topic: article
 author: colinbirkett
 ms.author: colinbirkett
@@ -18,6 +18,7 @@ By default, customers end the journey when they complete all the steps. You can 
 - **Exit when an event occurs**: Customers who perform this trigger immediately exit the journey no matter where they are in the journey. This provides an easy way to remove customers who perform the trigger from the journey, ensuring that customers don't receive irrelevant messages from your customer journey.
 - **Exit by segment**: Customers who are part of this segment immediately exit the journey. This capability is often referred to as a "suppression segment" and helps you ensure that members of this segment are suppressed from the customer journey. Exit by segment removes members of that segment from wherever they are in the customer journey. This is notably different from the *exclude by segment* property in journey start, which only excludes members of the exclusion segment from starting the journey.
 - **End on a date**: You can set a date to stop accepting new customers into the journeys. After this end date, customers that have already entered the journey will complete all the steps but no new customers will enter the journey. If you were previously using the legacy, outbound marketing module, this behavior differs in that in the outbound marketing module, customers mid-journey would stop and not complete the remaining steps after the end date.
+- **Stopping a journey**: You can stop a journey using the **Stop** button. When you stop a journey no one can enter the journey and anyone who is going through the journey is stopped wherever they are and doesn't complete any remaining steps. You can't restart a stopped journey. If the journey has multiple versions due to live editing, you must stop each version of the journey individually. 
 
 ## Journey goal
 
