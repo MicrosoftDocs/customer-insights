@@ -1,7 +1,7 @@
 ---
 title: "View tables in Customer Insights - Data"
 description: "View data on the Tables page."
-ms.date: 01/21/2025
+ms.date: 03/13/2025
 ms.reviewer: mhart
 ms.topic: how-to
 author: Scott-Stabbert
@@ -48,8 +48,6 @@ For more information about the **Relationships** tab, see [Relationships](relati
   To learn more about the data ingested in the table, the **Summary** column provides important data characteristics, such as nulls, missing values, unique values, counts, and distributions, whatever is applicable to your data. Select the chart icon to see the summary of the data.
 
 - The **Data** tab shows details about individual records of the table. The records show the full, unfiltered data. Details listed depend on the table's data type.
-
-  :::image type="content" source="media/data-manager-tables-data.png" alt-text="Select a table.":::
 
 - The **Reports** tab (available for some tables) helps you to visualize your data by creating a report, which includes these columns:
 
