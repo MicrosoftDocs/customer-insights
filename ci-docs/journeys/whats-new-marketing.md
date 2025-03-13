@@ -1,7 +1,7 @@
 ---
 title: New and upcoming features
 description: Discover the latest features, improvements, and bug fixes in Dynamics 365 Customer Insights - Journeys. Stay updated with our monthly release notes.
-ms.date: 03/11/2025
+ms.date: 03/12/2025
 ms.topic: article
 author: colinbirkett
 ms.author: colinbirkett
@@ -47,11 +47,6 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 
 	 :::image type="content" source="media/tile-analytics-release-planner.png" alt-text="View of journey entry tile analytics showing the inflow, processing, processed, and exit statistics." lightbox="media/tile-analytics-release-planner.png":::
 
-- **Personalize messages and make journey decisions based on web interactions**
-	- With Customer Insights - Journeys, you can now track and leverage your customers’ online behavior to deliver personalized experiences across your digital channels. For example, you can boost conversions and customer loyalty by sending tailored offers after customers visit your website and show interest in a product or service. By tracking additional data about customers' online journeys, you can get valuable insights into your customers' preferences and needs and easily measure your campaign’s effectiveness.
-	- [Release plan](/dynamics365/release-plan/2024wave2/customer-insights/dynamics365-customer-insights-journeys/engage-customers-personalized-messages-based-website-interactions)
-	- [Docs](interaction-journey-decision.md)  
-
 - **Accelerate journey creation using journey templates**
 	- Increase your productivity by using journey templates to kickstart building your customer journeys. Save time using a template from common customer journey scenarios, make final updates with your chosen content and any slight adjustments to the flows, and publish. 
 	- [Release plan](/dynamics365/release-plan/2024wave2/customer-insights/dynamics365-customer-insights-journeys/marketers-accelerate-journey-creation-using-journey-templates)
@@ -71,6 +66,7 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 - **Maximize event capacity with waitlist registrations**
 	- Ensuring marketing events are filled to capacity is crucial for success and return on investment. To encourage a high turnout for marketing events, you can now enable waitlist registrations, which ensures spots are filled when registered attendees cancel. By setting the capacity for events and sessions, prospective attendees are placed on a waitlist when events and sessions are full. Should a slot open, the system automatically registers the individual next on the waitlist. That individual then automatically receives registration confirmation and personalized event information, ensuring your event is filled to capacity. 
 	- [Release plan](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/maximize-event-capacity-waitlist-registrations)
+	- [Docs](set-up-and-manage-waitlist.md)
 
 	 :::image type="content" source="media/waitlist-feature-screen.png" alt-text="Maximize event capacity with waitlist registrations." lightbox="media/waitlist-feature-screen.png":::
 
