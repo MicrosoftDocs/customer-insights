@@ -130,7 +130,7 @@ You can change the default matching rule using the **Duplicate records** drop-do
 
 ### Create a custom matching rule
 
-The custom matching rule enables you to specify criteria for identifying existing leads or contacts, thereby preventing the creation of duplicate records. [Create custom matching rule](real-time-marketing-matching-rules.md).
+The custom matching rule enables you to specify criteria for identifying existing leads or contacts. This prevents the creation of duplicate records. For more information, see [Create custom matching rule](real-time-marketing-matching-rules.md).
 
 ## Field types
 
