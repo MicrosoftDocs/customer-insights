@@ -23,8 +23,8 @@ Your custom matching rule can utilize multiple attributes of a lead or contact. 
 
 To create a new matching rule:
 
-1. Navigate to **Settings** > **Matching rules**, and select **New** in the top ribbon.
-1. Choose an intuitive name for your new rule, as this name is used to select the rule when creating new forms or journeys. 
+1. Navigate to **Settings** > **Matching rules** and select **New** in the top ribbon.
+1. Choose an intuitive name for your new rule. This name is used to select the rule when creating new forms or journeys. 
 1. Select target entity, which can be a lead or contact.
 1. Select the **Save** button. Your matching rule is created and you can access the **Rules** tab.
 
