@@ -74,7 +74,7 @@ For example, a 'birthday' column has the datatype set as 'date'. A customer reco
 
 ## Remove a data source in use
 
-If you have a data source that was ingested and unified that you no longer want, you can remove it.
+If you have a data source that was ingested and unified that you no longer need, you can remove it. For example, if all the tables in the data source are obsolete or being replaced, remove the tables and the data source.
 
 1. [Remove the data source's unified fields](data-unification-update.md#remove-a-unified-field) that are used in downstream processing such as segments or measures.
 
