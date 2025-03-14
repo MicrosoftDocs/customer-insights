@@ -46,7 +46,9 @@ The matching rule builder consists of three main parts:
 :::image type="content" source="media/real-time-marketing-define-matching-rule.png" alt-text="Define your matching rule" lightbox="media/real-time-marketing-define-matching-rule.png":::
 
 > [!IMPORTANT]
-> If there's no existing record found by the matching rule, a new record is created. If there are multiple existing records found by the matching rule, the *latest updated* record is used.
+>
+> - If there's no existing record found by the matching rule, a new record is created. 
+> - If there are multiple existing records found by the matching rule, the *latest updated* record is used.
 
 ## Matching existing records in marketing and registration forms
 
