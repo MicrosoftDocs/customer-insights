@@ -51,8 +51,9 @@ The matching rule builder consists of three main parts:
 
 Matching rules can be used for both marketing and event registration form types.
 
-Important consideration for matching evaluation:
+**Important consideration for matching evaluation:**
 
 - When the existing user is identified by Tracking (tracking context can be used to find the right contact or lead ID) and the submitted values are aligned with the matching rule, the existing user identified by Tracking is updated.
-- When the form targets the combined "lead & contact" audience, the matching rule for contacts is applied first. If a child lead is found for the matched contact, this child lead is prioritized in the lead matching rule evaluation, provided the existing lead meets all the conditions defined in the lead matching rule.
+- When the form submission targets the combined audience "lead & contact", there is a separate matching rule for contact and a separate matching rule for lead. The matching rule for contacts is applied first. If a child lead is found for the matched contact, this child lead is prioritized in the lead matching rule evaluation, as long as the existing lead meets all the conditions defined in the lead matching rule.
 - To prevent unexpected results, don't use empty values for matching. Make sure all form fields used for matching are set as required.
+- All attributes used in matching rule must be present in the form, otherwise the form publishing fails.
