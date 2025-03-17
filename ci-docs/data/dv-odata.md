@@ -1,7 +1,7 @@
 ---
 title: "Dataverse APIs for Customer Insights - Data"
 description: "Overview and examples of Dataverse Open Data Protocol (OData) APIs to query for data."
-ms.date: 01/28/2025
+ms.date: 03/17/2025
 ms.topic: reference
 author: srivas15
 ms.author: shsri
@@ -69,8 +69,8 @@ Sample queries to [personalize your website](real-time-web-personalization.md#pe
 |---------|---------|---------|
 |Get a customer by CookieId | `{serviceRoot}/msdynci_p13nprofile(cookieid='{cookieId}')`  |          |
 |Get a customer by CookieId and include Segments, Measures, Activities | `{serviceRoot}/msdynci_p13nprofile(cookieid='{cookieId}',include=['segmentmembership','measures','unifiedactivity'])`  |    |
-|Get recent (last 10) page views of a customer by CookieId | `{serviceRoot}/msdynci_pageviews(cookieid='{cookieId}',top=10)`  |  This query can be changed to return up to 200 recent page views  |
-|Get recent (last 10) page clicks of a customer by CookieId | `{serviceRoot}/msdynci_pageclicks(cookieid='{cookieId}',top=10)`  |  This query can be changed to return up to 200 recent page clicks  |
+|Get recent (last 10) page views of a customer by CookieId | `{serviceRoot}/msdynci_p13npageviews(cookieid='{cookieId}',top=10)`  |  This query can be changed to return up to 200 recent page views  |
+|Get recent (last 10) page clicks of a customer by CookieId | `{serviceRoot}/msdynci_p13npageclicks(cookieid='{cookieId}',top=10)`  |  This query can be changed to return up to 200 recent page clicks  |
 |Get all activities of a customer| `{serviceRoot}/msdynci_p13nprofile?$filter=msdynci_customerid eq '{CID}'`  |      |
 |Get all activities of a customer within a time period| `{serviceRoot}/msdynci_p13nprofile?$filter=msdynci_customerid eq '{CID}' and msdynci_activitytime gt 2024-01-01T00:00:00Z and msdynci_activitytime lt 2024-06-01T00:00:00Z`  |      |
 |Get all activities of an activityType of a customer | `{serviceRoot}/msdynci_p13nprofile?$filter=msdynci_customerid eq '{CID}' and msdynci_activitytype eq '{ActivityType}'`  |      |
