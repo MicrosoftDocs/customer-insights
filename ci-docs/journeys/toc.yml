@@ -434,12 +434,12 @@
       href: real-time-marketing-qualify-leads.md
     - name: Create sales activities from lead signals
       href: real-time-marketing-optimize-lead-management.md
+    - name: Create custom matching rules
+      href: real-time-marketing-matching-rules.md    
     - name: Visualize results from your scoring model
       href: real-time-marketing-visualize-scoring-model.md
     - name: Security roles for lead scoring and qualification
       href: real-time-marketing-security-roles-lead-scoring.md
-    - name: Create custom matching rules
-      href: real-time-marketing-matching-rules.md
   - name: Analytics
     items:
     - name: Analytics overview
