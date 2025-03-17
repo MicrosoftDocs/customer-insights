@@ -1,7 +1,7 @@
 ---
 title: Manage Customer Insights - Journeys forms
 description: Discover how to manage and style forms in Dynamics 365 Customer Insights - Journeys. Edit, unpublish, and customize forms with ease. Learn more now!
-ms.date: 03/10/2025
+ms.date: 03/17/2024
 ms.topic: article
 author: petrjantac
 ms.author: colinbirkett
@@ -125,16 +125,7 @@ You can change the default matching rule using the **Duplicate records** drop-do
 
 ### Create a custom matching rule
 
-You can choose how to handle duplicate records by creating a new matching rule.
-
-1. Select the bottom left menu to access **Settings**.
-1. Open **Form matching rules** in the **Customer engagement** section.
-1. Select the plus icon (**+**) to create a new matching rule.
-1. Name the matching rule and select the **Target entity**.
-1. **Save the matching rule** (don't select Save & close as you need to stay on this record).
-1. Add matching strategy attributes (fields) that are used to check if the record exists.
-1. Save your new matching rule.
-1. The newly created matching rule can now be selected in the **Duplicate records** list in the form settings.
+A custom matching rule allows you to specify criteria for identifying existing leads or contacts. This prevents creating duplicate records. For more information, see [Create custom matching rules](real-time-marketing-matching-rules.md).
 
 ## Field types
 
