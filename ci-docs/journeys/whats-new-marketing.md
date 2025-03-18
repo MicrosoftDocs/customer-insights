@@ -1,7 +1,7 @@
 ---
 title: New and upcoming features
 description: Discover the latest features, improvements, and bug fixes in Dynamics 365 Customer Insights - Journeys. Stay updated with our monthly release notes.
-ms.date: 03/12/2025
+ms.date: 03/17/2025
 ms.topic: article
 author: colinbirkett
 ms.author: colinbirkett
@@ -83,7 +83,8 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 #### Monthly enhancements
 
 - **Create enhanced matching rules for forms and journeys**
-	- Maintaining a consistent customer database without duplicate records is crucial for business operations. The new visual editor for matching rules allows you to build complex rules how to match existing contact or lead.
+	- Maintaining a consistent customer database without duplicate records is crucial for business operations. The new visual editor for matching rules allows you to build complex rules that dictate how to match an existing contact or lead.
+	- [Docs](real-time-marketing-matching-rules.md)  
 
 #### New blogs and scenario docs
 
@@ -97,14 +98,6 @@ Learn how to make the most of the new Dynamics 365 Customer Insights features in
 | App              | GA release      |
 |------------------|-----------------|
 | Customer Insights - Journeys        | 1.1.52649.82  |
-
-<!---
-#### General availability
-
-- **Accelerate journey creation using journey templates**
-	- Increase your productivity by using journey templates to kickstart building your customer journeys. Save time using a template from common customer journey scenarios, make final updates with your chosen content and any slight adjustments to the flows, and publish.
-	- [Release plan](/dynamics365/release-plan/2024wave2/customer-insights/dynamics365-customer-insights-journeys/marketers-accelerate-journey-creation-using-journey-templates)
-	- [Docs](real-time-marketing-journey-templates.md)-->
 
 #### Public preview
 	
