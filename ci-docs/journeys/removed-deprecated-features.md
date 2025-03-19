@@ -1,14 +1,18 @@
 ---
 title: Removed or deprecated features in Dynamics 365 Customer Insights - Journeys
-description: How to manage permissions for out-of-the-box and custom roles in Dynamics 365 Customer Insights - Journeys.
+description: 'Learn about removed and deprecated features in Dynamics 365 Customer Insights - Journeys to plan for upcoming changes effectively.  '
 ms.date: 03/18/2025
 ms.topic: article
 author: alfergus
 ms.author: alfergus
-search.audienceType: 
+search.audienceType:
   - admin
   - customizer
   - enduser
+ms.custom:
+  - ai-gen-docs-bap
+  - ai-gen-description
+  - ai-seo-date:03/18/2025
 ---
 
 # Removed or deprecated features in Dynamics 365 Customer Insights - Journeys
