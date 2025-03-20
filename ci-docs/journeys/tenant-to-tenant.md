@@ -16,7 +16,7 @@ search.audienceType:
 Migrating a Customer Insights - Journeys environment between tenants requires assistance from our technical support team. To request tenant to tenant migration within the same Azure geographic location (geo), [contact technical support](/power-platform/admin/get-help-support) and submit a support request.
 
 > [!NOTE]
-> When migrating a Customer Insights - Journeys environment between tenants, the support team will advise you about pre-migration and post-migration steps (see below). Familiarize yourself with the [Customer Insights - Journeys app status after migration](#customer-insights---journeys-app-status-after-migration) to determine if migration will be a good fit for your environment.
+> When you're migrating a Customer Insights - Journeys environment between tenants, the support team advises you about pre-migration and post-migration steps. Familiarize yourself with the [Customer Insights - Journeys app status after migration](#customer-insights---journeys-app-status-after-migration) to determine if migration is a good fit for your environment.
 
 > [!WARNING]
 > The Customer Insights - Journeys app doesn't currently support migration between different tenant geographic locations (geo to geo).
