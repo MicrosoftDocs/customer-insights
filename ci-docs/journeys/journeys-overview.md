@@ -1,7 +1,7 @@
 ---
 title: Journeys overview
 description: Learn how to create automated campaigns with real-time journeys in Dynamics 365 Customer Insights - Journeys.
-ms.date: 03/10/2025
+ms.date: 03/21/2025
 ms.topic: overview
 author: alfergus
 ms.author: alfergus
@@ -28,7 +28,7 @@ There are two types of journeys:
 
 ## Journey templates
 
-You can create templates to make it easier for anyone to start with a pre-existing journey that represents common customer journey patterns for your business. Create a journey template by building a journey and selecting **Save as template**.
+You can create templates to make it easier for anyone to start with a pre-existing journey that represents common customer journey patterns for your business. Create a journey template by building a journey, **Save** the journey, and then select **Save as template** and populate the template name and description. If you don't want to keep the journey that was also created, you can delete it. If you start building a journey template from the template library, the workflow is the same. 
 
 ## The journey life cycle
 
