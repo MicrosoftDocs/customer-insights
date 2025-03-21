@@ -36,7 +36,7 @@ Depending on how you acquire your license, there are different pathways to get t
 
 ### Purchase guidance for Dynamics 365 Customer Insights
 
-- You can find officially published pricing and license details, including the downloadable Power Platform and Dynamics 365 license guide, on the [Customer Insights pricing page](https://www.microsoft.com/en-us/dynamics-365/products/customer-insights/pricing). Review the license guide for detailed entitlements.
+- You can find officially published pricing and license details, including the downloadable Power Platform and Dynamics 365 license guide, on the [Customer Insights pricing page](https://www.microsoft.com/dynamics-365/products/customer-insights/pricing). Review the license guide for detailed entitlements.
 - The "attach" priced base offer (the price for customers that already have other qualifying Dynamics 365 apps) has the same entitlement definition as the full-priced base offer. It's simply discounted for customers who already own prequalifying Dynamics 365 application offers.
 - Dynamics 365 Customer Insights licenses are tenant-level. If you have more than one tenant, you must purchase licenses for each tenant.
 - If you purchased before September 2023, you probably own one or both of the standalone licenses: Dynamics 365 Marketing (standalone) or Dynamics 365 Customer Insights (standalone). The new entitlements given with the currently available Dynamics 365 Customer Insights license don't transfer to the old standalone licenses. To get the new entitlements, you can add the new Dynamics 365 Customer Insights license to your tenant at any time in your contract cycle. Depending on your purchase channel, you can remove the standalone licenses on your renewal date.
