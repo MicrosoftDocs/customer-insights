@@ -42,19 +42,19 @@ To create a new matching rule:
 
 ## Matching existing records in marketing and registration forms
 
-Matching rules can be used for both marketing and event registration form types.
+Matching rules can be used for both marketing and event registration form types. To prevent unexpected results, don't use empty values for matching. Make sure all form fields used for matching are set as required. All attributes used in the matching rule must be present in the form. Otherwise, the form publishing fails.
 
-The following are important considerations for matching evaluation:
+### Matching existing records using link tracking
 
-- When the form submission targets the combined audience "Lead & Contact," there are separate matching rules for contacts and leads. The matching rule for contacts is applied first. If a child lead is found for the matched contact, the child lead is prioritized in the lead matching rule evaluation as long as the existing lead meets all the conditions defined in the lead matching rule.
-- To prevent unexpected results, don't use empty values for matching. Make sure all form fields used for matching are set as required.
-- All attributes used in the matching rule must be present in the form. Otherwise, the form publishing fails.
+When the existing user submitting a form is identified through [link tracking](real-time-marketing-link-tracking-mechanics.md) and the submitted values align with the matching rule, the existing record (contact or lead) identified by link tracking is updated.
+If the submitted values do not align with the matching rule, the link tracking is not used, and the last modified record is updated.
 
-### Matching existing records using tracking context
-
-When the existing user is identified through tracking (the tracking context can be used to find the right contact or lead ID) and the submitted values align with the matching rule, the existing user identified by tracking is updated.
-If the submitted values do not align with the matching rule, the tracking context is not used, and the last updated record is matched.
+:::image type="content" source="media/real-time-marketing-matching-tracking.png" alt-text="Matching a record with link tracking" lightbox="media/real-time-marketing-matching-tracking.png":::
 
 ### Matching existing records in lead & contact scenario
+
+When the form submission targets the combined audience "Lead & Contact," there are separate matching rules for contacts and leads. The matching rule for contacts is applied first. If a child lead is found for the matched contact, the child lead is prioritized in the lead matching rule evaluation as long as the existing lead meets all the conditions defined in the lead matching rule. The Matching existing records using link tracking is also applied.
+
+:::image type="content" source="media/real-time-marketing-matching-parent-contact.png" alt-text="Matching a record in lead with parent contact scenario" lightbox="media/real-time-marketing-matching-parent-contact.png":::
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
