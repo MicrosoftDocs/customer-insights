@@ -47,13 +47,13 @@ Matching rules can be used for both marketing and event registration form types.
 ### Matching existing records using link tracking
 
 When the existing user submitting a form is identified through [link tracking](real-time-marketing-link-tracking-mechanics.md) and the submitted values align with the matching rule, the existing record (contact or lead) identified by link tracking is updated.
-If the submitted values do not align with the matching rule, the link tracking is not used, and the last modified record is updated.
+If the submitted values don't align with the matching rule, the link tracking isn't used, and the last modified record is updated.
 
 :::image type="content" source="media/real-time-marketing-matching-tracking.png" alt-text="Matching a record with link tracking" lightbox="media/real-time-marketing-matching-tracking.png":::
 
 ### Matching existing records in lead & contact scenario
 
-When the form submission targets the combined audience "Lead & Contact," there are separate matching rules for contacts and leads. The matching rule for contacts is applied first. If a child lead is found for the matched contact, the child lead is prioritized in the lead matching rule evaluation as long as the existing lead meets all the conditions defined in the lead matching rule. The Matching existing records using link tracking is also applied.
+When the form submission targets the combined audience "Lead & Contact," there are separate matching rules for contacts and leads. The matching rule for contacts is applied first. If a child lead is found for the matched contact, the child lead is prioritized in the lead matching rule evaluation as long as the existing lead meets all the conditions defined in the lead matching rule. The Link tracking is also considered in the matching process.
 
 :::image type="content" source="media/real-time-marketing-matching-parent-contact.png" alt-text="Matching a record in lead with parent contact scenario" lightbox="media/real-time-marketing-matching-parent-contact.png":::
 
