@@ -1,7 +1,7 @@
 ---
 title: Matching rules for Customer Insights - Journeys
 description: Create custom matching rules to avoid creating duplicate records in forms and journeys.
-ms.date: 03/17/2025
+ms.date: 03/26/2025
 ms.topic: article
 author: petrjantac
 ms.author: colinbirkett
@@ -29,7 +29,7 @@ To create a new matching rule:
 1. Select the **Save** button. Your matching rule is created and you can now add **Matching Strategy Attributes**.
 1. Select **Add Matching Strategy Attribute**.
 1. Choose the attribute in the **Mapping** field and select **Save & Close**.
-1. Repeat steps 5 & 6 to add more matching strategy attributes.
+1. To add more matching strategy attributes, repeat steps 5 and 6.
 1. **Save** your matching rule.
 
 :::image type="content" source="media/real-time-marketing-form-matching-strategy.png" alt-text="Create a new matching rule" lightbox="media/real-time-marketing-form-matching-strategy.png":::
@@ -42,18 +42,17 @@ To create a new matching rule:
 
 ## Matching existing records in marketing and registration forms
 
-Matching rules can be used for both marketing and event registration form types. To prevent unexpected results, don't use empty values for matching. Make sure all form fields used for matching are set as required. All attributes used in the matching rule must be present in the form. Otherwise, the form publishing fails.
+Matching rules can be used for marketing and event registration form types. To prevent unexpected results, don't use empty values for matching. Make sure all form fields used for matching are set as required. All attributes used in the matching rule must be present in the form, otherwise, the form publishing fails.
 
 ### Matching existing records using link tracking
 
-When the existing user submitting a form is identified through [link tracking](real-time-marketing-link-tracking-mechanics.md) and the submitted values align with the matching rule, the existing record (contact or lead) identified by link tracking is updated.
-If the submitted values don't align with the matching rule, the link tracking isn't used, and the last modified record is updated.
+When the existing user submitting a form is identified through [link tracking](real-time-marketing-link-tracking-mechanics.md) and the submitted values align with the matching rule, the existing record (contact or lead) identified by link tracking is updated. If the submitted values don't align with the matching rule, the link tracking isn't used, and the last modified record is updated.
 
 :::image type="content" source="media/real-time-marketing-matching-tracking.png" alt-text="Matching a record with link tracking" lightbox="media/real-time-marketing-matching-tracking.png":::
 
-### Matching existing records in lead & contact scenario
+### Matching existing records in "Lead & Contact" scenario
 
-When the form submission targets the combined audience "Lead & Contact," there are separate matching rules for contacts and leads. The matching rule for contacts is applied first. If a child lead is found for the matched contact, the child lead is prioritized in the lead matching rule evaluation as long as the existing lead meets all the conditions defined in the lead matching rule. The Link tracking is also considered in the matching process.
+When the form submission targets the combined audience "Lead & Contact," there are separate matching rules for contacts and leads. The matching rule for contacts is applied first. If a child lead is found for the matched contact, the child lead is prioritized in the lead matching rule evaluation as long as the existing lead meets all the conditions defined in the lead matching rule. Link tracking is also considered in the matching process.
 
 :::image type="content" source="media/real-time-marketing-matching-parent-contact.png" alt-text="Matching a record in lead with parent contact scenario" lightbox="media/real-time-marketing-matching-parent-contact.png":::
 
