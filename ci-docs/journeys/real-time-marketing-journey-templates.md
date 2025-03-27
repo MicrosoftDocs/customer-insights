@@ -32,7 +32,7 @@ To create a journey template from the journey editor:
 
 1. Author your journey.
 1. Select **Save** to enable the **Save as template** option.
-1. 1. Select **Save as template**.
+1. Select **Save as template**.
 
 ## Editing journey templates
 
