@@ -266,6 +266,8 @@
       href: journeys-overview.md
     - name: "Preview: Copilot - Create journeys using AI assistance"
       href: real-time-marketing-use-copilot-create-journey.md
+    - name: Creating journey templates
+      href: real-time-marketing-journey-templates.md
     - name: Journey flow and tile reference
       items:
       -  name: Understanding journey flow
