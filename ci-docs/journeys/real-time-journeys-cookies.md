@@ -1,7 +1,7 @@
 ---
 title: How the real-time journeys app uses cookies
 description: Understand the deployment and management of cookies in real-time journeys for personalized customer interactions.
-ms.date: 12/13/2024
+ms.date: 03/27/2025
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -43,7 +43,7 @@ The following table lists the cookies used by real-time journeys and the purpose
 | Cookie name             | Is essential | Purpose           | First or third party | Properties              | Function (purpose detail)                                                                                                                                                                                                                                                                                                                   | Source URL/JavaScript |
 |-------------------------|--------------|-------------------|----------------------|-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------|
 | msdynci_trackingContext | No           | Behavior tracking | First party          | Persistent, client-side | This cookie tracks web behavior, such as page visits and clicks, over a 365-day period. It associates this behavior with a known user profile within Customer Insights Journeys to enable orchestration of personalized experiences tailored to user behavior and preferences, as well as analysis of end-user web interactions in reports. | Set by the website tracking script.              |
-| msdynmkt_formsubmissionid | No | Behavior tracking | First party | Persistent, client-side | We set this cookie when an end user submits a Customer Insights Journey form (with web tracking enabled) on a web page. When a form is submitted by this end user, a new contact/lead is created and we leverage the cookie available in the browser to associate future page visits and clicks, over a 365-day period, with the newly generated contact/lead. This enables orchestration of personalized experiences tailored to user behavior and preferences, as well as analysis of end-user web interactions in reports. | Set by the service / form loader script.    |
+| msdynmkt_formsubmissionid | No | Behavior tracking | First party | Persistent, client-side | We set this cookie when an end user submits a Customer Insights - Journeys form (with web tracking enabled) on a web page. When a form is submitted by the end user, a new contact or lead is created and we use the cookie available in the browser to associate future page visits and clicks, over a 365-day period, with the newly generated contact or lead. This enables orchestration of personalized experiences tailored to user behavior and preferences, as well as analysis of end-user web interactions in reports. | Set by the service / form loader script.    |
 
 ## How to disable nonessential real-time journeys marketing cookies
 
