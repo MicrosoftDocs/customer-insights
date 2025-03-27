@@ -26,9 +26,9 @@ To create a journey template:
 - From an existing journey in any state (including those that have completed), choose **Save as template** to turn any existing journey into a template. 
 - From the journey editor, author your journey then choose **Save** to enable the **Save as template** option. 
 
-To edit a journey template: 
+To edit a journey template, you must open one and save as a new template. You cannot edit existing templates: 
  - From the journey editor, choose **New journey** and select the template you want to edit. 
- - Make the desired changes and choose **Save** to enable the **Save as template** option, then select **Save as template**. 
+ - Make the desired changes and choose **Save** to enable the **Save as template** option, then select **Save as template** and name it something that doesn't conflict with an existing template. 
 
 You can save journeys as templates with placeholder content selected or only with tiles in place and no content populated.
 
