@@ -50,7 +50,7 @@ When the existing user submitting a form is identified through [link tracking](r
 
 :::image type="content" source="media/real-time-marketing-matching-tracking.png" alt-text="Matching a record with link tracking" lightbox="media/real-time-marketing-matching-tracking.png":::
 
-### Matching existing records in "Lead & Contact" scenario
+### Matching existing records in a "Lead & Contact" scenario
 
 When the form submission targets the combined audience "Lead & Contact," there are separate matching rules for contacts and leads. The matching rule for contacts is applied first. If a child lead is found for the matched contact, the child lead is prioritized in the lead matching rule evaluation as long as the existing lead meets all the conditions defined in the lead matching rule. Link tracking is also considered in the matching process.
 
