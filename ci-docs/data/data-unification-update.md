@@ -91,7 +91,7 @@ To remove a table that has been unified, the table must be removed from any depe
 
 1. Select **Edit** on the **Unified data view** tile.
 
-1. Select **Select all (V)** to expand all groups, select all fields for the table, and then select **Exclude**.
+1. Expand the columns and select all fields for the table. Then select **Exclude**.
 
    :::image type="content" source="media/m3_remove_table1.png" alt-text="Screenshot of Unified fields with all fields for a table selected and Exclude button":::
 

@@ -76,7 +76,7 @@ For example, a 'birthday' column has the datatype set as 'date'. A customer reco
 
 If you have a data source that was ingested and unified that you no longer need, you can remove it. For example, if all the tables in the data source are obsolete or being replaced, remove the tables and the data source.
 
-1. [Remove the data source's unified tables](data-unification-update.md#remove-a-unified-table). Remove unified fields and remove the tables from deduplication and matching rules. Rerun unification.
+1. [Remove the data source's unified tables](data-unification-update.md#remove-a-unified-table).
 
 1. Once all data dependencies are removed and unification has rerun, you can delete the data source. Select the data source and then **Delete**.
 
