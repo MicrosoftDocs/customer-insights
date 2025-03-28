@@ -11,7 +11,7 @@ search.audienceType:
   - enduser
 ---
 
-# Journey templates
+# Create journey templates
 
 > [!NOTE]
 > Due to rollout delays, journey templates aren't available until mid-March 2025.
@@ -26,25 +26,25 @@ To create a journey template from the template library:
 1. Select **Save**. 
 1. Select **Save as template**.
 
-To create a journey template from an existing journey in any state (including those journeys that have completed), choose **Save as template** to turn the existing journey into a template. 
+To create a journey template from an existing journey in any state (including journeys that have completed), choose **Save as template** to turn the existing journey into a template. 
 
 To create a journey template from the journey editor:
 
 1. Author your journey.
-1. Select **Save** to enable the **Save as template** option.
+1. To enable the **Save as template** option, select **Save** .
 1. Select **Save as template**.
 
 ## Editing journey templates
 
 > [!NOTE]
-> To edit a journey template, you need to open one and save it as a new template. You cannot edit existing templates.
+> To edit a journey template, you need to open an existing template and save it as a new template. You can't directly edit existing templates.
 
 To edit a journey template from the journey editor:
 
 1. Select **New journey**. 
 1. Select the template you want to edit. 
 1. Make your desired changes.
-1. Select **Save** to enable the **Save as template** option. 
+1. To enable the **Save as template** option, select **Save**. 
 1. Select **Save as template**. 
 1. Name your template something that doesn't conflict with existing templates. 
 
