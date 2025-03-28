@@ -1,7 +1,7 @@
 ---
 title: New and upcoming features
 description: Discover the latest features, improvements, and bug fixes in Dynamics 365 Customer Insights - Journeys. Stay updated with our monthly release notes.
-ms.date: 03/25/2025
+ms.date: 03/28/2025
 ms.topic: article
 author: colinbirkett
 ms.author: colinbirkett
@@ -69,12 +69,12 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 	 :::image type="content" source="media/custom-form-fields-resized.png" alt-text="Collect extra customer info without updating your data model." lightbox="media/custom-form-fields-resized.png":::
 
 	> [!NOTE]
-	> Custom unmapped fields for event registration forms will be introduced in the April release.
+	> Custom unmapped fields for event registration forms will be introduced in a future release.
 
 #### Monthly enhancements
 
 - **Create enhanced matching rules for forms and journeys**
-	- Maintaining a consistent customer database without duplicate records is crucial for business operations. The new visual editor for matching rules allows you to build complex rules that dictate how to match an existing contact or lead.
+	- Maintaining a consistent customer database without duplicate records is crucial for business operations. The matching process was extended with the context of the tracking link and parent contact for lead relation. If there are multiple contacts or leads identified by the matching rule, the tracking link context or the parent contact relation are used to prioritize the right record for matching.
 	- [Docs](real-time-marketing-matching-rules.md)  
 
 #### New blogs and scenario docs
