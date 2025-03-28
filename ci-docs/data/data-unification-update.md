@@ -1,7 +1,7 @@
 ---
 title: "Update customer, account, or contact unification settings"
 description: "Update duplicate rules, match rules, or unified fields in the customer or account unification settings."
-ms.date: 03/14/2025
+ms.date: 03/28/2025
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -85,15 +85,13 @@ To remove a field that has been unified, the field must be removed from any depe
 
 ### Remove a unified table
 
-You might want to remove a unified table if it contains activity data that shouldn't have been unified. Remove the unified activity table and then create [activites](activities.md). Or, if the table is obsolete or being replaced by a different table, remove the unified table. After unification is rerun, remove the table from the data source.
-
 To remove a table that has been unified, the table must be removed from any dependencies such as segments, measures, enrichments, or relationships.
 
 1. Once all dependencies for the table have been removed, go to **Data** > **Unify**.
 
 1. Select **Edit** on the **Unified data view** tile.
 
-1. Select all fields for the table and then select **Exclude**.
+1. Select **Select all (V)** to expand all groups, select all fields for the table, and then select **Exclude**.
 
    :::image type="content" source="media/m3_remove_table1.png" alt-text="Screenshot of Unified fields with all fields for a table selected and Exclude button":::
 
@@ -122,7 +120,7 @@ To remove a table that has been unified, the table must be removed from any depe
 
 1. Select **Save and close**.
 
-1. Select **Unify** > **Unify customer profiles and dependencies** to update the unified profile.
+1. Run unification by selecting **Unify** > **Unify customer profiles and dependencies** to update the unified profile.
 
 ## Manage deduplication rules
 
