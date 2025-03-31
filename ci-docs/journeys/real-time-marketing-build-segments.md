@@ -101,3 +101,7 @@ In the above example, the attribute was added to a new group (Group 2).  To crea
 > ![select your operator between groups](media/real-time-marketing-select-your-operator-between-groups.png "select your operator between groups")
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
+
+> [!Note]
+> Calculated and Formula Dataverse table fields were never correctly supported in RTM segmentation. The segmentation backend doesn't get any update signal when a Calculated or a Formula field is updated (by design, as values of Calculated and Formula fields are not persisted anywhere, they are just calculated on the fly) and hence it wouldn't synchronize record updates when that happens.
+To address this, we are now showing Calculated and Formula fields as **disabled** in the RTM segment designer (with an appropriate tooltip).
