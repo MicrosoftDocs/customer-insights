@@ -116,6 +116,7 @@ When outbound marketing is removed, the sitemap entry and outbound marketing ser
 - Outbound marketing **emails**, **content blocks**, **forms**, **segments**, **marketing pages**, **consent data**, **journeys**, **templates**, **lead scoring models**, **social posts**, and **subscription lists** won't be deleted.
     - As these assets can't be used in real-time journeys, they need to be migrated or recreated. For more information, review the individual pages for each feature area in the transition guidance section: [Functional areas overview](transition-walkthrough-functional.md).
     - While these tables will remain, any custom user interface that updated or added records to them and relied on outbound marketing services may fail (for example, any custom user interface that had plugins reacting on retrieve/retrieve multiple messages).
+- **Marketing list** will not be deleted. You can continue using them in real-time (e.g., can be included in real-time dynamic segments). 
 
 ## How do I start with real-time journeys?
 
