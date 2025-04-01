@@ -38,7 +38,7 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 	- [Release plan](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/form-prefill-simplifies-form-filling-event-sign-up) 
 	- [Docs](real-time-marketing-form-prefill.md)
 
-	   :::image type="content" source="media/form-prefill.png" alt-text="Streamline form filling and event registration with form prefill." lightbox="media/form-prefill.png":::
+	:::image type="content" source="media/form-prefill.png" alt-text="Streamline form filling and event registration with form prefill." lightbox="media/form-prefill.png":::
 
 - **Personalize messages and make journey decisions based on web interactions** 
 	- With Customer Insights - Journeys, you can now track and leverage your customers’ online behavior to deliver personalized experiences across your digital channels. For example, you can boost conversions and customer loyalty by sending tailored offers after customers visit your website and show interest in a product or service. By tracking additional data about customers' online journeys, you can get valuable insights into your customers' preferences and needs and easily measure your campaign’s effectiveness.
