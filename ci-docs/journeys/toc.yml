@@ -420,7 +420,7 @@
       href: real-time-marketing-deploy-pages.md
     - name: "Preview: Prefill values for forms and event registration"
       href: real-time-marketing-form-prefill.md
-    - name: "Preview: Create unmapped fields for marketing forms"
+    - name: Create unmapped fields for marketing forms
       href: real-time-marketing-forms-custom-fields.md
     - name: Manage forms
       href: real-time-marketing-manage-forms.md
@@ -454,7 +454,7 @@
       href: real-time-marketing-cross-journey-analytics.md
     - name: How to use aggregate channel analytics
       href: real-time-marketing-channel-analytics.md
-    - name: "Preview: Make journey decisions based on web interactions"
+    - name: Make journey decisions based on web interactions
       href: interaction-journey-decision.md
     - name: How to use email insights
       href: email-insights.md

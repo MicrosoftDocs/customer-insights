@@ -1,7 +1,7 @@
 ---
 title: New and upcoming features
 description: Discover the latest features, improvements, and bug fixes in Dynamics 365 Customer Insights - Journeys. Stay updated with our monthly release notes.
-ms.date: 03/17/2025
+ms.date: 04/07/2025
 ms.topic: article
 author: colinbirkett
 ms.author: colinbirkett
@@ -33,11 +33,17 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 
 #### General availability
 
-#### Public preview
+- **Streamline form filling and event registration with form prefill**
+	- The repetitive task of filling out forms can be a significant deterrent to event registration. Nobody likes to repeat information that they've already provided. Imagine loyal customers who attend multiple conferences each year having to input their contact information and preferences every time. Form prefill in Dynamics 365 Customer Insights eliminates the need to repeatedly request basic details from your customers, reducing redundancy and saving time. This not only expedites the registration process but also allows for more strategic collection of customer data over time. 
+	- [Release plan](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/form-prefill-simplifies-form-filling-event-sign-up) 
+	- [Docs](real-time-marketing-form-prefill.md)
 
-#### Monthly enhancements
+	   :::image type="content" source="media/form-prefill.png" alt-text="Streamline form filling and event registration with form prefill." lightbox="media/form-prefill.png":::
 
-#### New blogs and scenario docs
+- **Personalize messages and make journey decisions based on web interactions** 
+	- With Customer Insights - Journeys, you can now track and leverage your customers’ online behavior to deliver personalized experiences across your digital channels. For example, you can boost conversions and customer loyalty by sending tailored offers after customers visit your website and show interest in a product or service. By tracking additional data about customers' online journeys, you can get valuable insights into your customers' preferences and needs and easily measure your campaign’s effectiveness.
+	- [Release plan](/dynamics365/release-plan/2024wave2/customer-insights/dynamics365-customer-insights-journeys/engage-customers-personalized-messages-based-website-interactions) 
+	- [Docs](interaction-journey-decision.md)
 
 ### March 2025 update
 
