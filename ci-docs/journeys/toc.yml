@@ -242,6 +242,8 @@
         href: unified-profile-segment-creation.md
       - name: Create a static snapshot of a segment
         href: real-time-marketing-static-snapshot.md
+      - name: Export segment membership for offline analysis
+        href: export-segment-membership.md
     - name: Use Customer Insights - Data segments
       items:
       - name: Use Customer Insights - Data profiles and segments
