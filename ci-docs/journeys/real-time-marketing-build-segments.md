@@ -100,4 +100,7 @@ In the above example, the attribute was added to a new group (Group 2).  To crea
 > [!div class="mx-imgBorder"]
 > ![select your operator between groups](media/real-time-marketing-select-your-operator-between-groups.png "select your operator between groups")
 
+> [!Note]
+> Calculated and Formula Dataverse table fields aren't supported in real-time journeys segmentation. The segmentation backend doesn't receive an update signal when a Calculated or a Formula field is updated. This is by design, as values of Calculated and Formula fields aren't persisted anywhere, they're just calculated on the fly. To address this, the app now shows Calculated and Formula fields as **disabled** in the real-time journeys segment designer (with an appropriate tooltip).
+
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
