@@ -1,7 +1,7 @@
 ---
 title: Removed or deprecated features in Dynamics 365 Customer Insights - Journeys
 description: 'Learn about removed and deprecated features in Dynamics 365 Customer Insights - Journeys to plan for upcoming changes effectively.  '
-ms.date: 03/18/2025
+ms.date: 04/03/2025
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -23,6 +23,17 @@ This article describes features that have been removed, or that are planned for 
 - A *deprecated* feature isn't in active development and may be removed in a future update.
 
 This list is intended to help you consider these removals and deprecations for your own planning. Where possible, we share option to use similar capabilities for removed or deprecated features.
+
+## Features removed or deprecated in May 2025
+
+### Style your emails, forms, and brand profiles with AI-assisted themes
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Reason for deprecation/removal** | Features in public preview are continuously being evaluated based on the balance between customer value and cost of maintaining the service.  |
+| **Replaced by another feature?**   | No. You can use the existing themes feature to style [emails](email-design.md), [forms](real-time-marketing-manage-forms.md#style-your-forms-using-theme) and [brand profiles](brand-profiles.md#define-theme).|
+| **Product areas affected**         | Email, forms, brand profiles|
+| **Status**                         | Removed as of May 2025 |
 
 ## Features removed or deprecated in February 2025
 
