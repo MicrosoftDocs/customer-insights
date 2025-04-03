@@ -1,7 +1,7 @@
 ---
 title: Removed or deprecated features in Dynamics 365 Customer Insights - Journeys
 description: 'Learn about removed and deprecated features in Dynamics 365 Customer Insights - Journeys to plan for upcoming changes effectively.  '
-ms.date: 03/18/2025
+ms.date: 04/03/2025
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -26,20 +26,14 @@ This list is intended to help you consider these removals and deprecations for y
 
 ## Features removed or deprecated in May 2025
 
- The following Copilot public preview features will be discontinued: 
-- Style your emails with AI-assisted themes
-- Style your forms with AI-assisted themes
-- Style your brand profiles with AI-assisted themes
-
-### Style your emails, forms and brand profiles with AI-assisted themes
+### Style your emails, forms, and brand profiles with AI-assisted themes
 
 | &nbsp;  | &nbsp;  |
 |---|---|
 | **Reason for deprecation/removal** | Features in public preview are continuously being evaluated based on the balance between customer value and cost of maintaining the service.  |
-| **Replaced by another feature?**   | No. You can use the existing themes feature to style [emails](https://learn.microsoft.com/en-us/dynamics365/customer-insights/journeys/email-design), [forms](https://learn.microsoft.com/en-us/dynamics365/customer-insights/journeys/real-time-marketing-manage-forms#style-your-forms-using-theme) and [brand profiles](https://learn.microsoft.com/en-us/dynamics365/customer-insights/journeys/brand-profiles#define-theme).|
-| **Product areas affected**         |  Email,  Forms, Brand Profiles|
+| **Replaced by another feature?**   | No. You can use the existing themes feature to style [emails](email-design.md), [forms](real-time-marketing-manage-forms.md#style-your-forms-using-theme) and [brand profiles](brand-profiles.md#define-theme).|
+| **Product areas affected**         | Email, forms, brand profiles|
 | **Status**                         | Removed as of May 2025 |
-
 
 ## Features removed or deprecated in February 2025
 
