@@ -1,7 +1,7 @@
 ---
 title: Create a Customer Insights - Journeys segment using the Web API
 description: Learn how to create a Customer Insights - Journeys segment using the Web API.
-ms.date: 08/22/2023
+ms.date: 04/03/2025
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -34,6 +34,8 @@ The <**Organization URL**> part should be replaced with the actual URL of the or
     msdynmkt_excludedmembers: string,
     msdynmkt_disablesegmentrefresh: boolean,
     msdynmkt_segmentrefreshintervalminutes: number
+    msdynmkt_sourcesegmentcreatedon: date
+    msdynmkt_sourcesegmentcreatedby: string
 }
 ```
 
@@ -54,6 +56,11 @@ The payload contains the following properties:
 - **msdynmkt_excludedmembers**: A string that contains a list of GUIDs of members that should be excluded from the segment.
 - **msdynmkt_disablesegmentrefresh**: A boolean value that indicates whether automatic segment refreshing should be disabled.
 - **msdynmkt_segmentrefreshintervalminutes**: An integer value that specifies the refresh interval in minutes.
+- **msdynmkt_sourcesegmentcreatedon**: A date field to describe the date of segment creation.
+- **msdynmkt_sourcesegmentcreatedby** : A string field to describe the creator of the segment.
+
+> [!Note]
+> Adding the `msdynmkt_sourcesegmentcreatedon` and `msdynmkt_sourcesegmentcreatedby` fields isn't mandatory. The segment still works without these fields, but the two fields won't populate if not added to the payload.
 
 #### Example request
 
