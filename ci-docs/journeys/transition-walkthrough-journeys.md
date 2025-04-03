@@ -33,7 +33,7 @@ You can use the same tool to import email templates. To import templates, go to 
 **Known limitations when importing emails with content blocks**: When importing emails with the *Import content blocks used in the selected emails* option selected, each email re-imports the associated content block(s), overriding any existing version. This results in the loss of any modifications made to the imported content blocks in Real-time marketing (RTM).
 
 > [!TIP]
-> To avoid unintended overwrites, import the content block first along with all related emails before making any modifications. Additionally, the content block dependency from Outbound marketing (OBM) is stored in the `msdynmkt_obmmigrationinfo` column within the `msdynmkt_fragment` table. Clearing this value prevents automatic overwriting during imports.
+> To avoid unintended overwrites, import the content block first along with all related emails before making any modifications. The content block dependency from outbound marketing is stored in the `msdynmkt_obmmigrationinfo` column within the `msdynmkt_fragment` table. Clearing this value prevents automatic overwriting during imports.
 
 ## Journeys
 
