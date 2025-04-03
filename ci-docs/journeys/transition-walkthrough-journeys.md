@@ -30,6 +30,11 @@ While reviewing the imported emails, it's worth considering whether you should s
 
 You can use the same tool to import email templates. To import templates, go to the email templates area in the real-time journeys email editor and select the **Import template** option.
 
+**Known limitations when importing emails with content block**: When importing emails with the *Import content blocks used in the selected emails* option selected, each email re-imports the associated content block(s), overriding any existing version. This results in the loss of any modifications made to the imported content blocks in Real-time marketing (RTM).
+
+> [!TIP]
+> To avoid unintended overwrites, import the content block first along with all related emails before making any modifications. Additionally, the content block dependency from Outbound marketing (OBM) is stored in the msdynmkt_obmmigrationinfo column within the msdynmkt_fragment table. Clearing this value prevents automatic overwriting during imports.
+
 ## Journeys
 
 Journeys in real-time journeys are the equivalent to customer journeys in outbound marketing. Journeys are the container that define the sequence of marketing actions that contacts are involved in. The underlying architecture for journeys in the real-time journeys module is fundamentally different from outbound marketing, which is why journeys can't be transferred automatically and manual recreation of the journey is required.
