@@ -23,7 +23,7 @@ Measure builder lets you define calculations using math operators, aggregation f
 
 The following table provides key points about the different measure types.
 
-|  |Customer attribute  |Customer measure  |Customer measure table - For use in Journeys and other Dynamics 365 apps |Business measure
+|Key points  |Customer attribute  |Customer measure  |Customer measure table - For use in Journeys and other Dynamics 365 apps |Business measure
 |---------|---------|---------|---------|---------|
 |Definition |A single value calculated per unique profile |A single value or multiple values calculated per unique profile and split by one or more dimensions |A single value or multiple values calculated per unique profile |A value calculated without a direct link to a unique profile, optionally split by one or more dimensions |
 |Dimensions | CustomerId (unique profile identifier) only |CustomerId (unique profile identifier) and more |CustomerId (unique profile identifier) only |0 or more except CustomerId (unique profile identifier) |
