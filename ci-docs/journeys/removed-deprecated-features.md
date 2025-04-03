@@ -24,6 +24,23 @@ This article describes features that have been removed, or that are planned for 
 
 This list is intended to help you consider these removals and deprecations for your own planning. Where possible, we share option to use similar capabilities for removed or deprecated features.
 
+## Features removed or deprecated in May 2025
+
+ The following Copilot public preview features will be discontinued: 
+- Style your emails with AI-assisted themes
+- Style your forms with AI-assisted themes
+- Style your brand profiles with AI-assisted themes
+
+### Style your emails, forms and brand profiles with AI-assisted themes
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Reason for deprecation/removal** | Features in public preview are continuously being evaluated based on the balance between customer value and cost of maintaining the service.  |
+| **Replaced by another feature?**   | No. You can use the existing themes feature to style [emails](https://learn.microsoft.com/en-us/dynamics365/customer-insights/journeys/email-design), [forms](https://learn.microsoft.com/en-us/dynamics365/customer-insights/journeys/real-time-marketing-manage-forms#style-your-forms-using-theme) and [brand profiles](https://learn.microsoft.com/en-us/dynamics365/customer-insights/journeys/brand-profiles#define-theme).|
+| **Product areas affected**         |  Email,  Forms, Brand Profiles|
+| **Status**                         | Removed as of May 2025 |
+
+
 ## Features removed or deprecated in February 2025
 
 ### Marketing effectiveness analytics
