@@ -1,7 +1,8 @@
 ---
 title: Check your work using previews and test sends
 description: Learn how to use in-app previews and test sends to inspect and test your email message design in Dynamics 365 Customer Insights - Journeys.
-ms.date: 03/21/2024
+ms.date: 04/03/2025
+
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -12,9 +13,6 @@ search.audienceType:
 ---
 
 # Check your work using previews and test sends
-
-> [!NOTE]
-> Litmus integration is only supported for real-time journeys.
 
 Your marketing email messages will probably be seen by many potential customers, so you'll want to make sure they look just right when opened, regardless of which combination of device and email software each recipient is using. Dynamics 365 Customer Insights - Journeys provides several tools to help you test and evaluate your design before you use it in an email campaign.
 
@@ -57,7 +55,9 @@ The inbox preview is provided by a Microsoft partner called Litmus Software, Inc
 The **Email clients** tab displays a grid of icons, each labeled with the name of a different destination platform or email client. Initially, each preview is dimmed and shows a key (locked) icon, which means that you haven't yet generated that preview by using your current design and settings. Select one of these icons to generate that preview and unlock its icon. Each time you unlock a preview, you'll use one preview from either your organization's or your personal quota. The unlocked preview remains available for viewing until you change the design or the **Properties** (dynamic text) settings, at which time all existing previews will no longer be valid and will be shown as locked again.
 
 > [!NOTE]
-> Litmus must be enabled for your instance before you can use it. More information: [Configure default marketing settings](mkt-settings-default-marketing.md)
+> You must enable Litmus for your instance before you can use it. 
+> - To enable Litmus in real-time journeys orgs only, go to **Feature switches** > **Email editor** > **Litmus integration**. 
+> - To enable Litmus in outbound marketing *and* real-time journeys orgs, go to **Default settings** > **Marketing emails** > **Enable Litmus integration**.
 
 ## Send a test message
 
