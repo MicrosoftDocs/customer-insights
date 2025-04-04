@@ -1142,7 +1142,7 @@
         href: developer/marketing-entity-reference.md
     - name: Customize outbound marketing forms
       items:
-      - name: Filter cities based on countries using lookup fields and custom entities
+      - name: Filter cities based on countries/regions using lookup fields and custom entities
         href: developer/filter-cities.md
       - name: Extend outbound marketing forms using code
         href: developer/marketing-form-client-side-extensibility.md

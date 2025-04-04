@@ -284,7 +284,7 @@ The following table lists all the operators that you can use in your conditional
 | lte | Less than or equal to |
 | gte | Greater than or equal to |
 
-For example, this conditional statement could be used to establish the language used in a message salutation based on the country of each message recipient:
+For example, this conditional statement could be used to establish the language used in a message salutation based on the country/region of each message recipient:
 
  ```Handlebars
 <p>{{#if (eq contact.address1_country 'Denmark')}}

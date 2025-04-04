@@ -33,7 +33,7 @@ Once the feature switch is enabled, a new feature appears on your Customer Insig
 To create a new scoring model:
 1. Go to **Lead Management** > **Scoring Models**. Here, you see a list of all your models.
 1. To start creating a new scoring model, select the **New** button.
-1. Provide a name for the model. After naming the model, you can specify conditions to target a specific audience and avoid generating extra scores that aren't needed. Conditions are based on attributes of the audience entity, in this case lead attributes. For example, you can set a condition to target leads from a specific country.
+1. Provide a name for the model. After naming the model, you can specify conditions to target a specific audience and avoid generating extra scores that aren't needed. Conditions are based on attributes of the audience entity, in this case lead attributes. For example, you can set a condition to target leads from a specific country/region.
 1. When you're ready to start building your model, select the **Create** button.
 
 > [!div class="mx-imgBorder"]
