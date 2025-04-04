@@ -15,23 +15,26 @@ Measure builder lets you define calculations using math operators, aggregation f
 
 ## Measure types
 
+There are three types of measures that can be created in four different ways:
+
 - Customer attribute: Generates output as a new attribute, which gets saved as a new column in the system-generated table named *Customer_Measure*. When refreshing a customer attribute, all the other customer attributes in the *Customer_Measure* table refresh simultaneously. In addition, customer attributes are shown in the customer profile card. Once run or saved, you can't change a customer attribute to a customer measure. Customer attribute measures have a direct relationship to the unified customer profile.
 
 - Customer measure: Generates output as its own table named after the name of the measure you define. You can't change it to a customer attribute once run or saved. Customer measures don't show in the customer profile card. Customer measures have a direct relationship to the unified customer profile.
 
+  You can also [create a customer measure - table that can be used in Customer Insights - Journeys and other Dataverse applications](dataverse-measures.md). 
+
 - Business measure: Generates output as its own table and shows on the home page of your Dynamics 365 Customer Insights - Data environment. Business measures don't have a direct relationship to individual customer profiles. Business measures look across all customer profiles or are grouped by another attribute. For example, a calculation for all customers in a specific state.
 
-The following table provides key points about the different measure types.
+The following table provides key points about the different measure types. The dimension, *CustomerId* is the unique profile identifier from the *Customer* table.
 
 |Key points  |Customer attribute  |Customer measure  |Customer measure table - For use in Journeys and other Dynamics 365 apps |Business measure
 |---------|---------|---------|---------|---------|
 |Definition |A single value calculated per unique profile |A single value or multiple values calculated per unique profile and split by one or more dimensions |A single value or multiple values calculated per unique profile |A value calculated without a direct link to a unique profile, optionally split by one or more dimensions |
-|Dimensions | CustomerId (unique profile identifier) only |CustomerId (unique profile identifier) and more |CustomerId (unique profile identifier) only |0 or more except CustomerId (unique profile identifier) |
+|Dimensions | CustomerId only |CustomerId and more |CustomerId only |0 or more except CustomerId |
 |# of calculations / attributes in the measure |Single calculation / attribute |Single or multiple calculations / attributes with CustomerId + at least 1 other dimension |Single or multiple calculations / attributes with CustomerId dimension |Single calculation / attribute with no dimension *or* single or multiple calculations / attributes with at least 1 dimension that isn't the CustomerId |
-|Table |All customer attributes are stored in a table called *Customer_Measure* where the first column is CustomerId, which is the unique profile identifier, and 1 column for each Customer attribute added |Stored in its own dedicated table |Stored in its own dedicated table |Stored in its own dedicated table |
-|Measures that you could rely on |Customer attributes and Customer measures can be used to build Customer attributes |Customer attributes and Customer measures can be used to build Customer measures |Customer attributes and Customer measures can be used to build the *Customer_Measure* table |Customer attributes, Customer measures, and Business measures can be used to build Business attributes |
+|Table |All customer attributes are stored in a table called *Customer_Measure* where the first column is CustomerId and 1 column for each Customer attribute added |Stored in its own dedicated table |Stored in its own dedicated table |Stored in its own dedicated table |
 |Displays on [**Customer** card](customer-profiles.md) |Yes |No |No |No |
-|Available as elastic table in Dataverse |Yes (different format compared to *Customer_Measure* table and not readily usable in other Dynamics 365 apps) |No |Yes |No |
+|Available as [elastic table in Dataverse](tables.md#customer-insights---data-tables-in-dataverse) |Yes (a different format than the [*Customer_Measure*](tables.md#customermeasure) table and not readily usable in other Dynamics 365 apps) |No |Yes |No |
 |Refresh |Refresh of a customer attribute results in refresh of all the customer attributes in the instance |Can be refreshed on its own |Can be refreshed on its own |Can be refreshed on its own |
 
 ## Create a build-your-own measure
@@ -48,7 +51,7 @@ The following table provides key points about the different measure types.
 
 1. Select **Done**.
 
-1. To track business-level performance, toggle **Measure type** to **Business level**. **Customer level** is selected by default. **Customer level** automatically adds the *CustomerId* attribute to Dimensions while **Business level** automatically removes it.
+1. Select the [**Measure type**](#measure-types).
 
 1. In the configuration area, choose the aggregation function from the **Select function** dropdown menu. Aggregation functions include:
    - **Sum**
