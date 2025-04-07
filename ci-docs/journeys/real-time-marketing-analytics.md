@@ -1,7 +1,7 @@
 ---
 title: Access and interpret analytics
 description: How to access and interpret Customer Insights - Journeys analytics in Dynamics 365 Customer Insights - Journeys.
-ms.date: 03/10/2025
+ms.date: 04/07/2025
 ms.topic: article
 author: colinbirkett
 ms.author: colinbirkett
@@ -36,7 +36,7 @@ The following insights categories are provided:
 - **Push notification insights**: Complete details of push notification interactions for the selected contact, including a list of all messages sent to them and more.
 - **Text message insights**: Complete details of text message interactions for the selected contact, including a list of all messages sent to them, plus lists of all clicks, replies, and more.
 - **Custom channels insights**: Complete details of custom channel interactions for the selected contact, including messages sent, clicked, and more.
-- **website and form insights**: Monitor web behavior as well as see which marketing forms the contact has visited and submitted. View the content of each submission.
+- **Website and form insights**: Monitor web behavior and see which marketing forms the contact has visited and submitted. View the content of each submission.
 
     :::image type="content" source="media/real-time-marketing-custom-channel-contact-insights.png" alt-text="Screenshot of custom channel contact insights." lightbox="media/real-time-marketing-custom-channel-contact-insights.png":::
 
