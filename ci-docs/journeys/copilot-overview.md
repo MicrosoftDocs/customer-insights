@@ -60,7 +60,8 @@ For example, you can type "revise this paragraph for a more formal tone" or "mak
 
 ## Style your emails with AI-assisted themes
 
-[!WARNING] Style your emails with AI-assisted themes public preview features will be discontinued and removed in May 2025:
+> [!WARNING] 
+> The "Style your emails with AI-assisted themes" public preview features will be discontinued and removed in May 2025. Learn more: [Removed or deprecated features in Dynamics 365 Customer Insights - Journeys](removed-deprecated-features.md)
 
 Elevate your email communication to new heights with AI-assisted themes. Define the visual appeal of your emails effortlessly by describing your preferences using natural language and Copilot takes care of the rest.
 
