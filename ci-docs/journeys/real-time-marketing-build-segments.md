@@ -104,9 +104,8 @@ In the above example, the attribute was added to a new group (Group 2).  To crea
 > Calculated and Formula Dataverse table fields aren't supported in real-time journeys segmentation. The segmentation backend doesn't receive an update signal when a Calculated or a Formula field is updated. This is by design, as values of Calculated and Formula fields aren't persisted anywhere, they're just calculated on the fly. To address this, the app now shows Calculated and Formula fields as **disabled** in the real-time journeys segment designer (with an appropriate tooltip).
 
 > [!Note]
-> While adding nested segments to the segment definition, you can view the details of the underlying segment by clicking on the 'view segment' hyperlink when hovering over the desired segment.
-To use keyboard controls to view the segment, press the "K" key while the focus is on the desired segment. This action will opena dislog displaying the segment details.
+> While adding nested segments to the segment definition, you can view the details of the underlying segment by clicking on the "view segment" hyperlink when hovering over the desired segment.
+To use keyboard controls to view the segment, press the "K" key while focus is on the desired segment. This action will open a dialog displaying the segment details.
 ![image](https://github.com/user-attachments/assets/f16bc7a9-1c38-44aa-b070-f27f7efac7c5)
-
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
