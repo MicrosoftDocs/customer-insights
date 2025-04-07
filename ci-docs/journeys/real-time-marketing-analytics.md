@@ -1,7 +1,7 @@
 ---
 title: Access and interpret analytics
 description: How to access and interpret Customer Insights - Journeys analytics in Dynamics 365 Customer Insights - Journeys.
-ms.date: 03/10/2025
+ms.date: 04/07/2025
 ms.topic: article
 author: colinbirkett
 ms.author: colinbirkett
@@ -33,10 +33,10 @@ The following insights categories are provided:
 
 - **Overview**: A chart of the engagement interactions and a summary of the most important KPIs for each channel for the selected contact.
 - **Email insights**: Complete details of email interactions for the selected contact, including a list of all messages sent to them, plus lists of all opens, clicks, bounces, and more. View the email clients used to open emails and the device types, operating systems, and browsers used to click on emails.
-- **Form insights**: See which marketing forms the contact has visited and submitted. View the content of each submission.
-- **Text message insights**: Complete details of text message interactions for the selected contact, including a list of all messages sent to them, plus lists of all clicks, replies, and more.
 - **Push notification insights**: Complete details of push notification interactions for the selected contact, including a list of all messages sent to them and more.
+- **Text message insights**: Complete details of text message interactions for the selected contact, including a list of all messages sent to them, plus lists of all clicks, replies, and more.
 - **Custom channels insights**: Complete details of custom channel interactions for the selected contact, including messages sent, clicked, and more.
+- **Website and form insights**: Monitor web behavior and see which marketing forms the contact has visited and submitted. View the content of each submission.
 
     :::image type="content" source="media/real-time-marketing-custom-channel-contact-insights.png" alt-text="Screenshot of custom channel contact insights." lightbox="media/real-time-marketing-custom-channel-contact-insights.png":::
 
@@ -135,14 +135,6 @@ Learn more: [How to use aggregate channel analytics](real-time-marketing-channel
 > [!NOTE]
 > There is no data retention policy for Customer Insights - Journeys interactions in aggregate cross-journey analytics and aggregate channel analytics. Dataverse entities are limited to a two-year retention policy after their initial creation date. Keep in mind that the two-year Dataverse entity retention policy might impact analytics views associated with interaction data from Dataverse entities.
 > The aggregate cross-journey analytics, channel analytics, and marketing effectiveness analytics dashboards are not supported on mobile devices.
-
-## Marketing effectiveness analytics
-
-The marketing effectiveness analytics dashboard enables you to set up key milestones in your buyer’s journey and analyze how your Customer Insights - Journeys activities are contributing to driving customers to those milestones. The dashboard uses AI-powered multi-touch and single-touch attribution models.
-
-:::image type="content" source="media/real-time-marketing-effectiveness-analytics-dashboard.png" alt-text="Customer Insights - Journeys effectiveness analytics dashboard." lightbox="media/real-time-marketing-effectiveness-analytics-dashboard.png":::
-
-Learn more: [Preview: Marketing effectiveness analytics](real-time-marketing-effectiveness.md)
 
 ## Learn more
 
