@@ -18,7 +18,8 @@ ms.custom:
 # Personalize messages, make journey decisions based on web interactions
 
 > [!NOTE]
-> This feature applies to known contacts or leads, such as contacts who have visited a webpage by selecting a tracking link in a Customer Insights - Journeys email.
+> - This feature applies to known contacts or leads, such as those who have visited a webpage through a tracking link in a Customer Insights - Journeys email or submitted a Customer Insights - Journeys form on the website.
+> - To enable web tracking on Customer Insights Journeys forms make sure you turn on the **Web Tracking** setting, under Forms > Form settings > General.
 
 In Customer Insights - Journeys, you can track and leverage your customers’ online behavior to deliver personalized experiences across digital channels. For example, you can boost conversions and customer loyalty by sending tailored offers after customers visit your website and show interest in a product or service. By tracking additional data about customers' online journeys, you can gain valuable insights into your customers' preferences and needs and easily measure your campaign’s effectiveness.
 
