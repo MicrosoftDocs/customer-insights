@@ -68,6 +68,6 @@ function disableCookiesUsage() {
  }
 ```
 
-Without nonessential cookies, real-time journeys's web tracking capabilities are limited and you can't orchestrate personalized experience to your customers.
+This action requires page reload. Without nonessential cookies, real-time journeys's web tracking capabilities are limited and you can't orchestrate personalized experience to your customers.
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
