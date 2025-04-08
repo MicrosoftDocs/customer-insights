@@ -41,7 +41,7 @@ In the code, you only specify the placeholder name. To set up the condition, go 
 > [!div class="mx-imgBorder"]
 > ![Screenshot showing the personalize tab with placeholders.](media/real-time-marketing-inline-condition.png)
 
-For example, you can add code to personalize a greeting based on country:
+For example, you can add code to personalize a greeting based on country/region:
 
 ```
 {{#if placeholderName}}
