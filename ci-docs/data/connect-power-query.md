@@ -169,9 +169,11 @@ Customer Insights - Data is aligning Power Query separate refresh schedules with
 
 ## Refresh Power Query data sources on demand
 
-Only the owner of a Power Query data source can refresh the data source on demand. If you aren't the owner of the data source, find the data source owner under **Managed by others** on the **Data Sources** page.
+Power Query data sources can be refreshed on demand. 
 
 1. Go to **Data** > **Data Sources**.
+
+1. If you are the data source owner, find the data source under "Managed by Me". Otherwise, find it under "Managed by others"
 
 1. Select the desired Power Query data source, and then select **Refresh**.
 
