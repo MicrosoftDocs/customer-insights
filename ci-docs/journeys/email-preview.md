@@ -21,9 +21,8 @@ Your marketing email messages will probably be seen by many potential customers,
 >
 > - [For-each loops](dynamic-email-content.md#for-each) don't render.
 > - [Subscription center links](set-up-subscription-center.md#test-sub-center) will open the subscription center page, but the page won't function.
-> - You can't test send [confirmation-request messages](double-opt-in.md).
+> - You can test send the [double opt-in emails](https://learn.microsoft.com/en-us/dynamics365/customer-insights/journeys/real-time-marketing-double-opt-in#double-opt-in-confirmation-email) layout but you won't be able to test the actual logic behind it. This is because the logic depends on the compliance profile assigned to each audience and how dynamic placeholders are resolved.
 > - To test an email that contains placeholders that point to Dataverse tables, the user running the test must have [read permissions](role-permissions.md) for the tables.
->
 > To test these features, create a simple customer journey that targets a very small segment (such as one that includes a single contact with your email address) and sends the message  you want to test.
 
 ## Preview your message in the designer
