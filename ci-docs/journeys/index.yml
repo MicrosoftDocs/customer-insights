@@ -96,7 +96,7 @@ additionalContent:
         - url:  dynamic-email-content.md
           text: Add dynamic content to email messages
         - url: real-time-marketing-dynamic-content-multiple-languages.md
-          text: Create dynamic content for multiple countries and languages
+          text: Create dynamic content for multiple countries/regions and languages
       - title: Marketing forms
         links:
         - url: real-time-marketing-form-overview.md

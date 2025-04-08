@@ -71,7 +71,7 @@ The following examples demonstrate the use of the Marketing contributor role.
 
 #### Multi-geo example
 
-Contoso has two lines of businesses - Real Estate and Retail in two different countries – USA and Canada. They have different sets of marketing users for each country who are tasked to tailor specific marketing campaigns that are unique to a country. These users are interested in seeing the unified view of customers across the two businesses (Real Estate and Retail) within the same country. Even though the probability of customers shopping in both the countries is low, the business wants to ensure that the profiles are unified within a country and not across. There are no restrictions or limitations for viewing the data across businesses and countries and they prefer a single Customer Insights - Data environment rather than setting up one environment for each country.
+Contoso has two lines of businesses - Real Estate and Retail in two different countries/regions – USA and Canada. They have different sets of marketing users for each country/region who are tasked to tailor specific marketing campaigns that are unique to a country/region. These users are interested in seeing the unified view of customers across the two businesses (Real Estate and Retail) within the same country/region. Even though the probability of customers shopping in both the countries/regions is low, the business wants to ensure that the profiles are unified within a country/region and not across. There are no restrictions or limitations for viewing the data across businesses and countries/regions and they prefer a single Customer Insights - Data environment rather than setting up one environment for each country/region.
 
 #### Multi-brand example
 

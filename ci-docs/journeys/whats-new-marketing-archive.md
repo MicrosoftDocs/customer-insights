@@ -901,7 +901,7 @@ Public preview features include tailoring communications to improve customer eng
 #### New blogs and scenario docs
 
 Learn how to make the most of the new Dynamics 365 Customer Insights - Journeys features in our latest blogs and scenario docs:
-- [Create dynamic content for multiple countries and languages](real-time-marketing-dynamic-content-multiple-languages.md)
+- [Create dynamic content for multiple countries/regions and languages](real-time-marketing-dynamic-content-multiple-languages.md)
 - [Identify and resolve errors with real-time customer care journeys - Scenario docs](real-time-marketing-customer-care-journey.md)
 - [Deliver personalized customer experiences with Copilot in Dynamics 365 Customer Insights - Journeys and Customer Insights - Microsoft Dynamics 365 Blog](https://cloudblogs.microsoft.com/dynamics365/bdm/2023/03/14/deliver-personalized-customer-experiences-with-copilot-in-dynamics-365-marketing-and-customer-insights/)
 
@@ -971,7 +971,7 @@ Public preview features include AI-powered milestone attribution analysis, multi
     - Now, in addition to email and form interactions, you can also access comprehensive insights for text messages, push notifications, and custom channels in Customer Insights - Journeys contact and lead insights. Get a holistic view of how your audience engages with all your marketing channels, make data-driven decisions, and optimize your strategies for even better results.
 
 - **Clearly communicate dates and times in formats that match expectations of your audience**
-    - Different parts of the world use different formats for date and time, so it is critical to use the right format your audience expects to avoid confusion. We are expanding available time formats to add 12-hour formats in certain languages/countries where they officially follow 24-hour format but in practice also use 12-hour format (for example, English (UK)). We also added recently used formats at the top. Not only does this save time, it also makes it easy to pick a single consistent format across the message.
+    - Different parts of the world use different formats for date and time, so it is critical to use the right format your audience expects to avoid confusion. We are expanding available time formats to add 12-hour formats in certain languages/countries/regions where they officially follow 24-hour format but in practice also use 12-hour format (for example, English (UK)). We also added recently used formats at the top. Not only does this save time, it also makes it easy to pick a single consistent format across the message.
     - [Docs](real-time-marketing-predefined-dynamic-text.md#communicate-dates-and-times-in-various-formats)
 
 - **Create segments effortlessly using everyday language with the improved query assist experience**
