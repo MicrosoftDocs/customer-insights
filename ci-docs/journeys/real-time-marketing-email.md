@@ -49,6 +49,24 @@ Add feature-rich links to emails by directly linking to documents stored in the 
 > [!div class="mx-imgBorder"]
 > ![File select screenshot.](media/real-time-marketing-email-file-link.png "File select screenshot")
 
+
+### Working with Image Versions in Emails
+When you upload images to the asset library, each image is assigned a unique identifier along with a ts (timestamp) element. This timestamp indicates a specific version of the image. For example, an image URL might look like this:
+
+https://assets-eur.mkt.dynamics.com/xxxxxxxxxxx/digitalassets/images/ffa161c6-d5f5-ef11-be1f-7c1e52775df0?ts=638796358277348175
+
+When a new version of the image is uploaded, the image identifier remains the same, but the ts element changes.
+
+**Adding Images to Emails**
+
+By default a specific version of the image will be added since it contains the "?ts" element, if you always want the latest version of the email to show remove the "?ts" element in the HTML version of the email or use the 'insert from URL' option and exclude the ?ts= part as shown below: 
+
+https://assets-eur.mkt.dynamics.com/xxxxxxxxxxx/digitalassets/images/ffa161c6-d5f5-ef11-be1f-7c1e52775df0
+
+> [!NOTE]
+> It's important to note that removing the ?ts= element does not address [caching issues](https://learn.microsoft.com/en-us/dynamics365/customer-insights/journeys/upload-images-files#edit-assets).
+
+
 ### Link to surveys, events, marketing pages, Microsoft Teams events, or calendar items
 
 Using text, images, or buttons in the Customer Insights - Journeys email editor, you can link to surveys, events, or marketing pages. You can also create text, button, or image links that allow recipients to join a Microsoft Teams event or that create a new calendar item.
