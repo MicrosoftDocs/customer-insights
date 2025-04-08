@@ -1,7 +1,7 @@
 ---
-title: "Preview: Personalize messages, make journey decisions based on web interactions"
+title: Personalize messages, make journey decisions based on web interactions
 description: Learn how to personalize messages and make journey decisions based on web interactions in Dynamics 365 Customer Insights - Journeys.
-ms.date: 03/12/2025
+ms.date: 04/07/2025
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -15,12 +15,7 @@ ms.custom:
   - ai-seo-date:12/12/2024
 ---
 
-# Preview: Personalize messages, make journey decisions based on web interactions
-
-> [!IMPORTANT]
-> A preview feature is a feature that is not complete, but is made available before it’s officially in a release so customers can get early access and provide feedback. Preview features aren’t meant for production use and may have limited or restricted functionality.
-> 
-> Microsoft doesn't provide support for this preview feature. Microsoft Dynamics 365 Technical Support won’t be able to help you with issues or questions. Preview features aren’t meant for production use, especially to process personal data or other data that are subject to legal or regulatory compliance requirements.
+# Personalize messages, make journey decisions based on web interactions
 
 > [!NOTE]
 > This feature applies to known contacts or leads, such as contacts who have visited a webpage by selecting a tracking link in a Customer Insights - Journeys email.

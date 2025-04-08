@@ -1,7 +1,7 @@
 ---
-title: "Preview: Prefill values for forms and event registration"
+title: Prefill values for forms and event registration
 description: Prefill values for forms in Dynamics 365 Customer Insights - Journeys.
-ms.date: 09/03/2024
+ms.date: 04/07/2025
 ms.topic: article
 author: petrjantac
 ms.author: colinbirkett
@@ -11,12 +11,7 @@ search.audienceType:
   - enduser
 ---
 
-# Preview: Prefill values for forms and event registration
-
-> [!IMPORTANT]
-> A preview feature is a feature that is not complete but is made available before it’s officially in a release so customers can get early access and provide feedback. Preview features aren’t meant for production use and may have limited or restricted functionality.
->
-> Microsoft doesn't provide support for this preview feature. Microsoft Dynamics 365 Technical Support won’t be able to help you with issues or questions. Preview features aren’t meant for production use, especially to process personal data or other data that are subject to legal or regulatory compliance requirements.
+# Prefill values for forms and event registration
 
 The form prefill feature enhances customer experience by automatically filling in form fields with known values for existing customers. This feature is available for both *marketing* and *event registration* forms. However, preference center forms use a different method for prefilling.
 
