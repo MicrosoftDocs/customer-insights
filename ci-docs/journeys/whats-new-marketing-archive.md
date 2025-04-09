@@ -542,11 +542,6 @@ On September 1, 2023, Dynamics 365 Customer Insights - Journeys transitioned to 
     - [Release plan](/dynamics365/release-plan/2023wave2/marketing/dynamics365-marketing/easily-reference-copies-previously-sent-emails-interaction-timeline)
     - [Docs](view-previously-sent-emails.md)
 
-- **Add styles to brand profiles and create reusable themes**
-    - Maintaining a consistent and cohesive brand identity is key to building customer experiences and increasing brand recognition. However, replicating brand guidelines in your marketing emails, forms, and event registration pages is often time-consuming and requires back-and-forth styling and formatting. Leveraging Copilot, you can now quickly create branded themes for your content and easily apply them to emails, forms, and event registration pages.
-    - [Release plan](/dynamics365/release-plan/2023wave2/marketing/dynamics365-marketing/add-styles-brand-profiles-create-reusable-themes)
-    - [Docs](brand-profiles.md#define-theme)
-
 #### Monthly enhancements
 
 - **Remove email addresses from suppression list (preview)**
@@ -692,16 +687,6 @@ On September 1, 2023, Dynamics 365 Customer Insights - Journeys transitioned to 
     - [Docs](real-time-marketing-outbound-text-messaging-setup.md#sign-up-for-and-configure-a-vibes-account)
 
 #### Public preview
-
-- **Easily style your emails with Copilot**
-    - Jumpstart your email creation process with Copilot. Effortlessly style email elements including buttons, text, and more using AI to quickly interpret styles from a website and apply them to your email. Save valuable time so you can focus on crafting compelling content instead of picking colors and font sizes.
-    - [Release plan](/dynamics365/release-plan/2023wave1/marketing/dynamics365-marketing/easily-style-emails-copilot)
-    - [Docs](email-theme.md)
-
-- **Use Copilot to style your forms and event registration pages to match your website**
-    - Build forms and event registration pages that perfectly match your website and brand guidelines within minutes. Leverage Copilot assistance to interpret your website and instantly apply the same styles, saving time designing your marketing or event registration forms. Copilot copies label fonts, input fields styles, colors, and buttons from your website. You can then review and refine elements to perfectly match your brand guidelines.
-    - [Release plan](/dynamics365/release-plan/2023wave1/marketing/dynamics365-marketing/use-copilot-style-forms-event-registration-pages-match-website)
-    - [Docs](real-time-marketing-manage-forms.md#style-your-forms-using-theme)
 
 - **Automatically prevent duplicate emails to contacts that share the same email address**
     - Effective email management is crucial for maintaining strong customer relationships and ensuring your business's success. By enabling email deduplication, you can ensure that your message is sent only once, even when multiple contacts share the same email address. This helps keep your customers’ inboxes clutter-free, increases the chance that important messages avoiding the dreaded spam folder, and preserves your brand reputation.  
