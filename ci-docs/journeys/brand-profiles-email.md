@@ -42,3 +42,14 @@ Learn more about dynamic values: [Personalize content](real-time-marketing-perso
 > ![Add dynamic values.](media/brand-profiles-email-dynamic.png "Add dynamic values")
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
+
+## Updating Brand Profiles in Emails
+When you update a brand profile, changes are not automatically applied to your already published emails. To ensure that your published emails reflect the updated brand profile, follow these steps:
+
+1- Open the emails you want to update.
+
+2- Temporarily change the brand profile for another one.
+
+3- After selecting another brand profile, switch back to the original brand profile.
+
+4- Republish the changes to ensure that the updates are reflected.
