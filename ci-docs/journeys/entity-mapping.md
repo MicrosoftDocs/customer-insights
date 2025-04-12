@@ -97,7 +97,7 @@ The following steps detail the actions required to create the credit card applic
 
           ![Marketing form ID in the URL.](media/entity-mapping-form-id.png "Marketing form ID in the URL")
 
-    1. Place the **Form ID** into the condition step in the Worklflow.
+    1. Place the **Form ID** into the condition step in the Workflow.
 
           ![Form ID in conditional step.](media/entity-mapping-condition-step.png "Form ID in conditional step")
 
