@@ -1,7 +1,7 @@
 ---
 title: Manage Customer Insights - Journeys forms
 description: Discover how to manage and style forms in Dynamics 365 Customer Insights - Journeys. Edit, unpublish, and customize forms with ease. Learn more now!
-ms.date: 03/17/2024
+ms.date: 04/11/2025
 ms.topic: article
 author: petrjantac
 ms.author: colinbirkett
@@ -109,10 +109,14 @@ Form settings allow you to configure advanced properties of your form and define
 
 :::image type="content" source="media/real-time-marketing-form-settings.png" alt-text="Form settings." lightbox="media/real-time-marketing-form-settings.png":::
 
-- **Duplicate records**: Choose your strategy on [how to handle duplicate records](#how-to-handle-duplicate-records).
+- **Form template**: Select a template for your form. Selecting a template erases all content in your form.
+- **Prefill**: Enable [Form Prefill](real-time-marketing-form-prefill.md) for all fields in your form.
+- **Web tracking**: Enable [web tracking](interaction-journey-decision.md) of users submitting the form by adding a [tracking cookie](real-time-journeys-cookies.md) containing the form submission ID to their browser. If enabled, the form loader script is automatically enriched with the web tracking script, which produces the tracking cookie. Make sure you inform the users about cookie usage according to your privacy regulations.
+- **Audience**: Define [how to handle duplicate records](real-time-marketing-manage-forms.md#how-to-handle-duplicate-records) by selecting the [matching rule](real-time-marketing-matching-rules.md). Configure whether the form submission can create new records or update existing records. If *Update matched contact with submitted data* and *Create a new contact if there was no match to an existing one?* are set to **No**, the form submission doesn't update or create any record. The form submission can be linked to an existing record identified by the matching rule.
+- **Post submission action**: Set whether the *Thank you notification* is displayed or the user is redirected to a different page once the form is submitted. The *Thank you notification* is shown for a few seconds even if *Redirect after submission* is selected.
 - **Thank you notification**: This message appears if the user successfully submits the form.
 - **Error notification**: This message appears if an error occurs when the form is submitted.
-- **Redirect after submission**: If enabled, you can enter a URL to which the user will be redirected after the form submission.
+- **Double opt-in**: If enabled, the [double opt-in](real-time-marketing-double-opt-in.md) email can be sent after the form submission. To enable double opt-in for your form, a double opt-in-enabled compliance profile is required
 
 ## How to handle duplicate records
 
@@ -120,6 +124,7 @@ The default approach to duplicate records is different for contact and lead enti
 
 - **Contact (default: Update contact using email)**: If the user submits a form with an existing email address, the form submission updates the existing record. There's no new record created.
 - **Lead (default: Always create a new record)**: If the user submits a form with an existing email address, a new record with the same email address is created.
+- **Lead & Contact (default: Update contact using email and always create a new lead)**: If the user submits a form with an existing email address, the form submission updates the existing contact and creates a new lead.
 
 You can change the default matching rule using the **Duplicate records** drop-down in the **Forms** settings. You can also create a [custom matching rule](real-time-marketing-manage-forms.md#create-a-custom-matching-rule).
 
