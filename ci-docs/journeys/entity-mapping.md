@@ -1,15 +1,19 @@
 ---
 title: Map form data to entities with custom workflows in outbound marketing
-description: Learn how to map form data to entities with custom workflows in outbound marketing.
-ms.date: 08/18/2023
+description: Map form data to entities in outbound marketing workflows. Learn how to create custom workflows to process form submissions and update entities effectively.
+ms.date: 04/14/2025
 ms.topic: article
 author: alfergus
 ms.author: alfergus
-search.audienceType: 
+search.audienceType:
   - admin
   - customizer
   - enduser
-ms.custom: outbound-marketing
+ms.custom:
+  - outbound-marketing
+  - ai-gen-docs-bap
+  - ai-gen-description
+  - ai-seo-date:04/14/2025
 ---
 
 # Map form data to entities with custom workflows in outbound marketing
