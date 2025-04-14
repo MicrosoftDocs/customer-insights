@@ -73,7 +73,7 @@ To design a form in Dynamics 365 Customer Insights - Journeys that you can embed
 
     ![The form hosting tab.](media/marketing-form-hosting2.png "The form hosting tab")
 
-1. In the **Related marketing form pages** column, select **Add new form page** (select the the ellipsis button here to find this command if you don't see it). A quick-create flyout slides in. A _form page_ is a virtual page where you can make a few extra configuration settings for forms that will be embedded externally.
+1. In the **Related marketing form pages** column, select **Add new form page** (select the ellipsis button here to find this command if you don't see it). A quick-create flyout slides in. A _form page_ is a virtual page where you can make a few extra configuration settings for forms that will be embedded externally.
 
 1. Use the quick-create form to set up your form options. The settings here are the same as the settings for a [form element](content-blocks.md) placed on a marketing page.
 

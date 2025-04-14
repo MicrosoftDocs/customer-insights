@@ -110,7 +110,7 @@ We recommend that you review the results, particularly the quality of your [matc
 
 Go to **Data** > **Tables** to verify the output tables.
 
-The unified contact profile table, called *UnifiedContact*, appears in the **Profiles** section. The first successful unification run creates the the table. All subsequent runs expand it.
+The unified contact profile table, called *UnifiedContact*, appears in the **Profiles** section. The first successful unification run creates the table. All subsequent runs expand it.
 
 Key columns in the *UnifiedContact* table include:
 

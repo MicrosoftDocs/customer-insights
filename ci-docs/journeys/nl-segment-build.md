@@ -16,7 +16,7 @@ search.audienceType:
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=d681824c-8959-49b1-858b-ec7912303ef1]
 
 > [!IMPORTANT]
-> The the natural language feature for segments currently only supports English language queries.
+> The natural language feature for segments currently only supports English language queries.
 
 If your administrator has enabled the natural language feature, you can use Natural Language Query (NLQ) to build segments in Dynamics 365 Customer Insights - Journeys. Natural language input enables you to use common words and phrases to describe the people you want to include in dynamic and static segments without learning all the specifics of the Common Data Model (CDM) and best practices for building queries.
 

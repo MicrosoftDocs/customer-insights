@@ -98,7 +98,7 @@ To remove portal integration from an existing Customer Insights - Journeys insta
 You can choose to add (or re-add) a portal to a Customer Insights - Journeys instance at any time. When you do this, the following will occur:
 
 - All of your external marketing pages and external event website will continue to function.
-- If you initially installed Customer Insights - Journeys with portal integration disabled, then you should have a default [default subscription center](set-up-subscription-center.md#default-center) (which runs on the service fabric of your Customer Insights - Journeys instance). It will continue to be available even after you add the portal.
+- If you initially installed Customer Insights - Journeys with portal integration disabled, then you should have a [default subscription center](set-up-subscription-center.md#default-center) (which runs on the service fabric of your Customer Insights - Journeys instance). It will continue to be available even after you add the portal.
 - If you have any portal-based marketing page designs left over in your system from a previous portals integration, these will be reconfigured to use the new portal automatically.
 - As when setting up a new instance, the setup wizard will either claim an existing Dynamics 365 Portal license to work with Customer Insights - Journeys (if a free license is available on your tenant), or create a demo Power Apps Portal for you (which will expire in 30 days, after which you must start paying for it).
 
