@@ -29,11 +29,21 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 
 | App              | GA release      |
 |------------------|-----------------|
-| Customer Insights - Journeys       |  |
+| Customer Insights - Journeys       | <!--- insert CJO number --> |
 
 #### General availability
 
+- **TITLE** 
+	- Text
+	- [Release plan]() 
+	- [Docs]()  
+
 #### Public preview
+
+- **TITLE** 
+	- Text
+	- [Release plan]() 
+	- [Docs]()  
 
 #### New blogs and scenario docs
 
