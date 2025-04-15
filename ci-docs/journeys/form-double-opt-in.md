@@ -87,7 +87,7 @@ More information: [Email marketing overview](prepare-marketing-emails.md), [Set 
 12. You can use your newly created form on a marketing page or [embedded on an external website](embed-forms.md).
 
 > [!IMPORTANT]
-> If you use form double opt-in, contact information is not stored until _after_ the customer confirms the opt-in via email. This means that any action (such as a customer journey) that relies on contact information stops for that customer until the the customer opts in.
+> If you use form double opt-in, contact information is not stored until _after_ the customer confirms the opt-in via email. This means that any action (such as a customer journey) that relies on contact information stops for that customer until the customer opts in.
 
 > [!NOTE]
 > The link in confirmation email remains valid for 30 days. After that period, end users will not be able to confirm opt-in. 

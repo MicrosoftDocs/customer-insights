@@ -39,7 +39,7 @@ When enable UTM tracking, you'll see the default values for each UTM parameter. 
 
 ## Use UTM codes in a journey
 
-Imagine an abandoned cart scenario in which website visitors add items to their carts but leave your website without completing their purchases. By using UTM codes in your retargetting journey, you can reach out to the abandoned cart visitors and track the campaign (journey name), medium (channel), and content that results in customers returning to complete their purchases.
+Imagine an abandoned cart scenario in which website visitors add items to their carts but leave your website without completing their purchases. By using UTM codes in your retargeting journey, you can reach out to the abandoned cart visitors and track the campaign (journey name), medium (channel), and content that results in customers returning to complete their purchases.
 
 ### Here’s how you would use UTM codes in an abandoned cart journey
 

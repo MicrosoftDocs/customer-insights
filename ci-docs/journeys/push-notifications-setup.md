@@ -79,7 +79,7 @@ For Android applications, Customer Insights - Journeys uses the Firebase Cloud M
 >
 > Once you have the new file, navigate to the push notifications settings area of Customer Insights - Journeys. Open the push notification configuration. Here, you can change your FCM authentication mode from "API Key" to "Service Account JSON." Doing so allows you to upload the JSON file you created. Once saved, the authentication method is updated and push notifications continue sending successfully.
 >
-> For detailed instructions, visit [Transition Andriod push notifications to FCM tokens for authorization](push-notification-fcm-token-transition.md)
+> For detailed instructions, visit [Transition Android push notifications to FCM tokens for authorization](push-notification-fcm-token-transition.md)
 
 There are two FCM authentication modes: Service Account JSON and API key.
 

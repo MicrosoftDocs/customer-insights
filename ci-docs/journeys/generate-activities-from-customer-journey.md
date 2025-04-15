@@ -45,7 +45,7 @@ For this exercise, you'll set up a template to create task activities, and then 
 
     ![Select a customer journey template.](media/customer-journey-templates2.png "Select a customer journey template")
 
-1. Select the the **Audience** tile to set it up. The audience **Properties** pane will automatically appear to the right of the canvas. Configure the the audience tile to reference the segment you want to target.
+1. Select the **Audience** tile to set it up. The audience **Properties** pane will automatically appear to the right of the canvas. Configure the audience tile to reference the segment you want to target.
 
     ![Assign a segment to the segment tile.](media/journey-assign-segment2.png "Assign a segment to the segment tile")
 
