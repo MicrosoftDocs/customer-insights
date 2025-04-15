@@ -1794,14 +1794,6 @@ The update also includes improved email content blocks, the ability to manually 
     > [!div class="mx-imgBorder"]
     > ![Screenshot of conditional dynamic content.](media/conditional-content-screenshot.png "Screenshot of conditional dynamic content")
 
-- **Measure campaign effectiveness with a new channel analytics dashboard**
-    - To create effective campaigns, marketers need to continuously track the delivery of assets across numerous channels. They also need to review campaign engagement metrics so that they can make improvements where needed. With the new out-of-the-box aggregated channel analytics dashboard in Customer Insights - Journeys, you can track important delivery and engagement metrics at any level of aggregation—across all channels, journeys, and marketing assets. You can even zoom in on a particular channel or message. You can also learn from trends of important metrics over a specified time period to further improve your marketing efforts.
-    - [Release plan](/dynamics365-release-plan/2022wave1/marketing/dynamics365-marketing/measure-campaign-effectiveness-new-channel-analytics-dashboard)
-    - [Docs](real-time-marketing-channel-analytics.md)
-
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of Customer Insights - Journeys aggregate channel analytics.](media/whats-new-channel-analytics.png "Screenshot of Customer Insights - Journeys aggregate channel analytics")
-
 #### General availability enhancements
 
 - **Use outbound subscription centers in real-time journeys**

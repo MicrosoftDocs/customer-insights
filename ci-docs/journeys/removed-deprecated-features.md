@@ -26,6 +26,15 @@ This list is intended to help you consider these removals and deprecations for y
 
 ## Features removed or deprecated in May 2025
 
+### Learn how to create personalized experiences with marketing effectiveness analytics
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Reason for deprecation/removal** | |
+| **Replaced by another feature?**   | |
+| **Product areas affected**         | |
+| **Status**                         | Removed as of May 2025 |
+
 ### Style your emails, forms, and brand profiles with AI-assisted themes
 
 | &nbsp;  | &nbsp;  |
