@@ -1,8 +1,7 @@
 ---
 title: Check your work using previews and test sends
 description: Learn how to use in-app previews and test sends to inspect and test your email message design in Dynamics 365 Customer Insights - Journeys.
-ms.date: 04/03/2025
-
+ms.date: 04/16/2025
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -23,7 +22,7 @@ Your marketing email messages will probably be seen by many potential customers,
 > - [Subscription center links](set-up-subscription-center.md#test-sub-center) will open the subscription center page, but the page won't function.
 > - You can't test send [confirmation-request messages](double-opt-in.md).
 > - To test an email that contains placeholders that point to Dataverse tables, the user running the test must have [read permissions](role-permissions.md) for the tables.
-> - To ensure [QR codes](https://learn.microsoft.com/en-us/dynamics365/customer-insights/journeys/email-qr-code) display correctly across different email clients, we recommend testing them using  a journey instead of the standard email test send or preview. Journey uses a public link for the QR code image rather than embedding it with base64, which helps maintain consistent display quality across various email clients. 
+> - To ensure [QR codes](email-qr-code.md) display correctly across different email clients, we recommend testing them using a journey instead of the standard email test send or preview. Journey functionality uses a public link for the QR code image rather than embedding it with base64, which maintains consistent display quality across various email clients. 
 >
 > To test these features, create a simple customer journey that targets a very small segment (such as one that includes a single contact with your email address) and sends the message  you want to test.
 
