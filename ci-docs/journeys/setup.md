@@ -23,18 +23,18 @@ All of your Dataverse environments for the geo you selected in the Power Platfor
 
 ## Prerequisites and requirements
 
-To install Customer Insights, you must meet all the following requirements:
+To install Customer Insights, make sure you meet all the following requirements:
 
-- You must already have a Microsoft 365 tenant.
-- You must have Dynamics 365 Customer Insights, Dynamics 365 Marketing, or Dynamics 365 Customer Insights – Standalone license on your tenant.
-- You must sign into your tenant with a user account that has all the following:
+- Make sure you already have a Microsoft 365 tenant.
+- Ensure your tenant has a Dynamics 365 Customer Insights, Dynamics 365 Marketing, or Dynamics 365 Customer Insights – Standalone license.
+- Sign into your tenant with a user account that has all the following:
    - A security role (such [_Service support admin_](/power-platform/admin/use-service-admin-role-manage-tenant)) that allows you to modify the target Dynamics 365 environment. (If you're reinstalling Customer Insights on an environment where Customer Insights was previously installed, then _Service support admin_ users [_Dynamics 365 administrator_ or _Power Platform administrator_] must use the same user ID as was used for the initial install.
    - Permissions to register applications in Azure. See [Do I have permissions to register applications on Azure?](setup-troubleshooting.yml#register-apps-azure) for information about how to confirm this setting for your account.
    - A Dynamics 365 license with the _System Administrator_ security role assigned on your target Dynamics 365 environment. (The Customer Insights license agreement doesn't legally require the installing user to have this license, but a known technical issue currently makes it necessary.)
 - You must be located in a country/region where the product is supported. To read the latest list of countries/regions where you can use Customer Insights, download the [Microsoft Dynamics 365 International Availability](https://go.microsoft.com/fwlink/p/?linkid=875097) document (PDF).
 - You must disable the [Block unmanaged customizations](/power-platform/admin/settings-features#block-unmanaged-customizations) setting in your environment. To do so, go to [admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com) > **Environments** and select the three dots ("**...**") next to the environment name. Then go to **Settings** > **Product** > **Features** and set the toggle next to **Block unmanaged customizations** to **Off**. Learn more: [Block unmanaged customizations in Dataverse](/power-platform/alm/block-unmanaged-customizations)
 
-Before starting an install, close all other browser windows and tabs and clear your browser cache. If you run into trouble while installing, see the [Administration and setup FAQ](setup-troubleshooting.yml) for some possible solutions.
+Before starting the installation, close all other browser windows and tabs, and clear your browser cache. If you run into trouble while installing, see the [Administration and setup FAQ](setup-troubleshooting.yml) for some possible solutions.
 
 ## Install, uninstall, or update Customer Insights
 
@@ -42,9 +42,9 @@ The following sections detail how to install, uninstall, or apply updates to the
 
 ### Install
 
-Customer Insights - Journeys is installed as a **paid installation** or **trial** that includes the services and allows you to send messages, execute journeys, and use the other functionalities in the app. If you own paid licenses, you can install Customer Insights - Journeys or Customer Insights - Data on sandbox and production type environments. If you have an admin trial license, you can install on subscription-based trial environments.  
+Customer Insights - Journeys is installed as a **paid installation** or **trial** that includes the services and lets you send messages, execute journeys, and use the other functionalities in the app. If you own paid licenses, you can install Customer Insights - Journeys or Customer Insights - Data on sandbox and production environments. If you have an admin trial license, you can install on subscription-based trial environments.  
 
-If you **Uninstall** Customer Insights - Journeys paid or trial, the services are disconnected and the environment only contains the user experience solutions but doesn't have any of the services connected to send emails, process segments, or use other functionalities. If your environment is in this state, you see a banner at the top of the application indicating that the environment only has the user experience solutions installed but not the services. To make the environment functional, install the application.
+If you **Uninstall** Customer Insights - Journeys paid or trial, the services are disconnected, and the environment only has the user experience solutions without the services needed to send emails, process segments, or use other functionalities. If your environment is in this state, you see a banner at the top of the application indicating that the environment only has the user experience solutions installed but not the services. To make the environment functional, install the application.
 
 > [!NOTE]
 > As of June 30, 2024 there are no longer application installation limits for Dynamics 365 Customer Insights - Journeys (real-time only) or Dynamics 365 Customer Insights - Data. Outbound marketing solutions are still limited to the prior application installation limits. If you own a legacy Dynamics 365 Marketing license, you're allowed one outbound marketing solution installation per license purchased. If you own the current Dynamics 365 Customer Insights license, you can add outbound marketing up to four times per base license.
@@ -53,8 +53,8 @@ If you **Uninstall** Customer Insights - Journeys paid or trial, the services ar
 
 If you don't already have one, you must first create an environment in [Microsoft Power Platform admin center](/power-platform/admin/). To create an environment:
 
-1. Go to [admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com) and create an environment of the desired type (production, sandbox, or subscription-based trial).
-1. To install Dynamics 365 applications, you must activate the "Enable Dataverse" and "Enable D365 Apps" toggles for the environment to allow apps. 
+1. Go to [admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com) and create an environment of the desired type: production, sandbox, or subscription-based trial.
+1. Activate the "Enable Dataverse" and "Enable D365 Apps" toggles for the environment to allow apps. 
 
 Learn more: [Create and manage environments in the Power Platform admin center](/power-platform/admin/create-environment)
 
@@ -98,13 +98,13 @@ To clear the connection:
 
 Installations can fail for many reasons unrelated to and undetectable by the Dynamics 365 Customer Insights - Journeys application. When you request an installation, Microsoft decrements your application quota (in case you start multiple installations at a time) and requests the package installation from the platform. Once the platform tries to install the package, it can run into any number of issues in your specific environment including plugins that need to be disabled, dependencies in the Dataverse entity model that the journeys application relies on such as for leads or contacts, dependencies, security, or customizations.
 
-If your installation fails, select **Learn more** or **Diagnose** to get specific details about the reason for the failure. You see a **Retry** link where the **Install** link used to be. Before you **Retry**, you can do some checking on your environment to see if there's anything you need to do to prepare it to allow the solution installation.
+If your installation fails, select **Learn more** or **Diagnose** to get details about the failure. You see a **Retry** link where the **Install** link was. Before you **Retry**, you can do some checking on your environment to see if there's anything you need to do to prepare it to allow the solution installation.
 
 - Select **Learn More** to receive directions on the installation failure and steps you can take to resolve it. 
 - You must have a paid license on the tenant.
 - You must be the admin of the environment to install the application. 
 - You must disable any custom plug-ins before installing.
-- If users own records in Dataverse and have left the company, those records may be locked and the installation is unable to write to them, for example, the DataLake folder which analytics must access. You must update the ownership of these records to an active user. 
+- If users own records in Dataverse and have left the company, those records may be locked and the installation is unable to write to them, for example, the DataLake folder which analytics must access. Update the ownership of these records to an active user. 
 - Check your solutions using the solution checker to learn what failed. You may have customizations or plugins which need to be disabled. Learn more: [Troubleshoot issues with Solution Health Hub](troubleshoot-marketing-solution-health.md)
 - You can go to the solutions history view in the Maker portal to see what failed and what actions you can take to prepare your environment for a successful install. Learn more: [View the history of a solution](/power-apps/maker/data-platform/solution-history/)
 
@@ -116,11 +116,11 @@ Find detailed guidance for [uninstalling Dynamics 365 Customer Insights - Journe
 
 ### Update
 
-Dynamics 365 Customer Insights - Journeys releases updates on a monthly basis with new features and fixes. When there's a new release available, you can see it in **Settings** > **Versions**. Select **Manage+Update** to launch the installation management page. Select **Check version** to see if any updates are available. Select **Update packages** if updates are available.
+Dynamics 365 Customer Insights - Journeys releases updates monthly with new features and fixes. When there's a new release available, you can see it in **Settings** > **Versions**. Select **Manage+Update** to launch the installation management page. Select **Check version** to see if any updates are available. Select **Update packages** if updates are available.
 
 ## Maintain or update your installation
 
-In addition to helping you install Customer Insights for the first time, you can access the installation management area to modify, maintain, or update your installation. You can do all of the following:
+You can use the installation management area to modify, maintain, or update your installation after installing Customer Insights for the first time. You can do the following:
 
 - Check for and apply [updates](apply-updates.md)
 - Fix installation issues
@@ -134,6 +134,6 @@ In addition to helping you install Customer Insights for the first time, you can
 
 ### Collecting feedback data
 
-As a way to refine and improve the experience, Microsoft may collect feedback data from users within the app. Administrators can disable survey feedback with a PowerShell command by turning the “disableSurveyFeedback” flag to **true**. See [list of tenant settings](/power-platform/admin/list-tenantsettings) for more detail.
+To refine and improve the experience, Microsoft might collect feedback data from users within the app. Admins can disable survey feedback using a PowerShell command by setting the **disableSurveyFeedback** flag to **true**. See the [list of tenant settings](/power-platform/admin/list-tenantsettings) for more details.
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
