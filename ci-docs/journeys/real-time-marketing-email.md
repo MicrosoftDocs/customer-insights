@@ -1,7 +1,7 @@
 ---
 title: Create Customer Insights - Journeys emails
 description: Learn how to create emails in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/22/2023
+ms.date: 04/16/2025
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -48,6 +48,23 @@ Add feature-rich links to emails by directly linking to documents stored in the 
 
 > [!div class="mx-imgBorder"]
 > ![File select screenshot.](media/real-time-marketing-email-file-link.png "File select screenshot")
+
+### Working with image versions in emails
+
+When you upload images to the asset library, each image is assigned a unique identifier along with a `ts` (timestamp) element. This timestamp indicates a specific version of the image. For example, an image URL might look like this:
+
+`https://assets-eur.mkt.dynamics.com/xxxxxxxxxxx/digitalassets/images/ffa161c6-d5f5-ef11-be1f-7c1e52775df0?ts=638796358277348175`
+
+When a new version of the image is uploaded, the image identifier remains the same, but the `ts` element changes.
+
+**Adding images to emails**
+
+By default, a specific version of the image is added since it contains a unique `?ts` element. If you always want the latest version of the image to show, remove the `?ts` element in the HTML version of the email or use the **Insert from URL** option and exclude the `?ts=` part as shown below: 
+
+`https://assets-eur.mkt.dynamics.com/xxxxxxxxxxx/digitalassets/images/ffa161c6-d5f5-ef11-be1f-7c1e52775df0`
+
+> [!NOTE]
+> Removing the `?ts=` element doesn't address [caching issues](upload-images-files.md#edit-assets).
 
 ### Link to surveys, events, marketing pages, Microsoft Teams events, or calendar items
 
