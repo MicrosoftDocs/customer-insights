@@ -1,7 +1,7 @@
 ---
 title: "Create measures with measure builder"
 description: "Build measures from scratch to analyze key metrics about your business."
-ms.date: 04/03/2025
+ms.date: 04/16/2025
 ms.topic: how-to
 author: JimsonChalissery
 ms.author: jimsonc
@@ -85,7 +85,7 @@ The following table provides key points about the different measure types. The d
 
    1. Select **Edit dimensions** to add data attributes you want to group the measure values by. For example, city or gender.
       > [!TIP]
-      > If you selected **Customer** as the **Measure type** the *CustomerId* attribute is already added. If you remove the attribute, **Measure type** toggles to **Business**.
+      > If you selected **Customer** as the **Measure type**, the *CustomerId* attribute is already added. If you remove the attribute, **Measure type** toggles to **Business**.
    1. Select **Done**.
 
 1. If there are values in your data that must be replaced with an integer, select **Rules**. Configure the rule and make sure that you choose only whole numbers as replacements. For example, replace *null* with *0*.
