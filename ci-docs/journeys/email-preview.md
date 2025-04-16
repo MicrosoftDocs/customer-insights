@@ -1,8 +1,7 @@
 ---
 title: Check your work using previews and test sends
 description: Learn how to use in-app previews and test sends to inspect and test your email message design in Dynamics 365 Customer Insights - Journeys.
-ms.date: 04/03/2025
-
+ms.date: 04/16/2025
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -21,9 +20,8 @@ Your marketing email messages will probably be seen by many potential customers,
 >
 > - [For-each loops](dynamic-email-content.md#for-each) don't render.
 > - [Subscription center links](set-up-subscription-center.md#test-sub-center) will open the subscription center page, but the page won't function.
-> - You can't test send [confirmation-request messages](double-opt-in.md).
+> - You can test send the [double opt-in email](real-time-marketing-double-opt-in.md#double-opt-in-confirmation-email) layout but you can't test the actual logic behind it. This is because the logic depends on the compliance profile assigned to each audience and varies depending on how dynamic placeholders are resolved.
 > - To test an email that contains placeholders that point to Dataverse tables, the user running the test must have [read permissions](role-permissions.md) for the tables.
->
 > To test these features, create a simple customer journey that targets a very small segment (such as one that includes a single contact with your email address) and sends the message  you want to test.
 
 ## Preview your message in the designer
