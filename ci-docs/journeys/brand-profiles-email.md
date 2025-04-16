@@ -1,7 +1,7 @@
 ---
 title: Use brand profiles in emails
 description: Learn how to use brand profiles in email in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/17/2023
+ms.date: 04/16/2025
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -40,5 +40,14 @@ Learn more about dynamic values: [Personalize content](real-time-marketing-perso
 
 > [!div class="mx-imgBorder"]
 > ![Add dynamic values.](media/brand-profiles-email-dynamic.png "Add dynamic values")
+
+## Updating brand profiles in emails
+
+When you update a brand profile, changes aren't automatically applied to your already-published emails. To ensure that your published emails reflect the updated brand profile, follow these steps:
+
+1. Open the emails you want to update.
+1. Temporarily change the current brand profile to another brand profile.
+1. After selecting another brand profile, switch back to the original brand profile.
+1. Republish the changes to ensure that the updates are reflected.
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
