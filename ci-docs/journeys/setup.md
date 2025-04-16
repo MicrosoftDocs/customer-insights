@@ -32,7 +32,7 @@ To install Customer Insights, ensure you meet all the following requirements:
    - Permissions to register applications in Azure. See [Do I have permissions to register applications on Azure?](setup-troubleshooting.yml#register-apps-azure) for information about how to confirm this setting for your account.
    - A Dynamics 365 license with the _System Administrator_ security role assigned on your target Dynamics 365 environment. (The Customer Insights license agreement doesn't legally require the installing user to have this license, but a known technical issue currently makes it necessary.)
 - You must be located in a country/region where the product is supported. To read the latest list of countries/regions where you can use Customer Insights, download the [Microsoft Dynamics 365 International Availability](https://go.microsoft.com/fwlink/p/?linkid=875097) document (PDF).
-- You must disable the [Block unmanaged customizations](/power-platform/admin/settings-features#block-unmanaged-customizations) setting in your environment. To do so, go to [admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com) > **Environments** and select the three dots ("**...**") next to the environment name. Then go to **Settings** > **Product** > **Features** and set the toggle next to **Block unmanaged customizations** to **Off**. Learn more: [Block unmanaged customizations in Dataverse](/power-platform/alm/block-unmanaged-customizations)
+- You must disable the [Block unmanaged customizations](/power-platform/admin/settings-features#block-unmanaged-customizations) setting in your environment. To do so, go to [admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com) > **Environments** and select the three dots ("**...**") next to the environment name. Then go to **Settings** > **Product** > **Features**, and set the toggle next to **Block unmanaged customizations** to **Off**. Learn more: [Block unmanaged customizations in Dataverse](/power-platform/alm/block-unmanaged-customizations)
 
 Before starting the installation, close all other browser windows and tabs, and clear your browser cache. If you run into trouble while installing, see the [Administration and setup FAQ](setup-troubleshooting.yml) for some possible solutions.
 
@@ -61,9 +61,9 @@ Learn more: [Create and manage environments in the Power Platform admin center](
 #### Install Customer Insights - Journeys and Customer Insights - Data
 
 1. On the [admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com) page, find **Resources** in the left-hand site map and select **Dynamics 365 apps**.
-1. Select the geo in the upper right corner of the Power Platform Admin Center that matches the environments you want to target for the installation. Find either **Dynamics 365 Customer Insights** or **Dynamics 365 Marketing** in the list and select the three dots ("**...**") next to the app name, then select **Manage**.
+1. Select the geo in the upper-right corner of the Power Platform Admin Center that matches the target environments for installation. Find either **Dynamics 365 Customer Insights** or **Dynamics 365 Marketing** in the list and select the three dots ("**...**") next to the app name, then select **Manage**.
 1. In the installation management area, you see your available environments listed and can choose where you want to install Customer Insights - Journeys or Customer Insights - Data. To install either application, select **Install**. If you don't own any paid licenses and want to learn how to buy, select **Buy now**. If you have trial licenses, use the **Trial** tab to install on a subscription-based trial environment or manage a viral trial.
-1. If the installation fails, select **Diagnose** to learn more about the failure and check if you need to do anything differently. If there's no actionable reason for failure, select **Retry**.
+1. If the installation fails, select **Diagnose** to learn more about the failure and check if you need to do anything differently. If no actionable reason exists for the failure, select **Retry**.
 
 :::image type="content" source="media/new-installation.png" alt-text="Installation management area screenshot." lightbox="media/new-installation.png":::
 
@@ -116,11 +116,11 @@ Find detailed guidance for [uninstalling Dynamics 365 Customer Insights - Journe
 
 ### Update
 
-Dynamics 365 Customer Insights - Journeys releases updates monthly with new features and fixes. When there's a new release available, you can see it in **Settings** > **Versions**. Select **Manage+Update** to launch the installation management page. Select **Check version** to see if any updates are available. Select **Update packages** if updates are available.
+Dynamics 365 Customer Insights - Journeys releases updates every month with new features and fixes. When there's a new release available, you can see it in **Settings** > **Versions**. Select **Manage+Update** to launch the installation management page. Select **Check version** to see if any updates are available. Select **Update packages** if updates are available.
 
 ## Maintain or update your installation
 
-You can use the installation management area to modify, maintain, or update your installation after installing Customer Insights for the first time. You can do the following:
+Use the installation management area to modify, maintain, or update your installation after installing Customer Insights for the first time. You can:
 
 - Check for and apply [updates](apply-updates.md)
 - Fix installation issues
@@ -134,6 +134,6 @@ You can use the installation management area to modify, maintain, or update your
 
 ### Collecting feedback data
 
-To refine and improve the experience, Microsoft might collect feedback data from users within the app. Admins can disable survey feedback by using a PowerShell command to set the **disableSurveyFeedback** flag to **true**. For more details, see the [list of tenant settings](/power-platform/admin/list-tenantsettings).
+To refine and improve the experience, Microsoft might collect feedback data from users within the app. Admins can disable survey feedback by using a PowerShell command to set the **disableSurveyFeedback** flag to **true**. For more information, see the [list of tenant settings](/power-platform/admin/list-tenantsettings).
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
