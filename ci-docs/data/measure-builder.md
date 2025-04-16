@@ -29,10 +29,10 @@ The following table provides key points about the different measure types. The d
 
 |Key points  |Customer attribute  |Customer measure  |Customer measure table - For use in Journeys and other Dynamics 365 apps |Business measure
 |---------|---------|---------|---------|---------|
-|Definition |A single value calculated per unique profile |A single value or multiple values calculated per unique profile and split by one or more dimensions |A single value or multiple values calculated per unique profile |A value calculated without a direct link to a unique profile, optionally split by one or more dimensions |
+|Definition |A single value calculated per unique profile. |A single value or multiple values calculated per unique profile and split by one or more dimensions. |A single value or multiple values calculated per unique profile. |A value calculated without a direct link to a unique profile, optionally split by one or more dimensions. |
 |Dimensions | CustomerId only |CustomerId and more |CustomerId only |0 or more except CustomerId |
-|# of calculations / attributes in the measure |Single calculation / attribute |Single or multiple calculations / attributes with CustomerId + at least 1 other dimension |Single or multiple calculations / attributes with CustomerId dimension |Single calculation / attribute with no dimension *or* single or multiple calculations / attributes with at least 1 dimension that isn't the CustomerId |
-|Table |All customer attributes are stored in a table called *Customer_Measure* where the first column is CustomerId and 1 column for each Customer attribute added |Stored in its own dedicated table |Stored in its own dedicated table |Stored in its own dedicated table |
+|# of calculations/attributes in the measure |A single calculation/attribute. |A single or multiple calculations/attributes with CustomerId + at least 1 other dimension. |A single or multiple calculations/attributes with CustomerId dimension. |A single calculation/attribute with no dimension *or* a single or multiple calculations/attributes with at least 1 dimension that isn't the CustomerId. |
+|Table |All customer attributes are stored in a table called *Customer_Measure* where the first column is CustomerId and 1 column for each added Customer attribute. |Stored in its own dedicated table |Stored in its own dedicated table |Stored in its own dedicated table |
 |Displays on [**Customer** card](customer-profiles.md) |Yes |No |No |No |
 |Available as [elastic table in Dataverse](tables.md#customer-insights---data-tables-in-dataverse) |Yes (a different format than the [*Customer_Measure*](tables.md#customermeasure) table and not readily usable in other Dynamics 365 apps) |No |Yes |No |
 |Refresh |Refresh of a customer attribute results in refresh of all the customer attributes in the instance |Can be refreshed on its own |Can be refreshed on its own |Can be refreshed on its own |
@@ -85,7 +85,7 @@ The following table provides key points about the different measure types. The d
 
    1. Select **Edit dimensions** to add data attributes you want to group the measure values by. For example, city or gender.
       > [!TIP]
-      > If you selected **Customer level** as the **Measure type** the *CustomerId* attribute is already added. If you remove the attribute, **Measure type** toggles to **Business level**.
+      > If you selected **Customer** as the **Measure type** the *CustomerId* attribute is already added. If you remove the attribute, **Measure type** toggles to **Business**.
    1. Select **Done**.
 
 1. If there are values in your data that must be replaced with an integer, select **Rules**. Configure the rule and make sure that you choose only whole numbers as replacements. For example, replace *null* with *0*.
