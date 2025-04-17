@@ -1,7 +1,7 @@
 ---
 title: Have a dialog with data using Copilot in Customer Insights - Data
 description: Learn how to get more insights from your data by asking natural-language questions with Copilot in Dynamics 365 Customer Insights - Data. 
-ms.date: 11/12/2024
+ms.date: 04/17/2025
 ms.topic: how-to
 author: radsay01
 ms.author: rsayyaparaju
@@ -27,6 +27,11 @@ Responses are generated in accordance with [Microsoft Responsible AI Standards.]
 - You have Admin or Contributor permissions.
 - [Enable Copilot features powered by Azure OpenAI](copilot-global-consent.md) setting turned **On**. Default is **On**.
 - Environment is in a [supported geography and uses a supported language](https://releaseplans.microsoft.com/availability-reports/?report=copilotfeaturereport).
+
+## Limitations
+
+- Dialog with data is only compatible with data sources ingested in a non-Delta format.
+- Dialog with data works only with data residing in the native Dataverse environment. To use this feature, don't ingest data from other Dataverse environments.
 
 ## Discover insights from your data
 
