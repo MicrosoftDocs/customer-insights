@@ -30,7 +30,7 @@ Export segments of unified customer profiles to a Google Ads audience list and u
 - Match in Google Ads can take up to 48 hours.
 
 > [!NOTE]
-> [Google policy](https://ads-developers.googleblog.com/2025/02/update-to-customer-match-membership.html) states that customer lists in Google Ads will be deleted if not refreshed in 540 days. Deletion of unrefreshed customer lists can impact your Google Ad campaigns and advertising strategies. We recommend you implement a process to refresh these customer lists periodically.
+> [Google policy](https://ads-developers.googleblog.com/2025/02/update-to-customer-match-membership.html) states that customer lists in Google Ads will be deleted if not refreshed in 540 days. Deletion of unrefreshed customer lists can impact your Google Ad campaigns and advertising strategies. We recommend you rerun the export periodically to refresh the customer lists.
 
 ## Set up connection to Google Ads
 
