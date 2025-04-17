@@ -935,13 +935,6 @@ Public preview features include AI-powered milestone attribution analysis, multi
     - [Release plan](/dynamics365/release-plan/2023wave1/marketing/dynamics365-marketing/easily-create-engaging-content-using-ai-powered-content-ideas)
     - [Docs](content-ideas.md)
 
-- **Understand how marketing activities contribute to defined milestones using AI**
-    - Dynamics 365 Customer Insights - Journeys enables you to create highly personalized experiences to nudge customers toward important milestones in the buyer's journey such as completing a purchase, becoming a loyalty program member, or becoming a qualified sales opportunity. Now, you can define such milestones and measure them over time. You can then optimize your marketing mix using AI or rules-based attribution which quantifies the contribution of your journeys, channels, and messages in driving customers to complete those milestones.
-    > [!NOTE]
-    > This feature will be gradually rolled out during the month and may have delayed availability compared to the other May releases.
-    - [Release plan](/dynamics365/release-plan/2023wave1/marketing/dynamics365-marketing/understand-how-marketing-activities-contribute-defined-milestones)
-    - [Docs](real-time-marketing-effectiveness.md)
-
 - **Match your business needs with multi-brand consent and customizable preference centers**
     - In Customer Insights - Journeys, marketers can now fully customize out-of-the-box preference centers to better represent their brands and meet their business needs. Create separate preference centers per brand, allowing you to independently capture and manage consent for multiple lines of business. Keep your customers engaged by giving them control over the channels they want to connect to while ensuring that you capture the consent you need to satisfy legal and regulatory requirements.
     - [Release plan](/dynamics365/release-plan/2023wave1/marketing/dynamics365-marketing/match-business-needs-more-granular-customizable-consent-preference-centers)
@@ -1793,14 +1786,6 @@ The update also includes improved email content blocks, the ability to manually 
 
     > [!div class="mx-imgBorder"]
     > ![Screenshot of conditional dynamic content.](media/conditional-content-screenshot.png "Screenshot of conditional dynamic content")
-
-- **Measure campaign effectiveness with a new channel analytics dashboard**
-    - To create effective campaigns, marketers need to continuously track the delivery of assets across numerous channels. They also need to review campaign engagement metrics so that they can make improvements where needed. With the new out-of-the-box aggregated channel analytics dashboard in Customer Insights - Journeys, you can track important delivery and engagement metrics at any level of aggregation—across all channels, journeys, and marketing assets. You can even zoom in on a particular channel or message. You can also learn from trends of important metrics over a specified time period to further improve your marketing efforts.
-    - [Release plan](/dynamics365-release-plan/2022wave1/marketing/dynamics365-marketing/measure-campaign-effectiveness-new-channel-analytics-dashboard)
-    - [Docs](real-time-marketing-channel-analytics.md)
-
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of Customer Insights - Journeys aggregate channel analytics.](media/whats-new-channel-analytics.png "Screenshot of Customer Insights - Journeys aggregate channel analytics")
 
 #### General availability enhancements
 

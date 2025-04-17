@@ -1,21 +1,25 @@
 ---
 title: Create Customer Insights - Journeys emails
-description: Learn how to create emails in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/22/2023
+description: Discover how to use the Customer Insights - Journeys email editor to create dynamic, personalized emails with advanced features like AI image suggestions.
+ms.date: 04/16/2025
 ms.topic: article
 author: alfergus
 ms.author: alfergus
-search.audienceType: 
+search.audienceType:
   - admin
   - customizer
   - enduser
+ms.custom:
+  - ai-gen-docs-bap
+  - ai-gen-description
+  - ai-seo-date:04/16/2025
 ---
 
 # Create Customer Insights - Journeys emails
 
-The Customer Insights - Journeys email editor shares much of its look and feel with the [outbound marketing email editor](prepare-marketing-emails.md). As with the outbound marketing email editor, the Customer Insights - Journeys editor allows you to quickly create personalized emails to capture your customers' attention.
+The Customer Insights - Journeys email editor shares its look and feel with the [outbound marketing email editor](prepare-marketing-emails.md). Like the outbound marketing email editor, the Customer Insights - Journeys editor lets you create personalized emails to capture your customers' attention.
 
-Learn more about creating email in Dynamics 365 Customer Insights - Journeys: [Create a new email and design its content](email-design.md)
+Learn more about creating email in Dynamics 365 Customer Insights - Journeys in [Create a new email and design its content](email-design.md).
 
 ## Features unique to the Customer Insights - Journeys email editor
 
@@ -27,12 +31,12 @@ The Customer Insights - Journeys email editor has a new assist edit control to b
 
 #### Add personalized data to a Customer Insights - Journeys email
 
-1. Create a placeholder by adding a text field and then selecting the **Personalization** button ![Personalization button.](media/real-time-marketing-personalization.png "Personalization button") in the toolbar.
-1. Select **Select a data field** to choose a data source. Your data source can be based on an **Audience**, a **Trigger**, or **Compliance**.
+1. Add a text field to create a placeholder, then select the **Personalization** button ![Personalization button.](media/real-time-marketing-personalization.png "Personalization button") in the toolbar.
+1. Select **Select a data field** to choose a data source. The data source can be based on an **Audience**, a **Trigger**, or **Compliance**.
 1. After choosing the data source, you can search for the specific attribute or trigger you're looking for.
-1. Add a **Label** to quickly identify your dynamic text in the message content.
-1. Personalized dynamic text is highlighted in the content designer.
-1. You can see and edit all your dynamic text in the **Personalize** tab in the **Toolbox**.
+1. Add a **Label** to quickly identify the dynamic text in the message content.
+1. The content designer highlights personalized dynamic text.
+1. See and edit all dynamic text in the **Personalize** tab in the **Toolbox**.
 
 > [!div class="mx-imgBorder"]
 > ![Email editor screenshot.](media/real-time-marketing-email-editor.png "Email editor screenshot")
@@ -41,13 +45,30 @@ The Customer Insights - Journeys email editor has a new assist edit control to b
 
 Add feature-rich links to emails by directly linking to documents stored in the asset library. To link to a document or video:
 
-1. Add some text, a button, or an image to a Customer Insights - Journeys email.
-1. In the button or image editing pane (or in the text link dialog), select the **Link to** dropdown then select **File download**.
-1. To link to a document in the image library, select **Choose a file** then select **Browse library** and choose your file.
+1. Add text, a button, or an image to a Customer Insights - Journeys email.
+1. In the button or image editing pane (or in the text link dialog), select the **Link to** dropdown, and then select **File download**.
+1. To link to a document in the image library, select **Choose a file**, then select **Browse library**, and choose the file.
 1. Alternatively, you can upload a new file to link to by selecting **Upload to library**.
 
 > [!div class="mx-imgBorder"]
 > ![File select screenshot.](media/real-time-marketing-email-file-link.png "File select screenshot")
+
+### Working with image versions in emails
+
+When you upload images to the asset library, each image is assigned a unique identifier along with a `ts` (timestamp) element. This timestamp indicates a specific version of the image. For example, an image URL might look like this:
+
+`https://assets-eur.mkt.dynamics.com/xxxxxxxxxxx/digitalassets/images/ffa161c6-d5f5-ef11-be1f-7c1e52775df0?ts=638796358277348175`
+
+When a new version of the image is uploaded, the image identifier remains the same, but the `ts` element changes.
+
+**Adding images to emails**
+
+By default, the email adds a specific version of the image because it contains a unique `?ts` element. If you always want the latest version of the image to show, remove the `?ts` element in the HTML version of the email or use the **Insert from URL** option and exclude the `?ts=` part as shown below:
+
+`https://assets-eur.mkt.dynamics.com/xxxxxxxxxxx/digitalassets/images/ffa161c6-d5f5-ef11-be1f-7c1e52775df0`
+
+> [!NOTE]
+> Removing the `?ts=` element doesn't address [caching issues](upload-images-files.md#edit-assets).
 
 ### Link to surveys, events, marketing pages, Microsoft Teams events, or calendar items
 
@@ -70,26 +91,26 @@ Within the compliance section of the email settings, you need to choose a compli
 
 ## Preview and test send your email
 
-Before sending emails to a large number of recipients, it's important to test the email with sample audience members to ensure that the content, layout, and design are displayed correctly. This can be easily accomplished using the **Preview and Test** tab in the email designer tool. In the **Preview and Test** tab, you can select a sample audience member's (for example, a contact or lead) record trigger data or other personalization data and preview the exact content that will be delivered to that recipient. The preview includes dynamically generated content based on the selected audience member data, providing a realistic preview of what the recipient will see.
+Before sending emails to many recipients, test the email with sample audience members to ensure the content, layout, and design display correctly. This can be easily accomplished using the **Preview and Test** tab in the email designer tool. In the **Preview and Test** tab, you can select a sample audience member's (for example, a contact or lead) record trigger data or other personalization data and preview the exact content that will be delivered to that recipient. The preview includes dynamically generated content based on the selected audience member data, providing a realistic preview of what the recipient will see.
 
-To see preview for a specific audience member:
+To preview content for a specific audience member:
 
 1. In the email designer, go to the **Preview and test** tab and select **Edit sample data**.
 1. In the **Audience data** side pane, select a sample audience member.
 1. To verify that default values for all dynamic text are set up correctly, don't select any audience member record. The preview will show the default values.
 
 > [!div class="mx-imgBorder"]
-> ![better preview and test](media/real-time-marketing-better-preview-and-test.png "better preview and test")
+> ![Screenshot of the preview and test tab in the email designer tool.](media/real-time-marketing-better-preview-and-test.png "Screenshot of the preview and test tab in the email designer tool.")
 
-To see a preview of personalized content sourced from trigger, follow the steps above and select or enter the data for the trigger. Below is an example where the email will be sent when the business trigger “Incident is created” is raised and will include the incident number and title (data that comes from the trigger).
+To preview personalized content sourced from a trigger, follow the steps above and select or enter the trigger data. Below is an example where the email will be sent when the business trigger “Incident is created” is raised and will include the incident number and title (data that comes from the trigger).
 
 > [!div class="mx-imgBorder"]
-> ![Screenshot of incident creation](media/real-time-marketing-incident-creation.png "Screenshot of incident creation")
+> ![Screenshot of an email preview showing incident creation details, including the incident number and title.](media/real-time-marketing-incident-creation.png "Screenshot of an email preview showing incident creation details, including the incident number and title.")
 
 > [!NOTE]
-> For dynamic text that is not bound to the audience, you can enter sample values to see how the content will look. You can also override the actual data that comes from the selected audience record or trigger. To override the data, select **Enter manually** for the chosen item and provide your own value. This is a quick and easy way to check for edge cases.
+> For dynamic text that isn't bound to the audience, you can enter sample values to see how the content will look. You can also override the actual data that comes from the selected audience record or trigger. To override the data, select **Enter manually** for the chosen item and provide your own value. This is a quick and easy way to check for edge cases.
 
-You can send the preview email to yourself or another test email address to verify how the received email renders on different devices and different email apps. Preview emails automatically include “[Test]” in the subject header.
+Send the preview email to yourself or another test email address to verify how it renders on different devices and email apps. Preview emails automatically include “[Test]” in the subject header.
 
 ### See also
 
