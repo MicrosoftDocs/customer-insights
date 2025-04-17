@@ -18,7 +18,7 @@ search.audienceType:
 
 ## Comparison of outbound marketing and real-time journeys insights and reports
 
-Outbound marketing and real-time journeys both have in-app reporting capabilities, including KPIs for email sending at a contact, email, or journey level. Real-time journeys additionally provides an aggregate set of dashboards for journey and channel analytics, as well as individual SMS, push notification, custom channel, and form insights. Real-time journeys also includes a marketing effectiveness dashboard, which provides valuable information about marketing assets and their campaign impacts. Learn more: [Access and interpret analytics](real-time-marketing-analytics.md).
+Outbound marketing and real-time journeys both have in-app reporting capabilities, including KPIs for email sending at a contact, email, or journey level. Real-time journeys additionally provides an aggregate set of dashboards for journey and channel analytics, as well as individual SMS, push notification, custom channel, and form insights. You can find more information around the Real-time journeys analytics capabilities in the [Analytics overview](analytics-overview.md). Learn more: [Access and interpret analytics](real-time-marketing-analytics.md).
 
 Additionally, advanced bot protection for real-time journeys safeguards your business processes, ensuring that the data you collect is accurate and represents real human interactions. Learn more: [Improve reliability of insights with advanced bot protection](bot-protection.md).
 
