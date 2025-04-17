@@ -62,7 +62,7 @@ Legend:
 
 1. **App selector**: Open this menu to move between apps, for example, to move between Customer Insights - Journeys and the Dynamics 365&mdash;custom app.
 1. **Collapse/expand button**: Select this to collapse the navigator to allow more room for the main part of the page. If the navigator is already collapsed, select this button to expand it again.
-1. **Recent records**: Expand this entry to view a list of records you were recently using. Select an record here to open it. Select the push-pin icon next to a record listed here to added to your favorites (pinned records).
+1. **Recent records**: Expand this entry to view a list of records you were recently using. Select a record here to open it. Select the push-pin icon next to a record listed here to added to your favorites (pinned records).
 1. **Favorite records**: Expand this entry to view and open your favorite (pinned) records. Use the **Recent records** list to add records here. Select the remove-pin icon next to a record listed here to remove it from this list.
 1. **Entity navigator**: This area lists each entity and dashboard available for the current work area. Select any entry here to open the named dashboard or list-view for that entity.
 1. **Work-area selector**: Open this menu to move to another work area. The current work area is named here.

@@ -24,7 +24,7 @@ For general information about creating and working with solutions, see the links
 
 ## Example procedure part 1: Create a custom solution
 
-In this exercise, you'll create a new solution and add a simple customization to it. This will provide a simple custom solution that you can use to export and and transfer to a new environment later in this topic. If you already have a custom solution to work with, then you can skip ahead to [Part 2](#export-solution).
+In this exercise, you'll create a new solution and add a simple customization to it. This will provide a simple custom solution that you can use to export and transfer to a new environment later in this topic. If you already have a custom solution to work with, then you can skip ahead to [Part 2](#export-solution).
 
 To create a custom solution:
 
