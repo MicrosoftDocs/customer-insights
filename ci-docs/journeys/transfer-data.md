@@ -4,7 +4,7 @@ description: Learn how to transfer data and configurations between Dynamics 365 
 ms.date: 04/16/2025
 ms.topic: article
 author: alfergus
-ms.author: alfergus
+ms.author: colinbirkett
 search.audienceType:
   - admin
   - customizer
@@ -19,8 +19,8 @@ ms.custom:
 
 You can replicate Dynamics 365 Customer Insights - Journeys configurations and data across environments using the standard tools provided for Dynamics 365. Common scenarios where this is useful include:
 
-- Move validated journeys, emails, and other content from a sandbox to a production environment
-- Set up a demo with sample data on a trial or sandbox
+- Move validated journeys, emails, and other content from a sandbox to a production environment.
+- Set up a demo with sample data on a trial or sandbox.
 
 The process works as follows:
 
@@ -47,10 +47,10 @@ The following notes apply when you use export/import to move data from one Custo
 
 - If you import (or reimport) a record that already exists on the destination environment, that record ends with a status of "draft" on the destination environment. Matching records aren’t duplicated.
 - Interaction data isn’t exported or transferred to a new environment. It will never be included in the export file.
-- If you export from a language not present on the destination environment, that language will be added to the destination environment.
-- After a Customer Insights - Journeys journey is migrated, restored, or copied, its state changes from **Live** to **Stopped**. To restart a migrated, restored, or copied journey, first duplicate the journey, and then execute it.
+- If you export from a language not present on the destination environment, that language is added to the destination environment.
+- After a Customer Insights - Journeys journey is migrated, restored, or copied, its state changes from **Live** to **Stopped**. To restart a migrated, restored, or copied journey, first duplicate the journey and then execute it.
 - Triggers aren’t migrated when moving data between environments. You can, however, migrate triggers using Power Platform solutions. For more information, see [Move triggers between environments (ALM process for triggers)](move-triggers-between-environments.md).
-- Any events in the old environment need to be re-created in the new environment.
+- Any events in the old environment must be re-created in the new environment.
 
 <a name="install-tools"></a>
 
@@ -86,24 +86,28 @@ The Configuration Migration tool requires a database schema each time it exports
 
 To generate the required schema:
 
-1. Open the folder where you [installed the tools](#install-tools). Run the **DataMigrationUtility.exe** file.
+1. Open the folder where you [installed the tools](#install-tools). 
 
-1. In the utility, select **Create schema**, and sign in to your source environment.
+1. Run the **DataMigrationUtility.exe** file.
 
-1. Follow the instructions provided in [Create a schema to export configuration data](/power-platform/admin/create-schema-export-configuration-data) to generate the schema. Be sure to include all of the solutions, entities, and fields for which you want to transfer data, and also make sure all dependencies are included.
+1. In the utility, select **Create schema** and sign in to your source environment.
+
+1. Follow the instructions provided in [Create a schema to export configuration data](/power-platform/admin/create-schema-export-configuration-data) to generate the schema. Be sure to include all of the solutions, entities, and fields for which you want to transfer data. Make sure all dependencies are included.
 
 > [!TIP]
 > These links and notes might help you generate the schema you need:
 > 
-> - You can use the metadata browser tool to explore and understand your database structure. For details about how to install and use it, see the [Dynamics 365 Customer Insights - Journeys entity reference](developer/marketing-entity-reference.md).
+> - You can use the metadata browser tool to explore and understand your database structure. For details on how to install and use it, see the [Dynamics 365 Customer Insights - Journeys entity reference](developer/marketing-entity-reference.md).
 > - While you're [creating your schema](/power-platform/admin/create-schema-export-configuration-data) with the Configuration Migration tool, check for relationships used by any selected entity by selecting the **Show the relationships for the selected entity** check box. This can help keep you from leaving out any dependencies.
-> - After [creating your schema](/power-platform/admin/create-schema-export-configuration-data) with the Configuration Migration tool, select **Tools** > **Validate Schema** from the menu bar. This checks for dependencies for all your selected entities, and can also help point out other common issues.
+> - After [creating your schema](/power-platform/admin/create-schema-export-configuration-data) with the Configuration Migration tool, select **Tools** > **Validate Schema** from the menu bar. This checks for any dependencies for all your selected entities, and can also help point out other common issues.
 
 ## Export data from your source environment
 
 To export data from your source environment:
 
-1. Open the folder where you [installed the tools](#install-tools). Find and run the **DataMigrationUtility.exe** file here.
+1. Open the folder where you [installed the tools](#install-tools). 
+
+1. Find and run the **DataMigrationUtility.exe** file here.
 
 1. The tool launches. Select **Export data** and then **Continue**.  
 
@@ -113,9 +117,9 @@ To export data from your source environment:
 
     ![Select Microsoft 365 and then Login.](media/dmt-export2.png "Select Microsoft 365 and then Login")
 
-1. Follow the instructions on your screen to sign in using the user name and password for the tenant where your source environment is running.
+1. Follow the instructions on your screen to sign in using the username and password for the tenant where your source environment is running.
 
-1. If multiple environments are available on the tenant you signed in to, choose your source environment and select **Login**. (If only one environment is available, skip this step.)
+1. If multiple environments are available on the tenant you signed in to, choose your source environment and select **Login**. (Skip this step if only one environment is available.)
 
     ![Choose your source environment and then Login.](media/dmt-export2b.png "Choose your source environment and then Login")
 
@@ -127,7 +131,7 @@ To export data from your source environment:
     - **Schema file**: Select the ellipsis button to open a file browser, and then navigate to and select the schema file that you generated for your source environment.
     - **Save to data file**: Select the ellipsis button to open a file browser, and then navigate to the folder where you want to save the exported data, together with a file name.
 
-1. Select **Export data**. The tool tracks the export progress and creates a zip file with the schema and your data when it's done.
+1. Select **Export data**. The tool tracks the export progress and creates a zip file with the schema and your data when finished.
 
     ![Export complete.](media/dmt-export4.png "Export complete")
 
@@ -137,7 +141,9 @@ To export data from your source environment:
 
 To import data to your destination environment:
 
-1. If the Configuration Migration tool isn't running, open the folder where you [installed the tools](#install-tools). Run the **DataMigrationUtility.exe** file.
+1. If the Configuration Migration tool isn't running, open the folder where you [installed the tools](#install-tools).
+
+1. Run the **DataMigrationUtility.exe** file.
 
 1. Select **Import data** and then **Continue**.
 
@@ -149,11 +155,11 @@ To import data to your destination environment:
 
 1. Follow the on-screen instructions to sign in with the username and password for the tenant hosting your destination environment.
 
-1. If multiple environments are available on the tenant you signed in to, choose your destination environment and select **Login**. (If only one environment is available, you skip this step.)
+1. If multiple environments are available on the tenant you signed in to, choose your destination environment and select **Login**. (Skip this step if only one environment is available.)
 
     ![Choose the destination environment and then Login.](media/dmt-import2b.png "Choose the destination environment and then Login")
 
-1. On successful sign in, you're asked to choose a file to import. Select the ellipsis button next to the **Zip file** field to open a file browser, and then navigate to the folder where you saved the export file from your source environment. This file includes both the data and schema used for export.
+1. On successful sign in, you're asked to choose a file to import. Select the ellipsis button next to the **Zip file** field to open a file browser, and then navigate to the folder where you saved the export zip file from your source environment. This file includes both the data and schema used for export.
  
     ![Choose a file to import.](media/dmt-import3.png "Choose a file to import")
 
