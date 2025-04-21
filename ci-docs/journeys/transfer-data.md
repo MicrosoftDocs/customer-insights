@@ -107,7 +107,7 @@ To export data from your source environment:
 
 1. Open the folder where you [installed the tools](#install-tools). 
 
-1. Find and run the **DataMigrationUtility.exe** file here.
+1. Find and run the **DataMigrationUtility.exe** file.
 
 1. The tool launches. Select **Export data** and then **Continue**.  
 
