@@ -1,7 +1,7 @@
 ---
 title: Transfer data and configurations between environments using the Configuration Migration tool
 description: Learn how to transfer data and configurations between Dynamics 365 environments using the Configuration Migration tool. Follow step-by-step instructions for seamless migration.
-ms.date: 04/16/2025
+ms.date: 04/21/2025
 ms.topic: article
 author: alfergus
 ms.author: colinbirkett
