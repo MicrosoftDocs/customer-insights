@@ -80,6 +80,7 @@ For more information, see [Use custom connectors with the timeline control](/pow
 > -	msdynmkt_sms
 
 > [!NOTE]
-> Real-time marketing activities from the past 12 months are shown in the timeline for the selected contact or lead. Historical interactions from outbound marketing activities are shown only after the real-time marketing installation date or May 2022, whichever is later.
+> - Real-time marketing activities from the past 12 months are shown in the timeline for the selected contact or lead.
+> - The Timeline doesn't display interactions for Customer Profiles.
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
