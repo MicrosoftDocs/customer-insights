@@ -32,7 +32,7 @@ If you use the out-of-the-box contact and lead forms provided with Customer Insi
 
 However, if you use custom forms for contacts and leads, you need to add a custom connector to the timeline component in your custom contact or lead form to see the marketing interactions.
 
-To add the custom connector to your timeline component through the [Power Apps maker experience](https://make.powerapps.com/), please do the following: 
+To add the custom connector to your timeline component through the [Power Apps maker experience](https://make.powerapps.com/), do the following steps: 
 
 1. Within the Power Apps maker experience, select **Tables**. 
 1. Open the table you want (for example, Contact), and then select the **Forms** area.
