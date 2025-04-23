@@ -1,7 +1,7 @@
 ---
 title: Transition insights and reports
 description: Learn how to transition insights and reporting capabilities from outbound marketing to real-time journeys in Dynamics 365 Customer Insights - Journeys.
-ms.date: 04/21/2025
+ms.date: 04/23/2025
 ms.topic: article
 author: alfergus
 ms.author: colinbirkett
