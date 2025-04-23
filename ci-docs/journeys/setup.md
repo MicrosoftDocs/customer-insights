@@ -26,7 +26,7 @@ All of your Dataverse environments for the geo you selected in the Power Platfor
 To install Customer Insights, ensure you meet all the following requirements:
 
 - Make sure you already have a Microsoft 365 tenant.
-- Ensure your tenant has a Dynamics 365 Customer Insights, Dynamics 365 Marketing, or Dynamics 365 Customer Insights – Standalone license.
+- Ensure your tenant has a Dynamics 365 Customer Insights (entitles both Customer Insights - Journeys and Customer Insights - Data), Dynamics 365 Marketing (entitles on Customer Insights - Journeys), or Dynamics 365 Customer Insights – Standalone (entitles only Customer Insights - Data) license.
 - Sign into your tenant with a user account that has all the following:
    - A security role (such [_Service support admin_](/power-platform/admin/use-service-admin-role-manage-tenant)) that allows you to modify the target Dynamics 365 environment. (If you're reinstalling Customer Insights on an environment where Customer Insights was previously installed, then _Service support admin_ users [_Dynamics 365 administrator_ or _Power Platform administrator_] must use the same user ID as was used for the initial install.
    - Permissions to register applications in Azure. See [Do I have permissions to register applications on Azure?](setup-troubleshooting.yml#register-apps-azure) for information about how to confirm this setting for your account.
