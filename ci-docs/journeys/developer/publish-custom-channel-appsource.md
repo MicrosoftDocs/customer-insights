@@ -10,7 +10,7 @@ search.audienceType:
 ms.custom: outbound-marketing
 ---
 
-# Publish an outbound maretking custom channel on AppSource
+# Publish an outbound marketing custom channel on AppSource
 
 [!INCLUDE [consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
 
