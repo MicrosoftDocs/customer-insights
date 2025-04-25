@@ -33,13 +33,15 @@ For out-of-the-box insights, we’re automatically migrating outbound marketing 
 
 When you import outbound emails to real-time journeys, you can't view past outbound marketing email data in the real-time journeys email insights after the migration date. Outbound marketing emails are recreated in real-time journeys and retain their data history separately. However, historical outbound marketing data remains in Customer Insights - Journeys storage.
 
-## Custom reporting
+## Custom reporting & data export
 
 Sometimes users need to consume marketing interaction data outside of the in-app experiences. This could mean creating reports or integration with other systems. Outbound marketing provides a mechanism to export this data to an Azure Blob storage and sample Power BI reports. This allows users to also build their own custom reports or integration pipelines.
 
-For custom reporting in real-time journeys, you can create custom Power BI reports tailored to your business needs without data movement. Or you can export your data using Microsoft Fabric capabilities. For more information, see [Build custom reports using Microsoft Fabric integration](fabric-integration.md).
+For custom reporting in real-time journeys, you can create custom Power BI reports tailored to your business needs without data movement. For more information, see [Build custom reports using Microsoft Fabric integration](fabric-integration.md). Integrating Customer Insights – Journeys with Microsoft Fabric is the recommended and most seamless way to access and work with interaction data. Fabric abstracts the complexity of the underlying data format, allowing you to focus on building insights and reports quickly and efficiently.
 
 With this capability, you have even more options to consume data with more data sources in your reports. Real-time journeys storage contains real-time journeys as well as outbound marketing interaction data. While the data models are the same between outbound marketing and real-time journeys, you must reconfigure existing custom reports and pipelines to use the new data sources in Microsoft Fabric. Here's the data schema: [Overview of Customer Insights - Journeys interaction data schema](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsightsjourneys/overview). The *SourceSystem* attribute refers to the source system (outbound marketing or real-time journeys) that generated the interaction.
+
+You can also export your data using Microsoft Fabric capabilities and its native connectors (recommended approach). Alternatively, if you wish to use a 3rd-party system to store and process Customer Insights - Journey data you can access and export CI-J interaction data into your own storage by following the steps here: [Leveraging CI-J interaction data without Fabric](https://community.dynamics.com/blogs/post/?postid=75a63967-f115-f011-998a-7c1e525b5e9d).
 
 [!INCLUDE [transition-comments](./includes/transition-comments.md)]
 
