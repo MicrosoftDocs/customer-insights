@@ -73,20 +73,6 @@ There are two ways to use custom fonts in your form:
 1. Set the font to "inherit": Recommended for forms **embedded** into your own page. The form inherits the form from your page.
 1. Add your own custom font: Recommended for forms **hosted as standalone page**. You can upload your custom font using the theme feature in the custom fonts section. Your uploaded custom fonts can be then used in all text style definitions.
 
-### Preview: Copilot - Forms theme assistant
-
-> [!IMPORTANT]
-> A preview feature is a feature that is not complete but is made available before it’s officially in a release so customers can get early access and provide feedback. Preview features aren’t meant for production use and may have limited or restricted functionality.
->
-> Microsoft doesn't provide support for this preview feature. Microsoft Dynamics 365 Technical Support won’t be able to help you with issues or questions. Preview features aren’t meant for production use, especially to process personal data or other data that are subject to legal or regulatory compliance requirements.
-
-> [!IMPORTANT]
-> You must only use the theme assistant with websites that you own and operate. The theme assistant should not be used to copy third-party websites.
-
-The theme assistant is a Copilot feature in Customer Insights - Journeys. You can use the theme assistant to fetch styles from an existing website that you own and control. To use a theme, enter the website URL and select **Fetch styles**. This process might take a few minutes. You can continue your work and return back later to check the result. Once the assistant fetches the styles from your website, it applies the styles to the theme of your form.
-
-:::image type="content" source="media/real-time-marketing-form-theme-copilot.png" alt-text="Fetch styles from your website using Copilot." lightbox="media/real-time-marketing-form-theme-copilot.png":::
-
 ## Parent contact for lead
 
 The **Lead & Contact** audience allows you to update a lead and contact entity with a single form submission. You can change the audience using the picker in the top right corner of the form editor.
