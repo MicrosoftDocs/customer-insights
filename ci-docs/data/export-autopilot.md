@@ -23,7 +23,7 @@ Export segments of unified customer profiles to Autopilot and use them for email
 
 ## Known limitations
 
-- Up up to 100,000 customer profiles per export to Autopilot, which can take up to a few hours to complete. The number of customer profiles that you can export to Autopilot depends on your contract with Autopilot.
+- Up to 100,000 customer profiles per export to Autopilot, which can take up to a few hours to complete. The number of customer profiles that you can export to Autopilot depends on your contract with Autopilot.
 - Segments only.
 
 ## Set up connection to Autopilot

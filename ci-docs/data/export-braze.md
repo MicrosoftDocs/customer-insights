@@ -41,7 +41,7 @@ Export segments of unified customer profiles to Braze and use them for marketing
 
 1. Provide your [Braze API key](https://www.braze.com/docs/api/basics/).
    
-1. Provide your Your [Braze REST Endpoint Hostname](https://www.braze.com/docs/api/basics/#api-definitions) in the format `rest.iad-03.braze.com`.
+1. Provide your [Braze REST Endpoint Hostname](https://www.braze.com/docs/api/basics/#api-definitions) in the format `rest.iad-03.braze.com`.
 
 1. Review the [data privacy and compliance](connections.md#data-privacy-and-compliance) and select **I agree**.
 
