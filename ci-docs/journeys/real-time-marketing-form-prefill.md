@@ -1,7 +1,7 @@
 ---
 title: Prefill values for forms and event registration
 description: Prefill values for forms in Dynamics 365 Customer Insights - Journeys.
-ms.date: 04/07/2025
+ms.date: 04/28/2025
 ms.topic: article
 author: petrjantac
 ms.author: colinbirkett
@@ -37,7 +37,7 @@ You can enable your domain for form prefill in Settings -> Domains. The out-of-t
 > [!IMPORTANT]
 > Make sure you enable the form prefill only for trusted and secure domains that you control. Do not enable prefill for shared domains.
 
-You are not required to verify ownership of the domain enabled for prefill of real-time journeys forms.
+You aren't required to verify ownership of the domain enabled for prefill of real-time journeys forms.
 
 ### Configure prefill in the form editor
 
@@ -54,9 +54,9 @@ The goal of form prefill is to maintain the consent already provided for specifi
 
 ## Troubleshooting form prefill
 
-### My form is not prefilled
+### My form isn't prefilled
 
-The form fields are prefilled only if the page with form is visited by clicking a link in email. Check if the page URL contains msdynmkt_prefill parameter, which is automatically added to email links, if there is valid consent for Tracking purpose. Double check all steps in [Set up form prefill](#set-up-form-prefill).
+The form fields are prefilled only if the page with form is visited by clicking a link in email. Check if the page URL contains msdynmkt_prefill parameter, which is automatically added to email links, if there's valid consent for Tracking purpose. Double check all steps in [Set up form prefill](#set-up-form-prefill).
 
 ### "Prefill marketing form" is enabled on the contact record, but the form isn't prefilled
 
