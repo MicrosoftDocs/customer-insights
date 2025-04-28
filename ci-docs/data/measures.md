@@ -51,17 +51,20 @@ To optimize refresh performance, the system automatically deactivates unused mea
 > [!NOTE]
 > Exclude measures used in Customer Insights - Journey from the deactivation process. Go to [Specify measures that never expire](#specify-measures-that-never-expire).
 
-Admins can delete these deactivated measures if they're no longer needed or reactivate them if they intend to use them again. Alternatively, admins can [specify measures that are excluded from the automated deactivation](#specify-measures-that-never-expire).
+Contributors can delete these deactivated measures if they're no longer needed or reactivate them if they intend to use them again. Alternatively, admins can [specify measures that are excluded from the automated deactivation](#specify-measures-that-never-expire).
 
 Deactivated measures don't refresh automatically when the system refreshes. They're tagged with **SystemDeactivated** when updated by automated cleanup.
 
 ### Specify measures that never expire
 
-To avoid automated deactivation if a measure is no longer in use, admins can mark these segments.
+> [!IMPORTANT]
+> This feature is only available to users with an Administrator user role.
+
+To avoid automated deactivation if a measure is no longer in use, admins can mark these measures.
 
 1. Go to the **Insights** > **Measures** page and select a measure.
 
-1. In the command bar, select **Never expires**.
+1. In the command bar, select **Disable auto cleanup**.
 
 1. Confirm the selection.
 
