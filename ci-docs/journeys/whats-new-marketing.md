@@ -33,27 +33,24 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 
 #### General availability
 
-- **Get insights on email engagement with heatmap analytics** 
-	- Understanding the effectiveness of email campaigns can be complex, particularly when information and links are abundant. Gaining clarity on which areas or links captivate your audience and drive them to act is crucial for refining the user experience and boosting email performance. Real-time journeys email insights now offer a clear view of your audience's preferences by illustrating their interactions within your emails. This immediate visual feedback highlights the content that resonates the most, empowering you to adjust your messaging for heightened impact and better conversion rates. Heatmap also supports email variations. By leveraging these insights, you can understand which email variation captivates your audience and use it to personalize and optimize your upcoming campaigns or focus your efforts on the variations that yield the best results, ultimately driving better results for your business.
-	- [Release plan](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/get-insights-email-engagement-heatmap-analytics) 
-	- [Docs](email-insights.md)  
-
 - **Understand customer inflows and exits at every journey step** 
 	- It’s critical to understand exactly what happened to each customer who entered and exited your real-time journeys. With improved journey analytics, you’ll gain confidence in the processing of every step in your journey through improved metrics and an increased ability to export data. For example, if your journey uses exit or exclusion segments, you can see and understand why fewer customers started your journey than were in the entry segment. You can also see the list of customers who entered and exited each step in the journey and export lists of up to 50,000 people for further analysis. 
 	- [Release plan](/dynamics365/release-plan/2024wave2/customer-insights/dynamics365-customer-insights-journeys/confidently-understand-customer-inflows-exits-at-every-step-journey) 
 	- [Docs](real-time-marketing-analytics.md)
 
+#### Public preview
+
 - **Pause and resume journeys to handle unplanned events** 
 	- Safeguarding your brand's reputation and customer trust is critical. In the face of unplanned or unforeseen events, such as natural disasters, you may need to pause certain campaigns that might be deemed inappropriate or insensitive. Additionally, you may run into business or operational reasons for stopping a campaign, such as identifying the need to update some content or experiencing an unexpected call center outage. In such scenarios, it's prudent to halt customer outreach until the problem is addressed. Instead of stopping a campaign and adjusting the audience to exclude previously reached customers, you can now pause and resume journeys, allowing you to manage unplanned situations easily and stress-free.
 	- [Release plan](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/pause-resume-journeys-handle-unplanned-events) 
-	- [Docs]()  
-
-#### Public preview
+	- [Docs]()
 
 - **Respect quiet times, engage based on location and time zones** 
 	- As regulations around customer privacy become more stringent, it's crucial to contact customers at times that are most convenient to them and ensure compliance with local legal requirements. Now in Customer Insights - Journeys, in addition to setting quiet times based on your journey's time zone, you can align quiet times with your customers' time zones and regions, ensuring that they only receive messages and calls during suitable hours. Aligning interactions with local time allows you to adhere to local regulations and respect cultural norms and preferences, fostering customer trust and enhancing the effectiveness of your outreach strategies.
 	- [Release plan](/dynamics365//release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/respect-quiet-times-engage-based-location-time-zones) 
 	- [Docs](real-time-marketing-quiet-times.md)
+
+	:::image type="content" source="media/quiet-time-settings.png" alt-text="Set up quiet times in Customer Insights - Journeys." lightbox="media/quiet-time-settings.png":::
 
 - **Collect extra event attendee information without updating your data model** 
 	- Easily gather additional information about your event attendees by creating any question directly in the form editor without creating new custom attributes for your contact entity. For example, you can create fields to ask, “What is your meal preference?”, "How did you learn about this event?", or you can create contest questions to increase your customer engagement and to gather valuable insights that help you personalize the attendee experience. 
