@@ -1,11 +1,11 @@
 ---
 title: "Connect to a Power Query data source"
 description: "Ingest data through a Power Query connector."
-ms.date: 12/11/2024
+ms.date: 04/29/2025
 ms.reviewer: v-wendysmith
 ms.topic: how-to
-author: joytaylor
-ms.author: joytaylor
+author: Scott-Stabbert
+ms.author: sstabbert
 ms.custom: bap-template
 ---
 
@@ -173,7 +173,7 @@ Power Query data sources can be refreshed on demand.
 
 1. Go to **Data** > **Data Sources**.
 
-1. If you are the data source owner, find the data source under "Managed by Me". Otherwise, find it under "Managed by others"
+1. If you are the data source owner, find the data source under **Managed by me**. Otherwise, find it under **Managed by others**.
 
 1. Select the desired Power Query data source, and then select **Refresh**.
 
