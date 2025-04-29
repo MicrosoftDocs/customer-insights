@@ -53,7 +53,7 @@ Diagnosing an Unexpected Drop in Engagement rates
 
 1. **Monitor Sender Reputation**. Your sender reputation can provide crucial insights, even if it doesn’t offer all the answers. Utilize tools like such as Google Postmaster, or Yahoo’s Sender Hub to track sender reputation. Any dips, even if temporary, could indicate spam complaints, bounces, or issues with a specific campaign that require further investigation. 
 
-  For an in-depth guide on Google postmaster, see Google Postmaster Tools - What it's and how it can help you - Dynamics 365 Customer Insights | Microsoft Learn 
+    For an in-depth guide on Google postmaster, see Google Postmaster Tools - What it's and how it can help you - Dynamics 365 Customer Insights | Microsoft Learn 
 
 1. **Review Email Strategy Changes**. Assess recent changes in email strategy, including new subscriber lists, template modifications, and automation settings. Unexpected changes can trigger spam filters. 
 
@@ -61,25 +61,25 @@ Diagnosing an Unexpected Drop in Engagement rates
 
 1. **Check your List Hygiene**. Maintain list hygiene by avoiding old or inactive lists and ensuring proper opt-in strategies.   
 
-  There are numerous factors that could be contributing to the drop in engagement. Maintaining a clean list is essential, but even the most diligent senders can encounter issues. For example, you might be sending to an outdated list that should have been archived, or you might have forgotten about a form that is adding spammy subscribers to your list. Additionally, you may not have implemented an opt-in strategy that keeps your list clean, or you might have uploaded inactive lists or segments that haven't been emailed in a long time. 
+    There are numerous factors that could be contributing to the drop in engagement. Maintaining a clean list is essential, but even the most diligent senders can encounter issues. For example, you might be sending to an outdated list that should have been archived, or you might have forgotten about a form that is adding spammy subscribers to your list. Additionally, you may not have implemented an opt-in strategy that keeps your list clean, or you might have uploaded inactive lists or segments that haven't been emailed in a long time. 
 
-  It's also important to consider spam complaints based on domain. An issue with spam complaints might begin with an inbox provider that represents only a small percentage of your list, but as you gain more readers on that ISP, the issue could become more significant. 
+      It's also important to consider spam complaints based on domain. An issue with spam complaints might begin with an inbox provider that represents only a small percentage of your list, but as you gain more readers on that ISP, the issue could become more significant. 
 
-  Best practices for email marketing - Dynamics 365 Customer Insights | Microsoft Learn 
+    Best practices for email marketing - Dynamics 365 Customer Insights | Microsoft Learn 
 
 1. **Review Bounce Data**. Always review and interpret the raw bounce errors and bounce categories. You find valuable insights into your sending reputation. Pay attention to ISP-specific reputation related bounces to determine if there are any spikes in temporary rejections 
 
-  Bounces are a great source of truth; they provide deeper insights into the health of your email list. Many senders assume that bounces are only due to full mailboxes or nonexistent addresses, but they can often indicate more serious issues. For instance, a bounce might suggest that an email was blocked by an ISP due to suspected spam. These types of bounces serve as warnings that your sender reputation could be at risk and help identify which ISPs you need to address. 
+    Bounces are a great source of truth; they provide deeper insights into the health of your email list. Many senders assume that bounces are only due to full mailboxes or nonexistent addresses, but they can often indicate more serious issues. For instance, a bounce might suggest that an email was blocked by an ISP due to suspected spam. These types of bounces serve as warnings that your sender reputation could be at risk and help identify which ISPs you need to address. 
 
-  Monitoring bounce messages closely is crucial. Inboxes sometimes provide valuable feedback through "bounce codes," such as "blocked due to spam-like content" or "too many complaints from this domain." Ignoring these signals can lead to broader deliverability issues. 
+    Monitoring bounce messages closely is crucial. Inboxes sometimes provide valuable feedback through "bounce codes," such as "blocked due to spam-like content" or "too many complaints from this domain." Ignoring these signals can lead to broader deliverability issues. 
 
-  Pay special attention to whether your bounces are concentrated around one or two ISPs. If a significant percentage of your bounces come from a single ISP (for example, Microsoft), it could indicate specific issues with that provider. This may be due to content triggers, reputation problems, or list hygiene issues that are more sensitive to that ISP's spam filters. 
+    Pay special attention to whether your bounces are concentrated around one or two ISPs. If a significant percentage of your bounces come from a single ISP (for example, Microsoft), it could indicate specific issues with that provider. This may be due to content triggers, reputation problems, or list hygiene issues that are more sensitive to that ISP's spam filters. 
 
-  Regularly reviewing bounce data, especially by ISP, can help you identify and resolve targeted deliverability problems before they spread to other inbox providers. 
+    Regularly reviewing bounce data, especially by ISP, can help you identify and resolve targeted deliverability problems before they spread to other inbox providers. 
 
 1. **Audit** Regularly review automations to ensure relevance.  
 
-Next Steps Take a methodical approach to diagnose and fix deliverability issues. Consult with a deliverability specialist for additional insights if necessary. 
+    **Next Steps** Take a methodical approach to diagnose and fix deliverability issues. Consult with a deliverability specialist for additional insights if necessary. 
 
 ## When and how Microsoft Dynamics Customer Insights email deliverability team can assist 
 
