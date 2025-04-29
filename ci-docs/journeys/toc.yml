@@ -648,6 +648,8 @@
       href: get-ready-email-marketing.md
     - name: Requirements for bulk senders
       href: requirements-for-bulk-senders.md
+    - name: Troubleshoot email engagement drops
+      href: troubleshoot-engagement-drops.md
     - name: Setup guides
       items:
       - name: Warm-up process for marketing senders
