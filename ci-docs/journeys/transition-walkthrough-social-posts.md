@@ -29,9 +29,9 @@ The posting to social media feature from outbound marketing has no equivalent in
 
 ## LinkedIn Lead Gen
 
-LinkedIn Lead Gen capabilities are being removed from outbound marketing on December 2, 2024. We're considering adding LinkedIn Lead Gen to real-time journeys in a future release, but there's currently no timeline for the feature.
+LinkedIn Lead Gen capabilities has been removed from outbound marketing on December 2, 2024. We're considering adding LinkedIn Lead Gen to real-time journeys in a future release, but there's currently no timeline for the feature.
 
-Once LinkedIn Lead Gen capabilities are removed, Customer Insights – Journeys will stop receiving data from LinkedIn forms. You won't be able to sign up for new LinkedIn accounts or reauthenticate existing accounts. You can still access existing data (it won't be removed) and campaigns in LinkedIn will continue unaffected.
+Customer Insights – Journeys will not receive data from LinkedIn forms. You won't be able to sign up for new LinkedIn accounts or reauthenticate existing accounts. You can still access existing data (it won't be removed) and campaigns in LinkedIn will continue unaffected.
 
 You can follow this guide to develop a custom integration: [LinkedIn Lead Sync Integration with Dynamics 365 Customer Insights – Journeys](https://community.dynamics.com/blogs/post/?postid=fb6ed89f-67a1-ef11-8a69-7c1e520b1f9b).
 
