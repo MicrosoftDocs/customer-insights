@@ -1,7 +1,7 @@
 ---
 title: Prefill values for forms and event registration
 description: Prefill values for forms in Dynamics 365 Customer Insights - Journeys.
-ms.date: 04/28/2025
+ms.date: 04/29/2025
 ms.topic: article
 author: petrjantac
 ms.author: colinbirkett
@@ -31,8 +31,7 @@ To increase the level of security of the form prefill feature there are several 
 
 You can enable your domain for form prefill in Settings -> Domains. The out-of-the-box domain for forms hosted as a standalone page is enabled for form hosting by default. You can contact technical support if you want to disable form prefill for this domain.
   
-> [!div class="mx-imgBorder"]
-> ![Enable your domain for form prefill.](media/real-time-marketing-enable-prefill-for-domain.png)
+:::image type="content" source="media/real-time-marketing-enable-prefill-for-domain.png" alt-text="Enable your domain for form prefill." lightbox="media/real-time-marketing-enable-prefill-for-domain.png":::
 
 > [!IMPORTANT]
 > Make sure you enable the form prefill only for trusted and secure domains that you control. Do not enable prefill for shared domains.
@@ -43,8 +42,8 @@ You aren't required to verify ownership of the domain enabled for prefill of rea
 
 Open the form editor and enable form prefill in the form settings. Enabling form prefill in the settings makes all fields of that specific form prefilled. You can also enable or disable prefill for a specific field in the fields properties. The form editor indicates which fields are prefilled with an icon and the editor also shows the total count of prefilled fields.
 
-> [!div class="mx-imgBorder"]
-> ![Set up form prefill in form editor.](media/real-time-marketing-configure-form-prefill.png)
+:::image type="content" source="media/real-time-marketing-configure-form-prefill.png" alt-text="Set up form prefill in form editor." lightbox="media/real-time-marketing-configure-form-prefill.png":::
+
 
 ### Check your consent model configuration
 
@@ -53,6 +52,8 @@ The prefill requires the customer to consent with the *Tracking* purpose. The st
 The goal of form prefill is to maintain the consent already provided for specific topics and purposes. If a purpose or topic is linked to multiple channels (such as email and text), the form prefill sets the consent checkbox as if consent was given for all linked channels. For example, the Commercial purpose is represented in the form by a single checkbox linked to both email and text channels. If the customer provided consent for the Commercial purpose via the email channel but not the text channel, submitting the prefilled form results in consent being provided for both channels.
 
 ## Troubleshooting form prefill
+
+The following sections explain how to troubleshoot issues with form prefill.
 
 ### My form isn't prefilled
 
