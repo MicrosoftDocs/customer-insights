@@ -79,7 +79,7 @@ The previous illustration highlights important elements provided by the **diaman
 - **{{Message.ConfirmationObjectDescription}}**: Resolves to the **Description** field of the [subscription list](set-up-subscription-center.md#create-subscription-list) the contact has asked to join.
 - **{{Message.ConfirmationRedirectURL}}**: Resolves to a URL that targets the outbound marketing server and includes a code that uniquely identifies the contact the message was sent to and the message itself. All confirmation request messages must include a button (or link) that targets this Handlebars expression (otherwise, contacts will not be able to confirm).
 
-The following screenshot shows a outbound marketing subscription-list record with the **Name** and **Description** fields highlighted. These are the values that you can include in your subscription confirmation request message.
+The following screenshot shows an outbound marketing subscription-list record with the **Name** and **Description** fields highlighted. These are the values that you can include in your subscription confirmation request message.
 
 ![Subscription list settings available to confirmation request messages.](media/doi-sub-list-settings.png "Subscription list settings available to confirmation request messages")
 
