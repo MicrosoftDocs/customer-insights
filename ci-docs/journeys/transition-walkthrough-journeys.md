@@ -43,6 +43,8 @@ Using quiet times, you can control when messages get delivered, increasing engag
 
 Journey end dates behave differently in real-time journeys. In outbound marketing, if a journey had a set end date, customers who already entered the journey would stop and not finish the journey. In real-time journeys, customers who have already entered the journey after the end date complete the journey but no new customers are allowed to enter the journey.
 
+Send at a specific time (Smart scheduling) has no equivelant in real-time journeys. 
+
 ## Asset library
 
 No migration of the asset library should be needed. If you're using the outbound marketing asset library, the same asset library is used by real-time journeys, so you can continue to use all previously uploaded assets. If you're using an external asset library, the process remains the same (get the URL of the asset from the external library and insert it in your messages).
@@ -50,10 +52,6 @@ No migration of the asset library should be needed. If you're using the outbound
 ## Relevant upcoming features
 
 The features listed below may be of interest as you transition from outbound marketing to real-time journeys. These features provide parity, equivalent, or better functionality than what was available in outbound marketing.
-
-### Scheduling
-
-- **Send scheduling**: Elevate your customer engagement, conversion rates, and revenue with our send scheduling in real-time journeys. Reach your customers when they're the most active and likely to respond aligning their habits and preferences. Schedule deliveries within specific time frames daily, or on particular days weekly to maximize impact. Learn more: [Reach customers at the right moment with send scheduling](/dynamics365/release-plan/2023wave2/marketing/dynamics365-marketing/reach-customers-at-right-moment-send-scheduling)
 
 ### Email
 
