@@ -1,7 +1,7 @@
 ---
 title: "Manage data sources"
 description: "Learn how to manage data sources attached or imported to Dynamics 365 Customer Insights - Data."
-ms.date: 03/28/2025
+ms.date: 04/29/2025
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -78,7 +78,6 @@ If you have a data source that was ingested and unified that you no longer need,
 
 1. [Remove the data source's unified tables](data-unification-update.md#remove-a-unified-table).
 
-1. Once all data dependencies are removed and unification has rerun, you can delete the data source. Select the data source and then **Delete**.
-
+1. Once all data dependencies are removed and unification has rerun, you can delete the data source. Go to **Data** > **Data sources**, select the data source, and then **Delete**.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

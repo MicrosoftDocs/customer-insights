@@ -108,6 +108,9 @@ To remove a table that has been unified, the table must be removed from any depe
 
    :::image type="content" source="media/m3_remove_table2.png" alt-text="Screenshot of Matching rules with table selected and Delete button":::
 
+   > [!TIP]
+   > The delete command isn't visible until all dependencies and rules have been removed for the table.
+
 1. Select **Save and close**.
 
 1. Select **Edit** on the **Customer data** tile.
