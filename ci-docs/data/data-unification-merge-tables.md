@@ -1,7 +1,7 @@
 ---
 title: "Unify customer columns for data unification"
 description: "Merge columns to create unified customer profiles."
-ms.date: 12/11/2024
+ms.date: 04/28/2025
 ms.topic: how-to
 author: v-wendysmith
 ms.author: sstabbert
@@ -119,13 +119,13 @@ Combine separated fields to create a merged column.
 When you combine a group of fields, Customer Insights - Data treats the group as a single unit, and chooses the winner record based on a merge policy. When merging fields without combining them into a group, the system chooses the winner record for each field based on the table order ranking set up in the **Matching rules** step. If a field has a null value, Customer Insights - Data continues to look at the other data sources until it finds a value. If this mixes information in an unwanted way or you want to set a merge policy, combine the group of fields.
 
 #### Example
-Monica Thomson matches across three data sources: Loyalty, Online, and POS. Without combining the mailing address fields for Monica, the winner record for each field is based on the first ranked data source (Loyalty), except **Addr2** which is null. The winner record for **Addr2** is Suite 950 resulting in an incorrect mix of address fields (200 Cedar Springs Road, Suite 950, Dallas, TX 75255). To ensure data  integrity, combine the address fields into a group.
+Monica Thomson matches across three data sources: Loyalty, Online, and POS. Without combining the mailing address fields for Monica, the winner record for each field is based on the first ranked data source (Loyalty), except **Addr2** which is null. The winner record for **Addr2** is Suite 950 resulting in an incorrect mix of address fields (200 Cedar Springs Road, Suite 950, Dallas, TX 75255). To ensure data integrity, combine the address fields into a group. Grouping doesn't change how the data is stored or displayed.
 
 **Table1 - Loyalty**
 
-| Full_Name      | Addr1                  | Addr2     | City    | State | Zip   |
-|----------------|------------------------|-----------|---------|-------|-------|
-| Monica Thomson | 200 Cedar Springs Road |           | Dallas | TX    | 75255 |
+| Full_Name      | Addr1                | Addr2     | City    | State | Zip   |
+|----------------|----------------------|-----------|---------|-------|-------|
+| Monica Thomson | 200 Cedar Springs Rd |           | Dallas | TX    | 75255 |
 
 **Table2 - Online**
 
