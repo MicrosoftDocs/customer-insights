@@ -60,8 +60,8 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 #### Monthly enhancements
 
 - **Select the right form template for any audience while creating a new form** 
-	- The template gallery now displays all form templates, grouped by audience. When creating a new form, you can see and select from all available custom and out-of-the-box form templates. Once you choose a template, the newly created form will adhere to the audience specified by that template.
-	- [Docs]()  
+	- As part of a monthly enhancement, the template gallery now displays all form templates grouped for specific audiences. When creating a new form, you can see all available custom and out-of-the-box form templates. Once you choose a desired template, the newly created form adheres to the audience specified by that template.
+	- [Docs]()
 
 #### New blogs and scenario docs
 
