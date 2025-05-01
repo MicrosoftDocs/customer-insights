@@ -18,22 +18,21 @@ search.audienceType:
 > 
 > Microsoft doesn't provide support for this preview feature. Microsoft Dynamics 365 Technical Support won’t be able to help you with issues or questions. Preview features aren’t meant for production use, especially to process personal data or other data that are subject to legal or regulatory compliance requirements.
 
-The custom unmapped fields feature (also known as custom registration fields) allows you to create and manage personalized questions for event attendees, without affecting the Lead or Contact entity. It allows you to collect relevant information for each event, such as dietary preferences, session interests, feedback, and more. You can then use the answers to customize the communication with your attendees and personalize the event attendee experience. 
+The custom unmapped fields feature (also known as custom registration fields) allows you to **create and manage personalized questions for event attendees**, without affecting the Lead or Contact entity. It allows you to collect relevant information for each event, such as dietary preferences, session interests, feedback, and more. You can then use the answers to customize the communication with your attendees and personalize the event attendee experience. 
 
 > [!Tip] 
 > This article describes custom unmapped fields for event registration forms. For article about custom unmapped fields in marketing forms, visit this article. 
 
 ## Creating unmapped form fields for your event  
 
-To create a custom unmapped form field for your event, you can navigate to the Event > Form (this was previously called Website & Form) tab. You can now see a preview of the form on the right-hand side and by clicking on the “Edit” button, you will be taken to the form editor.  
+To create a custom unmapped form field for your event, you can navigate to the Event > Form (this was previously called Website & Form) tab. You can now see a preview of the form on the right-hand side and by clicking on the “Edit” button, you'll be taken to the form editor.  
 
-If this form is used in multiple events, you will be presented with a dialog. Choose from one of the two options:  
+If this form is used in multiple events, you'll be presented with a dialog. Choose from one of the two options:  
 
-1. To edit the form for all events that are using this form, click on the provided link. This will open the reusable form in the Forms section.  
+1. To edit the form for **all events that are using this form**, select on the provided link. This opens the reusable form in the Forms section.  
+1. To edit the form for **this event only**, create a copy with one select.  
 
-1. To edit the form for this event only, create a copy with one click.  
-
-In the form editor, you will notice a new section called “Unmapped” where you can select previously Saved fields or click to create +New. 
+In the form editor, you'll notice a new section called “Unmapped” where you can select previously Saved fields or select to create +New. 
 
 ## Creating a new unmapped form field 
 
@@ -43,14 +42,14 @@ Each unmapped field has a Logical name. There can be multiple fields with the sa
 
 The following field types are available for creating unmapped fields: 
 
-- Short text: Represented as a standard input. 
-- Long text: Suitable for longer text inputs. 
-- Option set: You can select if the field is displayed as a dropdown or radio button. You can create multiple options. The user submitting the form can select only a single value. 
-- Multi-select: Rendered as a list of checkboxes. You can create multiple options. The user submitting the form can select multiple values. 
-- Radio button: Limited to only two options. 
-- Number: A special type of input field that accepts only numeric values. 
-- Checkbox: A single checkbox. 
-- Date & time: You can define if it's rendered as Date only or a Date & time field. 
+- **Short text**: Represented as a standard input. 
+- **Long text**: Suitable for longer text inputs. 
+- **Option set**: You can select if the field is displayed as a dropdown or radio button. You can create multiple options. The user submitting the form can select only a single value. 
+- **Multi-select**: Rendered as a list of checkboxes. You can create multiple options. The user submitting the form can select multiple values. 
+- **Radio button**: Limited to only two options. 
+- **Number**: A special type of input field that accepts only numeric values. 
+- **Checkbox**: A single checkbox. 
+- **Date & time**: You can define if it's rendered as Date only or a Date & time field. 
 
 ## Save fields to reuse them in other forms 
 
@@ -60,7 +59,7 @@ The saved unmapped fields are in the Unmapped section of the Fields right side p
 
 Once you add a saved field to canvas and modify it, you can save the changes to the original saved field by selecting the Update field button. 
 
-The display name of the saved field must be unique. If you enter a display name of an existing field, you'll be prompted if you want to overwrite the existing field. 
+The display name of the saved field must be unique. If you enter a display name of an existing field, you are prompted if you want to overwrite the existing field. 
 
 ## Viewing submitted responses  
 
