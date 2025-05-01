@@ -40,11 +40,6 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 
 #### Public preview
 
-- **Pause and resume journeys to handle unplanned events** 
-	- Safeguarding your brand's reputation and customer trust is critical. In the face of unplanned or unforeseen events, such as natural disasters, you may need to pause certain campaigns that might be deemed inappropriate or insensitive. Additionally, you may run into business or operational reasons for stopping a campaign, such as identifying the need to update some content or experiencing an unexpected call center outage. In such scenarios, it's prudent to halt customer outreach until the problem is addressed. Instead of stopping a campaign and adjusting the audience to exclude previously reached customers, you can now pause and resume journeys, allowing you to manage unplanned situations easily and stress-free.
-	- [Release plan](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/pause-resume-journeys-handle-unplanned-events) 
-	<!--- - [Docs]() -->
-
 - **Respect quiet times, engage based on location and time zones** 
 	- As regulations around customer privacy become more stringent, it's crucial to contact customers at times that are most convenient to them and ensure compliance with local legal requirements. Now in Customer Insights - Journeys, in addition to setting quiet times based on your journey's time zone, you can align quiet times with your customers' time zones and regions, ensuring that they only receive messages and calls during suitable hours. Aligning interactions with local time allows you to adhere to local regulations and respect cultural norms and preferences, fostering customer trust and enhancing the effectiveness of your outreach strategies.
 	- [Release plan](/dynamics365//release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/respect-quiet-times-engage-based-location-time-zones) 
