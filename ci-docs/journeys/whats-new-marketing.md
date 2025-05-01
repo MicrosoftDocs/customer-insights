@@ -55,13 +55,13 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 - **Collect extra event attendee information without updating your data model** 
 	- Easily gather additional information about your event attendees by creating any question directly in the form editor without creating new custom attributes for your contact entity. For example, you can create fields to ask, “What is your meal preference?”, "How did you learn about this event?", or you can create contest questions to increase your customer engagement and to gather valuable insights that help you personalize the attendee experience. 
 	- [Release plan](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/collect-extra-event-attendee-information-without-updating-data-model) 
-	- [Docs]()  
+	- [Docs](create-unmapped-fields-registration-forms.md)  
 
 #### Monthly enhancements
 
 - **Select the right form template for any audience while creating a new form** 
 	- As part of a monthly enhancement, the template gallery now displays all form templates grouped for specific audiences. When creating a new form, you can see all available custom and out-of-the-box form templates. Once you choose a desired template, the newly created form adheres to the audience specified by that template.
-	- [Docs]()
+	- [Docs](real-time-marketing-form-create.md)
 
 #### New blogs and scenario docs
 

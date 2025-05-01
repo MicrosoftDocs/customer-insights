@@ -1,0 +1,72 @@
+---
+title: Create unmapped fields for registration forms
+description: Learn how create unmapped fields for registration forms in Dynamics 365 Customer Insights - Journeys. 
+ms.date: 05/01/2025
+ms.topic: article
+author: colinbirkett
+ms.author: colinbirkett
+search.audienceType: 
+  - admin
+  - customizer
+  - enduser
+---
+
+# Preview: Create unmapped fields for registration forms
+
+> [!IMPORTANT]
+> A preview feature is a feature that is not complete, but is made available before it’s officially in a release so customers can get early access and provide feedback. Preview features aren’t meant for production use and may have limited or restricted functionality.
+> 
+> Microsoft doesn't provide support for this preview feature. Microsoft Dynamics 365 Technical Support won’t be able to help you with issues or questions. Preview features aren’t meant for production use, especially to process personal data or other data that are subject to legal or regulatory compliance requirements.
+
+The custom unmapped fields feature (also known as custom registration fields) allows you to create and manage personalized questions for event attendees, without affecting the Lead or Contact entity. It allows you to collect relevant information for each event, such as dietary preferences, session interests, feedback, and more. You can then use the answers to customize the communication with your attendees and personalize the event attendee experience. 
+
+> [!Tip] 
+> This article describes custom unmapped fields for event registration forms. For article about custom unmapped fields in marketing forms, visit this article. 
+
+## Creating unmapped form fields for your event  
+
+To create a custom unmapped form field for your event, you can navigate to the Event > Form (this was previously called Website & Form) tab. You can now see a preview of the form on the right-hand side and by clicking on the “Edit” button, you will be taken to the form editor.  
+
+If this form is used in multiple events, you will be presented with a dialog. Choose from one of the two options:  
+
+1. To edit the form for all events that are using this form, click on the provided link. This will open the reusable form in the Forms section.  
+
+1. To edit the form for this event only, create a copy with one click.  
+
+In the form editor, you will notice a new section called “Unmapped” where you can select previously Saved fields or click to create +New. 
+
+## Creating a new unmapped form field 
+
+In the form editor, you can drag and drop a field type from the Elements panel to create unmapped fields of the corresponding type. 
+
+Each unmapped field has a Logical name. There can be multiple fields with the same logical name, but you can use only a single field of the same logical name in a single form. Once you add a field to the canvas, all fields with the same logical name are disabled in the right pane and can’t be added to the form. The logical name is used as the key for the submitted value and is also used in journey orchestration based on the submitted values of the unmapped field. You can define the field label, placeholder text, default value, and set if the unmapped field is required for submission. The unmapped field can also be set as hidden, and you can set up a custom validation of the submitted value. 
+
+The following field types are available for creating unmapped fields: 
+
+- Short text: Represented as a standard input. 
+- Long text: Suitable for longer text inputs. 
+- Option set: You can select if the field is displayed as a dropdown or radio button. You can create multiple options. The user submitting the form can select only a single value. 
+- Multi-select: Rendered as a list of checkboxes. You can create multiple options. The user submitting the form can select multiple values. 
+- Radio button: Limited to only two options. 
+- Number: A special type of input field that accepts only numeric values. 
+- Checkbox: A single checkbox. 
+- Date & time: You can define if it's rendered as Date only or a Date & time field. 
+
+## Save fields to reuse them in other forms 
+
+Unmapped fields and modified mapped fields can be saved for reuse later in other forms. The saved fields are shared across your organization, allowing your colleagues to use fields you've created. 
+
+The saved unmapped fields are in the Unmapped section of the Fields right side pane. 
+
+Once you add a saved field to canvas and modify it, you can save the changes to the original saved field by selecting the Update field button. 
+
+The display name of the saved field must be unique. If you enter a display name of an existing field, you'll be prompted if you want to overwrite the existing field. 
+
+## Viewing submitted responses  
+
+Answers to the custom unmapped fields are recorded in the form submission response. Navigate to Registration and attendance to view all the responses together with event registration information in one table. This joint data table is created as a new system view for the registration form.  
+
+> [!Note]
+> Please note that it can take up to 2 minutes for the new system view to be created after a first submission is received.  
+
+You can also create a new System view that can be reused across all events. To construct advanced queries, the Advanced search should be enabled for your organization, for detailed steps follow Advanced find - Power Apps | Microsoft Learn.
