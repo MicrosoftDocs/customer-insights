@@ -5,7 +5,7 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: v-wendysmith
 ms.topic: how-to
-ms.date: 01/21/2025
+ms.date: 05/01/2025
 ms.custom: bap-template
 ---
 
@@ -41,7 +41,7 @@ Select next to a segment to view available actions.
 - **Edit** the segment to change its properties or [view segment member counts](#view-segment-member-counts-preview) for each rule.
 - **Create duplicate** of a segment. You can choose to edit its properties right away or save the duplicate.
 - **Refresh** one or more segments manually to include the latest data. The **Last refreshed** column shows a timestamp of the last successful refresh. If an error occurs, select the error to see details about what happened.
-- **Activate** or **Deactivate** one or more segments. For multiple segments, select **Change state**. Inactive segments won't get refreshed during a [scheduled refresh](segments-schedule.md) and have the **Status** listed as **Skipped**, indicating that a refresh wasn't even attempted. Active segments are refreshed based on their type: static or dynamic and their [schedule](segments-schedule.md).
+- **Activate** or **Deactivate** one or more segments. For multiple segments, select **Change state**. Inactive segments don't get refreshed during a [scheduled refresh](segments-schedule.md) and have the **Status** listed as **Skipped**, indicating that a refresh wasn't even attempted. Active segments are refreshed based on their type: static or dynamic and their [schedule](segments-schedule.md).
 - **Make static** or **Make dynamic** the segment type. Static segments must be refreshed manually. Dynamic segments are automatically refreshed according to their [schedule](segments-schedule.md).
 - [**Find similar customers**](find-similar-customer-segments.md) from the segment.
 - **Rename** the segment.
@@ -60,9 +60,9 @@ The smaller the number of segments and measures that need to be refreshed daily,
 
 - When a campaign is over and you no longer need a segment, **Delete** it. If a campaign runs more than once, you can deactivate the segment. Deactivating it saves the segment configuration, but stops the automatic refresh.
 
-- [Schedule](segments-schedule.md) segments on a slower cadence so they are not refreshed daily.
+- [Schedule](segments-schedule.md) segments on a slower cadence so they aren't refreshed daily.
 
-- We recommend setting up a recurring audit process to review segments and measures and delete the ones that are not needed anymore. To help you with this process, [use tags](work-with-tags-columns.md) with campaign and end date information. During the audit process you can search for tags and delete segments and measures in bulk.
+- We recommend setting up a recurring audit process to review segments and measures and delete the ones that aren't needed anymore. To help you with this process, [use tags](work-with-tags-columns.md) with campaign and end date information. During the audit process you can search for tags and delete segments and measures in bulk.
 
 ## View segment details
 
@@ -96,7 +96,7 @@ View the number of members based on each rule or combination of rules in a segme
 1. Run or refresh the segment. After the refresh completes, segment member counts display.
 
 > [!TIP]
-> While editing a segment, the rules show the old value for the member count until you save the updated segment. Once save, the values are reset to zero. After refreshing it, the updates values show on the rules.
+> While you edit a segment, the rules show the old value for the member count until you save the updated segment. Once save, the values are reset to zero. After you refresh it, the updated values show on the rules.
 
 The following image shows the different member counts.
 
@@ -124,16 +124,16 @@ Export segments to other apps to further use the data. Export a segment from the
 
 ## Automated deactivation of unused segments
 
-> [!IMPORTANT]
-> This feature is only available to users with an Administrator user role.
-
 To optimize refresh performance, the system automatically deactivates unused segments every day. Unused segments are segments that aren't used in exports, measures, other segments, or in Customer Insights - Journeys and created or updated more than 45 days ago.
 
-Admins can delete these segments if they are no longer needed or reactivate them if they intend to use them again. Alternatively, admins can [specify segments that are excluded from the automated deactivation](#specify-segments-that-never-expire).
+Contributors can delete these deactivated segments if they're no longer needed or reactivate them if they intend to use them again. Alternatively, admins can [specify segments that are excluded from the automated deactivation](#specify-segments-that-never-expire).
 
-Deactivated segments don't refresh automatically when the system refreshes. They are tagged with **AutoDeactivated** when updated by automated cleanup.
+Deactivated segments don't refresh automatically when the system refreshes. They're tagged with **AutoDeactivated** when updated by automated cleanup.
 
 ### Specify segments that never expire
+
+> [!IMPORTANT]
+> This feature is only available to users with an Administrator user role.
 
 To avoid automated deactivation if a segment is no longer in use, admins can mark these segments.
 
@@ -153,7 +153,7 @@ When you approach or exceed the number of active segments based on the [service 
 
 The complexity of your segments can also impact performance. To help you prevent performance issues, Dynamics 365 Customer Insights - Data provides messages or warnings when you approach, reach, or exceed the total number of active segments. These messages display on the **Segments** list page. If you encounter these messages or symptoms, see the following recommendations.
 
-1. Delete old or no longer relevant segments even if they are static or inactive. When a campaign ends, deactivate associated segments for recurring campaigns.
+1. Delete old or no longer relevant segments even if they're static or inactive. When a campaign ends, deactivate associated segments for recurring campaigns.
 1. [Schedule individual segments](segments-schedule.md) to run weekly or monthly during slow business days (such as the weekend) instead of daily.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
