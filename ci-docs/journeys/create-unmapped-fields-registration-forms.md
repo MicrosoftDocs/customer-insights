@@ -25,24 +25,24 @@ The custom unmapped fields feature (also known as custom registration fields) al
 
 ## Creating unmapped form fields for your event  
 
-To create a custom unmapped form field for your event, you can navigate to the Event > Form (this was previously called Website & Form) tab. You can now see a preview of the form on the right-hand side and by clicking on the “Edit” button, you'll be taken to the form editor.
+To create a custom unmapped form field for your event, you can navigate to the Event > Form (this was previously called Website & Form) tab. You can now see a preview of the form on the right-hand side by selecting the **Edit** button. Once selected, you'll be taken to the form editor.
 
-:::image type="content" source="media/create-custom-unmapped-fields-registration-forms.png" alt-text="Image description." lightbox="media/create-custom-unmapped-fields-registration-forms.png":::
+:::image type="content" source="media/create-custom-unmapped-fields-registration-forms.png" alt-text="Create unmapped form fields for your event." lightbox="media/create-custom-unmapped-fields-registration-forms.png":::
 
 If this form is used in multiple events, you'll be presented with a dialog. Choose from one of the two options:  
 
 1. To edit the form for **all events that are using this form**, select on the provided link. This opens the reusable form in the Forms section.  
 1. To edit the form for **this event only**, create a copy with one select.
 
-:::image type="content" source="media/create-copy-unmapped-fields.png" alt-text="Image description." lightbox="media/create-copy-unmapped-fields.png":::
+:::image type="content" source="media/create-copy-unmapped-fields.png" alt-text="Create a form copy for a single event." lightbox="media/create-copy-unmapped-fields.png":::
 
-In the form editor, you'll notice a new section called “Unmapped” where you can select previously Saved fields or select to create +New. 
+In the form editor, you'll notice a new section called “Unmapped” where you can select previously Saved fields or click **New** to create a new field. 
 
 ## Creating a new unmapped form field 
 
 In the form editor, you can drag and drop a field type from the Elements panel to create unmapped fields of the corresponding type. 
 
-:::image type="content" source="media/custom-unmapped-fields.png" alt-text="Image description." lightbox="media/custom-unmapped-fields.png":::
+:::image type="content" source="media/custom-unmapped-fields.png" alt-text="An overview of possible custom unmapped fields." lightbox="media/custom-unmapped-fields.png":::
 
 Each unmapped field has a Logical name. There can be multiple fields with the same logical name, but you can use only a single field of the same logical name in a single form. Once you add a field to the canvas, all fields with the same logical name are disabled in the right pane and can’t be added to the form. The logical name is used as the key for the submitted value and is also used in journey orchestration based on the submitted values of the unmapped field. You can define the field label, placeholder text, default value, and set if the unmapped field is required for submission. The unmapped field can also be set as hidden, and you can set up a custom validation of the submitted value. 
 
@@ -61,7 +61,7 @@ The following field types are available for creating unmapped fields:
 
 Unmapped fields and modified mapped fields can be saved for reuse later in other forms. The saved fields are shared across your organization, allowing your colleagues to use fields you've created. 
 
-:::image type="content" source="media/save-field.png" alt-text="Image description." lightbox="media/save-field.png":::
+:::image type="content" source="media/save-field.png" alt-text="Save custom field.." lightbox="media/save-field.png":::
 
 The saved unmapped fields are in the Unmapped section of the Fields right side pane. 
 
@@ -78,4 +78,4 @@ Answers to the custom unmapped fields are recorded in the form submission respon
 
 You can also create a new System view that can be reused across all events. To construct advanced queries, the Advanced search should be enabled for your organization. For more information, see [Advanced find in model-driven apps](/power-apps/user/advanced-find).
 
-:::image type="content" source="media/registration-and-attendence-overview.png" alt-text="Image description." lightbox="media/registration-and-attendence-overview.png":::
+:::image type="content" source="media/registration-and-attendance-overview.png" alt-text="An overview of customer registration and attendance in the form." lightbox="media/registration-and-attendance-overview.png":::
