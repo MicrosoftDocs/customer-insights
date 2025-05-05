@@ -1,7 +1,7 @@
 ---
 title: Create unmapped fields for registration forms
 description: Learn how create unmapped fields for registration forms in Dynamics 365 Customer Insights - Journeys. 
-ms.date: 05/02/2025
+ms.date: 05/05/2025
 ms.topic: article
 author: colinbirkett
 ms.author: colinbirkett

@@ -1,7 +1,7 @@
 ---
 title: New and upcoming features
 description: Discover the latest features, improvements, and bug fixes in Dynamics 365 Customer Insights - Journeys. Stay updated with our monthly release notes.
-ms.date: 04/07/2025
+ms.date: 05/05/2025
 ms.topic: article
 author: colinbirkett
 ms.author: colinbirkett
@@ -56,7 +56,7 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 
 - **Select the right form template for any audience while creating a new form** 
 	- As part of a monthly enhancement, the template gallery now displays all form templates grouped for specific audiences. When creating a new form, you can see all available custom and out-of-the-box form templates. Once you choose a desired template, the newly created form adheres to the audience specified by that template.
-	- [Docs](real-time-marketing-form-create.md)
+	- [Docs](real-time-marketing-form-overview.md#custom-form-templates)
 
 #### New blogs and scenario docs
 
