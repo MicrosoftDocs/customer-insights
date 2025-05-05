@@ -1,7 +1,7 @@
 ---
 title: Prefill values for forms and event registration
 description: Prefill values for forms in Dynamics 365 Customer Insights - Journeys.
-ms.date: 04/29/2025
+ms.date: 05/05/2025
 ms.topic: article
 author: petrjantac
 ms.author: colinbirkett
