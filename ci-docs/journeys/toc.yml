@@ -520,6 +520,37 @@
     href: real-time-marketing-known-issues.md
   - name: Real-time journeys troubleshoot + FAQ
     href: real-time-marketing-faq.md
+- name: Conversational journeys
+  items:
+  - name: Conversational journeys overview
+    items:
+    - name: Overview
+      href: conversational-journeys-overview.md
+      items:
+      - name: Configure proactive engagement
+        href: configure-proactive-engagement.md
+        items:
+        - name: Prerequisites
+          items:
+          - name: Licensing information 
+            href: proactive-engagement-licensing-information.md
+          - name: Setting it up in CI-J
+            href: proactive-engagement-setup-ci-j.md
+          - name: Setting it up in CC and MCS
+            href: proactive-engagement-setup-cc-mcs.md
+        - name: Configure proactive engagement settings
+          href: configure-proactive-engagement-settings.md
+      - name: Concepts
+        href: proactive-engagement-concepts.md
+      - name: How to
+        href: proactive-engagement-how-to.md
+      - name: Configure proactive engagements capabilities specific to Customer Insights – Journeys
+        href: proactive-engagement-journeys.md
+        items:
+        - name: Conversational voice 
+          href: configure-proactive-conversational-voice.md
+        - name: Consent for voice
+          href: proactive-engagement-consent-voice.md
 - name: Develop and extend
   items:
   - name: Manually add a custom channel

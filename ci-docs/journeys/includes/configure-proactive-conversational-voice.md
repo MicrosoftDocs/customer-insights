@@ -1,6 +1,6 @@
 ---
-title: Proactive engagement placeholder
-description: Test
+title: Conversational voice
+description: Learn more about Conversational voice in Dynamics 365 Customer Insights - Journeys.
 ms.date: 05/05/2025
 ms.topic: article
 author: colinbirkett
@@ -11,7 +11,6 @@ search.audienceType:
   - enduser
 ---
 
-# Proactive engagement placeholder
+# Conversational voice
 
 Test
-
