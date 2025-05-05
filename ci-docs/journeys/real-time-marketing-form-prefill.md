@@ -57,8 +57,8 @@ The following sections explain how to troubleshoot issues with form prefill.
 
 ### My form isn't prefilled
 
-The form fields are prefilled only if the page with form is visited by clicking a link in email. Check if the page URL contains msdynmkt_prefill parameter, which is automatically added to email links, if there's valid consent for Tracking purpose. Double check all steps in [Set up form prefill](#set-up-form-prefill).
+The form fields are prefilled only when the page containing the form is accessed by clicking a link in email. Check if the page URL contains the msdynmkt_prefill parameter, which is automatically added to email links if there's valid consent for Tracking purposes. Double check all steps in [Set up form prefill](#set-up-form-prefill).
 
 ### "Prefill marketing form" is enabled on the contact record, but the form isn't prefilled
 
-The "Prefill marketing form" attribute works only for outbound marketing forms. Real-time Journeys forms use the [Tracking purpose](real-time-marketing-email-text-consent.md#consent-to-track-user-behavior) as the consent for prefill.
+The "Prefill marketing form" attribute only works for outbound marketing forms. Real-time journeys forms use the [Tracking purpose](real-time-marketing-email-text-consent.md#consent-to-track-user-behavior) as the consent for prefill.
