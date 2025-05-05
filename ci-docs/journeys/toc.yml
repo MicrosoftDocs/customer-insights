@@ -426,6 +426,8 @@
       href: real-time-marketing-form-prefill.md
     - name: "Preview: Create unmapped fields for marketing forms"
       href: real-time-marketing-forms-custom-fields.md
+    - name: "Preview: Create unmapped fields for registration forms"
+      href: create-unmapped-fields-registration-forms.md
     - name: Manage forms
       href: real-time-marketing-manage-forms.md
     - name: Set the default configuration for forms
