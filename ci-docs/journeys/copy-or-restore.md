@@ -13,9 +13,9 @@ search.audienceType:
 
 # Copy or restore environments
 
-Environment management operations are a standard feature of model-driven apps in Dynamics 365 (Sales, Customer Service, Field Service, Customer Insights - Journeys, and Project Service Automation). Customer Insights - Journeys, introduces a couple of extra steps to ensure that your back-up data that isn't stored in Dataverse if you're managing across environments.
+Environment management operations are a standard feature of model-driven apps in Dynamics 365 (Sales, Customer Service, Field Service, Customer Insights - Journeys, and Project Service Automation). Customer Insights - Journeys, introduces a couple of extra steps to ensure that your back-up data that isn't stored in Dataverse if you're managing across environments or restoring an existing environment from backup.
 
-Customer Insights - Journeys services (including the marketing-insights service) run in parallel with your Customer Insights - Journeys environment, and thus follow their own lifecycle. These services aren't directly accessible to users, and the data they contain isn't included when copying, backing up, or restoring a Customer Insights - Journeys environment. This means that interaction records (such as email clicks and website visits) and files (such as those used in emails and marketing pages) aren't included when you copy, backup, or restore an environment.
+Customer Insights - Journeys services (including the marketing-insights service) run in parallel with your Customer Insights - Journeys environment, and thus follow their own lifecycle. These services aren't directly accessible to users, and the data they contain isn't included when copying, backing up, or restoring a Customer Insights - Journeys environment. This means that interaction records (such as email clicks and website visits) and files (such as those used in emails and marketing pages) aren't included when you copy, backup, or restore an environment except in the case where you backup and restore on the same environment. Only in that case the analytics data is maintained.
 
 > [!IMPORTANT]
 > This topic provides details about the exceptions that apply when working with environments where the Customer Insights - Journeys app is installed. For all other management tasks, see [Environments overview](/power-platform/admin/environments-overview), but read this topic first.
@@ -82,10 +82,10 @@ After creating your copy, you must complete the following steps:
 
 ## Create and restore backups
 
-As with copy operations, backup and restore operations typically require a few extra steps when Customer Insights - Journeys is installed.
+As with copy operations, backup and restore operations typically require a few extra steps when Customer Insights - Journeys is installed. 
 
 > [!IMPORTANT]
-> Unlike the copy operation or backup and restore to a different environment, backup and restore on the *same* environment maintains all of the analytics and interaction data. Analytics data are restored back to the point in time for which you have selected the restore, as long as you're restoring to the same environment. For all backup and restore operations, journeys and emails need to be republished to ensure that any journeys that ran during the period between the restore date and the current day are not inadvertently re-run, duplicating messaging to your customers.
+> Unlike the copy operation or backup and restore to a different environment, backup and restore on the *same* environment maintains all of the analytics and interaction data. Analytics data are restored back to the point in time for which you have selected the restore, as long as you're restoring to the same environment. For all backup and restore operations, journeys and emails need to be republished to ensure that any journeys that ran during the period between the restore date and the current day are not inadvertently re-run, duplicating messaging to your customers. Journeys are restored in a 'Stopped' state and cannot be restarted. However, if you have another environment on which you have been moving data to, from this environment using the Power Platform Configuration Migration Tool, you can use the Configuration Migration Tool to move the journeys back and because they have the same GUIDS it will force them into a 'Draft' state where they can be republished.
 
 > [!WARNING]
 > If you restore data in Customer Insights - Journeys, all consents will return to the state they were in at the time backup was made. This may result in consent data being obsolete. To avoid complications, export all consent data into Excel before starting the restore process and use it as a reference after the restore is completed.
@@ -115,9 +115,12 @@ As with automatic backups, on-demand backups include the full organizational dat
 1. Next to the environment choose **...**, **Backup and restore**, and then **Restore or manage**. 
 1. To select a **System** backup, choose a date and time or choose **Manual** to select a manual backup.
 1. On the side pane, select the current environment. 
-1. Select **Restore** to complete the action.
+1. Select **Restore** to complete the action. The analytics are maintained from the point at which the operation was run.
+1. Journeys will be in a 'Stopped' state and cannot be restarted. To republish the journeys you have two options: 
+    1. Copy the journey creating a new instance, validate the copy and publish it. 
+    1. If you have used the Power Platform Configuration Migration Tool to move data between environments and have instances of your journeys with the same GUIDs on another environment, you can move them back onto the restored environment, which will force the matching journey IDs into a 'Draft' state from which they can be published. 
 
-### Restore a backup onto another environment
+### Restore a backup onto another target environment
 
 You can easily restore any on-demand or automatic system backup to any available sandbox environment (other than the environment you took the backup from). But as with copy operations, you need to prepare the target environment first.
 
