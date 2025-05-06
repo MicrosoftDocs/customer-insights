@@ -4,7 +4,7 @@ description: Learn how to set up quiet times to avoid sending messages during un
 ms.date: 05/06/2025
 ms.topic: article
 author: alfergus
-ms.author: alfergus
+ms.author: colinbirkett
 search.audienceType: 
   - admin
   - customizer
