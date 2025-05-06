@@ -50,7 +50,12 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 - **Collect extra event attendee information without updating your data model** 
 	- Easily gather additional information about your event attendees by creating any question directly in the form editor without creating new custom attributes for your contact entity. For example, you can create fields to ask, “What is your meal preference?”, "How did you learn about this event?", or you can create contest questions to increase your customer engagement and to gather valuable insights that help you personalize the attendee experience. 
 	- [Release plan](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/collect-extra-event-attendee-information-without-updating-data-model) 
-	- [Docs](create-unmapped-fields-registration-forms.md)  
+	- [Docs](create-unmapped-fields-registration-forms.md)
+
+- **Tailor follow-up strategies by reacting to multiple customer actions at once** 
+	- Marketers can now create more personalized customer experiences by branching on multiple interactions within a single journey step. Using the "Wait for trigger" tile after a marketing message, journey designers can select "Previous message gets an interaction" and configure multiple triggers—like Email Opened, Email Blocked, or Email Bounced—on the same branch. This streamlines journey design by consolidating logic and enabling smarter engagement paths based on how recipients interact.
+	- [Release plan]() 
+	- [Docs]()
 
 #### Monthly enhancements
 
