@@ -21,9 +21,14 @@ The quiet times settings allow you to configure granular quiet times rules to re
 
 ## Time zone used for the quiet times setting
 
+> [!IMPORTANT]
+> A preview feature is a feature that is not complete, but is made available before it’s officially in a release so customers can get early access and provide feedback. Preview features aren’t meant for production use and may have limited or restricted functionality.
+> 
+> Microsoft doesn't provide support for this preview feature. Microsoft Dynamics 365 Technical Support won’t be able to help you with issues or questions. Preview features aren’t meant for production use, especially to process personal data or other data that are subject to legal or regulatory compliance requirements.
+
 To set up quiet times, you first need to choose the type of time zone that the quiet times rules will be applied to. This is an important because it determines how the quiet times rules are interpreted. 
 
-:::image type="content" source="media/quiet-time-time-zone.png" alt-text="Image description." lightbox="media/quiet-time-time-zone.png":::
+:::image type="content" source="media/quiet-time-time-zone.png" alt-text="Set quiet times based on time zone." lightbox="media/quiet-time-time-zone.png":::
 
 ### Journey time zone
 
@@ -40,16 +45,16 @@ Time zone information for each contact point type is predefined under **Audience
 
 ## Choose between general or advanced quiet times settings
 
-The following sections outline the two options you have when setting quiet times. There are general quiet times settings and advanced quiet times settings. For advanced quiet time settings, you can create conditions on specific attributes.
+The following sections outline two options you have when setting quiet times. There are general quiet times settings and advanced quiet times settings. For advanced quiet time settings, you can create conditions on specific attributes.
 
 ### General quiet times
 
 The general quiet times should be used when your audience is in a single geographical area or when you want to apply one simple, broad rule to avoid sending communications during certain hours. 
 The general quiet times can also be used as a default quiet times rule that will apply if none of the advanced quiet time conditions are met. 
 
-For example, Apply one quiet times rule for the whole USA.
+For example, apply one quiet times rule for the whole USA.
 
-:::image type="content" source="media/general-quiet-times.png" alt-text="Image description." lightbox="media/general-quiet-times.png":::
+:::image type="content" source="media/general-quiet-times.png" alt-text="An overview of general quiet times settings." lightbox="media/general-quiet-times.png":::
 
 ### Advanced quiet times
 
@@ -57,7 +62,7 @@ The advanced quiet times setting provides more granularity. It allows you to cre
 
 For example, Create one specific quiet times rule for the state of Texas, and another rule for Alabama. 
 
-:::image type="content" source="media/advanced-quiet-times.png" alt-text="Image description." lightbox="media/advanced-quiet-times.png":::
+:::image type="content" source="media/advanced-quiet-times.png" alt-text="An overview of advanced quiet times settings." lightbox="media/advanced-quiet-times.png":::
 
 > [!NOTE]
 > When several advanced quiet times rules are created, they're evaluated in order from top to bottom. The first matching rule is applied. If none matches it uses general quiet times as a default rule if it was configured.
@@ -74,7 +79,7 @@ You can base the conditions on the following attributes:
 
 For example, you might set a specific quiet times to apply if the contact country is USA and the state is Texas. Or if customer phone number begins with +123
 
-:::image type="content" source="media/quiet-times-set-conditions.png" alt-text="Image description." lightbox="media/quiet-times-set-conditions.png":::
+:::image type="content" source="media/quiet-times-set-conditions.png" alt-text="Create conditions for advanced quiet times." lightbox="media/quiet-times-set-conditions.png":::
 
 > [!NOTE]
 > When you're setting conditions to match specific values in your data, you need to account for variations in how those values might be recorded based on your database cleanliness. For example, if you're trying to match the state of Texas, your data might have different representations of Texas, such as "TX," "Texas," "tex," or "texas".
@@ -83,13 +88,13 @@ To ensure that your condition matches all possible variations, you can set multi
 
 To apply the quiet times the system will check if each audience member meets the condition (based on the mapped fields) before the journey runs. For Contact and Lead the mapped attribute fields are prepopulated, to update the fields, or add the mapping for CI-D Profile go to **Attribute mapping** tab.
 
-:::image type="content" source="media/quiet-times-attribute-mapping.png" alt-text="Image description." lightbox="media/quiet-times-attribute-mapping.png":::
+:::image type="content" source="media/quiet-times-attribute-mapping.png" alt-text="An overview of quiet times attribute mapping." lightbox="media/quiet-times-attribute-mapping.png":::
 
 ## Create your quiet times rules 
 
 Once you've chosen the type of quiet time setting, you can define several specific rules to tailor your communication strategy
 
-:::image type="content" source="media/quiet-times-rules.png" alt-text="Image description." lightbox="media/quiet-times-rules.png":::
+:::image type="content" source="media/quiet-times-rules.png" alt-text="Create quiet time rules." lightbox="media/quiet-times-rules.png":::
 
 ### Set different quiet times for commercial and transactional messages
 
@@ -117,7 +122,7 @@ To set up quiet times overnight, you need to create a separate evening quiet tim
 
 These are specific dates when you don't want any messages to be sent, such as public holidays or company-wide events. To set up quiet dates, choose the channel and then edit the "quiet date." Here, you can choose specific start and end dates when messages shouldn't be sent. You can use this interface to set up specific holidays or dates to prevent messages from being sent by channel.
 
-:::image type="content" source="media/quiet-times-dates.png" alt-text="Image description." lightbox="media/quiet-times-dates.png":::
+:::image type="content" source="media/quiet-times-dates.png" alt-text="Set up quiet dates." lightbox="media/quiet-times-dates.png":::
 
 ## Initial quiet time setting
 
@@ -133,7 +138,7 @@ You can also choose to change or disable quiet times for a specific message on a
 
 The number of messages held for quiet times shows on the journey to provide information.
 
-:::image type="content" source="media/quiet-times-and-journeys.png" alt-text="Image description." lightbox="media/quiet-times-and-journeys.png":::
+:::image type="content" source="media/quiet-times-and-journeys.png" alt-text="Apply quiet times in a journey." lightbox="media/quiet-times-and-journeys.png":::
 
 ## Quiet times and frequency caps
 
