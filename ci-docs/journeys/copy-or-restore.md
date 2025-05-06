@@ -105,7 +105,7 @@ You can create an on-demand backup at any time, but when Customer Insights - Jou
 1. [Open the installation management area](setup.md) and make sure that the Customer Insights - Journeys application and its related solutions are all up to date on your source environment, as described in [Keep Customer Insights - Journeys up to date](apply-updates.md).
 1. Create the on-demand backup as usual, as described in [Backup and restore environments](/power-platform/admin/backup-restore-environments).
 
-    :::image type="content" source="media/nstances-backup.png" alt-text="Create an on-demand backup." lightbox="media/nstances-backup.png":::
+    :::image type="content" source="media/instances-backup.png" alt-text="Create an on-demand backup." lightbox="media/instances-backup.png":::
 
 As with automatic backups, on-demand backups include the full organizational database, but not the interaction records or image files stored in the marketing services. For more information about how to export marketing-services data to blob storage, see [Create custom analytics with Power BI](custom-analytics.md).
 
