@@ -2,7 +2,7 @@
 title: Understanding the flow of a journey
 description: Learn about journey flow and tiles in Dynamics 365 Customer Insights - Journeys.
 ms.date: 11/28/2024
-ms.topic: article
+ms.topic: concept-article
 author: colinbirkett
 ms.author: colinbirkett
 search.audienceType: 
