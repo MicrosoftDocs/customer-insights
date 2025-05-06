@@ -23,7 +23,7 @@ The quiet times settings allow you to configure granular quiet times rules to re
 
 To set up quiet times, you first need to choose the type of time zone that the quiet times rules will be applied to. This is an important because it determines how the quiet times rules are interpreted. 
 
-![image](https://github.com/user-attachments/assets/813f42fb-2562-4c7d-a5d7-cb81734e5fa2)
+:::image type="content" source="media/quiet-time-time-zone.png" alt-text="Image description." lightbox="media/quiet-time-time-zone.png":::
 
 ### Journey time zone
 
@@ -40,14 +40,16 @@ Time zone information for each contact point type is predefined under **Audience
 
 ## Choose between general or advanced quiet times settings
 
+The following sections outline the two options you have when setting quiet times. There are general quiet times settings and advanced quiet times settings. For advanced quiet time settings, you can create conditions on specific attributes.
+
 ### General quiet times
 
 The general quiet times should be used when your audience is in a single geographical area or when you want to apply one simple, broad rule to avoid sending communications during certain hours. 
 The general quiet times can also be used as a default quiet times rule that will apply if none of the advanced quiet time conditions are met. 
 
-For example, Apply one quiet times rule for the whole USA. 
+For example, Apply one quiet times rule for the whole USA.
 
-![image](https://github.com/user-attachments/assets/f64389ef-359c-4dd9-85d3-4ccd0f06f94b)
+:::image type="content" source="media/general-quiet-times.png" alt-text="Image description." lightbox="media/general-quiet-times.png":::
 
 ### Advanced quiet times
 
@@ -55,7 +57,7 @@ The advanced quiet times setting provides more granularity. It allows you to cre
 
 For example, Create one specific quiet times rule for the state of Texas, and another rule for Alabama. 
 
-![image](https://github.com/user-attachments/assets/8cc330d9-bd3d-4575-82e1-04228c322def)
+:::image type="content" source="media/advanced-quiet-times.png" alt-text="Image description." lightbox="media/advanced-quiet-times.png":::
 
 > [!NOTE]
 > When several advanced quiet times rules are created, they're evaluated in order from top to bottom. The first matching rule is applied. If none matches it uses general quiet times as a default rule if it was configured.
@@ -63,17 +65,16 @@ For example, Create one specific quiet times rule for the state of Texas, and an
 #### Create conditions for advanced quiet times
 
 To create conditions for advanced quiet times, you need to specify the criteria for when the quiet times should be applied. 
+
 You can base the conditions on the following attributes: 
 
-•	Country/Region
+  •	Country/Region
+  •	State/Province
+  •	Phone Number
 
-•	State/Province
+For example, you might set a specific quiet times to apply if the contact country is USA and the state is Texas. Or if customer phone number begins with +123
 
-•	Phone Number
-
-For example, you might set a specific quiet times to apply if the contact country is USA and the state is Texas. Or if customer phone number begins with + 123
-
-![image](https://github.com/user-attachments/assets/75da7195-5693-4b87-a93e-c5947c262420)
+:::image type="content" source="media/quiet-times-set-conditions.png" alt-text="Image description." lightbox="media/quiet-times-set-conditions.png":::
 
 > [!NOTE]
 > When you're setting conditions to match specific values in your data, you need to account for variations in how those values might be recorded based on your database cleanliness. For example, if you're trying to match the state of Texas, your data might have different representations of Texas, such as "TX," "Texas," "tex," or "texas".
@@ -82,19 +83,19 @@ To ensure that your condition matches all possible variations, you can set multi
 
 To apply the quiet times the system will check if each audience member meets the condition (based on the mapped fields) before the journey runs. For Contact and Lead the mapped attribute fields are prepopulated, to update the fields, or add the mapping for CI-D Profile go to **Attribute mapping** tab.
 
-![image](https://github.com/user-attachments/assets/efb43947-d2ab-4ebe-b2f3-c51cc23f930f)
+:::image type="content" source="media/quiet-times-attribute-mapping.png" alt-text="Image description." lightbox="media/quiet-times-attribute-mapping.png":::
 
 ## Create your quiet times rules 
 
 Once you've chosen the type of quiet time setting, you can define several specific rules to tailor your communication strategy
 
-![image](https://github.com/user-attachments/assets/7a6ba099-c761-411c-a82e-7391ba629e21)
+:::image type="content" source="media/quiet-times-rules.png" alt-text="Image description." lightbox="media/quiet-times-rules.png":::
 
 ### Set different quiet times for commercial and transactional messages
 
 You can set different rules for commercial and transactional messages. Many organizations prefer not to send commercial messages at odd hours to avoid annoying customers, but they might want transactional messages (like order confirmations or password resets) to be sent immediately regardless of the time.
 
-### 	Set different quiet times by message channel
+### Set different quiet times by message channel
 
 You can also differentiate quiet times based on the communication channel. For instance, customers might be more sensitive about receiving calls and text messages during off-hours compared to emails. Therefore, you can set stricter quiet times for text messages while allowing emails to be sent during a broader range of hours.
 
@@ -116,7 +117,7 @@ To set up quiet times overnight, you need to create a separate evening quiet tim
 
 These are specific dates when you don't want any messages to be sent, such as public holidays or company-wide events. To set up quiet dates, choose the channel and then edit the "quiet date." Here, you can choose specific start and end dates when messages shouldn't be sent. You can use this interface to set up specific holidays or dates to prevent messages from being sent by channel.
 
-![image](https://github.com/user-attachments/assets/6f0d66ef-fb5f-4212-bfe9-11eebae2b4c3)
+:::image type="content" source="media/quiet-times-dates.png" alt-text="Image description." lightbox="media/quiet-times-dates.png":::
 
 ## Initial quiet time setting
 
@@ -132,7 +133,7 @@ You can also choose to change or disable quiet times for a specific message on a
 
 The number of messages held for quiet times shows on the journey to provide information.
 
-![image](https://github.com/user-attachments/assets/f09bac2e-904e-491b-9a9d-520343a62b56)
+:::image type="content" source="media/quiet-times-and-journeys.png" alt-text="Image description." lightbox="media/quiet-times-and-journeys.png":::
 
 ## Quiet times and frequency caps
 
