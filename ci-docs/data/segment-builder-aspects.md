@@ -31,7 +31,7 @@ The following image illustrates the various aspects of the segment builder. It s
 
 1. Undo and redo changes while building the segment.
 
-The example illustrates the segmentation capability. We've defined a segment for customers who bought at least $500 of goods online *and* have an interest in software development.
+The example illustrates the segmentation capability. We've defined a segment for customers who bought goods online in March, June, or the last 20 days *and* spent $500 or more or earned 100 reward points or more.
 
 ## Segment builder tips
 
