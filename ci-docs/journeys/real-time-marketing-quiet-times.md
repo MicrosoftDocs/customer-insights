@@ -27,15 +27,15 @@ To set up quiet times, you first need to choose the type of time zone that the q
 
 ### Journey time zone
 
-If you select the Journey time zone, we will use the journey’s time zone to apply the quiet times. For example, if you set the journey time zone to be (GMT-5:00) Eastern Time (US & Canada), the quiet times and days applied to messages in that journey follow that time zone. 
+If you select the Journey time zone, we'll use the journey’s time zone to apply the quiet times. For example, if you set the journey time zone to be (GMT-5:00) Eastern Time (US & Canada), the quiet times and days applied to messages in that journey follow that time zone. 
 
 ### Audience time zone
 
-If you choose the Audience time zone, the quiet times will be interpreted based on the time zone of each individual in your audience. This means that the system will use the time zone information provided for each contact, lead, or Customer Insights profile to apply the quiet times rules appropriately. 
+If you choose the Audience time zone, the quiet times are interpreted based on the time zone of each individual in your audience. This means that the system will use the time zone information provided for each contact, lead, or Customer Insights profile to apply the quiet times rules appropriately. 
 
 Time zone information for each contact point type is predefined under **Audience configuration** > **Contact point type** > **Time zone field**. If necessary, you can update it and select a different time zone format field for each type of Audience (contacts, leads, or Customer Insights profiles) and each contact point type. 
 > [!NOTE]
-> If no time zone field is assigned under Audience configuration, the Quiet times will default to the journey time zone. 
+> If no time zone field is assigned under Audience configuration, the Quiet times defaults to the journey time zone. 
 
 
 ## Choose between general or advanced quiet times settings
@@ -45,7 +45,7 @@ Time zone information for each contact point type is predefined under **Audience
 The general quiet times should be used when your audience is in a single geographical area or when you want to apply one simple, broad rule to avoid sending communications during certain hours. 
 The general quiet times can also be used as a default quiet times rule that will apply if none of the advanced quiet time conditions are met. 
 
-E.g., Apply one quiet times rule for the whole USA. 
+For example, Apply one quiet times rule for the whole USA. 
 
 ![image](https://github.com/user-attachments/assets/f64389ef-359c-4dd9-85d3-4ccd0f06f94b)
 
@@ -53,12 +53,12 @@ E.g., Apply one quiet times rule for the whole USA.
 
 The advanced quiet times setting provides more granularity. It allows you to create multiple quiet times rules based on specific conditions, such as Country/Region, State/Province, and Phone Number. This setting is particularly beneficial for businesses with a diverse customer base spread across geos. By using advanced settings, you can ensure that communications are respecting local regulations and time preferences. 
 
-E.g., Create one specific quiet times rule for the state of Texas, and another rule for Alabama. 
+For example, Create one specific quiet times rule for the state of Texas, and another rule for Alabama. 
 
 ![image](https://github.com/user-attachments/assets/8cc330d9-bd3d-4575-82e1-04228c322def)
 
 > [!NOTE]
-> When several advanced quiet times rules are created, they are evaluated in order from top to bottom. The first matching rule is applied. If none matches it uses general quiet times as a default rule if it was configured.
+> When several advanced quiet times rules are created, they're evaluated in order from top to bottom. The first matching rule is applied. If none matches it uses general quiet times as a default rule if it was configured.
 
 #### Create conditions for advanced quiet times
 
@@ -71,7 +71,7 @@ You can base the conditions on the following attributes:
 
 •	Phone Number
 
-E.g., you might set a specific quiet times to apply if the contact country is USA and the state is Texas. Or if customer phone number begins with + 123
+For example, you might set a specific quiet times to apply if the contact country is USA and the state is Texas. Or if customer phone number begins with + 123
 
 ![image](https://github.com/user-attachments/assets/75da7195-5693-4b87-a93e-c5947c262420)
 
@@ -105,12 +105,12 @@ For instance, you could set up quiet times for email to be all day on the weeken
 
 ### Set up overnight quiet times
 
-To set up quiet times overnight, you need to create a separate evening quiet time and morning quiet time for each day. e.g. if you never want to send messages after 6:00 PM and before 8:00 AM, you can create two quiet time settings for the channel:
+To set up quiet times overnight, you need to create a separate evening quiet time and morning quiet time for each day. For example, if you never want to send messages after 6:00 PM and before 8:00 AM, you can create two quiet time settings for the channel:
 - One time for every day from 6:00 PM to midnight
 - One time from midnight to 8:00 AM
 
 > [!NOTE]
-> You can set up quiet times for a maximum of three consecutive days, as otherwise it may cause the message queue to excessively back-up and messages won't get delivered. Quiet times only apply to content sent from journeys.
+> You can set up quiet times for a maximum of three consecutive days, as otherwise it may cause the message queue to excessively back up and messages won't get delivered. Quiet times only apply to content sent from journeys.
 
 ### Set up quiet dates
 
