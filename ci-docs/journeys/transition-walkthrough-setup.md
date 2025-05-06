@@ -2,7 +2,7 @@
 title: Setup changes in real-time journeys
 description: How setting up real-time journeys differs from outbound marketing setup in Dynamics 365 Customer Insights - Journeys.
 ms.date: 11/16/2023
-ms.topic: article
+ms.topic: install-set-up-deploy
 author: alfergus
 ms.author: alfergus
 search.audienceType: 

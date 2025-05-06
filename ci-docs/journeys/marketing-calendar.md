@@ -2,7 +2,7 @@
 title: View and create time-based items with the marketing calendar
 description: How to see and create time-based items like journeys, events, sessions, and appointments, using marketing calendars in Dynamics 365 Customer Insights - Journeys.
 ms.date: 08/21/2023
-ms.topic: article
+ms.topic: how-to
 author: alfergus
 ms.author: alfergus
 search.audienceType: 

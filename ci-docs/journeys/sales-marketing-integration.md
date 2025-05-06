@@ -2,7 +2,7 @@
 title: Integrate Sales and Customer Insights - Journeys
 description: An overview of how Dynamics 365 Customer Insights - Journeys can work together with Dynamics 365 Sales to help marketers and salespeople collaborate all the way from inquiry to close.
 ms.date: 08/23/2023
-ms.topic: article
+ms.topic: how-to
 author: alfergus
 ms.author: alfergus
 search.audienceType: 

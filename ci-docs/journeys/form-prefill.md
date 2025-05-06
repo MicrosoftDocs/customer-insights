@@ -2,7 +2,7 @@
 title: Enable prefilling for marketing forms
 description: How to set up your marketing forms to support prefilling of form fields for returning contacts in Dynamics 365 Customer Insights - Journeys.
 ms.date: 08/18/2023
-ms.topic: article
+ms.topic: how-to
 author: alfergus
 ms.author: alfergus
 search.audienceType: 

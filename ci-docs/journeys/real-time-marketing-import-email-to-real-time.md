@@ -2,7 +2,7 @@
 title: Import outbound emails, templates, and content blocks
 description: Learn how to import outbound emails, templates, and content blocks in Dynamics 365 Customer Insights - Journeys.
 ms.date: 08/22/2023
-ms.topic: article
+ms.topic: how-to
 author: alfergus
 ms.author: alfergus
 search.audienceType: 

@@ -2,7 +2,7 @@
 title: Set up form double opt-in in outbound marketing
 description: How to set up form double opt-in to let contacts confirm new subscriptions in outbound marketing.
 ms.date: 09/20/2023
-ms.topic: article
+ms.topic: how-to
 author: alfergus
 ms.author: alfergus
 search.audienceType: 

@@ -2,7 +2,7 @@
 title: Use AI to check your message-content spam score
 description: How to check the content of your email messages to see whether they might get flagged as spam by recipient systems in Dynamics 365 Customer Insights - Journeys.
 ms.date: 03/29/2024
-ms.topic: article
+ms.topic: how-to
 author: alfergus
 ms.author: alfergus
 search.audienceType: 

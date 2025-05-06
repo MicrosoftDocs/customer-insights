@@ -2,7 +2,7 @@
 title: Set up the LinkedIn Lead Gen integration and define lead matching
 description: Map lead fields and match leads between LinkedIn to Dynamics 365 Customer Insights - Journeys.
 ms.date: 08/12/2024
-ms.topic: article
+ms.topic: how-to
 author: alfergus
 ms.author: alfergus
 search.audienceType: 

@@ -2,7 +2,7 @@
 title: Open the event management work area 
 description: Explains how to access event-management features in Dynamics 365 Customer Insights - Journeys.
 ms.date: 01/24/2025
-ms.topic: article
+ms.topic: how-to
 author: alfergus
 ms.author: alfergus
 search.audienceType: 

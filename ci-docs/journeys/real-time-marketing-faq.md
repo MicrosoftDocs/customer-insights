@@ -2,7 +2,7 @@
 title: Troubleshoot Customer Insights - Journeys
 description: Troubleshooting and frequently asked questions for Customer Insights - Journeys
 ms.date: 08/22/2023
-ms.topic: article
+ms.topic: troubleshooting-general
 author: alfergus
 ms.author: alfergus
 search.audienceType: 

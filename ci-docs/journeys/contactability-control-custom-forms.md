@@ -2,7 +2,7 @@
 title: Add a contactability grid control to custom forms
 description: Learn how to add contactability grid control to custom forms.
 ms.date: 03/20/2024
-ms.topic: article
+ms.topic: how-to
 author: alfergus
 ms.author: alfergus
 search.audienceType: 
