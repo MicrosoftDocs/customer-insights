@@ -2,7 +2,7 @@
 title: Matching rules for Customer Insights - Journeys
 description: Create custom matching rules to avoid creating duplicate records in forms and journeys.
 ms.date: 03/26/2025
-ms.topic: article
+ms.topic: how-to
 author: petrjantac
 ms.author: colinbirkett
 search.audienceType: 
