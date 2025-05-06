@@ -3,7 +3,7 @@ title: "Data enrichment (preview) overview"
 description: "Learn how enrichments can improve your data and your insights."
 ms.date: 02/01/2024
 ms.reviewer: mhart
-ms.topic: conceptual
+ms.topic: concept-article
 author: jodahlMSFT
 ms.author: jodahl
 ms.collection: get-started
