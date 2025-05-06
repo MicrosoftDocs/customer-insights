@@ -3,7 +3,7 @@ title: Customer-managed keys in Dynamics 365 Customer Insights - Data
 description: Manage your encryption of data at rest with customer-managed keys.
 ms.date: 02/06/2024
 ms.reviewer: mhart
-ms.topic: conceptual
+ms.topic: article
 author: Scott-Stabbert
 ms.author: sstabbert
 ms.custom: bap-template
