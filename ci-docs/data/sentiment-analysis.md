@@ -3,7 +3,7 @@ title: Analyze sentiment for customer feedback (preview)
 description: Learn how to use a sentiment analysis model on customer feedback in Dynamics 365 Customer Insights - Data."
 ms.date: 09/01/2023
 ms.reviewer: mhart
-ms.topic: conceptual
+ms.topic: how-to
 author: wmelewong 
 ms.author: wameng
 ms.collection: bap-ai-copilot 

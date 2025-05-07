@@ -4,7 +4,7 @@ description: Responsible AI FAQs provide information about the AI technology use
 ms.date: 11/12/2024
 ms.custom: 
   - responsible-ai-faqs
-ms.topic: article
+ms.topic: faq
 author: radsay01
 ms.author: rsayyaparaju
 ms.reviewer: mhart

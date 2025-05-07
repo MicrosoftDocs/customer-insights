@@ -2,7 +2,7 @@
 title: "Use unified profiles in Dynamics 365 Customer Insights - Journeys"
 description: "Learn how to integrate unified profiles and segments with Dynamics 365 Customer Insights - Journeys."
 ms.date: 04/29/2024
-ms.topic: conceptual
+ms.topic: article
 author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart

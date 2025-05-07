@@ -4,7 +4,7 @@ description: This FAQ provides information about the AI technology used in segme
 ms.date: 10/23/2024
 ms.custom: 
   - responsible-ai-faqs
-ms.topic: article
+ms.topic: faq
 author: jimsonc
 ms.author: jimsonc
 ms.reviewer: m-hartmann

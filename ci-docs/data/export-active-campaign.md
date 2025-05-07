@@ -3,7 +3,7 @@ title: "Export segments to ActiveCampaign"
 description: "Learn how to configure the connection and export to ActiveCampaign."
 ms.date: 09/01/2023
 ms.reviewer: mhart
-ms.topic: conceptual
+ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
 ---

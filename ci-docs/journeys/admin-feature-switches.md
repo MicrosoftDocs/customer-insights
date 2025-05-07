@@ -126,7 +126,7 @@ The following tables list each available feature, preview status, and links for 
 | Feature switch | Preview or production | Description |
 |---|---|---|
 | Customer Voice integration | Production | [Enable Dynamics 365 Customer Voice integrations with Customer Insights - Journeys](customer-voice.md). |
-| Contact Center integration | Production | Enable Dynamics 365 Contact Center integrations with Customer Insights - Journeys. |
+<!-- Contact Center integration | Production | Enable Dynamics 365 Contact Center integrations with Customer Insights - Journeys. -->
 
 ## Compliance
 

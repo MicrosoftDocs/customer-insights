@@ -2,7 +2,7 @@
 title: Service limits in Dynamics 365 Customer Insights - Data
 description: Understand limits and restrictions in the Customer Insights - Data application.
 ms.date: 04/30/2024
-ms.topic: conceptual
+ms.topic: article
 author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart

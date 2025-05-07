@@ -3,7 +3,7 @@ title: "Real-time data ingestion (preview)"
 description: "General information about real-time capabilities in Dynamics 365 Customer Insights - Data."
 ms.date: 09/01/2023
 ms.reviewer: mhart
-ms.topic: conceptual
+ms.topic: article
 author: jimsonc
 ms.author: jimsonc
 searchScope: 
