@@ -3,7 +3,7 @@ title: "Manage the search & filter index for customer profiles"
 description: "Quickly find information about unified customer profiles and filter for specified attributes."
 ms.date: 09/19/2024
 ms.reviewer: mhart
-ms.topic: conceptual
+ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
 ms.custom: bap-template

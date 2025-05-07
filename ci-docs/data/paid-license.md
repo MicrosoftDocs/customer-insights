@@ -5,7 +5,7 @@ description: Purchase a license of Dynamics 365 Customer Insights, sign in, and 
 ms.author: jimsonc
 ms.reviewer: mhart
 ms.date: 04/29/2024
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: get-started
 ---
 

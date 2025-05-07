@@ -3,7 +3,7 @@ title: "Export diagnostic logs"
 description: "Learn how to send logs to Microsoft Azure Monitor."
 ms.date: 03/11/2025
 ms.reviewer: mhart
-ms.topic: article
+ms.topic: how-to
 author: brndkfr
 ms.author: bkief
 ---

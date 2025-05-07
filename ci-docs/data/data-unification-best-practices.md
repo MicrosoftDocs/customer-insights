@@ -3,7 +3,7 @@ title: Data unification best practices
 description: Learn about the concepts and best practices when unifying data in Customer Insights - Data.
 ms.date: 01/06/2025
 ms.reviewer: v-wendysmith
-ms.topic: conceptual
+ms.topic: best-practice
 author: Scott-Stabbert
 ms.author: sstabbert
 ms.custom: bap-template
