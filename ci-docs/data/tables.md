@@ -3,7 +3,7 @@ title: "Tables in Customer Insights - Data"
 description: "View data on the Tables page."
 ms.date: 05/06/2025
 ms.reviewer: mhart
-ms.topic: conceptual
+ms.topic: article
 author: Scott-Stabbert
 ms.author: sstabbert
 ---

@@ -3,7 +3,7 @@ title: "Export segments to Braze (preview)"
 description: "Learn how to configure the connection and export to Braze."
 ms.date: 03/06/2024
 ms.reviewer: mhart
-ms.topic: conceptual
+ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
 ---
