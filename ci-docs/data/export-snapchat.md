@@ -3,7 +3,7 @@ title: "Export segments to Snapchat (preview)"
 description: "Learn how to configure the connection and export to Snapchat."
 ms.date: 09/01/2023
 ms.reviewer: mhart
-ms.topic: conceptual
+ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
 ---

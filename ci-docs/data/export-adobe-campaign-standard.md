@@ -3,7 +3,7 @@ title: "Export segments to Adobe Campaign Standard (preview)"
 description: "Learn how use Customer Insights - Data segments in Adobe Campaign Standard."
 ms.date: 11/06/2024
 ms.reviewer: mhart
-ms.topic: conceptual
+ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
 ---

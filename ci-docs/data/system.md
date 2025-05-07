@@ -2,7 +2,7 @@
 title: "View system configuration"
 description: "Learn about system settings in Dynamics 365 Customer Insights - Data."
 ms.date: 11/13/2024
-ms.topic: conceptual
+ms.topic: how-to
 author: NimrodMagen
 ms.author: nimagen
 ms.reviewer: mhart

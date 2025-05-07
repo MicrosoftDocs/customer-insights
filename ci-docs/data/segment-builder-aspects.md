@@ -4,7 +4,7 @@ description: An example of the various aspects of segment builder in Dynamics 36
 author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: v-wendysmith
-ms.topic: conceptual
+ms.topic: article
 ms.date: 07/05/2023
 ms.custom: bap-template
 ---
