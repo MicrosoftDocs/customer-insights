@@ -4,7 +4,7 @@ description: This FAQ provides information about the AI technology docs-based Q&
 ms.date: 10/22/2024
 ms.custom:
   - responsible-ai-faqs
-ms.topic: conceptual
+ms.topic: faq
 author: jimsonc
 ms.author: jimsonc
 ms.reviewer: mhart
