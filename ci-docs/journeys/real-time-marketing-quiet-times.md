@@ -26,7 +26,7 @@ The quiet times settings allow you to configure granular quiet times rules to re
 > 
 > Microsoft doesn't provide support for this preview feature. Microsoft Dynamics 365 Technical Support won’t be able to help you with issues or questions. Preview features aren’t meant for production use, especially to process personal data or other data that are subject to legal or regulatory compliance requirements.
 
-To set up quiet times, you first need to choose the type of time zone that the quiet times rules will be applied to. This is an important because it determines how the quiet times rules are interpreted. 
+To set up quiet times, you first need to choose the type of time zone the quiet times rules will apply to. This is an important because it determines how the quiet times rules are interpreted. 
 
 :::image type="content" source="media/quiet-time-time-zone.png" alt-text="Set quiet times based on time zone." lightbox="media/quiet-time-time-zone.png":::
 
@@ -38,53 +38,48 @@ If you select the Journey time zone, we'll use the journey’s time zone to appl
 
 If you choose the Audience time zone, the quiet times are interpreted based on the time zone of each individual in your audience. This means that the system will use the time zone information provided for each contact, lead, or Customer Insights profile to apply the quiet times rules appropriately. 
 
-Time zone information for each contact point type is predefined under **Audience configuration** > **Contact point type** > **Time zone field**. If necessary, you can update it and select a different time zone format field for each type of Audience (contacts, leads, or Customer Insights profiles) and each contact point type. 
+Time zone information for each contact point type is predefined under **Audience configuration** > **Contact point type** > **Time zone field**. If necessary, you can update it and select a different time zone format field for each type of audience (such as contacts, leads, or Customer Insights profiles) and each contact point type. 
 > [!NOTE]
 > If no time zone field is assigned under Audience configuration, the Quiet times defaults to the journey time zone. 
 
 
 ## Choose between general or advanced quiet times settings
 
-The following sections outline two options you have when setting quiet times. There are general quiet times settings and advanced quiet times settings. For advanced quiet time settings, you can create conditions on specific attributes.
+The following sections outline two options you have when setting quiet times. These are *General* quiet times settings and *Advanced* quiet times settings. For advanced quiet time settings, you can create conditions on specific attributes.
 
 ### General quiet times
 
-The general quiet times should be used when your audience is in a single geographical area or when you want to apply one simple, broad rule to avoid sending communications during certain hours. 
-The general quiet times can also be used as a default quiet times rule that will apply if none of the advanced quiet time conditions are met. 
-
-For example, apply one quiet times rule for the whole USA.
+The General quiet times should be used when your audience is in a single geographical area or when you want to apply one simple, broad rule to avoid sending communications during certain hours. For example, you can apply one quiet times rule for the whole U.S. The General quiet times can also be used as a default quiet times rule that applies if none of the advanced quiet time conditions are met. 
 
 :::image type="content" source="media/general-quiet-times.png" alt-text="An overview of general quiet times settings." lightbox="media/general-quiet-times.png":::
 
 ### Advanced quiet times
 
-The advanced quiet times setting provides more granularity. It allows you to create multiple quiet times rules based on specific conditions, such as Country/Region, State/Province, and Phone Number. This setting is particularly beneficial for businesses with a diverse customer base spread across geos. By using advanced settings, you can ensure that communications are respecting local regulations and time preferences. 
-
-For example, Create one specific quiet times rule for the state of Texas, and another rule for Alabama. 
+The Advanced quiet times setting provides more specification. It allows you to create multiple quiet times rules based on specific conditions, such as country/region, state/province, or phone number. For example, you can create a specific quiet times rule for the state of Texas, and another for Alabama. This setting is particularly beneficial for businesses with a diverse customer base spread across geographies. Using advanced settings, you can ensure that communications respect local regulations and time preferences.  
 
 :::image type="content" source="media/advanced-quiet-times.png" alt-text="An overview of advanced quiet times settings." lightbox="media/advanced-quiet-times.png":::
 
 > [!NOTE]
-> When several advanced quiet times rules are created, they're evaluated in order from top to bottom. The first matching rule is applied. If none matches it uses general quiet times as a default rule if it was configured.
+> When several Advanced quiet times rules are created, they're evaluated from top to bottom. The first matching rule is applied. If no rule matches, you default to General quiet times if they were configured.
 
 #### Create conditions for advanced quiet times
 
-To create conditions for advanced quiet times, you need to specify the criteria for when the quiet times should be applied. 
+To create conditions for advanced quiet times, you need to specify the criteria for when the quiet times should apply. 
 
 You can base the conditions on the following attributes: 
 
-  •	Country/Region
-  •	State/Province
-  •	Phone Number
+•	Country/region
+•	State/province
+•	Phone number
 
-For example, you might set a specific quiet times to apply if the contact country is USA and the state is Texas. Or if customer phone number begins with +123
+For example, you might set a specific quiet times to apply if the contact country is the U.S. and the state is Texas, or from a customer's area code within their phone number.
 
 :::image type="content" source="media/quiet-times-set-conditions.png" alt-text="Create conditions for advanced quiet times." lightbox="media/quiet-times-set-conditions.png":::
 
 > [!NOTE]
 > When you're setting conditions to match specific values in your data, you need to account for variations in how those values might be recorded based on your database cleanliness. For example, if you're trying to match the state of Texas, your data might have different representations of Texas, such as "TX," "Texas," "tex," or "texas".
 
-To ensure that your condition matches all possible variations, you can set multiple conditions. You should add a new row for each variation of the value. For example, if state equals Texas, or if state equals TX, or if state equals tex, etc. Please note that values are case sensitive. By setting multiple conditions, you ensure that your data is matched accurately. 
+You can set conditions to ensure that your customers' situation matches all possible variations. You should add a new row for each variation of the value. For example, for Texas you if state equals Texas, or if state equals TX, or if state equals tex, etc. Please note that values are case sensitive. By setting multiple conditions, you ensure that your data is matched accurately. 
 
 To apply the quiet times the system will check if each audience member meets the condition (based on the mapped fields) before the journey runs. For Contact and Lead the mapped attribute fields are prepopulated, to update the fields, or add the mapping for CI-D Profile go to **Attribute mapping** tab.
 
