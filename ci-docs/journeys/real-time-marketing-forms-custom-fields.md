@@ -2,7 +2,7 @@
 title: "Preview: Create unmapped fields for marketing forms"
 description: Mapped and unmapped fields for forms in Dynamics 365 Customer Insights - Journeys.
 ms.date: 03/10/2025
-ms.topic: article
+ms.topic: how-to
 author: petrjantac
 ms.author: colinbirkett
 search.audienceType: 
