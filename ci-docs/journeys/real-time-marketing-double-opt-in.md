@@ -2,7 +2,7 @@
 title: Double opt-in in real-time journeys
 description: Learn how to use double opt-in in Dynamics 365 Customer Insights - Journeys.
 ms.date: 11/06/2024
-ms.topic: article
+ms.topic: how-to
 author: cbirkett
 ms.author: alfergus
 search.audienceType: 
