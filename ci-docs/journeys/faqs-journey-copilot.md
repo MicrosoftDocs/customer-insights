@@ -2,7 +2,7 @@
 title: Responsible AI FAQs for the journey copilot
 description: Discover how to use the journey copilot in Dynamics 365 Customer Insights - Journeys responsibly. These FAQs provide essential guidelines and best practices.
 ms.date: 11/22/2024
-ms.topic: article
+ms.topic: faq
 author: alfergus
 ms.author: alfergus
 ms.collection: bap-ai-copilot

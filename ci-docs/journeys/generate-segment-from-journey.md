@@ -2,7 +2,7 @@
 title: Generate segments based on customer journey results
 description: Explains how to automatically generate a behavioral segment that finds all contacts who did a particular thing during a specific customer journey.
 ms.date: 08/18/2023
-ms.topic: article
+ms.topic: how-to
 author: alfergus
 ms.author: alfergus
 search.audienceType: 

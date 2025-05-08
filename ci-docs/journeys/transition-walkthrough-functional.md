@@ -2,7 +2,7 @@
 title: Functional areas overview
 description: Overview of transitioning functional areas from outbound marketing to real-time journeys in Dynamics 365 Customer Insights - Journeys.
 ms.date: 10/08/2024
-ms.topic: article
+ms.topic: concept-article
 author: alfergus
 ms.author: alfergus
 search.audienceType: 

@@ -2,7 +2,7 @@
 title: Use AI-driven run-time channel optimization
 description: Use AI-driven run-time channel optimization for Customer Insights - Journeys.
 ms.date: 08/22/2023
-ms.topic: article
+ms.topic: how-to
 author: alfergus
 ms.author: alfergus
 search.audienceType: 

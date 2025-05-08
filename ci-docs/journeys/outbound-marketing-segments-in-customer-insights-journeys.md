@@ -2,7 +2,7 @@
 title: Best practices for outbound segments in real-time journeys
 description: Guidelines for using outbound marketing segments in Dynamics 365 Customer Insights - Journeys.
 ms.date: 03/19/2024
-ms.topic: article
+ms.topic: best-practice
 author: alfergus
 ms.author: alfergus
 search.audienceType: 

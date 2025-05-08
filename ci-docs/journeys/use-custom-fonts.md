@@ -2,7 +2,7 @@
 title: Use custom fonts in emails
 description: Learn how to use custom fonts in emails in Dynamics 365 Customer Insights - Journeys.
 ms.date: 12/12/2023
-ms.topic: article
+ms.topic: how-to
 author: alfergus
 ms.author: alfergus
 search.audienceType: 

@@ -2,7 +2,7 @@
 title: Deliver outbound marketing emails with quick send
 description: Learn how to use the outbound marketing quick send feature to address and send a marketing email message right from the email-design page in Dynamics 365 Customer Insights - Journeys.
 ms.date: 08/18/2023
-ms.topic: article
+ms.topic: how-to
 author: alfergus
 ms.author: alfergus
 search.audienceType: 

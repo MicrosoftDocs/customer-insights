@@ -5,7 +5,7 @@ ms.date: 05/01/2024
 ms.custom:
   - dyn365-admin
   - dyn365-marketing
-ms.topic: article
+ms.topic: best-practice
 author: alfergus
 ms.author: alfergus
 search.audienceType: 

@@ -2,7 +2,7 @@
 title: Installation and management FAQ
 description: Solutions to common questions and issues that can occur during the installation and management of Dynamics 365 Customer Insights - Journeys.
 ms.date: 08/18/2023
-ms.topic: article
+ms.topic: faq
 author: alfergus
 ms.author: alfergus
 search.audienceType: 

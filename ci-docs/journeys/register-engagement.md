@@ -2,7 +2,7 @@
 title: Register link clicks and website visits
 description: Set up your website to record visits from known and unknown contacts, and create redirect links that register clicks from anywhere in Dynamics 365 Customer Insights - Journeys.
 ms.date: 08/23/2023
-ms.topic: article
+ms.topic: how-to
 author: alfergus
 ms.author: alfergus
 search.audienceType: 

@@ -2,7 +2,7 @@
 title: Create a consent record using a cloud flow
 description: Learn how to create a consent record using a cloud flow in Dynamics 365 Customer Insights - Journeys.
 ms.date: 01/22/2024
-ms.topic: article
+ms.topic: how-to
 author: alfergus
 ms.author: alfergus
 search.audienceType: 

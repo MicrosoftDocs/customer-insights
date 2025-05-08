@@ -2,7 +2,7 @@
 title: Use segments from Dynamics 365 Customer Insights - Data
 description: Learn how to integrate Dynamics 365 Customer Insights - Journeys with Dynamics 365 Customer Insights - Data so you can share data and segments between the two systems.
 ms.date: 08/18/2023
-ms.topic: article
+ms.topic: how-to
 author: alfergus
 ms.author: alfergus
 search.audienceType: 

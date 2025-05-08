@@ -2,7 +2,7 @@
 title: 'Tutorial: Implement approval workflows in real-time journeys'
 description: Learn how to implement manual approval workflows in real-time journeys for Dynamics 365 Customer Insights - Journeys.
 ms.date: 01/15/2025
-ms.topic: article
+ms.topic: tutorial
 author: alfergus
 ms.author: alfergus
 search.audienceType:

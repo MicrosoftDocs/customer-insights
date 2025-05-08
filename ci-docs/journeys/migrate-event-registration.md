@@ -2,7 +2,7 @@
 title: Migrate outbound marketing event registration to real-time journeys
 description: Learn how to migrate outbound marketing event registration to real-time journeys in Dynamics 365 Customer Insights - Journeys.
 ms.date: 02/06/2025
-ms.topic: article
+ms.topic: upgrade-and-migration-article
 author: alfergus
 ms.author: alfergus
 search.audienceType:

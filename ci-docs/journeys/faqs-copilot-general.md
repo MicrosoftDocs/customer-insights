@@ -2,7 +2,7 @@
 title: Responsible AI FAQs for the Customer Insights - Journeys copilot preview
 description: The Responsible AI FAQs discuss the general copilot and the key considerations for making use of this technology responsibly.
 ms.date: 03/12/2024
-ms.topic: article
+ms.topic: faq
 author: alfergus
 ms.author: alfergus
 search.audienceType: 
