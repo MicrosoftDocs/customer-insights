@@ -13,7 +13,9 @@ search.audienceType:
 
 # Create a trigger-based journey
 
-Trigger-based customer journeys enable you to react to customers’ actions in real time. Journeys can be triggered based on real-world interactions like walking into a store and connecting to Wi-Fi. Journeys can also be triggered by virtual interactions such as visiting a shopping website. The real-time nature of the journey ensures that you can respond to customers immediately and convert their expression of interest into a sale.
+Trigger-based customer journeys enable you to react to customers’ actions in real time. Journeys can be triggered based on real-world interactions like walking into a store and connecting to Wi-Fi. Journeys can also be triggered by virtual interactions such as visiting a shopping website. The real-time nature of the journey ensures that you can respond to customers immediately and convert their expression of interest into a sale. 
+
+Trigger based journeys are best for triggers that are initiated by your end customers such as clicking on a website link, submitting a form, visiting a store, or making a purchase. For business events such as the billing cycle is ready or the lottery results are available you should use a segment based journey and ensure that there is an attribute on the Contact or Lead which is updated to ensure they enter the segment and then the journey. If you use a trigger to start a journey for a business event, it will raise the trigger for every Contact or Lead and likely exceed the fair use policy for triggers.
 
 ## Creating a trigger-based journey for abandoned cart reminders
 

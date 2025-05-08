@@ -23,7 +23,11 @@ search.audienceType:
 
 ### Can I convert the trial to a paid license?
 
-To buy a license directly, go to **admin.microsoft.com** > **Purchase Services** and search for "Customer Insights." Once you have the license, you can convert the trial environment to paid in the Power Platform Admin center by selecting the environment and selecting **Convert to Production**.
+To buy a license directly, go to **admin.microsoft.com** > **Purchase Services** and search for "Customer Insights." Once you have the license, you can convert the trial environment for Customer Insights - Journeys to paid in the Power Platform Admin center by selecting the environment and selecting **Convert to Production**. This will change the environment type from 'Trial' to 'Production'. 
+
+There are additional steps if you also used Customer Insights - Data and want to preserve your work from that trial. Please visit [Customer Insights - Data Trial FAQ](customer-insights/data/trial-faq) for details on how to preserve your configurations from the Data trial to the production environment.
+
+For 
 
 ### How do I start using the trial?
 
