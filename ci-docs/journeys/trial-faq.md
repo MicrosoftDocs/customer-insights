@@ -1,11 +1,11 @@
 ---
 title: Customer Insights - Journeys trial FAQ
 description: Solutions to common questions related to Dynamics 365 Customer Insights trial setup and management. Learn how to resolve platform and app-specific issues.
-ms.date: 03/22/2024
+ms.date: 05/08/2025
 ms.topic: get-started
 ms.custom: template-trial-faq
 author: alfergus
-ms.author: alfergus
+ms.author: colinbirkett
 search.audienceType: 
   - admin
   - customizer
@@ -17,17 +17,17 @@ search.audienceType:
 [!INCLUDE [azure-ad-to-microsoft-entra-id](./includes/azure-ad-to-microsoft-entra-id.md)]
 
 > [!NOTE]
-> For the Customer Insights trial, you'll need to use an account that is managed by [Microsoft Microsoft Entra ID](https://azure.microsoft.com/services/active-directory/). If you cannot sign up for Customer Insights using a work or school email address, sign up for a [free Office 365 E5 trial](https://www.microsoft.com/microsoft-365/enterprise/office-365-e5), then use the email address associated with your Office 365 E5 trial to sign up for the Customer Insights trial.
+> For the Customer Insights trial, you need to use an account that is managed by [Microsoft Microsoft Entra ID](https://azure.microsoft.com/services/active-directory/). If you cannot sign up for Customer Insights using a work or school email address, sign up for a [free Office 365 E5 trial](https://www.microsoft.com/microsoft-365/enterprise/office-365-e5), then use the email address associated with your Office 365 E5 trial to sign up for the Customer Insights trial.
 
 ## Customer Insights-specific questions
 
+The following are frequently asked questions regarding using a Customer Insights - Journeys trial.
+
 ### Can I convert the trial to a paid license?
 
-To buy a license directly, go to **admin.microsoft.com** > **Purchase Services** and search for "Customer Insights." Once you have the license, you can convert the trial environment for Customer Insights - Journeys to paid in the Power Platform Admin center by selecting the environment and selecting **Convert to Production**. This will change the environment type from 'Trial' to 'Production'. 
+To buy a license directly, go to **admin.microsoft.com** > **Purchase Services** and search for "Customer Insights." Once you have the license, you can convert the trial environment for Customer Insights - Journeys to paid in the Power Platform Admin center by selecting the environment and selecting **Convert to Production**. This changes the environment type from 'Trial' to 'Production'. 
 
 There are additional steps if you also used Customer Insights - Data and want to preserve your work from that trial. Please visit [Customer Insights - Data Trial FAQ](customer-insights/data/trial-faq) for details on how to preserve your configurations from the Data trial to the production environment.
-
-For 
 
 ### How do I start using the trial?
 
@@ -37,13 +37,13 @@ After you sign up for the trial, you'll arrive on the app's main screen. The mai
 
 In most ways, Customer Insights trials are fully functional, but time-limited, production instances. The features now include Customer Insights - Journeys *and* Customer Insights - Data apps, allowing you to:
 
-- Trials include real-time journeys features only. All new feature development and product investments are centralized in real-time journeys; therefore, our pre-sales trial showcases our product direction for new customers. 
+- Trials include real-time journeys features only. All new feature development and product investments are centralized in real-time journeys; therefore, our presales trial showcases our product direction for new customers. 
 - Engage customers with trigger-based journeys, dynamics segments, and segments based on profiles from the Customer Insights – Data app.
 - Unify your customer data with Customer Insights - Data.
 
 However, there are a few key differences from the production version:
 
-- Each Customer Insights trial comes pre-installed on a dedicated trial instance included with the trial. You can't install a Customer Insights trial on an existing instance.
+- Each Customer Insights trial comes preinstalled on a dedicated trial instance included with the trial. You can't install a Customer Insights trial on an existing instance.
 - You can't uninstall or reinstall trials using the standard tools provided by the Power Platform admin center. Trials are special and are handled differently than production instances.
 - You don't need to use the [installation management area](setup.md#install-uninstall-or-update-customer-insights) when setting up a trial.
 
