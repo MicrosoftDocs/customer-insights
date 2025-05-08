@@ -522,16 +522,14 @@
     href: real-time-marketing-faq.md
 - name: Conversational journeys
   items:
-  - name: Conversational journeys
-    items:
-    - name: Overview
-      href: conversational-journeys-overview.md
-    - name: Prerequisites
-      href: conversational-journeys-prerequisites.md
-    - name: Concepts
-      href: proactive-engagement-concepts.md
-    - name: How to
-      href: proactive-engagement-how-to.md
+  - name: Overview
+    href: conversational-journeys-overview.md
+  - name: Prerequisites
+    href: conversational-journeys-prerequisites.md
+  - name: Concepts
+    href: proactive-engagement-concepts.md
+  - name: How to
+    href: proactive-engagement-how-to.md
 - name: Develop and extend
   items:
   - name: Manually add a custom channel

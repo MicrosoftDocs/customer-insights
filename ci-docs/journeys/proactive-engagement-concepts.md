@@ -13,4 +13,4 @@ search.audienceType:
 
 # Concepts
 
-Add text.
+Add text
