@@ -2,7 +2,7 @@
 title: Set up session-level registration and waitlisting in outbound marketing
 description: Describes how to set up session-level registration and how it differs from event-level registration in outbound marketing.
 ms.date: 09/22/2023
-ms.topic: article
+ms.topic: how-to
 author: alfergus
 ms.author: alfergus
 search.audienceType: 

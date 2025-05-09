@@ -2,7 +2,7 @@
 title: Create scoring models for Customer Insights - Journeys
 description: Learn how to create scoring models in Dynamics 365 Customer Insights - Journeys.
 ms.date: 06/26/2024
-ms.topic: article
+ms.topic: how-to
 author: alfergus
 ms.author: alfergus
 search.audienceType: 

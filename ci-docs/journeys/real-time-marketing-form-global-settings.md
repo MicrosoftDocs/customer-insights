@@ -2,7 +2,7 @@
 title: Set the default configuration for forms
 description: Set the default configuration for all newly created forms in Dynamics 365 Customer Insights - Journeys.
 ms.date: 12/12/2024
-ms.topic: article
+ms.topic: how-to
 author: petrjantac
 ms.author: alfergus
 search.audienceType: 

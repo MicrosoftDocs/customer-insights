@@ -2,7 +2,7 @@
 title: Map form data to entities with custom workflows in outbound marketing
 description: Map form data to entities in outbound marketing workflows. Learn how to create custom workflows to process form submissions and update entities effectively.
 ms.date: 04/14/2025
-ms.topic: article
+ms.topic: how-to
 author: alfergus
 ms.author: alfergus
 search.audienceType:

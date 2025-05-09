@@ -2,7 +2,7 @@
 title: "Feedback loop: What is it and how to prevent complaints"
 description: Describes what a feedback loop is in Dynamics 365 Customer Insights - Journeys.
 ms.date: 08/07/2024
-ms.topic: article
+ms.topic: concept-article
 author: colinbirkett
 ms.author: colinbirkett
 search.audienceType: 

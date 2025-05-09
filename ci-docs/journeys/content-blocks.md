@@ -2,7 +2,7 @@
 title: Create content blocks that you can reuse in multiple designs
 description: How to create reusable content blocks and use them in your email designs in Dynamics 365 Customer Insights - Journeys.
 ms.date: 12/15/2023
-ms.topic: article
+ms.topic: how-to
 author: alfergus
 ms.author: alfergus
 search.audienceType: 

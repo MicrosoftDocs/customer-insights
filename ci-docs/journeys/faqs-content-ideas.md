@@ -2,7 +2,7 @@
 title: Responsible AI FAQs for content ideas
 description: Learn about the responsible use of AI for generating email content in Dynamics 365 Customer Insights - Journeys. Discover best practices.
 ms.date: 11/22/2024
-ms.topic: article
+ms.topic: faq
 author: alfergus
 ms.author: alfergus
 ms.collection: bap-ai-copilot
