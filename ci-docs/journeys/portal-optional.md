@@ -2,7 +2,7 @@
 title: Integrate outbound marketing with a CMS system, Dynamics 365 Portals, or Power Apps portals
 description: Learn how to integrate Dynamics 365 Portals, Power Apps portals, or your CMS system with outbound marketing for interactive features like landing pages and subscription centers.
 ms.date: 04/14/2025
-ms.topic: article
+ms.topic: how-to
 author: alfergus
 ms.author: alfergus
 search.audienceType:

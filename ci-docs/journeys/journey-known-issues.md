@@ -2,7 +2,7 @@
 title: Known issues for journeys
 description: Learn about known issues related to real-time journeys functionality in Dynamics 365 Customer Insights - Journeys.
 ms.date: 03/29/2024
-ms.topic: article
+ms.topic: troubleshooting-known-issue
 author: alfergus
 ms.author: alfergus
 search.audienceType: 

@@ -2,7 +2,7 @@
 title: Personalize lists of content in emails
 description: Learn how to personalize lists in Dynamics 365 Customer Insights - Journeys.
 ms.date: 01/17/2024
-ms.topic: article
+ms.topic: how-to
 author: alfergus
 ms.author: alfergus
 search.audienceType: 

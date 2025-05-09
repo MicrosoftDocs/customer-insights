@@ -2,7 +2,7 @@
 title: Migrate outbound marketing event registration to real-time journeys
 description: Learn how to migrate outbound marketing event registration to real-time journeys in Dynamics 365 Customer Insights - Journeys.
 ms.date: 02/06/2025
-ms.topic: article
+ms.topic: upgrade-and-migration-article
 author: alfergus
 ms.author: alfergus
 search.audienceType:
@@ -22,7 +22,7 @@ There were multiple options on how to build event registration experience in out
 
 1. Event portal hosted on Power Portals.
 1. Event portal *not* hosted on Power Portals.
-1. Outbound marketing form for event registration published in an outbound marketing marketing page.
+1. Outbound marketing form for event registration published in an outbound marketing page.
 1. Custom solution using the outbound marketing event management API, not using an Angular app.
 
 The next sections detail each outbound marketing event registration experience and how to transition them to real-time journeys events.
@@ -46,7 +46,7 @@ An alternative is to build a new event registration website using Power Pages st
 
 ## Outbound marketing event registration marketing form
 
-Outbound marketing marketing forms are being deprecated along with the outbound marketing module.
+Outbound marketing forms are being deprecated along with the outbound marketing module.
 
 The recommended migration path for event registration marketing forms is to replace them with real-time journeys event registration forms. Real-time journeys event registration forms can be embedded into your website, embedded within Power Pages, or hosted as standalone pages. Learn more: [Open the event management work area](open-events.md).
 
@@ -79,6 +79,6 @@ After outbound marketing is removed, marketing pages hosted on Power Portals wil
 - Marketing page lifecycle
 - Marketing page editor
 
-The underlying Power Pages data model used to host the marketing pages will be deprecated, which means that you'll need to migrate the whole portal to a new data model. Given the limitations, we strongly recommend rebuilding outbound marketing marketing pages as a native Power Pages website. You can embed a real-time journeys marketing form into the Power Pages website. For a simple landing page with a form, you can also build a real-time journeys form and host it as a standalone page.
+The underlying Power Pages data model used to host the marketing pages will be deprecated, which means that you'll need to migrate the whole portal to a new data model. Given the limitations, we strongly recommend rebuilding outbound marketing pages as a native Power Pages website. You can embed a real-time journeys marketing form into the Power Pages website. For a simple landing page with a form, you can also build a real-time journeys form and host it as a standalone page.
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]

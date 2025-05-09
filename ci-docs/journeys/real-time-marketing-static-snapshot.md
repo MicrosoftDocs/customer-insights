@@ -2,7 +2,7 @@
 title: Create a static snapshot of a segment
 description: Learn how to create static segment snapshots in Customer Insights - Journeys
 ms.date: 03/31/2025
-ms.topic: article
+ms.topic: how-to
 author: alfergus
 ms.author: alfergus
 search.audienceType: 

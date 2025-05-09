@@ -3,7 +3,7 @@ title: Use customer consent
 description: "Honor you customers' consent preferences in Customer Insights by importing consent data."
 ms.date: 06/19/2024
 ms.reviewer: mhart
-ms.topic: conceptual
+ms.topic: how-to
 author: Scott-Stabbert 
 ms.author: sstabbert
 ---

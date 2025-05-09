@@ -2,7 +2,7 @@
 title: Transition events from outbound marketing to real-time journeys
 description: Learn how to transition event management capabilities from outbound marketing to real-time journeys in Dynamics 365 Customer Insights - Journeys.
 ms.date: 02/25/2025
-ms.topic: article
+ms.topic: how-to
 author: colinbirkett
 ms.author: colinbirkett
 search.audienceType: 
@@ -98,7 +98,7 @@ There were multiple options on how to build an event registration experience in 
 
 - **Event portal hosted on Power Portals** – Build a new event registration website using the Power Pages template. For more information, see [Build an event registration website using Power Pages](event-portal-template.md).
 - **Event portal not hosted on Power Portals** – The recommended migration path is to build a new event registration experience using the new code snippet listing once available.
-- **Outbound marketing marketing form for event registration** – Replace these forms with real-time journeys event registration forms. For more information, see [Open the event management work area](open-events.md).
+- **Outbound marketing form for event registration** – Replace these forms with real-time journeys event registration forms. For more information, see [Open the event management work area](open-events.md).
 - **Custom solution using outbound marketing event management API (not using Angular application)** – Use the new events API. For more information, see [Using the events API in real-time journeys](developer/using-rtm-events-api.md).
 
 ## Frequently asked questions

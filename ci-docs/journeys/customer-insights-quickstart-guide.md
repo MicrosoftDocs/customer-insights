@@ -2,7 +2,7 @@
 title: Customer Insights quickstart guide
 description: Customer Insights quickstart guide
 ms.date: 12/18/2023
-ms.topic: article
+ms.topic: quickstart
 author: alfergus
 ms.author: alfergus
 search.audienceType: 

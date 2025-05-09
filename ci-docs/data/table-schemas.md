@@ -3,7 +3,7 @@ title: "Table schemas in Common Data Model"
 description: "Work with tables in Common Data Model."
 ms.date: 09/01/2023
 ms.reviewer: mhart
-ms.topic: conceptual
+ms.topic: article
 author: Scott-Stabbert
 ms.author: sstabbert
 ms.custom: bap-template

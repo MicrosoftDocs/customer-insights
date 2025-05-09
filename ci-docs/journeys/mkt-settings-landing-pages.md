@@ -2,7 +2,7 @@
 title: Landing page configuration in outbound marketing
 description: Set up a privacy banner, set hosting defaults, and configure defaults for how data submitted through a landing page form is matched to existing contact or lead records in outbound marketing.
 ms.date: 08/21/2023
-ms.topic: article
+ms.topic: concept-article
 author: alfergus
 ms.author: alfergus
 search.audienceType: 

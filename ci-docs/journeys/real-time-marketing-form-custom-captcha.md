@@ -2,7 +2,7 @@
 title: Integrate a custom captcha service with Customer Insights - Journeys forms 
 description: Learn how to integrate custom captcha bot protection into forms in Dynamics 365 Customer Insights - Journeys.
 ms.date: 12/12/2024
-ms.topic: article
+ms.topic: how-to
 author: petrjantac
 ms.author: alfergus
 search.audienceType: 

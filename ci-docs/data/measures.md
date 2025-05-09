@@ -4,7 +4,7 @@ description: "Create and manage measures to help analyze and reflect the perform
 author: JimsonChalissery
 ms.author: jimsonc
 ms.topic: how-to
-ms.date: 10/31/2024
+ms.date: 05/01/2025
 ms.custom: bap-template
 ---
 
@@ -35,7 +35,7 @@ Select next to a measure to view available actions. Select the measure name to p
 - **Edit** the measure to change its properties.
 - **Refresh** one or more measures manually to include the latest data.
 - **Rename** the measure.
-- **Activate** or **Deactivate** one or more measures. For multiple measures, select **Change state**. Inactive measures won't get refreshed during a [scheduled refresh](schedule-refresh.md) and have the **Status** listed as **Skipped**, indicating that a refresh wasn't even attempted.
+- **Activate** or **Deactivate** one or more measures. For multiple measures, select **Change state**. Inactive measures don't get refreshed during a [scheduled refresh](schedule-refresh.md) and have the **Status** listed as **Skipped**, indicating that a refresh wasn't even attempted.
 - **Tag** to [manage tags](work-with-tags-columns.md#manage-tags) for one or more measures.
 - **Delete** one or more measures.
 - [**Schedule**](measures-schedule.md) to customize schedules for measures.
@@ -46,19 +46,25 @@ Select next to a measure to view available actions. Select the measure name to p
 
 ## Automated deactivation of unused measures
 
-To optimize refresh performance, the system automatically deactivates unused measures every day. Unused measures are measures that aren't used in exports, other measures, segments, or in Customer Insights - Journeys in the past 30 days and created more than 45 days ago.
+To optimize refresh performance, the system automatically deactivates unused measures every day. Unused measures are measures that aren't used in exports, other measures, or segments and created more than 45 days ago.
 
-Admins get a weekly summary of the deactivated measures for their information. They can then delete these measures if they are no longer needed or reactivate them if they intend to use them again. Alternatively, measure owners can [specify measures that are excluded from the automated deactivation](#specify-measures-that-never-expire).
+> [!NOTE]
+> Exclude measures used in Customer Insights - Journey from the deactivation process. Go to [Specify measures that never expire](#specify-measures-that-never-expire).
 
-Deactivated measures don't refresh automatically when the system refreshes. They are tagged with **SystemDeactivated** when updated by automated cleanup.
+Contributors can delete these deactivated measures if they're no longer needed or reactivate them if they intend to use them again. Alternatively, admins can [specify measures that are excluded from the automated deactivation](#specify-measures-that-never-expire).
+
+Deactivated measures don't refresh automatically when the system refreshes. They're tagged with **SystemDeactivated** when updated by automated cleanup.
 
 ### Specify measures that never expire
 
-To avoid automated deactivation if a measure is no longer in use, measure owners can mark these segments.
+> [!IMPORTANT]
+> This feature is only available to users with an Administrator user role.
+
+To avoid automated deactivation if a measure is no longer in use, admins can mark these measures.
 
 1. Go to the **Insights** > **Measures** page and select a measure.
 
-1. In the command bar, select **Never expires**.
+1. In the command bar, select **Disable auto cleanup**.
 
 1. Confirm the selection.
 
@@ -72,7 +78,11 @@ When you approach or exceed the number of active measures based on the [service 
 
 The complexity of your measures can also impact performance. To help you prevent performance issues, you get notifications or warnings when you approach, reach, or exceed the total number of active measures. These messages display on the **Measures** list page. If you encounter these messages or symptoms, see the following recommendations.
 
-1. Delete old or no longer relevant measures even if they are static or inactive.
+1. Delete old or no longer relevant measures even if they're static or inactive.
 1. [Schedule individual measures](measures-schedule.md) to run weekly or monthly during slow business days (such as the weekend) instead of daily.
+
+## See also
+
+- [FastTrack blog: Understanding Job Execution Flow in Customer Insights - Data Batch Runs](https://community.dynamics.com/blogs/post/?postid=84fbbaaf-262b-f011-8c4e-7c1e5218b899)
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

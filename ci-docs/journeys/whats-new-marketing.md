@@ -1,8 +1,8 @@
 ---
 title: New and upcoming features
 description: Discover the latest features, improvements, and bug fixes in Dynamics 365 Customer Insights - Journeys. Stay updated with our monthly release notes.
-ms.date: 04/07/2025
-ms.topic: article
+ms.date: 05/05/2025
+ms.topic: whats-new
 author: colinbirkett
 ms.author: colinbirkett
 ms.collection: bap-ai-copilot
@@ -24,6 +24,45 @@ We're excited to announce our newest updates! This article summarizes early acce
 Customer Insights - Journeys updates are [pushed to customers automatically](https://cloudblogs.microsoft.com/dynamics365/it/2020/04/27/automatic-update-policy-for-dynamics-365-marketing/). Solutions are available for early validations. To manually update your instances, follow the steps in [Keep Customer Insights - Journeys up to date](apply-updates.md).
 
 To submit and vote on **feature requests** and **product suggestions**, go to the [Dynamics 365 Application Ideas portal](https://experience.dynamics.com/ideas/categories/?forum=dfa5b83d-9e4c-e811-a956-000d3a1bef07&forumName=Dynamics%20365%20Marketing).
+
+### May 2025 update
+
+| App              | GA release      |
+|------------------|-----------------|
+| Customer Insights - Journeys       | 1.1.55604.58 |
+
+#### General availability
+
+- **Understand customer inflows and exits at every journey step** 
+	- It’s critical to understand exactly what happened to each customer who entered and exited your real-time journeys. With improved journey analytics, you’ll gain confidence in the processing of every step in your journey through improved metrics and an increased ability to export data. For example, if your journey uses exit or exclusion segments, you can see and understand why fewer customers started your journey than were in the entry segment. You can also see the list of customers who entered and exited each step in the journey and export lists of up to 50,000 people for further analysis. 
+	- [Release plan](/dynamics365/release-plan/2024wave2/customer-insights/dynamics365-customer-insights-journeys/confidently-understand-customer-inflows-exits-at-every-step-journey) 
+	- [Docs](real-time-marketing-analytics.md)
+
+#### Public preview
+
+- **Respect quiet times, engage based on location and time zones** 
+	- As regulations around customer privacy become more stringent, it's crucial to contact customers at times that are most convenient to them and ensure compliance with local legal requirements. Now in Customer Insights - Journeys, in addition to setting quiet times based on your journey's time zone, you can align quiet times with your customers' time zones and regions, ensuring that they only receive messages and calls during suitable hours. Aligning interactions with local time allows you to adhere to local regulations and respect cultural norms and preferences, fostering customer trust and enhancing the effectiveness of your outreach strategies.
+	- [Release plan](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/respect-quiet-times-engage-based-location-time-zones) 
+	- [Docs](real-time-marketing-quiet-times.md#use-time-zone-for-quiet-times)
+
+	:::image type="content" source="media/quiet-time-settings.png" alt-text="Set up quiet times in Customer Insights - Journeys." lightbox="media/quiet-time-settings.png":::
+
+- **Collect extra event attendee information without updating your data model** 
+	- Easily gather additional information about your event attendees by creating any question directly in the form editor without creating new custom attributes for your contact entity. For example, you can create fields to ask, “What is your meal preference?”, "How did you learn about this event?", or you can create contest questions to increase your customer engagement and to gather valuable insights that help you personalize the attendee experience. 
+	- [Release plan](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/collect-extra-event-attendee-information-without-updating-data-model) 
+	- [Docs](create-unmapped-fields-registration-forms.md)  
+
+#### Monthly enhancements
+
+- **Select the right form template for any audience while creating a new form** 
+	- As part of a monthly enhancement, the template gallery now displays all form templates grouped for specific audiences. When creating a new form, you can see all available custom and out-of-the-box form templates. Once you choose a desired template, the newly created form adheres to the audience specified by that template.
+	- [Docs](real-time-marketing-form-overview.md#custom-form-templates)
+
+#### New blogs and scenario docs
+
+Learn how to make the most of the new Dynamics 365 Customer Insights features in our latest blogs and scenario docs:
+
+- [Leveraging CI-J interaction data without Fabric](https://community.dynamics.com/blogs/post/?postid=75a63967-f115-f011-998a-7c1e525b5e9d)
 
 ### April 2025 update
 

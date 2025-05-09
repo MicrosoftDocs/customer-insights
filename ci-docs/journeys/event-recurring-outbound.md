@@ -2,7 +2,7 @@
 title: Create and manage recurring events in outbound marketing
 description: Describes how recurring events work in outbound marketing.
 ms.date: 01/22/2025
-ms.topic: article
+ms.topic: how-to
 author: alfergus
 ms.author: alfergus
 search.audienceType: 

@@ -2,7 +2,7 @@
 title: Use "Send now" to send emails instantly
 description: Learn how to send emails in Dynamics 365 Customer Insights - Journeys without building a journey.
 ms.date: 04/18/2024
-ms.topic: article
+ms.topic: how-to
 author: alfergus
 ms.author: alfergus
 search.audienceType: 
