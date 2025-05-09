@@ -2,7 +2,7 @@
 title: Customize form submission validation
 description: Learn how to extend the back-end validation of form submission in Dynamics 365 Customer Insights - Journeys.
 ms.date: 12/12/2024
-ms.topic: article
+ms.topic: how-to
 author: petrjantac
 ms.author: alfergus
 search.audienceType: 

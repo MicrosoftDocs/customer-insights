@@ -2,7 +2,7 @@
 title: Measure marketing effectiveness using UTM codes
 description: Learn how to add Urchin Tracking Module (UTM) codes to URLs for improved link tracking in Customer Insights - Journeys.
 ms.date: 08/23/2023
-ms.topic: article
+ms.topic: how-to
 author: alfergus
 ms.author: alfergus
 search.audienceType: 

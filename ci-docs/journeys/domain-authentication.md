@@ -2,7 +2,7 @@
 title: Authenticate your domains
 description: Learn how to authenticate your domains in Dynamics 365 Customer Insights - Journeys.
 ms.date: 08/18/2023
-ms.topic: article
+ms.topic: how-to
 author: alfergus
 ms.author: alfergus
 search.audienceType: 

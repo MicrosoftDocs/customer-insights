@@ -2,7 +2,7 @@
 title: Add email carbon copy recipients to journeys
 description: Enable and use the CC feature in Dynamics 365 Customer Insights - Journeys. Follow our guide to add up to five CC recipients to your emails.
 ms.date: 11/22/2024
-ms.topic: article
+ms.topic: how-to
 author: alfergus
 ms.author: alfergus
 search.audienceType:

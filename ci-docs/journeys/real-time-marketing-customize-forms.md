@@ -2,7 +2,7 @@
 title: Customize the form editor
 description: Learn how to customize the form entity in Dynamics 365 Customer Insights - Journeys.
 ms.date: 1/26/2024
-ms.topic: article
+ms.topic: how-to
 author: petrjantac
 ms.author: alfergus
 search.audienceType: 

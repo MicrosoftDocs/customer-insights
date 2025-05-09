@@ -2,7 +2,7 @@
 title: Push notification user mapping for application developers
 description: Learn developer settings user mapping for push notifications in Dynamics 365 Customer Insights - Journeys.
 ms.date: 03/14/2023
-ms.topic: article
+ms.topic: how-to
 author: alfergus
 ms.author: alfergus
 search.audienceType: 
