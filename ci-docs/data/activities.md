@@ -98,4 +98,8 @@ Select an activity to rename or delete the activity. To edit activities, select 
 > [!NOTE]
 > Activity filters are removed when you leave a customer profile. You have to apply them each time you open a customer profile.
 
+## See also
+
+- [FastTrack blog: Understanding Job Execution Flow in Customer Insights - Data Batch Runs](https://community.dynamics.com/blogs/post/?postid=84fbbaaf-262b-f011-8c4e-7c1e5218b899)
+
 [!INCLUDE [footer-include](includes/footer-banner.md)]

@@ -156,4 +156,8 @@ The complexity of your segments can also impact performance. To help you prevent
 1. Delete old or no longer relevant segments even if they're static or inactive. When a campaign ends, deactivate associated segments for recurring campaigns.
 1. [Schedule individual segments](segments-schedule.md) to run weekly or monthly during slow business days (such as the weekend) instead of daily.
 
+## See also
+
+- [FastTrack blog: Understanding Job Execution Flow in Customer Insights - Data Batch Runs](https://community.dynamics.com/blogs/post/?postid=84fbbaaf-262b-f011-8c4e-7c1e5218b899)
+
 [!INCLUDE [footer-include](includes/footer-banner.md)]
