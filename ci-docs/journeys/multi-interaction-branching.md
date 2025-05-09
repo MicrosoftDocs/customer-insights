@@ -42,3 +42,5 @@ When launching mobile push notifications for time-sensitive promotions—like a 
 Contoso also runs reactivation campaigns via automated voice calls. If the call is attempted and answered, the customer hears a personalized message and is given the option to speak with support. If the call isn't attempted due to technical issues, the contact is placed in a manual call queue. In cases where the call is blocked, the customer is excluded from future voice campaigns and flagged for channel preference updates. 
 
 These use cases illustrate how Contoso Coffee uses multi-interaction branching to deliver personalized, responsive customer experiences across multiple touchpoints—driving higher engagement, operational efficiency, and customer satisfaction. 
+
+[!INCLUDE [footer-include](./includes/footer-banner.md)]
