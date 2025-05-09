@@ -4,7 +4,7 @@ description: Learn how business unit support and role-based access control regul
 ms.date: 09/01/2023
 ms.reviewer: mhart
 ms.service: customer-insights
-ms.topic: conceptual
+ms.topic: article
 author: jodahl
 ms.author: jodahl
 ms.custom: bap-template

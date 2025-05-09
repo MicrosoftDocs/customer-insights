@@ -2,7 +2,7 @@
 title: Responsible AI FAQs for smart image recommendations
 description: Learn how to responsibly use AI for smart image recommendations in Dynamics 365 Customer Insights - Journeys. Discover key considerations and best practices.
 ms.date: 11/22/2024
-ms.topic: article
+ms.topic: faq
 author: alfergus
 ms.author: alfergus
 ms.collection: bap-ai-copilot

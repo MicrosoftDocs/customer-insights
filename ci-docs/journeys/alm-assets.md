@@ -2,7 +2,7 @@
 title: How to use ALM in asset library
 description: Describes how to use ALM in the asset library in Dynamics 365 Customer Insights - Journeys.
 ms.date: 05/16/2024
-ms.topic: article
+ms.topic: how-to
 author: colinbirkett
 ms.author: colinbirkett
 search.audienceType: 

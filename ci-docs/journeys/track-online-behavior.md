@@ -2,7 +2,7 @@
 title: Track website visits, social media clicks, and banner clicks
 description: A tutorial for how to enable online behavior analysis for website activity and external clicks in Dynamics 365 Customer Insights - Journeys.
 ms.date: 09/28/2023
-ms.topic: article
+ms.topic: how-to
 author: alfergus
 ms.author: alfergus
 search.audienceType: 

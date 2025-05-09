@@ -6,7 +6,7 @@ ms.author: jimsonc
 ms.reviewer: v-wendysmith
 ms.service: customer-insights
 ms.date: 09/01/2023
-ms.topic: conceptual
+ms.topic: article
 ms.custom: bap-template
 ---
 

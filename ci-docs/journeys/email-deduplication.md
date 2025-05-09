@@ -2,7 +2,7 @@
 title: "Preview: Prevent sending emails to duplicated email addresses"
 description: Learn how to deduplicate email addresses in Dynamics 365 Customer Insights - Journeys.
 ms.date: 02/01/2024
-ms.topic: article
+ms.topic: how-to
 author: alfergus
 ms.author: alfergus
 search.audienceType: 

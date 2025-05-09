@@ -2,7 +2,7 @@
 title: Responsible AI FAQs for Dynamics 365 Customer Insights - Journeys
 description: Learn how to use AI responsibly in Dynamics 365 Customer Insights - Journeys. Get answers to common questions and key considerations for ethical AI use.
 ms.date: 11/22/2024
-ms.topic: article
+ms.topic: faq
 author: alfergus
 ms.author: alfergus
 ms.collection: bap-ai-copilot

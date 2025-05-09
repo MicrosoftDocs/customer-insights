@@ -2,7 +2,7 @@
 title: Create and customize marketing calendars
 description: "How to add a marketing calendar to an entity or form and then customize its features in Dynamics 365 Customer Insights - Journeys."
 ms.date: 08/18/2023
-ms.topic: article
+ms.topic: how-to
 author: alfergus
 ms.author: alfergus
 search.audienceType: 

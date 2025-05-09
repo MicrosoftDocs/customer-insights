@@ -2,7 +2,7 @@
 title: "Schedule system refresh"
 description: "Schedule the time when the system should be refreshed"
 ms.date: 02/12/2024
-ms.topic: conceptual
+ms.topic: how-to
 author: NimrodMagen
 ms.author: nimagen
 ms.reviewer: v-wendysmith
