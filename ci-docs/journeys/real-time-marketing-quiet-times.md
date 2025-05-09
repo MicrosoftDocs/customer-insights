@@ -19,7 +19,7 @@ To set up quiet times, visit **Settings** > **Customer engagement** > **Quiet ti
 
 The quiet times settings allow you to configure granular quiet times rules to respect customer time and meet local regulations. 
 
-## Time zone used for the quiet times setting
+## Use time zone for quiet times
 
 > [!IMPORTANT]
 > A preview feature is a feature that is not complete, but is made available before it’s officially in a release so customers can get early access and provide feedback. Preview features aren’t meant for production use and may have limited or restricted functionality.
@@ -41,7 +41,6 @@ If you choose the Audience time zone, the quiet times are interpreted based on t
 Time zone information for each contact point type is predefined under **Audience configuration** > **Contact point type** > **Time zone field**. If necessary, you can update it and select a different time zone format field for each type of audience (such as contacts, leads, or Customer Insights profiles) and each contact point type. 
 > [!NOTE]
 > If no time zone field is assigned under Audience configuration, the Quiet times defaults to the journey time zone. 
-
 
 ## Choose between general or advanced quiet times settings
 
@@ -85,7 +84,7 @@ To apply the quiet times the system checks if each audience member meets the con
 
 :::image type="content" source="media/quiet-times-attribute-mapping.png" alt-text="An overview of quiet times attribute mapping." lightbox="media/quiet-times-attribute-mapping.png":::
 
-## Create your quiet times rules 
+## Create quiet times rules 
 
 Once you've chosen the quiet time setting, you can define several specific rules to tailor your communication strategy.
 
