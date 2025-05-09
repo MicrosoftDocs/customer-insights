@@ -1,7 +1,7 @@
 ---
 title: Transition emails, journeys, and assets
 description: Transition your emails, journeys, and assets to real-time journeys in Dynamics 365 Customer Insights - Journeys. Follow our guide to ensure a smooth transition.
-ms.date: 04/29/2025
+ms.date: 05/09/2025
 ms.topic: article
 author: alfergus
 ms.author: colinbirkett
@@ -30,7 +30,7 @@ While reviewing the imported emails, it's worth considering whether you should s
 
 You can use the same tool to import email templates. To import templates, go to the email templates area in the real-time journeys email editor and select the **Import template** option.
 
-**Known limitations when importing emails with content blocks**: When importing emails with the *Import content blocks used in the selected emails* option selected, each email re-imports the associated content block(s), overriding any existing version. This results in the loss of any modifications made to the imported content blocks in Real-time marketing (RTM).
+**Known limitations when importing emails with content blocks**: When you import emails with the *Import content blocks used in the selected emails* option selected, each email reimports the associated content block(s), overriding any existing version. This results in the loss of any modifications made to the imported content blocks in Real-time marketing (RTM).
 
 > [!TIP]
 > To avoid unintended overwrites, import the content block first along with all related emails before making any modifications. The content block dependency from outbound marketing is stored in the `msdynmkt_obmmigrationinfo` column within the `msdynmkt_fragment` table. Clearing this value prevents automatic overwriting during imports.
@@ -41,9 +41,9 @@ Journeys in real-time journeys are the equivalent to customer journeys in outbou
 
 Using quiet times, you can control when messages get delivered, increasing engagement and meeting customer preferences. Quiet times allow you to comply with regulations by only reaching customers at their preferred times or by preventing nighttime, weekend, or holiday deliveries. For more information, see [Improve communication timing by setting up quiet times](real-time-marketing-quiet-times.md).
 
-Journey end dates behave differently in real-time journeys. In outbound marketing, if a journey had a set end date, customers who already entered the journey would stop and not finish the journey. In real-time journeys, customers who have already entered the journey after the end date complete the journey but no new customers are allowed to enter the journey.
-
-Send at a specific time (i.e., 'Smart scheduling') has no equivalent in real-time journeys. 
+Journey end dates behave differently in real-time journeys. In outbound marketing, if a journey had a set end date, customers who already entered the journey would stop and not finish the journey. In contrast, in real-time journeys, customers who have already entered the journey complete the journey even if this takes them past the end date. However, no new customers are allowed to enter the journey after the end-date.
+ 
+Send at a specific time (that is, 'Smart scheduling') has no equivalent in real-time journeys. 
 
 ## Asset library
 
