@@ -45,5 +45,6 @@ When unification runs, a unique **CustomerId** is assigned to each customer prof
 - [Build measures](measures.md) to better understand customer behaviors and business performance.
 - [FastTrack blog: Best practices for data modeling](https://community.dynamics.com/blogs/post/?postid=988fae7a-3f37-ee11-bdf4-6045bdebe084)
 - [FastTrack blog: Advanced unification scenario for unrelated sources](https://community.dynamics.com/blogs/post/?postid=cbf1def2-2a94-4a4d-9535-0489e647157c)
+- [FastTrack blog: Understanding Job Execution Flow in Customer Insights - Data Batch Runs](https://community.dynamics.com/blogs/post/?postid=84fbbaaf-262b-f011-8c4e-7c1e5218b899)
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
