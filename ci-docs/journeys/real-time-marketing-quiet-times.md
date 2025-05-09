@@ -21,11 +21,6 @@ The quiet times settings allow you to configure granular quiet times rules to re
 
 ## Use time zone for quiet times
 
-> [!IMPORTANT]
-> A preview feature is a feature that is not complete, but is made available before it’s officially in a release so customers can get early access and provide feedback. Preview features aren’t meant for production use and may have limited or restricted functionality.
-> 
-> Microsoft doesn't provide support for this preview feature. Microsoft Dynamics 365 Technical Support won’t be able to help you with issues or questions. Preview features aren’t meant for production use, especially to process personal data or other data that are subject to legal or regulatory compliance requirements.
-
 To set up quiet times, you first need to choose the type of time zone the quiet times rules apply to. This is an important because it determines how the quiet times rules are interpreted. 
 
 :::image type="content" source="media/quiet-time-time-zone.png" alt-text="Set quiet times based on time zone." lightbox="media/quiet-time-time-zone.png":::
@@ -35,6 +30,11 @@ To set up quiet times, you first need to choose the type of time zone the quiet 
 If you select the Journey time zone, we'll use the journey’s time zone to apply the quiet times. For example, if you set the journey time zone to be (GMT-5:00) Eastern Time (US & Canada), the quiet times and days applied to messages in that journey follow that time zone. 
 
 ### Audience time zone
+
+> [!IMPORTANT]
+> Please note that Audience time zone is in public preview. A preview feature is a feature that is not complete, but is made available before it’s officially in a release so customers can get early access and provide feedback. Preview features aren’t meant for production use and may have limited or restricted functionality.
+> 
+> Microsoft doesn't provide support for this preview feature. Microsoft Dynamics 365 Technical Support won’t be able to help you with issues or questions. Preview features aren’t meant for production use, especially to process personal data or other data that are subject to legal or regulatory compliance requirements.
 
 If you choose the Audience time zone, the quiet times are interpreted based on the time zone of each individual in your audience. This means that the system uses the time zone information provided for each contact, lead, or Customer Insights profile to apply the quiet times rules appropriately. 
 
@@ -53,6 +53,11 @@ The General quiet times should be used when your audience is in a single geograp
 :::image type="content" source="media/general-quiet-times.png" alt-text="An overview of general quiet times settings." lightbox="media/general-quiet-times.png":::
 
 ### Advanced quiet times
+
+> [!IMPORTANT]
+> Please note that Advanced quiet times is in public preview. A preview feature is a feature that is not complete, but is made available before it’s officially in a release so customers can get early access and provide feedback. Preview features aren’t meant for production use and may have limited or restricted functionality.
+> 
+> Microsoft doesn't provide support for this preview feature. Microsoft Dynamics 365 Technical Support won’t be able to help you with issues or questions. Preview features aren’t meant for production use, especially to process personal data or other data that are subject to legal or regulatory compliance requirements.
 
 The Advanced quiet times setting provides more specifications. It allows you to create multiple quiet times rules based on specific conditions, such as country/region, state/province, or phone number. For example, you can create a specific quiet times rule for the state of Texas, and another for Alabama. This setting is beneficial for businesses with a diverse customer base spread across geographies. Using advanced settings, you can ensure that communications respect local regulations and time preferences.  
 
