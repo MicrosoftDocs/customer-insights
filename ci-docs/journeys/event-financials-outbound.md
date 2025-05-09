@@ -2,7 +2,7 @@
 title: View and record financial information for events in outbound marketing 
 description: Learn how to record values for event budgets, expenses, and revenue in outbound marketing.
 ms.date: 08/18/2023
-ms.topic: article
+ms.topic: how-to
 author: alfergus
 ms.author: alfergus
 search.audienceType: 

@@ -2,7 +2,7 @@
 title: 'Preview: Build an event registration portal with Power Pages'
 description: Build an event registration portal with Power Pages. Learn how to create, customize, and publish your event registration website using the event registration template.
 ms.date: 02/25/2025
-ms.topic: article
+ms.topic: how-to
 author: petrjantac
 ms.author: alfergus
 search.audienceType:

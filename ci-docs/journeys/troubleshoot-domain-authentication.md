@@ -2,7 +2,7 @@
 title: Troubleshoot domain authentication errors
 description: Learn how to troubleshoot domain authentication errors in Dynamics 365 Customer Insights - Journeys.
 ms.date: 08/23/2023
-ms.topic: article
+ms.topic: troubleshooting-general
 author: alfergus
 ms.author: alfergus
 search.audienceType: 

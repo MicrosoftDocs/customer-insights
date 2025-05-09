@@ -2,7 +2,7 @@
 title: Outbound marketing user guide
 description: Contains topics that describe how to do common marketing tasks in Dynamics 365 Customer Insights - Journeys.
 ms.date: 01/12/2024
-ms.topic: conceptual
+ms.topic: article
 author: alfergus
 ms.author: alfergus
 search.audienceType: 

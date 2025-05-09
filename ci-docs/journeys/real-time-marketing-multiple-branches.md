@@ -2,7 +2,7 @@
 title: Personalize journey variations using multiple journey branches
 description: Learn how to create more personalized journey variations using multiple journey branches in Dynamics 365 Customer Insights - Journeys.
 ms.date: 08/23/2023
-ms.topic: article
+ms.topic: how-to
 author: alfergus
 ms.author: alfergus
 search.audienceType: 
