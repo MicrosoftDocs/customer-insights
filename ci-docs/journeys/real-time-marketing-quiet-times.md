@@ -26,7 +26,7 @@ The quiet times settings allow you to configure granular quiet times rules to re
 > 
 > Microsoft doesn't provide support for this preview feature. Microsoft Dynamics 365 Technical Support won’t be able to help you with issues or questions. Preview features aren’t meant for production use, especially to process personal data or other data that are subject to legal or regulatory compliance requirements.
 
-To set up quiet times, you first need to choose the type of time zone the quiet times rules will apply to. This is an important because it determines how the quiet times rules are interpreted. 
+To set up quiet times, you first need to choose the type of time zone the quiet times rules apply to. This is an important because it determines how the quiet times rules are interpreted. 
 
 :::image type="content" source="media/quiet-time-time-zone.png" alt-text="Set quiet times based on time zone." lightbox="media/quiet-time-time-zone.png":::
 
@@ -36,7 +36,7 @@ If you select the Journey time zone, we'll use the journey’s time zone to appl
 
 ### Audience time zone
 
-If you choose the Audience time zone, the quiet times are interpreted based on the time zone of each individual in your audience. This means that the system will use the time zone information provided for each contact, lead, or Customer Insights profile to apply the quiet times rules appropriately. 
+If you choose the Audience time zone, the quiet times are interpreted based on the time zone of each individual in your audience. This means that the system uses the time zone information provided for each contact, lead, or Customer Insights profile to apply the quiet times rules appropriately. 
 
 Time zone information for each contact point type is predefined under **Audience configuration** > **Contact point type** > **Time zone field**. If necessary, you can update it and select a different time zone format field for each type of audience (such as contacts, leads, or Customer Insights profiles) and each contact point type. 
 > [!NOTE]
@@ -55,7 +55,7 @@ The General quiet times should be used when your audience is in a single geograp
 
 ### Advanced quiet times
 
-The Advanced quiet times setting provides more specification. It allows you to create multiple quiet times rules based on specific conditions, such as country/region, state/province, or phone number. For example, you can create a specific quiet times rule for the state of Texas, and another for Alabama. This setting is particularly beneficial for businesses with a diverse customer base spread across geographies. Using advanced settings, you can ensure that communications respect local regulations and time preferences.  
+The Advanced quiet times setting provides more specifications. It allows you to create multiple quiet times rules based on specific conditions, such as country/region, state/province, or phone number. For example, you can create a specific quiet times rule for the state of Texas, and another for Alabama. This setting is beneficial for businesses with a diverse customer base spread across geographies. Using advanced settings, you can ensure that communications respect local regulations and time preferences.  
 
 :::image type="content" source="media/advanced-quiet-times.png" alt-text="An overview of advanced quiet times settings." lightbox="media/advanced-quiet-times.png":::
 
@@ -81,28 +81,27 @@ For example, you might set a specific quiet times to apply if the contact countr
 
 You can set conditions to ensure that your customers' situation matches all possible variations. You should add a new row for each variation of the value. For example, for Texas you if state equals Texas, or if state equals TX, or if state equals tex, etc. Please note that values are case sensitive. By setting multiple conditions, you ensure that your data is matched accurately. 
 
-To apply the quiet times the system will check if each audience member meets the condition (based on the mapped fields) before the journey runs. For Contact and Lead the mapped attribute fields are prepopulated, to update the fields, or add the mapping for CI-D Profile go to **Attribute mapping** tab.
+To apply the quiet times the system checks if each audience member meets the condition (based on the mapped fields) before the journey runs. For Contacts and Leads, the mapped attribute fields are prepopulated. To update the fields or add the mapping for Customer Insights - Data Profile, go to **Attribute mapping** tab.
 
 :::image type="content" source="media/quiet-times-attribute-mapping.png" alt-text="An overview of quiet times attribute mapping." lightbox="media/quiet-times-attribute-mapping.png":::
 
 ## Create your quiet times rules 
 
-Once you've chosen the type of quiet time setting, you can define several specific rules to tailor your communication strategy
+Once you've chosen the quiet time setting, you can define several specific rules to tailor your communication strategy.
 
 :::image type="content" source="media/quiet-times-rules.png" alt-text="Create quiet time rules." lightbox="media/quiet-times-rules.png":::
 
 ### Set different quiet times for commercial and transactional messages
 
-You can set different rules for commercial and transactional messages. Many organizations prefer not to send commercial messages at odd hours to avoid annoying customers, but they might want transactional messages (like order confirmations or password resets) to be sent immediately regardless of the time.
+You can set different rules for commercial and transactional messages. Many organizations prefer not to send commercial messages at odd hours to avoid annoying customers. However, they might want transactional messages (such as order confirmations or password resets) to be sent immediately regardless of the time.
 
 ### Set different quiet times by message channel
 
-You can also differentiate quiet times based on the communication channel. For instance, customers might be more sensitive about receiving calls and text messages during off-hours compared to emails. Therefore, you can set stricter quiet times for text messages while allowing emails to be sent during a broader range of hours.
+You can also differentiate quiet times based on the communication channel. For example, customers might be more sensitive about receiving calls and text messages during off-hours compared to emails. Therefore, you can set stricter quiet times for text messages while allowing emails to be sent during a broader range of hours.
 
 ### Define weekly quiet hours
 
-This allows you to set specific days and times during the week when messages should not be sent. Select **Edit** next to "No quiet time" for that channel. You can choose specific times and days for the quiet times, and you can use the Add button to specify multiple times and days of the week. 
-For instance, you could set up quiet times for email to be all day on the weekends and between 9:00 PM and 7:00 AM during the work week. Once you configure the quiet times for the channel, you see the settings reflected directly on the page next to that channel.
+You can set specific days and times during the week when messages shouldn't be sent. Select **Edit** next to "No quiet time" for that channel. You can choose specific times and days for the quiet times. Select **Add** to specify multiple times and days of the week. For example, you could set up quiet times for email to be all day on the weekends and between 9:00 PM and 7:00 AM during the work week. Once you configure the quiet times for the channel, you see the settings reflected directly on the page next to that channel.
 
 ### Set up overnight quiet times
 
@@ -115,23 +114,22 @@ To set up quiet times overnight, you need to create a separate evening quiet tim
 
 ### Set up quiet dates
 
-These are specific dates when you don't want any messages to be sent, such as public holidays or company-wide events. To set up quiet dates, choose the channel and then edit the "quiet date." Here, you can choose specific start and end dates when messages shouldn't be sent. You can use this interface to set up specific holidays or dates to prevent messages from being sent by channel.
+You can set up specific quiet dates when you don't want any messages to be sent, such as public holidays or company-wide events. To set up quiet dates, choose the channel and then edit the "quiet date." You can choose specific start and end dates when messages shouldn't be sent. You can use this interface to set up specific holidays or dates to prevent messages from being sent by channel.
 
 :::image type="content" source="media/quiet-times-dates.png" alt-text="Set up quiet dates." lightbox="media/quiet-times-dates.png":::
 
 ## Initial quiet time setting
 
-The first time you create and save a quiet time setting, the system asks if you wish to apply it to all existing journeys and messages. If you select "Apply to all," the system applies the quiet time setting to all Compliance profiles. If you select "Decide later," you can add the quiet time setting directly to any compliance profiles you wish later. Once a quiet time has been added to a compliance profile, all messages designated with that compliance profile begin to respect the quiet times configured.
+The first time you create and save a quiet time setting, the system asks if you wish to apply it to all existing journeys and messages. If you select **Apply to all**, the system applies the quiet time setting to all compliance profiles. If you select **Decide later**, you can add the quiet time setting directly to any compliance profiles you want later. Once a quiet time has been added to a compliance profile, all messages designated with that compliance profile respect the quiet times configured.
 
 > [!div class="mx-imgBorder"]
 > ![Initial quiet times setting screenshot.](media/real-time-marketing-quiet-times-initial-save.png "Initial quiet times setting screenshot")
 
 ## Quiet times and journeys
 
-In the journey you can see the type of quiet times setting that will be applied. It specifies if the quiet times use the journey time zone or audience time zone and the general or advanced parameters. 
-You can also choose to change or disable quiet times for a specific message on a journey to support scenarios when a particular message in a journey shouldn't be subject to regular quiet times settings.
+In a journey you can see the type of quiet times setting that applies. It specifies if the quiet times use the journey time zone or audience time zone and General or Advanced parameters. You can also choose to change or disable quiet times for specific messages to support scenarios when a particular message in a journey shouldn't be subject to regular quiet times settings.
 
-The number of messages held for quiet times shows on the journey to provide information.
+The number of messages held for quiet times is listed in the journey.
 
 :::image type="content" source="media/quiet-times-and-journeys.png" alt-text="Apply quiet times in a journey." lightbox="media/quiet-times-and-journeys.png":::
 
@@ -141,7 +139,7 @@ Quiet times and frequency cap settings are independent. If a message is held for
 
 ## Quiet times and compliance
 
-For many organizations, quiet times are a regulatory requirement. To enable quiet times for messages, the quiet time must be set on the compliance profile that the messages use. Setting the quiet times on a compliance profile enables you to have some compliance profiles that apply quiet times and others that don't. When you set up your first quiet time, the system asks you if you wish to apply it to existing journeys and messages. If you choose "Yes," the quiet time applies to existing compliance profiles automatically and current journeys and messages begin to apply it. If you choose "No," you can always choose the quiet time you'd like to enforce later on specific compliance profiles.
+For many organizations, quiet times are a regulatory requirement. To enable quiet times for messages, the quiet time must be set on the compliance profile that messages use. Setting the quiet times on a compliance profile enables you to have some compliance profiles that apply quiet times and others that don't. When you set up your first quiet time, the system asks you if you want to apply it to existing journeys and messages. If you choose **Yes**, the quiet time applies to all existing compliance profiles, journeys, and messages. If you choose **No**, you can always choose the quiet time you'd like to enforce later on specific compliance profiles.
 
 ## Quiet times and business units
 
