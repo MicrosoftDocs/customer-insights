@@ -1,7 +1,7 @@
 ---
 title: Transition emails, journeys, and assets
 description: Transition your emails, journeys, and assets to real-time journeys in Dynamics 365 Customer Insights - Journeys. Follow our guide to ensure a smooth transition.
-ms.date: 04/29/2025
+ms.date: 05/09/2025
 ms.topic: article
 author: alfergus
 ms.author: colinbirkett
@@ -41,7 +41,7 @@ Journeys in real-time journeys are the equivalent to customer journeys in outbou
 
 Using quiet times, you can control when messages get delivered, increasing engagement and meeting customer preferences. Quiet times allow you to comply with regulations by only reaching customers at their preferred times or by preventing nighttime, weekend, or holiday deliveries. For more information, see [Improve communication timing by setting up quiet times](real-time-marketing-quiet-times.md).
 
-Journey end dates behave differently in real-time journeys. In outbound marketing, if a journey had a set end date, customers who already entered the journey would stop and not finish the journey. or simpler. In real-time journeys, customers who have already entered the journey complete the journey even if that takes them past the end date but no new customers are allowed to enter the journey after the end-date.
+Journey end dates behave differently in real-time journeys. In outbound marketing, if a journey had a set end date, customers who already entered the journey would stop and not finish the journey. In contrast, in real-time journeys, customers who have already entered the journey complete the journey even if this takes them past the end date. However, no new customers are allowed to enter the journey after the end-date.
  
 Send at a specific time (that is, 'Smart scheduling') has no equivalent in real-time journeys. 
 
