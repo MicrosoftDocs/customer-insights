@@ -72,9 +72,9 @@ To create conditions for advanced quiet times, you need to specify the criteria 
 
 You can base the conditions on the following attributes: 
 
-•	Country/region
-•	State/province
-•	Phone number
+*	Country/region
+*	State/province
+*	Phone number
 
 For example, you might set a specific quiet times to apply if the contact country is the U.S. and the state is Texas, or from a customer's area code within their phone number.
 
