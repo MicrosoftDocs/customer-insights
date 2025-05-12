@@ -1,7 +1,7 @@
 ---
 title: Set quiet times to prevent messages from sending during unwanted hours
 description: Learn how to set up quiet times to avoid sending messages during unwanted times.
-ms.date: 05/06/2025
+ms.date: 05/12/2025
 ms.topic: article
 author: alfergus
 ms.author: colinbirkett
