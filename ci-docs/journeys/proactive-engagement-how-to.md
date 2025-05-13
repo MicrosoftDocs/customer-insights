@@ -63,7 +63,7 @@ To use the Conversational voice call tile and branch on its outcomes:
 
 Up to your use case, you can choose any combination of these variables to design your branching logic. 
 
-:::image type="content" source="media/attribute-voice-call-combination.png" alt-text="Select variable as condition on voice call results for attribute branch." lightbox="media/attribute-voice-call-combination.png":::
+    :::image type="content" source="media/attribute-voice-call-combination.png" alt-text="Select variable as condition on voice call results for attribute branch." lightbox="media/attribute-voice-call-combination.png":::
 
 1. Once done, you can publish your journey.
 
