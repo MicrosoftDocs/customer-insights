@@ -28,11 +28,11 @@ To use the Conversational voice call tile and branch on its outcomes:
 
 1. When creating a journey, you can add an action and choose **Voice conversation**.
 
-:::image type="content" source="media/voice-conversation-tile.png" alt-text="Add an action and choose voice conversation." lightbox="media/voice-conversation-tile.png":::
+    :::image type="content" source="media/voice-conversation-tile.png" alt-text="Add an action and choose voice conversation." lightbox="media/voice-conversation-tile.png":::
     
 1. Choose a **proactive engagement**.
 
-:::image type="content" source="media/voice-conversation-tile.png" alt-text="2.	Choose a proactive engagement configuration." lightbox="media/voice-conversation-tile.png":::
+    :::image type="content" source="media/voice-conversation-tile.png" alt-text="2.	Choose a proactive engagement configuration." lightbox="media/voice-conversation-tile.png":::
     
 1. Once you select a Proactive engagement, you must select:
     - The **compliance profile** you want to use
@@ -44,7 +44,7 @@ To use the Conversational voice call tile and branch on its outcomes:
 
 1. To branch based on your proactive engagement outcomes, add a **Wait for trigger** action and choose a branch condition type of “**Previous message gets an interaction”**.
 
-:::image type="content" source="media/previous-message-interaction.png" alt-text="Add a Wait for trigger action and choose a branch condition type." lightbox="media/previous-message-interaction.png":::
+    :::image type="content" source="media/previous-message-interaction.png" alt-text="Add a Wait for trigger action and choose a branch condition type." lightbox="media/previous-message-interaction.png":::
     
 1. In the branches, you can choose the following triggers:
     - **Voice call attempted**: Contact Center had attempted to make the phone call to the Contact. Be aware that a call attempted doesn't necessarily mean that the Contact had answered.
@@ -55,11 +55,11 @@ To use the Conversational voice call tile and branch on its outcomes:
 
 1. Add **Attribute branch** action, and choose **Branch on** “A voice call is attempted”.
 
-:::image type="content" source="media/attribute-voice-call.png" alt-text="Add an attribute branch on 'A voice call is attempted.'" lightbox="media/attribute-voice-call.png":::
+    :::image type="content" source="media/attribute-voice-call.png" alt-text="Add an attribute branch on 'A voice call is attempted.'" lightbox="media/attribute-voice-call.png":::
 
 1. In the attribute branches you can choose what conditions you want to branch on. Within “Voice call attempted” you'll have default variables: **Disposition Codes** and **Result**, and variables based on how you set up your proactive engagement (for example, Outcome).
 
-:::image type="content" source="media/conversational-voice-condition.png" alt-text="Choose conditions for the attribute branch." lightbox="media/conversational-voice-condition.png":::
+    :::image type="content" source="media/conversational-voice-condition.png" alt-text="Choose conditions for the attribute branch." lightbox="media/conversational-voice-condition.png":::
 
 Up to your use case, you can choose any combination of these variables to design your branching logic. 
 
