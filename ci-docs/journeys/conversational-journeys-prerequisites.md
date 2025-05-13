@@ -18,7 +18,7 @@ To use Conversational journeys, you must have both Dynamics 365 Customer Insight
 ## Licensing information
 
 1. [Purchase Dynamics 365 Customer Insights](purchase.md) (Necessary)
-1. [Buy Dynamics 365 Contact Center](/dynamics365/products/contact-center/pricing) (Necessary)
+1. [Buy Dynamics 365 Contact Center](/dynamics-365/products/contact-center/pricing) (Necessary)
 1. [Get access to Copilot Studio](/microsoft-copilot-studio/requirements-licensing-subscriptions) (Optional)
 
 ## Setting up Conversational journeys in Customer Insights - Journeys
