@@ -1,7 +1,7 @@
 ---
 title: New and upcoming features
 description: Discover the latest features, improvements, and bug fixes in Dynamics 365 Customer Insights - Journeys. Stay updated with our monthly release notes.
-ms.date: 05/09/2025
+ms.date: 05/13/2025
 ms.topic: whats-new
 author: colinbirkett
 ms.author: colinbirkett
@@ -53,7 +53,7 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 	- [Docs](create-unmapped-fields-registration-forms.md)
 
 - **Tailor follow-up strategies by reacting to multiple customer actions at once** 
-	- Marketers can now create more personalized customer experiences by branching on multiple interactions within a single journey step. Using the "Wait for trigger" tile after a marketing message, journey designers can select "Previous message gets an interaction" and configure multiple triggers—like Email Opened, Email Blocked, or Email Bounced—on the same branch. This streamlines journey design by consolidating logic and enabling smarter engagement paths based on how recipients interact.
+	- Marketers can now create more personalized customer experiences by branching on multiple interactions within a single journey step. Using the "Wait for trigger" tile after a marketing message, journey designers can select "Previous message gets an interaction" and configure multiple triggers, like Email Opened, Email Blocked, or Email Bounced, on the same branch. This streamlines journey design by consolidating logic and enabling smarter engagement paths based on how recipients interact.
 	- [Docs](multi-interaction-branching.md)
 
 #### Monthly enhancements
