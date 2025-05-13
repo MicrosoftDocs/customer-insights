@@ -32,7 +32,7 @@ To use the Conversational voice call tile and branch on its outcomes:
     
 1. Choose a **proactive engagement**.
 
-    :::image type="content" source="media/voice-conversation-tile.png" alt-text="2.	Choose a proactive engagement configuration." lightbox="media/voice-conversation-tile.png":::
+    :::image type="content" source="media/proactive-engagement-select.png" alt-text="2.	Choose a proactive engagement configuration." lightbox="media/proactive-engagement-select.png":::
     
 1. Once you select a Proactive engagement, you must select:
     - The **compliance profile** you want to use
