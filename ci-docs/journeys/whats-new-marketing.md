@@ -56,6 +56,8 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 	- Marketers can now create more personalized customer experiences by branching on multiple interactions within a single journey step. Using the "Wait for trigger" tile after a marketing message, journey designers can select "Previous message gets an interaction" and configure multiple triggers, like Email Opened, Email Blocked, or Email Bounced, on the same branch. This streamlines journey design by consolidating logic and enabling smarter engagement paths based on how recipients interact.
 	- [Docs](multi-interaction-branching.md)
 
+	:::image type="content" source="media/multi-interaction-branching.png" alt-text="Configure journey branches based on multiple customer responses to marketing messages." lightbox="media/multi-interaction-branching.png":::
+
 #### Monthly enhancements
 
 - **Select the right form template for any audience while creating a new form** 
