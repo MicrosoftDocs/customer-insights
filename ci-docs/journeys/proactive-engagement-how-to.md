@@ -1,6 +1,6 @@
 ---
 title: How to
-description: Learn more about additional capabilities in Conversational journeys.
+description: Learn how to use conversational journeys capabilities in Dynamics 365 Customer Insights - Journeys.
 ms.date: 05/13/2025
 ms.topic: article
 author: colinbirkett
@@ -13,7 +13,7 @@ search.audienceType:
 
 # How to
 
-To use conversational journeys you have to enable the feature switch Contact Center integration under the Integrations section. For more information, see [Use feature switches to enable or disable optional and preview features](admin-feature-switches.md#integrations).
+To use conversational journeys, you have to enable the feature switch Contact Center integration under the Integrations section. For more information, see [Use feature switches to enable or disable optional and preview features](admin-feature-switches.md#integrations).
 
 Once enabled, Customer Insights Journeys will auto detect your Contact Center in the same environment.
 
@@ -24,31 +24,46 @@ The integration with Contact Center allows you to create conversational journeys
 
 ## Using Conversational voice call tile and branch on its outcomes
 
-To use Conversational voice call tile and branch on its outcomes:
+To use the Conversational voice call tile and branch on its outcomes:
 
-1. When creating a journey, you can add an action and choose **Voice conversation**
+1. When creating a journey, you can add an action and choose **Voice conversation**.
+
+:::image type="content" source="media/voice-conversation-tile.png" alt-text="Add an action and choose voice conversation." lightbox="media/voice-conversation-tile.png":::
     
-1. Choose a **proactive engagement**  
+1. Choose a **proactive engagement**.
+
+:::image type="content" source="media/voice-conversation-tile.png" alt-text="2.	Choose a proactive engagement configuration." lightbox="media/voice-conversation-tile.png":::
     
 1. Once you select a Proactive engagement, you must select:
-    -   The **compliance profile** you want to use
-    -   **Purpose**
-    -   **Topic** (if applicable)
-    -   **Quite time** option. You can always choose “Don’t apply quiet time to this message”
+    - The **compliance profile** you want to use
+    - **Purpose**
+    - **Topic** (if applicable)
+    - **Quite time** option. You can always choose “Don’t apply quiet time to this message”
+
+    :::image type="content" source="media/voice-conversation-expanded.png" alt-text="Configure proactive engagement fields." lightbox="media/voice-conversation-expanded.png":::
 
 1. To branch based on your proactive engagement outcomes, add a **Wait for trigger** action and choose a branch condition type of “**Previous message gets an interaction”**.
+
+:::image type="content" source="media/previous-message-interaction.png" alt-text="Add a Wait for trigger action and choose a branch condition type." lightbox="media/previous-message-interaction.png":::
     
 1. In the branches, you can choose the following triggers:
-    -   **Voice call attempted**: It means that Contact Center had attempted to make the phone call to the Contact. Please be aware that a call attempted does not necessarily mean that the Contact had answered.
-    -   **Voice call not attempted**: It means that Contact Center did not attempt to make a phone call.
-    -   **Voice call blocked**: It means that Customer Insights Journeys blocked the call from being attempted and did not send the request to Contact Center.
+    - **Voice call attempted**: Contact Center had attempted to make the phone call to the Contact. Be aware that a call attempted doesn't necessarily mean that the Contact had answered.
+    - **Voice call not attempted**: Contact Center did not attempt to make a phone call.
+    - **Voice call blocked**: Customer Insights Journeys blocked the call from being attempted and did not send the request to Contact Center.
 
-1. Add **Attribute branch** action, and choose **Branch on** “A voice call is attempted”  
+    :::image type="content" source="media/choose-triggers.png" alt-text="Choose a trigger." lightbox="media/choose-triggers.png":::
 
-1. In the attribute branches you can choose what conditions you want to branch on.  
-    Within “Voice call attempted” you'll have default variables: **Disposition Codes** and **Result**, and variables based on how you set up your proactive engagement (for example, Outcome).
+1. Add **Attribute branch** action, and choose **Branch on** “A voice call is attempted”.
 
-    Up to your use case, you can choose any combination of these variables to design your branching logic.  
+:::image type="content" source="media/attribute-voice-call.png" alt-text="Add an attribute branch on 'A voice call is attempted.'" lightbox="media/attribute-voice-call.png":::
+
+1. In the attribute branches you can choose what conditions you want to branch on. Within “Voice call attempted” you'll have default variables: **Disposition Codes** and **Result**, and variables based on how you set up your proactive engagement (for example, Outcome).
+
+:::image type="content" source="media/conversational-voice-condition.png" alt-text="Choose conditions for the attribute branch." lightbox="media/conversational-voice-condition.png":::
+
+Up to your use case, you can choose any combination of these variables to design your branching logic. 
+
+:::image type="content" source="media/attribute-voice-call-combination.png" alt-text="Select variable as condition on voice call results for attribute branch." lightbox="media/attribute-voice-call-combination.png":::
 
 1. Once done, you can publish your journey.
 
