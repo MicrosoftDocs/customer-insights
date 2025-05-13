@@ -47,7 +47,7 @@ To set up web tracking:
 
 1. Copy the JavaScript code (be sure to select all of it) and place it in the `<head>` tag of your website. Make sure you don't already have a script set up for your site.
     - If you're using Power Pages, go to the Portal Management app. Go to **Content** > **Web Templates** > **Header**, paste the Customer Insights - Journeys tracking script, and then **Save**.
-    - If you're using a tag manager such as Google Tag Manager, go to the Google Tag Manager portal. Select **Add new tag** > **Tag configuration** > **Custom HTML**, paste the Customer Insights - Journeys tracking script, and then **Save**.
+    - If you're using a tag manager such as Google Tag Manager, go to the Google Tag Manager portal. Select **Add new tag** > **Tag configuration** > **Custom HTML**, paste the Customer Insights - Journeys tracking script, and then **Save** (you'll also need to determine when this will trigger e.g. "All Pages"). Once you're done, click the **Submit** button to publish your changes.
     - If you're using another Content Management System (CMS) such as Wordpress, your CMS provider should have an easy way to add a script to the site header. Here's an example from Wordpress: [Add Code to Headers](https://wordpress.com/support/adding-code-to-headers/).
 
 ## Personalize customer experiences based on web interaction
