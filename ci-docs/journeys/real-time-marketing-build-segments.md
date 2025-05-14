@@ -46,6 +46,8 @@ In addition to having a segment return its targeting entity (such as contacts or
 
 When adding an attribute that relates to a different table, you can search for the attribute and then define how the two tables are related based on your segment definition. To add an attribute from a related table, you must enable **Track changes** in the related table. For new or existing tables, **Track changes** can be checked from the table properties.
 
+>[!Note]
+> Virtual tables are not supported in RTM segmentation and the RTM segment designer doesn't show them in the "Add tables" dialog.
 **Example:** Leads whose parent accounts are in the Consumer Services industry.
 
 Search for "industry" on the right-side pane and select the **+** button to the right of the item in the table you want. You'll see all possible combinations of how the Lead and Account tables are related.
