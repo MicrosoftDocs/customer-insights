@@ -28,6 +28,9 @@ Create a segment of your *Most valuable customers*. You can [create your own con
 - If you choose to use outbound marketing segments, the email and text content must use **Contact** as the audience data for personalization.
 - If you choose to use Customer Insights - Data segments, the email and text content must use **Customer Profile** as the audience data for personalization.
 
+> [!Note]
+> Segment publishing requires Create and Write privileges for the msdynmkt_segment entity. Ensure that anyone that requires the ability to create a segment has the necessary permissions.
+
 ### Create email and text messages
 
 - **Product announcement email**: Initial email announcement that is sent to your *most valuable customers*. This email must contain a link to the new product.
