@@ -1,5 +1,5 @@
 ---
-title: How the real-time journeys app uses cookies
+title: How real-time journeys uses cookies
 description: Understand the deployment and management of cookies in real-time journeys for personalized customer interactions.
 ms.date: 05/14/2025
 ms.topic: article
@@ -15,7 +15,7 @@ ms.custom:
   - ai-seo-date:12/13/2024
 ---
 
-# How the real-time journeys app uses cookies
+# How real-time journeys uses cookies
 
 Real-time journeys identify website visitors using a technology called cookies. Cookies are small text files that are placed on your device by websites you visit or applications you use. Cookies are widely used to make websites work more efficiently, enhance the user experience, and provide data to website or application owners.
 

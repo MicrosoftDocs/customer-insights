@@ -582,7 +582,7 @@
     href: admin-guide.md
   - name: Best practices for administration
     href: admin-best-practices.md
-  - name: How the real-time journeys app uses cookies
+  - name: How real-time journeys uses cookies
     href: real-time-journeys-cookies.md
   - name: User administration and permissions
     items:
