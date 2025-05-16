@@ -77,7 +77,6 @@ Details about Consent management and how to use it:
 
 - [Consent management overview - Understand Compliance Profiles, Purposes and Topic](real-time-marketing-compliance-settings.md)
 - [Evaluating consent for voice channel](real-time-marketing-email-text-consent.md#how-consent-is-respected-for-voice-channel-by-default)
-- [Migrate existing records into consent model](real-time-marketing-email-migrate-consent.md)
 
 ## Quiet times and conversational voice
 
