@@ -11,7 +11,7 @@ search.audienceType:
   - enduser
 ---
 
-# Manage consent for email, SMS (text), and custom channel messages
+# Manage consent for email, SMS (text), voice and custom channel messages
 
 > [!NOTE]
 > Customer Insights - Journeys consent is contact-point based and works for messages sent to contacts, leads, and Customer Insights - Data profiles. Customer consent is stored per email address or phone number, as opposed to being stored per contact record. Outbound marketing consent processes that you have already defined aren't influenced by the Customer Insights - Journeys settings.
@@ -54,6 +54,11 @@ The presence of a company address and unsubscribe link is checked when you selec
 > Since November 2024 release, it's possible to change the default enforcement model settings for test (SMS) and custom channels.
 
 The Customer Insights - Journeys rules for sending SMS and custom channel messages are slightly different than the rules for sending emails by default. A user must always opt in to consent to receive commercial SMS or commercial custom channel messages. By default the transactional SMS and custom channel messages are always sent, unless you change the enforcement model from disabled.
+
+## How consent is respected for voice channel by default
+
+By default, a user must always opt in to voice consent to receive commercial voice channel calls. The enforcement model for voice channel is set to Restrictive.
+By default the transactional voice channel calls are always enabled, unless you change the enforcement model from disabled.
 
 ## Consent to track user behavior
 
@@ -171,15 +176,9 @@ When a user submits consent changes through a preference page or preference cent
 
 In the consent center, you can view a list of all contact point consents and their related attributes (type, status, source of consent data, and date modified). To see a compact view for a single consent record or make changes to it, select the contact-point name from the list of records.
 
-Starting the **March 2024** release, contact and lead forms enable you to quickly see and update a customer's consent, helping you effortlessly manage what types of messages are sent to your customers. This comprehensive view can be found under the **Communication** tab and gives you one place to manage consent across every channel and line of business for your organization.
+The contact and lead forms enable you to quickly see and update a customer's consent, helping you effortlessly manage what types of messages are sent to your customers. This comprehensive view can be found under the **Communication** tab and gives you one place to manage consent across every channel and line of business for your organization.
 
-To enable this feature:
-
-1. Go to **Settings** > **Other settings** > **Feature switches**.
-1. Set the **Manage consent in contact and lead forms** toggle to **On**.
-1. Select **Save** in the upper right.
-
-Once the feature is enabled, the Communication tab allows you to:  
+Communication tab allows you to:  
 
 1. Get a summary view of the consent provided by each contact or lead to understand if the customer is contactable at a glance.
 1. Easily modify the consent for the email addresses, phone numbers, and custom channels of a contact or lead directly from the contact or lead forms, giving you control over the type of messages sent to the customer on each channel. The grid view shows you not just the consent record but also its evaluated contactability. This helps provide answers to the question: "Why did my journey get blocked due to no consent?"
