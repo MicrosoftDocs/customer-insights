@@ -73,7 +73,11 @@ In Dynamics 365 Customer Insights - Journeys, a compliance profile are the hubs 
 
 You need a compliance profile to ensure that your voice communications adhere to legal standards and customer preferences. It enables features like unsubscribe links, quiet time enforcement, and consent tracking, which are critical for avoiding legal risks and maintaining customer trust. This is especially important in scenarios involving high-volume outreach, such as autonomous agents or marketing campaigns, where managing consent at scale is essential
 
-To learn about how to create and manage compliance profiles, see [Consent management overview](real-time-marketing-compliance-settings.md).
+Details about Consent management and how to use it:
+
+- [Consent management overview - Understand Compliance Profiles, Purposes and Topic](real-time-marketing-compliance-settings.md)
+- [Evaluating consent for voice channel](real-time-marketing-email-text-consent.md#how-consent-is-respected-for-voice-channel-by-default)
+- [Migrate existing records into consent model](real-time-marketing-email-migrate-consent.md)
 
 ## Quiet times and conversational voice
 
