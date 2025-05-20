@@ -160,3 +160,19 @@ Our focus is on closing the feature gaps in real-time marketing compared to outb
 [!INCLUDE [transition-comments](./includes/transition-comments.md)]
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
+
+## Additional Questions
+
+### After the deprecation of OBM, what happens to my segment templates?
+
+While we will not remove any segment template, marketers would not be able to create new segments using those templates. Marketers can use the templates for lookup/refer to them while building RTM segments. Segment Templates are not a feature that is available in Real Time Marketing and it is not prioritized by the product team as they are not considered a blocking feature. Marketers who wish to use/recreate Segment Templates can save a segment they wish to use as a template and create a copy and use (with or without modifications) for a campaign.
+
+### Would removal of OBM affect the usage of CID segments in Real Time Marketing?
+
+Once OBM is removed, customers have two options to use CID segments in RTM. 
+1. Use CID Segments directly in RTM: Here, marketers can leverage existing CID profile attributes and measures (in addition to Dataverse tables related to Contact) without additional work as long as [COLA Stamping] [https://learn.microsoft.com/en-us/dynamics365/customer-insights/journeys/unified-profile-segment-creation] is enabled. These will be segments of profiles (not contacts) and hence marketers can only orchestrate on profiles.
+2. Create contact based segments in RTM directly with related tables in Dataverse: Marketers can build Contact segment in RTM and use any related table in DV like before but they will not be able to use any CID information in the segment.
+
+
+
+
