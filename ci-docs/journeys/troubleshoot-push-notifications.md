@@ -19,7 +19,7 @@ This article covers possible problems with push notifications setup in Customer 
 
 The following are possible device registration problems.
 
-**I'm calling the device registration public API, it returns 202, but nothing happens**
+**I'm calling the device registration public API, it returns '202', but nothing happens**
 
 The device registration public API returns in asynchronous manner. This is a reason why the response status code is 202 (Accepted) and not 200 (OK). The request starts the registration process, but this doesn't necessarily mean success of the operation. There's a separate [device registration status API](developer-push-device-registration.md#device-registration-status) you need to call to see results of the registration. Use `RegistrationRequestId` provided as response of device registration API execution to request the registration status.
 
@@ -51,11 +51,11 @@ For more information about data payload formats in Firebase, see [FCM message ty
 
 **Sending failure includes unclear error code or message**
 
-Customer Insights sends push notification using Firebase servers directly. Failure response comes directly from the Firebase server if there's submission failure. Overview [ErrorCode](https://firebase.google.com/docs/reference/fcm/rest/v1/ErrorCode) for all possible error codes and their meaning.
+Customer Insights sends push notification using Firebase servers directly. Failure response comes directly from the Firebase server if there's submission failure. Review [ErrorCode](https://firebase.google.com/docs/reference/fcm/rest/v1/ErrorCode) for all possible error codes and their meaning.
 
 ## Push notification sending problems for iOS
 
-For notification sending problems for iOS, it's possible to use external third-party websites, such as <https://apnspush.com/> for troubleshooting. These websites allow you to quickly test push notification submission and see if any changes made work.
+For notification sending problems for iOS, it's possible to use external third-party websites to assist in troubleshooting, such as <https://apnspush.com/>. These websites allow you to quickly test push notification submission and see if any changes made work.
 
 **Sending failure includes BadDeviceToken error code**
 
@@ -67,6 +67,6 @@ Customer Insights doesn't currently support iOS device tokens working via FCM. M
 
 **Sending failure includes unclear error code or message**
 
-Customer Insights sends push notification using APNS servers directly. Failure responses directly come from APNS server if there's a submission failure. Overview [local and remote notification programming guide: Communicating with APNs](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/CommunicatingwithAPNs.html#//apple_ref/doc/uid/TP40008194-CH11-SW17) for all possible error codes and their meaning.
+Customer Insights sends push notification using APNS servers directly. Failure responses directly come from APNS server if there's a submission failure. Review [local and remote notification programming guide: Communicating with APNs](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/CommunicatingwithAPNs.html#//apple_ref/doc/uid/TP40008194-CH11-SW17) for all possible error codes and their meaning.
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
