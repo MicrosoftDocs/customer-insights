@@ -47,7 +47,7 @@ It's likely the "Firebase In-App Messaging API" service isn't enabled. Navigate 
 
 Customer Insights sends push notifications using data payload format. This is required to make changes in the mobile application code to receive the push notification payload and render it as a popup. For more instructions, see [Receiving push notifications on mobile devices](developer-notifications.md).
 
-For more information about data payload formats in Firebase, see [https://firebase.google.com/docs/cloud-messaging/concept-options\#notifications_and_data_messages](https://firebase.google.com/docs/cloud-messaging/concept-options#notifications_and_data_messages).
+For more information about data payload formats in Firebase, see [FCM message types](https://firebase.google.com/docs/cloud-messaging/concept-options#notifications_and_data_messages).
 
 **Sending failure includes unclear error code or message**
 
