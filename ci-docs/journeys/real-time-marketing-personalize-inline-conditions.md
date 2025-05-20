@@ -2,7 +2,7 @@
 title: How to use inline conditions 
 description: Learn how to use inline conditions in Dynamics 365 Customer Insights - Journeys.
 ms.date: 08/23/2023
-ms.topic: article
+ms.topic: how-to
 author: alfergus
 ms.author: alfergus
 search.audienceType: 
@@ -41,7 +41,7 @@ In the code, you only specify the placeholder name. To set up the condition, go 
 > [!div class="mx-imgBorder"]
 > ![Screenshot showing the personalize tab with placeholders.](media/real-time-marketing-inline-condition.png)
 
-For example, you can add code to personalize a greeting based on country:
+For example, you can add code to personalize a greeting based on country/region:
 
 ```
 {{#if placeholderName}}

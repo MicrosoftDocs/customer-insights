@@ -1,7 +1,7 @@
 ---
 title: "Export segments to Google Ads (preview)"
 description: "Learn how to configure the connection and export to Google Ads."
-ms.date: 12/11/2024
+ms.date: 04/17/2025
 ms.topic: how-to
 author: JimsonChalissery
 ms.author: jimsonc
@@ -28,6 +28,9 @@ Export segments of unified customer profiles to a Google Ads audience list and u
 - Export up 1 million customer profiles per export to Google Ads, which can take up to 30 minutes to complete because of limitations on the provider side.
 - Segments only.
 - Match in Google Ads can take up to 48 hours.
+
+> [!NOTE]
+> [Google policy](https://ads-developers.googleblog.com/2025/02/update-to-customer-match-membership.html) states that customer lists in Google Ads will be deleted if not refreshed in 540 days. Deletion of unrefreshed customer lists can impact your Google Ad campaigns and advertising strategies. We recommend you rerun the export periodically to refresh the customer lists.
 
 ## Set up connection to Google Ads
 

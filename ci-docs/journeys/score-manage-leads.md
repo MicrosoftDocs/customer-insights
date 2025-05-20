@@ -2,7 +2,7 @@
 title: Create lead scoring models
 description: How to set up automatic scoring rules and identify sales-ready leads in Dynamics 365 Customer Insights - Journeys.
 ms.date: 08/23/2023
-ms.topic: article
+ms.topic: how-to
 author: alfergus
 ms.author: alfergus
 search.audienceType: 

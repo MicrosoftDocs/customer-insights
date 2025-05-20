@@ -1,15 +1,19 @@
 ---
 title: Map form data to entities with custom workflows in outbound marketing
-description: Learn how to map form data to entities with custom workflows in outbound marketing.
-ms.date: 08/18/2023
-ms.topic: article
+description: Map form data to entities in outbound marketing workflows. Learn how to create custom workflows to process form submissions and update entities effectively.
+ms.date: 04/14/2025
+ms.topic: how-to
 author: alfergus
 ms.author: alfergus
-search.audienceType: 
+search.audienceType:
   - admin
   - customizer
   - enduser
-ms.custom: outbound-marketing
+ms.custom:
+  - outbound-marketing
+  - ai-gen-docs-bap
+  - ai-gen-description
+  - ai-seo-date:04/14/2025
 ---
 
 # Map form data to entities with custom workflows in outbound marketing
@@ -38,7 +42,7 @@ To create a Workflow:
 
     ![Create a Workflow.](media/entity-mapping-create-process.png "Create a Workflow")
 
-1. Next, you will start adding steps to your Workflow. You will find flexible options to handle entities under **Add Step** > **Dynamics 365 Customer Insights - Journeys**.
+1. Next, you'll start adding steps to your Workflow. You'll find flexible options to handle entities under **Add Step** > **Dynamics 365 Customer Insights - Journeys**.
 
     For example, you can start with **Extract a submitted value by field** to find a value inside a submission that you would like to store. Add a **Match entity** step to match the marketing form submission to the entity that you want to update. Add a **Json set property** step to be used in the other steps’ JSON properties.
 
@@ -46,7 +50,7 @@ To create a Workflow:
 
 ## Example Workflow: Collecting credit card applications
 
-In this example, we'll create a Workflow to update a custom entity called “Credit card applications.” The Workflow will allow a user to collect credit card applications through a marketing form and store the data under the new custom entity.
+In this example, we create a Workflow to update a custom entity called “Credit card applications.” The Workflow allows a user to collect credit card applications through a marketing form and store the data under the new custom entity.
 
 The credit card application Workflow requires the following general processes:
 - Check if the submission is coming from a form the workflow can handle. The simplest method to do this is selecting submissions from a specific form.
@@ -58,14 +62,14 @@ The following steps detail the actions required to create the credit card applic
 
 1. To create a custom entity, in the navigation bar, go to **Settings** > **Customize the System** > **Entities**.
 1. Create a marketing form for the credit card applications containing the fields you want to use. Create fields under the new custom entity to use inside the form. Make sure the form is set to [not update contacts or leads](marketing-forms.md#do-not-createupdate-contacts-or-leads).
-1. Next, you will create a Workflow to process the custom entities. Go to **Settings** > **Processes** and create a new **Workflow** process. In the **Entity** field, select the entity that triggers your Workflow. In this case, we'll select **Marketing form submission**. Then select **OK**.
-1. To add a step, select **Add Step**, then go to **Dynamics 365 Customer Insights - Journeys** > **Extract submitted value by field**. This will allow you to extract a value from a form submission.
-    1. Add a name for the step. We will name our step "Extract value from form submission (E-mail)."
+1. Next, you'll create a Workflow to process the custom entities. Go to **Settings** > **Processes** and create a new **Workflow** process. In the **Entity** field, select the entity that triggers your Workflow. In this case, we'll select **Marketing form submission**. Then select **OK**.
+1. To add a step, select **Add Step**, then go to **Dynamics 365 Customer Insights - Journeys** > **Extract submitted value by field**. This allows you to extract a value from a form submission.
+    1. Add a name for the step. We'll name our step "Extract value from form submission (E-mail)."
 
         ![Name the step.](media/entity-mapping-add-steps.png "Name the step")
 
     1. Select the **Set Properties** button.
-    1. Next, we'll extract the email address from a submitted form. To extract the email address, go to the **Operator** pane and select **Marketing form submission** in the **Look for:** drop down menu. Then, select the **Add** button in the **Operator** pane. To add the dynamic value to the form submission property, select the **OK** button.
+    1. Next, we extract the email address from a submitted form. To extract the email address, go to the **Operator** pane and select **Marketing form submission** in the **Look for:** drop down menu. Then, select the **Add** button in the **Operator** pane. To add the dynamic value to the form submission property, select the **OK** button.
 
         ![Look for marketing form submissions.](media/entity-mapping-marketing-form-submission.png "Look for marketing form submissions")
 
@@ -82,7 +86,7 @@ The following steps detail the actions required to create the credit card applic
 1. Continue adding the previously set JSON values one by one.
     1. Insert the logical name.
     1. Insert the result from the **Extracted value from** field.
-    1. Choose a previous JSON value to add on top of the extracted value. This ensures that you will combine all of the JSON entries into a combined value that will be used at the end.
+    1. Choose a previous JSON value to add on top of the extracted value. This ensures that you'll combine all of the JSON entries into a combined value that will be used at the end.
 
         ![Look for extract value from form submission.](media/entity-mapping-json-extract.png "Look for extract value from form submission")
 
@@ -93,15 +97,15 @@ The following steps detail the actions required to create the credit card applic
       ![Filter submissions.](media/entity-mapping-filter.png "Filter submissions")
 
     1. Open the dropdown menu and select **Primary Entity** > **Marketing form submission**.
-    1. Go to the marketing form you are using for the credit card application and find the **Form ID** in the form page URL.
+    1. Go to the marketing form you're using for the credit card application and find the **Form ID** in the form page URL.
 
           ![Marketing form ID in the URL.](media/entity-mapping-form-id.png "Marketing form ID in the URL")
 
-    1. Place the **Form ID** into the condition step in the Worklflow.
+    1. Place the **Form ID** into the condition step in the Workflow.
 
           ![Form ID in conditional step.](media/entity-mapping-condition-step.png "Form ID in conditional step")
 
-    1. To find the specific form, you can set the condition logic to **Marketing form ID** to check if it is equal to the specific form ID. If yes, run the Workflow. If not, add a step to stop the Workflow with the reason for cancellation.
+    1. To find the specific form, you can set the condition logic to **Marketing form ID** to check if it's equal to the specific form ID. If yes, run the Workflow. If not, add a step to stop the Workflow with the reason for cancellation.
 
           ![Complete Workflow steps.](media/entity-mapping-complete-workflow.png "Complete Workflow steps")
 

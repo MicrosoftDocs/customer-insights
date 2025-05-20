@@ -4,7 +4,7 @@ description: Learn how the Customer Insights - Data unified profile can be used 
 author: Scott-Stabbert
 ms.author: sstabbert
 ms.reviewer: v-wendysmith
-ms.topic: conceptual
+ms.topic: integration
 ms.date: 10/18/2024
 ms.custom: bap-template
 ---

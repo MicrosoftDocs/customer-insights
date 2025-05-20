@@ -2,7 +2,7 @@
 title: Find similar customers with AI (preview)
 description: Find similar customer segments with artificial intelligence.
 ms.date: 09/01/2023
-ms.topic: conceptual
+ms.topic: how-to
 author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: v-wendysmith

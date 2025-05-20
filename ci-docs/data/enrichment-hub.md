@@ -3,7 +3,7 @@ title: "Data enrichment (preview) overview"
 description: "Learn how enrichments can improve your data and your insights."
 ms.date: 02/01/2024
 ms.reviewer: mhart
-ms.topic: conceptual
+ms.topic: concept-article
 author: jodahlMSFT
 ms.author: jodahl
 ms.collection: get-started
@@ -26,7 +26,7 @@ Enrichments create separate enrichment tables with the enriched data. Enriched d
 
 Customer profile data often has address information in the form of a text string without separation of address elements, such as street name, zip code, or city. Without address elements, it's difficult to build segments based on location and the data unification match precision is lower too. Also, spelling errors and nonstandardized notation for the same attribute (for example, US, USA, United States, or United States of America) are a common issue. The [**Enhanced addresses** enrichment](enrichment-enhanced-addresses.md) from Microsoft and [**Azure Maps** enrichments](enrichment-azure-maps.md) fix missing, misspelled, and inconsistent location data. All three enrichments can tokenize the address and split it into standardized attributes so that you can easily create segments based a city or a state.
 
-[**Azure Maps** enrichments](enrichment-azure-maps.md) enrichments also validate the address and provide longitude and latitude values. You can use these values to create geolocation-based targeting. For example, by creating segments based on proximity to a store location.
+[**Azure Maps** enrichments](enrichment-azure-maps.md) also validate the address and provide longitude and latitude values. You can use these values to create geolocation-based targeting. For example, by creating segments based on proximity to a store location.
 
 ## Augment and expand customer profiles
 

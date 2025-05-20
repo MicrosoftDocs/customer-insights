@@ -2,7 +2,7 @@
 title: Consent management and double opt-in transition guidance
 description: Learn the capabilities of consent management in Dynamics 365 Customer Insights - Journeys and how to use them in specific scenarios.
 ms.date: 11/15/2024
-ms.topic: article
+ms.topic: how-to
 author: petkra
 ms.author: petkra
 search.audienceType: 
@@ -80,7 +80,7 @@ The following picture shows the connection between these entities.
 > [!div class="mx-imgBorder"]
 > ![Compliance profiles flow chart.](media/real-time-marketing-consent-transition-4.png)
 
-It's possible for an organization to have multiple compliance profiles in place, for example, for each subsidiary or country and each with different consent purposes.
+It's possible for an organization to have multiple compliance profiles in place, for example, for each subsidiary or country/region and each with different consent purposes.
 
 ## Scenarios
 
@@ -117,6 +117,6 @@ In this scenario, Customer Insights - Journeys compliance settings must be used 
 
 In this scenario, a customer has multiple brands, each one needing to capture consent for their own purposes and would like to have their own topics to which consumers can opt in or out. This can be achieved by creating multiple compliance profiles, one for each of the involved brands. Within the compliance profiles, each brand can define their own topics that are appropriate for their communication. Once topics are set, they can be added to the brand’s preference center to allow customers to opt in or out for the areas that are of interest.  
 
-### Operating in multiple countries and/or requiring preference centers in multiple languages
+### Operating in multiple countries/regions and/or requiring preference centers in multiple languages
 
-This is similar to the multiple brand scenario, but in this scenario, the company is looking to structure around the multiple geographies it operates in rather than by the brands used. This too can be addressed with multiple compliance profiles created for each country. Once defined, each compliance profile has its own preference center page with content written in the appropriate language and referencing the appropriate supporting material.
+This is similar to the multiple brand scenario, but in this scenario, the company is looking to structure around the multiple geographies it operates in rather than by the brands used. This too can be addressed with multiple compliance profiles created for each country/region. Once defined, each compliance profile has its own preference center page with content written in the appropriate language and referencing the appropriate supporting material.

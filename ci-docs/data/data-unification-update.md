@@ -1,7 +1,7 @@
 ---
 title: "Update customer, account, or contact unification settings"
 description: "Update duplicate rules, match rules, or unified fields in the customer or account unification settings."
-ms.date: 12/11/2024
+ms.date: 03/28/2025
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -91,7 +91,7 @@ To remove a table that has been unified, the table must be removed from any depe
 
 1. Select **Edit** on the **Unified data view** tile.
 
-1. Select all fields for the table and then select **Exclude**.
+1. Expand the columns and select all fields for the table. Then select **Exclude**.
 
    :::image type="content" source="media/m3_remove_table1.png" alt-text="Screenshot of Unified fields with all fields for a table selected and Exclude button":::
 
@@ -108,6 +108,9 @@ To remove a table that has been unified, the table must be removed from any depe
 
    :::image type="content" source="media/m3_remove_table2.png" alt-text="Screenshot of Matching rules with table selected and Delete button":::
 
+   > [!TIP]
+   > The delete command isn't visible until all dependencies and rules have been removed for the table.
+
 1. Select **Save and close**.
 
 1. Select **Edit** on the **Customer data** tile.
@@ -120,7 +123,7 @@ To remove a table that has been unified, the table must be removed from any depe
 
 1. Select **Save and close**.
 
-1. Select **Unify** > **Unify customer profiles and dependencies** to update the unified profile.
+1. Run unification by selecting **Unify** > **Unify customer profiles and dependencies** to update the unified profile.
 
 ## Manage deduplication rules
 

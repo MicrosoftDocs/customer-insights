@@ -1,7 +1,7 @@
 ---
 title: Manage consent for email, SMS (text), and custom channel messages
 description: Learn how to manage consent for messages in Dynamics 365 Customer Insights - Journeys.
-ms.date: 01/22/2025
+ms.date: 02/26/2025
 ms.topic: reference
 author: alfergus
 ms.author: alfergus
@@ -41,7 +41,7 @@ When creating a new email message, you choose a **Compliance Profile**, a **Purp
 
 An email message is only sent if it passes the consent checks configured by the **Purpose** and (optional) **Topic**. The decision to send or block sending a message is made right before sending the message. This ensures that the app never mistakenly sends a message to someone who has opted out, even if they're mistakenly included in a journey segment. The enforcement rules for consent are governed by the **Enforcement model** setting on the purpose. If the purpose has a "Restrictive" enforcement model, the email is sent only if the email address explicitly opts into receiving the message. If the purpose has a "Non-restrictive" enforcement model, the email is sent as long as the email address hasn't opted out. The "Disabled" enforcement model disables consent checks on the email address and lets all messages be delivered. The default "Commercial" purposes have a "Non-restrictive" enforcement model. The default "Transactional" purpose has a "Disabled" enforcement model. The enforcement models of the purposes can be changed in the compliance profile. To learn more about the **Purpose**, **Topic**, and **Enforcement model** concepts, visit [Manage user compliance settings in Customer Insights - Journeys](real-time-marketing-compliance-settings.md)
 
-As required for commercial email, a **Company Address** placeholder and an **Preference Center** placeholder link are added to the email footer automatically. The company address reflects the value set on the **Compliance profile** and can be edited directly from the email editor if needed. The **Preference center** link leads to the preference management page configured by the **Compliance Profile**, where customers can review and change communication preferences.
+As required for commercial email, a **Company Address** placeholder and a **Preference Center** placeholder link are added to the email footer automatically. The company address reflects the value set on the **Compliance profile** and can be edited directly from the email editor if needed. The **Preference center** link leads to the preference management page configured by the **Compliance Profile**, where customers can review and change communication preferences.
 
 The presence of a company address and unsubscribe link is checked when you select **Ready to send**. The app warns you if one of these parameters is missing if you're sending a message to a commercial consent purpose.
 
@@ -67,81 +67,36 @@ If you would like to collect tracking consent, you can add the tracking purpose 
 > [!IMPORTANT]
 > With the July 2023 release, customer consent data began to utilize the new multi-brand consent features. For some Customer Insights - Journeys users, the migration changed the settings that control whether tracking links are included in messages. The changes may prevent tracking in messages if the customers have not given explicit consent. After the migration, if you want to enable tracking links in messages for customers who have not provided consent, update the tracking purpose enforcement model of your compliance profile(s) to "Non-restrictive." This enables tracking links to be substituted in emails, so long as the receiver hasn't explicitly opted out of tracking.
 
-## Consent enforcement diagram
+## Consent enforcement diagrams
 
-The following diagram provides a visual representation of how consent is checked by default while executing journeys in Customer Insights - Journeys.
+The following tables provide a visual representation of how consent is checked by default while executing journeys in Customer Insights - Journeys.
 
-<table>
-  <tr>
-    <th>Restrictive enforcement model</th>
-  </tr>
-  <tr>
-   <td></td>
-    <td><b>Opted out</b></td>
-    <td><b>None/Not-set</b></td>
-    <td><b>Opted in</b></td>
-  </tr>
-  <tr>
-   <td><b>All channels</b></td>
-    <td>Blocked</td>
-    <td>Blocked</td>
-    <td>Sent</td>
-  </tr>
-  <tr>
-   <td><b>Tracking purpose<b></td>
-    <td>Not tracked</td>
-    <td>Not tracked</td>
-    <td>Tracked</td>
-  </tr>
-</table>
+### Restrictive enforcement model
 
-<table>
-  <tr>
-    <th>Non-restrictive enforcement model</th>
-  </tr>
-  <tr>
-   <td></td>
-    <td><b>Opted out</b></td>
-    <td><b>None/Not-set</b></td>
-    <td><b>Opted in</b></td>
-  </tr>
-  <tr>
-   <td><b>All channels</b></td>
-    <td>Blocked</td>
-    <td>Sent</td>
-    <td>Sent</td>
-  </tr>
-  <tr>
-   <td><b>Tracking purpose<b></td>
-    <td>Not tracked</td>
-    <td>Tracked</td>
-    <td>Tracked</td>
-  </tr>
-</table>
+|                      | **Opted out** | **None/not-set** | **Opted in** |
+|----------------------|---------------|------------------|--------------|
+| **All channels**     | Blocked       | Blocked          | Sent         |
+| **Tracking purpose** | Not tracked   | Not tracked      | Tracked      |
 
-<table>
-  <tr>
-    <th>Disabled enforcement model</th>
-  </tr>
-  <tr>
-   <td></td>
-    <td><b>Opted out</b></td>
-    <td><b>None/Not-set</b></td>
-    <td><b>Opted in</b></td>
-  </tr>
-  <tr>
-   <td><b>All channels</b></td>
-    <td>Sent</td>
-    <td>Sent</td>
-    <td>Sent</td>
-  </tr>
-  <tr>
-   <td><b>Tracking purpose<b></td>
-    <td>Tracked</td>
-    <td>Tracked</td>
-    <td>Tracked</td>
-  </tr>
-</table>
+For example, in the *restrictive enforcement model*, a customer who hasn't set their consent preferences is *blocked* from all communication channels (within a journey) and is *not tracked*.
+
+### Non-restrictive enforcement model
+
+|                      | **Opted out** | **None/not-set** | **Opted in** |
+|----------------------|---------------|------------------|--------------|
+| **All channels**     | Blocked       | Sent             | Sent         |
+| **Tracking purpose** | Not tracked   | Tracked          | Tracked      |
+
+For example, in the *non-restrictive enforcement model*, a customer who hasn't set their consent preferences is *sent* messages from all communication channels (within a journey) and is *tracked*.
+
+### Disabled enforcement model
+
+|                      | **Opted out** | **None/not-set** | **Opted in** |
+|----------------------|---------------|------------------|--------------|
+| **All channels**     | Sent          | Sent             | Sent         |
+| **Tracking purpose** | Tracked       | Tracked          | Tracked      |
+
+In the *disabled enforcement model*, *all customers* are *sent* messages from all communication channels (within a journey) and are *tracked*.
 
 > [!NOTE]
 > All channels include email, text, and custom channels.

@@ -242,6 +242,8 @@
         href: unified-profile-segment-creation.md
       - name: Create a static snapshot of a segment
         href: real-time-marketing-static-snapshot.md
+      - name: Export segment membership for offline analysis
+        href: export-segment-membership.md
     - name: Use Customer Insights - Data segments
       items:
       - name: Use Customer Insights - Data profiles and segments
@@ -266,6 +268,8 @@
       href: journeys-overview.md
     - name: "Preview: Copilot - Create journeys using AI assistance"
       href: real-time-marketing-use-copilot-create-journey.md
+    - name: Create journey templates
+      href: real-time-marketing-journey-templates.md
     - name: Journey flow and tile reference
       items:
       -  name: Understanding journey flow
@@ -274,6 +278,8 @@
          href: journey-start.md
       -  name: Add an action in a journey
          href: add-action.md
+      -  name: "Preview: Tailor follow-up strategies with multi-interaction branching"
+         href: multi-interaction-branching.md
       -  name: End a journey
          href: journey-end.md
     - name: Trigger-based journeys
@@ -380,6 +386,8 @@
         href: set-up-event.md
       - name: Set up session-level registration
         href: real-time-journeys-event-session.md
+      - name: "Preview: Set up and manage an event waitlist"
+        href: set-up-and-manage-waitlist.md
       - name: Create an event from another event
         href: event-from-event.md
     - name: Host a Microsoft Teams webinar
@@ -416,10 +424,12 @@
       href: real-time-marketing-form-create.md
     - name: Deploy pages that contain forms
       href: real-time-marketing-deploy-pages.md
-    - name: "Preview: Prefill values for forms and event registration"
+    - name: Prefill values for forms and event registration
       href: real-time-marketing-form-prefill.md
     - name: "Preview: Create unmapped fields for marketing forms"
       href: real-time-marketing-forms-custom-fields.md
+    - name: "Preview: Create unmapped fields for registration forms"
+      href: create-unmapped-fields-registration-forms.md
     - name: Manage forms
       href: real-time-marketing-manage-forms.md
     - name: Set the default configuration for forms
@@ -436,6 +446,8 @@
       href: real-time-marketing-qualify-leads.md
     - name: Create sales activities from lead signals
       href: real-time-marketing-optimize-lead-management.md
+    - name: Create custom matching rules
+      href: real-time-marketing-matching-rules.md    
     - name: Visualize results from your scoring model
       href: real-time-marketing-visualize-scoring-model.md
     - name: Security roles for lead scoring and qualification
@@ -450,7 +462,7 @@
       href: real-time-marketing-cross-journey-analytics.md
     - name: How to use aggregate channel analytics
       href: real-time-marketing-channel-analytics.md
-    - name: "Preview: Make journey decisions based on web interactions"
+    - name: Make journey decisions based on web interactions
       href: interaction-journey-decision.md
     - name: How to use email insights
       href: email-insights.md
@@ -460,8 +472,6 @@
         href: fabric-integration.md
       - name: Map GUIDs to email clients, browsers, operating systems, and device types
         href: map-guids.md
-    - name: "Preview: Marketing effectiveness analytics"
-      href: real-time-marketing-effectiveness.md
     - name: Track campaigns with UTM codes
       href: real-time-marketing-utm.md
   - name: Personalization
@@ -572,7 +582,7 @@
     href: admin-guide.md
   - name: Best practices for administration
     href: admin-best-practices.md
-  - name: How the real-time journeys app uses cookies
+  - name: How real-time journeys uses cookies
     href: real-time-journeys-cookies.md
   - name: User administration and permissions
     items:
@@ -742,6 +752,8 @@
     href: faqs-journey-copilot.md
 - name: Resources
   items:
+  - name: Removed/deprecated features
+    href: removed-deprecated-features.md
   - name: Customer Insights - Journeys forum
     href: https://community.dynamics.com/forums/thread/?discussionforumid=401fa082-89fa-4aea-b90f-fcadb0d9f76a
   - name: Customer Insights Business Decision Makers blog
@@ -1132,7 +1144,7 @@
         href: developer/marketing-entity-reference.md
     - name: Customize outbound marketing forms
       items:
-      - name: Filter cities based on countries using lookup fields and custom entities
+      - name: Filter cities based on countries/regions using lookup fields and custom entities
         href: developer/filter-cities.md
       - name: Extend outbound marketing forms using code
         href: developer/marketing-form-client-side-extensibility.md

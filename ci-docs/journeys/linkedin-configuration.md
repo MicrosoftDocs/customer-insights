@@ -2,7 +2,7 @@
 title: Set up the LinkedIn Lead Gen integration and define lead matching
 description: Map lead fields and match leads between LinkedIn to Dynamics 365 Customer Insights - Journeys.
 ms.date: 08/12/2024
-ms.topic: article
+ms.topic: how-to
 author: alfergus
 ms.author: alfergus
 search.audienceType: 
@@ -46,7 +46,7 @@ When a new LinkedIn form submission arrives, Customer Insights - Journeys tries 
 
 ### Create or edit a LinkedIn lead matching strategy
 
-1. Go to **Settings** > **Lead management** > **LinkedIn lead matching**. A list of exsting strategy opens.
+1. Go to **Settings** > **Lead management** > **LinkedIn lead matching**. A list of existing strategy opens.
 1. Do one of the following:
     - To create a new matching strategy, select **New** on the command bar. Then enter a **Name** and select **Save** on the command bar to save your record and enable the matching table.
     - To edit an existing matching strategy, select the target strategy from the list.

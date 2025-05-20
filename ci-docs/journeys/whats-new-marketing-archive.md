@@ -2,7 +2,7 @@
 title: What's new archive
 description: Access archived information on new features, improvements, and bug fixes in Dynamics 365 Customer Insights - Journeys.
 ms.date: 01/21/2025
-ms.topic: article
+ms.topic: whats-new
 author: alfergus
 ms.author: alfergus
 ms.collection: bap-ai-copilot
@@ -54,7 +54,7 @@ This article contains archived information about new features, improvements, and
 - **Generate leads that link to an existing contact** 
     - Your business has unique ways of organizing customer data and classifying potential leads. Now with real-time journey forms, you can manage your contacts and leads more effectively, according to your company's established processes. For example, you can recognize existing customers who fill out a lead form, so they're not mistaken for new leads.With this new set of capabilities to connect lead and contact data, you can choose how existing contact or lead details should be updated and define advanced matching rules to prevent duplicate records. Additionally, you can set defaults so everything is already configured each time a new form is created. All these new capabilities allow you to fine-tune how form data is handled to provide better quality leads and match your company's established processes.
     - [Release plan](/dynamics365/release-plan/2024wave2/customer-insights/dynamics365-customer-insights-journeys/generate-leads-that-link-existing-contact) 
-    - [Docs](real-time-marketing-manage-forms.md#preview-parent-contact-for-lead)
+    - [Docs](real-time-marketing-manage-forms.md#parent-contact-for-lead)
 
     :::image type="content" source="media/feature-release.png" alt-text="Generate leads that link to an existing contact." lightbox="media/feature-release.png":::
     
@@ -542,11 +542,6 @@ On September 1, 2023, Dynamics 365 Customer Insights - Journeys transitioned to 
     - [Release plan](/dynamics365/release-plan/2023wave2/marketing/dynamics365-marketing/easily-reference-copies-previously-sent-emails-interaction-timeline)
     - [Docs](view-previously-sent-emails.md)
 
-- **Add styles to brand profiles and create reusable themes**
-    - Maintaining a consistent and cohesive brand identity is key to building customer experiences and increasing brand recognition. However, replicating brand guidelines in your marketing emails, forms, and event registration pages is often time-consuming and requires back-and-forth styling and formatting. Leveraging Copilot, you can now quickly create branded themes for your content and easily apply them to emails, forms, and event registration pages.
-    - [Release plan](/dynamics365/release-plan/2023wave2/marketing/dynamics365-marketing/add-styles-brand-profiles-create-reusable-themes)
-    - [Docs](brand-profiles.md#define-theme)
-
 #### Monthly enhancements
 
 - **Remove email addresses from suppression list (preview)**
@@ -693,16 +688,6 @@ On September 1, 2023, Dynamics 365 Customer Insights - Journeys transitioned to 
 
 #### Public preview
 
-- **Easily style your emails with Copilot**
-    - Jumpstart your email creation process with Copilot. Effortlessly style email elements including buttons, text, and more using AI to quickly interpret styles from a website and apply them to your email. Save valuable time so you can focus on crafting compelling content instead of picking colors and font sizes.
-    - [Release plan](/dynamics365/release-plan/2023wave1/marketing/dynamics365-marketing/easily-style-emails-copilot)
-    - [Docs](email-theme.md)
-
-- **Use Copilot to style your forms and event registration pages to match your website**
-    - Build forms and event registration pages that perfectly match your website and brand guidelines within minutes. Leverage Copilot assistance to interpret your website and instantly apply the same styles, saving time designing your marketing or event registration forms. Copilot copies label fonts, input fields styles, colors, and buttons from your website. You can then review and refine elements to perfectly match your brand guidelines.
-    - [Release plan](/dynamics365/release-plan/2023wave1/marketing/dynamics365-marketing/use-copilot-style-forms-event-registration-pages-match-website)
-    - [Docs](real-time-marketing-manage-forms.md#style-your-forms-using-theme)
-
 - **Automatically prevent duplicate emails to contacts that share the same email address**
     - Effective email management is crucial for maintaining strong customer relationships and ensuring your business's success. By enabling email deduplication, you can ensure that your message is sent only once, even when multiple contacts share the same email address. This helps keep your customers’ inboxes clutter-free, increases the chance that important messages avoiding the dreaded spam folder, and preserves your brand reputation.  
     - [Release plan](/dynamics365/release-plan/2023wave2/marketing/dynamics365-marketing/prevent-duplicate-emails-contacts-that-share-email-address)
@@ -793,7 +778,7 @@ Learn how to make the most of the new Dynamics 365 Customer Insights - Journeys 
 | Customer Insights - Journeys        |  1.1.26671.175      |
 
 > [!IMPORTANT]
-> With the July 2023 release, customer consent data began migration to utilize the new multi-brand consent features. For some Customer Insights - Journeys users, the migration changed the settings that control whether tracking links are included in messages. The changes may prevent tracking in messages if customers have not given explicit consent. After the migration, if you want to enable tracking links in messages for customers who have not provided tracking consent, [update the **Tracking purpose** enforcement model](real-time-marketing-email-text-consent.md#consent-enforcement-diagram) of your **Compliance Profile(s)** to "Non-restrictive." This enables tracking links to be substituted in emails as long as the receiver has not explicitly opted out of tracking.
+> With the July 2023 release, customer consent data began migration to utilize the new multi-brand consent features. For some Customer Insights - Journeys users, the migration changed the settings that control whether tracking links are included in messages. The changes may prevent tracking in messages if customers have not given explicit consent. After the migration, if you want to enable tracking links in messages for customers who have not provided tracking consent, [update the **Tracking purpose** enforcement model](real-time-marketing-email-text-consent.md#consent-enforcement-diagrams) of your **Compliance Profile(s)** to "Non-restrictive." This enables tracking links to be substituted in emails as long as the receiver has not explicitly opted out of tracking.
 
 > [!TIP]
 > Starting in July 2023, custom workflows can no longer *read* from the **msdynmkt_contactpointconsent2** or **msdynmkt_contactpointconsent3** consent tables. To ensure continued functionality, you must update custom workflows to read from the latest **msdynmkt_contactpointconsent4** table.
@@ -901,7 +886,7 @@ Public preview features include tailoring communications to improve customer eng
 #### New blogs and scenario docs
 
 Learn how to make the most of the new Dynamics 365 Customer Insights - Journeys features in our latest blogs and scenario docs:
-- [Create dynamic content for multiple countries and languages](real-time-marketing-dynamic-content-multiple-languages.md)
+- [Create dynamic content for multiple countries/regions and languages](real-time-marketing-dynamic-content-multiple-languages.md)
 - [Identify and resolve errors with real-time customer care journeys - Scenario docs](real-time-marketing-customer-care-journey.md)
 - [Deliver personalized customer experiences with Copilot in Dynamics 365 Customer Insights - Journeys and Customer Insights - Microsoft Dynamics 365 Blog](https://cloudblogs.microsoft.com/dynamics365/bdm/2023/03/14/deliver-personalized-customer-experiences-with-copilot-in-dynamics-365-marketing-and-customer-insights/)
 
@@ -950,13 +935,6 @@ Public preview features include AI-powered milestone attribution analysis, multi
     - [Release plan](/dynamics365/release-plan/2023wave1/marketing/dynamics365-marketing/easily-create-engaging-content-using-ai-powered-content-ideas)
     - [Docs](content-ideas.md)
 
-- **Understand how marketing activities contribute to defined milestones using AI**
-    - Dynamics 365 Customer Insights - Journeys enables you to create highly personalized experiences to nudge customers toward important milestones in the buyer's journey such as completing a purchase, becoming a loyalty program member, or becoming a qualified sales opportunity. Now, you can define such milestones and measure them over time. You can then optimize your marketing mix using AI or rules-based attribution which quantifies the contribution of your journeys, channels, and messages in driving customers to complete those milestones.
-    > [!NOTE]
-    > This feature will be gradually rolled out during the month and may have delayed availability compared to the other May releases.
-    - [Release plan](/dynamics365/release-plan/2023wave1/marketing/dynamics365-marketing/understand-how-marketing-activities-contribute-defined-milestones)
-    - [Docs](real-time-marketing-effectiveness.md)
-
 - **Match your business needs with multi-brand consent and customizable preference centers**
     - In Customer Insights - Journeys, marketers can now fully customize out-of-the-box preference centers to better represent their brands and meet their business needs. Create separate preference centers per brand, allowing you to independently capture and manage consent for multiple lines of business. Keep your customers engaged by giving them control over the channels they want to connect to while ensuring that you capture the consent you need to satisfy legal and regulatory requirements.
     - [Release plan](/dynamics365/release-plan/2023wave1/marketing/dynamics365-marketing/match-business-needs-more-granular-customizable-consent-preference-centers)
@@ -971,7 +949,7 @@ Public preview features include AI-powered milestone attribution analysis, multi
     - Now, in addition to email and form interactions, you can also access comprehensive insights for text messages, push notifications, and custom channels in Customer Insights - Journeys contact and lead insights. Get a holistic view of how your audience engages with all your marketing channels, make data-driven decisions, and optimize your strategies for even better results.
 
 - **Clearly communicate dates and times in formats that match expectations of your audience**
-    - Different parts of the world use different formats for date and time, so it is critical to use the right format your audience expects to avoid confusion. We are expanding available time formats to add 12-hour formats in certain languages/countries where they officially follow 24-hour format but in practice also use 12-hour format (for example, English (UK)). We also added recently used formats at the top. Not only does this save time, it also makes it easy to pick a single consistent format across the message.
+    - Different parts of the world use different formats for date and time, so it is critical to use the right format your audience expects to avoid confusion. We are expanding available time formats to add 12-hour formats in certain languages/countries/regions where they officially follow 24-hour format but in practice also use 12-hour format (for example, English (UK)). We also added recently used formats at the top. Not only does this save time, it also makes it easy to pick a single consistent format across the message.
     - [Docs](real-time-marketing-predefined-dynamic-text.md#communicate-dates-and-times-in-various-formats)
 
 - **Create segments effortlessly using everyday language with the improved query assist experience**
@@ -1808,14 +1786,6 @@ The update also includes improved email content blocks, the ability to manually 
 
     > [!div class="mx-imgBorder"]
     > ![Screenshot of conditional dynamic content.](media/conditional-content-screenshot.png "Screenshot of conditional dynamic content")
-
-- **Measure campaign effectiveness with a new channel analytics dashboard**
-    - To create effective campaigns, marketers need to continuously track the delivery of assets across numerous channels. They also need to review campaign engagement metrics so that they can make improvements where needed. With the new out-of-the-box aggregated channel analytics dashboard in Customer Insights - Journeys, you can track important delivery and engagement metrics at any level of aggregation—across all channels, journeys, and marketing assets. You can even zoom in on a particular channel or message. You can also learn from trends of important metrics over a specified time period to further improve your marketing efforts.
-    - [Release plan](/dynamics365-release-plan/2022wave1/marketing/dynamics365-marketing/measure-campaign-effectiveness-new-channel-analytics-dashboard)
-    - [Docs](real-time-marketing-channel-analytics.md)
-
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of Customer Insights - Journeys aggregate channel analytics.](media/whats-new-channel-analytics.png "Screenshot of Customer Insights - Journeys aggregate channel analytics")
 
 #### General availability enhancements
 

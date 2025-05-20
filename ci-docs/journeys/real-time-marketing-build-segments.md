@@ -1,7 +1,7 @@
 ---
 title: Build segments in Customer Insights - Journeys 
 description: Learn how to build segments to use in journeys in Dynamics 365 Customer Insights - Journeys.
-ms.date: 12/13/2023
+ms.date: 04/07/2025
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -84,7 +84,7 @@ To include members from either subgroup, select the **or** subgroup operator.
 ## Preview: Add a new group to a segment
 
 > [!IMPORTANT]
-> A preview feature is a feature that is not complete, but is made available before it’s officially in a release so customers can get early access and provide feedback. Preview features aren’t meant for production use and may have limited or restricted functionality.
+> A preview feature is a feature that isn't complete, but is made available before it’s officially in a release so customers can get early access and provide feedback. Preview features aren’t meant for production use and may have limited or restricted functionality.
 > 
 > Microsoft doesn't provide support for this preview feature. Microsoft Dynamics 365 Technical Support won’t be able to help you with issues or questions. Preview features aren’t meant for production use, especially to process personal data or other data that are subject to legal or regulatory compliance requirements.
 
@@ -95,9 +95,16 @@ To create the segment from the above example, create a new segment in Customer I
 > [!div class="mx-imgBorder"]
 > ![add a new group to a segment](media/real-time-marketing-add-a-new-group.png "add a new group to a segment")
 
-In the above example, the attribute was added to a new group (Group 2).  To create the segment you want, select the operator button between the groups.
+In the above example, the attribute was added to a new group (Group 2). To create the segment you want, select the operator button between the groups.
 
 > [!div class="mx-imgBorder"]
 > ![select your operator between groups](media/real-time-marketing-select-your-operator-between-groups.png "select your operator between groups")
+
+> [!Note]
+> Calculated and Formula Dataverse table fields aren't supported in real-time journeys segmentation. The segmentation backend doesn't receive an update signal when a Calculated or a Formula field is updated. This is by design, as values of Calculated and Formula fields aren't persisted anywhere, they're just calculated on the fly. To address this, the app now shows Calculated and Formula fields as **disabled** in the real-time journeys segment designer (with an appropriate tooltip).
+
+> [!TIP]
+> While adding nested segments to the segment definition, you can view the details of the underlying segment by selecting the **View segment** hyperlink when hovering over the desired segment. To use keyboard controls to view the segment, press the "K" key while focus is on the desired segment. This action opens a dialog displaying the segment details.
+> :::image type="content" source="media/segment-details.png" alt-text="Screenshot showing link to view segment details." lightbox="media/segment-details.png":::
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]

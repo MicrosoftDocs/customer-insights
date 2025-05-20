@@ -3,7 +3,7 @@ title: Analyze sentiment for customer feedback (preview)
 description: Learn how to use a sentiment analysis model on customer feedback in Dynamics 365 Customer Insights - Data."
 ms.date: 09/01/2023
 ms.reviewer: mhart
-ms.topic: conceptual
+ms.topic: how-to
 author: wmelewong 
 ms.author: wameng
 ms.collection: bap-ai-copilot 
@@ -101,11 +101,11 @@ Dynamics 365 Customer Insights - Data can process up to 10 million feedback reco
 
 1. Go to **Insights** > **Predictions**.
 
-1. In the the **My predictions** tab, select the prediction you want to view.
+1. In the **My predictions** tab, select the prediction you want to view.
 
 There are two tabs of results.
 
-### Sumary tab
+### Summary tab
 
 There are four primary sections of data within the results page.
 

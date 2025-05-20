@@ -1,7 +1,7 @@
 ---
 title: Access and interpret analytics
 description: How to access and interpret Customer Insights - Journeys analytics in Dynamics 365 Customer Insights - Journeys.
-ms.date: 12/16/2024
+ms.date: 04/07/2025
 ms.topic: article
 author: colinbirkett
 ms.author: colinbirkett
@@ -33,10 +33,10 @@ The following insights categories are provided:
 
 - **Overview**: A chart of the engagement interactions and a summary of the most important KPIs for each channel for the selected contact.
 - **Email insights**: Complete details of email interactions for the selected contact, including a list of all messages sent to them, plus lists of all opens, clicks, bounces, and more. View the email clients used to open emails and the device types, operating systems, and browsers used to click on emails.
-- **Form insights**: See which marketing forms the contact has visited and submitted. View the content of each submission.
-- **Text message insights**: Complete details of text message interactions for the selected contact, including a list of all messages sent to them, plus lists of all clicks, replies, and more.
 - **Push notification insights**: Complete details of push notification interactions for the selected contact, including a list of all messages sent to them and more.
+- **Text message insights**: Complete details of text message interactions for the selected contact, including a list of all messages sent to them, plus lists of all clicks, replies, and more.
 - **Custom channels insights**: Complete details of custom channel interactions for the selected contact, including messages sent, clicked, and more.
+- **Website and form insights**: Monitor web behavior and see which marketing forms the contact has visited and submitted. View the content of each submission.
 
     :::image type="content" source="media/real-time-marketing-custom-channel-contact-insights.png" alt-text="Screenshot of custom channel contact insights." lightbox="media/real-time-marketing-custom-channel-contact-insights.png":::
 
@@ -69,7 +69,7 @@ Operational analytics has two parts:
 
     - **Inflow and outflow information**: For every step, the top shows the number of customers who entered the step (Inflow), the number currently being processed (Processing), the number who have moved to the next step (Processed), and the number who have exited the journey (Exit). The percentage is calculated from the inflow volume. When the journey is running and counts are small, we prioritize showing these numbers as soon as possible (within minutes) and this can lead to inconsistencies (for example, a processed data point may be counted and shown before its corresponding inflow data point is shown). This self-corrects once journey execution is complete.
 
-    - **Flow details**: The flow details section shows additional details such as rate limits (if applied), unique people who entered the journey (different than inflow that counts each entry rather than unique people, flow details are only available for channel tiles), and exit reasons. You can select the export button to get a detailed view of the individual customers and export the data to Excel (with a limit of 50,000 records).
+    - **Flow details**: The flow details section shows additional details such as rate limits (if applied), unique people who entered the journey (different than inflow that counts each entry rather than unique people, flow details are only available for channel tiles), and exit reasons. You can select the list icon to display the individuals in the step and reason codes for their status. You can also select the export button to export the data to Excel (with a limit of 50,000 records).
 
         :::image type="content" source="media/operational-analytics-2.png" alt-text="An overview of customer inflow, processed, and exit analytics with email performance metrics." lightbox="media/operational-analytics-2.png":::
 
@@ -135,14 +135,6 @@ Learn more: [How to use aggregate channel analytics](real-time-marketing-channel
 > [!NOTE]
 > There is no data retention policy for Customer Insights - Journeys interactions in aggregate cross-journey analytics and aggregate channel analytics. Dataverse entities are limited to a two-year retention policy after their initial creation date. Keep in mind that the two-year Dataverse entity retention policy might impact analytics views associated with interaction data from Dataverse entities.
 > The aggregate cross-journey analytics, channel analytics, and marketing effectiveness analytics dashboards are not supported on mobile devices.
-
-## Marketing effectiveness analytics
-
-The marketing effectiveness analytics dashboard enables you to set up key milestones in your buyer’s journey and analyze how your Customer Insights - Journeys activities are contributing to driving customers to those milestones. The dashboard uses AI-powered multi-touch and single-touch attribution models.
-
-:::image type="content" source="media/real-time-marketing-effectiveness-analytics-dashboard.png" alt-text="Customer Insights - Journeys effectiveness analytics dashboard." lightbox="media/real-time-marketing-effectiveness-analytics-dashboard.png":::
-
-Learn more: [Preview: Marketing effectiveness analytics](real-time-marketing-effectiveness.md)
 
 ## Learn more
 

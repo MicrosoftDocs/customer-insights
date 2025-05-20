@@ -2,7 +2,7 @@
 title: Consent management overview
 description: Learn how to manage consent settings in Dynamics 365 Customer Insights - Journeys.
 ms.date: 11/15/2024
-ms.topic: article
+ms.topic: concept-article
 author: alfergus
 ms.author: alfergus
 search.audienceType: 
@@ -143,7 +143,7 @@ Topics use the enforcement model of their parent purpose. Messages that are conf
 ##### Considerations for contact entities
 
 > [!NOTE]
-> If you're using Customer Insights - Journeys without the outbound marketing module installed, the additional consent enforcement checks described in this section aren't performed. If outbound marketing marketing isn't present, only the contact point consent enforcement model is used to determine if messages are sent.
+> If you're using Customer Insights - Journeys without the outbound marketing module installed, the additional consent enforcement checks described in this section aren't performed. If outbound marketing isn't present, only the contact point consent enforcement model is used to determine if messages are sent.
 
 When outbound marketing is provisioned, real-time journeys make consent enforcement checks using data stored on the contact record.
 

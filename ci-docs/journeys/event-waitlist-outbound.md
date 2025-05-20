@@ -2,7 +2,7 @@
 title: Set up and manage an event waitlist in outbound marketing
 description: Describes how event waitlists work, how to set them up, and how to invite waiting people when capacity becomes available in outbound marketing.
 ms.date: 09/22/2023
-ms.topic: article
+ms.topic: how-to
 author: alfergus
 ms.author: alfergus
 search.audienceType: 
@@ -68,7 +68,7 @@ To see who is currently on the waitlist for any event or session:
 
 1. [Open the Events work area](open-events.md), go to the events list (**Events** > **Event** > **Events**), and then open the event.
 
-1. If you are using [session-level registration](session-level-registration-outbound.md), then go to the the **Agenda** tab for the event and open the session you want to view.
+1. If you are using [session-level registration](session-level-registration-outbound.md), then go to the **Agenda** tab for the event and open the session you want to view.
 
 1. Open the **Registration and attendance** tab for your selected event or session and scroll down to the **Waitlist** section. (Note that the **Waitlist** section is only shown when the waitlist is enabled.)  
 

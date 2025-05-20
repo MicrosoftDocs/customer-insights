@@ -3,7 +3,7 @@ title: Explore the user interface
 description: "Start exploring the app on the Home page."
 ms.date: 06/20/2024
 ms.reviewer: mhart
-ms.topic: conceptual
+ms.topic: how-to
 author: wmelewong
 ms.author: wameng
 ---

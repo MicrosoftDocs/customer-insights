@@ -2,7 +2,7 @@
 title: Manage fiscal year settings
 description: Define the fiscal year period used for reporting financial data at your organization in Dynamics 365 Customer Insights - Journeys.
 ms.date: 08/18/2023
-ms.topic: article
+ms.topic: how-to
 author: alfergus
 ms.author: alfergus
 search.audienceType: 

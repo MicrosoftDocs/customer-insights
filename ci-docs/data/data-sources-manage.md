@@ -1,7 +1,7 @@
 ---
 title: "Manage data sources"
 description: "Learn how to manage data sources attached or imported to Dynamics 365 Customer Insights - Data."
-ms.date: 6/03/2024
+ms.date: 04/29/2025
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -20,9 +20,9 @@ Select a data source to view available actions.
 - [**Edit**](data-sources.md) the data source to change its properties. You can't edit a single CSV data source that was used to automatically generate insights.
 - [**Refresh**](#refresh-data-sources) the data source to include the latest data.
 - [**Enrich**](data-sources-enrichment.md) the data source before unification to improve the quality and completeness for better results. 
-- **Delete** the data source. A data source can be deleted only if the data isn't used in any processing such as unification, insights, activations, or exports.
+- **Delete** the data source. A data source can be deleted only if the data isn't used in any processing such as unification, insights, activations, or exports. To remove a data source that is unified and is in use, go to [Remove a data source in use](#remove-a-data-source-in-use).
 
-If you have an Azure Data Lake data source with Common Data Model tables, you can [update it to use Delta tables.](convert-datalake-to-deltalake.md)
+If you have an Azure Data Lake data source with Common Data Model tables, you can [update it to use Delta tables](convert-datalake-to-deltalake.md).
 
 ## Refresh data sources
 
@@ -42,10 +42,10 @@ To refresh a data source on demand:
 
 ## Review corrupt data sources
 
-Data being ingested may have corrupt records that can cause the data ingestion process to complete with errors or warnings.
+Data being ingested might have corrupt records that can cause the data ingestion process to complete with errors or warnings.
 
 > [!NOTE]
-> If data ingestion completes with errors, subsequent processing (such as unification or activity creation) that leverages this data source will be skipped. If ingestion completed with warnings, subsequent processing continues but some of the records may not be included.
+> If data ingestion completes with errors, subsequent processing (such as unification or activity creation) that leverages this data source are skipped. If ingestion completed with warnings, subsequent processing continues but some of the records might not be included.
 
 These errors can be seen in the task details.
 
@@ -71,5 +71,13 @@ Corrupt records are shown in system-created tables.
 After the next refresh of the data source, the corrected records are ingested to Customer Insights - Data and passed on to downstream processes.
 
 For example, a 'birthday' column has the datatype set as 'date'. A customer record has their birthday entered as '01/01/19777'. The system flags this record as corrupt. Change the birthday in the source system to '1977'. After an automated refresh of data sources, the field now has a valid format and the record is removed from the corrupted table.
+
+## Remove a data source in use
+
+If you have a data source that was ingested and unified that you no longer need, you can remove it. For example, if all the tables in the data source are obsolete or being replaced, remove the tables and the data source.
+
+1. [Remove the data source's unified tables](data-unification-update.md#remove-a-unified-table).
+
+1. Once all data dependencies are removed and unification has rerun, you can delete the data source. Go to **Data** > **Data sources**, select the data source, and then **Delete**.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

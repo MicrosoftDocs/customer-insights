@@ -2,7 +2,7 @@
 title: Generate activities from a customer journey
 description: A tutorial for how to set up a customer journey to generate and assign contact-related activities to staff in Dynamics 365 Customer Insights - Journeys.
 ms.date: 08/18/2023
-ms.topic: article
+ms.topic: how-to
 author: alfergus
 ms.author: alfergus
 search.audienceType: 
@@ -45,7 +45,7 @@ For this exercise, you'll set up a template to create task activities, and then 
 
     ![Select a customer journey template.](media/customer-journey-templates2.png "Select a customer journey template")
 
-1. Select the the **Audience** tile to set it up. The audience **Properties** pane will automatically appear to the right of the canvas. Configure the the audience tile to reference the segment you want to target.
+1. Select the **Audience** tile to set it up. The audience **Properties** pane will automatically appear to the right of the canvas. Configure the audience tile to reference the segment you want to target.
 
     ![Assign a segment to the segment tile.](media/journey-assign-segment2.png "Assign a segment to the segment tile")
 

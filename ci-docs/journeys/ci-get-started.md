@@ -20,7 +20,7 @@ By connecting Customer Insights - Data with Customer Insights - Journeys, you ca
 - Target unified customer profiles and segments. This enables you to engage every customer, regardless of the location of the customer's data.
 - Base dynamic content (such as personalized dynamics text) in emails, text messages, and push notifications on measures such as loyalty status, subscription renewal date, parent account, or any other measure you've captured in the unified Customer Insights - Data profile.
 - Load data from Customer Insights - Journeys into Customer Insights - Data and combine it with customer data from other sources.
-- Apply Customer Insights - Data data cleansing, enrichment, and fuzzy matching tools.
+- Apply Customer Insights - Data cleansing, enrichment, and fuzzy matching tools.
 
 ## Use rich customer profiles in Customer Insights - Journeys
 

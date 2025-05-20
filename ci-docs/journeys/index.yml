@@ -96,7 +96,7 @@ additionalContent:
         - url:  dynamic-email-content.md
           text: Add dynamic content to email messages
         - url: real-time-marketing-dynamic-content-multiple-languages.md
-          text: Create dynamic content for multiple countries and languages
+          text: Create dynamic content for multiple countries/regions and languages
       - title: Marketing forms
         links:
         - url: real-time-marketing-form-overview.md
@@ -111,8 +111,6 @@ additionalContent:
           text: Access and interpret analytics
         - url: real-time-marketing-cross-journey-analytics.md
           text: Cross-journey analytics
-        - url: real-time-marketing-effectiveness.md
-          text: Marketing effectiveness
 
   - title: Related products
     items:

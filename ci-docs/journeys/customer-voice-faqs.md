@@ -2,7 +2,7 @@
 title: Customer Voice FAQs
 description: Frequently asked questions about using Dynamics 365 Customer Voice in the outbound marketing area of Dynamics 365 Customer Insights.
 ms.date: 09/15/2023
-ms.topic: article
+ms.topic: faq
 author: alfergus
 ms.author: alfergus
 search.audienceType: 

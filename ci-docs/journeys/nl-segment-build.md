@@ -1,14 +1,18 @@
 ---
 title: Use natural language to create segments
-description: Example marketing segments to show various capabilities of Natural Language Query in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/21/2023
+description: Build dynamic and static segments in Dynamics 365 Customer Insights - Journeys using natural language queries for faster, intuitive segmentation.
+ms.date: 04/14/2025
 ms.topic: article
 author: alfergus
 ms.author: alfergus
-search.audienceType: 
+search.audienceType:
   - admin
   - customizer
   - enduser
+ms.custom:
+  - ai-gen-docs-bap
+  - ai-gen-description
+  - ai-seo-date:04/14/2025
 ---
 
 # Use natural language to create segments
@@ -16,7 +20,7 @@ search.audienceType:
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=d681824c-8959-49b1-858b-ec7912303ef1]
 
 > [!IMPORTANT]
-> The the natural language feature for segments currently only supports English language queries.
+> The natural language feature for segments currently only supports English language queries.
 
 If your administrator has enabled the natural language feature, you can use Natural Language Query (NLQ) to build segments in Dynamics 365 Customer Insights - Journeys. Natural language input enables you to use common words and phrases to describe the people you want to include in dynamic and static segments without learning all the specifics of the Common Data Model (CDM) and best practices for building queries.
 
@@ -26,7 +30,7 @@ Using the instructions in [Working with segments](segmentation-lists-subscriptio
 
 ## Sample segments
 
-You can create a segment that will evaluate your Dynamics 365 organizational database for contacts that meet certain criteria. For example, contacts living in a certain area who have an email address.
+You can create a segment that evaluates your Dynamics 365 organizational database for contacts that meet certain criteria. For example, contacts living in a certain area who have an email address.
 
 You might name the new segment “Contacts who live in Chicago with email and an upcoming birthday” and then define the segment as follows:
 
@@ -37,7 +41,7 @@ You might name the new segment “Contacts who live in Chicago with email and an
 ### Building the segment
 
 - Remember to enter the phrases using normal language. You could enter, "Contacts who live in Chicago with an email address and with a birthday in the next month."
-- Give the segment a descriptive name that will help you find it later.
+- Give the segment a descriptive name that helps you find it later.
 
 ### Reviewing the results
 
@@ -53,7 +57,7 @@ This segment would find a group of contacts who have purchased from your company
 
 ## Phrases you can use in natural language queries
 
-You can use a variety of phrases to find contacts and accounts with various attributes. This is not a complete list.
+You can use various phrases to find contacts and accounts with various attributes. This isn't a complete list.
 
 - Find contacts by location
     - Contacts who live in Atlanta
@@ -87,6 +91,6 @@ You can use a variety of phrases to find contacts and accounts with various attr
 Contacts in this segment might be more receptive to an email marketing campaign about protective signage than a generic customer list, and it allows for a targeted customer journey more likely to succeed. -->
 
 > [!TIP]
-> Customer Insights - Journeys segments are not always processed in the order that the query blocks are expressed, so it’s better to express queries in the positive “contacts who have purchased in the past 90 days” than to exclude contacts with a negative or suppression segment, like “contacts who have not purchased in the past 180 days.” Dynamic segments can be created to include, intersect, or exclude contacts in segments, allowing you to build more complex queries.
+> Customer Insights - Journeys segments aren't always processed in the order that the query blocks are expressed, so it’s better to express queries in the positive “contacts who have purchased in the past 90 days” than to exclude contacts with a negative or suppression segment, like “contacts who haven't purchased in the past 180 days.” Dynamic segments can be created to include, intersect, or exclude contacts in segments, allowing you to build more complex queries.
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]

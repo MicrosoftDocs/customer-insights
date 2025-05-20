@@ -27,13 +27,6 @@ The following tables list each available feature, preview status, and links for 
 | Use protected fields in segments | Production | Allow the use of protected columns/fields in segment criteria in real-time marketing. Use with caution. [Learn more](protected-fields.md). |
 | Use system command bar | Preview | Utilize the system command bar to enhance the segmentation user experience. This feature enables customers to customize the ribbon and activates default CRM actions. |
 
-
-## Analytics
-
-| Feature switch | Preview or production | Description |
-|---|---|---|
-| Marketing effectiveness analytics | Preview | [Understand the contribution of your marketing activities towards key milestones in your buyer's journey](real-time-marketing-effectiveness.md).|
-
 ## Business units
 
 | Feature switch | Preview or production | Description |
@@ -133,7 +126,7 @@ The following tables list each available feature, preview status, and links for 
 | Feature switch | Preview or production | Description |
 |---|---|---|
 | Customer Voice integration | Production | [Enable Dynamics 365 Customer Voice integrations with Customer Insights - Journeys](customer-voice.md). |
-| Contact Center integration | Production | Enable Dynamics 365 Contact Center integrations with Customer Insights - Journeys. |
+<!-- Contact Center integration | Production | Enable Dynamics 365 Contact Center integrations with Customer Insights - Journeys. -->
 
 ## Compliance
 

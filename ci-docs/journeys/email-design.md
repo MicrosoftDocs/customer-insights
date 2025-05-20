@@ -1,8 +1,8 @@
 ---
 title: Create and design a marketing email message
 description: Learn how to create and design a marketing email message in Dynamics 365 Customer Insights - Journeys.
-ms.date: 11/27/2024
-ms.topic: article
+ms.date: 04/03/2025
+ms.topic: how-to
 author: alfergus
 ms.author: alfergus
 search.audienceType: 
@@ -39,6 +39,15 @@ The first thing you are asked when you create a new message is to select a templ
 When you create a new message from a template, the template content is copied into your new message. The message and template aren't linked, so when you edit the message, the template won't change. Likewise, any future changes that you make to a template won't affect any existing messages that were created using it.
 
 You can also create your own custom templates. Custom templates can help you and others in your organization create new messages more quickly in the future. Design your templates so that they reflect your organization's graphical identity and fit closely with the types of campaigns you run most regularly. You can save any existing message as a template by selecting **Save as template** on the command bar. You can also work directly in the templates area (**Customer Insights - Journeys** > **Assets** > **Templates**) to view or edit existing templates and create new ones. When setting up a template, you can add various types of metadata (purpose, style, market type, and optimized for) which make each template easier to identify and find by using filters.
+
+## Edit email element styles using the theme functionality
+
+Themes allow you to control the style of email elements such as fields, buttons, and text. Access the theme feature by selecting the brush icon in the right pane of the email designer. The theme applies the same style to all elements of the same type in your email. For example, if you change the color of a text field, all text fields in your email change to the same color.
+
+To edit the style of email elements, select the theme (brush) icon in the right pane, then select the element type from the theme section. Choose from input fields, buttons, text, labels, or error messages. Once you select an element type, customize its properties such as font, color, size, border, and background. You can preview the changes in the email editor.
+
+> [!div class="mx-imgBorder"]
+> ![Screenshot of the theme functionality area.](media/email-theme-button.png "Screenshot of the theme functionality area")
 
 ## Make basic and required settings
 

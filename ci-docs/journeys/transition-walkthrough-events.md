@@ -2,7 +2,7 @@
 title: Transition events from outbound marketing to real-time journeys
 description: Learn how to transition event management capabilities from outbound marketing to real-time journeys in Dynamics 365 Customer Insights - Journeys.
 ms.date: 02/25/2025
-ms.topic: article
+ms.topic: how-to
 author: colinbirkett
 ms.author: colinbirkett
 search.audienceType: 
@@ -98,7 +98,7 @@ There were multiple options on how to build an event registration experience in 
 
 - **Event portal hosted on Power Portals** – Build a new event registration website using the Power Pages template. For more information, see [Build an event registration website using Power Pages](event-portal-template.md).
 - **Event portal not hosted on Power Portals** – The recommended migration path is to build a new event registration experience using the new code snippet listing once available.
-- **Outbound marketing marketing form for event registration** – Replace these forms with real-time journeys event registration forms. For more information, see [Open the event management work area](open-events.md).
+- **Outbound marketing form for event registration** – Replace these forms with real-time journeys event registration forms. For more information, see [Open the event management work area](open-events.md).
 - **Custom solution using outbound marketing event management API (not using Angular application)** – Use the new events API. For more information, see [Using the events API in real-time journeys](developer/using-rtm-events-api.md).
 
 ## Frequently asked questions
@@ -156,5 +156,7 @@ If you're not using the out-of-the-box event record creation form, the way to di
 - **100000002** - Real-time journeys
 
 If the value is **null**, the record created will be an **outbound marketing** event. For non-customized forms and the out-of-the-box flow, this is automatically defined.
+
+Existing event forms that were customized for Outbound marketing events will not work for Real-time marketing events. Crucial tabs may be hidden on a customized form. For example, the "Website and Forms" tab is needed for Real-time events to operate as the registration form and session level registrations are set on that tab.
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]

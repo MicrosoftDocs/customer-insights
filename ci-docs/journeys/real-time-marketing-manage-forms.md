@@ -1,10 +1,10 @@
 ---
 title: Manage Customer Insights - Journeys forms
 description: Discover how to manage and style forms in Dynamics 365 Customer Insights - Journeys. Edit, unpublish, and customize forms with ease. Learn more now!
-ms.date: 12/16/2024
-ms.topic: article
+ms.date: 04/11/2025
+ms.topic: how-to
 author: petrjantac
-ms.author: alfergus
+ms.author: colinbirkett
 ms.collection: bap-ai-copilot
 ms.custom:
   - ai-gen-docs-bap
@@ -73,26 +73,7 @@ There are two ways to use custom fonts in your form:
 1. Set the font to "inherit": Recommended for forms **embedded** into your own page. The form inherits the form from your page.
 1. Add your own custom font: Recommended for forms **hosted as standalone page**. You can upload your custom font using the theme feature in the custom fonts section. Your uploaded custom fonts can be then used in all text style definitions.
 
-### Preview: Copilot - Forms theme assistant
-
-> [!IMPORTANT]
-> A preview feature is a feature that is not complete but is made available before it’s officially in a release so customers can get early access and provide feedback. Preview features aren’t meant for production use and may have limited or restricted functionality.
->
-> Microsoft doesn't provide support for this preview feature. Microsoft Dynamics 365 Technical Support won’t be able to help you with issues or questions. Preview features aren’t meant for production use, especially to process personal data or other data that are subject to legal or regulatory compliance requirements.
-
-> [!IMPORTANT]
-> You must only use the theme assistant with websites that you own and operate. The theme assistant should not be used to copy third-party websites.
-
-The theme assistant is a Copilot feature in Customer Insights - Journeys. You can use the theme assistant to fetch styles from an existing website that you own and control. To use a theme, enter the website URL and select **Fetch styles**. This process might take a few minutes. You can continue your work and return back later to check the result. Once the assistant fetches the styles from your website, it applies the styles to the theme of your form.
-
-:::image type="content" source="media/real-time-marketing-form-theme-copilot.png" alt-text="Fetch styles from your website using Copilot." lightbox="media/real-time-marketing-form-theme-copilot.png":::
-
-## Preview: Parent contact for lead
-
-> [!IMPORTANT]
-> A preview feature is a feature that is not complete but is made available before it’s officially in a release so customers can get early access and provide feedback. Preview features aren’t meant for production use and may have limited or restricted functionality.
->
-> Microsoft doesn't provide support for this preview feature. Microsoft Dynamics 365 Technical Support won’t be able to help you with issues or questions. Preview features aren’t meant for production use, especially to process personal data or other data that are subject to legal or regulatory compliance requirements.
+## Parent contact for lead
 
 The **Lead & Contact** audience allows you to update a lead and contact entity with a single form submission. You can change the audience using the picker in the top right corner of the form editor.
 
@@ -114,10 +95,14 @@ Form settings allow you to configure advanced properties of your form and define
 
 :::image type="content" source="media/real-time-marketing-form-settings.png" alt-text="Form settings." lightbox="media/real-time-marketing-form-settings.png":::
 
-- **Duplicate records**: Choose your strategy on [how to handle duplicate records](#how-to-handle-duplicate-records).
+- **Form template**: Select a template for your form. Selecting a template erases all content in your form.
+- **Prefill**: Enable [Form Prefill](real-time-marketing-form-prefill.md) for all fields in your form.
+- **Web tracking**: Enable [web tracking](interaction-journey-decision.md) of users submitting the form by adding a [tracking cookie](real-time-journeys-cookies.md) containing the form submission ID to their browser. If enabled, the form loader script is automatically enriched with the web tracking script, which produces the tracking cookie. Make sure you inform the users about cookie usage according to your privacy regulations.
+- **Audience**: Define [how to handle duplicate records](real-time-marketing-manage-forms.md#how-to-handle-duplicate-records) by selecting the [matching rule](real-time-marketing-matching-rules.md). Configure whether the form submission can create new records or update existing records. If *Update matched contact with submitted data* and *Create a new contact if there was no match to an existing one?* are set to **No**, the form submission doesn't update or create any record. The form submission can be linked to an existing record identified by the matching rule.
+- **Post submission action**: Set whether the *Thank you notification* is displayed or the user is redirected to a different page once the form is submitted. The *Thank you notification* is shown for a few seconds even if *Redirect after submission* is selected.
 - **Thank you notification**: This message appears if the user successfully submits the form.
 - **Error notification**: This message appears if an error occurs when the form is submitted.
-- **Redirect after submission**: If enabled, you can enter a URL to which the user will be redirected after the form submission.
+- **Double opt-in**: If enabled, the [double opt-in](real-time-marketing-double-opt-in.md) email can be sent after the form submission. To enable double opt-in for your form, a double opt-in-enabled compliance profile is required
 
 ## How to handle duplicate records
 
@@ -125,21 +110,13 @@ The default approach to duplicate records is different for contact and lead enti
 
 - **Contact (default: Update contact using email)**: If the user submits a form with an existing email address, the form submission updates the existing record. There's no new record created.
 - **Lead (default: Always create a new record)**: If the user submits a form with an existing email address, a new record with the same email address is created.
+- **Lead & Contact (default: Update contact using email and always create a new lead)**: If the user submits a form with an existing email address, the form submission updates the existing contact and creates a new lead.
 
 You can change the default matching rule using the **Duplicate records** drop-down in the **Forms** settings. You can also create a [custom matching rule](real-time-marketing-manage-forms.md#create-a-custom-matching-rule).
 
 ### Create a custom matching rule
 
-You can choose how to handle duplicate records by creating a new matching rule.
-
-1. Select the bottom left menu to access **Settings**.
-1. Open **Form matching rules** in the **Customer engagement** section.
-1. Select the plus icon (**+**) to create a new matching rule.
-1. Name the matching rule and select the **Target entity**.
-1. **Save the matching rule** (don't select Save & close as you need to stay on this record).
-1. Add matching strategy attributes (fields) that are used to check if the record exists.
-1. Save your new matching rule.
-1. The newly created matching rule can now be selected in the **Duplicate records** list in the form settings.
+A custom matching rule allows you to specify criteria for identifying existing leads or contacts. This prevents creating duplicate records. For more information, see [Create custom matching rules](real-time-marketing-matching-rules.md).
 
 ## Field types
 

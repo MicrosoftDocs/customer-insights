@@ -1,7 +1,7 @@
 ---
 title: "Create measures with measure builder"
 description: "Build measures from scratch to analyze key metrics about your business."
-ms.date: 09/01/2023
+ms.date: 04/16/2025
 ms.topic: how-to
 author: JimsonChalissery
 ms.author: jimsonc
@@ -13,11 +13,31 @@ ms.custom: bap-template
 
 Measure builder lets you define calculations using math operators, aggregation functions, and filters. Define measures using attributes from tables that are related to the unified *Customer* table.
 
+## Measure types
+
+There are three types of measures that can be created in four different ways:
+
 - Customer attribute: Generates output as a new attribute, which gets saved as a new column in the system-generated table named *Customer_Measure*. When refreshing a customer attribute, all the other customer attributes in the *Customer_Measure* table refresh simultaneously. In addition, customer attributes are shown in the customer profile card. Once run or saved, you can't change a customer attribute to a customer measure. Customer attribute measures have a direct relationship to the unified customer profile.
 
 - Customer measure: Generates output as its own table named after the name of the measure you define. You can't change it to a customer attribute once run or saved. Customer measures don't show in the customer profile card. Customer measures have a direct relationship to the unified customer profile.
 
+  You can also [create a customer measure - table that can be used in Customer Insights - Journeys and other Dataverse applications](dataverse-measures.md). 
+
 - Business measure: Generates output as its own table and shows on the home page of your Dynamics 365 Customer Insights - Data environment. Business measures don't have a direct relationship to individual customer profiles. Business measures look across all customer profiles or are grouped by another attribute. For example, a calculation for all customers in a specific state.
+
+The following table provides key points about the different measure types. The dimension, *CustomerId* is the unique profile identifier from the *Customer* table.
+
+|Key points  |Customer attribute  |Customer measure  |Customer measure table - For use in Journeys and other Dynamics 365 apps |Business measure
+|---------|---------|---------|---------|---------|
+|Definition |A single value calculated per unique profile. |A single value or multiple values calculated per unique profile and split by one or more dimensions. |A single value or multiple values calculated per unique profile. |A value calculated without a direct link to a unique profile, optionally split by one or more dimensions. |
+|Dimensions | CustomerId only |CustomerId and more |CustomerId only |0 or more except CustomerId |
+|# of calculations/attributes in the measure |A single calculation/attribute. |A single or multiple calculations/attributes with CustomerId + at least 1 other dimension. |A single or multiple calculations/attributes with CustomerId dimension. |A single calculation/attribute with no dimension *or* a single or multiple calculations/attributes with at least 1 dimension that isn't the CustomerId. |
+|Table |All customer attributes are stored in a table called *Customer_Measure* where the first column is CustomerId and 1 column for each added Customer attribute. |Stored in its own dedicated table |Stored in its own dedicated table |Stored in its own dedicated table |
+|Displays on [**Customer** card](customer-profiles.md) |Yes |No |No |No |
+|Available as [elastic table in Dataverse](tables.md#customer-insights---data-tables-in-dataverse) |Yes (a different format than the [*Customer_Measure*](tables.md#customermeasure) table and not readily usable in other Dynamics 365 apps) |No |Yes |No |
+|Refresh |Refresh of a customer attribute results in refresh of all the customer attributes in the instance |Can be refreshed on its own |Can be refreshed on its own |Can be refreshed on its own |
+
+## Create a build-your-own measure
 
 1. Go to **Insights** > **Measures**.
 
@@ -31,7 +51,7 @@ Measure builder lets you define calculations using math operators, aggregation f
 
 1. Select **Done**.
 
-1. To track business-level performance, toggle **Measure type** to **Business level**. **Customer level** is selected by default. **Customer level** automatically adds the *CustomerId* attribute to Dimensions while **Business level** automatically removes it.
+1. Select the [**Measure type**](#measure-types).
 
 1. In the configuration area, choose the aggregation function from the **Select function** dropdown menu. Aggregation functions include:
    - **Sum**
@@ -65,21 +85,21 @@ Measure builder lets you define calculations using math operators, aggregation f
 
    1. Select **Edit dimensions** to add data attributes you want to group the measure values by. For example, city or gender.
       > [!TIP]
-      > If you selected **Customer level** as the **Measure type** the *CustomerId* attribute is already added. If you remove the attribute, **Measure type** toggles to **Business level**.
+      > If you selected **Customer** as the **Measure type**, the *CustomerId* attribute is already added. If you remove the attribute, **Measure type** toggles to **Business**.
    1. Select **Done**.
 
 1. If there are values in your data that must be replaced with an integer, select **Rules**. Configure the rule and make sure that you choose only whole numbers as replacements. For example, replace *null* with *0*.
 
 1. If there are multiple paths between the data table you mapped and the *Customer* table, choose one of the identified [table relationship paths](relationships.md). Measure results can vary depending on the selected path.
 
-   1. Select **Relationship path** and choose the table path that should be used to identify your measure. If there's only a single path to the *Customer* table, this control won't show.
+   1. Select **Relationship path** and choose the table path that should be used to identify your measure. If there's only a single path to the *Customer* table, this control doesn't show.
    1. Select **Done**.
 
-1. To add more calculations for the measure, select **New calculation**. Only use tables on the same path for new calculations. More calculations will show as new columns in the measure output table. Optionally, select **Edit name** to create a name for the calculation.
+1. To add more calculations for the measure, select **New calculation**. Only use tables on the same path for new calculations. More calculations show as new columns in the measure output table. Optionally, select **Edit name** to create a name for the calculation.
 
 1. Select the vertical ellipsis (&vellip;) on the calculation to **Duplicate** or **Remove** a calculation from a measure.
 
-1. In the **Preview** area, you'll see the data schema of the measure output table, including filters and dimensions. The preview reacts dynamically to changes in the configuration.
+1. In the **Preview** area, you can see the data schema of the measure output table, including filters and dimensions. The preview reacts dynamically to changes in the configuration.
 
 1. Select **Run** to calculate results for the configured measure. Select **Save and close** if you want to keep the current configuration and run the measure later. The **Measures** page displays.
 

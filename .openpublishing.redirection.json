@@ -2650,6 +2650,11 @@
       "source_path": "ci-docs/journeys/event-management-dashboard.md",
       "redirect_url": "/dynamics365/customer-insights/journeys/event-management",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/real-time-marketing-effectiveness.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/removed-deprecated-features",
+      "redirect_document_id": false
     }
   ]
 }

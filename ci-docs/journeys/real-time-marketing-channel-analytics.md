@@ -2,7 +2,7 @@
 title: How to use aggregate channel analytics
 description: Learn how to use and interpret aggregate channel analytics in Dynamics 365 Customer Insights - Journeys.
 ms.date: 04/08/2024
-ms.topic: article
+ms.topic: how-to
 author: alfergus
 ms.author: alfergus
 search.audienceType: 

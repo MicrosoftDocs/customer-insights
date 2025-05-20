@@ -2,7 +2,7 @@
 title: Troubleshoot email campaigns
 description: Troubleshooting and frequently asked questions for email campaigns in Dynamics 365 Customer Insights - Journeys.
 ms.date: 08/18/2023
-ms.topic: article
+ms.topic: troubleshooting-general
 author: alfergus
 ms.author: alfergus
 ms.reviewer: renwe

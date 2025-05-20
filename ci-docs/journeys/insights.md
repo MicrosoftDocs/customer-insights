@@ -2,7 +2,7 @@
 title: Analyze results to gain insights from your marketing activities
 description: How to find and interpret marketing results, KPIs, and analytics in Dynamics 365 Customer Insights - Journeys.
 ms.date: 02/24/2025
-ms.topic: article
+ms.topic: how-to
 author: alfergus
 ms.author: alfergus
 search.audienceType: 
@@ -203,7 +203,7 @@ A *blocked email* is a message that the system didn't attempt to send even thoug
 - **Recipient address isn't valid**: There is something wrong with the recipient address (such as no "@"), which means that the message can't be delivered.
 - **Sender address isn't valid**: The email is designed with a sender address that is blank or malformed. This may affect your entire send (if you are using an invalid static address or expression), or it may affect just a few messages if you are using a dynamic expression that only fails for some contacts for which data is invalid or missing.
 - **Reply-to address isn't valid**: Same as for the invalid sender address, but this applies to the reply-to field.
-- **Email contains block listed links**: Customer Insights - Journeys analyzes the content of outgoing messages to make sure they don't contain any blaok listed links. If one is found, the message is blocked. The system keeps an internal list of block listed sites that are known to be used for phishing, hosting malware, and other issues. This feature helps make sure that you don't accidentally include a link to one of those sites in your marketing messages.
+- **Email contains block listed links**: Customer Insights - Journeys analyzes the content of outgoing messages to make sure they don't contain any block listed links. If one is found, the message is blocked. The system keeps an internal list of block listed sites that are known to be used for phishing, hosting malware, and other issues. This feature helps make sure that you don't accidentally include a link to one of those sites in your marketing messages.
 - **Email is missing required fields**: A required field (such as the subject) contains no value. Usually, this type of error would be found when you error-check the message, but if you are using a dynamic expression on a required filed, then the expression could fail to evaluate for some or all recipients.
 - **Contact deleted**: The target segment included a contact that has since been deleted.
 - **Contact is inactive**: The target segment included a contact that has been set to inactive.

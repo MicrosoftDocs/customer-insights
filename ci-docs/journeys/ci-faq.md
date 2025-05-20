@@ -25,7 +25,7 @@ This FAQ answers questions about the new Customer Insights combined product offe
     > [!div class="mx-imgBorder"]
     > ![SKU and name change diagram.](media/ci-faq-sku-name-change.png "SKU and name change diagram")
 
-1. **Why are are the Dynamics 365 Marketing and current Dynamics 365 Customer Insights apps being combined into one offering?**
+1. **Why are the Dynamics 365 Marketing and current Dynamics 365 Customer Insights apps being combined into one offering?**
 
     To provide the most value to users and empower them with the most personalized experiences, we're combining the power of a unified customer profile with the ability to orchestrate customer journeys in real-time, at every customer touchpoint, into one, simple, low-priced offering. The new, combined offering simplifies licensing to make it easier for customers to buy and use the applications as their business grows.
 

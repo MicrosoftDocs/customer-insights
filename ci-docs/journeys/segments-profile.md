@@ -2,7 +2,7 @@
 title: Design dynamic demographic or firmographic segments
 description: Learn how to design dynamic demographic or firmographic segments in Dynamics 365 Customer Insights - Journeys.
 ms.date: 08/23/2023
-ms.topic: article
+ms.topic: how-to
 author: alfergus
 ms.author: alfergus
 search.audienceType: 
@@ -145,7 +145,7 @@ For example:
 > Your segment must always end on the contact entity. If you start with some other entity, then you must always end with a relation back to the contact entity.
 
 > [!TIP]
-> While you're designing your query, select the **Explore related entitites** button to see a graphical map of how the current entity relates to other entities. This tool can help you figure out how to traverse the various entities to create a path that ends at the required **Contact** entity. Available paths and entities are shown in blue, while entities and paths that aren't directly available to the current entity appear in light gray. Already used paths and entities are shown in dark gray.
+> While you're designing your query, select the **Explore related entities** button to see a graphical map of how the current entity relates to other entities. This tool can help you figure out how to traverse the various entities to create a path that ends at the required **Contact** entity. Available paths and entities are shown in blue, while entities and paths that aren't directly available to the current entity appear in light gray. Already used paths and entities are shown in dark gray.
 > 
 > ![The segment explorer.](media/segment-explorer-example1.png "The segment explorer")
 

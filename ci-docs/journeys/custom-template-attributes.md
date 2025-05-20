@@ -2,7 +2,7 @@
 title: Use custom attributes to enable designer features in emails, pages, and forms
 description: How to mark up the HTML in your email and page templates to enable drag-and-drop features and style controls for the design view in Dynamics 365 Customer Insights - Journeys.
 ms.date: 08/02/2023
-ms.topic: article
+ms.topic: how-to
 author: alfergus
 ms.author: alfergus
 search.audienceType: 
