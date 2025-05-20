@@ -1,10 +1,10 @@
 ---
 title: Set the default configuration for forms
 description: Set the default configuration for all newly created forms in Dynamics 365 Customer Insights - Journeys.
-ms.date: 12/12/2024
+ms.date: 05/20/2025
 ms.topic: how-to
 author: petrjantac
-ms.author: alfergus
+ms.author: colinbirkett
 search.audienceType: 
   - admin
   - customizer
@@ -25,14 +25,14 @@ There are two out-of-the-box configurations for default form values that follow 
 1. Marketing form defaults
 
 > [!WARNING]
-> Don't delete these out-of-the-box configurations. This may result in configuration malfunction. If you delete an out-of-the-box configuration, create a new configuration of the same type and set it as default one. Otherwise, there is no point creating additional configurations, as there can be only a single configuration set as default for a specific form type.
+> Don't delete these out-of-the-box configurations. This could result in configuration malfunction. If you delete an out-of-the-box configuration, create a new configuration of the same type and set it as default one. Otherwise, there is no point creating additional configurations, as there can be only a single configuration set as default for a specific form type.
 
 You can select the configuration to edit default values for its respective form type.
 
 There are four tabs representing various areas of form configuration:
 
 1. **[General](real-time-marketing-form-global-settings.md#general)**: Set details of configuration and configure common form settings.
-1. **[Audience](real-time-marketing-form-global-settings.md#audience)**: Select what target audience (which entity record) will be created or updated by the form submission.
+1. **[Audience](real-time-marketing-form-global-settings.md#audience)**: Select what target audience (that is, which entity record) to be created or updated by the form submission.
 1. **[Lead-Contact Mapping](real-time-marketing-form-global-settings.md#lead-contact-mapping)**: Available only for the marketing form type. Review the platform mapping between attributes of lead and contact entities.
 1. **[reCAPTCHA](real-time-marketing-form-global-settings.md#recaptcha)**: Set up third-party form captcha.
 
@@ -49,11 +49,11 @@ The second part of the **General** section allows you to choose the default acti
 ## Audience
 
 > [!IMPORTANT]
-> A preview feature is a feature that is not complete but is made available before it’s officially in a release so customers can get early access and provide feedback. Preview features aren’t meant for production use and may have limited or restricted functionality.
+> A preview feature is a feature that is not complete but is made available before it’s officially in a release so customers can get early access and provide feedback. Preview features aren’t meant for production use and could have limited or restricted functionality.
 >
 > Microsoft doesn't provide support for this preview feature. Microsoft Dynamics 365 Technical Support won’t be able to help you with issues or questions. Preview features aren’t meant for production use, especially to process personal data or other data that are subject to legal or regulatory compliance requirements.
 
-The **Audience** section allows you to set the default target audience for your newly created forms. The *Audience settings* determine which audience (entity record) is used in the submission processing and conditions under which a new record is created or an existing record is updated. All *Audience settings* are visible in the form editor, allowing users to select their preferred audience when creating a new form.
+The **Audience** section allows you to set the default target audience for your newly created forms. The *Audience settings* determine which audience (entity record) is used in the submission processing, and the conditions under which a new record is created or an existing record is updated. All *Audience settings* are visible in the form editor, allowing users to select their preferred audience when creating a new form.
 
 You can either modify the details of the out-of-the-box *Audience settings* or you can create new settings.
 
@@ -76,7 +76,7 @@ You can modify audience settings to specify when a new record is created and how
 :::image type="content" source="media/real-time-marketing-form-global-settings-audience-details.png" alt-text="Audience details in global form settings." lightbox="media/real-time-marketing-form-global-settings-audience-details.png":::
 
 - **Name**: Name your audience settings. This name is visible in the form editor. Use short but descriptive names.
-- **Target entity**: Select which entity is targeted by the form submission processing. Marketing forms support lead and contact entities, but event registration forms are limited to contact only.
+- **Target entity**: Select the target entity targeted by form submission processing. Marketing forms support lead and contact entities, but event registration forms are limited to contact only.
 
 #### Matching rules
 
@@ -107,7 +107,7 @@ The combined Lead & Contact audience relies on [entity columns mapping](/power-a
 
 :::image type="content" source="media/real-time-marketing-form-global-settings-mapping.png" alt-text="Mapping in global form settings." lightbox="media/real-time-marketing-form-global-settings-mapping.png":::
 
-In you don't use solutions as the mechanism for implementing application lifecycle management (ALM), you can use the *Generate mappings* button to automatically link lead attributes to contact or you can select the *Edit in Power Apps* button to manually define the mappings.
+In you don't use solutions as the mechanism for implementing application lifecycle management (ALM), you can select **Generate mappings** button to automatically link lead attributes to contact or you can select **Edit in Power Apps** to manually define the mappings.
 
 ## reCAPTCHA
 

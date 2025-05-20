@@ -1,10 +1,10 @@
 ---
 title: Integrate a reCAPTCHA service with Customer Insights - Journeys forms 
 description: Learn how to integrate reCAPTCHA bot protection into forms in Dynamics 365 Customer Insights - Journeys.
-ms.date: 12/12/2024
+ms.date: 05/20/2025
 ms.topic: how-to
 author: petrjantac
-ms.author: alfergus
+ms.author: colinbirkett
 search.audienceType: 
   - admin
   - customizer
