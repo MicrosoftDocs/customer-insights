@@ -11,9 +11,9 @@ search.audienceType:
   - enduser
 ---
 
-# Troubleshoot push notifications setup
+# Troubleshooting push notifications setup
 
-This article covers possible problems with push notifications setup in Customer Insights - Journeys.
+This article covers possible problems with push notifications setup in Customer Insights - Journeys and provides some troubleshooting solutions.
 
 ## Device registration problems
 
