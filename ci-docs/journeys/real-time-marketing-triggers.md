@@ -36,7 +36,9 @@ For more information including important notes about security for custom trigger
 
 ### Interaction triggers
 
-Interaction triggers represent customer interactions with journey elements such as email, text message, and push channels. Interaction triggers, today, can't start or stop journeys; some of them are used within the journey and represent a logical continuation of a preceding step. For example, when a journey sends an email message, a set of triggers such as *Email Link Clicked* or *Email Opened* becomes available to journey authors, allowing them to make decisions about possible next steps.
+Interaction triggers represent customer interactions with journey elements such as email, text message, and push channels. Interaction triggers can be used to start journeys and can be used within the journey and represent a logical continuation of a preceding step. For example, when a journey sends an email message, a set of triggers such as *Email Link Clicked* or *Email Opened* becomes available to journey authors, allowing them to make decisions about possible next steps.
+
+As of May 2025, all interaction triggers across various channels such as email, SMS, Push can be used in a journey, either for starting the journey or branching on a journey.
 
 ### Business triggers
 
