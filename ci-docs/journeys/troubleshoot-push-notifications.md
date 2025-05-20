@@ -1,5 +1,5 @@
 ---
-title: Troubleshoot push notifications
+title: Troubleshoot push notification setup
 description: Learn how to troubleshoot push notification setup in Dynamics 365 Customer Insights - Journeys.
 ms.date: 05/20/2025
 ms.topic: article
@@ -69,5 +69,4 @@ Customer Insights doesn't currently support iOS device tokens working via FCM. M
 
 Customer Insights sends push notification using APNS servers directly. Failure response comes directly from APNS server if there's submission failure. Overview [local and remote notification programming guide: Communicating with APNs](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/CommunicatingwithAPNs.html#//apple_ref/doc/uid/TP40008194-CH11-SW17) for possible error codes and their meaning.
 
-
-
+[!INCLUDE [footer-include](./includes/footer-banner.md)]
