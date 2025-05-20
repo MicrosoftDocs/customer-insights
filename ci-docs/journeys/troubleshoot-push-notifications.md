@@ -29,7 +29,7 @@ The device registration API request body has ApiToken field and its value should
 
 **Registration status API includes the following failure text: *Sending a test invisible notification failed for the given device token***
 
-As a part of device registration process, Customer Insights sends an invisible test push notification for a given device token. If sending fails, the registration process also fails.
+As a part of device registration process, Customer Insights sends an invisible test push notification for a given device token. If sending fails, the registration process also fails. The sections below explain the problem, in accordance with platform type (Android or iOS).
 
 ## Push notification sending problems for Android
 
@@ -55,7 +55,7 @@ Customer Insights sends push notification using Firebase servers directly. Failu
 
 ## Push notification sending problems for iOS
 
-For notification sending problems for iOS, it's possible to use external third-party websites to assist in troubleshooting, such as <https://apnspush.com/>. These websites allow you to quickly test push notification submission and see if any changes made work.
+For notification sending problems for iOS, it's possible to use external third-party websites to help troubleshoot, such as <https://apnspush.com/>. These websites allow you to quickly test push notification submission and see if any changes made work.
 
 **Sending failure includes BadDeviceToken error code**
 
