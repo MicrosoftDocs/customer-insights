@@ -1,7 +1,7 @@
 ---
 title: Troubleshooting email engagement drops
 description: Troubleshoot email engagement drops in Dynamics 365 Customer Insights - Journeys.
-ms.date: 05/15/2025
+ms.date: 05/20/2025
 ms.topic: article
 author: colinbirkett
 ms.author: colinbirkett
@@ -81,7 +81,7 @@ Recommended **next steps**: Take a methodical approach to diagnose and fix del
 
 ## When and how the Microsoft Dynamics Customer Insights email deliverability team can assist 
 
-* As a prerequisite, you must do the analysis outlined for us to be able to assist you. You can reach out to our deliverability team after you've finished your investigation. The Customer Insights email deliverability team needs you to verify (i) a clear pattern of the engagement drop, {ii) the period when the engagement drops started, and (iii) which ISPs are the most affected.
+* As a prerequisite, you must do the analysis outlined for us to be able to assist you. You can reach out to our deliverability team after you've finished your investigation. The Customer Insights email deliverability team needs you to verify (i) a clear pattern of the engagement drop, (ii) the period when the engagement drops started, and (iii) which ISPs are the most affected.
 
 * We can assist mostly in specific cases where you see a spam placement decision on one of your inbox tests or when a recipient is complaining that they got your emails inside their spam box. For us to help in this case, we need an email sample of the incident. We require you to either provide full email headers or the email in question saved as .eml attachment. Any type of email forwarding removes essential headers required for such an investigation.
 
