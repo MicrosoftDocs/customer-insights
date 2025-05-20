@@ -43,4 +43,7 @@ Contoso also runs reactivation campaigns via automated voice calls. If the call 
 
 These use cases illustrate how Contoso Coffee uses multi-interaction branching to deliver personalized, responsive customer experiences across multiple touchpoints. This drives higher engagement, operational efficiency, and customer satisfaction.
 
+[!Note]
+Some customers may notice that not all [interaction triggers][https://learn.microsoft.com/en-us/dynamics365/customer-insights/journeys/real-time-marketing-triggers#interaction-triggers] are showing up when using this feature to make branching decisions on a journey. This is a known issue that is expected to affect certain orgs. Please raise a support ticket with the team for a quick resolution.
+
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
