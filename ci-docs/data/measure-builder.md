@@ -34,7 +34,7 @@ The following table provides key points about the different measure types. The d
 |# of calculations/attributes in the measure |A single calculation/attribute. |A single or multiple calculations/attributes with CustomerId + at least 1 other dimension. |A single or multiple calculations/attributes with CustomerId dimension. |A single calculation/attribute with no dimension *or* a single or multiple calculations/attributes with at least 1 dimension that isn't the CustomerId. |
 |Table |All customer attributes are stored in a table called *Customer_Measure* where the first column is CustomerId and 1 column for each added Customer attribute. |Stored in its own dedicated table |Stored in its own dedicated table |Stored in its own dedicated table |
 |Displays on [**Customer** card](customer-profiles.md) |Yes |No |No |No |
-|Available as [elastic table in Dataverse](tables.md#customer-insights---data-tables-in-dataverse) |Yes (a different format than the [*Customer_Measure*](tables.md#customermeasure) table and not readily usable in other Dynamics 365 apps) |No |Yes |No |
+|Available as [elastic table in Dataverse](tables.md#view-customer-insights---data-tables-in-dataverse) |Yes (a different format than the [*Customer_Measure*](tables.md#customermeasure) table and not readily usable in other Dynamics 365 apps) |No |Yes |No |
 |Refresh |Refresh of a customer attribute results in refresh of all the customer attributes in the instance |Can be refreshed on its own |Can be refreshed on its own |Can be refreshed on its own |
 
 ## Create a build-your-own measure
