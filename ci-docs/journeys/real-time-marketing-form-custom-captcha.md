@@ -1,6 +1,6 @@
 ---
-title: Integrate a custom captcha service with Customer Insights - Journeys forms 
-description: Learn how to integrate custom captcha bot protection into forms in Dynamics 365 Customer Insights - Journeys.
+title: Integrate a reCAPTCHA service with Customer Insights - Journeys forms 
+description: Learn how to integrate reCAPTCHA bot protection into forms in Dynamics 365 Customer Insights - Journeys.
 ms.date: 12/12/2024
 ms.topic: how-to
 author: petrjantac
@@ -11,7 +11,7 @@ search.audienceType:
   - enduser
 ---
 
-# Integrate a custom captcha service with Customer Insights - Journeys forms
+# Integrate a reCAPTCHA service with Customer Insights - Journeys forms
 
 Customer Insights - Journeys forms allow you to use custom captcha bot protection to validate form submissions. This article gives an example of how to integrate [Google reCAPTCHA](https://www.google.com/recaptcha/about/). The flow is similar for other captcha services. The steps in this article apply to marketing and event registration form types.
 
@@ -52,14 +52,32 @@ The process consists of these steps:
     ```
 
     Replace the `{sitekey}` placeholder with the one provided by Google. This callback function renders the reCAPTCHA inside the placeholder `<div id="g-recaptcha">` you created earlier.
-   
+
 1. Register the onloadCallback function to be called by the form loader:
-   
-```document.addEventListener("d365mkt-afterformload", onloadCallback);```
+
+    ```document.addEventListener("d365mkt-afterformload", onloadCallback);```
+
+1. Prevent form submission if reCAPTCHA wasn't answered
+
+    Make reCAPTCHA challenge required on client side to avoid form submission without answering reCAPTCHA challenge.
+
+    ```javascript
+    <script>
+    document.addEventListener("d365mkt-afterformload", function() {
+        var form = document.querySelector("[data-form-id='7305961d-dc04-f011-bae1-0022480c3fab']"); //formId
+        form.addEventListener("d365mkt-formsubmit", function(event) {
+            if (grecaptcha.getResponse() === '') {                            
+               event.preventDefault();
+                alert('Please check the reCAPTCHA');
+            }
+        }, false);
+    });
+    </script>
+    ```
 
 ### 2. Add the captcha text value to the form submission
 
-Once the form is submitted, the `g-recaptcha-response` parameter is added automatically to the form submission. In the next steps, you'll build a plugin that hides this value, as it will be added to the `ValidationOnlyFields` list in the response object returned by the plugin code.
+Once the form is submitted, the `g-recaptcha-response` parameter is added automatically to the form submission. The reCAPTCHA plugin hides this value, and adds it to the `ValidationOnlyFields` list in the response object returned by the plugin code.
 
 :::image type="content" source="media/real-time-marketing-form-custom-captcha-3.png" alt-text="G-recaptcha-response parameter is added." lightbox="media/real-time-marketing-form-custom-captcha-3.png":::
 

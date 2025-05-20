@@ -15,7 +15,7 @@ search.audienceType:
 
 Creating a new form can be challenging for nontechnical users due to the complexity of the form configuration, which requires system knowledge. Each time you create a new form, going through the configuration process can be time-consuming and can introduce errors.
 
-The new form configuration feature allows you to preset all your new forms, eliminating the need to think about all the details each time you create a form. You can configure defaults for all your newly created marketing or event registration forms on the **Form Settings** page, located in the Customer Engagement section of **Settings**.
+The form configuration feature allows you to preset all your new forms, eliminating the need to think about all the details each time you create a form. You can configure defaults for all your newly created marketing or event registration forms on the **Form Settings** page, located in the Customer Engagement section of **Settings**.
 
 :::image type="content" source="media/real-time-marketing-form-global-settings.png" alt-text="Global form settings." lightbox="media/real-time-marketing-form-global-settings.png":::
 
@@ -25,7 +25,7 @@ There are two out-of-the-box configurations for default form values that follow 
 1. Marketing form defaults
 
 > [!WARNING]
-> Don't delete these out-of-the-box configurations. This may result in configuration malfunction. If you delete an out-of-the-box configuration, create a new configuration of the same type and set it as default one.
+> Don't delete these out-of-the-box configurations. This may result in configuration malfunction. If you delete an out-of-the-box configuration, create a new configuration of the same type and set it as default one. Otherwise, there is no point creating additional configurations, as there can be only a single configuration set as default for a specific form type.
 
 You can select the configuration to edit default values for its respective form type.
 
