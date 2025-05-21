@@ -39,7 +39,7 @@ New privacy regulations like the General Data Protection Regulation (GDPR), Cali
 
 There are two scenarios for engagement drops: 
 
-- **New customers**: If you have recently onboarded or have a short history with Dynamics Customer Insights - Journeys, be advised Customer Insights - Journeys utilizes the latest techniques to filter out nonhuman interactions (NHI). Filtering NHI provides accurate data to our senders, especially with traffic directed to Microsoft 365. If you onboarded and haven't changed your sending domains, audience, or dramatically altered your email templates but are still experiencing a sudden drop in engagement, then it's likely not an issue with your sending reputation or the platform's efficiency. Rather, it's a more accurate representation of your current engagement rate. We advise you to continue monitoring your engagement rates and watch for any progressive and continuous drops. 
+- **New customers**: If you have recently onboarded or have a short history with Customer Insights - Journeys, be advised Customer Insights - Journeys utilizes the latest techniques to filter out nonhuman interactions (NHI). Filtering NHI provides accurate data to our senders, especially with traffic directed to Microsoft 365. If you onboarded and haven't changed your sending domains, audience, or dramatically altered your email templates but are still experiencing a sudden drop in engagement, then it's likely not an issue with your sending reputation or the platform's efficiency. Rather, it's a more accurate representation of your current engagement rate. We advise you to continue monitoring your engagement rates and watch for any progressive and continuous drops. 
 
 - **Existing customers**: If you have been a customer for some time and have noticed a consistent drop in your engagement rates, read the section below. 
 
@@ -81,7 +81,7 @@ Recommended **next steps**: Take a methodical approach to diagnose and fix del
 
 ## When and how the Microsoft Dynamics Customer Insights email deliverability team can assist 
 
-* As a prerequisite, you must do the analysis outlined for us to be able to assist you. You can reach out to our deliverability team after you've finished your investigation. The Customer Insights email deliverability team needs you to verify (i) a clear pattern of the engagement drop, (ii) the period when the engagement drops started, and (iii) which ISPs are the most affected.
+* As a prerequisite, you must do the analysis outlined above for us to be able to assist you. You can reach out to our deliverability team after you've finished your investigation. The Customer Insights email deliverability team needs you to verify (i) a clear pattern of the engagement drop, (ii) the period when the engagement drops started, and (iii) which ISPs are the most affected.
 
 * We can assist mostly in specific cases where you see a spam placement decision on one of your inbox tests or when a recipient is complaining that they got your emails inside their spam box. For us to help in this case, we need an email sample of the incident. We require you to either provide full email headers or the email in question saved as .eml attachment. Any type of email forwarding removes essential headers required for such an investigation.
 
