@@ -1,5 +1,5 @@
 ---
-title: How to
+title: "Preview: How to"
 description: Learn how to use conversational journeys capabilities in Dynamics 365 Customer Insights - Journeys.
 ms.date: 05/13/2025
 ms.topic: article
@@ -11,7 +11,12 @@ search.audienceType:
   - enduser
 ---
 
-# How to
+# Preview: How to
+
+> [!IMPORTANT]
+> A preview feature is a feature that isn't complete but is made available before it’s officially released so customers can get early access and provide feedback. Preview features aren’t meant for full use and may have limited or restricted functionality.
+>
+> Microsoft doesn't provide support for this preview feature. Microsoft Dynamics 365 Technical Support won't be able to help you with issues or questions. Preview features aren’t meant for production use, especially to process personal data, or other data that are subject to legal or regulatory compliance requirements.
 
 To use conversational journeys, you have to enable the feature switch Contact Center integration under the Integrations section. For more information, see [Use feature switches to enable or disable optional and preview features](admin-feature-switches.md#integrations).
 
