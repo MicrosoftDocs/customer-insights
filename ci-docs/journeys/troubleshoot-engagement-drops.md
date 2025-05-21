@@ -15,7 +15,7 @@ search.audienceType:
 
 In email marketing, tracking metrics has been the key to understanding and improving campaign effectiveness. Traditionally, the open rate has been a fundamental metric in email marketing. However, the accuracy of open rates is becoming more questionable due to privacy concerns and changes in how email clients handle images. To adapt, it's essential to employ a dual approach, by improving how to measure engagement and applying strategies to improve engagement itself. Engagement metrics in Dynamics 365 Customer Insights – Journeys offer a more complete picture than open rates alone. Diversify engagement metrics by evaluating other indicators such as select-through rates, conversion rates, and return on investment.
 
-## Privacy Updates 2025
+## Privacy updates 2025
 
 New privacy regulations like the General Data Protection Regulation (GDPR), California Consumer Privacy Act (CCPA), and Digital Markets Act (DMA) affect email tracking. These regulations reinforce user rights to opt out of tracking.
 
@@ -49,23 +49,23 @@ To diagnose an unexpected drop in engagement rates:
 
 1. **Start by identifying the most affected ISP**: Try to identify the exact timeframe when the engagement rates drop started. It's uncommon for engagement drops to happen all over the board. Only a few ISPs are affected. 
 
-1. **Verify Sender Authentication Settings**: Double check that your DNS entries for Sender Policy Framework (SPF), Domain Keys Identified Mail (DKIM), and Domain-based Message Authentication Reporting & Conformance (DMARC) are correctly configured (compare them with the DNS records provided by Customer Insights - Journeys inside the domain authentication panel). If your authentication is broken, deliverability is impacted. 
+1. **Verify sender authentication settings**: Double check that your DNS entries for Sender Policy Framework (SPF), Domain Keys Identified Mail (DKIM), and Domain-based Message Authentication Reporting & Conformance (DMARC) are correctly configured (compare them with the DNS records provided by Customer Insights - Journeys inside the domain authentication panel). If your authentication is broken, deliverability is impacted. 
 
-1. **Analyze DMARC Reports**: If you have enforced DMARC, review DMARC reports to detect unauthorized email senders using your domain. Utilize DMARC Analyzer tools for better interpretation. 
+1. **Analyze DMARC reports**: If you have enforced DMARC, review DMARC reports to detect unauthorized email senders using your domain. Utilize DMARC Analyzer tools for better interpretation. 
 
-1. **Monitor Sender Reputation**: Your sender reputation can provide crucial insights, even if it doesn’t offer all the answers. Utilize tools like such as Google Postmaster, or Yahoo’s Sender Hub to track sender reputation. Any dips, even if temporary, could indicate spam complaints, bounces, or issues with a specific campaign that requires further investigation. For an in-depth guide on Google postmaster, see [Google Postmaster Tools - What it's and how it can help you](google-postmaster.md).
+1. **Monitor sender reputation**: Your sender reputation can provide crucial insights, even if it doesn’t offer all the answers. Utilize tools like such as Google Postmaster, or Yahoo’s Sender Hub to track sender reputation. Any dips, even if temporary, could indicate spam complaints, bounces, or issues with a specific campaign that requires further investigation. For an in-depth guide on Google postmaster, see [Google Postmaster Tools - What it's and how it can help you](google-postmaster.md).
 
-1. **Review Email Strategy Changes**: Assess recent changes in email strategy, including new subscriber lists, template modifications, and automation settings. Unexpected changes can trigger spam filters. 
+1. **Review email strategy changes**: Assess recent changes in email strategy, including new subscriber lists, template modifications, and automation settings. Unexpected changes can trigger spam filters. 
 
-1. **Conduct Inbox Placement and Blocklist Tests**: One way to assess your deliverability is through an inbox placement test. This test helps you determine where your emails are landing (such as inbox or spam). By monitoring your inbox placement rates over time, you can identify when issues arise. However, these tools aren't perfect, they track a limited number of inboxes but each mailbox is unique. An email that lands in the spam folder for one mailbox might land in the primary inbox for another. Therefore, it's essential to use these tools with other email metrics to gain a comprehensive understanding of your email deliverability. Unfortunately, we can't recommend any specific third-party provider. However, you can always create test accounts on your top three to five ISP from your audience and use those ISPs to track your placement. 
+1. **Conduct inbox placement and blocklist tests**: One way to assess your deliverability is through an inbox placement test. This test helps you determine where your emails are landing (such as inbox or spam). By monitoring your inbox placement rates over time, you can identify when issues arise. However, these tools aren't perfect, they track a limited number of inboxes but each mailbox is unique. An email that lands in the spam folder for one mailbox might land in the primary inbox for another. Therefore, it's essential to use these tools with other email metrics to gain a comprehensive understanding of your email deliverability. Unfortunately, we can't recommend any specific third-party provider. However, you can always create test accounts on your top three to five ISP from your audience and use those ISPs to track your placement. 
 
-1. **Check your List Hygiene**: Maintain list hygiene by avoiding old or inactive lists and ensuring proper opt-in strategies.   
+1. **Check your list hygiene**: Maintain list hygiene by avoiding old or inactive lists and ensuring proper opt-in strategies.   
 
     There are numerous factors that could be contributing to the drop in engagement. Maintaining a clean list is essential, but even the most diligent senders can encounter issues. For example, you might be sending to an outdated list that should have been archived or you have forgotten about a form that is adding spammy subscribers to your list. Additionally, you possibly didn't implement an opt-in strategy that keeps your list clean, or you uploaded inactive lists or segments that haven't been emailed in a long time. 
 
     It's also important to consider spam complaints based on domain. An issue with spam complaints might begin with an inbox provider that represents only a small percentage of your list. As you gain more readers on that ISP, the issue could become more significant. For more information, see [Best practices for email marketing](get-ready-email-marketing.md).
 
-1. **Review Bounce Data**: Always review and interpret the raw bounce errors and bounce categories. You can find valuable insights into your sending reputation. Pay attention to ISP-specific reputation-related bounces to determine if there are any spikes in temporary rejections.
+1. **Review bounce data**: Always review and interpret the raw bounce errors and bounce categories. You can find valuable insights into your sending reputation. Pay attention to ISP-specific reputation-related bounces to determine if there are any spikes in temporary rejections.
 
     Bounces are a great source of truth; they provide deeper insights into the health of your email list. Many senders assume that bounces are only due to full mailboxes or nonexistent addresses, but they can often indicate more serious issues. For example, a bounce might suggest that an ISP blocked the email due to suspected spam. These types of bounces serve as warnings that your sender reputation could be at risk and help you identify which ISPs you need to address. 
 
