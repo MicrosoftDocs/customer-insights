@@ -17,6 +17,17 @@ To ensure optimal performance, Customer Insights - Journeys uses Azure Content D
 - [Asset library](upload-images-files.md)
 - [Forms](real-time-marketing-form-overview.md)
 
+Sensitive or private data—including CRM records and prefilled forms are stored exclusively within the geographic region of the customer's environment. This data does not leave the region.
+
+However, certain types of publicly accessible digital assets may be temporarily cached outside the region.
+These include:
+-	Images
+-	Files
+-	Videos
+-	HTML forms (only if they are empty and not prefilled with user data)
+
+These assets are cached via a Content Delivery Network (CDN) to improve performance. For example, if a contact in the United States accesses an image hosted in a European environment, the image may be temporarily cached on a U.S.-based CDN server.
+
 If you decide to not use Azure CDN, you can still execute marketing campaigns by hosting assets and forms in a content management system (CMS) of your choice. You should be aware, however, that the [functionality listed below](cdn-disabling.md#impacted-feature-areas-if-azure-cdn-is-disabled) is impacted if you disable Azure CDN.
 
 > [!NOTE]
