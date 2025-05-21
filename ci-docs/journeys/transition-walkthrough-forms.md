@@ -1,10 +1,10 @@
 ---
 title: Transition marketing pages and forms
 description: Learn how to transition marketing pages and forms capabilities from outbound marketing to real-time journeys in Dynamics 365 Customer Insights - Journeys.
-ms.date: 02/11/2025
+ms.date: 05/21/2025
 ms.topic: article
 author: alfergus
-ms.author: alfergus
+ms.author: colinbirkett
 search.audienceType: 
   - admin
   - customizer
@@ -23,7 +23,7 @@ Outbound marketing contains sitemap entries for "Internet Marketing." The entrie
 Notice that there isn't a one-to-one relationship between the outbound marketing objects and the real-time journeys objects:
 
 - Marketing pages in outbound marketing serve as a hosting container for outbound marketing forms. They have a dependency on Power Pages, which is removed in the real-time journeys module and therefore have no equivalent in real-time journeys.
-- Outbound marketing pages will continue to be rendered after outbound removal as the page itself is hosted on the Power Pages infrastructure, which is independent of outbound marketing. However, the pages will no longer be managed from outbound marketing. It will not be possible to update existing or publish new pages. The only way to manage outbound marketing pages will be to update the HTML code stored on Power Pages. The Power Pages infrastructure used for hosting these pages will also be deprecated soon. Therefore, we strongly advise customers to recreate all marketing pages in new Power pages or other hosting infrastructure.
+- Outbound marketing pages will continue to be rendered after outbound removal as the page itself is hosted on the Power Pages infrastructure, which is independent of outbound marketing. However, the pages are no longer be managed from outbound marketing. It will not be possible to update existing or publish new pages. The only way to manage outbound marketing pages are to update the HTML code stored on Power Pages. The Power Pages infrastructure used for hosting these pages will also be deprecated soon. Therefore, we strongly advise customers to recreate all marketing pages in new Power pages or other hosting infrastructure.
 - Outbound marketing forms allow you to design forms for landing pages, event registrations, or subscription centers. This functionality is covered in real-time journeys forms, which can be published as a standalone page.
 - Marketing websites and redirect URLs allow you to track web activity. With the new [Web tracking in real-time journeys](interaction-journey-decision.md), you can create customer experiences based on your customers' web behavior. There are no plans to support "redirect URLs" in real-time journeys.
 
@@ -61,9 +61,9 @@ The following table summarizes the types of forms available in real-time journey
 
 ## Relevant upcoming features
 
-The following features and improvements may be of interest as you transition from outbound marketing to real-time journeys. These features provide parity, equivalent, or better functionality than what was available in outbound marketing.
+The following features and improvements might be of interest as you transition from outbound marketing to real-time journeys. These features provide parity, equivalent, or better functionality than what was available in outbound marketing.
 
-- **Custom unmapped fields** (already available as public preview): Ability to include fields in a form that aren't connected to any table. Usually this is used for information that's temporary in nature and needed only during the current journey (for example, meals choices for attending an event).
+- **Custom unmapped fields** (available as public preview): Ability to include fields in a form that aren't connected to any table. This is usually for information that's temporary and needed only during the current journey (for example, meals choices for attending an event).
 - **Simplify Form Filling with Dependent Lookups** (Wave 1, 2025): Filter values of lookup field based on selected value in another lookup field. *Example: filter the list of cities by the selected country.* Dynamically get or set lookup value using custom JavaScript.
 - **Do not overwrite existing values with empty submitted values** (Wave 1, 2025)
 - **Enhanced matching rule builder** (Wave 1, 2025): build sophisticated rules to update the right existing lead or contact and avoid duplicate records. Enable usage of OR operator in matching conditions.
@@ -71,7 +71,7 @@ The following features and improvements may be of interest as you transition fro
 ## Blogs and workarounds
 
 - Cascaded fields (where options provided in a field depend on a value in an earlier field) aren't yet supported. See this blog for a workaround: [Implementing cascading dropdown fields in RTM forms - FastTrack blog](https://community.dynamics.com/blogs/post/?postid=ff86d88f-d892-ef11-ac21-6045bdd7e1ae)
-- Workaround to implement customized error messages for field validation: [Customizable error messages for form field validation - FastTrack blog](https://community.dynamics.com/blogs/post/?postid=cdcd1dbf-2b7f-ef11-ac20-7c1e521a63a7)
+- An alternative solution to implement customized error messages for field validation: [Customizable error messages for form field validation - FastTrack blog](https://community.dynamics.com/blogs/post/?postid=cdcd1dbf-2b7f-ef11-ac20-7c1e521a63a7)
 
 [!INCLUDE [transition-comments](./includes/transition-comments.md)]
 
