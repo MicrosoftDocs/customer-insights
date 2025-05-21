@@ -85,3 +85,4 @@ Recommended **next steps**: Take a methodical approach to diagnose and fix del
 
 * We can assist mostly in specific cases where you see a spam placement decision on one of your inbox tests or when a recipient is complaining that they got your emails inside their spam box. For us to help in this case, we need an email sample of the incident. We require you to either provide full email headers or the email in question saved as .eml attachment. Any type of email forwarding removes essential headers required for such an investigation.
 
+[!INCLUDE [footer-include](./includes/footer-banner.md)]
