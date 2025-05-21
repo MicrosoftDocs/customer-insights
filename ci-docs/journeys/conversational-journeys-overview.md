@@ -29,10 +29,9 @@ This entire solution can be authored with no code (including the ability to desi
 
 Here's a quick map to navigate learning pages that cover above aspects of this solution:
 
-| **Topic** | **Learning page** |
-|---|---|
-|How to purchase<br>licensing information | <href=ci-docs/journeys/conversational-journeys-prerequisites.md> |
-|Key concepts | <href=ci-docs/journeys/proactive-engagement-concepts.md> |
-|How to create journeys that include conversational voice, consent management, and quiet time/days | <href=ci-docs/journeys/proactive-engagement-how-to.md> |
+- [How to purchase licensing information](conversational-journeys-prerequisites.md)
+- [Key concepts](proactive-engagement-concepts.md)
+- [How to create journeys that include conversational voice, consent management, and quiet time/days](proactive-engagement-how-to.md)
+
 
 [!INCLUDE[footer-include](./includes/footer-banner.md)]
