@@ -1,5 +1,5 @@
 ---
-title: "preview: Prerequisites"
+title: "Preview: Prerequisites"
 description: Overviews prerequisites for conversational journeys in Dynamics 365 Customer Insights - Journeys.
 ms.date: 05/12/2025
 ms.topic: article
@@ -27,8 +27,8 @@ To use Conversational journeys, you must have both Dynamics 365 Customer Insight
 
 ## Get started with Customer Insights - Journeys
 
-To learn how to get started with Customer Insights - Journey, please follow this [article](https://learn.microsoft.com/en-us/dynamics365/customer-insights/journeys/get-started).
+To learn how to get started with Customer Insights - Journey, see [Get started with Customer Insights - Journeys app setup](get-started.md).
 
 ## Get started with Contact Center
 
-To learn how to get started with Contact Center, please follow this [article](https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/cc-admin-center).
+To learn how to get started with Contact Center, please follow this [Use Copilot Service admin center](/dynamics365/contact-center/administer/cc-admin-center).
