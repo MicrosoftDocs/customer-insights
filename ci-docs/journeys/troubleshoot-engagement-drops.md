@@ -1,7 +1,7 @@
 ---
 title: Troubleshooting email engagement drops
 description: Troubleshoot email engagement drops in Dynamics 365 Customer Insights - Journeys.
-ms.date: 05/20/2025
+ms.date: 05/21/2025
 ms.topic: article
 author: colinbirkett
 ms.author: colinbirkett
@@ -13,7 +13,7 @@ search.audienceType:
 
 # Troubleshooting email engagement drops
 
-In email marketing, tracking metrics has been the key to understanding and improving campaign effectiveness. Traditionally, the open rate has been a fundamental metric in email marketing. However, the accuracy of open rates is becoming more questionable due to privacy concerns and changes in how email clients handle images. To adapt, it's essential to employ a dual approach, by improving how to measure engagement and applying strategies to improve engagement itself. Engagement metrics in Dynamics 365 Customer Insights – Journeys offer a more complete picture than open rates alone. Diversify engagement metrics by evaluating other indicators such as select-through rates, conversion rates, and ROI. 
+In email marketing, tracking metrics has been the key to understanding and improving campaign effectiveness. Traditionally, the open rate has been a fundamental metric in email marketing. However, the accuracy of open rates is becoming more questionable due to privacy concerns and changes in how email clients handle images. To adapt, it's essential to employ a dual approach, by improving how to measure engagement and applying strategies to improve engagement itself. Engagement metrics in Dynamics 365 Customer Insights – Journeys offer a more complete picture than open rates alone. Diversify engagement metrics by evaluating other indicators such as select-through rates, conversion rates, and return on investment.
 
 ## Privacy Updates 2025
 
@@ -49,7 +49,7 @@ To diagnose an unexpected drop in engagement rates:
 
 1. **Start by identifying the most affected ISP**: Try to identify the exact timeframe when the engagement rates drop started. It's uncommon for engagement drops to happen all over the board. Only a few ISPs are affected. 
 
-1. **Verify Sender Authentication Settings**: Double check that your DNS entries for SPF, DKIM, and DMARC are correctly configured (compare them with the DNS records provided by Customer Insights - Journeys inside the domain authentication panel). If your authentication is broken, deliverability is impacted. 
+1. **Verify Sender Authentication Settings**: Double check that your DNS entries for Sender Policy Framework (SPF), Domain Keys Identified Mail (DKIM), and Domain-based Message Authentication Reporting & Conformance (DMARC) are correctly configured (compare them with the DNS records provided by Customer Insights - Journeys inside the domain authentication panel). If your authentication is broken, deliverability is impacted. 
 
 1. **Analyze DMARC Reports**: If you have enforced DMARC, review DMARC reports to detect unauthorized email senders using your domain. Utilize DMARC Analyzer tools for better interpretation. 
 
