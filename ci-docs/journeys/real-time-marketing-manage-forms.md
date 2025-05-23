@@ -124,7 +124,8 @@ Field types and formats are defined by the attribute metadata. It isn't possible
 
 | **Type**  | **Format** | **Rendering control** | **Description**|
 |-----------|------------|-----------------------|----------------|
-| Single line of text    | Email, Text, URL, Phone, Number         | Automatically set based on the format               | Simple input field. Validation is automatically set based on the format.                                |
+| Single line of text    | Email, Text, URL, Number         | Automatically set based on the format               | Simple input field. Validation is automatically set based on the format.                                |
+| [Phone number](#phone-number-field)    | Phone number         | Can be extended with the pre-set country code               | Simple input field. Validation is set to phone number by default.                                |
 | Multiple lines of text    | Text Area     | Text Area             | Text area input field that accepts all types of text values.                                |
 | Option set             | n/a           | Radio Buttons         | Field with a limited number of predefined values (as defined in the database). Rendered as a set of radio buttons, with one button for each value.                                  |
 | Option set             | n/a           | Drop-down              | Field with a limited number of predefined values (as defined in the database). Rendered as a drop-down list for selecting a value.                                                  |
@@ -132,9 +133,10 @@ Field types and formats are defined by the attribute metadata. It isn't possible
 | Two options            | n/a           | Radio&nbsp;Buttons         | Field that accepts one of just two possible values (typically true or false). Rendered as a pair of radio buttons, with the display text for each defined in the database.           |
 | Date and time          | Date Only     | Date Picker           | Date picker to select a date from a pop-up calendar display. It doesn't accept a time.                                                                           |
 | Date and time          | Date and Time | Date-Time Picker      | Date and time picker to select a date from a pop-up calendar and a time from a drop-down list.                                                                   |
-| Lookup field          | n/a | Lookup      | A lookup field is linked to a particular entity type, enabling you to add a drop-down list of options that were created in advance to your form. [More information](#lookup-fields). |
+| [Lookup field](#lookup-fields)          | n/a | Lookup      | A lookup field is linked to a particular entity type, enabling you to add a drop-down list of options that were created in advance to your form. |
 
-The **File** field type isn't supported in forms.
+> [!NOTE]
+> The **File** and **Customer** field types aren't supported in forms.
 
 ### Phone number field
 
@@ -157,9 +159,20 @@ If the country code is pre-set, the correct phone number country code is automat
 
 ### Lookup fields
 
-A lookup field is linked to a particular entity type, enabling you to add a drop-down list of options that were created in advance to your form. For example, you could use a lookup field called "Currency" to show a drop-down list of all currencies in your form.
+A lookup field is linked to a particular entity, enabling you to add a drop-down list of options that were created in advance to your form. For example, you could use a lookup field called "Currency" to show a drop-down list of all currencies in your form. You can set the default value of lookup field.
 
-After adding a lookup field, or if your lookup field isn't working, ensure that the service user used has permissions to configure the entities you're using with the lookup field. The Marketing Services User Extensible role used by the form editor needs to have read access to the entity used in the lookup field. You also have to enable **Make lookup data publicly viewable** in the lookup properties. All values within the lookup are available to anyone who sees the form. Ensure that sensitive data isn't exposed to the public. More information: [Adding lookup fields](marketing-fields.md#adding-lookup-fields-and-troubleshooting).
+> [!IMPORTANT]
+> After adding a lookup field, or if your lookup field isn't working, ensure that the **Marketing Services User Extensible** role has **Read** permission to access the entity records and views or filters you're using with the lookup field.
+
+> [!WARNING]
+> All values within the lookup are available to anyone who sees the form. The lookup filed can display all records of the entity regardless of the business unit. Ensure that sensitive data isn't exposed to the public. If you are sure that the lookup contains only publicly shareable data enable **Make lookup data publicly viewable** in the lookup properties.
+
+Improperly configured field-level security can prevent lookup fields from functioning correctly. Ensure it is set up appropriately.
+
+#### Known limitations of lookup fields
+
+- It is not possible to programmatically set the lookup value using a script.
+- The options of lookup field are always sorted alphabetically.
 
 ### Custom mapped fields
 
