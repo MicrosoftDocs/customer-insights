@@ -95,6 +95,14 @@ A message’s unique opens and clicks are calculated based on the customer's jou
 
 :::image type="content" source="media/analytics-delivery-and-interaction-details.png" alt-text="Screenshot of delivery and interaction details." lightbox="media/analytics-delivery-and-interaction-details.png":::
 
+### Conversational voice (Preview)
+
+Voice calls are dependent on Contact Center making the call and send the outcomes back to Customer Insights - Journeys. The voice conversation shows the following insights:
+- **Sent** This shows you how many voice conversations requests have been sent from Customer Insight - Journeys to Contact Center.
+- **Blocked** This shows you how many voice conversations were blocked by Customer Insights - Journey with the reason.
+- **Call attempted** This shows how many calls have been attempted by Contact Center and what were the outcomes. Be aware a call attempted does not necessarily mean that your customer have answered the call, for example, if your customer declined answering the call this will still be a call attempted. The call attempted interaction shows you the outcome of the call.
+- **Call not attempted** This shows you how many calls were not attempted by Contact Center with the reason.
+
 ### AI optimization
 
 View near real-time data to help you evaluate how applying AI optimization improved your engagement rate.
