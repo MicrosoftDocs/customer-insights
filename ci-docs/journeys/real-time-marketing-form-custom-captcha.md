@@ -28,6 +28,8 @@ The process consists of these steps:
 
 ### 1. Add reCAPTCHA to the form
 
+To add reCAPTCHA to the form:
+
 1. Create a form in the Customer Insights - Journeys form editor.
 1. Add a `data-validate-submission="true"` attribute to the `<form>` element, which enables custom validation on the form submission:
     :::image type="content" source="media/real-time-marketing-form-custom-captcha-1.png" alt-text="Add attribute to form element." lightbox="media/real-time-marketing-form-custom-captcha-1.png":::
@@ -57,7 +59,7 @@ The process consists of these steps:
 
     ```document.addEventListener("d365mkt-afterformload", onloadCallback);```
 
-1. Prevent form submission if reCAPTCHA wasn't answered
+1. Prevent form submission if reCAPTCHA wasn't answered.
 
     Make reCAPTCHA challenge required on client side to avoid form submission without answering reCAPTCHA challenge.
 
@@ -83,8 +85,11 @@ Once the form is submitted, the `g-recaptcha-response` parameter is added automa
 
 ### 3. Activate reCAPTCHA plugin
 
+To activate reCAPTCHA plugin:
+
 1. Navigate to **Settings** > **Form settings** > **reCAPTCHA**.
-1. Enter the private key. Your private key is saved in a secure storage location.
+1. Enter the private key.
+    Your private key is saved in a secure storage location.
 1. Activate the plugin by switching the **Status** toggle.
 
 :::image type="content" source="media/real-time-marketing-configure-form-recaptcha.png" alt-text="Enter key for reCAPTCHA." lightbox="media/real-time-marketing-configure-form-recaptcha.png":::
