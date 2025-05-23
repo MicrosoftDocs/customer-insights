@@ -1,7 +1,7 @@
 ---
 title: Customer Insights - Journeys trial FAQ
 description: Solutions to common questions related to Dynamics 365 Customer Insights trial setup and management. Learn how to resolve platform and app-specific issues.
-ms.date: 05/08/2025
+ms.date: 05/23/2025
 ms.topic: get-started
 ms.custom: template-trial-faq
 author: alfergus
@@ -21,13 +21,13 @@ search.audienceType:
 
 ## Customer Insights-specific questions
 
-The following are frequently asked questions regarding using a Customer Insights - Journeys trial.
+The following are frequently asked questions about Customer Insights - Journeys trials.
 
 ### Can I convert the trial to a paid license?
 
-To buy a license directly, go to **admin.microsoft.com** > **Purchase Services** and search for "Customer Insights." Once you have the license, you can convert the trial environment for Customer Insights - Journeys to paid in the Power Platform Admin center by selecting the environment and selecting **Convert to Production**. This changes the environment type from 'Trial' to 'Production'. 
+To buy a license directly, go to **admin.microsoft.com** > **Purchase Services** and search for "Customer Insights." Once you have the license, you can convert the trial environment for Customer Insights - Journeys to a paid environment in the Power Platform Admin center by selecting the environment and selecting **Convert to Production**. This changes the environment type from "Trial" to "Production."
 
-There are additional steps if you also used Customer Insights - Data and want to preserve your work from that trial. Please visit [Customer Insights - Data Trial FAQ](../data/trial-faq.md) for details on how to preserve your configurations from the Data trial to the production environment.
+There are additional steps if you also used Customer Insights - Data and want to preserve your work from that trial. Visit [Customer Insights - Data Trial FAQ](../data/trial-faq.md) for details on how to preserve your configurations from the Customer Insights - Data trial in the production environment.
 
 ### How do I start using the trial?
 
@@ -37,8 +37,8 @@ After you sign up for the trial, you'll arrive on the app's main screen. The mai
 
 In most ways, Customer Insights trials are fully functional, but time-limited, production instances. The features now include Customer Insights - Journeys *and* Customer Insights - Data apps, allowing you to:
 
-- Trials include real-time journeys features only. All new feature development and product investments are centralized in real-time journeys; therefore, our presales trial showcases our product direction for new customers. 
-- Engage customers with trigger-based journeys, dynamics segments, and segments based on profiles from the Customer Insights – Data app.
+- Trials include real-time journeys features only. All new feature development and product investments are centralized in real-time journeys; therefore, the presales trial showcases the product direction for new customers. 
+- Engage customers with trigger-based journeys, dynamic segments, and segments based on profiles from Customer Insights – Data.
 - Unify your customer data with Customer Insights - Data.
 
 However, there are a few key differences from the production version:
