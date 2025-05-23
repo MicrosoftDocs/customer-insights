@@ -2,7 +2,7 @@
 title: Authenticate your domains (old version)
 description: Authenticate your domains to maximize email deliverability with DKIM and enable embedding of forms on your own website in Dynamics 365 Customer Insights - Journeys.
 ms.date: 08/21/2023
-ms.topic: article
+ms.topic: how-to
 author: alfergus
 ms.author: alfergus
 search.audienceType: 

@@ -2,7 +2,7 @@
 title: Create custom channels in Customer Insights - Journeys
 description: Learn how to create custom channels in Dynamics 365 Customer Insights - Journeys.
 ms.date: 08/22/2023
-ms.topic: article
+ms.topic: how-to
 author: alfergus
 ms.author: alfergus
 search.audienceType: 

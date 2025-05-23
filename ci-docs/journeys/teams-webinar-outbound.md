@@ -2,7 +2,7 @@
 title: Use Microsoft Teams for Dynamics 365 Customer Insights - Journeys online events in outbound marketing
 description: Learn how to create and host live events in outbound marketing using Microsoft Teams as the webinar provider.
 ms.date: 08/23/2023
-ms.topic: article
+ms.topic: how-to
 author: alfergus
 ms.author: alfergus
 search.audienceType: 

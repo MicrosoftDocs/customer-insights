@@ -278,6 +278,8 @@
          href: journey-start.md
       -  name: Add an action in a journey
          href: add-action.md
+      -  name: "Preview: Tailor follow-up strategies with multi-interaction branching"
+         href: multi-interaction-branching.md
       -  name: End a journey
          href: journey-end.md
     - name: Trigger-based journeys
@@ -554,13 +556,15 @@
       href: developer-push-interactions.md
     - name: Transition Android push notifications to Firebase Cloud Messaging (FCM) tokens
       href: push-notification-fcm-token-transition.md
+    - name: Troubleshoot push notifications setup
+      href: troubleshoot-push-notifications.md
   - name: Extend forms functionality
     items:
     - name: Client-side extensibility for forms
       href: developer/realtime-marketing-form-client-side-extensibility.md
     - name: Capture forms in Customer Insights - Journeys
       href: real-time-marketing-form-capture.md
-    - name: Integrate a custom captcha service with marketing forms
+    - name: Integrate reCAPTCHA service with marketing forms
       href: real-time-marketing-form-custom-captcha.md
     - name: Customize form submission validation
       href: real-time-marketing-form-customize-submission-validation.md
@@ -580,7 +584,7 @@
     href: admin-guide.md
   - name: Best practices for administration
     href: admin-best-practices.md
-  - name: How the real-time journeys app uses cookies
+  - name: How real-time journeys uses cookies
     href: real-time-journeys-cookies.md
   - name: User administration and permissions
     items:

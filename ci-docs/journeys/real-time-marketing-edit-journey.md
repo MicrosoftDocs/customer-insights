@@ -2,7 +2,7 @@
 title: Edit a live journey in Customer Insights - Journeys
 description: Edit live journeys in Customer Insights - Journeys without stopping them. Learn how to make lightweight edits and major changes with version control.
 ms.date: 01/21/2025
-ms.topic: article
+ms.topic: how-to
 author: alfergus
 ms.author: alfergus
 search.audienceType:

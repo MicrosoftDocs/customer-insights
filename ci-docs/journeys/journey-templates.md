@@ -2,7 +2,7 @@
 title: Create and manage customer journey templates
 description: How to save a customer journey as a template; create, edit, disable, enable, and delete new templates; and use templates to copy a customer journey in Dynamics 365 Customer Insights - Journeys.
 ms.date: 08/18/2023
-ms.topic: article
+ms.topic: how-to
 author: alfergus
 ms.author: alfergus
 search.audienceType: 

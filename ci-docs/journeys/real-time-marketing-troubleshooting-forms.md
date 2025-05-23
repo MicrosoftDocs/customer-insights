@@ -2,7 +2,7 @@
 title: Troubleshooting Customer Insights - Journeys forms
 description: Learn how to troubleshoot forms in Dynamics 365 Customer Insights - Journeys.
 ms.date: 11/06/2024
-ms.topic: article
+ms.topic: troubleshooting-general
 author: petrjantac
 ms.author: alfergus
 search.audienceType: 

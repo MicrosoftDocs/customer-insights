@@ -2,7 +2,7 @@
 title: Consent management overview
 description: Learn how to manage consent settings in Dynamics 365 Customer Insights - Journeys.
 ms.date: 11/15/2024
-ms.topic: article
+ms.topic: concept-article
 author: alfergus
 ms.author: alfergus
 search.audienceType: 

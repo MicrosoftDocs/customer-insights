@@ -1,8 +1,8 @@
 ---
 title: New and upcoming features
 description: Discover the latest features, improvements, and bug fixes in Dynamics 365 Customer Insights - Journeys. Stay updated with our monthly release notes.
-ms.date: 05/05/2025
-ms.topic: article
+ms.date: 05/13/2025
+ms.topic: whats-new
 author: colinbirkett
 ms.author: colinbirkett
 ms.collection: bap-ai-copilot
@@ -43,14 +43,20 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 - **Respect quiet times, engage based on location and time zones** 
 	- As regulations around customer privacy become more stringent, it's crucial to contact customers at times that are most convenient to them and ensure compliance with local legal requirements. Now in Customer Insights - Journeys, in addition to setting quiet times based on your journey's time zone, you can align quiet times with your customers' time zones and regions, ensuring that they only receive messages and calls during suitable hours. Aligning interactions with local time allows you to adhere to local regulations and respect cultural norms and preferences, fostering customer trust and enhancing the effectiveness of your outreach strategies.
 	- [Release plan](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/respect-quiet-times-engage-based-location-time-zones) 
-	- [Docs](real-time-marketing-quiet-times.md)
+	- [Docs](real-time-marketing-quiet-times.md#use-time-zone-for-quiet-times)
 
 	:::image type="content" source="media/quiet-time-settings.png" alt-text="Set up quiet times in Customer Insights - Journeys." lightbox="media/quiet-time-settings.png":::
 
 - **Collect extra event attendee information without updating your data model** 
 	- Easily gather additional information about your event attendees by creating any question directly in the form editor without creating new custom attributes for your contact entity. For example, you can create fields to ask, “What is your meal preference?”, "How did you learn about this event?", or you can create contest questions to increase your customer engagement and to gather valuable insights that help you personalize the attendee experience. 
 	- [Release plan](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/collect-extra-event-attendee-information-without-updating-data-model) 
-	- [Docs](create-unmapped-fields-registration-forms.md)  
+	- [Docs](create-unmapped-fields-registration-forms.md)
+
+- **Tailor follow-up strategies by reacting to multiple customer actions at once** 
+	- Marketers can now create more personalized customer experiences by branching on multiple interactions within a single journey step. Using the "Wait for trigger" tile after a marketing message, journey designers can select "Previous message gets an interaction" and configure multiple triggers, like Email Opened, Email Blocked, or Email Bounced, on the same branch. This streamlines journey design by consolidating logic and enabling smarter engagement paths based on how recipients interact.
+	- [Docs](multi-interaction-branching.md)
+
+	:::image type="content" source="media/multi-interaction-branching.png" alt-text="Configure journey branches based on multiple customer responses to marketing messages." lightbox="media/multi-interaction-branching.png":::
 
 #### Monthly enhancements
 
