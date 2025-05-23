@@ -301,7 +301,7 @@ Reuse this example to enrich your leads with more UTM parameters like utm_campai
 
 ### Integrate a custom captcha into the form
 
-You can [integrate custom captcha](real-time-marketing-form-custom-captcha.md) bot protection services like [Google re-CAPTCHA](https://www.google.com/recaptcha/about/) into your form.
+You can [integrate custom captcha](real-time-marketing-form-custom-captcha.md) bot protection services like [Google reCAPTCHA](https://www.google.com/recaptcha/about/) into your form.
 
 ### Custom back-end validation of form submission
 
