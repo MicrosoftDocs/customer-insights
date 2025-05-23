@@ -556,6 +556,8 @@
       href: developer-push-interactions.md
     - name: Transition Android push notifications to Firebase Cloud Messaging (FCM) tokens
       href: push-notification-fcm-token-transition.md
+    - name: Troubleshoot push notifications setup
+      href: troubleshoot-push-notifications.md
   - name: Extend forms functionality
     items:
     - name: Client-side extensibility for forms
