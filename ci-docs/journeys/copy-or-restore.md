@@ -1,7 +1,7 @@
 ---
 title: Copy or restore environments
 description: How to copy a production Dynamics 365 Customer Insights environment to a sandbox environment for experiments and testing.
-ms.date: 05/14/2025
+ms.date: 05/23/2025
 ms.topic: how-to
 author: alfergus
 ms.author: colinbirkett
@@ -13,9 +13,9 @@ search.audienceType:
 
 # Copy or restore environments
 
-Environment management operations are a standard feature of model-driven apps in Dynamics 365 (Sales, Customer Service, Field Service, Customer Insights - Journeys, and Project Service Automation). Customer Insights - Journeys, introduces a couple of extra steps to ensure that your back-up data that isn't stored in Dataverse if you're managing across environments or restoring an existing environment from backup.
+Environment management operations are a standard feature of model-driven apps in Dynamics 365 (Sales, Customer Service, Field Service, Customer Insights - Journeys, and Project Service Automation). Customer Insights - Journeys, introduces a couple of extra steps to ensure that your back-up data that isn't stored in Dataverse if you're managing across environments or restoring an existing environment from a backup.
 
-Customer Insights - Journeys services (including the marketing-insights service) run in parallel with your Customer Insights - Journeys environment, and thus follow their own lifecycle. These services aren't directly accessible to users, and the data they contain isn't included when copying, backing up, or restoring a Customer Insights - Journeys environment. This means that interaction records (such as email clicks and website visits) and files (such as those used in emails and marketing pages) aren't included when you copy, backup, or restore an environment except in the case where you backup and restore on the same environment. In that case, the analytics data is maintained.
+Customer Insights - Journeys services (including the marketing-insights service) run in parallel with your Customer Insights - Journeys environment, and thus follow their own lifecycle. These services aren't directly accessible to users, and the data they contain isn't included when copying, backing up, or restoring a Customer Insights - Journeys environment. This means that interaction records (such as email clicks and website visits) and files (such as those used in emails and marketing pages) aren't included when you copy, backup, or restore an environment, except in the case where you back up and restore on the same environment. In that case, the analytics data is maintained.
 
 > [!IMPORTANT]
 > This topic provides details about the exceptions that apply when working with environments where the Customer Insights - Journeys app is installed. For all other management tasks, see [Environments overview](/power-platform/admin/environments-overview), but read this topic first.
@@ -85,7 +85,7 @@ After creating your copy, you must complete the following steps:
 As with copy operations, backup and restore operations typically require a few extra steps when Customer Insights - Journeys is installed. 
 
 > [!IMPORTANT]
-> Unlike the copy operation or backup and restore to a different environment, backup and restore on the *same* environment maintains all of the analytics and interaction data. Analytics data are restored back to the point in time for which you have selected the restore, as long as you're restoring to the same environment. For all backup and restore operations, journeys and emails need to be republished to ensure that any journeys that ran during the period between the restore date and the current day aren't inadvertently rerun, duplicating messaging to your customers. Journeys are restored in a 'Stopped' state and cannot be restarted. However, if you have another environment which you've been moving data to, you can use the Configuration Migration Tool to move the journeys back to this environment. If the journeys have the same GUIDS, they're forced into a "Draft" state where they can be republished.
+> Unlike the copy operation or backup and restore to a different environment, backup and restore on the *same* environment maintains all of the analytics and interaction data. Analytics data are restored back to the point in time for which you have selected the restore, as long as you're restoring to the same environment. For all backup and restore operations, journeys and emails need to be republished to ensure that any journeys that ran during the period between the restore date and the current day aren't inadvertently rerun, duplicating messaging to your customers. Journeys are restored in a "Stopped" state and can't be restarted. However, if you have another environment to which you've been moving data, you can use the Configuration Migration Tool to move the journeys back to this environment. If the journeys have the same GUIDS, they're forced into a "Draft" state where they can be republished.
 
 > [!WARNING]
 > If you restore data in Customer Insights - Journeys, all consents return to the state they were in at the time backup was made. This may result in consent data being obsolete. To avoid complications, export all consent data into Excel before starting the restore process and use it as a reference after the restore is completed.
@@ -116,9 +116,9 @@ As with automatic backups, on-demand backups include the full organizational dat
 1. To select a **System** backup, choose a date and time or choose **Manual** to select a manual backup.
 1. On the side pane, select the current environment. 
 1. Select **Restore** to complete the action. The analytics are maintained from the point at which the operation was run.
-1. Journeys will be in a 'Stopped' state and cannot be restarted. To republish the journeys you have two options: 
-    1. Copy the journey creating a new instance, validate the copy and publish it. 
-    1. If you have used the Power Platform Configuration Migration Tool to move data between environments and have instances of your journeys with the same GUIDs on another environment, you can move them back onto the restored environment, which will force the matching journey IDs into a 'Draft' state from which they can be published. 
+1. Journeys will be in a "Stopped" state and can't be restarted. To republish the journeys, you have two options: 
+    1. Copy the journey (creating a new instance), validate the copy, and publish it. 
+    1. If you've used the Power Platform Configuration Migration Tool to move data between environments and have instances of your journeys with the same GUIDs on another environment, you can move them back onto the restored environment, which will force the matching journey IDs into a "Draft" state from which they can be published. 
 
 ### Restore a backup onto another target environment
 
@@ -146,8 +146,8 @@ To restore a backup onto a sandbox environment:
 
 Copy and restore are about backing up your Dataverse database and application solution settings and customizations. Copy, backup, and restore don't include initiating the application services, authentication tokens, etc. After you copy or restore an environment, your target environment will be set up as follows:
 
-- The resulting copy or restore on a different environment will begin as a real-time journeys-only environment with the application solutions but not the services. To enable the back-end services on the target of the copy or restore, you must complete additional steps including "installing" the real-time journeys services (described in [Install and manage Customer Insights](setup.md)) if you want the environment to function versus just back-up. Additionally, if you expect to use the legacy outbound marketing solution on the target environment, you must also go to **Settings** > **Versions** > **Enable outbound marketing** in the Customer Insights - Journeys app to add the solutions and services onto the target.
-- For copies, if you chose to do an "Everything" copy, the entire organizational database of your source environment will be copied to the target environment. This means that copied data from your source environment is visible on the target environment, but your work in the target environment won't affect your source database from thereafter.
+- The resulting copy or restore on a different environment will begin as a real-time journeys-only environment with the application solutions but not the services. To enable the back-end services on the target of the copy or restore, you must complete additional steps, including "installing" the real-time journeys services (described in [Install and manage Customer Insights](setup.md)) if you want the environment to function versus just back-up. Additionally, if you expect to use the legacy outbound marketing solution on the target environment, you must also go to **Settings** > **Versions** > **Enable outbound marketing** in the Customer Insights - Journeys app to add the solutions and services onto the target.
+- For copies, if you choose to do an "Everything" copy, the entire organizational database of your source environment will be copied to the target environment. This means that copied data from your source environment is visible on the target environment, but your work in the target environment won't affect your source database thereafter.
 - For copies, if you chose to do a "Customizations and schemas only" copy, all your apps and customizations will still be present on the target environment, but the organizational database will be nearly empty, so none of your source data (including email messages, portal content, and customer journeys) will be there.
 - All records (except for customer journeys) that were live on the source environment (such as emails, lead-scoring records, and more) will revert to **Draft** state on the target environment. You must go live again with any of these records that you want to use on the target environment.
   > [!NOTE]
