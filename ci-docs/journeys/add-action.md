@@ -21,9 +21,9 @@ To get to the Add an action dashboard, go to Customer Insights - Journeys > **Jo
 
 Within real-time journeys, you can launch various actions. Some of these actions include sending messages, channel optimization, condition actions, audience splitting, and more.
 
-:::image type="content" source="media/journeys-actions.png" alt-text="An overview of all possible actions in a journey." lightbox="media/journeys-actions.png":::
+:::image type="content" source="media/voice-conversation-tile.png" alt-text="An overview of all possible actions in a journey." lightbox="media/journeys-actions.png":::
 
-The main actions are grouped under [messages](#messages), [AI-powered actions](#ai-powered-actions), [conditions](#conditions), [activities](#activities), and [connectors](#connectors). You can see all available actions under each section below.
+The main actions are grouped under [messages](#messages), [AI powere conversations](#ai-powered-conversations-preview) (Preview), [AI-powered actions](#ai-powered-actions), [conditions](#conditions), [activities](#activities), and [connectors](#connectors). You can see all available actions under each section below.
 
 ### Messages
 
@@ -44,6 +44,13 @@ You can send push notifications. Push messages allow you to quickly convey offer
 ##### Other channel
 
 You can also send messages through custom channels to capture customers' attention. For more information, see [create custom channels](real-time-marketing-create-custom-channels.md).
+
+### AI powered conversations (Preview)
+
+Customer Insights - Journeys offers the ability to integrate with Contact Center for having a conversational based communications with your customers. 
+
+##### Voice conversation (Preview)
+You can make a personalized phone call via Contact Center powered by human agents or Copilot Studio agents and send the outcomes back to Customer Insights - Journeys for branching. This is only available if the [Conversational journeys](conversational-journeys-overview.md) is enabled.
 
 ### AI-powered actions
 
