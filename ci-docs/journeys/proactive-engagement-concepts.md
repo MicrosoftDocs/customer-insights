@@ -38,7 +38,11 @@ A [trigger](real-time-marketing-trigger-based-journey.md) is an event or conditi
 
 ## Conversational voice
 
+Conversational voice is an action step in the journey that calls a customer using AI agent or Customer Service representatives. This requires integration with Contact Center where these AI and human agents are managed. 
+
 ## Proactive engagement
+
+Proactive engagement is a table in Contact Center that encapsulates various settings, configurations, and behaviors that control how agent queues are managed, what phone numbers are used, whether calls are automatically recorded and transcribed, etc. 
 
 ## Wait for trigger branch
 
