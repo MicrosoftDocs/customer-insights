@@ -564,7 +564,7 @@
       href: developer/realtime-marketing-form-client-side-extensibility.md
     - name: Capture forms in Customer Insights - Journeys
       href: real-time-marketing-form-capture.md
-    - name: Integrate a custom captcha service with marketing forms
+    - name: Integrate reCAPTCHA service with marketing forms
       href: real-time-marketing-form-custom-captcha.md
     - name: Customize form submission validation
       href: real-time-marketing-form-customize-submission-validation.md
