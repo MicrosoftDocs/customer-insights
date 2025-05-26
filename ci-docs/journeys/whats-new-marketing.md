@@ -1,7 +1,7 @@
 ---
 title: New and upcoming features
 description: Discover the latest features, improvements, and bug fixes in Dynamics 365 Customer Insights - Journeys. Stay updated with our monthly release notes.
-ms.date: 05/13/2025
+ms.date: 05/26/2025
 ms.topic: whats-new
 author: colinbirkett
 ms.author: colinbirkett
@@ -33,21 +33,27 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 
 #### General availability
 
-- **TITLE** 
-	- Text
-	- [Release plan]() 
-	- [Docs]()  
+- **Get insights on email engagement with heatmap analytics** 
+	- Understanding the effectiveness of email campaigns can be complex, particularly when information and links are abundant. Gaining clarity on which areas or links captivate your audience and drive them to act is crucial for refining the user experience and boosting email performance. Real-time journeys email insights now offer a clear view of your audience's preferences by illustrating their interactions within your emails. This immediate visual feedback highlights the content that resonates the most, empowering you to adjust your messaging for heightened impact and better conversion rates. Heatmap now supports email variations. By leveraging these insights, you can understand which email variation captivates your audience and use it to personalize and optimize your upcoming campaigns or focus your efforts on the variations that yield the best results, ultimately driving better results for your business. 
+	- [Release plan](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/get-insights-email-engagement-heatmap-analytics) 
+	- [Docs](email-insights.md#preview-click-map)
+
+	:::image type="content" source="media/get-insights-heat-map.png" alt-text="Get insights on email engagement with heatmap analytics." lightbox="media/get-insights-heat-map.png":::
 
 #### Public preview
 
-- **TITLE** 
-	- Text
-	- [Release plan]() 
+- **Pause and resume journeys to handle unplanned events** 
+	- Safeguarding your brand's reputation and customer trust is critical. In the face of unplanned or unforeseen events, such as natural disasters, you may need to pause certain campaigns that might be deemed inappropriate or insensitive. Additionally, you may run into business or operational reasons for stopping a campaign, such as identifying the need to update some content or experiencing an unexpected call center outage. In such scenarios, it's prudent to halt customer outreach until the problem is addressed. Instead of stopping a campaign and adjusting the audience to exclude previously reached customers, you can now pause and resume journeys, allowing you to manage unplanned situations easily and stress-free. 
+	- [Release plan](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/pause-resume-journeys-handle-unplanned-events) 
 	- [Docs]()  
 
 #### Monthly enhancements
 
-- [Title](link)
+<!-->
+
+- [Out-of-box cancel registration flow](link)
+
+-->
 
 #### New blogs and scenario docs
 
