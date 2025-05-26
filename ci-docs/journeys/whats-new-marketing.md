@@ -29,15 +29,29 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 
 | App              | GA release      |
 |------------------|-----------------|
-| Customer Insights - Journeys       | <!--- insert CJO number --> |
+| Customer Insights - Journeys       | 1.1.56329.38  |
 
 #### General availability
 
+- **TITLE** 
+	- Text
+	- [Release plan]() 
+	- [Docs]()  
+
 #### Public preview
+
+- **TITLE** 
+	- Text
+	- [Release plan]() 
+	- [Docs]()  
 
 #### Monthly enhancements
 
+- [Title](link)
+
 #### New blogs and scenario docs
+
+
 
 ### May 2025 update
 
