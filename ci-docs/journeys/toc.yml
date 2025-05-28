@@ -326,6 +326,16 @@
         href: real-time-marketing-include-exclude.md
       - name: "Troubleshooting: Segments show incorrect member count"
         href: segment-member-count.md
+    - name: Conversational Journeys (preview)
+      items:
+      - name: Conversational Journeys overview
+        href: conversational-journeys-overview.md
+      - name: Prerequisites for Conversational Journeys
+        href: conversational-journeys-prerequisites.md
+      - name: Proactive Engagement concepts
+        href: proactive-engagement-concepts.md
+      - name: Create Conversational Journeys
+        href: proactive-engagement-how-to.md
     - name: Journey goals and A/B testing
       items:
       - name: Set a business goal and measure progress through a journey
@@ -520,16 +530,6 @@
     href: real-time-marketing-known-issues.md
   - name: Real-time journeys troubleshoot + FAQ
     href: real-time-marketing-faq.md
-- name: Conversational Journeys (preview)
-  items:
-  - name: Conversational Journeys overview
-    href: conversational-journeys-overview.md
-  - name: Prerequisites for Conversational Journeys
-    href: conversational-journeys-prerequisites.md
-  - name: Proactive Engagement concepts
-    href: proactive-engagement-concepts.md
-  - name: Create Conversational Journeys
-    href: proactive-engagement-how-to.md
 - name: Develop and extend
   items:
   - name: Manually add a custom channel
