@@ -24,7 +24,7 @@ To use Conversational Journeys, you need Dynamics 365 Customer Insights - Journe
 ## Licensing information
 
 1. [Purchase Dynamics 365 Customer Insights](purchase.md) (**required**)
-1. [Buy Dynamics 365 Contact Center](/dynamics-365/products/contact-center/pricing) (**required**)
+1. [Buy Dynamics 365 Contact Center](https://www.microsoft.com/dynamics-365/products/contact-center/pricing) (**required**)
 
 ## Get started with Customer Insights - Journeys
 
