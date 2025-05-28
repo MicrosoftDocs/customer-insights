@@ -1,37 +1,38 @@
 ---
-title: "Preview: Conversational journeys overview"
-description: Learn about Conversational journeys in Dynamics 365 Customer Insights - Journeys.
-ms.date: 05/21/2025
+title: Conversational Journeys overview
+description: Learn how Conversational Journeys in Dynamics 365 Customer Insights combines AI agents and Contact Center to deliver seamless, automated customer interactions.
+ms.date: 05/27/2025
 ms.topic: article
-author: colinbirkett
+author: vinayd-msft
 ms.author: colinbirkett
-search.audienceType: 
+search.audienceType:
   - admin
   - customizer
   - enduser
+ms.custom:
+  - ai-gen-docs-bap
+  - ai-gen-description
+  - ai-seo-date:05/27/2025
 ---
 
-# Preview: (FNAME) overview
+# Conversational Journeys overview
 
-> [!IMPORTANT]
-> A preview feature is a feature that isn't complete but is made available before it’s officially released so customers can get early access and provide feedback. Preview features aren’t meant for full use and may have limited or restricted functionality.
->
-> Microsoft doesn't provide support for this preview feature. Microsoft Dynamics 365 Technical Support won't be able to help you with issues or questions. Preview features aren’t meant for production use, especially to process personal data, or other data that are subject to legal or regulatory compliance requirements.
+[!INCLUDE [Preview banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-(FNAME) solution brings power of Customer Insights - Journeys and Contact Center along with AI agents built using Copilot Studio to deliver customer experiences that delight customers at scale while reducing costs and increasing customer satisfaction. For example, you can easily set up proactive outreach for scenarios such as canceled flight or product recall, and automate transactional calls such as confirming/scheduling a delivery. Organizations benefit from reduced call volume and support costs, while customers get faster resolutions without having to chase down answers. 
+Conversational Journeys combines Dynamics 365 Customer Insights - Journeys, Dynamics 365 Contact Center, and AI agents built with Copilot Studio to deliver customer experiences at scale. Set up proactive outreach for scenarios like a canceled flight or product recall, and automate transactional calls like confirming or scheduling a delivery. Organizations reduce call volume and support costs, and customers get faster resolutions without chasing down answers.
 
-A typical (FNAME) solution has three parts:
-1. First part is customer journeys that tell the AI agent who to call, when to call, and how to process choices the customer makes during the call. This part is implemented in Customer Insights - Journeys. This is where you set up consent management and quiet time/days to ensure customers are contacted in accordance to their preferences and regulatory requirements.
-1. The second part is the AI agent, which can converse with customers using natural language. This part is implemented in Microsoft Copilot Studio.
-1. The final part brings it all together, in Contact Center, where setup of customer service agent’s customer queues, phone numbers, etc. takes place. Other behaviors, such as transferring call to a human rep if customer asks (or the AI-agent is unable to handle customer requests), are also defined here.
+A typical Conversational Journeys solution has three parts:
 
-This entire solution can be authored with no code (including the ability to design the AI agent using natural language), making it accessible to nontechnical business users to define their customer experiences with ease. 
+1. Customer journeys tell the AI agent who to call, when to call, and how to process choices the customer makes during the call. Set up consent management and quiet times in Customer Insights - Journeys to contact customers according to their preferences and regulatory requirements.
+1. The AI agent converses with customers using natural language. Build this agent in Microsoft Copilot Studio.
+1. Contact Center brings everything together. Set up customer service agent queues and phone numbers, and define behaviors like transferring a call to a human rep if the customer asks or if the AI agent can't handle the request.
 
-Here's a quick map to navigate learning pages that cover above aspects of this solution:
+You can author the entire Conversational Journeys solution with no code, including designing the AI agent using natural language. Nontechnical business users define customer experiences easily.
+
+Use these links to learn more about different aspects of this solution:
 
 - [How to purchase licensing information](conversational-journeys-prerequisites.md)
 - [Key concepts](proactive-engagement-concepts.md)
-- [How to create journeys that include conversational voice, consent management, and quiet time/days](proactive-engagement-how-to.md)
-
+- [How to create journeys that include conversational voice, consent management, and quiet times](proactive-engagement-how-to.md)
 
 [!INCLUDE[footer-include](./includes/footer-banner.md)]

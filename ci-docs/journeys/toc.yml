@@ -520,15 +520,15 @@
     href: real-time-marketing-known-issues.md
   - name: Real-time journeys troubleshoot + FAQ
     href: real-time-marketing-faq.md
-- name: "Preview: Conversational journeys"
+- name: Conversational Journeys (preview)
   items:
-  - name: "Preview: Overview"
+  - name: Conversational Journeys overview
     href: conversational-journeys-overview.md
-  - name: "Preview: Prerequisites"
+  - name: Prerequisites for Conversational Journeys
     href: conversational-journeys-prerequisites.md
-  - name: "Preview: Concepts"
+  - name: Proactive Engagement concepts
     href: proactive-engagement-concepts.md
-  - name: "Preview: How to"
+  - name: Create Conversational Journeys
     href: proactive-engagement-how-to.md
 - name: Develop and extend
   items:

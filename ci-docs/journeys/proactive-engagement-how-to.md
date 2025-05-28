@@ -1,35 +1,36 @@
 ---
-title: "Preview: How to"
-description: Learn how to use conversational journeys capabilities in Dynamics 365 Customer Insights - Journeys.
-ms.date: 05/13/2025
+title: Create Conversational Journeys
+description: Conversational Journeys in Dynamics 365 Customer Insights let you design voice call experiences using Contact Center integration. Learn how to set up and branch journeys.
+ms.date: 05/27/2025
 ms.topic: article
 author: colinbirkett
 ms.author: colinbirkett
-search.audienceType: 
+search.audienceType:
   - admin
   - customizer
   - enduser
+ms.custom:
+  - ai-gen-docs-bap
+  - ai-gen-description
+  - ai-seo-date:05/27/2025
 ---
 
-# Preview: How to
+# Create Conversational Journeys
 
-> [!IMPORTANT]
-> A preview feature is a feature that isn't complete but is made available before it’s officially released so customers can get early access and provide feedback. Preview features aren’t meant for full use and may have limited or restricted functionality.
->
-> Microsoft doesn't provide support for this preview feature. Microsoft Dynamics 365 Technical Support won't be able to help you with issues or questions. Preview features aren’t meant for production use, especially to process personal data, or other data that are subject to legal or regulatory compliance requirements.
+[!INCLUDE [Preview banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-To use conversational journeys, you have to enable the feature switch Contact Center integration under the Integrations section. For more information, see [Use feature switches to enable or disable optional and preview features](admin-feature-switches.md#integrations).
+To use Conversational Journeys, enable the **Contact Center integration** feature switch under the **Integrations** section. For more information, see [Use feature switches to enable or disable optional and preview features](admin-feature-switches.md#integrations).
 
-Once enabled, Customer Insights Journeys will auto detect your Contact Center in the same environment.
+After you enable the feature, Customer Insights - Journeys detects your Contact Center in the same environment.
 
-The integration with Contact Center allows you to create conversational journeys by selecting a <!-- [proactive engagement](LINK) --> from Contact Center and design your journey based on its outcomes.
+The integration with Contact Center lets you create Conversational Journeys by selecting a [proactive engagement](proactive-engagement-concepts.md#proactive-engagement) from Contact Center and designing your journey based on its outcomes.
 
 > [!NOTE]
-> Conversational journeys work only with **Contact** based journeys.
+> Conversational Journeys work only with **contact-based** journeys.
 
-## Using Conversational voice call tile and branch on its outcomes
+## Using the conversational voice call tile and branching on its outcomes
 
-To use the Conversational voice call tile and branch on its outcomes:
+To use the conversational voice call tile and branch on its outcomes:
 
 1. When creating a journey, you can add an action and choose **Voice conversation**.
 
@@ -39,34 +40,34 @@ To use the Conversational voice call tile and branch on its outcomes:
 
     :::image type="content" source="media/proactive-engagement-select.png" alt-text="2.	Choose a proactive engagement configuration." lightbox="media/proactive-engagement-select.png":::
     
-1. Once you select a Proactive engagement, you must select:
-    - The **compliance profile** you want to use
-    - **Purpose**
-    - **Topic** (if applicable)
-    - **Quite time** option. You can always choose “Don’t apply quiet time to this message”
+1. Once you select a proactive engagement, you must select:
+    - The **compliance profile** you want to use.
+    - The **Purpose**.
+    - The **Topic** (if applicable).
+    - **Quite time** option. You can always choose “Don’t apply quiet time to this message.”
 
     :::image type="content" source="media/voice-conversation-expanded.png" alt-text="Configure proactive engagement fields." lightbox="media/voice-conversation-expanded.png":::
 
-1. To branch based on your proactive engagement outcomes, add a **Wait for trigger** action and choose a branch condition type of “**Previous message gets an interaction”**.
+1. To branch based on your proactive engagement outcomes, add a **Wait for trigger** action and choose a branch condition type of **Previous message gets an interaction**.
 
     :::image type="content" source="media/previous-message-interaction.png" alt-text="Add a Wait for trigger action and choose a branch condition type." lightbox="media/previous-message-interaction.png":::
     
 1. In the branches, you can choose the following triggers:
-    - **Voice call attempted**: Contact Center had attempted to make the phone call to the Contact. Be aware that a call attempted doesn't necessarily mean that the Contact had answered.
-    - **Voice call not attempted**: Contact Center did not attempt to make a phone call.
-    - **Voice call blocked**: Customer Insights Journeys blocked the call from being attempted and did not send the request to Contact Center.
+    - **Voice call attempted**: Contact Center had attempted to make the phone call to the contact. Be aware that a call attempted doesn't necessarily mean that the contact had answered.
+    - **Voice call not attempted**: Contact Center didn't attempt to make a phone call.
+    - **Voice call blocked**: Customer Insights - Journeys blocked the call from being attempted and didn't send the request to Contact Center.
 
     :::image type="content" source="media/choose-triggers.png" alt-text="Choose a trigger." lightbox="media/choose-triggers.png":::
 
-1. Add **Attribute branch** action, and choose **Branch on** “A voice call is attempted”.
+1. Add an **Attribute branch** action and choose **Branch on** “A voice call is attempted.”
 
     :::image type="content" source="media/attribute-voice-call.png" alt-text="Add an attribute branch on 'A voice call is attempted.'" lightbox="media/attribute-voice-call.png":::
 
-1. In the attribute branches you can choose what conditions you want to branch on. Within “Voice call attempted” you'll have default variables: **Disposition Codes** and **Result**, and variables based on how you set up your proactive engagement (for example, Outcome).
+1. In the attribute branches, you can choose what conditions you want to branch on. Within “Voice call attempted” you have default variables, **Disposition Codes** and **Result**, and variables based on how you set up your proactive engagement (for example, **Outcome**).
 
     :::image type="content" source="media/conversational-voice-condition.png" alt-text="Choose conditions for the attribute branch." lightbox="media/conversational-voice-condition.png":::
 
-    Up to your use case, you can choose any combination of these variables to design your branching logic. 
+    Depending on your use case, you can choose any combination of these variables to design your branching logic.
 
     :::image type="content" source="media/attribute-voice-call-combination.png" alt-text="Select variable as condition on voice call results for attribute branch." lightbox="media/attribute-voice-call-combination.png":::
 
@@ -74,19 +75,21 @@ To use the Conversational voice call tile and branch on its outcomes:
 
 ## Voice consent and compliance profiles
 
-In Dynamics 365 Customer Insights - Journeys, a compliance profile are the hubs that govern how consent is managed for outbound communications. It defines the legal and regulatory framework under which messages are sent—such as whether a message is considered transactional or promotional—and ensures that appropriate consent (opt-in or opt-out) is obtained and respected. When setting up a journey in CIJ, selecting a compliance profile allows you to associate each message with a specific purpose, aligning with privacy laws.
+In Customer Insights - Journeys, compliance profiles govern how you manage consent for outbound communications. Compliance profiles define the legal and regulatory framework for sending messages, like whether a message is transactional or promotional, and make sure you get and respect the right consent (opt-in or opt-out). When you set up a journey in Customer Insights - Journeys, select a compliance profile to link each message to a specific purpose and align with privacy laws.
 
-You need a compliance profile to ensure that your voice communications adhere to legal standards and customer preferences. It enables features like unsubscribe links, quiet time enforcement, and consent tracking, which are critical for avoiding legal risks and maintaining customer trust. This is especially important in scenarios involving high-volume outreach, such as autonomous agents or marketing campaigns, where managing consent at scale is essential
+Use a compliance profile to make sure your voice communications follow legal standards and customer preferences. The compliance profile lets you add features like unsubscribe links, quiet time enforcement, and consent tracking. These features help you avoid legal risks and keep customer trust. This is especially important for high-volume outreach, like autonomous agents or marketing campaigns, where you need to manage consent at scale.
 
-Details about Consent management and how to use it:
+Learn more about consent management:
 
 - [Consent management overview - Understand Compliance Profiles, Purposes and Topic](real-time-marketing-compliance-settings.md)
 - [Evaluating consent for voice channel](real-time-marketing-email-text-consent.md#how-consent-is-respected-for-voice-channel-by-default)
 
 ## Quiet times and conversational voice
 
-In Dynamics 365 Customer Insights - Journeys, quiet times are configurable time windows during which outbound communications are suppressed to respect customer preferences and legal constraints. These settings are important for voice calls because they help ensure compliance with regulations like the Telecommunication Consumer Protection Act (TCPA), which restricts when businesses can contact individuals based on their local time zones.
+In Customer Insights - Journeys, quiet times are configurable time windows during in which outbound communications are suppressed to respect customer preferences and legal constraints. These settings are important for voice calls because they help ensure compliance with regulations like the Telecommunication Consumer Protection Act (TCPA), which restricts when businesses can contact individuals based on their local time zones.
 
 Quiet times are useful because they prevent calls from being placed during inappropriate hours (for example, late at night or early morning), which could otherwise lead to customer dissatisfaction or legal penalties.
 
-To learn about how to create and manage quiet times, see [Set quiet times to prevent messages from sending during unwanted hours](real-time-marketing-quiet-times.md)
+To learn about how to create and manage quiet times, see [Set quiet times to prevent messages from sending during unwanted hours](real-time-marketing-quiet-times.md).
+
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

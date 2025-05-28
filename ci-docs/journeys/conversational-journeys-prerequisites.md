@@ -1,29 +1,30 @@
 ---
-title: "Preview: Prerequisites"
-description: Overviews prerequisites for conversational journeys in Dynamics 365 Customer Insights - Journeys.
-ms.date: 05/12/2025
+title: Prerequisites for Conversational Journeys
+description: 'Prerequisites for Conversational Journeys: Discover the required products and steps to use Dynamics 365 Customer Insights - Journeys and Contact Center.'
+ms.date: 05/27/2025
 ms.topic: article
 author: colinbirkett
 ms.author: colinbirkett
-search.audienceType: 
+search.audienceType:
   - admin
   - customizer
   - enduser
+ms.custom:
+  - ai-gen-docs-bap
+  - ai-gen-description
+  - ai-seo-date:05/27/2025
 ---
 
-# Preview: Prerequisites for Conversational journeys
+# Prerequisites for Conversational Journeys
 
-> [!IMPORTANT]
-> A preview feature is a feature that isn't complete but is made available before it’s officially released so customers can get early access and provide feedback. Preview features aren’t meant for full use and may have limited or restricted functionality.
->
-> Microsoft doesn't provide support for this preview feature. Microsoft Dynamics 365 Technical Support won't be able to help you with issues or questions. Preview features aren’t meant for production use, especially to process personal data, or other data that are subject to legal or regulatory compliance requirements.
+[!INCLUDE [Preview banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-To use Conversational journeys, you must have both Dynamics 365 Customer Insights - Journeys and Dynamics 365 Contact Center products. Additionally, if you want to utilize AI agents you need to have Microsoft Copilot Studio.
+To use Conversational Journeys, you need Dynamics 365 Customer Insights - Journeys and Dynamics 365 Contact Center. If you want to use AI agents, you also need Microsoft Copilot Studio.
 
 ## Licensing information
 
-1. [Purchase Dynamics 365 Customer Insights](purchase.md) (Necessary)
-1. [Buy Dynamics 365 Contact Center](/dynamics-365/products/contact-center/pricing) (Necessary)
+1. [Purchase Dynamics 365 Customer Insights](purchase.md) (**required**)
+1. [Buy Dynamics 365 Contact Center](/dynamics-365/products/contact-center/pricing) (**required**)
 
 ## Get started with Customer Insights - Journeys
 
