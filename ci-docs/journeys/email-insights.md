@@ -68,7 +68,6 @@ Using the click map insights, you can optimize your content placement, layout, a
 :::image type="content" source="media/email-insights-click-map.png" alt-text="Screenshot of email insights click map dashboard." lightbox="media/email-insights-click-map.png":::
 
 > [!NOTE]
-> - Click map is in preview. To enable the click map go to **Settings** > **Feature Switches** > **Email Clickmap**.
 > - The click map only displays the interactions and design for the latest email version created.
 > - For the click map feature to be displayed, the journey must have been created after the feature release in October 2024.
 > - When adding older emails to your journey, to start displaying the click map, use [live editing](edit-email-in-live-journey.md) and update the email. The links included in your email will be updated and tracked for the new interactions.
