@@ -54,12 +54,7 @@ Unlock valuable insights into your email's URL engagement and make data-driven d
 > [!NOTE]
 > Link insights displays data for emails (with links) and journeys created after September 2024.
 
-## Preview: Click map
-
-> [!IMPORTANT]
-> A preview feature is a feature that is not complete, but is made available before it’s officially in a release so customers can get early access and provide feedback. Preview features aren’t meant for production use and may have limited or restricted functionality.
-> 
-> Microsoft doesn't provide support for this preview feature. Microsoft Dynamics 365 Technical Support won’t be able to help you with issues or questions. Preview features aren’t meant for production use, especially to process personal data or other data that are subject to legal or regulatory compliance requirements.
+## Click map
 
 Click map is a fast and visual way to understand customer engagement based on your email design. At a glance, the heatmap colors and link ranking display the most interacted areas. Choose to display or hide the heatmap for better visualization.
 
