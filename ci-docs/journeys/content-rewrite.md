@@ -1,7 +1,7 @@
 ---
 title: 'Copilot - Refresh and perfect your message (preview)'
 description: Use the content rewrite copilot to rephrase messages, adjust tone, and optimize your content in Dynamics 365 Customer Insights - Journeys.
-ms.date: 11/22/2024
+ms.date: 05/29/2025
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
@@ -14,7 +14,7 @@ ms.custom:
 
 # Copilot - Refresh and perfect your message (preview)
 
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+[!INCLUDE [Preview banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 This article is an overview of the content rewrite copilot feature. It explains how to use content rewrite to refine your email, forms, and message content.
 
