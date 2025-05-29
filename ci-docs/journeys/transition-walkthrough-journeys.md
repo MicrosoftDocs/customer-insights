@@ -49,15 +49,18 @@ Send at a specific time (that is, 'Smart scheduling') has no equivalent in real-
 
 No migration of the asset library should be needed. If you're using the outbound marketing asset library, the same asset library is used by real-time journeys, so you can continue to use all previously uploaded assets. If you're using an external asset library, the process remains the same (get the URL of the asset from the external library and insert it in your messages).
 
-## Relevant upcoming features
+## Relevant upcoming features or workaround in real time
 
 The features listed below may be of interest as you transition from outbound marketing to real-time journeys. These features provide parity, equivalent, or better functionality than what was available in outbound marketing.
 
 ### Email
 
-- **View email in browser**: With varied display formats across email providers, your emails can sometimes be displayed incorrectly. "View in Browser" in real-time journeys allows your customers to see your emails exactly as you created them. For more information, see [Enhance email engagement by allowing browser viewing](/dynamics365/release-plan/2023wave2/marketing/dynamics365-marketing/enhance-email-engagement-allowing-viewing-browsers).
-- **Email A/B testing**: Use email A/B testing in real-time journeys to compare and test variations of your emails on different subsets of your recipients to determine which variation performs best. Easily create alternate email versions by changing elements such as subject, body, or from address and optimize content for your audience. For more information, see [Optimize engagement, increase conversion rates with email A/B testing](/dynamics365/release-plan/2023wave2/marketing/dynamics365-marketing/optimize-engagement-increase-conversion-rates-email-ab-testing).
-- **Orchestrate across multiple email address contact points**: Maximize customer reach, choose the right email address for each journey. Now, whether it's a contact’s work or personal email address, you have full control over where your messages are delivered, ensuring they’re seen where customers are most likely to take action. For more information, see [Ensure messages go to the right contact email address](/dynamics365/release-plan/2023wave2/marketing/dynamics365-marketing/ensure-messages-go-right-contact-email-address).
+- **Email A/B testing & Multivariant**: Compare and test variations of your emails on different subsets of your recipients and analyze how they interact with each to determine which variation performs better. 
+
+*Guidance:* We do not have a published roadmap. You can create emails for each variation and [use A/B tests at the journey level](https://learn.microsoft.com/en-us/dynamics365/customer-insights/journeys/real-time-marketing-ab-tests-in-marketing-journeys)
+-  **Email address can only be from Contact/Lead**: Emails can only be sent to email addresses in contact and leads.
+
+*Guidance:* We do not plan to support sending to other email address. [Use CC (carbon copy) field](https://learn.microsoft.com/en-us/dynamics365/customer-insights/journeys/real-time-marketing-add-cc-recipients) where you can use personalization select email address from any related table of contact/lead.
 
 ### Journeys
 
