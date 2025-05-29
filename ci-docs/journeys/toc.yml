@@ -44,30 +44,32 @@
     items:
     - name: Overview
       href: transition-walkthrough-functional.md
-    - name: Setup changes in real-time journeys
-      href: transition-walkthrough-setup.md
-    - name: Segments
-      href: transition-walkthrough-segments.md
-    - name: Emails, journeys, and assets
-      href: transition-walkthrough-journeys.md
     - name: Consent
       href: transition-walkthrough-consent.md
     - name: Consent management and double opt-in
       href: real-time-marketing-consent-transition.md
-    - name: Marketing pages and forms
-      href: transition-walkthrough-forms.md
+    - name: Customer Voice responses
+      href: transition-walkthrough-customer-voice.md
+    - name: Emails, journeys, and assets
+      href: transition-walkthrough-journeys.md
     - name: Event management
       href: transition-walkthrough-events.md
     - name: Event registration
       href: migrate-event-registration.md
-    - name: Lead management and scoring
-      href: transition-walkthrough-leads.md
     - name: Insights and reports
-      href: transition-walkthrough-insights.md
+      href: transition-walkthrough-insights.md    
+    - name: Lead management and scoring
+      href: transition-walkthrough-leads.md    
+    - name: Marketing pages and forms
+      href: transition-walkthrough-forms.md    
+    - name: Personalization
+      href: transition-walkthrough-personalization.md
+    - name: Segments
+      href: transition-walkthrough-segments.md    
+    - name: Setup changes in real-time journeys
+      href: transition-walkthrough-setup.md
     - name: Social posting and LinkedIn Lead Gen
       href: transition-walkthrough-social-posts.md
-    - name: Customer Voice responses
-      href: transition-walkthrough-customer-voice.md
   - name: Real-time journeys transition FAQs
     href: transition-faqs.md
 - name: Install and manage
