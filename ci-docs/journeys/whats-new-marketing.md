@@ -1,7 +1,7 @@
 ---
 title: New and upcoming features
 description: Discover the latest features, improvements, and bug fixes in Dynamics 365 Customer Insights - Journeys. Stay updated with our monthly release notes.
-ms.date: 05/27/2025
+ms.date: 05/30/2025
 ms.topic: whats-new
 author: colinbirkett
 ms.author: colinbirkett
@@ -40,6 +40,8 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 
 	:::image type="content" source="media/get-insights-heat-map.png" alt-text="Get insights on email engagement with heatmap analytics." lightbox="media/get-insights-heat-map.png":::
 
+<!---
+
 #### Public preview
 
 - **Pause and resume journeys to handle unplanned events** 
@@ -49,11 +51,9 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 
 #### Monthly enhancements
 
-<!-->
-
 - [Out-of-box cancel registration flow](link)
 
--->
+--->
 
 ### May 2025 update
 
