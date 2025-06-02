@@ -1,7 +1,7 @@
 ---
 title: New and upcoming features
 description: Discover the latest features, improvements, and bug fixes in Dynamics 365 Customer Insights - Journeys. Stay updated with our monthly release notes.
-ms.date: 05/30/2025
+ms.date: 06/02/2025
 ms.topic: whats-new
 author: colinbirkett
 ms.author: colinbirkett
@@ -47,13 +47,15 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 - **Pause and resume journeys to handle unplanned events** 
 	- Safeguarding your brand's reputation and customer trust is critical. In the face of unplanned or unforeseen events, such as natural disasters, you may need to pause certain campaigns that might be deemed inappropriate or insensitive. Additionally, you may run into business or operational reasons for stopping a campaign, such as identifying the need to update some content or experiencing an unexpected call center outage. In such scenarios, it's prudent to halt customer outreach until the problem is addressed. Instead of stopping a campaign and adjusting the audience to exclude previously reached customers, you can now pause and resume journeys, allowing you to manage unplanned situations easily and stress-free. 
 	- [Release plan](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/pause-resume-journeys-handle-unplanned-events) 
-	- [Docs]()  
+	- [Docs]()
+
+--->
 
 #### Monthly enhancements
 
-- [Out-of-box cancel registration flow](link)
-
---->
+- **Out-of-box cancel registration flow**
+	- Event organizers can now include a Cancel Registration link in confirmation emails, enabling attendees to cancel their registration easily. This automatically updates their status to "Canceled" in the system, giving organizers real-time visibility while simplifying attendee management and improving support for waitlists.
+	- [Docs](set-up-and-manage-waitlist.md)
 
 ### May 2025 update
 
