@@ -1,6 +1,6 @@
 ---
-title: Conversational Journeys concepts
-description: Conversational Journeys in Dynamics 365 Customer Insights – Journeys helps you automate personalized customer interactions across channels. Learn key concepts and get started.
+title: Conversational journeys concepts
+description: Conversational journeys in Dynamics 365 Customer Insights – Journeys helps you automate personalized customer interactions across channels. Learn key concepts and get started.
 ms.date: 05/29/2025
 ms.topic: article
 author: colinbirkett
@@ -15,11 +15,11 @@ ms.custom:
   - ai-seo-date:05/27/2025
 ---
 
-# Conversational Journeys concepts
+# Conversational journeys concepts
 
 [!INCLUDE [Preview banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-Conversational Journeys use existing capabilities from Dynamics 365 Customer Insights – Journeys and Dynamics 365 Contact Center. This article introduces several concepts that you use when working with Conversational Journeys.
+Conversational journeys use existing capabilities from Dynamics 365 Customer Insights – Journeys and Dynamics 365 Contact Center. This article introduces several concepts that you use when working with conversational journeys.
 
 ## Journey
 
@@ -41,9 +41,9 @@ A [trigger](real-time-marketing-trigger-based-journey.md) is an event or conditi
 
 Conversational voice is a step in the customer journey that calls the customer using an AI agent or a customer service representative. This step needs integration with Contact Center, where both AI and human agents are managed.
 
-## Proactive Engagement
+## Proactive engagement
 
-Proactive Engagement is a table in Contact Center that has settings, configurations, and behaviors that control how agent queues are managed, which phone numbers are used, and whether calls are automatically recorded and transcribed.
+Proactive engagement is a table in Contact Center that has settings, configurations, and behaviors that control how agent queues are managed, which phone numbers are used, and whether calls are automatically recorded and transcribed.
 
 ## Wait for trigger branch
 

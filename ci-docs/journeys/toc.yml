@@ -326,15 +326,15 @@
         href: real-time-marketing-include-exclude.md
       - name: "Troubleshooting: Segments show incorrect member count"
         href: segment-member-count.md
-    - name: Conversational Journeys (preview)
+    - name: Conversational journeys (preview)
       items:
-      - name: Conversational Journeys overview
+      - name: Conversational journeys overview
         href: conversational-journeys-overview.md
-      - name: Prerequisites for Conversational Journeys
+      - name: Prerequisites for conversational journeys
         href: conversational-journeys-prerequisites.md
-      - name: Proactive Engagement concepts
+      - name: Proactive engagement concepts
         href: proactive-engagement-concepts.md
-      - name: Create Conversational Journeys
+      - name: Create conversational journeys
         href: proactive-engagement-how-to.md
     - name: Journey goals and A/B testing
       items:
