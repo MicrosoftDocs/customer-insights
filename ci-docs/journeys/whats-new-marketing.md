@@ -64,6 +64,15 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 	- Event organizers can now include a Cancel Registration link in confirmation emails, enabling attendees to cancel their registration easily. This automatically updates their status to "Canceled" in the system, giving organizers real-time visibility while simplifying attendee management and improving support for waitlists.
 	- [Docs](set-up-and-manage-waitlist.md)
 
+<!--- NEED TO FIGURE OUT IF THIS STAYS IN ENHANCEMENTS SECTION
+
+- **Message dialogs when creating outbound assets** 
+	- Users will notice new message dialogs in the product whenever they attempt to create a new outbound marketing email, journey, segment, form, page, etc. These message dialogs advise them that outbound will be removed soon. For now, users can dismiss the dialog & continue working in outbound but this will change in the future. They will also see warning banners when current journeys and events are scheduled to run past Jun 30th, 2025.
+	- [Release plan]() 
+	- [Docs]()
+
+--->
+
 ### May 2025 update
 
 | App              | GA release      |
