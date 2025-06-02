@@ -40,9 +40,16 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 
 	:::image type="content" source="media/get-insights-heat-map.png" alt-text="Get insights on email engagement with heatmap analytics." lightbox="media/get-insights-heat-map.png":::
 
-<!---
-
 #### Public preview
+
+- **Transform your outreach with custom-built AI agent powered voice conversations** 
+	- Brands are constantly looking for ways to anticipate customer needs and connect with them on the channels that is the most appropriate for the message engagement. By integrating Customer Insights - Journeys with Contact Center, you can leverage custom-built AI agents to deliver meaningful, hyper-personalized conversational voice calls that boost customer satisfaction and engagement.  For example, you can alert a customer about a flight delay via a voice call where the custom-built AI agent engages them in a natural language conversation to inform them about the issue and offer solutions such as reschedule or refund. The results of the conversation then drive the next action in the journey, whether that’s rescheduling the flight, issuing the refund, or sending an email because there was no answer.
+	- [Release plan](conversational-journeys-overview.md) 
+	- [Blog](https://aka.ms/AI-Powered-Convos)
+
+	:::image type="content" source="media/journey-ai-voice-conversation.png" alt-text="Transform your outreach with custom-built AI Agent powered voice conversations." lightbox="media/journey-ai-voice-conversation.png":::
+
+<!---
 
 - **Pause and resume journeys to handle unplanned events** 
 	- Safeguarding your brand's reputation and customer trust is critical. In the face of unplanned or unforeseen events, such as natural disasters, you may need to pause certain campaigns that might be deemed inappropriate or insensitive. Additionally, you may run into business or operational reasons for stopping a campaign, such as identifying the need to update some content or experiencing an unexpected call center outage. In such scenarios, it's prudent to halt customer outreach until the problem is addressed. Instead of stopping a campaign and adjusting the audience to exclude previously reached customers, you can now pause and resume journeys, allowing you to manage unplanned situations easily and stress-free. 
