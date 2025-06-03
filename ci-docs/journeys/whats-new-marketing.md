@@ -67,7 +67,7 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 
 - **Out-of-box cancel registration flow**
 	- Event organizers can now include a Cancel Registration link in confirmation emails, enabling attendees to cancel their registration easily. This automatically updates their status to "Canceled" in the system, giving organizers real-time visibility while simplifying attendee management and improving support for waitlists.
-	- [Docs](cancel-registration.md.md)
+	- [Docs](cancel-registration.md)
 
 ### May 2025 update
 
