@@ -1,11 +1,11 @@
 ---
 title: "What's new in Dynamics 365 Customer Insights - Data"
 description: "Information about new features, improvements, and bug fixes."
-ms.date: 11/22/2024
+ms.date: 06/03/2025
 ms.topic: whats-new
-author: m-hartmann
-ms.author: mhart
-ms.reviewer: mhart
+author: colinbirkett
+ms.author: colinbirkett
+ms.reviewer: colinbirkett
 ---
 
 # What's new in Dynamics 365 Customer Insights - Data
@@ -16,6 +16,16 @@ We roll out updates on a region-by-region basis. So certain regions might see fe
 
 > [!TIP]
 > To submit and vote on feature requests and product suggestions, go to the [Dynamics 365 Application Ideas portal](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights).
+
+## June 2025
+
+### Public preview
+
+#### Filter rows from source data for better processing** 
+
+Improve the quality of your unified customer profiles and insights by filtering out unwanted rows from your source data directly in Customer Insights - Data. Removing old or incomplete rows that don’t provide value allows Customer Insights - Data to create higher quality insights in less time and saves having to filter out unwanted data in downstream processes.
+
+- [Release plan](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-data/filter-rows-columns-source-data-improved-processing) 
 
 ## October 2024
 
