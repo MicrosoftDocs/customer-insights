@@ -16,7 +16,7 @@ Set up event registration cancellation allows event organizers and attendees to 
 
 - **[Add a cancellation link directly in registration confirmation emails](#add-a-cancel-registration-button-to-event-email)**: Attendees can click the link to access a standalone cancellation page.
 - **Enable self-service cancellation**: Event registration cancellation allows users to cancel their registration without needing to sign in or contact support.
-- [Manually cancel event registrations](#cancel-registration-manuallycancel-registration-manually).
+- [Manually cancel event registrations](#cancel-registration-manually).
 
 ## Add a cancel registration button to event email
 
