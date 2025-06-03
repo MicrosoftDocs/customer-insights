@@ -1,7 +1,7 @@
 ---
 title: New and upcoming features
 description: Discover the latest features, improvements, and bug fixes in Dynamics 365 Customer Insights - Journeys. Stay updated with our monthly release notes.
-ms.date: 06/02/2025
+ms.date: 06/03/2025
 ms.topic: whats-new
 author: colinbirkett
 ms.author: colinbirkett
@@ -30,6 +30,13 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 | App              | GA release      |
 |------------------|-----------------|
 | Customer Insights - Journeys       | 1.1.56329.38  |
+
+#### Real-time journeys transition
+
+- **Message dialogs when creating outbound assets** 
+	- Users will notice new message dialogs in the product whenever they attempt to create a new outbound marketing email, journey, segment, form, page, and more. These message dialogs advise users that outbound will be removed soon. For now, users can dismiss the dialog and continue working in outbound but this will change in the future. Users will also see warning banners when current journeys and events are scheduled to run past Jun 30th, 2025. For more information, see [Real-time journeys transition FAQs](transition-faqs.md).
+
+	:::image type="content" source="media/message-dialogs-outbound-assets.png" alt-text="A message dialog when creating outbound assets." lightbox="media/message-dialogs-outbound-assets.png":::
 
 #### General availability
 
@@ -63,15 +70,6 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 - **Out-of-box cancel registration flow**
 	- Event organizers can now include a Cancel Registration link in confirmation emails, enabling attendees to cancel their registration easily. This automatically updates their status to "Canceled" in the system, giving organizers real-time visibility while simplifying attendee management and improving support for waitlists.
 	- [Docs](set-up-and-manage-waitlist.md)
-
-<!--- NEED TO FIGURE OUT IF THIS STAYS IN ENHANCEMENTS SECTION
-
-- **Message dialogs when creating outbound assets** 
-	- Users will notice new message dialogs in the product whenever they attempt to create a new outbound marketing email, journey, segment, form, page, etc. These message dialogs advise them that outbound will be removed soon. For now, users can dismiss the dialog & continue working in outbound but this will change in the future. They will also see warning banners when current journeys and events are scheduled to run past Jun 30th, 2025.
-	- [Release plan]() 
-	- [Docs]()
-
---->
 
 ### May 2025 update
 
