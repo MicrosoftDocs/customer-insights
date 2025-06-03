@@ -21,7 +21,7 @@ We roll out updates on a region-by-region basis. So certain regions might see fe
 
 ### Public preview
 
-#### Filter rows from source data for better processing** 
+#### Filter rows from source data for better processing
 
 Improve the quality of your unified customer profiles and insights by filtering out unwanted rows from your source data directly in Customer Insights - Data. Removing old or incomplete rows that don’t provide value allows Customer Insights - Data to create higher quality insights in less time and saves having to filter out unwanted data in downstream processes.
 
