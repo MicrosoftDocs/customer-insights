@@ -24,9 +24,11 @@ Organizers can set up a cancellation flow by adding a cancel registration button
 
 To add a cancel registration button to an event registration confirmation email:
 
-1. Add a button element to the email.
-1. Link to "Cancel event registration."
-1. Define if you want the cancel registration linked to a specific event or automatically set for all events.
+1. Add a **Button** element to the email.
+1. Select **Edit link** and link to **Cancel event registration**.
+1. Define if you want the cancel registration linked to a specific event or from another source.
+1. Define the **link alias**.
+1. Select **Insert**.
 
 Once the attendee receives the email and clicks the cancel registration button, a standalone page opens. If this event registration is also linked to sessions, the sessions the attendee signed up for are also listed. Attendees can cancel specific session registrations or the entire event registration. 
 
