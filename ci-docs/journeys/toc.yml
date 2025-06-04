@@ -44,30 +44,32 @@
     items:
     - name: Overview
       href: transition-walkthrough-functional.md
-    - name: Setup changes in real-time journeys
-      href: transition-walkthrough-setup.md
-    - name: Segments
-      href: transition-walkthrough-segments.md
-    - name: Emails, journeys, and assets
-      href: transition-walkthrough-journeys.md
     - name: Consent
       href: transition-walkthrough-consent.md
     - name: Consent management and double opt-in
       href: real-time-marketing-consent-transition.md
-    - name: Marketing pages and forms
-      href: transition-walkthrough-forms.md
+    - name: Customer Voice responses
+      href: transition-walkthrough-customer-voice.md
+    - name: Emails, journeys, and assets
+      href: transition-walkthrough-journeys.md
     - name: Event management
       href: transition-walkthrough-events.md
     - name: Event registration
       href: migrate-event-registration.md
-    - name: Lead management and scoring
-      href: transition-walkthrough-leads.md
     - name: Insights and reports
-      href: transition-walkthrough-insights.md
+      href: transition-walkthrough-insights.md    
+    - name: Lead management and scoring
+      href: transition-walkthrough-leads.md    
+    - name: Marketing pages and forms
+      href: transition-walkthrough-forms.md    
+    - name: Personalization
+      href: transition-walkthrough-personalization.md
+    - name: Segments
+      href: transition-walkthrough-segments.md    
+    - name: Setup changes in real-time journeys
+      href: transition-walkthrough-setup.md
     - name: Social posting and LinkedIn Lead Gen
       href: transition-walkthrough-social-posts.md
-    - name: Customer Voice responses
-      href: transition-walkthrough-customer-voice.md
   - name: Real-time journeys transition FAQs
     href: transition-faqs.md
 - name: Install and manage
@@ -374,6 +376,16 @@
           href: real-time-marketing-journey-designer.md
     - name: Known issues for journeys
       href: journey-known-issues.md
+  - name: Conversational journeys (preview)
+    items:
+    - name: Conversational journeys overview
+      href: conversational-journeys-overview.md
+    - name: Prerequisites for conversational journeys
+      href: conversational-journeys-prerequisites.md
+    - name: Proactive engagement concepts
+      href: proactive-engagement-concepts.md
+    - name: Create conversational journeys
+      href: proactive-engagement-how-to.md
   - name: Event planning and management
     items:
     - name: Event management overview
@@ -402,8 +414,12 @@
         href: invite-register-house-event-attendees.md
       - name: Create an event registration experience
         href: event-registration-experience.md
-      - name: "Preview: Build an event registration portal with Power Pages"
+      - name: Create unmapped fields for registration forms (preview)
+        href: create-unmapped-fields-registration-forms.md
+      - name: Build an event registration portal with Power Pages (preview)
         href: event-portal-template.md
+      - name: Cancel event registration
+        href: cancel-registration.md
     - name: Manage events
       items:
       - name: Manage event sponsorships
@@ -428,8 +444,6 @@
       href: real-time-marketing-form-prefill.md
     - name: "Preview: Create unmapped fields for marketing forms"
       href: real-time-marketing-forms-custom-fields.md
-    - name: "Preview: Create unmapped fields for registration forms"
-      href: create-unmapped-fields-registration-forms.md
     - name: Manage forms
       href: real-time-marketing-manage-forms.md
     - name: Set the default configuration for forms
@@ -556,13 +570,15 @@
       href: developer-push-interactions.md
     - name: Transition Android push notifications to Firebase Cloud Messaging (FCM) tokens
       href: push-notification-fcm-token-transition.md
+    - name: Troubleshoot push notifications setup
+      href: troubleshoot-push-notifications.md
   - name: Extend forms functionality
     items:
     - name: Client-side extensibility for forms
       href: developer/realtime-marketing-form-client-side-extensibility.md
     - name: Capture forms in Customer Insights - Journeys
       href: real-time-marketing-form-capture.md
-    - name: Integrate a custom captcha service with marketing forms
+    - name: Integrate reCAPTCHA service with marketing forms
       href: real-time-marketing-form-custom-captcha.md
     - name: Customize form submission validation
       href: real-time-marketing-form-customize-submission-validation.md
