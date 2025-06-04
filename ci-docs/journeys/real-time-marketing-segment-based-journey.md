@@ -1,7 +1,7 @@
 ---
 title: Create a segment-based journey
 description: Create a segment-based journey in Dynamics 365 Customer Insights - Journeys. Learn how to send announcements and nurture campaigns to your most valuable customers.
-ms.date: 02/24/2025
+ms.date: 06/04/2025
 ms.topic: how-to
 author: alfergus
 ms.author: colinbirkett
@@ -29,7 +29,7 @@ Create a segment of your *Most valuable customers*. You can [create your own con
 - If you choose to use Customer Insights - Data segments, the email and text content must use **Customer Profile** as the audience data for personalization.
 
 > [!Note]
-> Segment publishing requires Create and Write privileges for the msdynmkt_segment entity. Ensure that anyone that requires the ability to create a segment has the necessary permissions.
+> Segment publishing requires *Create* and *Write* privileges for the `msdynmkt_segment entity`. Ensure that anyone who requires the ability to create a segment has the necessary permissions.
 
 ### Create email and text messages
 
