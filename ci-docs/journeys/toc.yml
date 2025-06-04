@@ -330,16 +330,6 @@
         href: real-time-marketing-include-exclude.md
       - name: "Troubleshooting: Segments show incorrect member count"
         href: segment-member-count.md
-    - name: Conversational journeys (preview)
-      items:
-      - name: Conversational journeys overview
-        href: conversational-journeys-overview.md
-      - name: Prerequisites for conversational journeys
-        href: conversational-journeys-prerequisites.md
-      - name: Proactive engagement concepts
-        href: proactive-engagement-concepts.md
-      - name: Create conversational journeys
-        href: proactive-engagement-how-to.md
     - name: Journey goals and A/B testing
       items:
       - name: Set a business goal and measure progress through a journey
@@ -386,6 +376,16 @@
           href: real-time-marketing-journey-designer.md
     - name: Known issues for journeys
       href: journey-known-issues.md
+  - name: Conversational journeys (preview)
+    items:
+    - name: Conversational journeys overview
+      href: conversational-journeys-overview.md
+    - name: Prerequisites for conversational journeys
+      href: conversational-journeys-prerequisites.md
+    - name: Proactive engagement concepts
+      href: proactive-engagement-concepts.md
+    - name: Create conversational journeys
+      href: proactive-engagement-how-to.md
   - name: Event planning and management
     items:
     - name: Event management overview
