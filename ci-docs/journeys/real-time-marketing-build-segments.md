@@ -1,7 +1,7 @@
 ---
 title: Build segments in Customer Insights - Journeys 
 description: Learn how to build segments to use in journeys in Dynamics 365 Customer Insights - Journeys.
-ms.date: 04/07/2025
+ms.date: 06/04/2025
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -45,6 +45,9 @@ In addition to having a segment return its targeting entity (such as contacts or
 > To reference customer measures, Customer Insights - Journeys and Customer Insights - Data must be installed on the same environment.
 
 When adding an attribute that relates to a different table, you can search for the attribute and then define how the two tables are related based on your segment definition. To add an attribute from a related table, you must enable **Track changes** in the related table. For new or existing tables, **Track changes** can be checked from the table properties.
+
+>[!Note]
+> Virtual tables aren't supported in real-time journeys segmentation. The real-time journeys segment designer doesn't show virtual tables in the "Add tables" dialog.
 
 **Example:** Leads whose parent accounts are in the Consumer Services industry.
 
