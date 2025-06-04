@@ -36,6 +36,12 @@ All journeys have a life cycle: they're created and then published. Once publish
 
 :::image type="content" source="media/journeys-overview-states.png" alt-text="Stages of real-time journeys diagram." lightbox="media/journeys-overview-states.png":::
 
+<!--- Updated screenshot that will go live once journey pause/resume feature goes live
+
+:::image type="content" source="media/journeys-overview-states-updated.png" alt-text="Stages of real-time journeys diagram." lightbox="media/journeys-overview-states-updated.png":::
+
+--->
+
 Legend:
 
 1. Automatic transition to the next state when required system actions are complete.

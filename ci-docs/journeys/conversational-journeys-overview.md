@@ -1,5 +1,5 @@
 ---
-title: Conversational journeys overview
+title: Conversational journeys overview (preview)
 description: Learn how conversational journeys in Dynamics 365 Customer Insights combines AI agents and Contact Center to deliver seamless, automated customer interactions.
 ms.date: 05/29/2025
 ms.topic: article
@@ -15,7 +15,7 @@ ms.custom:
   - ai-seo-date:05/27/2025
 ---
 
-# Conversational journeys overview
+# Conversational journeys overview (preview)
 
 [!INCLUDE [Preview banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
@@ -34,5 +34,7 @@ Use these links to learn more about different aspects of conversational journeys
 - [Prerequisites for conversational journeys](conversational-journeys-prerequisites.md)
 - [Conversational journeys concepts](proactive-engagement-concepts.md)
 - [Create conversational journeys](proactive-engagement-how-to.md)
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note.md)]
 
 [!INCLUDE[footer-include](./includes/footer-banner.md)]
