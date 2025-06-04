@@ -1,7 +1,7 @@
 ---
 title: Integrate Sales and Customer Insights - Journeys
 description: An overview of how Dynamics 365 Customer Insights - Journeys can work together with Dynamics 365 Sales to help marketers and salespeople collaborate all the way from inquiry to close.
-ms.date: 08/23/2023
+ms.date: 06/04/2025
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -62,11 +62,10 @@ More information: [Event planning and management](event-management.md)
 
 ## Bring LinkedIn leads into Sales
 
-LinkedIn is a social network that focuses on companies, professionals, and working life. It can be a great source for running targeted campaigns, exploring professional networks, generating new leads, and learning more about your customers. Dynamics 365 Sales offer integrating LinkedIn with Sales initiatives.
-
+LinkedIn is a social network that focuses on companies, professionals, and working life. It can be a great source for running targeted campaigns, exploring professional networks, generating new leads, and learning more about your customers. Dynamics 365 Sales offers integration LinkedIn with Sales initiatives.
 - Dynamics 365 Sales integrates with LinkedIn Sales Navigator, which enables salespeople to get to know their sales contacts even better through their LinkedIn profile information and connections.
 
-These features provide rich opportunities for sales and Customer Insights - Journeys to collaborate while running campaigns and researching markets on LinkedIn. The add/remove contacts feature for salespeople enables them to include promising contacts in segments being used by Customer Insights - Journeys to generate Matched Audiences on LinkedIn. And Salespeople using LinkedIn Sales Navigator can share insights with marketers that can help them design more effective segments and create more appealing Customer Insights - Journeys content.
+These features provide rich opportunities for Sales and Customer Insights - Journeys to collaborate while running campaigns and researching markets on LinkedIn. The add/remove contacts feature for salespeople enables them to include promising contacts in segments being used by Customer Insights - Journeys to generate Matched Audiences on LinkedIn. And Salespeople using LinkedIn Sales Navigator can share insights with marketers that can help them design more effective segments and create more appealing Customer Insights - Journeys content.
 
 More information: [Integrate LinkedIn Sales Navigator solutions for Dynamics 365 Sales](/dynamics365/linkedin/integrate-sales-navigator)
 
