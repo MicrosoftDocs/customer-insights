@@ -416,10 +416,10 @@
         href: event-registration-experience.md
       - name: Create unmapped fields for registration forms (preview)
         href: create-unmapped-fields-registration-forms.md
+      - name: Build an event registration portal with Power Pages (preview)
+        href: event-portal-template.md
       - name: Cancel event registration
         href: cancel-registration.md
-      - name: "Preview: Build an event registration portal with Power Pages"
-        href: event-portal-template.md
     - name: Manage events
       items:
       - name: Manage event sponsorships

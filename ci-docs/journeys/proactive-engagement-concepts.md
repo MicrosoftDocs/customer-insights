@@ -1,5 +1,5 @@
 ---
-title: Conversational journeys concepts
+title: Conversational journeys concepts (preview)
 description: Conversational journeys in Dynamics 365 Customer Insights – Journeys helps you automate personalized customer interactions across channels. Learn key concepts and get started.
 ms.date: 05/29/2025
 ms.topic: article
@@ -15,11 +15,13 @@ ms.custom:
   - ai-seo-date:05/27/2025
 ---
 
-# Conversational journeys concepts
+# Conversational journeys concepts (preview)
 
 [!INCLUDE [Preview banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 Conversational journeys use existing capabilities from Dynamics 365 Customer Insights – Journeys and Dynamics 365 Contact Center. This article introduces several concepts that you use when working with conversational journeys.
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note.md)]
 
 ## Journey
 
