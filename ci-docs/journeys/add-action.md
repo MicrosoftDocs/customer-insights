@@ -83,7 +83,7 @@ You can configure the wait tile using the following parameters:
 
 ##### Wait for a trigger
 
-There are three condition types for the wait for trigger tile. For the first condition type, you can specify to wait until a previous message in your journey gets an interaction. For the second condition type, you can specify a trigger attribute at a specific date and time for your customers. For the third condition type, you can specify to wait until a person or customer becomes a member of a dynamic segment in your journey. For more information on this condition type, see [Wait for segment membership](#wait-for-segment-membership). The wait for trigger configuration is useful for scenarios like appointment reminders, where you can choose to wait one day before the appointment to send a reminder. Date and time information must be included in the trigger that started the journey for the customer.
+There are three condition types for the wait for trigger tile. For the first condition type, you can specify to wait until a previous message in your journey gets an interaction. For the second condition type, you can specify a trigger attribute at a specific date and time for your customers. For the third condition type, you can specify to wait until a person or customer becomes a member of a dynamic segment in your journey. For more information on this condition type, see [Wait for segment membership](#preview-wait-for-segment-membership). The wait for trigger configuration is useful for scenarios like appointment reminders, where you can choose to wait one day before the appointment to send a reminder. Date and time information must be included in the trigger that started the journey for the customer.
 
 ##### Series
 
@@ -101,7 +101,7 @@ The key differences between these two branching methods are:
 
 Wait for trigger branch supports specifying a duration for how long to wait until the desired action is taken. Wait for trigger branching also supports simple two-way branching. This is why the tile is also referred to as an “if/then branch”. 
 
-Attribute branch doesn't have a provision for waiting. Attribute branches use the data available at the time of execution and allow for multiple way branchings.
+Attribute branch doesn't have a provision for waiting. Attribute branches use the data available at the time of execution and allow for multiple-way branchings.
 
 ##### Wait for trigger branch
 
@@ -116,7 +116,7 @@ For example, you can configure the wait tile to wait for the *Email opened* even
 > 
 > Microsoft doesn't provide support for this preview feature. Microsoft Dynamics 365 Technical Support won’t be able to help you with issues or questions. Preview features aren’t meant for production use, especially to process personal data or other data that are subject to legal or regulatory compliance requirements.
 
-The wait for segment membership feature allows for more complex set of actions to take place beyond a single trigger. For example, you may want to create a branch based on how much a customer spent through multiple transactions in a specific period. In this scenario, rather than wait for a specific trigger, you can simply define a dynamic segment such as 'big purchaser' and wait for the customer to become a member of that segment.
+The wait for segment membership feature allows for a more complex set of actions to take place beyond a single trigger. For example, you may want to create a branch based on how much a customer spent through multiple transactions in a specific period. In this scenario, rather than wait for a specific trigger, you can simply define a dynamic segment, such as 'big purchaser' and wait for the customer to become a member of that segment.
 
 ##### Attribute branch
 
