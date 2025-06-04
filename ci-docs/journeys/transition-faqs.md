@@ -1,7 +1,7 @@
 ---
 title: Real-time journeys transition FAQs
 description: Discover how to transition from outbound marketing to real-time journeys in Customer Insights - Journeys. Get answers to frequently asked questions.
-ms.date: 04/14/2025
+ms.date: 06/04/2025
 ms.topic: faq
 author: alfergus
 ms.author: alfergus
@@ -43,7 +43,7 @@ We first announced the removal of outbound marketing in August 2023 and later se
 
 ## What will happen after June 30, 2025? Will outbound marketing stop working?
 
-We'll gradually phase out outbound marketing rather than removing it abruptly. Starting in April and May 2025, users trying to create new outbound marketing emails, journeys, segments, forms, or events will see a message dialog advising them to use real-time journeys instead and informing them of the upcoming removal of outbound marketing. Initially, users can dismiss the dialog and continue creating outbound marketing objects. However, starting in July 2025, the dialog becomes non-dismissible and will block users from creating new outbound marketing content. Existing journeys, segments, forms, and events will continue to work. Unused segments won't be evaluated and in-use segments will be evaluated less frequently. Outbound marketing support will be limited to critical issues only. As outbound marketing usage declines and eventually stops, we'll hide it from the interface and then remove it completely. See also [What will happen to outbound tables and data when outbound marketing is removed?](transition-faqs.md#what-will-happen-to-outbound-tables-and-data-when-outbound-marketing-is-removed).
+We'll gradually phase out outbound marketing. Starting in June 2025, users attempting to create new outbound marketing emails, journeys, segments, forms, or events will see a message dialog advising them to use real-time journeys instead and informing them of the upcoming removal of outbound marketing. Initially, users can dismiss the dialog and continue creating outbound marketing objects. However, in the near future (the date will be decided based on outbound marketing usage data), this dialog will become non-dismissible and will block users from creating new outbound marketing content. Existing journeys, segments, forms, and events will continue to function. Unused segments won't be evaluated, and in-use segments may be evaluated less frequently. Outbound marketing support may be limited to critical issues only. As outbound marketing usage declines and eventually stops, we'll hide it from the interface and then remove it completely. Banner messages will be displayed before these actions are taken.  The decision to hide (and later, remove) outbound marketing will be taken automatically by the system and will occur at different times for each customer. Until outbound marketing is hidden, you'll be able to use it to access existing campaigns, events, forms, or reports. Once it's hidden, the data will still be present, but you may not be able to access it from the user interface. See also [What will happen to outbound tables and data when outbound marketing is removed?](transition-faqs.md#what-will-happen-to-outbound-tables-and-data-when-outbound-marketing-is-removed).
 
 ## What will happen to outbound tables and data when outbound marketing is removed?
 
