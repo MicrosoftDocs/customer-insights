@@ -33,8 +33,8 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 
 #### Real-time journeys transition
 
-- **Message dialogs when creating outbound assets** 
-	- Users will notice new message dialogs in the product whenever they attempt to create a new outbound marketing email, journey, segment, form, page, and more. These message dialogs advise users that outbound will be removed soon. For now, users can dismiss the dialog and continue working in outbound but this will change in the future. Users will also see warning banners when current journeys and events are scheduled to run past Jun 30th, 2025. For more information, see [Real-time journeys transition FAQs](transition-faqs.md).
+- **Message dialogs when creating outbound assets**
+	- Users will notice new message dialogs in the product whenever they attempt to create a new outbound marketing email, journey, segment, form, page, and more. These message dialogs advise users that outbound marketing will be removed soon. For now, users can dismiss the dialog and continue working in outbound marketing, but this will change in the future. Users will also see warning banners when current journeys and events are scheduled to run past June 30, 2025. For more information, see [Real-time journeys transition FAQs](transition-faqs.md).
 
 #### General availability
 
@@ -47,7 +47,7 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 
 #### Public preview
 
-- **Transform your outreach with custom-built AI agent powered voice conversations** 
+- **Transform your outreach with custom-built AI agent-powered voice conversations** 
 	- Brands are constantly looking for ways to anticipate customer needs and connect with them on the channels that is the most appropriate for the message engagement. By integrating Customer Insights - Journeys with Contact Center, you can leverage custom-built AI agents to deliver meaningful, hyper-personalized conversational voice calls that boost customer satisfaction and engagement.  For example, you can alert a customer about a flight delay via a voice call where the custom-built AI agent engages them in a natural language conversation to inform them about the issue and offer solutions such as reschedule or refund. The results of the conversation then drive the next action in the journey, whether that’s rescheduling the flight, issuing the refund, or sending an email because there was no answer.
 	- [Docs](conversational-journeys-overview.md) 
 	- [Blog](https://aka.ms/AI-Powered-Convos)
@@ -66,7 +66,7 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 #### Monthly enhancements
 
 - **Out-of-box cancel registration flow**
-	- Event organizers can now include a Cancel Registration link in confirmation emails, enabling attendees to cancel their registration easily. This automatically updates their status to "Canceled" in the system, giving organizers real-time visibility while simplifying attendee management and improving support for waitlists.
+	- Event organizers can now include a cancel registration link in confirmation emails, enabling attendees to cancel their registration easily. This automatically updates their status to "Canceled" in the system, giving organizers real-time visibility while simplifying attendee management and improving support for waitlists.
 	- [Docs](cancel-registration.md)
 
 ### May 2025 update
