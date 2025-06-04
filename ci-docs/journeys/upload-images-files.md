@@ -20,6 +20,14 @@ ms.custom:
 > -	[Forms](real-time-marketing-form-overview.md)
 >
 > You can still execute marketing campaigns without using such features by hosting your assets and forms in a content management system of your choice.
+>
+> Sensitive or private data, including CRM records and prefilled forms, is stored exclusively within the geographic region of the customer's environment. This data doesn't leave the region. But certain types of publicly accessible digital assets can be temporarily cached outside the region. These include:
+> -	Images
+> -	Files
+> -	Videos
+> -	HTML forms (only if they're empty and not prefilled with user data)
+> 
+> These assets are cached using a CDN to improve performance. For example, if a contact in the United States accesses an image hosted in a European environment, the image can be temporarily cached on a United States-based CDN server. Only assets that are publicly available through a URL (shared on a website or form) are eligible for CDN caching. 
 
 Shareable assets are critical for meaningful and successful customer experiences. The files you use must be available publicly on the internet so your emails and pages can access and display them. The Dynamics 365 Customer Insights - Journeys library stores images, documents, and videos, hosting them publicly and providing an easy way to find and link to them while creating content. The library is shared across real-time and outbound marketing, making it easy to upload and use assets where you need them. 
 
