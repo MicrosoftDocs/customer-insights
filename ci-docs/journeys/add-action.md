@@ -1,7 +1,7 @@
 ---
 title: Add an action in a journey
 description: An overview of possible actions you can do in a journey in Dynamics 365 Customer Insights - Journeys.
-ms.date: 02/20/2025
+ms.date: 06/04/2025
 ms.topic: article
 author: colinbirkett
 ms.author: colinbirkett
@@ -21,9 +21,9 @@ To get to the Add an action dashboard, go to Customer Insights - Journeys > **Jo
 
 Within real-time journeys, you can launch various actions. Some of these actions include sending messages, channel optimization, condition actions, audience splitting, and more.
 
-:::image type="content" source="media/journeys-actions.png" alt-text="An overview of all possible actions in a journey." lightbox="media/journeys-actions.png":::
+:::image type="content" source="media/voice-conversation-tile.png" alt-text="An overview of all possible actions in a journey." lightbox="media/journeys-actions.png":::
 
-The main actions are grouped under [messages](#messages), [AI-powered actions](#ai-powered-actions), [conditions](#conditions), [activities](#activities), and [connectors](#connectors). You can see all available actions under each section below.
+The main actions are grouped under [messages](#messages), [AI-powered conversations](#ai-powered-conversations-preview) (preview), [AI-powered actions](#ai-powered-actions), [conditions](#conditions), [activities](#activities), and [connectors](#connectors). You can see all available actions under each section below.
 
 ### Messages
 
@@ -44,6 +44,14 @@ You can send push notifications. Push messages allow you to quickly convey offer
 ##### Other channel
 
 You can also send messages through custom channels to capture customers' attention. For more information, see [create custom channels](real-time-marketing-create-custom-channels.md).
+
+### AI-powered conversations (preview)
+
+Customer Insights - Journeys offers the ability to integrate with Contact Center to enable conversation-based communications with your customers. 
+
+##### Voice conversation (preview)
+
+You can make personalized phone calls using Contact Center, powered by human agents or Copilot Studio agents, and send the outcomes back to Customer Insights - Journeys for branching. This is only available if the [conversational journeys](conversational-journeys-overview.md) feature is enabled.
 
 ### AI-powered actions
 
@@ -75,7 +83,7 @@ You can configure the wait tile using the following parameters:
 
 ##### Wait for a trigger
 
-There are three condition types for the wait for trigger tile. For the first condition type, you can specify to wait until a previous message in your journey gets an interaction. For the second condition type, you can specify a trigger attribute at a specific date and time for your customers. For the third condition type, you can specify to wait until a person or customer becomes a member of a dynamic segment in your journey. For more information on this condition type, see [Wait for segment membership](#wait-for-segment-membership). The wait for trigger configuration is useful for scenarios like appointment reminders, where you can choose to wait one day before the appointment to send a reminder. Date and time information must be included in the trigger that started the journey for the customer.
+There are three condition types for the wait for trigger tile. For the first condition type, you can specify to wait until a previous message in your journey gets an interaction. For the second condition type, you can specify a trigger attribute at a specific date and time for your customers. For the third condition type, you can specify to wait until a person or customer becomes a member of a dynamic segment in your journey. For more information on this condition type, see [Wait for segment membership](#preview-wait-for-segment-membership). The wait for trigger configuration is useful for scenarios like appointment reminders, where you can choose to wait one day before the appointment to send a reminder. Date and time information must be included in the trigger that started the journey for the customer.
 
 ##### Series
 
@@ -93,7 +101,7 @@ The key differences between these two branching methods are:
 
 Wait for trigger branch supports specifying a duration for how long to wait until the desired action is taken. Wait for trigger branching also supports simple two-way branching. This is why the tile is also referred to as an “if/then branch”. 
 
-Attribute branch doesn't have a provision for waiting. Attribute branches use the data available at the time of execution and allow for multiple way branchings.
+Attribute branch doesn't have a provision for waiting. Attribute branches use the data available at the time of execution and allow for multiple-way branchings.
 
 ##### Wait for trigger branch
 
@@ -108,7 +116,7 @@ For example, you can configure the wait tile to wait for the *Email opened* even
 > 
 > Microsoft doesn't provide support for this preview feature. Microsoft Dynamics 365 Technical Support won’t be able to help you with issues or questions. Preview features aren’t meant for production use, especially to process personal data or other data that are subject to legal or regulatory compliance requirements.
 
-The wait for segment membership feature allows for more complex set of actions to take place beyond a single trigger. For example, you may want to create a branch based on how much a customer spent through multiple transactions in a specific period. In this scenario, rather than wait for a specific trigger, you can simply define a dynamic segment such as 'big purchaser' and wait for the customer to become a member of that segment.
+The wait for segment membership feature allows for a more complex set of actions to take place beyond a single trigger. For example, you may want to create a branch based on how much a customer spent through multiple transactions in a specific period. In this scenario, rather than wait for a specific trigger, you can simply define a dynamic segment, such as 'big purchaser' and wait for the customer to become a member of that segment.
 
 ##### Attribute branch
 
