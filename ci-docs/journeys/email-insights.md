@@ -1,7 +1,7 @@
 ---
 title: Email insights
 description: How to access and interpret email insights in Dynamics 365 Customer Insights - Journeys.
-ms.date: 11/15/2024
+ms.date: 06/04/2025
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -59,12 +59,12 @@ Unlock valuable insights into your email's URL engagement and make data-driven d
 Click map is a fast and visual way to understand customer engagement based on your email design. At a glance, the heatmap colors and link ranking display the most interacted areas. Choose to display or hide the heatmap for better visualization.
 
 - Gain deeper insights into which links receive the most and least engagement by filtering the list of links based on click-through, total clicks, and unique clicks.
-- Toggle between all devices, desktop or mobile (includes any other types of devices) to visualize insights on interactions for each device type. Please note that the option to view insights for "all devices" together is only available if the email sections are identical across all devices. If there are any differences, such as adding or removing a section on either mobile or desktop, the "all devices" view won't be available.
-- Click on a link within the list to see its location on the email design or hover over your links on the design to display the interactions data. Links with 0 interactions are not included in the list they only display by hovering on the email design.
-- The heatmap supports email variations. Compare the performance of different email variations and identify which elements resonate most with your audience. Select and search for a variation using the dropdown. To easily compare several variations, we recommend opening them in a different tab and comparing them by splitting screen.
-- For reporting purposes, you can zoom in specific parts of your email or zoom out to take a screenshot of the full click map and download an excel list of the clicks’ insights. 
+- Toggle between all devices, desktop or mobile (including any other types of devices), to visualize interaction insights for each device type. The option to view insights for all devices together is only available if the email sections are identical across all devices. If there are any differences, such as adding or removing a section on either mobile or desktop, the "all devices" view isn't available.
+- Select a link within the list to see its location on the email design, or hover over your links on the design to display the interaction data. Links with zero interactions aren't included in the list; they only display by hovering over the email design.
+- The heatmap supports email variations. Compare the performance of different email variations and identify which elements resonate most with your audience. Select and search for a variation using the dropdown. To easily compare several variations, we recommend opening them in a different tab and comparing them by splitting the screen.
+- For reporting purposes, you can zoom in on specific parts of your email or zoom out to take a screenshot of the full click map and download an Excel list of the click insights. 
 
-Using the click map insights, you can optimize your content placement, layout, and design, to boost customer engagement.
+Using the click map insights, you can optimize your content placement, layout, and design to boost customer engagement.
 
 :::image type="content" source="media/email-insights-click-map.png" alt-text="Screenshot of email insights click map dashboard." lightbox="media/email-insights-click-map.png":::
 
