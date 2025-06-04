@@ -1,7 +1,7 @@
 ---
 title: Add an action in a journey
 description: An overview of possible actions you can do in a journey in Dynamics 365 Customer Insights - Journeys.
-ms.date: 02/20/2025
+ms.date: 06/04/2025
 ms.topic: article
 author: colinbirkett
 ms.author: colinbirkett
@@ -21,9 +21,9 @@ To get to the Add an action dashboard, go to Customer Insights - Journeys > **Jo
 
 Within real-time journeys, you can launch various actions. Some of these actions include sending messages, channel optimization, condition actions, audience splitting, and more.
 
-:::image type="content" source="media/journeys-actions.png" alt-text="An overview of all possible actions in a journey." lightbox="media/journeys-actions.png":::
+:::image type="content" source="media/voice-conversation-tile.png" alt-text="An overview of all possible actions in a journey." lightbox="media/journeys-actions.png":::
 
-The main actions are grouped under [messages](#messages), [AI-powered actions](#ai-powered-actions), [conditions](#conditions), [activities](#activities), and [connectors](#connectors). You can see all available actions under each section below.
+The main actions are grouped under [messages](#messages), [AI-powered conversations](#ai-powered-conversations-preview) (preview), [AI-powered actions](#ai-powered-actions), [conditions](#conditions), [activities](#activities), and [connectors](#connectors). You can see all available actions under each section below.
 
 ### Messages
 
@@ -44,6 +44,14 @@ You can send push notifications. Push messages allow you to quickly convey offer
 ##### Other channel
 
 You can also send messages through custom channels to capture customers' attention. For more information, see [create custom channels](real-time-marketing-create-custom-channels.md).
+
+### AI-powered conversations (preview)
+
+Customer Insights - Journeys offers the ability to integrate with Contact Center to enable conversation-based communications with your customers. 
+
+##### Voice conversation (preview)
+
+You can make personalized phone calls using Contact Center, powered by human agents or Copilot Studio agents, and send the outcomes back to Customer Insights - Journeys for branching. This is only available if the [conversational journeys](conversational-journeys-overview.md) feature is enabled.
 
 ### AI-powered actions
 
