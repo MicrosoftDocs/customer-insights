@@ -1,7 +1,7 @@
 ---
 title: Transition emails, journeys, and assets
 description: Transition your emails, journeys, and assets to real-time journeys in Dynamics 365 Customer Insights - Journeys. Follow our guide to ensure a smooth transition.
-ms.date: 05/09/2025
+ms.date: 06/04/2025
 ms.topic: article
 author: alfergus
 ms.author: colinbirkett
@@ -55,12 +55,11 @@ The features listed below may be of interest as you transition from outbound mar
 
 ### Email
 
-- **Email A/B testing & Multivariant**: Compare and test variations of your emails on different subsets of your recipients and analyze how they interact with each to determine which variation performs better. 
+- **Email A/B testing and multivariant**: Compare and test variations of your emails on different subsets of your recipients and analyze how they interact with each to determine which variation performs better. 
+  - *Guidance:* We don't have a published roadmap. You can create emails for each variation and [use A/B tests at the journey level](real-time-marketing-ab-tests-in-marketing-journeys.md).
 
-*Guidance:* We do not have a published roadmap. You can create emails for each variation and [use A/B tests at the journey level](https://learn.microsoft.com/en-us/dynamics365/customer-insights/journeys/real-time-marketing-ab-tests-in-marketing-journeys)
--  **Email address can only be from Contact/Lead**: Emails can only be sent to email addresses in contact and leads.
-
-*Guidance:* We do not plan to support sending to other email address. [Use CC (carbon copy) field](https://learn.microsoft.com/en-us/dynamics365/customer-insights/journeys/real-time-marketing-add-cc-recipients) where you can use personalization select email address from any related table of contact/lead.
+- **Email address can only be from Contact/Lead**: Emails can only be sent to email addresses in contacts and leads.
+  - *Guidance:* We don't plan to support sending to other email addresses. [Use the CC (carbon copy) field](real-time-marketing-add-cc-recipients.md), where you can use personalization to select an email address from any table related to contacts or leads.
 
 ### Journeys
 
