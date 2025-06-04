@@ -194,7 +194,16 @@ No. If it's the same segment, we overwrite the previously migrated segment. This
 
 Our focus is on closing the feature gaps in real-time journeys compared to outbound marketing. While we recognize the importance of broader coverage, we can't currently prioritize enhancements to the tool's coverage.
 
+### After the deprecation of outbound marketing, what happens to my segment templates?
+
+While we won't remove any segment templates, marketers won't be able to create new segments using outbound marketing segment templates. Marketers can use the templates for lookup and refer to them while building real-time journeys segments. Segment templates aren't available in real-time journeys and aren't considered a blocking feature. Marketers who wish to use or recreate segment templates can save a segment they wish to use as a template, create a copy, and use it (with or without modifications) for a campaign.
+
+### Will the removal of outbound marketing affect the usage of Customer Insights - Data segments in real-time journeys?
+
+Once outbound marketing is removed, customers have two options to use Customer Insights - Data segments in real-time journeys:
+1. **Use Customer Insights - Data segments directly in real-time journeys**: Here, marketers can leverage existing Customer Insights - Data profile attributes and measures (in addition to Dataverse tables related to contacts) without additional work as long as [COLA Stamping] [unified-profile-segment-creation.md] is enabled. These are segments of profiles (not contacts) and, hence, marketers can only orchestrate on profiles.
+1. **Create contact-based segments in real-time journeys directly with related tables in Dataverse**: Marketers can build a contact segment in real-time journeys and use any related table in Dataverse like before, but they can't use any Customer Insights - Data information in the segment.
+
 [!INCLUDE [transition-comments](./includes/transition-comments.md)]
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
-
