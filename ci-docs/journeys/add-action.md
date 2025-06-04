@@ -1,7 +1,7 @@
 ---
 title: Add an action in a journey
 description: An overview of possible actions you can do in a journey in Dynamics 365 Customer Insights - Journeys.
-ms.date: 05/29/2025
+ms.date: 06/04/2025
 ms.topic: article
 author: colinbirkett
 ms.author: colinbirkett
@@ -51,7 +51,7 @@ Customer Insights - Journeys offers the ability to integrate with Contact Center
 
 ##### Voice conversation (preview)
 
-You can make a personalized phone call using Contact Center, powered by human agents or Copilot Studio agents, and send the outcomes back to Customer Insights - Journeys for branching. This is only available if the [conversational journeys](conversational-journeys-overview.md) feature is enabled.
+You can make personalized phone calls using Contact Center, powered by human agents or Copilot Studio agents, and send the outcomes back to Customer Insights - Journeys for branching. This is only available if the [conversational journeys](conversational-journeys-overview.md) feature is enabled.
 
 ### AI-powered actions
 
