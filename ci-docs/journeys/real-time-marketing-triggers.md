@@ -1,7 +1,7 @@
 ---
 title: Customer Insights - Journeys triggers 
 description: Learn about triggers in Dynamics 365 Customer Insights - Journeys.
-ms.date: 12/14/2023
+ms.date: 06/04/2025
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -32,11 +32,13 @@ Customer Insights - Journeys offers three types of triggers in the triggers cata
 
 Custom triggers are defined by Customer Insights - Journeys users. Custom triggers provide a flexible way to capture any customer action or significant business event.
 
-For more information including important notes about security for custom triggers, see [Custom triggers in Customer Insights - Journeys](real-time-marketing-custom-triggers.md).
+For more information, including important notes about security for custom triggers, see [Custom triggers in Customer Insights - Journeys](real-time-marketing-custom-triggers.md).
 
 ### Interaction triggers
 
-Interaction triggers represent customer interactions with journey elements such as email, text message, and push channels. Interaction triggers, today, can't start or stop journeys; some of them are used within the journey and represent a logical continuation of a preceding step. For example, when a journey sends an email message, a set of triggers such as *Email Link Clicked* or *Email Opened* becomes available to journey authors, allowing them to make decisions about possible next steps.
+Interaction triggers represent customer interactions with journey elements such as email, text message, and push channels. Interaction triggers can be used to start journeys, can be used within the journey, and represent a logical continuation of a preceding step. For example, when a journey sends an email message, triggers such as *Email Link Clicked* or *Email Opened* become available to journey authors, allowing them to make decisions about possible next steps.
+
+All interaction triggers across various channels, such as email, SMS, and push, can be used in a journey, either for starting the journey or branching on a journey.
 
 ### Business triggers
 
