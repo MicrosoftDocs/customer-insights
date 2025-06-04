@@ -1,5 +1,5 @@
 ---
-title: Create conversational journeys
+title: Create conversational journeys (preview)
 description: Conversational journeys in Dynamics 365 Customer Insights let you design voice call experiences using Contact Center integration. Learn how to set up and branch journeys.
 ms.date: 05/29/2025
 ms.topic: article
@@ -15,7 +15,7 @@ ms.custom:
   - ai-seo-date:05/27/2025
 ---
 
-# Create conversational journeys
+# Create conversational journeys (preview)
 
 [!INCLUDE [Preview banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
@@ -27,6 +27,8 @@ The integration with Contact Center lets you create conversational journeys by s
 
 > [!IMPORTANT]
 > Conversational journeys work only with **contact-based** journeys.
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note.md)]
 
 ## Using the Voice conversation tile and branching on its outcomes
 

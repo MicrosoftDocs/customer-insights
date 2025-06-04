@@ -1,5 +1,5 @@
 ---
-title: Prerequisites for conversational journeys
+title: Prerequisites for conversational journeys (preview)
 description: 'Prerequisites for conversational journeys: Discover the required products and steps to use Dynamics 365 Customer Insights - Journeys and Contact Center.'
 ms.date: 05/29/2025
 ms.topic: article
@@ -15,11 +15,13 @@ ms.custom:
   - ai-seo-date:05/27/2025
 ---
 
-# Prerequisites for conversational journeys
+# Prerequisites for conversational journeys (preview)
 
 [!INCLUDE [Preview banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 To use conversational journeys, you need Dynamics 365 Customer Insights - Journeys and Dynamics 365 Contact Center. If you want to use AI agents, you also need Microsoft Copilot Studio.
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note.md)]
 
 ## Licensing information
 
