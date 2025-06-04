@@ -2,7 +2,7 @@
 title: Business units FAQs for real-time journeys
 description: Business units FAQ for Dynamics 365 Customer Insights - Journeys.
 ms.date: 10/24/2023
-ms.topic: article
+ms.topic: faq
 author: alfergus
 ms.author: alfergus
 search.audienceType: 

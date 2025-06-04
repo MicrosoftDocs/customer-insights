@@ -1,8 +1,8 @@
 ---
 title: Known issues in Customer Insights - Journeys with mitigations
 description: Learn about known issues in Customer Insights - Journeys and how to work around them.
-ms.date: 03/07/2025
-ms.topic: article
+ms.date: 05/27/2025
+ms.topic: troubleshooting-known-issue
 author: alfergus
 ms.author: alfergus
 search.audienceType: 
@@ -18,7 +18,7 @@ As we continue to work on Customer Insights - Journeys and refine the experience
 ## Analytics
 
 - Analytics for a journey can take up to 6-12 hours to show up.
-- Occasionally events are dropped before they can get to analytics. This can cause issues in the analytics reporting where customers are shown to be in a ‘processing’ state much after a journey has been completed. We're working on a solution to improve this.
+- Occasionally, events may be duplicated when saved in analytics. This can lead to inconsistencies in reporting, such as customers appearing multiple times in the interaction details or remaining in a "processing" state well after the journey has completed.
 - Some strings in the out-of-the-box Power BI aggregated analytics dashboards aren’t localized.
 - Business units aren't supported in the out-of-the-box Power BI aggregated analytics dashboards.
 - If there's an email remote bounce, the contact/lead timeline might display two "email delivered" interactions for the same message with the same time stamp despite no message being delivered to the contact/lead email address. This is because the second interaction is intended to "erase" the first one. However, this isn't currently being handled in the timeline.

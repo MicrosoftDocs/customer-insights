@@ -2,7 +2,7 @@
 title: Troubleshoot email issues
 description: Describes how to troubleshoot issues with email in Dynamics 365 Customer Insights - Journeys.
 ms.date: 08/18/2023
-ms.topic: article
+ms.topic: troubleshooting-general
 author: alfergus
 ms.author: alfergus
 search.audienceType: 

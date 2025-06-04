@@ -2,7 +2,7 @@
 title: Configure lead scoring options in outbound marketing
 description: Use the Lead scoring page in the Settings work area to configure a few basic options that control how automatic lead scoring works on your instance in outbound marketing.
 ms.date: 08/21/2023
-ms.topic: article
+ms.topic: how-to
 author: alfergus
 ms.author: alfergus
 search.audienceType: 

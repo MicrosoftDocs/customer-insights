@@ -2,7 +2,7 @@
 title: Deploy pages that contain Customer Insights - Journeys forms
 description: Learn how Customer Insights - Journeys forms are deployed on Power Pages and other destinations.
 ms.date: 08/22/2023
-ms.topic: article
+ms.topic: install-set-up-deploy
 author: petkra
 ms.author: petkra
 search.audienceType: 

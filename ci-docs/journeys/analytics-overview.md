@@ -2,7 +2,7 @@
 title: Analytics overview in Customer Insights - Journeys
 description: An overview of how analytics works in Dynamics 365 Customer Insights - Journeys.
 ms.date: 12/22/2023
-ms.topic: article
+ms.topic: concept-article
 author: alfergus
 ms.author: alfergus
 search.audienceType: 

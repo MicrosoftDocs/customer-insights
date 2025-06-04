@@ -2,7 +2,7 @@
 title: Event management in outbound marketing overview
 description: An overview of event-management features (including planning, logistics, sponsors, speakers, promotion, and registration) in outbound marketing.
 ms.date: 02/06/2025
-ms.topic: article
+ms.topic: concept-article
 author: alfergus
 ms.author: alfergus
 search.audienceType: 

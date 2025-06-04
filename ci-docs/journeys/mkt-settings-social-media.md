@@ -2,7 +2,7 @@
 title: Configure and authenticate social media accounts in outbound marketing
 description: Configure and authenticate each social media account where you'd like to author, schedule, and post updates in the outbound marketing area of Dynamics 365 Customer Insights - Journeys.
 ms.date: 08/12/2024
-ms.topic: article
+ms.topic: how-to
 author: alfergus
 ms.author: alfergus
 search.audienceType: 

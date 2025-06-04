@@ -1,7 +1,7 @@
 ---
 title: Transition emails, journeys, and assets
 description: Transition your emails, journeys, and assets to real-time journeys in Dynamics 365 Customer Insights - Journeys. Follow our guide to ensure a smooth transition.
-ms.date: 04/29/2025
+ms.date: 06/04/2025
 ms.topic: article
 author: alfergus
 ms.author: colinbirkett
@@ -30,7 +30,7 @@ While reviewing the imported emails, it's worth considering whether you should s
 
 You can use the same tool to import email templates. To import templates, go to the email templates area in the real-time journeys email editor and select the **Import template** option.
 
-**Known limitations when importing emails with content blocks**: When importing emails with the *Import content blocks used in the selected emails* option selected, each email re-imports the associated content block(s), overriding any existing version. This results in the loss of any modifications made to the imported content blocks in Real-time marketing (RTM).
+**Known limitations when importing emails with content blocks**: When you import emails with the *Import content blocks used in the selected emails* option selected, each email reimports the associated content block(s), overriding any existing version. This results in the loss of any modifications made to the imported content blocks in Real-time marketing (RTM).
 
 > [!TIP]
 > To avoid unintended overwrites, import the content block first along with all related emails before making any modifications. The content block dependency from outbound marketing is stored in the `msdynmkt_obmmigrationinfo` column within the `msdynmkt_fragment` table. Clearing this value prevents automatic overwriting during imports.
@@ -41,23 +41,24 @@ Journeys in real-time journeys are the equivalent to customer journeys in outbou
 
 Using quiet times, you can control when messages get delivered, increasing engagement and meeting customer preferences. Quiet times allow you to comply with regulations by only reaching customers at their preferred times or by preventing nighttime, weekend, or holiday deliveries. For more information, see [Improve communication timing by setting up quiet times](real-time-marketing-quiet-times.md).
 
-Journey end dates behave differently in real-time journeys. In outbound marketing, if a journey had a set end date, customers who already entered the journey would stop and not finish the journey. In real-time journeys, customers who have already entered the journey after the end date complete the journey but no new customers are allowed to enter the journey.
-
-Send at a specific time (i.e., 'Smart scheduling') has no equivalent in real-time journeys. 
+Journey end dates behave differently in real-time journeys. In outbound marketing, if a journey had a set end date, customers who already entered the journey would stop and not finish the journey. In contrast, in real-time journeys, customers who have already entered the journey complete the journey even if this takes them past the end date. However, no new customers are allowed to enter the journey after the end-date.
+ 
+Send at a specific time (that is, 'Smart scheduling') has no equivalent in real-time journeys. 
 
 ## Asset library
 
 No migration of the asset library should be needed. If you're using the outbound marketing asset library, the same asset library is used by real-time journeys, so you can continue to use all previously uploaded assets. If you're using an external asset library, the process remains the same (get the URL of the asset from the external library and insert it in your messages).
 
-## Relevant upcoming features
+## Relevant upcoming features or workaround in real time
 
 The features listed below may be of interest as you transition from outbound marketing to real-time journeys. These features provide parity, equivalent, or better functionality than what was available in outbound marketing.
 
 ### Email
 
-- **View email in browser**: With varied display formats across email providers, your emails can sometimes be displayed incorrectly. "View in Browser" in real-time journeys allows your customers to see your emails exactly as you created them. For more information, see [Enhance email engagement by allowing browser viewing](/dynamics365/release-plan/2023wave2/marketing/dynamics365-marketing/enhance-email-engagement-allowing-viewing-browsers).
-- **Email A/B testing**: Use email A/B testing in real-time journeys to compare and test variations of your emails on different subsets of your recipients to determine which variation performs best. Easily create alternate email versions by changing elements such as subject, body, or from address and optimize content for your audience. For more information, see [Optimize engagement, increase conversion rates with email A/B testing](/dynamics365/release-plan/2023wave2/marketing/dynamics365-marketing/optimize-engagement-increase-conversion-rates-email-ab-testing).
-- **Orchestrate across multiple email address contact points**: Maximize customer reach, choose the right email address for each journey. Now, whether it's a contact’s work or personal email address, you have full control over where your messages are delivered, ensuring they’re seen where customers are most likely to take action. For more information, see [Ensure messages go to the right contact email address](/dynamics365/release-plan/2023wave2/marketing/dynamics365-marketing/ensure-messages-go-right-contact-email-address).
+- **Email A/B testing and multivariant**: Compare and test variations of your emails on different subsets of your recipients and analyze how they interact with each to determine which variation performs better. 
+  - *Guidance:* We don't have a published roadmap. You can create emails for each variation and [use A/B tests at the journey level](real-time-marketing-ab-tests-in-marketing-journeys.md).
+- **Email address can only be from Contact/Lead**: Emails can only be sent to email addresses in contacts and leads.
+  - *Guidance:* We don't plan to support sending to other email addresses. [Use the CC (carbon copy) field](real-time-marketing-add-cc-recipients.md), where you can use personalization to select an email address from any table related to contacts or leads.
 
 ### Journeys
 

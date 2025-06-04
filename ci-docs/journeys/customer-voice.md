@@ -2,7 +2,7 @@
 title: Add surveys to your campaigns
 description: Learn how to create surveys in Dynamics 365 Customer Insights - Journeys using Microsoft Dynamics 365 Customer Voice.
 ms.date: 08/06/2024
-ms.topic: article
+ms.topic: how-to
 author: alfergus
 ms.author: alfergus
 search.audienceType: 

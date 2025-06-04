@@ -1,7 +1,7 @@
 ---
-title: Create unmapped fields for registration forms
+title: Create unmapped fields for registration forms (preview)
 description: Learn how create unmapped fields for registration forms in Dynamics 365 Customer Insights - Journeys. 
-ms.date: 05/05/2025
+ms.date: 06/03/2025
 ms.topic: article
 author: colinbirkett
 ms.author: colinbirkett
@@ -11,17 +11,16 @@ search.audienceType:
   - enduser
 ---
 
-# Preview: Create unmapped fields for registration forms
+# Create unmapped fields for registration forms (preview)
 
-> [!IMPORTANT]
-> A preview feature is a feature that is not complete, but is made available before it’s officially in a release so customers can get early access and provide feedback. Preview features aren’t meant for production use and may have limited or restricted functionality.
-> 
-> Microsoft doesn't provide support for this preview feature. Microsoft Dynamics 365 Technical Support won’t be able to help you with issues or questions. Preview features aren’t meant for production use, especially to process personal data or other data that are subject to legal or regulatory compliance requirements.
+[!INCLUDE [preview banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 Custom unmapped fields (also known as custom registration fields) allow you to **create and manage personalized questions for event attendees** without affecting the Lead or Contact entity. Custom unmapped fields allow you to collect relevant information for each event, such as dietary preferences, session interests, feedback, and more. You can use the information gathered to customize the communication with your attendees and personalize the event attendee experience. 
 
 > [!TIP] 
 > This article describes custom unmapped fields for event registration forms. For information on custom unmapped fields in marketing forms, see [Create unmapped fields for marketing forms](real-time-marketing-forms-custom-fields.md). 
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note.md)]
 
 ## Creating unmapped form fields for your event  
 

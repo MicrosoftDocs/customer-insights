@@ -2,7 +2,7 @@
 title: Navigate and use common features of outbound marketing
 description: How do get around and work with common user interface elements in outbound marketing.
 ms.date: 08/21/2023
-ms.topic: article
+ms.topic: how-to
 author: alfergus
 ms.author: alfergus
 search.audienceType: 

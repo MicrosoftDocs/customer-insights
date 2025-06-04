@@ -2,7 +2,7 @@
 title: Export data to Word or Excel files
 description: How to export data to a Microsoft Word or Excel document from Dynamics 365 Customer Insights - Journeys.
 ms.date: 08/18/2023
-ms.topic: article
+ms.topic: how-to
 author: alfergus
 ms.author: alfergus
 search.audienceType: 

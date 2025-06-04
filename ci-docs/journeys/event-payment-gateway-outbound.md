@@ -2,7 +2,7 @@
 title: Add a payment gateway to your event website in outbound marketing
 description: Describes how to set up a payment gateway for the event website, so contacts can pay for a ticket while registering in  Dynamics 365 Customer Insights - Journeys.
 ms.date: 11/07/2023
-ms.topic: article
+ms.topic: how-to
 author: alfergus
 ms.author: alfergus
 search.audienceType: 
