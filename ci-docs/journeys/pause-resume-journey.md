@@ -13,7 +13,7 @@ search.audienceType:
 
 # Pause and resume a journey (preview)
 
-[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/file-name.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 The Pause and Resume feature allows marketers to temporarily halt customer journeys in response to unplanned events—without needing to stop and recreate the journey. This helps protect your brand’s reputation and maintain customer trust during sensitive periods such as natural disasters, service outages, or content errors.
 
