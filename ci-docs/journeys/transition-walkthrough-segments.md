@@ -1,7 +1,7 @@
 ---
 title: Migrate segments to real-time journeys
 description: Learn how to use the Segment Migration Solution to migrate segments from outbound marketing to real-time journeys Dynamics 365 Customer Insights - Journeys.
-ms.date: 06/04/2025
+ms.date: 06/05/2025
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
@@ -121,46 +121,12 @@ You see the count of segment members in outbound marketing and decide which segm
 
 Follow these steps to transition your marketing efforts from outbound marketing to real-time journeys. This ensures continuity and lets you use the enhanced capabilities of real-time journeys.
 
-## Guidance on specific capabilities
-
-### Segment Templates
-
-- **Details**: Marketers can accelerate segment creation through templates.
-- **Guidance**: There's no published roadmap for this capability. Create one or more segments to use as templates. Then, use the **Save as** option to create a copy for a campaign.
-
-### Include or exclude up to 200,000 individual members in a static segment
-
-- **Details**: Marketers can include or exclude up to 200,000 members while defining a static segment.
-- **Guidance**: There's no published roadmap for this capability. Either:
-  -  Use marketing lists to build a segment.
-  -  Create a new attribute for the contacts in the segment, then create a query-based dynamic segment using the new attribute.
-
-### View, copy, or paste segment definition query
-
-- **Details**: Marketers can create new segments by copying and pasting segment definition queries from existing segments.
-- **Guidance**: There's no published roadmap for this capability. Create a copy of the segment you want and edit the segment definition.
-
-### Create a segment based on journey participation
-
-- **Details**: Ability to create a segment that includes the audience that is participating in one or more specified journeys.
-- **Guidance**: There's no published roadmap for this capability. Build segments using behavioral attributes specific to the journeys you want (for example, "email delivered" filtered for specific journeys using the *JourneyID* property).
-
-### More than one level of nesting while building composite segments
-
-- **Details**: Real-time journeys allow only one level of nesting when building composite segments.
-- **Guidance**: There's no published roadmap for this capability. Use multiple segments to start or exit the journey and achieve the same outcome without a complex compound segment.
-
-### Using Customer Insights - Data segments in Customer Insights - Journeys
-
-- **Details**: Customer Insights - Data segments can be exported as segments of contacts in outbound marketing that become available in real-time journeys as well. 
-- **Guidance**: When outbound marketing is removed, such exported segments will no longer be available for use in real-time journeys. You can use Customer Insights - Data segments in real-time journeys directly, though they'll be segments of Profiles (not segments of contacts), so journeys and messages need to use Profiles (instead of contacts). You can access profile attributes and measures from Customer Insights - Data for conditions and personalization. If the linking feature is enabled (see [Automatically link Dynamics 365 apps to customer profiles] (/dynamics365/customer-insights/data/integrate-d365-apps)), then you can build segments of contacts in real-time journeys using profile attributes and measures.
-
-## Known limitation of the Segment Migration Solution
+## Known limitations of the Segment Migration Solution
 
 1. Currently, users can't sort or search for the segments they want to migrate to outbound marketing.
 1. Sometimes, users experience a bug when publishing the migrated segments in real-time journeys where, after selecting **Publish** on the final screen, there's an issue with rendering success. The segments are successfully migrated to real-time journeys and published, but users don't get that indication. You can verify this by selecting the **Home** button and seeing the segments show up in the real-time journeys **Segments** pane.
 
-## Frequently asked questions
+## Frequently asked questions about the Segment Migration Solution
 
 ### I have more than 2,000 segments that I want to migrate using this tool. What should I do?
 
@@ -203,6 +169,40 @@ Segment templates aren't removed, but marketers can't create new segments using 
 When outbound marketing is removed, you have two options to use Customer Insights - Data segments in real-time journeys:
 1. **Use Customer Insights - Data segments directly in real-time journeys**: You can use existing Customer Insights - Data profile attributes and measures (in addition to Dataverse tables related to contacts) without extra work if [COLA Stamping] [unified-profile-segment-creation.md] is enabled. These are segments of profiles (not contacts), so you can only orchestrate on profiles.
 1. **Create contact-based segments in real-time journeys directly with related tables in Dataverse**: You can build a contact segment in real-time journeys and use any related table in Dataverse like before, but you can't use any Customer Insights - Data information in the segment.
+
+## Guidance on specific capabilities as you migrate from outbound marketing to real-time journeys
+
+### Segment templates
+
+- **Details**: Marketers can accelerate segment creation through templates.
+- **Guidance**: There's no published roadmap for this capability. Create one or more segments to use as templates. Then, use the **Save as** option to create a copy for a campaign.
+
+### Include or exclude up to 200,000 individual members in a static segment
+
+- **Details**: Marketers can include or exclude up to 200,000 members while defining a static segment.
+- **Guidance**: There's no published roadmap for this capability. Either:
+  -  Use marketing lists to build a segment.
+  -  Create a new attribute for the contacts in the segment, then create a query-based dynamic segment using the new attribute.
+
+### View, copy, or paste segment definition query
+
+- **Details**: Marketers can create new segments by copying and pasting segment definition queries from existing segments.
+- **Guidance**: There's no published roadmap for this capability. Create a copy of the segment you want and edit the segment definition.
+
+### Create a segment based on journey participation
+
+- **Details**: Ability to create a segment that includes the audience that is participating in one or more specified journeys.
+- **Guidance**: There's no published roadmap for this capability. Build segments using behavioral attributes specific to the journeys you want (for example, "email delivered" filtered for specific journeys using the *JourneyID* property).
+
+### More than one level of nesting while building composite segments
+
+- **Details**: Real-time journeys allow only one level of nesting when building composite segments.
+- **Guidance**: There's no published roadmap for this capability. Use multiple segments to start or exit the journey and achieve the same outcome without a complex compound segment.
+
+### Using Customer Insights - Data segments in Customer Insights - Journeys
+
+- **Details**: Customer Insights - Data segments can be exported as segments of contacts in outbound marketing that become available in real-time journeys as well. 
+- **Guidance**: When outbound marketing is removed, such exported segments will no longer be available for use in real-time journeys. You can use Customer Insights - Data segments in real-time journeys directly, though they'll be segments of Profiles (not segments of contacts), so journeys and messages need to use Profiles (instead of contacts). You can access profile attributes and measures from Customer Insights - Data for conditions and personalization. If the linking feature is enabled (see [Automatically link Dynamics 365 apps to customer profiles](/dynamics365/customer-insights/data/integrate-d365-apps)), then you can build segments of contacts in real-time journeys using profile attributes and measures.
 
 [!INCLUDE [transition-comments](./includes/transition-comments.md)]
 
