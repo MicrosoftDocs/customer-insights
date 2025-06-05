@@ -1,7 +1,7 @@
 ---
-title: "Preview: Tailor follow-up strategies by leveraging multiple customer actions at once"
+title: Tailor follow-up strategies by leveraging multiple customer actions at once (preview)
 description: Learn how to tailor follow-up strategies by leveraging multiple customer actions in Dynamics 365 Customer Insights - Journeys.
-ms.date: 05/13/2025
+ms.date: 06/04/2025
 ms.topic: article
 author: colinbirkett
 ms.author: colinbirkett
@@ -11,11 +11,15 @@ search.audienceType:
   - enduser
 ---
 
-# Preview: Tailor follow-up strategies by leveraging multiple customer actions at once
+# Tailor follow-up strategies by leveraging multiple customer actions at once (preview)
+
+[!INCLUDE [Preview banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 The multi-interaction branching feature in Customer Insights - Journeys enables marketers to configure journey branches based on diverse customers' responses from a single decision node in a journey. Whether it's an email *bounced*, *blocked*, or a link *selected*, multi-interaction branching allows for more nuanced and intelligent journey design. Marketers can better personalize customer experiences by evaluating several interaction outcomes at once through a single branching condition in a journey.
 
 :::image type="content" source="media/multi-interaction-branching.png" alt-text="Configure journey branches based on multiple customer responses to marketing messages." lightbox="media/multi-interaction-branching.png":::
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note.md)]
 
 ## What are marketing interactions? 
 
@@ -43,7 +47,7 @@ Contoso also runs reactivation campaigns via automated voice calls. If the call 
 
 These use cases illustrate how Contoso Coffee uses multi-interaction branching to deliver personalized, responsive customer experiences across multiple touchpoints. This drives higher engagement, operational efficiency, and customer satisfaction.
 
-[!Note]
-Some customers may notice that not all [interaction triggers][https://learn.microsoft.com/en-us/dynamics365/customer-insights/journeys/real-time-marketing-triggers#interaction-triggers] are showing up when using this feature to make branching decisions on a journey. This is a known issue that is expected to affect certain orgs. Please raise a support ticket with the team for a quick resolution.
+> [!Note]
+> You may notice that not all [interaction triggers][real-time-marketing-triggers.md#interaction-triggers] show up when using this feature to make journey branching decisions. This is a known issue that's expected to affect certain orgs. For a quick resolution, raise a support ticket.
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
