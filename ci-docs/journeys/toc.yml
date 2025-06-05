@@ -280,7 +280,7 @@
          href: journey-start.md
       -  name: Add an action in a journey
          href: add-action.md
-      -  name: "Preview: Tailor follow-up strategies with multi-interaction branching"
+      -  name: Tailor follow-up strategies with multi-interaction branching (preview)
          href: multi-interaction-branching.md
       -  name: End a journey
          href: journey-end.md
