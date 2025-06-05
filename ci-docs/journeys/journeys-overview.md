@@ -1,7 +1,7 @@
 ---
 title: Journeys overview
 description: Learn how to create automated campaigns with real-time journeys in Dynamics 365 Customer Insights - Journeys.
-ms.date: 03/21/2025
+ms.date: 06/05/2025
 ms.topic: overview
 author: alfergus
 ms.author: alfergus
