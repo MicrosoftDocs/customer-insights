@@ -1,7 +1,7 @@
 ---
 title: Email insights
 description: How to access and interpret email insights in Dynamics 365 Customer Insights - Journeys.
-ms.date: 11/15/2024
+ms.date: 06/04/2025
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -15,69 +15,69 @@ search.audienceType:
 
 Email insights provide a deep dive into how your audience interacts with your emails over time and allow you to track the trajectory of delivery rates, open rates, and click-through rates with precision. Beyond delivery and engagement trends, you can evaluate essential email KPIs and access comprehensive delivery and interaction details.
 
-To view email insights, go to **Real-time journeys** > **Email** > **Insights** tab.
+To view email insights, go to **Real-time journeys** > **Email** > **Insights**.
 
 > [!NOTE]
-> Email insights display interaction data for the last 12 months only. However, all historical interaction data is still retained in the data storage.
+> Email insights show interaction data for the last 12 months only. All historical interaction data is still stored.
 
 ## Email delivery and interactions
 
-- **Delivery KPIs**: Gain insights into the delivery rate, number of blocks, and delivery failures for the selected message.
-- **Interactions KPIs**: Evaluate the open rate, click rate, click-to-open rate, number of messages marked as spam, and the count of unsubscriptions related to the selected message.
-- **Delivery trend** and **delivery funnel**: Explore the trends and funnel of sent and delivered interactions, along with unique opens and unique clicks specific to the selected email.
-- **Engagement trend**: Examine the trends for total opens and clicks, providing a comprehensive understanding of the level of engagement associated with the selected email.
+- **Delivery KPIs**: See the delivery rate, number of blocks, and delivery failures for the selected message.
+- **Interactions KPIs**: Check the open rate, click rate, click-to-open rate, number of messages marked as spam, and count of unsubscriptions for the selected message.
+- **Delivery trend** and **delivery funnel**: View trends and the funnel of sent and delivered interactions, along with unique opens and unique clicks for the selected email.
+- **Engagement trend**: Track trends for total opens and clicks to better understand engagement for the selected email.
 
-:::image type="content" source="media/analytics-email-insights.png" alt-text="Screenshot of email insights dashboard." lightbox="media/analytics-email-insights.png":::
+:::image type="content" source="media/analytics-email-insights.png" alt-text="Screenshot of the email insights dashboard showing delivery and engagement metrics." lightbox="media/analytics-email-insights.png":::
 
 ## Device type and user agents' analysis
 
-Gain a deeper understanding of the various device types, email clients, operating systems, and browsers that customers utilize to engage with your emails. Tailor your email design to align with the devices and user agents most used by your audience and ensure seamless readability for your messages.
+Learn about the different device types, email clients, operating systems, and browsers your customers use to read your emails. Design your emails to match the devices and user agents your audience uses most, and make sure your messages are easy to read.
 
-- **Email clients by opens**: The detection of email clients relies on email opens and is dependent on the response received from the email provider. Certain email clients, like Apple Mail, have privacy protections in place that may prevent detection.
-- **Browsers, operating systems, and device types by clicks**: The detection of device types, browsers, and operating systems is dependent on email clicks. Not all email clients, device types, browsers, and operating systems can be detected.
+- **Email clients by opens**: Detection of email clients relies on email opens and depends on the response from the email provider. Some email clients, like Apple Mail, have privacy protections that can prevent detection.
+- **Browsers, operating systems, and device types by clicks**: Detection of device types, browsers, and operating systems depends on email clicks. You can't detect all email clients, device types, browsers, and operating systems.
 
 User agents are labeled as:
 
-- "Unknown" when the agent couldn't be detected.
-- "Other" when the agent can be detected but is non-categorized yet, such as a local provider.
+- "Unknown" when the agent can't be detected.
+- "Other" when the agent can be detected but isn't categorized yet, like a local provider.
 
-:::image type="content" source="media/email-insights-device.png" alt-text="Screenshot of email insights device type dashboard." lightbox="media/email-insights-device.png":::
+:::image type="content" source="media/email-insights-device.png" alt-text="Screenshot of the email insights device type dashboard." lightbox="media/email-insights-device.png":::
 
 > [!NOTE]
-> - Data related to user agents may be partial or missing depending on when your journey was running, especially if it was active before August 2024.
-> - If you're building custom reports, you can learn more about the list of Globally Unique Identifiers (GUIDs) as they appear in real-time marketing storage (accessible using Microsoft Fabric) to map data on email clients, device types, browsers, and operating systems: [Map GUIDs to email clients, browsers, operating systems, and device types](map-guids.md)
+> - Data related to user agents can be partial or missing depending on when your journey runs, especially if it was active before August 2024.
+> - If you're building custom reports, learn more about the list of Globally Unique Identifiers (GUIDs) as they appear in real-time marketing storage (accessible using Microsoft Fabric) to map data on email clients, device types, browsers, and operating systems: [Map GUIDs to email clients, browsers, operating systems, and device types](map-guids.md)
 
 ## Link insights
 
-Unlock valuable insights into your email's URL engagement and make data-driven decisions to enhance the effectiveness of your email marketing campaigns with link insights. Using link insights, you can understand the performance of each link within your email campaigns and identify the top-performing links based on total clicks, unique clicks, and click rate. Get more clarity by grouping your links by URL or link alias. Learn more: [Edit email components in a live journey](edit-email-in-live-journey.md)
+Get valuable insights into your email's URL engagement and make data-driven decisions to improve your email marketing campaigns with link insights. With link insights, you see how each link in your email campaign performs and identify the top-performing links by total clicks, unique clicks, and click rate. Group your links by URL or link alias for more clarity. Learn more: [Edit email components in a live journey](edit-email-in-live-journey.md)
 
 > [!NOTE]
-> Link insights displays data for emails (with links) and journeys created after September 2024.
+> Link insights shows data for emails with links and journeys created after September 2024.
 
 ## Click map
 
-Click map is a fast and visual way to understand customer engagement based on your email design. At a glance, the heatmap colors and link ranking display the most interacted areas. Choose to display or hide the heatmap for better visualization.
+Click map is a fast, visual way to understand customer engagement based on your email design. At a glance, the heatmap colors and link ranking show the most interacted areas. You can show or hide the heatmap for better visualization.
 
-- Gain deeper insights into which links receive the most and least engagement by filtering the list of links based on click-through rate (CTR), total clicks, and unique clicks.
-- Toggle between desktop or mobile (includes any other types of devices) to visualize insights on interactions for each device type.
-- Select a link within the list to see its location on the email design or hover over your links on the design to display the interactions data. Links with zero interactions aren't included in the list; they only display by hovering on the email design.  
-- For reporting purposes, you can zoom into specific parts of your email or zoom out to take a screenshot of the full click map. You can also download an Excel list of the click map insights.
+- Get deeper insights into which links get the most and least engagement by filtering the list of links based on click-through, total clicks, and unique clicks.
+- Switch between all devices, desktop, or mobile (including other device types), to see interaction insights for each device type. You can view insights for all devices together only if the email sections are identical across all devices. If there are any differences, like adding or removing a section on mobile or desktop, the "all devices" view isn't available.
+- Select a link in the list to see its location on the email design, or hover over your links on the design to show the interaction data. Links with zero interactions aren't included in the list; you only see them by hovering over the email design.
+- The heatmap supports email variations. Compare the performance of different email variations and find which elements resonate most with your audience. Select and search for a variation using the dropdown. To compare several variations, open them in a different tab and compare them by splitting the screen.
+- For reporting purposes, you can zoom in on specific parts of your email or zoom out to take a screenshot of the full click map and download an Excel list of the click insights. 
 
-Using the click map insights, you can optimize your content placement, layout, and design, to boost customer engagement.
+Use click map insights to optimize your content placement, layout, and design to boost customer engagement.
 
-:::image type="content" source="media/email-insights-click-map.png" alt-text="Screenshot of email insights click map dashboard." lightbox="media/email-insights-click-map.png":::
+:::image type="content" source="media/email-insights-click-map.png" alt-text="Screenshot of the email insights click map dashboard." lightbox="media/email-insights-click-map.png":::
 
 > [!NOTE]
-> - The click map only displays the interactions and design for the latest email version created.
-> - For the click map feature to be displayed, the journey must have been created after the feature release in October 2024.
-> - When adding older emails to your journey, to start displaying the click map, use [live editing](edit-email-in-live-journey.md) and update the email. The links included in your email will be updated and tracked for the new interactions.
-> - The click map might contain incomplete data or miss some data depending on when your journey and email content was created and running, especially if it was active before October 2024.
-> - For emails that contain variations (conditional content and in-line conditions), the click map only displays the design and interactions for the default variation.
+> - The click map only shows the interactions and design for the latest email version.
+> - To show the click map feature, the journey must be created after the feature release in October 2024.
+> - When you add older emails to your journey, to start showing the click map, use [live editing](edit-email-in-live-journey.md) and update the email. The links in your email are updated and tracked for new interactions.
+> - The click map might have incomplete data or miss some data depending on when your journey and email content was created and running, especially if it was active before October 2024.
 
 ## Variation insights (Conditional content)
 
-Gain valuable insights into key metrics such as unique opens, unique clicks, number of delivered messages, open rate, click rate, spam messages, and unsubscriptions for each variant, enabling you to identify what resonates best with your audience. Variation insights are visible only if an email contains conditional content.
+Get insights into key metrics like unique opens, unique clicks, delivered messages, open rate, click rate, spam messages, and unsubscriptions for each variant. Use these insights to see what resonates with your audience. You see variation insights only if an email has conditional content.
 
-:::image type="content" source="media/email-insights-variation.png" alt-text="Screenshot of email insights variation dashboard." lightbox="media/email-insights-variation.png":::
+:::image type="content" source="media/email-insights-variation.png" alt-text="Screenshot of the variation insights dashboard showing metrics for each email variant." lightbox="media/email-insights-variation.png":::
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
