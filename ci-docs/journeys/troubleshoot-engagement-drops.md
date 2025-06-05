@@ -1,7 +1,7 @@
 ---
 title: Troubleshooting email engagement drops
 description: Troubleshoot email engagement drops in Dynamics 365 Customer Insights - Journeys.
-ms.date: 05/21/2025
+ms.date: 06/05/2025
 ms.topic: article
 author: colinbirkett
 ms.author: colinbirkett
@@ -19,27 +19,29 @@ In email marketing, tracking metrics has been the key to understanding and impro
 
 New privacy regulations like the General Data Protection Regulation (GDPR), California Consumer Privacy Act (CCPA), and Digital Markets Act (DMA) affect email tracking. These regulations reinforce user rights to opt out of tracking.
 
-* Apple Mail Privacy Protection (MPP): This feature shields your privacy by preventing email senders from tracking your activity (such as when an email is opened). 
+* Apple Mail Privacy Protection (MPP): This feature shields your privacy by preventing email senders from tracking your activity (such as when an email is opened).
 
-* Google and Microsoft continuous privacy improvements: Google and Microsoft are enhancing user privacy with stricter cookie policies and email tracking limitations. 
+* Google and Microsoft continuous privacy improvements: Google and Microsoft are enhancing user privacy with stricter cookie policies and email tracking limitations.
 
-* Regulatory updates: GDPR, CCPA, and DMA are enforcing user rights to opt out of tracking. 
+* Regulatory updates: GDPR, CCPA, and DMA are enforcing user rights to opt out of tracking.
 
-## How these changes affect email marketers 
+## How these changes affect email marketers
 
-* Diminished open rate accuracy: With Apple and Google privacy features, open rates might be artificially inflated or impossible to track accurately. 
+Here are some of the ways these privacy regulations affect email marketers:
 
-* Reduced select tracking effectiveness: Stricter privacy settings might prevent accurate, selective tracking in emails. 
+* Diminished open rate accuracy: With Apple and Google privacy features, open rates might be artificially inflated or impossible to track accurately.
 
-* Increased dependence on first party data: Senders need to rely more on their own data and behavior insights rather than third-party tracking data. 
+* Reduced select tracking effectiveness: Stricter privacy settings might prevent accurate, selective tracking in emails.
 
-* Stronger emphasis on content-based marketing: Regulations are requiring explicit consent for tracking, increasingly limiting ESP's ability to gather accurately data. 
+* Increased dependence on first party data: Senders need to rely more on their own data and behavior insights rather than third-party tracking data.
+
+* Stronger emphasis on content-based marketing: Regulations require explicit consent for tracking. This limits ESP's ability to gather accurately data.
 
 ## How to troubleshoot engagements drops 
 
 There are two scenarios for engagement drops: 
 
-- **New customers**: If you have recently onboarded or have a short history with Customer Insights - Journeys, be advised Customer Insights - Journeys utilizes the latest techniques to filter out nonhuman interactions (NHI). Filtering NHI provides accurate data to our senders, especially with traffic directed to Microsoft 365. If you onboarded and haven't changed your sending domains, audience, or dramatically altered your email templates but are still experiencing a sudden drop in engagement, then it's likely not an issue with your sending reputation or the platform's efficiency. Rather, it's a more accurate representation of your current engagement rate. We advise you to continue monitoring your engagement rates and watch for any progressive and continuous drops. 
+- **New customers**: If you have recently onboarded or have a short history with Customer Insights - Journeys, be advised Customer Insights - Journeys utilizes the latest techniques to filter out nonhuman interactions (NHI). Filtering NHI provides accurate data to our senders, especially with traffic directed to Microsoft 365. If you onboarded and haven't changed your sending domains, audience, or dramatically altered your email templates, but are still experiencing a sudden drop in engagement, then it's likely not an issue with your sending reputation or the platform's efficiency. Rather, it's a more accurate representation of your current engagement rate. We advise you to continue monitoring your engagement rates and watch for any progressive and continuous drops. 
 
 - **Existing customers**: If you have been a customer for some time and have noticed a consistent drop in your engagement rates, read the section below. 
 
@@ -79,7 +81,9 @@ To diagnose an unexpected drop in engagement rates:
 
 Recommended **next steps**: Take a methodical approach to diagnose and fix deliverability issues. Consult with a deliverability specialist for additional insights if necessary. 
 
-## When and how the Microsoft Dynamics Customer Insights email deliverability team can assist 
+## When and how the Microsoft Dynamics Customer Insights email deliverability team can assist
+
+Note the following before reaching out to the Microsoft Dynamics Customer Insights email deliverability team for assistance with engagement drop issues:
 
 * As a prerequisite, you must do the analysis outlined above for us to be able to assist you. You can reach out to our deliverability team after you've finished your investigation. The Customer Insights email deliverability team needs you to verify (i) a clear pattern of the engagement drop, (ii) the period when the engagement drops started, and (iii) which ISPs are the most affected.
 
