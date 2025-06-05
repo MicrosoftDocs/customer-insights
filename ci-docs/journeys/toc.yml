@@ -280,6 +280,8 @@
          href: journey-start.md
       -  name: Add an action in a journey
          href: add-action.md
+      -  name: Pause and resume a journey (preview)
+         href: pause-resume-journey.md
       -  name: Tailor follow-up strategies with multi-interaction branching (preview)
          href: multi-interaction-branching.md
       -  name: End a journey

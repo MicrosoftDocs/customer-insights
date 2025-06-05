@@ -1,10 +1,10 @@
 ---
 title: Use feature switches to enable or disable optional and preview features
 description: Use feature switches to manage optional and preview features in Dynamics 365 Customer Insights - Journeys. Learn the steps to configure settings.
-ms.date: 11/22/2024
+ms.date: 06/04/2025
 ms.topic: article
 author: alfergus
-ms.author: alfergus
+ms.author: colinbirkett
 ms.collection: bap-ai-copilot
 ms.custom:
   - ai-gen-docs-bap
@@ -126,7 +126,7 @@ The following tables list each available feature, preview status, and links for 
 | Feature switch | Preview or production | Description |
 |---|---|---|
 | Customer Voice integration | Production | [Enable Dynamics 365 Customer Voice integrations with Customer Insights - Journeys](customer-voice.md). |
-<!-- Contact Center integration | Production | Enable Dynamics 365 Contact Center integrations with Customer Insights - Journeys. -->
+| Contact Center integration | Preview | Enable Dynamics 365 Contact Center integrations with Customer Insights - Journeys. [Learn more](conversational-journeys-overview.md) |
 
 ## Compliance
 
