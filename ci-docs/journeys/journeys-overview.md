@@ -1,7 +1,7 @@
 ---
 title: Journeys overview
 description: Learn how to create automated campaigns with real-time journeys in Dynamics 365 Customer Insights - Journeys.
-ms.date: 03/21/2025
+ms.date: 06/05/2025
 ms.topic: overview
 author: alfergus
 ms.author: alfergus
@@ -34,13 +34,7 @@ You can create templates to make it easier for anyone to start with a pre-existi
 
 All journeys have a life cycle: they're created and then published. Once published, they complete or can be stopped. A journey moves through these stages or states as shown in the diagram below:
 
-:::image type="content" source="media/journeys-overview-states.png" alt-text="Stages of real-time journeys diagram." lightbox="media/journeys-overview-states.png":::
-
-<!--- Updated screenshot that will go live once journey pause/resume feature goes live
-
 :::image type="content" source="media/journeys-overview-states-updated.png" alt-text="Stages of real-time journeys diagram." lightbox="media/journeys-overview-states-updated.png":::
-
---->
 
 Legend:
 
