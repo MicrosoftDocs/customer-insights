@@ -14,38 +14,38 @@ search.audienceType:
 # Customer Insights - Journeys triggers
 
 > [!Note]
-> “Event triggers” are now called “triggers” in the app and the documentation. The change was made to avoid confusion when referencing event management functionality versus triggering Customer Insights - Journeys.
+> “Event triggers” are now called “triggers” in the app and documentation. This change avoids confusion when you reference event management functionality or trigger Customer Insights - Journeys.
 
-Triggers control the flow of [trigger-based journeys](real-time-marketing-trigger-based-journey.md). They represent customer actions such as a whitepaper download, a form submitted, or a Wi-Fi sign-up. Triggers can also represent significant business events, such as a purchase that has shipped or completion of an enrollment process.
+Triggers control the flow of [trigger-based journeys](real-time-marketing-trigger-based-journey.md). They represent customer actions like downloading a whitepaper, submitting a form, or signing up for Wi-Fi. Triggers can also represent important business events, like shipping a purchase or finishing an enrollment process.
 
-Triggers can be used to start, continue, or stop a journey. For example:
+You can use triggers to start, continue, or stop a journey. For example:
 
-- A **Contact created** trigger can be used to start a journey to welcome a new user.
-- An **Email opened** trigger can be used to trigger a follow-up response in a journey that engaged users by sending the users a promotional email.
-- An **Order placed** trigger can be used as exit criteria to terminate a journey designed to periodically remind a customer to complete a purchase order.
+- A **Contact created** trigger starts a journey to welcome a new user.
+- An **Email opened** trigger sends a follow-up response in a journey that engages users by sending a promotional email.
+- An **Order placed** trigger ends a journey designed to remind a customer to finish a purchase order.
 
 ## Trigger types
 
-Customer Insights - Journeys offers three types of triggers in the triggers catalog: custom triggers, interaction triggers, and business triggers.
+Customer Insights - Journeys has three types of triggers in the triggers catalog: custom triggers, interaction triggers, and business triggers.
 
 ### Custom triggers
 
-Custom triggers are defined by Customer Insights - Journeys users. Custom triggers provide a flexible way to capture any customer action or significant business event.
+Customer Insights - Journeys users define custom triggers. Custom triggers let you capture any customer action or significant business event.
 
-For more information, including important notes about security for custom triggers, see [Custom triggers in Customer Insights - Journeys](real-time-marketing-custom-triggers.md).
+Learn more, including important security notes for custom triggers, in [Custom triggers in Customer Insights - Journeys](real-time-marketing-custom-triggers.md).
 
 ### Interaction triggers
 
-Interaction triggers represent customer interactions with journey elements such as email, text message, and push channels. Interaction triggers can be used to start journeys, can be used within the journey, and represent a logical continuation of a preceding step. For example, when a journey sends an email message, triggers such as *Email Link Clicked* or *Email Opened* become available to journey authors, allowing them to make decisions about possible next steps.
+Interaction triggers represent customer interactions with journey elements like email, text message, and push channels. Use interaction triggers to start journeys, use them within the journey, or as a logical continuation of a previous step. For example, when a journey sends an email, triggers like *Email Link Clicked* or *Email Opened* are available to journey authors, so they can decide the next steps.
 
-All interaction triggers across various channels, such as email, SMS, and push, can be used in a journey, either for starting the journey or branching on a journey.
+You can use all interaction triggers across different channels, like email, SMS, and push, to start a journey or branch within a journey.
 
 ### Business triggers
 
-Business triggers represent changes in Dynamics 365 applications such as Sales or Service. These changes can reflect either the creation of a new record or an update to an existing one. The following business triggers are available out-of-the-box:
+Business triggers represent changes in Dynamics 365 applications like Sales or Service. These changes can be the creation of a new record or an update to an existing one. The following business triggers are available by default:
 
 - *Contact created*
-- *Contact e-mail address updated*
+- *Contact email address updated*
 - *Contact address updated*
 - *Contact phone number updated*
 - *Lead created*
