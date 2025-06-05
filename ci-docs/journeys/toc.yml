@@ -50,14 +50,16 @@
       href: real-time-marketing-consent-transition.md
     - name: Customer Voice responses
       href: transition-walkthrough-customer-voice.md
-    - name: Emails, journeys, and assets
-      href: transition-walkthrough-journeys.md
+    - name: Emails and assets
+      href: transition-walkthrough-email.md
     - name: Event management
       href: transition-walkthrough-events.md
     - name: Event registration
       href: migrate-event-registration.md
     - name: Insights and reports
       href: transition-walkthrough-insights.md    
+    - name: Journeys
+      href: transition-walkthrough-journeys.md
     - name: Lead management and scoring
       href: transition-walkthrough-leads.md    
     - name: Marketing pages and forms
