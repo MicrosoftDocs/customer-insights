@@ -118,6 +118,8 @@ For example, you can configure the wait tile to wait for the *Email opened* even
 
 The wait for segment membership feature allows for a more complex set of actions to take place beyond a single trigger. For example, you may want to create a branch based on how much a customer spent through multiple transactions in a specific period. In this scenario, rather than wait for a specific trigger, you can simply define a dynamic segment, such as 'big purchaser' and wait for the customer to become a member of that segment.
 
+Customer Insights - Data segments built using the bring your own storage account feature are not supported. 
+
 ##### Attribute branch
 
 An attribute branch lets you branch the journey based on various attributes including:
