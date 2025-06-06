@@ -53,7 +53,6 @@ Send now is a simplified workflow that supports limited scenarios. It doesn't su
 - Send now only works with contact and lead segment-based journeys. We'll expand to support Customer Insights profiles in the future.
 - Send now doesn't work with outbound marketing segments that you haven't used in real-time journeys. Once you use an outbound marketing segment in a real-time journey successfully, it's been processed and you can use it with the send now functionality.
 - Send now doesn't stop users from selecting an email and a segment from two different business units. If you have permissions to more than one business unit, be careful to make sure you select an email and segment from the same business unit.
-- When the ["New look" switch](/power-apps/user/modern-fluent-design) in Dynamics 365 is enabled, the segment list sometimes doesn't load. The workaround is to turn the "New look" switch off.
 - The following personalization variables *don't* work in send now:
     - Triggers: Send now only supports segment-based journeys. It can't access trigger data used in email personalization.
     - Complex inline conditions with 1:n relationships such as **Contacts** > **Accounts**.
