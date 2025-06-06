@@ -706,6 +706,8 @@
         href: feedback-loop.md
     - name: Troubleshoot email issues
       href: email-troubleshooting.md
+    - name: Troubleshoot email engagement drops
+      href: troubleshoot-engagement-drops.md
   - name: Customization
     items:
     - name: Customizing Customer Insights - Journeys
