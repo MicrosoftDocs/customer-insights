@@ -1,7 +1,7 @@
 ---
 title: Transition journeys
 description: Transition your journeys to real-time journeys in Dynamics 365 Customer Insights - Journeys. Follow our guide to ensure a smooth transition.
-ms.date: 06/04/2025
+ms.date: 06/06/2025
 ms.topic: article
 author: alfergus
 ms.author: colinbirkett
@@ -31,8 +31,8 @@ The features listed below may be of interest as you transition from outbound mar
 
 - **Journey split by percentage or absolute number**: Split your audience into branches to provide a subset of your audience with unique experiences. Split your audience by percentages (for cases where you need randomness) or by number (for cases where you want to deliver specific experiences to a set of people). For more information, see [Provide varied experiences in one journey using journey split tiles](/dynamics365/release-plan/2023wave2/marketing/dynamics365-marketing/provide-varied-experiences-one-journey-using-journey-split-tiles).
 - **Web tracking**: Trigger journeys and make decisions based on all known user interactions, from messages to web pages, making it even easier to create consistent personalized experiences across your brand's digital touch-points. For example, you can engage your customers when they show interest by sending a personalized offer after they visit your website. For more information, see [Engage customers with content and follow-ups based on website interactions](/dynamics365/release-plan/2023wave2/marketing/dynamics365-marketing/engage-customers-content-follow-ups-based-website-interactions).
-- **Use email deliverability status for journey orchestration branching**: Start journeys or branch within journeys on email delivery statuses such as 'delivered', 'bounced', etc... For more information, see [Wait for a trigger](add-action.md#wait-for-a-trigger).
-- **Journeys with swimlanes**: In outbound marketing you could create journeys with swimlanes, all visible in the same workspace. The equivalent implementation in real-time journeys is nested segmentation whereby you can create a segment you would have used for each swimlane in outbound marketing and then nest them in one segment. When you create the segment based journey using the compound segment, you can use branches, each with a segment membership condition for the sub-segment and each branch then represents what was a swimlane in outbound. 
+- **Use email deliverability status for journey orchestration branching**: Start a journey or branch within a journey based on email delivery statuses, such as "delivered" or "bounced." For more information, see [Wait for a trigger](add-action.md#wait-for-a-trigger).
+- **Journeys with swimlanes**: In outbound marketing, you could create journeys with swimlanes, all visible in the same workspace. The equivalent implementation in real-time journeys is nested segmentation, whereby you create the segments you would have used for each swimlane in outbound marketing and then nest them in one segment. When you create the segment-based journey using the compound segment, you can use branches, each with a segment membership condition for the sub-segment, and each branch then represents what was a swimlane in outbound marketing. 
 
 [!INCLUDE [transition-comments](./includes/transition-comments.md)]
 
