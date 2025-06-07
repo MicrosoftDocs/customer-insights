@@ -1,7 +1,7 @@
 ---
 title: Add an action in a journey
 description: An overview of possible actions you can do in a journey in Dynamics 365 Customer Insights - Journeys.
-ms.date: 06/04/2025
+ms.date: 06/06/2025
 ms.topic: article
 author: colinbirkett
 ms.author: colinbirkett
@@ -47,7 +47,7 @@ You can also send messages through custom channels to capture customers' attenti
 
 ### AI-powered conversations (preview)
 
-Customer Insights - Journeys offers the ability to integrate with Contact Center to enable conversation-based communications with your customers. 
+Customer Insights - Journeys offers the ability to integrate with the Contact Center, enabling conversation-based communications with your customers. 
 
 ##### Voice conversation (preview)
 
@@ -63,11 +63,11 @@ A/B tests allow you to measure which channel or content messaging strategy leads
 
 ##### Channel optimization
 
-Channel optimization uses AI to find the best channel to reach each individual customer and improve your engagement. To learn more about channel optimization, see [Use AI-driven run-time channel optimization](real-time-marketing-channel-optimization.md).
+Channel optimization uses AI to find the best channel to reach each customer and improve your engagement. To learn more about channel optimization, see [Use AI-driven run-time channel optimization](real-time-marketing-channel-optimization.md).
 
 ### Conditions
 
-You can set conditions throughout customers' journeys such as scheduling wait times at specific times, waiting for a specific trigger from a customer, setting up attribute branches, or splitting an audience by number or percentage. See available conditions below. 
+You can set conditions throughout customers' journeys, such as scheduling wait times at specific times, waiting for a specific trigger from a customer, setting up attribute branches, or splitting an audience by number or percentage. See available conditions below. 
 
 ##### Wait time
 
@@ -95,17 +95,17 @@ There are two ways to create a branch in a journey:
 
 - Branch based on whether a certain action was taken or not. A common example is branching based on whether or not the customer opened the last email that was sent. This type of branching is achieved by the [Wait for trigger](#wait-for-trigger-branch) tile.  
 
-- Branch based on current information such as customer’s demographic (for example, gender) or other related information (for example, loyalty program tier). This type of branching is achieved by the [Attribute branch](#attribute-branch).  
+- Branch based on current information such as the customer’s demographic (for example, gender) or other related information (for example, loyalty program tier). This type of branching is achieved by the [Attribute branch](#attribute-branch).  
 
 The key differences between these two branching methods are: 
 
 Wait for trigger branch supports specifying a duration for how long to wait until the desired action is taken. Wait for trigger branching also supports simple two-way branching. This is why the tile is also referred to as an “if/then branch”. 
 
-Attribute branch doesn't have a provision for waiting. Attribute branches use the data available at the time of execution and allow for multiple-way branchings.
+The attribute branch doesn't have a provision for waiting. Attribute branches use the data available at the time of execution and allow for multiple-way branchings.
 
 ##### Wait for trigger branch
 
-The "wait for trigger" (if/then branch) tile lets you branch the customer journey based on customer actions like opening an email or completing a purchase. The wait tile (if/then branch) waits for the customer to perform the trigger within the time limit specified. If the customer performs the trigger, they'll immediately proceed down the yes branch. If the customer doesn't perform the trigger within the time limit specified, they'll proceed down the no branch after the time limit has passed.
+The "wait for trigger" (if/then branch) tile lets you branch the customer journey based on customer actions like opening an email or completing a purchase. The wait tile (if/then branch) waits for the customer to perform the trigger within the time limit specified. If the customer performs the trigger, they'll immediately proceed down the yes branch. If the customer doesn't perform the trigger within the time limit specified, they'll proceed down the "no" branch after the time limit has passed.
 
 For example, you can configure the wait tile to wait for the *Email opened* event on a previously sent email. If the time limit is set to one day, the wait branch waits for the customer to open the email within that day. If the customer opens the email within that day, they'll immediately proceed down the yes branch. If the customer doesn't open the email within that day, they'll proceed down the no branch after one day.
 
@@ -114,21 +114,23 @@ For example, you can configure the wait tile to wait for the *Email opened* even
 > [!IMPORTANT]
 > A preview feature is a feature that isn't complete, but is made available before it’s officially in a release so customers can get early access and provide feedback. Preview features aren’t meant for production use and may have limited or restricted functionality.
 > 
-> Microsoft doesn't provide support for this preview feature. Microsoft Dynamics 365 Technical Support won’t be able to help you with issues or questions. Preview features aren’t meant for production use, especially to process personal data or other data that are subject to legal or regulatory compliance requirements.
+> Microsoft doesn't provide support for this preview feature. Microsoft Dynamics 365 Technical Support won’t be able to help you with issues or questions. Preview features aren’t meant for production use, especially to process personal data or other data that is subject to legal or regulatory compliance requirements.
 
-The wait for segment membership feature allows for a more complex set of actions to take place beyond a single trigger. For example, you may want to create a branch based on how much a customer spent through multiple transactions in a specific period. In this scenario, rather than wait for a specific trigger, you can simply define a dynamic segment, such as 'big purchaser' and wait for the customer to become a member of that segment.
+The wait for segment membership feature allows for a more complex set of actions to take place beyond a single trigger. For example, you may want to create a branch based on how much a customer spent through multiple transactions in a specific period. In this scenario, rather than wait for a specific trigger, you can simply define a dynamic segment, such as 'big purchaser,' and wait for the customer to become a member of that segment.
+
+Customer Insights - Data segments built using the "bring your own storage account" feature aren't supported. 
 
 ##### Attribute branch
 
-An attribute branch lets you branch the journey based on various attributes including:
+An attribute branch lets you branch the journey based on various attributes, including:
 
-- **Customer's attributes**: You can branch the journey based on the customer's attributes like address or age. The journey's audience defines which attributes are shown. For example, if the journey is for contacts, only attributes for contacts are shown.
-- **Customer's segment membership**: You can branch the journey based on whether the customer is part of a segment. The journey's audience defines which segments are shown. For example, only contacts-based segments are shown for journeys that are meant for contacts.
+- **Customer's attributes**: You can branch the journey based on the customer's attributes, like address or age. The journey's audience defines which attributes are shown. For example, if the journey is for contacts, only attributes for contacts are shown.
+- **Customer's segment membership**: You can branch the journey based on whether the customer is part of a segment. The journey's audience defines which segments are shown. For example, only contact-based segments are shown for journeys that are meant for contacts.
 - **Attributes in triggers**: You can branch the journey based on attribute values in triggers. For attribute values to be shown, the trigger must have previously occurred in the journey. Thus, you can only check the attribute values for a trigger that starts a trigger-based journey, or triggers being used in a "wait for trigger" branch.
 
 The attribute branch checks for attribute values the moment a customer enters this tile. For example, when a customer enters the attribute branch tile, the segment membership condition checks whether the customer is part of the specified segment at that instant.
 
-Attribute branch supports multi-way branching. For example, if you have 'customer spend' as an attribute, you can create different branches for different ranges of spending. For more information, see [Personalize journey variations using multiple journey branches](real-time-marketing-multiple-branches.md).
+Attribute branches support multi-way branching. For example, if you have 'customer spend' as an attribute, you can create different branches for different ranges of spending. For more information, see [Personalize journey variations using multiple journey branches](real-time-marketing-multiple-branches.md).
 
 ##### Audience split
 
@@ -136,7 +138,7 @@ The audience split tile allows you to divide your audience to give a unique set 
 
 ### Activities
 
-You can create activities for customers at specific instances in a journey such as creating and assigning a phone call or task activity. See available activities below. 
+You can create activities for customers at specific instances in a journey, such as creating and assigning a phone call or task activity. See available activities below. 
 
 ##### Phone call
 
@@ -148,11 +150,11 @@ You can create and assign a task activity for customers.
 
 ### Connectors
 
-Connectors provide additional features beyond actions above. For example, you can activate a custom trigger where additional journeys or [Power Automate flows](/power-automate) connected to a custom event are triggered when a customer does a specific action.
+Connectors provide additional features beyond the actions above. For example, you can activate a custom trigger where additional journeys or [Power Automate flows](/power-automate) connected to a custom event are triggered when a customer does a specific action.
 
 ##### Activate a custom trigger
 
-Triggering a custom event allows you to use activate a custom event at any point in the customer journey. Additional journeys or [Power Automate flows](/power-automate) connected to the custom event are triggered immediately when a customer reaches the tile. This includes custom triggers used in exit criteria, goals, and "wait for trigger" branches for journeys.
+Triggering a custom event allows you to activate a custom event at any point in the customer journey. Additional journeys or [Power Automate flows](/power-automate) connected to the custom event are triggered immediately when a customer reaches the tile. This includes custom triggers used in exit criteria, goals, and "wait for trigger" branches for journeys.
 
 When using a custom trigger, you can choose which data to send as part of the trigger. You can choose customer profile data (for instance, attributes of the target audience such as contacts, leads, etc.) or data from other triggers used in the journey (for instance, attributes of the trigger that starts the journey).
 
