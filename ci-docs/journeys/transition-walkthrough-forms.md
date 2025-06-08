@@ -65,7 +65,7 @@ This table summarizes the types of forms available in real-time journeys.
 
 ## Guidance on specific capabilities
 
-See below for guidance on specific capabilities that are done differently in real-time or are not yet available. Capabilities not listed here are currently not prioritized. We strongly recommend that you do not wait for these capabilities and complete your transition to real-time using alternative approaches.
+See the following guidance on specific capabilities that are done differently in real-time or aren't yet available. Capabilities not listed here are currently not prioritized. We strongly recommend that you don't wait for these capabilities and complete your transition to real-time using alternative approaches.
 
 ### Custom unmapped fields
 
@@ -79,18 +79,18 @@ See below for guidance on specific capabilities that are done differently in rea
 - **Details:**
   Filter lookup field values based on another selected lookup value. For example, filter the list of cities by the selected country. Dynamically get or set the lookup value using custom JavaScript.
 - **Guidance:**
-  For option set fields see [Implementing cascading dropdown fields in RTM forms - FastTrack blog](https://community.dynamics.com/blogs/post/?postid=ff86d88f-d892-ef11-ac21-6045bdd7e1ae). For dependent lookups and programmatically set lookup value, see *Simplify form filling by filtering choices based on previous answers* in release planner Wave 2 2025.
+  For option set fields, see [Implementing cascading dropdown fields in RTM forms - FastTrack blog](https://community.dynamics.com/blogs/post/?postid=ff86d88f-d892-ef11-ac21-6045bdd7e1ae). For dependent lookups and programmatically set lookup value, see *Simplify form filling by filtering choices based on previous answers* in release planner Wave 2 2025.
 
 ### Don't overwrite existing values with empty submitted values
 
 - **Details:**
-  The form submission updates existing lead or contact with all submitted value including empty ones. If the user submit a form with an empty phone number field, the existing phone number in system will be replaced with the submitted empty value.
+  The form submission updates existing lead or contact with all submitted value including empty ones. If the user submits a form with an empty phone number field, the existing phone number in system is replaced with the submitted empty value.
 - **Guidance:**
-  We plan to enhance the form configuration to allow empty fields to optionally overwrite existing non-empty values. You can already mark key fields as required to prevent users from submitting them with empty values. The [form prefill](real-time-marketing-form-prefill.md) feature also helps prevent existing values from being overwritten by empty inputs.
+  We plan to enhance the form configuration to allow empty fields to optionally overwrite existing nonempty values. You can already mark key fields as required to prevent users from submitting them with empty values. The [form prefill](real-time-marketing-form-prefill.md) feature also helps prevent existing values from being overwritten by empty inputs.
 
 ## Blogs and workarounds
 
-- Cascaded fields, where options in a field depend on a value in an earlier field, aren't supported yet. For a workaround, see [Implementing cascading dropdown fields in RTM forms - FastTrack blog](https://community.dynamics.com/blogs/post/?postid=ff86d88f-d892-ef11-ac21-6045bdd7e1ae).
+- To create cascading option set fields, see [Implementing cascading dropdown fields in RTM forms - FastTrack blog](https://community.dynamics.com/blogs/post/?postid=ff86d88f-d892-ef11-ac21-6045bdd7e1ae).
 - To implement customized error messages for field validation, see [Customizable error messages for form field validation - FastTrack blog](https://community.dynamics.com/blogs/post/?postid=cdcd1dbf-2b7f-ef11-ac20-7c1e521a63a7).
 
 [!INCLUDE [transition-comments](./includes/transition-comments.md)]
