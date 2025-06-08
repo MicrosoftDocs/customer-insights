@@ -69,13 +69,17 @@ See below for guidance on specific capabilities that are done differently in rea
 
 ### Can I continue using consent based on the Contact DoNotBulkEmail attribute?
 
-The `DoNotBulEmail` and `DoNotEmail` attributes will be still available after outbound marketing is removed, as these attributes are also used by other Dynamics applications. However, the real-time journeys preference center can not update these attributes. You can 
+The `DoNotBulkEmail` and `DoNotEmail` attributes will remain available even after outbound marketing is removed, as they are also used by other Dynamics applications. However, the real-time journeys preference center cannot update these attributes and it is recommended to use the new consent model based on contact point consent.
+
+In case you need to allow your customers to update the `DoNotBulkEmail` attribute through the Unsubscribe link in email, you can create a *compliance profile with external link* and use a marketing form with prefill enabled to allow users to manage their preferences. Ensure the "Check contact consent in real-time journeys" feature switch in setting is enabled. This ensures that email sending respects the values of the DoNotBulkEmail and DoNotEmail attributes.
 
 ### Can I continue using the subscription list?
 
+The subscription list will not be deleted when outbound marketing is removed; however, it will no longer be possible to subscribe or unsubscribe from it. To maintain a functional preference management experience, it is recommended to use the Load consent feature to transition existing subscription lists into Topics supported by real-time marketing.
+
 ### How to update contact or lead details with preference center?
 
-Not at this time.
+The preference center form cannot update lead or contact details. For scenarios requiring updates to these records, use a marketing form with form prefill enabled.
 
 [!INCLUDE [transition-comments](./includes/transition-comments.md)]
 
