@@ -1,7 +1,7 @@
 ---
 title: Transition marketing pages and forms
 description: 'Transition marketing pages and forms: Find out how to update your marketing pages and forms for real-time journeys in Dynamics 365 Customer Insights - Journeys.'
-ms.date: 05/23/2025
+ms.date: 06/08/2025
 ms.topic: article
 author: alfergus
 ms.author: colinbirkett
@@ -63,14 +63,30 @@ This table summarizes the types of forms available in real-time journeys.
 | External form submission capture | Capture submissions to existing forms by using [real-time journeys form capture](real-time-marketing-form-capture.md). |
 | Refer to friend | This form type isn't available in real-time journeys |
 
-## Relevant upcoming features
+## Guidance on specific capabilities
 
-The following features and improvements might interest you as you transition from outbound marketing to real-time journeys. These features offer parity, equivalent, or better functionality than what you get in outbound marketing.
+See below for guidance on specific capabilities that are done differently in real-time or are not yet available. Capabilities not listed here are currently not prioritized. We strongly recommend that you do not wait for these capabilities and complete your transition to real-time using alternative approaches.
 
-- **Custom unmapped fields** (available as public preview): Lets you include fields in a form that aren't connected to any table. Use these fields for temporary information needed only during the current journey, like meal choices for an event.
-- **Simplify form filling with dependent lookups** (Wave 1, 2025): Filter lookup field values based on another selected lookup value. For example, filter the list of cities by the selected country. Dynamically get or set the lookup value using custom JavaScript.
-- **Don't overwrite existing values with empty submitted values** (Wave 1, 2025)
-- **Enhanced matching rule builder** (Wave 1, 2025): Build sophisticated rules to update the correct lead or contact and avoid duplicate records. Use the OR operator in matching conditions.
+### Custom unmapped fields
+
+- **Details:**
+  Lets you include fields in a form that aren't connected to any table. Use these fields for temporary information needed only during the current journey, like meal choices for an event.
+- **Guidance:**
+  Available as public preview in March 2025 release. See [Collect extra customer info without updating your data model](https://releaseplans.microsoft.com/?app=Customer+Insights+-+Journeys&planID=3e99e112-28ba-ee11-a569-00224827e905)
+  
+### Cascading form fields, dependent lookups, programmatically set lookup field value
+
+- **Details:**
+  Filter lookup field values based on another selected lookup value. For example, filter the list of cities by the selected country. Dynamically get or set the lookup value using custom JavaScript.
+- **Guidance:**
+  For option set fields see [Implementing cascading dropdown fields in RTM forms - FastTrack blog](https://community.dynamics.com/blogs/post/?postid=ff86d88f-d892-ef11-ac21-6045bdd7e1ae). For dependent lookups and programmatically set lookup value, see *Simplify form filling by filtering choices based on previous answers* in release planner Wave 2 2025.
+
+### Don't overwrite existing values with empty submitted values
+
+- **Details:**
+  The form submission updates existing lead or contact with all submitted value including empty ones. If the user submit a form with an empty phone number field, the existing phone number in system will be replaced with the submitted empty value.
+- **Guidance:**
+  We plan to enhance the form configuration to allow empty fields to optionally overwrite existing non-empty values. You can already mark key fields as required to prevent users from submitting them with empty values. The [form prefill](real-time-marketing-form-prefill.md) feature also helps prevent existing values from being overwritten by empty inputs.
 
 ## Blogs and workarounds
 

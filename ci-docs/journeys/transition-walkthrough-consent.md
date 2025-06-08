@@ -1,7 +1,7 @@
 ---
 title: Transition consent
 description: Learn how to transition consent capabilities from outbound marketing to real-time journeys in Dynamics 365 Customer Insights - Journeys.
-ms.date: 11/16/2023
+ms.date: 06/08/2025
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -18,23 +18,65 @@ search.audienceType:
 
 Consent is an essential requirement that allows customers of Customer Insights – Journeys to send marketing messages. Customers who already use outbound marketing can transition consent settings to real-time journeys. Consent management, however, is more sophisticated in real-time journeys. The differences and how to transition consent are described in: [Consent management and double opt-in transition guidance](real-time-marketing-consent-transition.md). This article also describes how to migrate subscription lists to real-time journeys to send out segment-based newsletters. For a more detailed discussion, see [Understanding consent management in Dynamics 365 Customer Insights - Journeys - Dynamics FastTrack Blogs](https://community.dynamics.com/blogs/post/?postid=8b2a4ee8-1069-ee11-a81c-000d3a7a1a66)
 
-Customers going through the transition to real-time journeys are recommended to focus initially on moving the journeys and emails themselves, keeping the contact-based consent system in place in outbound marketing. Leveraging the ability to use the outbound marketing subscription centers (see [Use outbound subscription centers in Customer Insights - Journeys](real-time-marketing-outbound-subscription.md), emails will be able to respect the previously captured consent and keep updating regardless of whether the journey is built in outbound marketing or real-time journeys. Once all journeys have been transitioned, transition the consent by completing the following steps:
-- Create a real-time journeys preference center based on a compliance profile.
-- Configure topics that match subscription lists.
--	Use the Load Consent tool to copy consent from contacts and subscription lists.
--	Switch emails to use the newly created compliance profile.
--	Recreate segments based on topics (optional).
+You can transition the consent by completing the following steps:
+
+1. Create a real-time journeys compliance profile with preference center.
+1. Configure topics that match subscription lists.
+1. Use the Load Consent tool to copy consent from contacts and subscription lists.
+1. Switch emails to use the newly created compliance profile.
+1. Recreate segments based on topics (optional).
 
 When capturing consent from contacts, implementing a double opt-in (DOI) feature is sometimes necessary. You can [activate the DOI for your compliance profile in real-time journeys](real-time-marketing-double-opt-in.md).
 
+## Outbound marketing subscription center are no longer available after outbound is removed
+
+- The outbound marketing subscription center isn't available once outbound marketing is removed.
+- It won't be possible to send emails including *Unsubscribe* link referring to subscription center.
+- The real-time journey *compliance profile with subscription center* stops working after outbound is removed.
+- The existing real-time journey sending emails using *compliance profile with subscription center* are stopped after outbound is removed.
+
+> [!IMPORTANT]
+> The **Unsubscribe** link in an already sent email that points to the *outbound marketing subscription center* cannot be redirected to the *real-time journeys preference center*
+>
+> **Once outbound marketing is removed:**
+>
+> - All *Unsubscribe* links associated with the outbound subscription center will cease to function.
+> - This may lead to non-compliance with privacy regulations if no alternative is in place.
+>
+> **Begin using real-time journeys preference centers with a sufficient transition window ahead of outbound marketing removal. This ensures continuity and compliance with data privacy requirements.**
+
+## Guidance on specific capabilities
+
+See below for guidance on specific capabilities that are done differently in real-time or are not yet available. Capabilities not listed here are currently not prioritized. We strongly recommend that you do not wait for these capabilities and complete your transition to real-time using alternative approaches.
+
+### Disable opting out of topic or purpose in Marketing forms, unintentional opt-out
+
+- **Details:**
+  When a user submits a marketing or event registration form, they are automatically opted out of any purposes or topics that they do not explicitly select on the form.
+
+- **Guidance:**
+  We plan to enhance form configuration options to let you define whether marketing or event registration form submission can result in an opt-out. The [form prefill](real-time-marketing-form-prefill.md) feature also helps prevent unintentional opt-outs.
+
+### Embed a preference center on my own web page
+
+- **Details:**
+  The preference center is hosted on Dynamics infrastructure to improve availability and ensure secure data transmission. It is not possible to embed preference center into your own server environment.
+
+- **Guidance:**
+  You can use marketing form with prefill to build a custom preference management experience hosted on your own server environment.
+
 ## Consent transition FAQ
 
-### Can I continue using outbound marketing's subscription center after outbound is removed?
-The outbound marketing subscription center isn't available once outbound marketing is removed.
+### Can I continue using consent based on the Contact DoNotBulkEmail attribute?
 
-### Can I embed a preference center on my own web page?
-Not at this time. 
- 
+The `DoNotBulEmail` and `DoNotEmail` attributes will be still available after outbound marketing is removed, as these attributes are also used by other Dynamics applications. However, the real-time journeys preference center can not update these attributes. You can 
+
+### Can I continue using the subscription list?
+
+### How to update contact or lead details with preference center?
+
+Not at this time.
+
 [!INCLUDE [transition-comments](./includes/transition-comments.md)]
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
