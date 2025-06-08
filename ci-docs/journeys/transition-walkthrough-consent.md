@@ -28,7 +28,7 @@ You can transition the consent by completing the following steps:
 
 When capturing consent from contacts, implementing a double opt-in (DOI) feature is sometimes necessary. You can [activate the DOI for your compliance profile in real-time journeys](real-time-marketing-double-opt-in.md).
 
-## Outbound marketing subscription center are no longer available after outbound is removed
+## Outbound marketing subscription center is no longer available after outbound is removed
 
 - The outbound marketing subscription center isn't available once outbound marketing is removed.
 - It won't be possible to send emails including *Unsubscribe* link referring to subscription center.
