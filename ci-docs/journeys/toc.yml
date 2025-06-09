@@ -44,6 +44,8 @@
     items:
     - name: Overview
       href: transition-walkthrough-functional.md
+    - name: Channels and message sending
+      href: transition-walkthrough-channels.md
     - name: Consent
       href: transition-walkthrough-consent.md
     - name: Consent management and double opt-in
@@ -176,7 +178,7 @@
           href: email-properties.md
         - name: Check your work using previews and test sends
           href: email-preview.md
-        - name: "Preview: Prevent sending emails to duplicated email addresses"
+        - name: Prevent sending emails to duplicated email addresses (preview)
           href: email-deduplication.md
         - name: Email accessibility checker
           href: email-accessibility.md
