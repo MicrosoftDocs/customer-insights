@@ -21,7 +21,7 @@ Key benefits include:
 - **Simplified data configuration**: Removing unwanted data at the source eliminates the need to create rules in multiple locations to avoid incorporating the unwanted data. Unification, segments, measures, activities, and predictive insights will use the filtered source data.
 - **Improved data quality**: Removing old or obsolete data at the source prevents it from being accidentally included in your results, such as when a new team member creates a segment that includes obsolete data.
 
-## Preview limitations
+Preview limitations include:
 
 - [The preview of a source table's data](tables.md#explore-a-specific-tables-data) shows the full, unfiltered data.
 - The export of a source table ingested in .csv or .parquet format contains the full, unfiltered data.
