@@ -44,7 +44,7 @@
     items:
     - name: Overview
       href: transition-walkthrough-functional.md
-    - name: Cahnnels and message sending
+    - name: Channels and message sending
       href: transition-walkthrough-channels.md
     - name: Consent
       href: transition-walkthrough-consent.md
