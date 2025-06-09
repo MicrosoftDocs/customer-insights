@@ -34,9 +34,8 @@ You might want to pause a journey when:
 When a journey is paused:
 
 - No new customers enter the journey.
-- Customers already in the journey continue unless they hit a “Wait for trigger” or “Wait for email interaction” step. However, if the wait tile is configured to time out before the paused journey is resumed, the customer flows to the next step.
-- For all other steps, customers proceed through the journey as usual.
-- For the general availability update of this feature, triggers that fire during the paused period are queued. If the queue exceeds a threshold, additional triggers may be dropped.
+- For public preview, customers who have already entered the journey will finish the journey during the paused period. 
+- For the general availability update of this feature, triggers that fire during the paused period are queued. If the queue exceeds a threshold, additional triggers may be dropped. And for journeys created after the general availability release which have conditional waiting branches holding customers at those branches will pause at the following message step if the condition is met during the paused period. For example, if the journey is paused for twenty one days and there is a waiting tile before an email which is set for three days, customers who are behind the three day waiting tile will flow to the email and be paused there until the journey is resumed or permanently stopped. 
 - You can pause a journey for up to 21 days.
 
 > [!NOTE]
