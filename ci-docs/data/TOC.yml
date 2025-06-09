@@ -149,7 +149,7 @@
   items:
     - name: View tables in Customer Insights - Data
       href: tables.md
-    - name: Filter out unwanted data from your ingested data
+    - name: Filter out unwanted data from your ingested data (preview)
       href: tables-filters.md
     - name: Review the table schemas in Common Data Model
       href: table-schemas.md

@@ -10,7 +10,7 @@ ms.author: sstabbert
 
 # View tables in Customer Insights - Data
 
-After [configuring your data sources](data-sources.md), evaluate the quality of the ingested data on the **Tables** page under the **Source** tab. Multiple capabilities of Dynamics 365 Customer Insights - Data are built around these tables. Reviewing them closely can help you validate the output of those capabilities. [Remove unwanted rows](tables-filters.md) from your source data before processing in Customer Insights - Data.
+After [configuring your data sources](data-sources.md), evaluate the quality of the ingested data on the **Tables** page under the **Source** tab. Multiple capabilities of Dynamics 365 Customer Insights - Data are built around these tables. Reviewing them closely can help you validate the output of those capabilities. [Remove unwanted rows (preview)](tables-filters.md) from your source data before processing in Customer Insights - Data.
 
 As you work in Customer Insights - Data enriching your data or creating segments, measures, activities, and predictions, the tables that are created from those actions display on the **Tables** page under the **Output** tab.
 

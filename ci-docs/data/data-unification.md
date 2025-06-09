@@ -1,7 +1,7 @@
 ---
 title: "Data unification overview"
 description: "Learn how to unify your customer data sources to create a single master dataset of customer profiles in Customer Insights - Data."
-ms.date: 06/03/2025
+ms.date: 06/09/2025
 ms.reviewer: v-wendysmith
 ms.topic: overview
 author: Scott-Stabbert
@@ -11,7 +11,7 @@ ms.custom: bap-template
 
 # Data unification overview
 
-After [setting up the data sources](data-sources.md), you then unify the data. Unification combines your various customer data sources and creates a single customer profile record per customer. Unification eliminates duplicate data and combines all the important fields from your various data sources into a single record, eliminating data silos. Before unification, we recommend that you review your ingested source data and [remove any unwanted rows](tables-filters.md).
+After [setting up the data sources](data-sources.md), you then unify the data. Unification combines your various customer data sources and creates a single customer profile record per customer. Unification eliminates duplicate data and combines all the important fields from your various data sources into a single record, eliminating data silos. Before unification, we recommend that you review your ingested source data and [remove any unwanted rows (preview)](tables-filters.md).
 
 Data can be unified on a single table or multiple tables. Tables were previously called entities.
 
