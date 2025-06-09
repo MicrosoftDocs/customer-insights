@@ -1,5 +1,5 @@
 ---
-title: Transition channels & message sending
+title: Transition channels and message sending
 description: Transition your channels and message sending to real-time journeys in Dynamics 365 Customer Insights - Journeys.
 ms.date: 06/09/2025
 ms.topic: how-to
@@ -10,18 +10,27 @@ search.audienceType:
   - customizer
   - enduser
 ---
-# Transition channels & message sending
+
+# Transition channels and message sending
 
 > [!IMPORTANT]
 > **The [outbound marketing](user-guide.md) module will be removed from Customer Insights - Journeys on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](transition-overview.md)
 
+In Dynamics 365 Customer Insights – Journeys, marketing channels and message delivery mechanisms help you create meaningful customer experiences. As organizations switch from traditional outbound marketing to real-time journeys, these channels become even more important. This article explains how to transition channels and messages to real-time journeys.
+
 ## Guidance on specific capabilities
 
-See below for guidance on specific capabilities that are done differently in real-time or are not yet available. Capabilities not listed here are currently not prioritized. We strongly recommend that you do not wait for these capabilities and complete your transition to real-time using alternative approaches.
+This section gives guidance on capabilities that work differently in real-time journeys or aren't available yet. Capabilities not listed here aren't prioritized. Don't wait for these capabilities—finish your transition to real-time journeys using alternative approaches.
 
-### Prevent email duplications
-- **Details:** Ability to prevent sending duplicated emails to the same email address.
-- **Guidance:** Available, see [Preview: Prevent sending emails to duplicated email addresses - Dynamics 365 Customer Insights | Microsoft Learn](https://learn.microsoft.com/en-us/dynamics365/customer-insights/journeys/email-deduplication#known-issues)
+### Prevent email duplication
 
-### Custom Channels
-Custom channels don't have migration tools and need to be re-implemented in real-time journeys.
+- **Details**: Lets you prevent sending duplicate emails to the same email address.
+- **Guidance**: This capability is available. See [Prevent sending emails to duplicated email addresses (preview)](email-deduplication.md).
+
+### Custom channels
+
+Custom channels don't have migration tools and need to be reimplemented in real-time journeys.
+
+[!INCLUDE [transition-comments](./includes/transition-comments.md)]
+
+[!INCLUDE [footer-include](./includes/footer-banner.md)]
