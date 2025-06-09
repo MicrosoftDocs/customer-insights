@@ -1,5 +1,5 @@
 ---
-title: "Preview: Prevent sending emails to duplicated email addresses"
+title: Prevent sending emails to duplicated email addresses (preview)
 description: Learn how to deduplicate email addresses in Dynamics 365 Customer Insights - Journeys.
 ms.date: 02/01/2024
 ms.topic: how-to
@@ -11,18 +11,15 @@ search.audienceType:
   - enduser
 ---
 
-# Preview: Prevent sending emails to duplicated email addresses
+# Prevent sending emails to duplicated email addresses (preview)
 
-> [!IMPORTANT]
-> A preview feature is a feature that is not complete, but is made available before it’s officially in a release so customers can get early access and provide feedback. Preview features aren’t meant for production use and may have limited or restricted functionality.
-> 
-> Microsoft doesn't provide support for this preview feature. Microsoft Dynamics 365 Technical Support won’t be able to help you with issues or questions. Preview features aren’t meant for production use, especially to process personal data or other data that are subject to legal or regulatory compliance requirements.
-
-Email deduplication allows you to avoid sending duplicate emails when multiple contacts share the same email address. Email deduplication is a general setting that applies only to segment-based journeys and is disabled by default.
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 When email deduplication is enabled, the journey checks the email addresses of the contacts in the segment (once they reach the email tile) and only send one email to each unique address. For example, if three contacts have the same email address, only one of them receives the email. The other two are reported as **blocked** under the **Duplicate recipient address** category in the **Delivery and interaction details**.
 
 When email deduplication is disabled (default), the journey sends the email to every contact in the segment, even if they share an email address.
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note.md)]
 
 ## How to enable email deduplication
 
