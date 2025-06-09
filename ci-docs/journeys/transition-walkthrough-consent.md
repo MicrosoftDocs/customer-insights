@@ -3,7 +3,7 @@ title: Transition consent
 description: Learn how to transition consent capabilities from outbound marketing to real-time journeys in Dynamics 365 Customer Insights - Journeys.
 ms.date: 06/08/2025
 ms.topic: article
-author: alfergus
+author: petrjantac
 ms.author: alfergus
 search.audienceType: 
   - admin
@@ -16,67 +16,61 @@ search.audienceType:
 > [!IMPORTANT]
 > **The [outbound marketing](user-guide.md) module will be removed from Customer Insights - Journeys on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](transition-overview.md)
 
-Consent is an essential requirement that allows customers of Customer Insights – Journeys to send marketing messages. Customers who already use outbound marketing can transition consent settings to real-time journeys. Consent management, however, is more sophisticated in real-time journeys. The differences and how to transition consent are described in: [Consent management and double opt-in transition guidance](real-time-marketing-consent-transition.md). This article also describes how to migrate subscription lists to real-time journeys to send out segment-based newsletters. For a more detailed discussion, see [Understanding consent management in Dynamics 365 Customer Insights - Journeys - Dynamics FastTrack Blogs](https://community.dynamics.com/blogs/post/?postid=8b2a4ee8-1069-ee11-a81c-000d3a7a1a66)
+Consent lets Customer Insights – Journeys customers send marketing messages. If you use outbound marketing, you can move consent settings to real-time journeys. Consent management is more advanced in real-time journeys. Learn about the differences and how to move consent in [Consent management and double opt-in transition guidance](real-time-marketing-consent-transition.md). This article also explains how to move subscription lists to real-time journeys to send segment-based newsletters. For more information, see [Understanding consent management in Dynamics 365 Customer Insights - Journeys - Dynamics FastTrack Blogs](https://community.dynamics.com/blogs/post/?postid=8b2a4ee8-1069-ee11-a81c-000d3a7a1a66)
 
-You can transition the consent by completing the following steps:
+To move consent, follow these steps:
 
-1. Create a real-time journeys compliance profile with preference center.
-1. Configure topics that match subscription lists.
-1. Use the Load Consent tool to copy consent from contacts and subscription lists.
-1. Switch emails to use the newly created compliance profile.
-1. Recreate segments based on topics (optional).
+1. Create a real-time journeys compliance profile with a [preference center](real-time-marketing-preference-centers.md).
+1. Set up topics that match subscription lists.
+1. Use the **Load Consent** tool to copy consent from contacts and subscription lists.
+1. Switch emails to use the new compliance profile.
+1. Recreate segments based on topics if needed.
 
-When you collect consent, it can be necessary in some cases to implement a double opt-in (DOI) process You can [activate the DOI for your compliance profile in real-time journeys](real-time-marketing-double-opt-in.md).
+Sometimes, you need to use a double opt-in (DOI) process when you collect consent. Learn how to turn on DOI for your compliance profile in [Double opt-in in real-time journeys](real-time-marketing-double-opt-in.md).
 
-## Outbound marketing subscription center is no longer available after outbound is removed
+## The outbound marketing subscription center isn't available after outbound marketing is removed
 
-- The outbound marketing subscription center isn't available once outbound marketing is removed.
-- It isn't possible to send emails including *Unsubscribe* link referring to subscription center.
-- The real-time journey *compliance profile with subscription center* stops working after outbound is removed.
-- The existing real-time journey sending emails using *compliance profile with subscription center* are stopped after outbound is removed.
+- The outbound marketing subscription center isn't available after outbound marketing is removed.
+- You can't send emails that include an *Unsubscribe* link referring to the subscription center.
+- The real-time journeys *compliance profile with subscription center* stops working after outbound marketing is removed.
+- Existing real-time journeys that send emails using a *compliance profile with subscription center* stop after outbound marketing is removed.
 
 > [!IMPORTANT]
-> The **Unsubscribe** link in an already sent email that points to the *outbound marketing subscription center* can't be redirected to the *real-time journeys preference center*
+> An **Unsubscribe** link in an already sent email that points to an *outbound marketing subscription center* can't be redirected to the real-time journeys preference center.
 >
-> **Once outbound marketing is removed, all *Unsubscribe* links associated with the outbound subscription center cease to function**. That may lead to noncompliance with privacy regulations if no alternative is in place.
+> After outbound marketing is removed, all *Unsubscribe* links associated with the outbound marketing subscription center stop working. This can lead to noncompliance with privacy regulations if you don't have an alternative approach in place.
 >
-> Begin using real-time journeys preference centers with a sufficient transition window ahead of outbound marketing removal. This ensures continuity and compliance with data privacy requirements.
+> Start using the real-time journeys preference centers with enough transition time before outbound marketing is removed. This helps ensure continuity and compliance with data privacy requirements.
 
 ## Guidance on specific capabilities
 
-See the following guidance on specific capabilities that are done differently in real-time or aren't yet available. Capabilities not listed here are currently not prioritized. We strongly recommend that you don't wait for these capabilities and complete your transition to real-time using alternative approaches.
+This section gives guidance on capabilities that work differently in real-time journeys or aren't available yet. Capabilities not listed here aren't prioritized. Don't wait for these capabilities—finish your transition to real-time journeys with alternative approaches.
 
-### Disable opting out of topic or purpose in Marketing forms, unintentional opt-out
+### Disable opting out of topics or purposes in marketing forms and unintentional opt-out
 
-- **Details:**
-  When a user submits a marketing or event registration form, they're automatically opted out of any purposes or topics that they don't explicitly select on the form.
-
-- **Guidance:**
-  We plan to enhance form configuration options to let you define whether marketing or event registration form submission can result in an opt-out. The [form prefill](real-time-marketing-form-prefill.md) feature also helps prevent unintentional opt-outs.
+- **Details**: When a user submits a marketing or event registration form, they're automatically opted out of any purposes or topics they don't explicitly select on the form.
+- **Guidance**: We're enhancing form configuration options so you can define whether marketing or event registration form submission results in an opt-out. The [form prefill](real-time-marketing-form-prefill.md) feature also helps prevent unintentional opt-outs.
 
 ### Embed a preference center on my own web page
 
-- **Details:**
-  The preference center is hosted on Dynamics infrastructure to improve availability and ensure secure data transmission. It isn't possible to embed preference center into your own server environment.
-
-- **Guidance:**
-  You can use marketing form with prefill to build a custom preference management experience hosted on your own server environment.
+- **Details**: The preference center is hosted on Dynamics 365 infrastructure to improve availability and ensure secure data transmission. You can't embed the preference center into your own server environment.
+- **Guidance**: Use marketing forms with prefill to build a custom preference management experience hosted on your own server environment.
 
 ## Consent transition FAQ
 
-### Can I continue using consent based on the Contact DoNotBulkEmail attribute?
+### Can I continue using consent based on the contact `DoNotBulkEmail` attribute?
 
-The `DoNotBulkEmail` and `DoNotEmail` attributes will remain available even after outbound marketing is removed, as they're also used by other Dynamics applications. However, the real-time journeys preference center can't update these attributes and it's recommended to use the new consent model based on contact point consent.
+The `DoNotBulkEmail` and `DoNotEmail` attributes stay available even after outbound marketing is removed, because they're also used by other Dynamics 365 applications. However, the real-time journeys preference center can't update these attributes, and it's best to use the new consent model based on contact-point consent.
 
-In case you need to allow your customers to update the `DoNotBulkEmail` attribute through the Unsubscribe link in email, you can create a *compliance profile with external link* and use a marketing form with prefill enabled to allow users to manage their preferences. Ensure the "Check contact consent in real-time journeys" feature switch in setting is enabled. This ensures that email sending respects the values of the DoNotBulkEmail and DoNotEmail attributes.
+If you want your customers to update the `DoNotBulkEmail` attribute through an unsubscribe link in an email, create a compliance profile with an external link and use a marketing form with prefill enabled so users can manage their preferences. Make sure the "Check contact consent in real-time journeys" [feature switch](admin-feature-switches.md) in the settings is enabled. This makes sure that email sending respects the values of the `DoNotBulkEmail` and `DoNotEmail` attributes.
 
 ### Can I continue using the subscription list?
 
-Your existing subscription list aren't deleted when outbound marketing is removed. However, it's no longer possible to subscribe or unsubscribe from these. To maintain a functional preference management experience, it's recommended to use the Load consent feature to transition existing subscription lists into Topics supported by real-time marketing.
+Your existing subscription lists aren't deleted when outbound marketing is removed. However, you can't subscribe or unsubscribe from these anymore. To keep a working preference management experience, use the **Load consent** feature to move existing subscription lists into topics supported by real-time journeys.
 
-### How to update contact or lead details with preference center?
+### How do you update contact or lead details with the preference center?
 
-The preference center form can't update lead or contact details. For scenarios requiring updates to these records, use a marketing form with form prefill enabled.
+The preference center form can't update lead or contact details. If you need to update these records, use a marketing form with form prefill enabled.
 
 [!INCLUDE [transition-comments](./includes/transition-comments.md)]
 
