@@ -31,6 +31,12 @@ This section gives guidance on capabilities that work differently in real-time j
 
 Custom channels don't have migration tools and need to be reimplemented in real-time journeys.
 
+## Frequently asked questions about the cahnnels and message sending transition
+
+## Do I have to go through IP warmp up for email sending when I move to RTM?
+
+No. You don't have to go through the warmp up process for sending emails when you transition to real-time journeys, and you can still use the same authenticated domains.
+
 [!INCLUDE [transition-comments](./includes/transition-comments.md)]
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
