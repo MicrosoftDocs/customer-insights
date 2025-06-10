@@ -35,47 +35,47 @@ For each custom channel solution, you need to:
 
     Here's an example of the relationship in XML:
 
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<EntityRelationships xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-<EntityRelationship Name="msdyn_ChannelInstance_extendedentityid_cr65f_samplechannelinstance">
-    <EntityRelationshipType>OneToMany</EntityRelationshipType>
-    <IsCustomizable>0</IsCustomizable>
-    <IntroducedVersion>1.0.0.0</IntroducedVersion>
-    <IsHierarchical>0</IsHierarchical>
-    <ReferencingEntityName>msdyn_ChannelInstance</ReferencingEntityName>
-    <ReferencedEntityName>cr65f_samplechannelinstance</ReferencedEntityName>
-    <CascadeAssign>NoCascade</CascadeAssign>
-    <CascadeDelete>RemoveLink</CascadeDelete>
-    <CascadeReparent>NoCascade</CascadeReparent>
-    <CascadeShare>NoCascade</CascadeShare>
-    <CascadeUnshare>NoCascade</CascadeUnshare>
-    <CascadeRollupView>NoCascade</CascadeRollupView>
-    <IsValidForAdvancedFind>1</IsValidForAdvancedFind>
-    <ReferencingAttributeName>msdyn_extendedentityId</ReferencingAttributeName>
-    <RelationshipDescription>
-      <Descriptions>
-        <Description description="" languagecode="1033" />
-      </Descriptions>
-    </RelationshipDescription>
-    <EntityRelationshipRoles>
-      <EntityRelationshipRole>
-        <NavPaneDisplayOption>UseCollectionName</NavPaneDisplayOption>
-        <NavPaneArea>Details</NavPaneArea>
-        <NavPaneOrder>10000</NavPaneOrder>
-        <NavigationPropertyName>msdyn_extendedentityid_cr65f_samplechannelinstance</NavigationPropertyName>
-        <RelationshipRoleType>1</RelationshipRoleType>
-      </EntityRelationshipRole>
-      <EntityRelationshipRole>
-        <NavigationPropertyName>msdyn_ChannelInstance_extendedentityid_cr65f_samplechannelinstance</NavigationPropertyName>
-        <RelationshipRoleType>0</RelationshipRoleType>
-      </EntityRelationshipRole>
-    </EntityRelationshipRoles>
-  </EntityRelationship>
-```
-  > [!IMPORTANT]
-  > - You must create a file with the same name of the table you created for your custom channel under the unpacked solution in the path "Other\Relationships" and put the XML file with the relationship definition there.
-  > - You need to add a new line in the "Relationships.xml" file under the unpacked solution in the "Other" path. The name value is the same string you wrote in the third line of the XML file ("`msdyn_ChannelInstance_extendedentityid_cr65f_samplechannelinstance`" in the above-example.)
+    ```xml
+    <?xml version="1.0" encoding="utf-8"?>
+    <EntityRelationships xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <EntityRelationship Name="msdyn_ChannelInstance_extendedentityid_cr65f_samplechannelinstance">
+        <EntityRelationshipType>OneToMany</EntityRelationshipType>
+        <IsCustomizable>0</IsCustomizable>
+        <IntroducedVersion>1.0.0.0</IntroducedVersion>
+        <IsHierarchical>0</IsHierarchical>
+        <ReferencingEntityName>msdyn_ChannelInstance</ReferencingEntityName>
+        <ReferencedEntityName>cr65f_samplechannelinstance</ReferencedEntityName>
+        <CascadeAssign>NoCascade</CascadeAssign>
+        <CascadeDelete>RemoveLink</CascadeDelete>
+        <CascadeReparent>NoCascade</CascadeReparent>
+        <CascadeShare>NoCascade</CascadeShare>
+        <CascadeUnshare>NoCascade</CascadeUnshare>
+        <CascadeRollupView>NoCascade</CascadeRollupView>
+        <IsValidForAdvancedFind>1</IsValidForAdvancedFind>
+        <ReferencingAttributeName>msdyn_extendedentityId</ReferencingAttributeName>
+        <RelationshipDescription>
+          <Descriptions>
+            <Description description="" languagecode="1033" />
+          </Descriptions>
+        </RelationshipDescription>
+        <EntityRelationshipRoles>
+          <EntityRelationshipRole>
+            <NavPaneDisplayOption>UseCollectionName</NavPaneDisplayOption>
+            <NavPaneArea>Details</NavPaneArea>
+            <NavPaneOrder>10000</NavPaneOrder>
+            <NavigationPropertyName>msdyn_extendedentityid_cr65f_samplechannelinstance</NavigationPropertyName>
+            <RelationshipRoleType>1</RelationshipRoleType>
+          </EntityRelationshipRole>
+          <EntityRelationshipRole>
+            <NavigationPropertyName>msdyn_ChannelInstance_extendedentityid_cr65f_samplechannelinstance</NavigationPropertyName>
+            <RelationshipRoleType>0</RelationshipRoleType>
+          </EntityRelationshipRole>
+        </EntityRelationshipRoles>
+      </EntityRelationship>
+    ```
+      > [!IMPORTANT]
+      > - You must create a file with the same name of the table you created for your custom channel under the unpacked solution in the path "Other\Relationships" and put the XML file with the relationship definition there.
+      > - You need to add a new line in the "Relationships.xml" file under the unpacked solution in the "Other" path. The name value is the same string you wrote in the third line of the XML file ("`msdyn_ChannelInstance_extendedentityid_cr65f_samplechannelinstance`" in the above-example.)
 
 1. Create a form to expose the configuration fields.
 
