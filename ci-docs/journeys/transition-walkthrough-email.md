@@ -1,5 +1,5 @@
 ---
-title: Transition emails and assets
+title: Transition emails, content settings and assets
 description: Transition your emails and assets to real-time journeys in Dynamics 365 Customer Insights - Journeys.
 ms.date: 06/04/2025
 ms.topic: concept-article
@@ -11,7 +11,7 @@ search.audienceType:
   - enduser
 ---
 
-# Transition emails and assets
+# Transition emails, content settings and assets
 
 > [!IMPORTANT]
 > **The [outbound marketing](user-guide.md) module will be removed from Customer Insights - Journeys on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](transition-overview.md)
@@ -33,6 +33,16 @@ You can use the same tool to import email templates. To import templates, go to 
 
 > [!TIP]
 > To avoid unintended overwrites, import the content block first along with all related emails before making any modifications. The content block dependency from outbound marketing is stored in the `msdynmkt_obmmigrationinfo` column within the `msdynmkt_fragment` table. Clearing this value prevents automatic overwriting during imports.
+
+## Content Settings
+Most of the **Content settings** from Outbound (e.g. social link, senders addresses) can be configured under **Brand profile** in Real-time marketing. 
+ You can define multiple brand profiles and also set a default Brand profile to apply automatically when no specific one is selected.
+ 
+<img width="407" alt="image" src="https://github.com/user-attachments/assets/293d707a-a4d7-4504-9da9-e71684dd17bd" />
+
+> [!NOTE]
+Please note that the token {{msdyncrm_contentsettings.ccf_businessname}} used in Outbound does not work in Real-time marketing.
+In Real-time marketing personalization must reference the Brand profile fields or use Default settings if no Brand profile is explicitly associated. 
 
 ## Asset library
 
