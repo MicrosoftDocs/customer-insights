@@ -40,8 +40,6 @@ Most of the **content settings** from outbound marketing (for example, social li
 
 :::image type="content" source="media/brand-profile.png" alt-text="Screenshot of a new brand profile." lightbox="media/brand-profile.png":::
 
-<img width="407" alt="image" src="https://github.com/user-attachments/assets/293d707a-a4d7-4504-9da9-e71684dd17bd" />
-
 > [!NOTE]
 > The token `{{msdyncrm_contentsettings.ccf_businessname}}` used in outbound marketing doesn't work in real-time marketing. In real-time marketing, personalization must reference the brand profile fields or use the default settings if no brand profile is explicitly associated.
 
