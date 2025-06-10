@@ -1,9 +1,9 @@
 ---
 title: Transition channels and message sending
 description: Transition your channels and message sending to real-time journeys in Dynamics 365 Customer Insights - Journeys.
-ms.date: 06/09/2025
+ms.date: 06/10/2025
 ms.topic: how-to
-author: alfergus
+author: Joni-M
 ms.author: alfergus
 search.audienceType: 
   - admin
@@ -30,6 +30,12 @@ This section gives guidance on capabilities that work differently in real-time j
 ### Custom channels
 
 Custom channels don't have migration tools and need to be reimplemented in real-time journeys.
+
+## Frequently asked questions about the channels and message sending transition
+
+## Do I need to go through IP warm-up for email sending when I move to real-time journeys?
+
+No. You don't have to go through the warm-up process for sending emails when you transition to real-time journeys, and you can still use the same authenticated domains.
 
 [!INCLUDE [transition-comments](./includes/transition-comments.md)]
 
