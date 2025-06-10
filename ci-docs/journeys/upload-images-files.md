@@ -32,7 +32,7 @@ ms.custom:
 Shareable assets are critical for meaningful and successful customer experiences. The files you use must be available publicly on the internet so your emails and pages can access and display them. The Dynamics 365 Customer Insights - Journeys library stores images, documents, and videos, hosting them publicly and providing an easy way to find and link to them while creating content. The library is shared across real-time and outbound marketing, making it easy to upload and use assets where you need them. 
 
 > [!NOTE]
-> The following file types are supported: AVI, CS, CSS, DOC, DOCX, EPUB,GIF, JPG, JPEG, MP3, MP4, MPEG, MPG, ODP, ODS, ODT, PDF, PNG, PPT, PPTX, PS, RTF, SVG, TAR, TGZ, TXT, WMV, XLS, XLSX, XML, ZIP
+> The following file types are supported: AVI, CS, CSS, DOC, DOCX, EPUB,GIF, ICS, JPG, JPEG, MP3, MP4, MPEG, MPG, ODP, ODS, ODT, PDF, PNG, PPT, PPTX, PS, RTF, SVG, TAR, TGZ, TXT, VCF, WMV, XLS, XLSX, XML, ZIP
 >
 > You'll see an error message if you attempt to upload a file of an unsupported type.
 >
