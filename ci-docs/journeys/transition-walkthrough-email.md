@@ -1,5 +1,5 @@
 ---
-title: Transition emails and assets
+title: Transition emails, content settings, and assets
 description: Transition your emails and assets to real-time journeys in Dynamics 365 Customer Insights - Journeys.
 ms.date: 06/04/2025
 ms.topic: concept-article
@@ -11,28 +11,37 @@ search.audienceType:
   - enduser
 ---
 
-# Transition emails and assets
+# Transition emails, content settings, and assets
 
 > [!IMPORTANT]
 > **The [outbound marketing](user-guide.md) module will be removed from Customer Insights - Journeys on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](transition-overview.md)
 
 ## Emails
 
-It's not possible to use outbound marketing e-mails directly in real-time journeys. However, you can use the **Import emails** button in the real-time journeys email editor to select and transfer any outbound marketing emails you want to use.
+It's not possible to use outbound marketing emails directly in real-time journeys. However, you can use the **Import emails** button in the real-time journeys email editor to select and transfer any outbound marketing emails you want to use.
 
 > [!div class="mx-imgBorder"]
 > ![Select emails screenshot.](media/transition-select-emails.png "Select emails screenshot")
 
-Importing outbound marketing emails not only saves time, but also protects your investment in expensive designs and layouts. During the import, most of the functionality like personalization and content blocks is also transitioned. After the import, make sure to check to see if all settings and personalizations are correct. Also, you need to choose the right compliance settings for the email before you can go live and use the email in a journey.
+Importing outbound marketing emails not only saves time but also protects your investment in expensive designs and layouts. During the import, most of the functionality, like personalization and content blocks is also transitioned. After the import, make sure to check to see if all settings and personalizations are correct. Also, you need to choose the right compliance settings for the email before you can go live and use the email in a journey.
 
-While reviewing the imported emails, it's worth considering whether you should start using [brand profiles](brand-profiles.md). Brand profiles provide the ability to standardize content like links to your company’s LinkedIn in a similar manner that content settings do for outbound marketing.
+While reviewing the imported emails, it's worth considering whether you should start using [brand profiles](brand-profiles.md). Brand profiles provide the ability to standardize content, like links to your company’s LinkedIn, in a similar manner that content settings do for outbound marketing.
 
 You can use the same tool to import email templates. To import templates, go to the email templates area in the real-time journeys email editor and select the **Import template** option.
 
-**Known limitations when importing emails with content blocks**: When you import emails with the *Import content blocks used in the selected emails* option selected, each email reimports the associated content block(s), overriding any existing version. This results in the loss of any modifications made to the imported content blocks in Real-time marketing (RTM).
+**Known limitations when importing emails with content blocks**: When you import emails with the *Import content blocks used in the selected emails* option selected, each email re-imports the associated content block(s), overriding any existing version. This results in the loss of any modifications made to the imported content blocks in Real-time marketing (RTM).
 
 > [!TIP]
-> To avoid unintended overwrites, import the content block first along with all related emails before making any modifications. The content block dependency from outbound marketing is stored in the `msdynmkt_obmmigrationinfo` column within the `msdynmkt_fragment` table. Clearing this value prevents automatic overwriting during imports.
+> To avoid unintended overwrites, import the content block first, along with all related emails, before making any modifications. The content block dependency from outbound marketing is stored in the `msdynmkt_obmmigrationinfo` column within the `msdynmkt_fragment` table. Clearing this value prevents automatic overwriting during imports.
+
+## Content settings
+
+Most of the **content settings** from outbound marketing (for example, social links or sender addresses) can be configured under **brand profiles** in real-time marketing. You can define multiple brand profiles and also set a default brand profile to apply automatically when no specific profile is selected.
+
+:::image type="content" source="media/brand-profile.png" alt-text="Screenshot of a new brand profile." lightbox="media/brand-profile.png":::
+
+> [!NOTE]
+> The token `{{msdyncrm_contentsettings.ccf_businessname}}` used in outbound marketing doesn't work in real-time marketing. In real-time marketing, personalization must reference the brand profile fields or use the default settings if no brand profile is explicitly associated.
 
 ## Asset library
 
