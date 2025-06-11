@@ -43,6 +43,4 @@ With this capability, you have even more options to consume data with more data 
 
 You can also export your data using Microsoft Fabric capabilities and its native connectors. Alternatively, if you wish to use a third-party system to store and process Customer Insights - Journey data you can access and export interaction data into your own storage by following these steps: [Leveraging Customer Inishgts - Journeys interaction data without Fabric](https://community.dynamics.com/blogs/post/?postid=75a63967-f115-f011-998a-7c1e525b5e9d).
 
-[!INCLUDE [transition-comments](./includes/transition-comments.md)]
-
 [!INCLUDE [footer-include](./includes/footer-banner.md)]

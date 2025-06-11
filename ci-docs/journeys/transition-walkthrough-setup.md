@@ -20,8 +20,6 @@ A difference from outbound marketing that's immediately noticeable when setting 
 
 This doesn't mean that real-time journeys can't work with Power Pages as a publishing option for forms. The real-time journeys module has been decoupled from Power Pages because not every customer is able to use Power Pages. Some customers even have another content management system in place. For these customers, decoupling from Power Pages offers more flexibility in form publishing. Learn more: [Transition marketing pages and forms](transition-walkthrough-forms.md)
 
-Due to the lack of Power Pages requirement, the event management module also works differently from outbound marketing. Learn more: [Transition event management](transition-walkthrough-events.md)
-
-[!INCLUDE [transition-comments](./includes/transition-comments.md)]
+Due to the lack of Power Pages requirement, the event management module also works differently from outbound marketing. Learn more: [Transition event management](transition-walkthrough-events.md).
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]

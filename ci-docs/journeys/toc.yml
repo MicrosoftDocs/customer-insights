@@ -156,6 +156,8 @@
           href: email-theme.md
         - name: Use brand profiles in email
           href: brand-profiles-email.md
+        - name: Improve email accessibility for light and dark modes
+          href: email-dark-mode.md
         - name: Import outbound emails, templates, and content blocks to Customer Insights - Journeys
           href: real-time-marketing-import-email-to-real-time.md 
       - name: Enhance your email
