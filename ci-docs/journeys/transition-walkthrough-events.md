@@ -42,8 +42,8 @@ Event management comprises three areas:
 Creating and setting up events, tracks, sessions, speakers, and registrants is a similar experience in real-time journeys, but with every feature we implement, we make adjustments and improvements, please see the key highlights below:
 
 - Multi-session registration in real-time journeys events lets you manage the capacity of events and sessions more efficiently. For more information, see [Set up session-level registration](real-time-journeys-event-session.md).
-- Waitlist is now a status of a registration and works for both events and sessions at the same time. For more information, see [Preview: Set up and manage an event waitlist](ci-docs/journeys/set-up-and-manage-waitlist.md).
-- Custom registration fields are now managed in the form editor and answers are part of the form submission response. For more information, see [Create unmapped fields for registration forms (preview)](ci-docs/journeys/create-unmapped-fields-registration-forms.md)
+- Waitlist is now a status of a registration and works for both events and sessions at the same time. For more information, see [Preview: Set up and manage an event waitlist](set-up-and-manage-waitlist.md).
+- Custom registration fields are now managed in the form editor and answers are part of the form submission response. For more information, see [Create unmapped fields for registration forms (preview)](create-unmapped-fields-registration-forms.md)
 
 
 ### Event registration and publishing
@@ -96,7 +96,7 @@ There were multiple options on how to build an event registration experience in 
 - **Outbound marketing form for event registration** – Replace these forms with real-time journeys event registration forms. For more information, see [Open the event management work area](open-events.md).
 - **Custom solution using outbound marketing event management API (not using Angular application)** – Use the new events API. For more information, see [Using the events API in real-time journeys](developer/using-rtm-events-api.md).
 
-For more information, see [Transition event registration experience](ci-docs/journeys/migrate-event-registration.md)
+For more information, see [Transition event registration experience](migrate-event-registration.md)
 
 ## Other relevant features 
 - Set registration end date - On our roadmap, expected to release in October 2025 (subject to change).
@@ -133,7 +133,7 @@ No. Any events that are live and are accepting registrations have to have the re
 
 *What should I do if the features I need for event planning aren't available?*
 
-The most used features have a planned release date before the outbound removal date. We understand there might be some features that are important for your business and might not be available yet. You can *phase your transition*. Any events that don't need those features can be created as real-time events. You can also transition all your communication to real-time as outbound events can be used with real-time journeys and emails. This reduces the number of assets you need to transition closer to the date. You can also request an extension. For more information, see [How to request an extension](https://learn.microsoft.com/en-us/dynamics365/customer-insights/journeys/transition-faqs#i-cant-transition-by-the-outbound-marketing-removal-date-can-i-request-an-extension)
+The most used features have a planned release date before the outbound removal date. We understand there might be some features that are important for your business and might not be available yet. You can *phase your transition*. Any events that don't need those features can be created as real-time events. You can also transition all your communication to real-time as outbound events can be used with real-time journeys and emails. This reduces the number of assets you need to transition closer to the date. You can also request an extension. For more information, see [How to request an extension](https://learn.microsoft.com/dynamics365/customer-insights/journeys/transition-faqs#i-cant-transition-by-the-outbound-marketing-removal-date-can-i-request-an-extension)
 
 ## Blogs and workarounds
 - Cascaded fields where options provided in a field depend on a value in an earlier field that isn't yet supported. For more information, see the blog [Implementing cascading dropdown fields in real-time journeys forms](https://community.dynamics.com/blogs/post/?postid=ff86d88f-d892-ef11-ac21-6045bdd7e1ae).

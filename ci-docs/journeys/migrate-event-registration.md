@@ -36,13 +36,13 @@ The recommended migration path is to build a new event registration website usin
 - Edit the website design and layout using the visual editor in Power Pages studio.
 - Build multiple event registration websites.
 
-For more information, see [Build an event registration website using Power Pages](ci-docs/journeys/event-portal-template.md).
+For more information, see [Build an event registration website using Power Pages](event-portal-template.md).
 
 ## Event portal *not* hosted on Power Portals
 
 If you're currently hosting the Angular app event portal on your own infrastructure (not using Power Portals), you can keep using it but you need to maintain the app on your own. There will be no support for the Angular app.
 
-The recommended migration path is to build a new event registration experience using the new code snippet listing all your events and the real-time journeys event registration form. To track release date for this feature, visit [Create an event portal on your own website](https://learn.microsoft.com/en-us/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/create-event-portal-own-website). 
+The recommended migration path is to build a new event registration experience using the new code snippet listing all your events and the real-time journeys event registration form. To track release date for this feature, visit [Create an event portal on your own website](https://learn.microsoft.com/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/create-event-portal-own-website). 
 
 The code snippet listing your events can be used on the main page where you showcase all your events. The real-time journeys event registration form is reusable for multiple events and can list all sessions, speakers, and information associated with the selected event. You can create one registration page where you embed the real-time journeys event registration form. The registration form reads the `readableEventId` parameter from the URL to dynamically render details about the selected event.
 
