@@ -83,6 +83,6 @@ After outbound marketing is removed, marketing pages hosted on Power Portals wil
 - Marketing page lifecycle
 - Marketing page editor
 
-The underlying Power Pages data model used to host the marketing pages will be deprecated, which means that you'll need to migrate the whole portal to a new data model. Given the limitations, we strongly recommend rebuilding outbound marketing pages as a native Power Pages website. You can embed a real-time journeys marketing form into the Power Pages website. For a simple landing page with a form, you can also build a real-time journeys form and host it as a standalone page.
+The underlying Power Pages data model used to host the marketing pages will be deprecated, which means that you need to migrate the whole portal to a new data model. Given the limitations, we strongly recommend rebuilding outbound marketing pages as a native Power Pages website. You can embed a real-time journeys marketing form into the Power Pages website. For a simple landing page with a form, you can also build a real-time journeys form and host it as a standalone page.
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]

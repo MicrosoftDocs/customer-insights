@@ -39,12 +39,11 @@ Event management comprises three areas:
 
 ### Event setup
 
-Creating and setting up events, tracks, sessions, speakers, and registrants is a similar experience in real-time journeys, but with every feature we implement, we make adjustments and improvements, please see the key highlights below:
+Creating and setting up events, tracks, sessions, speakers, and registrants are a similar experience in real-time journeys. However, we make adjustments and improvements with every new feature we implement. Real-time journeys includes the following capabilities:
 
 - Multi-session registration in real-time journeys events lets you manage the capacity of events and sessions more efficiently. For more information, see [Set up session-level registration](real-time-journeys-event-session.md).
 - Waitlist is now a status of a registration and works for both events and sessions at the same time. For more information, see [Preview: Set up and manage an event waitlist](set-up-and-manage-waitlist.md).
 - Custom registration fields are now managed in the form editor and answers are part of the form submission response. For more information, see [Create unmapped fields for registration forms (preview)](create-unmapped-fields-registration-forms.md)
-
 
 ### Event registration and publishing
 
@@ -74,13 +73,13 @@ The following sections cover transition guidance for real-time events.
 
 ### Timing of the transition
 
-Real-time events are available for all customers. It's recommended to start transitioning as soon as possible. All events that don't require features in the roadmap should be created as real-time events by default.
+Real-time events are available for all customers. Start transitioning as soon as possible. All events that don't require features in the roadmap should be created as real-time events by default.
 
 The event schedule should also be taken into consideration when crafting the transition schedule. The key decision point is registration start and end date. If the registration period ends before the planned outbound marketing removal date, the event can still be created as outbound marketing event, even if the event takes place in the future. 
 
 ### Migration path
 
-To transition your events and related communication, please do the following steps:
+To transition your events and related communication:
 
 1. Migrate all event-related communication to real-time journeys regardless of whether you’re using outbound or real-time events. Journey orchestration, segmentation, and other assets also work with outbound event registrations.
 1. Identify new events you're planning to run and check whether there's any critical functionality stopping you from using real-time journeys. If there are no gaps identified, then create all new events in real-time journeys only.
@@ -101,8 +100,8 @@ For more information, see [Transition event registration experience](migrate-eve
 ## Other relevant features 
 - Set registration end date - On our roadmap, expected to release in October 2025 (subject to change).
 - Set up event passes and payment gateway - On our roadmap, expected to release in October 2025 (subject to change).
-- Recurring events - We do not have a published roadmap for this capability. You can set up the first event in the series and then use it as a template by using the “save as” functionality to create copies of the event. Alternatively, for simpler events, use can use sessions to represents events in the series.
-- Event templates - We do not have a published roadmap for this capability. Create an event that you will use as a starting point. Then use the “save as” functionality to create copies of the event that you can then edit and customize for your needs.
+- Recurring events - We do not have a published roadmap for this capability. You can set up the first event in the series and then use it as a template by using the “save as” functionality to create copies of the event. Alternatively, for simpler events, use can use sessions to represent events in the series.
+- Event templates - We do not have a published roadmap for this capability. Create an event that you use as a starting point. Then use the “save as” functionality to create copies of the event that you can then edit and customize for your needs.
 - Integration with ON24 - Contact On24 support for next steps. They can provide guidance for the existing customers.
 
 ## Frequently asked questions
@@ -145,8 +144,8 @@ If you're not using the out-of-the-box event record creation form, the way to di
 - **100000001** - Outbound marketing
 - **100000002** - Real-time journeys
 
-If the value is **null**, the record created will be an **outbound marketing** event. For non-customized forms and the out-of-the-box flow, this is automatically defined.
+If the value is **null**, the record created will be an **outbound marketing** event. For noncustomized forms and the out-of-the-box flow, this is automatically defined.
 
-Existing event forms that were customized for Outbound marketing events will not work for Real-time marketing events. Crucial tabs may be hidden on a customized form. For example, the "Website and Forms" tab is needed for Real-time events to operate as the registration form and session level settings are set on that tab.
+Existing event forms that were customized for Outbound marketing events won't work for Real-time marketing events. Crucial tabs may be hidden on a customized form. For example, the "Website and Forms" tab is needed for Real-time events to operate as the registration form and session level settings are set on that tab.
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
