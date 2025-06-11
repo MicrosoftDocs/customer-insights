@@ -58,6 +58,4 @@ The features listed below may be of interest as you transition from outbound mar
 - **Email address can only be from Contact/Lead**: Emails can only be sent to email addresses in contacts and leads.
   - *Guidance:* We don't plan to support sending to other email addresses. [Use the CC (carbon copy) field](real-time-marketing-add-cc-recipients.md), where you can use personalization to select an email address from any table related to contacts or leads.
 
-[!INCLUDE [transition-comments](./includes/transition-comments.md)]
-
 [!INCLUDE [footer-include](./includes/footer-banner.md)]

@@ -180,6 +180,4 @@ There's a contact threshold of 10 million contacts purchased that unlocks the ne
 
 To unlock the new scale, reach out to your Microsoft sales representative with your requirements. The end-to-end process to upgrade to the new scale is completed within two weeks.
 
-[!INCLUDE [transition-comments](./includes/transition-comments.md)]
-
 [!INCLUDE [footer-include](./includes/footer-banner.md)]

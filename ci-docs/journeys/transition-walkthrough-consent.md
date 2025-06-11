@@ -72,6 +72,4 @@ Your existing subscription lists aren't deleted when outbound marketing is remov
 
 The preference center form can't update lead or contact details. If you need to update these records, use a marketing form with form prefill enabled.
 
-[!INCLUDE [transition-comments](./includes/transition-comments.md)]
-
 [!INCLUDE [footer-include](./includes/footer-banner.md)]

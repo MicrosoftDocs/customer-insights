@@ -35,6 +35,4 @@ Customer Insights – Journeys does not receive data from LinkedIn forms. You wo
 
 To develop a custom integration, follow the guide in [LinkedIn Lead Sync Integration with Dynamics 365 Customer Insights – Journeys](https://community.dynamics.com/blogs/post/?postid=fb6ed89f-67a1-ef11-8a69-7c1e520b1f9b).
 
-[!INCLUDE [transition-comments](./includes/transition-comments.md)]
-
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
