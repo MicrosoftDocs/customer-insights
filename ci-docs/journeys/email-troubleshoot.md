@@ -1,7 +1,7 @@
 ---
 title: Troubleshoot email campaigns
 description: Troubleshooting and frequently asked questions for email campaigns in Dynamics 365 Customer Insights - Journeys.
-ms.date: 06/10/2025
+ms.date: 06/11/2025
 ms.topic: troubleshooting-general
 author: alfergus
 ms.author: alfergus
@@ -52,7 +52,8 @@ T-Online.de, a major German email provider, presents specific challenges for HTM
 ### Best practices
 
 #### Templates
-- We recommend creating new emails and to avoid using Customer Insights - Journey out of the box email templates.
+
+- Create templates based on new emails. Avoid directly customizing Customer Insights - Journeys's out-of-the-box email templates.
 
 #### Layout and responsiveness
 
