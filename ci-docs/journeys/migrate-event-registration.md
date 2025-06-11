@@ -1,10 +1,10 @@
 ---
 title: Migrate outbound marketing event registration to real-time journeys
 description: Learn how to migrate outbound marketing event registration to real-time journeys in Dynamics 365 Customer Insights - Journeys.
-ms.date: 02/06/2025
+ms.date: 06/11/2025
 ms.topic: upgrade-and-migration-article
 author: alfergus
-ms.author: alfergus
+ms.author: colinbirkett
 search.audienceType:
   - admin
   - enduser
@@ -36,11 +36,15 @@ The recommended migration path is to build a new event registration website usin
 - Edit the website design and layout using the visual editor in Power Pages studio.
 - Build multiple event registration websites.
 
+For more information, see [Build an event registration website using Power Pages](ci-docs/journeys/event-portal-template.md).
+
 ## Event portal *not* hosted on Power Portals
 
 If you're currently hosting the Angular app event portal on your own infrastructure (not using Power Portals), you can keep using it but you need to maintain the app on your own. There will be no support for the Angular app.
 
-The recommended migration path is to build a new event registration experience using the new code snippet listing all your events and the real-time journeys event registration form. The code snippet listing your events can be used on the main page where you showcase all your events. The real-time journeys event registration form is reusable for multiple events and can list all sessions, speakers, and information associated with the selected event. You can create one registration page where you embed the real-time journeys event registration form. The registration form reads the `readableEventId` parameter from the URL to dynamically render details about the selected event.
+The recommended migration path is to build a new event registration experience using the new code snippet listing all your events and the real-time journeys event registration form. To track release date for this feature, visit [Create an event portal on your own website](https://learn.microsoft.com/en-us/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/create-event-portal-own-website). 
+
+The code snippet listing your events can be used on the main page where you showcase all your events. The real-time journeys event registration form is reusable for multiple events and can list all sessions, speakers, and information associated with the selected event. You can create one registration page where you embed the real-time journeys event registration form. The registration form reads the `readableEventId` parameter from the URL to dynamically render details about the selected event.
 
 An alternative is to build a new event registration website using Power Pages studio or use the provided Power Pages template, as described in the [previous section](migrate-event-registration.md#event-portal-hosted-on-power-portals).
 
