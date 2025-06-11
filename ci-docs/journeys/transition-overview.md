@@ -73,6 +73,4 @@ If you're an existing outbound marketing user, you should see the "Enable" outbo
 | August 2024   | Announced that outbound marketing is being [removed after June 30, 2025](real-time-marketing-overview.md). In-product banner announcing outbound marketing removal added. Admin email and message in the message center. |
 | March 2025   | Email and message center notification to admins about product changes to support outbound marketing removal.          |
 
-[!INCLUDE [transition-comments](./includes/transition-comments.md)]
-
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
