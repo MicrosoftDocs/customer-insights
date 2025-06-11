@@ -51,6 +51,9 @@ T-Online.de, a major German email provider, presents specific challenges for HTM
 
 ### Best practices
 
+#### Templates
+- We recommend creating new emails and to avoid using Customer Insights - Journey out of the box email templates.
+
 #### Layout and responsiveness
 
 - Keep email width between 600–800px to avoid clipping or scaling down.
