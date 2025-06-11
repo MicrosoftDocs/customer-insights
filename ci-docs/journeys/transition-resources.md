@@ -53,6 +53,4 @@ These blogs give conceptual overviews on the benefits of moving your workflows t
 - [Understanding consent management in Dynamics 365 Customer Insights - Journeys - Dynamics FastTrack Blogs](https://community.dynamics.com/blogs/post/?postid=8b2a4ee8-1069-ee11-a81c-000d3a7a1a66)
 - [LinkedIn Lead Sync Integration with Dynamics 365 Customer Insights – Journeys](https://community.dynamics.com/blogs/post/?postid=fb6ed89f-67a1-ef11-8a69-7c1e520b1f9b)
 
-[!INCLUDE [transition-comments](./includes/transition-comments.md)]
-
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
