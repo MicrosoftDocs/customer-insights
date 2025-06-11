@@ -4,7 +4,7 @@ description: Learn how to migrate outbound marketing event registration to real-
 ms.date: 06/11/2025
 ms.topic: upgrade-and-migration-article
 author: alfergus
-ms.author: alfergus
+ms.author: colinbirkett
 search.audienceType:
   - admin
   - enduser
@@ -36,7 +36,7 @@ The recommended migration path is to build a new event registration website usin
 - Edit the website design and layout using the visual editor in Power Pages studio.
 - Build multiple event registration websites.
 
-Learn more: [Build an event registration website using Power Pages](ci-docs/journeys/event-portal-template.md)
+For more information, see [Build an event registration website using Power Pages](ci-docs/journeys/event-portal-template.md).
 
 ## Event portal *not* hosted on Power Portals
 

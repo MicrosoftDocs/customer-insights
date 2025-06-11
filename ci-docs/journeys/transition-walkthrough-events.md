@@ -1,7 +1,7 @@
 ---
 title: Transition events from outbound marketing to real-time journeys
 description: Learn how to transition event management capabilities from outbound marketing to real-time journeys in Dynamics 365 Customer Insights - Journeys.
-ms.date: 06/10/2025
+ms.date: 06/11/2025
 ms.topic: how-to
 author: colinbirkett
 ms.author: colinbirkett
@@ -133,7 +133,7 @@ No. Any events that are live and are accepting registrations have to have the re
 
 *What should I do if the features I need for event planning aren't available?*
 
-The most used features have a planned release date before the outbound removal date. We understand there might be some features that are important for your business and might not be available yet. You can *phase your transition*. Any events that don't need those features can be created as real-time events. You can also transition all your communication to real-time as outbound events can be used with real-time journeys and emails. This reduces the number of assets you need to transition closer to the date. You can also request an extension, see [How to request an extension](https://learn.microsoft.com/en-us/dynamics365/customer-insights/journeys/transition-faqs#i-cant-transition-by-the-outbound-marketing-removal-date-can-i-request-an-extension)
+The most used features have a planned release date before the outbound removal date. We understand there might be some features that are important for your business and might not be available yet. You can *phase your transition*. Any events that don't need those features can be created as real-time events. You can also transition all your communication to real-time as outbound events can be used with real-time journeys and emails. This reduces the number of assets you need to transition closer to the date. You can also request an extension. For more information, see [How to request an extension](https://learn.microsoft.com/en-us/dynamics365/customer-insights/journeys/transition-faqs#i-cant-transition-by-the-outbound-marketing-removal-date-can-i-request-an-extension)
 
 ## Blogs and workarounds
 - Cascaded fields where options provided in a field depend on a value in an earlier field that isn't yet supported. For more information, see the blog [Implementing cascading dropdown fields in real-time journeys forms](https://community.dynamics.com/blogs/post/?postid=ff86d88f-d892-ef11-ac21-6045bdd7e1ae).
