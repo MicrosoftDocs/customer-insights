@@ -30,8 +30,6 @@ Unfortunately, there's no way to transfer existing scoring models from outbound 
 
 The features listed below may be of interest as you transition from outbound marketing to real-time journeys. These features provide parity, equivalent, or better functionality than what was available in outbound marketing.
 
-- **Signal sales for qualified leads**: Easily route qualified leads identified by the marketing team to a seller without customized solutions or manual intervention. This boosts marketing and sales teams' productivity while maintaining focus on the right customers. Learn more: [Increase lead conversions by routing to the correct sales rep](/dynamics365/release-plan/2023wave2/marketing/dynamics365-marketing/increase-lead-conversions-routing-correct-sales-rep)
-
-[!INCLUDE [transition-comments](./includes/transition-comments.md)]
+- **Signal sales for qualified leads**: Easily route qualified leads identified by the marketing team to a seller without customized solutions or manual intervention. This boosts marketing and sales teams' productivity while maintaining focus on the right customers. Learn more: [Increase lead conversions by routing to the correct sales rep](/dynamics365/release-plan/2023wave2/marketing/dynamics365-marketing/increase-lead-conversions-routing-correct-sales-rep).
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
