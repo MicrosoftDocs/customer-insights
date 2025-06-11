@@ -61,8 +61,6 @@ When you're finished migrating to real-time journeys from outbound marketing, yo
 
 ## What happens when outbound marketing is removed by Microsoft?
 
-When outbound marketing is formally retired, Microsoft will clean up the services in the background. To understand the details of exactly what will be cleaned up and what happens to your data, see [Real-time journeys transition FAQs](transition-faqs.md#what-will-happen-to-outbound-tables-and-data-when-outbound-marketing-is-removed)
-
-[!INCLUDE [transition-comments](./includes/transition-comments.md)]
+When outbound marketing is formally retired, Microsoft will clean up the services in the background. To understand the details of exactly what will be cleaned up and what happens to your data, see [Real-time journeys transition FAQs](transition-faqs.md#what-will-happen-to-outbound-tables-and-data-when-outbound-marketing-is-removed).
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]

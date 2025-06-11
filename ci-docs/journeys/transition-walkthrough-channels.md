@@ -37,6 +37,4 @@ Custom channels don't have migration tools and need to be reimplemented in real-
 
 No. You don't have to go through the warm-up process for sending emails when you transition to real-time journeys, and you can still use the same authenticated domains.
 
-[!INCLUDE [transition-comments](./includes/transition-comments.md)]
-
 [!INCLUDE [footer-include](./includes/footer-banner.md)]

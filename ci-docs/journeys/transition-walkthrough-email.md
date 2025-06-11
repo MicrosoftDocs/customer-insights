@@ -37,8 +37,8 @@ You can use the same tool to import email templates. To import templates, go to 
 ## Content settings
 
 Most of the **content settings** from outbound marketing (for example, social links or sender addresses) can be configured under **brand profiles** in real-time marketing. You can define multiple brand profiles and also set a default brand profile to apply automatically when no specific profile is selected.
- 
-<img width="407" alt="image" src="https://github.com/user-attachments/assets/293d707a-a4d7-4504-9da9-e71684dd17bd" />
+
+:::image type="content" source="media/brand-profile.png" alt-text="Screenshot of a new brand profile." lightbox="media/brand-profile.png":::
 
 > [!NOTE]
 > The token `{{msdyncrm_contentsettings.ccf_businessname}}` used in outbound marketing doesn't work in real-time marketing. In real-time marketing, personalization must reference the brand profile fields or use the default settings if no brand profile is explicitly associated.
@@ -57,7 +57,5 @@ The features listed below may be of interest as you transition from outbound mar
   - *Guidance:* We don't have a published roadmap. You can create emails for each variation and [use A/B tests at the journey level](real-time-marketing-ab-tests-in-marketing-journeys.md).
 - **Email address can only be from Contact/Lead**: Emails can only be sent to email addresses in contacts and leads.
   - *Guidance:* We don't plan to support sending to other email addresses. [Use the CC (carbon copy) field](real-time-marketing-add-cc-recipients.md), where you can use personalization to select an email address from any table related to contacts or leads.
-
-[!INCLUDE [transition-comments](./includes/transition-comments.md)]
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
