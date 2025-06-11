@@ -1,7 +1,7 @@
 ---
 title: Troubleshoot email campaigns
 description: Troubleshoot email campaigns in Dynamics 365 Customer Insights - Journeys. Find solutions for lookup fields, HTML links, and T-Online.de rendering issues.
-ms.date: 06/10/2025
+ms.date: 06/11/2025
 ms.topic: troubleshooting-general
 author: alfergus
 ms.author: alfergus
@@ -54,6 +54,10 @@ T-Online.de, a major German email provider, presents challenges for HTML email r
 - **Not supported**: Media queries, background images, HTML5 video, web fonts, border radius, interactivity (checkbox or radio), CSS animations
 
 ### Best practices
+
+#### Templates
+
+- Create templates based on new emails. Avoid directly customizing Customer Insights - Journeys's out-of-the-box email templates.
 
 #### Layout and responsiveness
 
