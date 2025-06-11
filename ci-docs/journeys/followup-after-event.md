@@ -1,7 +1,7 @@
 ---
 title: Evaluate your event and follow up with attendees 
 description: Learn what you can do to optimize the benefits gained from your event by collecting feedback, analyzing attendance data, and handing leads off to sales from Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/18/2023
+ms.date: 06/10/2025
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -12,6 +12,9 @@ search.audienceType:
 ---
 
 # Evaluate your event and follow up with attendees
+
+> [!IMPORTANT]
+> Starting August 1, 2024, Teams webinar check out times and attendance reports aren't available in Customer Insights - Journeys. A fix for this issue will be announced at a future date. In the meantime, you can access check out times and attendance reports [directly in the Teams app](https://support.microsoft.com/office/manage-meeting-attendance-reports-in-microsoft-teams-ae7cf170-530c-47d3-84c1-3aedac74d310).
 
 After an event is over, you'll want to evaluate how it went and start following up.
 

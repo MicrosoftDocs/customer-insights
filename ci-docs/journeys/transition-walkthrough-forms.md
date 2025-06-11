@@ -87,6 +87,4 @@ This section gives guidance on capabilities that work differently in real-time j
 - To create cascading option set fields, see [Implementing cascading dropdown fields in real-time marketing forms - FastTrack blog](https://community.dynamics.com/blogs/post/?postid=ff86d88f-d892-ef11-ac21-6045bdd7e1ae).
 - To show customized error messages for field validation, see [Customizable error messages for form field validation - FastTrack blog](https://community.dynamics.com/blogs/post/?postid=cdcd1dbf-2b7f-ef11-ac20-7c1e521a63a7).
 
-[!INCLUDE [transition-comments](./includes/transition-comments.md)]
-
 [!INCLUDE [footer-include](./includes/footer-banner.md)]

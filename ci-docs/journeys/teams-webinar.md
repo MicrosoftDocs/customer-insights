@@ -1,7 +1,7 @@
 ---
 title: Use Microsoft Teams for Dynamics 365 Customer Insights - Journeys online events
 description: Learn how to create and host live events in Dynamics 365 Customer Insights - Journeys using Microsoft Teams as the webinar provider.
-ms.date: 07/18/2024
+ms.date: 06/10/2025
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
@@ -97,6 +97,9 @@ Read more: [Manage meeting settings in Microsoft Teams](/microsoftteams/meeting-
 - Add a guest as a presenter in your webinar by adding them as a speaker in your event or session in Customer Insights - Journeys using the steps detailed in the table above.
 
 #### View webinar engagement data
+
+> [!IMPORTANT]
+> Starting August 1, 2024, Teams webinar check out times and attendance reports aren't available in Customer Insights - Journeys. A fix for this issue will be announced at a future date. In the meantime, you can access check out times and attendance reports [directly in the Teams app](https://support.microsoft.com/office/manage-meeting-attendance-reports-in-microsoft-teams-ae7cf170-530c-47d3-84c1-3aedac74d310).
 
 After you run a Teams webinar-based Customer Insights - Journeys event, you can view the attendee engagement data (check-in and check-out times) in the Customer Insights - Journeys app.
 

@@ -32,6 +32,4 @@ See below for guidance on specific capabilities that are currently unsupported o
 **Details**: Ability to use option sets in dynamic text (currently it only outputs numeric values). Option sets are supported in conditions.
 **Guidance**: For an option set with few options, inline conditions can be used to output the desired verbose labels for the options. For larger option sets, add a calculated field that holds verbose labels for the options. Use this calculated field instead of the option set field.
 
-[!INCLUDE [transition-comments](./includes/transition-comments.md)]
-
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
