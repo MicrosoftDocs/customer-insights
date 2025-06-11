@@ -1,7 +1,7 @@
 ---
 title: New and upcoming features
 description: Discover the latest features, improvements, and bug fixes in Dynamics 365 Customer Insights - Journeys. Stay updated with our monthly release notes.
-ms.date: 06/05/2025
+ms.date: 06/11/2025
 ms.topic: whats-new
 author: colinbirkett
 ms.author: colinbirkett
@@ -69,7 +69,7 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 
 Learn how to make the most of the new Dynamics 365 Customer Insights features in our latest blogs and scenario docs:
 
--  [Time Zone Identification for Quiet Time Feature in Dynamics 365 Customer Insight](https://community.dynamics.com/blogs/post/?postid=c1ad9596-0338-f011-8c4e-0022481da8cf)
+- [Time Zone Identification for Quiet Time feature in Dynamics 365 Customer Insights](https://community.dynamics.com/blogs/post/?postid=c1ad9596-0338-f011-8c4e-0022481da8cf)
 
 ### May 2025 update
 
