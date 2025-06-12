@@ -1,7 +1,7 @@
 ---
-title: "Preview: Tailor follow-up strategies by leveraging multiple customer actions at once"
+title: Tailor follow-up strategies by leveraging multiple customer actions at once (preview)
 description: Learn how to tailor follow-up strategies by leveraging multiple customer actions in Dynamics 365 Customer Insights - Journeys.
-ms.date: 05/13/2025
+ms.date: 06/12/2025
 ms.topic: article
 author: colinbirkett
 ms.author: colinbirkett
@@ -11,11 +11,15 @@ search.audienceType:
   - enduser
 ---
 
-# Preview: Tailor follow-up strategies by leveraging multiple customer actions at once
+# Tailor follow-up strategies by leveraging multiple customer actions at once (preview)
+
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 The multi-interaction branching feature in Customer Insights - Journeys enables marketers to configure journey branches based on diverse customers' responses from a single decision node in a journey. Whether it's an email *bounced*, *blocked*, or a link *selected*, multi-interaction branching allows for more nuanced and intelligent journey design. Marketers can better personalize customer experiences by evaluating several interaction outcomes at once through a single branching condition in a journey.
 
 :::image type="content" source="media/multi-interaction-branching.png" alt-text="Configure journey branches based on multiple customer responses to marketing messages." lightbox="media/multi-interaction-branching.png":::
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note.md)]
 
 ## What are marketing interactions? 
 

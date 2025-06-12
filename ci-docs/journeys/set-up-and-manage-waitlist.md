@@ -1,7 +1,7 @@
 ---
-title: "Preview: Set up and manage an event waitlist"
+title: Set up and manage an event waitlist (preview)
 description: Learn how to register interested attendees on a waitlist in Dynamics 365 Customer Insights - Journeys.
-ms.date: 03/12/2025
+ms.date: 06/12/2025
 ms.topic: how-to
 author: terezakirk
 ms.author: colinbirkett
@@ -11,17 +11,16 @@ search.audienceType:
   - enduser
 ---
 
-# Preview: Set up and manage an event waitlist
+# Set up and manage an event waitlist (preview)
 
-> [!IMPORTANT]
-> A preview feature is a feature that isn't complete but is made available before it’s officially released so customers can get early access and provide feedback. Preview features aren’t meant for full use and may have limited or restricted functionality.
->
-> Microsoft doesn't provide support for this preview feature. Microsoft Dynamics 365 Technical Support won't be able to help you with issues or questions. Preview features aren’t meant for production use, especially to process personal data, or other data that are subject to legal or regulatory compliance requirements.
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 > [!NOTE]
 > Due to release rollout delays, this feature will be available in the last week of March. You'll see "Waitlist in real-time journeys" in **Settings** > **Feature switches** once the feature is available in your region.
 
 Ensuring marketing events are filled to capacity is crucial for success and return on investment. To encourage a high turnout for marketing events, you can now enable waitlist registrations, which ensures that spots are filled when registered attendees cancel. By setting the capacity for events and sessions, prospective attendees are placed on a waitlist when events and sessions are full. If a slot opens, the system automatically registers the next individual on the waitlist. That individual then automatically receives a registration confirmation and personalized event information. This ensures your event is filled to capacity.
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note.md)]
 
 ## How the waitlist works
 

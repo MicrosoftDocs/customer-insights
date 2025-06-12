@@ -1,7 +1,7 @@
 ---
-title: 'Preview: Copilot - Create journeys using AI assistance'
+title: Copilot - Create journeys using AI assistance (preview)
 description: Create marketing journeys using everyday language with Copilot. Enable the feature, provide feedback, and streamline your marketing efforts.
-ms.date: 11/22/2024
+ms.date: 06/12/2025
 ms.topic: get-started
 author: alfergus
 ms.author: alfergus
@@ -13,16 +13,15 @@ ms.custom:
   - ai-gen-description
 ---
 
-# Preview: Copilot - Create journeys using AI assistance
+# Copilot - Create journeys using AI assistance (preview
 
-> [!IMPORTANT]
-> A preview feature is a feature that is not complete, but is made available before it’s officially in a release so customers can get early access and provide feedback. Preview features aren’t meant for production use and may have limited or restricted functionality.
-> 
-> Microsoft doesn't provide support for this preview feature. Microsoft Dynamics 365 Technical Support won’t be able to help you with issues or questions. Preview features aren’t meant for production use, especially to process personal data or other data that are subject to legal or regulatory compliance requirements.
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=9a5b5096-35bb-4bf9-a886-bb8def28ad2c]
 
 With the journey copilot, anyone can now use every day conversational language to create marketing journeys without requiring deep knowledge about the product. You can even improve the copilot by giving feedback, helping you achieve more detailed results in the future.
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note.md)]
 
 ## Enable the journey copilot
 

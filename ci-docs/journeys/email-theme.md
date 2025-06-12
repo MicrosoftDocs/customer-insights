@@ -1,10 +1,10 @@
 ---
-title: 'Preview: Copilot - Style your emails with AI-assisted themes'
+title: Copilot - Style your emails with AI-assisted themes (preview)
 description: Style your emails with AI-assisted themes in Dynamics 365. Learn how to use Copilot to customize email elements like fields, buttons, and text.
-ms.date: 04/03/2025
+ms.date: 06/12/2025
 ms.topic: how-to
 author: alfergus
-ms.author: alfergus
+ms.author: colinbirkett
 ms.collection: bap-ai-copilot
 ms.custom:
   - ai-gen-docs-bap
@@ -12,7 +12,9 @@ ms.custom:
   - ai-seo-date:11/22/2024
 ---
 
-# Preview: Copilot - Style your emails with AI-assisted themes
+# Copilot - Style your emails with AI-assisted themes (preview)
+
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 > [!WARNING]
 >  The following Copilot public preview features will be discontinued and removed in May 2025: 
@@ -29,6 +31,8 @@ This article describes the email theme functionality, which uses Copilot to cust
 
 > [!NOTE]
 > Unless a style is explicitly set in the element properties, the default style is replaced with the email theme style.
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note.md)]
 
 ## What is the theme functionality?
 

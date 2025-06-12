@@ -1,7 +1,7 @@
 ---
-title: "Preview: Control how fast customers can enter a journey"
+title: Control how fast customers can enter a journey (preview)
 description: Control how fast customers can enter a journey in Customer Insights - Journeys
-ms.date: 09/04/2024
+ms.date: 06/12/2025
 ms.topic: article
 author: colinbirkett
 ms.author: colinbirkett
@@ -11,12 +11,11 @@ search.audienceType:
   - enduser
 ---
 
-# Preview: Control how fast customers can enter a journey
+# Control how fast customers can enter a journey (preview)
 
-> [!IMPORTANT]
-> A preview feature is a feature that is not complete, but is made available before it’s officially in a release so customers can get early access and provide feedback. Preview features aren’t meant for production use and may have limited or restricted functionality.
-> 
-> Microsoft doesn't provide support for this preview feature. Microsoft Dynamics 365 Technical Support won’t be able to help you with issues or questions. Preview features aren’t meant for production use, especially to process personal data or other data that are subject to legal or regulatory compliance requirements.
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note.md)]
 
 There are times when you want to reach a large audience. However, sending one message to the entire audience at the same time can cause certain problems such as overwhelming  call centers or your website. To solve this issue, you might want to control how fast audience members enter the journey, avoiding thousands of simultaneous phone calls or website visits at the same time.
 
