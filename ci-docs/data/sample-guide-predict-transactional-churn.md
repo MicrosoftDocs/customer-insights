@@ -149,7 +149,7 @@ Let the model complete the training and scoring of the data. Review the churn mo
 
 ## Task 6 - Create a segment of high churn-risk customers
 
-Running the production model creates a new table, which is listed on **Data** > **Tables**. You can create a new segment based on the table created by the model.
+Running the production model creates a new table, which is listed on **Data** > **Tables** > **Output**. You can create a new segment based on the table created by the model.
 
 1. On the results page, select **Create segment**.
 
