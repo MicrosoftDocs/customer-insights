@@ -13,9 +13,9 @@ ms.custom:
   - ai-gen-description
 ---
 
-# Copilot - Create journeys using AI assistance (preview
+# Copilot - Create journeys using AI assistance (preview)
 
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]  
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=9a5b5096-35bb-4bf9-a886-bb8def28ad2c]
 
