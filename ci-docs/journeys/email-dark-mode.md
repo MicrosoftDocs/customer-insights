@@ -45,7 +45,7 @@ This section gives guidance on optimizing your email design so it displays effec
 
 ## Preview and test across different email clients and modes
 
-Before sending, use Customer Insights – Journeys to preview your emails and test how they look in light and dark modes. Use the “email by device type” insights to check which email clients and devices your audience uses most. This helps you prioritize testing on the platforms that matter most to your recipients.
+Before sending, use Customer Insights – Journeys to preview your emails and test how they look in light and dark modes. Use the [device type and user agents' analysis](https://learn.microsoft.com/en-us/dynamics365/customer-insights/journeys/email-insights#device-type-and-user-agents-analysis) to check which email clients and devices your audience uses most. This helps you prioritize testing on the platforms that matter most to your recipients.
 
 With the [Litmus integration](email-preview.md#use-the-advanced-inbox-preview-feature), you can:
 
