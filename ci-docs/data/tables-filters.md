@@ -38,6 +38,6 @@ After [configuring your data sources](data-sources.md), apply row filters before
 
    :::image type="content" source="media/tables-filter-rows.png" alt-text="Screenshot of the Filter rows dialog box.":::
 
-1. After setting the filter criteria, select **Apply**. All processes will use the filtered tables.
+1. After you set the filter criteria, select **Apply**. All processes use the filtered tables.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
