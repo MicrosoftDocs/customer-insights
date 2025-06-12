@@ -1,7 +1,7 @@
 ---
 title: New and upcoming features
 description: Discover the latest features, improvements, and bug fixes in Dynamics 365 Customer Insights - Journeys. Stay updated with our monthly release notes.
-ms.date: 05/13/2025
+ms.date: 06/05/2025
 ms.topic: whats-new
 author: colinbirkett
 ms.author: colinbirkett
@@ -24,6 +24,46 @@ We're excited to announce our newest updates! This article summarizes early acce
 Customer Insights - Journeys updates are [pushed to customers automatically](https://cloudblogs.microsoft.com/dynamics365/it/2020/04/27/automatic-update-policy-for-dynamics-365-marketing/). Solutions are available for early validations. To manually update your instances, follow the steps in [Keep Customer Insights - Journeys up to date](apply-updates.md).
 
 To submit and vote on **feature requests** and **product suggestions**, go to the [Dynamics 365 Application Ideas portal](https://experience.dynamics.com/ideas/categories/?forum=dfa5b83d-9e4c-e811-a956-000d3a1bef07&forumName=Dynamics%20365%20Marketing).
+
+### June 2025 update
+
+| App              | GA release      |
+|------------------|-----------------|
+| Customer Insights - Journeys       | 1.1.56329.38  |
+
+#### Real-time journeys transition
+
+- **Message dialogs when creating outbound assets**
+	- Users will notice new message dialogs in the product whenever they attempt to create a new outbound marketing email, journey, segment, form, page, and more. These message dialogs advise users that outbound marketing will be removed soon. For now, users can dismiss the dialog and continue working in outbound marketing, but this will change in the future. Users will also see warning banners when current journeys and events are scheduled to run past June 30, 2025. For more information, see [Real-time journeys transition FAQs](transition-faqs.md).
+
+#### General availability
+
+- **Get insights on email engagement with heatmap analytics** 
+	- Understanding the effectiveness of email campaigns can be complex, particularly when information and links are abundant. Gaining clarity on which areas or links captivate your audience and drive them to act is crucial for refining the user experience and boosting email performance. Real-time journeys email insights now offer a clear view of your audience's preferences by illustrating their interactions within your emails. This immediate visual feedback highlights the content that resonates the most, empowering you to adjust your messaging for heightened impact and better conversion rates. Heatmap now supports email variations. By leveraging these insights, you can understand which email variation captivates your audience and use it to personalize and optimize your upcoming campaigns or focus your efforts on the variations that yield the best results, ultimately driving better results for your business.  
+	- [Release plan](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/get-insights-email-engagement-heatmap-analytics) 
+	- [Docs](email-insights.md#click-map)
+
+	:::image type="content" source="media/get-insights-heat-map.png" alt-text="Get insights on email engagement with heatmap analytics." lightbox="media/get-insights-heat-map.png":::
+
+#### Public preview
+
+- **Transform your outreach with custom-built AI agent-powered voice conversations** 
+	- Brands are constantly looking for ways to anticipate customer needs and connect with them on the channels that is the most appropriate for the message engagement. By integrating Customer Insights - Journeys with Contact Center, you can leverage custom-built AI agents to deliver meaningful, hyper-personalized conversational voice calls that boost customer satisfaction and engagement.  For example, you can alert a customer about a flight delay via a voice call where the custom-built AI agent engages them in a natural language conversation to inform them about the issue and offer solutions such as reschedule or refund. The results of the conversation then drive the next action in the journey, whether that’s rescheduling the flight, issuing the refund, or sending an email because there was no answer.
+	- [Docs](conversational-journeys-overview.md) 
+	- [Blog](https://aka.ms/AI-Powered-Convos)
+
+	:::image type="content" source="media/journey-ai-voice-conversation.png" alt-text="Transform your outreach with custom-built AI Agent powered voice conversations." lightbox="media/journey-ai-voice-conversation.png":::
+
+- **Pause and resume journeys to handle unplanned events** 
+	- Safeguarding your brand's reputation and customer trust is critical. In the face of unplanned or unforeseen events, such as natural disasters, you may need to pause certain campaigns that might be deemed inappropriate or insensitive. Additionally, you may run into business or operational reasons for stopping a campaign, such as identifying the need to update some content or experiencing an unexpected call center outage. In such scenarios, it's prudent to halt customer outreach until the problem is addressed. Instead of stopping a campaign and adjusting the audience to exclude previously reached customers, you can now pause and resume journeys, allowing you to manage unplanned situations easily and stress-free. 
+	- [Release plan](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/pause-resume-journeys-handle-unplanned-events) 
+	- [Docs](pause-resume-journey.md)
+
+#### Monthly enhancements
+
+- **Out-of-box cancel registration flow**
+	- Event organizers can now include a cancel registration link in confirmation emails, enabling attendees to cancel their registration easily. This automatically updates their status to "Canceled" in the system, giving organizers real-time visibility while simplifying attendee management and improving support for waitlists.
+	- [Docs](cancel-registration.md)
 
 ### May 2025 update
 

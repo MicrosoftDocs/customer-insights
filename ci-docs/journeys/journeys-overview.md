@@ -1,7 +1,7 @@
 ---
 title: Journeys overview
 description: Learn how to create automated campaigns with real-time journeys in Dynamics 365 Customer Insights - Journeys.
-ms.date: 03/21/2025
+ms.date: 06/09/2025
 ms.topic: overview
 author: alfergus
 ms.author: alfergus
@@ -34,7 +34,7 @@ You can create templates to make it easier for anyone to start with a pre-existi
 
 All journeys have a life cycle: they're created and then published. Once published, they complete or can be stopped. A journey moves through these stages or states as shown in the diagram below:
 
-:::image type="content" source="media/journeys-overview-states.png" alt-text="Stages of real-time journeys diagram." lightbox="media/journeys-overview-states.png":::
+:::image type="content" source="media/journeys-overview-states-updated.png" alt-text="Stages of real-time journeys diagram." lightbox="media/journeys-overview-states-updated.png":::
 
 Legend:
 
@@ -52,6 +52,7 @@ The following table shows additional details about journey states and the transi
 | **Draft**      | When a journey is created in the journey designer and saved, it’s in Draft state. | You can edit and update the journey as needed in this state. The journey isn’t active, and no customer can participate in this state. <br> **Publish:** Moves the journey to the Publishing state. <br> **Copy:** Makes a copy of the journey (the copy is a new journey in Draft state). |
 | **Publishing** | An intermediate state when Publish is selected. The journey is validated and if errors are found, it reverts to Draft state. If everything is okay, the journey moves to the Live state. | No user actions are possible in this state. |
 | **Live**       | The journey is Live (or running). A trigger-based journey accepts and reacts to triggers and lets customers who raised the trigger enter the journey. A segment-based journey processes the segment and lets the members enter the journey. (A journey may be Live and still not let new customers enter if the scheduled start time of the journey isn't yet reached.) | **Edit:** Goes into the Live edit state where the journey can be edited. <br> **Stop:** Stops the journey. <br> **Copy:** Makes a copy of the journey (the copy is a new journey in Draft state). |
+| **Pause**       | The journey is paused such that no new customers can enter the journey. Customers who have already entered the journey flow through. For general availability, customers will pause at a message step if conditions in the journey require them to wait during the paused window.  | **Edit:** Goes into the Live edit state where the journey can be edited. <br> **Modify pause** Lets you change the settings on the Pause, such as whether to manually or automatically resume and the resume date. <br> **Stop:** Stops the journey. <br> **Copy:** Makes a copy of the journey (the copy is a new journey in Draft state).<br> **Resume** Lets you manually resume the journey at any time. |
 | **Completing** | A journey in this state doesn’t allow new customers to enter but lets the current customers already in the journey finish. This state is reached for many reasons, such as when it’s past the journey’s scheduled end time, the journey has finished all its recurrences (for a repeating journey), all members of the segments have entered the journey (for a one-time segment-based journey), etc. | No user actions are possible in this state. |
 | **Completed**  | The journey has finished its run. This state is reached when all eligible customers have completed their journey. | **Copy:** Makes a copy of the journey (the copy is a new journey in Draft state). |
 | **Stopping**   | The journey is being stopped. No new customers are accepted, and current customers are being removed from the journey. As this action might take some time, it’s possible that some customers might still complete their journeys before the journey is stopped. | When there’s a backlog of messages due to high volume, those messages are deleted immediately and aren’t sent. This greatly reduces but doesn't always prevent messages from being delivered (some messages might have already been sent to the intermediate providers who will still deliver those messages even though the journey is stopped). <br> No user actions are possible in this state. <br> **Note**: If you've edited a published journey for any reason and generated new versions, you must stop each version individually. |
@@ -61,3 +62,5 @@ The following table shows additional details about journey states and the transi
 ## Journey audit history
 
 To enable journey audit history, go to the Power Apps [maker portal](https://make.powerapps.com) using CRMToolbox and enable the **Audit History Extractor**.
+
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

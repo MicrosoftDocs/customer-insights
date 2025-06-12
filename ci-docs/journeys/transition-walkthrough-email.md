@@ -36,7 +36,7 @@ You can use the same tool to import email templates. To import templates, go to 
 
 ## Content settings
 
-Most of the **content settings** from outbound marketing (for example, social links or sender addresses) can be configured under **brand profiles** in real-time marketing. You can define multiple brand profiles and also set a default brand profile to apply automatically when no specific profile is selected. Just like content settings, you can customize brand profiles (add additional columns) and then use them for personalization.
+Most of the **content settings** from outbound marketing (for example, social links or sender addresses) can be configured under **brand profiles** in real-time marketing. You can define multiple brand profiles and also set a default brand profile to apply automatically when no specific profile is selected.
 
 :::image type="content" source="media/brand-profile.png" alt-text="Screenshot of a new brand profile." lightbox="media/brand-profile.png":::
 

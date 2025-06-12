@@ -1,7 +1,7 @@
 ---
 title: Install and manage Customer Insights
 description: Learn how to install, uninstall, and manage Dynamics 365 Customer Insights environments with step-by-step guidance and troubleshooting tips.
-ms.date: 04/16/2025
+ms.date: 06/03/2025
 ms.topic: install-set-up-deploy
 author: alfergus
 ms.author: alfergus
@@ -54,6 +54,7 @@ If you **Uninstall** Customer Insights - Journeys (paid or trial), the services 
 If you don't already have one, you must first create an environment in [Microsoft Power Platform admin center](/power-platform/admin/). Follow these steps to create an environment:
 
 1. Go to [admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com) and create an environment of the desired type: production, sandbox, or subscription-based trial.
+1. Select the correct region for your environment.
 1. Turn on the "Enable Dataverse" and "Enable D365 Apps" toggles for the environment to allow apps. 
 
 For more information, see [Create and manage environments in the Power Platform admin center](/power-platform/admin/create-environment).
