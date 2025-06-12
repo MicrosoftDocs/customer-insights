@@ -22,6 +22,8 @@ Custom unmapped fields (also known as custom registration fields) allow you to *
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note.md)]
 
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note.md)]
+
 ## Creating unmapped form fields for your event  
 
 To create a custom unmapped form field for your event, navigate to the **Event planning** > **Form** tab. You can now see a preview of the form on the right side by selecting the **Edit** button. Once selected, you're taken to the form editor. Select **Edit** to edit the form.

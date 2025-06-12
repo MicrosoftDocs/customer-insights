@@ -28,3 +28,5 @@ If you want to view a full list of who responded to your survey using Customer I
 1. If you want to see the full details of a response, double click on the contact or lead name. You’ll see all the general and response details.
 
     :::image type="content" source="media/transition-customer-voice-response.png" alt-text="Screenshot showing a Customer Voice response.":::
+
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

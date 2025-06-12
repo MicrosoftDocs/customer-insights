@@ -44,20 +44,24 @@
     items:
     - name: Overview
       href: transition-walkthrough-functional.md
+    - name: Channels and message sending
+      href: transition-walkthrough-channels.md
     - name: Consent
       href: transition-walkthrough-consent.md
     - name: Consent management and double opt-in
       href: real-time-marketing-consent-transition.md
     - name: Customer Voice responses
       href: transition-walkthrough-customer-voice.md
-    - name: Emails, journeys, and assets
-      href: transition-walkthrough-journeys.md
+    - name: Emails and assets
+      href: transition-walkthrough-email.md
     - name: Event management
       href: transition-walkthrough-events.md
     - name: Event registration
       href: migrate-event-registration.md
     - name: Insights and reports
       href: transition-walkthrough-insights.md    
+    - name: Journeys
+      href: transition-walkthrough-journeys.md
     - name: Lead management and scoring
       href: transition-walkthrough-leads.md    
     - name: Marketing pages and forms
@@ -152,6 +156,8 @@
           href: email-theme.md
         - name: Use brand profiles in email
           href: brand-profiles-email.md
+        - name: Improve email accessibility for light and dark modes
+          href: email-dark-mode.md
         - name: Import outbound emails, templates, and content blocks to Customer Insights - Journeys
           href: real-time-marketing-import-email-to-real-time.md 
       - name: Enhance your email
@@ -280,6 +286,8 @@
          href: journey-start.md
       -  name: Add an action in a journey
          href: add-action.md
+      -  name: Pause and resume a journey (preview)
+         href: pause-resume-journey.md
       -  name: Tailor follow-up strategies with multi-interaction branching (preview)
          href: multi-interaction-branching.md
       -  name: End a journey
@@ -376,6 +384,16 @@
           href: real-time-marketing-journey-designer.md
     - name: Known issues for journeys
       href: journey-known-issues.md
+  - name: Conversational journeys (preview)
+    items:
+    - name: Conversational journeys overview
+      href: conversational-journeys-overview.md
+    - name: Prerequisites for conversational journeys
+      href: conversational-journeys-prerequisites.md
+    - name: Proactive engagement concepts
+      href: proactive-engagement-concepts.md
+    - name: Create conversational journeys
+      href: proactive-engagement-how-to.md
   - name: Event planning and management
     items:
     - name: Event management overview
@@ -404,8 +422,12 @@
         href: invite-register-house-event-attendees.md
       - name: Create an event registration experience
         href: event-registration-experience.md
+      - name: Create unmapped fields for registration forms (preview)
+        href: create-unmapped-fields-registration-forms.md
       - name: Build an event registration portal with Power Pages (preview)
         href: event-portal-template.md
+      - name: Cancel event registration
+        href: cancel-registration.md
     - name: Manage events
       items:
       - name: Manage event sponsorships
@@ -690,6 +712,8 @@
         href: feedback-loop.md
     - name: Troubleshoot email issues
       href: email-troubleshooting.md
+    - name: Troubleshoot email engagement drops
+      href: troubleshoot-engagement-drops.md
   - name: Customization
     items:
     - name: Customizing Customer Insights - Journeys

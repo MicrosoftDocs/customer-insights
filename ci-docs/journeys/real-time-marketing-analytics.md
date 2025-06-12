@@ -1,7 +1,7 @@
 ---
 title: Access and interpret analytics
 description: How to access and interpret Customer Insights - Journeys analytics in Dynamics 365 Customer Insights - Journeys.
-ms.date: 04/07/2025
+ms.date: 06/04/2025
 ms.topic: article
 author: colinbirkett
 ms.author: colinbirkett
@@ -94,6 +94,18 @@ To view **delivery and interaction statistics**, select the **View details**�
 A message’s unique opens and clicks are calculated based on the customer's journey run. This means that if the same customer enters the same journey multiple times and opens or clicks the same message each time, the system records multiple unique opens or clicks. For example, if a customer clicks the same message in two different journey executions, two unique clicks are recorded. You can export up to 50,000 records of interaction data and up to 100 records of conditional content variations, search through data using the profile's email address, and access links to audience profiles that interacted with your email messages. Timestamps are reported according to the organization's time zone.
 
 :::image type="content" source="media/analytics-delivery-and-interaction-details.png" alt-text="Screenshot of delivery and interaction details." lightbox="media/analytics-delivery-and-interaction-details.png":::
+
+### Conversational voice (preview)
+
+[!INCLUDE [Preview banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+
+Voice calls are dependent on Contact Center making the call and sending the outcomes back to Customer Insights - Journeys. Voice conversations show the following insights:
+- **Sent** This shows you how many voice conversation requests have been sent from Customer Insight - Journeys to Contact Center.
+- **Blocked** This shows you how many voice conversations were blocked by Customer Insights - Journey, with the reason.
+- **Call attempted** This shows how many calls have been attempted by Contact Center and what the outcomes were. A call attempt doesn't necessarily mean that your customer answered the call. For example, if your customer declined answering the call, this is still a call attempted. The call attempted interaction shows you the outcome of the call.
+- **Call not attempted** This shows you how many calls were not attempted by Contact Center, with the reason.
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note.md)]
 
 ### AI optimization
 
