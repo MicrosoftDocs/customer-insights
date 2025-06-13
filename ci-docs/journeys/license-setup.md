@@ -22,7 +22,7 @@ This article covers key points about Customer Insights licensing and answers fre
 
 ### Check current license ownership
 
-As a tenant admin, you can see what licenses are on your tenant by going to the [Microsoft Admin Center](https://admin.microsoft.com) then going to **Billing** > **Your Products**.
+As a tenant admin, you can see what licenses are on your tenant by going to the [Microsoft Admin Center](https://admin.microsoft.com) then going to **Billing** > **Your Products**. 
 
 Because Customer Insights licenses aren't seat-based (that is, you don't pay per user), they aren't listed under **Licenses**. Only licenses where you pay per user and assign users appear under **Licenses**.
 
@@ -33,6 +33,13 @@ Depending on how you acquire your license, there are different pathways to get t
 - If you purchase directly through the Microsoft Admin Center, you follow the e-commerce flow and the license is added to **Your Products** as soon as you complete the purchase flow.
 - If you purchase through a reseller, partner, or Microsoft volume licensing channels, there are various workflows in place that can take different amounts of time. If you don't see the license in *your products*, contact your reseller, partner, or Microsoft sales representative for help. The product team can't help until the license is on the tenant.
 - If you're redeeming internal usage rights (IURs) through the Microsoft Partner Network subscription programs, [follow the instructions](/partner-center/cloud-services#activate-a-subscription-for-the-first-time) to redeem your benefits, choose Dynamics 365 Marketing or Dynamics 365 Customer Insights, and add the licenses to your tenant using the assigned promo codes from the Partner Center.
+
+### Monitoring your usage
+
+- As stated in the published Dynamics 365 license guide, Customer Insights - Journeys and Customer Insights - Data are tenant level licenses, which means that all meters associated with the licenses are sumed at the tenant level across any envrionment using the application on a given tenant. To monitor your tenant level usage: 
+    - For Customer Insights - Journeys, go to **Settings** -> **Quota Limits** where you can see the total tenant level entitled interacted people and monthly interactions as well as how much has been used on the environment you are on and all **other** environments on the tenant. 
+    - For Customer Insights - Data, visit each environment on the tenant and sum the total count of **Customers** in each environment. You can visit each environment using the environment switcher in the upper right corner. 
+    - For Dataverse and other platform related meters, visit **Power Platform Admin Center** -> **Capacity**.
 
 ### Purchase guidance for Dynamics 365 Customer Insights
 
@@ -108,5 +115,14 @@ Every time you create a self-service trial, a license is created and never remov
 - For an overview, see [Purchase Dynamics 365 Customer Insights](purchase.md) 
 - For complete terms that apply to subscribed (paid) versions, download the [Microsoft Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/p/?linkid=866544)
 - For trials, see [Customer Insights - Journeys limits for trials](trial-preview-limits.md)
+
+### Why does my entitled quota look higher than I believe my license entitles me?
+
+- Visit **Microsoft Admin Center** -> **Products** to see what licenses you have and when they expire. If you are switching from the old license models to the new one released in September 2023, you may have a period of months where the old licenses are active along side the new ones. During those months, you will see the sum total of both entitlements until the old ones expire. 
+
+### What happens when I switch from the old standalone license to the new combined license?
+
+- You will get the new license on your tenant and be entitled accordingly. 
+- Other than being checked for presence at installation and informing quota entitlement amounts, the licenses are not tied to the application installations in any way. Therfore you do not need to do anything related to your existing application installations when you change license types from old to new on your tenant. Your applications will continue to function as-is unless and until your license expires.  
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
