@@ -17,7 +17,7 @@ ms.custom:
 
 # Customer Insights license guidance
 
-This article covers key points about Customer Insights licensing and answers common questions about licensing.
+This article explains key points about Customer Insights licensing and answers common licensing questions.
 
 ## Customer Insights licensing key points
 
@@ -48,7 +48,7 @@ As stated in the published Dynamics 365 license guide, Customer Insights - Journ
 ### Purchase guidance for Dynamics 365 Customer Insights
 
 - You can find officially published pricing and license details, including the downloadable Power Platform and Dynamics 365 license guide, on the [Customer Insights pricing page](https://www.microsoft.com/dynamics-365/products/customer-insights/pricing). Review the license guide for detailed entitlements.
-- The "attach" priced base offer (the price for customers that already have other qualifying Dynamics 365 apps) has the same entitlement definition as the full-priced base offer. It's simply discounted for customers who already own prequalifying Dynamics 365 application offers.
+- The "attach" priced base offer (the price for customers that already have other qualifying Dynamics 365 apps) has the same entitlement definition as the full-priced base offer. It's discounted for customers who already own prequalifying Dynamics 365 application offers.
 - Dynamics 365 Customer Insights licenses are tenant-level. If you have more than one tenant, you must purchase licenses for each tenant.
 - If you purchased before September 2023, you probably own one or both of the standalone licenses: Dynamics 365 Marketing (standalone) or Dynamics 365 Customer Insights (standalone). The new entitlements given with the currently available Dynamics 365 Customer Insights license don't transfer to the old standalone licenses. To get the new entitlements, you can add the new Dynamics 365 Customer Insights license to your tenant at any time in your contract cycle. Depending on your purchase channel, you can remove the standalone licenses on your renewal date.
 - As of September 2023 (when the new licenses and entitlements were launched), licenses are no longer associated with individual application installations as they were prior for the Marketing standalone license model. The applications for Customer Insights - Journeys (formerly called Marketing) and Customer Insights - Data are the same for the old licenses and the new license. **Do not uninstall and reinstall the applications when you change license types**.
@@ -85,48 +85,48 @@ As of September 2023, application installation licenses are counted at the tenan
 
 ### How is Customer Insights - Journeys licensed?
 
-Customer Insights - Journeys is licensed per tenant, with each tenant priced according to the number of interacted persons stored in your database. To identify contacts, Customer Insights - Journeys monitors key interaction types. Any contact that performs one or more interactions is flagged as an interacted person and count against the allotment. Here are answers to several of the most frequently asked questions about licensing:
+Customer Insights - Journeys is licensed per tenant, and each tenant is priced based on the number of interacted people stored in your database. Customer Insights - Journeys monitors key interaction types to identify contacts. Any contact that performs one or more interactions is flagged as an interacted person and counts against the allotment. Here are answers to some of the most frequently asked questions about licensing:
           
 - **What is an interacted person?**  
     An interacted person is any entity (such as a contact, lead, or Customer Insights - Data profile) engaged in an interaction. Entities that are stored, but not marketed to using Customer Insights - Journeys interactions don't count towards the interacted people quota. After an interaction (see below) is logged for a person. It doesn't matter how many interactions occur on that entity, it's counted once. After an interacted person hasn't received or engaged an interaction for 12 months, the entity becomes inactive and is no longer counted.
 - **What is an interaction?**  
     An interaction is an outbound message or inbound action (such as a form submission) orchestrated through Customer Insights - Journeys. The interaction can be sent through out-of-box channels available in Customer Insights - Journeys (for example, email, SMS, or push notifications), other Microsoft channels (for example, ACS), or third-party systems integrated with Customer Insights - Journeys (for example, other text message (SMS) providers). Form submissions and other inbound channels are also considered as interactions. Safe use limits allow 10x interactions per interacted person licensed.  
 - **Which interacted people count against my quota?**  
-    Interacted people are licensed at the tenant level. Therefore, any entities across all Dataverse environments on a tenant where the Customer Insights - Journeys application is orchestrating interactions count toward the total interacted people for the tenant. This is true for any type of environment including production, sandbox, developer, or trial.
+    Interacted people are licensed at the tenant level. Any entities across all Dataverse environments on a tenant where Customer Insights - Journeys orchestrates interactions count toward the total interacted people for the tenant. This applies to any environment, including production, sandbox, developer, or trial.
 - **Where can I see my quotas and quota usage?**  
-    Your owned, paid quota can be calculated based on your owned licenses, visible at **admin.microsoft.com** > **Your Products**. See the [official pricing page](https://www.microsoft.com/dynamics-365/products/customer-insights/pricing) for details about the quota granted with each offer. In Customer Insights - Journeys, you can see your usage by going to **Settings** > **Advanced settings** > **Other settings** > **Quota limits**. For Customer Insights - Data, your used quota is the sum total of **Customers** you have across all instances on your tenant.
+    You can calculate your paid quota based on your licenses, visible at **admin.microsoft.com** > **Your Products**. See the [official pricing page](https://www.microsoft.com/dynamics-365/products/customer-insights/pricing) for details about the quota granted with each offer. In Customer Insights - Journeys, see your usage by going to **Settings** > **Advanced settings** > **Other settings** > **Quota limits**. For Customer Insights - Data, your used quota is the total number of **Customers** across all instances on your tenant.
 - **What is my monthly interaction quota?**  
-    Your monthly interaction quota is equal to 10 times the number of interacted people you have purchased, per month. For example, if you own 1 interacted person, you can interact with them 10 times per month. If you need more than 10 interactions, you should increase the number of interacted people you own to allow for the volume of monthly interactions you need to send. Consider the peak month of the year you need to optimize for and ensure that you have the right number of interacted people to allow for that volume and corresponding performance.
+    Your monthly interaction quota is 10 times the number of interacted people you buy, per month. For example, if you have 1 interacted person, you can interact with them 10 times per month. If you need more than 10 interactions, increase the number of interacted people you buy to match your monthly volume. Plan for your peak month to make sure you have the right number of interacted people for your needs.
 - **How long is a person considered interacted?**  
     When an entity (contact, lead, or Customer Insights - Data profile) is interacted with, it's counted as an interacted person and stays that way until it hasn't been interacted with for 12 months. Interacted person consumption is cumulative throughout the license period and even post license extension, subject to the 12-month rule mentioned above.
 - **Why can't I see my licenses in geos other than my home tenant geo?**
-    To see your licenses in all geos, you need to have your tenant made into a "multi-geo" tenant. Any employee in business applications or support can do this for you. To get help converting your tenant to multi-geo so that licenses replicate across all geographies, reach out to your account manager. After June 14, 2024 this restriction is removed.
+    To see your licenses in all geos, your tenant must be set up as a "multi-geo" tenant. Any employee in business applications or support can do this for you. To get help converting your tenant to multi-geo so licenses replicate across all geographies, contact your account manager. After June 14, 2024, this restriction is removed.
 
 ### Do I get the base quota for each application install?
 
-No, the quota is at a tenant level and while each environment drives consumption, total quota is counted and managed at the tenant level across all environments.
+No, the quota is at the tenant level. While each environment drives consumption, the total quota is counted and managed at the tenant level across all environments.
 
 ### One month of the year I send more than the 10x interactions per month allowed. What should I do?
 
-You should own quota for the highest, peak amount of usage you expect to need for any given month. The quota ensures that you get the right scale and performance needed to support executing the highest volume for your audience.
+Buy enough quota to cover the highest usage you expect in any month. The quota gives you the right scale and performance to support your highest volume.
 
 ### Why do I see so many listings of Dynamics 365 Marketing in Power Platform Admin Center > Resources > Dynamics 365 apps?
 
-Every time you create a self-service trial, a license is created and never removed. As of September 2023, these listings are now a means to open the installation page through the **Manage** option and mean nothing more.
+Each time you create a self-service trial, a license is created and isn't removed. As of September 2023, these listings only let you open the installation page through the **Manage** option.
 
 ### Where can I learn more about Customer Insights - Journeys licensing?
 
-- For an overview, see [Purchase Dynamics 365 Customer Insights](purchase.md) 
-- For complete terms that apply to subscribed (paid) versions, download the [Microsoft Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/p/?linkid=866544)
-- For trials, see [Customer Insights - Journeys limits for trials](trial-preview-limits.md)
+- For an overview, see [Purchase Dynamics 365 Customer Insights](purchase.md).
+- For complete terms that apply to subscribed (paid) versions, download the [Microsoft Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/p/?linkid=866544).
+- For trials, see [Customer Insights - Journeys limits for trials](trial-preview-limits.md).
 
 ### Why does my entitled quota look higher than what I believe my license entitles me to?
 
-- Visit **Microsoft Admin Center** > **Products** to see what licenses you have and when they expire. If you're switching from the old license models to the new one released in September 2023, you may have a period of months where the old licenses are active along side the new ones. During those months, you will see the sum total of both entitlements until the old ones expire.
+- Go to **Microsoft Admin Center** > **Products** to see what licenses you have and when they expire. If you're switching from the old license models to the new one released in September 2023, you can have a period of months where the old licenses are active alongside the new ones. During those months, you see the sum total of both entitlements until the old ones expire.
 
 ### What happens when I switch from the old standalone license to the new combined license?
 
-- You'll get the new license on your tenant and be entitled accordingly.
-- Other than being checked for presence at installation and informing quota entitlement amounts, the licenses aren't tied to the application installations in any way. Therefore, you don't need to do anything related to your existing application installations when you change license types from old to new on your tenant. Your applications continue to function as-is unless and until your license expires.  
+- You get the new license on your tenant and are entitled accordingly.
+- Other than being checked for presence at installation and informing quota entitlement amounts, the licenses aren't tied to the application installations in any way. You don't need to do anything related to your existing application installations when you change license types from old to new on your tenant. Your applications continue to work unless your license expires.  
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
