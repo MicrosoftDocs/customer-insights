@@ -23,7 +23,7 @@ Within real-time journeys, you can launch various actions. Some of these actions
 
 :::image type="content" source="media/voice-conversation-tile.png" alt-text="An overview of all possible actions in a journey." lightbox="media/journeys-actions.png":::
 
-The main actions are grouped under [messages](#messages), [AI-powered conversations](#ai-powered-conversations-preview) (preview), [AI-powered actions](#ai-powered-actions), [conditions](#conditions), [activities](#activities), and [connectors](#connectors). You can see all available actions under each section below.
+The main actions are grouped under [messages](#messages), [AI-powered conversations (preview)](#ai-powered-conversations-preview), [AI-powered actions](#ai-powered-actions), [conditions](#conditions), [activities](#activities), and [connectors](#connectors). You can see all available actions under each section below.
 
 ### Messages
 
@@ -47,9 +47,17 @@ You can also send messages through custom channels to capture customers' attenti
 
 ### AI-powered conversations (preview)
 
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note.md)]
+
 Customer Insights - Journeys offers the ability to integrate with the Contact Center, enabling conversation-based communications with your customers. 
 
 ##### Voice conversation (preview)
+
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note.md)]
 
 You can make personalized phone calls using Contact Center, powered by human agents or Copilot Studio agents, and send the outcomes back to Customer Insights - Journeys for branching. This is only available if the [conversational journeys](conversational-journeys-overview.md) feature is enabled.
 
@@ -109,12 +117,11 @@ The "wait for trigger" (if/then branch) tile lets you branch the customer journe
 
 For example, you can configure the wait tile to wait for the *Email opened* event on a previously sent email. If the time limit is set to one day, the wait branch waits for the customer to open the email within that day. If the customer opens the email within that day, they'll immediately proceed down the yes branch. If the customer doesn't open the email within that day, they'll proceed down the no branch after one day.
 
-##### Preview: Wait for segment membership
+##### Wait for segment membership (preview)
 
-> [!IMPORTANT]
-> A preview feature is a feature that isn't complete, but is made available before it’s officially in a release so customers can get early access and provide feedback. Preview features aren’t meant for production use and may have limited or restricted functionality.
-> 
-> Microsoft doesn't provide support for this preview feature. Microsoft Dynamics 365 Technical Support won’t be able to help you with issues or questions. Preview features aren’t meant for production use, especially to process personal data or other data that is subject to legal or regulatory compliance requirements.
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note.md)]
 
 The wait for segment membership feature allows for a more complex set of actions to take place beyond a single trigger. For example, you may want to create a branch based on how much a customer spent through multiple transactions in a specific period. In this scenario, rather than wait for a specific trigger, you can simply define a dynamic segment, such as 'big purchaser,' and wait for the customer to become a member of that segment.
 
@@ -134,7 +141,7 @@ Attribute branches support multi-way branching. For example, if you have 'custom
 
 ##### Audience split
 
-The audience split tile allows you to divide your audience to give a unique set of experiences to random portions of the audience. You can split by percentage or split by number. Learn more: [Preview: Split your audience into groups](real-time-marketing-split-audience.md).
+The audience split tile allows you to divide your audience to give a unique set of experiences to random portions of the audience. You can split by percentage or split by number. Learn more: [Split your audience into groups (preview)](real-time-marketing-split-audience.md).
 
 ### Activities
 
@@ -160,6 +167,6 @@ When using a custom trigger, you can choose which data to send as part of the tr
 
 For example, a loan application journey could have various steps that require a human agent’s approval. By creating a separate customer journey or Power Automate Flow for loan exception approval, you can trigger it from various points in the loan application journeys where exceptions can occur. The data you send with the trigger can be used to populate dynamic content or as inputs to other Flow actions.
 
-To learn more about triggering a custom event, see [Preview: Trigger an action outside of a journey](real-time-marketing-custom-actions.md).
+To learn more about triggering a custom event, see [Trigger an action outside of a journey](real-time-marketing-custom-actions.md).
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]

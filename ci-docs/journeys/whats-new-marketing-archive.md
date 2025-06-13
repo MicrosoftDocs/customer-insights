@@ -1284,7 +1284,7 @@ For the December 2022 release, general availability features include custom chan
 Starting this month, we'll highlight recently published blogs and scenario documentation in addition to the product docs that support the newly released features.
 
 > [!IMPORTANT]
-> This release brings changes to the Customer Insights - Journeys consent system and underlying Dataverse tables. This change only impacts users who have customized code that directly reads or writes to the **msdynkmt_compliancesettings** or **msdynmkt_contactpointconsent2** Dataverse tables. As part of the upgrade to this release, any user who enables the [Preview: Create and manage Customer Insights - Journeys forms](real-time-marketing-form-overview.md) feature will have their consent data automatically migrated to use the new tables. Most users will not need to take any action in response to this change.
+> This release brings changes to the Customer Insights - Journeys consent system and underlying Dataverse tables. This change only impacts users who have customized code that directly reads or writes to the **msdynkmt_compliancesettings** or **msdynmkt_contactpointconsent2** Dataverse tables. As part of the upgrade to this release, any user who enables the [Create and manage Customer Insights - Journeys forms](real-time-marketing-form-overview.md) feature will have their consent data automatically migrated to use the new tables. Most users will not need to take any action in response to this change.
 >
 > Users who have code that directly interacts with the **msdynkmt_compliancesettings** and **msdynmkt_contactpointconsent2** Dataverse tables will need to make changes after this release to direct their code to read/write to the new **msdynkmt_compliancesettings3** and **msdynmkt_contactpointconsent3** Dataverse tables.
 >
@@ -3628,7 +3628,11 @@ Section elements are used to establish the basic layout of your emails, marketin
 
 More information: [Section (layout) elements](content-blocks.md)
 
-#### Preview: Set static expiry dates for email tiles in a customer journey
+#### Set static expiry dates for email tiles in a customer journey (preview)
+
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note.md)]
 
 Some of your customer journeys may include email messages with time-sensitive content, such as a time-limited offer, holiday promotional, or a two-week reminder for an upcoming event. Because contacts might join the journey at any time, you can now prevent delivering outdated information by setting an expiration date for one or more selected email messages. Any contact who enters an email tile after its expiration date has past will simply pass through that tile without being sent the message.
 
@@ -3640,7 +3644,7 @@ Some of your customer journeys may include email messages with time-sensitive co
 > [!IMPORTANT]
 > For this preview release, the feature may sometimes still deliver a message up to six days after the expiry date. This is due to delays and retries built into the delivery system, and should occur only extremely rarely. We expect to remove this possibility entirely for the final release. Additionally, you should only use this feature with commercial messages (not transactional messages).
 
-More information: [Preview: Set expiration dates for selected email tiles in a customer journey](email-expire.md)
+More information: [Set expiration dates for selected email tiles in a customer journey](email-expire.md)
 
 #### View form-visit and form-submission insights for marketing websites
 

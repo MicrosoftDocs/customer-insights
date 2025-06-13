@@ -15,7 +15,6 @@ search.audienceType:
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-
 The multi-interaction branching feature in Customer Insights - Journeys lets marketers set up journey branches based on different customer responses from a single decision node in a journey. Whether an email *bounces*, is *blocked*, or a link is *selected*, multi-interaction branching lets you design more nuanced and intelligent journeys. Marketers can personalize customer experiences by evaluating several interaction outcomes at once through a single branching condition in a journey.
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note.md)]
