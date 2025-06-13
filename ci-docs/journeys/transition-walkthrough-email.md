@@ -1,7 +1,7 @@
 ---
 title: Transition emails, content settings, and assets
 description: Transition your emails and assets to real-time journeys in Dynamics 365 Customer Insights - Journeys.
-ms.date: 06/04/2025
+ms.date: 06/11/2025
 ms.topic: concept-article
 author: alfergus
 ms.author: alfergus
@@ -36,7 +36,7 @@ You can use the same tool to import email templates. To import templates, go to 
 
 ## Content settings
 
-Most of the **content settings** from outbound marketing (for example, social links or sender addresses) can be configured under **brand profiles** in real-time marketing. You can define multiple brand profiles and also set a default brand profile to apply automatically when no specific profile is selected.
+Most of the **content settings** from outbound marketing (for example, social links or sender addresses) can be configured under **brand profiles** in real-time marketing. You can define multiple brand profiles and also set a default brand profile to apply automatically when no specific profile is selected. Just like content settings, you can customize brand profiles (add additional columns) and then use them for personalization.
 
 :::image type="content" source="media/brand-profile.png" alt-text="Screenshot of a new brand profile." lightbox="media/brand-profile.png":::
 
