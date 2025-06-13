@@ -150,9 +150,9 @@
           href: email-design.md
         - name: Copilot - Use AI to kickstart email creation
           href: content-ideas.md
-        - name: "Preview: Copilot - Refresh and perfect your message"
+        - name: "Copilot - Refresh and perfect your message (preview)"
           href: content-rewrite.md
-        - name: "Preview: Copilot - Style your emails with AI-assisted themes"
+        - name: "Copilot - Style your emails with AI-assisted themes (preview)"
           href: email-theme.md
         - name: Use brand profiles in email
           href: brand-profiles-email.md
@@ -274,7 +274,7 @@
     items:
     - name: Journeys overview
       href: journeys-overview.md
-    - name: "Preview: Copilot - Create journeys using AI assistance"
+    - name: Copilot - Create journeys using AI assistance (preview)
       href: real-time-marketing-use-copilot-create-journey.md
     - name: Create journey templates
       href: real-time-marketing-journey-templates.md
@@ -360,7 +360,7 @@
         items:
         - name: Personalize triggers using conditions
           href: real-time-marketing-personalize-triggers.md
-        - name: "Preview: Control how fast customers can enter a journey"
+        - name: Control how fast customers can enter a journey (preview)
           href: control-how-fast-enter-journey.md      
       - name: Split journey audiences
         items:
@@ -368,7 +368,7 @@
           href: real-time-marketing-multiple-branches.md
         - name: When to use attribute versus if/then branches
           href: real-time-marketing-branches.md
-        - name: "Preview: Split your audience into groups"
+        - name: Split your audience into groups (preview)
           href: real-time-marketing-split-audience.md
       - name: Control messages sent from journeys
         items:
@@ -406,7 +406,7 @@
         href: set-up-event.md
       - name: Set up session-level registration
         href: real-time-journeys-event-session.md
-      - name: "Preview: Set up and manage an event waitlist"
+      - name: Set up and manage an event waitlist (preview)
         href: set-up-and-manage-waitlist.md
       - name: Create an event from another event
         href: event-from-event.md
@@ -450,8 +450,10 @@
       href: real-time-marketing-deploy-pages.md
     - name: Prefill values for forms and event registration
       href: real-time-marketing-form-prefill.md
-    - name: "Preview: Create unmapped fields for marketing forms"
+    - name: Create unmapped fields for marketing forms (preview)
       href: real-time-marketing-forms-custom-fields.md
+    - name: Create unmapped fields for registration forms (preview)
+      href: create-unmapped-fields-registration-forms.md
     - name: Manage forms
       href: real-time-marketing-manage-forms.md
     - name: Set the default configuration for forms
@@ -594,7 +596,7 @@
       href: developer/extend-ui.md
   - name: Extend and customize consent
     href: developer/extend-consent.md
-  - name: "Preview: Using the events API in real-time journeys"
+  - name: Using the events API in real-time journeys (preview)
     href: developer/using-rtm-events-api.md
   - name: Create a Customer Insights - Journeys segment using the Web API
     href: real-time-marketing-api-segment.md

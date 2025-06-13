@@ -1,10 +1,10 @@
 ---
 title: Build an event registration portal with Power Pages (preview)
 description: Build an event registration portal with Power Pages. Learn how to create, customize, and publish your event registration website using the event registration template.
-ms.date: 06/04/2025
+ms.date: 06/12/2025
 ms.topic: how-to
 author: petrjantac
-ms.author: alfergus
+ms.author: colinbirkett
 search.audienceType:
   - admin
   - customizer
@@ -17,7 +17,7 @@ ms.custom:
 
 # Build an event registration website using Power Pages (preview)
 
-[!INCLUDE [preview banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 Microsoft [Power Pages](/power-pages/introduction) is a secure, enterprise-grade, low-code software as a service (SaaS) platform for creating, hosting, and administering modern external-facing business websites.
 

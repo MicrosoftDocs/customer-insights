@@ -14,12 +14,11 @@ search.audienceType:
 
 It’s critical to understand exactly what happened to each customer who enters and exits your real-time journeys. The analytics provided by each journey answer questions like, "How many people started this journey?", "How many people received email from this journey?", and "What paths are people taking through this journey?". To monitor journey progress while a journey is running, you can see the progress of customers through the journey in real time. For further analysis, you can also export the list of people who take each path or action in the journey.
 
-## Preview: Analyze customer inflow and exit at every step in a journey
+## Analyze customer inflow and exit at every step in a journey (preview)
 
-> [!IMPORTANT]
-> A preview feature is a feature that is not complete, but is made available before it’s officially in a release so customers can get early access and provide feedback. Preview features aren’t meant for production use and may have limited or restricted functionality.
->
-> Microsoft doesn't provide support for this preview feature. Microsoft Dynamics 365 Technical Support won’t be able to help you with issues or questions. Preview features aren’t meant for production use, especially to process personal data or other data that are subject to legal or regulatory compliance requirements.
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note.md)]
 
 Improved journey analytics increase confidence in the processing of every step in your journey through improved metrics and the increased ability to export data. Individual journey analytics now communicate the number of people who entered each journey step, the number of people who exit the journey at each step, and why people exit the journey.
 

@@ -1,7 +1,7 @@
 ---
 title: Create unmapped fields for registration forms (preview)
 description: Learn how create unmapped fields for registration forms in Dynamics 365 Customer Insights - Journeys. 
-ms.date: 06/03/2025
+ms.date: 06/12/2025
 ms.topic: article
 author: colinbirkett
 ms.author: colinbirkett
@@ -13,12 +13,12 @@ search.audienceType:
 
 # Create unmapped fields for registration forms (preview)
 
-[!INCLUDE [preview banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 Custom unmapped fields (also known as custom registration fields) allow you to **create and manage personalized questions for event attendees** without affecting the Lead or Contact entity. Custom unmapped fields allow you to collect relevant information for each event, such as dietary preferences, session interests, feedback, and more. You can use the information gathered to customize the communication with your attendees and personalize the event attendee experience. 
 
 > [!TIP] 
-> This article describes custom unmapped fields for event registration forms. For information on custom unmapped fields in marketing forms, see [Create unmapped fields for marketing forms](real-time-marketing-forms-custom-fields.md). 
+> This article describes custom unmapped fields for event registration forms. For information on custom unmapped fields in marketing forms, see [Create unmapped fields for marketing forms](real-time-marketing-forms-custom-fields.md).
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note.md)]
 

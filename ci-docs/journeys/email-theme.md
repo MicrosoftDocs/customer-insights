@@ -1,10 +1,10 @@
 ---
-title: 'Preview: Copilot - Style your emails with AI-assisted themes'
+title: Copilot - Style your emails with AI-assisted themes (preview)
 description: Style your emails with AI-assisted themes in Dynamics 365. Learn how to use Copilot to customize email elements like fields, buttons, and text.
-ms.date: 04/03/2025
+ms.date: 06/12/2025
 ms.topic: how-to
 author: alfergus
-ms.author: alfergus
+ms.author: colinbirkett
 ms.collection: bap-ai-copilot
 ms.custom:
   - ai-gen-docs-bap
@@ -12,7 +12,9 @@ ms.custom:
   - ai-seo-date:11/22/2024
 ---
 
-# Preview: Copilot - Style your emails with AI-assisted themes
+# Copilot - Style your emails with AI-assisted themes (preview)
+
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 > [!WARNING]
 >  The following Copilot public preview features will be discontinued and removed in May 2025: 
@@ -20,15 +22,12 @@ ms.custom:
 > - Style your forms with AI-assisted themes
 > - Style your brand profiles with AI-assisted themes 
 
-> [!IMPORTANT]
-> A preview feature is a feature that is not complete, but is made available before it’s officially in a release so customers can get early access and provide feedback. Preview features aren’t meant for production use and may have limited or restricted functionality.
-> 
-> Microsoft doesn't provide support for this preview feature. Microsoft Dynamics 365 Technical Support won’t be able to help you with issues or questions. Preview features aren’t meant for production use, especially to process personal data or other data that are subject to legal or regulatory compliance requirements.
-
 This article describes the email theme functionality, which uses Copilot to customize the appearance of email fields, buttons, and text.
 
 > [!NOTE]
 > Unless a style is explicitly set in the element properties, the default style is replaced with the email theme style.
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note.md)]
 
 ## What is the theme functionality?
 
