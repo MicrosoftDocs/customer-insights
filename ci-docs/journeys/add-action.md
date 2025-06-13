@@ -91,7 +91,7 @@ You can configure the wait tile using the following parameters:
 
 ##### Wait for a trigger
 
-There are three condition types for the wait for trigger tile. For the first condition type, you can specify to wait until a previous message in your journey gets an interaction. For the second condition type, you can specify a trigger attribute at a specific date and time for your customers. For the third condition type, you can specify to wait until a person or customer becomes a member of a dynamic segment in your journey. For more information on this condition type, see [Wait for segment membership](#preview-wait-for-segment-membership). The wait for trigger configuration is useful for scenarios like appointment reminders, where you can choose to wait one day before the appointment to send a reminder. Date and time information must be included in the trigger that started the journey for the customer.
+There are three condition types for the wait for trigger tile. For the first condition type, you can specify to wait until a previous message in your journey gets an interaction. For the second condition type, you can specify a trigger attribute at a specific date and time for your customers. For the third condition type, you can specify to wait until a person or customer becomes a member of a dynamic segment in your journey. For more information on this condition type, see [Wait for segment membership](#wait-for-segment-membership-preview). The wait for trigger configuration is useful for scenarios like appointment reminders, where you can choose to wait one day before the appointment to send a reminder. Date and time information must be included in the trigger that started the journey for the customer.
 
 ##### Series
 
