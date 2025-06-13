@@ -15,8 +15,6 @@ search.audienceType:
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-Email deduplication allows you to avoid sending duplicate emails when multiple contacts share the same email address. Email deduplication is a general setting that applies only to segment-based journeys and is disabled by default.
-
 When email deduplication is enabled, the journey checks the email addresses of the contacts in the segment (once they reach the email tile) and only send one email to each unique address. For example, if three contacts have the same email address, only one of them receives the email. The other two are reported as **blocked** under the **Duplicate recipient address** category in the **Delivery and interaction details**.
 
 When email deduplication is disabled (default), the journey sends the email to every contact in the segment, even if they share an email address.
