@@ -1,7 +1,7 @@
 ---
-title: "Preview: Create unmapped fields for marketing forms"
+title: Create unmapped fields for marketing forms (preview)
 description: Mapped and unmapped fields for forms in Dynamics 365 Customer Insights - Journeys.
-ms.date: 03/10/2025
+ms.date: 06/12/2025
 ms.topic: how-to
 author: petrjantac
 ms.author: colinbirkett
@@ -11,17 +11,16 @@ search.audienceType:
   - enduser
 ---
 
-# Preview: Create unmapped fields for marketing forms
+# Create unmapped fields for marketing forms (preview)
 
-> [!IMPORTANT]
-> A preview feature is a feature that isn't complete but is made available before it’s officially in a release so customers can get early access and provide feedback. Preview features aren’t meant for production use and may have limited or restricted functionality.
->
-> Microsoft doesn't provide support for this preview feature. Microsoft Dynamics 365 Technical Support will not be able to help you with issues or questions. Preview features aren’t meant for production use, especially to process personal data, or other data that are subject to legal or regulatory compliance requirements.
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 Custom unmapped fields let you gather additional information about your customers by creating any kind of question directly in the form editor, without needing to create new custom attributes for your lead or contact entity. For example, you can create fields to ask, “What is your meal preference?” or create contest questions to increase customer satisfaction and retention.
 
 > [!TIP]
 > The preview of unmapped form fields is only available for marketing forms. Custom unmapped fields for event registration forms will be available soon.
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note.md)]
 
 ## Difference between mapped and unmapped fields
 

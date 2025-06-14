@@ -1,7 +1,7 @@
 ---
-title: 'Preview: Copilot - Refresh and perfect your message'
+title: 'Copilot - Refresh and perfect your message (preview)'
 description: Use the content rewrite copilot to rephrase messages, adjust tone, and optimize your content in Dynamics 365 Customer Insights - Journeys.
-ms.date: 11/22/2024
+ms.date: 06/12/2025
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
@@ -12,12 +12,9 @@ ms.custom:
   - ai-seo-date:11/22/2024
 ---
 
-# Preview: Copilot - Refresh and perfect your message
+# Copilot - Refresh and perfect your message (preview)
 
-> [!IMPORTANT]
-> A preview feature is a feature that is not complete, but is made available before it’s officially in a release so customers can get early access and provide feedback. Preview features aren’t meant for production use and may have limited or restricted functionality.
-> 
-> Microsoft doesn't provide support for this preview feature. Microsoft Dynamics 365 Technical Support won’t be able to help you with issues or questions. Preview features aren’t meant for production use, especially to process personal data or other data that are subject to legal or regulatory compliance requirements.
+[!INCLUDE [Preview banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 This article is an overview of the content rewrite copilot feature. It explains how to use content rewrite to refine your email, forms, and message content.
 
@@ -33,6 +30,8 @@ This article is an overview of the content rewrite copilot feature. It explains 
 
 > [!Tip]
 > Learn about using the content ideas copilot to create inspiring email copy: [Make email creation fun and more efficient with AI-powered content ideas in Dynamics 365 Customer Insights - Journeys](https://cloudblogs.microsoft.com/dynamics365/it/2022/11/30/engage-your-customers-faster-with-ai-powered-marketing-email-content/)
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note.md)]
 
 ## What is the content rewrite copilot?
 

@@ -40,7 +40,7 @@ Depending on how you acquire your license, there are different pathways to get t
 
 ### Monitoring your usage
 
-As stated in the published Dynamics 365 license guide, Customer Insights - Journeys and Customer Insights - Data are tenant-level licenses, which means that all meters associated with the licenses are summed at the tenant level across any environment using the application on a given tenant. To monitor your tenant-level usage:
+As stated in the published Dynamics 365 license guide, Customer Insights - Journeys and Customer Insights - Data are tenant-level licenses, which means that all meters associated with the licenses are summed at the tenant level across any environment of any type (sandbox, production, trial) that's using the application on a given tenant. To monitor your tenant-level usage:
 - For Customer Insights - Journeys, go to **Settings** > **Quota Limits** where you can see the total tenant-level entitled interacted people and monthly interactions as well as how much has been used on the environment you are on and all **other** environments on the tenant.
 - For Customer Insights - Data, visit each environment on the tenant and sum the total count of **Customers** in each environment. You can visit each environment using the environment switcher in the upper right corner.
 - For Dataverse and other platform-related meters, visit **Power Platform Admin Center** > **Capacity**.
@@ -128,5 +128,9 @@ Each time you create a self-service trial, a license is created and isn't remove
 
 - You get the new license on your tenant and are entitled accordingly.
 - Other than being checked for presence at installation and informing quota entitlement amounts, the licenses aren't tied to the application installations in any way. You don't need to do anything related to your existing application installations when you change license types from old to new on your tenant. Your applications continue to work unless your license expires.  
+
+### Why does usage on sandbox environments count against my entitlement?
+
+- The concept of sandbox and production environment types exists to support platform application lifecycle management features and doesn't intersect with any consumption usage metrics. Dynamics 365 Customer Insights, Dataverse add-ons, and other licenses are specified as tenant-level explicitly to capture usage across any and all environments of any and all types. Microsoft accrues the cost of database storage and transactions regardless of the environment type and therefore doesn't make any distinctions about usage by environment type with regard to entitlements. Entitlements are tenant-level, which is the sum of all usage at the tenant level, regardless of environment type.
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
