@@ -1,7 +1,7 @@
 ---
 title: Define an extended configuration entity for the channel instance
 description: Learn how to define an extended configuration entity for a custom channel instance in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/22/2023
+ms.date: 06/10/2025
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
@@ -28,44 +28,54 @@ For each custom channel solution, you need to:
 
 1. [Add a relationship](/dynamics365/customerengagement/on-premises/customize/create-and-edit-1n-relationships) to the base **Channel Instance** entity in the **msdyn_extendedentityid** attribute.\
 
-    This attribute is a [polymorphic lookup](/power-apps/developer/data-platform/webapi/multitable-lookup). Here's an example of the relationship in XML:
+    This attribute is a [polymorphic lookup](/power-apps/developer/data-platform/webapi/multitable-lookup). 
+    
+    > [!IMPORTANT]
+    > The XRMToolBox Polymorphic Lookup Creator generates a relationship that doesn't work in Customer Insights - Journeys. Complete the following steps instead of generating a polymorphic lookup in XRMToolBox.
 
-```xml
-<EntityRelationship Name="msdyn_ChannelInstance_extendedentityid_cr65f_samplechannelinstance">
-    <EntityRelationshipType>OneToMany</EntityRelationshipType>
-    <IsCustomizable>0</IsCustomizable>
-    <IntroducedVersion>1.0.0.0</IntroducedVersion>
-    <IsHierarchical>0</IsHierarchical>
-    <ReferencingEntityName>msdyn_ChannelInstance</ReferencingEntityName>
-    <ReferencedEntityName>cr65f_samplechannelinstance</ReferencedEntityName>
-    <CascadeAssign>NoCascade</CascadeAssign>
-    <CascadeDelete>RemoveLink</CascadeDelete>
-    <CascadeReparent>NoCascade</CascadeReparent>
-    <CascadeShare>NoCascade</CascadeShare>
-    <CascadeUnshare>NoCascade</CascadeUnshare>
-    <CascadeRollupView>NoCascade</CascadeRollupView>
-    <IsValidForAdvancedFind>1</IsValidForAdvancedFind>
-    <ReferencingAttributeName>msdyn_extendedentityId</ReferencingAttributeName>
-    <RelationshipDescription>
-      <Descriptions>
-        <Description description="" languagecode="1033" />
-      </Descriptions>
-    </RelationshipDescription>
-    <EntityRelationshipRoles>
-      <EntityRelationshipRole>
-        <NavPaneDisplayOption>UseCollectionName</NavPaneDisplayOption>
-        <NavPaneArea>Details</NavPaneArea>
-        <NavPaneOrder>10000</NavPaneOrder>
-        <NavigationPropertyName>msdyn_extendedentityid_cr65f_samplechannelinstance</NavigationPropertyName>
-        <RelationshipRoleType>1</RelationshipRoleType>
-      </EntityRelationshipRole>
-      <EntityRelationshipRole>
-        <NavigationPropertyName>msdyn_ChannelInstance_extendedentityid_cr65f_samplechannelinstance</NavigationPropertyName>
-        <RelationshipRoleType>0</RelationshipRoleType>
-      </EntityRelationshipRole>
-    </EntityRelationshipRoles>
-  </EntityRelationship>
-```
+    Here's an example of the relationship in XML:
+
+    ```xml
+    <?xml version="1.0" encoding="utf-8"?>
+    <EntityRelationships xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <EntityRelationship Name="msdyn_ChannelInstance_extendedentityid_cr65f_samplechannelinstance">
+        <EntityRelationshipType>OneToMany</EntityRelationshipType>
+        <IsCustomizable>0</IsCustomizable>
+        <IntroducedVersion>1.0.0.0</IntroducedVersion>
+        <IsHierarchical>0</IsHierarchical>
+        <ReferencingEntityName>msdyn_ChannelInstance</ReferencingEntityName>
+        <ReferencedEntityName>cr65f_samplechannelinstance</ReferencedEntityName>
+        <CascadeAssign>NoCascade</CascadeAssign>
+        <CascadeDelete>RemoveLink</CascadeDelete>
+        <CascadeReparent>NoCascade</CascadeReparent>
+        <CascadeShare>NoCascade</CascadeShare>
+        <CascadeUnshare>NoCascade</CascadeUnshare>
+        <CascadeRollupView>NoCascade</CascadeRollupView>
+        <IsValidForAdvancedFind>1</IsValidForAdvancedFind>
+        <ReferencingAttributeName>msdyn_extendedentityId</ReferencingAttributeName>
+        <RelationshipDescription>
+          <Descriptions>
+            <Description description="" languagecode="1033" />
+          </Descriptions>
+        </RelationshipDescription>
+        <EntityRelationshipRoles>
+          <EntityRelationshipRole>
+            <NavPaneDisplayOption>UseCollectionName</NavPaneDisplayOption>
+            <NavPaneArea>Details</NavPaneArea>
+            <NavPaneOrder>10000</NavPaneOrder>
+            <NavigationPropertyName>msdyn_extendedentityid_cr65f_samplechannelinstance</NavigationPropertyName>
+            <RelationshipRoleType>1</RelationshipRoleType>
+          </EntityRelationshipRole>
+          <EntityRelationshipRole>
+            <NavigationPropertyName>msdyn_ChannelInstance_extendedentityid_cr65f_samplechannelinstance</NavigationPropertyName>
+            <RelationshipRoleType>0</RelationshipRoleType>
+          </EntityRelationshipRole>
+        </EntityRelationshipRoles>
+      </EntityRelationship>
+    ```
+      > [!IMPORTANT]
+      > - You must create a file with the same name of the table you created for your custom channel under the unpacked solution in the path "Other\Relationships" and put the XML file with the relationship definition there.
+      > - You need to add a new line in the "Relationships.xml" file under the unpacked solution in the "Other" path. The name value is the same string you wrote in the third line of the XML file ("`msdyn_ChannelInstance_extendedentityid_cr65f_samplechannelinstance`" in the above-example.)
 
 1. Create a form to expose the configuration fields.
 
