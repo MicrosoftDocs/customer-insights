@@ -96,5 +96,11 @@ There are three possible A/B test result outcomes:
     - If you put an attribute branch or any tile that changes the total number of the segment, the control group option goes away because the system doesn't know how many customers to hold back until the test is completed.
 1. Why is my test ending unexpectedly?
     - If you choose to end the test with statistical significance, the system tries to get a winner within the first 30 days from the time you publish the journey. If no version is declared a winner, the test ends and the default version is sent to the remaining audience.
+  1. Why is my A/B test result showing as "Inconclusive"?
+      - An A/B test may return an "Inconclusive" result if the experiment is unable to complete its evaluation phase. This typically happens when the test or journey ends before the system has had enough time to gather and analyze sufficient data to determine a statistically significant winner.
+To ensure accurate evaluation:
+        - Allow at least 5 hours between the start and end of the test (test end time or journey finish time).
+        - Ensure that the journey has sufficient volume and engagement to allow for meaningful statistical analysis.
+        - Let the evaluation process runs in the background, it may take several hours to complete, depending on traffic and engagement volume.
  
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
