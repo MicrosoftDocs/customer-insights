@@ -1,9 +1,9 @@
 ---
 title: "View tables in Customer Insights - Data"
-description: "View data on the Tables page."
+description: "Learn how to view data on the Tables page in Customer Insights - Data."
 ms.date: 06/03/2025
 ms.reviewer: mhart
-ms.topic: article
+ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
 ---
@@ -30,7 +30,7 @@ For more information about the **Relationships** tab, see [Relationships](relati
    - **Source**: Type of data source that ingested the table.
    - **Updated**: Time the table was last updated.
    - **Status**: Details about the last update of the table.
-   - **Row filters**: Filter to remove unwanted rows. Row filters are available only for source tables.
+   - **Row filters**: Filter to remove unwanted rows. [Row filters](tables-filters.md) are available only for source tables.
 
 ## Explore a specific table's data
 
