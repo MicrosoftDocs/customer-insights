@@ -52,10 +52,8 @@ User agents are labeled as:
 Get valuable insights into your email's URL engagement and make data-driven decisions to improve your email marketing campaigns with link insights. With link insights, you see how each link in your email campaign performs and identify the top-performing links by total clicks, unique clicks, and click rate. Group your links by URL or link alias for more clarity. Learn more: [Edit email components in a live journey](edit-email-in-live-journey.md)
 
 > [!NOTE]
-> - Clickmap feature is dependant on link insights.
-> - Link insights are only supported for emails and journeys created after September 2024.
-However, even if both your journey and the email you're analyzing were created after that date, link insights will not be generated if the journey includes any older emails (created before September 2024).
-This is because the presence of legacy emails causes the system to treat the entire journey as legacy, which disables link tracking and heatmap functionality—even for the newer emails.
+> - The click map feature is dependant on link insights.
+> - Link insights are only supported for emails and journeys created after September 2024. However, even if both your journey and the email you're analyzing were created after that date, link insights aren't generated if the journey includes any older emails (created before September 2024). This is because the presence of legacy emails causes the system to treat the entire journey as legacy, which disables link tracking and heatmap functionality, even for the newer emails.
 
 ## Click map
 
