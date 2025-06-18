@@ -22,6 +22,13 @@ The following are possible device registration problems.
 ### I'm calling the device registration public API, it returns '202', but nothing happens
 
 The device registration public API returns in an asynchronous manner, which is a reason why the response status code is 202 (Accepted) and not 200 (OK). The request starts the registration process, but this doesn't necessarily mean that the operation was successful. There's a separate [device registration status API](developer-push-device-registration.md#device-registration-status) you need to call to see results of the registration. Use the `RegistrationRequestId` that's provided in response to the device registration API execution to request the registration status.
+If there is no `RegistrationRequestId` returned within the response, then you'll need to add `x-ms-track-registration` set to `true` within the request headers.
+
+### Device registration doesn't do anything, and registration status request returns 400
+
+There are two common reasons for this to happen:
+1. Wrong ApiToken and/or MobileAppId field was provided. Make sure it's taken from Developer Information section of CRM UI. 
+2. Wrong organization ID was used in public API URL. Make sure you're using the relevant one from Developer Information tab and call API for the right CRM environment.
 
 ### Registration status API shows the following failure message: *Provided API token is not valid*
 
