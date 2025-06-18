@@ -29,7 +29,7 @@ To view email insights, go to **Real-time journeys** > **Email** > **Insights**.
 
 :::image type="content" source="media/analytics-email-insights.png" alt-text="Screenshot of the email insights dashboard showing delivery and engagement metrics." lightbox="media/analytics-email-insights.png":::
 
-## Device type and user agents' analysis
+## Device type and user agent analysis
 
 Learn about the different device types, email clients, operating systems, and browsers your customers use to read your emails. Design your emails to match the devices and user agents your audience uses most, and make sure your messages are easy to read.
 
@@ -74,7 +74,7 @@ Use click map insights to optimize your content placement, layout, and design to
 > - When you add older emails to your journey, to start showing the click map, use [live editing](edit-email-in-live-journey.md) and update the email. The links in your email are updated and tracked for new interactions.
 > - The click map might have incomplete data or miss some data depending on when your journey and email content was created and running, especially if it was active before October 2024.
 
-## Variation insights (Conditional content)
+## Variation insights (conditional content)
 
 Get insights into key metrics like unique opens, unique clicks, delivered messages, open rate, click rate, spam messages, and unsubscriptions for each variant. Use these insights to see what resonates with your audience. You see variation insights only if an email has conditional content.
 
