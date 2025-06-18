@@ -1,7 +1,7 @@
 ---
 title: Troubleshoot push notifications setup
 description: Learn how to troubleshoot push notifications setup in Dynamics 365 Customer Insights - Journeys.
-ms.date: 05/20/2025
+ms.date: 06/18/2025
 ms.topic: article
 author: colinbirkett
 ms.author: colinbirkett
@@ -21,7 +21,13 @@ The following are possible device registration problems.
 
 ### I'm calling the device registration public API, it returns '202', but nothing happens
 
-The device registration public API returns in an asynchronous manner, which is a reason why the response status code is 202 (Accepted) and not 200 (OK). The request starts the registration process, but this doesn't necessarily mean that the operation was successful. There's a separate [device registration status API](developer-push-device-registration.md#device-registration-status) you need to call to see results of the registration. Use the `RegistrationRequestId` that's provided in response to the device registration API execution to request the registration status.
+The device registration public API returns in an asynchronous manner, which is a reason why the response status code is 202 (Accepted) and not 200 (OK). The request starts the registration process, but this doesn't necessarily mean that the operation was successful. There's a separate [device registration status API](developer-push-device-registration.md#device-registration-status) you need to call to see results of the registration. Use the `RegistrationRequestId` that's provided in response to the device registration API execution to request the registration status. If there's no `RegistrationRequestId` returned within the response, then you need to add `x-ms-track-registration` set to `true` within the request headers.
+
+### Device registration doesn't do anything, and the registration status request returns 400
+
+There are two common reasons for this issue:
+1. The wrong `ApiToken` or `MobileAppId` field was provided. Make sure these values are taken from the **Developer Information** section of the CRM. 
+2. The wrong organization ID was used in the public API URL. Make sure you're using the relevant value from the **Developer Information** tab and call the API for the correct CRM environment.
 
 ### Registration status API shows the following failure message: *Provided API token is not valid*
 
