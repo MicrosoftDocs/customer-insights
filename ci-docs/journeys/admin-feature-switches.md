@@ -40,7 +40,6 @@ The following tables list each available feature, preview status, and links for 
 |---|---|---|
 | UTM tracking | Production | [Enable UTM values to be automatically added to every link in your messages. This allows source tracking within third-party tools like Google Analytics](real-time-marketing-utm.md).|
 | Bot protection | Production| [Filter out nonhuman click interactions](bot-protection.md). |
-| Web tracking | Preview| Enable Web tracking feature in real-time journeys. This allows tracking web page visits and web page link clicks that can be used in journey orchestration. |
 
 ## Event management
 
