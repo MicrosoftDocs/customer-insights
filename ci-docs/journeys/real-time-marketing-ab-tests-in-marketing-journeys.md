@@ -1,6 +1,6 @@
 ---
-title: A/B tests in Customer Insights - Journeys 
-description: Test different content and channels in Dynamics 365 Customer Insights - Journeys to gain insights into how best to reach your customers.
+title: A/B tests in Customer Insights - Journeys
+description: A/B tests in Customer Insights - Journeys help you compare content and channels to find the best way to reach your customers. Learn how to set up and analyze tests.
 ms.date: 06/18/2025
 ms.topic: article
 author: alfergus
@@ -13,25 +13,25 @@ ms.custom:
   - ai-gen-docs-bap
   - ai-gen-desc
   - ai-seo-date:08/15/2023
+  - ai-gen-description
 ---
 
 # A/B tests in Dynamics 365 Customer Insights - Journeys
 
-Customer Insights - Journeys uses powerful A/B tests to examine your trigger-based customer journeys, letting you gain insights into how best to reach your customers.
+Customer Insights - Journeys uses A/B tests to examine your trigger-based customer journeys, so you learn the best way to reach your customers.
 
-Using A/B tests, you can measure which channel or content messaging strategy leads to higher success. Each test compares a control group of users (version A) against a variant (version B). The control group receives a default experience. The variant group receives a different experience or message. By comparing the results of the groups, you can determine which is the most effective.
+A/B tests measure which channel or content strategy leads to higher success. Each test compares a control group (version A) to a variant (version B). The control group gets the default experience, and the variant group gets a different experience or message. Comparing the results shows which option is most effective.
 
-A/B testing requires a significantly sized audience to be effective. Running tests on audiences of less than 1,000 can produce unexpected results such as unequal distributions in the variants. Running tests on extremely small groups almost always produces disproportionate distributions. For example, if your audience only has ten members, it's possible that one might go to variant A while nine go to variant B. This is expected behavior when the audience size is so small that the statistical model doesn't have enough data to reach the required distribution.
+A/B testing needs a large audience to be effective. Tests with fewer than 1,000 people can produce uneven results, like unequal group sizes. Tests with very small groups almost always create disproportionate distributions. For example, if your audience has 10 members, one might go to variant A and nine to variant B. This is expected when the audience is too small for the statistical model to distribute evenly.
 
 ## Example 1: Creating an A/B test for trigger-based journeys
 
-Imagine you want to test two different emails on a trigger-based journey that activates when someone completes a purchase.
+Suppose you want to test two different emails on a trigger-based journey that starts when someone finishes a purchase.
 
 1. Create your initial content in the email editor as usual. Perfect the content and check it for errors to ensure it can go live.
-1. When your content is ready, go to **Customer Insights - Journeys** > **Engagement** > **Journeys** and select an existing journey or create a new one.
-1. After you select a journey, select the plus sign (**+**) to add an element, and then follow these steps:
+1. When your content is ready, go to **Customer Insights - Journeys** > **Engagement** > **Journeys** and select an existin1. After you select a journey, select the plus sign (**+**) to add an element.
     - Select **Test which variation performs better**.
-- Select the channels you want to test. In this example, you want to test two emails: select one for version A and one for version B, then select **Create test**.
+    - Select the channels you want to test. For example, select one email for version A and one for version B, then select **Create test**.on B, then select **Create test**.
 1. When you select the A/B test tile, the side pane opens.
 
     > [!div class="mx-imgBorder"]
@@ -46,23 +46,23 @@ Imagine you want to test two different emails on a trigger-based journey that ac
 - **Winning metric**: Set the winning condition for your test by choosing a winning metric: the version with the most journey goal events hit, the most clicks, or the most opens. For this case, you want to increase your open rates, so you'll choose the open rate option.
 - **This test ends**: Choose between ending the test automatically or at a specific date and time. Letting the test determine a winner automatically occurs when the results reach statistical significance. This means that once a clear winner is determined, the system sends the winning version to the rest of your audience. The losing version is discarded. If you choose statistical significance as an option to end the A/B test but there's no clear winner after 30 days, the system automatically sends the default version. If you end the test early, it can take up to four hours to release the control group.
 - **Default version**: Lastly, choose a default version in case the test doesn't end successfully. If a winner isn't determined by the deadline specified through the date and time, the default version is automatically sent.
-1. The A/B test should look like this when you configure everything and you're ready to publish the journey:
+1. When you're ready to publish the journey, the A/B test looks like this:
 
     > [!div class="mx-imgBorder"]
     > ![A/B test side panel is configured and ready for journey creation](media/real-time-marketing-ready-to-publish-journey.png "A/B test side panel is configured and ready for journey creation")
 
 ## Example 2: Creating an A/B test for segment-based journeys
 
-Imagine you want to create a journey to welcome new members who joined your loyalty program this month. You want to increase your open rate by testing two different subject lines.
+Suppose you want to create a journey to welcome new members who join your loyalty program this month. You want to increase your open rate by testing two different subject lines.
 
-You'll complete steps one through three outlined in the first example, but you'll notice that the side pane looks different. This is because with segment-based journeys, you have a total number of customers to begin with; this allows you to create two types of A/B tests.
+Complete steps one through three outlined in the first example, but notice that the side pane looks different. With segment-based journeys, you start with a total number of customers. This setup lets you create two types of A/B tests.
 
-1. **A/B test with no control group**: This A/B test behaves similarly to trigger-based journeys where customers funnel through the test as they come until a winner is determined.
+1. **A/B test with no control group**: This A/B test works like trigger-based journeys, where customers go through the test as they come until a winner is determined.
  
     > [!div class="mx-imgBorder"]
     > ![A/B test with no control group](media/real-time-marketing-ab-test-with-no-control-group.png "A/B test with no control group")
 
-1. **A/B test with a control group**: This allows you to tell the system exactly how many customers you want to test. For instance, if your segment has 100 loyalty members, you might first test on 20 percent or 20 members where each version receives 10 members. After the A/B test, the remaining 80 members receive the winning version. You can always adjust the initial audience and the distribution to your liking.
+1. **A/B test with a control group**: This option lets you specify exactly how many customers to test. For example, if your segment has 100 loyalty members, you can first test on 20 percent, or 20 members, with each version receiving 10 members. After the A/B test, the remaining 80 members get the winning version. You can adjust the initial audience and the distribution as needed.
  
     > [!div class="mx-imgBorder"]
     > ![A/B test with control group](media/real-time-marketing-ab-test-with-control-group.png "A/B test with control group")
@@ -71,12 +71,12 @@ For this example, we're using an A/B test with a control group. All the other se
 
 ## Monitor the lifecycle of your A/B tests
 
-After you've published your journey, you can open it to track the lifecycle of your tests.
+After you publish your journey, open it to track the lifecycle of your tests.
 
 - **Draft**: These tests haven't run yet, so you can still edit the settings.
-- **In progress**: These tests are currently being run. The settings are locked, and you can’t make significant changes.
+- **In progress**: These tests are running. The settings are locked, and you can't make significant changes.
 - **Stopped**: These tests are stopped, and the marketer can choose which version to send.
-- **Ended**: These tests were completed by finding a statistically significant winner or by timing out when scheduled to end at a set date and time. Ended tests can't be reused.
+- **Ended**: These tests end when a statistically significant winner is found or when they time out at a set date and time. Ended tests can't be reused.
 
 ## Understand your results
 
@@ -84,22 +84,22 @@ After you've published your journey, you can open it to track the lifecycle of y
 
 There are three possible A/B test result outcomes:
 
-- **Test concluded with a clear winner**: The test concluded that one version is performing better than the other. The winning version has a “winner” badge and is distributed to any new customers that funnel through the journey.
-- **Test was not conclusive**: The test concluded that recipients are as likely to engage with version A as with version B. In this case, the default version is sent to any new customers that funnel through the journey.
-- **The test was stopped**: This means that you or one of your coworkers stopped the test before it could conclude. In this case, the version specified by you or your coworker is sent to any new customers that funnel through the journey.
+- **Test concluded with a clear winner**: The test shows that one version performs better than the other. The winning version has a “winner” badge and goes to any new customer who enters the journey.
+- **Test was not conclusive**: The test shows that recipients are as likely to engage with version A as with version B. In this case, the default version goes to any new customer who enters the journey.
+- **The test was stopped**: You or a coworker stopped the test before it could finish. In this case, the version you or your coworker specify goes to any new customer who enters the journey.
 
 ## Frequently asked questions
 
 - Can I create an A/B test with more than two versions?
-    - No, not at the moment.
+    - No, not right now.
 - Why am I not seeing the control group option for segment-based journeys?
-    - If you put an attribute branch or any tile that changes the total number of the segment, the control group option goes away because the system doesn't know how many customers to hold back until the test is completed.
+    - If you add an attribute branch or any tile that changes the total number in the segment, the control group option goes away because the system can't know how many customers to hold back until the test finishes.
 - Why is my test ending unexpectedly?
-    - If you choose to end the test with statistical significance, the system tries to get a winner within the first 30 days from the time you publish the journey. If no version is declared a winner, the test ends, and the default version is sent to the remaining audience.
-1. Why is my A/B test result showing as "Inconclusive"?
-    - An A/B test may return an "Inconclusive" result if the experiment is unable to complete its evaluation phase. This typically happens when the test or journey ends before the system has had enough time to gather and analyze sufficient data to determine a statistically significant winner. To ensure accurate evaluation:
-        - Allow at least five hours between the start and end of the test (test end time or journey finish time).
-        - Ensure that the journey has sufficient volume and engagement to allow for meaningful statistical analysis.
-        - Let the evaluation process run in the background; it may take several hours to complete, depending on traffic and engagement volume.
+    - If you choose to end the test with statistical significance, the system tries to pick a winner within the first 30 days after you publish the journey. If no version is a winner, the test ends, and the default version goes to the remaining audience.
+- Why is my A/B test result showing as "Inconclusive"?
+    - An A/B test can return an "Inconclusive" result if the experiment can't finish its evaluation phase. This usually happens when the test or journey ends before the system has enough time to gather and analyze enough data to pick a statistically significant winner. To help get accurate results:
+        - Leave at least five hours between the start and end of the test (test end time or journey finish time).
+        - Make sure the journey has enough volume and engagement for meaningful statistical analysis.
+        - Let the evaluation process run in the background; it can take several hours to finish, depending on traffic and engagement volume.
  
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
