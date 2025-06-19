@@ -189,22 +189,19 @@ You can update the *Connect to storage account using* option. For more informati
 
 ## Prevent partition fragments in Data Lake ingestion
 
-It's possible your data lake partitioning strategy could create hundreds of thousands of small partitions, such as a new partition for each entity every hour. To avoid partitioning fragmentation, follow these best practices:
+It's possible your data lake partitioning strategy could create hundreds of thousands of small partitions, such as a new partition for each entity every hour. To avoid partition fragmentation, follow these best practices:
 
-- Avoid over-partitioning: Partitioning should be based on low-cardinality columns such as date or region, rather than high-cardinality fields like entity ID or hour.
-
-- Target optimal file sizes: Aim for partition files between 16MB and 1GB to reduce the overhead of opening and closing many small files and improve read performance.
-
-- Use Delta Lake, which provides auto-optimization features: Delta Lake supports autocompaction and optimizes write features that automatically manage file sizes and partition layout. On Databricks Runtime 11.3 and above, Delta Lake autotunes file sizes and partitions in the background.
-
-- Reevaluate partitioning strategy periodically: As data volume and access patterns evolve, so should your partitioning strategy. Use tools like data skipping stats and query profiling to guide adjustments.
+- **Avoid over-partitioning**: Partitioning should be based on low-cardinality columns such as date or region, rather than high-cardinality fields like entity ID or hour.
+- **Target optimal file sizes**: To reduce the overhead of opening and closing many small files and improve read performance, aim for partition files between 16 MB and 1 GB.
+- **Use Delta Lake, which provides auto-optimization features**: Delta Lake supports autocompaction and optimizes write features that automatically manage file sizes and partition layout. On Databricks Runtime 11.3 and above, Delta Lake autotunes file sizes and partitions in the background.
+- **Reevaluate partitioning strategy periodically**: As data volume and access patterns evolve, so should your partitioning strategy. Use tools like data skipping stats and query profiling to guide adjustments.
 
 Hundreds of thousands of small partitions can cause the following symptoms:
 
-- Performance degradation during data ingestion and query execution
-- Increased metadata overhead and latency
-- Higher operational costs due to inefficient storage and compute usage
-- Errors when the number of partitions exceeds a service's limitations
-- Out-of-memory errors when the system attempts to create a graph to every partition
+- Performance degradation during data ingestion and query execution.
+- Increased metadata overhead and latency.
+- Higher operational costs due to inefficient storage and compute usage.
+- Errors when the number of partitions exceeds a service's limitations.
+- Out-of-memory errors when the system attempts to create a graph to every partition.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
