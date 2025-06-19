@@ -2,9 +2,9 @@
 title: Product overview for Dynamics 365 Customer Insights 
 author: m-hartmann
 description: Get an overview for Dynamics 365 Customer Insights and how your organization can benefit from the broad set of features.
-ms.author: mhart
-ms.reviewer: mhart
-ms.date: 04/29/2024
+ms.author: colinbirkett
+ms.reviewer: colinbirkett
+ms.date: 06/19/2025
 ms.topic: overview
 ---
 
