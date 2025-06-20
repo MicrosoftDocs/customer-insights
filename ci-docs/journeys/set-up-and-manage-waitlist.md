@@ -15,7 +15,6 @@ search.audienceType:
 
 Ensuring marketing events are filled to capacity is crucial for success and return on investment. To encourage a high turnout for marketing events, you can now enable waitlist registrations, which ensures that spots are filled when registered attendees cancel. By setting the capacity for events and sessions, prospective attendees are placed on a waitlist when events and sessions are full. If a slot opens, the system automatically registers the next individual on the waitlist. That individual then automatically receives a registration confirmation and personalized event information. This ensures your event is filled to capacity.
 
-
 ## How the waitlist works
 
 When new space becomes available, your waitlist reacts as follows:
@@ -37,7 +36,7 @@ To enable or disable the waitlist for any event:
 1. Open the **Events** work area, go to the events list (**Events** > **Event** > **Events**), and then open or create an event.
 1. Open the **General** tab and find the **Capacity** area.
 
-    :::image type="content" source="media/waitlist settings.png" alt-text="Event general tab settings screen" lightbox="media/waitlist settings.png":::
+    :::image type="content" source="media/waitlist settings.png" alt-text="Event general tab settings." lightbox="media/waitlist settings.png":::
 
 1. Make the following settings:
   - **Maximum event capacity** (for event-level registration only): Enter the maximum number of people who can attend your event. The waitlist only takes effect after the indicated number of contacts have registered. If you're using session-level registrations, you can also set up a waitlist for each session. For more information, see [Enable a waitlist for a session](#enable-a-waitlist-for-a-session).
@@ -90,17 +89,20 @@ To see who is currently on the waitlist for any event or session:
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
 
 ### Manual management of waitlist registrations
-If you chose to manually register waitlisted attendees, you will want to use a new flag accessible from the Event registration. It shows whether this contact is now eligible to be invited. 
+
+If you chose to manually register waitlisted attendees, you'll want to use a new flag accessible from the Event registration. It shows whether this contact is now eligible to be invited. 
 
 :::image type="content" source="media/waitlist_invited.png" alt-text="Invited flag" lightbox="media/waitlist_invited.png":::
 
 **Send invites for newly available places**
-When space becomes available for a waitlisted contact using manual registration, you need to let them know so they can sign up. You can automate the messaging using the standard segmentation and customer journey features of Dynamics 365 Customer Insights - Journeys. 
+
+When space becomes available for a waitlisted contact using manual registration, you need to inform them so they can sign up. You can automate the messaging using the standard segmentation and customer journey features of Dynamics 365 Customer Insights - Journeys. 
 
 ## Manage waitlist-related communication 
-There are a couple of available triggers related to waitlisting, that can help you optimize your waitlist-related communication: 
+
+There are available triggers related to waitlisting that can help optimize your waitlist-related communication:
+
 - Marketing event registration created - applicable when a new waitlist registration is created
 - Marketing registration created from waitlist - applicable when registration changes status from Waitlisted to Registered
 
-
-
+[!INCLUDE [footer-include](./includes/footer-banner.md)]
