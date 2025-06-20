@@ -94,13 +94,31 @@ Here’s a common @font-face declaration for importing a web font into an email 
 
     > [!div class="mx-imgBorder"]
     > ![Enter the URL of the font in the dialog box](media/enter-the-respective-font-url.png "Enter the URL of the font in the dialog box")
+    >
+   
+## Add fonts and fallback fonts into your email HTML
 
-## Navigating web font licensing
+When you use a custom font in emails or forms, it’s declared using the font-family CSS property. This allows you to specify a prioritized list of fonts—known as a font stack, so that if the primary font fails to load, the next available font is used. 
 
+In this example:
+
+`<font-family: "Boxed", Arial, sans-serif>`
+- "Boxed" is the custom font.
+- Arial is the fallback font.
+- Sans-serif is the generic fallbac
+This ensures that your email remains legible and visually consistent even if the custom font isn’t supported by the recipient’s email client.
+
+## Best Practices and Recommendations
+Integrating web fonts into Customer Insights – Journeys can enhance your brand’s visual identity. To ensure consistent rendering and compliance, follow these best practices: 
+
+- **Navigating web font licensing**: 
 When creating campaigns, it's crucial to respect licensing requirements for web fonts. While most providers permit use, adherence to individual licensing agreements is paramount. Reach out to font providers for precise details on licensing within Customer Insights - Journeys.
 
-## A font-forward future in Customer Insights - Journeys
+- **Use reliable fallback fonts**: 
+Include web-safe fonts such as Arial, Helvetica, or Times New Roman in your font stack. These fonts are widely supported across devices and email clients, ensuring your content remains legible even if the primary font fails to load.
 
-Integrating web fonts into Customer Insights - Journeys can elevate your brand. However, meticulous testing is paramount. Utilize Customer Insights - Journeys testing tools and validate across environments to ensure flawless fallbacks.
+- **Test across email clients**: 
+Not all email clients support web fonts—Gmail and Outlook are notable examples. Use the built-in testing tools in Customer Insights – Journeys to preview your emails across different environments and confirm that fallback fonts render correctly.
+
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
