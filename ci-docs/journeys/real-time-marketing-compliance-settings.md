@@ -11,14 +11,16 @@ search.audienceType:
   - enduser
 ---
 
-# Stay Compliant with Privacy Regulations
+# Stay compliant with privacy regulations
 
-The sending of commercial communications is governed by regional privacy laws such as the GDPR (EU), CAN-SPAM (US), CCPA (California), HIPAA (US healthcare), and others. These regulations are designed to protect individuals' privacy and ensure they receive only relevant and expected communications.
+Sending commercial communications is governed by regional privacy laws such as the GDPR (EU), CAN-SPAM (US), CCPA (California), HIPAA (US healthcare), and others. These regulations are designed to protect individuals' privacy and ensure they receive only relevant and expected communications.
 
-**Why it matters?**
+**Why does compliance matter?**
+
 Complying with these regulations not only helps you avoid legal penalties but also improves the user experience, leading to higher engagement and better deliverability of your emails. Non-compliance can result in blocked messages or reduced inbox placement.
 
-**How to stay compliant?**
+**How do I stay compliant?**
+
 We strongly recommend using a consent management system to track and honor user preferences. You can:
 
 - Use the built-in Consent Center in Customer Insights – Journeys, which supports real-time consent capture and enforcement.
@@ -28,26 +30,23 @@ We strongly recommend using a consent management system to track and honor user 
 
 The consent is captured and stored at the contact point level. A contact point is the destination for a message—such as an email address or phone number.
 
-- **Channel-specific consent**:
-Consent is stored per channel and per destination. For example, the email address somebody@contoso.com may have consented to receive commercial communications about upcoming events, while another email or phone number may not.
+- **Channel-specific consent**: Consent is stored per channel and per destination. For example, the email address somebody@contoso.com may have consented to receive commercial communications about upcoming events, while another email or phone number may not.
 
-- **Greater flexibility and control:**
-Contact point consent gives customers more control over where they want to receive communications from your organization.
+- **Greater flexibility and control**: Contact point consent gives customers more control over where they want to receive communications from your organization.
 
-- **Entity-Agnostic Orchestration:**
-One of the major benefits of contact point consent is that it enables real-time journeys to orchestrate across any entity—including contacts, leads, Customer Insights - Data profiles, and more. This ensures consistent consent enforcement regardless of the data source.
+- **Entity-agnostic orchestration**: One of the major benefits of contact point consent is that it enables real-time journeys to orchestrate across any entity—including contacts, leads, Customer Insights - Data profiles, and more. This ensures consistent consent enforcement regardless of the data source.
 
 The **consent model** is designed with a **flexible hierarchy** that can be tailored to meet your business and compliance requirements.
 
 :::image type="content" source="media/real-time-marketing-consent-hierarchy.png" alt-text="Consent hierarchy" lightbox="media/real-time-marketing-consent-hierarchy.png":::
 
-- At the top of the hierarchy are [Compliance Profiles](#compliance-profiles).
-- Each Compliance Profile can include multiple Purposes.
-- A single Purpose can be shared across multiple Compliance Profiles.
+- At the top of the hierarchy are [compliance profiles](#compliance-profiles).
+- Each compliance profile can include multiple Purposes.
+- A single Purpose can be shared across multiple compliance profiles.
 - Each Purpose can be optionally extended with multiple Topics to provide more granular control over consent. One topic can be linked only to a single Purpose.
 
 > [!IMPORTANT]
-> By default, real-time journeys does **not** evaluate the contact's `DoNotEmail`, `DoNotBulkEmail`, or `DoNotTrack` fields. To enable these checks, go to **Feature switches** and turn on the toggle labeled "Check contact consent in real-time journeys." The Preference Center does not update the `DoNotEmail`, `DoNotBulkEmail`, or `DoNotTrack` fields. This means users cannot change these specific consent preferences through the Preference Center. If you plan to manage consent using contact point consent, it is not recommended to rely on the `DoNotEmail`, `DoNotBulkEmail`, or `DoNotTrack` fields.
+> By default, real-time journeys does **not** evaluate the contact's `DoNotEmail`, `DoNotBulkEmail`, or `DoNotTrack` fields. To enable these checks, go to **Feature switches** and turn on the toggle labeled "Check contact consent in real-time journeys." The preference center does not update the `DoNotEmail`, `DoNotBulkEmail`, or `DoNotTrack` fields. This means users cannot change these specific consent preferences through the preference center. If you plan to manage consent using contact point consent, it is not recommended to rely on the `DoNotEmail`, `DoNotBulkEmail`, or `DoNotTrack` fields.
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=51f182de-841f-41e8-85c4-49af1caaeeb0]
 
@@ -61,24 +60,22 @@ Each compliance profile stores essential configuration details such as:
 - Unsubscribe link behavior
 - Associated purposes and topics
 
-**Preference Center Management:**
-The type of compliance profile (e.g., with Preference Center or External Link) influences how users manage their consent preferences. Compliance profile settings vary based on the type of compliance profile you're creating or modifying.
+**Preference center management**
+
+The type of compliance profile (e.g., with preference center or external Link) influences how users manage their consent preferences. Compliance profile settings vary based on the type of compliance profile you're creating or modifying.
 
 ### Why use multiple compliance profiles?
 
 Organizations often create multiple compliance profiles to support:
 
-- **Brand or Line-of-Business (LOB) Separation:**
-For example, separate compliance profiles for different brands or business units allow tailored consent settings and messaging strategies. Each compliance profile can have its own company address.
+- **Brand or line-of-business (LOB) separation**: For example, separate compliance profiles for different brands or business units allow tailored consent settings and messaging strategies. Each compliance profile can have its own company address.
 
-- **Regional Compliance Requirements:**
-Different regions may require different enforcement models.
-  **Example:**
+- **Regional Compliance Requirements**: Different regions may require different enforcement models.
+  **Example**:
   - **United States:** A commercial purpose might use a nonrestrictive model, allowing messages unless opted out.
   - **France:** The same purpose might use a restrictive model, requiring explicit opt-in due to GDPR.
 
-- **Localized Preference Centers:**
-Each compliance profile can have its own Preference Center design, supporting localization and regulatory alignment.
+- **Localized preference centers**: Each compliance profile can have its own preference center design, supporting localization and regulatory alignment.
 
 > [!NOTE]
 > **Deactivating compliance profiles and contact point consent records**
@@ -88,21 +85,19 @@ Each compliance profile can have its own Preference Center design, supporting lo
 > [!IMPORTANT]
 > Unsubscribe links in messages will expire six months after the link is created and will no longer work.
 
-### Configure compliance profile
+### Configure a compliance profile
 
 To create or configure compliance profile, administrators can go to **Settings** > **Customer engagement** > **Compliance profiles** to define the consent model, the company address, and customize the preference center page for your end users.
 
 > [!NOTE]
 > When you create a new compliance profile, you can **Use previously captured consent**. This option is intended to facilitate transitioning from a legacy *compliance profile with a preference page* to one with a preference center. Doing so ensures that any previously captured consent applies to the new compliance profile.
 
-There are two main types of compliance profiles available:
+There are two types of compliance profiles available:
 
-- Compliance Profile with **Preference Center** -
-Use this option if you manage consent within Customer Insights - Journeys. It includes a built-in Preference Center page that allows users to manage their consent preferences directly.
-- Compliance Profile with **External Link** -
-Choose this option if you need to integrate with an external consent management system or prefer to use a marketing form instead of the default Preference Center form.
+- Compliance profile with a **preference center**: Use this option if you manage consent within Customer Insights - Journeys. It includes a built-in preference center page that allows users to manage their consent preferences directly.
+- Compliance profile with **external link**: Choose this option if you need to integrate with an external consent management system or prefer to use a marketing form instead of the default preference center form.
 
-#### Compliance Profile with Preference center
+#### Compliance profile with preference center
 
 > [!IMPORTANT]
 > Preference center does not modify a contact's `DoNotEmail`,  `DoNotBulkEmail`, or `DoNotTrack` fields.
@@ -111,35 +106,32 @@ Customer Insights - Journeys uses preference centers to enable customers to cont
 
 Learn more: [Create Customer Insights - Journeys preference centers](real-time-marketing-preference-centers.md)
 
-#### Compliance Profile with External link
+#### Compliance profile with an external link
 
-Compliance profile with External link allows you to configure a website URL that points to an external consent management page. The URL configured in the compliance profile will be included in messages sent with this compliance profile.
+Compliance profile with external link allows you to configure a website URL that points to an external consent management page. The URL configured in the compliance profile will be included in messages sent with this compliance profile.
 
 > [!CAUTION]
-> A Compliance Profile with External Link currently generates an Unsubscribe link that does not include user identification accessible for external consent management systems. Although the link can contain tracking elements such as `contextId` and `msdynmkt_trackingcontext`, these are designed solely for internal use by Customer Insights - Journeys.
+> A compliance profile with external Link currently generates an Unsubscribe link that does not include user identification accessible for external consent management systems. Although the link can contain tracking elements such as `contextId` and `msdynmkt_trackingcontext`, these are designed solely for internal use by Customer Insights - Journeys.
 
 If you want to include a link to an external consent management system’s preference page, we recommend creating the Unsubscribe link directly within your message template. Use the link personalization feature to embed user identification into the link, allowing the external system to recognize and manage the user's preferences accurately.
 
 ## Purposes
 
-A **Data Use Purpose Consent** (referred to as a **purpose**) defines the specific reason for which consent is collected. It is typically tied to a legal basis or justification—such as obtaining consent to contact someone for commercial marketing.
+A **data use purpose consent** (referred to as a **purpose**) defines the specific reason for which consent is collected. It is typically tied to a legal basis or justification—such as obtaining consent to contact someone for commercial marketing.
 
 There are three standard types of purposes:
 
-- Commercial Communication – e.g., promotional emails or newsletters
-- Transactional Communication – e.g., order confirmations or service updates
-- Tracking – e.g., consent to track user behavior for analytics such as link click and message open tracking (via tracking pixels embedded in messages), and identify users for [form prefill](real-time-marketing-form-prefill.md)
+- **Commercial communication**: For example, promotional emails or newsletters
+- **Transactional communication**: For example, order confirmations or service updates
+- **Tracking**: For example, consent to track user behavior for analytics such as link click and message open tracking (via tracking pixels embedded in messages), and identify users for [form prefill](real-time-marketing-form-prefill.md)
 
-When you create a new Compliance Profile, there are purposes of each type included by default. However, they are fully customizable to suit your organization’s needs. You can also create additional purposes and assign them to one or more compliance profiles.
+When you create a new compliance profile, there are purposes of each type included by default. However, they are fully customizable to suit your organization’s needs. You can also create additional purposes and assign them to one or more compliance profiles.
 
 Purposes in the consent model are **reusable** and can be **shared across multiple compliance profiles**. This flexibility enables several important scenarios:
 
-- **Unified consent management across brands or regions** -
-For example, a Contoso Global compliance profile might define a Commercial purpose that is also used by Contoso Northwest and Contoso East. This allows customers interacting with Contoso Northwest to opt in or out of communications from Contoso Global—directly from Contoso Northwest’s Preference Center.
+- **Unified consent management across brands or regions**: For example, a Contoso Global compliance profile might define a Commercial purpose that is also used by Contoso Northwest and Contoso East. This allows customers interacting with Contoso Northwest to opt in or out of communications from Contoso Global—directly from Contoso Northwest’s preference center.
 
-- **Localized Preference Centers with Shared Consent** -
-Sharing purposes also enables you to create multiple compliance profiles with different Preference Center designs—such as different languages or layouts—while still referencing the same underlying consent data.
-For instance, you could have two compliance profiles with identical purposes but separate Preference Centers in English and Czech, ensuring a consistent consent experience across regions.
+- **Localized preference centers with Shared Consent**: Sharing purposes also enables you to create multiple compliance profiles with different preference center designs—such as different languages or layouts—while still referencing the same underlying consent data. For instance, you could have two compliance profiles with identical purposes but separate preference centers in English and Czech, ensuring a consistent consent experience across regions.
 
 Purpose consent also allows customers to create line-of-business (LOB) separation without using Dataverse business units or separate compliance profiles. Each LOB has a preference center configured for each business, and each LOB has a set of purposes associated with it that's specific to each LOB. Each message (for example, email or text message) is tied to a single preference center and an associated purpose.
 
@@ -147,7 +139,7 @@ Each organization might need to define separate purposes for each of their LOBs 
 
 ### Consent enforcement models
 
-The **Enforcement model** settings on a purposes control how consent is evaluated before a message is sent. Messages sent to a purpose use that purpose's enforcement model to evaluate if the message is or is not sent. There are three enforcement models that can be chosen depending on your regulatory needs:
+The **enforcement model** settings on a purposes control how consent is evaluated before a message is sent. Messages sent to a purpose use that purpose's enforcement model to evaluate if the message is or is not sent. There are three enforcement models that can be chosen depending on your regulatory needs:
 
 - **Restrictive**: Messages are sent only to contact points that have opted-in contact point consent records for this purpose (or topic).
 - **Non-restrictive**: Messages are sent to all contact points unless they have an opted-out contact point consent record for this purpose (or topic).
@@ -155,9 +147,10 @@ The **Enforcement model** settings on a purposes control how consent is evaluate
 
 ## Topics
 
-Each **Purpose** in the consent model can include multiple **Topics**, which represent specific types of communications. Topics allow customers to fine-tune their consent preferences by selecting the exact types of messages they wish to receive.
+Each **purpose** in the consent model can include multiple **topics**, which represent specific types of communications. Topics allow customers to fine-tune their consent preferences by selecting the exact types of messages they wish to receive.
 
-**Example:**
+**Example**
+
 For the Commercial purpose in the Contoso Northwest compliance profile, you might define topics such as:
 
 - Newsletters
@@ -182,34 +175,31 @@ Topics inherit the **enforcement model** of their parent **Purpose**. This means
 > - A message associated with a topic will only be sent if the contact point has valid consent for both the Purpose and the Topic.
 > - If a contact point does not have consent for the parent Purpose, none of the associated Topics will be sent—even if the contact has opted into a specific topic.
 
-**Restrictive Enforcement Example:**
+**Restrictive enforcement example**
+
 If the parent Purpose uses a restrictive enforcement model, then an opt-in consent record is required for both the Purpose and the Topic at the contact point level in order for the message to be delivered.
 
-## Using DoNotEmail, DoNotBulkEmail, and DoNotTrack Fields in Real-Time Journeys
+## Using `DoNotEmail`, `DoNotBulkEmail`, and `DoNotTrack` fields in real-time journeys
 
 By default, real-time journeys in Customer Insights – Journeys do **not** evaluate the contact's `DoNotEmail`, `DoNotBulkEmail`, or `DoNotTrack` fields.
 
 To enable these checks:
 
-1. Navigate to Feature switches.
+1. Navigate to feature switches.
 1. Turn on the toggle labeled "Check contact consent in real-time journeys."
 
 > [!IMPORTANT]
-> The Preference Center does not update the `DoNotEmail`, `DoNotBulkEmail`, or `DoNotTrack` fields. As a result, users cannot manage these specific consent preferences through the Preference Center.
+> The preference center does not update the `DoNotEmail`, `DoNotBulkEmail`, or `DoNotTrack` fields. As a result, users cannot manage these specific consent preferences through the preference center.
 
 > [!NOTE]
-> **Best Practice**
->
-> If you plan to manage consent using contact point consent, it is **not recommended to rely** on the `DoNotEmail`, `DoNotBulkEmail`, or `DoNotTrack` fields. Instead, use contact point consent records as the single source of truth for consent evaluation.
+> **Best Practice**: If you plan to manage consent using contact point consent, it is **not recommended to rely** on the `DoNotEmail`, `DoNotBulkEmail`, or `DoNotTrack` fields. Instead, use contact point consent records as the single source of truth for consent evaluation.
 
 ### When the feature switch "Check contact consent in real-time journeys" is Enabled
 
-#### Email Consent Checks
+#### Email consent checks
 
-- **Commercial Purpose:**
-Both `DoNotEmail` and `DoNotBulkEmail` must be false (i.e., not opted out) for the email to be sent.
-- **Transactional Purpose:**
-Only `DoNotEmail` must be false.
+- **Commercial purpose**: Both `DoNotEmail` and `DoNotBulkEmail` must be false (i.e., not opted out) for the email to be sent.
+- **Transactional Purpose**: Only `DoNotEmail` must be false.
 
 These checks are performed in addition to the contact point consent opt-in/opt-out checks for emails sent by journeys.
 
