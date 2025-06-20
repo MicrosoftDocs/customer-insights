@@ -1,7 +1,7 @@
 ---
 title: Manage consent for email, SMS (text), and custom channel messages
 description: Manage consent for email, SMS, and custom channel messages in Customer Insights - Journeys. Learn how to set up, update, and audit consent records for compliance.
-ms.date: 06/02/2025
+ms.date: 06/20/2025
 ms.topic: reference
 author: alfergus
 ms.author: alfergus
