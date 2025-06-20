@@ -1,14 +1,18 @@
 ---
 title: Create a consent record using a cloud flow
-description: Learn how to create a consent record using a cloud flow in Dynamics 365 Customer Insights - Journeys.
-ms.date: 01/22/2024
+description: Create consent records in Dynamics 365 Customer Insights - Journeys using a cloud flow. Automate consent management and ensure compliance. Learn how to set it up.
+ms.date: 06/20/2025
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
-search.audienceType: 
+search.audienceType:
   - admin
   - customizer
   - enduser
+ms.custom:
+  - ai-gen-docs-bap
+  - ai-gen-description
+  - ai-seo-date:06/20/2025
 ---
 
 # Create a consent record using a cloud flow
@@ -27,15 +31,15 @@ You should always record consent in the system for proper auditing purposes. In 
 
 ## When should you use a cloud flow?
 
-[Load consent](real-time-marketing-migrate-consent.md#loading-consent-from-contacts-leads-and-subscription-lists) can help load consent records from contacts, leads, and subscription or marketing Lists easily into the consent center. However, if you have continuously running automations or processes that create new contact or lead records, then running load consent manually may be operationally taxing for you.
+[Load consent](real-time-marketing-migrate-consent.md#loading-consent-from-contacts-leads-and-subscription-lists) can help load consent records from contacts, leads, and subscription or marketing lists easily into the consent center. But if you have continuously running automations or processes that create new contact or lead records, running load consent manually can be operationally taxing.
 
-In such cases, you could use a cloud flow to automate the task of creating and updating contact point consent records in the consent center.
+In these cases, you can use a cloud flow to automate creating and updating contact point consent records in the consent center.
 
-Here are some of the most common scenarios that can benefit from a cloud flow for the creation of contact point consent records:
+Here are some common scenarios where a cloud flow helps create contact point consent records:
 
-1. **Contact or leads created through bulk import, Dataverse APIs, or a custom flow on a continuous basis**: If you regularly create contacts and leads using any other mechanism than Customer Insights - Journeys forms, then you may need to create or update contact point consent records in the consent center. The most common way in which users create contacts or leads in the system is using the Excel import functionality. The same guidance applies to contacts or leads created using Dataverse APIs or custom cloud flows.
-1. **When you [use Customer Insights - Data profiles and segments in Customer Insights - Journeys](real-time-marketing-ci-profile.md#set-up-default-properties-for-unified-customer-profiles)**: As with every other journey within the system, when using Customer Insights – Data profiles and segments in Customer Insights – Journeys, consent is always checked against the contact point to which the messages are sent. So, you may need contact point consent records in the consent center to be able to send messages using such journeys.
-1. **Using an external consent management system**: If you're managing consent in an external system, then for the various cases of restrictive, nonrestrictive enforcement model, and SMS or custom channel journeys described above, you need to create or update consent records in consent center.
+1. **Contact or leads created through bulk import, Dataverse APIs, or a custom flow on a continuous basis**: If you regularly create contacts and leads using any method other than Customer Insights - Journeys forms, you might need to create or update contact point consent records in the consent center. The most common way users create contacts or leads in the system is by using the Excel import functionality. The same guidance applies to contacts or leads created using Dataverse APIs or custom cloud flows.
+1. **When you [use Customer Insights - Data profiles and segments in Customer Insights - Journeys](real-time-marketing-ci-profile.md#set-up-default-properties-for-unified-customer-profiles)**: As with every other journey in the system, when you use Customer Insights – Data profiles and segments in Customer Insights – Journeys, consent is always checked against the contact point where the messages are sent. So, you might need contact point consent records in the consent center to send messages using these journeys.
+1. **Using an external consent management system**: If you're managing consent in an external system, for the different cases of restrictive or nonrestrictive enforcement models, and SMS or custom channel journeys described above, you need to create or update consent records in the consent center.
 
 ## Building the cloud flow
 
@@ -154,38 +158,38 @@ Otherwise, set the contact point consent record to `opt-out`.
 
 ## Creating topic consent records
 
-Topics are always created under a purpose and the consent check for a topic is preceded by the consent check for its parent purpose. If the consent for the parent purpose is set to opted-out, then the consent status of the topic becomes irrelevant as it's also treated as opted-out.
+Topics are always created under a purpose, and the system checks consent for the parent purpose before checking consent for the topic. If the parent purpose's consent is set to opted-out, the topic is also treated as opted-out, so its consent status doesn't matter.
 
-If your workflow requires you to create consent records for a given topic, you can use the base flow that we laid out above and extend it.
+If your workflow requires creating consent records for a topic, use the base flow described above and extend it.
 
-The above flow creates and updates purpose consent records. You can add steps to create and update topic consent records in addition to the purpose consent records. Remember that for the topic consent to be correctly treated as opted-in, the system requires the parent purpose’s consent to be opted-in as well. Therefore, your flow should create and update consent records for the purpose and the topic for the system to work as expected.
+The flow above creates and updates purpose consent records. Add steps to create and update topic consent records in addition to purpose consent records. For the system to treat topic consent as opted-in, the parent purpose's consent must also be opted-in. Make sure your flow creates and updates consent records for both the purpose and the topic so the system works as expected.
 
-For creating the topic consent record, set the **Consent type** value to **Topic** and provide the GUID for the topic in the **Topic (Topics)** field as follows: `msdynmkt_topics(GUID of the topic)`
+To create the topic consent record, set the **Consent type** value to **Topic**, and enter the GUID for the topic in the **Topic (Topics)** field using this format: `msdynmkt_topics(GUID of the topic)`
 
 :::image type="content" source="media/topic-consent-record-creation.png" alt-text="Topic consent record creation.":::
 
 > [!NOTE]
-> The remaining fields aren't required, but fill the fields according to your use case.
+> The remaining fields aren't required, but fill them based on your use case.
 
 ## Caveats and considerations
 
 ### Monitoring and error handling
 
-When following the above solution recommendation, you should also consider instrumenting a cloud flow monitoring for queues and failures (reconciliation needed to resubmit the failures). More information on that can be found here:
+When you follow the above solution recommendation, consider setting up cloud flow monitoring for queues and failures. You might need to reconcile and resubmit failures. For more information, see:
 
 - [View analytics for Power Automate cloud flows](/power-platform/admin/analytics-flow)
 - [Get notified about flow failures, customize columns for tables, and more!](https://powerautomate.microsoft.com/blog/microsoft-forms-tables-flow-failures/)
 
 ### Synchronizing consent with a third-party system
 
-If you synchronize changes made in the consent center with an external system, then there's a possibility that you can trigger a circular loop that looks like this:
+If you sync changes made in the consent center with an external system, you can trigger a circular loop like this:
 
-- Changes in the external system trigger a consent record update in Dynamics 365. Consent is updated in Dynamics 365. This triggers an update back in the external system and the loop continues.
+- Changes in the external system trigger a consent record update in Dynamics 365. Consent updates in Dynamics 365 trigger an update back in the external system, and the loop continues.
 
-One way to handle this would be by using the “Reason description” field to your advantage. You can specify a unique value for the reason description for each of your flows that synchronize consent between Dynamics 365 and the external system and then check for the specific values in each of the flows to break the circular loop.
+To avoid this, use the “Reason description” field. Specify a unique value for the reason description in each flow that syncs consent between Dynamics 365 and the external system. Then, check for these specific values in each flow to break the circular loop.
 
 ### Managing ALM for the cloud flow
 
-If you have multiple environments (dev, test/QA, production, etc.) and need your cloud flow to remain consistent across the environments, you should consider creating the cloud flow in a solution. More information on how you can do that can be found here: [Create a cloud flow in a solution](/power-automate/create-flow-solution)
+If you have multiple environments (dev, test/QA, production, and so on) and need your cloud flow to stay consistent across environments, create the cloud flow in a solution. For more information, see [Create a cloud flow in a solution](/power-automate/create-flow-solution).
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
