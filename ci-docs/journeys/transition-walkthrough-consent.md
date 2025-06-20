@@ -72,4 +72,8 @@ Your existing subscription lists aren't deleted when outbound marketing is remov
 
 The preference center form can't update lead or contact details. If you need to update these records, use a marketing form with form prefill enabled.
 
+### Can outbound marketing check contact point consent records to evaluate consent when sending messages?
+
+No, outbound marketing does not check contact point consent records to evaluate consent when sending messages.
+
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
