@@ -129,7 +129,7 @@ The system then enforces consent only based on contact point consent records.
 
 ## How is consent populated on different unsubscribe experiences
 
-Customer Insights - Journeys offers [different options for providing an unsubscribe experience to your customers](real-time-marketing-compliance-settings.md#user-contact-preferences). The system computes the exact consent status for different scenarios and always shows the user visiting the unsubscribe experience an accurate view of their consent.
+Customer Insights - Journeys offers [different options for providing an unsubscribe experience to your customers](real-time-marketing-compliance-settings.md#compliance-profiles). The system computes the exact consent status for different scenarios and always shows the user visiting the unsubscribe experience an accurate view of their consent.
 
 The consent status shown to the user on an unsubscribe experience depends on several factors:
 
