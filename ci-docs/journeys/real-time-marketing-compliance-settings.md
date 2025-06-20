@@ -29,7 +29,7 @@ We strongly recommend using a consent management system to track and honor user 
 The consent is captured and stored at the contact point level. A contact point is the destination for a message—such as an email address or phone number.
 
 - **Channel-specific consent**:
-Consent is stored per channel and per destination. For example, the email address somebody@example.com may have consented to receive commercial communications about upcoming events, while another email or phone number may not.
+Consent is stored per channel and per destination. For example, the email address somebody@contoso.com may have consented to receive commercial communications about upcoming events, while another email or phone number may not.
 
 - **Greater flexibility and control:**
 Contact point consent gives customers more control over where they want to receive communications from your organization.
