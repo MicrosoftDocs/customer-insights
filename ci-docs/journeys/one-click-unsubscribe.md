@@ -62,7 +62,7 @@ When you enable the one-click unsubscribe feature, the product automatically add
 1. List-Unsubscribe
 1. List-Unsubscribe-Post
 
-These headers follow the guidance in the [IETF RFC](https://datatracker.ietf.org/doc/html/rfc8058) for one-click unsubscribe and let email clients show easy unsubscribe options.
+These headers follow the guidance in the [Internet Engineering Task Force RFC](https://datatracker.ietf.org/doc/html/rfc8058) for one-click unsubscribe and let email clients show easy unsubscribe options.
 
 ## How does one-click unsubscribe work?
 
@@ -73,11 +73,11 @@ The concepts of consent management differ between real-time journeys and outboun
 > [!NOTE]
 > Real-time journeys have a multi-brand consent feature that you must enable before you can use the one-click unsubscribe feature. For outbound marketing, the multi-brand consent feature is irrelevant and doesn't affect anything.
 
-In real-time journeys, consent is collected, managed, and enforced at a [contact point level](real-time-marketing-compliance-settings.md#manage-user-compliance-settings-and-consent-data) (that is, an email address, phone number or a custom channel address). Each email can be sent to only one purpose and one (optional) topic. Any commercial email, sent from real-time journeys, will include the one-click unsubscribe headers.
+In real-time journeys, consent is collected, managed, and enforced at a [contact point level](real-time-marketing-compliance-settings.md#manage-user-compliance-settings-and-consent-data) (that is, an email address, phone number or a custom channel address). Each email can be sent to only one purpose and one (optional) topic. Any commercial email, sent from real-time journeys, includes the one-click unsubscribe headers.
 
 If the email only has a commercial purpose selected, then once the recipient selects the one-click unsubscribe link in their email client, the app marks them as opted-out for the specific purpose. This ensures that any future emails for the same purpose aren't sent to that user.
 
-If the email is being sent for a specific topic, then once the recipient selects the one-click unsubscribe link in their email client, the app marks them as opted-out for the specific topic only. This ensures that any future emails for the same topic aren't be sent to that user.
+If the email is being sent for a specific topic, then once the recipient selects the one-click unsubscribe link in their email client, the app marks them as opted-out for the specific topic only. This ensures that any future emails for the same topic aren't sent to that user.
 
 Any emails to the topic’s parent purpose remains unblocked, ensuring that other email messages with just the purpose selected or another topic, from underneath the same purpose, are still sent to that user.
 
@@ -147,15 +147,15 @@ Outbound marketing users that manage consent for different brands separately and
     
     :::image type="content" source="media/select-setting-definitions-to-unsubscribe.png" alt-text="Select the setting definitions to one-click unsubscribe." lightbox="media/select-setting-definitions-to-unsubscribe.png":::
 
-1. Edit this value and make sure that it's pointing to the unique name of your custom workflow that you created earlier in **Step 2**. For example, in this case the name of the workflow is **new_msdyncrm_custom_unsubscribe**. Save the changes.
+1. Edit this value and make sure that it's pointing to the unique name of your custom workflow that you created earlier in **Step 2**. For example, in this case, the name of the workflow is **new_msdyncrm_custom_unsubscribe**. Save the changes.
     
     :::image type="content" source="media/add-the-attribute-values.png" alt-text="Add the attribute values." lightbox="media/add-the-attribute-values.png":::
 
 1. Test that your handler is executed when the one-click unsubscribe action is performed. To test this:
     1. Temporarily [enable plugin trace logs](/power-apps/developer/data-platform/logging-tracing#enable-trace-logging). Enabling plugin trace logs can impact performance negatively, so make sure to disable them once you're done.
     1. Open the developer console (<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd>) on any Dataverse page.
-    1. Paste the following snippet into the console (adjust as needed); it will execute the unsubscribe action.
-    1. Make sure it executed correctly. You should be aware that in a real scenario the marketing service will execute this action, so if you're accessing any entities, ensure that `Marketing Service user extensible role` has privileges for such.
+    1. Paste the following snippet into the console (adjust as needed); it executes the unsubscribe action.
+    1. Make sure it executed correctly. You should be aware that in a real scenario the marketing service executes this action, so if you're accessing any entities, ensure that `Marketing Service user extensible role` has privileges for such.
 ```
 var Sdk = window.Sdk || {};
 

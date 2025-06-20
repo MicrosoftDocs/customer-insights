@@ -47,7 +47,7 @@ We'll now look at a sample cloud flow to understand the various steps that are n
 
 In this example, Contoso has a landing page on their website that their customers fill out to sign up to receive Contoso’s services. When customers fill out the form, Contoso uses a cloud flow to automatically create contact records in their Dataverse environment. Contoso uses real-time journeys and wants to capture the consent for each contact that gets created from a landing page submission.
 
-We'll get the email address of the contact and verify if a contact point consent record with the same email address exists in contact point consent (msdynmkt_contactpointconsent4) table. 
+We get the email address of the contact and verify if a contact point consent record with the same email address exists in contact point consent (msdynmkt_contactpointconsent4) table. 
 
 If we don't find a contact point consent record for the email address, then the flow creates a new contact point consent record for the email address with an “opt-in” status. If we find existing consent records, then the flow updates those with the latest consent value.
 
@@ -102,7 +102,7 @@ Otherwise, set the contact point consent record to `opt-out`.
     - The `msdynmkt_contactpointtype` attribute specifies the channel: email, SMS, or custom channel. In this case, `534120000` represents email as we're dealing with email consent records here.
 
     > [!NOTE]
-    > When selecting table name “Contact Point Consent” from the dropdown list, you'll find four different records with the same name. Choose the last one.
+    > When selecting table name “Contact Point Consent” from the dropdown list, you find four different records with the same name. Choose the last one.
 
     Make sure you're using consent table **msdynmkt_contactpointconsent4s**. To verify the table name, select the three dots (**…**) on top right of the action and select **Peek code**.
 
