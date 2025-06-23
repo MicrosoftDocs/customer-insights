@@ -1,5 +1,5 @@
 ---
-title: Responsible AI FAQs for the Customer Insights - Journeys copilot preview
+title: Responsible AI FAQs for the Customer Insights - Journeys copilot (preview)
 description: The Responsible AI FAQs discuss the general copilot and the key considerations for making use of this technology responsibly.
 ms.date: 03/12/2024
 ms.topic: faq
@@ -11,16 +11,15 @@ search.audienceType:
   - enduser
 ---
 
-# Responsible AI FAQs for the Customer Insights - Journeys copilot preview
+# Responsible AI FAQs for the Customer Insights - Journeys copilot (preview)
 
-> [!IMPORTANT]
-> A preview feature is a feature that is not complete, but is made available before it’s officially in a release so customers can get early access and provide feedback. Preview features aren’t meant for production use and may have limited or restricted functionality.
-> 
-> Microsoft doesn't provide support for this preview feature. Microsoft Dynamics 365 Technical Support won’t be able to help you with issues or questions. Preview features aren’t meant for production use, especially to process personal data or other data that are subject to legal or regulatory compliance requirements.
+[!INCLUDE [Preview banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 [!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 These responsible AI FAQs describe the AI impact of Copilot capabilities for model-driven apps in Dynamics 365 Customer Insights - Journeys. Review [the main FAQ for this Copilot capability](/power-apps/maker/common/faqs-copilot-model-driven-app)
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note.md)]
 
 ## What are the capabilities of Copilot in model-driven apps in Customer insights - Journeys?
 
