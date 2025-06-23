@@ -33,11 +33,11 @@ Conversational journeys utilizes Copilot Studio agents. It doesn't offer any add
 
 To learn more about how the system is evaluated and what metrics are used to measure performance, see the following sections:
 
-- [FAQ for generative answers](/microsoft-copilot-studio/faqs-generative-answers.md#how-were-generative-answers-evaluated-and-what-metrics-are-used-to-measure-performance)
-- [FAQ for Copilot](/microsoft-copilot-studio/faqs-copilot.md#how-was-copilot-evaluated-what-metrics-are-used-to-measure-performance)
-- [FAQ for generative orchestration](/microsoft-copilot-studio/faqs-generative-orchestration.md#how-is-generative-orchestration-evaluated-what-metrics-are-used-to-measure-performance)
-- [FAQ for deep reasoning](/microsoft-copilot-studio/faqs-reasoning.md#how-were-deep-reasoning-models-evaluated-and-what-metrics-are-used-to-measure-performance)
-- [FAQ for the conversational agent creation experience](/microsoft-copilot-studio/faqs-agent-creation.md#how-was-the-conversational-agent-creation-experience-evaluated-and-what-metrics-are-used-to-measure-performance)
+- [FAQ for generative answers](/microsoft-copilot-studio/faqs-generative-answers#how-were-generative-answers-evaluated-and-what-metrics-are-used-to-measure-performance)
+- [FAQ for Copilot](/microsoft-copilot-studio/faqs-copilot#how-was-copilot-evaluated-what-metrics-are-used-to-measure-performance)
+- [FAQ for generative orchestration](/microsoft-copilot-studio/faqs-generative-orchestration#how-is-generative-orchestration-evaluated-what-metrics-are-used-to-measure-performance)
+- [FAQ for deep reasoning](/microsoft-copilot-studio/faqs-reasoning#how-were-deep-reasoning-models-evaluated-and-what-metrics-are-used-to-measure-performance)
+- [FAQ for the conversational agent creation experience](/microsoft-copilot-studio/faqs-agent-creation#how-was-the-conversational-agent-creation-experience-evaluated-and-what-metrics-are-used-to-measure-performance)
 
 ## What are the limitations of conversational journeys? How can users minimize the impact of conversational journeys limitations when using the system?
 
@@ -47,11 +47,11 @@ Conversational journeys utilizes Copilot Studio agents for phone calls that cont
 
 To learn more about system limitations and how to minimize the impact, see the following sections:
 
-- [FAQ for generative answers](/microsoft-copilot-studio/faqs-generative-answers.md#how-were-generative-answers-evaluated-and-what-metrics-are-used-to-measure-performance)
-- [FAQ for Copilot](/microsoft-copilot-studio/faqs-copilot.md#how-was-copilot-evaluated-what-metrics-are-used-to-measure-performance)
-- [FAQ for generative orchestration](/microsoft-copilot-studio/faqs-generative-orchestration.md#how-is-generative-orchestration-evaluated-what-metrics-are-used-to-measure-performance)
-- [FAQ for deep reasoning](/microsoft-copilot-studio/faqs-reasoning.md#how-were-deep-reasoning-models-evaluated-and-what-metrics-are-used-to-measure-performance)
-- [FAQ for the conversational agent creation experience](/microsoft-copilot-studio/faqs-agent-creation.md#how-was-the-conversational-agent-creation-experience-evaluated-and-what-metrics-are-used-to-measure-performance)
+- [FAQ for generative answers](/microsoft-copilot-studio/faqs-generative-answers#how-were-generative-answers-evaluated-and-what-metrics-are-used-to-measure-performance)
+- [FAQ for Copilot](/microsoft-copilot-studio/faqs-copilot#how-was-copilot-evaluated-what-metrics-are-used-to-measure-performance)
+- [FAQ for generative orchestration](/microsoft-copilot-studio/faqs-generative-orchestration#how-is-generative-orchestration-evaluated-what-metrics-are-used-to-measure-performance)
+- [FAQ for deep reasoning](/microsoft-copilot-studio/faqs-reasoning#how-were-deep-reasoning-models-evaluated-and-what-metrics-are-used-to-measure-performance)
+- [FAQ for the conversational agent creation experience](/microsoft-copilot-studio/faqs-agent-creation#how-was-the-conversational-agent-creation-experience-evaluated-and-what-metrics-are-used-to-measure-performance)
 
 ## What operational factors and settings allow for effective and responsible use of conversational journeys?
 
@@ -59,10 +59,10 @@ Conversational journeys utilizes Copilot Studio agents. It doesn't offer any add
 
 To learn more about the system operational factors and settings for effective and responsible use, see the following sections:
 
-- [FAQ for generative answers](/microsoft-copilot-studio/faqs-generative-answers.md#how-were-generative-answers-evaluated-and-what-metrics-are-used-to-measure-performance)
-- [FAQ for Copilot](/microsoft-copilot-studio/faqs-copilot.md#how-was-copilot-evaluated-what-metrics-are-used-to-measure-performance)
-- [FAQ for generative orchestration](/microsoft-copilot-studio/faqs-generative-orchestration.md#how-is-generative-orchestration-evaluated-what-metrics-are-used-to-measure-performance)
-- [FAQ for deep reasoning](/microsoft-copilot-studio/faqs-reasoning.md#how-were-deep-reasoning-models-evaluated-and-what-metrics-are-used-to-measure-performance)
-- [FAQ for the conversational agent creation experience](/microsoft-copilot-studio/faqs-agent-creation.md#how-was-the-conversational-agent-creation-experience-evaluated-and-what-metrics-are-used-to-measure-performance)
+- [FAQ for generative answers](/microsoft-copilot-studio/faqs-generative-answers#how-were-generative-answers-evaluated-and-what-metrics-are-used-to-measure-performance)
+- [FAQ for Copilot](/microsoft-copilot-studio/faqs-copilot#how-was-copilot-evaluated-what-metrics-are-used-to-measure-performance)
+- [FAQ for generative orchestration](/microsoft-copilot-studio/faqs-generative-orchestration#how-is-generative-orchestration-evaluated-what-metrics-are-used-to-measure-performance)
+- [FAQ for deep reasoning](/microsoft-copilot-studio/faqs-reasoning#how-were-deep-reasoning-models-evaluated-and-what-metrics-are-used-to-measure-performance)
+- [FAQ for the conversational agent creation experience](/microsoft-copilot-studio/faqs-agent-creation#how-was-the-conversational-agent-creation-experience-evaluated-and-what-metrics-are-used-to-measure-performance)
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
