@@ -1,14 +1,18 @@
 ---
-title: One-click unsubscribe support for emails 
-description: Learn how to use one-click unsubscribe support for emails in Dynamics 365 Customer Insights - Journeys
-ms.date: 09/10/2024
+title: One-click unsubscribe support for emails
+description: One-click unsubscribe helps recipients opt out of commercial emails in Customer Insights - Journeys. Learn how to enable and manage this feature.
+ms.date: 06/20/2025
 ms.topic: get-started
 author: alfergus
 ms.author: alfergus
-search.audienceType: 
+search.audienceType:
   - admin
   - customizer
   - enduser
+ms.custom:
+  - ai-gen-docs-bap
+  - ai-gen-description
+  - ai-seo-date:06/20/2025
 ---
 
 # One-click unsubscribe support for emails
@@ -26,39 +30,39 @@ Email providers and the [underlying protocols](https://datatracker.ietf.org/doc/
 > [!div class="mx-imgBorder"]
 > ![Select the unsubscribe link](media/select-unsubscribe-link.png "Select the unsubscribe link")
 
-When selected, a dialog asking the user to confirm the unsubscribe is shown. If the **Unsubscribe** button is selected, the user is unsubscribed from the email without visiting a web page:
+When selected, a dialog asks the user to confirm the unsubscribe. If the user selects the **Unsubscribe** button, they're unsubscribed from the email without visiting a web page:
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot showing you are unsubscribed without opening a web page](media/you-are-unsubscribed.png "Screenshot showing you are unsubscribed without opening a web page")
 
-To support this capability, the email sender provides information in the email headers telling the email client how to automatically unsubscribe. The receiving email client can use this information to surface to the user easy ways to unsubscribe from unwanted messages.
+To support this capability, the email sender adds information in the email headers that tells the email client how to automatically unsubscribe. The receiving email client uses this information to show users easy ways to unsubscribe from unwanted messages.
 
-In October 2023, [Google](https://support.google.com/mail/answer/81126?hl=en#requirements-5k&zippy=%2Crequirements-for-sending-or-more-message-per-day%2Crequirements-for-sending-or-more-messages-per-day) and [Yahoo](https://senders.yahooinc.com/best-practices/) announced that they would require email senders to start supporting one-click unsubscribe and include a visible unsubscribe link in the message body for all promotional emails. Google made it a specific requirement for any sender who sends more than 5,000 emails per day to Gmail accounts to comply with this mandate.
+In October 2023, [Google](https://support.google.com/mail/answer/81126?hl=en#requirements-5k&zippy=%2Crequirements-for-sending-or-more-message-per-day%2Crequirements-for-sending-or-more-messages-per-day) and [Yahoo](https://senders.yahooinc.com/best-practices/) announced that they require email senders to support one-click unsubscribe and include a visible unsubscribe link in the message body for all promotional emails. Google requires any sender who sends more than 5,000 emails per day to Gmail accounts to follow this rule.
 
-Email providers presently utilize the presence of this information to determine spam and reputation scores for email senders, even if it isn't a strict requirement.
+Email providers use this information to determine spam and reputation scores for email senders, even if it isn't a strict requirement.
 
 ## Enable one-click unsubscribe in Customer Insights - Journeys
 
-Customer Insights - Journeys provides support for automatically including the one-click unsubscribe headers in all commercial emails, across outbound marketing and real-time journeys, without changing any existing email or journey.
+Customer Insights - Journeys automatically includes one-click unsubscribe headers in all commercial emails, across outbound marketing and real-time journeys, without changing any existing email or journey.
 
-To enable one-click unsubscribe:
+To turn on one-click unsubscribe:
 
 1. Go to **Settings** > **Other settings** > **Feature switches**.
 1. Set the **One-click unsubscribe** toggle to **On**.
-1. Select **Save** in the upper right corner of the page.
+1. Select **Save** in the upper right of the page.
 
 > [!IMPORTANT]
-> To utilize the one-click unsubscribe feature, you need to upgrade to the December 2023 release or a later version.
+> To use the one-click unsubscribe feature, upgrade to the December 2023 release or a later version.
 >
-> It can take up to 30 minutes for the feature switch to take effect in the product. Any email that's sent after the feature is effective will automatically include the headers required to support one-click unsubscribe.
+> It can take up to 30 minutes for the feature switch to take effect. Any email sent after the feature is active automatically includes the headers needed to support one-click unsubscribe.
 
 ## General functionality
 
-When the one-click unsubscribe feature is enabled, the product automatically includes two additional headers in the email:
+When you enable the one-click unsubscribe feature, the product automatically adds two headers to the email:
 1. List-Unsubscribe
 1. List-Unsubscribe-Post
 
-These headers follow the guidance provided in the [IETF RFC](https://datatracker.ietf.org/doc/html/rfc8058) for one-click unsubscribe and enable email clients to surface easy unsubscribe options to users.
+These headers follow the guidance in the [Internet Engineering Task Force RFC](https://datatracker.ietf.org/doc/html/rfc8058) for one-click unsubscribe and let email clients show easy unsubscribe options.
 
 ## How does one-click unsubscribe work?
 
@@ -69,11 +73,11 @@ The concepts of consent management differ between real-time journeys and outboun
 > [!NOTE]
 > Real-time journeys have a multi-brand consent feature that you must enable before you can use the one-click unsubscribe feature. For outbound marketing, the multi-brand consent feature is irrelevant and doesn't affect anything.
 
-In real-time journeys, consent is collected, managed, and enforced at a [contact point level](real-time-marketing-compliance-settings.md#contact-point-consent) (that is, an email address, phone number or a custom channel address). Each email can be sent to only one purpose and one (optional) topic. Any commercial email, sent from real-time journeys, will include the one-click unsubscribe headers.
+In real-time journeys, consent is collected, managed, and enforced at a [contact point level](real-time-marketing-compliance-settings.md#manage-user-compliance-settings-and-consent-data) (that is, an email address, phone number or a custom channel address). Each email can be sent to only one purpose and one (optional) topic. Any commercial email, sent from real-time journeys, includes the one-click unsubscribe headers.
 
 If the email only has a commercial purpose selected, then once the recipient selects the one-click unsubscribe link in their email client, the app marks them as opted-out for the specific purpose. This ensures that any future emails for the same purpose aren't sent to that user.
 
-If the email is being sent for a specific topic, then once the recipient selects the one-click unsubscribe link in their email client, the app marks them as opted-out for the specific topic only. This ensures that any future emails for the same topic aren't be sent to that user.
+If the email is being sent for a specific topic, then once the recipient selects the one-click unsubscribe link in their email client, the app marks them as opted-out for the specific topic only. This ensures that any future emails for the same topic aren't sent to that user.
 
 Any emails to the topic’s parent purpose remains unblocked, ensuring that other email messages with just the purpose selected or another topic, from underneath the same purpose, are still sent to that user.
 
@@ -143,15 +147,15 @@ Outbound marketing users that manage consent for different brands separately and
     
     :::image type="content" source="media/select-setting-definitions-to-unsubscribe.png" alt-text="Select the setting definitions to one-click unsubscribe." lightbox="media/select-setting-definitions-to-unsubscribe.png":::
 
-1. Edit this value and make sure that it's pointing to the unique name of your custom workflow that you created earlier in **Step 2**. For example, in this case the name of the workflow is **new_msdyncrm_custom_unsubscribe**. Save the changes.
+1. Edit this value and make sure that it's pointing to the unique name of your custom workflow that you created earlier in **Step 2**. For example, in this case, the name of the workflow is **new_msdyncrm_custom_unsubscribe**. Save the changes.
     
     :::image type="content" source="media/add-the-attribute-values.png" alt-text="Add the attribute values." lightbox="media/add-the-attribute-values.png":::
 
 1. Test that your handler is executed when the one-click unsubscribe action is performed. To test this:
     1. Temporarily [enable plugin trace logs](/power-apps/developer/data-platform/logging-tracing#enable-trace-logging). Enabling plugin trace logs can impact performance negatively, so make sure to disable them once you're done.
     1. Open the developer console (<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd>) on any Dataverse page.
-    1. Paste the following snippet into the console (adjust as needed); it will execute the unsubscribe action.
-    1. Make sure it executed correctly. You should be aware that in a real scenario the marketing service will execute this action, so if you're accessing any entities, ensure that `Marketing Service user extensible role` has privileges for such.
+    1. Paste the following snippet into the console (adjust as needed); it executes the unsubscribe action.
+    1. Make sure it executed correctly. You should be aware that in a real scenario the marketing service executes this action, so if you're accessing any entities, ensure that `Marketing Service user extensible role` has privileges for such.
 ```
 var Sdk = window.Sdk || {};
 
@@ -201,23 +205,23 @@ Xrm.WebApi.online.execute(request)
 
 **What types of emails does the system include one-click unsubscribe headers on?**
 
-The one-click unsubscribe headers are included in emails that have a message designation of commercial (if they're sent from an outbound marketing journey) or the purpose type of commercial (if they're sent from a real-time journey). 
+The one-click unsubscribe headers are in emails with a message designation of commercial (if they're sent from an outbound marketing journey) or a purpose type of commercial (if they're sent from a real-time journey).
 
-Transactional emails don't include one-click unsubscribe headers.
+Transactional emails don't have one-click unsubscribe headers.
 
 **What happens if the contact to which the email was sent is deleted and the recipient selects the one-click unsubscribe link?**
 
-For emails sent using outbound marketing, the system does nothing, as it would be unable to find the contact record.
+For emails sent using outbound marketing, the system does nothing because it can't find the contact record.
 
-For emails sent using real-time journeys, the system opts the recipient’s email address out of the purpose or topic for which the email was sent.
+For emails sent using real-time journeys, the system opts the recipient’s email address out of the purpose or topic the email was sent for.
 
-**What happens if an email is updated after it's sent and is now associated to a new purpose or topic. If the recipient selects the one-click unsubscribe link, what action will the system take?**
+**What happens if an email is updated after it's sent and is now associated with a new purpose or topic? If the recipient selects the one-click unsubscribe link, what action does the system take?**
 
-The recipient’s email address would be opted out of the purpose or topic that was associated to the email when it was sent. 
+The system opts the recipient’s email address out of the purpose or topic that was associated with the email when it was sent.
 
-**How would the one-click unsubscribe feature work if the email is set up with an external link type of compliance profile? Would the customer be required to add POST support to their external preference center?**
+**How does the one-click unsubscribe feature work if the email is set up with an external link type of compliance profile? Does the customer need to add POST support to their external preference center?**
 
-No. For all the compliance profile types, the product is designed to include a system generated one-click unsubscribe URL that is designed to handle the POST requests. You don't need to make any modifications to your own preference centers currently. 
+No. For all compliance profile types, the product includes a system-generated one-click unsubscribe URL that handles POST requests. You don't need to change your own preference centers right now.
 
 **In the case of outbound marketing emails that are sent to a subscription list, how does the system manage one-click unsubscribe? Does clicking the unsubscribe link remove the recipient from the subscription list?**
 
@@ -229,12 +233,12 @@ No.
 
 **Would one-click unsubscribe apply to emails that have already been sent out to my customers and are in their inbox?**
 
-No. We can't retroactively apply the one-click headers to emails that are already sent to your customers. 
+No. You can't retroactively apply the one-click headers to emails that are already sent to your customers.
 
 **Why is Gmail not showing the one-click unsubscribe link even though I have the feature switch turned on? How would I know that the functionality is working as expected?**
 
 Gmail considers several factors before surfacing the one-click unsubscribe link in the email client, even when the one-click unsubscribe headers are present in the email. Here's a community thread from Google where this has been discussed: [List-Unsubscribe header not providing the option to unsubscribe](https://support.google.com/mail/thread/49653586).
 
-If you've turned on the feature switch, all the future emails sent from the system includes the one-click unsubscribe headers. As long as the email contains the headers as per the specification, you can be rest assured that you're complying with Google’s guidelines. To verify this, you can download the message or select “Show Original” in the menu item of the message to verify that the headers are present. 
+If you've turned on the feature switch, all future emails sent from the system include the one-click unsubscribe headers. As long as the email has the headers as specified, you can be confident that you're complying with Google’s guidelines. To check, download the message or select “Show Original” in the message menu to verify that the headers are present.
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]

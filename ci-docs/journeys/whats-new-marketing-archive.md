@@ -110,7 +110,7 @@ Learn how to make the most of the new Dynamics 365 Customer Insights features in
 
 - **Flexible enforcement model for text and custom channels**
     - The enforcement model could be selected only for the email channel. With the latest update, you can select restrictive or non-restrictive enforcement model for text (SMS) and custom channels.
-    - [Docs](real-time-marketing-compliance-settings.md#consent-enforcement)  
+    - [Docs](real-time-marketing-compliance-settings.md#consent-enforcement-models)  
 
 #### New blogs and scenario docs
 
