@@ -1,7 +1,7 @@
 ---
 title: Use custom fonts in emails
 description: Learn how to use custom fonts in emails in Dynamics 365 Customer Insights - Journeys.
-ms.date: 12/12/2023
+ms.date: 06/24/2025
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
@@ -94,13 +94,25 @@ Here’s a common @font-face declaration for importing a web font into an email 
 
     > [!div class="mx-imgBorder"]
     > ![Enter the URL of the font in the dialog box](media/enter-the-respective-font-url.png "Enter the URL of the font in the dialog box")
+    >
+   
+## Add custom fonts and fallback fonts to your email HTML
 
-## Navigating web font licensing
+When you use a custom font in emails or forms, it’s declared using the font-family CSS property. This allows you to specify a prioritized list of fonts, known as a font stack, so that if the primary font fails to load, the next available font is used. 
 
-When creating campaigns, it's crucial to respect licensing requirements for web fonts. While most providers permit use, adherence to individual licensing agreements is paramount. Reach out to font providers for precise details on licensing within Customer Insights - Journeys.
+In this example, `<font-family: "Boxed", Arial, sans-serif>`:
+- "Boxed" is the custom font.
+- "Arial" is the fallback font.
+- "Sans-serif" is the generic fallback.
 
-## A font-forward future in Customer Insights - Journeys
+Specifying custom and fallback fonts ensures that your email remains legible and visually consistent even if the recipient’s email client doesn’t support the custom font.
 
-Integrating web fonts into Customer Insights - Journeys can elevate your brand. However, meticulous testing is paramount. Utilize Customer Insights - Journeys testing tools and validate across environments to ensure flawless fallbacks.
+## Best practices and recommendations
+
+Integrating web fonts into Customer Insights – Journeys can enhance your brand’s visual identity. To ensure consistent rendering and compliance, follow these best practices: 
+
+- **Navigating web font licensing**: When creating campaigns, it's crucial to respect licensing requirements for web fonts. While most providers permit use, adherence to individual licensing agreements is paramount. Reach out to font providers for precise details on licensing within Customer Insights - Journeys.
+- **Use reliable fallback fonts**: Include web-safe fonts such as Arial, Helvetica, or Times New Roman in your font stack. These fonts are widely supported across devices and email clients, ensuring your content remains legible even if the primary font fails to load.
+- **Test across email clients**: Not all email clients support web fonts; Gmail and Outlook are notable examples. Use the built-in testing tools in Customer Insights – Journeys to preview your emails across different environments and confirm that fallback fonts render correctly.
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
