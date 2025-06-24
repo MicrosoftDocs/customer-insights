@@ -1,7 +1,7 @@
 ---
 title: Use custom fonts in emails
 description: Learn how to use custom fonts in emails in Dynamics 365 Customer Insights - Journeys.
-ms.date: 12/12/2023
+ms.date: 06/24/2025
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
@@ -13,94 +13,105 @@ search.audienceType:
 
 # Use custom fonts in emails
 
-In the fast-changing field of marketing, it's important to combine design, beauty, and accessibility. Typography, especially the use of web fonts, is crucial for achieving this harmony. This article shows you how to use web fonts in your Customer Insights - Journeys marketing channels, making sure they're both attractive and accessible.
+In marketing, it's important to combine design, beauty, and accessibility. Typography, especially web fonts, helps you achieve this balance. This article explains how to use web fonts in your Customer Insights - Journeys marketing channels so they're attractive and accessible.
 
 > [!NOTE]
-> Channels include emails, forms, and event management.
+> Channels include email, forms, and event management.
 
 ## Understanding web-safe fonts versus web fonts
 
-The main difference between web-safe fonts and web fonts is where they're loaded from.
+Web-safe fonts and web fonts differ in where they're loaded from.
 
-- **Web-safe fonts**: Drawing from local font directories, web-safe fonts offer reliability. Common choices like Arial, Helvetica, and Times New Roman are preinstalled on most computers.
-- **Web fonts**: Pulled from servers like Google or Adobe, web fonts broaden your options but pose challenges in terms of email client, system, and browser font support, a crucial consideration within Customer Insights - Journeys.
+- **Web-safe fonts**: These fonts come from local font directories, so they're reliable. Common choices like Arial, Helvetica, and Times New Roman are preinstalled on most computers.
+- **Web fonts**: These fonts load from servers like Google or Adobe. They give you more options but can cause issues with email client, system, and browser font support, which is important in Customer Insights - Journeys.
 
-### How fonts operate in Customer Insights - Journeys
+### How fonts work in Customer Insights - Journeys
 
-The code within the message you send on a Customer Insights - Journeys channel declares fonts using the font-family CSS property, either as a single font or a stack of multiple fonts for fallback. This distinction lays the foundation for comprehending web fonts and web safe fonts.
+When you send a message in a Customer Insights - Journeys channel, the code declares fonts with the `font-family` CSS property. You can use a single font or a stack of fonts for fallback.
 
 ## Email client support within Customer Insights - Journeys
 
-Navigating the dynamics of fonts support is imperative for successful web font integration. Here's a snapshot of web font support across key email clients:
+Understanding font support is important for successful web font integration. Here's a summary of web font support across key email clients:
 
 | **Client** | **Support** |
 |---|---|
-| Outlook 2013-2021 | ✘ No |
-| Apple mail | ✓ Yes |
+| Outlook 2013–2021 | ✘ No |
+| Apple Mail | ✓ Yes |
 | Gmail app | ✘ No |
 | Windows 11 | ✘ No |
 | Outlook for Mac | ✓ Yes |
-| Outlook Office 365 (Win & Mac) | ✘ No |
+| Outlook Office 365 (Windows and Mac) | ✘ No |
 | iOS | ✓ Yes |
-| Samsung mail | ✘ No |
-| AOL mail | ✘ No |
+| Samsung Mail | ✘ No |
+| AOL Mail | ✘ No |
 | Outlook app | ✘ No |
-| Samsung mail  | ✘ No |
+| Samsung Mail | ✘ No |
 | AOL mail | ✘ No |
 | Gmail | ✘ No |
 | Office 365 | ✘ No |
 | Outlook.com | ✘ No |
-| Yahoo! mail | ✘ No |
+| Yahoo! Mail | ✘ No |
 
 ## Discovering web fonts for Customer Insights - Journeys
 
-For Customer Insights - Journeys, the quest for the perfect web font involves exploring diverse sources:
-1. **Web font services**: Paid services like Type Network and Fontspring offer extensive options. Ensure proper licensing for Customer Insights - Journeys.
-1. **Google Fonts**: Free and downloadable for design mock-ups.
+For Customer Insights - Journeys, finding the right web font means exploring different sources:
+1. **Web font services**: Paid services like Type Network and Fontspring offer many options. Make sure you have the right license for Customer Insights - Journeys.
+1. **Google Fonts**: Free and downloadable for design mockups.
 1. **Adobe Fonts**: Included in Creative Cloud subscriptions.
 
 ## Implementing web fonts in Customer Insights - Journeys emails
 
-You can embed fonts for use by going to the **Theme** tab in the email or form designers, or in **Theme** tab in a brand profile. 
+Embed fonts by going to the **Theme** tab in the email or form designers, or in the **Theme** tab in a brand profile.
 
 > [!div class="mx-imgBorder"]
 > ![Select theme to get started with font](media/select-theme-to-use-font.png "Select theme to get started with font")
 
-To embed a new font, scroll down to the **Add custom font** dropdown and select one of the following options: 
-1. **Browse library**: Upload the font files from the library.
-    - **Step 1**: After you select **Browse library**, you're presented with the list of custom fonts available to you for use.
-    - **Step 2**: Select from the list of fonts available or upload new.
+To embed a new font, scroll down to the **A1. **Browse library**: Upload font files from the library.
+    - **Step 1**: After you select **Browse library**, you see a list of custom fonts available for use.
+    - **Step 2**: Select a font from the list or upload a new one.   - **Step 2**: Select from the list of fonts available or upload new.
       > [!div class="mx-imgBorder"]
-      > ![Select from list of fonts or add a new one](media/select-fonts-from-list.png "Select from list of fonts or add a new one")
-1. **Upload font files**: Import font files saved on your system.
+      > ![Select from list of fonts or add a new one](media/1. **Upload font files**: Import font files saved on your system.
     - **Step 1**: Select upload font files from the **Add custom font** dropdown.
+    - **Step 2**: Select the font file from your system.** dropdown.
     - Step 2: Select the respective font file from the system.
-1. **Add font using URL**: You can import fonts by obtaining the font file URL.
+1. **Add font using URL**: Import fonts by entering the font file URL.
 
     > [!NOTE]
-    > When you use online web font services, you usually have five file formats to pick from: .eot, .woff, .woff2, .svg, and .ttf. The .woff and .woff2 formats are the most compatible with email, so we recommend using one or both of these formats when possible.
+    > When you use online web font services, you usually have five file formats to pick from: .eot, .woff, .woff2, .svg, and .ttf. The .woff and .woff2 formats are the most compatible with email, so it's best to use one or both of these formats when possible.
 
 ### Example: Add a font with a URL using Google Fonts
 
-Here’s a common @font-face declaration for importing a web font into an email using Google Fonts as a web font service:
+Here's a common @font-face declaration for importing a web font into an email using Google Fonts as a web font service:
 
-1. Paste the following HTML into a browser tab: `https://fonts.googleapis.com/css?family="fontName"`. For example, for the Noto Sans font, you'd paste: `https://fonts.googleapis.com/css?family=Noto+Sans`.
+1. Paste the following URL into a browser tab: `https://fonts.googleapis.com/css?family="fontName"`. For example, for the Noto Sans font, paste: `https://fonts.googleapis.com/css?family=Noto+Sans`.
 
     > [!NOTE]
-    > This information is available in the side navigation of the [Google Fonts](https://fonts.google.com/) page.
+    > You can find this information in the side navigation of the [Google Fonts](https://fonts.google.com/) page.
 
 1. Copy the URL for the **Latin** version of the @font-face.
-1. Paste it into the **Add font using URL** dialogue box.
+1. Paste it into the **Add font using URL** dialog box.
 
     > [!div class="mx-imgBorder"]
     > ![Enter the URL of the font in the dialog box](media/enter-the-respective-font-url.png "Enter the URL of the font in the dialog box")
+    >
+   
+## Add custom fonts and fallback fonts to your email HTML
 
-## Navigating web font licensing
+When you use a custom font in emails or forms, declare it using the font-family CSS property. This property lets you specify a prioritized list of fonts, known as a font stack, so if the primary font doesn't load, the next available font is used.
 
-When creating campaigns, it's crucial to respect licensing requirements for web fonts. While most providers permit use, adherence to individual licensing agreements is paramount. Reach out to font providers for precise details on licensing within Customer Insights - Journeys.
+For example, `font-family: "Boxed", Arial, sans-serif;`:
+- "Boxed" is the custom font.
+- "Arial" is the fallback font.
+- "sans-serif" is the generic fallback.
 
-## A font-forward future in Customer Insights - Journeys
+Specifying custom and fallback fonts helps your email stay legible and visually consistent, even if the recipient's email client doesn't support the custom font.
 
-Integrating web fonts into Customer Insights - Journeys can elevate your brand. However, meticulous testing is paramount. Utilize Customer Insights - Journeys testing tools and validate across environments to ensure flawless fallbacks.
+## Best practices and recommendations
+
+Integrating web fonts into Customer Insights – Journeys enhances your brand’s visual identity. To ensure consistent rendering and compliance, follow these best practices:
+
+- **Navigating web font licensing**: When you create campaigns, it's important to respect licensing requirements for web fonts. While most providers let you use their fonts, always follow individual licensing agreements. Contact font providers for details about licensing in Customer Insights - Journeys.
+- **Use reliable fallback fonts**: Add web-safe fonts like Arial, Helvetica, or Times New Roman to your font stack. These fonts work across devices and email clients, so your content stays readable even if the primary font doesn't load.
+- **Test across email clients**: Not all email clients support web fonts. Gmail and Outlook are examples. Use the built-in testing tools in Customer Insights – Journeys to preview your emails in different environments and check that fallback fonts show correctly.
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
