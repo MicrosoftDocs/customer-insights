@@ -766,18 +766,20 @@
   items:
   - name: Overview
     href: responsible-ai-overview.md
-  - name: Responsible AI FAQs for the Customer Insights - Journeys copilot preview
-    href: faqs-copilot-general.md
   - name: Responsible AI FAQs for content ideas
     href: faqs-content-ideas.md
-  - name: Responsible AI FAQs for the segment copilot
-    href: faqs-segment-copilot.md
-  - name: Responsible AI FAQs for image smart recommendation
-    href: faqs-image-smart-recommendation.md
   - name: Responsible AI FAQs for content rewrite
     href: faqs-content-rewrite.md
+  - name: Responsible AI FAQs for conversational journeys
+    href: responsible-ai-conversational-journeys.md
+  - name: Responsible AI FAQs for the Customer Insights - Journeys copilot (preview)
+    href: faqs-copilot-general.md
+  - name: Responsible AI FAQs for image smart recommendation
+    href: faqs-image-smart-recommendation.md  
   - name: Responsible AI FAQs for the journey copilot
-    href: faqs-journey-copilot.md
+    href: faqs-journey-copilot.md  
+  - name: Responsible AI FAQs for the segment copilot
+    href: faqs-segment-copilot.md
 - name: Resources
   items:
   - name: Removed/deprecated features
