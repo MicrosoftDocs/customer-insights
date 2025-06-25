@@ -1,7 +1,7 @@
 ---
 title: Set up and manage an event waitlist 
 description: Learn how to register interested attendees on a waitlist in Dynamics 365 Customer Insights - Journeys.
-ms.date: 06/20/2025
+ms.date: 06/25/2025
 ms.topic: how-to
 author: terezakirk
 ms.author: colinbirkett
@@ -63,10 +63,10 @@ To enable or disable the waitlist for a session:
 - **Event still has capacity but sessions don't**: The event has capacity and attendees can attend talks and networking opportunities. However, there are also many sessions with limited capacity such as roundtables and workshops, registration to sessions is optional.
     - Sessions might run out of capacity first. In this case, registrants see a "Join a waitlist" notification for the session that is out of capacity.
     - The event still has capacity and allows them to register.
-    - Upon registering, the attendees see a summary confirming their event registration and waitlist registration for the sessions they're interested in.
+    - Once attendees register, they see a summary confirming their event registration and waitlist registration for the sessions they're interested in.
 - **Event is full but some sessions still have capacity**: The event and sessions' capacity is equal and not all session capacity was used when people registered for their events.
     - Registrants can register for an event waitlist.
-    - When registering for a waitlist, registrants can pick the sessions they're interested in.
+    - When registrants register for a waitlist, they can pick the sessions they're interested in.
     - For sessions that have capacity, the session registration status is **On hold** as no attendee can register for a session without having secured a spot in an event.
     - Once a spot opens up in an event, the attendee is registered to the event and all respective sessions that were "On hold" for them prior.
 - **Event is full and sessions are too**: The event and session capacity is equal. Therefore, session registration is required.
@@ -75,7 +75,7 @@ To enable or disable the waitlist for a session:
     - Registrants are only registered once a spot opens up in the event.
  
 > [!TIP]
-> If you used the waitlist functionality in outbound marketing in the past, it wasn't possible to use event and session capacity and waitlisting together. This has changed in real-time journeys, so now you can benefit from greater flexibility when setting up multi-session events.
+> If you used the waitlist functionality in outbound marketing previously, it wasn't possible to use event and session capacity and waitlisting simultaneously. This has changed in real-time journeys. You can now benefit from greater flexibility when setting up multi-session events.
   
 ## View the waitlist
 
@@ -90,7 +90,7 @@ To see who is currently on the waitlist for any event or session:
 
 ### Manual management of waitlist registrations
 
-If you chose to manually register waitlisted attendees, you'll want to use a new flag accessible from the Event registration. It shows whether this contact is now eligible to be invited. 
+If you chose to manually register waitlisted attendees, use a new flag accessible from the Event registration. It shows whether this contact is now eligible to be invited. 
 
 :::image type="content" source="media/waitlist_invited.png" alt-text="Invited flag" lightbox="media/waitlist_invited.png":::
 
