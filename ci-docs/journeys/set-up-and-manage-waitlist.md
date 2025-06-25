@@ -92,7 +92,7 @@ To see who is currently on the waitlist for any event or session:
 
 If you chose to manually register waitlisted attendees, use a new flag accessible from the Event registration. It shows whether this contact is now eligible to be invited. 
 
-:::image type="content" source="media/waitlist-invite.png" alt-text="Invite dropdown setting within general settings for event registration." lightbox="media/waitlist-invite.png":::
+:::image type="content" source="media/invite-dropdown-setting.png" alt-text="Invite dropdown setting within general settings for event registration." lightbox="media/invite-dropdown-setting.png":::
 
 **Send invites for newly available places**
 
