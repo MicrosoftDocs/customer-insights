@@ -19,11 +19,21 @@ We roll out updates on a region-by-region basis. So certain regions might see fe
 
 ## July 2025
 
+### General availability
+
 #### Connect to Azure storage behind a firewall using Virtual Network support 
 
 Customer Insights - Data now uses Virtual Network support for Power Platform to integrate Customer Insights - Data with resources inside your virtual network without exposing them over the public internet. 
 
 - [Release plan](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-data/connect-firewalled-storage-accounts-using-azure-managed-identities)
+
+### Public preview
+
+#### Accelerate time to insights with data in Delta Lake format
+
+Your customer data grows constantly with rapidly changing signals like online activities and mobile interactions. As the data set grows, reprocessing of the data takes longer, slowing your ability to respond to changes, and providing increasingly stale insights. With native support for the Delta Lake data format in Customer Insights - Data, you can now accelerate the time to unify customer data by processing just the incremental changes to your data, allowing you to get results quicker and engage customers with the most up-to-date and timely insights.
+
+- [Release plan](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-data/accelerate-time-insights-data-delta-lake-format)
 
 ## May 2025
 

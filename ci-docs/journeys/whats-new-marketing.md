@@ -35,32 +35,32 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 
 - **Orchestrate journeys using any marketing interaction** 
 	- Transform the way you communicate with your customers. By leveraging marketing interaction triggers to orchestrate or branch customer journeys, you can now engage your customers based on the interactions they have with your marketing messages. Instantly adapt your strategies based on your customers' real-time interactions, ensuring that every message you send hits the right note. By engaging customers based on their interactions, you can significantly ramp up your chances of conversion with greater personalization. For example, you can branch and orchestrate journeys based on customer interactions with emails such as "email link clicked" or "email blocked."
-	- [Release plan]() 
+	- [Release plan](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/orchestrate-journeys-using-marketing-interaction) 
 	- [Docs]()
 
 - **Respect quiet times, engage based on location and time zones** 
 	- As regulations around customer privacy become more stringent, it's crucial to contact customers at times that are most convenient to them and ensure compliance with local legal requirements. Now in Customer Insights - Journeys, in addition to setting quiet times based on your journey's time zone, you can align quiet times with your customers' time zones and regions, ensuring that they only receive messages and calls during suitable hours. Aligning interactions with local time allows you to adhere to local regulations and respect cultural norms and preferences, fostering customer trust and enhancing the effectiveness of your outreach strategies.
-	- [Release plan]() 
+	- [Release plan](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/respect-quiet-times-engage-based-location-time-zones) 
 	- [Docs]()
 
 - **Pause and resume journeys to handle unplanned events** 
 	- Safeguarding your brand's reputation and customer trust is critical. In the face of unplanned or unforeseen events, such as natural disasters, you may need to pause certain campaigns that might be deemed inappropriate or insensitive. Additionally, you may run into business or operational reasons for stopping a campaign, such as identifying the need to update some content or experiencing an unexpected call center outage. In such scenarios, it's prudent to halt customer outreach until the problem is addressed. Instead of stopping a campaign and adjusting the audience to exclude previously reached customers, you can now pause and resume journeys, allowing you to manage unplanned situations easily and stress-free.
-	- [Release plan]() 
+	- [Release plan](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/pause-resume-journeys-handle-unplanned-events) 
 	- [Docs]()
 
 - **Tailor follow-up strategies by reacting to multiple customer actions at once** 
 	- By allowing marketers to react to multiple customer actions simultaneously, this feature enables faster, more intelligent decision-making within journeys, reducing the time and effort required to manage complex branching logic. Marketers can now consolidate multiple interaction outcomes into a single decision point, saving operational overhead while increasing precision in how each customer is engaged. This leads to better-targeted messaging, higher engagement rates, and stronger conversion outcomes. Additionally, simplifying journey configuration reduces setup time and ongoing maintenance, allowing teams to launch faster and scale efficiently across channels.
-	- [Release plan]() 
+	- [Release plan](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/tailor-follow-up-strategies-reacting-multiple-customer-actions-at-once) 
 	- [Docs]()
 
 - **Maximize event capacity with waitlist registrations** 
 	- Ensuring marketing events are filled to capacity is crucial for success and return on investment. To encourage a high turnout for marketing events, you can now enable waitlist registrations, which ensures spots are filled when registered attendees cancel. By setting the capacity for events and sessions, prospective attendees are placed on a waitlist when events and sessions are full. Should a slot open, the system either automatically registers the individual next on the waitlist or lets you manually select the replacement from the pool of waitlist registrations. You can save time and easily manage waitlist-related communication with a new set of out-of-the-box triggers, allowing you to send personalized messaging to waitlisted attendees.
-	- [Release plan]() 
+	- [Release plan](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/maximize-event-capacity-waitlist-registrations) 
 	- [Docs]()
 
 - **Create event portals with event and registration details using Power Pages** 
 	- Events are a pivotal element of your business strategy, aiding in customer acquisition and engagement. A centralized location is essential for your clients to discover and learn about events that you're organizing. The new event portal allows for the swift creation of a comprehensive hub where customers can access event details, session specifics, and speaker schedules and conveniently register using the event registration form. The portal can be seamlessly deployed through Power Pages, where it can be tailored to align with your brand identity using Power Pages Studio.
-	- [Release plan]() 
+	- [Release plan](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/enable-customers-find-sign-up-events-easily) 
 	- [Docs]()
 
 #### Monthly enhancements
