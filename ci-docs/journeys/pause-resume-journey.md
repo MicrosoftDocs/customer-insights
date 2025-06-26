@@ -1,7 +1,7 @@
 ---
-title: Pause and resume a journey (preview)
+title: Pause and resume a journey
 description: Learn how to pause and resume a journey in Dynamics 365 Customer Insights - Journeys.
-ms.date: 06/09/2025
+ms.date: 06/26/2025
 ms.topic: article
 author: colinbirkett
 ms.author: colinbirkett
@@ -11,13 +11,9 @@ search.audienceType:
   - enduser
 ---
 
-# Pause and resume a journey (preview)
-
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+# Pause and resume a journey
 
 The pause and resume feature lets you temporarily pause customer journeys in response to unplanned events, without stopping and recreating the journey. This feature helps protect your brand’s reputation and maintain customer trust during sensitive periods like natural disasters, service outages, or content errors.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note.md)]
 
 ## Why pause a journey?
 
