@@ -15,7 +15,7 @@ ms.custom: outbound-marketing
 # Customer Voice FAQs
 
 > [!IMPORTANT]
-> **This article only applies to [outbound marketing](user-guide.md), which will be removed from the product on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](transition-overview.md)
+> **This article only applies to [outbound marketing](user-guide.md), which is gradually being removed from Customer Insights - Journeys.** To avoid interruptions, stop using outbound marketing and transition to real-time journeys. Learn more: [Transition overview](transition-overview.md).
 
 Read this article to find answers to common questions and solutions to known issues associated with using Customer Voice in the outbound marketing area of Dynamics 365 Customer Insights.
 

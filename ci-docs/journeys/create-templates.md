@@ -15,7 +15,7 @@ ms.custom: outbound-marketing
 # Create templates for emails, pages, forms, and journeys
 
 > [!IMPORTANT]
-> **This article only applies to [outbound marketing](user-guide.md), which will be removed from the product on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](transition-overview.md)
+> **This article only applies to [outbound marketing](user-guide.md), which is gradually being removed from Customer Insights - Journeys.** To avoid interruptions, stop using outbound marketing and transition to real-time journeys. Learn more: [Transition overview](transition-overview.md).
 
 As you've seen, each time you create a new email message, customer journey, marketing page, or marketing form, you start by choosing a template. Dynamics 365 Customer Insights - Journeys includes sample templates to get you started, but you'll probably want to build your own to match your own organization's requirements and graphical identity.
 

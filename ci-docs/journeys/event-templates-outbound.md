@@ -15,7 +15,7 @@ ms.custom: outbound-marketing
 # Create and use event templates in outbound marketing
 
 > [!IMPORTANT]
-> **This article only applies to [outbound marketing](user-guide.md), which will be removed from the product on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](transition-overview.md)
+> **This article only applies to [outbound marketing](user-guide.md), which is gradually being removed from Customer Insights - Journeys.** To avoid interruptions, stop using outbound marketing and transition to real-time journeys. Learn more: [Transition overview](transition-overview.md).
 
 If you often create similar events, then you can save time by setting up one or more event templates. Each template can hold all the same settings as a standard event, including:
 
