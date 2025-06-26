@@ -64,7 +64,7 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 	- [Release plan](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/maximize-event-capacity-waitlist-registrations) 
 	- [Docs](set-up-and-manage-waitlist.md#manual-management-of-waitlist-registrations)
 
-	:::image type="content" source="media/wl-registrations.png" alt-text="Maximize event capacity with waitlist registrations." lightbox="media/wl-registrations.png":::
+	:::image type="content" source="media/wl-registering.png" alt-text="Maximize event capacity with waitlist registrations." lightbox="media/wl-registering.png":::
 
 - **Create event portals with event and registration details using Power Pages** 
 	- Events are a pivotal element of your business strategy, aiding in customer acquisition and engagement. A centralized location is essential for your clients to discover and learn about events that you're organizing. The new event portal allows for the swift creation of a comprehensive hub where customers can access event details, session specifics, and speaker schedules and conveniently register using the event registration form. The portal can be seamlessly deployed through Power Pages, where it can be tailored to align with your brand identity using Power Pages Studio.
