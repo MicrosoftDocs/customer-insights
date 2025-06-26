@@ -15,7 +15,7 @@ ms.custom: outbound-marketing
 [!INCLUDE [consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
-> **This article only applies to [outbound marketing](user-guide.md), which is gradually being removed from Customer Insights - Journeys.** To avoid interruptions, stop using outbound marketing and transition to real-time journeys. Learn more: [Transition overview](transition-overview.md).
+> **This article only applies to [outbound marketing](../user-guide.md), which is gradually being removed from Customer Insights - Journeys.** To avoid interruptions, stop using outbound marketing and transition to real-time journeys. Learn more: [Transition overview](../transition-overview.md).
 
 To make marketing forms easier to navigate, you may want to filter cities based on the country that a user selects. Out-of-the-box form fields don't support this functionality because City (`address1_country`) and Country (`address1_city`) properties are a "single line of text" type. To implement filtering, you'll need to first customize the Contact entity, then leverage lookup fields.
 

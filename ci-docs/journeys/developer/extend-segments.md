@@ -15,7 +15,7 @@ ms.custom: outbound-marketing
 [!INCLUDE [consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
 
 > [!IMPORTANT]
-> **This article only applies to [outbound marketing](user-guide.md), which is gradually being removed from Customer Insights - Journeys.** To avoid interruptions, stop using outbound marketing and transition to real-time journeys. Learn more: [Transition overview](transition-overview.md).
+> **This article only applies to [outbound marketing](../user-guide.md), which is gradually being removed from Customer Insights - Journeys.** To avoid interruptions, stop using outbound marketing and transition to real-time journeys. Learn more: [Transition overview](../transition-overview.md).
 
 A marketing segment is a group of contacts you target in a marketing campaign. Sometimes, you target all your contacts, but usually, you choose who to target based on demographic, firmographic, or other data. More information: [Working with segments](/dynamics365/customer-engagement/marketing/segmentation-lists-subscriptions).
 
