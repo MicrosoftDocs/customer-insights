@@ -64,14 +64,14 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 	- [Release plan](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/maximize-event-capacity-waitlist-registrations) 
 	- [Docs](set-up-and-manage-waitlist.md#manual-management-of-waitlist-registrations)
 
-	:::image type="content" source="media/waitlist-registrations.png" alt-text="Maximize event capacity with waitlist registrations." lightbox="media/waitlist-registrations.png":::
+	:::image type="content" source="media/wl-registrations.png" alt-text="Maximize event capacity with waitlist registrations." lightbox="media/wl-registrations.png":::
 
 - **Create event portals with event and registration details using Power Pages** 
 	- Events are a pivotal element of your business strategy, aiding in customer acquisition and engagement. A centralized location is essential for your clients to discover and learn about events that you're organizing. The new event portal allows for the swift creation of a comprehensive hub where customers can access event details, session specifics, and speaker schedules and conveniently register using the event registration form. The portal can be seamlessly deployed through Power Pages, where it can be tailored to align with your brand identity using Power Pages Studio.
 	- [Release plan](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/enable-customers-find-sign-up-events-easily) 
 	- [Docs](event-portal-template.md)
 
-	:::image type="content" source="media/event-portal-powerpages.png" alt-text="Create event portals with event and registration details using Power Pages." lightbox="media/event-portal-powerpages.png":::
+	:::image type="content" source="media/event-portal-pp.png" alt-text="Create event portals with event and registration details using Power Pages." lightbox="media/event-portal-pp.png":::
 
 #### Monthly enhancements
 
@@ -234,7 +234,7 @@ Learn how to make the most of the new Dynamics 365 Customer Insights features in
 	- [Release plan](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/maximize-event-capacity-waitlist-registrations)
 	- [Docs](set-up-and-manage-waitlist.md)
 
-	 :::image type="content" source="media/waitlist-feature-screen.png" alt-text="Maximize event capacity with waitlist registrations." lightbox="media/waitlist-feature-screen.png":::
+	 :::image type="content" source="media/waitlist-feature-screen.png" alt-text="Maximize event capacity with waitlist registrations in Customer Insights - Journeys." lightbox="media/waitlist-feature-screen.png":::
 
 - **Collect extra customer info without updating your data model**
 	- Easily gather additional information about your customers by creating any kind of question directly in the marketing form editor without the need to create new custom attributes for your lead or contact entity. For example, you can create fields to ask, “How did you hear about our products?” or create contest questions to increase your customer satisfaction and retention.
