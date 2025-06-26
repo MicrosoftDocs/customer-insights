@@ -1,7 +1,7 @@
 ---
 title: How the outbound marketing app uses cookies
 description: Describes how cookies are set and used in outbound marketing.
-ms.date: 09/20/2023
+ms.date: 06/26/2025
 ms.topic: reference
 author: alfergus
 ms.author: alfergus
@@ -20,9 +20,7 @@ ms.custom: outbound-marketing
 Outbound marketing identifies website visitors using a technology called *cookies*. A cookie is a small file that's sent by a server and saved by your browser. Each time you visit a server for which a cookie is set, your browser submits that cookie value back to the server. In this way, the cookie can provide a unique visitor ID, which enables the server to return information that is unique to you. This is the technology that originally made the online shopping cart possible.
 
 > [!IMPORTANT]
-> Many countries/regions (including the European Union) require that you obtain consent before setting a cookie on a resident's machine. It is your organization's responsibility to be aware of, and conform to, all relevant laws and regulations in the markets where you operate, including when it comes to obtaining consent to set cookies. You can read more about the EU regulations at [ec.europa.eu/ipg/basics/legal/cookies/](https://ec.europa.eu/ipg/basics/legal/cookies/).
-> 
-> This page explains how outbound marketing can help your organization conform to these regulations.
+> Many countries/regions (including the European Union) require that you obtain consent before setting a cookie on a resident's machine. It's your organization's responsibility to be aware of, and conform to, all relevant laws and regulations in the markets where you operate, including when it comes to obtaining consent to set cookies. This article explains how outbound marketing can help your organization conform to these regulations.
 
 Outbound marketing can generate a small piece of JavaScript code that reads and sets cookies on any page where you place the code. All you need to do to let outbound marketing record visits to a given page is include the script on that page.
 
