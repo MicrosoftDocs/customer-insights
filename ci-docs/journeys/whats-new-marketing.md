@@ -43,25 +43,35 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 	- [Release plan](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/respect-quiet-times-engage-based-location-time-zones) 
 	- [Docs](real-time-marketing-quiet-times.md#use-time-zone-for-quiet-times)
 
+	:::image type="content" source="media/qt-settings-updated.png" alt-text="Set up quiet times for a journey based location and time zone." lightbox="media/qt-settings-updated.png":::
+
 - **Pause and resume journeys to handle unplanned events** 
 	- Safeguarding your brand's reputation and customer trust is critical. In the face of unplanned or unforeseen events, such as natural disasters, you may need to pause certain campaigns that might be deemed inappropriate or insensitive. Additionally, you may run into business or operational reasons for stopping a campaign, such as identifying the need to update some content or experiencing an unexpected call center outage. In such scenarios, it's prudent to halt customer outreach until the problem is addressed. Instead of stopping a campaign and adjusting the audience to exclude previously reached customers, you can now pause and resume journeys, allowing you to manage unplanned situations easily and stress-free.
 	- [Release plan](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/pause-resume-journeys-handle-unplanned-events) 
 	- [Docs](pause-resume-journey.md)
+
+	:::image type="content" source="media/journey-pause.png" alt-text="Pause and resume journeys to handle unplanned events." lightbox="media/journey-pause.png":::
 
 - **Tailor follow-up strategies by reacting to multiple customer actions at once** 
 	- By allowing marketers to react to multiple customer actions simultaneously, this feature enables faster, more intelligent decision-making within journeys, reducing the time and effort required to manage complex branching logic. Marketers can now consolidate multiple interaction outcomes into a single decision point, saving operational overhead while increasing precision in how each customer is engaged. This leads to better-targeted messaging, higher engagement rates, and stronger conversion outcomes. Additionally, simplifying journey configuration reduces setup time and ongoing maintenance, allowing teams to launch faster and scale efficiently across channels.
 	- [Release plan](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/tailor-follow-up-strategies-reacting-multiple-customer-actions-at-once) 
 	- [Docs](multi-interaction-branching.md)
 
+	:::image type="content" source="media/tailor-follow-up-strategies.png" alt-text="Tailor follow-up strategies by reacting to multiple customer actions at once." lightbox="media/tailor-follow-up-strategies.png":::
+
 - **Maximize event capacity with waitlist registrations** 
 	- Ensuring marketing events are filled to capacity is crucial for success and return on investment. To encourage a high turnout for marketing events, you can now enable waitlist registrations, which ensures spots are filled when registered attendees cancel. By setting the capacity for events and sessions, prospective attendees are placed on a waitlist when events and sessions are full. Should a slot open, the system either automatically registers the individual next on the waitlist or lets you manually select the replacement from the pool of waitlist registrations. You can save time and easily manage waitlist-related communication with a new set of out-of-the-box triggers, allowing you to send personalized messaging to waitlisted attendees.
 	- [Release plan](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/maximize-event-capacity-waitlist-registrations) 
 	- [Docs](set-up-and-manage-waitlist.md#manual-management-of-waitlist-registrations)
 
+	:::image type="content" source="media/waitlist-registrations.png" alt-text="Maximize event capacity with waitlist registrations." lightbox="media/waitlist-registrations.png":::
+
 - **Create event portals with event and registration details using Power Pages** 
 	- Events are a pivotal element of your business strategy, aiding in customer acquisition and engagement. A centralized location is essential for your clients to discover and learn about events that you're organizing. The new event portal allows for the swift creation of a comprehensive hub where customers can access event details, session specifics, and speaker schedules and conveniently register using the event registration form. The portal can be seamlessly deployed through Power Pages, where it can be tailored to align with your brand identity using Power Pages Studio.
 	- [Release plan](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/enable-customers-find-sign-up-events-easily) 
 	- [Docs](event-portal-template.md)
+
+	:::image type="content" source="media/event-portal-powerpages.png" alt-text="Create event portals with event and registration details using Power Pages." lightbox="media/event-portal-powerpages.png":::
 
 #### Monthly enhancements
 
