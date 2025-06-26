@@ -14,7 +14,7 @@ search.audienceType:
 # Transition channels and message sending
 
 > [!IMPORTANT]
-> **The [outbound marketing](user-guide.md) module will be removed from Customer Insights - Journeys on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](transition-overview.md)
+> **The [outbound marketing](user-guide.md) module is gradually being removed from Customer Insights - Journeys.** To avoid interruptions, stop using outbound marketing and transition to real-time journeys. Learn more: [Transition overview](transition-overview.md).
 
 In Dynamics 365 Customer Insights – Journeys, marketing channels and message delivery mechanisms help you create meaningful customer experiences. As organizations switch from traditional outbound marketing to real-time journeys, these channels become even more important. This article explains how to transition channels and messages to real-time journeys.
 
