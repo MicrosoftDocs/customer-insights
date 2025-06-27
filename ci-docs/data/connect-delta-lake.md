@@ -36,16 +36,15 @@ Customer Insights - Data supports Databricks features with a 'minReaderVersion' 
 > [!TIP] 
 > If you're using a recent Databricks runtime and need compatibility with Dynamics 365 Customer Insights, you can lower the Delta table protocol version and disable specific features. This can be configured at the workspace level in Databricks to apply by default to any newly created tables. (It's also possible to manually drop features from existing tables if needed, but that’s beyond the scope of this tip.)
 >
-> :::image type="content" source="media/auto-enable-deletion-vectors.png" alt-text="Screenshot showing the Auto-Enable Deletion Vectors setting." lightbox="media/auto-enable-deletion-vectors.png":::
+> :::image type="content" source="media/auto-enable-deletion-vectors.png" alt-text="Screenshot showing the Auto-Enable Deletion Vectors setting.":::
 >
 > After applying the setting and re-running the notebook, the table was reverted to a lower reader/writer protocol:
-> :::image type="content" source="media/lower-protocol.png" alt-text="Screenshot showing a lower reader/writer protocol." lightbox="media/lower-protocol.png":::
+> :::image type="content" source="media/lower-protocol.png" alt-text="Screenshot showing a lower reader/writer protocol.":::
 > 
 > This allowed the table to be successfully read and ingested by Customer Insights:
-> :::image type="content" source="media/successful-read-ingest.png" alt-text="Screenshot showing successful read and ingest." lightbox="media/successful-read-ingest.png":::
+> :::image type="content" source="media/successful-read-ingest.png" alt-text="Screenshot showing successful read and ingest.":::
 >
 > Learn more: [Delta Lake feature compatibility and protocols - Lowest possible protocol](https://docs.databricks.com/aws/en/delta/feature-compatibility#-lowest-possible-protocol).
-
 
 ## Prerequisites
 
