@@ -69,7 +69,7 @@ If this still doesn't work, complete the outbound marketing request form (see th
 
 An outbound marketing request will be considered only if all four of the following conditions are met:
 
-1. The environment is in a tenant that's currently approved for using outbound marketing (see [requesting an extension](transition-faqs.md#i-cant-transition-by-the-outbound-marketing-removal-date-can-i-request-an-extension)).
+1. The environment is in a tenant that's currently approved for using outbound marketing (see [requesting an extension](transition-faqs.md#i-need-more-time-to-complete-the-transition-can-i-request-an-extension)).
 1. You have an admin role.
 1. You don't see the enable link, or it doesn't work (even after completing the steps outlined in the previous section).
 1. You're in one of these situations: (a) You're doing a tenant migration, or (b) you had only one environment in the tenant with outbound marketing that was previously being used as a production system.
