@@ -21,7 +21,7 @@ ms.custom:
 
 Customer Insights – Journeys includes two modules: outbound marketing and real-time journeys. Released in August 2021, real-time journeys offer advanced enterprise capabilities. Real-time journeys has been the default offering to new customers since August 2023.
 
-After announcing in August 2023 that we'll only invest in real-time journeys, in August 2024 we officially announced that we will start removing outbound marketing after June 30, 2025. To avoid business continuity issues, all customers still using outbound marketing must transition to real-time journeys. As of December 2024, social posting and LinkedIn lead generation capabilities were also removed. We don't plan to support social posting in real-time journeys because it has low demand and usage. However, may consider adding LinkedIn lead generation to real-time journeys in a future release.
+After announcing in August 2023 that we'll only invest in real-time journeys, in August 2024, we officially announced that we would start removing outbound marketing after June 30, 2025. To avoid business continuity issues, all customers still using outbound marketing must transition to real-time journeys. In December 2024, social posting and LinkedIn lead generation capabilities were also removed. We don't plan to support social posting in real-time journeys because it has low demand and usage. However,we may consider adding LinkedIn lead generation to real-time journeys in a future release.
 
 No new licensing or provisioning is required to use real-time journeys; every one of your existing environments already has it. The updated license removes limits on the number of environments (see [Announcing unlimited application installs in Dynamics 365 Customer Insights](https://www.microsoft.com/dynamics-365/blog/it-professional/2024/06/18/announcing-unlimited-application-installs-in-dynamics-365-customer-insights/)), so you can easily try real-time journeys in a separate environment if needed.
 
@@ -31,29 +31,31 @@ There's a dedicated section for transition guidance: [Transition overview](trans
 
 As an existing outbound marketing customer, you must transition to real-time journeys to avoid interruption. If you're using social posting or LinkedIn lead generation capabilities, they're already removed and your ability to create new social posts or LinkedIn leads is restricted. Your data is still available for reporting.
 
-Newly created, copied, migrated, or restored environments no longer include outbound marketing and have real-time journeys only. See [Guidance for existing customers](transition-overview.md#guidance-for-existing-customers-currently-using-outbound-marketing).
+Newly created, copied, migrated, or restored environments no longer include outbound marketing; they contain only real-time journeys. Learn more: [Guidance for existing customers](transition-overview.md#guidance-for-existing-customers-currently-using-outbound-marketing).
 
 ## I'm a new Dynamics 365 Customer Insights - Journeys customer. How do these changes impact me?
 
-When you provision Customer Insights – Journeys, you will see real-time journeys only. We don't offer outbound marketing to new customers, so you should plan to implement and go live with real-time journeys. Please do not submit requests or contact support for adding outbound marketing as new customers are not eligible for outbound and no exceptions will be made.
+When you provision Customer Insights – Journeys, you'll see real-time journeys only. We don't offer outbound marketing to new customers, so you should plan to implement and go live with real-time journeys. Don't submit requests or contact support for adding outbound marketing, as new customers aren't eligible for outbound marketing, and no exceptions will be made.
 
-## I need more time to complete transition. Can I request an extension?
+## I need more time to complete the transition. Can I request an extension?
 
-We first announced the removal of outbound marketing in August 2023 and later set June 30, 2025 as the removal date, which remains unchanged. As detailed in [the next question](transition-faqs.md#what-will-happen-after-june-30-2025-will-outbound-marketing-stop-working), we have started taking steps to reduce outbound marketing usage and eventually remove it. If you've begun your transition and need more time, you can request an extension as explained in this document: [Requesting an extension for outbound marketing removal](https://download.microsoft.com/download/ef2db164-d7ef-4fdd-be9a-308939d1b4e1/OBMtoRTM.pdf) (downloadable PDF). Extension requests aren't automatic; they're evaluated on a case-by-case basis. Extensions are only approved for customers already in the implementation phase of their transition plans. If approved, extensions are granted for a limited period only. Customers with approved extensions may still see warning messages and dialogs but will be able to continue using outbound until their approval date.
+We first announced the removal of outbound marketing in August 2023 and later set June 30, 2025, as the removal date, which remains unchanged. As detailed in [the next section](transition-faqs.md#what-will-happen-after-june-30-2025-will-outbound-marketing-stop-working), we have started taking steps to reduce outbound marketing usage and eventually remove it. If you've begun your transition and need more time, you can request an extension as explained in this document: [Requesting an extension for outbound marketing removal](https://download.microsoft.com/download/ef2db164-d7ef-4fdd-be9a-308939d1b4e1/OBMtoRTM.pdf) (downloadable PDF). Extension requests aren't automatic; they're evaluated on a case-by-case basis. Extensions are only approved for customers already in the implementation phase of their transition plans. If approved, extensions are granted for a limited period only. Customers with approved extensions may still see warning messages and dialogs, but will be able to continue using outbound marketing until their approval date.
 
-## How and when will outbound be removed?
+## What will happen after June 30, 2025? Will outbound marketing stop working?
 
-We are taking a phased approach for removing outbound to minimize disruption to customers’ business. When we detect there are no active outbound campaigns/events in an environment (“org”), we initially hide outbound and then remove it after few weeks. With this approach, outbound removal date is different for each environment as it depends on when the outbound campaigns/events complete. While we continue to support outbound, only critical issues are prioritized.
-To reduce and eventually end outbound usage, we are applying a phased as outlined below:
-- **Phase 1 - Existing campaigns/event work, new can be created**: Users get messages about outbound removal whenever they attempt to create a new outbound marketing email, journey, segment, form, page, etc. They can dismiss the dialog and continue creating outbound campaigns/events.  
-- **Phase 2 - Existing campaigns/events work, new can NOT be created**: Users are no longer able to dismiss the dialog and therefore cannot create new outbound campaigns/events. We have not yet set a date for this phase; we will announce it soon.
-- **Phase 3 - Existing campaigns/events end, outbound is hidden**: When existing campaigns/events are complete, we will automatically hide the outbound from the UI. After a few weeks, we will remove outbound
+We are implementing a phased approach for removing outbound marketing to minimize disruption to customers’ businesses. When we detect there are no active outbound marketing campaigns or events in an environment (“org”), we initially hide outbound marketing and then remove it after a few weeks. With this approach, the outbound marketing removal date is different for each environment as it depends on when the outbound marketing campaigns or events complete. While we continue to support outbound marketing, only critical issues are prioritized.
 
-We will continue to communicate via admin center and in-product messaging to keep you updated. This phased approach may be revised in the future (for example, we may set a common date to remove outbound from all environments even if they have active outbound campaigns/events).
+To reduce and eventually end outbound  marketing usage, we're applying a phased approach:
 
-##I have an approved extension for outbound – what can I expect?##
+- **Phase 1 - Existing campaigns and event work; new ones can be created**: Users get messages about outbound marketing removal whenever they attempt to create a new outbound marketing email, journey, segment, form, or marketing page. They can dismiss the dialog and continue creating outbound marketing campaigns and events.  
+- **Phase 2 - Existing campaigns and events work; new ones *can't* be created**: Users are no longer able to dismiss the dialog and therefore can't create new outbound marketing campaigns or events. We have not yet set a date for this phase; we'll announce it soon.
+- **Phase 3 - Existing campaigns and events end, outbound marketing is hidden**: When existing campaigns and events are complete, we'll automatically hide outbound marketing from the user interface. After a few weeks, we'll remove outbound marketing.
 
-An extension approval implies only one thing - your environment will not be moved to “blocking” phase (described above) until after your approved date. Some of the messages and banners about outbound removal may still be shown. Periodic product releases that update and change current functionality will continue to be applied as usual. 
+We'll continue to communicate through the admin center and in-product messaging to keep you updated. This phased approach may be revised in the future (for example, we may set a common date to remove outbound marketing from all environments, even if they have active outbound marketing campaigns or events).
+
+## I have an approved extension for outbound marketing. What can I expect?
+
+An extension approval implies only one thing: your environment won't be moved to the “blocking” phase (described in the previous section) until after your approved date. Some of the messages and banners about outbound marketing removal may still be shown. Periodic product releases that update and change current functionality will continue to be applied as usual. 
 
 ## What will happen to outbound tables and data when outbound marketing is removed?
 
