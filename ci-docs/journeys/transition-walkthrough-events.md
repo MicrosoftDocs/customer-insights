@@ -133,7 +133,7 @@ No. Any live events that accept registrations need to have registration closed b
 
 *What should I do if the features I need for event planning aren't available?*
 
-The most used features have a planned release date before the outbound marketing removal date. We understand there might be some features that are important for your business and might not be available yet. You can *phase your transition*. Any events that don't need those features can be created as real-time journeys events. You can also transition all your communication to real-time journeys, as outbound marketing events can be used with real-time journeys and emails. This reduces the number of assets you need to transition closer to the date. You can also request an extension. For more information, see [How to request an extension](transition-faqs.md#i-cant-transition-by-the-outbound-marketing-removal-date-can-i-request-an-extension).
+The most used features have a planned release date before the outbound marketing removal date. We understand there might be some features that are important for your business and might not be available yet. You can *phase your transition*. Any events that don't need those features can be created as real-time journeys events. You can also transition all your communication to real-time journeys, as outbound marketing events can be used with real-time journeys and emails. This reduces the number of assets you need to transition closer to the date. You can also request an extension. For more information, see [How to request an extension](transition-faqs.md#i-need-more-time-to-complete-the-transition-can-i-request-an-extension).
 
 ## Blogs and workarounds
 
