@@ -36,7 +36,7 @@ To enable or disable the waitlist for an event:
 1. Open the **Events** work area. Go to the events list (**Events** > **Event** > **Events**), and then open or create an event.
 1. Open the **General** tab. Find the **Capacity** area.
 
-    :::image type="content" source="media/waitlist settings.png" alt-text="Screenshot of the event General tab showing waitlist settings in the Capacity area." lightbox="media/waitlist settings.png":::
+    :::image type="content" source="media/waitlist-settings.png" alt-text="Screenshot of the event General tab showing waitlist settings in the Capacity area." lightbox="media/waitlist-settings.png":::
 
 1. Make these settings:
   - **Maximum event capacity** (for event-level registration only): Enter the maximum number of people who can attend your event. The waitlist only takes effect after the indicated number of contacts have registered. If you're using session-level registrations, you can also set up a waitlist for each session. For more information, see [Enable a waitlist for a session](#enable-a-waitlist-for-a-session).
@@ -73,7 +73,7 @@ To enable or disable the waitlist for a session:
     - Registrants can register for an event and session waitlist.
     - Given that neither event nor session capacity is available, both registrations have a **Waitlisted** status.
     - Registrants are only registered once a spot opens up in the event.
- 
+
 > [!TIP]
 > If you used the waitlist functionality in outbound marketing previously, it wasn't possible to use event and session capacity and waitlisting simultaneously. This has changed in real-time journeys. You can now benefit from greater flexibility when setting up multi-session events.
   
@@ -86,11 +86,9 @@ To see who is currently on the waitlist for any event or session:
 1. Open the **Registration and attendance** tab for your selected event or session.
 1. In the default system view called "Registration and attendance of real-time events," there's a **Status reason** column where you can see if the attendee is registered, waitlisted, or if the registration was canceled. Any event check-ins are recorded and listed in the table.
 
-[!INCLUDE [footer-include](./includes/footer-banner.md)]
-
 ### Manual management of waitlist registrations
 
-If you chose to manually register waitlisted attendees, use the new flag accessible from the event registration page. It shows whether the contact is now eligible to be invited. 
+If you chose to manually register waitlisted attendees, use the new flag accessible from the event registration page. It shows whether the contact is now eligible to be invited.
 
 :::image type="content" source="media/invite-dropdown-setting.png" alt-text="Invite dropdown setting within general settings for event registration." lightbox="media/invite-dropdown-setting.png":::
 
