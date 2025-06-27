@@ -21,15 +21,15 @@ ms.custom:
 
 Customer Insights – Journeys includes two modules: outbound marketing and real-time journeys. Released in August 2021, real-time journeys offer advanced enterprise capabilities. Real-time journeys has been the default offering to new customers since August 2023.
 
-After announcing in August 2023 that we'll only invest in real-time journeys, in August 2024, we officially announced that we would start removing outbound marketing after June 30, 2025. To avoid business continuity issues, all customers still using outbound marketing must transition to real-time journeys. In December 2024, social posting and LinkedIn lead generation capabilities were also removed. We don't plan to support social posting in real-time journeys because it has low demand and usage. However,we may consider adding LinkedIn lead generation to real-time journeys in a future release.
+After announcing in August 2023 that we'll only invest in real-time journeys, in August 2024, we officially announced that we would start removing outbound marketing after June 30, 2025. To avoid business continuity issues, all customers still using outbound marketing must transition to real-time journeys. In December 2024, social posting and LinkedIn lead generation capabilities were also removed. We don't plan to support social posting in real-time journeys because it has low demand and usage. However, we may consider adding LinkedIn lead generation to real-time journeys in a future release.
 
-No new licensing or provisioning is required to use real-time journeys; every one of your existing environments already has it. The updated license removes limits on the number of environments (see [Announcing unlimited application installs in Dynamics 365 Customer Insights](https://www.microsoft.com/dynamics-365/blog/it-professional/2024/06/18/announcing-unlimited-application-installs-in-dynamics-365-customer-insights/)), so you can easily try real-time journeys in a separate environment if needed.
+No new licensing or provisioning is required to use real-time journeys; all existing environments already have it. The updated license removes limits on the number of environments (see [Announcing unlimited application installs in Dynamics 365 Customer Insights](https://www.microsoft.com/dynamics-365/blog/it-professional/2024/06/18/announcing-unlimited-application-installs-in-dynamics-365-customer-insights/)), so you can try real-time journeys in a separate environment if needed.
 
-There's a dedicated section for transition guidance: [Transition overview](transition-overview.md). You should bookmark this section. We update it regularly based on product updates, questions, and feedback.
+A dedicated section for transition guidance is available: [Transition overview](transition-overview.md). Bookmark this section. It's updated regularly based on product updates, questions, and feedback.
 
-## I'm an existing Dynamics 365 Customer Insights - Journeys customer using outbound marketing. How do these changes impact me?
+## I'm an existing Dynamics 365 Customer Insights - Journeys customer using outbound marketing. How do these changes affect me?
 
-As an existing outbound marketing customer, you must transition to real-time journeys to avoid interruption. If you're using social posting or LinkedIn lead generation capabilities, they're already removed and your ability to create new social posts or LinkedIn leads is restricted. Your data is still available for reporting.
+As an existing outbound marketing customer, transition to real-time journeys to avoid interruption. If you're using social posting or LinkedIn lead generation capabilities, they're already removed, and you can't create new social posts or LinkedIn leads. Your data is still available for reporting.
 
 Newly created, copied, migrated, or restored environments no longer include outbound marketing; they contain only real-time journeys. Learn more: [Guidance for existing customers](transition-overview.md#guidance-for-existing-customers-currently-using-outbound-marketing).
 
@@ -43,7 +43,7 @@ We first announced the removal of outbound marketing in August 2023 and later se
 
 ## What will happen after June 30, 2025? Will outbound marketing stop working?
 
-We are implementing a phased approach for removing outbound marketing to minimize disruption to customers’ businesses. When we detect there are no active outbound marketing campaigns or events in an environment (“org”), we initially hide outbound marketing and then remove it after a few weeks. With this approach, the outbound marketing removal date is different for each environment as it depends on when the outbound marketing campaigns or events complete. While we continue to support outbound marketing, only critical issues are prioritized.
+We're implementing a phased approach for removing outbound marketing to minimize disruption to customers’ businesses. When we detect there are no active outbound marketing campaigns or events in an environment (“org”), we initially hide outbound marketing and then remove it after a few weeks. With this approach, the outbound marketing removal date is different for each environment as it depends on when the outbound marketing campaigns or events complete. While we continue to support outbound marketing, only critical issues are prioritized.
 
 To reduce and eventually end outbound  marketing usage, we're applying a phased approach:
 
@@ -60,12 +60,12 @@ An extension approval implies only one thing: your environment won't be moved to
 ## What will happen to outbound tables and data when outbound marketing is removed?
 
 When outbound marketing is removed, the sitemap entry and outbound marketing services will be removed. We won't delete any publicly documented outbound marketing tables or data from those tables, with some exceptions (see below). While the tables and data remain in the system, they **won't** be updated or refreshed, and they may not be usable or accessible from the user interface once the outbound marketing sitemap entry has been removed. See additional details below (this information is subject to change and will be updated as we get closer to the outbound marketing removal date):
-- The **asset library** is common to both outbound marketing and real-time journeys. As such, the library and the items in it continue to be available and useable.	
+- The **asset library** is common to both outbound marketing and real-time journeys. Because of this, the library and the items in it stay available and usable.
 - Outbound marketing **analytics** data will be merged with real-time journeys data.
     - Existing Power BI custom reports for outbound marketing won't work with the consolidated data because the data format, its location, and access methods are different in real-time journeys.
     - Insights reports that are part of the outbound marketing user interface won't be available anymore.
 - **Events** is a shared capability between real-time journeys and outbound marketing and the same tables are used. These tables and the data won't be removed.
-    - However, there are some critical differences in the event forms and pages between outbound marketing and real-time journeys. Therefore, events created in outbound marketing will stop working once outbound marketing is removed. Outbound marketing events that go past the outbound marketing removal date must be recreated in real-time journeys.
+    - However, there are some critical differences in the event forms and pages between outbound marketing and real-time journeys. Therefore, events created in outbound marketing stop working once outbound marketing is removed. Outbound marketing events that go past the outbound marketing removal date must be recreated in real-time journeys.
 - Outbound marketing **segments** won't be removed but won't be usable.
     - The segment table itself doesn't contain the actual list of members; this information is stored in an internal table that will be removed. If you want to retain segment member data, you must export the segment data before outbound marketing services are removed.
     - Outbound marketing segments are currently available for use in real-time journeys. This functionality won't be supported once outbound marketing is removed. Any journey that uses outbound marketing segments will stop working.
@@ -74,7 +74,7 @@ When outbound marketing is removed, the sitemap entry and outbound marketing ser
 - Outbound marketing **emails**, **content blocks**, **forms**, **segments**, **marketing pages**, **consent data**, **journeys**, **templates**, **lead scoring models**, **social posts**, and **subscription lists** won't be deleted.
     - As these assets can't be used in real-time journeys, they need to be migrated or recreated. For more information, review the individual pages for each feature area in the transition guidance section: [Functional areas overview](transition-walkthrough-functional.md).
     - While these tables will remain, any custom user interface that updated or added records to them and relied on outbound marketing services may fail (for example, any custom user interface that had plugins that reacted on retrieve/retrieve multiple messages).
-- **Marketing lists** won't be deleted. You can continue using them in real-time journeys (you can include them in real-time journeys dynamic segments).
+- **Marketing lists** aren't deleted. You can keep using them in real-time journeys (you can include them in real-time journeys dynamic segments).
 - **Interaction data** won’t be deleted. Outbound marketing interaction data is being moved into the same store where real-time journeys interactions are stored. This enables combined reporting and interaction-based segments irrespective of where the interactions occurred (in outbound marketing or in real-time journeys). The [contact and lead timeline](timeline.md) already shows last (one) year of interactions from both outbound marketing and real-time journeys. To show data prior to that, you must [build custom reporting or export the data](transition-walkthrough-insights.md#how-to-transition).
 
 ## Why aren't you supporting social posting in real-time journeys? Do you have a recommendation on what to use instead?
@@ -87,17 +87,17 @@ We've prepared extensive resources (guidance, tools, and discussion forums) to h
 
 ## What about my outbound marketing features that are currently unavailable in real-time journeys?
 
-Real-time journeys is based on newer technology and has a different approach so that it can offer capabilities that outbound marketing can't. Customers might need to change their approach from what they used in outbound marketing. For instance, many scenarios are better solved with triggered journeys instead of segment-based journeys. While this requires designing journeys differently using triggers instead of segments, it's important to focus on the long-term benefits such as scale, Copilot, and other innovations that outbound marketing can't offer. That said, since the announcement we've prioritized many specific features in real-time journeys based on customer feedback and usage. To see more details on specific differences and workarounds, review the [functional area-specific pages](transition-walkthrough-functional.md).
+Real-time journeys is based on newer technology and has a different approach so that it can offer capabilities that outbound marketing can't. Customers might need to change their approach from what they used in outbound marketing. For instance, many scenarios are better solved with triggered journeys instead of segment-based journeys. While this requires designing journeys differently using triggers instead of segments, it's important to focus on the long-term benefits such as scale, Copilot, and other innovations that outbound marketing can't offer. That said, since the announcement we have prioritized many specific features in real-time journeys based on customer feedback and usage. To see more details on specific differences and workarounds, review the [functional area-specific pages](transition-walkthrough-functional.md).
 
 ## Why should I transition to real-time journeys?
 
-Real-time journeys introduces new ways of marketing by integrating the latest generative AI capabilities while covering and enhancing traditional outbound scenarios. It offers a wealth of benefits to deliver engaging B2C and B2B experiences.
+Real-time journeys brings new ways to market by integrating the latest generative AI capabilities and enhancing traditional outbound scenarios. It offers many benefits to help you deliver engaging B2C and B2B experiences.
 
-By transitioning to real-time journeys now, you can enjoy the following benefits:
+When you move to real-time journeys, you get these benefits:
 
-**Leverage generative AI to do more with less**
+**Use generative AI to do more with less**
 
-Real-time journeys already assists marketers with several built-in Copilot capabilities to:
+Real-time journeys helps marketers with several built-in Copilot capabilities to:
 
 - Target the right audience simply by describing your segments using everyday words.
 - Generate engaging email content within seconds simply by writing key points or selecting a topic and a tone of voice matching your message.
