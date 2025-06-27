@@ -17,7 +17,7 @@ Ensuring marketing events are filled to capacity is crucial for success and retu
 
 ## How the waitlist works
 
-When new space becomes available, your waitlist reacts as follows:
+When new space becomes available, your waitlist works like this:
 
 1. The oldest existing waitlist record is identified by checking the registration date and time.
 1. Depending on whether the contact uses automatic registration, one of the following occurs:
@@ -31,19 +31,19 @@ The following sections cover how to enable waitlists for events and sessions, an
 
 ### Enable a waitlist for an event
 
-To enable or disable the waitlist for any event:
+To enable or disable the waitlist for an event:
 
-1. Open the **Events** work area, go to the events list (**Events** > **Event** > **Events**), and then open or create an event.
-1. Open the **General** tab and find the **Capacity** area.
+1. Open the **Events** work area. Go to the events list (**Events** > **Event** > **Events**), and then open or create an event.
+1. Open the **General** tab. Find the **Capacity** area.
 
-    :::image type="content" source="media/waitlist settings.png" alt-text="Event general tab settings." lightbox="media/waitlist settings.png":::
+    :::image type="content" source="media/waitlist settings.png" alt-text="Screenshot of the event General tab showing waitlist settings in the Capacity area." lightbox="media/waitlist settings.png":::
 
-1. Make the following settings:
+1. Make these settings:
   - **Maximum event capacity** (for event-level registration only): Enter the maximum number of people who can attend your event. The waitlist only takes effect after the indicated number of contacts have registered. If you're using session-level registrations, you can also set up a waitlist for each session. For more information, see [Enable a waitlist for a session](#enable-a-waitlist-for-a-session).
     - **Waitlist this event**: Set to **Yes** to enable the waitlist feature for an event.
     - **Auto-register waitlisted contacts**: Set this to *Yes* to automatically register the next contact when space becomes available. When this is set to *No*, you have to manually invite waitlisted contacts to confirm their interest. Once they confirm their interest, you can change the status reason of their registration from **Waitlisted** to **Registered**.
 
-   :::image type="content" source="media/waitlistedmanualupdate.png" alt-text="Status reason setting screen" lightbox="media/waitlistedmanualupdate.png":::
+   :::image type="content" source="media/waitlistedmanualupdate.png" alt-text="Screenshot of the status reason setting screen for updating waitlisted registrations." lightbox="media/waitlistedmanualupdate.png":::
 
 ### Enable a waitlist for a session
 
@@ -90,19 +90,19 @@ To see who is currently on the waitlist for any event or session:
 
 ### Manual management of waitlist registrations
 
-If you chose to manually register waitlisted attendees, use a new flag accessible from the Event registration. It shows whether this contact is now eligible to be invited. 
+If you chose to manually register waitlisted attendees, use the new flag accessible from the event registration page. It shows whether the contact is now eligible to be invited. 
 
 :::image type="content" source="media/invite-dropdown-setting.png" alt-text="Invite dropdown setting within general settings for event registration." lightbox="media/invite-dropdown-setting.png":::
 
 **Send invites for newly available places**
 
-When space becomes available for a waitlisted contact using manual registration, you need to inform them so they can sign up. You can automate the messaging using the standard segmentation and customer journey features of Dynamics 365 Customer Insights - Journeys. 
+When space becomes available for a waitlisted contact using manual registration, you need to inform them so they can sign up. You can automate the messaging using the segmentation and customer journey features of Customer Insights - Journeys.
 
 ## Manage waitlist-related communication 
 
-There are available triggers related to waitlisting that can help optimize your waitlist-related communication:
+There are two triggers related to waitlisting that can help optimize your waitlist-related communication:
 
-- Marketing event registration created - applicable when a new waitlist registration is created
-- Marketing registration created from waitlist - applicable when registration changes status from Waitlisted to Registered
+- **Marketing event registration created**: Applicable when a new waitlist registration is created.
+- **Marketing registration created from waitlist**: Applicable when registration changes status from "Waitlisted" to "Registered."
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
