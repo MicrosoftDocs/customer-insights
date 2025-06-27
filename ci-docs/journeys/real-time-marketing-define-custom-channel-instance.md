@@ -1,7 +1,7 @@
 ---
 title: Define an extended configuration entity for the channel instance
 description: Learn how to define an extended configuration entity for a custom channel instance in Dynamics 365 Customer Insights - Journeys.
-ms.date: 06/10/2025
+ms.date: 06/26/2025
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
@@ -71,7 +71,8 @@ For each custom channel solution, you need to:
             <RelationshipRoleType>0</RelationshipRoleType>
           </EntityRelationshipRole>
         </EntityRelationshipRoles>
-      </EntityRelationship>
+    </EntityRelationship>
+    </EntityRelationships>
     ```
       > [!IMPORTANT]
       > - You must create a file with the same name of the table you created for your custom channel under the unpacked solution in the path "Other\Relationships" and put the XML file with the relationship definition there.
