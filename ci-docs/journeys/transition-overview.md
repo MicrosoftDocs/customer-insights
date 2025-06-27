@@ -31,7 +31,7 @@ New customers who install Customer Insights - Journeys no longer see the outboun
 
 Here are some recommendations depending on your situation:
 
-| Situation                                                                        | Action                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| Situation                                                                        | Action                                                                             |
 |----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | I planned to implement outbound marketing. | You should update your plans and implement real-time journeys. Learn more: [Why should I transition to real-time journeys?](transition-faqs.md#why-should-i-transition-to-real-time-journeys)                             |
 | I evaluated the real-time journeys module and determined that I can't use it.    | Review the [transition functional areas](transition-walkthrough-functional.md) guide (it has feature-specific guidance, workarounds, and a roadmap) and the other [transition resources](transition-resources.md). Because outbound marketing is being removed, you must implement real-time journeys even if there are some current gaps for your use cases, as we're adding new features all the time. We no longer accept requests for adding outbound marketing for new customers. |
@@ -42,7 +42,7 @@ Existing customers still using outbound marketing must transition to real-time j
 
 ### What changes will I see in outbound marketing environments?
 
-We will gradually remove outbound marketing from individual environments as outbound campaigns and events end in those environments. Users will see various in-product banners and message dialogs during different phases as described here: [How and when outbound will be removed?](transition-faqs.md#how-and-when-outbound-will-be-removed).
+We will gradually remove outbound marketing from individual environments as outbound campaigns and events end in those environments. Users will see various in-product banners and message dialogs during different phases as described here: [What will happen after June 30, 2025? Will outbound marketing stop working?](transition-faqs.md#what-will-happen-after-june-30-2025-will-outbound-marketing-stop-working).
 
 Here are some recommended actions for existing customers depending on their needs:
 
@@ -54,7 +54,7 @@ Here are some recommended actions for existing customers depending on their need
 
 ### If the "Enable" link isn't available or doesn't work
 
-The enable link is shown only if there's at least one additional environment in the same tenant that has outbound *and* you have an admin role. If both of these conditions are true and you still don't see the enable link, create a request to add outbound marketing (see the next section) and add this note in the form: "Do not see enable link. Confirming that I have an admin role and there's at least one other environment with the org ID <provide ID> in this tenant with outbound marketing."
+The enable link is shown only if there's at least one additional environment in the same tenant that has outbound *and* you have an admin role. If both of these conditions are true and you still don't see the enable link, create a request to add outbound marketing (see the next section) and add this note in the form: "Do not see enable link. Confirming that I have an admin role and there's at least one other environment with the org ID `<provide ID>` in this tenant with outbound marketing."
  
 If the enable link is available but didn't work (and you have an admin role), then follow these steps:
 
