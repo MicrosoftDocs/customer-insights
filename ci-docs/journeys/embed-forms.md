@@ -17,7 +17,7 @@ ms.custom: outbound-marketing
 [!INCLUDE [marketing-trial-cta](./includes/marketing-trial-cta.md)]
 
 > [!IMPORTANT]
-> **This article only applies to [outbound marketing](user-guide.md), which will be removed from the product on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](transition-overview.md)
+> **This article only applies to [outbound marketing](user-guide.md), which is gradually being removed from Customer Insights - Journeys.** To avoid interruptions, stop using outbound marketing and transition to real-time journeys. Learn more: [Transition overview](transition-overview.md).
 
 Dynamics 365 Customer Insights - Journeys provides a complete solution for designing, publishing, and hosting landing pages on a portal created with the Power Apps portals feature that runs on your Dynamics 365 Customer Insights - Journeys instance. However, you can also create or embed forms on your own external website that submit values back to Dynamics 365 Customer Insights - Journeys. These external pages function similarly to native Dynamics 365 Customer Insights - Journeys landing pages, so they'll generate contacts or leads in your database when they're submitted. However, a few limitations apply, depending on how you implement the external forms.
 

@@ -15,7 +15,7 @@ ms.custom: outbound-marketing
 # Sync entities and track insights using Dataset configuration in outbound marketing
 
 > [!IMPORTANT]
-> **This article only applies to [outbound marketing](user-guide.md), which will be removed from the product on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](transition-overview.md)
+> **This article only applies to [outbound marketing](user-guide.md), which is gradually being removed from Customer Insights - Journeys.** To avoid interruptions, stop using outbound marketing and transition to real-time journeys. Learn more: [Transition overview](transition-overview.md).
 
 The Dataset configuration settings allow you to choose which entities to make available for use in dynamic email content, segmentation criteria, and lead scoring in Dynamics 365 Customer Insights - Journeys. Tracking insights allows you to better understand your customers and set up subscription lists and target segments for use in email marketing campaigns. The Dataset configuration settings also make dynamic field values available for use in marketing email messages as they are processed and sent.
 

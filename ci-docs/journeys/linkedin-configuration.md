@@ -15,7 +15,7 @@ ms.custom: outbound-marketing
 # Set up the LinkedIn Lead Gen integration and define lead matching
 
 > [!IMPORTANT]
-> **This article only applies to [outbound marketing](user-guide.md), which will be removed from the product on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](transition-overview.md)
+> **This article only applies to [outbound marketing](user-guide.md), which is gradually being removed from Customer Insights - Journeys.** To avoid interruptions, stop using outbound marketing and transition to real-time journeys. Learn more: [Transition overview](transition-overview.md).
 
 > [!WARNING]
 > Social posting and LinkedIn lead generation capabilities will be removed from Customer Insights - Journeys on December 2, 2024.

@@ -14,7 +14,7 @@ search.audienceType:
 # Transition personalization
 
 > [!IMPORTANT]
-> **The [outbound marketing](user-guide.md) module will be removed from Customer Insights - Journeys on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](transition-overview.md)
+> **The [outbound marketing](user-guide.md) module is gradually being removed from Customer Insights - Journeys.** To avoid interruptions, stop using outbound marketing and transition to real-time journeys. Learn more: [Transition overview](transition-overview.md).
 
 Personalization in real-time journeys is accomplished differently than in outbound marketing. The differences are to achieve greater ease of use and additional capabilities that couldn't be achieved in outbound marketing (for example, conditional content without needing to use scripting). For email, the migration feature provided in the product automatically (see [Transition emails, journeys, and assets](transition-walkthrough-journeys.md)) moves most of the personalization from outbound marketing emails to real-time journeys emails except when equivalent personalization isn't currently supported in real-time journeys. 
 

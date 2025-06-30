@@ -15,7 +15,7 @@ ms.custom: outbound-marketing
 # Analyze results to gain insights from your marketing activities
 
 > [!IMPORTANT]
-> **This article only applies to [outbound marketing](user-guide.md), which will be removed from the product on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](transition-overview.md)
+> **This article only applies to [outbound marketing](user-guide.md), which is gradually being removed from Customer Insights - Journeys.** To avoid interruptions, stop using outbound marketing and transition to real-time journeys. Learn more: [Transition overview](transition-overview.md).
 
 > [!NOTE]
 > Contact insights, lead insights, journey and channel analytics will display interaction data for the last 12 months only. However, historical interaction data is still retained in the data storage.
