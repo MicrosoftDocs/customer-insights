@@ -15,7 +15,7 @@ ms.custom: outbound-marketing
 # Event management in outbound marketing overview
 
 > [!IMPORTANT]
-> **This article only applies to [outbound marketing](user-guide.md), which will be removed from the product on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](transition-overview.md)
+> **This article only applies to [outbound marketing](user-guide.md), which is gradually being removed from Customer Insights - Journeys.** To avoid interruptions, stop using outbound marketing and transition to real-time journeys. Learn more: [Transition overview](transition-overview.md).
 
 Live events and webinars are a vital sales and marketing channel. But events and webinars can be complex to arrange, execute, and follow up on. The Dynamics 365 Customer Insights - Journeys event management feature helps you every step of the way, from initial planning and budgeting through promotion and publication, attendee registration, webinar broadcasting, final analytics, lead generation, and evaluation of ROI.
 

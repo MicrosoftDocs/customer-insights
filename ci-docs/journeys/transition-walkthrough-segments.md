@@ -14,7 +14,7 @@ search.audienceType:
 # Transition segments to real-time journeys
 
 > [!IMPORTANT]
-> **The [outbound marketing](user-guide.md) module will be removed from Customer Insights - Journeys on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](transition-overview.md)
+> **The [outbound marketing](user-guide.md) module is gradually being removed from Customer Insights - Journeys.** To avoid interruptions, stop using outbound marketing and transition to real-time journeys. Learn more: [Transition overview](transition-overview.md).
 
 You can use outbound marketing segments in real-time journeys, but it's best to rebuild the segments in real-time journeys for better performance and faster refresh cycles. Once outbound marketing is removed, segments created in outbound don't refresh and might not be available for use in real-time journeys. Migrate outbound segments using the [*Segment Migration Solution*](transition-walkthrough-segments.md#segment-migration-solution), or use [natural language and Copilot](real-time-marketing-natural-language-segments.md) to create real-time journeys segments.
 

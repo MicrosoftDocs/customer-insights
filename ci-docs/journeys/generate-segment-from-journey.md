@@ -15,7 +15,7 @@ ms.custom: outbound-marketing
 # Generate dynamic behavioral segments from customer journey results
 
 > [!IMPORTANT]
-> **This article only applies to [outbound marketing](user-guide.md), which will be removed from the product on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](transition-overview.md)
+> **This article only applies to [outbound marketing](user-guide.md), which is gradually being removed from Customer Insights - Journeys.** To avoid interruptions, stop using outbound marketing and transition to real-time journeys. Learn more: [Transition overview](transition-overview.md).
 
 After going live with a customer journey, you'll be able to [monitor the progress of contacts](insights.md#journey-insights) through the journey pipeline. You can use many of these results to automatically generate [behavioral segments](segments-interaction.md) that find all contacts that are being counted by a given result. This provides a handy way to find all contacts that did certain things in a particular journey. Because behavioral segments are dynamic, they will continue to grow as the journey processes more contacts.
 
