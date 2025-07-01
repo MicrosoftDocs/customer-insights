@@ -1,6 +1,6 @@
 ---
 title: Transition overview
-description: Transition from outbound marketing to real-time journeys in Dynamics 365 Customer Insights. Follow our guide to avoid interruptions before June 30, 2025.
+description: Transition from outbound marketing to real-time journeys in Dynamics 365 Customer Insights. Follow our guide to avoid interruptions.
 ms.date: 06/27/2025
 ms.topic: concept-article
 author: alfergus
@@ -15,7 +15,7 @@ ms.custom:
 # Transition overview
 
 > [!IMPORTANT]
-> **The [outbound marketing](user-guide.md) module will be removed from Customer Insights - Journeys on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date.
+> **The [outbound marketing](user-guide.md) module is gradually being removed from Customer Insights - Journeys.** To avoid interruptions, stop using outbound marketing and transition to real-time journeys. Learn more: [Transition overview](transition-overview.md).
 
 Dynamics 365 Customer Insights – Journeys includes two modules: outbound marketing and real-time journeys. Released in August 2021, real-time journeys offers advanced enterprise capabilities and is the default offering to new customers since August 2023.
 
@@ -27,7 +27,7 @@ You can create new trials only with real-time journeys.
 
 ## Guidance for new customers
 
-New customers who install Customer Insights - Journeys no longer see the outbound marketing module. They must use real-time journeys; they can't add outbound marketing or request to add it. 
+New customers who install Customer Insights - Journeys no longer see the outbound marketing module. They must use real-time journeys; they can't add outbound marketing or request to add it.
 
 Here are some recommendations depending on your situation:
 

@@ -15,7 +15,7 @@ ms.custom: outbound-marketing
 # Export dynamic segment members to Excel
 
 > [!IMPORTANT]
-> **This article only applies to [outbound marketing](user-guide.md), which will be removed from the product on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](transition-overview.md)
+> **This article only applies to [outbound marketing](user-guide.md), which is gradually being removed from Customer Insights - Journeys.** To avoid interruptions, stop using outbound marketing and transition to real-time journeys. Learn more: [Transition overview](transition-overview.md).
 
 Export members from a dynamic segment straight to an Excel file, no matter how large the segment is. To export dynamic segment members to Excel:
 

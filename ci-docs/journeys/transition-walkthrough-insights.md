@@ -14,7 +14,7 @@ search.audienceType:
 # Transition insights and reports
 
 > [!IMPORTANT]
-> **The [outbound marketing](user-guide.md) module will be removed from Customer Insights - Journeys on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. For more information, see [Transition overview](transition-overview.md)
+> **The [outbound marketing](user-guide.md) module is gradually being removed from Customer Insights - Journeys.** To avoid interruptions, stop using outbound marketing and transition to real-time journeys. Learn more: [Transition overview](transition-overview.md).
 
 ## Comparison of outbound marketing and real-time journeys insights and reports
 

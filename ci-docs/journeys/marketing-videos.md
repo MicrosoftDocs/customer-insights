@@ -15,7 +15,7 @@ ms.custom: outbound-marketing
 # Video overviews and instructions for Dynamics 365 Customer Insights - Journeys
 
 > [!IMPORTANT]
-> **This article only applies to [outbound marketing](user-guide.md), which will be removed from the product on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](transition-overview.md)
+> **This article only applies to [outbound marketing](user-guide.md), which is gradually being removed from Customer Insights - Journeys.** To avoid interruptions, stop using outbound marketing and transition to real-time journeys. Learn more: [Transition overview](transition-overview.md).
 
 If you are new to Dynamics 365 Customer Insights - Journeys, then these videos will help you gain a quick understanding of the system and how to work with some of its most-used features.
 
