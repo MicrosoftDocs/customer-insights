@@ -29,7 +29,7 @@ To view email insights, go to **Real-time journeys** > **Email** > **Insights**.
 
 :::image type="content" source="media/analytics-email-insights.png" alt-text="Screenshot of the email insights dashboard showing delivery and engagement metrics." lightbox="media/analytics-email-insights.png":::
 
-## Device type and user agents' analysis
+## Device type and user agent analysis
 
 Learn about the different device types, email clients, operating systems, and browsers your customers use to read your emails. Design your emails to match the devices and user agents your audience uses most, and make sure your messages are easy to read.
 
@@ -52,7 +52,8 @@ User agents are labeled as:
 Get valuable insights into your email's URL engagement and make data-driven decisions to improve your email marketing campaigns with link insights. With link insights, you see how each link in your email campaign performs and identify the top-performing links by total clicks, unique clicks, and click rate. Group your links by URL or link alias for more clarity. Learn more: [Edit email components in a live journey](edit-email-in-live-journey.md)
 
 > [!NOTE]
-> Link insights shows data for emails with links and journeys created after September 2024.
+> - The click map feature is dependant on link insights.
+> - Link insights are only supported for emails and journeys created after September 2024. However, even if both your journey and the email you're analyzing were created after that date, link insights aren't generated if the journey includes any older emails (created before September 2024). This is because the presence of legacy emails causes the system to treat the entire journey as legacy, which disables link tracking and heatmap functionality, even for the newer emails.
 
 ## Click map
 
@@ -74,7 +75,7 @@ Use click map insights to optimize your content placement, layout, and design to
 > - When you add older emails to your journey, to start showing the click map, use [live editing](edit-email-in-live-journey.md) and update the email. The links in your email are updated and tracked for new interactions.
 > - The click map might have incomplete data or miss some data depending on when your journey and email content was created and running, especially if it was active before October 2024.
 
-## Variation insights (Conditional content)
+## Variation insights (conditional content)
 
 Get insights into key metrics like unique opens, unique clicks, delivered messages, open rate, click rate, spam messages, and unsubscriptions for each variant. Use these insights to see what resonates with your audience. You see variation insights only if an email has conditional content.
 

@@ -15,7 +15,7 @@ ms.custom: outbound-marketing
 # Create and manage recurring events in outbound marketing
 
 > [!IMPORTANT]
-> **This article only applies to [outbound marketing](user-guide.md), which will be removed from the product on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](transition-overview.md)
+> **This article only applies to [outbound marketing](user-guide.md), which is gradually being removed from Customer Insights - Journeys.** To avoid interruptions, stop using outbound marketing and transition to real-time journeys. Learn more: [Transition overview](transition-overview.md).
 
 If you host an event that occurs regularly, such as a monthly partner call, annual developers conference, or quarterly earnings presentation, then you might benefit by setting up a recurring event. Recurring events provide many benefits in situations like these, including:
 

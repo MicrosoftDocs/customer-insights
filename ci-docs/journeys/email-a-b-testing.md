@@ -15,7 +15,7 @@ ms.custom: outbound-marketing
 # Design and run A/B tests on your email designs
 
 > [!IMPORTANT]
-> **This article only applies to [outbound marketing](user-guide.md), which will be removed from the product on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](transition-overview.md)
+> **This article only applies to [outbound marketing](user-guide.md), which is gradually being removed from Customer Insights - Journeys.** To avoid interruptions, stop using outbound marketing and transition to real-time journeys. Learn more: [Transition overview](transition-overview.md).
 
 Use email A/B testing to find out which of two similar designs is likely to be the most successful and then send the winning design to the remaining audience automatically. You start by creating a control design (the "A" version), and then using that as the basis to create a "B" version of the design in which you have modified a small part of it (such as the subject or an image). Finally, run the test as part of a customer journey.
 
