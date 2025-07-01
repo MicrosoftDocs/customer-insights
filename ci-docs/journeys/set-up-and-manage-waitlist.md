@@ -1,7 +1,7 @@
 ---
-title: Set up and manage an event waitlist 
+title: Set up and manage an event waitlist
 description: Learn how to register interested attendees on a waitlist in Dynamics 365 Customer Insights - Journeys.
-ms.date: 06/25/2025
+ms.date: 06/26/2025
 ms.topic: how-to
 author: terezakirk
 ms.author: colinbirkett
