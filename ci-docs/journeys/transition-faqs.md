@@ -1,7 +1,7 @@
 ---
 title: Real-time journeys transition FAQs
 description: Discover how to transition from outbound marketing to real-time journeys in Customer Insights - Journeys. Get answers to frequently asked questions.
-ms.date: 06/27/2025
+ms.date: 07/01/2025
 ms.topic: faq
 author: alfergus
 ms.author: alfergus
@@ -51,7 +51,7 @@ To reduce and eventually end outbound  marketing usage, we're applying a phased 
 - **Phase 2 - Existing campaigns and events work; new ones *can't* be created**: Users are no longer able to dismiss the dialog and therefore can't create new outbound marketing campaigns or events. We have not yet set a date for this phase; we'll announce it soon.
 - **Phase 3 - Existing campaigns and events end, outbound marketing is hidden**: When existing campaigns and events are complete, we'll automatically hide outbound marketing from the user interface. After a few weeks, we'll remove outbound marketing.
 
-We'll continue to communicate through the admin center and in-product messaging to keep you updated. This phased approach may be revised in the future (for example, we may set a common date to remove outbound marketing from all environments, even if they have active outbound marketing campaigns or events).
+We're currently in Phase 1. This phased approach may be revised in the future (for example, we may set a common date to remove outbound marketing from all environments, even if they have active outbound marketing campaigns or events). We'll continue to communicate through the admin center and in-product messaging to keep you informed. 
 
 ## I have an approved extension for outbound marketing. What can I expect?
 
