@@ -254,6 +254,7 @@ After Customer Insights - Journeys features are deployed, several service users 
 | D365 Personalization | db13e196-bc9c-42fe-9c55-12558c3a16fa | Design of personalized messages |
 | D365 Sms Channel | bd3e2b66-87c7-4fb7-90c3-de39038fbb14 | Text messages sending |
 | D365 Workflow | ba069707-8fa6-41af-b08d-2d01a0d731e5 | Customer journey execution |
+| D365 Landing Forms | a5e884b3-2cac-4051-8cf3-f0d4df550afd | Marketing Forms scenarios
 
 ### Customer Insights - Journeys service user roles
 
