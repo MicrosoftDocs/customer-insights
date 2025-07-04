@@ -1,10 +1,10 @@
 ---
 title: Manage user accounts, user licenses, and security roles
 description: How to manage user accounts, add licenses to users, and assign security roles in Dynamics 365 Customer Insights - Journeys.
-ms.date: 04/03/2024
+ms.date: 07/04/2025
 ms.topic: how-to
 author: alfergus
-ms.author: alfergus
+ms.author: colinbirkett
 search.audienceType: 
   - admin
   - customizer
@@ -39,7 +39,7 @@ Any user who already has a license for any model-driven app in Dynamics 365 can 
 ### Grant access to users without a Dynamics 365 license
 
 > [!IMPORTANT]
-> Customer Insights - Journeys is a tenant-level license; it does not require explicit seat assignment for users to access the application. To sync users who use your organization's [Microsoft Entra ID](/azure/active-directory/fundamentals/whatis) to the Customer Insights - Journeys app, give them URL for the application environment. When they attempt to access the environment, their identity will be sync'd to Dynamics 365 and a Dynamics 365 user will be created for them and assigned the Marketer role.
+> Customer Insights - Journeys is a tenant-level license; it doesn't require explicit seat assignment for users to access the application. To sync users who use your organization's [Microsoft Entra ID](/azure/active-directory/fundamentals/whatis) to the Customer Insights - Journeys app, give them URL for the application environment. When they attempt to access the environment, their identity will be synched to Dynamics 365 and a Dynamics 365 user will be created for them and assigned the Marketer role.
 >
 > If you're having trouble granting users access, you can force the user assignment with a free Customer Insights - Journeys user license, as detailed in the steps below.
 
@@ -49,7 +49,7 @@ For Microsoft 365 users that don't have a Dynamics 365 license, you can "purchas
 > If you have a [self-service Customer Insights - Journeys license](direct-purchase.md), your tenant admin must assign users to your license before you can assign them roles. Contact your tenant admin and have them add users to your license.
 
 > [!WARNING]
-> The free Customer Insights (formerly Marketing) user license is intended to only allow user access to the Customer Insights - Journeys in an edge case. It's not intended to allow unlimited user access to custom applications for Sales, Service, or other Dynamics 365 application scenarios. It also does not include any additional entitlements to Dataverse capacity. 
+> The free Customer Insights (formerly Marketing) user license is intended to only allow user access to the Customer Insights - Journeys in an edge case. It's not intended to allow unlimited user access to custom applications for Sales, Service, or other Dynamics 365 application scenarios. It also doesn't include any additional entitlements to Dataverse capacity. 
 
 In some edge cases, if the automatic user sync doesn't work, you can use a $0 User License to force the sync to happen. This is an edge case and only a work-around if the automatic sync isn't working for some reason. 
 

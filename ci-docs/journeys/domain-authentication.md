@@ -1,10 +1,10 @@
 ---
 title: Authenticate your domains
 description: Learn how to authenticate your domains in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/18/2023
+ms.date: 07/04/2025
 ms.topic: how-to
 author: alfergus
-ms.author: alfergus
+ms.author: colinbirkett
 search.audienceType: 
   - admin
   - customizer
@@ -41,23 +41,23 @@ Set up as many authenticated domains as you need to cover all the from-addresses
 - When you're authenticating a domain to support prefilled forms, you must authenticate each subdomain individually. So if you have forms on contoso.com, www.contoso.com, and events.contoso.com, then you must set up a separate domain-authentication record for each of them and specify the full subdomain each time.
 
 > [!IMPORTANT]
-> To use form pre-filling, the page hosting the form must be served over HTTPS (not HTTP).
+> To use form prefilling, the page hosting the form must be served over HTTPS (not HTTP).
 >
-> Form pre-filling is **only** supported in outbound marketing forms.
+> Form prefilling is **only** supported in outbound marketing forms.
 
 > [!NOTE]
-> All new instances and trials automatically authenticate their instance domain with DKIM and SPF and set that domain as the default sending domain for your instance. Therefore, you'll usually see at least one authenticated domain already set up for all new instances. It should not be used for production email sending purposes, as it is designed only for initial testing purposes.  Make sure to authenticate your own domain before you go live. 
+> All new instances and trials automatically authenticate their instance domain with DKIM and SPF and set that domain as the default sending domain for your instance. Therefore, you'll usually see at least one authenticated domain already set up for all new instances. It should not be used for production email sending purposes, as it's designed only for initial testing purposes. Make sure to authenticate your own domain before you go live. 
 
 ## Prevent sending emails from unauthorized domains
 
 To benefit from domain authentication, the from-address for each message you send must show a domain that you've previously authenticated. Microsoft is dedicated to helping our customers achieve maximum email deliverability, so we've added a few features to help make sure you don't overlook or inadvertently work around your domain setup:
 - The error check for email messages will show an error if you try to go live with an email message that has a from-address not associated with any of your domains.
-- We recommend that you [set a default sending domain](mkt-settings-default-marketing.md) that is your authenticated domain. When this is set, then the from-address for all your email messages will automatically be adjusted to show your selected default domain (if it initially uses a non-authenticated domain) each time you create a new email message or change the user shown in the **From** field. More information: [Default marketing settings](mkt-settings-default-marketing.md) and [Set sender and receiver options](email-properties.md#set-sender-and-receiver-options)
+- We recommend that you [set a default sending domain](mkt-settings-default-marketing.md) that is your authenticated domain. When this is set, then the from-address for all your email messages will automatically be adjusted to show your selected default domain (if it initially uses a nonauthenticated domain) each time you create a new email message or change the user shown in the **From** field. More information: [Default marketing settings](mkt-settings-default-marketing.md) and [Set sender and receiver options](email-properties.md#set-sender-and-receiver-options)
 - All new instances and trials will automatically authenticate the default instance domain with SPF/DKIM enabled and set that domain as the default sending domain for your instance.
 
 ## Authenticate a domain
 
-To set up an authenticated domain in Dynamics 365 Customer Insights - Journeys you'll need to access your domain’s DNS control panel to be able to add new records as you go through the domain authentication process.
+To set up an authenticated domain in Dynamics 365 Customer Insights - Journeys you need to access your domain’s DNS control panel to be able to add new records as you go through the domain authentication process.
 
 To authenticate a domain:
 - Go to **Settings > Email marketing > Domain authentication**. A list of existing authenticated domains opens.  
@@ -65,7 +65,7 @@ To authenticate a domain:
 > [!div class="mx-imgBorder"]
 > ![active domains](media/active-domains.png "Active domains")
 
-- Select **New** on the command bar to add a new domain. The wizard guides you through the whole domain authentication process step by step. On the first step you'll need to enter the domain name that you want to authenticate and select if it will be used for forms hosting and email sending capabilities.
+- Select **New** on the command bar to add a new domain. The wizard guides you through the whole domain authentication process step by step. On the first step, you need to enter the domain name that you want to authenticate and select if it will be used for forms hosting and email sending capabilities.
 
 > [!div class="mx-imgBorder"]
 > ![configure new domain](media/configure-new-domain.png "Configure new domain")
@@ -88,7 +88,7 @@ To authenticate a domain:
 > [!div class="mx-imgBorder"]
 > ![envelope from](media/envelope-from.png "Envelope from")
 
-- On the last step you'll be able to review and check your published DNS records. After your checkup is finished, select **Verify**. The system will check and validate all published DNS records and will show you the result summary on the dashboard. If there’s something wrong with your DNS records, you'll see which exact record fails on the dashboard.
+- On the last step, you are able to review and check your published DNS records. After your checkup is finished, select **Verify**. The system will check and validate all published DNS records and will show you the result summary on the dashboard. If there’s something wrong with your DNS records, you see which exact record fails on the dashboard.
 
 Here’s an example of an error message that states that TXT Ownership key wasn't found published in the DNS, which means either the record wasn't yet published, or it has some mistake/typo.
 
@@ -102,8 +102,8 @@ After everything is finished, you'll see green checkmarks next to each DNS recor
 
 > [!NOTE]
 > You can authenticate more than one domain or subdomain of your choice.  
-www.yourdomain.com and yourdomain.com are 2 different domains and should be added separately. 
-Technically it is possible to add www.yourdomain.com to use it for sending emails, but we do not recommend doing that as the From email address would look like markreting@www.yourdomain.com instead of marketing@yourdomain.com.
+www.yourdomain.com and yourdomain.com are two different domains and should be added separately. 
+Technically it's possible to add www.yourdomain.com to use it for sending emails, but we don't recommend doing that as the From email address would look like markreting@www.yourdomain.com instead of marketing@yourdomain.com.
 
 > There are known issues when it is not possible to add a TXT record to a domain or subdomain due to DNS limitations, as it already has existing working CNAME record published.
 >
@@ -115,7 +115,7 @@ Technically it is possible to add www.yourdomain.com to use it for sending email
 
 ### Updating a domain's SPF record
 
-The domain authentication wizard described above provides all the configuration needed according the RFC standards. However, there are a few email providers that don't follow the RFCs and validate received emails by verifying the From address with the SPF record. To prevent email bounces from these email providers, you can update the SPF record in your domain to include the Customer Insights - Journeys domain. To do this, update the existing SPF record by adding `include: <dynamicssendingdomain>`, where `<dynamicssendingdomain>` is the value as obtained in the registration for the Envelope-From (*ind.pb-dynmktga.com* in the screenshot shown above).
+The domain authentication wizard described above provides all the configuration needed according to the RFC standards. However, there are a few email providers that don't follow the RFCs and validate received emails by verifying the From address with the SPF record. To prevent email bounces from these email providers, you can update the SPF record in your domain to include the Customer Insights - Journeys domain. To do this, update the existing SPF record by adding `include: <dynamicssendingdomain>`, where `<dynamicssendingdomain>` is the value as obtained in the registration for the Envelope-From (*ind.pb-dynmktga.com* in the screenshot shown above).
 
 ## Domain authentication for modernized business units
 
@@ -127,7 +127,7 @@ To authenticate a domain for a business unit:
 
 1. Go to Settings > Domains > and select “**New**” button. 
 1. The domain authentication wizard pops up with the following items: 
-    1. Business unit – Lookup field to select the needed Business Unit. You’ll see only the business units that you're authorized to access. 
+    1. Business unit – Lookup field to select the needed Business Unit. You see only the business units that you're authorized to access. 
     1. Enable across organizations – Checkbox that: 
         1. If selected, your domain belongs to the selected business unit, and all other business units can access and utilize. 
         1. If not selected, your domain belongs to the selected business unit only, and no other business unit can access. 
