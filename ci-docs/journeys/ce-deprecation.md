@@ -24,7 +24,7 @@ In October 2019, Microsoft deprecated the *Dynamics 365 for Customer Engagement*
 > [!NOTE]
 > Under the Dynamics 365 for Customer Engagement SKU/license plan, customers were allowed to use Marketing if they had at least 10 seats of either the CRM or ERP applications.
 
-As of 2022, Dynamics 365 for Customer Engagement licenses purchased prior to the deprecation began expiring. Licenses for the current customer engagement apps may be purchased individually. Learn more: [Dynamics 365 pricing](/dynamics365/licensing/update).
+Starting in 2022, Dynamics 365 for Customer Engagement licenses purchased before deprecation began to expire. Licenses for the current customer engagement apps may be purchased individually. Learn more: [Dynamics 365 pricing](/dynamics365/licensing/update).
 
 You can learn about migrating your data to a new Customer Insights - Journeys instance in the [Tenant to tenant migration for Dynamics 365 Customer Insights - Journeys](tenant-to-tenant.md) article.
 
