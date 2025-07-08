@@ -1,7 +1,7 @@
 ---
 title: Manage user accounts, user licenses, and security roles
 description: How to manage user accounts, add licenses to users, and assign security roles in Dynamics 365 Customer Insights - Journeys.
-ms.date: 07/04/2025
+ms.date: 07/08/2025
 ms.topic: how-to
 author: alfergus
 ms.author: colinbirkett
@@ -21,7 +21,7 @@ Read this article to learn how to work with user accounts, user licenses, and se
 
 ## User access and security groups
 
-When creating new environments in the Power Platform Admin Center, if no security group is selected, all Microsoft Entra users have default access to the environment through an automatic user sync. To restrict access to an environment when creating it in the Power Platform Admin Center, select a security group for the environment. Users must be members of the security group to access the environment. If you've already created environments and want to restrict access, create a security group, select the environment in the Power Platform Admin Center, then select **Edit** in the upper right corner. In the flyout, select the security group and apply it to the environment. Learn more: [Control user access to environments: security groups and licenses](/power-platform/admin/control-user-access)
+When you create new environments in the Power Platform Admin Center, if no security group is selected, all Microsoft Entra users have default access to the environment through an automatic user sync. To restrict access to an environment when creating it in the Power Platform Admin Center, select a security group for the environment. Users must be members of the security group to access the environment. If you created environments and want to restrict access, create a security group, select the environment in the Power Platform Admin Center, then select **Edit** in the upper right corner. In the flyout, select the security group and apply it to the environment. Learn more: [Control user access to environments: security groups and licenses](/power-platform/admin/control-user-access)
 
 ## Create user accounts and assign licenses
 
@@ -39,7 +39,7 @@ Any user who already has a license for any model-driven app in Dynamics 365 can 
 ### Grant access to users without a Dynamics 365 license
 
 > [!IMPORTANT]
-> Customer Insights - Journeys is a tenant-level license; it doesn't require explicit seat assignment for users to access the application. To sync users who use your organization's [Microsoft Entra ID](/azure/active-directory/fundamentals/whatis) to the Customer Insights - Journeys app, give them URL for the application environment. When they attempt to access the environment, their identity is synched to Dynamics 365 and a Dynamics 365 user will be created for them and assigned the Marketer role.
+> Customer Insights - Journeys is a tenant-level license; it doesn't require explicit seat assignment for users to access the application. To sync users who use your organization's [Microsoft Entra ID](/azure/active-directory/fundamentals/whatis) to the Customer Insights - Journeys app, give them URL for the application environment. When they attempt to access the environment, their identity is synched to Dynamics 365 and a Dynamics 365 user is created for them and assigned the Marketer role.
 >
 > If you're having trouble granting users access, you can force the user assignment with a free Customer Insights - Journeys user license, as detailed in the steps below.
 
@@ -49,7 +49,7 @@ For Microsoft 365 users that don't have a Dynamics 365 license, you can "purchas
 > If you have a [self-service Customer Insights - Journeys license](direct-purchase.md), your tenant admin must assign users to your license before you can assign them roles. Contact your tenant admin and have them add users to your license.
 
 > [!WARNING]
-> The free Customer Insights (formerly Marketing) user license is intended to only allow user access to the Customer Insights - Journeys in an edge case. It's not intended to allow unlimited user access to custom applications for Sales, Service, or other Dynamics 365 application scenarios. It also doesn't include any additional entitlements to Dataverse capacity. 
+> The free Customer Insights (formerly Marketing) user license is intended to only allow user access to the Customer Insights - Journeys in an edge case. It's not intended to allow unlimited user access to custom applications for Sales, Service, or other Dynamics 365 application scenarios. It also doesn't include any other entitlements to Dataverse capacity.
 
 In some edge cases, if the automatic user sync doesn't work, you can use a $0 User License to force the sync to happen. This is an edge case and only a work-around if the automatic sync isn't working for some reason. 
 
@@ -92,7 +92,7 @@ You can assign more than one security role to a user. The effect of multiple sec
 Administrators can also create teams, apply security roles to those teams, and add users to each team. All users that belong to a team inherit the security roles applied to that team for as long as they remain a member, and lose those roles as soon as they leave the team (other than roles also granted to them personally or by other teams they are on).
 
 > [!IMPORTANT]
-> You must assign at least one security role to every user. The app doesn't allow access to any user who does not have at least one security role.
+> You must assign at least one security role to every user. The app doesn't allow access to any user who doesn't have at least one security role.
 
 To apply security roles to users, and to customize each role, do the following:
 
@@ -100,7 +100,7 @@ To apply security roles to users, and to customize each role, do the following:
 1. Select **Environments** on the left navigation and choose the applicable environment.
 1. Open the **Settings** menu ![The Settings menu icon.](media/settings-icon.png "The Settings menu icon") at the top of the page, then under **Users + permissions**, select **Users**.
 1. Select a user and choose **Manage Security Role** from the menu bar at the top of the page.
-1. A pane titled "Manage security roles" will open on the right side of the page. Select the roles you'd like to apply to the user.
+1. A pane titled "Manage security roles" opens on the right side of the page. Select the roles you'd like to apply to the user.
 1. Make sure to select the **Save** button before closing the pane.
 
 <a name="inspect-roles"></a>
@@ -176,7 +176,7 @@ In addition to the entity-level security set directly on each security role, you
 - *Form-level security* restricts access to specific forms, so even if a user has a security role that grants access to a given entity (such as customer journeys), that user might not be able to access some of the forms of that entity (such as the insights) unless they have one of the additional roles required by that form. Most of the entities added by Customer Insights - Journeys don't include any form-level security out of the box, so users that can access these entities can also access all the forms that belong to them, though some exceptions exist (including insights forms for some entities).
 - *Field-level security* applies extra restrictions on specific fields, so even if a user can view a given form, some fields on that form could be hidden if they require an additional field security profile. Field security profiles are similar to, but separate from, the entity-level security roles otherwise described in this article.
 
-You don't see form or field settings when you edit the security role, so you must manage these separately.
+You don't see form or field settings when you edit the security role, so you must manage these settings separately.
 
 Form and field level security are concepts shared by all model-driven apps in Dynamics 365. For more information about how to work with them, see [Field-level security](/power-platform/admin/field-level-security) and [Assign security roles to a form](/power-platform/admin/assign-security-roles-form).
 
@@ -209,8 +209,8 @@ To see the permissions required for each role, see [Permissions for out-of-the-b
 | Security&nbsp;role | Who&nbsp;needs&nbsp;it | Access&nbsp;granted |
 |---------------|--------------|----------------|
 | Event Administrator | Managers who plan events and administer the event-management features. | All entities in the **Events** work area, and all event-related settings in the **Settings** work area. These users can create, read, write, delete, assign, and share records owned by themselves and other users in the same business unit. |
-| Event Planner | All users involved with event planning. | All entities in the **Events** work area. Users with this role can create, read, write, and share these records with other users in the same business unit, but can only delete and assign the records that they own. |
-| EventManagement S2S Inbound | For internal use only, don't delete or modify | This is an internal security role used by the solution to perform internal tasks, such as syncing data. Don't delete or modify this role. |
+| Event Planner | All users involved with event planning. | All entities in the **Events** work area. Users with this role can create, read, write, and share these records with other users in the same business unit. However, they can only delete and assign the records that they own. |
+| EventManagement S2S Inbound | For internal use only, don't delete or modify | This internal security role is used by the solution to perform internal tasks, such as syncing data. Don't delete or modify this role. |
 
 ### LinkedIn Lead Gen security roles
 
@@ -218,7 +218,7 @@ To see the permissions required for each role, see [Permissions for out-of-the-b
 |---------------|--------------|----------------|
 | LinkedIn Lead Gen Forms Administrator | Administrators who are managing your organization's integration with LinkedIn | Users with this role can configure lead matching strategies, LinkedIn field mappings, and solution settings for the Dynamics 365 Connector for LinkedIn Lead Gen Forms. |
 | LinkedIn Lead Gen Forms Salesperson | Users who need to sync their profiles and view leads generated from LinkedIn, but who don't need to configure the connection | These users can authorize LinkedIn user profiles to sync data to Dynamics 365, and view details about the synced submissions. |
-| LinkedIn LeadGen S2SInbound | For internal use only, don't delete or modify | This is an internal security role used by the solution to perform internal tasks, such as syncing data. Don't delete or modify this role. |
+| LinkedIn LeadGen S2SInbound | For internal use only, don't delete or modify | This internal security role is used by the solution to perform internal tasks, such as syncing data. Don't delete or modify this role. |
 
 ### Surveys security roles
 
