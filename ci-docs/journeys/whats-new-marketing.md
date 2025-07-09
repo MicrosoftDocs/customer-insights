@@ -1,7 +1,7 @@
 ---
 title: New and upcoming features
 description: Discover the latest features, improvements, and bug fixes in Dynamics 365 Customer Insights - Journeys. Stay updated with our monthly release notes.
-ms.date: 07/01/2025
+ms.date: 07/09/2025
 ms.topic: whats-new
 author: colinbirkett
 ms.author: colinbirkett
@@ -24,6 +24,20 @@ We're excited to announce our newest updates! This article summarizes early acce
 Customer Insights - Journeys updates are [pushed to customers automatically](https://cloudblogs.microsoft.com/dynamics365/it/2020/04/27/automatic-update-policy-for-dynamics-365-marketing/). Solutions are available for early validations. To manually update your instances, follow the steps in [Keep Customer Insights - Journeys up to date](apply-updates.md).
 
 To submit and vote on **feature requests** and **product suggestions**, go to the [Dynamics 365 Application Ideas portal](https://experience.dynamics.com/ideas/categories/?forum=dfa5b83d-9e4c-e811-a956-000d3a1bef07&forumName=Dynamics%20365%20Marketing).
+
+### August 2025 update
+
+| App              | GA release      |
+|------------------|-----------------|
+| Customer Insights - Journeys       |   |
+
+#### General availability
+
+#### Public preview
+
+#### Monthly enhancements
+
+#### New blogs and scenario docs
 
 ### July 2025 update
 
