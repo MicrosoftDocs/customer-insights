@@ -7,7 +7,7 @@ author: alfergus
 ms.author: alfergus
 search.audienceType: 
   - developer
-ms.custom: outbound-marketing
+ms.custom: outbound-marketing, evergreen
 ---
 
 # Export Dynamics 365 Customer Voice survey responses to Microsoft Excel in outbound marketing

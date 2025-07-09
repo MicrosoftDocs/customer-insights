@@ -10,7 +10,7 @@ search.audienceType:
   - admin
   - customizer
   - enduser
-ms.custom: outbound-marketing
+ms.custom: outbound-marketing, evergreen
 ---
 
 # Email marketing analytics report for Dynamics 365 Customer Insights - Journeys
