@@ -1,10 +1,10 @@
 ---
 title: Improve targeting using interaction data in segments
 description: Learn how to improve targeting by using interaction data in segments in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/23/2023
+ms.date: 07/11/2025
 ms.topic: how-to
 author: alfergus
-ms.author: alfergus
+ms.author: colinbirkett
 search.audienceType: 
   - admin
   - customizer
@@ -42,4 +42,4 @@ Let’s say you want to create a segment containing all contacts who opened an e
     > ![select your desired email to look for its interaction details](media/real-time-marketing-select-your-email.png "select your desired email to look for its interaction details") 
 
 > [!NOTE]
-> The members preview is not available with behavioral segments.
+> The members preview isn't available with behavioral segments.
