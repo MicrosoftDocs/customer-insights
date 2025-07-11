@@ -422,7 +422,7 @@
         href: invite-register-house-event-attendees.md
       - name: Create an event registration experience
         href: event-registration-experience.md
-      - name: Create unmapped fields for registration forms (preview)
+      - name: Create unmapped fields for registration forms
         href: create-unmapped-fields-registration-forms.md
       - name: Build an event registration portal with Power Pages (preview)
         href: event-portal-template.md
@@ -450,7 +450,7 @@
       href: real-time-marketing-deploy-pages.md
     - name: Prefill values for forms and event registration
       href: real-time-marketing-form-prefill.md
-    - name: Create unmapped fields for marketing forms (preview)
+    - name: Create unmapped fields for marketing forms
       href: real-time-marketing-forms-custom-fields.md
     - name: Create unmapped fields for registration forms (preview)
       href: create-unmapped-fields-registration-forms.md
@@ -596,7 +596,7 @@
       href: developer/extend-ui.md
   - name: Extend and customize consent
     href: developer/extend-consent.md
-  - name: Using the events API in real-time journeys (preview)
+  - name: Using the events API in real-time journeys
     href: developer/using-rtm-events-api.md
   - name: Create a Customer Insights - Journeys segment using the Web API
     href: real-time-marketing-api-segment.md
