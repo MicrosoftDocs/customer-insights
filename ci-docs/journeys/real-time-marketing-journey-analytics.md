@@ -14,11 +14,8 @@ search.audienceType:
 
 It’s critical to understand exactly what happened to each customer who enters and exits your real-time journeys. The analytics provided by each journey answer questions like, "How many people started this journey?", "How many people received email from this journey?", and "What paths are people taking through this journey?". To monitor journey progress while a journey is running, you can see the progress of customers through the journey in real time. For further analysis, you can also export the list of people who take each path or action in the journey.
 
-## Analyze customer inflow and exit at every step in a journey (preview)
+## Analyze customer inflow and exit at every step in a journey
 
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note.md)]
 
 Improved journey analytics increase confidence in the processing of every step in your journey through improved metrics and the increased ability to export data. Individual journey analytics now communicate the number of people who entered each journey step, the number of people who exit the journey at each step, and why people exit the journey.
 
@@ -27,25 +24,23 @@ For example, journeys that use exit or exclusion segments show why there are few
 > [!NOTE]
 > This feature is under active development. In the future, additional analytics capabilities will be added and capabilities for each journey action. At this time, the Entry action step has been updated. The Entry step now shows which people exited the journey and why. These same capabilities will be brought to every action in the journey between now and when this feature becomes generally available.
 
-### Enable tile entry and exit analytics preview
+### Enable tile entry and exit analytics
 
 To use the journey copilot, an administrator needs to enable the feature switch. To enable the switch:
 
 1. Go to **Settings** > **Overview** > **Feature switches** > **Journey**.
-1. Enable the "Tile entry and drop-off analytics (preview)" feature switch toggle, then select **Save** in the upper right.
+1. Enable the "Tile entry and drop-off analytics" feature switch toggle, then select **Save** in the upper right.
 
     :::image type="content" source="media/real-time-tile-analytics-feature-switch.png" alt-text="Enable entry and exit analytics feature":::
 
-> [!NOTE]
-> The tile entry and exit analytics require the May 2024 update of Customer Insights - Journeys to be installed. The preview feature will be made available to all customers before the end of May 2024.
 
 > [!IMPORTANT]
-> Journeys published after the preview feature switch is turned on will have the new journey analytics metrics enabled by this feature. Journeys published before the feature is enabled will not have the additional metrics.
+> Journeys published after the feature went live will have the new journey analytics metrics enabled by this feature. Journeys published before the feature is enabled will not have the additional metrics.
 
 ## Understanding journey analytics
 
 > [!IMPORTANT]
-> This section applies to the new journey analytics enabled by the tile entry and exit analytics preview.
+> This section applies to the new journey analytics enabled by the tile entry and exit analytics.
 
 After a journey is published, analytics are available for each action (step or tile) of the journey. To see the analytics, open a published journey. Analytics are available for journeys that have *Live*, *Completed*, *Completing*, and *Stopped* statuses. Analytics are available for every action in the journey.
 

@@ -1,10 +1,10 @@
 ---
 title: Create a trigger-based journey
 description: Learn how to create a trigger-based journey in Dynamics 365 Customer Insights - Journeys.
-ms.date: 05/23/2025
+ms.date: 08/23/2023
 ms.topic: article
 author: alfergus
-ms.author: colinbirkett
+ms.author: alfergus
 search.audienceType: 
   - admin
   - customizer
@@ -13,13 +13,17 @@ search.audienceType:
 
 # Create a trigger-based journey
 
-Trigger-based customer journeys enable you to react to customers’ actions in real time. Journeys can be triggered based on real-world interactions like walking into a store and connecting to Wi-Fi. Journeys can also be triggered by virtual interactions such as visiting a shopping website. The real-time nature of the journey ensures that you can respond to customers immediately and convert their expression of interest into a sale. 
+Trigger-based customer journeys enable you to react to customers’ actions in real time. Journeys can be triggered based on real-world interactions like walking into a store and connecting to Wi-Fi. Journeys can also be triggered by virtual interactions such as visiting a shopping website. The real-time nature of the journey ensures that you can respond to customers and convert their expression of interest into a sale. 
 
-Trigger-based journeys are best for instances triggered by your customers, such as selecting a website link, submitting a form, visiting a store, or making a purchase. For business events such as the "billing cycle is ready" or "the lottery results are available," you should use a segment-based journey. For segment-based journeys, confirm there's an attribute on the contact or lead that's updated to ensure they enter the segment and then the journey. If you use a trigger to start a journey for a business event, it raises the trigger for every contact or lead. This can result in you exceeding the fair use policy for triggers.
+Trigger based journeys are best for triggers that are initiated by your end customers such as clicking on a website link, submitting a form, visiting a store, or making a purchase. These are events that are mostly spread out in time vs. a moment in time where a large group of people need to be contacted all at once. For business events, such as the billing cycle is ready or the lottery results are available, you should use a segment based journey and ensure that there is an attribute on the Contact or Lead which is updated to ensure they enter the segment and then the journey. If you use a trigger to start a journey for a business event, it will raise the trigger for every Contact or Lead and likely exceed the fair use policy for triggers.
+
+If you need to initiate a journey based on a business trigger that launches a journey for a large group of customers, ([read the blog](https://community.dynamics.com/blogs/post/?postid=2928a2b3-684b-f011-877a-7c1e52027a5f)) describing the best practices to accomplish this. 
 
 ## Creating a trigger-based journey for abandoned cart reminders
 
 To illustrate the capabilities of trigger-based journeys, we'll create a personalized, multichannel, trigger-based journey that can be used to bring prospective buyers with abandoned carts back to your website to complete their purchase.  
+
+## Prerequisites
 
 ### Create custom triggers
 
@@ -31,7 +35,7 @@ To illustrate the capabilities of trigger-based journeys, we'll create a persona
 
 We'll use three touchpoints across various channels to remind customers to complete their purchase:
 
-- **Initial email reminder**: When a customer abandons a cart, they get an email to remind them to complete their purchase.  
+- **Initial email reminder**: When a customer abandons a cart, they'll get an email to remind them to complete their purchase.  
 - **Second text reminder**: If the customer hasn't opened their email one day after the initial reminder, we'll try to reach them with a text message.
 - **Final push notification**: If the customer hasn't completed their purchase one day after the second reminder, we'll send a final push notification.
 
@@ -41,7 +45,7 @@ You can build the journey while the content is in the **Draft** state. To publis
 
 When creating a trigger-based journey, you can specify the following properties to configure how customers start the journey:
 
-- **Choose the type of journey**: You can select whether you want to create a trigger-based journey that responds to a customer action, or a segment-based journey that reaches out to a specific audience. Here, we want to create a trigger-based journey.
+- **Choose the type of journey**: You can select whether you want to create a trigger-based journey that responds to a customer action, or a segment-based journey that reaches out to a specific audience. Here, we'll want to create a trigger-based journey.
 - **Choose the trigger**: This is the trigger that customers must perform to start the journey. We want customers to start the journey when they abandon their cart, so select the *Abandoned cart* event as the trigger.
 
 > [!div class="mx-imgBorder"]
@@ -81,7 +85,7 @@ By default, customers leave the journey when they’ve completed all the steps. 
 Use the plus sign (**+**) on the journey canvas to add the abandoned cart reminders to your journey.
 
 1. **Send an email**: Select the *Initial email reminder* email that you want to send. For the **Send to** field, select the attribute that contains the email address you want to send the email to.
-1. **Add an if/then branch**: In the **Branch off this** field, select the previous email (*Initial email reminder*). You want the reminder to **Wait for** the *Email opened* trigger. Set the time limit to *1 day*. This if/then branch will check to see if the customer opens the *Initial email reminder* email within one day after it was sent. If the customer opens the email within one day, they’ll immediately go down the **Yes** branch. If the customer hasn’t opened the email one day after it was sent, they’ll go down the **No** branch.
+1. **Add an if/then branch**: In the **Branch off this** field, select the previous email (*Initial email reminder*). You want the reminder to **Wait for** the *Email opened* trigger. Set the time limit to *1 day*. This if/then branch will check to see if the customer opens the *Initial email reminder* email within one day after it was sent. If the customer opens the email within one day, they’ll go down the **Yes** branch. If the customer hasn’t opened the email one day after it was sent, they’ll go down the **No** branch.
 1. **Send a text message**: Under the **No** branch, you can send the *Second text reminder*. For the **Send to** field, select the attribute that contains the phone number you want to send the text message to. This text message will only be sent if the customer didn't open the first email message within a day. Because the if/then branch already has a time limit of one day, the text message will be sent one day after the email was sent.
 1. **Add a wait**: Add a wait and select **A set amount of time**. Set the duration to **1 day**. This will ensure that customers wait for one day after the text message before moving forward to the next step.
 1. **Send a push notification**: As the final step, send the *Final push notification* reminder.
