@@ -1,7 +1,7 @@
 ---
 title: New and upcoming features
 description: Discover the latest features, improvements, and bug fixes in Dynamics 365 Customer Insights - Journeys. Stay updated with our monthly release notes.
-ms.date: 07/11/2025
+ms.date: 07/14/2025
 ms.topic: whats-new
 author: colinbirkett
 ms.author: colinbirkett
@@ -29,24 +29,32 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 
 | App              | GA release      |
 |------------------|-----------------|
-| Customer Insights - Journeys       |   |
+| Customer Insights - Journeys       |  1.1.57027.56 |
 
 #### General availability
 
-- **TITLE** 
-	- Text
-	- [Release plan]() 
-	- [Docs]()  
+- **Collect extra customer info without updating your data model** 
+	- Easily gather additional information about your customers by creating any kind of question directly in the marketing form editor without the need to create new custom attributes for your lead or contact entity. For example, you can create fields to ask, “How did you hear about our products?” or create contest questions to increase your customer satisfaction and retention.
+	- [Release plan](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/collect-extra-customer-information-without-creating-custom-attributes) 
+	- [Docs](real-time-marketing-forms-custom-fields.md)
 
-- **TITLE** 
-	- Text
-	- [Release plan]() 
-	- [Docs]()  
+:::image type="content" source="media/IMAGE-TITLE.png" alt-text="IMAGE DESCRIPTION." lightbox="media/IMAGE-TITLE.png":::
 
-- **TITLE** 
-	- Text
-	- [Release plan]() 
-	- [Docs]()  
+- **Create an event portal on your own website** 
+	- Events are a pivotal element of your business strategy, aiding in customer acquisition and engagement. A centralized location is essential for your clients to discover and learn about events you are organizing. The new event portal allows for the swift creation of a comprehensive hub where customers can access event details, session specifics, and speaker schedules, and conveniently register using the event registration form. The portal can be seamlessly integrated into your existing CMS using a JavaScript code snippet or the new event API.
+	- [Release plan](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/create-event-portal-own-website) 
+	- [Docs](developer/using-rtm-events-api.md)
+
+:::image type="content" source="media/IMAGE-TITLE.png" alt-text="IMAGE DESCRIPTION." lightbox="media/IMAGE-TITLE.png":::
+
+- **Collect extra event attendee information without updating your data model** 
+	- Easily gather additional information about your event attendees by creating any question directly in the form editor without creating new custom attributes for your contact entity. For example, you can create fields to ask, “What is your meal preference?”, "How did you learn about this event?", or you can create contest questions to increase your customer engagement and to gather valuable insights that help you personalize the attendee experience.
+	- [Release plan](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/collect-extra-event-attendee-information-without-updating-data-model) 
+	- [Docs](create-unmapped-fields-registration-forms.md)
+
+:::image type="content" source="media/IMAGE-TITLE.png" alt-text="IMAGE DESCRIPTION." lightbox="media/IMAGE-TITLE.png":::
+
+<!---
 
 #### Public preview
 
@@ -58,6 +66,8 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 #### Monthly enhancements
 
 #### New blogs and scenario docs
+
+--->
 
 ### July 2025 update
 
