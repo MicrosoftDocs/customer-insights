@@ -52,7 +52,7 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 	- [Release plan](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/collect-extra-event-attendee-information-without-updating-data-model) 
 	- [Docs](create-unmapped-fields-registration-forms.md)
 
-:::image type="content" source="media/custom-form-fields-resized_2.png" alt-text="Collect extra event attendee information without updating your data model." lightbox="media/custom-form-fields-resized_2.png":::
+:::image type="content" source="media/custom-form-fields-resized.png" alt-text="Collect extra event attendee information without updating your data model." lightbox="media/custom-form-fields-resized.png":::
 
 <!---
 
