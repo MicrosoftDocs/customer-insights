@@ -1,7 +1,7 @@
 ---
 title: Manage user accounts, user licenses, and security roles
 description: How to manage user accounts, add licenses to users, and assign security roles in Dynamics 365 Customer Insights - Journeys.
-ms.date: 07/08/2025
+ms.date: 07/14/2025
 ms.topic: how-to
 author: alfergus
 ms.author: colinbirkett
@@ -41,7 +41,7 @@ Any user who already has a license for any model-driven app in Dynamics 365 can 
 > [!IMPORTANT]
 > Customer Insights - Journeys is a tenant-level license; it doesn't require explicit seat assignment for users to access the application. To sync users who use your organization's [Microsoft Entra ID](/azure/active-directory/fundamentals/whatis) to the Customer Insights - Journeys app, give them URL for the application environment. When they attempt to access the environment, their identity is synched to Dynamics 365 and a Dynamics 365 user is created for them and assigned the Marketer role.
 >
-> If you're having trouble granting users access, you can force the user assignment with a free Customer Insights - Journeys user license, as detailed in the steps below.
+> If you're having trouble granting users access, you can force the user assignment with a free Customer Insights - Journeys user license, as detailed in the steps later in this section.
 
 For Microsoft 365 users that don't have a Dynamics 365 license, you can "purchase" and assign a free Customer Insights - Journeys user license. Free Customer Insights - Journeys user licenses don't grant access to any other Dynamics 365 apps, but you can have as many of them as you need to grant access to Customer Insights - Journeys.
 
@@ -51,9 +51,9 @@ For Microsoft 365 users that don't have a Dynamics 365 license, you can "purchas
 > [!WARNING]
 > The free Customer Insights (formerly Marketing) user license is intended to only allow user access to the Customer Insights - Journeys in an edge case. It's not intended to allow unlimited user access to custom applications for Sales, Service, or other Dynamics 365 application scenarios. It also doesn't include any other entitlements to Dataverse capacity.
 
-In some edge cases, if the automatic user sync doesn't work, you can use a $0 User License to force the sync to happen. This is an edge case and only a work-around if the automatic sync isn't working for some reason. 
+In some edge cases, if the automatic user sync doesn't work, you can use a $0 User License to force the sync to happen. This is an edge case and only a work-around if the automatic sync isn't working for some reason.
 
-To use the 0$ license work-around to sync users for the edge case:
+To use the $0 license work-around to sync users for the edge case:
 
 1. Sign in to your [Microsoft 365 admin center](https://admin.microsoft.com) using an admin account that has permissions to purchase services and assign licenses.
 
@@ -107,7 +107,7 @@ To apply security roles to users, and to customize each role, do the following:
 
 ## Inspect and create customized copies of security roles
 
-All model-driven apps in Dynamics 365 come with a collection of preconfigured security roles to help get you started. Each of these roles provides various levels of access to a collection of entities that are typically used together by specific security roles. Each of these roles is given a name that indicates the type of user who should be assigned the role.
+All model-driven apps in Dynamics 365 come with a collection of preconfigured security roles to help get you started. Each of these roles provides various levels of access to a collection of entities that are typically used together by specific security roles. Each of these roles has a name that indicates the type of user who should be assigned the role.
 
 ### Inspect security roles
 
@@ -134,7 +134,7 @@ Security roles are a concept shared by all model-driven apps in Dynamics 365. Fo
 ### Create a copy of a role
 
 > [!IMPORTANT]
-> Each time you update Customer Insights - Journeys, all of the standard, out-of-box roles are updated to the latest versions to ensure that each role receives permissions to access the new features added by the update. You cannot customize the out-of-box roles. If you need custom security roles, start by creating a copy of an existing role that is close to what you want and then customize the copy. If you use custom security roles, you'll need to update your custom roles after each app update to grant access to new entities.
+> Each time you update Customer Insights - Journeys, all of the standard, out-of-box roles are updated to the latest versions to ensure that each role receives permissions to access the new features added by the update. You can't customize the out-of-box roles. If you need custom security roles, start by creating a copy of an existing role that is close to what you want and then customize the copy. If you use custom security roles, you'll need to update your custom roles after each app update to grant access to new entities.
 
 To create a copy of a role:
 
@@ -254,6 +254,7 @@ After Customer Insights - Journeys features are deployed, several service users 
 | D365 Personalization | db13e196-bc9c-42fe-9c55-12558c3a16fa | Design of personalized messages |
 | D365 Sms Channel | bd3e2b66-87c7-4fb7-90c3-de39038fbb14 | Text messages sending |
 | D365 Workflow | ba069707-8fa6-41af-b08d-2d01a0d731e5 | Customer journey execution |
+| D365 Landing Forms | a5e884b3-2cac-4051-8cf3-f0d4df550afd | Marketing Forms scenarios |
 
 ### Customer Insights - Journeys service user roles
 

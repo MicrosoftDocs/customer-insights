@@ -15,7 +15,7 @@ ms.custom: outbound-marketing
 # Create outbound marketing dynamic segments
 
 > [!IMPORTANT]
-> **This article only applies to [outbound marketing](user-guide.md), which will be removed from the product on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](transition-overview.md)
+> **This article only applies to [outbound marketing](user-guide.md), which is gradually being removed from Customer Insights - Journeys.** To avoid interruptions, stop using outbound marketing and transition to real-time journeys. Learn more: [Transition overview](transition-overview.md).
 
 One of the first and most important decisions you'll make when you design any marketing piece is to choose the right audience. Only after you know your audience will you be able to tailor your message to best appeal to that group of people.
 

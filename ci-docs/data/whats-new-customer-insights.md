@@ -1,7 +1,7 @@
 ---
 title: "What's new in Dynamics 365 Customer Insights - Data"
 description: "Information about new features, improvements, and bug fixes."
-ms.date: 06/03/2025
+ms.date: 07/01/2025
 ms.topic: whats-new
 author: colinbirkett
 ms.author: colinbirkett
@@ -16,6 +16,16 @@ We roll out updates on a region-by-region basis. So certain regions might see fe
 
 > [!TIP]
 > To submit and vote on feature requests and product suggestions, go to the [Dynamics 365 Application Ideas portal](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights).
+
+## July 2025
+
+### General availability
+
+#### Connect to Azure storage behind a firewall using Virtual Network support
+
+Customer Insights - Data now uses Virtual Network support for Power Platform to integrate Customer Insights - Data with resources inside your virtual network without exposing them over the public internet.
+
+- [Release plan](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-data/connect-firewalled-storage-accounts-using-azure-managed-identities)
 
 ## May 2025
 

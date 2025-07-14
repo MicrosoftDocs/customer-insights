@@ -1,7 +1,7 @@
 ---
 title: New and upcoming features
 description: Discover the latest features, improvements, and bug fixes in Dynamics 365 Customer Insights - Journeys. Stay updated with our monthly release notes.
-ms.date: 06/11/2025
+ms.date: 07/01/2025
 ms.topic: whats-new
 author: colinbirkett
 ms.author: colinbirkett
@@ -15,7 +15,7 @@ ms.custom:
 # What's new in Dynamics 365 Customer Insights - Journeys
 
 > [!IMPORTANT]
-> **The [outbound marketing](user-guide.md) module will be removed from Customer Insights - Journeys on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](transition-overview.md)
+> **The [outbound marketing](user-guide.md) module is gradually being removed from Customer Insights - Journeys.** To avoid interruptions, stop using outbound marketing and transition to real-time journeys. Learn more: [Transition overview](transition-overview.md).
 
 [!INCLUDE [marketing-trial-cta](./includes/marketing-trial-cta.md)]
 
@@ -24,6 +24,53 @@ We're excited to announce our newest updates! This article summarizes early acce
 Customer Insights - Journeys updates are [pushed to customers automatically](https://cloudblogs.microsoft.com/dynamics365/it/2020/04/27/automatic-update-policy-for-dynamics-365-marketing/). Solutions are available for early validations. To manually update your instances, follow the steps in [Keep Customer Insights - Journeys up to date](apply-updates.md).
 
 To submit and vote on **feature requests** and **product suggestions**, go to the [Dynamics 365 Application Ideas portal](https://experience.dynamics.com/ideas/categories/?forum=dfa5b83d-9e4c-e811-a956-000d3a1bef07&forumName=Dynamics%20365%20Marketing).
+
+### July 2025 update
+
+| App              | GA release      |
+|------------------|-----------------|
+| Customer Insights - Journeys       | 1.1.57027.56  |
+
+#### General availability
+
+- **Orchestrate journeys using any marketing interaction**
+	- Transform the way you communicate with your customers. By using marketing interaction triggers to orchestrate or branch customer journeys, you can now engage your customers based on the interactions they have with your marketing messages. Instantly adapt your strategies based on your customers' real-time interactions, ensuring that every message you send hits the right note. By engaging customers based on their interactions, you can significantly ramp up your chances of conversion with greater personalization. For example, you can branch and orchestrate journeys based on customer interactions with emails such as "email link clicked" or "email blocked."
+	- [Release plan](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/orchestrate-journeys-using-marketing-interaction) 
+	- [Docs](real-time-marketing-trigger-based-journey.md)
+
+- **Respect quiet times, engage based on location and time zones**
+	- As regulations around customer privacy become more stringent, it's crucial to contact customers at times that are most convenient to them and ensure compliance with local legal requirements. Now in Customer Insights - Journeys, in addition to setting quiet times based on your journey's time zone, you can align quiet times with your customers' time zones and regions, ensuring that they only receive messages and calls during suitable hours. Aligning interactions with local time allows you to adhere to local regulations and respect cultural norms and preferences, fostering customer trust and enhancing the effectiveness of your outreach strategies.
+	- [Release plan](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/respect-quiet-times-engage-based-location-time-zones) 
+	- [Docs](real-time-marketing-quiet-times.md#use-time-zone-for-quiet-times)
+
+	:::image type="content" source="media/qt-settings-updated.png" alt-text="Set up quiet times for a journey based location and time zone." lightbox="media/qt-settings-updated.png":::
+
+- **Pause and resume journeys to handle unplanned events**
+	- Safeguarding your brand's reputation and customer trust is critical. In the face of unplanned or unforeseen events, such as natural disasters, you may need to pause certain campaigns that might be deemed inappropriate or insensitive. Additionally, you may run into business or operational reasons for stopping a campaign, such as identifying the need to update some content or experiencing an unexpected call center outage. In such scenarios, it's prudent to halt customer outreach until the problem is addressed. Instead of stopping a campaign and adjusting the audience to exclude previously reached customers, you can now pause and resume journeys, allowing you to manage unplanned situations easily and stress-free.
+	- [Release plan](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/pause-resume-journeys-handle-unplanned-events) 
+	- [Docs](pause-resume-journey.md)
+
+	:::image type="content" source="media/journey-pause.png" alt-text="Pause and resume journeys to handle unplanned events." lightbox="media/journey-pause.png":::
+
+- **Tailor follow-up strategies by reacting to multiple customer actions at once**
+	- By allowing marketers to react to multiple customer actions simultaneously, this feature enables faster, more intelligent decision-making within journeys, reducing the time and effort required to manage complex branching logic. Marketers can now consolidate multiple interaction outcomes into a single decision point, saving operational overhead while increasing precision in how each customer is engaged. This leads to better-targeted messaging, higher engagement rates, and stronger conversion outcomes. Additionally, simplifying journey configuration reduces setup time and ongoing maintenance, allowing teams to launch faster and scale efficiently across channels.
+	- [Release plan](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/tailor-follow-up-strategies-reacting-multiple-customer-actions-at-once) 
+	- [Docs](multi-interaction-branching.md)
+
+	:::image type="content" source="media/tailor-follow-up-strategies.png" alt-text="Tailor follow-up strategies by reacting to multiple customer actions at once." lightbox="media/tailor-follow-up-strategies.png":::
+
+- **Maximize event capacity with waitlist registrations**
+	- Ensuring marketing events are filled to capacity is crucial for success and return on investment. To encourage a high turnout for marketing events, you can now enable waitlist registrations, which ensures spots are filled when registered attendees cancel. By setting the capacity for events and sessions, prospective attendees are placed on a waitlist when events and sessions are full. Should a slot open, the system either automatically registers the individual next on the waitlist or lets you manually select the replacement from the pool of waitlist registrations. You can save time and easily manage waitlist-related communication with a new set of out-of-the-box triggers, allowing you to send personalized messaging to waitlisted attendees.
+	- [Release plan](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/maximize-event-capacity-waitlist-registrations) 
+	- [Docs](set-up-and-manage-waitlist.md#manual-management-of-waitlist-registrations)
+
+	:::image type="content" source="media/w-registering.png" alt-text="Maximize event capacity with waitlist registrations." lightbox="media/w-registering.png":::
+
+#### New blogs and scenario docs
+
+Learn how to make the most of the new Dynamics 365 Customer Insights features in our latest blogs and scenario docs:
+
+- [Time Zone Identification for Quiet Time feature in Dynamics 365 Customer Insights](https://community.dynamics.com/blogs/post/?postid=c1ad9596-0338-f011-8c4e-0022481da8cf)
 
 ### June 2025 update
 
@@ -178,7 +225,7 @@ Learn how to make the most of the new Dynamics 365 Customer Insights features in
 	- [Release plan](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/maximize-event-capacity-waitlist-registrations)
 	- [Docs](set-up-and-manage-waitlist.md)
 
-	 :::image type="content" source="media/waitlist-feature-screen.png" alt-text="Maximize event capacity with waitlist registrations." lightbox="media/waitlist-feature-screen.png":::
+	 :::image type="content" source="media/waitlist-feature-screen.png" alt-text="Maximize event capacity with waitlist registrations in Customer Insights - Journeys." lightbox="media/waitlist-feature-screen.png":::
 
 - **Collect extra customer info without updating your data model**
 	- Easily gather additional information about your customers by creating any kind of question directly in the marketing form editor without the need to create new custom attributes for your lead or contact entity. For example, you can create fields to ask, “How did you hear about our products?” or create contest questions to increase your customer satisfaction and retention.

@@ -16,7 +16,7 @@ search.audienceType:
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=1f5957db-7990-4c3b-bd59-4e868a0d9f92]
 
 > [!IMPORTANT]
-> **The [outbound marketing](user-guide.md) module will be removed from Customer Insights - Journeys on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](transition-overview.md)
+> **The [outbound marketing](user-guide.md) module is gradually being removed from Customer Insights - Journeys.** To avoid interruptions, stop using outbound marketing and transition to real-time journeys. Learn more: [Transition overview](transition-overview.md).
 
 Dynamics 365 Customer Insights - Journeys isn't just for marketers anymore. With AI and natural language input assistance, business users can build trigger-based journeys that reach customers across multiple touch-points, growing relationships from prospects, through sales and support. Customer Insights - Journeys enables organizations to:
 

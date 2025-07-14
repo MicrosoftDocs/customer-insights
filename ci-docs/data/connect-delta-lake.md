@@ -1,7 +1,7 @@
 ---
 title: "Connect to Delta tables in Azure Data Lake Storage"
 description: "Work with data stored in Delta tables from Azure Data Lake Storage."
-ms.date: 04/21/2025
+ms.date: 06/27/2025
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -32,6 +32,19 @@ Customer Insights - Data supports Databricks features with a 'minReaderVersion' 
 | UniForm             |                      |
 
  Learn more: [How does Databricks manage Delta Lake feature compatibility?](https://docs.databricks.com/en/delta/feature-compatibility.html#features-by-protocol-version).
+
+> [!TIP] 
+> If you're using a recent Databricks runtime and need compatibility with Dynamics 365 Customer Insights, you can lower the Delta table protocol version and disable specific features. This can be configured at the workspace level in Databricks to apply by default to any newly created tables. (It's also possible to manually drop features from existing tables if needed, but that’s beyond the scope of this tip.)
+>
+> :::image type="content" source="media/auto-enable-deletion-vectors.png" alt-text="Screenshot showing the Auto-Enable Deletion Vectors setting.":::
+>
+> After applying the setting and re-running the notebook, the table was reverted to a lower reader/writer protocol:
+> :::image type="content" source="media/lower-protocol.png" alt-text="Screenshot showing a lower reader/writer protocol.":::
+> 
+> This allowed the table to be successfully read and ingested by Customer Insights:
+> :::image type="content" source="media/successful-read-ingest.png" alt-text="Screenshot showing successful read and ingest.":::
+>
+> Learn more: [Delta Lake feature compatibility and protocols - Lowest possible protocol](https://docs.databricks.com/aws/en/delta/feature-compatibility#-lowest-possible-protocol).
 
 ## Prerequisites
 

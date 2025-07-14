@@ -14,7 +14,7 @@ search.audienceType:
 # Setup changes in real-time journeys
 
 > [!IMPORTANT]
-> **The [outbound marketing](user-guide.md) module will be removed from Customer Insights - Journeys on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](transition-overview.md)
+> **The [outbound marketing](user-guide.md) module is gradually being removed from Customer Insights - Journeys.** To avoid interruptions, stop using outbound marketing and transition to real-time journeys. Learn more: [Transition overview](transition-overview.md).
 
 A difference from outbound marketing that's immediately noticeable when setting up real-time journeys is that it's no longer necessary to specify a Power Pages instance. Outbound marketing relies on Power Pages to host content like landing pages and event portals. The real-time journeys module provides a self-hosting option that doesn't rely on Power Pages.
 

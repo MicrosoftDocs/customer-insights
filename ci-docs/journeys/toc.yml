@@ -286,9 +286,9 @@
          href: journey-start.md
       -  name: Add an action in a journey
          href: add-action.md
-      -  name: Pause and resume a journey (preview)
+      -  name: Pause and resume a journey
          href: pause-resume-journey.md
-      -  name: Tailor follow-up strategies with multi-interaction branching (preview)
+      -  name: Tailor follow-up strategies with multi-interaction branching
          href: multi-interaction-branching.md
       -  name: End a journey
          href: journey-end.md
@@ -406,7 +406,7 @@
         href: set-up-event.md
       - name: Set up session-level registration
         href: real-time-journeys-event-session.md
-      - name: Set up and manage an event waitlist (preview)
+      - name: Set up and manage an event waitlist
         href: set-up-and-manage-waitlist.md
       - name: Create an event from another event
         href: event-from-event.md
@@ -766,18 +766,20 @@
   items:
   - name: Overview
     href: responsible-ai-overview.md
-  - name: Responsible AI FAQs for the Customer Insights - Journeys copilot preview
-    href: faqs-copilot-general.md
   - name: Responsible AI FAQs for content ideas
     href: faqs-content-ideas.md
-  - name: Responsible AI FAQs for the segment copilot
-    href: faqs-segment-copilot.md
-  - name: Responsible AI FAQs for image smart recommendation
-    href: faqs-image-smart-recommendation.md
   - name: Responsible AI FAQs for content rewrite
     href: faqs-content-rewrite.md
+  - name: Responsible AI FAQs for conversational journeys
+    href: responsible-ai-conversational-journeys.md
+  - name: Responsible AI FAQs for the Customer Insights - Journeys copilot (preview)
+    href: faqs-copilot-general.md
+  - name: Responsible AI FAQs for image smart recommendation
+    href: faqs-image-smart-recommendation.md  
   - name: Responsible AI FAQs for the journey copilot
-    href: faqs-journey-copilot.md
+    href: faqs-journey-copilot.md  
+  - name: Responsible AI FAQs for the segment copilot
+    href: faqs-segment-copilot.md
 - name: Resources
   items:
   - name: Removed/deprecated features

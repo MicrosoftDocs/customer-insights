@@ -15,7 +15,7 @@ ms.custom: outbound-marketing
 # Set up automatic lead generation and scoring
 
 > [!IMPORTANT]
-> **This article only applies to [outbound marketing](user-guide.md), which will be removed from the product on June 30, 2025.** To avoid interruptions, transition to real-time journeys before this date. More information: [Transition overview](transition-overview.md)
+> **This article only applies to [outbound marketing](user-guide.md), which is gradually being removed from Customer Insights - Journeys.** To avoid interruptions, stop using outbound marketing and transition to real-time journeys. Learn more: [Transition overview](transition-overview.md).
 
 > [!VIDEO 7e595aa9-7c2e-4402-82c4-056a999a22ca]
 
