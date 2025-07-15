@@ -63,11 +63,7 @@ Operational analytics has two parts:
  
 - **Step analytics**: When you select any step in the journey, the right pane shows a wealth of information. There are three areas or groups:
 
-    > [!NOTE]
-    > Entry and exit details are in preview. If you don't see these details, go to **Settings** > **Feature switches** > **Journey** and enable the "Tile entry and exit analytics (preview)" feature switch. Entry and exit details are available for journeys published (or updated) after the preview is enabled.
-    > This feature is currently available for one-time journeys with static audiences. Support for repeating journeys is planned by December 16, 2024. Support for ongoing journeys will be available in the February 2025 release. 
-
-    - **Inflow and outflow information**: For every step, the top shows the number of customers who entered the step (Inflow), the number currently being processed (Processing), the number who have moved to the next step (Processed), and the number who have exited the journey (Exit). The percentage is calculated from the inflow volume. When the journey is running and counts are small, we prioritize showing these numbers as soon as possible (within minutes) and this can lead to inconsistencies (for example, a processed data point may be counted and shown before its corresponding inflow data point is shown). This self-corrects once journey execution is complete.
+- **Inflow and outflow information**: For every step, the top shows the number of customers who entered the step (Inflow), the number currently being processed (Processing), the number who have moved to the next step (Processed), and the number who have exited the journey (Exit). The percentage is calculated from the inflow volume. When the journey is running and counts are small, we prioritize showing these numbers as soon as possible (within minutes) and this can lead to inconsistencies (for example, a processed data point may be counted and shown before its corresponding inflow data point is shown). This self-corrects once journey execution is complete.
 
     - **Flow details**: The flow details section shows additional details such as rate limits (if applied), unique people who entered the journey (different than inflow that counts each entry rather than unique people, flow details are only available for channel tiles), and exit reasons. You can select the list icon to display the individuals in the step and reason codes for their status. You can also select the export button to export the data to Excel (with a limit of 50,000 records).
 
