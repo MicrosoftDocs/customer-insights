@@ -1,10 +1,10 @@
 ---
 title: Measure marketing effectiveness using UTM codes
 description: Learn how to add Urchin Tracking Module (UTM) codes to URLs for improved link tracking in Customer Insights - Journeys.
-ms.date: 08/23/2023
+ms.date: 07/08/2025
 ms.topic: how-to
 author: alfergus
-ms.author: alfergus
+ms.author: colinbirkett
 search.audienceType: 
   - admin
   - customizer
@@ -26,7 +26,7 @@ To use UTM codes, an administrator needs to enable the UTM codes feature switch.
 1. Go to **Settings** > **Overview** > **Feature switches**.
 1. Enable the **UTM tracking** feature switch toggle, then select **Save** in the upper right.
 
-When enable UTM tracking, you'll see the default values for each UTM parameter. These are the values that will be added to all URLs that you add to your emails or text messages.
+When you enable UTM tracking, you see the default values for each UTM parameter. These are the values that are added to all URLs that you add to your emails or text messages.
 
 > [!div class="mx-imgBorder"]
 > ![Enable UTM codes screen.](media/real-time-marketing-utm-enable.png "Enable UTM codes screen")
@@ -35,7 +35,7 @@ When enable UTM tracking, you'll see the default values for each UTM parameter. 
 > It may take up to five minutes after enabling the feature switch toggle before the UTM settings are propagated across the channels.
 
 > [!NOTE]
-> UTM parameters are only added to emails that allow tracking. If you use a *restrictive* consent model, UTM Parameters are only added to your URLs if a Contact has a Contact Point Consent record for tracking and the status is **Opted In**. If you use a *non-restrictive* consent model, you can set the default tracking to **Track**. This will mean that even without a Contact Point Consent record, the UTM Parameters will be added to the URL within the email or SMS for all Contacts who go through your journeys.
+> UTM parameters are only added to emails that allow tracking. If you use a *restrictive* consent model, UTM Parameters are only added to your URLs if a Contact has a Contact Point Consent record for tracking, and the status is **Opted In**. If you use a *nonrestrictive* consent model, you can set the default tracking to **Track**. This means that even without a Contact Point Consent record, the UTM Parameters are added to the URL within the email or SMS for all Contacts who go through your journeys.
 
 ## Use UTM codes in a journey
 
@@ -48,14 +48,14 @@ First, create a journey that [targets visitors that abandoned their cart](real-t
 > [!div class="mx-imgBorder"]
 > ![Create an abandoned cart journey.](media/real-time-marketing-utm-abandoned.png "Create an abandoned cart journey")
 
-To use UTM codes in the reminder email, go to **Emails** and select the email you plan to use in your abandoned cart journey. Add a URL to the email that directs your customers back to your website. In the **Add a link** window, you'll see the default values that will automatically be appended to every URL in your message, including unsubscribe.
+To use UTM codes in the reminder email, go to **Emails** and select the email you plan to use in your abandoned cart journey. Add a URL to the email that directs your customers back to your website. In the **Add a link** window, you see the default values that are automatically appended to every URL in your message, including unsubscribe.
 
 > [!div class="mx-imgBorder"]
 > ![UTM parameters and values.](media/real-time-marketing-utm-values.png "UTM parameters and values")
 
 In this case, the source value Dynamics 365 Customer Insights - Journeys, the campaign value is the name of the abandoned cart journey, the medium is channel that you're using which is email, and the content is the name of the email.
 
-Once your journey is live and customers start using your links, you'll be able to review insights including how many people clicked your link and how many successfully completed a purchase.
+Once your journey is live and customers start using your links, you're able to review insights including how many people clicked your link and how many successfully completed a purchase.
 
 > [!div class="mx-imgBorder"]
 > ![Journey goal success.](media/real-time-marketing-utm-goal.png "Journey goal success")

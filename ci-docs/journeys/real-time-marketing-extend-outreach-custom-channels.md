@@ -1,12 +1,12 @@
 ---
 title: Manually add a custom channel
 description: Learn how to manually add a custom outreach channel in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/22/2023
+ms.date: 07/04/2025
 ms.custom: 
   - bap-template
 ms.topic: overview
 author: alfergus
-ms.author: alfergus
+ms.author: colinbirkett
 search.audienceType: 
   - admin
   - customizer

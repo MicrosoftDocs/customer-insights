@@ -1,10 +1,10 @@
 ---
 title: Create outbound text messages
 description: Learn how to create outbound text messages in Dynamics 365 Customer Insights - Journeys.
-ms.date: 10/03/2024
+ms.date: 07/08/2025
 ms.topic: how-to
 author: alfergus
-ms.author: alfergus
+ms.author: colinbirkett
 search.audienceType: 
   - admin
   - customizer
