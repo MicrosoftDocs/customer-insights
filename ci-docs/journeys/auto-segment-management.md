@@ -1,7 +1,7 @@
 ---
 title: Optimize segment refresh
 description: Optimize segment refresh in Dynamics 365 Customer Insights – Journeys for accurate, up-to-date audience data and improved system performance.
-ms.date: 02/18/2025
+ms.date: 07/15/2025
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -23,7 +23,8 @@ To minimize the impact of unused segments on active campaigns and improve proces
 ## Automated segment management
 
 - **Newly created unused segments**: Segments that aren't actively used in a journey now refresh every 30 minutes for the first 24 hours to ensure initial accuracy. After this period, they transition to a 24-hour refresh cycle unless they become actively used.
-- **Segments in active journeys**: Segments actively used in a journey or referenced by another segment or emails continue refreshing every 30 minutes, ensuring that they stay updated with the latest audience data.
+- **Segments in active journeys without interaction filters**: Segments actively used in a journey or referenced by another segment or email continue refreshing every 30 minutes, ensuring that they stay updated with the latest audience data.
+- **Segments in active journeys with at least one interaction filter**: Segments actively used in a journey or referenced by another segment or email continue refreshing every 60 minutes, ensuring that they stay updated with the latest audience data.
 - **Segments exiting a journey**: Once a segment is no longer used in a journey, it moves to a 24-hour refresh cycle, ensuring that it remains relevant while optimizing system performance.
 
 ## Why this matters
