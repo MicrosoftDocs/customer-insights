@@ -2,6 +2,7 @@
 title: Copilot - Use AI to kickstart email creation
 description: Discover how Copilot in Dynamics 365 Customer Insights - Journeys can help you create engaging email content. Follow our guide to get started with AI-generated ideas.
 ms.date: 11/22/2024
+ms.update-cycle: 180-days
 ms.topic: article
 author: alfergus
 ms.author: alfergus

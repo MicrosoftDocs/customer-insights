@@ -2,6 +2,7 @@
 title: "Predict subscription churn"
 description: "Predict whether a customer is at risk for no longer using your company’s subscription products or services."
 ms.date: 11/30/2023
+ms.update-cycle: 180-days
 ms.reviewer: mhart
 ms.topic: how-to
 author: joytaylor

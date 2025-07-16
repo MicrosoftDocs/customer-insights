@@ -2,6 +2,7 @@
 title: What's new archive
 description: Access archived information on new features, improvements, and bug fixes in Dynamics 365 Customer Insights - Journeys.
 ms.date: 01/21/2025
+ms.update-cycle: 180-days
 ms.topic: whats-new
 author: alfergus
 ms.author: alfergus

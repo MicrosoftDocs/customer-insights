@@ -2,6 +2,7 @@
 title: Create push notifications
 description: Create effective push notifications for Customer Insights - Journeys. Learn how to set up, personalize, and send push messages to engage your app users.
 ms.date: 11/22/2024
+ms.update-cycle: 180-days
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus

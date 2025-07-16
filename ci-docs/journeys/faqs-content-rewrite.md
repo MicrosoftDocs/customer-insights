@@ -2,6 +2,7 @@
 title: Responsible AI FAQs for content rewrite
 description: Understand how to responsibly use the content rewrite feature in Dynamics 365 to improve your email, text, and push notification content.
 ms.date: 11/22/2024
+ms.update-cycle: 180-days
 ms.topic: faq
 author: alfergus
 ms.author: alfergus
