@@ -40,11 +40,14 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 
 	:::image type="content" source="media/event-portal-api-2.png" alt-text="Create an event portal on your own website." lightbox="media/event-portal-api-2.png":::
 
-<!-->
+#### Monthly enhancements
+
+ **Do not overwrite existing values with submitted empty values** 
+	- TBA
+
+<!---
 
 #### Public preview
-
-#### Monthly enhancements
 
 #### New blogs and scenario docs
 
