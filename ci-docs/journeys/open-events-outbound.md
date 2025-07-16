@@ -2,6 +2,7 @@
 title: Open the event management work area in outbound marketing
 description: Explains how to access event-management features in outbound marketing.
 ms.date: 08/21/2023
+ms.update-cycle: 1095-days
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus

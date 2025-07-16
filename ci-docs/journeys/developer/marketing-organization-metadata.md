@@ -2,6 +2,7 @@
 title: Metadata reference for your outbound marketing organization
 description: Know about the installed solutions, entities, and custom actions in your outbound marketing organization.
 ms.date: 04/01/2018
+ms.update-cycle: 1095-days
 ms.topic: reference
 author: alfergus
 ms.author: alfergus

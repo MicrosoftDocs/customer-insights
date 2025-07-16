@@ -2,6 +2,7 @@
 title: Invite, register, and house event attendees in outbound marketing
 description: After your event is set up, learn how to invite attendees, register attendees, and enter hotel bookings in outbound marketing.
 ms.date: 08/18/2023
+ms.update-cycle: 1095-days
 ms.topic: article
 author: alfergus
 ms.author: alfergus

@@ -2,6 +2,7 @@
 title: Manually schedule contacts and email delivery
 description: Learn how to manually schedule contacts and email delivery for customer journeys in Dynamics 365 Customer Insights - Journeys.
 ms.date: 08/18/2023
+ms.update-cycle: 1095-days
 ms.topic: reference
 author: alfergus
 ms.author: alfergus

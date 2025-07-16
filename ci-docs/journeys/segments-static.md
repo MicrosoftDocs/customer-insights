@@ -2,6 +2,7 @@
 title: Design a static segment
 description: How to create a static segment by selecting specific contacts individually in Dynamics 365 Customer Insights - Journeys.
 ms.date: 08/23/2023
+ms.update-cycle: 1095-days
 ms.topic: article
 author: alfergus
 ms.author: alfergus

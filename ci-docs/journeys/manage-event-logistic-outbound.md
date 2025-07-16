@@ -2,6 +2,7 @@
 title: Manage attendee logistics and accommodation availability in outbound marketing
 description: How to manage event logistics (including vendors, hotels, room allocations, and reservations) in outbound marketing.
 ms.date: 08/21/2023
+ms.update-cycle: 1095-days
 ms.topic: article
 author: alfergus
 ms.author: alfergus

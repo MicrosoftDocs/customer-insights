@@ -2,6 +2,7 @@
 title: Troubleshoot pages and forms 
 description: Troubleshooting and frequently asked questions for pages and forms in Dynamics 365 Customer Insights - Journeys.
 ms.date: 08/21/2023
+ms.update-cycle: 1095-days
 ms.topic: troubleshooting-general
 author: alfergus
 ms.author: alfergus

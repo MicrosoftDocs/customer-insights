@@ -2,6 +2,7 @@
 title: Create a landing page with a form
 description: A tutorial for how to create a new landing page that includes a form for Dynamics 365 Customer Insights - Journeys.
 ms.date: 08/18/2023
+ms.update-cycle: 1095-days
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus

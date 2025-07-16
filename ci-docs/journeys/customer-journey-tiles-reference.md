@@ -2,6 +2,7 @@
 title: Customer journey tiles reference
 description: Details for how to use each tile that is available for assembling a customer journey pipeline for Dynamics 365 Customer Insights - Journeys.
 ms.date: 08/18/2023
+ms.update-cycle: 1095-days
 ms.topic: reference
 author: alfergus
 ms.author: alfergus

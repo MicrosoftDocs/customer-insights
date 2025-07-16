@@ -2,6 +2,7 @@
 title: Segmentation usage report for Dynamics 365 Customer Insights - Journeys
 description: The segmentation usage report shows you which segments are used in which marketing activities and helps you to identify orphaned segments.
 ms.date: 08/17/2023
+ms.update-cycle: 1095-days
 ms.topic: reference
 author: cabeln
 ms.author: cabeln

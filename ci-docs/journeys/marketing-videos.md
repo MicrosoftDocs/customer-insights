@@ -2,6 +2,7 @@
 title: Video overviews and instructions for Dynamics 365 Customer Insights - Journeys
 description: Find video-based information about Dynamics 365 Customer Insights - Journeys.
 ms.date: 08/21/2023
+ms.update-cycle: 1095-days
 ms.topic: overview
 author: alfergus
 ms.author: alfergus

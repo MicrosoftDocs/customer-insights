@@ -2,6 +2,7 @@
 title: Social media posting with Dynamics 365 Customer Insights - Journeys
 description: Create social media posts for immediate or scheduled publishing in Dynamics 365 Customer Insights - Journeys.
 ms.date: 12/09/2024
+ms.update-cycle: 1095-days
 ms.topic: article
 author: alfergus
 ms.author: alfergus

@@ -2,6 +2,7 @@
 title: Email marketing report for Dynamics 365 Customer Insights - Journeys
 description: This email marketing analytics report provides you interaction and conversion leaderboards, automation status, block and failure analysis, and more.
 ms.date: 08/17/2023
+ms.update-cycle: 1095-days
 ms.topic: reference
 author: cabeln
 ms.author: cabeln

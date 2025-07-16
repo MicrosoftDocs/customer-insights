@@ -2,6 +2,7 @@
 title: Edit and resubmit form submissions
 description: Learn how to view incoming form submissions, recover from failed form submissions, and edit and resubmit submissions as needed in Dynamics 365 Customer Insights - Journeys.
 ms.date: 08/18/2023
+ms.update-cycle: 1095-days
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus

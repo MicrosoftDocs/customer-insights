@@ -2,6 +2,7 @@
 title: The event management dashboard in outbound marketing
 description: How to find and use the event dashboard in outbound marketing.
 ms.date: 08/18/2023
+ms.update-cycle: 1095-days
 ms.topic: overview
 author: alfergus
 ms.author: alfergus

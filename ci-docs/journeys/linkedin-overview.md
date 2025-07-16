@@ -2,6 +2,7 @@
 title: Marketing on LinkedIn
 description: Get an overview of all the various ways that Dynamics 365 Customer Insights - Journeys can be integrated with the marketing features of LinkedIn.
 ms.date: 12/09/2024
+ms.update-cycle: 1095-days
 ms.topic: overview
 author: alfergus
 ms.author: alfergus

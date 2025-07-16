@@ -2,6 +2,7 @@
 title: Build an outbound marketing approvals feature using Power Automate
 description: Learn how to build an approvals feature using Power Automate and outbound marketing.
 ms.date: 08/01/2019
+ms.update-cycle: 1095-days
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus

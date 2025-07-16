@@ -2,6 +2,7 @@
 title: Form submission report for Dynamics 365 Customer Insights - Journeys
 description: See all the details of your form submissions in one report, and slice and dice over timeline, related messaging, and automation.
 ms.date: 08/17/2023
+ms.update-cycle: 1095-days
 ms.topic: reference
 author: cabeln
 ms.author: cabeln
