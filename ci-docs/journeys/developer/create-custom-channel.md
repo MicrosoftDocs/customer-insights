@@ -7,7 +7,7 @@ author: alfergus
 ms.author: alfergus
 search.audienceType: 
   - developer
-ms.custom: outbound-marketing
+ms.custom: outbound-marketing, evergreen
 ---
 
 # Create a custom channel for customer journeys in outbound marketing
