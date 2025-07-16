@@ -2,6 +2,7 @@
 title: Market to leads with Dynamics 365 Customer Insights - Journeys
 description: How to integrate sales-driven and marketing-driven lead processes in Dynamics 365 Customer Insights - Journeys.
 ms.date: 08/21/2023
+ms.update-cycle: 1095-days
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus

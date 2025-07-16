@@ -2,6 +2,7 @@
 title: Create and manage input fields for use in forms
 description: How to set up a form input field and map it to a database field in Dynamics 365 Customer Insights - Journeys.
 ms.date: 06/13/2024
+ms.update-cycle: 1095-days
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus

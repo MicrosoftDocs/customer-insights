@@ -2,6 +2,7 @@
 title: Create templates for emails, pages, forms, and journeys
 description: A tutorial for how to work with templates for creating common and standardized content in Dynamics 365 Customer Insights - Journeys.
 ms.date: 08/18/2023
+ms.update-cycle: 1095-days
 ms.topic: article
 author: alfergus
 ms.author: alfergus

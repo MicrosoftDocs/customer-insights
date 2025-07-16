@@ -2,6 +2,7 @@
 title: Set up an event website in outbound marketing
 description: Set up a Dynamics 365 Customer Insights - Journeys outbound marketing event website, where people can read about your event and its speakers, create an account, register for the event, purchase passes, view their session schedule, and more.
 ms.date: 06/13/2024
+ms.update-cycle: 1095-days
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus

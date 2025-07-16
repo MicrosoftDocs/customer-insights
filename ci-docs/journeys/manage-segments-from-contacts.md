@@ -2,6 +2,7 @@
 title: Manage segment memberships from a contact record
 description: How to add or remove a displayed contact to or from a segment in Dynamics 365 Customer Insights - Journeys.
 ms.date: 08/21/2023
+ms.update-cycle: 1095-days
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus

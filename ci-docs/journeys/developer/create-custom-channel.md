@@ -2,6 +2,7 @@
 title: Create a custom channel for customer journeys in outbound marketing
 description: Learn how to create a custom channel to use in outbound marketing customer journeys.
 ms.date: 02/09/2022
+ms.update-cycle: 1095-days
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus

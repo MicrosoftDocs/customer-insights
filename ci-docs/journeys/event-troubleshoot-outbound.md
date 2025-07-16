@@ -2,6 +2,7 @@
 title: Troubleshoot event management in outbound marketing
 description: Troubleshooting and frequently asked questions for events in Dynamics 365 Customer Insights - Journeys.
 ms.date: 08/18/2023
+ms.update-cycle: 1095-days
 ms.topic: troubleshooting-general
 author: alfergus
 ms.author: alfergus

@@ -2,6 +2,7 @@
 title: Set up global double opt-in in outbound marketing
 description: How to set up the global double opt-in system to let contacts confirm their new subscriptions and consent changes in outbound marketing.
 ms.date: 08/18/2023
+ms.update-cycle: 1095-days
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus

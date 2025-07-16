@@ -2,6 +2,7 @@
 title: "Step 3: Create a workflow or plug-in to implement your custom logic in outbound marketing"
 description: Partners can create a workflow or plug-in to implement their custom logic for a custom channel in outbound marketing.
 ms.date: 04/01/2018
+ms.update-cycle: 1095-days
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus

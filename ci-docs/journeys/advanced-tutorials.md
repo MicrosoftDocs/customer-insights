@@ -2,6 +2,7 @@
 title: Tutorials for specific scenarios
 description: Step-by-step tutorials for learning how to work with specialist user scenarios in Dynamics 365 Customer Insights - Journeys.
 ms.date: 08/17/2023
+ms.update-cycle: 1095-days
 ms.collection: get-started
 ms.topic: overview
 author: alfergus

@@ -2,6 +2,7 @@
 title: Marketing reach analysis for Dynamics 365 Customer Insights - Journeys
 description: Identify contacts and how you're reaching out to them. See all audiences reached in select journeys with the respective interactions generated.
 ms.date: 08/17/2023
+ms.update-cycle: 1095-days
 ms.topic: reference
 author: cabeln
 ms.author: cabeln

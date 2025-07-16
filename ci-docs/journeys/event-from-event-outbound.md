@@ -2,6 +2,7 @@
 title: Create an event from another event in outbound marketing
 description: Describes how to create an event from another event when creating a new event in outbound marketing.
 ms.date: 08/18/2023
+ms.update-cycle: 1095-days
 ms.topic: article
 author: alfergus
 ms.author: alfergus

@@ -2,6 +2,7 @@
 title: Manually overwriting a sample event website in outbound marketing
 description: Learn how to manually overwrite an event management sample website in outbound marketing.
 ms.date: 01/22/2024
+ms.update-cycle: 1095-days
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus

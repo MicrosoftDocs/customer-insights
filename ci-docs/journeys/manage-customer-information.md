@@ -2,6 +2,7 @@
 title: Manage information about your current and prospective customers
 description: How to find, create and use contact, account, and lead records in Dynamics 365 Customer Insights - Journeys.
 ms.date: 08/21/2023
+ms.update-cycle: 1095-days
 ms.topic: article
 author: alfergus
 ms.author: alfergus

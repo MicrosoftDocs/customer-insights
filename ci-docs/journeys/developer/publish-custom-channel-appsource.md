@@ -2,6 +2,7 @@
 title: Publish an outbound marketing custom channel on AppSource
 description: Publish your custom channel on Microsoft AppSource where users can download and install it in their outbound marketing instance.
 ms.date: 04/01/2018
+ms.update-cycle: 1095-days
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
