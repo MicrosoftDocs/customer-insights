@@ -2,6 +2,7 @@
 title: Use custom models from Azure Machine Learning
 description: Learn how to create custom AI models in Azure Machine Learning and use them in your Dynamics 365 Customer Insights workflows.
 ms.date: 11/01/2023
+ms.update-cycle: 180-days
 ms.reviewer: mhart
 ms.topic: how-to
 author: radsay01

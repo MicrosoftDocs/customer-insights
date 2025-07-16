@@ -2,6 +2,7 @@
 title: Transition journeys
 description: Transition your journeys to real-time journeys in Dynamics 365 Customer Insights - Journeys. Follow our guide to ensure a smooth transition.
 ms.date: 06/06/2025
+ms.update-cycle: 180-days
 ms.topic: article
 author: alfergus
 ms.author: colinbirkett

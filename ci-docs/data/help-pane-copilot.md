@@ -2,6 +2,7 @@
 title: Get answers to questions about capabilities from Copilot (preview)
 description: Learn how to use Copilot across Customer Insights - Data.
 ms.date: 11/12/2024
+ms.update-cycle: 180-days
 ms.reviewer: mhart
 ms.topic: how-to
 author: jimsonc
