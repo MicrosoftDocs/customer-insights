@@ -1,5 +1,5 @@
 ---
-title: Using the events API in real-time journeys
+title: Using the events API in real-time journeys (preview)
 description: Learn how to use the events API to access date from events, sessions, session tracks, and passes in real-time journeys.
 ms.date: 06/12/2025
 ms.topic: overview
@@ -9,11 +9,17 @@ search.audienceType:
   - developer
 ---
 
-# Using the events API in real-time journeys
+# Using the events API in real-time journeys (preview)
+
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+
+[!INCLUDE [consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
 
 The events API is a programmatic method to access data of events, sessions, session tracks, passes, speakers, and sponsorships. Additionally, it allows you to register for events and sessions.
 
 The API access is over HTTPS protocol and is accessed from the API endpoint that you receive while creating a web application token. All data is sent and received as JSON.
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note.md)]
 
 ## Register for the events API
 

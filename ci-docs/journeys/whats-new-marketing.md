@@ -33,35 +33,22 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 
 #### General availability
 
-- **Collect extra customer info without updating your data model** 
-	- Easily gather additional information about your customers by creating any kind of question directly in the marketing form editor without the need to create new custom attributes for your lead or contact entity. For example, you can create fields to ask, “How did you hear about our products?” or create contest questions to increase your customer satisfaction and retention.
-	- [Release plan](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/collect-extra-customer-information-without-creating-custom-attributes) 
-	- [Docs](real-time-marketing-forms-custom-fields.md)
-
-	:::image type="content" source="media/custom-form-fields-resized.png" alt-text="Collect extra customer info without updating your data model." lightbox="media/custom-form-fields-resized.png":::
-
-- **Create an event portal on your own website** 
-	- Events are a pivotal element of your business strategy, aiding in customer acquisition and engagement. A centralized location is essential for your clients to discover and learn about events you are organizing. The new event portal allows for the swift creation of a comprehensive hub where customers can access event details, session specifics, and speaker schedules, and conveniently register using the event registration form. The portal can be seamlessly integrated into your existing CMS using a JavaScript code snippet or the new event API.
-	- [Release plan](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/create-event-portal-own-website) 
-	- [Docs](developer/using-rtm-events-api.md)
-
-	:::image type="content" source="media/event-portal-api-2.png" alt-text="Create an event portal on your own website." lightbox="media/event-portal-api-2.png":::
-
-- **Collect extra event attendee information without updating your data model** 
-	- Easily gather additional information about your event attendees by creating any question directly in the form editor without creating new custom attributes for your contact entity. For example, you can create fields to ask, “What is your meal preference?”, "How did you learn about this event?", or you can create contest questions to increase your customer engagement and to gather valuable insights that help you personalize the attendee experience.
-	- [Release plan](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/collect-extra-event-attendee-information-without-updating-data-model) 
-	- [Docs](create-unmapped-fields-registration-forms.md)
-
-	:::image type="content" source="media/custom-form-fields-resized.png" alt-text="Collect extra event attendee information without updating your data model." lightbox="media/custom-form-fields-resized.png":::
-
-<!---
-
-#### Public preview
+- **TITLE** 
+	- Text
+	- [Release plan]() 
+	- [Docs]()  
 
 - **TITLE** 
 	- Text
 	- [Release plan]() 
 	- [Docs]()  
+
+- **TITLE** 
+	- Text
+	- [Release plan]() 
+	- [Docs]()  
+
+#### Public preview
 
 #### Monthly enhancements
 
