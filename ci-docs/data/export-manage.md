@@ -6,7 +6,9 @@ ms.author: jimsonc
 ms.reviewer: mhart
 ms.date: 12/11/2024
 ms.topic: how-to
-ms.custom: bap-template
+ms.custom:
+  - bap-template
+  - sfi-image-nochange
 ---
 
 # Set up and manage exports (preview)

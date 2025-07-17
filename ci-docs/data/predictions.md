@@ -7,8 +7,10 @@ ms.reviewer: mhart
 ms.topic: how-to
 author: radsay01
 ms.author: rsayyaparaju 
-ms.custom: bap-template
 ms.collection: bap-ai-copilot 
+ms.custom:
+  - bap-template
+  - sfi-image-nochange
 ---
 
 # Create and manage predictions

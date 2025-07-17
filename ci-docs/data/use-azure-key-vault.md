@@ -6,6 +6,7 @@ ms.reviewer: mhart
 ms.topic: how-to
 author: brndkfr
 ms.author: bkief
+ms.custom: sfi-image-nochange
 ---
 
 # Bring your own Azure key vault (preview)

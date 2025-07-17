@@ -6,6 +6,7 @@ ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
 ms.reviewer: v-wendysmith
+ms.custom: sfi-image-nochange
 ---
 
 # Describe customer data for data unification

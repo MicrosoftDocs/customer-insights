@@ -6,6 +6,7 @@ ms.topic: how-to
 author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: v-wendysmith
+ms.custom: sfi-image-nochange
 ---
 
 # Find similar customers with AI (preview)

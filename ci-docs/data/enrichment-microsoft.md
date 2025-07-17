@@ -10,6 +10,7 @@ searchScope:
   - ci-enrichments
   - ci-enrichment-wizard
   - customerInsights
+ms.custom: sfi-image-nochange
 ---
 
 # Enrich customer profiles with brands and interests data from Microsoft (preview)

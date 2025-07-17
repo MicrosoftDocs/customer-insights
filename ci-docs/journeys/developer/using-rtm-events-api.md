@@ -7,6 +7,7 @@ author: alfergus
 ms.author: colinbirkett
 search.audienceType: 
   - developer
+ms.custom: sfi-image-nochange
 ---
 
 # Using the events API in real-time journeys (preview)

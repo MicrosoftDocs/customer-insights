@@ -6,6 +6,7 @@ ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
 ms.reviewer: mhart
+ms.custom: sfi-image-nochange
 ---
 
 # Connect to an Azure Data Lake Storage account by using a Microsoft Entra service principal
