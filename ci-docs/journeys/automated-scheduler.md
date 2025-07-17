@@ -2,6 +2,7 @@
 title: Automatically select the best time to send an email message
 description: How to use smart scheduling to let the AI find the best times and days to deliver email messages to each contact in Dynamics 365 Customer Insights - Journeys.
 ms.date: 06/02/2021
+ms.update-cycle: 1095-days
 ms.topic: article
 author: alfergus
 ms.author: alfergus

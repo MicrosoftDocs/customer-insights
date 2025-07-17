@@ -2,6 +2,7 @@
 title: Finalizing registrations for paid events in outbound marketing
 description: Provides information about how to finalize registrations for paid events in outbound marketing.
 ms.date: 02/07/2023
+ms.update-cycle: 1095-days
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus

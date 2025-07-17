@@ -2,6 +2,7 @@
 title: Analytics configurations in outbound marketing
 description: A short topic that links to more information about how to connect your outbound marketing instance to Azure Blob Storage.
 ms.date: 08/21/2023
+ms.update-cycle: 1095-days
 ms.topic: article
 author: alfergus
 ms.author: alfergus

@@ -2,6 +2,7 @@
 title: Basic operations on segments using API in outbound marketing
 description: Learn how to use the segmentation API in outbound marketing.
 ms.date: 06/26/2025
+ms.update-cycle: 1095-days
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus

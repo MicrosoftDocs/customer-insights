@@ -2,6 +2,7 @@
 title: Limitations on migrating files between outbound marketing environments
 description: Learn about limitations on migrating files between outbound marketing environments and possible workarounds.
 ms.date: 11/16/2023
+ms.update-cycle: 1095-days
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus

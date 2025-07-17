@@ -2,6 +2,7 @@
 title: Personalized marketing page content 
 description: How to create web pages that provide content personalized for visitors that are known contacts in Dynamics 365 Customer Insights - Journeys.
 ms.date: 08/21/2023
+ms.update-cycle: 1095-days
 ms.topic: article
 author: alfergus
 ms.author: alfergus

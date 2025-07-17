@@ -2,6 +2,7 @@
 title: Create an interactive customer journey with conditions and signup
 description: A tutorial for how to create an interactive customer journey featuring signups and conditions in Dynamics 365 Customer Insights - Journeys.
 ms.date: 08/18/2023
+ms.update-cycle: 1095-days
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus

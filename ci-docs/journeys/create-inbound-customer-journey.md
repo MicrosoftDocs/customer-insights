@@ -2,6 +2,7 @@
 title: Create an inbound customer journey
 description: How to set up a customer journey to implement inbound marketing that attracts new contacts to register with your organization in Dynamics 365 Customer Insights - Journeys.
 ms.date: 08/18/2023
+ms.update-cycle: 1095-days
 ms.topic: article
 author: alfergus
 ms.author: alfergus

@@ -2,6 +2,7 @@
 title: Power Apps portal hosted custom event website in outbound marketing
 description: Learn how you can extend event management web application functionality for portal-hosted event websites in outbound marketing.
 ms.date: 09/16/2020
+ms.update-cycle: 1095-days
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus

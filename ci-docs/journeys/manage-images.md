@@ -2,6 +2,7 @@
 title: Manage images for landing pages and email messages
 description: A tutorial for how to manage keywords and upload images to the file library in Dynamics 365 Customer Insights - Journeys.
 ms.date: 08/21/2023
+ms.update-cycle: 1095-days
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus

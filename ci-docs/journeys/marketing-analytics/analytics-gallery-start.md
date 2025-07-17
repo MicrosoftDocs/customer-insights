@@ -2,6 +2,7 @@
 title: Download and use marketing analytics templates and sample reports for Power BI
 description: Download and use Power BI templates and sample reports to create custom analytics reports for your Customer Insights - Journeys organization.
 ms.date: 08/17/2023
+ms.update-cycle: 1095-days
 ms.topic: how-to
 author: cabeln
 ms.author: cabeln

@@ -2,6 +2,7 @@
 title: Extend customer journeys using custom channels in outbound marketing
 description: Beyond the out-of-the box tiles (channels) provided for customer journeys, partners can create custom channels to extend the marketing capabilities in outbound marketing.
 ms.date: 10/19/2020
+ms.update-cycle: 1095-days
 ms.topic: overview
 author: alfergus
 ms.author: alfergus

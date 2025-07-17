@@ -2,6 +2,7 @@
 title: Retrieve outbound marketing interactions for a contact using code
 description: Learn how to programmatically retrieve interactions for a contact using an action in outbound marketing.
 ms.date: 09/15/2022
+ms.update-cycle: 1095-days
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus

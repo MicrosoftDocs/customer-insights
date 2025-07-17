@@ -2,6 +2,7 @@
 title: Create interactive features with or without portals in outbound marketing
 description: How to create interactive webpages and an events website with or without portals with Dynamics 365 Customer Insights - Journeys.
 ms.date: 08/21/2023
+ms.update-cycle: 1095-days
 ms.topic: article
 author: alfergus
 ms.author: alfergus

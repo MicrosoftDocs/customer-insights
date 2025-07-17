@@ -2,6 +2,7 @@
 title: Set up lead scoring models
 description: A tutorial for how to set up lead-scoring models and read lead scores in Dynamics 365 Customer Insights - Journeys.
 ms.date: 08/23/2023
+ms.update-cycle: 1095-days
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus

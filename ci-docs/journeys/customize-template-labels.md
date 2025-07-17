@@ -2,6 +2,7 @@
 title: Create and customize template labels
 description: Learn how to customize the selection, text, and background colors available for use when labelling various types of templates in Dynamics 365 Customer Insights - Journeys.
 ms.date: 08/18/2023
+ms.update-cycle: 1095-days
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus

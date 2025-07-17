@@ -2,6 +2,7 @@
 title: Using the events API in outbound marketing
 description: Learn how to use the events API to access date from events, sessions, session tracks, and passes in outbound marketing.
 ms.date: 10/18/2022
+ms.update-cycle: 1095-days
 ms.topic: overview
 author: alfergus
 ms.author: alfergus

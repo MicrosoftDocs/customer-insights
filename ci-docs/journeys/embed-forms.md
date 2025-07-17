@@ -2,6 +2,7 @@
 title: Embed forms on external websites
 description: How to publish a form on an external site and capture the submissions in Dynamics 365 Customer Insights - Journeys.
 ms.date: 08/18/2023
+ms.update-cycle: 1095-days
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus

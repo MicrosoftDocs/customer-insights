@@ -2,6 +2,7 @@
 title: Configure form matching in outbound marketing
 description: Set up how form submissions are matched to existing contacts or leads when deciding whether to update an existing record or to create a new one in outbound marketing.
 ms.date: 08/21/2023
+ms.update-cycle: 1095-days
 ms.topic: article
 author: alfergus
 ms.author: alfergus
