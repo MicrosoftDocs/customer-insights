@@ -46,7 +46,7 @@ We first announced the removal of outbound marketing in August 2023 and later se
 
 We're implementing a phased approach for removing outbound marketing to minimize disruption to customers’ businesses. When we detect that there are no active outbound marketing campaigns or events in an environment (“org”), we initially hide outbound marketing and then remove it after a few weeks. With this approach, the outbound marketing removal date is different for each environment, as it depends on when the outbound marketing campaigns or events complete. Product support for outbound marketing is provided for high-severity and critical issues only.
 
-To reduce and eventually end outbound  marketing usage, we're applying a phased approach (the changes below only apply to outbound marketing; real-time marketing is unaffected):
+To reduce and eventually end outbound marketing usage, we're applying a phased approach (the changes below only apply to outbound marketing; real-time marketing is unaffected):
 
 - **Phase 1 - Existing campaigns and event work; new ones can be created**: Users get messages about outbound marketing removal whenever they attempt to create a new outbound marketing email, journey, segment, form, or marketing page. They can dismiss the dialog and continue creating outbound marketing campaigns and events.  
 - **Phase 2 - Existing campaigns and events work; new ones *can't* be created**: Users are no longer able to dismiss the dialog and therefore can't create new outbound marketing campaigns or events. We have not yet set a date for this phase; we'll announce it soon.
