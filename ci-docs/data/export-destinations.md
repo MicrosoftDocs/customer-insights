@@ -1,23 +1,19 @@
 ---
-title: "Exports (preview) overview"
+title: "Exports overview"
 description: "Overview on exports in Dynamics 365 Customer Insights - Data."
 author: Scott-Stabbert
 ms.author: sstabbert
-ms.reviewer: mhart
-ms.date: 02/01/2024
+ms.reviewer: alfergus
+ms.date: 07/17/2025
 ms.topic: overview
 ms.custom: bap-template
 ---
 
-# Exports (preview) overview
+# Exports overview
 
-[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
-
-Exports allow you to share specific data with various applications. They can include customer profiles, tables, schemas, and mapping details. Each export requires a [connection, set up by an administrator, to manage authentication and access](connections.md). The **Exports** page shows all configured exports.
+Exports let you share specific data with different applications. Exports can include customer profiles, tables, schemas, and mapping details. Each export needs a [connection set up by an admin to manage authentication and access](connections.md). The **Exports** page shows all configured exports.
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=16eaf464-5b0a-4aa0-9775-df95da16e89d]
-
-[!INCLUDE [public-preview-note](includes/public-preview-note.md)]
 
 ## Export types
 
@@ -32,13 +28,13 @@ There are two main types of exports:
 
 ### Segment exports
 
-Segments are built on the *unified customer profile* table. Every segment that meets the requirements of the target systems (for example, an email address) can get exported. When defining a segment you often want to ensure it's exported as well, to do so you can use the **Manage exports** menu option.
+Segments are built on the *unified customer profile* table. Any segment that meets the requirements of the target system (for example, an email address) can be exported. When you define a segment, you often want to export it too. To do this, use the **Manage exports** menu option.
 
 Limits on segment exports include:
 
-- Third-party target systems can limit the number of customer profiles that you can export.
-- For individual customers, you see the actual number of segment members when you select a segment for export. The system warns you if a segment is too large.
-- Fields available for export are limited to the Customer profile table. Projected attributes from other tables aren't available for export, regardless if you use them when creating a segment.
+- Third-party target systems can limit the number of customer profiles you export.
+- For each customer, you see the actual number of segment members when you select a segment for export. The system warns you if a segment is too large.
+- Fields available for export are limited to the Customer profile table. Projected attributes from other tables aren't available for export, even if you use them when creating a segment.
 
 ## Next step
 
