@@ -244,7 +244,7 @@ Learn how to make the most of the new Dynamics 365 Customer Insights features in
 
 - **Allow individuals to reenter a one-time, dynamic segment journey** 
 	- Audience members who move between stages of the customer lifecycle may need to repeat a lifecycle-specific state of the journey. For example, if a customer repeats a buying journey for a different product, they may reenter the dynamic segment conditions as they reenter the purchase funnel. As such, they should be allowed to reenter a journey for that dynamic segment when they come back into it. 
-	- [Release plan](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/allow-individuals-re-enter-one-time-dynamic-segment-journey) 
+	- [Release plan](/dynamics365/release-plan/2024wave2/customer-insights/dynamics365-customer-insights-journeys/allow-individuals-re-enter-one-time-dynamic-segment-journey) 
 	- [Docs](real-time-marketing-segment-based-journey.md)
 
 #### Public preview
@@ -296,7 +296,7 @@ Learn how to make the most of the new Dynamics 365 Customer Insights features in
 
 - **Allow individuals to reenter a one-time, dynamic segment journey** 
 	- Audience members who move between stages of the customer lifecycle may need to repeat a lifecycle-specific state of the journey. For example, if a customer repeats a buying journey for a different product, they may reenter the dynamic segment conditions as they reenter the purchase funnel. As such, they should be allowed to reenter a journey for that dynamic segment when they come back into it. 
-	- [Release plan](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/allow-individuals-re-enter-one-time-dynamic-segment-journey) 
+	- [Release plan](/dynamics365/release-plan/2024wave2/customer-insights/dynamics365-customer-insights-journeys/allow-individuals-re-enter-one-time-dynamic-segment-journey) 
 	- [Docs](real-time-marketing-segment-based-journey.md)
 
 - **Create event portals with event and registration details using Power Pages** 
