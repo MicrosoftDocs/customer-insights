@@ -343,6 +343,8 @@
       href: security-lockbox.md
     - name: Set up an Azure Private Link
       href: private-link.md
+    - name: Connect to storage accounts behind firewalls
+      href: private-endpoint.md
     - name: Export diagnostic logs
       href: diagnostics.md
     - name: Manage connections
