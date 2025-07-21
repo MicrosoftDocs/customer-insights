@@ -2,6 +2,7 @@
 title: Marketing program effectiveness analysis for Dynamics 365 Customer Insights - Journeys
 description: Get the end-to-end marketing program effectiveness analysis, including automation, journeys, channels, lead generation, conversion and revenue generation.
 ms.date: 08/17/2023
+ms.update-cycle: 1095-days
 ms.topic: reference
 author: cabeln
 ms.author: cabeln
@@ -10,7 +11,7 @@ search.audienceType:
   - admin
   - customizer
   - enduser
-ms.custom: outbound-marketing
+ms.custom: outbound-marketing, evergreen
 ---
 
 # Marketing program effectiveness analysis for Dynamics 365 Customer Insights - Journeys

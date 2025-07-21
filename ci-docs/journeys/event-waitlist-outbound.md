@@ -2,6 +2,7 @@
 title: Set up and manage an event waitlist in outbound marketing
 description: Describes how event waitlists work, how to set them up, and how to invite waiting people when capacity becomes available in outbound marketing.
 ms.date: 09/22/2023
+ms.update-cycle: 1095-days
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
@@ -9,7 +10,7 @@ search.audienceType:
   - admin
   - customizer
   - enduser
-ms.custom: outbound-marketing
+ms.custom: outbound-marketing, evergreen
 ---
 
 # Set up and manage an event waitlist in outbound marketing

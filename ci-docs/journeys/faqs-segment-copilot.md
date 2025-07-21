@@ -2,6 +2,7 @@
 title: Responsible AI FAQs for the segment copilot
 description: Learn about the segment copilot's AI capabilities and responsible use in our FAQs. Discover how to generate segments using natural language prompts.
 ms.date: 11/22/2024
+ms.update-cycle: 180-days
 ms.topic: faq
 author: alfergus
 ms.author: alfergus

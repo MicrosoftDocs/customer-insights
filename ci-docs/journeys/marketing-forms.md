@@ -2,6 +2,7 @@
 title: Set up and manage marketing forms for use in marketing pages
 description: Learn about various types of marketing forms and how to create them in Dynamics 365 Customer Insights - Journeys.
 ms.date: 08/21/2023
+ms.update-cycle: 1095-days
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -9,7 +10,7 @@ search.audienceType:
   - admin
   - customizer
   - enduser
-ms.custom: outbound-marketing
+ms.custom: outbound-marketing, evergreen
 ---
 
 # Set up and manage marketing forms for use in marketing pages

@@ -2,12 +2,13 @@
 title: Custom event portal localization in outbound marketing
 description: Provides information about how you can extend event management web application functionality in outbound marketing.
 ms.date: 02/06/2019
+ms.update-cycle: 1095-days
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
 search.audienceType: 
   - developer
-ms.custom: outbound-marketing
+ms.custom: outbound-marketing, evergreen
 ---
 
 # Custom event portal localization in outbound marketing

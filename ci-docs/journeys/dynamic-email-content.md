@@ -2,6 +2,7 @@
 title: Add dynamic content to email messages
 description: How to add field values, set up content settings information, conditional statements, and while loops to your email designs in Dynamics 365 Customer Insights - Journeys.
 ms.date: 08/12/2024
+ms.update-cycle: 1095-days
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
@@ -10,7 +11,7 @@ search.audienceType:
   - admin
   - customizer
   - enduser
-ms.custom: outbound-marketing
+ms.custom: outbound-marketing, evergreen
 ---
 
 # Add dynamic content to email messages

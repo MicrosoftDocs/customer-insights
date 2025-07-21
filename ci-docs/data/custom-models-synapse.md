@@ -2,6 +2,7 @@
 title: Use custom models from Azure Synapse
 description: Learn how to create custom AI models in Azure Synapse and use them in your Dynamics 365 Customer Insights workflows.
 ms.date: 09/01/2023
+ms.update-cycle: 180-days
 ms.topic: how-to
 author: radsay01
 ms.author: rsayyaparaju

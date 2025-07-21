@@ -2,12 +2,13 @@
 title: "Step 4: Test your custom channel tile in outbound marketing"
 description: Provides information on how you can make the custom channel tile available in the customer journey designer in outbound marketing.
 ms.date: 03/17/2022
+ms.update-cycle: 1095-days
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
 search.audienceType: 
   - developer
-ms.custom: outbound-marketing
+ms.custom: outbound-marketing, evergreen
 ---
 
 # Step 4: Test your custom channel tile in outbound marketing

@@ -2,6 +2,7 @@
 title: How the outbound marketing app uses cookies
 description: Describes how cookies are set and used in outbound marketing.
 ms.date: 06/26/2025
+ms.update-cycle: 1095-days
 ms.topic: reference
 author: alfergus
 ms.author: alfergus
@@ -9,7 +10,7 @@ search.audienceType:
   - admin
   - customizer
   - enduser
-ms.custom: outbound-marketing
+ms.custom: outbound-marketing, evergreen
 ---
 
 # How the outbound marketing app uses cookies

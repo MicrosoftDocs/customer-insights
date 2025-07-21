@@ -2,12 +2,13 @@
 title: Overview of custom channels in outbound marketing
 description: A custom channel contains custom entities, workflow or plug-in containing your custom logic, and couple of web resources that help surface the custom channel as a “tile” in the customer journey designer in outbound marketing.
 ms.date: 04/01/2018
+ms.update-cycle: 1095-days
 ms.topic: overview
 author: alfergus
 ms.author: alfergus
 search.audienceType: 
   - developer
-ms.custom: outbound-marketing
+ms.custom: outbound-marketing, evergreen
 ---
 
 # Overview of custom channels in outbound marketing

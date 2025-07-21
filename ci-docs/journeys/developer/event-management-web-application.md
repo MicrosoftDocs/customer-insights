@@ -2,12 +2,13 @@
 title: Event management web application in outbound marketing overview
 description: Learn how you can extend event management web application functionality in outbound marketing.
 ms.date: 04/18/2024
+ms.update-cycle: 1095-days
 ms.topic: overview
 author: alfergus
 ms.author: alfergus
 search.audienceType: 
   - developer
-ms.custom: outbound-marketing
+ms.custom: outbound-marketing, evergreen
 ---
 
 # Event management web application in outbound marketing overview

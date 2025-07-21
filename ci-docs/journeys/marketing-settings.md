@@ -2,6 +2,7 @@
 title: Overview of marketing settings in outbound marketing
 description: Get an overview of marketing settings and find links to details about each page in the outbound marketing administration settings.
 ms.date: 08/21/2023
+ms.update-cycle: 1095-days
 ms.topic: overview
 author: alfergus
 ms.author: alfergus
@@ -9,7 +10,7 @@ search.audienceType:
   - admin
   - customizer
   - enduser
-ms.custom: outbound-marketing
+ms.custom: outbound-marketing, evergreen
 ---
 
 # Overview of marketing settings in outbound marketing

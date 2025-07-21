@@ -2,12 +2,13 @@
 title: Custom channel activity create interaction
 description: Describes the input parameters required by the msdyncrm_CustomChannelActivityCreateInteraction action.
 ms.date: 02/15/2020
+ms.update-cycle: 1095-days
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
 search.audienceType: 
   - developer
-ms.custom: outbound-marketing
+ms.custom: outbound-marketing, evergreen
 ---
 
 # Custom channel activity create interaction

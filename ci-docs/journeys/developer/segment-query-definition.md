@@ -2,12 +2,13 @@
 title: Segment query definition
 description: The segmentation API enables programmatic interaction with certain segmentation features of Dynamics 365 Customer Insights - Journeys app.
 ms.date: 08/12/2019
+ms.update-cycle: 1095-days
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
 search.audienceType: 
   - developer
-ms.custom: outbound-marketing
+ms.custom: outbound-marketing, evergreen
 ---
 
 # Segment Query definition

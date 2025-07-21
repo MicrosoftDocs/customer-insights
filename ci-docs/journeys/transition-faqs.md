@@ -1,7 +1,8 @@
 ---
 title: Real-time journeys transition FAQs
 description: Discover how to transition from outbound marketing to real-time journeys in Customer Insights - Journeys. Get answers to frequently asked questions.
-ms.date: 07/01/2025
+ms.date: 07/17/2025
+ms.update-cycle: 180-days
 ms.topic: faq
 author: alfergus
 ms.author: alfergus
@@ -43,19 +44,21 @@ We first announced the removal of outbound marketing in August 2023 and later se
 
 ## What will happen after June 30, 2025? Will outbound marketing stop working?
 
-We're implementing a phased approach for removing outbound marketing to minimize disruption to customers’ businesses. When we detect there are no active outbound marketing campaigns or events in an environment (“org”), we initially hide outbound marketing and then remove it after a few weeks. With this approach, the outbound marketing removal date is different for each environment as it depends on when the outbound marketing campaigns or events complete. While we continue to support outbound marketing, only critical issues are prioritized.
+We're implementing a phased approach for removing outbound marketing to minimize disruption to customers’ businesses. When we detect that there are no active outbound marketing campaigns or events in an environment (“org”), we initially hide outbound marketing and then remove it after a few weeks. With this approach, the outbound marketing removal date is different for each environment, as it depends on when the outbound marketing campaigns or events complete. Product support for outbound marketing is provided for high-severity and critical issues only.
 
-To reduce and eventually end outbound  marketing usage, we're applying a phased approach:
+To reduce and eventually end outbound marketing usage, we're applying a phased approach (the changes below only apply to outbound marketing; real-time marketing is unaffected):
 
 - **Phase 1 - Existing campaigns and event work; new ones can be created**: Users get messages about outbound marketing removal whenever they attempt to create a new outbound marketing email, journey, segment, form, or marketing page. They can dismiss the dialog and continue creating outbound marketing campaigns and events.  
 - **Phase 2 - Existing campaigns and events work; new ones *can't* be created**: Users are no longer able to dismiss the dialog and therefore can't create new outbound marketing campaigns or events. We have not yet set a date for this phase; we'll announce it soon.
 - **Phase 3 - Existing campaigns and events end, outbound marketing is hidden**: When existing campaigns and events are complete, we'll automatically hide outbound marketing from the user interface. After a few weeks, we'll remove outbound marketing.
 
-We're currently in Phase 1. This phased approach may be revised in the future (for example, we may set a common date to remove outbound marketing from all environments, even if they have active outbound marketing campaigns or events). We'll continue to communicate through the admin center and in-product messaging to keep you informed. 
+We're in Phase 2 (as of July 17, 2025), starting with outbound marketing environments with no or low usage. If you have an approved extension, your environments won't be moved to Phase 2 until after the approved date. 
+
+This phased approach may be revised in the future (for example, we may set a common date to remove outbound marketing from all environments, even if they have active outbound marketing campaigns or events). We'll continue to communicate through the admin center and in-product messaging to keep you informed. 
 
 ## I have an approved extension for outbound marketing. What can I expect?
 
-An extension approval implies only one thing: your environment won't be moved to the “blocking” phase (described in the previous section) until after your approved date. Some of the messages and banners about outbound marketing removal may still be shown. Periodic product releases that update and change current functionality will continue to be applied as usual. 
+An extension approval implies only one thing: your environment won't be moved to the “blocking” phase (described in the previous section) until after your approved date. Some of the messages and banners about outbound marketing removal may still be shown. Periodic product releases that update and change current functionality will continue to be applied as usual. Product support for outbound marketing is provided for high-severity and critical issues only.
 
 ## What will happen to outbound tables and data when outbound marketing is removed?
 

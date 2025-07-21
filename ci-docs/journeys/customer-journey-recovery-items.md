@@ -2,6 +2,7 @@
 title: Troubleshoot customer journey customization errors
 description: Use the recovery items tab to troubleshoot customer journey custom workflows in Dynamics 365 Customer Insights - Journeys.
 ms.date: 08/18/2023
+ms.update-cycle: 1095-days
 ms.topic: reference
 author: alfergus
 ms.author: alfergus
@@ -9,7 +10,7 @@ search.audienceType:
   - admin
   - customizer
   - enduser
-ms.custom: outbound-marketing
+ms.custom: outbound-marketing, evergreen
 ---
 
 # Troubleshoot customer journey customization errors

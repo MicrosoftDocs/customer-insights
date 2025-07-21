@@ -2,6 +2,7 @@
 title: Copilot - Create journeys using AI assistance (preview)
 description: Create marketing journeys using everyday language with Copilot. Enable the feature, provide feedback, and streamline your marketing efforts.
 ms.date: 06/12/2025
+ms.update-cycle: 180-days
 ms.topic: get-started
 author: alfergus
 ms.author: alfergus
@@ -88,9 +89,5 @@ The following section outlines some "do's" and "don'ts" for using the journey co
         - *Explanation*: This prompt is irrelevant to building journeys. Copilot is still learning and for the time being is only useful for creating the journey outline.
 - **Don't: Use prompts that involve social media posts. Copilot doesn't support anything beyond what already exists in the product today.**
     - **Example 1**: "Create a social media post on Facebook and if anyone interacts with it, send them a personalized message."
-
-## Related information
-
-[Take campaigns from concept to launch (video)](https://youtu.be/tgHOPefdYzA)
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]

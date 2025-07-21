@@ -2,6 +2,7 @@
 title: Design and run A/B tests on your email designs
 description: How to test slightly different email designs on small portions of your audience and then deliver the winner to the rest of the audience in Dynamics 365 Customer Insights - Journeys.
 ms.date: 08/18/2023
+ms.update-cycle: 1095-days
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
@@ -9,7 +10,7 @@ search.audienceType:
   - admin
   - customizer
   - enduser
-ms.custom: outbound-marketing
+ms.custom: outbound-marketing, evergreen
 ---
 
 # Design and run A/B tests on your email designs

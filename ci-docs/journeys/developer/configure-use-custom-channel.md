@@ -2,12 +2,13 @@
 title: Configure and use a custom channel in outbound marketing
 description: Provides information on how to install custom channel from AppSource to your outbound marketing instance.
 ms.date: 03/17/2022
+ms.update-cycle: 1095-days
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
 search.audienceType: 
   - developer
-ms.custom: outbound-marketing
+ms.custom: outbound-marketing, evergreen
 ---
 
 # Configure and use a custom channel in outbound marketing

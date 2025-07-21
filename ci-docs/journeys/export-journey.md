@@ -2,6 +2,7 @@
 title: Export customer journey insights into a .CSV file
 description: Learn how to export Dynamics 365 Customer Insights - Journeys customer journey data to Excel for further analysis or reporting.
 ms.date: 08/18/2023
+ms.update-cycle: 1095-days
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
@@ -9,7 +10,7 @@ search.audienceType:
   - admin
   - customizer
   - enduser
-ms.custom: outbound-marketing
+ms.custom: outbound-marketing, evergreen
 ---
 
 # Export customer journey insights into a .CSV file

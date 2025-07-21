@@ -2,12 +2,13 @@
 title: Basic outbound marketing customer journey API operations
 description: The customer journey API enables programmatic interaction with segmentation features of outbound marketing.
 ms.date: 01/27/2022
+ms.update-cycle: 1095-days
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
 search.audienceType: 
   - developer
-ms.custom: outbound-marketing
+ms.custom: outbound-marketing, evergreen
 ---
 
 # Basic outbound marketing customer journey API operations

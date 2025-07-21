@@ -2,12 +2,13 @@
 title: User authentication using the events API in outbound marketing
 description: Learn how to use the events API to authenticate users in outbound marketing.
 ms.date: 06/11/2019
+ms.update-cycle: 1095-days
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
 search.audienceType: 
   - developer
-ms.custom: outbound-marketing
+ms.custom: outbound-marketing, evergreen
 ---
 
 # User authentication using events API in outbound marketing

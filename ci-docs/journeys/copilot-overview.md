@@ -2,6 +2,7 @@
 title: Copilot features in Customer Insights - Journeys
 description: Use Copilot in Customer Insights - Journeys to streamline your marketing campaigns. Create and manage segments, emails, and journeys with AI assistance.
 ms.date: 11/22/2024
+ms.update-cycle: 180-days
 ms.topic: article
 author: alfergus
 ms.author: alfergus

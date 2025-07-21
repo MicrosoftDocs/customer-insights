@@ -2,12 +2,13 @@
 title: Outbound marketing solutions
 description: Know about the outbound marketing installed solutions in your marketing organization.
 ms.date: 04/01/2018
+ms.update-cycle: 1095-days
 ms.topic: reference
 author: alfergus
 ms.author: alfergus
 search.audienceType: 
   - developer
-ms.custom: outbound-marketing
+ms.custom: outbound-marketing, evergreen
 ---
 
 # Outbound marketing solutions
