@@ -1,7 +1,7 @@
 ---
 title: New and upcoming features
 description: Discover the latest features, improvements, and bug fixes in Dynamics 365 Customer Insights - Journeys. Stay updated with our monthly release notes.
-ms.date: 07/16/2025
+ms.date: 07/21/2025
 ms.topic: whats-new
 author: colinbirkett
 ms.author: colinbirkett
@@ -40,11 +40,6 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 
 	:::image type="content" source="media/event-portal-api-2.png" alt-text="Create an event portal on your own website." lightbox="media/event-portal-api-2.png":::
 
-#### Monthly enhancements
-
- **Do not overwrite existing values with submitted empty values** 
-	- TBA
-
 <!---
 
 #### Public preview
@@ -52,6 +47,11 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 #### New blogs and scenario docs
 
 --->
+
+#### Monthly enhancements
+
+- **Protect existing Lead and Contact data with the ‘Ignore empty values’ toggle** 
+	- To prevent accidental data loss, Forms now support an ‘Ignore empty values’ option in the Form editor. When enabled, this setting ensures that empty fields submitted by end users won’t overwrite existing Lead or Contact data. It applies to both marketing and registration forms, and is enabled by default for new forms—while remaining disabled for existing ones to preserve current behavior. 
 
 ### July 2025 update
 
