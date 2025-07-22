@@ -32,6 +32,8 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 |------------------|-----------------|
 | Customer Insights - Journeys       |  1.1.57027.56 |
 
+<!--- POSTPONED IN AUGUST, HIDING UNTIL SEPTEMBER
+
 #### General availability
 
 - **Create an event portal on your own website** 
@@ -40,8 +42,6 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 	- [Docs](developer/using-rtm-events-api.md)
 
 	:::image type="content" source="media/event-portal-api-2.png" alt-text="Create an event portal on your own website." lightbox="media/event-portal-api-2.png":::
-
-<!---
 
 #### Public preview
 
