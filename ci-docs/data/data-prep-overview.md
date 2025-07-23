@@ -15,6 +15,9 @@ ms.collection: bap-ai-copilot
 
 [!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
+> [!IMPORTANT]
+> Copilot features in Customer Insights - Data are only available in environments in the United States and Switzerland regions. These features may become available in additional regions in future releases.
+
 The data prep report in Dynamics 365 Customer Insights - Data helps you understand the overall data quality and the readiness of your data to produce insights. It helps you improve your data to unlock more and better insights for whatever sales or marketing strategy you have in mind.
 
 [!INCLUDE [public-preview-note](includes/public-preview-note.md)]
@@ -27,7 +30,7 @@ The data prep report automatically runs if the following prerequisites are met:
 - [Unification](data-unification.md) is completed.
 - [Activities and relationships](activities.md) are mapped.
 - [Enable Copilot features powered by Azure OpenAI](copilot-global-consent.md) setting turned **On**. Default is **On**.
-- Environment is in a [supported geography and uses a supported language](https://releaseplans.microsoft.com/availability-reports/?report=copilotfeaturereport).
+- Environment is in a supported geography and uses a supported language.
 - At least 100 customer records, preferably 1,000 records.
 - At least one year of transaction history, preferably two to three years. Ideally two to three transactions per customer ID, preferably across multiple dates.
 - Customer identifier: A unique identifier to match transactions to your customers.

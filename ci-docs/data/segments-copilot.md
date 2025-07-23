@@ -15,6 +15,9 @@ ms.collection: bap-ai-copilot
 
 [!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
+> [!IMPORTANT]
+> Copilot features in Customer Insights - Data are only available in environments in the United States and Switzerland regions. These features may become available in additional regions in future releases.
+
 Create segments using everyday words in Dynamics 365 Customer Insights - Data without detailed knowledge about the data schema. Improve the AI model and get more accurate answers by providing feedback about prompts and results.
 
 [!INCLUDE [public-preview-note](includes/public-preview-note.md)]
@@ -22,7 +25,7 @@ Create segments using everyday words in Dynamics 365 Customer Insights - Data wi
 ## Prerequisites
 
 - [Enable Copilot features powered by Azure OpenAI](copilot-global-consent.md) setting turned **On**. Default is **On**.
-- Environment is in a [supported geography and uses a supported language](https://releaseplans.microsoft.com/availability-reports/?report=copilotfeaturereport).
+- Environment is in a supported geography and uses a supported language.
 
 ## Create a segment with Copilot
 
