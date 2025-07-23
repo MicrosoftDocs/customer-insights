@@ -135,7 +135,7 @@ After the Azure admin gets the “For Azure admin” details from the Power Plat
 
     When prompted for each value, enter the values shown.
 
-        **What Setup-SubnetDelegationForCiData.ps1 does**
+    **What Setup-SubnetDelegationForCiData.ps1 does**
 
     - Creates one or two Azure virtual networks; one in each Azure region your Power Platform region uses. Most Power Platform regions have a primary and a secondary Azure region, but some have only a primary.
     - Creates a subnet in each virtual network.
