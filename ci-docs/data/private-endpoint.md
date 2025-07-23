@@ -123,15 +123,15 @@ After the Azure admin gets the “For Azure admin” details from the Power Plat
 1.  Launch PowerShell and run the **Setup-SubnetDelegationForCiData.ps1** command your Power Platform admin gives you. Enter your `SubscriptionId` and Power Platform region.
 
     When the script runs, it shows you values to enter. For example, you see a message like the following:  
-    
-```
-Pass the parameters as printed below.
 
-.\SetupVnetForSubnetDelegation.ps1
-    -virtualNetworkSubscriptionId: 44444444-0a57-4571-b790-666666666666
-    -virtualNetworkName: cidata-subnetdelegation-eastus-resource-vnet
-    -subnetName: cidata-delegated
-```
+    ```powershell
+    Pass the parameters as printed below.
+
+    .\SetupVnetForSubnetDelegation.ps1
+        -virtualNetworkSubscriptionId: 44444444-0a57-4571-b790-666666666666
+        -virtualNetworkName: cidata-subnetdelegation-eastus-resource-vnet
+        -subnetName: cidata-delegated
+    ```
 
     When prompted for each value, enter the values shown.
 
