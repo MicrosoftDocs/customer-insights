@@ -12,14 +12,14 @@ search.audienceType:
 
 # Public IP addresses used for sending e-mails
 
-Dynamics 365 Customer Insights - Journeys uses a set of dedicated IPv4 public network subnets for sending e-mails. All e-mails sent by Customer Insights - Journeys depart from an IP address belonging to one of the subnets. The subnets are owned by the Customer Insights - Journeys platform; no other product or customer can use an IP address from them.
+Dynamics 365 Customer Insights - Journeys uses a set of dedicated IPv4 public network subnets for sending e-mails. All e-mails sent by Customer Insights - Journeys depart from an IP address belonging to one of the subnets. The Customer Insights - Journeys platform owns the subnets; no other product or customer can use an IP address from them.
 
 > [!NOTE]
-> In rare cases (depending on your spam-filter provider) you may need to pre-approve the Customer Insights - Journeys public IPs in your spam-filter.
+> In rare cases (depending on your spam-filter provider) you might need to preapprove the Customer Insights - Journeys public IPs in your spam-filter.
 
-To ensure that you always have the current list of IP ranges, you should refer to the [Azure IP Ranges and Service Tags](https://www.microsoft.com/en-us/download/details.aspx?id=56519) document. The document is in JSON format and lists all Azure-tagged IP subnets. Customer Insights - Journeys e-mail public IPs are listed under the "Dynamics365ForMarketingEmail" Service Tag. The list of IP subnets is under "addressPrefixes."
+To ensure that you always have the current list of IP ranges, refer to the [Azure IP Ranges and Service Tags](https://www.microsoft.com/en-us/download/details.aspx?id=56519) document. The document is in JSON format and lists all Azure-tagged IP subnets. Customer Insights - Journeys e-mail public IPs appear under the "Dynamics365ForMarketingEmail" service tag. The list of IP subnets appears under "addressPrefixes."
 
-Th Azure IP Ranges and Service Tags document shows the full list of IP ranges used by Customer Insights - Journeys for email sending purposes. If you only need region-specific IP ranges, refer to the following table:
+The Azure IP Ranges and Service Tags document shows the full list of IP ranges that Customer Insights - Journeys uses for sending e-mails. If you only need region-specific IP ranges, refer to the following table:
 
 | Customer Insights - Journeys IP range | Geo code |        Region        |
 |:-----------------------:|:--------:|:--------------------:|
@@ -40,6 +40,6 @@ Th Azure IP Ranges and Service Tags document shows the full list of IP ranges us
 |     51.140.147.0/24     |    GBR   |     Great Britain    |
 
 > [!IMPORTANT]
-> In case of emergency, the geo-based IP addresses may be rotated. For better reliability and redundancy, it is strongly recommend to allow list all specified IP ranges.
+> In case of emergency, we might rotate the geo-based IP addresses. For better reliability and redundancy, we strongly recommend that you allowlist all specified IP ranges.
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
