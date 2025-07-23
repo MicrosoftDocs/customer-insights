@@ -16,7 +16,7 @@ ms.collection: bap-ai-copilot
 [!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
 > [!IMPORTANT]
-> - Copilot features in Customer Insights - Data are only available in environments in the United States and Switzerland regions. These features may become available in additional regions in future releases.
+> Copilot features in Customer Insights - Data are only available in environments in the United States and Switzerland regions. These features may become available in additional regions in future releases.
 
 The data prep report in Dynamics 365 Customer Insights - Data helps you understand the overall data quality and the readiness of your data to produce insights. It helps you improve your data to unlock more and better insights for whatever sales or marketing strategy you have in mind.
 

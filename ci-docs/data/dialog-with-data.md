@@ -16,7 +16,7 @@ ms.collection: bap-ai-copilot
 [!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
 > [!IMPORTANT]
-> - Copilot features in Customer Insights - Data are only available in environments in the United States and Switzerland regions. These features may become available in additional regions in future releases.
+> Copilot features in Customer Insights - Data are only available in environments in the United States and Switzerland regions. These features may become available in additional regions in future releases.
 
 Understanding your customers’ profiles and preferences is essential for driving personalized experiences. Customer Insights – Data uses generative AI capabilities to let you ask questions in natural language to quickly generate insights about your customers. Now end users like marketers, sellers, and service agents can get insights to better understand and serve customers easily without the support of IT teams or other tools.
 

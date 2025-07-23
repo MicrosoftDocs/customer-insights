@@ -16,7 +16,7 @@ ms.collection: bap-ai-copilot
 [!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
 > [!IMPORTANT]
-> - Copilot features in Customer Insights - Data are only available in environments in the United States and Switzerland regions. These features may become available in additional regions in future releases.
+> Copilot features in Customer Insights - Data are only available in environments in the United States and Switzerland regions. These features may become available in additional regions in future releases.
 
 There are three levels of consent to use generative AI Copilot features in Customer Insights - Data. Consent is global for all users and all Copilot features in Customer Insights - Data.
 

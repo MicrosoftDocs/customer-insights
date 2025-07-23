@@ -16,7 +16,7 @@ ms.collection: bap-ai-copilot
 [!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
 > [!IMPORTANT]
-> - Copilot features in Customer Insights - Data are only available in environments in the United States and Switzerland regions. These features may become available in additional regions in future releases.
+> Copilot features in Customer Insights - Data are only available in environments in the United States and Switzerland regions. These features may become available in additional regions in future releases.
 
 Create segments using everyday words in Dynamics 365 Customer Insights - Data without detailed knowledge about the data schema. Improve the AI model and get more accurate answers by providing feedback about prompts and results.
 

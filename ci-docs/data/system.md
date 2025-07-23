@@ -16,7 +16,7 @@ ms.collection: bap-ai-copilot
 [!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
 > [!IMPORTANT]
-> - Copilot features in Customer Insights - Data are only available in environments in the United States and Switzerland regions. These features may become available in additional regions in future releases.
+> Copilot features in Customer Insights - Data are only available in environments in the United States and Switzerland regions. These features may become available in additional regions in future releases.
 
 View system information and system status.
 
