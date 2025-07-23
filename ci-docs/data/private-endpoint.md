@@ -19,7 +19,7 @@ ms.custom:
 
 Sometimes you want Customer Insights – Data to connect to an Azure Data Lake Storage account that's behind a firewall (storage accounts where "Public network access" is disabled). To grant access to a storage account behind a firewall, you need to create a private endpoint.
 
-:::image type="content" source="media/connect-to-storage-accounts-behind-firewalls/image1.png" alt-text="Screenshot of Azure Data Lake Storage account firewall settings.":::
+:::image type="content" source="media/connect-to-storage-accounts-behind-firewalls/public-disabled.png" alt-text="Screenshot of Azure Data Lake Storage account firewall settings.":::
 
 There are three scenarios where Customer Insights – Data may need to connect to a firewalled Azure Data Lake Storage account:
 
@@ -73,11 +73,11 @@ Create private endpoints in Azure before you set up data connections in Customer
 
 Instances with older private links prompt you to update to private endpoints. The following screenshot shows the message.
 
-:::image type="content" source="media/connect-to-storage-accounts-behind-firewalls/image2.png" alt-text="Screenshot of prompt to update private links.":::
+:::image type="content" source="media/connect-to-storage-accounts-behind-firewalls/prompt.png" alt-text="Screenshot of prompt to update private links.":::
 
 To open the **Update private links** dialog, select the **See details** button.
 
-:::image type="content" source="media/connect-to-storage-accounts-behind-firewalls/image3.png" alt-text="Screenshot of the update private links dialog.":::
+:::image type="content" source="media/connect-to-storage-accounts-behind-firewalls/dialog.png" alt-text="Screenshot of the update private links dialog.":::
 
 1. Select **Copy storage accounts information** to copy details to the clipboard.
 1. Send the copied details to your Power Platform admin and Azure admin, and ask them to create private endpoints. Wait for confirmation that the private endpoints are set up before you continue.
@@ -111,8 +111,7 @@ To open the **Update private links** dialog, select the **See details** button.
 
 **Example script output**
 
-<img src="media/connect-to-storage-accounts-behind-firewalls/image4.png" style="width:5.93358in;height:3.49941in"
-alt="Screenshot of the script output for connecting to storage accounts behind firewalls in Customer Insights – Data." />
+:::image type="content" source="media/connect-to-storage-accounts-behind-firewalls/example-output.png" alt-text="Screenshot showing example script output.":::
 
 ## Azure administrator steps
 
@@ -125,14 +124,14 @@ After the Azure admin gets the “For Azure admin” details from the Power Plat
 
     When the script runs, it shows you values to enter. For example, you see a message like the following:  
     
-    ```
-    Pass the parameters as printed below.
+```
+Pass the parameters as printed below.
 
-    .\SetupVnetForSubnetDelegation.ps1
-        -virtualNetworkSubscriptionId: 44444444-0a57-4571-b790-666666666666
-        -virtualNetworkName: cidata-subnetdelegation-eastus-resource-vnet
-        -subnetName: cidata-delegated
-    ```
+.\SetupVnetForSubnetDelegation.ps1
+    -virtualNetworkSubscriptionId: 44444444-0a57-4571-b790-666666666666
+    -virtualNetworkName: cidata-subnetdelegation-eastus-resource-vnet
+    -subnetName: cidata-delegated
+```
 
     When prompted for each value, enter the values shown.
 
