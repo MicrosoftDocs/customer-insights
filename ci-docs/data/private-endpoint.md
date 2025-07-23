@@ -58,7 +58,7 @@ Create private endpoints in Azure before you set up data connections in Customer
 **Azure administrator**
 
 - Run scripts with the information from the Power Platform admin to create resources (resource groups, virtual network, subnet) and let Power Platform request IP addresses from the subnets. This is a one-time task.
-- Manually create private endpoints in `https://Portal.Azure.com` for each storage container.
+- Manually create private endpoints in `https://portal.azure.com` for each storage container.
 
 **Power Platform administrator**
 
@@ -154,7 +154,7 @@ Use the “For Azure Admin” details your Power Platform admin gives you to man
 
 **Manually create private endpoints**
 
-1. Sign in to `https://Portal.azure.com`.
+1. Sign in to `https://portal.azure.com`.
 1. Go to the first storage account.
 1. Under "Security + networking," select "Networking."
 1. Select **+ Private endpoint** on the **Private endpoint connections** tab. Use the following values:
