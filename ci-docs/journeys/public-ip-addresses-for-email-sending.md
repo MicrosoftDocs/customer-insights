@@ -40,6 +40,6 @@ The Azure IP Ranges and Service Tags document shows the full list of IP ranges t
 |     51.140.147.0/24     |    GBR   |     Great Britain    |
 
 > [!IMPORTANT]
-> In case of emergency, we might rotate the geo-based IP addresses. For better reliability and redundancy, we strongly recommend that you allowlist all specified IP ranges.
+> In case of emergency, Microsoft might rotate the geo-based IP addresses. For better reliability and redundancy, allowlist all specified IP ranges.
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
