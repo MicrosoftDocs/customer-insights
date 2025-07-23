@@ -50,6 +50,33 @@ To set up web tracking:
     - If you're using a tag manager such as Google Tag Manager, go to the Google Tag Manager portal. Select **Add new tag** > **Tag configuration** > **Custom HTML**, paste the Customer Insights - Journeys tracking script, and then **Save**. You'll also need to determine when this triggers (for example, "All Pages"). Once you're done, select the **Submit** button to publish your changes.
     - If you're using another Content Management System (CMS) such as Wordpress, your CMS provider should have an easy way to add a script to the site header. Here's an example from Wordpress: [Add Code to Headers](https://wordpress.com/support/adding-code-to-headers/).
 
+## Conditions needed for web tracking to work
+
+For **Web Tracking** to work, you need the following conditions to be met:
+1.	The web tracking script added to the header of the website/pages you want to track.
+2.	Customer’s first visit to your website is coming from clicking on a Customer Insights – Journeys link (e.g., email link click that directs your customer to your website)
+3.	Link tracking enabled in for your URL. 
+4.	Customer (e.g., Contact) has **Allow Tracking** enabled. [Lear more](https://learn.microsoft.com/en-us/dynamics365/customer-insights/journeys/real-time-marketing-email-text-consent#consent-to-track-user-behavior) about how you can manage consent for tracking.
+
+## How does web tracking work
+
+-	Once a customer visits your website from a Customer Insights Journeys originated link, the web tracking script will create a cookie named [msdynci_trackingContext](https://learn.microsoft.com/en-us/dynamics365/customer-insights/journeys/real-time-journeys-cookies#list-of-real-time-journeys-cookies) for this customer.
+-	If the customer doesn’t explicitly remove the cookie, this cookie will be available in the future visits of your customer even if they did not go to your website from a Customer Insights Journeys link.
+-	Customer interactions like web site visited and link clicked will be tracked and available in your customers (e.g., Contact) insights tab and on the timeline.
+-	If any of the conditions in the section above are not met (e.g., you disabled link tracking, or your customer consent record doesn’t allow tracking) the web interactions will not be tracked nor available even if the web tracking link is present and the customer visited your website from a Customer Insights Journeys link.
+  
+> [!IMPORTANT]
+> It’s enough for your customer to visit your website only once from a Customer Insights Journeys link, all future visits and clicks will be automatically tracked even if the customer did not visit your website from a Customer Insights Journeys link. This is true unless your customer had deleted the cookie manually.”
+
+## Web tracking & forms web tracking
+
+Customer Insights Journeys [forms](https://learn.microsoft.com/en-us/dynamics365/customer-insights/journeys/real-time-marketing-manage-forms#form-settings) have a toggle to enable web tracking. The toggle is disabled by default and you must enable it for **Form** web tracking to work. 
+As mentioned above, for web tracking to work, your customers has to at least once visit your website through a Customer Insights Journeys link, so a cookie can be created for future visits and interactions.
+**Forms Web Tracking** added value is that, if your customer submits a form, even with never visiting your website through Customer Insights Journey link, the form submission will create a cookie named [msdynmkt_formsubmissionid](https://learn.microsoft.com/en-us/dynamics365/customer-insights/journeys/real-time-journeys-cookies#list-of-real-time-journeys-cookies) that will allow the web tracking script to track your customer future website visits and interactions.
+
+> [!IMPORTANT]
+> You must add the web tracking script into your website for **Form** web tracking to work.
+
 ## Personalize customer experiences based on web interaction
 
 Web interactions can be utilized to create personalized customer experiences in the following ways:
