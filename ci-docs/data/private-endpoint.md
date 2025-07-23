@@ -120,7 +120,7 @@ After the Azure admin gets the “For Azure admin” details from the Power Plat
 ### Azure admin creates resources using scripts
 
 1. Download and extract the [Customer Insights - Data script package](https://download.microsoft.com/download/77c5dfb9-4555-4b30-9e96-08408855aab3/SubnetDelegationSetup.zip). This link is the same as the scripts the Power Platform admin downloads.
-1.  Launch PowerShell and run the **Setup-SubnetDelegationForCiData.ps1** command your Power Platform admin gives you. Enter your `SubscriptionId` and Power Platform region.
+1. Launch PowerShell and run the **Setup-SubnetDelegationForCiData.ps1** command your Power Platform admin gives you. Enter your `SubscriptionId` and Power Platform region.
 
     When the script runs, it shows you values to enter. For example, you see a message like the following:  
 
