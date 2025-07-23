@@ -1,7 +1,7 @@
 ---
 title: Public IP addresses used for sending e-mails 
 description: Learn how public IP addresses are used for sending e-mails in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/21/2023
+ms.date: 07/23/2025
 ms.topic: article
 author: alfergus
 ms.author: alfergus
