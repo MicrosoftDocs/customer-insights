@@ -82,7 +82,6 @@ When sending timed reminders, the first instinct of many Customer Insights - Jou
     > ![event start](media/event-engagement-event-start.png "event start")
 
 1. Next, give the journey a relative date to monitor. To set a relative date, select the **Is** dropdown and change it to **Is after**. Then, select the **Actual date** dropdown and change it to **Relative date**. Finally, change the date dropdown to **7 days from today**. Now, the branch can reference whether the event start date is seven days after the execution time of the attribute tile.
-
 1. Now, you can add a **Wait** element to the relative date branch. The Wait element can now be tied in with the event to wait until the date is seven days before the event to trigger an action. To add the Wait element, select the **+** below the **Event start date > 7 days from now** condition. Add a **Hold an action for a specific time** element. In the right pane, under **People will wait**, select **Until a time specified by a trigger**. Then, under **Choose a specific trigger attribute**, go to **Event registration created** > **Event Reference**, then search for and select the **Event start date** attribute. Set the **Timing** to **7 days before the specified time**.
 1. You’re now ready to trigger an action seven days before the event’s start date. To send a reminder email, select the **+** below the Wait element and select a **Send an email** action. In the right pane, select the reminder email you’d like to send.
 
