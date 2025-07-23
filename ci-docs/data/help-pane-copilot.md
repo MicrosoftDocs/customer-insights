@@ -15,6 +15,9 @@ ms.collection: bap-ai-copilot
 
 [!INCLUDE [public-preview-banner](./includes/public-preview-banner.md)]
 
+> [!IMPORTANT]
+> Copilot features in Customer Insights - Data are only available in environments in the United States and Switzerland regions. These features may become available in additional regions in future releases.
+
 Copilot in Dynamics 365 Customer Insights - Data can help you achieve your goals by answering your questions about the application and its features. You ask questions in natural language about capabilities and Copilot answers it, using the [official documentation](index.yml), [troubleshooting guides](/troubleshoot/dynamics-365/customer-insights/welcome-customer-insights), and blogs from the Microsoft team on how to set up Customer Insights - Data. These sources are organized as a Bing Search index, which is the reason for Copilot showing the disclaimer about Bing Search being used for certain capabilities. To use this capability an admin user needs to provide consent through the [consent experience](copilot-global-consent.md).
 
 Copilot generates responses in accordance with [Microsoft Responsible AI Standards](https://www.microsoft.com/ai/responsible-ai). For more information, see [FAQ for docs-based Q&A capability](faqs-docs-qna.md).
