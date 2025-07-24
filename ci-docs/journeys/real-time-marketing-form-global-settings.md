@@ -81,6 +81,7 @@ Change audience settings to specify when to create a new record and how to updat
 
 - **Name**: Enter a name for your audience settings. This name appears in the form editor. Use short, descriptive names.
 - **Target entity**: Select the entity used by form submission processing. Marketing forms support lead and contact entities, but event registration forms only support contact.
+- **Ignore empty values**: Control whether empty form fields can overwrite existing data.
 
 #### Matching rules
 
