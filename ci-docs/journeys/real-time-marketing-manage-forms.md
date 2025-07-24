@@ -1,7 +1,7 @@
 ---
 title: Manage Customer Insights - Journeys forms
 description: Discover how to manage and style forms in Dynamics 365 Customer Insights - Journeys. Edit, unpublish, and customize forms with ease. Learn more now!
-ms.date: 05/23/2025
+ms.date: 07/24/2025
 ms.update-cycle: 180-days
 ms.topic: how-to
 author: petrjantac
@@ -22,7 +22,7 @@ This article explains how to edit, unpublish, and manage forms in Customer Insig
 If your form is already published and you need to update it, select the **Edit** button on the top ribbon. You can continue editing your live form and all changes are automatically published once you select the **Save** button.
 
 > [!IMPORTANT]
-> If you choose to create a copy of the form, you'll have to publish the newly created copy.
+> If you choose to create a copy of the form, you have to publish the newly created copy.
 
 The form is stored on a content delivery network (CDN), which caches data to provide the fastest loading times for your webpage visitors. It can take up to 10 minutes for the cache to refresh and for you to see changes on your webpage. To check your changes immediately, add the `#d365mkt-nocache` parameter to your webpage URL. Don't share links with this parameter with your customers. This parameter bypasses the CDN cache and slows down page loading.
 
@@ -122,10 +122,10 @@ A custom matching rule lets you specify criteria for identifying existing leads 
 ### Ignore empty values
 
 Use the Ignore empty values toggle to control whether submitted empty form fields can overwrite existing data.
-If a form is submitted with an empty field (e.g., phone number), this setting determines whether the existing value is kept or cleared.
+If a form is submitted with an empty field (for example, phone number), this setting determines whether the existing value is kept or cleared.
 
-- Toggle OFF (Disabled): The existing value will be overwritten by the empty input.
-- Toggle ON (Enabled): The existing value will be preserved and not replaced by the empty input.
+- Toggle OFF (Disabled): The existing value is overwritten by the empty input.
+- Toggle ON (Enabled): The existing value is preserved and not replaced by the empty input.
 
 **Example**: A contact has a phone number saved. A form is submitted with the phone number field left blank:
 
@@ -139,7 +139,7 @@ Attribute metadata defines field types and formats. You can't change field types
 | **Type**  | **Format** | **Rendering control** | **Description**|
 |-----------|------------|-----------------------|----------------|
 | Single line of text    | Email, Text, URL, Number         | Automatically set based on the format.               | Simple input field. Validation is automatically set based on the format.                                |
-| [Phone number](#phone-number-field)    | Phone number         | Can be extended with the pre-set country code.               | Simple input field. Validation is set to phone number by default.                                |
+| [Phone number](#phone-number-field)    | Phone number         | Can be extended with the preset country code.               | Simple input field. Validation is set to phone number by default.                                |
 | Multiple lines of text    | Text Area     | Text Area             | Text area input field that accepts all types of text values.                                |
 | Option set             | n/a           | Radio Buttons         | Field with a limited number of predefined values (as defined in the database). Rendered as a set of radio buttons, with one button for each value.                                  |
 | Option set             | n/a           | Drop-down              | Field with a limited number of predefined values (as defined in the database). Rendered as a drop-down list for selecting a value.                                                  |
@@ -163,13 +163,13 @@ If you don't plan to use the phone number for sending text messages, collect the
 > [!NOTE]
 > If the form submission for a form containing a phone number field fails, upgrade your application to the latest version to get the latest fixes and improvements to the phone number format processing.
 
-#### Pre-set phone number country code
+#### Preset phone number country code
 
-If your business is in a single region with the same phone number country code, pre-set the *Country code* parameter of the phone number field.
+If your business is in a single region with the same phone number country code, preset the *Country code* parameter of the phone number field.
 
 :::image type="content" source="media/real-time-marketing-form-country-code.png" alt-text="Set the country code for phone number." lightbox="media/real-time-marketing-form-country-code.png":::
 
-If the country code is pre-set, the correct phone number country code is automatically added when the form is submitted. If the customer enters a phone number that includes the country code, the pre-set country code is ignored.
+If the country code is preset, the correct phone number country code is automatically added when the form is submitted. If the customer enters a phone number that includes the country code, the preset country code is ignored.
 
 ### Lookup fields
 

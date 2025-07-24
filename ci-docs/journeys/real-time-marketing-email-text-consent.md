@@ -27,9 +27,9 @@ When you create a new email message, choose a **Compliance Profile**, a **Purpos
 > [!div class="mx-imgBorder"]
 > ![Compliance profile and purpose screenshot.](media/real-time-marketing-email-compliance-settings.png " Compliance profile and purpose screenshot ")
 
-The app sends an email message only if it passes the consent checks set by the **Purpose** and optional **Topic**. The app decides to send or block a message right before sending it. This approach makes sure the app doesn't mistakenly send a message to someone who opted out, even if they're included in a journey segment by mistake. The **Enforcement model** setting on the purpose controls the consent rules. If the purpose uses a "Restrictive" enforcement model, the app sends the email only if the email address explicitly opts in. If the purpose uses a "Non-restrictive" enforcement model, the app sends the email as long as the email address hasn't opted out. The "Disabled" enforcement model turns off consent checks and lets all messages be delivered. The default "Commercial" purpose uses a "Non-restrictive" enforcement model for email sending. The default "Transactional" purpose uses a "Disabled" enforcement model. Change the enforcement models of the purposes in the compliance profile. To learn more about the **Purpose**, **Topic**, and **Enforcement model** concepts, see [Manage user compliance settings in Customer Insights - Journeys](real-time-marketing-compliance-settings.md)
+The app sends an email message only if it passes the consent checks set by the **Purpose** and optional **Topic**. The app decides to send or block a message right before sending. This approach makes sure the app doesn't mistakenly send a message to someone who opted out, even if they're included in a journey segment by mistake. The **Enforcement model** setting on the purpose controls the consent rules. If the purpose uses a "Restrictive" enforcement model, the app sends the email only if the email address explicitly opts in. If the purpose uses a "Nonrestrictive" enforcement model, the app sends the email as long as the email address hasn't opted out. The "Disabled" enforcement model turns off consent checks and lets all messages be delivered. The default "Commercial" purpose uses a "Nonrestrictive" enforcement model for email sending. The default "Transactional" purpose uses a "Disabled" enforcement model. Change the enforcement models of the purposes in the compliance profile. To learn more about the **Purpose**, **Topic**, and **Enforcement model** concepts, see [Manage user compliance settings in Customer Insights - Journeys](real-time-marketing-compliance-settings.md).
 
-As required for commercial email, the app automatically adds a **Company Address** placeholder and a **Preference Center** placeholder link to the email footer. The company address shows the value set on the **Compliance profile**, and you can edit it directly from the email editor if needed. The **Preference center** link goes to the preference management page set by the **Compliance Profile**, where customers can review and change communication preferences.
+As required for commercial email and the app automatically adds a **Company Address** placeholder and a **Preference Center** placeholder link to the email footer. The company address shows the value set on the **Compliance profile**, and you can edit it directly from the email editor if needed. The **Preference center** link goes to the preference management page set by the **Compliance Profile**, where customers can review and change communication preferences.
 
 The app checks for a company address and unsubscribe link when you select **Ready to send**. The app warns you if either is missing when you send a message to a commercial consent purpose.
 
@@ -71,14 +71,14 @@ The following tables show how consent is checked by default when you run journey
 
 For example, in the *restrictive enforcement model*, a customer who hasn't set consent preferences is *blocked* from all communication channels in a journey and isn't tracked.
 
-### Non-restrictive enforcement model
+### Nonrestrictive enforcement model
 
 |                      | **Opted out** | **None/not-set** | **Opted in** |
 |----------------------|---------------|------------------|--------------|
 | **All channels**     | Blocked       | Sent             | Sent         |
 | **Tracking purpose** | Not tracked   | Tracked          | Tracked      |
 
-For example, in the *non-restrictive enforcement model*, a customer who hasn't set consent preferences is *sent* messages from all communication channels in a journey and is *tracked*.
+For example, in the *nonrestrictive enforcement model*, a customer who hasn't set consent preferences is *sent* messages from all communication channels in a journey and is *tracked*.
 
 ### Disabled enforcement model
 
@@ -133,7 +133,7 @@ Review these important definitions before you start.
 ### Subscription centers used in real-time journeys
 
 > [!IMPORTANT]
-> The Subscription Centers will be removed along with outbound marketing. Please consider using Preference Center instead.
+> The Subscription Centers will be removed along with outbound marketing. Consider using Preference Center instead.
 
 The **DoNotBulkEmail**, **DoNotEmail**, and **DoNotTrack** fields on a subscription center prefill for the contact based on contact data and contact point consent records for all the contact's email addresses.
 
