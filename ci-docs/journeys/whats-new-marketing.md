@@ -32,27 +32,27 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 |------------------|-----------------|
 | Customer Insights - Journeys       |  1.1.57027.56 |
 
-<!--- POSTPONED IN AUGUST, HIDING UNTIL SEPTEMBER
-
-#### General availability
-
-- **Create an event portal on your own website** 
-	- Events are a pivotal element of your business strategy, aiding in customer acquisition and engagement. A centralized location is essential for your clients to discover and learn about events you are organizing. The new event portal allows for the swift creation of a comprehensive hub where customers can access event details, session specifics, and speaker schedules, and conveniently register using the event registration form. The portal can be seamlessly integrated into your existing CMS using a JavaScript code snippet or the new event API.
-	- [Release plan](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/create-event-portal-own-website) 
-	- [Docs](developer/using-rtm-events-api.md)
-
-	:::image type="content" source="media/event-portal-api-2.png" alt-text="Create an event portal on your own website." lightbox="media/event-portal-api-2.png":::
-
-#### Public preview
-
-#### New blogs and scenario docs
-
---->
+> [!IMPORTANT]
+> The public IP addresses for Dynamics 365 Customer Insights - Journeys services are being updated in all regions. The new IPs are currently available for allowlisting. Customer Insights - Journeys services will begin using the IPs on Monday, August 4, 2025.
+>
+> **How does this affect Customer Insights - Journeys users?**
+>
+> If you have custom analytics reporting, as described in [Prepare for analytic reporting with Power BI](custom-analytics.md), and restrict access to your "bring your own" storage accounts by firewall rules using IP addresses, you're affected by the change.
+>
+> If your custom analytics meet these criteria and are impacted, marketing analytics exports will be stopped due to unauthorized access to your blob storage from Customer Insights - Journeys services.
+>
+> To verify whether the IP changes affect your analytics configuration, review the entity **Analytics configuration** and verify the **Service status**.
+>
+> **Required action**
+>
+> An administrator with firewall or network rights should adjust your allowlists to account for the updated IP addresses. A list of all public IPs categorized by geo is available here: [Dynamics 365 Customer Insights - Journeys public IP addresses](marketing-public-ips.md).
+>
+> If your organization uses VNets (subnets) for allowlisting, it's not affected by the IP address changes.
 
 #### Monthly enhancements
 
-- **Protect existing Lead and Contact data with the ‘Ignore empty values’ toggle** 
-	- To prevent accidental data loss, Forms now support an ‘Ignore empty values’ option in the Form editor. When enabled, this setting ensures that empty fields submitted by end users won’t overwrite existing Lead or Contact data. It applies to both marketing and registration forms, and is enabled by default for new forms—while remaining disabled for existing ones to preserve current behavior. 
+- **Protect existing lead and contact data with the "Ignore empty values" toggle**
+	- To prevent accidental data loss, forms now support an "Ignore empty values" option in the form editor. When enabled, this setting ensures that empty fields submitted by end users don’t overwrite existing lead or contact data. It applies to marketing and registration forms, and is enabled by default for new forms The toggle is disabled for existing forms to the preserve current behavior.
 	- [Docs](real-time-marketing-manage-forms.md#ignore-empty-values)
 
 ### July 2025 update
