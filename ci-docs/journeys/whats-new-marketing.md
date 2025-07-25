@@ -33,11 +33,11 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 | Customer Insights - Journeys       |  1.1.57027.56 |
 
 > [!IMPORTANT]
-> The public IP addresses for Dynamics 365 Customer Insights - Journeys services are being updated in all regions. The new IPs are currently available for allowlisting. Customer Insights - Journeys services will begin using the IPs on Monday, August 4, 2025.
+> The Dynamics 365 Customer Insights - Journeys services public IP addresses are being updated in all regions. The new IPs are currently available for allowlisting. Customer Insights - Journeys services will begin using the IPs on **Monday, August 4, 2025**.
 >
 > **How does this affect Customer Insights - Journeys users?**
 >
-> If you have custom analytics reporting, as described in [Prepare for analytic reporting with Power BI](custom-analytics.md), and restrict access to your "bring your own" storage accounts by firewall rules using IP addresses, you're affected by the change.
+> If you use custom analytics reporting, as described in [Prepare for analytic reporting with Power BI](custom-analytics.md), and restrict access to your "bring your own" storage accounts by firewall rules using IP addresses, you're affected by the change.
 >
 > If your custom analytics meet these criteria and are impacted, marketing analytics exports will be stopped due to unauthorized access to your blob storage from Customer Insights - Journeys services.
 >
