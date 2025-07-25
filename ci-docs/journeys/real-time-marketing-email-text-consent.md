@@ -13,6 +13,7 @@ ms.custom:
   - ai-gen-docs-bap
   - ai-gen-description
   - ai-seo-date:06/02/2025
+  - sfi-image-nochange
 ---
 
 # Manage consent for email, SMS (text), voice, and custom channel messages

@@ -9,6 +9,7 @@ search.audienceType:
   - admin
   - customizer
   - enduser
+ms.custom: sfi-image-nochange
 ---
 
 # Define an extended configuration entity for the channel instance account

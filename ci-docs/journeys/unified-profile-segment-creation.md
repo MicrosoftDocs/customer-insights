@@ -9,6 +9,7 @@ search.audienceType:
   - admin
   - customizer
   - enduser
+ms.custom: sfi-image-nochange
 ---
 
 # Create segments using unified profiles and customer measures from Customer Insights - Data

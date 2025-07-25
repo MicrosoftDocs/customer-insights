@@ -13,6 +13,9 @@ metadata:
   search.app: 
     - D365CE
     - D365Mktg
+  ms.custom:
+    - sfi-ga-nochange
+    - sfi-image-nochange
 title: Administration and setup FAQ
 summary: |
   Read this article to find answers to common questions and solutions to known issues that can sometimes occur during the initial setup and ongoing administration of Dynamics 365 Customer Insights - Journeys.

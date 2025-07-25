@@ -12,6 +12,7 @@ ms.custom:
   - ai-gen-docs-bap
   - ai-gen-description
   - ai-seo-date:11/22/2024
+  - sfi-image-nochange
 ---
 
 # Add email carbon copy recipients to journeys
@@ -22,15 +23,15 @@ You can add carbon copy (CC) recipients to your journeys when sending emails. Wh
 
 > [!IMPORTANT]
 >
->- When you add CC recipients to your emails, the sent email will be identical for both primary and CC contacts. The interactions from CC recipients with sent emails (open, forward, clicks, unsubscribe) will be counted as a primary recipient interactions and will have direct impact on your insights and analytics.
->- Email interactions (sent, delivered, bounced, etc.) are not shown for CC.
->- If a CC recipient clicks on the unsubscribe button for marketing emails, they will unsubscribe the primary contact.
->- The CC recipient interaction will trigger the next step in the journey if you are utilizing the **Respond to an action** element in your journey based on the customer interaction.
+>- When you add CC recipients to your emails, the sent email is identical for both primary and CC contacts. The interactions from CC recipients with sent emails (open, forward, clicks, unsubscribe) are counted as a primary recipient interactions and directly impact your insights and analytics.
+>- Email interactions (sent, delivered, bounced, etc.) aren't shown for CC.
+>- If a CC recipient clicks on the unsubscribe button for marketing emails, they'll unsubscribe the primary contact.
+>- The CC recipient interaction will trigger the next step in the journey if you're utilizing the **Respond to an action** element in your journey based on the customer interaction.
 >- CC contacts are counted for marketable contact quota.
 >- CC contacts interactions are counted for interaction quota.
->- Only the communication consent of the primary recipient is verified. The communication consent of CC recipients is not verified.
+>- Only the communication consent of the primary recipient is verified. The communication consent of CC recipients isn't verified.
 >
-> CC recipients will receive the same amount of emails as the overall emails sent to primary recipients, meaning, if you send 1,000 emails to primary recipients with two people in CC, your overall sent emails will be 3,000. It's recommended that you select people in the CC field who are aware of how this feature functions.  
+> CC recipients receive the same number of emails as the overall emails sent to primary recipients, meaning, if you send 1,000 emails to primary recipients with two people in CC, your overall sent emails will be 3,000. It's recommended that you select people in the CC field who are aware of how this feature functions.  
 >
 
 ## Enabling the CC feature

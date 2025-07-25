@@ -9,6 +9,7 @@ search.audienceType:
   - admin
   - customizer
   - enduser
+ms.custom: sfi-image-nochange
 ---
 
 # Create branded, customized preference centers to manage customer consent

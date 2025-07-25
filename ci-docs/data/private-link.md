@@ -6,7 +6,9 @@ ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
 ms.reviewer: mhart
-ms.custom: bap-template
+ms.custom:
+  - bap-template
+  - sfi-image-nochange
 ---
 
 # Set up connections for storage accounts behind firewalls

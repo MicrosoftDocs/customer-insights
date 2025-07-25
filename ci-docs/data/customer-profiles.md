@@ -6,7 +6,9 @@ ms.reviewer: mhart
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
-ms.custom: bap-template
+ms.custom:
+  - bap-template
+  - sfi-image-nochange
 ---
 
 # View customer profiles

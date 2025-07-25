@@ -9,6 +9,7 @@ search.audienceType:
   - admin
   - customizer
   - enduser
+ms.custom: sfi-image-nochange
 ---
 
 # Integrate Sales and Dynamics 365 Customer Insights - Journeys

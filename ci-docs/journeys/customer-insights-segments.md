@@ -9,6 +9,7 @@ search.audienceType:
   - admin
   - customizer
   - enduser
+ms.custom: sfi-image-nochange
 ---
 
 # Use segments from Dynamics 365 Customer Insights - Data 
