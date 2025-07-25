@@ -18,7 +18,7 @@ ms.custom:
 # Manage consent for email, SMS (text), voice, and custom channel messages
 
 > [!NOTE]
-> Customer Insights - Journeys consent is contact point based and works for messages sent to contacts, leads, and Customer Insights - Data profiles. Customer consent is stored per email address or phone number, not per contact record.
+> Customer Insights - Journeys consent is contact point-based and works for messages you send to contacts, leads, and Customer Insights - Data profiles. The system stores customer consent for each email address or phone number, not for each contact record.
 
 ## How consent is respected for emails
 
@@ -27,9 +27,11 @@ When you create a new email message, choose a **Compliance Profile**, a **Purpos
 > [!div class="mx-imgBorder"]
 > ![Compliance profile and purpose screenshot.](media/real-time-marketing-email-compliance-settings.png " Compliance profile and purpose screenshot ")
 
-The app sends an email message only if it passes the consent checks set by the **Purpose** and optional **Topic**. The app decides to send or block a message right before sending. This approach makes sure the app doesn't mistakenly send a message to someone who opted out, even if they're included in a journey segment by mistake. The **Enforcement model** setting on the purpose controls the consent rules. If the purpose uses a "Restrictive" enforcement model, the app sends the email only if the email address explicitly opts in. If the purpose uses a "Nonrestrictive" enforcement model, the app sends the email as long as the email address hasn't opted out. The "Disabled" enforcement model turns off consent checks and lets all messages be delivered. The default "Commercial" purpose uses a "Nonrestrictive" enforcement model for email sending. The default "Transactional" purpose uses a "Disabled" enforcement model. Change the enforcement models of the purposes in the compliance profile. To learn more about the **Purpose**, **Topic**, and **Enforcement model** concepts, see [Manage user compliance settings in Customer Insights - Journeys](real-time-marketing-compliance-settings.md).
+Customer Insights - Journeys sends an email message only if it passes the consent checks set by the **Purpose** and optional **Topic**. The app decides to send or block a message right before sending. This approach makes sure the app doesn't mistakenly send a message to someone who opted out, even if they're included in a journey segment by mistake.
 
-As required for commercial email and the app automatically adds a **Company Address** placeholder and a **Preference Center** placeholder link to the email footer. The company address shows the value set on the **Compliance profile**, and you can edit it directly from the email editor if needed. The **Preference center** link goes to the preference management page set by the **Compliance Profile**, where customers can review and change communication preferences.
+The **Enforcement model** setting on the purpose controls the consent rules. If the purpose uses a "Restrictive" enforcement model, the app sends the email only if the email address explicitly opts in. If the purpose uses a "Nonrestrictive" enforcement model, the app sends the email as long as the email address hasn't opted out. The "Disabled" enforcement model turns off consent checks and lets all messages be delivered. The default "Commercial" purpose uses a "Nonrestrictive" enforcement model for email sending. The default "Transactional" purpose uses a "Disabled" enforcement model. You can change the enforcement models of the purposes in the compliance profile. To learn more about the **Purpose**, **Topic**, and **Enforcement model** concepts, see [Manage user compliance settings in Customer Insights - Journeys](real-time-marketing-compliance-settings.md).
+
+As required for commercial email, the app automatically adds a **Company Address** placeholder and a **Preference Center** placeholder link to the email footer. The company address shows the value set on the **Compliance profile**, and you can edit it directly from the email editor if needed. The **Preference center** link goes to the preference management page set by the **Compliance Profile**, where customers can review and change communication preferences.
 
 The app checks for a company address and unsubscribe link when you select **Ready to send**. The app warns you if either is missing when you send a message to a commercial consent purpose.
 
@@ -50,10 +52,10 @@ Each compliance profile has a specific purpose for tracking user interactions, l
 
 To collect tracking consent, add the tracking purpose to forms and preference centers.
 
-The tracking consent is also considered for Form prefill feature.
+Tracking consent is also considered for the form prefill feature.
 
 > [!NOTE]
-> Customer Insights - Journeys can check the **Allow Tracking** field in contact records to see if it can track the contact's interactions. This check is in addition to the Customer Insights - Journeys contact-point consent opt-in or opt-out check for tracking. The system doesn't perform these checks for other entity types, like leads or Customer Insights - Data profiles. This additional check is managed by [Check contact consent for real-time journeys](#disable-contact-level-consent-checks) feature switch.
+> Customer Insights - Journeys can check the **Allow Tracking** field in contact records to see if it can track the contact's interactions. This check is in addition to the Customer Insights - Journeys contact-point consent opt-in or opt-out check for tracking. The system doesn't perform these checks for other entity types, like leads or Customer Insights - Data profiles. This additional check is managed by the [Check contact consent for real-time journeys](#disable-contact-level-consent-checks) feature switch.
 
 > [!IMPORTANT]
 > With the July 2023 release, customer consent data uses the new multi-brand consent features. For some Customer Insights - Journeys users, the migration changes the settings that control whether tracking links are included in messages. The changes can prevent tracking in messages if customers haven't given explicit consent. After the migration, to let tracking links be included in messages for customers who haven't provided consent, update the tracking purpose enforcement model of your compliance profile to "Nonrestrictive." This lets tracking links be substituted in emails, as long as the receiver hasn't explicitly opted out of tracking.
@@ -93,7 +95,7 @@ In the *disabled enforcement model*, *all customers* are *sent* messages from al
 > All channels include email, text, and custom channels.
 
 > [!IMPORTANT]
-> If your environment has both real-time journeys and outbound marketing installed, the app can check the **Allow email** and **Allow bulk email** fields in contact records to see if email can be sent to the contact's email address. Both fields must be set to allow for a commercial email to be sent. Only the **Allow email** field must be set to allow transactional emails. These checks are in addition to the Customer Insights - Journeys contact-point consent opt-in or opt-out checks for emails sent by journeys. This additional check is managed by [Check contact consent for real-time journeys](#disable-contact-level-consent-checks) feature switch. These checks aren't done for other entity types, like leads or Customer Insights - Data profiles.
+> If your environment has real-time journeys and outbound marketing installed, the app can check the **Allow email** and **Allow bulk email** fields in contact records to see if email can be sent to a contact's email address. Both fields must be set to **Allow** for a commercial email to be sent. Only the **Allow email** field must be set to allow transactional emails. These checks are in addition to the Customer Insights - Journeys contact-point consent opt-in or opt-out checks for emails sent by journeys. This additional check is managed by the [Check contact consent for real-time journeys](#disable-contact-level-consent-checks) feature switch. These checks aren't done for other entity types, like leads or Customer Insights - Data profiles.
 
 ## Disable contact-level consent checks
 
@@ -133,7 +135,7 @@ Review these important definitions before you start.
 ### Subscription centers used in real-time journeys
 
 > [!IMPORTANT]
-> The Subscription Centers will be removed along with outbound marketing. Consider using Preference Center instead.
+> Subscription centers will be removed along with outbound marketing. Consider using a preference center instead.
 
 The **DoNotBulkEmail**, **DoNotEmail**, and **DoNotTrack** fields on a subscription center prefill for the contact based on contact data and contact point consent records for all the contact's email addresses.
 
