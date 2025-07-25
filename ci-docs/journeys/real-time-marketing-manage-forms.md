@@ -19,10 +19,10 @@ This article explains how to edit, unpublish, and manage forms in Customer Insig
 
 ## Edit a live form
 
-If your form is already published and you need to update it, select the **Edit** button on the top ribbon. You can continue editing your live form and all changes are automatically published once you select the **Save** button.
+If your form is already published and you need to update it, select the **Edit** button on the top ribbon. You can continue editing your live form. All changes are automatically published when you select the **Save** button.
 
 > [!IMPORTANT]
-> If you choose to create a copy of the form, you have to publish the newly created copy.
+> If you choose to create a copy of the form, you must publish the new copy.
 
 The form is stored on a content delivery network (CDN), which caches data to provide the fastest loading times for your webpage visitors. It can take up to 10 minutes for the cache to refresh and for you to see changes on your webpage. To check your changes immediately, add the `#d365mkt-nocache` parameter to your webpage URL. Don't share links with this parameter with your customers. This parameter bypasses the CDN cache and slows down page loading.
 
@@ -99,7 +99,7 @@ Form settings let you set advanced properties for your form and define what happ
 - **Form template**: Select a template for your form. Selecting a template deletes all content in your form.
 - **Prefill**: Let [Form Prefill](real-time-marketing-form-prefill.md) fill all fields in your form.
 - **Web tracking**: Let [web tracking](interaction-journey-decision.md) add a [tracking cookie](real-time-journeys-cookies.md) with the form submission ID to the user's browser when they submit the form. If enabled, the form loader script automatically includes the web tracking script, which creates the tracking cookie. Tell users about cookie usage according to your privacy regulations.
-- **Audience**: Set [how to handle duplicate records](real-time-marketing-manage-forms.md#how-to-handle-duplicate-records) by selecting the [matching rule](real-time-marketing-matching-rules.md). Choose whether form submission creates new records or updates existing records. If *Update matched contact with submitted data* and *Create a new contact if there was no match to an existing one?* are set to **No**, the form submission doesn't update or create any record. The form submission can link to an existing record identified by the matching rule. Enable [Ignore empty values toggle](#ignore-empty-values) to assure that existing values can't be overwritten by submitted empty values.
+- **Audience**: Set [how to handle duplicate records](real-time-marketing-manage-forms.md#how-to-handle-duplicate-records) by selecting the [matching rule](real-time-marketing-matching-rules.md). Choose whether form submission creates new records or updates existing records. If *Update matched contact with submitted data* and *Create a new contact if there was no match to an existing one?* are set to **No**, the form submission doesn't update or create any record. The form submission can link to an existing record identified by the matching rule. To assure that existing values can't be overwritten by submitted empty values, enable the [Ignore empty values toggle](#ignore-empty-values).
 - **Post submission action**: Choose whether to show the *Thank you notification* or redirect the user to a different page after form submission. The *Thank you notification* appears for a few seconds even if *Redirect after submission* is selected.
 - **Thank you notification**: This message appears when the user successfully submits the form.
 - **Error notification**: This message appears when an error occurs during form submission.
@@ -121,16 +121,15 @@ A custom matching rule lets you specify criteria for identifying existing leads 
 
 ### Ignore empty values
 
-Use the Ignore empty values toggle to control whether submitted empty form fields can overwrite existing data.
-If a form is submitted with an empty field (for example, phone number), this setting determines whether the existing value is kept or cleared.
+Use the **Ignore empty values** toggle to control whether submitted empty form fields can overwrite existing data. If a form is submitted with an empty field (for example, phone number), this setting determines whether the existing value is kept or cleared.
 
-- Toggle OFF (Disabled): The existing value is overwritten by the empty input.
-- Toggle ON (Enabled): The existing value is preserved and not replaced by the empty input.
+- **Toggle off (disabled)**: The existing value is overwritten by the empty input.
+- **Toggle on (enabled)**: The existing value is preserved and not replaced by the empty input.
 
 **Example**: A contact has a phone number saved. A form is submitted with the phone number field left blank:
 
-- If the toggle is disabled, the phone number is erased.
-- If the toggle is enabled, the phone number remains unchanged.
+- If the toggle is **disabled**, the phone number is erased.
+- If the toggle is **enabled**, the phone number remains unchanged.
 
 ## Field types
 
