@@ -1,7 +1,7 @@
 ---
 title: Set the default configuration for forms
 description: Default form configuration in Customer Insights - Journeys helps you create forms faster. Discover how to set up and manage defaults for marketing and event forms.
-ms.date: 05/23/2025
+ms.date: 07/25/2025
 ms.topic: how-to
 author: petrjantac
 ms.author: colinbirkett
