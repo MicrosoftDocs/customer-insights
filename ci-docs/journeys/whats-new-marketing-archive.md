@@ -286,7 +286,7 @@ There is no Dynamics 365 Customer Insights - Journeys release for August. We wil
 
 - **Pre-set country code for your phone number form fields**
     - Simplify the experience of entering the phone number into form by pre-setting the right country code. Once the code is pre-set, form submissions will no longer fail if wrong phone number format was entered.
-    - [Docs](real-time-marketing-manage-forms.md#pre-set-phone-number-country-code)
+    - [Docs](real-time-marketing-manage-forms.md#preset-phone-number-country-code)
 
 #### New blogs and scenario docs
 
