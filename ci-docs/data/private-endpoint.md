@@ -1,7 +1,7 @@
 ---
 title: Connect to storage accounts behind firewalls
 description: 'Storage account firewall: Learn how to connect Customer Insights – Data to Azure Data Lake Storage accounts behind firewalls using private endpoints for secure access.'
-ms.date: 07/24/2025
+ms.date: 07/25/2025
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -58,7 +58,7 @@ Create private endpoints in Azure before you set up data connections in Customer
 **Azure administrator**
 
 - Runs scripts with the information from the Power Platform admin to create resources (resource groups, virtual network, subnet) and lets Power Platform request IP addresses from the subnets. This is a one-time task.
-- Manually creates private endpoints in `https://portal.azure.com` for each storage container.
+- Manually creates private endpoints in `https://portal.azure.com` for each storage account.
 
 **Power Platform administrator**
 
