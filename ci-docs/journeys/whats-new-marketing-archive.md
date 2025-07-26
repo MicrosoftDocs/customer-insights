@@ -11,6 +11,7 @@ ms.custom:
   - ai-gen-docs-bap
   - ai-gen-description
   - ai-seo-date:11/22/2024
+  - sfi-image-nochange
 ---
 
 # What's new archive for Dynamics 365 Customer Insights - Journeys
@@ -185,7 +186,7 @@ Learn how to make the most of the new Dynamics 365 Customer Insights features in
 
 - **Streamline form filling and event registration with form prefill**
     - The repetitive task of filling out forms can be a significant deterrent to event registration. Nobody likes to repeat information that they've already provided. Imagine loyal customers who attend multiple conferences each year having to input their contact information and preferences every time. Form prefill in Dynamics 365 Customer Insights eliminates the need to repeatedly request basic details from your customers, reducing redundancy and saving time. This not only expedites the registration process but also allows for more strategic collection of customer data over time.
-    - [Release plan](/dynamics365/release-plan/2024wave2/customer-insights/dynamics365-customer-insights-journeys/form-prefill-simplifies-form-filling-event-sign-up)
+    - [Release plan](/dynamics365/release-plan/2024wave1/customer-insights/dynamics365-customer-insights-journeys/form-prefill-simplifies-form-filling-event-sign-up)
     - [Docs](real-time-marketing-form-prefill.md)
 
 - **Control how fast customers can enter a journey**
@@ -286,7 +287,7 @@ There is no Dynamics 365 Customer Insights - Journeys release for August. We wil
 
 - **Pre-set country code for your phone number form fields**
     - Simplify the experience of entering the phone number into form by pre-setting the right country code. Once the code is pre-set, form submissions will no longer fail if wrong phone number format was entered.
-    - [Docs](real-time-marketing-manage-forms.md#pre-set-phone-number-country-code)
+    - [Docs](real-time-marketing-manage-forms.md#preset-phone-number-country-code)
 
 #### New blogs and scenario docs
 
@@ -355,7 +356,6 @@ Learn how to make the most of the new Dynamics 365 Customer Insights features in
     - Defining campaigns and creating high-performing assets to achieve campaign goals can be a time-consuming and difficult task. Now, Copilot transforms the way you create campaigns, enhancing your productivity. To create a campaign, describe the outcomes you're looking to drive or provide a creative brief. Copilot leverages the power of data and AI to generate audiences, content, images, journeys, and more, allowing you to curate, edit, and launch your project in record time. You'll save countless hours by using Copilot to create a connected solution that you can update to achieve the goals that you've defined. Rest assured that you'll always be in the loop to refine, approve, and complete the campaign before it goes out to your customers.
     > [!NOTE]
     > The public preview is rolling out in phases, starting with selected customers who signed up previously. Sign up [here](https://adoption.microsoft.com/dynamics-365/customer-insights/) to get access as the preview program is expanded.
-    - [Release plan](/dynamics365/release-plan/2024wave1/customer-insights/dynamics365-customer-insights-journeys/take-campaigns-concept-launch-using-copilot)
 
 - **Improve reliability of insights with advanced bot protection**
     - In today’s world, ensuring the integrity of your data and the efficiency of your operations is paramount. Advanced bot protection in Customer Insights - Journeys empowers your business to thrive by safeguarding your business processes. Improve your business decisions with the confidence of knowing that the data you collect is accurate and represents real human interactions. With bot protection, you not only enhance the quality of your insights but also elevate the customer experience by minimizing disruptions caused by malicious bots.

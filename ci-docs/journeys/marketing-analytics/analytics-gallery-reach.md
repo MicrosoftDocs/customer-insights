@@ -11,7 +11,10 @@ search.audienceType:
   - admin
   - customizer
   - enduser
-ms.custom: outbound-marketing, evergreen
+ms.custom:
+  - outbound-marketing
+  - evergreen
+  - sfi-image-nochange
 ---
 
 # Marketing reach analysis for Dynamics 365 Customer Insights - Journeys
