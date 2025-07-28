@@ -1,5 +1,5 @@
 ---
-title: "Export segments to LinkedIn Ads"
+title: "Export segments to LinkedIn Ads (preview)"
 description: "Learn how to configure the connection and export to LinkedIn Ads."
 ms.date: 07/17/2025
 ms.reviewer: alfergus
@@ -8,9 +8,13 @@ author: Scott-Stabbert
 ms.author: sstabbert
 ---
 
-# Export segments to LinkedIn Ads
+# Export segments to LinkedIn Ads (preview)
+
+[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
 Export segments of unified customer profiles to LinkedIn Ads to create matched audiences. Use matched audiences for company targeting and contact targeting.
+
+[!INCLUDE [public-preview-note](includes/public-preview-note.md)]
 
 ## Prerequisites
 
