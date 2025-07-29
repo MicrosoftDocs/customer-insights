@@ -1,5 +1,5 @@
 ---
-title: "Export segments to Google Ads"
+title: "Export segments to Google Ads (preview)"
 description: "Learn how to configure the connection and export to Google Ads."
 ms.date: 07/17/2025
 ms.topic: how-to
@@ -8,9 +8,13 @@ ms.author: jimsonc
 ms.reviewer: alfergus
 ---
 
-# Export segments to Google Ads
+# Export segments to Google Ads (preview)
+
+[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
 Export segments of unified customer profiles to a Google Ads audience list. Use these segments to advertise on Google Search, Gmail, YouTube, and Google Display Network.
+
+[!INCLUDE [public-preview-note](includes/public-preview-note.md)]
 
 ## Prerequisites
 
