@@ -1,10 +1,11 @@
 ---
 title: Embed forms on external websites
 description: How to publish a form on an external site and capture the submissions in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/18/2023
+ms.date: 07/30/2025
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
+ms.reviewer: colinbirkett
 search.audienceType: 
   - admin
   - customizer
@@ -19,7 +20,7 @@ ms.custom: outbound-marketing
 > [!IMPORTANT]
 > **This article only applies to [outbound marketing](user-guide.md), which is gradually being removed from Customer Insights - Journeys.** To avoid interruptions, stop using outbound marketing and transition to real-time journeys. Learn more: [Transition overview](transition-overview.md).
 
-Dynamics 365 Customer Insights - Journeys provides a complete solution for designing, publishing, and hosting landing pages on a portal created with the Power Apps portals feature that runs on your Dynamics 365 Customer Insights - Journeys instance. However, you can also create or embed forms on your own external website that submit values back to Dynamics 365 Customer Insights - Journeys. These external pages function similarly to native Dynamics 365 Customer Insights - Journeys landing pages, so they'll generate contacts or leads in your database when they're submitted. However, a few limitations apply, depending on how you implement the external forms.
+Dynamics 365 Customer Insights - Journeys provides a complete solution for designing, publishing, and hosting landing pages on a portal created with the Power Apps portals feature that runs on your Dynamics 365 Customer Insights - Journeys instance. However, you can also create or embed forms on your own external website that submit values back to Dynamics 365 Customer Insights - Journeys. These external pages function similarly to native Dynamics 365 Customer Insights - Journeys landing pages, so they generate contacts or leads in your database when they're submitted. However, a few limitations apply, depending on how you implement the external forms.
 
 There are two basic methods for integrating an external form page with Dynamics 365 Customer Insights - Journeys:
 
@@ -90,7 +91,7 @@ To design a form in Dynamics 365 Customer Insights - Journeys that you can embed
         - **Domain name**: Enter the name of the domain you want to authenticate.
         - Select the **Enable for forms hosting** checkbox.
 
-1. If your form *does* use prefill (including all subscription center forms), you must authenticate the domains where you'll use the form. More information: [Enable prefilling on embedded forms](#form-prefil)
+1. If your form *does* use prefill (including all subscription center forms), you must authenticate the domains where you use the form. More information: [Enable prefilling on embedded forms](#form-prefil)
 
 1. Select the form page name in the **Related marketing form pages** column to open its settings and view the embed code.
 
@@ -105,11 +106,11 @@ To design a form in Dynamics 365 Customer Insights - Journeys that you can embed
 
 Form prefilling enables your forms to include prefilled values for known contacts. Prefilling makes your forms easier for contacts to use and can therefore help to increase your submission rates. The feature uses cookies to identify contacts who have previously submitted a form or opened a subscription center by using a personalized link sent in email.
 
-Because form prefilling requires the form to fetch contact values from your Dynamics 365 database, a few extra security measures are in place to help protect contacts' privacy. This means that contacts need to opt in for form prefilling and that you must authenticate each external domain where you'll embed the form. The solution only allows prefilled values to be shown to contacts whose contact record has the _allow-prefill_ flag set. Contacts can set or clear their allow-prefill flag themselves by using any landing page form, provided the form includes the setting. Dynamics 365 Customer Insights - Journeys users can also edit a contact record directly to edit this setting for that contact.
+Because form prefilling requires the form to fetch contact values from your Dynamics 365 database, a few extra security measures are in place to help protect contacts' privacy. This means that contacts need to opt in for form prefilling and that you must authenticate each external domain where you embed the form. The solution only allows prefilled values to be shown to contacts whose contact record has the _allow-prefill_ flag set. Contacts can set or clear their allow-prefill flag themselves by using any landing page form, provided the form includes the setting. Dynamics 365 Customer Insights - Journeys users can also edit a contact record directly to edit this setting for that contact.
 
 To create a form with prefilling that you can embed on an external website:
 
-1. Set up domain authentication for the external domain (website) where you'll host your form, and be sure to select the **Enable prefilled forms** checkbox. You don't need to also enable email authentication on that domain, but you can. For instructions, go to [Authenticate your domains](mkt-settings-authenticate-domains.md).
+1. Set up domain authentication for the external domain (website) where you host your form, and be sure to select the **Enable prefilled forms** checkbox. You don't need to also enable email authentication on that domain, but you can. For instructions, go to [Authenticate your domains](mkt-settings-authenticate-domains.md).
 
     ![Enable prefilling on an authenticated domain.](media/authenticated-domains-prefill.png "Enable prefilling on an authenticated domain")
 
@@ -117,7 +118,7 @@ To create a form with prefilling that you can embed on an external website:
 
 1. Enable prefilling for the form, as described in [Enable prefilling for forms](form-prefill.md).
 
-1. Save the form, and then go to the **Form hosting** tab (first available on save) to set up a _form page_ for it as described in [Create an embedded form](#create-embedded). Note that you don't need to add authenticated domains to the allow list on the **Form hosting** tab because authenticated domains provide even better security than the allow list provided here.
+1. Save the form, and then go to the **Form hosting** tab (first available on save) to set up a _form page_ for it as described in [Create an embedded form](#create-embedded). You don't need to add authenticated domains to the allow list on the **Form hosting** tab because authenticated domains provide even better security than the allow list provided here.
 
 1. As described in [Create an embedded form](#create-embedded), copy the JavaScript code generated for the new form page and paste it onto a webpage or CMS page for your website.
 
@@ -131,7 +132,7 @@ You can embed a subscription center form on an external site just as you can a s
 
 Form capture makes it possible for forms created on an external website to submit information directly to Dynamics 365 Customer Insights - Journeys. The resulting solution works just like a native marketing page created in the Customer Insights - Journeys app, except that prefill isn't supported. This makes it easier for page designers to create forms that match the rest of their site's graphical design and features, and which also submit values to Dynamics 365 Customer Insights - Journeys.
 
-To enable form capture, you must generate a form-capture JavaScript in Dynamics 365 Customer Insights - Journeys and add that script to your external form page. Then you'll be able to load that page into Dynamics 365 Customer Insights - Journeys to map its fields to marketing fields. At runtime, the form-capture JavaScript captures each form submission and submits the values to Dynamics 365 Customer Insights - Journeys for processing and storage.
+To enable form capture, you must generate a form-capture JavaScript in Dynamics 365 Customer Insights - Journeys and add that script to your external form page. Then you're able to load that page into Dynamics 365 Customer Insights - Journeys to map its fields to marketing fields. At runtime, the form-capture JavaScript captures each form submission and submits the values to Dynamics 365 Customer Insights - Journeys for processing and storage.
 
 ### Capture a new external form
 
@@ -141,20 +142,20 @@ To set up a form capture:
 
 1. Sign in to Dynamics 365 Customer Insights - Journeys and go to **Outbound marketing** > **Internet Marketing** > **Form fields**. Each of the records listed here establishes a mapping between a field available for use in a marketing form and an actual field from the contact or lead entity in the underlying database. Check to make sure that each of the fields required by your external form is correctly mapped here, and add any missing fields if necessary. More information: [Create and manage input fields for use in forms](marketing-fields.md)
 
-1. Go to **Marketing forms**, and select **Capture form**. This will start the form capture wizard that will take you through each step, starting with tracking script placement into your webpage.
+1. Go to **Marketing forms**, and select **Capture form**. This starts the form capture wizard that takes you through each step, starting with tracking script placement into your webpage.
 
-1. **Enter the form location**: Enter the URL of the third-party page where the form capture wizard will check if there is a valid tracking script inserted. Your webpage will open in a new tab where the wizard will continuously check for tracking scripts. This enables the wizard to detect dynamically injected scripts. Leave this tab open until you're finished capturing your form.
+1. **Enter the form location**: Enter the URL of the third-party page where the form capture wizard checks if there's a valid tracking script inserted. Your webpage opens in a new tab where the wizard will continuously check for tracking scripts. This enables the wizard to detect dynamically injected scripts. Leave this tab open until you're finished capturing your form.
 
     ![Enter the form location.](media/embed-forms-location.png "Enter the form location")
 
 1. Select the button in the new tab to proceed to the next steps in the form capture wizard.
 
-1. **Check for a tracking script**: If this is your first time capturing this form and you need to generate a script for your website, select **I need a new script**. This will create a website entity, which you can access in the **Marketing websites** section and rename later. If you already have a script, use the dropdown list to find your script for the form’s webpage.
+1. **Check for a tracking script**: If this is your first time capturing this form and you need to generate a script for your website, select **I need a new script**. This creates a website entity, which you can access in the **Marketing websites** section and rename later. If you already have a script, use the dropdown list to find your script for the form’s webpage.
 
     ![Check for the tracking script.](media/embed-forms-check-script.png "Check for the tracking script")
 
     > [!NOTE]
-    > Go to **Outbound marketing** > **Internet Marketing** > **Marketing websites** to view your website entity records created via the wizard. Each of the website records listed here (if any) provides a website-tracking and a form-capture code for a specific website or sub-site.
+    > Go to **Outbound marketing** > **Internet Marketing** > **Marketing websites** to view your website entity records created via the wizard. Each of the website records listed here (if any) provides a website-tracking and a form-capture code for a specific website or subsite.
 
 1. **Place the script into your webpage**: Copy the tracking script and place it at the top of your webpage HTML code, or share it with your  developer to do so. In third-party pages, this is done via inserting embedded HTML code.
 After adding the script to your webpage, refresh the tab that contains your webpage so that the update is visible to the form capture wizard.
@@ -191,7 +192,7 @@ After you've set up a captured or hosted form, you're ready to start using it in
 
 ### Link to an external form from an email message
 
-Unlike local landing pages, there is no [design element](content-blocks.md) dedicated to external forms. Therefore, use either a button element or a standard text link to your embedded form by using its page URL from your web server.
+Unlike local landing pages, there's no [design element](content-blocks.md) dedicated to external forms. Therefore, use either a button element or a standard text link to your embedded form by using its page URL from your web server.
 
 ### Use external forms with journey triggers
 
@@ -231,7 +232,7 @@ To set up a journey that invites contacts to visit an external form and then rea
 
 ### Use external forms with inbound campaigns
 
-You can create an inbound campaign by placing a **Marketing form** tile at the start of a journey, and then configure the tile to reference the marketing-form record that created the embedded or captured form that you're using on your external site. This will cause each contact who submits the form to be added to the journey, as though they had joined a segment targeted by the journey. You could already [do something similar for marketing pages hosted on a portal created with Power Apps portals](create-inbound-customer-journey.md), but now you can also do it with an externally hosted marketing form.
+You can create an inbound campaign by placing a **Marketing form** tile at the start of a journey, and then configure the tile to reference the marketing-form record that created the embedded or captured form that you're using on your external site. This causes each contact who submits the form to be added to the journey, as though they had joined a segment targeted by the journey. You could already [do something similar for marketing pages hosted on a portal created with Power Apps portals](create-inbound-customer-journey.md), but now you can also do it with an externally hosted marketing form.
 
 ![Inbound campaign from a hosted form.](media/journey-host-form-trigger5.png "Inbound campaign from a hosted form")
 
