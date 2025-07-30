@@ -12,10 +12,10 @@ search.audienceType:
 ms.custom: outbound-marketing, evergreen
 ---
 
+# Tabs and settings for segments
+
 > [!IMPORTANT]
 > **This article only applies to [outbound marketing](user-guide.md), which is gradually being removed from Customer Insights - Journeys.** To avoid interruptions, stop using outbound marketing and transition to real-time journeys. Learn more: [Transition overview](transition-overview.md).
-
-# Tabs and settings for segments
 
 Tabs are shown as a set of headings under the header, which shows the name of the segment. Select any of these headings to go to the relevant tab. Each tab is described briefly in the following subsections.
 
