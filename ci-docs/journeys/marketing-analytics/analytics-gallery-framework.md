@@ -2,6 +2,7 @@
 title: Analytics reporting framework for Dynamics 365 Customer Insights - Journeys
 description: The foundation for marketing analytics reporting is the framework of M-Code, queries, functions, data connectors, and parameter processing.
 ms.date: 08/17/2023
+ms.update-cycle: 1095-days
 ms.topic: reference
 author: cabeln
 ms.author: cabeln
@@ -10,7 +11,7 @@ search.audienceType:
   - admin
   - customizer
   - enduser
-ms.custom: outbound-marketing
+ms.custom: outbound-marketing, evergreen
 ---
 
 # The marketing analytics reporting framework (generic template)

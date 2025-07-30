@@ -2,6 +2,7 @@
 title: Get answers to questions about capabilities from Copilot (preview)
 description: Learn how to use Copilot across Customer Insights - Data.
 ms.date: 11/12/2024
+ms.update-cycle: 180-days
 ms.reviewer: mhart
 ms.topic: how-to
 author: jimsonc
@@ -13,6 +14,9 @@ ms.collection: bap-ai-copilot
 # Get answers to questions about capabilities from Copilot (preview)
 
 [!INCLUDE [public-preview-banner](./includes/public-preview-banner.md)]
+
+> [!IMPORTANT]
+> Copilot features in Customer Insights - Data are only available in environments in the United States and Switzerland regions. These features may become available in additional regions in future releases.
 
 Copilot in Dynamics 365 Customer Insights - Data can help you achieve your goals by answering your questions about the application and its features. You ask questions in natural language about capabilities and Copilot answers it, using the [official documentation](index.yml), [troubleshooting guides](/troubleshoot/dynamics-365/customer-insights/welcome-customer-insights), and blogs from the Microsoft team on how to set up Customer Insights - Data. These sources are organized as a Bing Search index, which is the reason for Copilot showing the disclaimer about Bing Search being used for certain capabilities. To use this capability an admin user needs to provide consent through the [consent experience](copilot-global-consent.md).
 

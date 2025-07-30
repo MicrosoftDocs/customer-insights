@@ -2,6 +2,7 @@
 title: Use customer journeys to create automated campaigns
 description: How to create a customer journey by assembling a pipeline of automated communications, activities, and conditional pathways in Dynamics 365 Customer Insights - Journeys.
 ms.date: 08/18/2023
+ms.update-cycle: 1095-days
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
@@ -9,7 +10,10 @@ search.audienceType:
   - admin
   - customizer
   - enduser
-ms.custom: outbound-marketing
+ms.custom:
+  - outbound-marketing
+  - evergreen
+  - sfi-image-nochange
 ---
 
 # Use customer journeys to create automated campaigns

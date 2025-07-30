@@ -2,6 +2,7 @@
 title: Set up event administration options and webinar provider accounts in outbound marketing
 description: Set options for event administration and configure connections to your webinar provider accounts in outbound marketing.
 ms.date: 01/03/2024
+ms.update-cycle: 1095-days
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
@@ -9,7 +10,7 @@ search.audienceType:
   - admin
   - customizer
   - enduser
-ms.custom: outbound-marketing
+ms.custom: outbound-marketing, evergreen
 ---
 
 # Set up event administration options and webinar provider accounts in outbound marketing

@@ -6,7 +6,9 @@ ms.reviewer: mhart
 ms.topic: how-to
 author: jodahl
 ms.author: jodahl
-ms.custom: bap-template
+ms.custom:
+  - bap-template
+  - sfi-image-nochange
 ---
 
 # Enrich customer profiles with data from Microsoft Office 365 (preview)

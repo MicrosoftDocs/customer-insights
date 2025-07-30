@@ -2,6 +2,7 @@
 title: Create segments and lists to establish target markets
 description: Use segments and lists to target customer journeys and manage subscriptions in Dynamics 365 Customer Insights - Journeys.
 ms.date: 08/23/2023
+ms.update-cycle: 1095-days
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
@@ -9,7 +10,10 @@ search.audienceType:
   - admin
   - customizer
   - enduser
-ms.custom: outbound-marketing
+ms.custom:
+  - outbound-marketing
+  - evergreen
+  - sfi-image-nochange
 ---
 
 # Working with segments

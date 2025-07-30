@@ -2,6 +2,7 @@
 title: Export members of dynamic segments to Excel
 description: Learn how to export the members of a dynamic segment to an Excel file from Dynamics 365 Customer Insights - Journeys.
 ms.date: 08/23/2023
+ms.update-cycle: 1095-days
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
@@ -9,7 +10,7 @@ search.audienceType:
   - admin
   - customizer
   - enduser
-ms.custom: outbound-marketing
+ms.custom: outbound-marketing, evergreen
 ---
 
 # Export dynamic segment members to Excel

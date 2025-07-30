@@ -2,6 +2,7 @@
 title: Prepare for analytic reporting with Power BI
 description: Describes how to set up data sources in outbound marketing to make them available to Power BI, and how to download and connect a Power BI template to them.
 ms.date: 05/31/2024
+ms.update-cycle: 1095-days
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
@@ -9,7 +10,7 @@ search.audienceType:
   - admin
   - customizer
   - enduser
-ms.custom: outbound-marketing
+ms.custom: outbound-marketing, evergreen
 ---
 
 # Prepare for analytic reporting with Power BI

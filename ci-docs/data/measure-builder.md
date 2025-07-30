@@ -6,7 +6,9 @@ ms.topic: how-to
 author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: v-wendysmith
-ms.custom: bap-template
+ms.custom:
+  - bap-template
+  - sfi-image-nochange
 ---
 
 # Create measures with measure builder

@@ -2,12 +2,13 @@
 title: Customer Journey workflow definition
 description: This topic shows how to define a customer journey workflow design.
 ms.date: 04/01/2019
+ms.update-cycle: 1095-days
 ms.topic: overview
 author: alfergus
 ms.author: alfergus
 search.audienceType: 
   - developer
-ms.custom: outbound-marketing
+ms.custom: outbound-marketing, evergreen
 ---
 
 # Customer journey workflow definition

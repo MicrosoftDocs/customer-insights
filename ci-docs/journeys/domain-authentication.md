@@ -1,7 +1,7 @@
 ---
 title: Authenticate your domains
 description: Learn how to authenticate your domains in Dynamics 365 Customer Insights - Journeys.
-ms.date: 07/30/2025
+ms.date: 07/04/2025
 ms.topic: how-to
 author: alfergus
 ms.author: colinbirkett
@@ -51,6 +51,7 @@ Set up as many authenticated domains as you need to cover all the from-addresses
 ## Prevent sending emails from unauthorized domains
 
 To benefit from domain authentication, the from-address for each message you send must show a domain that you've previously authenticated. Microsoft is dedicated to helping our customers achieve maximum email deliverability, so we've added a few features to help make sure you don't overlook or inadvertently work around your domain setup:
+
 - The error check for email messages show an error if you try to go live with an email message that has a from-address not associated with any of your domains.
 - We recommend that you [set a default sending domain](mkt-settings-default-marketing.md) that is your authenticated domain. When this is set, then the from-address for all your email messages will automatically be adjusted to show your selected default domain (if it initially uses a nonauthenticated domain) each time you create a new email message or change the user shown in the **From** field. More information: [Default marketing settings](mkt-settings-default-marketing.md) and [Set sender and receiver options](email-properties.md#set-sender-and-receiver-options)
 - All new instances and trials will automatically authenticate the default instance domain with SPF/DKIM enabled and set that domain as the default sending domain for your instance.

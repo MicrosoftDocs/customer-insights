@@ -2,6 +2,7 @@
 title: Create and use event templates in outbound marketing
 description: Describes how to create an event template and how to use templates when creating a new event in outbound marketing.
 ms.date: 09/22/2023
+ms.update-cycle: 1095-days
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
@@ -9,7 +10,7 @@ search.audienceType:
   - admin
   - customizer
   - enduser
-ms.custom: outbound-marketing
+ms.custom: outbound-marketing, evergreen
 ---
 
 # Create and use event templates in outbound marketing

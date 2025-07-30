@@ -2,12 +2,16 @@
 title: Register your web application to use the events API in outbound marketing
 description: Learn about the events API that lets you access data of events, sessions, session tracks and passes in outbound marketing.
 ms.date: 06/12/2019
+ms.update-cycle: 1095-days
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
 search.audienceType: 
   - developer
-ms.custom: outbound-marketing
+ms.custom:
+  - outbound-marketing
+  - evergreen
+  - sfi-image-nochange
 ---
 
 # Register your web application to use the events API in outbound marketing

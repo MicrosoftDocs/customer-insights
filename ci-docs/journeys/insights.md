@@ -2,6 +2,7 @@
 title: Analyze results to gain insights from your marketing activities
 description: How to find and interpret marketing results, KPIs, and analytics in Dynamics 365 Customer Insights - Journeys.
 ms.date: 02/24/2025
+ms.update-cycle: 1095-days
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
@@ -9,7 +10,7 @@ search.audienceType:
   - admin
   - customizer
   - enduser
-ms.custom: outbound-marketing
+ms.custom: outbound-marketing, evergreen
 ---
 
 # Analyze results to gain insights from your marketing activities

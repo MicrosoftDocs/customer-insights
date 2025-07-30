@@ -2,6 +2,7 @@
 title: Known issues in outbound marketing and workarounds
 description: This article documents known issues in outbound marketing and workarounds.
 ms.date: 08/18/2023
+ms.update-cycle: 1095-days
 ms.topic: troubleshooting-known-issue
 author: alfergus
 ms.author: alfergus
@@ -9,7 +10,7 @@ search.audienceType:
   - admin
   - customizer
   - enduser
-ms.custom: outbound-marketing
+ms.custom: outbound-marketing, evergreen
 ---
 
 # Known issues in outbound marketing and workarounds

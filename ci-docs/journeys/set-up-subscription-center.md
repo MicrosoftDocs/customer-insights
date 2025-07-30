@@ -2,6 +2,7 @@
 title: Set up a subscription center
 description: How to create subscription lists and add them to a subscription center in Dynamics 365 Customer Insights - Journeys.
 ms.date: 04/26/2024
+ms.update-cycle: 1095-days
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
@@ -9,7 +10,10 @@ search.audienceType:
   - admin
   - customizer
   - enduser
-ms.custom: outbound-marketing
+ms.custom:
+  - outbound-marketing
+  - evergreen
+  - sfi-image-nochange
 ---
 
 # Set up subscription lists and subscription centers

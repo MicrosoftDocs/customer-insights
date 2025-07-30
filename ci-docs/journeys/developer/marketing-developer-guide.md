@@ -2,12 +2,13 @@
 title: Outbound marketing developer guide
 description: Provides information about how you can extend outbound marketing.
 ms.date: 04/01/2018
+ms.update-cycle: 1095-days
 ms.topic: landing-page
 author: alfergus
 ms.author: alfergus
 search.audienceType: 
   - developer
-ms.custom: outbound-marketing
+ms.custom: outbound-marketing, evergreen
 ---
 
 # Outbound marketing developer guide

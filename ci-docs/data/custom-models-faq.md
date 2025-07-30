@@ -2,6 +2,7 @@
 title: Custom models FAQ
 description: Learn answers to frequently asked questions about using custom machine learning models in Dynamics 365 Customer Insights - Data.
 ms.date: 11/01/2023
+ms.update-cycle: 180-days
 ms.topic: faq
 author: radsay01
 ms.author: rsayyaparaju

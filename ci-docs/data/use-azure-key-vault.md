@@ -2,10 +2,11 @@
 title: "Bring your own Azure key vault (preview)"
 description: "Learn how to configure Dynamics 365 Customer Insights - Data to use your own Azure key vault to manage secrets."
 ms.date: 09/01/2023
-ms.reviewer: mhart
+ms.reviewer: alfergus
 ms.topic: how-to
-author: brndkfr
-ms.author: bkief
+author: Scott-Stabbert
+ms.author: sstabbert
+ms.custom: sfi-image-nochange
 ---
 
 # Bring your own Azure key vault (preview)

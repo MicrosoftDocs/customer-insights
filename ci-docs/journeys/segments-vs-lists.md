@@ -2,6 +2,7 @@
 title: The differences between segments and lists
 description: Learn how marketing segments are different from marketing lists, and when to use each of them in Dynamics 365 Customer Insights - Journeys.
 ms.date: 08/23/2023
+ms.update-cycle: 1095-days
 ms.topic: concept-article
 author: alfergus
 ms.author: alfergus
@@ -9,7 +10,7 @@ search.audienceType:
   - admin
   - customizer
   - enduser
-ms.custom: outbound-marketing
+ms.custom: outbound-marketing, evergreen
 ---
 
 # Marketing segments vs. marketing lists

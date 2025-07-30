@@ -2,12 +2,16 @@
 title: Extend outbound marketing forms using code
 description: Extend outbound marketing forms with JavaScript to apply custom business logic in Dynamics 365 Customer Insights - Journeys.
 ms.date: 02/07/2023
+ms.update-cycle: 1095-days
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
 search.audienceType: 
   - developer
-ms.custom: outbound-marketing
+ms.custom:
+  - outbound-marketing
+  - evergreen
+  - sfi-image-nochange
 ---
 
 # Extend outbound marketing forms using code

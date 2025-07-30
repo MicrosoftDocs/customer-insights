@@ -1,7 +1,8 @@
 ---
 title: New and upcoming features
 description: Discover the latest features, improvements, and bug fixes in Dynamics 365 Customer Insights - Journeys. Stay updated with our monthly release notes.
-ms.date: 07/01/2025
+ms.date: 07/24/2025
+ms.update-cycle: 180-days
 ms.topic: whats-new
 author: colinbirkett
 ms.author: colinbirkett
@@ -24,6 +25,35 @@ We're excited to announce our newest updates! This article summarizes early acce
 Customer Insights - Journeys updates are [pushed to customers automatically](https://cloudblogs.microsoft.com/dynamics365/it/2020/04/27/automatic-update-policy-for-dynamics-365-marketing/). Solutions are available for early validations. To manually update your instances, follow the steps in [Keep Customer Insights - Journeys up to date](apply-updates.md).
 
 To submit and vote on **feature requests** and **product suggestions**, go to the [Dynamics 365 Application Ideas portal](https://experience.dynamics.com/ideas/categories/?forum=dfa5b83d-9e4c-e811-a956-000d3a1bef07&forumName=Dynamics%20365%20Marketing).
+
+### August 2025 update
+
+| App              | GA release      |
+|------------------|-----------------|
+| Customer Insights - Journeys       |  1.1.57027.56 |
+
+> [!IMPORTANT]
+> The Dynamics 365 Customer Insights - Journeys services public IP addresses are being updated in all regions. The new IPs are currently available for allowlisting. Customer Insights - Journeys services will begin using the IPs on **Monday, August 4, 2025**.
+>
+> **How does this affect Customer Insights - Journeys users?**
+>
+> If you use custom analytics reporting, as described in [Prepare for analytic reporting with Power BI](custom-analytics.md), and restrict access to your "bring your own" storage accounts by firewall rules using IP addresses, you're affected by the change.
+>
+> If your custom analytics meet these criteria and are impacted, marketing analytics exports will be stopped due to unauthorized access to your blob storage from Customer Insights - Journeys services.
+>
+> To verify whether the IP changes affect your analytics configuration, review the entity **Analytics configuration** and verify the **Service status**.
+>
+> **Required action**
+>
+> An administrator with firewall or network rights should adjust your allowlists to account for the updated IP addresses. A list of all public IPs categorized by geo is available here: [Dynamics 365 Customer Insights - Journeys public IP addresses](marketing-public-ips.md).
+>
+> If your organization uses VNets (subnets) for allowlisting, it's not affected by the IP address changes.
+
+#### Monthly enhancements
+
+- **Protect existing lead and contact data with the "Ignore empty values" toggle**
+	- To prevent accidental data loss, forms now support an "Ignore empty values" option in the form editor. When enabled, this setting ensures that empty fields submitted by end users don’t overwrite existing lead or contact data. It applies to marketing and registration forms, and is enabled by default for new forms The toggle is disabled for existing forms to the preserve current behavior.
+	- [Docs](real-time-marketing-manage-forms.md#ignore-empty-values)
 
 ### July 2025 update
 
@@ -215,7 +245,7 @@ Learn how to make the most of the new Dynamics 365 Customer Insights features in
 
 - **Allow individuals to reenter a one-time, dynamic segment journey** 
 	- Audience members who move between stages of the customer lifecycle may need to repeat a lifecycle-specific state of the journey. For example, if a customer repeats a buying journey for a different product, they may reenter the dynamic segment conditions as they reenter the purchase funnel. As such, they should be allowed to reenter a journey for that dynamic segment when they come back into it. 
-	- [Release plan](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/allow-individuals-re-enter-one-time-dynamic-segment-journey) 
+	- [Release plan](/dynamics365/release-plan/2024wave2/customer-insights/dynamics365-customer-insights-journeys/allow-individuals-re-enter-one-time-dynamic-segment-journey) 
 	- [Docs](real-time-marketing-segment-based-journey.md)
 
 #### Public preview
@@ -267,7 +297,7 @@ Learn how to make the most of the new Dynamics 365 Customer Insights features in
 
 - **Allow individuals to reenter a one-time, dynamic segment journey** 
 	- Audience members who move between stages of the customer lifecycle may need to repeat a lifecycle-specific state of the journey. For example, if a customer repeats a buying journey for a different product, they may reenter the dynamic segment conditions as they reenter the purchase funnel. As such, they should be allowed to reenter a journey for that dynamic segment when they come back into it. 
-	- [Release plan](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/allow-individuals-re-enter-one-time-dynamic-segment-journey) 
+	- [Release plan](/dynamics365/release-plan/2024wave2/customer-insights/dynamics365-customer-insights-journeys/allow-individuals-re-enter-one-time-dynamic-segment-journey) 
 	- [Docs](real-time-marketing-segment-based-journey.md)
 
 - **Create event portals with event and registration details using Power Pages** 

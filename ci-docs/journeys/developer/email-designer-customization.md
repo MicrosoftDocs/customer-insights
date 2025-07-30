@@ -2,12 +2,16 @@
 title: Customize the email designer
 description: Learn how to customize the email designer in Dynamics 365 Customer Insights - Journeys.
 ms.date: 04/18/2023
+ms.update-cycle: 1095-days
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
 search.audienceType: 
   - developer
-ms.custom: outbound-marketing
+ms.custom:
+  - outbound-marketing
+  - evergreen
+  - sfi-image-nochange
 ---
 
 # Customize the email designer

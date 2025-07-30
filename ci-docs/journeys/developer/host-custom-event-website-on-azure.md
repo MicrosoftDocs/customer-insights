@@ -2,12 +2,13 @@
 title: Hosting your custom event website in outbound marketing on Azure
 description: Step-by-step tutorial on how to host your custom event website in outbound marketing on Azure.
 ms.date: 06/12/2019
+ms.update-cycle: 1095-days
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
 search.audienceType: 
   - developer
-ms.custom: outbound-marketing
+ms.custom: outbound-marketing, evergreen
 ---
 
 # Host your custom event website in outbound marketing on Azure

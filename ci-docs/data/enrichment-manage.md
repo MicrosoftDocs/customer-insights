@@ -7,6 +7,7 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 ms.collection: get-started
+ms.custom: sfi-image-nochange
 ---
 
 # Enrich unified data (preview)

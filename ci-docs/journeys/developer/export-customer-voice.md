@@ -2,12 +2,13 @@
 title: Export Dynamics 365 Customer Voice survey responses to Microsoft Excel in outbound marketing
 description: Learn how to map names and emails in outbound marketing to surveys with a custom Power Automate flow.
 ms.date: 01/24/2022
+ms.update-cycle: 1095-days
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
 search.audienceType: 
   - developer
-ms.custom: outbound-marketing
+ms.custom: outbound-marketing, evergreen
 ---
 
 # Export Dynamics 365 Customer Voice survey responses to Microsoft Excel in outbound marketing

@@ -1,36 +1,38 @@
 ---
 title: "Export segments to Google Ads (preview)"
 description: "Learn how to configure the connection and export to Google Ads."
-ms.date: 04/17/2025
+ms.date: 07/17/2025
 ms.topic: how-to
 author: JimsonChalissery
 ms.author: jimsonc
-ms.reviewer: mhart
+ms.reviewer: alfergus
 ---
 
 # Export segments to Google Ads (preview)
 
 [!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
-Export segments of unified customer profiles to a Google Ads audience list and use them to advertise on Google Search, Gmail, YouTube, and Google Display Network.
+Export segments of unified customer profiles to a Google Ads audience list. Use these segments to advertise on Google Search, Gmail, YouTube, and Google Display Network.
+
+[!INCLUDE [public-preview-note](includes/public-preview-note.md)]
 
 ## Prerequisites
 
-- A [Google Ads account](https://ads.google.com/) and corresponding administrator credentials.
+- A [Google Ads account](https://ads.google.com/) and corresponding admin credentials.
 - A [Google Ads customer ID](https://support.google.com/google-ads/answer/1704344).
-- The requirements of the [Customer Match Policy](https://support.google.com/adspolicy/answer/6299717) are met.
-- The requirements of the [remarketing list sizes](https://support.google.com/google-ads/answer/7558048) are met.
+- Meet the requirements of the [Customer Match Policy](https://support.google.com/adspolicy/answer/6299717).
+- Meet the requirements for [remarketing list sizes](https://support.google.com/google-ads/answer/7558048).
 - The [configured segments](segments.md).
-- The unified customer profiles in the exported segments contain fields representing an email address, phone, mobile advertiser ID, third-party user ID, or address.
+- Make sure unified customer profiles in the exported segments have fields for an email address, phone, mobile advertiser ID, third-party user ID, or address.
 
 ## Known limitations
 
-- Export up 1 million customer profiles per export to Google Ads, which can take up to 30 minutes to complete because of limitations on the provider side.
-- Segments only.
-- Match in Google Ads can take up to 48 hours.
+- Export up to 1 million customer profiles per export to Google Ads. This process can take up to 30 minutes because of provider limitations.
+- Only segments are supported.
+- Matching in Google Ads can take up to 48 hours.
 
 > [!NOTE]
-> [Google policy](https://ads-developers.googleblog.com/2025/02/update-to-customer-match-membership.html) states that customer lists in Google Ads will be deleted if not refreshed in 540 days. Deletion of unrefreshed customer lists can impact your Google Ad campaigns and advertising strategies. We recommend you rerun the export periodically to refresh the customer lists.
+> [Google policy](https://ads-developers.googleblog.com/2025/02/update-to-customer-match-membership.html) states that customer lists in Google Ads are deleted if they're not refreshed in 540 days. Deleting unrefreshed customer lists can affect your Google Ads campaigns and advertising strategies. Rerun the export periodically to refresh your customer lists.
 
 ## Set up connection to Google Ads
 
@@ -40,19 +42,19 @@ Export segments of unified customer profiles to a Google Ads audience list and u
 
 1. Select **Add connection** and choose **Google Ads**.
 
-1. Give your connection a recognizable name in the **Display name** field. The name and the type of the connection describe this connection. We recommend choosing a name that explains the purpose and target of the connection.
+1. Enter a recognizable name in the **Display name** field. The name and type of the connection describe the connection. Choose a name that explains the purpose and target of the connection.
 
-1. Choose who can use this connection. By default, it's only administrators. For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
+1. Select who can use this connection. By default, only administrators can use it. For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
 1. Enter your Google Ads customer ID.
 
-1. Review the [data privacy and compliance](connections.md#data-privacy-and-compliance) and select **I agree**.
+1. Review [data privacy and compliance](connections.md#data-privacy-and-compliance), then select **I agree**.
 
-1. Select **Authenticate with Google Ads** and provide your Google Ads credentials.
+1. Select **Authenticate with Google Ads**, then enter your Google Ads credentials.
 
-1. Select **Add yourself as export user** and provide your Dynamics 365 Customer Insights - Data credentials.
+1. Select **Add yourself as export user**, then enter your Dynamics 365 Customer Insights - Data credentials.
 
-1. Select **Save** to complete the connection.
+1. Select **Save** to finish setting up the connection.
 
 ## Configure an export
 
@@ -62,7 +64,7 @@ Export segments of unified customer profiles to a Google Ads audience list and u
 
 1. Select **Add export**.
 
-1. In the **Connection for export** field, choose a connection from the Google Ads section. Contact an administrator if no connection is available.
+1. In the **Connection for export** field, choose a connection from the Google Ads section. Contact an admin if no connection is available.
 
 1. Enter a name for the export.
 

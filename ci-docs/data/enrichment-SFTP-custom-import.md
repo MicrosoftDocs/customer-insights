@@ -6,6 +6,7 @@ ms.reviewer: mhart
 ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
+ms.custom: sfi-image-nochange
 ---
 
 # Enrich customer profiles with SFTP custom import (preview)

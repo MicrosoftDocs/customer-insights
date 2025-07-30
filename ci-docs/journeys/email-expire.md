@@ -2,6 +2,7 @@
 title: Set expiration dates for selected email tiles in a customer journey
 description: Prevent customer journeys from delivering out-of-date information by assigning an expiration date for email tiles.
 ms.date: 08/18/2023
+ms.update-cycle: 1095-days
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
@@ -9,7 +10,7 @@ search.audienceType:
   - admin
   - customizer
   - enduser
-ms.custom: outbound-marketing
+ms.custom: outbound-marketing, evergreen
 ---
 
 # Set expiration dates for selected email tiles in a customer journey

@@ -2,12 +2,13 @@
 title: Self-hosted custom event website in outbound marketing
 description: Learn how you can extend event management web application functionality for self-hosted custom event websites in outbound marketing.
 ms.date: 09/16/2020
+ms.update-cycle: 1095-days
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
 search.audienceType: 
   - developer
-ms.custom: outbound-marketing
+ms.custom: outbound-marketing, evergreen
 ---
 
 # Self-hosted custom event website in outbound marketing

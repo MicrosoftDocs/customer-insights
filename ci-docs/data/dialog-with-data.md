@@ -2,6 +2,7 @@
 title: Have a dialog with data using Copilot in Customer Insights - Data
 description: Learn how to get more insights from your data by asking natural-language questions with Copilot in Dynamics 365 Customer Insights - Data. 
 ms.date: 11/12/2024
+ms.update-cycle: 180-days
 ms.topic: how-to
 author: radsay01
 ms.author: rsayyaparaju
@@ -14,11 +15,16 @@ ms.collection: bap-ai-copilot
 
 [!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
+> [!IMPORTANT]
+> Copilot features in Customer Insights - Data are only available in environments in the United States and Switzerland regions. These features may become available in additional regions in future releases.
+
 Understanding your customers’ profiles and preferences is essential for driving personalized experiences. Customer Insights – Data uses generative AI capabilities to let you ask questions in natural language to quickly generate insights about your customers. Now end users like marketers, sellers, and service agents can get insights to better understand and serve customers easily without the support of IT teams or other tools.
 
 For example, let’s say that you’d like to run a campaign targeted at improving customer loyalty. You can ask Copilot “How many customers aren't members of the loyalty program but have spent over $1,000 in the last six months?” You can then use this information to create a targeted segment and run an email campaign to boost loyalty program membership. The possibilities are endless. Have a dialog with your data today by asking questions in every day words to explore, assess, and better understand the profiles, behaviors, and activities of your customers.
 
 Responses are generated in accordance with [Microsoft Responsible AI Standards.](https://www.microsoft.com/ai/responsible-ai) For more information, see [FAQ for dialog with data.](faqs-dialog-data.md)
+
+[!INCLUDE [public-preview-note](includes/public-preview-note.md)]
 
 ## Prerequisites
 
@@ -26,7 +32,7 @@ Responses are generated in accordance with [Microsoft Responsible AI Standards.]
 - For optimal results, we recommend imported and unified [activity data](activities.md).
 - You have Admin or Contributor permissions.
 - [Enable Copilot features powered by Azure OpenAI](copilot-global-consent.md) setting turned **On**. Default is **On**.
-- Environment is in a [supported geography and uses a supported language](https://releaseplans.microsoft.com/availability-reports/?report=copilotfeaturereport).
+- Environment is in a supported geography and uses a supported language.
 
 ## Discover insights from your data
 

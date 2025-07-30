@@ -2,6 +2,7 @@
 title: Upload, manage, and use images, files, and videos in online content
 description: Find out how to efficiently upload, manage, and use images, files, and videos in Dynamics 365 Customer Insights - Journeys. Streamline your content creation.
 ms.date: 02/12/2025
+ms.update-cycle: 180-days
 ms.topic: article
 author: alfergus
 ms.author: alfergus

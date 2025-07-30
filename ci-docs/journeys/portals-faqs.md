@@ -2,6 +2,7 @@
 title: Portals FAQs
 description: Frequently asked questions about using Power Apps portals in the outbound marketing area of Dynamics 365 Customer Insights.
 ms.date: 09/15/2023
+ms.update-cycle: 1095-days
 ms.topic: faq
 author: alfergus
 ms.author: alfergus
@@ -9,7 +10,10 @@ search.audienceType:
   - admin
   - customizer
   - enduser
-ms.custom: outbound-marketing
+ms.custom:
+  - outbound-marketing
+  - evergreen
+  - sfi-image-nochange
 ---
 
 # Portals FAQs

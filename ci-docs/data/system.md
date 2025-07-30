@@ -2,17 +2,25 @@
 title: "View system configuration"
 description: "Learn about system settings in Dynamics 365 Customer Insights - Data."
 ms.date: 11/13/2024
+ms.update-cycle: 180-days
 ms.topic: how-to
-author: NimrodMagen
-ms.author: nimagen
-ms.reviewer: mhart
+author: Scott-Stabbert
+ms.author: sstabbert
+ms.reviewer: alfergus
 ms.custom: bap-template
 ms.collection: bap-ai-copilot 
 ---
 
 # View system configuration
 
+[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
+
+> [!IMPORTANT]
+> Copilot features in Customer Insights - Data are only available in environments in the United States and Switzerland regions. These features may become available in additional regions in future releases.
+
 View system information and system status.
+
+[!INCLUDE [public-preview-note](includes/public-preview-note.md)]
 
 ## View system information
 
@@ -110,7 +118,7 @@ The Environment status summary is designed to help you quickly understand the st
 ### Prerequisites
 
 - [Enable Copilot features powered by Azure OpenAI](copilot-global-consent.md) setting turned **On**. Default is **On**.
-- Environment is in a [supported geography and uses a supported language](https://releaseplans.microsoft.com/availability-reports/?report=copilotfeaturereport).
+- Environment is in a supported geography and uses a supported language.
 
 ### View the Environment status summary
 

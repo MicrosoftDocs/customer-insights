@@ -2,6 +2,7 @@
 title: Business unit support in outbound marketing
 description: Business unit support in outbound marketing in Dynamics 365 Customer Insights - Journeys.
 ms.date: 08/17/2023
+ms.update-cycle: 1095-days
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -9,7 +10,7 @@ search.audienceType:
   - admin
   - customizer
   - enduser
-ms.custom: outbound-marketing
+ms.custom: outbound-marketing, evergreen
 ---
 
 # Business unit support in outbound marketing

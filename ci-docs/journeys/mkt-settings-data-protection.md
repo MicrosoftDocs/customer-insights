@@ -2,6 +2,7 @@
 title: Data protections in outbound marketing
 description: A short article that links to more information about how to enable data privacy features and comply with data privacy laws and regulations in outbound marketing.
 ms.date: 08/21/2023
+ms.update-cycle: 1095-days
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -9,7 +10,7 @@ search.audienceType:
   - admin
   - customizer
   - enduser
-ms.custom: outbound-marketing
+ms.custom: outbound-marketing, evergreen
 ---
 
 # Data protections in outbound marketing

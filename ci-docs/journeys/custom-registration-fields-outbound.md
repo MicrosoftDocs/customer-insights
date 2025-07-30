@@ -2,6 +2,7 @@
 title: Add custom fields to your event registration form in outbound marketing
 description: Add custom fields to the registration form on your event website, and read the submitted values in Dynamics 365 Customer Insights - Journeys.
 ms.date: 03/26/2024
+ms.update-cycle: 1095-days
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
@@ -9,7 +10,7 @@ search.audienceType:
   - admin
   - customizer
   - enduser
-ms.custom: outbound-marketing
+ms.custom: outbound-marketing, evergreen
 ---
 
 # Add custom fields to your event registration form in outbound marketing

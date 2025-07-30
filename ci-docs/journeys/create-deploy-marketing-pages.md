@@ -2,6 +2,7 @@
 title: Create and deploy marketing pages
 description: How to design and deploy landing, forwarding, and subscription pages in Dynamics 365 Customer Insights - Journeys.
 ms.date: 08/18/2023
+ms.update-cycle: 1095-days
 ms.topic: install-set-up-deploy
 author: alfergus
 ms.author: alfergus
@@ -9,7 +10,7 @@ search.audienceType:
   - admin
   - customizer
   - enduser
-ms.custom: outbound-marketing
+ms.custom: outbound-marketing, evergreen
 ---
 
 # Create and deploy marketing pages

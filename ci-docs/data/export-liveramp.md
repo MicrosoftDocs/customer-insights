@@ -6,6 +6,7 @@ ms.reviewer: mhart
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
+ms.custom: sfi-image-nochange
 ---
 
 # Export segments to LiveRamp&reg; (preview)

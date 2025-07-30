@@ -2,6 +2,7 @@
 title: Evaluate your event and follow up with attendees in outbound marketing
 description: Learn what you can do to optimize the benefits gained from your event by collecting feedback, analyzing attendance data, and handing leads off to sales from outbound marketing.
 ms.date: 08/18/2023
+ms.update-cycle: 1095-days
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -9,7 +10,7 @@ search.audienceType:
   - admin
   - customizer
   - enduser
-ms.custom: outbound-marketing
+ms.custom: outbound-marketing, evergreen
 ---
 
 # Evaluate your event and follow up with attendees in outbound marketing

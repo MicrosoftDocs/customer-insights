@@ -2,6 +2,7 @@
 title: Leaderboard report for customer journeys and email marketing for Dynamics 365 Customer Insights - Journeys
 description: Use the leaderboard report for customer journey automation and email marketing to identify your most effective marketing activities.
 ms.date: 08/17/2023
+ms.update-cycle: 1095-days
 ms.topic: reference
 author: cabeln
 ms.author: cabeln
@@ -10,7 +11,7 @@ search.audienceType:
   - admin
   - customizer
   - enduser
-ms.custom: outbound-marketing
+ms.custom: outbound-marketing, evergreen
 ---
 
 # Leaderboard report for customer journeys and email marketing

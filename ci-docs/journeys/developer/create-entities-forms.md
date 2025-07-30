@@ -2,12 +2,13 @@
 title: "Step 1: Create required entities and forms for a custom channel in outbound marketing"
 description: Create required custom entities, forms, and dashboards to store and display information about your custom channel in outbound marketing.
 ms.date: 04/01/2018
+ms.update-cycle: 1095-days
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
 search.audienceType: 
   - developer
-ms.custom: outbound-marketing
+ms.custom: outbound-marketing, evergreen
 ---
 
 # Step 1: Create required entities and forms for a custom channel in outbound marketing
