@@ -1,10 +1,10 @@
 ---
 title: Use QR codes for event registration, links to content, or URLs
 description: Learn how to use QR codes for event registration, links to content, or URLs in email messages in Dynamics 365 Customer Insights - Journeys.
-ms.date: 02/12/2024
+ms.date: 08/01/2025
 ms.topic: how-to
 author: alfergus
-ms.author: alfergus
+ms.author: colinbirkett
 search.audienceType: 
   - admin
   - customizer
