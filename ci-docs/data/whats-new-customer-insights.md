@@ -46,14 +46,14 @@ Improve the quality of your unified customer profiles and insights by filtering 
 As your Dynamics 365 Customer Insights usage increases, so does the number of segments and measures. Large numbers of segments and measures can result in longer system refresh times, which delay time-sensitive insights. 
 Customer Insights now automatically deactivates segments and measures based on their usage to ensure your active segments and measures refresh faster. As an admin you get to control the retention period that applies and can support your organization to scale confidently.
 
-- [Release plan](/dynamics365/release-plan/2024wave1/customer-insights/dynamics365-customer-insights-data/use-automation-manage-segments-measures)
+- [Release plan](/dynamics365/release-plan/2024wave1/customer-insights/dynamics365-customer-insights-data/planned-features)
 <!--- - [Docs](.md) -->
 
 #### Accelerate time to insights with data in Delta Lake format
 
 Your customer data updates constantly, with rapidly changing signals like online activities and mobile interactions. When a traditional data warehouse is used to generate customer insights, this leads to increased time to insight with each update while the volume of unprocessed signals keeps growing. Longer queues result in slow or stale insights. With native support for Delta Lake storage format in Customer Insights, you can now accelerate processing times even with a higher volume of fast-changing data updates. Get customer profiles and associated insights updated more frequently and react to customer engagements based on the most current information available. This empowers you to create the most relevant and personalized experiences for your customers and the most up-to-date and timely insights for your business users.
 
-- [Release plan](/dynamics365/release-plan/2024wave1/customer-insights/dynamics365-customer-insights-data/accelerate-time-insights-data-delta-lake-format)
+- [Release plan](/dynamics365/release-plan/2024wave1/customer-insights/dynamics365-customer-insights-data/planned-features)
 <!--- - [Docs](.md) -->
 
 ## September 2024
@@ -64,7 +64,7 @@ Your customer data updates constantly, with rapidly changing signals like online
 
 Your data updates constantly, with rapidly changing signals like online activities and mobile interactions. When a traditional data warehouse is used to generate customer insights, this leads to increased time to insight with each update while the volume of unprocessed signals keeps growing. Longer queues result in slow or stale insights. With native support for Delta Lake storage format in Customer Insights, you can now accelerate processing times even with a higher volume of fast-changing data updates. You can get customer profiles and associated insights updated more frequently and react to customer engagements based on the most current information available. This empowers you to create the most relevant and personalized experiences for your customers and the most up-to-date and timely insights for your business users.
 
-- [Release plan](/dynamics365/release-plan/2024wave2/customer-insights/dynamics365-customer-insights-data/accelerate-time-insights-data-delta-lake-format)
+- [Release plan](/dynamics365/release-plan/2024wave2/customer-insights/dynamics365-customer-insights-data/planned-features)
 - [Docs](connect-delta-lake.md)
 
 ## June 2024
