@@ -26,6 +26,9 @@ For each custom channel solution, you need to:
 1. Create a custom entity to represent the extended configuration of the **Channel Instance Account** entity defined in the base solution.
 
     The name of the entity is assigned to the attribute **msdyn_channeldefinitionaccountexternalentity** at the [channel definition step](real-time-marketing-define-channel-definition.md).
+   
+   > [!IMPORTANT]
+   > Created entity logical name should be lowercamelcase
 
 1. Add a relationship to the base **Channel Instance Account** entity in the **msdyn_extendedentityid** attribute.
 
