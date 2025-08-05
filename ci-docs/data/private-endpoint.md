@@ -1,7 +1,7 @@
 ---
 title: Connect to storage accounts behind firewalls
 description: 'Storage account firewall: Learn how to connect Customer Insights – Data to Azure Data Lake Storage accounts behind firewalls using private endpoints for secure access.'
-ms.date: 07/25/2025
+ms.date: 08/05/2025
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -78,6 +78,8 @@ Instances with older private links prompt you to update to private endpoints. Th
 To open the **Update private links** dialog, select the **See details** button.
 
 :::image type="content" source="media/connect-to-storage-accounts-behind-firewalls/dialog.png" alt-text="Screenshot of the update private links dialog.":::
+
+Once in the dialog, to update legacy private links:
 
 1. Select **Copy storage accounts information** to copy details to the clipboard.
 1. Send the copied details to your Power Platform admin and Azure admin, and ask them to create private endpoints. Wait for confirmation that the private endpoints are set up before you continue.
