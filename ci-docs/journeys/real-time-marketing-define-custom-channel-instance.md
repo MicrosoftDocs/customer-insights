@@ -27,6 +27,9 @@ For each custom channel solution, you need to:
 
     The name of the entity is assigned to the attribute **msdyn_channeldefinitionexternalentity** at the [channel definition step](real-time-marketing-define-channel-definition.md).
 
+   > [!IMPORTANT]
+   > To ensure proper functionality, the created entity logical name must be in lowerCamelCase.
+
 1. [Add a relationship](/dynamics365/customerengagement/on-premises/customize/create-and-edit-1n-relationships) to the base **Channel Instance** entity in the **msdyn_extendedentityid** attribute.\
 
     This attribute is a [polymorphic lookup](/power-apps/developer/data-platform/webapi/multitable-lookup). 
