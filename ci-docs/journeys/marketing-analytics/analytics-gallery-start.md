@@ -1,12 +1,12 @@
 ---
 title: Download and use marketing analytics templates and sample reports for Power BI
 description: Download and use Power BI templates and sample reports to create custom analytics reports for your Customer Insights - Journeys organization.
-ms.date: 08/17/2023
+ms.date: 07/30/2025
 ms.update-cycle: 1095-days
 ms.topic: how-to
 author: cabeln
 ms.author: cabeln
-ms.reviewer: alfergus
+ms.reviewer: colinbirkett
 search.audienceType: 
   - admin
   - customizer
@@ -58,7 +58,7 @@ After your Azure Blob storage is [set up and connected to Dynamics 365 Customer 
 
 1. Select a template and open it in Power BI Desktop. If you don't already have Power BI Desktop, you can download it for free from [https://powerbi.microsoft.com/desktop/](https://powerbi.microsoft.com/desktop/).
 
-1. The first time you open a Power BI template, you'll be asked to specify connection strings and credentials to connect to both Azure Blob storage and to Dynamics 365 Customer Insights - Journeys.
+1. The first time you open a Power BI template, you are asked to specify connection strings and credentials to connect to both Azure Blob storage and to Dynamics 365 Customer Insights - Journeys.
 
     ![The connection dialog for connecting your Power BI template to the relevant data sources.](../media/custom-analytics-pbi-connect.png "The connection dialog for connecting your Power BI template to the relevant data sources")
 
@@ -72,7 +72,7 @@ After your Azure Blob storage is [set up and connected to Dynamics 365 Customer 
     > If you see loading errors the first time you open a template, open the query editor, select a query that has been highlighted with a warning icon, and then select **Retry** on the notification message bar. Repeat for each query that shows a warning. After all queries have loaded, select **Close & Apply**.
 
     > [!IMPORTANT]
-    > There is a **two hour** limit for Power BI report refresh. To prevent a timeout, we recommend keeping the data in your blob storage under these limits:
+    > There's a **two hour** limit for Power BI report refresh. To prevent a timeout, we recommend keeping the data in your blob storage under these limits:
     > -	50,000 blobs in total
     > -	5GB of data in total
 
