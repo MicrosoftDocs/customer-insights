@@ -26,8 +26,9 @@ For each custom channel solution, you need to:
 1. [Create a custom entity](/dynamics365/customerengagement/on-premises/customize/create-entities) to represent the extended configuration of the **Channel Instance** entity (**msdyn_channelinstance**) defined in the base solution.
 
     The name of the entity is assigned to the attribute **msdyn_channeldefinitionexternalentity** at the [channel definition step](real-time-marketing-define-channel-definition.md).
+
    > [!IMPORTANT]
-   > Created entity logical name should be lowercamelcase
+   > To ensure proper functionality, the created entity logical name must be in lowerCamelCase.
 
 1. [Add a relationship](/dynamics365/customerengagement/on-premises/customize/create-and-edit-1n-relationships) to the base **Channel Instance** entity in the **msdyn_extendedentityid** attribute.\
 
