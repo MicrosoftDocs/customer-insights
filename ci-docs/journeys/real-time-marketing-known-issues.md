@@ -1,7 +1,7 @@
 ---
 title: Known issues in Customer Insights - Journeys with mitigations
 description: Learn about known issues in Customer Insights - Journeys and how to work around them.
-ms.date: 05/27/2025
+ms.date: 08/06/2025
 ms.topic: troubleshooting-known-issue
 author: alfergus
 ms.author: alfergus
@@ -27,7 +27,7 @@ As we continue to work on Customer Insights - Journeys and refine the experience
 
 ## Customer journeys
 
-- Journey names can be up to 300 characters.
+- Journey names can be up to 150 characters.
 - Journeys tiles that create branches can create up to 25 branches for a single tile. To create more branches, add a second branching tile to the “Other” branch of the first tile.
 - Journeys with nested branches (a branching tile within the branch of another branching tile) have a maximum nested depth of eight branching conditions. To avoid nesting, limits consolidate branching logic or consider splitting the journey into separate journeys for large branches.
 - Journeys with multiple complex conditions or large amounts of tiles can fail to publish. If retrying a journey publish doesn’t succeed, consider splitting the journey into smaller journeys. You can also reach out to MS Support to seek product support on this.
