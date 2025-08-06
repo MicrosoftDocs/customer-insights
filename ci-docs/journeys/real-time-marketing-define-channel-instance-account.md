@@ -28,7 +28,7 @@ For each custom channel solution, you need to:
     The name of the entity is assigned to the attribute **msdyn_channeldefinitionaccountexternalentity** at the [channel definition step](real-time-marketing-define-channel-definition.md).
    
    > [!IMPORTANT]
-   > Created entity logical name should be lowercamelcase
+   > To ensure proper functionality, the created entity logical name must be in lowerCamelCase.
 
 1. Add a relationship to the base **Channel Instance Account** entity in the **msdyn_extendedentityid** attribute.
 
