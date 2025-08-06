@@ -36,7 +36,7 @@ This article shows you how to set up secure connections to Azure Data Lake Stora
 
 To connect Customer Insights – Data to a firewalled storage account, set up private endpoints to use **Azure Virtual Network support for Power Platform**. Azure Virtual Network support for Power Platform securely routes data between the storage account and Customer Insights – Data over your virtual network.
 
-When you create a data connection, the "Validate private endpoint" button appears when you select “This storage account is behind a firewall.” It shows whether the private endpoint exists. Ask your Power Platform and Azure admins to set up private endpoints by following the guidance in this article for all firewalled storage accounts you want to use in Customer Insights – Data.
+When you create a data connection and select “This storage account is behind a firewall,” the "Validate private endpoint" button appears. The "Validate private endpoint" button shows whether the private endpoint exists. Ask your Power Platform and Azure admins to set up private endpoints by following the guidance in this article for all firewalled storage accounts you want to use in Customer Insights – Data.
 
 ### Prerequisites to enable Azure Virtual Network support for Power Platform
 
