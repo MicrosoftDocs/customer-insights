@@ -1,7 +1,7 @@
 ---
 title: Data sources overview
 description: Learn how to import or ingest data from various sources.
-ms.date: 06/24/2024
+ms.date: 07/30/2025
 ms.topic: overview
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -48,7 +48,7 @@ If you can't use a connector that attaches to your data, copy the data by using 
 
 ## Data profiling
 
-When data is ingested, Customer Insights – Data performs some basic data profiling. For example, it profiles the frequency of repeated values in a column. You can use profile data to understand your data and address issues. For example, if you're matching on the `FullName` column, data profiling can help you detect that the default value, *Enter your name*, appears in 10,000 rows. Therefore, if you match on this value, 10,000 rows that should not be matched are matched. When you add your Azure data lake, Delta tables, or Azure Synapse data sources, you can enable data profiling for more columns.
+When data is ingested, Customer Insights – Data performs some basic data profiling. For example, it profiles the frequency of repeated values in a column. You can use profile data to understand your data and address issues. For example, if you're matching on the `FullName` column, data profiling can help you detect that the default value, *Enter your name*, appears in 10,000 rows. Therefore, if you match on this value, 10,000 rows that shouldn't be matched are matched. When you add your Azure data lake, Delta tables, or Azure Synapse data sources, you can enable data profiling for more columns.
 
 After you ingest the data, you can view the results of data profiling.
 

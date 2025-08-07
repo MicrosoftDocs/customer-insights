@@ -1,10 +1,10 @@
 ---
 title: Add a contactability grid control to custom forms
 description: Learn how to add contactability grid control to custom forms.
-ms.date: 03/20/2024
+ms.date: 07/30/2025
 ms.topic: how-to
 author: alfergus
-ms.author: alfergus
+ms.author: colinbirkett
 search.audienceType: 
   - admin
   - customizer
@@ -16,7 +16,7 @@ search.audienceType:
 This article explains how to add a contactability consent control to custom forms. Learn more: [View and manage consent records](real-time-marketing-email-text-consent.md#view-and-manage-consent-records).
 
 > [!IMPORTANT]
-> Ensure that the ["Manage consent on contact and lead forms"](real-time-marketing-email-text-consent.md#view-and-manage-consent-records) feature switch is turned on, as that is a pre-requisite for the custom control to work.
+> Ensure that the ["Manage consent on contact and lead forms"](real-time-marketing-email-text-consent.md#view-and-manage-consent-records) feature switch is turned on, as that is a prerequisite for the custom control to work.
 
 1. Go to the [maker portal](https://make.powerapps.com/).
 1. From the **Tables** menu, select the **Contact** or **Lead** table depending on which custom form you want to add the contactability grid control to.
@@ -35,7 +35,7 @@ This article explains how to add a contactability consent control to custom form
 1. Once added, expand the **More Components** section, and add the **ContactabilityGrid** control onto the new section.
     > [!div class="mx-imgBorder"]
     > ![Select the contactability grid by expanding the section](media/select-contactability-grid.png "Select the contactability grid by expanding the section")
-1. Once complete, the contactability consent control looks like the screenshot below:
+1. Once complete, the contactability consent control looks like this:
     > [!div class="mx-imgBorder"]
     > ![You can add your contact points](media/add-your-contact-points.png "You can add your contact points")
 
