@@ -33,16 +33,16 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 | Customer Insights - Journeys       |  1.1.57027.56 |
 
 > [!IMPORTANT]
-> The Dynamics 365 Customer Insights - Journeys services public IP addresses have been updated in all regions. The new IPs are currently available for allowlisting. Customer Insights - Journeys services began using the IPs on **Monday, August 4, 2025**.
+> On **August 4, 2025**, the Dynamics 365 Customer Insights - Journeys services public IP addresses were updated in all regions.
 >
-> **How do the IP address updates affect Customer Insights - Journeys users?**
+> **How do the updated IP addresses affect Customer Insights - Journeys users?**
 >
-> - **Real-time journeys**: So long as you update your allowlists (as described below under **Required action for administrators**), the IP address changes don't affect *real-time journeys services*.
-> - **Outbound marketing**: *Outbound marketing* users who meet all of the following criteria are affected: (1) you are an existing outbound marketing user, (2) you use custom analytics reporting as described in [Prepare for analytic reporting with Power BI](custom-analytics.md), and (3) you restrict access to your "bring your own" storage accounts by firewall rules using IP addresses. If your custom analytics meet these criteria and are impacted, outbound marketing analytics exports are stopped due to unauthorized access to your blob storage from outbound marketing services. To verify whether the IP changes affect your outbound marketing analytics configuration, review the entity **Analytics configuration** and verify the **Service status**.
+> - **Real-time journeys**: So long as you update your allowlists (as described below under **Required action for administrators**), the IP address changes don't affect real-time journeys services.
+> - **Outbound marketing**: Outbound marketing users who meet all of the following criteria are affected: (1) you are an existing outbound marketing user, (2) you use custom analytics reporting as described in [Prepare for analytic reporting with Power BI](custom-analytics.md), and (3) you restrict access to your "bring your own" storage accounts by firewall rules using IP addresses. If your custom analytics meet these criteria and are impacted, outbound marketing analytics exports are stopped due to unauthorized access to your blob storage from outbound marketing services. To verify whether the IP changes affect your outbound marketing analytics configuration, review the entity **Analytics configuration** and verify the **Service status**.
 >
 > **Required action for administrators**
 >
-> An administrator with firewall or network rights should adjust your allowlists to account for the updated IP addresses. A list of all public IPs categorized by geo is available here: [Dynamics 365 Customer Insights - Journeys public IP addresses](marketing-public-ips.md).
+> An administrator with firewall or network rights should update your allowlists to account for the new IP addresses. A list of all public IP addresses, categorized by geo, is available here: [Dynamics 365 Customer Insights - Journeys public IP addresses](marketing-public-ips.md).
 >
 > If your organization uses VNets (subnets) for allowlisting, it's not affected by the IP address changes.
 
