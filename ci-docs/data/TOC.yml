@@ -341,8 +341,6 @@
       href: customer-managed-keys.md
     - name: Securely access customer data with Customer Lockbox
       href: security-lockbox.md
-    - name: Connect to storage accounts behind firewalls
-      href: private-endpoint.md
     - name: Set up an Azure Private Link
       href: private-link.md
     - name: Export diagnostic logs
