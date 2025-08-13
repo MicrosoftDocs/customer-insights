@@ -1,7 +1,7 @@
 ---
 title: Connect to storage accounts behind firewalls
 description: 'Storage account firewall: Learn how to connect Customer Insights – Data to Azure Data Lake Storage accounts behind firewalls using private endpoints for secure access.'
-ms.date: 08/05/2025
+ms.date: 08/13/2025
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -99,7 +99,7 @@ Once in the dialog, to update legacy private links:
 1. **Required**: Check that the Power Platform environment is managed.
     1. Sign in to `https://admin.powerplatform.com`.
     1. In Environment settings, make sure **Managed environments** is set to **Yes**. See [Managed Environments overview](/power-platform/admin/managed-environment-overview).
-1. Download and unzip the [Customer Insights - Data script package](https://download.microsoft.com/download/77c5dfb9-4555-4b30-9e96-08408855aab3/SubnetDelegationSetup.zip).
+1. Download and unzip the [Customer Insights - Data script package](https://download.microsoft.com/download/45de4654-6d52-4361-af3c-30d3f3723979/SubnetDelegationSetup%201.zip).
 1. Open PowerShell and run the script `PrepareCIDataPrivateEndpoints.ps1`.
     1. Go to the folder where you unzipped the scripts.
     1. Type `./PrepareCIDataPrivateEndpoints.ps1` and press <kbd>Enter</kbd>.
