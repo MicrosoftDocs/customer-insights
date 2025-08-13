@@ -1,7 +1,7 @@
 ---
 title: Transition overview
 description: Transition from outbound marketing to real-time journeys in Dynamics 365 Customer Insights. Follow our guide to avoid interruptions.
-ms.date: 06/27/2025
+ms.date: 08/13/2025
 ms.update-cycle: 180-days
 ms.topic: concept-article
 author: alfergus
@@ -96,7 +96,6 @@ Once you've reviewed the above notes and confirmed your eligibility, fill out [t
 | August 2024   | Announced that outbound marketing is being [removed after June 30, 2025](real-time-marketing-overview.md). In-product banner announcing outbound marketing removal added. Admin email and message in the message center. |
 | March 2025   | Email and message center notification (MC1025068) to admins about product changes to support outbound marketing removal.          |
 | June 2025 | Users creating new outbound marketing journeys, segments, or forms get a message dialog asking them to create these assets in real-time journeys instead of outbound marketing. |
-| July 2025 | Email and message center notification (MC1119263) to admins about start of the [phased removal process](https://learn.microsoft.com/dynamics365/customer-insights/journeys/transition-faqs#what-will-happen-after-june-30-2025-will-outbound-marketing-stop-working). |
-
+| July 2025 | Email and message center notification (MC1119263) to admins about start of the [phased removal process](transition-faqs.md#what-will-happen-after-june-30-2025-will-outbound-marketing-stop-working). |
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
