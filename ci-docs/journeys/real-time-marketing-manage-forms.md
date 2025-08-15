@@ -182,10 +182,23 @@ A lookup field links to a particular entity and lets you add a drop-down list of
 
 Improperly configured field-level security can prevent lookup fields from working correctly. Make sure field-level security is set up appropriately.
 
-#### Known limitations of lookup fields
+#### Filter values of lookup field based on answer in previous lookup field - Cascading lookup fields
 
-- You can't programmatically set the lookup value using a script.
-- The lookup field options are always sorted alphabetically.
+The **Filter value** feature allows you to filter the choices in a lookup field based on the user's selection in a previous lookup field, creating a more intuitive and efficient form experience. This dynamic filtering reduces clutter and confusion by showing only relevant options, helping users complete forms faster and with fewer errors. For example, when selecting a city, users will now only see cities that match the country they previously selected, eliminating the need to scroll through irrelevant entries. This leads to higher quality submissions and lowers the risk of form abandonment.
+
+##### Set up value filtering for lookup field
+
+A lookup field represents data from an existing table, and filtering between lookup fields relies on a defined relationship between those tables. If no relationship exists, filtering options will not be available. When multiple relationships are defined between the same tables, the form editor allows you to select the appropriate one to use for filtering. This ensures that the dependent field displays only relevant values based on the user's selection in the preceding field.
+
+When your form includes two lookup fields, a **Filter values** button becomes available in the form editor.
+
+:::image type="content" source="media/real-time-marketing-form-filter-values.png" alt-text="Set up value filtering." lightbox="media/real-time-marketing-form-filter-values.png":::
+
+Clicking the **Filter values** button opens a pop-up window where you can configure how the filtering works between lookup fields. In this window, you can specify which lookup field serves as the input for filtering and select the appropriate relationship between the underlying data tables
+
+The lookup fields for Country and City are not included by default. To add them to your form, refer to this step-by-step guide that shows how to create a filtered list of Cities based on the selected Country. The guide also offers general guidance on how to define custom lookup fields (entities) and establish relationships between them. This approach can be applied to any scenario where field options need to be dynamically filtered based on prior selections.
+
+Lookup fields also support a JavaScript API, enabling developers to programmatically set field values or apply dynamic filters based on user input. This allows for advanced customization and seamless integration with other form logic.
 
 ### Custom mapped fields
 
