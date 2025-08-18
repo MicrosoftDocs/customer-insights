@@ -44,7 +44,7 @@ We first announced the removal of outbound marketing in August 2023 and later se
 
 ## What will happen after June 30, 2025? Will outbound marketing stop working?
 
-We're implementing a phased approach for removing outbound marketing to minimize disruption to customers’ businesses. When we detect that there are no active outbound marketing campaigns or events in an environment (“org”), we initially hide outbound marketing and then remove it after a few weeks. With this approach, the outbound marketing removal date is different for each environment, as it depends on when the outbound marketing campaigns or events complete. Product support for outbound marketing is provided for high-severity and critical issues only.
+We're implementing a phased approach for removing outbound marketing to minimize disruption to customers’ businesses. When we detect that there are no active outbound marketing campaigns or events in an environment (“org”), we initially hide outbound marketing and then remove it after a few weeks. With this approach, the outbound marketing removal date is different for each environment, as it depends on when the outbound marketing campaigns or events complete. Outbound marketing is no longer supported. For customers with approved extension, limited support will be provided for critical issues only (e.g., customer journey stopped sending emails, segments stopped refreshing, no submissions for events or Forms, etc.).
 
 To reduce and eventually end outbound marketing usage, we're applying a phased approach (the changes below only apply to outbound marketing; real-time marketing is unaffected):
 
@@ -58,7 +58,7 @@ This phased approach may be revised in the future (for example, we may set a com
 
 ## I have an approved extension for outbound marketing. What can I expect?
 
-An extension approval implies only one thing: your environment won't be moved to the “blocking” phase (described in the previous section) until after your approved date. Some of the messages and banners about outbound marketing removal may still be shown. Periodic product releases that update and change current functionality will continue to be applied as usual. Product support for outbound marketing is provided for high-severity and critical issues only.
+An extension approval implies only one thing: your environment won't be moved to the “blocking” phase (described in the previous section) until after your approved date. Some of the messages and banners about outbound marketing removal may still be shown. Periodic product releases that update and change current functionality will continue to be applied as usual. During the approved extension period, support will be limited to critical issues (e.g., customer journey stopped sending emails, segments stopped refreshing, no submissions for events or Forms, etc.)..
 
 ## What will happen to outbound tables and data when outbound marketing is removed?
 
