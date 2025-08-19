@@ -4,7 +4,7 @@ description: Learn how to use QR codes for event registration, links to content,
 ms.date: 08/01/2025
 ms.topic: how-to
 author: alfergus
-ms.author: colinbirkett
+ms.author: alfergus
 search.audienceType: 
   - admin
   - customizer
