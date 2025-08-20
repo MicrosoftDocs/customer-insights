@@ -13,7 +13,7 @@ search.audienceType:
 
 # Pause and resume a journey
 
-The pause and resume feature lets you temporarily pause customer journeys in response to unplanned events, without stopping and recreating the journey. This feature helps protect your brand’s reputation and maintain customer trust during sensitive periods like natural disasters, service outages, or content errors.
+You can temporarily pause customer journeys in response to unplanned events, without stopping and recreating the journey. This feature helps protect your brand’s reputation and maintain customer trust during sensitive periods like natural disasters, service outages, or content errors.
 
 ## Why pause a journey?
 
@@ -27,14 +27,10 @@ You might want to pause a journey when:
 
 ## What happens when you pause a journey?
 
-When a journey is paused:
-
-- No new customers enter the journey.
-For the public preview, customers who have already started the journey will complete it during the paused period. 
-- For the general availability update of this feature, any journey step that causes the customer to wait, such as a wait for time, trigger, or segment membership, will pause customers at the next message step.  
-- You can pause a journey for up to 21 days.
+Pausing a journey prevents new entries and stops customers who already entered the journey at their present step. You can pause a journey for up to 21 days.
 
 > [!NOTE]
+> Customers in a "wait for time" step move forward one step, then pause.
 > For one-time, segment-based journeys, customers in the original segment can't re-enter the journey after it resumes. Only the remaining members of the segment proceed.
 
 ## What happens when you resume a journey?
@@ -44,7 +40,7 @@ You can resume a journey in two ways:
 - **Manual resume**: Resume the journey at any time within the 21-day pause window.
 - **Scheduled resume**: Set a specific date and time for the journey to resume automatically.
 
-Once resumed, new customers can enter the journey again and queued triggers are processed.
+Once resumed, new customers can enter the journey again, customers who are paused will resume the journey, and queued triggers are processed.
 
 ## Editing during a pause
 
