@@ -19,15 +19,28 @@ Filtering the list of cities based on the selected country is a powerful way to 
 
 To enable filtered lookup fields in your form—such as showing only cities that match the selected country—follow these setup steps:
 
+1. **Create a new Solution**, which helps you organize all related components (custom tables, relationships, forms, views, and scripts) in one place, making it easier to manage, deploy, and maintain.
 1. **Create custom entities for Country and City**, as the default fields (address1_country and address1_city) are simple text . fields and do not support filtering. **Establish a relationship** between the Country and City entities. This relationship is required for filtering to work.
 1. **Populate the Country and City entities** with relevant data to ensure meaningful lookup options.
 1. **Link the custom Country and City** entities to the **Contact** and/or **Lead** entities so they can be used in forms.
-1. **Add read permission** for the service user.
+1. **Add read permission** for the **Marketing Services User Extensible Role** to access Country and City entities.
 1. **Create a new marketing form** and add Country and City fields
 
 Once these steps are complete, the new Country and City fields will appear in the **form editor** as lookup fields, enabling dynamic filtering.
 
-## 1. Create Custom Entities for Country and City and establish relationship
+## 1. Create a new Solution
+
+1. Go to Power Apps.
+1. Navigate to Solutions in the left-hand menu.
+1. Click + New Solution.
+1. Enter a name (e.g., LocationLookupFiltering), publisher, and version.
+1. Click Create.
+
+Once your solution is created, you can add all the components from the following steps—custom entities, relationships, form customizations, and filtering logic—into this solution for better structure and portability.
+
+[Learn more](https://learn.microsoft.com/power-apps/maker/data-platform/create-solution) about solutions.
+
+## 2. Create Custom Entities for Country and City and establish relationship
 
 1. Go to Power Apps and navigate to **Tables**.
 1. Click **+ New Table**.
@@ -43,14 +56,14 @@ Once these steps are complete, the new Country and City fields will appear in th
 
 [Learn more](https://learn.microsoft.com/power-apps/maker/data-platform/create-edit-entities-portal) about creating custom tables in Power Apps.
 
-## 2. Populate the City and Country entities with data
+## 3. Populate the City and Country entities with data
 
 - Use **Excel import**, **Power Automate**, or manual entry to add records to both tables.
 - Ensure each City record is linked to the correct Country via the lookup field.
 
 [Learn more](https://learn.microsoft.com/power-apps/maker/data-platform/data-platform-import-export) about data import.
 
-## 3. Link Custom Country and City Entities to Contact and/or Lead Entities
+## 4. Link Custom Country and City Entities to Contact and/or Lead Entities
 
 To use your newly created Country and City lookup fields in forms for Contact or Lead records, you need to establish relationships between these entities.
 
@@ -64,7 +77,7 @@ To use your newly created Country and City lookup fields in forms for Contact or
 **Save and Publish**
 After adding both lookup columns, click **Save Table** and Publish All Customizations to make the changes available in the form editor.
 
-## 4. Add read permission for the service user
+## 5. Add read permission for the service user
 
 To ensure that users visiting your form can see the options in the Country and City lookup fields, you need to grant read access to these entities through the appropriate security role.
 
@@ -78,7 +91,7 @@ To ensure that users visiting your form can see the options in the Country and C
 
 [Learn more](https://learn.microsoft.com/power-platform/admin/security-roles-privileges) about security roles.
 
-## 5. Create a new marketing form
+## 6. Create a new marketing form
 
 1. Create a new marketing form.
 1. The Country and City fields are now available in the list of fields in the right pane.
