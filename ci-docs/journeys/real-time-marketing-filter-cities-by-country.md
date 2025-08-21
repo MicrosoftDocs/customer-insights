@@ -43,7 +43,7 @@ Once these steps are complete, the new Country and City fields will appear in th
 
 [Learn more](https://learn.microsoft.com/power-apps/maker/data-platform/create-edit-entities-portal) about creating custom tables in Power Apps.
 
-## 2. Populate the Entities with Data
+## 2. Populate the City and Country entities with data
 
 - Use **Excel import**, **Power Automate**, or manual entry to add records to both tables.
 - Ensure each City record is linked to the correct Country via the lookup field.
@@ -55,7 +55,7 @@ Once these steps are complete, the new Country and City fields will appear in th
 To use your newly created Country and City lookup fields in forms for Contact or Lead records, you need to establish relationships between these entities.
 
 **Add Lookup Fields to Contact or Lead**
-    1. Go to Dataverse > Tables and open the Contact or Lead table.
+    1. In Power Apps, go to Tables and open the Contact or Lead table.
     1. Navigate to the Columns section and click + Add Column.
     1. Choose Data Type: Lookup.
     1. For the Related Table, select Country.
@@ -70,9 +70,8 @@ To ensure that users visiting your form can see the options in the Country and C
 
 1. Go to the Power Platform Admin Center.
 1. Select the environment where your form and entities are located.
-1. In the left-hand menu, go to Settings > Users + Permissions > Security Roles.
-1. Find and open the Marketing Service User Extensible Role.
-1. In the role editor, switch to the Core Records tab.
+1. Go to Settings > Users + Permissions > Security Roles.
+1. Find and open the Marketing Services User Extensible Role.
 1. Locate the Country and City entities (your custom tables).
 1. Set the Read permission to Organization level for both entities.
 1. Click Save to apply the changes.
