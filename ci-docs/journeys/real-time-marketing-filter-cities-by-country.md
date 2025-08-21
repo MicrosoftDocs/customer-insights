@@ -76,6 +76,8 @@ To ensure that users visiting your form can see the options in the Country and C
 1. Set the Read permission to Organization level for both entities.
 1. Click Save to apply the changes.
 
+[Learn more](https://learn.microsoft.com/power-platform/admin/security-roles-privileges) about security roles.
+
 ## 5. Create a new marketing form
 
 1. Create a new marketing form.
