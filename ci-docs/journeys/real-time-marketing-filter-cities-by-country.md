@@ -115,9 +115,9 @@ To ensure that users visiting your form can see the options listed in the Countr
 1. The Country and City fields are now available in the list of fields in the right pane.
 1. Add Country and City lookup fields to your form. Ensure both lookup fields are properly configured.
 1. Select the **City** field and use the **Filter values** button to define the filtering.
-    :::image type="content" source="media/real-time-marketing-form-filter-values.png" alt-text="Set up value filtering." lightbox="media/real-time-marketing-form-filter-values.png":::
+    :::image type="content" source="media/real-time-marketing-form-filter-values.png" alt-text="Select City as filter." lightbox="media/real-time-marketing-form-filter-values.png":::
 1. In the filtering configuration window, select **Country** as the field for **Based on answer to** — this defines which lookup field will act as the filter input. Then, select **Country** under **Show values for** to specify the relationship that connects the Country and City entities and enables the filtering logic.
-    :::image type="content" source="media/real-time-marketing-filter-cities-by-country.png" alt-text="Filter cities based on country." lightbox="media/real-time-marketing-filter-cities-by-country.png":::
+    :::image type="content" source="media/real-time-marketing-filter-cities-by-country.png" alt-text="Select relationship for filtering." lightbox="media/real-time-marketing-filter-cities-by-country.png":::
 1. **Publish** and test your form.
 
 **The setup is complete!** Your form will offer a streamlined and intelligent experience—showing users only the most relevant options based on their selections. This not only improves data quality and reduces errors, but also makes the form faster and more intuitive to complete. You're now ready to deliver a professional, user-friendly solution that enhances both customer satisfaction and operational efficiency.
