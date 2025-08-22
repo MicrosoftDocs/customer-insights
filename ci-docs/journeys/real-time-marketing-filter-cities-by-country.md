@@ -62,7 +62,7 @@ Once your solution is created, you can add all the components from the following
 :::image type="content" source="media/power_apps_country_city_relationship.png" alt-text="Create Country and City tables." lightbox="media/power_apps_country_city_relationship.png":::
 
 > [!TIP]
-> [Learn more](https://learn.microsoft.com/power-apps/maker/data-platform/create-edit-entities-portal) about creating custom tables in Power Apps.
+> You can [learn more](https://learn.microsoft.com/power-apps/maker/data-platform/create-edit-entities-portal) about creating custom tables in Power Apps.
 
 ## 3. Populate the City and Country entities with data
 

@@ -168,6 +168,7 @@ You can use marketing forms within React applications. The form loader exposes t
 ```
 
 You must also pass the readable event ID for the event registration forms. The modified syntax (introduced in Marketing version 6.1) is as follows:
+
 ```JS
       root.render(React.createElement(d365mktforms.FormPlaceholder, {
         formId:'{msdynmkt_marketingformid}',
@@ -187,6 +188,31 @@ You must also pass the readable event ID for the event registration forms. The m
 > | data-cached-form-url | formUrl |
 
 > [!NOTE]
-> The JavaScript API is available only for forms hosted as a script. It isn't supported for the iFrame hosting option.  
+> The JavaScript API is available only for forms hosted as a script. It isn't supported for the iFrame hosting option.
+
+### Select Lookup field value using Javascript
+
+You can use the JavaScript API to perform a background search and automatically populate a lookup field with items that match a specific search term.
+For example, after the form loads, you can search for all items containing the word “dollar” and display them in the lookup field.
+
+```JS
+    <script>
+      document.addEventListener("d365mkt-afterformload", (event) => {
+        const form = event.target.querySelector("form");
+        d365mktforms
+          .fillLookupFromSearch(
+            form,
+            "transactioncurrencyid", // field logical name
+            "dollar"                 // search term
+          )
+          .then(function (r) {
+            console.log("Success performing search", r);
+          })
+          .catch(function (e) {
+            console.log("Error performing search", e);
+          });
+      });
+    </script>
+```
 
 [!INCLUDE [footer-include](.././includes/footer-banner.md)]

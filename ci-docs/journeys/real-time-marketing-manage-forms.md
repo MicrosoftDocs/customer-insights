@@ -198,7 +198,7 @@ Clicking the **Filter values** button opens a pop-up window where you can config
 
 The lookup fields for Country and City are not included by default. To add them to your form, refer to this [step-by-step guide that shows how to create a filtered list of Cities based on the selected Country](real-time-marketing-filter-cities-by-country.md). The guide also offers general guidance on how to define custom lookup fields (entities) and establish relationships between them. This approach can be applied to any scenario where field options need to be dynamically filtered based on prior selections.
 
-Lookup fields also support a JavaScript API, enabling developers to programmatically set field values or apply dynamic filters based on user input. This allows for advanced customization and seamless integration with other form logic.
+Lookup fields also support a JavaScript API, enabling developers to [programmatically set lookup field value](developer/realtime-marketing-form-client-side-extensibility.md#select-lookup-field-value-using-javascript) or apply dynamic filters based on user input. This allows for advanced customization and seamless integration with other form logic.
 
 ### Custom mapped fields
 
