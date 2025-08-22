@@ -188,15 +188,15 @@ The **Filter value** feature allows you to filter the choices in a lookup field 
 
 ##### Set up value filtering for lookup field
 
-A lookup field represents data from an existing table, and filtering between lookup fields relies on a defined relationship between those tables. If no relationship exists, filtering options will not be available. When multiple relationships are defined between the same tables, the form editor allows you to select the appropriate one to use for filtering. This ensures that the dependent field displays only relevant values based on the user's selection in the preceding field.
+A lookup field represents data from an existing table, and filtering between lookup fields relies on a defined relationship between those tables. If no relationship exists, filtering options won't be available. When multiple relationships are defined between the same tables, the form editor allows you to select the appropriate one to use for filtering. This ensures that the dependent field displays only relevant values based on the user's selection in the preceding field.
 
 When your form includes two lookup fields, a **Filter values** button becomes available in the form editor.
 
 :::image type="content" source="media/real-time-marketing-form-filter-values.png" alt-text="Set up value filtering." lightbox="media/real-time-marketing-form-filter-values.png":::
 
-Clicking the **Filter values** button opens a pop-up window where you can configure how the filtering works between lookup fields. In this window, you can specify which lookup field serves as the input for filtering and select the appropriate relationship between the underlying data tables. Once the filtering rule is configured, the field in the form editor will change its highlight from blue to purple, indicating that a filtering relationship has been successfully applied.
+Clicking the **Filter values** button opens a pop-up window where you can configure how the filtering works between lookup fields. In this window, you can specify which lookup field serves as the input for filtering and select the appropriate relationship between the underlying data tables. Once the filtering rule is configured, the field in the form editor changes its highlight from blue to purple, indicating that a filtering relationship has been successfully applied.
 
-The lookup fields for Country and City are not included by default. To add them to your form, refer to this [step-by-step guide that shows how to create a filtered list of Cities based on the selected Country](real-time-marketing-filter-cities-by-country.md). The guide also offers general guidance on how to define custom lookup fields (entities) and establish relationships between them. This approach can be applied to any scenario where field options need to be dynamically filtered based on prior selections.
+The lookup fields for Country and City aren't included by default. To add them to your form, refer to this [step-by-step guide that shows how to create a filtered list of Cities based on the selected Country](real-time-marketing-filter-cities-by-country.md). The guide also offers general guidance on how to define custom lookup fields (entities) and establish relationships between them. This approach can be applied to any scenario where field options need to be dynamically filtered based on prior selections.
 
 Lookup fields also support a JavaScript API, enabling developers to [programmatically set lookup field value](developer/realtime-marketing-form-client-side-extensibility.md#select-lookup-field-value-using-javascript) or apply dynamic filters based on user input. This allows for advanced customization and seamless integration with other form logic.
 
