@@ -194,7 +194,7 @@ When your form includes two lookup fields, a **Filter values** button becomes av
 
 :::image type="content" source="media/real-time-marketing-form-filter-values.png" alt-text="Set up value filtering." lightbox="media/real-time-marketing-form-filter-values.png":::
 
-Clicking the **Filter values** button opens a pop-up window where you can configure how the filtering works between lookup fields. In this window, you can specify which lookup field serves as the input for filtering and select the appropriate relationship between the underlying data tables.
+Clicking the **Filter values** button opens a pop-up window where you can configure how the filtering works between lookup fields. In this window, you can specify which lookup field serves as the input for filtering and select the appropriate relationship between the underlying data tables. Once the filtering rule is configured, the field in the form editor will change its highlight from blue to purple, indicating that a filtering relationship has been successfully applied.
 
 The lookup fields for Country and City are not included by default. To add them to your form, refer to this [step-by-step guide that shows how to create a filtered list of Cities based on the selected Country](real-time-marketing-filter-cities-by-country.md). The guide also offers general guidance on how to define custom lookup fields (entities) and establish relationships between them. This approach can be applied to any scenario where field options need to be dynamically filtered based on prior selections.
 
