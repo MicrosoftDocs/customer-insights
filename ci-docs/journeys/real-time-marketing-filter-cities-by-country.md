@@ -61,7 +61,8 @@ Once your solution is created, you can add all the components from the following
 
 :::image type="content" source="media/power_apps_country_city_relationship.png" alt-text="Create Country and City tables." lightbox="media/power_apps_country_city_relationship.png":::
 
-[Learn more](https://learn.microsoft.com/power-apps/maker/data-platform/create-edit-entities-portal) about creating custom tables in Power Apps.
+> [!TIP]
+> [Learn more](https://learn.microsoft.com/power-apps/maker/data-platform/create-edit-entities-portal) about creating custom tables in Power Apps.
 
 ## 3. Populate the City and Country entities with data
 
@@ -117,8 +118,8 @@ To ensure that users visiting your form can see the options listed in the Countr
     :::image type="content" source="media/real-time-marketing-form-filter-values.png" alt-text="Set up value filtering." lightbox="media/real-time-marketing-form-filter-values.png":::
 1. In the filtering configuration window, select **Country** as the field for **Based on answer to** — this defines which lookup field will act as the filter input. Then, select **Country** under **Show values for** to specify the relationship that connects the Country and City entities and enables the filtering logic.
     :::image type="content" source="media/real-time-marketing-filter-cities-by-country.png" alt-text="Filter cities based on country." lightbox="media/real-time-marketing-filter-cities-by-country.png":::
-1. Publish and test your form.
+1. **Publish** and test your form.
 
-The setup is complete! Your form will offer a streamlined and intelligent experience—showing users only the most relevant options based on their selections. This not only improves data quality and reduces errors, but also makes the form faster and more intuitive to complete. You're now ready to deliver a professional, user-friendly solution that enhances both customer satisfaction and operational efficiency.
+**The setup is complete!** Your form will offer a streamlined and intelligent experience—showing users only the most relevant options based on their selections. This not only improves data quality and reduces errors, but also makes the form faster and more intuitive to complete. You're now ready to deliver a professional, user-friendly solution that enhances both customer satisfaction and operational efficiency.
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
