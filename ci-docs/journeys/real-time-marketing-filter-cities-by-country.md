@@ -17,7 +17,7 @@ ms.custom:
 
 Filtering the list of cities based on the selected country is a powerful way to simplify form interactions and improve data accuracy. Instead of overwhelming users with long, irrelevant dropdowns, this approach ensures they only see city options that match their chosen country—making the form faster to complete and easier to understand. This is especially valuable in scenarios like lead routing, where selecting the correct location ensures submissions reach the right team. In this guide, you learn how to set up this filtering using lookup fields and relationships between data tables.
 
-:::image type="content" source="media/Cascading-form-fields.gif" alt-text="Cascading form fields." lightbox="media/Cascading-form-fields.gif":::
+:::image type="content" source="media/cascading-form-fields.gif" alt-text="Cascading form fields." lightbox="media/cascading-form-fields.gif":::
 
 Filtered lookup fields feature is available for both marketing and event registration form types.
 
@@ -59,7 +59,7 @@ Once your solution is created, you can add all the components from the following
     - Set the related table to Country.
 1. Select **Save and exit** to publish the tables.
 
-:::image type="content" source="media/power_apps_country_city_relationship.png" alt-text="Create Country and City tables." lightbox="media/power_apps_country_city_relationship.png":::
+:::image type="content" source="media/power-apps-country-city-relationship.png" alt-text="Create Country and City tables." lightbox="media/power-apps-country-city-relationship.png":::
 
 > [!TIP]
 > You can [learn more](https://learn.microsoft.com/power-apps/maker/data-platform/create-edit-entities-portal) about creating custom tables in Power Apps.
@@ -69,7 +69,7 @@ Once your solution is created, you can add all the components from the following
 - Use **Excel import**, **Power Automate**, or **manual entry in Power Apps** to add records to both tables.
 - Ensure each City record is linked to the correct Country via the lookup field.
 
-:::image type="content" source="media/power_apps_country_city.png" alt-text="Populate data for City table." lightbox="media/power_apps_country_city.png":::
+:::image type="content" source="media/power-apps-country-city.png" alt-text="Populate data for City table." lightbox="media/power-apps-country-city.png":::
 
 > [!TIP]
 > There are various ways to [import data](https://learn.microsoft.com/power-apps/maker/data-platform/data-platform-import-export).
@@ -88,7 +88,7 @@ To use your newly created Country and City lookup fields in forms for Contact or
 **Save and Publish**
 After adding both lookup columns, select **Save and exit** and **Publish All Customizations** to make the changes available in the form editor.
 
-:::image type="content" source="media/power_apps_add_country_countact.png" alt-text="Link Country lookup to Contact entity." lightbox="media/power_apps_add_country_countact.png":::
+:::image type="content" source="media/power-apps-add-country-contact.png" alt-text="Link Country lookup to Contact entity." lightbox="media/power-apps-add-country-contact.png":::
 
 > [!TIP]
 > You can enable the Country lookups for the combined Lead & Contact audience by creating a mapping between Contact -> Country and Lead -> Country. The same applies for City lookup. [Learn more about mapping](real-time-marketing-form-global-settings.md#lead-contact-mapping).
@@ -105,7 +105,7 @@ To ensure that users visiting your form can see the options listed in the Countr
 1. Set the **Read** permission to **Organization** level for both entities.
 1. Select **Save** to apply the changes.
 
-:::image type="content" source="media/power_platform_country.png" alt-text="Set up value filtering." lightbox="media/power_platform_country.png":::
+:::image type="content" source="media/power-platform-country.png" alt-text="Set up value filtering." lightbox="media/power-platform-country.png":::
 
 [Learn more](https://learn.microsoft.com/power-platform/admin/security-roles-privileges) about security roles.
 
