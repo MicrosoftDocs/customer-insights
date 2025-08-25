@@ -41,14 +41,18 @@ The matching rule builder consists of three parts:
 
 - **Summary**: A human language interpretation of the logic created by your rules.
 - **Main condition**: The main condition is always executed first to gather a group of the most relevant records. The main rule is a direct query to database, so the degree of match is always *Exact* (it isn't possible to set up fuzzy matching). You can **add multiple attributes** to the main condition. There's always an **OR** operator between the attributes of the condition.
-- **Additional conditions**: Additional conditions are executed on the group of records filtered out by the main condition. You can add multiple attributes to every additional condition. There's always an **OR** operator between the attributes of the rule. You can create multiple additional conditions. All conditions are linked by an **AND** operator. You can set the **Degree of match**, which defines if an exact match (100%) is required or what extent of fuzzy match is applied.
+- **Additional conditions**: Additional conditions are executed on the group of records filtered out by the main condition. You can add multiple attributes to every additional condition. There's always an **OR** operator between the attributes of the rule. You can create multiple additional conditions. All conditions are linked by an **AND** operator. You can set the **Degree of match**, which defines if an exact match (100%) is required or what extent of fuzzy match is applied. The possible degrees of match are:
+  - Exact - all characters must match
+  - High - few characters don't match
+  - Medium - some characters don't match
+  - Low - half of characters don't match
 - You can build complex matching rules by combining multiple conditions with various attributes.
 
 :::image type="content" source="media/real-time-marketing-define-matching-rule.png" alt-text="Define your matching rule" lightbox="media/real-time-marketing-define-matching-rule.png":::
 
 #### Example 1: Update existing record if email AND phone do match
 
-Use emailaddress1 as the attribute in the main condition. Create additional condition with mobilephone attribute.
+Use `emailaddress1` as the attribute in the main condition. Create additional condition with `mobilephone` attribute.
 
 :::image type="content" source="media/real-time-marketing-define-matching-rule-example1.png" alt-text="Matching rule with email address and phone number" lightbox="media/real-time-marketing-define-matching-rule-example1.png":::
 
@@ -56,7 +60,7 @@ Use emailaddress1 as the attribute in the main condition. Create additional cond
 
 #### Example 2: Update existing record if email OR phone do match
 
-Use emailaddress1 as the attribute in the main condition. Add mobilephone as an additional attribute to the same condition.
+Use `emailaddress1` as the attribute in the main condition. Add `mobilephone` as an additional attribute to the same condition.
 
 :::image type="content" source="media/real-time-marketing-define-matching-rule-example2.png" alt-text="Matching rule with email address or phone number" lightbox="media/real-time-marketing-define-matching-rule-example2.png":::
 
