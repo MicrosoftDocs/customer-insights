@@ -1,7 +1,7 @@
 ---
 title: Matching rules for Customer Insights - Journeys
 description: Create custom matching rules to avoid creating duplicate records in forms and journeys.
-ms.date: 03/26/2025
+ms.date: 08/25/2025
 ms.topic: how-to
 author: petrjantac
 ms.author: colinbirkett
@@ -26,16 +26,41 @@ To create a new matching rule:
 1. Go to **Settings** > **Matching rules** and select **New** in the top ribbon.
 1. Choose an intuitive name for your new rule. This name is used to select the rule when creating new forms or journeys.
 1. Select the target entity, which can be a lead or contact.
-1. Select the **Save** button. Your matching rule is created and you can now add **Matching Strategy Attributes**.
-1. Select **Add Matching Strategy Attribute**.
-1. Choose the attribute in the **Mapping** field and select **Save & Close**.
-1. To add more matching strategy attributes, repeat steps 5 and 6.
-1. **Save** your matching rule.
+1. Select the **Save** button. Your matching rule is created and you can access it in the **Rules** tab.
 
-:::image type="content" source="media/real-time-marketing-form-matching-strategy.png" alt-text="Create a new matching rule" lightbox="media/real-time-marketing-form-matching-strategy.png":::
+:::image type="content" source="media/real-time-marketing-create-matching-rule.png" alt-text="Create a new matching rule" lightbox="media/real-time-marketing-create-matching-rule.png":::
 
  > [!TIP]
  > The **Match inactive records** toggle determines if inactive records are used for matching. Matching an inactive record doesn't reactivate the record. Inactive records have the same priority for matching as active ones. It's recommended to keep this toggle Off.
+
+You can define details of your matching rule in the **Rules** tab.
+
+### Define matching rules
+
+The matching rule builder consists of three parts:
+
+- **Summary**: A human language interpretation of the logic created by your rules.
+- **Main condition**: The main condition is always executed first to gather a group of the most relevant records. The main rule is a direct query to database, so the degree of match is always *Exact* (it isn't possible to set up fuzzy matching). You can **add multiple attributes** to the main condition. There's always an **OR** operator between the attributes of the condition.
+- **Additional conditions**: Additional conditions are executed on the group of records filtered out by the main condition. You can add multiple attributes to every additional condition. There's always an **OR** operator between the attributes of the rule. You can create multiple additional conditions. All conditions are linked by an **AND** operator. You can set the **Degree of match**, which defines if an exact match (100%) is required or what extent of fuzzy match is applied.
+- You can build complex matching rules by combining multiple conditions with various attributes.
+
+:::image type="content" source="media/real-time-marketing-define-matching-rule.png" alt-text="Define your matching rule" lightbox="media/real-time-marketing-define-matching-rule.png":::
+
+#### Example 1: Update existing record if email AND phone do match
+
+Use emailaddress1 as the attribute in the main condition. Create additional condition with mobilephone attribute.
+
+:::image type="content" source="media/real-time-marketing-define-matching-rule-example1.png" alt-text="Matching rule with email address and phone number" lightbox="media/real-time-marketing-define-matching-rule-example1.png":::
+
+**Result:** The existing lead or contact record is updated if both email address AND phone number match the values stored in the record.
+
+#### Example 2: Update existing record if email OR phone do match
+
+Use emailaddress1 as the attribute in the main condition. Add mobilephone as an additional attribute to the same condition.
+
+:::image type="content" source="media/real-time-marketing-define-matching-rule-example2.png" alt-text="Matching rule with email address or phone number" lightbox="media/real-time-marketing-define-matching-rule-example2.png":::
+
+**Result:** The existing lead or contact record is updated if email address OR phone number match the values stored in the record.
 
 > [!IMPORTANT]
 > If there's no existing record found by the matching rule, a new record is created. If there are multiple existing records found by the matching rule, the *latest updated* record is used.
