@@ -1,10 +1,10 @@
 ---
 title: Pause and resume a journey
 description: Learn how to pause and resume a journey in Dynamics 365 Customer Insights - Journeys.
-ms.date: 06/26/2025
+ms.date: 08/26/2025
 ms.topic: article
-author: colinbirkett
-ms.author: colinbirkett
+author: alfergus
+ms.author: alfergus
 search.audienceType: 
   - admin
   - customizer
@@ -27,10 +27,10 @@ You might want to pause a journey when:
 
 ## What happens when you pause a journey?
 
-Pausing a journey prevents new entries and stops customers who already entered the journey at their present step. You can pause a journey for up to 21 days.
+Pausing a journey prevents new entries and stops customers who have already entered the journey at their present step. You can pause a journey for up to 21 days.
 
 > [!NOTE]
-> Customers in a "wait for time" step move forward one step, then pause.
+> Customers in a "wait for time" step move forward one step and then pause.
 > For one-time, segment-based journeys, customers in the original segment can't re-enter the journey after it resumes. Only the remaining members of the segment proceed.
 
 ## What happens when you resume a journey?
@@ -40,7 +40,7 @@ You can resume a journey in two ways:
 - **Manual resume**: Resume the journey at any time within the 21-day pause window.
 - **Scheduled resume**: Set a specific date and time for the journey to resume automatically.
 
-Once resumed, new customers can enter the journey again, customers who are paused will resume the journey, and queued triggers are processed.
+Once resumed, new customers can enter the journey again, customers who are paused resume the journey, and queued triggers are processed.
 
 ## Editing during a pause
 
