@@ -1,5 +1,5 @@
 ---
-title: Set quiet times to prevent messages from sending during unwanted hours
+title: Set quiet times to prevent messages from being sent during unwanted hours
 description: Learn how to set up quiet times to avoid sending messages during unwanted times.
 ms.date: 08/26/2025
 ms.topic: article
@@ -11,9 +11,9 @@ search.audienceType:
   - enduser
 ---
 
-# Set quiet times to prevent messages from sending during unwanted hours
+# Set quiet times to prevent messages from being sent during unwanted hours
 
-Quiet times enable you to configure specific times when messages won't send to customers to avoid contacting them when messages may be unwanted. You might not want to send messages at specific times due to regulations, business policies, or other factors. Typically, quiet times are configured for overnight hours, weekends, or holidays. When quiet times are in place, the system holds the messages until the quiet times end.
+Quiet times enable you to configure specific times when messages won't be sent to customers to avoid contacting them when messages may be unwanted. You might not want to send messages at specific times due to regulations, business policies, or other factors. Typically, quiet times are configured for overnight hours, weekends, or holidays. When quiet times are in place, the system holds the messages until the quiet times end.
 
 To set up quiet times, go to **Settings** > **Customer engagement** > **Quiet times**. If no quiet time setting exists, select the **New** button in the ribbon to get started.
 
@@ -21,7 +21,7 @@ Quiet times settings let you set detailed rules to respect customer time and mee
 
 ## Use time zone for quiet times
 
-To set up quiet times, first choose the type of time zone the quiet times rules use. This choice is important because it determines how the quiet times rules are interpreted. 
+To set up quiet times, first choose the type of time zone the quiet times rules use. This choice is important because it determines how the quiet time rules are interpreted. 
 
 :::image type="content" source="media/quiet-time-time-zone.png" alt-text="Set quiet times based on time zone." lightbox="media/quiet-time-time-zone.png":::
 
@@ -29,11 +29,11 @@ To set up quiet times, first choose the type of time zone the quiet times rules 
 
 If you select the **Journey** time zone, the app uses the journey’s time zone to apply quiet times. For example, if you set the journey time zone to **(GMT-5:00) Eastern Time (US & Canada)**, quiet times and days for messages in the journey follow the selected time zone.
 
-You can set the default journey timezone in **Settings** > **Journey Settings**. Individual journeys can have a different timezone that overrides the default.
+You can set the default journey time zone in **Settings** > **Journey Settings**. Individual journeys can have a different time zone that overrides the default.
 
 ### Audience time zone
 
-If you choose the **Audience** time zone, quiet times use the time zone of each person in your audience. The system uses the time zone information for each contact, lead, or Customer Insights profile to apply quiet times rules.
+If you choose the **Audience** time zone, quiet times use the time zone of each person in your audience. The system uses the time zone information for each contact, lead, or Customer Insights profile to apply quiet time rules.
 
 Time zone information for each contact point type is set under **Audience configuration** > **Contact point type** > **Time zone field**. If needed, select a different time zone format field for each audience type (like contacts, leads, or Customer Insights profiles) and each contact point type.
 
@@ -52,12 +52,12 @@ General quiet times should be used when your audience is in a single geographica
 
 ### Advanced quiet times
 
-The advanced quiet times setting provides more specifications. It allows you to create multiple quiet times rules based on specific conditions, such as country/region, state/province, or phone number. For example, you can create a specific quiet times rule for the state of Texas, and another for Alabama. This setting is beneficial for businesses with a diverse customer base spread across geographies. Using advanced settings, you can ensure that communications respect local regulations and time preferences.  
+The advanced quiet times setting provides more specifications. It allows you to create multiple quiet time rules based on specific conditions, such as country/region, state/province, or phone number. For example, you can create a specific quiet time rule for the state of Texas and another for Alabama. This setting is beneficial for businesses with a diverse customer base spread across geographies. Using advanced settings, you can ensure that communications respect local regulations and time preferences.  
 
 :::image type="content" source="media/advanced-quiet-times.png" alt-text="An overview of advanced quiet times settings." lightbox="media/advanced-quiet-times.png":::
 
 > [!NOTE]
-> When several advanced quiet times rules are created, they're evaluated from top to bottom. The first matching rule is applied. If no rule matches, the app defaults to general quiet times if they were configured.
+> When several advanced quiet-time rules are created, they're evaluated from top to bottom. The first matching rule is applied. If no rule matches, the app defaults to general quiet times if they were configured.
 
 #### Create conditions for advanced quiet times
 
@@ -82,7 +82,7 @@ To apply the quiet times, the system checks if each audience member meets the co
 
 ## Create quiet times rules 
 
-Once you select a quiet times setting, you can define several specific rules to tailor your communication strategy.
+Once you select a quiet time setting, you can define several specific rules to tailor your communication strategy.
 
 :::image type="content" source="media/quiet-times-rules.png" alt-text="Screenshot of the quiet time rules configuration page." lightbox="media/quiet-times-rules.png":::
 
@@ -105,7 +105,7 @@ To set up quiet times overnight, create a separate evening quiet time and mornin
 - One time from midnight to 8:00 AM
 
 > [!NOTE]
-> You can set up quiet times for a maximum of three consecutive days, as otherwise it may cause the message queue to excessively back up and messages aren't delivered. Quiet times only apply to content sent from journeys.
+> You can set up quiet times for a maximum of three consecutive days, as otherwise it may cause the message queue to back up excessively, and messages aren't delivered. Quiet times only apply to content sent from journeys.
 
 ### Set up quiet dates
 
@@ -122,7 +122,7 @@ The first time you create and save a quiet time setting, the system asks if you 
 
 ## Quiet times and journeys
 
-In a journey, you can see the type of quiet times setting that applies. It specifies if the quiet times use the journey time zone or audience time zone and General or Advanced parameters. You can also choose to change or disable quiet times for specific messages to support scenarios when a particular message in a journey shouldn't be subject to regular quiet times settings.
+In a journey, you can see the type of quiet time setting that applies. It specifies whether the quiet times use the journey time zone or the audience time zone and General or Advanced parameters. You can also choose to change or disable quiet times for specific messages to support scenarios when a particular message in a journey shouldn't be subject to regular quiet times settings.
 
 The number of messages held for quiet times is listed in the journey.
 
@@ -138,6 +138,6 @@ Many organizations require quiet times for regulatory reasons. To set quiet time
 
 ## Quiet times and business units
 
-If you use business units, quiet times you create are available to all compliance profiles, journeys, and messages in your business unit. To set quiet times for different business units, create an individual quiet time setting in each business unit. If Business Unit Scoping for real-time journeys is enabled and you have access to multiple business units, you can choose which business unit the quiet time applies to.
+If you use business units, the quiet times you create are available to all compliance profiles, journeys, and messages in your business unit. To set quiet times for different business units, create an individual quiet time setting in each business unit. If Business Unit Scoping for real-time journeys is enabled and you have access to multiple business units, you can choose which business unit the quiet time applies to.
 
 [!INCLUDE[footer-include](./includes/footer-banner.md)]
