@@ -54,7 +54,7 @@ The matching rule builder consists of three parts:
 
 Use `emailaddress1` as the attribute in the main condition. Add an additional condition with the `mobilephone` attribute.
 
-:::image type="content" source="media/real-time-marketing-define-matching-rule-and-example.png" alt-text="Matching rule with email address and phone number" lightbox="media/real-time-marketing-define-matching-rule-example1.png":::
+:::image type="content" source="media/real-time-marketing-define-matching-rule-and-example.png" alt-text="Matching rule with email address and phone number" lightbox="media/real-time-marketing-define-matching-rule-and-example.png":::
 
 **Result:** The existing lead or contact record is updated if the email address and phone number match the values stored in the record.
 
@@ -62,7 +62,7 @@ Use `emailaddress1` as the attribute in the main condition. Add an additional co
 
 Use `emailaddress1` as the attribute in the main condition. Add `mobilephone` as an additional attribute to the same condition.
 
-:::image type="content" source="media/real-time-marketing-define-matching-rule-or-example.png" alt-text="Matching rule with email address or phone number" lightbox="media/real-time-marketing-define-matching-rule-example2.png":::
+:::image type="content" source="media/real-time-marketing-define-matching-rule-or-example.png" alt-text="Matching rule with email address or phone number" lightbox="media/real-time-marketing-define-matching-rule-or-example.png":::
 
 **Result:** The existing lead or contact record is updated if the email address or phone number match the values stored in the record.
 
