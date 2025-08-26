@@ -29,7 +29,7 @@ To set up quiet times, first choose the type of time zone the quiet times rules 
 
 If you select the **Journey** time zone, the app uses the journey’s time zone to apply quiet times. For example, if you set the journey time zone to **(GMT-5:00) Eastern Time (US & Canada)**, quiet times and days for messages in the journey follow the selected time zone.
 
-You can set a default journey timezone in **Settings** > **Journey Settings**. Individual journeys can have a different timezone that overrides the default.
+You can set the default journey timezone in **Settings** > **Journey Settings**. Individual journeys can have a different timezone that overrides the default.
 
 ### Audience time zone
 
