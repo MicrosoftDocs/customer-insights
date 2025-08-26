@@ -31,6 +31,7 @@ Pausing a journey prevents new entries and stops customers who have already ente
 
 > [!NOTE]
 > Customers in a "wait for time" step move forward one step and then pause.
+> 
 > For one-time, segment-based journeys, customers in the original segment can't re-enter the journey after it resumes. Only the remaining members of the segment proceed.
 
 ## What happens when you resume a journey?
