@@ -262,9 +262,9 @@ When `msdynmkt_isvalid` returns `false`, the `msdynmkt_errors` field has a JSON 
 - **Journey lifecycle APIs**: Start, stop, or pause journey operations.
 - **Segment APIs**: Manage customer segments used in journeys.
 
-## Software development kit examples
+## SDK examples
 
-### C# example using the Dynamics 365 software development kit
+### C# example using the Dynamics 365 SDK
 
 ```csharp
 using Microsoft.Xrm.Sdk;
