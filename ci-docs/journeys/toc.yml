@@ -454,6 +454,8 @@
       href: real-time-marketing-forms-custom-fields.md
     - name: Create unmapped fields for registration forms (preview)
       href: create-unmapped-fields-registration-forms.md
+    - name: Filter cities by country/region in forms
+      href: real-time-marketing-filter-cities-by-country-region.md
     - name: Manage forms
       href: real-time-marketing-manage-forms.md
     - name: Set the default configuration for forms
@@ -596,9 +598,11 @@
       href: developer/extend-ui.md
   - name: Extend and customize consent
     href: developer/extend-consent.md
+  - name: Use the Create Journey From Template API
+    href: developer/create-journey-template-api.md
   - name: Using the events API in real-time journeys (preview)
     href: developer/using-rtm-events-api.md
-  - name: Create a Customer Insights - Journeys segment using the Web API
+  - name: Create a segment using the Web API
     href: real-time-marketing-api-segment.md
   - name: Use binding IDs to correlate across triggers
     href: real-time-marketing-correlate-triggers.md

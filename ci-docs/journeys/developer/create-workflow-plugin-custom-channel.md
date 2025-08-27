@@ -32,5 +32,4 @@ The workflow or the plug-in should be configured to:
 > [!div class="nextstepaction"]
 > [Step 4: Test your custom channel tile](test-custom-channel-tile.md)  
 
-
 [!INCLUDE [footer-include](.././includes/footer-banner.md)]

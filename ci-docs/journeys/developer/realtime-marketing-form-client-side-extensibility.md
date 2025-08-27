@@ -1,7 +1,8 @@
 ---
 title: Extend Customer Insights - Journeys marketing forms using code
 description: Extend Customer Insights - Journeys marketing forms with JavaScript to apply custom business logic in Dynamics 365 Customer Insights - Journeys.
-ms.date: 02/05/2025
+ms.date: 08/26/2025
+ms.update-cycle: 180-days
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
@@ -13,13 +14,13 @@ search.audienceType:
 
 [!INCLUDE [consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
 
-This article explains how to extend Customer Insights - Journeys marketing forms for advanced customization.
+This article explains how to extend Customer Insights - Journeys marketing forms with advanced customization.
 
 ## JavaScript API
   
 Customer Insights - Journeys marketing forms consist of two parts:
 
-1. A form placeholder, which looks similar to this:
+1. A form placeholder. Here's an example:
 
 ```HTML
 <div>
@@ -39,11 +40,11 @@ Customer Insights - Journeys marketing forms consist of two parts:
 
 | Custom event | Description |
 |------|-------|
-|`d365mkt-beforeformload`|Triggered when the form placeholder is recognized before the actual form content is fetched. This event is triggered before the page loads, so it isn't visible in the developer console. |
-|`d365mkt-formrender`|Triggered after the form content is fetched and right before it's injected into the form placeholder. This event is triggered before the page loads, so it isn't visible in the developer console. |
-|`d365mkt-afterformload`|Triggered after the form is injected into the placeholder. |
-|`d365mkt-formsubmit`| Triggered when the form is submitted, cancelable. |
-|`d365mkt-afterformsubmit`| Triggered after the form is submitted |
+|`d365mkt-beforeformload`|Triggers when the form placeholder is recognized before the form content is fetched. This event triggers before the page loads, so it isn't visible in the developer console. |
+|`d365mkt-formrender`|Triggers after the form content is fetched and right before it's injected into the form placeholder. This event triggers before the page loads, so it isn't visible in the developer console. |
+|`d365mkt-afterformload`|Triggers after the form is injected into the placeholder. |
+|`d365mkt-formsubmit`| Triggers when the form is submitted. This event is cancelable. |
+|`d365mkt-afterformsubmit`| Triggers after the form is submitted. |
 
 #### Form submit - d365mkt-formsubmit detail object properties
 
@@ -58,7 +59,7 @@ Customer Insights - Journeys marketing forms consist of two parts:
 | Success | Boolean | Indicates whether the server accepted the submission or if the submission was rejected |
 | Payload | Object | Dictionary with form properties as they were sent to the server |
   
-You can attach custom events using the standard event attach mechanics:
+Attach custom events using the standard event attachment methods:
 
 ##### Sample code
   ```HTML
@@ -88,7 +89,7 @@ You can customize some form features by adding custom scripts, while you can mod
 
 #### Disable form loading progress bar
 
-Customize the form behavior by including a configuration script before the loader script is injected into a page. For example, hide the form loading progress bar.
+Include a configuration script before the loader script to customize form behavior. For example, hide the form loading progress bar.
 
  ```HTML
  <script>
@@ -101,7 +102,7 @@ Customize the form behavior by including a configuration script before the loade
 
 #### Disable default feedback UI
 
-To introduce a custom UI that appears after form submission, disable the default success or failure messages by adding `data-preventsubmissionui="true"` to the form placeholder.
+To show a custom UI after form submission, disable the default success or failure messages by adding `data-preventsubmissionui="true"` to the form placeholder.
 
 **Example**:
 ```HTML
@@ -115,7 +116,7 @@ To introduce a custom UI that appears after form submission, disable the default
 
 ### Rendering a marketing form using a JavaScript API
 
-Waiting for `DOMContentLoaded` can be inconvenient, especially for scenarios like dynamic content loading. For these situations, use the `createForm` helper function. `createForm` immediately returns a `div` DOM element, which triggers fetching form content in the background (the form is injected into a placeholder the moment it's fetched).
+Waiting for `DOMContentLoaded` can be inconvenient, especially when loading dynamic content. In these cases, use the `createForm` helper function. `createForm` returns a `div` DOM element and triggers fetching the form content in the background. The form is injected into a placeholder as soon as it's fetched.
 
 ```HTML
 <html>
@@ -133,7 +134,7 @@ Waiting for `DOMContentLoaded` can be inconvenient, especially for scenarios lik
 </html>
 ```
 
-Pass the readable event ID for the event registration forms. The modified syntax is as follows:
+Pass the readable event ID for event registration forms. Here's the modified syntax:
 ```JS
 d365mktforms.createForm(
   'formId',
@@ -167,7 +168,8 @@ You can use marketing forms within React applications. The form loader exposes t
 </html>
 ```
 
-You must also pass the readable event ID for the event registration forms. The modified syntax (introduced in Marketing version 6.1) is as follows:
+Also pass the readable event ID for event registration forms. Here's the modified syntax:
+
 ```JS
       root.render(React.createElement(d365mktforms.FormPlaceholder, {
         formId:'{msdynmkt_marketingformid}',
@@ -177,8 +179,7 @@ You must also pass the readable event ID for the event registration forms. The m
       }, null));
 ```
 
-> Replace `{msdynmkt_marketingformid}` with the actual identifier of the marketing form entity and `{organizationid}` with the actual identifier of your organization. `{server-}` should point to the server endpoints for your organization. The easiest way to grab the information you need is with the "Get Javascript Code" command from the form publish options.
-> You have to replace `{msdynmkt_marketingformid}` with the actual identifier of the marketing form entity and `{organizationid}` with the actual identifier of your organization. `{server-}` should point to the server endpoints for your organization. The easiest way to grab the information you need is with the "Get Javascript Code" command from the form publish options.
+> Replace `{msdynmkt_marketingformid}` with the actual identifier of the marketing form entity and `{organizationid}` with the actual identifier of your organization. `{server-}` should point to the server endpoints for your organization. The easiest way to get this information is to use the "Get Javascript Code" command from the form publish options.
 >
 > | Widget attribute | React component property |
 > |---------------------|---------------------------------|
@@ -187,6 +188,30 @@ You must also pass the readable event ID for the event registration forms. The m
 > | data-cached-form-url | formUrl |
 
 > [!NOTE]
-> The JavaScript API is available only for forms hosted as a script. It isn't supported for the iFrame hosting option.  
+> The JavaScript API is available only for forms hosted as a script. It doesn't support the iFrame hosting option.
+
+### Select a lookup field value using JavaScript
+
+You can use the JavaScript API to perform a background search and automatically populate a lookup field with items that match a specific search term. For example, after the form loads, you can search for all items containing the word "dollar" and display them in the lookup field:
+
+```JS
+    <script>
+      document.addEventListener("d365mkt-afterformload", (event) => {
+        const form = event.target.querySelector("form");
+        d365mktforms
+          .fillLookupFromSearch(
+            form,
+            "transactioncurrencyid", // field logical name
+            "dollar"                 // search term
+          )
+          .then(function (r) {
+            console.log("Success performing search", r);
+          })
+          .catch(function (e) {
+            console.log("Error performing search", e);
+          });
+      });
+    </script>
+```
 
 [!INCLUDE [footer-include](.././includes/footer-banner.md)]
