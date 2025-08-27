@@ -1,7 +1,7 @@
 ---
 title: "Connect to Common Data Model tables in Azure Data Lake Storage"
 description: "Work with data from Azure Data Lake Storage."
-ms.date: 06/19/2025
+ms.date: 08/27/2025
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -168,6 +168,7 @@ You can update the *Connect to storage account using* option. For more informati
    - **Enable Private Link** if you want to ingest data from a storage account through an Azure Private Link. For more information, go to [Private Links](private-link.md).
 
 1. Select **Next**.
+1. 
 1. Change any of the following:
    - Navigate to a different model.json or manifest.json file with a different set of tables from the container.
    - To add additional tables to ingest, select **New table**.
@@ -183,9 +184,27 @@ You can update the *Connect to storage account using* option. For more informati
 
 1. Select **Columns** to add or change them, or to enable data profiling. Then select **Done**.
 
-1. Select**Save** to apply your changes and return to the **Data sources** page.
+1. Select **Save** to apply your changes and return to the **Data sources** page.
 
    [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
+
+## Update a data source when the schema changes
+
+If the schema of the source data is changed after ingesting the data, an error appears asking you to update the data source connection. Schema changes include updates to columns, column names, and column data types.
+
+1. Go to **Data** > **Data sources**. Next to the data source with the errors, select  **Edit**.
+
+1. Select **Next**.
+
+1. Navigate to the table that has errors and select it???
+
+   :::image type="content" source="media/ADLS-attributes-auto-generate.png" alt-text="Screenshot of the Manage attributes page showing the auto-generate attributes message.":::
+
+1. Select **Auto-generate the attributes** and confirm.
+
+1. After the attribute generation completes, select **Done**.
+
+1. Select **Include** on the table and then select **Save** to apply your changes and return to the **Data sources** page.
 
 ## Prevent partition fragments in Data Lake ingestion
 
