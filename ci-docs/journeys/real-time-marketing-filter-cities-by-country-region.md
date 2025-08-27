@@ -85,7 +85,7 @@ To use your new country/region and city lookup fields in forms for contact or le
     1. Repeat the process to add a "City" lookup column. Select "City" as the related table.
 1. **Save and publish**: After you add both lookup columns, select **Save and exit**, then select **Publish All Customizations** to make the changes available in the form editor.
 
-:::image type="content" source="media/power-apps-add-country-contact.png" alt-text="Link Country/region lookup to Contact entity." lightbox="media/power-apps-add-country-contact.png":::
+:::image type="content" source="media/power-apps-add-country-region-contact-small.png" alt-text="Link Country/region lookup to Contact entity." lightbox="media/power-apps-add-country-region-contact.png":::
 
 > [!TIP]
 > Enable the country/region lookups for the combined Lead & Contact audience by creating a mapping between **Contact** > **Country/region** and **Lead** > **Country/region**. The same applies for city lookup. Learn more about mapping: [Lead-Contact Mapping](real-time-marketing-form-global-settings.md#lead-contact-mapping).
@@ -102,7 +102,7 @@ To make sure users visiting your form can see the options in the country/region 
 1. Set the **Read** permission to **Organization** level for both entities.
 1. Select **Save** to apply the changes.
 
-:::image type="content" source="media/power-platform-country.png" alt-text="Set up value filtering." lightbox="media/power-platform-country.png":::
+:::image type="content" source="media/power-platform-country-region-small.png" alt-text="Set up value filtering." lightbox="media/power-platform-country-region.png":::
 
 Learn more about security roles in [Security roles and privileges](/power-platform/admin/security-roles-privileges).
 
