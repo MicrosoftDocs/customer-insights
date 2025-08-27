@@ -166,7 +166,7 @@ If you don't plan to use the phone number for sending text messages, collect the
 
 If your business is in a single region with the same phone number country/region code, preset the *Country/region code* parameter of the phone number field.
 
-:::image type="content" source="media/real-time-marketing-form-country-code.png" alt-text="Set the country/region code for phone number." lightbox="media/real-time-marketing-form-country-code.png":::
+:::image type="content" source="media/real-time-marketing-form-country-region-code.png" alt-text="Set the country/region code for phone number." lightbox="media/real-time-marketing-form-country-region-code.png":::
 
 If the country/region code is preset, the correct phone number country/region code is automatically added when the form is submitted. If the customer enters a phone number that includes the country/region code, the preset country/region code is ignored.
 
@@ -196,7 +196,7 @@ When your form includes two lookup fields, a **Filter values** button becomes av
 
 Selecting the **Filter values** button opens a pop-up window where you can configure how the filtering works between lookup fields. In this window, you can specify which lookup field serves as the input for filtering and select the appropriate relationship between the underlying data tables. Once the filtering rule is configured, the field in the form editor changes its highlight from blue to purple, indicating that a filtering relationship has been successfully applied.
 
-The lookup fields for country/region and city aren't included by default. To add them to your form, refer to this [step-by-step guide that shows how to create a filtered list of cities based on the selected country/region](real-time-marketing-filter-cities-by-country.md). The guide also offers general guidance on how to define custom lookup fields (entities) and establish relationships between them. This approach can be applied to any scenario where field options need to be dynamically filtered based on prior selections.
+The lookup fields for country/region and city aren't included by default. To add them to your form, refer to this [step-by-step guide that shows how to create a filtered list of cities based on the selected country/region](real-time-marketing-filter-cities-by-country-region.md). The guide also offers general guidance on how to define custom lookup fields (entities) and establish relationships between them. This approach can be applied to any scenario where field options need to be dynamically filtered based on prior selections.
 
 Lookup fields also support a JavaScript API, enabling developers to [programmatically set a lookup field value](developer/realtime-marketing-form-client-side-extensibility.md#select-a-lookup-field-value-using-javascript) or apply dynamic filters based on user input. This allows for advanced customization and seamless integration with other form logic.
 

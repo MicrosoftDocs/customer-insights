@@ -1,5 +1,5 @@
 ---
-title: Filter cities by selected country/region in Customer Insights - Journeys forms
+title: Filter cities by country/region in Customer Insights - Journeys forms
 description: 'Customer Insights - Journeys forms: Filter city options by country/region for faster, more accurate submissions. Learn how to set up filtered lookups.'
 ms.date: 08/26/2025
 ms.update-cycle: 180-days
@@ -13,7 +13,7 @@ ms.custom:
   - ai-seo-date:08/26/2025
 ---
 
-# Filter cities by selected country/region in Customer Insights - Journeys forms
+# Filter cities by country/region in Customer Insights - Journeys forms
 
 Filtering the list of cities based on the selected country/region is a powerful way to simplify form interactions and improve data accuracy. Instead of overwhelming users with long, irrelevant dropdowns, this approach ensures they only see city options that match their chosen country/region—making the form faster to complete and easier to understand. This is especially valuable in scenarios like lead routing, where selecting the correct location ensures submissions reach the right team. In this guide, you learn how to set up this filtering using lookup fields and relationships between data tables.
 
