@@ -48,7 +48,7 @@ Once your solution is created, you can add all the components from the following
 ### 2. Create custom entities for country/region and city and establish a relationship
 
 1. In your solution in Power Apps, select **+New** and select **Table**.
-1. You can import XLSX files with the list of countries to simplify the process or you can build the table from scratch.
+1. You can import XLSX files with the list of countries/regions to simplify the process or you can build the table from scratch.
 1. Name the table **Country/region**.
 1. Add a primary column (for example, "Country/region Name") of type **Text**.
 1. Optionally, add other columns like "Country/region Code" or "Region" if needed.
@@ -57,7 +57,7 @@ Once your solution is created, you can add all the components from the following
 1. Add a lookup column that references the Country/region table. This step creates the relationship needed for filtering.
 1. Select **Save and exit** to publish the tables.
 
-:::image type="content" source="media/power-apps-country-city-relationship-small.png" alt-text="Create Country/region and City tables." lightbox="media/power-apps-country-city-relationship.png":::
+:::image type="content" source="media/power-apps-country-region-city-relationship-small.png" alt-text="Create Country/region and City tables." lightbox="media/power-apps-country-region-city-relationship.png":::
 
 > [!TIP]
 > Learn more about creating custom tables in Power Apps: [Create and edit tables using Power Apps](/power-apps/maker/data-platform/create-edit-entities-portal).
@@ -67,7 +67,7 @@ Once your solution is created, you can add all the components from the following
 - Use **Excel import**, **Power Automate**, or **manual entry in Power Apps** to add records to both tables.
 - Make sure each city record links to the correct country/region using the lookup field.
 
-:::image type="content" source="media/power-apps-country-city-small.png" alt-text="Populate data for City table." lightbox="media/power-apps-country-city.png":::
+:::image type="content" source="media/power-apps-country-region-city-small.png" alt-text="Populate data for City table." lightbox="media/power-apps-country-region-city.png":::
 
 > [!TIP]
 > Learn more about the various ways to import data: [Import data from Excel and export data to CSV](/power-apps/maker/data-platform/data-platform-import-export).
