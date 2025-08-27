@@ -247,7 +247,7 @@ When `msdynmkt_isvalid` returns `false`, the `msdynmkt_errors` field has a JSON 
 
 1. **Batch operations**: Batch multiple journey creations.
 1. **Async processing**: Handle API calls asynchronously for a better user experience.
-1. **Resource limits**: Know the Dynamics 365 API limits and quotas.
+1. **Resource limits**: Know the [Dynamics 365 API limits and quotas](/power-apps/developer/data-platform/api-limits).
 
 ## Limitations
 
