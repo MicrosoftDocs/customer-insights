@@ -1,7 +1,7 @@
 ---
 title: New and upcoming features
 description: Discover the latest features, improvements, and bug fixes in Dynamics 365 Customer Insights - Journeys. Stay updated with our monthly release notes.
-ms.date: 08/08/2025
+ms.date: 08/28/2025
 ms.update-cycle: 180-days
 ms.topic: whats-new
 author: colinbirkett
@@ -34,43 +34,67 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 
 #### Real-time journeys transition
 
-- **Message dialogs when creating outbound assets**
-	- Users will notice new message dialogs in the product whenever they attempt to create a new outbound marketing email, journey, segment, form, page, and more. These message dialogs advise users that outbound marketing will be removed soon. For now, users can dismiss the dialog and continue working in outbound marketing, but this will change in the future. Users will also see warning banners when current journeys and events are scheduled to run past June 30, 2025. For more information, see [Real-time journeys transition FAQs](transition-faqs.md).
+- **Outbound marketing will be hidden and then removed**
+	- As explained in [What will happen after June 30, 2025? Will outbound marketing stop working?](transition-faqs.md#what-will-happen-after-june-30-2025-will-outbound-marketing-stop-working), outbound marketing removal is following a phased approach. We are currently in phase two where we are gradually enabling non-dismissible message dialogs whenever users try to create a journey, email, segment, and so on in outbound marketing. We aim to have these blocking dialogs enabled in all outbound marketing environments by the end of September 2025. We'll soon start to move some environments into phase three where we hide outbound marketing and then remove it. Outbound marketing environments in tenants with an approved extension won't be affected. They may see some warning messages or banners, but we won't take any actions while an approved extension is in place. For more information, see [Transition overview](transition-overview.md) and [Real-time journeys transition FAQs](transition-faqs.md).
 
 #### General availability
 
-- **Get insights on email engagement with heatmap analytics** 
-	- Understanding the effectiveness of email campaigns can be complex, particularly when information and links are abundant. Gaining clarity on which areas or links captivate your audience and drive them to act is crucial for refining the user experience and boosting email performance. Real-time journeys email insights now offer a clear view of your audience's preferences by illustrating their interactions within your emails. This immediate visual feedback highlights the content that resonates the most, empowering you to adjust your messaging for heightened impact and better conversion rates. Heatmap now supports email variations. By leveraging these insights, you can understand which email variation captivates your audience and use it to personalize and optimize your upcoming campaigns or focus your efforts on the variations that yield the best results, ultimately driving better results for your business.  
-	- [Release plan](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/get-insights-email-engagement-heatmap-analytics) 
-	- [Docs](email-insights.md#click-map)
+- **Simplify forms by filtering choices based on previous answers**
+	- Guiding your customers through a smooth form submission experience is crucial to avoid frustration and abandonment before completion. New form field filtering dynamically adjusts options for one field based on the selection you make in another field, so users see only relevant choices. This feature makes forms simpler to understand and quicker to complete.
 
-	:::image type="content" source="media/get-insights-heat-map.png" alt-text="Get insights on email engagement with heatmap analytics." lightbox="media/get-insights-heat-map.png":::
+    For example, when filling out a form requesting a quote, it's crucial to get the right region, country, and city to ensure the lead is routed to the correct seller. Previously, customers had to scroll through a long list of cities, many of which were irrelevant. Now, they only see a list of cities automatically filtered based on the selected country. The result is a faster, more intuitive process that leads to reduced errors and higher quality submissions.
+
+    You can now dynamically set the value of a lookup field using a custom script, giving you greater flexibility to build responsive and personalized forms.
+	- [Release plan](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/simplify-forms-filtering-choices-based-previous-answers) 
+	- [Docs](real-time-marketing-manage-forms.md#filter-a-lookup-field-values-based-on-an-answer-in-a-previous-lookup-field-cascading-lookup-fields)
+
+- **Collect extra customer info without updating your data model**
+	- You can easily gather extra information about your customers by creating any kind of question directly in the marketing form editor without needing to create new custom attributes for your lead or contact entity. For example, you can create fields to ask, “How did you hear about our products?” or create contest questions to increase your customer satisfaction and retention.
+	- [Release plan](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/collect-extra-customer-information-without-creating-custom-attributes) 
+	- [Docs](real-time-marketing-forms-custom-fields.md)
+
+- **Generate leads that link to an existing contact**
+	- Your business has unique ways of organizing customer data and classifying potential leads. Now, with real-time journey forms, you can manage your contacts and leads more effectively according to your company's established processes. For example, you can recognize existing customers who fill out a lead form, so they're not mistaken for new leads.
+
+    With this new set of capabilities to connect lead and contact data, you can choose how to update existing contact or lead details and define advanced matching rules to prevent duplicate records. Additionally, you can set defaults so everything is already configured each time you create a new form. With these capabilities, you can fine-tune how form data is handled to provide better quality leads and match your company's established processes.
+	- [Release plan](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/generate-leads-that-link-existing-contact) 
+	- [Docs](real-time-marketing-manage-forms.md#parent-contact-for-lead)
+
+- **Collect extra event attendee information without updating your data model**
+	- You can easily gather extra information about your event attendees by creating any question directly in the form editor without creating new custom attributes for your contact entity. For example, you can create fields to ask, "What is your meal preference?" or "How did you learn about this event?" You can also create contest questions to increase customer engagement and gather valuable insights that help you personalize the attendee experience.
+	- [Release plan](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/collect-extra-event-attendee-information-without-updating-data-model) 
+	- [Docs](create-unmapped-fields-registration-forms.md)
 
 #### Public preview
 
-- **Transform your outreach with custom-built AI agent-powered voice conversations** 
-	- Brands are constantly looking for ways to anticipate customer needs and connect with them on the channels that is the most appropriate for the message engagement. By integrating Customer Insights - Journeys with Contact Center, you can leverage custom-built AI agents to deliver meaningful, hyper-personalized conversational voice calls that boost customer satisfaction and engagement.  For example, you can alert a customer about a flight delay via a voice call where the custom-built AI agent engages them in a natural language conversation to inform them about the issue and offer solutions such as reschedule or refund. The results of the conversation then drive the next action in the journey, whether that’s rescheduling the flight, issuing the refund, or sending an email because there was no answer.
-	- [Docs](conversational-journeys-overview.md) 
-	- [Blog](https://aka.ms/AI-Powered-Convos)
-
-	:::image type="content" source="media/journey-ai-voice-conversation.png" alt-text="Transform your outreach with custom-built AI Agent powered voice conversations." lightbox="media/journey-ai-voice-conversation.png":::
-
-- **Pause and resume journeys to handle unplanned events** 
-	- Safeguarding your brand's reputation and customer trust is critical. In the face of unplanned or unforeseen events, such as natural disasters, you may need to pause certain campaigns that might be deemed inappropriate or insensitive. Additionally, you may run into business or operational reasons for stopping a campaign, such as identifying the need to update some content or experiencing an unexpected call center outage. In such scenarios, it's prudent to halt customer outreach until the problem is addressed. Instead of stopping a campaign and adjusting the audience to exclude previously reached customers, you can now pause and resume journeys, allowing you to manage unplanned situations easily and stress-free. 
-	- [Release plan](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/pause-resume-journeys-handle-unplanned-events) 
-	- [Docs](pause-resume-journey.md)
+- **Automate scalable journey creation with the journey API** 
+	- With the new journey API, you can now automate journey creation by using templates, existing segments, and messages. For example, a team managing global events can programmatically generate hundreds of localized journey variants, each tailored by language, time zone, and audience segment, without manually configuring each one.
+ 
+    This capability enables rapid and repeatable journey creation at scale. It allows teams to confidently deliver consistent customer experiences and reduce time-to-market with timely and relevant communications to customers.
+	- [Release plan](/dynamics365/release-plan/2025wave2/customer-insights/dynamics365-customer-insights-journeys/automate-scalable-journey-creation-journey-api) 
+	- [Docs](create-journey-template-api.md)
 
 #### Monthly enhancements
 
-- **Out-of-box cancel registration flow**
-	- Event organizers can now include a cancel registration link in confirmation emails, enabling attendees to cancel their registration easily. This automatically updates their status to "Canceled" in the system, giving organizers real-time visibility while simplifying attendee management and improving support for waitlists.
+- **Using the events API in real-time journeys**
+	- Events play a pivotal role in your business strategy by helping you acquire and engage customers. Your clients need a centralized location where they can discover and learn about the events you organize. The events API is a programmatic method to access data of events, sessions, session tracks, passes, speakers, and sponsorships, which enables you to quickly create a comprehensive hub where customers can access important event details and register.
+
+    With this enhancement, we have extended the existing API with the following capabilities: 
+    1. Check in endpoint 
+    1. Event QR code endpoint
+    1. Registrations count and session registrations count endpoint 
+    1. Ability to retrieve list of sessions 
+    1. Ability to retrieve list of speakers 
+    1. Ability to retrieve list of sponsors and their logos
+    1. Ability to submit registration via API
+	- [Release plan](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/create-event-portal-own-website)
 	- [Docs](cancel-registration.md)
 
  #### New blogs and scenario docs
 
 Learn how to make the most of the new Dynamics 365 Customer Insights features in our latest blogs and scenario docs:
 
-- [Time Zone Identification for Quiet Time feature in Dynamics 365 Customer Insights](https://community.dynamics.com/blogs/post/?postid=c1ad9596-0338-f011-8c4e-0022481da8cf)
+- [Filter cities by selected country in Customer Insights - Journeys forms](real-time-marketing-filter-cities-by-country.md)
 
 ### August 2025 update
 
