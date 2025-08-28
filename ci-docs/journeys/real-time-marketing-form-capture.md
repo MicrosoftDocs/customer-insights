@@ -39,7 +39,7 @@ Form capture mimics submission of a standard Customer Insights - Journeys form. 
 
 1. To create a new capture form script, go to **Customer Insights - Journeys** > **Channels** > **Forms** and select **New** on the command bar.
 1. Name the form and choose the right audience. The choice of target audience is important. The form capture script field->attribute mapping is available only for attributes of the chosen target audience (entity).
-1. Add all fields you want to map to your existing form fields. This step isn't mandatory; **field > attribute** mapping is defined in the form capture code. Adding the right fields into the form generates placeholders for attribute mapping in the form capture script making the mapping definition easier.
+1. **Add all fields** you want to map to your existing form fields. Although **field > attribute** mapping is defined in the form capture code, the *contact* or *lead* record is not updated if the field is not present in the form created using form editor. Adding the right fields into the form generates placeholders for attribute mapping in the form capture script making the mapping definition easier.
 1. Add consent elements like Purpose or Topic to form and configure them. Learn more about how to [manage consent for email and text messages in Customer Insights - Journeys](real-time-marketing-email-text-consent.md).
     > [!IMPORTANT]
     > The consent definition must be done in the form editor. Changes made to consent settings done in the form capture code snippet will be ignored.
