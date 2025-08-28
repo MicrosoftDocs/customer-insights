@@ -22,6 +22,10 @@ Customer Insights - Journeys forms let you use custom captcha bot protection to 
 > [!NOTE]
 > In the current app version, only one captcha implementation can be active. If you use your own captcha provider (as outlined in the next sections), existing forms that use the out-of-the-box captcha will stop working. A custom captcha implementation requires at least basic knowledge of writing and debugging [Dataverse plugins](/power-apps/developer/data-platform/plug-ins).
 
+> [!IMPORTANT]
+> The default configuration supports reCAPTCHA v2 only.
+> To implement reCAPTCHA v3, refer to the guide on [custom back-end validation](real-time-marketing-form-customize-submission-validation.md).
+
 The process consists of these steps:
 
 1. **Add reCAPTCHA to the form**.
