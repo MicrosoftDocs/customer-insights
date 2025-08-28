@@ -1,7 +1,7 @@
 ---
 title: Matching rules for Customer Insights - Journeys
 description: Create custom matching rules to avoid creating duplicate records in forms and journeys.
-ms.date: 08/26/2025
+ms.date: 08/28/2025
 ms.topic: how-to
 author: petrjantac
 ms.author: alfergus
@@ -26,26 +26,26 @@ To create a new matching rule:
 1. Go to **Settings** > **Matching rules**, and select **New** in the top ribbon.
 1. Enter a name for your new rule. This name is used to select the rule when creating new forms or journeys.
 1. Select the target entity, which can be a lead or contact.
-1. Select the **Save** button. The matching rule is created, and you access it in the **Rules** tab.
+1. Select the **Save** button. The matching rule is created, and you access it in the **Conditions** tab.
 
 :::image type="content" source="media/real-time-marketing-create-matching-rule.png" alt-text="Create a new matching rule" lightbox="media/real-time-marketing-create-matching-rule.png":::
 
  > [!TIP]
  > The **Match inactive records** toggle determines if inactive records are used for matching. Matching an inactive record doesn't reactivate the record. Inactive records have the same priority for matching as active ones. It's recommended to keep this toggle Off.
 
-Define the details of your matching rule in the **Rules** tab.
+Define the details of your matching rule in the **Conditions** tab.
 
-### Define matching rules
+### Define matching conditions
 
 The matching rule builder consists of three parts:
 
 - **Summary**: A human language interpretation of the logic created by your rules.
 - **Main condition**: The main condition is always executed first to gather a group of the most relevant records. The main rule is a direct query to database, so the degree of match is always *Exact* (it isn't possible to set up fuzzy matching). You can add multiple attributes to the main condition. There's always an **OR** operator between the attributes of the condition.
 - **Additional conditions**: Additional conditions are executed on the group of records filtered out by the main condition. You can add multiple attributes to every additional condition. There's always an **OR** operator between the attributes of the rule. You can create multiple additional conditions. All conditions are linked by an **AND** operator. You can set the **Degree of match**, which defines if an exact match (100%) is required or what extent of fuzzy match is applied. The possible degrees of match are:
-  - **Exact**: All characters must match.
-  - **High**: A few characters don't match.
-  - **Medium**: Some characters don't match.
-  - **Low**: Half of the characters don't match.
+  - **Exact**: All of the characters must match.
+  - **High**: Almost all of the characters must match.
+  - **Medium**: At least half of the characters must match.
+  - **Low**: At least a quarter of the characters must match.
 - You can build complex matching rules by combining multiple conditions with various attributes.
 
 :::image type="content" source="media/real-time-marketing-define-matching-rule.png" alt-text="Define your matching rule" lightbox="media/real-time-marketing-define-matching-rule.png":::
