@@ -17,12 +17,16 @@ ms.custom:
 
 # Use frequency capping in your journey to limit the number of messages sent
 
-The [frequency cap setting](real-time-marketing-frequency-cap.md) is on by default for all journeys. After you set frequency cap limits in the global settings, messages are capped. If you have editing rights for a journey, you can choose to bypass the cap for a specific journey. To bypass the frequency cap:
+Frequency caps let you limit how many messages a customer receives through a specific channel within a set time period. This helps prevent customer, especially those involved in multiple campaigns or journeys, from being overwhelmed by too many messages in a short span.
+
+## Adjust journey frequency cap settings
+
+The [frequency cap setting](real-time-marketing-frequency-cap.md) is on by default for all journeys. After you set frequency cap limits in the global settings, messages are capped. If you have editing rights for a journey, you can bypass the cap for a specific journey. To bypass the frequency cap:
 
 1. Go to **Journeys**.
 1. Select a journey to edit. You can only edit draft journeys. To bypass the frequency cap for a live journey, republish it with the new setting.
 1. Under **Other settings**, find **Frequency cap**. Exclude the journey from the frequency cap here.
 
-:::image type="content" source="media/real-time-marketing-frequency-cap-bypass.png" alt-text="Screenshot of the Frequency cap setting with the option to bypass the cap for a journey." lightbox="media/real-time-marketing-frequency-cap-bypass.png":::
+:::image type="content" source="media/real-time-marketing-frequency-cap-bypass.png" alt-text="Screenshot of the Frequency cap setting showing the option to bypass the cap for a journey." lightbox="media/real-time-marketing-frequency-cap-bypass.png":::
 
 [!INCLUDE[footer-include](./includes/footer-banner.md)]

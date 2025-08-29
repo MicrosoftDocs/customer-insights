@@ -13,7 +13,7 @@ search.audienceType:
 
 # Set up quiet times to prevent messages from being sent during unwanted hours
 
-Quiet times enable you to configure specific times when messages won't be sent to customers to avoid contacting them when messages may be unwanted. You might not want to send messages at specific times due to regulations, business policies, or other factors. Typically, quiet times are configured for overnight hours, weekends, or holidays. When quiet times are in place, the system holds the messages until the quiet times end.
+Quiet times let you set specific periods when messages shouldn't be sent to customers, helping you avoid contacting them at inconvenient or inappropriate times. Customer message restrictions may be based on regulations, company policies, or other considerations. Common quiet times include overnight hours, weekends, and holidays. During these periods, the system holds messages and sends them only after the quiet time ends.
 
 To set up quiet times, go to **Settings** > **Customer engagement** > **Quiet times**. If no quiet time setting exists, select the **New** button in the ribbon to get started.
 
