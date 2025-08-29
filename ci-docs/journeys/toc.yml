@@ -374,7 +374,7 @@
           href: real-time-marketing-split-audience.md
       - name: Control messages sent from journeys
         items:
-        - name: Set quiet times to prevent messages from sending during unwanted hours
+        - name: Use quiet times in your journey
           href: real-time-marketing-quiet-times.md
         - name: Limit messages sent with frequency capping
           href: real-time-marketing-frequency-cap.md
@@ -610,8 +610,6 @@
     href: real-time-marketing-correlate-triggers.md
 - name: Administer
   items:
-  - name: Administration overview
-    href: admin-guide.md
   - name: Best practices for administration
     href: admin-best-practices.md
   - name: How real-time journeys uses cookies
@@ -642,8 +640,10 @@
         href: manage-word-templates.md
     - name: Data management settings
       href: data-management-settings.md
-    - name: Journeys administrator settings
-      href: real-time-marketing-admin-settings.md
+    - name: Set quiet times to prevent messages from sending during unwanted hours
+      href: real-time-marketing-quiet-times.md
+    - name: Limit messages sent with frequency capping
+      href: real-time-marketing-frequency-cap.md
     - name: Add or remove sample data
       href: /power-platform/admin/add-remove-sample-data
     - name: Quota limits

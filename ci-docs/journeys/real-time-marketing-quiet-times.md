@@ -4,7 +4,7 @@ description: Learn how to set up quiet times to avoid sending messages during un
 ms.date: 08/26/2025
 ms.topic: article
 author: alfergus
-ms.author: colinbirkett
+ms.author: alfergus
 search.audienceType: 
   - admin
   - customizer
@@ -119,14 +119,6 @@ The first time you create and save a quiet time setting, the system asks if you 
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of the initial quiet time setting dialog, showing options to apply the setting to all journeys and messages or decide later.](media/real-time-marketing-quiet-times-initial-save.png "Screenshot of the initial quiet time setting dialog, showing options to apply the setting to all journeys and messages or decide later.")
-
-## Quiet times and journeys
-
-In a journey, you can see the type of quiet time setting that applies. It specifies whether the quiet times use the journey time zone or the audience time zone and General or Advanced parameters. You can also choose to change or disable quiet times for specific messages to support scenarios when a particular message in a journey shouldn't be subject to regular quiet times settings.
-
-The number of messages held for quiet times is listed in the journey.
-
-:::image type="content" source="media/quiet-times-and-journeys.png" alt-text="Apply quiet times in a journey." lightbox="media/quiet-times-and-journeys.png":::
 
 ## Quiet times and frequency caps
 
