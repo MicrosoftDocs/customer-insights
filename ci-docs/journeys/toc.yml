@@ -375,9 +375,9 @@
       - name: Control messages sent from journeys
         items:
         - name: Use quiet times in your journey
-          href: real-time-marketing-quiet-times.md
+          href: journey-quiet-times.md
         - name: Limit messages sent with frequency capping
-          href: real-time-marketing-frequency-cap.md
+          href: journey-frequency-cap.md
       - name: Create approval workflows and customize the journey designer
         items:
         - name: 'Tutorial: Implement approval workflows in real-time journeys'
@@ -640,9 +640,9 @@
         href: manage-word-templates.md
     - name: Data management settings
       href: data-management-settings.md
-    - name: Set quiet times to prevent messages from sending during unwanted hours
+    - name: Set up quiet times to prevent messages from sending during unwanted hours
       href: real-time-marketing-quiet-times.md
-    - name: Limit messages sent with frequency capping
+    - name: Set up frequency capping
       href: real-time-marketing-frequency-cap.md
     - name: Add or remove sample data
       href: /power-platform/admin/add-remove-sample-data
