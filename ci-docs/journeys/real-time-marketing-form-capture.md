@@ -38,13 +38,13 @@ Form capture mimics submission of a standard Customer Insights - Journeys form. 
 ### Creating the form capture in the Customer Insights - Journeys form editor
 
 1. To create a new capture form script, go to **Customer Insights - Journeys** > **Channels** > **Forms** and select **New** on the command bar.
-1. Name the form and choose the right audience. The choice of target audience is important. The form capture script field->attribute mapping is available only for attributes of the chosen target audience (entity).
-1. Add all fields you want to map to your existing form fields. This step isn't mandatory; **field > attribute** mapping is defined in the form capture code. Adding the right fields into the form generates placeholders for attribute mapping in the form capture script making the mapping definition easier.
-1. Add consent elements like Purpose or Topic to form and configure them. Learn more about how to [manage consent for email and text messages in Customer Insights - Journeys](real-time-marketing-email-text-consent.md).
+1. Name the form and choose the right audience. The choice of the target audience is important. The form capture script field->attribute mapping is available only for attributes of the chosen target audience (entity).
+1. Add all fields you want to map to your existing form fields. Although **field** > **attribute** mapping is defined in the form capture code, the contact or lead record isn't updated if the field isn't present in the form created using the form editor. Adding the correct fields into the form generates placeholders for attribute mapping in the form capture script, making the mapping definition easier.
+1. Add consent elements like Purpose or Topic to the form and configure them. Learn more about how to [manage consent for email and text messages in Customer Insights - Journeys](real-time-marketing-email-text-consent.md).
     > [!IMPORTANT]
-    > The consent definition must be done in the form editor. Changes made to consent settings done in the form capture code snippet will be ignored.
+    > The consent definition must be done in the form editor. Changes made to consent settings in the form capture code snippet will be ignored.
 1. Add a **Submit** button. The submit button is required for successful validation of the form before publishing.
-1. Publish the form using the **Publish** button in the top right corner of the screen. Copy the form capture code snippet and embed the code snippet to your web page with the existing form or hand over the code snippet to your developer. The code snippet already includes a link to documentation to guide your developer.
+1. Publish the form using the **Publish** button in the top right corner of the screen. Copy the form capture code snippet and embed the code snippet in your web page with the existing form, or hand over the code snippet to your developer. The code snippet already includes a link to documentation to guide your developer.
     > [!div class="mx-imgBorder"]
     > ![Add consent element to the form.](media/real-time-marketing-form-capture-copy-script.png)
 
