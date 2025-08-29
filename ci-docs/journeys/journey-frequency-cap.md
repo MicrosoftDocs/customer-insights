@@ -1,8 +1,8 @@
 ---
 title: Use frequency capping in your journey to limit the number of messages sent
 description: Frequency cap lets you limit messages in your journey to prevent customer fatigue. Learn how to set caps and bypass them when needed.
-ms.date: 08/28/2025
-ms.topic: article
+ms.date: 08/29/2025
+ms.topic: how-to
 author: alfergus
 ms.author: alfergus
 search.audienceType:
@@ -17,7 +17,7 @@ ms.custom:
 
 # Use frequency capping in your journey to limit the number of messages sent
 
-Frequency caps let you limit how many messages a customer receives through a specific channel within a set time period. This helps prevent customer, especially those involved in multiple campaigns or journeys, from being overwhelmed by too many messages in a short span.
+Frequency caps let you limit how many messages a customer receives through a specific channel within a set time period. This feature prevents customers, especially those involved in multiple campaigns or journeys, from being overwhelmed by too many messages in a short span.
 
 ## Adjust journey frequency cap settings
 

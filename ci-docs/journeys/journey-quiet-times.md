@@ -1,8 +1,8 @@
 ---
 title: Use quiet times in your journey to prevent messages from being sent during unwanted hours
 description: Quiet times help you prevent messages from being sent during unwanted hours in your journey. Learn how to set up and manage quiet times.
-ms.date: 08/28/2025
-ms.topic: article
+ms.date: 08/29/2025
+ms.topic: how-to
 author: alfergus
 ms.author: alfergus
 search.audienceType:
