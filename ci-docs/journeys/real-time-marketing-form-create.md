@@ -1,7 +1,7 @@
 ---
 title: Create Customer Insights - Journeys forms
 description: Create forms in Dynamics 365 Customer Insights - Journeys.
-ms.date: 01/23/2025
+ms.date: 08/29/2025
 ms.topic: how-to
 author: petrjantac
 ms.author: alfergus
