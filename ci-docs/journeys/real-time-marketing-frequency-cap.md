@@ -1,7 +1,7 @@
 ---
-title: Limit the number of messages sent with frequency capping 
+title: Set up frequency capping to limit the number of messages sent
 description: Learn how to limit the number of messages sent to your customers to prevent message fatigue.
-ms.date: 10/27/2023
+ms.date: 08/28/2025
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -11,7 +11,7 @@ search.audienceType:
   - enduser
 ---
 
-# Limit the number of messages sent with frequency capping
+# Set up frequency capping to limit the number of messages sent
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=7b66707b-68be-42b2-a5b1-d0238715f8f6]
 
@@ -36,17 +36,6 @@ By default, the "Marketing Manager - Business" role will have the rights to crea
 
 > [!div class="mx-imgBorder"]
 > ![Frequency cap settings screenshot.](media/real-time-marketing-frequency-cap-settings.png "Frequency cap settings screenshot")
-
-### Enable or disable a frequency cap for your journey
-
-The frequency cap setting is enabled by default for all journeys. Once the frequency cap limits are defined in the global settings, the messages will be capped. Users who have editing rights for a journey will be able to decide if the cap should be bypassed for a specific journey. To bypass the frequency cap:
-
-- Navigate to journeys.
-- Select a journey to edit it (you can only edit draft journeys; live journeys have to be republished with a new setting to bypass the frequency cap).
-- Under **Other settings**, you'll find **Frequency cap**. Here you can exclude the journey from the frequency cap.
-
-> [!div class="mx-imgBorder"]
-> ![Bypass the frequency cap setting screenshot.](media/real-time-marketing-frequency-cap-bypass.png "Bypass the frequency cap setting screenshot")
 
 ## How does frequency capping work
 
