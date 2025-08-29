@@ -70,6 +70,8 @@
       href: transition-walkthrough-personalization.md
     - name: Segments
       href: transition-walkthrough-segments.md    
+    - name: Settings
+      href: transition-settings.md
     - name: Setup changes in real-time journeys
       href: transition-walkthrough-setup.md
     - name: Social posting and LinkedIn Lead Gen
