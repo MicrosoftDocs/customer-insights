@@ -1,7 +1,7 @@
 ---
 title: Known issues in Customer Insights - Journeys with mitigations
 description: Learn about known issues in Customer Insights - Journeys and how to work around them.
-ms.date: 08/06/2025
+ms.date: 08/29/2025
 ms.topic: troubleshooting-known-issue
 author: alfergus
 ms.author: alfergus
@@ -72,6 +72,7 @@ As we continue to work on Customer Insights - Journeys and refine the experience
 (1) This is also true for any trigger-based journeys that rely on segments in the journey flow.
 - There's a limit of 100 contacts that can be added to an inclusion/exclusion group as part of the segment definition. To get around this, you can create a separate segment of customers and use that segment in your master segment definition thereby creating a compound segment.
 - Today, users can't edit a segment that is being used in a live journey in Customer Insights - Journeys. To be able to edit the segment, stop the journey, and then make the edits to the segments.
+- The segment execution records table (`msdynmkt_segmentexecution`) stores execution history data for segments. The table is used for (1) rendering the "member count over time" graph in real-time journeys segments and (2) allowing journeys to determine when a segment was updated. Over time, the `msdynmkt_segmentexecution` table can grow significancy in size, impacting storage usage and performance. **Mitigation**: It's safe to delete `msdynmkt_segmentexecution` records. Before deleting anything, you should determine how much historical data you want to keep. It's recommended to retain at least the last three months of execution records, but retention decisions depend on your unique data policies and business needs.
 
 ## Triggers
 
