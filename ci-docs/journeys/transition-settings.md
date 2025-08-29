@@ -1,14 +1,18 @@
 ---
 title: Transition settings from outbound marketing to real-time journeys
-description: How setting up real-time journeys differs from outbound marketing setup in Dynamics 365 Customer Insights - Journeys.
+description: Transition settings from outbound marketing to real-time journeys in Dynamics 365 Customer Insights. Learn key differences and update your configurations today.
 ms.date: 08/28/2025
 ms.topic: install-set-up-deploy
 author: alfergus
 ms.author: alfergus
-search.audienceType: 
+search.audienceType:
   - admin
   - customizer
   - enduser
+ms.custom:
+  - ai-gen-docs-bap
+  - ai-gen-description
+  - ai-seo-date:08/28/2025
 ---
 
 # Transition settings from outbound marketing to real-time journeys

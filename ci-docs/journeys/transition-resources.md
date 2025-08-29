@@ -39,6 +39,7 @@ The following documentation pages cover transitioning specific outbound marketin
 - [Marketing pages and forms](transition-walkthrough-forms.md)
 - [Personalization](transition-walkthrough-personalization.md)
 - [Segments](transition-walkthrough-segments.md)
+- [Settings](transition-settings.md)
 - [Setup changes in real-time journeys](transition-walkthrough-setup.md)
 - [Social posting and LinkedIn Lead Gen](transition-walkthrough-social-posts.md)
 
