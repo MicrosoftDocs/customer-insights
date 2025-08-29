@@ -1,19 +1,19 @@
 ---
-title: Set quiet times to prevent messages from being sent during unwanted hours
+title: Set up quiet times to prevent messages from being sent during unwanted hours
 description: Learn how to set up quiet times to avoid sending messages during unwanted times.
-ms.date: 08/26/2025
+ms.date: 08/28/2025
 ms.topic: article
 author: alfergus
-ms.author: colinbirkett
+ms.author: alfergus
 search.audienceType: 
   - admin
   - customizer
   - enduser
 ---
 
-# Set quiet times to prevent messages from being sent during unwanted hours
+# Set up quiet times to prevent messages from being sent during unwanted hours
 
-Quiet times enable you to configure specific times when messages won't be sent to customers to avoid contacting them when messages may be unwanted. You might not want to send messages at specific times due to regulations, business policies, or other factors. Typically, quiet times are configured for overnight hours, weekends, or holidays. When quiet times are in place, the system holds the messages until the quiet times end.
+Quiet times let you set specific periods when messages shouldn't be sent to customers, helping you avoid contacting them at inconvenient or inappropriate times. Customer message restrictions may be based on regulations, company policies, or other considerations. Common quiet times include overnight hours, weekends, and holidays. During these periods, the system holds messages and sends them only after the quiet time ends.
 
 To set up quiet times, go to **Settings** > **Customer engagement** > **Quiet times**. If no quiet time setting exists, select the **New** button in the ribbon to get started.
 
@@ -119,14 +119,6 @@ The first time you create and save a quiet time setting, the system asks if you 
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of the initial quiet time setting dialog, showing options to apply the setting to all journeys and messages or decide later.](media/real-time-marketing-quiet-times-initial-save.png "Screenshot of the initial quiet time setting dialog, showing options to apply the setting to all journeys and messages or decide later.")
-
-## Quiet times and journeys
-
-In a journey, you can see the type of quiet time setting that applies. It specifies whether the quiet times use the journey time zone or the audience time zone and General or Advanced parameters. You can also choose to change or disable quiet times for specific messages to support scenarios when a particular message in a journey shouldn't be subject to regular quiet times settings.
-
-The number of messages held for quiet times is listed in the journey.
-
-:::image type="content" source="media/quiet-times-and-journeys.png" alt-text="Apply quiet times in a journey." lightbox="media/quiet-times-and-journeys.png":::
 
 ## Quiet times and frequency caps
 
