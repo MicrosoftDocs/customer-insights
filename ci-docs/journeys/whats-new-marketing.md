@@ -1,7 +1,7 @@
 ---
 title: New and upcoming features
 description: Discover the latest features, improvements, and bug fixes in Dynamics 365 Customer Insights - Journeys. Stay updated with our monthly release notes.
-ms.date: 08/28/2025
+ms.date: 08/29/2025
 ms.update-cycle: 180-days
 ms.topic: whats-new
 author: colinbirkett
@@ -64,6 +64,12 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 	- You can easily gather extra information about your event attendees by creating any question directly in the form editor without creating new custom attributes for your contact entity. For example, you can create fields to ask, "What is your meal preference?" or "How did you learn about this event?" You can also create contest questions to increase customer engagement and gather valuable insights that help you personalize the attendee experience.
 	- [Release plan](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/collect-extra-event-attendee-information-without-updating-data-model) 
 	- [Docs](create-unmapped-fields-registration-forms.md)
+
+- **View Customer Insights - Data profile interactions on the timeline**
+	- Customer Insights - Journeys now offers a unified timeline view that seamlessly integrates interaction data from Customer Insights - Data profiles. This enhancement allows you to visualize historical customer activities directly within the timeline interface. By consolidating behavioral, transactional, and demographic data, users gain a comprehensive understanding of each customer’s journey, enabling more personalized and effective engagement strategies.
+
+    With this update, you can target segments and personalize dynamic content based on real-time insights from unified profiles, regardless of whether the data originates in Customer Insights - Journeys or Customer Insights - Data. This empowers teams to orchestrate journeys that reflect each customer’s unique behavior and preferences, improving campaign relevance and boosting conversion potential.
+	- [Docs](view-previously-sent-emails.md)
 
 #### Public preview
 
