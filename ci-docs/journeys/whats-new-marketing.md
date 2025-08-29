@@ -42,7 +42,7 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 - **Simplify forms by filtering choices based on previous answers**
 	- Guiding your customers through a smooth form submission experience is crucial to avoid frustration and abandonment before completion. New form field filtering dynamically adjusts options for one field based on the selection you make in another field, so users see only relevant choices. This feature makes forms simpler to understand and quicker to complete.
 
-        For example, when filling out a form requesting a quote, it's crucial to get the right region, country, and city to ensure the lead is routed to the correct seller. Previously, customers had to scroll through a long list of cities, many of which were irrelevant. Now, they only see a list of cities automatically filtered based on the selected country. The result is a faster, more intuitive process that leads to reduced errors and higher quality submissions.
+        For example, when filling out a form requesting a quote, it's crucial to get the right country/region and city to ensure the lead is routed to the correct seller. Previously, customers had to scroll through a long list of cities, many of which were irrelevant. Now, they only see a list of cities automatically filtered based on the selected country/region. The result is a faster, more intuitive process that leads to reduced errors and higher quality submissions.
 
         You can now dynamically set the value of a lookup field using a custom script, giving you greater flexibility to build responsive and personalized forms.
 	- [Release plan](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/simplify-forms-filtering-choices-based-previous-answers) 
@@ -78,7 +78,7 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
  
         This capability enables rapid and repeatable journey creation at scale. It allows teams to confidently deliver consistent customer experiences and reduce time-to-market with timely and relevant communications to customers.
 	- [Release plan](/dynamics365/release-plan/2025wave2/customer-insights/dynamics365-customer-insights-journeys/automate-scalable-journey-creation-journey-api) 
-	- [Docs](create-journey-template-api.md)
+	- [Docs](./developer/create-journey-template-api.md)
 
 #### Monthly enhancements
 
@@ -100,7 +100,7 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 
 Learn how to make the most of the new Dynamics 365 Customer Insights features in our latest blogs and scenario docs:
 
-- [Filter cities by selected country in Customer Insights - Journeys forms](real-time-marketing-filter-cities-by-country-region.md)
+- [Filter cities by selected country/region in Customer Insights - Journeys forms](real-time-marketing-filter-cities-by-country-region.md)
 
 ### August 2025 update
 
