@@ -1,7 +1,7 @@
 ---
-title: Set quiet times to prevent messages from being sent during unwanted hours
+title: Set up quiet times to prevent messages from being sent during unwanted hours
 description: Learn how to set up quiet times to avoid sending messages during unwanted times.
-ms.date: 08/26/2025
+ms.date: 08/28/2025
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -11,7 +11,7 @@ search.audienceType:
   - enduser
 ---
 
-# Set quiet times to prevent messages from being sent during unwanted hours
+# Set up quiet times to prevent messages from being sent during unwanted hours
 
 Quiet times enable you to configure specific times when messages won't be sent to customers to avoid contacting them when messages may be unwanted. You might not want to send messages at specific times due to regulations, business policies, or other factors. Typically, quiet times are configured for overnight hours, weekends, or holidays. When quiet times are in place, the system holds the messages until the quiet times end.
 
