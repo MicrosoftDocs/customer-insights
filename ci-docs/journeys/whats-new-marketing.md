@@ -41,10 +41,6 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 
 - **Simplify forms by filtering choices based on previous answers**
 	- Guiding your customers through a smooth form submission experience is crucial to avoid frustration and abandonment before completion. New form field filtering dynamically adjusts options for one field based on the selection you make in another field, so users see only relevant choices. This feature makes forms simpler to understand and quicker to complete.
-
-        For example, when filling out a form requesting a quote, it's crucial to get the right country/region and city to ensure the lead is routed to the correct seller. Previously, customers had to scroll through a long list of cities, many of which were irrelevant. Now, they only see a list of cities automatically filtered based on the selected country/region. The result is a faster, more intuitive process that leads to reduced errors and higher quality submissions.
-
-        You can now dynamically set the value of a lookup field using a custom script, giving you greater flexibility to build responsive and personalized forms.
 	- [Release plan](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/simplify-forms-filtering-choices-based-previous-answers) 
 	- [Docs](real-time-marketing-manage-forms.md#filter-a-lookup-field-values-based-on-an-answer-in-a-previous-lookup-field-cascading-lookup-fields)
 
@@ -55,8 +51,6 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 
 - **Generate leads that link to an existing contact**
 	- Your business has unique ways of organizing customer data and classifying potential leads. Now, with real-time journey forms, you can manage your contacts and leads more effectively according to your company's established processes. For example, you can recognize existing customers who fill out a lead form, so they're not mistaken for new leads.
-
-        With this new set of capabilities to connect lead and contact data, you can choose how to update existing contact or lead details and define advanced matching rules to prevent duplicate records. Additionally, you can set defaults so everything is already configured each time you create a new form. With these capabilities, you can fine-tune how form data is handled to provide better quality leads and match your company's established processes.
 	- [Release plan](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/generate-leads-that-link-existing-contact) 
 	- [Docs](real-time-marketing-manage-forms.md#parent-contact-for-lead)
 
@@ -67,16 +61,12 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 
 - **View Customer Insights - Data profile interactions on the timeline**
 	- Customer Insights - Journeys now offers a unified timeline view that seamlessly integrates interaction data from Customer Insights - Data profiles. This enhancement allows you to visualize historical customer activities directly within the timeline interface. By consolidating behavioral, transactional, and demographic data, users gain a comprehensive understanding of each customer’s journey, enabling more personalized and effective engagement strategies.
-
-        With this update, you can target segments and personalize dynamic content based on real-time insights from unified profiles, regardless of whether the data originates in Customer Insights - Journeys or Customer Insights - Data. This empowers teams to orchestrate journeys that reflect each customer’s unique behavior and preferences, improving campaign relevance and boosting conversion potential.
 	- [Docs](view-previously-sent-emails.md)
 
 #### Public preview
 
-- **Automate scalable journey creation with the journey API** 
+- **Automate scalable journey creation with the journey API**
 	- With the new journey API, you can now automate journey creation by using templates, existing segments, and messages. For example, a team managing global events can programmatically generate hundreds of localized journey variants, each tailored by language, time zone, and audience segment, without manually configuring each one.
- 
-        This capability enables rapid and repeatable journey creation at scale. It allows teams to confidently deliver consistent customer experiences and reduce time-to-market with timely and relevant communications to customers.
 	- [Release plan](/dynamics365/release-plan/2025wave2/customer-insights/dynamics365-customer-insights-journeys/automate-scalable-journey-creation-journey-api) 
 	- [Docs](./developer/create-journey-template-api.md)
 
