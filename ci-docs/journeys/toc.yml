@@ -640,7 +640,7 @@
         href: manage-word-templates.md
     - name: Data management settings
       href: data-management-settings.md
-    - name: Set up quiet times to prevent messages from sending during unwanted hours
+    - name: Set up quiet times
       href: real-time-marketing-quiet-times.md
     - name: Set up frequency capping
       href: real-time-marketing-frequency-cap.md
