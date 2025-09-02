@@ -196,7 +196,7 @@ If the schema of the source data is changed after ingesting the data, a schema m
 
 1. Select the table that has errors.
 
-   :::image type="content" source="media/ADLS-attributes-auto-generate.png" alt-text="Screenshot of the Manage attributes page showing the auto-generate attributes message.":::
+   :::image type="content" source="media/attributes-auto-generate.png" alt-text="Screenshot of the Manage attributes page showing the auto-generate attributes message.":::
 
 1. Select **Auto-generate the attributes** and confirm.
 
