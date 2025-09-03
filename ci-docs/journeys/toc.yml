@@ -384,6 +384,8 @@
           href: approval-workflows.md
         - name: Customize the journey designer
           href: real-time-marketing-journey-designer.md
+    - name: Customer interactions timeline
+      href: timeline.md
     - name: Known issues for journeys
       href: journey-known-issues.md
   - name: Conversational journeys (preview)
@@ -1198,8 +1200,6 @@
       href: developer/retrieve-interactions-contact.md
   - name: Collaborate using Microsoft Teams chat
     href: teams-chat.md
-  - name: Customer interactions timeline
-    href: timeline.md
   - name: Work with marketing calendars
     href: marketing-calendar.md
   - name: Go live with publishable entities and track their status
