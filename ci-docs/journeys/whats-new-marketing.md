@@ -4,8 +4,8 @@ description: Discover the latest features, improvements, and bug fixes in Dynami
 ms.date: 09/05/2025
 ms.update-cycle: 180-days
 ms.topic: whats-new
-author: colinbirkett
-ms.author: colinbirkett
+author: alfergus
+ms.author: alfergus
 ms.collection: bap-ai-copilot
 ms.custom:
   - ai-gen-docs-bap
@@ -61,7 +61,7 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 
 - **View Customer Insights - Data profile interactions on the timeline**
 	- The timeline lets you see detailed information for a contact or lead by tracking marketing, sales, and service interactions over time in a single stream. If you orchestrate journeys that target Customer Insights - Data customer profiles, you also see marketing interactions like emails sent, forms submitted, and website visits on the contact or lead timeline. With this update, teams across the organization get a complete overview of marketing interactions relevant to their work. Sales representatives can review marketing touchpoints—including eBook downloads and email clicks—to refine their outreach strategies, and service agents can reference recent interactions to manage escalations and support inquiries.
-	- [Docs](view-previously-sent-emails.md)
+	- [Docs](timeline.md)
 
 #### Public preview
 
