@@ -1,7 +1,7 @@
 ---
 title: New and upcoming features
 description: Discover the latest features, improvements, and bug fixes in Dynamics 365 Customer Insights - Journeys. Stay updated with our monthly release notes.
-ms.date: 08/29/2025
+ms.date: 09/05/2025
 ms.update-cycle: 180-days
 ms.topic: whats-new
 author: colinbirkett
@@ -60,7 +60,7 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 	- [Docs](create-unmapped-fields-registration-forms.md)
 
 - **View Customer Insights - Data profile interactions on the timeline**
-	- Customer Insights - Journeys now offers a unified timeline view that seamlessly integrates interaction data from Customer Insights - Data profiles. This enhancement allows you to visualize historical customer activities directly within the timeline interface. By consolidating behavioral, transactional, and demographic data, users gain a comprehensive understanding of each customer’s journey, enabling more personalized and effective engagement strategies.
+	- The timeline lets you see detailed information for a contact or lead by tracking marketing, sales, and service interactions over time in a single stream. If you orchestrate journeys that target Customer Insights - Data customer profiles, you also see marketing interactions like emails sent, forms submitted, and website visits on the contact or lead timeline. With this update, teams across the organization get a complete overview of marketing interactions relevant to their work. Sales representatives can review marketing touchpoints—including eBook downloads and email clicks—to refine their outreach strategies, and service agents can reference recent interactions to manage escalations and support inquiries.
 	- [Docs](view-previously-sent-emails.md)
 
 #### Public preview
