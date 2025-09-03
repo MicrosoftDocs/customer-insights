@@ -52,11 +52,6 @@ The second part of the **General** section lets you choose the default action af
 
 ## Audience
 
-> [!IMPORTANT]
-> A preview feature is a feature that isn't complete but is made available before it’s officially in a release so customers can get early access and provide feedback. Preview features aren’t meant for production use and could have limited or restricted functionality.
->
-> Microsoft doesn't provide support for this preview feature. Microsoft Dynamics 365 Technical Support won’t be able to help you with issues or questions. Preview features aren’t meant for production use, especially to process personal or other data that are subject to legal or regulatory compliance requirements.
-
 The **Audience** section lets you set the default target audience for your new forms. *Audience settings* determine which audience (entity record) is used in submission processing, and the conditions for creating a new record or updating an existing record. All *Audience settings* appear in the form editor, so you can select your preferred audience when you create a new form.
 
 Change the details of the out-of-the-box *Audience settings* or create new settings.
