@@ -1,7 +1,7 @@
 ---
 title: Prevent sending emails to duplicated email addresses (preview)
 description: Learn how to deduplicate email addresses in Dynamics 365 Customer Insights - Journeys.
-ms.date: 06/12/2025
+ms.date: 09/04/2025
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
@@ -37,7 +37,6 @@ You can view duplicated email addresses by going to your journey or email **Deli
 When you view the insights, you see all duplicated email addresses in the **blocked** section under the **Duplicate recipient address** category.
 
 > [!NOTE]
-> When an email gets blockes due to duplication the audience member continues to the next step of journey logic. If you want to exit customers from journeys when duplication is detected, you can you use the [journey exit by triger](https://learn.microsoft.com/en-us/dynamics365/customer-insights/journeys/real-time-marketing-segment-based-journey#:~:text=Exit%3A%20In%20the%20Exit%20setting%20you%20can%20specify%20that%20people%20should%20exit%20the%20journey%20if%20they%20engage%20a%20trigger%20or%20belong%20to%20a%20particular%20segment) option. You can achieve that by choosing the trigger to be *Email blocked" and the Reason *Contains* the key word "Duplicate"
-
+> When an email is blocked due to duplication, the customer continues to the next step of the journey. If you want customers to exit from a journey when duplication is detected, you can use the [journey exit by trigger](real-time-marketing-segment-based-journey.md#:~:text=Exit%3A%20In%20the%20Exit%20setting%20you%20can%20specify%20that%20people%20should%20exit%20the%20journey%20if%20they%20engage%20a%20trigger%20or%20belong%20to%20a%20particular%20segment) option. For the trigger, choose "Email blocked" and for the **Reason**, select *contains* the keyword "Duplicate."
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
