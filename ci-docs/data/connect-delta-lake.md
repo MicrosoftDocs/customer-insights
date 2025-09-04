@@ -1,7 +1,7 @@
 ---
 title: "Connect to Delta tables in Azure Data Lake Storage"
 description: "Work with data stored in Delta tables from Azure Data Lake Storage."
-ms.date: 06/27/2025
+ms.date: 09/04/2025
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -105,9 +105,25 @@ Once you've saved the data source, you can't go back and add more tables. To add
 
 ## Manage schema changes
 
-When a column is added or removed from the schema of a Delta folders data source, the system runs a complete refresh of the data. Full refreshes take longer to process all the data than incremental refreshes.
+If a column is added or removed from the schema of a Delta folders data source, the system runs a complete refresh of the data. Full refreshes take longer to process all the data than incremental refreshes.
 
-### Add a column
+If updates to columns, column names, and column data types occur in the schema of a Delta folders data source, a schema mismatch or data mismatch error appears. The error asks you to update the data source connection. These errors can be seen in the task details.
+
+### Update a data source when the schema changes
+
+1. Go to **Data** > **Data sources**. Select **Edit** next to the data source with the errors. Then, select **Next**.
+
+1. Select the table that has errors.
+
+   :::image type="content" source="media/attributes-auto-generate.png" alt-text="Screenshot of the Manage attributes page showing the auto-generate attributes message.":::
+
+1. Select **Auto-generate the attributes** and confirm.
+
+1. After the attribute generation completes, select **Done**.
+
+1. Select **Include** on the table and then select **Save** to apply your changes and return to the **Data sources** page.
+
+### Add a column for unification
 
 When a column is added to the data source, the information automatically appends to the data in Customer Insights - Data once a refresh occurs. If unification is already configured for the table, the new column must be added to the unification process.
 
