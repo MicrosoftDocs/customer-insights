@@ -60,7 +60,7 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 	- [Docs](create-unmapped-fields-registration-forms.md)
 
 - **View Customer Insights - Data profile interactions on the timeline**
-	- The timeline lets you see detailed information for a contact or lead by tracking marketing, sales, and service interactions over time in a single stream. If you orchestrate journeys that target Customer Insights - Data customer profiles, you also see marketing interactions like emails sent, forms submitted, and website visits on the contact or lead timeline. With this update, teams across the organization get a complete overview of marketing interactions relevant to their work. Sales representatives can review marketing touchpoints—including eBook downloads and email clicks—to refine their outreach strategies, and service agents can reference recent interactions to manage escalations and support inquiries.
+	- The timeline lets you see detailed information for a contact or lead by tracking marketing, sales, and service interactions over time in a single stream. If you orchestrate journeys that target Customer Insights - Data customer profiles, you can now see marketing interactions like emails sent, forms submitted, and website visits on the connected contact timeline. With this update, teams across the organization get a complete overview of marketing interactions relevant to their work. Sales representatives can review marketing touchpoints—including eBook downloads and email clicks—to refine their outreach strategies, and service agents can reference recent interactions to manage escalations and support inquiries.
 	- [Docs](timeline.md)
 
 #### Public preview
