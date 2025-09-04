@@ -1,7 +1,7 @@
 ---
 title: "Connect to Common Data Model tables in Azure Data Lake Storage"
 description: "Work with data from Azure Data Lake Storage."
-ms.date: 08/27/2025
+ms.date: 09/02/2025
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
