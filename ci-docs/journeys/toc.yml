@@ -384,8 +384,6 @@
           href: approval-workflows.md
         - name: Customize the journey designer
           href: real-time-marketing-journey-designer.md
-    - name: Customer interactions timeline
-      href: timeline.md
     - name: Known issues for journeys
       href: journey-known-issues.md
   - name: Conversational journeys (preview)
@@ -488,14 +486,16 @@
       href: analytics-overview.md
     - name: Access and interpret analytics
       href: real-time-marketing-analytics.md
-    - name: How to use aggregate cross-journey analytics
+    - name: Use aggregate cross-journey analytics
       href: real-time-marketing-cross-journey-analytics.md
-    - name: How to use aggregate channel analytics
+    - name: Use aggregate channel analytics
       href: real-time-marketing-channel-analytics.md
     - name: Make journey decisions based on web interactions
       href: interaction-journey-decision.md
-    - name: How to use email insights
+    - name: Use email insights
       href: email-insights.md
+    - name: Use the customer interactions timeline
+      href: timeline.md
     - name: Customer Insights - Journeys integration with Microsoft Fabric
       items:
       - name: Customer Insights - Journeys integration with Microsoft Fabric overview
