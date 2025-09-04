@@ -37,6 +37,6 @@ You can view duplicated email addresses by going to your journey or email **Deli
 When you view the insights, you see all duplicated email addresses in the **blocked** section under the **Duplicate recipient address** category.
 
 > [!NOTE]
-> When an email is blocked due to duplication, the customer continues to the next step of the journey. If you want customers to exit from a journey when duplication is detected, you can use the [journey exit by trigger](real-time-marketing-segment-based-journey.md#:~:text=Exit%3A%20In%20the%20Exit%20setting%20you%20can%20specify%20that%20people%20should%20exit%20the%20journey%20if%20they%20engage%20a%20trigger%20or%20belong%20to%20a%20particular%20segment) option. For the trigger, choose "Email blocked" and for the **Reason**, select *contains* the keyword "Duplicate."
+When an email is blocked due to duplication, the customer proceeds to the next step in the journey. If you want customers to exit a journey when duplication is detected, you can use the journey exit by trigger option. For the trigger, choose "Email blocked" and for the **Reason**, select *contains* the keyword "Duplicate." To learn more, see [Exit when a trigger occurs](real-time-marketing-segment-based-journey.md#other-journey-configurations).
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
