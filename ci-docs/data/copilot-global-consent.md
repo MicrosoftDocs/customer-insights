@@ -5,8 +5,8 @@ ms.date: 11/12/2024
 ms.update-cycle: 180-days
 ms.reviewer: v-wendysmith
 ms.topic: how-to
-author: radsay01
-ms.author: rsayyaparaju 
+author: sstabbert
+ms.author: sstabbert
 ms.custom: bap-template
 ms.collection: bap-ai-copilot 
 ---

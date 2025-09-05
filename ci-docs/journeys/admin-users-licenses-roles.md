@@ -32,8 +32,6 @@ If you created an environment and want to restrict access:
 1. Select **Edit**.
 1. In the **Edit details** pane, select the **Edit** icon in the **Security group** area.
 
-    :::image type="content" source="media/edit-security-groups-new-tab.png" alt-text="Select the Edit icon to select a security group.":::
-
     Only the first 200 security groups are returned. Use **Search** to look for a specific security group.
 
 1. Select a security group, select **Done**, and then select **Save**.
