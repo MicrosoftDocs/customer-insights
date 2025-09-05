@@ -24,7 +24,7 @@ There are three levels of consent to use generative AI Copilot features in Custo
 
 - **Allow cross-geography data flow for Copilot features**: **On** indicates you agree that data may be stored and processed outside of your geographic region, compliance boundary, or national cloud instance. If you're in a region where Azure OpenAI is deployed such as the United States and Switzerland, this field doesn't display (the default is **On** and can't be changed). Default is **Off** for all other regions where Azure OpenAI isn't deployed. To view where Azure OpenAI services are currently deployed, see [Azure products by region](https://azure.microsoft.com/explore/global-infrastructure/products-by-region/?products=cognitive-services&regions=all).
 
-- **Allow data sharing for Copilot features**: **On** indicates you agree to allow Microsoft to capture and review inputs, outputs, and telemetry from Copilot features to improve Microsoft's models, features, and services. Customer Insights - Data only displays the consent and doesn't allow for edits; this consent must be provided in the [Power Platform Admin Center](https://admin.powerplatform.microsoft.com/). Default is **Off**.
+- **Allow data sharing for Copilot features**: **On** indicates you agree to allow Microsoft to capture and review inputs, outputs, and telemetry from Copilot features to improve Microsoft's models, features, and services. Customer Insights - Data only displays the consent and doesn't allow for edits; this consent must be provided in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/). Default is **Off**.
 
 [!INCLUDE [public-preview-note](includes/public-preview-note.md)]
 
@@ -32,7 +32,7 @@ There are three levels of consent to use generative AI Copilot features in Custo
 
 - A Dynamics 365 Customer Insights - Data admin role is required to change consent for opt-in and cross-geography levels.
 
-- A Power Platform Admin Center administrator role is required to [change data sharing consent](/power-platform/faqs-copilot-data-sharing).
+- A Power Platform admin center administrator role is required to [change data sharing consent](/power-platform/faqs-copilot-data-sharing).
 
 ## Give consent in Customer Insights - Data
 

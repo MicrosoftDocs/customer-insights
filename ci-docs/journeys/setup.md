@@ -19,7 +19,7 @@ ms.custom:
 
 This article explains how to access and use the installation management area for Customer Insights. In this one-stop experience, you can manage to install and uninstall the Customer Insights - Journeys and Customer Insights - Data applications.
 
-All of your Dataverse environments for the geo you selected in the Power Platform Admin Center are listed in the installation management area by type (**Production** or **Trial**). You can see where Customer Insights – Journeys and Customer Insights – Data are installed and take action to install or uninstall.
+All of your Dataverse environments for the geo you selected in the Power Platform admin center are listed in the installation management area by type (**Production** or **Trial**). You can see where Customer Insights – Journeys and Customer Insights – Data are installed and take action to install or uninstall.
 
 ## Prerequisites and requirements
 
@@ -51,9 +51,9 @@ If you **Uninstall** Customer Insights - Journeys (paid or trial), the services 
 
 #### Set up or access a Customer Insights - Journeys environment
 
-If you don't already have one, you must first create an environment in [Microsoft Power Platform admin center](/power-platform/admin/). Follow these steps to create an environment:
+If you don't already have one, you must first create an environment in the [Microsoft Power Platform admin center](/power-platform/admin/). Follow these steps to create an environment:
 
-1. Go to [admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com) and create an environment of the desired type: production, sandbox, or subscription-based trial.
+1. Go to [admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com) > **Manage** > **Environments** and create an environment of the desired type: production, sandbox, or subscription-based trial.
 1. Select the correct region for your environment.
 1. Turn on the "Enable Dataverse" and "Enable D365 Apps" toggles for the environment to allow apps. 
 
@@ -61,8 +61,8 @@ For more information, see [Create and manage environments in the Power Platform 
 
 #### Install Customer Insights - Journeys and Customer Insights - Data
 
-1. On the [admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com) page, find **Resources** in the left-hand site map and select **Dynamics 365 apps**.
-1. Select the geo in the upper-right corner of the Power Platform Admin Center that matches the target environments for installation. Find either **Dynamics 365 Customer Insights** or **Dynamics 365 Marketing** in the list and select the three dots ("**...**") next to the app name, then select **Manage**.
+1. On the [admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com) page, find **Manage** in the left-hand site map and select **Dynamics 365 apps**.
+1. Select the geo in the upper-right corner of the Power Platform admin center that matches the target environments for installation. Find either **Dynamics 365 Customer Insights** or **Dynamics 365 Marketing** in the list and select the three dots ("**...**") next to the app name, then select **Manage**.
 1. In the installation management area, you see your available environments listed and can choose where you want to install Customer Insights - Journeys or Customer Insights - Data. The following options are available:
     * To install either application, select **Install**. 
     * If you don't own any paid licenses and want to learn how to buy, select **Buy now**. 

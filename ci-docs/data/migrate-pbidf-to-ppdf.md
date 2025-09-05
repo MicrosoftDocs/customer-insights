@@ -52,3 +52,5 @@ A temporary data source with a similar name may show under **Administration** > 
 
 - [Connect to a Power Query data source](connect-power-query.md)
 - [Data sources overview](data-sources.md)
+
+[!INCLUDE [footer-include](includes/footer-banner.md)]

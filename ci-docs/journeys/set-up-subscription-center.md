@@ -318,7 +318,11 @@ If you need to create additional duplicate detection rules, for example, for an 
 
 ### Run bulk system jobs to detect email duplication
 
-As some changes to the customer database aren't captured by the global duplicate detection rules (for example, when merging contact records or activating them), you can check for duplicates periodically using [scheduled jobs](/power-platform/admin/run-bulk-system-jobs-detect-duplicate-records). To create a scheduled job, go to the Power Platform admin center then select **Settings** > **Data management** > **Duplicate detection jobs**. Create a new job, add the email address fields you want to check, and define the schedule.
+As some changes to the customer database aren't captured by the global duplicate detection rules (for example, when merging contact records or activating them), you can check for duplicates periodically using [scheduled jobs](/power-platform/admin/run-bulk-system-jobs-detect-duplicate-records). To create a scheduled job:
+
+1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), then **Manage** > **Environments**.
+1. Select your environment, then select **Settings** > **Data management** > **Duplicate detection jobs**. 
+1. Create a new job, add the email address fields you want to check, and define the schedule.
 
 > [!div class="mx-imgBorder"]
 > ![Create a scheduled job.](media/subscription-scheduled-job.png)

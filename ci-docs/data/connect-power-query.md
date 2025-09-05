@@ -63,7 +63,7 @@ Loading data can take time. After a successful refresh, the ingested data can be
 
 > [!CAUTION]
 >
-> - A data source based on Power Query creates a [dataflow in Dataverse](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365). Don't change the name of a dataflow in the Power Platform admin center that is used in Customer Insights - Data. Renaming a dataflow causes issues with the references between the data source and the Dataverse dataflow.
+> - A data source based on Power Query creates a [dataflow in Dataverse](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365). Don't change the name of a dataflow in the Power Platform admin center that's used in Customer Insights - Data. Renaming a dataflow causes issues with the references between the data source and the Dataverse dataflow.
 > - Concurrent evaluations for Power Query data sources in Customer Insights - Data have the same [refresh limits like Dataflows in PowerBI.com](/power-query/power-query-online-limits#refresh-limits). If a data refresh fails because it reached the evaluation limit, we recommend you adjust the refresh schedule for each dataflow to ensure the data sources aren't processed at the same time.
 
 ## Add data from on-premises data sources

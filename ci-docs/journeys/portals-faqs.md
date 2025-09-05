@@ -106,8 +106,8 @@ To restart your portal:
           
 ## How can I fix my portal after changing my instance name?
 
-The Power Platform admin center enables you to change the  name of any of your instances at any time. If you do so, then the URL for the affected instance will also change to match and, as a result, your portal will no longer be configured correctly and will stop working. To fix it, you must reconfigure your portal as follows:
-          
+The Power Platform admin center enables you to change the name of any of your instances at any time. If you do so, then the URL for the affected instance will also change to match and, as a result, your portal will no longer be configured correctly and will stop working. To fix it, you must reconfigure your portal as follows:
+
 1. [Open the installation management area](uninstall.md) and go to **Resources** > **Portals** on the left navigation pane.
 1. Each configured portal app is listed using the name of the Dynamics 365 instance it is assigned to (so it probably doesn't have "portal" in its name), and shows a value of **Configured** in the **Status** column. Find and select your portal in the list and then select **Manage** top ribbon.  
           

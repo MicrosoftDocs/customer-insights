@@ -22,7 +22,25 @@ Read this article to learn how to work with user accounts, user licenses, and se
 
 ## User access and security groups
 
-When you create new environments in the Power Platform Admin Center, if no security group is selected, all Microsoft Entra users have default access to the environment through an automatic user sync. To restrict access to an environment when creating it in the Power Platform Admin Center, select a security group for the environment. Users must be members of the security group to access the environment. If you created environments and want to restrict access, create a security group, select the environment in the Power Platform Admin Center, then select **Edit** in the upper right corner. In the flyout, select the security group and apply it to the environment. Learn more: [Control user access to environments: security groups and licenses](/power-platform/admin/control-user-access)
+When you create new environments in the Power Platform admin center, if no security group is selected, all Microsoft Entra users have default access to the environment through an automatic user sync. To restrict access to an environment when creating it in the Power Platform admin center, select a security group for the environment. Users must be members of the security group to access the environment.
+
+If you created an environment and want to restrict access:
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.com) as an admin (Dynamics 365 admin or Microsoft Power Platform admin).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**, and then choose the environment with which you want to associate the security group.
+1. Select **Edit**.
+1. In the **Edit details** pane, select the **Edit** icon in the **Security group** area.
+
+    :::image type="content" source="media/edit-security-groups-new-tab.png" alt-text="Select the Edit icon to select a security group.":::
+
+    Only the first 200 security groups are returned. Use **Search** to look for a specific security group.
+
+1. Select a security group, select **Done**, and then select **Save**.
+
+    The security group is associated with the environment.
+
+Learn more: [Control user access to environments: security groups and licenses](/power-platform/admin/control-user-access)
 
 ## Create user accounts and assign licenses
 

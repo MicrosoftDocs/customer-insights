@@ -48,7 +48,7 @@ The _source environment_ is the Customer Insights - Journeys environment you're 
 The _target environment_ is the environment you're copying _to_. As with the source environment, you must prepare the target environment before you copy _if Customer Insights - Journeys is installed on the source environment, the target environment, or both_.
 
 > [!NOTE]
-> To back up and restore a production environment, first convert it to a sandbox, perform the backup operations, and then convert it back to a production environment. Environment lifecycle operations like copy and backup and restore aren't allowed on production environments. See [Convert a sandbox into a production environment](copy-or-restore.md#switch-an-environment-between-sandbox-and-production-status) for details. You must already have the target environment available on your tenant. You can see the target environment on the **Environments** page of the Power Platform admin center. If you don't have a target environment (sandbox), [contact Microsoft Support](/power-platform/admin/get-help-support) for assistance.
+> To back up and restore a production environment, first convert it to a sandbox, perform the backup operations, and then convert it back to a production environment. Environment lifecycle operations like copy and backup and restore aren't allowed on production environments. See [Convert a sandbox into a production environment](copy-or-restore.md#switch-an-environment-between-sandbox-and-production-status) for details. You must already have the target environment available on your tenant. You can see the target environment by going to **Manage** > **Environments** in the Power Platform admin center. If you don't have a target environment (sandbox), [contact Microsoft Support](/power-platform/admin/get-help-support) for assistance.
 
 To prepare your target environment, do the following _before_ starting the copy:
 
@@ -111,7 +111,7 @@ As with automatic backups, on-demand backups include the full organizational dat
 
 ### Restore a backup on the same environment
 
-1. To restore a backup on the same environment, if you're restoring on a Production type environment, you must first convert it to a Sandbox environment. On the **Environments** page in Power Platform Admin Center, select the environment and select the button for **Convert to Sandbox** in the button ribbon at the top of the page.  
+1. To restore a backup on the same environment, if you're restoring on a Production type environment, you must first convert it to a Sandbox environment. On the **Manage** > **Environments** page in Power Platform admin center, select the environment and select the button for **Convert to Sandbox** in the button ribbon at the top of the page.  
 1. Next to the environment choose **...**, **Backup and restore**, and then **Restore or manage**. 
 1. To select a **System** backup, choose a date and time or choose **Manual** to select a manual backup.
 1. On the side pane, select the current environment. 

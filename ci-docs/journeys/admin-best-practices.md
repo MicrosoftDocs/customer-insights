@@ -78,7 +78,7 @@ You can remove the Customer Insights - Journeys app from any Dynamics 365 enviro
 Currently, Customer Insights - Journeys, like other Dynamics 365 model apps (Sales, Service, etc.), can only be deployed on CE environments (also known as orgs).
 
 - [This documentation](/power-platform/admin/create-environment) describes how to add CE environments via purchase into a tenant on which Customer Insights - Journeys can be deployed.
-- A CE environment could also be [provisioned via the Power Platform Admin Center with a CE DB](/power-platform/admin/create-environment). If you need to create a Customer Insights - Journeys template-based CE environment, you should open a support ticket to resolve the issue.
+- A CE environment could also be [provisioned using the Power Platform admin center with a CE database](/power-platform/admin/create-environment). If you need to create a Customer Insights - Journeys template-based CE environment, you should open a support ticket to resolve the issue.
 
 ## Trials
 
