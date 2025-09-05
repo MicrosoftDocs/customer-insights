@@ -1,7 +1,7 @@
 ---
 title: Prevent sending emails to duplicated email addresses (preview)
 description: Learn how to deduplicate email addresses in Dynamics 365 Customer Insights - Journeys.
-ms.date: 06/12/2025
+ms.date: 09/04/2025
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
@@ -36,14 +36,7 @@ You can view duplicated email addresses by going to your journey or email **Deli
 
 When you view the insights, you see all duplicated email addresses in the **blocked** section under the **Duplicate recipient address** category.
 
-## Known issues
-
-Deduplication prevents sending an email more than once to the same email address, but it doesn't exclude other contacts sharing the same email from the journey logic.
-
-For example, if two contacts share the same email address and the journey is set to "send a follow-up email if the contact doesn't open the first email":
-
-- The initial email is sent to only one of the contacts (because of deduplication).
-- If the contact who received the email opens it, the contact doesn't receive the follow-up email.
-- However, the other contact sharing the same email address goes into the "not opened" branch and gets the follow-up email.
+> [!NOTE]
+> When an email is blocked due to duplication, the customer proceeds to the next step in the journey. If you want customers to exit a journey when duplication is detected, you can use the journey exit by trigger option. For the trigger, choose "Email blocked" and for the **Reason**, select *contains* the keyword "Duplicate." To learn more, see [Exit when a trigger occurs](real-time-marketing-segment-based-journey.md#other-journey-configurations).
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]

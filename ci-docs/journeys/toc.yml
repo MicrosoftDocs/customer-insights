@@ -486,14 +486,16 @@
       href: analytics-overview.md
     - name: Access and interpret analytics
       href: real-time-marketing-analytics.md
-    - name: How to use aggregate cross-journey analytics
+    - name: Use aggregate cross-journey analytics
       href: real-time-marketing-cross-journey-analytics.md
-    - name: How to use aggregate channel analytics
+    - name: Use aggregate channel analytics
       href: real-time-marketing-channel-analytics.md
     - name: Make journey decisions based on web interactions
       href: interaction-journey-decision.md
-    - name: How to use email insights
+    - name: Use email insights
       href: email-insights.md
+    - name: Use the customer interactions timeline
+      href: timeline.md
     - name: Customer Insights - Journeys integration with Microsoft Fabric
       items:
       - name: Customer Insights - Journeys integration with Microsoft Fabric overview
@@ -1198,8 +1200,6 @@
       href: developer/retrieve-interactions-contact.md
   - name: Collaborate using Microsoft Teams chat
     href: teams-chat.md
-  - name: Customer interactions timeline
-    href: timeline.md
   - name: Work with marketing calendars
     href: marketing-calendar.md
   - name: Go live with publishable entities and track their status
