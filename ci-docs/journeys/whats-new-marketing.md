@@ -35,13 +35,13 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 #### Real-time journeys transition
 
 - **Outbound marketing will be hidden and then removed**
-	- As explained in [What will happen after June 30, 2025? Will outbound marketing stop working?](transition-faqs.md#what-will-happen-after-june-30-2025-will-outbound-marketing-stop-working), outbound marketing removal is following a phased approach. We're currently in phase two where we are gradually enabling non-dismissible message dialogs whenever users try to create outbound marketing assets such as journeys, emails, segments, and so on. We aim to have these blocking dialogs enabled in all outbound marketing environments by the end of September 2025. We'll soon start to move some environments into phase three where we hide outbound marketing and then remove it. Outbound marketing environments in tenants with an approved extension won't be affected. Environments with approved extensions may see some warning messages or banners, but we won't take any actions while the extension is in place. For more information, see [Transition overview](transition-overview.md) and [Real-time journeys transition FAQs](transition-faqs.md).
+	- As explained in [What will happen after June 30, 2025? Will outbound marketing stop working?](transition-faqs.md#what-will-happen-after-june-30-2025-will-outbound-marketing-stop-working), outbound marketing removal is following a phased approach. We're currently in phase two where we are gradually enabling non-dismissible message dialogs when users try to create outbound marketing assets such as journeys, emails, segments, and so on. We aim to have these blocking dialogs enabled in all outbound marketing environments by the end of September 2025. We'll soon start moving some environments into phase three where we hide outbound marketing and then remove it. Outbound marketing environments in tenants with an approved extension won't be affected. Environments with approved extensions may see some warning messages or banners, but we won't take any action while the extension is in place. For more information, see [Transition overview](transition-overview.md) and [Real-time journeys transition FAQs](transition-faqs.md).
 
 #### General availability
 
 - **Simplify forms by filtering choices based on previous answers**
 	- Guiding your customers through a smooth form submission experience is crucial to avoid frustration and abandonment before completion. New form field filtering dynamically adjusts options for one field based on the selection you make in another field, so users see only relevant choices. This feature makes forms simpler to understand and quicker to complete.
-	- [Release plan](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/simplify-forms-filtering-choices-based-previous-answers) 
+	- [Release plan](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/simplify-forms-filtering-choices-based-previous-answers)
 	- [Docs](real-time-marketing-manage-forms.md#filter-a-lookup-field-values-based-on-an-answer-in-a-previous-lookup-field-cascading-lookup-fields)
 
 - **Collect extra customer info without updating your data model**
@@ -56,7 +56,7 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 
 - **Collect extra event attendee information without updating your data model**
 	- You can easily gather extra information about your event attendees by creating any question directly in the form editor without creating new custom attributes for your contact entity. For example, you can create fields to ask, "What is your meal preference?" or "How did you learn about this event?" You can also create contest questions to increase customer engagement and gather valuable insights that help you personalize the attendee experience.
-	- [Release plan](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/collect-extra-event-attendee-information-without-updating-data-model) 
+	- [Release plan](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/collect-extra-event-attendee-information-without-updating-data-model)
 	- [Docs](create-unmapped-fields-registration-forms.md)
 
 - **View Customer Insights - Data profile interactions on the timeline**
@@ -86,7 +86,7 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 	- [Release plan](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/create-event-portal-own-website)
 	- [Docs](cancel-registration.md)
 
- #### New blogs and scenario docs
+#### New blogs and scenario docs
 
 Learn how to make the most of the new Dynamics 365 Customer Insights features in our latest blogs and scenario docs:
 
