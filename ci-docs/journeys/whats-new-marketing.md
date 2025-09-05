@@ -1,11 +1,11 @@
 ---
 title: New and upcoming features
 description: Discover the latest features, improvements, and bug fixes in Dynamics 365 Customer Insights - Journeys. Stay updated with our monthly release notes.
-ms.date: 08/08/2025
+ms.date: 09/05/2025
 ms.update-cycle: 180-days
 ms.topic: whats-new
-author: colinbirkett
-ms.author: colinbirkett
+author: alfergus
+ms.author: alfergus
 ms.collection: bap-ai-copilot
 ms.custom:
   - ai-gen-docs-bap
@@ -26,11 +26,77 @@ Customer Insights - Journeys updates are [pushed to customers automatically](htt
 
 To submit and vote on **feature requests** and **product suggestions**, go to the [Dynamics 365 Application Ideas portal](https://experience.dynamics.com/ideas/categories/?forum=dfa5b83d-9e4c-e811-a956-000d3a1bef07&forumName=Dynamics%20365%20Marketing).
 
+### September 2025 update
+
+| App              | GA release      |
+|------------------|-----------------|
+| Customer Insights - Journeys | 1.1.58607.69 |
+
+#### Real-time journeys transition
+
+- **Outbound marketing will be hidden and then removed**
+	- As explained in [What will happen after June 30, 2025? Will outbound marketing stop working?](transition-faqs.md#what-will-happen-after-june-30-2025-will-outbound-marketing-stop-working), outbound marketing removal is following a phased approach. We're currently in phase two where we are gradually enabling non-dismissible message dialogs when users try to create outbound marketing assets such as journeys, emails, segments, and so on. We aim to have these blocking dialogs enabled in all outbound marketing environments by the end of September 2025. We'll soon start moving some environments into phase three where we hide outbound marketing and then remove it. Outbound marketing environments in tenants with an approved extension won't be affected. Environments with approved extensions may see some warning messages or banners, but we won't take any action while the extension is in place. For more information, see [Transition overview](transition-overview.md) and [Real-time journeys transition FAQs](transition-faqs.md).
+
+#### General availability
+
+- **Simplify forms by filtering choices based on previous answers**
+	- Guiding your customers through a smooth form submission experience is crucial to avoid frustration and abandonment before completion. New form field filtering dynamically adjusts options for one field based on the selection you make in another field, so users see only relevant choices. This feature makes forms simpler to understand and quicker to complete.
+	- [Release plan](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/simplify-forms-filtering-choices-based-previous-answers)
+	- [Docs](real-time-marketing-manage-forms.md#filter-a-lookup-field-values-based-on-an-answer-in-a-previous-lookup-field-cascading-lookup-fields)
+
+- **Collect extra customer info without updating your data model**
+	- You can easily gather extra information about your customers by creating any kind of question directly in the marketing form editor without needing to create new custom attributes for your lead or contact entity. For example, you can create fields to ask, “How did you hear about our products?” or create contest questions to increase your customer satisfaction and retention.
+	- [Release plan](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/collect-extra-customer-information-without-creating-custom-attributes) 
+	- [Docs](real-time-marketing-forms-custom-fields.md)
+
+- **Generate leads that link to an existing contact**
+	- Your business has unique ways of organizing customer data and classifying potential leads. Now, with real-time journey forms, you can manage your contacts and leads more effectively according to your company's established processes. For example, you can recognize existing customers who fill out a lead form, so they're not mistaken for new leads.
+	- [Release plan](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/generate-leads-that-link-existing-contact) 
+	- [Docs](real-time-marketing-manage-forms.md#parent-contact-for-lead)
+
+- **Collect extra event attendee information without updating your data model**
+	- You can easily gather extra information about your event attendees by creating any question directly in the form editor without creating new custom attributes for your contact entity. For example, you can create fields to ask, "What is your meal preference?" or "How did you learn about this event?" You can also create contest questions to increase customer engagement and gather valuable insights that help you personalize the attendee experience.
+	- [Release plan](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/collect-extra-event-attendee-information-without-updating-data-model)
+	- [Docs](create-unmapped-fields-registration-forms.md)
+
+- **View Customer Insights - Data profile interactions on the timeline**
+	- The timeline lets you see detailed information for a contact or lead by tracking marketing, sales, and service interactions over time in a single stream. If you orchestrate journeys that target Customer Insights - Data customer profiles, you can now see marketing interactions like emails sent, forms submitted, and website visits on the connected contact timeline. With this update, teams across the organization get a complete overview of marketing interactions relevant to their work. Sales representatives can review marketing touchpoints—including eBook downloads and email clicks—to refine their outreach strategies, and service agents can reference recent interactions to manage escalations and support inquiries.
+	- [Docs](timeline.md)
+
+#### Public preview
+
+- **Automate scalable journey creation with the journey API**
+	- With the new journey API, you can now automate journey creation by using templates, existing segments, and messages. For example, a team managing global events can programmatically generate hundreds of localized journey variants, each tailored by language, time zone, and audience segment, without manually configuring each one.
+	- [Release plan](/dynamics365/release-plan/2025wave2/customer-insights/dynamics365-customer-insights-journeys/automate-scalable-journey-creation-journey-api) 
+	- [Docs](./developer/create-journey-template-api.md)
+
+#### Monthly enhancements
+
+- **Using the events API in real-time journeys**
+	- Events play a pivotal role in your business strategy by helping you acquire and engage customers. Your clients need a centralized location where they can discover and learn about the events you organize. The events API is a programmatic method to access data of events, sessions, session tracks, passes, speakers, and sponsorships, which enables you to quickly create a comprehensive hub where customers can access important event details and register.
+
+        With this enhancement, we have extended the existing API with the following capabilities: 
+    1. Check in endpoint
+    1. Event QR code endpoint
+    1. Registrations count and session registrations count endpoint 
+    1. Ability to retrieve list of sessions
+    1. Ability to retrieve list of speakers
+    1. Ability to retrieve list of sponsors and their logos
+    1. Ability to submit registration via API
+	- [Release plan](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/create-event-portal-own-website)
+	- [Docs](cancel-registration.md)
+
+#### New blogs and scenario docs
+
+Learn how to make the most of the new Dynamics 365 Customer Insights features in our latest blogs and scenario docs:
+
+- [Filter cities by selected country/region in Customer Insights - Journeys forms](real-time-marketing-filter-cities-by-country-region.md)
+
 ### August 2025 update
 
 | App              | GA release      |
 |------------------|-----------------|
-| Customer Insights - Journeys       |  1.1.57027.56 |
+| Customer Insights - Journeys       |  1.1.57638.58 |
 
 > [!IMPORTANT]
 > On **August 4, 2025**, the Dynamics 365 Customer Insights - Journeys services public IP addresses were updated in all regions.
