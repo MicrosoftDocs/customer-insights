@@ -1,7 +1,7 @@
 ---
 title: Manage environments
 description: Learn how to to manage environments as an admin.
-ms.date: 09/26/2024
+ms.date: 09/09/2025
 ms.topic: how-to
 ms.reviewer: mhart
 author: Scott-Stabbert

@@ -4,7 +4,7 @@ description: An overview of help resources to get started quickly.
 ms.reviewer: alfergus
 author: Scott-Stabbert
 ms.author: sstabbert
-ms.date: 06/24/2024
+ms.date: 09/09/2025
 ms.topic: how-to
 ms.custom: bap-template
 ---

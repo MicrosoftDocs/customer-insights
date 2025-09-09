@@ -1,7 +1,7 @@
 ---
 title: "Connect to a Power Query data source"
 description: "Ingest data through a Power Query connector."
-ms.date: 04/29/2025
+ms.date: 09/09/2025
 ms.reviewer: v-wendysmith
 ms.topic: how-to
 author: Scott-Stabbert

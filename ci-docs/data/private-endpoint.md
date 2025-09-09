@@ -1,7 +1,7 @@
 ---
 title: Connect to storage accounts behind firewalls
 description: 'Storage account firewall: Learn how to connect Customer Insights – Data to Azure Data Lake Storage accounts behind firewalls using private endpoints for secure access.'
-ms.date: 08/13/2025
+ms.date: 09/09/2025
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
