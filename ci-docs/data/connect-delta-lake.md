@@ -107,7 +107,7 @@ Once you've saved the data source, you can't go back and add more tables. To add
 
 If a column is added or removed from the schema of a Delta folders data source, the system runs a complete refresh of the data. Full refreshes take longer to process all the data than incremental refreshes.
 
-If updates to columns, column names, and column data types occur in the schema of a Delta folders data source, a schema mismatch or data mismatch error appears. The error asks you to update the data source connection. These errors can be seen in the task details.
+If the schema of the source data is changed after creating the data source connection, a schema mismatch or data mismatch error appears asking you to update the data source connection. The error "The columns in the source data have changed" shows in the task details. Schema changes include updates to columns, column names, and column data types.
 
 ### Update a data source when the schema changes
 
