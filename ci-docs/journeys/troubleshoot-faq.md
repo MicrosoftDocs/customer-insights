@@ -1,7 +1,7 @@
 ---
 title: Frequently asked questions for Dynamics 365 Customer Insights - Journeys - General
 description: Learn about general FAQs for Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/23/2023
+ms.date: 09/09/2025
 ms.topic: troubleshooting
 author: alfergus
 ms.author: alfergus

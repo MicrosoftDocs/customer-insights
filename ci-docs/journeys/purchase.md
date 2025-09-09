@@ -1,7 +1,7 @@
 ---
 title: Purchase Dynamics 365 Customer Insights
 description: Learn how to purchase Dynamics 365 Customer Insights, including licensing options and installation steps.
-ms.date: 12/16/2024
+ms.date: 09/09/2025
 ms.topic: article
 author: alfergus
 ms.author: alfergus

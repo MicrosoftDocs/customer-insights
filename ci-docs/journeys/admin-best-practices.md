@@ -1,7 +1,7 @@
 ---
 title: Best practices for administration
 description: Learn about best practices for Dynamics 365 Customer Insights - Journeys administration and management.
-ms.date: 05/01/2024
+ms.date: 09/09/2025
 ms.custom:
   - dyn365-admin
   - dyn365-marketing

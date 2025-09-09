@@ -1,7 +1,7 @@
 ---
 title: Customer Insights license guidance
 description: 'Customer Insights licensing: Learn how to buy, manage, and monitor Dynamics 365 Customer Insights licenses, entitlements, and quotas. Get answers to common questions.'
-ms.date: 06/13/2025
+ms.date: 09/09/2025
 ms.topic: article
 author: alfergus
 ms.author: alfergus

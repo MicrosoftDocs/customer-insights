@@ -1,7 +1,7 @@
 ---
 title: Give consent to use Copilot in Customer Insights - Journeys
 description: Learn to enable Copilot in Customer Insights - Journeys. Follow steps to give consent for AI features, data sharing, and cross-geography data flow.
-ms.date: 11/22/2024
+ms.date: 09/09/2025
 ms.update-cycle: 180-days
 ms.topic: how-to
 author: alfergus
