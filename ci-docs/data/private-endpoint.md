@@ -46,6 +46,7 @@ When you create a data connection and select “This storage account is behind a
     > - **SubscriptionBasedTrial**: Trial environments are restricted and lack support for advanced features like VNet injection.
     > - **Platform**: Internal system environments not intended for customer workloads.
     > - **Developer**: Intended for individual use and learning; lacks enterprise-grade features.
+    >
     > Unsupported environments return an error stating, "NewNetworkInjection cannot be performed on environment of type `<unsupported environment>`."
 - Minimum role requirements:
   - **Customer Insights – Data**: Admin (needed to create data connections).
