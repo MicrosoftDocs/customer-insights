@@ -1,7 +1,7 @@
 ---
 title: Connect to storage accounts behind firewalls
 description: 'Storage account firewall: Learn how to connect Customer Insights – Data to Azure Data Lake Storage accounts behind firewalls using private endpoints for secure access.'
-ms.date: 08/13/2025
+ms.date: 09/09/2025
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -40,7 +40,13 @@ When you create a data connection and select “This storage account is behind a
 
 ### Prerequisites to enable Azure Virtual Network support for Power Platform
 
-- The Power Platform environment associated with Customer Insights – Data needs to be a Managed Environment.
+- The Power Platform environment associated with Customer Insights – Data needs to be a **Managed Environment**.
+    > [!IMPORTANT]
+    > The following environment types aren't supported:
+    > - **SubscriptionBasedTrial**: Trial environments are restricted and lack support for advanced features like VNet injection.
+    > - **Platform**: Internal system environments not intended for customer workloads.
+    > - **Developer**: Intended for individual use and learning; lacks enterprise-grade features.
+    > Unsupported environments return an error stating, "NewNetworkInjection cannot be performed on environment of type <unsupported environment>."
 - Minimum role requirements:
   - **Customer Insights – Data**: Admin (needed to create data connections).
   - **Power Platform**: Admin (needed to set up the Power Platform environment).
