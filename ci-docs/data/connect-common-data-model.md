@@ -190,7 +190,7 @@ You can update the *Connect to storage account using* option. For more informati
 
 ## Update a data source when the schema changes
 
-If the schema of the source data is changed after creating the data source connection, a schema mismatch or data mismatch error appears asking you to update the data source connection. These errors can be seen in the task details. Schema changes include updates to columns, column names, and column data types.
+If the schema of the source data is changed after creating the data source connection, a schema mismatch or data mismatch error appears asking you to update the data source connection. The error "The columns in the source data have changed" shows in the task details. Schema changes include updates to columns, column names, and column data types.
 
 1. Go to **Data** > **Data sources**. Select **Edit** next to the data source with the errors. Then, select **Next**.
 
