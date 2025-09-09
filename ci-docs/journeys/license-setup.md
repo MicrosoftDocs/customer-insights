@@ -1,7 +1,7 @@
 ---
 title: Customer Insights license guidance
 description: 'Customer Insights licensing: Learn how to buy, manage, and monitor Dynamics 365 Customer Insights licenses, entitlements, and quotas. Get answers to common questions.'
-ms.date: 06/13/2025
+ms.date: 09/09/2025
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -43,7 +43,7 @@ Depending on how you acquire your license, there are different pathways to get t
 As stated in the published Dynamics 365 license guide, Customer Insights - Journeys and Customer Insights - Data are tenant-level licenses, which means that all meters associated with the licenses are summed at the tenant level across any environment of any type (sandbox, production, trial) that's using the application on a given tenant. To monitor your tenant-level usage:
 - For Customer Insights - Journeys, go to **Settings** > **Quota Limits** where you can see the total tenant-level entitled interacted people and monthly interactions as well as how much has been used on the environment you are on and all **other** environments on the tenant.
 - For Customer Insights - Data, visit each environment on the tenant and sum the total count of **Customers** in each environment. You can visit each environment using the environment switcher in the upper right corner.
-- For Dataverse and other platform-related meters, visit **Power Platform Admin Center** > **Capacity**.
+- For Dataverse and other platform-related meters, visit [**Power Platform admin center**](https://admin.powerplatform.microsoft.com/) > **Licensing** > **Capacity add-ons**.
 
 ### Purchase guidance for Dynamics 365 Customer Insights
 
@@ -79,7 +79,7 @@ As stated in the published Dynamics 365 license guide, Customer Insights - Journ
 
 ### Licenses vs. applications
 
-As of September 2023, application installation licenses are counted at the tenant level. Prior to this change, with the Dynamics 365 Marketing standalone license and installation model, each license was tightly bound to an environment to enforce the use of one license per environment. As of September 2023, this tight binding has been removed to accommodate both the old Dynamics 365 Marketing standalone license model and the new Dynamics 365 Customer Insights license model. Licenses are counted at the tenant level and displayed in the installation quota at the top of the installation management page. Also with this change, listings of the licenses in the **Power Platform Admin Center** under **Resources** > **Dynamics 365 Apps** are only a means to open the installation management page and always show as nonconfigured.
+As of September 2023, application installation licenses are counted at the tenant level. Prior to this change, with the Dynamics 365 Marketing standalone license and installation model, each license was tightly bound to an environment to enforce the use of one license per environment. As of September 2023, this tight binding has been removed to accommodate both the old Dynamics 365 Marketing standalone license model and the new Dynamics 365 Customer Insights license model. Licenses are counted at the tenant level and displayed in the installation quota at the top of the installation management page. Also with this change, listings of the licenses in the **Power Platform admin center** under **Licensing** are only a means to open the installation management page and always show as nonconfigured.
 
 ## Licensing FAQs
 
@@ -110,7 +110,7 @@ No, the quota is at the tenant level. While each environment drives consumption,
 
 Buy enough quota to cover the highest usage you expect in any month. The quota gives you the right scale and performance to support your highest volume.
 
-### Why do I see so many listings of Dynamics 365 Marketing in Power Platform Admin Center > Resources > Dynamics 365 apps?
+### Why do I see so many listings of Dynamics 365 Marketing in Power Platform admin center > Manage > Dynamics 365 apps?
 
 Each time you create a self-service trial, a license is created and isn't removed. As of September 2023, these listings only let you open the installation page through the **Manage** option.
 

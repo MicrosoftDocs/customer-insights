@@ -1,8 +1,8 @@
 ---
 title: Migrate dataflows for Power Query-based data sources.
 description: Learn how to upgrade dataflows when your Power Query data sources are upgraded.
-ms.date: 09/01/2023
-ms.reviewer: mhart
+ms.date: 09/09/2025
+ms.reviewer: alfergus
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -52,3 +52,5 @@ A temporary data source with a similar name may show under **Administration** > 
 
 - [Connect to a Power Query data source](connect-power-query.md)
 - [Data sources overview](data-sources.md)
+
+[!INCLUDE [footer-include](includes/footer-banner.md)]

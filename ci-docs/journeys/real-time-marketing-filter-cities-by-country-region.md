@@ -1,7 +1,7 @@
 ---
 title: Filter cities by country/region in Customer Insights - Journeys forms
 description: 'Customer Insights - Journeys forms: Filter city options by country/region for faster, more accurate submissions. Learn how to set up filtered lookups.'
-ms.date: 08/26/2025
+ms.date: 09/09/2025
 ms.update-cycle: 180-days
 ms.topic: how-to
 author: petrjantac
@@ -94,7 +94,8 @@ To use your new country/region and city lookup fields in forms for contact or le
 
 To make sure users visiting your form can see the options in the country/region and city lookup fields, grant read access to the entities through the appropriate security role.
 
-1. Go to the [**Power Platform Admin Center**](https://admin.powerplatform.microsoft.com).
+1. Go to the [**Power Platform admin center**](https://admin.powerplatform.microsoft.com).
+1. Go to **Manage** > **Environments**.
 1. Select the environment where your form and entities are located.
 1. Go to **Settings** > **Users + Permissions** > **Security Roles**.
 1. Find and open the **Marketing Services User Extensible Role**.

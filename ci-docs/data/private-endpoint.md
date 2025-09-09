@@ -1,7 +1,7 @@
 ---
 title: Connect to storage accounts behind firewalls
 description: 'Storage account firewall: Learn how to connect Customer Insights – Data to Azure Data Lake Storage accounts behind firewalls using private endpoints for secure access.'
-ms.date: 08/13/2025
+ms.date: 09/09/2025
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -52,12 +52,12 @@ Create private endpoints in Azure before you set up data connections in Customer
 
 **Power Platform administrator**
 
-- Runs the "prepare" script to check the Power Platform region and create steps for the Azure admin to follow.
+- Runs the "prepare" script to check the Power Platform region and create steps for the Azure administrator to follow.
 - The "prepare" script doesn't change the environment.
 
 **Azure administrator**
 
-- Runs scripts with the information from the Power Platform admin to create resources (resource groups, virtual network, subnet) and lets Power Platform request IP addresses from the subnets. This is a one-time task.
+- Runs scripts with the information from the Power Platform administrator to create resources (resource groups, virtual network, subnet) and lets Power Platform request IP addresses from the subnets. This is a one-time task.
 - Manually creates private endpoints in `https://portal.azure.com` for each storage account.
 
 **Power Platform administrator**
@@ -82,7 +82,7 @@ To open the **Update private links** dialog, select the **See details** button.
 Once in the dialog, to update legacy private links:
 
 1. Select **Copy storage accounts information** to copy details to the clipboard.
-1. Send the copied details to your Power Platform admin and Azure admin, and ask them to create private endpoints. Wait for confirmation that the private endpoints are set up before you continue.
+1. Send the copied details to your Power Platform administrator and Azure administrator, and ask them to create private endpoints. Wait for confirmation that the private endpoints are set up before you continue.
 1. After you get confirmation that the resources are ready, select **Attempt connections update** in step two of this dialog to set up Customer Insights – Data to use the new private endpoints.
 1. When all connections show **Completed**, the update is finished.
 
@@ -98,14 +98,14 @@ Once in the dialog, to update legacy private links:
 
 1. **Required**: Check that the Power Platform environment is managed.
     1. Sign in to `https://admin.powerplatform.com`.
-    1. In Environment settings, make sure **Managed environments** is set to **Yes**. See [Managed Environments overview](/power-platform/admin/managed-environment-overview).
+    1. In environment settings, make sure **Managed environments** is set to **Yes**. See [Managed Environments overview](/power-platform/admin/managed-environment-overview).
 1. Download and unzip the [Customer Insights - Data script package](https://download.microsoft.com/download/45de4654-6d52-4361-af3c-30d3f3723979/SubnetDelegationSetup%201.zip).
 1. Open PowerShell and run the script `PrepareCIDataPrivateEndpoints.ps1`.
     1. Go to the folder where you unzipped the scripts.
     1. Type `./PrepareCIDataPrivateEndpoints.ps1` and press <kbd>Enter</kbd>.
-    1. When prompted, enter the `EnvironmentID`, storage account name, and `SubscriptionId` provided by your Customer Insights – Data admin.
-1. Copy the output and send it to your Azure admin. They use the details to create private endpoints. Wait for your Azure admin to confirm that the private endpoints are ready before you go to the next step.
-1. After you get confirmation from your Azure admin that private endpoints are created, run the script command `New-SubnetInjectionForPowerPlatformEnv.ps1` you generated in step three to set up your Power Platform to use the new private endpoints. This step includes your `SubscriptionId` and `EnvironmentId` as input parameters.
+    1. When prompted, enter the `EnvironmentID`, storage account name, and `SubscriptionId` provided by your Customer Insights – Data administrator.
+1. Copy the output and send it to your Azure administrator. They use the details to create private endpoints. Wait for your Azure administrator to confirm that the private endpoints are ready before you go to the next step.
+1. After you get confirmation from your Azure administrator that private endpoints are created, run the script command `New-SubnetInjectionForPowerPlatformEnv.ps1` you generated in step three to set up your Power Platform to use the new private endpoints. This step includes your `SubscriptionId` and `EnvironmentId` as input parameters.
 
 > [!NOTE]
 > - Ignore the standard warning about verbs that aren't discoverable.
@@ -117,12 +117,12 @@ Once in the dialog, to update legacy private links:
 
 ## Azure administrator steps
 
-After the Azure admin gets the **For Azure admin** details from the Power Platform admin, they create the resources and private endpoints for the secured storage accounts that Customer Insights – Data needs to use.
+After the Azure administrator gets the **For Azure admin** details from the Power Platform administrator, they create the resources and private endpoints for the secured storage accounts that Customer Insights – Data needs to use.
 
-### Azure admin creates resources by using scripts
+### Azure administrator creates resources by using scripts
 
-1. Download and extract the [Customer Insights - Data script package](https://download.microsoft.com/download/45de4654-6d52-4361-af3c-30d3f3723979/SubnetDelegationSetup%201.zip). This link is the same as the scripts the Power Platform admin downloads.
-1. Launch PowerShell and run the **Setup-SubnetDelegationForCiData.ps1** command your Power Platform admin gives you. Enter your `SubscriptionId` and Power Platform region.
+1. Download and extract the [Customer Insights - Data script package](https://download.microsoft.com/download/45de4654-6d52-4361-af3c-30d3f3723979/SubnetDelegationSetup%201.zip). This link is the same as the scripts the Power Platform administrator downloads.
+1. Launch PowerShell and run the **Setup-SubnetDelegationForCiData.ps1** command your Power Platform administrator gives you. Enter your `SubscriptionId` and Power Platform region.
 
     When the script runs, it shows you values to enter. For example, you see a message like the following:  
 
@@ -145,11 +145,11 @@ After the Azure admin gets the **For Azure admin** details from the Power Platfo
     - Creates an enterprise policy that lets Power Platform find the subnets delegated to it.
 1. Manually create private endpoints.
     1. Sign in to Azure portal.
-    1. Use the storage account details your Power Platform admin gives you to manually create private endpoints.
+    1. Use the storage account details your Power Platform administrator gives you to manually create private endpoints.
 
-### Azure admin creates private endpoints manually
+### Azure administrator creates private endpoints manually
 
-Use the **For Azure Admin** details your Power Platform admin gives you to manually create private endpoints for each storage account.
+Use the **For Azure Admin** details your Power Platform administrator gives you to manually create private endpoints for each storage account.
 
 - Each storage account needs at least two private endpoints: one for the blob service and one for the DFS service.
 - If your Power Platform region has primary and secondary Azure regions, create four private endpoints for each storage account: a blob and DFS private endpoint in each Azure region.

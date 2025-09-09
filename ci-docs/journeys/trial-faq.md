@@ -1,7 +1,7 @@
 ---
 title: Customer Insights - Journeys trial FAQ
 description: Solutions to common questions related to Dynamics 365 Customer Insights trial setup and management. Learn how to resolve platform and app-specific issues.
-ms.date: 05/23/2025
+ms.date: 09/09/2025
 ms.topic: get-started
 ms.custom: template-trial-faq
 author: alfergus
@@ -25,7 +25,7 @@ The following are frequently asked questions about Customer Insights - Journeys 
 
 ### Can I convert the trial to a paid license?
 
-To buy a license directly, go to **admin.microsoft.com** > **Purchase Services** and search for "Customer Insights." Once you have the license, you can convert the trial environment for Customer Insights - Journeys to a paid environment in the Power Platform Admin center by selecting the environment and selecting **Convert to Production**. This changes the environment type from "Trial" to "Production."
+To buy a license directly, go to **admin.microsoft.com** > **Purchase Services** and search for "Customer Insights." Once you have the license, you can convert the trial environment for Customer Insights - Journeys to a paid environment in the Power Platform admin center by selecting the environment and selecting **Convert to Production**. This changes the environment type from "Trial" to "Production."
 
 There are additional steps if you also used Customer Insights - Data and want to preserve your work from that trial. Visit [Customer Insights - Data Trial FAQ](../data/trial-faq.md) for details on how to preserve your configurations from the Customer Insights - Data trial in the production environment.
 

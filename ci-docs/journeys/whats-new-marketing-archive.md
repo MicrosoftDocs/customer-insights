@@ -970,7 +970,7 @@ Learn how to make the most of the new Dynamics 365 Customer Insights - Journeys 
 
 ### April 2023 update
 
-The April release marks the availability of many [2023 release wave 1](/dynamics365/release-plan/2023wave1/marketing/dynamics365-marketing/planned-features) features. General availability features include a simplified email editor, new email templates, send now email functionality, modernized forms for Customer Insights - Journeys, extending recipient lists with carbon copies, message frequency limits, UTM tagging, contact insights for Customer Insights - Journeys, one-to-many relationships for personalization, sample audience data for email previews, business units for Customer Insights - Journeys, and the ability to change your organization URL in the Power Platform Admin Center.
+The April release marks the availability of many [2023 release wave 1](/dynamics365/release-plan/2023wave1/marketing/dynamics365-marketing/planned-features) features. General availability features include a simplified email editor, new email templates, send now email functionality, modernized forms for Customer Insights - Journeys, extending recipient lists with carbon copies, message frequency limits, UTM tagging, contact insights for Customer Insights - Journeys, one-to-many relationships for personalization, sample audience data for email previews, business units for Customer Insights - Journeys, and the ability to change your organization URL in the Power Platform admin center.
 
 Monthly enhancements include tracking of unique opens and clicks, attachment support for custom channels, and extended regional availability for query assist.
 
@@ -1065,8 +1065,8 @@ Monthly enhancements include tracking of unique opens and clicks, attachment sup
     - [Release plan](/dynamics365/release-plan/2023wave1/marketing/dynamics365-marketing/scale-business-effortlessly-define-access-marketing-assets)
     - [Docs](real-time-marketing-business-units.md)
 
-- **Dynamics 365 Customer Insights - Journeys now supports changing the organization URL in Power Platform Admin Center**
-    - People often want to change the URL of the Customer Insights - Journeys application to a branded name which is easy to remember. This has been supported for some time in the Power Platform Admin Center, but was not previously supported by the Dynamics 365 Customer Insights - Journeys application. With this release, you can now change the organization URL in Power Platform Admin Center and the Customer Insights - Journeys application continues to work without side effects.
+- **Dynamics 365 Customer Insights - Journeys now supports changing the organization URL in Power Platform admin center**
+    - People often want to change the URL of the Customer Insights - Journeys application to a branded name which is easy to remember. This has been supported for some time in the Power Platform admin center, but was not previously supported by the Dynamics 365 Customer Insights - Journeys application. With this release, you can now change the organization URL in Power Platform admin center and the Customer Insights - Journeys application continues to work without side effects.
     - [Docs](copy-or-restore.md#change-the-url-for-an-environment-with-customer-insights---journeys-or-outbound-marketing-installed)
 
 #### Monthly enhancements
@@ -2982,7 +2982,7 @@ The Dynamics 365 Customer Insights - Journeys October 2020 update includes sever
 - **Event management**
     - Fixed an error that cause event end dates and messages to be improperly handled in PublicAPI and websites.
 - **First run experience**
-    - Fixed an issue where "Update available" for Dynamics 365 Customer Insights - Journeys erroneously appeared in the Power Platform Admin Center.
+    - Fixed an issue where "Update available" for Dynamics 365 Customer Insights - Journeys erroneously appeared in the Power Platform admin center.
     - Fixed an issue where the setup wizard allowed more than 24 characters for the Portals host name.
 - **Lead management**
     - Addressing [user feedback](https://experience.dynamics.com/ideas/idea/?ideaid=1c121690-48b2-ea11-8b71-0003ff68c1c4), lead scores for new lead scoring models are now reset and recalculated when the underlying entity record is modified.
