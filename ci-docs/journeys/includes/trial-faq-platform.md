@@ -10,7 +10,7 @@ You can enter a non-work email address and we'll create an account and tenant fo
 
 ### Can I sign up for trial using a personal email ID that's not associated with a Microsoft account?<a name="personalemail"></a>
 
-You can use a personal email ID. But you won't be able to access Power Platform admin center to add more users to the trial, change security roles, or extend the trial period.
+You can use a personal email ID, but you won't be able to access Power Platform admin center to add more users to the trial, change security roles, or extend the trial period.
 
 ### Can I sign up for multiple Dynamics 365 apps such as Sales, Customer Insights - Journeys, and Customer Service?
 
@@ -43,7 +43,7 @@ You can extend the trial for another trial period in the admin center. For instr
 
 ### How do I cancel the trial?
 
-If you have signed up for the trial using a managed Microsoft Entra ID account, you can request your Power Platform admin to [delete the trial environment](/power-platform/admin/delete-environment). If you have signed up using your personal account, you can't cancel the trial manually. The trial will expire after the 30-day trial period and the trial environment will be automatically deleted. 
+If you have signed up for the trial using a managed Microsoft Entra ID account, you can request your Power Platform admin to [delete the trial environment](/power-platform/admin/delete-environment). If you have signed up using your personal account, you can't cancel the trial manually. The trial will expire after the 30-day trial period and the trial environment will be automatically deleted.
 
 > [!NOTE]
 > Azure Active Directory is now Microsoft Entra ID. [Learn more](/azure/active-directory/fundamentals/new-name)

@@ -1,7 +1,7 @@
 ---
 title: Manage environments
 description: Learn how to to manage environments as an admin.
-ms.date: 09/26/2024
+ms.date: 09/09/2025
 ms.topic: how-to
 ms.reviewer: mhart
 author: Scott-Stabbert
@@ -122,7 +122,7 @@ The reset operation assigns a new instance ID to your environment. Therefore, up
 
 As the owner of an environment, you can delete it.
 
-We recommend to [use the **Uninstall** option Power Platform admin center](../journeys/setup.md) to decommission a Customer Insights - Data environment.
+We recommend to [use the **Uninstall** option in the Power Platform admin center](../journeys/setup.md) to decommission a Customer Insights - Data environment.
 
 1. Select the **Environment** picker in the header of the app.
 

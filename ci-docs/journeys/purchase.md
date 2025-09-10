@@ -1,7 +1,7 @@
 ---
 title: Purchase Dynamics 365 Customer Insights
 description: Learn how to purchase Dynamics 365 Customer Insights, including licensing options and installation steps.
-ms.date: 12/16/2024
+ms.date: 09/09/2025
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -63,13 +63,13 @@ If you plan to use SMS, you must select a provider (such as Azure Communication 
 
 ### Step 4: Add Customer Insights to your Microsoft 365 tenant
 
-There are several ways to acquire a Customer Insights license. You can purchase a license from the [Dynamics 365 Customer Insights overview page](https://dynamics.microsoft.com/marketing/overview/). Or, you can go to **Billing** > **Purchase services** in your Microsoft 365 admin center. You can also purchase a license by contacting your Microsoft sales representative or channel partner. After you've purchased a license and it's added to your tenant, you’ll find it in the Power Platform Admin Center under **Resources** > **Dynamics 365 apps**.
+There are several ways to acquire a Customer Insights license. You can purchase a license from the [Dynamics 365 Customer Insights overview page](https://dynamics.microsoft.com/marketing/overview/). Or, you can go to **Billing** > **Purchase services** in your Microsoft 365 admin center. You can also purchase a license by contacting your Microsoft sales representative or channel partner. After you've purchased a license and it's added to your tenant, you’ll find it in the Power Platform admin center under **Manage** > **Dynamics 365 apps**.
 
-You can have any number of Customer Insights licenses available on your tenant. Licenses translate to "apps" listed in the Power Platform Admin Center. Even old, expired trial licenses have records listed in the Power Platform Admin Center. You can access the installation management experience for any of these apps in the Power Platform Admin Center under **Resources** > **Dynamics 365 apps**. The app listing under **Dynamics 365 apps** is just a means to access the management page; it doesn't represent anything else.
+You can have any number of Customer Insights licenses available on your tenant. Licenses translate to "apps" listed in the Power Platform admin center. Even old, expired trial licenses have records listed in the Power Platform admin center. You can access the installation management experience for any of these apps in the Power Platform admin center under **Manage** > **Dynamics 365 apps**. The app listing under **Dynamics 365 apps** is just a means to access the management page; it doesn't represent anything else.
 
-Once a paid license has been applied to your tenant, it can take up to 24 hours to sync with the Dynamics 365 licensing system and be available for installation. To see your licenses in the Microsoft Admin Center, go to **Your products**. They won't show up under **Licenses** because they're tenant-level application licenses, not assignable seat-based licenses where you pay per user. Only pay-per-user, seat-based licenses are shown on the "Licenses" page.
+Once a paid license has been applied to your tenant, it can take up to 24 hours to sync with the Dynamics 365 licensing system and be available for installation. To see your licenses in the Microsoft admin center, go to **Your products**. They won't show up under **Licenses** because they're tenant-level application licenses, not assignable seat-based licenses where you pay per user. Only pay-per-user, seat-based licenses are shown on the "Licenses" page.
 
-To see your license in the Power Platform Admin Center, if you don't have a global tenant, you must select the geography that matches the home tenant geography on which the license was installed. For example, if the tenant home geo is Canada, you'll only see the license in the Power Platform Admin Center when you select Canada. To see the license in all geographies regardless of the tenant's home geography, Microsoft support or a Microsoft product manager must convert your tenant to a multi-geo tenant.
+To see your license in the Power Platform admin center, if you don't have a global tenant, you must select the geography that matches the home tenant geography on which the license was installed. For example, if the tenant home geo is Canada, you'll only see the license in the Power Platform admin center when you select Canada. To see the license in all geographies regardless of the tenant's home geography, Microsoft support or a Microsoft product manager must convert your tenant to a multi-geo tenant.
 
 ## Next steps
 
