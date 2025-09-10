@@ -1,7 +1,7 @@
 ---
 title: "Create a new environment"
 description: Steps to create environments in Dynamics 365 Customer Insights.
-ms.date: 01/06/2025
+ms.date: 09/10/2025
 ms.reviewer: mhart
 ms.topic: how-to
 author: Scott-Stabbert
@@ -11,7 +11,7 @@ ms.custom: bap-template
 
 # Create a new environment
 
-After [your organization purchased a license for Dynamics 365 Customer Insights](paid-license.md), the administrator of the Microsoft 365 tenant receives an email that invites them to create an environment and [add users from their organization as administrators](permissions.md). These administrators can then manage users and Customer Insights environments.
+After [your organization purchased a license for Dynamics 365 Customer Insights](paid-license.md), the administrator of the Microsoft 365 tenant receives an email that invites them to create an environment and [add users from their organization as administrators](permissions.md). These administrators can then manage users and Customer Insights environments. A user assigned the Administrator role in Customer Insights - Data is automatically assigned the System Administrator role in the Dataverse environment. A System Administrator role is required to create, manage, and delete Power Platform dataflow connections.
 
 > [!IMPORTANT]
 > In most cases, installing Customer Insights - Data should be done through [Power Platform admin center](../journeys/setup.md).
