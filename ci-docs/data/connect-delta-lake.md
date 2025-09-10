@@ -1,7 +1,7 @@
 ---
 title: "Connect to Delta tables in Azure Data Lake Storage"
 description: "Work with data stored in Delta tables from Azure Data Lake Storage."
-ms.date: 09/04/2025
+ms.date: 09/05/2025
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -19,7 +19,9 @@ Connect to data in Delta tables and bring it into Dynamics 365 Customer Insights
 
 ## Supported Databricks features and versions
 
-Customer Insights - Data supports Databricks features with a 'minReaderVersion' of 2 or earlier. Databricks features that require Databricks reader version 3 or later aren't supported. The table shows the supported and unsupported Databricks features.
+Customer Insights - Data supports Databricks features with a 'minReaderVersion' of 2 or earlier. Databricks features that require Databricks reader version 3 or higher aren't supported. If the data source connection attempts to read a table with an unsupported feature, the following error appears: "Unable to read Delta tables (A, B, C, D). Unsupported Delta reader versions (X, Y, Y, X) found."
+
+The table shows the supported and unsupported Databricks features.
 
 | Supported features  | Unsupported features |
 | ------------------- | -------------------- |
@@ -107,7 +109,7 @@ Once you've saved the data source, you can't go back and add more tables. To add
 
 If a column is added or removed from the schema of a Delta folders data source, the system runs a complete refresh of the data. Full refreshes take longer to process all the data than incremental refreshes.
 
-If updates to columns, column names, and column data types occur in the schema of a Delta folders data source, a schema mismatch or data mismatch error appears. The error asks you to update the data source connection. These errors can be seen in the task details.
+If the schema of the source data is changed after creating the data source connection, a schema mismatch or data mismatch error appears asking you to update the data source connection. The error "The columns in the source data have changed" shows in the task details. Schema changes include updates to columns, column names, and column data types.
 
 ### Update a data source when the schema changes
 

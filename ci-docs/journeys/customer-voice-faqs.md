@@ -1,7 +1,7 @@
 ---
 title: Customer Voice FAQs
 description: Frequently asked questions about using Dynamics 365 Customer Voice in the outbound marketing area of Dynamics 365 Customer Insights.
-ms.date: 09/15/2023
+ms.date: 09/09/2025
 ms.update-cycle: 1095-days
 ms.topic: faq
 author: alfergus
@@ -40,7 +40,7 @@ If you don't see the **Survey** tile in the **Toolbox** of your [customer journe
     - Read the license terms and the privacy policy carefully. If you agree with their terms, select the **I agree to the terms of service** check box.
           
 1. Select **Install**. A message at the bottom of the page announces that the installation has successfully started.
-1. To track the installation progress, go back to your Power Platform admin center and open the **Environments** list. Select your environment in the list and then select **Resources** > **Dynamics 365 apps** in the top ribbon.
+1. To track the installation progress, go back to your Power Platform admin center, go to **Manage**, and open the **Environments** list. Select your environment in the list and then select **Resources** > **Dynamics 365 apps** in the top ribbon.
           
     > [!div class="mx-imgBorder"]
     > ![Manage the solutions installed on your environments](media/admin-cv-instances.png)

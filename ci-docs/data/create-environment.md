@@ -36,7 +36,7 @@ To install Customer Insights - Data on an existing Dataverse environment:
 To create a new Dataverse environment when installing Customer Insights - Data:
 
 - You have the [required license and role in Power Platform](/power-platform/admin/create-environment#who-can-create-environments).
-- Your Power Platform admin didn't [disable the creation of Dataverse environments](/power-platform/admin/control-environment-creation) for everyone except admins.
+- Your Power Platform administrator didn't [disable the creation of Dataverse environments](/power-platform/admin/control-environment-creation) for everyone except admins.
 
 ## Create an environment in Customer Insights - Data
 
