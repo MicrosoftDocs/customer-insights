@@ -63,25 +63,6 @@ This table summarizes the types of forms available in real-time journeys.
 | External form submission capture | Capture submissions to existing forms by using [real-time journeys form capture](real-time-marketing-form-capture.md). |
 | Refer to friend | This form type isn't available in real-time journeys. |
 
-## Guidance on specific capabilities
-
-This section gives guidance on capabilities that work differently in real-time journeys or aren't available yet. Capabilities not listed here aren't prioritized. Don't wait for these capabilities. Finish your transition to real-time journeys using alternative approaches.
-
-### Custom unmapped fields
-
-- **Details**: Lets you include fields in a form that aren't connected to any table. Use these fields for temporary information needed only during the current journey, such as meal choices for an event.
-- **Guidance**: This capability is available as a public preview in the March 2025 release. See [Collect extra customer info without updating your data model](https://releaseplans.microsoft.com/?app=Customer+Insights+-+Journeys&planID=3e99e112-28ba-ee11-a569-00224827e905).
-  
-### Cascading form fields, dependent lookups, programmatically set lookup field value
-
-- **Details**: Filter lookup field values based on another selected lookup value. For example, filter the list of cities by the selected country or region. Get or set the lookup value dynamically by using custom JavaScript.
-- **Guidance**: For option set fields, see [Implementing cascading dropdown fields in real-time marketing forms - FastTrack blog](https://community.dynamics.com/blogs/post/?postid=ff86d88f-d892-ef11-ac21-6045bdd7e1ae).
-
-### Don't overwrite existing values with empty submitted values
-
-- **Details**: The form submission updates existing leads or contacts with *all* submitted values, including empty ones. If the user submits a form with an empty phone number field, the existing phone number is replaced with the submitted empty value.
-- **Guidance**: We plan to enhance the form configuration to allow empty fields to optionally overwrite existing nonempty values. You can already mark key fields as required to prevent users from submitting them with empty values. The [form prefill](real-time-marketing-form-prefill.md) feature also helps prevent existing values from being overwritten by empty inputs.
-
 ## Blogs and workarounds
 
 - To create cascading option set fields, see [Implementing cascading dropdown fields in real-time marketing forms - FastTrack blog](https://community.dynamics.com/blogs/post/?postid=ff86d88f-d892-ef11-ac21-6045bdd7e1ae).
