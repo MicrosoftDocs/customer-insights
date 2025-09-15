@@ -104,6 +104,7 @@ Form settings let you set advanced properties for your form and define what happ
 - **Thank you notification**: This message appears when the user submits the form successfully.
 - **Error notification**: This message appears if an error occurs during form submission.
 - **Double opt-in**: If enabled, the [double opt-in](real-time-marketing-double-opt-in.md) email is sent after form submission. To use double opt-in for your form, you need a compliance profile with double opt-in turned on.
+- **Ignore Opt-Outs**: If enabled, the form will not create any opt-out records, even if the user attempts to unsubscribe through the form. [Learn more](#ignore-opt-outs)
 
 ## How to handle duplicate records
 
@@ -130,6 +131,20 @@ Use the **Ignore empty values** toggle to control whether empty form fields over
 
 - If the toggle is **disabled**, the phone number is erased.
 - If the toggle is **enabled**, the phone number stays the same.
+
+## Managing Consent in forms
+
+You can add **Purposes** and **Topics** to your form to let users subscribe to specific types of communication. Keep in mind that each form can be linked to only one compliance profile, so you cannot include purposes from multiple compliance profiles in the same form. Learn more about [Consent management](real-time-marketing-compliance-settings.md).
+
+### Ignore Opt-Outs
+
+A form can include multiple **Purposes** and **Topics**. For example, imagine a form with Topic A and Topic B. A user first subscribes to Topic A. Later, they submit the form again, selecting only Topic B and leaving Topic A unchecked. This action unintentionally creates an opt-out for Topic A.
+To prevent these accidental opt-outs, newly created forms have the **Ignore Opt-Outs toggle enabled by default**.
+
+If you want to use the form for **consent management**, allowing users to unsubscribe from specific topics or purposes, you should **turn off the Ignore Opt-Outs toggle**.
+
+> [!TIP]
+> Enable the [Form Prefill](real-time-marketing-form-prefill.md) feature to help prevent unintentional opt-outs. When enabled, the form automatically populates with the user’s known values, reducing the chance of accidental changes to their existing subscriptions.
 
 ## Field types
 
