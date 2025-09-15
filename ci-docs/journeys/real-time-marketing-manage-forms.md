@@ -143,6 +143,9 @@ To prevent these accidental opt-outs, newly created forms have the **Ignore Opt-
 
 If you want to use the form for **consent management**, allowing users to unsubscribe from specific topics or purposes, you should **turn off the Ignore Opt-Outs toggle**.
 
+> [!IMPORTANT]
+> Avoid using the **Opt user out of the purpose** option for the **When checked** attribute of your purposes or topics if the **Ignore Opt-Outs toggle is enabled**. Doing so can mislead users into thinking they can unsubscribe by selecting the checkbox, which will not happen when this setting is active.
+
 > [!TIP]
 > Enable the [Form Prefill](real-time-marketing-form-prefill.md) feature to help prevent unintentional opt-outs. When enabled, the form automatically populates with the user’s known values, reducing the chance of accidental changes to their existing subscriptions.
 
