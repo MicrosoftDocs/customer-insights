@@ -84,7 +84,7 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
     1. Ability to retrieve list of sponsors and their logos
     1. Ability to submit registration via API
 	- [Release plan](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/create-event-portal-own-website)
-	- [Docs](using-rtm-events-api.md)
+	- [Docs](./developer/using-rtm-events-api.md)
 
 #### New blogs and scenario docs
 
