@@ -1,7 +1,7 @@
 ---
 title: Define an extended configuration entity for the channel instance account
 description: Learn how to define an extended configuration entity for the custom channel instance account in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/22/2023
+ms.date: 09/17/2025
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
@@ -16,16 +16,16 @@ ms.custom: sfi-image-nochange
 
 Applicable channels: SMS only
 
-When you create a custom SMS channel, you need to define an entity to represent the extended configuration for the *channel instance account* (**msdyn_channelinstanceaccount**). For example, you might have a MessageBird account for which you've enabled multiple phone numbers. The channel instance account has a 1:N relationship with the [channel instances you created](real-time-marketing-define-custom-channel-instance.md) (in this example, the MessageBird phone numbers).
+When you create a custom SMS channel, define an entity to represent the extended configuration for the *channel instance account* (**msdyn_channelinstanceaccount**). For example, you might have a MessageBird account with multiple phone numbers enabled. The channel instance account has a 1:N relationship with the [channel instances you create](real-time-marketing-define-custom-channel-instance.md) (in this example, the MessageBird phone numbers).
 
 > [!IMPORTANT]
-> To allow Customer Insights - Journeys to access the extended configuration entity during submission, you need to add **Read** privileges for the extended configuration entity to the "Cxp Channel Definitions Services User" role.
+> To let Customer Insights - Journeys access the extended configuration entity during submission, add **Read** privileges for the extended configuration entity to the "Marketing Services User Extensible" role.
 
-For each custom channel solution, you need to:
+For each custom channel solution:
 
 1. Create a custom entity to represent the extended configuration of the **Channel Instance Account** entity defined in the base solution.
 
-    The name of the entity is assigned to the attribute **msdyn_channeldefinitionaccountexternalentity** at the [channel definition step](real-time-marketing-define-channel-definition.md).
+    Assign the entity name to the **msdyn_channeldefinitionaccountexternalentity** attribute at the [channel definition step](real-time-marketing-define-channel-definition.md).
    
    > [!IMPORTANT]
    > To ensure proper functionality, the created entity logical name must be in lowerCamelCase.
@@ -69,17 +69,13 @@ For each custom channel solution, you need to:
         <NavigationPropertyName>msdyn_ChannelInstanceAccount_extendedentityid_cr65f_samplechannelinstanceaccount</NavigationPropertyName>
         <RelationshipRoleType>0</RelationshipRoleType>
       </EntityRelationshipRole>
-    </EntityRelationshipRoles>
-  </EntityRelationship>
-</EntityRelationships>
-```
+    </Entity1. Create a form to expose the configuration fields.
 
-1. Create a form to expose the configuration fields.
-
-    The form doesn't have to contain attributes like name or description since they come from Customer Insights - Journeys Custom controls. The form is loaded in the Customer Insights - Journeys SMS wizard (settings step). The form ID is assigned to the attribute **msdyn_channeldefinitionaccountexternalformid** at the [channel definition step](real-time-marketing-define-channel-definition.md).  
+    The form doesn't need to have attributes like name or description because they come from Customer Insights - Journeys custom controls. The form loads in the Customer Insights - Journeys SMS wizard (settings step). Assign the form ID to the **msdyn_channeldefinitionaccountexternalformid** attribute at the [channel definition step](real-time-marketing-define-channel-definition.md).
 
     For example, in SMS, the form looks like this:
 
       :::image type="content" source="media/real-time-marketing-sms-channel.png" alt-text="Screenshot of a form for an SMS channel." lightbox="media/real-time-marketing-sms-channel.png":::
+form for an SMS channel." lightbox="media/real-time-marketing-sms-channel.png":::
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
