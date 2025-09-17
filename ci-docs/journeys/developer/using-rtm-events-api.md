@@ -1,5 +1,5 @@
 ---
-title: Using the events API in real-time journeys (preview)
+title: Use the events API in real-time journeys (preview)
 description: Learn how to use the events API to access date from events, sessions, session tracks, and passes in real-time journeys.
 ms.date: 07/16/2025
 ms.topic: overview
@@ -10,7 +10,7 @@ search.audienceType:
 ms.custom: sfi-image-nochange
 ---
 
-# Using the events API in real-time journeys (preview)
+# Use the events API in real-time journeys (preview)
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 

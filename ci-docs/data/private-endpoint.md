@@ -1,7 +1,7 @@
 ---
-title: Connect to storage accounts behind firewalls
+title: Connect to storage accounts behind firewalls (preview)
 description: 'Storage account firewall: Learn how to connect Customer Insights – Data to Azure Data Lake Storage accounts behind firewalls using private endpoints for secure access.'
-ms.date: 09/09/2025
+ms.date: 09/16/2025
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -12,10 +12,10 @@ ms.custom:
   - ai-seo-date:07/21/2025
 ---
 
-# Connect to storage accounts behind firewalls
+# Connect to storage accounts behind firewalls (preview)
 
-> [!TIP]
-> This article provides an updated method to connect Customer Insights - Data to storage that's behind a firewall. Use the method in this article to connect to firewalled storage. Update existing connections that use [private links](private-link.md) by the end of 2025.
+> [!IMPORTANT]
+> This article provides an updated method to connect Customer Insights - Data to storage that's behind a firewall. This article is for a private preview pilot program. Don't use the steps outlined in this article unless you are in the pilot program. See [Set up connections for storage accounts behind firewalls](private-link.md) for general guidance for connecting to Azure storage accounts behind a firewall.
 
 Sometimes you want Customer Insights – Data to connect to an Azure Data Lake Storage account that's behind a firewall (storage accounts where "Public network access" is disabled). To grant access to a storage account behind a firewall, you need to create a private endpoint.
 
