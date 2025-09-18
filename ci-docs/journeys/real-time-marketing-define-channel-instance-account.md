@@ -69,13 +69,14 @@ For each custom channel solution:
         <NavigationPropertyName>msdyn_ChannelInstanceAccount_extendedentityid_cr65f_samplechannelinstanceaccount</NavigationPropertyName>
         <RelationshipRoleType>0</RelationshipRoleType>
       </EntityRelationshipRole>
-    </Entity1. Create a form to expose the configuration fields.
-
+    </EntityRelationshipRoles>
+  </EntityRelationship>
+</EntityRelationships>
+```
     The form doesn't need to have attributes like name or description because they come from Customer Insights - Journeys custom controls. The form loads in the Customer Insights - Journeys SMS wizard (settings step). Assign the form ID to the **msdyn_channeldefinitionaccountexternalformid** attribute at the [channel definition step](real-time-marketing-define-channel-definition.md).
 
     For example, in SMS, the form looks like this:
 
       :::image type="content" source="media/real-time-marketing-sms-channel.png" alt-text="Screenshot of a form for an SMS channel." lightbox="media/real-time-marketing-sms-channel.png":::
-form for an SMS channel." lightbox="media/real-time-marketing-sms-channel.png":::
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
