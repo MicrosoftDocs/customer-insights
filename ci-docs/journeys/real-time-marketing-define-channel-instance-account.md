@@ -16,7 +16,7 @@ ms.custom: sfi-image-nochange
 
 Applicable channels: SMS only
 
-When you create a custom SMS channel, define an entity to represent the extended configuration for the *channel instance account* (**msdyn_channelinstanceaccount**). For example, you might have a MessageBird account with multiple phone numbers enabled. The channel instance account has a 1:N relationship with the [channel instances you create](real-time-marketing-define-custom-channel-instance.md) (in this example, the MessageBird phone numbers).
+When you create a custom SMS channel, you need to define an entity to represent the extended configuration for the *channel instance account* (**msdyn_channelinstanceaccount**). For example, you might have a MessageBird account with multiple phone numbers enabled. The channel instance account has a 1:N relationship with the [channel instances you create](real-time-marketing-define-custom-channel-instance.md) (in this example, the MessageBird phone numbers).
 
 > [!IMPORTANT]
 > To let Customer Insights - Journeys access the extended configuration entity during submission, add **Read** privileges for the extended configuration entity to the "Marketing Services User Extensible" role.
@@ -73,7 +73,10 @@ For each custom channel solution:
   </EntityRelationship>
 </EntityRelationships>
 ```
-    The form doesn't need to have attributes like name or description because they come from Customer Insights - Journeys custom controls. The form loads in the Customer Insights - Journeys SMS wizard (settings step). Assign the form ID to the **msdyn_channeldefinitionaccountexternalformid** attribute at the [channel definition step](real-time-marketing-define-channel-definition.md).
+
+3. Create a form to expose the configuration fields.
+
+    The form doesn't need to have attributes like 'name' or 'description' because they're provided by Customer Insights - Journeys custom controls. The form loads in the Customer Insights - Journeys SMS wizard (settings step). Assign the form ID to the **msdyn_channeldefinitionaccountexternalformid** attribute at the [channel definition step](real-time-marketing-define-channel-definition.md).
 
     For example, in SMS, the form looks like this:
 
