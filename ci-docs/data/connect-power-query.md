@@ -1,7 +1,7 @@
 ---
 title: "Connect to a Power Query data source"
 description: "Ingest data through a Power Query connector."
-ms.date: 09/09/2025
+ms.date: 09/18/2025
 ms.reviewer: v-wendysmith
 ms.topic: how-to
 author: Scott-Stabbert
@@ -97,6 +97,8 @@ Because an on-premises data gateway is in organization's network, Microsoft can'
 - Consider hosting the data source and data gateway in the same geographical region.
 
 - Optimize the data source query and indexes. Properly indexed and partitioned data can be accessed more quickly and efficiently, leading to better query and dataflow performance.
+
+- Learn more about other [best practices when working with Power Query](/power-query/best-practices).
 
 > [!IMPORTANT]
 > Update your gateways to the latest version. You can install an update and reconfigure a gateway from a prompt shown on the gateway screen directly or [download the latest version](https://powerapps.microsoft.com/downloads/). If you don't use the latest gateway version, the dataflow refresh fails with error messages like **The keyword isn't supported: configuration properties. Parameter name: keyword**.
