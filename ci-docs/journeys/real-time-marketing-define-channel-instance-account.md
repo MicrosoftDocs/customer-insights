@@ -34,47 +34,47 @@ For each custom channel solution:
 
     This attribute is a [polymorphic lookup](/power-apps/developer/data-platform/webapi/multitable-lookup). Here's an example of the relationship in XML:
 
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<EntityRelationships xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <EntityRelationship Name="msdyn_ChannelInstanceAccount_extendedentityid_cr65f_samplechannelinstanceaccount">
-    <EntityRelationshipType>OneToMany</EntityRelationshipType>
-    <IsCustomizable>0</IsCustomizable>
-    <IntroducedVersion>1.0.0.0</IntroducedVersion>
-    <IsHierarchical>0</IsHierarchical>
-    <ReferencingEntityName>msdyn_ChannelInstanceAccount</ReferencingEntityName>
-    <ReferencedEntityName>cr65f_samplechannelinstanceaccount</ReferencedEntityName>
-    <CascadeAssign>NoCascade</CascadeAssign>
-    <CascadeDelete>RemoveLink</CascadeDelete>
-    <CascadeReparent>NoCascade</CascadeReparent>
-    <CascadeShare>NoCascade</CascadeShare>
-    <CascadeUnshare>NoCascade</CascadeUnshare>
-    <CascadeRollupView>NoCascade</CascadeRollupView>
-    <IsValidForAdvancedFind>1</IsValidForAdvancedFind>
-    <ReferencingAttributeName>msdyn_extendedentityId</ReferencingAttributeName>
-    <RelationshipDescription>
-      <Descriptions>
-        <Description description="" languagecode="1033" />
-      </Descriptions>
-    </RelationshipDescription>
-    <EntityRelationshipRoles>
-      <EntityRelationshipRole>
-        <NavPaneDisplayOption>UseCollectionName</NavPaneDisplayOption>
-        <NavPaneArea>Details</NavPaneArea>
-        <NavPaneOrder>10000</NavPaneOrder>
-        <NavigationPropertyName>msdyn_extendedentityid_cr65f_samplechannelinstanceaccount</NavigationPropertyName>
-        <RelationshipRoleType>1</RelationshipRoleType>
-      </EntityRelationshipRole>
-      <EntityRelationshipRole>
-        <NavigationPropertyName>msdyn_ChannelInstanceAccount_extendedentityid_cr65f_samplechannelinstanceaccount</NavigationPropertyName>
-        <RelationshipRoleType>0</RelationshipRoleType>
-      </EntityRelationshipRole>
-    </EntityRelationshipRoles>
-  </EntityRelationship>
-</EntityRelationships>
-```
+    ```xml
+    <?xml version="1.0" encoding="utf-8"?>
+    <EntityRelationships xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <EntityRelationship Name="msdyn_ChannelInstanceAccount_extendedentityid_cr65f_samplechannelinstanceaccount">
+        <EntityRelationshipType>OneToMany</EntityRelationshipType>
+        <IsCustomizable>0</IsCustomizable>
+        <IntroducedVersion>1.0.0.0</IntroducedVersion>
+        <IsHierarchical>0</IsHierarchical>
+        <ReferencingEntityName>msdyn_ChannelInstanceAccount</ReferencingEntityName>
+        <ReferencedEntityName>cr65f_samplechannelinstanceaccount</ReferencedEntityName>
+        <CascadeAssign>NoCascade</CascadeAssign>
+        <CascadeDelete>RemoveLink</CascadeDelete>
+        <CascadeReparent>NoCascade</CascadeReparent>
+        <CascadeShare>NoCascade</CascadeShare>
+        <CascadeUnshare>NoCascade</CascadeUnshare>
+        <CascadeRollupView>NoCascade</CascadeRollupView>
+        <IsValidForAdvancedFind>1</IsValidForAdvancedFind>
+        <ReferencingAttributeName>msdyn_extendedentityId</ReferencingAttributeName>
+        <RelationshipDescription>
+          <Descriptions>
+            <Description description="" languagecode="1033" />
+          </Descriptions>
+        </RelationshipDescription>
+        <EntityRelationshipRoles>
+          <EntityRelationshipRole>
+            <NavPaneDisplayOption>UseCollectionName</NavPaneDisplayOption>
+            <NavPaneArea>Details</NavPaneArea>
+            <NavPaneOrder>10000</NavPaneOrder>
+            <NavigationPropertyName>msdyn_extendedentityid_cr65f_samplechannelinstanceaccount</NavigationPropertyName>
+            <RelationshipRoleType>1</RelationshipRoleType>
+          </EntityRelationshipRole>
+          <EntityRelationshipRole>
+            <NavigationPropertyName>msdyn_ChannelInstanceAccount_extendedentityid_cr65f_samplechannelinstanceaccount</NavigationPropertyName>
+            <RelationshipRoleType>0</RelationshipRoleType>
+          </EntityRelationshipRole>
+        </EntityRelationshipRoles>
+      </EntityRelationship>
+    </EntityRelationships>
+    ```
 
-3. Create a form to expose the configuration fields.
+1. Create a form to expose the configuration fields.
 
     The form doesn't need to have attributes like 'name' or 'description' because they're provided by Customer Insights - Journeys custom controls. The form loads in the Customer Insights - Journeys SMS wizard (settings step). Assign the form ID to the **msdyn_channeldefinitionaccountexternalformid** attribute at the [channel definition step](real-time-marketing-define-channel-definition.md).
 
