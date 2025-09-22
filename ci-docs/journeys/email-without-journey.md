@@ -38,7 +38,7 @@ To begin your email sending process, follow these steps:
 1. Select a segment and select **Preview** to preview the segment. You can only select published segments.
     > [!NOTE]
     > If you have personalization in your email leveraging Contacts or Leads and you select a segment of the opposite type, you will not be allowed to move forward until the segment type matches the personalization type.
-1. Select **Send** to send the mail. Your mail is queued up to be sent.
+1. Select **Send** to send the mail. Your mail is queued up to be sent. Be aware, that the default email address for your audience will be selected as the address for the emails to be sent.
 1. On the confirmation screen, select **View Customer Journey** to see the journey that was created to send the email. The journey name matches the name of your email. Select **View Segment** to view the segment to which the email was sent.
 
 > [!NOTE]
