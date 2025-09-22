@@ -27,12 +27,18 @@ You might want to pause a journey when:
 
 ## What happens when you pause a journey?
 
-Pausing a journey prevents new entries and stops customers who have already entered the journey at their present step. You can pause a journey for up to 21 days.
+Pausing a journey prevents new entries and stops customers who have already entered the journey at their present step.
+
+- Customers in a "wait for time" step move forward one step and then pause.
+- For one-time, segment-based journeys, customers in the original segment can't re-enter the journey after it resumes. Only the remaining members of the segment proceed.
+- For repeating, segment-based journeys, repeating occurrences and segment evaluations are skipped while the journey is paused. 
+
+You can pause a journey for up to 21 days. If the journey isn't resumed within 21 days, the journey stops.
 
 > [!NOTE]
-> Customers in a "wait for time" step move forward one step and then pause.
-> 
-> For one-time, segment-based journeys, customers in the original segment can't re-enter the journey after it resumes. Only the remaining members of the segment proceed.
+>
+> Trigger queues have a maximum capacity. If the queue is full, additional triggers are dropped.
+
 
 ## What happens when you resume a journey?
 
@@ -42,6 +48,7 @@ You can resume a journey in two ways:
 - **Scheduled resume**: Set a specific date and time for the journey to resume automatically.
 
 Once resumed, new customers can enter the journey again, customers who are paused resume the journey, and queued triggers are processed.
+ 
 
 ## Editing during a pause
 
@@ -54,11 +61,6 @@ While a journey is paused, you can make edits using the same capabilities availa
 > [!TIP]
 > Be mindful of how edits affect queued triggers and customer flow. Some changes can require publishing a new version of the journey.
 
-## Known limitations
-
-- The pause duration is limited to 21 days from the original pause date. If the journey isn't resumed within 21 days, the journey stops.
-- Trigger queues have a maximum capacity. If the queue is full, additional triggers are dropped.
-- In preview, customers are paused only at specific steps. General availability expands this to include message tiles.
 
 ## Example scenario
 
