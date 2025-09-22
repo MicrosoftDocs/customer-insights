@@ -13,11 +13,14 @@ search.audienceType:
 
 # Deploy pages that contain Customer Insights - Journeys forms
 
-Once you've [created a form](real-time-marketing-form-create.md) in Customer Insights - Journeys, you need to publish it in a place where customers can access it. This article discusses the various hosting options for Customer Insights - Journeys forms.
+Once you [create a form](real-time-marketing-form-create.md) in Customer Insights - Journeys, you need to publish it in a place where customers can access it. This article discusses the various hosting options for Customer Insights - Journeys forms, which applies for both marketing and event registration forms.
 
 ## Hosting options
 
-Typically, forms are hosted on content management system (CMS) where, in the context of a product or service, forms allow the customer to request further information or to be regularly informed. Currently, Customer Insights - Journeys forms have two publishing options. The first option generates a JavaScript code snippet that allows you to embed the form on your website. The second option creates a standalone page with your form.
+Forms are usually hosted on a content management system (CMS) and are used to let customers request more information or subscribe to updates about a product or service. Customer Insights – Journeys forms offer two publishing options:
+
+1. **Embed form** on your website – Generate a JavaScript snippet to insert the form into your site.
+1. **Standalone page** – Create a dedicated page that displays your form.
 
 > [!div class="mx-imgBorder"]
 > ![Publish forms.](media/real-time-marketing-forms-publishing1.png "Publish forms")
@@ -28,9 +31,6 @@ It's worth mentioning that the publishing options aren't exclusive to a given lo
 
 The following sections take a closer look at the non-Javascript code publishing options.
 
-> [!IMPORTANT]
-> The ability to capture the content of forms not created with Customer Insights - Journeys does not currently exist.
-
 ## Use a standalone page
 
 Standalone pages are useful where there's no other publishing option available or not wanted. For example, you may want to use a standalone page if a high volume of access is expected. In those cases, you can publish a form on a standalone page that is hosted in Microsoft's content delivery network (CDN). This guarantees a short loading time and high availability for the form.
@@ -40,16 +40,14 @@ As shown below, selecting the **Create** button on the right side of the "Create
 > [!div class="mx-imgBorder"]
 > ![Publish options for forms.](media/real-time-marketing-forms-publishing-options.png "Publish options for forms")
 
-Currently, the domain provided for the standalone page is provided by Customer Insights - Journeys. Soon, however, you'll be able to add your own domain for use with these standalone pages.
-
 With a standalone page, there's a caching mechanism in the background to deliver the page as fast as possible. Because there's a caching system, if the form is changed, the changes *aren't* reflected immediately on the page. It may take up to 10 minutes for the cache to be updated.
 
 > [!NOTE]
-> To force the infrastructure to load the updated (non-cached) version of the form, append “#d365mkt-nocache” to the end of the URL. When you add the "nocache" parameter, the page ignores the cache and loads the form directly from Customer Insights - Journeys.
+> To force the infrastructure to load the updated (noncached) version of the form, append “#d365mkt-nocache” to the end of the URL. When you add the "nocache" parameter, the page ignores the cache and loads the form directly from Customer Insights - Journeys.
 
 ## Host using a single page application (SPA)
 
-The Customer Insights - Journeys form experience uses a JavaScript API that utilizes various events to change the behavior of the form. This design allows the form to be included and rendered through the API and to be used within a single-page application with React (SPA). The process is described the developer documentation: [Extend Customer Insights - Journeys forms using code](./developer/realtime-marketing-form-client-side-extensibility.md#custom-events).
+The Customer Insights - Journeys form experience uses a JavaScript API that utilizes various events to change the behavior of the form. This design allows the form to be included and rendered through the API and to be used within a single-page application with React (SPA). The process is described in the developer documentation: [Extend Customer Insights - Journeys forms using code](./developer/realtime-marketing-form-client-side-extensibility.md#custom-events).
 
 The following screenshot shows an embedded Customer Insights - Journeys form on a React page:
 
@@ -87,7 +85,7 @@ Customer Insights - Journeys forms can also be hosted on [Power Pages](/power-pa
     > [!div class="mx-imgBorder"]
     > ![Screenshot showing the page preview in Power Pages.](media/real-time-marketing-forms-pages5.png "Screenshot showing the page preview in Power Pages")
 
-You won't be able to preview the form in the design mode in the Power Pages Studio. But, if you select the **Preview** button to preview the page in the browser, the form shows up and can be used.
+You can't preview the form in the design mode in the Power Pages Studio. But, if you select the **Preview** button to preview the page in the browser, the form shows up and can be used.
 
 ## Summary
 
