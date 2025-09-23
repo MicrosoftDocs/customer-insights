@@ -1,7 +1,7 @@
 ---
 title: Deploy pages that contain Customer Insights - Journeys forms
 description: Learn how Customer Insights - Journeys forms are deployed on Power Pages and other destinations.
-ms.date: 08/22/2023
+ms.date: 09/22/2025
 ms.topic: install-set-up-deploy
 author: petkra
 ms.author: petkra
@@ -13,14 +13,14 @@ search.audienceType:
 
 # Deploy pages that contain Customer Insights - Journeys forms
 
-Once you [create a form](real-time-marketing-form-create.md) in Customer Insights - Journeys, you need to publish it in a place where customers can access it. This article discusses the various hosting options for Customer Insights - Journeys forms, which applies for both marketing and event registration forms.
+Once you [create a form](real-time-marketing-form-create.md) in Customer Insights - Journeys, you need to publish it in a place where customers can access it. This article discusses the various hosting options for Customer Insights - Journeys forms, which apply to marketing and event registration forms.
 
 ## Hosting options
 
 Forms are usually hosted on a content management system (CMS) and are used to let customers request more information or subscribe to updates about a product or service. Customer Insights – Journeys forms offer two publishing options:
 
-1. **Embed form** on your website – Generate a JavaScript snippet to insert the form into your site.
-1. **Standalone page** – Create a dedicated page that displays your form.
+1. **Embed the form on your website**: Generate a JavaScript snippet to insert the form into your site.
+1. **Standalone page**: Create a dedicated page that displays your form.
 
 > [!div class="mx-imgBorder"]
 > ![Publish forms.](media/real-time-marketing-forms-publishing1.png "Publish forms")
@@ -58,8 +58,9 @@ If your form is hosted using an SPA, you need to replace the identifier of the f
 
 ## Host on Power Pages
 
-Customer Insights - Journeys forms can also be hosted on [Power Pages](/power-pages/introduction) (formerly known as Power Apps Portals). When you use this hosting method, you don’t need to connect your website to the Customer Insights – Journeys app. However, you must enable your domain for external form hosting first.
-To host the form on Power Pages, follow these steps:
+Customer Insights - Journeys forms can also be hosted on [Power Pages](/power-pages/introduction) (formerly known as Power Apps Portals). When you use this hosting method, you don’t need to connect your website to the Customer Insights – Journeys app. However, you must first enable your domain for external form hosting. 
+
+To host the form on Power Pages:
 
 1. Create a new page, or duplicate and edit an existing page in Power Pages Studio.
 
@@ -81,25 +82,24 @@ To host the form on Power Pages, follow these steps:
     > [!div class="mx-imgBorder"]
     > ![Screenshot showing the sync button in Power Pages.](media/real-time-marketing-forms-pages4.png "Screenshot showing the sync button in Power Pages")
 
-1. **Enable your domain for external form hosting** in [domain authentication](domain-authentication.md)
+1. Enable your domain for external form hosting in the [domain authentication](domain-authentication.md) settings.
 
 1. Select the **Preview** button in Power Pages to see how your page looks.
 
     > [!div class="mx-imgBorder"]
     > ![Screenshot showing the page preview in Power Pages.](media/real-time-marketing-forms-pages5.png "Screenshot showing the page preview in Power Pages")
 
-You can't preview the form in the design mode in the Power Pages Studio. But, if you select the **Preview** button to preview the page in the browser, the form shows up and can be used.
+You can't preview the form in the design mode in Power Pages Studio. But, if you select the **Preview** button to preview the page in the browser, the form shows up and can be used.
 
 ## Form capture
 
-If you already have a form that wasn’t created in Customer Insights – Journeys, you can route its submissions using [Form capture](real-time-marketing-form-capture.md). However, setting up Form capture can be complex and typically requires developer assistance. In most cases, it’s easier to create a new form from scratch using the Customer Insights – Journeys form editor.
-Form capture is recommended only if your existing form includes complex logic or needs to send submissions to other systems in addition to Dynamics 365.
+If you already have a form that wasn’t created in Customer Insights – Journeys, you can route its submissions using [form capture](real-time-marketing-form-capture.md). However, setting up form capture can be complex and typically requires developer assistance. In most cases, it’s easier to create a new form from scratch using the Customer Insights – Journeys form editor. Form capture is recommended only if your existing form includes complex logic or needs to send submissions to other systems in addition to Dynamics 365.
 
 ## Summary
 
 The Customer Insights - Journeys form designer offers flexible options to create and publish forms for use with Customer Insights - Journeys. Here are some general guidelines to remember when creating and publishing forms in Customer Insights - Journeys:
 
 - An easy and effective way to build a single landing page is to publish the form as a standalone page.
-- If you need to create a complex marketing web site with multiple pages, you can use Power Pages Studio.
+- If you need to create a complex marketing website with multiple pages, you can use Power Pages Studio.
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
