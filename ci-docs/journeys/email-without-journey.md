@@ -1,7 +1,7 @@
 ---
 title: Use "Send now" to send emails instantly
 description: Learn how to send emails in Dynamics 365 Customer Insights - Journeys without building a journey.
-ms.date: 04/18/2024
+ms.date: 09/22/2025
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
@@ -50,7 +50,7 @@ Send now is a simplified workflow that supports limited scenarios. It doesn't su
 
 - If there's a business unit assigned to the email, the resulting journey doesn't pick up the business unit assignment.
 - The journey created in the background is owned by the user who created the email and the "send now" flow.
-- Send now only works with contact and lead segment-based journeys. Emails will be sent to the Default recipient as [configured](https://learn.microsoft.com/en-us/dynamics365/customer-insights/journeys/real-time-marketing-audience-data) for each audience. 
+- Send now only works with contact and lead segment-based journeys. Emails are sent to the default recipient, as [configured](real-time-marketing-audience-data.md) for each audience. 
 - Send now doesn't work with outbound marketing segments that you haven't used in real-time journeys. Once you use an outbound marketing segment in a real-time journey successfully, it's been processed and you can use it with the send now functionality.
 - Send now doesn't stop users from selecting an email and a segment from two different business units. If you have permissions to more than one business unit, be careful to make sure you select an email and segment from the same business unit.
 - The following personalization variables *don't* work in send now:
