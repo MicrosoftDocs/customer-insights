@@ -424,7 +424,7 @@
         href: invite-register-house-event-attendees.md
       - name: Create an event registration experience
         href: event-registration-experience.md
-      - name: Create unmapped fields for registration forms (preview)
+      - name: Create unmapped fields for registration forms
         href: create-unmapped-fields-registration-forms.md
       - name: Build an event registration portal with Power Pages (preview)
         href: event-portal-template.md
