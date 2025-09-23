@@ -1,7 +1,7 @@
 ---
 title: Tabs and settings for segments
 description: Learn to navigate tabs and settings for segments in Dynamics 365 Customer Insights - Journeys to optimize your customer targeting.
-ms.date: 12/02/2024
+ms.date: 09/19/2025
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -9,13 +9,9 @@ search.audienceType:
   - admin
   - customizer
   - enduser
-ms.custom: outbound-marketing, evergreen
 ---
 
 # Tabs and settings for segments
-
-> [!IMPORTANT]
-> **This article only applies to [outbound marketing](user-guide.md), which is gradually being removed from Customer Insights - Journeys.** To avoid interruptions, stop using outbound marketing and transition to real-time journeys. Learn more: [Transition overview](transition-overview.md).
 
 Tabs are shown as a set of headings under the header, which shows the name of the segment. Select any of these headings to go to the relevant tab. Each tab is described briefly in the following subsections.
 
