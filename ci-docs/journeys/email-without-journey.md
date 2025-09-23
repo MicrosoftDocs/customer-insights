@@ -1,7 +1,7 @@
 ---
 title: Use "Send now" to send emails instantly
 description: Learn how to send emails in Dynamics 365 Customer Insights - Journeys without building a journey.
-ms.date: 04/18/2024
+ms.date: 09/22/2025
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
@@ -17,9 +17,9 @@ search.audienceType:
 > The "Send now" functionality described in this article, **only** applies to Customer Insights - Journeys, not outbound marketing.
 
 > [!TIP]
-> If you don’t see this feature in your app, contact your admin who can activate it by going to **Settings** > **Overview** > **Feature switches**, scrolling to the **Email editor** area, enabling the **Send now** feature switch, and saving the setting by selecting **Save** on the top right corner.
+> If you don’t see this feature in your app, contact your admin, who can activate it by going to **Settings** > **Overview** > **Feature switches**, scrolling to the **Email editor** area, enabling the **Send now** feature switch, and saving the setting by selecting **Save** on the top right corner.
 
-You can now send an email directly from the email editor with guidance through a straightforward flow, provided your email and journey scenarios are noncomplex. From the email editor, select the **Ready to Send** option. This directs you to select the **Send** option where you can select a segment, preview its contents, and then send the email. The process builds a simple journey in the background to assist you in sending your email.
+You can now send an email directly from the email editor with guidance through a straightforward flow, provided your email and journey scenarios are non-complex. From the email editor, select the **Ready to Send** option. This directs you to select the **Send** option, where you can choose a segment, preview its contents, and then send the email. The process builds a simple journey in the background to assist you in sending your email.
 
 > [!NOTE]
 > If you have a business unit assigned to the email, the journey created in the background doesn't pick up the business unit. The journey created in the background is owned by the user who created the email.
@@ -38,7 +38,7 @@ To begin your email sending process, follow these steps:
 1. Select a segment and select **Preview** to preview the segment. You can only select published segments.
     > [!NOTE]
     > If you have personalization in your email leveraging Contacts or Leads and you select a segment of the opposite type, you will not be allowed to move forward until the segment type matches the personalization type.
-1. Select **Send** to send the mail. Your mail is queued up to be sent.
+1. Select **Send** to send the mail. Your mail is queued up to be sent. The default email address for your audience is selected as the address for the emails to be sent.
 1. On the confirmation screen, select **View Customer Journey** to see the journey that was created to send the email. The journey name matches the name of your email. Select **View Segment** to view the segment to which the email was sent.
 
 > [!NOTE]
