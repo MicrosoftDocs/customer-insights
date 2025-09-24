@@ -27,7 +27,6 @@ The **Create Journey From Template** API lets you create customer journeys from 
 | **Unique name** | `msdynmkt_CreateJourneyFromTemplate` |
 | **Display name** | Create Journey From Template |
 | **Execute privilege** | `prvCreatemsdynmkt_journey` |
-| **Plugin type ID** | `3fd75e21-8a91-4e82-b436-7f2d9ac83e57` |
 | **Is customizable** | No |
 
 ## Authentication and prerequisites
@@ -42,8 +41,8 @@ The **Create Journey From Template** API lets you create customer journeys from 
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `msdynmkt_journeytemplateid` | GUID | The ID of the journey template you use as the base to create the new journey. |
-| `msdynmkt_journeyname` | String | The name for the new journey you create. |
+| `msdynmkt_journeytemplateid` | GUID | The ID of the journey template you use as the base to create the new journey. Parameter also accepts journey id, in such case journey json from provided journey id will be used for modifications |
+| `msdynmkt_journeyname` | String | The name for the new journey you create. Needs to be unique |
 
 ### Optional parameters
 
@@ -73,7 +72,9 @@ Content-Type: application/json
 
 {
     "msdynmkt_journeytemplateid": "12345678-1234-1234-1234-123456789012",
-    "msdynmkt_journeyname": "Welcome Campaign Q1 2024"
+    "msdynmkt_journeyname": "Welcome Campaign Q1 2024",
+    "msdynmkt_journeystarttime": "2025-09-15T09:00:00Z", //UTC time
+    "msdynmkt_journeyendtime": "2025-09-25 17:46:06 +02:00" //Timezone specified
 }
 ```
 
@@ -95,9 +96,13 @@ Content-Type: application/json
 {
     "msdynmkt_journeytemplateid": "12345678-1234-1234-1234-123456789012",
     "msdynmkt_journeyname": "Personalized Welcome Series",
-    "msdynmkt_jsonpathmodifications": "{\"$.description\": \"Customized welcome journey\", \"$.settings.frequency\": \"weekly\"}",
-    "msdynmkt_journeystarttime": "2024-01-15T09:00:00Z",
-    "msdynmkt_journeyendtime": "2024-12-31T23:59:59Z",
+    "msdynmkt_jsonpathmodifications": ""{
+        \"$.actions['6b461239-d698-449d-9196-0e365753798e'].parameters.contentId\":\"e7e3cf6c-1d89-f011-b4cc-000d3a306706\",
+        \"$.actions['b03bff11-1b09-4566-967b-4cc77270c0f6'].parameters.smsId\":\"6fcbe68f-ef8e-f011-b4cb-000d3a5972e9\",
+        \"$.actions['d444ab08-1a65-4a94-b9e2-78499bc9faeb'].parameters.pushNotificationId\":\"7f030313-f08e-f011-b4cb-000d3a5972e9\"
+        }",
+    "msdynmkt_journeystarttime": "2025-09-15T09:00:00Z",
+    "msdynmkt_journeyendtime": "2025-12-31T23:59:59Z",
     "msdynmkt_createmode": "Draft",
     "msdynmkt_owningbusinessunitid": "11111111-2222-3333-4444-555555555555"
 }
@@ -113,21 +118,19 @@ The `msdynmkt_jsonpathmodifications` parameter uses a JSON object where:
 
 | JSONPath | Purpose | Example value |
 |----------|---------|---------------|
-| `$.name` | Journey name | `"Updated Journey Name"` |
-| `$.description` | Journey description | `"Custom journey description"` |
-| `$.settings.frequency` | Email frequency settings | `"daily"`, `"weekly"` |
 | `$.trigger.audience` | Target segment ID | `"segment-guid-here"` |
 | `$.trigger.exclusionSegments` | Exclusion segments | `["guid1", "guid2"]` |
 | `$.exitCriteria.suppressionSegments` | Suppression segments | `["guid1", "guid2"]` |
+| `$.actions['action_guid'].parameters.contentId"` | Email template | `email template id` |
+| `$.actions['action_guid'].parameters.pushNotificationId"` | Push notification | `push notification id` |
+| `$.actions['action_guid'].parameters.smsId"` | Sms | `sms template id` |
 
 ### JSONPath modification example
 
 ```json
 {
-    "$.name": "Updated Journey Name",
-    "$.description": "Journey created from template with modifications",
     "$.trigger.audience": "98765432-1234-5678-9012-123456789012",
-    "$.settings.emailFrequency": "weekly"
+    "$.actions['6b461239-d698-449d-9196-0e365753798e'].parameters.contentId": "e7e3cf6c-1d89-f011-b4cc-000d3a306706"
 }
 ```
 
@@ -137,10 +140,10 @@ The `msdynmkt_jsonpathmodifications` parameter uses a JSON object where:
 - The journey is created in a draft state.
 - You can edit and change the journey before activation.
 - You need to publish the journey manually through the user interface or a separate API call.
-- Validation errors don't prevent creation, but the system reports them.
+- Some validation errors are ignored (for example message template - email/sms/push don't need to be in published state).
 
 ### Publish mode
-- The journey is created and activated right away.
+- The journey is created and published right away.
 - All validation must pass for the journey to be created.
 - The journey starts according to the defined schedule.
 - If there are any validation errors, the journey isn't created.
@@ -223,6 +226,12 @@ When `msdynmkt_isvalid` returns `false`, the `msdynmkt_errors` field has a JSON 
 }
 ```
 
+## Internal properties
+Journey json contains many internal properies, which will be populated automatically based on provided data. You don't need to modify them:
+- Placeholderbindingp & placeholderBindingsOriginal objects are populated automatically based on selected message template.
+- messageDesignation, complianceSettingsId, purposeId, topicId are populated based on selected mesasge template.
+- persistedUIState object is populated based on selected message template
+
 ## Best practices
 
 ### Template management
@@ -236,31 +245,26 @@ When `msdynmkt_isvalid` returns `false`, the `msdynmkt_errors` field has a JSON 
 1. **Path validation**: Test JSONPath expressions against the template structure.
 1. **Value compatibility**: Make sure modification values match the expected data types.
 1. **Escaping**: Escape special characters in JSON strings.
+1. **Case sensitivity**: Json path keys are case sensitive.
 
 ### Error handling
 
 1. **Validation check**: Always check `msdynmkt_isvalid` before you continue.
-1. **Error parsing**: Parse the `msdynmkt_errors` JSON array for detailed error information.
+1. **Error parsing**: Parse the `msdynmkt_errors` JSON array for detailed error information. Items in array are objects with ErrorMessage and ErrorCode properties.
 1. **Retry logic**: Add retry logic for transient errors.
 
-### Performance
 
-1. **Batch operations**: Batch multiple journey creations.
-1. **Async processing**: Handle API calls asynchronously for a better user experience.
-1. **Resource limits**: Know the [Dynamics 365 API limits and quotas](/power-apps/developer/data-platform/api-limits).
 
 ## Limitations
 
 - Journey templates must be accessible to the calling user.
-- JSONPath changes are limited to the existing template structure.
-- Some journey elements can't be changed through JSONPath.
 - The API follows all standard Dynamics 365 security and business rules.
 
 ## Related APIs
 
 - **Create Journey JSON From Template** (`msdynmkt_CreateJourneyJsonFromTemplate`): Create journey JSON without persisting.
-- **Journey lifecycle APIs**: Start, stop, or pause journey operations.
-- **Segment APIs**: Manage customer segments used in journeys.
+- **Validate journey json** (`msdynmkt_ValidateJourneyJson`): Validate journey json without creating journey entity.
+- **Publish journey**: (`msdynmkt_PublishJourneyV2`): Publish existing journey.
 
 ## SDK examples
 
@@ -278,7 +282,7 @@ public void CreateJourneyFromTemplate(IOrganizationService service)
     
     request["msdynmkt_journeytemplateid"] = new Guid("12345678-1234-1234-1234-123456789012");
     request["msdynmkt_journeyname"] = "API Created Journey";
-    request["msdynmkt_jsonpathmodifications"] = "{\"$.description\": \"Created via API\"}";
+    request["msdynmkt_jsonpathmodifications"] = "{\"$.actions['b830219b-1df8-4454-bfd1-92d6afcee425'].parameters.contentId\": \"63a9529b-e09f-4652-86ca-e6626575d839\"}";
     request["msdynmkt_journeystarttime"] = DateTime.UtcNow.AddDays(1);
     request["msdynmkt_createmode"] = "Draft";
     
