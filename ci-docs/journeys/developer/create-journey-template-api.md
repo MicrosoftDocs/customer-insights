@@ -162,6 +162,24 @@ When `msdynmkt_isvalid` returns `false`, the `msdynmkt_errors` field has a JSON 
 | `InvalidJourneyJsonInTemplate` | Template contains invalid journey JSON | Contact administrator to fix the journey template. |
 | `InvalidJsonPath` | JSONPath not found in journey template | Verify the JSONPath expression matches the template structure. |
 | `InvalidJsonAfterModificationApplied` | JSON becomes invalid after applying modifications | Check that modification values are compatible with target fields. |
+| `UnableToSelectJsonToken` | Unable to select token in journey JSON due to exception | Verify JSONPath syntax and ensure the target element exists in the template. |
+| `UnableToApplyJourneyEntityFieldChanges` | Failed to apply entity field changes | Review field modifications and ensure all required properties are provided. |
+
+### Data source and binding validation errors
+
+| Error Code | Description | Resolution |
+|------------|-------------|------------|
+| `EventDataSourceInNonEventJourney` | EventDataSource placeholder binding used in non-event journey | EventDataSource bindings can only be used in journeys with trigger type 'Event'. |
+| `CdsProfileDataSourceInvalidSourceType` | CdsProfileDataSource sourceType not contained in journey's target entities | Ensure the sourceType matches one of the journey's target entity logical names. |
+| `InvalidEventDataSourceOutputPath` | EventDataSource outputPath doesn't exist in event metadata | Verify that the outputPath field exists in the referenced event's metadata. |
+
+### System and configuration errors
+
+| Error Code | Description | Resolution |
+|------------|-------------|------------|
+| `InvalidTimeZoneName` | Journey timezone is not a valid timezone identifier | Use a valid Windows timezone identifier (e.g., 'UTC', 'Eastern Standard Time'). |
+| `WaitUntilTimeInPast` | DelayAction WaitUntil time is in the past | Set DelayAction WaitUntil time to a future date and time. |
+| `UnableToDeserializePlaceholderBinding` | Failed to deserialize placeholder binding | Check placeholder binding structure and ensure all required properties are valid. |
 
 ### Journey definition errors
 
