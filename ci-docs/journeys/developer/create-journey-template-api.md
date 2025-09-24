@@ -1,7 +1,7 @@
 ---
 title: Use the Create Journey From Template API
 description: The Create Journey From Template API in Dynamics 365 Customer Insights - Journeys helps you create, customize, and validate journeys programmatically. Learn how to get started.
-ms.date: 08/26/2025
+ms.date: 09/24/2025
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
@@ -41,17 +41,17 @@ The **Create Journey From Template** API lets you create customer journeys from 
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `msdynmkt_journeytemplateid` | GUID | The ID of the journey template you use as the base to create the new journey. Parameter also accepts journey id, in such case journey json from provided journey id will be used for modifications |
-| `msdynmkt_journeyname` | String | The name for the new journey you create. Needs to be unique |
+| `msdynmkt_journeytemplateid` | GUID | The ID of the journey template you want to use as the base to create the new journey. This parameter also accepts a journey ID. When a journey ID is provided, the journey JSON from the provided journey ID is used for modifications. |
+| `msdynmkt_journeyname` | String | The name for the new journey you create. Must be unique. |
 
 ### Optional parameters
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `msdynmkt_jsonpathmodifications` | String | JSON string that represents a dictionary of JSONPath expressions and their replacement values to customize the template. |
-| `msdynmkt_journeystarttime` | DateTime | The start time for the journey. If specified, it must be in the future. If no timezone is specified, UTC timezone is used. |
-| `msdynmkt_journeyendtime` | DateTime | The end time for the journey. If specified, it must be after the start time. If no timezone is specified, UTC timezone is used. |
-| `msdynmkt_createmode` | String | Creation mode: "Draft" (default) or "Publish". |
+| `msdynmkt_journeystarttime` | DateTime | The start time for the journey. If specified, it must be in the future. If no time zone is specified, the UTC time zone is used. |
+| `msdynmkt_journeyendtime` | DateTime | The end time for the journey. If specified, it must be after the start time. If no time zone is specified, the UTC time zone is used. |
+| `msdynmkt_createmode` | String | Creation mode: "Draft" (default) or "Publish." |
 | `msdynmkt_owningbusinessunitid` | GUID | The business unit that owns the created journey. |
 
 ## Response properties
@@ -74,7 +74,7 @@ Content-Type: application/json
     "msdynmkt_journeytemplateid": "12345678-1234-1234-1234-123456789012",
     "msdynmkt_journeyname": "Welcome Campaign Q1 2024",
     "msdynmkt_journeystarttime": "2025-09-15T09:00:00Z", //UTC time
-    "msdynmkt_journeyendtime": "2025-09-25 17:46:06 +02:00" //Timezone specified
+    "msdynmkt_journeyendtime": "2025-09-25 17:46:06 +02:00" //Time zone specified
 }
 ```
 
@@ -123,7 +123,7 @@ The `msdynmkt_jsonpathmodifications` parameter uses a JSON object where:
 | `$.exitCriteria.suppressionSegments` | Suppression segments | `["guid1", "guid2"]` |
 | `$.actions['action_guid'].parameters.contentId"` | Email template | `email template id` |
 | `$.actions['action_guid'].parameters.pushNotificationId"` | Push notification | `push notification id` |
-| `$.actions['action_guid'].parameters.smsId"` | Sms | `sms template id` |
+| `$.actions['action_guid'].parameters.smsId"` | SMS | `sms template id` |
 
 ### JSONPath modification example
 
@@ -140,7 +140,7 @@ The `msdynmkt_jsonpathmodifications` parameter uses a JSON object where:
 - The journey is created in a draft state.
 - You can edit and change the journey before activation.
 - You need to publish the journey manually through the user interface or a separate API call.
-- Some validation errors are ignored (for example message template - email/sms/push don't need to be in published state).
+- Some validation errors are ignored (for example, the message template for email, SMS, or push doesn't need to be in published state).
 
 ### Publish mode
 - The journey is created and published right away.
@@ -162,14 +162,14 @@ When `msdynmkt_isvalid` returns `false`, the `msdynmkt_errors` field has a JSON 
 | `InvalidJourneyJsonInTemplate` | Template contains invalid journey JSON | Contact administrator to fix the journey template. |
 | `InvalidJsonPath` | JSONPath not found in journey template | Verify the JSONPath expression matches the template structure. |
 | `InvalidJsonAfterModificationApplied` | JSON becomes invalid after applying modifications | Check that modification values are compatible with target fields. |
-| `UnableToSelectJsonToken` | Unable to select token in journey JSON due to exception | Verify JSONPath syntax and ensure the target element exists in the template. |
+| `UnableToSelectJsonToken` | Unable to select token in journey JSON due to exception | Verify the JSONPath syntax and ensure that the target element exists in the template. |
 | `UnableToApplyJourneyEntityFieldChanges` | Failed to apply entity field changes | Review field modifications and ensure all required properties are provided. |
 
 ### Data source and binding validation errors
 
 | Error Code | Description | Resolution |
 |------------|-------------|------------|
-| `EventDataSourceInNonEventJourney` | EventDataSource placeholder binding used in non-event journey | EventDataSource bindings can only be used in journeys with trigger type 'Event'. |
+| `EventDataSourceInNonEventJourney` | EventDataSource placeholder binding used in a non-event journey | EventDataSource bindings can only be used in journeys with an "Event" trigger type. |
 | `CdsProfileDataSourceInvalidSourceType` | CdsProfileDataSource sourceType not contained in journey's target entities | Ensure the sourceType matches one of the journey's target entity logical names. |
 | `InvalidEventDataSourceOutputPath` | EventDataSource outputPath doesn't exist in event metadata | Verify that the outputPath field exists in the referenced event's metadata. |
 
@@ -177,9 +177,9 @@ When `msdynmkt_isvalid` returns `false`, the `msdynmkt_errors` field has a JSON 
 
 | Error Code | Description | Resolution |
 |------------|-------------|------------|
-| `InvalidTimeZoneName` | Journey timezone is not a valid timezone identifier | Use a valid Windows timezone identifier (e.g., 'UTC', 'Eastern Standard Time'). |
+| `InvalidTimeZoneName` | Journey time zone isn't a valid time zone identifier | Use a valid Windows time zone identifier (for example, "UTC" or "Eastern Standard Time"). |
 | `WaitUntilTimeInPast` | DelayAction WaitUntil time is in the past | Set DelayAction WaitUntil time to a future date and time. |
-| `UnableToDeserializePlaceholderBinding` | Failed to deserialize placeholder binding | Check placeholder binding structure and ensure all required properties are valid. |
+| `UnableToDeserializePlaceholderBinding` | Failed to deserialize placeholder binding | Check the placeholder binding structure and ensure all required properties are valid. |
 
 ### Journey definition errors
 
@@ -245,10 +245,10 @@ When `msdynmkt_isvalid` returns `false`, the `msdynmkt_errors` field has a JSON 
 ```
 
 ## Internal properties
-Journey json contains many internal properies, which will be populated automatically based on provided data. You don't need to modify them:
-- Placeholderbindingp & placeholderBindingsOriginal objects are populated automatically based on selected message template.
-- messageDesignation, complianceSettingsId, purposeId, topicId are populated based on selected mesasge template.
-- persistedUIState object is populated based on selected message template
+The journey JSON contains many internal properties, which are populated automatically based on the provided data. You don't need to modify the following properties:
+- The `Placeholderbindingp` and `placeholderBindingsOriginal` objects are populated automatically based on the selected message template.
+- `messageDesignation`, `complianceSettingsId`, `purposeId`, and `topicId` are populated based on the selected message template.
+- The `persistedUIState` object is populated based on the selected message template.
 
 ## Best practices
 
@@ -263,15 +263,13 @@ Journey json contains many internal properies, which will be populated automatic
 1. **Path validation**: Test JSONPath expressions against the template structure.
 1. **Value compatibility**: Make sure modification values match the expected data types.
 1. **Escaping**: Escape special characters in JSON strings.
-1. **Case sensitivity**: Json path keys are case sensitive.
+1. **Case sensitivity**: JSON path keys are case sensitive.
 
 ### Error handling
 
 1. **Validation check**: Always check `msdynmkt_isvalid` before you continue.
-1. **Error parsing**: Parse the `msdynmkt_errors` JSON array for detailed error information. Items in array are objects with ErrorMessage and ErrorCode properties.
+1. **Error parsing**: Parse the `msdynmkt_errors` JSON array for detailed error information. Items in the array are objects with `ErrorMessage` and `ErrorCode` properties.
 1. **Retry logic**: Add retry logic for transient errors.
-
-
 
 ## Limitations
 
@@ -280,9 +278,9 @@ Journey json contains many internal properies, which will be populated automatic
 
 ## Related APIs
 
-- **Create Journey JSON From Template** (`msdynmkt_CreateJourneyJsonFromTemplate`): Create journey JSON without persisting.
-- **Validate journey json** (`msdynmkt_ValidateJourneyJson`): Validate journey json without creating journey entity.
-- **Publish journey**: (`msdynmkt_PublishJourneyV2`): Publish existing journey.
+- **Create Journey JSON From Template** (`msdynmkt_CreateJourneyJsonFromTemplate`): Create the journey JSON without persisting.
+- **Validate journey JSON** (`msdynmkt_ValidateJourneyJson`): Validate the journey JSON without creating a journey entity.
+- **Publish journey**: (`msdynmkt_PublishJourneyV2`): Publish the existing journey.
 
 ## SDK examples
 
