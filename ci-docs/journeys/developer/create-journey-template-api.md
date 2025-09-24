@@ -49,8 +49,8 @@ The **Create Journey From Template** API lets you create customer journeys from 
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `msdynmkt_jsonpathmodifications` | String | JSON string that represents a dictionary of JSONPath expressions and their replacement values to customize the template. |
-| `msdynmkt_journeystarttime` | DateTime | The start time for the journey. If specified, it must be in the future. |
-| `msdynmkt_journeyendtime` | DateTime | The end time for the journey. If specified, it must be after the start time. |
+| `msdynmkt_journeystarttime` | DateTime | The start time for the journey. If specified, it must be in the future. If no timezone is specified, UTC timezone is used. |
+| `msdynmkt_journeyendtime` | DateTime | The end time for the journey. If specified, it must be after the start time. If no timezone is specified, UTC timezone is used. |
 | `msdynmkt_createmode` | String | Creation mode: "Draft" (default) or "Publish". |
 | `msdynmkt_owningbusinessunitid` | GUID | The business unit that owns the created journey. |
 
