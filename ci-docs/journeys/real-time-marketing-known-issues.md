@@ -35,6 +35,7 @@ As we continue to work on Customer Insights - Journeys and refine the experience
 - A single wait tile can't wait for longer than 90 days. If a longer than 90-day wait tile is needed, consider splitting the journey into multiple journeys.
 - When a new journey version is created, only participants who enter the journey after the version has been published will get the new journey version. In-progress journey participants remain on the journey version they started on. This impacts the way analytics are shown across the journeys as well.
 - Sometimes, journeys that have a large exclusion audience list, especially for a large segment that orchestrates the journey, will encounter issues. In these cases, it's better to bring the exclusion list into the segment definition so that it can be processed better.
+- When designing journeys with large segments, using a static wait tile (e.g., “Wait until Sept 24 3:00 PM”) could cause delays in message delivery. To ensure smoother execution, consider using dynamic wait conditions.
 - Changing email links that are used for branching logic in live journeys may prevent participants from going down the correct path and isn't recommended.
 - One-time journeys with start dates that have already passed can't be edited (even after being copied).
 - Orchestration of segment-based journeys can only be done using a single segment in Customer Insights - Journeys.
