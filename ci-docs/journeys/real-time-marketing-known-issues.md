@@ -1,7 +1,7 @@
 ---
 title: Known issues in Customer Insights - Journeys with mitigations
 description: Learn about known issues in Customer Insights - Journeys and how to work around them.
-ms.date: 08/29/2025
+ms.date: 09/24/2025
 ms.topic: troubleshooting-known-issue
 author: alfergus
 ms.author: alfergus
@@ -23,7 +23,7 @@ As we continue to work on Customer Insights - Journeys and refine the experience
 - Business units aren't supported in the out-of-the-box Power BI aggregated analytics dashboards.
 - If there's an email remote bounce, the contact/lead timeline might display two "email delivered" interactions for the same message with the same time stamp despite no message being delivered to the contact/lead email address. This is because the second interaction is intended to "erase" the first one. However, this isn't currently being handled in the timeline.
 - When two contacts or leads are merged, only interactions of the primary contact or lead will be visible in contact/lead insights.
-- There might be cases where unique values (for example, unique opens and clicks) in aggregated analytics dashboards have a slight deviation when compared to operational analytics. KPIs in aggregated analytics are calculated once per day to ensure the highest possible accuracy. Operational analytics, designed for near real-time analysis, operate on demand utilizing faster calculation methods for unique values, which may be slightly less precise.
+- There might be cases where unique values (for example, unique opens and clicks) in aggregated analytics dashboards have a slight deviation when compared to operational analytics. Key performance indicators (KPIs) in aggregated analytics are calculated once per day to ensure the highest possible accuracy. Operational analytics, designed for near real-time analysis, operate on demand utilizing faster calculation methods for unique values, which may be slightly less precise.
 
 ## Customer journeys
 
@@ -33,8 +33,9 @@ As we continue to work on Customer Insights - Journeys and refine the experience
 - Journeys with multiple complex conditions or large amounts of tiles can fail to publish. If retrying a journey publish doesn’t succeed, consider splitting the journey into smaller journeys. You can also reach out to MS Support to seek product support on this.
 - A single journey instance can't run for more than 365 days. Once a participant starts a journey, that journey must end within that time frame or failures occur. If a journey longer than 365 days is needed, consider splitting the journey into multiple journeys.
 - A single wait tile can't wait for longer than 90 days. If a longer than 90-day wait tile is needed, consider splitting the journey into multiple journeys.
-- When a new journey version is created, only participants who enter the journey after the version has been published will get the new journey version. In-progress journey participants remain on the journey version they started on. This impacts the way analytics are shown across the journeys as well.
+- When a new journey version is created, only participants who enter the journey after the version has been published get the new journey version. In-progress journey participants remain on the journey version they started on. This impacts the way analytics are shown across the journeys as well.
 - Sometimes, journeys that have a large exclusion audience list, especially for a large segment that orchestrates the journey, will encounter issues. In these cases, it's better to bring the exclusion list into the segment definition so that it can be processed better.
+- When designing journeys with large segments, using a static Wait tile (for example, “Wait until September, 24 3:00 PM”) can cause delays in message delivery. To ensure smoother execution, consider using dynamic Wait conditions.
 - Changing email links that are used for branching logic in live journeys may prevent participants from going down the correct path and isn't recommended.
 - One-time journeys with start dates that have already passed can't be edited (even after being copied).
 - Orchestration of segment-based journeys can only be done using a single segment in Customer Insights - Journeys.
@@ -43,7 +44,7 @@ As we continue to work on Customer Insights - Journeys and refine the experience
 
 ## Emails and content blocks
 
-- Subject – 500 characters (including text to insert dynamic/conditional content) to 4000 characters.
+- Subject – 500 characters (including text to insert dynamic/conditional content) to 4,000 characters.
 - Body – 1 MB (including all dynamic/conditional content).
 - Marketers lack the ability to align elements in the email editor.
 - Marketers lack the ability to put layouts inside layouts in the email editor.
@@ -70,15 +71,15 @@ As we continue to work on Customer Insights - Journeys and refine the experience
 - A segment can be created for up to 100,000,000 contacts.
 - A segment-based journey will only work when the size of the segment is under 10M contacts. Any segment with a larger size fails to execute. To ensure that campaigns can run effectively, break down the larger segments into multiple segments that can use the same repeatable journey.
 (1) This is also true for any trigger-based journeys that rely on segments in the journey flow.
-- There's a limit of 100 contacts that can be added to an inclusion/exclusion group as part of the segment definition. To get around this, you can create a separate segment of customers and use that segment in your master segment definition thereby creating a compound segment.
-- Today, users can't edit a segment that is being used in a live journey in Customer Insights - Journeys. To be able to edit the segment, stop the journey, and then make the edits to the segments.
+- There's a limit of 100 contacts that can be added to an inclusion/exclusion group as part of the segment definition. To get around this, you can create a separate segment of customers and use that segment in your main segment definition thereby creating a compound segment.
+- Today, users can't edit a segment that's being used in a live journey in Customer Insights - Journeys. To be able to edit the segment, stop the journey, and then make the edits to the segments.
 - The segment execution records table (`msdynmkt_segmentexecution`) stores execution history data for segments. The table is used for (1) rendering the "member count over time" graph in real-time journeys segments and (2) allowing journeys to determine when a segment was updated. Over time, the `msdynmkt_segmentexecution` table can grow significancy in size, impacting storage usage and performance. **Mitigation**: It's safe to delete `msdynmkt_segmentexecution` records. Before deleting anything, you should determine how much historical data you want to keep. It's recommended to retain at least the last three months of execution records, but retention decisions depend on your unique data policies and business needs.
 
 ## Triggers
 
 - Today, there's a limit of 100 custom triggers that can be fired in an org per day. To increase this for your organization, create a support ticket or reach out to your Microsoft Representative, and we can work with you to support your use case.
 - When defining custom triggers, ensure that all attributes are defined. Any attribute that has a null value causes the trigger to fail leading to the customers not going through the journey. Today, we don't have the ability to allow null values to be passed in a custom, which then results in a System Failure as the error message at journey runtime.
-- Usage of Entity References in Custom or CDS triggers is limited to five hops. Any entity that is more than 5 hops away from the COLA entity, can't be used as an attribute in a journey.
+- Usage of Entity References in Custom or CDS triggers is limited to five hops. Any entity that's more than 5 hops away from the COLA entity, can't be used as an attribute in a journey.
 - When using the "Marketing Form Submitted" standard trigger for your journey care should be taken to ensure that the audience for the journey and the form are the same. Today, we don't display an error or warning when there's a mismatch, but the journey won't start leading to customer confusion.
 - Today, triggers also fire when a record is manually updated in Dynamics 365 Dataverse. This can cause a contact to go through the journey based on the trigger even if they don't do anything to activate it.
 - In rare instances, trigger-based journeys that use the if/then tile may encounter a delay in processing certain trigger events, which, in extreme situations, could result in the event not being captured. While this occurrence is highly uncommon, we continuously monitor and enhance our system to minimize any potential impact.
