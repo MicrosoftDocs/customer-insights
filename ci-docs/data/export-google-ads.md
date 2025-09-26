@@ -3,8 +3,8 @@ title: "Export segments to Google Ads"
 description: "Learn how to configure the connection and export to Google Ads."
 ms.date: 09/29/2025
 ms.topic: how-to
-author: JimsonChalissery
-ms.author: jimsonc
+author: Scott-Stabbert
+ms.author: sstabbert
 ms.reviewer: alfergus
 ---
 
