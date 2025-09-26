@@ -1,19 +1,17 @@
 ---
-title: "Set up and manage exports (preview)"
+title: "Set up and manage exports"
 description: "Manage exports to share data."
-author: JimsonChalissery
-ms.author: jimsonc
+author: Scott-Stabbert
+ms.author: sstabbert
 ms.reviewer: mhart
-ms.date: 12/11/2024
+ms.date: 09/29/2025
 ms.topic: how-to
 ms.custom:
   - bap-template
   - sfi-image-nochange
 ---
 
-# Set up and manage exports (preview)
-
-[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
+# Set up and manage exports
 
 All exports follow the same general set up and management process. You can also schedule exports. A common use case for exports of segments is to share lists of your customers to advertising services like Google Ads or Meta Ads for marketing purposes. A common use case for the export of full tables, which we call a data-out export, is to share data to Azure Data Lake Gen2, from where organizations can further process these tables with their custom solutions.
 
