@@ -1,7 +1,7 @@
 ---
-title: Prevent sending emails to duplicated email addresses (preview)
+title: Prevent duplicate emails to shared email addresses
 description: Learn how to deduplicate email addresses in Dynamics 365 Customer Insights - Journeys.
-ms.date: 09/04/2025
+ms.date: 09/30/2025
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
@@ -11,15 +11,11 @@ search.audienceType:
   - enduser
 ---
 
-# Prevent sending emails to duplicated email addresses (preview)
-
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+# Prevent duplicate emails to shared email addresses
 
 When email deduplication is enabled, the journey checks the email addresses of the contacts in the segment (once they reach the email tile) and only send one email to each unique address. For example, if three contacts have the same email address, only one of them receives the email. The other two are reported as **blocked** under the **Duplicate recipient address** category in the **Delivery and interaction details**.
 
 When email deduplication is disabled (default), the journey sends the email to every contact in the segment, even if they share an email address.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note.md)]
 
 ## How to enable email deduplication
 

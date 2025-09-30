@@ -182,7 +182,7 @@
           href: email-properties.md
         - name: Check your work using previews and test sends
           href: email-preview.md
-        - name: Prevent sending emails to duplicated email addresses (preview)
+        - name: Prevent duplicate emails to shared email addresses
           href: email-deduplication.md
         - name: Email accessibility checker
           href: email-accessibility.md
