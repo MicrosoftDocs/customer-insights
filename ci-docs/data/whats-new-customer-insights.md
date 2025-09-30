@@ -32,13 +32,13 @@ Improve the quality of your unified customer profiles and insights by filtering 
 
 Define merge preferences on individual columns of a table with Advanced merge preferences. For example, you can choose to keep the most recent email AND the most complete address from different records.
 
-- [Docs](data-unification-duplicates#select-merge-preferences)
+- [Docs](data-unification-duplicates.md#select-merge-preferences)
 
 #### Combine a group of fields in data unification
 
 Create a group of fields to treat as a single unit in your unified customer profiles. For example, combine the address fields into a group.
 
-- [Docs](data-unification-merge-tables#combine-a-group-of-fields)
+- [Docs](data-unification-merge-tables.md#combine-a-group-of-fields)
 
 #### Export segment audiences and insights to ad and marketing tech platforms
 
