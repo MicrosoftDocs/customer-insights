@@ -119,6 +119,7 @@ Combine separated fields to create a merged column.
 When you combine a group of fields, Customer Insights - Data treats the group as a single unit, and chooses the winner record based on a merge policy. When merging fields without combining them into a group, the system chooses the winner record for each field based on the table order ranking set up in the **Matching rules** step. If a field has a null value, Customer Insights - Data continues to look at the other data sources until it finds a value. If this mixes information in an unwanted way or you want to set a merge policy, combine the group of fields.
 
 #### Example
+
 Monica Thomson matches across three data sources: Loyalty, Online, and POS. Without combining the mailing address fields for Monica, the winner record for each field is based on the first ranked data source (Loyalty), except **Addr2** which is null. The winner record for **Addr2** is Suite 950 resulting in an incorrect mix of address fields (200 Cedar Springs Road, Suite 950, Dallas, TX 75255). To ensure data integrity, combine the address fields into a group. Grouping doesn't change how the data is stored or displayed.
 
 **Table1 - Loyalty**
@@ -139,7 +140,7 @@ Monica Thomson matches across three data sources: Loyalty, Online, and POS. With
 |----------------|----------------------|-----------|---------|-------|-------|
 | Monica Thomson | 100 Main Street      | Suite 100 | Seattle | WA    | 98121 |
 
-#### Create a group of fields (preview)
+#### Create a group of fields
 
 1. Select **Combine** > **Group of fields**.
 
