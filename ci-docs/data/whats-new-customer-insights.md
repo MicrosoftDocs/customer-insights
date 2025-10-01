@@ -1,7 +1,7 @@
 ---
 title: "What's new in Dynamics 365 Customer Insights - Data"
 description: "Information about new features, improvements, and bug fixes."
-ms.date: 07/01/2025
+ms.date: 09/29/2025
 ms.topic: whats-new
 author: colinbirkett
 ms.author: colinbirkett
@@ -16,6 +16,35 @@ We roll out updates on a region-by-region basis. So certain regions might see fe
 
 > [!TIP]
 > To submit and vote on feature requests and product suggestions, go to the [Dynamics 365 Application Ideas portal](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights).
+
+## October 2025
+
+### General availability
+
+#### Filter out unwanted data from your ingested data
+
+Improve the quality of your unified customer profiles and insights by filtering out unwanted rows from your source data directly in Customer Insights - Data. Removing old or incomplete rows that don’t provide value allows Customer Insights - Data to create higher quality insights in less time and saves having to filter out unwanted data in downstream processes.
+
+- [Release plan](/dynamics365/release-plan/2025wave2/customer-insights/dynamics365-customer-insights-data/filter-rows-columns-source-data-improved-processing)
+- [Docs](tables-filters.md)
+
+#### Advanced merge preferences in data unification
+
+Define merge preferences on individual columns of a table with Advanced merge preferences. For example, you can choose to keep the most recent email AND the most complete address from different records.
+
+- [Docs](data-unification-duplicates.md#select-merge-preferences)
+
+#### Combine a group of fields in data unification
+
+Create a group of fields to treat as a single unit in your unified customer profiles. For example, combine the address fields into a group.
+
+- [Docs](data-unification-merge-tables.md#combine-a-group-of-fields)
+
+#### Export segment audiences and insights to ad and marketing tech platforms
+
+Easily send your customer data to external platforms like Google Ads, Facebook Ads, Snapchat, LinkedIn Ads, or use SFTP (Secure File Transfer Protocol) to share data with downstream activation platforms. When you use the rich customer insights created in Customer Insights - Data, you can drive targeted marketing and advertising campaigns, perform analytics on almost any platform, optimize ad spending, and improve customer engagement.
+
+- [Release plan](/dynamics365/release-plan/2025wave2/customer-insights/dynamics365-customer-insights-data/export-data-azure-data-lake-storage-gen2)
 
 ## July 2025
 

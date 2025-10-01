@@ -1,20 +1,16 @@
 ---
-title: "Export segments to Snapchat (preview)"
+title: "Export segments to Snapchat"
 description: "Learn how to configure the connection and export to Snapchat."
-ms.date: 07/17/2025
+ms.date: 09/29/2025
 ms.reviewer: alfergus
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
 ---
 
-# Export segments to Snapchat (preview)
-
-[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
+# Export segments to Snapchat
 
 Export segments of unified customer profiles to Snapchat to use them for advertising.
-
-[!INCLUDE [public-preview-note](includes/public-preview-note.md)]
 
 ## Prerequisites
 
