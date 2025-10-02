@@ -1,7 +1,7 @@
 ---
-title: Use the events API in real-time journeys (preview)
+title: Use the events API in real-time journeys
 description: Learn how to use the events API to access date from events, sessions, session tracks, and passes in real-time journeys.
-ms.date: 07/16/2025
+ms.date: 10/02/2025
 ms.topic: overview
 author: alfergus
 ms.author: colinbirkett
@@ -10,17 +10,12 @@ search.audienceType:
 ms.custom: sfi-image-nochange
 ---
 
-# Use the events API in real-time journeys (preview)
-
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-
+# Use the events API in real-time journeys
 [!INCLUDE [consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
 
-The events API is a programmatic method to access data of events, sessions, session tracks, passes, speakers, and sponsorships. Additionally, it allows you to register for events and sessions.
+The events API is a programmatic method to access data of events, sessions, session tracks, passes, speakers, and sponsorships. Additionally, it allows you to register for events and sessions. 
 
-The API access is over HTTPS protocol and is accessed from the API endpoint that you receive while creating a web application token. All data is sent and received as JSON.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note.md)]
+The API access is over HTTPS protocol and is accessed from the API endpoint that you receive while creating a web application token. All data is sent and received as JSON. 
 
 ## Register for the events API
 
@@ -36,6 +31,108 @@ You can select the link and copy and paste the API contract to an OpenAPI editor
 
 :::image type="content" source="../media/event-api-swagger.png" alt-text="Event API Swagger Editor screenshot." lightbox="../media/event-api-swagger.png":::
 
+## Create event page or event portal  
+
+The API allows you to create a customized event page as well as event portal that will list all available events that are live and published using publishing option: “Custom solution using event API”. The API will allow you to:  
+- Retrieve list of live events with their name, description, location and time
+- For the event page, it will then allow you to retrieve information about the event with key information such as:
+  -- Name
+  -- Time
+  -- Location
+  -- Event QR code
+  -- Capacity
+  -- List of sessions
+  -- List of speakers
+  -- List of sponsors and their logos
+
+## Create custom event registration experience  
+
+The API also allows you to create a registration submission without the need to use real-time marketing forms, while still benefiting from important features such as matching strategy, consent, audience settings and more. 
+
+First, define the key settings for your audience by navigating to Settings > Event management > Event registration settings and define: 
+1. Default Audience
+2. Default Matching rule
+3. Default Compliance profile 
+
+The default Event registration settings will then be used when processing submissions via the API. Once you set the registration settings, the event API submission endpoint allows you to:  
+
+1. Create a registration submission for an event  
+
+{ 
+    "attendees": [ 
+        { 
+            "lastName": "Sample Contact Last Name", 
+            "firstName": "Sample Contact First Name", 
+            "email": "email@contoso.com", 
+            "responses": [ 
+                { 
+                    "id": "jobtitle", 
+                    "value": "Sample Contact Job Title" 
+                }, 
+                { 
+                    "id": "customUnmappedField1", 
+                    "value": "Sample Custom Unmapped Field 1" 
+                }, 
+                { 
+                    "id": "customUnmappedField2", 
+                    "value": "Sample Custom Unmapped Field 2" 
+                } 
+            ] 
+        } 
+    ] 
+} 
+
+ 
+2. Create a registration submission for a session 
+
+{ 
+    "attendees": [ 
+        { 
+            "lastName": "Sample Contact Last Name", 
+            "firstName": "Sample Contact First Name", 
+            "email": "email@contoso.com", 
+            "responses": [ 
+                { 
+                    "id": "jobtitle", 
+                    "value": "Sample Contact Job Title" 
+                } 
+            ], 
+            "attendeeSessions": [ 
+                { 
+                    "sessionId": "d5f513c6-989f-f011-bbd3-000d3a5b6385" 
+                }, 
+                { 
+                    "sessionId": "f5d4e4b9-989f-f011-bbd3-000d3a5b6385" 
+                } 
+            ] 
+        } 
+    ] 
+} 
+
+3. Create a waitlist registration  
+{ 
+    "attendees": [ 
+        { 
+            "lastName": "Sample Contact Last Name", 
+            "firstName": "Sample Contact First Name", 
+            "email": "email@contoso.com", 
+            "waitlisted": true, 
+            "responses": [ 
+                { 
+                    "id": "jobtitle", 
+                    "value": "Sample Contact Job Title" 
+                }, 
+                { 
+                    "id": "customUnmappedField1", 
+                    "value": "Sample Custom Unmapped Field 1" 
+                }, 
+                { 
+                    "id": "customUnmappedField2", 
+                    "value": "Sample Custom Unmapped Field 2" 
+                } 
+            ] 
+        } 
+    ] 
 ## Backward compatibility with the outbound marketing API
 
 The aim for the real-time journeys API is to be backward compatible contract-wise. There are, however, a few limitations. The real-time journeys API doesn't support user authentication. Operations like CAPTCHA and registration to outbound events are supported only as long as the organization has outbound marketing provisioned. If you previously used an Angular client application, you can switch the **apiEndpoint** property from the outbound marketing endpoint that looked like `https://<your org alias>.svc-tip.dynamics.com/EvtMgmt/api/v2.0/` to the endpoint specified in `Endpoint (Preview)`, which looks something like `https://public-<your org geo>.mkt.dynamics.com/api/v1.0/orgs/<your org id>/eventmanagement/`

@@ -1,7 +1,7 @@
 ---
 title: Build an event registration portal with Power Pages
 description: Build an event registration portal with Power Pages. Learn how to create, customize, and publish your event registration website using the event registration template.
-ms.date: 06/26/2025
+ms.date: 10/02/2025
 ms.topic: how-to
 author: petrjantac
 ms.author: colinbirkett
@@ -67,7 +67,7 @@ If you encounter any issues while creating or editing your website, refer to the
 
 ### Publish events to the Power Pages Event Portal
 
-1. Create a new event or edit an existing one: Navigate to the **Website and form** tab. Select **Power Pages Website** as the destination of *Where do you want attendees to register for this event?* Your default **Registration website** is automatically set. You can also change the form used for the event. Each event can use a different form, although these events are hosted on the same website.
+1. Create a new event or edit an existing one: Navigate to the **General** tab. Select **Power Pages Website** as the destination of *Where do you want attendees to register for this event?* Your default **Registration website** is automatically set. You can also change the form used for the event. Each event can use a different form, although these events are hosted on the same website.
     :::image type="content" source="media/event-pp-template-new-event.png" alt-text="Create a new event." lightbox="media/event-pp-template-new-event.png":::
 1. Save your event and select **Go Live**.
 1. View your event listed in the preview or live version of your Power Pages website.
