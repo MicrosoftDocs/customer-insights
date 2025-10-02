@@ -21,7 +21,7 @@ Double opt-in (also known as Confirmed opt-in) is a process that requires contac
 1. On submitting the form, the contact (or lead) is shown a page that tells them to check their email for a confirmation message that includes a link the contact must select to confirm their request.
 1. Customer Insights - Journeys sends a confirmation email to the address registered for the contact (or lead).
 1. The contact (or lead) opens the confirmation email, reads the text, and selects the link. This opens a web browser, which submits a coded URL that identifies the contact (or lead) to Customer Insights - Journeys.
-1. Customer Insights - Journeys acts upon selection, creates a contact (or lead), records or updates it, and records the consent. A 'Thank you' page is then redirected to the contact.
+1. Once Double opt-in confirmation is finished, the systems creates a new or updates existing contact (or lead) and corresponding consent records. A 'Thank you' page is then redirected to the contact.
 
 > [!IMPORTANT]
 > The link in the confirmation email remains valid for only 28 days. After that period, the user who received the email can't confirm their opt-in.
