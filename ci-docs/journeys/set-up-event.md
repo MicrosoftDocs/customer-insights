@@ -1,7 +1,7 @@
 ---
 title: Set up an event
 description: How to plan an event, register basic info, set up your team, manage sessions and speakers, set the event schedule, issue passes,  and manage venues in Dynamics 365 Customer Insights - Journeys.
-ms.date: 01/22/2025
+ms.date: 10/02/2025
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -40,13 +40,13 @@ Here you can see and edit your basic event information, including:
     - **Event type**: Choose the type of event. The event type is for information only and won't affect any features. Use it to make your event easier to find and identify.
     - **Registration count**: Shows the number of people who registered for the event. The maximum value that can be shown here is 50,000, but you can still store more registrations in the system.
     - **Check-in count**: Shows the number of attendees that checked in during the event. The maximum value that can be shown here is 50,000, but you can still store more check-ins in the system.
+    - **Event image**: Allows you to select an image to represent your event. 
     - **Event URL**: Shows the address of your event website. If you're using the default location on your Power Apps portals solution, the event URL value is read-only and provided automatically. If you're hosting your website at a custom location, then select the Custom event URL check box and edit the value here. Select the globe button next the event URL field to open the site.
 - **Schedule**: Provides settings for specifying the time zone, start, and end dates for your event. The schedule section also provides a countdown of the days until your event. You can also set up a recurring event here. If you change the start date for an event that's already been saved, you'll be asked whether you want to change the end date and the session schedule to match it.
-- **Timeline**: As with most types of entities in Dynamics 365, you can use this section to build a record of the activities (such as calls, emails, and appointments) that you and others do in relation to the current record. You can also share notes here. Use the links, buttons, and menus at the top of this area to create new items and to search and sort the list.
+- **Publishing**: Allows you to decide where and how will your attendees register for your event. More information: [Create an event registration experience](ci-docs/journeys/event-registration-experience.md)
 - **Stream this event online**: Set up your event as a Microsoft Teams webinar, a Teams Live Event, a Teams Meeting, or on-site only.
+- **Capacity**: Set the capacity for your event. For on-site events, the maximum event capacity value shown updates to match the capacity configured for your last selected building, room, or layout (if available). If needed, you can edit the value manually to override the capacity figure. And enable waitlist. More information: [Set up and manage waitlist](ci-docs/journeys/set-up-and-manage-waitlist.md)
 - **Location**: Specify the location where your event takes place. The location is hierarchical, and you can specify only as much detail as you need. For example, you can specify just a building. But to specify a room, you must first choose the building that contains that room. You can assign a separate location to each session if applicable. You can create location records from here, or choose from among existing venue records. Each location record can contain useful information such as address, facilities, capacity, and more.
-- **Capacity**: Set the capacity for your event. For on-site events, the maximum event capacity value shown updates to match the capacity configured for your last selected building, room, or layout (if available). If needed, you can edit the value manually to override the capacity figure. 
-- **Webinar setup**: The webinar setup section only appears for webinar and hybrid events. Use the settings here to set up your webinar configuration and find the URLs for viewing and presenting the webinar.
 
 <a name="agenda-tab"></a>
 
@@ -59,34 +59,26 @@ The **Agenda** tab includes details about the schedule of sessions happening dur
 - **Speaker engagements**: Each [speaker engagement](#speakers) maps a speaker to a session occurring at your event.
 - **Sponsors**: Companies who are [sponsoring the event](manage-event-sponsorships.md).
 
-### The Website and form tab
+### The Form tab
 
 > [!NOTE]
-> The event portal landing page (event website) isn't currently available in real-time journeys. However, [marketing forms](real-time-marketing-form-create.md) for registration can serve as a viable alternative to showcase event details and facilitate the registration process.
+> This tab was previously called Website and Form tab and it hosted also Publishing options. Publishing options have now moved to the General tab.
 
-The Website and form tab provides options to set registration parameters. First, you can decide where do you want attendees to register for your event:
-- On a standalone registration page:
-    - Use this option if you want to create a registration page using Customer Insights - Journeys registration forms and use Customer Insights - Journeys to host the page.
-      > [!div class="mx-imgBorder"]
-      > ![Screenshot of the website form to fill registration](media/real-time-marketing-registration-parameters.png "Screenshot of the website form to fill registration")
-- On your own website:
-    - Use this option if you want to use your own website to collect registrations. In this case, you need to provide the event URL, and decide if you want to use Customer Insights - Journeys registration forms. In this case, you can copy Java scrip code of the form to embed it on your website.
-      > [!div class="mx-imgBorder"]
-      > ![Screenshot of using personal website form to fill registration](media/real-time-marketing-personal-website-registration-details.png "Screenshot of using personal website form to fill registration")
-- This event doesn't have a website:
-    - Use this option if you want to collect registrations elsewhere or not collect them at all.
- 
-Under the registration page options, you can edit an existing event registration form, select another, create a new form, or define other registration settings: 
+The Form tab provides options to set registration parameters and preview the registration form with dynamic preview.
+:::image type="content" source="ci-docs/journeys/media/formtab.png" alt-text="Form tab showing registration settings." lightbox="ci-docs/journeys/media/formtab.png":::
+
+Under the registration form options, you can edit an existing event registration form, select another, create a new form, or define other registration settings: 
 - **Create leads for event registrations**: If enabled, a new lead is generated for each registration and linked to the appropriate contact.
 - **Allow attendees to register for sessions**: If enabled, attendees can register for sessions. Learn more: [Set up session-level registration](real-time-journeys-event-session.md). 
     > [!Important]
     > The **Allow attendees to register for sessions** setting used to be on the **Agenda** tab and was called "Allow registrants to create their own agenda."
+- **Registration period**: Allows you to define when is the registration period opened. You can define registration start and end date. The dates will be in the event timezone. In the form, you can customize the message that should be shown to attendees before and after the registration period. To edit the message, navigate to the form settings and under submission, define Pre-registration notification and Registration closed notification. :::image type="content" source="ci-docs/journeys/media/registrationperiodnotification.png" alt-text="Registration period notification settings." lightbox="ci-docs/journeys/media/registrationperiodnotification.png":::
 
 ### The Registration and attendance tab
 
 Use the **Registration and attendance** tab to see who registered for the event and who attended. You can also create registrations and check-ins here. The following sections are available:
 - Event registration: This table provides a list of people who [registered](invite-register-house-event-attendees.md) for your event. You can also [register people manually](invite-register-house-event-attendees.md) here. If you're using [custom registration fields](custom-registration-fields.md), then you can also view the values submitted by each attendee here.
-- Event check-ins: Here you can see who attended the event and enter attendance records.
+- Event check-ins: Here you can see who attended the event and enter attendance records. When a check in record is created, the status if the registration in the registration table will change to "Checked in" and the check-in record will be visible in this table together with time and date.
 
 ### The Additional information tab
 
