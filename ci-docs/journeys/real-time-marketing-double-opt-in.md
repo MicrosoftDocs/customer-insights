@@ -61,7 +61,7 @@ To enable double opt-in:
 
 You can configure double opt-in for each [compliance profile](real-time-marketing-compliance-settings.md#compliance-profiles).
 
-Once you enable double opt-in for a compliance profile, any form that captures consent for the purposes/topics of the compliance profile automatically has double opt-in enabled for their submissions.
+Once you enable double opt-in for a compliance profile, all newly created forms that capture consent for the purposes/topics of the compliance profile automatically have double opt-in enabled for their submissions.
 
 ## Set up double opt-in for a compliance profile
 
