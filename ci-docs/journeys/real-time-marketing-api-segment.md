@@ -54,7 +54,7 @@ The payload contains the following properties:
 - **msdynmkt_staticlistmembers**: A list of static members groups that should be included in or excluded from the segment. The list is encoded as serialized json. Each member of the list represents one static members group and has the following structure:
     ```
     {
-        groupId: string, // ID of the group as a GUID, needs to be unique within each segment
+        groupId: string, // ID of the group as a GUID, which needs to be unique within each segment
         includeType: StaticListIncludeType,
         name: string, // any human-readable name of the group
         inputType: StaticListInputType
@@ -78,6 +78,9 @@ The payload contains the following properties:
 
 > [!Note]
 > Adding the `msdynmkt_sourcesegmentcreatedon` and `msdynmkt_sourcesegmentcreatedby` fields isn't mandatory. The segment still works without these fields, but the two fields won't populate if not added to the payload.
+
+> [!NOTE]
+> Each segment definition entity can define at most 10 static members groups in the `msdynmkt_staticlistmembers` field.
 
 #### Example request
 
@@ -197,7 +200,7 @@ OData-EntityId: <Organization URL>/api/data/v9.0/msdynmkt_segments(<Segment ID>)
 
 ```
 
-## Add Static Segment Members
+## Add static segment members
 
 For segments with segment definitions which define one or more static members groups, this API request can be used to insert members to such group.
 
@@ -205,7 +208,7 @@ For segments with segment definitions which define one or more static members gr
 
 The API request is sent via HTTP POST to the API endpoint. The API method `(msdynmkt_AddStaticMembers)` is specified in the URL.
 
-### Payload:
+### Payload
 
 ```
 {
@@ -223,7 +226,7 @@ The API request is sent via HTTP POST to the API endpoint. The API method `(msdy
 > [!NOTE]
 > Each static members group can contain at most 200 000 entity ids in total.
 
-## Remove Static Segment Members
+## Remove static segment members
 
 For segments with segment definitions which define one or more static members groups, this API request can be used to delete members from such group.
 
@@ -231,7 +234,7 @@ For segments with segment definitions which define one or more static members gr
 
 The API request is sent via HTTP POST to the API endpoint. The API method `(msdynmkt_RemoveStaticMembers)` is specified in the URL.
 
-### Payload:
+### Payload
 
 ```
 {
@@ -245,7 +248,7 @@ The API request is sent via HTTP POST to the API endpoint. The API method `(msdy
 }
 ```
 
-## View Static Segment Members
+## View static segment members
 
 For segments with segment definitions which define one or more static members groups, this API request can be used to view members of such group.
 
@@ -253,7 +256,7 @@ For segments with segment definitions which define one or more static members gr
 
 The API request is sent via HTTP POST to the API endpoint. The API method `(msdynmkt_ListGroupMembers)` is specified in the URL.
 
-### Payload:
+### Payload
 
 ```
 {
@@ -261,6 +264,15 @@ The API request is sent via HTTP POST to the API endpoint. The API method `(msdy
     "GroupId": "<Group ID>",
     "PageNo": number, // a number >= 1
     "PageSize": number // a number >= 1
+}
+```
+
+### Response
+
+```http
+{
+    "@odata.context": "<Organizaiton URL>/api/data/v9.0/$metadata#Microsoft.Dynamics.CRM.msdynmkt_ListGroupMembersResponse",
+    "Response": "{\"entityIds\":[\"b1bf9a01-b056-e711-abaa-00155d701c02\",\"b3bf9a01-b056-e711-abaa-00155d701c02\"],\"additionalProperties\":{}}"
 }
 ```
 
