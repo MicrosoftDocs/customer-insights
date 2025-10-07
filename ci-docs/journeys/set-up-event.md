@@ -75,7 +75,7 @@ Under the registration form options, you can edit an existing event registration
     > The **Allow attendees to register for sessions** setting used to be on the **Agenda** tab and was called "Allow registrants to create their own agenda."
 - **Registration period**: Allows you to define when the registration period is opened. You can define the registration start and end date. The dates are in the event timezone. In the form, you can customize the message that's shown to attendees before and after the registration period. To edit the message, navigate to the form settings and under submission, define the preregistration notification and registration closed notification. 
 
-    :::image type="content" source="ci-docs/journeys/media/registrationperiodnotification.png" alt-text="Registration period notification settings." lightbox="ci-docs/journeys/media/registrationperiodnotification.png":::
+    :::image type="content" source="/media/registration-period-notification.png" alt-text="Registration period notification settings." lightbox="/media/registration-period-notification.png":::
 
 ### The Registration and attendance tab
 
