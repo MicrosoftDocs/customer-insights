@@ -51,8 +51,26 @@ The payload contains the following properties:
     - 723270001 = Draft
     - 723270002 = Going live
     - 723270003 = Deleted
-- **msdynmkt_staticlistmembers**: A list of static member groups that should be included in or excluded from the segment. The list is encoded as serialized json. The format is a serialized json list, where list members have the following structure:
+- **msdynmkt_staticlistmembers**: A list of static members groups that should be included in or excluded from the segment. The list is encoded as serialized json. Each member of the list represents one static members group and has the following structure:
+    ```
+    {
+        groupId: string, // ID of the group as a GUID, needs to be unique within each segment
+        includeType: StaticListIncludeType,
+        name: string, // any human-readable name of the group
+        inputType: StaticListInputType
+    }
 
+    enum StaticListIncludeType
+    {
+        "Include", // members of this group will always be included in segment members
+        "Exclude" // members of this group will always be excluded from segment members
+    }
+
+    enum StaticListInputType
+    {
+        "manualSelect"
+    }
+    ```
 - **msdynmkt_disablesegmentrefresh**: A boolean value that indicates whether automatic segment refreshing should be disabled.
 - **msdynmkt_segmentrefreshintervalminutes**: An integer value that specifies the refresh interval in minutes.
 - **msdynmkt_sourcesegmentcreatedon**: A date field to describe the date of segment creation.
@@ -177,6 +195,73 @@ HTTP/1.1 204 No Content
 OData-Version: 4.0
 OData-EntityId: <Organization URL>/api/data/v9.0/msdynmkt_segments(<Segment ID>)
 
+```
+
+## Add Static Segment Members
+
+For segments with segment definitions which define one or more static members groups, this API request can be used to insert members to such group.
+
+`POST <Organization URL>/api/data/v9.0/msdynmkt_AddStaticMembers`
+
+The API request is sent via HTTP POST to the API endpoint. The API method `(msdynmkt_AddStaticMembers)` is specified in the URL.
+
+### Payload:
+
+```
+{
+    "SegmentId": "<Segment ID>",
+    "GroupId": "<Group ID>",
+    // at most 1000 entity ids
+    "EntityIds: [
+      <Entity ID 1>,
+      <Entity ID 2>,
+      ...
+    ]
+}
+```
+
+> [!NOTE]
+> Each static members group can contain at most 200 000 entity ids in total.
+
+## Remove Static Segment Members
+
+For segments with segment definitions which define one or more static members groups, this API request can be used to delete members from such group.
+
+`POST <Organization URL>/api/data/v9.0/msdynmkt_RemoveStaticMembers`
+
+The API request is sent via HTTP POST to the API endpoint. The API method `(msdynmkt_RemoveStaticMembers)` is specified in the URL.
+
+### Payload:
+
+```
+{
+    "SegmentId": "<Segment ID>",
+    "GroupId": "<Group ID>",
+    "EntityIds: [
+      <Entity ID 1>,
+      <Entity ID 2>,
+      ...
+    ]
+}
+```
+
+## View Static Segment Members
+
+For segments with segment definitions which define one or more static members groups, this API request can be used to view members of such group.
+
+`POST <Organization URL>/api/data/v9.0/msdynmkt_ListGroupMembers`
+
+The API request is sent via HTTP POST to the API endpoint. The API method `(msdynmkt_ListGroupMembers)` is specified in the URL.
+
+### Payload:
+
+```
+{
+    "SegmentId": "<Segment ID>",
+    "GroupId": "<Group ID>",
+    "PageNo": number, // a number >= 1
+    "PageSize": number // a number >= 1
+}
 ```
 
 ## Publish
