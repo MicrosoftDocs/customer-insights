@@ -107,7 +107,7 @@ Now you need to set up a text message reminder to be sent one hour before the ev
 1. In the **Channel optimization** pane, set **Display name** to **One-hour reminder optimization**.
 1. Select the **Email** action below the **Channel optimization** element, then select your one-hour reminder email. Likewise, select the **Text message** action, then select your one-hour reminder text message.
 
-        > [!div class="mx-imgBorder"]
+    > [!div class="mx-imgBorder"]
     > ![Screenshot of event optimization pane showing channel selection and optimization options.](media/event-engagement-event-optimization.png "event optimization")
 
 1. Notice that the **Channel optimization** element shows a red warning sign because a **Goal** isn't set. In this journey, the goal is to get attendees to check in to the event. To optimize for the goal, select the Channel optimization element. For **Journey goal**, select **Custom goal** for **The goal of this journey is**. Under the **Title** dropdown, enter **Drive event check-in attendance** as the name of your custom goal, then select the **+** sign. For **This goal is met when**, search for and select the **Event Check-in** trigger. Enter **50%** for **The number of people needed is**. This percentage means the Customer Insights - Journeys app considers the goal met when 50 percent of people who registered for the event check-in.
