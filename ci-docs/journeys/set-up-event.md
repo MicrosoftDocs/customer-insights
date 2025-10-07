@@ -66,7 +66,7 @@ The **Agenda** tab includes details about the schedule of sessions happening dur
 
 The Form tab provides options to set registration parameters and preview the registration form with dynamic preview.
 
-:::image type="content" source="ci-docs/journeys/media/formtab.png" alt-text="Form tab showing registration settings." lightbox="ci-docs/journeys/media/formtab.png":::
+:::image type="content" source="/media/form-tab.png" alt-text="Form tab showing registration settings." lightbox="/media/form-tab.png":::
 
 Under the registration form options, you can edit an existing event registration form, select another, create a new form, or define other registration settings: 
 - **Create leads for event registrations**: If enabled, a new lead is generated for each registration and linked to the appropriate contact.
