@@ -43,9 +43,9 @@ Here you can see and edit your basic event information, including:
     - **Event image**: Allows you to select an image to represent your event. 
     - **Event URL**: Shows the address of your event website. If you're using the default location on your Power Apps portals solution, the event URL value is read-only and provided automatically. If you're hosting your website at a custom location, then select the Custom event URL check box and edit the value here. Select the globe button next the event URL field to open the site.
 - **Schedule**: Provides settings for specifying the time zone, start, and end dates for your event. The schedule section also provides a countdown of the days until your event. You can also set up a recurring event here. If you change the start date for an event that's already been saved, you are asked whether you want to change the end date and the session schedule to match it.
-- **Publishing**: Allows you to decide where and how your attendees register for your event. More information: [Create an event registration experience](ci-docs/journeys/event-registration-experience.md).
+- **Publishing**: Allows you to decide where and how your attendees register for your event. More information: [Create an event registration experience](event-registration-experience.md).
 - **Stream this event online**: Set up your event as a Microsoft Teams webinar, a Teams Live Event, a Teams Meeting, or on-site only.
-- **Capacity**: Set the capacity for your event. For on-site events, the maximum event capacity value displayed updates to match the capacity configured for your last selected building, room, or layout (if available). If needed, you can edit the value manually to override the capacity figure. You can also enable a waitlist. More information: [Set up and manage waitlist](ci-docs/journeys/set-up-and-manage-waitlist.md).
+- **Capacity**: Set the capacity for your event. For on-site events, the maximum event capacity value displayed updates to match the capacity configured for your last selected building, room, or layout (if available). If needed, you can edit the value manually to override the capacity figure. You can also enable a waitlist. More information: [Set up and manage waitlist](set-up-and-manage-waitlist.md).
 - **Location**: Specify the location where your event takes place. The location is hierarchical, and you can specify only as much detail as you need. For example, you can specify just a building. But to specify a room, you must first choose the building that contains that room. You can assign a separate location to each session if applicable. You can create location records from here, or choose from among existing venue records. Each location record can contain useful information such as address, facilities, capacity, and more.
 
 <a name="agenda-tab"></a>
@@ -66,7 +66,7 @@ The **Agenda** tab includes details about the schedule of sessions happening dur
 
 The Form tab provides options to set registration parameters and preview the registration form with dynamic preview.
 
-:::image type="content" source="/media/form-tab.png" alt-text="Form tab showing registration settings." lightbox="/media/form-tab.png":::
+:::image type="content" source="media/form-tab.png" alt-text="Form tab showing registration settings." lightbox="media/form-tab.png":::
 
 Under the registration form options, you can edit an existing event registration form, select another, create a new form, or define other registration settings: 
 - **Create leads for event registrations**: If enabled, a new lead is generated for each registration and linked to the appropriate contact.
@@ -75,7 +75,7 @@ Under the registration form options, you can edit an existing event registration
     > The **Allow attendees to register for sessions** setting used to be on the **Agenda** tab and was called "Allow registrants to create their own agenda."
 - **Registration period**: Allows you to define when the registration period is opened. You can define the registration start and end date. The dates are in the event timezone. In the form, you can customize the message that's shown to attendees before and after the registration period. To edit the message, navigate to the form settings and under submission, define the preregistration notification and registration closed notification. 
 
-    :::image type="content" source="/media/registration-period-notification.png" alt-text="Registration period notification settings." lightbox="/media/registration-period-notification.png":::
+    :::image type="content" source="media/registration-period-notification.png" alt-text="Registration period notification settings." lightbox="media/registration-period-notification.png":::
 
 ### The Registration and attendance tab
 
