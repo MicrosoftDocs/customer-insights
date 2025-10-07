@@ -30,8 +30,7 @@ The <**Organization URL**> part should be replaced with the actual URL of the or
     msdynmkt_segmentquery: string,
     statecode: StateCode,
     statuscode: SegmentDefinitionStatusCode,
-    msdynmkt_includedmembers: string,
-    msdynmkt_excludedmembers: string,
+    msdynmkt_staticlistmembers: string,
     msdynmkt_disablesegmentrefresh: boolean,
     msdynmkt_segmentrefreshintervalminutes: number
     msdynmkt_sourcesegmentcreatedon: date
@@ -52,8 +51,8 @@ The payload contains the following properties:
     - 723270001 = Draft
     - 723270002 = Going live
     - 723270003 = Deleted
-- **msdynmkt_includedmembers**: A string that contains a list of GUIDs of members that should be included in the segment.
-- **msdynmkt_excludedmembers**: A string that contains a list of GUIDs of members that should be excluded from the segment.
+- **msdynmkt_staticlistmembers**: A list of static member groups that should be included in or excluded from the segment. The list is encoded as serialized json. The format is a serialized json list, where list members have the following structure:
+
 - **msdynmkt_disablesegmentrefresh**: A boolean value that indicates whether automatic segment refreshing should be disabled.
 - **msdynmkt_segmentrefreshintervalminutes**: An integer value that specifies the refresh interval in minutes.
 - **msdynmkt_sourcesegmentcreatedon**: A date field to describe the date of segment creation.
@@ -76,10 +75,7 @@ Accept: application/json
     "msdynmkt_segmentquery": "PROFILE(contact).FILTER(ISNOTNULL(address1_county))",
     "statecode": 0,
     "statuscode": 723270001,
-    // Separate GUIDs by a comma
-    "msdynmkt_includedmembers": "<member GUID>",
-    // Separate GUIDs by a comma
-    "msdynmkt_excludedmembers": "<member GUID>",
+    "msdynmkt_staticlistmembers": "[{\"groupId\":\"0f5b0c7f-395d-447b-b14c-315a601f878e\",\"includeType\":\"Include\",\"name\":\"My Include Members Group\",\"inputType\":\"manualSelect\"}]",
     "msdynmkt_disablesegmentrefresh": false,
     "msdynmkt_segmentrefreshintervalminutes": 15
 }
