@@ -1,7 +1,7 @@
 ---
 title: Create a Customer Insights - Journeys segment using the Web API
 description: Learn how to create a Customer Insights - Journeys segment using the Web API.
-ms.date: 04/03/2025
+ms.date: 10/07/2025
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
@@ -51,7 +51,7 @@ The payload contains the following properties:
     - 723270001 = Draft
     - 723270002 = Going live
     - 723270003 = Deleted
-- **msdynmkt_staticlistmembers**: A list of static members groups that should be included in or excluded from the segment. The list is encoded as serialized json. Each member of the list represents one static members group and has the following structure:
+- **msdynmkt_staticlistmembers**: A list of static members groups that should be included in or excluded from the segment. The list is encoded as serialized JSON. Each member of the list represents one static member group and has the following structure:
     ```
     {
         groupId: string, // ID of the group as a GUID, which needs to be unique within each segment
@@ -80,7 +80,7 @@ The payload contains the following properties:
 > Adding the `msdynmkt_sourcesegmentcreatedon` and `msdynmkt_sourcesegmentcreatedby` fields isn't mandatory. The segment still works without these fields, but the two fields won't populate if not added to the payload.
 
 > [!NOTE]
-> Each segment definition entity can define at most 10 static members groups in the `msdynmkt_staticlistmembers` field.
+> Each segment definition entity can define at most 10 static member groups in the `msdynmkt_staticlistmembers` field.
 
 #### Example request
 
@@ -202,11 +202,11 @@ OData-EntityId: <Organization URL>/api/data/v9.0/msdynmkt_segments(<Segment ID>)
 
 ## Add static segment members
 
-For segments with segment definitions which define one or more static members groups, this API request can be used to insert members to such group.
+For segments with segment definitions that define one or more static member groups, this API request can be used to *insert* members to the group.
 
 `POST <Organization URL>/api/data/v9.0/msdynmkt_AddStaticMembers`
 
-The API request is sent via HTTP POST to the API endpoint. The API method `(msdynmkt_AddStaticMembers)` is specified in the URL.
+The API request is sent using HTTP POST to the API endpoint. The API method `(msdynmkt_AddStaticMembers)` is specified in the URL.
 
 ### Payload
 
@@ -224,15 +224,15 @@ The API request is sent via HTTP POST to the API endpoint. The API method `(msdy
 ```
 
 > [!NOTE]
-> Each static members group can contain at most 200 000 entity ids in total.
+> Each static member group can contain at most 200,000 entity IDs in total.
 
 ## Remove static segment members
 
-For segments with segment definitions which define one or more static members groups, this API request can be used to delete members from such group.
+For segments with segment definitions that define one or more static member groups, this API request can be used to *delete* members from the group.
 
 `POST <Organization URL>/api/data/v9.0/msdynmkt_RemoveStaticMembers`
 
-The API request is sent via HTTP POST to the API endpoint. The API method `(msdynmkt_RemoveStaticMembers)` is specified in the URL.
+The API request is sent using HTTP POST to the API endpoint. The API method `(msdynmkt_RemoveStaticMembers)` is specified in the URL.
 
 ### Payload
 
@@ -250,11 +250,11 @@ The API request is sent via HTTP POST to the API endpoint. The API method `(msdy
 
 ## View static segment members
 
-For segments with segment definitions which define one or more static members groups, this API request can be used to view members of such group.
+For segments with segment definitions that define one or more static member groups, this API request can be used to *view members* of the group.
 
 `POST <Organization URL>/api/data/v9.0/msdynmkt_ListGroupMembers`
 
-The API request is sent via HTTP POST to the API endpoint. The API method `(msdynmkt_ListGroupMembers)` is specified in the URL.
+The API request is sent using HTTP POST to the API endpoint. The API method `(msdynmkt_ListGroupMembers)` is specified in the URL.
 
 ### Payload
 
