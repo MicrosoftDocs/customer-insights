@@ -1,7 +1,7 @@
 ---
 title: New and upcoming features
 description: Discover the latest features, improvements, and bug fixes in Dynamics 365 Customer Insights - Journeys. Stay updated with our monthly release notes.
-ms.date: 09/30/2025
+ms.date: 10/07/2025
 ms.update-cycle: 180-days
 ms.topic: whats-new
 author: alfergus
@@ -47,7 +47,7 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 - **Streamline event planning with set registration periods**
 	- Whether you're managing a product launch, a training session, or a customer summit, knowing your attendee count in advance brings structure and predictability to event planning. It helps you finalize logistics, allocate resources efficiently, avoid last-minute surprises, and reduce unnecessary costs from overbooking or under-preparing. By enforcing registration deadlines, teams can plan smarter and deliver more polished events with better decision-making and operational efficiency across event workflows. With minimized uncertainty and improved coordination, this functionality enhances the overall experience for both organizers and participants.
 	- [Release plan](/dynamics365/release-plan/2025wave2/customer-insights/dynamics365-customer-insights-journeys/streamline-event-planning-set-registration-periods) 
-	- [Docs]()
+	- [Docs](set-up-event.md#the-form-tab)
 
 - **Create event portals with event and registration details using Power Pages**
 	- The new event portal enables you to quickly create a comprehensive hub where customers can access event details, session specifics, and speaker schedules. Customers can conveniently register using the event registration form. You can deploy the portal through Power Pages and customize it to match your brand identity with Power Pages Studio.
@@ -75,12 +75,6 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 
 - **Allow users to only opt-in to select topics when filling in a form**
 	- 
-
-#### New blogs and scenario docs
-
-Learn how to make the most of the new Dynamics 365 Customer Insights features in our latest blogs and scenario docs:
-
-- 
 
 ### September 2025 update
 
