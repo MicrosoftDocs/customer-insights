@@ -141,3 +141,5 @@ With the content block ready, you can use it in your email and know that the ter
 
 - [Quickly design and deliver a marketing email with send now](email-quick-send.md)
 - [Send a targeted email blast in Customer Insights - Journeys](real-time-marketing-email-get-started.md)
+
+[!INCLUDE [footer-include](./includes/footer-banner.md)]
