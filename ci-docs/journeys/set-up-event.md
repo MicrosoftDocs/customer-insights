@@ -19,13 +19,13 @@ The event planning process in Dynamics 365 Customer Insights - Journeys starts w
 
 Creating an event record is the first step when setting up your event in Customer Insights - Journeys. Everything related to a given event will be stored either directly in the event record or in other records that are linked to that event.
 
-Though Customer Insights - Journeys offers many views into other record types, you'll probably do most of your work directly in the relevant event record. When working in the event record, you'll be able to view and create most types of related records and everything that you do will automatically be related to that event.
+Though Customer Insights - Journeys offers many views into other record types, you'll probably do most of your work directly in the relevant event record. When working in the event record, you can view and create most types of related records and everything that you do is automatically related to that event.
 
 You can see a list of all your event records by [opening the **Events** work area](open-events.md) and going to **Events** > **Event** > **Events**. From here you can use the standard list-view controls to search, sort, and filter the list to find and open an existing event, or to create a new event record.
 
-As with other forms in Dynamics 365, the event form provides a summary of its most important settings at the top, where you'll also find the business workflow timeline, which helps organize your work at each stage of the event-management process. A standard business workflow for events is provided out of the box, but you can customize it to match the process in place at your organization.
+As with other forms in Dynamics 365, the event form provides a summary of its most important settings at the top, where you also find the business workflow timeline, which helps organize your work at each stage of the event-management process. A standard business workflow for events is provided out of the box, but you can customize it to match the process in place at your organization.
 
-The first time you create a new event, you must specify values for each of the required fields (marked with a red asterisk). We recommend that you fill out the business-critical fields as well (select each business workflow item, then fill out the items marked with a blue plus sign). All required and business-critical fields are available at the top of the page in the business workflow, where you can fill them out quickly and easily. All settings that you enter in the business workflow will also be visible among the other event details further down the page. You can still view and edit these settings even after you move forward to the next stage in the workflow.
+The first time you create a new event, you must specify values for each of the required fields (marked with a red asterisk). We recommend that you fill out the business-critical fields as well (select each business workflow item, then fill out the items marked with a blue plus sign). All required and business-critical fields are available at the top of the page in the business workflow, where you can fill them out quickly and easily. All settings that you enter in the business workflow are also visible among the other event details further down the page. You can still view and edit these settings even after you move forward to the next stage in the workflow.
 
 After you enter values for all the required fields, you can save the record. You'll probably return to the event record many times over several days while you plan your event. Use the workflow as a to-do list and to track your progress during each stage.
 
@@ -37,15 +37,15 @@ Here you can see and edit your basic event information, including:
 
 - **Key information**: Includes the name of your event and other basic details. The following settings are provided:
     - **Event name**: Enter a name for the event.
-    - **Event type**: Choose the type of event. The event type is for information only and won't affect any features. Use it to make your event easier to find and identify.
+    - **Event type**: Choose the type of event. The event type is for information only and doesn't affect any features. Use it to make your event easier to find and identify.
     - **Registration count**: Shows the number of people who registered for the event. The maximum value that can be shown here is 50,000, but you can still store more registrations in the system.
     - **Check-in count**: Shows the number of attendees that checked in during the event. The maximum value that can be shown here is 50,000, but you can still store more check-ins in the system.
     - **Event image**: Allows you to select an image to represent your event. 
     - **Event URL**: Shows the address of your event website. If you're using the default location on your Power Apps portals solution, the event URL value is read-only and provided automatically. If you're hosting your website at a custom location, then select the Custom event URL check box and edit the value here. Select the globe button next the event URL field to open the site.
-- **Schedule**: Provides settings for specifying the time zone, start, and end dates for your event. The schedule section also provides a countdown of the days until your event. You can also set up a recurring event here. If you change the start date for an event that's already been saved, you'll be asked whether you want to change the end date and the session schedule to match it.
-- **Publishing**: Allows you to decide where and how will your attendees register for your event. More information: [Create an event registration experience](ci-docs/journeys/event-registration-experience.md)
+- **Schedule**: Provides settings for specifying the time zone, start, and end dates for your event. The schedule section also provides a countdown of the days until your event. You can also set up a recurring event here. If you change the start date for an event that's already been saved, you are asked whether you want to change the end date and the session schedule to match it.
+- **Publishing**: Allows you to decide where and how your attendees register for your event. More information: [Create an event registration experience](ci-docs/journeys/event-registration-experience.md).
 - **Stream this event online**: Set up your event as a Microsoft Teams webinar, a Teams Live Event, a Teams Meeting, or on-site only.
-- **Capacity**: Set the capacity for your event. For on-site events, the maximum event capacity value shown updates to match the capacity configured for your last selected building, room, or layout (if available). If needed, you can edit the value manually to override the capacity figure. And enable waitlist. More information: [Set up and manage waitlist](ci-docs/journeys/set-up-and-manage-waitlist.md)
+- **Capacity**: Set the capacity for your event. For on-site events, the maximum event capacity value displayed updates to match the capacity configured for your last selected building, room, or layout (if available). If needed, you can edit the value manually to override the capacity figure. You can also enable a waitlist. More information: [Set up and manage waitlist](ci-docs/journeys/set-up-and-manage-waitlist.md).
 - **Location**: Specify the location where your event takes place. The location is hierarchical, and you can specify only as much detail as you need. For example, you can specify just a building. But to specify a room, you must first choose the building that contains that room. You can assign a separate location to each session if applicable. You can create location records from here, or choose from among existing venue records. Each location record can contain useful information such as address, facilities, capacity, and more.
 
 <a name="agenda-tab"></a>
@@ -62,9 +62,10 @@ The **Agenda** tab includes details about the schedule of sessions happening dur
 ### The Form tab
 
 > [!NOTE]
-> This tab was previously called Website and Form tab and it hosted also Publishing options. Publishing options have now moved to the General tab.
+> This tab was previously called "Website and form" and it also hosted publishing options. Publishing options are now moved to the General tab.
 
 The Form tab provides options to set registration parameters and preview the registration form with dynamic preview.
+
 :::image type="content" source="ci-docs/journeys/media/formtab.png" alt-text="Form tab showing registration settings." lightbox="ci-docs/journeys/media/formtab.png":::
 
 Under the registration form options, you can edit an existing event registration form, select another, create a new form, or define other registration settings: 
@@ -72,13 +73,15 @@ Under the registration form options, you can edit an existing event registration
 - **Allow attendees to register for sessions**: If enabled, attendees can register for sessions. Learn more: [Set up session-level registration](real-time-journeys-event-session.md). 
     > [!Important]
     > The **Allow attendees to register for sessions** setting used to be on the **Agenda** tab and was called "Allow registrants to create their own agenda."
-- **Registration period**: Allows you to define when is the registration period opened. You can define registration start and end date. The dates will be in the event timezone. In the form, you can customize the message that should be shown to attendees before and after the registration period. To edit the message, navigate to the form settings and under submission, define Pre-registration notification and Registration closed notification. :::image type="content" source="ci-docs/journeys/media/registrationperiodnotification.png" alt-text="Registration period notification settings." lightbox="ci-docs/journeys/media/registrationperiodnotification.png":::
+- **Registration period**: Allows you to define when the registration period is opened. You can define the registration start and end date. The dates are in the event timezone. In the form, you can customize the message that's shown to attendees before and after the registration period. To edit the message, navigate to the form settings and under submission, define the preregistration notification and registration closed notification. 
+
+    :::image type="content" source="ci-docs/journeys/media/registrationperiodnotification.png" alt-text="Registration period notification settings." lightbox="ci-docs/journeys/media/registrationperiodnotification.png":::
 
 ### The Registration and attendance tab
 
 Use the **Registration and attendance** tab to see who registered for the event and who attended. You can also create registrations and check-ins here. The following sections are available:
-- Event registration: This table provides a list of people who [registered](invite-register-house-event-attendees.md) for your event. You can also [register people manually](invite-register-house-event-attendees.md) here. If you're using [custom registration fields](custom-registration-fields.md), then you can also view the values submitted by each attendee here.
-- Event check-ins: Here you can see who attended the event and enter attendance records. When a check in record is created, the status if the registration in the registration table will change to "Checked in" and the check-in record will be visible in this table together with time and date.
+- **Event registration**: This table provides a list of people who [registered](invite-register-house-event-attendees.md) for your event. You can also [register people manually](invite-register-house-event-attendees.md) here. If you're using [custom registration fields](custom-registration-fields.md), then you can also view the values submitted by each attendee here.
+- **Event check-ins**: Here, you can see who attended the event and enter attendance records. When a check-in record is created, the status of the registration in the registration table changes to "Checked in" and the check-in record is visible in this table together with the time and date.
 
 ### The Additional information tab
 
@@ -102,7 +105,7 @@ The **Recovery items** tab allows system administrators to track customization e
 After selecting rows in the Recovery items tab, you can delete the items (which will delete them from blob storage), or you can fix the issue and "recover" any item, which will replay the previously failed functionality.
 
 > [!NOTE]
-> If there are items in the Recovery items tab, non-system admin users will receive a notification that says, "There seems to be some issues with this event. Ask your system admin for assistance."
+> If there are items in the Recovery items tab, non-system admin users receive a notification that says, "There seems to be some issues with this event. Ask your system admin for assistance."
 
 ### The Related menu
 
@@ -122,13 +125,13 @@ Each team member record can be associated with a contact or user record.
 - *Users* are people who work for your organization and have a Dynamics 365 license.
 - *Contacts* come from your contact database, which will include customers, potential customers, vendors, partners, and other external people (or internal people who don't use Dynamics 365).
 
-When you create a new team member record, you'll be able to choose whether to associate it either with a user or a contact. If you choose to associate the record with a contact, the team-member record displays relevant information from that contact record. User records don't include any contact information, so if you associate the record with a user, the association will be shown but no additional information will be loaded. The team-member record also provides information about the member's role and which events the team member has worked on. You can create team members from either the **Event Team Members** list page or directly from a specific **Event** record.
+When you create a new team member record, you can choose whether to associate it with a user or a contact. If you choose to associate the record with a contact, the team-member record displays relevant information from that contact record. User records don't include any contact information, so if you associate the record with a user, the association is shown but no additional information is loaded. The team-member record also provides information about the member's role and which events the team member has worked on. You can create team members from either the **Event Team Members** list page or directly from a specific **Event** record.
 
-When you're looking at a list view of team members, the list includes both a **User** and a **Contacts** column, but only one of the columns will show a value. From the list, you can go to the user or contact record by selecting the name in the list, or you can open the team-member record itself by double-clicking on a row anywhere away from the person's name.
+When you're looking at a list view of team members, the list includes both a **User** and a **Contacts** column, but only one of the columns shows a value. From the list, you can go to the user or contact record by selecting the name in the list, or you can open the team-member record itself by double-clicking on a row anywhere away from the person's name.
 
 ## Manage event sessions and speakers
 
-The core attractions of your event offering will typically be its sessions and speakers. A simple event might have just one session, whereas a conference will typically have several sessions spread over several days.
+The core attractions of your event offering are typically its sessions and speakers. A simple event might have just one session, whereas a conference typically has several sessions spread over several days.
 
 <a name="sessions"></a>
 
@@ -150,10 +153,10 @@ Use the following pages to manage your speakers and speaker engagements:
 - **Events** > **Participants** > **Speakers**: Lists all speakers who are available for previous, current, or future events, and lets you set up new speakers.
 - **Events** > **Event** > **Events**: Work on the **Agenda** tab of the appropriate event record to set up speaker engagements for that event. You can also create new speaker records here if needed while setting up speaker engagements.
 
-When setting up a speaker engagement, you map a speaker to a specific session for the event record you are working with. To set up a speaker engagement:
+When setting up a speaker engagement, you map a speaker to a specific session for the event record you're working with. To set up a speaker engagement:
 
 - A speaker record must exist.
-- If you're assigning a session, a session record must exist. (For single-session events, you might not have a session record and instead will treat the event itself as a session.)
+- If you're assigning a session, a session record must exist. (For single-session events, you might not have a session record and instead treat the event itself as a session.)
 
 <a name="event-passes"></a>
 
@@ -165,9 +168,9 @@ Event passes aren't supported in Customer Insights - Journeys Event Management.
 
 ## Set up the event venue
 
-A venue is any physical location where you hold an event or session. It might be a single building with just one room, or one of several rooms in a building. For each venue, you can register many types of important details, including name, location, facilities, capacity, layout, events that will or have occurred there, and more. After you've set up a venue, you can assign events and sessions to it as needed.
+A venue is any physical location where you hold an event or session. It might be a single building with just one room, or one of several rooms in a building. For each venue, you can register many types of important details, including name, location, facilities, capacity, layout, events that will or have occurred there, and more. After you set up a venue, you can assign events and sessions to it as needed.
 
-Use the various types of venue entities in the **Events** > **Venue Management** area to construct a hierarchical model of your event location. Later, you'll be able to assign events and sessions to each venue space from your model. You only need to include as much detail as you need, so a simple building with just one room doesn't need to have any rooms defined for it, and a simple room with just one layout doesn't need to have any layouts defined for it. But you can't set up a room without a building or a layout without a room.
+Use the various types of venue entities in the **Events** > **Venue Management** area to construct a hierarchical model of your event location. Later, you can assign events and sessions to each venue space from your model. You only need to include as much detail as you need, so a simple building with just one room doesn't need to have any rooms defined for it, and a simple room with just one layout doesn't need to have any layouts defined for it. But you can't set up a room without a building or a layout without a room.
 
 Use the following entities to model your venues:
 

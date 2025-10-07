@@ -1,7 +1,7 @@
 ---
 title: Create unmapped fields for registration forms
 description: Learn how create unmapped fields for registration forms in Dynamics 365 Customer Insights - Journeys. 
-ms.date: 09/22/2025
+ms.date: 10/07/2025
 ms.topic: article
 author: colinbirkett
 ms.author: alfergus
@@ -66,9 +66,11 @@ The display name of the saved field must be unique. If you enter the same displa
 
 ## Viewing submitted responses  
 
-Responses to the custom unmapped fields are recorded in the form submission response. Navigate to **Registration and attendance** to view all responses and event registration information in one table. Information includes the contact's registration ID, name, email, registration status, and date of creation. This joint data table is created as a new system view for the event. You can also add new registrations with custom unmapped fields manually through quick create form in the registration grid.
+Responses to the custom unmapped fields are recorded in the form submission response. Navigate to **Registration and attendance** to view all responses and event registration information in one table. Information includes the contact's registration ID, name, email, registration status, and date of creation. This joint data table is created as a new system view for the event. You can also add new registrations with custom unmapped fields manually through a quick create form in the registration grid.
 
 > [!NOTE]
 > It can take up to two minutes for the new system view to be created after a first submission is received.  
 
 :::image type="content" source="media/registration-and-attendance-overview.png" alt-text="An overview of customer registration and attendance in the form." lightbox="media/registration-and-attendance-overview.png":::
+
+[!INCLUDE [footer-include](./includes/footer-banner.md)]
