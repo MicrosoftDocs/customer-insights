@@ -75,7 +75,7 @@ Now, each time someone registers for your event, they receive your welcome email
 
 ## Step 2: Send email reminders seven days and one day before the event
 
-When sending timed reminders, the first instinct of many Customer Insights - Journeys users is to add a "Wait" element to their journey. In this scenario, a Wait element can't work. Although the Wait element can trigger an action at a specific date and time, we want to trigger an action relative to the date of the event. To trigger a relative-date-based action, create a branch in our journey that activates based on a specific condition.
+When sending timed reminders, the first instinct of many Customer Insights - Journeys users is to add a "Wait" element to their journey. In this scenario, a wait element won't work. Although the wait element can trigger an action at a specific date and time, we want to trigger an action relative to the date of the event. To trigger a relative-date-based action, you need to create a branch in your journey that activates based on a specific condition.
 
 1. To add a branch based on a condition, select the **+** sign below the Send an email action, then select **Branch based on a specific value**. Name the attribute *Check event start*.
 1. Select **Branch 1** in the journey designer. Here, you add a trigger to check the event start date. In the right pane, name the branch *Event start date > 7 days from now*. Then, select the **Condition** button and select the **Choose an attribute** dropdown. You want to create a condition based on the main trigger for the journey. To create the condition, go to **Trigger** > **Event registration created** > **Event Reference**, then search for and select the **Event start date** attribute.
@@ -100,7 +100,7 @@ When sending timed reminders, the first instinct of many Customer Insights - Jou
 
 ## Step 3: Send a text message or email reminder one hour before the event
 
-Now you need to set up a text message reminder to be sent one hour before the event. For this, Customer Insights - Journeys has a feature that allows you to select time funnels not only for weeks, days, and hours but even for minutes. Here, you can use a **Wait** element because you already filtered relative dates for seven days and one day before the event. At this point, chances are your nonrelative date Wait element is valid.
+Now you need to set up a text message reminder to be sent one hour before the event. For this, Customer Insights - Journeys has a feature that allows you to select time funnels not only for weeks, days, and hours but even for minutes. Here, you can use a **Wait** element because you already filtered relative dates for seven days and one day before the event. At this point, chances are your non-relative date Wait element is valid.
 
 1. Select the **+** above the journey exit, then add a **Hold an action for a specific time** element. Set **People will wait** to **Until specified by a trigger**, choose the **Event start date** attribute, and set **Timing** to **Before the specified time 1 hour**.
 1. Next, you let Customer Insights - Journeys use the power of AI to decide which channel is the best to send your one-hour reminder on. To let Customer Insights - Journeys decide, select the **+** above the journey exit and select a **Send messages through the right channel** element. Choose **Email** and **Text message** as your channels and select the **Optimize** button.
@@ -123,7 +123,7 @@ The final step in the journey is to send a response based on whether the recipie
     > [!div class="mx-imgBorder"]
     > ![event check-in](media/event-engagement-event-if-then.png "event check-in")
 
-1. In the **Yes** branch of the if/then check-in element, send an email thanking the recipient for attending, but don't send it right away. Instead, send it an hour after the event ends. To set the email delay time, select the **+** in the Yes branch and add a **Hold an action for a specific time** element. Set **People will wait** to **Until a time specified by a trigger**. For the **trigger attribute**, go to **Event registration created** > **Event Reference**, then search for **Event end date**. Set **Timing** to **1 hour**.
+1. In the **Yes** branch of the if/then check-in element, you want to send an email you created thanking the recipient for attending, but you don't want to send it right away. Instead, you want to send it an hour after the event ends. To set the email delay time, select the **+** in the Yes branch and add a **Hold an action for a specific time** element. Set **People will wait** to **Until a time specified by a trigger**. For the **trigger attribute**, go to **Event registration created** > **Event Reference**, then search for **Event end date**. Set **Timing** to **1 hour**.
 1. Below the Wait element, select the **+** and add a **Send an email** action. Select the “thank you for attending” email.
 1. Next, set an email to send to journey participants who didn't check into the event. In the **No** branch of the if/then check-in element, select the **+** and add a **Send an email** action. Select the “sorry we missed you” email.
 
