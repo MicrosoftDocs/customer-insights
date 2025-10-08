@@ -1,5 +1,5 @@
 ---
-title: Conversational journeys overview (preview)
+title: Conversational journeys overview
 description: Learn how conversational journeys in Dynamics 365 Customer Insights combines AI agents and Contact Center to deliver seamless, automated customer interactions.
 ms.date: 05/29/2025
 ms.topic: article
@@ -15,9 +15,7 @@ ms.custom:
   - ai-seo-date:05/27/2025
 ---
 
-# Conversational journeys overview (preview)
-
-[!INCLUDE [Preview banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+# Conversational journeys overview
 
 Conversational journeys combines Dynamics 365 Customer Insights - Journeys, Dynamics 365 Contact Center, and AI agents built with Copilot Studio to deliver customer experiences at scale. Set up proactive outreach for scenarios like a canceled flight or product recall, and automate transactional calls like confirming or scheduling a delivery. Conversational journeys help organizations reduce call volume and support costs, and customers get faster resolutions without chasing down answers.
 
@@ -34,7 +32,5 @@ Use these links to learn more about different aspects of conversational journeys
 - [Prerequisites for conversational journeys](conversational-journeys-prerequisites.md)
 - [Conversational journeys concepts](proactive-engagement-concepts.md)
 - [Create conversational journeys](proactive-engagement-how-to.md)
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note.md)]
 
 [!INCLUDE[footer-include](./includes/footer-banner.md)]

@@ -386,7 +386,7 @@
           href: real-time-marketing-journey-designer.md
     - name: Known issues for journeys
       href: journey-known-issues.md
-  - name: Conversational journeys (preview)
+  - name: Conversational journeys
     items:
     - name: Conversational journeys overview
       href: conversational-journeys-overview.md
