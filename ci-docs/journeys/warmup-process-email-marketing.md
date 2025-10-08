@@ -54,7 +54,7 @@ Warm-up builds your sender reputation. Sender reputation is how mailbox provider
     - Spam complaints
     - Invalid email addresses (hard bounces)
     - Spam trap hits
-    - Authentication (SPF (Sender Policy Framework), DKIM (DomainKeys Identified Mail), DMARC (Domain-based Message Authentication, Reporting and Conformance))
+    - Authentication (SPF (Sender Policy Framework), DKIM (DomainKeys Identified Mail), DMARC (Domain-based Message Authentication, Reporting, and Conformance))
     - Third-party block listing
     - Engagement
 
