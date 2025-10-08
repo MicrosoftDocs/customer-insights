@@ -1,7 +1,7 @@
 ---
 title: Create a Customer Insights - Journeys segment using the Web API
 description: Learn how to create a Customer Insights - Journeys segment using the Web API.
-ms.date: 10/07/2025
+ms.date: 10/08/2025
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
@@ -13,18 +13,18 @@ search.audienceType:
 
 # Create a Customer Insights - Journeys segment using the Web API
 
-Using the Web API you can:
+Using the Web API, you can:
 
 - Create a Customer Insights - Journeys segment.
-- Edit an existing segment to add or delete static members or alter query definitions.
-- Publish the segment.
+- Edit an existing segment to add or delete static members, or alter query definitions.
+- Publish a segment.
 - View segment members.
 
-The following article shows how to use the API.
+The following article shows how to use the Web API.
 
 ## Create a segment definition entity
 
-The segment definition can contain both a static list of customers and a dynamic query to select customers. You can have only a static list, only a dynamic query, or a mixture of both static members and dynamic members.
+The segment definition can contain both a static list of customers and a dynamic query to select customers. You can create a static list, a dynamic query, or a mixture of both static members and dynamic members.
 
 `POST <Organization URL>/api/data/v9.0/msdynmkt_segmentdefinitions`
 
