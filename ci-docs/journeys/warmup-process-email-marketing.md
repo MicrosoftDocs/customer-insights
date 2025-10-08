@@ -15,7 +15,7 @@ search.audienceType:
 
 Domain warming is the process of methodically adding email volume to a new domain over several days or weeks. Gradually “warming up" the domain establishes a positive sending reputation with mailbox providers.
 
-Whether you use shared or dedicated IP addresses, the initial warm-up process is important for every sender. Warming up your domain together with your ESP’s IP addresses is crucial, whether you use a brand new domain (with no reputation) or an already in use domain (with good reputation) for your email campaigns. Warm-up is especially critical for senders who plan to use brand new domains and send large volumes of emails in their customer journeys (up to 500,000 emails per day or customer journey).
+The initial warm-up process is important for every sender. Warming up your domain together with your ESP’s IP addresses is crucial, whether you use a brand new domain (with no reputation) or an already in use domain (with good reputation) for your email campaigns. Warm-up is especially critical for senders who plan to use brand new domains and send large volumes of emails in their customer journeys (up to 500,000 emails per day or customer journey).
 
 ## Warm-up summary
 
@@ -78,46 +78,5 @@ Key takeaways:
 - Dynamics Customer Insights - Journeys platform by default covers the IP part of warm-up by providing you with a high reputation set of IP addresses. So, you have a good base from the start to build up reputation for your domain.
 - Mailbox providers trust metrics from their users and what they observe; no brand will get special treatment.
 - B2B (business-to-business commerce) senders must follow the same warm-up process as B2C (Business 2 Consumers) senders, as many business domains are now hosted by Yahoo, Outlook, Gmail, AOL, etc.
-
-## Dedicated IP warm-up
-
-Some senders may demand a dedicated IP address to send emails. Several factors influence whether a dedicated IP address is ideal for your Customer Insights - Journeys setup.
-
-Warming up a dedicated IP address in combination with your domain would require additional effort as the entire process gets more delicate and complex. In addition to the domain warm-up, keep an eye on the dedicated IP reputation.
-
-Furthermore, dedicated IP requires a stable email flow to keep it “warmed” and maintain its reputation at acceptable levels. It would require you to re-warm your IP if you haven't sent any emails in the last 30 days.
-
-IP warming, like domain warm-up, is the practice of gradually increasing the volume of mail delivered through a dedicated IP address on a set timetable. This continuous approach creates a reputation as a legitimate email sender with ISPs (Internet Service Providers).
-
-When an ISP observes email suddenly from a new or "cold" IP address, they take note and immediately begin evaluating the traffic from that IP. Because ISPs treat email volume as a key determining factor when detecting spam, it's best to begin sending a low to moderate volume, eventually work your way up to larger volumes. This gives the receiving email providers a chance to closely observe your sending habits and record how your recipients engage with your email.
-
-A gradual warm-up doesn't always guarantee a perfect sending reputation. It's still important to follow sending best practices. The warm-up process can take two to four weeks, depending on the list quality and the overall planned volumes of email traffic.
-
-There's no general rule, numbers or standard warm-up schedule to suit every sender. Every warm-up plan is unique and may require additional analysis done by deliverability expert to make the process smooth and effective. It depends on several factors like overall planned daily/monthly volume of emails, target recipient IPS’s frequency of the email campaigns, type of emails(marketing/transactional) etc.
-
-If you need assistance navigating warm-up planning or an email sending habits analysis, create a support request for the email deliverability team.
-
-## Dedicated vs Shared IP for email delivery
-### Definitions
-**Shared IP**: Multiple senders use the same IP pool (multiple shared IPs (Internet Protocol)). This is the default Dynamics 365 approach.
-**Dedicated IP**: A single IP address that is used by a single sender.
-Pros and cons of dedicated vs shared IPs
-
-|     <br>IP type     |     <br>Pros     |     <br>Cons     |
-|---|---|---|
-|    <br>Dedicated IP    |    <br>- Full reputation control<br>- More easily pinpoint and fix IP issues    |    <br>- Strict "warm-up" plan needs to be followed<br>- Any mistakes immediately damage the IP reputation<br>- Sending schedule and volume need to be consistent (no spikes or delays   between customer journeys)<br>- Data quality must be good    |
-|    <br>Shared IP    |    <br>- Avoid the need to "warm up" your IPs<br>- Benefit from other senders' good reputations<br>- Decreased risk of damaging the IP reputation<br>- Works well for inconsistent senders (spikes in sending volumes and unpredictable sending schedule)    |    <br>- Deliverability can be affected by other senders<br>- No IP reputation control    |
-
-## Dedicated IP prerequisites
-### Eligibility
-By default, shared IPs are utilized for all new customers. Dedicated IPs must be requested. To be eligible to request a dedicated IP, a sustained volume of (minimum) one million messages is required, three times per week (three million messages per week total).
-### List quality
-Carefully review your email practices, list quality, list hygiene, and list acquisition process. We strongly recommend using a double opt-in process and targeting only engaged recipients. Engaged recipients are typically those who have interacted with your emails in the past six months.
-Also, review your sending stats and make sure that you comply with the following thresholds:
-- Bounce rate: < 3%
-- Spam complaint rate: < 0.1%
-- Unsubscribe rate: < 1%
-### How to apply
-To request a dedicated IP address for your organization, create a support request for the email deliverability team. The team will help you evaluate your sending strategy and determine if it qualifies for usage of dedicated IP addresses.
 
 [!INCLUDE[footer-include](./includes/footer-banner.md)]

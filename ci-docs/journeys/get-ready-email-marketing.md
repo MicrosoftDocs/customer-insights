@@ -117,27 +117,4 @@ If the bounce rate or spam complaint problem persists for more than a few days, 
 
 When a Customer Insights - Journeys environment is moved to the high-risk sending pool, we'll send an email to the administrator to inform them of the sending pool change and to urge them to [contact Microsoft Support](/power-platform/admin/get-help-support) for assistance. It may still be possible for the Customer Insights - Journeys environment to return to the low-risk sending pool, but not before the administrator contacts Microsoft Support to address the issue.
 
-## Using a dedicated sender IP
-
-In a standard Customer Insights - Journeys setup, all sender IPs are managed by Microsoft and shared among customers that have similar reputation scores. This lets us manage reputation, balance the send load, and warm up new IPs as needed. However, some organizations prefer to use one or more of their own, dedicated sender IPs, especially if they will be sending high volumes.
-
-> [!NOTE]
-> Dedicated sender IPs are not part of the standard Customer Insights - Journeys subscription agreement, and Microsoft does not generally recommend them because they introduce extra complexity and expense—and can result reduced deliverability compared to our standard sender IPs. Microsoft considers applications for dedicated sender IPs on a case-by-case basis, and we can support multiple dedicated sender IPs if needed. If you think your organization could benefit from a dedicated sender IP, please [contact Microsoft Support](/power-platform/admin/get-help-support) to find out if you qualify. The main goal of this process is to help you achieve as high a delivery rate as possible. Some of the most important factors to consider when making this decision include:
-> 
-> - How many messages does your organization send each month?
-> - Is your content of high quality and in compliance with all relevant regulations?
-> - Have there been many spam complaints associated with your messages until now?
-> - Does your organization send a consistent volume of messages throughout the month?
-
-Though there can be a few advantages to arranging for a dedicated sender IP, there are also disadvantages, and it isn't for everyone. Consider the following:
-
-- **A new sender IP requires time to warm up**  
-    When your new sender IP comes online, you must start by sending just a few messages at a time and then slowly ramp up over several weeks until you reach your intended send volume, which you must then continue to maintain. A sudden spike of email coming from a new IP will severely damage your send reputation and might land you on a blocklist right away. During the warm-up period, it's also important that you only send to valid and engaged recipients. Later, when you've established a reputation, you can begin to add less-engaged recipients.
-- **Maintain a regular and consistent send volume**  
-    You must spread out your email sends to ensure that you send roughly the same volume every week or so. Don't try to send all your messages at once at the start of each month, for example.
-- **You should still set up DKIM**  
-    The DKIM sender-authentication standard is essential for optimizing your marketing email deliverability. It's as important when you're using a dedicated IP as when using a shared IP, and you set it up in exactly the same way. For complete details on why this is important and how to do it, see [Set up DKIM for your sending domain](#dkim).
-- **You concentrate risk on yourself and can pay a high price for any mistakes**  
-    When you're the only one using your sending IP, any mistakes you make will affect your sender reputation directly, without being diluted by the large volume of compliant messages being sent by a large pool of other users.
-
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
