@@ -14,7 +14,7 @@ ms.custom: sfi-image-nochange
 
 # Create Customer Insights - Journeys forms
 
-To create a new marketing form, go to **Customer Insights - Journeys** > **Channels** > **Forms** and select **New** on the command bar. To create an event registration form, go to the [**Website and form** tab of your event](set-up-event.md#the-website-and-form-tab).
+To create a new marketing form, go to **Customer Insights - Journeys** > **Channels** > **Forms** and select **New** on the command bar. To create an event registration form, go to the [**Form** tab of your event](set-up-event.md#the-form-tab).
 
 > [!NOTE]
 > Your newly created form is automatically configured according to the default configuration. To make changes, ask your administrator to update the [default configuration](real-time-marketing-form-global-settings.md) which includes target audience, matching of existing records, and other important settings.
