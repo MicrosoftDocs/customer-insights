@@ -1,7 +1,7 @@
 ---
 title: Warm-up process for marketing senders
 description: Learn the domain warm-up process for marketing email senders in Dynamics 365 Customer Insights - Journeys.
-ms.date: 09/09/2025
+ms.date: 10/08/2025
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -15,7 +15,7 @@ search.audienceType:
 
 Domain warming is the process of methodically adding email volume to a new domain over several days or weeks. Gradually “warming up" the domain establishes a positive sending reputation with mailbox providers.
 
-The initial warm-up process is important for every sender. Warming up your domain together with your ESP’s IP addresses is crucial, whether you use a brand new domain (with no reputation) or an already in use domain (with good reputation) for your email campaigns. Warm-up is especially critical for senders who plan to use brand new domains and send large volumes of emails in their customer journeys (up to 500,000 emails per day or customer journey).
+The initial warm-up process is important for every sender. Warming up your domain together with your email service provider's IP addresses is crucial, whether you use a brand new domain (with no reputation) or an already in use domain (with good reputation) for your email campaigns. Warm-up is especially critical for senders who plan to use brand new domains and send large volumes of emails in their customer journeys (up to 500,000 emails per day or customer journey).
 
 ## Warm-up summary
 
@@ -39,6 +39,7 @@ As the warm-up process begins, expect some bulking (mailbox providers identifyin
 - Possible **blocking** by mailbox providers can occur if the list isn't engaged enough. The key is to segment carefully and tighten up engagement. Again, the key is to keep sending.
 
 ### Why is warm-up process important?
+
 | No warm-up: | Warm-up: |
 |---|---|
 | Mailbox providers see volume spikes | Mailbox providers see a gradual build in volume |
