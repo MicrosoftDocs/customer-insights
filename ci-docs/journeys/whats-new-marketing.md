@@ -41,12 +41,12 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 
 - **Automate scalable journey creation with the journey API**
 	- With the new journey API, you can now automate journey creation by using templates, existing segments, and messages. For example, a team managing global events can programmatically generate hundreds of localized journey variants, each tailored by language, time zone, and audience segment, without manually configuring each one.
-	- [Release plan](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/automate-scalable-journey-creation-journey-api) 
+	- [Release plan](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/automate-scalable-journey-creation-journey-api)
 	- [Docs](./developer/create-journey-template-api.md)
 
 - **Streamline event planning with set registration periods**
 	- Whether you're managing a product launch, a training session, or a customer summit, knowing your attendee count in advance brings structure and predictability to event planning. It helps you finalize logistics, allocate resources efficiently, avoid last-minute surprises, and reduce unnecessary costs from overbooking or under-preparing. By enforcing registration deadlines, teams can plan smarter and deliver more polished events with better decision-making and operational efficiency across event workflows. With minimized uncertainty and improved coordination, this functionality enhances the overall experience for both organizers and participants.
-	- [Release plan](/dynamics365/release-plan/2025wave2/customer-insights/dynamics365-customer-insights-journeys/streamline-event-planning-set-registration-periods) 
+	- [Release plan](/dynamics365/release-plan/2025wave2/customer-insights/dynamics365-customer-insights-journeys/streamline-event-planning-set-registration-periods)
 	- [Docs](set-up-event.md#the-form-tab)
 
 - **Create event portals with event and registration details using Power Pages**
@@ -63,18 +63,22 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 
 - **Create static segments with up to 200,000 members**
 	- Marketers often receive customer lists from various systems and need to act quickly. These lists typically lack the attributes required for dynamic segments or aren't part of an existing Dataverse view. This feature enables marketers to build static segments with up to 200,000 members using data from any source. Marketers can upload CSV files, use the API to create segments as part of a workflow, or select contacts from a Dataverse view.
-	- [Release plan](/dynamics365/release-plan/2025wave2/customer-insights/dynamics365-customer-insights-journeys/create-static-segments-up-200000-members) 
+	- [Release plan](/dynamics365/release-plan/2025wave2/customer-insights/dynamics365-customer-insights-journeys/create-static-segments-up-200000-members)
 	- [Docs](real-time-marketing-build-segments.md)
 
 - **Maximize event ROI with paid registration, seamless payment integration**
 	- With the new paid event registration capability in real-time journeys, you can now offer a seamless and secure ticketing experience. This feature empowers you to offer flexible pricing tiers and discount codes and increase registration conversion with a frictionless checkout. By embedding ticketing and payments directly into your event flow, you not only improve attendee satisfaction but also unlock new revenue streams and reduce operational overhead.
-	- [Release plan](/dynamics365/release-plan/2025wave2/customer-insights/dynamics365-customer-insights-journeys/maximize-event-roi-paid-registration-seamless-payment-integration) 
-	- [Docs]()
+	- [Release plan](/dynamics365/release-plan/2025wave2/customer-insights/dynamics365-customer-insights-journeys/maximize-event-roi-paid-registration-seamless-payment-integration)
 
 #### Monthly enhancements
 
-- **Allow users to only opt-in to select topics when filling in a form**
-	- 
+- **Prevent unintended opt‑outs in forms**
+	- You can now stop your forms from unsubscribing contacts when they leave topics or purposes unchecked. Use the new “Ignore opt‑outs” toggle in the form settings or the default form settings to make sure unchecked boxes don’t create opt‑out records. By default, all new marketing and event registration forms don’t generate opt‑outs, helping you keep your audience engaged. This update gives you full control over consent handling and reduces accidental loss of subscriptions.
+	- [Docs](real-time-marketing-manage-forms.md#manage-consent-in-forms)
+
+- **Manual registrations can now contain custom unmapped fields**
+    - When adding a registration manually, you can now include information using custom unmapped fields that you would typically collect through a registration form. This allows you to collect and store important event attendee information, even for last-minute sign-ups or someone who didn’t submit a registration form.
+    - [Docs](create-unmapped-fields-registration-forms.md)
 
 ### September 2025 update
 
