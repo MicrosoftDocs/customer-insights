@@ -1,7 +1,7 @@
 ---
 title: Build segments in Customer Insights - Journeys 
-description: Learn how to build segments to use in journeys in Dynamics 365 Customer Insights - Journeys.
-ms.date: 06/04/2025
+description: Learn how to build segments to use in real-time journeys in Dynamics 365 Customer Insights - Journeys.
+ms.date: 10/09/2025
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -11,6 +11,7 @@ search.audienceType:
   - enduser
 ms.custom: sfi-image-nochange
 ---
+
 # Build segments in Customer Insights - Journeys
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=a1240d08-395b-4041-ba4f-853a32afaea3]
@@ -109,5 +110,30 @@ In the above example, the attribute was added to a new group (Group 2). To creat
 > [!TIP]
 > While adding nested segments to the segment definition, you can view the details of the underlying segment by selecting the **View segment** hyperlink when hovering over the desired segment. To use keyboard controls to view the segment, press the "K" key while focus is on the desired segment. This action opens a dialog displaying the segment details.
 > :::image type="content" source="media/segment-details.png" alt-text="Screenshot showing link to view segment details." lightbox="media/segment-details.png":::
+
+## Use CSV files to define static segment membership lists for up to 2,000,000 members
+
+You can define segment membership by matching a list of contacts or leads from a CSV file to contacts or leads in Dataverse. Upload or drag and drop a CSV file with a list of contacts or leads containing a column with the header `emailAddress1` with email addresses in it to search for contacts or leads already existing in Dataverse with a matching email address to be included in the segment definition as a static list.
+
+### Prerequisite
+
+- The segment must be saved before adding static members.
+
+### How to use a CSV file to define static segment membership
+
+1. Select a CSV file by dragging and dropping the file or browsing and selecting the file. It must have a column with the header `emailaddress1` containing email addresses for matching contact or lead records in Dataverse.
+1. Manually select members from Dataverse using the standard contact or leads grid view. To launch the standard Dataverse grid view, go to **Manual select** > **Select members** > **Add members**.
+    > [!NOTE]
+    > The grid view is limited to browser cache sizes for displaying available contacts or leads. You can only select as many contacts or leads at a time as the cache will display.
+
+### Guidance for using CSV files for static segments
+
+- Each static member group defined either by a CSV file or by manually selecting from the contact or leads grid can contain up to 200,000 members. You can have a maximum of ten groups, for a total of 2,000,000 possible static members. You can then add dynamic query criteria for additional members to be included when they meet the query criteria.
+- When using a CSV file, all contact or lead records in Dataverse with the matching email address are included in the list. Multiple records with the same email address aren't deduplicated.
+- The "Not found" list includes rows in the CSV for which there are no matching records in Dataverse. You can download this list and follow the steps to upload them into Dataverse using the contact or leads list view CSV upload feature to create the records in Dataverse. You can then retry the matching to have them included in the segment definition.
+- The number of records found in the CSV file indicates the number of rows in the CSV file for which one or more contact or lead records were found in Dataverse. If there were multiple records matching the same email address in the CSV, the member count of the static list may be larger than the number of records found in the CSV. This is because there may be one row in the CSV with `email@email.com` and three matching contact records with the same email address of `email@email.com`. The member count reflects the number of contact or lead records in the segment while the "found" count reflects the number of CSV rows for which there was one or more contact or lead record found.
+- For static snapshots, contacts or leads that the segment builder has permissions to see in Dataverse either by teams or business unit scoping permissions are found and included in the segment definition. For dynamic queries, any matching contacts or leads, regardless of the business unit that the segment author belongs to while defining the segment, are included in the segment at run time.
+- In addition to the static group, you can add dynamic query criteria so that the segment includes members matching the dynamic criteria. Segment definitions can include static lists and dynamic criteria in the same definition.
+- The segment builder API is behind the user interface (UI), which means that anything you can do through the UI, you can do programmatically using the API. You can use the API to augment a segment you built using the UI. Learn more: [Create a Customer Insights - Journeys segment using the Web API](real-time-marketing-api-segment.md)
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
