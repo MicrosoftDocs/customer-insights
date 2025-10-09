@@ -169,6 +169,8 @@ Attribute metadata defines field types and formats. You can't change field types
 
 > [!NOTE]
 > **File** and **Customer** field types aren't supported in forms.
+>
+> The multi-select field type doesn't allow setting a default value.
 
 ### Phone number field
 
@@ -201,9 +203,11 @@ A lookup field links to a particular entity and lets you add a drop-down list of
 
 Improperly configured field-level security can prevent lookup fields from working correctly. Make sure field-level security is set up appropriately.
 
+You can set a **default value** form your lookup field. The default value of a lookup field is determined by its display name. Make sure each display name is unique, as duplicate names can cause the system to select a default value at random. If a lookup field has a default value, users must clear it to view the complete list of available values.
+
 #### Filter a lookup field values based on an answer in a previous lookup field (cascading lookup fields)
 
-The **Filter value** feature lets you to filter the choices in a lookup field based on the user's selection in a previous lookup field, creating a more intuitive and efficient form experience. This dynamic filtering reduces clutter and confusion by showing only relevant options, helping users complete forms faster and with fewer errors. For example, when selecting a city, users only see cities that match the country/region they previously selected, eliminating the need to scroll through irrelevant entries. This leads to higher quality submissions and lowers the risk of form abandonment.
+The **Filter value** feature lets you filter the choices in a lookup field based on the user's selection in a previous lookup field, creating a more intuitive and efficient form experience. This dynamic filtering reduces clutter and confusion by showing only relevant options, helping users complete forms faster and with fewer errors. For example, when selecting a city, users only see cities that match the country/region they previously selected, eliminating the need to scroll through irrelevant entries. This leads to higher quality submissions and lowers the risk of form abandonment.
 
 ##### Set up value filtering for a lookup field
 
@@ -213,11 +217,11 @@ When your form includes two lookup fields, a **Filter values** button becomes av
 
 :::image type="content" source="media/real-time-marketing-form-filter-values.png" alt-text="Set up value filtering." lightbox="media/real-time-marketing-form-filter-values.png":::
 
-Selecting the **Filter values** button opens a pop-up window where you can configure how the filtering works between lookup fields. In this window, you can specify which lookup field serves as the input for filtering and select the appropriate relationship between the underlying data tables. Once the filtering rule is configured, the field in the form editor changes its highlight from blue to purple, indicating that a filtering relationship has been successfully applied.
+Selecting the **Filter values** button opens a pop-up window where you can configure how the filtering works between lookup fields. In this window, you can specify which lookup field serves as the input for filtering and select the appropriate relationship between the underlying data tables. Once the filtering rule is configured, the field in the form editor changes its highlight from blue to purple, indicating that a filtering relationship has been successfully applied. If the filtering lookup field's value is updated, the dependent lookup field's value is reset to ensure only valid combinations are submitted.
 
 The lookup fields for country/region and city aren't included by default. To add them to your form, refer to this [step-by-step guide that shows how to create a filtered list of cities based on the selected country/region](real-time-marketing-filter-cities-by-country-region.md). The guide also offers general guidance on how to define custom lookup fields (entities) and establish relationships between them. This approach can be applied to any scenario where field options need to be dynamically filtered based on prior selections.
 
-Lookup fields also support a JavaScript API, enabling developers to [programmatically set a lookup field value](developer/realtime-marketing-form-client-side-extensibility.md#select-a-lookup-field-value-using-javascript) or apply dynamic filters based on user input. This allows for advanced customization and seamless integration with other form logic.
+**Lookup fields also support a JavaScript API**, enabling developers to [programmatically set a lookup field value](developer/realtime-marketing-form-client-side-extensibility.md#select-a-lookup-field-value-using-javascript) or apply dynamic filters based on user input. This allows for advanced customization and seamless integration with other form logic.
 
 ### Custom mapped fields
 
