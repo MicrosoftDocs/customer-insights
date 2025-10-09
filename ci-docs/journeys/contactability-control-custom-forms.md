@@ -15,9 +15,6 @@ search.audienceType:
 
 This article explains how to add a contactability consent control to custom forms. Learn more: [View and manage consent records](real-time-marketing-email-text-consent.md#view-and-manage-consent-records).
 
-> [!IMPORTANT]
-> Ensure that the ["Manage consent on contact and lead forms"](real-time-marketing-email-text-consent.md#view-and-manage-consent-records) feature switch is turned on, as that is a prerequisite for the custom control to work.
-
 1. Go to the [maker portal](https://make.powerapps.com/).
 1. From the **Tables** menu, select the **Contact** or **Lead** table depending on which custom form you want to add the contactability grid control to.
 1. Go to the **Forms** for the table and select the form where you want to add the control.

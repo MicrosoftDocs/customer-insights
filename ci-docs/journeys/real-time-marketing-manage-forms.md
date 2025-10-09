@@ -136,6 +136,15 @@ Use the **Ignore empty values** toggle to control whether empty form fields over
 
 You can add **purposes** and **topics** to your form to let users subscribe to specific types of communication. Each form can only be linked to one compliance profile, so you can't include purposes from multiple compliance profiles in the same form. Learn more: [Stay compliant with privacy regulations](real-time-marketing-compliance-settings.md).
 
+If you need to include Purposes from different Compliance Profiles in one form, you can create a new Compliance Profile that [reuses existing Purposes](real-time-marketing-compliance-settings.md#use-previously-captured-consent-when-creating-a-compliance-profile) from those profiles.
+
+**Example:**
+
+- **Compliance Profile A** contains the purpose **Commercial A**.
+- **Compliance Profile B** contains the purpose **Commercial B**.
+- To combine both purposes in one form, create **Compliance Profile C** and enable the option to [Use previously captured consent](real-time-marketing-compliance-settings.md#use-previously-captured-consent-when-creating-a-compliance-profile).
+- Compliance Profile C will now include Commercial A and Commercial B, giving you a single profile linked to all required Purposes.
+
 ### Ignore opt-outs
 
 A form can include multiple **purposes** and **topics**. For example, suppose a form has topic A and topic B. A user first subscribes to topic A. Later, the user submits the form again, selecting only topic B and leaving topic A unchecked. This action unintentionally creates an opt-out for topic A.
