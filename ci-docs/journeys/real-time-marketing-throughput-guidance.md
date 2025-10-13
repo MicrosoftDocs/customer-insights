@@ -1,7 +1,7 @@
 ---
 title: Throughput guidance
 description: Learn about throughput based on your monthly interactions quota in Dynamics 365 Customer Insights - Journeys.
-ms.date: 12/04/2023
+ms.date: 10/13/2025
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -69,3 +69,5 @@ If you believe that your throughput doesn't meet expectations per these guidelin
 ### I have no requirement to purchase additional contacts/interacted people, but I'd like to increase the throughput on my journeys. Is that possible?
 
 In the standalone Dynamics 365 Marketing (outbound marketing) SKU, throughput can be increased only with the purchase of additional contacts that provide better throughput based on the tiers mentioned in the above table. Reach out to your Microsoft representative to get more help on this.
+
+[!INCLUDE [footer-include](./includes/footer-banner.md)]
