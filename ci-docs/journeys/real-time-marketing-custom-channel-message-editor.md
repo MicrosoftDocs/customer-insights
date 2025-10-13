@@ -1,7 +1,7 @@
 ---
 title: Define the message editor interface (optional)
 description: Learn how to define the message editor interface when you create custom channels in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/22/2023
+ms.date: 10/13/2025
 ms.custom:
   - bap-template
 ms.topic: how-to
@@ -16,6 +16,9 @@ search.audienceType:
 # Define the message editor interface (optional)
 
 Applicable channels: Custom
+
+> [!IMPORTANT]
+> Custom channels include a built-in message editor designed to handle a wide range of scenarios without requiring you to create a custom editor interface. In most cases, this default editor will meet your needs. Implementing a custom editor is only necessary for very specific requirements, so consider this step only if you're certain it's essential for your solution.
 
 With the unlimited variety of custom channels you can create, you may need to provide different message template editors. You can define how a message template editor should look and what attributes it contains to match the needs of a specific channel.
 
