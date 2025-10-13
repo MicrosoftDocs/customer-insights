@@ -36,6 +36,8 @@ Azure Communication Services (ACS) integration uses its API to send and receive 
 1. Go to your [Azure account homepage](https://ms.portal.azure.com/#home) and navigate to your resource through **Subscriptions** > **Resource groups** > **Resource name**.
 1. Go to **Keys** under **Settings** and jot down the Primary and Secondary Connection String values. These values are required to create the integration between Customer Insights - Journeys and Azure Communication Services.
 1. Under **Telephony & SMS**, go to **Phone Numbers** to find the toll-free number you want to use as a sender. Go to **Alphanumeric Sender ID** and to **Short Codes** for the respective types of numbers.
+> [!IMPORTANT]
+> Alphanumeric phone names are case-sensitive. Ensure that the name you configure in Customer Insights – Journeys exactly matches the case of the name you set up in Azure Communication Services (ACS).
 
 ### Sign up for and configure an Infobip account
 
