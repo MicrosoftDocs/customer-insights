@@ -117,7 +117,7 @@ You can define segment membership by matching a list of contacts or leads from a
 
 ### Prerequisites
 
-- The segment must be saved before adding static members.
+- You must save the segment before you can add static members.
 
 ### How to use a CSV file to add static members
 
@@ -134,7 +134,7 @@ You can define segment membership by matching a list of contacts or leads from a
 
 ### Guidance for using CSV files for static segments
 
-- The "Not found" list includes rows in the CSV for which there are no matching records in Dataverse. You can download this list and follow the steps to upload them into Dataverse using the contact or leads list view CSV upload feature to create the records in Dataverse. You can then retry the matching to have them included in the segment definition.
+- The "Not found" list includes rows in the CSV for which there aren't any matching records in Dataverse. You can download this list and follow the steps to upload them into Dataverse using the contact or leads list view CSV upload feature to create the records in Dataverse. You can then retry the matching to have them included in the segment definition.
 - The number of records found in the CSV file shows the number of rows in the CSV file that match one or more contact or lead records in Dataverse. If multiple records match the same email address in the CSV, the member count of the static list can be larger than the number of records found in the CSV. For example, one row in the CSV with `email@email.com` might match three contact records with the same email address. The member count shows the number of contact or lead records in the segment, while the "found" count shows the number of CSV rows that match one or more contact or lead records.
 - For static snapshots, contacts or leads that the segment builder has permissions to see in Dataverse either by teams or business unit scoping permissions are found and included in the segment definition. For dynamic queries, any matching contacts or leads, regardless of the business unit that the segment author belongs to while defining the segment, are included in the segment at run time.
 
