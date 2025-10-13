@@ -1,7 +1,7 @@
 ---
 title: Consent management overview
 description: 'Consent management in Customer Insights – Journeys: Learn how to set up, manage, and enforce user consent to stay compliant with privacy regulations. Start managing consent today.'
-ms.date: 06/20/2025
+ms.date: 10/13/2025
 ms.topic: concept-article
 author: petrjantac
 ms.author: alfergus
@@ -94,19 +94,19 @@ There are two types of compliance profiles:
 - Compliance profile with a **preference center**: Use this option if you manage consent within Customer Insights - Journeys. It includes a built-in preference center page that lets users manage their consent preferences directly.
 - Compliance profile with **external link**: Choose this option if you want to connect to an external consent management system or use a marketing form instead of the default preference center form.
 
-#### Use previously captured consent when creating a Compliance profile
+#### Use previously captured consent when creating a compliance profile
 
-When you create a new Compliance Profile, you can enable the **Use Previously Captured Consent** toggle. This option lets you reference an existing Compliance Profile so that the new profile inherits its existing **Purposes** instead of creating new ones.
+When you create a new compliance profile, you can enable the **Use Previously Captured Consent** toggle. This option lets you reference an existing compliance profile so that the new profile inherits its existing **purposes** instead of creating new ones.
 
-This approach is helpful when you need to map a single Purpose across multiple Compliance Profiles. For example, in localization scenarios:
+This approach is helpful when you need to map a single purpose across multiple compliance profiles. For example, in localization scenarios:
 
-- Each Compliance Profile is linked to a single Preference Center.
-- If you require multiple Preference Centers in different languages, you can create separate Compliance Profiles while using the Use Previously Captured Consent feature.
+- Each compliance profile is linked to a single preference center.
+- If you require multiple preference centers in different languages, you can create separate compliance profiles while using the **Use Previously Captured Consent** feature.
 
 **Example:**
 
-1. Create **Compliance Profile EN** and define its Purposes.
-1. When creating **Compliance Profile ES**, enable **Use Previously Captured Consent** to reuse the existing Purposes from the English profile.
+1. Create **Compliance Profile EN** and define its purposes.
+1. When creating **Compliance Profile ES**, enable **Use Previously Captured Consent** to reuse the existing purposes from the English profile.
 
 #### Compliance profile with preference center
 
