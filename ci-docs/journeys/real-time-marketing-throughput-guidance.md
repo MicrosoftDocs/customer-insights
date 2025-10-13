@@ -39,8 +39,6 @@ Expected throughput in Dynamics 365 Customer Insights (new SKU):
 | Up to 500,000 interacted people | 140,000                      |
 | 500,000+ interacted people      | 500,000*                     |
 
-**If you have less than 500,000 interacted people, you can purchase a throughput burst add-on that entitles you to 500,000 interactions/hr.*
-
 > [!NOTE]
 > The above throughput guidance varies depending on a few factors such as the complexity of your journey, the number of concurrent journeys that you run, the consumption patterns from other applications that you use, and the resource intensive workloads that are being carried out.
 
@@ -71,9 +69,3 @@ If you believe that your throughput doesn't meet expectations per these guidelin
 ### I have no requirement to purchase additional contacts/interacted people, but I'd like to increase the throughput on my journeys. Is that possible?
 
 In the standalone Dynamics 365 Marketing (outbound marketing) SKU, throughput can be increased only with the purchase of additional contacts that provide better throughput based on the tiers mentioned in the above table. Reach out to your Microsoft representative to get more help on this.
-
-In the Dynamics 365 Customer Insights SKU, throughput can be increased by purchasing the throughput burst add-on pack that entitles you to 500,000 interactions/hr.
-
-### In the Dynamics 365 Customer Insights SKU, can I buy more than one throughput burst add-on SKU to get higher throughput than 500,000 interactions/hr?
-
-No. The burst add-on is non-stackable, meaning you can only purchase one of these to get the higher throughput of up to 500,000 interactions/hr.
