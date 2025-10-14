@@ -13,6 +13,7 @@ search.audienceType:
 # Set up event passes 
 Event passes act as tickets that grant attendees access to your event and its sessions or tracks. Passes are optional, but they’re essential if you want to manage paid access, session-level permissions, or special categories of registrations (e.g., VIP, sponsors). This feature is in public preview. To enable the feature please navigate to Settings > feature switches and under Event management section, enable the toggle "Enable payments in Real-time Journeys".
 [!INCLUDE preview-note]
+[!IMPORTANT] Please note that with October release, the payment gateway support was only released for registration experiences built using the Event API. With November release, the support for selection of event passes will be added to Real-time marketing Registration forms.
 
 ## What are event passes?
 
