@@ -29,7 +29,7 @@ Using [Dataverse table data](/power-apps/maker/data-platform/entity-overview) wi
 
 You can override the FLS limitation and use FLS-protected attributes in personalization, journey branching, or real-time segmentation using feature switches in the **Settings** > **Feature switches** area. However, before changing the feature switches, you must carefully consider security and privacy issues and obtain the appropriate approvals. Before overriding FLS:
 
-1. Identify all application and system users who need access to FLS-protected attributes and add them to the respective FLS profiles. To learn about the details of security roles, see [Manage user accounts, user licenses, and security roles](admin-users-licenses-roles.md#fo1. Next, add the service users mentioned in [Customer Insights - Journeys service users](admin-users-licenses-roles.md#form-and-field-level-security) to the appropriate FLS profiles.
+1. Identify all application and system users who need access to FLS-protected attributes and add them to the respective FLS profiles. To learn about the details of security roles, see [Manage user accounts, user licenses, and security roles](https://learn.microsoft.com/en-us/dynamics365/customer-insights/journeys/admin-users-licenses-roles). Next, add the service users mentioned in [Customer Insights - Journeys service users](admin-users-licenses-roles.md#form-and-field-level-security) to the appropriate FLS profiles.
     > [!IMPORTANT]
     > If you skip this step, FLS-protected fields are shown as "null" during internal system evaluations, which can cause errors that are hard to diagnose.
    1. Make sure that only FLS-enabled users can publish journeys. This step helps prevent accidental exposure of sensitive information by unauthorized users.
