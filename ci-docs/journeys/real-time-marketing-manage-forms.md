@@ -1,7 +1,7 @@
 ---
 title: Manage Customer Insights - Journeys forms
 description: Discover how to manage and style forms in Dynamics 365 Customer Insights - Journeys. Edit, unpublish, and customize forms with ease. Learn more now!
-ms.date: 09/15/2025
+ms.date: 10/13/2025
 ms.update-cycle: 180-days
 ms.topic: how-to
 author: petrjantac
@@ -136,6 +136,15 @@ Use the **Ignore empty values** toggle to control whether empty form fields over
 
 You can add **purposes** and **topics** to your form to let users subscribe to specific types of communication. Each form can only be linked to one compliance profile, so you can't include purposes from multiple compliance profiles in the same form. Learn more: [Stay compliant with privacy regulations](real-time-marketing-compliance-settings.md).
 
+If you need to include purposes from different compliance profiles in one form, you can create a new compliance profile that [reuses existing purposes](real-time-marketing-compliance-settings.md#use-previously-captured-consent-when-creating-a-compliance-profile) from those profiles.
+
+**Example**:
+
+- **Compliance profile A** contains the purpose **Commercial A**.
+- **Compliance profile B** contains the purpose **Commercial B**.
+- To combine both purposes into one form, create **Compliance Profile C** and enable the option to [use previously captured consent](real-time-marketing-compliance-settings.md#use-previously-captured-consent-when-creating-a-compliance-profile).
+- Compliance profile C now includes Commercial A and Commercial B, giving you a single profile linked to all required purposes.
+
 ### Ignore opt-outs
 
 A form can include multiple **purposes** and **topics**. For example, suppose a form has topic A and topic B. A user first subscribes to topic A. Later, the user submits the form again, selecting only topic B and leaving topic A unchecked. This action unintentionally creates an opt-out for topic A.
@@ -169,6 +178,8 @@ Attribute metadata defines field types and formats. You can't change field types
 
 > [!NOTE]
 > **File** and **Customer** field types aren't supported in forms.
+>
+> The multi-select field type doesn't allow setting a default value.
 
 ### Phone number field
 
@@ -201,9 +212,11 @@ A lookup field links to a particular entity and lets you add a drop-down list of
 
 Improperly configured field-level security can prevent lookup fields from working correctly. Make sure field-level security is set up appropriately.
 
+You can set a **default value** for your lookup field. The default value of a lookup field is determined by its display name. Make sure each display name is unique; duplicate names can cause the system to select a default value at random. If a lookup field has a default value, users must clear it to view the complete list of available values.
+
 #### Filter a lookup field values based on an answer in a previous lookup field (cascading lookup fields)
 
-The **Filter value** feature lets you to filter the choices in a lookup field based on the user's selection in a previous lookup field, creating a more intuitive and efficient form experience. This dynamic filtering reduces clutter and confusion by showing only relevant options, helping users complete forms faster and with fewer errors. For example, when selecting a city, users only see cities that match the country/region they previously selected, eliminating the need to scroll through irrelevant entries. This leads to higher quality submissions and lowers the risk of form abandonment.
+The **Filter value** feature lets you filter the choices in a lookup field based on the user's selection in a previous lookup field, creating a more intuitive and efficient form experience. This dynamic filtering reduces clutter and confusion by showing only relevant options, helping users complete forms faster and with fewer errors. For example, when selecting a city, users only see cities that match the country/region they previously selected, eliminating the need to scroll through irrelevant entries. This leads to higher quality submissions and lowers the risk of form abandonment.
 
 ##### Set up value filtering for a lookup field
 
@@ -213,7 +226,7 @@ When your form includes two lookup fields, a **Filter values** button becomes av
 
 :::image type="content" source="media/real-time-marketing-form-filter-values.png" alt-text="Set up value filtering." lightbox="media/real-time-marketing-form-filter-values.png":::
 
-Selecting the **Filter values** button opens a pop-up window where you can configure how the filtering works between lookup fields. In this window, you can specify which lookup field serves as the input for filtering and select the appropriate relationship between the underlying data tables. Once the filtering rule is configured, the field in the form editor changes its highlight from blue to purple, indicating that a filtering relationship has been successfully applied.
+Selecting the **Filter values** button opens a pop-up window where you can configure how the filtering works between lookup fields. In this window, you can specify which lookup field serves as the input for filtering and select the appropriate relationship between the underlying data tables. Once the filtering rule is configured, the field in the form editor changes its highlight from blue to purple, indicating that a filtering relationship has been successfully applied. If the filtering lookup field's value is updated, the dependent lookup field's value is reset to ensure that only valid combinations are submitted.
 
 The lookup fields for country/region and city aren't included by default. To add them to your form, refer to this [step-by-step guide that shows how to create a filtered list of cities based on the selected country/region](real-time-marketing-filter-cities-by-country-region.md). The guide also offers general guidance on how to define custom lookup fields (entities) and establish relationships between them. This approach can be applied to any scenario where field options need to be dynamically filtered based on prior selections.
 
