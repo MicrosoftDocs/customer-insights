@@ -1,53 +1,64 @@
 ---
-title: Set up event passes
-description: Learn how to set up event passes for paid events in Dynamics 365 Customer Insights - Journeys.
-ms.date: 10/06/2025
+title: Set up event passes (preview)
+description: Discover how to create and manage event passes for paid events in Dynamics 365, including pricing, allocation, and session-level access control.
+ms.date: 10/15/2025
 ms.topic: article
 author: terezakirk
 ms.author: terezakirk
+ms.reviewer: alfergus
 search.audienceType: 
   - admin
   - enduser
 ---
 
-# Set up event passes 
-Event passes act as tickets that grant attendees access to your event and its sessions or tracks. Passes are optional, but they’re essential if you want to manage paid access, session-level permissions, or special categories of registrations (e.g., VIP, sponsors). This feature is in public preview. To enable the feature please navigate to Settings > feature switches and under Event management section, enable the toggle "Enable payments in Real-time Journeys".
-[!INCLUDE preview-note]
-[!IMPORTANT] Please note that with October release, the payment gateway support was only released for registration experiences built using the Event API. With November release, the support for selection of event passes will be added to Real-time marketing Registration forms.
+# Set up event passes (preview)
+
+[!INCLUDE [Preview banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+
+Event passes act as tickets that grant attendees access to your event and its sessions or tracks. Passes are optional, but they’re essential if you want to manage paid access, session-level permissions, or special categories of registrations (for example, VIP or sponsors).
+
+To enable event passes, go to **Settings** > **Feature switches**, and under **Event management**, turn on the **Enable payments in real-time journeys** toggle.
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note.md)]
+
+> [!IMPORTANT]
+> In the October 2025 release, payment gateway support is only in registration experiences built using the [events API](using-rtm-events-api.md). In the November 2025 release, support for event passes is in real-time journeys registration forms.
 
 ## What are event passes?
 
-Passes can be sold or given away to control access and capacity limits to your event and its sessions. Each pass type can:
+Passes let you control who can attend your event and its sessions, and help you manage capacity. Each pass type can:
 - Apply to a specific event.
-- Include name, pricing, description and allocation limits.
-- Control access to specific sessions.
+- Include a name, pricing, description, and allocation limits.
+- Control who can attend specific sessions.
 
-For each assigned pass, Customer Insights – Journeys generates an attendee pass with unique ID and a unique QR code for check-in and attendance tracking. 
+For each assigned pass, Customer Insights – Journeys creates an attendee pass with a unique ID and QR code for check-in and attendance tracking.
 
-## How to set up event passes
-Go to the event record → Passes tab. Click on + New Pass to create a new pass through quick create form, where you will define:
-- Name - Pass name, this is how the pass will be displayed to your attendees through registration form
-- Number of passes allocated - Number of passes that are available for attendees to select and purchase. Set Passes Allocated to a positive number to make it visible on the event website.
-If allocation = 0, the pass remains hidden (useful for VIP or draft passes).
-- Pass price - pass price in a currency defined in your organisation settings and on Additional information tab for your event
-- Description - optional field that can help attendee understand what is included in the pass price
+## Set up event passes
 
-Once the pass is created you can add eligible sessions to each pass by opening the pass record and assigning available sessions (if applicable). The pass - session relationship helps event planners and attendees alike understand, which pass grants access to which session.
+Go to the **Event record** > **Passes** tab. Select **+New Pass** to create a new pass using the quick create form. Define the following fields:
+- **Name**: Pass name. This is how the pass shows to attendees in the registration form.
+- **Number of passes allocated**: Number of passes available for attendees to select and buy. Set **Passes allocated** to a positive number to make it visible on the event website. If the allocation is zero, the pass stays hidden (useful for VIP or draft passes).
+- **Pass price**: Pass price in the currency set in your organization settings and on the **Additional information** tab for your event.
+- **Description**: Optional field that helps attendees learn what's included in the pass price.
 
-## How to set up payment gateway 
-If you want your attendees to pay for the selected passes through an online gateway, your organization admin will be able to set up the payment provider in Settings > Event Management > Payment providers. This set up does require some developer assistance. for more information, visit: [Set up payment gateway integration](payment-gateway-integration.md)
-Once the payment gateway is set up by your admin, you can enable the Payment gateway in the Passes tab. Set the toggle to "Yes" and select the Payment provider of your choice. This will ensure that once your attendees select their pass, they will be redirected to a payment gateway of your choice to complete the purchase.
+After you create the pass, open the pass record and assign eligible sessions (if needed). The pass and session relationship helps event planners and attendees learn which pass lets them join which session.
 
-## How the payment processing works
-Once the registration with selected pass is submitted, the system creates a reservation which ensures that the capacity of the event and capacity of the pass is alocated to this registration while the payment is being processed. The admin will define a specific amount of time before the payment links expire, if the payment is successful before this time, the registration is confirmed and the attendee pass is allocated. 
+## Set up a payment gateway
 
-If the payment is not successful before the time out period is reached, the reservation is cancelled, the registration is not successful and the capacity of the event and of the pass is increased by +1. 
+To let attendees pay for selected passes through an online gateway, your organization admin sets up the payment provider in **Settings** > **Event management** > **Payment providers**. This setup needs some developer help. For more information, see [Set up payment gateway integration](developer/payment-gateway-integration.md).
 
-## Viewing sold passes 
-To see how many passes are already allocated, you can navigate to the Passes tab and in the column "No. of passes sold" you will see the exact number of sold passes. Additionally, if you navigate to the Registration and Attendance tab, you can see a new column "Pass" added where you can see the name and price of the pass the attendee purchased. 
+After your admin sets up the payment gateway, enable it in the **Passes** tab. Set the toggle to **Yes**, and select your payment provider. When attendees select a pass, they're redirected to your payment gateway to finish the purchase.
 
-Finally, to view the Attendee pass for each individual registration, click to the event registration and on the General tab, you can see "Attendee passes" section with unique ID for the attendee pass associated with this registration. 
+## How payment processing works
 
+When you submit a registration with a selected pass, the system creates a reservation to allocate event and pass capacity while payment is processed. The admin sets how long the payment link is valid. If payment is successful before the time expires, the registration is confirmed and the attendee pass is allocated.
 
+If payment isn't successful before the time expires, the reservation is canceled, the registration isn't successful, and the event and pass capacity increase.
 
+## View sold passes
 
+To check how many passes are allocated, go to the **Passes** tab. In the "No. of passes sold" column, you see the number of sold passes. Also, if you go to the **Registration and Attendance** tab, a new column, "Pass," shows the name and price of the pass the attendee bought.
+
+To view the attendee pass for an individual registration, select the event registration. On the **General** tab, check the "Attendee passes" section for the unique ID linked to the attendee pass for the registration.
+
+[!INCLUDE [footer-include](./includes/footer-banner.md)]
