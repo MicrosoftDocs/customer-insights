@@ -1,56 +1,69 @@
 ---
-title: Set up payment gateway integration in RTM
-description: Learn how to set up the payment gateway integration for paid events in Real-time journeys.
-ms.date: 10/13/2025
-ms.topic: overview
+title: Set up payment gateway integration (preview)
+ms.reviewer: alfergus
+description: Set up payment gateway integration for your events. Discover how to configure payment providers and streamline attendee payments on your event website.
+ms.date: 10/15/2025
+ms.topic: how-to
 author: pawelkruk
-ms.author: colinbirkett
+ms.author: alfergus
 search.audienceType: 
   - developer
 ---
-# Introducing payment integration for events in CIJ 
-If you have one or more events where contacts must purchase a pass, then your attendees will probably appreciate being able to pay for their passes online while they are registering for the event on your event website.
 
-To enable online payment, you must make an agreement with a third-party payment provider who can authenticate and capture payment details. Your payment provider will supply you with details about how to implement their system, which you'll usually do by adding code supplied by your provider to a web page running on your event website. You'll typically also need to tell your provider the URL to request from Dynamics 365 Customer Insights - Journeys to indicate a successful payment.
+# Payment integration for events in real-time journeys (preview)
 
-Once your new payment gateway is in place on your event website, you can configure your various events to use it, or assign it as the default for all new events. To learn more about set up of event passes, please visit [Set up event passes](real-time-journeys-event-passes.md).
+[!INCLUDE [Preview banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-To enable the feature please navigate to Settings > feature switches and under Event management section, enable the toggle "Enable payments in Real-time Journeys".
-[!INCLUDE preview-note]
+If you have one or more events where contacts must purchase a pass, then you can enable attendees to pay for their passes online while they're registering for the event on your event website.
 
-# High level overview of the integration components 
+To enable online payment, you must make an agreement with a third-party payment provider who can authenticate and capture payment details. Your payment provider supplies you with details about how to implement their system, which you'll usually do by adding code supplied by your provider to a web page on your event website. You typically also must tell your provider the URL to request from Dynamics 365 Customer Insights - Journeys to indicate a successful payment.
 
-For events creating registrations via [Event API](using-rtm-events-api.md), following high level components take part in completing the registration for paid event scenario: 
-1. Payment Provider – A service offering capabilities to process online payment. In particular it provides two components:
-- Payment Gateway – website allowing to capture the payment information, including product, price, and payee data. Upon submission it initializes processing of payment transaction and typically redirects event participant to a chosen “thank you” page.
-- Payment Notification – a service responsible to notify subscribers about payment processing events, including payment completion or payment rejection events. 
+Once your new payment gateway is in place on your event website, you can configure events to use it, or assign it as the default for all new events. To learn more about setting up event passes, see [Set up event passes](../real-time-journeys-event-passes.md).
 
-NOTE: In our examples we discuss basic integration with Stripe, but other providers like PayPal, Square, etc can be used. 
+To turn on payment integration, go to **Settings** > **Feature switches**, and under **Event management**, turn on the **Enable payments in real-time journeys** toggle.
 
-2. EventManagement Power App - Dynamics 365 – Customer Insights Event Management application. Containing core logic and data used by customers to set up and monitor paid events. It also hosts configuration required to integrate with Payment Provider.
-3. EventManagement API – public endpoint providing API used to register into an event.
-4. Registration Page- A 3rd party page, which:
-- Provides user interface for event participants to register to events.
-- Integrates with EventManagement system through EventManagement API. 
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note.md)]
 
-Note: Implementation of this page is out of scope for current document. To demonstrate how the integration should be implemented, we will use simple _http_ file snippets to issue web requests. 
+## Overview of payment integration components
 
-5. Registration completion service – A 3rd party service, which:
-- Integrates with Payment Provider to register payment submission. 
-- Provides API to receive payment redirect requests from Registration Page and return redirect URL to Payment Gateway. 
-- Integrates with Payment Notification process payment completion and payment rejection events. Uses Power Apps OData endpoint to register updates for payments through EventManagement Power App custom OData API. 
+For event registrations created using the [events API](../using-rtm-events-api.md), the following components are used to complete the registration for a paid event scenario:
 
-Note: proposed here split segregation of certain responsibilities into separate components is just for study purposes. Depending on your needs, you can collapse or split certain 3rd components. For example Registration completion service can be split into two parts. One responsible for payment redirect and second responsible for notifications.  
+1. **Payment provider**: A service that processes online payments. The payment provider contributes two components:
+    - *Payment gateway*: A website that captures payment information, including product, price, and payee data. Upon submission, the payment gateway initializes payment transaction processing and typically redirects the event participant to a “thank you” page.
+    - *Payment notification*: A service that notifies subscribers about payment processing events, including payment completion or payment rejection events.
 
-# Implementation of Registration completion service 
-In our samples, we use ASP.NET MVC web application with C#. We use Stripe to illustrate a real-world implementation. However this implementation is very superficial and incomplete. It only demonstrates how to close the payment loop. If you are interested in completing the implementation, please follow official Stripe documentation. 
+    > [!NOTE]
+    > The examples in this article discuss basic integration with Stripe, but other providers like PayPal or Square can be used.
 
-## Part A: Payment redirect logic 
+1. **EventManagement Power App**: The Dynamics 365 – Customer Insights event management application. Contains core logic and data used by customers to set up and monitor paid events. It also hosts the configuration required to integrate with the payment provider.
+1. **EventManagement API**: Public endpoint providing the API used to register for an event.
+1. **Registration page**: A third-party page, which:
+    - Provides the user interface for event participants to register for events.
+    - Integrates with the EventManagement system through the EventManagement API.
 
-Registration Page receives response with a link to endpoint, that should be accessible by the browser for redirecting the event participant into the Payment Gate. To achieve this the **Registration completion service** needs to fetch the payment information from EventManagement Power App. Then a call to Payment Gateway service is made to generate a new payment URL. 
+    > [!NOTE]
+    > Implementation of the registration page is out of scope this article. To demonstrate how the integration should be implemented, this article uses simple _http_ file snippets to issue web requests.
 
-### Contract 
-The link format is described by following OpenAPI specification: 
+1. **Registration completion service**: A third-party service, which:
+    - Integrates with the payment provider to register payment submission.
+    - Provides an API to receive payment redirect requests from the registration page and returns a redirect URL to the payment gateway.
+    - Integrates with the payment notification to process payment completion and payment rejection events. Uses a Power Apps OData endpoint to register updates for payments through the EventManagement Power App custom OData API.
+
+    > [!NOTE]
+    > The breakdown of payment integration responsibilities into separate components is for illustrative purposes. Depending on your needs, you can collapse or split certain third-party components. For example, the registration completion service can be split into two parts: one responsible for payment redirect and a second responsible for notifications.  
+
+## Implementing a registration completion service
+
+This article uses an ASP.NET Model-View-Controller (MVC) web application with C# for the implementation examples. The examples use Stripe to show a real-world implementation. This implementation is high level and incomplete. It only shows how to close the payment loop. If you want to finish the implementation, follow the official Stripe documentation.
+
+### Part A: Payment redirect logic
+
+The registration page gets a response with a link to the endpoint that the browser uses to redirect the event participant to the payment gateway. To do this, the registration completion service fetches the payment information from the EventManagement Power App. Then, it calls the payment gateway service to generate a new payment URL.
+
+#### Contract
+
+The link format is described by the following OpenAPI specification:
+
 ```
 { 
     "openapi": "3.0.1", 
@@ -92,16 +105,17 @@ The link format is described by following OpenAPI specification:
     "components": {} 
 } 
 ```
-We have two input parameters from query string: 
 
-- purchaseId – it’s a GUID format identifying a record in msevtmgt_eventpurchase table. The record includes the information about the state of payment and some additional information, in particular the payment amount and currency.
-- returnUrl – it’s a URL to which the **Payment Gateway** should return after payment is submitted. Its optional, for example if the customer uses preset Thank You page from Payment Gate. 
+The query string has two input parameters:
 
-The response is a standard HTTP 302 Redirect to the actual payment link on Payment Gateway. 
+- `purchaseId`: A GUID that identifies a record in the `msevtmgt_eventpurchase` table. The record has information about the payment state and other details, including the payment amount and currency.
+- `returnUrl`: A URL where the payment gateway returns after the payment is submitted. The return URL is optional. Use the return URL if, for example, you use a preset thank you page from the payment gateway.
 
-### Fetching Payment Information 
+The response is a standard HTTP 302 redirect to the payment link on the payment gateway.
 
-One organization request can be used to fetch the required data. Following C# code snippet demonstrates how to fetch amount and currency code in amount and currencyIsoCode variables: 
+#### Fetching the payment information
+
+Use an organization request to get the required data. The following C# code snippet shows how to get the amount and currency code in the `amount` and `currencyIsoCode` variables:
 
 ```
 var request = new RetrieveRequest 
@@ -128,11 +142,12 @@ var currencyEntity = entity?.RelatedEntities.FirstOrDefault().Value.Entities.Fir
 var currencyIsoCode = currencyEntity?.GetAttributeValue<string>("isocurrencycode") ?? "USD"; 
 ```
 
-Amount and currency are the absolute basic information that is required by the Payment Gateway. If needed, more data can be retrieved. 
+The amount and currency are the minimum information required by the payment gateway. If needed, more data can be retrieved.
 
-### Generating redirect link  
+#### Generating a redirect link  
 
-This step will differ, depending on what actual Payment Provider is used. In our example we use a simple integration with Stripe. A following code snippet demonstrates how to generate a new link: 
+This step is different for each payment provider. In this example, the article uses a simple integration with Stripe. The following code snippet shows how to generate a new link:
+
 ```
 public static string GetRedirectUrl(string purchaseId, long priceInCents, string currency, string? redirectUrl) 
 { 
@@ -179,27 +194,28 @@ public static string GetRedirectUrl(string purchaseId, long priceInCents, string
     return paymentLink.Url; 
 } 
 ```
- 
-## Part B: Payment finalization logic 
 
-The payment completion receives a notification from Payment Notification service. The notification should include the Purchase ID used in generation of payment link.  
-A custom API msevtmgt_finalizeregistrationpayment is available to execute such operation. It takes two parameters: 
+### Part B: Payment finalization logic
 
-- msevtmgt_purchaseid – Purchase ID used in generation of payment link.
-- msevtmgt_paymentstatus – The value of msevtmgt_paymentstatus OptionSet, indicating the status of payment: 
--- 100000000 – cancelled 
--- 100000001 – completed 
+The payment completion gets a notification from the payment notification service. The notification includes the purchase ID used to generate the payment link. Use the custom API, `msevtmgt_finalizeregistrationpayment`, to run this operation. The API takes two parameters:
 
-Following code snippet demonstrates how to register the payment completion: 
+- `msevtmgt_purchaseid`: The purchase ID used to generate the payment link.
+- `msevtmgt_paymentstatus`: The value of the `msevtmgt_paymentstatus` OptionSet, indicating the status of payment:
+    - `100000000` = Cancelled
+    - `100000001` = Completed
+
+The following code snippet demonstrates how to register the payment completion:
+
 ```
 var request = new OrganizationRequest("msevtmgt_finalizeregistrationpayment"); 
 request["msevtmgt_purchaseid"] = purchaseId; 
 request["msevtmgt_paymentstatus"] = new OptionSetValue(status); 
 await cdsServiceClient.ExecuteAsync(request); 
 ```
-An example of Payment Notification from Stripe uses a webhook mechanism to receive notifications about various events, including purchase related.  
- 
-Following code demonstrates a very simple controller logic for **Registration Completion Service**: 
+
+An example payment notification from Stripe uses a webhook to receive notifications about various events, including purchase-related events.  
+
+The following code shows simple controller logic for the registration completion service:
 
 ```
 using Microsoft.AspNetCore.Mvc; 
@@ -243,52 +259,57 @@ namespace PaymentGatewaySample.Controllers
 } 
 ```
 
-# Complete the setup of payment gateway in CIJ 
-**1. Set up Web application**
-   Create application set up under Settings->Event management->Web applications as described in [Event API](using-rtm-events-api.md). You will receive endpoint that your **RegistrationPage** uses for initialization of registration process, together with a shareable token. 
+## Complete the setup of payment gateway in Customer Insights - Journeys
 
-**2. Set up Payment Provider**
-Navigate to Settings -> Event management -> Payment providers and add a new payment provider configuration by adding + New. You will be asked to provide:
-- Provider name - internal name that will help your users understand which integration they use for their events.
-- Payment page url - Payment page URL points to the URL of payment redirect API from Registration completion service. Please notice that the URL ends with “?” to query string section. Here you can add any additional query string for more advanced implementations of your choice.
-- Payment timeout (minutes) - this is the maximum amount of time the registration reservation should be waiting for successful payment confirmation before releasing the spot and cancelling the transaction.
+1. **Set up the web application**: Create the application set up under **Settings** > **Event management** > **Web applications**, as described in [events API documentation](../using-rtm-events-api.md). You receive an endpoint that your registration page uses to initialize the registration process, together with a shareable token.
 
-# Testing 
+1. **Set up a payment provider**: Navigate to **Settings** > **Event management** > **Payment providers** and add a new payment provider configuration by selecting **+New**. You're asked to provide:
+    - **Provider name**: The internal name that helps your users understand which integration they should use for their events.
+    - **Payment page URL**: The payment page URL points to the URL of the payment redirect API from the registration completion service. Notice that the URL ends with a “?” and a query string section. Here, you can add any additional query string for more advanced implementations of your choice.
+    - **Payment timeout (minutes)**: This is the maximum amount of time the registration reservation should wait for successful payment confirmation before releasing the spot and canceling the transaction.
 
-1. Create new Event record. Ensure that:
-- “Custom solution using events API” is set as value of ** Where do you want attendees to register for this event?** parameter.
-- On Passes tab Enable payment gateway is set to Yes.
-- On Passes tab Payment provider is selected.
-1.  Add one Pass and set the price on it. Take note of Pass-ID (the primary key of msevtmgt_pass record).
-1.  Set Event record to Live, take note of Readable-Event-ID (the msevtmgt_readableeventid property of msevtmgt_event record)
-1.  Issue a following HTTP request: 
-```
-POST <Replace with Web Application Endpoint>/events/<Replace with Readable-Event-ID>/registrations?emApplicationtoken=<Replace with Web Application Token> 
-Accept: */* 
-Content-Type: application/json 
-{ 
-    "attendees": [ 
-        { 
-            "lastName": "Jane", 
-            "firstName": "Doe", 
-            "email": "Jane@contoso.com", 
-            "passId": "<Replace with Pass ID>" 
-        } 
-    ] 
-}
-```
-The HTTP response body should look like this: 
-```
-{ 
-"redirectUrl ": "https://localhost:7202/GatewayRedirect/PayWithStripe?purchaseId=a4d9e358-949f-f011-bbd3-6045bd02f64d&returnUrl=https%3A%2F%2Fmicrosoft.com" 
-}
-```
-redirectUrl is targeting the endpoint on **Registration completion service**. In our case it’s pointing to a URL on localhost, as the service is running on local machine for testing purposes. 
-1. Now lets paste the URL in the browser. It should load the payment page from your selected payment provider
-1. Fill up dummy credit card data and submit the payment 
-1. You should see that your browser gets redirected to the **returnUrl **
-   
-You can now test the finalization of the payment. If you are logged into PowerApps as administrator, you can open developer tools and execute following Javascript code through console: 
+## Testing
+
+1. Create a new event record. Ensure that:
+    - **Custom solution using events API** is set as the value for the **Where do you want attendees to register for this event?** parameter.
+    - On the **Passes** tab, **Enable payment gateway** is set to **Yes**.
+    - On the **Passes** tab, **Payment provider** is selected.
+1. Add one pass and set the price on it. Make note of the **Pass-ID** (the primary key of the `msevtmgt_pass` record).
+1. Set the event record to **Live**. Make note of the **Readable-Event-ID** (the `msevtmgt_readableeventid` property of the `msevtmgt_event` record).
+1. Issue the following HTTP request:
+
+    ```
+    POST <Replace with Web Application Endpoint>/events/<Replace with Readable-Event-ID>/registrations?emApplicationtoken=<Replace with Web Application Token> 
+    Accept: */* 
+    Content-Type: application/json 
+    { 
+        "attendees": [ 
+            { 
+                "lastName": "Jane", 
+                "firstName": "Doe", 
+                "email": "Jane@contoso.com", 
+                "passId": "<Replace with Pass ID>" 
+            } 
+        ] 
+    }
+    ```
+
+    The HTTP response body should look like this:
+
+    ```
+    { 
+    "redirectUrl ": "https://localhost:7202/GatewayRedirect/PayWithStripe?purchaseId=a4d9e358-949f-f011-bbd3-6045bd02f64d&returnUrl=https%3A%2F%2Fmicrosoft.com" 
+    }
+    ```
+
+    `redirectUrl` targets the endpoint on the registration completion service. In this example, it points to a URL on the `localhost`, as the service is running on a local machine for testing purposes.
+
+1. Now, paste the URL in the browser. It should load the payment page from your selected payment provider.
+1. Fill in dummy credit card data and submit the payment.
+1. You should see that your browser is redirected to the **returnUrl**.
+
+Now, test the payment finalization. If you're signed in to PowerApps as an admin, open the developer tools and run the following JavaScript code in the console:
+
 ```
 x ={ 
 "msevtmgt_purchaseid": "<replace>", // <--- your purchase ID 
@@ -303,4 +324,6 @@ xhr.setRequestHeader("OData-Version", "4.0");
 xhr.send(JSON.stringify(x)); 
 ```
 
-You have now completed the payment loop. 
+You've completed the payment loop.
+
+[!INCLUDE [footer-include](.././includes/footer-banner.md)]
