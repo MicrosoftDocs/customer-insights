@@ -37,11 +37,11 @@ Before we dive into the scenarios, let’s review which form field properties ar
 
 You can adjust the path of a journey depending on the answers your customer provided in the form.
 
-For example: *If a customer selects “Interested in Product A”, you can branch them into a journey that sends more details about Product A.*
+For example: *If a customer selects "Interested in Product A", you can branch them into a journey that sends more details about Product A.*
 
 ### Step by step guide - Choose favorite color example
 
-To make this easier to follow, **let’s assume your form includes an option set field called Favorite color** with the following properties:
+To make this guide easier to follow, **let’s assume your form includes an option set field called Favorite color** with the following properties:
 
 - Display name: Favorite color
 - Field Localized Name: Favorite color
@@ -58,7 +58,7 @@ And these options:
 
 1. **Create a new Trigger-based journey** using the **Marketing Form Submitted**, which works for both marketing and event registration form types. Choose your form and select **Create** button.
   :::image type="content" source="media/real-time-marketing-form-submitted-trigger.png" alt-text="Create trigger-based journey." lightbox="media/real-time-marketing-form-submitted-trigger.png":::
-  If you don’t select a specific form, the journey will trigger from any form submission across all your forms. If your form updates multiple audiences (for example, both leads and contacts), make sure you select the correct audience for your journey.
+  If you don’t select a specific form, the journey triggers from any form submission across all your forms. If your form updates multiple audiences (for example, both leads and contacts), make sure you select the correct audience for your journey.
 1. On the **journey canvas**, add an action tile and select **Attribute branch** to create different paths based on submitted form values.  
     1. Set condition Trigger -> Marketing Form Submitted -> Form Submission Entity Reference -> Field Submissions -> Field Value.
     1. Enter the expected value. For example, if you want to create a branch for customers who selected Blue as their favorite color, enter 1 (the Field value assigned to Blue in the option set).
@@ -93,11 +93,13 @@ This pulls the values your customer submitted and inserts them into the email.
   :::image type="content" source="media/real-time-marketing-form-personalization-set-filter.png" alt-text="Set filter for dynamic text." lightbox="media/real-time-marketing-form-personalization-set-filter.png":::
 1. Select Done, then Save.
 
+Learn more about [Personalization](real-time-marketing-personalization.md).
+
 ### Show a personalized list
 
-Create a Personalized list of what the customer submitted and include it in the email.
+Create a [Personalized list](real-time-marketing-personalize-lists.md) of what the customer submitted and include it in the email.
 
-You can build personalized list using **Trigger -> Marketing Form Submitted -> Form Submission Entity Reference -> Field Submissions**. Choose the **Field localized Name** and **Field Localized Value** as columns. You can add conditions to exclude specific fields from the list. It is also possible to encapsulate the personalization tokens into html table to enhance the visual experience.
+You can build personalized list using **Trigger -> Marketing Form Submitted -> Form Submission Entity Reference -> Field Submissions**. Choose the **Field localized Name** and **Field Localized Value** as columns. You can add conditions to exclude specific fields from the list. It's also possible to encapsulate the personalization tokens into html table to enhance the visual experience.
 
 :::image type="content" source="media/real-time-marketing-form-personalized-list.png" alt-text="Set filter for dynamic text." lightbox="media/real-time-marketing-form-personalized-list.png":::
 
