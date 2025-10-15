@@ -425,7 +425,7 @@
       - name: Create an event registration experience
         href: event-registration-experience.md
       - name: Set up event passes (preview)
-        href: real-time-journeys-events-passes.md
+        href: real-time-journeys-event-passes.md
       - name: Create unmapped fields for registration forms
         href: create-unmapped-fields-registration-forms.md
       - name: Build an event registration portal with Power Pages (preview)

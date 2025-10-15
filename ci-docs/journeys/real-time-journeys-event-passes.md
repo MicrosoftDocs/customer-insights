@@ -22,7 +22,7 @@ To enable event passes, go to **Settings** > **Feature switches**, and under **E
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note.md)]
 
 > [!IMPORTANT]
-> In the October 2025 release, payment gateway support is only in registration experiences built using the [events API](using-rtm-events-api.md). In the November 2025 release, support for event passes is in real-time journeys registration forms.
+> In the October 2025 release, payment gateway support is only in registration experiences built using the [events API](developer/using-rtm-events-api.mdusing-rtm-events-api.md). In the November 2025 release, support for event passes is in real-time journeys registration forms.
 
 ## What are event passes?
 
