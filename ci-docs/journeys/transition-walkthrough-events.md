@@ -40,8 +40,8 @@ Event management comprises three areas:
 Creating and setting up events, tracks, sessions, speakers, and registrants is a similar experience in real-time journeys. But there are adjustments and improvements with every new feature in real-time journeys. Real-time journeys includes these capabilities:
 
 - Multi-session registration in real-time journeys events lets you manage the capacity of events and sessions more efficiently. For more information, see [Set up session-level registration](real-time-journeys-event-session.md).
-- Waitlist is now a registration status and works for events and sessions simultaneously. For more information, see [Preview: Set up and manage an event waitlist](set-up-and-manage-waitlist.md).
-- Custom registration fields are now managed in the form editor and answers are part of the form submission response. For more information, see [Create unmapped fields for registration forms (preview)](create-unmapped-fields-registration-forms.md)
+- Waitlist is now a registration status and works for events and sessions simultaneously. For more information, see [Set up and manage an event waitlist](set-up-and-manage-waitlist.md).
+- Custom registration fields are now managed in the form editor and answers are part of the form submission response. For more information, see [Create unmapped fields for registration forms](create-unmapped-fields-registration-forms.md)
 - Event passes can now be found on a dedicated tab called "Passes". For more information, see [Set up event passes (preview)](real-time-journeys-event-passes.md)
   
 ### Event registration and publishing
