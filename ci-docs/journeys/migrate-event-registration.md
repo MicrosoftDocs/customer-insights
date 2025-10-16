@@ -50,7 +50,7 @@ An alternative is to build a new event registration website using Power Pages st
 
 Outbound marketing forms are being deprecated along with the outbound marketing module.
 
-The recommended migration path for event registration marketing forms is to replace them with real-time journeys event registration forms. Real-time journeys event registration forms can be embedded into your website, embedded within Power Pages, or hosted as standalone pages. For more information, see [Open the event management work area](open-events.md).
+The recommended migration path for event registration marketing forms is to replace them with real-time journeys event registration forms. Real-time journeys event registration forms can be embedded into your website, embedded within Power Pages, or hosted as standalone pages. For more information, see [Event registration forms](event-registration-experience.md#event-registration-form)
 
 ## Custom solution using the outbound marketing event management API
 
