@@ -11,6 +11,7 @@ search.audienceType:
 
 # Event WebApp: Create an Event Portal on Your Website 
 [!INCLUDE [consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
+
 The Event WebApp is a fast, lightweight, and customizable solution for showcasing live events from the Dynamics 365 Events API directly on your website. It provides a responsive, multilingual interface that allows attendees to search, explore, and register for events effortlessly. 
 
 Built with **plain JavaScript, HTML, and CSS**, the WebApp is easy to deploy on any static hosting environment and simple to customize—ideal for organizations seeking a flexible and accessible event experience. The default set up of the web app includes an overview page with a list of live events and click-through to the event datil page with registration form.
@@ -26,7 +27,7 @@ Built with **plain JavaScript, HTML, and CSS**, the WebApp is easy to deploy on 
 ## Prerequisites 
 These are the steps that you will have to complete before the set up of your web application:
 1. A **Web application record** in Customer Insights – Journeys for your domain.
-1.** Domain authentication** for embedded registration forms.
+1. **Domain authentication** for embedded registration forms.
 1. **Node.js v22+** (optional, for local development).
 
 ### 1. Configure Web Application in Settings 
@@ -75,6 +76,7 @@ This will trigger download and the folders in the zip file will have the followi
 ## Deployment to Production  
 
 To deploy this application to production: 
+
 1. Update the credentials in `public/js/config.js` with your production values 
 ```javascript 
 const CONFIG = { 
@@ -85,8 +87,9 @@ const CONFIG = {
 }; 
 ``` 
  **Note**: If this project was downloaded as a zip from *Customer Insights - Journeys -> Settings -> Web applications*, the configuration values will already be set correctly and you can skip this step. 
-2. Copy the entire contents of the `public` directory to your web server 
-3. Open your browser and navigate to your domain. You should now see the WebApp and if any events are published to it, they will be displayed in the list of events on the detail page.
+ 
+1. Copy the entire contents of the `public` directory to your web server 
+1. Open your browser and navigate to your domain. You should now see the WebApp and if any events are published to it, they will be displayed in the list of events on the detail page.
 
 For more detailed information about supported features, localization support, and customization options, please refer to the version-controlled README in the downloaded zip file. 
 
