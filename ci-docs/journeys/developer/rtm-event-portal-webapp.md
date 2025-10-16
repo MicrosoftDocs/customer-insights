@@ -9,12 +9,14 @@ search.audienceType:
   - developer
 ---
 
-# Event WebApp: Create an Event Portal on Your Website 
+# Create an Event Portal on Your Website using WebApp
 [!INCLUDE [consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
 
 The Event WebApp is a fast, lightweight, and customizable solution for showcasing live events from the Dynamics 365 Events API directly on your website. It provides a responsive, multilingual interface that allows attendees to search, explore, and register for events effortlessly. 
 
-Built with **plain JavaScript, HTML, and CSS**, the WebApp is easy to deploy on any static hosting environment and simple to customize—ideal for organizations seeking a flexible and accessible event experience. The default set up of the web app includes an overview page with a list of live events and click-through to the event datil page with registration form.
+Built with **plain JavaScript, HTML, and CSS**, the WebApp is easy to deploy on any static hosting environment and simple to customize—ideal for organizations seeking a flexible and accessible event experience. The default set up of the web app includes an overview page with a list of live events and click-through to the event detail page with registration form.
+
+:::image type="content" source="media/webappportal.png" alt-text="List of events published to event portal app." lightbox="media/webappportal.png":::
 
 # Key Features 
 - Live Event Display - Display all live events for a configured web application in a responsive grid layout that adapts to desktop and mobile screens.
@@ -38,13 +40,15 @@ You’ll be asked to define:
 1. Domain - add your domain as the origin (e.g., https://yourdomain.com). 
 1. Token will be automatically provided  
 1. Decide if this web app should be the default web app 
-1. Save your settings.  
+1. Save your settings.
 
 ### 2. Authenticate Domain
 To serve embedded event registration forms, your domain must be authenticated in *Customer Insights – Journeys > Settings > Domains*. Learn more: [Authenticate your domains](https://learn.microsoft.com/en-us/dynamics365/customer-insights/journeys/domain-authentication). 
 
 ## Set up of the WebApp  
 Once the pre-requisites have been completed, you can navigate back to the Web Application configuration that you have set up and click on “Download Zip File”.  
+
+:::image type="content" source="media/downloadzipfile.png" alt-text="Download zip file for webapp." lightbox="media/downloadzipfile.png":::
 
 This will trigger download and the folders in the zip file will have the following structure:  
 
@@ -77,7 +81,7 @@ This will trigger download and the folders in the zip file will have the followi
 
 To deploy this application to production: 
 
-1. Update the credentials in `public/js/config.js` with your production values 
+1. Update the credentials in `public/js/config.js` with your production values* 
 ```javascript 
 const CONFIG = { 
   BASE_URL: "your-dynamics-api-url", 
@@ -131,4 +135,5 @@ Event planners can publish each event to different publishing destination based 
 - Choose the desired web application in the dropdown. 
 - Publish (Go live). Only live events are loaded and shown on the portal. 
 
- 
+ :::image type="content" source="media/publishingwebapp.png" alt-text="Select Event portal using WebApp in a dropdown." lightbox="media/publishingwebapp.png":::
+
