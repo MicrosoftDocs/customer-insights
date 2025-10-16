@@ -410,6 +410,8 @@
         href: real-time-journeys-event-session.md
       - name: Set up and manage an event waitlist
         href: set-up-and-manage-waitlist.md
+      - name: Set up event passes (preview)
+        href: real-time-journeys-event-passes.md
       - name: Create an event from another event
         href: event-from-event.md
     - name: Host a Microsoft Teams webinar
@@ -424,11 +426,9 @@
         href: invite-register-house-event-attendees.md
       - name: Create an event registration experience
         href: event-registration-experience.md
-      - name: Set up event passes (preview)
-        href: real-time-journeys-event-passes.md
       - name: Create unmapped fields for registration forms
         href: create-unmapped-fields-registration-forms.md
-      - name: Build an event registration portal with Power Pages
+      - name: Build an event registration portal with Power Pages 
         href: event-portal-template.md
       - name: Cancel event registration
         href: cancel-registration.md
@@ -608,6 +608,8 @@
     href: developer/create-journey-template-api.md
   - name: Use the events API in real-time journeys (preview)
     href: developer/using-rtm-events-api.md
+  - name: Create an Event Portal on your website using WebApp
+    href: developer/rtm-event-portal-webapp.md
   - name: Set up payment gateway integration (preview)
     href: developer/payment-gateway-integration.md
   - name: Create a segment using the Web API
