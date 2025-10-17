@@ -277,6 +277,14 @@ The following contact or lead attributes update automatically when the form crea
 
 These attributes don't update when a form submission updates an existing record.
 
+### Use submitted values in email personalization and journey branching
+
+You can create a trigger-based journey that starts when a form is submitted.
+From there, you have two powerful options:
+
+1. **[Branch the journey using submitted values](real-time-marketing-form-submitted-values.md#branch-a-journey-based-on-submitted-values)** – Adjust the path based on answers provided in the form (e.g., favorite product, event preferences).
+1. **[Personalize emails using submitted values](real-time-marketing-form-submitted-values.md#personalize-email-using-submitted-values)** – Insert dynamic text or show a summary of what the customer submitted, even when the journey doesn’t reference a Contact or Lead record (ideal for Double Opt-in scenarios).
+
 ## Advanced form customization
 
 To open the HTML editor and show the source code of a form, select the **HTML button** in the top right corner.

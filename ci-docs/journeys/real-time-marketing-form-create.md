@@ -100,7 +100,7 @@ You can change the target audience using the **Audience** picker in the top righ
     > Make sure the domain where you embedded your form is allowed for external form hosting. If the domain isn't allowed for external form hosting, the form won't be rendered on your web page and all form submissions will be rejected. Learn more about [domain authentication](domain-authentication.md).
     > The out-of-box domain for a standalone page is enabled by default. [Learn more](real-time-marketing-form-create.md#publish-your-form)
 
-1. Set up a thank you email for web page visitors who submitted the form. You can create a new journey using the *Marketing Form Submitted* trigger, which is executed every time your form is submitted. Learn more about creating a [trigger-based journey](real-time-marketing-trigger-based-journey.md).
+1. Set up a thank you email for web page visitors who submitted the form. You can create a new journey using the *Marketing Form Submitted* trigger, which is executed every time your form is submitted. Learn more about [using submitted values in trigger-based journey](real-time-marketing-form-submitted-values.md).
 
 > [!TIP]
 > You can enable [form prefill](real-time-marketing-form-prefill.md) so that existing users don't have to re-enter known information.
@@ -124,7 +124,7 @@ Once the form is published, you can still access these options by selecting the 
 ### See also
 
 - [Management and advanced configuration of forms](real-time-marketing-manage-forms.md)
-- [Grow your business with multi-brand, custom preference centers](real-time-marketing-compliance-settings.md)
+- [How to personalize emails and branch journeys using submitted values](real-time-marketing-form-submitted-values.md)
 - [Customer Insights - Journeys preference centers](real-time-marketing-preference-centers.md)
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
