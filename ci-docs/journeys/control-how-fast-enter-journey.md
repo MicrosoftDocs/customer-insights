@@ -11,11 +11,7 @@ search.audienceType:
   - enduser
 ---
 
-# Control how fast customers can enter a journey (preview)
-
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note.md)]
+# Control how fast customers can enter a journey 
 
 There are times when you want to reach a large audience. However, sending one message to the entire audience at the same time can cause certain problems such as overwhelming  call centers or your website. To solve this issue, you might want to control how fast audience members enter the journey, avoiding thousands of simultaneous phone calls or website visits at the same time.
 
