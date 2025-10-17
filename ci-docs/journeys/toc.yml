@@ -362,8 +362,8 @@
         items:
         - name: Personalize triggers using conditions
           href: real-time-marketing-personalize-triggers.md
-        - name: Control how fast customers can enter a journey (preview)
-          href: control-how-fast-enter-journey.md      
+        - name: Control how fast customers enter a journey
+          href: control-how-fast-enter-journey.md
       - name: Split journey audiences
         items:
         - name: Personalize journey variations using multiple journey branches
