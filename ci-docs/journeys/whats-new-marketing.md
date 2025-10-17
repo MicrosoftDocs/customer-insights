@@ -1,7 +1,7 @@
 ---
 title: New and upcoming features
 description: Discover the latest features, improvements, and bug fixes in Dynamics 365 Customer Insights - Journeys. Stay updated with our monthly release notes.
-ms.date: 10/16/2025
+ms.date: 10/17/2025
 ms.update-cycle: 180-days
 ms.topic: whats-new
 author: alfergus
@@ -59,8 +59,8 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 	- [Release plan](/dynamics365/release-plan/2025wave2/customer-insights/dynamics365-customer-insights-journeys/create-event-portal-own-website)
 	- [Docs](./developer/using-rtm-events-api.md)
 
-- **Create an event portal on your own website using the WebApp**
-	-The event portal Web App provides a lightweight, multilingual, and mobile-responsive interface for showcasing live events from the Dynamics 365 Events API, enabling users to search by name or description, view detailed event information, and register directly using embedded Customer Insights - Journeys forms. It's built with plain JavaScript, HTML, and CSS, and supports fast deployment and easy customization.
+- **Create an event portal on your own website using the web application**
+	-The event portal web application provides a lightweight, multilingual, and mobile-responsive interface for showcasing live events from the Dynamics 365 events API, enabling users to search by name or description, view detailed event information, and register directly using embedded Customer Insights - Journeys forms. It's built with plain JavaScript, HTML, and CSS, and supports fast deployment and easy customization.
  -  [Release plan](https://learn.microsoft.com/en-us/dynamics365/release-plan/2025wave2/customer-insights/dynamics365-customer-insights-journeys/create-event-portal-own-website-webapp)
  -  [Docs](./developer/rtm-event-portal-webapp.md)
 
