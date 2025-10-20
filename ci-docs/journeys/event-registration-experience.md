@@ -34,7 +34,7 @@ You can build an event registration experience as a single registration page or 
 - **Registration portal on your own domain built with the web application**: Use the out-of-box web application to build a registration portal hosted on your own domain. For more information, see [Create an event portal on your website using the web application](developer/rtm-event-portal-webapp.md).
 - **Custom solution using the events API**: For more information, see [Using the events API in real-time journeys](developer/using-rtm-events-api.md).
 
-:::image type="content" source="media/publishingwebapp.png" alt-text="Screenshot of selecting an event portal using the web application in a dropdown." lightbox="media/publishingwebapp.png":::
+:::image type="content" source="media/publishing-web-application.png" alt-text="Screenshot of selecting an event portal using the web application in a dropdown." lightbox="media/publishing-web-application.png":::
 
 ## Event registration form
 
