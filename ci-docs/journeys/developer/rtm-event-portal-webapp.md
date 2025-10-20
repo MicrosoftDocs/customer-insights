@@ -9,7 +9,8 @@ search.audienceType:
   - developer
 ---
 
-# Create an Event Portal on your website using WebApp
+# Create an event portal on your website using the web application
+
 [!INCLUDE [consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
 
 The Event WebApp is a fast, lightweight, and customizable solution for showcasing live events from the Dynamics 365 Events API directly on your website. It provides a responsive, multilingual interface that allows attendees to search, explore, and register for events effortlessly. 
