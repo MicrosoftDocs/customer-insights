@@ -61,7 +61,7 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 
 - **Create an event portal on your own website using the web application**
 	-The event portal web application provides a lightweight, multilingual, and mobile-responsive interface for showcasing live events from the Dynamics 365 events API, enabling users to search by name or description, view detailed event information, and register directly using embedded Customer Insights - Journeys forms. It's built with plain JavaScript, HTML, and CSS, and supports fast deployment and easy customization.
- -  [Release plan](https://learn.microsoft.com/en-us/dynamics365/release-plan/2025wave2/customer-insights/dynamics365-customer-insights-journeys/create-event-portal-own-website-webapp)
+ -  [Release plan](/dynamics365/release-plan/2025wave2/customer-insights/dynamics365-customer-insights-journeys/create-event-portal-own-website-webapp)
  -  [Docs](./developer/rtm-event-portal-webapp.md)
 
 #### Public preview

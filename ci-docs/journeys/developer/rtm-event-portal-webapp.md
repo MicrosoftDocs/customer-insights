@@ -4,7 +4,7 @@ description: Learn how to use the lightweight, customizable web application to c
 ms.date: 10/20/2025
 ms.topic: overview
 author: terezakirk
-ms.author: alferguson
+ms.author: alfergus
 search.audienceType: 
   - developer
 ---
@@ -51,7 +51,7 @@ You’ll be asked to define:
 
 #### 2. Authenticate Domain
 
-To serve embedded event registration forms, your domain must be authenticated in *Customer Insights – Journeys > Settings > Domains*. Learn more: [Authenticate your domains](domain-authentication.md).
+To serve embedded event registration forms, your domain must be authenticated in *Customer Insights – Journeys > Settings > Domains*. Learn more: [Authenticate your domains](../domain-authentication.md).
 
 ### Set up of the web application
 
@@ -89,27 +89,28 @@ This will trigger download and the folders in the zip file will have the followi
 
 ### Deployment to Production  
 
-To deploy this application to production: 
+To deploy this application to production:
 
 1. Update the credentials in `public/js/config.js` with your production values* 
-```javascript 
-const CONFIG = { 
-  BASE_URL: "your-dynamics-api-url", 
-  ORG_ID: "your-organization-id", 
-  TOKEN: "your-api-token", 
-  WEBAPP_ID: "your-webapp-id"  // Optional: filter events by web application ID 
-}; 
-``` 
 
-> [!NOTE]
-> If this project was downloaded as a zip from *Customer Insights - Journeys -> Settings -> Web applications*, the configuration values will already be set correctly and you can skip this step. 
- 
+    ```javascript 
+    const CONFIG = { 
+      BASE_URL: "your-dynamics-api-url", 
+      ORG_ID: "your-organization-id", 
+      TOKEN: "your-api-token", 
+      WEBAPP_ID: "your-webapp-id"  // Optional: filter events by web application ID 
+    }; 
+    ```
+
+    > [!NOTE]
+    > If this project was downloaded as a zip from *Customer Insights - Journeys -> Settings -> Web applications*, the configuration values will already be set correctly and you can skip this step. 
+
 1. Copy the entire contents of the `public` directory to your web server 
 1. Open your browser and navigate to your domain. You should now see the web application and if any events are published to it, they will be displayed in the list of events on the detail page.
 
 For more detailed information about supported features, localization support, and customization options, please refer to the version-controlled README in the downloaded zip file.
 
-### Local Development
+### Local development
 
 The included Express server (server.js) is for local development and customization purposes: 
 
@@ -144,14 +145,14 @@ Set up a web application as described above, but set t the origin to `http://loc
 
 ## Publishing events to web application
 
-Event planners can publish each event to different publishing destination based on their choice. To learn more about ways to create an event registration experience, visit: [Event registration experience](event-registration-experience.md)
+Event planners can publish each event to different publishing destination based on their choice. To learn more about ways to create an event registration experience, visit: [Event registration experience](../event-registration-experience.md)
 
 - To assign an event to a web application, open (or create) the event.
 - Edit the event.
 - Under General visit Publishing
 - Select **Event portal using web application** in *Where do you want attendees to register for this event?*.
-- Choose the desired web application in the dropdown. 
-- Publish (Go live). Only live events are loaded and shown on the portal. 
+- Choose the desired web application in the dropdown.
+- Publish (Go live). Only live events are loaded and shown on the portal.
 
  :::image type="content" source="../media/publishing-web-application.png" alt-text="Select event portal using web application in a dropdown." lightbox="../media/publishing-web-application.png":::
 
