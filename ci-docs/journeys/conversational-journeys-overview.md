@@ -27,8 +27,14 @@ A typical conversational journeys solution has three parts:
 
 You can author the entire conversational journeys solution with no code, including designing the AI agent using natural language. This no code approach allows nontechnical business users to easily define customer experiences.
 
+In order to create conversational journeys, you will need to have both products (Journeys and Contact Center). They must be in the same environment (using the same Dataverse instance). Then, 
 Use these links to learn more about different aspects of conversational journeys:
+- In Contact Center, you’ll need to create a *proactive engagement*. This proactive engagement will connect to an agent (customer service representrative or a Copilot Studio Agent, or both)
+- In Customer Insights - Journeys, you will need to enable the integration via [feature switch](https://learn.microsoft.com/dynamics365/customer-insights/journeys/admin-feature-switches#integrations). Then
+  - [Create a journey](https://learn.microsoft.com/dynamics365/customer-insights/journeys/proactive-engagement-how-to) that uses the proactive engagement created above via *Conversational voice* step. This step initiates  voice calls for Contacts that enter the journey.
+  - Conversational voice results and outcomes can be used to branch in the journey to implement different retry and other experiences.
 
+For more details on these steps and concepts involved, please review the following:
 - [Prerequisites for conversational journeys](conversational-journeys-prerequisites.md)
 - [Conversational journeys concepts](proactive-engagement-concepts.md)
 - [Create conversational journeys](proactive-engagement-how-to.md)
