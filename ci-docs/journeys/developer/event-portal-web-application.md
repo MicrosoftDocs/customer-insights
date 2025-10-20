@@ -13,53 +13,54 @@ search.audienceType:
 
 [!INCLUDE [consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
 
-The event web application is a fast, lightweight, and customizable solution for showcasing live events from the Dynamics 365 events API directly on your website. It provides a responsive, multilingual interface that allows attendees to search, explore, and register for events effortlessly.
+The event web application is a fast, lightweight, and customizable solution for showing live events from the Dynamics 365 events API directly on your website. It has a responsive, multilingual interface that lets attendees search, explore, and register for events easily.
 
-Built with plain JavaScript, HTML, and CSS, the web application is easy to deploy on any static hosting environment and simple to customize. It's ideal for organizations seeking a flexible and accessible event experience. The default setup of the web app includes an overview page with a list of live events and a click-through to the event detail page with the registration form.
+Built with plain JavaScript, HTML, and CSS, the web application is easy to deploy on any static hosting environment and simple to customize. It's ideal for organizations that want a flexible and accessible event experience. The default setup of the web app includes an overview page with a list of live events and a link to the event detail page with the registration form.
 
-:::image type="content" source="../media/web-application-portal.png" alt-text="List of events published to event portal app." lightbox="../media/web-application-portal.png":::
+:::image type="content" source="../media/web-application-portal.png" alt-text="Screenshot of a list of events published to the event portal app." lightbox="../media/web-application-portal.png":::
 
-## Key Features
+## Key features
 
-- Live event Display - Display all live events for a configured web application in a responsive grid layout that adapts to desktop and mobile screens.
-- Search Functionality - Quickly find events by name or description for a streamlined user experience.
-- Detailed event Pages - Each event includes a dedicated page with full details (title, description, date, time, location) and integrated registration.
-- Embedded Registration Forms  - seamlessly register attendees through Customer Insights – Journeys registration forms
-- Global Accessibility - Multi-language support (i18n), Right-to-left (RTL) language compatibility, Responsive design for all devices 
+- **Live event display**: Show all live events for a configured web application in a responsive grid layout that adapts to desktop and mobile screens.
+- **Search functionality**: Find events by name or description for a streamlined experience.
+- **Detailed event pages**: Each event has a dedicated page with full details (title, description, date, time, location) and integrated registration.
+- **Embedded registration forms**: Register attendees through Customer Insights - Journeys registration forms.
+- **Global accessibility**: Multi-language support (i18n), right-to-left (RTL) language compatibility, and responsive design for all devices.
 
 ## Getting Started
 
 ### Prerequisites
 
-These are the steps that you will have to complete before the set up of your web application:
+Finish these steps before you set up your web application:
 
-1. A **Web application record** in Customer Insights – Journeys for your domain.
-1. **Domain authentication** for embedded registration forms.
-1. **Node.js v22+** (optional, for local development).
+1. Create a **web application record** in Customer Insights – Journeys for your domain.
+1. Complete **domain authentication** for embedded registration forms.
+1. Install **Node.js v22+** (optional, for local development).
 
-#### 1. Configure Web Application in Settings 
+#### 1. Register a new web application
 
-The portal requires a web application record with its origin set to the domain where the portal is hosted so that CORS requests succeed. To configure the web application, navigate to Customer Insights – Journeys > Settings > Web applications. Click on + Add to register for the New Web application.  
+The portal needs a web application record with its origin set to the domain where the portal is hosted so CORS requests work. To set up the web application, go to **Customer Insights - Journeys** > **Settings** > **Web applications**. Select **+Add** to register the new web application.  
 
-You’ll be asked to define:
+You're asked to enter:
 
 1. Name  
-1. Domain - add your domain as the origin (for example, https://yourdomain.com).
-1. Token will be automatically provided  
-1. Decide if this web app should be the default web app
-1. Save your settings
+1. Domain (add your domain as the origin, for example, https://yourdomain.com)
+1. Token (automatically provided)  
+1. Choose if this web app is the default web app
 
-#### 2. Authenticate Domain
+After you enter the required information, select **Save**.
 
-To serve embedded event registration forms, your domain must be authenticated in *Customer Insights – Journeys > Settings > Domains*. Learn more: [Authenticate your domains](../domain-authentication.md).
+#### 2. Authenticate domain
 
-### Set up of the web application
+To use embedded event registration forms, authenticate your domain in **Customer Insights - Journeys** > **Settings** > **Domains**. For more information, see [Authenticate your domains](../domain-authentication.md).
 
-Once the pre-requisites have been completed, you can navigate back to the Web Application configuration that you have set up and click on “Download Zip File”.  
+### Set up the web application
+
+After you finish the prerequisites, go back to the web application configuration you set up and select **Download Zip File**.  
 
 :::image type="content" source="../media/download-zip-file.png" alt-text="Download zip file for web application." lightbox="../media/download-zip-file.png":::
 
-This will trigger download and the folders in the zip file will have the following structure:  
+The folders in the zip file have the following file structure:  
 
 ``` 
 / 
@@ -87,11 +88,11 @@ This will trigger download and the folders in the zip file will have the followi
 └── README.md                   # Documentation 
 ``` 
 
-### Deployment to Production  
+### Deploying to production  
 
-To deploy this application to production:
+Deploy the web application to production:
 
-1. Update the credentials in `public/js/config.js` with your production values* 
+1. Update the credentials in `public/js/config.js` with your production values.
 
     ```javascript 
     const CONFIG = { 
@@ -103,56 +104,60 @@ To deploy this application to production:
     ```
 
     > [!NOTE]
-    > If this project was downloaded as a zip from *Customer Insights - Journeys -> Settings -> Web applications*, the configuration values will already be set correctly and you can skip this step. 
+    > If the project was downloaded as a zip from **Customer Insights - Journeys** > **Settings** > **Web applications**, the configuration values are already set correctly and you can skip this step.
 
-1. Copy the entire contents of the `public` directory to your web server 
-1. Open your browser and navigate to your domain. You should now see the web application and if any events are published to it, they will be displayed in the list of events on the detail page.
+1. Copy the contents of the `public` directory to your web server.
+1. Open your browser and navigate to your domain. You should now see the web application. If any events are published to the web application, they're displayed as a list of events on the detail page.
 
-For more detailed information about supported features, localization support, and customization options, please refer to the version-controlled README in the downloaded zip file.
+    :::image type="content" source="../media/web-application-event-page.png" alt-text="Screenshot of web application event page." lightbox="../media/web-application-event-page.png":::
+
+For details about supported features, localization support, and customization options, see the version-controlled README in the downloaded zip file.
 
 ### Local development
 
-The included Express server (server.js) is for local development and customization purposes: 
+The included Express server (`server.js`) is for local development and customization:
 
-- It serves static files from the project directory 
-- Use this for making modifications and testing changes 
-- It is NOT intended for production use 
+- It serves static files from the project directory.
+- Use the Express server to make changes and test them.
+- It's *not* for production use.
 
-For production deployment, use the files in the `/public` directory on your web server of choice. 
+For production deployment, use the files in the `/public` directory on your web server.
 
-#### Pre-requisites for local development
+#### Prerequisites for local development
 
-Set up a web application as described above, but set t the origin to `http://localhost:3000` (the default address of the development server Authenticate your domain as described above, but use `localhost` as the domain name. 
+Set up a web application as described earlier, but set the origin to `http://localhost:3000` (the default address of the development server). Authenticate your domain as described earlier, but use `localhost` as the domain name.
 
-#### Run local server
+#### Run the local server
 
-1. Unpack the zip file 
-1. Open the extracted folder in terminal (where `package.json` is) 
-1. Install dependencies: 
+1. Unpack the zip file.
+1. Open the extracted folder in the terminal (where `package.json` is).
+1. Install the dependencies:
 
-    ```bash 
+    ```bash
     npm install 
-    ``` 
+    ```
 
-1. Update the API credentials in `public/js/config.js`, you can find these values in *Customer Insights - Journeys -> Settings -> Web applications*: 
+1. Update the API credentials in `public/js/config.js`. You find these values in **Customer Insights - Journeys** > **Settings** > **Web applications**.
 1. Start the development server:
    
-    ```bash 
+    ```bash
     npm start 
-    ``` 
+    ```
 
-1. Open your browser and navigate to http://localhost:3000. You should now see the web application and if any events are published to it, they will be displayed as list of events on the detail page.
+1. Open your browser and navigate to `http://localhost:3000`. You should now see the web application. If any events are published to the web application, they're displayed as a list of events on the detail page.
 
 ## Publishing events to web application
 
-Event planners can publish each event to different publishing destination based on their choice. To learn more about ways to create an event registration experience, visit: [Event registration experience](../event-registration-experience.md)
+Event planners can publish each event to different publishing destinations based on their needs. To learn more about ways to create an event registration experience, visit [Event registration experience](../event-registration-experience.md).
 
-- To assign an event to a web application, open (or create) the event.
-- Edit the event.
-- Under General visit Publishing
-- Select **Event portal using web application** in *Where do you want attendees to register for this event?*.
-- Choose the desired web application in the dropdown.
-- Publish (Go live). Only live events are loaded and shown on the portal.
+To assign an event to a web application:
+
+1. Open (or create) the event.
+1. Edit the event.
+1. Under **General**, go to **Publishing**.
+1. Under "Where do you want attendees to register for this event?" select **Event portal using web application**.
+1. Choose the desired web application in the dropdown.
+1. Publish (go live). Only live events are loaded and shown on the portal.
 
  :::image type="content" source="../media/publishing-web-application.png" alt-text="Select event portal using web application in a dropdown." lightbox="../media/publishing-web-application.png":::
 
