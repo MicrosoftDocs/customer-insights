@@ -22,7 +22,7 @@ Creating events in real-time journeys works mostly the same as in outbound marke
 
 To create a new real-time event, select **+ Real-time event** in the top navigation bar. You now see whether the event is created using the outbound marketing or the real-time journeys module in the event record:
 
-:::image type="content" source="media/real-time-event.png" alt-text="Screenshot of the navigation menu for an event in Dynamics 365 Customer Insights – Journeys, showing options to distinguish between outbound marketing and real-time journeys events." lightbox="media/real-time-event.png":::
+:::image type="content" source="media/real-time-event.png" alt-text="Screenshot of the navigation menu for an event in Dynamics 365 Customer Insights – Journeys. The menu shows options to distinguish between outbound marketing and real-time journeys events." lightbox="media/real-time-event.png":::
 
 > [!NOTE]
 > The system shows a warning if you create outbound marketing events scheduled to start or end after outbound marketing is removed.
@@ -37,16 +37,16 @@ Event management comprises three areas:
 
 ### Event setup
 
-Creating and setting up events, tracks, sessions, speakers, and registrants is a similar experience in real-time journeys. But there are adjustments and improvements with every new feature in real-time journeys. Real-time journeys includes these capabilities:
+Creating and setting up events, tracks, sessions, speakers, and registrants is a similar experience in real-time journeys. But there are adjustments and improvements with each new feature in real-time journeys. Real-time journeys includes these capabilities:
 
-- Multi-session registration in real-time journeys events lets you manage the capacity of events and sessions more efficiently. For more information, see [Set up session-level registration](real-time-journeys-event-session.md).
-- Waitlist is now a registration status and works for events and sessions simultaneously. For more information, see [Set up and manage an event waitlist](set-up-and-manage-waitlist.md).
+- Multi-session registration in real-time journeys events lets you manage event and session capacity more efficiently. For more information, see [Set up session-level registration](real-time-journeys-event-session.md).
+- Waitlist is now a registration status and works for events and sessions at the same time. For more information, see [Set up and manage an event waitlist](set-up-and-manage-waitlist.md).
 - Custom registration fields are now managed in the form editor and answers are part of the form submission response. For more information, see [Create unmapped fields for registration forms](create-unmapped-fields-registration-forms.md).
 - Event passes can now be found on a dedicated tab called **Passes**. For more information, see [Set up event passes (preview)](real-time-journeys-event-passes.md).
   
 ### Event registration and publishing
 
-The registration experience is powered by the [registration form](event-registration-experience.md#event-registration-form), a type of [Customer Insights - Journeys form](real-time-marketing-form-overview.md), or by the events API [Using the events API in real-time journeys](developer/using-rtm-events-api.md).
+The registration experience uses the [registration form](event-registration-experience.md#event-registration-form), a type of [Customer Insights - Journeys form](real-time-marketing-form-overview.md), or the events API [Using the events API in real-time journeys](developer/using-rtm-events-api.md).
 
 There are various options to build an event registration experience depending on whether you want to build a single registration page or an event portal.
 
@@ -105,13 +105,13 @@ Here are other relevant and upcoming features to consider when transitioning eve
 
 - **Recurring events**: We don't have a published roadmap for this capability. You can set up the first event in the series and then use it as a template by using the **Save as** functionality to create copies of the event. Alternatively, for simpler events, use can use sessions to represent events in the series.
 - **Event templates**: We don't have a published roadmap for this capability. Create an event that you use as a starting point. Then use the **Save as** functionality to create copies of the event that you can then edit and customize for your needs.
-- **Integration with ON24**: Contact On24 support for next steps. They can provide guidance for the existing customers. We don't plan to introduce this integration in real-time journeys.
+- **Integration with ON24**: Contact On24 support for next steps. They can provide guidance for existing customers. We don't plan to introduce this integration in real-time journeys.
 
 ## Frequently asked questions
 
 *How are outbound marketing and real-time journeys events different?*
 
-As with other parts of the system, real-time journeys events are built on the most advanced technology that lets us scale our product and offer the most up-to-date secure first-driven experience. The biggest difference is the event registration experience. Another difference is that when introducing new capabilities to real-time events, we consider feedback received from years of experience with outbound events and introduce several improvements. For more information, see [Real-time transition](transition-faqs.md#why-should-i-transition-to-real-time-journeys).
+As with other parts of the system, real-time journeys events are built on advanced technology that lets us scale our product and offer the most up-to-date, secure experience. The biggest difference is the event registration experience. Another difference is that when introducing new capabilities to real-time journeys events, we consider feedback received from years of experience with outbound marketing events. For more information, see [Real-time transition](transition-faqs.md#why-should-i-transition-to-real-time-journeys).
 
 *What will happen once outbound marketing is removed?*
 

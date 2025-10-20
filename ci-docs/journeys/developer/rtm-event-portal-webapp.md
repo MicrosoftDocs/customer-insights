@@ -1,6 +1,6 @@
 ---
-title: Create an Event Portal using WebApp
-description: Learn how to use the lightweight, customizable WebApp to create and host Event Portals on your domains.
+title: Create an event portal using the web application
+description: Learn how to use the lightweight, customizable web application to create and host event portals on your domains.
 ms.date: 10/16/2025
 ms.topic: overview
 author: terezakirk
