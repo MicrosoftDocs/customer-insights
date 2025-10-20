@@ -52,7 +52,7 @@ The **Create Journey From Template** API lets you create customer journeys from 
 | `msdynmkt_journeystarttime` | DateTime | The start time for the journey. If specified, it must be in the future. If no time zone is specified, the UTC time zone is used. |
 | `msdynmkt_journeyendtime` | DateTime | The end time for the journey. If specified, it must be after the start time. If no time zone is specified, the UTC time zone is used. |
 | `msdynmkt_createmode` | String | Creation mode: "Draft" (default) or "Publish." |
-| `msdynmkt_owningbusinessunitid` | GUID | The business unit that owns the created journey. |
+| `msdynmkt_owningbusinessunitid` | GUID | The business unit that owns the created journey. For more information see [Business unit support in real-time journeys](https://learn.microsoft.com/en-us/dynamics365/customer-insights/journeys/real-time-marketing-business-units) |
 
 ## Response properties
 
@@ -74,7 +74,7 @@ Content-Type: application/json
     "msdynmkt_journeytemplateid": "12345678-1234-1234-1234-123456789012",
     "msdynmkt_journeyname": "Welcome Campaign Q1 2024",
     "msdynmkt_journeystarttime": "2025-09-15T09:00:00Z", //UTC time
-    "msdynmkt_journeyendtime": "2025-09-25 17:46:06 +02:00" //Time zone specified
+    "msdynmkt_journeyendtime": "2025-10-23T12:30:00.000+02:00" //Time zone specified
 }
 ```
 
@@ -96,13 +96,15 @@ Content-Type: application/json
 {
     "msdynmkt_journeytemplateid": "12345678-1234-1234-1234-123456789012",
     "msdynmkt_journeyname": "Personalized Welcome Series",
-    "msdynmkt_jsonpathmodifications": ""{
+    "msdynmkt_jsonpathmodifications": "{
         \"$.actions['6b461239-d698-449d-9196-0e365753798e'].parameters.contentId\":\"e7e3cf6c-1d89-f011-b4cc-000d3a306706\",
         \"$.actions['b03bff11-1b09-4566-967b-4cc77270c0f6'].parameters.smsId\":\"6fcbe68f-ef8e-f011-b4cb-000d3a5972e9\",
-        \"$.actions['d444ab08-1a65-4a94-b9e2-78499bc9faeb'].parameters.pushNotificationId\":\"7f030313-f08e-f011-b4cb-000d3a5972e9\"
+        \"$.actions['d444ab08-1a65-4a94-b9e2-78499bc9faeb'].parameters.pushNotificationId\":\"7f030313-f08e-f011-b4cb-000d3a5972e9\",
+        \"$.trigger.exclusionSegments\":\"['009b7a68-9a59-4ac7-8f85-2bf0f21dfd84','08c46b79-b1b5-4b91-b909-3048d82a0c2f']\",
+        \"$.trigger.parameters.condition.rightOperand.value\":\"{\\\"logicalName\\\":\\\"msevtmgt_event\\\",\\\"id\\\":\\\"d13019d9-8554-4ba8-bda9-fb52734dff93\\\"}\"
         }",
     "msdynmkt_journeystarttime": "2025-09-15T09:00:00Z",
-    "msdynmkt_journeyendtime": "2025-12-31T23:59:59Z",
+    "msdynmkt_journeyendtime": "2025-12-31T23:59:59+02:00",
     "msdynmkt_createmode": "Draft",
     "msdynmkt_owningbusinessunitid": "11111111-2222-3333-4444-555555555555"
 }
@@ -110,11 +112,11 @@ Content-Type: application/json
 
 ## JSONPath modifications
 
-The `msdynmkt_jsonpathmodifications` parameter uses a JSON object where:
-- **Keys** are JSONPath expressions that target specific elements in the journey template.
-- **Values** are the replacement values for those elements.
+The `msdynmkt_jsonpathmodifications` parameter is serialized key value collection where:
+- **Keys** are JSONPath expressions that target specific elements in the journey template. See [RFC](https://www.rfc-editor.org/rfc/rfc9535) for JSONPath definition.
+- **Values** are the replacement values for those elements. Make sure that values are properly escaped if needed.
 
-### Supported JSONPath examples
+### JSONPath examples
 
 | JSONPath | Purpose | Example value |
 |----------|---------|---------------|
@@ -125,7 +127,7 @@ The `msdynmkt_jsonpathmodifications` parameter uses a JSON object where:
 | `$.actions['action_guid'].parameters.pushNotificationId"` | Push notification | `push notification id` |
 | `$.actions['action_guid'].parameters.smsId"` | SMS | `sms template id` |
 
-### JSONPath modification example
+### JSONPath modification example (before serialization)
 
 ```json
 {
@@ -139,7 +141,7 @@ The `msdynmkt_jsonpathmodifications` parameter uses a JSON object where:
 ### Draft mode (default)
 - The journey is created in a draft state.
 - You can edit and change the journey before activation.
-- You need to publish the journey manually through the user interface or a separate API call.
+- You need to publish the journey manually through the user interface or a separate API call (msdynmkt_PublishJourneyV2).
 - Some validation errors are ignored (for example, the message template for email, SMS, or push doesn't need to be in published state).
 
 ### Publish mode
@@ -232,7 +234,7 @@ When `msdynmkt_isvalid` returns `false`, the `msdynmkt_errors` field has a JSON 
 | Error Code | Description | Resolution |
 |------------|-------------|------------|
 | `UnknownError` | An unexpected error occurred | Review all parameters and contact support if issue persists. |
-| `UnknownValidatorError` | Validation service encountered an error | Contact support with request details. |
+| `UnknownValidatorError` | Validation service encountered an error | Contact support if issue persists with request details. |
 
 ## Error response example
 
@@ -246,9 +248,12 @@ When `msdynmkt_isvalid` returns `false`, the `msdynmkt_errors` field has a JSON 
 
 ## Internal properties
 The journey JSON contains many internal properties, which are populated automatically based on the provided data. You don't need to modify the following properties:
-- The `Placeholderbindingp` and `placeholderBindingsOriginal` objects are populated automatically based on the selected message template.
+- The `placeholderbindings` and `placeholderBindingsOriginal` objects are populated automatically based on the selected message template.
 - `messageDesignation`, `complianceSettingsId`, `purposeId`, and `topicId` are populated based on the selected message template.
 - The `persistedUIState` object is populated based on the selected message template.
+- `$.name` will be automatically set from input parameter msdynmkt_journeyname.
+- `$.trigger.parameters.startTime` will be automatically set from input parameter `msdynmkt_journeystarttime`.
+- `$.trigger.parameters.endTime` will be automatically set from input parameter `msdynmkt_journeyendtime`.
 
 ## Best practices
 
@@ -256,7 +261,6 @@ The journey JSON contains many internal properties, which are populated automati
 
 1. **Template validation**: Check that journey templates are valid and accessible before using them.
 1. **Template testing**: Test templates in a development environment before using them in production.
-1. **Version control**: Track template changes that can affect API calls.
 
 ### JSONPath modifications
 
@@ -275,6 +279,8 @@ The journey JSON contains many internal properties, which are populated automati
 
 - Journey templates must be accessible to the calling user.
 - The API follows all standard Dynamics 365 security and business rules.
+- If API is executed inside the plugin, it will not be executed as part of current DV transaction. For example: entities created during the pluging execution, won't be visible to msdynmkt_CreateJourneyFromTemplate API.
+- It is not possible to remove elements from the journey.
 
 ## Related APIs
 
@@ -295,10 +301,23 @@ using System.Collections.Generic;
 public void CreateJourneyFromTemplate(IOrganizationService service)
 {
     var request = new OrganizationRequest("msdynmkt_CreateJourneyFromTemplate");
+
+    var jsonPathModifications = new Dictionary<string, string>();
+    jsonPathModifications.Add("$.actions['0395747d-7cd7-43dc-8228-303f54ecb32b'].parameters.contentId", "703f7dc8-149a-f011-bbd3-00224806bf98"); // email
+    jsonPathModifications.Add("$.actions['93952de9-e3a6-4160-ba02-3979231bea13'].parameters.smsId", "10c0e594-159a-f011-bbd3-00224806bf98"); // sms
+    jsonPathModifications.Add("$.actions['e0c3dda2-78c2-4d49-b7c3-ec33f12346c1'].parameters.pushNotificationId", "a9e38845-169a-f011-bbd3-00224806bf98"); //push
+
+    // Delay tile
+    jsonPathModifications.Add("$.actions['8c647164-4a2f-4601-ab7b-6a40365b672c'].parameters.count", "2"); //wait 2 units
+    jsonPathModifications.Add("$.actions['8c647164-4a2f-4601-ab7b-6a40365b672c'].parameters.unit", "3"); //unit is 3 == days
+
+    jsonPathModifications.Add("$.actions['7277ee5b-9824-44b3-b79a-6bf92e4e8f60'].parameters.waitUntil", "2025-11-17T13:50:00.000Z");
+
+    var serializerJsonPaths = System.Text.Json.JsonSerializer.Serialize(jsonPathModifications);
     
     request["msdynmkt_journeytemplateid"] = new Guid("12345678-1234-1234-1234-123456789012");
     request["msdynmkt_journeyname"] = "API Created Journey";
-    request["msdynmkt_jsonpathmodifications"] = "{\"$.actions['b830219b-1df8-4454-bfd1-92d6afcee425'].parameters.contentId\": \"63a9529b-e09f-4652-86ca-e6626575d839\"}";
+    request["msdynmkt_jsonpathmodifications"] = serializerJsonPaths;
     request["msdynmkt_journeystarttime"] = DateTime.UtcNow.AddDays(1);
     request["msdynmkt_createmode"] = "Draft";
     
@@ -369,6 +388,7 @@ catch {
 2. **Template not found**
    - Check that the template ID is correct and exists.
    - Check that the template is accessible to the current user.
+   - Check that the template is not being created inside DV transaction calling msdynmkt_CreateJourneyFromTemplate.
 
 3. **Invalid JSONPath modifications**
    - Check JSON syntax.
