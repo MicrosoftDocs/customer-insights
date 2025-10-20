@@ -1,10 +1,10 @@
 ---
 title: Migrate outbound marketing event registration to real-time journeys
 description: Learn how to migrate outbound marketing event registration to real-time journeys in Dynamics 365 Customer Insights - Journeys.
-ms.date: 10/16/2025
+ms.date: 10/20/2025
 ms.topic: upgrade-and-migration-article
 author: alfergus
-ms.author: colinbirkett
+ms.author: alfergus
 search.audienceType:
   - admin
   - enduser
@@ -25,7 +25,7 @@ There were multiple options on how to build event registration experience in out
 1. Outbound marketing form for event registration published in an outbound marketing page.
 1. Custom solution using the outbound marketing event management API, not using an Angular app.
 
-The next sections detail each outbound marketing event registration experience and how to transition them to real-time journeys events.
+The next sections explain each outbound marketing event registration experience and how to move them to real-time journeys events.
 
 ## Event portal hosted on Power Portals
 
@@ -42,7 +42,7 @@ For more information, see [Build an event registration website using Power Pages
 
 If you're currently hosting the Angular app event portal on your own infrastructure (not using Power Portals), you can keep using it but you need to maintain the app on your own. There will be no support for the Angular app.
 
-The recommended migration path is to build a new event registration experience using the new WebApp. The Event WebApp is a fast, lightweight, and customizable solution for showcasing live events from the Dynamics 365 Events API directly on your website. It provides a responsive, multilingual interface that allows attendees to search, explore, and register for events effortlessl using the Real-time marketing registration form. The registration form reads the `readableEventId` parameter from the URL to dynamically render details about the selected event. [Create an Event Portal on your website using WebApp](developer/rtm-event-portal-webapp.md)
+The recommended migration path is to build a new event registration experience using the event web application. The event web application is a fast, lightweight, and customizable solution for showcasing live events from the Dynamics 365 events API directly on your website. It provides a responsive, multilingual interface that allows attendees to search, explore, and register for events effortlessly using the real-time journeys registration form. The registration form reads the `readableEventId` parameter from the URL to dynamically render details about the selected event. For more information, see [Create an event portal on your website using web application](developer/rtm-event-portal-webapp.md).
 
 An alternative is to build a new event registration website using Power Pages studio or use the provided Power Pages template, as described in the [Event portal hosted on Power Portals](migrate-event-registration.md#event-portal-hosted-on-power-portals) section.
 
@@ -50,13 +50,13 @@ An alternative is to build a new event registration website using Power Pages st
 
 Outbound marketing forms are being deprecated along with the outbound marketing module.
 
-The recommended migration path for event registration marketing forms is to replace them with real-time journeys event registration forms. Real-time journeys event registration forms can be embedded into your website, embedded within Power Pages, or hosted as standalone pages. For more information, see [Event registration forms](event-registration-experience.md#event-registration-form)
+The recommended migration path for event registration marketing forms is to replace them with real-time journeys event registration forms. Real-time journeys event registration forms can be embedded into your website, embedded within Power Pages, or hosted as standalone pages. For more information, see [Event registration forms](event-registration-experience.md#event-registration-form).
 
 ## Custom solution using the outbound marketing event management API
 
 The outbound marketing event management API is being deprecated along with the outbound marketing module.
 
-The new event management API in real-time journeys is backward compatible. It lets you list all events (outbound marketing and real-time journeys) and enables registration for both types of events. For more information, see [Using the events API in real-time journeys](./developer/using-rtm-events-api.md).
+The event management API in real-time journeys is backward compatible. It lets you list all events (outbound marketing and real-time journeys) and enables registration for both types of events. For more information, see [Using the events API in real-time journeys](./developer/using-rtm-events-api.md).
 
 > [!NOTE]
 > The outbound marketing-related flow in the new real-time journeys event API is being deprecated along with the outbound marketing module.
@@ -69,7 +69,7 @@ If you still want to use the Angular portal despite the risks and limitations ab
 
 For the event registration functionality, there are two options:
 
-1. Use the new Event API registration submission endpoint (recommended).
+1. Use the real-time journeys event API registration submission endpoint (recommended).
 1. Keep the existing registration experience and route it to the new API endpoints. This requires significant effort and testing. You'll also need to change your app to account for new features.
 
 ## Marketing pages
