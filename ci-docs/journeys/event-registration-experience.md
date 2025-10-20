@@ -31,7 +31,7 @@ You can build an event registration experience as a single registration page or 
 ### Event registration portal
 
 - **Registration portal on Power Pages**: You can use the event registration template to build a website using Power Pages studio. For more information, see [Build an event portal using Power Pages](event-portal-template.md).
-- **Registration portal on your own domain built with the web application**: Use the out-of-box web application to build a registration portal hosted on your own domain. For more information, see [Create an event portal on your website using the web application](developer/rtm-event-portal-webapp.md).
+- **Registration portal on your own domain built with the web application**: Use the out-of-box web application to build a registration portal hosted on your own domain. For more information, see [Create an event portal on your website using the web application](developer/event-portal-web-application.md).
 - **Custom solution using the events API**: For more information, see [Using the events API in real-time journeys](developer/using-rtm-events-api.md).
 
 :::image type="content" source="media/publishing-web-application.png" alt-text="Screenshot of selecting an event portal using the web application in a dropdown." lightbox="media/publishing-web-application.png":::

@@ -58,7 +58,7 @@ There are various options to build an event registration experience depending on
 #### Event registration portal
 
 - **Registration portal on Power Pages**: You can use the event registration template to build a website using Power Pages studio. For more information, see [Build an event registration website using Power Pages](event-portal-template.md).
-- **Registration portal on your own domain built with the web application**: Use the out-of-box web application to build a registration portal hosted on your own domain. For more information, see [Create an event portal on your website using the web application](developer/rtm-event-portal-webapp.md).
+- **Registration portal on your own domain built with the web application**: Use the out-of-box web application to build a registration portal hosted on your own domain. For more information, see [Create an event portal on your website using the web application](developer/event-portal-web-application.md).
 - **Custom solution using the events API**: For more information, see [Using the events API in real-time journeys](developer/using-rtm-events-api.md).
 
 ### Event communication
@@ -93,7 +93,7 @@ To transition your events and related communication:
 There were multiple options on how to build an event registration experience in outbound marketing. Each of these options has a slightly different migration path:
 
 - **Event portal hosted on Power Portals**: Build a new event registration website using the Power Pages template. For more information, see [Build an event registration website using Power Pages](event-portal-template.md).
-- **Event portal not hosted on Power Portals**: The recommended migration path is to build a new event registration experience using the new web application. For more information, see [Create an event portal on your website using the web application](developer/rtm-event-portal-webapp.md).
+- **Event portal not hosted on Power Portals**: The recommended migration path is to build a new event registration experience using the new web application. For more information, see [Create an event portal on your website using the web application](developer/event-portal-web-application.md).
 - **Outbound marketing form for event registration**: Replace these forms with real-time journeys event registration forms. For more information, see [Open the event management work area](open-events.md).
 - **Custom solution using outbound marketing event management API (not using Angular application)**: Use the new events API. For more information, see [Using the events API in real-time journeys](developer/using-rtm-events-api.md).
 

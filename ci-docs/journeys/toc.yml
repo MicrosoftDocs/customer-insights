@@ -609,7 +609,7 @@
   - name: Use the events API in real-time journeys (preview)
     href: developer/using-rtm-events-api.md
   - name: Create an event portal on your website using the web application
-    href: developer/rtm-event-portal-webapp.md
+    href: developer/event-portal-web-application.md
   - name: Set up payment gateway integration (preview)
     href: developer/payment-gateway-integration.md
   - name: Create a segment using the Web API
