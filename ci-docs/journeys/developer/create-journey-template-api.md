@@ -228,6 +228,8 @@ When `msdynmkt_isvalid` returns `false`, the `msdynmkt_errors` field has a JSON 
 |------------|-------------|------------|
 | `NonExistingEvent` | Referenced event doesn't exist | Verify event name exists and is accessible. |
 | `EventNotInLiveState` | Event isn't in live state | Ensure events are activated before using in journeys. |
+| `EventTriggerSourceTypeMismatch` | Event trigger condition contains EventDataSource binding with sourceType that doesn't match the trigger's eventName | Ensure all EventDataSource bindings in trigger conditions use the same `sourceType` as the journey trigger `eventName`. |
+| `EventTargetEntityMismatch` | Event target entities don't overlap with journey target entities | Use compatible events targetting the same entities (contacts, leads, etc). |
 
 ### General errors
 
@@ -235,6 +237,8 @@ When `msdynmkt_isvalid` returns `false`, the `msdynmkt_errors` field has a JSON 
 |------------|-------------|------------|
 | `UnknownError` | An unexpected error occurred | Review all parameters and contact support if issue persists. |
 | `UnknownValidatorError` | Validation service encountered an error | Contact support if issue persists with request details. |
+| `UnableToSaveJourneyEntityDueToTimeout` | Timeout occurred while saving journey entity; entity might have been created | Implement retry with backoff and check for existing journey before creating again. |
+| `UnableToSaveJourneyEntity` | General error while saving journey entity | If issue persists, contact support. |
 
 ## Error response example
 
