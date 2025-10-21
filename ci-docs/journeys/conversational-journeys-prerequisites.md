@@ -1,10 +1,10 @@
 ---
 title: Prerequisites for conversational journeys
 description: 'Prerequisites for conversational journeys: Discover the required products and steps to use Dynamics 365 Customer Insights - Journeys and Contact Center.'
-ms.date: 05/29/2025
+ms.date: 10/21/2025
 ms.topic: article
-author: colinbirkett
-ms.author: colinbirkett
+author: Joni-M
+ms.author: alfergus
 search.audienceType:
   - admin
   - customizer
@@ -23,9 +23,11 @@ To use conversational journeys, you need Dynamics 365 Customer Insights - Journe
 
 1. [Purchase Dynamics 365 Customer Insights](purchase.md) (**required**)
 1. [Buy Dynamics 365 Contact Center](https://www.microsoft.com/dynamics-365/products/contact-center/pricing) (**required**)
-2. For purchasing appropriate [Customer Insights - Journeys license](https://learn.microsoft.com/en-us/dynamics365/customer-insights/journeys/purchase), you will need to estimate how many "Interacted persons" and "Interactions" are needed over a month and a year.
-   - Each Contact that has a conversational voice call request sent from Customer Insight to Contact Center counts as "Interacted person" (Conversational journeys only support Contacts at this time.)
-   - Each conversational voice call request sent from Customer Insight to Contact Center counts as one interaction.
+1. To purchase the appropriate [Customer Insights - Journeys license](purchase.md), you need to estimate how many "Interacted persons" and "Interactions" you require monthly and yearly.
+    - Each contact that has a conversational voice call request sent from Customer Insights - Journeys to Contact Center counts as an "Interacted person."
+        > [!NOTE]
+        > Conversational journeys only support interactions with contacts at this time.
+    - Each conversational voice call request sent from Customer Insights - Journeys to Contact Center counts as one interaction.
 
 ## Get started with Customer Insights - Journeys
 
