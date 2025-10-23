@@ -1,7 +1,7 @@
 ---
 title: Manage Customer Insights - Journeys forms
 description: Discover how to manage and style forms in Dynamics 365 Customer Insights - Journeys. Edit, unpublish, and customize forms with ease. Learn more now!
-ms.date: 10/13/2025
+ms.date: 10/23/2025
 ms.update-cycle: 180-days
 ms.topic: how-to
 author: petrjantac
@@ -268,22 +268,21 @@ After you submit the form, you see the submitted values in the **Submissions** s
 
 The following contact or lead attributes update automatically when the form creates a new record.
 
-- msdynmkt_emailid
-- msdynmkt_customerjourneyid
-- msdynmkt_marketingformid
-- ownerid
-- owningbusinessunit (if the business units feature is enabled)
-- subject (only for leads)—the form name is used as the value
+- `msdynmkt_emailid`
+- `msdynmkt_customerjourneyid`
+- `msdynmkt_marketingformid`
+- `ownerid`
+- `owningbusinessunit` (if the business units feature is enabled)
+- `subject` (only for leads — the form name is used as the value)
 
 These attributes don't update when a form submission updates an existing record.
 
 ### Use submitted values in email personalization and journey branching
 
-You can create a trigger-based journey that starts when a form is submitted.
-From there, you have two powerful options:
+You can create a trigger-based journey that starts when a form is submitted. From there, you have two options:
 
-1. **[Branch the journey using submitted values](real-time-marketing-form-submitted-values.md#branch-a-journey-based-on-submitted-values)** – Adjust the path based on answers provided in the form (e.g., favorite product, event preferences).
-1. **[Personalize emails using submitted values](real-time-marketing-form-submitted-values.md#personalize-email-using-submitted-values)** – Insert dynamic text or show a summary of what the customer submitted, even when the journey doesn’t reference a Contact or Lead record (ideal for Double Opt-in scenarios).
+1. **[Branch the journey using the submitted values](real-time-marketing-form-submitted-values.md#branch-a-journey-based-on-submitted-values)**: Adjust the path based on answers provided in the form (for example, favorite product, event preferences).
+1. **[Personalize emails using the submitted values](real-time-marketing-form-submitted-values.md#personalize-email-using-submitted-values)**: Insert dynamic text or show a summary of what the customer submitted, even when the journey doesn’t reference a contact or lead record (ideal for double opt-in scenarios).
 
 ## Advanced form customization
 
