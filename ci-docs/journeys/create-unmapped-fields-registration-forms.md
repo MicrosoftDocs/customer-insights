@@ -13,9 +13,9 @@ search.audienceType:
 
 # Create unmapped fields for registration forms
 
-Custom unmapped fields (also known as custom registration fields) allow you to **create and manage personalized questions for event attendees** without affecting the Lead or Contact entity. Custom unmapped fields allow you to collect relevant information for each event, such as dietary preferences, session interests, feedback, and more. You can use the information gathered to customize the communication with your attendees and personalize the event attendee experience. 
+Custom unmapped fields (also known as custom registration fields) allow you to **create and manage personalized questions for event attendees** without affecting the Lead or Contact entity. Custom unmapped fields allow you to collect relevant information for each event, such as dietary preferences, session interests, feedback, and more. You can use the information gathered to customize the communication with your attendees and personalize the event attendee experience.
 
-> [!TIP] 
+> [!TIP]
 > This article describes custom unmapped fields for event registration forms. For information on custom unmapped fields in marketing forms, see [Create unmapped fields for marketing forms](real-time-marketing-forms-custom-fields.md).
 
 ## Creating unmapped form fields for your event  
