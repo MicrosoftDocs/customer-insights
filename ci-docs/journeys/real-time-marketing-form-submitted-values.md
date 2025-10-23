@@ -103,6 +103,6 @@ Create a [personalized list](real-time-marketing-personalize-lists.md) of what t
 
 You can build a personalized list by navigating to **Trigger** > **Marketing Form Submitted** > **Form Submission Entity Reference** > **Field Submissions**. Choose **Field localized Name** and **Field Localized Value** as columns. You can add conditions to exclude specific fields from the list. You can also encapsulate the personalization tokens into an HTML table to enhance the visual experience.
 
-:::image type="content" source="media/real-time-marketing-form-personalized-list-small.png" alt-text="Set filter for dynamic text." lightbox="media/real-time-marketing-form-personalized-list.png":::
+:::image type="content" source="media/real-time-marketing-form-personalized-list-small.png" alt-text="Screenshot showing personalized list." lightbox="media/real-time-marketing-form-personalized-list.png":::
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
