@@ -1,6 +1,7 @@
 ---
-title: Use submitted values from Customer Insights – Journeys forms
-description: Discover how to personalize emails and branch journeys using submitted values from forms.
+title: Use submitted values from forms to branch journeys and personalize emails
+ms.reviewer: alfergus
+description: Learn how to branch customer journeys and personalize emails using submitted form values in Customer Insights – Journeys. Create tailored experiences effortlessly.
 ms.date: 10/23/2025
 ms.update-cycle: 180-days
 ms.topic: how-to
@@ -8,7 +9,7 @@ author: petrjantac
 ms.author: alfergus
 ---
 
-# Use submitted values from Customer Insights – Journeys forms
+# Use submitted values from forms to branch journeys and personalize emails
 
 When a customer fills out a form in Customer Insights – Journeys, the values they submit can help you create more personalized and relevant experiences. This guidance applies to marketing forms and event registration forms. Use these submitted values in two common scenarios:
 1. Branching a journey
@@ -62,7 +63,7 @@ The form contains these options:
     1. Enter the expected value. For example, if you want to create a branch for customers who selected "Blue" as their favorite color, enter 1 (the field value assigned to "Blue" in the option set).
     1. Select **Field Submission Sort by Created On: Descending** to filter the correct form field.
 
-        :::image type="content" source="media/real-time-marketing-form-set-trigger-condition.png" alt-text="Set trigger condition." lightbox="media/real-time-marketing-form-set-trigger-condition.png":::
+        :::image type="content" source="media/real-time-marketing-form-set-trigger-condition-small.png" alt-text="Set trigger condition." lightbox="media/real-time-marketing-form-set-trigger-condition.png":::
 1. **Filter the correct form field**. Select **Choose an attribute**, then navigate to **Field Submission** > **Logical name** and enter the expected value. For example, use `favoritecolor`, which is the logical name of the "Favorite color" option set field. Select the **Done** button.
   
     :::image type="content" source="media/real-time-marketing-form-set-trigger-filter-small.png" alt-text="Set trigger filter." lightbox="media/real-time-marketing-form-set-trigger-filter.png":::
