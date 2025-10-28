@@ -1,7 +1,7 @@
 ---
 title: New and upcoming features
 description: Discover the latest features, improvements, and bug fixes in Dynamics 365 Customer Insights - Journeys. Stay updated with our monthly release notes.
-ms.date: 10/17/2025
+ms.date: 10/31/2025
 ms.update-cycle: 180-days
 ms.topic: whats-new
 author: alfergus
@@ -25,6 +25,37 @@ We're excited to announce our newest updates! This article summarizes early acce
 Customer Insights - Journeys updates are [pushed to customers automatically](https://cloudblogs.microsoft.com/dynamics365/it/2020/04/27/automatic-update-policy-for-dynamics-365-marketing/). Solutions are available for early validations. To manually update your instances, follow the steps in [Keep Customer Insights - Journeys up to date](apply-updates.md).
 
 To submit and vote on **feature requests** and **product suggestions**, go to the [Dynamics 365 Application Ideas portal](https://experience.dynamics.com/ideas/categories/?forum=dfa5b83d-9e4c-e811-a956-000d3a1bef07&forumName=Dynamics%20365%20Marketing).
+
+### November 2025 update
+
+| App              | GA release      |
+|------------------|-----------------|
+| Customer Insights - Journeys | 1.1.60115.76 |
+
+#### General availability
+
+- **Host large-scale online events with Teams Town Hall**
+	- Integrate Microsoft Teams Town Hall into Customer Insights - Journeys to schedule and manage events for up to 10,000 attendees as part of your broader campaign strategy. You can now automatically trigger personalized invitations based on customer data and behavior, increasing the likelihood of attendance and engagement. Track participation and engagement metrics within Customer Insights, making it easier to segment audiences and tailor follow-up actions after the event.
+	- [Release plan](/dynamics365/release-plan/2025wave2/customer-insights/dynamics365-customer-insights-journeys/host-large-scale-online-events-teams-town-hall)
+	- [Docs]()
+
+#### Public preview
+
+- **Create static segments with up to 200,000 members**
+	- Marketers often receive customer lists from various systems and need to act quickly. These lists typically lack the attributes required for dynamic segments or aren't part of an existing Dataverse view. This feature enables marketers to build static segments with up to 200,000 members using data from any source. Marketers can upload CSV files, use the API to create segments as part of a workflow, or select contacts from a Dataverse view.
+	- [Release plan](/dynamics365/release-plan/2025wave2/customer-insights/dynamics365-customer-insights-journeys/create-static-segments-up-200000-members)
+	- [Docs](real-time-marketing-build-segments.md#use-csv-files-to-define-static-segment-membership-lists-for-up-to-2000000-members)
+
+- **Maximize event ROI with paid registration, seamless payment integration**
+	- With the new paid event registration capability in real-time journeys, you can now offer a seamless and secure ticketing experience. This feature empowers you to offer flexible pricing tiers and discount codes and increase registration conversion with a frictionless checkout. By embedding ticketing and payments directly into your event flow, you not only improve attendee satisfaction but also unlock new revenue streams and reduce operational overhead.
+	- [Release plan](/dynamics365/release-plan/2025wave2/customer-insights/dynamics365-customer-insights-journeys/maximize-event-roi-paid-registration-seamless-payment-integration)
+	- [Docs](real-time-journeys-event-passes.md)
+
+#### Monthly enhancements
+
+- **Use submitted form values to branch journeys and personalize emails**
+	- You can now use values that customers submit in marketing and event registration forms to create more relevant experiences in real-time journeys. Build journey branches that react to specific answers (for example, route anyone who chose a particular option to a tailored path) and personalize emails by inserting submitted values as dynamic text or as a generated list. This capability supports both mapped and unmapped fields.
+	- [Docs](real-time-marketing-form-submitted-values.md)
 
 ### October 2025 update
 
