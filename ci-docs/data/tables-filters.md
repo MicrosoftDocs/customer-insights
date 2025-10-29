@@ -1,7 +1,7 @@
 ---
 title: Filter out unwanted data from your ingested data (preview)
 description: Filter out unwanted rows from your ingested source data in Customer Insights - Data
-ms.date: 06/09/2025
+ms.date: 10/29/2025
 ms.reviewer: v-wendysmith
 ms.topic: conceptual
 author: Scott-Stabbert
@@ -25,6 +25,43 @@ Preview limitations include:
 
 - [The preview of a source table's data](tables.md#explore-a-specific-tables-data) shows the full, unfiltered data.
 - The export of a source table ingested in .csv or .parquet format contains the full, unfiltered data.
+
+## How conditions are evaluated
+
+When you add multiple conditions, all conditions must be true for a record to be included. This means conditions are combined using AND logic.
+
+**Example**:
+
+- **Field A** is not null
+- **Field B** > 0
+Result: Only rows where **Field A is not null AND Field B > 0** are processed.
+
+> [!NOTE]
+> Customer Insights - Data doesn't support combining conditions with OR across different fields. For example, you can’t filter rows where either Field A or Field B is true.
+
+### Use “Any of” for string values
+
+For string fields, you can use the **Any of** condition to apply OR logic within a single field.
+
+**Example**:
+
+- **Field A** is any of ("x", "y", "z")
+Result: Rows are included if **Field A = "x" OR Field A = "y" OR Field A = "z"**.
+
+### Combine AND and OR
+
+You can combine AND logic across fields with OR logic within a single field.
+
+**Example**:
+
+- **Field A** is not null
+- **Field B** is any of ("x", "y")
+Result: Rows are included if **Field A is not null AND (Field B = "x" OR Field B = "y")**.
+
+### Limitations
+
+- OR logic is supported only within a single field using **Any of**.
+- **Any of** isn't supported for numeric values.
 
 ## Filter out unwanted rows
 
