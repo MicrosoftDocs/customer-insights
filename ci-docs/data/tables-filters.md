@@ -34,18 +34,20 @@ When you add multiple conditions, all conditions must be true for a record to be
 
 - **Field A** is not null
 - **Field B** > 0
+
 Result: Only rows where **Field A is not null AND Field B > 0** are processed.
 
 > [!NOTE]
 > Customer Insights - Data doesn't support combining conditions with OR across different fields. For example, you can’t filter rows where either Field A or Field B is true.
 
-### Use “Any of” for string values
+### Use "Any of" for string values
 
 For string fields, you can use the **Any of** condition to apply OR logic within a single field.
 
 **Example**:
 
 - **Field A** is any of ("x", "y", "z")
+
 Result: Rows are included if **Field A = "x" OR Field A = "y" OR Field A = "z"**.
 
 ### Combine AND and OR
@@ -56,6 +58,7 @@ You can combine AND logic across fields with OR logic within a single field.
 
 - **Field A** is not null
 - **Field B** is any of ("x", "y")
+
 Result: Rows are included if **Field A is not null AND (Field B = "x" OR Field B = "y")**.
 
 ### Limitations
