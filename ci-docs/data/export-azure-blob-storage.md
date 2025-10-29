@@ -1,16 +1,14 @@
 ---
-title: "Export data to an Azure Blob Storage (preview)"
+title: "Export data to an Azure Blob Storage"
 description: "Learn how to configure the connection and export to Blob storage."
-ms.date: 11/07/2024
+ms.date: 09/29/2025
 ms.reviewer: mhart
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
 ---
 
-# Export data to an Azure Blob Storage (preview)
-
-[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
+# Export data to an Azure Blob Storage
 
 Store data from your Dynamics 365 Customer Insights - Data in a Blob storage or use it to transfer your data to other applications.
 

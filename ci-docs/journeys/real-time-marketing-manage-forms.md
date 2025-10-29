@@ -1,7 +1,7 @@
 ---
 title: Manage Customer Insights - Journeys forms
 description: Discover how to manage and style forms in Dynamics 365 Customer Insights - Journeys. Edit, unpublish, and customize forms with ease. Learn more now!
-ms.date: 08/26/2025
+ms.date: 10/23/2025
 ms.update-cycle: 180-days
 ms.topic: how-to
 author: petrjantac
@@ -32,7 +32,7 @@ To unpublish a live form, select the **Stop** button. The form is removed from t
 
 ## Form field properties
 
-When you select a field on the canvas, its properties show in the right pane.
+When you select a field on the canvas, its properties appear in the right pane.
 
 :::image type="content" source="media/real-time-marketing-form-properties.png" alt-text="Screenshot of the field properties pane that appears after you add a field to the form." lightbox="media/real-time-marketing-form-properties.png":::
 
@@ -44,7 +44,7 @@ When you select a field on the canvas, its properties show in the right pane.
 
 ### Custom validation
 
-To create custom validation, turn on the **Validation** option and select **Custom**. A pop-up dialog shows where you enter a regular expression (RegExp). For example, use a RegExp to check if the entered value matches a specific phone number format.
+To create custom validation, turn on the **Validation** option and select **Custom**. A pop-up dialog appears where you enter a regular expression (RegExp). For example, use a RegExp to check if the entered value matches a specific phone number format.
 
 ## Style your forms using Theme
 
@@ -65,7 +65,7 @@ The **Theme** section lets you configure:
 - **Buttons and links**: Set the font family, size, color, text styles, button color, border alignment, and inner and outer spacing for buttons. Set the font family, size, color, and text styles for hyperlinks.
 
 > [!NOTE]
-> Form styles are constantly improving. Forms created in an older version of the real-time journeys form editor have limited options to change form styling using the theme feature. Get more style options by selecting the **Enable** button in the theme section. This updates your form styles to the latest version compatible with the theme feature.
+> Form styles are constantly improving. Forms created in an older version of the real-time journeys form editor have limited options to change form styling using the theme feature. Get more style options by selecting the **Enable** button in the theme section. This action updates your form styles to the latest version compatible with the theme feature.
 
 ### Custom fonts
 
@@ -76,7 +76,7 @@ Use custom fonts in your form in two ways:
 
 ## Parent contact for lead
 
-The **Lead & Contact** audience lets you update a lead and contact entity with a single form submission. Change the audience by using the picker in the top-right corner of the form editor.
+The **Lead & Contact** audience lets you update a lead and contact entity with a single form submission. Change the audience by using the picker in the top right corner of the form editor.
 
 To use a combined Lead & Contact audience, [define how the attributes are mapped to each other](real-time-marketing-form-global-settings.md#lead-contact-mapping). For example, link the contact *First Name* attribute to the lead *First Name* attribute, so the form field *First Name* updates attributes for both entities.
 
@@ -96,18 +96,19 @@ Form settings let you set advanced properties for your form and define what happ
 
 :::image type="content" source="media/real-time-marketing-form-settings.png" alt-text="Screenshot of the form settings page in real-time marketing, showing available configuration options." lightbox="media/real-time-marketing-form-settings.png":::
 
-- **Form template**: Select a template for your form. When you select a template, all content in your form is deleted.
-- **Prefill**: [Form Prefill](real-time-marketing-form-prefill.md) fills all fields in your form.
-- **Web tracking**: [Web tracking](interaction-journey-decision.md) adds a [tracking cookie](real-time-journeys-cookies.md) with the form submission ID to the user's browser when they submit the form. If enabled, the form loader script automatically includes the web tracking script, which creates the tracking cookie. Tell users about cookie usage according to your privacy regulations.
-- **Audience**: Set [how to handle duplicate records](real-time-marketing-manage-forms.md#how-to-handle-duplicate-records) by selecting the [matching rule](real-time-marketing-matching-rules.md). Choose whether form submission creates new records or updates existing records. If *Update matched contact with submitted data* and *Create a new contact if there was no match to an existing one?* are set to **No**, the form submission doesn't update or create any record. The form submission can link to an existing record identified by the matching rule. To make sure that existing values aren't overwritten by submitted empty values, enable the [Ignore empty values toggle](#ignore-empty-values).
-- **Post submission action**: Choose whether to show the *Thank you notification* or redirect the user to a different page after form submission. The *Thank you notification* appears for a few seconds, even if *Redirect after submission* is selected.
-- **Thank you notification**: This message appears when the user submits the form successfully.
-- **Error notification**: This message appears if an error occurs during form submission.
-- **Double opt-in**: If enabled, the [double opt-in](real-time-marketing-double-opt-in.md) email is sent after form submission. To use double opt-in for your form, you need a compliance profile with double opt-in turned on.
+- **Form template**: Select a template for your form. Selecting a template deletes all content in your form.
+- **Prefill**: [Form Prefill](real-time-marketing-form-prefill.md) fills all fields in the form.
+- **Web tracking**: [Web tracking](interaction-journey-decision.md) adds a [tracking cookie](real-time-journeys-cookies.md) with the form submission ID to the user's browser when they submit the form. If enabled, the form loader script automatically includes the web tracking script, which creates the tracking cookie. Let users know about cookie usage according to your privacy regulations.
+- **Audience**: Set [how to handle duplicate records](real-time-marketing-manage-forms.md#how-to-handle-duplicate-records) by selecting the [matching rule](real-time-marketing-matching-rules.md). Choose whether form submission creates new records or updates existing records. If *Update matched contact with submitted data* and *Create a new contact if there was no match to an existing one?* are set to **No**, the form submission doesn't update or create any record. The form submission can link to an existing record identified by the matching rule. To make sure existing values aren't overwritten by submitted empty values, turn on the [Ignore empty values toggle](#ignore-empty-values).
+- **Post submission action**: Choose whether to show the *Thank you notification* or redirect the user to a different page after form submission. The *Thank you notification* shows for a few seconds, even if *Redirect after submission* is selected.
+- **Thank you notification**: This message shows when the user submits the form successfully.
+- **Error notification**: This message shows if an error occurs during form submission.
+- **Double opt-in**: If enabled, the [double opt-in](real-time-marketing-double-opt-in.md) email is sent after form submission. To use double opt-in for the form, you need a compliance profile with double opt-in turned on.
+- **Ignore opt-outs**: If enabled, the form doesn't create opt-out records, even if the user tries to unsubscribe through the form. Learn more: [Ignore opt-outs](#ignore-opt-outs).
 
 ## How to handle duplicate records
 
-The default approach to duplicate records is different for contact and lead entities.
+The default way to handle duplicate records is different for contact and lead entities.
 
 - **Contact (default: Update contact using email)**: When a user submits a form with an existing email address, the form updates the existing record and doesn't create a new record.
 - **Lead (default: Always create a new record)**: When a user submits a form with an existing email address, the form creates a new record with the same email address.
@@ -121,7 +122,7 @@ A custom matching rule lets you set criteria for identifying existing leads or c
 
 ### Ignore empty values
 
-Use the **Ignore empty values** toggle to control whether empty form fields overwrite existing data. If a form is submitted with an empty field (like phone number), this setting determines whether the existing value stays or is cleared.
+Use the **Ignore empty values** toggle to control whether empty form fields overwrite existing data. If a form is submitted with an empty field, like phone number, this setting controls whether the existing value stays or is cleared.
 
 - **Toggle off (disabled)**: The existing value is overwritten by the empty input.
 - **Toggle on (enabled)**: The existing value stays and isn't replaced by the empty input.
@@ -130,6 +131,33 @@ Use the **Ignore empty values** toggle to control whether empty form fields over
 
 - If the toggle is **disabled**, the phone number is erased.
 - If the toggle is **enabled**, the phone number stays the same.
+
+## Manage consent in forms
+
+You can add **purposes** and **topics** to your form to let users subscribe to specific types of communication. Each form can only be linked to one compliance profile, so you can't include purposes from multiple compliance profiles in the same form. Learn more: [Stay compliant with privacy regulations](real-time-marketing-compliance-settings.md).
+
+If you need to include purposes from different compliance profiles in one form, you can create a new compliance profile that [reuses existing purposes](real-time-marketing-compliance-settings.md#use-previously-captured-consent-when-creating-a-compliance-profile) from those profiles.
+
+**Example**:
+
+- **Compliance profile A** contains the purpose **Commercial A**.
+- **Compliance profile B** contains the purpose **Commercial B**.
+- To combine both purposes into one form, create **Compliance Profile C** and enable the option to [use previously captured consent](real-time-marketing-compliance-settings.md#use-previously-captured-consent-when-creating-a-compliance-profile).
+- Compliance profile C now includes Commercial A and Commercial B, giving you a single profile linked to all required purposes.
+
+### Ignore opt-outs
+
+A form can include multiple **purposes** and **topics**. For example, suppose a form has topic A and topic B. A user first subscribes to topic A. Later, the user submits the form again, selecting only topic B and leaving topic A unchecked. This action unintentionally creates an opt-out for topic A.
+
+To prevent these accidental opt-outs, newly created forms enable the **Ignore opt-outs** toggle by default.
+
+If you want to use the form for consent management, allowing users to unsubscribe from specific topics or purposes, you should turn off the **Ignore opt-outs** toggle.
+
+> [!IMPORTANT]
+> Don't use the **Opt user out of the purpose** option for the **When checked** attribute of your purposes or topics if the **Ignore opt-outs toggle is enabled**. This setting can mislead users into thinking they can unsubscribe by selecting the checkbox, which doesn't happen when this setting is active.
+
+> [!TIP]
+> Turn on the [form prefill](real-time-marketing-form-prefill.md) feature to help prevent unintentional opt-outs. When it's on, the form automatically fills in the user's known values, reducing the chance of accidental changes to their existing subscriptions.
 
 ## Field types
 
@@ -150,6 +178,8 @@ Attribute metadata defines field types and formats. You can't change field types
 
 > [!NOTE]
 > **File** and **Customer** field types aren't supported in forms.
+>
+> The multi-select field type doesn't allow setting a default value.
 
 ### Phone number field
 
@@ -182,9 +212,11 @@ A lookup field links to a particular entity and lets you add a drop-down list of
 
 Improperly configured field-level security can prevent lookup fields from working correctly. Make sure field-level security is set up appropriately.
 
+You can set a **default value** for your lookup field. The default value of a lookup field is determined by its display name. Make sure each display name is unique; duplicate names can cause the system to select a default value at random. If a lookup field has a default value, users must clear it to view the complete list of available values.
+
 #### Filter a lookup field values based on an answer in a previous lookup field (cascading lookup fields)
 
-The **Filter value** feature lets you to filter the choices in a lookup field based on the user's selection in a previous lookup field, creating a more intuitive and efficient form experience. This dynamic filtering reduces clutter and confusion by showing only relevant options, helping users complete forms faster and with fewer errors. For example, when selecting a city, users only see cities that match the country/region they previously selected, eliminating the need to scroll through irrelevant entries. This leads to higher quality submissions and lowers the risk of form abandonment.
+The **Filter value** feature lets you filter the choices in a lookup field based on the user's selection in a previous lookup field, creating a more intuitive and efficient form experience. This dynamic filtering reduces clutter and confusion by showing only relevant options, helping users complete forms faster and with fewer errors. For example, when selecting a city, users only see cities that match the country/region they previously selected, eliminating the need to scroll through irrelevant entries. This leads to higher quality submissions and lowers the risk of form abandonment.
 
 ##### Set up value filtering for a lookup field
 
@@ -194,7 +226,7 @@ When your form includes two lookup fields, a **Filter values** button becomes av
 
 :::image type="content" source="media/real-time-marketing-form-filter-values.png" alt-text="Set up value filtering." lightbox="media/real-time-marketing-form-filter-values.png":::
 
-Selecting the **Filter values** button opens a pop-up window where you can configure how the filtering works between lookup fields. In this window, you can specify which lookup field serves as the input for filtering and select the appropriate relationship between the underlying data tables. Once the filtering rule is configured, the field in the form editor changes its highlight from blue to purple, indicating that a filtering relationship has been successfully applied.
+Selecting the **Filter values** button opens a pop-up window where you can configure how the filtering works between lookup fields. In this window, you can specify which lookup field serves as the input for filtering and select the appropriate relationship between the underlying data tables. Once the filtering rule is configured, the field in the form editor changes its highlight from blue to purple, indicating that a filtering relationship has been successfully applied. If the filtering lookup field's value is updated, the dependent lookup field's value is reset to ensure that only valid combinations are submitted.
 
 The lookup fields for country/region and city aren't included by default. To add them to your form, refer to this [step-by-step guide that shows how to create a filtered list of cities based on the selected country/region](real-time-marketing-filter-cities-by-country-region.md). The guide also offers general guidance on how to define custom lookup fields (entities) and establish relationships between them. This approach can be applied to any scenario where field options need to be dynamically filtered based on prior selections.
 
@@ -209,7 +241,7 @@ The form editor lets you use all attributes of lead or contact entities as form 
 
 ## Form validation
 
-The validation process starts automatically when you publish a *draft* form or save a *live, editing* form. Validation checks the form's content and stops publishing if it finds blocking **errors**, or shows **warnings** for potential issues.
+The validation process starts automatically when you publish a *draft* form or save a *live, editing* form. Validation checks the form's content and stops publishing if it finds blocking **errors**, or shows **warnings** for possible issues.
 
 To start validation manually, select **Check content**.
 
@@ -227,8 +259,8 @@ These conditions prevent the form from being published and show an error message
 
 These conditions don't prevent the form from being published, but a warning message appears:
 
-- Does the form include all fields linked to attributes of a selected entity that are required to create or update a record?
-- Are all required attributes labeled as required="required" in HTML?
+- Make sure the form includes all fields linked to attributes of a selected entity that are required to create or update a record.
+- Make sure all required attributes are labeled as required="required" in HTML.
 
 ## Form submission processing
 
@@ -236,14 +268,21 @@ After you submit the form, you see the submitted values in the **Submissions** s
 
 The following contact or lead attributes update automatically when the form creates a new record.
 
-- msdynmkt_emailid
-- msdynmkt_customerjourneyid
-- msdynmkt_marketingformid
-- ownerid
-- owningbusinessunit (if the business units feature is enabled)
-- subject (only for leads)—the form name is used as the value
+- `msdynmkt_emailid`
+- `msdynmkt_customerjourneyid`
+- `msdynmkt_marketingformid`
+- `ownerid`
+- `owningbusinessunit` (if the business units feature is enabled)
+- `subject` (only for leads — the form name is used as the value)
 
 These attributes don't update when a form submission updates an existing record.
+
+### Use submitted values in email personalization and journey branching
+
+You can create a trigger-based journey that starts when a form is submitted. From there, you have two options:
+
+1. **[Branch the journey using the submitted values](real-time-marketing-form-submitted-values.md#branch-a-journey-based-on-submitted-values)**: Adjust the path based on answers provided in the form (for example, favorite product, event preferences).
+1. **[Personalize emails using the submitted values](real-time-marketing-form-submitted-values.md#personalize-email-using-submitted-values)**: Insert dynamic text or show a summary of what the customer submitted, even when the journey doesn’t reference a contact or lead record (ideal for double opt-in scenarios).
 
 ## Advanced form customization
 
@@ -268,7 +307,7 @@ You can change the CSS class definitions in the HTML editor. Editing CSS allows 
 
 All `onEvent` HTML attributes that trigger JavaScript code, like `onClick` or `onChange`, are automatically sanitized (removed from the code).
 
-The following example is **not supported**:
+The following example isn't supported:
 
 ```html
 <button onClick="runMyFunction()">
@@ -319,7 +358,7 @@ This example shows a script that combines the first name and last name field val
 </script>
 ```
 
-Reuse this example to enrich your leads with more UTM parameters like utm_campaign, utm_medium, utm_term, and utm_content.
+Reuse this example to enrich your leads with more UTM parameters, like utm_campaign, utm_medium, utm_term, and utm_content.
 
 ### Customize the form and form submission entities
 

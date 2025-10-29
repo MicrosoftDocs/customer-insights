@@ -1,20 +1,16 @@
 ---
-title: "Export segments to Facebook Ads Manager (preview)"
+title: "Export segments to Facebook Ads Manager"
 description: "Learn how to configure the connection and export to Facebook Ads Manager."
-ms.date: 07/17/2025
+ms.date: 09/29/2025
 ms.reviewer: alfergus
 ms.topic: how-to
-author: JimsonChalissery
-ms.author: jimsonc
+author: Scott-Stabbert
+ms.author: sstabbert
 ---
 
-# Export segments to Facebook Ads Manager (preview)
-
-[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
+# Export segments to Facebook Ads Manager
 
 Export segments of unified customer profiles to Facebook Ads Manager to create campaigns on Facebook and Instagram.
-
-[!INCLUDE [public-preview-note](includes/public-preview-note.md)]
 
 ## Prerequisites
 

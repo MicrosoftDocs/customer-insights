@@ -1,7 +1,7 @@
 ---
 title: New and upcoming features
 description: Discover the latest features, improvements, and bug fixes in Dynamics 365 Customer Insights - Journeys. Stay updated with our monthly release notes.
-ms.date: 09/05/2025
+ms.date: 10/17/2025
 ms.update-cycle: 180-days
 ms.topic: whats-new
 author: alfergus
@@ -25,6 +25,60 @@ We're excited to announce our newest updates! This article summarizes early acce
 Customer Insights - Journeys updates are [pushed to customers automatically](https://cloudblogs.microsoft.com/dynamics365/it/2020/04/27/automatic-update-policy-for-dynamics-365-marketing/). Solutions are available for early validations. To manually update your instances, follow the steps in [Keep Customer Insights - Journeys up to date](apply-updates.md).
 
 To submit and vote on **feature requests** and **product suggestions**, go to the [Dynamics 365 Application Ideas portal](https://experience.dynamics.com/ideas/categories/?forum=dfa5b83d-9e4c-e811-a956-000d3a1bef07&forumName=Dynamics%20365%20Marketing).
+
+### October 2025 update
+
+| App              | GA release      |
+|------------------|-----------------|
+| Customer Insights - Journeys | 1.1.59247.68 |
+
+#### General availability
+
+- **Transform your outreach with Copilot-powered voice conversations**
+	- To meet the rising customer expectations, brands constantly look for new ways to connect so they can stand out among the sea of messages. By integrating Customer Insights - Journeys with Contact Center, you can go beyond traditional marketing tactics by leveraging Copilot Studio agents to deliver meaningful, hyper-personalized experiences that boost customer satisfaction and engagement.
+	- [Release plan](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/transform-outreach-copilot-powered-voice-conversations)
+	- [Docs](conversational-journeys-overview.md)
+
+- **Automate scalable journey creation with the journey API**
+	- With the new journey API, you can now automate journey creation by using templates, existing segments, and messages. For example, a team managing global events can programmatically generate hundreds of localized journey variants, each tailored by language, time zone, and audience segment, without manually configuring each one.
+	- [Release plan](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/automate-scalable-journey-creation-journey-api)
+	- [Docs](./developer/create-journey-template-api.md)
+
+- **Streamline event planning with set registration periods**
+	- Whether you're managing a product launch, a training session, or a customer summit, knowing your attendee count in advance brings structure and predictability to event planning. It helps you finalize logistics, allocate resources efficiently, avoid last-minute surprises, and reduce unnecessary costs from overbooking or under-preparing. By enforcing registration deadlines, teams can plan smarter and deliver more polished events with better decision-making and operational efficiency across event workflows. With minimized uncertainty and improved coordination, this functionality enhances the overall experience for both organizers and participants.
+	- [Release plan](/dynamics365/release-plan/2025wave2/customer-insights/dynamics365-customer-insights-journeys/streamline-event-planning-set-registration-periods)
+	- [Docs](set-up-event.md#the-form-tab)
+
+- **Create event portals with event and registration details using Power Pages**
+	- The new event portal enables you to quickly create a comprehensive hub where customers can access event details, session specifics, and speaker schedules. Customers can conveniently register using the event registration form. You can deploy the portal through Power Pages and customize it to match your brand identity with Power Pages Studio.
+	- [Release plan](/dynamics365/release-plan/2025wave2/customer-insights/dynamics365-customer-insights-journeys/enable-customers-find-sign-up-events-easily)
+	- [Docs](event-portal-template.md)
+
+- **Create an event portal on your own website using the event API**
+	- Events play a pivotal role in your business strategy by helping you acquire and engage customers. Your clients need a centralized location where they can discover and learn about the events you organize. The event API is a programmatic method to access data of events, sessions, session tracks, passes, speakers, and sponsorships, which enables you to quickly create a comprehensive hub where customers can access important event details and register.
+	- [Release plan](/dynamics365/release-plan/2025wave2/customer-insights/dynamics365-customer-insights-journeys/create-event-portal-own-website)
+	- [Docs](./developer/using-rtm-events-api.md)
+
+- **Create an event portal on your own website using the web application**
+	-The event portal web application provides a lightweight, multilingual, and mobile-responsive interface for showcasing live events from the Dynamics 365 events API, enabling users to search by name or description, view detailed event information, and register directly using embedded Customer Insights - Journeys forms. It's built with plain JavaScript, HTML, and CSS, and supports fast deployment and easy customization.
+     - [Docs](./developer/event-portal-web-application.md)
+
+#### Public preview
+
+- **Maximize event ROI with paid registration, seamless payment integration**
+	- With the new paid event registration capability in real-time journeys, you can now offer a seamless and secure ticketing experience. This feature empowers you to offer flexible pricing tiers and discount codes and increase registration conversion with a frictionless checkout. By embedding ticketing and payments directly into your event flow, you not only improve attendee satisfaction but also unlock new revenue streams and reduce operational overhead.
+	- [Release plan](/dynamics365/release-plan/2025wave2/customer-insights/dynamics365-customer-insights-journeys/maximize-event-roi-paid-registration-seamless-payment-integration)
+	- [Docs](real-time-journeys-event-passes.md)
+
+#### Monthly enhancements
+
+- **Prevent unintended opt‑outs in forms**
+	- You can now stop your forms from unsubscribing contacts when they leave topics or purposes unchecked. Use the new “Ignore opt‑outs” toggle in the form settings or the default form settings to make sure unchecked boxes don’t create opt‑out records. By default, all new marketing and event registration forms don’t generate opt‑outs, helping you keep your audience engaged. This update gives you full control over consent handling and reduces accidental loss of subscriptions.
+	- [Docs](real-time-marketing-manage-forms.md#manage-consent-in-forms)
+
+- **Manual registrations can now contain custom unmapped fields**
+    - When adding a registration manually, you can now include information using custom unmapped fields that you would typically collect through a registration form. This allows you to collect and store important event attendee information, even for last-minute sign-ups or someone who didn’t submit a registration form.
+    - [Docs](create-unmapped-fields-registration-forms.md)
 
 ### September 2025 update
 

@@ -1,7 +1,7 @@
 ---
 title: Create a Customer Insights - Journeys segment using the Web API
 description: Learn how to create a Customer Insights - Journeys segment using the Web API.
-ms.date: 04/03/2025
+ms.date: 10/08/2025
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
@@ -13,11 +13,18 @@ search.audienceType:
 
 # Create a Customer Insights - Journeys segment using the Web API
 
-You can create a Customer Insights - Journeys segment using the Web API following the same approach you would to [create any entity in a Power App](/power-apps/developer/data-platform/webapi/create-entity-web-api#basic-create). When creating a Customer Insights - Journeys segment, you need to create two entities: **msdynmkt_segmentdefinitions** and **msdynmkt_segments**. The following article shows how to create these entities.
+Using the Web API, you can:
+
+- Create a Customer Insights - Journeys segment.
+- Edit an existing segment to add or delete static members, or alter query definitions.
+- Publish a segment.
+- View segment members.
+
+The following article shows how to use the Web API.
 
 ## Create a segment definition entity
 
-The segment definition represents a marketing segment or list of target customers. To create a segment definition entity, you need to send a POST request to the API endpoint:
+The segment definition can contain both a static list of customers and a dynamic query to select customers. You can create a static list, a dynamic query, or a mixture of both static members and dynamic members.
 
 `POST <Organization URL>/api/data/v9.0/msdynmkt_segmentdefinitions`
 
@@ -30,8 +37,7 @@ The <**Organization URL**> part should be replaced with the actual URL of the or
     msdynmkt_segmentquery: string,
     statecode: StateCode,
     statuscode: SegmentDefinitionStatusCode,
-    msdynmkt_includedmembers: string,
-    msdynmkt_excludedmembers: string,
+    msdynmkt_staticlistmembers: string,
     msdynmkt_disablesegmentrefresh: boolean,
     msdynmkt_segmentrefreshintervalminutes: number
     msdynmkt_sourcesegmentcreatedon: date
@@ -52,8 +58,26 @@ The payload contains the following properties:
     - 723270001 = Draft
     - 723270002 = Going live
     - 723270003 = Deleted
-- **msdynmkt_includedmembers**: A string that contains a list of GUIDs of members that should be included in the segment.
-- **msdynmkt_excludedmembers**: A string that contains a list of GUIDs of members that should be excluded from the segment.
+- **msdynmkt_staticlistmembers**: A list of static members groups that should be included in or excluded from the segment. The list is encoded as serialized JSON. Each member of the list represents one static member group and has the following structure:
+    ```
+    {
+        groupId: string, // ID of the group as a GUID, which needs to be unique within each segment
+        includeType: StaticListIncludeType,
+        name: string, // any human-readable name of the group
+        inputType: StaticListInputType
+    }
+
+    enum StaticListIncludeType
+    {
+        "Include", // members of this group will always be included in segment members
+        "Exclude" // members of this group will always be excluded from segment members
+    }
+
+    enum StaticListInputType
+    {
+        "manualSelect"
+    }
+    ```
 - **msdynmkt_disablesegmentrefresh**: A boolean value that indicates whether automatic segment refreshing should be disabled.
 - **msdynmkt_segmentrefreshintervalminutes**: An integer value that specifies the refresh interval in minutes.
 - **msdynmkt_sourcesegmentcreatedon**: A date field to describe the date of segment creation.
@@ -61,6 +85,9 @@ The payload contains the following properties:
 
 > [!Note]
 > Adding the `msdynmkt_sourcesegmentcreatedon` and `msdynmkt_sourcesegmentcreatedby` fields isn't mandatory. The segment still works without these fields, but the two fields won't populate if not added to the payload.
+
+> [!NOTE]
+> Each segment definition entity can define at most 10 static member groups in the `msdynmkt_staticlistmembers` field.
 
 #### Example request
 
@@ -76,10 +103,7 @@ Accept: application/json
     "msdynmkt_segmentquery": "PROFILE(contact).FILTER(ISNOTNULL(address1_county))",
     "statecode": 0,
     "statuscode": 723270001,
-    // Separate GUIDs by a comma
-    "msdynmkt_includedmembers": "<member GUID>",
-    // Separate GUIDs by a comma
-    "msdynmkt_excludedmembers": "<member GUID>",
+    "msdynmkt_staticlistmembers": "[{\"groupId\":\"0f5b0c7f-395d-447b-b14c-315a601f878e\",\"includeType\":\"Include\",\"name\":\"My Include Members Group\",\"inputType\":\"manualSelect\"}]",
     "msdynmkt_disablesegmentrefresh": false,
     "msdynmkt_segmentrefreshintervalminutes": 15
 }
@@ -181,6 +205,82 @@ HTTP/1.1 204 No Content
 OData-Version: 4.0
 OData-EntityId: <Organization URL>/api/data/v9.0/msdynmkt_segments(<Segment ID>)
 
+```
+
+## Add static segment members
+
+For segments with segment definitions that define one or more static member groups, this API request can be used to *insert* members to the group.
+
+`POST <Organization URL>/api/data/v9.0/msdynmkt_AddStaticMembers`
+
+The API request is sent using HTTP POST to the API endpoint. The API method `(msdynmkt_AddStaticMembers)` is specified in the URL.
+
+### Payload
+
+```
+{
+    "SegmentId": "<Segment ID>",
+    "GroupId": "<Group ID>",
+    // at most 1000 entity ids
+    "EntityIds: [
+      <Entity ID 1>,
+      <Entity ID 2>,
+      ...
+    ]
+}
+```
+
+> [!NOTE]
+> Each static member group can contain at most 200,000 entity IDs in total.
+
+## Remove static segment members
+
+For segments with segment definitions that define one or more static member groups, this API request can be used to *delete* members from the group.
+
+`POST <Organization URL>/api/data/v9.0/msdynmkt_RemoveStaticMembers`
+
+The API request is sent using HTTP POST to the API endpoint. The API method `(msdynmkt_RemoveStaticMembers)` is specified in the URL.
+
+### Payload
+
+```
+{
+    "SegmentId": "<Segment ID>",
+    "GroupId": "<Group ID>",
+    "EntityIds: [
+      <Entity ID 1>,
+      <Entity ID 2>,
+      ...
+    ]
+}
+```
+
+## View static segment members
+
+For segments with segment definitions that define one or more static member groups, this API request can be used to *view members* of the group.
+
+`POST <Organization URL>/api/data/v9.0/msdynmkt_ListGroupMembers`
+
+The API request is sent using HTTP POST to the API endpoint. The API method `(msdynmkt_ListGroupMembers)` is specified in the URL.
+
+### Payload
+
+```
+{
+    "SegmentId": "<Segment ID>",
+    "GroupId": "<Group ID>",
+    "PageNo": number, // a number >= 1
+    "PageSize": number // a number >= 1
+}
+```
+
+### Response
+
+```http
+{
+    "@odata.context": "<Organizaiton URL>/api/data/v9.0/$metadata#Microsoft.Dynamics.CRM.msdynmkt_ListGroupMembersResponse",
+    "Response": "{\"entityIds\":[\"b1bf9a01-b056-e711-abaa-00155d701c02\",\"b3bf9a01-b056-e711-abaa-00155d701c02\"],\"additionalProperties\":{}}"
+}
 ```
 
 ## Publish

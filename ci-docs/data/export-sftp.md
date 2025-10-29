@@ -1,16 +1,14 @@
 ---
-title: "Export data to SFTP hosts (preview)"
+title: "Export data to SFTP hosts"
 description: "Learn how to configure the connection and export to an SFTP location."
-ms.date: 12/11/2024
+ms.date: 09/29/2025
 ms.reviewer: mhart
 ms.topic: how-to
-author: JimsonChalissery
-ms.author: jimsonc
+author: Scott-Stabbert
+ms.author: sstabbert
 ---
 
-# Export data to SFTP hosts (preview)
-
-[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
+# Export data to SFTP hosts
 
 Use your customer data in third-party applications by exporting them to a Secure File Transfer Protocol (SFTP) location.
 

@@ -1,20 +1,16 @@
 ---
-title: "Connections (preview) overview"
+title: "Connections overview"
 description: "Connections to other services from Customer Insights - Data."
-ms.date: 12/21/2023
+ms.date: 09/29/2025
 ms.reviewer: mhart
 ms.topic: overview
 author: Scott-Stabbert
 ms.author: sstabbert
 ---
 
-# Connections (preview) overview
-
-[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
+# Connections overview
 
 Connections are the key to enable data sharing to and from Dynamics 365 Customer Insights - Data. Each connection establishes data sharing with a specific service. Use connections to [configure non-Microsoft enrichments](enrichment-manage.md) and [configure exports](export-manage.md). The same connection can be used multiple times. For example, one connection to Dynamics 365 Customer Insights - Journeys works for multiple exports and one Leadspace connection can be used for several enrichments.
-
-[!INCLUDE [public-preview-note](includes/public-preview-note.md)]
 
 ## Export connections
 

@@ -182,7 +182,7 @@
           href: email-properties.md
         - name: Check your work using previews and test sends
           href: email-preview.md
-        - name: Prevent sending emails to duplicated email addresses (preview)
+        - name: Prevent duplicate emails to shared email addresses
           href: email-deduplication.md
         - name: Email accessibility checker
           href: email-accessibility.md
@@ -362,8 +362,8 @@
         items:
         - name: Personalize triggers using conditions
           href: real-time-marketing-personalize-triggers.md
-        - name: Control how fast customers can enter a journey (preview)
-          href: control-how-fast-enter-journey.md      
+        - name: Control how fast customers enter a journey
+          href: control-how-fast-enter-journey.md
       - name: Split journey audiences
         items:
         - name: Personalize journey variations using multiple journey branches
@@ -386,7 +386,7 @@
           href: real-time-marketing-journey-designer.md
     - name: Known issues for journeys
       href: journey-known-issues.md
-  - name: Conversational journeys (preview)
+  - name: Conversational journeys
     items:
     - name: Conversational journeys overview
       href: conversational-journeys-overview.md
@@ -410,6 +410,8 @@
         href: real-time-journeys-event-session.md
       - name: Set up and manage an event waitlist
         href: set-up-and-manage-waitlist.md
+      - name: Set up event passes (preview)
+        href: real-time-journeys-event-passes.md
       - name: Create an event from another event
         href: event-from-event.md
     - name: Host a Microsoft Teams webinar
@@ -426,7 +428,7 @@
         href: event-registration-experience.md
       - name: Create unmapped fields for registration forms
         href: create-unmapped-fields-registration-forms.md
-      - name: Build an event registration portal with Power Pages (preview)
+      - name: Build an event registration portal with Power Pages 
         href: event-portal-template.md
       - name: Cancel event registration
         href: cancel-registration.md
@@ -450,16 +452,18 @@
       href: real-time-marketing-form-create.md
     - name: Deploy pages that contain forms
       href: real-time-marketing-deploy-pages.md
+    - name: Manage forms
+      href: real-time-marketing-manage-forms.md
     - name: Prefill values for forms and event registration
       href: real-time-marketing-form-prefill.md
     - name: Create unmapped fields for marketing forms
       href: real-time-marketing-forms-custom-fields.md
-    - name: Create unmapped fields for registration forms (preview)
+    - name: Create unmapped fields for registration forms
       href: create-unmapped-fields-registration-forms.md
     - name: Filter cities by country/region in forms
       href: real-time-marketing-filter-cities-by-country-region.md
-    - name: Manage forms
-      href: real-time-marketing-manage-forms.md
+    - name: Use submitted values
+      href: real-time-marketing-form-submitted-values.md
     - name: Set the default configuration for forms
       href: real-time-marketing-form-global-settings.md
     - name: Troubleshoot forms
@@ -606,6 +610,10 @@
     href: developer/create-journey-template-api.md
   - name: Use the events API in real-time journeys (preview)
     href: developer/using-rtm-events-api.md
+  - name: Create an event portal on your website using the web application
+    href: developer/event-portal-web-application.md
+  - name: Set up payment gateway integration (preview)
+    href: developer/payment-gateway-integration.md
   - name: Create a segment using the Web API
     href: real-time-marketing-api-segment.md
   - name: Use binding IDs to correlate across triggers

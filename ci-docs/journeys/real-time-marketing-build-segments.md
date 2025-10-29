@@ -1,7 +1,7 @@
 ---
 title: Build segments in Customer Insights - Journeys 
-description: Learn how to build segments to use in journeys in Dynamics 365 Customer Insights - Journeys.
-ms.date: 06/04/2025
+description: Learn how to build segments to use in real-time journeys in Dynamics 365 Customer Insights - Journeys.
+ms.date: 10/16/2025
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -11,16 +11,17 @@ search.audienceType:
   - enduser
 ms.custom: sfi-image-nochange
 ---
+
 # Build segments in Customer Insights - Journeys
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=a1240d08-395b-4041-ba4f-853a32afaea3]
 
-To improve marketing return on investment, it's important to target the right audience. You can build segments directly in Dynamics 365 Customer Insights - Journeys using the powerful, easy-to-use logic builder that doesn’t require specialized knowledge of complex data structures and logical operators. You can even preview the estimated segment size and membership before you mark your segment as "Ready to use" in customer journeys.
+Improve marketing return on investment by targeting the right audience. Build segments directly in Dynamics 365 Customer Insights - Journeys with the powerful, easy-to-use logic builder that doesn't require specialized knowledge of complex data structures or logical operators. Preview the estimated segment size and membership before you mark your segment as "Ready to use" in customer journeys.
 
 When building segments, you can choose to target contacts, leads, or unified profiles from Customer Insights - Data.
 
 > [!NOTE]
-> To target unified profiles, Customer Insights - Journeys and Customer Insights - Data must be installed on the same environment.
+> To target unified profiles, install Customer Insights - Journeys and Customer Insights - Data on the same environment.
 
 ## Create a demographic segment targeting leads
 
