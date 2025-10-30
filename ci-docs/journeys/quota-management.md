@@ -13,7 +13,7 @@ search.audienceType:
 
 # Monitor your monthly quotas
 
-Dynamics 365 Customer Insights - Journeys is a subscription service that is billed monthly and sets organization-level quotas for the maximum number of marketing contact records and monthly outbound interactions that you can send. Other quotas may also apply. You can always upgrade your subscription if you need higher quotas.
+Dynamics 365 Customer Insights - Journeys is a subscription service that is billed monthly and sets organization-level quotas for the maximum number of interacted people records and monthly outbound interactions that you can send. Other quotas may also apply. You can always upgrade your subscription if you need higher quotas.
 
 The **Quota limits** page shows the total quota levels you have purchased and how much of each quota your organization has already used. To see how much of each quota you've used, go to **Settings** > **Overview** > **Quota limits**.
 
@@ -24,15 +24,15 @@ The following usages and limits are tracked on this screen:
 
 - **Monthly interaction quota**: Shows the total number of outbound interactions (email messages, text messages, and push notifications) that you have sent in the current month.
     - The interaction quota is reset on the first day of each month. 
-    - Your interaction quota is equal to ten times your marketing contact quota.
-- **Marketing contacts**: Shows the total number of *marketing Contacts* that you can have in your database according to your current Customer Insights - Journeys subscription.
-    - Entities that count toward the marketing contact quota include Leads, Contacts, and CI profiles.
-    - Marketing contacts only include those that you engage with through interactions such as emails, text messages, or push notifications.
+    - Your interaction quota is equal to ten times your interacted people quota.
+- **Interacted people**: Shows the total number of *interacted people* that you can have in your database according to your current Customer Insights - Journeys subscription.
+    - Entities that count toward the interacted people quota include Leads, Contacts, and CI profiles.
+    - Interacted people only include those that you engage with through interactions such as emails, text messages, or push notifications.
     - Contacts that you never engage in marketing activities won't be counted as part of this quota.
     - If you have multiple environments, the contact quota for each environment is shown so that you can tell how much is being used by each environment.
-    - For more information about marketing contacts and how they are counted, see [How Customer Insights - Journeys is licensed](purchase.md#how-licensed) and the [Administration and setup FAQ](setup-troubleshooting.yml#licensing).
+    - For more information about interacted peoples and how they are counted, see [How Customer Insights - Journeys is licensed](purchase.md#how-licensed) and the [Administration and setup FAQ](setup-troubleshooting.yml#licensing).
     > [!NOTE]
-    > Active marketing contacts are counted as contact entities in the Dataverse database if they have received a marketing interaction within the last 12 months prior to the current date. Once a contact hasn't received an interaction in the last 12 months, it is no longer counted as an active contact.
+    > Active interacted peoples are counted as contact entities in the Dataverse database if they have received a marketing interaction within the last 12 months prior to the current date. Once a contact hasn't received an interaction in the last 12 months, it is no longer counted as an active contact.
     - Quota entitled is calculated at the tenant level. If your entitled quota looks higher than the paid SKUs you own, you probably have trials on your tenant.
     - Quota usage is shown at the environment (organization) level. Total tenant-level quota is captured in the "Other orgs in your tenant" line item.
 - **Litmus email previews**: Shows the total number of Litmus email previews (inbox previews) users at your organization can still use during the current month.
@@ -45,7 +45,7 @@ The following usages and limits are tracked on this screen:
     - You can purchase or reuse an existing SMS provider account.
     - Consumption is recorded and displayed on the Quota limits page, but the allocated quota needs to be verified with the third-party provider.
 
-The quota limits page also includes charts that show the monthly interaction usage and the annual total marketing contact usage.
+The quota limits page also includes charts that show the monthly interaction usage and the annual total interacted people usage.
 
 > [!Note]
 > Quotas and other limits are different based on whether you are running a trial, preview, or subscribed version of the product.
