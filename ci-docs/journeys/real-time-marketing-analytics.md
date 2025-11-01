@@ -64,9 +64,9 @@ Operational analytics has two parts:
  
 - **Step analytics**: When you select any step in the journey, the right pane shows a wealth of information. There are three areas or groups:
 
-- **Inflow and outflow information**: For every step, the top shows the number of customers who entered the step (Inflow), the number currently being processed (Processing), the number who have moved to the next step (Processed), and the number who have exited the journey (Exit). The percentage is calculated from the inflow volume. When the journey is running and counts are small, we prioritize showing these numbers as soon as possible (within minutes) and this can lead to inconsistencies (for example, a processed data point may be counted and shown before its corresponding inflow data point is shown). This self-corrects once journey execution is complete.
+- **Inflow and outflow information**: For every step, the top shows the number of customers who entered the step (Inflow), the number currently being processed (Processing), the number who have moved to the next step (Processed), and the number who have exited the journey (Exit). The percentage is calculated from the inflow volume. When the journey is running and counts are small, we prioritize showing these numbers as soon as possible (within minutes), and this can lead to inconsistencies (for example, a processed data point may be counted and shown before its corresponding inflow data point is shown). This self-corrects once the journey execution is complete.
 
-    - **Flow details**: The flow details section shows additional details such as rate limits (if applied), unique people who entered the journey (different than inflow that counts each entry rather than unique people, flow details are only available for channel tiles), and exit reasons. You can select the list icon to display the individuals in the step and reason codes for their status. You can also select the export button to export the data to Excel (with a limit of 50,000 records).
+    - **Flow details**: The flow details section shows additional details such as rate limits (if applied), unique people who entered the journey (different than inflow, that counts each entry rather than unique people, flow details are only available for channel tiles), and exit reasons. You can select the list icon to display the individuals in the step and reason codes for their status. You can also select the export button to export the data to Excel (with a limit of 50,000 records).
 
         :::image type="content" source="media/operational-analytics-2.png" alt-text="An overview of customer inflow, processed, and exit analytics with email performance metrics." lightbox="media/operational-analytics-2.png":::
 
@@ -86,7 +86,7 @@ In the **Overview** section of the right pane, you can monitor key performance i
 To view **delivery and interaction statistics**, select the **View details** link in the **Delivery funnel** or **Delivery issues** section on the channel analytics pane. Delivery and interaction details allow you to analyze delivery, engagement, and performance data for your email, text, push notification, or custom channel messages.
 
 - You can view deliverability details on messages sent, delivered, blocked, or bounced along with the respective reasons, detailed data on customers who opened or clicked a message, and unsubscription interaction data.
-- For emails, delivery and interactions statistics include data on user agents your customers are using to engage with your emails. Under total opens you can see data about email clients and under total clicks you can find data on types of devices, operating systems, and browsers.
+- For emails, delivery and interactions statistics include data on user agents your customers are using to engage with your emails. Under total opens, you can see data about email clients, and under total clicks, you can find data on types of devices, operating systems, and browsers.
 
 A message’s unique opens and clicks are calculated based on the customer's journey run, not against the journey itself. In the case of a repeating journey, if the same customer enters the journey multiple times as it repeats and opens or clicks the same message each time, the system records multiple unique opens or clicks for each journey run. For example, if a customer clicks the same message in the same journey in two different runs, two unique clicks are recorded. 
 
@@ -121,7 +121,7 @@ Learn more: [Email insights](email-insights.md)
 :::image type="content" source="media/analytics-email-insights.png" alt-text="Screenshot of email insights dashboard." lightbox="media/analytics-email-insights.png":::
 
 > [!NOTE]
-> Contact insights, lead insights, journey and channel analytics (including, goal analytics, AI optimization, email insights and delivery and interaction details) will display interaction data for the last 12 months only. However, all historical interaction data is still retained in the data storage.
+> Contact insights, lead insights, journey and channel analytics (including goal analytics, AI optimization, email insights, and delivery and interaction details) will display interaction data for the last 12 months only. However, all historical interaction data is still retained in the data storage.
 
 ## Aggregate cross-journey analytics
 
