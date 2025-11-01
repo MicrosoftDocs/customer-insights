@@ -49,7 +49,7 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 - **Maximize event ROI with paid registration, seamless payment integration**
 	- With the new paid event registration capability in real-time journeys, you can now offer a seamless and secure ticketing experience. This feature empowers you to offer flexible pricing tiers and discount codes and increase registration conversion with a frictionless checkout. By embedding ticketing and payments directly into your event flow, you not only improve attendee satisfaction but also unlock new revenue streams and reduce operational overhead.
 	- [Release plan](/dynamics365/release-plan/2025wave2/customer-insights/dynamics365-customer-insights-journeys/maximize-event-roi-paid-registration-seamless-payment-integration)
-	- [Docs](real-time-journeys-event-passes.md)
+	- [Docs (event passes)](real-time-journeys-event-passes.md), [Docs (payment gateway)](./developer/payment-gateway-integration.md)
 
 #### Monthly enhancements
 
