@@ -51,11 +51,12 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 	- [Release plan](/dynamics365/release-plan/2025wave2/customer-insights/dynamics365-customer-insights-journeys/maximize-event-roi-paid-registration-seamless-payment-integration)
 	- [Docs (event passes)](real-time-journeys-event-passes.md), [Docs (payment gateway)](./developer/payment-gateway-integration.md)
 
-#### Monthly enhancements
+#### New blogs and scenario docs
 
-- **Use submitted form values to branch journeys and personalize emails**
-	- You can now use values that customers submit in marketing and event registration forms to create more relevant experiences in real-time journeys. Build journey branches that react to specific answers (for example, route anyone who chose a particular option to a tailored path) and personalize emails by inserting submitted values as dynamic text or as a generated list. This capability supports both mapped and unmapped fields.
-	- [Docs](real-time-marketing-form-submitted-values.md)
+Learn how to make the most of the new Dynamics 365 Customer Insights features in our latest blogs and scenario docs:
+
+- [Why localized dates and times matter in event registration](https://community.dynamics.com/blogs/post/?postid=8795951f-7baa-f011-bbd3-00224826f06d)
+- [Use submitted form values to branch journeys and personalize emails](real-time-marketing-form-submitted-values.md)
 
 ### October 2025 update
 
