@@ -1,7 +1,7 @@
 ---
 title: Copilot - Create journeys using AI assistance (preview)
 description: Create marketing journeys using everyday language with Copilot. Enable the feature, provide feedback, and streamline your marketing efforts.
-ms.date: 06/12/2025
+ms.date: 11/04/2025
 ms.update-cycle: 180-days
 ms.topic: get-started
 author: alfergus
@@ -24,21 +24,12 @@ With the journey copilot, anyone can now use every day conversational language t
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note.md)]
 
-## Enable the journey copilot
-
-To use the journey copilot, an administrator needs to enable the feature switch. To enable the switch:
-1. Go to **Settings** > **Overview** > **Feature switches** > **Journey**.
-1. Enable the journey copilot feature switch toggle, then select **Save** in the upper right.
-
-> [!div class="mx-imgBorder"]
-> ![Enable copilot feature](media/real-time-marketing-enable-copilot.png "Enable copilot feature")
-
 > [!NOTE]
 > The journey copilot is only available in the United States in the English language only.
 
 ## Use the journey copilot
 
-Now, let’s imagine you want to create a welcome journey for people who recently joined your loyalty program. To create a journey with Copilot, select the **Journey** tab under **Engagement**. Then select **New Journey**, which opens the journey copilot window.
+To create a journey with Copilot, select the **Journey** tab under **Engagement**. Then select **New Journey**, which opens the journey copilot window.
 
 > [!div class="mx-imgBorder"]
 > ![Use Copilot to start creating a journey](media/real-time-marketing-use-copilot-for-journey-creation.png "[Use Copilot to start creating a journey")
