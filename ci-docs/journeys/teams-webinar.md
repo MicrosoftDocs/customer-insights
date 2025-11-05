@@ -30,12 +30,6 @@ For general information about setting up Microsoft Teams, refer to the [Microsof
 
 To create a Teams event, select **Event planning** in the Customer Insights - Journeys app area switcher, then select **Events** in the left navigation pane. Select **+New** in the top ribbon.
 
-> [!NOTE]
-> The **Event Format** field is hidden from the event form and is automatically set. To see the streaming options, set the **Do you want to stream this event** toggle to **Yes**. If you are using a custom form, ensure that you hide this field and set the value to **Hybrid event**.
-
-> [!div class="mx-imgBorder"]
-> ![Screenshot of Azure resource groups.](./media/teams-webinar-stream2.png)
-
 ## Event streaming options
 
 After you flip the **Do you want to stream this event** toggle to **Yes**, you’ll have three streaming options: Teams webinar, Teams meeting, and Teams live event.
