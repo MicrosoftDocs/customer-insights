@@ -1,7 +1,7 @@
 ---
 title: New and upcoming features
 description: Discover the latest features, improvements, and bug fixes in Dynamics 365 Customer Insights - Journeys. Stay updated with our monthly release notes.
-ms.date: 10/31/2025
+ms.date: 11/04/2025
 ms.update-cycle: 180-days
 ms.topic: whats-new
 author: alfergus
@@ -37,7 +37,6 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 - **Host large-scale online events with Teams Town Hall**
 	- Integrate Microsoft Teams Town Hall into Customer Insights - Journeys to schedule and manage events for up to 10,000 attendees as part of your broader campaign strategy. You can now automatically trigger personalized invitations based on customer data and behavior, increasing the likelihood of attendance and engagement. Track participation and engagement metrics within Customer Insights, making it easier to segment audiences and tailor follow-up actions after the event.
 	- [Release plan](/dynamics365/release-plan/2025wave2/customer-insights/dynamics365-customer-insights-journeys/host-large-scale-online-events-teams-town-hall)
-	- [Docs]()
 
 #### Public preview
 
