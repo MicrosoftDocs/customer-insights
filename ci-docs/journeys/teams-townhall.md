@@ -24,7 +24,8 @@ This integration enables:
 
 ## Create a Teams Town Hall online event
 
-To create a Teams event, select **Event planning** in the Customer Insights - Journeys app area switcher, then select **Events** in the left navigation pane. Select **+New** in the top ribbon. Next, on the General tab, under "Stream this event online" section, enable the toggle. After you flip the **Do you want to stream this event** toggle to **Yes**, you’ll have four streaming options: Teams webinar, Teams meeting, Teams live event and **Teams Town Hall**. 
+To create a Teams event, select **Event planning** in the Customer Insights - Journeys app area switcher, then select **Events** in the left navigation pane. Select **+New** in the top ribbon. Next, on the General tab, under "Stream this event online" section, enable the toggle. After you flip the **Do you want to stream this event** toggle to **Yes**, you’ll have four streaming options: Teams webinar, Teams meeting, Teams live event and 
+**Teams Town Hall**. 
 
 Select Teams Town hall as your streaming provider. Once you save your changes the meeting URL for Teams Town Hall will get generated. This URL can then be used to send to your attendees through emails created in Customer Insights-Journeys.
 
@@ -43,8 +44,21 @@ Read more: [How to set up Town Hall meeting options](/https://support.microsoft.
 
 Only organizers can publish the Town Hall Event through Customer Insights-Journeys and cancel the event at present. Co-organizers, when assigned, are able to edit the meeting options. 
 
+### Keeping Customer Insights - Journeys and Teams in sync
+
+A user who has access to an event record and permissions to edit the record in Customer Insights - Journeys can make any change to a record. However, since the same user may not have created the corresponding live event or meeting in Teams (and thus may not be the "Teams Meeting owner"), the changes the user makes to an event record in Customer Insights - Journeys aren’t propagated to Teams. This functionality is similar to functionality within Teams, where a user can’t make changes to a live event or meeting created by another user.
+
+In scenarios where event record changes aren’t propagated to Teams, the Customer Insights - Journeys app displays a warning to any user who isn’t the Teams meeting owner. If Teams meeting owner opens the event record, they’ll see a **Sync with Teams** button in the ribbon. Selecting the **Sync with Teams** button syncs the changes made to the event by any non-owner users.
+
 > [!NOTE]
 > The ability to add co-organizers through Customer Insights - Journeys will be introduced with December release.
 
 ## Publishing a Town Hall 
-When the event is set up, you can go ahead and publish the event in Customer Insights - Journeys. Once the event is live, the Town Hall Event will be published and calendar invites will be automatically generated for organizers and sent to co-organizers and speakers directly from Teams. To invite attendees to Teams Town Hall, use Customer Insights - Journeys emails with "Join via Teams" button. [Learn more](/journeys/real-time-marketing-email#link-to-surveys-events-marketing-pages-microsoft-teams-events-or-calendar-items)
+When the event is set up, you can go ahead and publish the event in Customer Insights - Journeys. Once the event is live, the Town Hall Event will be published and calendar invites will be automatically generated for organizers and sent to co-organizers and speakers directly from Teams. 
+
+## Inviting registrants to attend the Teams event through email
+
+After creating the event, going live with it, and gathering registrations, you should [send the registrants an email](email-design.md) to provide the attendee URL. In the Customer Insights - Journeys email designer, you’ll find a **Join in Teams** option in the **Link to** menu for the button element. The **Join in Teams** button generates a unique attendee URL for each attendee. 
+
+## Attandance report
+Town Hall events do not require users to register for the event so no check-ins are being associated with registrations. The attandance report of attendees who joined the event will be available after the event is over, but it won't be associated with event registrations. The way Teams Town Hall map attandance is via email, therefore you will see the check-in table populated in Customer Insights - Journeys with attandance data associated with the email address, but not with event registration. 
