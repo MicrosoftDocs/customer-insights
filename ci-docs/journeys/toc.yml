@@ -414,10 +414,12 @@
         href: real-time-journeys-event-passes.md
       - name: Create an event from another event
         href: event-from-event.md
-    - name: Host a Microsoft Teams webinar
+    - name: Host a streamed event with Microsoft Teams
       items:
       - name: Set up a Teams webinar
         href: teams-webinar.md
+      - name: Set up a Teams Town Hall
+        href: teams-town-hall.md
       - name: Optimize your event check-in flow
         href: optimize-check-in.md
     - name: Register event attendees
@@ -608,7 +610,7 @@
     href: developer/extend-consent.md
   - name: Use the Create Journey From Template API
     href: developer/create-journey-template-api.md
-  - name: Use the events API in real-time journeys (preview)
+  - name: Use the events API in real-time journeys
     href: developer/using-rtm-events-api.md
   - name: Create an event portal on your website using the web application
     href: developer/event-portal-web-application.md

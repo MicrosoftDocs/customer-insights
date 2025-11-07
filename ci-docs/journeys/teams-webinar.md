@@ -1,7 +1,7 @@
 ---
 title: Use Microsoft Teams for Dynamics 365 Customer Insights - Journeys online events
 description: Learn how to create and host live events in Dynamics 365 Customer Insights - Journeys using Microsoft Teams as the webinar provider.
-ms.date: 06/10/2025
+ms.date: 11/06/2025
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
@@ -29,12 +29,6 @@ For general information about setting up Microsoft Teams, refer to the [Microsof
 ## Create an online event
 
 To create a Teams event, select **Event planning** in the Customer Insights - Journeys app area switcher, then select **Events** in the left navigation pane. Select **+New** in the top ribbon.
-
-> [!NOTE]
-> The **Event Format** field is hidden from the event form and is automatically set. To see the streaming options, set the **Do you want to stream this event** toggle to **Yes**. If you are using a custom form, ensure that you hide this field and set the value to **Hybrid event**.
-
-> [!div class="mx-imgBorder"]
-> ![Screenshot of Azure resource groups.](./media/teams-webinar-stream2.png)
 
 ## Event streaming options
 
