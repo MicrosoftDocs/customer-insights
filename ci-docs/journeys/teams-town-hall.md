@@ -35,7 +35,7 @@ The default Town Hall settings are configured to provide the best attendee and p
 
 ### Town Hall roles
 
-| Role name                    | What do they do?                                                                                   | How to create them? |
+| Role name                    | Role function                                                                                   | How to create the role |
 |------------------------------|----------------------------------------------------------------------------------------------------|----------------------------|
 | Event owner                  | The user who owns the event record in Customer Insights - Journeys. | Set the event owner by using the **Assign** button on the event ribbon. |
 | Teams meeting owner (organizer) | The user who creates and *saves* the record after choosing the Town Hall option in Customer Insights - Journeys. Changing the owner of the event record in Customer Insights - Journeys doesn’t change the owner of the Town Hall in Teams. Any change to the event record in Customer Insights - Journeys only reflects in Teams when the owner makes the change or when they select **Sync to Teams**. | Sign in as this user in Customer Insights - Journeys and create a new event to change the owner. |
