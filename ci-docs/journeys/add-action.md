@@ -45,19 +45,11 @@ You can send push notifications. Push messages allow you to quickly convey offer
 
 You can also send messages through custom channels to capture customers' attention. For more information, see [create custom channels](real-time-marketing-create-custom-channels.md).
 
-### AI-powered conversations (preview)
-
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note.md)]
+### AI-powered conversations
 
 Customer Insights - Journeys offers the ability to integrate with the Contact Center, enabling conversation-based communications with your customers. 
 
-##### Voice conversation (preview)
-
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note.md)]
+##### Voice conversation
 
 You can make personalized phone calls using Contact Center, powered by human agents or Copilot Studio agents, and send the outcomes back to Customer Insights - Journeys for branching. This is only available if the [conversational journeys](conversational-journeys-overview.md) feature is enabled.
 
@@ -143,15 +135,19 @@ Attribute branches support multi-way branching. For example, if you have 'custom
 
 The audience split tile allows you to divide your audience to give a unique set of experiences to random portions of the audience. You can split by percentage or split by number. Learn more: [Split your audience into groups (preview)](real-time-marketing-split-audience.md).
 
-### Activities
+### Activities (preview)
+
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note.md)]
 
 You can create activities for customers at specific instances in a journey, such as creating and assigning a phone call or task activity. See available activities below. 
 
-##### Phone call
+##### Phone call (preview)
 
 You can create and assign a phone call for customers to sales.
 
-##### Task
+##### Task (preview)
 
 You can create and assign a task activity for customers.
 
@@ -168,5 +164,13 @@ When using a custom trigger, you can choose which data to send as part of the tr
 For example, a loan application journey could have various steps that require a human agent’s approval. By creating a separate customer journey or Power Automate Flow for loan exception approval, you can trigger it from various points in the loan application journeys where exceptions can occur. The data you send with the trigger can be used to populate dynamic content or as inputs to other Flow actions.
 
 To learn more about triggering a custom event, see [Trigger an action outside of a journey](real-time-marketing-custom-actions.md).
+
+##### Create an opportunity (preview)
+
+You can create and assign an opportunity to sales.
+
+##### Create an lead (preview)
+
+You can create and assign an opportunity to sales.
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
