@@ -419,7 +419,7 @@
       - name: Set up a Teams webinar
         href: teams-webinar.md
       - name: Set up a Teams Town Hall
-        href: teams-townhall.md
+        href: teams-town-hall.md
       - name: Optimize your event check-in flow
         href: optimize-check-in.md
     - name: Register event attendees
