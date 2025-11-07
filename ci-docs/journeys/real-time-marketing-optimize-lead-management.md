@@ -67,8 +67,7 @@ You can create a lead in Dynamics 365 Sales for a seller to follow-up on and spe
 
 ## Scenario 4: Create an opportunity for a seller to follow-up on
 
-You can create an opportunity in Dynamics 365 Sales for a seller to follow-up on and specify a topic, owner, and any notes you want the seller to know when taking action. 
-
+You can create an opportunity in Dynamics 365 Sales for a seller to follow-up on and specify a topic, owner, and any notes you want the seller to know when taking action.
 
 ## View analytics for your activities  
 
@@ -76,3 +75,5 @@ You can view the status breakdown for the phone call record created after the jo
 
 > [!div class="mx-imgBorder"]
 > ![Check the lead analytics](media/real-time-marketing-phone-call-lead-status-analytics-1.png "Check the lead analytics")
+
+[!INCLUDE [footer-include](./includes/footer-banner.md)]
