@@ -1,7 +1,7 @@
 ---
-title: Create sales activities from lead signals
+title: Create sales activities from lead signals (preview)
 description: Learn how to optimize lead management by engaging sellers right away in Dynamics 365 Customer Insights - Journeys.
-ms.date: 02/12/2025
+ms.date: 11/07/2025
 ms.topic: get-started
 author: alfergus
 ms.author: alfergus
@@ -11,7 +11,9 @@ search.audienceType:
   - enduser
 ---
 
-# Create sales activities from lead signals
+# Create sales activities from lead signals (preview)
+
+[!INCLUDE [Preview banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 When using journeys to nurture leads and opportunities, it's important to pay attention to signals that may indicate a sense of urgency or interest from the leads. Signals may include enhanced engagement with your marketing messages or increased activity on your website or social media channels.
 
@@ -19,7 +21,7 @@ With Dynamics 365 Customer Insights - Journeys, you can leverage this informatio
 
 This feature allows you to seamlessly integrate your marketing and sales efforts, providing a more cohesive and streamlined experience for your leads and customers. With the ability to create sales activities directly from the journey, you can better track and measure the effectiveness of your marketing and sales efforts and make data-driven decisions to optimize your campaigns for maximum impact.
 
-[!INCLUDE [Preview banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note.md)]
 
 ## Scenario 1: Handing off high value leads timely to drive paid conversion rate
 
