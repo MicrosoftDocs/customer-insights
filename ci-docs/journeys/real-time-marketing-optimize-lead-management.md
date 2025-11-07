@@ -19,8 +19,7 @@ With Dynamics 365 Customer Insights - Journeys, you can leverage this informatio
 
 This feature allows you to seamlessly integrate your marketing and sales efforts, providing a more cohesive and streamlined experience for your leads and customers. With the ability to create sales activities directly from the journey, you can better track and measure the effectiveness of your marketing and sales efforts and make data-driven decisions to optimize your campaigns for maximum impact.
 
-[!NOTE]
-> The current implementation of creating a task, phone call, lead, or opportunity has a limited set of values exposed in the journey editor that can be set on each entity type. The ability to set additional fields (including custom) is a known feature ask that doesn't yet have an estimated date. Check the [release plans](/dynamics365/release-plans/) to see when this feature will be prioritized and delivered.
+[!INCLUDE [Preview banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 ## Scenario 1: Handing off high value leads timely to drive paid conversion rate
 
@@ -68,9 +67,6 @@ You can create a lead in Dynamics 365 Sales for a seller to follow-up on and spe
 
 You can create an opportunity in Dynamics 365 Sales for a seller to follow-up on and specify a topic, owner, and any notes you want the seller to know when taking action. 
 
-## Scenario 5: Activate a custom trigger to initiate a sales sequence
-
-You can activate a custom trigger anywhere in a journey, including a custom trigger that initiates a sales sequence in Dynamics 365 Sales. This is a powerful tool if there are already sales sequences configured and you want to start them off after a marketing journey. 
 
 ## View analytics for your activities  
 
