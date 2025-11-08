@@ -23,7 +23,7 @@ Within real-time journeys, you can launch various actions. Some of these actions
 
 :::image type="content" source="media/voice-conversation-tile.png" alt-text="An overview of all possible actions in a journey." lightbox="media/journeys-actions.png":::
 
-The main actions are grouped under [messages](#messages), [AI-powered conversations (preview)](#ai-powered-conversations-preview), [AI-powered actions](#ai-powered-actions), [conditions](#conditions), [activities](#activities), and [connectors](#connectors). You can see all available actions under each section below.
+The main actions are grouped under [messages](#messages), [AI-powered conversations](#ai-powered-conversations), [AI-powered actions](#ai-powered-actions), [conditions](#conditions), [activities (preview)](#activities-preview), and [connectors](#connectors). You can see all available actions under each section below.
 
 ### Messages
 
