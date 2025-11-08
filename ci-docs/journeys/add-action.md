@@ -1,7 +1,7 @@
 ---
 title: Add an action in a journey
 description: An overview of possible actions you can do in a journey in Dynamics 365 Customer Insights - Journeys.
-ms.date: 06/06/2025
+ms.date: 11/07/2025
 ms.topic: article
 author: colinbirkett
 ms.author: colinbirkett
@@ -141,7 +141,7 @@ The audience split tile allows you to divide your audience to give a unique set 
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note.md)]
 
-You can create activities for customers at specific instances in a journey, such as creating and assigning a phone call or task activity. See available activities below. 
+You can create activities for customers at specific instances in a journey, such as creating and assigning a phone call or task activity. See available activities below.
 
 ##### Phone call (preview)
 
@@ -167,9 +167,17 @@ To learn more about triggering a custom event, see [Trigger an action outside of
 
 ##### Create an opportunity (preview)
 
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note.md)]
+
 You can create and assign an opportunity to sales.
 
 ##### Create an lead (preview)
+
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note.md)]
 
 You can create and assign an opportunity to sales.
 
