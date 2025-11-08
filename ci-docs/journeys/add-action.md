@@ -21,9 +21,9 @@ To get to the Add an action dashboard, go to Customer Insights - Journeys > **Jo
 
 Within real-time journeys, you can launch various actions. Some of these actions include sending messages, channel optimization, condition actions, audience splitting, and more.
 
-:::image type="content" source="media/voice-conversation-tile.png" alt-text="An overview of all possible actions in a journey." lightbox="media/journeys-actions.png":::
+:::image type="content" source="media/action-types-small.png" alt-text="An overview of all possible actions in a journey." lightbox="media/action-types.png":::
 
-The main actions are grouped under [messages](#messages), [AI-powered conversations](#ai-powered-conversations), [AI-powered actions](#ai-powered-actions), [conditions](#conditions), [activities (preview)](#activities-preview), and [connectors](#connectors). You can see all available actions under each section below.
+The main actions are grouped under [messages](#messages), [AI-powered conversations](#ai-powered-conversations), [AI-powered actions](#ai-powered-actions), [conditions](#conditions), [activities](#activities-preview), and [connectors](#connectors). You can see all available actions under each section below.
 
 ### Messages
 
