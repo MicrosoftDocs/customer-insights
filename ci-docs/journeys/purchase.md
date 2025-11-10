@@ -1,7 +1,7 @@
 ---
 title: Purchase Dynamics 365 Customer Insights
 description: Learn how to purchase Dynamics 365 Customer Insights, including licensing options and installation steps.
-ms.date: 09/09/2025
+ms.date: 11/10/2025
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -44,6 +44,8 @@ If you need the application to run in a specific data center region, be sure to 
 > - Dynamics 365 Customer Insights (standalone) entitles 100,000 customer profiles (renamed "unified people" after September 2023) and unlimited application installations. You can buy add-ons to unify accounts.
 >
 > The current Customer Insights license entitles 10,000 interacted people (formerly "active contacts"), 100,000 unified people (formerly "unified profiles"), unlimited installations of Customer Insights - Journeys and Customer Insights - Data. You no longer have to pay a higher unit price for add-ons to unify accounts. Learn more: [Dynamics 365 Customer Insights FAQs](ci-faq.md)
+> 
+> As of September 2025, the legacy Dynamics 365 Marketing standalone license is no longer available for renewals. 
 
 ### Step 1: Buy the base license
 

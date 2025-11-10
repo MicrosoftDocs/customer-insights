@@ -1,7 +1,7 @@
 ---
 title: Copy or restore environments
 description: How to copy a production Dynamics 365 Customer Insights environment to a sandbox environment for experiments and testing.
-ms.date: 09/09/2025
+ms.date: 11/10/2025
 ms.topic: how-to
 author: alfergus
 ms.author: colinbirkett
@@ -52,11 +52,9 @@ The _target environment_ is the environment you're copying _to_. As with the sou
 
 To prepare your target environment, do the following _before_ starting the copy:
 
-1. If the Customer Insights - Journeys environment had outbound marketing and was [integrated with a Power Apps portal](portal-optional.md), reset the portal as described in [Reset a portal](/powerapps/maker/portals/admin/reset-portal). This is important because it frees your portal license to be used elsewhere.
-1. After the reset, the portal will still be shown as "configured" in the Power Platform admin center, but you'll now be able to select it when you use the installation management area to set up a new, copied, or restored environment.
-1. **[Optional]** To free up your DNS zones, remove all DNS records that were created during [domain authentication](mkt-settings-authenticate-domains.md). If you don't remove DNS records during this step, there will be no way to determine which records were used after the environment is copied.
+- **[Optional]** To free up your DNS zones, remove all DNS records that were created during [domain authentication](mkt-settings-authenticate-domains.md). If you don't remove DNS records during this step, there will be no way to determine which records were used after the environment is copied.
 > [!WARNING]
-> Do not remove DNS records for domains that are used in other orgs.
+> Don't remove DNS records for domains that are used in other orgs.
 
 ### Step 3: Copy the environment
 
@@ -126,9 +124,6 @@ You can easily restore any on-demand or automatic system backup to any available
 
 > [!WARNING]
 > This procedure will completely erase the target environment. If Customer Insights - Journeys is installed on the target environment, then it will be uninstalled (which will release the license) and all data (including files and interaction records) will be deleted. Even if you back up the target environment first, the backup won't include interaction data, so you need to preserve these separately. For outbound marketing data and more information about how to backup interaction data to blob storage, see [Create custom analytics with Power BI](custom-analytics.md). For real-time journeys, use the [Dataverse connector to Fabric](fabric-integration.md) to export and store your interaction data.
-
-> [!IMPORTANT]
-> Your copied environment requires its own Customer Insights - Journeys license. If the target environment already has Customer Insights - Journeys installed, the copy automatically takes over that license (you don't have to do anything). If the target environment doesn't have Customer Insights - Journeys installed, you should have an unused Customer Insights - Journeys license for your tenant before you start the copy or purchase one if you don't. If you don't have a Customer Insights - Journeys license available before copying, the copy ends in a *disconnected state*, which means that many key features won't work (relevant error messages are shown). In this case, you can purchase a new Customer Insights - Journeys license through the [Microsoft Admin Center](https://admin.microsoft.com) and [use the installation management experience](setup.md) to apply it to your new copy.
 
 To restore a backup onto a sandbox environment:
 
