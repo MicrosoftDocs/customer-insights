@@ -1,7 +1,7 @@
 ---
 title: Override field-level security attributes
 description: Learn how to override field-level security attributes in Dynamics 365 Customer Insights - Journeys.
-ms.date: 10/14/2025
+ms.date: 11/10/2025
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
@@ -29,7 +29,7 @@ Using [Dataverse table data](/power-apps/maker/data-platform/entity-overview) wi
 
 You can override the FLS limitation and use FLS-protected attributes in personalization, journey branching, or real-time segmentation using feature switches in the **Settings** > **Feature switches** area. However, before changing the feature switches, you must carefully consider security and privacy issues and obtain the appropriate approvals. Before overriding FLS:
 
-1. Identify all application and system users who need access to FLS-protected attributes and add them to the respective FLS profiles. To learn about the details of security roles, see [Manage user accounts, user licenses, and security roles](admin-users-licenses-roles.md). Next, add the service users mentioned in [Customer Insights - Journeys service users](admin-users-licenses-roles.md#form-and-field-level-security) to the appropriate FLS profiles.
+1. Identify all application and system users who need access to FLS-protected attributes and add them to the respective FLS profiles. To learn about the details of security roles, see [Manage user accounts, user licenses, and security roles](admin-users-licenses-roles.md). Next, add the service users mentioned in [Customer Insights - Journeys service users](admin-users-licenses-roles.md#customer-insights---journeys-service-users) to the appropriate FLS profiles.
     > [!IMPORTANT]
     > If you skip this step, FLS-protected fields are displayed as "null" during internal system evaluations, which can cause errors that are difficult to diagnose.
    1. Make sure that only FLS-enabled users can publish journeys. This step helps prevent unauthorized users from accidentally exposing sensitive information.
