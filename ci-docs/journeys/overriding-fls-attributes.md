@@ -1,7 +1,7 @@
 ---
 title: Override field-level security attributes
 description: Learn how to override field-level security attributes in Dynamics 365 Customer Insights - Journeys.
-ms.date: 10/14/2025
+ms.date: 11/10/2025
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
