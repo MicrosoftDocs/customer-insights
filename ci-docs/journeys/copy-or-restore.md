@@ -1,7 +1,7 @@
 ---
 title: Copy or restore environments
 description: How to copy a production Dynamics 365 Customer Insights environment to a sandbox environment for experiments and testing.
-ms.date: 09/09/2025
+ms.date: 11/10/2025
 ms.topic: how-to
 author: alfergus
 ms.author: colinbirkett
@@ -52,9 +52,9 @@ The _target environment_ is the environment you're copying _to_. As with the sou
 
 To prepare your target environment, do the following _before_ starting the copy:
 
-1. **[Optional]** To free up your DNS zones, remove all DNS records that were created during [domain authentication](mkt-settings-authenticate-domains.md). If you don't remove DNS records during this step, there will be no way to determine which records were used after the environment is copied.
+- **[Optional]** To free up your DNS zones, remove all DNS records that were created during [domain authentication](mkt-settings-authenticate-domains.md). If you don't remove DNS records during this step, there will be no way to determine which records were used after the environment is copied.
 > [!WARNING]
-> Do not remove DNS records for domains that are used in other orgs.
+> Don't remove DNS records for domains that are used in other orgs.
 
 ### Step 3: Copy the environment
 
