@@ -89,8 +89,6 @@ Dynamics 365 Customer Insights is a tenant-level application that charges for in
 
 - To add a user license through the Microsoft 365 admin center, go to [https://admin.microsoft.com/#/catalog](https://admin.microsoft.com/#/catalog) and search for "Dynamics 365 Customer Insights User License" under the Dynamics 365 category.
 
-You can choose to run your marketing pages, landing pages, and events website either on an external web server (such as your own CMS system) or on a Dynamics 365 Portal or Power Apps portal running on the same tenant as your Customer Insights environment. Dynamics 365 Portals and Power Apps portals are licensed separately from Customer Insights. For details about portal licensing, see the [Power Apps and Flow licensing FAQ](/power-platform/admin/powerapps-flow-licensing-faq#can-you-share-more-details-regarding-the-new-powerapps-portals-licensing). If you use an external website for your events website and marketing pages, then no portals license is needed. You choose which solution to use when you use the installation management area and can change your mind later by running it again. More information: [Integrate Customer Insights with a CMS system or Power Apps portals](portal-optional.md)
-
 For more information about Customer Insights licensing, see the [Administration and setup FAQ](setup-troubleshooting.yml#licensing). For complete licensing details, including specific quotas and other conditions, see the  [Microsoft Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/p/?linkid=866544).
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
