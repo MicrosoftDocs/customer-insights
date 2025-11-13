@@ -21,12 +21,11 @@ To enable event passes, go to **Settings** > **Feature switches**, and under **E
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note.md)]
 
-> [!IMPORTANT]
-> In the October 2025 release, payment gateway support is only in registration experiences built using the [events API](developer/using-rtm-events-api.md). In the November 2025 release, support for event passes is in real-time journeys registration forms.
-
 ## What are event passes?
 
-Passes let you control who can attend your event and its sessions, and help you manage capacity. Each pass type can:
+Passes let you control who can attend your event and its sessions, and help you manage capacity and generate revenue from your events. Passes will work with registrations through all avaiable publishing options for your event, no matter if your attendees registrer through a form, custom registration experience built via API or other. [Learn more] (/journeys/event-registration-experience.md)
+
+Each pass type can:
 - Apply to a specific event.
 - Include a name, pricing, description, and allocation limits.
 - Control who can attend specific sessions.
@@ -43,11 +42,21 @@ Go to the **Event record** > **Passes** tab. Select **+New Pass** to create a ne
 
 After you create the pass, open the pass record and assign eligible sessions (if needed). The pass and session relationship helps event planners and attendees learn which pass lets them join which session.
 
+## Add passes to a registration form
+
+If you are using Real-time marketing registration form to register attendees for your event, you will be able to see a new element in the form editor, called **passes**. To add the passes element to your existing form, navigate to your Event > Form tab > click to "Edit" the form. In the toolbox on the right hand side, you can see a section called "Events" and a new tile called "Passes". 
+
+:::image type="content" source="media/formwithpasses.png" alt-text="Screenshot of form editor and passes element." lightbox="media/publishing-web-application.png":::
+
+You can drag & drop the element anywhere in the form. Once added, you can edit the properties of the element. In the panel on the right hand side, you can change the order in which the passes are displayed, select which attribute should be shown to your attendees and change the display style for the element - you can choose from traditional dropdown or select card style for more modern look & feel.
+
+:::image type="content" source="media/passessettings.png" alt-text="Screenshot of passes element settings." lightbox="media/publishing-web-application.png":::
+
 ## Set up a payment gateway
 
-To let attendees pay for selected passes through an online gateway, your organization admin sets up the payment provider in **Settings** > **Event management** > **Payment providers**. This setup needs some developer help. For more information, see [Set up payment gateway integration](developer/payment-gateway-integration.md).
+To let attendees pay for selected passes through an online payment gateway, your organization admin sets up the payment provider in **Settings** > **Event management** > **Payment providers**. This setup needs some developer help. For more information, see [Set up payment gateway integration](developer/payment-gateway-integration.md).
 
-After your admin sets up the payment gateway, enable it in the **Passes** tab. Set the toggle to **Yes**, and select your payment provider. When attendees select a pass, they're redirected to your payment gateway to finish the purchase.
+After your admin sets up the payment gateway, enable it in the **Passes** tab of the Event. Set the toggle to **Yes**, and select your payment provider. When attendees select a pass, they're redirected to your payment gateway to finish the purchase.
 
 ## How payment processing works
 
