@@ -416,6 +416,8 @@
         href: event-from-event.md
     - name: Host a streamed event with Microsoft Teams
       items:
+      - name: Overview of available Teams meeting types 
+        href: teams-meeting-types.md
       - name: Set up a Teams webinar
         href: teams-webinar.md
       - name: Set up a Teams Town Hall
