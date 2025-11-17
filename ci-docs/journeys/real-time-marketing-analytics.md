@@ -94,11 +94,7 @@ You can export up to 10,000 interaction data records and up to 100 conditional c
 
 :::image type="content" source="media/analytics-delivery-and-interaction-details.png" alt-text="Screenshot of delivery and interaction details." lightbox="media/analytics-delivery-and-interaction-details.png":::
 
-### Conversational voice (preview)
-
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note.md)]
+### Conversational voice
 
 Voice calls are dependent on Contact Center making the call and sending the outcomes back to Customer Insights - Journeys. Voice conversations show the following insights:
 - **Sent** This shows you how many voice conversation requests have been sent from Customer Insight - Journeys to Contact Center.
