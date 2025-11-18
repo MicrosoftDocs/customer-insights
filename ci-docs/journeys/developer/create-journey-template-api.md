@@ -53,6 +53,7 @@ The **Create Journey From Template** API lets you create customer journeys from 
 | `msdynmkt_journeyendtime` | DateTime | The end time for the journey. If specified, it must be after the start time. If no time zone is specified, the UTC time zone is used. |
 | `msdynmkt_createmode` | String | Creation mode: "Draft" (default) or "Publish." |
 | `msdynmkt_owningbusinessunitid` | GUID | The business unit that owns the created journey. For more information, see [Business unit support in real-time journeys](../real-time-marketing-business-units.md) |
+| `msdynmkt_mergesourcejourney` | Entity | Dataverse journey entity whose populated attributes are merged into the newly created journey entity after the journey JSON is prepared. See [Merge source journey](#merge-source-journey). |
 
 ## Response properties
 
@@ -87,7 +88,7 @@ Content-Type: application/json
 }
 ```
 
-### Advanced journey creation with modifications
+### Advanced journey creation with modifications and passing journey fields
 
 ```http
 POST [Organization URI]/api/data/v9.2/msdynmkt_CreateJourneyFromTemplate
@@ -103,6 +104,7 @@ Content-Type: application/json
         \"$.trigger.exclusionSegments\":\"['009b7a68-9a59-4ac7-8f85-2bf0f21dfd84','08c46b79-b1b5-4b91-b909-3048d82a0c2f']\",
         \"$.trigger.parameters.condition.rightOperand.value\":\"{\\\"logicalName\\\":\\\"msevtmgt_event\\\",\\\"id\\\":\\\"d13019d9-8554-4ba8-bda9-fb52734dff93\\\"}\"
         }",
+    "msdynmkt_mergesourcejourney":{"@odata.type":"Microsoft.Dynamics.CRM.msdynmkt_journey","cr15c_integer_column":15,"cr15c_string_column":"Test value"}
     "msdynmkt_journeystarttime": "2025-09-15T09:00:00Z",
     "msdynmkt_journeyendtime": "2025-12-31T23:59:59+02:00",
     "msdynmkt_createmode": "Draft",
@@ -136,12 +138,28 @@ The `msdynmkt_jsonpathmodifications` parameter is a serialized key value collect
 }
 ```
 
+## Merge source journey
+
+The `msdynmkt_mergesourcejourney` parameter allows you to provide a Dataverse `msdynmkt_journey` entity whose attribute values will be copied into the new journey record. This is useful for setting custom fields or other entity attributes without exposing them as individual API parameters.
+
+### How it works
+
+1. **Entity merging**: After the journey JSON is finalized and before the journey is persisted to Dataverse, the system copies attributes from your merge source entity to the newly created journey entity.
+3. **Parameter precedence**: Request parameters (such as `msdynmkt_journeyname`, `msdynmkt_journeystarttime`, `msdynmkt_journeyendtime`, and `msdynmkt_owningbusinessunitid`) always override values from the merge source entity.
+4. **JSON definition**: The merge source journey does **not** modify the journey JSON definition. It only sets column values on the journey entity record.
+
+### Supported attributes
+
+The merge source journey can include any valid attribute from the `msdynmkt_journey` entity, such as:
+- Standard fields: `msdynmkt_frequencycaptype`
+- Custom fields: Any custom attributes you've added to the journey entity
+
 ## Create modes
 
 ### Draft mode (default)
 - The journey is created in a draft state.
 - You can edit and change the journey before activation.
-- You need to publish the journey manually through the user interface or a separate API call (`msdynmkt_PublishJourneyV2`).
+- You need to publish the journey manually through the user interface or a separate API call (msdynmkt_PublishJourneyV2).
 - Some validation errors are ignored (for example, the message template for email, SMS, or push doesn't need to be in published state).
 
 ### Publish mode
@@ -319,11 +337,17 @@ public void CreateJourneyFromTemplate(IOrganizationService service)
 
     var serializerJsonPaths = System.Text.Json.JsonSerializer.Serialize(jsonPathModifications);
     
+    var entity = new Entity("msdynmkt_journey");
+    entity.Attributes.Add("cr15c_integer_column", 10);
+    entity.Attributes.Add("cr15c_string_column", "Test value");
+    entity.Attributes.Add("cr15c_date_column", DateTime.UtcNow.AddDays(2));
+
     request["msdynmkt_journeytemplateid"] = new Guid("12345678-1234-1234-1234-123456789012");
     request["msdynmkt_journeyname"] = "API Created Journey";
     request["msdynmkt_jsonpathmodifications"] = serializerJsonPaths;
     request["msdynmkt_journeystarttime"] = DateTime.UtcNow.AddDays(1);
     request["msdynmkt_createmode"] = "Draft";
+    request["msdynmkt_mergesourcejourney"] = entity;
     
     try
     {
