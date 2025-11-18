@@ -1,7 +1,7 @@
 ---
 title: Personalize messages, make journey decisions based on web interactions
 description: Learn how to personalize messages and make journey decisions based on web interactions in Dynamics 365 Customer Insights - Journeys.
-ms.date: 07/23/2025
+ms.date: 11/18/2025
 ms.topic: how-to
 author: alfergus
 ms.author: colinbirkett
@@ -18,8 +18,9 @@ ms.custom:
 # Personalize messages, make journey decisions based on web interactions
 
 > [!NOTE]
-> - This feature applies to known contacts or leads, such as those who have visited a webpage through a tracking link in a Customer Insights - Journeys email or submitted a Customer Insights - Journeys form on a website. Therefore any anonymous web interactions such as visits, clicks, and anonymous web form traffic aren't supported and won't be surfaced in the out-of-the-box analytics. 
+> - This feature applies to known contacts or leads, such as those who have visited a webpage through a tracking link in a Customer Insights - Journeys email or submitted a Customer Insights - Journeys form on a website. Any anonymous web interactions, such as visits, clicks, and anonymous web form traffic, aren't supported and aren't surfaced in the out-of-the-box analytics. 
 > - To enable web tracking in Customer Insights - Journeys forms, enable the **Web Tracking** setting in **Forms** > **Form settings** > **General**.
+> - If multiple people use the same web browser, web tracking records their interactions as one person.
 
 In Customer Insights - Journeys, you can track and leverage your customers’ online behavior to deliver personalized experiences across digital channels. For example, you can boost conversions and customer loyalty by sending tailored offers after customers visit your website and show interest in a product or service. By tracking additional data about customers' online journeys, you can gain valuable insights into your customers' preferences and needs and easily measure your campaign’s effectiveness.
 
@@ -58,6 +59,14 @@ For **Web Tracking** to work, make sure the following conditions are met:
 1. Make sure the customer's first visit to your website comes from selecting a Customer Insights – Journeys link, like an email link that directs the customer to your website.
 1. Enable link tracking for your URL.
 1. Make sure the customer (for example, contact) has **Allow Tracking** enabled. Learn more about how to manage consent for tracking: [Consent to track user behavior](real-time-marketing-email-text-consent.md#consent-to-track-user-behavior).
+
+Continue to the next section if you have Content Security Policy (CSP) enabled for your website.
+
+## Conditions required for web tracking functionality if you use CSP
+
+[Content Security Policy (CSP)](https://content-security-policy.com/) is an extra layer of security that helps detect and mitigate some types of web attacks, such as data theft, site defacement, or malware distribution. CSP provides a set of policy directives that help control the resources that a site page is allowed to load. Each directive defines the restrictions for a specific type of resource.
+
+When CSP is enabled for your website, you have to whitelist the following domains: `script-src`, `connect-src`, and `frame-ancestors: https://*.mkt.dynamics.com/ https://*.azureedge.net`. If you don't whitelist these domains, scripts to load Customer Insights - Journeys forms are prevented, and forms aren't loaded.
 
 ## How does web tracking work
 
