@@ -35,4 +35,9 @@ When you view the insights, you see all duplicated email addresses in the **bloc
 > [!NOTE]
 > When an email is blocked due to duplication, the customer proceeds to the next step in the journey. If you want customers to exit a journey when duplication is detected, you can use the journey exit by trigger option. For the trigger, choose "Email blocked" and for the **Reason**, select *contains* the keyword "Duplicate." To learn more, see [Exit when a trigger occurs](real-time-marketing-segment-based-journey.md#other-journey-configurations).
 
+> [!IMPORTANT]
+> Email deduplication works on the email level per journey. So, email duplication will not be detected if you are:
+> 1. Sending the same email across multiple journeys. For each journey, the email will be sent once.
+> 2. Sending the same email in different tiles in the journey. E.g, A/B testing, attribute branching, etc. Each email is considered unique email even if you are sending the same email.
+
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
