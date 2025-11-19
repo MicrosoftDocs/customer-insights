@@ -1,7 +1,7 @@
 ---
 title: Use the Create Journey From Template API
 description: The Create Journey From Template API in Dynamics 365 Customer Insights - Journeys helps you create, customize, and validate journeys programmatically. Learn how to get started.
-ms.date: 10/21/2025
+ms.date: 11/19/2025
 ms.topic: how-to
 author: tovyhnal
 ms.author: alfergus
@@ -140,19 +140,19 @@ The `msdynmkt_jsonpathmodifications` parameter is a serialized key value collect
 
 ## Merge source journey
 
-The `msdynmkt_mergesourcejourney` parameter allows you to provide a Dataverse `msdynmkt_journey` entity whose attribute values will be copied into the new journey record. This is useful for setting custom fields or other entity attributes without exposing them as individual API parameters.
+The `msdynmkt_mergesourcejourney` parameter allows you to provide a Dataverse `msdynmkt_journey` entity from which attribute values will be copied into the new journey record. This is useful for setting custom fields or other entity attributes without exposing them as individual API parameters.
 
 ### How it works
 
-1. **Entity merging**: After the journey JSON is finalized and before the journey is persisted to Dataverse, the system copies attributes from your merge source entity to the newly created journey entity.
+1. **Entity merging**: After the journey JSON is finalized and before the journey is persisted to Dataverse, the system copies attributes from the merge source entity to the newly created journey entity.
 3. **Parameter precedence**: Request parameters (such as `msdynmkt_journeyname`, `msdynmkt_journeystarttime`, `msdynmkt_journeyendtime`, and `msdynmkt_owningbusinessunitid`) always override values from the merge source entity.
 4. **JSON definition**: The merge source journey does **not** modify the journey JSON definition. It only sets column values on the journey entity record.
 
 ### Supported attributes
 
 The merge source journey can include any valid attribute from the `msdynmkt_journey` entity, such as:
-- Standard fields: `msdynmkt_frequencycaptype`
-- Custom fields: Any custom attributes you've added to the journey entity
+- **Standard fields**: `msdynmkt_frequencycaptype`.
+- **Custom fields**: Any custom attributes you've added to the journey entity.
 
 ## Create modes
 
