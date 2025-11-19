@@ -53,7 +53,7 @@ The **Create Journey From Template** API lets you create customer journeys from 
 | `msdynmkt_journeyendtime` | DateTime | The end time for the journey. If specified, it must be after the start time. If no time zone is specified, the UTC time zone is used. |
 | `msdynmkt_createmode` | String | Creation mode: "Draft" (default) or "Publish." |
 | `msdynmkt_owningbusinessunitid` | GUID | The business unit that owns the created journey. For more information, see [Business unit support in real-time journeys](../real-time-marketing-business-units.md) |
-| `msdynmkt_mergesourcejourney` | Entity | Dataverse journey entity whose populated attributes are merged into the newly created journey entity after the journey JSON is prepared. See [Merge source journey](#merge-source-journey). |
+| `msdynmkt_mergesourcejourney` | Entity | Dataverse journey entity from which populated attributes are merged into the newly created journey entity after the journey JSON is prepared. See [Merge source journey](#merge-source-journey). |
 
 ## Response properties
 
