@@ -124,6 +124,5 @@ Here are some additional resources for this topic:
 - [Lakehouse end-to-end scenario: overview and architecture](/fabric/data-engineering/tutorial-lakehouse-introduction)
 - [Implement medallion lakehouse architecture in Microsoft Fabric](/fabric/onelake/onelake-medallion-lakehouse-architecture)
 - [Organize a Fabric lakehouse using medallion architecture design](/training/modules/describe-medallion-architecture/)
-- [Leveraging CI-J interaction data without Fabric](https://community.dynamics.com/blogs/post/?postid=75a63967-f115-f011-998a-7c1e525b5e9d)
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
