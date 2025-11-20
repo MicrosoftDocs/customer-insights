@@ -105,7 +105,7 @@ To set up quiet times overnight, create a separate evening quiet time and mornin
 - One time from midnight to 8:00 AM
 
 > [!NOTE]
-> You can set up quiet times for a maximum of three consecutive days, as otherwise it may cause the message queue to back up excessively, and messages aren't delivered. Quiet times only apply to content sent from journeys.
+> You can set up quiet times for a maximum of twentyone consecutive days, as otherwise it may cause the message queue to back up excessively, and messages aren't delivered. Quiet times only apply to content sent from journeys.
 
 ### Set up quiet dates
 
