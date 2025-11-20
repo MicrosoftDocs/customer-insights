@@ -26,7 +26,7 @@ If you don't configure a message template editor, Dynamics 365 Customer Insights
 
 ## Create a custom entity
 
-First, [create a custom entity](/dynamics365/customerengagement/on-premises/customize/create-entities) that includes all the [message parts defined in your channel](real-time-marketing-custom-channel-message-parts.md). Use the same names but prefix the publisher; for example, **cr65f_text** for the message part with `msdyn_name` attribute "text." This entity doesn't store anything. It's only used as metadata to define your message contract.
+First, [create a custom entity](/dynamics365/customerengagement/on-premises/customize/create-entities) that includes all the [message parts defined in your channel](real-time-marketing-custom-channel-message-parts.md). Use the same names but prefix the publisher; for example, **cr65f_text** for the message part with `msdyn_name` attribute "text." This entity doesn't store anything. It's only used as metadata to define your message contract. Each attribute should use "text" CRM type, and it's input/output format should align with an associated message part type.
 
 The entity must also include the **placeholders** attribute that's used for personalization in Customer Insights - Journeys. The **placeholders** attribute should also have the publisher prefix. For example:
 
