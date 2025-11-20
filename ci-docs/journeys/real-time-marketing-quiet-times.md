@@ -1,7 +1,7 @@
 ---
 title: Set up quiet times to prevent messages from being sent during unwanted hours
 description: Learn how to set up quiet times to avoid sending messages during unwanted times.
-ms.date: 08/28/2025
+ms.date: 11/20/2025
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -105,7 +105,7 @@ To set up quiet times overnight, create a separate evening quiet time and mornin
 - One time from midnight to 8:00 AM
 
 > [!NOTE]
-> You can set up quiet times for a maximum of twentyone consecutive days, as otherwise it may cause the message queue to back up excessively, and messages aren't delivered. Quiet times only apply to content sent from journeys.
+> You can set up quiet times for a maximum of 21 consecutive days, as otherwise it may cause the message queue to back up excessively, and messages aren't delivered. Quiet times only apply to content sent from journeys.
 
 ### Set up quiet dates
 
