@@ -39,6 +39,9 @@ Primary ID attribute name: **msdyn_channelmessagepartid**
   - **192350003 media**: The message part is a file ID of the msdyncrm_file entity.
   - **192350004 image**: The message part is an image ID of the msdyncrm_file entity.
   - **192350005 record**: The message part is a record ID of an external entity.
+  - **192350006 number**: The message part is a number wrapped in a string
+  - **192350007 boolean**: The message part is using “false” or “true” value
+  - **192350008 options**: The message part allows to select an option from predefined options array. Array of options is set under msdyn_options attribute via JSON array of objects containing "label" and "value" fields. Example: [{ "label": "Option 1", "value": 1 }, { "label": "Option 2", "value": 2 }, {"label": "Option 3", "value": 3}]
 - **msdyn_isrequired**: bit - Indicates whether the part is required.
 - **msdyn_maxlength**: int - Max length of the part.
 - **msdyn_order**: int - (Optional) Defines the position of the message part field in the message editor. The larger the number, the higher the position.
