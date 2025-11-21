@@ -14,6 +14,11 @@ search.audienceType:
 # Troubleshooting push notifications setup
 
 This article covers possible problems with push notifications setup in Customer Insights - Journeys and provides some troubleshooting solutions.
+## General
+### Why I am receiving multiple push notifications?
+This could happen due to one of these following reasons:
+1. You are sending push notifications from multiple journeys to same the audience member (e.g., Contact)
+2. You have multiple audience members (e.g., Contact) with the same device token
 
 ## Device registration problems
 
