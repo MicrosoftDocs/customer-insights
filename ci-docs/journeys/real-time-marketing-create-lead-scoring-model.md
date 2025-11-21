@@ -84,3 +84,7 @@ Customer Insights - Journeys scoring models empower you to decide whether parent
 ## Publish a scoring model and start calculating scores
 
 Once your model is ready, select **Publish** to start calculating scores. You'll still be able to view the conditions but you won’t be able to modify any of them. Depending on the volume of leads and complexity of the model, the amount of time to calculate scores varies.
+> [!IMPORTANT]
+> If you [merge duplicate records](https://learn.microsoft.com/en-us/dynamics365/customerengagement/on-premises/basics/merge-duplicate-records-accounts-contacts-leads?view=op-9-1) be aware that the scoring models will not score the master record unless you do one of the following actions:
+> 1. Manually delete the score of the merged leads (non-master records).
+> 2. Republish your scoring models
