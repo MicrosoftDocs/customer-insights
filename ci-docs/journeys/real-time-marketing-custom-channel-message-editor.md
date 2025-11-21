@@ -1,7 +1,7 @@
 ---
 title: Define the message editor interface (optional)
 description: Learn how to define the message editor interface when you create custom channels in Dynamics 365 Customer Insights - Journeys.
-ms.date: 10/13/2025
+ms.date: 11/21/2025
 ms.custom:
   - bap-template
 ms.topic: how-to
@@ -18,7 +18,7 @@ search.audienceType:
 Applicable channels: Custom
 
 > [!IMPORTANT]
-> Custom channels include a built-in message editor designed to handle a wide range of scenarios without requiring you to create a custom editor interface. In most cases, this default editor will meet your needs. Implementing a custom editor is only necessary for very specific requirements, so consider this step only if you're certain it's essential for your solution.
+> Custom channels include a built-in message editor designed to handle a wide range of scenarios without requiring you to create a custom editor interface. In most cases, this default editor should meet your needs. Implementing a custom editor is only necessary for specific requirements, so consider this step only if you're certain it's essential for your solution.
 
 With the unlimited variety of custom channels you can create, you may need to provide different message template editors. You can define how a message template editor should look and what attributes it contains to match the needs of a specific channel.
 
@@ -26,7 +26,7 @@ If you don't configure a message template editor, Dynamics 365 Customer Insights
 
 ## Create a custom entity
 
-First, [create a custom entity](/dynamics365/customerengagement/on-premises/customize/create-entities) that includes all the [message parts defined in your channel](real-time-marketing-custom-channel-message-parts.md). Use the same names but prefix the publisher; for example, **cr65f_text** for the message part with `msdyn_name` attribute "text." This entity doesn't store anything. It's only used as metadata to define your message contract.
+First, [create a custom entity](/dynamics365/customerengagement/on-premises/customize/create-entities) that includes all the [message parts defined in your channel](real-time-marketing-custom-channel-message-parts.md). Use the same names, but prefix the publisher. For example, **cr65f_text** for the message part with the `msdyn_name` attribute "text." This entity doesn't store anything. It's only used as metadata to define your message contract. Each attribute should use the "text" CRM type, and the input/output format should align with an associated message part type.
 
 The entity must also include the **placeholders** attribute that's used for personalization in Customer Insights - Journeys. The **placeholders** attribute should also have the publisher prefix. For example:
 
