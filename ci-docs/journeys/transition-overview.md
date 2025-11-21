@@ -20,7 +20,7 @@ ms.custom:
 
 Dynamics 365 Customer Insights – Journeys includes two modules: outbound marketing and real-time journeys. Released in August 2021, real-time journeys offers advanced enterprise capabilities and is the default offering to new customers since August 2023.
 
-In August 2024, Microsoft announced that outbound marketing would be removed after June 30, 2025. To avoid business continuity issues, all customers still using outbound marketing must transition to real-time journeys as we're [taking steps](transition-faqs.md#what-will-happen-after-june-30-2025-will-outbound-marketing-stop-working) to reduce usage of outbound marketing, and eventually remove it.  Review the [real-time journeys transition FAQs](transition-faqs.md), which covers common topics including what to do if you're unable to complete the transition in time.
+In August 2024, Microsoft announced that outbound marketing would be removed after June 30, 2025. To avoid business continuity issues, all customers still using outbound marketing must transition to real-time journeys as we're [taking steps](transition-faqs.md#what-will-happen-after-june-30-2025-will-outbound-marketing-stop-working-updated-november-21-2025) to reduce usage of outbound marketing, and eventually remove it.  Review the [real-time journeys transition FAQs](transition-faqs.md), which covers common topics including what to do if you're unable to complete the transition in time.
 
 ## Guidance for trials
 
@@ -43,7 +43,7 @@ Existing customers still using outbound marketing must transition to real-time j
 
 ### What changes will I see in outbound marketing environments?
 
-We'll gradually remove outbound marketing from individual environments as outbound campaigns and events end in those environments. Users will see various in-product banners and message dialogs during different phases as described here: [What will happen after June 30, 2025? Will outbound marketing stop working?](transition-faqs.md#what-will-happen-after-june-30-2025-will-outbound-marketing-stop-working).
+We'll gradually remove outbound marketing from individual environments as outbound campaigns and events end in those environments. Users will see various in-product banners and message dialogs during different phases as described here: [What will happen after June 30, 2025? Will outbound marketing stop working?](transition-faqs.md#what-will-happen-after-june-30-2025-will-outbound-marketing-stop-working-updated-november-21-2025).
 
 Here are some recommended actions for existing customers based on their needs:
 
@@ -96,6 +96,6 @@ Once you've reviewed the above notes and confirmed your eligibility, fill out [t
 | August 2024   | Announced that outbound marketing is being [removed after June 30, 2025](real-time-marketing-overview.md). In-product banner announcing outbound marketing removal added. Admin email and message in the message center. |
 | March 2025   | Email and message center notification (MC1025068) to admins about product changes to support outbound marketing removal.          |
 | June 2025 | Users creating new outbound marketing journeys, segments, or forms get a message dialog asking them to create these assets in real-time journeys instead of outbound marketing. |
-| July 2025 | Email and message center notification (MC1119263) to admins about start of the [phased removal process](transition-faqs.md#what-will-happen-after-june-30-2025-will-outbound-marketing-stop-working). |
+| July 2025 | Email and message center notification (MC1119263) to admins about start of the [phased removal process](transition-faqs.md#what-will-happen-after-june-30-2025-will-outbound-marketing-stop-working-updated-november-21-2025). |
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
