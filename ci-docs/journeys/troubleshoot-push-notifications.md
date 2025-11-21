@@ -62,7 +62,7 @@ It's likely that the "Firebase In-App Messaging API" service isn't enabled. Navi
 
 Customer Insights sends push notifications using a data payload format. This is required to make changes in the mobile application code to receive the push notification payload and render it as a popup. For more instructions, see [Receiving push notifications on mobile devices](developer-notifications.md).
 
-For more information about data payload formats in Firebase, see [FCM message types](https://firebase.google.com/docs/cloud-messaging/concept-options#notifications_and_data_messages).
+For more information about data payload formats in Firebase, see [Firebase Cloud Messaging message types](https://firebase.google.com/docs/cloud-messaging/customize-messages/set-message-type).
 
 ### Sending failure includes unclear error code or message
 

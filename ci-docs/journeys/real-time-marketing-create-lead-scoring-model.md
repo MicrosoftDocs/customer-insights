@@ -65,7 +65,6 @@ As mentioned above, you can also build more complex queries that reference other
 
 Scores help identify the best customers, however, not everyone in your organization will easily understand what a good or poor score is. To solve this, you can assign a grade. To do this, select the second option on the vertical bar on the right of the window and add a new grade. You can add multiple grades, but for each grade you must name the grade (example: Hot or Cold), define the operator (such as less than, more than, or between), and define the score range that applies to that grade (example: 0 to 12 points). Once you publish your model, leads are scored but also assigned a grade. As a reminder, grades aren't mandatory and you can publish the model without defining any grades.
 
-
 ## Review scoring model settings
 
 The third option in the vertical bar on the right of the window allows you to access the model settings. Here, you can visualize the entities getting scored, modify the conditions initially defined in the entry card, and view the Business Unit the model is scoring (in case it applies). If you're working within a Business Unit, then the model will score only leads from that Business Unit. You'll also be able to decide if you want to leverage parent contact interactions or just lead interactions. More information on this in the next section.
@@ -76,6 +75,7 @@ The third option in the vertical bar on the right of the window allows you to ac
 > If you've been using outbound marketing and want to start using Customer Insights - Journeys scoring models, remember that your interactions are likely stored at contact level. Thus, when you start using Customer Insights - Journeys lead scoring you'll need to consider parent contact interactions.
 
 Customer Insights - Journeys allows you to market directly to leads without the need for a parent contact. Outbound marketing, on the other hand, markets only to contacts and requires that all leads have a parent contact. Customer Insights - Journeys to leads offers extra flexibility but also changes how interactions are stored.
+
 1. **Outbound marketing**: All interactions are stored at the contact level.
 1. **Customer Insights - Journeys**: Interactions can be stored at the lead level if you market to leads (example: a lead journey), or at the contact level if you market to contacts.
 
@@ -86,7 +86,7 @@ Customer Insights - Journeys scoring models empower you to decide whether parent
 Once your model is ready, select **Publish** to start calculating scores. You'll still be able to view the conditions but you won’t be able to modify any of them. Depending on the volume of leads and complexity of the model, the amount of time to calculate scores varies.
 
 > [!IMPORTANT]
-> If you [merge duplicate records](/dynamics365/customerengagement/on-premises/basics/merge-duplicate-records-accounts-contacts-leads?view=op-9-1), the scoring models don't score the primary record unless you complete one of the following actions:
+> If you [merge duplicate records](/dynamics365/customerengagement/on-premises/basics/merge-duplicate-records-accounts-contacts-leads), the scoring models don't score the primary record unless you complete one of the following actions:
 > 1. Manually delete the score of the merged leads (non-primary records).
 > 1. Republish your scoring models.
 
