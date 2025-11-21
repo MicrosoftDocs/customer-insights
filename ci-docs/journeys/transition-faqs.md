@@ -44,17 +44,23 @@ We first announced the removal of outbound marketing in August 2023 and later se
 
 ## What will happen after June 30, 2025? Will outbound marketing stop working?
 
+(Updated Nov 18, 2025)
 We're implementing a phased approach for removing outbound marketing to minimize disruption to customers’ businesses. When we detect that there are no active outbound marketing campaigns or events in an environment (“org”), we hide outbound marketing and then remove it after a few weeks. With this approach, the outbound marketing removal date is different for each environment, as it depends on when the outbound marketing campaigns or events complete. Outbound marketing is no longer supported. For customers with approved extensions, limited support is provided for critical issues only (for example, a customer journey stopped sending emails, segments stopped refreshing, no submissions for events or forms, and so on).
 
-To reduce and eventually end outbound marketing usage, we're applying a phased approach (the changes below only apply to outbound marketing; real-time marketing is unaffected):
+To reduce and eventually remove outbound marketing, we're applying a phased approach (the changes below only apply to outbound marketing; real-time marketing is unaffected):
 
-- **Phase 1 - Existing campaigns and event work; new ones can be created**: Users get messages about outbound marketing removal whenever they attempt to create a new outbound marketing email, journey, segment, form, or marketing page. They can dismiss the dialog and continue creating outbound marketing campaigns and events.  
-- **Phase 2 - Existing campaigns and events work; new ones *can't* be created**: Users are no longer able to dismiss the dialog and therefore can't create new outbound marketing campaigns or events. We have not yet set a date for this phase; we'll announce it soon.
-- **Phase 3 - Existing campaigns and events end, outbound marketing is hidden**: When existing campaigns and events are complete, we'll automatically hide outbound marketing from the user interface. After a few weeks, we'll remove outbound marketing.
+- **Phase 1 - Existing campaigns and event work; new ones can be created**: Users get messages about outbound marketing removal whenever they attempt to create a new outbound marketing email, journey, segment, form, or marketing page. They can dismiss the dialog and continue creating outbound marketing campaigns and events. This phase is now complete.
+- **Phase 2 - Existing campaigns and events work; new ones *can't* be created**: Users are no longer able to dismiss the dialog and therefore can't create new outbound marketing campaigns or events. This phase is now complete.
+- **Phase 3 - Existing campaigns and events end, outbound marketing is hidden**: When existing campaigns and events are complete, we'll automatically hide outbound marketing from the user interface. After a few weeks, we'll remove outbound marketing. We are in this phase now.
+- **Phase 4 - Existing campaigns and events will be stopped, outbound marketing is removed**: We will take a phased approach starting with environments with no or low usage of outbound. Note that in this phase (starts in Jan 2026) we will stop journeys and form submission without any further notice with the aim to remove outbound by Mar 31, 2026.
 
-We're in Phase 2 (as of July 17, 2025), starting with outbound marketing environments with no or low usage. If you have an approved extension, your environments won't be moved to Phase 2 until after the approved date. 
+We have completed Phase 1 and 2 and have started phase 3. This phased approach may be revised anytime in the future. Given that we are at the final stages of outbound removal, you should assume that outbound marketing may be removed any day after Jan 1, 2026 (unless you have an approved extension in which case your environment will not move to phase 2 and beyond until after your approved extension date).   
 
-This phased approach may be revised in the future (for example, we may set a common date to remove outbound marketing from all environments, even if they have active outbound marketing campaigns or events). We'll continue to communicate through the admin center and in-product messaging to keep you informed. 
+
+## What happens to events in outbound that are scheduled to start after outbound removal date?
+
+Starting in December 2025, creation of new events with a start date on or after April 1, 2026 will not be allowed (even if you currently have an approved extension). You must create such events in real-time. If you have already created such events in outbound that start on or after April 1, 2026, you must plan to recreate them in real-time well before April 1, 2026. As explained in [transition guidance for events](https://learn.microsoft.com/dynamics365/customer-insights/journeys/transition-walkthrough-events#migration-path), Journeys or emails for such events should already be in real-time (no reason for them to remain in outbound). We already have support for [moving emails](https://learn.microsoft.com/dynamics365/customer-insights/journeys/transition-walkthrough-email). For journeys, you will need to start a new journey in real-time (they can work with both outbound and real-time events) and stop the journey in outbound.
+
 
 ## I have an approved extension for outbound marketing. What can I expect?
 
