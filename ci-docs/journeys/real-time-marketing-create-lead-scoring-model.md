@@ -1,7 +1,7 @@
 ---
 title: Create scoring models for Customer Insights - Journeys
 description: Learn how to create scoring models in Dynamics 365 Customer Insights - Journeys.
-ms.date: 06/26/2024
+ms.date: 11/21/2025
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
@@ -40,11 +40,11 @@ To create a new scoring model:
 > ![Screenshot of creating a new scoring model](media/real-time-marketing-create-new-scoring-model.png "Screenshot of creating a new scoring model")
 
 > [!NOTE]
-> The scoring model will initially target only lead entities. In the future, the feature will expand to support other entities as well. Stay tuned for updates and enhancements to the scoring model capabilities.
+> The scoring model targets only lead entities. In the future, the feature will expand to support other entities. Stay tuned for updates and enhancements to the scoring model capabilities.
 
 ## Build conditions for your scoring model
 
-After selecting the **Create** button, you'll be directed to the model builder experience. On the right-side of the builder interface, you'll see the data to start building your conditions. Data includes **Attributes** and **Interactions**. Attributes refer to demographic information. These attributes come from the entity being scored or related tables to the entity, such as contacts or accounts. The next section of this article goes deeper into related tables. Interactions represent engagements or activities.
+After selecting the **Create** button, you are directed to the model builder experience. On the right-side of the builder interface, you see the data to start building your conditions. Data includes **Attributes** and **Interactions**. Attributes refer to demographic information. These attributes come from the entity being scored or related tables to the entity, such as contacts or accounts. The next section of this article goes deeper into related tables. Interactions represent engagements or activities.
 
 To create a new condition, start by selecting attributes or interactions on the right. For example, to create a new condition for customers reviewing emails, go to **Interactions** and select **Emails opened**. The condition is added to the center of the screen. Now, you can define how many points a customer would get by fulfilling this condition (points can be negative or positive). For this condition, you can also define the volume of emails (example: at least five emails) and timeframe (example: in the last 28 days) by selecting **Edit** in the condition. You further refine the condition by leveraging interaction metadata, such as the specific email asset. Once your condition is ready, you can continue adding new groups by selecting the **Create new group** option.
 
@@ -65,7 +65,6 @@ As mentioned above, you can also build more complex queries that reference other
 
 Scores help identify the best customers, however, not everyone in your organization will easily understand what a good or poor score is. To solve this, you can assign a grade. To do this, select the second option on the vertical bar on the right of the window and add a new grade. You can add multiple grades, but for each grade you must name the grade (example: Hot or Cold), define the operator (such as less than, more than, or between), and define the score range that applies to that grade (example: 0 to 12 points). Once you publish your model, leads are scored but also assigned a grade. As a reminder, grades aren't mandatory and you can publish the model without defining any grades.
 
-
 ## Review scoring model settings
 
 The third option in the vertical bar on the right of the window allows you to access the model settings. Here, you can visualize the entities getting scored, modify the conditions initially defined in the entry card, and view the Business Unit the model is scoring (in case it applies). If you're working within a Business Unit, then the model will score only leads from that Business Unit. You'll also be able to decide if you want to leverage parent contact interactions or just lead interactions. More information on this in the next section.
@@ -76,6 +75,7 @@ The third option in the vertical bar on the right of the window allows you to ac
 > If you've been using outbound marketing and want to start using Customer Insights - Journeys scoring models, remember that your interactions are likely stored at contact level. Thus, when you start using Customer Insights - Journeys lead scoring you'll need to consider parent contact interactions.
 
 Customer Insights - Journeys allows you to market directly to leads without the need for a parent contact. Outbound marketing, on the other hand, markets only to contacts and requires that all leads have a parent contact. Customer Insights - Journeys to leads offers extra flexibility but also changes how interactions are stored.
+
 1. **Outbound marketing**: All interactions are stored at the contact level.
 1. **Customer Insights - Journeys**: Interactions can be stored at the lead level if you market to leads (example: a lead journey), or at the contact level if you market to contacts.
 
@@ -84,3 +84,10 @@ Customer Insights - Journeys scoring models empower you to decide whether parent
 ## Publish a scoring model and start calculating scores
 
 Once your model is ready, select **Publish** to start calculating scores. You'll still be able to view the conditions but you won’t be able to modify any of them. Depending on the volume of leads and complexity of the model, the amount of time to calculate scores varies.
+
+> [!IMPORTANT]
+> If you [merge duplicate records](/dynamics365/customerengagement/on-premises/basics/merge-duplicate-records-accounts-contacts-leads), the scoring models don't score the primary record unless you complete one of the following actions:
+> 1. Manually delete the score of the merged leads (non-primary records).
+> 1. Republish your scoring models.
+
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

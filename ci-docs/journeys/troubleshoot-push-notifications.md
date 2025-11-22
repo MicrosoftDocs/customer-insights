@@ -1,7 +1,7 @@
 ---
 title: Troubleshoot push notifications setup
 description: Learn how to troubleshoot push notifications setup in Dynamics 365 Customer Insights - Journeys.
-ms.date: 06/18/2025
+ms.date: 11/21/2025
 ms.topic: article
 author: colinbirkett
 ms.author: colinbirkett
@@ -15,11 +15,20 @@ search.audienceType:
 
 This article covers possible problems with push notifications setup in Customer Insights - Journeys and provides some troubleshooting solutions.
 
+## General
+
+### Why am I receiving multiple push notifications?
+
+This is due to one of the following reasons:
+
+1. You're sending push notifications from multiple journeys to same the audience member (for example, the same contact).
+1. You have multiple audience members (contacts) with the same device token.
+
 ## Device registration problems
 
 The following are possible device registration problems.
 
-### I'm calling the device registration public API, it returns '202', but nothing happens
+### I'm calling the device registration public API and it returns "202," but nothing happens
 
 The device registration public API returns in an asynchronous manner, which is a reason why the response status code is 202 (Accepted) and not 200 (OK). The request starts the registration process, but this doesn't necessarily mean that the operation was successful. There's a separate [device registration status API](developer-push-device-registration.md#device-registration-status) you need to call to see results of the registration. Use the `RegistrationRequestId` that's provided in response to the device registration API execution to request the registration status. If there's no `RegistrationRequestId` returned within the response, then you need to add `x-ms-track-registration` set to `true` within the request headers.
 
@@ -53,7 +62,7 @@ It's likely that the "Firebase In-App Messaging API" service isn't enabled. Navi
 
 Customer Insights sends push notifications using a data payload format. This is required to make changes in the mobile application code to receive the push notification payload and render it as a popup. For more instructions, see [Receiving push notifications on mobile devices](developer-notifications.md).
 
-For more information about data payload formats in Firebase, see [FCM message types](https://firebase.google.com/docs/cloud-messaging/concept-options#notifications_and_data_messages).
+For more information about data payload formats in Firebase, see [Firebase Cloud Messaging message types](https://firebase.google.com/docs/cloud-messaging/customize-messages/set-message-type).
 
 ### Sending failure includes unclear error code or message
 

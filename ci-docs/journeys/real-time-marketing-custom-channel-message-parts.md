@@ -1,7 +1,7 @@
 ---
 title: Define the message parts
 description: Learn how to define the message parts of a custom channel in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/22/2023
+ms.date: 11/21/2025
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
@@ -39,6 +39,9 @@ Primary ID attribute name: **msdyn_channelmessagepartid**
   - **192350003 media**: The message part is a file ID of the msdyncrm_file entity.
   - **192350004 image**: The message part is an image ID of the msdyncrm_file entity.
   - **192350005 record**: The message part is a record ID of an external entity.
+  - **192350006 number**: The message part is a number wrapped in a string.
+  - **192350007 boolean**: The message part uses a “true” or “false” value.
+  - **192350008 options**: The message part allows you to select an option from a predefined options array. The options array is set under the `msdyn_options` attribute through a JSON array of objects containing "label" and "value" fields. Example: `[{ "label": "Option 1", "value": 1 }, { "label": "Option 2", "value": 2 }, {"label": "Option 3", "value": 3}]`.
 - **msdyn_isrequired**: bit - Indicates whether the part is required.
 - **msdyn_maxlength**: int - Max length of the part.
 - **msdyn_order**: int - (Optional) Defines the position of the message part field in the message editor. The larger the number, the higher the position.
