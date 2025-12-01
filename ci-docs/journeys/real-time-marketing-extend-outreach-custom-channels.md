@@ -52,7 +52,7 @@ The following table describes the implementation requirements for SMS and custom
 The following samples include unpacked solutions for Dataverse and plugins projects. To pack and import the solutions, first build the plugin project. The project copies the assembly to the solution project. Then, pack the solution using the [Solution Packager tool](/power-platform/alm/solution-packager-tool).
 
 - [SampleSmsChannel.zip](https://download.microsoft.com/download/c/c/6/cc6fed59-f95a-4577-aed5-49daa62b1f66/SampleSmsChannel-2022.12.zip)
-- [SampleCustomChannel.zip](https://download.microsoft.com/download/44685e3a-8b09-4caa-be78-12bc6867c8d1/SampleCustomChannel.zip) (Updated December 1, 2025)
+- [SampleCustomChannel.zip](https://download.microsoft.com/download/44685e3a-8b09-4caa-be78-12bc6867c8d1/SampleCustomChannel.zip)
 
 ### How to build the plugins project and pack the solution
 
