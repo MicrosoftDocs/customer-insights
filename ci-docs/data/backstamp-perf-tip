@@ -1,0 +1,2 @@
+> [!TIP]
+> We recommend [configuring filtering attributes](/powerapps-docs/powerapps-docs/developer/data-platform/best-practices/business-logic/include-filtering-attributes-plugin-registration.md) on your plugins and limiting them to only the field names relevant to your business logic. Avoid including fields such as msdynci_lookupfield_customerprofile if they aren’t needed. This helps prevent unintended plugin executions during backstamping - which can be especially important on the initial backstamping run when many contacts may be processed.
