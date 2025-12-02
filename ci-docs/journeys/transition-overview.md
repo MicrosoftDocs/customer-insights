@@ -1,7 +1,7 @@
 ---
 title: Transition overview
 description: Transition from outbound marketing to real-time journeys in Dynamics 365 Customer Insights. Follow our guide to avoid interruptions.
-ms.date: 08/13/2025
+ms.date: 12/01/2025
 ms.update-cycle: 180-days
 ms.topic: concept-article
 author: alfergus
@@ -49,14 +49,15 @@ Here are some recommended actions for existing customers based on their needs:
 
 | Situation                                                                                                          | Action                                                                                                                                                                                                                                                       |
 |--------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| An existing environment that previously had outbound marketing but doesn't have outbound anymore | This is expected unless you have an approved extension to continue using outbound beyond its end of life. See [What will happen after June 30, 2025? Will outbound marketing stop working?](transition-faqs.md#what-will-happen-after-june-30-2025-will-outbound-marketing-stop-working-updated-november-21-2025) Extensions cannot be requested anymore. Requests for adding/enabling outbound for such environments are no longer approved. If you have an approved extension and outbound was still hidden, reply to the approval email you received previously from the obmextension@microsoft.com mailbox and report the issue. Do not create support ticket. |
-| I provisioned a new org (or copied, migrated, or restored an existing org) and don't see outbound marketing.                                             | This is expected. Outbound marketing isn't included in new environments (also called “orgs”). If you have an approved extension to continue using outbound beyond its end of life, you can add outbound marketing using the **Enable** link on the **Settings** > **Versions** page. See the next section if you have the approval but don't see this link or it doesn't work. If you do not have an approved extension, you can not add outbound.  |
+| I have an existing environment that previously had outbound marketing, but doesn't anymore. | This is expected unless you have an approved extension to continue using outbound marketing beyond its end of life. See [What will happen after June 30, 2025? Will outbound marketing stop working?](transition-faqs.md#what-will-happen-after-june-30-2025-will-outbound-marketing-stop-working-updated-november-21-2025) You can no longer request extensions. Requests to add or enable outbound marketing for such environments are no longer approved. If you have an approved extension and outbound marketing is still hidden, reply to the approval email you received previously from the obmextension@microsoft.com mailbox and report the issue. Don't create a support ticket. |
+| I provisioned a new org (or copied, migrated, or restored an existing org) and don't see outbound marketing. | This is expected. Outbound marketing isn't included in new environments (also called “orgs”). If you have an approved extension to continue using outbound marketing beyond its end of life, you can add outbound marketing using the **Enable** link on the **Settings** > **Versions** page. See the next section if you have the approval, but don't see this link or it doesn't work. If you don't have an approved extension, you can't add outbound marketing.  |
 | I'm doing tenant migration as part of the transition.  | Request outbound marketing to be added (see the next section). The tenant-to-tenant migration plan should allow five to seven business days for this request to be processed. This allows time for potential troubleshooting delays because of unforeseen issues and time zone differences. |
-| Any other situation. | Requests to add outbound marketing generally aren't approved. Do not create support ticket.|
+| Any other situation. | Requests to add outbound marketing generally aren't approved. Don't create a support ticket.|
 
 ### If the "Enable" link isn't available or doesn't work
 
-(This section only applies if you have an approved extension to use outbound beyond its end of life)
+> [!NOTE]
+> This section only applies if you have an approved extension to use outbound marketing beyond its end of life.
 
 The enable link appears only if there's at least one other environment in the same tenant that has outbound marketing and you have an admin role. If both conditions are true and you still don't see the enable link, create a request to add outbound marketing (see the next section) and add this note in the form: "Don't see enable link. Confirming that I have an admin role and there's at least one other environment with the org ID `<provide ID>` in this tenant with outbound marketing."
  
@@ -100,6 +101,6 @@ Once you've reviewed the above notes and confirmed your eligibility, fill out [t
 | March 2025   | Email and message center notification (MC1025068) to admins about product changes to support outbound marketing removal.          |
 | June 2025 | Users creating new outbound marketing journeys, segments, or forms get a message dialog asking them to create these assets in real-time journeys instead of outbound marketing. |
 | July 2025 | Email and message center notification (MC1119263) to admins about start of the [phased removal process](transition-faqs.md#what-will-happen-after-june-30-2025-will-outbound-marketing-stop-working-updated-november-21-2025). |
-| Nov 2025 | Email and message center notification (MC1189547) to admins about start of the outbound removal phase [phased removal process](transition-faqs.md#what-will-happen-after-june-30-2025-will-outbound-marketing-stop-working-updated-november-21-2025). |
+| November 2025 | Email and message center notification (MC1189547) to admins about the start of the outbound marketing removal [phased removal process](transition-faqs.md#what-will-happen-after-june-30-2025-will-outbound-marketing-stop-working-updated-november-21-2025). |
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
