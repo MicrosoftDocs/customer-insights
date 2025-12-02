@@ -61,7 +61,7 @@ The delivery report custom API calls the **msdyn_D365ChannelsNotification** API 
   - **Status**: string – The delivery report status. The possible values are:
     - **Delivered** – The accepted message was successfully delivered to the target.
     - **NotDelivered** – The accepted message wasn't successfully delivered to the target.
-  - **Details**: object – Delivery details. This is useful for returning the failure *reason* and *details* to the delivery report. It is visible in the **Delivery and interaction details** on the analytics page.
+  - **Details**: object – Delivery details. This is useful for returning the failure *reason* and *details* to the delivery report. It's visible in the **Delivery and interaction details** on the analytics page.
     - **Reason**: string – The reason for the failure of your plugin.
     - **Message**: string - Details of the failure.
 
