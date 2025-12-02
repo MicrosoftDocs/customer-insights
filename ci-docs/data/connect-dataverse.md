@@ -59,9 +59,8 @@ To connect to a different Dataverse environment, [create a new data source](#con
 
 1. Select **Save** to apply your changes and return to the **Data sources** page.
 
-   [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
-
-Loading data can take time. After a successful refresh, review the ingested data from the [**Data** > **Tables**](tables.md) page.
+> [!TIP] 
+> We recommend scheduling regular refreshes of your Dataverse data source (for example, daily or every other day). Immediately trigger downstream tasks after ingestion completes - scheduled refreshes are often the most convenient way to do this. This ensures that downstream processes (such as match and merge) always operate on the most up-to-date data.
 
 ## Next steps
 
