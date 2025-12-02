@@ -28,8 +28,8 @@ Before examining scenarios that use submitted values, review the applicable form
 |--|--------|--|
 | **Field value** | - Submitted value for text fields and text areas.<br>- **Numerical index** for option set, multiselect, and two-options fields.<br>- **Record ID** for lookup fields.<br> **Note:** For two-option fields, a `False` or `0` value is represented by an empty value. | `1` (for option set field)|
 | **Field localized value**| - Submitted value for text fields and text areas.<br>- **Human-readable value** for option set, multiselect, two-options, and lookup fields. | `Blue` (for option set) |
-|**Display name**          | - **Mapped fields**: Display name of the lead or contact attribute.<br>- **Unmapped fields**: Saved field name.<br>If an unmapped field isn't saved, this property contains the field label. | `First name` |
-| **Field localized name**  | - **Mapped fields**: Display name of the lead or contact attribute.<br>- **Unmapped fields**: Saved field name.<br>If an unmapped field isn't saved, this property contains the field label. | `First name` |
+|**Display name**          | - **Mapped fields**: Display name of the lead or contact attribute.<br>- **Unmapped fields**: Logical name defined in the form editor. | `First name` |
+| **Field localized name**  | - **Mapped fields**: Display name of the lead or contact attribute.<br>- **Unmapped fields**: Logical name defined in the form editor. | `First name` |
 | **Logical name**          | - **Mapped fields**: Logical name of the lead or contact attribute.<br>- **Unmapped fields**: Logical name defined in the form editor.                   | `firstname` |
 
 ## Branch a journey based on submitted values

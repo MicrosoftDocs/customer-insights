@@ -25,6 +25,8 @@ Trials of Customer Insights - Journeys are subject to the following limits and r
 - You can only install, use, and configure the Customer Insights - Journeys trial with exactly one (1) Dynamics 365 trial instance, which is supplied with the Customer Insights - Journeys trial.
 - A maximum of 1,000 website visits can be logged per month using website tracking tags.
 - Trials are only available in those countries/regions where Customer Insights - Journeys is commercially available. Additional availability restrictions may apply.
+- A maximum of 5 unique users can access a standalone form page per day.
+- A maximum of 100 total form views is allowed per day.
 
 The above limits are applicable to all users of the Customer Insights - Journeys trial and are subject to change. Final limits may be materially different for production versions of Customer Insights - Journeys.
 
