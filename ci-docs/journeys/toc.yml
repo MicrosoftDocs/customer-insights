@@ -420,6 +420,10 @@
         href: teams-meeting-types.md
       - name: Set up a Teams webinar
         href: teams-webinar.md
+      - name: Set up a Teams meeting v2
+        href: teams-meetingv2.md
+      - name: Set up a Teams webinar v2
+        href: teams-webinarv2.md
       - name: Set up a Teams Town Hall
         href: teams-town-hall.md
       - name: Optimize your event check-in flow
