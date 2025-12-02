@@ -2,7 +2,7 @@
 title: Use submitted values from forms to branch journeys and personalize emails
 ms.reviewer: alfergus
 description: Learn how to branch customer journeys and personalize emails using submitted form values in Customer Insights – Journeys. Create tailored experiences effortlessly.
-ms.date: 10/23/2025
+ms.date: 12/02/2025
 ms.update-cycle: 180-days
 ms.topic: how-to
 author: petrjantac
@@ -28,9 +28,9 @@ Before examining scenarios that use submitted values, review the applicable form
 |--|--------|--|
 | **Field value** | - Submitted value for text fields and text areas.<br>- **Numerical index** for option set, multiselect, and two-options fields.<br>- **Record ID** for lookup fields.<br> **Note:** For two-option fields, a `False` or `0` value is represented by an empty value. | `1` (for option set field)|
 | **Field localized value**| - Submitted value for text fields and text areas.<br>- **Human-readable value** for option set, multiselect, two-options, and lookup fields. | `Blue` (for option set) |
-|**Display name**          | - **Mapped fields**: Display name of the lead or contact attribute.<br>- **Unmapped fields**: Saved field name.<br>If an unmapped field isn't saved, this property contains the field label. | `First name` |
-| **Field localized name**  | - **Mapped fields**: Display name of the lead or contact attribute.<br>- **Unmapped fields**: Saved field name.<br>If an unmapped field isn't saved, this property contains the field label. | `First name` |
-| **Logical name**          | - **Mapped fields**: Logical name of the lead or contact attribute.<br>- **Unmapped fields**: Logical name defined in the form editor.                   | `firstname` |
+| **Display name**         | - **Mapped fields**: Display name of the lead or contact attribute.<br>- **Unmapped fields**: Logical name is defined in the form editor. | `First name` |
+| **Field localized name** | - **Mapped fields**: Display name of the lead or contact attribute.<br>- **Unmapped fields**: Logical name is defined in the form editor. | `First name` |
+| **Logical name**         | - **Mapped fields**: Logical name of the lead or contact attribute.<br>- **Unmapped fields**: Logical name is defined in the form editor.                   | `firstname` |
 
 ## Branch a journey based on submitted values
 
