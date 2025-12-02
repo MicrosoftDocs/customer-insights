@@ -1,7 +1,7 @@
 ---
 title: Define custom APIs
 description: Learn how to define custom APIs for custom channels in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/22/2023
+ms.date: 12/02/2025
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
@@ -61,9 +61,9 @@ The delivery report custom API calls the **msdyn_D365ChannelsNotification** API 
   - **Status**: string – The delivery report status. The possible values are:
     - **Delivered** – The accepted message was successfully delivered to the target.
     - **NotDelivered** – The accepted message wasn't successfully delivered to the target.
-  - **Details**: Object – delivery details. This is useful to return the failure **reason** and **details** to the delivery report. It will be visible in the **Delivery and interaction details** in the analytics page.
-    - **Reason**: String – Use it to add the reason of the failure of your plugin
-    - **Message**: String - Use it to add the failure details
+  - **Details**: object – Delivery details. This is useful for returning the failure *reason* and *details* to the delivery report. It is visible in the **Delivery and interaction details** on the analytics page.
+    - **Reason**: string – The reason for the failure of your plugin.
+    - **Message**: string - Details of the failure.
 
 ## Inbound custom API
 
