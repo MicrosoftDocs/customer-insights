@@ -50,7 +50,7 @@ A user who has access to an event record and permissions to edit the record in C
 In scenarios where event record changes aren’t propagated to Teams, the Customer Insights - Journeys app displays a warning to any user who isn’t the Teams meeting owner. If the Teams meeting owner opens the event record, they see a **Sync with Teams** button in the ribbon. Selecting the **Sync with Teams** button syncs the changes made to the event by any non-owner users.
 
 > [!NOTE]
-> The ability to add co-organizers through Customer Insights - Journeys will be introduced in the December 2025 Customer Insights - Journeys release.
+> The ability to add co-organizers through Customer Insights - Journeys will be introduced in the February 2026 Customer Insights - Journeys release.
 
 ## Publishing a Town Hall
 
