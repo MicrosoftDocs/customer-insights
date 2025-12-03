@@ -142,3 +142,12 @@ Customer Insights - Journeys triggers give you a simple way to remove a journey 
 > ![Screenshot of the Event Registration Canceled trigger selected in Customer Insights - Journeys.](media/event-engagement-create-canceled.png "Screenshot of the Event Registration Canceled trigger selected in Customer Insights - Journeys.")
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
+
+## Bonus Tip 2 - New Attributes for Event Timing in UTC
+When building journeys for event registration in Real-Time Marketing, especially for journeys that are used for events that span multiple time zones, accurate timing is critical. Journeys for the multi-event scenario typically operate in UTC, which can lead to discrepancies if local time zone values are used in triggers. To address this, two new attributes have been introduced:
+
+- Event start date UTC
+- Event end date UTC
+
+If you use the “**Wait until a time specified by a trigger**” condition in your journey, these attributes ensure the correct UTC-based values are applied for event start and end dates. This prevents timing errors and guarantees that your automation aligns with the actual event schedule, regardless of participant time zones.
+
