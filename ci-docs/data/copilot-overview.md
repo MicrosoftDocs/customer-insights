@@ -18,4 +18,4 @@ ms.custom:
 
 [!INCLUDE[copilot-overview](./includes/copilot-overview.md)]
 
-[!INCLUDE[footer-include](data/includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]
