@@ -131,6 +131,8 @@
 
 - name: Copilot in Customer Insights - Data
   items:
+    - name: Overview
+      href: copilot-overview.md
     - name: Give consent to use Copilot in Customer Insights - Data
       href: copilot-global-consent.md
     - name: Dialog with data

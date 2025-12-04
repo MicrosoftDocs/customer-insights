@@ -19,7 +19,7 @@ ms.custom:
 
 ## Related information
 
-[How AI can Transform Your Marketing (video)](https://youtu.be/zk_QcHAb4cU)
+[How AI can Transform Your Marketing (video)](https://youtu.be/zk_QcHAb4cU)<br>
 [Create personalized content in seconds (video)](https://youtu.be/1Lgodu6A2ZM)
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
