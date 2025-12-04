@@ -39,8 +39,6 @@ To create a new scoring model:
 > [!div class="mx-imgBorder"]
 > ![Screenshot of creating a new scoring model](media/real-time-marketing-create-new-scoring-model.png "Screenshot of creating a new scoring model")
 
-> [!NOTE]
-> The scoring model targets only lead entities. In the future, the feature will expand to support other entities. Stay tuned for updates and enhancements to the scoring model capabilities.
 
 ## Build conditions for your scoring model
 
@@ -56,6 +54,7 @@ To create a new condition, start by selecting attributes or interactions on the 
 
 > [!NOTE]
 > You can only use Dynamics 365 standard interactions to create conditions.
+> Scoring models refresh each 2 hours.
 
 ## Create a demographic condition using related tables
 
