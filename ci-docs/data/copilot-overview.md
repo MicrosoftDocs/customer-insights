@@ -16,6 +16,6 @@ ms.custom:
 
 # Copilot features in Customer Insights - Data
 
-[!INCLUDE[copilot-overview](data/includes/copilot-overview.md)]
+[!INCLUDE[copilot-overview](./includes/copilot-overview.md)]
 
 [!INCLUDE[footer-include](data/includes/footer-banner.md)]

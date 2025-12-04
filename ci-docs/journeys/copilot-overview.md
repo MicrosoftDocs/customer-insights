@@ -15,7 +15,7 @@ ms.custom:
 
 # Copilot features in Customer Insights - Journeys
 
-[!INCLUDE[copilot-overview](journeys/includes/copilot-overview.md)]
+[!INCLUDE[copilot-overview](./includes/copilot-overview.md)]
 
 ## Related information
 
