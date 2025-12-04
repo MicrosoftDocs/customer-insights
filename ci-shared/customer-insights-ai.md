@@ -1,5 +1,3 @@
-## Customer Insights
-
 Copilot in Customer Insights helps you work faster and smarter by turning natural language into actionable insights. From creating journeys and segments to analyzing data quality and refining content, these AI-powered features simplify complex tasks so you can focus on delivering personalized experiences.
 
 ### Customer Insights - Data
