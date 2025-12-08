@@ -1,14 +1,14 @@
 ---
 title: FAQ for segment creation (preview)
 description: This FAQ provides information about the AI technology used in segment creation (preview). It provides key considerations and details about how AI is used, how it was tested and evaluated, and any specific limitations.
-ms.date: 10/23/2024
+ms.date: 12/08/2025
 ms.update-cycle: 180-days
 ms.custom: 
   - responsible-ai-faqs
 ms.topic: faq
 author: jimsonc
 ms.author: jimsonc
-ms.reviewer: m-hartmann
+ms.reviewer: alfergus
 ms.collection: bap-ai-copilot 
 ---
 

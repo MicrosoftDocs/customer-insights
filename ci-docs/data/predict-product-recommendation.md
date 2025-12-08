@@ -1,9 +1,9 @@
 ---
 title: "Predict product recommendations (preview)"
 description: "Predict the products a customer is likely to purchase or interact with."
-ms.date: 03/04/2025
+ms.date: 12/08/2025
 ms.update-cycle: 180-days
-ms.reviewer: mhart
+ms.reviewer: alfergus
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert

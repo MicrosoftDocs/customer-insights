@@ -1,9 +1,9 @@
 ---
 title: Create a segment based on a prediction model
 description: "Create segments based on the output table of a prediction model."
-ms.date: 04/29/2024
+ms.date: 12/08/2025
 ms.update-cycle: 180-days
-ms.reviewer: mhart
+ms.reviewer: alfergus
 ms.topic: how-to
 author: radsay01
 ms.author: rsayyaparaju 

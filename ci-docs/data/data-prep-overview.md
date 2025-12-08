@@ -1,7 +1,7 @@
 ---
 title: Data prep report overview (preview)
 description: Discover the overall quality of ingested and unified data and if it can generate predictions.
-ms.date: 12/05/2024
+ms.date: 12/08/2025
 ms.update-cycle: 180-days
 ms.reviewer: v-wendysmith
 ms.topic: overview

@@ -1,14 +1,14 @@
 ---
 title: FAQ for Data prep report (preview)
 description: This FAQ provides information about the AI technology used in the data prep report (preview). It provides key considerations and details about how AI is used, how it was tested and evaluated, and any specific limitations.
-ms.date: 11/12/2024
+ms.date: 12/08/2025
 ms.update-cycle: 180-days
 ms.custom: 
   - responsible-ai-faqs
 ms.topic: faq
 author: radsay01
 ms.author: rsayyaparaju
-ms.reviewer: m-hartmann
+ms.reviewer: alfergus
 ms.collection: bap-ai-copilot 
 ---
 

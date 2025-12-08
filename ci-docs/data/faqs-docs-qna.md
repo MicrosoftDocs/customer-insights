@@ -1,14 +1,14 @@
 ---
 title: FAQ for docs-based Q&A Copilot (preview)
 description: This FAQ provides information about the AI technology docs-based Q&A skill used in Customer Insights - Data, along with key considerations and details about how the capability is used, how it was tested and evaluated, and any specific limitations.
-ms.date: 10/22/2024
+ms.date: 12/08/2025
 ms.update-cycle: 180-days
 ms.custom:
   - responsible-ai-faqs
 ms.topic: faq
 author: jimsonc
 ms.author: jimsonc
-ms.reviewer: mhart
+ms.reviewer: alfergus
 ms.collection: bap-ai-copilot 
 ---
 
