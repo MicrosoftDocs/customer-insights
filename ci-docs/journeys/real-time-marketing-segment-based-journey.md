@@ -6,6 +6,7 @@ ms.update-cycle: 180-days
 ms.topic: how-to
 author: alfergus
 ms.author: colinbirkett
+ms.reviewer: alfergus
 ms.collection: bap-ai-copilot
 ms.custom:
   - ai-gen-docs-bap
