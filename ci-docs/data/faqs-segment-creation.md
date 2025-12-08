@@ -6,7 +6,7 @@ ms.update-cycle: 180-days
 ms.custom: 
   - responsible-ai-faqs
 ms.topic: faq
-author: sstabbert
+author: Scott-Stabbert
 ms.author: sstabbert
 ms.reviewer: alfergus
 ms.collection: bap-ai-copilot 
