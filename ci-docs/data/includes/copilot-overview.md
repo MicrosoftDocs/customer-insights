@@ -1,0 +1,7 @@
+Discover new ways to work with your data using Copilot in Customer Insights – Data. Ask questions in natural language to uncover insights with dialog with data, check your data quality and readiness through the data prep report, and monitor your environment’s health with the environment status summary. Get quick answers to capability questions right in the app, and create segments using everyday language. These features help you move faster from data to decisions.
+
+- Dialog with data. Ask questions in natural language to quickly generate insights about your customers. Learn more: [Have a dialog with data using Copilot](/dynamics365/customer-insights/data/dialog-with-data).
+- Data prep report. Understand the overall data quality and the readiness of your data to produce insights. Learn more: [Data prep report overview](/dynamics365/customer-insights/data/data-prep-overview).
+- Environment status summary. Quickly understand the status of your environment based on the business impact of what you’ve configured. Learn more: [Environment status summary](/dynamics365/customer-insights/data/system).
+- Answers to capability questions. Get answers to questions about Customer Insights - Data and its features. Learn more: [Get answers to questions about capabilities from Copilot](/dynamics365/customer-insights/data/help-pane-copilot).
+- Segment creation. Create segments using everyday words without detailed knowledge about the data schema. Learn more: [Create segments with Copilot](/dynamics365/customer-insights/data/segments-copilot).
