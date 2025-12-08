@@ -6,7 +6,7 @@ ms.update-cycle: 180-days
 ms.reviewer: alfergus
 ms.topic: how-to
 author: radsay01
-ms.author: rsayyaparaju 
+ms.author: sstabbert 
 ms.collection: bap-ai-copilot 
 ---
 

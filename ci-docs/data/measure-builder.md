@@ -4,7 +4,7 @@ description: "Build measures from scratch to analyze key metrics about your busi
 ms.date: 04/16/2025
 ms.topic: how-to
 author: JimsonChalissery
-ms.author: jimsonc
+ms.author: sstabbert
 ms.reviewer: v-wendysmith
 ms.custom:
   - bap-template

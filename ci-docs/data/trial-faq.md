@@ -2,7 +2,7 @@
 title: "Dynamics 365 Customer Insights trial FAQ"
 description: "Solutions to common questions related to Customer Insights trial setup and management. Learn how to resolve platform and app-specific issues."
 author: JimsonChalissery
-ms.author: jimsonc
+ms.author: sstabbert
 ms.date: 10/25/2024
 ms.topic: get-started
 ms.custom: template-trial-faq

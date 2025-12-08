@@ -6,8 +6,8 @@ ms.update-cycle: 180-days
 ms.custom: 
   - responsible-ai-faqs
 ms.topic: faq
-author: jimsonc
-ms.author: jimsonc
+author: sstabbert
+ms.author: sstabbert
 ms.reviewer: alfergus
 ms.collection: bap-ai-copilot 
 ---

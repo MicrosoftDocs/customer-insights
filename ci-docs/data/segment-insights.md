@@ -4,7 +4,7 @@ description: "Get insights on existing segments to see differences and commonali
 ms.date: 03/20/2023
 ms.topic: how-to
 author: JimsonChalissery
-ms.author: jimsonc
+ms.author: sstabbert
 ms.reviewer: mhart
 ms.custom:
   - bap-template

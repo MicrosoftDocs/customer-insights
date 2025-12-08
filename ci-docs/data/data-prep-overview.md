@@ -6,7 +6,7 @@ ms.update-cycle: 180-days
 ms.reviewer: v-wendysmith
 ms.topic: overview
 author: radsay01
-ms.author: rsayyaparaju 
+ms.author: sstabbert 
 ms.custom: bap-template
 ms.collection: bap-ai-copilot 
 ---

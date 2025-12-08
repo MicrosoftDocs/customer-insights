@@ -4,7 +4,7 @@ description: Understand limits and restrictions in the Customer Insights - Data 
 ms.date: 04/30/2024
 ms.topic: article
 author: JimsonChalissery
-ms.author: jimsonc
+ms.author: sstabbert
 ms.reviewer: mhart
 ---
 

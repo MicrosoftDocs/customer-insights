@@ -5,8 +5,8 @@ ms.date: 12/08/2025
 ms.update-cycle: 180-days
 ms.reviewer: v-wendysmith
 ms.topic: article
-author: joytaylor
-ms.author: joytaylor
+author: sstabbert
+ms.author: sstabbert
 ms.custom: bap-template
 ms.collection: bap-ai-copilot 
 ---

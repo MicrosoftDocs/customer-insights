@@ -4,8 +4,8 @@ description: "General information about real-time capabilities in Dynamics 365 C
 ms.date: 09/01/2023
 ms.reviewer: mhart
 ms.topic: article
-author: jimsonc
-ms.author: jimsonc
+author: sstabbert
+ms.author: sstabbert
 searchScope: 
   - ci-system-api-usage
   - customerInsights

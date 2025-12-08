@@ -7,7 +7,7 @@ ms.custom:
   - responsible-ai-faqs
 ms.topic: faq
 author: radsay01
-ms.author: rsayyaparaju
+ms.author: sstabbert
 ms.reviewer: alfergus
 ms.collection: bap-ai-copilot 
 ---

@@ -5,7 +5,7 @@ ms.date: 12/08/2025
 ms.update-cycle: 180-days
 ms.topic: faq
 author: radsay01
-ms.author: rsayyaparaju
+ms.author: sstabbert
 ms.reviewer: v-wendysmith
 ms.custom: bap-template
 ms.collection: bap-ai-copilot 

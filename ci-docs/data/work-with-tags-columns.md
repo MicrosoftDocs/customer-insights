@@ -4,7 +4,7 @@ description: "How to work with tags and columns to organize list views"
 ms.date: 05/03/2024
 ms.topic: overview
 author: JimsonChalissery
-ms.author: jimsonc
+ms.author: sstabbert
 ms.reviewer: mhart
 ms.custom: bap-template
 ---
