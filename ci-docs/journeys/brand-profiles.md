@@ -1,7 +1,7 @@
 ---
 title: Create consistent branding with brand profiles
 description: Discover how to create brand profiles in Customer Insights - Journeys. Manage multiple brands, set default senders, and define social links and themes.
-ms.date: 11/22/2024
+ms.date: 12/08/2025
 ms.update-cycle: 180-days
 ms.topic: article
 author: alfergus

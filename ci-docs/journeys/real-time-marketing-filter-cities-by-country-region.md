@@ -1,12 +1,11 @@
 ---
 title: Filter cities by country/region in Customer Insights - Journeys forms
 description: 'Customer Insights - Journeys forms: Filter city options by country/region for faster, more accurate submissions. Learn how to set up filtered lookups.'
-ms.date: 09/09/2025
+ms.date: 12/08/2025
 ms.update-cycle: 180-days
 ms.topic: how-to
 author: petrjantac
 ms.author: alfergus
-ms.collection: bap-ai-copilot
 ms.custom:
   - ai-gen-docs-bap
   - ai-gen-description

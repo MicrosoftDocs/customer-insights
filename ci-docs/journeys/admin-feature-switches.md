@@ -1,7 +1,7 @@
 ---
 title: Use feature switches to enable or disable optional and preview features
 description: Use feature switches to manage optional and preview features in Dynamics 365 Customer Insights - Journeys. Learn the steps to configure settings.
-ms.date: 06/04/2025
+ms.date: 12/08/2025
 ms.update-cycle: 180-days
 ms.topic: article
 author: alfergus

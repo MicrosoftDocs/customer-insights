@@ -1,7 +1,7 @@
 ---
 title: Copilot - Style your emails with AI-assisted themes (preview)
 description: Style your emails with AI-assisted themes in Dynamics 365. Learn how to use Copilot to customize email elements like fields, buttons, and text.
-ms.date: 06/12/2025
+ms.date: 12/08/2025
 ms.update-cycle: 180-days
 ms.topic: how-to
 author: alfergus
