@@ -61,6 +61,8 @@
       href: real-time-data-ingestion.md
     - name: Data prep report
       href: data-prep-overview.md
+    - name: Unable to complete operation
+      href: unable-complete-operation.md
 
 - name: Unification
   items:
