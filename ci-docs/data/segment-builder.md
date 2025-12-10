@@ -4,7 +4,7 @@ description: "Use segment builder to create complex segments of customers by gro
 ms.date: 08/28/2023
 ms.topic: how-to
 author: JimsonChalissery
-ms.author: jimsonc
+ms.author: sstabbert
 ms.reviewer: v-wendysmith
 ms.custom: bap-template
 ---

@@ -4,7 +4,7 @@ description: Learn how to personalize web experiences with the Customer Insights
 ms.date: 12/13/2024
 ms.topic: how-to
 author: JimsonChalissery
-ms.author: jimsonc
+ms.author: sstabbert
 ms.reviewer: mhart
 ms.custom: bap-template
 ---

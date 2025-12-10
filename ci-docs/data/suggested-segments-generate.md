@@ -2,7 +2,7 @@
 title: Generate and manage suggested segments based on measures (preview)
 description: Use AI to suggest segments based on measures or customer attributes 
 author: JimsonChalissery
-ms.author: jimsonc
+ms.author: sstabbert
 ms.reviewer: v-wendysmith
 ms.service: customer-insights
 ms.topic: how-to

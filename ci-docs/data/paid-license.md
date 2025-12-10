@@ -2,7 +2,7 @@
 title: Purchase a license of Dynamics 365 Customer Insights
 author: JimsonChalissery
 description: Purchase a license of Dynamics 365 Customer Insights, sign in, and get familiar with the app.
-ms.author: jimsonc
+ms.author: sstabbert
 ms.reviewer: mhart
 ms.date: 04/29/2024
 ms.topic: how-to

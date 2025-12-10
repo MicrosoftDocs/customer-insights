@@ -2,7 +2,7 @@
 title: Generate and manage suggested segments based on activity (preview)
 description: Generate suggested segments based on customer activity data 
 author: JimsonChalissery
-ms.author: jimsonc
+ms.author: sstabbert
 ms.reviewer: v-wendysmith
 ms.topic: how-to
 ms.date: 09/01/2023

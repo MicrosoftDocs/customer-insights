@@ -4,7 +4,7 @@ description: "How to create custom schedules for segments."
 ms.date: 03/20/2023
 ms.topic: how-to
 author: JimsonChalissery
-ms.author: jimsonc
+ms.author: sstabbert
 ms.reviewer: v-wendysmith
 ms.custom: bap-template
 ---

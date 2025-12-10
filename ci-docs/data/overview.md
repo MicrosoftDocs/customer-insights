@@ -2,7 +2,7 @@
 title: Product overview for Dynamics 365 Customer Insights - Data
 author: JimsonChalissery
 description: Get an overview for Dynamics 365 Customer Insights - Data and its main features.
-ms.author: jimsonc
+ms.author: sstabbert
 ms.reviewer: colinbirkett
 ms.date: 07/04/2025
 ms.topic: overview
