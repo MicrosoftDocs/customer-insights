@@ -1,7 +1,7 @@
 ---
 title: Create scoring models for Customer Insights - Journeys
 description: Learn how to create scoring models in Dynamics 365 Customer Insights - Journeys.
-ms.date: 11/21/2025
+ms.date: 12/10/2025
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
@@ -13,7 +13,7 @@ search.audienceType:
 
 # Create scoring models
 
-To maximize return on investment from marketing activities, it's essential to identify the best prospects at the right moment. With Customer Insights - Journeys, you can use a new but powerful lead scoring builder to define your scoring criteria and model more efficiently. Dynamics 365 Customer Insights - Journeys scores leads using demographic attributes and interactions. An entity who meets your target demographic profile and has interacted with your marketing materials (for example, by opening emails, registering for downloads, browsing your website, or attending an event) will get a high score, provided you've set up your scoring model correctly.  
+To maximize return on investment from marketing activities, it's essential to identify the best prospects at the right moment. With Customer Insights - Journeys, you can use a new but powerful lead scoring builder to define your scoring criteria and model more efficiently. Dynamics 365 Customer Insights - Journeys scores leads using demographic attributes and interactions. An entity that meets your target demographic profile and has interacted with your marketing materials (for example, by opening emails, registering for downloads, browsing your website, or attending an event) will get a high score, provided you've set up your scoring model correctly.  
 
 This article covers the experience of creating a scoring model.
 
@@ -53,8 +53,7 @@ To create a new condition, start by selecting attributes or interactions on the 
 > You can add up to 40 groups per scoring model.
 
 > [!NOTE]
-> You can only use Dynamics 365 standard interactions to create conditions.
-> Scoring models refresh each 2 hours.
+> You can only use Dynamics 365 standard interactions to create conditions. Scoring models refresh every two hours.
 
 ## Create a demographic condition using related tables
 
@@ -62,7 +61,7 @@ As mentioned above, you can also build more complex queries that reference other
 
 ## Grade your leads
 
-Scores help identify the best customers, however, not everyone in your organization will easily understand what a good or poor score is. To solve this, you can assign a grade. To do this, select the second option on the vertical bar on the right of the window and add a new grade. You can add multiple grades, but for each grade you must name the grade (example: Hot or Cold), define the operator (such as less than, more than, or between), and define the score range that applies to that grade (example: 0 to 12 points). Once you publish your model, leads are scored but also assigned a grade. As a reminder, grades aren't mandatory and you can publish the model without defining any grades.
+Scores help identify the best customers; however, not everyone in your organization will easily understand what a good or poor score is. To solve this, you can assign a grade. To do this, select the second option on the vertical bar on the right of the window and add a new grade. You can add multiple grades, but for each grade, you must name the grade (example: Hot or Cold), define the operator (such as less than, more than, or between), and define the score range that applies to that grade (example: 0 to 12 points). Once you publish your model, leads are scored but also assigned a grade. As a reminder, grades aren't mandatory, and you can publish the model without defining any grades.
 
 ## Review scoring model settings
 
@@ -73,7 +72,7 @@ The third option in the vertical bar on the right of the window allows you to ac
 > [!IMPORTANT]
 > If you've been using outbound marketing and want to start using Customer Insights - Journeys scoring models, remember that your interactions are likely stored at contact level. Thus, when you start using Customer Insights - Journeys lead scoring you'll need to consider parent contact interactions.
 
-Customer Insights - Journeys allows you to market directly to leads without the need for a parent contact. Outbound marketing, on the other hand, markets only to contacts and requires that all leads have a parent contact. Customer Insights - Journeys to leads offers extra flexibility but also changes how interactions are stored.
+Customer Insights - Journeys allows you to market directly to leads without the need for a parent contact. Outbound marketing, on the other hand, markets only to contacts and requires that all leads have a parent contact. Customer Insights - Journeys to leads offers extra flexibility, but also changes how interactions are stored.
 
 1. **Outbound marketing**: All interactions are stored at the contact level.
 1. **Customer Insights - Journeys**: Interactions can be stored at the lead level if you market to leads (example: a lead journey), or at the contact level if you market to contacts.
