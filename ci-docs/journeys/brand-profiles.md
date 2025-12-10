@@ -51,9 +51,6 @@ After you've added your links, select **Save**.
 
 Open the **Theme** tab in the brand profile and add the theme in accordance with your brand guidelines. You can specify any custom fonts in the theme section (the theme section in the email editor also contains these options). Once your theme is added, select **Save** and your theme will be automatically applied to all of the draft content that includes a brand profile.
 
-> [!NOTE]
-> To create a theme from scratch, you can also use Copilot. [Learn more](email-theme.md)
-
 > [!div class="mx-imgBorder"]
 > ![Add themes.](media/brand-profiles-themes.png "Add themes")
 
