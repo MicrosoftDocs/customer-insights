@@ -1,11 +1,12 @@
 ---
 title: Copilot - Create journeys using AI assistance (preview)
 description: Create marketing journeys using everyday language with Copilot. Enable the feature, provide feedback, and streamline your marketing efforts.
-ms.date: 11/04/2025
+ms.date: 12/08/2025
 ms.update-cycle: 180-days
 ms.topic: get-started
 author: alfergus
 ms.author: alfergus
+ms.reviewer: alfergus
 ms.collection: bap-ai-copilot
 ms.custom:
   - ai-gen-docs-bap

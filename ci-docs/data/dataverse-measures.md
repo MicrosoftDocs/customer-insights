@@ -4,7 +4,7 @@ description: Write one-dimensional measures to separate tables in Dataverse to u
 ms.date: 02/27/2024
 ms.topic: how-to
 author: JimsonChalissery
-ms.author: jimsonc
+ms.author: sstabbert
 ms.reviewer: mhart
 ms.custom: bap-template
 ---

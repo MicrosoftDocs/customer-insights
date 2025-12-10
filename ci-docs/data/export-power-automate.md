@@ -5,7 +5,7 @@ ms.date: 12/11/2024
 ms.reviewer: mhart
 ms.topic: how-to
 author: JimsonChalissery
-ms.author: jimsonc
+ms.author: sstabbert
 ---
 
 # Power Automate connector (preview)

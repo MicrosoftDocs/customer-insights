@@ -2,7 +2,7 @@
 title: "Create and manage measures"
 description: "Create and manage measures to help analyze and reflect the performance of your business."
 author: JimsonChalissery
-ms.author: jimsonc
+ms.author: sstabbert
 ms.topic: how-to
 ms.date: 05/01/2025
 ms.custom: bap-template

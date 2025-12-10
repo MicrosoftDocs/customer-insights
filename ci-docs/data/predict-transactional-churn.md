@@ -1,12 +1,12 @@
 ---
 title: Predict transaction churn
 description: "Predict whether a customer is at risk for no longer purchasing your products or services."
-ms.date: 04/29/2024
+ms.date: 12/08/2025
 ms.update-cycle: 180-days
-ms.reviewer: mhart
+ms.reviewer: alfergus
 ms.topic: how-to
 author: radsay01
-ms.author: rsayyaparaju 
+ms.author: sstabbert 
 ms.custom: bap-template
 ms.collection: bap-ai-copilot
 ---

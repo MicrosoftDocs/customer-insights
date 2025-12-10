@@ -1,7 +1,7 @@
 ---
 title: "View system configuration"
 description: "Learn about system settings in Dynamics 365 Customer Insights - Data."
-ms.date: 11/13/2024
+ms.date: 12/08/2025
 ms.update-cycle: 180-days
 ms.topic: how-to
 author: Scott-Stabbert

@@ -2,7 +2,7 @@
 title: "Suggested segments (preview)"
 description: "Let Dynamics 365 Customer Insights - Data help you find new and interesting segments based on customer attributes."
 author: JimsonChalissery
-ms.author: jimsonc
+ms.author: sstabbert
 ms.reviewer: v-wendysmith
 ms.service: customer-insights
 ms.date: 09/01/2023
