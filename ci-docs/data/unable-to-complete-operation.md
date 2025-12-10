@@ -5,7 +5,9 @@ author: Scott-Stabbert
 ms.author: sstabbert
 ms.reviewer: v-wendysmith
 ms.date: 12/08/2025
+ms.topic: how-to
 ---
+
 # Unable to complete the operation
 
 This article provides a resolution for an issue where Customer Insights - Data can't complete a one-off operation.
@@ -32,3 +34,5 @@ Refresh all data sources before retrying the operation. You can do this in two w
   1. Go to **Settings** > **System** and select the **Schedule** tab.
 
   1. Schedule automatic refreshes of all your ingested data sources. Learn more in [system refresh](schedule-refresh.md).
+
+[!INCLUDE [footer-include](includes/footer-banner.md)]
