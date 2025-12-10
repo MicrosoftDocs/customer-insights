@@ -4,7 +4,7 @@ description: "Learn how to integrate unified profiles and segments with Dynamics
 ms.date: 04/29/2024
 ms.topic: article
 author: JimsonChalissery
-ms.author: jimsonc
+ms.author: sstabbert
 ms.reviewer: mhart
 ---
 

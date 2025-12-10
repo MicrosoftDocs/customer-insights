@@ -2,7 +2,7 @@
 title: "Create and manage segments"
 description: "How to create and manage a group of customers called segments."
 author: JimsonChalissery
-ms.author: jimsonc
+ms.author: sstabbert
 ms.reviewer: v-wendysmith
 ms.topic: how-to
 ms.date: 05/01/2025

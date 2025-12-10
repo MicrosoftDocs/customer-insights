@@ -1,11 +1,12 @@
 ---
 title: Transition overview
 description: Transition from outbound marketing to real-time journeys in Dynamics 365 Customer Insights. Follow our guide to avoid interruptions.
-ms.date: 12/01/2025
+ms.date: 12/08/2025
 ms.update-cycle: 180-days
 ms.topic: concept-article
 author: alfergus
 ms.author: alfergus
+ms.reviewer: alfergus
 ms.collection: bap-ai-copilot
 ms.custom:
   - ai-gen-docs-bap

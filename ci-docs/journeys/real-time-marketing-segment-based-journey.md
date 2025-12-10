@@ -1,11 +1,12 @@
 ---
 title: Create a segment-based journey
 description: Create a segment-based journey in Dynamics 365 Customer Insights - Journeys. Learn how to send announcements and nurture campaigns to your most valuable customers.
-ms.date: 06/04/2025
+ms.date: 12/08/2025
 ms.update-cycle: 180-days
 ms.topic: how-to
 author: alfergus
 ms.author: colinbirkett
+ms.reviewer: alfergus
 ms.collection: bap-ai-copilot
 ms.custom:
   - ai-gen-docs-bap

@@ -4,7 +4,7 @@ description: "Create simple segments of customers to group them based on various
 ms.date: 03/20/2023
 ms.topic: how-to
 author: JimsonChalissery
-ms.author: jimsonc
+ms.author: sstabbert
 ms.reviewer: v-wendysmith
 ms.custom: bap-template
 ---

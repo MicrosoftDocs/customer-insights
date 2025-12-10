@@ -4,7 +4,7 @@ description: Find similar customer segments with artificial intelligence.
 ms.date: 09/01/2023
 ms.topic: how-to
 author: JimsonChalissery
-ms.author: jimsonc
+ms.author: sstabbert
 ms.reviewer: v-wendysmith
 ms.custom: sfi-image-nochange
 ---
