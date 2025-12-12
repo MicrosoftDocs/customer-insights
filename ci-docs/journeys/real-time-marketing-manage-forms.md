@@ -150,6 +150,7 @@ If you need to include purposes from different compliance profiles in one form, 
 A form can include multiple **purposes** and **topics**. For example, suppose a form has topic A and topic B. A user first subscribes to topic A. Later, the user submits the form again, selecting only topic B and leaving topic A unchecked. This action unintentionally creates an opt-out for topic A.
 
 To prevent these accidental opt-outs, newly created forms enable the **Ignore opt-outs** toggle by default.
+To prevent accidental opt-outs, newly created have the **Ignore opt-outs** toggle enabled by default. You can change these defaults for new forms in the [form default configuration settings](real-time-marketing-form-global-settings.md).
 
 If you want to use the form for consent management, allowing users to unsubscribe from specific topics or purposes, you should turn off the **Ignore opt-outs** toggle.
 

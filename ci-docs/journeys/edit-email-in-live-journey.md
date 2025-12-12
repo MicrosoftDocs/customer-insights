@@ -44,7 +44,7 @@ The email editor components that can be edited in a live journey are:
 | Compliance profile and consent related settings | Yes | You can update the settings. |
 | Subject and preheader | Yes | You can add or edit the text content. |
 | QR code | Yes | You can add or edit the QR code without any   personalization. |
-| Survey links | Yes | You can add or edit the survey links without any personalization. |
+| Survey links | No | You can add or edit the survey links without any personalization. |
 | Personalization | Yes | You can add or edit the personalization and rules. |
 | Conditional content | Yes | You can only edit the existing condition. |
 
