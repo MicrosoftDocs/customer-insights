@@ -29,7 +29,7 @@ To edit your email messages in a live journey, follow these steps:
 1. Select finish editing.
 
 > [!NOTE]
-> - Editing email messages in a live journey does not affect the email messages that have already been sent or are in the process of being sent. The changes only apply to email messages that are scheduled to be sent after the publication of the changes.
+> - Editing email messages in a live journey doesn't affect the email messages that have already been sent or are in the process of being sent. The changes only apply to email messages that are scheduled to be sent after the publication of the changes.
 > - Editing email messages in a live journey may affect the performance and reporting of your customer journey. For example, if you change the link of a button or an image, the click-through rate and the conversion rate of your email message may change.
 
 ## Email components that can be edited in a live journey

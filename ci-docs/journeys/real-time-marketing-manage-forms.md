@@ -149,8 +149,7 @@ If you need to include purposes from different compliance profiles in one form, 
 
 A form can include multiple **purposes** and **topics**. For example, suppose a form has topic A and topic B. A user first subscribes to topic A. Later, the user submits the form again, selecting only topic B and leaving topic A unchecked. This action unintentionally creates an opt-out for topic A.
 
-To prevent these accidental opt-outs, newly created forms enable the **Ignore opt-outs** toggle by default.
-To prevent accidental opt-outs, newly created have the **Ignore opt-outs** toggle enabled by default. You can change these defaults for new forms in the [form default configuration settings](real-time-marketing-form-global-settings.md).
+To prevent these accidental opt-outs, newly created forms enable the **Ignore opt-outs** toggle by default. You can change these defaults for new forms in the [form default configuration settings](real-time-marketing-form-global-settings.md).
 
 If you want to use the form for consent management, allowing users to unsubscribe from specific topics or purposes, you should turn off the **Ignore opt-outs** toggle.
 
@@ -171,7 +170,7 @@ Attribute metadata defines field types and formats. You can't change field types
 | Multiple lines of text    | Text Area     | Text Area             | Text area input field that accepts all types of text values.                                |
 | Option set             | n/a           | Radio Buttons         | Field with a limited number of predefined values (as defined in the database). Rendered as a set of radio buttons, with one button for each value.                                  |
 | Option set             | n/a           | Drop-down              | Field with a limited number of predefined values (as defined in the database). Rendered as a drop-down list for selecting a value.                                                  |
-| Two options            | n/a           | Check box              | Boolean field that accepts a value of either true or false. It's rendered as a check box, which is selected when true and clear when false.                                              |
+| Two options            | n/a           | Check box              | Boolean field that accepts a value of either true or false. It renders as a check box, which is selected when true and clear when false.                                              |
 | Two options            | n/a           | Radio&nbsp;Buttons         | Field that accepts one of two possible values (typically true or false). Rendered as a pair of radio buttons, with the display text for each defined in the database.           |
 | Date and time          | Date Only     | Date Picker           | Date picker to select a date from a pop-up calendar display. It doesn't accept a time.                                                                           |
 | Date and time          | Date and Time | Date-Time Picker      | Date and time picker to select a date from a pop-up calendar and a time from a drop-down list.                                                                   |
@@ -274,7 +273,7 @@ The following contact or lead attributes update automatically when the form crea
 - `msdynmkt_marketingformid`
 - `ownerid`
 - `owningbusinessunit` (if the business units feature is enabled)
-- `subject` (only for leads — the form name is used as the value)
+- `subject` (only for leads—the form name is used as the value)
 
 These attributes don't update when a form submission updates an existing record.
 
