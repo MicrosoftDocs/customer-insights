@@ -40,7 +40,7 @@ Consent is captured and stored at the contact point level. A contact point is th
 
 The Customer Insights - Journeys consent model uses a flexible hierarchy that you can tailor to meet your business and compliance requirements.
 
-:::image type="content" source="media/real-time-marketing-consent-hierarchy.png" alt-text="Consent hierarchy" lightbox="media/real-time-marketing-consent-hierarchy.png":::
+:::image type="content" source="media/real-time-marketing-consent-hierarchy.png" alt-text="Customer Insights - Journeys consent model." lightbox="media/real-time-marketing-consent-hierarchy.png":::
 
 - At the top of the hierarchy are [compliance profiles](#compliance-profiles).
 - Each compliance profile can include multiple purposes.
@@ -125,7 +125,7 @@ To include a link to an external consent management system’s preference page, 
 
 Example Unsubscribe URL, where the contact email is used as the `userid`: `http://www.contoso.com/consent?userid={{contact.emailaddress1}}&emailid={{messageid}}&purpose={{purposeid}}&topic={{topicid}}`
 
-:::image type="content" source="media/real-time-marketing-external-compliance-profile-settings.png" alt-text="Consent hierarchy" lightbox="media/real-time-marketing-external-compliance-profile-settings.png":::
+:::image type="content" source="media/real-time-marketing-external-compliance-profile-settings.png" alt-text="Customer Insights - Journeys consent hierarchy." lightbox="media/real-time-marketing-external-compliance-profile-settings.png":::
 
 You can define your own parameter name, such as `userid` in the previous example. You can append any lead or contact attribute to the URL to identify the user for your consent system. In addition, you can use the following tokens:
 
