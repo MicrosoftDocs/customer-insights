@@ -1,7 +1,7 @@
 ---
 title: Consent management overview
 description: 'Consent management in Customer Insights – Journeys: Learn how to set up, manage, and enforce user consent to stay compliant with privacy regulations. Start managing consent today.'
-ms.date: 10/13/2025
+ms.date: 12/12/2025
 ms.topic: concept-article
 author: petrjantac
 ms.author: alfergus
@@ -119,7 +119,7 @@ Learn more: [Create Customer Insights - Journeys preference centers](real-time-m
 
 #### Compliance profile with an external link
 
-A compliance profile can include an external link that directs users to an external consent management page or a page containing a marketing form. The website URL you specify in the compliance profile is automatically added to messages sent using that profile as the **Unsubscribe** link.
+A compliance profile can include an external link that directs users to an external consent management page or a page containing a marketing form. Messages sent using the compliance profile automatically include the specified website URL as the **Unsubscribe** link.
 
 To include a link to an external consent management system’s preference page, enter the URL in the **External link** section of the Compliance Profile. This adds user identification to the link so the external system can recognize and manage the user’s preferences.
 
