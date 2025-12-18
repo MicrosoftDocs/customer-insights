@@ -98,7 +98,7 @@ Moments-based marketing:
 | DynamicsMKT_AttachCIApplicationUser | No |
 | DynamicsMKT_CxpApplicationUser | No |
 | DynamicsMKT_ChannelsAppUser | No |
-| DynamicsMKT_ConsentAppUser | No |
+| DynamicsMKT_ConsentAppUser | Yes |
 | **DynamicsMKT_CxpPersonalizationUIAppUser** | Yes |
 | DynamicsMKT_CIConnection | No |
 | DynamicsMKT_BURoles | No |
