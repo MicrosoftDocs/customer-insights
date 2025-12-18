@@ -157,8 +157,8 @@ Moments-based marketing:
 | DynamicsMKT_OrchestrationTriggers | No |
 | DynamicsMKT_CxpOrchestrationUI | No |
 | DynamicsMKT_CxpOrchestrationUIControls | No |
-| DynamicsMKT_ConsentAttachCI | No |
-| DynamicsMKT_Consent | No |
+| DynamicsMKT_ConsentAttachCI | Yes |
+| DynamicsMKT_Consent | Yes |
 | DynamicsMKT_AssetControlsSolution | No |
 | DynamicsMKT_CxpFormControls | No |
 | DynamicsMKT_OrchestrationEngineAttachCI | No |
