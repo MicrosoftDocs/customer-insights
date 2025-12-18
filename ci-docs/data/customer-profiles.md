@@ -1,8 +1,8 @@
 ---
 title: "View customer profiles"
 description: "View your unified customer data including using search and filter in Dynamics 365 Customer Insights"
-ms.date: 06/14/2024
-ms.reviewer: mhart
+ms.date: 12/17/2025
+ms.reviewer: v-wendysmith
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -13,7 +13,7 @@ ms.custom:
 
 # View customer profiles
 
-Customer profiles are available once you [create the unified *Customer* table](data-unification.md). The combined view of your unified customer profiles displays on the **Customers** page. Customers can be individuals or organizations.
+You can view customer profiles after you [create the unified *Customer* table](data-unification.md). The **Customers** page displays the combined view of your unified customer profiles. Customers can be individuals or organizations.
 
 Go to the **Customers** page to view your customers and their profiles. A tile represents each customer profile. Use the pagination controls to get more records. The card displays fields from the *Customer* table as defined in the **Search & filter index**. The system picks the order of the fields within each card.
 
@@ -32,7 +32,7 @@ Select any of the following actions:
 - [Search for customers](#search-for-customers)
 
   > [!NOTE]
-  > To use search and filter, an admin must configure the searchable attributes and define the filterable fields using the search & filter index.
+  > To use search and filter, an admin must configure the searchable attributes and define the filterable fields by using the search & filter index.
 
 ## Known and unknown customers
 
@@ -41,6 +41,12 @@ Customer Insights - Data supports two types of profile types:
 - Known customers: Profiles that have a known identifier, such as emailId, phone number, or loyaltyId, and are created through the [data unification process](data-unification.md).
 
 - Unknown customers: Profiles that don't have a known identifier, but are identified through an unknown identifier such as cookieId. The [web tracking script](real-time-web-personalization.md) automatically creates these profiles when an unauthenticated customer visits your website. Unlike known profiles, unknown profiles expire after seven days of inactivity unless [converted to a known profile](real-time-web-personalization.md). Unknown profiles are free so that they don't count against your profiles used for billing.
+
+## Customer count
+
+The customer count shows the number of unified customer profiles. If [real-time web personalization is enabled](real-time-web-personalization.md) at the time when unification was last run, the customer count also includes unknown profiles. The count comes from the unified customer profile. This customer count displays on the **Home** page and the **Unify** page.
+
+The customer count on the **Customers** page is obtained in real-time from Dataverse. The unified profile count is the same. However, if real-time web personalization is enabled, the unknown profiles in Dataverse are added in real-time and expire after 7 days. The number of unknown profiles in the customer count can fluctuate as data flows in.
 
 ## Search for customers
 
@@ -56,7 +62,7 @@ Filter customers by the *Customer* table fields. The admin defines the filterabl
 
 1. On the **Customers** page, select **Show filters**. The Filter pane displays.
 
-1. Check the boxes next to the columns you want to filter customers by.
+1. Check the boxes next to the columns you want to use to filter customers.
 
 1. Remove all filters by selecting **Clear filters** or clear a checkbox next to a selected attribute.
 
