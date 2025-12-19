@@ -5,7 +5,7 @@ author: Scott-Stabbert
 ms.author: sstabbert
 ms.reviewer: v-wendysmith
 ms.topic: integration
-ms.date: 12/02/2025
+ms.date: 12/18/2025
 ms.custom: bap-template
 ---
 
@@ -40,7 +40,7 @@ Every time unification is run, the customer profile table is written to Datavers
 The task that performs the linking is named *CustomerId Backstamping Hydration*. To view the results from this task, go to **Settings** > **System**, and select the **Status** tab. When the task runs for the first time on a source table, it adds a lookup column and links each row by populating fields with the appropriate `CustomerID` value. The name of the lookup column is `Customer Profile`, and the schema name is `msdynci_lookupfield_customerprofile`. During subsequent runs, only rows that change are updated.
 
 > [!TIP]
-> We recommend [configuring filtering attributes](/powerapps-docs/powerapps-docs/developer/data-platform/best-practices/business-logic/include-filtering-attributes-plugin-registration.md) on your plugins and limiting them to only the field names relevant to your business logic. Avoid including fields such as `msdynci_lookupfield_customerprofile` if they aren’t needed. This helps prevent unintended plugin executions during backstamping, which can be especially important on the initial backstamping run when many contacts may be processed.
+> We recommend [configuring filtering attributes](/power-apps/developer/data-platform/best-practices/business-logic/include-filtering-attributes-plugin-registration) on your plugins and limiting them to only the field names relevant to your business logic. Avoid including fields such as `msdynci_lookupfield_customerprofile` if they aren’t needed. This helps prevent unintended plugin executions during backstamping, which can be especially important on the initial backstamping run when many contacts may be processed.
 
 ### CustomerId Backstamping Hydration task
 
