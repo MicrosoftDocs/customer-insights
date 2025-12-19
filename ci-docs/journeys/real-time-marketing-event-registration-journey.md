@@ -2,7 +2,7 @@
 title: Boost event engagement with journeys
 ms.reviewer: alfergus
 description: Learn how to use Dynamics 365 Customer Insights - Journeys to automate event engagement. From registration to post-event follow-ups, streamline your process.
-ms.date: 10/07/2025
+ms.date: 12/03/2025
 ms.custom: 
   - dyn365-marketing
 ms.topic: get-started
@@ -134,11 +134,22 @@ The final step in the journey is to send a response based on whether the recipie
 
 You have now built a journey that thanks event attendees for registering, sends timely event reminders, and sends tailored email responses depending on whether a journey participant checked into the event. What’s so powerful about this journey—and Customer Insights - Journeys generally—is that you can use the journey for any event you host! If you tried to achieve a similar outcome using a segment-based journey, you’d need to painstakingly create specialized segments and separate journeys for each event. Real-time journeys truly are the future of customer engagement.
 
-## Bonus tip
+## Bonus tips
+
+### Use triggers to remove canceled registrations
 
 Customer Insights - Journeys triggers give you a simple way to remove a journey participant who cancels their event registration during the journey. To remove the canceled participant from the journey, select the **Event Registration Created** trigger at the top of the journey. In the right pane, select the **Edit** link to the right of **End**. Under **Exit when a trigger occurs**, search for **Event Registration Canceled**. When a participant cancels their registration, they're removed from the journey and don't get further notifications.
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of the Event Registration Canceled trigger selected in Customer Insights - Journeys.](media/event-engagement-create-canceled.png "Screenshot of the Event Registration Canceled trigger selected in Customer Insights - Journeys.")
+
+### Ensure accurate event timing with UTC attributes
+
+When building journeys for event registration, accurate timing is critical. This is especially true for journeys for events that span multiple time zones. Journeys for multi-event scenarios typically operate in UTC, which can lead to discrepancies if local time zone values are used in triggers. To address this issue, two new attributes have been introduced:
+
+- Event start date UTC
+- Event end date UTC
+
+If you use the **Wait until a time specified by a trigger** condition in your journey, these attributes ensure that the correct UTC-based values are applied for event start and end dates. This prevents timing errors and guarantees that your automation aligns with the actual event schedule, regardless of participant time zones.
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
