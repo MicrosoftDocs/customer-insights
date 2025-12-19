@@ -44,9 +44,10 @@ Customer Insights - Data supports two types of profile types:
 
 ## Customer count
 
-The customer count shows the number of unified customer profiles. If [real-time web personalization is enabled](real-time-web-personalization.md) at the time when unification was last run, the customer count also includes unknown profiles. The count comes from the unified customer profile. This customer count displays on the **Home** page and the **Unify** page.
+Customer Insights displays a customer count in several locations. This number is a count of unified customer profiles and unknown profiles if [real-time web personalization is enabled](real-time-web-personalization.md). The counts shown can differ slightly.
 
-The customer count on the **Customers** page is obtained in real-time from Dataverse. The unified profile count is the same. However, if real-time web personalization is enabled, the unknown profiles in Dataverse are added in real-time and expire after 7 days. The number of unknown profiles in the customer count can fluctuate as data flows in.
+- The count on the **Home** page and the **Unify** page is only calculated when unification runs.
+- The count on the **Customers** page is updated in real time and can vary as unknown profiles are added in real time, and age out after 7 days.
 
 ## Search for customers
 
