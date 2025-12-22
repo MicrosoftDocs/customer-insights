@@ -414,9 +414,9 @@
         href: event-from-event.md
     - name: Host a streamed event with Microsoft Teams
       items:
-      - name: Overview of available Teams meeting types 
+      - name: Overview of Teams meeting types 
         href: teams-meeting-types.md
-      - name: Set up a Teams webinar, meeting or live event
+      - name: Set up a Teams webinar, meeting, or live event
         href: teams-webinar.md
       - name: Set up a Teams meeting v2
         href: teams-meetingv2.md
@@ -657,7 +657,7 @@
     - name: Data management settings
       href: data-management-settings.md
     - name: Create consistent branding with brand profiles
-       href: brand-profiles.md  
+      href: brand-profiles.md  
     - name: Set up quiet times
       href: real-time-marketing-quiet-times.md
     - name: Set up frequency capping
