@@ -36,7 +36,7 @@ By completing this setup, you'll:
 1. Select **Register**.
 1. Copy the application (client) ID.
 
-:::image type="content" source="media/teamsregistration1.png" alt-text="Create unmapped form fields for your event." lightbox="media/teamsregistration1.png":::
+:::image type="content" source="media/teamsregistration1.png" alt-text="Screenshot of application registration in Microsoft Entra." lightbox="media/teamsregistration1.png":::
 
 ### 3. Add the app ID in Customer Insights - Journeys
 
@@ -44,30 +44,30 @@ By completing this setup, you'll:
 1. Paste the app ID and **Save** the record.
 1. After you save and refresh the page, the "Federated Identity Credential Subject" field is populated. Copy the field contents and save it for the next step. The field contents may take a minute to appear.
 
-### 4. Configure Federated Credentials in your app in Microsoft Entra
+### 4. Configure Federated credentials in your app in Microsoft Entra
 
 1. Navigate back to your app registration in Microsoft Entra.
 1. In the Microsoft Entra app registration area, go to **Certificates & secrets** and then to the **Federated credentials** tab.
 1. Select **+ Add credential** and select **Other issuer** for the **Federated credential scenario**.
 1. Fill in:
-    1. **Issuer**: https://login.microsoftonline.com/<TenantID>/v2.0
+    1. **Issuer**: `https://login.microsoftonline.com/<TenantID>/v2.0`
     2. **Value**: Paste the Federated Identity Credential Subject (for example, /eid1/c/pub/t/...).
     3. **Name**: Add a descriptive name of your choice.
 1. Select **Add**.
 
-:::image type="content" source="media/teamsregistration2.png" alt-text="Create unmapped form fields for your event." lightbox="media/teamsregistration2.png":::
+:::image type="content" source="media/teamsregistration2.png" alt-text="Federated credential tab screenshot." lightbox="media/teamsregistration2.png":::
 
 ### 5. Grant API permissions
 
 1. Stay in your app registration in Microsoft Entra, go to **API permissions**, and select **+ Add a permission**.
 1. Select **Microsoft Graph** in the API permissions name list.
 1. Select **Application permissions** in the pop-up dialog. Search for the following permissions and add each permission separately:
-    1. *OnlineMeetingArtifact.Read.All* for attendance reports.
-    2. *VirtualEventRegistration-Anon.ReadWrite.All* for registrations.
-    3. *VirtualEvent.Read.All* to read webinar status.
+    1. *OnlineMeetingArtifact.Read.All* for attendance reports
+    2. *VirtualEventRegistration-Anon.ReadWrite.All* for registrations
+    3. *VirtualEvent.Read.All* to read webinar status
 1. Select **Grant admin consent and confirm**.
 
-:::image type="content" source="media/teamsregistration3.png" alt-text="Create unmapped form fields for your event." lightbox="media/teamsregistration3.png":::
+:::image type="content" source="media/teamsregistration3.png" alt-text="Screenshot of the request API permissions tab." lightbox="media/teamsregistration3.png":::
 
 You've now successfully completed the Teams authentication set up in Microsoft Entra and Customer Insights - Journeys.
 
