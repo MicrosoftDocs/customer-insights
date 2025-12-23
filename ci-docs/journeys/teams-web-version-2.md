@@ -53,7 +53,7 @@ Read more: [Manage meeting settings in Microsoft Teams](/microsoftteams/meeting-
 - Add a guest as a presenter in your webinar by adding them as a speaker in your event or session in Customer Insights - Journeys using the steps detailed in the table above.
 
 ## Create a registration experience for Teams webinar v2
-Teams Webinars scheduled via Customer Insights – Journeys (CIJ) rely on event registrations for each event. These registrations are regularly synced with the corresponding Teams Webinar, ensuring that the list of registrants is automatically updated whenever a new registration is received in CIJ.
+Teams Webinars scheduled via Customer Insights – Journeys rely on event registrations for each event. These registrations are regularly synced with the corresponding Teams Webinar, ensuring that the list of registrants is automatically updated whenever a new registration is received in Customer Insights - Journeys.
 To create a seamless webinar registration experience, follow one of the available options described in the official guide: [Create an event registration experience](event-registration-experience.md).
 
 ### View webinar engagement data
