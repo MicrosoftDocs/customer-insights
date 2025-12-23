@@ -66,7 +66,7 @@ Set-CsTeamsMeetingPolicy -AllowPrivateMeetingScheduling $True
 Set-CsTeamsMeetingPolicy -WhoCanRegister Everyone
 ```
 
-Read more: [Set up for webinars in Microsoft Teams](/microsoftteams/set-up-webinars).
+Learn more: [Set up for webinars in Microsoft Teams](/microsoftteams/set-up-webinars).
 
 #### Webinar settings
 
@@ -75,7 +75,7 @@ The default webinar settings are configured to provide the best attendee and pre
 > [!div class="mx-imgBorder"]
 > ![Screenshot of Webinar settings.](./media/teams-webinar-webinar-settings.png)
 
-Read more: [Manage meeting settings in Microsoft Teams](/microsoftteams/meeting-settings-in-teams).
+Learn more: [Manage meeting settings in Microsoft Teams](/microsoftteams/meeting-settings-in-teams).
 
 #### Webinar roles
 
