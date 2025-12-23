@@ -28,7 +28,7 @@ For general information about setting up Microsoft Teams, refer to the [Microsof
 > To use Microsoft Teams as an online event provider, you must have a [Microsoft 365 license](/office365/servicedescriptions/teams-service-description) that allows you access to the Teams service. If you do not have the correct license, you will not see the Teams webinar, Teams meeting, or Teams live event options as a part of the **Streaming provider** list.
 
 > [!TIP]
-> This article discusses legacy Teams functionality. To create events using the latest functionality, see [Teams meeting v2](teams-meeting-version-2.md), [Teams webinar v2](teams-webinar-version-2.md), and [Teams town hall](teams-town-hall.md).
+> This article discusses legacy Teams functionality. To create events using the latest functionality, see [Teams meeting v2](teams-meeting-version-2.md), [Teams webinar v2](teams-web-version-2.md), and [Teams town hall](teams-town-hall.md).
 
 ## Create an online event
 
