@@ -47,9 +47,9 @@ The <**Organization URL**> should be replaced with the actual URL of the organiz
 
 | Parameter | Value |
 |---|---|
-| ProfileId | Targeted ProfileID. |
+| ProfileId | Targeted ProfileID |
 | MessageEntityName | "msdynmkt_email" |
-| Interactions | **interactionsJson** from the table above. |
+| Interactions | **interactionsJson** from the table above |
 
 #### Example
 
