@@ -36,7 +36,7 @@ By completing this setup, you'll:
 1. Select **Register**.
 1. Copy the application (client) ID.
 
-:::image type="content" source="media/teamsregistration1.png" alt-text="Screenshot of application registration in Microsoft Entra." lightbox="media/teamsregistration1.png":::
+:::image type="content" source="media/teams-registration-1.png" alt-text="Screenshot of application registration in Microsoft Entra." lightbox="media/teams-registration-1.png":::
 
 ### 3. Add the app ID in Customer Insights - Journeys
 
@@ -55,7 +55,7 @@ By completing this setup, you'll:
     3. **Name**: Add a descriptive name of your choice.
 1. Select **Add**.
 
-:::image type="content" source="media/teamsregistration2.png" alt-text="Federated credential tab screenshot." lightbox="media/teamsregistration2.png":::
+:::image type="content" source="media/teams-registration-2.png" alt-text="Federated credential tab screenshot." lightbox="media/teams-registration-2.png":::
 
 ### 5. Grant API permissions
 
@@ -67,7 +67,7 @@ By completing this setup, you'll:
     3. *VirtualEvent.Read.All* to read webinar status
 1. Select **Grant admin consent and confirm**.
 
-:::image type="content" source="media/teamsregistration3.png" alt-text="Screenshot of the request API permissions tab." lightbox="media/teamsregistration3.png":::
+:::image type="content" source="media/teams-registration-3.png" alt-text="Screenshot of the request API permissions tab." lightbox="media/teams-registration-3.png":::
 
 You've now successfully completed the Teams authentication set up in Microsoft Entra and Customer Insights - Journeys.
 
