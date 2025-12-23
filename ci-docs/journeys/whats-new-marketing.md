@@ -1,7 +1,7 @@
 ---
 title: New and upcoming features
 description: Discover the latest features, improvements, and bug fixes in Dynamics 365 Customer Insights - Journeys. Stay updated with our monthly release notes.
-ms.date: 12/08/2025
+ms.date: 12/22/2025
 ms.update-cycle: 180-days
 ms.topic: whats-new
 author: alfergus
@@ -27,6 +27,45 @@ Customer Insights - Journeys updates are [pushed to customers automatically](htt
 
 To submit and vote on **feature requests** and **product suggestions**, go to the [Dynamics 365 Application Ideas portal](https://experience.dynamics.com/ideas/categories/?forum=dfa5b83d-9e4c-e811-a956-000d3a1bef07&forumName=Dynamics%20365%20Marketing).
 
+### December 2025 update
+
+| App              | GA release      |
+|------------------|-----------------|
+| Customer Insights - Journeys | 1.1.61220.59 |
+
+#### General availability
+
+- **Export copies of sent emails for record keeping**
+	- With the new email export API, you can now automatically export exact copies of every email you send to your customers, ensuring you have a reliable and verifiable record. This capability not only saves time but also enhances your ability to manage customer interactions and resolve disputes efficiently.
+	- [Release plan](/dynamics365/release-plan/2025wave2/customer-insights/dynamics365-customer-insights-journeys/export-copies-sent-emails-record-keeping)
+	- [Docs](./developer/email-api.md)
+
+- **Wait on segment membership to trigger next step in a journey**
+	- Get more control over your customers' experience by waiting for them to become a member of a segment before continuing to the next steps in a journey. With this capability, you can personalize each customer's experience by choosing the correct path and actions relevant to individual customers based on whether they're in a segment. This capability adds to existing if/then capabilities that let you wait for a customer to open an email, click a link, or wait for another trigger to be activated before moving on to the next step in the journey.
+	- [Release plan](/dynamics365/release-plan/2025wave2/customer-insights/dynamics365-customer-insights-journeys/use-segments-decide-which-path-customer-should-take-journey)
+	- [Docs](add-action.md#wait-for-segment-membership-preview)
+
+#### Monthly enhancements
+
+- **Quiet times can last up to 21 days**
+	- You can now set up quiet times for a maximum of 21 consecutive days, up from the previous limit of 3.
+	- [Docs](real-time-marketing-quiet-times.md#set-up-overnight-quiet-times)
+
+- **Introducing Teams webinar v2**
+	- As part of our ongoing modernization of Teams integration, we introduced Teams meeting v2 and Teams town hall in November. With this release, we’re introducing Teams webinar v2 and a new authentication flow.
+	- [Docs](teams-web-version-2.md)
+
+- **New attributes for event timing in UTC**
+	- If your journey spans events across multiple time zones, it likely operates in UTC. To ensure that the “Wait until a time specified by a trigger” condition uses the correct event timing, select the newly introduced attributes `Event start date UTC` and `Event end date UTC`.
+	- [Docs](real-time-marketing-event-registration-journey.md#ensure-accurate-event-timing-with-utc-attributes)
+
+#### New blogs and scenario docs
+
+Learn how to make the most of the new Dynamics 365 Customer Insights features in our latest blogs and scenario docs:
+
+- [Why localized dates and times matter in event registration](https://community.dynamics.com/blogs/post/?postid=8795951f-7baa-f011-bbd3-00224826f06d)
+- [Use submitted form values to branch journeys and personalize emails](real-time-marketing-form-submitted-values.md)
+
 ### November 2025 update
 
 | App              | GA release      |
@@ -35,8 +74,8 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 
 #### General availability
 
-- **Host large-scale online events with Teams Town Hall**
-	- Integrate Microsoft Teams Town Hall into Customer Insights - Journeys to schedule and manage events for up to 10,000 attendees as part of your broader campaign strategy. You can now automatically trigger personalized invitations based on customer data and behavior, increasing the likelihood of attendance and engagement. Track participation and engagement metrics within Customer Insights, making it easier to segment audiences and tailor follow-up actions after the event.
+- **Host large-scale online events with Teams town hall**
+	- Integrate Microsoft Teams town hall into Customer Insights - Journeys to schedule and manage events for up to 10,000 attendees as part of your broader campaign strategy. You can now automatically trigger personalized invitations based on customer data and behavior, increasing the likelihood of attendance and engagement. Track participation and engagement metrics within Customer Insights, making it easier to segment audiences and tailor follow-up actions after the event.
 	- [Release plan](/dynamics365/release-plan/2025wave2/customer-insights/dynamics365-customer-insights-journeys/host-large-scale-online-events-teams-town-hall)
 	- [Docs](teams-town-hall.md)
 

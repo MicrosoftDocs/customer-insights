@@ -112,8 +112,6 @@
     href: role-permissions.md
   - name: Integrate with Dynamics 365 Customer Insights - Data
     href: ci-get-started.md
-  - name: Create consistent branding with brand profiles
-    href: brand-profiles.md  
   - name: Import data
     href: import-data.md
   - name: Export data
@@ -416,9 +414,15 @@
         href: event-from-event.md
     - name: Host a streamed event with Microsoft Teams
       items:
-      - name: Set up a Teams webinar
+      - name: Overview of Teams meeting types 
+        href: teams-meeting-types.md
+      - name: Set up a legacy Teams webinar, meeting, or live event
         href: teams-webinar.md
-      - name: Set up a Teams Town Hall
+      - name: Set up a Teams meeting v2
+        href: teams-meeting-version-2.md
+      - name: Set up a Teams webinar v2
+        href: teams-web-version-2.md
+      - name: Set up a Teams town hall
         href: teams-town-hall.md
       - name: Optimize your event check-in flow
         href: optimize-check-in.md
@@ -562,6 +566,16 @@
     href: real-time-marketing-faq.md
 - name: Develop and extend
   items:
+  - name: Use Customer Insights - Journeys APIs
+    items:
+    - name: Use the Create Journey From Template API
+      href: developer/create-journey-template-api.md
+    - name: Use the events API in real-time journeys
+      href: developer/using-rtm-events-api.md
+    - name: Create a segment using the Web API
+      href: real-time-marketing-api-segment.md
+    - name: Use the email API to access emails on the interaction timeline
+      href: developer/email-api.md
   - name: Manually add a custom channel
     items:
     - name: Overview
@@ -608,16 +622,10 @@
       href: developer/extend-ui.md
   - name: Extend and customize consent
     href: developer/extend-consent.md
-  - name: Use the Create Journey From Template API
-    href: developer/create-journey-template-api.md
-  - name: Use the events API in real-time journeys
-    href: developer/using-rtm-events-api.md
   - name: Create an event portal on your website using the web application
     href: developer/event-portal-web-application.md
   - name: Set up payment gateway integration (preview)
     href: developer/payment-gateway-integration.md
-  - name: Create a segment using the Web API
-    href: real-time-marketing-api-segment.md
   - name: Use binding IDs to correlate across triggers
     href: real-time-marketing-correlate-triggers.md
 - name: Administer
@@ -652,10 +660,14 @@
         href: manage-word-templates.md
     - name: Data management settings
       href: data-management-settings.md
+    - name: Create consistent branding with brand profiles
+      href: brand-profiles.md  
     - name: Set up quiet times
       href: real-time-marketing-quiet-times.md
     - name: Set up frequency capping
       href: real-time-marketing-frequency-cap.md
+    - name: Teams authentication
+      href: teams-authentication.md
     - name: Add or remove sample data
       href: /power-platform/admin/add-remove-sample-data
     - name: Quota limits

@@ -1,17 +1,18 @@
 ---
-title: Use Microsoft Teams for Dynamics 365 Customer Insights - Journeys online events
-description: Learn how to create and host live events in Dynamics 365 Customer Insights - Journeys using Microsoft Teams as the webinar provider.
-ms.date: 11/06/2025
+title: Set up a legacy Teams webinar, meeting, or live event
+description: Learn how to create and host legacy live Microsoft Teams events in Dynamics 365 Customer Insights - Journeys.
+ms.date: 12/22/2025
 ms.topic: how-to
-author: alfergus
-ms.author: alfergus
+author: terezakirk
+ms.author: terezakirk
+ms.reviewer: alfergus
 search.audienceType: 
   - admin
   - customizer
   - enduser
 ---
 
-# Use Microsoft Teams for Dynamics 365 Customer Insights - Journeys online events
+# Set up a legacy Teams webinar, meeting, or live event
 
 [!INCLUDE [azure-ad-to-microsoft-entra-id](./includes/azure-ad-to-microsoft-entra-id.md)]
 
@@ -26,6 +27,9 @@ For general information about setting up Microsoft Teams, refer to the [Microsof
 > [!NOTE]
 > To use Microsoft Teams as an online event provider, you must have a [Microsoft 365 license](/office365/servicedescriptions/teams-service-description) that allows you access to the Teams service. If you do not have the correct license, you will not see the Teams webinar, Teams meeting, or Teams live event options as a part of the **Streaming provider** list.
 
+> [!TIP]
+> This article discusses legacy Teams functionality. To create events using the latest functionality, see [Teams meeting v2](teams-meeting-version-2.md), [Teams webinar v2](teams-web-version-2.md), and [Teams town hall](teams-town-hall.md).
+
 ## Create an online event
 
 To create a Teams event, select **Event planning** in the Customer Insights - Journeys app area switcher, then select **Events** in the left navigation pane. Select **+New** in the top ribbon.
@@ -34,7 +38,7 @@ To create a Teams event, select **Event planning** in the Customer Insights - Jo
 
 After you flip the **Do you want to stream this event** toggle to **Yes**, you’ll have three streaming options: Teams webinar, Teams meeting, and Teams live event.
 
-### Teams webinar
+### Teams webinar (legacy)
 
 Use Teams webinars to create online presentations. One or multiple presenters can share content, videos, and audio. Participants can view the content and optionally engage with the presenters. Audiences engage through reactions, posting in the chat, or answering poll questions. Attendees can’t share their own audio, video, or content.
 
@@ -65,7 +69,7 @@ Set-CsTeamsMeetingPolicy -AllowPrivateMeetingScheduling $True
 Set-CsTeamsMeetingPolicy -WhoCanRegister Everyone
 ```
 
-Read more: [Set up for webinars in Microsoft Teams](/microsoftteams/set-up-webinars).
+Learn more: [Set up for webinars in Microsoft Teams](/microsoftteams/set-up-webinars).
 
 #### Webinar settings
 
@@ -74,7 +78,7 @@ The default webinar settings are configured to provide the best attendee and pre
 > [!div class="mx-imgBorder"]
 > ![Screenshot of Webinar settings.](./media/teams-webinar-webinar-settings.png)
 
-Read more: [Manage meeting settings in Microsoft Teams](/microsoftteams/meeting-settings-in-teams).
+Learn more: [Manage meeting settings in Microsoft Teams](/microsoftteams/meeting-settings-in-teams).
 
 #### Webinar roles
 

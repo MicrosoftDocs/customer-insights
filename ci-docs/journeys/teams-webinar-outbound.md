@@ -4,8 +4,9 @@ description: Learn how to create and host live events in outbound marketing usin
 ms.date: 08/23/2023
 ms.update-cycle: 1095-days
 ms.topic: how-to
-author: alfergus
-ms.author: alfergus
+author: terezakirk
+ms.author: terezakirk
+ms.reviewer: alfergus
 search.audienceType: 
   - admin
   - customizer
