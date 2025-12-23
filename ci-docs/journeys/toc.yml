@@ -566,6 +566,16 @@
     href: real-time-marketing-faq.md
 - name: Develop and extend
   items:
+  - name: Use Customer Insights - Journeys APIs
+    items:
+    - name: Use the Create Journey From Template API
+      href: developer/create-journey-template-api.md
+    - name: Use the events API in real-time journeys
+      href: developer/using-rtm-events-api.md
+    - name: Create a segment using the Web API
+      href: real-time-marketing-api-segment.md
+    - name: Use the email API to access emails on the interaction timeline
+      href: developer/email-api.md
   - name: Manually add a custom channel
     items:
     - name: Overview
@@ -612,16 +622,10 @@
       href: developer/extend-ui.md
   - name: Extend and customize consent
     href: developer/extend-consent.md
-  - name: Use the Create Journey From Template API
-    href: developer/create-journey-template-api.md
-  - name: Use the events API in real-time journeys
-    href: developer/using-rtm-events-api.md
   - name: Create an event portal on your website using the web application
     href: developer/event-portal-web-application.md
   - name: Set up payment gateway integration (preview)
     href: developer/payment-gateway-integration.md
-  - name: Create a segment using the Web API
-    href: real-time-marketing-api-segment.md
   - name: Use binding IDs to correlate across triggers
     href: real-time-marketing-correlate-triggers.md
 - name: Administer
