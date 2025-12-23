@@ -20,7 +20,7 @@ search.audienceType:
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=46b08db8-059a-40c7-928e-6b596f087907]
 
-This article explains how to use Microsoft Teams as an online meeting provider for Customer Insights - Journeys events. Teams event functionality is incorporated directly into the Customer Insights - Journeys app, allowing you to use Teams meeting, webinars, Teams live events and Teams Town Hall for one/some to many online events.
+This article explains how to use Microsoft Teams as an online meeting provider for Customer Insights - Journeys events. Teams event functionality is incorporated directly into the Customer Insights - Journeys app, allowing you to use Teams meeting, webinars, Teams live events and Teams town hall for one/some to many online events.
 
 For general information about setting up Microsoft Teams, refer to the [Microsoft Teams deployment overview](/microsoftteams/deploy-overview).
 
@@ -33,29 +33,29 @@ To create a Teams event, select **Event planning** in the Customer Insights - Jo
 
 ## Event streaming options
 
-After you flip the **Do you want to stream this event** toggle to **Yes**, you’ll have six streaming options - Teams meeting, Teams webinar, Teams live event and then modernized set of options - Teams meeting v2, Teams webinar v2 and Teams Town Hall. This article will aim to help you understand the difference between all event types.
+After you flip the **Do you want to stream this event** toggle to **Yes**, you have six streaming options: Teams meeting, Teams webinar, Teams live event, and then modernized set of options, Teams meeting v2, Teams webinar v2, and Teams town hall. This article explains the difference between the event types.
 
-### Teams meetings, Teams webinars, Teams live events
+### Teams meetings, Teams webinars, and Teams live events
 
-This set of online event options represents the legacy Teams experience. While still available for use, these options are gradually being phased out in favor of modernized integrations and new event types. The updated meeting formats provide enhanced organizer controls and greater flexibility, so we encourage transitioning to these newer options as the older ones will be retired over time.
+This set of online event options represents the legacy Teams experience. While still available for use, these options are gradually being phased out in favor of modernized integrations and new event types. The updated meeting formats provide enhanced organizer controls and greater flexibility. As a best practice, you should transition to the newer options, as the older ones will be retired over time.
 
-1. **Teams meeting**: Allows you to create an interactive online meeting experience where all attendees can share audio, video, or content. More information about Teams meetings: [Meetings in Microsoft Teams](/microsoftteams/tutorial-meetings-in-teams).
-1. **Teams webinar**: Useful for conference keynotes or meetings where a few presenters are talking to a large audience. Webinars can support up to 1,000 attendees and support attendee registrations. More information about Teams webinars: [Webinars in Microsoft Teams](/microsoftteams/plan-webinars)
-1. **Teams live event**: An extension of Teams meetings that enable you to schedule and produce events that stream to large online audiences. Teams live events are being replaced with Teams Town Hall and Teams will soon announce official removal date, please use Town Hall instead. More information about Teams live event: [Live Events in Microsoft Teams](https://support.microsoft.com/office/get-started-with-microsoft-teams-live-events-d077fec2-a058-483e-9ab5-1494afda578a)
+1. **Teams meeting**: Allows you to create an interactive online meeting experience where all attendees can share audio, video, or content. Learn more: [Meetings in Microsoft Teams](/microsoftteams/tutorial-meetings-in-teams).
+1. **Teams webinar**: Useful for conference keynotes or meetings where a few presenters are talking to a large audience. Webinars can support up to 1,000 attendees and support attendee registrations. Learn more: [Webinars in Microsoft Teams](/microsoftteams/plan-webinars)
+1. **Teams live event**: An extension of Teams meetings that enable you to schedule and produce events that stream to large online audiences. Teams live events are being replaced with Teams town halls and Teams will soon announce official removal date. Learn more: [Live Events in Microsoft Teams](https://support.microsoft.com/office/get-started-with-microsoft-teams-live-events-d077fec2-a058-483e-9ab5-1494afda578a)
 
-### Teams meeting v2, Teams webinar v2, Teams Town Hall
+### Teams meeting v2, Teams webinar v2, Teams town hall
 
 The new generation of meeting types delivers the latest Microsoft Teams enhancements and features, powered by Graph API integration. These updates provide improved control over meeting options, enabling organizers to configure Teams settings directly within the Customer Insights – Journeys interface for a seamless experience.
 
 #### Key differences
 
-- Latest meeting types powered by Teams Graph API
-- Improved editing controls for set up of meeting options directly from Teams UI
-- Ability to define co-organizers from CIJ (coming with February 2026 release)
-- Improved attendance report with check-ins, check-out and total attendance duration (coming with February 2026 release)
+- Latest meeting types powered by the Teams Graph API
+- Improved editing controls for set up of meeting options directly from the Teams user interface
+- Ability to define co-organizers from Customer Insights - Journeys (coming in the February 2026 release)
+- Improved attendance report with check-ins, check-out, and total attendance duration (coming in the February 2026 release)
 
-1. **Teams meeting v2**: New version of Teams meeting event, allows you to create an interactive online meeting experience where all attendees can share audio, video, or content. Learn more: [Use Microsoft Teams meetings v2 to create online meetings in Customer Insights - Journeys](teams-meeting-version-2.md)
-1. **Teams webinar v2**: New version of Teams webinar v2 useful for conference keynotes or meetings where a few presenters are talking to a large audience. Webinars can support up to 1,000 attendees and support attendee registrations. Learn more: [Use Microsoft Teams webinars v2 to host online events in Customer Insights - Journeys](teams-web-version-2.md)
-1. **Teams Town Hall**: Teams Town Hall is a new feature designed to help organizations host large-scale, interactive virtual events directly within Microsoft Teams. Learn more: [Use Microsoft Teams town halls to host large-scale online events](teams-town-hall.md).
+1. **Teams meeting v2**: New version of the Teams meeting event that allows you to create an interactive online meeting experience where all attendees can share audio, video, or content. Learn more: [Use Microsoft Teams meetings v2 to create online meetings in Customer Insights - Journeys](teams-meeting-version-2.md)
+1. **Teams webinar v2**: New version of Teams webinars that's useful for conference keynotes or meetings where a few presenters are talking to a large audience. Webinars can support up to 1,000 attendees and support attendee registrations. Learn more: [Use Microsoft Teams webinars v2 to host online events in Customer Insights - Journeys](teams-web-version-2.md)
+1. **Teams town hall**: Teams town hall is a new feature designed to help organizations host large-scale, interactive virtual events directly within Microsoft Teams. Learn more: [Use Microsoft Teams town halls to host large-scale online events](teams-town-hall.md).
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
