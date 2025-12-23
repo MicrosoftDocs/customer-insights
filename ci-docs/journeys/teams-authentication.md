@@ -1,6 +1,6 @@
 ---
-title: Authenticate Teams for Webinar v2 users in Customer Insights - Journeys
-description: Learn how to set up authentication and permissions for Teams Webinar v2 in Dynamics 365 Customer Insights - Journeys. 
+title: Authenticate Teams for webinars v2 users in Customer Insights - Journeys
+description: Learn how to set up authentication and permissions for Teams webinars v2 in Dynamics 365 Customer Insights - Journeys. 
 ms.date: 12/22/2025
 ms.topic: article
 author: terezakirk
@@ -9,9 +9,9 @@ search.audienceType:
   - admin
 ---
 
-# Set Up authentication for Teams Webinar v2
+# Set Up authentication for Teams webinars v2
 
-To enable Teams Webinar v2 integration with Customer Insights – Journeys, organizations must configure tenant-level permissions. This is required because Teams doesn't allow user tokens for creating registrations or downloading attendance reports for virtual events.
+To enable Teams webinars v2 integration with Customer Insights – Journeys, organizations must configure tenant-level permissions. This is required because Teams doesn't allow user tokens for creating registrations or downloading attendance reports for virtual events.
 
 By completing this setup, you'll:
 

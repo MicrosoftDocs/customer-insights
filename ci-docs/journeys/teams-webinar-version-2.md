@@ -1,5 +1,5 @@
 ---
-title: Use Microsoft Teams Webinar v2 to host online events in Dynamics 365 Customer Insights - Journeys
+title: Use Microsoft Teams webinars v2 to host online events in Customer Insights - Journeys
 description: Learn how to create and host online events in Dynamics 365 Customer Insights - Journeys using Microsoft Teams as the webinar provider.
 ms.date: 11/26/2025
 ms.topic: how-to
@@ -11,7 +11,7 @@ search.audienceType:
   - enduser
 ---
 
-# Use Microsoft Teams Webinar v2 to host online events in Dynamics 365 Customer Insights - Journeys
+# Use Microsoft Teams webinars v2 to host online events in Customer Insights - Journeys
 
 Use Teams webinars to create online presentations. One or multiple presenters can share content, videos, and audio. Participants can view the content and optionally engage with the presenters. Audiences engage through reactions, posting in the chat, or answering poll questions. Attendees can’t share their own audio, video, or content.
 Webinars are useful for conference keynotes or meetings where a few presenters are talking to a large audience. Webinars can support up to 1,000 attendees. Webinars are the only Teams event types that support registrations which means that only people who are registered for the event can attend.
