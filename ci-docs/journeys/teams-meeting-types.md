@@ -40,8 +40,8 @@ After you flip the **Do you want to stream this event** toggle to **Yes**, youâ€
 This set of online event options represents the legacy Teams experience. While still available for use, these options are gradually being phased out in favor of modernized integrations and new event types. The updated meeting formats provide enhanced organizer controls and greater flexibility, so we encourage transitioning to these newer options as the older ones will be retired over time.
 
 1. **Teams meeting**: Allows you to create an interactive online meeting experience where all attendees can share audio, video, or content. More information about Teams meetings: [Meetings in Microsoft Teams](/microsoftteams/tutorial-meetings-in-teams).
-1. **Teams webinar**: Useful for conference keynotes or meetings where a few presenters are talking to a large audience. Webinars can support up to 1,000 attendees and support attendee registrations. More information about Teams webinars: [Webinars in Microsoft Teams](https://learn.microsoft.com/en-us/microsoftteams/plan-webinars)
-1. **Teams live event**: An extension of Teams meetings that enable you to schedule and produce events that stream to large online audiences. Teams live events are being replaced with Teams Town Hall and Teams will soon announce official removal date, please use Town Hall instead. More information about Teams live event: [Live Events in Microsoft Teams](https://support.microsoft.com/en-us/office/get-started-with-microsoft-teams-live-events-d077fec2-a058-483e-9ab5-1494afda578a)
+1. **Teams webinar**: Useful for conference keynotes or meetings where a few presenters are talking to a large audience. Webinars can support up to 1,000 attendees and support attendee registrations. More information about Teams webinars: [Webinars in Microsoft Teams](/microsoftteams/plan-webinars)
+1. **Teams live event**: An extension of Teams meetings that enable you to schedule and produce events that stream to large online audiences. Teams live events are being replaced with Teams Town Hall and Teams will soon announce official removal date, please use Town Hall instead. More information about Teams live event: [Live Events in Microsoft Teams](https://support.microsoft.com/office/get-started-with-microsoft-teams-live-events-d077fec2-a058-483e-9ab5-1494afda578a)
 
 ### Teams meeting v2, Teams webinar v2, Teams Town Hall
 
@@ -55,7 +55,7 @@ The new generation of meeting types delivers the latest Microsoft Teams enhancem
 - Improved attendance report with check-ins, check-out and total attendance duration (coming with February 2026 release)
 
 1. **Teams meeting v2**: New version of Teams meeting event, allows you to create an interactive online meeting experience where all attendees can share audio, video, or content. Learn more: [Use Microsoft Teams meetings v2 to create online meetings in Customer Insights - Journeys](teams-meeting-version-2.md)
-1. **Teams webinar v2**: New version of Teams webinar v2 useful for conference keynotes or meetings where a few presenters are talking to a large audience. Webinars can support up to 1,000 attendees and support attendee registrations. Learn more: [Use Microsoft Teams webinars v2 to host online events in Customer Insights - Journeys](teams-webinar-version-2.md)
+1. **Teams webinar v2**: New version of Teams webinar v2 useful for conference keynotes or meetings where a few presenters are talking to a large audience. Webinars can support up to 1,000 attendees and support attendee registrations. Learn more: [Use Microsoft Teams webinars v2 to host online events in Customer Insights - Journeys](teams-web-version-2.md)
 1. **Teams Town Hall**: Teams Town Hall is a new feature designed to help organizations host large-scale, interactive virtual events directly within Microsoft Teams. Learn more: [Use Microsoft Teams town halls to host large-scale online events](teams-town-hall.md).
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]

@@ -28,13 +28,13 @@ Webinars are useful for conference keynotes or meetings where a few presenters a
 1. Save the event record. Please note, that by clicking on "Save" the Teams meeting will get created and you will become the owner of the Teams meeting. By changing the meeting type and saving again, the original meeting will get cancelled and a new URL will get generated.
 
 > [!NOTE]
-> To be able to use Teams webinar v2 in Customer Insights - Journeys, your tenant administrator will first need to complete the authentication set up. Learn more about [Teams authentication in CIJ](/journeys/teams-authentication.md).
+> To be able to use Teams webinar v2 in Customer Insights - Journeys, your tenant administrator will first need to complete the authentication set up. Learn more about [Teams authentication in Customer Insights - Journeys](teams-authentication.md).
 
 ### Webinar settings
 
 The default webinar settings are configured to provide the best attendee and presenter experience. However, you can easily tweak these settings from your Customer Insights - Journeys event. To change the default settings, click on **Open settings** This reveals the webinar settings, which you can adjust on a per-event basis directly in the Teams meeting options UI.
 
-:::image type="content" source="media/teams-webinar-settings.png" alt-text="Create unmapped form fields for your event." lightbox="media/teams-webinar-settings.png":::
+:::image type="content" source="media/teams-web-settings.png" alt-text="Screenshot of settings for Teams webinars." lightbox="media/teams-web-settings.png":::
 
 Read more: [Manage meeting settings in Microsoft Teams](/microsoftteams/meeting-settings-in-teams).
 
@@ -54,12 +54,13 @@ Read more: [Manage meeting settings in Microsoft Teams](/microsoftteams/meeting-
 
 ## Create a registration experience for Teams webinar v2
 Teams Webinars scheduled via Customer Insights – Journeys (CIJ) rely on event registrations for each event. These registrations are regularly synced with the corresponding Teams Webinar, ensuring that the list of registrants is automatically updated whenever a new registration is received in CIJ.
-To create a seamless webinar registration experience, follow one of the available options described in the official guide:[Create an event registration experience](ci-docs/journeys/event-registration-experience.md).
+To create a seamless webinar registration experience, follow one of the available options described in the official guide: [Create an event registration experience](event-registration-experience.md).
 
 ### View webinar engagement data
 
 After you run a Teams webinar-based Customer Insights - Journeys event, you can view the attendee engagement data (check-in and check-out times) in the Customer Insights - Journeys app. To generate the engagement data, send an email invite to webinar registrants before the event that contains the webinar **Join in Teams** link. See [Inviting registrants to attend the Teams event through email](teams-webinar.md#inviting-registrants-to-attend-the-teams-event-through-email) for details about creating an invite email in the Customer Insights - Journeys email designer. 10 minutes after the webinar ends (based on the end date configured in the Customer Insights - Journeys app), the Customer Insights - Journeys app will automatically populate the engagement data for attendees with the updated check-in, checkout times and total attendance duration in minutes.
 
 > [!IMPORTANT]
-> Organizations that manage their Teams user policies need to make sure that the admin enables theOnlineMeetingArtifact.Read.All API permissions in the Teams authentication app before synchronizing the engagement data. For more information, see [Teams authentication in CIJ](/journeys/teams-authentication.md)
+> Organizations that manage their Teams user policies need to make sure that the admin enables theOnlineMeetingArtifact.Read.All API permissions in the Teams authentication app before synchronizing the engagement data. For more information, see [Teams authentication in Customer Insights - Journeys](teams-authentication.md)
 
+[!INCLUDE [footer-include](./includes/footer-banner.md)]
