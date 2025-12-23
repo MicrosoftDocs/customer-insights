@@ -18,7 +18,7 @@ The email API lets you access emails you sent to your customers, ensuring you ha
 
 ### API endpoint
 
-```HTTP
+```HTTPS
 POST <Organization URL>/api/data/v9.0/msdynmkt_EmailRetrieveExactMessages
 ```
 
@@ -69,7 +69,7 @@ The <**Organization URL**> should be replaced with the actual URL of the organiz
 
 ## Response body
 
-### Top-level response fields:
+### Top-level response fields
 
 | Field | Type | Description |
 |---|---|---|
@@ -78,7 +78,7 @@ The <**Organization URL**> should be replaced with the actual URL of the organiz
 | ResultCode | Number | **200** indicates success. Any non-200 number means the operation failed. |
 | Error | String or null | If `ResultCode` != 200, this contains the error description; otherwise, null. |
 
-### Relevant `ApiResponseData` fields:
+### Relevant `ApiResponseData` fields
 
 | Field | Type | Description |
 |---|---|---|
@@ -99,7 +99,7 @@ The <**Organization URL**> should be replaced with the actual URL of the organiz
 
 ## Usage example
 
-```POWERSHELL
+```PowerShell
 # Variables
 $tenantId    = "n490b1w9-8975-6t45-b844-8fyuo12cc5we" # your Tenant ID
 $appId    = "fjgg175f-9w2w-4156-e9od-w05f8lk9324" # Application (client) ID
@@ -122,7 +122,7 @@ $response = Invoke-RestMethod -Method Post -Uri $tokenUrl -Body $body
 $accessToken = $response.access_token
 
 # API endpoint
-$apiUrl = https://yourorg.crm10.dynamics.com/api/data/v9.0/msdynmkt_EmailRetrieveExactMessages"
+$apiUrl = "https://yourorg.crm10.dynamics.com/api/data/v9.0/msdynmkt_EmailRetrieveExactMessages"
 
 # Request params
 $profileId = "543ab9o9-5433-23e2-t5t5-ba890d1n5n52"
