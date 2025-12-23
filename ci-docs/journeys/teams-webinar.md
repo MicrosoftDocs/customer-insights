@@ -4,6 +4,7 @@ description: Learn how to create and host live Microsoft Teams webinars in Dynam
 ms.date: 12/22/2025
 ms.topic: how-to
 author: terezakirk
+ms.author: terezakirk
 ms.reviewer: alfergus
 search.audienceType: 
   - admin

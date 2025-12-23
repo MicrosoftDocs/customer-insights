@@ -4,6 +4,7 @@ description: Learn how to create and host Teams meeting in Customer Insights - J
 ms.date: 11/26/2025
 ms.topic: how-to
 author: terezakirk
+ms.author: terezakirk
 ms.reviewer: alfergus
 search.audienceType: 
   - admin
