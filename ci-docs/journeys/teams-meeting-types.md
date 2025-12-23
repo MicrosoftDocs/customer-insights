@@ -4,7 +4,7 @@ description: Learn how to create and host live events in Dynamics 365 Customer I
 ms.date: 12/22/2025
 ms.topic: how-to
 author: terezakirk
-ms.author: alfergus
+ms.reviewer: alfergus
 search.audienceType: 
   - admin
   - customizer

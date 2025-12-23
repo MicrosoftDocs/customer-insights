@@ -1,17 +1,17 @@
 ---
-title: Use Microsoft Teams for Dynamics 365 Customer Insights - Journeys online events
-description: Learn how to create and host live events in Dynamics 365 Customer Insights - Journeys using Microsoft Teams as the webinar provider.
-ms.date: 11/06/2025
+title: Use Microsoft Teams webinars in Dynamics 365 Customer Insights - Journeys
+description: Learn how to create and host live Microsoft Teams webinars in Dynamics 365 Customer Insights - Journeys.
+ms.date: 12/22/2025
 ms.topic: how-to
-author: alfergus
-ms.author: alfergus
+author: terezakirk
+ms.reviewer: alfergus
 search.audienceType: 
   - admin
   - customizer
   - enduser
 ---
 
-# Use Microsoft Teams for Dynamics 365 Customer Insights - Journeys online events
+# Use Microsoft Teams webinars in Dynamics 365 Customer Insights - Journeys
 
 [!INCLUDE [azure-ad-to-microsoft-entra-id](./includes/azure-ad-to-microsoft-entra-id.md)]
 
@@ -19,7 +19,7 @@ search.audienceType:
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=46b08db8-059a-40c7-928e-6b596f087907]
 
-This article explains how to use Microsoft Teams as an online meeting provider for Customer Insights - Journeys events. Teams event functionality is incorporated directly into the Customer Insights - Journeys app, allowing you to use Teams webinars or Teams live events for one/some to many online events, and Teams meetings for interactive online meetings.
+This article explains how to use Microsoft Teams webinars for Customer Insights - Journeys events. Teams webinar functionality is incorporated directly into the Customer Insights - Journeys app, allowing you to use Teams webinars for one/some to many online events.
 
 For general information about setting up Microsoft Teams, refer to the [Microsoft Teams deployment overview](/microsoftteams/deploy-overview).
 
