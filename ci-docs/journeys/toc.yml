@@ -112,8 +112,6 @@
     href: role-permissions.md
   - name: Integrate with Dynamics 365 Customer Insights - Data
     href: ci-get-started.md
-  - name: Create consistent branding with brand profiles
-    href: brand-profiles.md  
   - name: Import data
     href: import-data.md
   - name: Export data
@@ -416,9 +414,15 @@
         href: event-from-event.md
     - name: Host a streamed event with Microsoft Teams
       items:
-      - name: Set up a Teams webinar
+      - name: Overview of Teams meeting types 
+        href: teams-meeting-types.md
+      - name: Set up a legacy Teams webinar, meeting, or live event
         href: teams-webinar.md
-      - name: Set up a Teams Town Hall
+      - name: Set up a Teams meeting v2
+        href: teams-meeting-version-2.md
+      - name: Set up a Teams webinar v2
+        href: teams-web-version-2.md
+      - name: Set up a Teams town hall
         href: teams-town-hall.md
       - name: Optimize your event check-in flow
         href: optimize-check-in.md
@@ -652,10 +656,14 @@
         href: manage-word-templates.md
     - name: Data management settings
       href: data-management-settings.md
+    - name: Create consistent branding with brand profiles
+      href: brand-profiles.md  
     - name: Set up quiet times
       href: real-time-marketing-quiet-times.md
     - name: Set up frequency capping
       href: real-time-marketing-frequency-cap.md
+    - name: Teams authentication
+      href: teams-authentication.md
     - name: Add or remove sample data
       href: /power-platform/admin/add-remove-sample-data
     - name: Quota limits
