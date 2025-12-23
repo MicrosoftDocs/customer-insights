@@ -419,9 +419,9 @@
       - name: Set up a Teams webinar, meeting, or live event
         href: teams-webinar.md
       - name: Set up a Teams meeting v2
-        href: teams-meetingv2.md
+        href: teams-meeting-version-2.md
       - name: Set up a Teams webinar v2
-        href: teams-webinarv2.md
+        href: teams-webinar-version-2.md
       - name: Set up a Teams Town Hall
         href: teams-town-hall.md
       - name: Optimize your event check-in flow
