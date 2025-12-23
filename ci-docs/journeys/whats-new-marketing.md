@@ -38,6 +38,7 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 - **Export copies of sent emails for record keeping**
 	- With the new email export API, you can now automatically export exact copies of every email you send to your customers, ensuring you have a reliable and verifiable record. This capability not only saves time but also enhances your ability to manage customer interactions and resolve disputes efficiently.
 	- [Release plan](/dynamics365/release-plan/2025wave2/customer-insights/dynamics365-customer-insights-journeys/export-copies-sent-emails-record-keeping)
+	- [Docs](./developer/email-api.md)
 
 - **Wait on segment membership to trigger next step in a journey**
 	- Get more control over your customers' experience by waiting for them to become a member of a segment before continuing to the next steps in a journey. With this capability, you can personalize each customer's experience by choosing the correct path and actions relevant to individual customers based on whether they're in a segment. This capability adds to existing if/then capabilities that let you wait for a customer to open an email, click a link, or wait for another trigger to be activated before moving on to the next step in the journey.
