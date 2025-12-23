@@ -416,7 +416,7 @@
       items:
       - name: Overview of Teams meeting types 
         href: teams-meeting-types.md
-      - name: Set up a Teams webinar, meeting, or live event
+      - name: Set up a legacy Teams webinar, meeting, or live event
         href: teams-webinar.md
       - name: Set up a Teams meeting v2
         href: teams-meeting-version-2.md
