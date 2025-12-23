@@ -1,7 +1,7 @@
 ---
 title: Use Microsoft Teams meetings v2 for Customer Insights - Journeys online events
-description: Learn how to create and host Teams meeting in Customer Insights - Journeys.
-ms.date: 11/26/2025
+description: Learn how to create and host Teams meeting v2 in Customer Insights - Journeys.
+ms.date: 12/22/2025
 ms.topic: how-to
 author: terezakirk
 ms.author: terezakirk
@@ -20,9 +20,11 @@ After selecting Teams meeting v2 as the streaming provider for your event, you s
 
 :::image type="content" source="media/teams-meetings-settings.png" alt-text="Screenshot of Teams meeting settings" lightbox="media/teams-meetings-settings.png":::
 
-After you save your event, your settings will be reflected in your Teams calendar item. As an organizer, you will receive an automated email directly from Teams. After creating the event, going live with it, you should [send the registrants an email](email-design.md) to provide the attendee URL. In the Customer Insights - Journeys email designer, you’ll find a **Join in Teams** option in the **Link to** menu for the button element. The **Join in Teams** button generates a unique attendee URL for each attendee.
+After you save your event, your settings are reflected in your Teams calendar item. As an organizer, you receive an automated email directly from Teams. 
 
-> [!NOTE]
+After creating the event, going live with it, you should [send the registrants an email](email-design.md) to provide the attendee URL. In the Customer Insights - Journeys email designer, you can find a **Join in Teams** option in the **Link to** menu for the button element. The **Join in Teams** button generates a unique attendee URL for each attendee.
+
+> [!IMPORTANT]
 > Synchronization between Teams and Customer Insights - Journeys works in one direction: from Customer Insights - Journeys to Teams. The Teams calendar item for your event is read-only. Any changes you make in Teams may be overwritten by Customer Insights - Journeys. Make sure to manage and edit your meeting only from the Customer Insights - Journeys app.
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
