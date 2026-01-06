@@ -53,7 +53,7 @@ Ownership of the customer profiles is determined based on mappings that are conf
 1. Under **Business unit data separation**, select the column that identifies the business unit for each entity that contributes to unification. You can't add unification rules on the selected columns.
 1. Under **Associate customer profiles with business units**, specify the mapping between the values in the selected columns and business unit teams. Only teams that have the *Customer Insights Data Read Access* role are available for selection. For example, 'A' maps to the business unit A team and 'B' maps to the business unit B team.
 
-   :::image type="content" source="media/BU_mappings.png" alt-text="Screenshot of business unit mapping.":::
+   :::image type="content" source="media/BU_mappings.png" alt-text="Screenshot of business unit mapping." lightbox="media/BU_mappings.png":::
 
 Teams within business units (not business units directly) own customer profiles to provide better control of data access. You can specify only one team per business unit in the mapping rules.
 
