@@ -5,7 +5,7 @@ ms.date: 01/07/2026
 ms.topic: article
 author: alfergus
 ms.author: alfergus
-ms.reviewer: v-wendysmith
+ms.reviewer: colinbirkett
 search.audienceType: 
   - admin
   - customizer
