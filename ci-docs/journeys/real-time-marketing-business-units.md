@@ -65,7 +65,7 @@ Business units affect forms as follows:
 
 ## Business unit scoping from Customer Insights - Data and Customer Insights - Journeys
 
-Enabling business units scoping in Customer Insights - Data impacts how certain items appear and work in Customer Insights - Journeys. [When business units scoping is enabled in Customer Insights - Data](../data/business-units-data-separation.md), Customer Insights - Data writes the specific ownership on each insight record, Customer Insights - Journeys then respects that ownership at design‑time (what is selectable) and run‑time (who gets processed).
+Enabling business units scoping in Customer Insights - Data impacts how certain items appear and work in Customer Insights - Journeys. [When business units scoping is enabled in Customer Insights - Data](../data/business-units-data-separation.md), Customer Insights - Data writes the specific ownership on each insight record. Customer Insights - Journeys then respects that ownership at design‑time (what is selectable) and run‑time (who gets processed).
 
 For more information on how business unit separation affects insights and activation in Customer Insights - Data and Customer Insights - Journeys, see [From Customer Insights ‑ Data to Customer Insights ‑ Journeys: How BU separation affects insights and activation](https://community.dynamics.com/blogs/post/?postid=d4d7c64c-1ddc-f011-8544-000d3a110039). In this blog post, you can see a table comparing how specific Customer Insights - Data items appear and behave in Customer Insights - Journeys.
 
