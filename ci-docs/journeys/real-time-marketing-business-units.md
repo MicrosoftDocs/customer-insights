@@ -63,7 +63,7 @@ Business units affect forms as follows:
 1. Read the customer agreement displayed in the prompt and select on **I Agree** to turn on the feature.
 1. Select **Save** in the upper right.
 
-## Business unit scoping from Customer Insights - Data and Customer Insights - Journeys
+## Business unit scoping from Customer Insights - Data to Customer Insights - Journeys
 
 Enabling business units scoping in Customer Insights - Data impacts how certain items appear and work in Customer Insights - Journeys. [When business units scoping is enabled in Customer Insights - Data](../data/business-units-data-separation.md), Customer Insights - Data writes the specific ownership on each insight record. Customer Insights - Journeys then respects that ownership at design‑time (what is selectable) and run‑time (who gets processed).
 
