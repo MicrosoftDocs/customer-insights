@@ -43,9 +43,9 @@ Get a 360-degree view of your customers directly in Dynamics 365 apps. With the 
 
 The Customer Card Add-in is a solution for customer engagement apps in Dynamics 365. To install the solution:
 
-1. Go to AppSource and search for **Dynamics Customer Card**.
+1. Go to Marketplace and search for **Dynamics Customer Card**.
 
-1. Select the [Customer Card Add-in on AppSource](https://appsource.microsoft.com/product/dynamics-365/mscrm.dynamics_365_customer_insights_customer_card_addin?tab=Overview) and select **Get It Now**.
+1. Select the [Customer Card Add-in on Marketplace](https://marketplace.microsoft.com/product/dynamics-365/mscrm.dynamics_365_customer_insights_customer_card_addin?tab=Overview) and select **Get It Now**.
 
 You may need to sign in with your admin credentials for the Dynamics 365 app to install the solution. It can take some time for the solution to be installed to your environment.
 

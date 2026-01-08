@@ -1148,7 +1148,7 @@
           href: developer/create-workflow-plugin-custom-channel.md
         - name: "Step 4: Test your custom channel tile"
           href: developer/test-custom-channel-tile.md
-      - name: Publish custom channel on AppSource
+      - name: Publish custom channel on Marketplace
         href: developer/publish-custom-channel-appsource.md
       - name: Configure and use custom channel
         href: developer/configure-use-custom-channel.md
