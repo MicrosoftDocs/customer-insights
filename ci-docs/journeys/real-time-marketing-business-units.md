@@ -1,10 +1,11 @@
 ---
 title: Business unit support in real-time journeys
 description: Learn how to use business unit support in Dynamics 365 Customer Insights - Journeys.
-ms.date: 03/18/2023
+ms.date: 01/07/2026
 ms.topic: article
 author: alfergus
 ms.author: alfergus
+ms.reviewer: colinbirkett
 search.audienceType: 
   - admin
   - customizer
@@ -18,7 +19,7 @@ Business unit scoping in Customer Insights - Journeys can be enabled at an envir
 > [!IMPORTANT]
 > If you [enable Business Unit scoping in Customer Insights - Journeys](real-time-marketing-business-units.md#enabling-business-unit-scopes-in-customer-insights---journeys), any newly created journeys and segments and only process audience members from the owning business unit of the journey/segment.
 >
-> Audience members that belong to any child unit of the business unit in which the journey or segment was created will not be processed.  
+> Audience members that belong to any child unit of the business unit in which the journey or segment was created won't be processed.  
 
 ## Segment scopes, membership, and member lists
 
@@ -61,6 +62,12 @@ Business units affect forms as follows:
 1. Set the **Business Unit Scoping (Customer Insights - Journeys)** toggle to **On**.
 1. Read the customer agreement displayed in the prompt and select on **I Agree** to turn on the feature.
 1. Select **Save** in the upper right.
+
+## Business unit scoping from Customer Insights - Data to Customer Insights - Journeys
+
+Enabling business units scoping in Customer Insights - Data impacts how certain items appear and work in Customer Insights - Journeys. [When business units scoping is enabled in Customer Insights - Data](../data/business-units-data-separation.md), Customer Insights - Data writes the specific ownership on each insight record. Customer Insights - Journeys then respects that ownership at design‑time (what is selectable) and run‑time (who gets processed).
+
+For more information on how business unit separation affects insights and activation in Customer Insights - Data and Customer Insights - Journeys, see [From Customer Insights ‑ Data to Customer Insights ‑ Journeys: How BU separation affects insights and activation](https://community.dynamics.com/blogs/post/?postid=d4d7c64c-1ddc-f011-8544-000d3a110039). In this blog post, you can see a table comparing how specific Customer Insights - Data items appear and behave in Customer Insights - Journeys.
 
 ### See also
 
