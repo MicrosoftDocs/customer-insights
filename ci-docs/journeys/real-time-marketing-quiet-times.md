@@ -109,7 +109,7 @@ To set up quiet times overnight, create a separate evening quiet time and mornin
 > -	Quiet dates—Full day blocks, which can cover up to 14 consecutive days.
 > -	Quiet hours—Recurring weekly rules, which can add more blocked days depending on where they fall within the quiet date window.
 >
-> The combined quiet times effect (both quiet dates and quiet hours) must stay within the 21 day maximum. [Send Now](email-without-journey.md) doesn’t support quiet times.
+> The combined quiet times effect (both quiet dates and quiet hours) must stay within the 21 day maximum. [Send now](email-without-journey.md) doesn’t support quiet times.
 
 ### Set up quiet dates
 
