@@ -21,8 +21,7 @@ Your marketing email messages are seen by many potential customers, so make sure
 
 > [!IMPORTANT]
 > Previews and test sends let you quickly test your design. However, not all features work with them. The following limitations apply:
->
-> - [For-each loops](dynamic-email-content.md#for-each) don't render.
+> 
 > - [Subscription center links](set-up-subscription-center.md#test-sub-center) open the subscription center page, but the page won't function.
 > - You can test send the [double opt-in email](real-time-marketing-double-opt-in.md#double-opt-in-confirmation-email) layout but you can't test the actual logic behind it. This is because the logic depends on the compliance profile assigned to each audience and varies depending on how dynamic placeholders are resolved.
 > - To test an email that contains placeholders that point to Dataverse tables, the user running the test must have [read permissions](role-permissions.md) for the tables.
