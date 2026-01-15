@@ -930,8 +930,6 @@
         href: manage-segments-from-contacts.md
       - name: Export dynamic-segment members to Excel
         href: segments-export-members.md
-    - name: Use Customer Insights - Data segments in Customer Insights - Journeys
-      href: customer-insights-segments.md
     - name: Work with segment templates
       href: segments-templates.md
     - name: Market to Dynamics 365 segments on LinkedIn

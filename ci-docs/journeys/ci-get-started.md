@@ -32,8 +32,6 @@ Learn more: [Use Customer Insights - Data profiles and segments in Customer Insi
 
 Customer Insights - Data allows you to refine data from many sources and combine it into aggregated customer segments. By connecting Customer Insights - Data with outbound marketing, these segments will automatically appear *and* refresh automatically in the customer journey designer.
 
-Learn more: [Use segments from Dynamics 365 Customer Insights - Data with Dynamics 365 Customer Insights - Journeys](customer-insights-segments.md)
-
 ## Pull data from your own Azure Data Lake Storage
 
 You aren't limited to cloud storage if you want to use Customer Insights - Data with Customer Insights - Journeys. If you already have your own Azure Data Lake Storage set up, you can connect with Customer Insights - Data, then share the data with the Customer Insights - Journeys app just as you would with a cloud-based setup.
