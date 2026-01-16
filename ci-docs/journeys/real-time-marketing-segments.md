@@ -15,26 +15,6 @@ search.audienceType:
 
 Customer Insights - Journeys uses [segments](segmentation-lists-subscriptions.md) directly from outbound marketing and [Customer Insights - Data](/dynamics365/customer-insights/index). You can view the segments available to you in Customer Insights - Journeys by going to **Audience** > **Segments**.
 
-## Segments from outbound marketing
-
-> [!NOTE]
-> Only use outbound marketing segments that contain fewer than 750,000 members. Larger segments result in a slow export process and can lead to timeouts. Due to the resource-intensive nature of exporting large segments, segments with more than 750,000 members cannot be guaranteed to be fresh.
-
-To create a journey based on a segment from outbound marketing:
-
-1. Go to **Audience** > **Segments**.
-1. Select any segment, then select **+New journey** in the top ribbon.
-
-A new screen will open allowing you to use your selected segment to start your **Segment-based** journey.
-
-You can also start a new journey from the segment details page.
-
-To create a journey from the details page:
-
-1. Go to **Audience** > **Segments**.
-1. Select the name of any segment.
-1. From the details page, select **+New journey** in the top ribbon.
-
 ## Create a new segment within your customer journey
 
 You can create a new segment directly within the customer journey editor by selecting any **Attribute** tile, then going to **Segment** > **Look for segment** > **+New segment** in the right-side pane.
