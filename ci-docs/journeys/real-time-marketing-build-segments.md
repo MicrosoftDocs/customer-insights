@@ -1,7 +1,7 @@
 ---
 title: Build segments in Customer Insights - Journeys 
 description: Learn how to build segments to use in real-time journeys in Dynamics 365 Customer Insights - Journeys.
-ms.date: 10/31/2025
+ms.date: 01/19/2026
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -32,12 +32,16 @@ To target leads directly, go to **Customer Insights - Journeys** > **Audience** 
 > [!div class="mx-imgBorder"]
 > ![Create a segment to target leads.](media/real-time-marketing-build-segment-create.png "Create a segment to target leads")
 
+:::image type="content" source="media/real-time-marketing-build-segment-create.png" alt-text="Create a segment to target leads." lightbox="media/real-time-marketing-build-segment-create.png":::
+
 In the right pane of the segment builder, you can search for attributes to add to the builder canvas.
 
 **Example:** Qualifying leads that are scheduled for a follow-up in the next seven days:
 
 > [!div class="mx-imgBorder"]
 > ![Search for attributes.](media/real-time-marketing-build-segment-attribute.png "Search for attributes")
+
+:::image type="content" source="media/real-time-marketing-build-segment-attribute.png" alt-text="Search for attributes." lightbox="media/real-time-marketing-build-segment-attribute.png":::
 
 ## Create demographic segment using related tables
 
@@ -58,10 +62,14 @@ Search for "industry" on the right-side pane and select the **+** button to the 
 > [!div class="mx-imgBorder"]
 > ![Search for related tables.](media/real-time-marketing-build-segment-industry.png "Search for related tables")
 
+:::image type="content" source="media/real-time-marketing-build-segment-industry.png" alt-text="Search for related tables." lightbox="media/real-time-marketing-build-segment-industry.png":::
+
 Select "Account > **Lead**" for the relationship path, then select the **Next** button. Next, set the path between the Lead and Account tables to be "Parent Account for lead" according to the segment definition, then select the **Set Path** button.
 
 > [!div class="mx-imgBorder"]
 > ![Set the path between the Lead and Account tables.](media/real-time-marketing-build-segment-path.png "Set the path between the Lead and Account tables")
+
+:::image type="content" source=media/real-time-marketing-build-segment-path.png" alt-text="Set the path between the Lead and Account tables." lightbox="media/real-time-marketing-build-segment-path.png":::
 
 ## Previewing segment members and size estimate
 
@@ -72,6 +80,8 @@ To see a list of the first set of segment members the app fetched based on your 
 > [!div class="mx-imgBorder"]
 > ![View sample of included segment members.](media/real-time-marketing-build-segment-members.png "View sample of included segment members")
 
+:::image type="content" source="(media/real-time-marketing-build-segment-members.png" alt-text="View sample of included segment members." lightbox="(media/real-time-marketing-build-segment-members.png":::
+
 ## Add a subgroup to your segment
 
 **Example:** Leads with company size of more than 10,000 employees, whose parent accounts are in either the Consumer Services or Financial Services industry.
@@ -81,10 +91,14 @@ You can choose your attribute to be added to a new subgroup. To do this, search 
 > [!div class="mx-imgBorder"]
 > ![Add a subgroup.](media/real-time-marketing-segment-builder-subgroup.png "Add a subgroup")
 
+:::image type="content" source="media/real-time-marketing-segment-builder-subgroup.png" alt-text="Add a subgroup." lightbox="media/real-time-marketing-segment-builder-subgroup.png":::
+
 To include members from either subgroup, select the **or** subgroup operator.
 
 > [!div class="mx-imgBorder"]
 > ![Use the or operator.](media/real-time-marketing-segment-builder-or.png "Use the or operator")
+
+:::image type="content" source="media/real-time-marketing-segment-builder-or.png" alt-text="Use the or operator." lightbox="media/real-time-marketing-segment-builder-or.png":::
 
 ## Add a new group to a segment (preview)
 
@@ -99,10 +113,14 @@ To create the segment from the above example, create a new segment in Customer I
 > [!div class="mx-imgBorder"]
 > ![add a new group to a segment](media/real-time-marketing-add-a-new-group.png "add a new group to a segment")
 
+:::image type="content" source="media/real-time-marketing-add-a-new-group.png" alt-text="add a new group to a segment." lightbox=media/real-time-marketing-add-a-new-group.png":::
+
 In the above example, the attribute was added to a new group (Group 2). To create the segment you want, select the operator button between the groups.
 
 > [!div class="mx-imgBorder"]
 > ![select your operator between groups](media/real-time-marketing-select-your-operator-between-groups.png "select your operator between groups")
+
+:::image type="content" source="media/real-time-marketing-select-your-operator-between-groups.png" alt-text="select your operator between groups." lightbox=media/real-time-marketing-select-your-operator-between-groups.pngg":::
 
 > [!Note]
 > Calculated and Formula Dataverse table fields aren't supported in real-time journeys segmentation. The segmentation backend doesn't receive an update signal when a Calculated or a Formula field is updated. This is by design, as values of Calculated and Formula fields aren't persisted anywhere, they're just calculated on the fly. To address this, the app now shows Calculated and Formula fields as **disabled** in the real-time journeys segment designer (with an appropriate tooltip).
