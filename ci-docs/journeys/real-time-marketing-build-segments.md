@@ -69,7 +69,7 @@ Select "Account > **Lead**" for the relationship path, then select the **Next** 
 > [!div class="mx-imgBorder"]
 > ![Set the path between the Lead and Account tables.](media/real-time-marketing-build-segment-path.png "Set the path between the Lead and Account tables")
 
-:::image type="content" source=media/real-time-marketing-build-segment-path.png" alt-text="Set the path between the Lead and Account tables." lightbox="media/real-time-marketing-build-segment-path.png":::
+:::image type="content" source="media/real-time-marketing-build-segment-path.png" alt-text="Set the path between the Lead and Account tables." lightbox="media/real-time-marketing-build-segment-path.png":::
 
 ## Previewing segment members and size estimate
 
@@ -80,7 +80,7 @@ To see a list of the first set of segment members the app fetched based on your 
 > [!div class="mx-imgBorder"]
 > ![View sample of included segment members.](media/real-time-marketing-build-segment-members.png "View sample of included segment members")
 
-:::image type="content" source="(media/real-time-marketing-build-segment-members.png" alt-text="View sample of included segment members." lightbox="(media/real-time-marketing-build-segment-members.png":::
+:::image type="content" source="media/real-time-marketing-build-segment-members.png" alt-text="View sample of included segment members." lightbox="media/real-time-marketing-build-segment-members.png":::
 
 ## Add a subgroup to your segment
 
@@ -113,14 +113,14 @@ To create the segment from the above example, create a new segment in Customer I
 > [!div class="mx-imgBorder"]
 > ![add a new group to a segment](media/real-time-marketing-add-a-new-group.png "add a new group to a segment")
 
-:::image type="content" source="media/real-time-marketing-add-a-new-group.png" alt-text="add a new group to a segment." lightbox=media/real-time-marketing-add-a-new-group.png":::
+:::image type="content" source="media/real-time-marketing-add-a-new-group.png" alt-text="add a new group to a segment." lightbox="media/real-time-marketing-add-a-new-group.png":::
 
 In the above example, the attribute was added to a new group (Group 2). To create the segment you want, select the operator button between the groups.
 
 > [!div class="mx-imgBorder"]
 > ![select your operator between groups](media/real-time-marketing-select-your-operator-between-groups.png "select your operator between groups")
 
-:::image type="content" source="media/real-time-marketing-select-your-operator-between-groups.png" alt-text="select your operator between groups." lightbox=media/real-time-marketing-select-your-operator-between-groups.pngg":::
+:::image type="content" source="media/real-time-marketing-select-your-operator-between-groups.png" alt-text="select your operator between groups." lightbox="media/real-time-marketing-select-your-operator-between-groups.pngg":::
 
 > [!Note]
 > Calculated and Formula Dataverse table fields aren't supported in real-time journeys segmentation. The segmentation backend doesn't receive an update signal when a Calculated or a Formula field is updated. This is by design, as values of Calculated and Formula fields aren't persisted anywhere, they're just calculated on the fly. To address this, the app now shows Calculated and Formula fields as **disabled** in the real-time journeys segment designer (with an appropriate tooltip).
