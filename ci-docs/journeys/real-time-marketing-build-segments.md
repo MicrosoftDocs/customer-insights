@@ -29,17 +29,11 @@ You can now create dynamic segments targeting leads directly without having to c
 
 To target leads directly, go to **Customer Insights - Journeys** > **Audience** > **Segments** and select **+ New Segment** in the top toolbar. You can then name the new segment and select **Lead** under the **Select a target audience** dropdown. After you select the **Create** button, you'll be taken directly to the segment builder where you can create and save your segment.
 
-> [!div class="mx-imgBorder"]
-> ![Create a segment to target leads.](media/real-time-marketing-build-segment-create.png "Create a segment to target leads")
-
 :::image type="content" source="media/real-time-marketing-build-segment-create.png" alt-text="Create a segment to target leads." lightbox="media/real-time-marketing-build-segment-create.png":::
 
 In the right pane of the segment builder, you can search for attributes to add to the builder canvas.
 
 **Example:** Qualifying leads that are scheduled for a follow-up in the next seven days:
-
-> [!div class="mx-imgBorder"]
-> ![Search for attributes.](media/real-time-marketing-build-segment-attribute.png "Search for attributes")
 
 :::image type="content" source="media/real-time-marketing-build-segment-attribute.png" alt-text="Search for attributes." lightbox="media/real-time-marketing-build-segment-attribute.png":::
 
@@ -59,15 +53,9 @@ When adding an attribute that relates to a different table, you can search for t
 
 Search for "industry" on the right-side pane and select the **+** button to the right of the item in the table you want. You'll see all possible combinations of how the Lead and Account tables are related.
 
-> [!div class="mx-imgBorder"]
-> ![Search for related tables.](media/real-time-marketing-build-segment-industry.png "Search for related tables")
-
 :::image type="content" source="media/real-time-marketing-build-segment-industry.png" alt-text="Search for related tables." lightbox="media/real-time-marketing-build-segment-industry.png":::
 
 Select "Account > **Lead**" for the relationship path, then select the **Next** button. Next, set the path between the Lead and Account tables to be "Parent Account for lead" according to the segment definition, then select the **Set Path** button.
-
-> [!div class="mx-imgBorder"]
-> ![Set the path between the Lead and Account tables.](media/real-time-marketing-build-segment-path.png "Set the path between the Lead and Account tables")
 
 :::image type="content" source="media/real-time-marketing-build-segment-path.png" alt-text="Set the path between the Lead and Account tables." lightbox="media/real-time-marketing-build-segment-path.png":::
 
@@ -77,9 +65,6 @@ When you're satisfied with your segment definition, select **Refresh** on the bo
 
 To see a list of the first set of segment members the app fetched based on your definition, select **View sample of included members** on the bottom toolbar. This gives you an estimate of who is in this segment.
 
-> [!div class="mx-imgBorder"]
-> ![View sample of included segment members.](media/real-time-marketing-build-segment-members.png "View sample of included segment members")
-
 :::image type="content" source="media/real-time-marketing-build-segment-members.png" alt-text="View sample of included segment members." lightbox="media/real-time-marketing-build-segment-members.png":::
 
 ## Add a subgroup to your segment
@@ -88,15 +73,9 @@ To see a list of the first set of segment members the app fetched based on your 
 
 You can choose your attribute to be added to a new subgroup. To do this, search for the attribute, then select the name of the attribute item from the results. A contextual menu pops up that allows you to add the item to a new or existing subgroup.
 
-> [!div class="mx-imgBorder"]
-> ![Add a subgroup.](media/real-time-marketing-segment-builder-subgroup.png "Add a subgroup")
-
 :::image type="content" source="media/real-time-marketing-segment-builder-subgroup.png" alt-text="Add a subgroup." lightbox="media/real-time-marketing-segment-builder-subgroup.png":::
 
 To include members from either subgroup, select the **or** subgroup operator.
-
-> [!div class="mx-imgBorder"]
-> ![Use the or operator.](media/real-time-marketing-segment-builder-or.png "Use the or operator")
 
 :::image type="content" source="media/real-time-marketing-segment-builder-or.png" alt-text="Use the or operator." lightbox="media/real-time-marketing-segment-builder-or.png":::
 
@@ -110,15 +89,9 @@ To include members from either subgroup, select the **or** subgroup operator.
 
 To create the segment from the above example, create a new segment in Customer Insights - Journeys for leads whose company size is 10,001 or more. Open the **Elements** pane by selecting the top icon on the menu on the right side of the window. Then, go to the **Attributes** tab and search for the **Budget Amount** attribute. Select the icon to the left of the attribute name from the results list. A contextual menu appears, allowing you to add the attribute to an existing or new group.
 
-> [!div class="mx-imgBorder"]
-> ![add a new group to a segment](media/real-time-marketing-add-a-new-group.png "add a new group to a segment")
-
 :::image type="content" source="media/real-time-marketing-add-a-new-group.png" alt-text="add a new group to a segment." lightbox="media/real-time-marketing-add-a-new-group.png":::
 
 In the above example, the attribute was added to a new group (Group 2). To create the segment you want, select the operator button between the groups.
-
-> [!div class="mx-imgBorder"]
-> ![select your operator between groups](media/real-time-marketing-select-your-operator-between-groups.png "select your operator between groups")
 
 :::image type="content" source="media/real-time-marketing-select-your-operator-between-groups.png" alt-text="Select your operator between groups." lightbox="media/real-time-marketing-select-your-operator-between-groups.png":::
 
