@@ -103,5 +103,6 @@ Once you've reviewed the above notes and confirmed your eligibility, fill out [t
 | June 2025 | Users creating new outbound marketing journeys, segments, or forms get a message dialog asking them to create these assets in real-time journeys instead of outbound marketing. |
 | July 2025 | Email and message center notification (MC1119263) to admins about start of the [phased removal process](transition-faqs.md#what-will-happen-after-june-30-2025-will-outbound-marketing-stop-working-updated-november-21-2025). |
 | November 2025 | Email and message center notification (MC1189547) to admins about the start of the outbound marketing removal [phased removal process](transition-faqs.md#what-will-happen-after-june-30-2025-will-outbound-marketing-stop-working-updated-november-21-2025). |
+| January 2026 | Email and message center notification (MC1214404) to admins about next phase of outbound marketing removal where live journeys, forms, events, etc. will be stopped. |
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
