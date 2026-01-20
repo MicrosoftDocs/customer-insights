@@ -43,15 +43,6 @@ The following tables list each available feature, preview status, and links for 
 | UTM tracking | Production | [Enable UTM values to be automatically added to every link in your messages. This allows source tracking within third-party tools like Google Analytics](real-time-marketing-utm.md).|
 | Bot protection | Production| [Filter out nonhuman click interactions](bot-protection.md). |
 
-## Event management
-
-| Feature switch | Preview or production | Description |
-|---|---|---|
-| Event registration forms | Preview | [Enable marketing forms to submit event registrations](event-forms.md).|
-| Enable events creation in real-time journeys | Production | [Enable events creation in real-time marketing](set-up-event.md).|
-| Enable session level registration in real-time journeys| Production | [Enable session level registration in real-time journeys](session-level-registration-outbound.md). |
-| Waitlist in Real-time Journeys | Preview | Enable waitlist functionality for events/sessions, allowing attendees to join a waitlist if an event or a session is full. |
-
 ## Customer journey
 
 | Feature switch | Preview or production | Description |
