@@ -2582,6 +2582,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "ci-docs/journeys/real-time-marketing-include-exclude.md ",
+      "redirect_url": "real-time-marketing-build-segments#use-csv-files-to-define-static-segment-membership-lists-for-up-to-2000000-members",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "ci-docs/journeys/real-time-marketing-interactions-reference.md",
       "redirect_url": "/dynamics365/customer-insights/journeys/fabric-integration",
       "redirect_document_id": false
