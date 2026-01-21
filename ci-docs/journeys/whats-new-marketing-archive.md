@@ -1152,7 +1152,7 @@ Monthly enhancement includes an upgraded side pane for goals and exit criteria.
 - **Individually manage segment members with inclusions and exclusions**
     - Adding manual inclusions or exclusions is a powerful way to augment segment-building criteria. Manually include or exclude specific people to ensure that segments always reach VIP customers. Or use inclusions and exclusions as an easy way to build test segments for journeys.
     - [Release plan](/dynamics365-release-plan/2022wave2/marketing/dynamics365-marketing/individually-manage-segment-members-inclusions-exclusions)
-    <!-- DOCS REMOVED - [Docs](real-time-marketing-include-exclude.md) -->
+    - [Docs](real-time-marketing-include-exclude.md)
 
 #### Public preview
 
@@ -1498,7 +1498,7 @@ Monthly improvements include updates to personalization, segmentation, and text 
 
 - **Create a segment where specific people are always included or excluded**
     - Adding manual inclusions or exclusions is a powerful way to augment segment building criteria. Manually include or exclude specific people to ensure segments always reach VIP customers, or just as an easy way to build test segments for journeys.
- <!-- DOCS REMOVED - [Docs](real-time-marketing-include-exclude.md) -->
+    - [Docs](real-time-marketing-include-exclude.md)
 
     > [!div class="mx-imgBorder"]
     > ![Screenshot of inclusion and exclusion selection.](media/whats-new-include-exclude.png "Screenshot of inclusion and exclusion selection")
