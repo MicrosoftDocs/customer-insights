@@ -264,8 +264,6 @@
         href: outbound-marketing-segments-in-customer-insights-journeys.md
       - name: Automatic segment management
         href: auto-segment-management.md
-      - name: Individually manage your customer list
-        href: real-time-marketing-include-exclude.md
       - name: Add protected fields in segment criteria
         href: protected-fields.md   
     - name: "Troubleshooting: Segments show incorrect member count"
