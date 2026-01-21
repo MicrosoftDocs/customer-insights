@@ -86,11 +86,7 @@ To include members from either subgroup, select the **or** subgroup operator.
 > [!div class="mx-imgBorder"]
 > ![Use the or operator.](media/real-time-marketing-segment-builder-or.png "Use the or operator")
 
-## Add a new group to a segment (preview)
-
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note.md)]
+## Add a new group to a segment
 
 **Example**: Let’s say you want to create a query for leads with a company size of more than 10,000 employees whose parent accounts are in the Consumer Services or Financial Services industries, **but not** leads with a budget of less than $20,000.
 
