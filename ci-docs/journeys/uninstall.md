@@ -77,8 +77,9 @@ Moments-based marketing:
 
 | Solution name | Used outside of Customer Insights - Journeys |
 | -------------- | ------------------------------ |
-| DynamicsMKT_AnchorSolution | No |
+| DynamicsCij_AnchorSolution/DynamicsMKT_AnchorSolution | No |
 | **DynamicsMKT_CxpAnalytics** | Yes |
+| msdyn_InsightsAnalyticsMKTAnalytics | No |
 | DynamicsMKT_Configuration | No |
 | DynamicsMKT_OcIntegration | No |
 | msdyn_InsightsAnalyticsMKTConfiguration | No |
@@ -87,6 +88,7 @@ Moments-based marketing:
 | DynamicsMKT_Sitemap_RTMDefault | No |
 | DynamicsMKT_StandaloneSitemap | No |
 | DynamicsMKT_Sitemap | No |
+| DynamicsMKT_DataverseHealthManagementAppUser | No |
 | MicrosoftDynamics_EventManagementAppUser | No |
 | DynamicsMKT_LandingPageFormsAppUser | No |
 | DynamicsMKT_TeamsEventsIntegrationAppUser | No |
@@ -97,17 +99,23 @@ Moments-based marketing:
 | DynamicsMKT_CxpAIConfiguration | No |
 | DynamicsMKT_AttachCIApplicationUser | No |
 | DynamicsMKT_CxpApplicationUser | No |
+| DynamicsMKT_NotifierAppUser | No |
+| DynamicsMKT_TrackingAppUsers | No |
 | DynamicsMKT_ChannelsAppUser | No |
 | **DynamicsMKT_ConsentAppUser** | Yes |
 | **DynamicsMKT_CxpPersonalizationUIAppUser** | Yes |
 | DynamicsMKT_CIConnection | No |
 | DynamicsMKT_BURoles | No |
 | DynamicsMKT_Roles | No |
+| DynamicsMKT_LeadManagementConfiguration | No |
+| DynamicsMKT_LeadManagement | No |
 | DynamicsMKT_CxpGdpr | No |
+| DynamicsMKT_ConsentCijLink | No |
 | DynamicsMKT_ConsentFormsLink | No |
 | DynamicsMKT_EventManagementRealtimeLinkData | No |
 | DynamicsMKT_EventManagementRealtimeLink | No |
-| DynamicsMKT_FormsData | No |
+| DynamicsMKT_FormsRecaptchaIntegration | No |
+| DynamicsMKT_FormData | No |
 | DynamicsMKT_Forms | No |
 | DynamicsMKT_FrequencyCapping | No |
 | DynamicsMKT_BrandProfiles | No |
@@ -115,12 +123,16 @@ Moments-based marketing:
 | DynamicsMKT_TeamsVEvents | No |
 | DynamicsMKT_Fragments | No |
 | DynamicsMKT_DomainValidation | No |
+| DynamicsMKT_CxpCopilotSidecar | No |
+| DynamicsMKT_CxpCopilotSolution | No |
 | DynamicsMKT_CustomerJourneyManagementRealtimeLink | No |
 | DynamicsMKT_FormManagementRealtimeLink | No |
 | DynamicsMKT_CxpConditionalContent | No |
 | DynamicsMKT_QuotaSolution | No |
 | **DynamicsMKT_MetadataStore** | Yes |
-| DynamicsMKT_CxpGetStartedEasyModeBaseSolution | No |
+| DynamicsMKT_CxpNotifications | No |
+| DynamicsMKT_CxpCJOOnlyBase | No |
+| DynamicsMKT_CxpGetStartedEasyModeBase | No |
 | DynamicsMKT_CxpGetStartedExperience | No |
 | DynamicsMKT_PushNotification | No |
 | DynamicsMKT_SharedPushChannelsUser | No |
@@ -137,6 +149,7 @@ Moments-based marketing:
 | DynamicsMKT_Tracking | No |
 | **DynamicsMKT_PersonalizationUI** | Yes |
 | DynamicsMKT_CxpCmsIntegration | No |
+| DynamicsMKT_ContactCenterIntegration | No |
 | DynamicsMKT_SmsChannel | No |
 | DynamicsMKT_CustomerVoiceIntegration | No |
 | **DynamicsMKT_SharedSmsChannelsUser** | Yes |
@@ -164,11 +177,13 @@ Moments-based marketing:
 | DynamicsMKT_OrchestrationEngineAttachCI | No |
 | DynamicsMKT_OrchestrationEngineEvents | No |
 | DynamicsMKT_OrchestrationEngine | No |
+| DynamicsMKT_SendOptimization | No |
 | DynamicsMKT_CxpSegmentationUI | No |
 | **DynamicsMKT_FeatureConfiguration** | Yes |
 | MicrosoftDynamics_HealthChecker | No |
 | **DynamicsMKT_BaseSolution** | Yes |
 | DynamicsMKT_Segmentation | No |
+| DynamicsMKT_SharedUiComponents | No |
 | **DynamicsMKT_AnalyticsUx** | Yes |
 
 Segment-based marketing:
