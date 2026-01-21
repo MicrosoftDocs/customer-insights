@@ -1511,7 +1511,7 @@ Monthly improvements include updates to personalization, segmentation, and text 
     - **[Preview]** You no longer must rely on admins to select data tables to be synced into the Customer Insights - Journeys app to get started with segmentation. In Customer Insights - Journeys, instead of waiting for admins to add data tables under **Dataset Configurations** in the **Settings** area, you can add tables to be used for creating segments to the list in the building experience itself.
         - [Docs](real-time-marketing-sync-data-tables.md)
     - **[Preview]** Build segments using multiple query logic groups. This opens more segment scenarios and more enriched segment definitions, such as "Contacts whose accounts are managed by partners in Contoso Consultants *but not* preferred to be contacted by phone".
-        - [Docs](real-time-marketing-build-segments.md#add-a-new-group-to-a-segment-preview)
+        - [Docs](real-time-marketing-build-segments.md#add-a-new-group-to-a-segment)
 
 ### September 2022 update
 
