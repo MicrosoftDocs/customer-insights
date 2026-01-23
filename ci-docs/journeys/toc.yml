@@ -364,7 +364,7 @@
           href: real-time-marketing-multiple-branches.md
         - name: When to use attribute versus if/then branches
           href: real-time-marketing-branches.md
-        - name: Split your audience into groups (preview)
+        - name: Split your audience into groups
           href: real-time-marketing-split-audience.md
       - name: Control messages sent from journeys
         items:
