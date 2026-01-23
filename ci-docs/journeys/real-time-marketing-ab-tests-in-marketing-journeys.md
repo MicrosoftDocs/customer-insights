@@ -1,7 +1,7 @@
 ---
 title: A/B tests in Customer Insights - Journeys
 description: A/B tests in Customer Insights - Journeys help you compare content and channels to find the best way to reach your customers. Learn how to set up and analyze tests.
-ms.date: 06/18/2025
+ms.date: 01/22/2026
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -24,7 +24,7 @@ A/B tests measure which channel or content strategy leads to higher success. Eac
 
 A/B testing needs a large audience to be effective. Tests with fewer than 1,000 people can produce uneven results, like unequal group sizes. Tests with very small groups almost always create disproportionate distributions. For example, if your audience has 10 members, one might go to variant A and nine to variant B. This is expected when the audience is too small for the statistical model to distribute evenly.
 
-Real-time uses a methodology that is designed to declare winners only when their impact is meaningful, and to avoid declaring winners based on small, inconsequential improvements that may not hold at scale. To achieve this, CIJ calculates a distinct confidence band for each experiment, ensuring that a winner is identified only when there is a sufficiently large performance gap between variants. A key input to this calculation is email send volume: lower send volumes require a larger difference between variants to confidently declare a winner. This approach reduces the risk of early or noisy winner selection by ensuring that the conversion-rate difference required to declare a winner decreases appropriately as the sample size grows. When an experiment doesn’t find a winner, you should either increase volume or make changes, so variants are sufficiently different from each other. If a winner is still not found then in practical terms, it doesn’t matter which variant you use as performance difference between them is too small to be noticeable. Contrary to common belief, an experiment does not always need to produce a winner to be successful; a no winner outcome is valid outcome.
+Real-time uses a methodology that is designed to declare winners only when their impact is meaningful, and to avoid declaring winners based on small, inconsequential improvements that may not hold at scale. To achieve this, Customer Insights - Journeys calculates a distinct confidence band for each experiment, ensuring that a winner is identified only when there is a sufficiently large performance gap between variants. A key input to this calculation is email send volume: lower send volumes require a larger difference between variants to confidently declare a winner. This approach reduces the risk of early or noisy winner selection by ensuring that the conversion-rate difference required to declare a winner decreases appropriately as the sample size grows. When an experiment doesn’t find a winner, you should either increase volume or make changes so variants are sufficiently different from each other. If a winner is still not found, either variant can be used since the performance gap is too small to be noticeable. Despite popular belief, an experiment doesn’t need a clear winner to be considered successful; a no‑winner result is still a valid outcome.
 
 ## Example 1: Creating an A/B test for trigger-based journeys
 
