@@ -1,7 +1,7 @@
 ---
 title: Set up event passes
 description: Discover how to create and manage event passes for paid events in Dynamics 365, including pricing, allocation, and session-level access control.
-ms.date: 11/18/2025
+ms.date: 01/26/2026
 ms.topic: article
 author: terezakirk
 ms.author: terezakirk

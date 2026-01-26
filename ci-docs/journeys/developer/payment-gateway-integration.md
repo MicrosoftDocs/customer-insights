@@ -2,7 +2,7 @@
 title: Set up payment gateway integration
 ms.reviewer: alfergus
 description: Set up payment gateway integration for your events. Discover how to configure payment providers and streamline attendee payments on your event website.
-ms.date: 10/15/2025
+ms.date: 01/26/2026
 ms.topic: how-to
 author: pawelkruk
 ms.author: alfergus
