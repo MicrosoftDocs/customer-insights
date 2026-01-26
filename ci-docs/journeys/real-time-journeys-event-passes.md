@@ -1,5 +1,5 @@
 ---
-title: Set up event passes (preview)
+title: Set up event passes
 description: Discover how to create and manage event passes for paid events in Dynamics 365, including pricing, allocation, and session-level access control.
 ms.date: 11/18/2025
 ms.topic: article
@@ -11,15 +11,11 @@ search.audienceType:
   - enduser
 ---
 
-# Set up event passes (preview)
-
-[!INCLUDE [Preview banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+# Set up event passes
 
 Event passes act as tickets that grant attendees access to your event and its sessions or tracks. Passes are optional, but they're essential if you want to manage paid access, session-level permissions, or special categories of registrations (for example, VIP or sponsors).
 
 To enable event passes, go to **Settings** > **Feature switches**, and under **Event management**, turn on the **Enable payments in real-time journeys** toggle.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note.md)]
 
 ## What are event passes?
 
