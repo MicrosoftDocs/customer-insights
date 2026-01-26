@@ -42,6 +42,8 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 
 	:::image type="content" source="media/paid-events.png" alt-text="An event passes UI." lightbox="media/paid-events.png":::
 
+<!--
+
 - **TITLE** 
 	- Text
 	- [Release plan]() 
@@ -57,6 +59,8 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 #### Monthly enhancements
 
 - [Title](link)
+
+-->
 
 #### New blogs and scenario docs
 
