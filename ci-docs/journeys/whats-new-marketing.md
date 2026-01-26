@@ -27,6 +27,40 @@ Customer Insights - Journeys updates are [pushed to customers automatically](htt
 
 To submit and vote on **feature requests** and **product suggestions**, go to the [Dynamics 365 Application Ideas portal](https://experience.dynamics.com/ideas/categories/?forum=dfa5b83d-9e4c-e811-a956-000d3a1bef07&forumName=Dynamics%20365%20Marketing).
 
+### February 2026 update
+
+| App              | GA release      |
+|------------------|-----------------|
+| Customer Insights - Journeys |  |
+
+#### General availability
+
+- **Maximize event ROI with paid registration, seamless payment integration** 
+	- Hosting impactful events demands significant time, resources, and budget, but often requires the use of disparate and fragmented tools to sell event tickets. This challenge makes it difficult to track payments, reduce registration drop-off, and ultimately provide a delightful attendee experience.With the new paid event registration capability in real-time journeys, you can now offer a seamless and secure ticketing experience. This feature empowers you to offer flexible pricing tiers and discount codes and increase registration conversion with a frictionless checkout. By embedding ticketing and payments directly into your event flow, you not only improve attendee satisfaction but also unlock new revenue streams and reduce operational overhead.
+	- [Release plan](/dynamics365/release-plan/2025wave2/customer-insights/dynamics365-customer-insights-journeys/maximize-event-roi-paid-registration-seamless-payment-integration) 
+	- [Docs (event passes)](real-time-journeys-event-passes.md), [Docs (payment gateway)](./developer/payment-gateway-integration.md)
+
+- **TITLE** 
+	- Text
+	- [Release plan]() 
+	- [Docs]()
+
+#### Public 
+
+- **TITLE** 
+	- Text
+	- [Release plan]() 
+	- [Docs]()
+
+#### Monthly enhancements
+
+- [Title](link)
+
+#### New blogs and scenario docs
+
+Learn how to make the most of the new Dynamics 365 Customer Insights features in our latest blogs and scenario docs:
+
+
 ### December 2025 update
 
 | App              | GA release      |
