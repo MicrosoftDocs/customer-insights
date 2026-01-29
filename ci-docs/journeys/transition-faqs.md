@@ -1,7 +1,7 @@
 ---
 title: Real-time journeys transition FAQs
 description: Discover how to transition from outbound marketing to real-time journeys in Customer Insights - Journeys. Get answers to frequently asked questions.
-ms.date: 12/08/2025
+ms.date: 01/29/2025
 ms.update-cycle: 180-days
 ms.topic: faq
 author: alfergus
@@ -41,7 +41,7 @@ When you provision Customer Insights – Journeys, you see real-time journeys on
 
 ## I need more time to complete the transition. Can I request an extension?
 
-We first announced the removal of outbound marketing in August 2023 and later set June 30, 2025, as the removal date. As detailed in [the next section](#what-will-happen-after-june-30-2025-will-outbound-marketing-stop-working), we've started taking steps to reduce outbound marketing usage and eventually remove it. We're no longer accepting new requests for extensions. Customers with existing approvals can still request additional time (not beyond December 31, 2025); such requests are evaluated on a case-by-case  basis, and approval isn't guaranteed. Don't contact support or create support tickets for this topic, as they won't be able to help. If you have questions or concerns, email [obmextension@microsoft.com](mailto:obmextension@microsoft.com).
+We first announced the removal of outbound marketing in August 2023 and later set June 30, 2025, as the removal date. As detailed in [the next section](transition-faqs.md#what-will-happen-after-june-30-2025-will-outbound-marketing-stop-working-updated-november-21-2025), we've started taking steps to reduce outbound marketing usage and eventually remove it. We're no longer accepting new requests for extensions. Customers with existing approvals can still request additional time (not beyond December 31, 2025); such requests are evaluated on a case-by-case  basis, and approval isn't guaranteed. Don't contact support or create support tickets for this topic, as they won't be able to help. If you have questions or concerns, email [obmextension@microsoft.com](mailto:obmextension@microsoft.com).  
 
 ```
 
