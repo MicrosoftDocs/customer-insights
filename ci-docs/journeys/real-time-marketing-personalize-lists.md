@@ -23,7 +23,7 @@ Let's say you want to create an email with a list of products the customer has. 
  
     :::image type="content" source="media/real-time-marketing-list-placeholder.png" alt-text="Screenshot showing creation of list placeholder." lightbox="media/real-time-marketing-list-placeholder.png":::
 
-1. Next, add any attributes (columns) you want to display as the repeated content in the list (1). You can also specify how many items you want displayed (2) and which attribute to order the list by (3). Once you've set up the list as desired, select the **Save & copy** button to save the list and access the code generator that provides the code for you to copy.
+1. Next, add any attributes (columns) you want to display as the repeated content in the list (1). You can also specify how many items you want displayed (2) (limited to maximum 100 items) and which attribute to order the list by (3). Once you've set up the list as desired, select the **Save & copy** button to save the list and access the code generator that provides the code for you to copy.
 
 :::image type="content" source="media/real-time-marketing-list-attributes.png" alt-text="Screenshot showing list attributes to be added." lightbox="media/real-time-marketing-list-attributes.png":::
 
