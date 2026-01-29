@@ -26,7 +26,7 @@ Let's say you want to create an email with a list of products the customer has. 
 1. Next, add any attributes (columns) you want to display as the repeated content in the list. Note you can: 
 
     * Specify how many items you want displayed (limited to a maximum 100 items).
-    * Specify the attribute used to sort the list.
+    * Specify the attribute used to order the list.
   
 1. Once you set up the list as desired, select **Save & copy** to save the list and access the code generator that provides the code for you to copy.
 
