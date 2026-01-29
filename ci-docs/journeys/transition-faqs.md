@@ -41,10 +41,12 @@ When you provision Customer Insights – Journeys, you see real-time journeys on
 
 ## I need more time to complete the transition. Can I request an extension?
 
-We first announced the removal of outbound marketing in August 2023 and later set June 30, 2025, as the removal date. As detailed in [the next section](transition-faqs.md#what-will-happen-after-june-30-2025-will-outbound-marketing-stop-working), we've started taking steps to reduce outbound marketing usage and eventually remove it. We're no longer accepting new requests for extensions. Customers with existing approvals can still request additional time (not beyond December 31, 2025); such requests are evaluated on a case-by-case  basis, and approval isn't guaranteed. Don't contact support or create support tickets for this topic, as they won't be able to help. If you have questions or concerns, email [obmextension@microsoft.com](mailto:obmextension@microsoft.com).  
+We first announced the removal of outbound marketing in August 2023 and later set June 30, 2025, as the removal date. As detailed in [the next section](transition-faqs.md#what-will-happen-after-june-30-2025-will-outbound-marketing-stop-working-updated-november-21-2025), we've started taking steps to reduce outbound marketing usage and eventually remove it. We're no longer accepting new requests for extensions. Customers with existing approvals can still request additional time (not beyond December 31, 2025); such requests are evaluated on a case-by-case  basis, and approval isn't guaranteed. Don't contact support or create support tickets for this topic, as they won't be able to help. If you have questions or concerns, email [obmextension@microsoft.com](mailto:obmextension@microsoft.com).  
 
-## What will happen after June 30, 2025? Will outbound marketing stop working? 
-(Updated Jan 23, 2026)
+## What will happen after June 30, 2025? Will outbound marketing stop working? (Updated November 21, 2025)
+
+*(Updated Jan 23, 2026)*
+
 We're implementing a phased approach for removing outbound marketing to minimize disruption to customers’ businesses. When we detect that there are no active outbound marketing campaigns or events in an environment (“org”), we hide outbound marketing and then remove it after a few weeks. With this approach, the outbound marketing removal date is different for each environment, as it depends on when the outbound marketing campaigns or events complete. Outbound marketing is no longer supported. For customers with approved extensions, limited support is provided for critical issues only (for example, a customer journey stopped sending emails, segments stopped refreshing, no submissions for events or forms, and so on).
 
 To reduce and eventually remove outbound marketing, we're applying a phased approach (the changes below only apply to outbound marketing; real-time marketing is unaffected):
