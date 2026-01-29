@@ -57,6 +57,21 @@ Validate that the tables used in the segment aren't empty. All entities used in 
 
 Validate if consent is enabled. Consent filters segments shown based on the chosen purpose and topic. Learn more: [Migrate consent from outbound marketing](real-time-marketing-consent-transition.md#migrate-consent-from-outbound-marketing)
 
+#### Step 6: Allow time for data synchronization
+
+Publishing or refreshing a segment may be delayed if the underlying data has not fully synchronized. To avoid issues:
+
+- Wait a short period after publishing or refreshing a segment.
+- If members aren’t added immediately, allow the next scheduled refresh to run so the data can finish synchronizing.
+
+This is especially important in scenarios such as:
+
+- Tables that are being updated via data import (e.g., contacts or leads tables)
+- Newly updated consent records
+- Tables that were recently enabled for Segmentation or change tracking
+- Recent uploads of static segment CSV files
+
+
 ### Segments show more members than expected
 
 To determine why a segment has more members than expected, try the following troubleshooting steps:
