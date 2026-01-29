@@ -16,7 +16,8 @@ search.audienceType:
 The Customer Insights - Journeys segment builder allows you to sync data tables without relying on the help of administrators. This saves you time when setting up segments, letting you directly add data tables to Dynamics 365 Customer Insights - Journeys without using the Dynamics 365 admin center.
 
 > [!NOTE]
-> Real-time marketing doesn't support adding virtual tables. Trying to add these tables using the "+Add table" button won't reveal the tables in the table list. This is because virtual tables aren't synced on the backend.
+> 1. Real-time marketing doesn't support adding virtual tables. Trying to add these tables using the "+Add table" button won't reveal the tables in the table list. This is because virtual tables aren't synced on the backend.
+> 2. Adding tables to the segment builder increases Dataverse database storage consumption because additional data must be stored and maintained in your environment. Only add tables when required, and remove any tables that are not in use. After enabling new tables, monitor your Dataverse storage consumption.
 
 **Example**: You want to create a segment using attributes from the Fax table in Dataverse, but you notice that Fax isn’t available in your related data tables.
 
