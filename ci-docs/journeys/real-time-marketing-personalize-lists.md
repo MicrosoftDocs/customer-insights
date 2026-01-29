@@ -30,7 +30,7 @@ Let's say you want to create an email with a list of products the customer has. 
   
 1. Once you set up the list as desired, select **Save & copy** to save the list and access the code generator that provides the code for you to copy.
 
-  :::image type="content" source="media/real-time-marketing-list-attributes.png" alt-text="Screenshot showing list attributes to be added." lightbox="media/real-time-marketing-list-attributes.png":::
+    :::image type="content" source="media/real-time-marketing-list-attributes.png" alt-text="Screenshot showing list attributes to be added." lightbox="media/real-time-marketing-list-attributes.png":::
 
 1. Select **Copy code** and then insert it into the email designer where you want this list to be included:
 
