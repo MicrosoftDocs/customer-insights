@@ -107,6 +107,22 @@ In the above example, the attribute was added to a new group (Group 2). To creat
 > While adding nested segments to the segment definition, you can view the details of the underlying segment by selecting the **View segment** hyperlink when hovering over the desired segment. To use keyboard controls to view the segment, press the "K" key while focus is on the desired segment. This action opens a dialog displaying the segment details.
 > :::image type="content" source="media/segment-details.png" alt-text="Screenshot showing link to view segment details." lightbox="media/segment-details.png":::
 
+# Individually manage your customer list
+
+Adding manual inclusions or exclusions is a powerful way to augment segment building criteria. Manually include or exclude specific people to ensure segments always reach VIP customers, or just as an easy way to build test segments for journeys.
+
+**Example**: In addition to the event registrants for the workshop, you also want to include some of your VIP customers in this list. You can manually search for them by name and decide whether to always include them or not.
+
+To manually add customers, go to the **Contacts** tab in the **Elements** pane. Select whether you want to include (**+Inclusion group**) or exclude (**+Exclusion group**) these members.
+
+> [!div class="mx-imgBorder"]
+> ![Manage your customer list manually](media/real-time-marketing-manage-your-customer-list-manually.png "Manage your customer list manually")
+
+To add your VIP customers to your segment, search for them by name. When you find the segment members you want to add or exclude, select the plus (+) button next to their name.
+
+> [!div class="mx-imgBorder"]
+> ![Search for names to add in your segment](media/real-time-marketing-search-for-names-to-add-in-your-segment.png "Search for names to add in your segment")
+
 ## Use CSV files to define static segment membership lists for up to 2,000,000 members
 
 You can define segment membership by matching a list of contacts or leads from a CSV file to contacts or leads in Dataverse. The real-time journeys segment builder matches email addresses with already existing contacts or leads in Dataverse, which you can then include in the segment definition as a static list.
