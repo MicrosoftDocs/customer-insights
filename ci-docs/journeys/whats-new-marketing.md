@@ -1,7 +1,7 @@
 ---
 title: New and upcoming features
 description: Discover the latest features, improvements, and bug fixes in Dynamics 365 Customer Insights - Journeys. Stay updated with our monthly release notes.
-ms.date: 01/26/2026
+ms.date: 01/30/2026
 ms.update-cycle: 180-days
 ms.topic: whats-new
 author: alfergus
@@ -42,12 +42,12 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 
 	:::image type="content" source="media/paid-events.png" alt-text="An event passes UI." lightbox="media/paid-events.png":::
 
-<!--
-
-- **TITLE** 
+- **Enhanced reCAPTCHA** 
 	- Text
 	- [Release plan]() 
 	- [Docs]()
+
+<!--
 
 #### Public 
 
@@ -56,16 +56,22 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 	- [Release plan]() 
 	- [Docs]()
 
+-->
+
 #### Monthly enhancements
 
-- [Title](link)
+- **Segmentation - Unused segments are not evaluated after 30 days** 
+	- Segments that have been published but not used in any live journey for 30 days are moved to the Expired state. These expired segments are no longer evaluated, helping to save resources and boost overall performance. However, they still count toward your segment limits, and you must publish them again before using them in a journey.
+	- [Docs]()
 
--->
 
 #### New blogs and scenario docs
 
 Learn how to make the most of the new Dynamics 365 Customer Insights features in our latest blogs and scenario docs:
 
+- [Title](link)
+
+Learn how to access analytics data from Customer Insights – Journeys using a minimalistic footprint of Microsoft Fabric - [CI - J Insights with Minimal Fabric: The Lightweight Access Pattern](https://community.dynamics.com/blogs/post/?postid=6df49d04-bbf2-f011-8407-7c1e527eb82f).
 
 ### December 2025 update
 
