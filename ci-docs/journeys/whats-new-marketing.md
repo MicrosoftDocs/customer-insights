@@ -77,7 +77,6 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 		* Increased query field size to support longer queries
 	- [Docs]()  
 
-
 #### New blogs and scenario docs
 
 Learn how to make the most of the new Dynamics 365 Customer Insights features in our latest blogs and scenario docs:
