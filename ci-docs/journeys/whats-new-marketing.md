@@ -64,6 +64,19 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 	- Segments that have been published but not used in any live journey for 30 days are moved to the Expired state. These expired segments are no longer evaluated, helping to save resources and boost overall performance. However, they still count toward your segment limits, and you must publish them again before using them in a journey.
 	- [Docs]()
 
+- **Segmentation – Usability and functional enhancements** 
+	- A series of improvements have been made in the segmentation area over the past few releases. Key improvements include: 
+		* Updates to UI and insights charts to fix accessibility issues and make them mobile friendly 
+		* Ability to refresh segments manually 
+		* Added common commands Assign and Deactivate to the command bar and enable it for customization 
+		* Support for circular relationship (Contact > related table(s) > Contact) 
+		* Changed how related tables are evaluated to align with more common usage (RELATEOPTIONAL is the default now, RELATE remains available via advance menu. RELATEOPTIONAL allows rows to be returned even when the related record doesn’t exist, treating the relationship as optional)
+		* Allow stopped segments to be edited and published again 
+		* Fixed issues with timeline where items were showing up out of order and had other issues with end of the year 
+		* Improved messages and information throughout (e.g., show logical name to disambiguate similarly named attributes)
+		* Increased query field size to support longer queries
+	- [Docs]()  
+
 
 #### New blogs and scenario docs
 
