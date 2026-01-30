@@ -2682,7 +2682,7 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "ci-docs/journeys/journey-known-issues.md'",
+      "source_path": "ci-docs/journeys/journey-known-issues.md",
       "redirect_url": "/dynamics365/customer-insights/journeys/real-time-marketing-known-issues#customer-journeys",
       "redirect_document_id": false
     }
