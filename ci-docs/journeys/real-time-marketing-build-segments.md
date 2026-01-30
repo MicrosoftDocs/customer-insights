@@ -107,9 +107,9 @@ In the above example, the attribute was added to a new group (Group 2). To creat
 > While adding nested segments to the segment definition, you can view the details of the underlying segment by selecting the **View segment** hyperlink when hovering over the desired segment. To use keyboard controls to view the segment, press the "K" key while focus is on the desired segment. This action opens a dialog displaying the segment details.
 > :::image type="content" source="media/segment-details.png" alt-text="Screenshot showing link to view segment details." lightbox="media/segment-details.png":::
 
-## Individually manage your customer list
+## Include or exclude manually selected audience members
 
-Adding manual inclusions or exclusions is a powerful way to augment segment building criteria. Manually include or exclude specific people to ensure segments always reach VIP customers, or just as an easy way to build test segments for journeys.
+Adding manual inclusions or exclusions is a powerful way to augment segment building criteria. This way you can ensure a segment always includes VIP customers (e.g., so they are always invited to special events) or always excludes them (so they get a different experience). This is also an easy way to build test segments for journeys.
 
 **Example**: In addition to the event registrants for the workshop, you also want to include some of your VIP customers in this list. You can manually search for them by name and decide whether to always include them or not.
 
@@ -122,6 +122,8 @@ To add your VIP customers to your segment, search for them by name. When you fin
 
 > [!div class="mx-imgBorder"]
 > ![Search for names to add in your segment](media/real-time-marketing-search-for-names-to-add-in-your-segment.png "Search for names to add in your segment")
+
+Manually selected list is limited to 100 members. For working with larger lists, use CSV files as explained below.
 
 ## Use CSV files to define static segment membership lists for up to 2,000,000 members
 
