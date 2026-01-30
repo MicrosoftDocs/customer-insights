@@ -1,7 +1,7 @@
 ---
 title: Build segments in Customer Insights - Journeys 
 description: Learn how to build segments to use in real-time journeys in Dynamics 365 Customer Insights - Journeys.
-ms.date: 10/31/2025
+ms.date: 01/29/2026
 ms.topic: article
 author: alfergus
 ms.author: alfergus
