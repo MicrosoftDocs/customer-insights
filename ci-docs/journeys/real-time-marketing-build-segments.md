@@ -1,10 +1,10 @@
 ---
 title: Build segments in Customer Insights - Journeys 
 description: Learn how to build segments to use in real-time journeys in Dynamics 365 Customer Insights - Journeys.
-ms.date: 01/29/2026
+ms.date: 01/30/2026
 ms.topic: article
 author: alfergus
-ms.author: alfergus
+ms.author: colinbirkett
 search.audienceType: 
   - admin
   - customizer
@@ -41,7 +41,7 @@ In the right pane of the segment builder, you can search for attributes to add t
 
 ## Create demographic segment using related tables
 
-In addition to having a segment return its targeting entity (such as contacts or leads), you can also build more complex queries that reference other tables (such as Event Registration or Account) to further enrich your segment definition. You can even reference customer measures from Customer Insights - Data when targeting unified profiles.
+In addition to having a segment return its targeting entity (such as contacts or leads), you can also build more complex queries that reference other tables (for example, Event Registration or Account) to enrich your segment definition. You can even reference customer measures from Customer Insights - Data when targeting unified profiles.
 
 > [!NOTE]
 > To reference customer measures, Customer Insights - Journeys and Customer Insights - Data must be installed on the same environment.
@@ -53,7 +53,7 @@ When adding an attribute that relates to a different table, you can search for t
 
 **Example:** Leads whose parent accounts are in the Consumer Services industry.
 
-Search for "industry" on the right-side pane and select the **+** button to the right of the item in the table you want. You'll see all possible combinations of how the Lead and Account tables are related.
+Search for "industry" on the right-side pane and select the **+** button to the right of the item in the table you want. You can see all possible combinations of how the Lead and Account tables are related.
 
 > [!div class="mx-imgBorder"]
 > ![Search for related tables.](media/real-time-marketing-build-segment-industry.png "Search for related tables")
@@ -65,9 +65,9 @@ Select "Account > **Lead**" for the relationship path, then select the **Next** 
 
 ## Previewing segment members and size estimate
 
-When you're satisfied with your segment definition, select **Refresh** on the bottom toolbar to quickly check if you are on the right track to creating your segment. This gives you an estimated size of how many members are in the segment.
+When you're satisfied with your segment definition, select **Refresh** on the bottom toolbar to quickly check if you are on the right track to creating your segment. Refreshing gives you an estimated size of how many members are in the segment.
 
-To see a list of the first set of segment members the app fetched based on your definition, select **View sample of included members** on the bottom toolbar. This gives you an estimate of who is in this segment.
+To see a list of the first set of segment members the app fetched based on your definition, select **View sample of included members** on the bottom toolbar. This action gives you an estimate of who is in the segment.
 
 > [!div class="mx-imgBorder"]
 > ![View sample of included segment members.](media/real-time-marketing-build-segment-members.png "View sample of included segment members")
@@ -90,12 +90,12 @@ To include members from either subgroup, select the **or** subgroup operator.
 
 **Example**: Let’s say you want to create a query for leads with a company size of more than 10,000 employees whose parent accounts are in the Consumer Services or Financial Services industries, **but not** leads with a budget of less than $20,000.
 
-To create the segment from the above example, create a new segment in Customer Insights - Journeys for leads whose company size is 10,001 or more. Open the **Elements** pane by selecting the top icon on the menu on the right side of the window. Then, go to the **Attributes** tab and search for the **Budget Amount** attribute. Select the icon to the left of the attribute name from the results list. A contextual menu appears, allowing you to add the attribute to an existing or new group.
+To create the segment from the example, create a new segment in Customer Insights - Journeys for leads whose company size is 10,001 or more. Open the **Elements** pane by selecting the top icon on the menu on the right side of the window. Then, go to the **Attributes** tab and search for the **Budget Amount** attribute. Select the icon to the left of the attribute name from the results list. A contextual menu appears, allowing you to add the attribute to an existing or new group.
 
 > [!div class="mx-imgBorder"]
 > ![add a new group to a segment](media/real-time-marketing-add-a-new-group.png "add a new group to a segment")
 
-In the above example, the attribute was added to a new group (Group 2). To create the segment you want, select the operator button between the groups.
+In the example, the attribute was added to a new group (Group 2). To create the segment you want, select the operator button between the groups.
 
 > [!div class="mx-imgBorder"]
 > ![select your operator between groups](media/real-time-marketing-select-your-operator-between-groups.png "select your operator between groups")
@@ -109,7 +109,7 @@ In the above example, the attribute was added to a new group (Group 2). To creat
 
 ## Include or exclude manually selected audience members
 
-Adding manual inclusions or exclusions is a powerful way to augment segment building criteria. This way you can ensure a segment always includes VIP customers (e.g., so they are always invited to special events) or always excludes them (so they get a different experience). This is also an easy way to build test segments for journeys.
+Adding manual inclusions or exclusions is a powerful way to augment segment building criteria. Adding manual inclusions ensures a segment always includes VIP customers so they're invited to special events. Adding manual exclusions always excludes them so they get a different experience. These options are also an easy way to build test segments for journeys.
 
 **Example**: In addition to the event registrants for the workshop, you also want to include some of your VIP customers in this list. You can manually search for them by name and decide whether to always include them or not.
 
@@ -123,7 +123,7 @@ To add your VIP customers to your segment, search for them by name. When you fin
 > [!div class="mx-imgBorder"]
 > ![Search for names to add in your segment](media/real-time-marketing-search-for-names-to-add-in-your-segment.png "Search for names to add in your segment")
 
-Manually selected list is limited to 100 members. For working with larger lists, use CSV files as explained below.
+A manually selected list is limited to 100 members. When working with larger lists, use CSV files as explained in [Use CSV files to define static segment membership lists for up to 2,000,000 members](#use-csv-files-to-define-static-segment-membership-lists-for-up-to-2000000-members).
 
 ## Use CSV files to define static segment membership lists for up to 2,000,000 members
 
@@ -148,8 +148,8 @@ You can define segment membership by matching a list of contacts or leads from a
 
 ### Guidance for using CSV files for static segments
 
-- The "Not found" list includes rows in the CSV for which there aren't any matching records in Dataverse. You can download this list and follow the steps to upload them into Dataverse using the contact or leads list view CSV upload feature to create the records in Dataverse. You can then retry the matching to have them included in the segment definition.
-- The number of records found in the CSV file shows the number of rows in the CSV file that match one or more contact or lead records in Dataverse. If multiple records match the same email address in the CSV, the member count of the static list can be larger than the number of records found in the CSV. For example, one row in the CSV with `email@email.com` might match three contact records with the same email address. The member count shows the number of contact or lead records in the segment, while the "found" count shows the number of CSV rows that match one or more contact or lead records.
+- The "Not found" list includes rows in the CSV for which there aren't any matching records in Dataverse. You can download this list and follow the steps to upload them into Dataverse using the contact or leads list view CSV upload feature to create the records in Dataverse. You can then retry the matching to include them in the segment definition.
+- The number of records found in the CSV file shows the number of rows in the CSV file that match one or more contact or lead records in Dataverse. If multiple records match the same email address in the CSV, the member count of the static list can be larger than the number of records found in the CSV. For example, one row in the CSV with `email@email.com` might match three contact records with the same email address. The member count shows the number of contact or lead records in the segment. The "found" count shows the number of CSV rows that match one or more contact or lead records.
 - For static snapshots, contacts or leads that the segment builder has permissions to see in Dataverse either by teams or business unit scoping permissions are found and included in the segment definition. For dynamic queries, any matching contacts or leads, regardless of the business unit that the segment author belongs to while defining the segment, are included in the segment at run time.
 
 ### Augment with the segment builder API
