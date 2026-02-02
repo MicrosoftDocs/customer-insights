@@ -1,7 +1,7 @@
 ---
 title: Build segments in Customer Insights - Journeys 
 description: Learn how to build segments to use in real-time journeys in Dynamics 365 Customer Insights - Journeys.
-ms.date: 01/30/2026
+ms.date: 02/02/2026
 ms.topic: article
 author: alfergus
 ms.author: colinbirkett
@@ -115,13 +115,11 @@ Adding manual inclusions or exclusions is a powerful way to augment segment buil
 
 To manually add customers, go to the **Contacts** tab in the **Elements** pane. Select whether you want to include (**+Inclusion group**) or exclude (**+Exclusion group**) these members.
 
-> [!div class="mx-imgBorder"]
-> ![Manage your customer list manually](media/real-time-marketing-manage-your-customer-list-manually.png "Manage your customer list manually")
+:::image type="content" source="media/real-time-marketing-manage-your-customer-list-manually.png" alt-text="Manage your customer list manually." lightbox="media/real-time-marketing-manage-your-customer-list-manually.png":::
 
 To add your VIP customers to your segment, search for them by name. When you find the segment members you want to add or exclude, select the plus (+) button next to their name.
 
-> [!div class="mx-imgBorder"]
-> ![Search for names to add in your segment](media/real-time-marketing-search-for-names-to-add-in-your-segment.png "Search for names to add in your segment")
+:::image type="content" source="media/real-time-marketing-search-for-names-to-add-in-your-segment.png" alt-text="Search for names to add in your segment" lightbox="media/real-time-marketing-search-for-names-to-add-in-your-segment.png":::
 
 A manually selected list is limited to 100 members. When working with larger lists, use CSV files as explained in [Use CSV files to define static segment membership lists for up to 2,000,000 members](#use-csv-files-to-define-static-segment-membership-lists-for-up-to-2000000-members).
 
@@ -154,6 +152,6 @@ You can define segment membership by matching a list of contacts or leads from a
 
 ### Augment with the segment builder API
 
-The segment builder API powers the user interface (UI), so anything you do through the UI, you can do programmatically using the API. Use the API to augment a segment you build using the UI. Learn more: [Create a Customer Insights - Journeys segment using the Web API](real-time-marketing-api-segment.md).
+The segment builder API powers the user interface (UI), so anything you do through the UI, you can do programmatically using the API. Use the API to augment a segment you build using the UI. For more information, see [Create a Customer Insights - Journeys segment using the Web API](real-time-marketing-api-segment.md).
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
