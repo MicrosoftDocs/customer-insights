@@ -15,12 +15,17 @@ search.audienceType:
 
 > [!IMPORTANT]
 > Dynamics 365 Customer Insights - Journeys may transfer customer data outside of the selected Azure geographic location when using the following features that use Azure CDN (content delivery network) to operate globally:
-> - [Asset library](upload-images-files.md)
-> -	[Forms](real-time-marketing-form-overview.md)
+>
+> * [Asset library](upload-images-files.md)
+> * [Forms](real-time-marketing-form-overview.md)
 >
 > You can still execute marketing campaigns without using such features by hosting your assets and forms in a content management system of your choice.
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=ed9b04ef-a9b2-48b4-ac72-5b8f58d95c5a]
+
+> [!IMPORTANT]
+> The current HIP captcha used in Customer Insights - Journeys forms will be deprecated in March 2026 and fully removed by June 30, 2026.
+> Please follow these instructions to keep your forms protected against bot submissions.
 
 ## Form types
 
