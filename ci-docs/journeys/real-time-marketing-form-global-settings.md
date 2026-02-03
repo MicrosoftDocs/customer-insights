@@ -112,10 +112,13 @@ If you don't use solutions as the mechanism for implementing application lifecyc
 
 ## reCAPTCHA
 
-Protect your forms against bot attacks and malicious actors to keep the quality of captured data high. Marketing and event registration forms have standard captcha capabilities, but you can also [implement a custom captcha](real-time-marketing-form-custom-captcha.md) to improve the user experience.
+Protect your forms against bot attacks and malicious actors to keep the quality of captured data high. Customer Insights - Journeys forms let you integrate with [Google reCAPTCHA v2](https://www.google.com/recaptcha/about/).
 
-In the reCAPTCHA section, enter the private key and activate the reCAPTCHA plugin.
+> [!IMPORTANT]
+> The default configuration supports reCAPTCHA v2 only. To implement reCAPTCHA v3, refer to the guide on [custom back-end validation](real-time-marketing-form-customize-submission-validation.md).
 
-:::image type="content" source="media/real-time-marketing-configure-form-recaptcha.png" alt-text="Screenshot of the reCAPTCHA configuration section where you enter the private key and activate the plugin." lightbox="media/real-time-marketing-configure-form-recaptcha.png":::
+In the reCAPTCHA section, enter the Site key and Secret key.
+
+:::image type="content" source="media/real-time-marketing-configure-form-recaptcha-new.png" alt-text="Screenshot of the reCAPTCHA configuration section where you enter the private key and activate the plugin." lightbox="media/real-time-marketing-configure-form-recaptcha-new.png":::
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
