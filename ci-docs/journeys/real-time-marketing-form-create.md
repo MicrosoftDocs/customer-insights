@@ -70,14 +70,11 @@ You can change the target audience by using the **Audience** picker in the top r
     > You can access the existing section's styling setting by selecting the top left corner of the field or other element and selecting **Section**. That section's properties appear in the right pane.
     > :::image type="content" source="media/real-time-marketing-form-select-section.png" alt-text="Set styling for existing section." lightbox="media/real-time-marketing-form-select-section.png":::
 
-1. To add elements to your form, select the **Elements** section in the right pane. Drag and drop static text, a submit button, captcha, or an [image](upload-images-files.md#use-images-in-your-content) element on the form canvas.
+1. To add elements to your form, select the **Elements** section in the right pane. Drag and drop static text, a submit button, [reCAPTCHA](real-time-marketing-form-security-privacy.md#protecting-forms-from-bots-with-recaptcha), or an [image](upload-images-files.md#use-images-in-your-content) element on the form canvas.
 
     All forms must contain a **Submit** button. The form editor doesn't allow you to publish a form without a submit button. Select the submit button to change the styling.
 
     :::image type="content" source="media/real-time-marketing-form-elements.png" alt-text="Add elements to the form." lightbox="media/real-time-marketing-form-elements.png":::
-
-    > [!NOTE]
-    > You can **integrate custom captcha** bot protection services like **reCAPTCHA** in your form. [Learn more](real-time-marketing-form-custom-captcha.md)
 
 1. **Add consent control** from the **Elements** section to your form. Once you add the consent control to your form, you can select the correct consent purpose in the properties. Select the consent checkbox caption to change its text. Learn more about how to [manage consent for email and text messages in Customer Insights - Journeys](real-time-marketing-email-text-consent.md).
 

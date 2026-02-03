@@ -22,17 +22,28 @@ Security is an important aspect of marketing and event registration forms. Custo
 - To avoid form submissions by bots, you should protect forms with a captcha. The form editor includes an out-of-the-box captcha option, but you can use any other third-party captcha service to improve the user experience. Learn more: [Integrate a custom captcha service with Customer Insights - Journeys forms](real-time-marketing-form-custom-captcha.md)
 - The Customer Insights - Journeys app infrastructure contains necessary precautions to minimize the consequences of a possible DDoS attack. To prevent DDoS attacks, there's a limit of 2,000 requests/minute per org. The request limit includes visits, lookups, CAPTCHA, and form submissions. The limit allows around 100 to 500 submissions/minute, depending on the form.
 
-### Protecting Forms from Bots with captcha
+### Protecting Forms from Bots with reCAPTCHA
+
+reCAPTCHA helps protect your forms from automated submissions and abuse by ensuring that responses come from real people, which preserves data quality and system reliability. For this reason, using reCAPTCHA on all publicly accessible forms is **strongly recommended**.
 
 > [!IMPORTANT]
 > To improve security, accessibility, and ease of use, the existing HIP captcha used in Customer Insights – Journeys (CI‑J) forms is being retired and replaced with a new reCAPTCHA experience.
 
-#### HIP CAPTCHA Deprecation and New reCAPTCHA Experience
+To add reCAPTCHA to your form, go to the Elements section in the right pane, then drag and drop the reCAPTCHA tile onto the canvas.
+
+:::image type="content" source="media/real-time-marketing-form-add-recaptcha.png" alt-text="Add reCAPTCHA to your form." lightbox="media/real-time-marketing-form-add-recaptcha.png":::
+
+> [!IMPORTANT]
+> reCAPTCHA must be configured by an administrator. The Site key and Secret key must be entered in the **[default form configuration](real-time-marketing-form-global-settings.md#recaptcha)**.
+
+#### HIP captcha Deprecation and New reCAPTCHA Experience
 
 ##### What’s changing
 
 - The **HIP captcha** currently available in CI‑J forms will be **deprecated in March 2026** and fully **removed by June 30, 2026**.
-- A new, improved reCAPTCHA experience is being introduced as the replacement.
+  :::image type="content" source="media/real-time-marketing-form-old-captcha.png" alt-text="HIP captcha." lightbox="media/real-time-marketing-form-old-captcha.png":::
+- A new, improved **reCAPTCHA** experience **is being introduced as the replacement**.
+  :::image type="content" source="media/real-time-marketing-form-recaptcha.png" alt-text="reCAPTCHA." lightbox="media/real-time-marketing-form-recaptcha.png":::
 - The new reCAPTCHA can be added to forms using the same drag‑and‑drop experience as the existing captcha—no developer involvement is required.
 
 ##### Why this change is happening
@@ -57,7 +68,7 @@ Administrators must complete a one‑time configuration by providing:
 - Once configured, form authors can add reCAPTCHA to forms without any additional setup.
 
 > [!NOTE]
-> If you configured reCAPTCHA before February 2026, you still need to enter the Site key in Form settings for the reCAPTCHA element in the Form Editor to work correctly.
+> If you configured reCAPTCHA before February 2026, you still need to enter the Site key in [default form configuration](real-time-marketing-form-global-settings.md#recaptcha) for the reCAPTCHA element in the Form Editor to work correctly.
 
 > [!WARNING]
 > In some cases, forms that were created using an earlier reCAPTCHA setup may not fully recognize the new drag‑and‑drop reCAPTCHA element. If this happens, remove the existing reCAPTCHA from the form and add it again using the reCAPTCHA element in the Form Editor.
@@ -84,7 +95,7 @@ Administrators must complete a one‑time configuration by providing:
 
 **If you administer Customer Insights ‑ Journeys**
 
-- Complete the one‑time reCAPTCHA configuration as soon as the February 2026 release is available.
+- Complete the one‑time reCAPTCHA setup in the [default form configuration](real-time-marketing-form-global-settings.md#recaptcha) as soon as the February 2026 release is available.
 - Share guidance with form authors about switching to reCAPTCHA.
 
 ##### Frequently asked questions

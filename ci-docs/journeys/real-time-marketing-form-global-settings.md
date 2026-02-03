@@ -38,7 +38,7 @@ The form configuration has four tabs:
 1. **[General](real-time-marketing-form-global-settings.md#general)**: Set configuration details and common form settings.
 1. **[Audience](real-time-marketing-form-global-settings.md#audience)**: Select the target audience (entity record) created or updated by the form submission.
 1. **[Lead-Contact Mapping](real-time-marketing-form-global-settings.md#lead-contact-mapping)**: Only for the marketing form type. Review how lead and contact attributes map.
-1. **[reCAPTCHA](real-time-marketing-form-global-settings.md#recaptcha)**: Set up a third-party form captcha.
+1. **[reCAPTCHA](real-time-marketing-form-global-settings.md#recaptcha)**: Set up form captcha.
 
 :::image type="content" source="media/real-time-marketing-form-global-settings-general.png" alt-text="Screenshot of the General section in the global form settings page." lightbox="media/real-time-marketing-form-global-settings-general.png":::
 
@@ -112,7 +112,7 @@ If you don't use solutions as the mechanism for implementing application lifecyc
 
 ## reCAPTCHA
 
-Protect your forms against bot attacks and malicious actors to keep the quality of captured data high. Customer Insights - Journeys forms let you integrate with [Google reCAPTCHA v2](https://www.google.com/recaptcha/about/).
+Protect your forms against bot attacks and malicious actors to keep the quality of captured data high. Customer Insights - Journeys forms can integrate with [Google reCAPTCHA v2](https://www.google.com/recaptcha/about/).
 
 > [!IMPORTANT]
 > The default configuration supports reCAPTCHA v2 only. To implement reCAPTCHA v3, refer to the guide on [custom back-end validation](real-time-marketing-form-customize-submission-validation.md).

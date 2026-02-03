@@ -452,16 +452,18 @@
       href: real-time-marketing-form-overview.md
     - name: Create forms
       href: real-time-marketing-form-create.md
-    - name: Deploy pages that contain forms
-      href: real-time-marketing-deploy-pages.md
     - name: Manage forms
       href: real-time-marketing-manage-forms.md
+    - name: Deploy pages that contain forms
+      href: real-time-marketing-deploy-pages.md
     - name: Prefill values for forms and event registration
       href: real-time-marketing-form-prefill.md
     - name: Create unmapped fields for marketing forms
       href: real-time-marketing-forms-custom-fields.md
     - name: Create unmapped fields for registration forms
       href: create-unmapped-fields-registration-forms.md
+    - name: Security & privacy
+      href: real-time-marketing-form-security-privacy.md
     - name: Filter cities by country/region in forms
       href: real-time-marketing-filter-cities-by-country-region.md
     - name: Use submitted values
