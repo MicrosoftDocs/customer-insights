@@ -135,7 +135,7 @@ No. Any live events that accept registrations need to have registration closed b
 
 *What should I do if the features I need for event planning aren't available?*
 
-Apart from the general availability of the event passes feature, there are no planned features that are considered transition blockers for the event management area.
+There are no planned features that are considered transition blockers for the event management area.
 
 ## Blogs and workarounds
 
