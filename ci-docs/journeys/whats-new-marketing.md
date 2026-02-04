@@ -1,7 +1,7 @@
 ---
 title: New and upcoming features
 description: Discover the latest features, improvements, and bug fixes in Dynamics 365 Customer Insights - Journeys. Stay updated with our monthly release notes.
-ms.date: 01/30/2026
+ms.date: 02/03/2026
 ms.update-cycle: 180-days
 ms.topic: whats-new
 author: alfergus
@@ -43,7 +43,7 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 	:::image type="content" source="media/paid-events.png" alt-text="An event passes UI." lightbox="media/paid-events.png":::
 
 - **Enhanced reCAPTCHA** 
-	- Text
+	- ADD LATER
 	- [Release plan]() 
 	- [Docs]()
 
@@ -75,15 +75,21 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 		* Fixed issues with timeline where items were showing up out of order and had other issues with end of the year 
 		* Improved messages and information throughout (e.g., show logical name to disambiguate similarly named attributes)
 		* Increased query field size to support longer queries
-	- [Docs]()  
+	- [Docs]()
+
+- **Ability to set co-organizers for Teams Town Hall** 
+	- You can now automatically assign co‑organizers to Microsoft Teams Town Hall events directly within Customer Insights – Journeys. This enhancement streamlines event management, improves collaboration, and ensures smoother execution by giving additional users the ability to help manage and run Town Hall sessions. 
+	- [Docs](teams-town-hall.md)
+
+- **Teams Live Events, Teams Meeting and Teams Webinar are retiring** 
+	- Microsoft is retiring Teams live events and the associated Microsoft Graph APIs used to create Teams live events effective June 30th, 2026, though Microsoft will honor all live events that are already scheduled through 2/28/27. We encourage customers to migrate to use Teams town halls, which offers an improved experience for large-scale digital and hybrid events. Furthermore, Teams Meeting and Teams Webinar are being replaced with Teams Meeting v2 and Teams Webinar v2 after 2/28/27 as well.
+	- [Docs](teams-meeting-types.md#teams-meeting-v2-teams-webinar-v2-teams-town-hall)
 
 #### New blogs and scenario docs
 
 Learn how to make the most of the new Dynamics 365 Customer Insights features in our latest blogs and scenario docs:
 
-- [Title](link)
-
-Learn how to access analytics data from Customer Insights – Journeys using a minimalistic footprint of Microsoft Fabric - [CI - J Insights with Minimal Fabric: The Lightweight Access Pattern](https://community.dynamics.com/blogs/post/?postid=6df49d04-bbf2-f011-8407-7c1e527eb82f).
+- Learn how to access analytics data from Customer Insights – Journeys using a minimalistic footprint of Microsoft Fabric - [CI - J Insights with Minimal Fabric: The Lightweight Access Pattern](https://community.dynamics.com/blogs/post/?postid=6df49d04-bbf2-f011-8407-7c1e527eb82f).
 
 ### December 2025 update
 
