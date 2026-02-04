@@ -1,7 +1,7 @@
 ---
 title: Set up large-scale events with Teams town halls
 description: Learn how to create and host large scale streamed events in Dynamics 365 Customer Insights - Journeys using Microsoft Teams town halls.
-ms.date: 12/22/2025
+ms.date: 02/04/2026
 ms.topic: how-to
 author: terezakirk
 ms.author: terezakirk
@@ -42,16 +42,21 @@ The default town hall settings are configured to provide the best attendee and p
 | Teams meeting owner (organizer) | The user who creates and *saves* the record after choosing the town hall option in Customer Insights - Journeys. Changing the owner of the event record in Customer Insights - Journeys doesn’t change the owner of the town hall in Teams. Any change to the event record in Customer Insights - Journeys only reflects in Teams when the owner makes the change or when they select **Sync to Teams**. | Sign in as this user in Customer Insights - Journeys and create a new event to change the owner. |
 | Presenter                    | In a Teams town hall, a presenter is a person who presents audio, video, or a screen to the live event, or moderates the question and answer portion.| If you want to invite another person to present, add them to the event or session as a speaker in Customer Insights - Journeys. To add a speaker, create a speaker engagement at the event (or session) level. The speaker is added as a “presenter” for the town hall. Ensure that the speaker's email ID is filled in.
 
-Currently, only organizers can publish or cancel the town hall event through Customer Insights - Journeys. When assigned, co-organizers can edit the meeting options.
+Currently, only organizers can publish or cancel the town hall event through Customer Insights - Journeys. When assigned, co-organizers can edit the meeting options and can also start the Town Hall at the start of the event. 
+
+### Adding co-organizers to Town hall 
+
+In Microsoft Teams, a co-organizer is a designated person assigned by the primary organizer to help manage a town hall, with permissions to manage the lobby, start/stop recording, and manage attendee roles. They can be added to assist with setup and execution, allowing them to join the green room early and control production tools. 
+
+To add a co-organizer to your event, first add them to the **Team Members table on Additional information tab** in your event. To be able to add the team member successfully, they need to be part of your organization and have access to both - Customer Insights Journeys and your Teams instance. Once the team member is added, you can navigate to the **General tab** and add a co-organizer through the look up. 
+
+:::image type="content" source="media/coorganizer.png" alt-text="Screenshot of settings for Teams town hall." lightbox="media/coorganizer.png":::
 
 ### Keeping Customer Insights - Journeys and Teams in sync
 
 A user who has access to an event record and permissions to edit the record in Customer Insights - Journeys can make any change to a record. However, because the same user might not have created the corresponding live event or meeting in Teams (and thus might not be the "Teams Meeting owner"), the changes the user makes to an event record in Customer Insights - Journeys aren’t propagated to Teams. This functionality is similar to functionality within Teams, where a user can’t make changes to a live event or meeting created by another user.
 
 In scenarios where event record changes aren’t propagated to Teams, the Customer Insights - Journeys app displays a warning to any user who isn’t the Teams meeting owner. If the Teams meeting owner opens the event record, they see a **Sync with Teams** button in the ribbon. Selecting the **Sync with Teams** button syncs the changes made to the event by any non-owner users.
-
-> [!NOTE]
-> The ability to add co-organizers through Customer Insights - Journeys will be introduced in the February 2026 Customer Insights - Journeys release.
 
 ## Publishing a town hall
 
