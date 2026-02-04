@@ -5,7 +5,7 @@ ms.date: 02/03/2026
 ms.update-cycle: 180-days
 ms.topic: how-to
 author: petrjantac
-ms.author: alfergus
+ms.author: colinbirkett
 ---
 
 # Security and Privacy of Customer Insights - Journeys Forms
@@ -71,7 +71,7 @@ Administrators must complete a one‑time configuration by providing:
 > If you configured reCAPTCHA before February 2026, you still need to enter the Site key in [default form configuration](real-time-marketing-form-global-settings.md#recaptcha) for the reCAPTCHA element in the Form Editor to work correctly.
 
 > [!WARNING]
-> In some cases, forms that were created using an earlier reCAPTCHA setup can not fully recognize the new drag‑and‑drop reCAPTCHA element. If this happens, remove the existing reCAPTCHA from the form and add it again using the reCAPTCHA element in the Form Editor.
+> In some cases, forms that were created using an earlier reCAPTCHA setup can't fully recognize the new drag‑and‑drop reCAPTCHA element. If this happens, remove the existing reCAPTCHA from the form and add it again using the reCAPTCHA element in the Form Editor.
 
 **March 2026 release**
 
@@ -102,7 +102,7 @@ Administrators must complete a one‑time configuration by providing:
 
 **Q: Will my existing forms stop working?**
 
-- **A:** No. Existing forms continue to work. However, once HIP captcha is removed (by June 30, 2026), forms that haven’t been updated no longer have captcha protection unless reCAPTCHA is added.
+- **A:** No. Existing forms continue to work. However, once HIP captcha is removed (by June 30, 2026), forms that haven't been updated no longer have captcha protection unless reCAPTCHA is added.
 
 **Q: Do I need to change form code or HTML?**
 
