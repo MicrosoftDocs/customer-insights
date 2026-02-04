@@ -36,7 +36,7 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 #### General availability
 
 - **Maximize event ROI with paid registration, seamless payment integration** 
-	- Hosting impactful events demands significant time, resources, and budget, but often requires the use of disparate and fragmented tools to sell event tickets. This challenge makes it difficult to track payments, reduce registration drop-off, and ultimately provide a delightful attendee experience.With the new paid event registration capability in real-time journeys, you can now offer a seamless and secure ticketing experience. This feature empowers you to offer flexible pricing tiers and discount codes and increase registration conversion with a frictionless checkout. By embedding ticketing and payments directly into your event flow, you not only improve attendee satisfaction but also unlock new revenue streams and reduce operational overhead.
+	- Hosting impactful events demands significant time, resources, and budget, but often requires the use of disparate and fragmented tools to sell event tickets. This challenge makes it difficult to track payments, reduce registration drop-off, and ultimately provide a delightful attendee experience. With the new paid event registration capability in real-time journeys, you can now offer a seamless and secure ticketing experience. We're introducing support for session registrations with passes, ensuring that attendees can only register for sessions that the pass gives them access to.  
 	- [Release plan](/dynamics365/release-plan/2025wave2/customer-insights/dynamics365-customer-insights-journeys/maximize-event-roi-paid-registration-seamless-payment-integration) 
 	- [Docs (event passes)](real-time-journeys-event-passes.md), [Docs (payment gateway)](./developer/payment-gateway-integration.md)
 
@@ -65,7 +65,7 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 	- [Docs]()
 
 - **Segmentation – Usability and functional enhancements** 
-	- A series of improvements have been made in the segmentation area over the past few releases. Key improvements include: 
+	- A series of improvements has been made in the segmentation area over the past few releases. Key improvements include: 
 		* Updates to UI and insights charts to fix accessibility issues and make them mobile friendly 
 		* Ability to refresh segments manually 
 		* Added common commands Assign and Deactivate to the command bar and enable it for customization 
@@ -73,16 +73,16 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 		* Changed how related tables are evaluated to align with more common usage (RELATEOPTIONAL is the default now, RELATE remains available via advance menu. RELATEOPTIONAL allows rows to be returned even when the related record doesn’t exist, treating the relationship as optional)
 		* Allow stopped segments to be edited and published again 
 		* Fixed issues with timeline where items were showing up out of order and had other issues with end of the year 
-		* Improved messages and information throughout (e.g., show logical name to disambiguate similarly named attributes)
+		* Improved messages and information throughout (for example, show logical name to disambiguate similarly named attributes)
 		* Increased query field size to support longer queries
 	- [Docs]()
 
 - **Ability to set co-organizers for Teams Town Hall** 
-	- You can now automatically assign co‑organizers to Microsoft Teams Town Hall events directly within Customer Insights – Journeys. This enhancement streamlines event management, improves collaboration, and ensures smoother execution by giving additional users the ability to help manage and run Town Hall sessions. 
+	- You can now automatically assign coorganizers to Microsoft Teams Town Hall events directly within Customer Insights – Journeys. This enhancement streamlines event management, improves collaboration, and ensures smoother execution by giving additional users the ability to help manage and run Town Hall sessions. 
 	- [Docs](teams-town-hall.md)
 
 - **Teams Live Events, Teams Meeting and Teams Webinar are retiring** 
-	- Microsoft is retiring Teams live events and the associated Microsoft Graph APIs used to create Teams live events effective June 30th, 2026, though Microsoft will honor all live events that are already scheduled through 2/28/27. We encourage customers to migrate to use Teams town halls, which offers an improved experience for large-scale digital and hybrid events. Furthermore, Teams Meeting and Teams Webinar are being replaced with Teams Meeting v2 and Teams Webinar v2 after 2/28/27 as well.
+	- Microsoft is retiring Teams live events and the associated Microsoft Graph APIs used to create Teams live events effective June 30, 2026, though Microsoft will honor all live events that are already scheduled through Feb 28, 2027. We encourage customers to migrate to use Teams town halls, which offers an improved experience for large-scale digital and hybrid events. Furthermore, Teams Meeting and Teams Webinar are being replaced with Teams Meeting v2 and Teams Webinar v2 after Feb 28, 2027, as well.
 	- [Docs](teams-meeting-types.md#teams-meeting-v2-teams-webinar-v2-teams-town-hall)
 
 #### New blogs and scenario docs
