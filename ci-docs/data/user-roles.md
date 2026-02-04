@@ -43,6 +43,18 @@ The table provides an overview of the different roles. For  details, see each in
 
 *The Marketing Contributor role is only available in [business unit enabled environments](business-units-data-separation.md). All actions and views for the Marketing Contributor are limited to the business unit(s) they have access to.
 
+> [!NOTE]
+> Customer Insights roles are mapped to Dataverse security roles. To ensure correct system behavior, do not remove or modify the assigned Dataverse role mappings.
+
+| Customer Insights Role | Mapped Dataverse Roles |
+|------------------------|------------------------|
+| **Admin** | - Administrator<br>- Customizer<br>- Environment Maker<br>- Basic User<br>- Data Read Access<br>- Configuration Viewer |
+| **Contributor** | - Customizer<br>- Environment Maker<br>- Basic User<br>- Data Read Access<br>- Configuration Viewer |
+| **Marketing Contributor** | - Basic User<br>- Data Read Access<br>- Configuration Viewer |
+| **Viewer** | - Basic User<br>- Data Read Access<br>- Configuration Viewer |
+| **Limited Contributor** | - Basic User<br>- Data Read Access<br>- Configuration Viewer |
+| **CI User** | - Data Read Access<br>- Configuration Viewer |
+
 ## Viewer
 
 - Explore insights and segments within the **Home** and **Segments** pages.

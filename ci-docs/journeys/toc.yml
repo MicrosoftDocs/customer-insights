@@ -378,8 +378,6 @@
           href: approval-workflows.md
         - name: Customize the journey designer
           href: real-time-marketing-journey-designer.md
-    - name: Known issues for journeys
-      href: journey-known-issues.md
   - name: Conversational journeys
     items:
     - name: Conversational journeys overview

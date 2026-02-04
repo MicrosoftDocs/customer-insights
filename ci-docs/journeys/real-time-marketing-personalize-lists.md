@@ -1,7 +1,7 @@
 ---
 title: Personalize lists of content in emails
 description: Learn how to personalize lists in Dynamics 365 Customer Insights - Journeys.
-ms.date: 01/17/2024
+ms.date: 01/29/2026
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
@@ -13,7 +13,7 @@ search.audienceType:
 
 # Personalize lists of content in emails
 
-Lists are a common way to organize information to improve readability. Examples include a list of sessions in an event, a list of products, or a list of service tickets. Customer Insights – Journey makes it easy to create lists and personalize those lists to include only the information that is relevant for the recipient in a way that is easy to parse and act upon.
+Lists are a common way to organize information to improve readability. Examples include a list of sessions in an event, a list of products, or a list of service tickets. Customer Insights – Journey makes it easy to create lists and personalize those lists to include only the information that is relevant for the recipient in a way that's easy to parse and act upon.
 
 ## Set up a list
 
@@ -23,9 +23,14 @@ Let's say you want to create an email with a list of products the customer has. 
  
     :::image type="content" source="media/real-time-marketing-list-placeholder.png" alt-text="Screenshot showing creation of list placeholder." lightbox="media/real-time-marketing-list-placeholder.png":::
 
-1. Next, add any attributes (columns) you want to display as the repeated content in the list (1). You can also specify how many items you want displayed (2) and which attribute to order the list by (3). Once you've set up the list as desired, select the **Save & copy** button to save the list and access the code generator that provides the code for you to copy.
+1. Next, add any attributes (columns) you want to display as the repeated content in the list. Note you can: 
 
-:::image type="content" source="media/real-time-marketing-list-attributes.png" alt-text="Screenshot showing list attributes to be added." lightbox="media/real-time-marketing-list-attributes.png":::
+    * Specify how many items you want displayed (limited to a maximum 100 items).
+    * Specify the attribute used to order the list.
+  
+1. Once you set up the list as desired, select **Save & copy** to save the list and access the code generator that provides the code for you to copy.
+
+    :::image type="content" source="media/real-time-marketing-list-attributes.png" alt-text="Screenshot showing list attributes to be added." lightbox="media/real-time-marketing-list-attributes.png":::
 
 1. Select **Copy code** and then insert it into the email designer where you want this list to be included:
 
