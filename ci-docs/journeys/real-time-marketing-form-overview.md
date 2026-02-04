@@ -1,7 +1,7 @@
 ---
 title: Overview of Customer Insights - Journeys forms
 description: Overview of the forms capabilities in Dynamics 365 Customer Insights - Journeys. 
-ms.date: 02/09/2025
+ms.date: 02/04/2026
 ms.topic: article
 author: petrjantac
 ms.author: colinbirkett
@@ -16,8 +16,8 @@ search.audienceType:
 > [!IMPORTANT]
 > Dynamics 365 Customer Insights - Journeys may transfer customer data outside of the selected Azure geographic location when using the following features that use Azure CDN (content delivery network) to operate globally:
 >
-> * [Asset library](upload-images-files.md)
-> * [Forms](real-time-marketing-form-overview.md)
+> - [Asset library](upload-images-files.md)
+> - [Forms](real-time-marketing-form-overview.md)
 >
 > You can still execute marketing campaigns without using such features by hosting your assets and forms in a content management system of your choice.
 
