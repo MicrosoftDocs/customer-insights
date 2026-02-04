@@ -1,7 +1,7 @@
 ---
 title: Use Microsoft Teams for Dynamics 365 Customer Insights - Journeys online events
 description: Learn how to create and host live events in Dynamics 365 Customer Insights - Journeys using Microsoft Teams as the streamed event provider.
-ms.date: 12/22/2025
+ms.date: 02/04/2026
 ms.topic: how-to
 author: terezakirk
 ms.author: terezakirk
@@ -37,11 +37,15 @@ After you flip the **Do you want to stream this event** toggle to **Yes**, you h
 
 ### Teams meetings, Teams webinars, and Teams live events
 
-This set of online event options represents the legacy Teams experience. While still available for use, these options are gradually being phased out in favor of modernized integrations and new event types. The updated meeting formats provide enhanced organizer controls and greater flexibility. As a best practice, you should transition to the newer options, as the older ones will be retired over time.
+This set of online event options represents the legacy Teams experience. While still available for use, these options are gradually being phased out in favor of modernized integrations and new event types that are already available in Customer Insights - Journeys. As of February 2026, a new label "retiring" has been added to the legacy meeting type to highlight this life cycle. 
 
-1. **Teams meeting**: Allows you to create an interactive online meeting experience where all attendees can share audio, video, or content. Learn more: [Meetings in Microsoft Teams](/microsoftteams/tutorial-meetings-in-teams).
-1. **Teams webinar**: Useful for conference keynotes or meetings where a few presenters are talking to a large audience. Webinars can support up to 1,000 attendees and support attendee registrations. Learn more: [Webinars in Microsoft Teams](/microsoftteams/plan-webinars)
-1. **Teams live event**: An extension of Teams meetings that enable you to schedule and produce events that stream to large online audiences. Teams live events are being replaced with Teams town halls and Teams will soon announce official removal date. Learn more: [Live Events in Microsoft Teams](https://support.microsoft.com/office/get-started-with-microsoft-teams-live-events-d077fec2-a058-483e-9ab5-1494afda578a)
+> [!IMPORTANT]
+> Microsoft is retiring Teams live events and the associated Microsoft Graph APIs used to create Teams live events effective June 30th, 2026 though Microsoft will honor all live events that are already scheduled through 2/28/27. We encourage customers to migrate to Teams town halls, which offers an improved experience for large-scale digital and hybrid events. Teams town halls also provide comparable Graph APIs for programmatic creation, management, and integration of broadcast-style events. See the official Microsoft Teams announcement [here](https://go.microsoft.com/fwlink/?linkid=2347480)
+> Microsoft will honor all Teams Webinar and Teams Meeting that are already scheduled through 2/28/27. For any events scheduled for post this period, use Teams Webinar v2 or Teams Meeting v2.
+
+1. **Teams meeting (retiring)**: Allows you to create an interactive online meeting experience where all attendees can share audio, video, or content. Learn more: [Meetings in Microsoft Teams](/microsoftteams/tutorial-meetings-in-teams).
+1. **Teams webinar (retiring)**: Useful for conference keynotes or meetings where a few presenters are talking to a large audience. Webinars can support up to 1,000 attendees and support attendee registrations. Learn more: [Webinars in Microsoft Teams](/microsoftteams/plan-webinars)
+1. **Teams live event (retiring)**: An extension of Teams meetings that enable you to schedule and produce events that stream to large online audiences. Teams live events are being replaced with Teams town halls and Teams will soon announce official removal date. Learn more: [Live Events in Microsoft Teams](https://support.microsoft.com/office/get-started-with-microsoft-teams-live-events-d077fec2-a058-483e-9ab5-1494afda578a)
 
 ### Teams meeting v2, Teams webinar v2, Teams town hall
 
