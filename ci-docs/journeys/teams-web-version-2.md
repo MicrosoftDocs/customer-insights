@@ -1,7 +1,7 @@
 ---
 title: Use Microsoft Teams webinars v2 to host online events in Customer Insights - Journeys
 description: Learn how to create and host online events in Dynamics 365 Customer Insights - Journeys using Microsoft Teams as the webinar provider.
-ms.date: 12/22/2025
+ms.date: 02/04/2026
 ms.topic: how-to
 author: terezakirk
 ms.author: terezakirk
@@ -38,6 +38,14 @@ The default webinar settings are configured to provide the best attendee and pre
 :::image type="content" source="media/teams-web-settings.png" alt-text="Screenshot of settings for Teams webinars." lightbox="media/teams-web-settings.png":::
 
 Learn more: [Manage meeting settings in Microsoft Teams](/microsoftteams/meeting-settings-in-teams).
+
+### Adding co-organizers to webinar
+
+In Microsoft Teams, a co-organizer is a designated person assigned by the primary organizer to help manage a town hall, with permissions to manage the lobby, start/stop recording, and manage attendee roles. They can be added to assist with setup and execution, allowing them to join early and control production tools. 
+
+To add a co-organizer to your event, first add them to the **Team Members table on Additional information tab** in your event. To be able to add the team member successfully, they need to be part of your organization and have access to both - Customer Insights Journeys and your Teams instance. Once the team member is added, you can navigate to the **General tab** and add a co-organizer through the look up. 
+
+:::image type="content" source="media/coorganizer.png" alt-text="Screenshot of settings for webinar." lightbox="media/coorganizer.png":::
 
 #### Webinar roles
 
