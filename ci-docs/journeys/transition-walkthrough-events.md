@@ -121,6 +121,14 @@ Events are a shared capability between real-time journeys and outbound marketing
 
 Outbound marketing registration records stay visible in the contact record because they're Dataverse entities.
 
+*Do I have to migrate my event portal?*
+ 
+ Yes, please visit [Transition of event registration experience](#transition-of-event-registration-experience) to understand your options.
+
+ *Is the angular app used for events portal in Outbound marketing being deprecated?*
+
+ As part of outbound removal, we do not remove your Angular app based portal. While you can continue to use the portal, we strongly recommend that you move to new portals built using power pages or other technologies of your choice as we will no longer maintain the app and Microsoft will no longer provide any new security updates. Please visit [Transition of event registration experience](#transition-of-event-registration-experience) to understand your options.
+
 *Will the event data tables change?*
 
 The data structure for real-time journeys events is the same as outbound marketing for now, but as we introduce changes and enhancements to the system, we might implement some features differently.
@@ -135,7 +143,7 @@ No. Any live events that accept registrations need to have registration closed b
 
 *What should I do if the features I need for event planning aren't available?*
 
-Apart from the general availability of the event passes feature, there are no planned features that are considered transition blockers for the event management area.
+There are no planned features that are considered transition blockers for the event management area.
 
 ## Blogs and workarounds
 

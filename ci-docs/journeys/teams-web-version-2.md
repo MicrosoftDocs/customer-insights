@@ -1,7 +1,7 @@
 ---
 title: Use Microsoft Teams webinars v2 to host online events in Customer Insights - Journeys
 description: Learn how to create and host online events in Dynamics 365 Customer Insights - Journeys using Microsoft Teams as the webinar provider.
-ms.date: 12/22/2025
+ms.date: 02/04/2026
 ms.topic: how-to
 author: terezakirk
 ms.author: terezakirk
@@ -39,6 +39,14 @@ The default webinar settings are configured to provide the best attendee and pre
 
 Learn more: [Manage meeting settings in Microsoft Teams](/microsoftteams/meeting-settings-in-teams).
 
+### Adding co-organizers to webinar
+
+In Microsoft Teams, a co-organizer is a designated person assigned by the primary organizer to help manage a town hall, with permissions to manage the lobby, start/stop recording, and manage attendee roles. They can be added to assist with setup and execution, allowing them to join early and control production tools. 
+
+To add a co-organizer to your event, first add them to the **Team Members table on Additional information tab** in your event. To be able to add the team member successfully, they need to be part of your organization and have access to both - Customer Insights Journeys and your Teams instance. Once the team member is added, you can navigate to the **General tab** and add a co-organizer through the look up. 
+
+:::image type="content" source="media/coorganizer.png" alt-text="Screenshot of settings for webinar." lightbox="media/coorganizer.png":::
+
 #### Webinar roles
 
 | Role name                    | What do they do?                                                                                   | How to create them? |
@@ -58,6 +66,35 @@ Learn more: [Manage meeting settings in Microsoft Teams](/microsoftteams/meeting
 Teams webinars scheduled through Customer Insights – Journeys rely on event registrations for each event. These registrations are regularly synced with the corresponding Teams webinar, ensuring that the list of registrants is automatically updated whenever a new registration is received in Customer Insights - Journeys.
 
 To create a seamless webinar registration experience, follow one of the available options described in the official guide: [Create an event registration experience](event-registration-experience.md).
+
+## Accessing a Teams webinar attendee link
+
+The Teams attendee URL is created when you save a Customer Insights - Journeys event that is being streamed with Teams. You can navigate to the Teams webinar using the attendee URL.
+
+> [!NOTE]
+> To invite a registrant to join the event, do not share the attendee URL directly. Instead, use the email invitation method described below.
+
+## Calendar integration
+
+Once a meeting is created or updated and the producers and presenters are added (by adding team members and speakers), the meeting will show up in their Outlook calendar and in their Teams calendar. The calendar item is a **read-only** version of the event. Changes made to the event from the Teams meeting owner's calendar won’t update the event in Customer Insights - Journeys. Speakers and team members can join the meeting from their calendars.
+
+> [!NOTE]
+> Presenters that are guest users will not see the event on their calendar. To share the event link with guest users, send them the [attendee link from the event in Customer Insights - Journeys](teams-webinar.md#accessing-a-teams-live-event-or-meeting-attendee-link).
+
+> [!IMPORTANT]
+> The calendar integration feature for producers and presenters is not affected by the **Calendar content** field in the **Additional information** tab in the event planning work area. The **Calendar content** field only affects .ics files sent through the email designer. Learn more: [Generate iCalendar files for events and sessions](add-to-calendar.md).
+
+> [!IMPORTANT]
+> For on-premises mailboxes, you cannot create a calendar item for the Teams webinar event organizer or for the speakers. This is a known limitation of Exchange REST APIs for on-premises mailboxes. In this case, you should share the event details (such as the Teams meeting URL) through a standard email to the event speakers.
+
+## Inviting registrants to attend the Teams event through email
+
+After creating the event, going live with it, and gathering registrations, you should [send the registrants an email](email-design.md) to provide the attendee URL. In the Customer Insights - Journeys email designer, you’ll find a **Join in Teams** option in the **Link to** menu for the button element.
+
+The **Join in Teams** button generates a unique attendee URL for each registrant. When the registrant selects the button, the Customer Insights - Journeys app creates a relevant check-in record for them, giving insights about the Teams event attendance in Customer Insights - Journeys. You can either set up the button to link to a specific event or selected session or, if you are using trigger-based journeys and one email template for multiple events, you can change the setting **Select event/event registration** from Event to Other source and pick an attribute relevant to your trigger.
+
+> [!NOTE]
+> The Teams webinar owner is set to the user who creates the meeting in Customer Insights - Journeys. You cannot change the owner once the event has been created. This is different from the owner of the event record in Customer Insights - Journeys.
 
 ### View webinar engagement data
 
