@@ -1,7 +1,7 @@
 ---
 title: Set up a legacy Teams webinar, meeting, or live event
 description: Learn how to create and host legacy live Microsoft Teams events in Dynamics 365 Customer Insights - Journeys.
-ms.date: 12/22/2025
+ms.date: 02/04/2026
 ms.topic: how-to
 author: terezakirk
 ms.author: terezakirk
@@ -18,8 +18,6 @@ search.audienceType:
 
 [!INCLUDE [marketing-trial-cta](./includes/marketing-trial-cta.md)]
 
-> [!VIDEO https://learn-video.azurefd.net/vod/player?id=46b08db8-059a-40c7-928e-6b596f087907]
-
 This article explains how to use Microsoft Teams as an online meeting provider for Customer Insights - Journeys events. Teams event functionality is incorporated directly into the Customer Insights - Journeys app, allowing you to use Teams webinars or Teams live events for one/some to many online events, and Teams meetings for interactive online meetings.
 
 For general information about setting up Microsoft Teams, refer to the [Microsoft Teams deployment overview](/microsoftteams/deploy-overview).
@@ -29,6 +27,11 @@ For general information about setting up Microsoft Teams, refer to the [Microsof
 
 > [!TIP]
 > This article discusses legacy Teams functionality. To create events using the latest functionality, see [Teams meeting v2](teams-meeting-version-2.md), [Teams webinar v2](teams-web-version-2.md), and [Teams town hall](teams-town-hall.md).
+
+> [!IMPORTANT]
+> Microsoft is retiring Teams live events and the associated Microsoft Graph APIs used to create Teams live events effective June 30th, 2026 though Microsoft will honor all live events that are already scheduled through 2/28/27. We encourage customers to migrate to Teams town halls, which offers an improved experience for large-scale digital and hybrid events. Teams town halls also provide comparable Graph APIs for programmatic creation, management, and integration of broadcast-style events. See the official Microsoft Teams announcement [here](https://go.microsoft.com/fwlink/?linkid=2347480)
+> 
+> Microsoft will honor all Teams Webinar and Teams Meeting that are already scheduled through 2/28/27. For any events scheduled for post this period, use Teams Webinar v2 or Teams Meeting v2.
 
 ## Create an online event
 
@@ -253,26 +256,6 @@ The **Join in Teams** button generates a unique attendee URL for each registrant
 
 > [!TIP]
 > If an attendee selects the **Join in Teams** button *more than 120 minutes* before the event starts, the check-in *won't* be created. This is a hard-coded feature to prevent accidental check-ins when a recipient tests the link after they receive the email.
-
-### Create a Join in Teams button
-
-1. Create [a new email](email-design.md) in the email editor.
-1. In the **Toolbox** pane, go to **Elements** and drag and drop a **Button** element into the email.
-1. The **Edit button** options will appear in the right pane. For the **Link to** option, select **Join in Teams**.
-
-    > [!div class="mx-imgBorder"]
-    > ![Join in Teams button](media/teams-webinar-join-in-teams.png "Join in Teams button")
-
-1. In the **Edit button** pane, open the **Type** dropdown and select whether you want the button to link to an **Event** or a **Session**.
-1. Select the specific event or session you want the customer to join. Next, enter the text label for the button and adjust the design to correspond with the email.
-
-    > [!NOTE]
-    > The event or session needs to be set to a Teams live event or meeting and must be in a "Live” state before you can select it.
-
-    > [!div class="mx-imgBorder"]
-    > ![Join in Teams button options.](media/teams-webinar-event-or-session.png "Join in Teams button options")
-
-1. To preview the button in the **Preview and test** panel, select a contact that has a registration for the selected event or session.
 
 ## Keeping Customer Insights - Journeys and Teams in sync
 
