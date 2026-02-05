@@ -58,6 +58,8 @@
       href: transition-walkthrough-events.md
     - name: Event registration
       href: migrate-event-registration.md
+    - name: Event registration migration tool 
+      href: event-migration.md
     - name: Insights and reports
       href: transition-walkthrough-insights.md    
     - name: Journeys
