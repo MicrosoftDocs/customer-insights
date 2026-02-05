@@ -13,7 +13,7 @@ ms.custom:
   - ai-gen-description
   - ai-seo-date:02/06/2025
 ---
-# Migrate registrations from Outbound event to Real-time marketing event to speed up your transition  
+# Migrate registrations from Outbound event to Real-time marketing event to complete your transition  
 
 ## Introduction 
 
