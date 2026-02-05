@@ -1,7 +1,7 @@
 ---
 title: Transition events from outbound marketing to real-time journeys
 description: Learn how to transition event management capabilities from outbound marketing to real-time journeys in Dynamics 365 Customer Insights - Journeys.
-ms.date: 10/20/2025
+ms.date: 02/05/2026
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
@@ -75,18 +75,16 @@ The following sections cover transition guidance for real-time events.
 
 ### Timing of the transition
 
-Real-time events are available for all customers. You should create all events that don't require event passes as real-time events by default.
-
-Consider the event schedule when creating the transition schedule. The key decision point is the registration start and end date. If the registration period ends before the planned outbound marketing removal date, you can still create the event as an outbound marketing event, even if the event takes place in the future.
+At this point, all new events will be by default created as Real-time events. As described in the [transtion FAQ document](https://learn.microsoft.com/en-us/dynamics365/customer-insights/journeys/transition-faqs#what-will-happen-after-june-30-2025-will-outbound-marketing-stop-working), we are in the Phase 4 of Outbound marketing removal so unless you have been granted an extension, you need to transition all your events immediately. 
 
 ### Migration path
 
 To transition your events and related communication:
 
-1. Migrate all event-related communication to real-time journeys regardless of whether you’re using outbound or real-time events. Journey orchestration, segmentation, and other assets also work with outbound event registrations.
-1. Identify new events you're planning to run and check whether there's any critical functionality stopping you from using real-time journeys. If there are no gaps identified, then create all new events in real-time journeys only.
-1. Create the event registration experience per the guidance in [Transition of event registration experience](#transition-of-event-registration-experience).
-1. If possible, minimize the number of events that have a registration period open after outbound marketing removal. 
+1. Migrate all event-related communication to real-time journeys regardless of whether you’re using outbound or real-time events. Journey orchestration, segmentation, and other assets also work with outbound event registrations. 
+1. Transition the event registration experience per the guidance in [Transition of event registration experience](#transition-of-event-registration-experience).
+1. Perform an analysis of Outbund events. Draft events or Live events without any registration should be created in Real-time marketing instead.
+1. If possible, minimize the number of events that have a registration period open after outbound marketing removal, but for those events that are live, already have registrations, and their end date is after the outbound removal, consider using the [Event registration migration tool](event-migration.md) to migrate the existing registrations from Outboudn to Real-time event.
 
 #### Transition of event registration experience
 
@@ -119,7 +117,7 @@ Events are a shared capability between real-time journeys and outbound marketing
 
 *What will happen with registrations in outbound marketing events?*
 
-Outbound marketing registration records stay visible in the contact record because they're Dataverse entities.
+Outbound marketing registration records stay visible in the contact record because they're Dataverse entities. If you have Outbound event with registrations which is ending after the outbound marketing is removed, consider using the [Event registration migration tool](event-migration.md) to migrate the existing registrations from Outbound to Real-time event.
 
 *Do I have to migrate my event portal?*
  
