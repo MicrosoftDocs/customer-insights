@@ -3,20 +3,20 @@ Copilot in Customer Insights helps you work faster and smarter by turning natura
 ### Customer Insights - Data
 
 | Feature | Description | Learn more |
-|---------|-------------|----------------|
-| Dialog with data | Lets you ask questions in natural language to quickly generate insights about your customers. | [Have a dialog with data using Copilot](/dynamics365/customer-insights/data/dialog-with-data) |
-| Data prep report | Helps you understand the overall data quality and the readiness of your data to produce insights. | [Data prep report overview](/dynamics365/customer-insights/data/data-prep-overview) |
-| Environment status summary | Helps you quickly understand the status of your environment based on the business impact of what you've configured. | [Environment status summary](/dynamics365/customer-insights/data/system) |
-| Answers to capability questions | Gets answers to questions about Customer Insights - Data and its features. | [Get answers to questions about capabilities from Copilot](/dynamics365/customer-insights/data/help-pane-copilot) |
-| Segment creation | Creates segments using everyday words without detailed knowledge about the data schema. | [Create segments with Copilot](/dynamics365/customer-insights/data/segments-copilot) |
+|-------------|-------------|------------|
+| **Dialog with data** | Lets you ask questions in natural language to quickly generate insights about your customers. | [Have a dialog with data using Copilot](/dynamics365/customer-insights/data/dialog-with-data) |
+| **Data prep report** | Helps you understand the overall data quality and the readiness of your data to produce insights. | [Data prep report overview](/dynamics365/customer-insights/data/data-prep-overview) |
+| **Environment status summary** | Helps you quickly understand the status of your environment based on the business impact of what you've configured. | [Environment status summary](/dynamics365/customer-insights/data/system) |
+| **Answers to capability questions** | Gets answers to questions about Customer Insights - Data and its features. | [Get answers to questions about capabilities from Copilot](/dynamics365/customer-insights/data/help-pane-copilot) |
+| **Segment creation** | Creates segments using everyday words without detailed knowledge about the data schema. | [Create segments with Copilot](/dynamics365/customer-insights/data/segments-copilot) |
 
 ### Customer Insights - Journeys
 
 | Feature | Description | Learn more |
-|---------|-------------|----------------|
-| Set up proactive outreach | Conversational journeys combines Dynamics 365 Customer Insights - Journeys, Dynamics 365 Contact Center, and AI agents built with Copilot Studio to deliver customer experiences at scale. | [Conversational journeys overview](/dynamics365/customer-insights/journeys/conversational-journeys-overview) |
-| Create journeys | Creates real-time journeys for you based on your journey goals and objectives that you can describe in natural language. | [Create journeys using AI assistance](/dynamics365/customer-insights/journeys/real-time-marketing-use-copilot-create-journey) |
-| Target the right customers | Creates segments for your journeys based on your criteria that you can describe in natural language. | [Target the right customers using query assist](/dynamics365/customer-insights/journeys/real-time-marketing-natural-language-segments) |
-| Create emails | Generates email content based on key points or a selected topic in a tone of voice that matches your message. | [Use AI to kickstart email creation](/dynamics365/customer-insights/journeys/content-ideas) |
-| Recommend images | Interprets the written and visual context of your messages, ensuring that recommended images enhance rather than detract from the overall communication. | [Use images in your content](/dynamics365/customer-insights/journeys/upload-images-files#use-images-in-your-content) |
-| Rewrite and improve content | Improves and polishes your content. | [Refresh and perfect your message](/dynamics365/customer-insights/journeys/content-rewrite) |
+|-------------|-------------|------------|
+| **Set up proactive outreach** | Conversational journeys combines Dynamics 365 Customer Insights - Journeys, Dynamics 365 Contact Center, and AI agents built with Copilot Studio to deliver customer experiences at scale. | [Conversational journeys overview](/dynamics365/customer-insights/journeys/conversational-journeys-overview) |
+| **Create journeys** | Creates real-time journeys for you based on your journey goals and objectives that you can describe in natural language. | [Create journeys using AI assistance](/dynamics365/customer-insights/journeys/real-time-marketing-use-copilot-create-journey) |
+| **Target the right customers** | Creates segments for your journeys based on your criteria that you can describe in natural language. | [Target the right customers using query assist](/dynamics365/customer-insights/journeys/real-time-marketing-natural-language-segments) |
+| **Create emails** | Generates email content based on key points or a selected topic in a tone of voice that matches your message. | [Use AI to kickstart email creation](/dynamics365/customer-insights/journeys/content-ideas) |
+| **Recommend images** | Interprets the written and visual context of your messages, ensuring that recommended images enhance rather than detract from the overall communication. | [Use images in your content](/dynamics365/customer-insights/journeys/upload-images-files#use-images-in-your-content) |
+| **Rewrite and improve content** | Improves and polishes your content. | [Refresh and perfect your message](/dynamics365/customer-insights/journeys/content-rewrite) |
