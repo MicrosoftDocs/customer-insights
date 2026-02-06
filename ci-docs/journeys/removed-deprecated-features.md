@@ -1,7 +1,7 @@
 ---
 title: Removed or deprecated features in Dynamics 365 Customer Insights - Journeys
 description: 'Learn about removed and deprecated features in Dynamics 365 Customer Insights - Journeys to plan for upcoming changes effectively.  '
-ms.date: 02/04/2026
+ms.date: 04/03/2025
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -23,17 +23,6 @@ This article describes features that have been removed, or that are planned for 
 - A *deprecated* feature isn't in active development and may be removed in a future update.
 
 This list is intended to help you consider these removals and deprecations for your own planning. Where possible, we share option to use similar capabilities for removed or deprecated features.
-
-## Features removed or deprecated in February 2026
-
-### Integrate reCAPTCHA service with Customer Insights - Journeys forms
-
-| &nbsp;  | &nbsp;  |
-|---|---|
-| **Reason for deprecation/removal** |   |
-| **Replaced by another feature?**   |  |
-| **Product areas affected**         | |
-| **Status**                         | |
 
 ## Features removed or deprecated in May 2025
 
