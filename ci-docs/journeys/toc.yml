@@ -402,7 +402,7 @@
         href: real-time-journeys-event-session.md
       - name: Set up and manage an event waitlist
         href: set-up-and-manage-waitlist.md
-      - name: Set up event passes (preview)
+      - name: Set up event passes
         href: real-time-journeys-event-passes.md
       - name: Create an event from another event
         href: event-from-event.md

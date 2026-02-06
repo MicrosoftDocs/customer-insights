@@ -1,7 +1,7 @@
 ---
-title: Set up event passes (preview)
+title: Set up event passes 
 description: Discover how to create and manage event passes for paid events in Dynamics 365, including pricing, allocation, and session-level access control.
-ms.date: 11/18/2025
+ms.date: 02/05/2026
 ms.topic: article
 author: terezakirk
 ms.author: terezakirk
@@ -11,15 +11,11 @@ search.audienceType:
   - enduser
 ---
 
-# Set up event passes (preview)
+# Set up event passes 
 
 [!INCLUDE [Preview banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 Event passes act as tickets that grant attendees access to your event and its sessions or tracks. Passes are optional, but they're essential if you want to manage paid access, session-level permissions, or special categories of registrations (for example, VIP or sponsors).
-
-To enable event passes, go to **Settings** > **Feature switches**, and under **Event management**, turn on the **Enable payments in real-time journeys** toggle.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note.md)]
 
 ## What are event passes?
 
@@ -39,8 +35,9 @@ Go to the **Event record** > **Passes** tab. Select **+New Pass** to create a ne
 - **Number of passes allocated**: Number of passes available for attendees to select and buy. Set **Passes allocated** to a positive number to make it visible on the event website. If the allocation is zero, the pass stays hidden (useful for VIP or draft passes).
 - **Pass price**: Pass price in the currency set in your organization settings and on the **Additional information** tab for your event.
 - **Description**: Optional field that helps attendees learn what's included in the pass price.
-
-After you create the pass, open the pass record and assign eligible sessions (if needed). The pass and session relationship helps event planners and attendees learn which pass lets them join which session.
+- **Eligible sessions**: Optional association. The pass and session relationship helps event planners and attendees learn which pass lets them join which session.
+  
+:::image type="content" source="media/passwithsessions.png" alt-text="Screenshot of pass settings with selected sessions." lightbox="media/passwithsessions.png":::
 
 ## Add passes to a registration form
 
@@ -48,7 +45,7 @@ When you use a real-time journeys registration form to register attendees for yo
 
 :::image type="content" source="media/form-with-passes.png" alt-text="Screenshot of form editor and passes element." lightbox="media/form-with-passes.png":::
 
-You can drag and drop the **Passes** element anywhere on the form. Once added, you can edit the properties of the element. In the panel on the right-hand side, you can change the order in which the passes are displayed, select which attribute you want to show to your attendees, and change the display style for the element. You can choose from a traditional dropdown or select a card style for a more modern look and feel.
+You can drag and drop the **Passes** element anywhere on the form. Once added, you can edit the properties of the element. In the panel on the right-hand side, you can change the order in which the passes are displayed, select which attribute you want to show to your attendees, and change the display style for the element. You can choose from a traditional dropdown or select a card style for a more modern look and feel. If you're using session registration in your form, please note that the pass element should be placed above the sessions element as the selection of a pass affects which sessions are available for registrations.
 
 :::image type="content" source="media/passes-settings.png" alt-text="Screenshot of passes element settings." lightbox="media/passes-settings.png":::
 
