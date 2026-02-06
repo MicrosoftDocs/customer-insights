@@ -2675,6 +2675,21 @@
       "source_path": "ci-docs/journeys/admin-guide.md",
       "redirect_url": "/dynamics365/customer-insights/journeys/open-settings",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/transition-faqs.md#what-will-happen-after-june-30-2025-will-outbound-marketing-stop-working-updated-november-21-2025",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-faqs#what-will-happen-after-june-30-2025-will-outbound-marketing-stop-working",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/journey-known-issues.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/real-time-marketing-known-issues#customer-journeys",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/real-time-marketing-form-custom-captcha.md",
+      "redirect_url": "ci-docs/journeys/real-time-marketing-form-security-privacy.md",
+       "redirect_document_id": false
     }
   ]
 }
