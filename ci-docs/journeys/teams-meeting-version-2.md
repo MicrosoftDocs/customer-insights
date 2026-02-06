@@ -1,7 +1,7 @@
 ---
 title: Use Microsoft Teams meetings v2 for Customer Insights - Journeys online events
 description: Learn how to create and host Teams meeting v2 in Customer Insights - Journeys.
-ms.date: 12/22/2025
+ms.date: 02/05/2026
 ms.topic: how-to
 author: terezakirk
 ms.author: terezakirk
