@@ -43,18 +43,18 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 	:::image type="content" source="media/paid-events.png" alt-text="An event passes UI." lightbox="media/paid-events.png":::
 
 - **Enhanced reCAPTCHA** 
-	- Marketers rely on clean, trustworthy data to run effective journeys, but automated bot submissions can overwhelm forms, skew insights, and reduce conversion rates. Before this update, protecting forms required outdated HIP captcha or custom technical work, creating friction and leaving gaps in security. With the new built‑in reCAPTCHA, you protect your forms from bots while keeping the experience fast and accessible for real customers. You can add strong bot protection in seconds. No coding, no developer support, and no risk of losing data quality. This update boosts confidence in your form submissions, reduces spam, and ensures that every interaction you collect reflects real customer intent. The legacy HIP captcha is being deprecated to move to a more modern, secure, and user‑friendly reCAPTCHA experience. The HIP captcha will be deprecated in March 2026 and fully removed from all CI‑J forms by June 30, 2026. 
+	- Marketers rely on clean, trustworthy data to run effective journeys, but automated bot submissions can overwhelm forms, skew insights, and reduce conversion rates. Before this update, protecting forms required outdated HIP captcha or custom technical work, creating friction and leaving gaps in security. With the new built‑in reCAPTCHA, you protect your forms from bots while keeping the experience fast and accessible for real customers. You can add strong bot protection in seconds. No coding, no developer support, and no risk of losing data quality. This update boosts confidence in your form submissions, reduces spam, and ensures that every interaction you collect reflects real customer intent. The legacy HIP captcha is being deprecated to move to a more modern, secure, and user‑friendly reCAPTCHA experience. The HIP captcha will be deprecated in March 2026 and fully removed from all Customer Insights ‑ Journeys forms by June 30, 2026. 
 <!--	- [Release plan]() -->
 <!---	- [Docs](real-time-marketing-form-security-privacy.md#protecting-forms-from-bots-with-recaptcha) --> 
 
 #### Monthly enhancements
 
 - **Segmentation - Unused segments are not evaluated after 30 days** 
-	- Segments that have been published but not used in any live journey for 30 days are moved to the Expired state. These expired segments are no longer evaluated, helping to save resources and boost overall performance. However, they still count toward your segment limits, and you must publish them again before using them in a journey.
+	- Segments that are published but not used in any live journey for 30 days are moved to the Expired state. These expired segments are no longer evaluated, helping to save resources and boost overall performance. However, they still count toward your segment limits, and you must publish them again before using them in a journey.
 	- [Docs]()
 
 - **Segmentation – Usability and functional enhancements** 
-	- A series of improvements has been made in the segmentation area over the past few releases. Key improvements include: 
+	- Several enhancements have been introduced to segmentation. Key improvements include: 
 		* Updates to UI and insights charts to fix accessibility issues and make them mobile friendly 
 		* Ability to refresh segments manually 
 		* Added common commands Assign and Deactivate to the command bar and enable it for customization 
