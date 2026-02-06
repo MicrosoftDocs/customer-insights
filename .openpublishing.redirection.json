@@ -2685,6 +2685,11 @@
       "source_path": "ci-docs/journeys/journey-known-issues.md",
       "redirect_url": "/dynamics365/customer-insights/journeys/real-time-marketing-known-issues#customer-journeys",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/real-time-marketing-form-custom-captcha.md",
+      "redirect_url": "ci-docs/journeys/real-time-marketing-form-security-privacy.md",
+       "redirect_document_id": false
     }
   ]
 }
