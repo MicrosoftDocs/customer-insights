@@ -44,14 +44,12 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 
 - **Enhanced reCAPTCHA** 
 	- Marketers rely on clean, trustworthy data to run effective journeys, but automated bot submissions can overwhelm forms, skew insights, and reduce conversion rates. Before this update, protecting forms required outdated HIP captcha or custom technical work, creating friction and leaving gaps in security. With the new built‑in reCAPTCHA, you protect your forms from bots while keeping the experience fast and accessible for real customers. You can add strong bot protection in seconds. No coding, no developer support, and no risk of losing data quality. This update boosts confidence in your form submissions, reduces spam, and ensures that every interaction you collect reflects real customer intent. The legacy HIP captcha is being deprecated to move to a more modern, secure, and user‑friendly reCAPTCHA experience. The HIP captcha will be deprecated in March 2026 and fully removed from all Customer Insights ‑ Journeys forms by June 30, 2026. 
-<!--	- [Release plan]() -->
-<!---	- [Docs](real-time-marketing-form-security-privacy.md#protecting-forms-from-bots-with-recaptcha) --> 
+	- [Docs](real-time-marketing-form-security-privacy.md#protecting-forms-from-bots-with-recaptcha)
 
 #### Monthly enhancements
 
 - **Segmentation - Unused segments are not evaluated after 30 days** 
 	- Segments that are published but not used in any live journey for 30 days are moved to the Expired state. These expired segments are no longer evaluated, helping to save resources and boost overall performance. However, they still count toward your segment limits, and you must publish them again before using them in a journey.
-	- [Docs]()
 
 - **Segmentation – Usability and functional enhancements** 
 	- Several enhancements have been introduced to segmentation. Key improvements include: 
