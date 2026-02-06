@@ -1,7 +1,7 @@
 ---
 title: Capture forms in Customer Insights - Journeys
 description: Learn how to capture forms in Dynamics 365 Customer Insights - Journeys.
-ms.date: 04/26/2024
+ms.date: 02/05/2026
 ms.topic: how-to
 author: petrjantac
 ms.author: alfergus

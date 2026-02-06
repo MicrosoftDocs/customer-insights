@@ -1,7 +1,7 @@
 ---
 title: Customer Insights - Journeys forms security & privacy
 description: Understand the security and privacy management of forms in Dynamics 365 Customer Insights - Journeys. 
-ms.date: 02/03/2026
+ms.date: 02/05/2026
 ms.update-cycle: 180-days
 ms.topic: how-to
 author: petrjantac
