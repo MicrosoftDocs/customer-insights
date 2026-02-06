@@ -11,9 +11,7 @@ search.audienceType:
   - enduser
 ---
 
-# Set up event passes 
-
-[!INCLUDE [Preview banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+# Set up event passes
 
 Event passes act as tickets that grant attendees access to your event and its sessions or tracks. Passes are optional, but they're essential if you want to manage paid access, session-level permissions, or special categories of registrations (for example, VIP or sponsors).
 
