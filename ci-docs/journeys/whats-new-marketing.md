@@ -1,7 +1,7 @@
 ---
 title: New and upcoming features
 description: Discover the latest features, improvements, and bug fixes in Dynamics 365 Customer Insights - Journeys. Stay updated with our monthly release notes.
-ms.date: 02/03/2026
+ms.date: 02/06/2026
 ms.update-cycle: 180-days
 ms.topic: whats-new
 author: alfergus
@@ -43,20 +43,11 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 	:::image type="content" source="media/paid-events.png" alt-text="An event passes UI." lightbox="media/paid-events.png":::
 
 - **Enhanced reCAPTCHA** 
-	- ADD LATER
-	- [Release plan]() 
-	- [Docs]()
-
-<!--
+	- Marketers rely on clean, trustworthy data to run effective journeys, but automated bot submissions can overwhelm forms, skew insights, and reduce conversion rates. Before this update, protecting forms required outdated HIP captcha or custom technical work, creating friction and leaving gaps in security. With the new built‑in reCAPTCHA, you protect your forms from bots while keeping the experience fast and accessible for real customers. You can add strong bot protection in seconds. No coding, no developer support, and no risk of losing data quality. This update boosts confidence in your form submissions, reduces spam, and ensures that every interaction you collect reflects real customer intent. The legacy HIP captcha is being deprecated to move to a more modern, secure, and user‑friendly reCAPTCHA experience. The HIP captcha will be deprecated in March 2026 and fully removed from all CI‑J forms by June 30, 2026. 
+<!--	- [Release plan]() -->
+<!---	- [Docs](real-time-marketing-form-security-privacy.md#protecting-forms-from-bots-with-recaptcha) -->
 
 #### Public 
-
-- **TITLE** 
-	- Text
-	- [Release plan]() 
-	- [Docs]()
-
--->
 
 #### Monthly enhancements
 
@@ -75,7 +66,6 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 		* Fixed issues with timeline where items were showing up out of order and had other issues with end of the year 
 		* Improved messages and information throughout (for example, show logical name to disambiguate similarly named attributes)
 		* Increased query field size to support longer queries
-	- [Docs]()
 
 - **Ability to set co-organizers for Teams Town Hall** 
 	- You can now automatically assign coorganizers to Microsoft Teams Town Hall events directly within Customer Insights – Journeys. This enhancement streamlines event management, improves collaboration, and ensures smoother execution by giving additional users the ability to help manage and run Town Hall sessions. 
