@@ -42,13 +42,13 @@ The default town hall settings are configured to provide the best attendee and p
 | Teams meeting owner (organizer) | The user who creates and *saves* the record after choosing the town hall option in Customer Insights - Journeys. Changing the owner of the event record in Customer Insights - Journeys doesn’t change the owner of the town hall in Teams. Any change to the event record in Customer Insights - Journeys only reflects in Teams when the owner makes the change or when they select **Sync to Teams**. | Sign in as this user in Customer Insights - Journeys and create a new event to change the owner. |
 | Presenter                    | In a Teams town hall, a presenter is a person who presents audio, video, or a screen to the live event, or moderates the question and answer portion.| If you want to invite another person to present, add them to the event or session as a speaker in Customer Insights - Journeys. To add a speaker, create a speaker engagement at the event (or session) level. The speaker is added as a “presenter” for the town hall. Ensure that the speaker's email ID is filled in.
 
-Currently, only organizers can publish or cancel the town hall event through Customer Insights - Journeys. When assigned, co-organizers can edit the meeting options and can also start the Town Hall at the start of the event. 
+Currently, only organizers can publish or cancel the town hall event through Customer Insights - Journeys. When assigned, coorganizers can edit the meeting options and can also start the Town Hall at the start of the event. 
 
-### Adding co-organizers to Town hall 
+### Adding coorganizers to Town hall 
 
-In Microsoft Teams, a co-organizer is a designated person assigned by the primary organizer to help manage a town hall, with permissions to manage the lobby, start/stop recording, and manage attendee roles. They can be added to assist with setup and execution, allowing them to join the green room early and control production tools. 
+In Microsoft Teams, a coorganizer is a designated person assigned by the primary organizer to help manage a town hall, with permissions to manage the lobby, start/stop recording, and manage attendee roles. They can be added to assist with setup and execution, allowing them to join the green room early and control production tools. 
 
-To add a co-organizer to your event, first add them to the **Team Members table on Additional information tab** in your event. To be able to add the team member successfully, they need to be part of your organization and have access to both - Customer Insights Journeys and your Teams instance. Once the team member is added, you can navigate to the **General tab** and add a co-organizer through the look up. 
+To add a coorganizer to your event, first add them to the **Team Members table on Additional information tab** in your event. To be able to add the team member successfully, they need to be part of your organization and have access to both - Customer Insights Journeys and your Teams instance. Once the team member is added, you can navigate to the **General tab** and add a coorganizer through the lookup. 
 
 :::image type="content" source="media/coorganizer.png" alt-text="Screenshot of settings for Teams town hall." lightbox="media/coorganizer.png":::
 
@@ -60,16 +60,16 @@ In scenarios where event record changes aren’t propagated to Teams, the Custom
 
 ## Publishing a town hall
 
-After you set up the event, you can publish the event in Customer Insights - Journeys. After the Customer Insights - Journeys event is live, the town hall event is published and calendar invites are automatically generated for organizers and sent to co-organizers and speakers directly from Teams.
+After you set up the event, you can publish the event in Customer Insights - Journeys. After the Customer Insights - Journeys event is live, the town hall event is published and calendar invites are automatically generated for organizers and sent to coorganizers and speakers directly from Teams.
 
 ## Inviting registrants to attend the Teams event through email
 
 After creating the event, going live with it, and gathering registrations, you should [send the registrants an email](email-design.md) to provide the attendee URL. In the Customer Insights - Journeys email designer, you’ll find a **Join in Teams** option in the **Link to** menu for the button element.
 
-The **Join in Teams** button generates a unique attendee URL for each registrant. When the registrant selects the button, the Customer Insights - Journeys app creates a relevant check-in record for them, giving insights about the Teams event attendance in Customer Insights - Journeys. You can either set up the button to link to a specific event or selected session or, if you are using trigger-based journeys and one email template for multiple events, you can change the setting **Select event/event registration** from Event to Other source and pick an attribute relevant to your trigger.
+The **Join in Teams** button generates a unique attendee URL for each registrant. When the registrant selects the button, the Customer Insights - Journeys app creates a relevant check-in record for them, giving insights about the Teams event attendance in Customer Insights - Journeys. You can either set up the button to link to a specific event or selected session or, if you're using trigger-based journeys and one email template for multiple events, you can change the setting **Select event/event registration** from Event to Other source and pick an attribute relevant to your trigger.
 
 > [!IMPORTANT]
-> The **Join in Teams** button uses a unique URL for each registrant. Forwarding an email with a **Join in Teams** button retains the URL specific to the original recipient. The forwarded email will not generate a new check-in for the forwarded invite. To ensure your event is ready to capture all attendee information, see [Make the most of your event check-in flow](optimize-check-in.md).
+> The **Join in Teams** button uses a unique URL for each registrant. Forwarding an email with a **Join in Teams** button retains the URL specific to the original recipient. The forwarded email won't generate a new check-in for the forwarded invite. To ensure your event is ready to capture all attendee information, see [Make the most of your event check-in flow](optimize-check-in.md).
 
 > [!TIP]
 > If an attendee selects the **Join in Teams** button *more than 120 minutes* before the event starts, the check-in *won't* be created. This is a hard-coded feature to prevent accidental check-ins when a recipient tests the link after they receive the email.

@@ -23,15 +23,15 @@ This article explains how to use Microsoft Teams as an online meeting provider f
 For general information about setting up Microsoft Teams, refer to the [Microsoft Teams deployment overview](/microsoftteams/deploy-overview).
 
 > [!NOTE]
-> To use Microsoft Teams as an online event provider, you must have a [Microsoft 365 license](/office365/servicedescriptions/teams-service-description) that allows you access to the Teams service. If you do not have the correct license, you will not see the Teams webinar, Teams meeting, or Teams live event options as a part of the **Streaming provider** list.
+> To use Microsoft Teams as an online event provider, you must have a [Microsoft 365 license](/office365/servicedescriptions/teams-service-description) that allows you access to the Teams service. If you don't have the correct license, you won't see the Teams webinar, Teams meeting, or Teams live event options as a part of the **Streaming provider** list.
 
 > [!TIP]
 > This article discusses legacy Teams functionality. To create events using the latest functionality, see [Teams meeting v2](teams-meeting-version-2.md), [Teams webinar v2](teams-web-version-2.md), and [Teams town hall](teams-town-hall.md).
 
 > [!IMPORTANT]
-> Microsoft is retiring Teams live events and the associated Microsoft Graph APIs used to create Teams live events effective June 30th, 2026 though Microsoft will honor all live events that are already scheduled through 2/28/27. We encourage customers to migrate to Teams town halls, which offers an improved experience for large-scale digital and hybrid events. Teams town halls also provide comparable Graph APIs for programmatic creation, management, and integration of broadcast-style events. See the official Microsoft Teams announcement [here](https://go.microsoft.com/fwlink/?linkid=2347480)
+> Microsoft is retiring Teams live events and the associated Microsoft Graph APIs used to create Teams live events effective June 30, 2026 though Microsoft will honor all live events that are already scheduled through February 28, 2027. We encourage customers to migrate to Teams town halls, which offers an improved experience for large-scale digital and hybrid events. Teams town halls also provide comparable Graph APIs for programmatic creation, management, and integration of broadcast-style events. See the official Microsoft Teams announcement [here](https://go.microsoft.com/fwlink/?linkid=2347480).
 > 
-> Microsoft will honor all Teams Webinar and Teams Meeting that are already scheduled through 2/28/27. For any events scheduled for post this period, use Teams Webinar v2 or Teams Meeting v2.
+> Microsoft honors all Teams Webinar and Teams Meeting that are already scheduled through February 28, 2027. For any events scheduled post this period, use Teams Webinar v2 or Teams Meeting v2.
 
 ## Create an online event
 
@@ -100,7 +100,7 @@ Learn more: [Manage meeting settings in Microsoft Teams](/microsoftteams/meeting
 #### View webinar engagement data
 
 > [!IMPORTANT]
-> Starting August 1, 2024, Teams webinar check out times and attendance reports aren't available in Customer Insights - Journeys. A fix for this issue will be announced at a future date. In the meantime, you can access check out times and attendance reports [directly in the Teams app](https://support.microsoft.com/office/manage-meeting-attendance-reports-in-microsoft-teams-ae7cf170-530c-47d3-84c1-3aedac74d310).
+> Starting August 1, 2024, Teams webinar checkout times and attendance reports aren't available in Customer Insights - Journeys. A fix for this issue will be announced at a future date. In the meantime, you can access checkout times and attendance reports [directly in the Teams app](https://support.microsoft.com/office/manage-meeting-attendance-reports-in-microsoft-teams-ae7cf170-530c-47d3-84c1-3aedac74d310).
 
 After you run a Teams webinar-based Customer Insights - Journeys event, you can view the attendee engagement data (check-in and check-out times) in the Customer Insights - Journeys app.
 
@@ -112,7 +112,7 @@ To generate the engagement data, send an email invite to webinar registrants bef
 > Organizations that manage their Teams user policies need to make sure that the admin enables the **allowTrackingInReport** and **allowEngagementReport** policies before synchronizing the engagement data. For more information, see [Set-CsTeamsMeetingPolicy](/powershell/module/skype/set-csteamsmeetingpolicy).
 
 > [!NOTE]
-> Check-out times are only supported for Teams webinar events (with streaming enabled). Live events, Teams meetings, or any other event types do not have automatic check-out times.
+> Check-out times are only supported for Teams webinar events (with streaming enabled). Live events, Teams meetings, or any other event types don't have automatic check-out times.
 
 #### Known issues with Teams webinars
 
@@ -124,10 +124,10 @@ After creating a Teams webinar Customer Insights - Journeys event, you can see i
 The discrepancies in appearance are styling issues that won't limit the functionality of the webinar. Until the webinar experience is updated in future releases, use the following guidelines to manage your webinar:
 
 -	The Teams calendar item created for your event is read-only. Synchronization between Teams and Dynamics 365 works in one direction: from Dynamics 365 to Teams. Changes you apply in Teams won't take effect on the Dynamics 365 side and may be overwritten. For this reason, use Customer Insights - Journeys to manage and edit your event. This includes configuring meeting settings, creating a registration form, and adding speakers or presenters to your event.
-- You may notice that landing pages for Teams meetings and webinars look the same. This is expected. The in-meeting experience is the same for a traditional meeting and a webinar. Your webinar will take place as you structured it with the roles of the attendees.
+- You may notice that landing pages for Teams meetings and webinars look the same. This is expected. The in-meeting experience is the same for a traditional meeting and a webinar. Your webinar takes place as you structured it with the roles of the attendees.
 - After you add a speaker engagement to your webinar through Dynamics 365, the meeting options in Teams will become visible. The calendar item will still be read-only in Teams. Make sure you edit your webinar only in Customer Insights - Journeys.
 
-Users [added as a guest](/azure/active-directory/external-identities/b2b-quickstart-add-guest-users-portal) to your Microsoft Entra ID tenant are not able to leverage any Teams integration options.
+Users [added as a guest](/azure/active-directory/external-identities/b2b-quickstart-add-guest-users-portal) to your Microsoft Entra ID tenant aren't able to use any Teams integration options.
 
 ### Teams meetings
 
@@ -153,7 +153,7 @@ You can use Teams live events to create webinar-style online meetings. Live even
 Live events are useful for conference keynotes or meetings where a few presenters present to a large audience. The audience can submit questions using the Q&A feature for the live event. More information on Teams live events: [What are Microsoft Teams live events?](/microsoftteams/teams-live-events/what-are-teams-live-events).
 
 > [!NOTE]
-> You can only create "public" Teams live events from Customer Insights - Journeys. These events are open to anyone. Attendees are not required to sign in to attend an event.
+> You can only create "public" Teams live events from Customer Insights - Journeys. These events are open to anyone. Attendees aren't required to sign in to attend an event.
 
 #### Enable Teams live events in Customer Insights - Journeys
 
@@ -193,7 +193,7 @@ Read more: [Set up for live events in Microsoft Teams](/microsoftteams/teams-liv
 |-------------------------------------------------|----------------------------------------------------------------------------------------------------|
 | Recording available to attendees                | Attendees can watch the event on-demand using DVR options for 180 days.                            |
 | Do you want to enable Q/A for this event                                             | Attendees can interact with producers and presenters in a moderated Q&A.                           |
-| Attendee URL                      | The URL that attendees will use to join the live event.                                      |
+| Attendee URL                      | The URL that attendees use to join the live event.                                      |
 
 More information on details and settings for Teams live events: [Schedule a Teams live event](https://support.microsoft.com/office/schedule-a-teams-live-event-7a9ce97c-e1cd-470f-acaf-e6dfc179a0e2).
 
@@ -227,32 +227,32 @@ If your organization has already set up a webinar provider (using ON24), you can
 
 ## Accessing a Teams live event or meeting attendee link
 
-The Teams attendee URL is created when you save a Customer Insights - Journeys event that is being streamed with Teams. You can navigate to the Teams live event or meeting using the attendee URL.
+The Teams attendee URL is created when you save a Customer Insights - Journeys event that's being streamed with Teams. You can navigate to the Teams live event or meeting using the attendee URL.
 
 > [!NOTE]
-> To invite a registrant to join the event, do not share the attendee URL directly. Instead, use the [email invitation method described below](teams-webinar.md#inviting-registrants-to-attend-the-teams-event-through-email).
+> To invite a registrant to join the event, don't share the attendee URL directly. Instead, use the [email invitation method described below](teams-webinar.md#inviting-registrants-to-attend-the-teams-event-through-email).
 
 ## Calendar integration
 
-Once a live event or meeting is created or updated and the producers and presenters are added (by adding team members and speakers), the meeting will show up in their Outlook calendar and in their Teams calendar. The calendar item is a **read-only** version of the event. Changes made to the event from the Teams meeting owner's calendar won’t update the event in Customer Insights - Journeys. Speakers and team members can join the live event from their calendars.
+Once a live event or meeting is created or updated and the producers and presenters are added (by adding team members and speakers), the meeting shows up in their Outlook calendar and in their Teams calendar. The calendar item is a **read-only** version of the event. Changes made to the event from the Teams meeting owner's calendar won’t update the event in Customer Insights - Journeys. Speakers and team members can join the live event from their calendars.
 
 > [!NOTE]
-> Presenters that are guest users will not see the event on their calendar. To share the event link with guest users, send them the [attendee link from the event in Customer Insights - Journeys](teams-webinar.md#accessing-a-teams-live-event-or-meeting-attendee-link).
+> Presenters that are guest users won't see the event on their calendar. To share the event link with guest users, send them the [attendee link from the event in Customer Insights - Journeys](teams-webinar.md#accessing-a-teams-live-event-or-meeting-attendee-link).
 
 > [!IMPORTANT]
-> The calendar integration feature for producers and presenters is not affected by the **Calendar content** field in the **Additional information** tab in the event planning work area. The **Calendar content** field only affects .ics files sent through the email designer. Learn more: [Generate iCalendar files for events and sessions](add-to-calendar.md).
+> The calendar integration feature for producers and presenters isn't affected by the **Calendar content** field in the **Additional information** tab in the event planning work area. The **Calendar content** field only affects .ics files sent through the email designer. Learn more: [Generate iCalendar files for events and sessions](add-to-calendar.md).
 
 > [!IMPORTANT]
 > For on-premises mailboxes, you cannot create a calendar item for the Teams webinar event organizer or for the speakers. This is a known limitation of Exchange REST APIs for on-premises mailboxes. In this case, you should share the event details (such as the Teams meeting URL) through a standard email to the event speakers.
 
 ## Inviting registrants to attend the Teams event through email
 
-After creating the event, going live with it, and gathering registrations, you should [send the registrants an email](email-design.md) to provide the attendee URL. In the Customer Insights - Journeys email designer, you’ll find a **Join in Teams** option in the **Link to** menu for the button element.
+After creating the event, going live with it, and gathering registrations, you should [send the registrants an email](email-design.md) to provide the attendee URL. In the Customer Insights - Journeys email designer, you find a **Join in Teams** option in the **Link to** menu for the button element.
 
-The **Join in Teams** button generates a unique attendee URL for each registrant. When the registrant selects the button, the Customer Insights - Journeys app creates a relevant check-in record for them, giving insights about the Teams event attendance in Customer Insights - Journeys. You can either set up the button to link to a specific event or selected session or, if you are using trigger-based journeys and one email template for multiple events, you can change the setting **Select event/event registration** from Event to Other source and pick an attribute relevant to your trigger.
+The **Join in Teams** button generates a unique attendee URL for each registrant. When the registrant selects the button, the Customer Insights - Journeys app creates a relevant check-in record for them, giving insights about the Teams event attendance in Customer Insights - Journeys. You can either set up the button to link to a specific event or selected session or, if you're using trigger-based journeys and one email template for multiple events, you can change the setting **Select event/event registration** from Event to Other source and pick an attribute relevant to your trigger.
 
 > [!IMPORTANT]
-> The **Join in Teams** button uses a unique URL for each registrant. Forwarding an email with a **Join in Teams** button retains the URL specific to the original recipient. The forwarded email will not generate a new check-in for the forwarded invite. To ensure your event is ready to capture all attendee information, see [Make the most of your event check-in flow](optimize-check-in.md).
+> The **Join in Teams** button uses a unique URL for each registrant. Forwarding an email with a **Join in Teams** button retains the URL specific to the original recipient. The forwarded email won't generate a new check-in for the forwarded invite. To ensure your event is ready to capture all attendee information, see [Make the most of your event check-in flow](optimize-check-in.md).
 
 > [!TIP]
 > If an attendee selects the **Join in Teams** button *more than 120 minutes* before the event starts, the check-in *won't* be created. This is a hard-coded feature to prevent accidental check-ins when a recipient tests the link after they receive the email.
@@ -261,13 +261,13 @@ The **Join in Teams** button generates a unique attendee URL for each registrant
 
 A user who has access to an event record and permissions to edit the record in Customer Insights - Journeys can make any change to a record. However, since the same user may not have created the corresponding live event or meeting in Teams (and thus may not be the "Teams Meeting owner"), the changes the user makes to an event record in Customer Insights - Journeys aren’t propagated to Teams. This functionality is similar to functionality within Teams, where a user can’t make changes to a live event or meeting created by another user.
 
-In scenarios where event record changes aren’t propagated to Teams, the Customer Insights - Journeys app displays a warning to any user who isn’t the Teams meeting owner. If Teams meeting owner opens the event record, they’ll see a **Sync with Teams** button in the ribbon. Selecting the **Sync with Teams** button syncs the changes made to the event by any non-owner users.
+In scenarios where event record changes aren’t propagated to Teams, the Customer Insights - Journeys app displays a warning to any user who isn’t the Teams meeting owner. If Teams meeting owner opens the event record, they see a **Sync with Teams** button in the ribbon. Selecting the **Sync with Teams** button syncs the changes made to the event by any nonowner users.
 
 > [!NOTE]
 > The Teams meeting owner is set to the user who creates the live event or meeting in Customer Insights - Journeys. You cannot change the owner once the event has been created. This is different from the owner of the event record in Customer Insights - Journeys.
 
 ## Viewing the event recording
 
-Once the live event is over, attendees can view the event recording by navigating to the attendee URL from their email. The recording will be available if the creator of the live event in Customer Insights - Journeys sets the **Recording available to attendees** flag to **Yes**.
+Once the live event is over, attendees can view the event recording by navigating to the attendee URL from their email. The recording is available if the creator of the live event in Customer Insights - Journeys sets the **Recording available to attendees** flag to **Yes**.
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
