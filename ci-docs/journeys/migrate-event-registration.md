@@ -29,7 +29,7 @@ The next sections explain each outbound marketing event registration experience 
 
 ## Event portal hosted on Power Portals
 
-The event portal is built on an Angular app, which will no longer be supported by Microsoft.
+The event portal is built on an Angular app, which is no longer supported by Microsoft.
 
 The recommended migration path is to build a new event registration website using Power Pages. There's a new event registration website available for Power Pages studio, which lets you build a registration experience that aligns with your brand identity. The new event registration website has many advantages compared to the outbound event portal, including:
 
@@ -40,7 +40,7 @@ For more information, see [Build an event registration website using Power Pages
 
 ## Event portal *not* hosted on Power Portals
 
-If you're currently hosting the Angular app event portal on your own infrastructure (not using Power Portals), you can keep using it but you need to maintain the app on your own. There will be no support for the Angular app by Microsoft.
+If you're currently hosting the Angular app event portal on your own infrastructure (that is, not using Power Portals), you can keep using it but you need to self-maintain the app. There is no support for the Angular app by Microsoft.
 
 The recommended migration path is to build a new event registration experience using the event web application. The event web application is a fast, lightweight, and customizable solution for showcasing live events from the Dynamics 365 events API directly on your website. It provides a responsive, multilingual interface that allows attendees to search, explore, and register for events effortlessly using the real-time journeys registration form. The registration form reads the `readableEventId` parameter from the URL to dynamically render details about the selected event. For more information, see [Create an event portal on your website using web application](developer/event-portal-web-application.md).
 
@@ -63,7 +63,7 @@ The event management API in real-time journeys is backward compatible. It lets y
 
 ## Can I keep using the Angular app after outbound marketing is removed?
 
-Out of the box, the outbound Angular portal doesn't work with real-time journeys. You can make it work with some modifications, but we don't recommend continuing to use the outbound Angular portal. After the outbound module is deprecated, the Angular app will no longer be supported and there will be no future security updates. 
+Outside of current architecture, the outbound Angular portal doesn't work with real-time journeys. It can function with some modifications, but we don't recommend continuing to use the outbound Angular portal. After the outbound module is deprecated, the Angular app will no longer be supported and there will be no future security updates. 
 
 If you still want to use the Angular portal despite the risks and limitations above, you can rebuild the Angular app to use the new real-time journeys event management API for the “list of events” functionality. For more information, see [Using the events API in real-time journeys](./developer/using-rtm-events-api.md).
 

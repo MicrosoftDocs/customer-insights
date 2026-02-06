@@ -45,7 +45,7 @@ When you use a real-time journeys registration form to register attendees for yo
 
 :::image type="content" source="media/form-with-passes.png" alt-text="Screenshot of form editor and passes element." lightbox="media/form-with-passes.png":::
 
-You can drag and drop the **Passes** element anywhere on the form. Once added, you can edit the properties of the element. In the panel on the right-hand side, you can change the order in which the passes are displayed, select which attribute you want to show to your attendees, and change the display style for the element. You can choose from a traditional dropdown or select a card style for a more modern look and feel. If you are also using session registration in your form, please note that the pass element should be placed above the sessions element as the selection of a pass affects which sessions are available for registrations. 
+You can drag and drop the **Passes** element anywhere on the form. Once added, you can edit the properties of the element. In the panel on the right-hand side, you can change the order in which the passes are displayed, select which attribute you want to show to your attendees, and change the display style for the element. You can choose from a traditional dropdown or select a card style for a more modern look and feel. If you're using session registration in your form, please note that the pass element should be placed above the sessions element as the selection of a pass affects which sessions are available for registrations.
 
 :::image type="content" source="media/passes-settings.png" alt-text="Screenshot of passes element settings." lightbox="media/passes-settings.png":::
 
