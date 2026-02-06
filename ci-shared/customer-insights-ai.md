@@ -12,7 +12,7 @@ Copilot in Customer Insights helps you work faster and smarter by turning natura
 
 ### Customer Insights - Journeys
 
-| **Feature** | Description | Learn more |
+| Feature | Description | Learn more |
 |-------------|-------------|------------|
 | **Set up proactive outreach** | Conversational journeys combines Dynamics 365 Customer Insights - Journeys, Dynamics 365 Contact Center, and AI agents built with Copilot Studio to deliver customer experiences at scale. | [Conversational journeys overview](/dynamics365/customer-insights/journeys/conversational-journeys-overview) |
 | **Create journeys** | Creates real-time journeys for you based on your journey goals and objectives that you can describe in natural language. | [Create journeys using AI assistance](/dynamics365/customer-insights/journeys/real-time-marketing-use-copilot-create-journey) |
