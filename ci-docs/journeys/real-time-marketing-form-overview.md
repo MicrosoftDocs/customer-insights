@@ -1,7 +1,7 @@
 ---
 title: Overview of Customer Insights - Journeys forms
 description: Overview of the forms capabilities in Dynamics 365 Customer Insights - Journeys. 
-ms.date: 02/09/2025
+ms.date: 02/04/2026
 ms.topic: article
 author: petrjantac
 ms.author: colinbirkett
@@ -15,12 +15,17 @@ search.audienceType:
 
 > [!IMPORTANT]
 > Dynamics 365 Customer Insights - Journeys may transfer customer data outside of the selected Azure geographic location when using the following features that use Azure CDN (content delivery network) to operate globally:
+>
 > - [Asset library](upload-images-files.md)
-> -	[Forms](real-time-marketing-form-overview.md)
+> - [Forms](real-time-marketing-form-overview.md)
 >
 > You can still execute marketing campaigns without using such features by hosting your assets and forms in a content management system of your choice.
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=ed9b04ef-a9b2-48b4-ac72-5b8f58d95c5a]
+
+> [!IMPORTANT]
+> The current HIP captcha used in Customer Insights - Journeys forms will be deprecated in March 2026 and fully removed by June 30, 2026.
+> Please follow these **[instructions](real-time-marketing-form-security-privacy.md#hip-captcha-deprecation-and-new-recaptcha-experience)** to keep your forms protected against bot submissions.
 
 ## Form types
 
@@ -64,20 +69,6 @@ To create a new custom form, navigate to the **Templates** section in the left s
 
 > [!TIP]
 > If you want to use an existing form as a new custom template, you can copy its HTML code and paste it into the newly created custom template.
-
-## Security notice
-
-Security is an important aspect of marketing and event registration forms. Customer Insights - Journeys takes the following precautions to avoid any security risks:
-
-- The Customer Insights - Journeys app accepts form submissions only from [domains allowed for external form hosting](domain-authentication.md). This security precaution applies for both forms and form capture.
-- Forms can be rendered only on domains allowed for external form hosting.
-- The out-of-box domain for forms hosted as a standalone page is enabled for external form hosting by default. Learn more: [Publish your form](real-time-marketing-form-create.md#publish-your-form)
-- To avoid form submissions by bots, you should protect forms with a captcha. The form editor includes an out-of-the-box captcha option, but you can use any other third-party captcha service to improve the user experience. Learn more: [Integrate a custom captcha service with Customer Insights - Journeys forms](real-time-marketing-form-custom-captcha.md)
-- The Customer Insights - Journeys app infrastructure contains necessary precautions to minimize the consequences of a possible DDoS attack. To prevent DDoS attacks, there's a limit of 2,000 requests/minute per org. The request limit includes visits, lookups, CAPTCHA, and form submissions. The limit allows around 100 to 500 submissions/minute, depending on the form.
-
-## Privacy notice
-
-- Marketing and event registration forms don't use any cookies. Form visit and form submit interactions use a [journey link tracking mechanism](real-time-marketing-link-tracking-mechanics.md) to get details about known users.
 
 ## Next steps
 
