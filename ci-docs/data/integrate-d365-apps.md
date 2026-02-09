@@ -39,6 +39,13 @@ Every time unification is run, the customer profile table is written to Datavers
 
 The task that performs the linking is named *CustomerId Backstamping Hydration*. To view the results from this task, go to **Settings** > **System**, and select the **Status** tab. When the task runs for the first time on a source table, it adds a lookup column and links each row by populating fields with the appropriate `CustomerID` value. The name of the lookup column is `Customer Profile`, and the schema name is `msdynci_lookupfield_customerprofile`. During subsequent runs, only rows that change are updated.
 
+> [!NOTE]
+> Automatic linking is most of the time running in _incremental mode_ which means that only updates on Customer profiles are being propagated to the Dataverse tables.
+> However there are cases when the there will be full run on the linking, which will upadate all records which are linked to Customer Profile
+>  - First run
+>  - There is no succesfull result of Merge operation
+>  - Schema of Customer profile entity was changed
+
 > [!TIP]
 > We recommend [configuring filtering attributes](/power-apps/developer/data-platform/best-practices/business-logic/include-filtering-attributes-plugin-registration) on your plugins and limiting them to only the field names relevant to your business logic. Avoid including fields such as `msdynci_lookupfield_customerprofile` if they aren’t needed. This helps prevent unintended plugin executions during backstamping, which can be especially important on the initial backstamping run when many contacts may be processed.
 
