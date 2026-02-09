@@ -23,7 +23,7 @@ Form capture uses the same API as the standard forms to process submissions. The
 > [!IMPORTANT]
 > **Form capture requires DynamicsMKT_Forms solution version 1.1.35355 or higher**. When provisioning a trial instance, you won't always have the latest version automatically. Make sure you've updated Customer Insights - Journeys before attempting form capturing.
 
-## Enable form capture
+## Enable form capture feature switch
 
 The form capture feature is disabled by default. You can enable the *Form capture* toggle in **Settings** > **Feature switches** > **Forms**.
 > [!div class="mx-imgBorder"]
