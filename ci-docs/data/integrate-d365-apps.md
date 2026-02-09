@@ -5,7 +5,7 @@ author: Scott-Stabbert
 ms.author: sstabbert
 ms.reviewer: v-wendysmith
 ms.topic: integration
-ms.date: 12/18/2025
+ms.date: 02/09/2026
 ms.custom: bap-template
 ---
 
@@ -40,10 +40,10 @@ Every time unification is run, the customer profile table is written to Datavers
 The task that performs the linking is named *CustomerId Backstamping Hydration*. To view the results from this task, go to **Settings** > **System**, and select the **Status** tab. When the task runs for the first time on a source table, it adds a lookup column and links each row by populating fields with the appropriate `CustomerID` value. The name of the lookup column is `Customer Profile`, and the schema name is `msdynci_lookupfield_customerprofile`. During subsequent runs, only rows that change are updated.
 
 > [!NOTE]
-> Automatic linking is most of the time running in _incremental mode_ which means that only updates on Customer profiles are being propagated to the Dataverse tables.
-> However there are cases when the there will be full run on the linking, which will upadate all records which are linked to Customer Profile
+> Automatic linking is usually running in _incremental mode_, which means only updates on Customer profiles are being propagated to the Dataverse tables.
+> There are cases when there is full run on linking, which updates all records that are linked to Customer profiles.
 >  - First run
->  - There is no succesfull result of Merge operation
+>  - There's no successful result of Merge operation
 >  - Schema of Customer profile entity was changed
 
 > [!TIP]
