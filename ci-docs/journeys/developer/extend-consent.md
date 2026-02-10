@@ -16,7 +16,6 @@ search.audienceType:
 - Basic knowledge on how to [create and debug Dataverse plugins](/power-apps/developer/data-platform/write-plug-in?tabs=pluginbase)
 - Basic knowledge on how to [create custom API endpoints](/power-apps/developer/data-platform/create-custom-api-solution)
 - A consent solution (DynamicsMKT_Consent) with the April 2024 update (solution version 1.1.40197.xxx or higher)
-- Enabled "Multi-brand consent and customizable preference centers" in **Settings** > **Feature switches**
 
 ## Consent provider entity
 

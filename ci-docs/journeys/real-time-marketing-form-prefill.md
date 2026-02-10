@@ -69,3 +69,13 @@ Form fields are prefilled only when you open the page containing the form by sel
 ### "Prefill marketing form" is enabled on the contact record, but the form isn't prefilled
 
 The "Prefill marketing form" attribute works only for outbound marketing forms. Real-time journeys forms use the [Tracking purpose](real-time-marketing-email-text-consent.md#consent-to-track-user-behavior) as consent for prefill.
+
+### Step-bystep troubleshooting
+
+To enable form prefill, ensure that all the following requirements are correctly configured:
+
+  1. Form prefill is enabled on domain settings level (in case the form is embedded into your own domain).
+  2. Form prefill is enabled on a form level and for each field respectively.
+  3. The end user who is opening a website with a form has provided tracking consent.
+  4. The link that redirects to a prefilled form must be created as a Customer Insights - Journeys tracking link generated from a real customer journey (not from a test send). After clicking the tracking link, the URL must include the required tracking parameters, such as:
+  `website_url/path#msdynmkt_trackingcontext=[some_guid]&msdynmkt_prefill=[some_text]`

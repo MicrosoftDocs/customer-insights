@@ -33,6 +33,9 @@ The form capture feature is disabled by default. You can enable the *Form captur
 
 Form capture mimics submission of a standard Customer Insights - Journeys form. To link submissions of your existing form into Customer Insights - Journeys, you need to create a form using the Customer Insights - Journeys form editor. Once you publish that form, you're able to obtain a form capture script, which needs to be embedded into the web page that contains your existing form. The script includes the definition of existing form fields mapping on attributes of the lead or contact entity. You can see all submissions and analytics inside Customer Insights - Journeys. You can also use this form in journey orchestration with the **Marketing Form Submitted** trigger. This form submission can also create or update Contact Point Consent and related Purposes or Topics.
 
+> [!WARNING]
+> In form capture scenarios, form visit events aren’t collected for analytics, and web tracking isn’t available.
+
 ## Step-by-step guide capturing forms
 
 ### Creating the form capture in the Customer Insights - Journeys form editor
@@ -325,6 +328,21 @@ d365mktformcapture.waitForElement("#form1").then(form => {
 </script>
 ```
 
+## Set a logical name for an unmapped field in form capture
+
+Form capture supports [unmapped fields](real-time-marketing-forms-custom-fields.md), allowing you to assign a logical field name even when the form field does not correspond to an existing mapped field. To do this, specify the DataverseFieldName property in the form capture mapping. This value defines the logical name that will be used for the unmapped field during processing, provided it does not conflict with any existing mapped field names.
+
+```HTML
+<script>
+const mappings = [
+  {
+    FormFieldName: "customFieldInForm",
+    DataverseFieldName: "MyUnmappedField"
+  }
+];
+</script>
+```
+
 ## Troubleshooting
 
 ### The call to the submission endpoint fails with a CORS error
@@ -334,5 +352,9 @@ Cross-Origin Resource Sharing (CORS) can cause  form submission capture to fail.
 ### Consent values aren't updated correctly
 
 Make sure you've set up the respective consent fields in the form editor (see [Creating the form capture in Customer Insights - Journeys form editor](real-time-marketing-form-capture.md#creating-the-form-capture-in-the-customer-insights---journeys-form-editor)) and that you've used the correct mappings generated in the publishing process.
+
+### My form redirects to a new page after submission, and the submission is inconsistently recorded or not recorded in Dynamics
+
+When a form submission triggers an immediate page redirect, the browser may cancel pending network requests including the form‑capture call—resulting in the submission not being recorded. To avoid this, ensure your code controls the navigation flow: use `event.preventDefault()` to stop the browser’s default submission behavior so your handler can run, and then initiate the redirect only after the `d365mktformcapture.submitForm()` promise has completed.
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]

@@ -40,6 +40,7 @@ When you select a field on the canvas, its properties appear in the right pane.
 - **Required**: If enabled, the user can't submit the form if this field is empty.
 - **Validation**: Set a rule that checks the content of the field. If the validation rule isn't met, the user can't submit the form. It's important to set the right validation for email, phone number, and similar fields.
 - **Hide field**: If enabled, the field isn't visible in the form. Use hidden fields to store extra metadata with the form submission.
+- **Read-only**: If enabled, the field becomes read‑only and users can’t modify its value. Validation is skipped for read‑only fields. This option is typically used with Form Prefill to display information, such as the user’s email address, without allowing changes.
 
 ### Custom validation
 
@@ -179,6 +180,9 @@ Attribute metadata defines field types and formats. You can't change field types
 > **File** and **Customer** field types aren't supported in forms.
 >
 > The multi-select field type doesn't allow setting a default value.
+
+> [!WARNING]
+> The value of a single form field is limited to 4000 characters. If the field's value exceed this limit, the submission will fail.
 
 ### Phone number field
 
@@ -362,10 +366,6 @@ Reuse this example to enrich your leads with more UTM parameters, like utm_campa
 ### Customize the form and form submission entities
 
 [Add custom attributes to the form or form submission entities](real-time-marketing-customize-forms.md) to enhance your experience with the form editor.
-
-### Integrate a custom captcha into the form
-
-You can [integrate custom captcha](real-time-marketing-form-custom-captcha.md) bot protection services like [Google reCAPTCHA](https://www.google.com/recaptcha/about/) into your form.
 
 ### Custom back-end validation of form submission
 
