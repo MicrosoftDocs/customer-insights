@@ -77,7 +77,7 @@ As we continue to work on Customer Insights - Journeys and refine the experience
 
 ## Triggers
 
-- Today, there's a limit of 100 custom triggers that can be fired in an org per day. To increase this for your organization, create a support ticket or reach out to your Microsoft Representative, and we can work with you to support your use case.
+- There's a limit of 100 custom triggers that can be fired in an org per day, that means that you can execute up to 100 different types of custom triggers, or triggers definitions. Each of those can fire many times per day as per fair usage policy. To increase this for your organization, create a support ticket or reach out to your Microsoft Representative, and we can work with you to support your use case.
 - When defining custom triggers, ensure that all attributes are defined. Any attribute that has a null value causes the trigger to fail leading to the customers not going through the journey. Today, we don't have the ability to allow null values to be passed in a custom, which then results in a System Failure as the error message at journey runtime.
 - Usage of Entity References in Custom or CDS triggers is limited to five hops. Any entity that's more than 5 hops away from the COLA entity, can't be used as an attribute in a journey.
 - When using the "Marketing Form Submitted" standard trigger for your journey care should be taken to ensure that the audience for the journey and the form are the same. Today, we don't display an error or warning when there's a mismatch, but the journey won't start leading to customer confusion.
