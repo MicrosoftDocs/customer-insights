@@ -89,8 +89,8 @@ To create a new custom form, navigate to the **Templates** section in the left s
 ### Extend forms functionality
 
 - [Extend forms using code](developer/realtime-marketing-form-client-side-extensibility.md): use Javascript API to customize form behavior
-- [Form capture](developer/real-time-marketing-form-capture.md): get submissions from existing forms that weren't created using the Customer Insights - Journeys form editor
-- [Customize form submission validation](developer/real-time-marketing-form-customize-submission-validation.md)
+- [Form capture](real-time-marketing-form-capture.md): get submissions from existing forms that weren't created using the Customer Insights - Journeys form editor
+- [Customize form submission validation](real-time-marketing-form-customize-submission-validation.md)
 - [Customize form editor](developer/extend-ui.md): add additional attributes to your form settings
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
