@@ -1,7 +1,7 @@
 ---
 title: Prefill values for forms and event registration
 description: Form prefill in Dynamics 365 Customer Insights - Journeys auto-fills known values for customers. Discover setup steps and security best practices.
-ms.date: 05/23/2025
+ms.date: 02/11/2026
 ms.topic: article
 author: petrjantac
 ms.author: colinbirkett

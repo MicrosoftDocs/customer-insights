@@ -1,7 +1,7 @@
 ---
 title: Double opt-in in real-time journeys
 description: Learn how to use double opt-in in Dynamics 365 Customer Insights - Journeys.
-ms.date: 10/07/2025
+ms.date: 02/11/2026
 ms.topic: how-to
 author: cbirkett
 ms.author: alfergus
@@ -62,9 +62,9 @@ Once the feature switch is turned on, you can go to any compliance profile and n
 
 The double opt-in in real-time journeys can be triggered for **each form submission** or it can be triggered only for the **new customers**.
 
-- **Double opt-in for each form submission** - The DOI flow is triggered with every form submission if the form is associated with the DOI enabled compliance profile.
+- **Double opt-in for each form submission**: The DOI flow is triggered with every form submission if the form is associated with the DOI enabled compliance profile.
 
-- **Double opt-in only for new customers** - "New customer" means that there's no contact point consent for this customer's email address associated with the compliance profile. If there is no contact point consent for customer's email address, this customer is considered as new and the DOI flow is triggered. If there is an existing contact point consent for customer's email address, the DOI isn't triggered.
+- **Double opt-in only for new customers**: "New customer" means that there's no contact point consent for this customer's email address associated with the compliance profile. If there is no contact point consent for customer's email address, this customer is considered as new and the DOI flow is triggered. If there is an existing contact point consent for customer's email address, the DOI isn't triggered.
 
 Here are the steps that you need to follow to enable double opt-in for the compliance profile:
 

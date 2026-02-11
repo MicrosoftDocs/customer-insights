@@ -1,7 +1,7 @@
 ---
 title: Capture forms in Customer Insights - Journeys
 description: Learn how to capture forms in Dynamics 365 Customer Insights - Journeys.
-ms.date: 02/05/2026
+ms.date: 02/11/2026
 ms.topic: how-to
 author: petrjantac
 ms.author: alfergus
@@ -353,7 +353,7 @@ Cross-Origin Resource Sharing (CORS) can cause  form submission capture to fail.
 
 Make sure you've set up the respective consent fields in the form editor (see [Creating the form capture in Customer Insights - Journeys form editor](real-time-marketing-form-capture.md#creating-the-form-capture-in-the-customer-insights---journeys-form-editor)) and that you've used the correct mappings generated in the publishing process.
 
-### My form redirects to a new page after submission, and the submission is inconsistently recorded or not recorded in Dynamics
+### My form redirects to a new page after submission and the submission is inconsistently recorded or not recorded in Dynamics
 
 When a form submission triggers an immediate page redirect, the browser may cancel pending network requests including the form‑capture call—resulting in the submission not being recorded. To avoid this, ensure your code controls the navigation flow: use `event.preventDefault()` to stop the browser’s default submission behavior so your handler can run, and then initiate the redirect only after the `d365mktformcapture.submitForm()` promise has completed.
 

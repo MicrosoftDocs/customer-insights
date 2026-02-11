@@ -1,7 +1,7 @@
 ---
 title: Overview of Customer Insights - Journeys forms
 description: Overview of the forms capabilities in Dynamics 365 Customer Insights - Journeys. 
-ms.date: 02/04/2026
+ms.date: 02/11/2026
 ms.topic: article
 author: petrjantac
 ms.author: colinbirkett
@@ -75,22 +75,22 @@ To create a new custom form, navigate to the **Templates** section in the left s
 
 ## Next steps with Customer Insights - Journeys forms
 
-- [Create form](real-time-marketing-form-create.md): create your first form with step-by-step guide
-- [Understand how forms work](real-time-marketing-manage-forms.md): edit live forms, unpublish, form field properties, styling, audience configuration, customizations.
-- [Troubleshooting forms](real-time-marketing-troubleshooting-forms.md): resolve common issues
-- [Security & privacy](real-time-marketing-form-security-privacy.md): learn about forms security
-- [Deploy pages with forms](real-time-marketing-deploy-pages.md): embed your form into your own domain or Power Pages website
-- [Form prefill](real-time-marketing-form-prefill.md): populate form fields with known values for your existing customers
-- [Unmapped fields](real-time-marketing-forms-custom-fields.md): gather additional information about your customers without creating a new lead or contact attributes
-- [Default form configuration](real-time-marketing-form-global-settings.md): define default configuration for your newly created forms including reCAPTCHA
-- [Use submitted values](real-time-marketing-form-submitted-values.md): branch journeys and personalize DOI emails using submitted values
+- [Create form](real-time-marketing-form-create.md): Create your first form with step-by-step guide
+- [Understand how forms work](real-time-marketing-manage-forms.md): Edit live forms, unpublish, form field properties, styling, audience configuration, customizations.
+- [Troubleshooting forms](real-time-marketing-troubleshooting-forms.md): Resolve common issues
+- [Security & privacy](real-time-marketing-form-security-privacy.md): Learn about forms security
+- [Deploy pages with forms](real-time-marketing-deploy-pages.md): Embed your form into your own domain or Power Pages website
+- [Form prefill](real-time-marketing-form-prefill.md): Populate form fields with known values for your existing customers
+- [Unmapped fields](real-time-marketing-forms-custom-fields.md): Gather additional information about your customers without creating a new lead or contact attributes
+- [Default form configuration](real-time-marketing-form-global-settings.md): Define default configuration for your newly created forms including reCAPTCHA
+- [Use submitted values](real-time-marketing-form-submitted-values.md): Branch journeys and personalize DOI emails using submitted values
 - [Filter cities by country/region](real-time-marketing-filter-cities-by-country-region.md)
 
 ### Extend forms functionality
 
-- [Extend forms using code](developer/realtime-marketing-form-client-side-extensibility.md): use Javascript API to customize form behavior
-- [Form capture](real-time-marketing-form-capture.md): get submissions from existing forms that weren't created using the Customer Insights - Journeys form editor
+- [Extend forms using code](developer/realtime-marketing-form-client-side-extensibility.md): Use Javascript API to customize form behavior
+- [Form capture](real-time-marketing-form-capture.md): Get submissions from existing forms that weren't created using the Customer Insights - Journeys form editor
 - [Customize form submission validation](real-time-marketing-form-customize-submission-validation.md)
-- [Customize form editor](developer/extend-ui.md): add additional attributes to your form settings
+- [Customize form editor](developer/extend-ui.md): Add additional attributes to your form settings
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
