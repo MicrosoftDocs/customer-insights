@@ -1,7 +1,7 @@
 ---
 title: Double opt-in in real-time journeys
 description: Learn how to use double opt-in in Dynamics 365 Customer Insights - Journeys.
-ms.date: 10/07/2025
+ms.date: 02/11/2026
 ms.topic: how-to
 author: cbirkett
 ms.author: alfergus
@@ -59,6 +59,12 @@ Once you enable double opt-in for a compliance profile, all newly created forms 
 ## Set up double opt-in for a compliance profile
 
 Once the feature switch is turned on, you can go to any compliance profile and navigate to the Double Opt-In tab to turn on double opt-in for the compliance profile.
+
+The double opt-in in real-time journeys can be triggered for **each form submission** or it can be triggered only for the **new customers**.
+
+- **Double opt-in for each form submission**: The DOI flow is triggered with every form submission if the form is associated with the DOI enabled compliance profile.
+
+- **Double opt-in only for new customers**: "New customer" means that there's no contact point consent for this customer's email address associated with the compliance profile. If there is no contact point consent for customer's email address, this customer is considered as new and the DOI flow is triggered. If there is an existing contact point consent for customer's email address, the DOI isn't triggered.
 
 Here are the steps that you need to follow to enable double opt-in for the compliance profile:
 
@@ -124,9 +130,11 @@ The system automatically generates a double opt-in confirmation journey and publ
 
 For any form that has double opt-in enabled you see additional analytics that represent how many users confirmed their preferences and how many are pending.
 
+Double opt-in confirmation links aren’t tracked. As a result, clicks on double opt-in emails don’t appear in analytics.
+
 ## Known limitations
 
-This public preview release has the following known limitations:
+These are the known limitations:
 
 1. Double opt-in doesn't work for event registration or preference center forms.
 1. If a default brand profile isn't present for a given business unit, the double opt-in setup fails unless a brand profile is created for the business unit.
