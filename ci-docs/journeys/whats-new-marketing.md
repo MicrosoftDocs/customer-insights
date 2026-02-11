@@ -1,7 +1,7 @@
 ---
 title: New and upcoming features
 description: Discover the latest features, improvements, and bug fixes in Dynamics 365 Customer Insights - Journeys. Stay updated with our monthly release notes.
-ms.date: 02/09/2026
+ms.date: 02/11/2026
 ms.update-cycle: 180-days
 ms.topic: whats-new
 author: alfergus
@@ -49,7 +49,7 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 #### Monthly enhancements
 
 - **Segmentation - Unused segments are not evaluated after 30 days** 
-	- Segments that are published but not used in any live journey for 30 days are moved to the Expired state. These expired segments are no longer evaluated, helping to save resources and boost overall performance. However, they still count toward your segment limits, and you must publish them again before using them in a journey.
+	- Segments that are published but not used in any live journey for 30 days are moved to the Expired state. These expired segments are no longer evaluated and are not counted towards your segment limits, helping to save resources and boost overall performance. You need to publish them again before they can be used in a journey.
 
 - **Segmentation – Usability and functional enhancements** 
 	- Several enhancements have been introduced to segmentation. Key improvements include: 
