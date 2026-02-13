@@ -33,31 +33,6 @@ You can use Delta format with the following connectors:
 
 [!INCLUDE [delta-lake-info](./includes/delta-lake-info.md)]
 
-## Data refresh pipeline
-
-Refreshing a data source ingests updated data but does **not** automatically update downstream processes. The full refresh pipeline runs in this order:
-
-1. **Data source refresh** - Ingests new/changed data from your source
-2. **Unification** - Re-runs map/match/merge on the updated data
-3. **Segments & Measures** - Recalculates segment membership and measure values
-4. **Exports** - Sends updated data to configured destinations
-
-Each step depends on the previous step completing. To ensure end-to-end freshness:
-- Configure a **system refresh schedule** that runs all steps in sequence (Settings > Schedule)
-- Or manually trigger each step after the previous one completes
-
-> [!IMPORTANT]
-> Refreshing only your data source will NOT update your customer profiles, segments, or exports. You must either schedule a full system refresh or manually run unification after ingestion completes.
-
-## Data preparation limits
-
-By default, data preparation is canceled after **3 hours** per data source, which is sufficient for most scenarios. Data preparation is a non-blocking operation, which will not prevent downstream steps. Contact support to inquire about limit increases if your data source consistently exceeds this threshold.
-
-**To reduce processing time:**
-- Reduce the number of tables in a single data source (split across multiple data sources)
-- Reduce table row counts by filtering data before ingestion
-- Use Delta format for faster ingestion
-- If using CSV/Parquet via Power Query, ensure files are well-partitioned
 
 ## Data source attachment or import
 
