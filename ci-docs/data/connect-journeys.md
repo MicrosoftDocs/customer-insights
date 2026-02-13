@@ -3,8 +3,8 @@ title: Connect Customer Insights - Data to Customer Insights - Journeys
 description: Learn how to connect Customer Insights - Data and Customer Insights - Journeys to use unified customer profiles and segments in journeys.
 ms.date: 02/13/2026
 ms.topic: how-to
-author: Scott-Stabbert
-ms.author: sstabbert
+author: dleblondMSFT
+ms.author: dleblond
 ms.reviewer: mhart
 ms.custom: bap-template
 ---

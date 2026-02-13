@@ -26,14 +26,7 @@ For example, Contoso offers a monthly coffee service. They want to know which cu
 
 ## Data prerequisites summary
 
-| Requirement | Details |
-|------------|---------|
-| Unified customer profiles | Must have completed unification with at least 1,000 profiles |
-| Subscription history | Requires an activity table with: Subscription ID, Start Date, End Date, Transaction Date, Is Recurring, Recurrence Frequency, Subscription Amount |
-| Minimum history | At least double the selected prediction time window (preferably 2-3 years) |
-| Customer activities | At least 2 activity records for 50% of target customers, with: Primary key, Timestamp, Event name, Details |
-| Customer ID field | Must be present in subscription data and match the unified profile Customer ID |
-| Data completeness | Less than 20% missing values in required fields |
+For common data requirements across all prediction models, see [Data prerequisites for prediction models](predictions.md#data-prerequisites-for-prediction-models).
 
 ## Prerequisites
 

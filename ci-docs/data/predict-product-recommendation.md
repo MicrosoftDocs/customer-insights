@@ -36,14 +36,7 @@ For example, Contoso wants to increase their revenue by customizing webpages to 
 
 ## Data prerequisites summary
 
-| Requirement | Details |
-|------------|---------|
-| Unified customer profiles | Must have completed unification with at least 1,000 profiles |
-| Transaction history | Requires an activity table with: Transaction ID, Transaction Date, Transaction Value, Product ID, Return indicator |
-| Minimum history | At least 12 months of transaction data, preferably 2-3 years with seasonality. Ideally 3+ transactions per customer. |
-| Product catalog | A product catalog table with fewer than 50,000 products. Remove rare or outdated products for best results. |
-| Customer ID field | Must be present in transaction data and match the unified profile Customer ID |
-| Data completeness | Only one transaction history table can be configured. Combine multiple tables in Power Query before ingestion. |
+For common data requirements across all prediction models, see [Data prerequisites for prediction models](predictions.md#data-prerequisites-for-prediction-models).
 
 ## Prerequisites
 

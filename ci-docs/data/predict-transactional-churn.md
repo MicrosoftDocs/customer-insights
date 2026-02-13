@@ -23,14 +23,7 @@ For example, Contoso wants to know how engaged customers are for an email campai
 
 ## Data prerequisites summary
 
-| Requirement | Details |
-|------------|---------|
-| Unified customer profiles | Must have completed unification with at least 500 profiles, preferably 1,000+ |
-| Transaction history | Requires an activity table with: Transaction ID, Transaction Date, Transaction Value, Product ID, Return indicator |
-| Minimum history | At least double the selected prediction time window (preferably 2-3 years). Ideally 2+ transactions per customer. |
-| Customer activities | Activity data with: Primary key, Timestamp, Event name, Details |
-| Customer ID field | Must be present in transaction data and match the unified profile Customer ID |
-| Data completeness | Less than 20% missing values in required fields |
+For common data requirements across all prediction models, see [Data prerequisites for prediction models](predictions.md#data-prerequisites-for-prediction-models).
 
 ## Prerequisites
 

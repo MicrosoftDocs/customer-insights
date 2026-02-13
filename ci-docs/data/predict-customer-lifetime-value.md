@@ -28,14 +28,7 @@ Determine what CLV means for your business. We support transaction-based CLV pre
 
 ## Data prerequisites summary
 
-| Requirement | Details |
-|------------|---------|
-| Unified customer profiles | Must have completed unification with at least 1,000 profiles |
-| Transaction history | Requires an activity table with: Transaction ID, Transaction Date, Transaction Amount, Return label, Product ID |
-| Minimum history | At least 12 months of transaction data, preferably 24-36 months |
-| Customer ID field | Must be present in transaction data and match the unified profile Customer ID |
-| Data completeness | Less than 20% missing values in required fields |
-| Data freshness | Transaction data must have been refreshed recently for accurate predictions |
+For common data requirements across all prediction models, see [Data prerequisites for prediction models](predictions.md#data-prerequisites-for-prediction-models).
 
 ## Prerequisites
 
