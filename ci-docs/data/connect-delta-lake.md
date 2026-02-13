@@ -178,16 +178,7 @@ Data synchronization can fail if your Delta folder data was deleted and then rec
 
 ## Data preparation limits
 
-Data preparation has a maximum processing time of **3 hours** per data source. If your data source exceeds this limit, preparation will be canceled.
-
-**To resolve:**
-- Reduce the number of tables in a single data source (split across multiple data sources)
-- Reduce table row counts by filtering data before ingestion
-- Use Delta format for faster ingestion (Delta tables skip the data preparation step)
-- If using CSV/Parquet via Power Query, ensure files are well-partitioned
-
-> [!TIP]
-> Delta format data sources bypass the data preparation step entirely, making them ideal for large datasets.
+For information about data preparation time limits and how to resolve issues, see [Data preparation limits](data-sources.md#data-preparation-limits).
 
 ## Upsert (incremental update) behavior
 

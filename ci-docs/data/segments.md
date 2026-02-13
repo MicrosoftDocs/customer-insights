@@ -189,10 +189,6 @@ Segment evaluation generates Analytics entities (tables suffixed with `-Analytic
 - Reduce segment refresh frequency
 - Disable auto-cleanup exemptions on segments you no longer need
 
-## Dataverse business unit assignment
-
-When segments are synced to Dataverse, segment membership records are assigned to the root business unit by default. If your Dynamics 365 environment uses business unit separation, configure Dataverse security roles to control segment visibility across business units.
-
 ## Known limitations
 
 - Filter value dropdowns in the segment builder do not currently support sorting. Use the search box within the dropdown to find specific values.
