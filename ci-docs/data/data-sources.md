@@ -51,19 +51,16 @@ Each step depends on the previous step completing. To ensure end-to-end freshnes
 
 ## Data preparation limits
 
-Data preparation has a default processing time limit of **3 hours** per data source, which is sufficient for most scenarios. If your data source exceeds this limit, preparation is canceled.
+By default, data preparation is canceled after **3 hours** per data source, which is sufficient for most scenarios. Contact support to inquire about limit increases if your data source consistently exceeds this threshold.
 
 > [!TIP]
 > Delta format data sources bypass the data preparation step entirely, making them ideal for large datasets.
 
-**To resolve:**
+**To reduce processing time:**
 - Reduce the number of tables in a single data source (split across multiple data sources)
 - Reduce table row counts by filtering data before ingestion
 - Use Delta format for faster ingestion (Delta tables skip the data preparation step)
 - If using CSV/Parquet via Power Query, ensure files are well-partitioned
-
-> [!TIP]
-> Delta format data sources bypass the data preparation step entirely, making them ideal for large datasets.
 
 ## Data source attachment or import
 
