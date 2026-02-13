@@ -178,7 +178,7 @@ Data synchronization can fail if your Delta folder data was deleted and then rec
 
 ## Data preparation limits
 
-For information about data preparation time limits and how to resolve issues, see [Data preparation limits](data-sources.md#data-preparation-limits).
+For information about data preparation limits, see [Data preparation limits](data-prep-overview.md#data-preparation-limits).
 
 ## Upsert (incremental update) behavior
 
