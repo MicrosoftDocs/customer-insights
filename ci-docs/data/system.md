@@ -135,6 +135,28 @@ Use the summary to help you determine if your environment is running normally or
 
 [!INCLUDE [copilot-availability](includes/copilot-availability.md)]
 
+## Data refresh email notifications
+
+Customer Insights - Data sends email alerts when data refresh jobs encounter issues. Understanding these notifications helps you respond appropriately.
+
+### What triggers a refresh notification
+
+| Notification type | Trigger |
+|-------------------|---------|
+| Refresh failure | A data source, unification, segment, measure, or export refresh fails |
+| Refresh skipped | A downstream process is skipped because an upstream dependency failed |
+
+### Who receives notifications
+
+Refresh failure notifications are sent to users with the **Admin** role in Customer Insights - Data. The notification is sent to the email address associated with the user's account.
+
+### Manage notifications
+
+To configure refresh alert recipients or suppress non-critical alerts, contact your environment admin. Currently, notification recipients are determined by the Admin role assignment.
+
+> [!TIP]
+> If you receive frequent refresh failure alerts for a specific data source, check the data source configuration and connectivity. Resolving the root cause prevents repeated alerts.
+
 ### Next steps
 
 - [Responsible AI FAQs for the Environment status summary](faqs-environment-status.md)

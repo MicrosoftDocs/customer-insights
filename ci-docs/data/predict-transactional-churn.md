@@ -21,6 +21,17 @@ You must have business knowledge to understand what churn means for your busines
 
 For example, Contoso wants to know how engaged customers are for an email campaign dedicated to retention. Contoso's customers visit a storefront on a variable basis, most often around 3-4 times a month. Their transactions are irregular, making it difficult to determine when a customer stops purchasing the Contoso brand. Through the transaction churn model, Contoso can determine the likelihood that customers buy again. They can see the leading patterns that lead to customers leaving the brand, allowing them to adjust other strategies.
 
+## Data prerequisites summary
+
+| Requirement | Details |
+|------------|---------|
+| Unified customer profiles | Must have completed unification with at least 500 profiles, preferably 1,000+ |
+| Transaction history | Requires an activity table with: Transaction ID, Transaction Date, Transaction Value, Product ID, Return indicator |
+| Minimum history | At least double the selected prediction time window (preferably 2-3 years). Ideally 2+ transactions per customer. |
+| Customer activities | Activity data with: Primary key, Timestamp, Event name, Details |
+| Customer ID field | Must be present in transaction data and match the unified profile Customer ID |
+| Data completeness | Less than 20% missing values in required fields |
+
 ## Prerequisites
 
 - At least [Contributor permissions](user-roles.md).

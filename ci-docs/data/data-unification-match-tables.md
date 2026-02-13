@@ -159,4 +159,32 @@ Specify conditions that override the default match logic. There are four options
 > [!div class="nextstepaction"]
 > [Next step: View unified data](data-unification-merge-tables.md)
 
+## Troubleshoot unification failures
+
+### "Merge job failed" or "Match job failed. Please try again"
+
+| Symptom | Likely cause | Resolution |
+|---------|-------------|------------|
+| Error on saving unification changes | Dataverse dependencies on unified columns | Go to Power Apps > Tables > find the referenced column > remove flows, views, or forms that depend on it, then retry |
+| Match canceled after running for hours | Dataset too large for allocated resources | Reduce match rule complexity or contact support for scaling |
+| Backstamping job skipped | Previous backstamping still running | Wait for current backstamping to complete; check progress on Unify status page |
+| Backstamping takes many hours | Expected for large datasets | ~1 hour per 5M records. No action needed unless it exceeds 3x the expected duration |
+| "Cannot delete data source" or "Cannot remove table from unification" | Downstream dependencies exist | Remove segments, measures, or exports that reference the table first |
+
+### Backstamping duration expectations
+
+| Record count | Expected backstamping time |
+|-------------|---------------------------|
+| < 1 million | < 30 minutes |
+| 1-10 million | 30 min - 2 hours |
+| 10-50 million | 2 - 10 hours |
+| 50+ million | 10+ hours |
+
+### How to resolve Dataverse dependencies
+
+1. In Power Apps, go to **Tables** and find the table referenced in the error.
+2. Select **Dependencies** to see what objects reference this table.
+3. Remove or modify each dependency (flows, views, forms, other tables).
+4. Return to Customer Insights - Data and retry the unification operation.
+
 [!INCLUDE [footer-include](includes/footer-banner.md)]

@@ -50,6 +50,9 @@ The table shows the supported and unsupported Databricks features.
 >
 > Learn more: [Delta Lake feature compatibility and protocols - Lowest possible protocol](https://docs.databricks.com/aws/en/delta/feature-compatibility#-lowest-possible-protocol).
 
+> [!IMPORTANT]
+> You cannot add tables to an existing Delta Lake data source after it is saved. To add additional tables, create a new data source. Plan your table selection carefully before saving.
+
 ## Prerequisites
 
 [!INCLUDE [delta-lake-prereqs](./includes/delta-lake-prereqs.md)]
@@ -172,6 +175,32 @@ A full refresh takes all the data from a table in Delta format and reloads it fr
 ### Data synchronization failure
 
 Data synchronization can fail if your Delta folder data was deleted and then recreated. Or if Customer Insights - Data couldn't connect to your Delta folders for an extended period while the versions advanced. To minimize the impact where an intermittent data pipeline failure creates the need for a full refresh, we recommend you maintain a reasonable history backlog, such as 15 days.
+
+## Data preparation limits
+
+Data preparation has a maximum processing time of **3 hours** per data source. If your data source exceeds this limit, preparation will be canceled.
+
+**To resolve:**
+- Reduce the number of tables in a single data source (split across multiple data sources)
+- Reduce table row counts by filtering data before ingestion
+- Use Delta format for faster ingestion (Delta tables skip the data preparation step)
+- If using CSV/Parquet via Power Query, ensure files are well-partitioned
+
+> [!TIP]
+> Delta format data sources bypass the data preparation step entirely, making them ideal for large datasets.
+
+## Upsert (incremental update) behavior
+
+Customer Insights - Data supports incremental data updates via Delta Lake time travel. For upserts to work correctly:
+
+1. Data must be in **Delta format** (not CSV or Parquet)
+2. The Delta table must maintain a **version history** (at least 15 days recommended)
+3. Each upsert must create a **new Delta version** — overwriting files in place will trigger a full refresh instead of an incremental update
+4. The primary key column must be present and consistent across versions
+
+**Common issues:**
+- If you overwrite Delta files instead of appending versions, Customer Insights - Data treats this as a schema change and runs a full refresh
+- If Delta versions are missing (for example, due to cleanup/VACUUM), run a [one-time full refresh](#manually-run-a-full-data-refresh-on-a-delta-table-folder) from the data source settings
 
 ## Next steps
 

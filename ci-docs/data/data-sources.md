@@ -33,6 +33,35 @@ You can use Delta format with the following connectors:
 
 [!INCLUDE [delta-lake-info](./includes/delta-lake-info.md)]
 
+## Data refresh pipeline
+
+Refreshing a data source ingests updated data but does **not** automatically update downstream processes. The full refresh pipeline runs in this order:
+
+1. **Data source refresh** - Ingests new/changed data from your source
+2. **Unification** - Re-runs map/match/merge on the updated data
+3. **Segments & Measures** - Recalculates segment membership and measure values
+4. **Exports** - Sends updated data to configured destinations
+
+Each step depends on the previous step completing. To ensure end-to-end freshness:
+- Configure a **system refresh schedule** that runs all steps in sequence (Settings > Schedule)
+- Or manually trigger each step after the previous one completes
+
+> [!IMPORTANT]
+> Refreshing only your data source will NOT update your customer profiles, segments, or exports. You must either schedule a full system refresh or manually run unification after ingestion completes.
+
+## Data preparation limits
+
+Data preparation has a maximum processing time of **3 hours** per data source. If your data source exceeds this limit, preparation will be canceled.
+
+**To resolve:**
+- Reduce the number of tables in a single data source (split across multiple data sources)
+- Reduce table row counts by filtering data before ingestion
+- Use Delta format for faster ingestion (Delta tables skip the data preparation step)
+- If using CSV/Parquet via Power Query, ensure files are well-partitioned
+
+> [!TIP]
+> Delta format data sources bypass the data preparation step entirely, making them ideal for large datasets.
+
 ## Data source attachment or import
 
 When you're deciding how to ingest your data, a key consideration is whether the data connector attaches to the data or makes copies of it. When you use Customer Insights - Data, we recommend that you use a connector that attaches to the data. In this way, the data is directly accessed when it's time to process it. If you use a connector that copies the data, delays can occur when the data is updated.

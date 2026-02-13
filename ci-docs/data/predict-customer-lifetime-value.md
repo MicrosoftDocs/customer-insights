@@ -26,6 +26,17 @@ Determine what CLV means for your business. We support transaction-based CLV pre
 > [!TIP]
 > Try the CLV prediction using sample data: [Customer lifetime value (CLV) prediction sample guide](sample-guide-predict-clv.md).
 
+## Data prerequisites summary
+
+| Requirement | Details |
+|------------|---------|
+| Unified customer profiles | Must have completed unification with at least 1,000 profiles |
+| Transaction history | Requires an activity table with: Transaction ID, Transaction Date, Transaction Amount, Return label, Product ID |
+| Minimum history | At least 12 months of transaction data, preferably 24-36 months |
+| Customer ID field | Must be present in transaction data and match the unified profile Customer ID |
+| Data completeness | Less than 20% missing values in required fields |
+| Data freshness | Transaction data must have been refreshed recently for accurate predictions |
+
 ## Prerequisites
 
 - At least [Contributor](user-roles.md) permissions

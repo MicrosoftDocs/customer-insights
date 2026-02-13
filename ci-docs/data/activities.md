@@ -98,6 +98,22 @@ Select an activity to rename or delete the activity. To edit activities, select 
 > [!NOTE]
 > Activity filters are removed when you leave a customer profile. You have to apply them each time you open a customer profile.
 
+## Activities in the customer profile timeline
+
+Not all activity types appear in the customer profile timeline. For an activity to appear in the timeline, it must meet these conditions:
+
+- The activity must be configured with **Show this activity in the timeline on your customer profile** set to **Yes** during activity setup.
+- The activity must be unified and associated with a customer profile.
+- The activity must have a valid timestamp field.
+- The activity must be mapped to a supported activity type.
+
+### Activity types not displayed in the timeline
+
+The following activity types are processed for enrichment or analytical purposes but **do not** appear in the customer profile timeline:
+
+- **Web Personalization** activities are processed for enrichment but do not appear in the customer profile timeline.
+- Depending on configuration, **SalesOrderLine** and **Quotes** activities may not appear in the timeline if they aren't mapped with the timeline display option enabled.
+
 ## See also
 
 - [FastTrack blog: Understanding Job Execution Flow in Customer Insights - Data Batch Runs](https://community.dynamics.com/blogs/post/?postid=84fbbaaf-262b-f011-8c4e-7c1e5218b899)
