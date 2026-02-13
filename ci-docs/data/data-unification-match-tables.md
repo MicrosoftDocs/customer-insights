@@ -167,20 +167,9 @@ Specify conditions that override the default match logic. There are four options
 |---------|-------------|------------|
 | Error on saving unification changes | Dataverse dependencies on unified columns | Go to Power Apps > Tables > find the referenced column > remove flows, views, or forms that depend on it, then retry |
 | Match canceled after running for hours | Dataset too large for allocated resources | Reduce match rule complexity or contact support for scaling |
-| Backstamping job skipped | Previous backstamping still running | Wait for current backstamping to complete; check progress on Unify status page |
-| Backstamping takes many hours | Expected for large datasets | Processing times vary based on data complexity and environment configuration. No action needed unless duration significantly exceeds previous runs |
+| Backstamping job skipped | Prerequisites for automatic linking not met | Verify requirements at [Link to a customer profile](/dynamics365/customer-insights/data/integrate-d365-apps#link-to-a-customer-profile) |
+| Backstamping takes many hours | Multiple factors affect duration | Backstamping usually runs incrementally, but certain operations trigger a full refresh (see [Link to a customer profile](/dynamics365/customer-insights/data/integrate-d365-apps#link-to-a-customer-profile)). Duration also depends on custom plugins hooked to the Contact entity update operation, since the data migration service (DMS) processes updates synchronously. No action needed unless duration significantly exceeds previous runs |
 | "Cannot delete data source" or "Cannot remove table from unification" | Downstream dependencies exist | Remove segments, measures, or exports that reference the table first |
-
-### Backstamping duration estimates
-
-The following table provides sample estimates for backstamping duration. Actual processing times vary depending on data complexity, match rule configuration, and environment resources. These figures are approximate and not guaranteed.
-
-| Record count | Approximate backstamping time |
-|-------------|---------------------------|
-| < 1 million | < 30 minutes |
-| 1-10 million | 30 min - 2 hours |
-| 10-50 million | 2 - 10 hours |
-| 50+ million | 10+ hours |
 
 ### How to resolve Dataverse dependencies
 
