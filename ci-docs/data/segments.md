@@ -182,13 +182,6 @@ To use Customer Insights - Data segments in Customer Insights - Journeys:
 
 For more information, see [Connect Customer Insights - Data to Customer Insights - Journeys](connect-journeys.md).
 
-## Segment storage impact
-
-Segment evaluation generates Analytics entities (tables suffixed with `-Analytics`) that track member count history. These entities contribute to environment storage. To reduce storage:
-- Delete unused segments
-- Reduce segment refresh frequency
-- Disable auto-cleanup exemptions on segments you no longer need
-
 ## Known limitations
 
 - Filter value dropdowns in the segment builder do not currently support sorting. Use the search box within the dropdown to find specific values.

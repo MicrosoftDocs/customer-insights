@@ -168,12 +168,14 @@ Specify conditions that override the default match logic. There are four options
 | Error on saving unification changes | Dataverse dependencies on unified columns | Go to Power Apps > Tables > find the referenced column > remove flows, views, or forms that depend on it, then retry |
 | Match canceled after running for hours | Dataset too large for allocated resources | Reduce match rule complexity or contact support for scaling |
 | Backstamping job skipped | Previous backstamping still running | Wait for current backstamping to complete; check progress on Unify status page |
-| Backstamping takes many hours | Expected for large datasets | ~1 hour per 5M records. No action needed unless it exceeds 3x the expected duration |
+| Backstamping takes many hours | Expected for large datasets | Processing times vary based on data complexity and environment configuration. No action needed unless duration significantly exceeds previous runs |
 | "Cannot delete data source" or "Cannot remove table from unification" | Downstream dependencies exist | Remove segments, measures, or exports that reference the table first |
 
-### Backstamping duration expectations
+### Backstamping duration estimates
 
-| Record count | Expected backstamping time |
+The following table provides sample estimates for backstamping duration. Actual processing times vary depending on data complexity, match rule configuration, and environment resources. These figures are approximate and not guaranteed.
+
+| Record count | Approximate backstamping time |
 |-------------|---------------------------|
 | < 1 million | < 30 minutes |
 | 1-10 million | 30 min - 2 hours |
