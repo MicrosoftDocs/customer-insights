@@ -18,9 +18,7 @@ ms.custom:
 
 # Create Customer Insights - Journeys emails
 
-The Customer Insights - Journeys email editor shares its look and feel with the [outbound marketing email editor](prepare-marketing-emails.md). Like the outbound marketing email editor, the Customer Insights - Journeys editor lets you create personalized emails to capture your customers' attention.
-
-Learn more about creating email in Dynamics 365 Customer Insights - Journeys in [Create a new email and design its content](email-design.md).
+The Customer Insights - Journeys email editor lets you create personalized emails to capture your customers' attention. For more information on creating emails in Dynamics 365 Customer Insights - Journeys, see [Create a new email and design its content](email-design.md).
 
 ## Features unique to the Customer Insights - Journeys email editor
 
@@ -112,6 +110,10 @@ To preview personalized content sourced from a trigger, follow the steps above a
 > For dynamic text that isn't bound to the audience, you can enter sample values to see how the content will look. You can also override the actual data that comes from the selected audience record or trigger. To override the data, select **Enter manually** for the chosen item and provide your own value. This is a quick and easy way to check for edge cases.
 
 Send the preview email to yourself or another test email address to verify how it renders on different devices and email apps. Preview emails automatically include “[Test]” in the subject header.
+
+## Size limit
+
+Emails are stored as HTML and are limited to a maximum size of 1 MB. To ensure consistent rendering across popular email clients, the HTML includes additional client‑specific markup, which contributes to the size. As a result, the available space for your actual content and formatting will be less than 1 MB.
 
 ### See also
 
