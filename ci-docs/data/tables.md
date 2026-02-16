@@ -1,7 +1,7 @@
 ---
 title: "View tables in Customer Insights - Data"
 description: "Learn how to view data on the Tables page in Customer Insights - Data."
-ms.date: 09/29/2025
+ms.date: 02/16/2026
 ms.reviewer: mhart
 ms.topic: how-to
 author: Scott-Stabbert
@@ -56,6 +56,11 @@ For more information about the **Relationships** tab, see [Relationships](relati
   - **Created**: Date and time of the table creation.
   - **Edited by**: Name of the person who modified the table.
   - **Edited**: Date and time of the table modification.
+    
+**Common issues:**
+- If the data source uses the AttachCDM (Delta format) or AttachCDS connection type, issues may occur during data loading.
+- Customer Insights – Data stores the Delta table version that was used at the time of ingestion. If maintenance operations such as VACUUM, delete, or cleanup are performed on the Delta tables and the referenced version is removed, the affected tables will no longer display any data.
+- To resolve this issue, trigger a data source refresh to ingest the latest available version of the data.
 
 ## View Customer Insights - Data tables in Dataverse
 
