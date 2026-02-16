@@ -62,7 +62,7 @@ After you ingest the data, you can view the results of data profiling.
 
 > [!NOTE]
 > Data profiling is generated as part of the Data preparation task and is executed separately for each data source. If the Data preparation task doesn't complete successfully, the Summary column is not be available for the affected data source.
-> Data profiling results may not be available for all columns. The Data preparation task has a maximum execution time of three hours. To request an increase to this limit, contact Microsoft Support.
+> Data profiling results may not be available for all columns. The Data preparation task has a maximum execution time of three hours. To request an increase to this limit, contact [Microsoft Support](/power-platform/admin/get-help-support).
 
 ## Data sources page
 
