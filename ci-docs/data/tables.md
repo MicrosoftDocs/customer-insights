@@ -58,9 +58,9 @@ For more information about the **Relationships** tab, see [Relationships](relati
   - **Edited**: Date and time of the table modification.
     
 **Common issues:**
-- If your datasource is AttachCDM - Delta format or AttachCDS then there can be issue with loading these data.
-- Customer Insights Data is storing version of Delta format, which has been used during Ingestion. If there has been vacuum/delete/cleanup on your Delta tables and this version was removed, that Tables will not be showing any data.
-- To fix this, you just need to trigger datasource refresh. 
+- If the data source uses the AttachCDM (Delta format) or AttachCDS connection type, issues may occur during data loading.
+- Customer Insights – Data stores the Delta table version that was used at the time of ingestion. If maintenance operations such as VACUUM, delete, or cleanup are performed on the Delta tables and the referenced version is removed, the affected tables will no longer display any data.
+- To resolve this issue, trigger a data source refresh to ingest the latest available version of the data.
 
 ## View Customer Insights - Data tables in Dataverse
 
