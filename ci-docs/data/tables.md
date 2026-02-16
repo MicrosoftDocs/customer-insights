@@ -56,6 +56,11 @@ For more information about the **Relationships** tab, see [Relationships](relati
   - **Created**: Date and time of the table creation.
   - **Edited by**: Name of the person who modified the table.
   - **Edited**: Date and time of the table modification.
+    
+**Common issues:**
+- If your datasource is AttachCDM - Delta format or AttachCDS then there can be issue with loading these data.
+- Customer Insights Data is storing version of Delta format, which has been used during Ingestion. If there has been vacuum/delete/cleanup on your Delta tables and this version was removed, that Tables will not be showing any data.
+- To fix this, you just need to trigger datasource refresh. 
 
 ## View Customer Insights - Data tables in Dataverse
 
