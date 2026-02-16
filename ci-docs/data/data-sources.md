@@ -1,7 +1,7 @@
 ---
 title: Data sources overview
 description: Learn how to import or ingest data from various sources.
-ms.date: 07/30/2025
+ms.date: 02/16/2026
 ms.topic: overview
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -61,8 +61,8 @@ After you ingest the data, you can view the results of data profiling.
     :::image type="content" source="media/tables-dateofbirth.png" alt-text="Screenshot that shows the summary for the DateOfBirth field, including the chart of top values by count.":::
 
 > [!NOTE]
-> Data profiling is generated as part of the Data preparation task and is executed separately for each data source. If the Data preparation task does not complete successfully, the Summary column will not be available for the affected data source.
-> Data profiling results may not be available for all columns. The Data preparation task has a maximum execution time of 3 hours. To request an increase to this limit, contact Microsoft Support.
+> Data profiling is generated as part of the Data preparation task and is executed separately for each data source. If the Data preparation task doesn't complete successfully, the Summary column is not be available for the affected data source.
+> Data profiling results may not be available for all columns. The Data preparation task has a maximum execution time of three hours. To request an increase to this limit, contact Microsoft Support.
 
 ## Data sources page
 

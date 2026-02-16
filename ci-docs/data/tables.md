@@ -1,7 +1,7 @@
 ---
 title: "View tables in Customer Insights - Data"
 description: "Learn how to view data on the Tables page in Customer Insights - Data."
-ms.date: 09/29/2025
+ms.date: 02/16/2026
 ms.reviewer: mhart
 ms.topic: how-to
 author: Scott-Stabbert
