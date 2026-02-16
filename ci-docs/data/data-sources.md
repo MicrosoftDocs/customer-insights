@@ -61,8 +61,8 @@ After you ingest the data, you can view the results of data profiling.
     :::image type="content" source="media/tables-dateofbirth.png" alt-text="Screenshot that shows the summary for the DateOfBirth field, including the chart of top values by count.":::
 
 > [!NOTE]
-> Data profiling is being created and prepared during Data preparation taks for each Data source individually. In case that Data preparation task would not be succesfull, the Summary column would not visible on the given Data source.
-> It can happen that not all columns will have Data profiling report available. There is a hard limit on time of the task to run max. 3 hours. In case you want to increase it, contact Microsoft support. 
+> Data profiling is generated as part of the Data preparation task and is executed separately for each data source. If the Data preparation task does not complete successfully, the Summary column will not be available for the affected data source.
+> Data profiling results may not be available for all columns. The Data preparation task has a maximum execution time of 3 hours. To request an increase to this limit, contact Microsoft Support.
 
 ## Data sources page
 
