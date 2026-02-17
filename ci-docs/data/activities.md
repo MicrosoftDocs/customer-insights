@@ -1,11 +1,11 @@
 ---
 title: "Set up customer activities"
 description: "Define customer activities and view them in a timeline on customer profiles." 
-ms.date: 09/01/2023
+ms.date: 02/17/2026
 ms.reviewer: v-wendysmith
 ms.topic: how-to
-author: srivas15
-ms.author:  shsri
+author: Scott-Stabbert
+ms.author: sstabbert
 ms.custom: bap-template
 ---
 
@@ -109,10 +109,10 @@ Not all activity types appear in the customer profile timeline. For an activity 
 
 ### Activity types not displayed in the timeline
 
-The following activity types are processed for enrichment or analytical purposes but **do not** appear in the customer profile timeline:
+The following activity types are processed for enrichment or analytical purposes but don't appear in the customer profile timeline:
 
-- **Web Personalization** activities are processed for enrichment but do not appear in the customer profile timeline.
-- Depending on configuration, **SalesOrderLine** and **Quotes** activities may not appear in the timeline if they aren't mapped with the timeline display option enabled.
+- **Web Personalization** activities.
+- **SalesOrderLine** and **Quotes** activities if they aren't mapped with the timeline display option enabled.
 
 ## See also
 
