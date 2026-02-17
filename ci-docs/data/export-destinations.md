@@ -4,7 +4,7 @@ description: "Overview on exports in Dynamics 365 Customer Insights - Data."
 author: Scott-Stabbert
 ms.author: sstabbert
 ms.reviewer: alfergus
-ms.date: 07/17/2025
+ms.date: 02/17/2026
 ms.topic: overview
 ms.custom: bap-template
 ---
@@ -38,14 +38,14 @@ Limits on segment exports include:
 
 ## Known limitations for export connectors
 
-Each export connector may have specific limitations. Review the following general limitations and check individual connector documentation for connector-specific details.
+Each export connector might have specific limitations. Review the following general limitations and check individual connector documentation for connector-specific details.
 
 | Limitation | Details |
 |-----------|---------|
-| Maximum segment size | Third-party connectors may reject segments that exceed their API limits. Check the connector's documentation for maximum audience size. |
+| Maximum segment size | Third-party connectors might reject segments that exceed their API limits. Check the connector's documentation for maximum audience size. |
 | Required fields | Some connectors require specific fields (for example, email address or hashed email). Exports fail if required fields are missing. |
 | API rate limits | Third-party APIs impose rate limits that can affect large exports. If an export fails for a large segment, try reducing the segment size or contact the connector provider. |
-| Data format requirements | Some connectors require specific data formats. For example, advertising platforms may require hashed email addresses (SHA-256). |
+| Data format requirements | Some connectors require specific data formats. For example, advertising platforms might require hashed email addresses (SHA-256). |
 | Regional availability | Not all connectors are available in all regions. Check individual connector pages for regional availability. |
 
 > [!TIP]
