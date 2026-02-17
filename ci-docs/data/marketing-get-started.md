@@ -44,7 +44,7 @@ Learn more: [Enable data sharing with Dataverse from your own Azure Data Lake St
 
 ## Connect Customer Insights - Data to Customer Insights - Journeys
 
-To use unified customer profiles in Dynamics 365 Customer Insights - Journeys, [set up your environments](/dynamics365/journeys/real-time-marketing-ci-profile.md).
+To use unified customer profiles in Dynamics 365 Customer Insights - Journeys, [set up your environments](../journeys/real-time-marketing-ci-profile.md).
 
 ### Common connection issues
 
