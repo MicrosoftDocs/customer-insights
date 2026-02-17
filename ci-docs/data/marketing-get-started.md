@@ -1,11 +1,11 @@
 ---
 title: "Use unified profiles in Dynamics 365 Customer Insights - Journeys"
 description: "Learn how to integrate unified profiles and segments with Dynamics 365 Customer Insights - Journeys."
-ms.date: 04/29/2024
+ms.date: 02/17/2026
 ms.topic: article
 author: JimsonChalissery
 ms.author: sstabbert
-ms.reviewer: mhart
+ms.reviewer: v-wendysmith
 ---
 
 # Use unified customer profiles in Dynamics 365 Customer Insights - Journeys
@@ -41,3 +41,25 @@ Learn more: [Use segments from Customer Insights - Data with Customer Insights -
 You aren't limited to cloud storage if you want to use both Customer Insights apps. If you already have your own Azure Data Lake Storage set up, you can connect with Customer Insights - Data, then share the data with Customer Insights - Journeys just as you would with a cloud-based setup.
 
 Learn more: [Enable data sharing with Dataverse from your own Azure Data Lake Storage.](own-data-lake-storage.md#enable-data-sharing-with-dataverse-from-your-own-azure-data-lake-storage-preview)
+
+## Connect Customer Insights - Data to Customer Insights - Journeys
+
+To use unified customer profiles in Dynamics 365 Customer Insights - Journeys, [set up your environments](./journeys/real-time-marketing-ci-profile.md).
+
+### Common connection issues
+
+| Problem | Cause | Solution |
+|---------|-------|----------|
+| "There was a problem setting up the Customer Insights - Data connection" | Customer Insights - Data not provisioned on the same environment | Provision Customer Insights - Data on the same Dataverse environment as Journeys |
+| Customer Insights connector works in UAT but not Production | Different environments or license assignments | Verify Production has the same setup as UAT |
+| Trigger-based journey not sending emails | Using Customer Insights - Journeys feature, not Customer Insights - Data | Verify you're configuring in the correct application |
+| Cannot see Customer Insights - Data segments in Journeys | Dataverse sync disabled or segment not active | Enable Dataverse data sharing; activate and refresh the segment |
+| Segment shows 0 members in Journeys | Segment hasn't synced to Dataverse yet | Wait for the next scheduled refresh to complete |
+
+## See also
+
+- [Use segments in Customer Insights - Journeys](segments.md#use-segments-in-customer-insights---journeys)
+- [Create and manage segments](segments.md)
+- [Exports overview](export-destinations.md)
+
+[!INCLUDE [footer-include](includes/footer-banner.md)]
