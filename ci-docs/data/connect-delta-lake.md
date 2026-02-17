@@ -1,7 +1,7 @@
 ---
 title: "Connect to Delta tables in Azure Data Lake Storage"
 description: "Work with data stored in Delta tables from Azure Data Lake Storage."
-ms.date: 09/05/2025
+ms.date: 02/07/2026
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -50,14 +50,14 @@ The table shows the supported and unsupported Databricks features.
 >
 > Learn more: [Delta Lake feature compatibility and protocols - Lowest possible protocol](https://docs.databricks.com/aws/en/delta/feature-compatibility#-lowest-possible-protocol).
 
-> [!IMPORTANT]
-> You cannot add tables to an existing Delta Lake data source after it is saved. To add additional tables, create a new data source. Plan your table selection carefully before saving.
-
 ## Prerequisites
 
 [!INCLUDE [delta-lake-prereqs](./includes/delta-lake-prereqs.md)]
 
 - Customer Insights - Data relies on the version property in the Delta table's history to identify the latest changes for incremental processing.
+
+> [!IMPORTANT]
+> You can't add tables to an existing Delta Lake data source after it is saved. To add additional tables, create a new data source. Plan your table selection carefully before saving.
 
 ## Connect to Delta data from Azure Data Lake Storage
 
@@ -182,16 +182,16 @@ For information about data preparation limits, see [Data preparation limits](dat
 
 ## Upsert (incremental update) behavior
 
-Customer Insights - Data supports incremental data updates via Delta Lake time travel. For upserts to work correctly:
+Customer Insights - Data supports incremental data updates through Delta Lake time travel. For upserts to work correctly:
 
-1. Data must be in **Delta format** (not CSV or Parquet)
-2. The Delta table must maintain a **version history** (at least 15 days recommended)
-3. Each upsert must create a **new Delta version** — overwriting files in place will trigger a full refresh instead of an incremental update
-4. The primary key column must be present and consistent across versions
+- Data must be in **Delta format** (not CSV or Parquet).
+- The Delta table must maintain a **version history** (at least 15 days is recommended).
+- Each upsert must create a **new Delta version** — overwriting files in place will trigger a full refresh instead of an incremental update.
+- The primary key column must be present and consistent across versions.
 
 **Common issues:**
 - If you overwrite Delta files instead of appending versions, Customer Insights - Data treats this as a schema change and runs a full refresh
-- If Delta versions are missing (for example, due to cleanup/VACUUM), run a [one-time full refresh](#manually-run-a-full-data-refresh-on-a-delta-table-folder) from the data source settings
+- If Delta versions are missing (for example, due to cleanup/VACUUM), run a [one-time full refresh](#manually-run-a-full-data-refresh-on-a-delta-table-folder) from the data source settings.
 
 ## Next steps
 
