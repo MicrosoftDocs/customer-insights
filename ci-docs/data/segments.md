@@ -158,7 +158,7 @@ The complexity of your segments can also impact performance. To help you prevent
 
 ## Use segments in Customer Insights - Journeys
 
-To use Customer Insights - Data segments in Customer Insights - Journeys, [connect the two applications](marketing-get-started.md#connect-customer-insights--data-to-customer-insights--journeys.
+To use Customer Insights - Data segments in Customer Insights - Journeys, [connect the two applications](marketing-get-started.md#connect-customer-insights--data-to-customer-insights--journeys).
 
 1. Create your segment in Customer Insights - Data.
 1. Verify the segment appears in Dataverse. Go to **Power Apps** > **Tables** > **msdynci_segmentmembership** and confirm data exists.
