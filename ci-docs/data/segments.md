@@ -5,7 +5,7 @@ author: JimsonChalissery
 ms.author: sstabbert
 ms.reviewer: v-wendysmith
 ms.topic: how-to
-ms.date: 05/01/2025
+ms.date: 02/17/2026
 ms.custom: bap-template
 ---
 
@@ -158,19 +158,11 @@ The complexity of your segments can also impact performance. To help you prevent
 
 ## Use segments in Customer Insights - Journeys
 
-To use Customer Insights - Data segments in Customer Insights - Journeys:
-
-### Prerequisites
-
-1. Customer Insights - Data and Customer Insights - Journeys must be on the **same Dataverse environment**.
-2. The Customer Insights - Data instance must have **Dataverse data sharing** enabled.
-3. Segments must be **active** and have successfully refreshed at least once.
-
-### Steps
+To use Customer Insights - Data segments in Customer Insights - Journeys, [connect the two applications](marketing-get-started.md#connect-customer-insights--data-to-customer-insights--journeys.
 
 1. Create your segment in Customer Insights - Data.
-2. Verify the segment appears in Dataverse: go to **Power Apps** > **Tables** > **msdynci_segmentmembership** and confirm data exists.
-3. In Customer Insights - Journeys, create a new journey and select the segment under "Customer Insights segments."
+1. Verify the segment appears in Dataverse. Go to **Power Apps** > **Tables** > **msdynci_segmentmembership** and confirm data exists.
+1. In Customer Insights - Journeys, create a new journey and select the segment under "Customer Insights segments."
 
 ### Troubleshooting
 
@@ -180,15 +172,12 @@ To use Customer Insights - Data segments in Customer Insights - Journeys:
 | Segment shows 0 members in Journeys | Segment hasn't synced to Dataverse yet | Wait for the next scheduled refresh |
 | "Individual segment evaluation failed" | Segment query references unavailable data | Edit segment, verify all referenced tables exist and have data |
 
-For more information, see [Connect Customer Insights - Data to Customer Insights - Journeys](connect-journeys.md).
-
 ## Known limitations
 
 - Filter value dropdowns in the segment builder do not currently support sorting. Use the search box within the dropdown to find specific values.
 
 ## See also
 
-- [Connect Customer Insights - Data to Customer Insights - Journeys](connect-journeys.md)
 - [FastTrack blog: Understanding Job Execution Flow in Customer Insights - Data Batch Runs](https://community.dynamics.com/blogs/post/?postid=84fbbaaf-262b-f011-8c4e-7c1e5218b899)
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
