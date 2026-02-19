@@ -21,7 +21,7 @@ ms.custom:
 
 Dynamics 365 Customer Insights – Journeys includes two modules: outbound marketing and real-time journeys. Released in August 2021, real-time journeys offers advanced enterprise capabilities and is the default offering to new customers since August 2023.
 
-In August 2024, Microsoft announced that outbound marketing would be removed after June 30, 2025. To avoid business continuity issues, all customers still using outbound marketing must transition to real-time journeys as we're [now in the last phase of ](transition-faqs.md#what-will-happen-after-june-30-2025-will-outbound-marketing-stop-working) removing outbound. Review the [real-time journeys transition FAQs](transition-faqs.md), which covers common questions about transition to real-time. 
+In August 2024, Microsoft announced that outbound marketing would be removed after June 30, 2025. To avoid business continuity issues, all customers still using outbound marketing must transition to real-time journeys as we're [now in the last phase of removing outbound](transition-faqs.md#what-will-happen-after-june-30-2025-will-outbound-marketing-stop-working). Review the [real-time journeys transition FAQs](transition-faqs.md), which covers common questions about transition to real-time. 
 
 ## Guidance for trials
 
@@ -29,22 +29,22 @@ You can create new trials only with real-time journeys.
 
 ## Guidance for new customers
 
-New customers who install Customer Insights - Journeys no longer see the outbound marketing module. They must use real-time journeys; they can't get outbound marketing (no exceptions).
+New customers who install Customer Insights - Journeys no longer see the outbound marketing module. They must use real-time journeys; outbound marketing is unavailable to them.
 
 ## Guidance for existing customers currently using outbound marketing
 
-Existing customers still using outbound marketing must transition to real-time journeys **immediately** to avoid interruption to their currently live journeys, forms, or events. 
+Existing customers still using outbound marketing must transition to real-time journeys *immediately* to avoid interruption to their live journeys, forms, or events. 
 
-We're gradually hiding, disabling, and removing outbound marketing from individual environments. If you're using custom UI or APIs, they'll stop working without any further warning or notice (we're past the period where in-product banners and admin messages about outbound removal were being sent).
+We're gradually hiding, disabling, and removing outbound marketing from individual environments. If you're using custom UI or APIs, they'll stop working without further warning or notice. We're past the period where in-product banners and admin messages about outbound removal were being sent.
 
 Here are some recommended actions for existing customers based on their needs:
 
 | Situation                                                                                                          | Action                                                                                                                                                                                                                                                       |
 |--------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| I have an existing environment that previously had outbound marketing, but doesn't anymore. | This is expected unless you have an approved extension to continue using outbound marketing beyond its end of life. See [What will happen after June 30, 2025? Will outbound marketing stop working?](transition-faqs.md#what-will-happen-after-june-30-2025-will-outbound-marketing-stop-working-updated-november-21-2025) You can no longer request extensions or add outbound marketing. If you have an approved extension and outbound marketing isn't visible, reply to the approval email you received previously from the obmextension@microsoft.com mailbox to report the issue, don't create a support ticket. |
-| I provisioned a new org (or copied, migrated, or restored an existing org) and don't see outbound marketing. | This is expected. Outbound marketing isn't included in new environments (also called “orgs”) and can't be added. |
-| I'm doing tenant migration as part of the transition.  | Finish transition to real-time journeys before tenant migration. |
-| Any other situation. | Requests to add outbound marketing won't be approved, don't create a support ticket.|
+| I have an existing environment that previously had outbound marketing, but doesn't anymore. | This is expected unless you have an approved extension to continue using outbound marketing beyond its end of life. For more information, see [What will happen after June 30, 2025? Will outbound marketing stop working?](transition-faqs.md#what-will-happen-after-june-30-2025-will-outbound-marketing-stop-working-updated-november-21-2025). You can no longer request extensions or add outbound marketing. If you have an approved extension and outbound marketing isn't visible, reply to the approval email you received previously from the obmextension@microsoft.com mailbox to report the issue. Don't create a support ticket. |
+| I provisioned a new org, or copied, migrated, restored an existing org, and don't see outbound marketing. | This is expected. Outbound marketing isn't included in new environments (also known as “orgs”) and cannot be added. |
+| I'm doing tenant migration as part of the transition.  | Finish transiting to real-time journeys before tenant migration. |
+| Any other situation. | Requests to add outbound marketing are prohibited. Don't create a support ticket.|
 
 
 ## Past communications about outbound marketing removal
