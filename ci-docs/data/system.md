@@ -141,6 +141,8 @@ Customer Insights - Data sends email alerts when data refresh jobs encounter iss
 
 ### What triggers a refresh notification
 
+The following table lists what triggers a refresh notification in Customer Insights - Data:
+
 | Notification type | Trigger |
 |-------------------|---------|
 | Refresh failure | A data source, unification, segment, measure, or export refresh fails |

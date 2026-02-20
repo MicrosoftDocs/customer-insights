@@ -186,7 +186,7 @@ Customer Insights - Data supports incremental data updates through Delta Lake ti
 
 - Data must be in **Delta format** (not CSV or Parquet).
 - The Delta table must maintain a **version history** (at least 15 days is recommended).
-- Each upsert must create a **new Delta version** — overwriting files in place will trigger a full refresh instead of an incremental update.
+- Each upsert must create a **new Delta version**—overwriting files in place will trigger a full refresh instead of an incremental update.
 - The primary key column must be present and consistent across versions.
 
 **Common issues:**

@@ -166,6 +166,8 @@ To use Customer Insights - Data segments in Customer Insights - Journeys, [conne
 
 ### Troubleshooting
 
+The following table lists common issues using segments in Customer Insights - Journeys, and how to fix them:
+
 | Issue | Cause | Fix |
 |-------|-------|-----|
 | Segment not visible in Journeys | Dataverse sync not enabled | Enable in **Settings** > **Data sharing** |

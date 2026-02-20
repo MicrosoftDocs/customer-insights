@@ -48,6 +48,8 @@ To use unified customer profiles in Dynamics 365 Customer Insights - Journeys, [
 
 ### Common connection issues
 
+The following table lists common connection issues from Customer Insights - Data to Customer Insights - Journeys:
+
 | Problem | Cause | Solution |
 |---------|-------|----------|
 | "There was a problem setting up the Customer Insights - Data connection" | Customer Insights - Data not provisioned on the same environment | Provision Customer Insights - Data on the same Dataverse environment as Journeys |
