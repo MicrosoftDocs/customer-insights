@@ -33,6 +33,7 @@ You can use Delta format with the following connectors:
 
 [!INCLUDE [delta-lake-info](./includes/delta-lake-info.md)]
 
+
 ## Data source attachment or import
 
 When you're deciding how to ingest your data, a key consideration is whether the data connector attaches to the data or makes copies of it. When you use Customer Insights - Data, we recommend that you use a connector that attaches to the data. In this way, the data is directly accessed when it's time to process it. If you use a connector that copies the data, delays can occur when the data is updated.

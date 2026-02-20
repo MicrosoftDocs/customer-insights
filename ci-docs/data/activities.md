@@ -1,11 +1,11 @@
 ---
 title: "Set up customer activities"
 description: "Define customer activities and view them in a timeline on customer profiles." 
-ms.date: 09/01/2023
+ms.date: 02/17/2026
 ms.reviewer: v-wendysmith
 ms.topic: how-to
-author: srivas15
-ms.author:  shsri
+author: Scott-Stabbert
+ms.author: sstabbert
 ms.custom: bap-template
 ---
 
@@ -97,6 +97,22 @@ Select an activity to rename or delete the activity. To edit activities, select 
 
 > [!NOTE]
 > Activity filters are removed when you leave a customer profile. You have to apply them each time you open a customer profile.
+
+## Activities in the customer profile timeline
+
+Not all activity types appear in the customer profile timeline. For an activity to appear in the timeline, it must meet these conditions:
+
+- The activity must be configured with **Show this activity in the timeline on your customer profile** set to **Yes** during activity setup.
+- The activity must be unified and associated with a customer profile.
+- The activity must have a valid timestamp field.
+- The activity must be mapped to a supported activity type.
+
+### Activity types not displayed in the timeline
+
+The following activity types are processed for enrichment or analytical purposes but don't appear in the customer profile timeline:
+
+- **Web Personalization** activities.
+- **SalesOrderLine** and **Quotes** activities if they aren't mapped with the timeline display option enabled.
 
 ## See also
 

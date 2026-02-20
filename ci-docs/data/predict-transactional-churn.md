@@ -21,6 +21,10 @@ You must have business knowledge to understand what churn means for your busines
 
 For example, Contoso wants to know how engaged customers are for an email campaign dedicated to retention. Contoso's customers visit a storefront on a variable basis, most often around 3-4 times a month. Their transactions are irregular, making it difficult to determine when a customer stops purchasing the Contoso brand. Through the transaction churn model, Contoso can determine the likelihood that customers buy again. They can see the leading patterns that lead to customers leaving the brand, allowing them to adjust other strategies.
 
+## Data prerequisites summary
+
+For common data requirements across all prediction models, see [Data prerequisites for prediction models](predictions.md#data-prerequisites-for-prediction-models).
+
 ## Prerequisites
 
 - At least [Contributor permissions](user-roles.md).
