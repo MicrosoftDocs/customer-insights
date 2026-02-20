@@ -5,7 +5,7 @@ author: JimsonChalissery
 ms.author: sstabbert
 ms.reviewer: v-wendysmith
 ms.topic: how-to
-ms.date: 05/01/2025
+ms.date: 02/17/2026
 ms.custom: bap-template
 ---
 
@@ -155,6 +155,28 @@ The complexity of your segments can also impact performance. To help you prevent
 
 1. Delete old or no longer relevant segments even if they're static or inactive. When a campaign ends, deactivate associated segments for recurring campaigns.
 1. [Schedule individual segments](segments-schedule.md) to run weekly or monthly during slow business days (such as the weekend) instead of daily.
+
+## Use segments in Customer Insights - Journeys
+
+To use Customer Insights - Data segments in Customer Insights - Journeys, [connect the two applications](marketing-get-started.md#connect-customer-insights---data-to-customer-insights---journeys).
+
+1. Create your segment in Customer Insights - Data.
+1. Verify the segment appears in Dataverse. Go to **Power Apps** > **Tables** > **msdynci_segmentmembership** and confirm data exists.
+1. In Customer Insights - Journeys, create a new journey and select the segment under "Customer Insights segments."
+
+### Troubleshooting
+
+The following table lists common issues using segments in Customer Insights - Journeys, and how to fix them:
+
+| Issue | Cause | Fix |
+|-------|-------|-----|
+| Segment not visible in Journeys | Dataverse sync not enabled | Enable in **Settings** > **Data sharing** |
+| Segment shows 0 members in Journeys | Segment hasn't synced to Dataverse yet | Wait for the next scheduled refresh |
+| "Individual segment evaluation failed" | Segment query references unavailable data | Edit segment, verify all referenced tables exist and have data |
+
+## Known limitations
+
+- Filter value dropdowns in the segment builder do not currently support sorting. Use the search box within the dropdown to find specific values.
 
 ## See also
 

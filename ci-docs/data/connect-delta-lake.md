@@ -1,7 +1,7 @@
 ---
 title: "Connect to Delta tables in Azure Data Lake Storage"
 description: "Work with data stored in Delta tables from Azure Data Lake Storage."
-ms.date: 09/05/2025
+ms.date: 02/07/2026
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -55,6 +55,9 @@ The table shows the supported and unsupported Databricks features.
 [!INCLUDE [delta-lake-prereqs](./includes/delta-lake-prereqs.md)]
 
 - Customer Insights - Data relies on the version property in the Delta table's history to identify the latest changes for incremental processing.
+
+> [!IMPORTANT]
+> You can't add tables to an existing Delta Lake data source after it is saved. To add additional tables, create a new data source. Plan your table selection carefully before saving.
 
 ## Connect to Delta data from Azure Data Lake Storage
 
@@ -172,6 +175,23 @@ A full refresh takes all the data from a table in Delta format and reloads it fr
 ### Data synchronization failure
 
 Data synchronization can fail if your Delta folder data was deleted and then recreated. Or if Customer Insights - Data couldn't connect to your Delta folders for an extended period while the versions advanced. To minimize the impact where an intermittent data pipeline failure creates the need for a full refresh, we recommend you maintain a reasonable history backlog, such as 15 days.
+
+## Data preparation limits
+
+For information about data preparation limits, see [Data preparation limits](data-prep-overview.md#data-preparation-limits).
+
+## Upsert (incremental update) behavior
+
+Customer Insights - Data supports incremental data updates through Delta Lake time travel. For upserts to work correctly:
+
+- Data must be in **Delta format** (not CSV or Parquet).
+- The Delta table must maintain a **version history** (at least 15 days is recommended).
+- Each upsert must create a **new Delta version**—overwriting files in place will trigger a full refresh instead of an incremental update.
+- The primary key column must be present and consistent across versions.
+
+**Common issues:**
+- If you overwrite Delta files instead of appending versions, Customer Insights - Data treats this as a schema change and runs a full refresh
+- If Delta versions are missing (for example, due to cleanup/VACUUM), run a [one-time full refresh](#manually-run-a-full-data-refresh-on-a-delta-table-folder) from the data source settings.
 
 ## Next steps
 

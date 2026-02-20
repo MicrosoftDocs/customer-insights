@@ -26,6 +26,10 @@ Determine what CLV means for your business. We support transaction-based CLV pre
 > [!TIP]
 > Try the CLV prediction using sample data: [Customer lifetime value (CLV) prediction sample guide](sample-guide-predict-clv.md).
 
+## Data prerequisites summary
+
+For common data requirements across all prediction models, see [Data prerequisites for prediction models](predictions.md#data-prerequisites-for-prediction-models).
+
 ## Prerequisites
 
 - At least [Contributor](user-roles.md) permissions
