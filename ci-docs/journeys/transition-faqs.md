@@ -1,7 +1,7 @@
 ---
 title: Real-time journeys transition FAQs
 description: Discover how to transition from outbound marketing to real-time journeys in Customer Insights - Journeys. Get answers to frequently asked questions.
-ms.date: 02/02/2026
+ms.date: 02/20/2026
 ms.update-cycle: 180-days
 ms.topic: faq
 author: alfergus
@@ -23,7 +23,7 @@ ms.custom:
 
 Customer Insights – Journeys includes two modules: outbound marketing and real-time journeys. Released in August 2021, real-time journeys offer advanced enterprise capabilities. Real-time journeys has been the default offering to new customers since August 2023.
 
-After announcing in August 2023 that we'll only invest in real-time journeys, in August 2024, we officially announced that we would start removing outbound marketing after June 30, 2025. To avoid business continuity issues, all customers still using outbound marketing must transition to real-time journeys. In December 2024, social posting and LinkedIn lead generation capabilities were also removed. We don't plan to support social posting in real-time journeys because it has low demand and usage. However, we may consider adding LinkedIn lead generation to real-time journeys in a future release.
+After announcing in August 2023 that we'll only invest in real-time journeys, we officially announced in August 2024 that we would start removing outbound marketing after June 30, 2025. To avoid business continuity issues, all customers still using outbound marketing must transition to real-time journeys. In December 2024, social posting and LinkedIn lead generation capabilities were also removed. We don't plan to support social posting in real-time journeys because it has low demand and usage. However, we may consider adding LinkedIn lead generation to real-time journeys in a future release.
 
 No new licensing or provisioning is required to use real-time journeys; all existing environments already have it. The updated license removes limits on the number of environments (see [Announcing unlimited application installs in Dynamics 365 Customer Insights](https://www.microsoft.com/dynamics-365/blog/it-professional/2024/06/18/announcing-unlimited-application-installs-in-dynamics-365-customer-insights/)), so you can try real-time journeys in a separate environment if needed.
 
@@ -41,24 +41,24 @@ When you provision Customer Insights – Journeys, you see real-time journeys on
 
 ## I need more time to complete the transition. Can I request an extension?
 
-We first announced the removal of outbound marketing in August 2023 and later set June 30, 2025, as the removal date. As detailed in [the next section](transition-faqs.md#what-will-happen-after-june-30-2025-will-outbound-marketing-stop-working-updated-november-21-2025), we've started taking steps to reduce outbound marketing usage and eventually remove it. We're no longer accepting new requests for extensions. Customers with existing approvals can still request additional time (not beyond December 31, 2025); such requests are evaluated on a case-by-case  basis, and approval isn't guaranteed. Don't contact support or create support tickets for this topic, as they won't be able to help. If you have questions or concerns, email [obmextension@microsoft.com](mailto:obmextension@microsoft.com).  
+We first announced the removal of outbound marketing in August 2023 and later set June 30, 2025, as the removal date. As detailed in [the next section](transition-faqs.md#what-will-happen-after-june-30-2025-will-outbound-marketing-stop-working-updated-november-21-2025), we started taking steps to reduce outbound marketing usage and eventually remove it. We're no longer accepting new requests for extensions. Customers with existing approvals can still request additional time (not beyond December 31, 2025); such requests are evaluated on a case-by-case  basis, and approval isn't guaranteed. Don't contact support or create support tickets for this topic, as they won't be able to help. If you have questions or concerns, email [obmextension@microsoft.com](mailto:obmextension@microsoft.com).  
 
 ## What will happen after June 30, 2025? Will outbound marketing stop working? (Updated November 21, 2025)
 
-Please see the following section for latest updates.
+See the following section for latest updates.
 
 ## What will happen after June 30, 2025? Will outbound marketing stop working?
 
 *(Updated Jan 23, 2026)*
 
-We're implementing a phased approach for removing outbound marketing to minimize disruption to customers’ businesses. When we detect that there are no active outbound marketing campaigns or events in an environment (“org”), we hide outbound marketing and then remove it after a few weeks. With this approach, the outbound marketing removal date is different for each environment, as it depends on when the outbound marketing campaigns or events complete. Outbound marketing is no longer supported. For customers with approved extensions, limited support is provided for critical issues only (for example, a customer journey stopped sending emails, segments stopped refreshing, no submissions for events or forms, and so on).
+We're implementing a phased approach for removing outbound marketing to minimize disruption to customers’ businesses and therefore, Outbound marketing removal date is different for each environment. Note that Outbound marketing is no longer supported. For customers with approved extensions, limited support is provided for critical issues only (for example, a customer journey stopped sending emails, segments stopped refreshing, no submissions for events or forms, and so on).
 
 To reduce and eventually remove outbound marketing, we're applying a phased approach (the changes below only apply to outbound marketing; real-time marketing is unaffected):
 
-- **Phase 1 - Existing campaigns and events work; new ones can be created**: Users get messages about outbound marketing removal whenever they attempt to create a new outbound marketing email, journey, segment, form, or marketing page. They can dismiss the dialog and continue creating outbound marketing campaigns and events. *This phase is now complete*.
-- **Phase 2 - Existing campaigns and events work; new ones *can't* be created**: Users are no longer able to dismiss the dialog and therefore can't create new outbound marketing campaigns or events. *This phase is now complete*.
-- **Phase 3 - Existing campaigns and events end, outbound marketing is hidden**: When existing campaigns and events are complete, we automatically hide outbound marketing from the user interface. After a few weeks, we remove outbound marketing. *We are in this phase now*.
-- **Phase 4 - Existing campaigns and events will be stopped, outbound marketing is removed**: We'll take a phased approach starting with environments with no or low usage of outbound. In this phase (started in January 2026) we'll stop journeys and form submission without any further notice with the aim to remove outbound by March 31, 2026.
+- **Phase 1 - Existing campaigns and events work; new ones can be created**: Users get messages about outbound marketing removal whenever they attempt to create a new outbound marketing email, journey, segment, form, or marketing page. They can dismiss the dialog and continue creating outbound marketing campaigns and events. **This phase is now complete**.
+- **Phase 2 - Existing campaigns and events work; new ones *can't* be created**: Users are no longer able to dismiss the dialog and therefore can't create new outbound marketing campaigns or events. **This phase is now complete**.
+- **Phase 3 - Existing campaigns and events end, outbound marketing is hidden**: When existing campaigns and events are complete, we automatically hide outbound marketing from the user interface. After a few weeks, we remove outbound marketing. **This phase is now complete**.
+- **Phase 4 - Existing campaigns and events will be stopped, outbound marketing is removed**: We take a phased approach starting with environments with no or low usage of outbound. In this phase (started in January 2026) we'll stop journeys and form submission without any further notice with the aim to remove outbound by March 31, 2026. **We are in this phase now**.
 
 We've completed phases 1 to 3, and have started phase 4. This phased approach may be revised anytime. Given that we're at the final stages of outbound marketing removal, you should assume that outbound marketing may be removed any day after January 1, 2026 (unless you have an approved extension, in which case your environment won't move to phase 2 and beyond until after your approved extension date).
 
@@ -92,7 +92,7 @@ When outbound marketing is removed, the sitemap entry and outbound marketing ser
 
 ## Why aren't you supporting social posting in real-time journeys? Do you have a recommendation on what to use instead?
 
-We decided not to support social posting capabilities in real-time journeys because it had low demand and usage. It's also not core to our real-time orchestration strategy. While there are many point solutions for social posting, we can't provide any single recommendation. We'll continue to collect customer feedback and evaluate market demand to update our plans as needed.
+We decided not to support social posting capabilities in real-time journeys because it had low demand and usage. It's also not core to our real-time orchestration strategy. While there are many point solutions for social posting, we can't provide any single recommendation. We continue to collect customer feedback and evaluate market demand to update our plans as needed.
 
 ## How should I plan for the transition?
 
@@ -153,9 +153,9 @@ If you're a current customer using outbound marketing, you're in “mixed-mode�
 > [!div class="mx-imgBorder"]
 > ![Graphic showing a gradual transition from outbound to real-time journeys.](media/outbound-to-real-time.png "Graphic showing a gradual transition from outbound to real-time journeys")
 
-To ensure your transition to real-time journeys is a success, we've designed a user-friendly interface that doesn't require extensive retraining. You'll experience interface enhancements that significantly improve usability and efficiency.
+To ensure your transition to real-time journeys is a success, we've designed a user-friendly interface that doesn't require extensive retraining. You experience interface enhancements that significantly improve usability and efficiency.
 
-To kickstart delivering experiences using real-time journeys, we've designed an email transition tool, made outbound segments available directly in real-time journeys, and empowered you to generate more engaging content and revisit or create new journeys within minutes with our new AI-powered Copilot features.
+To kickstart delivering experiences using real-time journeys, we've designed an email transition tool, made outbound segments available directly in real-time journeys, and empowered you to generate more engaging content. You can revisit or create new journeys within minutes with our new AI-powered Copilot features.
 
 ## Where can I get help setting up real-time journeys?
 
@@ -171,7 +171,7 @@ Transitioning to real-time journeys doesn't require extensive retraining, partic
 
 **Email creation**
 
-- Users familiar with the outbound marketing email designer will find the same interface in real-time journeys for basic design and editing capabilities. The interface offers easier and more efficient personalization without need for coding or scripting.
+- Users familiar with the outbound marketing email designer see the same interface in real-time journeys for basic design and editing capabilities. The interface offers easier and more efficient personalization without need for coding or scripting.
 
 **Event planning**
 
@@ -187,7 +187,7 @@ Transitioning to real-time journeys doesn't require extensive retraining, partic
 
 **Journeys**
 
-- The journey user interface has been redesigned in real-time journeys. Any retraining required for the redesigned journey interface is considered a worthwhile investment, as it improves usability and effectiveness.
+- The journey user interface has been redesigned in real-time journeys. Any retraining required for the redesigned journey interface is a worthwhile investment, as it improves usability and effectiveness.
 
 ## What's the new scale of real-time journeys and how does it compare to the previous level?
 
