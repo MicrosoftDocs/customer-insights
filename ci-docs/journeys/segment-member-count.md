@@ -64,13 +64,12 @@ Publishing or refreshing a segment may be delayed if the underlying data has not
 - Wait a short period after publishing or refreshing a segment.
 - If members aren’t added immediately, allow the next scheduled refresh to run so the data can finish synchronizing.
 
-This is especially important in scenarios such as:
+This is especially important in certain scenarios, such as:
 
-- Tables that are being updated via data import (e.g., contacts or leads tables)
+- Tables that are being updated via data import (for example, contacts or leads tables)
 - Newly updated consent records
 - Tables that were recently enabled for Segmentation or change tracking
 - Recent uploads of static segment CSV files
-
 
 ### Segments show more members than expected
 
