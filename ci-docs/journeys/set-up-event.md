@@ -162,7 +162,7 @@ When setting up a speaker engagement, you map a speaker to a specific session fo
 
 ## Set up event passes
 
-Event passes aren't supported in Customer Insights - Journeys Event Management.
+Event Passes are now available in Customer Insights – Journeys. Go to Feature Switches in settings and enable “Enable payments in Real-time Journeys.”
 
 <a name="venues"></a>
 
