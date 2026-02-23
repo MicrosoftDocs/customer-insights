@@ -64,9 +64,10 @@ The delivery report custom API calls the **msdyn_D365ChannelsNotification** API 
   - **Details**: object – Delivery details. This is useful for returning the failure *reason* and *details* to the delivery report. It's visible in the **Delivery and interaction details** on the analytics page.
     - **Reason**: string – The reason for the failure of your plugin.
     - **Message**: string - Details of the failure.
+
 > [!IMPORTANT]
-> Custom channels enforce a maximum execution timeout of 20 seconds. If your plugin does not complete within this limit, the custom channel request will time out. In such cases, the system considers the attempt failed and will initiate another attempt to run the plugin. This can lead to discrepancies between expected behavior and actual outcomes as your plugin might still be running whilst the custom channel had timed out.
-> To avoid timeouts, ensure that your plugin completes execution within 20 seconds and follows established performance and reliability guidelines. For reference, see [Best practices and guidance regarding plug-in and workflow development for Microsoft Dataverse](https://learn.microsoft.com/en-us/power-apps/developer/data-platform/best-practices/business-logic/)
+> Custom channels enforce a maximum execution timeout of 20 seconds. If your plugin does not complete within this limit, the custom channel request will time out. In such cases, the system considers the attempt failed and initiates another attempt to run the plugin. This can lead to discrepancies between expected behavior and actual outcomes, as your plugin might still be running while the custom channel has timed out.
+> To avoid timeouts, ensure that your plugin completes execution within 20 seconds and follows established performance and reliability guidelines. For reference, see [Best practices and guidance regarding plug-in and workflow development for Microsoft Dataverse](https://learn.microsoft.com/en-us/power-apps/developer/data-platform/best-practices/business-logic/).
 
 ## Inbound custom API
 
