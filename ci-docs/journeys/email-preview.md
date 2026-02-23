@@ -22,10 +22,11 @@ Your marketing email messages are seen by many potential customers, so make sure
 > [!IMPORTANT]
 > Previews and test sends let you quickly test your design. However, not all features work with them. The following limitations apply:
 > 
-> - [Subscription center links](set-up-subscription-center.md#test-sub-center) open the subscription center page, but the page won't function.
+> - [Preference center links](real-time-marketing-preference-centers.md) open the preference center page, but the page won't function.
 > - You can test send the [double opt-in email](real-time-marketing-double-opt-in.md#double-opt-in-confirmation-email) layout but you can't test the actual logic behind it. This is because the logic depends on the compliance profile assigned to each audience and varies depending on how dynamic placeholders are resolved.
 > - To test an email that contains placeholders that point to Dataverse tables, the user running the test must have [read permissions](role-permissions.md) for the tables.
-> - To ensure [QR codes](email-qr-code.md) display correctly across different email clients, test them using a journey instead of the standard email test send or preview. Journey functionality uses a public link for the QR code image rather than embedding it with base64, which maintains consistent display quality across various email clients. 
+> - To ensure [QR codes](email-qr-code.md) display correctly across different email clients, test them using a journey instead of the standard email test send or preview. Journey functionality uses a public link for the QR code image rather than embedding it with base64, which maintains consistent display quality across various email clients.
+> - "View in browser" link does not work
 >
 > To test these features, create a simple customer journey that targets a small segment (such as one that includes a single contact with your email address) and sends the message you want to test.
 
