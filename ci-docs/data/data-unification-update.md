@@ -222,3 +222,44 @@ All tiles except **Customer data** show **Queued** or **Refreshing**. More data,
 [!INCLUDE [progress-details-pane-include](includes/progress-details-pane.md)]
 
 The results of a successful run display on the **Unify** page showing the number of unified profiles.
+
+## Removing dependencies blocking Dynamics 365 Customer Insights - Data unification
+
+  When you update the **Unify** configuration in Dynamics 365 Customer Insights - Data (for example, by removing a data source, removing mapped fields, or changing merge policies), the system validates whether any attributes that would be removed from the
+  `msdynci_customerprofile` table in Dataverse are referenced by other solution components.
+
+  If dependencies are found, you receive an error similar to:
+
+  > "Detected DataVerse dependencies in msdynci_customerprofile entity on these attribute(s): \<attribute names\>. Please delete these dependencies and merge again."
+
+  ### Why this happens
+
+  Customer Insights - Data writes unified customer profiles to a virtual table called `msdynci_customerprofile` in your Dataverse environment. Each mapped and merged field from your data sources becomes a column on this table. When other makers in the organization
+  create forms, views, charts, workflows, business rules, or other components that reference those columns, Dataverse prevents the columns from being deleted — even when Customer Insights is the one requesting the deletion.
+
+  ### Find which components have a dependency
+
+  1. In [Power Apps](https://make.powerapps.com), open the environment associated with your Customer Insights instance.
+  2. Go to **Tables**, search for **CustomerProfile** (`msdynci_customerprofile`), and open it.
+  3. Select a column listed in the error message, then choose **Advanced** > **Show dependencies**.
+  4. Review the **Dependent components** list. This shows exactly which forms, views, workflows, or other components reference that column.
+
+  ### Remove the dependencies
+
+  For each dependent component listed:
+
+  | Component type | How to remove the dependency |
+  |---|---|
+  | **Form** | Open the form in the form designer, remove the column from the form layout, then save and publish. |
+  | **View** | Open the view editor, remove the column from the view's columns and filter criteria, then save and publish. |
+  | **Chart** | Edit the chart and remove references to the column. |
+  | **Cloud flow / workflow** | Edit the flow in Power Automate and remove any steps that reference the column. |
+  | **Business rule** | Edit the business rule and remove conditions or actions that reference the column. |
+  | **Business process flow** | Edit the business process flow and remove any stage fields referencing the column. |
+
+  > [!TIP]
+  > If the component belongs to a managed solution you don't own, follow the [managed dependency removal steps](#actions-to-remove-a-managed-dependency) described earlier in this article.
+
+  ### Retry the unification
+
+  After removing all listed dependencies, return to **Customer Insights - Data** > **Unify** > **Merge** and run the merge again.
