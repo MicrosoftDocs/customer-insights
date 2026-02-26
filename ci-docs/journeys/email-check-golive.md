@@ -62,7 +62,7 @@ Once the message is published, it can be included in journeys (via the Email ste
 
 [!INCLUDE [cc-marketing-email-size](./includes/cc-marketing-email-size.md)]
 
-For more information, see [Use customer journeys to create automated campaigns](customer-journeys-create-automated-campaigns.md) and [Go live with publishable entities and track their status](go-live.md)
+For more information, see [Use customer journeys to create automated campaigns](customer-journeys-create-automated-campaigns.md) and [Go live with publishable entities and track their status](go-live.md).
 
 ## Gain insights from your email results
 
