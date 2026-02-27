@@ -174,7 +174,12 @@ A full refresh takes all the data from a table in Delta format and reloads it fr
 
 ### Data synchronization failure
 
-Data synchronization can fail if your Delta folder data was deleted and then recreated. Or if Customer Insights - Data couldn't connect to your Delta folders for an extended period while the versions advanced. To minimize the impact where an intermittent data pipeline failure creates the need for a full refresh, we recommend you maintain a reasonable history backlog, such as 15 days.
+Data synchronization can fail if your Delta folder data was deleted and then recreated. Or if Customer Insights - Data couldn't connect to your Delta folders for an extended period while the versions advanced. To minimize the impact where an intermittent data pipeline failure creates the need for a full refresh, we recommend you maintain a reasonable history backlog.
+
+> [!IMPORTANT]
+> Maintain at least **15 days** of Delta version history to avoid synchronization failures. Ensure that both the `delta.logRetentionDuration` and
+`delta.deletedFileRetentionDuration` table properties are set to 15 days or more. Running `VACUUM` with aggressive retention settings is the most common cause of
+version expiration.
 
 ## Data preparation limits
 
