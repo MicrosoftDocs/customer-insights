@@ -45,7 +45,7 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 	- [Release plan](/dynamics365/release-plan/2025wave2/customer-insights/dynamics365-customer-insights-journeys/drive-confident-engagement-enhanced-consentbased-segmentation)
 	- [Docs]()
 
-	:::image type="content" source="media/IMAGE-TITLE.png" alt-text="IMAGE DESCRIPTION." lightbox="media/IMAGE-TITLE.png":::
+	:::image type="content" source="media/consent-segment.png" alt-text="A consent-based segment in the segment editor." lightbox="media/consent-segment.png":::
 
 #### Public preview
 
@@ -54,7 +54,7 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 	- [Release plan](/dynamics365/release-plan/2025wave2/customer-insights/dynamics365-customer-insights-journeys/set-message-expirations-keep-communication-relevant) 
 	- [Docs]() 
 
-	:::image type="content" source="media/IMAGE-TITLE.png" alt-text="IMAGE DESCRIPTION." lightbox="media/IMAGE-TITLE.png":::
+	:::image type="content" source="media/expire-message.png" alt-text="Expire a message in a journey"." lightbox="media/expire-message.png":::
 
 #### Monthly enhancements
 
