@@ -56,7 +56,7 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 
 	:::image type="content" source="media/expire-message.png" alt-text="Expire a message in a journey." lightbox="media/expire-message.png":::
 
-```placeholder
+<!---
 
 #### Monthly enhancements
 
@@ -67,7 +67,7 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 
 Learn how to make the most of the new Dynamics 365 Customer Insights features in our latest blogs and scenario docs:
 
-```
+-->
 
 ### February 2026 update
 
