@@ -1,7 +1,7 @@
 ---
 title: "Connect to data in Microsoft Dataverse"
 description: "Attach data from a Microsoft Dataverse to Customer Insights - Data."
-ms.date: 12/02/2025
+ms.date: 02/27/2026
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -52,12 +52,11 @@ Loading data can take time. After a successful refresh, the ingested data can be
 > **Delta log retention and scheduled refreshes**
 > 
 > Customer Insights stores the Delta table version at the time of ingestion. Dataverse maintains a Delta log retention period of 48 hours. If a scheduled refresh
- doesn't run within this 48-hour window (for example, due to paused schedules, service outages, or manual delays), the stored Delta version may no longer be available
- in the Delta log. When this happens, downstream operations such as unification, exports, segments, and measures will fail because they cannot read the expired version.
+ doesn't run within this 48-hour window (for example, due to paused schedules, service outages, or manual delays), the stored Delta version may no longer be available in the Delta log. When this happens, downstream operations such as unification, exports, segments, and measures fail because they cannot read the expired version.
 > 
 > To avoid this issue:
 > - Ensure scheduled refreshes run at least once every 48 hours.
-> - If you encounter errors related to missing Delta versions, trigger a full data source refresh from Data > Data sources.
+> - If you encounter errors related to missing Delta versions, trigger a full data source refresh from **Data** > **Data sources**.
 >
 > Note: The 48-hour retention period is managed by Dataverse and cannot be changed.
  
