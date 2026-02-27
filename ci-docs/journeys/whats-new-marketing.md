@@ -54,15 +54,20 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 	- [Release plan](/dynamics365/release-plan/2025wave2/customer-insights/dynamics365-customer-insights-journeys/set-message-expirations-keep-communication-relevant) 
 	- [Docs]() 
 
-	:::image type="content" source="media/expire-message.png" alt-text="Expire a message in a journey"." lightbox="media/expire-message.png":::
+	:::image type="content" source="media/expire-message.png" alt-text="Expire a message in a journey." lightbox="media/expire-message.png":::
+
+```placeholder
 
 #### Monthly enhancements
 
 - [Title](link)
 
+
 #### New blogs and scenario docs
 
 Learn how to make the most of the new Dynamics 365 Customer Insights features in our latest blogs and scenario docs:
+
+```
 
 ### February 2026 update
 
