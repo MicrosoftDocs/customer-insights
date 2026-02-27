@@ -13,6 +13,11 @@ search.audienceType:
 
 # Build segments using consent‑based criteria
 
+> [!IMPORTANT]
+> Existing segments continue to be evaluated using the consent rules that were in effect when they were created.  
+>
+> This update applies only to new segments. No changes are made to existing segments, and their behavior remains unchanged.
+
 This article explains how to create segments using consent‑based criteria and how consent is evaluated when segment membership is calculated. Consent‑based segments help you target the right audience while respecting customer consent, purposes, topics, and enforcement models.
 
 Consent evaluation in segments is aligned with the rules used during journey execution. This alignment ensures that contacts included in a segment are evaluated consistently when messages are sent.
