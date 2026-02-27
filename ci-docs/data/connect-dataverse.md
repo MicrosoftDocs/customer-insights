@@ -58,7 +58,7 @@ Loading data can take time. After a successful refresh, the ingested data can be
 > - Ensure scheduled refreshes run at least once every 48 hours.
 > - If you encounter errors related to missing Delta versions, trigger a full data source refresh from **Data** > **Data sources**.
 >
-> Note: The 48-hour retention period is managed by Dataverse and cannot be changed.
+> **Note**: The 48-hour retention period is managed by Dataverse and cannot be changed.
  
 ## Edit a Dataverse data source
 
