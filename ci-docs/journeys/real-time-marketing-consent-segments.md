@@ -24,14 +24,14 @@ Consent evaluation in segments is aligned with the rules used during journey exe
 
 ## Prerequisites
 
-Before you build a consent‑based segment, make sure that [consent](real-time-marketing-compliance-settings.md) is configured and :
+Before you build a consent‑based segment, make sure that [consent](real-time-marketing-compliance-settings.md) is configured and:
 
 - A **compliance profile** is available and active.
 - **Purposes** and **topics** are defined and active in the compliance profile.
 
 ## What is a consent‑based segment
 
-A consent‑based segment is a segment that includes or excludes contacts, leads or profiles based on their consent preferences. Consent is evaluated using:
+A consent‑based segment is a segment that includes or excludes contacts, leads, or profiles based on their consent preferences. Consent is evaluated using:
 
 - **[Compliance profile](real-time-marketing-compliance-settings.md#compliance-profiles)**
 - **[Purpose](real-time-marketing-compliance-settings.md#purposes)** (for example, Commercial)
@@ -65,7 +65,7 @@ When you add a consent group to a segment, you define how consent should be eval
 - Only **active** purposes and topics are shown.
 - Purposes from different business units can be selected.
 
-:::image type="content" source="media/real-time-marketing-consent-segments-configure.png" alt-text="Select purpose, channel and optionally a topic." lightbox="media/real-time-marketing-consent-segments-configure.png":::
+:::image type="content" source="media/real-time-marketing-consent-segments-configure.png" alt-text="Select purpose, channel, and optionally a topic." lightbox="media/real-time-marketing-consent-segments-configure.png":::
 
 You can optionally add a **Topic** by selecting "+ Topic" button.
 
@@ -134,7 +134,7 @@ Segment membership is calculated using the same consent evaluation logic as jour
 - [More details](real-time-marketing-email-text-consent.md#how-consent-is-respected-for-emails) about consent evaluation.
 
 > [!NOTE]
-> If the enforcement model of a purpose changes after a segment is created, the segment might display a non‑existing option in the **Will send** dropdown. In this case, the option is automatically mapped to a valid value.
+> If the enforcement model of a purpose changes after a segment is created, the segment might display a nonexisting option in the **Will send** dropdown. In this case, the option is automatically mapped to a valid value.
 
 ## Common scenarios
 
