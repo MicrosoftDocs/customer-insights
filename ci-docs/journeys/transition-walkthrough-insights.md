@@ -1,10 +1,10 @@
 ---
 title: Transition insights and reports
 description: Learn how to transition insights and reporting capabilities from outbound marketing to real-time journeys in Dynamics 365 Customer Insights - Journeys.
-ms.date: 04/23/2025
+ms.date: 03/03/2026
 ms.topic: article
-author: alfergus
-ms.author: colinbirkett
+author: petrjantac
+ms.author: alfergus
 search.audienceType: 
   - admin
   - customizer
@@ -24,7 +24,7 @@ Additionally, advanced bot protection for real-time journeys safeguards your bus
 
 ## How to transition
 
-For out-of-the-box insights, we’re automatically migrating outbound marketing interactions to real-time journeys storage and updating the outbound insights to align with real-time journeys widgets. As a result, and to comply with the [real-time journeys retention policy](real-time-marketing-analytics.md#email-insights), you’ll only be able to display outbound marketing interactions for the last 12 months in the out-of-the-box insights. Past data is still available in data storage.
+For out-of-the-box insights, we’re automatically migrating outbound marketing interactions to real-time journeys storage and updating the outbound insights to align with real-time journeys widgets. As a result, and to comply with the [real-time journeys retention policy](real-time-marketing-analytics.md#email-insights), you can only view outbound marketing interactions from the last 12 months in the contact timeline. Past data is still available in data storage.
 
 > [!NOTE]
 > If you’re a customer in the EU, NAM, OCE, or GBR region, only interactions created after January 1, 2024, are migrated by default. You can request additional data to be transferred by filling in [this form](https://go.microsoft.com/fwlink/?linkid=2313103).
