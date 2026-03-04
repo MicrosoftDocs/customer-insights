@@ -117,7 +117,7 @@ The selected channel, together with the purpose, determines the enforcement mode
 - **Will not send**  
   The segment includes no contacts, regardless of consent state.
 
-### Select a recipient field (if applicable)
+### Step 5: Select a recipient field (if applicable)
 
 If multiple recipient attributes are configured for the selected audience and channel (for example, multiple email address fields), a **Recipient** dropdown is shown.
 
@@ -173,7 +173,6 @@ This allows you to explicitly include contacts who opted out of a specific topic
 
 - Only **active compliance profiles, purposes, and topics** are shown.
 - Inactive items aren’t available for selection.
-- Consent‑based segmentation respects parent‑child business unit scoping.
 - Segment counts reflect consent evaluation rules, which might differ from simple attribute‑based filters.
 
 ## Next steps
