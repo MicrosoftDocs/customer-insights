@@ -28,7 +28,7 @@ This document provides important, late-breaking information about known issues a
 - When an entitlement is changed, the updated working entitlement will sometimes display as "NotConfigured", and the broken entitlement will display as "Configured" in the Admin UI. You may get this fixed by raising a support request. <!--- 1884488 -->
 - When a portal is expired, the **Configure your portal** item under **Other actions** links to the old portal. <!--- 1804106 -->
 - When a setting from the Customer Insights - Journeys application settings overview page is selected, users who don't have admin privileges to adjust the setting are redirected to a blank page. <!--- 2157534 -->
-- When a restore operation is performed using a previously created backup, the data stored in outbound marketing may not be fully in sync with Dataverse. In such cases, please contact support to complete the restore process in outbound marketing.
+- When a restore operation is performed using a previously created backup, the data stored in outbound marketing may not be fully in sync with Dataverse. This is expected and by design, as outbound marketing has reached its end of life and is no longer supported. If you have a currently approved extension to use outbound marketing, you may contact support (you must share the approval email) to complete the restore process.
 
 ## Customer journeys
 
