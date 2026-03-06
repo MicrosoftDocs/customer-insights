@@ -1,7 +1,7 @@
 ---
 title: Known issues in outbound marketing and workarounds
 description: This article documents known issues in outbound marketing and workarounds.
-ms.date: 08/18/2023
+ms.date: 03/06/2026
 ms.update-cycle: 1095-days
 ms.topic: troubleshooting-known-issue
 author: alfergus
@@ -28,7 +28,7 @@ This document provides important, late-breaking information about known issues a
 - When an entitlement is changed, the updated working entitlement will sometimes display as "NotConfigured", and the broken entitlement will display as "Configured" in the Admin UI. You may get this fixed by raising a support request. <!--- 1884488 -->
 - When a portal is expired, the **Configure your portal** item under **Other actions** links to the old portal. <!--- 1804106 -->
 - When a setting from the Customer Insights - Journeys application settings overview page is selected, users who don't have admin privileges to adjust the setting are redirected to a blank page. <!--- 2157534 -->
-- When a restore operation is performed using a previously created backup, the data stored in outbound marketing may not be fully in sync with Dataverse. This is expected and by design, as outbound marketing has reached its end of life and is no longer supported. If you have a currently approved extension to use outbound marketing, you may contact support (you must share the approval email) to complete the restore process.
+- When a restore operation is performed using a previously created backup, the data stored in outbound marketing may not be fully in sync with Dataverse. This is expected and by design, as outbound marketing has reached its end of life and is no longer supported. If you have a currently approved extension to use outbound marketing, contact support to complete the restore process (you must share the approval email).
 
 ## Customer journeys
 
@@ -96,7 +96,7 @@ This document provides important, late-breaking information about known issues a
 - When using [form capture](embed-forms.md#use-form-capture-to-integrate-a-form-created-externally), data model changes to mapped fields don't reflect in Customer Insights - Journeys until you manually refresh the marketing form capture page after making the change. <!--- 1798860 -->
 - Previews for marketing pages with a single column section larger than 1000 px include a horizontal scrollbar by default. <!--- 1923424 -->
 - The form capture tool may not be able to capture all non-Latin script characters correctly. Unrecognized characters are replaced by HTML codes. <!--- 1847623 -->
-- Date field values aren't show in the **Insights** tab under **Submissions** for forms. <!--- 2039533 -->
+- Date field values aren't shown in the **Insights** tab under **Submissions** for forms. <!--- 2039533 -->
 
 ## Reusable content blocks
 
