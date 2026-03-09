@@ -2690,6 +2690,811 @@
       "source_path": "ci-docs/journeys/real-time-marketing-form-custom-captcha.md",
       "redirect_url": "ci-docs/journeys/real-time-marketing-form-security-privacy.md",
        "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/user-guide.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/navigation.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/designer-shortcuts.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/organize-daily-work.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/manage-customer-information.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/business-units-support-outbound-marketing.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/sales-marketing-integration.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/marketing-videos.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/basic-tutorials.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/create-segment.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/create-marketing-email.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/create-simple-customer-journey.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/create-landing-page.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/create-interactive-customer-journey.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/set-up-lead-scoring.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/generate-activities-from-customer-journey.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/manage-images.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/track-online-behavior.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/email-excel.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/advanced-tutorials.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/email-templates.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/custom-template-attributes.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/mkt-settings-authenticate-domains.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/create-deploy-marketing-pages.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/personalized-page-content.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/marketing-forms.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/form-prefill.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/embed-forms.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/marketing-fields.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/set-up-subscription-center.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/failed-submissions.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/pages-forms-troubleshoot.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/video-content.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/segmentation-lists-subscriptions.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/segments-vs-lists.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/segments-profile.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/segments-interaction.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/generate-segment-from-journey.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/nl-segment-build.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/segments-static.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/manage-segments-from-contacts.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/segments-export-members.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/segments-templates.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/linkedin-matched-audience.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/prepare-marketing-emails.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/dynamic-email-content.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/email-a-b-testing.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/email-quick-send.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/customer-journeys-create-automated-campaigns.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/customer-journey-tiles-reference.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/export-journey.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/email-expire.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/automated-scheduler.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/customer-journey-manually-schedule.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/journey-templates.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/create-inbound-customer-journey.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/activity-templates.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/customer-journey-recovery-items.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/event-management-outbound.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/open-events-outbound.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/set-up-event-outbound.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/session-level-registration-outbound.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/event-waitlist-outbound.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/event-recurring-outbound.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/event-templates-outbound.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/event-from-event-outbound.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/teams-webinar-outbound.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/optimize-check-in-outbound.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/set-up-webinar-outbound.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/invite-register-house-event-attendees-outbound.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/event-forms-outbound.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/custom-registration-fields-outbound.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/set-up-event-portal-outbound.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/events-change-url-outbound.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/event-management-dashboard-outbound.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/manage-event-sponsorships-outbound.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/manage-event-logistic-outbound.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/event-payment-gateway-outbound.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/event-financials-outbound.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/followup-after-event-outbound.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/event-troubleshoot-outbound.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/lead-lifecycle.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/market-to-leads.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/account-based-marketing.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/score-manage-leads.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/portal-optional.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/portals.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/portals-faqs.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/customer-voice.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/customer-voice-faqs.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/social-posting.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/linkedin-overview.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/LinkedIn-Lead-Gen-integration.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/insights.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/insights-glossary.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/register-engagement.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/custom-analytics.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/marketing-analytics/analytics-gallery-start.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/marketing-analytics/analytics-gallery-framework.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/marketing-analytics/analytics-gallery-leaders.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/marketing-analytics/analytics-gallery-email.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/marketing-analytics/analytics-gallery-segments.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/marketing-analytics/analytics-gallery-program.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/marketing-analytics/analytics-gallery-reach.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/marketing-analytics/analytics-gallery-forms.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/marketing-settings.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/mkt-settings-lead-score-options.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/mkt-settings-analytics.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/mkt-settings-landing-pages.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/mkt-settings-sync.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/mkt-settings-matching.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/mkt-settings-default-marketing.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/mkt-settings-data-protection.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/events-settings.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/admin-machine-learning.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/privacy.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/double-opt-in.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/form-double-opt-in.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/cookies.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/mkt-settings-social-media.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/linkedin-configuration.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/known-issues.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/developer/marketing-developer-guide.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/developer/extend-customer-journeys-custom-channels.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/developer/overview-custom-channel.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/developer/create-custom-channel.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/developer/create-entities-forms.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/developer/configure-tile-custom-channel.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/developer/create-workflow-plugin-custom-channel.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/developer/test-custom-channel-tile.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/developer/publish-custom-channel-appsource.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/developer/configure-use-custom-channel.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/developer/remove-custom-channel.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/developer/marketing-approvals-feature.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/developer/build-approval-feature-using-flow.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/developer/event-management-web-application.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/developer/self-hosted.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/developer/host-custom-event-website-on-azure.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/developer/portal-hosted.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/developer/manually-overwriting-sample-website.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/developer/using-events-api.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/developer/register-web-application-events-api.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/developer/user-authentication-events-api.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/developer/customize-events-api-response.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/developer/finalizing-registrations-for-paid-events.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/developer/event-portal-localization.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/developer/basic-operations-on-customer-journey.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/developer/marketing-organization-metadata.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/developer/marketing-solutions.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/developer/marketing-entity-reference.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/developer/filter-cities.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/developer/marketing-form-client-side-extensibility.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/developer/email-designer-customization.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/developer/extend-segments.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/developer/export-customer-voice.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/entity-mapping.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/developer/migrate-files.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/developer/retrieve-interactions-contact.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/teams-chat.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/marketing-calendar.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/go-live.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
     }
   ]
 }
