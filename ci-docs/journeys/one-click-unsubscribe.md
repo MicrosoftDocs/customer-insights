@@ -83,11 +83,6 @@ Any emails to the topic’s parent purpose remains unblocked, ensuring that othe
 
 Commercial emails using an [external link](compliance-overview.md#external-links) type of compliance profile also automatically include the one-click unsubscribe headers. When the recipient selects the one-click unsubscribe link, they're opted out of the purpose or topic for which the email message was sent (as described above).
 
-If a [subscription center based compliance profile](real-time-marketing-outbound-subscription.md) is used in the email that is sent through Customer Insights - Journeys and the recipient selects the one-click unsubscribe link, then there are two actions taken:
-
-1. The recipient’s email address is set to **opted-out** for the purpose or the topic for which the email was sent.
-1. The **Bulk Email** attribute of the recipient’s contact record is set to **Do Not Allow** (that is, future commercial emails won't be sent to this contact).
-
 #### How to identify if a contact point consent record was updated because of a one-click unsubscribe action performed by the recipient
 
 When contact point consent (CPC) records are updated due to the recipient selecting the one-click unsubscribe link in their email client, the system indicates the source of the update and the reason with the following values:
