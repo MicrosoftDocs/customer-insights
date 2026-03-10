@@ -133,22 +133,21 @@ Review these important definitions before you start.
 - Similarly, **Will track** means the tracking contact point consent record and its purpose enforcement model let the app include tracking links in messages sent to that address. For example, if the purpose is nonrestrictive and no contact point consent record exists, the app evaluates that as **Will track**.
 - **Will not track** means the app evaluates that email address’s contact point consent record and purpose and decides not to track links in the email.
 
-### Subscription centers used in real-time journeys
+### Preference centers in real-time journeys
 
-> [!IMPORTANT]
-> Subscription centers will be removed along with outbound marketing. Consider using a preference center instead.
-
-The **DoNotBulkEmail**, **DoNotEmail**, and **DoNotTrack** fields on a subscription center prefill for the contact based on contact data and contact point consent records for all the contact's email addresses.
+Preference centers allow customers to manage their consent preferences for the types of communications they receive. The **DoNotBulkEmail**, **DoNotEmail**, and **DoNotTrack** fields on a preference center prefill for the contact based on contact data and contact point consent records for all the contact's email addresses.
 
 1. **DoNotBulkEmail** prefills to block sending if the attribute is currently set to block or if any commercial purpose on the compliance profile from any email address on the contact evaluates to **will not send**.
 1. **DoNotEmail** prefills to block sending if the attribute is currently set to block or if any transactional purpose on the compliance profile from any email address on the contact evaluates to **will not send**.
-1. **DoNotTrack** prefills to block tracking if the attribute is currently set to block or if the tracking purpose on the compliance profile from any email address on the contact evaluates to **will not track**.  
+1. **DoNotTrack** prefills to block tracking if the attribute is currently set to block or if the tracking purpose on the compliance profile from any email address on the contact evaluates to **will not track**.
 
-When a user submits changes through a subscription center, the states of **DoNotBulkEmail**, **DoNotEmail**, and **DoNotTrack** update the contact and the contact point consent records for all the contact's email addresses, as set in the [audience configuration](real-time-marketing-audience-data.md#select-the-audience-source-for-journeys).
+When a user submits changes through a preference center, the states of **DoNotBulkEmail**, **DoNotEmail**, and **DoNotTrack** update the contact and the contact point consent records for all the contact's email addresses, as set in the [audience configuration](real-time-marketing-audience-data.md#select-the-audience-source-for-journeys).
 
 1. If both **DoNotBulkEmail** and **DoNotEmail** are set to allow emails, all commercial purposes on the compliance profile for every email address on the contact record have an opted-in contact point consent record. If either is set to don't allow, all contact point consent records update to opted-out.
 1. The **DoNotEmail** state is written to all transactional purposes on the compliance profile for every email address on the contact record.
 1. The **DoNotTrack** state is written to the tracking purpose on the compliance profile for every email address on the contact record.
+
+Learn more about preference centers: [Preference center management](real-time-marketing-compliance-settings.md#preference-center-management)
 
 ### Preference page and preference center  
 
