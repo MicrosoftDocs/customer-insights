@@ -125,7 +125,7 @@ More information: [Design your digital content](real-time-marketing-email.md)
 
 ## Add standard, required, and specialized links to your message
 
-Marketing messages are delivered as HTML and therefore support hyperlinks. Some types of links provide access to special features that are hosted by Dynamics 365 Customer Insights - Journeys, whereas others can simply be standard links to content anywhere on the web. A subscription center link is required before any commercial message can pass the error check and go live, but other links are optional, so you can use them only as needed.
+Marketing messages are delivered as HTML and therefore support hyperlinks. Some types of links provide access to special features that are hosted by Dynamics 365 Customer Insights - Journeys, whereas others can simply be standard links to content anywhere on the web. A preference center link is required before any commercial message can pass the error check and go live, but other links are optional, so you can use them only as needed.
 
 The following list describes the types of links that are available. You'll use the [assist edit](real-time-marketing-personalization.md) feature to add links as text in a text element, while other types of links are added by using a button or image.
 
@@ -137,12 +137,12 @@ Text/button/image links can like to:
 
 Other types of links:
 
-- **Subscription center (required)**: All marketing commercial email messages must include a link to a subscription center. A subscription center includes mailing lists available from your organization, including an option for contacts to opt out of all marketing emails. Contacts might also be able to update their contact details here. Dynamics 365 Customer Insights - Journeys includes a standard subscription center, which you can edit to contain your subscription lists and to reflect your graphical identity (you can also create additional pages to support multiple subscription options, languages, or brands). 
+- **Preference center (required)**: All marketing commercial email messages must include a link to a preference center. A preference center allows customers to manage their consent preferences, including purposes and topics for the types of communications they want to receive. Contacts can opt in or out of specific communication types and update their contact details. You can customize preference centers to reflect your graphical identity and support multiple languages or brands. Learn more: [Preference center management](real-time-marketing-compliance-settings.md#preference-center-management)
 
     > [!NOTE]
-    >A link to your subscription center is automatically added in the footer of all out of the box layout-enabled email templates.
+    >A link to your preference center is automatically added in the footer of all out of the box layout-enabled email templates.
 
-    You can add a subscription center link to your page or email manually by highlighting the link text and selecting **Link** on the text toolbar, and then using the [personalization](real-time-marketing-personalization.md) feature to select the subscription center URL from the content settings.
+    You can add a preference center link to your page or email manually by highlighting the link text and selecting **Link** on the text toolbar, and then using the [personalization](real-time-marketing-personalization.md) feature to select the preference center URL from the content settings.
 
 - **View as a web page**: This link opens the marketing email message in a web browser. Some recipients will find this useful if their standard email client is having trouble rendering the message. You add this link to your page by highlighting the link text, selecting **Link** on the text toolbar, and then using the [personalization](real-time-marketing-personalization.md) feature to select the view-as-webpage URL from the message object.
 
