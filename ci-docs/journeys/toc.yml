@@ -780,14 +780,12 @@
     href: troubleshoot-marketing-solution-health.md
   - name: General FAQ
     href: troubleshoot-faq.md
-- name: Copilot in Customer Insights - Journeys
-  items: 
+- name: Copilot and AI capabilities in Customer Insights
+  items:
   - name: Overview
     href: copilot-overview.md
   - name: Give consent to use Copilot in Customer Insights - Journeys
-    href: copilot-consent-journeys.md
-- name: Copilot and AI capabilities in Customer Insights
-  items:
+    href: copilot-consent-journeys.md  
   - name: Use Microsoft 365 Copilot chat in model-driven apps (preview)
     href: use-microsoft-365-copilot-model-driven-apps.md
   - name: Supervise agents in model-driven apps with agent feed
