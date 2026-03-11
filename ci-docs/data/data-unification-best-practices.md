@@ -1,7 +1,7 @@
 ---
 title: Data unification best practices
 description: Learn about the concepts and best practices when unifying data in Customer Insights - Data.
-ms.date: 03/11/2026
+ms.date: 01/06/2025
 ms.reviewer: v-wendysmith
 ms.topic: best-practice
 author: Scott-Stabbert
@@ -12,8 +12,6 @@ ms.custom: bap-template
 # Data unification best practices
 
 When you set up rules to unify your data into a customer profile, consider these best practices:
-
-- Review the results of [data profiling](data-source.md#data-profiling) and fix any errors or missing values.
 
 - [**Balance time to unify vs. complete matching**](#unification-performance). Attempting to capture every possible match leads to many rules and unification taking a long time.
 
