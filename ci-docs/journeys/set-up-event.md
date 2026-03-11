@@ -1,7 +1,7 @@
 ---
 title: Set up an event
 description: How to plan an event, register basic info, set up your team, manage sessions and speakers, set the event schedule, issue passes,  and manage venues in Dynamics 365 Customer Insights - Journeys.
-ms.date: 10/07/2025
+ms.date: 03/11/2026
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -19,9 +19,9 @@ The event planning process in Dynamics 365 Customer Insights - Journeys starts w
 
 Creating an event record is the first step when setting up your event in Customer Insights - Journeys. Everything related to a given event will be stored either directly in the event record or in other records that are linked to that event.
 
-Though Customer Insights - Journeys offers many views into other record types, you'll probably do most of your work directly in the relevant event record. When working in the event record, you can view and create most types of related records and everything that you do is automatically related to that event.
+Though Customer Insights - Journeys offers many views into other record types, you'll probably do most of your work directly in the relevant event record. When working in the event record, you can view and create most types of related records, and everything that you do is automatically related to that event.
 
-You can see a list of all your event records by [opening the **Events** work area](open-events.md) and going to **Events** > **Event** > **Events**. From here you can use the standard list-view controls to search, sort, and filter the list to find and open an existing event, or to create a new event record.
+You can see a list of all your event records by [opening the **Events** work area](open-events.md) and going to **Events** > **Event** > **Events**. From here, you can use the standard list-view controls to search, sort, and filter the list to find and open an existing event or to create a new event record.
 
 As with other forms in Dynamics 365, the event form provides a summary of its most important settings at the top, where you also find the business workflow timeline, which helps organize your work at each stage of the event-management process. A standard business workflow for events is provided out of the box, but you can customize it to match the process in place at your organization.
 
@@ -41,7 +41,7 @@ Here you can see and edit your basic event information, including:
     - **Registration count**: Shows the number of people who registered for the event. The maximum value that can be shown here is 50,000, but you can still store more registrations in the system.
     - **Check-in count**: Shows the number of attendees that checked in during the event. The maximum value that can be shown here is 50,000, but you can still store more check-ins in the system.
     - **Event image**: Allows you to select an image to represent your event. 
-    - **Event URL**: Shows the address of your event website. If you're using the default location on your Power Apps portals solution, the event URL value is read-only and provided automatically. If you're hosting your website at a custom location, then select the Custom event URL check box and edit the value here. Select the globe button next the event URL field to open the site.
+    - **Event URL**: Shows the address of your event website. If you're using the default location on your Power Apps portals solution, the event URL value is read-only and provided automatically. If you're hosting your website at a custom location, then select the Custom event URL check box and edit the value here. Select the globe button next to the event URL field to open the site.
 - **Schedule**: Provides settings for specifying the time zone, start, and end dates for your event. The schedule section also provides a countdown of the days until your event. You can also set up a recurring event here. If you change the start date for an event that's already been saved, you are asked whether you want to change the end date and the session schedule to match it.
 - **Publishing**: Allows you to decide where and how your attendees register for your event. More information: [Create an event registration experience](event-registration-experience.md).
 - **Stream this event online**: Set up your event as a Microsoft Teams webinar, a Teams Live Event, a Teams Meeting, or on-site only.
@@ -125,7 +125,7 @@ Each team member record can be associated with a contact or user record.
 - *Users* are people who work for your organization and have a Dynamics 365 license.
 - *Contacts* come from your contact database, which will include customers, potential customers, vendors, partners, and other external people (or internal people who don't use Dynamics 365).
 
-When you create a new team member record, you can choose whether to associate it with a user or a contact. If you choose to associate the record with a contact, the team-member record displays relevant information from that contact record. User records don't include any contact information, so if you associate the record with a user, the association is shown but no additional information is loaded. The team-member record also provides information about the member's role and which events the team member has worked on. You can create team members from either the **Event Team Members** list page or directly from a specific **Event** record.
+When you create a new team member record, you can choose whether to associate it with a user or a contact. If you choose to associate the record with a contact, the team-member record displays relevant information from that contact record. User records don't include any contact information, so if you associate the record with a user, the association is shown, but no additional information is loaded. The team-member record also provides information about the member's role and which events the team member has worked on. You can create team members from either the **Event Team Members** list page or directly from a specific **Event** record.
 
 When you're looking at a list view of team members, the list includes both a **User** and a **Contacts** column, but only one of the columns shows a value. From the list, you can go to the user or contact record by selecting the name in the list, or you can open the team-member record itself by double-clicking on a row anywhere away from the person's name.
 
@@ -162,7 +162,7 @@ When setting up a speaker engagement, you map a speaker to a specific session fo
 
 ## Set up event passes
 
-Event passes aren't supported in Customer Insights - Journeys Event Management.
+Event passes are now available in Customer Insights – Journeys. In the **Settings** area, go to **Feature switches** and enable “Enable payments in Real-time Journeys.”
 
 <a name="venues"></a>
 
