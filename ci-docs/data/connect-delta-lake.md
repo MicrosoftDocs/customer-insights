@@ -1,7 +1,7 @@
 ---
 title: "Connect to Delta tables in Azure Data Lake Storage"
 description: "Work with data stored in Delta tables from Azure Data Lake Storage."
-ms.date: 02/27/2026
+ms.date: 03/11/2026
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -93,7 +93,7 @@ The table shows the supported and unsupported Databricks features.
 
    :::image type="content" source="media/delta-edit-table.png" alt-text="Dialog box showing Required for Primary key":::
 
-1. To enable data profiling on any of the columns, select the number of **Columns** for the table. The **Manage attributes** page displays.
+1. To enable [data profiling](data-sources.md#data-profiling) on any of the columns, select the number of **Columns** for the table. The **Manage attributes** page displays.
 
    :::image type="content" source="media/delta-dataprofiling-columns.png" alt-text="Dialog box to select data profiling.":::
 
