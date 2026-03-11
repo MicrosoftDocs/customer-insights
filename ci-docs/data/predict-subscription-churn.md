@@ -24,6 +24,10 @@ For example, Contoso offers a monthly coffee service. They want to know which cu
 > [!TIP]
 > Try the subscription churn prediction using sample data: [Subscription churn prediction sample guide](sample-guide-predict-subscription-churn.md).
 
+## Data prerequisites summary
+
+For common data requirements across all prediction models, see [Data prerequisites for prediction models](predictions.md#data-prerequisites-for-prediction-models).
+
 ## Prerequisites
 
 - At least [Contributor permissions](user-roles.md).

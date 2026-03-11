@@ -81,6 +81,14 @@ The complexity of your measures can also impact performance. To help you prevent
 1. Delete old or no longer relevant measures even if they're static or inactive.
 1. [Schedule individual measures](measures-schedule.md) to run weekly or monthly during slow business days (such as the weekend) instead of daily.
 
+## Measure storage impact
+
+Measure evaluation generates Analytics entities (tables suffixed with `-Analytics`) that are consumed by Customer Insights - Journeys. These entities contribute to environment storage. Segments, by contrast, are consumed from the Managed Data Lake (MDL) rather than through `-Analytics` entities. To reduce storage from measures:
+
+- Delete unused measures
+- Reduce measure refresh frequency
+- Disable auto-cleanup exemptions on measures you no longer need
+
 ## See also
 
 - [FastTrack blog: Understanding Job Execution Flow in Customer Insights - Data Batch Runs](https://community.dynamics.com/blogs/post/?postid=84fbbaaf-262b-f011-8c4e-7c1e5218b899)
