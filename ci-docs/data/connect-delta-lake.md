@@ -1,7 +1,7 @@
 ---
 title: "Connect to Delta tables in Azure Data Lake Storage"
 description: "Work with data stored in Delta tables from Azure Data Lake Storage."
-ms.date: 09/05/2025
+ms.date: 03/11/2026
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
