@@ -780,12 +780,26 @@
     href: troubleshoot-marketing-solution-health.md
   - name: General FAQ
     href: troubleshoot-faq.md
-- name: Copilot in Customer Insights - Journeys
-  items: 
+- name: Copilot and AI capabilities in Customer Insights
+  items:
   - name: Overview
     href: copilot-overview.md
   - name: Give consent to use Copilot in Customer Insights - Journeys
-    href: copilot-consent-journeys.md
+    href: copilot-consent-journeys.md  
+  - name: Use Microsoft 365 Copilot chat in model-driven apps (preview)
+    href: use-microsoft-365-copilot-model-driven-apps.md
+  - name: Supervise agents in model-driven apps with agent feed
+    href: supervise-agents-with-agent-feed.md
+  - name: Use Copilot's form fill assistance feature in model-driven apps
+    href: form-fill-assistance.md
+  - name: Find data in a view with AI (preview)
+    href: find-data-with-ai.md
+  - name: Visualize data in a view with Copilot (preview)
+    href: visualize-data-in-copilot.md
+  - name: Use row summaries in model-driven apps
+    href: record-summaries.md
+  - name: Timeline highlights with generative AI in Dynamics 365
+    href: use-timeline-highlights-powered-by-generative-ai.md
 - name: Responsible AI FAQs
   items:
   - name: Overview
