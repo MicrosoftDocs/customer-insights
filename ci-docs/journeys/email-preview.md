@@ -1,7 +1,7 @@
 ---
 title: Check your work using previews and test sends
 description: Test and preview your email designs in Dynamics 365 Customer Insights - Journeys to ensure they look great across devices and email clients.
-ms.date: 04/16/2025
+ms.date: 02/23/2026
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -22,12 +22,13 @@ Your marketing email messages are seen by many potential customers, so make sure
 > [!IMPORTANT]
 > Previews and test sends let you quickly test your design. However, not all features work with them. The following limitations apply:
 > 
-> - [Subscription center links](set-up-subscription-center.md#test-sub-center) open the subscription center page, but the page won't function.
+> - [Preference center links](real-time-marketing-preference-centers.md) open the preference center page, but the page won't function.
 > - You can test send the [double opt-in email](real-time-marketing-double-opt-in.md#double-opt-in-confirmation-email) layout but you can't test the actual logic behind it. This is because the logic depends on the compliance profile assigned to each audience and varies depending on how dynamic placeholders are resolved.
 > - To test an email that contains placeholders that point to Dataverse tables, the user running the test must have [read permissions](role-permissions.md) for the tables.
-> - To ensure [QR codes](email-qr-code.md) display correctly across different email clients, test them using a journey instead of the standard email test send or preview. Journey functionality uses a public link for the QR code image rather than embedding it with base64, which maintains consistent display quality across various email clients. 
+> - To ensure [QR codes](email-qr-code.md) display correctly across different email clients, test them using a journey instead of a standard email test send or preview. Journey functionality uses a public link for the QR code image rather than embedding it with base64. This maintains consistent display quality across various email clients.
+> - The "View in browser" link is not a supported configuration.
 >
-> To test these features, create a simple customer journey that targets a small segment (such as one that includes a single contact with your email address) and sends the message you want to test.
+> To test these features, create a customer journey that targets a small segment (such as one that includes a single contact with your email address) and sends the message you want to test.
 
 ## Preview your message in the designer
 
@@ -51,11 +52,11 @@ Use the form factor icons in the right pane to switch between the available form
 
 ## Use the advanced inbox preview feature
 
-Go to the **Email designer** > **Preview and test** > **Email clients** tab to see real-world inbox previews that show your design exactly as it will appear in a wide variety of target email clients and platforms. This feature renders your message by using native code from each of the listed target platforms and then delivers your preview as an image file showing the precise results.
+Go to the **Email designer** > **Preview and test** > **Email clients** tab to see real-world inbox previews that show your design exactly as it appears in a wide variety of target email clients and platforms. This feature renders your message by using native code from each of the listed target platforms and then delivers your preview as an image file showing the precise results.
 
-The inbox preview is provided by a Microsoft partner called Litmus Software, Inc. ([litmus.com](https://litmus.com/)). Your Dynamics 365 Customer Insights - Journeys license includes 100 inbox previews per month. This quota is shared by your entire organization. After your organization uses all the available previews for the month, each user must set up their own Litmus account to create additional previews. Personal Litmus quotas apply to individual users, not to the entire organization. When you've used all your free previews, you are given the option to sign in to Litmus directly from the **Inbox Preview** tab in Dynamics 365 Customer Insights - Journeys. After you're signed in, the integration is seamless.
+The inbox preview is provided by a Microsoft partner called Litmus Software, Inc. ([litmus.com](https://litmus.com/)). Your Dynamics 365 Customer Insights - Journeys license includes 100 inbox previews per month. This quota is shared by your entire organization. After your organization uses all the available previews for the month, each user must set up their own Litmus account to create additional previews. Personal Litmus quotas apply to individual users, not to the entire organization. When you've used all your free previews, you're given the option to sign in to Litmus directly from the **Inbox Preview** tab in Dynamics 365 Customer Insights - Journeys. After you're signed in, the integration is seamless.
 
-The **Email clients** tab displays a grid of icons, each labeled with the name of a different destination platform or email client. Initially, each preview is dimmed and shows a key (locked) icon, meaning you haven't generated that preview with your current design and settings. Select one of these icons to generate that preview and unlock its icon. Each time you unlock a preview, you'll use one preview from either your organization's or your personal quota. The unlocked preview remains available for viewing until you change the design or the **Properties** (dynamic text) settings, at which time all existing previews will no longer be valid and will be shown as locked again.
+The **Email clients** tab displays a grid of icons, each labeled with the name of a different destination platform or email client. Initially, each preview is dimmed and shows a key (locked) icon, meaning you haven't generated that preview with your current design and settings. Select one of these icons to generate that preview and unlock its icon. Each time you unlock a preview, you use one preview from either your organization's or your personal quota. The unlocked preview remains available for viewing until you change the design or the **Properties** (dynamic text) settings, at which time all existing previews will no longer be valid and will be shown as locked again.
 
 > [!NOTE]
 > You must enable Litmus for your instance before using it. 

@@ -1,7 +1,7 @@
 ---
 title: Create and manage predictions
 description: Learn how to create and manage predictions in Dynamics 365 Customer Insights - Data."
-ms.date: 12/08/2025
+ms.date: 02/17/2026
 ms.update-cycle: 180-days
 ms.reviewer: alfergus
 ms.topic: how-to
@@ -32,6 +32,18 @@ The following models are available:
 - [Sentiment analysis](sentiment-analysis.md): Analyzes sentiment of customer feedback and identifies business aspects that are frequently mentioned.
 
 To understand the readiness of your data to produce insights, see [Data prep report overview](data-prep-overview.md).
+
+## Data prerequisites for prediction models
+
+All out-of-box prediction models share the following common data requirements. See the individual model pages for model-specific requirements.
+
+| Requirement | Details |
+|------------|---------|
+| Unified customer profiles | Must have completed [data unification](data-unification.md) with at least 1,000 profiles (500 minimum for transactional churn) |
+| Customer ID field | Must be present in transaction or subscription data and match the unified profile Customer ID |
+| Historical data | At least 12 months of transaction or subscription history; preferably 2-3 years |
+| Data completeness | Less than 20% missing values in required fields |
+| Permissions | At least [Contributor permissions](user-roles.md) |
 
 > [!TIP]
 > We recommend that you regularly refresh out-of-the-box models with updated data to ensure they accurately inform your business use case. Data is refreshed ad-hoc when the system ingests new or updated data sources. However, models will only rescore in this case and continue to use the existing training data.
