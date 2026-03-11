@@ -40,7 +40,7 @@ As we continue to work on Customer Insights - Journeys and refine the experience
 - One-time journeys with start dates that have already passed can't be edited (even after being copied).
 - Orchestration of segment-based journeys can only be done using a single segment in Customer Insights - Journeys.
 - Today, you can't delete journeys once created and made live.
-- The throughput of a journey varies depending on a few factors such as the complexity of your journey, the number of concurrent journeys that you run, the consumption patterns from other applications that you use, and the resource-intensive workloads that are being carried out. Read the [Service Limits and Fair Usage policy document](fair-use-policy.md#customer-insights---journeys-real-time-journeys) Opens in a new window or tab for more guidance.
+- The throughput of a journey varies depending on a few factors such as the complexity of your journey, the number of concurrent journeys that you run, the consumption patterns from other applications that you use, and the resource-intensive workloads that are being carried out. Learn more: [Service limits and fair use policy](fair-use-policy.md).
 
 ## Emails and content blocks
 
