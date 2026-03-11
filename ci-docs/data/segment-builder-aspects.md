@@ -5,7 +5,7 @@ author: JimsonChalissery
 ms.author: sstabbert
 ms.reviewer: v-wendysmith
 ms.topic: article
-ms.date: 07/05/2023
+ms.date: 03/11/2026
 ms.custom: bap-template
 ---
 
@@ -37,8 +37,9 @@ The example illustrates the segmentation capability. We've defined a segment for
 
 When creating a segment using the segment builder, keep in mind the following tips:
 
-- The segment builder doesn't suggest valid values from tables when setting the operators for the conditions. You can go to **Data** > **Tables** > **Output** and download the table data to see which values are available.
- Conditions based on dates let you switch between fixed dates and a floating date range.
+- When selecting a field to filter on, the system suggests a list of valid values to choose from, based on the type of column.
+  - Dataverse Choice columns display a list of friendly names and their Dataverse values. For example, a Shipping Method might show FedEx (1) or UPS (2).
+  - String and numeric columns with < 200 distinct values display the distinct values. You can also enter a value. For performance, the system reviews the first 10,000 rows to provide distinct values so it’s possible with large data sets to not capture all distinct values.
 - If you have multiple rules for your segment, the rule you're editing has a vertical blue line next to it.
 - You can move rules and conditions to other places in the segment definition. Select the vertical ellipsis (&vellip;) next to a rule or condition and choose how and where to move it.
 - The **Undo** and **Redo** controls in the command bar let you roll back changes.
