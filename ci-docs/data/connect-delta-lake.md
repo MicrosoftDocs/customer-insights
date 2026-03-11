@@ -90,7 +90,7 @@ The table shows the supported and unsupported Databricks features.
 
    :::image type="content" source="media/delta-edit-table.png" alt-text="Dialog box showing Required for Primary key":::
 
-1. To enable data profiling on any of the columns, select the number of **Columns** for the table. The **Manage attributes** page displays.
+1. To enable [data profiling](data-source.md#data-profiling) on any of the columns, select the number of **Columns** for the table. The **Manage attributes** page displays.
 
    :::image type="content" source="media/delta-dataprofiling-columns.png" alt-text="Dialog box to select data profiling.":::
 
