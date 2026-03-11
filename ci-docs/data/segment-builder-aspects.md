@@ -38,8 +38,8 @@ The example illustrates the segmentation capability. We've defined a segment for
 When creating a segment using the segment builder, keep in mind the following tips:
 
 - When selecting a field to filter on, the system suggests a list of valid values to choose from, based on the type of column.
-  - Dataverse Choice columns display a list of friendly names and their Dataverse values. For example, a Shipping Method might show FedEx (1) or UPS (2).
-  - String and numeric columns with < 200 distinct values display the distinct values. You can also enter a value. For performance, the system reviews the first 10,000 rows to provide distinct values so it’s possible with large data sets to not capture all distinct values.
+  - Dataverse Choice columns display a list of names and values. For example, Shipping Method might show the choices FedEx (1), UPS (2), and USPS (3).
+  - String and numeric columns with < 200 distinct values display the distinct values. For performance, the system scans the first 10,000 rows to determine the list of distinct values so it’s possible with large data sets that not all distinct values will be displayed. These fields allow you to manually enter additional values.
 - If you have multiple rules for your segment, the rule you're editing has a vertical blue line next to it.
 - You can move rules and conditions to other places in the segment definition. Select the vertical ellipsis (&vellip;) next to a rule or condition and choose how and where to move it.
 - The **Undo** and **Redo** controls in the command bar let you roll back changes.
