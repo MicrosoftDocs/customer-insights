@@ -28,7 +28,6 @@ Follow these steps to set up consent preferences, configure your preference cent
 | Design a double opt-in confirmation email and landing page | Learn more: [Create an increase content confirmation request message](double-opt-in.md#create-an-increase-consent-confirmation-request-message), [Create a thank you page for each type of confirmation](double-opt-in.md#create-a-thank-you-page-for-each-type-of-confirmation). |
 | Configure double opt-in settings | Learn more: [Set up global double opt-in for new subscriptions and consent changes](double-opt-in.md). |
 | Prepare data migration of existing contacts | From Mailchimp, for example. Learn more: [Import and email all contacts from a spreadsheet](email-excel.md). |
-| Embed forms into CMS (if Power Apps portals are not used) | Learn more: [Embed forms on external websites](embed-forms.md). |
 | Design a customer journey for email campaigns | Create a journey to send emails to your target audience. Learn more: [Create a simple customer journey with email messaging](create-simple-customer-journey.md). |
 | Test and go live with marketing mailings | Learn more: [Check for errors, go live, and deliver the messages](email-check-golive.md). |
 

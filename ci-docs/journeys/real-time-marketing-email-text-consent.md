@@ -93,73 +93,7 @@ For example, in the *nonrestrictive enforcement model*, a customer who hasn't se
 In the *disabled enforcement model*, *all customers* are *sent* messages from all communication channels in a journey and are *tracked*.
 
 > [!NOTE]
-> All channels include email, text, and custom channels.
-
-> [!IMPORTANT]
-> If your environment has real-time journeys and outbound marketing installed, the app can check the **Allow email** and **Allow bulk email** fields in contact records to see if email can be sent to a contact's email address. Both fields must be set to **Allow** for a commercial email to be sent. Only the **Allow email** field must be set to allow transactional emails. These checks are in addition to the Customer Insights - Journeys contact-point consent opt-in or opt-out checks for emails sent by journeys. This additional check is managed by the [Check contact consent for real-time journeys](#disable-contact-level-consent-checks) feature switch. These checks aren't done for other entity types, like leads or Customer Insights - Data profiles.
-
-## Disable contact-level consent checks
-
-Starting February 2024, a new feature switch lets you set the system to consider or bypass contact-level consent checks. You can separate consent by contact point for emails, so each entity has consent captured and enforced by contact point, and the system ignores consent on the contact record for journeys that target contacts.
-
-Disable contact-level consent checks when outbound journeys aren't in use. To disable contact-level consent checks:
-
-1. Go to **Settings** > **Other settings** > **Feature switches**.
-1. Set the **Check contact consent for real-time journeys** toggle to **Off**.
-1. Select **Save** in the upper-right corner.
-
-The system enforces consent only based on contact point consent records.
-
-## How is consent populated on different unsubscribe experiences
-
-Customer Insights - Journeys offers [different options for providing an unsubscribe experience to your customers](real-time-marketing-compliance-settings.md#compliance-profiles). The system computes the exact consent status for different scenarios and always shows the user visiting the unsubscribe experience an accurate view of consent.
-
-The consent status shown on an unsubscribe experience depends on several factors:
-
-1. Whether the [check contact consent for real-time journeys feature switch](real-time-marketing-email-text-consent.md#disable-contact-level-consent-checks) is on or off.
-1. The enforcement model of the purpose.
-1. The channel for which consent is shown.
-1. The contact point's consent status.
-
-Review these important definitions before you start.
-
-#### Will send, will not send
-
-- **Will send** means the contact point consent record and its purpose enforcement model let the app send an email for that purpose to that address. For example, if the purpose is nonrestrictive and no contact point consent record exists, the app evaluates that as **Will send**.
-- **Will not send** means the app evaluates that email address’s contact point consent record and purpose and decides not to send an email.  
-
-#### Will track, will not track  
-
-- Similarly, **Will track** means the tracking contact point consent record and its purpose enforcement model let the app include tracking links in messages sent to that address. For example, if the purpose is nonrestrictive and no contact point consent record exists, the app evaluates that as **Will track**.
-- **Will not track** means the app evaluates that email address’s contact point consent record and purpose and decides not to track links in the email.
-
-### Preference centers in real-time journeys
-
-Preference centers allow customers to manage their consent preferences for the types of communications they receive. The **DoNotBulkEmail**, **DoNotEmail**, and **DoNotTrack** fields on a preference center prefill for the contact based on contact data and contact point consent records for all the contact's email addresses.
-
-1. **DoNotBulkEmail** prefills to block sending if the attribute is currently set to block or if any commercial purpose on the compliance profile from any email address on the contact evaluates to **will not send**.
-1. **DoNotEmail** prefills to block sending if the attribute is currently set to block or if any transactional purpose on the compliance profile from any email address on the contact evaluates to **will not send**.
-1. **DoNotTrack** prefills to block tracking if the attribute is currently set to block or if the tracking purpose on the compliance profile from any email address on the contact evaluates to **will not track**.
-
-When a user submits changes through a preference center, the states of **DoNotBulkEmail**, **DoNotEmail**, and **DoNotTrack** update the contact and the contact point consent records for all the contact's email addresses, as set in the [audience configuration](real-time-marketing-audience-data.md#select-the-audience-source-for-journeys).
-
-1. If both **DoNotBulkEmail** and **DoNotEmail** are set to allow emails, all commercial purposes on the compliance profile for every email address on the contact record have an opted-in contact point consent record. If either is set to don't allow, all contact point consent records update to opted-out.
-1. The **DoNotEmail** state is written to all transactional purposes on the compliance profile for every email address on the contact record.
-1. The **DoNotTrack** state is written to the tracking purpose on the compliance profile for every email address on the contact record.
-
-Learn more about preference centers: [Preference center management](real-time-marketing-compliance-settings.md#preference-center-management)
-
-### Preference page and preference center  
-
-For journeys **targeting contacts**, each email address consent prefills if it's contactable (**will send**) or traceable (**will track**) based on the specific purpose's enforcement model and its contact point consent record, combined with the contact-level consent fields (only if the [check contact consent](real-time-marketing-email-text-consent.md#disable-contact-level-consent-checks) for real-time journeys feature switch is on).
-
-1. **Commercial purposes/topics** prefill to opt in only if the contact point consent record evaluates to **will send** and both **DoNotBulkEmail** and **DoNotEmail** are set to allow emails.
-1. **Transactional purposes/topics** prefill to opt in only if the contact point consent record evaluates to **will send** and **DoNotEmail** is set to allow emails.
-1. **Tracking purpose** prefill to opt in only if the contact point consent record evaluates to **will send** and the contact's **DoNotTrack** is set to allow tracking.
-
-For journeys **targeting leads or Customer Insights - Data profiles**, each email address consent prefills if it's contactable (**will send**) or traceable (**will track**) based on the specific purpose's enforcement model and its contact point consent record. The preference page and preference center experiences prefill email address consent to opt in if the contact point consent record for the email evaluates to **will send**.
-
-When a user submits consent changes through a preference page or preference center, the system updates only the relevant contact point consent records. The system doesn't modify any contact-level consent attribute in these cases.  
+> All channels include email, text, voice, and custom channels.
 
 ## View and manage consent records
 
@@ -175,7 +109,17 @@ The **Communication** tab lets you:
 
 You see the consent records for each purpose and topic (if present) of the selected compliance profile here, and you can update them directly. You can also choose a different contact point from the drop-down and select the compliance profile you want to manage consent records for.
 
-When you change a consent record, the contactability column and the communication and tracking status cards update immediately. However, sometimes updates to a consent record don't affect its contactability. For example, if you update the consent status for a topic record to opt in while the parent purpose stays opted out, the contactability of the topic record doesn't change.  
+When you change a consent record, the contactability column and the communication and tracking status cards update immediately. However, sometimes updates to a consent record don't affect its contactability. For example, if you update the consent status for a topic record to opt in while the parent purpose stays opted out, the contactability of the topic record doesn't change.
+
+### Will send, will not send
+
+- **Will send** means the contact point consent record and its purpose enforcement model let the app send an email for that purpose to that address. For example, if the purpose is nonrestrictive and no contact point consent record exists, the app evaluates that as **Will send**.
+- **Will not send** means the app evaluates that email address’s contact point consent record and purpose and decides not to send an email.  
+
+#### Will track, will not track  
+
+- Similarly, **Will track** means the tracking contact point consent record and its purpose enforcement model let the app include tracking links in messages sent to that address. For example, if the purpose is nonrestrictive and no contact point consent record exists, the app evaluates that as **Will track**.
+- **Will not track** means the app evaluates that email address’s contact point consent record and purpose and decides not to track links in the email.
 
 ## Audit consent records
 
