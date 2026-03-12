@@ -3495,6 +3495,36 @@
       "source_path": "ci-docs/journeys/go-live.md",
       "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/customize-marketing-calendars.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "ci-docs/journeys/customize-template-labels.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/create-templates.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/developer/create-custom-channel-activity-interaction.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/developer/customer-journey-workflow-definition.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/developer/segment-query-definition.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
     }
   ]
 }
