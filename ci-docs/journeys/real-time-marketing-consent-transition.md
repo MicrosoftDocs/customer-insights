@@ -21,7 +21,7 @@ More functionality and features are added Dynamics 365 Customer Insights - Journ
 
 This is an introductory article to explain how consent works in real-time journeys and the differences from outbound marketing. For a more detailed discussion, see [Understanding consent management in Dynamics 365 Customer Insights - Journeys - Dynamics FastTrack Blogs](https://community.dynamics.com/blogs/post/?postid=8b2a4ee8-1069-ee11-a81c-000d3a7a1a66)
 
-When it comes to consent management and related topics, the two Customer Insights - Journeys engines have their own concepts:
+For consent management and related topics, the two Customer Insights - Journeys engines have their own concepts:
 
 > [!div class="mx-imgBorder"]
 > ![Comparison of outbound and Customer Insights - Journeys consent.](media/real-time-marketing-consent-transition-1.png)
@@ -51,7 +51,7 @@ As of today, the outbound and real-time modules both respect the settings on the
 In certain geographies, to be able to execute marketing campaigns and target customers, it's required that those customers agree (opt-in) to that communication.
 According to [the general data protection regulation (GDPR)](https://gdpr-info.eu/), only a single opt-in is required to comply with the regulation. However, this is probably not the only legislation that needs to be considered. Companies also have to comply with more local regulations or internal policies that can be stricter than the GDPR and require double opt-in (see, for example, [Is double opt-in required for email marketing in Germany? | Demodia](https://www.demodia.com/articles/data-processes/is-double-opt-in-really-required-for-email-marketing-in-germany)).
 
-Customers provide their consent typically through a form and a checkbox, which explicitly needs to be checked by the customer to submit the form (single opt-in). In situations where double opt-in is required, the submission of the form alone doesn't satisfy the privacy requirements. Companies are required to send a confirmation email that their customers must open and select on a confirmation link to verify that it was indeed their idea to opt in.
+Customers provide their consent typically through a form and a checkbox, which explicitly needs to be checked by the customer to submit the form (single opt-in). In situations where double opt-in is required, the submission of the form alone doesn't satisfy the privacy requirements. Companies are required to send a confirmation email that their customers must open and select a confirmation link to verify that it was indeed their idea to opt in.
 
 > [!div class="mx-imgBorder"]
 > ![Double opt-in process chart.](media/real-time-marketing-consent-transition-3.png)
@@ -63,10 +63,10 @@ This process applies too on the update of marketing preferences (opt-in or opt-o
 The double opt-in in real-time journeys can be triggered for each form submission or it can be triggered only for the new customers.
 
 - **Double opt-in for each form submission** -
-The DOI flow is triggered with every form submission if the form is associated with the DOI enabled compliance profile.
+The double opt-in flow is triggered with every form submission if the form is associated with the double opt-in enabled compliance profile.
 
 - **Double opt-in only for new customers** -
-"New customer" means that there's no contact point consent for this customer's email address associated with the compliance profile. If there is no contact point consent for customer's email address, this customer is considered as new and the DOI flow is triggered. If there is an existing contact point consent for customer's email address, the DOI isn't triggered.
+"New customer" means that there's no contact point consent for this customer's email address associated with the compliance profile. If there's no contact point consent for customer's email address, this customer is considered as new and the double opt-in flow is triggered. If there's an existing contact point consent for customer's email address, the double opt-in isn't triggered.
 
 To enable double-opt-in, see [Double opt-in in real-time journeys](real-time-marketing-double-opt-in.md).
 
@@ -121,3 +121,5 @@ In this scenario, a customer has multiple brands, each one needing to capture co
 ### Operating in multiple countries/regions and/or requiring preference centers in multiple languages
 
 This is similar to the multiple brand scenario, but in this scenario, the company is looking to structure around the multiple geographies it operates in rather than by the brands used. This too can be addressed with multiple compliance profiles created for each country/region. Once defined, each compliance profile has its own preference center page with content written in the appropriate language and referencing the appropriate supporting material.
+
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

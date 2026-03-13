@@ -1,7 +1,7 @@
 ---
 title: Set the default configuration for forms
 description: Default form configuration in Customer Insights - Journeys helps you create forms faster. Discover how to set up and manage defaults for marketing and event forms.
-ms.date: 02/05/2026
+ms.date: 03/12/2026
 ms.topic: how-to
 author: petrjantac
 ms.author: colinbirkett
@@ -120,5 +120,8 @@ Protect your forms against bot attacks and malicious actors to keep the quality 
 In the reCAPTCHA section, enter the Site key and Secret key.
 
 :::image type="content" source="media/real-time-marketing-configure-form-recaptcha-new.png" alt-text="Screenshot of the reCAPTCHA configuration section where you enter the private key and activate the plugin." lightbox="media/real-time-marketing-configure-form-recaptcha-new.png":::
+
+> [!NOTE]
+> There are two default form settings: **Marketing** and **Event Registration**. If you want to use reCAPTCHA for both Marketing and Event Registration form types, configure the **site key** and **secret key** in both default settings (the Marketing Forms defaults and the Event Registration defaults). reCAPTCHA configurations defined in form settings that aren't set as **default** are ignored.
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
