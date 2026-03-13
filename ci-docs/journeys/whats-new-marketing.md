@@ -1,7 +1,7 @@
 ---
 title: New and upcoming features
 description: Discover the latest features, improvements, and bug fixes in Dynamics 365 Customer Insights - Journeys. Stay updated with our monthly release notes.
-ms.date: 03/13/2026
+ms.date: 03/12/2026
 ms.update-cycle: 180-days
 ms.topic: whats-new
 author: alfergus
@@ -40,7 +40,7 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
     - [Release plan](/dynamics365/release-plan/2025wave2/customer-insights/dynamics365-customer-insights-journeys/create-static-segments-up-200000-members)
     - [Docs](real-time-marketing-build-segments.md#use-csv-files-to-define-static-segment-membership-lists-for-up-to-2000000-members)
 
-- **Drive confident engagement with enhanced consent‑based segmentation** 
+- **Drive confident engagement with enhanced consent‑based segmentation**
 	- As a marketer, you want to grow relationships on a foundation of trust, sending messages only to customers who expect to hear from you. Enhanced consent‑based segmentation turns your consent policies into clear, ready‑to‑use audiences. You can instantly see who qualifies for each purpose and channel, and build segments that stay aligned with your compliance profiles by design. You move faster from consent data to active audiences, so every journey is both relevant and respectful of customer choices.
 	- [Release plan](/dynamics365/release-plan/2025wave2/customer-insights/dynamics365-customer-insights-journeys/drive-confident-engagement-enhanced-consentbased-segmentation)
 	- [Docs](real-time-marketing-consent-segments.md)
