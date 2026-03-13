@@ -1,10 +1,10 @@
 ---
 title: Build segments using consent‑based criteria
 description: Learn how to build segments using consent‑based criteria in Dynamics 365 Customer Insights - Journeys.
-ms.date: 02/26/2026
+ms.date: 03/12/2026
 ms.topic: how-to
 author: petrjantac
-ms.author: cbirkett
+ms.author: alfergus
 search.audienceType: 
   - admin
   - customizer
@@ -14,9 +14,7 @@ search.audienceType:
 # Build segments using consent‑based criteria
 
 > [!IMPORTANT]
-> Existing segments continue to be evaluated using the consent rules that were in effect when they were created.  
->
-> This update applies only to new segments. No changes are made to existing segments, and their behavior remains unchanged.
+> Existing segments continue to be evaluated using the consent rules that were in effect when they were created. This update only applies to new segments. No changes have been made to existing segments and their behavior remains unchanged.
 
 This article explains how to create segments using consent‑based criteria and how consent is evaluated when segment membership is calculated. Consent‑based segments help you target the right audience while respecting customer consent, purposes, topics, and enforcement models.
 
@@ -34,30 +32,27 @@ Before you build a consent‑based segment, make sure that [consent](real-time-m
 A consent‑based segment is a segment that includes or excludes contacts, leads, or profiles based on their consent preferences. Consent is evaluated using:
 
 - **[Compliance profile](real-time-marketing-compliance-settings.md#compliance-profiles)**
-- **[Purpose](real-time-marketing-compliance-settings.md#purposes)** (for example, Commercial)
-- **[Topic](real-time-marketing-compliance-settings.md#topics)** (for example, Newsletter)
-- **Channel** (for example, Email)
+- **[Purpose](real-time-marketing-compliance-settings.md#purposes)** (for example, commercial)
+- **[Topic](real-time-marketing-compliance-settings.md#topics)** (for example, newsletter)
+- **Channel** (for example, email)
 - **[Enforcement model](real-time-marketing-compliance-settings.md#consent-enforcement-models)** configured for the selected purpose and channel
 
 > [!IMPORTANT]
-> Consent‑based segments membership is evaluated based on the contact point consent. The `DoNotBulkEmail` contact attribute is NOT considered.
->
-> Consent‑based segments respect the hierarchy between purposes and topics. If a contact doesn’t have consent for the parent purpose of a selected topic, the contact is excluded from the segment.
+> Consent‑based segment membership is evaluated based on the contact point consent. The `DoNotBulkEmail` contact attribute is *not* considered. Consent‑based segments respect the hierarchy between purposes and topics. If a contact doesn’t have consent for the parent purpose of a selected topic, the contact is excluded from the segment.
 
 ## Create a consent‑based segment
 
-When you add a consent group to a segment, you define how consent should be evaluated for segment membership.
+When you add a consent group to a segment, you define how consent is evaluated for segment membership.
 
-### Step 1: Add Compliance Profile to create a new segment group
+### Step 1: Add a Compliance Profile to create a new segment group
 
-1. Select the **Compliance profile** in the right-hand menu to create a new segment group.
+1. Select the **Compliance profile** in the right-side menu to create a new segment group.
 1. Select **Compliance profile** in the newly created group.
-  
-      - If only the **default compliance profile** exists, it’s preselected.
-      - If exactly one **custom compliance profile** exists in addition to the default, the custom profile is preselected.
-      - If multiple compliance profiles exist, no profile is preselected and you must choose one.
+    - If only the **default compliance profile** exists, it’s preselected.
+    - If exactly one **custom compliance profile** exists in addition to the default, the custom profile is preselected.
+    - If multiple compliance profiles exist, no profile is preselected and you must choose one.
 
-:::image type="content" source="media/real-time-marketing-conset-segments-add-complianceprofile.png" alt-text="Add compliance profile to create a new segment group." lightbox="media/real-time-marketing-conset-segments-add-complianceprofile.png":::
+:::image type="content" source="media/real-time-marketing-consent-segments-add-compliance-profile.png" alt-text="Add compliance profile to create a new segment group." lightbox="media/real-time-marketing-consent-segments-add-compliance-profile.png":::
 
 ### Step 2: Select a purpose and optionally a topic
 
@@ -88,11 +83,10 @@ The selected channel, together with the purpose, determines the enforcement mode
 #### Restrictive enforcement model
 
 - **Will send (those who opted in)**  
-  The segment includes **only** contacts who have explicitly opted in for the selected purpose, topic, channel, and recipient.  
-  Contacts who opted out or never provided consent are excluded.
+  The segment includes **only** contacts who have explicitly opted in for the selected purpose, topic, channel, and recipient. Contacts who opted out or never provided consent are excluded.
 
 - **Will not send (those who opted out or have not set)**  
-  The segment includes contacts who explicitly opted out **and** contacts who have no consent record (consent not set).
+  The segment includes contacts who explicitly opted out *and* contacts who have no consent record (consent not set).
 
 - **Those who have opted out**  
   The segment includes only contacts who explicitly opted out. Contacts with no consent record are excluded.
@@ -100,8 +94,7 @@ The selected channel, together with the purpose, determines the enforcement mode
 #### Non‑restrictive enforcement model
 
 - **Will send (those who opted in or have not set)**  
-  The segment includes contacts who explicitly opted in **and** contacts who have no consent record.  
-  Contacts who explicitly opted out are excluded.
+  The segment includes contacts who explicitly opted in **and** contacts who have no consent record. Contacts who explicitly opted out are excluded.
 
 - **Will not send (those who opted out)**  
   The segment includes only contacts who explicitly opted out.
@@ -127,11 +120,12 @@ Use this dropdown to select which attribute should be evaluated for consent.
 
 Segment membership is calculated using the same consent evaluation logic as journey execution. Evaluation follows these principles:
 
-- Consent is evaluated for the selected **purpose, topic, channel, and recipient**.
-- Inactive consent records are included in evaluation.
+- Consent is evaluated for the selected **purpose**, **topic**, **channel**, and **recipient**.
+- Inactive consent records are included in the evaluation.
 - Purpose and topic hierarchy is enforced.
 - The enforcement model determines how opted‑in, opted‑out, and unset consent states are treated.
-- [More details](real-time-marketing-email-text-consent.md#how-consent-is-respected-for-emails) about consent evaluation.
+
+Learn more about consent evaluation: [How consent is respected for emails](real-time-marketing-email-text-consent.md#how-consent-is-respected-for-emails).
 
 > [!NOTE]
 > If the enforcement model of a purpose changes after a segment is created, the segment might display a nonexisting option in the **Will send** dropdown. In this case, the option is automatically mapped to a valid value.
@@ -145,19 +139,19 @@ Segment membership is calculated using the same consent evaluation logic as jour
 **Approach**:
 
 - Select the appropriate compliance profile.
-- Select the Commercial purpose.
-- Select Email as the channel.
+- Select the commercial purpose.
+- Select **Email** as the channel.
 - Choose **Will send** based on your enforcement model.
-- Select Topic A.
+- Select **Topic A**.
 
 ### Target contacts who opted out of a topic
 
-**Scenario**: You want to send an email to contacts who opted out of **Topic A** but are still opted in to the Commercial purpose.
+**Scenario**: You want to send an email to contacts who opted out of **Topic A** but are still opted in to the commercial purpose.
 
 **Approach**:
 
 - Create two consent groups.
-- In the first group, target contacts opted in to the Commercial purpose.
+- In the first group, target contacts opted in to the commercial purpose.
 - In the second group, target contacts opted out of Topic A.
 - Combine the groups using **AND** logic.
 
@@ -165,13 +159,13 @@ This allows you to explicitly include contacts who opted out of a specific topic
 
 ## Editing existing consent‑based segments
 
-- Existing consent segments created with the previous consent logic (V1) continue to use the old UI and evaluation logic.
-- New consent segments (V2) use the new consent UI and evaluation logic automatically.
+- Existing consent segments created with the previous consent logic (V1) continue to use the old user interface and evaluation logic.
+- New consent segments (V2) use the new consent user interface and evaluation logic automatically.
 - If you edit a segment created with the previous consent rules, a warning message is shown.
 
 ## Important considerations
 
-- Only **active compliance profiles, purposes, and topics** are shown.
+- Only active **compliance profiles**, **purposes**, and **topics** are shown.
 - Inactive items aren’t available for selection.
 - Segment counts reflect consent evaluation rules, which might differ from simple attribute‑based filters.
 
@@ -180,3 +174,5 @@ This allows you to explicitly include contacts who opted out of a specific topic
 - Review your compliance profiles and enforcement models.
 - Validate segment membership by comparing segment counts with expected consent behavior.
 - Use consent‑based segments in journeys to ensure consistent evaluation at send time.
+
+[!INCLUDE [footer-include](./includes/footer-banner.md)]
