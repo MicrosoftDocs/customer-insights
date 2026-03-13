@@ -255,9 +255,6 @@ For each dependent component listed:
 | **Business rule** | Edit the business rule and remove conditions or actions that reference the column. |
 | **Business process flow** | Edit the business process flow and remove any stage fields that reference the column. |
 
-> [!TIP]
-> If the component belongs to a managed solution you don't own, follow the [managed dependency removal steps](#actions-to-remove-a-managed-dependency) described earlier in this article.
-
 ### Retry the unification
 
 After you remove all listed dependencies, return to **Customer Insights - Data** > **Unify** > **Merge** and run the merge again.
