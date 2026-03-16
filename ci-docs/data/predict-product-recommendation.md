@@ -34,6 +34,10 @@ For example, Contoso wants to increase their revenue by customizing webpages to 
 
 [!INCLUDE [public-preview-note](includes/public-preview-note.md)]
 
+## Data prerequisites summary
+
+For common data requirements across all prediction models, see [Data prerequisites for prediction models](predictions.md#data-prerequisites-for-prediction-models).
+
 ## Prerequisites
 
 - At least [Contributor permissions](user-roles.md)

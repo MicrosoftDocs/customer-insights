@@ -1,8 +1,8 @@
 ---
-title: Set up payment gateway integration (preview)
+title: Set up payment gateway integration
 ms.reviewer: alfergus
 description: Set up payment gateway integration for your events. Discover how to configure payment providers and streamline attendee payments on your event website.
-ms.date: 10/15/2025
+ms.date: 01/26/2026
 ms.topic: how-to
 author: pawelkruk
 ms.author: alfergus
@@ -10,9 +10,7 @@ search.audienceType:
   - developer
 ---
 
-# Payment integration for events in real-time journeys (preview)
-
-[!INCLUDE [Preview banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+# Payment integration for events in real-time journeys
 
 If you have one or more events where contacts must purchase a pass, then you can enable attendees to pay for their passes online while they're registering for the event on your event website.
 
@@ -21,8 +19,6 @@ To enable online payment, you must make an agreement with a third-party payment 
 Once your new payment gateway is in place on your event website, you can configure events to use it, or assign it as the default for all new events. To learn more about setting up event passes, see [Set up event passes](../real-time-journeys-event-passes.md).
 
 To turn on payment integration, go to **Settings** > **Feature switches**, and under **Event management**, turn on the **Enable payments in real-time journeys** toggle.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note.md)]
 
 ## Overview of payment integration components
 

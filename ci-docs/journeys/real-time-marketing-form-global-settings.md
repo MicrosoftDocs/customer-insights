@@ -1,7 +1,7 @@
 ---
 title: Set the default configuration for forms
 description: Default form configuration in Customer Insights - Journeys helps you create forms faster. Discover how to set up and manage defaults for marketing and event forms.
-ms.date: 07/25/2025
+ms.date: 02/05/2026
 ms.topic: how-to
 author: petrjantac
 ms.author: colinbirkett
@@ -38,7 +38,7 @@ The form configuration has four tabs:
 1. **[General](real-time-marketing-form-global-settings.md#general)**: Set configuration details and common form settings.
 1. **[Audience](real-time-marketing-form-global-settings.md#audience)**: Select the target audience (entity record) created or updated by the form submission.
 1. **[Lead-Contact Mapping](real-time-marketing-form-global-settings.md#lead-contact-mapping)**: Only for the marketing form type. Review how lead and contact attributes map.
-1. **[reCAPTCHA](real-time-marketing-form-global-settings.md#recaptcha)**: Set up a third-party form captcha.
+1. **[reCAPTCHA](real-time-marketing-form-global-settings.md#recaptcha)**: Set up form captcha.
 
 :::image type="content" source="media/real-time-marketing-form-global-settings-general.png" alt-text="Screenshot of the General section in the global form settings page." lightbox="media/real-time-marketing-form-global-settings-general.png":::
 
@@ -112,10 +112,13 @@ If you don't use solutions as the mechanism for implementing application lifecyc
 
 ## reCAPTCHA
 
-Protect your forms against bot attacks and malicious actors to keep the quality of captured data high. Marketing and event registration forms have standard captcha capabilities, but you can also [implement a custom captcha](real-time-marketing-form-custom-captcha.md) to improve the user experience.
+Protect your forms against bot attacks and malicious actors to keep the quality of captured data high. Customer Insights - Journeys forms can integrate with [Google reCAPTCHA v2](https://www.google.com/recaptcha/about/).
 
-In the reCAPTCHA section, enter the private key and activate the reCAPTCHA plugin.
+> [!IMPORTANT]
+> The default configuration supports reCAPTCHA v2 only. To implement reCAPTCHA v3, refer to the guide on [custom back-end validation](real-time-marketing-form-customize-submission-validation.md).
 
-:::image type="content" source="media/real-time-marketing-configure-form-recaptcha.png" alt-text="Screenshot of the reCAPTCHA configuration section where you enter the private key and activate the plugin." lightbox="media/real-time-marketing-configure-form-recaptcha.png":::
+In the reCAPTCHA section, enter the Site key and Secret key.
+
+:::image type="content" source="media/real-time-marketing-configure-form-recaptcha-new.png" alt-text="Screenshot of the reCAPTCHA configuration section where you enter the private key and activate the plugin." lightbox="media/real-time-marketing-configure-form-recaptcha-new.png":::
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]

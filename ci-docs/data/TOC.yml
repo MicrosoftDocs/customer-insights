@@ -393,6 +393,9 @@
 - name: DSR rights and requests
   href: dsr-rights-requests.md
 
+- name: Uninstall or remove Customer Insights - Data
+  href: uninstall.md
+  
 - name: Responsible AI
   items:
     - name: Overview

@@ -1,7 +1,7 @@
 ---
 title: "Troubleshooting: Segments show incorrect member count"
 description: Troubleshoot issues related to segments showing an incorrect member count in Dynamics 365 Customer Insights - Journeys.
-ms.date: 06/26/2024
+ms.date: 02/23/2026
 ms.topic: troubleshooting-general
 author: alfergus
 ms.author: alfergus
@@ -38,7 +38,7 @@ The set operations (union, intersect, and except are used to combine two rules) 
 When working with complex segments with multiple conditions or rules, reduce complexity and isolate the condition or rule responsible for the issue. This helps identify the exact case or condition where the issue occurs.
 
 - Start from the complete segment and remove conditions and rules one by one. Run the segment after each change until it returns members.
-- Build a new segment from scratch and add conditions and rules one by one from the segment that is yielding no members. Run the segment after each step of adding conditions or rules until no members are returned.
+- Build a new segment from scratch and add conditions and rules one by one from the segment that's yielding no members. Run the segment after each step of adding conditions or rules until no members are returned.
 - Once the rule that filters out the members is identified, take a sample expected contact and verify if it matches all conditions added to the segment.
 - Remove exclusion segments to verify if the contact shows up before adding them and check if the exclusion segment has the ContactId that might be removing it from the primary segment.
 
@@ -56,6 +56,20 @@ Validate that the tables used in the segment aren't empty. All entities used in 
 #### Step 5: Validate consent
 
 Validate if consent is enabled. Consent filters segments shown based on the chosen purpose and topic. Learn more: [Migrate consent from outbound marketing](real-time-marketing-consent-transition.md#migrate-consent-from-outbound-marketing)
+
+#### Step 6: Allow time for data synchronization
+
+Publishing or refreshing a segment may be delayed if the underlying data has not fully synchronized. To avoid any issues:
+
+- Wait a short period after publishing or refreshing a segment.
+- If members aren’t added immediately, allow the next scheduled refresh to run so the data can finish synchronizing.
+
+This is especially important in certain scenarios, such as:
+
+- Tables that are being updated via data import (for example, contacts or leads tables).
+- Newly updated consent records.
+- Tables that were recently enabled for Segmentation or change tracking.
+- Recent uploads of static segment CSV files.
 
 ### Segments show more members than expected
 
