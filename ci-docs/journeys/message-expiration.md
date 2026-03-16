@@ -70,11 +70,11 @@ This option is useful for scenarios such as reminders before an event, messages 
 
 1. Open your real-time journey.
 1. Select a message tile (email, SMS, push, or custom).
-1. In the message properties pane, go to the **Message expiry** section and choose how the expiration time is defined:
+1. In the message properties pane, go to the **Message expiry** section and choose how the expiration time is defined:<br>
 :::image type="content" source="media/message-expiration-section.png" alt-text="Screenshot of the email message properties pane showing the Message expiry section with options for expiration settings." lightbox="media/message-expiration-section.png":::
-    1. **Expire on a specific data and time**.
+    1. **Expire on a specific data and time**.<br>
     :::image type="content" source="media/message-expiration-date.png" alt-text="Screenshot of message expiry settings with a calendar and time picker open to select an expiration date and time." lightbox="media/message-expiration-date.png":::
-    1. **Expire at a time specified by a trigger**, with the desired timing option (before, at, or after).
+    1. **Expire at a time specified by a trigger**, with the desired timing option (before, at, or after).<br>
     :::image type="content" source="media/message-expiration-trigger.png" alt-text="Screenshot of message expiry settings with 'Expire at a time specified by a trigger' selected and birthday attributes searched." lightbox="media/message-expiration-trigger.png":::
 
 > [!IMPORTANT]
