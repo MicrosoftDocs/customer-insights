@@ -1,7 +1,7 @@
 ---
-title: "Create and manage segments"
-description: "How to create and manage a group of customers called segments."
-author: JimsonChalissery
+title: Manage segments
+description: How to manage a group of customers called segments.
+author: Scott-Stabbert
 ms.author: sstabbert
 ms.reviewer: v-wendysmith
 ms.topic: how-to
@@ -9,23 +9,7 @@ ms.date: 02/17/2026
 ms.custom: bap-template
 ---
 
-# Create and manage segments
-
-Segments let you group your customers based on demographic, transactional, or behavioral attributes. Use segments to target promotional campaigns, sales activities, and customer support actions to achieve your business goals.
-
-Customer or contact profiles that match the filters of a segment definition are referred to as *members* of a segment. Some [service limits](/dynamics365/customer-insights/service-limits) apply.
-
-## Create segments
-
-Choose how to create a segment based on your target audience.
-
-- Complex segments with segment builder: [Build your own](segment-builder.md)
-- Simple segments with one operator: [Quick segment](segment-quick.md)
-- AI-powered way to find similar customers: [Similar customers](find-similar-customer-segments.md)
-- AI-powered suggestions based on measures or attributes: [Suggested segments based on measures](suggested-segments.md#suggested-segments-based-on-measures-preview)
-- Suggestions based on activities: [Suggested segments based on customer activity](suggested-segments.md#suggested-segments-based-on-activity-preview)
-
-## Manage existing segments
+# Manage segments
 
 Go to the **Insights** > **Segments** page to view the segments you created, their status and state, the last time the data was refreshed, and their refresh schedule. You can sort the list of segments by any column or use the search box to find the segment you want to manage.
 
@@ -54,7 +38,7 @@ Select next to a segment to view available actions.
 - **Filter** to [filter on tags](work-with-tags-columns.md#filter-on-tags).
 - **Search name** to search by segment name.
 
-### Segment management tips
+## Segment management tips
 
 The smaller the number of segments and measures that need to be refreshed daily, the quicker the overall system refresh takes. To lower the number of segments refreshed daily, consider the following tips:
 
@@ -173,10 +157,6 @@ The following table lists common issues using segments in Customer Insights - Jo
 | Segment not visible in Journeys | Dataverse sync not enabled | Enable in **Settings** > **Data sharing** |
 | Segment shows 0 members in Journeys | Segment hasn't synced to Dataverse yet | Wait for the next scheduled refresh |
 | "Individual segment evaluation failed" | Segment query references unavailable data | Edit segment, verify all referenced tables exist and have data |
-
-## Known limitations
-
-- Filter value dropdowns in the segment builder do not currently support sorting. Use the search box within the dropdown to find specific values.
 
 ## See also
 
