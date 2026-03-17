@@ -328,6 +328,8 @@
           href: journey-quiet-times.md
         - name: Limit messages sent with frequency capping
           href: journey-frequency-cap.md
+        - name: Set message expiration
+          href: message-expiration.md
       - name: Create approval workflows and customize the journey designer
         items:
         - name: 'Tutorial: Implement approval workflows in real-time journeys'
@@ -742,7 +744,7 @@
     href: copilot-overview.md
   - name: Give consent to use Copilot in Customer Insights - Journeys
     href: copilot-consent-journeys.md  
-  - name: Use Microsoft 365 Copilot chat in model-driven apps (preview)
+  - name: Use Microsoft 365 Copilot in model-driven apps (preview)
     href: use-microsoft-365-copilot-model-driven-apps.md
   - name: Supervise agents in model-driven apps with agent feed
     href: supervise-agents-with-agent-feed.md

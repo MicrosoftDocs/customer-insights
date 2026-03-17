@@ -50,6 +50,7 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 - **Set message expirations to keep communication relevant**
 	- Customers may experience frustration when they receive outdated communications, such as expired coupons and irrelevant reminders. This creates confusion and diminishes their trust in your brand. You can now set expiration dates on your messages, ensuring that only current and relevant information reaches your audience. This keeps your customers engaged and satisfied with relevant communications in moments that matter.
 	- [Release plan](/dynamics365/release-plan/2025wave2/customer-insights/dynamics365-customer-insights-journeys/set-message-expirations-keep-communication-relevant)
+	- [Docs](message-expiration.md)
 
 #### New blogs and scenario docs
 
