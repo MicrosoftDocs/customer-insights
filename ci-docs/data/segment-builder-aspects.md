@@ -1,6 +1,6 @@
 ---
 title: Segments overview
-description: An example of the various aspects of segment builder in Dynamics 365 Customer Insights - Data.
+description: An overview of segments and segment builder including an example of the various segment builder parts in Dynamics 365 Customer Insights - Data.
 author: Scott-Stabbert
 ms.author: sstabbert
 ms.reviewer: v-wendysmith
@@ -47,9 +47,9 @@ The following image illustrates the various parts of the segment builder. It sho
 
 1. Choose the [relationship path](relationships.md) to identify the tables that contain the attributes you need to define your rules. For example, to identify customers who purchased coffee beans or tea bags, you need the purchases and customer tables.
 
-1. Manage rules and subrules. Change the position of a rule or delete it. 
+1. Manage rules and subrules. Change the position of a rule or delete it. The position of a rule defines a logical grouping and controls how AND/OR logic is applied. Conditions inside the same rule are evaluated together. Nesting a rule changes which conditions are evaluated together first. The position of a rule—including its order and its place in the rule hierarchy—directly affects how the logic is evaluated and therefore who ends up in the segment.
 
-1. Add conditions and build the right level of nesting using subrules.
+1. Add conditions and build subrules.
 
 1. Apply set operations to connected rules.
 
