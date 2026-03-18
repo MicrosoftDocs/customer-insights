@@ -23,13 +23,16 @@ You might want to pause a journey when:
 - A call center or website goes offline.
 - A product goes out of stock.
 - A natural disaster or national emergency occurs.
-- You want to temporarily suspend outreach to avoid appearing insensitive.
 
 ## What happens when you pause a journey?
 
-Pausing a journey prevents new entries and stops customers who have already entered the journey at their present step.
+Pausing a journey prevents new entries and stops customers who have already entered the journey.
 
-- Customers in a "wait for time" step move forward one step and then pause.
+- Pause is fully supported at entry and message tiles.
+- Wait for trigger and segment membership support pause within their configured time limit.
+  - If a user meets the condition within the time limit, and the journey is resumed before the time limit expires, the contact moves to the branch where condition is met.
+  - If the time limit expires before the journey is resumed, the user automatically moves to the branch where condition is not met.
+- Users in any other tile will move to the first tile where pause is supported and paused there until the journey is resumed. 
 - For one-time, segment-based journeys, customers in the original segment can't re-enter the journey after it resumes. Only the remaining members of the segment proceed.
 - For repeating, segment-based journeys, repeating occurrences and segment evaluations are skipped while the journey is paused. 
 
