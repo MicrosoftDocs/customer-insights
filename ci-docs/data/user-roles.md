@@ -52,8 +52,6 @@ The table provides an overview of the different roles. For  details, see each in
 | **Contributor** | - Customizer<br>- Environment Maker<br>- Basic User<br>- Data Read Access<br>- Configuration Viewer |
 | **Marketing Contributor** | - Basic User<br>- Data Read Access<br>- Configuration Viewer |
 | **Viewer** | - Basic User<br>- Data Read Access<br>- Configuration Viewer |
-| **Limited Contributor** | - Basic User<br>- Data Read Access<br>- Configuration Viewer |
-| **CI User** | - Data Read Access<br>- Configuration Viewer |
 
 ## Viewer
 
