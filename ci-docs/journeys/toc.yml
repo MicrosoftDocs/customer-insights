@@ -328,7 +328,7 @@
           href: journey-quiet-times.md
         - name: Limit messages sent with frequency capping
           href: journey-frequency-cap.md
-        - name: Set message expiration
+        - name: "Set message expiration (preview)"
           href: message-expiration.md
       - name: Create approval workflows and customize the journey designer
         items:
