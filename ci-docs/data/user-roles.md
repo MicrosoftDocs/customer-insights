@@ -1,7 +1,7 @@
 ---
 title: User roles
 description: Learn about user roles and what permissions they have in Customer Insights - Data.
-ms.date: 03/19/2024
+ms.date: 03/19/2026
 ms.reviewer: mhart
 ms.topic: article
 author: jodahl
