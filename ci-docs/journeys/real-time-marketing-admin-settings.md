@@ -1,7 +1,7 @@
 ---
 title: Customer Insights - Journeys administrator settings
 description: Learn about administrator settings required for Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/05/2025
+ms.date: 03/19/2026
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -16,7 +16,7 @@ search.audienceType:
 
 This article describes administrator settings required for Customer Insights - Journeys features.
 
-## Journeys
+## Enable business data sharing
 
 Customer Insights - Journeys utilizes a Power Automate connector to publish journeys. To ensure Customer Insights - Journeys's functionality, the *shared_d365marketingforapps* connector is required to be categorized in the **Business** data group within your data policy. [Data policies](/power-platform/admin/wp-data-loss-prevention) are administrator-level features from Power Platform that prevent misuse or abuse of company data by restricting usage of Power Platform connectors or combinations of connectors.
 
