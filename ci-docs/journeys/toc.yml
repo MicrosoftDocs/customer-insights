@@ -66,6 +66,8 @@
     href: admin-users-licenses-roles.md
   - name: Permissions for out-of-the-box roles
     href: role-permissions.md
+  - name: Administrator settings
+    href: real-time-marketing-admin-settings.md
   - name: Integrate with Dynamics 365 Customer Insights - Data
     href: ci-get-started.md
   - name: Import data
@@ -614,8 +616,6 @@
       href: data-management-settings.md
     - name: Create consistent branding with brand profiles
       href: brand-profiles.md  
-    - name: Journeys administrator settings
-      href: real-time-marketing-admin-settings.md
     - name: Set up quiet times
       href: real-time-marketing-quiet-times.md
     - name: Set up frequency capping
