@@ -1,18 +1,18 @@
 ---
-title: Customer Insights - Journeys forms security & privacy
-description: Understand the security and privacy management of forms in Dynamics 365 Customer Insights - Journeys. 
-ms.date: 02/05/2026
+title: Customer Insights - Journeys forms security and privacy
+description: Understand security and privacy management for forms in Dynamics 365 Customer Insights - Journeys. 
+ms.date: 03/19/2026
 ms.update-cycle: 180-days
 ms.topic: how-to
 author: petrjantac
 ms.author: colinbirkett
 ---
 
-# Security and Privacy of Customer Insights - Journeys Forms
+# Security and privacy for Customer Insights - Journeys forms
 
-Microsoft builds its products on strong security and privacy principles. Customer data belongs to the customer, and Microsoft protects it by design and by default throughout its lifecycle. Customer Insights – Journeys forms treat security and privacy as core features. Microsoft protects all form data with encryption in transit and at rest, strong identity and access controls, and ongoing security validation. Microsoft regularly tests forms and related services through automated security checks, vulnerability scanning, and penetration testing as part of the Secure Development Lifecycle. Customer Insights – Journeys forms align with global security and privacy standards. Customers stay in control of their data, and Microsoft processes personal data only for its intended purpose in a secure and transparent way.
+Microsoft builds its products on strong security and privacy principles. Customer data belongs to the customer, and Microsoft protects it by design and by default throughout its lifecycle. Customer Insights – Journeys forms treat security and privacy as core features. Microsoft protects all form data with encryption in transit and at rest, strong identity and access controls, and ongoing security validation. Microsoft regularly tests forms and related services through automated security checks, vulnerability scanning, and penetration testing as part of the Secure Development Lifecycle (SDL). Customer Insights – Journeys forms align with global security and privacy standards. Customers stay in control of their data, and Microsoft processes personal data only for its intended purpose in a secure and transparent way.
 
-## Customer Insights - Journeys Forms Security
+## Customer Insights - Journeys forms security
 
 Security is an important aspect of marketing and event registration forms. Customer Insights - Journeys takes the following precautions to avoid any security risks:
 
@@ -22,7 +22,7 @@ Security is an important aspect of marketing and event registration forms. Custo
 - To avoid form submissions by bots, you should protect forms with a captcha. The form editor includes reCAPTCHA option, but you can use any other third-party captcha. Learn more: [Customize form submission validation](real-time-marketing-form-customize-submission-validation.md)
 - The Customer Insights - Journeys app infrastructure contains necessary precautions to minimize the consequences of a possible DDoS attack. To prevent DDoS attacks, there's a limit of 2,000 requests/minute per org. The request limit includes visits, lookups, CAPTCHA, and form submissions. The limit allows around 100 to 500 submissions/minute, depending on the form.
 
-### Protecting Forms from Bots with reCAPTCHA
+### Protect forms from bots with reCAPTCHA
 
 reCAPTCHA helps protect your forms from automated submissions and abuse by ensuring that responses come from real people, which preserves data quality and system reliability. For this reason, using reCAPTCHA on all publicly accessible forms is **strongly recommended**.
 
@@ -36,7 +36,7 @@ To add reCAPTCHA to your form, go to the Elements section in the right pane, the
 > [!IMPORTANT]
 > An administrator must enter the Site key and Secret key in the **[default form configuration](real-time-marketing-form-global-settings.md#recaptcha)** to set up reCAPTCHA.
 
-#### HIP captcha Deprecation and New reCAPTCHA Experience
+#### HIP captcha deprecation and the new reCAPTCHA experience
 
 ##### What’s changing
 
@@ -112,7 +112,7 @@ Administrators must complete a one‑time configuration by providing:
 
 - **A**: No. Starting in March 2026, HIP captcha will no longer be available in the Form Editor, and by June 30, 2026 it will be removed from all forms.
 
-## Customer Insights - Journeys Forms Privacy
+## Customer Insights - Journeys forms privacy
 
 - Marketing and event registration forms don't use any cookies by default. Form visit and form submit interactions use a [journey link tracking mechanism](real-time-marketing-link-tracking-mechanics.md) to get details about known users.
 - Cookies for tracking end users are used only when the **Web tracking** feature is turned on in Form settings. If Web tracking is disabled, no tracking cookies are set.
