@@ -22,7 +22,9 @@ Limitations include:
 - [The preview of a source table's data](tables.md#explore-a-specific-tables-data) shows the full, unfiltered data.
 - The export of a source table ingested in .csv or .parquet format contains the full, unfiltered data.
 
-## Examples of data to filter out
+## Examples of unwanted data
+
+The following examples show the types of data you want to remove.
 
 - Records that are missing key data points needed by downstream processes or your teams.
 
