@@ -746,10 +746,6 @@
     href: copilot-overview.md
   - name: Give consent to use Copilot in Customer Insights - Journeys
     href: copilot-consent-journeys.md  
-  - name: Use Microsoft 365 Copilot in Customer Insights - Journeys (preview)
-    href: use-microsoft-365-copilot-model-driven-apps.md
-  - name: Supervise agents in Customer Insights - Journeys with agent feed
-    href: supervise-agents-with-agent-feed.md
   - name: Use Copilot's form fill assistance feature in Customer Insights - Journeys
     href: form-fill-assistance.md
   - name: Find data in a view with AI (preview)
