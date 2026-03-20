@@ -14,45 +14,47 @@ Remove unwanted rows from your source data before processing in Customer Insight
 Key benefits include:
 
 - **Improved processing time**: Filtering out unnecessary data like old or obsolete rows can reduce the time required to process the data. Filtering out a significant percentage of unwanted rows can substantially improve performance.
-- **Simplified data configuration**: Removing unwanted data at the source eliminates the need to create rules in multiple locations to avoid incorporating the unwanted data. Unification, segments, measures, activities, and predictive insights will use the filtered source data.
-- **Improved data quality**: Removing old or obsolete data at the source prevents it from being accidentally included in your results, such as when a new team member creates a segment that includes obsolete data.
+- **Simplified data configuration**: Removing unwanted data at the source eliminates the need to create rules in multiple locations to avoid incorporating the unwanted data. Unification, segments, measures, activities, and predictive insights use the filtered source data.
+- **Improved data quality**: Removing old or obsolete data at the source prevents accidental inclusion in your results, such as when a new team member creates a segment that includes obsolete data.
 
 Limitations include:
 
 - [The preview of a source table's data](tables.md#explore-a-specific-tables-data) shows the full, unfiltered data.
 - The export of a source table ingested in .csv or .parquet format contains the full, unfiltered data.
 
-## Examples of unwanted data
+## Common uses cases for row filtering
 
-The following examples show the types of data you want to remove.
+Common uses case for row filtering include:
 
-- Records that are missing key data points needed by downstream processes or your teams.
+- Exclude records that are missing key data points needed by downstream processes or your teams.
 
-- Old records that are obsolete.
+- Remove records that are obsolete or no longer relevant.
 
-- Records specifically flagged as inactive or other indicators the record is obsolete. In some cases, you might want to filter records based on related data. For example, exclude customers who haven't had transactions for over 2 years. Because table row filters can't filter on related data, consider one of the following options:
+- Exclude records specifically flagged as inactive or flagged with other indicators that the record is obsolete.
+
+In some cases, you might want to exclude records based on related data. For example, exclude customers who haven't had transactions for over two years. While table row filters can't evaluate related data directly, consider one of the following options:
 
   1. If the number of customer records is small, ingest all customers and apply the related-data conditions directly in your segments and measures.
 
-  1. If the number of customer records is large, pre-process your data to include a flag or date on each customer record, such as a “last transaction date” and filter the customer input data on that value.
+  1. If the number of customer records is large, pre-process your data to include an attribute, such as a “last transaction date,” and filter the customer input data on that value.
 
 ## How conditions are evaluated
 
-When you add multiple conditions, all conditions must be true for a record to be included. This means conditions are combined using AND logic.
+When you add multiple conditions, all conditions must be true for a record to be included. This condition set uses AND logic.
 
 **Example**:
 
-- **Field A** is not null
+- **Field A** isn't null
 - **Field B** > 0
 
-Result: Only rows where **Field A is not null AND Field B > 0** are processed.
+Result: Only rows where **Field A isn't null AND Field B > 0** are processed.
 
 > [!NOTE]
-> Customer Insights - Data doesn't support combining conditions with OR across different fields. For example, you can’t filter rows where either Field A or Field B is true.
+> Customer Insights - Data doesn't support combining conditions with OR across different fields. For example, you can't filter rows where either Field A or Field B is true.
 
 ### Use "Any of" for string values
 
-For string fields, you can use the **Any of** condition to apply OR logic within a single field.
+For string fields, use the **Any of** condition to apply OR logic within a single field.
 
 **Example**:
 
@@ -66,19 +68,19 @@ You can combine AND logic across fields with OR logic within a single field.
 
 **Example**:
 
-- **Field A** is not null
+- **Field A** isn't null
 - **Field B** is any of ("x", "y")
 
 Result: Rows are included if **Field A is not null AND (Field B = "x" OR Field B = "y")**.
 
 ### Limitations
 
-- OR logic is supported only within a single field using **Any of**.
-- **Any of** isn't supported for numeric values.
+- You can use OR logic only within a single field by using **Any of**.
+- You can't use **Any of** for numeric values.
 
 ## Filter out unwanted rows
 
-After [configuring your data sources](data-sources.md), apply row filters before processing. Only the filtered table data is then processed when running unification, segments, measures, activities, and predictive models.
+After [configuring your data sources](data-sources.md), apply row filters before processing. When you run unification, segments, measures, activities, and predictive models, the system processes only the filtered table data.
 
 1. Go to **Data** > **Tables**.
 
