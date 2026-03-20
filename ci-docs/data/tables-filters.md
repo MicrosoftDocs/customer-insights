@@ -1,7 +1,7 @@
 ---
 title: Filter out unwanted data from your ingested data
 description: Filter out unwanted rows from your ingested source data in Customer Insights - Data
-ms.date: 10/29/2025
+ms.date: 03/20/2026
 ms.reviewer: v-wendysmith
 ms.topic: concept-article
 author: Scott-Stabbert
@@ -17,10 +17,22 @@ Key benefits include:
 - **Simplified data configuration**: Removing unwanted data at the source eliminates the need to create rules in multiple locations to avoid incorporating the unwanted data. Unification, segments, measures, activities, and predictive insights will use the filtered source data.
 - **Improved data quality**: Removing old or obsolete data at the source prevents it from being accidentally included in your results, such as when a new team member creates a segment that includes obsolete data.
 
-Preview limitations include:
+Limitations include:
 
 - [The preview of a source table's data](tables.md#explore-a-specific-tables-data) shows the full, unfiltered data.
 - The export of a source table ingested in .csv or .parquet format contains the full, unfiltered data.
+
+## Examples of data to filter out
+
+- Records that are missing key data points needed by downstream processes or your teams.
+
+- Old records that are obsolete.
+
+- Records specifically flagged as inactive or other indicators the record is obsolete. In some cases, you might want to filter records based on related data. For example, exclude customers who haven't had transactions for over 2 years. Because table row filters can't filter on related data, consider one of the following options:
+
+  1. If the number of customer records is small, ingest all customers and apply the related-data conditions directly in your segments and measures.
+
+  1. If the number of customer records is large, pre-process your data to include a flag or date on each customer record, such as a “last transaction date” and filter the customer input data on that value.
 
 ## How conditions are evaluated
 
