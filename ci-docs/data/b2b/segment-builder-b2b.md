@@ -11,15 +11,13 @@ ms.custom: bap-template
 
 # Create business account or contact segments with segment builder
 
-
-
 Define complex filters around the unified customer or unified contact and its related tables. Each segment, after processing, creates a set of customer or contact records that you can export and take action on.
 
 In **business accounts**, if you [unified](../data-unification.md) both accounts and contacts, choose whether the segment is based on accounts or business contacts. To export to a destination expecting contact information, use a segment of contacts. To export to a destination expecting account information, use a segment of accounts.
 
 ## Create a new segment with segment builder
 
-For an illustration of the key aspects of segment builder, see [Aspects of segment builder](../segment-builder-aspects.md). For tips, see [Segment builder tips](../segment-builder-aspects.md#segment-builder-tips).
+For an illustration of the key aspects of segment builder, see [Segment builder overview](../segment-builder-aspects.md#segment-builder-overview). For tips, see [Segment builder tips](../segment-builder-aspects.md#segment-builder-tips).
 
 1. Go to **Segments**.
 
