@@ -1,10 +1,10 @@
 ---
 title: Set up real-time web personalization (preview)
 description: Learn how to track web interactions and personalize experiences in real time with Customer Insights - Data.
-ms.date: 12/20/2024
+ms.date: 03/23/2026
 ms.topic: how-to
-author: srivas15
-ms.author: shsri
+author: Scott-Stabbert
+ms.author: sstabbert
 ms.reviewer: v-wendysmith
 ms.custom: bap-template
 ---
@@ -15,15 +15,13 @@ ms.custom: bap-template
 
 Let Customer Insights - Data automatically create unknown profiles for unauthenticated visitors to your website and track their page views and interactions in real time. Set up web tracking, merge customers' unknown profiles with their known profiles when they authenticate on your site, and then personalize their web experience. Learn more in [Real-time web personalization overview](real-time-web-personalization-overview.md).
 
-Watch this brief video to learn more about real-time web personalization.
-
-> [!VIDEO https://learn-video.azurefd.net/vod/player?id=0374bff9-f481-4324-8237-ebbaaffaed27]
-
 ## Prerequisites
 
-- Source data that contains your website customers is ingested and unified.
+- Your website has a process for identifying known users and saving their customer data to a table. For example, a `<WebCustomers>` table.
 
-  Customer Insights - Data uses the primary key from the unified customer profile to identify your website visitors. The primary key should be a field that uniquely identifies a customer, such as email address, phone number, or member ID. For example, in Customer Insights - Data, you might have a source table called `LoyaltySignUps` with `LoyaltyId` as the primary key that uniquely identifies a customer in that table. Learn more in [Data sources overview](data-sources.md) and [Data unification overview](data-unification.md).
+- You ingest your `<WebCustomers>` table into Customer Insights - Data by using one of the [data source connectors](data-sources.md).
+
+- You include your `<WebCustomers>` table in the [data unification process](data-unification.md).
 
 ## Set up web tracking
 
@@ -31,7 +29,7 @@ Watch this brief video to learn more about real-time web personalization.
 
    :::image type="content" source="media/web-tracking-personalization.png" alt-text="Screenshot of Web tracking & personalization in Customer Insights - Data.":::
 
-1. Select the table that the tracking script should use to identify your customers when they [authenticate](#authenticate-unknown-customers-and-merge-them-with-known).
+1. Select your <WebCustomers> table. The tracking script uses it to identify your customers when they [authenticate](#authenticate-unknown-customers-and-merge-them-with-known).
 
 1. Select **Copy** to copy the tracking script, and then paste it in the `<head>` tag of your website.
 
@@ -41,15 +39,15 @@ Watch this brief video to learn more about real-time web personalization.
 
 Browse your website as an unauthenticated visitor to create an unknown profile in Customer Insights - Data.
 
-To view the unknown profiles, go to the **Customers** page and select **Unknown**. All unknown profiles have a cookieId as an identifier and the website interactions on the timeline are shown automatically.
+To view the unknown profiles, go to the **Customers** page and select **Unknown**. All unknown profiles have a cookieId as an identifier, and the website interactions on the timeline are shown automatically.
 
   :::image type="content" source="media/customers-unknown.svg" alt-text="Screenshot of the Unknown tab on the Customers page in Customer Insights - Data.":::
 
 To validate the web events in Dataverse, sign in to [https://make.powerapps.com/](https://make.powerapps.com). Select **Tables** > **All**, and then select the `PersonalizationView` and `PersonalizationAction` tables.
 
-## Authenticate unknown customers and merge them with known
+## Authenticate unknown customers and merge them with known customers
 
-To have Customer Insights - Data automatically merge an unknown with a known profile when a visitor authenticates, select the source table that you used to identify your customers when you [set up web tracking](#set-up-web-tracking). To identify and merge the profiles, the system needs to know the authenticated customer's unique ID. It does this by calling the `SetUser` function.
+To have Customer Insights - Data automatically merge an unknown profile with a known profile when a visitor authenticates, select the source table that you used to identify your customers when you [set up web tracking](#set-up-web-tracking). To identify and merge the profiles, the system needs to know the authenticated customer's unique ID. It gets this ID by calling the `SetUser` function.
 
 1. Sign in to Customer Insights - Data and select **Web tracking & personalization**.
 
@@ -57,9 +55,9 @@ To have Customer Insights - Data automatically merge an unknown with a known pro
 
    For example, the source table `LoyaltySignUps` in Customer Insights - Data uses `LoyaltyId` as the primary key, which uniquely identifies a customer in that table.
 
-   Only tables that were used as a source for data unification appear in the list of tables. Customer Insights - Data automatically identifies the visitor using the primary key of the table that you select. The merge logic is the same as in the data unification process.
+   Only tables that you used as a source for data unification appear in the list of tables. Customer Insights - Data automatically identifies the visitor by using the primary key of the table that you select. The merge logic is the same as in the data unification process.
 
-1. Define the `setUser` function on your website. Typically, you only define this function on the page that authenticates visitors. The `<identifier>` is the visitor ID; for example, jsmith001.
+1. Define the `setUser` function on your website. Typically, you only define this function on the page that authenticates visitors. The `<identifier>` is the visitor ID, such as `jsmith001`.
 
     ``` javascript
     <script>
@@ -79,9 +77,9 @@ To have Customer Insights - Data automatically merge an unknown with a known pro
 
 You can personalize your customers' web experience in either of the following ways:
 
-- Without code, using the Optimizely integration with Customer Insights - data. Learn more in [No-code web personalization using Optimizely](optimizely-integration.md).
+- Without code, by using the Optimizely integration with Customer Insights - data. Learn more in [No-code web personalization using Optimizely](optimizely-integration.md).
 
-- With code, using APIs. Query any of the Customer Insights - Data APIs, which allow you to retrieve rich information about each customer, such as demographic information, web interactions, activities, segments, and measures. Learn more in [Dataverse APIs for Customer Insights - Data](dv-odata.md).
+- With code, by using APIs. Query any of the Customer Insights - Data APIs to retrieve rich information about each customer, such as demographic information, web interactions, activities, segments, and measures. Learn more in [Dataverse APIs for Customer Insights - Data](dv-odata.md).
 
   Since the cookieIds are also used to uniquely identify a known customer or an unknown visitor, you can also use the cookieId to query a profile. Retrieve the Customer Insights - Data web tracking cookie on the server side of your website. Customer Insights - Data cookies are stored as "_msci" in the request.
 
