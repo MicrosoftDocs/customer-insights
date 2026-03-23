@@ -1,7 +1,7 @@
 ---
 title: Set up real-time web personalization (preview)
 description: Learn how to track web interactions and personalize experiences in real time with Customer Insights - Data.
-ms.date: 03/23/2026
+ms.date: 03/24/2026
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
