@@ -1,7 +1,7 @@
 ---
 title: Real-time web personalization overview (preview)
 description: Learn how to provide personalized web interactions and experiences in real time with Customer Insights - Data.
-ms.date: 03/17/2026
+ms.date: 03/24/2026
 ms.topic: overview
 author: Scott-Stabbert
 ms.author: sstabbert
