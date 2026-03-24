@@ -80,7 +80,7 @@ The web personalization process flow starts with assigning an anonymous tracking
 
    - The visitor provides an email address or phone number (for example, through a webinar sign-up, content download, or account creation).
 
-         - Your website process creates or updates the customer record in the customer tracking table (for example, `<WebCustomers>` table) and finds the record’s primary key (PK). The PK is typically a GUID or incremental integer (INT) and not the email.
+   - Your website process creates or updates the customer record in the customer tracking table (for example, `<WebCustomers>` table) and finds the record’s primary key (PK). The PK is typically a GUID or incremental integer (INT) and not the email.
 
    - Your process calls the `setUser` function to associate the current web tracking GUID and its activity history with the PK from your `<WebCustomers>` table.
 
