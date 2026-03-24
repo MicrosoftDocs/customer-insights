@@ -29,7 +29,7 @@ Let Customer Insights - Data automatically create unknown profiles for unauthent
 
    :::image type="content" source="media/web-tracking-personalization.png" alt-text="Screenshot of Web tracking & personalization in Customer Insights - Data.":::
 
-1. Select your <WebCustomers> table. The tracking script uses it to identify your customers when they [authenticate](#authenticate-unknown-customers-and-merge-them-with-known).
+1. Select your `<WebCustomers>` table. The tracking script uses it to identify your customers when they [authenticate](#authenticate-unknown-customers-and-merge-them-with-known-customers).
 
 1. Select **Copy** to copy the tracking script, and then paste it in the `<head>` tag of your website.
 
