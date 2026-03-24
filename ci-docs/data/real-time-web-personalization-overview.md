@@ -20,7 +20,7 @@ Watch this brief video to learn more about real-time web personalization.
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=0374bff9-f481-4324-8237-ebbaaffaed27]
 
 > [!TIP]
-> Sign up to [request access to the preview version](https://forms.office.com/r/TJEE62xTD3) of the real-time personalization features.
+> [Request access to the preview version](https://forms.office.com/r/TJEE62xTD3) of the real-time personalization features.
 
 [!INCLUDE [public-preview-note](includes/public-preview-note.md)]
 
@@ -36,7 +36,7 @@ By tracking unknown customers, you can:
 
 An unknown user becomes a known user when they provide identifiable details, such as an email address to download a resource, create an account, or order a product. When a person signs in from multiple machines, they initially appear as separate unknown customers. As they become known on each machine, the unknown profiles and activity data combine into a single known customer profile.
 
-When you convert an unknown user to a known customer, you keep all the activity history that you accrued when they were unknown, providing deeper insight.
+When you convert an unknown user to a known customer, you keep all the activity history you accrued when they were unknown, providing deeper insight.
 
 When you unify customer data from your website with other sources of customer data, such as sales and support, you gain unprecedented ability to understand customer needs and how they interact with your brand.
 
@@ -50,7 +50,7 @@ This process means:
 
 - The known profile gets all the web interactions that were associated with the unknown profile. These web interactions appear on the timeline of the known profile.
 - The known profile gets the cookie ID as a new identifier.
-- All downstream processes, such as segments, measures, and APIs, refer to the known profile instead of the unknown profile going forward, which allows you to take action.
+- All downstream processes, such as segments, measures, and APIs, refer to the known profile instead of the unknown profile going forward, which you can take action on.
 - The unknown profile expires.
 
 ## Examples
@@ -64,17 +64,9 @@ Use real-time web personalization to increase engagement and drive higher custom
 
 ## How it works
 
-<!---
-### Assumptions
+The web personalization process flow starts with assigning an anonymous tracking cookie, capturing activity in Dataverse, and unifying it into a known customer profile.
 
-- When a user provides an email or phone number, you create a record for them in a table (referred to in this article as the customer tracking table). This user isn't authenticated.
-- Your customer tracking table uses a dedicated primary key (PK) that isn't derived from email or phone number.
-- Your process looks up an existing record by using the provided email or phone number, obtains the PK, passes it back to the web page, and calls the `setUser` function. This function associates the web tracking GUID (such as “abc123”) and the PK of the customer's record (such as “789def”).
---->
-
-### Web personalization flow
-
-1. **Anonymous visitor tracking starts**
+1. **Start anonymous visitor tracking**
 
    - A visitor accesses your website and receives a web tracking GUID stored in a persistent cookie. If the same person visits from another device or browser, they receive a different GUID.
 
@@ -84,21 +76,27 @@ Use real-time web personalization to increase engagement and drive higher custom
 
    - Your [website personalizes content](real-time-web-personalization.md#personalize-your-customers-web-experience) for the unknown visitor.
 
-1. **Unknown visitor becomes known**
+1. **Make unknown visitor known**
 
    - The visitor provides an email address or phone number (for example, through a webinar sign-up, content download, or account creation).
 
-   - Your website process creates or updates the customer record in the customer tracking table (for example, <WebCustomers> table) and finds the record’s primary key (PK). The PK is typically a GUID or incremental integer (INT) not the email.
+         - Your website process creates or updates the customer record in the customer tracking table (for example, `<WebCustomers>` table) and finds the record’s primary key (PK). The PK is typically a GUID or incremental integer (INT) and not the email.
 
-   - Your process calls the `setUser` function to associate the current web tracking GUID and its activity history with the PK from your <WebCustomers> table.
+   - Your process calls the `setUser` function to associate the current web tracking GUID and its activity history with the PK from your `<WebCustomers>` table.
 
-1. **Customer Insights – Data unification merges identities**
+1. **Unify identities in Customer Insights – Data**
 
-   - On the next unification run, Customer Insights – Data merges the <WebCustomers> table and the linked web tracking GUID into a single unified profile.
+   - On the next unification run, Customer Insights – Data merges the `<WebCustomers>` table and the linked web tracking GUID into a single unified profile.
 
    - The unified profile preserves all earlier anonymous activity.
 
-If the same customer deletes their cookies or uses a different device or browser and visits your website, they receive a new web tracking GUID. When the customer provides the same email address or phone number, your website finds the same PK and calls the `setUser` function. On the next unification run, Customer Insights – Data merges multiple web tracking GUIDs (and any related customer records) into a single unified profile.
+1. **Customer becomes known on second device**
+
+   - If the same customer deletes their cookies or uses a different device or browser and visits your website, they receive a new web tracking GUID.
+
+   - When the customer provides the same email address or phone number, your website finds the same PK and calls the `setUser` function.
+
+   - On the next unification run, Customer Insights – Data merges multiple web tracking GUIDs (and any related customer records) into a single unified profile.
 
 ## Next steps
 
