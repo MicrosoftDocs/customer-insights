@@ -22,9 +22,9 @@ Limitations include:
 - [The preview of a source table's data](tables.md#explore-a-specific-tables-data) shows the full, unfiltered data.
 - The export of a source table ingested in .csv or .parquet format contains the full, unfiltered data.
 
-## Common uses cases for row filtering
+## Common use cases for row filtering
 
-Common uses case for row filtering include:
+Common use cases for row filtering include:
 
 - Exclude records that are missing key data points needed by downstream processes or your teams.
 
