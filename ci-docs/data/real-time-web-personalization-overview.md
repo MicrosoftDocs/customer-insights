@@ -15,17 +15,6 @@ ms.custom: bap-template
 
 Real-time web personalization in Customer Insights – Data captures website activity for both known and anonymous visitors. Use these signals to tailor experiences as customers browse.
 
-Watch this brief video to learn more about real-time web personalization.
-
-> [!VIDEO https://learn-video.azurefd.net/vod/player?id=0374bff9-f481-4324-8237-ebbaaffaed27]
-
-> [!TIP]
-> [Request access to the preview version](https://forms.office.com/r/TJEE62xTD3) of the real-time personalization features.
-
-[!INCLUDE [public-preview-note](includes/public-preview-note.md)]
-
-## Unknown and known customers
-
 By tracking unknown customers, you can:
 
 - Identify anonymous or unknown users who visit and later return to your website.
@@ -34,9 +23,18 @@ By tracking unknown customers, you can:
 
 - Personalize your website content when the customer returns based on their interests.
 
-An unknown visitor becomes a known customer when they share identifying details (for example, an email address to download content, create an account, or place an order). If the person visits from multiple devices, they initially appear as separate anonymous profiles; after they authenticate on each device, those profiles and their activity merge into a single known customer profile.
+An *unknown visitor* becomes a *known customer* when they share identifying details (for example, an email address to download content, create an account, or place an order). If the person visits from multiple devices, they initially appear as separate anonymous profiles; after they authenticate on each device, those profiles and their activity merge into a single known customer profile.
 
 When an anonymous visitor becomes known, their earlier website activity is retained and carried forward. When you then unify this web activity with other sources (such as sales and support), you get a more complete view of customer needs and brand interactions.
+
+Watch this brief video to learn more about real-time web personalization.
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=0374bff9-f481-4324-8237-ebbaaffaed27]
+
+> [!TIP]
+> [Request access to the preview version](https://forms.office.com/r/TJEE62xTD3) of the real-time personalization features.
+
+[!INCLUDE [public-preview-note](includes/public-preview-note.md)]
 
 ## Customer tracking
 
@@ -61,7 +59,7 @@ Use real-time web personalization to increase engagement and drive higher custom
 
 Web personalization starts by assigning an anonymous tracking cookie, capturing activity in Dataverse, and unifying it into a known customer profile.
 
-### Start anonymous visitor tracking
+**Start anonymous visitor tracking**
 
 - A visitor accesses your website and receives a web tracking GUID stored in a persistent cookie. If the same person visits from another device or browser, they receive a different GUID.
 
@@ -71,7 +69,7 @@ Web personalization starts by assigning an anonymous tracking cookie, capturing 
 
 - Your [website personalizes content](real-time-web-personalization.md#personalize-your-customers-web-experience) for the unknown visitor.
 
-### Make unknown visitor known
+**Make unknown visitor known**
 
 - The visitor provides an email address or phone number (for example, through a webinar sign-up, content download, or account creation).
 
@@ -79,13 +77,13 @@ Web personalization starts by assigning an anonymous tracking cookie, capturing 
 
 - Your process calls the `setUser` function to associate the current web tracking GUID and its activity history with the PK from your `<WebCustomers>` table.
 
-### Unify identities in Customer Insights – Data
+**Unify identities in Customer Insights – Data**
 
 - On the next unification run, Customer Insights – Data merges the `<WebCustomers>` table and the linked web tracking GUID into a single unified profile.
 
 - The unified profile preserves all earlier anonymous activity.
 
-### Customer becomes known on second device
+**Customer becomes known on second device**
 
 - If the same customer deletes their cookies or uses a different device or browser and visits your website, they receive a new web tracking GUID.
 
