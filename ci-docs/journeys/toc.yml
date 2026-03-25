@@ -34,50 +34,6 @@
     href: whats-new-marketing.md
   - name: What's new archive
     href: whats-new-marketing-archive.md
-- name: Transition from outbound marketing
-  items:
-  - name: Transition overview
-    href: transition-overview.md
-  - name: Transition resources
-    href: transition-resources.md
-  - name: Transition guidance
-    items:
-    - name: Overview
-      href: transition-walkthrough-functional.md
-    - name: Channels and message sending
-      href: transition-walkthrough-channels.md
-    - name: Consent
-      href: transition-walkthrough-consent.md
-    - name: Consent management and double opt-in
-      href: real-time-marketing-consent-transition.md
-    - name: Customer Voice responses
-      href: transition-walkthrough-customer-voice.md
-    - name: Emails and assets
-      href: transition-walkthrough-email.md
-    - name: Event management
-      href: transition-walkthrough-events.md
-    - name: Event registration
-      href: migrate-event-registration.md
-    - name: Insights and reports
-      href: transition-walkthrough-insights.md    
-    - name: Journeys
-      href: transition-walkthrough-journeys.md
-    - name: Lead management and scoring
-      href: transition-walkthrough-leads.md    
-    - name: Marketing pages and forms
-      href: transition-walkthrough-forms.md    
-    - name: Personalization
-      href: transition-walkthrough-personalization.md
-    - name: Segments
-      href: transition-walkthrough-segments.md    
-    - name: Settings
-      href: transition-settings.md
-    - name: Setup changes in real-time journeys
-      href: transition-walkthrough-setup.md
-    - name: Social posting and LinkedIn Lead Gen
-      href: transition-walkthrough-social-posts.md
-  - name: Real-time journeys transition FAQs
-    href: transition-faqs.md
 - name: Install and manage
   items:
   - name: Install or uninstall
@@ -110,6 +66,8 @@
     href: admin-users-licenses-roles.md
   - name: Permissions for out-of-the-box roles
     href: role-permissions.md
+  - name: Administrator settings
+    href: real-time-marketing-admin-settings.md
   - name: Integrate with Dynamics 365 Customer Insights - Data
     href: ci-get-started.md
   - name: Import data
@@ -372,6 +330,8 @@
           href: journey-quiet-times.md
         - name: Limit messages sent with frequency capping
           href: journey-frequency-cap.md
+        - name: "Set message expiration (preview)"
+          href: message-expiration.md
       - name: Create approval workflows and customize the journey designer
         items:
         - name: 'Tutorial: Implement approval workflows in real-time journeys'
@@ -778,12 +738,22 @@
     href: troubleshoot-marketing-solution-health.md
   - name: General FAQ
     href: troubleshoot-faq.md
-- name: Copilot in Customer Insights - Journeys
-  items: 
+- name: Copilot and AI capabilities in Customer Insights
+  items:
   - name: Overview
     href: copilot-overview.md
   - name: Give consent to use Copilot in Customer Insights - Journeys
-    href: copilot-consent-journeys.md
+    href: copilot-consent-journeys.md  
+  - name: Use Copilot's form fill assistance feature in Customer Insights - Journeys
+    href: form-fill-assistance.md
+  - name: Find data in a view with AI (preview)
+    href: find-data-with-ai.md
+  - name: Visualize data in a view with Copilot (preview)
+    href: visualize-data-in-copilot.md
+  - name: Use row summaries in Customer Insights - Journeys
+    href: record-summaries.md
+  - name: Timeline highlights with generative AI in Customer Insights - Journeys
+    href: use-timeline-highlights-powered-by-generative-ai.md
 - name: Responsible AI FAQs
   items:
   - name: Overview
@@ -816,3 +786,47 @@
   items:
   - name: Customer Insights - Journeys troubleshooting
     href: /troubleshoot/dynamics-365/customer-insights/welcome-customer-insights
+- name: Transition from outbound marketing
+  items:
+  - name: Transition overview
+    href: transition-overview.md
+  - name: Transition resources
+    href: transition-resources.md
+  - name: Transition guidance
+    items:
+    - name: Overview
+      href: transition-walkthrough-functional.md
+    - name: Channels and message sending
+      href: transition-walkthrough-channels.md
+    - name: Consent
+      href: transition-walkthrough-consent.md
+    - name: Consent management and double opt-in
+      href: real-time-marketing-consent-transition.md
+    - name: Customer Voice responses
+      href: transition-walkthrough-customer-voice.md
+    - name: Emails and assets
+      href: transition-walkthrough-email.md
+    - name: Event management
+      href: transition-walkthrough-events.md
+    - name: Event registration
+      href: migrate-event-registration.md
+    - name: Insights and reports
+      href: transition-walkthrough-insights.md    
+    - name: Journeys
+      href: transition-walkthrough-journeys.md
+    - name: Lead management and scoring
+      href: transition-walkthrough-leads.md    
+    - name: Marketing pages and forms
+      href: transition-walkthrough-forms.md    
+    - name: Personalization
+      href: transition-walkthrough-personalization.md
+    - name: Segments
+      href: transition-walkthrough-segments.md    
+    - name: Settings
+      href: transition-settings.md
+    - name: Setup changes in real-time journeys
+      href: transition-walkthrough-setup.md
+    - name: Social posting and LinkedIn Lead Gen
+      href: transition-walkthrough-social-posts.md
+  - name: Real-time journeys transition FAQs
+    href: transition-faqs.md

@@ -25,7 +25,7 @@ search.audienceType:
 
 > [!IMPORTANT]
 > The current HIP captcha used in Customer Insights - Journeys forms will be deprecated in March 2026 and fully removed by June 30, 2026.
-> Please follow these **[instructions](real-time-marketing-form-security-privacy.md#hip-captcha-deprecation-and-new-recaptcha-experience)** to keep your forms protected against bot submissions.
+> Please follow these **[instructions](real-time-marketing-form-security-privacy.md#hip-captcha-deprecation-and-the-new-recaptcha-experience)** to keep your forms protected against bot submissions.
 
 ## Form types
 

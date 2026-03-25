@@ -15,7 +15,7 @@ Define complex filters around the unified customer and its related tables. Each 
 
 ## Create a new segment with segment builder
 
-For an illustration of the key aspects of segment builder, see [Aspects of segment builder](segment-builder-aspects.md). For tips, see [Segment builder tips](segment-builder-aspects.md#segment-builder-tips).
+For an illustration of the key parts of segment builder, see [Segment builder overview](segment-builder-aspects.md#segment-builder-overview). For tips, see [Segment builder tips](segment-builder-aspects.md#segment-builder-tips).
 
 1. Go to **Segments**.
 
