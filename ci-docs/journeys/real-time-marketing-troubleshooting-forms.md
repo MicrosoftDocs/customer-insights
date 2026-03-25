@@ -14,7 +14,7 @@ ms.custom: sfi-image-nochange
 
 # Troubleshooting Customer Insights - Journeys forms
 
-This article explains how to troubleshoot forms in Customer Insights - Journeys.
+This article explains how to troubleshoot forms in Customer Insights - Journeys. It applies to both Marketing forms and Event Registration forms, unless differences are explicitly called out.
 
 ## My embedded form isn't visible on my page
 

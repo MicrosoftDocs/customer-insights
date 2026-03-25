@@ -23,23 +23,13 @@ With Customer Insights - Journeys analytics, you can:
 - Understand the effectiveness of various messages and channels of communication through key delivery and engagement insights.
 - Gain insights into your audience's behavior and interests and tailor your marketing efforts to their specific needs.
 
-## Comparison of outbound marketing and Customer Insights - Journeys analytics
+## Next steps with Analytics
 
-The following table compares the analytics features in outbound marketing and Customer Insights - Journeys.
-
-| **Area** | **Feature** | **Outbound marketing** | **Customer Insights - Journeys** |
-|:---:|:---:|:---:|:---:|
-| Understand cross-journey and channel effectiveness with built-in aggregated dashboards | Analyze your orchestrated journeys and evaluate their performance | No  | Yes |
-| Understand cross-journey and channel effectiveness with built-in aggregated dashboards  | Measure channel effectiveness and track the performance of your marketing assets | No  | Yes |
-| Understand cross-journey and channel effectiveness with built-in aggregated dashboards  | Measure the marketing effectiveness of your campaigns | No  | Yes |
-| Evaluate journey performance in near real time using operational analytics | Journey analytics | Yes | Yes |
-| Evaluate journey performance in near real time using operational analytics  | Email insights | Yes | Yes |
-| Evaluate journey performance in near real time using operational analytics  | Email variation insights | No  | Yes |
-| Evaluate journey performance in near real time using operational analytics  | Email clicks heat map | Yes | Yes  |
-| Evaluate journey performance in near real time using operational analytics  | Text message insights | No  | Yes |
-| Evaluate journey performance in near real time using operational analytics  | Push notification insights | No  | Yes |
-| Evaluate journey performance in near real time using operational analytics  | Custom channel insights | No  | Yes |
-| Gain insights into your audience's behavior and interests | View contact insights | Yes | Yes |
-| Gain insights into your audience's behavior and interests  | View lead insights | Yes | Yes |
-| Gain insights into your audience's behavior and interests  | View marketing data in the shared customer timeline | Yes | Yes |
-| Build custom reports tailored to your business needs |   | Yes | Yes |
+- [Access and interpret analytics](real-time-marketing-analytics.md)
+- [Use aggregate cross-journey analytics](real-time-marketing-cross-journey-analytics.md)
+- [Use aggregate channel analytics](real-time-marketing-channel-analytics.md)
+- [Make journey decisions based on web interactions](interaction-journey-decision.md)
+- [Use email insights](email-insights.md)
+- [Use the customer interactions timeline](timeline.md)
+- [Track campaigns with UTM codes](real-time-marketing-utm.md)
+- [Customer Insights - Journeys integration with Microsoft Fabric overview](fabric-integration.md)

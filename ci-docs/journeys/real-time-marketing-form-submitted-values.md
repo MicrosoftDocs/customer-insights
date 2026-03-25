@@ -32,6 +32,10 @@ Before examining scenarios that use submitted values, review the applicable form
 | **Field localized name** | - **Mapped fields**: Display name of the lead or contact attribute.<br>- **Unmapped fields**: Logical name is defined in the form editor. | `First name` |
 | **Logical name**         | - **Mapped fields**: Logical name of the lead or contact attribute.<br>- **Unmapped fields**: Logical name is defined in the form editor.                   | `firstname` |
 
+> [!WARNING]
+> For unmapped fields, **Field localized value** currently contains the same value as **Field value**.  
+> This will be fixed in the **April 2026 release**. After the fix, **Field localized value** will contain the option label—the value that users see in the form when filling it out.
+
 ## Branch a journey based on submitted values
 
 You can adjust the path of a journey depending on the answers your customer provides in a form. For example, if a customer selects "Interested in Product A," you can branch them into a journey that sends more details about Product A.
