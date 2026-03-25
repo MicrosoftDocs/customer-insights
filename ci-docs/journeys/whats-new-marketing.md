@@ -1,7 +1,7 @@
 ---
 title: New and upcoming features
 description: Discover the latest features, improvements, and bug fixes in Dynamics 365 Customer Insights - Journeys. Stay updated with our monthly release notes.
-ms.date: 02/11/2026
+ms.date: 03/12/2026
 ms.update-cycle: 180-days
 ms.topic: whats-new
 author: alfergus
@@ -27,6 +27,37 @@ Customer Insights - Journeys updates are [pushed to customers automatically](htt
 
 To submit and vote on **feature requests** and **product suggestions**, go to the [Dynamics 365 Application Ideas portal](https://experience.dynamics.com/ideas/categories/?forum=dfa5b83d-9e4c-e811-a956-000d3a1bef07&forumName=Dynamics%20365%20Marketing).
 
+### March 2026 update
+
+| App              | GA release      |
+|------------------|-----------------|
+| Customer Insights - Journeys | 1.1.62960.43 |
+
+#### General availability
+
+- **Create static segments with up to 200,000 members**
+    - Marketers often receive customer lists from various systems and need to act quickly. These lists typically lack the attributes required for dynamic segments or aren't part of an existing Dataverse view. This feature enables marketers to build static segments with up to 200,000 members using data from any source. Marketers can upload CSV files, use the API to create segments as part of a workflow, or select contacts from a Dataverse view.
+    - [Release plan](/dynamics365/release-plan/2025wave2/customer-insights/dynamics365-customer-insights-journeys/create-static-segments-up-200000-members)
+    - [Docs](real-time-marketing-build-segments.md#use-csv-files-to-define-static-segment-membership-lists-for-up-to-2000000-members)
+
+- **Drive confident engagement with enhanced consent‑based segmentation**
+	- As a marketer, you want to grow relationships on a foundation of trust, sending messages only to customers who expect to hear from you. Enhanced consent‑based segmentation turns your consent policies into clear, ready‑to‑use audiences. You can instantly see who qualifies for each purpose and channel, and build segments that stay aligned with your compliance profiles by design. You move faster from consent data to active audiences, so every journey is both relevant and respectful of customer choices.
+	- [Release plan](/dynamics365/release-plan/2025wave2/customer-insights/dynamics365-customer-insights-journeys/drive-confident-engagement-enhanced-consentbased-segmentation)
+	- [Docs](real-time-marketing-consent-segments.md)
+
+#### Public preview
+
+- **Set message expirations to keep communication relevant**
+	- Customers may experience frustration when they receive outdated communications, such as expired coupons and irrelevant reminders. This creates confusion and diminishes their trust in your brand. You can now set expiration dates on your messages, ensuring that only current and relevant information reaches your audience. This keeps your customers engaged and satisfied with relevant communications in moments that matter.
+	- [Release plan](/dynamics365/release-plan/2025wave2/customer-insights/dynamics365-customer-insights-journeys/set-message-expirations-keep-communication-relevant)
+	- [Docs](message-expiration.md)
+
+#### New blogs and scenario docs
+
+Learn how to make the most of the new Dynamics 365 Customer Insights features in our latest blogs and scenario docs:
+
+- [Real-time web personalization with Dynamics 365 Customer Insights - Data](https://community.dynamics.com/blogs/post/?postid=4979be1e-2417-f111-8341-6045bddc3c65)
+
 ### February 2026 update
 
 | App              | GA release      |
@@ -40,35 +71,33 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 	- [Release plan](/dynamics365/release-plan/2025wave2/customer-insights/dynamics365-customer-insights-journeys/maximize-event-roi-paid-registration-seamless-payment-integration) 
 	- [Docs (event passes)](real-time-journeys-event-passes.md), [Docs (payment gateway)](./developer/payment-gateway-integration.md)
 
-	:::image type="content" source="media/paid-events.png" alt-text="An event passes UI." lightbox="media/paid-events.png":::
-
-- **Enhanced reCAPTCHA** 
+- **Enhanced reCAPTCHA**
 	- Marketers rely on clean, trustworthy data to run effective journeys, but automated bot submissions can overwhelm forms, skew insights, and reduce conversion rates. Before this update, protecting forms required outdated HIP captcha or custom technical work, creating friction and leaving gaps in security. With the new built‑in reCAPTCHA, you protect your forms from bots while keeping the experience fast and accessible for real customers. You can add strong bot protection in seconds. No coding, no developer support, and no risk of losing data quality. This update boosts confidence in your form submissions, reduces spam, and ensures that every interaction you collect reflects real customer intent. The legacy HIP captcha is being deprecated to move to a more modern, secure, and user‑friendly reCAPTCHA experience. The HIP captcha will be deprecated in March 2026 and fully removed from all Customer Insights ‑ Journeys forms by June 30, 2026. 
 	- [Release plan](/dynamics365/release-plan/2025wave2/customer-insights/dynamics365-customer-insights-journeys/strengthen-form-bot-protection-recaptcha) 
-	- [Docs](real-time-marketing-form-security-privacy.md#protecting-forms-from-bots-with-recaptcha)
+	- [Docs](real-time-marketing-form-security-privacy.md#protect-forms-from-bots-with-recaptcha)
 
 #### Monthly enhancements
 
-- **Segmentation - Unused segments are not evaluated after 30 days** 
+- **Segmentation - Unused segments are not evaluated after 30 days**
 	- Segments that are published but not used in any live journey for 30 days are moved to the Expired state. These expired segments are no longer evaluated and are not counted towards your segment limits, helping to save resources and boost overall performance. You need to publish them again before they can be used in a journey.
 
-- **Segmentation – Usability and functional enhancements** 
-	- Several enhancements have been introduced to segmentation. Key improvements include: 
-		* Updates to UI and insights charts to fix accessibility issues and make them mobile friendly 
-		* Ability to refresh segments manually 
-		* Added common commands Assign and Deactivate to the command bar and enable it for customization 
-		* Support for circular relationship (Contact > related table(s) > Contact) 
-		* Changed how related tables are evaluated to align with more common usage (RELATEOPTIONAL is the default now, RELATE remains available via advance menu. RELATEOPTIONAL allows rows to be returned even when the related record doesn’t exist, treating the relationship as optional)
-		* Allow stopped segments to be edited and published again 
-		* Fixed issues with timeline where items were showing up out of order and had other issues with end of the year 
-		* Improved messages and information throughout (for example, show logical name to disambiguate similarly named attributes)
-		* Increased query field size to support longer queries
+- **Segmentation – Usability and functional enhancements**
+	- Several enhancements have been introduced to segmentation. Key improvements include:
+		* Updates to the user interface and insights charts to fix accessibility issues and make them mobile friendly.
+		* Ability to refresh segments manually.
+		* Added common commands *Assign* and *Deactivate* to the command bar and enable them for customization.
+		* Support for circular relationships (Contact > related table(s) > Contact).
+		* Changed how related tables are evaluated to align with more common usage (`RELATEOPTIONAL` is the default now, `RELATE` remains available through the advanced menu. `RELATEOPTIONAL` allows rows to be returned even when the related record doesn’t exist, treating the relationship as optional).
+		* Stopped segments can be edited and published again.
+		* Fixed issues with timeline where items were showing up out of order and had other issues with the end of the year.
+		* Improved messages and information throughout (for example, show logical name to disambiguate similarly named attributes).
+		* Increased query field size to support longer queries.
 
-- **Ability to set co-organizers for Teams Town Hall** 
-	- You can now automatically assign coorganizers to Microsoft Teams Town Hall events directly within Customer Insights – Journeys. This enhancement streamlines event management, improves collaboration, and ensures smoother execution by giving additional users the ability to help manage and run Town Hall sessions. 
+- **Ability to set co-organizers for Teams Town Hall**
+	- You can now automatically assign co-organizers to Microsoft Teams Town Hall events directly within Customer Insights – Journeys. This enhancement streamlines event management, improves collaboration, and ensures smoother execution by giving additional users the ability to help manage and run Town Hall sessions.
 	- [Docs](teams-town-hall.md)
 
-- **Teams Live Events, Teams Meeting and Teams Webinar are retiring** 
+- **Teams Live Events, Teams Meeting and Teams Webinar are retiring**
 	- Microsoft is retiring Teams live events and the associated Microsoft Graph APIs used to create Teams live events effective June 30, 2026, though Microsoft will honor all live events that are already scheduled through Feb 28, 2027. We encourage customers to migrate to use Teams town halls, which offers an improved experience for large-scale digital and hybrid events. Furthermore, Teams Meeting and Teams Webinar are being replaced with Teams Meeting v2 and Teams Webinar v2 after Feb 28, 2027, as well.
 	- [Docs](teams-meeting-types.md#teams-meeting-v2-teams-webinar-v2-teams-town-hall)
 

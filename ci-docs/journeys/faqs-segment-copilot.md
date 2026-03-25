@@ -21,7 +21,7 @@ This FAQ provides information about the AI technology used in the segment copilo
 
 ## What is the segment copilot?
 
-This feature allows the user to enter a natural language prompt on the segments page in Customer Insights and helps build segments with specified criteria through the Copilot chat experience. The feature generates a suggested segment configuration and data mapping based on the natural language prompt and data available in Customer Insights. Users then verify the segment and edit it as needed.
+This feature allows the user to enter a natural language prompt on the segments page in Customer Insights and helps build segments with specified criteria through the Microsoft 365 Copilot experience. The feature generates a suggested segment configuration and data mapping based on the natural language prompt and data available in Customer Insights. Users then verify the segment and edit it as needed.
 
 ## What are capabilities of the segment copilot?
 

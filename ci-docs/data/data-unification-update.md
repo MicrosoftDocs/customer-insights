@@ -1,7 +1,7 @@
 ---
 title: "Update customer, account, or contact unification settings"
 description: "Update duplicate rules, match rules, or unified fields in the customer or account unification settings."
-ms.date: 03/28/2025
+ms.date: 03/12/2026
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -217,8 +217,46 @@ Run matching conditions runs deduplication and match rules only and updates the 
 - To run matching conditions and update the unified profile table *without* impacting dependencies (such as customer cards, enrichments, segments, or measures), select **Unify customer profiles**. Dependent processes aren't run, but will be refreshed as [defined in the refresh schedule](schedule-refresh.md).
 - To run matching conditions, update the unified profile, and run all dependencies, select **Unify customer profiles and dependencies**. All processes are rerun automatically.
 
-All tiles except **Customer data** show **Queued** or **Refreshing**. More data, skewed data, or data with lots of duplicates impact processing time.
+All tiles except **Customer data** show **Queued** or **Refreshing**. More data, skewed data, or data with lots of duplicates affect processing time.
 
 [!INCLUDE [progress-details-pane-include](includes/progress-details-pane.md)]
 
 The results of a successful run display on the **Unify** page showing the number of unified profiles.
+
+## Removing dependencies blocking Dynamics 365 Customer Insights - Data unification
+
+When you update the **Unify** configuration in Dynamics 365 Customer Insights - Data (for example, by removing a data source, removing mapped fields, or changing merge policies), the system validates whether any attributes that will be removed from the `msdynci_customerprofile` table in Dataverse are referenced by other solution components.
+
+If dependencies are found, you receive an error similar to:
+
+```Detected DataVerse dependencies in msdynci_customerprofile entity on these attribute(s): \<attribute names\>. Please delete these dependencies and merge again.```
+
+### Why this happens
+
+Customer Insights - Data writes unified customer profiles to a virtual table called `msdynci_customerprofile` in your Dataverse environment. Each mapped and merged field from your data sources becomes a column on this table. When other makers in the organization create forms, views, charts, workflows, business rules, or other components that reference those columns, Dataverse prevents the columns from being deleted, even when Customer Insights is requesting the deletion.
+
+### Find which components have a dependency
+
+1. In [Power Apps](https://make.powerapps.com), open the environment associated with your Customer Insights instance.
+1. Go to **Tables**, search for **CustomerProfile** (`msdynci_customerprofile`), and open it.
+1. Select a column listed in the error message, then choose **Advanced** > **Show dependencies**.
+1. Review the **Dependent components** list. This shows exactly which forms, views, workflows, or other components reference that column.
+
+### Remove the dependencies
+
+For each dependent component listed:
+
+| Component type | How to remove the dependency |
+|---|---|
+| **Form** | Open the form in the form designer, remove the column from the form layout, then save and publish. |
+| **View** | Open the view editor, remove the column from the view's columns and filter criteria, then save and publish. |
+| **Chart** | Edit the chart and remove references to the column. |
+| **Cloud flow / workflow** | Edit the flow in Power Automate and remove any steps that reference the column. |
+| **Business rule** | Edit the business rule and remove conditions or actions that reference the column. |
+| **Business process flow** | Edit the business process flow and remove any stage fields that reference the column. |
+
+### Retry the unification
+
+After you remove all listed dependencies, return to **Customer Insights - Data** > **Unify** > **Merge** and run the merge again.
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]
