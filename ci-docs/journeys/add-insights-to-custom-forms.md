@@ -36,14 +36,23 @@ To add the **Insights** tab to custom forms:
 1. Fill out the **Custom configuration** property. This is the web resource name (including extension) that's loaded to display the widgets. The “CC_filter” property shouldn't be used. Here are the default insights configurations:
     - **Contact**: ContactInsights.msdynmkt_InsightsConfig.json
     - **Lead**: LeadInsights.msdynmkt_InsightsConfig.json
-    
+
     :::image type="content" source="media/add-insights-static-value.png" alt-text="Screenshot showing the Static value field.":::
+
+    > [!NOTE]
+    > When using **InsightsControl** in a **full‑page** or **single‑component** tab:
+    >
+    > - The tab must contain only one visible section
+    > - The section must contain exactly one visible control
+    > - Do not include empty rows, placeholder cells, or additional controls in the same tab
+    > Tabs configured as single‑component with multiple rows or empty cells may render blank or unpredictably.
 
 1. Save changes and publish all customizations.
 
 ## Customize the layout
 
 > [!NOTE]
+>
 > - The preferred way to customize the layout is to clone an existing configuration and customize the JSON according to user needs.
 > - Using widgets not listed in "Available widgets" for a given entity results in unpredictable errors.
 > - For more information about web resources, see [Create or edit model-driven app web resources to extend an app](/power-apps/maker/model-driven-apps/create-edit-web-resources)
@@ -58,7 +67,7 @@ To create a JSON file with layout definition:
     - **compoundWidgets**: The definition of content for each separate card on the layout. Consult the layout JSON description section for more detailed information.
 1. After making changes, save the file on your local drive with a ".js" extension.
 1. In the admin portal (**Settings** ![The Settings menu icon.](media/settings-icon.png "The Settings menu icon") > **Advanced settings**), go to **Solutions** and select the solution that the web resource should belong to.
-    
+
     :::image type="content" source="media/add-insights-admin-portal.png" alt-text="Screenshot showing the admin portal.":::
 
 1. Upload the file. In the custom control configuration, make sure to use the value of the “Name” field (including the solution prefix).

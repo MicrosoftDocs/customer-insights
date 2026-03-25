@@ -54,6 +54,19 @@ The form submission may fail because of issues with custom plugins or due to inv
 > [!IMPORTANT]
 > You can only re-submit failed submissions. Be aware that, by re-submitting, you may create a duplicate contact, such as when the submission fails because of a contact point consent creation error. The replay runs the entire submission process again. To avoid duplicate records, you can change the matching strategy before running the replay feature.
 
+## Missing values in lookup fields
+
+If values are missing in lookup fields on a form, the issue is often caused by missing or insufficient field permissions. Follow these steps to verify that all required permissions are set correctly.
+
+1. **Check field permissions**  
+   Verify that the required permissions are granted for all fields used in the lookup. This is especially important when using custom fields or applying filters to lookup queries.
+
+2. **Review custom fields**  
+   Ensure that any custom fields referenced by the lookup have the appropriate permissions. Missing permissions can prevent values from appearing in the lookup field.
+
+3. **Validate lookup filters**  
+   If the lookup uses filters, confirm that the filters are configured correctly and that all fields referenced in the filters have the necessary permissions.
+
 ## Investigating failed form submissions
 
 Failed form submissions typically manifest as "Failed to create target entity" or "Failed to update target entity" in the logs and are often related to a customization that creates or updates a contact or lead entity.
