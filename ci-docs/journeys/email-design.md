@@ -1,7 +1,7 @@
 ---
 title: Create and design a marketing email message
 description: Learn how to create and design a marketing email message in Dynamics 365 Customer Insights - Journeys.
-ms.date: 04/03/2025
+ms.date: 03/25/2026
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
@@ -32,7 +32,7 @@ To create a new email marketing message, go to **Customer Insights - Journeys** 
 
 ## Establish your basic layout by choosing the right template
 
-The first thing you are asked when you create a new message is to select a template. Dynamics 365 Customer Insights - Journeys includes many templates, each of which includes both structural and style elements. You can select **Skip** to start with a  blank template, which lets you start from scratch with an empty message. After you select a template or choose **Skip**, you'll be in the email designer, where you can finish creating your email content.
+The first thing you're asked when you create a new message is to select a template. Dynamics 365 Customer Insights - Journeys includes many templates, each of which includes both structural and style elements. You can select **Skip** to start with a  blank template, which lets you start from scratch with an empty message. After you select a template or choose **Skip**, you'll be in the email designer, where you can finish creating your email content.
 
 :::image type="content" source="media/email-template-dialog.png" alt-text="Dialog for choosing an email template." lightbox="media/email-template-dialog.png":::
 
@@ -61,7 +61,7 @@ Each email message must have a name, which identifies the message when you're lo
 
 ### Enter a subject for the message
 
-Enter a subject for your message by selecting **Add a subject** in the email header section at the top of the page and filling in the **Subject** field inside the **Email header** pane. This is a very important setting because this is one of the first things recipients will see when they receive the email, and they may use this to decide whether to read the message.
+Enter a subject for your message by selecting **Add a subject** in the email header section at the top of the page and filling in the **Subject** field inside the **Email header** pane. This is an important setting because this is one of the first things recipients see when they receive the email, and they may use this to decide whether to read the message.
 
 You can also add a preheader, which shows up next to or below the subject line in the recipient's inbox. Preheader allows you to create custom text that displays in your recipient's inbox before they open the email message. The preheader is your chance to create a line that grabs the recipient's attention as soon as they see your message.
 
@@ -81,12 +81,12 @@ To access all the **Email header** settings, select a section when hovering over
 - **Send settings**
     - **To address**: This must contain an expression for finding each address the message will be sent to. This should almost always be the dynamic expression provided by default, which is `{{contact.emailaddress1}}`.
     - **From address**: This is the email address for the person who sends the message. This is the default email address set for your organization in the **Admin settings**. The domain shown here should be authenticated as belonging to your organization, which can dramatically impact deliverability.
-    - **From name**: This is the name that recipients will see as the sender when they receive the message. This is the default from name set for your organization in the **Admin settings**. Recipients are more likely to open your message if they see a name they recognize here.
+    - **From name**: This is the name that recipients see as the sender when they receive the message. This is the default from name set for your organization in the **Admin settings**. Recipients are more likely to open your message if they see a name they recognize here.
     - **Reply-to address**: The email address that reply messages are sent to when you want the messages to go to a different email address than the from address.
 - **Email settings**
     - **Email template**: The template you selected when creating the email. You can change the template by selecting the template name.
         > [!IMPORTANT]
-        > If you change the template, your current email content will not be preserved (apart from the email header).
+        > If you change the template, your current email content won't be preserved (apart from the email header).
     - **Email type**: Email can be either commercial (default type), or transactional.
     - **Content type**: This can be either a normal email (default content type), or a confirmation request for double opt-in scenarios.
     - **Language**: The language your email is in.
@@ -94,7 +94,7 @@ To access all the **Email header** settings, select a section when hovering over
     - **Automatically generate plain text**: This option is set to **Yes** by default. You can, however, set it **No** and provide your own plain text version of the email.
     - **Plain text preview**: This field shows the preview of the plain text version of your email.
 
-For complete details about how to use these settings, see [Set the sender, receiver, language and legal designation for a message](email-properties.md). We recommend that you don't change any of these settings until you've read that topic.
+For complete details about how to use these settings, see [Set the sender, receiver, language, and legal designation for a message](email-properties.md). We recommend that you don't change any of these settings until you've read that topic.
 
 ## Design your content
 
@@ -103,7 +103,7 @@ The email content designer resembles the other [digital content designers](real-
 - Use the **Designer** tab graphical tool to design your content by using drag-and-drop, point-and-click operations. Add new elements to your design by dragging design elements from the **Designer** > **Toolbox** tab to the canvas. Choose a design element that already exists in your design, and then open the **Designer** > **Properties** tab to configure it and style it. To style the overall message with basic fonts, colors, and background, select the canvas and open the **General styles** tab.
 - When you select a design element on the canvas, you'll usually see a formatting toolbar just above the element. The controls offered by the toolbar vary depending on which type of element you've selected. Most toolbars provide buttons to move, copy, or delete the selected element, in addition to specialized buttons that vary by element type. The toolbar also includes an arrow, which allows you to quickly switch to the parent element that contains the selected element.
 - When a text element is selected, you'll get a full formatting toolbar that you can use to apply basic text formatting like you would in Microsoft Word. It also includes a **Personalization** button ![Personalization button](media/personalization-button.png "Personalization button"), which you can use to add dynamic content such as a mail-merge field that displays the recipient's name. More information: [Personalize content using predefined dynamic text](real-time-marketing-predefined-dynamic-text.md)
-- To resize an image, divider, or button, click to select the element. You will see small circles on the corners and sides of the element. Select a circle and drag to resize.
+- To resize an image, divider, or button, click to select the element. You'll see small circles on the corners and sides of the element. Select a circle and drag to resize.
 - Use the **HTML** button ![HTML button.](media/html-button2.png "HTML button") to edit the raw HTML directly. You might use this to paste in an existing HTML design, or to fine-tune the code in ways that aren't supported by the graphical editor (such as custom attributes or logic).
     > [!TIP]
     > Microsoft doesn't provide support for custom HTML in emails.
@@ -127,7 +127,7 @@ More information: [Design your digital content](real-time-marketing-email.md)
 
 Marketing messages are delivered as HTML and therefore support hyperlinks. Some types of links provide access to special features that are hosted by Dynamics 365 Customer Insights - Journeys, whereas others can simply be standard links to content anywhere on the web. A preference center link is required before any commercial message can pass the error check and go live, but other links are optional, so you can use them only as needed.
 
-The following list describes the types of links that are available. You'll use the [assist edit](real-time-marketing-personalization.md) feature to add links as text in a text element, while other types of links are added by using a button or image.
+The following list describes the types of links that are available. Use the [assist edit](real-time-marketing-personalization.md) feature to add links as text in a text element, while other types of links are added by using a button or image.
 
 Text/button/image links can like to:
 
@@ -137,10 +137,10 @@ Text/button/image links can like to:
 
 Other types of links:
 
-- **Preference center (required)**: All marketing commercial email messages must include a link to a preference center. A preference center allows customers to manage their consent preferences, including purposes and topics for the types of communications they want to receive. Contacts can opt in or out of specific communication types and update their contact details. You can customize preference centers to reflect your graphical identity and support multiple languages or brands. Learn more: [Preference center management](real-time-marketing-compliance-settings.md#preference-center-management)
+- **Preference center (required)**: All marketing commercial email messages must include a link to a preference center. A preference center allows customers to manage their consent preferences, including purposes and topics for the types of communications they want to receive. Contacts can opt in or out of specific communication types and update their contact details. You can customize preference centers to reflect your graphical identity and support multiple languages or brands. Learn more: [Preference center management](real-time-marketing-compliance-settings.md#preference-center-management).
 
     > [!NOTE]
-    >A link to your preference center is automatically added in the footer of all out of the box layout-enabled email templates.
+    > A link to your preference center is automatically added in the footer of all out of the box layout-enabled email templates.
 
     You can add a preference center link to your page or email manually by highlighting the link text and selecting **Link** on the text toolbar, and then using the [personalization](real-time-marketing-personalization.md) feature to select the preference center URL from the content settings.
 

@@ -1,7 +1,7 @@
 ---
 title: One-click unsubscribe support for emails
 description: One-click unsubscribe helps recipients opt out of commercial emails in Customer Insights - Journeys. Learn how to enable and manage this feature.
-ms.date: 06/20/2025
+ms.date: 03/25/2026
 ms.topic: get-started
 author: alfergus
 ms.author: alfergus
@@ -43,7 +43,7 @@ Email providers use this information to determine spam and reputation scores for
 
 ## Enable one-click unsubscribe in Customer Insights - Journeys
 
-Customer Insights - Journeys automatically includes one-click unsubscribe headers in all commercial emails, without changing any existing email or journey.
+Customer Insights - Journeys automatically includes one-click unsubscribe headers in all commercial emails without changing any existing email or journey.
 
 To turn on one-click unsubscribe:
 

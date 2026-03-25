@@ -1,7 +1,7 @@
 ---
 title: Manage consent for email, SMS (text), and custom channel messages
 description: Manage consent for email, SMS, and custom channel messages in Customer Insights - Journeys. Learn how to set up, update, and audit consent records for compliance.
-ms.date: 07/24/2025
+ms.date: 03/25/2026
 ms.topic: reference
 author: alfergus
 ms.author: alfergus
@@ -97,15 +97,15 @@ In the *disabled enforcement model*, *all customers* are *sent* messages from al
 
 ## View and manage consent records
 
-In the consent center, you see a list of all contact point consents and their related attributes (type, status, source of consent data, and date modified). To see a compact view for a single consent record or change it, select the contact-point name from the list of records.
+In the consent center, you see a list of all contact point consents and their related attributes (type, status, source of consent data, and date modified). To see a compact view or edit a single consent record, select the contact point name from the list of records.
 
-The contact and lead forms let you quickly see and update a customer's consent, so you can easily manage what types of messages you send to your customers. You find this comprehensive view under the **Communication** tab. It gives you one place to manage consent across every channel and line of business in your organization.
+The contact and lead forms let you quickly see and update a customer's consent so you can easily manage what types of messages you send to your customers. You find this comprehensive view under the **Communication** tab. It gives you one place to manage consent across every channel and line of business in your organization.
 
 The **Communication** tab lets you:
 
-1. Get a summary view of the consent each contact or lead provides, so you can see if the customer is contactable at a glance.
-1. Easily change the consent for the email addresses, phone numbers, and custom channels of a contact or lead directly from the contact or lead forms. This gives you control over the type of messages you send to the customer on each channel. The grid view shows you both the consent record and its evaluated contactability. This helps answer the question: "Why did my journey get blocked because there's no consent?"
-1. Drill down into consent for each compliance profile set up in your organization, so you can understand customer consent for each line of business.
+1. Get a summary view of the consent each contact or lead provides, so you can see if a customer is contactable at a glance.
+1. Easily change the consent for the email addresses, phone numbers, and custom channels of a contact or lead directly from the contact or lead forms. This gives you control over the type of messages you send to the customer on each channel. The grid view shows you both the consent record and its evaluated contactability. This helps you determine if a journey was blocked for consent reasons.
+1. Drill down into consent for each compliance profile set up in your organization so you can understand customer consent for each line of business.
 
 You see the consent records for each purpose and topic (if present) of the selected compliance profile here, and you can update them directly. You can also choose a different contact point from the drop-down and select the compliance profile you want to manage consent records for.
 
