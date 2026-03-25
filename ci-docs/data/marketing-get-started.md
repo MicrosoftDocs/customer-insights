@@ -19,7 +19,7 @@ By connecting both Customer Insights applications, you can:
 - Load data from Customer Insights - Journeys into Customer Insights - Data and combine it with customer data from other sources.
 - Apply Customer Insights data cleansing, enrichment, and fuzzy matching tools.
 
-To use both Customer Insights apps together, use the [integration through Microsoft Dataverse](#use-rich-customer-profiles-in-real-time-marketing).
+To use both Customer Insights apps together, use the [integration through Microsoft Dataverse](#use-rich-customer-profiles-in-real-time-journeys).
 
 ## Use rich customer profiles in real-time journeys
 
