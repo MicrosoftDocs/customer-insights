@@ -45,6 +45,7 @@ To add the **Insights** tab to custom forms:
     > - The tab must contain only one visible section
     > - The section must contain exactly one visible control
     > - Do not include empty rows, placeholder cells, or additional controls in the same tab
+    >
     > Tabs configured as single‑component with multiple rows or empty cells may render blank or unpredictably.
 
 1. Save changes and publish all customizations.
