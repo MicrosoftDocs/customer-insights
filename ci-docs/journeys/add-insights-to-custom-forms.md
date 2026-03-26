@@ -1,7 +1,7 @@
 ---
 title: Add (customized) contact or lead insights to custom forms
 description: Learn how to add customized contact or lead insights to custom forms Dynamics 365 Customer Insights - Journeys.
-ms.date: 10/07/2024
+ms.date: 03/26/2026
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
@@ -21,15 +21,16 @@ To add the **Insights** tab to custom forms:
 1. Open the form editor where you want to have the control placed.
 1. Add a new tab to that form.
 1. Make sure to check the "Expand first component to full tab" checkbox.
-    
-    :::image type="content" source="media/add-insights-expand-tab.png" alt-text="Screenshot showing Expand first component to full tab checkbox.":::
+
+    :::image type="content" source="media/add-insights-expand-tab-small.png" alt-text="Screenshot showing Expand first component to full tab checkbox." lightbox="media/add-insights-expand-tab.png":::
+
 1. Select the **Components** section on the left side then select **Get more components**.
     
-    :::image type="content" source="media/add-insights-get-more-components.png" alt-text="Screenshot showing Get more components link.":::
+    :::image type="content" source="media/add-insights-get-more-components-small.png" alt-text="Screenshot showing Get more components link." lightbox="media/add-insights-get-more-components.png":::
 
 1. In the side panel that opens, search for "InsightsControl."
     
-    :::image type="content" source="media/add-insights-insights-control.png" alt-text="Screenshot showing InsightsControl component.":::
+    :::image type="content" source="media/add-insights-insights-control-small.png" alt-text="Screenshot showing InsightsControl component." lightbox="media/add-insights-insights-control.png":::
 
 1. Select the “InsightsControl” component then select **Add**.
 1. The control now appears under the **More components** section. You can now add the control to the form.
@@ -37,14 +38,14 @@ To add the **Insights** tab to custom forms:
     - **Contact**: ContactInsights.msdynmkt_InsightsConfig.json
     - **Lead**: LeadInsights.msdynmkt_InsightsConfig.json
 
-    :::image type="content" source="media/add-insights-static-value.png" alt-text="Screenshot showing the Static value field.":::
+    :::image type="content" source="media/add-insights-static-value-small.png" alt-text="Screenshot showing the Static value field." lightbox="media/add-insights-insights-control.png":::
 
     > [!NOTE]
-    > When using **InsightsControl** in a **full‑page** or **single‑component** tab:
+    > When using **InsightsControl** in a full‑page or single‑component tab:
     >
-    > - The tab must contain only one visible section
-    > - The section must contain exactly one visible control
-    > - Do not include empty rows, placeholder cells, or additional controls in the same tab
+    > - The tab must contain only one visible section.
+    > - The section must contain exactly one visible control.
+    > - Do not include empty rows, placeholder cells, or additional controls in the same tab.
     >
     > Tabs configured as single‑component with multiple rows or empty cells may render blank or unpredictably.
 
@@ -53,7 +54,6 @@ To add the **Insights** tab to custom forms:
 ## Customize the layout
 
 > [!NOTE]
->
 > - The preferred way to customize the layout is to clone an existing configuration and customize the JSON according to user needs.
 > - Using widgets not listed in "Available widgets" for a given entity results in unpredictable errors.
 > - For more information about web resources, see [Create or edit model-driven app web resources to extend an app](/power-apps/maker/model-driven-apps/create-edit-web-resources)
@@ -69,7 +69,7 @@ To create a JSON file with layout definition:
 1. After making changes, save the file on your local drive with a ".js" extension.
 1. In the admin portal (**Settings** ![The Settings menu icon.](media/settings-icon.png "The Settings menu icon") > **Advanced settings**), go to **Solutions** and select the solution that the web resource should belong to.
 
-    :::image type="content" source="media/add-insights-admin-portal.png" alt-text="Screenshot showing the admin portal.":::
+    :::image type="content" source="media/add-insights-admin-portal-small.png" alt-text="Screenshot showing the admin portal." lightbox="media/add-insights-admin-portal.png":::
 
 1. Upload the file. In the custom control configuration, make sure to use the value of the “Name” field (including the solution prefix).
 
