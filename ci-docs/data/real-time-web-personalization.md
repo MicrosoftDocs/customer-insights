@@ -78,7 +78,7 @@ To have Customer Insights - Data automatically merge an unknown profile with a k
 ## Related information
 
 - [Real-time web personalization overview](real-time-web-personalization-overview.md)
-- [No-code web personalization using Optimizely](optimizely-integration.md)
+- [Personalize your customer's web experience](optimizely-integration.md)
 - [Known and unknown customers](customer-profiles.md#known-and-unknown-customers)
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
