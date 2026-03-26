@@ -3531,9 +3531,19 @@
       "redirect_url": "/dynamics365/customer-insights/journeys/copilot-overview",
       "redirect_document_id": false
     },
-        {
+    {
+      "source_path": "ci-docs/journeys/real-time-marketing-outbound-subscription.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/real-time-marketing-compliance-settings",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "ci-docs/journeys/analytics-overview.md",
       "redirect_url": "/dynamics365/customer-insights/journeys/real-time-marketing-analytics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/outbound-marketing-segments-in-customer-insights-journeys.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
       "redirect_document_id": false
     }
   ]

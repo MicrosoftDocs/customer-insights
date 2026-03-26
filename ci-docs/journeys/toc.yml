@@ -220,8 +220,6 @@
         href: bring-your-own-azure-data-lake.md   
     - name: Enhance your segments
       items:
-      - name: Best practices for outbound segments in real-time journeys
-        href: outbound-marketing-segments-in-customer-insights-journeys.md
       - name: Automatic segment management
         href: auto-segment-management.md
       - name: Add protected fields in segment criteria
@@ -496,8 +494,6 @@
       href: one-click-unsubscribe.md    
     - name: Double opt-in in real-time journeys
       href: real-time-marketing-double-opt-in.md
-    - name: Use outbound subscription centers in real-time journeys
-      href: real-time-marketing-outbound-subscription.md    
     - name: Migrate consent records to real-time journeys
       href: real-time-marketing-migrate-consent.md
     - name: Consent management for business units

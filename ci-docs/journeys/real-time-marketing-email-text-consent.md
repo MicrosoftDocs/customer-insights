@@ -1,7 +1,7 @@
 ---
 title: Manage consent for email, SMS (text), and custom channel messages
 description: Manage consent for email, SMS, and custom channel messages in Customer Insights - Journeys. Learn how to set up, update, and audit consent records for compliance.
-ms.date: 07/24/2025
+ms.date: 03/25/2026
 ms.topic: reference
 author: alfergus
 ms.author: alfergus
@@ -56,7 +56,7 @@ To collect tracking consent, add the tracking purpose to forms and preference ce
 Tracking consent is also considered for the form prefill feature.
 
 > [!NOTE]
-> Customer Insights - Journeys can check the **Allow Tracking** field in contact records to see if it can track the contact's interactions. This check is in addition to the Customer Insights - Journeys contact-point consent opt-in or opt-out check for tracking. The system doesn't perform these checks for other entity types, like leads or Customer Insights - Data profiles. This additional check is managed by the [Check contact consent for real-time journeys](#disable-contact-level-consent-checks) feature switch.
+> Customer Insights - Journeys can check the **Allow Tracking** field in contact records to see if it can track the contact's interactions. This check is in addition to the Customer Insights - Journeys contact-point consent opt-in or opt-out check for tracking. The system doesn't perform these checks for other entity types, like leads or Customer Insights - Data profiles. This additional check is managed by the *Check contact consent for real-time journeys* feature switch.
 
 > [!IMPORTANT]
 > With the July 2023 release, customer consent data uses the new multi-brand consent features. For some Customer Insights - Journeys users, the migration changes the settings that control whether tracking links are included in messages. The changes can prevent tracking in messages if customers haven't given explicit consent. After the migration, to let tracking links be included in messages for customers who haven't provided consent, update the tracking purpose enforcement model of your compliance profile to "Nonrestrictive." This lets tracking links be substituted in emails, as long as the receiver hasn't explicitly opted out of tracking.
@@ -93,37 +93,25 @@ For example, in the *nonrestrictive enforcement model*, a customer who hasn't se
 In the *disabled enforcement model*, *all customers* are *sent* messages from all communication channels in a journey and are *tracked*.
 
 > [!NOTE]
-> All channels include email, text, and custom channels.
+> All channels include email, text, voice, and custom channels.
 
-> [!IMPORTANT]
-> If your environment has real-time journeys and outbound marketing installed, the app can check the **Allow email** and **Allow bulk email** fields in contact records to see if email can be sent to a contact's email address. Both fields must be set to **Allow** for a commercial email to be sent. Only the **Allow email** field must be set to allow transactional emails. These checks are in addition to the Customer Insights - Journeys contact-point consent opt-in or opt-out checks for emails sent by journeys. This additional check is managed by the [Check contact consent for real-time journeys](#disable-contact-level-consent-checks) feature switch. These checks aren't done for other entity types, like leads or Customer Insights - Data profiles.
+## View and manage consent records
 
-## Disable contact-level consent checks
+In the consent center, you see a list of all contact point consents and their related attributes (type, status, source of consent data, and date modified). To see a compact view or edit a single consent record, select the contact point name from the list of records.
 
-Starting February 2024, a new feature switch lets you set the system to consider or bypass contact-level consent checks. You can separate consent by contact point for emails, so each entity has consent captured and enforced by contact point, and the system ignores consent on the contact record for journeys that target contacts.
+The contact and lead forms let you quickly see and update a customer's consent so you can easily manage what types of messages you send to your customers. You find this comprehensive view under the **Communication** tab. It gives you one place to manage consent across every channel and line of business in your organization.
 
-Disable contact-level consent checks when outbound journeys aren't in use. To disable contact-level consent checks:
+The **Communication** tab lets you:
 
-1. Go to **Settings** > **Other settings** > **Feature switches**.
-1. Set the **Check contact consent for real-time journeys** toggle to **Off**.
-1. Select **Save** in the upper-right corner.
+1. Get a summary view of the consent each contact or lead provides, so you can see if a customer is contactable at a glance.
+1. Easily change the consent for the email addresses, phone numbers, and custom channels of a contact or lead directly from the contact or lead forms. This gives you control over the type of messages you send to the customer on each channel. The grid view shows you both the consent record and its evaluated contactability. This helps you determine if a journey was blocked for consent reasons.
+1. Drill down into consent for each compliance profile set up in your organization so you can understand customer consent for each line of business.
 
-The system enforces consent only based on contact point consent records.
+You see the consent records for each purpose and topic (if present) of the selected compliance profile here, and you can update them directly. You can also choose a different contact point from the drop-down and select the compliance profile you want to manage consent records for.
 
-## How is consent populated on different unsubscribe experiences
+When you change a consent record, the contactability column and the communication and tracking status cards update immediately. However, sometimes updates to a consent record don't affect its contactability. For example, if you update the consent status for a topic record to opt in while the parent purpose stays opted out, the contactability of the topic record doesn't change.
 
-Customer Insights - Journeys offers [different options for providing an unsubscribe experience to your customers](real-time-marketing-compliance-settings.md#compliance-profiles). The system computes the exact consent status for different scenarios and always shows the user visiting the unsubscribe experience an accurate view of consent.
-
-The consent status shown on an unsubscribe experience depends on several factors:
-
-1. Whether the [check contact consent for real-time journeys feature switch](real-time-marketing-email-text-consent.md#disable-contact-level-consent-checks) is on or off.
-1. The enforcement model of the purpose.
-1. The channel for which consent is shown.
-1. The contact point's consent status.
-
-Review these important definitions before you start.
-
-#### Will send, will not send
+### Will send, will not send
 
 - **Will send** means the contact point consent record and its purpose enforcement model let the app send an email for that purpose to that address. For example, if the purpose is nonrestrictive and no contact point consent record exists, the app evaluates that as **Will send**.
 - **Will not send** means the app evaluates that email address’s contact point consent record and purpose and decides not to send an email.  
@@ -132,51 +120,6 @@ Review these important definitions before you start.
 
 - Similarly, **Will track** means the tracking contact point consent record and its purpose enforcement model let the app include tracking links in messages sent to that address. For example, if the purpose is nonrestrictive and no contact point consent record exists, the app evaluates that as **Will track**.
 - **Will not track** means the app evaluates that email address’s contact point consent record and purpose and decides not to track links in the email.
-
-### Subscription centers used in real-time journeys
-
-> [!IMPORTANT]
-> Subscription centers will be removed along with outbound marketing. Consider using a preference center instead.
-
-The **DoNotBulkEmail**, **DoNotEmail**, and **DoNotTrack** fields on a subscription center prefill for the contact based on contact data and contact point consent records for all the contact's email addresses.
-
-1. **DoNotBulkEmail** prefills to block sending if the attribute is currently set to block or if any commercial purpose on the compliance profile from any email address on the contact evaluates to **will not send**.
-1. **DoNotEmail** prefills to block sending if the attribute is currently set to block or if any transactional purpose on the compliance profile from any email address on the contact evaluates to **will not send**.
-1. **DoNotTrack** prefills to block tracking if the attribute is currently set to block or if the tracking purpose on the compliance profile from any email address on the contact evaluates to **will not track**.  
-
-When a user submits changes through a subscription center, the states of **DoNotBulkEmail**, **DoNotEmail**, and **DoNotTrack** update the contact and the contact point consent records for all the contact's email addresses, as set in the [audience configuration](real-time-marketing-audience-data.md#select-the-audience-source-for-journeys).
-
-1. If both **DoNotBulkEmail** and **DoNotEmail** are set to allow emails, all commercial purposes on the compliance profile for every email address on the contact record have an opted-in contact point consent record. If either is set to don't allow, all contact point consent records update to opted-out.
-1. The **DoNotEmail** state is written to all transactional purposes on the compliance profile for every email address on the contact record.
-1. The **DoNotTrack** state is written to the tracking purpose on the compliance profile for every email address on the contact record.
-
-### Preference page and preference center  
-
-For journeys **targeting contacts**, each email address consent prefills if it's contactable (**will send**) or traceable (**will track**) based on the specific purpose's enforcement model and its contact point consent record, combined with the contact-level consent fields (only if the [check contact consent](real-time-marketing-email-text-consent.md#disable-contact-level-consent-checks) for real-time journeys feature switch is on).
-
-1. **Commercial purposes/topics** prefill to opt in only if the contact point consent record evaluates to **will send** and both **DoNotBulkEmail** and **DoNotEmail** are set to allow emails.
-1. **Transactional purposes/topics** prefill to opt in only if the contact point consent record evaluates to **will send** and **DoNotEmail** is set to allow emails.
-1. **Tracking purpose** prefill to opt in only if the contact point consent record evaluates to **will send** and the contact's **DoNotTrack** is set to allow tracking.
-
-For journeys **targeting leads or Customer Insights - Data profiles**, each email address consent prefills if it's contactable (**will send**) or traceable (**will track**) based on the specific purpose's enforcement model and its contact point consent record. The preference page and preference center experiences prefill email address consent to opt in if the contact point consent record for the email evaluates to **will send**.
-
-When a user submits consent changes through a preference page or preference center, the system updates only the relevant contact point consent records. The system doesn't modify any contact-level consent attribute in these cases.  
-
-## View and manage consent records
-
-In the consent center, you see a list of all contact point consents and their related attributes (type, status, source of consent data, and date modified). To see a compact view for a single consent record or change it, select the contact-point name from the list of records.
-
-The contact and lead forms let you quickly see and update a customer's consent, so you can easily manage what types of messages you send to your customers. You find this comprehensive view under the **Communication** tab. It gives you one place to manage consent across every channel and line of business in your organization.
-
-The **Communication** tab lets you:
-
-1. Get a summary view of the consent each contact or lead provides, so you can see if the customer is contactable at a glance.
-1. Easily change the consent for the email addresses, phone numbers, and custom channels of a contact or lead directly from the contact or lead forms. This gives you control over the type of messages you send to the customer on each channel. The grid view shows you both the consent record and its evaluated contactability. This helps answer the question: "Why did my journey get blocked because there's no consent?"
-1. Drill down into consent for each compliance profile set up in your organization, so you can understand customer consent for each line of business.
-
-You see the consent records for each purpose and topic (if present) of the selected compliance profile here, and you can update them directly. You can also choose a different contact point from the drop-down and select the compliance profile you want to manage consent records for.
-
-When you change a consent record, the contactability column and the communication and tracking status cards update immediately. However, sometimes updates to a consent record don't affect its contactability. For example, if you update the consent status for a topic record to opt in while the parent purpose stays opted out, the contactability of the topic record doesn't change.  
 
 ## Audit consent records
 
