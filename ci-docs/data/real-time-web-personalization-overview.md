@@ -77,7 +77,7 @@ Web personalization starts by assigning an anonymous tracking cookie, capturing 
 
 - Unknown customers and their activity typically appear on the Customer Insights - Data **Customers** page in about 30 seconds. You can also see this information in Power Apps in the [Web tracking and personalization tables](tables.md#real-time-web-personalization-tables-preview).
 
-- Your [website personalizes content](real-time-web-personalization.md#personalize-your-customers-web-experience) for the unknown visitor.
+- Your [website personalizes content](optimizely-integration.md) for the unknown visitor.
 
 **Make unknown visitor known**
 

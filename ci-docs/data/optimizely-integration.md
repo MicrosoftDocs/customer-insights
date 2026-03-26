@@ -15,7 +15,7 @@ ms.custom: bap-template
 
 Personalizing the web experience for your visitors is critical to foster loyalty, increase engagement, enhance satisfaction, and drive higher conversion rates. You can personalize your customers' web experience in either of the following ways:
 
-- Without code, by using the Optimizely integration with Customer Insights - Data. Learn more in [Personalize the web experience without code using Optimizely](#personalize-the-web-experience-without-code-using-optimizely).
+- Without code, by using the Optimizely integration with Customer Insights - Data. Learn more in [Personalize the web experience without code by using Optimizely](#personalize-the-web-experience-without-code-by-using-optimizely).
 
 - With code, by using APIs. Learn more in [Personalize the web experience with code](#personalize-the-web-experience-with-code).
 

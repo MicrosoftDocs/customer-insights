@@ -63,7 +63,7 @@ Sample queries for the *CustomerProfile* table and segment memberships.
 
 ### Web Personalization
 
-Sample queries to [personalize your website](real-time-web-personalization.md#personalize-your-customers-web-experience) based on the CookieId. The response returns both [known and unknown customers](customer-profiles.md#known-and-unknown-customers). The tables created for [web tracking and personalization](tables.md#real-time-web-personalization-tables-preview) are available in Dataverse.
+Sample queries to [personalize your website](optimizely-integration.md) based on the CookieId. The response returns both [known and unknown customers](customer-profiles.md#known-and-unknown-customers). The tables created for [web tracking and personalization](tables.md#real-time-web-personalization-tables-preview) are available in Dataverse.
 
 |Query type |Example  | Note  |
 |---------|---------|---------|
