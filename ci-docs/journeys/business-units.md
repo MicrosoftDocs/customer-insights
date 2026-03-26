@@ -1,7 +1,7 @@
 ---
 title: Use business units to control access to Customer Insights - Journeys records
 description: Learn how business units affect users and record visibility in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/17/2023
+ms.date: 03/25/2026
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -30,10 +30,9 @@ For complete details about how business units work in model-driven apps in Dynam
 - Privileged users, such as admins, have security roles that grant them _organization-level access_ to the relevant entities. This allows them to access records belonging to all business units.
 - Teams can also combine with business units to affect record access. A record can be owned by a team rather than a user, in which case the record becomes part of the team's business unit. Teams can likewise combine users from different business units, in which case members of that team see other team members' records as though they were all in the same business unit. More information: [Manage teams](/power-platform/admin/manage-teams)
 
-## Use business units in Customer Insights - Journeys or outbound marketing
+## Use business units in Customer Insights - Journeys
 
-- [Business unit support in outbound marketing](business-units-support-outbound-marketing.md)
 - [Business unit support in Customer Insights - Journeys](real-time-marketing-business-units.md)
-- [Support for modernized business units ](real-time-marketing-modernized-business-units.md)
+- [Support for modernized business units](real-time-marketing-modernized-business-units.md)
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]

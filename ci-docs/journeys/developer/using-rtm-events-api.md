@@ -1,7 +1,7 @@
 ---
 title: Use the events API in real-time journeys
 description: Learn how to use the events API to access date from events, sessions, session tracks, and passes in real-time journeys.
-ms.date: 10/07/2025
+ms.date: 03/25/2026
 ms.topic: overview
 author: alfergus
 ms.author: colinbirkett
@@ -11,8 +11,6 @@ ms.custom: sfi-image-nochange
 ---
 
 # Use the events API in real-time journeys
-
-[!INCLUDE [consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
 
 The events API is a programmatic method to access data from events, sessions, session tracks, passes, speakers, and sponsorships. Additionally, the events API allows you to register for events and sessions.
 

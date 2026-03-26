@@ -1,7 +1,7 @@
 ---
 title: Create content blocks that you can reuse in multiple designs
 description: How to create reusable content blocks and use them in your email designs in Dynamics 365 Customer Insights - Journeys.
-ms.date: 12/15/2023
+ms.date: 03/25/2026
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
@@ -63,8 +63,8 @@ There are two ways to create content blocks: from the content block editor or fr
 ### Notes
 
 1. You can add tags to content blocks that will make them easier to find later.
-1. Content blocks have two states or modes. In the *Draft* state/mode, the content block can be edited and isn't available for inserting into emails. In *Live* (outbound marketing) or *Ready to send* (Customer Insights - Journeys) state/mode, the content block can't be edited.
-1. Saving a content block from the email editor saves it in *Draft* state/mode. You'll have to open the saved content block later in the content block editor to change its state/mode.
+1. Content blocks have two states or modes. In the *Draft* state, the content block can be edited and isn't available for inserting into emails. In *Ready to send* (Customer Insights - Journeys) state, the content block can't be edited.
+1. Saving a content block from the email editor saves it in *Draft* state. You'll have to open the saved content block later in the content block editor to change its state.
 
 ## Using a content block
 
@@ -82,7 +82,7 @@ Using a content block is as simple as finding it in the list of available blocks
 
 ## Updating a content block
 
-A content block can be edited while it is in a *Draft* state. If it is in a *Live* (outbound marketing) or *Ready to send* (Customer Insights - Journeys) state, select **Edit** to place it in a *Draft* state so it can be edited.
+A content block can be edited while it is in a *Draft* state. If it is in a *Ready to send* (Customer Insights - Journeys) state, select **Edit** to place it in a *Draft* state so it can be edited.
 
 > [!IMPORTANT]
 > Updating a content block does not update any emails that are using that content block. Each time a content block is inserted into an email, that email gets a copy of the content block that is no longer connected or associated with the original content block.
