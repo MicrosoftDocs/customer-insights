@@ -1,7 +1,7 @@
 ---
 title: Import outbound emails, templates, and content blocks
 description: Learn how to import outbound emails, templates, and content blocks in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/22/2023
+ms.date: 03/25/2026
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
@@ -36,7 +36,7 @@ To start the email import process, go to **Channels** > **Emails** and select th
 > - Code element
 > - Compliance profile details
 > - Personalization that includes #if and #else conditions
-> - Content settings placeholders (except from the subscription center and company address)
+> - Content settings placeholders (except from the preference center and company address)
 > - FormDoiSubmission (used for form double opt-in)
 > - Contextual message placeholders
 > - View as a web page
