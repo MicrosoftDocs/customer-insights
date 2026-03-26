@@ -1,7 +1,7 @@
 ---
 title: Authenticate your domains
 description: Learn how to authenticate your domains in Dynamics 365 Customer Insights - Journeys.
-ms.date: 07/04/2025
+ms.date: 03/25/2026
 ms.topic: how-to
 author: alfergus
 ms.author: colinbirkett
@@ -42,8 +42,6 @@ Set up as many authenticated domains as you need to cover all the from-addresses
 
 > [!IMPORTANT]
 > To use form prefilling, the page hosting the form must be served over HTTPS (not HTTP).
->
-> Form prefilling is **only** supported in outbound marketing forms.
 
 > [!NOTE]
 > All new instances and trials automatically authenticate their instance domain with DKIM and SPF and set that domain as the default sending domain for your instance. Therefore, you'll usually see at least one authenticated domain already set up for all new instances. It should not be used for production email sending purposes, as it's designed only for initial testing purposes. Make sure to authenticate your own domain before you go live. 

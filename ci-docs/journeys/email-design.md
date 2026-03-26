@@ -20,7 +20,7 @@ For a step-by-step tutorial on how to create and send your first marketing email
 > [!IMPORTANT]
 > As of April 2023, the following fields have been relocated from the right pane to the canvas: From Name, From Address, Subject, and Pre-header. This change allows for easier access and editing of these fields.
 >
-> If you have customized these fields on the "Email Properties" form, you should copy the customization to the new "Email Header" form (Customer Insights - Journeys form ID: 08732368-3f74-426e-9f96-595fbd6867e9, outbound form ID: e21ed42d-aa03-40b5-8dd8-57207fea78ba). Customizations may include handlers that control the visibility of these fields or react to changes in these fields.
+> If you have customized these fields on the "Email Properties" form, you should copy the customization to the new "Email Header" form (Customer Insights - Journeys form ID: 08732368-3f74-426e-9f96-595fbd6867e9). Customizations may include handlers that control the visibility of these fields or react to changes in these fields.
 >
 > Customizations made to the main form or customizations adding new fields to the Email Property form *do not* require any action.
 

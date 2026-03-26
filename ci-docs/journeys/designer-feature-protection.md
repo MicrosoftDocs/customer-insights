@@ -1,7 +1,7 @@
 ---
 title: Control access to designer features
 description: How to limit access to the content designer's HTML tab and Litmus previews in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/18/2023
+ms.date: 03/25/2026
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
@@ -12,9 +12,6 @@ search.audienceType:
 ---
 
 # Control access to designer features
-
-> [!IMPORTANT]
-> The designer is only available in real-time journeys. It is not available in outbound marketing.
 
 Designer feature protection lets you control which users have access to which features of the content designers, including in the email, marketing page, form, and content-block designers. You can use these settings to block access by any user or group to one or both of the following designer features:
 
