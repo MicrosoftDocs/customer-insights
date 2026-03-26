@@ -14,7 +14,7 @@ ms.custom:
 
 # Manage Customer Insights - Journeys forms
 
-This article explains how to edit, unpublish, and manage forms in Customer Insights - Journeys.
+This article explains how to edit, unpublish, and manage forms in Customer Insights - Journeys. It applies to both Marketing forms and Event Registration forms, unless differences are explicitly called out.
 
 ## Edit a live form
 

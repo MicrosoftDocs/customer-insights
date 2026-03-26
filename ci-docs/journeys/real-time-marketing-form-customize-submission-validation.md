@@ -105,6 +105,7 @@ The client-side validation in marketing and event registration forms helps to en
           var resp = new ValidateFormSubmissionResponse()
           {
              IsValid = isValid,
+             Error = "Your custom error string, which is shown to the user submitting the form"
              ValidationOnlyFields = new List<string>() { "g-recaptcha-response" }
           };
           context.OutputParameters["msdynmkt_validationresponse"] = Serialize(resp);
@@ -117,6 +118,9 @@ The client-side validation in marketing and event registration forms helps to en
     ```
 
     First, the URL is defined, then an instance of `HttpClient` is created. A `FormUrlEncodedContent` object is created containing the `recaptchaToken` retrieved in previous steps and the secret key that is provided by Google. Then a `POST` request is sent and the status code is checked, if not successful it returns. If successful, it deserializes the response using the deserialize helper method and `GRecaptchaResponse` that's defined later. It then creates a new `ValidateFormSubmissionResponse` object, serializes it, and sets it as the value of the output parameter `msdynmkt_validationresponse`, which is the one Microsoft service it uses to accept or reject the submission. Adding the `g-recaptcha-response` string to the `ValidationOnlyFields` list hides this field from the form submission in the user interface.
+
+    > [!NOTE]
+    > Make sure the `Error` value contains your custom error message, because this message is shown to users.
 
 1. Add the following code to define serialize and deserialize helper methods.
 
