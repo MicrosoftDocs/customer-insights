@@ -1,5 +1,5 @@
 ---
-title: Real-time web personalization overview (preview)
+title: Web tracking and personalization overview (preview)
 description: Learn how to provide personalized web interactions and experiences in real time with Customer Insights - Data.
 ms.date: 03/24/2026
 ms.topic: overview
@@ -9,23 +9,33 @@ ms.reviewer: v-wendysmith
 ms.custom: bap-template
 ---
 
-# Real-time web personalization overview (preview)
+# Web tracking and personalization overview (preview)
 
 [!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
-Real-time web personalization in Customer Insights – Data captures website activity for both known and anonymous visitors. Use these signals to tailor experiences as customers browse.
+Real-time web tracking and personalization in Customer Insights - Data captures and leverages website activity for both known and anonymous visitors.
 
-By tracking unknown customers, you can:
+**Anonymous customers**
 
-- Identify anonymous or unknown users who visit and later return to your website.
+Anonymous customer tracking lets you:
 
-- Track the activities of unknown users over time to understand their interests, such as the pages viewed and elements clicked.
+- Identify anonymous users who visit and later return to your website.
 
-- Personalize your website content when the customer returns based on their interests.
+- Track the activities of anonymous users over time to understand their interests, such as the pages viewed and elements clicked.
 
-An *unknown visitor* becomes a *known customer* when they share identifying details (for example, an email address to download content, create an account, or place an order). If the person visits from multiple devices, they initially appear as separate anonymous profiles; after they authenticate on each device, those profiles and their activity merge into a single known customer profile.
+- Personalize your web site content when the customer returns based on their interests.
 
-When an anonymous visitor becomes known, their earlier website activity is retained and carried forward. When you then unify this web activity with other sources (such as sales and support), you get a more complete view of customer needs and brand interactions.
+**Known customers**
+
+An *unknown customer* becomes a *known customer* when they share identifying details (for example, an email address to download content, create an account, or place an order).
+
+Converting an unknown customer to a known customer lets you:
+
+- Keep all the activity history that was accrued when they were unknown, providing deeper insight.
+
+- Combine unknown profiles and activity data from a person visiting from multiple machines into a single known customer profile.
+
+- Unify customer data from your web site with your other sources of customer data such as sales and support, giving you unprecedented ability to understand customer needs and how they interact with your brand.
 
 Watch this brief video to learn more about real-time web personalization.
 
@@ -41,7 +51,7 @@ Watch this brief video to learn more about real-time web personalization.
 Customer Insights - Data uses cookies to recognize returning visitors and enrich profiles over time. Cookie IDs use a rolling one-year expiration that refreshes with each visit. When a customer authenticates on your site, Customer Insights - Data merges the anonymous and known profiles in real time.
 For example, a retail store has a customer named Abbie in Customer Insights - Data who registered in person. When Abbie first visits your website, Customer Insights - Data creates an anonymous profile and tracks her web interactions. After Abbie authenticates, the profiles merge automatically. After the merge:
 
-- The known profile gets all the unknown profile's web interactions and appear on the known profile timeline.
+- The known profile gets all the unknown profile's web interactions and appears on the known profile timeline.
 - The known profile gets the cookie ID as a new identifier.
 - All downstream processes, such as segments, measures, and APIs, refer to the known profile going forward.
 - The unknown profile expires.
@@ -77,9 +87,9 @@ Web personalization starts by assigning an anonymous tracking cookie, capturing 
 
 - Your process calls the `setUser` function to associate the current web tracking GUID and its activity history with the PK from your `<WebCustomers>` table.
 
-**Unify identities in Customer Insights – Data**
+**Unify identities in Customer Insights - Data**
 
-- On the next unification run, Customer Insights – Data merges the `<WebCustomers>` table and the linked web tracking GUID into a single unified profile.
+- On the next unification run, Customer Insights - Data merges the `<WebCustomers>` table and the linked web tracking GUID into a single unified profile.
 
 - The unified profile preserves all earlier anonymous activity.
 
@@ -89,7 +99,7 @@ Web personalization starts by assigning an anonymous tracking cookie, capturing 
 
 - When the customer provides the same email address or phone number, your website finds the same PK and calls the `setUser` function.
 
-- On the next unification run, Customer Insights – Data merges multiple web tracking GUIDs (and any related customer records) into a single unified profile.
+- On the next unification run, Customer Insights - Data merges multiple web tracking GUIDs (and any related customer records) into a single unified profile.
 
 ## Next steps
 

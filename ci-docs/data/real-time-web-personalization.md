@@ -47,7 +47,7 @@ To validate the web events in Dataverse, sign in to [https://make.powerapps.com/
 
 ## Authenticate unknown customers and merge them with known customers
 
-To have Customer Insights - Data automatically merge an unknown profile with a known profile when a visitor authenticates, select the source table that you used to identify your customers when you [set up web tracking](#set-up-web-tracking). To identify and merge the profiles, the system needs to know the authenticated customer's unique ID. It gets this ID by calling the `SetUser` function.
+To have Customer Insights - Data automatically merge an unknown profile with a known profile when a visitor authenticates, select the source table that you used to identify your customers when you [set up web tracking](#set-up-web-tracking). To identify and merge the profiles, the system needs to know the authenticated customer's unique ID. It gets this ID by calling the `setUser` function.
 
 1. Sign in to Customer Insights - Data and select **Web tracking & personalization**.
 
@@ -57,7 +57,7 @@ To have Customer Insights - Data automatically merge an unknown profile with a k
 
    Only tables that you used as a source for data unification appear in the list of tables. Customer Insights - Data automatically identifies the visitor by using the primary key of the table that you select. The merge logic is the same as in the data unification process.
 
-1. Define the `setUser` function on your website. Typically, you only define this function on the page that authenticates visitors. The `<identifier>` is the visitor ID, such as `jsmith001`.
+1. Define the `setUser` function on your website. Typically, you only define this function on the page that authenticates visitors. The identifier is the visitor ID, such as `jsmith001`.
 
     ``` javascript
     <script>
@@ -73,25 +73,7 @@ To have Customer Insights - Data automatically merge an unknown profile with a k
    <button type="submit" onclick="setUser()">Submit</button>
    ```
 
-## Personalize your customers' web experience
 
-You can personalize your customers' web experience in either of the following ways:
-
-- Without code, by using the Optimizely integration with Customer Insights - data. Learn more in [No-code web personalization using Optimizely](optimizely-integration.md).
-
-- With code, by using APIs. Query any of the Customer Insights - Data APIs to retrieve rich information about each customer, such as demographic information, web interactions, activities, segments, and measures. Learn more in [Dataverse APIs for Customer Insights - Data](dv-odata.md).
-
-  Since the cookieIds are also used to uniquely identify a known customer or an unknown visitor, you can also use the cookieId to query a profile. Retrieve the Customer Insights - Data web tracking cookie on the server side of your website. Customer Insights - Data cookies are stored as "_msci" in the request.
-
-  For example, using C#, you can find the cookieID of the current visitor like this:
-
-  ```csharp
-  string cookieId = Request.Cookies["_msci"]; //CI-D cookie
-  ```
-
-  Then, use the cookie as an identifier to query any of the Customer Insights - Data APIs.
-
-The [web tracking and personalization tables](tables.md#real-time-web-personalization-tables-preview) are available in Dataverse.
 
 ## Related information
 
