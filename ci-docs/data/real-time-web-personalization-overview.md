@@ -15,6 +15,14 @@ ms.custom: bap-template
 
 Real-time web tracking and personalization in Customer Insights - Data captures and leverages website activity for both known and anonymous visitors.
 
+Watch this brief video to learn more about real-time web personalization.
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=0374bff9-f481-4324-8237-ebbaaffaed27]
+
+[!INCLUDE [public-preview-note](includes/public-preview-note.md)]
+
+## Known and unknown customers
+
 **Anonymous customers**
 
 Anonymous customer tracking lets you:
@@ -37,14 +45,8 @@ Converting an unknown customer to a known customer lets you:
 
 - Unify customer data from your web site with your other sources of customer data such as sales and support, giving you unprecedented ability to understand customer needs and how they interact with your brand.
 
-Watch this brief video to learn more about real-time web personalization.
-
-> [!VIDEO https://learn-video.azurefd.net/vod/player?id=0374bff9-f481-4324-8237-ebbaaffaed27]
-
 > [!TIP]
 > [Request access to the preview version](https://forms.office.com/r/TJEE62xTD3) of the real-time personalization features.
-
-[!INCLUDE [public-preview-note](includes/public-preview-note.md)]
 
 ## Customer tracking
 
