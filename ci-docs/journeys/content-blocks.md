@@ -19,7 +19,7 @@ ms.custom: sfi-image-nochange
 > [!NOTE]
 > Unless a style is explicitly set in the element properties, the default style is replaced with the email theme style.
 
-Content blocks are pre-made pieces of content that you can insert into emails. They can contain text, images, links, buttons, and more – anything that can be used as content in an email. They also can include formatting and layout. When inserted, all of the content (including the layout, if present) contained within the content block becomes part of the email.
+Content blocks are premade pieces of content that you can insert into emails. They can contain text, images, links, buttons, and more – anything that can be used as content in an email. They also can include formatting and layout. When inserted, all of the content (including the layout, if present) contained within the content block becomes part of the email.
 
 ## Types of content blocks
 
@@ -30,7 +30,7 @@ There are two types of content blocks:
     > [!div class="mx-imgBorder"]
     > ![Element content block example.](media/content-blocks-element-text.png "Element content block example")
 
-    Because this type of content blocks only contain element(s), it doesn’t have its own layout and will take the shape of section or column that it's placed in. In the screenshot below, the same text content block from above has been inserted into three differently sized columns:
+    Because this content block type only contains elements, it doesn’t have its own layout and takes the shape of section or column that it's placed in. In the screenshot below, the same text content block from above has been inserted into three differently sized columns:
 
     > [!div class="mx-imgBorder"]
     > ![Three column element content block example.](media/content-blocks-email-insert.png "Three column element content block example")
@@ -40,7 +40,7 @@ There are two types of content blocks:
     > [!div class="mx-imgBorder"]
     > ![Section content block example.](media/content-blocks-section-text-image.png "Section content block example")
 
-    Such a section will retain its layout when inserted into an email:
+    Such a section retains its layout when inserted into an email:
 
     > [!div class="mx-imgBorder"]
     > ![Section content block retain layout example.](media/content-blocks-email-instert2.png "Section content block retain layout example")
@@ -49,9 +49,9 @@ There are two types of content blocks:
 
 There are many benefits to using content blocks. Content blocks are versatile and can be used in many scenarios to drive efficiency, ease of use, and consistency while reducing common mistakes during content creation. Here are a few suggestions:
 
-1. Commonly used content such as boiler plate text (legal text, terms and conditions, intro, or closing text) can be saved as an element content block and then quickly inserted into emails. This will save time and ensures that the correct content is used each time.
+1. Commonly used content such as boiler plate text (legal text, terms and conditions, intro, or closing text) can be saved as an element content block and then quickly inserted into emails. This saves time and ensures that the correct content is used each time.
 1. Use section content blocks for creating easy to use components such headers and footers that can then be used any number of times to not only save time, but also to have a consistent look for your emails.
-1. Content blocks can also include dynamic text. This opens up more possibilities to create advanced reusable content. For example, you can create an “Order” content block that lists all of the items ordered by a customer in a nice tabular format (assuming your CRM is set up so that the Contact table is related to the Order table). Once created, this “Order” content block can then be used by everyone on your team including those who may not be familiar with using dynamic text or know the data model of your CRM.
+1. Content blocks can also include dynamic text. This opens up more possibilities to create advanced reusable content. For example, you can create an “Order” content block that lists all of the items ordered by a customer in a nice tabular format (assuming your CRM is set up so that the Contact table is related to the Order table). Once created, this “Order” content block can then be used by everyone on your team including those who aren't familiar with using dynamic text or know the data model of your CRM.
 
 ## Creating a content block
 
@@ -62,9 +62,9 @@ There are two ways to create content blocks: from the content block editor or fr
 
 ### Notes
 
-1. You can add tags to content blocks that will make them easier to find later.
+1. You can add tags to content blocks that make them easier to find later.
 1. Content blocks have two states or modes. In the *Draft* state, the content block can be edited and isn't available for inserting into emails. In *Ready to send* (Customer Insights - Journeys) state, the content block can't be edited.
-1. Saving a content block from the email editor saves it in *Draft* state. You'll have to open the saved content block later in the content block editor to change its state.
+1. Saving a content block from the email editor saves it in *Draft* state. You have to open the saved content block later in the content block editor to change its state.
 
 ## Using a content block
 
@@ -85,10 +85,10 @@ Using a content block is as simple as finding it in the list of available blocks
 A content block can be edited while it is in a *Draft* state. If it is in a *Ready to send* (Customer Insights - Journeys) state, select **Edit** to place it in a *Draft* state so it can be edited.
 
 > [!IMPORTANT]
-> Updating a content block does not update any emails that are using that content block. Each time a content block is inserted into an email, that email gets a copy of the content block that is no longer connected or associated with the original content block.
+> Updating a content block doesn't update any emails that are using that content block. Each time a content block is inserted into an email, that email gets a copy of the content block that is no longer connected or associated with the original content block.
 
 > [!IMPORTANT]
-> When a content block is updated (from **Assets** > **Content blocks**), check the **Settings** pane. It will show all emails and templates that use the content block to alert you which emails and templates will need to be updated.
+> When a content block is updated (from **Assets** > **Content blocks**), check the **Settings** pane. It shows all emails and templates that use the content block to alert you which emails and templates need to be updated.
 >
 > [!div class="mx-imgBorder"]
 > ![Content block update screenshot.](media/content-block-update.png "Content block update screenshot")
