@@ -1,7 +1,7 @@
 ---
 title: Export segments to Customer Insights - Journeys outbound marketing (preview)
 description: "Learn how to configure the connection and export to Dynamics 365 Customer Insights - Journeys."
-ms.date: 06/26/2024
+ms.date: 06/26/2024 
 ms.reviewer: mhart
 ms.topic: how-to
 author: Scott-Stabbert
