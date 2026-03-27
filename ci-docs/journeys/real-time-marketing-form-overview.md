@@ -1,7 +1,7 @@
 ---
 title: Overview of Customer Insights - Journeys forms
 description: Overview of the forms capabilities in Dynamics 365 Customer Insights - Journeys. 
-ms.date: 02/11/2026
+ms.date: 03/27/2026
 ms.topic: article
 author: petrjantac
 ms.author: colinbirkett
@@ -25,7 +25,7 @@ search.audienceType:
 
 > [!IMPORTANT]
 > The current HIP captcha used in Customer Insights - Journeys forms will be deprecated in March 2026 and fully removed by June 30, 2026.
-> Follow these **[instructions](real-time-marketing-form-security-privacy.md#hip-captcha-deprecation-and-the-new-recaptcha-experience)** to keep your forms protected against bot submissions.
+> Follow [these instructions](real-time-marketing-form-security-privacy.md#hip-captcha-deprecation-and-the-new-recaptcha-experience) to keep your forms protected against bot submissions.
 
 ## Form types
 
@@ -50,21 +50,21 @@ The form editor allows you to easily and quickly create and publish forms. You c
 
 #### Service protection and request limits for marketing forms
 
-Marketing form traffic in Customer Insights – Journeys is governed by **Dataverse Service Protection API limits**, not by a fixed per-minute submission quota. These limits are evaluated per environment and can vary.
+Marketing form traffic in Customer Insights – Journeys is governed by Dataverse service protection API limits, not by a fixed per-minute submission quota. These limits are evaluated per environment and can vary.
 
-By default, Dataverse enforces a limit of **6,000 API requests within a five-minute sliding window** per user and web server. The platform can return a *429 Too Many Requests* error if these limits are exceeded. [Learn more](https://learn.microsoft.com/power-apps/developer/data-platform/api-limits?tabs=sdk/)
+By default, Dataverse enforces a limit of 6,000 API requests, within a five-minute sliding window, per user and web server. The platform can return a *429 Too Many Requests* error if these limits are exceeded. Learn more: [Service protection API limits](/power-apps/developer/data-platform/api-limits?tabs=sdk/).
 
 ##### What counts as an API call for forms
 
-The following form-related actions contribute toward the Service Protection API limits:
+The following form-related actions contribute toward the service protection API limits:
 
 - Retrieving lookup field options (one API call per lookup field in the form)
 - CAPTCHA validation
 - Form submission
 
-If the form HTML is cached on the CDN (the default behavior), **form rendering does not count as an API call**.
+If the form HTML is cached on the content deliver network (the default behavior), form rendering doesn't count as an API call.
 
-Because Service Protection limits are evaluated dynamically and depend on request volume, execution time, and concurrency, the **maximum number of form submissions per minute can vary** depending on form configuration and usage patterns.
+Because service protection limits are evaluated dynamically and depend on request volume, execution time, and concurrency, the maximum number of form submissions per minute can vary depending on form configuration and usage patterns.
 
 ## Form templates
 
