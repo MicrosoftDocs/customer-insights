@@ -57,9 +57,7 @@ As we continue to work on Customer Insights - Journeys and refine the experience
 
 ## Forms and pages
 
-- Customer Insights - Journeys forms can update only one entity (typically a Lead or Contact). Targeting a single entity makes the form configuration and maintenance easier and it allows you to build properly targeted journeys.
 - If your embedded form isn't visible on external pages, ensure that the domain allows external form hosting. Most times, this is the reason why customers aren't able to see the form on their website. You don't need to finish the domain authentication process to enable external form hosting for your domain. Learn more about [domain authentication](domain-authentication.md) Opens in a new window or tab.
-- In Customer Insights - Journeys, users may encounter an issue where they can't view the form within Power Pages Studio. This particular situation arises when building a complex marketing website with multiple pages, requiring navigation and user authentication capabilities. To address this challenge, Power Pages Studio emerges as the optimal solution. To embed a Customer Insights - Journeys marketing form into a website constructed using Power Pages Studio, some modifications to the source code are necessary. Specifically, the addition of a JavaScript code snippet is essential to facilitate the seamless integration of the Marketing form. It's important to note that within Power Pages Studio, the form won't be visible during the editing process. However, once the page goes live and is accessible to the public, the form becomes visible and fully functional on the website. This capability enhances the user experience and ensures the successful implementation of RTM strategies within the marketing website.
 
 ## Lead scoring
 

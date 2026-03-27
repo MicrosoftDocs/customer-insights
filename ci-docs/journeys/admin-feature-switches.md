@@ -1,7 +1,7 @@
 ---
 title: Use feature switches to enable or disable optional and preview features
 description: Use feature switches to manage optional and preview features in Dynamics 365 Customer Insights - Journeys. Learn the steps to configure settings.
-ms.date: 12/08/2025
+ms.date: 03/25/2026
 ms.update-cycle: 180-days
 ms.topic: article
 author: alfergus
@@ -33,7 +33,6 @@ The following tables list each available feature, preview status, and links for 
 
 | Feature switch | Preview or production | Description |
 |---|---|---|
-| Business unit scoping (outbound marketing) | Production | [Enable business unit scoping for marketing processes in outbound marketing](business-units.md).|
 | Business unit scoping (real-time journeys)|Production| [Enable business unit scoping for marketing processes in real-time journeys](real-time-marketing-business-units.md). |
 
 ## Tracking
@@ -49,7 +48,7 @@ The following tables list each available feature, preview status, and links for 
 |---|---|---|
 | Event registration forms | Preview | [Enable marketing forms to submit event registrations](event-forms.md).|
 | Enable events creation in real-time journeys | Production | [Enable events creation in real-time marketing](set-up-event.md).|
-| Enable session level registration in real-time journeys| Production | [Enable session level registration in real-time journeys](session-level-registration-outbound.md). |
+| Enable session level registration in real-time journeys| Production | [Enable session level registration in real-time journeys](real-time-journeys-event-session.md). |
 | Waitlist in Real-time Journeys | Preview | Enable waitlist functionality for events/sessions, allowing attendees to join a waitlist if an event or a session is full. |
 
 ## Customer journey

@@ -1,7 +1,7 @@
 ---
 title: Connect rich customer data from multiple sources
 description: Learn how to integrate Dynamics 365 Customer Insights - Data profiles and segments with Dynamics 365 Customer Insights - Journeys.
-ms.date: 03/15/2024
+ms.date: 03/25/2026
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -27,10 +27,6 @@ By connecting Customer Insights - Data with Customer Insights - Journeys, you ca
 Customer Insights - Journeys allows you to create [custom triggers](real-time-marketing-custom-triggers.md) that launch customer journeys based on any customer action. The more personalized your data, the more relevant and personalized your journeys will be. This is what makes combining Customer Insights - Journeys and Customer Insights - Data so powerful. You can unify data from any source, then use it to fuel hyper-personalized customer journeys.
 
 Learn more: [Use Customer Insights - Data profiles and segments in Customer Insights - Journeys](real-time-marketing-ci-profile.md)
-
-## Use unified segments with outbound customer journeys
-
-Customer Insights - Data allows you to refine data from many sources and combine it into aggregated customer segments. By connecting Customer Insights - Data with outbound marketing, these segments will automatically appear *and* refresh automatically in the customer journey designer.
 
 ## Pull data from your own Azure Data Lake Storage
 

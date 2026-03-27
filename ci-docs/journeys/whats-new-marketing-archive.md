@@ -1,7 +1,7 @@
 ---
 title: What's new archive
 description: Access archived information on new features, improvements, and bug fixes in Dynamics 365 Customer Insights - Journeys.
-ms.date: 02/09/2026
+ms.date: 03/25/2026
 ms.update-cycle: 180-days
 ms.topic: whats-new
 author: alfergus
@@ -1568,7 +1568,7 @@ Monthly enhancements include tracking of unique opens and clicks, attachment sup
 
 - **Dynamics 365 Customer Insights - Journeys now supports changing the organization URL in Power Platform admin center**
     - People often want to change the URL of the Customer Insights - Journeys application to a branded name which is easy to remember. This has been supported for some time in the Power Platform admin center, but was not previously supported by the Dynamics 365 Customer Insights - Journeys application. With this release, you can now change the organization URL in Power Platform admin center and the Customer Insights - Journeys application continues to work without side effects.
-    - [Docs](copy-or-restore.md#change-the-url-for-an-environment-with-customer-insights---journeys-or-outbound-marketing-installed)
+    - [Docs](copy-or-restore.md#change-the-url-for-an-environment-with-customer-insights---journeys)
 
 #### Monthly enhancements
 

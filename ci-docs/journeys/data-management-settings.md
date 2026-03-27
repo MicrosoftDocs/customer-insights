@@ -1,7 +1,7 @@
 ---
 title: Data management settings 
 description: Learn how to import, export, and clean data in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/18/2023
+ms.date: 03/25/2026
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -48,50 +48,5 @@ Data and templates can be exported from:
 When you export data or templates while working in the **Settings** work area, you must select the entity you want to export (such as a lead or contact). You can also choose the view that will be used for exporting. If you don't choose a view, the default view is selected, and the data or template for all the columns in that view are exported.
 
 More information: [Export data](export-data-word-excel.md)
-
-<a name="duplicate-detection"></a>
-
-## Keep your data clean by using duplicate detection
-
-> [!IMPORTANT]
-> Duplicate detection settings only apply to outbound marketing, not Customer Insights - Journeys.
-
-To maintain the integrity of your data, it's a good idea to set up duplicate detection to find duplicate records in the system. By default, duplicate detection is already enabled for outbound marketing.
-
-### Duplicate detection rules
-
-Outbound marketing includes duplicate detection rules for accounts and contacts. The rules are automatically published when duplicate detection is enabled.
-
-- Accounts with the same account name are found
-- Contacts with the same first name and last name are found
-- Contacts with the same email address are found
-
-If any of these rules are deleted, duplicate detection won't work as expected.
-
-### Enable duplicate detection
-
-If duplicate detection is disabled, duplicates won't be detected. To enable duplicate detection:
-
-1. Go to **Settings** ![The Settings menu icon.](media/settings-icon.png "The Settings menu icon") > **Advanced Settings** > **Data Management** > **Duplicate Detection Settings**.
-1. Check the box next to **Enable duplicate detection**.
-
-### When does duplicate detection happen?
-
-If duplicate detection is enabled, duplicates are detected when:
-
-- **A record is created or updated**: The system checks for duplicates when a user enters or updates records.
-- **During data import**: When you use the Import Data wizard to bring in contacts or accounts, the wizard detects any duplicate records.
-
-> [!IMPORTANT]
-> Duplicates aren't detected when a user merges two records, activates or deactivates a record, or saves a completed activity.
-
-### Disable duplicate detection
-
-If your system contains a large number of records, checking for duplicates can affect performance. You might want to disable duplicate detection at such times.
-
-1. To disable duplicate detection, go to **Settings** > **Advanced Settings** > **Data Management** > **Duplicate Detection Settings**.
-1. Uncheck the box next to **Enable duplicate detection**.
-
-All the duplicate detection rules will be unpublished in the back end.
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]

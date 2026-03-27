@@ -1,7 +1,7 @@
 ---
 title: Keep Customer Insights - Journeys up to date
 description: Find out when an update for one or more Dynamics 365 Customer Insights - Journeys solutions is available and apply the update.
-ms.date: 09/13/2023
+ms.date: 03/25/2026
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
@@ -25,7 +25,6 @@ When you install Customer Insights - Journeys, all its solutions are installed i
 
 - **Core Customer Insights - Journeys solutions**: These are the solutions that provide core features that are unique to Customer Insights - Journeys (including the Dynamics 365 Connector for LinkedIn Lead Gen Forms). Though there are several of these, you'll be able to maintain and update them all at once using the installation management area.
 - **Dynamics 365 Customer Voice**: This solution enables model-driven apps in Dynamics 365 to host surveys and collect responses. It's also available as an add-on or bundle for other apps. You must update this solution separately from the other solutions included with Customer Insights - Journeys, using its own update program.
-- **Power Apps portals** (outbound marketing only): This solution enables model-driven apps in Dynamics 365 to host interactive portals that display and collect Dynamics 365 data, including the events portal and marketing pages. Like Customer Voice, you must update this solution using its own update program.
 
 ## Find out when new updates are available
 

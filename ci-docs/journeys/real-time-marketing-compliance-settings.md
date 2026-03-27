@@ -198,6 +198,16 @@ Topics inherit the enforcement model of their parent purpose. When a message is 
 
 If the parent purpose uses a restrictive enforcement model, the contact point needs an opt-in consent record for both the purpose and the topic for the system to deliver the message.
 
+## Why you can’t delete a compliance profile, purpose, or topic
+
+You can’t delete compliance profile, purpose, or topic records. This helps protect data integrity and prevents system issues.
+
+Instead, you can set an unwanted record to **Inactive**. Inactive records are hidden from all relevant experiences, including:
+
+- Consent usage in segments
+- The **Communication** tab on contacts and leads
+- The consent picker in the email editor
+
 ## Using `DoNotEmail`, `DoNotBulkEmail`, and `DoNotTrack` fields in real-time journeys
 
 By default, real-time journeys don't evaluate the contact's `DoNotEmail`, `DoNotBulkEmail`, or `DoNotTrack` fields.
