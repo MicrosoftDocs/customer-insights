@@ -1,7 +1,7 @@
 ---
 title: Use the email API to access emails on the interaction timeline
 description: Learn how to use the email API to export copies of sent emails for record keeping.
-ms.date: 12/22/2025
+ms.date: 03/27/2026
 ms.topic: how-to
 author: Joni-M
 ms.author: alfergus
