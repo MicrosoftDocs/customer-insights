@@ -3547,6 +3547,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "ci-docs/journeys/export-ci-journeys.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "ci-docs/journeys/lead-generation-overview.md",
       "redirect_url": "/dynamics365/customer-insights/journeys/real-time-marketing-optimize-lead-management",
       "redirect_document_id": false
