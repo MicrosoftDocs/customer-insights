@@ -1,7 +1,7 @@
 ---
 title: Dynamics 365 Customer Insights FAQs
 description: Get answers to frequently asked questions about Dynamics 365 Customer Insights.
-ms.date: 07/19/2024
+ms.date: 03/25/2026
 ms.collection: article
 ms.topic: overview
 author: alfergus
@@ -52,24 +52,6 @@ This FAQ answers questions about the new Customer Insights combined product offe
 
     The product offering isn't yet available for US GCC, DoD, GCC High or other sovereign clouds but may be at a future time.
 
-## Functionality 
-
-1. **Are there any changes to product functionality due to the consolidation of the offer?**
-
-    There will be no changes to product functionality due to the consolidation of the product offering.
-      - We continue to invest in new capabilities that enable stronger, insights-based marketing, making it easier for marketers to glean insights from data with one of the most tightly integrated Customer Data Platform and Marketing Automation Platform products on the market.
-      - New customers are able to take advantage of real-time marketing capabilities. Refer to the next question for more details. 
-
-1. **Can customers have access to both outbound and real-time marketing with the new Customer Insights offer?**
-
-    New customers will only be able to access the real-time marketing module. Current outbound customers provisioning new environments will also get the real-time module only by default, but can add outbound using a self-serve UX. Learn more about the real-time marketing only module: [Real-time marketing transition FAQ](transition-faqs.md)
-
-1. **Why is there a shift from outbound marketing to a real-time marketing-only experience?**
- 
-    Given the strong adoption across customers and the effective results driven by real-time marketing, we'll be investing more deeply in real-time marketing capabilities as the future of marketing.
-      - Real-time marketing enables highly personalized, real-time customer journey orchestration across all customer touchpoints in addition to more effective segment-based marketing.
-      - While it offers multiple distinct capabilities, real-time marketing also offers enhanced capabilities available in outbound marketing such as lead scoring and forms. Real-time marketing improves productivity by optimizing marketers’ workflows.
-
 ## Pricing and licensing
 
 1. **How is the new Customer Insights licensed?**
@@ -81,7 +63,7 @@ This FAQ answers questions about the new Customer Insights combined product offe
       1. **People Interacted** (equivalent to the previous "marketable contact" unit in Dynamics 365 Marketing) that powers the use of **Customer Insights – Journeys**. Refer to question five below for the definition of People Interacted.  
       1. **People Unified** (equivalent to the previous "profile" meter in Dynamics 365 Customers Insights) which powers **Customer Insights – Data**. Refer to question four for the definition of People Unified.
 
-    All customers must start with the base SKU, or a minimum, required quantity of 10,000 People Interacted and 100,000 People Unified. This base SKU is priced at $1,700 per tenant per month (ptpm) for new Dynamics 365 customers, or at a discounted price of $1,000 ptpm for existing, qualifying Dynamics 365 customers. After purchasing the base SKU, customers can then purchase additional capacity SKUs of either capacity unit as needed.
+    All customers must start with the base SKU, or a minimum, required quantity of 10,000 People Interacted and 100,000 People Unified. This base SKU is priced at $1,700 per-tenant per-month for new Dynamics 365 customers, or at a discounted price of $1,000 per-tenant per-month for existing, qualifying Dynamics 365 customers. After purchasing the base SKU, customers can then purchase additional capacity SKUs of either capacity unit as needed.
 
 1. **How do customers purchase more capacity?**
 

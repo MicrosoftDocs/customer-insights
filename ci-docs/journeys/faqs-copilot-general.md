@@ -1,7 +1,7 @@
 ---
 title: Responsible AI FAQs for the Customer Insights - Journeys copilot (preview)
 description: The Responsible AI FAQs discuss the general copilot and the key considerations for making use of this technology responsibly.
-ms.date: 03/12/2024
+ms.date: 03/25/2026
 ms.topic: faq
 author: alfergus
 ms.author: alfergus
@@ -14,8 +14,6 @@ search.audienceType:
 # Responsible AI FAQs for the Customer Insights - Journeys copilot (preview)
 
 [!INCLUDE [Preview banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-
-[!INCLUDE [consolidated-sku-rtm-only](./includes/consolidated-sku-rtm-only.md)]
 
 These responsible AI FAQs describe the AI impact of Copilot capabilities for model-driven apps in Dynamics 365 Customer Insights - Journeys. Review [the main FAQ for this Copilot capability](/power-apps/maker/common/faqs-copilot-model-driven-app)
 

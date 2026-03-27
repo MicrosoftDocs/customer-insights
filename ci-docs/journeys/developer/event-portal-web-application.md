@@ -1,7 +1,7 @@
 ---
 title: Create an event portal using the web application
 description: Learn how to use the lightweight, customizable web application to create and host event portals on your domains.
-ms.date: 10/20/2025
+ms.date: 03/25/2026
 ms.topic: overview
 author: terezakirk
 ms.author: alfergus
@@ -10,8 +10,6 @@ search.audienceType:
 ---
 
 # Create an event portal on your website using the web application
-
-[!INCLUDE [consolidated-sku-rtm-only](.././includes/consolidated-sku-rtm-only.md)]
 
 The event web application is a fast, lightweight, and customizable solution for showing live events from the Dynamics 365 events API directly on your website. It has a responsive, multilingual interface that lets attendees search, explore, and register for events easily.
 
