@@ -42,6 +42,8 @@ Primary ID attribute name: **msdyn_channelmessagepartid**
   - **192350006 number**: The message part is a number wrapped in a string.
   - **192350007 boolean**: The message part uses a “true” or “false” value.
   - **192350008 options**: The message part allows you to select an option from a predefined options array. The options array is set under the `msdyn_options` attribute through a JSON array of objects containing "label" and "value" fields. Example: `[{ "label": "Option 1", "value": 1 }, { "label": "Option 2", "value": 2 }, {"label": "Option 3", "value": 3}]`.
+  - **192350009 date**: The message part is a date without hours and minutes
+  - **192350010 datetime**: The message part is a datetime with hours and minutes
 - **msdyn_isrequired**: bit - Indicates whether the part is required.
 - **msdyn_maxlength**: int - Max length of the part.
 - **msdyn_order**: int - (Optional) Defines the position of the message part field in the message editor. The larger the number, the higher the position.
