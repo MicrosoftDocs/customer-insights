@@ -12,7 +12,7 @@ search.audienceType:
 
 # Use the email API to access emails on the interaction timeline
 
-The email API lets you access emails you sent to your customers, ensuring you have a reliable and verifiable record. Use this API to access emails on the interaction timeline and export them for record keeping.
+The email API lets you access emails you sent to your customers, ensuring you have a reliable and verifiable record. Use this API to access emails on the interaction timeline and export them for record keeping. Emails are accessible through the API for up to one year.
 
 ## Email API overview
 
