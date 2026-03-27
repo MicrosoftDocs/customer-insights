@@ -25,7 +25,7 @@ search.audienceType:
 
 > [!IMPORTANT]
 > The current HIP captcha used in Customer Insights - Journeys forms will be deprecated in March 2026 and fully removed by June 30, 2026.
-> Please follow these **[instructions](real-time-marketing-form-security-privacy.md#hip-captcha-deprecation-and-the-new-recaptcha-experience)** to keep your forms protected against bot submissions.
+> Follow these **[instructions](real-time-marketing-form-security-privacy.md#hip-captcha-deprecation-and-the-new-recaptcha-experience)** to keep your forms protected against bot submissions.
 
 ## Form types
 
@@ -45,11 +45,27 @@ Each marketing form is made from a collection of fields, buttons, graphical elem
 
 The form editor allows you to easily and quickly create and publish forms. You can choose a template or start from scratch. You can also design form content using drag-and-drop elements and preview options. Once your form is ready, you can publish the form in one quick step.
 
-> [!IMPORTANT]
-> There's a limit of 2,000 requests/minute per org. The request limit includes visits, lookup, CAPTCHA, and form submission. The limit allows around 100 to 500 submissions/minute, depending on the form.
-
 > [!WARNING]
-> Bulk edit for forms is not supported. Using bulk edit can result in loss of form data.
+> Bulk edit for forms isn't supported. Using bulk edit can result in loss of form data.
+
+#### Service protection and request limits
+
+Form traffic in Customer Insights – Journeys is governed by **Dataverse Service Protection API limits**, not by a fixed per-minute submission quota. These limits are evaluated per environment and can vary.
+
+By default, Dataverse enforces a limit of **6,000 API requests within a five-minute sliding window** per user and web server. The platform can return a *429 Too Many Requests* error if these limits are exceeded. [Learn more](https://learn.microsoft.com/power-apps/developer/data-platform/api-limits?tabs=sdk/)
+
+##### What counts as an API call for forms
+
+The following form-related actions contribute toward the Service Protection API limits:
+
+- Generating a form visit interaction
+- Retrieving lookup field options (one API call per lookup field in the form)
+- CAPTCHA validation
+- Form submission
+
+If the form HTML is cached on the CDN (the default behavior), **form rendering does not count as an API call**. 
+
+Because Service Protection limits are evaluated dynamically and depend on request volume, execution time, and concurrency, the **maximum number of form submissions per minute can vary** depending on form configuration and usage patterns.
 
 ## Form templates
 

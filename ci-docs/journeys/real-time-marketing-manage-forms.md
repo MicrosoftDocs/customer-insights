@@ -302,15 +302,14 @@ You can change the CSS class definitions in the HTML editor. Editing CSS allows 
 
 ### Add custom JavaScript to your form
 
-> [!IMPORTANT]
-> With Customer Insights - Journeys version **1.1.38813.80 or newer**, you can add JavaScript code into the `<body>` section of the HTML. If you add JavaScript into `<head>` section, it's automatically moved to the top of the `<body>` section. The `<script>` tag is automatically renamed `<safe-script>` to prevent script execution in the form editor. The `<safe-script>` tag is then automatically renamed back to `<script>` in the final form HTML served by the formLoader script.
+To improve form security, the system sanitizes the HTML code each time the form is saved.
 
 > [!IMPORTANT]
-> With Customer Insights - Journeys version **older than 1.1.38813.80**, you can add custom JavaScript code only to the `<head>` section of the HTML source code using the HTML editor. If the code JavaScript code is placed inside the `<body>` section, the form editor automatically removes the code without warning.
+> You can add JavaScript code into the `<body>` section of the HTML. If you add JavaScript into other sections, it can be removed.
 
 All `onEvent` HTML attributes that trigger JavaScript code, like `onClick` or `onChange`, are automatically sanitized (removed from the code).
 
-The following example isn't supported:
+The following example **isn't supported**:
 
 ```html
 <button onClick="runMyFunction()">
