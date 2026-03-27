@@ -29,6 +29,8 @@ To enable push notifications in Customer Insights - Journeys, you need to comple
 > If you haven't collected tracking consent, you must use the **originalLink** URL field described in the code snippet below. If you have acquired consent, you can use the **link** field value, which is trackable.
 >
 > *PushLinkClicked* is automatically generated. The URL is a redirect link which creates the interaction if the link from the **link** field is used.
+>
+> The trackingId field will always be empty if you use the **Test send** functionality to test your push notifications.
 
 ## Receive push message notifications in iOS
 
