@@ -25,6 +25,7 @@ The contract that the outbound custom API should implement must have one input p
 
   - **ChannelDefinitionId**: GUID – The channel definition ID.
   - **RequestId**: string – The request ID.
+  - **IdempotencyId**: string - The idempotency ID
   - **From**: string – The sender (channel instance).
   - **To**: string – The recipient.
   - **Message**: Dictionary <string, string> - Contains all the message parts for a channel. Keys are the message part names, such as the values of the corresponding `msdyn_name` attribute.
