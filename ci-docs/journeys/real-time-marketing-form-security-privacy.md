@@ -1,7 +1,7 @@
 ---
 title: Customer Insights - Journeys forms security and privacy
 description: Understand security and privacy management for forms in Dynamics 365 Customer Insights - Journeys. 
-ms.date: 03/19/2026
+ms.date: 03/27/2026
 ms.update-cycle: 180-days
 ms.topic: how-to
 author: petrjantac
@@ -20,7 +20,7 @@ Security is an important aspect of marketing and event registration forms. Custo
 - Forms can be rendered only on domains allowed for external form hosting.
 - The out-of-box domain for forms hosted as a standalone page is enabled for external form hosting by default. Learn more: [Publish your form](real-time-marketing-form-create.md#publish-your-form)
 - To avoid form submissions by bots, you should protect forms with a captcha. The form editor includes reCAPTCHA option, but you can use any other third-party captcha. Learn more: [Customize form submission validation](real-time-marketing-form-customize-submission-validation.md)
-- The Customer Insights - Journeys app infrastructure contains necessary precautions to minimize the consequences of a possible DDoS attack. To prevent DDoS attacks, there's a limit of 2,000 requests/minute per org. The request limit includes visits, lookups, CAPTCHA, and form submissions. The limit allows around 100 to 500 submissions/minute, depending on the form.
+- The Customer Insights - Journeys app infrastructure contains necessary precautions to minimize the consequences of a possible DDoS attack. Learn more:[Service protection and request limits](real-time-marketing-form-overview.md#service-protection-and-request-limits-for-marketing-forms).
 
 ### Protect forms from bots with reCAPTCHA
 
