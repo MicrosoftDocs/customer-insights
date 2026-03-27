@@ -432,8 +432,6 @@
       href: real-time-marketing-troubleshooting-forms.md
   - name: Lead generation and management
     items:
-    - name: Lead generation and management overview
-      href: lead-generation-overview.md
     - name: Create a scoring model
       href: real-time-marketing-create-lead-scoring-model.md    
     - name: Qualify the best leads

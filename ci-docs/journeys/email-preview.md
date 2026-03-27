@@ -1,7 +1,7 @@
 ---
 title: Check your work using previews and test sends
 description: Test and preview your email designs in Dynamics 365 Customer Insights - Journeys to ensure they look great across devices and email clients.
-ms.date: 02/23/2026
+ms.date: 03/26/2026
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -59,9 +59,7 @@ The inbox preview is provided by a Microsoft partner called Litmus Software, Inc
 The **Email clients** tab displays a grid of icons, each labeled with the name of a different destination platform or email client. Initially, each preview is dimmed and shows a key (locked) icon, meaning you haven't generated that preview with your current design and settings. Select one of these icons to generate that preview and unlock its icon. Each time you unlock a preview, you use one preview from either your organization's or your personal quota. The unlocked preview remains available for viewing until you change the design or the **Properties** (dynamic text) settings, at which time all existing previews will no longer be valid and will be shown as locked again.
 
 > [!NOTE]
-> You must enable Litmus for your instance before using it. 
-> - To enable Litmus in real-time journeys orgs only, go to **Feature switches** > **Email editor** > **Litmus integration**. 
-> - To enable Litmus in outbound marketing *and* real-time journeys orgs, go to **Default settings** > **Marketing emails** > **Enable Litmus integration**.
+> You must enable Litmus for your instance before using it. To enable Litmus, go to **Feature switches** > **Email editor** > **Litmus integration**.
 
 ## Send a test message
 
