@@ -1,7 +1,7 @@
 ---
 title: Plan, publicize, and collect registrations for events
 description: An overview of event-management features (including planning, logistics, sponsors, speakers, promotion, and registration) in  Dynamics 365 Customer Insights - Journeys.
-ms.date: 07/10/2024
+ms.date: 03/26/2026
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -31,6 +31,5 @@ To create, view, and edit your events and all event-related records, go to the *
 
 Use other parts of the **Events** work area to work with specific record types that relate to event planning, such as logistics, sessions, attendees, sponsors, and more. Depending on what you are doing at the time, you might access these types of records when working in the parent event record, or you could go to the area dedicated to a specific record type to work with that type of record only, or work across events.
 
-Dynamics 365 Customer Insights - Journeys offers two solutions for event management: outbound marketing and real-time journeys. Learn more: [Transition event management](transition-walkthrough-events.md)
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]

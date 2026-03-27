@@ -1,7 +1,7 @@
 ---
 title: Start a journey
 description: An overview of the journey start configuration in Dynamics 365 Customer Insights - Journeys.
-ms.date: 02/10/2025
+ms.date: 03/26/2026
 ms.topic: article
 author: colinbirkett
 ms.author: colinbirkett
@@ -33,7 +33,7 @@ To start a journey, go to Customer Insights - Journeys > **Journeys** > **Create
 
 A segment-based journeys starts independently and target customers that share certain attributes (for example, loyalty club members in the state of Washington). For more information, see [Create a segment-based journey](real-time-marketing-segment-based-journey.md).
 
-- **Audience**: The audience property lets you specify the segment of people that start the journey. Segment-based journeys [support segments from outbound marketing as well as segments created in Customer Insights - Data](real-time-marketing-segments.md). The journey uses audience data based upon the segment selected. For example, if the journey is started with an outbound marketing segment that contains a segment of **Contacts**, the journey uses Contacts as its Audience data. Similarly, if the journey is started using a Customer Insights - Data segment that is a segment of **Customer Profiles**, the journey uses Customer Profile as its Audience data. Once an audience segment has been selected, all other segments used in the journey must be of the same type (segment from outbound marketing or Customer Insights - Data segment).
+- **Audience**: The audience property lets you specify the segment of people that start the journey. Segment-based journeys [support segments from Customer Insights - Journeys as well as segments created in Customer Insights - Data](real-time-marketing-segments.md). The journey uses audience data based upon the segment selected. For example, if the journey is started with an Customer Insights - Journeys segment that contains a segment of **Contacts**, the journey uses Contacts as its Audience data. Similarly, if the journey is started using a Customer Insights - Data segment that is a segment of **Customer Profiles**, the journey uses Customer Profile as its Audience data. Once an audience segment has been selected, all other segments used in the journey must be of the same type (segment from Customer Insights - Journeys or Customer Insights - Data segment).
 - **Exclude this segment**: Members of this segment aren't allowed to start the journey. Specifying an exclusion segment lets you remove anyone from the audience that starts the journey.
 - **Frequency**: Lets you specify whether the journey should repeat.
   - *One time*: One-time journeys run only once with a static audience segment. This is useful for scenarios like one-time email blasts that are sent on a specific date to a fixed set of customers.
