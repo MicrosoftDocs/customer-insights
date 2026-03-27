@@ -1,7 +1,7 @@
 ---
 title: Receiving push notifications on mobile devices
 description: "Developer: Learn how to receive push notifications from Customer Insights - Journeys."
-ms.date: 03/14/2024
+ms.date: 03/27/2026
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
@@ -26,9 +26,11 @@ To enable push notifications in Customer Insights - Journeys, you need to comple
 > [!IMPORTANT]
 > To track links that recipients open in notifications, you must collect customer tracking consent. Learn more about strategies for collecting customer consent in Customer Insights - Journeys: [Consent management overview](real-time-marketing-compliance-settings.md)
 >
-> If you haven't collected tracking consent, you must use the **originalLink** URL field described in the code snippet below. If you have acquired consent, you can use the **link** field value, which is trackable.
+> If you haven't collected tracking consent, you must use the `originalLink` URL field described in the code snippet below. If you have acquired consent, you can use the `link` field value, which is trackable.
 >
-> *PushLinkClicked* is automatically generated. The URL is a redirect link which creates the interaction if the link from the **link** field is used.
+> *PushLinkClicked* is automatically generated. The URL is a redirect link, which creates the interaction if the link from the `link` field is used.
+>
+> The `trackingId` field is always empty if you use the **Test send** functionality to test your push notifications.
 
 ## Receive push message notifications in iOS
 
@@ -163,7 +165,7 @@ class NotificationService: UNNotificationServiceExtension {
 #### Part 1: Obtaining the tracking ID from the notification message
 
 > [!NOTE]
-> Customer Insights - Journeys uses the data message format instead of the notification format. This requires the client app to parse the data payload sent by Customer Insights - Journeys to extract the correct link (tracked or untracked). Learn more: [About FCM messages](https://firebase.google.com/docs/cloud-messaging/concept-options)
+> Customer Insights - Journeys uses the data message format rather than the notification format. This requires the client app to parse the data payload sent by Customer Insights - Journeys to extract the correct link (tracked or untracked). Learn more: [Firebase Cloud Messaging](https://firebase.google.com/docs/cloud-messaging)
 
 Override the `OnMessageReceived` method of `FirebaseMessagingService` and extract the required data from the payload as shown:
 
