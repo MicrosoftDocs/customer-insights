@@ -68,4 +68,27 @@ Your newly created form is automatically configured according to the default con
 > [!TIP]
 > Enable the [form prefill](real-time-marketing-form-prefill.md) feature so existing users don't have to reenter known information.
 
+### Service protection and request limits for event registration forms
+
+Event registration forms are subject to the same [Dataverse Service Protection API limits](https://learn.microsoft.com/power-apps/developer/data-platform/api-limits?tabs=sdk/) as marketing forms. However, the event registration flow is more complex, and the number of API requests generated can vary significantly depending on the event configuration.
+
+Because of this complexity, request volume for event registration forms is **highly dependent on the specific features enabled** (such as sessions, speakers, or payments). The examples below provide a **rough estimate only** and should not be treated as an exact calculation of required throughput per form.
+
+#### Typical API calls in an event registration flow
+
+An event registration form can generate API requests for the following actions:
+
+- Form view and rendering (event registration forms are **not cached on the CDN**)
+- Retrieving the list of sessions
+- Retrieving the list of speakers
+- Retrieving the list of sponsors
+- Performing capacity checks
+- Executing the payment flow (if enabled)
+- CAPTCHA validation
+- Form submission
+
+Depending on the configuration, a single form view or submission can result in **multiple API calls**, which can increase the likelihood of reaching Service Protection limits under high traffic.
+
+As with marketing forms, Service Protection limits are evaluated dynamically based on request volume, execution time, and concurrency. As a result, the **maximum achievable throughput for event registration forms can vary** between environments and event setups.
+
 [!INCLUDE [footer-include](./includes/footer-banner.md)]

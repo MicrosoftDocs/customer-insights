@@ -48,9 +48,9 @@ The form editor allows you to easily and quickly create and publish forms. You c
 > [!WARNING]
 > Bulk edit for forms isn't supported. Using bulk edit can result in loss of form data.
 
-#### Service protection and request limits
+#### Service protection and request limits for marketing forms
 
-Form traffic in Customer Insights – Journeys is governed by **Dataverse Service Protection API limits**, not by a fixed per-minute submission quota. These limits are evaluated per environment and can vary.
+Marketing form traffic in Customer Insights – Journeys is governed by **Dataverse Service Protection API limits**, not by a fixed per-minute submission quota. These limits are evaluated per environment and can vary.
 
 By default, Dataverse enforces a limit of **6,000 API requests within a five-minute sliding window** per user and web server. The platform can return a *429 Too Many Requests* error if these limits are exceeded. [Learn more](https://learn.microsoft.com/power-apps/developer/data-platform/api-limits?tabs=sdk/)
 
@@ -58,12 +58,11 @@ By default, Dataverse enforces a limit of **6,000 API requests within a five-min
 
 The following form-related actions contribute toward the Service Protection API limits:
 
-- Generating a form visit interaction
 - Retrieving lookup field options (one API call per lookup field in the form)
 - CAPTCHA validation
 - Form submission
 
-If the form HTML is cached on the CDN (the default behavior), **form rendering does not count as an API call**. 
+If the form HTML is cached on the CDN (the default behavior), **form rendering does not count as an API call**.
 
 Because Service Protection limits are evaluated dynamically and depend on request volume, execution time, and concurrency, the **maximum number of form submissions per minute can vary** depending on form configuration and usage patterns.
 
