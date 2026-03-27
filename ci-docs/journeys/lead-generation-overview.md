@@ -20,10 +20,9 @@ Lead management refers to the set of functionalities in Dynamics 365 Customer In
     - [Lead qualification](real-time-marketing-qualify-leads.md)
 2. Capture demand
     - Lead and opportunity creation in journeys
-    - LinkedIn Lead Gen
 3. Assign work to your sales team
-    - Task creation in journeys
-    - Phone call creation in journeys
+    - [Task creation in journeys](add-action.md#activities-preview)
+    - [Phone call creation in journeys](add-action.md#activities-preview)
     - [Sales activities creation in journeys](real-time-marketing-optimize-lead-management.md)
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
