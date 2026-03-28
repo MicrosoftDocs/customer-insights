@@ -1,7 +1,7 @@
 ---
 title: Customer Insights - Journeys integration with Microsoft Fabric overview
 description: Learn about how to integrate Customer Insights - Journeys with Microsoft Fabric.
-ms.date: 04/23/2025
+ms.date: 03/26/2026
 ms.topic: article
 author: alfergus
 ms.author: colinbirkett
@@ -95,7 +95,6 @@ The following sections explain how to set up Power BI and access your Customer I
 | Why don't I see all Customer Insights - Journeys interaction tables when creating shortcuts in Fabric? | The Customer Insights - Journeys folder only lists the interaction types for which data has been generated up to that point. | 
 | Why do I see more email delivered versus email sent interactions? | In the event of an email remote bounce, we list two "email delivered" interactions for the same message with the same time stamp despite no message being delivered to the contact/lead/Customer Insights - Data Profile email address. This is because the second interaction is intended to "erase" the first one. To count them properly, you should use the ["DeliveredCount"](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsightsjourneys/emaildelivered#DeliveredCount) field. |
 | How quickly is Customer Insights - Journeys data available? | Data changes in Customer Insights - Journeys tables will be available within up to three hours. |
-| Why don't I see all my **outbound marketing** data in Fabric? | If you’re a customer in the EU, NAM, OCE, or GBR region, only interactions created after January 1, 2024 are migrated by default. You can request additional data to be transferred by filling in [this form](https://go.microsoft.com/fwlink/?linkid=2313103). |
 | How can I access and export Customer Insights - Journeys data without using Fabric? | Microsoft Fabric remains the recommended way to access, work with and export Customer Insights - Journeys data, offering seamless integration and built-in analytics. However, we understand there are cases where you prefer to use a third-party system for storage and processing. This article outlines how to access and export Customer Insights - Journeys interaction data into your own storage, ensuring flexibility while following best practices: [Leveraging Customer Insights - Journeys interaction data without Fabric](https://community.dynamics.com/blogs/post/?postid=75a63967-f115-f011-998a-7c1e525b5e9d). | 
 
 ## Transition to general availability

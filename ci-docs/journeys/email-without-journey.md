@@ -1,7 +1,7 @@
 ---
 title: Use "Send now" to send emails instantly
 description: Learn how to send emails in Dynamics 365 Customer Insights - Journeys without building a journey.
-ms.date: 09/22/2025
+ms.date: 03/26/2026
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
@@ -12,9 +12,6 @@ search.audienceType:
 ---
 
 # Use "Send now" to send emails instantly
-
-> [!IMPORTANT]
-> The "Send now" functionality described in this article, **only** applies to Customer Insights - Journeys, not outbound marketing.
 
 > [!TIP]
 > If you don’t see this feature in your app, contact your admin, who can activate it by going to **Settings** > **Overview** > **Feature switches**, scrolling to the **Email editor** area, enabling the **Send now** feature switch, and saving the setting by selecting **Save** on the top right corner.
@@ -50,8 +47,7 @@ Send now is a simplified workflow that supports limited scenarios. It doesn't su
 
 - If there's a business unit assigned to the email, the resulting journey doesn't pick up the business unit assignment.
 - The journey created in the background is owned by the user who created the email and the "send now" flow.
-- Send now only works with contact and lead segment-based journeys. Emails are sent to the default recipient, as [configured](real-time-marketing-audience-data.md) for each audience. 
-- Send now doesn't work with outbound marketing segments that you haven't used in real-time journeys. Once you use an outbound marketing segment in a real-time journey successfully, it's been processed and you can use it with the send now functionality.
+- Send now only works with contact and lead segment-based journeys. Emails are sent to the default recipient, as [configured](real-time-marketing-audience-data.md) for each audience.
 - Send now doesn't stop users from selecting an email and a segment from two different business units. If you have permissions to more than one business unit, be careful to make sure you select an email and segment from the same business unit.
 - The following personalization variables *don't* work in send now:
     - Triggers: Send now only supports segment-based journeys. It can't access trigger data used in email personalization.
