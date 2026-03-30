@@ -51,8 +51,8 @@ You can move triggers in **any** state between environments (draft, published, o
 
     |     Trigger State    |     Components added    |
     |---|---|
-    |     Draft    |     Trigger record, CustomerAPI record, and CatalogAssignment record    |
-    |     Published    |     Trigger record, CustomAPI record, CatalogAssignment record, and customAPIrequestparameter records    |
+    |     Draft    |     Trigger record, CustomApi record, and CatalogAssignment record    |
+    |     Published    |     Trigger record, CustomApi record, CatalogAssignment record, and CustomApiRequestParameter record(s)    |
 
 1. Once done, you're ready to migrate the solution to the destination environment.
 1. To migrate the solution, you need to export it. To export, follow the below steps: 
