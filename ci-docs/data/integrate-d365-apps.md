@@ -51,7 +51,7 @@ The task that performs the linking is named *CustomerId Backstamping Hydration*.
 
 ### CustomerId Backstamping Hydration task
 
-- If the status of the *CustomerId Backstamping Hydration* task is *Skipped*, automatic linking wasn't enabled because not all the requirements were met.
+- If the status of the *CustomerId Backstamping Hydration* task is *Skipped*, the error message 'Backstamping job skipped' appears on the System status page. This status indicates that automatic linking wasn't enabled because not all the requirements were met.
 - The task updates every row in the target table, updates the `LastModifiedOn` timestamp for the customer profile, and links records. If workflows such as triggers are associated with the update event on a table that you intend to link, disable the triggers before the first unification to prevent triggering on each record.
 - The *InsightsAppsPlatform* (IAP) service account performs the linking. Logs might reference this service account as either *insightsappsplatform@onmicrosoft.com* or *#InsightsAppsPlatform*.
 
