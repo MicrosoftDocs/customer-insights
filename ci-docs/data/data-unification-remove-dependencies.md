@@ -95,7 +95,7 @@ When you update the **Unify** configuration in Dynamics 365 Customer Insights - 
 
 If the system finds dependencies, you see an error similar to the following message:
 
-`Detected DataVerse dependencies in msdynci_customerprofile entity on these attribute(s): \<attribute names\>. Please delete these dependencies and merge again.`
+`Detected Dataverse dependencies in msdynci_customerprofile entity on these attribute(s): \<attribute names\>. Please delete these dependencies and merge again.`
 
 Customer Insights - Data writes unified customer profiles to a virtual table called `msdynci_customerprofile` in your Dataverse environment. Each mapped and merged field from your data sources becomes a column on this table. When other users in the organization create segments, measures, forms, views, workflows, or other components that reference those columns, Dataverse prevents the deletion of those columns, even when Customer Insights requests the deletion.
 
