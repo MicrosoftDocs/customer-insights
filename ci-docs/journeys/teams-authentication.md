@@ -1,7 +1,7 @@
 ---
 title: Authenticate Teams for webinars v2 users in Customer Insights - Journeys
 description: Learn how to set up authentication and permissions for Teams webinars v2 in Dynamics 365 Customer Insights - Journeys. 
-ms.date: 12/22/2025
+ms.date: 03/31/2026
 ms.topic: article
 author: terezakirk
 ms.author: alfergus
@@ -70,5 +70,20 @@ By completing this setup, you'll:
 :::image type="content" source="media/teams-registration-3.png" alt-text="Screenshot of the request API permissions tab." lightbox="media/teams-registration-3.png":::
 
 You've now successfully completed the Teams authentication set up in Microsoft Entra and Customer Insights - Journeys.
+
+# Set up required access policy 
+Microsoft Teams also enforces an additional safeguard called an Application Access Policy, which allows tenant admins to explicitly scope what the application can access. When configured, this policy ensures that the application can only access webinars created by specific, approved users. 
+ 
+Without this policy in place, the application cannot access certain data such as attandance report. Microsoft documents this model here: [Configure an application access policy for online meetings and virtual events](https://learn.microsoft.com/en-us/graph/cloud-communication-online-meeting-application-access-policy)
+
+Add the required application access policy using [PowerShell](https://learn.microsoft.com/en-us/MicrosoftTeams/teams-powershell-install): 
+
+```
+Connect-MicrosoftTeams 
+New-CsApplicationAccessPolicy -Identity <POLICY_NAME> -AppIds <APP_ID> 
+Grant-CsApplicationAccessPolicy -PolicyName <POLICY_NAME> -Global 
+```
+
+Alternatively, you can grant the policy at the group or user level. See the [documentation](https://learn.microsoft.com/en-us/graph/cloud-communication-online-meeting-application-access-policy) for supported configurations. 
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
