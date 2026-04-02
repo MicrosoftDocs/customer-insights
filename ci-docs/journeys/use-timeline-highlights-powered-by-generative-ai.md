@@ -4,7 +4,7 @@ description: Learn how generative AI enhances timeline highlights, helping you a
 author: alfergus
 ms.author: alfergus
 ms.topic: overview
-ms.date: 03/17/2026
+ms.date: 04/02/2026
 ---
 
 # Timeline highlights with generative AI in Dynamics 365 Customer Insights - Journeys
