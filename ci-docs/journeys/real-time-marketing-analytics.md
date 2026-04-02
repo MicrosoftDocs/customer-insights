@@ -90,6 +90,9 @@ To view **delivery and interaction statistics**, select the **View details**�
 
 A message’s unique opens and clicks are calculated based on the customer's journey run, not against the journey itself. In the case of a repeating journey, if the same customer enters the journey multiple times as it repeats and opens or clicks the same message each time, the system records multiple unique opens or clicks for each journey run. For example, if a customer clicks the same message in the same journey in two different runs, two unique clicks are recorded. 
 
+> [!NOTE]
+> If a journey has been stopped and channel metrics such as open rate or click-through rate are still changing, this is expected. [Learn more](journey-end.md)
+
 You can export up to 10,000 interaction data records and up to 100 conditional content variation records. You can search through the data using a profile's email address and access links to audience profiles that interacted with your email messages. Exports are limited to 10,000 records due to browser cache limitations. Exporting more than 10,000 records can create confusion because records can display on more than one page and be exported more than once, causing the export to be larger than the display counts. Timestamps are reported according to the organization's time zone.
 
 :::image type="content" source="media/analytics-delivery-and-interaction-details.png" alt-text="Screenshot of delivery and interaction details." lightbox="media/analytics-delivery-and-interaction-details.png":::
