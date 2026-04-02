@@ -13,7 +13,7 @@ search.audienceType:
 
 # Segmentation overview
 
-Customer Insights - Journeys uses [segments](segmentation-lists-subscriptions.md) directly from outbound marketing and [Customer Insights - Data](/dynamics365/customer-insights/index). You can view the segments available to you in Customer Insights - Journeys by going to **Audience** > **Segments**.
+Customer Insights - Journeys uses segments you create in the [segment builder](real-time-marketing-redesigned-segment-builder.md) and [Customer Insights - Data](/dynamics365/customer-insights/index). You can view the segments available to you in Customer Insights - Journeys by going to **Audience** > **Segments**.
 
 ## Create a new segment within your customer journey
 
