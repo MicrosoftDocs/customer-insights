@@ -12,3 +12,7 @@ ms.date: 03/17/2026
 [!INCLUDE [visualize-data-in-copilot](~/../shared-content/shared/dynamics365-core/visualize-data-in-copilot.md)]
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
+
+### Related information
+
+[Agents, Copilot, and AI capabilities in Dynamics 365 apps](/dynamics365/copilot/ai-get-started)  
