@@ -12,3 +12,7 @@ ms.date: 03/17/2026
 [!INCLUDE [find-data-with-ai](~/../shared-content/shared/dynamics365-core/find-data-with-ai.md)]
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
+
+### Related information
+
+[Agents, Copilot, and AI capabilities in Dynamics 365 apps](/dynamics365/copilot/ai-get-started)  
