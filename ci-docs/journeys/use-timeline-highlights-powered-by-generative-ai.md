@@ -12,3 +12,7 @@ ms.date: 03/17/2026
 [!INCLUDE [use-timeline-highlights-powered-by-generative-ai](~/../shared-content/shared/dynamics365-core/use-timeline-highlights-powered-by-generative-ai.md)]
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
+
+### Related information
+
+[Agents, Copilot, and AI capabilities in Dynamics 365 apps](/dynamics365/copilot/ai-get-started)  
