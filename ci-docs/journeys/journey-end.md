@@ -1,10 +1,10 @@
 ---
 title: End a journey
 description: An overview of the journey end configuration in Dynamics 365 Customer Insights - Journeys.
-ms.date: 03/26/2026
+ms.date: 04/03/2026
 ms.topic: article
-author: colinbirkett
-ms.author: colinbirkett
+author: cmenesatti
+ms.author: alfergus
 search.audienceType: 
   - admin
   - customizer
@@ -20,8 +20,8 @@ By default, customers end the journey when they complete all the steps. You can 
 - **End on a date**: You can set a date to stop accepting new customers into the journeys. After this end date, customers that have already entered the journey complete all the steps but no new customers will enter the journey.
 - **Stopping a journey**: You can stop a journey using the **Stop** button. When you stop a journey no one can enter the journey and anyone who is going through the journey is stopped wherever they are and doesn't complete any remaining steps. You can't restart a stopped journey. If the journey has multiple versions due to live editing, you must stop each version of the journey individually. 
 
->[!TIP]
->Stopping a journey prevents new customers from entering and halts in-progress actions, but [journey insights](real-time-marketing-analytics#journey-operational-analytics) continue to update after the journey is stopped. Messages sent before stopping may still be delivered, opened, clicked, or bounced over the following days due to mail server delays and recipient behavior. Customer Insights - Journeys updates analytics—such as open rate, click-through rate, and delivery issues—in near real-time as these interactions are received. Expect insights to continue changing for several days after a journey is stopped.
+> [!TIP]
+> Stopping a journey prevents new customers from entering and halts in-progress actions, but [journey insights](real-time-marketing-analytics.md#journey-operational-analytics) continue to update after the journey is stopped. Messages sent before the journey is stopped may still be delivered, opened, clicked, or bounced in the days that follow due to mail server delays and recipient behavior. Customer Insights - Journeys updates analytics (such as open rate, click-through rate, and delivery issues) in near real-time as interactions are received. Expect insights to continue to change for several days after a journey is stopped.
 
 ## Journey goal
 
