@@ -27,6 +27,16 @@ When you install Customer Insights - Journeys, the consent center (**Customer In
 
 - Load consent information that was already captured for contacts or leads in Dynamics 365 Customer Insights - Journeys.
 
+Consent columns referenced by this article:
+
+|Table name | Column label | Schema name | Remarks |
+|-----------|--------------|-------------|---------|
+| Contact   | Do not allow Emails | donotemail |  Options include: Allow (0), Do Not Allow (1) |
+| Contact   | Do not allow Bulk Emails | donotbulkemail | Options include: Allow (0), Do Not Allow (1) |
+| Contact   | Do not track | msgdpr_donottrack | Options include: Allow (0), Do Not Allow (1) |
+| Lead   | Do not allow Emails | donotemail |  Options include: Allow (0), Do Not Allow (1) |
+| Lead   | Do not allow Bulk Emails | donotbulkemail | Options include: Allow (0), Do Not Allow (1) |
+
 ## Loading consent from contacts, leads, and subscription lists
 
 > [!IMPORTANT]
