@@ -4,7 +4,7 @@ description: Learn how to find, filter, and sort data in a view using AI in Dyna
 author: alfergus
 ms.author: alfergus
 ms.topic: overview
-ms.date: 04/02/2026
+ms.date: 04/06/2026
 ---
 
 # Find data in a view with AI in Dynamics 365 Customer Insights - Journeys (preview)
