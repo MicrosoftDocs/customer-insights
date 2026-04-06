@@ -1,7 +1,7 @@
 ---
 title: Migrate consent records to Customer Insights - Journeys
 description: Learn how to migrate existing consent records to Customer Insights - Journeys from outbound marketing and other sources.
-ms.date: 08/22/2023
+ms.date: 04/06/2026
 ms.topic: reference
 author: alfergus
 ms.author: alfergus
@@ -27,7 +27,7 @@ When you install Customer Insights - Journeys, the consent center (**Customer In
 
 - Load consent information that was already captured for contacts or leads in Dynamics 365 Customer Insights - Journeys.
 
-Consent columns referenced by this article:
+Here are the consent columns referenced by this article:
 
 |Table name | Column label | Schema name | Remarks |
 |-----------|--------------|-------------|---------|
