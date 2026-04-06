@@ -408,6 +408,8 @@
       href: real-time-marketing-create-lead-scoring-model.md    
     - name: Qualify the best leads
       href: real-time-marketing-qualify-leads.md
+    - name: Create records and activities from journeys (preview)
+      href: create-records-activities.md
     - name: Create sales activities from lead signals (preview)
       href: real-time-marketing-optimize-lead-management.md
     - name: Create custom matching rules
