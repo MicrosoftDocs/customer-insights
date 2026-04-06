@@ -25,7 +25,7 @@ Suppose you need to include a short blurb about your company (what it does, annu
 
 ## How are content blocks different from email templates? 
 
-A content block is a *fragment of content* that optionally can also include layout. A content block is usually meant to be used as is in emails, providing a quick and easy way to reuse content. An email can contain multiple content blocks. Content blocks can be inserted and removed as needed. The same content block can be used in multiple emails. Updating a content block may or may not update emails that include it, depending on whether it's a "static" or "dynamic" content block (more on this below). 
+A content block is a *fragment of content* that optionally can also include layout. A content block is meant to be used as is in emails, providing a quick and easy way to reuse content. An email can contain multiple content blocks. Content blocks can be inserted and removed as needed. The same content block can be used in multiple emails. Updating a content block may or may not update emails that include it, depending on whether it's a "static" or "dynamic" content block (more on this below). 
 
 Email templates, on the other hand, are structured layouts for an *entire email* with placeholder content that's expected to be updated. Only one template can be used to create an email. Updating a template doesn't update existing emails. Finally, templates can include content blocks, but the reverse isn't possible.
 
@@ -79,7 +79,7 @@ Content blocks are versatile and can be used in many scenarios to drive efficien
 There are two ways to create content blocks: from the content block editor or from the email designer.
 
 - **From the content block editor:** Navigate to the **Content blocks** menu item in the left navigation menu to see a list of available content blocks. You can select any of the blocks to edit or select **+New** in the command bar at the top to create a new content block from scratch. To create an element content block, drag and drop elements onto the canvas and enter the content. To create a section content block, drag and drop layouts and then insert elements and content within those layouts.
-- **From the email designer:** You can select and save any content from your emails as content blocks. Select an element (for example, text or an image) or a section and then select the **Content block** context menu item. You'll see a **Save as content block** dialog that allows you to replace an existing content block or create a new one.
+- **From the email designer:** You can select and save any content from your emails as content blocks. Select an element (for example, text or an image) or a section and then select the **Content block** context menu item. You see a **Save as content block** dialog that allows you to replace an existing content block or create a new one.
 
 ### Properties of a content block 
 

@@ -13,7 +13,7 @@ search.audienceType:
 
 # Migrate consent records to Customer Insights - Journeys
 
-When you install Customer Insights - Journeys, the consent center (**Customer Insights - Journeys** > **Audience** > **Consent center**) contains no records, even if you already gathered consent in outbound marketing. You don't need to re-enter contact consent data from outbound marketing if you plan to run journeys in Customer Insights - Journeys for contacts. If you want to reuse contact consent data for leads or profiles, or wish to add new consents, you can use one of three methods:
+When you install Customer Insights - Journeys, the consent center (**Customer Insights - Journeys** > **Audience** > **Consent center**) contains no records, even if you already gathered consent in outbound marketing. You don't need to reenter contact consent data from outbound marketing if you plan to run journeys in Customer Insights - Journeys for contacts. If you want to reuse contact consent data for leads or profiles, or wish to add new consents, you can use one of three methods:
 
 - Add new consent records for email and text messages manually by selecting the corresponding option from the top ribbon.
 
@@ -40,7 +40,7 @@ Here are the consent columns referenced by this article:
 ## Loading consent from contacts, leads, and subscription lists
 
 > [!IMPORTANT]
-> If you segregate data across business units, you need to load consent from your sources (contacts, leads, and/or subscription lists) into each business unit's compliance profile(s) individually. This will ensure that valid consent records are created for each business unit and compliance profile combination.
+> If you segregate data across business units, you need to load consent from your sources (contacts, leads, and/or subscription lists) into each business unit's compliance profile (or profiles) individually. Loading consent individually ensures that valid consent records are created for each business unit and compliance profile combination.
 
 The **Load consent** button loads consent information for email addresses that are stored in contact, lead, or subscription list records in Customer Insights - Journeys and set up in the audience configuration in settings. It's not intended to load consent from other data sources.
 
@@ -76,7 +76,7 @@ The following example scenarios detail how to load Customer Insights - Journeys 
 ### Loading contact or lead bulk email, email, and tracking consent
 
 > [!NOTE]
-> Leads do not contain a field for tracking consent, so Customer Insights - Journeys tracking consent records will not be created.
+> Leads do not contain a field for tracking consent, so Customer Insights - Journeys tracking consent records won't be created.
 
 1. Choose whether you're loading consent from contacts or leads.
 1. Choose the appropriate compliance profile, which is likely a new profile with a preference center.
@@ -99,10 +99,10 @@ If you have set up a subscription list to track individuals who don't wish to be
 1. If you have multiple subscription lists that track individuals who have opted out of specific communication themes or topics, you should load those as "Opted out" into the equivalent topics within the **Commercial** purpose of the compliance profile.
 
 > [!IMPORTANT]
-> If you store consent data for contacts in a field other than **Allow bulk email**, you'll need to use the **Import from Excel** option to load consent data to the consent center first. Only then will you be able to send commercial email in a journey in Customer Insights - Journeys.
+> If you store consent data for contacts in a field other than **Allow bulk email**, you need to use the **Import from Excel** option to load consent data to the consent center first. Only then can you send commercial email in a journey in Customer Insights - Journeys.
 
 > [!TIP]
-> If you restore data in Customer Insights - Journeys, all consent records will be returned to the state they were in at the time backup was made. This may result in consent data being obsolete. To avoid complications, export all consent data into Excel before starting the restore process and use it as a reference after the restore is completed.
+> If you restore data in Customer Insights - Journeys, all consent records are returned to the state they were in at the time backup was made. This may result in consent data being obsolete. To avoid complications, export all consent data into Excel before starting the restore process and use it as a reference after the restore is completed.
 
 > [!TIP]
 > To migrate consent data, you need to have local access permissions to:
