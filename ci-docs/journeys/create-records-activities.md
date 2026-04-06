@@ -1,10 +1,11 @@
 ---
 title: Create records and activities from journeys (preview)
-description: Learn how to create any record or activity type directly from journeys in Dynamics 365 Customer Insights - Journeys. 
-ms.date: 04/03/2026
+description: Dynamics 365 Customer Insights journeys let you create any record or activity automatically from customer actions. Discover how to optimize engagement today.
+ms.date: 04/06/2026
 ms.topic: article
 author: cmenesatti-m
 ms.author: alfergus
+ms.reviewer: alfergus
 search.audienceType: 
   - admin
   - customizer
@@ -47,6 +48,8 @@ To add the capability to create records to your journey:
 1. On the journey canvas, select the plus sign **(+)** where you want to add the record creation step.
 1. In the tile gallery, select **Create a record**.
 
+:::image type="content" source="media/create-records-activities-tiles.png" alt-text="Screenshot of Dynamics 365 Add an action panel with Create a record tile highlighted for journey step selection." lightbox="media/create-records-activities-tiles.png":::
+
 ### Select the record type
 
 After adding the **Create a record** tile, search for or scroll through the list of available entities and select the record type you want to create (for example, Phone Call, Task, Lead, Opportunity, or any custom entity). Records related to event planning aren't supported.
@@ -62,6 +65,8 @@ For each required field, choose whether to set a **Static value** or use **Dynam
 
 - **Static value**: Enter a fixed value that is the same for all records the tile creates.
 - **Dynamic content**: Select data from Dataverse to personalize each record based on the contact, lead, trigger, or related data.
+
+:::image type="content" source="media/create-records-activities-configure.png" alt-text="Screenshot of Dynamics 365 Create a record pane for Phone call, showing required Subject field set with dynamic content." lightbox="media/create-records-activities-configure.png":::
 
 > [!IMPORTANT]
 > Required fields are displayed by default. To save and publish the journey, you must fill in all required fields.
