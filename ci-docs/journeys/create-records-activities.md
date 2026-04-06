@@ -175,8 +175,8 @@ If you previously used the *Create sales activities from lead signals* preview f
 
 ## Related information
 
-- [Journeys overview](journeys-overview)
-- [Add an action in a journey](add-action)
-- [Journey analytics](real-time-marketing-analytics)
+- [Journeys overview](journeys-overview.md)
+- [Add an action in a journey](add-action.md)
+- [Journey analytics](real-time-marketing-analytics.md)
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
