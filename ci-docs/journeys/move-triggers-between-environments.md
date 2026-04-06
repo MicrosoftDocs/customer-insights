@@ -29,7 +29,7 @@ You can move triggers in **any** state between environments (draft, published, o
     > ![Screenshot of selecting a Power App from dashboard](media/select-power-app.png "Screenshot of selecting a Power App from dashboard")
 
     > [!IMPORTANT]
-    > Ensure that the environment for Power Apps is the same as the one that you are currently working in (the one that has the triggers you want to migrate).
+    > Ensure that the environment for Power Apps is the same as the one that you're currently working in (the one that has the triggers you want to migrate).
 
 1. Select **Solutions** on the left pane and select **+ New Solution** in the top bar.
 
@@ -51,8 +51,8 @@ You can move triggers in **any** state between environments (draft, published, o
 
     |     Trigger State    |     Components added    |
     |---|---|
-    |     Draft    |     Trigger record, CustomerAPI record, and CatalogAssignment record    |
-    |     Published    |     Trigger record, CustomAPI record, CatalogAssignment record, and customAPIrequestparameter records    |
+    |     Draft    |     Trigger record, CustomApi record, and CatalogAssignment record    |
+    |     Published    |     Trigger record, CustomApi record, CatalogAssignment record, and CustomApiRequestParameter record(s)    |
 
 1. Once done, you're ready to migrate the solution to the destination environment.
 1. To migrate the solution, you need to export it. To export, follow the below steps: 
@@ -91,7 +91,7 @@ Solution upgrades only change the state of the triggers when the triggers in the
 
 - Can I import more than one trigger per solution?
 
-    **Yes**. You can import any number of triggers per solution. At the destination, triggers that were imported in a published state will transition from a "publishing" state to a "published" state over a few minutes.
+    **Yes**. You can import any number of triggers per solution. At the destination, triggers that were imported in a published state transition from a "publishing" state to a "published" state over a few minutes.
 
 - Do all triggers in a solution need to be in the same state when migrating?
 
