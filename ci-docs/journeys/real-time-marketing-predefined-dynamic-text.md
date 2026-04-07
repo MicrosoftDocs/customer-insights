@@ -1,7 +1,7 @@
 ---
 title: Personalize content using predefined dynamic text
 description: Learn how to personalize content using predefined dynamic text in Dynamics 365 Customer Insights - Journeys.
-ms.date: 12/20/2023
+ms.date: 04/06/2026
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
@@ -61,7 +61,7 @@ Most of the time you should be able to use predefined dynamic text as-is, but so
   > ![Screenshot of updating predefined dynamic text.](media/real-time-marketing-update-predefined-tokens.png "Screenshot of updating predefined dynamic text")
 
 > [!IMPORTANT]
-> The **Update predefined dynamic text** command only applies to the current message and future messages. It does not retroactively change previous uses of the dynamic text.
+> The **Update predefined dynamic text** command only applies to the current message and future messages. It doesn't retroactively change previous uses of the dynamic text.
 
 ## Creating and sharing predefined dynamic text
 
@@ -98,7 +98,7 @@ To remove predefined dynamic text:
 
 When you work with multiple geographies and languages, communicating dates and times clearly requires using the right format to match the recipient's expectations. To ensure your communications are clear for all recipients, Customer Insights - Journeys supports many date and time formats.
 
-Whenever dynamic text is defined using a *datetime* type attribute, another set of options becomes available to select a date/time format that is readable and consistent with the locale (language and region) of the audience. If desired, you can also change the locale and time zone to match the audience. The Customer Insights - Journeys app also automatically converts the stored date/time into the selected time zone.
+Whenever dynamic text is defined using a *datetime* type attribute, another set of options becomes available to select a date/time format that's readable and consistent with the locale (language and region) of the audience. If desired, you can also change the locale and time zone to match the audience. The Customer Insights - Journeys app also automatically converts the stored date/time into the selected time zone.
 
 Available formatting options offer three ways to present information: date and time, date only, and time only. Within each format, there are multiple options to cover various use cases.
 
@@ -118,7 +118,7 @@ If needed, you can change the language and region setting along with time zone b
 > [!div class="mx-imgBorder"]
 > ![locale and time zone](media/real-time-marketing-locale-and-time-zone.png "locale and time zone")
 
-### Using data that is reached by traversing a 1-to-many relation
+### Using data that are reached by traversing a 1-to-many relation
 
 Personalized messages drive engagement that helps deliver desired business outcomes. [Dynamic text](real-time-marketing-predefined-dynamic-text.md) in Customer Insights - Journeys makes it easy to include personalized information for each recipient. Previously, dynamic text was limited to data that could be reached by 1-to-1 or many-to-1 relations. Now, you can use data that requires traversing 1-to-many or many-to-many relations, unlocking even more data for personalization. 
 
@@ -168,12 +168,12 @@ Similar to dynamic text, data from additional tables can also be used to define 
 
 #### Validating and finalizing
 
-Though you can decide not to select a specific record right away, the specific record selection must be done before the message can be made “ready to send”. Leaving the record selection for later can be a useful approach to separate the content design phase from the content use (and reuse) phase. This is also how templates can be created. For example, a generic event invitation message like below can be created where all of the event-related dynamic text doesn't have an event selected.
+Though you can decide not to select a specific record right away, the specific record selection must be done before the message can be made “ready to send”. Leaving the record selection for later can be a useful approach to separate the content design phase from the content use (and reuse) phase. This is also how templates can be created. For example, a generic event invitation (shown below) can be created where all of the event-related dynamic text doesn't have an event selected.
 
 > [!div class="mx-imgBorder"]
 > ![enter personalization details](media/real-time-marketing-enter-personalization-details.png "enter personalization details")
 
-The event selection step can then be completed when the message created from this template is ready to be used in a journey.  If you try to make the message “Ready to send” without completing this step, the validation gives an error message. Even without running the validation step, you can see what needs to be done in the personalization tab.
+The event selection step can then be completed when the message created from this template is ready to be used in a journey. If you try to make the message “Ready to send” without completing this step, the validation gives an error message. Even without running the validation step, you can see what needs to be done in the personalization tab.
 
 > [!div class="mx-imgBorder"]
 > ![select a record to personalize](media/real-time-marketing-select-a-record-to-personalize.png "select a record to personalize")
@@ -190,7 +190,7 @@ Select the tables you want to add or remove, then select **Save**.
   > ![Change the pick list](media/specific-record-manage-list.png "Change the pick list")
 
 > [!NOTE]
-> Removing dynamic text only removes it from the predefined list, it does not remove it from the messages that are already using it.
+> Removing dynamic text only removes it from the predefined list, it doesn't remove it from the messages that are already using it.
 
 #### Customer measures (calculated metrics) as data source
 
@@ -212,5 +212,11 @@ See [Use calculated measures in Customer Insights - Journeys and other Dataverse
 To define dynamic text with measures, go to **Customer Profile**. You should see defined measures as a related table that you can traverse to and use a specific calculation within that table.
 
 :::image type="content" source="media/dynamic-text-cid-measures.png" alt-text="Browsing Customer Insights - Data measures screenshot.":::
+
+## Allow HTML content in source content
+
+Dynamic text and lists allow you to personalize content in emails and text messages. The source content used for personalization is typically expected to be plain text so brand and other formatting is applied consistently across the entire message. However, there may be situations where you need to insert additional HTML tags into the source content to achieve specific formatting. To allow HTML insertion into the source content, select the **Advanced** toggle and check the **Prevent HTML encoding** option. HTML encoding is prevented by default for safety.
+
+:::image type="content" source="media/predefined-dynamic-text-html.png" alt-text="Screenshot of Personalization settings with Display name, Default value, and Advanced option to prevent HTML encoding." lightbox="media/predefined-dynamic-text-html.png":::
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
