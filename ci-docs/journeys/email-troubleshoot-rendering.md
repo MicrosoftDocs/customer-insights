@@ -1,7 +1,7 @@
 ---
 title: "Troubleshooting: Fix email rendering issues"
 description: Fix email rendering issues in Dynamics 365 Customer Insights - Journeys. Discover solutions for common email display problems and improve brand consistency.
-ms.date: 04/06/2026
+ms.date: 04/07/2026
 ms.topic: troubleshooting-general
 author: vinayd
 ms.author: alfergus
@@ -16,7 +16,7 @@ search.audienceType:
 
 Rendering emails exactly as designed is critical for protecting the company’s brand. However, email clients vary widely in how they interpret standard HTML. To address these differences, the email designer applies a post‑processing step that modifies the HTML to work around known limitations in various email clients. As a result, the final email HTML may be more complex than expected. While this process ensures consistent rendering across most email clients, some limitations can't be fully resolved.
 
-This article documents known limitations and recommended mitigations. Because email clients evolve over time, issues may be fixed or new issues may be introduced anytime. We'll update this page as we learn about these changes.
+This article documents known limitations and recommended mitigations. Because email clients evolve over time, issues may be fixed or new issues may be introduced anytime. This article will be updated as we learn about these changes.
 
 ## All email clients
 
@@ -179,7 +179,7 @@ Outlook (Classic) can apply a default underline to anchor (`<a>`) elements, resu
 
 Add the following CSS to the email's default styles to remove the default underline while preserving intentional underlines applied through the toolbar:
 
-```HTML
+```CSS
 a { text-decoration: none; }
 u a { text-decoration: underline; }
 ```
@@ -288,7 +288,7 @@ Add the following MSO conditional style block to the `<body>` of the email, repl
 
 If your email uses a custom `@font-face` declaration, also add the `mso-font-alt` property to specify the fallback:
 
-```HTML
+```CSS
 @font-face {
   font-family: Ambit;
   font-display: swap;
