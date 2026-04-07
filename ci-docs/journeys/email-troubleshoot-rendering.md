@@ -128,7 +128,7 @@ Fix the HTML directly to ensure the `<a>` element wraps the `<img>` element rath
 
 ### A gap appears between sections when forwarding
 
-When an email is forwarded from Outlook (Classic), the HTML is pre-processed before sending, which can introduce gaps between sections. 
+When an email is forwarded from Outlook (Classic), the HTML is pre-processed before sending, which can introduce gaps between sections.
 
 #### Suggested solution
 
