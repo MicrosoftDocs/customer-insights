@@ -66,7 +66,10 @@ When you copy the environment configuration, a confirmation message displays whe
 
    :::image type="content" source="media/data-sources-copied.png" alt-text="List of data sources that were copied and need authentication.":::
 
-1. Edit the data sources and enter the credentials to refresh them. Data sources from the Common Data Model folder and Dataverse must be created manually with the same name as in the source environment.
+1. Edit the data sources and enter the credentials to refresh them. 
+
+> [!CAUTION]
+> Data sources from the Common Data Model folder and Dataverse must be created manually with the same name as in the source environment.
 
 1. After refreshing the data sources, go to **Data** > **Unify**. Here you find settings from the source environment. Edit them as needed or select **Unify** > **Unify customer profiles and dependencies** to start the data unification process and create the unified customer table.
 
