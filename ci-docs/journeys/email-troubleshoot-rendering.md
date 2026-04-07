@@ -205,7 +205,7 @@ Custom bullet types (for example, square bullets) may not render correctly in Ou
 
 #### Suggested solution
 
-In addition to setting the CSS class, include the type attribute directly on the <ul> element:
+In addition to setting the CSS class, include the type attribute directly on the `<ul>` element:
 
 ```HTML
 <ul class="square" type="square">
