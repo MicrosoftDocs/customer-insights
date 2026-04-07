@@ -2792,11 +2792,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "ci-docs/journeys/custom-template-attributes.md",
-      "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "ci-docs/journeys/mkt-settings-authenticate-domains.md",
       "redirect_url": "/dynamics365/customer-insights/journeys/transition-overview",
       "redirect_document_id": false
