@@ -24,13 +24,13 @@ The following table provides a quick reference to the custom attributes and meta
 
 | Custom attribute | Description |
 | --- | --- |
-| `<meta type="xrm/designer/setting" name="type" value="marketing-designer-content-editor-document">` | When this tag is present in the `<head>` of your document, the **Designer** tab provides drag-and-drop features. If this tag isn't present, the **Designer** tab provides the simplified, full-page editor. More information: [Show the toolbox and enable drag-and-drop editing](#show-toolbox)|
-| `<meta type="xrm/designer/setting" name="additional-fonts" datatype="font" value="<font-list>">` | When this tag is present in the `<head>` of your document, the fonts listed in the _&lt;font-list&gt;_ (semicolon-separated) will be added to the font menu in the formatting toolbar for text elements. More information: [Add new fonts to the text-element toolbar](#fonts)|
-| `<div data-container="true"> … </div>` | Marks the start and end of a container where users can drag and drop design elements. More information: [Create a container where users can add design elements](#containers) |
-| `<div data-editorblocktype="<element-type>"> … </div>` | Marks the start and end of a design element. The value of the attribute identifies which type of element it is (text, image, button, and so on). Some design elements support additional attributes here. More information: [Identify design elements](#elements) and [Lock elements in Designer view](#lock-element) |
-| `<meta type="xrm/designer/setting" name="<name>" value="<initial-value>" datatype="<data-type>" label="<label>">` | This tag defines a document-wide style setting that users can edit using the **Designer** > **Styles** tab.  More information: [Add settings to the Styles tab](#styles) |
-| `/* @<tag-name> */ … /* @<tag-name> */` | Use CSS comments like these to surround a CSS value to be controlled by a style setting, where &lt;_tag-name&gt;_ is the value of the _name_ attribute for the meta tag that established the setting. More information: [Add CSS comments to implement style settings in the head](#styles-css) |
-| `property-reference= "<attr>:@< tag-name >;<attr>:@< tag-name >; …"` | Place this attribute in any HTML tag to place an attribute with a value controlled by a style setting, where _&lt;attr&gt;_ is the name of the attribute to be created and &lt;_tag-name&gt;_ is the value of the `name` attribute for the meta tag that established the setting. More information: [Add property-reference attributes to implement style settings in the body](#styles-attribute) |
+| `<meta type="xrm/designer/setting" name="type" value="marketing-designer-content-editor-document">` | When this tag is present in the `<head>` of your document, the **Designer** tab provides drag-and-drop features. If this tag isn't present, the **Designer** tab provides the simplified, full-page editor. More information: [Show the toolbox and enable drag-and-drop editing](#show-the-toolbox-and-enable-drag-and-drop-editing)|
+| `<meta type="xrm/designer/setting" name="additional-fonts" datatype="font" value="<font-list>">` | When this tag is present in the `<head>` of your document, the fonts listed in the _&lt;font-list&gt;_ (semicolon-separated) will be added to the font menu in the formatting toolbar for text elements. More information: [Add new fonts to the text-element toolbar](#add-new-fonts-to-the-text-element-toolbar)|
+| `<div data-container="true"> … </div>` | Marks the start and end of a container where users can drag and drop design elements. More information: [Create a container where users can add design elements](#create-a-container-where-users-can-add-design-elements) |
+| `<div data-editorblocktype="<element-type>"> … </div>` | Marks the start and end of a design element. The value of the attribute identifies which type of element it is (text, image, button, and so on). Some design elements support additional attributes here. More information: [Identify design elements](#identify-design-elements) and [Lock elements in Designer view](#lock-a-container-in-designer-view) |
+| `<meta type="xrm/designer/setting" name="<name>" value="<initial-value>" datatype="<data-type>" label="<label>">` | This tag defines a document-wide style setting that users can edit using the **Designer** > **Styles** tab.  More information: [Add settings to the Styles tab](#add-settings-to-the-styles-tab) |
+| `/* @<tag-name> */ … /* @<tag-name> */` | Use CSS comments like these to surround a CSS value to be controlled by a style setting, where &lt;_tag-name&gt;_ is the value of the _name_ attribute for the meta tag that established the setting. More information: [Add CSS comments to implement style settings in the head](#add-css-comments-to-implement-style-settings-in-the-head) |
+| `property-reference= "<attr>:@< tag-name >;<attr>:@< tag-name >; …"` | Place this attribute in any HTML tag to place an attribute with a value controlled by a style setting, where _&lt;attr&gt;_ is the name of the attribute to be created and &lt;_tag-name&gt;_ is the value of the `name` attribute for the meta tag that established the setting. More information: [Add property-reference attributes to implement style settings in the body](#add-property-reference-attributes-to-implement-style-settings-in-the-body) |
 
 The remaining sections of this article provide more information about how to use each of the features summarized in the table.
 
@@ -83,7 +83,7 @@ Any text or HTML tags that are nested within a **data-container** div-tag pair, 
 
 ## Lock a container in Designer view
 
-You can lock a [container](#containers) to make all of its content read-only on the **Designer** tab. If a locked container contains [design elements](#elements), then all content and settings for those elements remain locked, and the **Properties** tab will never be shown for them, even if you select them.
+You can lock a [container](#create-a-container-where-users-can-add-design-elements) to make all of its content read-only on the **Designer** tab. If a locked container contains [design elements](#identify-design-elements), then all content and settings for those elements remain locked, and the **Properties** tab will never be shown for them, even if you select them.
 
 You might use the container-locking feature to lock a container after you're done adding and configuring design components for it.
 
@@ -96,9 +96,9 @@ To lock a container, add the `data-locked="hard"` attribute to the container tag
 ```
 
 > [!NOTE]
-> You can also lock content at the design-element level. If content is locked at the container level, then that setting overrules the locked/unlocked status of all the design elements inside that container. More information: [Lock elements in Designer view](#lock-element) 
+> You can also lock content at the design-element level. If content is locked at the container level, then that setting overrules the locked/unlocked status of all the design elements inside that container. More information: [Lock elements in Designer view](#lock-a-container-in-designer-view)
 
-To further enforce container locking, you can limit access to the **HTML** tab, which will prevent selected users from accessing the code (where they could otherwise defeat this setting). More information: [Control access to designer features](designer-feature-protection.md) 
+To further enforce container locking, you can limit access to the **HTML** tab, which will prevent selected users from accessing the code (where they could otherwise defeat this setting). More information: [Control access to designer features](designer-feature-protection.md)
 
 ## Identify design elements
 
@@ -159,7 +159,7 @@ For example:
 When a design element is marked as protected, users working in the **Designer** tab for a page or email won't be able to edit the element's properties or content. This attribute is always included for the content-block element, but you can add it to any type of design element to protect it. Any design element that includes this attribute is shown as shaded on the **HTML** tab to indicate that it's protected, but you can still edit it there if you insist. Set this attribute to "false" (or just remove it) to remove protection from a design element.
 
 > [!NOTE]
-> You can also lock content at the container level, which will overrule the locked/unlocked status of all the design elements inside that container. More information: [Lock a container in Designer view](#lock-container) 
+> You can also lock content at the container level, which will overrule the locked/unlocked status of all the design elements inside that container. More information: [Lock a container in Designer view](#lock-a-container-in-designer-view) 
 
 To further enforce content locking, you can limit access to the **HTML** tab, which will prevent selected users from accessing the code (where they could otherwise defeat this setting). More information: [Control access to designer features](designer-feature-protection.md)
 
@@ -178,17 +178,17 @@ To bring HTML created externally into the designer, start by doing the following
 1. If you're working with a marketing email, be sure to use [assist edit](dynamic-email-content.md#personalization) to [place all required content and links](email-design.md#required-links) (including a subscription-center link and your physical sender address).
 
 > [!TIP]
-> Because you have just pasted in external HTML, your design probably doesn't include any code that's specific to Dynamics 365 Customer Insights - Journeys, so the **Designer** shows the _full-page editor_, which provides features for basic text formatting, image formatting, and (for emails) [assist edit](dynamic-email-content.md#personalization) for adding dynamic content. For more information about how to work with full-page editor, see [Show the toolbox and enable drag-and-drop editing](#show-toolbox). If the full-page editor provides all of the functionality that you need, then use it to fine-tune your design and then go live with it as usual. If you prefer to use the _drag-and-drop editor_ to fine-tune your design, see the next section for information about how to enable it.
+> Because you have just pasted in external HTML, your design probably doesn't include any code that's specific to Dynamics 365 Customer Insights - Journeys, so the **Designer** shows the _full-page editor_, which provides features for basic text formatting, image formatting, and (for emails) [assist edit](dynamic-email-content.md#personalization) for adding dynamic content. For more information about how to work with full-page editor, see [Show the toolbox and enable drag-and-drop editing](#show-the-toolbox-and-enable-drag-and-drop-editing). If the full-page editor provides all of the functionality that you need, then use it to fine-tune your design and then go live with it as usual. If you prefer to use the _drag-and-drop editor_ to fine-tune your design, see the next section for information about how to enable it.
 
 ### Enable the drag and drop editor after import
 
 If you'd like to enable the full-featured drag-and drop editor and/or add advanced design elements while working in the **Designer** view, you can easily do so by further editing your imported HTML code as follows:
 
 1. Go back to the **Design** > **HTML** tab of the  designer.
-1. Enable the drag-and-drop editor by adding the required meta tag to the **\&lt;head\&gt;** section of your document as described in [Show the toolbox and enable drag-and-drop editing](#show-toolbox).
+1. Enable the drag-and-drop editor by adding the required meta tag to the **\&lt;head\&gt;** section of your document as described in [Show the toolbox and enable drag-and-drop editing](#show-the-toolbox-and-enable-drag-and-drop-editing).
 1. Do the following as needed while working on the **Design** > **HTML** tab:
 
-    - At each part of your design where you'd like to be able to drag one or more design elements, add code to create a data container as described in [Create a container where users can add design elements](#containers).
+    - At each part of your design where you'd like to be able to drag one or more design elements, add code to create a data container as described in [Create a container where users can add design elements](#create-a-container-where-users-can-add-design-elements).
     - If you prefer to position design elements directly in your code without using drag-and-drop, you can enter the required code directly into the **Design** > **HTML** tab. Elements that you add in this way won't support drag-and-drop, but they'll provide settings in the **Properties** panel of the **Design** > **Designer** tab. You can only place text, image, divider, and button elements using this technique (create containers and use drag-and-drop for other types of design elements). See the table after this procedure for the HTML structures required to create each of these elements; copy/paste this code directly from the table as needed.
 
 1. You can now go to the **Design** > **Designer** tab and drag design elements into each of the containers you set up and then use the **Properties** panel to configure each design element that you dragged in or pasted directly into your code.
@@ -200,7 +200,7 @@ If you'd like to enable the full-featured drag-and drop editor and/or add advanc
 | Divider | `<div data-editorblocktype="Divider"><div align="center" class="dividerWrapper"><table aria-role="presentation" style="padding: 0px; margin: 0px; width: 100%"><tbody><tr style="padding: 0px;"> <td style="margin:0px; padding-left: 0px; padding-right: 0px; padding-top: 5px; padding-bottom: 5px; vertical-align:top;"> <p style="margin: 0px; padding: 0px; border-bottom-width: 3px; border-bottom-style: solid; border-bottom-color: rgb(0, 0, 0); line-height: 0px; width: 100%;"><span>&nbsp;</span></p></td></tr></tbody></table></div></div>` | Don't edit any of this code directly in the HTML editor. Instead, go do the **Designer** and use the **Properties** panel. |
 | Button | `<div data-editorblocktype="Button"><!--[if mso]><div align="center"><v:rect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word"`  | Don't edit any of this code directly in the HTML editor. Instead, go do the **Designer** and use the **Properties** panel. |
 
-For more information about how design elements appear in code, see [Identify design elements](#elements).
+For more information about how design elements appear in code, see [Identify design elements](#identify-design-elements).
 
 ## Add new fonts to the text-element toolbar
 
