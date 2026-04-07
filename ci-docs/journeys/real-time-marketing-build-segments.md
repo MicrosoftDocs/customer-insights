@@ -1,7 +1,7 @@
 ---
 title: Build segments in Customer Insights - Journeys 
 description: Learn how to build segments to use in real-time journeys in Dynamics 365 Customer Insights - Journeys.
-ms.date: 04/06/2026
+ms.date: 04/07/2026
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -142,6 +142,11 @@ You can define segment membership by matching a list of contacts or leads from a
 - For static snapshots, contacts or leads that the segment builder has permissions to see in Dataverse either by teams or business unit scoping permissions are found and included in the segment definition. For dynamic queries, any matching contacts or leads, regardless of the business unit that the segment author belongs to while defining the segment, are included in the segment at run time.
 
 ## View and edit your segment with the query view
+
+> [!TIP]
+> To enable this feature:
+> 1. Go to **Settings** > **Overview** > **Feature switches**.
+> 1. **Enable** the **Query edit** toggle inside the **Segmentation** section.
 
 Using the query viewer, you can view, copy, and directly edit the underlying SQL that defines a segment. To open the query viewer, select the **</> Query** toggle in the top right of the segment builder. This opens a pane with the SQL query that represents the segment. You can edit the SQL query to change the segment definition or copy the query or parts of it from one segment to another. Directly editing the SQL query is useful when you’re iterating quickly on complex logic or cloning a segment pattern across similar segments.
 
