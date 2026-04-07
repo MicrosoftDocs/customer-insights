@@ -221,7 +221,7 @@ A vertical line may appear in the email layout in Outlook when a `direction: rtl
 
 Instead of setting `direction: rtl` on the container element, apply it only to the text elements inside the container. Alternatively, add the following scoped style to the email's `<style>` tag:
 
-```HTML
+```CSS
 [data-container="true"] div { direction: rtl; }
 ```
 
