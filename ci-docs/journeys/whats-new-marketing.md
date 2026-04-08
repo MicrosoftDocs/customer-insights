@@ -1,7 +1,7 @@
 ---
 title: New and upcoming features
 description: Discover the latest features, improvements, and bug fixes in Dynamics 365 Customer Insights - Journeys. Stay updated with our monthly release notes.
-ms.date: 03/12/2026
+ms.date: 03/07/2026
 ms.update-cycle: 180-days
 ms.topic: whats-new
 author: alfergus
@@ -26,6 +26,40 @@ We're excited to announce our newest updates! This article summarizes early acce
 Customer Insights - Journeys updates are [pushed to customers automatically](https://cloudblogs.microsoft.com/dynamics365/it/2020/04/27/automatic-update-policy-for-dynamics-365-marketing/). Solutions are available for early validations. To manually update your instances, follow the steps in [Keep Customer Insights - Journeys up to date](apply-updates.md).
 
 To submit and vote on **feature requests** and **product suggestions**, go to the [Dynamics 365 Application Ideas portal](https://experience.dynamics.com/ideas/categories/?forum=dfa5b83d-9e4c-e811-a956-000d3a1bef07&forumName=Dynamics%20365%20Marketing).
+
+### April 2026 update
+
+| App              | GA release      |
+|------------------|-----------------|
+| Customer Insights - Journeys | 1.1.64196.86 |
+
+#### General availability
+
+- **Edit and view segment definitions directly using query editor**
+    - Viewing the exact details about how your segment works is now easier than ever with the new query viewer in the segment editing experience. The query viewer opens alongside your editing window so you can see how your changes update the SQL query backing the segment in real time. You can also make changes in the SQL query directly that are reflected back into the segment builder or copy the SQL query from one segment to another as an editing shortcut.
+    - [Docs](real-time-marketing-build-segments.md#view-and-edit-your-segment-with-the-query-view)
+
+#### Public preview
+
+- **Automatically update emails with the latest content**
+	- Dynamic content blocks eliminate such manual work and the risk of sending emails with outdated content. When a dynamic content block is updated, all emails using that block are automatically refreshed to ensure recipients always receive the most current content.
+	- [Release plan](/dynamics365/release-plan/2026wave1/customer-insights/dynamics365-customer-insights-journeys/automatically-update-emails-latest-content)
+	- [Docs](content-blocks.md#static-vs-dynamic-content-blocks)
+
+- **Transform customer journeys into action with record creation**
+	- You can now create any record or activity directly from a journey with full control over fields and dynamic values. Instead of rigid workflows or manual data entry, you can automate actions for any scenario, including handing off high-value leads and opportunities or creating tasks for prompt follow-up, without leaving the journey builder. This means faster processes, fewer errors, and more flexibility to adapt customer journeys to your unique business needs without custom development.
+	- [Release plan](/dynamics365/release-plan/2026wave1/customer-insights/dynamics365-customer-insights-journeys/close-leads-faster-automating-seamless-handoffs-between-marketing-sales)
+	- [Docs](create-records-activities.md)
+
+#### Monthly enhancements
+
+- **Using HTML in personalization data requires explicit user acknowledgement**
+	- Dynamic text and lists allow you to personalize content in emails and text messages. The source content used for personalization is typically expected to be plain text, so brand and other formatting is applied consistently across the entire message. However, there may be situations where you need to insert additional HTML tags in this source content to achieve specific formatting. We’ve introduced a new advanced option that allows HTML insertion to be included in the source content. For safety, this option is disabled by default.
+	- [Docs](real-time-marketing-predefined-dynamic-text.md#allow-html-content-in-source-content)
+
+- **Fix email rendering issues**
+	- Rendering emails exactly as designed is critical for protecting a company’s brand. However, email clients vary widely in how they interpret standard HTML. While the email designer automatically generates special HTML code to handle a variety of email clients, there may still be specific situations where emails don’t render as expected. We’ve added a new article documenting known email rendering issues and tips and workarounds for them.
+	- [Docs](email-troubleshoot-rendering.md)
 
 ### March 2026 update
 

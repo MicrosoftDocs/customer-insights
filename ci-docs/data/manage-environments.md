@@ -1,7 +1,7 @@
 ---
 title: Manage environments
 description: Learn how to to manage environments as an admin.
-ms.date: 09/09/2025
+ms.date: 04/07/2026
 ms.topic: how-to
 ms.reviewer: mhart
 author: Scott-Stabbert
@@ -66,7 +66,10 @@ When you copy the environment configuration, a confirmation message displays whe
 
    :::image type="content" source="media/data-sources-copied.png" alt-text="List of data sources that were copied and need authentication.":::
 
-1. Edit the data sources and enter the credentials to refresh them. Data sources from the Common Data Model folder and Dataverse must be created manually with the same name as in the source environment.
+1. Edit the data sources and enter the credentials to refresh them. 
+
+   > [!CAUTION]
+   > Data sources from the Common Data Model folder and Dataverse must be created manually with the same name as in the source environment.
 
 1. After refreshing the data sources, go to **Data** > **Unify**. Here you find settings from the source environment. Edit them as needed or select **Unify** > **Unify customer profiles and dependencies** to start the data unification process and create the unified customer table.
 
@@ -122,7 +125,7 @@ The reset operation assigns a new instance ID to your environment. Therefore, up
 
 As the owner of an environment, you can delete it.
 
-We recommend to [use the **Uninstall** option in the Power Platform admin center](../journeys/setup.md) to decommission a Customer Insights - Data environment.
+We recommend [using the **Uninstall** option in the Power Platform admin center](../journeys/setup.md) to decommission a Customer Insights - Data environment.
 
 1. Select the **Environment** picker in the header of the app.
 
