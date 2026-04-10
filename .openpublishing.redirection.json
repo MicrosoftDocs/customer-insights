@@ -3550,6 +3550,11 @@
       "source_path": "ci-docs/journeys/lead-generation-overview.md",
       "redirect_url": "/dynamics365/customer-insights/journeys/real-time-marketing-optimize-lead-management",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/email-troubleshoot.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/email-troubleshoot-rendering",
+      "redirect_document_id": false
     }
   ]
 }

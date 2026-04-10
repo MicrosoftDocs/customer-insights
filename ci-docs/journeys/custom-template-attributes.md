@@ -1,7 +1,7 @@
 ---
 title: Use custom attributes to enable designer features in emails, pages, and forms
 description: How to mark up the HTML in your email and page templates to enable drag-and-drop features and style controls for the design view in Dynamics 365 Customer Insights - Journeys.
-ms.date: 04/07/2026
+ms.date: 04/10/2026
 ms.topic: how-to
 author: vinayd
 ms.author: alfergus
@@ -315,5 +315,20 @@ So, in this example, the `<img>` tag would resolve to something like:
 ```xml
 <img src="picture.jpg" height="100px">
 ```
+
+## Use attributes on links and buttons in raw HTML
+
+If you're updating or creating links in raw HTML, you should understand the meaning of some internal attributes that the Customer Insights - Journeys email engine uses.
+
+- Use the `data-msdyn-tracking-id` attribute if you want the tracking service to treat two links as the same. Typically, use this attribute when you create two physical links in HTML, but only one shows for users based on the email client. In this scenario, set the `data-msdyn-tracking-id` attribute to the same value for both links. When the attribute has the same value, only one link appears in email insights, and link clicked interactions are the same for both links. Here's an example of two links using the same attribute.
+
+    ```HTML
+    <!--[if gte mso 9]><v:shape xmlns:v="urn:schemas-microsoft-com:vml" data-msdyn-tracking-id="a50219d489b91583158608851" href="https://www.microsoft.com">LINK TEXT</v:shape><![endif]-->
+    <!--[if !mso]> <!----><a class="buttonClass" data-msdyn-tracking-id="a50219d489b91583158608851" href="https://www.microsoft.com">LINK TEXT</a><!--<![endif]-->
+    ```
+
+    Both links above create the same link clicked interactions. The first link is visible in Outlook. The second link is visible in non-Outlook clients like Gmail.
+
+- Another important attribute is `data-msdyn-tracking`. This Boolean attribute controls link tracking. If it's set to *false*, the link isn't tracked, and you can't see whether a user clicked the link.
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
