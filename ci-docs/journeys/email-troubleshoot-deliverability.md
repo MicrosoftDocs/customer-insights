@@ -27,7 +27,7 @@ Below are direct links with instructions on how to change allow list settings on
 
 - [Barracuda - Configuring inbound email](https://campus.barracuda.com/product/essentials/download/10YQ/barracuda-email-security-service-configuring-inbound-email/)
 - [Cisco - How do you allow list a trusted sender?](https://www.cisco.com/c/en/us/support/docs/security/email-security-appliance/118585-qa-esa-00.html)
-- [Mimecast - Configuring anti-spoofing policies](https://community.mimecast.com/s/article/Configuring-Anti-Spoofing-Policies-1695615136#jive_content_id_Configuring_an_AntiSpoofing_Policy)
+- [Mimecast - Configuring anti-spoofing policies](https://mimecastsupport.zendesk.com/hc/articles/34000743640851-Policies-Configuring-Anti-Spoofing)
 - [Proofpoint - Creating a filter to allow messages from your own domain](https://help.proofpoint.com/Proofpoint_Essentials/Creating_a_filter_to_allow_messages_from_your_own_domain)
 - [Sophos - Allow/block lists](https://docs.sophos.com/central/customer/help/en-us/ManageYourProducts/GlobalSettings/EmailAllowBlock/index.html)
 - [Broadcom - About user approved and blocked senders lists](https://techdocs.broadcom.com/us/en/symantec-security-software/email-security/email-security-cloud/1-0/about-user-approved-and-blocked-senders-lists-toc216427008-d2923e4300.html)
