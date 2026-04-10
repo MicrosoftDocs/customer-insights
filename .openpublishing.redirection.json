@@ -3555,6 +3555,11 @@
       "source_path": "ci-docs/journeys/email-troubleshoot.md",
       "redirect_url": "/dynamics365/customer-insights/journeys/email-troubleshoot-rendering",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/email-troubleshooting.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/email-troubleshoot-deliverability",
+      "redirect_document_id": false
     }
   ]
 }
