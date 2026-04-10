@@ -1,7 +1,7 @@
 ---
 title: Personalize content using predefined dynamic text
 description: Learn how to personalize content using predefined dynamic text in Dynamics 365 Customer Insights - Journeys.
-ms.date: 04/06/2026
+ms.date: 04/10/2026
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
@@ -215,7 +215,7 @@ To define dynamic text with measures, go to **Customer Profile**. You should see
 
 ## Allow HTML content in source content
 
-Dynamic text and lists allow you to personalize content in emails and text messages. The source content used for personalization is typically expected to be plain text so brand and other formatting is applied consistently across the entire message. However, there may be situations where you need to insert additional HTML tags into the source content to achieve specific formatting. To allow HTML insertion into the source content, select the **Advanced** toggle and check the **Prevent HTML encoding** option. HTML encoding is prevented by default for safety.
+Dynamic text and lists allow you to personalize content in emails and text messages. The source content used for personalization is typically expected to be plain text, so brand and other formatting are applied consistently across the entire message. However, there may be situations where you need to insert additional HTML tags into the source content to achieve specific formatting. To allow custom HTML insertion into the source content, select the **Advanced** toggle and check the **Prevent HTML encoding** option. Use this option only if the data source is trusted and controlled, such as data entered or maintained by authorized users. If the data comes from an unknown or untrusted source, for example, from a form on your website, don't select this option. Leaving this option unchecked (the default) helps prevent harmful or unsafe content from being delivered to your customers.
 
 :::image type="content" source="media/predefined-dynamic-text-html.png" alt-text="Screenshot of Personalization settings with Display name, Default value, and Advanced option to prevent HTML encoding." lightbox="media/predefined-dynamic-text-html.png":::
 
