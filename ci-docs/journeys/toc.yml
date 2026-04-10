@@ -664,7 +664,7 @@
         href: feedback-loop.md
     - name: "Troubleshooting: Email deliverability issues"
       href: email-troubleshoot-deliverability.md
-    - name: Troubleshoot email engagement drops
+    - name: "Troubleshooting: Email engagement drops"
       href: troubleshoot-engagement-drops.md
   - name: Customization
     items:
