@@ -1,5 +1,5 @@
 ---
-title: Troubleshooting email engagement drops
+title: "Troubleshooting: Email engagement drops"
 description: Learn how to resolve email engagement drops in Dynamics 365 Customer Insights – Journeys. Explore privacy impacts, diagnose issues, and improve your email strategy.
 ms.date: 06/05/2025
 ms.topic: article
@@ -15,7 +15,7 @@ ms.custom:
   - ai-seo-date:06/05/2025
 ---
 
-# Troubleshooting email engagement drops
+# Troubleshooting: Email engagement drops
 
 In email marketing, tracking metrics has been the key to understanding and improving campaign effectiveness. Traditionally, the open rate has been a fundamental metric in email marketing. However, the accuracy of open rates is becoming more questionable due to privacy concerns and changes in how email clients handle images. To adapt, it's essential to employ a dual approach, by improving how to measure engagement and applying strategies to improve engagement itself. Engagement metrics in Dynamics 365 Customer Insights – Journeys offer a more complete picture than open rates alone. Diversify engagement metrics by evaluating other indicators such as select-through rates, conversion rates, and return on investment.
 
@@ -55,7 +55,7 @@ To diagnose an unexpected drop in engagement rates:
 1. **Conduct inbox placement and blocklist tests**: One way to assess your deliverability is through an inbox placement test. This test helps you determine where your emails are landing (inbox or spam). By monitoring your inbox placement rates over time, you can identify when issues arise. These tools aren't perfect because they track a limited number of inboxes, but each mailbox is unique. An email that lands in the spam folder for one mailbox might land in the primary inbox for another. Therefore, it's essential to use these tools with other email metrics to gain a comprehensive understanding of your email deliverability. Unfortunately, we can't recommend any specific third-party provider. However, you can always create test accounts for the top three to five ISP from your audience and use those ISPs to track your placement.
 1. **Check your list hygiene**: Maintain list hygiene by avoiding old or inactive lists and ensuring proper opt-in strategies.
 
-    There are numerous factors that could contribute to a drop in engagement. Maintaining a clean list is essential, but even the most diligent senders can encounter issues. For example, you might be sending to an outdated list that should have been archived or you have forgotten about a form that is adding spammy subscribers to your list. Additionally, you possibly didn't implement an opt-in strategy that keeps your list clean, or you uploaded inactive lists or segments that haven't been emailed in a long time.
+    There are numerous factors that could contribute to a drop in engagement. Maintaining a clean list is essential, but even the most diligent senders can encounter issues. For example, you might be sending to an outdated list that should have been archived or you have forgotten about a form that's adding spammy subscribers to your list. Additionally, you possibly didn't implement an opt-in strategy that keeps your list clean, or you uploaded inactive lists or segments that haven't been emailed in a long time.
 
     It's also important to consider spam complaints based on domain. An issue with spam complaints might begin with an inbox provider that represents only a small percentage of your list. As you gain more readers on that ISP, the issue could become more significant. For more information, see [Best practices for email marketing](get-ready-email-marketing.md).
 1. **Review bounce data**: Always review and interpret the raw bounce errors and bounce categories. You can find valuable insights into your sending reputation. Pay attention to ISP-specific reputation-related bounces to determine if there are any spikes in temporary rejections.

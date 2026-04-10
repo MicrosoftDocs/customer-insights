@@ -1,21 +1,22 @@
 ---
-title: Troubleshoot email issues
-description: Describes how to troubleshoot issues with email in Dynamics 365 Customer Insights - Journeys.
+title: "Troubleshooting: Email deliverability issues"
+description: Troubleshoot email deliverability issues in Dynamics 365 Customer Insights - Journeys. Get step-by-step solutions and ensure your emails reach recipients.
 ms.date: 08/18/2023
 ms.topic: troubleshooting-general
 author: alfergus
 ms.author: alfergus
+ms.reviewer: alfergus
 search.audienceType: 
   - admin
   - customizer
   - enduser
 ---
 
-# Troubleshoot email issues
+# Troubleshooting: Email deliverability issues
 
 This article describes issues related to email administration in Dynamics 365 Customer Insights - Journeys, including workarounds and solutions.
 
-## Internal contacts are not receiving your marketing emails
+## Internal contacts aren't receiving your marketing emails
 
 If you're using Customer Insights - Journeys to send email messages to internal users and they aren't receiving your emails, the emails are likely being quarantined by your spam filter solution. To ensure that your emails arrive in your internal recipients' inboxes and successfully pass your spam solution checks, complete the following steps:
 
@@ -26,21 +27,21 @@ Below are direct links with instructions on how to change allow list settings on
 
 - [Barracuda - Configuring inbound email](https://campus.barracuda.com/product/essentials/download/10YQ/barracuda-email-security-service-configuring-inbound-email/)
 - [Cisco - How do you allow list a trusted sender?](https://www.cisco.com/c/en/us/support/docs/security/email-security-appliance/118585-qa-esa-00.html)
-- [Mimecast - Configuring anti-spoofing policies](https://community.mimecast.com/s/article/Configuring-Anti-Spoofing-Policies-1695615136#jive_content_id_Configuring_an_AntiSpoofing_Policy)
+- [Mimecast - Configuring anti-spoofing policies](https://mimecastsupport.zendesk.com/hc/articles/34000743640851-Policies-Configuring-Anti-Spoofing)
 - [Proofpoint - Creating a filter to allow messages from your own domain](https://help.proofpoint.com/Proofpoint_Essentials/Creating_a_filter_to_allow_messages_from_your_own_domain)
 - [Sophos - Allow/block lists](https://docs.sophos.com/central/customer/help/en-us/ManageYourProducts/GlobalSettings/EmailAllowBlock/index.html)
 - [Broadcom - About user approved and blocked senders lists](https://techdocs.broadcom.com/us/en/symantec-security-software/email-security/email-security-cloud/1-0/about-user-approved-and-blocked-senders-lists-toc216427008-d2923e4300.html)
 
 > [!NOTE]
-The above-listed URLs, as well as the Google URL below, link to external pages that are not associated with Microsoft. The URLs may change or be deactivated without notice.
+> The above-listed URLs, as well as the Google URL below, link to external pages that aren't associated with Microsoft. The URLs may change or be deactivated without notice.
 
 If you aren't using any of the above-listed email security software, use the following links to set the default options for allowing Customer Insights - Journeys services in Office365/Exchange and GSuite/Google Apps:
 
 - [GSuite/Google Apps - Add IP addresses to allow lists in Gmail](https://support.google.com/a/answer/60751)
 - [Office365/Exhange - Configure connection filtering](/microsoft-365/security/office-365-security/configure-the-connection-filter-policy)
 
-Find the Microsoft Dynamics 365 Customer Insights - Journeys public IP addresses used for sending e-mails: [Public IP addresses used for sending e-mails](public-ip-addresses-for-email-sending.md)
-marketing
+Find the Microsoft Dynamics 365 Customer Insights - Journeys public IP addresses used for sending e-mails: [Public IP addresses used for sending e-mails](public-ip-addresses-for-email-sending.md).
+
 > [!IMPORTANT]
 > If you run into issues allow listing Dynamics 365 Customer Insights - Journeys in your email security software, we recommend reaching out to the vendor support for specific instructions.
 
