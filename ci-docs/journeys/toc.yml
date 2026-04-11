@@ -148,7 +148,7 @@
         items:
         - name: Check for errors, go live, and deliver
           href: email-check-golive.md      
-        - name: "Troubleshooting: Fix email rendering issue"
+        - name: "Troubleshooting: Fix email rendering issues"
           href: email-troubleshoot-rendering.md
         - name: Use "Send now" to send emails instantly in Customer Insights - Journeys
           href: email-without-journey.md
@@ -158,8 +158,6 @@
           href: view-previously-sent-emails.md
       - name: Use custom attributes to enable designer features in emails, pages, and forms
         href: custom-template-attributes.md
-      - name: Email troubleshoot + FAQ
-        href: email-troubleshoot.md
     - name: Text messages
       items:
       - name: Create text messages
@@ -664,9 +662,9 @@
         href: suppression-lists.md
       - name: "Feedback loop: What is it and how to prevent complaints"
         href: feedback-loop.md
-    - name: Troubleshoot email issues
-      href: email-troubleshooting.md
-    - name: Troubleshoot email engagement drops
+    - name: "Troubleshooting: Email deliverability issues"
+      href: email-troubleshoot-deliverability.md
+    - name: "Troubleshooting: Email engagement drops"
       href: troubleshoot-engagement-drops.md
   - name: Customization
     items:
