@@ -1,7 +1,7 @@
 ---
 title: "Troubleshooting: Email engagement drops"
 description: Learn how to resolve email engagement drops in Dynamics 365 Customer Insights – Journeys. Explore privacy impacts, diagnose issues, and improve your email strategy.
-ms.date: 06/05/2025
+ms.date: 04/13/2026
 ms.topic: article
 author: colinbirkett
 ms.author: colinbirkett
