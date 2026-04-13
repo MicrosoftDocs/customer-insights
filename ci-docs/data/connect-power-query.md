@@ -1,7 +1,7 @@
 ---
 title: "Connect to a Power Query data source"
 description: "Ingest data through a Power Query connector."
-ms.date: 09/18/2025
+ms.date: 04/13/2026
 ms.reviewer: v-wendysmith
 ms.topic: how-to
 author: Scott-Stabbert
@@ -150,9 +150,9 @@ The user performing this action must have a *Dataverse Administrator* role.
 ## Update Power Query schedules to system refresh schedule
 
 > [!NOTE]
-> This section applies only if you have existing Power Query data sources with their own separate refresh schedules. New data sources no longer support separate refresh schedules and refresh as part of the system refresh by default.
+> This section applies only if you have existing Power Query data sources with separate refresh schedules. New data sources no longer support separate refresh schedules and refresh as part of the system refresh by default.
 
-Customer Insights - Data has aligned Power Query data source refreshes with the system refresh schedule. Separate data source refresh schedules are deprecated. If you have existing Power Query data sources with separate refresh schedules, remove those schedules so that these data sources refresh as part of the system refresh. If your Power Query data source shows **Completed with warnings** on the **Data sources** page, your data source contains a separate refresh schedule. Remove the separate schedule. After a system refresh, the status changes to **Completed**.
+Customer Insights - Data has aligned Power Query data source refreshes with the system refresh schedule. Separate data source refresh schedules are deprecated. If you have existing Power Query data sources with separate refresh schedules, remove those schedules so that the data sources refresh as part of the system refresh. If your Power Query data source shows **Completed with warnings** on the **Data sources** page, your data source contains a separate refresh schedule. Remove the separate schedule. After a system refresh, the status changes to **Completed**.
 
 > [!IMPORTANT]
 > The data source refresh time is added to the total time for a system refresh. We recommend you [view your Power Query run durations](#view-power-query-run-durations) and then change the [system refresh schedule](schedule-refresh.md) if needed. For example, a Power Query source might take an average of 30 minutes to refresh. Therefore, we recommended you update the system refresh schedule to start 30 minutes earlier to receive results at a similar time.
@@ -183,7 +183,7 @@ Power Query data sources can be refreshed on demand.
 
 1. Go to **Data** > **Data Sources**.
 
-1. If you are the data source owner, find the data source under **Managed by me**. Otherwise, find it under **Managed by others**.
+1. If you're the data source owner, find the data source under **Managed by me**. Otherwise, find it under **Managed by others**.
 
 1. Select the desired Power Query data source, and then select **Refresh**.
 
