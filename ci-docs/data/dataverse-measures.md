@@ -37,6 +37,20 @@ The system writes the measure to a Dataverse table with a relationship to the cu
 > If you're using the [Customer Card add-in](customer-card-add-in.md) and want a measure to show up there, continue to build measures of type Customer and Attribute.
 > :::image type="content" source="media/measure-customer-attribute.svg" alt-text="Measure settings for a customer attribute that is used in the Customer Card add-in.":::
 
+## Dataverse role privileges for measure tables
+
+When a calculated measure is created and written to a Dataverse table, the system automatically adds read privileges for that table to the following security roles:
+
+| Dataverse Security Role | Role ID | Description |
+|---|---|---|
+| Customer Insights Data Read Access | `ff6139ec-3fd2-42a5-8b79-a7f401600d40` | Read access to the newly created measure entity table |
+| [Marketing Manager - Business](https://learn.microsoft.com/en-gb/dynamics365/customer-insights/journeys/role-permissions) | `bf157a3a-cde8-e611-80d8-00155d4b205a` | Read access to the measure metadata table |
+| [Marketing Manager (BU level) - Business](https://learn.microsoft.com/en-gb/dynamics365/customer-insights/journeys/role-permissions) | `dd84f17f-cde8-e611-80d8-00155d4b205a` | Read access to the measure metadata table |
+| [Marketing Professional - Business](https://learn.microsoft.com/en-gb/dynamics365/customer-insights/journeys/role-permissions) | `ce995e5a-cee8-e611-80d8-00155d4b205a` | Read access to the measure metadata table |
+| [Marketing Professional (BU level) - Business](https://learn.microsoft.com/en-gb/dynamics365/customer-insights/journeys/role-permissions) | `6d63ebe3-cee8-e611-80d8-00155d4b205a` | Read access to the measure metadata table |
+
+The **Customer Insights Data Read Access** role receives privileges on the measure's virtual entity table itself, while the four **Marketing** roles receive privileges on the measure metadata table. This ensures that users with marketing roles in Dynamics 365 Customer Insights - Journeys can access the measure data for journey orchestration and personalization.
+
 ## Sample scenarios
 
 The following list contains some inspiration for one-dimensional customer measures and how to use them in a customer journey:
