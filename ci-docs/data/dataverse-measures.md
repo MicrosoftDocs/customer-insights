@@ -1,11 +1,11 @@
 ---
 title: Use calculated measures in Dataverse-based applications
 description: Write one-dimensional measures to separate tables in Dataverse to use them in other applications.
-ms.date: 02/27/2024
+ms.date: 04/13/2026
 ms.topic: how-to
-author: JimsonChalissery
+author: sstabbert
 ms.author: sstabbert
-ms.reviewer: mhart
+ms.reviewer: alfergus
 ms.custom: bap-template
 ---
 
