@@ -270,12 +270,14 @@
         href: real-time-marketing-business-goals.md
       - name: A/B tests in Customer Insights - Journeys
         href: real-time-marketing-ab-tests-in-marketing-journeys.md
-    - name: Enhance your journeys
+    - name: Enhance your journey
       items:
       - name: Edit a live journey
         href: real-time-marketing-edit-journey.md
       - name: Edit email components in a live journey
         href: edit-email-in-live-journey.md
+      - name: Create records and activities from journeys (preview)
+        href: create-records-activities.md
       - name: Enhanced journey reminders
         href: real-time-marketing-enhanced-journey-reminders.md
       - name: Add email CC recipients to journeys
@@ -408,10 +410,6 @@
       href: real-time-marketing-create-lead-scoring-model.md    
     - name: Qualify the best leads
       href: real-time-marketing-qualify-leads.md
-    - name: Create records and activities from journeys (preview)
-      href: create-records-activities.md
-    - name: Create sales activities from lead signals (preview)
-      href: real-time-marketing-optimize-lead-management.md
     - name: Create custom matching rules
       href: real-time-marketing-matching-rules.md    
     - name: Visualize results from your scoring model
