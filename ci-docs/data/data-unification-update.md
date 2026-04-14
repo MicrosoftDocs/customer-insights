@@ -20,7 +20,7 @@ To review or change any unification settings once a unified profile has been cre
    :::image type="content" source="media/m3_unified.png" alt-text="Screenshot of the Data Unify page after data is unified." lightbox="media/m3_unified.png":::
 
 1. Choose what you want to update:
-   - [Customer data](#edit-customer-data) to add columns or tables or change column types. To remove a column, see [Remove a unified field](#remove-a-unified-field). To remove a table, see [Remove a unified table](#remove-a-unified-table).
+   - [Customer data](#edit-customer-data) to add columns or tables or change column types. To remove a column, see [Remove a unified field](data-unification-remove-dependencies.md#remove-a-unified-field). To remove a table, see [Remove a unified table](data-unification-remove-dependencies.md#remove-a-unified-table).
    - [Deduplication rules](#manage-deduplication-rules) to manage deduplication rules or merge preferences.
    - [Matching rules](#manage-match-rules) to update matching rules across two or more tables.
    - [Unified data view](#manage-unified-fields) to combine or exclude fields. You can also group related profiles into clusters.
@@ -47,83 +47,6 @@ To review or change any unification settings once a unified profile has been cre
 1. Optionally, you can change the primary key for a table or the column types. For more information, see [Describe customer data](data-unification-map-tables.md).
 
 1. Select **Next** to make changes to deduplication rules, or select **Save and close** and return to [Update unification settings](#update-unification-settings).
-
-### Remove a unified field
-
-To remove a field that has been unified, the field must be removed from any dependencies such as segments, measures, enrichments, or relationships.
-
-1. Once all dependencies for the field have been removed, go to **Data** > **Unify**.
-
-1. Select **Edit** on the **Unified data view** tile.
-
-1. Select all occurrences of the field and then select **Exclude**.
-
-   :::image type="content" source="media/m3_remove_attribute1.png" alt-text="Screenshot of Unified fields page showing selected fields and Exclude button":::
-
-1. Select **Done** to confirm and then select **Save and close**.
-
-   > [!TIP]
-   > If you see the message "Couldn't save unify. The specified resource cannot be modified or deleted due to downstream dependencies", then the field is still used in a downstream dependency.
-
-1. If the field is used in a rule for deduplication rules or matching rules, perform the following steps. Otherwise, go to the next step.
-   1. Select **Edit** on the **Deduplication rules** tile.
-   1. Remove the field from all rules it's used in, if any, and then select **Next**.
-   1. On the **Matching rules** page, remove the field from all rules it's used in, if any, and then select **Save and close**.
-   1. Select **Unify** > **Unify customer profiles and dependencies**. Wait for unification to complete before going to the next step.
-
-1. Select **Edit** on the **Customer data** tile.
-
-1. Select **Select tables and columns** and clear the checkbox next to each occurrence of the field.
-
-   :::image type="content" source="media/m3_remove_attribute2.png" alt-text="Screenshot of Select tables and columns dialog box showing cleared checkboxes":::
-
-1. Select **Apply**.
-
-1. Select **Save and close**.
-
-1. Select **Unify** > **Unify customer profiles and dependencies** to update the unified profile.
-
-### Remove a unified table
-
-To remove a table that has been unified, the table must be removed from any dependencies such as segments, measures, enrichments, or relationships.
-
-1. Once all dependencies for the table have been removed, go to **Data** > **Unify**.
-
-1. Select **Edit** on the **Unified data view** tile.
-
-1. Expand the columns and select all fields for the table. Then select **Exclude**.
-
-   :::image type="content" source="media/m3_remove_table1.png" alt-text="Screenshot of Unified fields with all fields for a table selected and Exclude button":::
-
-1. Select **Done** to confirm and then select **Save and close**.
-
-   > [!TIP]
-   > If you see the message "Couldn't save unify. The specified resource cannot be modified or deleted due to downstream dependencies", then the table is still used in a downstream dependency.
-
-1. Select **Edit** on the **Deduplication rules** tile.
-
-1. Remove all rules from the table, if any, and then select **Next**.
-
-1. On the **Matching rules** page, select the table and then select **Delete**.
-
-   :::image type="content" source="media/m3_remove_table2.png" alt-text="Screenshot of Matching rules with table selected and Delete button":::
-
-   > [!TIP]
-   > The delete command isn't visible until all dependencies and rules have been removed for the table.
-
-1. Select **Save and close**.
-
-1. Select **Edit** on the **Customer data** tile.
-
-1. Select **Select tables and columns** and clear the checkbox next to the table.
-
-   :::image type="content" source="media/m3_remove_table3.png" alt-text="Screenshot of Select tables and columns dialog box with table checkbox cleared":::
-
-1. Select **Apply**.
-
-1. Select **Save and close**.
-
-1. Run unification by selecting **Unify** > **Unify customer profiles and dependencies** to update the unified profile.
 
 ## Manage deduplication rules
 
@@ -223,40 +146,6 @@ All tiles except **Customer data** show **Queued** or **Refreshing**. More data,
 
 The results of a successful run display on the **Unify** page showing the number of unified profiles.
 
-## Removing dependencies blocking Dynamics 365 Customer Insights - Data unification
 
-When you update the **Unify** configuration in Dynamics 365 Customer Insights - Data (for example, by removing a data source, removing mapped fields, or changing merge policies), the system validates whether any attributes that will be removed from the `msdynci_customerprofile` table in Dataverse are referenced by other solution components.
-
-If dependencies are found, you receive an error similar to:
-
-```Detected DataVerse dependencies in msdynci_customerprofile entity on these attribute(s): \<attribute names\>. Please delete these dependencies and merge again.```
-
-### Why this happens
-
-Customer Insights - Data writes unified customer profiles to a virtual table called `msdynci_customerprofile` in your Dataverse environment. Each mapped and merged field from your data sources becomes a column on this table. When other makers in the organization create forms, views, charts, workflows, business rules, or other components that reference those columns, Dataverse prevents the columns from being deleted, even when Customer Insights is requesting the deletion.
-
-### Find which components have a dependency
-
-1. In [Power Apps](https://make.powerapps.com), open the environment associated with your Customer Insights instance.
-1. Go to **Tables**, search for **CustomerProfile** (`msdynci_customerprofile`), and open it.
-1. Select a column listed in the error message, then choose **Advanced** > **Show dependencies**.
-1. Review the **Dependent components** list. This shows exactly which forms, views, workflows, or other components reference that column.
-
-### Remove the dependencies
-
-For each dependent component listed:
-
-| Component type | How to remove the dependency |
-|---|---|
-| **Form** | Open the form in the form designer, remove the column from the form layout, then save and publish. |
-| **View** | Open the view editor, remove the column from the view's columns and filter criteria, then save and publish. |
-| **Chart** | Edit the chart and remove references to the column. |
-| **Cloud flow / workflow** | Edit the flow in Power Automate and remove any steps that reference the column. |
-| **Business rule** | Edit the business rule and remove conditions or actions that reference the column. |
-| **Business process flow** | Edit the business process flow and remove any stage fields that reference the column. |
-
-### Retry the unification
-
-After you remove all listed dependencies, return to **Customer Insights - Data** > **Unify** > **Merge** and run the merge again.
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
