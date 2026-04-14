@@ -140,7 +140,7 @@ When a column is added to the data source, the information automatically appends
 
 ### Change or remove a column
 
-When a column is removed from a data source, the system checks for dependencies in other processes. If there's a dependency on the columns, the system stops the refresh and provides an error indicating the [dependencies must be removed](data-unification-remove-dependencies.md). These dependencies display in a notification to help you locate and remove them.
+When a column is removed from a data source, the system checks for dependencies in other processes. If there's a dependency on the columns, the system stops the refresh and provides an error indicating the [dependencies must be removed](data-unification-remove-dependencies.md#remove-dependencies-blocking-unification). These dependencies display in a notification to help you locate and remove them.
 
 ### Validate a schema change
 
