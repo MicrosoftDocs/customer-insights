@@ -101,41 +101,16 @@ When you update the **Unify** configuration in Dynamics 365 Customer Insights - 
 
 ## Remove a unified table
 
-1. [Remove the unified fields](#remove-a-unified-field) from the table.
+Tables can be removed from unification after you [remove all the fields from the table](#remove-a-unified-field).
 
-1. [Remove the dependencies](#remove-dependencies-blocking-unification) for the table.
-
-1. Go to **Data** > **Unify**.
-
-1. Select **Edit** on the **Unified data view** tile.
-
-1. Expand the columns and select all fields for the table. Then select **Exclude**.
-
-   :::image type="content" source="media/m3_remove_table1.png" alt-text="Screenshot of Unified fields with all fields for a table selected and Exclude button":::
-
-1. Select **Done** to confirm and then select **Save and close**.
-
-   > [!TIP]
-   > If you see the message "Couldn't save unify. The specified resource can't be modified or deleted due to downstream dependencies", the table is still used in a downstream dependency. Go to [Remove dependencies blocking unification](#remove-dependencies-blocking-unification).
-
-1. Select **Edit** on the **Deduplication rules** tile.
-
-1. Remove all rules from the table, if any, and then select **Next**.
-
-1. On the **Matching rules** page, select the table and then select **Delete**.
-
-   :::image type="content" source="media/m3_remove_table2.png" alt-text="Screenshot of Matching rules with table selected and Delete button":::
-
-   > [!TIP]
-   > The **Delete** command isn't visible until you remove all dependencies and rules for the table.
-
-1. Select **Save and close**.
-
-1. Select **Edit** on the **Customer data** tile.
+1. Go to **Data** > **Unify** and select **Edit** on the **Customer data** tile.
 
 1. Select **Select tables and columns** and clear the checkbox next to the table.
 
    :::image type="content" source="media/m3_remove_table3.png" alt-text="Screenshot of Select tables and columns dialog box with table checkbox cleared":::
+
+   > [!TIP]
+   > If you see any fields in a disabled state, the field is still used in a downstream dependency. Go to [Remove dependencies blocking unification](#remove-dependencies-blocking-unification).
 
 1. Select **Apply**.
 
