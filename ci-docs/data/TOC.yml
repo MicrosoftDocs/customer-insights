@@ -81,7 +81,9 @@
     - name: Review unification summary
       href: data-unification-review.md
     - name: Update unification settings
-      href: data-unification-update.md  
+      href: data-unification-update.md
+    - name: Remove unified fields, tables, and dependencies
+      href: data-unification-remove-dependencies.md
     - name: Business unit data separation
       items: 
         - name: Business unit data separation overview
