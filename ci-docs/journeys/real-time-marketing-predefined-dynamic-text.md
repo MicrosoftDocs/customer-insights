@@ -1,7 +1,7 @@
 ---
 title: Personalize content using predefined dynamic text
 description: Learn how to personalize content using predefined dynamic text in Dynamics 365 Customer Insights - Journeys.
-ms.date: 04/10/2026
+ms.date: 04/14/2026
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
@@ -219,5 +219,7 @@ Dynamic text and lists allow you to personalize content in emails and text messa
 
 :::image type="content" source="media/predefined-dynamic-text-html.png" alt-text="Screenshot of Personalization settings with Display name, Default value, and Advanced option to prevent HTML encoding." lightbox="media/predefined-dynamic-text-html.png":::
 
-(To see this advance option and checkbox for lists, select "Advance options" under "Columns" in the List definition UI. The UI will change to show each column as an individual card. Click on the card that are of type Dynamic text and then expand the Advanced option in the data source definition dialog for that  column).
+> [!TIP]
+> To see this advanced option and the checkbox for lists, select "Advanced options" under "Columns" in the **List** definition interface. The interface changes to show each column as an individual card. Select the **Dynamic text** card, then expand the **Advanced** option in the data source definition dialog for that column.
+
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
