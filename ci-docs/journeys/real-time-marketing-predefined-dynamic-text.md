@@ -220,6 +220,8 @@ Dynamic text and lists allow you to personalize content in emails and text messa
 :::image type="content" source="media/predefined-dynamic-text-html.png" alt-text="Screenshot of Personalization settings with Display name, Default value, and Advanced option to prevent HTML encoding." lightbox="media/predefined-dynamic-text-html.png":::
 
 > [!TIP]
-> To see this advanced option and the checkbox for lists, select "Advanced options" under "Columns" in the **List** definition interface. The interface changes to show each column as an individual card. Select the **Dynamic text** card, then expand the **Advanced** option in the data source definition dialog for that column.
+> To see this advanced option and the checkbox for lists, go to the **List** definition interface, then select **Advanced options** under **Columns**. The interface changes to show each column as an individual card. Select the dynamic text card (for example, "AccountName"), then expand the **Advanced** dropdown in the data source definition dialog.
+>
+> :::image type="content" source="media/predefined-advanced-column.png" alt-text="Set quiet times based on time zone." lightbox="media/predefined-advanced-column-small.png":::
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
