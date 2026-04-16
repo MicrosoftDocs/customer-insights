@@ -45,7 +45,7 @@ Create a group of fields to treat as a single unit in your unified customer prof
 Easily send your customer data to external platforms like Google Ads, Facebook Ads, Snapchat, LinkedIn Ads, or use SFTP (Secure File Transfer Protocol) to share data with downstream activation platforms. When you use the rich customer insights created in Customer Insights - Data, you can drive targeted marketing and advertising campaigns, perform analytics on almost any platform, optimize ad spending, and improve customer engagement.
 
 - [Release plan](/dynamics365/release-plan/2025wave2/customer-insights/dynamics365-customer-insights-data/export-data-azure-data-lake-storage-gen2)
-- [Doc](export-azure-data-lake-storage-gen2.md)
+- [Docs](export-azure-data-lake-storage-gen2.md)
 
 ## July 2025
 
@@ -66,7 +66,7 @@ Customer Insights - Data now uses Virtual Network support for Power Platform to 
 Improve the quality of your unified customer profiles and insights by filtering out unwanted rows from your source data directly in Customer Insights - Data. Removing old or incomplete rows that don’t provide value allows Customer Insights - Data to create higher quality insights in less time and saves having to filter out unwanted data in downstream processes.
 
 - [Release plan](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-data/filter-rows-columns-source-data-improved-processing)
-- [Doc](tables-filters.md)
+- [Docs](tables-filters.md)
 
 ## October 2024
 
