@@ -4,7 +4,7 @@ description: Learn how to access and utilize AI-generated row summaries in main 
 author: alfergus
 ms.author: alfergus
 ms.topic: overview
-ms.date: 04/09/2026
+ms.date: 04/15/2026
 ---
 
 # Use row summaries in Dynamics 365 Customer Insights - Journeys
