@@ -41,7 +41,7 @@ Depending on how you acquire your license, there are different pathways to get t
 ### Monitoring your usage
 
 As stated in the published Dynamics 365 license guide, Customer Insights - Journeys and Customer Insights - Data are tenant-level licenses, which means that all meters associated with the licenses are summed at the tenant level across any environment of any type (sandbox, production, trial) that's using the application on a given tenant. To monitor your tenant-level usage:
-- For Customer Insights - Journeys, go to **Settings** > **Quota Limits** where you can see the total tenant-level entitled interacted people and monthly interactions as well as how much has been used on the environment you are on and all **other** environments on the tenant.
+- For Customer Insights - Journeys, go to **Settings** > **Quota Limits** where you can see the total tenant-level entitled interacted people and monthly interactions as well as how much has been used on the environment you are on and all **other** environments on the tenant. You will get an in-app notification as your organization approaches its paid quota, and as it exceeds it.
 - For Customer Insights - Data, visit each environment on the tenant and sum the total count of **Customers** in each environment. You can visit each environment using the environment switcher in the upper right corner.
 - For Dataverse and other platform-related meters, visit [**Power Platform admin center**](https://admin.powerplatform.microsoft.com/) > **Licensing** > **Capacity add-ons**.
 
