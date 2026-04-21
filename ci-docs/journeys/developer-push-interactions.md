@@ -32,11 +32,11 @@ In order to report on open rates, the application needs to send this data back t
 
 Request URL:
 
-```HTTP
+```http
 POST {PublicEndpoint}api/v1.0/orgs/<orgId>/pushdatareceiver/events
 ```
 
-```JSON
+```json
 { 
 
     "TrackingId": "00000000-0000-0000-0000-000000000000", 

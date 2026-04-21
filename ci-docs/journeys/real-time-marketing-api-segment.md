@@ -1,7 +1,7 @@
 ---
 title: Create a Customer Insights - Journeys segment using the Web API
 description: Learn how to create a Customer Insights - Journeys segment using the Web API.
-ms.date: 10/08/2025
+ms.date: 04/21/2026
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
@@ -32,16 +32,16 @@ The <**Organization URL**> part should be replaced with the actual URL of the or
 
 ### Payload
 
-```
+```json
 {
-    msdynmkt_segmentquery: string,
-    statecode: StateCode,
-    statuscode: SegmentDefinitionStatusCode,
-    msdynmkt_staticlistmembers: string,
-    msdynmkt_disablesegmentrefresh: boolean,
-    msdynmkt_segmentrefreshintervalminutes: number
-    msdynmkt_sourcesegmentcreatedon: date
-    msdynmkt_sourcesegmentcreatedby: string
+    "msdynmkt_segmentquery": "string",
+    "statecode": "StateCode",
+    "statuscode": "SegmentDefinitionStatusCode",
+    "msdynmkt_staticlistmembers": "string",
+    "msdynmkt_disablesegmentrefresh": "boolean",
+    "msdynmkt_segmentrefreshintervalminutes": "number",
+    "msdynmkt_sourcesegmentcreatedon": "date",
+    "msdynmkt_sourcesegmentcreatedby": "string"
 }
 ```
 
@@ -93,7 +93,7 @@ The payload contains the following properties:
 
 ```http
 
-POST <Organization URL>/api/data/v9.0/msdynmkt_segmentdefinitions HTTP/1.1
+POST <Organization URL>/api/data/v9.0/msdynmkt_segmentdefinitions http/1.1
 Content-Type: application/json; charset=utf-8
 OData-MaxVersion: 4.0
 OData-Version: 4.0
@@ -131,16 +131,16 @@ The URL for the POST request is `<Organization URL>/api/data/v9.0/msdynmkt_segme
 
 ### Payload
 
-```
+```json
 {
-    "msdynmkt_displayname": string,
-    "msdynmkt_type": number,
-    "msdynmkt_source": number,
-    "msdynmkt_baseentitylogicalname": string,
-    "statecode": number,
-    "statuscode": number,
-    "msdynmkt_sourcesegmentuid": string,
-    "owningbusinessunit@odata.bind": string
+    "msdynmkt_displayname": "string",
+    "msdynmkt_type": "number",
+    "msdynmkt_source": "number",
+    "msdynmkt_baseentitylogicalname": "string",
+    "statecode": "number",
+    "statuscode": "number",
+    "msdynmkt_sourcesegmentuid": "string",
+    "owningbusinessunit@odata.bind": "string"
 }
 ```
 
@@ -170,7 +170,6 @@ The properties included in the payload are:
 ### Example request
 
 ```http
-
 POST <Organization URL>/api/data/v9.0/msdynmkt_segments HTTP/1.1
 Content-Type: application/json; charset=utf-8
 OData-MaxVersion: 4.0
@@ -200,11 +199,9 @@ Accept: application/json
 ### Response
 
 ```http
-
 HTTP/1.1 204 No Content
 OData-Version: 4.0
 OData-EntityId: <Organization URL>/api/data/v9.0/msdynmkt_segments(<Segment ID>)
-
 ```
 
 ## Add static segment members
@@ -217,14 +214,14 @@ The API request is sent using HTTP POST to the API endpoint. The API method `(ms
 
 ### Payload
 
-```
+```json
 {
     "SegmentId": "<Segment ID>",
     "GroupId": "<Group ID>",
     // at most 1000 entity ids
-    "EntityIds: [
-      <Entity ID 1>,
-      <Entity ID 2>,
+    "EntityIds": [
+      "<Entity ID 1>",
+      "<Entity ID 2>",
       ...
     ]
 }
@@ -243,13 +240,13 @@ The API request is sent using HTTP POST to the API endpoint. The API method `(ms
 
 ### Payload
 
-```
+```json
 {
     "SegmentId": "<Segment ID>",
     "GroupId": "<Group ID>",
-    "EntityIds: [
-      <Entity ID 1>,
-      <Entity ID 2>,
+    "EntityIds": [
+      "<Entity ID 1>",
+      "<Entity ID 2>",
       ...
     ]
 }
@@ -265,12 +262,12 @@ The API request is sent using HTTP POST to the API endpoint. The API method `(ms
 
 ### Payload
 
-```
+```json
 {
     "SegmentId": "<Segment ID>",
     "GroupId": "<Group ID>",
-    "PageNo": number, // a number >= 1
-    "PageSize": number // a number >= 1
+    "PageNo": "number", // a number >= 1
+    "PageSize": "number" // a number >= 1
 }
 ```
 
@@ -293,7 +290,7 @@ The API request is sent via HTTP POST to the API endpoint. The API method `(msdy
 
 ### Payload:
 
-```
+```json
 {
     "SegmentId": "<Segment ID>"
 }
@@ -315,7 +312,7 @@ The API request is sent via HTTP POST to the API endpoint. The API method `(msdy
 
 ### Payload
 
-```
+```json
 {
     "SegmentId": "<Segment ID>"
 }
@@ -338,5 +335,64 @@ The response to the API request will include a JSON object containing the list o
     "ResultText": "{\"baseEntityLogicalName\":\"contact\",\"primaryKeyColumnName\":\"contactid\",\"members\":[\"<member GUID>, <member GUID>"],\"additionalProperties\":{}}"
 }
 ```
+
+## Stop a segment
+
+This API request stops a live segment, deactivating it so it's no longer evaluated or refreshed.
+
+`POST <Organization URL>/api/data/v9.0/msdynmkt_StopSegments`
+
+### Payload
+
+```json
+{
+    "SegmentIdList": [
+        "<Segment ID 1>",
+        "<Segment ID 2>",
+        ...
+    ]
+}
+```
+
+### Description
+
+The payload contains a `SegmentIdList` array of one or more segment IDs (GUIDs) to stop. You can stop multiple segments in a single request.
+A segment can't be stopped if:
+
+- **It's currently used in one or more active journeys**: The response indicates which journeys are blocking it.
+- **It's used as a dependency in other active segments**: The response indicates which segments are blocking it.
+
+### Example request
+
+```http
+POST <Organization URL>/api/data/v9.0/msdynmkt_StopSegments HTTP/1.1
+Content-Type: application/json; charset=utf-8
+OData-MaxVersion: 4.0
+OData-Version: 4.0
+Accept: application/json
+
+{
+    "SegmentIdList": ["<Segment ID>"]
+}
+```
+
+### Response
+
+```http
+{
+    "summary": "Complete StopSegments operation. Successfully stopped 1 of 1 in total",
+    "stopSingleSegmentResults": [
+        {
+            "SegmentId": "<Segment ID>",
+            "WasStopped": "true",
+            "Message": "null",
+            "DependentJourneys": "null",
+            "DependentSegments": "null"
+        }
+    ]
+}
+```
+
+If a segment couldn't be stopped because it's in use, `WasStopped` will be false and the blocking `DependentJourneys` or `DependentSegments` arrays will be populated.
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
