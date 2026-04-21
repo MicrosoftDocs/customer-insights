@@ -16,8 +16,676 @@ search.audienceType:
 This article details permissions for the out-of-the-box roles in Customer Insights - Journeys. Whether you're an administrator configuring roles or a user looking to understand the access levels, these roles serve as a valuable reference.
 
 > [!NOTE]
-> Customer insights - Journeys product is evolving, so roles documented in this article might not exactly match the current state of the product.
+> The content and structure of this page have changed significantly since April 2026. If you used this page to keep custom roles aligned with out‑of‑the‑box roles, review the entire article to understand what has changed and how role updates are now documented
 
+### List of out-of-the-box roles
+1. Event Administrator
+1. Event Administrator (BU level)
+1. Event Planner (BU level)
+1. Lead Score Modeler
+1. Lead Score Modeler (BU level)
+1. Lead Score Viewer
+1. Lead Score Viewer (BU level)
+1. Marketing Manager - Business
+1. Marketing Manager (BU level) - Business
+1. Marketing Professional - Business
+1. Marketing Professional (BU level) - Business
+
+### How to use information in this page
+
+If your organization uses custom roles based on out-of-the-box roles — with specific privileges added, removed, or changed to match your business needs — you need to keep those custom roles in sync as the product evolves. Out-of-the-box roles can change with each release when new capabilities are added or existing capabilities are updated. Review the #changes-to-roles-and-privileges section on a regular basis and apply the documented changes to your custom roles.
+
+Earlier versions of this article listed every privilege for each role. That format was difficult to maintain and made it hard to identify what changed between releases. Starting with the March 2026 release, this article uses a changelist format that documents only the differences from one release to the next. We are also now documenting privileges for all 8 actions (previously we documented only 5 actions Read, Write, Create, Append, AppendTo, Delete)
+
+Here is how the information is organized:
+
+- **[April 2026 release (version 1.1.64196.86)](#april-2026-release-version-116419686)** — Changelist of differences introduced in the April 2026 release.
+- **[March 2026 release (version 1.1.62960.43)](#march-2026-release-version-1116296043)** — Changelist of differences introduced in the March 2026 release compared to the previously published documentation.
+- **[Baseline (pre-March 2026)](#baseline-pre-march-2026)** — The last published version of this page, documenting all 11 roles and their privileges for five actions. Use this section as a reference if you need to verify your custom roles against the full privilege set before the changelist format was adopted.
+
+To keep your custom roles in sync, first align them with the documented baseline. Then, apply the permission changes introduced in each release—up to your current release—to bring your roles up to date. Afterward, review this page after every release to identify new changes that must be applied to remain in sync.
+
+
+### How to check privileges for any role           
+For the most accurate and up-to-date privilege information, check roles directly in the application. Follow the steps in [Security roles and privileges for Dataverse](https://learn.microsoft.com/power-platform/admin/security-roles-privileges) to find configured roles and their privileges.
+
+Dataverse security roles combine an **action** (for example, Read or Write) with an **access scope** that defines how broadly that action applies across your organization.
+
+These scopes are documented as **Basic**, **Local**, **Deep**, and **Global**. In the Power Platform admin center UI, the same concepts appear with the following labels:
+
+- **User → Basic**. Access only to records the user owns or that are shared with them.
+- **Business → Local**. Access to records owned by users in the same business unit.
+- **Parent: Child Business Unit → Deep**. Access to records in the user's business unit and all subordinate business units.
+- **Organization → Global**. Access to all records across the entire environment, regardless of business unit.
+
+
+# Release-wise changes to roles and privileges
+
+We will update this section after each release to note changes, if any, to out-of-the-box roles and privileges. 
+
+## April 2026 release (version 1.1.64196.86)
+
+### Role wise changes (vs March 2026 release)
+
+---
+
+### Summary of Changes
+
+| Role | Tables Added | Privs Added | Tables Removed | Privs Removed | Tables Updated | Privs Updated | |
+|---|---|---|---|---|---|---|---|
+| Event Administrator | 0 | 0 | 0 | 0 | 0 | 0 |  |
+| Event Administrator (BU level) | 0 | 0 | 0 | 0 | 0 | 0 |  |
+| Event Planner (BU level) | 0 | 0 | 0 | 0 | 0 | 0 |  |
+| Lead Score Modeler | 0 | 0 | 0 | 0 | 0 | 0 |  |
+| Lead Score Modeler (BU level) | 0 | 0 | 0 | 0 | 0 | 0 |  |
+| Lead Score Viewer | 0 | 0 | 0 | 0 | 0 | 0 |  |
+| Lead Score Viewer (BU level) | 0 | 0 | 0 | 0 | 0 | 0 |  |
+| Marketing Manager - Business | 1 | 8 | 0 | 0 | 0 | 0 | ⚠ |
+| Marketing Manager (BU level) - Business | 1 | 8 | 0 | 0 | 0 | 0 | ⚠ |
+| Marketing Professional - Business | 1 | 8 | 0 | 0 | 0 | 0 | ⚠ |
+| Marketing Professional (BU level) - Business | 1 | 8 | 0 | 0 | 0 | 0 | ⚠ |
+
+---
+### Role: Marketing Manager - Business
+**Role identifier:** {bf157a3a-cde8-e611-80d8-00155d4b205a}
+
+| Metric | Tables | Privileges |
+|---|---|---|
+| Added | 1 | 8 |
+| Removed | 0 | 0 |
+| Updated | 0 | 0 |
+
+#### Changelist-1 Added (Tables and privileges that exist in the current release but not in the previous release)
+
+| **Table name** | **Read** | **Write** | **Create** | **Append** | **AppendTo** | **Delete** | **Assign** | **Share** |
+|---|---|---|---|---|---|---|---|---|
+| msdynmkt_agentsetting | Global | Global | Global | Global | Global | Global | Global | Global |
+
+#### Changelist-2 Removed (Tables and privileges in the previous release but no longer in the current release)
+
+_None_
+
+#### Changelist-3 Updated (Privileges that have changed in the current release compared to the previous release)
+
+_No changes._
+
+---
+
+### Role: Marketing Manager (BU level) - Business
+**Role identifier:** {dd84f17f-cde8-e611-80d8-00155d4b205a}
+
+| Metric | Tables | Privileges |
+|---|---|---|
+| Added | 1 | 8 |
+| Removed | 0 | 0 |
+| Updated | 0 | 0 |
+
+#### Changelist-1 Added (Tables and privileges that exist in the current release but not in the previous release)
+
+| **Table name** | **Read** | **Write** | **Create** | **Append** | **AppendTo** | **Delete** | **Assign** | **Share** |
+|---|---|---|---|---|---|---|---|---|
+| msdynmkt_agentsetting | Deep | Deep | Deep | Deep | Deep | Deep | Deep | Deep |
+
+#### Changelist-2 Removed (Tables and privileges in the previous release but no longer in the current release)
+
+_None_
+
+#### Changelist-3 Updated (Privileges that have changed in the current release compared to the previous release)
+
+_No changes._
+
+---
+
+### Role: Marketing Professional - Business
+**Role identifier:** {ce995e5a-cee8-e611-80d8-00155d4b205a}
+
+| Metric | Tables | Privileges |
+|---|---|---|
+| Added | 1 | 8 |
+| Removed | 0 | 0 |
+| Updated | 0 | 0 |
+
+#### Changelist-1 Added (Tables and privileges that exist in the current release but not in the previous release)
+
+| **Table name** | **Read** | **Write** | **Create** | **Append** | **AppendTo** | **Delete** | **Assign** | **Share** |
+|---|---|---|---|---|---|---|---|---|
+| msdynmkt_agentsetting | Global | Global | Global | Global | Global | Global | Global | Global |
+
+#### Changelist-2 Removed (Tables and privileges in the previous release but no longer in the current release)
+
+_None_
+
+#### Changelist-3 Updated (Privileges that have changed in the current release compared to the previous release)
+
+_No changes._
+
+---
+
+### Role: Marketing Professional (BU level) - Business
+**Role identifier:** {6d63ebe3-cee8-e611-80d8-00155d4b205a}
+
+| Metric | Tables | Privileges |
+|---|---|---|
+| Added | 1 | 8 |
+| Removed | 0 | 0 |
+| Updated | 0 | 0 |
+
+#### Changelist-1 Added (Tables and privileges that exist in the current release but not in the previous release)
+
+| **Table name** | **Read** | **Write** | **Create** | **Append** | **AppendTo** | **Delete** | **Assign** | **Share** |
+|---|---|---|---|---|---|---|---|---|
+| msdynmkt_agentsetting | Local | Local | Local | Local | Local | Local | Local | Local |
+
+#### Changelist-2 Removed (Tables and privileges in the previous release but no longer in the current release)
+
+_None_
+
+#### Changelist-3 Updated (Privileges that have changed in the current release compared to the previous release)
+
+_No changes._
+
+---
+
+## March 2026 release (version 1.1.62960.43)
+
+This is the first changenote published for this documentation and reflects a comparison against previously published learn page for roles and permissions . As a result, **some entries may be marked as Added or Removed even when no functional change has occurred**. An Added entry may indicate a permission that already existed but was previously undocumented. Similarly, a Removed entry may reflect a correction to earlier documentation rather than an actual removal of a permission.
+
+### Role wise changes (vs previously published documentation)
+
+---
+
+### Table of Contents
+
+- [Role: Event Administrator](#role-event-administrator)
+- [Role: Event Administrator (BU level)](#role-event-administrator-bu-level)
+- [Role: Event Planner (BU level)](#role-event-planner-bu-level)
+- [Role: Lead Score Modeler](#role-lead-score-modeler)
+- [Role: Lead Score Modeler (BU level)](#role-lead-score-modeler-bu-level)
+- [Role: Lead Score Viewer](#role-lead-score-viewer)
+- [Role: Lead Score Viewer (BU level)](#role-lead-score-viewer-bu-level)
+- [Role: Marketing Manager - Business](#role-marketing-manager-business)
+- [Role: Marketing Manager (BU level) - Business](#role-marketing-manager-bu-level-business)
+- [Role: Marketing Professional - Business](#role-marketing-professional-business)
+- [Role: Marketing Professional (BU level) - Business](#role-marketing-professional-bu-level-business)
+
+---
+### Summary of Changes
+
+| Role | Tables Added | Privs Added | Tables Removed | Privs Removed | Tables Updated | Privs Updated | |
+|---|---|---|---|---|---|---|---|
+| Event Administrator | 5 | 25 | 0 | 0 | 1 | 1 | ⚠ |
+| Event Administrator (BU level) | 5 | 25 | 0 | 0 | 1 | 1 | ⚠ |
+| Event Planner (BU level) | 4 | 17 | 0 | 0 | 45 | 156 | ⚠ |
+| Lead Score Modeler | 0 | 0 | 0 | 0 | 0 | 0 |  |
+| Lead Score Modeler (BU level) | 2 | 6 | 6 | 6 | 6 | 24 | ⚠ |
+| Lead Score Viewer | 0 | 0 | 0 | 0 | 0 | 0 |  |
+| Lead Score Viewer (BU level) | 1 | 1 | 0 | 0 | 0 | 0 | ⚠ |
+| Marketing Manager - Business | 13 | 40 | 0 | 0 | 24 | 57 | ⚠ |
+| Marketing Manager (BU level) - Business | 13 | 40 | 0 | 0 | 8 | 14 | ⚠ |
+| Marketing Professional - Business | 13 | 40 | 0 | 0 | 19 | 44 | ⚠ |
+| Marketing Professional (BU level) - Business | 13 | 40 | 0 | 0 | 4 | 6 | ⚠ |
+
+---
+
+### Role: Event Administrator
+**Role identifier:** {a31a2242-bf8f-e611-80d7-00155d4b201d}
+
+| Metric | Tables | Privileges |
+|---|---|---|
+| Added | 5 | 25 |
+| Removed | 0 | 0 |
+| Updated | 1 | 1 |
+
+#### Changelist-1 Added (Tables and privileges that exist in the current release but were not previously documented)
+
+| **Table name** | **Read** | **Write** | **Create** | **Append** | **AppendTo** |
+|---|---|---|---|---|---|
+| msevtmgt_eventregistrationcustomfield | Global | Global | Global | Global | Global |
+| msevtmgt_eventregistrationsettings | Organization | Organization | Organization | Organization | Organization |
+| msevtmgt_integrationconfiguration | Organization | Organization | Organization | Organization | Organization |
+| msevtmgt_paymentprovider | Organization | Organization | Organization | Organization | Organization |
+| msevtmgt_powerpageswebsite | Organization | Organization | Organization | Organization | Organization |
+
+#### Changelist-2 Removed (Tables and privileges were previously documented but are no longer in the release)
+
+_None_
+
+#### Changelist-3 Updated (Privileges that have changed in the current release compared to previous documentation)
+
+| **Table name** | **Read** | **Write** | **Create** | **Append** | **AppendTo** |
+|---|---|---|---|---|---|
+| Workflow |  |  |  |  | (added) → Organization |
+
+---
+
+### Role: Event Administrator (BU level)
+**Role identifier:** {07d52deb-3b54-4203-b3cf-35efe4350f82}
+
+| Metric | Tables | Privileges |
+|---|---|---|
+| Added | 5 | 25 |
+| Removed | 0 | 0 |
+| Updated | 1 | 1 |
+
+#### Changelist-1 Added (Tables and privileges that exist in the current release but were not previously documented)
+
+| **Table name** | **Read** | **Write** | **Create** | **Append** | **AppendTo** |
+|---|---|---|---|---|---|
+| msevtmgt_eventregistrationcustomfield | Deep | Deep | Deep | Deep | Deep |
+| msevtmgt_eventregistrationsettings | Organization | Organization | Organization | Organization | Organization |
+| msevtmgt_integrationconfiguration | Deep | Deep | Deep | Deep | Deep |
+| msevtmgt_paymentprovider | Organization | Organization | Organization | Organization | Organization |
+| msevtmgt_powerpageswebsite | Deep | Deep | Deep | Deep | Deep |
+
+#### Changelist-2 Removed (Tables and privileges were previously documented but are no longer in the release)
+
+_None_
+
+#### Changelist-3 Updated (Privileges that have changed in the current release compared to previous documentation)
+
+| **Table name** | **Read** | **Write** | **Create** | **Append** | **AppendTo** |
+|---|---|---|---|---|---|
+| Workflow |  |  |  |  | (added) → Organization |
+
+---
+
+### Role: Event Planner (BU level)
+**Role identifier:** {9d0bcbb3-75d8-4496-b2fb-62d0a9cb902f}
+
+| Metric | Tables | Privileges |
+|---|---|---|
+| Added | 4 | 17 |
+| Removed | 0 | 0 |
+| Updated | 45 | 156 |
+
+#### Changelist-1 Added (Tables and privileges that exist in the current release but were not previously documented)
+
+| **Table name** | **Read** | **Write** | **Create** | **Append** | **AppendTo** |
+|---|---|---|---|---|---|
+| msevtmgt_eventregistrationcustomfield | Local | Local | Local | Local | Local |
+| msevtmgt_integrationconfiguration | Local | Local | Local | Local | Local |
+| msevtmgt_paymentprovider | Organization |  |  |  | Organization |
+| msevtmgt_powerpageswebsite | Local | Local | Local | Local | Local |
+
+#### Changelist-2 Removed (Tables and privileges were previously documented but are no longer in the release)
+
+_None_
+
+#### Changelist-3 Updated (Privileges that have changed in the current release compared to previous documentation)
+
+| **Table name** | **Read** | **Write** | **Create** | **Append** | **AppendTo** |
+|---|---|---|---|---|---|
+| AsyncOperation | Organization → Local |  |  |  |  |
+| BusinessUnit | Organization → Local |  |  |  |  |
+| User | Organization → Local |  |  |  | Organization → Local |
+| Workflow |  |  |  |  | (added) → Organization |
+| msdyncrm_defaultmarketingsetting | Organization → Deep |  |  |  |  |
+| msdyncrm_file | Organization → Local | Organization → Local |  | Organization → Local | Organization → Local |
+| msdynmkt_marketingfieldsubmission | Organization → Local |  |  |  |  |
+| msdynmkt_marketingform | Organization → Local | Organization → Local | Organization → Local | Organization → Local | Organization → Local |
+| msdynmkt_marketingformfield | Organization → Local |  |  |  |  |
+| msdynmkt_marketingformsubmission | Organization → Local |  | Organization → Local | Organization → Local |  |
+| msdynmkt_marketingformtemplate | Organization → Local |  |  |  | Organization → Local |
+| msdynmkt_matchingstrategy | Organization → Local | Organization → Local | Organization → Local |  | Organization → Local |
+| msdynmkt_matchingstrategyattribute | Organization → Local |  |  |  |  |
+| msevtmgt_AttendeePass | Organization → Local |  | Organization → Local | Organization → Local | Organization → Local |
+| msevtmgt_Building | Organization → Local |  | Organization → Local | Organization → Local | Organization → Local |
+| msevtmgt_CheckIn | Organization → Local |  | Organization → Local | Organization → Local | Organization → Local |
+| msevtmgt_EntityCounter | Organization → Local |  | Organization → Local | Organization → Local | Organization → Local |
+| msevtmgt_Event | Organization → Local |  | Organization → Local | Organization → Local | Organization → Local |
+| msevtmgt_EventRegistration | Organization → Local |  | Organization → Local | Organization → Local | Organization → Local |
+| msevtmgt_EventTeamMember | Organization → Local |  | Organization → Local | Organization → Local | Organization → Local |
+| msevtmgt_Hotel | Organization → Local |  | Organization → Local | Organization → Local | Organization → Local |
+| msevtmgt_HotelRoomAllocation | Organization → Local |  | Organization → Local | Organization → Local | Organization → Local |
+| msevtmgt_HotelRoomReservation | Organization → Local |  | Organization → Local | Organization → Local | Organization → Local |
+| msevtmgt_Layout | Organization → Local |  | Organization → Local | Organization → Local | Organization → Local |
+| msevtmgt_Room | Organization → Local |  | Organization → Local | Organization → Local | Organization → Local |
+| msevtmgt_Session | Organization → Local |  | Organization → Local | Organization → Local | Organization → Local |
+| msevtmgt_SessionRegistration | Organization → Local |  | Organization → Local | Organization → Local | Organization → Local |
+| msevtmgt_SessionTrack | Organization → Local |  | Organization → Local | Organization → Local | Organization → Local |
+| msevtmgt_Speaker | Organization → Local |  | Organization → Local | Organization → Local | Organization → Local |
+| msevtmgt_SponsorableArticle | Organization → Local |  | Organization → Local | Organization → Local | Organization → Local |
+| msevtmgt_Sponsorship | Organization → Local |  | Organization → Local | Organization → Local | Global → Local |
+| msevtmgt_Venue | Global → Local |  | Global → Local | Global → Local | Global → Local |
+| msevtmgt_customregistrationfield | Global → Local |  | Global → Local | Global → Local | Global → Local |
+| msevtmgt_eventadministration | Global → Local |  | Global → Local | Global → Local | Global → Local |
+| msevtmgt_eventcustomregistrationfield | Global → Local |  | Global → Local | Global → Local | Global → Local |
+| msevtmgt_eventpurchase | Global → Local |  | Global → Local | Global → Local | Global → Local |
+| msevtmgt_eventpurchaseattendee | Global → Local |  | Global → Local | Global → Local | Global → Local |
+| msevtmgt_eventpurchasepass | Global → Local |  | Global → Local | Global → Local | Global → Local |
+| msevtmgt_eventvendor | Global → Local |  | Global → Local | Global → Local | Global → Local |
+| msevtmgt_pass | Global → Local |  | Global → Local | Global → Local | Global → Local |
+| msevtmgt_registrationresponse | Global → Local |  | Global → Local | Global → Local | Global → Local |
+| msevtmgt_roomreservation | Global → Local |  | Global → Local | Global → Local | Global → Local |
+| msevtmgt_speakerengagement | Global → Local |  | Global → Local | Global → Local | Global → Local |
+| msevtmgt_waitlistitem | Global → Local |  | Global → Local | Global → Local | Global → Local |
+| msevtmgt_websiteentityconfiguration | Global → Local | Global → Local | Global → Local | Global → Local | Global → Local |
+
+---
+
+### Role: Lead Score Modeler
+**Role identifier:** {d1fd2176-cee8-e611-80d8-00155d4b205a}
+
+| Metric | Tables | Privileges |
+|---|---|---|
+| Added | 0 | 0 |
+| Removed | 0 | 0 |
+| Updated | 0 | 0 |
+
+#### Changelist-1 Added (Tables and privileges that exist in the current release but were not previously documented)
+
+_None_
+
+#### Changelist-2 Removed (Tables and privileges were previously documented but are no longer in the release)
+
+_None_
+
+#### Changelist-3 Updated (Privileges that have changed in the current release compared to previous documentation)
+
+_No changes._
+
+---
+
+### Role: Lead Score Modeler (BU level)
+**Role identifier:** {3b30e84e-3ec6-4aa2-9417-b569f0d0284d}
+
+| Metric | Tables | Privileges |
+|---|---|---|
+| Added | 2 | 6 |
+| Removed | 6 | 6 |
+| Updated | 6 | 24 |
+
+#### Changelist-1 Added (Tables and privileges that exist in the current release but were not previously documented)
+
+| **Table name** | **Read** | **Write** | **Create** | **Append** | **AppendTo** |
+|---|---|---|---|---|---|
+| msdyncrm_Localleadtoopportunity | Deep | Deep | Deep | Deep | Deep |
+| msdynmkt_featureconfiguration | Global |  |  |  |  |
+
+#### Changelist-2 Removed (Tables and privileges were previously documented but are no longer in the release)
+
+| **Table name** | **Read** | **Write** | **Create** | **Append** | **AppendTo** |
+|---|---|---|---|---|---|
+| AppModule | Global |  |  |  |  |
+| PluginAssembly | Global |  |  |  |  |
+| PluginType | Global |  |  |  |  |
+| SdkMessage | Global |  |  |  |  |
+| SdkMessageProcessingStep | Global |  |  |  |  |
+| SdkMessageProcessingStepImage | Global |  |  |  |  |
+
+#### Changelist-3 Updated (Privileges that have changed in the current release compared to previous documentation)
+
+| **Table name** | **Read** | **Write** | **Create** | **Append** | **AppendTo** |
+|---|---|---|---|---|---|
+| msdyncrm_leadscore_v2 |  | (added) → Deep | (added) → Deep | (added) → Deep | (added) → Deep |
+| msdyncrm_leadscoremodel |  | (added) → Deep | (added) → Deep | (added) → Deep | (added) → Deep |
+| msdynmkt_entitygradedistribution |  | (added) → Deep | (added) → Deep | (added) → Deep | (added) → Deep |
+| msdynmkt_entityscoredistribution |  | (added) → Deep | (added) → Deep | (added) → Deep | (added) → Deep |
+| msdynmkt_entityscoringmodel |  | (added) → Deep | (added) → Deep | (added) → Deep | (added) → Deep |
+| msdynmkt_leadqualificationmodel |  | (added) → Deep | (added) → Deep | (added) → Deep | (added) → Deep |
+
+---
+
+### Role: Lead Score Viewer
+**Role identifier:** {32e87eb4-c85c-e711-80fe-000d3a297db2}
+
+| Metric | Tables | Privileges |
+|---|---|---|
+| Added | 0 | 0 |
+| Removed | 0 | 0 |
+| Updated | 0 | 0 |
+
+#### Changelist-1 Added (Tables and privileges that exist in the current release but were not previously documented)
+
+_None_
+
+#### Changelist-2 Removed (Tables and privileges were previously documented but are no longer in the release)
+
+_None_
+
+#### Changelist-3 Updated (Privileges that have changed in the current release compared to previous documentation)
+
+_No changes._
+
+---
+
+### Role: Lead Score Viewer (BU level)
+**Role identifier:** {afc2cc8c-a26f-41c1-99a3-4510003a1878}
+
+| Metric | Tables | Privileges |
+|---|---|---|
+| Added | 1 | 1 |
+| Removed | 0 | 0 |
+| Updated | 0 | 0 |
+
+#### Changelist-1 Added (Tables and privileges that exist in the current release but were not previously documented)
+
+| **Table name** | **Read** | **Write** | **Create** | **Append** | **AppendTo** |
+|---|---|---|---|---|---|
+| msdynmkt_featureconfiguration | Global |  |  |  |  |
+
+#### Changelist-2 Removed (Tables and privileges were previously documented but are no longer in the release)
+
+_None_
+
+#### Changelist-3 Updated (Privileges that have changed in the current release compared to previous documentation)
+
+_No changes._
+
+---
+
+### Role: Marketing Manager - Business
+**Role identifier:** {bf157a3a-cde8-e611-80d8-00155d4b205a}
+
+| Metric | Tables | Privileges |
+|---|---|---|
+| Added | 13 | 40 |
+| Removed | 0 | 0 |
+| Updated | 24 | 57 |
+
+#### Changelist-1 Added (Tables and privileges that exist in the current release but were not previously documented)
+
+| **Table name** | **Read** | **Write** | **Create** | **Append** | **AppendTo** |
+|---|---|---|---|---|---|
+| msdynmkt_browser | Global |  |  |  |  |
+| msdynmkt_consentprovider | Global |  |  |  |  |
+| msdynmkt_consentsubmitbutton | Global |  |  |  |  |
+| msdynmkt_devicetype | Global |  |  |  |  |
+| msdynmkt_emailclient | Global |  |  |  |  |
+| msdynmkt_formsetting | Global | Global | Global | Global | Global |
+| msdynmkt_formtargetaudience | Global | Global | Global | Global | Global |
+| msdynmkt_operatingsystem | Global |  |  |  |  |
+| msdynmkt_savedformfield | Global | Global | Global | Global |  |
+| msdynmkt_segmentationcsvupload | Global | Global | Global | Global | Global |
+| msevtmgt_eventregistrationcustomfield | Global | Global | Global | Global | Global |
+| msevtmgt_integrationconfiguration | Global | Global | Global | Global | Global |
+| msevtmgt_powerpageswebsite | Global | Global | Global | Global | Global |
+
+#### Changelist-2 Removed (Tables and privileges were previously documented but are no longer in the release)
+
+_None_
+
+#### Changelist-3 Updated (Privileges that have changed in the current release compared to previous documentation)
+
+| **Table name** | **Read** | **Write** | **Create** | **Append** | **AppendTo** |
+|---|---|---|---|---|---|
+| WorkflowSession |  |  |  |  | (added) → Local |
+| msdyn_ChannelDefinition |  | (added) → Global | (added) → Global | (added) → Global |  |
+| msdyn_ConsumingApplication |  | (added) → Global | (added) → Global | (added) → Global |  |
+| msdyncrm_customerjourney |  |  | Local → Global |  |  |
+| msdyncrm_file |  |  | Local → Global |  |  |
+| msdyncrm_keyword |  |  | Local → Global |  |  |
+| msdyncrm_video |  |  | Local → Global |  |  |
+| msdynmkt_domain | Deep → Global | Deep → Global | Deep → Global | Deep → Global | Deep → Global |
+| msdynmkt_entitygradedistribution |  |  | Local → Global |  |  |
+| msdynmkt_entityscoredistribution |  |  | Local → Global |  |  |
+| msdynmkt_entityscoringmodel |  |  | Local → Global |  |  |
+| msdynmkt_experiment | Deep → Global | Deep → Global | Deep → Global | Deep → Global | Deep → Global |
+| msdynmkt_frequencycap | Deep → Global | Deep → Global | Deep → Global | Deep → Global | Deep → Global |
+| msdynmkt_gdprrequest | Deep → Global | Deep → Global | Deep → Global | Deep → Global |  |
+| msdynmkt_journeysetting |  |  | Local → Global |  |  |
+| msdynmkt_leadqualificationmodel |  |  | Local → Global |  |  |
+| msdynmkt_marketingform |  |  |  |  | (added) → Global |
+| msdynmkt_marketingformtemplate |  | (added) → Global | (added) → Global | (added) → Global |  |
+| msdynmkt_matchingstrategy |  |  |  | (added) → Global |  |
+| msdynmkt_mobileapp | Deep → Global |  |  |  |  |
+| msdynmkt_quiettimesetting | Deep → Global | Deep → Global | Deep → Global | Deep → Global | Deep → Global |
+| msdynmkt_segment |  |  | Local → Global |  |  |
+| msdynmkt_segmentdefinition | Deep → Global | Deep → Global | Deep → Global | Deep → Global | Deep → Global |
+| msdynmkt_segmentexecution | Deep → Global | Deep → Global | Deep → Global | Deep → Global | Deep → Global |
+
+---
+
+### Role: Marketing Manager (BU level) - Business
+**Role identifier:** {dd84f17f-cde8-e611-80d8-00155d4b205a}
+
+| Metric | Tables | Privileges |
+|---|---|---|
+| Added | 13 | 40 |
+| Removed | 0 | 0 |
+| Updated | 8 | 14 |
+
+#### Changelist-1 Added (Tables and privileges that exist in the current release but were not previously documented)
+
+| **Table name** | **Read** | **Write** | **Create** | **Append** | **AppendTo** |
+|---|---|---|---|---|---|
+| msdynmkt_browser | Global |  |  |  |  |
+| msdynmkt_consentprovider | Global |  |  |  |  |
+| msdynmkt_consentsubmitbutton | Deep |  |  |  |  |
+| msdynmkt_devicetype | Global |  |  |  |  |
+| msdynmkt_emailclient | Global |  |  |  |  |
+| msdynmkt_formsetting | Deep | Deep | Deep | Deep | Deep |
+| msdynmkt_formtargetaudience | Deep | Deep | Deep | Deep | Deep |
+| msdynmkt_operatingsystem | Global |  |  |  |  |
+| msdynmkt_savedformfield | Deep | Deep | Deep | Deep |  |
+| msdynmkt_segmentationcsvupload | Deep | Deep | Deep | Deep | Deep |
+| msevtmgt_eventregistrationcustomfield | Deep | Deep | Deep | Deep | Deep |
+| msevtmgt_integrationconfiguration | Deep | Deep | Deep | Deep | Deep |
+| msevtmgt_powerpageswebsite | Deep | Deep | Deep | Deep | Deep |
+
+#### Changelist-2 Removed (Tables and privileges were previously documented but are no longer in the release)
+
+_None_
+
+#### Changelist-3 Updated (Privileges that have changed in the current release compared to previous documentation)
+
+| **Table name** | **Read** | **Write** | **Create** | **Append** | **AppendTo** |
+|---|---|---|---|---|---|
+| WorkflowSession |  |  |  |  | (added) → Deep |
+| msdyn_ChannelDefinition |  | (added) → Global | (added) → Global | (added) → Global |  |
+| msdyn_ConsumingApplication |  | (added) → Global | (added) → Global | (added) → Global |  |
+| msdyncrm_gwennolfeatureconfiguration | Global → Deep |  |  |  |  |
+| msdynmkt_featureconfiguration | Deep → Global |  |  |  |  |
+| msdynmkt_marketingform |  |  |  |  | (added) → Deep |
+| msdynmkt_marketingformtemplate |  | (added) → Deep | (added) → Deep | (added) → Deep |  |
+| msdynmkt_matchingstrategy |  |  |  | (added) → Deep |  |
+
+---
+
+### Role: Marketing Professional - Business
+**Role identifier:** {ce995e5a-cee8-e611-80d8-00155d4b205a}
+
+| Metric | Tables | Privileges |
+|---|---|---|
+| Added | 13 | 40 |
+| Removed | 0 | 0 |
+| Updated | 19 | 44 |
+
+#### Changelist-1 Added (Tables and privileges that exist in the current release but were not previously documented)
+
+| **Table name** | **Read** | **Write** | **Create** | **Append** | **AppendTo** |
+|---|---|---|---|---|---|
+| msdynmkt_browser | Global |  |  |  |  |
+| msdynmkt_consentprovider | Global |  |  |  |  |
+| msdynmkt_consentsubmitbutton | Global |  |  |  |  |
+| msdynmkt_devicetype | Global |  |  |  |  |
+| msdynmkt_emailclient | Global |  |  |  |  |
+| msdynmkt_formsetting | Global | Global | Global | Global | Global |
+| msdynmkt_formtargetaudience | Global | Global | Global | Global | Global |
+| msdynmkt_operatingsystem | Global |  |  |  |  |
+| msdynmkt_savedformfield | Global | Global | Global | Global |  |
+| msdynmkt_segmentationcsvupload | Global | Global | Global | Global | Global |
+| msevtmgt_eventregistrationcustomfield | Global | Global | Basic | Global | Global |
+| msevtmgt_integrationconfiguration | Global | Global | Basic | Global | Global |
+| msevtmgt_powerpageswebsite | Global | Global | Basic | Global | Global |
+
+#### Changelist-2 Removed (Tables and privileges were previously documented but are no longer in the release)
+
+_None_
+
+#### Changelist-3 Updated (Privileges that have changed in the current release compared to previous documentation)
+
+| **Table name** | **Read** | **Write** | **Create** | **Append** | **AppendTo** |
+|---|---|---|---|---|---|
+| WorkflowSession |  |  |  |  | (added) → Basic |
+| msdyncrm_customerjourney |  |  | Basic → Global |  |  |
+| msdyncrm_video |  |  | Local → Global |  |  |
+| msdynmkt_brandprofile |  |  |  | (added) → Global | (added) → Global |
+| msdynmkt_brandsender |  |  |  |  | (added) → Global |
+| msdynmkt_conversioneventdefinition |  | Local → Global | Local → Global | Local → Global |  |
+| msdynmkt_domain | Local → Global | Local → Global | Local → Global | Local → Global | Local → Global |
+| msdynmkt_eventmetadata |  | Local → Global | Local → Global |  |  |
+| msdynmkt_experiment | Local → Global | Local → Global | Local → Global | Local → Global | Local → Global |
+| msdynmkt_frequencycap | Local → Global |  |  |  |  |
+| msdynmkt_gdprrequest | Local → Global | Local → Global | Local → Global | Local → Global |  |
+| msdynmkt_journey |  |  | Local → Global |  |  |
+| msdynmkt_journeytemplate |  |  | Local → Global |  |  |
+| msdynmkt_marketingform |  |  |  |  | (added) → Global |
+| msdynmkt_marketingformtemplate |  | (added) → Global | (added) → Global | (added) → Global |  |
+| msdynmkt_mobileapp | Deep → Global |  |  |  |  |
+| msdynmkt_quiettimesetting | Local → Global |  |  |  |  |
+| msdynmkt_segmentdefinition | Deep → Global | Deep → Global | Deep → Global | Deep → Global | Deep → Global |
+| msdynmkt_segmentexecution | Deep → Global | Deep → Global | Deep → Global | Deep → Global | Deep → Global |
+
+---
+
+### Role: Marketing Professional (BU level) - Business
+**Role identifier:** {6d63ebe3-cee8-e611-80d8-00155d4b205a}
+
+| Metric | Tables | Privileges |
+|---|---|---|
+| Added | 13 | 40 |
+| Removed | 0 | 0 |
+| Updated | 4 | 6 |
+
+#### Changelist-1 Added (Tables and privileges that exist in the current release but were not previously documented)
+
+| **Table name** | **Read** | **Write** | **Create** | **Append** | **AppendTo** |
+|---|---|---|---|---|---|
+| msdynmkt_browser | Global |  |  |  |  |
+| msdynmkt_consentprovider | Global |  |  |  |  |
+| msdynmkt_consentsubmitbutton | Local |  |  |  |  |
+| msdynmkt_devicetype | Global |  |  |  |  |
+| msdynmkt_emailclient | Global |  |  |  |  |
+| msdynmkt_formsetting | Local | Local | Local | Local | Local |
+| msdynmkt_formtargetaudience | Local | Local | Local | Local | Local |
+| msdynmkt_operatingsystem | Global |  |  |  |  |
+| msdynmkt_savedformfield | Local | Local | Local | Local |  |
+| msdynmkt_segmentationcsvupload | Local | Local | Local | Local | Local |
+| msevtmgt_eventregistrationcustomfield | Local | Local | Local | Local | Local |
+| msevtmgt_integrationconfiguration | Local | Local | Local | Local | Local |
+| msevtmgt_powerpageswebsite | Local | Local | Local | Local | Local |
+
+#### Changelist-2 Removed (Tables and privileges were previously documented but are no longer in the release)
+
+_None_
+
+#### Changelist-3 Updated (Privileges that have changed in the current release compared to previous documentation)
+
+| **Table name** | **Read** | **Write** | **Create** | **Append** | **AppendTo** |
+|---|---|---|---|---|---|
+| WorkflowSession |  |  |  |  | (added) → Local |
+| msdynmkt_featureconfiguration | Local → Global |  |  |  |  |
+| msdynmkt_marketingform |  |  |  |  | (added) → Local |
+| msdynmkt_marketingformtemplate |  | (added) → Local | (added) → Local | (added) → Local |  |
+
+---
+
+
+## Baseline pre-March 2026
+>[!NOTE]
+> This section doesn’t reflect the current roles or their privileges. It preserves the last published version of this page, which documented 11 roles and their privileges across five actions. Use it as a historical reference to validate custom roles against the complete privilege set **prior to the adoption of the changelist format**.
+>
 ## Role: Event Administrator
 
 **Role identifier**: a31a2242-bf8f-e611-80d7-00155d4b201d
