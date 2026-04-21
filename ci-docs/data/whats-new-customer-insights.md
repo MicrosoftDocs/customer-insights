@@ -1,7 +1,7 @@
 ---
 title: "What's new in Dynamics 365 Customer Insights - Data"
 description: "Information about new features, improvements, and bug fixes."
-ms.date: 04/16/2026
+ms.date: 04/17/2026
 ms.topic: whats-new
 author: Scott-Stabbert
 ms.author: sstabbert
