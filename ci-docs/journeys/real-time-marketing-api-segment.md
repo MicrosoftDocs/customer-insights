@@ -384,10 +384,10 @@ Accept: application/json
     "stopSingleSegmentResults": [
         {
             "SegmentId": "<Segment ID>",
-            "WasStopped": "true",
-            "Message": "null",
-            "DependentJourneys": "null",
-            "DependentSegments": "null"
+            "WasStopped": true,
+            "Message": null,
+            "DependentJourneys": null,
+            "DependentSegments": null
         }
     ]
 }
