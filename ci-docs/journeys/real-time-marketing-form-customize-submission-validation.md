@@ -18,7 +18,7 @@ The client-side validation in marketing and event registration forms helps to en
 ## Create a plugin
 
 > [!NOTE]
-> This example of custom plugin shows how to build back-end validation for the reCAPTCHA key. It can work as inspiration for your validation flow. If you want to integrate reCAPTCHA to your form, you can use the prebuilt plugin, and [follow this guide](real-time-marketing-form-security-privacy#protect-forms-from-bots-with-recaptcha).
+> This example of custom plugin shows how to build back-end validation for the reCAPTCHA key. It can work as inspiration for your validation flow. If you want to integrate reCAPTCHA to your form, you can use the prebuilt plugin, and [follow this guide](real-time-marketing-form-security-privacy.md#protect-forms-from-bots-with-recaptcha).
 
 ### Create a Visual Studio project for the plugin
 
