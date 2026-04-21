@@ -18,7 +18,7 @@ The client-side validation in marketing and event registration forms helps to en
 ## Create a plugin
 
 > [!NOTE]
-> This example of custom plugin shows how to build back-end validation for the reCAPTCHA key. It can work as inspiration for your validation flow. If you want to integrate reCAPTCHA to your form, you can use the prebuilt plugin, and [follow this guide](real-time-marketing-form-custom-captcha.md).
+> This example of custom plugin shows how to build back-end validation for the reCAPTCHA key. It can work as inspiration for your validation flow. If you want to integrate reCAPTCHA to your form, you can use the prebuilt plugin, and [follow this guide](real-time-marketing-form-security-privacy#protect-forms-from-bots-with-recaptcha).
 
 ### Create a Visual Studio project for the plugin
 
@@ -196,7 +196,7 @@ The client-side validation in marketing and event registration forms helps to en
 1. Enter `msdynmkt_validateformsubmission` into the message text field.
 1. Make sure **Execution Mode** is set as **Synchronous**.
     :::image type="content" source="media/real-time-marketing-form-custom-captcha-5.png" alt-text="Make sure Execution Mode is set as Synchronous." lightbox="media/real-time-marketing-form-custom-captcha-5.png":::
-1. Make sure **Execution order** is set to `10`.
+1. Make sure **Execution order** is set to `20`.
 1. Make sure **Event Pipeline Stage Of Execution** is set as **Post Operation**.
 1. Select **Register New Step**.
 
