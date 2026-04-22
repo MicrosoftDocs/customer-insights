@@ -1,9 +1,9 @@
 ---
 title: Permissions for out-of-the-box roles
 description: How to manage permissions for out-of-the-box and custom roles in Dynamics 365 Customer Insights - Journeys.
-ms.date: 11/02/2023
+ms.date: 04/21/2026
 ms.topic: article
-author: alfergus
+author: vinayd
 ms.author: alfergus
 search.audienceType: 
   - admin
