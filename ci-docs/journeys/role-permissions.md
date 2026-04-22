@@ -35,14 +35,14 @@ This article details permissions for the out-of-the-box roles in Customer Insigh
 
 ## How to use information in this page
 
-If your organization uses custom roles based on out-of-the-box roles, with specific privileges added, removed, or changed to match your business needs, you need to keep those custom roles in sync as the product evolves. Out-of-the-box roles can change with each release when new capabilities are added or existing capabilities are updated. Review the [Changes to roles and privileges](#changes-to-roles-and-privileges) section regularly and apply the documented changes to your custom roles.
+If your organization uses custom roles based on out-of-the-box roles, with specific privileges added, removed, or changed to match your business needs, you need to keep those custom roles in sync as the product evolves. Out-of-the-box roles can change with each release when new capabilities are added or existing capabilities are updated. Review the [Release-wise changes to roles and privileges](#release-wise-changes-to-roles-and-privileges) section regularly and apply the documented changes to your custom roles.
 
 Earlier versions of this article listed every privilege for each role. That format was difficult to maintain and made it hard to identify what changed between releases. Starting with the March 2026 release, this article uses a changelist format that documents only the differences from one release to the next. We're also now documenting privileges for all eight actions (previously, we documented only five actions: Read, Write, Create, Append, AppendTo, Delete).
 
 Here's how the information is organized:
 
 - **[April 2026 release (version 1.1.64196.86)](#april-2026-release-version-116419686)**: Changelist of differences introduced in the April 2026 release.
-- **[March 2026 release (version 1.1.62960.43)](#march-2026-release-version-1116296043)**: Changelist of differences introduced in the March 2026 release compared to the previously published documentation.
+- **[March 2026 release (version 1.1.62960.43)](#march-2026-release-version-116296043)**: Changelist of differences introduced in the March 2026 release compared to the previously published documentation.
 - **[Baseline (pre-March 2026)](#baseline-pre-march-2026)**: The last published version of this page, documenting all 11 roles and their privileges for five actions. Use this section as a reference if you need to verify your custom roles against the full privilege set before the changelist format was adopted.
 
 To keep your custom roles in sync, first align them with the documented baseline. Then, apply the permission changes introduced in each release, up to your current release, to bring your roles up to date. Afterward, review this page after every release to identify new changes that must be applied to remain in sync.
@@ -70,9 +70,9 @@ We'll update this section after each release to note changes, if any, to out-of-
 
 ---
 
-### Summary of Changes
+### Summary of changes
 
-| Role | Tables Added | Privs Added | Tables Removed | Privs Removed | Tables Updated | Privs Updated | |
+| Role | Tables Added | Privs Added | Tables Removed | Privs Removed | Tables Updated | Privs Updated | Change alert |
 |---|---|---|---|---|---|---|---|
 | Event Administrator | 0 | 0 | 0 | 0 | 0 | 0 |  |
 | Event Administrator (BU level) | 0 | 0 | 0 | 0 | 0 | 0 |  |
@@ -89,6 +89,7 @@ We'll update this section after each release to note changes, if any, to out-of-
 ---
 
 ### Role: Marketing Manager - Business
+
 **Role identifier:** {bf157a3a-cde8-e611-80d8-00155d4b205a}
 
 | Metric | Tables | Privileges |
@@ -114,6 +115,7 @@ _No changes._
 ---
 
 ### Role: Marketing Manager (BU level) - Business
+
 **Role identifier:** {dd84f17f-cde8-e611-80d8-00155d4b205a}
 
 | Metric | Tables | Privileges |
@@ -139,6 +141,7 @@ _No changes._
 ---
 
 ### Role: Marketing Professional - Business
+
 **Role identifier:** {ce995e5a-cee8-e611-80d8-00155d4b205a}
 
 | Metric | Tables | Privileges |
@@ -164,6 +167,7 @@ _No changes._
 ---
 
 ### Role: Marketing Professional (BU level) - Business
+
 **Role identifier:** {6d63ebe3-cee8-e611-80d8-00155d4b205a}
 
 | Metric | Tables | Privileges |
@@ -196,7 +200,7 @@ This is the first changenote published for this documentation and reflects a com
 
 ---
 
-### Table of Contents
+### Table of contents
 
 - [Role: Event Administrator](#role-event-administrator)
 - [Role: Event Administrator (BU level)](#role-event-administrator-bu-level)
@@ -205,15 +209,16 @@ This is the first changenote published for this documentation and reflects a com
 - [Role: Lead Score Modeler (BU level)](#role-lead-score-modeler-bu-level)
 - [Role: Lead Score Viewer](#role-lead-score-viewer)
 - [Role: Lead Score Viewer (BU level)](#role-lead-score-viewer-bu-level)
-- [Role: Marketing Manager - Business](#role-marketing-manager-business)
-- [Role: Marketing Manager (BU level) - Business](#role-marketing-manager-bu-level-business)
-- [Role: Marketing Professional - Business](#role-marketing-professional-business)
-- [Role: Marketing Professional (BU level) - Business](#role-marketing-professional-bu-level-business)
+- [Role: Marketing Manager - Business](#role-marketing-manager---business)
+- [Role: Marketing Manager (BU level) - Business](#role-marketing-manager-bu-level---business)
+- [Role: Marketing Professional - Business](#role-marketing-professional---business)
+- [Role: Marketing Professional (BU level) - Business](#role-marketing-professional-bu-level---business)
 
 ---
-### Summary of Changes
 
-| Role | Tables Added | Privs Added | Tables Removed | Privs Removed | Tables Updated | Privs Updated | |
+### Summary of changes
+
+| Role | Tables Added | Privs Added | Tables Removed | Privs Removed | Tables Updated | Privs Updated | Change alert |
 |---|---|---|---|---|---|---|---|
 | Event Administrator | 5 | 25 | 0 | 0 | 1 | 1 | ⚠ |
 | Event Administrator (BU level) | 5 | 25 | 0 | 0 | 1 | 1 | ⚠ |
@@ -230,6 +235,7 @@ This is the first changenote published for this documentation and reflects a com
 ---
 
 ### Role: Event Administrator
+
 **Role identifier:** {a31a2242-bf8f-e611-80d7-00155d4b201d}
 
 | Metric | Tables | Privileges |
@@ -261,6 +267,7 @@ _None_
 ---
 
 ### Role: Event Administrator (BU level)
+
 **Role identifier:** {07d52deb-3b54-4203-b3cf-35efe4350f82}
 
 | Metric | Tables | Privileges |
@@ -292,6 +299,7 @@ _None_
 ---
 
 ### Role: Event Planner (BU level)
+
 **Role identifier:** {9d0bcbb3-75d8-4496-b2fb-62d0a9cb902f}
 
 | Metric | Tables | Privileges |
@@ -366,6 +374,7 @@ _None_
 ---
 
 ### Role: Lead Score Modeler
+
 **Role identifier:** {d1fd2176-cee8-e611-80d8-00155d4b205a}
 
 | Metric | Tables | Privileges |
@@ -389,6 +398,7 @@ _No changes._
 ---
 
 ### Role: Lead Score Modeler (BU level)
+
 **Role identifier:** {3b30e84e-3ec6-4aa2-9417-b569f0d0284d}
 
 | Metric | Tables | Privileges |
@@ -429,6 +439,7 @@ _No changes._
 ---
 
 ### Role: Lead Score Viewer
+
 **Role identifier:** {32e87eb4-c85c-e711-80fe-000d3a297db2}
 
 | Metric | Tables | Privileges |
@@ -452,6 +463,7 @@ _No changes._
 ---
 
 ### Role: Lead Score Viewer (BU level)
+
 **Role identifier:** {afc2cc8c-a26f-41c1-99a3-4510003a1878}
 
 | Metric | Tables | Privileges |
@@ -477,6 +489,7 @@ _No changes._
 ---
 
 ### Role: Marketing Manager - Business
+
 **Role identifier:** {bf157a3a-cde8-e611-80d8-00155d4b205a}
 
 | Metric | Tables | Privileges |
@@ -539,6 +552,7 @@ _None_
 ---
 
 ### Role: Marketing Manager (BU level) - Business
+
 **Role identifier:** {dd84f17f-cde8-e611-80d8-00155d4b205a}
 
 | Metric | Tables | Privileges |
@@ -585,6 +599,7 @@ _None_
 ---
 
 ### Role: Marketing Professional - Business
+
 **Role identifier:** {ce995e5a-cee8-e611-80d8-00155d4b205a}
 
 | Metric | Tables | Privileges |
@@ -642,6 +657,7 @@ _None_
 ---
 
 ### Role: Marketing Professional (BU level) - Business
+
 **Role identifier:** {6d63ebe3-cee8-e611-80d8-00155d4b205a}
 
 | Metric | Tables | Privileges |
@@ -683,11 +699,10 @@ _None_
 
 ---
 
-
 ## Baseline pre-March 2026
 
 >[!NOTE]
-> This section doesn’t reflect the current roles or their privileges. It preserves the last published version of this page, which documented 11 roles and their privileges across five actions. Use it as a historical reference to validate custom roles against the complete privilege set **prior to the adoption of the changelist format**.
+> This section doesn’t reflect the current roles or their privileges. It preserves the last published version of this page, which documented 11 roles and their privileges across five actions. Use it as a historical reference to validate custom roles against the complete privilege set *prior to the adoption of the changelist format*.
 
 ## Role: Event Administrator
 
