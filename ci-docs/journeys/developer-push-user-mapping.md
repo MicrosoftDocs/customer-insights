@@ -37,7 +37,7 @@ First, to implement user mapping, the correct entity must be selected. This step
 
 As an example, if the contact Dataverse entity is used and the email address field is used as the unique key for an end user as a contact, one possibility to retrieve the correct ID is using an OData `GET` call to Dataverse is the following example:
 
-```HTTP
+```http
 https://<your Customer Insights - Journeys instance>.dynamics.com/api/data/v9.0/contacts?$filter=emailaddress1 eq 'andrew@contosoltd.com'
 ```
 

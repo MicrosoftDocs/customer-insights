@@ -41,11 +41,11 @@ Upon successful call of a device registration request, there's a 202 response. T
 
 Sample HTTP request (iOS):
 
-```HTTP
+```http
 POST {PublicEndpoint}/api/v1.0/orgs/%ORG_ID%/pushdeviceregistration/devices
 ```
 
-```JSON
+```json
 {
     "MobileAppId": "00000000-0000-0000-0000-000000000000",
     "UserId": "00aa00aa-bb11-cc22-dd33-44ee44ee44ee",
@@ -56,11 +56,11 @@ POST {PublicEndpoint}/api/v1.0/orgs/%ORG_ID%/pushdeviceregistration/devices
 
 Sample HTTP request (Android):
 
-```HTTP
+```http
 POST {PublicEndpoint}/api/v1.0/orgs/%ORG_ID%/pushdeviceregistration/devices
 ```
 
-```JSON
+```json
 {
     "MobileAppId": "00000000-0000-0000-0000-000000000000",
     "UserId": "00aa00aa-bb11-cc22-dd33-44ee44ee44ee",
@@ -81,7 +81,7 @@ Response body:
 
 When **x-ms-track-registration** is true:
 
-```JSON
+```json
 {
     "RegistrationRequestId": "%GUID%"
 }
@@ -105,11 +105,11 @@ The body of the batch registration contains an array of up to 100 objects repres
 
 Sample HTTP request (iOS):
 
-```HTTP
+```http
 POST {PublicEndpoint}/api/v1.0/orgs/%ORG_ID%/pushdeviceregistration/devices/batch
 ```
 
-```JSON
+```json
 [
     {
         "MobileAppId": "00000000-0000-0000-0000-000000000000",      
@@ -128,11 +128,11 @@ POST {PublicEndpoint}/api/v1.0/orgs/%ORG_ID%/pushdeviceregistration/devices/batc
 
 Sample HTTP request (Android):
 
-```HTTP
+```http
 POST {PublicEndpoint}/api/v1.0/orgs/%ORG_ID%/pushdeviceregistration/devices/batch
 ```
 
-```JSON
+```json
 [
     {
         "MobileAppId": "00000000-0000-0000-0000-000000000000",      
@@ -161,7 +161,7 @@ Response body:
 
 When **x-ms-track-registration** is true: an array of items, each item order corresponds to order from the request body array.
 
-```JSON
+```json
 [
     {
         "RegistrationRequestId": "%REG_REQUEST_ID%"
@@ -176,13 +176,13 @@ Otherwise, empty body.
 
 #### Device registration status
 
-```HTTP
+```http
 POST  {PublicEndpoint}/api/v1.0/orgs/%ORG_ID%/pushdeviceregistration/devices/status/
 ```
 
 Request body:
 
-```JSON
+```json
 {
     "RegistrationRequestIds": [
         "%REG_REQUEST_ID%"
@@ -196,7 +196,7 @@ Returns: 200 if provided request is valid, 400 otherwise.
 
 Response body - an array of items:
 
-```JSON
+```json
 [
     {
         "Status": "Pending|Success|Failed",
@@ -234,7 +234,7 @@ POST to the URL provided within **x-ms-status-callback-url** header of device re
 
 Body:
 
-```JSON
+```json
 { 
     "Status": "Success|Failed", 
     "Signature": "%SIGNATURE%", 
@@ -256,11 +256,11 @@ Expected body: empty body.
 
 It's important to remove devices that are no longer valid from the database to ensure performant message sending. Use the following approach to remove old device, user, and application combinations from the devices table.
 
-```HTTP
+```http
 POST {PublicEndpoint}/api/v1.0/orgs/%ORG_ID%/pushdeviceregistration/devices/cleanup
 ```
 
-```JSON
+```json
 {
     "MobileAppId": "00000000-0000-0000-0000-000000000000",
     "ApiToken": "%API_TOKEN%",
@@ -287,11 +287,11 @@ Returns: 202 if provided request is valid, 400 otherwise.
 
 It's important to remove devices that are no longer valid from the database to ensure performant message sending. Use the following approach to remove old device, user, and application combinations from the devices table.
 
-```HTTP
+```http
 POST {PublicEndpoint}/api/v1.0/orgs/%ORG_ID%/pushdeviceregistration/devices/cleanup/batch
 ```
 
-```JSON
+```json
 {
     "MobileAppId": "00000000-0000-0000-0000-000000000000",
     "ApiToken": "%API_TOKEN%",
