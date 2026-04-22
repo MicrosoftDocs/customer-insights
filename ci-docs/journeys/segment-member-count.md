@@ -103,3 +103,5 @@ If all the above conditions are met and if the expected contacts still don't mat
     - Segment ID for outbound marketing
 - Sample ContactIds that should or shouldn't show up in the segment.
 - Attributes and the entities where the ContactId is causing the potential discrepancy.
+
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

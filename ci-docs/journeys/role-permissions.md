@@ -1,10 +1,11 @@
 ---
 title: Permissions for out-of-the-box roles
-description: How to manage permissions for out-of-the-box and custom roles in Dynamics 365 Customer Insights - Journeys.
+description: "Permissions for out-of-the-box roles: Get the latest updates on role permissions in Dynamics 365 Customer Insights - Journeys. Ensure your custom roles stay in sync."
 ms.date: 04/21/2026
 ms.topic: article
 author: vinayd
 ms.author: alfergus
+ms.reviewer: alfergus
 search.audienceType: 
   - admin
   - customizer
@@ -16,9 +17,10 @@ search.audienceType:
 This article details permissions for the out-of-the-box roles in Customer Insights - Journeys. Whether you're an administrator configuring roles or a user looking to understand the access levels, these roles serve as a valuable reference.
 
 > [!NOTE]
-> The content and structure of this page have changed significantly since April 2026. If you used this page to keep custom roles aligned with out‑of‑the‑box roles, review the entire article to understand what has changed and how role updates are now documented
+> The content and structure of this page have changed significantly since April 2026. If you used this page to keep custom roles aligned with out‑of‑the‑box roles, review the entire article to understand what has changed and how role updates are now documented.
 
-### List of out-of-the-box roles
+## List of out-of-the-box roles
+
 1. Event Administrator
 1. Event Administrator (BU level)
 1. Event Planner (BU level)
@@ -31,41 +33,40 @@ This article details permissions for the out-of-the-box roles in Customer Insigh
 1. Marketing Professional - Business
 1. Marketing Professional (BU level) - Business
 
-### How to use information in this page
+## How to use information in this page
 
-If your organization uses custom roles based on out-of-the-box roles — with specific privileges added, removed, or changed to match your business needs — you need to keep those custom roles in sync as the product evolves. Out-of-the-box roles can change with each release when new capabilities are added or existing capabilities are updated. Review the #changes-to-roles-and-privileges section on a regular basis and apply the documented changes to your custom roles.
+If your organization uses custom roles based on out-of-the-box roles, with specific privileges added, removed, or changed to match your business needs, you need to keep those custom roles in sync as the product evolves. Out-of-the-box roles can change with each release when new capabilities are added or existing capabilities are updated. Review the [Changes to roles and privileges](#changes-to-roles-and-privileges) section regularly and apply the documented changes to your custom roles.
 
-Earlier versions of this article listed every privilege for each role. That format was difficult to maintain and made it hard to identify what changed between releases. Starting with the March 2026 release, this article uses a changelist format that documents only the differences from one release to the next. We are also now documenting privileges for all 8 actions (previously we documented only 5 actions Read, Write, Create, Append, AppendTo, Delete)
+Earlier versions of this article listed every privilege for each role. That format was difficult to maintain and made it hard to identify what changed between releases. Starting with the March 2026 release, this article uses a changelist format that documents only the differences from one release to the next. We're also now documenting privileges for all eight actions (previously, we documented only five actions: Read, Write, Create, Append, AppendTo, Delete).
 
-Here is how the information is organized:
+Here's how the information is organized:
 
-- **[April 2026 release (version 1.1.64196.86)](#april-2026-release-version-116419686)** — Changelist of differences introduced in the April 2026 release.
-- **[March 2026 release (version 1.1.62960.43)](#march-2026-release-version-1116296043)** — Changelist of differences introduced in the March 2026 release compared to the previously published documentation.
-- **[Baseline (pre-March 2026)](#baseline-pre-march-2026)** — The last published version of this page, documenting all 11 roles and their privileges for five actions. Use this section as a reference if you need to verify your custom roles against the full privilege set before the changelist format was adopted.
+- **[April 2026 release (version 1.1.64196.86)](#april-2026-release-version-116419686)**: Changelist of differences introduced in the April 2026 release.
+- **[March 2026 release (version 1.1.62960.43)](#march-2026-release-version-1116296043)**: Changelist of differences introduced in the March 2026 release compared to the previously published documentation.
+- **[Baseline (pre-March 2026)](#baseline-pre-march-2026)**: The last published version of this page, documenting all 11 roles and their privileges for five actions. Use this section as a reference if you need to verify your custom roles against the full privilege set before the changelist format was adopted.
 
-To keep your custom roles in sync, first align them with the documented baseline. Then, apply the permission changes introduced in each release—up to your current release—to bring your roles up to date. Afterward, review this page after every release to identify new changes that must be applied to remain in sync.
+To keep your custom roles in sync, first align them with the documented baseline. Then, apply the permission changes introduced in each release, up to your current release, to bring your roles up to date. Afterward, review this page after every release to identify new changes that must be applied to remain in sync.
 
+## How to check privileges for any role
 
-### How to check privileges for any role           
-For the most accurate and up-to-date privilege information, check roles directly in the application. Follow the steps in [Security roles and privileges for Dataverse](https://learn.microsoft.com/power-platform/admin/security-roles-privileges) to find configured roles and their privileges.
+For the most accurate and up-to-date privilege information, check roles directly in the application. Follow the steps in [Security roles and privileges for Dataverse](/power-platform/admin/security-roles-privileges) to find configured roles and their privileges.
 
 Dataverse security roles combine an **action** (for example, Read or Write) with an **access scope** that defines how broadly that action applies across your organization.
 
-These scopes are documented as **Basic**, **Local**, **Deep**, and **Global**. In the Power Platform admin center UI, the same concepts appear with the following labels:
+These scopes are documented as **Basic**, **Local**, **Deep**, and **Global**. In the Power Platform admin center, the same concepts appear with the following labels:
 
-- **User → Basic**. Access only to records the user owns or that are shared with them.
-- **Business → Local**. Access to records owned by users in the same business unit.
-- **Parent: Child Business Unit → Deep**. Access to records in the user's business unit and all subordinate business units.
-- **Organization → Global**. Access to all records across the entire environment, regardless of business unit.
+- **User → Basic**: Access only to records the user owns or that are shared with them.
+- **Business → Local**: Access to records owned by users in the same business unit.
+- **Parent: Child Business Unit → Deep**: Access to records in the user's business unit and all subordinate business units.
+- **Organization → Global**: Access to all records across the entire environment, regardless of business unit.
 
+## Release-wise changes to roles and privileges
 
-# Release-wise changes to roles and privileges
-
-We will update this section after each release to note changes, if any, to out-of-the-box roles and privileges. 
+We'll update this section after each release to note changes, if any, to out-of-the-box roles and privileges.
 
 ## April 2026 release (version 1.1.64196.86)
 
-### Role wise changes (vs March 2026 release)
+### Role-wise changes (versus the March 2026 release)
 
 ---
 
@@ -86,6 +87,7 @@ We will update this section after each release to note changes, if any, to out-o
 | Marketing Professional (BU level) - Business | 1 | 8 | 0 | 0 | 0 | 0 | ⚠ |
 
 ---
+
 ### Role: Marketing Manager - Business
 **Role identifier:** {bf157a3a-cde8-e611-80d8-00155d4b205a}
 
@@ -188,9 +190,9 @@ _No changes._
 
 ## March 2026 release (version 1.1.62960.43)
 
-This is the first changenote published for this documentation and reflects a comparison against previously published learn page for roles and permissions . As a result, **some entries may be marked as Added or Removed even when no functional change has occurred**. An Added entry may indicate a permission that already existed but was previously undocumented. Similarly, a Removed entry may reflect a correction to earlier documentation rather than an actual removal of a permission.
+This is the first changenote published for this documentation and reflects a comparison against previously published learn page for roles and permissions. As a result, some entries may be marked as **Added** or **Removed** even when no functional change has occurred. An **Added** entry may indicate a permission that already existed but was previously undocumented. Similarly, a **Removed** entry may reflect a correction to earlier documentation rather than an actual removal of a permission.
 
-### Role wise changes (vs previously published documentation)
+### Role wise changes (versus previously published documentation)
 
 ---
 
@@ -236,7 +238,7 @@ This is the first changenote published for this documentation and reflects a com
 | Removed | 0 | 0 |
 | Updated | 1 | 1 |
 
-#### Changelist-1 Added (Tables and privileges that exist in the current release but were not previously documented)
+#### Changelist-1 Added (Tables and privileges that exist in the current release but weren't previously documented)
 
 | **Table name** | **Read** | **Write** | **Create** | **Append** | **AppendTo** |
 |---|---|---|---|---|---|
@@ -267,7 +269,7 @@ _None_
 | Removed | 0 | 0 |
 | Updated | 1 | 1 |
 
-#### Changelist-1 Added (Tables and privileges that exist in the current release but were not previously documented)
+#### Changelist-1 Added (Tables and privileges that exist in the current release but weren't previously documented)
 
 | **Table name** | **Read** | **Write** | **Create** | **Append** | **AppendTo** |
 |---|---|---|---|---|---|
@@ -298,7 +300,7 @@ _None_
 | Removed | 0 | 0 |
 | Updated | 45 | 156 |
 
-#### Changelist-1 Added (Tables and privileges that exist in the current release but were not previously documented)
+#### Changelist-1 Added (Tables and privileges that exist in the current release but weren't previously documented)
 
 | **Table name** | **Read** | **Write** | **Create** | **Append** | **AppendTo** |
 |---|---|---|---|---|---|
@@ -372,7 +374,7 @@ _None_
 | Removed | 0 | 0 |
 | Updated | 0 | 0 |
 
-#### Changelist-1 Added (Tables and privileges that exist in the current release but were not previously documented)
+#### Changelist-1 Added (Tables and privileges that exist in the current release but weren't previously documented)
 
 _None_
 
@@ -395,7 +397,7 @@ _No changes._
 | Removed | 6 | 6 |
 | Updated | 6 | 24 |
 
-#### Changelist-1 Added (Tables and privileges that exist in the current release but were not previously documented)
+#### Changelist-1 Added (Tables and privileges that exist in the current release but weren't previously documented)
 
 | **Table name** | **Read** | **Write** | **Create** | **Append** | **AppendTo** |
 |---|---|---|---|---|---|
@@ -435,7 +437,7 @@ _No changes._
 | Removed | 0 | 0 |
 | Updated | 0 | 0 |
 
-#### Changelist-1 Added (Tables and privileges that exist in the current release but were not previously documented)
+#### Changelist-1 Added (Tables and privileges that exist in the current release but weren't previously documented)
 
 _None_
 
@@ -458,7 +460,7 @@ _No changes._
 | Removed | 0 | 0 |
 | Updated | 0 | 0 |
 
-#### Changelist-1 Added (Tables and privileges that exist in the current release but were not previously documented)
+#### Changelist-1 Added (Tables and privileges that exist in the current release but weren't previously documented)
 
 | **Table name** | **Read** | **Write** | **Create** | **Append** | **AppendTo** |
 |---|---|---|---|---|---|
@@ -483,7 +485,7 @@ _No changes._
 | Removed | 0 | 0 |
 | Updated | 24 | 57 |
 
-#### Changelist-1 Added (Tables and privileges that exist in the current release but were not previously documented)
+#### Changelist-1 Added (Tables and privileges that exist in the current release but weren't previously documented)
 
 | **Table name** | **Read** | **Write** | **Create** | **Append** | **AppendTo** |
 |---|---|---|---|---|---|
@@ -545,7 +547,7 @@ _None_
 | Removed | 0 | 0 |
 | Updated | 8 | 14 |
 
-#### Changelist-1 Added (Tables and privileges that exist in the current release but were not previously documented)
+#### Changelist-1 Added (Tables and privileges that exist in the current release but weren't previously documented)
 
 | **Table name** | **Read** | **Write** | **Create** | **Append** | **AppendTo** |
 |---|---|---|---|---|---|
@@ -591,7 +593,7 @@ _None_
 | Removed | 0 | 0 |
 | Updated | 19 | 44 |
 
-#### Changelist-1 Added (Tables and privileges that exist in the current release but were not previously documented)
+#### Changelist-1 Added (Tables and privileges that exist in the current release but weren't previously documented)
 
 | **Table name** | **Read** | **Write** | **Create** | **Append** | **AppendTo** |
 |---|---|---|---|---|---|
@@ -648,7 +650,7 @@ _None_
 | Removed | 0 | 0 |
 | Updated | 4 | 6 |
 
-#### Changelist-1 Added (Tables and privileges that exist in the current release but were not previously documented)
+#### Changelist-1 Added (Tables and privileges that exist in the current release but weren't previously documented)
 
 | **Table name** | **Read** | **Write** | **Create** | **Append** | **AppendTo** |
 |---|---|---|---|---|---|
@@ -683,9 +685,10 @@ _None_
 
 
 ## Baseline pre-March 2026
+
 >[!NOTE]
 > This section doesn’t reflect the current roles or their privileges. It preserves the last published version of this page, which documented 11 roles and their privileges across five actions. Use it as a historical reference to validate custom roles against the complete privilege set **prior to the adoption of the changelist format**.
->
+
 ## Role: Event Administrator
 
 **Role identifier**: a31a2242-bf8f-e611-80d7-00155d4b201d
@@ -2371,3 +2374,5 @@ _None_
 | WizardPage | Global |  |  |  |  |
 | Workflow | Global | Local | Local | Local | Global |
 | WorkflowSession | Global | Local | Local | Local |  |
+
+[!INCLUDE [footer-include](./includes/footer-banner.md)]
