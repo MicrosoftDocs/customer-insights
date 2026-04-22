@@ -35,6 +35,7 @@ To create conversational journeys, you need both products (Customer Insights - J
     - Use conversational voice results and outcomes to branch the journey and implement different retry and other experiences.
 
 For more details on these steps and concepts, review the following articles:
+
 - [Prerequisites for conversational journeys](conversational-journeys-prerequisites.md)
 - [Conversational journeys concepts](proactive-engagement-concepts.md)
 - [Create conversational journeys](proactive-engagement-how-to.md)
