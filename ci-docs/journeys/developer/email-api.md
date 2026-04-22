@@ -18,7 +18,7 @@ The email API lets you access emails you sent to your customers, ensuring you ha
 
 ### API endpoint
 
-```HTTPS
+```http
 POST <Organization URL>/api/data/v9.0/msdynmkt_EmailRetrieveExactMessages
 ```
 
@@ -53,7 +53,7 @@ The <**Organization URL**> should be replaced with the actual URL of the organiz
 
 #### Example
 
-```JSON
+```json
 {
     "ProfileId":"0862dc41-0642-f011-877a-6045bd06d212",
     "MessageEntityName":"msdynmkt_email",
@@ -88,7 +88,7 @@ The <**Organization URL**> should be replaced with the actual URL of the organiz
 
 ### Example
 
-```JSON
+```json
 {
     "@odata.context":"{orgUrl}/api/data/v9.0/$metadata#Microsoft.Dynamics.CRM.msdynmkt_EmailRetrieveExactMessagesResponse",
     "ApiResponseData":"{\"exactMessagesMap\":{\"0862dc41-0642-f011-877a-6045bd06d212_cb883756-f2ba-f011-bbd2-000d3a3212e8_c9921dd4-1e5c-3c3c-d681-0209a0c4d6bc_4dbaa872-62ba-f011-bbd2-000d3a3212e8\":{\"msdynmkt_name\":null,\"msdynmkt_marketingemailid\":null,\"msdynmkt_fromname\":null,\"msdynmkt_fromemail\":null,\"msdynmkt_emailbody\":\"<html>REDACTED</html>\"}},\"interactionToMessageMap\":{\"0862dc41-0642-f011-877a-6045bd06d212_cb883756-f2ba-f011-bbd2-000d3a3212e8_c9921dd4-1e5c-3c3c-d681-0209a0c4d6bc_4dbaa872-62ba-f011-bbd2-000d3a3212e8\":\"0862dc41-0642-f011-877a-6045bd06d212_cb883756-f2ba-f011-bbd2-000d3a3212e8_c9921dd4-1e5c-3c3c-d681-0209a0c4d6bc_4dbaa872-62ba-f011-bbd2-000d3a3212e8\"}}",
