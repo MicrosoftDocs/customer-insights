@@ -15,7 +15,7 @@ ms.custom: bap-template
 
 Data refresh notifications in Customer Insights - Data help environment admins identify permanent refresh failures without unnecessary alerts. This article explains what triggers a notification, how transient failures are suppressed, and how to respond when action is required.
 
-## How failures are classified
+## Failure types and status
 
 When a refresh task fails, Customer Insights - Data automatically attempts to recover by retrying the failed step. Not every failure requires admin intervention - many failures are transient. The system detects a recoverable condition and retries successfully without any action on your part.
 
@@ -28,8 +28,7 @@ To reduce unnecessary alerts and avoid notifying admins for failures that resolv
 
 > [!NOTE]
 > Task timeouts are treated as permanent failures and always generate a notification.
-
-## What triggers a notification
+## Email notifications
 
 Email notifications are sent to environment admins only when a **permanent failure** occurs. The following events can result in a permanent failure notification:
 
@@ -39,28 +38,11 @@ Email notifications are sent to environment admins only when a **permanent failu
 | Refresh failure | A task times out |
 | Refresh skipped | A downstream process is skipped because an upstream task permanently failed |
 
-## Who receives notifications
-
 Customer Insights - Data sends notifications to all users with the **Admin** role. The notification goes to the email address associated with each admin's account.
-
-## What changed in refresh failure notifications
-
-Before this update, Customer Insights - Data sent a failure notification whenever a task failed. This notification included transient failures that the system was still retrying and expected to resolve automatically. This behavior caused unnecessary alerts, particularly during overnight refresh windows.
-
-| Behavior | Before | After |
-|---|---|---|
-| Transient failure (retrying) | Notification sent | No notification sent |
-| Permanent failure (retries exhausted) | Notification sent | Notification sent |
-| Task timeout | No notification sent | Notification sent (bug fix) |
 
 > [!TIP]
 > If you previously received frequent failure alerts for jobs that appeared healthy the next time you checked, those alerts likely indicated transient failures. This update automatically suppresses those alerts.
 
-## View failure status in the system
-
-You can see the current failure classification for any task in the [system status view](system.md#view-system-status). Go to **Settings** > **System** and select the **Status** tab. Tasks actively being retried show a **Failed (retrying)** status. Tasks that permanently failed show **Failed (permanent)**.
-
-For a full description of all task statuses, see [Status definitions](system.md#status-definitions).
 
 ## Respond to a permanent failure notification
 
