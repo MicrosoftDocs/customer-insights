@@ -21,11 +21,11 @@ Conversational journeys combines Dynamics 365 Customer Insights - Journeys, Dyna
 
 A typical conversational journeys solution has three parts:
 
-1. A customer journey tells the AI agent who to call, when to call, and how to process choices the customer makes during the call. Set up consent management and quiet times in Customer Insights - Journeys to contact customers according to their preferences and regulatory requirements.
+1. A customer journey tells the AI agent who to call, when to call, and how to process the choices the customer makes during the call. Set up consent management and quiet times in Customer Insights - Journeys to contact customers according to their preferences and regulatory requirements.
 1. The AI agent converses with customers using natural language. Build this agent in Microsoft Copilot Studio.
 1. Contact Center brings everything together. Set up customer service agent queues and phone numbers, and define behaviors like transferring a call to a human representative if the customer asks or if the AI agent can't handle the request.
 
-You can author the entire conversational journeys solution with no code, including designing the AI agent using natural language. This no code approach allows nontechnical business users to easily define customer experiences.
+You can author the entire conversational journeys solution with no code, including designing the AI agent using natural language. This no-code approach allows nontechnical business users to easily define customer experiences.
 
 To create conversational journeys, you need both products (Customer Insights - Journeys and Contact Center). The apps must be in the same environment (using the same Dataverse instance). Use these links to learn more about different aspects of conversational journeys:
 
