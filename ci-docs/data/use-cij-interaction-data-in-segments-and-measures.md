@@ -1,0 +1,160 @@
+---
+title: Use Customer Insights - Journeys interaction data in segments and measures
+description: Learn how to use Customer Insights - Journeys behavioral interaction data—such as email opens and link clicks—in Customer Insights - Data segments and measures.
+ms.date: 04/23/2026
+ms.topic: how-to
+author: Scott-Stabbert
+ms.author: sstabbert
+ms.reviewer: alfergus
+ms.service: customer-insights
+ms.subservice: customer-insights-data
+ms.custom: bap-template
+---
+
+# Use Customer Insights - Journeys interaction data in segments and measures
+
+[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
+
+Behavioral interaction data from Customer Insights - Journeys—such as emails opened, links clicked, and forms submitted—is automatically available in Customer Insights - Data for use in segments and measures. This lets you combine unified customer profiles with real campaign engagement signals to build more precise audiences and scoring models.
+
+## How Customer Insights - Journeys captures interaction data
+
+Customer Insights - Journeys records a behavioral interaction every time a customer engages with a marketing touchpoint—or fails to engage. These interactions are captured across email, push notifications, text messages, forms, and events. Each interaction is linked to the contact or lead record that received or triggered it.
+
+For more information on how Customer Insights - Journeys collects and stores interaction data, see [Improve targeting using interaction data in segments](https://learn.microsoft.com/en-us/dynamics365/customer-insights/journeys/real-time-marketing-redesigned-segment-builder).
+
+> [!NOTE]
+> Only interaction data linked to a unified **Customer Profile** in Customer Insights - Data is available in the segment and measure builders. Interactions associated with contacts or leads that have not been unified into a Customer Profile are not included. To use contact- or lead-based interactions directly in journey branching and real-time targeting, use Customer Insights - Journeys.
+
+## Prerequisites
+
+- Customer Insights - Journeys and Customer Insights - Data must be deployed in the same environment.
+- Data unification must be configured so that contacts or leads from Customer Insights - Journeys are included in unified Customer Profiles. See [Data unification overview](data-unification.md).
+
+## Available interaction types
+
+Customer Insights - Journeys interaction data is available on the **Behavioral** tab in both the segment builder and the measure builder. The following interaction types are available:
+
+**Email**
+- Email Consent not given
+- Email Blocked
+- Email Bounced
+- Email Delivered
+- Email Link Clicked
+- Email Opened
+- Email Sent
+
+**Push notifications**
+- Push Notification Link Clicked
+- Push Notification Not Sent
+- Push Notification Opened
+- Push Notification Sent
+
+**Text messages**
+- Text Message Bounced
+- Text Message Delivered
+- Text Message Link Clicked
+- Text Message Not Sent
+- Text Message Sent
+
+**Events and forms**
+- Marketing Event Check-in
+- Event Registration Canceled
+- Event Registration Created
+- Form Submitted
+- Form Visited
+
+Each interaction type exposes fields you can use in conditions, such as Journey, Email, Email address, Email client, Timestamp, Profile Id, and Profile type.
+
+> [!NOTE]
+> Interaction data is refreshed on the Customer Insights - Data system refresh schedule, not in real time. Segments and measures that use interaction data reflect the state of interactions as of the last successful refresh.
+
+## Use interaction data in a segment
+
+Use the **Behavioral** tab in the segment builder to filter unified customer profiles based on how they responded—or didn't respond—to your campaigns.
+
+![Screenshot of the Customer Insights - Data segment builder showing the Attributes, Behavioral, and Segments tabs in the side panel, with the canvas open for Rule 1.](media/cij-interactions-segment-builder.png)
+
+**To create a segment using interaction data:**
+
+1. Go to **Insights** > **Segments** and select **New** > **Build your own**.
+1. Select **Edit details** to name your segment.
+1. In the **Add to Rule 1** side panel, select the **Behavioral** tab.
+
+   ![Screenshot of the Behavioral tab in the segment builder side panel, showing the full list of Customer Insights - Journeys interaction types including Email Opened, Email Sent, Form Submitted, and others.](media/cij-interactions-behavioral-tab.png)
+
+1. Select an interaction type to expand it and view its available fields.
+
+   ![Screenshot of Email Opened expanded in the Behavioral tab, showing fields such as Journey, Details, Email address, Email client, Is unresolved profile, Email, Profile Id, Profile type, Sending pipeline, and Timestamp.](media/cij-interactions-email-opened-expanded.png)
+
+1. Select a field to add it to Rule 1 on the canvas, or drag the interaction type directly onto the canvas to add it as a condition.
+1. Configure the condition — set the operator, value, and optionally a time window (for example, *Email Opened in the last 7 days*).
+1. Add more conditions or rules as needed, then select **Save** and **Run** to evaluate the segment.
+
+### Scenario: Add the Email field of Email Opened to a rule
+
+To filter customers by the specific email they opened, add the **Email** field from the **Email Opened** interaction type to your rule.
+
+1. On the **Behavioral** tab, expand **Email Opened** by selecting it.
+2. Select **Email** from the field list.
+
+   The condition is added to Rule 1 on the canvas as
+   `EmailOpened : CustomerInsightsJourneysInteractions.Email is equal to`.
+
+   ![Screenshot of the segment builder canvas showing Rule 1 with the condition "EmailOpened : CustomerInsightsJourneysInteractions.Email is equal to", and the Email Opened interaction expanded in the side panel showing its available fields.](media/cij-scenario1-email-added-to-rule.png)
+
+3. Use the value dropdown in the rule condition to select the specific email campaign to match.
+
+### Scenario: Search for interaction types by keyword
+
+Use the **Search** box at the top of the **Behavioral** tab to quickly find an interaction type or field by typing part of its name. The search performs an
+in-string match — results update as you type and include any interaction type or field whose name contains the characters entered.
+
+For example, typing `ma` narrows the list to interactions and fields whose underlying field names contain those characters.
+
+> [!NOTE]
+> The search matches against the underlying field names, not the localized display names shown in the list. If you cannot find an expected interaction type by its display name, try searching by a portion of its technical name, or select **Show display names** at the bottom of the panel to toggle between views.
+
+![Screenshot of the Behavioral tab with "ma" typed in the Search box, showing filtered results with Email Opened expanded and its raw field names displayed, such as MessageId, EmailAddressUsed, and CustomerJourneyId.](media/cij-scenario2-search-ma.png)
+
+### Example scenarios
+
+- **Re-engagement:** Customers who received an email but did not open it in the past 30 days — target them with a more compelling offer.
+- **High-intent buyers:** Customers who clicked a product link in an email and also have a high lifetime value score from a predictive model.
+- **Event attendees:** Customers who checked in to a marketing event in the past 90 days.
+- **Non-responders:** Customers who were sent a push notification but it was not delivered — investigate delivery issues or update contact preferences.
+
+## Use interaction data in a measure
+
+Use the **Behavioral** tab in the measure builder to create calculated attributes based on interaction counts or aggregated values across your unified profiles.
+
+**To create a measure using interaction data:**
+
+1. Go to **Insights** > **Measures** and select **New** > **Build your own**.
+1. Select **Add dimension** or begin adding conditions in the measure canvas.
+1. In the side panel, select the **Behavioral** tab.
+1. Select an interaction type and field to use as the basis for your aggregation
+   (for example, count of *Email Opened* events per customer).
+1. Configure aggregation type (count, sum, average, min, max) and optional filters
+   or time windows.
+1. Save and run the measure.
+
+Measures built on interaction data can be used as attributes in segment conditions, enabling scenarios such as segmenting customers with more than five email opens in the last 60 days.
+
+## Considerations and limitations
+
+- **Batch only:** Interaction data is processed in batch with each system refresh. Segments and measures do not reflect interactions in real time. For real-time
+  journey branching based on interactions, use Customer Insights - Journeys.
+- **Profile-linked interactions only:** Only interactions linked to a unified Customer Profile are available. Interactions on contacts or leads not yet unified will not appear. See the note at the top of this article.
+- **Not surfaced in customer timeline:** Customer Insights - Journeys interaction data is intentionally not shown on the customer profile timeline in Customer Insights - Data. Use Customer Insights - Journeys contact insights for timeline views.
+- **Ingestion time:** Depending on the volume of interaction data, the initial ingestion of interaction tables may take 30 minutes to several hours for large environments.
+
+## Related information
+
+- [Create and manage segments](segments.md)
+- [Create and manage measures](measures.md)
+- [Data unification overview](data-unification.md)
+- [Improve targeting using interaction data in segments (Customer Insights - Journeys)](https://learn.microsoft.com/en-us/dynamics365/customer-insights/journeys/real-time-marketing-redesigned-segment-builder)
+- [Access and interpret analytics (Customer Insights - Journeys)](https://learn.microsoft.com/en-us/dynamics365/customer-insights/journeys/real-time-marketing-analytics)
+- [Use Customer Insights - Data profiles and segments in Customer Insights - Journeys](https://learn.microsoft.com/en-us/dynamics365/customer-insights/journeys/real-time-marketing-ci-profile)
+- [Schedule system refresh](schedule-refresh.md)
