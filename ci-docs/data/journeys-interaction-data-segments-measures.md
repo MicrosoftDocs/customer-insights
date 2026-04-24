@@ -17,7 +17,7 @@ ms.custom: bap-template
 
 Behavioral interaction data from Customer Insights - Journeys, such as emails opened, links clicked, and forms submitted, is automatically available in Customer Insights - Data for use in segments and measures. This feature lets you combine unified customer profiles with real campaign engagement signals to build more precise audiences and scoring models.
 
-[Customer Insights - Journeys records a behavioral interaction](../journeys/real-time-marketing-redesigned-segment-builder) every time a customer engages with a marketing touchpoint - or fails to engage. The system captures these interactions across email, push notifications, text messages, forms, and events. Each interaction links to the contact or lead record that receives or triggers it.
+[Customer Insights - Journeys records a behavioral interaction](../journeys/real-time-marketing-redesigned-segment-builder.md) every time a customer engages with a marketing touchpoint - or fails to engage. The system captures these interactions across email, push notifications, text messages, forms, and events. Each interaction links to the contact or lead record that receives or triggers it.
 
 > [!NOTE]
 > The segment and measure builders only include interaction data linked to a unified **Customer Profile** in Customer Insights - Data. The builders don't include interactions associated with contacts or leads that aren't unified into a Customer Profile. To use contact- or lead-based interactions directly in journey branching and real-time targeting, use Customer Insights - Journeys.
@@ -95,7 +95,7 @@ To filter customers by the specific email they opened, add the **Email** field f
    The condition is added to Rule 1 on the canvas as
    `EmailOpened : CustomerInsightsJourneysInteractions.Email is equal to`.
 
-   :::image type="content" source="media/journeys-scenario1-email-added-to-rule.png" alt-text="Screenshot of the segment builder canvas showing Rule 1 with the condition 'EmailOpened : CustomerInsightsJourneysInteractions.Email is equal to', and the Email Opened interaction expanded in the side panel showing its available fields.":::
+   :::image type="content" source="media/journeys-scenario-email-added-to-rule.png" alt-text="Screenshot of the segment builder canvas showing Rule 1 with the condition 'EmailOpened : CustomerInsightsJourneysInteractions.Email is equal to', and the Email Opened interaction expanded in the side panel showing its available fields.":::
 
 1. Use the value dropdown in the rule condition to select the specific email campaign to match.
 
@@ -109,7 +109,7 @@ For example, typing `ma` narrows the list to interactions and fields whose under
 > [!NOTE]
 > The search matches against the underlying field names, not the localized display names shown in the list. If you can't find an expected interaction type by its display name, try searching by a portion of its technical name, or select **Show display names** at the bottom of the panel to toggle between views.
 
-:::image type="content" source="media/journeys-scenario2-search-ma.png" alt-text="Screenshot of the Behavioral tab with 'ma' typed in the Search box, showing filtered results with Email Opened expanded and its raw field names displayed, such as MessageId, EmailAddressUsed, and CustomerJourneyId.":::
+:::image type="content" source="media/journeys-scenario-search-ma.png" alt-text="Screenshot of the Behavioral tab with 'ma' typed in the Search box, showing filtered results with Email Opened expanded and its raw field names displayed, such as MessageId, EmailAddressUsed, and CustomerJourneyId.":::
 
 ### Example scenarios
 
@@ -145,7 +145,7 @@ Use measures built on interaction data as attributes in segment conditions. This
 - [Create and manage segments](segments.md)
 - [Create and manage measures](measures.md)
 - [Data unification overview](data-unification.md)
-- [Improve targeting using interaction data in segments (Customer Insights - Journeys)](https://learn.microsoft.com/en-us/dynamics365/customer-insights/journeys/real-time-marketing-redesigned-segment-builder)
-- [Access and interpret analytics (Customer Insights - Journeys)](https://learn.microsoft.com/en-us/dynamics365/customer-insights/journeys/real-time-marketing-analytics)
-- [Use Customer Insights - Data profiles and segments in Customer Insights - Journeys](https://learn.microsoft.com/en-us/dynamics365/customer-insights/journeys/real-time-marketing-ci-profile)
+- [Improve targeting using interaction data in segments (Customer Insights - Journeys)](../journeys/real-time-marketing-redesigned-segment-builder.md)
+- [Access and interpret analytics (Customer Insights - Journeys)](../journeys/real-time-marketing-analytics.md)
+- [Use Customer Insights - Data profiles and segments in Customer Insights - Journeys](../journeys/real-time-marketing-ci-profile.md)
 - [Schedule system refresh](schedule-refresh.md)
