@@ -16,32 +16,6 @@ This article describes information specific to legacy B2B environments. For all 
 > [!NOTE]
 > The legacy B2B version won't be updated with new features being added to the standard version of Customer Insights - Data.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
 ## Supported features overview
 
 |Feature |What's supported |

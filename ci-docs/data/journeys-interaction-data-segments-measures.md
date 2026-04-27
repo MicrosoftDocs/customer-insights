@@ -15,7 +15,7 @@ ms.custom: bap-template
 
 [!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
-Behavioral interaction data from Customer Insights - Journeys, such as emails opened, links clicked, and forms submitted, is automatically available in Customer Insights - Data for use in segments and measures. This feature lets you combine unified customer profiles with real campaign engagement signals to build more precise audiences and scoring models.
+Behavioral interaction data from Customer Insights - Journeys, such as emails opened, links clicked, and forms submitted, is automatically available in Customer Insights - Data for use in segments and measures. You can combine unified customer profiles with real campaign engagement signals to build more precise audiences and scoring models.
 
 [Customer Insights - Journeys records a behavioral interaction](../journeys/real-time-marketing-redesigned-segment-builder.md) every time a customer engages with a marketing touchpoint - or fails to engage. The system captures these interactions across email, push notifications, text messages, forms, and events. Each interaction links to the contact or lead record that receives or triggers it.
 
@@ -78,10 +78,10 @@ Use the **Behavioral** tab in the segment builder to filter unified customer pro
 
    :::image type="content" source="media/journeys-interactions-behavioral-tab.png" alt-text="Screenshot of the Behavioral tab in the segment builder side panel, showing the full list of Customer Insights - Journeys interaction types including Email Opened, Email Sent, Form Submitted, and others.":::
 
-1. Select an interaction type to expand it and view its available fields or use the **Search** box at the top of the **Behavioral** tab to quickly find an interaction type or field by typing part of its name.
+1. Select an [interaction type](#available-interaction-types) to expand it and view its available fields or use the **Search** box at the top of the **Behavioral** tab to quickly find an interaction type or field by typing part of its name.
 
-  > [!NOTE]
-  > The search matches against the underlying field names, not the localized display names shown in the list. If you can't find an expected interaction type by its display name, try searching by a portion of its technical name, or select **Show display names** at the bottom of the panel to toggle between views.
+   > [!NOTE]
+   > The search matches against the underlying field names, not the localized display names shown in the list. If you can't find an expected interaction type by its display name, try searching by a portion of its technical name, or select **Show display names** at the bottom of the panel to toggle between views.
 
 1. Select a field or drag and drop it to add it to Rule 1.
 
@@ -117,15 +117,14 @@ Use the **Behavioral** tab in the measure builder to create calculated attribute
 
 1. Go to **Insights** > **Measures** and select **New** > **Build your own**.
 
-1. Select **Add dimension** or begin adding conditions in the measure canvas.
+1. Select **Add dimension** or begin adding conditions.
 
 1. In the side panel, select the **Behavioral** tab.
 
-1. Select an interaction type and field to use as the basis for your aggregation
+1. Select an [interaction type](#available-interaction-types) and field to use as the basis for your aggregation
    (for example, count of *Email Opened* events per customer).
 
-1. Configure aggregation type (count, sum, average, min, max) and optional filters
-   or time windows.
+1. Configure aggregation type (count, sum, average, min, max) and optional filters or time windows.
 
 1. Save and run the measure.
 
