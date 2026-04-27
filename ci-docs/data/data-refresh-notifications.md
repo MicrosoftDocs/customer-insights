@@ -13,7 +13,7 @@ ms.custom: bap-template
 
 # Data refresh notifications
 
-Data refresh notifications in Customer Insights - Data help environment admins identify permanent refresh failures without unnecessary alerts. This article explains what triggers a notification, how transient failures are suppressed, and how to respond when action is required.
+Data refresh notifications in Customer Insights - Data help admins identify permanent refresh failures without unnecessary alerts. Learn what triggers a notification, how transient failures are suppressed, and how to respond when action is required.
 
 ## Failure types
 
@@ -26,19 +26,19 @@ To reduce unnecessary alerts and avoid notifying admins for failures that resolv
 | **Failed (retrying)** | The task failed but is being automatically retried. The system expects to recover without admin action. | No |
 | **Failed (permanent)** | All retry attempts are exhausted, or the task timed out. Task timeouts always generate a notification. The failure or time out requires investigation. | Yes |
 
-You can see the current failure classification for any task in the [system status view](system.md#view-system-status). Tasks actively being retried show a **Failed (retrying)** status. Tasks that permanently failed show **Failed (permanent)**. For a full description of all task statuses, see [Status definitions](system.md#status-definitions).
+You can see the current failure classification for any task in the [system status view](system.md#view-system-status). For a full description of all task statuses, see [Status definitions](system.md#status-definitions).
 
 ## Email notifications
 
-The system sends email notifications to environment admins only when a permanent failure occurs. The following events can result in a permanent failure notification:
+The system sends email notifications to users with the **Admin** role in Customer Insights - Data. The notification is sent to the email address associated with the user's account when a permanent failure occurs.
+
+The following events can result in a permanent failure notification:
 
 | Notification type | Trigger |
 |---|---|
-| Refresh failure | A data source, unification, segment, measure, or export task permanently fails after all retries are exhausted |
-| Refresh failure | A task times out |
-| Refresh skipped | A downstream process is skipped because an upstream task permanently failed |
-
-Customer Insights - Data sends notifications to all users with the **Admin** role. The notification goes to the email address associated with each admin's account.
+| Refresh failure | A data source, unification, segment, measure, or export task permanently fails after all retries are exhausted. |
+| Refresh failure | A task times out. |
+| Refresh skipped | A downstream process is skipped because an upstream task permanently failed. |
 
 > [!TIP]
 > If you previously received frequent failure alerts for jobs that appeared healthy the next time you checked, those alerts likely indicated transient failures. This update automatically suppresses those alerts.
@@ -63,6 +63,6 @@ When you receive a permanent failure notification, it means the system exhausted
 
 ## Configure the refresh schedule
 
-Permanent failures that occur repeatedly during scheduled refreshes can indicate a persistent issue with a data source or configuration. To adjust when refreshes run or to reduce the frequency of overnight alerts, see [Schedule system refresh](schedule-refresh.md).
+Permanent failures that occur repeatedly during scheduled refreshes can indicate a persistent issue with a data source or configuration. Check the data source configuration and connectivity. To adjust when refreshes run or to reduce the frequency of overnight alerts, see [Schedule system refresh](schedule-refresh.md).
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
