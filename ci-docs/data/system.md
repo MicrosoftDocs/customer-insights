@@ -1,7 +1,7 @@
 ---
 title: "View system configuration"
 description: "Learn about system settings in Dynamics 365 Customer Insights - Data."
-ms.date: 12/08/2025
+ms.date: 04/27/2026
 ms.update-cycle: 180-days
 ms.topic: how-to
 author: Scott-Stabbert
@@ -67,7 +67,8 @@ The system uses the following statuses for tasks and processes:
 |Status  |Definition  |
 |---------|---------|
 |Canceled |Task or process was canceled by the user before it finished.   |
-|Failed   |Task or process ran into errors.         |
+|Failed (retrying)  |Task or process ran into errors, but is automatically retrying. The system expects to recover without admin action.  |
+|Failed (permanent) |Task or process timed out or all retry attempts are exhausted. The [failure requires investigation](data-refresh-notifications.md#respond-to-a-permanent-failure-notification). |
 |Failure  |Task or process has failed.  |
 |Not started   |Data source has no data ingested yet or the task is still in draft mode.         |
 |Processing  |Task or process is in progress.  |

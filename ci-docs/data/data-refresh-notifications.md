@@ -24,16 +24,13 @@ To reduce unnecessary alerts and avoid notifying admins for failures that resolv
 | Failure type | Description | Notification sent? |
 |---|---|---|
 | **Failed (retrying)** | The task failed but is being automatically retried. The system expects to recover without admin action. | No |
-| **Failed (permanent)** | All retry attempts are exhausted, or the task timed out. The failure requires investigation. | Yes |
-
-> [!NOTE]
-> Task timeouts are treated as permanent failures and always generate a notification.
+| **Failed (permanent)** | All retry attempts are exhausted, or the task timed out. Task timeouts always generate a notification. The failure or time out requires investigation. | Yes |
 
 You can see the current failure classification for any task in the [system status view](system.md#view-system-status). Tasks actively being retried show a **Failed (retrying)** status. Tasks that permanently failed show **Failed (permanent)**. For a full description of all task statuses, see [Status definitions](system.md#status-definitions).
 
 ## Email notifications
 
-Email notifications are sent to environment admins only when a **permanent failure** occurs. The following events can result in a permanent failure notification:
+The system sends email notifications to environment admins only when a permanent failure occurs. The following events can result in a permanent failure notification:
 
 | Notification type | Trigger |
 |---|---|
@@ -57,11 +54,10 @@ When you receive a permanent failure notification, it means the system exhausted
 1. Review the error details and identify the root cause.
 
 1. Take corrective action. For example:
-   - For a **data source** failure: check connectivity, credentials, and source availability. See [Manage data sources](data-sources-manage.md).
-   - For a **unification** failure: review your match and merge rules for configuration issues. See [Data unification overview](data-unification.md).
-   - For a **segment or measure** failure: check for broken references or data quality issues. See [Work with segments](segments.md) and
-     [Create and manage measures](measures.md).
-   - For an **export** failure: verify the export destination connection is valid. See [Export destinations overview](export-destinations.md).
+   - For a **data source** failure: check connectivity, credentials, and source availability. Learn more in [Manage data sources](data-sources-manage.md).
+   - For a **unification** failure: review your match and merge rules for configuration issues. Learn more in [Data unification overview](data-unification.md).
+   - For a **segment or measure** failure: check for broken references or data quality issues. Learn more in [Work with segments](segments.md) and [Create and manage measures](measures.md).
+   - For an **export** failure: verify the export destination connection is valid. Learn more in [Export destinations overview](export-destinations.md).
 
 1. After resolving the root cause, trigger a manual refresh or wait for the next scheduled refresh to confirm the issue is resolved.
 
