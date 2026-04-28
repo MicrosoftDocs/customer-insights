@@ -11,6 +11,8 @@ ms.custom: bap-template
 
 # Create business account or contact segments with segment builder
 
+[!INCLUDE [b2b-note]](../includes/b2b-note.md)
+
 Define complex filters around the unified customer or unified contact and its related tables. Each segment, after processing, creates a set of customer or contact records that you can export and take action on.
 
 In **business accounts**, if you [unified](../data-unification.md) both accounts and contacts, choose whether the segment is based on accounts or business contacts. To export to a destination expecting contact information, use a segment of contacts. To export to a destination expecting account information, use a segment of accounts.

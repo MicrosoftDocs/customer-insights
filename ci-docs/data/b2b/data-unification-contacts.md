@@ -11,7 +11,7 @@ ms.custom: bap-template
 
 # Create a unified business contact profile
 
-
+[!INCLUDE [b2b-note]](../includes/b2b-note.md)
 
 Contact unification allows contacts for unified accounts to be separately unified and associated with the accounts. Contact unification also allows contacts without an account to be included in the unified contact profile.
 

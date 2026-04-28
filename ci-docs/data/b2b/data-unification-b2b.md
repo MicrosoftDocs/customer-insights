@@ -15,6 +15,8 @@ ms.custom:
 
 For business accounts (B2B) where the data is centered around accounts, unification provides a unified view of your accounts. After unifying accounts you can optionally [unify contacts](data-unification-contacts.md) for those accounts and link the unified contacts to the unified accounts.
 
+[!INCLUDE [b2b-note]](../includes/b2b-note.md)
+
 ## Data unification process for B2B
 
 The unification process maps account data from your data sources, removes duplicates, matches the data across tables, and creates a unified profile.
