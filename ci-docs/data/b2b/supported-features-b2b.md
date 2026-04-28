@@ -1,7 +1,7 @@
 ---
 title: "Supported feature areas"
 description: "Learn about supported features for business accounts (B2B) in Dynamics 365 Customer Insights - Data" 
-ms.date: 04/27/2026
+ms.date: 04/28/2026
 ms.reviewer: v-wendysmith
 ms.topic: overview
 author: Scott-Stabbert
