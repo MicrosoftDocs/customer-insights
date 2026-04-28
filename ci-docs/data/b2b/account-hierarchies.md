@@ -13,7 +13,7 @@ ms.custom: bap-template
 
 [!INCLUDE [public-preview-banner](../includes/public-preview-banner.md)]
 
-[!INCLUDE [b2b-note]](../includes/b2b-note.md)
+[!INCLUDE [b2b-note](../includes/b2b-note.md)]
 
 Environments that are configured to use business accounts (B2B) as the primary target audience can configure account hierarchies for related business accounts. For example, a company that has separate business units.
 

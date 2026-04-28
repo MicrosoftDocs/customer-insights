@@ -13,7 +13,7 @@ ms.custom: bap-template
 
 [!INCLUDE [public-preview-banner](../includes/public-preview-banner.md)]
 
-[!INCLUDE [b2b-note]](../includes/b2b-note.md)
+[!INCLUDE [b2b-note](../includes/b2b-note.md)]
 
 Leadspace is a data science company that provides a B2B Customer Data Platform. It enables environments with unified customer profiles based on accounts to enrich their data. Enrich *Customer profiles* with attributes such as company size, location, or industry. Enrich *Contact profiles* with attributes such as title, persona, or email verification.
 
@@ -23,7 +23,7 @@ Leadspace is a data science company that provides a B2B Customer Data Platform. 
 
 - An active Leadspace license.
 - [Unified customer profiles](../customer-profiles.md) based on accounts.
-- A Leadspace [connection](../connections.md) is [configured](#configure-the-connection-for-leadspace) by an administrator. Contact [Leadspace](https://www.leadspace.com/leadspace-microsoft-dynamics-365/) directly for details about their product.
+- A Leadspace [connection](../connections.md) is [configured](#configure-the-connection-for-leadspace) by an administrator. Contact [Leadspace](https://www.leadspace.com) directly for details about their product.
 
 ## Configure the connection for Leadspace
 

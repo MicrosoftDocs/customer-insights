@@ -13,7 +13,7 @@ ms.custom: bap-template
 
 [!INCLUDE [public-preview-banner](../includes/public-preview-banner.md)]
 
-[!INCLUDE [b2b-note]](../includes/b2b-note.md)
+[!INCLUDE [b2b-note](../includes/b2b-note.md)]
 
 Dun & Bradstreet provides commercial data, analytics, and insights for businesses. It enables customers with unified customer profiles for companies to enrich their data. Enrichments include attributes such as DUNS number, company size, location, industry, and more.
 
@@ -21,7 +21,7 @@ Dun & Bradstreet provides commercial data, analytics, and insights for businesse
 
 ## Prerequisites
 
-- An active [Dun & Bradstreet](https://www.dnb.com/marketing/media/give-your-data-a-boost.html?source=microsoft_audience_insights) license.
+- An active [Dun & Bradstreet](https://www.dnb.com/?source=microsoft_audience_insights) license.
 - [Unified customer profiles](../customer-profiles.md) for companies.
 - A Dun & Bradstreet [project](#set-up-your-dun--bradstreet-project) is set up.
 - A Dun & Bradstreet [connection](../connections.md) is [configured](#configure-a-connection-for-dun--bradstreet) by an administrator.
