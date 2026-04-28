@@ -14,7 +14,7 @@ ms.custom: bap-template
 This article describes information specific to legacy B2B environments. For all other information related to Customer Insights - Data, see [Dynamics 365 Customer Insights - Data documentation](../index.yml).
 
 > [!NOTE]
-> This documentation is for previously created B2B environments. It isn't supported for new environments. B2B won't be updated with new features being added to the standard version of Customer Insights - Data.
+> This documentation is for customers previously onboarded to B2B environments. New customer requests for B2B mode aren't being accepted. B2B won't be updated with new features being added to the standard version of Customer Insights - Data.
 
 ## Supported features overview
 

@@ -1,7 +1,7 @@
 ---
 title: "Business accounts (B2B) and Customer Insights"
 description: "Learn about business accounts (B2B) in Dynamics 365 Customer Insights - Data" 
-ms.date: 02/06/2024
+ms.date: 04/28/2026
 ms.reviewer: v-wendysmith
 ms.topic: overview
 author: Scott-Stabbert
@@ -15,11 +15,10 @@ Dynamics 365 Customers Insights previously offered two distinct, standalone mode
 
 In September 2023, Customer Insights moved to a single mode with Customer Insights - Data that supports B2C functionality. Microsoft is improving Customer Insights - Data to provide functionality for both individual consumers and business accounts in a single environment that seamlessly integrates with Dynamics 365 account data.
 
-Meanwhile, current B2B customers can still use their existing B2B Customer Insights environment.
+Meanwhile, current B2B customers can still use their existing B2B Customer Insights environments.
 
-> [!NOTE]
-> This documentation is for previously created B2B environments. It isn't supported for new environments. The legacy B2B version won't be updated with new features being added to the standard version of Customer Insights - Data.
+[!INCLUDE [b2b-note](../includes/b2b-note.md)]
 
- For information on features supported for the legacy B2B environment, see [supported feature areas for B2B environments](supported-features-b2b.md).
+For information on features supported for legacy B2B customers, see [supported feature areas for B2B environments](supported-features-b2b.md).
 
 [!INCLUDE [footer-include](../includes/footer-banner.md)]
