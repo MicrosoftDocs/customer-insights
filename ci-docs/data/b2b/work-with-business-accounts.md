@@ -18,7 +18,7 @@ In September 2023, Customer Insights moved to a single mode with Customer Insigh
 Meanwhile, current B2B customers can still use their existing B2B Customer Insights environment.
 
 > [!NOTE]
-> This documentation is for previously-created B2B environments, it isn't supported for new enviornments.The legacy B2B version won't be updated with new features being added to the standard version of Customer Insights - Data.
+> This documentation is for previously created B2B environments. It isn't supported for new environments. The legacy B2B version won't be updated with new features being added to the standard version of Customer Insights - Data.
 
  For information on features supported for the legacy B2B environment, see [supported feature areas for B2B environments](supported-features-b2b.md).
 
