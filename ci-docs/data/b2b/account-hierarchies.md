@@ -13,6 +13,8 @@ ms.custom: bap-template
 
 [!INCLUDE [public-preview-banner](../includes/public-preview-banner.md)]
 
+[!INCLUDE [b2b-note](../includes/b2b-note.md)]
+
 Environments that are configured to use business accounts (B2B) as the primary target audience can configure account hierarchies for related business accounts. For example, a company that has separate business units.
 
 Organizations create account hierarchies to better manage accounts and their relationships with each other. The system supports parent-child account hierarchies that already exist in ingested customer data. For example, accounts from Dynamics 365 Sales.

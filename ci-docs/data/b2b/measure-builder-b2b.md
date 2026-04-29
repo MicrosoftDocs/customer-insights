@@ -11,7 +11,7 @@ ms.custom: bap-template
 
 # Create business account measures with measure builder
 
-
+[!INCLUDE [b2b-note](../includes/b2b-note.md)]
 
 Create measures on the level of individual accounts (customer measure) or on the level of all accounts (business measure).
 
