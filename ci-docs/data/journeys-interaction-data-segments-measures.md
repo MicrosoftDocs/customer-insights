@@ -17,7 +17,7 @@ ms.custom: bap-template
 
 Behavioral interaction data from Customer Insights - Journeys, such as emails opened, links clicked, and forms submitted, is automatically available in Customer Insights - Data for use in segments and measures. You can combine unified customer profiles with real campaign engagement signals to build more precise audiences and scoring models.
 
-[Customer Insights - Journeys records a behavioral interaction](../journeys/real-time-marketing-redesigned-segment-builder.md) every time a customer engages with a marketing touchpoint - or fails to engage. The system captures these interactions across email, push notifications, text messages, forms, and events. Each interaction links to the contact or lead record that receives or triggers it.
+[Customer Insights - Journeys records a behavioral interaction](../journeys/real-time-marketing-redesigned-segment-builder.md) every time a customer engages with a marketing touchpoint - or fails to engage. The system captures these interactions across email, push notifications, text messages, forms, and events. Each interaction links to the contact or lead record that receives or triggers it. The interaction data is stored in tables that you can view under **System** on the **Tables** page.
 
 [!INCLUDE [public-preview-note](includes/public-preview-note.md)]
 
@@ -28,7 +28,7 @@ Behavioral interaction data from Customer Insights - Journeys, such as emails op
 
 ## Available interaction types
 
-You can find Customer Insights - Journeys interaction data on the **Behavioral** tab in both the segment builder and the measure builder. The segment and measure builders only include interaction data linked to a unified **Customer Profile** in Customer Insights - Data. The builders don't include interactions associated with contacts or leads that aren't unified into a Customer Profile. To use contact- or lead-based interactions directly in journey branching and real-time targeting, use Customer Insights - Journeys.
+You can find Customer Insights - Journeys interaction data on the **Behavioral** tab in both the segment builder and the measure builder. The segment and measure builders only include interaction data linked to a unified **Customer Profile** in Customer Insights - Data. The builders don't include interactions associated with contacts or leads that aren't unified into a customer profile. To use contact- or lead-based interactions directly in journey branching and real-time targeting, use Customer Insights - Journeys.
 
 The following interaction types are available:
 
@@ -61,7 +61,7 @@ The following interaction types are available:
 - Form Submitted
 - Form Visited
 
-Each interaction type exposes fields you can use in conditions, such as Journey, Email, Email address, Email client, Timestamp, Profile ID, and Profile type. 
+Each interaction type exposes fields you can use in conditions, such as Journey, Email, Email address, Email client, Timestamp, Profile ID, and Profile type.
 
 > [!NOTE]
 > Interaction data refreshes on the Customer Insights - Data system refresh schedule, not in real time. Segments and measures that use interaction data reflect the state of interactions as of the last successful refresh.
@@ -104,6 +104,8 @@ To filter customers by the specific email they opened, add the **Email** field f
 
 1. Use the value dropdown in the rule condition to select the specific email campaign to match.
 
+   :::image type="content" source="media/journeys-scenario-email-choices.png" alt-text="Screenshot of the segment builder canvas showing Rule 1 with the condition 'EmailOpened: CustomerInsightsJourneysInteractions.Email is equal to', and the Email Opened interaction expanded in the side panel showing its available fields.":::
+
 ### Example scenarios
 
 - **Re-engagement:** Customers who received an email but didn't open it in the past 30 days - target them with a more compelling offer.
@@ -133,9 +135,10 @@ Use measures built on interaction data as attributes in segment conditions. This
 ## Limitations
 
 - **Batch only:** The system processes interaction data in batch with each system refresh. Segments and measures don't reflect interactions in real time. For real-time journey branching based on interactions, use Customer Insights - Journeys.
-- **Profile-linked interactions only:** You can only access interactions linked to a unified Customer Profile. Interactions on contacts or leads that aren't yet unified don't appear. See the note at the top of this article.
+- **Profile-linked interactions only:** You can only access interactions linked to a unified Customer Profile. Interactions on contacts or leads that aren't yet unified don't appear.
 - **Not surfaced in customer timeline:** Customer Insights - Journeys interaction data is intentionally not shown on the customer profile timeline in Customer Insights - Data. Use Customer Insights - Journeys contact insights for timeline views.
 - **Ingestion time:** Depending on the volume of interaction data, the initial ingestion of interaction tables can take 30 minutes to several hours for large environments.
+- **Segments and measures**: Customer Insight - Journeys behavioral interaction data is only available for use in segments and measures.
 
 ## Related information
 
