@@ -71,12 +71,24 @@ You can use a trigger as a data source for dynamic data for event details includ
 1. In the **Select Event/Event registration** dropdown, select **From other source**.
 1. In the **Choose an attribute** dropdown, select the data source to link to.
 
-
 > [!div class="mx-imgBorder"]
 > ![Screenshot of using trigger attributes to supply event details for a QR code in the event registration interface.](media/qr-code-trigger.png "Use trigger attributes for event details")
 
 Test your email by sending a preview to yourself or a colleague.
 
+### Troubleshooting QR Code Issues
+**QR Code Missing from Email**
+If the QR code is missing from the registration-confirmation email, it is often due to a missing Event Registration entity at the time the email is sent. To resolve this issue:
+
+- Ensure that the Event Registration for the given contact is present in the system. You can verify this in the "Registrations" section of Event Management.
+- Confirm that the email is sent after the Event Registration is created.
+
+**Missing Event Registration ID**
+If the Event Registration ID is missing or not generated, follow these steps:
+
+- If there are heavy customizations (such as a custom managed solution or an active layer on top of the event form or event registration form), remove the active layer. This often resolves the issue, as active layers can block updates from managed solutions.
+
+The QR code provides only a registration ID. Custom development is required to implement the necessary verification, check-in, and registration features. Consider developing a custom smartphone app for these purposes.
 Adding QR codes to event emails with triggered journeys and dynamic data makes event management more personal and efficient, especially during check-in.
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
