@@ -1,7 +1,7 @@
 ---
 title: Migrate Dynamics 365 Customer Insights - Journeys between tenants
 description: Discover how to set up your environment for a tenant-to-tenant migration to start the transfer process between tenants.
-ms.date: 02/19/2026
+ms.date: 04/29/2026
 ms.topic: upgrade-and-migration-article
 author: alfergus
 ms.author: alfergus
@@ -23,7 +23,7 @@ Migrating a Customer Insights - Journeys environment between tenants requires as
 
 ## Customer Insights - Journeys app status after migration
 
-Once the post migration steps are completed by our technical support team, you need to install the application by following the steps as mentioned in [Install and manage Customer Insights - Dynamics 365 Customer Insights](setup#install-customer-insights---journeys-and-customer-insights---data). 
+After our technical support team completes the post-migration steps, you need to install the application by following the steps mentioned in [Install and manage Customer Insights - Dynamics 365 Customer Insights](setup#install-customer-insights---journeys-and-customer-insights---data). 
 
 After tenant to tenant migration, the Customer Insights - Journeys environment will be in the following state:
 
