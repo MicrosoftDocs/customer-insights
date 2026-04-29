@@ -1425,11 +1425,6 @@ Public preview features include AI-powered milestone attribution analysis, multi
     - Access Lead-specific insights in Customer Insights - Journeys and tailor your marketing experiences according to your Leads’ behavior. Lead insights provide a holistic view of each Lead's interactions with your marketing activities. This includes access to journey engagement history, encompassing past email sends, opens, clicks, form submissions, and other relevant data.
     - [Docs](real-time-marketing-analytics.md)
 
-- **Surface the next best action to your sales team when a lead engages with Customer Insights - Journeys**
-    - As you nurture leads and opportunities with real-time journeys, the lead's signals might indicate an urgency to engage with your sales teams. With Dynamics 365 Customer Insights - Journeys, you can now create sales activities such as tasks and phone calls directly from journeys so that leads get individualized attention when they’re most likely to engage. You can also activate a sales sequence to accelerate a deal, ensuring that sellers receive automated recommendations based on the sales playbook associated with the campaign.
-    - [Release plan](/dynamics365/release-plan/2023wave1/marketing/dynamics365-marketing/optimize-lead-management-process-engaging-sellers-right-away)
-    - [Docs](real-time-marketing-optimize-lead-management.md)
-
 #### Public preview
 
 - **Easily discover and use content ideas Copilot to create highly engaging emails**
