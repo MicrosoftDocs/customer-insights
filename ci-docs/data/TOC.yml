@@ -315,7 +315,6 @@
         - name: Create segments based on predictions
           href: prediction-based-segment.md
 
-
     - name: Sample guides
       items:    
         - name: Sample guide for CLV prediction
@@ -328,6 +327,9 @@
           href: sample-guide-predict-product-recommendation.md
         - name: Experiments with Azure Machine learning
           href: azure-machine-learning-experiments.md
+
+- name: Monitor system performance
+  href: performance.md
 
 - name: Settings
   items:
