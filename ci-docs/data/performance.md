@@ -1,5 +1,5 @@
 ---
-title: Monitor system performance in Dynamics 365 Customer Insights
+title: Monitor system refresh performance in Dynamics 365 Customer Insights
 description: "Monitor system performance with the Performance dashboard to track refresh health, duration trends, and per-stage breakdowns. Optimize your Customer Insights - Data environment."
 ms.date: 04/30/2026
 ms.topic: how-to
@@ -11,9 +11,20 @@ ms.subservice: customer-insights-data
 ms.custom: bap-template
 ---
 
-# Monitor system performance
+# Monitor system refresh performance
 
-Monitor system performance using the **Performance** page, which provides a centralized view of your Customer Insights - Data environment's refresh health. Use it to quickly assess the overall system status, identify slow or failing pipeline stages, and review refresh history over time.
+Monitor system refresh performance by using the **Performance** page. This page provides a centralized view of your Customer Insights - Data environment's refresh health. Use it to quickly assess the overall system status, identify slow or failing pipeline stages, and review refresh history over time.
+
+Each stage represents the major pipeline stages that run as part of a system refresh:
+
+- Data sources
+- Unification
+- Enrichments
+- Segments
+- Measures
+- Models
+- Sync to Dataverse
+- Export destinations
 
 To open the Performance page, select **Performance** in the left navigation pane. The page contains the following sections:
 
@@ -27,34 +38,25 @@ To open the Performance page, select **Performance** in the left navigation pane
 
 ## Page header
 
-The page header at the top of the Performance page shows the time, outcome, and total duration of the most recent refresh. For example: *Last refresh: 4/23, 02:15 AM — Successful (44m 40s)*.
+The page header at the top of the page shows the time, outcome, and total duration of the most recent refresh. For example: *Last refresh: 4/23, 02:15 AM — Successful (44m 40s)*.
 
 ## Overall health summary
 
-The **Overall health** indicator summarizes the outcome of all tasks in the most recent refresh. It shows task counts for each status. For definitions of each status value, see [Status definitions](system.md#status-definitions).
+The **Overall health** bar summarizes the outcome of all tasks in the most recent refresh. It shows task counts for each status. For definitions of each status value, see [Status definitions](system.md#status-definitions).
 
-Below the health summary, a row of cards shows the task count and cumulative duration for each stage category in the most recent refresh. The stage categories represent the major pipeline stages that run as part of a system refresh:
-
-- Data sources
-- Unification
-- Enrichments
-- Segments
-- Measures
-- Models
-- Sync to Dataverse
-- Export destinations
+Below the health summary, each stage shows its task count, duration, and status from the most recent refresh.
 
 Select a stage to filter the task list on the **Overview** tab to that stage only.
 
 ## Overview tab
 
-The **Overview** tab is the default view and contains two panels: stage category cards and task list.
+The **Overview** tab is the default view and contains two panels: stage cards and task list.
 
 :::image type="content" source="media/performance-overview.png" alt-text="Screenshot of the Performance page Overview tab showing overall health, stage pills, stage summary cards, and the task list.":::
 
-### Stage category cards
+### Stage cards
 
-Each stage category has a card that shows:
+Each stage has a card that shows:
 
 - Stage name and overall status
 - Count of tasks broken down by status (for example, *2 Successful, 1 Completed with warnings*)
@@ -65,12 +67,7 @@ Select a card to open the detail view for that stage.
 
 ### Task list
 
-The task list shows all tasks across all stages for the most recent refresh.
-
-To filter the task list:
-
-- Select a status filter button (Successful, Skipped, Completed with warnings, Refreshing, Queued, Completed with errors, or Failed) to show only tasks with that status.
-- Type in the **Task** search box to filter by task name.
+The task list shows all tasks across all stages for the most recent refresh. To show only tasks for a specific status, select the status filter. Or use the **Task** search box to filter by task name.
 
 The list includes the following columns:
 
@@ -101,7 +98,7 @@ Each row represents one full system refresh and includes:
 | **Change** | Percentage change in duration compared to the previous refresh of the same scope |
 | **Changes** | Details of tasks that were added or removed from this refresh |
 
-Rows marked with a diamond icon indicate a **configuration change** where one or more tasks were added or removed in that refresh.
+Rows marked with a **configuration change** indicate that one or more tasks were added or removed in that refresh.
 
 You can:
 
