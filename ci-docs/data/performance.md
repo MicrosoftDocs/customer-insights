@@ -1,7 +1,7 @@
 ---
 title: Monitor system refresh performance in Dynamics 365 Customer Insights
 description: "Monitor system performance with the Performance dashboard to track refresh health, duration trends, and per-stage breakdowns. Optimize your Customer Insights - Data environment."
-ms.date: 04/30/2026
+ms.date: 05/01/2026
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
