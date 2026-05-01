@@ -15,17 +15,6 @@ ms.custom: bap-template
 
 Monitor system refresh performance by using the **Performance** page. This page provides a centralized view of your Customer Insights - Data environment's refresh health. Use it to quickly assess the overall system status, identify slow or failing pipeline stages, and review refresh history over time.
 
-Each stage represents the major pipeline stages that run as part of a system refresh:
-
-- Data sources
-- Unification
-- Enrichments
-- Segments
-- Measures
-- Models
-- Sync to Dataverse
-- Export destinations
-
 To open the Performance page, select **Performance** in the left navigation pane. The page contains the following sections:
 
 - [**Page header**](#page-header)
@@ -45,6 +34,17 @@ The page header at the top of the page shows the time, outcome, and total durati
 The **Overall health** bar summarizes the outcome of all tasks in the most recent refresh. It shows task counts for each status. For definitions of each status value, see [Status definitions](system.md#status-definitions).
 
 Below the health summary, each stage shows its task count, duration, and status from the most recent refresh.
+
+Each stage represents the major pipeline stages that run as part of a system refresh:
+
+- Data sources
+- Unification
+- Enrichments
+- Segments
+- Measures
+- Models
+- Sync to Dataverse
+- Export destinations
 
 Select a stage to filter the task list on the **Overview** tab to that stage only.
 
