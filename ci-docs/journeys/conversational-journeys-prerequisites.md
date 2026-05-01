@@ -37,4 +37,11 @@ To get started with Customer Insights - Journey, see [Get started with Customer 
 
 To get started with Contact Center, see [Use Copilot Service admin center](/dynamics365/contact-center/administer/cc-admin-center).
 
+## Communication channels
+
+Conversational journeys require communication channels such as voice or text messaging (SMS). You configure these channels in Contact Center using supported providers.
+> [!NOTE]
+> Although Customer Insights - Journeys supports a text messaging (SMS) channel, conversational journeys don't use that channel. Instead, they rely on the text messaging (SMS) channel configured in Contact Center.
+
+
 [!INCLUDE [footer-include](./includes/footer-banner.md)]

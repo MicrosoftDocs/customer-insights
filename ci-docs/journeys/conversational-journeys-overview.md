@@ -17,12 +17,17 @@ ms.custom:
 
 # Conversational journeys overview
 
-Conversational journeys combines Dynamics 365 Customer Insights - Journeys, Dynamics 365 Contact Center, and AI agents built with Copilot Studio to deliver customer experiences at scale. Set up proactive outreach for scenarios like a canceled flight or product recall, and automate transactional calls like confirming or scheduling a delivery. Conversational journeys help organizations reduce call volume and support costs, and customers get faster resolutions without chasing down answers.
+Conversational journeys combines Dynamics 365 Customer Insights - Journeys, Dynamics 365 Contact Center, and AI agents built with Copilot Studio to deliver natural language conversational experiences at scale. Set up proactive outreach for scenarios like a canceled flight or product recall, and automate transactional callscommunications like confirming or scheduling a delivery. Conversational journeys help organizations reduce call volume and support costs, and customers get faster resolutions without chasing down answers.
+
+Conversational journeys support the following channels:
+1. **Voice call** - A voice phone call is placed to the recipient. When the call is answered, an AI agent handles the conversation with the recipient.
+1. **Text messaging (SMS)** - An initial text message is sent to the recipient. When the recipient responds, an AI agent handles the conversation over the SMS channel.
+
 
 A typical conversational journeys solution has three parts:
 
-1. A customer journey tells the AI agent who to call, when to call, and how to process choices the customer makes during the call. Set up consent management and quiet times in Customer Insights - Journeys to contact customers according to their preferences and regulatory requirements.
-1. The AI agent converses with customers using natural language. Build this agent in Microsoft Copilot Studio.
+1. A customer journey that controls who to contact, when to contact, and how to process choices the customer makes during the conversation. Set up consent management and quiet times in Customer Insights - Journeys to contact customers according to their preferences and regulatory requirements.
+1. An AI agent who converses with customers using natural language. Build this agent in Microsoft Copilot Studio.
 1. Contact Center brings everything together. Set up customer service agent queues and phone numbers, and define behaviors like transferring a call to a human representative if the customer asks or if the AI agent can't handle the request.
 
 You can author the entire conversational journeys solution with no code, including designing the AI agent using natural language. This no code approach allows nontechnical business users to easily define customer experiences.

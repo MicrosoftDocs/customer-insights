@@ -35,9 +35,14 @@ A [segment](real-time-marketing-segments.md) is a defined group of customers tha
 
 A [trigger](real-time-marketing-trigger-based-journey.md) is an event or condition that starts or moves a customer through a journey. For example, a trigger can be a form submission, a product purchase, or a link click.
 
-## Conversational voice
+## Text Message conversation
 
-Conversational voice is a step in the customer journey that calls the customer using an AI agent or a customer service representative. This step needs integration with Contact Center, where both AI and human agents are managed.
+Text message conversation is a journey action (step) in the customer journey that engages customer in a conversation over Text messaging (SMS) channel using an AI agent or a customer service representative. This step needs integration with Contact Center that manages messaging channel and agents ( AI as well as human agents).
+
+
+## Voice conversation
+
+Voice conversation is a journey action (step) in the customer journey that calls the customer using an AI agent or a customer service representative. This step needs integration with Contact Center that manages telephony (voice) channel and agents ( AI as well as human agents).
 
 ## Proactive engagement
 

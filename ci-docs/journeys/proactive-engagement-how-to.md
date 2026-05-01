@@ -24,67 +24,101 @@ After you enable the feature, Customer Insights - Journeys automatically detects
 The integration with Contact Center lets you create conversational journeys by selecting a [proactive engagement](proactive-engagement-concepts.md#proactive-engagement) from Contact Center and designing your journey based on its outcomes.
 
 > [!IMPORTANT]
-> Conversational journeys work only with **contact-based** journeys.
+> Conversational journeys can only be **contact-based** journeys (i.e., you cannot use leads or customer profile as their audience).
 
-## Using the Voice conversation tile and branching on its outcomes
+Here is a short video that demonstrates how to create a conversational journey for text message (SMS) channel.
 
-To use the Voice conversation tile and branch on its outcomes:
+[!VIDEO 4dde461b-35a8-420b-8a02-90aff1001c7e]
 
-1. When creating a journey, add an action and choose **Voice conversation**.
+## Using the voice or text messaging (SMS) conversation step and branching on its outcomes
 
-    :::image type="content" source="media/voice-conversation-tile.png" alt-text="Add an action and choose voice conversation." lightbox="media/voice-conversation-tile.png":::
+To use the Voice or text conversation step and branch on its outcomes:
+
+1. When creating a journey, add an action and choose one of the available AI powered conversation actions.
+    :::image type="content" source="media\AI-Powered-Conversation-Steps.png" alt-text="Add an action and choose voice conversation." lightbox="media/voice-conversation-tile.png":::
 
 1. Choose a **Proactive engagement**.
 
-    :::image type="content" source="media/proactive-engagement-select.png" alt-text="2.	Choose a proactive engagement configuration." lightbox="media/proactive-engagement-select.png":::
-    
-1. After you select a proactive engagement, you must select:
-    - The **compliance profile** you want to use.
-    - The **Purpose**.
-    - The **Topic** (if applicable).
-    - A **Quiet time** option. You can always choose “Don’t apply quiet time to this message.”
+    | for Voice | for Text messaging (SMS) |
+    |---|---|
+    | :::image type="content" source="media/proactive-engagement-select.png" alt-text="Choose a proactive engagement configuration for voice." lightbox="media/proactive-engagement-select.png"::: | :::image type="content" source="media/proactive-engagement-select-for-sms.png" alt-text="Choose a proactive engagement configuration for text messaging." lightbox="media/proactive-engagement-select-for-sms.png"::: |
 
-    :::image type="content" source="media/voice-conversation-expanded.png" alt-text="Configure proactive engagement fields." lightbox="media/voice-conversation-expanded.png":::
+1. Configure the channel-specific settings:
 
-1. To branch based on your proactive engagement outcomes, add a **Wait for trigger** action and choose a branch condition type of **Previous message gets an interaction**.
+    | for Voice | for Text messaging (SMS) |
+    |---|---|
+    |    - Select the **compliance profile** you want to use. <BR>    - Select the **Purpose** (and the **Topic**, if applicable). <BR>    - Select a **Quiet time** option. You can always choose "Don't apply quiet time to this message."|    - Select an existing text message (or create a new one) used as the first messgae to initiate the conversation. <BR>    - There is no option to select **Compliance profile**, it is selected on the text message itself. <BR>    - Select a **Quiet time** option. You can always choose "Don't apply quiet time to this message." |
+    |     :::image type="content" source="media/voice-conversation-expanded.png" alt-text="Configure proactive engagement fields for Voice." lightbox="media/voice-conversation-expanded.png"::: |     :::image type="content" source="media/sms-conversation-expanded.png" alt-text="Configure proactive engagement fields for SMS." lightbox="media/sms-conversation-expanded.png"::: |
 
-    :::image type="content" source="media/previous-message-interaction.png" alt-text="Add a Wait for trigger action and choose a branch condition type." lightbox="media/previous-message-interaction.png":::
-    
-1. In the branches, you can choose the following triggers:
-    - **Voice call attempted**: Contact Center attempted to make the phone call to the contact. Be aware that a call attempted doesn't necessarily mean that the contact answered.
-    - **Voice call not attempted**: Contact Center didn't attempt to make a phone call.
-    - **Voice call blocked**: Customer Insights - Journeys blocked the call from being attempted and didn't send the request to Contact Center.
+
+1. Create branches to take action based on conversation outcomes. How to do this is described in detail in the next section. 
+
+Once done, you can publish your journey.
+
+## Taking action after a conversation
+
+A voice or text message (SMS) conversation can have many more nuanced outcomes/results than simple "Success" and "Failed". For example, a voice call may get a busy signal or a text message failed because the phone number was not that of a mobile. Then there are cases where the connection was established but conversation did not take place or was interrupted, or needed to be handed off to a human agent. You may need to check up to 3 different variables to understand what happened and take appropriate actions:
+
+- **Disposition codes** - These values are set by the service representative to classify the result of voice or SMS conversations they handled and are configured in Contact Center (see [Configure disposition codes](configure-disposition-codes.md)). 
+
+- **Result** - These are the outcomes returned by the Contact Center for a proactive engagement request. See [Outcomes for proactive engagement](https://learn.microsoft.com/dynamics365/contact-center/administer/proactive-engagement-outcomes) for list of values returned and their meaning. 
+
+- **Attributes** - These are data values set by the AI agent and are valid only for connected calls and SMS conversations where the AI agent has an active conversation. These attributes are configured in Contact Center (see [Send data back from AI agent to Dynamics 365 Contact Center](configure-agentS-for-ai-led-proactive-engagement.md#send-data-back-from-ai-agent-to-dynamics-365-contact-center)) 
+ 
+### Branching after a voice conversation
+
+1. Add a **Wait for trigger** action after the Voice conversation step and choose a branch condition type of **Previous message gets an nteraction**.<BR>    
+        :::image type="content" source="media/previous-message-interaction.png" alt-text="Add a Wait for trigger action and choose a branch condition type." lightbox="media/previous-message-interaction.png":::
+
+1. In the branches, you can choose one of the following triggers:
+
+    -  **Voice call attempted** - Contact Center attempted to establish a conversation. If the attempt failed, it was for a reason that is temporary in nature (e.g., reached an Answering machine) so a retry after sometime may succeed. 
+
+    - **Voice call not attempted** - Contact Center was unable to establish a conversation for reasons that are not likely to change (e.g., bad phone number) so a retry later will not help. Switching to a different channel (e.g., emails) should be considered.
+
+    - **Voice call blocked** - The journey did not send a request to Contact Center (e.g., we dont have consent to contact them or no allowed windows were available due to Quiet time settings. 
 
     :::image type="content" source="media/choose-triggers.png" alt-text="Choose a trigger." lightbox="media/choose-triggers.png":::
 
 1. Add an **Attribute branch** action and choose **Branch on** “A voice call is attempted.”
-
     :::image type="content" source="media/attribute-voice-call.png" alt-text="Add an attribute branch on 'A voice call is attempted.'" lightbox="media/attribute-voice-call.png":::
 
-1. In the attribute branches, choose which conditions you want to branch on. Within “Voice call attempted” you have default variables (**Disposition Codes** and **Result**) and variables based on how you set up your proactive engagement (for example, **Outcome**).
-
+1. In the attribute branches, choose which conditions you want to branch on. Within “Voice call attempted” you have default variables (**Disposition Codes** and **Result**) and variables based on ow you set up your proactive engagement (for example, **Outcome**).
     :::image type="content" source="media/conversational-voice-condition.png" alt-text="Choose conditions for the attribute branch." lightbox="media/conversational-voice-condition.png":::
 
-    Depending on your use case, you can choose any combination of these variables to design your branching logic.
-
+1. Depending on your use case, you can choose any combination of these variables to design your branching logic.
     :::image type="content" source="media/attribute-voice-call-combination.png" alt-text="Select variable as condition on voice call results for attribute branch." lightbox="media/attribute-voice-call-combination.png":::
 
-1. Once done, you can publish your journey.
+### Branching after a text message (SMS) conversation
 
-## Voice consent and compliance profiles
+Click on **create branches** link within the Text message conversation action. This will create the entire branching structure for you.
+    :::image type="content" source="media/previous-message-interaction-sms.png" alt-text="Add a Wait for trigger action and choose a branch condition type." lightbox="media/previous-message-interaction-sms.png":::
 
-In Customer Insights - Journeys, compliance profiles govern how you manage consent for outbound communications. Compliance profiles define the legal and regulatory framework for sending messages, like whether a message is transactional or promotional, and make sure you get and respect the right consent (opt-in or opt-out). When you set up a journey in Customer Insights - Journeys, select a compliance profile to link each message to a specific purpose and align with privacy laws.
+The branching structure is a 2-step branching (this is the same structure as described in the voice conversation section above). The first one checks if the conversation has a valid outcome or if it timed out. The conversation result path has an attribute condition step where you can setup additional branches based on specific conditions. Some examples incldue
 
-You can also use a compliance profile to ensure your voice communications follow legal standards and customer preferences. The compliance profile lets you add features like unsubscribe links, quiet time enforcement, and consent tracking. These features help you avoid legal risks and keep customer trust. This is especially important for high-volume outreach, like autonomous agents or marketing campaigns, where you need to manage consent at scale.
+- a branch where conversation completed successfully e.g., (Result = Conversation Closed)
+
+- a branch where conversation did not occur and a retry might help, e.g., (Result = Response Timeout)
+
+- a branch where conversation did not occur and a retry will likely not help (so one should switch to another communication channel or take other alternative actions), e.g., (Return code = Conversation Cancelled)
+
+Here is an example of specific branch conditions where the AI agent will set attribte "FavoriteColor" to what it determines the recipient's choice is after a conversation:
+    :::image type="content" source="media/conv-sms-branching.png" alt-text="Setting up branch condition after an SMS conversation." lightbox="media/conv-sms-branching.png":::
+
+## Consent and compliance profiles
+
+In Customer Insights - Journeys, compliance profiles govern how you manage consent for outbound communications. Voice conversation have separate compliance profile whereas Text message (SMS) conversation use the same profiles meant for normal Text messages (SMS). Compliance profiles define the legal and regulatory framework for sending messages, like whether a message is transactional or promotional, and make sure you get and respect the right consent (opt-in or opt-out). When you set up a journey in Customer Insights - Journeys, select a compliance profile to link each message to a specific purpose and align with privacy laws.
+
+You can also use a compliance profile to ensure your voice and text messaging (SMS) conversations follow legal requirements and customer preferences. The compliance profile lets you add features like unsubscribe links, quiet time enforcement, and consent tracking. These features help you avoid legal risks and keep customer trust. This is especially important for high-volume outreach, like autonomous agents or marketing campaigns, where you need to manage consent at scale.
 
 Learn more about consent management:
 
 - [Consent management overview - Understand compliance profiles, Purposes, and Topics](real-time-marketing-compliance-settings.md)
 - [Evaluate consent for voice channel](real-time-marketing-email-text-consent.md#how-consent-is-respected-for-voice-channel-by-default)
 
-## Quiet times and conversational voice
+## Quiet times settings
 
-In Customer Insights - Journeys, quiet times are configurable time windows during in which outbound communications are suppressed to respect customer preferences and legal constraints. These settings are important for voice calls because they help ensure compliance with regulations like the Telecommunication Consumer Protection Act (TCPA), which restricts when businesses can contact individuals based on their local time zones.
+In Customer Insights - Journeys, quiet times are configurable time windows during in which outbound communications are suppressed to respect customer preferences and legal constraints. These settings are even more important for voice calls because they help ensure compliance with regulations like the Telecommunication Consumer Protection Act (TCPA), that restricts when businesses can contact individuals based on their local time zones.
 
 Quiet times are useful because they prevent calls from being placed during inappropriate hours (for example, late at night or early morning), which could otherwise lead to customer dissatisfaction or legal penalties.
 
