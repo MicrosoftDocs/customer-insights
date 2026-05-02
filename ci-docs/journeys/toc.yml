@@ -600,6 +600,10 @@
       href: designer-feature-protection.md
     - name: Use the versions page to enable outbound marketing
       href: versions.md
+  - name: AI administration
+    items:
+    - name: Manage prerequisites in AI Hub (preview)
+      href: ai-hub-prerequisites.md
   - name: Journeys
     items:
     - name: Move triggers between environments
