@@ -67,9 +67,8 @@ The system uses the following statuses for tasks and processes:
 |Status  |Definition  |
 |---------|---------|
 |Canceled |Task or process was canceled by the user before it finished.   |
-|Failed (retrying)  |Task or process ran into errors, but is automatically retrying. The system expects to recover without admin action.  |
 |Failed (permanent) |Task or process timed out or all retry attempts are exhausted. The [failure requires investigation](data-refresh-notifications.md#respond-to-a-permanent-failure-notification). |
-|Failure  |Task or process has failed.  |
+|Failure  |Task or process has failed. The task or process might be transient or permanent. Attempt to recover occurs. If the task or process is permanent, the additional status of **Failed (permanent)** is applied to indicate that the failure requires investigation. |
 |Not started   |Data source has no data ingested yet or the task is still in draft mode.         |
 |Processing  |Task or process is in progress.  |
 |Refreshing    |Task or process is in progress. To cancel this operation, select **Refreshing** and **Cancel job**. Stopping the refresh of a task or process reverts it to its last refresh state.       |
