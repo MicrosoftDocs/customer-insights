@@ -1,7 +1,7 @@
 ---
 title: Use Customer Insights - Journeys interaction data in segments and measures (preview)
 description: Learn how to use Customer Insights - Journeys behavioral interaction data—such as email opens and link clicks—in Customer Insights - Data segments and measures.
-ms.date: 04/27/2026
+ms.date: 05/04/2026
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -17,7 +17,7 @@ ms.custom: bap-template
 
 Behavioral interaction data from Customer Insights - Journeys, such as emails opened, links clicked, and forms submitted, is automatically available in Customer Insights - Data for use in segments and measures. You can combine unified customer profiles with real campaign engagement signals to build more precise audiences and scoring models.
 
-[Customer Insights - Journeys records a behavioral interaction](../journeys/real-time-marketing-redesigned-segment-builder.md) every time a customer engages with a marketing touchpoint - or fails to engage. The system captures these interactions across email, push notifications, text messages, forms, and events. Each interaction links to the contact or lead record that receives or triggers it. The interaction data is stored in tables that you can view under **System** on the **Tables** page.
+[Customer Insights - Journeys records a behavioral interaction](../journeys/real-time-marketing-redesigned-segment-builder.md) every time a customer engages with a marketing touchpoint - or fails to engage. The system captures these interactions across email, push notifications, text messages, forms, and events. Each interaction links to the contact or lead record that receives or triggers it. The interaction data is stored in tables that you can view under **System** on the **Tables** page. Only tables with data are shown.
 
 [!INCLUDE [public-preview-note](includes/public-preview-note.md)]
 
@@ -100,8 +100,6 @@ To filter customers by the specific email they opened, add the **Email** field f
    The condition is added to Rule 1 on the canvas as
    `EmailOpened : CustomerInsightsJourneysInteractions.Email is equal to`.
 
-   :::image type="content" source="media/journeys-scenario-email-added-to-rule.png" alt-text="Screenshot of the segment builder canvas showing Rule 1 with the condition 'EmailOpened: CustomerInsightsJourneysInteractions.Email is equal to', and the Email Opened interaction expanded in the side panel showing its available fields.":::
-
 1. Use the value dropdown in the rule condition to select the specific email campaign to match.
 
    :::image type="content" source="media/journeys-scenario-email-choices.png" alt-text="Screenshot of the segment builder canvas showing Rule 1 with the condition 'EmailOpened: CustomerInsightsJourneysInteractions.Email is equal to', and the Email Opened interaction expanded in the side panel showing its available fields.":::
@@ -123,8 +121,7 @@ Use the **Behavioral** tab in the measure builder to create calculated attribute
 
 1. In the side panel, select the **Behavioral** tab.
 
-1. Select an [interaction type](#available-interaction-types) and field to use as the basis for your aggregation
-   (for example, count of *Email Opened* events per customer).
+1. Select an [interaction type](#available-interaction-types) and field to use as the basis for your aggregation (for example, count of *Email Opened* events per customer).
 
 1. Configure aggregation type (count, sum, average, min, max) and optional filters or time windows.
 
@@ -140,7 +137,7 @@ Use measures built on interaction data as attributes in segment conditions. This
 - **Ingestion time:** Depending on the volume of interaction data, the initial ingestion of interaction tables can take 30 minutes to several hours for large environments.
 - **Segments and measures**: Customer Insight - Journeys behavioral interaction data is only available for use in segments and measures.
 
-## Related information
+## Related content
 
 - [Create and manage segments](segments.md)
 - [Create and manage measures](measures.md)
