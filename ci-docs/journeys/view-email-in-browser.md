@@ -20,6 +20,7 @@ View in browser is a general setting that is disabled by default.
 
 > [!NOTE]
 > View in browser links are only functional when you send emails to your **contacts**, **leads**, or **Customer Insights - Data Profiles** through journeys.
+> View in browser functionality doesn't apply on previously sent emails.
 
 ## Enable view in browser
 
