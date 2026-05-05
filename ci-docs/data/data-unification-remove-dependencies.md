@@ -9,10 +9,6 @@ ms.reviewer: v-wendysmith
 ms.custom: bap-template
 ---
 
-<!-- Line 113 says to select "Select tables and columns," but the image shows it as "Select tables and fields." Which is correct? --> 
-
-
-
 # Remove unified fields, unified tables, and dependencies
 
 To protect your downstream processes that use the unified customer profile, Customer Insights - Data blocks removing fields that are in use. You can only remove a field after you remove downstream dependencies. When you remove all fields from a table, you can then remove the table. Remove dependencies in the reverse order they were created.
@@ -94,7 +90,7 @@ When you update the **Unify** configuration in Dynamics 365 Customer Insights - 
 
 1. Select **Edit** on the **Customer data** tile.
 
-1. Select **Select tables and columns** and clear the checkbox next to each occurrence of the field.
+1. Select **Select tables and fields** and clear the checkbox next to each occurrence of the field.
 
    :::image type="content" source="media/m3_remove_attribute2.png" alt-text="Screenshot of Select tables and columns dialog box showing cleared checkboxes":::
 
@@ -110,7 +106,7 @@ Tables can be removed from unification after you [remove all the fields from the
 
 1. Go to **Data** > **Unify** and select **Edit** on the **Customer data** tile.
 
-1. Select **Select tables and columns** and clear the checkbox next to the table.
+1. Select **Select tables and fields** and clear the checkbox next to the table.
 
    :::image type="content" source="media/m3_remove_table3.png" alt-text="Screenshot of Select tables and columns dialog box with table checkbox cleared":::
 
