@@ -91,6 +91,16 @@ When you add an image element to your content or need to [link to a file or vide
 > [!IMPORTANT]
 > The copilot assistant smart recommendation feature is currently in preview.
 
+# Troubleshooting 
+If you encounter the following error message: "Error occurred when processing image. Reason: Create image record for solution-aware entity failed for objectid ..."
+
+This error is expected and occurs because unmanaged customizations are blocked. To resolve it, please follow:
+- Navigate to Power Platform.
+- Select the environment experiencing the issue.
+- Go to Settings.
+- Click Features.
+- Disable the Block unmanaged customizations option.
+
 ### See also
 
 [Link to documents stored in the asset library](/dynamics365/marketing/real-time-marketing-email#link-to-documents-and-videos-stored-in-the-asset-library)

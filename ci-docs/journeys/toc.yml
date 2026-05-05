@@ -544,7 +544,7 @@
     href: developer/extend-consent.md
   - name: Create an event portal on your website using the web application
     href: developer/event-portal-web-application.md
-  - name: Set up payment gateway integration (preview)
+  - name: Set up payment gateway integration
     href: developer/payment-gateway-integration.md
   - name: Use binding IDs to correlate across triggers
     href: real-time-marketing-correlate-triggers.md
