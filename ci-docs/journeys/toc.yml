@@ -600,10 +600,6 @@
       href: designer-feature-protection.md
     - name: Use the versions page to enable outbound marketing
       href: versions.md
-  - name: AI administration
-    items:
-    - name: Manage prerequisites in AI Hub (preview)
-      href: ai-hub-prerequisites.md
   - name: Journeys
     items:
     - name: Move triggers between environments
@@ -710,12 +706,18 @@
     href: troubleshoot-marketing-solution-health.md
   - name: General FAQ
     href: troubleshoot-faq.md
-- name: Copilot and AI capabilities in Customer Insights
+- name: Copilot and AI agents in Customer Insights
   items:
   - name: Overview
     href: copilot-overview.md
   - name: Give consent to use Copilot in Customer Insights - Journeys
     href: copilot-consent-journeys.md  
+  - name: AI agents
+    items:
+    - name: Access Dynamics 365 AI Hub
+      href: ai-hub.md
+    - name: Prerequisites for using AI agents
+      href: ai-hub-prerequisites.md
   - name: Use Copilot's form fill assistance feature in Customer Insights - Journeys
     href: form-fill-assistance.md
   - name: Find data in a view with AI (preview)

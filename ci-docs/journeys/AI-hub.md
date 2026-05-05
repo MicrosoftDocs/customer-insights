@@ -1,10 +1,12 @@
 ---
 title: Introduction to AI Hub in Customer Insights – Journeys (preview)
-description: Learn about agent capabilities in Customer Insights - Journeys and how to enable agent use in your environment.
+description: AI Hub in Customer Insights – Journeys centralizes AI agent management. Learn how to enable, configure, and govern agents in your environment today.
 ms.date: 05/01/2026
 ms.topic: how-to
+ms.collection: bap-ai-copilot
 author: terezakirk
 ms.author: alfergus
+ms.reviewer: alfergus
 search.audienceType: 
   - admin
 ---

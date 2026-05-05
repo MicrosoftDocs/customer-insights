@@ -1,10 +1,12 @@
 ---
 title: Manage prerequisites in AI Hub (preview)
-description: Learn how to review and accept mandatory prerequisites to use AI agents in Customer Insights - Journeys.
+description: Manage AI Hub prerequisites in Customer Insights – Journeys to enable AI agents. Learn how to review and accept required settings in Power Platform Admin Center.
 ms.date: 05/01/2026
 ms.topic: how-to
+ms.collection: bap-ai-copilot
 author: terezakirk
 ms.author: alfergus
+ms.reviewer: alfergus
 search.audienceType: 
   - admin
 ---
