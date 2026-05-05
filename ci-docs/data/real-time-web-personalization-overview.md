@@ -9,6 +9,8 @@ ms.reviewer: v-wendysmith
 ms.custom: bap-template
 ---
 
+<!-- I reversed the title in line 26 so it matches the content that follows - first unknown, then known. -->
+
 # Web tracking and personalization overview (preview)
 
 [!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
