@@ -16,13 +16,13 @@ To protect your downstream processes that use the unified customer profile, Cust
 
 1. In Dataverse, remove Dataverse dependencies on the field, such as a form that displays the field you wish to remove. Save your changes.
 
-1. In Customer Insights - Data, remove dependencies on the unified field such as any segments, measures or other insights that use the field you wish to remove. Save your changes.
+1. In Customer Insights - Data, remove dependencies on the unified field such as any segments, measures or other insights that use the field you want to remove. Save your changes.
 
-1. On the Unified data view step, exclude the field.  If you are removing an entire table, exclude all fields from the table. Save your changes.
+1. On the Unified data view step, exclude the field. If you are removing an entire table, exclude all fields from the table. Save your changes.
 
-1. On the Duplicate rules step, remove any deduplication rules that use the field(s). If you are removing an entire table, removal all deduplication rules for the table. Save your changes.
+1. On the Duplicate rules step, remove any deduplication rules that use the fields. If you are removing an entire table, remove all deduplication rules for the table. Save your changes.
 
-1. On the Matching conditions step, remove the field(s) from any rules. If you are removing an entire table, select the table and click Delete.
+1. On the Matching conditions step, remove the fields from any rules. If you are removing an entire table, select the table and then select **Delete**.
 
 ## Remove dependencies blocking unification
 
@@ -36,7 +36,7 @@ To identify specific dependencies, exclude a single field in the data unificatio
 
 1. Select **Done** to confirm and then select **Save and close**.
 
-   If there are any dependencies, one of the following errors appears.
+   If there are any dependencies, one of the following errors appears:
 
    - `Detected DataVerse dependencies in msdynci_customerprofile entity on these attribute(s): \<attribute names\>. Please delete these dependencies and merge again.` This message indicates there is a Dataverse dependency. Go to [Remove a Dataverse dependency](#remove-a-dataverse-dependency).
    - `The specified resource cannot be modified or deleted due to downstream dependency(s). To proceed, remove its usage from the following, in the order specified: {Segment, Measure, Export, or Insight name}.` This message indicates a Customer Insights - Data dependency. Remove the field from use in the specified feature.
