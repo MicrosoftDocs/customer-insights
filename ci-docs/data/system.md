@@ -1,7 +1,7 @@
 ---
 title: "View system configuration"
 description: "Learn about system settings in Dynamics 365 Customer Insights - Data."
-ms.date: 12/08/2025
+ms.date: 04/27/2026
 ms.update-cycle: 180-days
 ms.topic: how-to
 author: Scott-Stabbert
@@ -67,8 +67,8 @@ The system uses the following statuses for tasks and processes:
 |Status  |Definition  |
 |---------|---------|
 |Canceled |Task or process was canceled by the user before it finished.   |
-|Failed   |Task or process ran into errors.         |
-|Failure  |Task or process has failed.  |
+|Failed (permanent) |Task or process timed out or all retry attempts are exhausted. The [failure requires investigation](data-refresh-notifications.md#respond-to-a-permanent-failure-notification). |
+|Failure  |Task or process has failed. The task or process might be transient or permanent. Attempt to recover occurs. If the task or process is permanent, the additional status of **Failed (permanent)** is applied to indicate that the failure requires investigation. |
 |Not started   |Data source has no data ingested yet or the task is still in draft mode.         |
 |Processing  |Task or process is in progress.  |
 |Refreshing    |Task or process is in progress. To cancel this operation, select **Refreshing** and **Cancel job**. Stopping the refresh of a task or process reverts it to its last refresh state.       |
@@ -135,31 +135,7 @@ Use the summary to help you determine if your environment is running normally or
 
 [!INCLUDE [copilot-availability](includes/copilot-availability.md)]
 
-## Data refresh email notifications
-
-Customer Insights - Data sends email alerts when data refresh jobs encounter issues. Understanding these notifications helps you respond appropriately.
-
-### What triggers a refresh notification
-
-The following table lists what triggers a refresh notification in Customer Insights - Data:
-
-| Notification type | Trigger |
-|-------------------|---------|
-| Refresh failure | A data source, unification, segment, measure, or export refresh fails |
-| Refresh skipped | A downstream process is skipped because an upstream dependency failed |
-
-### Who receives notifications
-
-Refresh failure notifications are sent to users with the **Admin** role in Customer Insights - Data. The notification is sent to the email address associated with the user's account.
-
-### Manage notifications
-
-To configure refresh alert recipients or suppress non-critical alerts, contact your environment admin. Currently, notification recipients are determined by the Admin role assignment.
-
-> [!TIP]
-> If you receive frequent refresh failure alerts for a specific data source, check the data source configuration and connectivity. Resolving the root cause prevents repeated alerts.
-
-### Next steps
+## Next steps
 
 - [Responsible AI FAQs for the Environment status summary](faqs-environment-status.md)
 - [Responsible AI FAQs for Customer Insights - Data](responsible-ai-overview.md)
