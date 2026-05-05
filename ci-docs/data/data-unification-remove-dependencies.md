@@ -8,6 +8,11 @@ ms.author: sstabbert
 ms.reviewer: v-wendysmith
 ms.custom: bap-template
 ---
+
+<!-- Line 113 says to select "Select tables and columns," but the image shows it as "Select tables and fields." Which is correct? --> 
+
+
+
 # Remove unified fields, unified tables, and dependencies
 
 To protect your downstream processes that use the unified customer profile, Customer Insights - Data blocks removing fields that are in use. You can only remove a field after you remove downstream dependencies. When you remove all fields from a table, you can then remove the table. Remove dependencies in the reverse order they were created.
