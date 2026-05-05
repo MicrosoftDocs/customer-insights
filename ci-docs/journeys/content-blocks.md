@@ -138,4 +138,9 @@ When you delete a static content block, emails that use it aren't affected becau
 
 When you delete a dynamic content block, it's also removed from all emails that use it. A confirmation message tells you how many emails are affected and identifies them. 
 
+## Limitations
+
+- Links included in a dynamic content block can’t be used for branching in journeys (this limitation does not apply to static content blocks).
+
+  
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
