@@ -17,11 +17,11 @@ The agent uses *aggregated* historical interaction patterns to calculate a basel
 
 ## What the Outreach Optimization Agent does
 
-- **Analyzes aggregated engagement patterns.** It accesses your organization's historical interaction data— such as when past emails were opened or clicked — to identify general patterns of peak engagement across your audience.
-- **Determines an optimal send time.** Based on those patterns, the agent selects the time (or times, for multi-email sequences) when your audience is most likely to engage with your messages.
-- **Falls back gracefully for new environments.** If historical engagement data is not yet available (for example, for a first-time user), the agent uses a generic fallback strategy so your emails are still sent at a reasonable time.
-- **Honors quiet-time settings.** The agent respects your organization's configured quiet times. Even if historical data suggests a high-engagement window outside permitted hours (for example, late at night), the agent will not schedule emails during quiet-time periods.
-- **Honors contact point consent.** The agent respects the communication preferences set for each contact or lead. If a contact has opted out of email communication on a specific address, no email is sent to that address.
+- **Analyzes aggregated engagement patterns**: It accesses your organization's historical interaction data— such as when past emails were opened or clicked — to identify general patterns of peak engagement across your audience.
+- **Determines an optimal send time**: Based on those patterns, the agent selects the time (or times, for multi-email sequences) when your audience is most likely to engage with your messages.
+- **Falls back gracefully for new environments**: If historical engagement data is not yet available (for example, for a first-time user), the agent uses a generic fallback strategy so your emails are still sent at a reasonable time.
+- **Honors quiet-time settings**: The agent respects your organization's configured quiet times. Even if historical data suggests a high-engagement window outside permitted hours (for example, late at night), the agent will not schedule emails during quiet-time periods.
+- **Honors contact point consent**: The agent respects the communication preferences set for each contact or lead. If a contact has opted out of email communication on a specific address, no email is sent to that address.
 
 ## Key benefits
 
@@ -36,7 +36,7 @@ The agent uses *aggregated* historical interaction patterns to calculate a basel
 
 To be able to use Outreach Optimization Agent in journeys, you have to:
 
-- Enable Outreach Optimization Agent via AI Hub
+- Enable Outreach Optimization Agent in the [AI Hub](ai-hub.md).
 
 ## Using the Outreach Optimization Agent in a journey
 
@@ -66,11 +66,9 @@ If the goal is met before all emails have been sent, the agent continues to send
 
 When using multiple emails, choose one of three goal criteria:
 
-- **All emails are sent.** The goal is met when the agent has delivered every email in the sequence. Use this when your objective is to ensure each contact receives all planned touchpoints, regardless of interaction. *Example:* A 3-email educational series where the journey should continue only after all 3 emails have been delivered.
-
-- **Any link in any email is clicked.** The goal is met as soon as the contact clicks **any link** in **any of the emails** in the sequence. This treats any click as a positive engagement signal. *Example:* You send up to 4 reminder emails. If the contact clicks a link in the second email, the goal is recorded as achieved at that point. The remaining emails are still sent, and the contact proceeds with a **Goal met** status after the sequence completes.
-
-- **Selected links are clicked.** The goal is met when the contact clicks one of the **specific links you designate** across the emails. This lets you target a particular call-to-action rather than any link. *Example:* Your email contains a "Register Now" button. You set that link as the goal trigger. If the contact clicks "Register Now", the goal is achieved.
+- **All emails are sent**: The goal is met when the agent has delivered every email in the sequence. Use this when your objective is to ensure each contact receives all planned touchpoints, regardless of interaction. *Example:* A 3-email educational series where the journey should continue only after all 3 emails have been delivered.
+- **Any link in any email is clicked**: The goal is met as soon as the contact clicks **any link** in **any of the emails** in the sequence. This treats any click as a positive engagement signal. *Example:* You send up to 4 reminder emails. If the contact clicks a link in the second email, the goal is recorded as achieved at that point. The remaining emails are still sent, and the contact proceeds with a **Goal met** status after the sequence completes.
+- **Selected links are clicked**: The goal is met when the contact clicks one of the **specific links you designate** across the emails. This lets you target a particular call-to-action rather than any link. *Example:* Your email contains a "Register Now" button. You set that link as the goal trigger. If the contact clicks "Register Now", the goal is achieved.
 
 After the full sequence completes, the journey can branch on the **Goal met** or **Goal not met** outcome. If the goal was not met by the end date (for example, no link was clicked before the specified cutoff), the agent outputs **Goal not met**, and the contact proceeds to the next journey step.
 
