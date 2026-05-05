@@ -1,7 +1,7 @@
 ---
 title: Reference copies of sent emails in the interaction timeline
 description: Learn how to view previously sent emails in Dynamics 365 Customer Insights - Journeys.
-ms.date: 10/31/2024
+ms.date: 05/05/2026
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
@@ -14,6 +14,9 @@ search.audienceType:
 # Reference copies of sent emails in the interaction timeline
 
 You can view an exact copy of sent emails on your contact and lead interaction timelines to deepen your customer understanding and have visibility into what's been previously shared with your customers. Email copies are available for one year on the interaction timeline.
+
+> [!IMPORTANT]
+> Viewing emails on the interaction timeline applies to emails sent *after* enabling the feature in the feature switches area. It doesn't apply to emails sent before enabling the feature. 
 
 ## Enable viewing emails on the interaction timeline
 
