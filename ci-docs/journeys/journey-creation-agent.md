@@ -13,7 +13,7 @@ ms.reviewer: alfergus
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]  
 
-Journey Creation Agent is an AI-powered assistant in Dynamics 365 Customer Insights - Journeys that lets you build customer journey structures through natural language conversation. Instead of manually configuring each step, you describe your marketing goal in plain language, and the agent builds the journey flow, timing, and branching logic for you.
+Journey Creation Agent is an AI-powered assistant in Dynamics 365 Customer Insights - Journeys that lets you build customer journey structures through natural language conversation. Instead of manually configuring each step, you describe your marketing goal in plain language, and the agent scaffolds the journey flow, timing, and branching logic for you.
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note.md)]
 
@@ -59,17 +59,17 @@ Journey Creation Agent connects with other Dynamics 365 applications. You can de
 
 ## Prerequisites
 
-Before you use Journey Creation Agent, make sure you have:
+Before you use Journey Creation Agent, make sure you:
 
-- Enable Journey Creation Agent via **AI Hub**
+- Enable Journey Creation Agent using the [AI Hub](ai-hub.md).
 
-> [!NOTE]
-> Journey Creation Agent leverages Anthropic’s models. Please ensure your tenant is opted in via the Microsoft 365 admin center and Microsoft Power Platform admin center (PPAC) to allow Anthropic to be used. [Anthropic as a subprocessor for Microsoft Online Services | Microsoft Learn](https://learn.microsoft.com/en-us/microsoft-365/copilot/connect-to-ai-subprocessor)
+    > [!NOTE]
+    > Journey Creation Agent leverages Anthropic’s models. Please ensure your tenant is opted in via the Microsoft 365 admin center and Microsoft Power Platform Admin Center to allow Anthropic to be used. [Anthropic as a subprocessor for Microsoft Online Services](/microsoft-365/copilot/connect-to-ai-subprocessor).
 
-- **Permissions**: Marketing Manager or Marketing Professional role, or equivalent permissions to create and publish journeys
+- **Set up permissions**: Marketing Manager or Marketing Professional role, or equivalent permissions to create and publish journeys.
 
-> [!TIP]
-> The agent assembles journeys from your existing assets. Having your content ready before starting the conversation makes the experience faster and more productive. You can also build the journey structure first and assign content afterward on the journey canvas.
+    > [!TIP]
+    > The agent assembles journeys from your existing assets. Having your content ready before starting the conversation makes the experience faster and more productive. You can also build the journey structure first and assign content afterward on the journey canvas.
 
 ## Integration with other features
 
@@ -130,8 +130,6 @@ After you provide the necessary details, the agent presents a proposed journey. 
 - **Branching logic**: If/then conditions based on contact behavior, such as email opens or link clicks
 - **Entry and exit conditions**: How contacts enter and leave the journey
 
-![Screenshot of the Journey Creation Agent panel showing a proposed journey with a step-by-step outline and content assignments](Image)
-
 Review each section of the proposal in the agent panel. If any part does not match your intent, use follow-up messages to refine it before opening the canvas.
 
 ### Refine the journey through conversation
@@ -154,7 +152,7 @@ Continue refining until the proposed structure matches your requirements.
 
 When the proposed structure looks right, select **Review and refine** in the agent panel. The journey opens on the standard journey canvas with all proposed steps, conditions, and content assignments populated.
 
-You can modify any part of the agent-generated journey using the standard [journey designer](https://learn.microsoft.com/en-us/dynamics365/customer-insights/journeys/journeys-overview):
+You can modify any part of the agent-generated journey using the standard [journey designer](journeys-overview.md):
 
 - **Add a step**: Select the plus sign (**+**) between any two steps on the canvas.
 - **Remove a step**: Select the step, then select **Delete** in the step settings pane.
@@ -165,7 +163,7 @@ When the journey structure is correct you can publish the journey as you usually
 
 ## Troubleshoot Journey Creation Agent
 
-### Journey Creation Agent option is not available
+### Journey Creation Agent option isn't available
 
 The **Journey Creation Agent (preview)** option does not appear when you select **New journey**.
 
@@ -193,7 +191,7 @@ The generated journey uses a segment or trigger that doesn't match what you desc
 - The agent may have matched a similarly named asset in your environment. Review the entry settings and replace the segment or trigger with the correct one.
 - If no matching asset exists for what you described, the agent may fall back to an empty action for you to refine.
 
-### The proposed journey does not match my description
+### The proposed journey doesn't match my description
 
 The agent's proposal includes steps, channels, or timing that do not reflect what you described. The agent generates a journey, but some steps or channels you mentioned in your prompt are absent.
 
@@ -203,7 +201,7 @@ The agent's proposal includes steps, channels, or timing that do not reflect wha
 - Use follow-up messages in the agent conversation panel to correct specific elements. Be explicit about what needs to change.
 - Add the missing steps manually using the journey designer. Select the plus sign (**+**) at the right position on the canvas and configure the step.
 
-If the proposal continues to diverge significantly from your intent, try starting a new conversation with a more detailed initial description. Using / to select the right message, segment etc will also improve the journey proposed.
+If the proposal continues to diverge significantly from your intent, try starting a new conversation with a more detailed initial description. Using **/** to select the right message or segment also improves the journey proposed.
 
 ### The agent conversation is unresponsive or produces an error
 
@@ -222,3 +220,5 @@ If the issue persists, contact Microsoft Support with details about the error me
 - [Customer Insights - Journeys overview](real-time-marketing-overview.md)
 - [Edit a live journey](real-time-marketing-edit-journey.md)
 - [Journey analytics](real-time-marketing-analytics.md)
+
+[!INCLUDE [footer-include](./includes/footer-banner.md)]
