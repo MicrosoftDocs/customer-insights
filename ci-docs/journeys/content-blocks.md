@@ -1,10 +1,11 @@
 ---
 title: Create content blocks that you can reuse in multiple designs
-description: How to create reusable content blocks and use them in your email designs in Dynamics 365 Customer Insights - Journeys.
-ms.date: 04/06/2026
+description: Reusable content blocks in Dynamics 365 Customer Insights - Journeys help you save time and ensure consistency across emails. Learn how to create and use them today.
+ms.date: 05/05/2026
 ms.topic: how-to
-author: alfergus
+author: vinayd-msft
 ms.author: alfergus
+ms.reviewer: alfergus
 search.audienceType: 
   - admin
   - customizer
@@ -128,14 +129,18 @@ Updating a static content block doesn't update emails that already use it. Check
 > [!IMPORTANT]
 > When you update a dynamic content block, all emails that use it are updated. If any of those emails are used in a live journey, the updated content is sent after the content block is published as *Ready to send*. If the journey is actively sending to a large audience, different recipients might receive different versions of the email.
 
-When finalizing updates to the content block, you can update the existing content block or save it as a new content block. Saving as a new content block doesn't change the existing content block. 
+When finalizing updates to the content block, you can update the existing content block or save it as a new content block. Saving as a new content block doesn't change the existing content block.
 
-## Deleting a content block 
+## Deleting a content block
 
-Content blocks can only be deleted from the **Assets** > **Content blocks** area. 
+Content blocks can only be deleted from the **Assets** > **Content blocks** area.
 
-When you delete a static content block, emails that use it aren't affected because each email contains its own copy of the content block. 
+When you delete a static content block, emails that use it aren't affected because each email contains its own copy of the content block.
 
-When you delete a dynamic content block, it's also removed from all emails that use it. A confirmation message tells you how many emails are affected and identifies them. 
+When you delete a dynamic content block, it's also removed from all emails that use it. A confirmation message tells you how many emails are affected and identifies them.
+
+## Limitations
+
+- Links included in dynamic content blocks can’t be used for branching in journeys. This limitation doesn't apply to static content blocks.
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
