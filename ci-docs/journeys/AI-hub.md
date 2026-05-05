@@ -63,7 +63,7 @@ After all mandatory prerequisites are accepted, individual agents can be enabled
 
 ### Set up the Journey Creation Agent
 
-The Journey Creation Agent translates user intent into a fully configured customer journey. Based on a described goal (for example, re-engagement, service notification, or event promotion), the agent generates the journey structure, including triggers, messaging steps, and flow logic. This reduces the need for manual configuration and enables users to create journeys without requiring detailed knowledge of journey design or technical setup. Learn more: (link to JCA article)
+The Journey Creation Agent translates user intent into a fully configured customer journey. Based on a described goal (for example, re-engagement, service notification, or event promotion), the agent generates the journey structure, including triggers, messaging steps, and flow logic. This reduces the need for manual configuration and enables users to create journeys without requiring detailed knowledge of journey design or technical setup. Learn more: [Journey Creation Agent in Customer Insights - Journeys](journey-creation-agent.md).
 
 Steps to set up the Journey Creation Agent:
 
@@ -78,7 +78,7 @@ Once enabled, the Journey Creation Agent is available in the selected environmen
 
 ### Set up the Outreach Optimization Agent
 
-The Outreach Optimization Agent improves how and when messages are delivered to customers. It analyzes engagement history and real-time signals to adjust message timing, frequency, and follow-up behavior. Instead of relying on fixed schedules, the agent dynamically determines optimal send times and cadence, helping ensure that outreach is delivered when customers are more likely to engage. Learn more: (Link to OOA article)
+The Outreach Optimization Agent improves how and when messages are delivered to customers. It analyzes engagement history and real-time signals to adjust message timing, frequency, and follow-up behavior. Instead of relying on fixed schedules, the agent dynamically determines optimal send times and cadence, helping ensure that outreach is delivered when customers are more likely to engage. Learn more: [Outreach Optimization Agent in Customer Insights - Journeys](outreach-optimization-agent.md).
 
 Steps to set up the Outreach Optimization Agent:
 
