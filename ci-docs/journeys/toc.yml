@@ -748,6 +748,8 @@
     href: faqs-image-smart-recommendation.md  
   - name: Responsible AI FAQs for the journey copilot
     href: faqs-journey-copilot.md  
+  - name: Responsible AI FAQs for Journey Creation Agent
+    href: faqs-journey-creation-agent.md
   - name: Responsible AI FAQs for the segment copilot
     href: faqs-segment-copilot.md
 - name: Resources

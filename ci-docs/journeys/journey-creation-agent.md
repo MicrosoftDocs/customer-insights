@@ -118,7 +118,7 @@ The agent may ask follow-up questions to make the journey structure more accurat
 Select your answers from the options provided, or type a response in natural language.
 
 > [!TIP]
-> If you refresh the page while on this experience.
+> Refreshing the page while on the creation experience discards the current proposal. If the proposal was already transferred to the journey builder by selecting **Review and refine**, your work is preserved.
 
 ### Review the proposed journey structure
 
@@ -172,6 +172,7 @@ The **Journey Creation Agent (preview)** option does not appear when you select 
 - **Feature not enabled**: Your administrator may need to enable Journey Creation Agent in your environment. Contact your administrator and ask them to verify that the feature is turned on in **AI Hub**.
 - **Insufficient permissions**: You need Marketing Manager or Marketing Professional role, or equivalent permissions that include journey creation rights. Contact your administrator to verify your role assignment.
 - **Unsupported region**: The Journey Creation Agent may not be available in all regions at release. Check the [Dynamics 365 Customer Insights - Journeys feature availability by region](real-time-marketing-feature-availability.md) article for current availability.
+- **Sign-in window blocked**: Your browser is preventing the sign-in window from opening. To continue, allow pop-ups from this site. Then, refresh the page or select **Try again**.
 
 ### The agent does not recognize my segment, trigger or content assets
 
