@@ -31,7 +31,7 @@ The page header at the top of the page shows the time, outcome, and total durati
 
 ## Overall health summary
 
-The **Overall health** bar summarizes the outcome of all tasks in the most recent refresh. It shows task counts for each status. For definitions of each status value, see [Status definitions](system.md#status-definitions).
+The **Overall health** bar summarizes the outcome of all tasks in the most recent refresh. It shows task counts for each status. For definitions of each status value, go to [Status definitions](system.md#status-definitions).
 
 Below the health summary, each stage shows its task count, duration, and status from the most recent refresh.
 
@@ -58,10 +58,10 @@ The **Overview** tab is the default view and contains two panels: stage cards an
 
 Each stage has a card that shows:
 
-- Stage name and overall status
-- Count of tasks broken down by status (for example, *2 Successful, 1 Completed with warnings*)
-- A proportional progress bar
-- Total duration for the stage
+- Stage name and overall status.
+- Count of tasks broken down by status (for example, *2 Successful, 1 Completed with warnings*).
+- A proportional progress bar.
+- Total duration for the stage.
 
 Select a card to open the detail view for that stage.
 
@@ -73,10 +73,10 @@ The list includes the following columns:
 
 | Column | Description |
 |---|---|
-| **Task** | Task name and pipeline stage in parentheses |
+| **Task** | Task name and pipeline stage in parentheses. |
 | **Status** | Outcome of the most recent run. See [Status definitions](system.md#status-definitions). |
-| **Duration** | How long the task took to complete |
-| **Last updated** | Date and time the task last ran |
+| **Duration** | How long the task took to complete. |
+| **Last updated** | Date and time the task last ran. |
 
 Select a task row to view its detail, including logs and error information.
 
