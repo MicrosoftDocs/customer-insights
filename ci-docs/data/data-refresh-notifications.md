@@ -17,16 +17,16 @@ Data refresh notifications in Customer Insights - Data help admins identify perm
 
 ## Failure types
 
-When a refresh task fails, Customer Insights - Data automatically attempts to recover by retrying the failed step. Not every failure requires admin intervention - many failures are transient. The system detects a recoverable condition and retries successfully without any action on your part.
+When a refresh task fails, Customer Insights - Data automatically attempts to recover by retrying the failed step. Not every failure requires admin intervention—many failures are transient. The system detects a recoverable condition and retries successfully without any action on your part.
 
 To reduce unnecessary alerts and avoid notifying admins for failures that resolve automatically, Customer Insights - Data classifies every failure as one of two types:
 
 | Failure type | Description | Notification sent? |
 |---|---|---|
 | **Failed (retrying)** | The task failed but is being automatically retried. The system expects to recover without admin action. | No |
-| **Failed (permanent)** | All retry attempts are exhausted, or the task timed out. Task timeouts always generate a notification. The failure or time out requires investigation. | Yes |
+| **Failed (permanent)** | All retry attempts are exhausted, or the task timed out. Task timeouts always generate a notification. The failure or timeout requires investigation. | Yes |
 
-You can see the current failure classification for any task in the [system status view](system.md#view-system-status). For a full description of all task statuses, see [Status definitions](system.md#status-definitions).
+You can see the current failure classification for any task in the [system status view](system.md#view-system-status). For a full description of all task statuses, go to [Status definitions](system.md#status-definitions).
 
 ## Email notifications
 
