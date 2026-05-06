@@ -121,6 +121,6 @@ Each expanded refresh row shows a bar chart of how the total duration was distri
 - [Schedule system refresh](schedule-refresh.md)
 - [Manage data sources](data-sources-manage.md)
 - [Data unification overview](data-unification.md)
-- [Work with segments](segments.md)
+- [Manage segments](segments.md)
 - [Create and manage measures](measures.md)
-- [Export destinations overview](export-destinations.md)
+- [Exports overview](export-destinations.md)
