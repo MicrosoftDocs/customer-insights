@@ -9,11 +9,13 @@ ms.reviewer: v-wendysmith
 ms.custom: bap-template
 ---
 
+<!-- I reversed the title in line 26 so it matches the content that follows - first unknown, then known. -->
+
 # Web tracking and personalization overview (preview)
 
 [!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
-Real-time web tracking and personalization in Customer Insights - Data captures and leverages website activity for both known and anonymous visitors.
+Real-time web tracking and personalization in Customer Insights - Data captures and leverages website activity both for known and anonymous visitors.
 
 Watch this brief video to learn more about real-time web personalization.
 
@@ -21,7 +23,7 @@ Watch this brief video to learn more about real-time web personalization.
 
 [!INCLUDE [public-preview-note](includes/public-preview-note.md)]
 
-## Known and unknown customers
+## Unknown and known customers
 
 **Anonymous customers**
 
@@ -31,7 +33,7 @@ Anonymous customer tracking lets you:
 
 - Track the activities of anonymous users over time to understand their interests, such as the pages viewed and elements clicked.
 
-- Personalize your web site content when the customer returns based on their interests.
+- Personalize your website content when the customer returns based on their interests.
 
 **Known customers**
 
@@ -43,7 +45,7 @@ Converting an unknown customer to a known customer lets you:
 
 - Combine unknown profiles and activity data from a person visiting from multiple machines into a single known customer profile.
 
-- Unify customer data from your web site with your other sources of customer data such as sales and support, giving you unprecedented ability to understand customer needs and how they interact with your brand.
+- Unify customer data from your website with your other sources of customer data such as sales and support, giving you unprecedented ability to understand customer needs and how they interact with your brand.
 
 > [!TIP]
 > [Request access to the preview version](https://forms.office.com/r/TJEE62xTD3) of the real-time personalization features.
@@ -51,6 +53,7 @@ Converting an unknown customer to a known customer lets you:
 ## Customer tracking
 
 Customer Insights - Data uses cookies to recognize returning visitors and enrich profiles over time. Cookie IDs use a rolling one-year expiration that refreshes with each visit. When a customer authenticates on your site, Customer Insights - Data merges the anonymous and known profiles in real time.
+
 For example, a retail store has a customer named Abbie in Customer Insights - Data who registered in person. When Abbie first visits your website, Customer Insights - Data creates an anonymous profile and tracks her web interactions. After Abbie authenticates, the profiles merge automatically. After the merge:
 
 - The known profile gets all the unknown profile's web interactions and appears on the known profile timeline.
