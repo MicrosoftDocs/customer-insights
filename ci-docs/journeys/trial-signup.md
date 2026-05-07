@@ -52,7 +52,7 @@ Your trial environment includes many of the same features as the paid version. T
 
 - [Create a marketing email and go live](create-marketing-email.md)
 - [Target the right customers using the query assist copilot](real-time-marketing-natural-language-segments.md)
-- [Use Copilot to create journeys by describing them in their own words](real-time-marketing-use-copilot-create-journey.md)
+- [Journey Creation Agent in Customer Insights - Journeys](journey-creation-agent.md)
 - [Create forms](real-time-marketing-form-create.md)
 - [Send a targeted email blast](real-time-marketing-email-get-started.md)
 

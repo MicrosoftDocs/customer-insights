@@ -44,7 +44,7 @@ You can build the journey while the content is in the **Draft** state. To publis
 
 :::image type="content" source="media/segment-journey-allow-individuals.png" alt-text="Create a segment-based journey." lightbox="media/segment-journey-allow-individuals.png":::
 
-To create a segment-based journey, go to **Engagement** > **Journeys** and select **+New journey** in the top toolbar. A window opens allowing you to use [Copilot to create a journey](real-time-marketing-use-copilot-create-journey.md). To create a segment-based journey manually, select the **Skip and create from blank** button.
+To create a segment-based journey, go to **Engagement** > **Journeys** and select **+New journey** in the top toolbar.
 
 On the "Create a new journey" screen:
 
