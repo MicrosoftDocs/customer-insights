@@ -1,10 +1,10 @@
 ---
 title: Create conversational journeys
 description: Conversational journeys in Dynamics 365 Customer Insights let you design voice call experiences using Contact Center integration. Learn how to set up and branch journeys.
-ms.date: 05/29/2025
+ms.date: 05/07/2026
 ms.topic: article
-author: colinbirkett
-ms.author: colinbirkett
+author: vinayd-msft
+ms.author: alfergus
 search.audienceType:
   - admin
   - customizer
@@ -24,32 +24,31 @@ After you enable the feature, Customer Insights - Journeys automatically detects
 The integration with Contact Center lets you create conversational journeys by selecting a [proactive engagement](proactive-engagement-concepts.md#proactive-engagement) from Contact Center and designing your journey based on its outcomes.
 
 > [!IMPORTANT]
-> Conversational journeys can only be **contact-based** journeys (i.e., you cannot use leads or customer profile as their audience).
+> Conversational journeys can only be **contact-based** journeys. You can't use leads or customer profiles as a conversational journeys audience.
 
-Here is a short video that demonstrates how to create a conversational journey for text message (SMS) channel.
+Here's a short video that demonstrates how to create a conversational journey for the text message (SMS) channel.
 
-[!VIDEO 4dde461b-35a8-420b-8a02-90aff1001c7e]
+[!VIDEO https://learn-video.azurefd.net/vod/player?id=4dde461b-35a8-420b-8a02-90aff1001c7e]
 
-## Using the voice or text messaging (SMS) conversation step and branching on its outcomes
+## Use the voice or text messaging (SMS) conversation step and branch on its outcomes
 
-To use the Voice or text conversation step and branch on its outcomes:
+To use the voice or text conversation step and branch on its outcomes:
 
 1. When creating a journey, add an action and choose one of the available AI powered conversation actions.
-    :::image type="content" source="media\AI-Powered-Conversation-Steps.png" alt-text="Add an action and choose voice conversation." lightbox="media/voice-conversation-tile.png":::
+    :::image type="content" source="media\ai-powered-conversation-steps.png" alt-text="Add an action and choose voice conversation." lightbox="media/ai-powered-conversation-steps.png":::
 
 1. Choose a **Proactive engagement**.
 
-    | for Voice | for Text messaging (SMS) |
+    | For voice | For text messaging (SMS) |
     |---|---|
     | :::image type="content" source="media/proactive-engagement-select.png" alt-text="Choose a proactive engagement configuration for voice." lightbox="media/proactive-engagement-select.png"::: | :::image type="content" source="media/proactive-engagement-select-for-sms.png" alt-text="Choose a proactive engagement configuration for text messaging." lightbox="media/proactive-engagement-select-for-sms.png"::: |
 
 1. Configure the channel-specific settings:
 
-    | for Voice | for Text messaging (SMS) |
+    | For voice | for Text messaging (SMS) |
     |---|---|
     |    - Select the **compliance profile** you want to use. <BR>    - Select the **Purpose** (and the **Topic**, if applicable). <BR>    - Select a **Quiet time** option. You can always choose "Don't apply quiet time to this message."|    - Select an existing text message (or create a new one) used as the first messgae to initiate the conversation. <BR>    - There is no option to select **Compliance profile**, it is selected on the text message itself. <BR>    - Select a **Quiet time** option. You can always choose "Don't apply quiet time to this message." |
-    |     :::image type="content" source="media/voice-conversation-expanded.png" alt-text="Configure proactive engagement fields for Voice." lightbox="media/voice-conversation-expanded.png"::: |     :::image type="content" source="media/sms-conversation-expanded.png" alt-text="Configure proactive engagement fields for SMS." lightbox="media/sms-conversation-expanded.png"::: |
-
+    |     :::image type="content" source="media/voice-conversation-expanded.png" alt-text="Configure proactive engagement fields for voice." lightbox="media/voice-conversation-expanded.png"::: |     :::image type="content" source="media/sms-conversation-expanded.png" alt-text="Configure proactive engagement fields for SMS." lightbox="media/sms-conversation-expanded.png"::: |
 
 1. Create branches to take action based on conversation outcomes. How to do this is described in detail in the next section. 
 
@@ -59,15 +58,15 @@ Once done, you can publish your journey.
 
 A voice or text message (SMS) conversation can have many more nuanced outcomes/results than simple "Success" and "Failed". For example, a voice call may get a busy signal or a text message failed because the phone number was not that of a mobile. Then there are cases where the connection was established but conversation did not take place or was interrupted, or needed to be handed off to a human agent. You may need to check up to 3 different variables to understand what happened and take appropriate actions:
 
-- **Disposition codes** - These values are set by the service representative to classify the result of voice or SMS conversations they handled and are configured in Contact Center (see [Configure disposition codes](configure-disposition-codes.md)). 
+- **Disposition codes** - These values are set by the service representative to classify the result of voice or SMS conversations they handled and are configured in Contact Center (see [Configure disposition codes](configure-disposition-codes.md)).
 
 - **Result** - These are the outcomes returned by the Contact Center for a proactive engagement request. See [Outcomes for proactive engagement](https://learn.microsoft.com/dynamics365/contact-center/administer/proactive-engagement-outcomes) for list of values returned and their meaning. 
 
-- **Attributes** - These are data values set by the AI agent and are valid only for connected calls and SMS conversations where the AI agent has an active conversation. These attributes are configured in Contact Center (see [Send data back from AI agent to Dynamics 365 Contact Center](configure-agentS-for-ai-led-proactive-engagement.md#send-data-back-from-ai-agent-to-dynamics-365-contact-center)) 
+- **Attributes** - These are data values set by the AI agent and are valid only for connected calls and SMS conversations where the AI agent has an active conversation. These attributes are configured in Contact Center (see [Send data back from AI agent to Dynamics 365 Contact Center](configure-agentS-for-ai-led-proactive-engagement.md#send-data-back-from-ai-agent-to-dynamics-365-contact-center))
  
 ### Branching after a voice conversation
 
-1. Add a **Wait for trigger** action after the Voice conversation step and choose a branch condition type of **Previous message gets an nteraction**.<BR>    
+1. Add a **Wait for trigger** action after the voice conversation step and choose a branch condition type of **Previous message gets an nteraction**.<BR>    
         :::image type="content" source="media/previous-message-interaction.png" alt-text="Add a Wait for trigger action and choose a branch condition type." lightbox="media/previous-message-interaction.png":::
 
 1. In the branches, you can choose one of the following triggers:
@@ -94,16 +93,15 @@ A voice or text message (SMS) conversation can have many more nuanced outcomes/r
 Click on **create branches** link within the Text message conversation action. This will create the entire branching structure for you.
     :::image type="content" source="media/previous-message-interaction-sms.png" alt-text="Add a Wait for trigger action and choose a branch condition type." lightbox="media/previous-message-interaction-sms.png":::
 
-The branching structure is a 2-step branching (this is the same structure as described in the voice conversation section above). The first one checks if the conversation has a valid outcome or if it timed out. The conversation result path has an attribute condition step where you can setup additional branches based on specific conditions. Some examples incldue
+The branching structure is a 2-step branching (this is the same structure as described in the voice conversation section above). The first one checks if the conversation has a valid outcome or if it timed out. The conversation result path has an attribute condition step where you can setup additional branches based on specific conditions. Some examples include:
 
-- a branch where conversation completed successfully e.g., (Result = Conversation Closed)
+- A branch where conversation completed successfully, for example, (Result = Conversation Closed).
+- A branch where conversation didn't occur and a retry might help, for example, (Result = Response Timeout).
+- A branch where conversation did not occur and a retry will likely not help (so one should switch to another communication channel or take other alternative actions), for example, (Return code = Conversation Cancelled).
 
-- a branch where conversation did not occur and a retry might help, e.g., (Result = Response Timeout)
+Here's an example of specific branch conditions where the AI agent will set attribute "FavoriteColor" to what it determines the recipient's choice is after a conversation:
 
-- a branch where conversation did not occur and a retry will likely not help (so one should switch to another communication channel or take other alternative actions), e.g., (Return code = Conversation Cancelled)
-
-Here is an example of specific branch conditions where the AI agent will set attribte "FavoriteColor" to what it determines the recipient's choice is after a conversation:
-    :::image type="content" source="media/conv-sms-branching.png" alt-text="Setting up branch condition after an SMS conversation." lightbox="media/conv-sms-branching.png":::
+:::image type="content" source="media/conversational-text-branching.png" alt-text="Setting up branch condition after an SMS conversation." lightbox="media/conversational-text-branching.png":::
 
 ## Consent and compliance profiles
 
