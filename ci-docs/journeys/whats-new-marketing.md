@@ -61,8 +61,24 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 	- Dynamics 365 Customer Insights now notifies you as your organization approaches its paid consumption quotas. You can also view detailed consumption information in **Settings** > **Overview** > **Quota limits**, making it easier to monitor usage, understand trends, and plan as your usage grows.
 	- [Docs](quota-management.md)
 
+- **Create lead records from journey update**
+    - When creating a lead record from the new [Create record action](create-records-activities.md) in journeys, standard fields are now pre-populated.
+    - [Docs](create-records-activities.md#add-optional-fields)
+
 - **Test send with multiple conditional content variations**
 	- Test send now lets you select up to 10 conditional content variations and send a test email for each in a single action. This makes it easy to validate that every variation of your email renders correctly before launching your campaign, without repeating the test for each email.
+
+- **Segment expiration window extended to 120 days**
+    - Last month, we began changing the state of segments that had been unused for more than 30 days to a new “Expired” state. We’ve now extended that automatic expiration window to 120 days. Expired segments can be republished to put them back in a "Ready to use” state for use in journeys and other segments.
+
+- **Improved formatting for segment query viewer**
+    - The query viewer in the segment designer has been updated with improved formatting, making it easier to read and understand the query structure.
+
+- **Drag and drop attributes and conditions for faster segment editing**
+    - Build segments even faster with new drag and drop segment editing capabilities. You can drag in attributes, interactions, and segments from the right panel directly onto the design canvas to add them to existing groups or create new ones. You can also drag and drop groups and conditions within the canvas to quickly reorder elements.
+
+- **Audit history tab is now available for segments**
+    - When auditing is enabled for segments, an “Audit history” tab is now available to make it easier to view past changes to the segment definition.
 
 ### April 2026 update
 
