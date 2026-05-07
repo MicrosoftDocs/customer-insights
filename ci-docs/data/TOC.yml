@@ -328,7 +328,7 @@
         - name: Experiments with Azure Machine learning
           href: azure-machine-learning-experiments.md
 
-- name: Monitor system performance
+- name: Monitor system refresh performance
   href: performance.md
 
 - name: Settings
