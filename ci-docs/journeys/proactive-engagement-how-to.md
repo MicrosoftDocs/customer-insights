@@ -58,24 +58,21 @@ Once done, you can publish your journey.
 
 A voice or text message (SMS) conversation can have many more nuanced outcomes/results than simple "Success" and "Failed". For example, a voice call may get a busy signal or a text message failed because the phone number was not that of a mobile. Then there are cases where the connection was established but conversation did not take place or was interrupted, or needed to be handed off to a human agent. You may need to check up to 3 different variables to understand what happened and take appropriate actions:
 
-- **Disposition codes** - These values are set by the service representative to classify the result of voice or SMS conversations they handled and are configured in Contact Center (see [Configure disposition codes](configure-disposition-codes.md)).
+- **Disposition codes**: These values are set by the service representative to classify the result of voice or SMS conversations they handled and are configured in Contact Center (see [Configure disposition codes](/dynamics365/contact-center/administer/configure-disposition-codes)).
+- **Result**: These are the outcomes returned by the Contact Center for a proactive engagement request. See [Outcomes for proactive engagement](/dynamics365/contact-center/administer/proactive-engagement-outcomes) for list of values returned and their meaning. 
+- **Attributes**: These are data values set by the AI agent and are valid only for connected calls and SMS conversations where the AI agent has an active conversation. These attributes are configured in Contact Center (see [Send data back from AI agent to Dynamics 365 Contact Center](/dynamics365/contact-center/administer/configure-agentS-for-ai-led-proactive-engagement#send-data-back-from-ai-agent-to-dynamics-365-contact-center))
 
-- **Result** - These are the outcomes returned by the Contact Center for a proactive engagement request. See [Outcomes for proactive engagement](https://learn.microsoft.com/dynamics365/contact-center/administer/proactive-engagement-outcomes) for list of values returned and their meaning. 
-
-- **Attributes** - These are data values set by the AI agent and are valid only for connected calls and SMS conversations where the AI agent has an active conversation. These attributes are configured in Contact Center (see [Send data back from AI agent to Dynamics 365 Contact Center](configure-agentS-for-ai-led-proactive-engagement.md#send-data-back-from-ai-agent-to-dynamics-365-contact-center))
- 
 ### Branching after a voice conversation
 
-1. Add a **Wait for trigger** action after the voice conversation step and choose a branch condition type of **Previous message gets an nteraction**.<BR>    
-        :::image type="content" source="media/previous-message-interaction.png" alt-text="Add a Wait for trigger action and choose a branch condition type." lightbox="media/previous-message-interaction.png":::
+1. Add a **Wait for trigger** action after the voice conversation step and choose the **Previous message gets an interaction** branch condition type.
+
+        :::image type="content" source="media/previous-message-interaction.png" alt-text="Screenshot of setting the previous message gets an interaction condition type." lightbox="media/previous-message-interaction.png":::
 
 1. In the branches, you can choose one of the following triggers:
 
-    -  **Voice call attempted** - Contact Center attempted to establish a conversation. If the attempt failed, it was for a reason that is temporary in nature (e.g., reached an Answering machine) so a retry after sometime may succeed. 
-
-    - **Voice call not attempted** - Contact Center was unable to establish a conversation for reasons that are not likely to change (e.g., bad phone number) so a retry later will not help. Switching to a different channel (e.g., emails) should be considered.
-
-    - **Voice call blocked** - The journey did not send a request to Contact Center (e.g., we dont have consent to contact them or no allowed windows were available due to Quiet time settings. 
+    - **Voice call attempted**: Contact Center attempted to establish a conversation. If the attempt failed, it was for a reason that is temporary in nature (for example, reached an Answering machine) so a retry after sometime may succeed.
+    - **Voice call not attempted**: Contact Center was unable to establish a conversation for reasons that are not likely to change (for example, bad phone number) so a retry later will not help. Switching to a different channel (for example, emails) should be considered.
+    - **Voice call blocked**: The journey did not send a request to Contact Center (for example, we don't have consent to contact them or no allowed windows were available due to Quiet time settings.
 
     :::image type="content" source="media/choose-triggers.png" alt-text="Choose a trigger." lightbox="media/choose-triggers.png":::
 
@@ -83,17 +80,20 @@ A voice or text message (SMS) conversation can have many more nuanced outcomes/r
     :::image type="content" source="media/attribute-voice-call.png" alt-text="Add an attribute branch on 'A voice call is attempted.'" lightbox="media/attribute-voice-call.png":::
 
 1. In the attribute branches, choose which conditions you want to branch on. Within “Voice call attempted” you have default variables (**Disposition Codes** and **Result**) and variables based on ow you set up your proactive engagement (for example, **Outcome**).
+
     :::image type="content" source="media/conversational-voice-condition.png" alt-text="Choose conditions for the attribute branch." lightbox="media/conversational-voice-condition.png":::
 
 1. Depending on your use case, you can choose any combination of these variables to design your branching logic.
+
     :::image type="content" source="media/attribute-voice-call-combination.png" alt-text="Select variable as condition on voice call results for attribute branch." lightbox="media/attribute-voice-call-combination.png":::
 
 ### Branching after a text message (SMS) conversation
 
-Click on **create branches** link within the Text message conversation action. This will create the entire branching structure for you.
-    :::image type="content" source="media/previous-message-interaction-sms.png" alt-text="Add a Wait for trigger action and choose a branch condition type." lightbox="media/previous-message-interaction-sms.png":::
+Select the **create branches** link within the text message conversation action. This creates the entire branching structure for you.
 
-The branching structure is a 2-step branching (this is the same structure as described in the voice conversation section above). The first one checks if the conversation has a valid outcome or if it timed out. The conversation result path has an attribute condition step where you can setup additional branches based on specific conditions. Some examples include:
+    :::image type="content" source="media/previous-message-interaction-sms.png" alt-text="Screenshot of branching structure creation." lightbox="media/previous-message-interaction-sms.png":::
+
+The branching structure is a two-step branching (this is the same structure as described in the voice conversation section above). The first one checks if the conversation has a valid outcome or if it timed out. The conversation result path has an attribute condition step where you can setup additional branches based on specific conditions. Some examples include:
 
 - A branch where conversation completed successfully, for example, (Result = Conversation Closed).
 - A branch where conversation didn't occur and a retry might help, for example, (Result = Response Timeout).
