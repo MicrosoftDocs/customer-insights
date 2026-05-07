@@ -1,9 +1,9 @@
 ---
 title: Personalize content using predefined dynamic text
 description: Learn how to personalize content using predefined dynamic text in Dynamics 365 Customer Insights - Journeys.
-ms.date: 04/14/2026
+ms.date: 05/07/2026
 ms.topic: how-to
-author: alfergus
+author: vinayd-msft
 ms.author: alfergus
 search.audienceType: 
   - admin
@@ -214,6 +214,16 @@ To define dynamic text with measures, go to **Customer Profile**. You should see
 :::image type="content" source="media/dynamic-text-cid-measures.png" alt-text="Browsing Customer Insights - Data measures screenshot.":::
 
 ## Allow HTML content in source content
+
+> [!IMPORTANT]
+> This change isn't currently applied to a select set of environments so that running campaigns aren't affected. Tenant admins for these environments were notified on April 16, 2026 through Message Center (MC1282442) and email. If your environment is in this group, update all affected emails before June 29, 2026. After that date, this change rolls out automatically.
+>
+> To apply these changes to your sandbox or test environments sooner (so you can test fixed emails), create a support ticket includes the following information:
+> 1. Set the ticket title to "Enforce HTML Encoding change".
+> 1. Include the organization ID(s) where you want the change applied.
+> 1. If you need help identifying affected emails, include that request in the same ticket.
+>
+> We will provide a list of emails using dynamic text and list personalization placeholders, along with their data sources (table name and column). (These emails can *potentially* use placeholders with HTML content. It's not a definitive list as only the email designer can determine whether the data is expected to contain HTML tags.)
 
 Dynamic text and lists allow you to personalize content in emails and text messages. The source content used for personalization is typically expected to be plain text, so brand and other formatting are applied consistently across the entire message. However, there may be situations where you need to insert additional HTML tags into the source content to achieve specific formatting. To allow custom HTML insertion into the source content, select the **Advanced** toggle and check the **Prevent HTML encoding** option. Use this option only if the data source is trusted and controlled, such as data entered or maintained by authorized users. If the data comes from an unknown or untrusted source, for example, from a form on your website, don't select this option. Leaving this option unchecked (the default) helps prevent harmful or unsafe content from being delivered to your customers.
 
