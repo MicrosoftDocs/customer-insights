@@ -20,7 +20,7 @@ AI Hub is a centralized experience in Customer Insights – Journeys for managin
 AI Hub aligns with tenant-level governance defined in Copilot Hub in the Power Platform Admin Center, helping ensure compliance with organizational policies. By consolidating controls into a single location, AI Hub simplifies how administrators review, configure, and manage AI capabilities across the environment.
 
 > [!NOTE]
-> AI Hub control is available to the Admin user role by default. If you're using custom roles and permissions and want to add specific permissions for agent settings, the entity is *msdynmkt_agentsettings*.
+> AI Hub control is available to the Admin user role by default. If you use custom roles and permissions and want to add specific permissions for agent settings, the entity is *msdynmkt_agentsettings*.
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note.md)]
 
@@ -59,7 +59,7 @@ These prerequisites ensure that AI features operate within supported capacity, d
 
 ## Setting up AI Agents
 
-After all mandatory prerequisites are accepted, individual agents can be enabled in **Add and Manage Agents** section.
+After all mandatory prerequisites are accepted, individual agents can be enabled in the  **Add and Manage Agents** section.
 
 ### Set up the Journey Creation Agent
 
@@ -70,7 +70,7 @@ Steps to set up the Journey Creation Agent:
 1. In **AI Hub**, select **Add and manage agents**.
 1. Select **Add an agent** and choose **Journey Creation Agent**.
 1. In the **Overview tab**, review how the agent works.
-1. Complete the agent-specific prerequisite: Anthropic integration (required). Learn more: [Allow external language models for generative responses](/power-platform/admin/allow-llm-generative-responses).
+1. Complete the Journey Creation Agent-specific prerequisite: Anthropic integration (required). Learn more: [Allow external language models for generative responses](/power-platform/admin/allow-llm-generative-responses).
 1. To control agent usage, configure *message consumption limits*. Learn more: [Manage capacity](/power-platform/admin/manage-copilot-studio-messages-capacity#manage-capacity).
 1. To activate the agent, select **Enable**.
 

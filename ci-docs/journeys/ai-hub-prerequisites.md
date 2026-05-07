@@ -1,7 +1,7 @@
 ---
 title: Manage prerequisites in AI Hub (preview)
 description: Manage AI Hub prerequisites in Customer Insights – Journeys to enable AI agents. Learn how to review and accept required settings in Power Platform Admin Center.
-ms.date: 05/01/2026
+ms.date: 05/07/2026
 ms.topic: how-to
 ms.collection: bap-ai-copilot
 author: terezakirk
@@ -27,7 +27,7 @@ This article describes each prerequisite, explains its purpose, and provides gui
 
 Before enabling AI agents in Customer Insights – Journeys, administrators must review and accept three required prerequisites. Each prerequisite defines conditions for capacity, data processing, and AI feature usage.
 
-### Microsoft Copilot Studio capacity
+### 1. Microsoft Copilot Studio capacity
 
 This prerequisite ensures that sufficient capacity is available to support AI agent operations.
 
@@ -45,7 +45,7 @@ Capacity allocation is managed in the Power Platform Admin Center. Learn more: [
 
 Steps to allocate capacity:
 
-1. Sign in to **Power Platform Admin Center**.
+1. Sign in to the **Power Platform Admin Center**.
 1. In the navigation pane, select **Licensing**.
 1. Under **Products**, select **Copilot Studio**.
 1. Open the **Summary** tab.
@@ -56,7 +56,7 @@ Steps to allocate capacity:
     - Select the target **environment**.
     - Specify the number of **Copilot credits** to allocate.
 
-### Move data across regions
+### 2. Move data across regions
 
 The AI agents in Dynamics 365 Customer Insights - Journeys use the same data processing and storage infrastructure as other Copilot features in Power Platform. This behavior means that the data that the agents use might be processed and stored in regions outside of the user's primary region, depending on the availability of services and infrastructure.
 
@@ -68,16 +68,16 @@ To use AI agents that require cross-region processing, administrators must enabl
 
 Steps to enable moving data across regions:
 
-1. Sign into **Power Platform Admin Center**.
+1. Sign into the **Power Platform Admin Center**.
 1. In the navigation pane, select **Manage**.
 1. Select **Environments**.
 1. On the **Environments** page, select the target environment.
 1. In the environment details page, locate the **Generative AI features** card and select **Edit**.
 1. Review the terms of use.
 1. Select the **Move data across regions** checkbox.
-1. Save the changes.
+1. **Save** the changes.
 
-### AI prompts
+### 3. AI prompts
 
 This prerequisite governs how AI-generated prompts and inputs are processed. AI agents use prompts to interpret user intent and generate outputs. An AI prompt is a natural language instruction using a large language model (LLM) that allows you to perform tasks and helps you meet specific business needs. Learn more: [Enable or disable AI prompts in Power Platform and Copilot Studio](/ai-builder/administer#enable-or-disable-ai-prompts-in-power-platform-and-copilot-studio).
 
@@ -85,7 +85,7 @@ This prerequisite governs how AI-generated prompts and inputs are processed. AI 
 
 Steps to enable AI prompts:
 
-1. Sign into **Power Platform admin center**.
+1. Sign into the **Power Platform admin center**.
 1. In the admin center, select **Environments** > [*select an environment*] > **Settings** > **Product** > **Features**.
 1. On the **Features** settings page under **AI Builder**, enable the **AI prompts** toggle.
 
