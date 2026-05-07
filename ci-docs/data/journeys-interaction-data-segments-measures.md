@@ -1,7 +1,7 @@
 ---
 title: Use Customer Insights - Journeys interaction data in segments and measures (preview)
-description: Learn how to use Customer Insights - Journeys behavioral interaction data—such as email opens and link clicks—in Customer Insights - Data segments and measures.
-ms.date: 05/04/2026
+description: Learn how to use Customer Insights - Journeys behavioral interaction data in Customer Insights - Data segments and measures.
+ms.date: 05/07/2026
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -24,7 +24,7 @@ Behavioral interaction data from Customer Insights - Journeys, such as emails op
 ## Prerequisites
 
 - [Deploy Customer Insights - Journeys and Customer Insights - Data](../journeys/setup.md) in the same environment.
-- [Unify data](data-unification.md) that includes contacts or leads from Customer Insights - Journeys in unified Customer Profiles.
+- [Unify data](data-unification.md) that includes contacts or leads from Customer Insights - Journeys in unified customer profiles.
 
 ## Available interaction types
 
@@ -74,7 +74,7 @@ Use the **Behavioral** tab in the segment builder to filter unified customer pro
 
 1. Select **Edit details** to name your segment.
 
-1. In the **Add to Rule 1** side panel, select the **Behavioral** tab.
+1. In the **Add to Rule 1** side pane, select the **Behavioral** tab.
 
    :::image type="content" source="media/journeys-interactions-behavioral-tab.png" alt-text="Screenshot of the Behavioral tab in the segment builder side panel, showing the full list of Customer Insights - Journeys interaction types including Email Opened, Email Sent, Form Submitted, and others.":::
 
@@ -85,7 +85,7 @@ Use the **Behavioral** tab in the segment builder to filter unified customer pro
 
 1. Select a field or drag and drop it to add it to Rule 1.
 
-1. Configure the condition - set the operator, value, and optionally a time window (for example, *Email Opened in the last 7 days*).
+1. Configure the condition: set the operator, value, and optionally a time window (for example, *Email Opened in the last 7 days*).
 
 1. Add more conditions or rules as needed, and then select **Save** and **Run** to evaluate the segment.
 
