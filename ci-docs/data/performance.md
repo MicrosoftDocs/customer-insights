@@ -1,7 +1,7 @@
 ---
 title: Monitor system refresh performance in Dynamics 365 Customer Insights
 description: "Monitor system performance with the Performance dashboard to track refresh health, duration trends, and per-stage breakdowns. Optimize your Customer Insights - Data environment."
-ms.date: 05/01/2026
+ms.date: 05/07/2026
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -23,7 +23,7 @@ To open the Performance page, select **Performance** in the left navigation pane
 - [**Timeline**](#timeline-tab) tab
 - [**Breakdown by stage**](#breakdown-by-stage-tab) tab
 
-:::image type="content" source="media/performance-overview.png" alt-text="Screenshot of the Performance page Overview tab showing overall health, stage summary cards, and the task list.":::
+:::image type="content" source="media/performance-overview.png" alt-text="Screenshot of the Performance page Overview tab showing overall health, stage summary cards, and the task list." lightbox="media/performance-overview.png":::
 
 ## Page header
 
@@ -52,7 +52,7 @@ Select a stage to filter the task list on the **Overview** tab to that stage onl
 
 The **Overview** tab is the default view and contains two panels: stage cards and task list.
 
-:::image type="content" source="media/performance-overview.png" alt-text="Screenshot of the Performance page Overview tab showing overall health, stage pills, stage summary cards, and the task list.":::
+:::image type="content" source="media/performance-overview.png" alt-text="Screenshot of the Performance page Overview tab showing overall health, stage pills, stage summary cards, and the task list." lightbox="media/performance-overview.png":::
 
 ### Stage cards
 
@@ -84,7 +84,7 @@ Select a task row to view its detail, including logs and error information.
 
 The **Timeline** tab shows a **Refresh duration trend**, which is a historical log of completed system refreshes.
 
-:::image type="content" source="media/performance-timeline.png" alt-text="Screenshot of the Performance page Timeline tab showing the refresh history table and an expanded Gantt-style timeline for the most recent refresh.":::
+:::image type="content" source="media/performance-timeline.png" alt-text="Screenshot of the Performance page Timeline tab showing the refresh history table and an expanded Gantt-style timeline for the most recent refresh." lightbox="media/performance-timeline.png":::
 
 Each row represents one full system refresh and includes:
 
@@ -109,7 +109,7 @@ You can:
 
 The **Breakdown by stage** tab shows the same historical refresh list as the **Timeline** tab, and adds a proportional time breakdown chart for each refresh.
 
-:::image type="content" source="media/performance-breakdown-by-stage.png" alt-text="Screenshot of the Performance page Breakdown by stage tab showing the stage filter pills, the refresh history table, and an expanded time breakdown bar chart for the most recent refresh.":::
+:::image type="content" source="media/performance-breakdown-by-stage.png" alt-text="Screenshot of the Performance page Breakdown by stage tab showing the stage filter pills, the refresh history table, and an expanded time breakdown bar chart for the most recent refresh." lightbox="media/performance-breakdown-by-stage.png":::
 
 To filter by stage, select one of the stages at the top of the tab: Data sources, Unification, Segments, Measures, or Sync to Dataverse.
 
