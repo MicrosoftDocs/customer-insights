@@ -46,13 +46,13 @@ Capacity allocation is managed in the Power Platform Admin Center. Learn more: [
 Steps to allocate capacity:
 
 1. Sign in to **Power Platform Admin Center**.
-2. In the navigation pane, select **Licensing**.
-3. Under **Products**, select **Copilot Studio**.
-4. Open the **Summary** tab.
-5. Complete one of the following actions:
+1. In the navigation pane, select **Licensing**.
+1. Under **Products**, select **Copilot Studio**.
+1. Open the **Summary** tab.
+1. Complete one of the following actions:
     - Select **Manage capacity** from the **Prepaid capacity** card, *or*
     - Under the **Copilot Studio** section, select **Manage Copilot credits** or **Manage sessions**.
-6. In the allocation panel:
+1. In the allocation panel:
     - Select the target **environment**.
     - Specify the number of **Copilot credits** to allocate.
 

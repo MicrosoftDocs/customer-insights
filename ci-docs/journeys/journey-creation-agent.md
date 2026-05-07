@@ -1,7 +1,7 @@
 ---
 title: Journey Creation Agent in Customer Insights - Journeys (preview)
 description: Build customer journeys faster with Journey Creation Agent. Describe your goal in plain language and let AI scaffold steps, timing, and branching logic for you.
-ms.date: 05/04/2026
+ms.date: 05/07/2026
 ms.topic: how-to
 ms.collection: bap-ai-copilot
 author: cmenesatti-m
@@ -86,6 +86,9 @@ Journey Creation Agent integrates with the following Dynamics 365 Customer Insig
 ## Create a journey with Journey Creation Agent
 
 Journey Creation Agent lets you describe a journey in plain language and receive a proposed journey structure — including steps, timing, branching logic, and content assignments — ready for your review.
+
+> [!IMPORTANT]
+> Use of Journey Creation Agent consumes Copilot credits. To adjust allocated credits, see [Set up Microsoft Copilot Studio capacity](ai-hub-prerequisites.md#set-up-microsoft-copilot-studio-capacity).
 
 ### Start a conversation with Journey Creation Agent
 
