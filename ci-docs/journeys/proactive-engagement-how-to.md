@@ -28,13 +28,14 @@ The integration with Contact Center lets you create conversational journeys by s
 
 Here's a short video that demonstrates how to create a conversational journey for the text message (SMS) channel.
 
-[!VIDEO https://learn-video.azurefd.net/vod/player?id=4dde461b-35a8-420b-8a02-90aff1001c7e]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=4dde461b-35a8-420b-8a02-90aff1001c7e]
 
-## Use the voice or text messaging (SMS) conversation step and branch on its outcomes
+## Use a voice or text messaging (SMS) conversation step and branch on its outcomes
 
-To use the voice or text conversation step and branch on its outcomes:
+To use a voice or text conversation step and branch on its outcomes:
 
-1. When creating a journey, add an action and choose one of the available AI powered conversation actions.
+1. When creating a journey, add an action and choose one of the available AI powered-conversation actions.
+
     :::image type="content" source="media\ai-powered-conversation-steps.png" alt-text="Add an action and choose voice conversation." lightbox="media/ai-powered-conversation-steps.png":::
 
 1. Choose a **Proactive engagement**.
@@ -66,7 +67,7 @@ A voice or text message (SMS) conversation can have many more nuanced outcomes/r
 
 1. Add a **Wait for trigger** action after the voice conversation step and choose the **Previous message gets an interaction** branch condition type.
 
-        :::image type="content" source="media/previous-message-interaction.png" alt-text="Screenshot of setting the previous message gets an interaction condition type." lightbox="media/previous-message-interaction.png":::
+    :::image type="content" source="media/previous-message-interaction.png" alt-text="Screenshot of setting the previous message gets an interaction condition type." lightbox="media/previous-message-interaction.png":::
 
 1. In the branches, you can choose one of the following triggers:
 
@@ -91,7 +92,7 @@ A voice or text message (SMS) conversation can have many more nuanced outcomes/r
 
 Select the **create branches** link within the text message conversation action. This creates the entire branching structure for you.
 
-    :::image type="content" source="media/previous-message-interaction-sms.png" alt-text="Screenshot of branching structure creation." lightbox="media/previous-message-interaction-sms.png":::
+:::image type="content" source="media/previous-message-interaction-sms.png" alt-text="Screenshot of branching structure creation." lightbox="media/previous-message-interaction-sms.png":::
 
 The branching structure is a two-step branching (this is the same structure as described in the voice conversation section above). The first one checks if the conversation has a valid outcome or if it timed out. The conversation result path has an attribute condition step where you can setup additional branches based on specific conditions. Some examples include:
 
