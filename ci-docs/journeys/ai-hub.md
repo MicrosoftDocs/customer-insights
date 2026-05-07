@@ -28,10 +28,9 @@ AI Hub aligns with tenant-level governance defined in Copilot Hub in the Power P
 
 AI agents in Customer Insights – Journeys assist with creating and optimizing customer engagement by automating common tasks and applying data-driven decision making. Agents are available out of the box and consume Copilot credits.
 
-Currently, there are two agents available:
+Currently, there is one agent available:
 
 - Journey Creation Agent
-- Outreach Optimization Agent
 
 ## Enable agents in Customer Insights – Journeys
 
@@ -75,20 +74,6 @@ Steps to set up the Journey Creation Agent:
 1. To activate the agent, select **Enable**.
 
 Once enabled, the Journey Creation Agent is available in the selected environment. To use it, go to **Real-time marketing** > **Journeys**.
-
-### Set up the Outreach Optimization Agent
-
-The Outreach Optimization Agent improves how and when messages are delivered to customers. It analyzes engagement history and real-time signals to adjust message timing, frequency, and follow-up behavior. Instead of relying on fixed schedules, the agent dynamically determines optimal send times and cadence, helping ensure that outreach is delivered when customers are more likely to engage. Learn more: [Outreach Optimization Agent in Customer Insights - Journeys](outreach-optimization-agent.md).
-
-Steps to set up the Outreach Optimization Agent:
-
-1. In **AI Hub**, select **Add and manage agents**.
-1. Select **Add an agent** and choose **Outreach Optimization Agent**.
-1. In the **Overview tab**, review how the agent works.
-1. To control agent usage, configure *message consumption limits*. Learn more: [Manage capacity](/power-platform/admin/manage-copilot-studio-messages-capacity#manage-capacity).
-1. To activate the agent, select **Enable**.
-
-Once enabled, the Outreach Optimization Agent can be applied within journeys to optimize message delivery and engagement.
 
 ## Disabling AI agents
 

@@ -720,8 +720,6 @@
       href: ai-hub-prerequisites.md
     - name: Journey Creation Agent (preview)
       href: journey-creation-agent.md
-    - name: Outreach Optimization Agent (preview)
-      href: outreach-optimization-agent.md
   - name: Use Copilot's form fill assistance feature in Customer Insights - Journeys
     href: form-fill-assistance.md
   - name: Find data in a view with AI (preview)
@@ -750,8 +748,6 @@
     href: faqs-journey-copilot.md  
   - name: Responsible AI FAQs for Journey Creation Agent
     href: faqs-journey-creation-agent.md
-  - name: Responsible AI FAQs for Outreach Optimization Agent
-    href: faqs-outreach-optimization-agent.md
   - name: Responsible AI FAQs for the segment copilot
     href: faqs-segment-copilot.md
 - name: Resources
