@@ -1,7 +1,7 @@
 ---
 title: Introduction to AI Hub in Customer Insights – Journeys (preview)
 description: AI Hub in Customer Insights – Journeys centralizes AI agent management. Learn how to enable, configure, and govern agents in your environment today.
-ms.date: 05/01/2026
+ms.date: 05/07/2026
 ms.topic: how-to
 ms.collection: bap-ai-copilot
 author: terezakirk
@@ -26,7 +26,7 @@ AI Hub aligns with tenant-level governance defined in Copilot Hub in the Power P
 
 ## How AI agents work in Dynamics 365 Customer Insights – Journeys
 
-AI agents in Customer Insights – Journeys assist with creating and optimizing customer engagement by automating common tasks and applying data-driven decision making. Agents available out of the box and consume Copilot credits.
+AI agents in Customer Insights – Journeys assist with creating and optimizing customer engagement by automating common tasks and applying data-driven decision making. Agents are available out of the box and consume Copilot credits.
 
 Currently, there are two agents available:
 
