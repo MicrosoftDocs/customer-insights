@@ -1,7 +1,7 @@
 ---
 title: New and upcoming features
 description: Discover the latest features, improvements, and bug fixes in Dynamics 365 Customer Insights - Journeys. Stay updated with our monthly release notes.
-ms.date: 03/07/2026
+ms.date: 05/07/2026
 ms.update-cycle: 180-days
 ms.topic: whats-new
 author: alfergus
@@ -26,6 +26,59 @@ We're excited to announce our newest updates! This article summarizes early acce
 Customer Insights - Journeys updates are [pushed to customers automatically](https://cloudblogs.microsoft.com/dynamics365/it/2020/04/27/automatic-update-policy-for-dynamics-365-marketing/). Solutions are available for early validations. To manually update your instances, follow the steps in [Keep Customer Insights - Journeys up to date](apply-updates.md).
 
 To submit and vote on **feature requests** and **product suggestions**, go to the [Dynamics 365 Application Ideas portal](https://experience.dynamics.com/ideas/categories/?forum=dfa5b83d-9e4c-e811-a956-000d3a1bef07&forumName=Dynamics%20365%20Marketing).
+
+### May 2026 update
+
+| App              | GA release      |
+|------------------|-----------------|
+| Customer Insights - Journeys | 1.1.65002.129 |
+
+#### General availability
+
+- **Set message expirations to keep communication relevant**
+	- Customers may experience frustration when they receive outdated communications, such as expired coupons and irrelevant reminders. This creates confusion and diminishes their trust in your brand. You can now set expiration dates on your messages, ensuring that only current and relevant information reaches your audience. This keeps your customers engaged and satisfied with relevant communications in moments that matter.
+	- [Release plan](/dynamics365/release-plan/2026wave1/customer-insights/dynamics365-customer-insights-journeys/set-message-expirations-keep-communication-relevant)
+	- [Docs](message-expiration.md)
+
+- **Create effective audiences with marketing website interactions**
+	- Create targeted segments based on behavioral signals from marketing website interactions, including page visits and clicks. You can further refine your segment using information such as the name, type, or URL of the page visited.
+	- [Docs](real-time-marketing-redesigned-segment-builder.md#create-a-segment-using-interactions)
+
+#### Public preview
+
+- **Create journeys in minutes with Journey Creation Agent**
+	- With the new Journey Creation Agent in Dynamics 365 Customer Insights - Journeys, anybody can create journeys in minutes even if they've never done it before. Instead of spending time getting the mechanics of the journey right, you can now ensure that you’re delivering the most personalized experience for your customers. Move from idea to execution in minutes, freeing up time and reducing dependency on technical experts.
+	- [Docs](journey-creation-agent.md)
+
+- **Govern Customer Insights - Journeys agents and Copilot centrally with Dynamics 365 AI Hub**
+	- Dynamics 365 AI Hub provides a single, in‑product location to manage all Customer Insights - Journeys agents and Copilot features for your environment. You can complete prerequisites, enable or disable agents, and configure guardrails such as follow‑up limits or processing caps, without navigating between tools. Because AI Hub is aligned with tenant‑level settings in Copilot Hub in Power Platform Admin Center, your environment automatically stays compliant with global governance policies.
+	- [Release plan](/dynamics365/release-plan/2026wave1/customer-insights/dynamics365-customer-insights-journeys/close-leads-faster-automating-seamless-handoffs-between-marketing-sales)
+	- [Docs](ai-hub.md)
+
+#### Monthly enhancements
+
+- **Notifications about quota consumption for Customer Insights - Journeys**
+	- Dynamics 365 Customer Insights now notifies you as your organization approaches its paid consumption quotas. You can also view detailed consumption information in **Settings** > **Overview** > **Quota limits**, making it easier to monitor usage, understand trends, and plan as your usage grows.
+	- [Docs](quota-management.md)
+
+- **Create lead records from journey update**
+    - When creating a lead record from the new [Create record action](create-records-activities.md) in journeys, standard fields are now pre-populated.
+    - [Docs](create-records-activities.md#add-optional-fields)
+
+- **Test send with multiple conditional content variations**
+	- Test send now lets you select up to 10 conditional content variations and send a test email for each in a single action. This makes it easy to validate that every variation of your email renders correctly before launching your campaign, without repeating the test for each email.
+
+- **Segment expiration window extended to 120 days**
+    - Last month, we began changing the state of segments that had been unused for more than 30 days to a new “Expired” state. We’ve now extended that automatic expiration window to 120 days. Expired segments can be republished to put them back in a "Ready to use” state for use in journeys and other segments.
+
+- **Improved formatting for segment query viewer**
+    - The query viewer in the segment designer has been updated with improved formatting, making it easier to read and understand the query structure.
+
+- **Drag and drop attributes and conditions for faster segment editing**
+    - Build segments even faster with new drag and drop segment editing capabilities. You can drag in attributes, interactions, and segments from the right panel directly onto the design canvas to add them to existing groups or create new ones. You can also drag and drop groups and conditions within the canvas to quickly reorder elements.
+
+- **Audit history tab is now available for segments**
+    - When auditing is enabled for segments, an “Audit history” tab is now available to make it easier to view past changes to the segment definition.
 
 ### April 2026 update
 
@@ -53,7 +106,7 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 
 #### Monthly enhancements
 
-- **Using HTML in personalization data requires explicit user acknowledgement**
+- **Using HTML in personalization data requires explicit user acknowledgment**
 	- Dynamic text and lists allow you to personalize content in emails and text messages. The source content used for personalization is typically expected to be plain text, so brand and other formatting is applied consistently across the entire message. However, there may be situations where you need to insert additional HTML tags in this source content to achieve specific formatting. We’ve introduced a new advanced option that allows HTML insertion to be included in the source content. For safety, this option is disabled by default.
 	- [Docs](real-time-marketing-predefined-dynamic-text.md#allow-html-content-in-source-content)
 
@@ -113,7 +166,7 @@ Learn how to make the most of the new Dynamics 365 Customer Insights features in
 #### Monthly enhancements
 
 - **Segmentation - Unused segments are not evaluated after 30 days**
-	- Segments that are published but not used in any live journey for 30 days are moved to the Expired state. These expired segments are no longer evaluated and are not counted towards your segment limits, helping to save resources and boost overall performance. You need to publish them again before they can be used in a journey.
+	- Segments that are published but not used in any live journey for 30 days are moved to the Expired state. These expired segments are no longer evaluated and aren't counted towards your segment limits, helping to save resources and boost overall performance. You need to publish them again before they can be used in a journey.
 
 - **Segmentation – Usability and functional enhancements**
 	- Several enhancements have been introduced to segmentation. Key improvements include:
