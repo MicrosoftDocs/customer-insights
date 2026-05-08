@@ -1,7 +1,7 @@
 ---
 title: Create records and activities from journeys (preview)
 description: Dynamics 365 Customer Insights journeys let you create any record or activity automatically from customer actions. Discover how to optimize engagement today.
-ms.date: 04/06/2026
+ms.date: 04/30/2026
 ms.topic: article
 author: cmenesatti-m
 ms.author: alfergus
@@ -38,6 +38,9 @@ To turn this feature on or off:
 
 > [!NOTE]
 > Like any preview feature, this feature is disabled by default. However, given that this is a change to an existing feature, if you previously had the **Lead and opportunity creation (preview)** toggle enabled, that is still respected.
+
+> [!IMPORTANT]
+> For the preview only, verify that the **Marketing Service User Extensible** role has all the necessary privileges to any entity you want the Create a record tile to interact with.
 
 ## Add a Create a record tile to your journey
 
@@ -88,6 +91,9 @@ The optional fields list includes all writable fields from the entity, including
 
 > [!TIP]
 > If the system can't resolve a dynamic content field at runtime (for example, if a contact doesn't have a phone number), the field is left empty.
+
+> [!IMPORTANT]
+> During the preview, when choosing a lead record type, a number of standard attributes such as `First Name` and `Last Name`, `Email`, `Address`, and more are pre-filled from the journey audience. These fields show as pre-filled in the Create a record side pane according to their settings (required versus more info).
 
 ### Configure record ownership and assignment
 

@@ -1,7 +1,7 @@
 ---
 title: Prerequisites for conversational journeys
 description: 'Prerequisites for conversational journeys: Discover the required products and steps to use Dynamics 365 Customer Insights - Journeys and Contact Center.'
-ms.date: 10/21/2025
+ms.date: 05/07/2026
 ms.topic: article
 author: Joni-M
 ms.author: alfergus
@@ -36,5 +36,12 @@ To get started with Customer Insights - Journey, see [Get started with Customer 
 ## Get started with Contact Center
 
 To get started with Contact Center, see [Use Copilot Service admin center](/dynamics365/contact-center/administer/cc-admin-center).
+
+## Communication channels
+
+Conversational journeys require communication channels such as voice or text messaging (SMS). You must configure these channels in Contact Center using supported providers.
+
+> [!NOTE]
+> Although Customer Insights - Journeys supports a text messaging (SMS) channel, conversational journeys don't use that channel. Instead, they rely on the text messaging (SMS) channel configured in Contact Center.
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]

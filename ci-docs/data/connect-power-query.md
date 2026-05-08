@@ -1,7 +1,7 @@
 ---
 title: "Connect to a Power Query data source"
 description: "Ingest data through a Power Query connector."
-ms.date: 04/13/2026
+ms.date: 05/07/2026
 ms.reviewer: v-wendysmith
 ms.topic: how-to
 author: Scott-Stabbert
@@ -68,6 +68,9 @@ Loading data can take time. After a successful refresh, the ingested data can be
 >
 > - A data source based on Power Query creates a [dataflow in Dataverse](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365). Don't change the name of a dataflow in the Power Platform admin center that's used in Customer Insights - Data. Renaming a dataflow causes issues with the references between the data source and the Dataverse dataflow.
 > - Concurrent evaluations for Power Query data sources in Customer Insights - Data have the same [refresh limits like Dataflows in PowerBI.com](/power-query/power-query-online-limits#refresh-limits). If a data refresh fails because it reached the evaluation limit, we recommend you adjust the refresh schedule for each dataflow to ensure the data sources aren't processed at the same time.
+
+> [!NOTE]
+> Customer Insights puts a timeout of approximately five hours on Power Platform dataflow evaluations. If a single dataflow evaluation takes longer than this, the data refresh fails with a timeout error. To stay within this limit, split large datasets across multiple dataflows, minimize the number of queries per dataflow, and reduce the columns you import to only those you need. For on-premises data sources, see also the [troubleshooting guidance](#best-practices-and-troubleshooting) later in this article.
 
 ## Add data from on-premises data sources
 
