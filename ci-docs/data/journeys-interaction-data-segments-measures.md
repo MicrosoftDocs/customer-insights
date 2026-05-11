@@ -106,10 +106,10 @@ To filter customers by the specific email they opened, add the **Email** field f
 
 ### Example scenarios
 
-- **Re-engagement:** Customers who received an email but didn't open it in the past 30 days - target them with a more compelling offer.
-- **High-intent buyers:** Customers who clicked a product link in an email and also have a high lifetime value score from a predictive model.
-- **Event attendees:** Customers who checked in to a marketing event in the past 90 days.
-- **Non-responders:** Customers who were sent a push notification but it wasn't delivered - investigate delivery issues or update contact preferences.
+- **Re-engagement**: Customers who received an email but didn't open it in the past 30 days - target them with a more compelling offer.
+- **High-intent buyers**: Customers who clicked a product link in an email and also have a high lifetime value score from a predictive model.
+- **Event attendees**: Customers who checked in to a marketing event in the past 90 days.
+- **Non-responders**: Customers who were sent a push notification but it wasn't delivered - investigate delivery issues or update contact preferences.
 
 ## Use interaction data in a measure
 
@@ -131,10 +131,10 @@ Use measures built on interaction data as attributes in segment conditions. This
 
 ## Limitations
 
-- **Batch only:** The system processes interaction data in batch with each system refresh. Segments and measures don't reflect interactions in real time. For real-time journey branching based on interactions, use Customer Insights - Journeys.
-- **Profile-linked interactions only:** You can only access interactions linked to a unified Customer Profile. Interactions on contacts or leads that aren't yet unified don't appear.
-- **Not surfaced in customer timeline:** Customer Insights - Journeys interaction data is intentionally not shown on the customer profile timeline in Customer Insights - Data. Use Customer Insights - Journeys contact insights for timeline views.
-- **Ingestion time:** Depending on the volume of interaction data, the initial ingestion of interaction tables can take 30 minutes to several hours for large environments.
+- **Batch only**: The system processes interaction data in batch with each system refresh. Segments and measures don't reflect interactions in real time. For real-time journey branching based on interactions, use Customer Insights - Journeys.
+- **Profile-linked interactions only**: You can only access interactions linked to a unified Customer Profile. Interactions on contacts or leads that aren't yet unified don't appear.
+- **Not surfaced in customer timeline**: Customer Insights - Journeys interaction data is intentionally not shown on the customer profile timeline in Customer Insights - Data. Use Customer Insights - Journeys contact insights for timeline views.
+- **Ingestion time**: Depending on the volume of interaction data, the initial ingestion of interaction tables can take 30 minutes to several hours for large environments.
 - **Segments and measures**: Customer Insight - Journeys behavioral interaction data is only available for use in segments and measures.
 
 ## Related content
