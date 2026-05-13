@@ -62,11 +62,11 @@ By completing this setup, you'll:
 1. Stay in your app registration in Microsoft Entra, go to **API permissions**, and select **+ Add a permission**.
 1. Select **Microsoft Graph** in the API permissions name list.
 1. Select **Application permissions** in the pop-up dialog. Search for the following permissions and add each permission separately:
-    1. *OnlineMeetingArtifact.Read.All* for attendance reports
-    2. *VirtualEventRegistration-Anon.ReadWrite.All* for registrations
-    3. *VirtualEvent.Read.All* to read webinar status
+    1. *OnlineMeetingArtifact.Read.All* for attendance reports.
+    1. *VirtualEventRegistration-Anon.ReadWrite.All* for registrations.
+    1. *VirtualEvent.Read.All* to read webinar status.
 1. Next, Select **Delegated permissions** in the pop-up dialog. Add the following permission:
-    1. *VirtualEvent.ReadWrite* needs to be granted for each user creating the webinars
+    1. *VirtualEvent.ReadWrite* needs to be granted for each user creating the webinars.
 1. Select **Grant admin consent and confirm**.
 
 :::image type="content" source="media/teams-registration-3.png" alt-text="Screenshot of the request API permissions tab." lightbox="media/teams-registration-3.png":::
@@ -90,8 +90,7 @@ Grant-CsApplicationAccessPolicy -PolicyName <POLICY_NAME> -Global
 ```
 Alternatively, you can grant the AAP at the group or user level. Learn more about supported configurations: [Configure an application access policy for online meetings and virtual events](/graph/cloud-communication-online-meeting-application-access-policy).
 
->[IMPORTANT!]
-> API permissions and the Application Access Policy is essential for successful registration process management. If not set up correctly, or any of the policies and permissions is revoked, registrations on Customer Insights-Journeys or Teams side may fail.
-
+> [!IMPORTANT]
+> API permissions and the Application Access Policy are essential for successful registration process management. If they aren't set up correctly, or if any policies and permissions are revoked, registrations in Customer Insights - Journeys and in Teams may fail.
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
