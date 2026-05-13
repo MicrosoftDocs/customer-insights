@@ -28,8 +28,8 @@ Webinars are useful for conference keynotes or meetings where a few presenters a
 1. Define the meeting options by selecting **Open settings**.
 1. Save the event record. By selecting **Save**, the Teams meeting is created and you become the owner of the Teams meeting. By changing the meeting type and saving again, the original meeting is canceled and a new URL is generated.
 
-> [!NOTE]
-> To use Teams webinar v2 in Customer Insights - Journeys, your tenant administrator first needs to complete the authentication setup. For more information, see [Teams authentication in Customer Insights - Journeys](teams-authentication.md).
+> [!IMPORTANT]
+> To use Teams webinar v2 in Customer Insights - Journeys, your tenant administrator first needs to complete the authentication setup. Without authentication, correct permissions and application access policies, Customer Insights-Journeys will not be able to create registrations for Teams Webinar. For more information, see [Teams authentication in Customer Insights - Journeys](teams-authentication.md).
 
 ### Webinar settings
 
