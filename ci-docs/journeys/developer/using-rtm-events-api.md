@@ -142,12 +142,4 @@ The default event registration settings are used when processing submissions fro
 }
 ```
 
-## Backward compatibility with the outbound marketing API
-
-The aim for the real-time journeys events API is to be backward compatible contact-wise. There are, however, a few limitations:
-
-- The real-time journeys events API doesn't support user authentication.
-- Operations like CAPTCHA and registration to outbound events are supported only as long as the organization has outbound marketing provisioned.
-- If you previously used an Angular client application, you can switch the **apiEndpoint** property from the outbound marketing endpoint that looked like `https://<your org alias>.svc-tip.dynamics.com/EvtMgmt/api/v2.0/` to the endpoint specified in `Endpoint (Preview)`, which looks something like `https://public-<your org geo>.mkt.dynamics.com/api/v1.0/orgs/<your org id>/eventmanagement/`.
-
 [!INCLUDE [footer-include](.././includes/footer-banner.md)]
