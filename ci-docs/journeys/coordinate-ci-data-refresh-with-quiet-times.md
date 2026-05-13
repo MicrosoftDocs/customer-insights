@@ -47,12 +47,14 @@ flowchart LR
 
 ## How journeys read Customer Insights - Data at runtime
 
-A journey reads Customer Insights - Data records when it processes a customer. This applies to [segment-based journeys](real-time-marketing-segment-based-journey.md) and to [trigger-based journeys](real-time-marketing-trigger-based-journey.md) whose customer data type is set to **Profile (Customer Insights - Data)**. Two reads happen at runtime:
+A journey reads Customer Insights - Data records when it processes a customer. This applies to [segment-based journeys](real-time-marketing-segment-based-journey.md) and to [trigger-based journeys](real-time-marketing-trigger-based-journey.md) where the customer data type is set to **Profile (Customer Insights - Data)**.
+
+Two reads happen at runtime:
 
 - [**Personalization**](real-time-marketing-personalization.md) expands tokens by reading from `msdynci_customerprofile` and any referenced measure tables.
-- [**Consent evaluation**](real-time-marketing-compliance-settings.md) checks consent attributes that, for Customer Insights - Data sourced contacts, are stored on the same profile entity. See also [Manage consent for email, SMS, and custom channel messages](real-time-marketing-email-text-consent.md) and [Build segments using consent-based criteria](real-time-marketing-consent-segments.md).
+- [**Consent evaluation**](real-time-marketing-compliance-settings.md) checks consent attributes that, for Customer Insights - Data-sourced contacts, are stored on the same profile entity. See also [Manage consent for email, SMS, and custom channel messages](real-time-marketing-email-text-consent.md) and [Build segments using consent-based criteria](real-time-marketing-consent-segments.md).
 
-Both reads use the current state of Dataverse at the moment the journey processes the contact.
+Both reads use the current Dataverse state at the moment the journey processes the contact.
 
 Segments referenced by active journeys are kept on a frequent refresh cadence, as described in [Optimize segment refresh](auto-segment-management.md). The period during which timing matters can therefore recur multiple times per hour, not only at scheduled refresh times.
 
@@ -87,7 +89,7 @@ Common symptoms include:
 
 These symptoms are more pronounced when continuous segment evaluation is enabled, because the period during which incomplete data can be read is no longer limited to a discrete window.
 
-## Recommended configuration: align quiet times with the refresh window
+## Recommended configuration: Align quiet times with the refresh window
 
 [Quiet times](journey-quiet-times.md) let you configure a window during which a journey doesn't send messages. Messages that would otherwise be sent during a quiet time are held and processed when the quiet time ends.
 
