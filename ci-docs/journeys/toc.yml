@@ -262,6 +262,8 @@
         href: real-time-marketing-segment-based-journey.md
       - name: Use Customer Insights - Data profiles and segments
         href: real-time-marketing-ci-profile.md
+      - name: Align quiet times with Customer Insights - Data refresh
+        href: coordinate-ci-data-refresh-with-quiet-times.md
     - name: Journey goals and A/B testing
       items:
       - name: Set a business goal and measure progress through a journey

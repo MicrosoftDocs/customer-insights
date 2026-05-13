@@ -1,5 +1,5 @@
 ---
-title: Align journey quiet times with Customer Insights - Data refresh
+title: Align quiet times with Customer Insights - Data refresh
 description: Align journey quiet times with Customer Insights - Data refresh windows to ensure accurate personalization and consent. Discover step-by-step configuration guidance.
 ms.date: 05/13/2026
 ms.topic: how-to
@@ -12,7 +12,7 @@ search.audienceType:
   - enduser
 ---
 
-# Align journey quiet times with Customer Insights - Data refresh
+# Align quiet times with Customer Insights - Data refresh
 
 When Customer Insights - Data and Customer Insights - Journeys are used together, journey runtime components such as personalization and consent evaluation read profile and measure data from the same Dataverse tables that Customer Insights - Data writes during a refresh. If a journey processes contacts while a refresh is still in progress, it can read incompletely updated data. This article describes how the timing arises and how to use journey quiet times to make sure journey processing only runs against fully updated profiles and measures.
 
