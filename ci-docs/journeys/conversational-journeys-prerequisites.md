@@ -1,7 +1,7 @@
 ---
 title: Prerequisites for conversational journeys
 description: 'Prerequisites for conversational journeys: Discover the required products and steps to use Dynamics 365 Customer Insights - Journeys and Contact Center.'
-ms.date: 05/07/2026
+ms.date: 05/13/2026
 ms.topic: article
 author: Joni-M
 ms.author: alfergus
@@ -24,11 +24,11 @@ To use conversational journeys, you need Dynamics 365 Customer Insights - Journe
 1. [Purchase Dynamics 365 Customer Insights](purchase.md) (**required**)
 1. [Buy Dynamics 365 Contact Center](https://www.microsoft.com/dynamics-365/products/contact-center/pricing) (**required**)
 1. To purchase the appropriate [Customer Insights - Journeys license](purchase.md), you need to estimate how many "Interacted persons" and "Interactions" you require monthly and yearly.
-    - Each contact that has a conversational voice call or text messaging (SMS) request sent from Customer Insights - Journeys to Contact Center counts as an "Interacted person."
+    - Each contact that has a conversational voice call or text message (SMS) request sent from Customer Insights - Journeys to Contact Center counts as an "Interacted person."
         > [!NOTE]
-        > Conversational journeys only support interactions with contacts at this time.
+        > Currently, conversational journeys only support interactions with contacts.
     - Each conversation request sent from Customer Insights - Journeys to Contact Center counts as one interaction.
-    - Conversations occur over channels managed by Contact Center, and therefore usage is metered by Contact Center based on call minutes or text message volume. Even though Customer Insights – Journeys can include a text messaging (SMS) channel, conversational text messaging is handled through Contact Center channels and not through the Customer Insights – Journeys SMS channel.
+    - Conversations occur over channels managed by Contact Center, and therefore usage is metered by Contact Center based on call minutes or text message volume. Even though Customer Insights – Journeys can include a text messaging (SMS) channel, conversational text messaging is handled through Contact Center channels, not through the Customer Insights – Journeys SMS channel.
 
 ## Get started with Customer Insights - Journeys
 
