@@ -30,17 +30,7 @@ A Customer Insights - Data system refresh runs a graph of nodes that work togeth
 
 Hydration is what makes Customer Insights - Data records available to other applications that read Dataverse, including the Customer Insights - Journeys runtime. The integration between the two products is described in [Use Customer Insights - Data profiles and segments in Customer Insights - Journeys](real-time-marketing-ci-profile.md).
 
-
-```mermaid
-flowchart LR
-    A[Ingestion] --> B[Unification]
-    B --> C[Enrichment]
-    C --> D[Segmentation]
-    C --> E[Hydration]
-    D -. membership change .-> F[CI-J journey runtime]
-    E -- writes --> G[("Dataverse<br/>msdynci_customerprofile<br/>msdynci_&lt;measure&gt;")]
-    F -- reads at send time<br/>personalization + consent --> G
-```
+:::image type="content" source="media/coordinate-data-how-refresh.png" alt-text="Diagram of Customer Insights data flow from Ingestion through Unification, Enrichment, to Hydration and Segmentation, writing to Dataverse." lightbox="media/coordinate-data-how-refresh.png":::
 
 > [!NOTE]
 > Segmentation and hydration run as parallel steps within the refresh. The refresh doesn't guarantee that hydration has completed by the time updated segment membership becomes available.
@@ -62,24 +52,7 @@ Segments referenced by active journeys are kept on a frequent refresh cadence, a
 
 When a journey processes a contact before hydration has finished writing the matching profile or measure rows, the journey can read incomplete data.
 
-```mermaid
-sequenceDiagram
-    autonumber
-    participant CID as CI-D refresh
-    participant Seg as Segmentation
-    participant Hyd as Hydration
-    participant DV as Dataverse<br/>(msdynci_customerprofile / measures)
-    participant CIJ as CI-J journey runtime
-
-    CID->>Seg: refresh starts
-    CID->>Hyd: refresh starts (parallel)
-    Seg-->>CIJ: segment membership change available
-    Note over CIJ: journey starts processing
-    CIJ->>DV: read profile and measures<br/>(personalization, consent)
-    DV-->>CIJ: incomplete rows<br/>hydration still in progress
-    CIJ-->>CIJ: send completes with incomplete data
-    Hyd->>DV: profile and measure rows finalized
-```
+:::image type="content" source="media/coordinate-refresh-journeys-run.png" alt-text="Diagram of sequence showing Customer Insights data refresh, segmentation, hydration, Dataverse, and journey runtime timing." lightbox="media/coordinate-refresh-journeys-run.png":::
 
 Common symptoms include:
 
@@ -95,23 +68,7 @@ These symptoms are more pronounced when continuous segment evaluation is enabled
 
 To make sure a journey only evaluates personalization and consent against fully updated data, configure quiet times on the journey to cover the Customer Insights - Data refresh window, including a buffer.
 
-```mermaid
-gantt
-    title CI-D refresh window vs CI-J quiet times
-    dateFormat  HH:mm
-    axisFormat  %H:%M
-
-    section CI-D refresh
-    Ingestion        :a1, 02:00, 25m
-    Unification      :a2, after a1, 20m
-    Enrichment       :a3, after a2, 20m
-    Segmentation     :a4, after a3, 30m
-    Hydration        :a5, after a3, 45m
-
-    section CI-J journey
-    Quiet times (held)  :crit, 01:45, 195m
-    Normal sending      :active, 05:00, 120m
-```
+:::image type="content" source="media/coordinate-data-align-quiet-times.png" alt-text="Diagram of Customer Insights data refresh stages aligned with Journeys quiet times from 2:00 to 5:00, with normal sending after." lightbox="media/coordinate-data-align-quiet-times.png":::
 
 Configure the quiet time so that it:
 
