@@ -2,7 +2,7 @@
 title: Data refresh notifications
 description: Learn how data refresh notifications in Customer Insights - Data alert admins to permanent failures, suppress transient failures, and help you act fast.
 ms.date: 04/23/2026
-ms.topic: conceptual
+ms.topic: article
 author: Scott-Stabbert
 ms.author: sstabbert
 ms.reviewer: alfergus
