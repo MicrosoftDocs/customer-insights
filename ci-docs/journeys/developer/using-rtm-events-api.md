@@ -1,7 +1,7 @@
 ---
 title: Use the events API in real-time journeys
 description: Learn how to use the events API to access date from events, sessions, session tracks, and passes in real-time journeys.
-ms.date: 03/25/2026
+ms.date: 05/13/2026
 ms.topic: overview
 author: alfergus
 ms.author: colinbirkett
