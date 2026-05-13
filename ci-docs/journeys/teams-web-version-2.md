@@ -1,7 +1,7 @@
 ---
 title: Use Microsoft Teams webinars v2 to host online events in Customer Insights - Journeys
 description: Learn how to create and host online events in Dynamics 365 Customer Insights - Journeys using Microsoft Teams as the webinar provider.
-ms.date: 02/04/2026
+ms.date: 05/13/2026
 ms.topic: how-to
 author: terezakirk
 ms.author: terezakirk
@@ -26,14 +26,14 @@ Webinars are useful for conference keynotes or meetings where a few presenters a
 1. Create a new event in Customer Insights - Journeys.
 1. Set the toggle **Do you want to stream this event** toggle to **Yes** and select **Teams webinar v2** from the dropdown.
 1. Define the meeting options by selecting **Open settings**.
-1. Save the event record. By selecting **Save**, the Teams meeting is created and you become the owner of the Teams meeting. By changing the meeting type and saving again, the original meeting is canceled and a new URL is generated.
+1. Save the event record. By selecting **Save**, the Teams meeting is created, and you become the owner of the Teams meeting. By changing the meeting type and saving again, the original meeting is canceled and a new URL is generated.
 
-> [!NOTE]
-> To use Teams webinar v2 in Customer Insights - Journeys, your tenant administrator first needs to complete the authentication setup. For more information, see [Teams authentication in Customer Insights - Journeys](teams-authentication.md).
+> [!IMPORTANT]
+To use Teams webinars v2 in Customer Insights - Journeys, your tenant administrator must first complete the authentication setup. Without authentication, correct permissions, and application access policies, Customer Insights - Journeys can't create registrations for Teams webinars. For more information, see [Teams authentication in Customer Insights - Journeys](teams-authentication.md).
 
 ### Webinar settings
 
-The default webinar settings are configured to provide the best attendee and presenter experience. However, you can easily tweak these settings from your Customer Insights - Journeys event. To change the default settings, select **Open settings**. This reveals the webinar settings, which you can adjust on a per-event basis directly in the Teams meeting options interface.
+The default webinar settings are configured to provide the best possible experience for attendees and presenters. However, you can easily tweak these settings from your Customer Insights - Journeys event. To change the default settings, select **Open settings**. This reveals the webinar settings, which you can adjust on a per-event basis directly in the Teams meeting options interface.
 
 :::image type="content" source="media/teams-web-settings.png" alt-text="Screenshot of settings for Teams webinars." lightbox="media/teams-web-settings.png":::
 

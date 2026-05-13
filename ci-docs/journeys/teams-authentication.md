@@ -1,7 +1,7 @@
 ---
 title: Authenticate Teams for webinars v2 users in Customer Insights - Journeys
 description: Learn how to set up authentication and permissions for Teams webinars v2 in Dynamics 365 Customer Insights - Journeys. 
-ms.date: 03/31/2026
+ms.date: 05/13/2026
 ms.topic: article
 author: terezakirk
 ms.author: alfergus
@@ -62,9 +62,11 @@ By completing this setup, you'll:
 1. Stay in your app registration in Microsoft Entra, go to **API permissions**, and select **+ Add a permission**.
 1. Select **Microsoft Graph** in the API permissions name list.
 1. Select **Application permissions** in the pop-up dialog. Search for the following permissions and add each permission separately:
-    1. *OnlineMeetingArtifact.Read.All* for attendance reports
-    2. *VirtualEventRegistration-Anon.ReadWrite.All* for registrations
-    3. *VirtualEvent.Read.All* to read webinar status
+    1. *OnlineMeetingArtifact.Read.All* for attendance reports.
+    1. *VirtualEventRegistration-Anon.ReadWrite.All* for registrations.
+    1. *VirtualEvent.Read.All* to read webinar status.
+1. Next, Select **Delegated permissions** in the pop-up dialog. Add the following permission:
+    1. *VirtualEvent.ReadWrite* needs to be granted for each user creating the webinars.
 1. Select **Grant admin consent and confirm**.
 
 :::image type="content" source="media/teams-registration-3.png" alt-text="Screenshot of the request API permissions tab." lightbox="media/teams-registration-3.png":::
@@ -86,7 +88,9 @@ Connect-MicrosoftTeams
 New-CsApplicationAccessPolicy -Identity <POLICY_NAME> -AppIds <APP_ID> 
 Grant-CsApplicationAccessPolicy -PolicyName <POLICY_NAME> -Global 
 ```
-
 Alternatively, you can grant the AAP at the group or user level. Learn more about supported configurations: [Configure an application access policy for online meetings and virtual events](/graph/cloud-communication-online-meeting-application-access-policy).
+
+> [!IMPORTANT]
+> API permissions and the Application Access Policy are essential for successful registration process management. If they aren't set up correctly, or if any policies and permissions are revoked, registrations in Customer Insights - Journeys and in Teams may fail.
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
