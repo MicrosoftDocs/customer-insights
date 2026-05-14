@@ -224,8 +224,6 @@
     items:
     - name: Journeys overview
       href: journeys-overview.md
-    - name: Copilot - Create journeys using AI assistance (preview)
-      href: real-time-marketing-use-copilot-create-journey.md
     - name: Create journey templates
       href: real-time-marketing-journey-templates.md
     - name: Journey flow and tile reference
@@ -264,6 +262,8 @@
         href: real-time-marketing-segment-based-journey.md
       - name: Use Customer Insights - Data profiles and segments
         href: real-time-marketing-ci-profile.md
+      - name: Align quiet times with Customer Insights - Data refresh
+        href: coordinate-ci-data-refresh-with-quiet-times.md
     - name: Journey goals and A/B testing
       items:
       - name: Set a business goal and measure progress through a journey
@@ -304,7 +304,7 @@
           href: journey-quiet-times.md
         - name: Limit messages sent with frequency capping
           href: journey-frequency-cap.md
-        - name: "Set message expiration (preview)"
+        - name: Set message expiration
           href: message-expiration.md
       - name: Create approval workflows and customize the journey designer
         items:
@@ -706,12 +706,20 @@
     href: troubleshoot-marketing-solution-health.md
   - name: General FAQ
     href: troubleshoot-faq.md
-- name: Copilot and AI capabilities in Customer Insights
+- name: Copilot and AI agents in Customer Insights
   items:
   - name: Overview
     href: copilot-overview.md
   - name: Give consent to use Copilot in Customer Insights - Journeys
     href: copilot-consent-journeys.md  
+  - name: AI agents
+    items:
+    - name: Access Dynamics 365 AI Hub (preview)
+      href: ai-hub.md
+    - name: Prerequisites for using AI agents (preview)
+      href: ai-hub-prerequisites.md
+    - name: Journey Creation Agent (preview)
+      href: journey-creation-agent.md
   - name: Use Copilot's form fill assistance feature in Customer Insights - Journeys
     href: form-fill-assistance.md
   - name: Find data in a view with AI (preview)
@@ -738,6 +746,8 @@
     href: faqs-image-smart-recommendation.md  
   - name: Responsible AI FAQs for the journey copilot
     href: faqs-journey-copilot.md  
+  - name: Responsible AI FAQs for Journey Creation Agent
+    href: faqs-journey-creation-agent.md
   - name: Responsible AI FAQs for the segment copilot
     href: faqs-segment-copilot.md
 - name: Resources

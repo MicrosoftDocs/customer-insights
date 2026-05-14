@@ -55,6 +55,8 @@
       href: data-sources-manage.md
     - name: Enrichment for data sources
       href: data-sources-enrichment.md
+    - name: Data refresh notifications
+      href: data-refresh-notifications.md
     - name: Incremental refresh for Azure Data Lake Storage
       href: incremental-refresh-data-sources.md
     - name: Real-time data ingestion
@@ -411,7 +413,7 @@
 
 - name: More resources
   items:
-  - name: B2B documentation
+  - name: B2B documentation (legacy)
     href: b2b/work-with-business-accounts.md
   - name: Certify as Microsoft Customer Data Platform Specialist
     href: /certifications/exams/mb-260?tab=tab-instructor-led

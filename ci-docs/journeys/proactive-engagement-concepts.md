@@ -1,10 +1,10 @@
 ---
 title: Conversational journeys concepts
 description: Conversational journeys in Dynamics 365 Customer Insights – Journeys helps you automate personalized customer interactions across channels. Learn key concepts and get started.
-ms.date: 05/29/2025
+ms.date: 05/07/2026
 ms.topic: article
-author: colinbirkett
-ms.author: colinbirkett
+author: vinayd-msft
+ms.author: alfergus
 search.audienceType:
   - admin
   - customizer
@@ -35,9 +35,13 @@ A [segment](real-time-marketing-segments.md) is a defined group of customers tha
 
 A [trigger](real-time-marketing-trigger-based-journey.md) is an event or condition that starts or moves a customer through a journey. For example, a trigger can be a form submission, a product purchase, or a link click.
 
-## Conversational voice
+## Text message conversation
 
-Conversational voice is a step in the customer journey that calls the customer using an AI agent or a customer service representative. This step needs integration with Contact Center, where both AI and human agents are managed.
+Text message conversation is a journey action (step) in the customer journey that engages customer in a conversation over the text messaging (SMS) channel using an AI agent or a customer service representative. This step requires integration with Contact Center, which manages the text messaging channel and agents (AI and human agents).
+
+## Voice conversation
+
+Voice conversation is a journey action (step) in the customer journey that calls the customer using an AI agent or a customer service representative. This step requires integration with Contact Center, which manages the telephony (voice) channel and agents (AI and human agents).
 
 ## Proactive engagement
 

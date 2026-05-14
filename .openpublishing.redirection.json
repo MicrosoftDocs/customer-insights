@@ -3570,6 +3570,11 @@
       "source_path": "ci-docs/journeys/real-time-marketing-optimize-lead-management.md",
       "redirect_url": "/dynamics365/customer-insights/journeys/create-records-activities",
       "redirect_document_id": false
+    },
+        {
+      "source_path": "ci-docs/journeys/real-time-marketing-use-copilot-create-journey.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/journey-creation-agent",
+      "redirect_document_id": false
     }
   ]
 }

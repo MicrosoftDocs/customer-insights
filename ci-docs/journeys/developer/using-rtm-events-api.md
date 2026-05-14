@@ -1,7 +1,7 @@
 ---
 title: Use the events API in real-time journeys
 description: Learn how to use the events API to access date from events, sessions, session tracks, and passes in real-time journeys.
-ms.date: 03/25/2026
+ms.date: 05/13/2026
 ms.topic: overview
 author: alfergus
 ms.author: colinbirkett
@@ -141,24 +141,33 @@ The default event registration settings are used when processing submissions fro
     ]
 }
 ```
-## Performance & Limits
-The Event API supports high-volume registration scenarios through asynchronous processing, smart caching, and built-in retry logic. 
 
-When a registration request arrives via the Event API, the **system**:
+## Performance and limits
+
+The event API supports high-volume registration scenarios through asynchronous processing, smart caching, and built-in retry logic. 
+
+When a registration request arrives through the event API, the **system**:
+
 - Validates that the event is active and all related entities are in a valid state
 - Returns an immediate success response to the caller.
 - Starts a background work item processor to create the event registration and associated entities asynchronously.
 
-**Caching Behavior:**
-- Read cache: The system applies a 10-minute cache for event and entity validation. This reduces redundant reads to Dataverse and improves throughput under load.
- Note: The read cache affects validation only, not the registration records themselves.
+### Caching Behavior
 
-**Retry logic and failure handling:**
-If the background processor fails to create an event registration, the system automatically retries for up to 6 hours. This applies to both synchronous and asynchronous failure scenarios, ensuring data reliability without requiring manual intervention.
+**Read cache**: The system applies a 10-minute cache for event and entity validation. This reduces redundant reads to Dataverse and improves throughput under load.
 
-**Throughput and dataverse limits:**
-The primary limiting factor for formless registration scenarios is the rate at which ticket registration entities can be created in Dataverse. Under normal conditions, Dataverse enforces a limit of 6,000 API requests, within a five-minute sliding window, per user and web server. The platform can return a 429 Too Many Requests error if these limits are exceeded. Learn more: [Service protection API limits](https://learn.microsoft.com/en-us/power-apps/developer/data-platform/api-limits?tabs=sdk).
+> [!NOTE] 
+> The read cache affects validation only, not the registration records themselves.
+
+### Retry logic and failure handling
+
+If the background processor fails to create an event registration, the system automatically retries for up to six hours. This applies to synchronous and asynchronous failure scenarios, ensuring data reliability without requiring manual intervention.
+
+### Throughput and dataverse limits
+
+The primary limiting factor for formless registration scenarios is the rate at which ticket registration entities can be created in Dataverse. Under normal conditions, Dataverse enforces a limit of 6,000 API requests, within a five-minute sliding window, per user and web server. The platform can return a `429 Too Many Requests` error if these limits are exceeded. Learn more: [Service protection API limits](/power-apps/developer/data-platform/api-limits?tabs=sdk).
  
-Important: If the event uses a payment gateway, additional validation steps may apply, and effective throughput may be lower. Customers using payment gateways should validate caching behavior for their specific setup.
+> [!IMPORTANT]
+> If the event uses a payment gateway, additional validation steps may apply, and effective throughput may be lower. Customers using payment gateways should validate caching behavior for their specific setup.
 
 [!INCLUDE [footer-include](.././includes/footer-banner.md)]

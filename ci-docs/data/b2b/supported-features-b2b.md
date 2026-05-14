@@ -1,7 +1,7 @@
 ---
 title: "Supported feature areas"
 description: "Learn about supported features for business accounts (B2B) in Dynamics 365 Customer Insights - Data" 
-ms.date: 02/06/2024
+ms.date: 04/28/2026
 ms.reviewer: v-wendysmith
 ms.topic: overview
 author: Scott-Stabbert
@@ -14,7 +14,7 @@ ms.custom: bap-template
 This article describes information specific to legacy B2B environments. For all other information related to Customer Insights - Data, see [Dynamics 365 Customer Insights - Data documentation](../index.yml).
 
 > [!NOTE]
-> The legacy B2B version won't be updated with new features being added to the standard version of Customer Insights - Data.
+> This documentation is for customers previously onboarded to B2B environments. New customer requests for B2B mode aren't being accepted. B2B won't be updated with new features being added to the standard version of Customer Insights - Data.
 
 ## Supported features overview
 
