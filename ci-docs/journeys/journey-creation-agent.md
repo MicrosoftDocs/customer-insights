@@ -15,6 +15,9 @@ ms.reviewer: alfergus
 
 Journey Creation Agent is an AI-powered assistant in Dynamics 365 Customer Insights - Journeys that lets you build customer journey structures through natural language conversation. Instead of manually configuring each step, you describe your marketing goal in plain language, and the agent scaffolds the journey flow, timing, and branching logic for you.
 
+>[!Note]
+> Journey Creation Agent is available as part of 1.1.65002.153 update. To use Journey Creation Agent, navigate to Settings > Versions and upgrade to 1.1.65002.153.
+
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note.md)]
 
 ## Key benefits
