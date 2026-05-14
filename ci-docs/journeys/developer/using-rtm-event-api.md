@@ -1,22 +1,22 @@
 ---
-title: Use the events API in real-time journeys
-description: Learn how to use the events API to access date from events, sessions, session tracks, and passes in real-time journeys.
-ms.date: 05/13/2026
+title: Use the event API in real-time journeys
+description: Learn how to use the event API to access date from events, sessions, session tracks, and passes in real-time journeys.
+ms.date: 05/14/2026
 ms.topic: overview
-author: alfergus
-ms.author: colinbirkett
+author: terezakirk
+ms.author: alfergus
 search.audienceType: 
   - developer
 ms.custom: sfi-image-nochange
 ---
 
-# Use the events API in real-time journeys
+# Use the event API in real-time journeys
 
-The events API is a programmatic method to access data from events, sessions, session tracks, passes, speakers, and sponsorships. Additionally, the events API allows you to register for events and sessions.
+The event API is a programmatic method to access data from events, sessions, session tracks, passes, speakers, and sponsorships. Additionally, the event API allows you to register for events and sessions.
 
 The API accessed is over HTTPS protocol and is accessed from the API endpoint that you receive while creating a web application token. All data is sent and received as JSON.
 
-## Register for the events API
+## Register for the event API
 
 In the **Settings** section under **Event management** > **Web Applications**, create a new web application. It's important to select the correct origin. For example, if you select https://contoso.com, JavaScript hosted on different domain won't be able to access the event management API.
 
@@ -32,7 +32,7 @@ You can select the link and copy and paste the API contract to an OpenAPI editor
 
 ## Create an event page or event portal  
 
-The events API allows you to create a customized event page and an event portal that lists all available events that are live and published using the “Custom solution using event API” publishing option. The events API allows you to:  
+The event API allows you to create a customized event page and an event portal that lists all available events that are live and published using the “Custom solution using event API” publishing option. The event API allows you to:  
 
 - Retrieve a list of live events that includes their name, description, location, and time.
 - For the event page, it allows you to retrieve key information about the event such as:
@@ -47,7 +47,7 @@ The events API allows you to create a customized event page and an event portal 
 
 ## Create a custom event registration experience  
 
-The events API also allows you to create a registration submission without the need to use real-time marketing forms, while still benefiting from important features such as matching strategy, consent, audience settings, and more.
+The event API also allows you to create a registration submission without the need to use real-time marketing forms, while still benefiting from important features such as matching strategy, consent, audience settings, and more.
 
 First, define the key settings for your audience by navigating to **Settings** > **Event management** > **Event registration settings** and define:
 

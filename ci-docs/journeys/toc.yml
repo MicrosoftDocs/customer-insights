@@ -492,8 +492,8 @@
     items:
     - name: Use the Create Journey From Template API
       href: developer/create-journey-template-api.md
-    - name: Use the events API in real-time journeys
-      href: developer/using-rtm-events-api.md
+    - name: Use the event API in real-time journeys
+      href: developer/using-rtm-event-api.md
     - name: Create a segment using the Web API
       href: real-time-marketing-api-segment.md
     - name: Use the email API to access emails on the interaction timeline

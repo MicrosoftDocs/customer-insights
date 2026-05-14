@@ -126,7 +126,7 @@ Learn how to make the most of the new Dynamics 365 Customer Insights features in
     - [Docs](./developer/using-rtm-events-api.md)
 
 - **Create an event portal on your own website using the web application**
-    -The event portal web application provides a lightweight, multilingual, and mobile-responsive interface for showcasing live events from the Dynamics 365 events API, enabling users to search by name or description, view detailed event information, and register directly using embedded Customer Insights - Journeys forms. It's built with plain JavaScript, HTML, and CSS, and supports fast deployment and easy customization.
+    -The event portal web application provides a lightweight, multilingual, and mobile-responsive interface for showcasing live events from the Dynamics 365 event API, enabling users to search by name or description, view detailed event information, and register directly using embedded Customer Insights - Journeys forms. It's built with plain JavaScript, HTML, and CSS, and supports fast deployment and easy customization.
      - [Docs](./developer/event-portal-web-application.md)
 
 #### Public preview
@@ -192,8 +192,8 @@ Learn how to make the most of the new Dynamics 365 Customer Insights features in
 
 #### Monthly enhancements
 
-- **Using the events API in real-time journeys**
-    - Events play a pivotal role in your business strategy by helping you acquire and engage customers. Your clients need a centralized location where they can discover and learn about the events you organize. The events API is a programmatic method to access data of events, sessions, session tracks, passes, speakers, and sponsorships, which enables you to quickly create a comprehensive hub where customers can access important event details and register.
+- **Using the event API in real-time journeys**
+    - Events play a pivotal role in your business strategy by helping you acquire and engage customers. Your clients need a centralized location where they can discover and learn about the events you organize. The event API is a programmatic method to access data of events, sessions, session tracks, passes, speakers, and sponsorships, which enables you to quickly create a comprehensive hub where customers can access important event details and register.
 
         With this enhancement, we have extended the existing API with the following capabilities: 
     1. Check in endpoint
@@ -489,7 +489,7 @@ Learn how to make the most of the new Dynamics 365 Customer Insights features in
     - [Docs](event-portal-template.md)
 
 - **Create an event portal on your own website** 
-    - Events are a pivotal element of your business strategy, aiding in customer acquisition and engagement. A centralized location is essential for your clients to discover and learn about events you are organizing. The new events API offers a programmatic method to access data of events, sessions, session tracks, passes, speakers, and sponsorships. Additionally, it allows you to register for events and sessions.
+    - Events are a pivotal element of your business strategy, aiding in customer acquisition and engagement. A centralized location is essential for your clients to discover and learn about events you are organizing. The new event API offers a programmatic method to access data of events, sessions, session tracks, passes, speakers, and sponsorships. Additionally, it allows you to register for events and sessions.
     - [Release plan](/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/create-event-portal-own-website) 
     - [Docs](../journeys/developer/using-rtm-events-api.md)
 
