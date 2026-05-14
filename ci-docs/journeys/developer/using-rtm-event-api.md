@@ -26,7 +26,7 @@ After you create a web application, you see a link to the OpenAPI specification 
 
 :::image type="content" source="../media/event-api-endpoint.png" alt-text="Event API endpoint screenshot." lightbox="../media/event-api-endpoint.png":::
 
-You can select the link and copy and paste the API contract to an OpenAPI editor such as [Swagger Editor](https://editor-next.swagger.io/), which automatically pregenerates a wrapper you can use to discover your API. To access your API, you must be authorized (provide the **Token** column).
+You can select the link and copy and paste the API contract to an OpenAPI editor such as [Swagger Editor](https://editor-next.swagger.io/), which automatically pre-generates a wrapper you can use to discover your API. To access your API, you must be authorized (provide the **Token** column).
 
 :::image type="content" source="../media/event-api-swagger.png" alt-text="Event API Swagger Editor screenshot." lightbox="../media/event-api-swagger.png":::
 
@@ -163,7 +163,7 @@ When a registration request arrives through the event API, the **system**:
 
 If the background processor fails to create an event registration, the system automatically retries for up to six hours. This applies to synchronous and asynchronous failure scenarios, ensuring data reliability without requiring manual intervention.
 
-### Throughput and dataverse limits
+### Throughput and Dataverse limits
 
 The primary limiting factor for formless registration scenarios is the rate at which ticket registration entities can be created in Dataverse. Under normal conditions, Dataverse enforces a limit of 6,000 API requests, within a five-minute sliding window, per user and web server. The platform can return a `429 Too Many Requests` error if these limits are exceeded. Learn more: [Service protection API limits](/power-apps/developer/data-platform/api-limits?tabs=sdk).
  

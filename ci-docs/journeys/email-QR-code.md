@@ -1,9 +1,9 @@
 ---
 title: Use QR codes for event registration, links to content, or URLs
 description: Learn how to use QR codes for event registration, links to content, or URLs in email messages in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/19/2025
+ms.date: 05/14/2026
 ms.topic: how-to
-author: alfergus
+author: terezakirk
 ms.author: alfergus
 search.audienceType: 
   - admin
@@ -76,19 +76,24 @@ You can use a trigger as a data source for dynamic data for event details includ
 
 Test your email by sending a preview to yourself or a colleague.
 
-### Troubleshooting QR Code Issues
-**QR Code Missing from Email**
-If the QR code is missing from the registration-confirmation email, it is often due to a missing Event Registration entity at the time the email is sent. To resolve this issue:
+### Troubleshooting QR code issues
 
-- Ensure that the Event Registration for the given contact is present in the system. You can verify this in the "Registrations" section of Event Management.
-- Confirm that the email is sent after the Event Registration is created.
+#### QR code missing from email
 
-**Missing Event Registration ID**
-If the Event Registration ID is missing or not generated, follow these steps:
+If the QR code is missing from the registration confirmation email, it's often due to a missing event registration entity at the time the email was sent. To resolve this issue:
+
+- Ensure that the event registration for the given contact is present in the system. You can verify this in the **Registrations** section of **Event management**.
+- Confirm that the email is sent *after* the event registration is created.
+
+#### Missing event registration ID
+
+If the event registration ID is missing or not generated, follow these steps:
 
 - If there are heavy customizations (such as a custom managed solution or an active layer on top of the event form or event registration form), remove the active layer. This often resolves the issue, as active layers can block updates from managed solutions.
 
-The QR code provides only a registration ID. Custom development is required to implement the necessary verification, check-in, and registration features. Consider developing a custom smartphone app for these purposes.
-Adding QR codes to event emails with triggered journeys and dynamic data makes event management more personal and efficient, especially during check-in.
+> [!NOTE]
+> The QR code only provides a registration ID. Custom development is required to implement the necessary verification, check-in, and registration features. Consider developing a custom smartphone app for these purposes.
+>
+> Adding QR codes to event emails with triggered journeys and dynamic data makes event management more personal and efficient, especially during check-in.
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]

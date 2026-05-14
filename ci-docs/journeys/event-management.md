@@ -1,9 +1,9 @@
 ---
 title: Plan, publicize, and collect registrations for events
 description: An overview of event-management features (including planning, logistics, sponsors, speakers, promotion, and registration) in  Dynamics 365 Customer Insights - Journeys.
-ms.date: 03/26/2026
+ms.date: 05/14/2026
 ms.topic: article
-author: alfergus
+author: terezakirk
 ms.author: alfergus
 search.audienceType: 
   - admin
@@ -13,7 +13,7 @@ search.audienceType:
 
 # Event planning and management
 
-Live events and webinars are vital sales and marketing channels. But events and webinars can be complex to arrange, execute, and follow up on. The Dynamics 365 Customer Insights - Journeys event management feature helps you every step of the way, from initial planning and budgeting through promotion and publication, attendee registration, webinar broadcasting, final analytics, lead generation, and evaluation of ROI.
+Live events and webinars are vital sales and marketing channels. But events and webinars can be complex to arrange, execute, and follow up on. The Dynamics 365 Customer Insights - Journeys event management feature helps you every step of the way, from initial planning and budgeting through promotion and publication, attendee registration, webinar broadcasting, final analytics, lead generation, and evaluation of return on investment.
 
 Key event-management features include:
 
@@ -32,12 +32,12 @@ To create, view, and edit your events and all event-related records, go to the *
 Use other parts of the **Events** work area to work with specific record types that relate to event planning, such as logistics, sessions, attendees, sponsors, and more. Depending on what you are doing at the time, you might access these types of records when working in the parent event record, or you could go to the area dedicated to a specific record type to work with that type of record only, or work across events.
 
 > [!NOTE]
-> To be able to have full access to Marketing Event related capabilities, please add below security roles to your user via Advanced settings > Security > Users > your user > Manage roles:
-[Manage user accounts, user licenses, and security roles - Dynamics 365 Customer Insights | Microsoft Learn](https://learn.microsoft.com/en-us/dynamics365/customer-insights/journeys/admin-users-licenses-roles#event-management-security-roles)
-- Event Administrator
-- Event Administrator (BU Level)
-- Event Planner
-- Event Planner (BU Level)
-
+> To ensure full access to marketing event-related capabilities, add the following security roles to your user by navigating to **Advanced settings** > **Security** > **Users** > *[your user]* > **Manage roles**:
+> - Event Administrator
+> - Event Administrator (BU Level)
+> - Event Planner
+> - Event Planner (BU Level)
+>
+> Learn more: [Manage user accounts, user licenses, and security roles](admin-users-licenses-roles.md#event-management-security-roles).
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
