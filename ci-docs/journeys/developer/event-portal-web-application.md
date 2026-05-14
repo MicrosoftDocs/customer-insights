@@ -1,7 +1,7 @@
 ---
 title: Create an event portal using the web application
 description: Learn how to use the lightweight, customizable web application to create and host event portals on your domains.
-ms.date: 03/25/2026
+ms.date: 05/14/2026
 ms.topic: overview
 author: terezakirk
 ms.author: alfergus
@@ -42,7 +42,7 @@ The portal needs a web application record with its origin set to the domain wher
 You're asked to enter:
 
 1. Name  
-1. Domain (add your domain as the origin, for example, https://yourdomain.com)
+1. Domain (add your domain as the origin, for example, https://contoso.com)
 1. Token (automatically provided)  
 1. Choose if this web app is the default web app
 

@@ -3577,8 +3577,8 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "ci-docs/journeys/using-rtm-events-api.md",
-      "redirect_url": "/dynamics365/customer-insights/journeys/using-rtm-event-api",
+      "source_path": "ci-docs/journeys/developer/using-rtm-events-api.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/developer/using-rtm-event-api",
       "redirect_document_id": false
     }
   ]
