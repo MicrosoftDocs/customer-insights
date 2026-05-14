@@ -22,6 +22,9 @@ AI Hub aligns with tenant-level governance defined in Copilot Hub in the Power P
 > [!NOTE]
 > AI Hub control is available to the Admin user role by default. If you use custom roles and permissions and want to add specific permissions for agent settings, the entity is *msdynmkt_agentsettings*.
 
+>[!Note]
+> AI Hub is available as part of 1.1.65002.153 update. To use AI Hub, navigate to Settings > Versions and upgrade to 1.1.65002.153.
+
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note.md)]
 
 ## How AI agents work in Dynamics 365 Customer Insights – Journeys
