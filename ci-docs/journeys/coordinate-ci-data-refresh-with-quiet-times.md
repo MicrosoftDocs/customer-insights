@@ -56,9 +56,9 @@ When a journey processes a contact before hydration has finished writing the mat
 
 Common symptoms include:
 
-- **Empty or default personalization values.** A token that maps to a measure that hasn't yet been hydrated renders as empty or as the configured fallback.
-- **Contacts skipped at the consent gate.** If a consent attribute on the profile hasn't yet been written, the contact is treated as not consented and isn't sent the message.
-- **Inconsistent measure values within a single send.** Two contacts in the same batch can be processed on either side of the hydration update, producing different values.
+- **Empty or default personalization values**: A token that maps to a measure that hasn't yet been hydrated renders as empty or as the configured fallback.
+- **Contacts skipped at the consent gate**: If a consent attribute on the profile hasn't yet been written, the contact is treated as not consented and isn't sent the message.
+- **Inconsistent measure values within a single send**: Two contacts in the same batch can be processed on either side of the hydration update, producing different values.
 
 These symptoms are more pronounced when continuous segment evaluation is enabled, because the period during which incomplete data can be read is no longer limited to a discrete window.
 
@@ -73,23 +73,23 @@ To make sure a journey only evaluates personalization and consent against fully 
 Configure the quiet time so that it:
 
 1. **Begins before** the Customer Insights - Data refresh starts, with a few minutes of margin.
-2. **Ends after** hydration has completed, not after segmentation has completed. Hydration generally takes longer than segmentation.
-3. **Includes a buffer** for variance in refresh duration. Refresh duration changes with data volume, so a quiet time that fits the median refresh can be too short for a heavier run.
+1. **Ends after** hydration has completed, not after segmentation has completed. Hydration generally takes longer than segmentation.
+1. **Includes a buffer** for variance in refresh duration. Refresh duration changes with data volume, so a quiet time that fits the median refresh can be too short for a heavier run.
 
 For details on configuring quiet times, see [Use quiet times in your journey](journey-quiet-times.md). Quiet times can be configured separately for commercial and transactional messages, and can use either the journey's time zone or each customer's time zone.
 
 ### Steps to apply this configuration
 
 1. Identify the Customer Insights - Data refresh schedule for the environment. See [Schedule system refresh](/dynamics365/customer-insights/data/schedule-refresh).
-2. Measure the typical end-to-end refresh duration, including hydration, over a representative period. Use the longest observed duration as the basis for your quiet time, not the average.
-3. Set quiet times on every journey that uses personalization tokens or evaluates consent against Customer Insights - Data sourced entities.
-4. Review the configuration after changes to segment definitions, measure definitions, or source data volumes, because any of these can change refresh duration.
+1. Measure the typical end-to-end refresh duration, including hydration, over a representative period. Use the longest observed duration as the basis for your quiet time, not the average.
+1. Set quiet times on every journey that uses personalization tokens or evaluates consent against Customer Insights - Data sourced entities.
+1. Review the configuration after changes to segment definitions, measure definitions, or source data volumes, because any of these can change refresh duration.
 
 ## Considerations
 
-- **Scope of quiet times.** Quiet times apply to messages sent by the journey. Other applications that read the same Dataverse tables outside the journey runtime aren't affected by this setting.
-- **Quiet times defer sends; they don't change the underlying data.** A journey that processes after a quiet time ends reads Dataverse at the moment processing happens. The recommendation works because, by that moment, the data has been fully hydrated.
-- **Time zones.** Quiet times are evaluated in the journey's time zone or in the customer's time zone, depending on configuration. Customer Insights - Data refresh schedules are typically configured in UTC. Convert times explicitly when configuring quiet times.
+- **Scope of quiet times**: Quiet times apply to messages sent by the journey. Other applications that read the same Dataverse tables outside the journey runtime aren't affected by this setting.
+- **Quiet times defer sends; they don't change the underlying data**: A journey that processes after a quiet time ends reads Dataverse at the moment processing happens. The recommendation works because, by that moment, the data has been fully hydrated.
+- **Time zones**: Quiet times are evaluated in the journey's time zone or in the customer's time zone, depending on configuration. Customer Insights - Data refresh schedules are typically configured in UTC. Convert times explicitly when configuring quiet times.
 
 ## Related information
 
