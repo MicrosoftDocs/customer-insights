@@ -59,4 +59,33 @@ The method to view and edit registration details for a session-level event depen
 - To view all registrations for the event (people who registered for at least one session), open the relevant event record, go to the **Registration and attendance** tab, and scroll to the **Event registration** section. You can also add or remove registrations from here.
 - To view all registrations for a specific session, open the relevant event record, go to the **Agenda** tab, scroll to the **Sessions** list, and select a session. In the open session record, go to the **Registration and attendance** tab and scroll to the **Sessions registrations** list. You can also add or remove registrations from here.
 
+# Troubleshooting guide 
+## Resolving Realtime Event and Session Capacity Validation Issues
+**Common Validation Errors**
+"Event capacity cannot be smaller than capacity of any of its sessions. Please set the event capacity to a higher value, or revisit the session capacities." or "Session capacity cannot be higher than event capacity."
+
+**Recommended Steps to Prevent and Mitigate Issues**
+- Set the capacities for all sessions before setting the overall event capacity.
+- Ensure the event capacity is not smaller than any of its session capacities.
+
+Note: If you encounter issues saving events or sessions during these steps, refresh your browser and continue.
+
+1. Enabling Session Capacity Fields
+If session capacity fields are hidden, enable the "Allow attendees to register for sessions" setting under the Form tab. This will make the session maximum capacity field visible.
+
+2. Error: Event Capacity Smaller Than Session Capacity
+**Solution**:
+- Clear the event capacity field and save the event.
+- Set capacities for all sessions (including drafts) to be less than or equal to the intended event capacity.
+- Return to the event and set the event capacity to the intended value.
+
+3. Error: Session Capacity Higher Than Event Capacity
+**Solution**:
+- Clear the event capacity and save the event.
+- Set the session capacity to the intended value.
+- Return to the event and set its capacity to a value at least as high as any session capacities.
+
+4. Informational Warning: Sum of Session Capacities Less Than Event Capacity
+Note: This is informational and does not indicate an error. You can safely maintain your current capacities.
+
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
