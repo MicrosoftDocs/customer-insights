@@ -1,7 +1,7 @@
 ---
 title: Migrate Dynamics 365 Customer Insights - Journeys between tenants
 description: Discover how to set up your environment for a tenant-to-tenant migration to start the transfer process between tenants.
-ms.date: 04/29/2026
+ms.date: 05/14/2026
 ms.topic: upgrade-and-migration-article
 author: alfergus
 ms.author: alfergus
