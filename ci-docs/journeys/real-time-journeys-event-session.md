@@ -1,9 +1,9 @@
 ---
 title: Set up session-level registration
 description: Learn how to set up session-level registration in Dynamics 365 Customer Insights - Journeys.
-ms.date: 02/25/2025
+ms.date: 05/14/2026
 ms.topic: article
-author: alfergus
+author: terezakirk
 ms.author: alfergus
 search.audienceType: 
   - admin
@@ -32,7 +32,7 @@ Additional settings include:
 > [!Important]
 > The **Allow attendees to register for sessions** setting used to be on the **Agenda** tab and was called "Allow registrants to create their own agenda."
 
-It’s important to note that session-level registration requires the registration form to include the sessions. This is done by using the **Sessions** element in the form editor so that attendees can see the sessions and have the option to sign up for sessions they select. We've recently updated the styling of the sessions list element to include better date and time formatting and full capacity notification. If you're using a form with sessions that's been customized, you'll have to remove the sessions element and add it back in to see the latest changes.
+It’s important to note that session-level registration requires the registration form to include the sessions. This is done by using the **Sessions** element in the form editor so that attendees can see the sessions and have the option to sign up for sessions they select. We've recently updated the styling of the sessions list element to include better date and time formatting and full capacity notification. If you're using a form with sessions that's been customized, you have to remove the sessions element and add it back in to see the latest changes.
 
 :::image type="content" source="media/sessions-form-element.png" alt-text="Screenshot of the sessions form element." lightbox="media/sessions-form-element.png":::
 
@@ -43,7 +43,7 @@ To access the registration form for the event, select the event, then go to **We
 This opens a special version of the form editor that has extra elements for your event including the **About**, **Sessions**, and **Speakers** elements. 
 
 > [!NOTE]
-> The sessions element uses a dynamic list functionality, but it has a few limitations. At present, it's not possible to customize the date and time format of the sessions; the date and time is by default displayed in United States format. It's also not possible to change the order of the sessions; they are ordered based on the record creation date. Lastly, it's not possible to add more attributes and information about the sessions. We plan to address this limitation in the near future.
+> The sessions element uses a dynamic list functionality, but it has a few limitations. At present, it's not possible to customize the date and time format of the sessions; the date and time is by default displayed in United States format. It's also not possible to change the order of the sessions; they're ordered based on the record creation date. Lastly, it's not possible to add more attributes and information about the sessions. We plan to address this limitation soon.
 
 ## Style your default registration forms with sessions using Theme
 
@@ -59,33 +59,41 @@ The method to view and edit registration details for a session-level event depen
 - To view all registrations for the event (people who registered for at least one session), open the relevant event record, go to the **Registration and attendance** tab, and scroll to the **Event registration** section. You can also add or remove registrations from here.
 - To view all registrations for a specific session, open the relevant event record, go to the **Agenda** tab, scroll to the **Sessions** list, and select a session. In the open session record, go to the **Registration and attendance** tab and scroll to the **Sessions registrations** list. You can also add or remove registrations from here.
 
-# Troubleshooting guide 
-## Resolving Realtime Event and Session Capacity Validation Issues
-**Common Validation Errors**
-"Event capacity cannot be smaller than capacity of any of its sessions. Please set the event capacity to a higher value, or revisit the session capacities." or "Session capacity cannot be higher than event capacity."
+## Troubleshoot event and session capacity validation issues
 
-**Recommended Steps to Prevent and Mitigate Issues**
+### Common validation errors
+
+- "Event capacity cannot be smaller than capacity of any of its sessions. Please set the event capacity to a higher value, or revisit the session capacities."
+- "Session capacity cannot be higher than event capacity."
+
+### Recommended steps to prevent and mitigate issues
+
 - Set the capacities for all sessions before setting the overall event capacity.
-- Ensure the event capacity is not smaller than any of its session capacities.
+- Ensure the event capacity isn't smaller than any of its session capacities.
 
-Note: If you encounter issues saving events or sessions during these steps, refresh your browser and continue.
+> [!NOTE]
+> If you encounter issues saving events or sessions during these steps, refresh your browser and continue.
 
-1. Enabling Session Capacity Fields
-If session capacity fields are hidden, enable the "Allow attendees to register for sessions" setting under the Form tab. This will make the session maximum capacity field visible.
+1. Enable session capacity fields
 
-2. Error: Event Capacity Smaller Than Session Capacity
-**Solution**:
-- Clear the event capacity field and save the event.
-- Set capacities for all sessions (including drafts) to be less than or equal to the intended event capacity.
-- Return to the event and set the event capacity to the intended value.
+    If session capacity fields are hidden, enable the "Allow attendees to register for sessions" setting under the **Form** tab. This makes the session maximum capacity field visible.
 
-3. Error: Session Capacity Higher Than Event Capacity
-**Solution**:
-- Clear the event capacity and save the event.
-- Set the session capacity to the intended value.
-- Return to the event and set its capacity to a value at least as high as any session capacities.
+1. **Error**: Event capacity is smaller than session capacity
 
-4. Informational Warning: Sum of Session Capacities Less Than Event Capacity
-Note: This is informational and does not indicate an error. You can safely maintain your current capacities.
+    **Solution**:
+    - Clear the event capacity field and save the event.
+    - Set capacities for all sessions (including drafts) to be less than or equal to the intended event capacity.
+    - Return to the event and set the event capacity to the intended value.
+
+1. **Error**: Session capacity is higher than event capacity
+
+    **Solution**:
+    - Clear the event capacity and save the event.
+    - Set the session capacity to the intended value.
+    - Return to the event and set its capacity to a value that's at least as high as any session capacities.
+
+1. **Informational warning**: Sum of session capacities less than event capacity
+
+    This is an informational warning and doesn't indicate an error. You can safely maintain your current capacities.
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]

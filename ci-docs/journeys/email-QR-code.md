@@ -76,16 +76,16 @@ You can use a trigger as a data source for dynamic data for event details includ
 
 Test your email by sending a preview to yourself or a colleague.
 
-### Troubleshooting QR code issues
+## Troubleshoot QR code issues
 
-#### QR code missing from email
+### QR code missing from email
 
 If the QR code is missing from the registration confirmation email, it's often due to a missing event registration entity at the time the email was sent. To resolve this issue:
 
 - Ensure that the event registration for the given contact is present in the system. You can verify this in the **Registrations** section of **Event management**.
 - Confirm that the email is sent *after* the event registration is created.
 
-#### Missing event registration ID
+### Missing event registration ID
 
 If the event registration ID is missing or not generated, follow these steps:
 
