@@ -42,7 +42,7 @@ For more information, see [Build an event registration website using Power Pages
 
 If you're currently hosting the Angular app event portal on your own infrastructure (that is, not using Power Portals), you can keep using it but you need to self-maintain the app. There is no support for the Angular app by Microsoft.
 
-The recommended migration path is to build a new event registration experience using the event web application. The event web application is a fast, lightweight, and customizable solution for showcasing live events from the Dynamics 365 events API directly on your website. It provides a responsive, multilingual interface that allows attendees to search, explore, and register for events effortlessly using the real-time journeys registration form. The registration form reads the `readableEventId` parameter from the URL to dynamically render details about the selected event. For more information, see [Create an event portal on your website using web application](developer/event-portal-web-application.md).
+The recommended migration path is to build a new event registration experience using the event web application. The event web application is a fast, lightweight, and customizable solution for showcasing live events from the Dynamics 365 event API directly on your website. It provides a responsive, multilingual interface that allows attendees to search, explore, and register for events effortlessly using the real-time journeys registration form. The registration form reads the `readableEventId` parameter from the URL to dynamically render details about the selected event. For more information, see [Create an event portal on your website using web application](developer/event-portal-web-application.md).
 
 An alternative is to build a new event registration website using Power Pages studio or use the provided Power Pages template, as described in the [Event portal hosted on Power Portals](migrate-event-registration.md#event-portal-hosted-on-power-portals) section.
 
@@ -56,7 +56,7 @@ The recommended migration path for event registration marketing forms is to repl
 
 The outbound marketing event management API is being deprecated along with the outbound marketing module.
 
-The event management API in real-time journeys is backward compatible. It lets you list all events (outbound marketing and real-time journeys) and enables registration for both types of events. For more information, see [Using the events API in real-time journeys](./developer/using-rtm-events-api.md).
+The event management API in real-time journeys is backward compatible. It lets you list all events (outbound marketing and real-time journeys) and enables registration for both types of events. For more information, see [Using the event API in real-time journeys](./developer/using-rtm-event-api.md).
 
 > [!NOTE]
 > The outbound marketing-related flow in the new real-time journeys event API is being deprecated along with the outbound marketing module.
@@ -65,7 +65,7 @@ The event management API in real-time journeys is backward compatible. It lets y
 
 Outside of current architecture, the outbound Angular portal doesn't work with real-time journeys. It can function with some modifications, but we don't recommend continuing to use the outbound Angular portal. After the outbound module is deprecated, the Angular app will no longer be supported and there will be no future security updates. 
 
-If you still want to use the Angular portal despite the risks and limitations above, you can rebuild the Angular app to use the new real-time journeys event management API for the “list of events” functionality. For more information, see [Using the events API in real-time journeys](./developer/using-rtm-events-api.md).
+If you still want to use the Angular portal despite the risks and limitations above, you can rebuild the Angular app to use the new real-time journeys event management API for the “list of events” functionality. For more information, see [Using the event API in real-time journeys](./developer/using-rtm-event-api.md).
 
 For the event registration functionality, there are two options:
 
