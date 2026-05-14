@@ -23,6 +23,9 @@ After your event is planned and set up, it's time to start promoting it! Custome
 - Set up a customer journey that sends your marketing email message to all the relevant contacts, registers message interactions, and reacts to event registrations. More information: [Use customer journeys to create automated campaigns](customer-journeys-create-automated-campaigns.md).
 - Create banners and social media posts to promote your event. Include a link to your event website in each post, and use the Customer Insights - Journeys redirect-URL feature to create short URLs that register clicks with Customer Insights - Journeys and instantly forward contacts to your event website. You could create a different redirect URL for each social-media site, banner, or message, which would enable you to collect separate click results for each URL, so you can evaluate the success of each channel or initiative. More information: [Set up redirect URLs](register-engagement.md#set-up-redirect-urls)
 
+> [!NOTE]
+> If your event is now showing up in events lookup, please check if the Event is published and it is in live state.
+
 ## Register attendees for events and sessions
 
 Event registration enables attendees to sign up for your event and reserve their seats for specific sessions or tracks. It also helps you gauge interest in the event, and to signal demand to event planners for purposes such as capacity planning. Event managers can use registration records to evaluate in advance how many resources they'll need to have available, which sessions require larger rooms, or even whether a session should be canceled. Advance registration also enables attendees to be confident that their place is reserved for all the sessions they want to attend.

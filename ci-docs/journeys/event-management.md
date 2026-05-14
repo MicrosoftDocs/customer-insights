@@ -31,5 +31,13 @@ To create, view, and edit your events and all event-related records, go to the *
 
 Use other parts of the **Events** work area to work with specific record types that relate to event planning, such as logistics, sessions, attendees, sponsors, and more. Depending on what you are doing at the time, you might access these types of records when working in the parent event record, or you could go to the area dedicated to a specific record type to work with that type of record only, or work across events.
 
+> [!NOTE]
+> To be able to have full access to Marketing Event related capabilities, please add below security roles to your user via Advanced settings > Security > Users > your user > Manage roles:
+[Manage user accounts, user licenses, and security roles - Dynamics 365 Customer Insights | Microsoft Learn](https://learn.microsoft.com/en-us/dynamics365/customer-insights/journeys/admin-users-licenses-roles#event-management-security-roles)
+- Event Administrator
+- Event Administrator (BU Level)
+- Event Planner
+- Event Planner (BU Level)
+
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
