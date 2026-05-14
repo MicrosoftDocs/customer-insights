@@ -1,7 +1,7 @@
 ---
 title: New and upcoming features
 description: Discover the latest features, improvements, and bug fixes in Dynamics 365 Customer Insights - Journeys. Stay updated with our monthly release notes.
-ms.date: 05/07/2026
+ms.date: 05/14/2026
 ms.update-cycle: 180-days
 ms.topic: whats-new
 author: alfergus
@@ -35,25 +35,21 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 
 #### General availability
 
-- **Set message expirations to keep communication relevant**
-	- Customers may experience frustration when they receive outdated communications, such as expired coupons and irrelevant reminders. This creates confusion and diminishes their trust in your brand. You can now set expiration dates on your messages, ensuring that only current and relevant information reaches your audience. This keeps your customers engaged and satisfied with relevant communications in moments that matter.
-	- [Release plan](/dynamics365/release-plan/2026wave1/customer-insights/dynamics365-customer-insights-journeys/set-message-expirations-keep-communication-relevant)
-	- [Docs](message-expiration.md)
-
 - **Create effective audiences with marketing website interactions**
 	- Create targeted segments based on behavioral signals from marketing website interactions, including page visits and clicks. You can further refine your segment using information such as the name, type, or URL of the page visited.
 	- [Docs](real-time-marketing-redesigned-segment-builder.md#create-a-segment-using-interactions)
 
 #### Public preview
->[!Note]
-> The following features are available as part of 1.1.65002.153 update. To use AI Hub and Journey Creation Agent, navigate to Settings > Versions and upgrade to 1.1.65002.153.
+
+> [!NOTE]
+> The following features are available as part of the 1.1.65002.153 update. To use AI Hub and the Journey Creation Agent, navigate to **Settings** > **Versions** and upgrade to 1.1.65002.153.
 
 - **Create journeys in minutes with Journey Creation Agent**
-	- With the new Journey Creation Agent in Dynamics 365 Customer Insights - Journeys, anybody can create journeys in minutes even if they've never done it before. Instead of spending time getting the mechanics of the journey right, you can now ensure that you’re delivering the most personalized experience for your customers. Move from idea to execution in minutes, freeing up time and reducing dependency on technical experts.
+	- With the new Journey Creation Agent in Dynamics 365 Customer Insights - Journeys, anybody can create journeys in minutes, even if they've never done it before. Instead of spending time getting the mechanics of the journey right, you can now ensure you deliver the most personalized experience for your customers. Move from idea to execution in minutes, freeing up time and reducing dependency on technical experts.
 	- [Docs](journey-creation-agent.md)
 
 - **Govern Customer Insights - Journeys agents and Copilot centrally with Dynamics 365 AI Hub**
-	- Dynamics 365 AI Hub provides a single, in‑product location to manage all Customer Insights - Journeys agents and Copilot features for your environment. You can complete prerequisites, enable or disable agents, and configure guardrails such as follow‑up limits or processing caps, without navigating between tools. Because AI Hub is aligned with tenant‑level settings in Copilot Hub in Power Platform Admin Center, your environment automatically stays compliant with global governance policies.
+	- Dynamics 365 AI Hub provides a single, in‑product location to manage all Customer Insights - Journeys agents and Copilot features for your environment. You can complete prerequisites, enable or disable agents, and configure guardrails such as follow‑up limits or processing caps, without navigating between tools. Because AI Hub is aligned with tenant‑level settings in Copilot Hub in Power Platform Admin Center, your environment automatically remains compliant with global governance policies.
 	- [Release plan](/dynamics365/release-plan/2026wave1/customer-insights/dynamics365-customer-insights-journeys/close-leads-faster-automating-seamless-handoffs-between-marketing-sales)
 	- [Docs](ai-hub.md)
 
@@ -77,7 +73,7 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
     - The query viewer in the segment designer has been updated with improved formatting, making it easier to read and understand the query structure.
 
 - **Drag and drop attributes and conditions for faster segment editing**
-    - Build segments even faster with new drag and drop segment editing capabilities. You can drag in attributes, interactions, and segments from the right panel directly onto the design canvas to add them to existing groups or create new ones. You can also drag and drop groups and conditions within the canvas to quickly reorder elements.
+    - Build segments even faster with new drag-and-drop segment editing capabilities. You can drag in attributes, interactions, and segments from the right panel directly onto the design canvas to add them to existing groups or create new ones. You can also drag and drop groups and conditions within the canvas to quickly reorder elements.
 
 - **Audit history tab is now available for segments**
     - When auditing is enabled for segments, an “Audit history” tab is now available to make it easier to view past changes to the segment definition.
