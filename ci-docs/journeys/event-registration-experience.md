@@ -17,7 +17,7 @@ ms.custom:
 
 # Create a comprehensive event registration experience
 
-The event registration experience enables new attendees to register for events seamlessly. It's crucial to ensure the registration process is smooth while collecting all necessary information. The registration experience is powered by the [registration form](event-registration-experience.md#event-registration-form), a type of [Customer Insights - Journeys form](real-time-marketing-form-overview.md), or by the event API. For more information, see [Using the event API in real-time journeys](developer/using-rtm-events-api.md).
+The event registration experience enables new attendees to register for events seamlessly. It's crucial to ensure the registration process is smooth while collecting all necessary information. The registration experience is powered by the [registration form](event-registration-experience.md#event-registration-form), a type of [Customer Insights - Journeys form](real-time-marketing-form-overview.md), or by the event API. For more information, see [Using the event API in real-time journeys](developer/using-rtm-event-api.md).
 
 ## Building a single registration page versus an event portal
 
@@ -32,7 +32,7 @@ You can build an event registration experience as a single registration page or 
 
 - **Registration portal on Power Pages**: You can use the event registration template to build a website using Power Pages studio. For more information, see [Build an event portal using Power Pages](event-portal-template.md).
 - **Registration portal on your own domain built with the web application**: Use the out-of-box web application to build a registration portal hosted on your own domain. For more information, see [Create an event portal on your website using the web application](developer/event-portal-web-application.md).
-- **Custom solution using the event API**: For more information, see [Using the event API in real-time journeys](developer/using-rtm-events-api.md).
+- **Custom solution using the event API**: For more information, see [Using the event API in real-time journeys](developer/using-rtm-event-api.md).
 
 :::image type="content" source="media/publishing-web-application.png" alt-text="Screenshot of selecting an event portal using the web application in a dropdown." lightbox="media/publishing-web-application.png":::
 

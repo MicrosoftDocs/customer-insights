@@ -46,7 +46,7 @@ Creating and setting up events, tracks, sessions, speakers, and registrants is a
   
 ### Event registration and publishing
 
-The registration experience uses the [registration form](event-registration-experience.md#event-registration-form), a type of [Customer Insights - Journeys form](real-time-marketing-form-overview.md), or the event API [Using the event API in real-time journeys](developer/using-rtm-events-api.md).
+The registration experience uses the [registration form](event-registration-experience.md#event-registration-form), a type of [Customer Insights - Journeys form](real-time-marketing-form-overview.md), or the event API [Using the event API in real-time journeys](developer/using-rtm-event-api.md).
 
 There are various options to build an event registration experience depending on whether you want to build a single registration page or an event portal.
 
@@ -59,7 +59,7 @@ There are various options to build an event registration experience depending on
 
 - **Registration portal on Power Pages**: You can use the event registration template to build a website using Power Pages studio. For more information, see [Build an event registration website using Power Pages](event-portal-template.md).
 - **Registration portal on your own domain built with the web application**: Use the out-of-box web application to build a registration portal hosted on your own domain. For more information, see [Create an event portal on your website using the web application](developer/event-portal-web-application.md).
-- **Custom solution using the event API**: For more information, see [Using the event API in real-time journeys](developer/using-rtm-events-api.md).
+- **Custom solution using the event API**: For more information, see [Using the event API in real-time journeys](developer/using-rtm-event-api.md).
 
 ### Event communication
 
@@ -95,7 +95,7 @@ There were multiple options on how to build an event registration experience in 
 - **Event portal hosted on Power Portals**: Build a new event registration website using the Power Pages template. For more information, see [Build an event registration website using Power Pages](event-portal-template.md).
 - **Event portal not hosted on Power Portals**: The recommended migration path is to build a new event registration experience using the new web application. For more information, see [Create an event portal on your website using the web application](developer/event-portal-web-application.md).
 - **Outbound marketing form for event registration**: Replace these forms with real-time journeys event registration forms. For more information, see [Open the event management work area](open-events.md).
-- **Custom solution using outbound marketing event management API (not using Angular application)**: Use the new event API. For more information, see [Using the event API in real-time journeys](developer/using-rtm-events-api.md).
+- **Custom solution using outbound marketing event management API (not using Angular application)**: Use the new event API. For more information, see [Using the event API in real-time journeys](developer/using-rtm-event-api.md).
 
 For more information, see [Transition event registration experience](migrate-event-registration.md).
 

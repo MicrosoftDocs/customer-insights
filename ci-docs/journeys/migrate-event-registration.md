@@ -56,7 +56,7 @@ The recommended migration path for event registration marketing forms is to repl
 
 The outbound marketing event management API is being deprecated along with the outbound marketing module.
 
-The event management API in real-time journeys is backward compatible. It lets you list all events (outbound marketing and real-time journeys) and enables registration for both types of events. For more information, see [Using the event API in real-time journeys](./developer/using-rtm-events-api.md).
+The event management API in real-time journeys is backward compatible. It lets you list all events (outbound marketing and real-time journeys) and enables registration for both types of events. For more information, see [Using the event API in real-time journeys](./developer/using-rtm-event-api.md).
 
 > [!NOTE]
 > The outbound marketing-related flow in the new real-time journeys event API is being deprecated along with the outbound marketing module.
@@ -65,7 +65,7 @@ The event management API in real-time journeys is backward compatible. It lets y
 
 Outside of current architecture, the outbound Angular portal doesn't work with real-time journeys. It can function with some modifications, but we don't recommend continuing to use the outbound Angular portal. After the outbound module is deprecated, the Angular app will no longer be supported and there will be no future security updates. 
 
-If you still want to use the Angular portal despite the risks and limitations above, you can rebuild the Angular app to use the new real-time journeys event management API for the “list of events” functionality. For more information, see [Using the event API in real-time journeys](./developer/using-rtm-events-api.md).
+If you still want to use the Angular portal despite the risks and limitations above, you can rebuild the Angular app to use the new real-time journeys event management API for the “list of events” functionality. For more information, see [Using the event API in real-time journeys](./developer/using-rtm-event-api.md).
 
 For the event registration functionality, there are two options:
 
