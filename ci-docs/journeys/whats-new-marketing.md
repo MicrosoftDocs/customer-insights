@@ -45,6 +45,8 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 	- [Docs](real-time-marketing-redesigned-segment-builder.md#create-a-segment-using-interactions)
 
 #### Public preview
+>[!Note]
+> The following features are available as part of 1.1.65002.153 update. To use AI Hub and Journey Creation Agent, navigate to Settings > Versions and upgrade to 1.1.65002.153.
 
 - **Create journeys in minutes with Journey Creation Agent**
 	- With the new Journey Creation Agent in Dynamics 365 Customer Insights - Journeys, anybody can create journeys in minutes even if they've never done it before. Instead of spending time getting the mechanics of the journey right, you can now ensure that you’re delivering the most personalized experience for your customers. Move from idea to execution in minutes, freeing up time and reducing dependency on technical experts.
