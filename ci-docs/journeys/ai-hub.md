@@ -1,7 +1,7 @@
 ---
 title: Introduction to AI Hub in Customer Insights – Journeys (preview)
 description: AI Hub in Customer Insights – Journeys centralizes AI agent management. Learn how to enable, configure, and govern agents in your environment today.
-ms.date: 05/07/2026
+ms.date: 05/14/2026
 ms.topic: how-to
 ms.collection: bap-ai-copilot
 author: terezakirk
@@ -21,6 +21,9 @@ AI Hub aligns with tenant-level governance defined in Copilot Hub in the Power P
 
 > [!NOTE]
 > AI Hub control is available to the Admin user role by default. If you use custom roles and permissions and want to add specific permissions for agent settings, the entity is *msdynmkt_agentsettings*.
+
+> [!IMPORTANT]
+> AI Hub is available as part of the 1.1.65002.153 update. To use AI Hub, navigate to **Settings** > **Versions** and upgrade to 1.1.65002.153.
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note.md)]
 
