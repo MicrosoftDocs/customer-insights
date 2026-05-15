@@ -1,7 +1,7 @@
 ---
 title: "Create complex segments with segment builder"
 description: "Use segment builder to create complex segments of customers by grouping them based on various attributes."
-ms.date: 04/29/2026
+ms.date: 05/15/2026
 ms.topic: how-to
 author: JimsonChalissery
 ms.author: sstabbert
@@ -23,7 +23,7 @@ For an illustration of the key parts of segment builder, see [Segment builder ov
 
 1. Select **New** > **Build your own**. On the segment builder page, you define or compose rules. A rule consists of one or more conditions that define a set of customers.
 
-   :::image type="content" source="media/segments-page.png" alt-text="Screenshot of the Segments page.":::
+    :::image type="content" source="media/segments-page.png" alt-text="Screenshot of the Segments page." lightbox="media/segments-page.png":::
 
 1. Select **Edit details** next to Untitled segment. Provide a name for your segment and update the suggested **Output table name** for the segment. Optionally, add a description and [tags](work-with-tags-columns.md#manage-tags) to the segment.
 

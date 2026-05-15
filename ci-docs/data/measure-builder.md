@@ -1,7 +1,7 @@
 ---
 title: "Create measures with measure builder"
 description: "Build measures from scratch to analyze key metrics about your business."
-ms.date: 04/29/2026
+ms.date: 05/15/2026
 ms.topic: how-to
 author: JimsonChalissery
 ms.author: sstabbert
