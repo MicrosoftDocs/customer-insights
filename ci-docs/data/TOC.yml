@@ -373,6 +373,8 @@
   items:
     - name: Integrate with Customer Insights - Journeys
       href: marketing-get-started.md
+    - name: Use Customer Insights - Journeys interaction data in segments and measures
+      href: journeys-interaction-data-segments-measures.md
     - name: Automatically link Dynamics 365 apps to customer profiles
       href: integrate-d365-apps.md
 

@@ -1,7 +1,7 @@
 ---
 title: "Create complex segments with segment builder"
 description: "Use segment builder to create complex segments of customers by grouping them based on various attributes."
-ms.date: 08/28/2023
+ms.date: 05/15/2026
 ms.topic: how-to
 author: JimsonChalissery
 ms.author: sstabbert
@@ -13,6 +13,8 @@ ms.custom: bap-template
 
 Define complex filters around the unified customer and its related tables. Each segment, after processing, creates a set of customer records that you can export and take action on.
 
+To create a segment with Customer Insights - Journeys interaction data, go to [Use Customer Insights - Journeys interaction data in segments and measures (preview)](journeys-interaction-data-segments-measures.md).
+
 ## Create a new segment with segment builder
 
 For an illustration of the key parts of segment builder, see [Segment builder overview](segment-builder-aspects.md#segment-builder-overview). For tips, see [Segment builder tips](segment-builder-aspects.md#segment-builder-tips).
@@ -20,6 +22,8 @@ For an illustration of the key parts of segment builder, see [Segment builder ov
 1. Go to **Segments**.
 
 1. Select **New** > **Build your own**. On the segment builder page, you define or compose rules. A rule consists of one or more conditions that define a set of customers.
+
+    :::image type="content" source="media/segments-page.png" alt-text="Screenshot of the Segments page." lightbox="media/segments-page.png":::
 
 1. Select **Edit details** next to Untitled segment. Provide a name for your segment and update the suggested **Output table name** for the segment. Optionally, add a description and [tags](work-with-tags-columns.md#manage-tags) to the segment.
 
