@@ -17,7 +17,7 @@ Event passes act as tickets that grant attendees access to your event and its se
 
 ## What are event passes?
 
-Passes enable you to control who can attend your event and its sessions. They help you manage capacity and generate revenue from your events. Passes work with registrations through all available publishing options for your event, regardless of whether your attendees register through a form, a custom registration experience [built using the API](developer/using-rtm-events-api.md), or another method. For more information, see [Create a comprehensive event registration experience](event-registration-experience.md).
+Passes enable you to control who can attend your event and its sessions. They help you manage capacity and generate revenue from your events. Passes work with registrations through all available publishing options for your event, regardless of whether your attendees register through a form, a custom registration experience [built using the API](developer/using-rtm-event-api.md), or another method. For more information, see [Create a comprehensive event registration experience](event-registration-experience.md).
 
 Each pass type can:
 - Apply to a specific event.

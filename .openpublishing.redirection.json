@@ -3571,9 +3571,14 @@
       "redirect_url": "/dynamics365/customer-insights/journeys/create-records-activities",
       "redirect_document_id": false
     },
-        {
+    {
       "source_path": "ci-docs/journeys/real-time-marketing-use-copilot-create-journey.md",
       "redirect_url": "/dynamics365/customer-insights/journeys/journey-creation-agent",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/developer/using-rtm-events-api.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/developer/using-rtm-event-api",
       "redirect_document_id": false
     }
   ]

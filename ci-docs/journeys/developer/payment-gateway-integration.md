@@ -22,7 +22,7 @@ To turn on payment integration, go to **Settings** > **Feature switches**, and u
 
 ## Overview of payment integration components
 
-For event registrations created using the [events API](using-rtm-events-api.md), the following components are used to complete the registration for a paid event scenario:
+For event registrations created using the [event API](using-rtm-event-api.md), the following components are used to complete the registration for a paid event scenario:
 
 1. **Payment provider**: A service that processes online payments. The payment provider contributes two components:
     - *Payment gateway*: A website that captures payment information, including product, price, and payee data. Upon submission, the payment gateway initializes payment transaction processing and typically redirects the event participant to a “thank you” page.
@@ -257,7 +257,7 @@ namespace PaymentGatewaySample.Controllers
 
 ## Complete the setup of payment gateway in Customer Insights - Journeys
 
-1. **Set up the web application**: Create the application set up under **Settings** > **Event management** > **Web applications**, as described in [events API documentation](using-rtm-events-api.md). You receive an endpoint that your registration page uses to initialize the registration process, together with a shareable token.
+1. **Set up the web application**: Create the application set up under **Settings** > **Event management** > **Web applications**, as described in [event API documentation](using-rtm-event-api.md). You receive an endpoint that your registration page uses to initialize the registration process, together with a shareable token.
 
 1. **Set up a payment provider**: Navigate to **Settings** > **Event management** > **Payment providers** and add a new payment provider configuration by selecting **+New**. You're asked to provide:
     - **Provider name**: The internal name that helps your users understand which integration they should use for their events.
@@ -267,7 +267,7 @@ namespace PaymentGatewaySample.Controllers
 ## Testing
 
 1. Create a new event record. Ensure that:
-    - **Custom solution using events API** is set as the value for the **Where do you want attendees to register for this event?** parameter.
+    - **Custom solution using event API** is set as the value for the **Where do you want attendees to register for this event?** parameter.
     - On the **Passes** tab, **Enable payment gateway** is set to **Yes**.
     - On the **Passes** tab, **Payment provider** is selected.
 1. Add one pass and set the price on it. Make note of the **Pass-ID** (the primary key of the `msevtmgt_pass` record).

@@ -1,22 +1,22 @@
 ---
-title: Use the events API in real-time journeys
-description: Learn how to use the events API to access date from events, sessions, session tracks, and passes in real-time journeys.
-ms.date: 05/13/2026
+title: Use the event API in real-time journeys
+description: Learn how to use the event API to access date from events, sessions, session tracks, and passes in real-time journeys.
+ms.date: 05/14/2026
 ms.topic: overview
-author: alfergus
-ms.author: colinbirkett
+author: terezakirk
+ms.author: alfergus
 search.audienceType: 
   - developer
 ms.custom: sfi-image-nochange
 ---
 
-# Use the events API in real-time journeys
+# Use the event API in real-time journeys
 
-The events API is a programmatic method to access data from events, sessions, session tracks, passes, speakers, and sponsorships. Additionally, the events API allows you to register for events and sessions.
+The event API is a programmatic method to access data from events, sessions, session tracks, passes, speakers, and sponsorships. Additionally, the event API allows you to register for events and sessions.
 
 The API accessed is over HTTPS protocol and is accessed from the API endpoint that you receive while creating a web application token. All data is sent and received as JSON.
 
-## Register for the events API
+## Register for the event API
 
 In the **Settings** section under **Event management** > **Web Applications**, create a new web application. It's important to select the correct origin. For example, if you select https://contoso.com, JavaScript hosted on different domain won't be able to access the event management API.
 
@@ -26,13 +26,13 @@ After you create a web application, you see a link to the OpenAPI specification 
 
 :::image type="content" source="../media/event-api-endpoint.png" alt-text="Event API endpoint screenshot." lightbox="../media/event-api-endpoint.png":::
 
-You can select the link and copy and paste the API contract to an OpenAPI editor such as [Swagger Editor](https://editor-next.swagger.io/), which automatically pregenerates a wrapper you can use to discover your API. To access your API, you must be authorized (provide the **Token** column).
+You can select the link and copy and paste the API contract to an OpenAPI editor such as [Swagger Editor](https://editor-next.swagger.io/), which automatically pre-generates a wrapper you can use to discover your API. To access your API, you must be authorized (provide the **Token** column).
 
 :::image type="content" source="../media/event-api-swagger.png" alt-text="Event API Swagger Editor screenshot." lightbox="../media/event-api-swagger.png":::
 
 ## Create an event page or event portal  
 
-The events API allows you to create a customized event page and an event portal that lists all available events that are live and published using the “Custom solution using event API” publishing option. The events API allows you to:  
+The event API allows you to create a customized event page and an event portal that lists all available events that are live and published using the “Custom solution using event API” publishing option. The event API allows you to:  
 
 - Retrieve a list of live events that includes their name, description, location, and time.
 - For the event page, it allows you to retrieve key information about the event such as:
@@ -47,7 +47,7 @@ The events API allows you to create a customized event page and an event portal 
 
 ## Create a custom event registration experience  
 
-The events API also allows you to create a registration submission without the need to use real-time marketing forms, while still benefiting from important features such as matching strategy, consent, audience settings, and more.
+The event API also allows you to create a registration submission without the need to use real-time marketing forms, while still benefiting from important features such as matching strategy, consent, audience settings, and more.
 
 First, define the key settings for your audience by navigating to **Settings** > **Event management** > **Event registration settings** and define:
 
@@ -141,5 +141,33 @@ The default event registration settings are used when processing submissions fro
     ]
 }
 ```
+
+## Performance and limits
+
+The event API supports high-volume registration scenarios through asynchronous processing, smart caching, and built-in retry logic. 
+
+When a registration request arrives through the event API, the **system**:
+
+- Validates that the event is active and all related entities are in a valid state
+- Returns an immediate success response to the caller.
+- Starts a background work item processor to create the event registration and associated entities asynchronously.
+
+### Caching Behavior
+
+**Read cache**: The system applies a 10-minute cache for event and entity validation. This reduces redundant reads to Dataverse and improves throughput under load.
+
+> [!NOTE] 
+> The read cache affects validation only, not the registration records themselves.
+
+### Retry logic and failure handling
+
+If the background processor fails to create an event registration, the system automatically retries for up to six hours. This applies to synchronous and asynchronous failure scenarios, ensuring data reliability without requiring manual intervention.
+
+### Throughput and Dataverse limits
+
+The primary limiting factor for formless registration scenarios is the rate at which ticket registration entities can be created in Dataverse. Under normal conditions, Dataverse enforces a limit of 6,000 API requests, within a five-minute sliding window, per user and web server. The platform can return a `429 Too Many Requests` error if these limits are exceeded. Learn more: [Service protection API limits](/power-apps/developer/data-platform/api-limits?tabs=sdk).
+ 
+> [!IMPORTANT]
+> If the event uses a payment gateway, additional validation steps may apply, and effective throughput may be lower. Customers using payment gateways should validate caching behavior for their specific setup.
 
 [!INCLUDE [footer-include](.././includes/footer-banner.md)]
