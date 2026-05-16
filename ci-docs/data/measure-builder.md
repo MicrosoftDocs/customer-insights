@@ -1,7 +1,7 @@
 ---
 title: "Create measures with measure builder"
 description: "Build measures from scratch to analyze key metrics about your business."
-ms.date: 04/16/2025
+ms.date: 05/15/2026
 ms.topic: how-to
 author: JimsonChalissery
 ms.author: sstabbert
@@ -14,6 +14,8 @@ ms.custom:
 # Create measures with measure builder
 
 Measure builder lets you define calculations using math operators, aggregation functions, and filters. Define measures using attributes from tables that are related to the unified *Customer* table.
+
+To create a measure with Customer Insights - Journeys interaction data, go to [Use Customer Insights - Journeys interaction data in segments and measures (preview)](journeys-interaction-data-segments-measures.md).
 
 ## Measure types
 
