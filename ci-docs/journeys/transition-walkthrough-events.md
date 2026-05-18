@@ -1,7 +1,7 @@
 ---
 title: Transition events from outbound marketing to real-time journeys
 description: Learn how to transition event management capabilities from outbound marketing to real-time journeys in Dynamics 365 Customer Insights - Journeys.
-ms.date: 02/05/2026
+ms.date: 05/18/2026
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
@@ -12,9 +12,6 @@ search.audienceType:
 ---
 
 # Transition events from outbound marketing to real-time journeys
-
-> [!IMPORTANT]
-> **The [outbound marketing](user-guide.md) module is gradually being removed from Customer Insights - Journeys.** To avoid interruptions, stop using outbound marketing and transition to real-time journeys. Learn more: [Transition overview](transition-overview.md).
 
 You can find outbound marketing and real-time journeys events in the **Event planning** work area in Dynamics 365 Customer Insights – Journeys.
 

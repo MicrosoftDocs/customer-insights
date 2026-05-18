@@ -1,7 +1,7 @@
 ---
 title: New and upcoming features
 description: Discover the latest features, improvements, and bug fixes in Dynamics 365 Customer Insights - Journeys. Stay updated with our monthly release notes.
-ms.date: 05/14/2026
+ms.date: 05/18/2026
 ms.update-cycle: 180-days
 ms.topic: whats-new
 author: alfergus
@@ -15,9 +15,6 @@ ms.custom:
 ---
 
 # What's new in Dynamics 365 Customer Insights - Journeys
-
-> [!IMPORTANT]
-> **The [outbound marketing](user-guide.md) module is gradually being removed from Customer Insights - Journeys.** To avoid interruptions, stop using outbound marketing and transition to real-time journeys. Learn more: [Transition overview](transition-overview.md).
 
 [!INCLUDE [marketing-trial-cta](./includes/marketing-trial-cta.md)]
 
