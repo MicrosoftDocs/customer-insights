@@ -1,7 +1,7 @@
 ---
 title: Throughput guidance
 description: Learn about throughput based on your monthly interactions quota in Dynamics 365 Customer Insights - Journeys.
-ms.date: 10/13/2025
+ms.date: 05/18/2026
 ms.topic: article
 author: alfergus
 ms.author: alfergus
