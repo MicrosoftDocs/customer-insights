@@ -1,7 +1,7 @@
 ---
 title: Create an event portal using the web application
 description: Learn how to use the lightweight, customizable web application to create and host event portals on your domains.
-ms.date: 03/25/2026
+ms.date: 05/14/2026
 ms.topic: overview
 author: terezakirk
 ms.author: alfergus
@@ -11,7 +11,7 @@ search.audienceType:
 
 # Create an event portal on your website using the web application
 
-The event web application is a fast, lightweight, and customizable solution for showing live events from the Dynamics 365 events API directly on your website. It has a responsive, multilingual interface that lets attendees search, explore, and register for events easily.
+The event web application is a fast, lightweight, and customizable solution for showing live events from the Dynamics 365 event API directly on your website. It has a responsive, multilingual interface that lets attendees search, explore, and register for events easily.
 
 Built with plain JavaScript, HTML, and CSS, the web application is easy to deploy on any static hosting environment and simple to customize. It's ideal for organizations that want a flexible and accessible event experience. The default setup of the web app includes an overview page with a list of live events and a link to the event detail page with the registration form.
 
@@ -42,7 +42,7 @@ The portal needs a web application record with its origin set to the domain wher
 You're asked to enter:
 
 1. Name  
-1. Domain (add your domain as the origin, for example, https://yourdomain.com)
+1. Domain (add your domain as the origin, for example, https://contoso.com)
 1. Token (automatically provided)  
 1. Choose if this web app is the default web app
 
@@ -76,7 +76,7 @@ The folders in the zip file have the following file structure:
 │   │   ├── event-grid.js       # Events grid listing logic 
 │   │   └── localization.js     # Internationalization (i18n) system 
 │   ├── lib/ 
-│   │   └── PublicApi.bundle.js # Dynamics 365 events API library (provided) 
+│   │   └── PublicApi.bundle.js # Dynamics 365 event API library (provided) 
 │   ├── locales/                # Translation JSON files (one per locale) 
 │   ├── index.html              # Events listing page 
 │   └── event-details.html      # Event details page (loads registration form) 

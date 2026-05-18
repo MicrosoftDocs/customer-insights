@@ -262,6 +262,8 @@
         href: real-time-marketing-segment-based-journey.md
       - name: Use Customer Insights - Data profiles and segments
         href: real-time-marketing-ci-profile.md
+      - name: Align quiet times with Customer Insights - Data refresh
+        href: coordinate-ci-data-refresh-with-quiet-times.md
     - name: Journey goals and A/B testing
       items:
       - name: Set a business goal and measure progress through a journey
@@ -302,7 +304,7 @@
           href: journey-quiet-times.md
         - name: Limit messages sent with frequency capping
           href: journey-frequency-cap.md
-        - name: "Set message expiration (preview)"
+        - name: Set message expiration (preview)
           href: message-expiration.md
       - name: Create approval workflows and customize the journey designer
         items:
@@ -490,8 +492,8 @@
     items:
     - name: Use the Create Journey From Template API
       href: developer/create-journey-template-api.md
-    - name: Use the events API in real-time journeys
-      href: developer/using-rtm-events-api.md
+    - name: Use the event API in real-time journeys
+      href: developer/using-rtm-event-api.md
     - name: Create a segment using the Web API
       href: real-time-marketing-api-segment.md
     - name: Use the email API to access emails on the interaction timeline
@@ -542,7 +544,7 @@
     href: developer/extend-consent.md
   - name: Create an event portal on your website using the web application
     href: developer/event-portal-web-application.md
-  - name: Set up payment gateway integration (preview)
+  - name: Set up payment gateway integration
     href: developer/payment-gateway-integration.md
   - name: Use binding IDs to correlate across triggers
     href: real-time-marketing-correlate-triggers.md

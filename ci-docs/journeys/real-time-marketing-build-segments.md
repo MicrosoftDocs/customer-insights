@@ -1,10 +1,11 @@
 ---
-title: Build segments in Customer Insights - Journeys 
-description: Learn how to build segments to use in real-time journeys in Dynamics 365 Customer Insights - Journeys.
-ms.date: 04/21/2026
+title: Build segments in Customer Insights - Journeys
+description: Customer Insights - Journeys segment builder helps you create dynamic and static segments for real-time marketing. Start building smarter audiences today.
+ms.date: 04/24/2026
 ms.topic: article
 author: alfergus
 ms.author: alfergus
+ms.reviewer: alfergus
 search.audienceType: 
   - admin
   - customizer
@@ -31,7 +32,7 @@ To target leads directly, go to **Customer Insights - Journeys** > **Audience** 
 
 :::image type="content" source="media/real-time-marketing-build-segment-create.png" alt-text="Create a segment to target leads." lightbox="media/real-time-marketing-build-segment-create.png":::
 
-In the right pane of the segment builder, you can search for attributes to add to the builder canvas.
+In the right pane of the segment builder, you can search for attributes to add to the builder canvas. You can drag and drop it directly onto the canvas or use the menus to manually select a group to add it to.
 
 **Example:** Qualifying leads that are scheduled for a follow-up in the next seven days:
 
@@ -83,7 +84,7 @@ To include members from either subgroup, select the **or** subgroup operator.
 
 **Example**: Let’s say you want to create a query for leads with a company size of more than 10,000 employees whose parent accounts are in the Consumer Services or Financial Services industries, **but not** leads with a budget of less than $20,000.
 
-To create the segment from the example, create a new segment in Customer Insights - Journeys for leads whose company size is 10,001 or more. Open the **Elements** pane by selecting the top icon on the menu on the right side of the window. Then, go to the **Attributes** tab and search for the **Budget Amount** attribute. Select the icon to the left of the attribute name from the results list. A contextual menu appears, allowing you to add the attribute to an existing or new group.
+To create the segment from the example, create a new segment in Customer Insights - Journeys for leads whose company size is 10,001 or more. Open the **Elements** pane by selecting the top icon on the menu on the right side of the window. Then, go to the **Attributes** tab and search for the **Budget Amount** attribute. Select the icon to the left of the attribute name from the results list. A contextual menu appears, allowing you to add the attribute to an existing or new group. Alternatively, you can drag and drop the attribute directly onto the canvas to create a new group.
 
 :::image type="content" source="media/real-time-marketing-add-a-new-group.png" alt-text="add a new group to a segment." lightbox="media/real-time-marketing-add-a-new-group.png":::
 

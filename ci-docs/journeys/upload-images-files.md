@@ -1,10 +1,10 @@
 ---
 title: Upload, manage, and use images, files, and videos in online content
 description: Find out how to efficiently upload, manage, and use images, files, and videos in Dynamics 365 Customer Insights - Journeys. Streamline your content creation.
-ms.date: 12/08/2025
+ms.date: 05/14/2026
 ms.update-cycle: 180-days
 ms.topic: article
-author: alfergus
+author: cmenesatti-m
 ms.author: alfergus
 ms.reviewer: alfergus
 ms.collection: bap-ai-copilot
@@ -34,19 +34,19 @@ ms.custom:
 Shareable assets are critical for meaningful and successful customer experiences. The files you use must be available publicly on the internet so your emails and pages can access and display them. The Dynamics 365 Customer Insights - Journeys library stores images, documents, and videos, hosting them publicly and providing an easy way to find and link to them while creating content. The library is shared across real-time and outbound marketing, making it easy to upload and use assets where you need them. 
 
 > [!NOTE]
-> The following file types are supported: AVI, CS, CSS, DOC, DOCX, EPUB,GIF, ICS, JPG, JPEG, MP3, MP4, MPEG, MPG, ODP, ODS, ODT, PDF, PNG, PPT, PPTX, PS, RTF, SVG, TAR, TGZ, TXT, VCF, WMV, XLS, XLSX, XML, ZIP
+> The following file types are supported: AVI, CS, CSS, DOC, DOCX, EPUB, GIF, ICS, JPG, JPEG, MP3, MP4, MPEG, MPG, ODP, ODS, ODT, PDF, PNG, PPT, PPTX, PS, RTF, SVG, TAR, TGZ, TXT, VCF, WMV, XLS, XLSX, XML, ZIP
 >
-> You'll see an error message if you attempt to upload a file of an unsupported type.
+> You see an error message if you attempt to upload a file of an unsupported type.
 >
 > The maximum file size is:
-> - 5MB for images
-> - 32MB for documents
-> - 128MB for videos
+> - 5 MB for images
+> - 32 MB for documents
+> - 128 MB for videos
 >
 > Files are stored in your organization’s Microsoft Dataverse storage and count against your file storage capacity. For more information on Dataverse storage capacity, see [New Microsoft Dataverse storage capacity](/power-platform/admin/capacity-storage)
 
 > [!TIP]
-> As files are stored in the organization’s Microsoft Dataverse storage, ensure that the file types you want to use are not in the list of blocked files extension described at [System Settings General tab - Power Platform](/power-platform/admin/system-settings-dialog-box-general-tab) or the list of blocked MIME types described [here](/power-platform/admin/settings-privacy-security#mime-type-validation). Note that SVG files are in that list by default.  
+> As files are stored in the organization’s Microsoft Dataverse storage, ensure that the file types you want to use aren't in the list of blocked files extension described at [System Settings General tab - Power Platform](/power-platform/admin/system-settings-dialog-box-general-tab) or the list of blocked MIME types described [here](/power-platform/admin/settings-privacy-security#mime-type-validation). SVG files are in that list by default.  
 
 ## Upload files
 
@@ -89,9 +89,21 @@ Additionally, the Copilot assistant automatically identifies a selection of imag
 When you add an image element to your content or need to [link to a file or video](/dynamics365/marketing/real-time-marketing-email#link-to-documents-and-videos-stored-in-the-asset-library), you can choose to use a file that already exists in your Customer Insights - Journeys app library or upload a new one. After you've uploaded a file in this way, it will also be available in the library for use in other content.
 
 > [!IMPORTANT]
-> The copilot assistant smart recommendation feature is currently in preview.
+> The Copilot assistant smart recommendation feature is currently in preview.
 
-### See also
+## Troubleshoot image, file, and video issues
+
+You may encounter the following error message: `Error occurred when processing image. Reason: Create image record for solution-aware entity failed for objectid ...`
+
+This error is expected and occurs because unmanaged customizations are blocked. To resolve the error:
+
+1. Navigate to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. Select the environment experiencing the issue.
+1. Go to **Settings**.
+1. Select **Features**.
+1. Disable the **Block unmanaged customizations** option.
+
+## See also
 
 [Link to documents stored in the asset library](/dynamics365/marketing/real-time-marketing-email#link-to-documents-and-videos-stored-in-the-asset-library)
 

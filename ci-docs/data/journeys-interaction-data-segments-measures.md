@@ -1,7 +1,7 @@
 ---
 title: Use Customer Insights - Journeys interaction data in segments and measures (preview)
 description: Learn how to use Customer Insights - Journeys behavioral interaction data in Customer Insights - Data segments and measures.
-ms.date: 05/07/2026
+ms.date: 05/15/2026
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -100,7 +100,7 @@ To filter customers by the specific email they opened, add the **Email** field f
    The condition is added to Rule 1 on the canvas as:
    `EmailOpened : CustomerInsightsJourneysInteractions.Email is equal to`.
 
-1. Use the value dropdown in the rule condition to select the specific email campaign to match.
+1. To select the specific email campaign to match, use the value dropdown in the rule condition.
 
    :::image type="content" source="media/journeys-scenario-email-choices.png" alt-text="Screenshot of the segment builder canvas showing Rule 1 with the condition 'EmailOpened: CustomerInsightsJourneysInteractions.Email is equal to', and the Email Opened interaction expanded in the side panel showing its available fields.":::
 
@@ -121,7 +121,7 @@ Use the **Behavioral** tab in the measure builder to create calculated attribute
 
 1. In the side panel, select the **Behavioral** tab.
 
-1. Select an [interaction type](#available-interaction-types) and field to use as the basis for your aggregation (for example, count of *Email Opened* events per customer).
+1. Select an [interaction type](#available-interaction-types) and field to use as the basis for your aggregation (for example, the count of *Email Opened* events per customer).
 
 1. Configure the aggregation type (count, sum, average, min, max) and optional filters or time windows.
 
@@ -145,3 +145,5 @@ Use measures built on interaction data as attributes in segment conditions. This
 - [Improve targeting using interaction data in segments (Customer Insights - Journeys)](../journeys/real-time-marketing-redesigned-segment-builder.md)
 - [Access and interpret analytics (Customer Insights - Journeys)](../journeys/real-time-marketing-analytics.md)
 - [Use Customer Insights - Data profiles and segments in Customer Insights - Journeys](../journeys/real-time-marketing-ci-profile.md)
+
+[!INCLUDE [footer-include](includes/footer-banner.md)]
