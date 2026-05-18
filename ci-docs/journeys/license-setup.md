@@ -1,7 +1,7 @@
 ---
 title: Customer Insights license guidance
 description: 'Customer Insights licensing: Learn how to buy, manage, and monitor Dynamics 365 Customer Insights licenses, entitlements, and quotas. Get answers to common questions.'
-ms.date: 04/20/2026
+ms.date: 05/18/2026
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -67,9 +67,8 @@ As stated in the published Dynamics 365 license guide, Customer Insights - Journ
     - 100,000 unified people at the tenant level for use with the Customer Insights - Data app to unify, enrich, and know the customer.
 - You get 10x interactions per month for the Customer Insights - Journeys app as a [safe use limit](fair-use-policy.md). This means that you can send interactions up to 10 times the total number of interacted people you own at the tenant level. For example, if you own 10,000 interacted people, you can send up to 100,000 interactions per month. Interactions aren't tied to the number of interacted people they're distributed to. In the example, you can choose whether to send all 100,000 interactions to one interacted person or allocate the interactions among many interacted people. Interactions reset monthly and don't roll over. To get more than 10x interactions per month, increase your interacted people entitlement. Interaction usage and performance are subject to environment-level [safe use limits](fair-use-policy.md).
 - All quota counts at the tenant level across different environment types (sandbox or production) because the database capacity and services cost Microsoft the same amount of money regardless of the type of environment or application lifecycle development cycle in which it's being used. All quota usage is summed at the tenant level across all environment types.
-- By June 30, 2024, if you own paid licenses there are no longer application installation limits for either **Customer Insights - Journeys (real-time only)** or **Customer Insights - Data** on your production and sandbox Dataverse environments. 
-- For Customer Insights - Journeys, outbound marketing solution installations are still limited by the prior application licensing constraints. If you own Dynamics 365 Marketing or the add-ons for sandbox or production installations, you get one installation of outbound marketing solutions per license. If you own the Dynamics 365 Customer Insights license available after September 2023, you get four outbound marketing solutions.
-- Trial installations are still limited to one environment per trial license. 
+- By June 30, 2024, if you own paid licenses there are no longer application installation limits for either **Customer Insights - Journeys (real-time only)** or **Customer Insights - Data** on your production and sandbox Dataverse environments.
+- Trial installations are still limited to one environment per trial license.
 - See [detailed documentation about email throughput](real-time-marketing-throughput-guidance.md). Email throughput of 500,000 messages per hour is granted as follows:
     - For customers on the standalone Dynamics 365 Marketing SKU with 10,000,000 or more active contacts.
     - For customers with the new Dynamics 365 Customer Insights SKU with 500,000 or more interacted people.

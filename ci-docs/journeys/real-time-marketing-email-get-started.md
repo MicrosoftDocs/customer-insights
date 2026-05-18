@@ -1,7 +1,7 @@
 ---
 title: Send a targeted email blast in Customer Insights - Journeys
 description: Learn how to create and send a targeted email message in the Customer Insights - Journeys
-ms.date: 08/22/2023
+ms.date: 05/18/2026
 ms.topic: get-started
 author: alfergus
 ms.author: alfergus
@@ -33,7 +33,7 @@ Learn more: [Build segments in Customer Insights - Journeys](real-time-marketing
 > ![Screenshot of a segment of active contacts.](media/real-time-marketing-email-start-segment.png "Screenshot of a segment of active contacts")
 
 > [!NOTE]
-> This example assumes that you are using sample contacts or have already added your own. To learn more about adding contacts, see the [Create a segment with new contacts in outbound marketing](create-segment.md) article.
+> This example assumes that you are using sample contacts or have already added your own.
 
 ## Create an email
 

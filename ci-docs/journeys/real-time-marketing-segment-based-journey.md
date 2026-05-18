@@ -1,7 +1,7 @@
 ---
 title: Create a segment-based journey
 description: Create a segment-based journey in Dynamics 365 Customer Insights - Journeys. Learn how to send announcements and nurture campaigns to your most valuable customers.
-ms.date: 12/08/2025
+ms.date: 05/18/2026
 ms.update-cycle: 180-days
 ms.topic: how-to
 author: alfergus
@@ -26,8 +26,7 @@ To illustrate the capabilities of segment-based journeys, we create a simple jou
 
 ### Create segments
 
-Create a segment of your *Most valuable customers*. You can [create your own contact or lead-based segment](real-time-marketing-build-segments.md). Segment-based journeys can also [work with segments from outbound marketing and segments from Customer Insights - Data](real-time-marketing-segments.md).
-- If you choose to use outbound marketing segments, the email and text content must use **Contact** as the audience data for personalization.
+Create a segment of your *Most valuable customers*. You can [create your own contact or lead-based segment](real-time-marketing-build-segments.md). Segment-based journeys can also [work with segments from Customer Insights - Data](real-time-marketing-segments.md#segments-created-in-customer-insights---data).
 - If you choose to use Customer Insights - Data segments, the email and text content must use **Customer Profile** as the audience data for personalization.
 
 > [!Note]
@@ -52,7 +51,7 @@ On the "Create a new journey" screen:
 - Select **Segment-based** for the journey type. Customers start a segment-based journey when they qualify to be part of a segment.
 - Select one or more segments. Note the following when selecting multiple segments:
   - The total combined member count of all segments can't exceed the limit noted [here](real-time-marketing-known-issues.md#segments) for a journey. You can select at most 15 segments (or fewer if the segment size limit is reached sooner).
-  - Outbound marketing segments or mixed audience types (for example, contacts and leads) can't be selected.
+  - Mixed audience types (for example, contacts and leads) can't be selected.
   - Environments that use their own [Azure Data Lake storage account](../data/own-data-lake-storage.md#connect-customer-insights---data-with-your-storage-account) aren't supported.
 - Choose the **frequency** at which your journey should run:
   - A **one-time** journey with a **static** audience that runs one time. When the journey starts, the current members of the segment start the journey.

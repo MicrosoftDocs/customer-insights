@@ -1,7 +1,7 @@
 ---
 title: Throughput guidance
 description: Learn about throughput based on your monthly interactions quota in Dynamics 365 Customer Insights - Journeys.
-ms.date: 10/13/2025
+ms.date: 05/18/2026
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -60,14 +60,8 @@ Let’s think about this with an example: Contoso (a coffee maker) purchases 1,0
 
 **Throughput**: As mentioned above, this is defined as the total number of interactions that you can send per unit of time (second/minute/hour). The throughput is determined by your monthly contact quota.
 
-Let’s think about this with an example: Contoso has 1,000,000 contacts, which, in standalone Dynamics 365 Marketing (outbound marketing), entitles them to a monthly interaction quota of 10,000,000 interactions and a throughput of 140,000 interactions/hr (as per above table). Contoso is preparing a campaign with a single newsletter email targeting 280,000 customers. They can complete this campaign in 2 hours, assuming no other campaign is executing simultaneously, because their throughput is 140,000 interactions/hr.
-
 ### I don't think that I'm getting the throughput that is promised in the tables above. What do I do in that case?
 
 If you believe that your throughput doesn't meet expectations per these guidelines, contact support or [create a ticket](/power-platform/admin/get-help-support).
-
-### I have no requirement to purchase additional contacts/interacted people, but I'd like to increase the throughput on my journeys. Is that possible?
-
-In the standalone Dynamics 365 Marketing (outbound marketing) SKU, throughput can be increased only with the purchase of additional contacts that provide better throughput based on the tiers mentioned in the above table. Reach out to your Microsoft representative to get more help on this.
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]

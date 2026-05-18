@@ -1,7 +1,7 @@
 ---
 title: Prefill values for forms and event registration
 description: Form prefill in Dynamics 365 Customer Insights - Journeys auto-fills known values for customers. Discover setup steps and security best practices.
-ms.date: 02/11/2026
+ms.date: 05/18/2026
 ms.topic: article
 author: petrjantac
 ms.author: colinbirkett
@@ -68,7 +68,7 @@ Form fields are prefilled only when you open the page containing the form by sel
 
 ### "Prefill marketing form" is enabled on the contact record, but the form isn't prefilled
 
-The "Prefill marketing form" attribute works only for outbound marketing forms. Real-time journeys forms use the [Tracking purpose](real-time-marketing-email-text-consent.md#consent-to-track-user-behavior) as consent for prefill.
+Real-time journeys forms use the [Tracking purpose](real-time-marketing-email-text-consent.md#consent-to-track-user-behavior) as consent for prefill.
 
 ### Step-bystep troubleshooting
 

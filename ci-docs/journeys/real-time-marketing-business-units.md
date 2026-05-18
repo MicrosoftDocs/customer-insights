@@ -1,7 +1,7 @@
 ---
 title: Business unit support in real-time journeys
 description: Learn how to use business unit support in Dynamics 365 Customer Insights - Journeys.
-ms.date: 01/07/2026
+ms.date: 05/18/2026
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -56,7 +56,7 @@ Business units affect forms as follows:
 ## Enabling business unit scopes in Customer Insights - Journeys
 
 > [!NOTE]
-> While the business unit scoping feature can be turned on or off in outbound marketing, it behaves differently for Customer Insights - Journeys. Business unit scoping for Customer Insights - Journeys is an irreversible feature switch; once it's enabled, it can't be disabled. To enable this feature:
+> Business unit scoping for Customer Insights - Journeys is an irreversible feature switch; once it's enabled, it can't be disabled. To enable this feature:
 
 1. Go to **Settings** > **Other settings** > **Feature switches**.
 1. Set the **Business Unit Scoping (Customer Insights - Journeys)** toggle to **On**.

@@ -1,7 +1,7 @@
 ---
 title: Business units FAQs for real-time journeys
 description: Business units FAQ for Dynamics 365 Customer Insights - Journeys.
-ms.date: 10/24/2023
+ms.date: 05/18/2026
 ms.topic: faq
 author: alfergus
 ms.author: alfergus
@@ -14,13 +14,6 @@ search.audienceType:
 # Business units FAQs for real-time journeys
 
 This article contains answers to common questions and solutions to known issues related to business units in Customer Insights - Journeys.
-
-### What are the key differences between business unit scoping support in outbound marketing and Customer Insights - Journeys?
-
-There are three key differences:
-1. After the business unit scoping feature switch is turned on for Customer Insights - Journeys, it can't be turned off.
-1. With business unit scoping turned on, Customer Insights - Journeys can only include/use segments, emails, SMS messages, and push messages that belong to the journey’s business unit.
-1. With business unit scoping turned on, Customer Insights - Journeys emails, SMS messages, templates, and content blocks can only include/use artifacts from the same business unit.
 
 ### Why can’t I turn this feature off after it's turned on?
 

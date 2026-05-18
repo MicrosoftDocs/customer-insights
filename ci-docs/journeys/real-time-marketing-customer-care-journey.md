@@ -1,7 +1,7 @@
 ---
 title: Identify and resolve errors with real-time customer care journeys
 description: Learn how to identify and resolve errors with real-time customer care journey in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/22/2023
+ms.date: 05/18/2026
 ms.topic: get-started
 author: alfergus
 ms.author: alfergus
@@ -94,8 +94,6 @@ After the customer has started the journey, a case must be created. Customer Ins
 
     > [!div class="mx-imgBorder"]
     > ![consent status](media/real-time-marketing-consent-status.png "consent status")
-
-1. Now, in the bottom left pane, select **Outbound marketing**, and then in the left pane, select **Customers>Contacts**. You can view marketing interaction data here, which can be useful to your salespeople in determining how customers are reacting to the text message, email, or push notification that was delivered to them.
 
 ## Step 3: Send an email when there’s a status change in the support ticket
 

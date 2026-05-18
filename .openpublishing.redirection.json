@@ -3580,6 +3580,21 @@
       "source_path": "ci-docs/journeys/developer/using-rtm-events-api.md",
       "redirect_url": "/dynamics365/customer-insights/journeys/developer/using-rtm-event-api",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/data/export-ci-journeys.md",
+      "redirect_url": "/dynamics365/customer-insights/data/export-destinations",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/real-time-marketing-import-email-to-real-time.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/email-design",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/spam-checker.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/real-time-marketing-email",
+      "redirect_document_id": false
     }
   ]
 }

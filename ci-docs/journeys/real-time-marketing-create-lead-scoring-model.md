@@ -1,7 +1,7 @@
 ---
 title: Create scoring models for Customer Insights - Journeys
 description: Learn how to create scoring models in Dynamics 365 Customer Insights - Journeys.
-ms.date: 12/10/2025
+ms.date: 05/18/2026
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
@@ -69,13 +69,9 @@ The third option in the vertical bar on the right of the window allows you to ac
 
 ## Leverage parent contact interactions in your scoring model
 
-> [!IMPORTANT]
-> If you've been using outbound marketing and want to start using Customer Insights - Journeys scoring models, remember that your interactions are likely stored at contact level. Thus, when you start using Customer Insights - Journeys lead scoring you'll need to consider parent contact interactions.
+Customer Insights - Journeys allows you to market directly to leads without the need for a parent contact. Marketing to leads offers extra flexibility, but also changes how interactions are stored.
 
-Customer Insights - Journeys allows you to market directly to leads without the need for a parent contact. Outbound marketing, on the other hand, markets only to contacts and requires that all leads have a parent contact. Customer Insights - Journeys to leads offers extra flexibility, but also changes how interactions are stored.
-
-1. **Outbound marketing**: All interactions are stored at the contact level.
-1. **Customer Insights - Journeys**: Interactions can be stored at the lead level if you market to leads (example: a lead journey), or at the contact level if you market to contacts.
+Customer Insights - Journeys interactions can be stored at the lead level if you market to leads (example: a lead journey), or at the contact level if you market to contacts.
 
 Customer Insights - Journeys scoring models empower you to decide whether parent contact interactions should be accounted for in the scoring model. To do this, go to **Settings** on the right bar when creating a scoring model and select “Count parent contact interactions.” If the option is selected, the model considers all interactions for the lead entity and the respective parent contact entity, otherwise just the lead entity.
 
