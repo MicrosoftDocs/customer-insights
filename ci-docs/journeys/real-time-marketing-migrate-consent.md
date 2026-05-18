@@ -1,7 +1,7 @@
 ---
 title: Migrate consent records to Customer Insights - Journeys
 description: Learn how to migrate existing consent records to Customer Insights - Journeys.
-ms.date: 04/06/2026
+ms.date: 05/18/2026
 ms.topic: reference
 author: alfergus
 ms.author: alfergus
