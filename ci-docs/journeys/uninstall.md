@@ -1,7 +1,7 @@
 ---
 title: Uninstall Customer Insights
 description: How to remove Dynamics 365 Customer Insights.
-ms.date: 11/05/2024 
+ms.date: 05/18/2026 
 ms.topic: article
 author: alfergus
 ms.author: alfergus
