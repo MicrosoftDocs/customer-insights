@@ -1,7 +1,7 @@
 ---
 title: Consent management overview
 description: 'Consent management in Customer Insights – Journeys: Learn how to set up, manage, and enforce user consent to stay compliant with privacy regulations. Start managing consent today.'
-ms.date: 12/12/2025
+ms.date: 05/18/2026
 ms.topic: concept-article
 author: petrjantac
 ms.author: alfergus
