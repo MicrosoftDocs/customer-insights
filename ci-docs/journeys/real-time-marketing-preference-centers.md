@@ -63,6 +63,5 @@ Once configured, you can start using the new preference center compliance profil
 
 [Manage user compliance settings in Customer Insights - Journeys](real-time-marketing-compliance-settings.md)
 [Manage consent for email and text messages in Customer Insights - Journeys](real-time-marketing-email-text-consent.md)
-[Outbound marketing compliance settings](privacy-use-features.md)
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]

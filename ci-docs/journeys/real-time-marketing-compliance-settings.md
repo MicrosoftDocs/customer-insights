@@ -256,6 +256,5 @@ Text messages and custom channel messages don't use the `DoNotEmail`, `DoNotBulk
 - [Migrate consent records to Customer Insights - Journeys](real-time-marketing-migrate-consent.md)
 - [Consent management for business units](real-time-marketing-consent-business-units.md)
 - [Create a consent record using a cloud flow](consent-record-creation.md)
-- To learn more about transitioning from outbound marketing to real-time journeys, see [Consent management and double opt-in transition guidance](real-time-marketing-consent-transition.md).
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]

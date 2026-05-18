@@ -73,9 +73,6 @@ To enable or disable the waitlist for a session:
     - Registrants can register for an event and session waitlist.
     - Given that neither event nor session capacity is available, both registrations have a **Waitlisted** status.
     - Registrants are only registered once a spot opens up in the event.
-
-> [!TIP]
-> If you used the waitlist functionality in outbound marketing previously, it wasn't possible to use event and session capacity and waitlisting simultaneously. This has changed in real-time journeys. You can now benefit from greater flexibility when setting up multi-session events.
   
 ## View the waitlist
 

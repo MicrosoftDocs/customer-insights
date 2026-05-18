@@ -1,7 +1,7 @@
 ---
 title: Upload, manage, and use images, files, and videos in online content
 description: Find out how to efficiently upload, manage, and use images, files, and videos in Dynamics 365 Customer Insights - Journeys. Streamline your content creation.
-ms.date: 05/14/2026
+ms.date: 05/18/2026
 ms.update-cycle: 180-days
 ms.topic: article
 author: cmenesatti-m
@@ -29,9 +29,9 @@ ms.custom:
 > -	Videos
 > -	HTML forms (only if they're empty and not prefilled with user data)
 > 
-> These assets are cached using a CDN to improve performance. For example, if a contact in the United States accesses an image hosted in a European environment, the image can be temporarily cached on a United States-based CDN server. Only assets that are publicly available through a URL (shared on a website or form) are eligible for CDN caching. 
+> These assets are cached using a CDN to improve performance. For example, if a contact in the United States accesses an image hosted in a European environment, the image can be temporarily cached on a United States-based CDN server. Only assets that are publicly available through a URL (shared on a website or form) are eligible for CDN caching.
 
-Shareable assets are critical for meaningful and successful customer experiences. The files you use must be available publicly on the internet so your emails and pages can access and display them. The Dynamics 365 Customer Insights - Journeys library stores images, documents, and videos, hosting them publicly and providing an easy way to find and link to them while creating content. The library is shared across real-time and outbound marketing, making it easy to upload and use assets where you need them. 
+Shareable assets are critical for meaningful and successful customer experiences. The files you use must be available publicly on the internet so your emails and pages can access and display them. The Customer Insights - Journeys library stores images, documents, and videos, hosting them publicly and providing an easy way to find and link to them while creating content.
 
 > [!NOTE]
 > The following file types are supported: AVI, CS, CSS, DOC, DOCX, EPUB, GIF, ICS, JPG, JPEG, MP3, MP4, MPEG, MPG, ODP, ODS, ODT, PDF, PNG, PPT, PPTX, PS, RTF, SVG, TAR, TGZ, TXT, VCF, WMV, XLS, XLSX, XML, ZIP

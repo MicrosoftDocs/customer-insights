@@ -68,7 +68,7 @@ Form fields are prefilled only when you open the page containing the form by sel
 
 ### "Prefill marketing form" is enabled on the contact record, but the form isn't prefilled
 
-The "Prefill marketing form" attribute works only for outbound marketing forms. Real-time journeys forms use the [Tracking purpose](real-time-marketing-email-text-consent.md#consent-to-track-user-behavior) as consent for prefill.
+Real-time journeys forms use the [Tracking purpose](real-time-marketing-email-text-consent.md#consent-to-track-user-behavior) as consent for prefill.
 
 ### Step-bystep troubleshooting
 

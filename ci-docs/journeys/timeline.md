@@ -58,7 +58,7 @@ For more information, see [Use custom connectors with the timeline control](/pow
 > [!div class="mx-imgBorder"]
 > ![Screenshot of new timeline view.](media/whats-new-timelineview.png "Screenshot of new timeline view")
 
-- Along with activities from Dynamics 365 Sales and Customer Service, you can view interactions based on activities from both Customer Insights - Journeys and outbound marketing. This includes interactions across the following marketing activities:
+- Along with activities from Dynamics 365 Sales and Customer Service, you can view interactions based on activities from Customer Insights - Journeys. This includes interactions across the following marketing activities:
     - Emails
     - Text messages
     - Push notifications

@@ -1,6 +1,6 @@
 ---
 title: Migrate consent records to Customer Insights - Journeys
-description: Learn how to migrate existing consent records to Customer Insights - Journeys from outbound marketing and other sources.
+description: Learn how to migrate existing consent records to Customer Insights - Journeys.
 ms.date: 04/06/2026
 ms.topic: reference
 author: alfergus
@@ -13,19 +13,19 @@ search.audienceType:
 
 # Migrate consent records to Customer Insights - Journeys
 
-When you install Customer Insights - Journeys, the consent center (**Customer Insights - Journeys** > **Audience** > **Consent center**) contains no records, even if you already gathered consent in outbound marketing. You don't need to reenter contact consent data from outbound marketing if you plan to run journeys in Customer Insights - Journeys for contacts. If you want to reuse contact consent data for leads or profiles, or wish to add new consents, you can use one of three methods:
+When you install Customer Insights - Journeys, the consent center (**Customer Insights - Journeys** > **Audience** > **Consent center**) contains no records. If you want to reuse contact consent data for leads or profiles, or wish to add new consents, you can use one of three methods:
 
-- Add new consent records for email and text messages manually by selecting the corresponding option from the top ribbon.
+1. Add new consent records for email and text messages manually by selecting the corresponding option from the top ribbon.
 
-> [!div class="mx-imgBorder"]
-> ![Email and text consent entry screenshot.](media/real-time-marketing-email-text-consent2.png "Email and text consent entry screenshot")
+    > [!div class="mx-imgBorder"]
+    > ![Email and text consent entry screenshot.](media/real-time-marketing-email-text-consent2.png "Email and text consent entry screenshot")
 
-- Import consent settings from an Excel file.
+1. Import consent settings from an Excel file.
 
-> [!TIP]
-> If you don't see the **Import from Excel** option in the top ribbon, you might have to select the three dots on the right side of the ribbon to see more items.
+    > [!TIP]
+    > If you don't see the **Import from Excel** option in the top ribbon, you might have to select the three dots on the right side of the ribbon to see more items.
 
-- Load consent information that was already captured for contacts or leads in Dynamics 365 Customer Insights - Journeys.
+1. Load consent information that was already captured for contacts or leads in Customer Insights - Journeys.
 
 Here are the consent columns referenced by this article:
 
@@ -63,7 +63,7 @@ Loading consent allows you to choose the compliance profile and the purpose wher
 
 ## Loading consent from subscription lists
 
-Subscription lists in outbound marketing typically map to topics within a specific purpose. For instance, if you had two subscription lists, you should create two topics within the commercial purpose of your compliance profile and then load consent from the subscription lists directly into the topics.
+Subscription lists from the legacy outbound marketing app typically map to topics within a specific purpose. For instance, if you had two subscription lists, you should create two topics within the commercial purpose of your compliance profile and then load consent from the subscription lists directly into the topics.
 
 In addition, if you used outbound marketing subscription lists as "do not email" lists, you can load those records into the topics as "opted out" records to preserve that behavior.
 
@@ -116,6 +116,5 @@ If you have set up a subscription list to track individuals who don't wish to be
 
 [Grow your business with multi-brand, custom preference centers](real-time-marketing-compliance-settings.md)
 [Customer Insights - Journeys preference centers](real-time-marketing-preference-centers.md)
-[Outbound marketing compliance settings](privacy-use-features.md)
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]

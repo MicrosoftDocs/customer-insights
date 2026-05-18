@@ -116,8 +116,6 @@
           href: brand-profiles-email.md
         - name: Improve email accessibility for light and dark modes
           href: email-dark-mode.md
-        - name: Import outbound emails, templates, and content blocks to Customer Insights - Journeys
-          href: real-time-marketing-import-email-to-real-time.md 
       - name: Enhance your email
         items:
         - name: Use QR codes for event registration, links to content, or URLs
@@ -598,7 +596,7 @@
       href: admin-feature-switches.md
     - name: Control access to designer features
       href: designer-feature-protection.md
-    - name: Use the versions page to enable outbound marketing
+    - name: Check the version of the app
       href: versions.md
   - name: Journeys
     items:

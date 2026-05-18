@@ -129,6 +129,5 @@ Track all consent-related changes for each contact record, including who made th
 
 [Grow your business with multi-brand, custom preference centers](real-time-marketing-compliance-settings.md)
 [Customer Insights - Journeys preference centers](real-time-marketing-preference-centers.md)
-[Outbound marketing compliance settings](privacy-use-features.md)
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
