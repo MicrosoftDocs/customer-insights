@@ -1,7 +1,7 @@
 ---
 title: New and upcoming features
 description: Discover the latest features, improvements, and bug fixes in Dynamics 365 Customer Insights - Journeys. Stay updated with our monthly release notes.
-ms.date: 05/14/2026
+ms.date: 05/18/2026
 ms.update-cycle: 180-days
 ms.topic: whats-new
 author: alfergus
@@ -15,9 +15,6 @@ ms.custom:
 ---
 
 # What's new in Dynamics 365 Customer Insights - Journeys
-
-> [!IMPORTANT]
-> **The [outbound marketing](user-guide.md) module is gradually being removed from Customer Insights - Journeys.** To avoid interruptions, stop using outbound marketing and transition to real-time journeys. Learn more: [Transition overview](transition-overview.md).
 
 [!INCLUDE [marketing-trial-cta](./includes/marketing-trial-cta.md)]
 
@@ -47,10 +44,10 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 - **Create journeys in minutes with Journey Creation Agent**
 	- With the new Journey Creation Agent in Dynamics 365 Customer Insights - Journeys, anybody can create journeys in minutes, even if they've never done it before. Instead of spending time getting the mechanics of the journey right, you can now ensure you deliver the most personalized experience for your customers. Move from idea to execution in minutes, freeing up time and reducing dependency on technical experts.
 	- [Docs](journey-creation-agent.md)
-
+ 	- [Release plan](/dynamics365/release-plan/2026wave1/customer-insights/dynamics365-customer-insights-journeys/create-journeys-minutes-journey-creation-agent)
+ 
 - **Govern Customer Insights - Journeys agents and Copilot centrally with Dynamics 365 AI Hub**
 	- Dynamics 365 AI Hub provides a single, in‑product location to manage all Customer Insights - Journeys agents and Copilot features for your environment. You can complete prerequisites, enable or disable agents, and configure guardrails such as follow‑up limits or processing caps, without navigating between tools. Because AI Hub is aligned with tenant‑level settings in Copilot Hub in Power Platform Admin Center, your environment automatically remains compliant with global governance policies.
-	- [Release plan](/dynamics365/release-plan/2026wave1/customer-insights/dynamics365-customer-insights-journeys/close-leads-faster-automating-seamless-handoffs-between-marketing-sales)
 	- [Docs](ai-hub.md)
 
 #### Monthly enhancements

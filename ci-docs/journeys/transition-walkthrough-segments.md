@@ -1,7 +1,7 @@
 ---
 title: Migrate segments to real-time journeys
 description: Learn how to use the Segment Migration Solution to migrate segments from outbound marketing to real-time journeys Dynamics 365 Customer Insights - Journeys.
-ms.date: 06/05/2025
+ms.date: 05/18/2026
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
@@ -12,9 +12,6 @@ search.audienceType:
 ---
 
 # Transition segments to real-time journeys
-
-> [!IMPORTANT]
-> **The [outbound marketing](user-guide.md) module is gradually being removed from Customer Insights - Journeys.** To avoid interruptions, stop using outbound marketing and transition to real-time journeys. Learn more: [Transition overview](transition-overview.md).
 
 You can use outbound marketing segments in real-time journeys, but it's best to rebuild the segments in real-time journeys for better performance and faster refresh cycles. Once outbound marketing is removed, segments created in outbound don't refresh and might not be available for use in real-time journeys. Migrate outbound segments using the [*Segment Migration Solution*](transition-walkthrough-segments.md#segment-migration-solution), or use [natural language and Copilot](real-time-marketing-natural-language-segments.md) to create real-time journeys segments.
 

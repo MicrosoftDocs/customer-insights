@@ -1,7 +1,7 @@
 ---
 title: Transition marketing pages and forms
 description: 'Transition marketing pages and forms: Find out how to update your marketing pages and forms for real-time journeys in Dynamics 365 Customer Insights - Journeys.'
-ms.date: 06/08/2025
+ms.date: 05/18/2026
 ms.topic: article
 author: alfergus
 ms.author: colinbirkett
@@ -16,9 +16,6 @@ ms.custom:
 ---
 
 # Transition marketing pages and forms
-
-> [!IMPORTANT]
-> **The [outbound marketing](user-guide.md) module is gradually being removed from Customer Insights - Journeys.** To avoid interruptions, stop using outbound marketing and transition to real-time journeys. Learn more: [Transition overview](transition-overview.md).
 
 Outbound marketing has sitemap entries for "Internet Marketing." The entries and the corresponding real-time journeys equivalent appear in the following image:
 

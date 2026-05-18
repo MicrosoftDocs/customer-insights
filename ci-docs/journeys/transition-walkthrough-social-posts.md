@@ -1,7 +1,7 @@
 ---
 title: Social posting and LinkedIn Lead Gen
 description: Understand the changes in Dynamics 365 Customer Insights - Journeys. Learn about the removal of social posting and LinkedIn Lead Gen and how to transition smoothly.
-ms.date: 04/29/2025
+ms.date: 05/18/2026
 ms.topic: article
 author: alfergus
 ms.author: colinbirkett
@@ -16,9 +16,6 @@ ms.custom:
 ---
 
 # Social posting and LinkedIn Lead Gen
-
-> [!IMPORTANT]
-> **The [outbound marketing](user-guide.md) module is gradually being removed from Customer Insights - Journeys.** To avoid interruptions, stop using outbound marketing and transition to real-time journeys. Learn more: [Transition overview](transition-overview.md).
 
 > [!WARNING]
 > Social posting and LinkedIn lead generation capabilities have been removed from Customer Insights - Journeys.
