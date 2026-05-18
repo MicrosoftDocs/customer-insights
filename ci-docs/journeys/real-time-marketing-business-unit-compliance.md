@@ -1,7 +1,7 @@
 ---
 title: Set up business units and compliance profiles to support multi-brand businesses
 description: Learn how to set up business units and compliance profiles to support multi-brand businesses.
-ms.date: 08/22/2023
+ms.date: 05/18/2026
 ms.topic: reference
 author: alfergus
 ms.author: alfergus
