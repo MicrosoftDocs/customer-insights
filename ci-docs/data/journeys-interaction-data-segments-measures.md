@@ -61,7 +61,7 @@ The following interaction types are available:
 - Form Submitted
 - Form Visited
 
-Each interaction type exposes fields you can use in conditions, such as Journey, Email, Email address, Email client, Timestamp, Profile ID, and Profile type.
+Each interaction type includes fields you can use in conditions, such as Journey, Email, Email address, Email client, Timestamp, Profile ID, and Profile type.
 
 > [!NOTE]
 > Interaction data refreshes on the Customer Insights - Data system refresh schedule, not in real time. Segments and measures that use interaction data reflect the state of interactions as of the last successful refresh.
@@ -78,7 +78,7 @@ Use the **Behavioral** tab in the segment builder to filter unified customer pro
 
    :::image type="content" source="media/journeys-interactions-behavioral-tab.png" alt-text="Screenshot of the Behavioral tab in the segment builder side panel, showing the full list of Customer Insights - Journeys interaction types such as Email Opened, Email Sent, Form Submitted, and others.":::
 
-1. Select an [interaction type](#available-interaction-types) to expand it and view its available fields, or use the **Search** box at the top of the **Behavioral** tab to quickly find an interaction type or field by typing part of its name.
+1. Select an [interaction type](#available-interaction-types) to expand it and view its available fields, or use the **Search** box at the top of the **Behavioral** tab to find an interaction type or field by typing part of its name.
 
    > [!NOTE]
    > The search matches against the underlying field names, not the localized display names shown in the list. If you can't find an expected interaction type by its display name, try searching by a portion of its technical name, or select **Show display names** at the bottom of the panel to toggle between views.
