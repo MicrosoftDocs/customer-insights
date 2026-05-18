@@ -1,7 +1,7 @@
 ---
 title: Create branded, customized preference centers to manage customer consent
 description: Learn how to set up preference centers to collect and manage consent from your customers.
-ms.date: 09/10/2024
+ms.date: 05/18/2026
 ms.topic: reference
 author: alfergus
 ms.author: alfergus
