@@ -17,9 +17,6 @@ ms.custom:
 
 # Real-time journeys transition resources
 
-> [!IMPORTANT]
-> **The [outbound marketing](user-guide.md) module is gradually being removed from Customer Insights - Journeys.** To avoid interruptions, stop using outbound marketing and transition to real-time journeys. Learn more: [Transition overview](transition-overview.md).
-
 Use the following resources to transition from outbound marketing to real-time journeys in Dynamics 365 Customer Insights - Journeys. Contact FastTrack or your account manager if you have questions or need help.
 
 ## Documentation

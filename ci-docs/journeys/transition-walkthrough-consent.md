@@ -17,9 +17,6 @@ ms.custom:
 
 # Transition consent
 
-> [!IMPORTANT]
-> **The [outbound marketing](user-guide.md) module is gradually being removed from Customer Insights - Journeys.** To avoid interruptions, stop using outbound marketing and transition to real-time journeys. Learn more: [Transition overview](transition-overview.md).
-
 Consent lets Customer Insights – Journeys customers send marketing messages. If you use outbound marketing, you can move consent settings to real-time journeys. Consent management is more advanced in real-time journeys. Learn about the differences and how to move consent in [Consent management and double opt-in transition guidance](real-time-marketing-consent-transition.md). This article also explains how to move subscription lists to real-time journeys to send segment-based newsletters. For more information, see [Understanding consent management in Dynamics 365 Customer Insights - Journeys - Dynamics FastTrack Blogs](https://community.dynamics.com/blogs/post/?postid=8b2a4ee8-1069-ee11-a81c-000d3a7a1a66)
 
 To move consent, follow these steps:

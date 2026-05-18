@@ -1,7 +1,7 @@
 ---
 title: Transition emails, content settings, and assets
 description: Transition your emails and assets to real-time journeys in Dynamics 365 Customer Insights - Journeys.
-ms.date: 06/11/2025
+ms.date: 05/18/2026
 ms.topic: concept-article
 author: alfergus
 ms.author: alfergus
@@ -12,9 +12,6 @@ search.audienceType:
 ---
 
 # Transition emails, content settings, and assets
-
-> [!IMPORTANT]
-> **The [outbound marketing](user-guide.md) module is gradually being removed from Customer Insights - Journeys.** To avoid interruptions, stop using outbound marketing and transition to real-time journeys. Learn more: [Transition overview](transition-overview.md).
 
 ## Emails
 

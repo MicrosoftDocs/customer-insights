@@ -1,7 +1,7 @@
 ---
 title: Transition journeys
 description: Transition your journeys to real-time journeys in Dynamics 365 Customer Insights - Journeys. Follow our guide to ensure a smooth transition.
-ms.date: 12/08/2025
+ms.date: 05/18/2026
 ms.update-cycle: 180-days
 ms.topic: article
 author: alfergus
@@ -15,9 +15,6 @@ ms.custom:
 ---
 
 # Transition journeys
-
-> [!IMPORTANT]
-> **The [outbound marketing](user-guide.md) module is gradually being removed from Customer Insights - Journeys.** To avoid interruptions, stop using outbound marketing and transition to real-time journeys. Learn more: [Transition overview](transition-overview.md).
 
 Journeys in real-time journeys are the equivalent of customer journeys in outbound marketing. Journeys are the container that define the sequence of marketing actions that contacts are involved in. The underlying architecture for journeys in the real-time journeys module is fundamentally different from outbound marketing, which is why journeys can't be transferred automatically and manual recreation of the journey is required.
 
