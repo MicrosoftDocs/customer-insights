@@ -1,7 +1,7 @@
 ---
 title: "Troubleshooting: Segments show incorrect member count"
 description: Troubleshoot issues related to segments showing an incorrect member count in Dynamics 365 Customer Insights - Journeys.
-ms.date: 02/23/2026
+ms.date: 05/18/2026
 ms.topic: troubleshooting-general
 author: alfergus
 ms.author: alfergus
