@@ -60,8 +60,12 @@ Unless a style is explicitly set in the element properties, the default style is
 
 > [!NOTE]
 > Dynamic content blocks are currently in preview. To enable them, go to **Settings** > **Feature switches** and set the "Dynamic content blocks (preview)" feature switch (in the **Email editor** group) to **On**.
->
-> Dynamic content blocks aren't currently visible in "Preview & Test." Additionally, dynamic content blocks in emails sent through standard journeys function as expected; however, when emails are sent using "Test send," dynamic content blocks aren't functional. A fix is being deployed that should reach all regions by May 31, 2026.
+
+> [!IMPORTANT]
+> - Dynamic content blocks don't appear in **Preview & Test**.
+> - In standard journeys, dynamic content blocks render correctly in sent emails.
+> - In **Test send**, dynamic content blocks aren't rendered.
+> A fix is currently being deployed and is expected to reach all regions by **May 31, 2026**.
 
 There are also two types of content blocks based on *what happens when their content is updated*: 
 
