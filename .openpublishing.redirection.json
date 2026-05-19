@@ -3595,6 +3595,11 @@
       "source_path": "ci-docs/journeys/spam-checker.md",
       "redirect_url": "/dynamics365/customer-insights/journeys/real-time-marketing-email",
       "redirect_document_id": false
-    }
+    },
+    {
+      "source_path": "ci-docs/data/data-prep-overview.md",
+      "redirect_url": "/dynamics365/customer-insights/data/data-sources",
+      "redirect_document_id": false
+    },
   ]
 }
