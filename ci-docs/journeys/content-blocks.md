@@ -1,7 +1,7 @@
 ---
 title: Create content blocks that you can reuse in multiple designs
 description: Reusable content blocks in Dynamics 365 Customer Insights - Journeys help you save time and ensure consistency across emails. Learn how to create and use them today.
-ms.date: 05/05/2026
+ms.date: 05/19/2026
 ms.topic: how-to
 author: vinayd-msft
 ms.author: alfergus
@@ -61,7 +61,7 @@ Unless a style is explicitly set in the element properties, the default style is
 > [!NOTE]
 > Dynamic content blocks are currently in preview. To enable them, go to **Settings** > **Feature switches** and set the "Dynamic content blocks (preview)" feature switch (in the **Email editor** group) to **On**.
 >
-> Dynamic Content Blocks are currently not visible in "Preview & Test". Additionally, an email that includes Dynamic content block works fine when sent via normal journey, however when sent via "Test send" will not include Dynamic Content blocks. A fix is being deployed that should reach all regions by May 31st, 2026.
+> Dynamic content blocks aren't currently visible in "Preview & Test." Additionally, dynamic content blocks in emails sent through standard journeys function as expected; however, when emails are sent using "Test send," dynamic content blocks aren't functional. A fix is being deployed that should reach all regions by May 31, 2026.
 
 There are also two types of content blocks based on *what happens when their content is updated*: 
 
