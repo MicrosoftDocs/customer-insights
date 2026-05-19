@@ -1,7 +1,7 @@
 ---
 title: Uninstall Customer Insights
 description: How to remove Dynamics 365 Customer Insights.
-ms.date: 11/05/2024 
+ms.date: 05/18/2026 
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -49,17 +49,6 @@ To run the uninstall process:
 1. [Access the installation management area](setup.md#install-uninstall-or-update-customer-insights) and find the environment where you want to uninstall the Customer Insights - Journeys application. Make sure the correct environment is listed.
 1. Select **Uninstall** next to the instance that you want to remove.
 1. The uninstall process takes place and updates the environment when it's complete.
-
-## Reset any Power Apps portals connected to the uninstalled Customer Insights - Journeys app (outbound marketing only)
-
-If the outbound environment in the Customer Insights - Journeys instance that you're uninstalling was connected to a Power Apps portal (for example to run marketing pages or the events website), then you need to reset the portal to release its license. After the reset, the portal still shows as configured in the Power Platform admin center, but you'll be able to select it when you use the installation management area to set up a new, copied, or restored instance.
-
-Portals are optional, so you might not have one connected to your Customer Insights - Journeys instance. More information: [Integrate Customer Insights - Journeys with a CMS system or Power Apps portal](portal-optional.md)
-
-To reset a portal:
-
-1. Follow the instructions provided in [Reset a portal](/powerapps/maker/portals/admin/reset-portal).
-1. Portal reset leaves behind its website bindings, which may prevent you from reusing your portal name. Therefore, you should always delete all website bindings that are related to the portals used by your uninstalled Customer Insights - Journeys instance. More information: [Create and manage website bindings](/powerapps/maker/portals/configure/website-bindings)
 
 ## Solution uninstall order for removing Customer Insights - Journeys
 

@@ -26,7 +26,7 @@ The **Quota limits** page shows the total quota levels you have purchased and 
 The following usages and limits are tracked on this screen:
 
 - **Monthly interaction quota**: Shows the total number of outbound interactions (email messages, text messages, and push notifications) that you have sent in the current month.
-    - The interaction quota is reset on the first day of each month. 
+    - The interaction quota is reset on the first day of each month.
     - Your interaction quota is equal to ten times your interacted people quota.
 - **Interacted people**: Shows the total number of *interacted people* that you can have in your database according to your current Customer Insights - Journeys subscription.
     - Entities that count toward the interacted people quota include leads, contacts, and Customer Insights - Data profiles.

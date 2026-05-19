@@ -1,7 +1,7 @@
 ---
 title: Known issues in Customer Insights - Journeys with mitigations
 description: Learn about known issues in Customer Insights - Journeys and how to work around them.
-ms.date: 02/11/2026
+ms.date: 05/18/2026
 ms.topic: troubleshooting-known-issue
 author: alfergus
 ms.author: alfergus
@@ -53,7 +53,7 @@ As we continue to work on Customer Insights - Journeys and refine the experience
 - Content blocks are inserted into emails by copying. This has the following implications:
     - The same content block inserted multiple times in the same email are new and separate copies (and contribute to the email size).
     - Updating the original content block doesn't update emails that include those content blocks
-- The handlebar expression language for personalization syntax (for example, {{contact.firstname}}) isn't supported in real-time. All personalization must be defined using the UI inside the designers for Email, SMS, or Push. Workaround: Use the [Email import tool](real-time-marketing-import-email-to-real-time.md) Opens in a new window or tab in real-time to copy outbound emails. The tool will automatically migrate personalization expressions.
+- The handlebar expression language for personalization syntax (for example, {{contact.firstname}}) isn't supported in real-time journeys. All personalization must be defined using the user interface inside the designers for Email, SMS, or Push.
 
 ## Forms and pages
 

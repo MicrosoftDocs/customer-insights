@@ -1,7 +1,7 @@
 ---
 title: Install and manage Customer Insights
 description: Learn how to install, uninstall, and manage Dynamics 365 Customer Insights environments with step-by-step guidance and troubleshooting tips.
-ms.date: 09/09/2025
+ms.date: 05/18/2026
 ms.topic: install-set-up-deploy
 author: alfergus
 ms.author: alfergus
@@ -47,7 +47,7 @@ Customer Insights - Journeys is installed as a **paid installation** or **trial*
 If you **Uninstall** Customer Insights - Journeys (paid or trial), the services disconnect, and the environment only includes the user experience solutions without the services needed to send emails, process segments, or use other features. If your environment is in this state, you see a banner at the top of the application indicating that the environment only has the user experience solutions installed but not the services. To make the environment functional, install the application.
 
 > [!NOTE]
-> As of June 30, 2024 there are no longer application installation limits for Dynamics 365 Customer Insights - Journeys (real-time only) or Dynamics 365 Customer Insights - Data. Outbound marketing solutions are still limited to the prior application installation limits. If you own a legacy Dynamics 365 Marketing license, you're allowed one outbound marketing solution installation per license purchased. If you own the current Dynamics 365 Customer Insights license, you can add outbound marketing up to four times per base license.
+> As of June 30, 2024 there are no longer application installation limits for Dynamics 365 Customer Insights - Journeys.
 
 #### Set up or access a Customer Insights - Journeys environment
 

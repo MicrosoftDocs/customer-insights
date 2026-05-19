@@ -1,7 +1,7 @@
 ---
 title: Set up and manage an event waitlist
 description: Learn how to register interested attendees on a waitlist in Dynamics 365 Customer Insights - Journeys.
-ms.date: 06/26/2025
+ms.date: 05/18/2026
 ms.topic: how-to
 author: terezakirk
 ms.author: colinbirkett
@@ -73,9 +73,6 @@ To enable or disable the waitlist for a session:
     - Registrants can register for an event and session waitlist.
     - Given that neither event nor session capacity is available, both registrations have a **Waitlisted** status.
     - Registrants are only registered once a spot opens up in the event.
-
-> [!TIP]
-> If you used the waitlist functionality in outbound marketing previously, it wasn't possible to use event and session capacity and waitlisting simultaneously. This has changed in real-time journeys. You can now benefit from greater flexibility when setting up multi-session events.
   
 ## View the waitlist
 

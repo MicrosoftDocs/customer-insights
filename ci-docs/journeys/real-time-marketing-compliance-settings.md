@@ -1,7 +1,7 @@
 ---
 title: Consent management overview
 description: 'Consent management in Customer Insights – Journeys: Learn how to set up, manage, and enforce user consent to stay compliant with privacy regulations. Start managing consent today.'
-ms.date: 12/12/2025
+ms.date: 05/18/2026
 ms.topic: concept-article
 author: petrjantac
 ms.author: alfergus
@@ -256,6 +256,5 @@ Text messages and custom channel messages don't use the `DoNotEmail`, `DoNotBulk
 - [Migrate consent records to Customer Insights - Journeys](real-time-marketing-migrate-consent.md)
 - [Consent management for business units](real-time-marketing-consent-business-units.md)
 - [Create a consent record using a cloud flow](consent-record-creation.md)
-- To learn more about transitioning from outbound marketing to real-time journeys, see [Consent management and double opt-in transition guidance](real-time-marketing-consent-transition.md).
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]

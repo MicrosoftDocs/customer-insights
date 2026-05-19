@@ -1,7 +1,7 @@
 ---
 title: One-click unsubscribe support for emails
 description: One-click unsubscribe helps recipients opt out of commercial emails in Customer Insights - Journeys. Learn how to enable and manage this feature.
-ms.date: 03/25/2026
+ms.date: 05/18/2026
 ms.topic: get-started
 author: alfergus
 ms.author: alfergus
@@ -86,7 +86,7 @@ When contact point consent (CPC) records are updated due to the recipient select
 
 **What types of emails does the system include one-click unsubscribe headers on?**
 
-The one-click unsubscribe headers are in emails with a message designation of commercial (if they're sent from an outbound marketing journey) or a purpose type of commercial (if they're sent from a real-time journey).
+The one-click unsubscribe headers are in emails with a purpose type of commercial.
 
 Transactional emails don't have one-click unsubscribe headers.
 

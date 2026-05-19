@@ -1,7 +1,7 @@
 ---
 title: How to use aggregate channel analytics
 description: Learn how to use and interpret aggregate channel analytics in Dynamics 365 Customer Insights - Journeys.
-ms.date: 04/08/2024
+ms.date: 05/18/2026
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
@@ -16,9 +16,6 @@ search.audienceType:
 The built-in aggregate channel analytics dashboard shows important metrics and insights about the delivery and engagement of your marketing assets at any level of aggregation. You can access insights across all journeys and channels as well as zoom in on a particular channel or message. This helps you stay on top of your marketing campaign effectiveness and track the performance of your marketing assets.
 
 :::image type="content" source="media/real-time-marketing-aggregate-channel-analytics.png" alt-text="Aggregate channel analytics dashboard." lightbox="media/real-time-marketing-aggregate-channel-analytics.png":::
-
-> [!NOTE]
-> Currently, only interaction data from real-time journeys is used to populate the aggregate channel analytics dashboards. Data from outbound marketing customer journeys is not used.
 
 ## How to use the dashboard
 

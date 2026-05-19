@@ -1,7 +1,7 @@
 ---
 title: Create branded, customized preference centers to manage customer consent
 description: Learn how to set up preference centers to collect and manage consent from your customers.
-ms.date: 09/10/2024
+ms.date: 05/18/2026
 ms.topic: reference
 author: alfergus
 ms.author: alfergus
@@ -63,6 +63,5 @@ Once configured, you can start using the new preference center compliance profil
 
 [Manage user compliance settings in Customer Insights - Journeys](real-time-marketing-compliance-settings.md)
 [Manage consent for email and text messages in Customer Insights - Journeys](real-time-marketing-email-text-consent.md)
-[Outbound marketing compliance settings](privacy-use-features.md)
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
