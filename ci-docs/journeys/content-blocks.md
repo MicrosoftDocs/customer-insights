@@ -65,6 +65,7 @@ Unless a style is explicitly set in the element properties, the default style is
 > - Dynamic content blocks don't appear in **Preview & Test**.
 > - In standard journeys, dynamic content blocks render correctly in sent emails.
 > - In **Test send**, dynamic content blocks aren't rendered.
+>
 > A fix is currently being deployed and is expected to reach all regions by **May 31, 2026**.
 
 There are also two types of content blocks based on *what happens when their content is updated*: 
