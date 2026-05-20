@@ -68,8 +68,6 @@ Operational analytics has two parts:
 
     - **Flow details**: The flow details section shows additional details such as rate limits (if applied), unique people who entered the journey (different than inflow, that counts each entry rather than unique people, flow details are only available for channel tiles), and exit reasons. You can select the list icon to display the individuals in the step and reason codes for their status. You can also select the export button to export the data to Excel (with a limit of 50,000 records).
 
-        :::image type="content" source="media/operational-analytics-2.png" alt-text="An overview of customer inflow, processed, and exit analytics with email performance metrics." lightbox="media/operational-analytics-2.png":::
-
     - **Goal analytics**: If a goal has been defined as a target set, you can view how the journey is progressing toward its goal and if it has met the goal.
 
 ### Channel analytics
