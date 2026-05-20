@@ -23,9 +23,6 @@ Additionally, advanced bot protection for real-time journeys safeguards your bus
 
 For out-of-the-box insights, we’re automatically migrating outbound marketing interactions to real-time journeys storage and updating the outbound insights to align with real-time journeys widgets. As a result, and to comply with the [real-time journeys retention policy](real-time-marketing-analytics.md#email-insights), you can only view outbound marketing interactions from the last 12 months in the contact timeline. Past data is still available in data storage.
 
-> [!NOTE]
-> If you’re a customer in the EU, NAM, OCE, or GBR region, only interactions created after January 1, 2024, are migrated by default. You can request additional data to be transferred by filling in [this form](https://go.microsoft.com/fwlink/?linkid=2313103).
-
 ## Email insights
 
 When you import outbound emails to real-time journeys, you can't view past outbound marketing email data in the real-time journeys email insights after the migration date. Outbound marketing emails are recreated in real-time journeys and retain their data history separately. However, historical outbound marketing data remains in Customer Insights - Journeys storage.
