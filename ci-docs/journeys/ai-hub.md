@@ -24,6 +24,9 @@ AI Hub aligns with tenant-level governance defined in Copilot Hub in the Power P
 
 > [!IMPORTANT]
 > AI Hub is available as part of the 1.1.65002.153 update. To use AI Hub, navigate to **Settings** > **Versions** and upgrade to 1.1.65002.153.
+>
+> If you’re a customer in the NAM or OCE region, Journey Creation Agent will be available to you with the June 2026 update.
+
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note.md)]
 
