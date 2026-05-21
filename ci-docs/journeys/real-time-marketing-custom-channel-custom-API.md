@@ -43,6 +43,10 @@ The contract that the outbound custom API should implement must have one input p
   - **Status**: string – The possible values are:
     - **NotSent** – There was an attempt to execute the submission to the provider but it was rejected without a possibility to retry.
     - **Sent** – The submission request was successfully accepted by the provider.
+  - **Details**: object – Optional details of submission when a message is not sent. This is useful for returning why a submission has not been sent. It's visible in the **Delivery and interaction details** on the analytics page.
+    - **Reason**: string – The reason why the message was not sent.
+    - **Message**: string - Details of the blocked submission.
+
 
 ## Delivery report custom API
 
