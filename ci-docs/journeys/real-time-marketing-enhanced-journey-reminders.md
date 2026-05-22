@@ -13,7 +13,7 @@ search.audienceType:
 
 # Enhanced journey reminders
 
-Create action-oriented journeys that remind customers to complete a call to action until a certain date or time. Built-in reminder orchestration eliminates the need to create cascading branches that check for the qualifying action after each step or specify conditions with more than two possibilities. This simplifies not only the journey logic required to capture the whole scenario in a single journey, but also preserves all analytics for the journey actions in a single place when journeys are live.
+Create action-oriented journeys that remind customers to complete a call to action, with messages stopping as soon as the customer acts or a time limit is reached. Built-in reminder orchestration eliminates the need to create cascading branches that check for the qualifying action after each step or specify conditions with more than two possibilities. This simplifies not only the journey logic required to capture the whole scenario in a single journey, but also preserves all analytics for the journey actions in a single place when journeys are live.
 
 ## Send a series of messages
 
@@ -22,12 +22,12 @@ The best way to show how journey reminders work is to walk through a real-life s
 > [!div class="mx-imgBorder"]
 > ![create segment based journey](media/real-time-marketing-create-segment-based-journey.png "create segment based journey")
 
-1. To create the reminders, select the plus (**+**) symbol below the email tile then select the **Send a set of messages until conditions are met** tile in the action pane. This is also known as the **Series** tile.
+1. To create the reminders, select the plus (**+**) symbol below the email tile then select the **Series** tile.
 
     > [!div class="mx-imgBorder"]
     > ![Series tile select screenshot.](media/real-time-marketing-series-tile.png "Series tile select screenshot")
 
-1. The Series tile has two exits by default. If a customer completes the defined exit condition, they exit the left branch. Otherwise, the customer exits the right branch. In this example, the exit condition is a custom trigger called "Loan application submitted".
+1. The Series tile has two exits by default. Customers who meet the exit condition before completing all steps exit through the left branch. Customers who complete all steps without meeting the condition exit through the right branch. In this example, the exit condition is a custom trigger called "Loan application submitted".
 
     > [!div class="mx-imgBorder"]
     > ![Screenshot showing the Loan application submitted exit condition.](media/real-time-marketing-select-exit-condition-2.png "Screenshot showing the Loan application submitted exit condition")
@@ -37,9 +37,9 @@ The best way to show how journey reminders work is to walk through a real-life s
     > [!div class="mx-imgBorder"]
     > ![Screenshot showing previous message gets an interaction selection.](media/real-time-marketing-select-exit-condition-3.png "Screenshot showing previous message gets an interaction selection")
 
-1. To make sure your reminders fit within a defined time frame, you can set an end date for your application under **Time limit** in the Series properties pane on the right. Selecting an end date automatically adds an additional exit branch for the Series tile. If a customer doesn't complete the application within the defined time window, they'll exit through the new branch.
+1. To bound the series to a specific window, set a **Time limit** in the Series properties pane. This adds a third exit branch. Customers who haven't met the exit condition when the time limit is reached exit through this branch, regardless of how many steps they've completed.
 
-1. To complete the journey, select the plus (**+**) button inside the Series tile and add messages from different channels that you want to send out as part of the reminder journey. Add wait time between the messages to avoid spamming your customers.
+1. To complete the journey, select the plus (**+**) button inside the Series tile and add messages from different channels that you want to send out as part of the reminder journey. A  Add a wait tile between messages to control the pace of delivery.
 
     > [!div class="mx-imgBorder"]
     > ![Screenshot showing message tile selection.](media/real-time-marketing-set-end-date.png "Screenshot showing message tile selection")
