@@ -21,9 +21,7 @@ To get to the Add an action dashboard, go to Customer Insights - Journeys > **Jo
 
 Within real-time journeys, you can launch various actions. Some of these actions include sending messages, channel optimization, condition actions, audience splitting, and more.
 
-:::image type="content" source="media/action-types-small.png" alt-text="An overview of all possible actions in a journey." lightbox="media/action-types.png":::
-
-The main actions are grouped under [messages](#messages), [AI-powered conversations](#ai-powered-conversations), [AI-powered actions](#ai-powered-actions), [conditions](#conditions), [activities](#activities-preview), and [connectors](#connectors). You can see all available actions under each section below.
+The main actions are grouped under [messages](#messages), [AI-powered conversations](#ai-powered-conversations), [AI-powered actions](#ai-powered-actions), [conditions](#conditions), and [connectors](#connectors). You can see all available actions under each section below.
 
 ### Messages
 
@@ -52,6 +50,10 @@ Customer Insights - Journeys offers the ability to integrate with the Contact Ce
 ##### Voice conversation
 
 You can make personalized phone calls using Contact Center, powered by human agents or Copilot Studio agents, and send the outcomes back to Customer Insights - Journeys for branching. This is only available if the [conversational journeys](conversational-journeys-overview.md) feature is enabled.
+
+##### Text message conversation
+
+You can send an initial text message to the recipient. When the recipient responds, an AI agent handles the conversation over the SMS channel. This is only available if the [conversational journeys](conversational-journeys-overview.md) feature is enabled.
 
 ### AI-powered actions
 
@@ -83,11 +85,15 @@ You can configure the wait tile using the following parameters:
 
 ##### Wait for a trigger
 
-There are three condition types for the wait for trigger tile. For the first condition type, you can specify to wait until a previous message in your journey gets an interaction. For the second condition type, you can specify a trigger attribute at a specific date and time for your customers. For the third condition type, you can specify to wait until a person or customer becomes a member of a dynamic segment in your journey. For more information on this condition type, see [Wait for segment membership](#wait-for-segment-membership-preview). The wait for trigger configuration is useful for scenarios like appointment reminders, where you can choose to wait one day before the appointment to send a reminder. Date and time information must be included in the trigger that started the journey for the customer.
+See [Branching the customer journey ](##branching-the-customer-journey).
 
 ##### Series
 
-Send a series of messages until certain conditions are met.
+Send a series of messages to customers, progressing through each step sequentially until an exit condition is met, a time limit is reached, or all steps are completed. To learn more about series, visit [Enhanced journey reminders](dynamics365/customer-insights/journeys/real-time-marketing-enhanced-journey-reminders).
+
+##### Audience split
+
+The audience split tile allows you to divide your audience to give a unique set of experiences to random portions of the audience. You can split by percentage or split by number. Learn more: [Split your audience into groups (preview)](real-time-marketing-split-audience.md).
 
 #### Branching the customer journey 
 
@@ -103,17 +109,17 @@ Wait for trigger branch supports specifying a duration for how long to wait unti
 
 The attribute branch doesn't have a provision for waiting. Attribute branches use the data available at the time of execution and allow for multiple-way branchings.
 
-##### Wait for trigger branch
+##### Wait for trigger
+
+There are three condition types for the wait for trigger tile. For the first condition type, you can specify to wait until a previous message in your journey gets an interaction. For the second condition type, you can specify a trigger attribute at a specific date and time for your customers. For the third condition type, you can specify to wait until a person or customer becomes a member of a dynamic segment in your journey. The wait for trigger configuration is useful for scenarios like appointment reminders, where you can choose to wait one day before the appointment to send a reminder. Date and time information must be included in the trigger that started the journey for the customer.
+
+###### Wait until the previous message gets an interaction or a trigger is activated
 
 The "wait for trigger" (if/then branch) tile lets you branch the customer journey based on customer actions like opening an email or completing a purchase. The wait tile (if/then branch) waits for the customer to perform the trigger within the time limit specified. If the customer performs the trigger, they'll immediately proceed down the yes branch. If the customer doesn't perform the trigger within the time limit specified, they'll proceed down the "no" branch after the time limit has passed.
 
 For example, you can configure the wait tile to wait for the *Email opened* event on a previously sent email. If the time limit is set to one day, the wait branch waits for the customer to open the email within that day. If the customer opens the email within that day, they'll immediately proceed down the yes branch. If the customer doesn't open the email within that day, they'll proceed down the no branch after one day.
 
-##### Wait for segment membership (preview)
-
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note.md)]
+###### Wait for segment membership
 
 The wait for segment membership feature allows for a more complex set of actions to take place beyond a single trigger. For example, you may want to create a branch based on how much a customer spent through multiple transactions in a specific period. In this scenario, rather than wait for a specific trigger, you can simply define a dynamic segment, such as 'big purchaser,' and wait for the customer to become a member of that segment.
 
@@ -131,26 +137,6 @@ The attribute branch checks for attribute values the moment a customer enters th
 
 Attribute branches support multi-way branching. For example, if you have 'customer spend' as an attribute, you can create different branches for different ranges of spending. For more information, see [Personalize journey variations using multiple journey branches](real-time-marketing-multiple-branches.md).
 
-##### Audience split
-
-The audience split tile allows you to divide your audience to give a unique set of experiences to random portions of the audience. You can split by percentage or split by number. Learn more: [Split your audience into groups (preview)](real-time-marketing-split-audience.md).
-
-### Activities (preview)
-
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note.md)]
-
-You can create activities for customers at specific instances in a journey, such as creating and assigning a phone call or task activity. See available activities below.
-
-##### Phone call (preview)
-
-You can create and assign a phone call for customers to sales.
-
-##### Task (preview)
-
-You can create and assign a task activity for customers.
-
 ### Connectors
 
 Connectors provide additional features beyond the actions above. For example, you can activate a custom trigger where additional journeys or [Power Automate flows](/power-automate) connected to a custom event are triggered when a customer does a specific action.
@@ -165,20 +151,15 @@ For example, a loan application journey could have various steps that require a 
 
 To learn more about triggering a custom event, see [Trigger an action outside of a journey](real-time-marketing-custom-actions.md).
 
-##### Create an opportunity (preview)
+##### Create a record (preview)
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note.md)]
 
-You can create and assign an opportunity to sales.
+Create any type of record or activity, including phone calls, tasks, leads, opportunities, and custom entities, directly from the journey canvas to drive timely follow-up and improve conversion rates.
 
-##### Create an lead (preview)
+To learn more about creating records and activities, see [Create records and activities from journeys (preview)](dynamics365/customer-insights/journeys/create-records-activities).
 
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note.md)]
-
-You can create and assign an opportunity to sales.
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
