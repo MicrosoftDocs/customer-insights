@@ -159,6 +159,8 @@ class NotificationService: UNNotificationServiceExtension {
 ```
 
 ## Receive notifications in Android
+Customer Insights - Journeys support both data and notification message format. Learn more: [Firebase Cloud Messaging](https://firebase.google.com/docs/cloud-messaging)
+The notification format does not require the client app to process the message payload. If your use cases require the ability to receive and manage the message payload, then please continue reading through this doc on how to receive the data format notifications.
 
 ### Sample code snippet to parse the incoming notifications in Android
 
