@@ -17,8 +17,6 @@ Teams rely on channel analytics to evaluate campaign performance and to drive fu
 
 ## Enable bot protection
 
-To enable bot protection, go to **Settings** > **Feature switches** and enable the **Bot Protection** toggle.
-
 > [!IMPORTANT]
 > - Organizations created after July 22, 2024 have advanced bot protection enabled by default.
 > - Bot protection doesn't apply to email opens. Learn more about the challenges of relying solely on email opens to measure campaign performance: [Beyond open rate: Rethinking email marketing metrics](https://www.microsoft.com/dynamics-365/blog/it-professional/2024/10/16/rethinking-email-metrics-the-evolving-landscape-of-open-rates/).
