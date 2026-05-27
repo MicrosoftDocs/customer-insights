@@ -43,24 +43,24 @@ A Fabric tenant administrator must enable external access to OneLake data once f
 ### Workspace prerequisites
 
 - A Microsoft Fabric workspace that contains one or more lakehouses with the Delta tables you want to ingest. The Fabric workspace and Customer Insights - Data environment must be in the same Microsoft Entra tenant.
-- The Customer Insights - Data service principal (**Dynamics 365 AI for Customer Insights**) must be added to the Fabric workspace with at least the **Contributor** role so that it can read Delta tables at runtime and write a small amount of metadata for each table. For more information, see [Grant permissions to the service principal to access the storage account](../connect-service-principal.md#grant-permissions-to-the-service-principal-to-access-the-storage-account). Scheduled refreshes run as the Customer Insights - Data service principal (**Dynamics 365 AI for Customer Insights**).
-- The admin who creates or updates the data source needs at least the Viewer workspace role.
+- The Customer Insights - Data service principal (**Dynamics 365 AI for Customer Insights**) must be added to the Fabric workspace with at least the **Contributor** role so that it can read Delta tables at runtime and write a small amount of metadata for each table. For more information, see [Grant permissions to the service principal to access the storage account](connect-service-principal.md#grant-permissions-to-the-service-principal-to-access-the-storage-account).
+- The admin who creates or updates the data source needs at least the **Viewer** workspace role.
 
 ### Data prerequisites
 
 - You must ingest **managed Delta tables** in a Fabric lakehouse. Files (such as CSV or non-Delta Parquet) and Fabric Data Warehouse tables aren't supported.
 - Each Delta table must have a primary key column with unique, non-null values. String, integer, and GUID data types are supported as primary keys.
-- Delta tables exposed through Fabric **shortcuts** are supported.
-- Customer Insights - Data supports Databricks reader version 1 or 2. Delta tables using features that require Databricks reader version 3 or above aren't supported. Learn more: [Supported Databricks features](../connect-delta-lake.md#supported-databricks-features-and-versions).
+- Delta tables exposed through [Fabric shortcuts](/fabric/onelake/onelake-shortcuts) are supported.
+- Customer Insights - Data supports Databricks reader version 1 or 2. Delta tables using features that require Databricks reader version 3 or above aren't supported. Learn more: [Supported Databricks features](connect-delta-lake.md#supported-databricks-features-and-versions).
 
 ## Preview limitations
 
 The following limitations apply during public preview:
 
-- **Editing an existing Fabric OneLake data source isn't supported**. To change the selected tables, remove the data source and create a new one. [Remove any downstream dependencies](data-unification-remove-dependencies.md) first.
 - **One Fabric OneLake data source per workspace**. To ingest from another workspace, create another data source or use a Fabric shortcut.
-- **Upgrade in place** from an existing Azure Data Lake Delta tables data source to a Fabric OneLake data source isn't yet available. In-place upgrade is planned before GA.
-- **Private Link for Inbound Access Protection** isn't yet available for Fabric OneLake connections. Private endpoint support is planned before general availability (GA). To check if Inbound Access Protection is enabled in your tenant, sign in to the Microsoft Fabric Admin Portal. Go to **Admin Portal** > **Tenant Settings** > **Advanced Networking**. Check if **Azure Private Links** and **Block Public Internet Access** are enabled.
+- **Editing an existing Fabric OneLake data source isn't supported**. To change the selected tables, remove the data source and create a new one. [Remove any downstream dependencies](data-unification-remove-dependencies.md) first.
+- **Upgrade in place** from an existing Azure Data Lake Delta tables data source to a Fabric OneLake data source isn't yet available. In-place upgrade is planned before general availability (GA).
+- **Private Link for Inbound Access Protection** isn't yet available for Fabric OneLake connections. Private endpoint support is planned before GA. To check if Inbound Access Protection is enabled in your tenant, sign in to the Microsoft Fabric Admin Portal. Go to **Admin Portal** > **Tenant Settings** > **Advanced Networking**. Check if **Azure Private Links** and **Block Public Internet Access** are enabled.
 
 ## Connect to data in Fabric OneLake
 
