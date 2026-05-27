@@ -28,8 +28,8 @@ Key reasons to connect to data stored in Fabric OneLake:
 
 Before you create a Fabric OneLake data source:
 
-- [Enable external access to the OneLake data](#enable-external-access-to-onelake-data)
-- [Add Customer Insights - Data service principal to the Fabric workspace](#add-customer-insights---data-service-principal-to-the-fabric-workspace)
+- [Enable external access to the OneLake data](#enable-external-access-to-onelake-data).
+- [Add Customer Insights - Data service principal to the Fabric workspace](#add-customer-insights---data-service-principal-to-the-fabric-workspace).
 - Verify that the following workspace and data requirements are met.
 
 ### Workspace prerequisites
