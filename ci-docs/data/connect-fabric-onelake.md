@@ -28,9 +28,9 @@ Key reasons to connect to data stored in Fabric OneLake:
 
 Before you create a Fabric OneLake data source, verify that the following requirements are met.
 
-### Tenant prerequisites (one-time, per Fabric tenant)
+### One-time tenant prerequisites
 
-A Fabric tenant administrator must enable external access to OneLake data **one time** before any Fabric OneLake data source can be created in Customer Insights - Data. This setting allows the Customer Insights - Data service to read Delta tables from your Fabric lakehouses.
+A Fabric tenant administrator must enable external access to OneLake data once for each Fabric tenant. This setting allows the Customer Insights - Data service to read Delta tables from your Fabric lakehouses.
 
 1. Sign in to the [Fabric Admin portal](https://app.fabric.microsoft.com/admin-portal) as a Fabric administrator.
 1. Select **Tenant settings**.
@@ -43,25 +43,28 @@ A Fabric tenant administrator must enable external access to OneLake data **one 
 ### Workspace prerequisites
 
 - A Microsoft Fabric workspace that contains one or more lakehouses with the Delta tables you want to ingest. The Fabric workspace and Customer Insights - Data environment must be in the same Microsoft Entra tenant.
-
-- The Customer Insights - Data service principal (**Dynamics 365 AI for Customer Insights**) must be added to the Fabric workspace with at least the **Contributor** role so that it can read Delta tables at runtime.
-
-   ![Screenshot of the Add people panel in a Fabric workspace granting Dynamics 365 AI for Customer Insights the Contributor role.](media/fabric-workspace-add-people.png)
-
-- The user who creates the data source must have permission to view the workspace and its lakehouses in Fabric.
+- The Customer Insights - Data service principal (**Dynamics 365 AI for Customer Insights**) must be added to the Fabric workspace with at least the **Contributor** role so that it can read Delta tables at runtime and write a small amount of metadata for each table. For more information, see [Grant permissions to the service principal to access the storage account](../connect-service-principal.md#grant-permissions-to-the-service-principal-to-access-the-storage-account). Scheduled refreshes run as the Customer Insights - Data service principal (**Dynamics 365 AI for Customer Insights**).
+- The admin who creates or updates the data source needs at least the Viewer workspace role.
 
 ### Data prerequisites
 
-- Tables you want to ingest must be **managed Delta tables** in a Fabric lakehouse. Files (such as CSV or non-Delta Parquet) and Fabric Data Warehouse tables aren't supported.
+- You must ingest **managed Delta tables** in a Fabric lakehouse. Files (such as CSV or non-Delta Parquet) and Fabric Data Warehouse tables aren't supported.
 - Each Delta table must have a primary key column with unique, non-null values. String, integer, and GUID data types are supported as primary keys.
-- Delta tables exposed through Fabric **shortcuts** are supported and appear in the table picker alongside tables that are native to the lakehouse.
+- Delta tables exposed through Fabric **shortcuts** are supported.
+- Customer Insights - Data supports Databricks reader version 1 or 2. Delta tables using features that require Databricks reader version 3 or above aren't supported. Learn more: [Supported Databricks features](../connect-delta-lake.md#supported-databricks-features-and-versions).
 
-> [!IMPORTANT]
-> During preview, you can't edit a Fabric OneLake data source after it's saved. Plan your table selection carefully. To add or remove tables, remove the data source and create a new one. [Remove all downstream dependencies](data-unification-remove-dependencies.md) (such as unification mappings) before you delete the data source.
+## Preview limitations
+
+The following limitations apply during public preview:
+
+- **Editing an existing Fabric OneLake data source isn't supported**. To change the selected tables, remove the data source and create a new one. [Remove any downstream dependencies](data-unification-remove-dependencies.md) first.
+- **One Fabric OneLake data source per workspace**. To ingest from another workspace, create another data source or use a Fabric shortcut.
+- **Upgrade in place** from an existing Azure Data Lake Delta tables data source to a Fabric OneLake data source isn't yet available. In-place upgrade is planned before GA.
+- **Private Link for Inbound Access Protection** isn't yet available for Fabric OneLake connections. Private endpoint support is planned before general availability (GA). To check if Inbound Access Protection is enabled in your tenant, sign in to the Microsoft Fabric Admin Portal. Go to **Admin Portal** > **Tenant Settings** > **Advanced Networking**. Check if **Azure Private Links** and **Block Public Internet Access** are enabled.
 
 ## Connect to data in Fabric OneLake
 
-Data source names and table names must begin with a letter and can contain only letters, numbers, and underscores (\_). Spaces and special characters aren't supported, and you can't rename a data source after it's saved.
+Data source names and table names must start with a letter and can only contain letters, numbers, and underscores (_). You can't use spaces or special characters. You also can't rename a data source after you save it. When you create the Fabric OneLake data source, you use the identity of the Customer Insights - Data administrator who configures it.
 
 1. In Customer Insights - Data, go to **Data** > **Data sources**.
 
@@ -69,22 +72,22 @@ Data source names and table names must begin with a letter and can contain only 
 
 1. Select **Microsoft Fabric OneLake (Preview)**.
 
-1. Enter the following information, and then select **Next**:
+1. Enter the following information:
 
-   - **Data source name** – A unique name for the data source. This name is referenced by downstream processes and can't be changed later.
+   - **Data source name** – A unique name for the data source. Downstream processes reference this name and you can't change it later.
    - **Description** *(optional)* – A short description of the data the source contains.
    - **Workspace** – The Fabric workspace that contains the lakehouse with the Delta tables you want to ingest.
 
-   ![Screenshot of the Add a data source pane with Fabric OneLake (Preview) selected and the workspace dropdown set to marketinginsights.](media/onelake-add-data-source.png)
+   :::image type="content" source="media/onelake-add-data-source.png" alt-text="Screenshot of the Add a data source pane with Fabric OneLake (Preview) selected and the workspace dropdown set to marketinginsights." lightbox="media/onelake-add-data-source.png":::
 
    > [!NOTE]
    > Each Fabric OneLake data source connects to a single workspace. To ingest tables from a different workspace, either create an additional data source for that workspace or use a Fabric shortcut to reference the tables from the connected workspace.
 
-1. On the **Add Fabric Delta tables** page, Customer Insights - Data lists every Delta table found across the lakehouses in the selected workspace. Table names use the pattern `<lakehouse>_Lakehouse_<schema>_<table>`.
+1. Select **Next**. Customer Insights - Data lists every Delta table it finds across the lakehouses in the selected workspace. Table names use the pattern `<lakehouse>_Lakehouse_<schema>_<table>`.
 
-   Select **Include** for each table you want to ingest.
+1. Select **Include** for each table you want to ingest.
 
-   ![Screenshot of the Add Fabric Delta tables page listing tables from the marketing and sales lakehouses with two tables selected.](media/onelake-add-delta-tables.png)
+   :::image type="content" source="media/onelake-add-delta-tables.png" alt-text="Screenshot of the Add Fabric Delta tables page listing tables from lakehouses with two tables selected.":::
 
    > [!TIP]
    > If a table doesn't appear, confirm that it's a managed Delta table in a Fabric lakehouse and that the workspace contains it. Tables stored in a Fabric Data Warehouse aren't listed.
@@ -97,7 +100,7 @@ Data source names and table names must begin with a letter and can contain only 
 
 1. To enable [data profiling](data-sources.md#data-profiling) on a table, select the number under **Columns** for that table. The **Manage attributes** page opens.
 
-   ![Screenshot of the Manage attributes page for marketing_Lakehouse_customer_engagement showing columns, data formats, and data profiling checkboxes.](media/onelake-manage-attributes.png)
+   :::image type="content" source="media/onelake-manage-attributes.png" alt-text="Screenshot of the Manage attributes page showing columns, data formats, and data profiling checkboxes.":::
 
    1. Review the **Name** and **Data format** for each column.
    1. Select **Data profiling** for the whole table or for individual columns. By default, data profiling is off.
@@ -105,7 +108,9 @@ Data source names and table names must begin with a letter and can contain only 
 
 1. Select **Next**, review the summary, and then select **Save**.
 
-The **Data sources** page opens and shows the new data source in **Refreshing** status. Loading data can take time. After a successful refresh, you can review the ingested data from the [**Tables**](tables.md) page.
+The **Data sources** page opens and shows the new data source in **Refreshing** status. 
+
+Loading data can take time. After a successful refresh, you can review the ingested data from the [**Tables**](tables.md) page. Data is transferred from Fabric OneLake to Customer Insights - Data and stored in the geographic location of the Customer Insights - Data environment. Learn more at the [Microsoft Trust Center](https://www.microsoft.com/trust-center).
 
 [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
 
@@ -119,29 +124,11 @@ The Fabric OneLake connector supports:
 
 ## Unsupported capabilities
 
-The following aren't supported during preview:
+The following capabilities aren't supported during preview:
 
 - Fabric **Data Warehouse** tables.
 - Files or tables that aren't in **Delta format** (for example, CSV or non-Delta Parquet).
 - Connections to lakehouses across multiple Fabric workspaces from a single data source. Use shortcuts or create additional data sources instead.
-
-## Preview limitations
-
-The following limitations apply during public preview:
-
-- **Editing an existing Fabric OneLake data source isn't supported.** To change the selected tables, remove the data source and create a new one. Remove any downstream dependencies first.
-- **One Fabric OneLake data source per workspace.** To ingest from another workspace, create another data source or use a Fabric shortcut.
-- **Azure Private Link** isn't yet available for Fabric OneLake connections. Private endpoint support is planned before general availability (GA).
-- **Upgrade in place** from an existing Azure Data Lake Delta tables data source to a Fabric OneLake data source isn't yet available. In-place upgrade is planned before GA.
-
-## Security and access
-
-- The Fabric OneLake data source is created using the identity of the Customer Insights - Data administrator who configures it.
-- Scheduled refreshes run as the Customer Insights - Data service principal (**Dynamics 365 AI for Customer Insights**). The service principal must be a member of the connected Fabric workspace with at least the **Contributor** role.
-- Data is transferred from Fabric OneLake to Customer Insights - Data and stored in the geographic location of the Customer Insights - Data environment. Learn more at the [Microsoft Trust Center](https://www.microsoft.com/trust-center).
-
-> [!IMPORTANT]
-> If the service principal isn't granted **Contributor** access to the Fabric workspace, scheduled refreshes fail even when the initial connection succeeds.
 
 ## Manage schema changes
 

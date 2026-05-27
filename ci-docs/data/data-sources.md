@@ -1,7 +1,7 @@
 ---
 title: Data sources overview
 description: Learn how to import or ingest data from various sources.
-ms.date: 02/16/2026
+ms.date: 05/27/2026
 ms.topic: overview
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -28,11 +28,11 @@ The Delta data format is the native processing format that Customer Insights –
 
 You can use Delta format with the following connectors:
 
+- [Fabric OneLake managed Delta tables (preview)](connect-fabric-onelake.md)
 - [Azure Data Lake Storage Delta tables](connect-delta-lake.md)
 - [Microsoft Dataverse](connect-dataverse.md)
 
 [!INCLUDE [delta-lake-info](./includes/delta-lake-info.md)]
-
 
 ## Data source attachment or import
 
@@ -40,6 +40,7 @@ When you're deciding how to ingest your data, a key consideration is whether the
 
 The following data connectors attach to your data:
 
+- [Fabric OneLake managed Delta tables (preview)](connect-fabric-onelake.md)
 - [Azure Data Lake Storage Delta tables](connect-delta-lake.md)
 - [Azure Data Lake Storage Common Data Model tables](connect-common-data-model.md)
 - [Microsoft Dataverse](connect-dataverse.md)
@@ -49,7 +50,7 @@ If you can't use a connector that attaches to your data, copy the data by using 
 
 ## Data profiling
 
-When data is ingested, Customer Insights – Data performs some basic data profiling. For example, it profiles the frequency of repeated values in a column. You can use profile data to understand your data and address issues. For example, if you're matching on the `FullName` column, data profiling can help you detect that the default value, *Enter your name*, appears in 10,000 rows. Therefore, if you match on this value, 10,000 rows that shouldn't be matched are matched. When you add your Azure data lake, Delta tables, or Azure Synapse data sources, you can enable data profiling for more columns.
+When data is ingested, Customer Insights – Data performs some basic data profiling. For example, it profiles the frequency of repeated values in a column. You can use profile data to understand your data and address issues. For example, if you're matching on the `FullName` column, data profiling can help you detect that the default value, *Enter your name*, appears in 10,000 rows. Therefore, if you match on this value, 10,000 rows that shouldn't be matched are matched. When you add your Fabric OneLake (preview), Azure data lake, Delta tables, or Azure Synapse data sources, you can enable data profiling for more columns.
 
 After you ingest the data, you can view the results of data profiling.
 
