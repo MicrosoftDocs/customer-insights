@@ -69,7 +69,7 @@ A Fabric tenant administrator must enable external access to OneLake data *once*
 
 ## Add Customer Insights - Data service principal to the Fabric workspace
 
-Add the Customer Insights - Data service principal (**Dynamics 365 AI for Customer Insights**) to the Fabric workspace with at least the **Contributor** role so that it can read Delta tables at runtime and write a small amount of metadata for each table. As a best practice, put the service principal in a security group.
+Add the Customer Insights - Data service principal (**Dynamics 365 AI for Customer Insights**) to the Fabric workspace with at least the **Contributor** role so it can read Delta tables at runtime and write a small amount of metadata for each table. As a best practice, put the service principal in a security group.
 
 ### Enable the service principal in the Fabric tenant
 
@@ -164,7 +164,7 @@ If the source schema changes after the data source is created, a schema mismatch
 
 Customer Insights - Data uses Delta version history when ingesting data. Customer Insights - Data needs all log versions since its last refresh. To avoid full-refresh failures caused by missing Delta versions:
 
-- Maintain longer Delta log version history than your longest refresh cadence. For example, if a development instance only refreshes data every two weeks, maintain at least three weeks of version history.
+- Maintain a longer Delta log version history than your longest refresh cadence. For example, if a development instance only refreshes data every two weeks, maintain at least three weeks of version history.
 - In your Fabric lakehouse, set both `delta.logRetentionDuration` and `delta.deletedFileRetentionDuration` to an appropriate value.
 - Avoid aggressive `VACUUM` operations against tables that Customer Insights - Data ingests.
 
@@ -172,8 +172,12 @@ If Delta versions are missing (for example, after a `VACUUM` or after the table 
 
 ## Known issues
 
+The initial release has the following known issues.
+
 - Fabric workspace names can't contain special characters.
 - Fabric workspace names must be entered in all lowercase. The workspace name itself can contain uppercase letters, but you must enter the name in all lowercase.
+
+Follow this criteria to avoid the error "Couldn't add resource".
 
 ## Related information
 
