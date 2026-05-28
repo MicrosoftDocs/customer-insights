@@ -35,7 +35,7 @@ Before you create a Fabric OneLake data source:
 ### Workspace prerequisites
 
 - A Microsoft Fabric workspace that contains one or more lakehouses with the Delta tables you want to ingest. The Fabric workspace and Customer Insights - Data environment must be in the same Microsoft Entra tenant.
-- The workspace name can't contain special characters.
+- Initially, the workspace name can't contain special characters. Learn more: [Known issues](#known-issues).
 <!---This is a known issue for initial release. Remove later. --->
 - The admin who creates or updates the data source needs at least the **Viewer** workspace role.
 
@@ -99,7 +99,7 @@ Data source names and table names must start with a letter and can only contain 
 
    - **Data source name** – A unique name for the data source. Downstream processes reference this name and you can't change it later.
    - **Description** *(optional)* – A short description of the data the source contains.
-   - **Workspace** – The Fabric workspace that contains the lakehouse with the Delta tables you want to ingest. Enter the name in all lowercase.
+   - **Workspace** – The Fabric workspace that contains the lakehouse with the Delta tables you want to ingest. Enter the name in all lowercase. Learn more: [Known issues](#known-issues).
    <!---Enter the name in all lowercase.This is a known issue for initial release. Remove later. -->
 
    :::image type="content" source="media/onelake-add-data-source.png" alt-text="Screenshot of the Add a data source pane with Fabric OneLake (Preview) selected." lightbox="media/onelake-add-data-source.png":::
@@ -172,12 +172,15 @@ If Delta versions are missing (for example, after a `VACUUM` or after the table 
 
 ## Known issues
 
-The initial release has the following known issues.
+The public preview release has the following known issues.
 
-- Fabric workspace names can't contain special characters.
-- Fabric workspace names must be entered in all lowercase. The workspace name itself can contain uppercase letters, but you must enter the name in all lowercase.
+- **"Couldn't add resource" error**. One or both of the following can cause this issue:
+  - The Fabric workspace name contains special characters. This issue will be fixed in June 2026.
+  - The Fabric workspace name isn't entered in all lowercase. The workspace name itself can contain uppercase letters, but you must enter the name in all lowercase. This issue will be fixed in June 2026.
 
-Follow this criteria to avoid the error "Couldn't add resource".
+- **No tables are shown in the Fabric workspace**. One or both of the following can cause this issue:
+  - External access to OneLake data wasn't enabled for the Fabric tenant. [Enable external access](#enable-external-access-to-onelake-data).
+  - The Customer Insights - Data service principal wasn't added to the Fabric workspace. [Add Customer Insights - Data service principal to the Fabric workspace](#add-customer-insights---data-service-principal-to-the-fabric-workspace).
 
 ## Related information
 
