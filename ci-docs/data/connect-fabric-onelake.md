@@ -1,7 +1,7 @@
 ---
 title: "Connect to Microsoft Fabric OneLake (preview)"
 description: "Connect to Delta tables in a Microsoft Fabric OneLake lakehouse and ingest the data into Dynamics 365 Customer Insights - Data."
-ms.date: 05/26/2026
+ms.date: 05/28/2026
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -35,6 +35,8 @@ Before you create a Fabric OneLake data source:
 ### Workspace prerequisites
 
 - A Microsoft Fabric workspace that contains one or more lakehouses with the Delta tables you want to ingest. The Fabric workspace and Customer Insights - Data environment must be in the same Microsoft Entra tenant.
+- The workspace can't contain special characters in its name.
+<!---This is a known issue for initial release. Remove later. --->
 - The admin who creates or updates the data source needs at least the **Viewer** workspace role.
 
 ### Data prerequisites
@@ -97,7 +99,8 @@ Data source names and table names must start with a letter and can only contain 
 
    - **Data source name** – A unique name for the data source. Downstream processes reference this name and you can't change it later.
    - **Description** *(optional)* – A short description of the data the source contains.
-   - **Workspace** – The Fabric workspace that contains the lakehouse with the Delta tables you want to ingest.
+   - **Workspace** – The Fabric workspace that contains the lakehouse with the Delta tables you want to ingest. Enter the name in all lowercase.
+   <!---Enter the name in all lowercase.This is a known issue for initial release. Remove later. -->
 
    :::image type="content" source="media/onelake-add-data-source.png" alt-text="Screenshot of the Add a data source pane with Fabric OneLake (Preview) selected." lightbox="media/onelake-add-data-source.png":::
 
@@ -166,6 +169,11 @@ Customer Insights - Data uses Delta version history when ingesting data. Custome
 - Avoid aggressive `VACUUM` operations against tables that Customer Insights - Data ingests.
 
 If Delta versions are missing (for example, after a `VACUUM` or after the table is recreated), recreate the data source to trigger a full refresh.
+
+## Known issues
+
+- Fabric workspace names can't contain special characters.
+- Fabric workspace names must be entered in all lowercase. The workspace name itself can contain uppercase letters, but you must enter the name in all lowercase.
 
 ## Related information
 

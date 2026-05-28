@@ -27,6 +27,7 @@ Customer Insights - Data can help you build a deeper understanding of your custo
 
 1. Import your data. Choose between:
 
+   - [Delta tables in Fabric OneLake](connect-fabric-onelake.md)
    - [Delta tables in Azure Data Lake](connect-delta-lake.md)
    - [Azure Data Lake Storage, including Common Data Model](connect-common-data-model.md)
    - [Microsoft Dataverse](connect-dataverse.md)
