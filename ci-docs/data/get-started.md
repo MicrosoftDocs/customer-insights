@@ -4,7 +4,7 @@ description: An overview of help resources to get started quickly.
 ms.reviewer: alfergus
 author: Scott-Stabbert
 ms.author: sstabbert
-ms.date: 09/09/2025
+ms.date: 05/28/2026
 ms.topic: how-to
 ms.custom: bap-template
 ---
@@ -27,11 +27,11 @@ Customer Insights - Data can help you build a deeper understanding of your custo
 
 1. Import your data. Choose between:
 
-   - [Delta tables in Fabric OneLake](connect-fabric-onelake.md)
+   - [Delta tables in Fabric OneLake (preview)](connect-fabric-onelake.md)
    - [Delta tables in Azure Data Lake](connect-delta-lake.md)
    - [Azure Data Lake Storage, including Common Data Model](connect-common-data-model.md)
    - [Microsoft Dataverse](connect-dataverse.md)
-   - [Azure Synapse Analytics (Preview)](connect-synapse.md)
+   - [Azure Synapse Analytics (preview)](connect-synapse.md)
    - [Power Query connectors](connect-power-query.md).
 
    For more information on these options, see [Data sources overview](data-sources.md)

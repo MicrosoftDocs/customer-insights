@@ -35,7 +35,7 @@ Before you create a Fabric OneLake data source:
 ### Workspace prerequisites
 
 - A Microsoft Fabric workspace that contains one or more lakehouses with the Delta tables you want to ingest. The Fabric workspace and Customer Insights - Data environment must be in the same Microsoft Entra tenant.
-- The workspace can't contain special characters in its name.
+- The workspace name can't contain special characters.
 <!---This is a known issue for initial release. Remove later. --->
 - The admin who creates or updates the data source needs at least the **Viewer** workspace role.
 
