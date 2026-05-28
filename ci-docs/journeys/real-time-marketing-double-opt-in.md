@@ -110,7 +110,7 @@ Here are the key features of this email:
 1. The email’s compliance profile is set to the compliance profile for which double opt-in setup was initiated. Its purpose is set to the transactional purpose of the compliance profile.
 1. Email follows a naming convention that incorporates the name of the compliance profile in its name to enable you to easily find it in the list of all emails in the system
 1. Email contains three key personalization attributes:
-    1. {{OptedInPurposes&Topics}} – List of all the purposes or topics that the user opted into prior to submitting the form.
+    1. {{OptedInPurposeTopic}} – List of all the purposes or topics that the user opted into prior to submitting the form.
     1. {{CompanyAddress}} – Company address of the compliance profile
     1. Confirmation preferences button – a button that contains a personalized confirmation link to allow the user to confirm their preferences  
 1. Email uses the default brand profile of the system and the default sender from the brand profile.
@@ -118,7 +118,7 @@ Here are the key features of this email:
     > [!IMPORTANT]
     > In cases where the default brand profile doesn’t exist for the entire org or for the specific business unit (if there are multiple business units), the email creation fails and doesn't resolve unless a default brand profile is created.
     >
-    > Don't delete the confirmation preferences button or the `{{OptedinPurposes&Topics}}` token, as you must restart from the double opt-in template to get them back.
+    > Don't delete the confirmation preferences button or the `{{OptedInPurposeTopic}}` token, as you must restart from the double opt-in template to get them back.
 
 1. If this email is deleted, then the double opt-in journey doesn't function properly.
 

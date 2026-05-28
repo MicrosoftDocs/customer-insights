@@ -14,8 +14,8 @@ search.audienceType:
 # Authenticate your domains
 
 Domain authentication is important for many reasons:
+
 - For marketing email messages, domain authentication enables recipient email servers to confirm that the from-address shown on each of your messages belongs to your organization. Authentication also confirms that your organization has approved Dynamics 365 Customer Insights - Journeys to send messages on its behalf. Messages that fail this test are increasingly likely to get filtered away as spam, which can dramatically impact your deliverability.
-- For externally hosted forms, domain authentication confirms that you own the domain, establishing an enhanced trust relationship with your domain. The enhanced trust relationship enables embedded marketing forms to be prefilled with data for known contacts.
 - Domain authentication will also enable DomainKeys Identified Mail (DKIM), Sender Policy Framework (SPF) protection for your emails and ensure your From and Return-Path addresses align, improving your brand representation in the email.
 
 The primary purpose of email-domain authentication is to protect both the sender and the recipient from any potentially fraudulent activities using email like spam, phishing, or scams by enabling SPF and DKIM. 
@@ -26,7 +26,9 @@ SPF is another type of protection and authentication that ensures that an email 
 
 When you error check or go live with a marketing email message, the verification system requires that the message uses a from-address from an authenticated domain registered and confirmed for your organization. You get an error if you try to send a message that has a from-address from an unregistered domain. 
 
-To learn more about email marketing and deliverability, see [Best practices for email marketing](get-ready-email-marketing.md). To learn more about embedded forms and prefilling, see [Integrate with landing pages on external websites](embed-forms.md).
+To learn more about email marketing and deliverability, see [Best practices for email marketing](get-ready-email-marketing.md). To learn more about form prefill, see [Prefill values for forms](real-time-marketing-form-prefill.md).
+
+Domain authentication isn't required for forms or form prefill. For externally hosted forms, you need to add your domain to the list of allowed domains and enable external form hosting.
 
 ## The default authenticated domain
 
@@ -36,12 +38,9 @@ When a user creates a new email, the **From address** is automatically set to th
 
 ## Which domains to authenticate
 
-Set up as many authenticated domains as you need to cover all the from-addresses you use in your marketing emails, plus all domains and subdomains where you want to support embedded forms with prefill enabled.
-- When you're authenticating a domain for email, use the full domain name as it appears in your email return addresses. Email addresses take the form \<MailAccount\>@\<domain\>, so if your email address is lamar.ferrari@contoso.com, then the domain you need to authenticate is contoso.com (not www.contoso.com or any other subdomain).
-- When you're authenticating a domain to support prefilled forms, you must authenticate each subdomain individually. So if you have forms on contoso.com, www.contoso.com, and events.contoso.com, then you must set up a separate domain-authentication record for each of them and specify the full subdomain each time.
+Set up as many authenticated domains as you need to cover all the from-addresses you use in your marketing emails.
 
-> [!IMPORTANT]
-> To use form prefilling, the page hosting the form must be served over HTTPS (not HTTP).
+- When you're authenticating a domain for email, use the full domain name as it appears in your email return addresses. Email addresses take the form \<MailAccount\>@\<domain\>, so if your email address is lamar.ferrari@contoso.com, then the domain you need to authenticate is contoso.com (not www.contoso.com or any other subdomain).
 
 > [!NOTE]
 > All new instances and trials automatically authenticate their instance domain with DKIM and SPF and set that domain as the default sending domain for your instance. Therefore, you'll usually see at least one authenticated domain already set up for all new instances. It should not be used for production email sending purposes, as it's designed only for initial testing purposes. Make sure to authenticate your own domain before you go live. 
@@ -64,7 +63,7 @@ To authenticate a domain:
 > [!div class="mx-imgBorder"]
 > ![active domains](media/active-domains.png "Active domains")
 
-- Select **New** on the command bar to add a new domain. The wizard guides you through the whole domain authentication process step by step. On the first step, you need to enter the domain name that you want to authenticate and select if it will be used for forms hosting and email sending capabilities.
+- Select **New** on the command bar to add a new domain. The wizard guides you through the whole domain authentication process step by step. On the first step, enter the domain name and select whether it will be used for email sending, form hosting, or both. If you only need to enable the domain for external form hosting and form prefill and you don't need to use it for email sending, you can skip the remaining domain authentication steps. Domain authentication (DNS ownership verification) is required only for email sending.
 
 > [!div class="mx-imgBorder"]
 > ![configure new domain](media/configure-new-domain.png "Configure new domain")
