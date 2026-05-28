@@ -35,7 +35,7 @@
       href: data-sources.md
     - name: Add a data source
       items:
-       - name: Connect to Fabric OneLake
+       - name: Connect to Fabric OneLake (preview)
          href: connect-fabric-onelake.md
        - name: Connect to Azure Data Lake Storage
          items:
