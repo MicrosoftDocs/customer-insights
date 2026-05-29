@@ -1,7 +1,7 @@
 ---
 title: Receiving push notifications on mobile devices
 description: "Developer: Learn how to receive push notifications from Customer Insights - Journeys."
-ms.date: 03/27/2026
+ms.date: 05/29/2026
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
@@ -163,9 +163,6 @@ class NotificationService: UNNotificationServiceExtension {
 ### Sample code snippet to parse the incoming notifications in Android
 
 #### Part 1: Obtaining the tracking ID from the notification message
-
-> [!NOTE]
-> Customer Insights - Journeys uses the data message format rather than the notification format. This requires the client app to parse the data payload sent by Customer Insights - Journeys to extract the correct link (tracked or untracked). Learn more: [Firebase Cloud Messaging](https://firebase.google.com/docs/cloud-messaging)
 
 Override the `OnMessageReceived` method of `FirebaseMessagingService` and extract the required data from the payload as shown:
 
