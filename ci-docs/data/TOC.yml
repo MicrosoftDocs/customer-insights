@@ -45,7 +45,7 @@
             href: connect-delta-lake.md
           - name: Connect using a Microsoft Entra service principal
             href: connect-service-principal.md
-       - name: Connect to Azure Synapse Analytics
+       - name: Connect to Azure Synapse Analytics (preview)
          href: connect-synapse.md
        - name: Connect to Microsoft Dataverse
          href: connect-dataverse.md

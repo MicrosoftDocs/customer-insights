@@ -1,7 +1,7 @@
 ---
 title: "Connect to Microsoft Fabric OneLake (preview)"
 description: "Connect to Delta tables in a Microsoft Fabric OneLake lakehouse and ingest the data into Dynamics 365 Customer Insights - Data."
-ms.date: 05/26/2026
+ms.date: 05/28/2026
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -35,6 +35,8 @@ Before you create a Fabric OneLake data source:
 ### Workspace prerequisites
 
 - A Microsoft Fabric workspace that contains one or more lakehouses with the Delta tables you want to ingest. The Fabric workspace and Customer Insights - Data environment must be in the same Microsoft Entra tenant.
+- Initially, the workspace name can't contain special characters. Learn more: [Known issues](#known-issues).
+<!---This is a known issue for initial release. Remove later. --->
 - The admin who creates or updates the data source needs at least the **Viewer** workspace role.
 
 ### Data prerequisites
@@ -67,7 +69,7 @@ A Fabric tenant administrator must enable external access to OneLake data *once*
 
 ## Add Customer Insights - Data service principal to the Fabric workspace
 
-Add the Customer Insights - Data service principal (**Dynamics 365 AI for Customer Insights**) to the Fabric workspace with at least the **Contributor** role so that it can read Delta tables at runtime and write a small amount of metadata for each table. As a best practice, put the service principal in a security group.
+Add the Customer Insights - Data service principal (**Dynamics 365 AI for Customer Insights**) to the Fabric workspace with at least the **Contributor** role so it can read Delta tables at runtime and write a small amount of metadata for each table. As a best practice, put the service principal in a security group.
 
 ### Enable the service principal in the Fabric tenant
 
@@ -97,7 +99,8 @@ Data source names and table names must start with a letter and can only contain 
 
    - **Data source name** – A unique name for the data source. Downstream processes reference this name and you can't change it later.
    - **Description** *(optional)* – A short description of the data the source contains.
-   - **Workspace** – The Fabric workspace that contains the lakehouse with the Delta tables you want to ingest.
+   - **Workspace** – The Fabric workspace that contains the lakehouse with the Delta tables you want to ingest. Enter the name in all lowercase. Learn more: [Known issues](#known-issues).
+   <!---Enter the name in all lowercase.This is a known issue for initial release. Remove later. -->
 
    :::image type="content" source="media/onelake-add-data-source.png" alt-text="Screenshot of the Add a data source pane with Fabric OneLake (Preview) selected." lightbox="media/onelake-add-data-source.png":::
 
@@ -161,11 +164,23 @@ If the source schema changes after the data source is created, a schema mismatch
 
 Customer Insights - Data uses Delta version history when ingesting data. Customer Insights - Data needs all log versions since its last refresh. To avoid full-refresh failures caused by missing Delta versions:
 
-- Maintain longer Delta log version history than your longest refresh cadence. For example, if a development instance only refreshes data every two weeks, maintain at least three weeks of version history.
+- Maintain a longer Delta log version history than your longest refresh cadence. For example, if a development instance only refreshes data every two weeks, maintain at least three weeks of version history.
 - In your Fabric lakehouse, set both `delta.logRetentionDuration` and `delta.deletedFileRetentionDuration` to an appropriate value.
 - Avoid aggressive `VACUUM` operations against tables that Customer Insights - Data ingests.
 
 If Delta versions are missing (for example, after a `VACUUM` or after the table is recreated), recreate the data source to trigger a full refresh.
+
+## Known issues
+
+The public preview release has the following known issues.
+
+- **"Couldn't add resource" error**. One or both of the following can cause this issue:
+  - The Fabric workspace name contains special characters. This issue will be fixed in June 2026.
+  - The Fabric workspace name isn't entered in all lowercase. The workspace name itself can contain uppercase letters, but you must enter the name in all lowercase. This issue will be fixed in June 2026.
+
+- **No tables are shown in the Fabric workspace**. One or both of the following can cause this issue:
+  - External access to OneLake data wasn't enabled for the Fabric tenant. [Enable external access](#enable-external-access-to-onelake-data).
+  - The Customer Insights - Data service principal wasn't added to the Fabric workspace. [Add Customer Insights - Data service principal to the Fabric workspace](#add-customer-insights---data-service-principal-to-the-fabric-workspace).
 
 ## Related information
 
