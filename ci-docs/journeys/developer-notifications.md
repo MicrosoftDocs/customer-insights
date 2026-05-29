@@ -1,7 +1,7 @@
 ---
 title: Receiving push notifications on mobile devices
 description: "Developer: Learn how to receive push notifications from Customer Insights - Journeys."
-ms.date: 03/27/2026
+ms.date: 05/29/2026
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
