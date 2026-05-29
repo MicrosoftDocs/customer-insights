@@ -1,10 +1,10 @@
 ---
 title: Prefill values for forms and event registration
 description: Form prefill in Dynamics 365 Customer Insights - Journeys auto-fills known values for customers. Discover setup steps and security best practices.
-ms.date: 02/11/2026
+ms.date: 05/29/2026
 ms.topic: article
 author: petrjantac
-ms.author: colinbirkett
+ms.author: alfergus
 search.audienceType:
   - admin
   - customizer
@@ -24,7 +24,7 @@ The system identifies an existing customer based on the prefill token in the URL
 The form replaces default field values with prefilled values.
 
 > [!NOTE]
-> Form prefill supports only **Contact** and **Lead** records. If a journey targets a Customer Insights - Data profile audience, forms opened from email links in that journey can't be prefilled.
+> Form prefill only supports **Contact** and **Lead** records. If a journey targets a Customer Insights - Data profile audience, forms opened from email links in that journey can't be prefilled.
 
 ## Set up form prefill
 
@@ -59,7 +59,7 @@ Form prefill maintains the consent already provided for specific topics and purp
 
 ## Form prefill security
 
-The form prefill feature uses multiple layers of security to protect data and control access. Communication between the Customer Insights - Journeys backend and Dynamics 365 uses a dedicated application account for the forms service, identified by `<applicationuser applicationuserid="6f3cf30e-6475-4505-a216-bce9d18e477f">`. All data transmissions use secure HTTPS connections. The system generates a unique form prefill token (`msdynmkt_prefill`) with a 30-day validity for each email. When a form loads, the system enforces a CORS (Cross-Origin Resource Sharing) check, and prefill access requires both the prefill token and CRM and Dataverse configuration that explicitly authorize the domain hosting the form. This multi-step validation makes sure that only trusted sources can use prefilled data.
+The form prefill feature uses multiple layers of security to protect data and control access. Communication between the Customer Insights - Journeys backend and Dynamics 365 uses a dedicated application account for the forms service, identified by `<applicationuser applicationuserid="6f3cf30e-6475-4505-a216-bce9d18e477f">`. All data transmissions use secure HTTPS connections. The system generates a unique form prefill token (`msdynmkt_prefill`) with a 30-day validity for each email. When a form loads, the system enforces a CORS (Cross-Origin Resource Sharing) check, and prefill access requires both the prefill token and CRM and Dataverse configuration that explicitly authorize the domain hosting the form. This multi-step validation ensures that only trusted sources can use prefilled data.
 
 ## How form prefill works with different audience types
 
@@ -69,26 +69,25 @@ Each form field is associated with one of the following target audience values:
 **Contact**, **Lead**, or **Lead & Contact** (mapped to both entities).
 
 - **Contact** fields are prefilled only when the customer is recognized as an
-  existing Contact record.
+  existing contact record.
 - **Lead** fields are prefilled only when the customer is recognized as an
-  existing Lead record.
+  existing lead record.
 - **Lead & Contact** fields are prefilled only when the customer is recognized
-  as a Contact. If the customer is recognized as a Lead, these fields are
+  as a contact. If the customer is recognized as a lead, these fields are
   skipped and not prefilled.
 
-### Example
+### Form prefill audience example
 
 A form contains three fields:
 
-| Field         | Target audience  | Prefilled for Contact? | Prefilled for Lead? |
+| Field         | Target audience  | Prefilled for contact? | Prefilled for lead? |
 |---------------|------------------|:----------------------:|:-------------------:|
 | First Name    | Contact          | ✅ Yes                 | ❌ No               |
 | Company Name  | Lead             | ❌ No                  | ✅ Yes              |
 | Email         | Lead & Contact   | ✅ Yes                 | ❌ No               |
 
 > [!NOTE]
-> Fields that don't match the customer's record type remain empty and can be
-> filled in manually by the customer.
+> Fields that don't match the customer's record type remain empty and can be filled manually by the customer.
 
 ## Troubleshooting form prefill
 
@@ -102,7 +101,7 @@ Form fields are prefilled only when you open the page containing the form by sel
 
 The "Prefill marketing form" attribute works only for legacy outbound marketing forms. Real-time journeys forms use the [Tracking purpose](real-time-marketing-email-text-consent.md#consent-to-track-user-behavior) as consent for prefill.
 
-### Step-bystep troubleshooting
+### Step-by-step troubleshooting
 
 To enable form prefill, ensure that all the following requirements are correctly configured:
 
@@ -111,3 +110,5 @@ To enable form prefill, ensure that all the following requirements are correctly
   3. The end user who is opening a website with a form has provided tracking consent.
   4. The link that redirects to a prefilled form must be created as a Customer Insights - Journeys tracking link generated from a real customer journey (not from a test send). After clicking the tracking link, the URL must include the required tracking parameters, such as:
   `website_url/path#msdynmkt_trackingcontext=[some_guid]&msdynmkt_prefill=[some_text]`
+
+[!INCLUDE [footer-include](./includes/footer-banner.md)]
