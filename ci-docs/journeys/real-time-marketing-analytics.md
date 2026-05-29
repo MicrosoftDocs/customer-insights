@@ -1,10 +1,10 @@
 ---
 title: Access and interpret analytics
 description: How to access and interpret Customer Insights - Journeys analytics in Dynamics 365 Customer Insights - Journeys.
-ms.date: 04/03/2026
+ms.date: 05/29/2026
 ms.topic: article
-author: colinbirkett
-ms.author: colinbirkett
+author: cmenesatti-m
+ms.author: alfergus
 search.audienceType: 
   - admin
   - customizer
@@ -83,7 +83,7 @@ In the **Overview** section of the right pane, you can monitor key performance i
 
 To view **delivery and interaction statistics**, select the **View details** link in the **Delivery funnel** or **Delivery issues** section on the channel analytics pane. Delivery and interaction details allow you to analyze delivery, engagement, and performance data for your email, text, push notification, or custom channel messages.
 
-- You can view deliverability details on messages sent, delivered, blocked, or bounced along with the respective reasons, detailed data on customers who opened or clicked a message, and unsubscription interaction data.
+- You can view deliverability details on messages sent, delivered, blocked, or bounced, along with the respective reasons, detailed data on customers who opened or clicked a message, and unsubscription interaction data.
 - For emails, delivery and interactions statistics include data on the user agents your customers are using to engage with your emails. Under total opens, you can see data about email clients, and under total clicks, you can find data on types of devices, operating systems, and browsers.
 
 A message’s unique opens and clicks are calculated based on the customer's journey run, not against the journey itself. In the case of a repeating journey, if the same customer enters the journey multiple times as it repeats and opens or clicks the same message each time, the system records multiple unique opens or clicks for each journey run. For example, if a customer clicks the same message in the same journey in two different runs, two unique clicks are recorded. 
