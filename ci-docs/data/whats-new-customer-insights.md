@@ -49,7 +49,7 @@ This release marks the general availability of the real-time web tracking and pe
 Easily explore and select customer data stored in Fabric OneLake for processing in Customer Insights - Data. The OneLake connector reads directly from your OneLake data, eliminating the need to copy or stage data.
 
 - [Release plan](/dynamics365/release-plan/2026wave1/customer-insights/dynamics365-customer-insights-data/use-onelake-as-data-source-destination)
-- [Docs](/journeys-interaction-data-segments-measures.md)
+- [Docs](connect-fabric-onelake.md)
 
 #### Target right audience based on signals from earlier campaigns
 
