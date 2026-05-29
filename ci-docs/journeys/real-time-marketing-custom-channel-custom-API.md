@@ -1,9 +1,9 @@
 ---
 title: Define custom APIs
 description: Learn how to define custom APIs for custom channels in Dynamics 365 Customer Insights - Journeys.
-ms.date: 12/02/2025
+ms.date: 05/29/2026
 ms.topic: how-to
-author: alfergus
+author: Joni-M
 ms.author: alfergus
 search.audienceType: 
   - admin
@@ -41,8 +41,11 @@ The contract that the outbound custom API should implement must have one input p
   - **MessageId**: string – (Optional) The message ID. Optional; it may exist in the API response of a provider.
   - **RequestId**: string – The request ID. Should be equal to the request ID value inside the request payload.
   - **Status**: string – The possible values are:
-    - **NotSent** – There was an attempt to execute the submission to the provider but it was rejected without a possibility to retry.
+    - **NotSent** – There was an attempt to execute the submission to the provider, but it was rejected without a possibility to retry.
     - **Sent** – The submission request was successfully accepted by the provider.
+  - **Details**: object – (Optional) Details of submission when a message isn't sent. Useful for returning why a submission hasn't been sent. It's visible in the **Delivery and interaction details** on the analytics page.
+    - **Reason**: string – The reason why the message wasn't sent.
+    - **Message**: string - Details of the blocked submission.
 
 ## Delivery report custom API
 
