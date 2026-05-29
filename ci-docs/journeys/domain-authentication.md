@@ -1,7 +1,7 @@
 ---
 title: Authenticate your domains
 description: Learn how to authenticate your domains in Dynamics 365 Customer Insights - Journeys.
-ms.date: 03/25/2026
+ms.date: 05/29/2026
 ms.topic: how-to
 author: alfergus
 ms.author: colinbirkett
@@ -18,13 +18,13 @@ Domain authentication is important for many reasons:
 - For marketing email messages, domain authentication enables recipient email servers to confirm that the from-address shown on each of your messages belongs to your organization. Authentication also confirms that your organization has approved Dynamics 365 Customer Insights - Journeys to send messages on its behalf. Messages that fail this test are increasingly likely to get filtered away as spam, which can dramatically impact your deliverability.
 - Domain authentication will also enable DomainKeys Identified Mail (DKIM), Sender Policy Framework (SPF) protection for your emails and ensure your From and Return-Path addresses align, improving your brand representation in the email.
 
-The primary purpose of email-domain authentication is to protect both the sender and the recipient from any potentially fraudulent activities using email like spam, phishing, or scams by enabling SPF and DKIM. 
+The primary purpose of email domain authentication is to protect both the sender and the recipient from any potentially fraudulent activities using email, such as spam, phishing, or scams, by enabling SPF and DKIM. 
 
-DomainKeys Identified Mail (DKIM) is a method that helps to protect email content and headers. It's based on public/private key encryption and signatures verified using published DNS records for sender domain. This type of encryption provides valuable feedback to the recipient, that the email is sent from a verified sender. And its content hasn't been modified during the transfer phase.
+DomainKeys Identified Mail (DKIM) is a method that helps to protect email content and headers. It's based on public/private key encryption and signatures verified using published DNS records for the sender domain. This type of encryption provides valuable feedback to the recipient that the email is sent from a verified sender. And its content hasn't been modified during the transfer phase.
 
 SPF is another type of protection and authentication that ensures that an email was sent from a trusted source (IP address) set up by a sender domain owner.
 
-When you error check or go live with a marketing email message, the verification system requires that the message uses a from-address from an authenticated domain registered and confirmed for your organization. You get an error if you try to send a message that has a from-address from an unregistered domain. 
+When you error check or go live with a marketing email message, the verification system requires that the message uses a from-address from an authenticated domain registered and confirmed for your organization. You get an error if you try to send a message that has a from address from an unregistered domain. 
 
 To learn more about email marketing and deliverability, see [Best practices for email marketing](get-ready-email-marketing.md). To learn more about form prefill, see [Prefill values for forms](real-time-marketing-form-prefill.md).
 
@@ -38,24 +38,24 @@ When a user creates a new email, the **From address** is automatically set to th
 
 ## Which domains to authenticate
 
-Set up as many authenticated domains as you need to cover all the from-addresses you use in your marketing emails.
+Set up as many authenticated domains as you need to cover all the from addresses you use in your marketing emails.
 
-- When you're authenticating a domain for email, use the full domain name as it appears in your email return addresses. Email addresses take the form \<MailAccount\>@\<domain\>, so if your email address is lamar.ferrari@contoso.com, then the domain you need to authenticate is contoso.com (not www.contoso.com or any other subdomain).
+- When you're authenticating a domain for email, use the full domain name as it appears in your email return addresses. Email addresses follow the `\<MailAccount\>@\<domain\>` format, so if your email address is `lamar.ferrari@contoso.com`, then the domain you need to authenticate is `contoso.com` (not `www.contoso.com` or any other subdomain).
 
 > [!NOTE]
 > All new instances and trials automatically authenticate their instance domain with DKIM and SPF and set that domain as the default sending domain for your instance. Therefore, you'll usually see at least one authenticated domain already set up for all new instances. It should not be used for production email sending purposes, as it's designed only for initial testing purposes. Make sure to authenticate your own domain before you go live. 
 
 ## Prevent sending emails from unauthorized domains
 
-To benefit from domain authentication, the from-address for each message you send must show a domain that you've previously authenticated. Microsoft is dedicated to helping our customers achieve maximum email deliverability, so we've added a few features to help make sure you don't overlook or inadvertently work around your domain setup:
+To benefit from domain authentication, the from address for each message you send must show a domain that you've previously authenticated. Microsoft is dedicated to helping our customers achieve maximum email deliverability, so we've added a few features to help make sure you don't overlook or inadvertently work around your domain setup:
 
-- The error check for email messages show an error if you try to go live with an email message that has a from-address not associated with any of your domains.
+- The error check for email messages shows an error if you try to go live with an email message that has a from address not associated with any of your domains.
 - We recommend that you [set a default sending domain](mkt-settings-default-marketing.md) that is your authenticated domain. When this is set, then the from-address for all your email messages will automatically be adjusted to show your selected default domain (if it initially uses a nonauthenticated domain) each time you create a new email message or change the user shown in the **From** field. More information: [Default marketing settings](mkt-settings-default-marketing.md) and [Set sender and receiver options](email-properties.md#set-sender-and-receiver-options)
 - All new instances and trials will automatically authenticate the default instance domain with SPF/DKIM enabled and set that domain as the default sending domain for your instance.
 
 ## Authenticate a domain
 
-To set up an authenticated domain in Dynamics 365 Customer Insights - Journeys you need to access your domain’s DNS control panel to be able to add new records as you go through the domain authentication process.
+To set up an authenticated domain in Dynamics 365 Customer Insights - Journeys, you need to access your domain’s DNS control panel to be able to add new records as you go through the domain authentication process.
 
 To authenticate a domain:
 - Go to **Settings > Email marketing > Domain authentication**. A list of existing authenticated domains opens.  
@@ -63,12 +63,12 @@ To authenticate a domain:
 > [!div class="mx-imgBorder"]
 > ![active domains](media/active-domains.png "Active domains")
 
-- Select **New** on the command bar to add a new domain. The wizard guides you through the whole domain authentication process step by step. On the first step, enter the domain name and select whether it will be used for email sending, form hosting, or both. If you only need to enable the domain for external form hosting and form prefill and you don't need to use it for email sending, you can skip the remaining domain authentication steps. Domain authentication (DNS ownership verification) is required only for email sending.
+- To add a new domain, select **New** on the command bar. The wizard guides you through the domain authentication process step by step. On the first step, enter the domain name and select whether it will be used for email sending, form hosting, or both. If you only need to enable the domain for external form hosting and form prefill, and you don't need to use it for email sending, you can skip the remaining domain authentication steps. Domain authentication (DNS ownership verification) is required only for email sending.
 
 > [!div class="mx-imgBorder"]
 > ![configure new domain](media/configure-new-domain.png "Configure new domain")
 
-- On the next step you'll be asked to add your first DNS record, which will check and confirm the ownership of your domain. Use “Copy” buttons to accurately copy the values of TXT record to avoid typos. 
+- On the next step, you're asked to add your first DNS record, which will check and confirm the ownership of your domain. Use “Copy” buttons to accurately copy the values of TXT record to avoid typos. 
 
 > [!div class="mx-imgBorder"]
 > ![verify domain ownership](media/verify-domain-ownership.png "Verify domain ownership")
