@@ -1,9 +1,9 @@
 ---
 title: Receiving push notifications on mobile devices
 description: "Developer: Learn how to receive push notifications from Customer Insights - Journeys."
-ms.date: 03/27/2026
+ms.date: 05/29/2026
 ms.topic: how-to
-author: alfergus
+author: Joni-M
 ms.author: alfergus
 search.audienceType: 
   - admin
@@ -159,8 +159,8 @@ class NotificationService: UNNotificationServiceExtension {
 ```
 
 ## Receive notifications in Android
-Customer Insights - Journeys support both data and notification message format. Learn more: [Firebase Cloud Messaging](https://firebase.google.com/docs/cloud-messaging)
-The notification format does not require the client app to process the message payload. If your use cases require the ability to receive and manage the message payload, then please continue reading through this doc on how to receive the data format notifications.
+
+Customer Insights - Journeys supports data and notification message formats. Learn more: [Firebase Cloud Messaging](https://firebase.google.com/docs/cloud-messaging). The notification format doesn't require the client app to process the message payload. If your use cases require the ability to receive and manage the message payload, continue reading this article to learn how to receive data format notifications.
 
 ### Sample code snippet to parse the incoming notifications in Android
 
