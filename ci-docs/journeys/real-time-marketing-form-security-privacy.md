@@ -116,3 +116,5 @@ Administrators must complete a one‑time configuration by providing:
 
 - Marketing and event registration forms don't use any cookies by default. Form visit and form submit interactions use a [journey link tracking mechanism](real-time-marketing-link-tracking-mechanics.md) to get details about known users.
 - Cookies for tracking end users are used only when the **Web tracking** feature is turned on in Form settings. If Web tracking is disabled, no tracking cookies are set.
+
+[!INCLUDE [footer-include](./includes/footer-banner.md)]
