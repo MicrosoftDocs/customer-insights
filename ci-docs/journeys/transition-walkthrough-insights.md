@@ -1,7 +1,7 @@
 ---
 title: Transition insights and reports
 description: Learn how to transition insights and reporting capabilities from outbound marketing to real-time journeys in Dynamics 365 Customer Insights - Journeys.
-ms.date: 05/18/2026
+ms.date: 05/29/2026
 ms.topic: article
 author: petrjantac
 ms.author: alfergus
@@ -35,6 +35,6 @@ For custom reporting in real-time journeys, you can create custom Power BI repor
 
 With this capability, you have even more options to consume data with more data sources in your reports. Real-time journeys storage contains real-time journeys as well as outbound marketing interaction data. While the data models are the same between outbound marketing and real-time journeys, you must reconfigure existing custom reports and pipelines to use the new data sources in Microsoft Fabric. Here's the data schema: [Overview of Customer Insights - Journeys interaction data schema](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsightsjourneys/overview). The *SourceSystem* attribute refers to the source system (outbound marketing or real-time journeys) that generated the interaction.
 
-You can also export your data using Microsoft Fabric capabilities and its native connectors. Alternatively, if you wish to use a third-party system to store and process Customer Insights - Journey data you can access and export interaction data into your own storage by following these steps: [Leveraging Customer Inishgts - Journeys interaction data without Fabric](https://community.dynamics.com/blogs/post/?postid=75a63967-f115-f011-998a-7c1e525b5e9d).
+You can also export your data using Microsoft Fabric capabilities and its native connectors. Alternatively, if you wish to use a third-party system to store and process Customer Insights - Journey data you can access and export interaction data into your own storage by following these steps: [Leveraging Customer Insights - Journeys interaction data without Fabric](https://community.dynamics.com/blogs/post/?postid=75a63967-f115-f011-998a-7c1e525b5e9d).
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
