@@ -99,7 +99,7 @@ The audience split tile allows you to divide your audience to give a unique set 
 
 There are two ways to create a branch in a journey:
 
-- Branch based on whether a certain action was taken or not. A common example is branching based on whether or not the customer opened the last email that was sent. This type of branching is achieved by the [Wait for trigger](#wait-for-trigger-branch) tile.  
+- Branch based on whether a certain action was taken or not. A common example is branching based on whether or not the customer opened the last email that was sent. This type of branching is achieved by the [Wait for trigger](#wait-for-trigger) tile.  
 
 - Branch based on current information such as the customer’s demographic (for example, gender) or other related information (for example, loyalty program tier). This type of branching is achieved by the [Attribute branch](#attribute-branch).  
 

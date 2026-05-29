@@ -49,7 +49,7 @@ Proactive engagement is a table in Contact Center that has settings, configurati
 
 ## Wait for trigger branch
 
-The [Wait for Trigger](add-action.md#wait-for-trigger-branch) action pauses a journey until a specific event occurs. This action lets the journey respond dynamically to customer behavior, like waiting for a voice call to end before sending a follow-up email.
+The [Wait for Trigger](add-action.md#wait-for-trigger) action pauses a journey until a specific event occurs. This action lets the journey respond dynamically to customer behavior, like waiting for a voice call to end before sending a follow-up email.
 
 ## Attribute branch
 
