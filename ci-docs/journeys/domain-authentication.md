@@ -69,7 +69,7 @@ To authenticate a domain:
 > [!div class="mx-imgBorder"]
 > ![configure new domain](media/configure-new-domain.png "Configure new domain")
 
-- On the next step, you're asked to add your first DNS record, which will check and confirm the ownership of your domain. Use “Copy” buttons to accurately copy the values of TXT record to avoid typos. 
+- On the next step, you're asked to add your first DNS record, which will check and confirm the ownership of your domain. Use “Copy” buttons to accurately copy the values of TXT record to avoid typos.
 
 > [!div class="mx-imgBorder"]
 > ![verify domain ownership](media/verify-domain-ownership.png "Verify domain ownership")
@@ -100,14 +100,14 @@ After everything is finished, you'll see green checkmarks next to each DNS recor
 > ![domain authentication finished](media/domain-authentication-ready.png "Domain authentication finished")
 
 > [!NOTE]
-> You can authenticate more than one domain or subdomain of your choice. `www.yourdomain.com` and `yourdomain.com` are two different domains and should be added separately. Technically, it's possible to add `www.yourdomain.com` to use it for sending emails, but we don't recommend doing that as the from email address would display as `markreting@www.yourdomain.com` instead of `marketing@yourdomain.com`.
+> You can authenticate more than one domain or subdomain of your choice. `www.contoso.com` and `contoso.com` are two different domains and should be added separately. Technically, it's possible to add `www.contoso.com` to use it for sending emails, but we don't recommend doing that as the from email address would display as `markreting@www.contoso.com` instead of `marketing@contoso.com`.
 
 > [!IMPORTANT]
 > There are known issues when it is not possible to add a TXT record to a domain or subdomain due to DNS limitations, as it already has existing working CNAME record published.
 >
-> In such cases you may use an alternative method for domain ownership confirmation. Instead of adding TXT record to the root of domain/subdomain you need to create a TXT record for a subdomain `dynmktown.yourdomain.com`. This validate your ownership for the domain `yourdomain.com`.
+> In such cases you may use an alternative method for domain ownership confirmation. Instead of adding TXT record to the root of domain/subdomain you need to create a TXT record for a subdomain `dynmktown.contoso.com`. This validates your ownership for the domain `contoso.com`.
 >
-> The same scenario works for a subdomain. For example, to validate domain `mail.yourdomain.com`, you need to add a TXT record to `dynmktown.mail.yourdomain.com`.
+> The same scenario works for a subdomain. For example, to validate domain `mail.contoso.com`, you need to add a TXT record to `dynmktown.mail.contoso.com`.
 
 ### Updating a domain's SPF record
 
