@@ -1,7 +1,7 @@
 ---
 title: Transition insights and reports
 description: Learn how to transition insights and reporting capabilities from outbound marketing to real-time journeys in Dynamics 365 Customer Insights - Journeys.
-ms.date: 05/18/2026
+ms.date: 05/29/2026
 ms.topic: article
 author: petrjantac
 ms.author: alfergus
@@ -23,9 +23,6 @@ Additionally, advanced bot protection for real-time journeys safeguards your bus
 
 For out-of-the-box insights, we’re automatically migrating outbound marketing interactions to real-time journeys storage and updating the outbound insights to align with real-time journeys widgets. As a result, and to comply with the [real-time journeys retention policy](real-time-marketing-analytics.md#email-insights), you can only view outbound marketing interactions from the last 12 months in the contact timeline. Past data is still available in data storage.
 
-> [!NOTE]
-> If you’re a customer in the EU, NAM, OCE, or GBR region, only interactions created after January 1, 2024, are migrated by default. You can request additional data to be transferred by filling in [this form](https://go.microsoft.com/fwlink/?linkid=2313103).
-
 ## Email insights
 
 When you import outbound emails to real-time journeys, you can't view past outbound marketing email data in the real-time journeys email insights after the migration date. Outbound marketing emails are recreated in real-time journeys and retain their data history separately. However, historical outbound marketing data remains in Customer Insights - Journeys storage.
@@ -38,6 +35,6 @@ For custom reporting in real-time journeys, you can create custom Power BI repor
 
 With this capability, you have even more options to consume data with more data sources in your reports. Real-time journeys storage contains real-time journeys as well as outbound marketing interaction data. While the data models are the same between outbound marketing and real-time journeys, you must reconfigure existing custom reports and pipelines to use the new data sources in Microsoft Fabric. Here's the data schema: [Overview of Customer Insights - Journeys interaction data schema](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsightsjourneys/overview). The *SourceSystem* attribute refers to the source system (outbound marketing or real-time journeys) that generated the interaction.
 
-You can also export your data using Microsoft Fabric capabilities and its native connectors. Alternatively, if you wish to use a third-party system to store and process Customer Insights - Journey data you can access and export interaction data into your own storage by following these steps: [Leveraging Customer Inishgts - Journeys interaction data without Fabric](https://community.dynamics.com/blogs/post/?postid=75a63967-f115-f011-998a-7c1e525b5e9d).
+You can also export your data using Microsoft Fabric capabilities and its native connectors. Alternatively, if you wish to use a third-party system to store and process Customer Insights - Journey data you can access and export interaction data into your own storage by following these steps: [Leveraging Customer Insights - Journeys interaction data without Fabric](https://community.dynamics.com/blogs/post/?postid=75a63967-f115-f011-998a-7c1e525b5e9d).
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
