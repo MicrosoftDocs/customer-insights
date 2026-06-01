@@ -132,11 +132,6 @@ Data source names and table names must start with a letter and can contain only 
 
 1. Select **Next**, review the summary, and then select **Save**.
 
-
-
-
-
-
 The **Data sources** page opens and shows the new data source in **Refreshing** status. 
 
 Loading data can take time. After a successful refresh, you can review the ingested data from the [**Tables**](tables.md) page. Data ingested to Customer Insights - Data transfers and processes data in the geographic location of the Customer Insights - Data environment. Learn more at the [Microsoft Trust Center](https://www.microsoft.com/trust-center).
