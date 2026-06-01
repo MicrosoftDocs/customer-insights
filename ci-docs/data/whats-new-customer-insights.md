@@ -1,7 +1,7 @@
 ---
 title: "What's new in Dynamics 365 Customer Insights - Data"
 description: "Information about new features, improvements, and bug fixes."
-ms.date: 05/29/2026
+ms.date: 06/01/2026
 ms.topic: whats-new
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -34,13 +34,6 @@ Customer Insights - Data detects and self-corrects transient issues. ​This imp
 
 - [Release plan](/dynamics365/release-plan/2026wave1/customer-insights/dynamics365-customer-insights-data/reduce-alert-fatigue-noise-free-notifications)
 - [Docs](data-refresh-notifications.md)
-
-#### Real-time web tracking and personalization for known and unknown users
-
-This release marks the general availability of the real-time web tracking and personalization feature. This feature enables two key capabilities: website personalization for known and unknown users, and conversion of unknown users to known users. Customer Insights helps you collect web interactions in real time, enabling personalized experiences and a deeper understanding of your customers' needs and preferences.
-
-- [Release plan](/dynamics365/release-plan/2026wave1/customer-insights/dynamics365-customer-insights-data/real-time-web-tracking-personalization-known-unknown-users)
-- [Docs](real-time-web-personalization-overview.md)
 
 ### Public preview
 
