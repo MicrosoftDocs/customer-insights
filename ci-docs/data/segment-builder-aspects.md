@@ -5,7 +5,7 @@ author: Scott-Stabbert
 ms.author: sstabbert
 ms.reviewer: v-wendysmith
 ms.topic: article
-ms.date: 03/11/2026
+ms.date: 06/01/2026
 ms.custom: bap-template
 ---
 
@@ -24,6 +24,7 @@ Choose how to create a segment based on your target audience.
 - AI-powered way to find similar customers: [Similar customers](find-similar-customer-segments.md)
 - AI-powered suggestions based on measures or attributes: [Suggested segments based on measures](suggested-segments.md#suggested-segments-based-on-measures-preview)
 - Suggestions based on activities: [Suggested segments based on customer activity](suggested-segments.md#suggested-segments-based-on-activity-preview)
+- Create segments using behavioral interaction data from Customer Insights - Journeys: [Use Customer Insights - Journeys interaction data in segments (preview)](journeys-interaction-data-segments-measures.md)
 
 ## Segment builder overview
 
@@ -53,9 +54,11 @@ The following image illustrates the various parts of the segment builder. It sho
 
 1. Apply set operations to connected rules.
 
-1. Use the attribute pane to add available table attributes or create conditions based on attributes. The pane shows the list of tables and attributes based on the selected relationship path that are available for the selected rule.
+1. Use the **Attributes** pane to add available table attributes or create conditions based on attributes. The pane shows the list of tables and attributes based on the selected relationship path that are available for the selected rule.
 
 1. Add conditions based on attributes to existing rules and subrules or add it to a new rule.
+
+1. Use the **Behavioral** pane to [create segments using behavioral interaction data from Customer Insights - Journeys (preview)](journeys-interaction-data-segments-measures.md#use-interaction-data-in-a-segment).
 
 1. Undo and redo changes while building the segment.
 
