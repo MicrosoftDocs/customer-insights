@@ -44,7 +44,7 @@ Before you create a Fabric OneLake data source:
 - You can ingest **managed Delta tables** in a Fabric lakehouse. Files (such as CSV or non-Delta Parquet) and Fabric Data Warehouse tables aren't supported.
 - Each Delta table must have a primary key column with unique, non-null values. String, integer, and GUID data types are supported as primary keys.
 - Delta tables exposed through [Fabric shortcuts](/fabric/onelake/onelake-shortcuts) are supported.
-- Customer Insights - Data supports Azure Databricks reader version 1 or 2. Customer Insights - Data doesn't support reading Delta tables with deletion vectors enabled. Deletion vectors require the Delta reader version 3, which isn't supported. Learn more: [Supported Databricks features](connect-delta-lake.md#supported-databricks-features-and-versions).
+- Customer Insights - Data supports Databricks reader version 1 or 2. Customer Insights - Data doesn't support reading Delta tables with deletion vectors enabled. Deletion vectors require the Delta reader version 3, which isn't supported. Learn more: [Supported Databricks features](connect-delta-lake.md#supported-databricks-features-and-versions).
 
 ## Preview limitations
 
