@@ -4,7 +4,7 @@ description: "Create and manage measures to help analyze and reflect the perform
 author: JimsonChalissery
 ms.author: sstabbert
 ms.topic: how-to
-ms.date: 05/01/2025
+ms.date: 06/01/2026
 ms.custom: bap-template
 ---
 
@@ -20,6 +20,7 @@ Choose how to create a measure.
 
 - From scratch with measure builder: [Build your own](measure-builder.md).
 - From commonly used measures: [Use predefined templates](measure-templates.md).
+- Using Customer Insights - Journeys interaction data: [Use Customer Insights - Journeys interaction data in measures (preview)](journeys-interaction-data-segments-measures.md#use-interaction-data-in-a-measure).
 
 ## Manage existing measures
 
