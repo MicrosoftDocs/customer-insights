@@ -1,7 +1,7 @@
 ---
 title: New and upcoming features
 description: Discover the latest features, improvements, and bug fixes in Dynamics 365 Customer Insights - Journeys. Stay updated with our monthly release notes.
-ms.date: 05/18/2026
+ms.date: 06/02/2026
 ms.update-cycle: 180-days
 ms.topic: whats-new
 author: alfergus
@@ -23,6 +23,40 @@ We're excited to announce our newest updates! This article summarizes early acce
 Customer Insights - Journeys updates are [pushed to customers automatically](https://cloudblogs.microsoft.com/dynamics365/it/2020/04/27/automatic-update-policy-for-dynamics-365-marketing/). Solutions are available for early validations. To manually update your instances, follow the steps in [Keep Customer Insights - Journeys up to date](apply-updates.md).
 
 To submit and vote on **feature requests** and **product suggestions**, go to the [Dynamics 365 Application Ideas portal](https://experience.dynamics.com/ideas/categories/?forum=dfa5b83d-9e4c-e811-a956-000d3a1bef07&forumName=Dynamics%20365%20Marketing).
+
+### June 2026 update
+
+| App              | GA release      |
+|------------------|-----------------|
+| Customer Insights - Journeys | 1.2.437.67 |
+
+#### General availability
+
+- **Set message expirations to keep communication relevant**
+	- Customers may experience frustration when they receive outdated communications, such as expired coupons and irrelevant reminders. This creates confusion and diminishes their trust in your brand. You can now set expiration dates on your messages, ensuring that only current and relevant information reaches your audience. This keeps your customers engaged and satisfied with relevant communications in moments that matter.
+	- [Release plan](/dynamics365/release-plan/2025wave2/customer-insights/dynamics365-customer-insights-journeys/set-message-expirations-keep-communication-relevant)
+	- [Docs](message-expiration.md)
+
+#### Public preview
+
+- **Create journeys in minutes with Journey Creation Agent**
+	- With the new Journey Creation Agent in Dynamics 365 Customer Insights - Journeys, anybody can create journeys in minutes, even if they've never done it before. Instead of spending time getting the mechanics of the journey right, you can now ensure you deliver the most personalized experience for your customers. Move from idea to execution in minutes, freeing up time and reducing dependency on technical experts.
+	- [Docs](journey-creation-agent.md)
+ 	- [Release plan](/dynamics365/release-plan/2026wave1/customer-insights/dynamics365-customer-insights-journeys/create-journeys-minutes-journey-creation-agent)
+
+> [!NOTE]
+> With the June 2026 release, Journey Creation Agent is available in the North America (NAM) and Oceania (OCE) regions.
+
+#### Monthly enhancements
+
+- **Create effective audiences with conversational journey interactions**
+	- Create targeted segments based on behavioral signals from conversational journey interactions, including voice and text message conversations.
+
+- **Flexible column views for segment members**
+    - You can now select a custom contact or lead view from the new view picker to control which columns appear in the segment members table. The **Export Members** button uses those same columns when exporting.
+
+- **Open links in a new tab in forms**
+	- Configure buttons and links in Customer Insights - Journeys forms to open their target content in a new browser tab, keeping the form page intact for the visitor.
 
 ### May 2026 update
 
