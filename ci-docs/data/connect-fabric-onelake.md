@@ -53,13 +53,13 @@ The following limitations apply during public preview:
 - **One Fabric OneLake data source per workspace**. To ingest from another workspace, create another data source or use a Fabric shortcut.
 - **Editing an existing Fabric OneLake data source isn't supported**. To change the selected tables, remove the data source and create a new one. [Remove any downstream dependencies](data-unification-remove-dependencies.md) first. Editing existing connections is planned before general availability (GA).
 - **Upgrade in place** from an existing Azure Data Lake Delta tables data source to a Fabric OneLake data source isn't yet available. In-place upgrade is planned before GA.
-- **Private Link for Inbound Access Protection** isn't yet available for Fabric OneLake connections. Private endpoint support is planned before GA. To check if Inbound Access Protection is enabled in your tenant, sign in to the Microsoft Fabric Admin Portal. Go to **Admin Portal** > **Tenant Settings** > **Advanced Networking**. Check if **Azure Private Links** and **Block Public Internet Access** are enabled.
+- **Private Link for Inbound Access Protection** isn't yet available for Fabric OneLake connections. Private endpoint support is planned before GA. To check if Inbound Access Protection is enabled in your tenant, sign in to the Microsoft Fabric admin portal. Go to **Admin Portal** > **Tenant Settings** > **Advanced Networking**. Check if **Azure Private Links** and **Block Public Internet Access** are enabled.
 
 ## Enable external access to OneLake data
 
 A Fabric tenant administrator must enable external access to OneLake data *once* for each Fabric tenant. This setting allows the Customer Insights - Data service to read Delta tables from your Fabric lakehouses.
 
-1. Sign in to the [Fabric Admin portal](https://app.fabric.microsoft.com/admin-portal) as a Fabric administrator.
+1. Sign in to the [Fabric admin portal](https://app.fabric.microsoft.com/admin-portal) as a Fabric administrator.
 1. Select **Tenant settings**.
 1. Under **OneLake settings**, expand **Users can access data stored in OneLake with apps external to Fabric**.
 1. Set the toggle to **Enabled** and apply the setting to the entire organization (or to specific security groups, as required by your tenant policy).
@@ -73,7 +73,7 @@ Add the Customer Insights - Data service principal (**Dynamics 365 AI for Custom
 
 ### Enable the service principal in the Fabric tenant
 
-1. Sign in to the [Fabric Admin portal](https://app.fabric.microsoft.com/admin-portal) as a Fabric administrator.
+1. Sign in to the [Fabric admin portal](https://app.fabric.microsoft.com/admin-portal) as a Fabric administrator.
 1. Select **Tenant settings**. Scroll to **Developer settings**.
 1. Enable **Service principals can call Fabric public APIs**.
 
@@ -87,7 +87,7 @@ Add the Customer Insights - Data service principal (**Dynamics 365 AI for Custom
 
 ## Connect to data in Fabric OneLake
 
-Data source names and table names must start with a letter and can only contain letters, numbers, and underscores (_). You can't use spaces or special characters. You also can't rename a data source after you save it. When you create the Fabric OneLake data source, you use the identity of the Customer Insights - Data administrator who configures it.
+Data source names and table names must start with a letter and can contain only letters, numbers, and underscores (_). You can't use spaces or special characters. You also can't rename a data source after you save it. When you create the Fabric OneLake data source, you use the identity of the Customer Insights - Data administrator who configures it.
 
 1. In Customer Insights - Data, go to **Data** > **Data sources**.
 

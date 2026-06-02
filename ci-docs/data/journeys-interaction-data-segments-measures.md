@@ -1,7 +1,7 @@
 ---
 title: Use Customer Insights - Journeys interaction data in segments and measures (preview)
 description: Learn how to use Customer Insights - Journeys behavioral interaction data in Customer Insights - Data segments and measures.
-ms.date: 05/15/2026
+ms.date: 06/01/2026
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
