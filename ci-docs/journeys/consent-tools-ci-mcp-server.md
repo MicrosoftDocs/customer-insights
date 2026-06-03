@@ -8,6 +8,10 @@ author: PetrJantac
 
 # Use consent tools in the Customer Insights MCP server
 
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note.md)]
+
 Use the Customer Insights MCP server to check consent and generate unsubscribe links for compliant outbound messaging. The server exposes consent capabilities through [Model Context Protocol (MCP)](https://modelcontextprotocol.io) tools, enabling AI agents and custom integrations to make privacy-compliant messaging decisions in real time using Customer Insights consent data.
 
 Instead of calling internal APIs directly, your agents interact with a single, secure interface using the same consent rules that are enforced during journey execution.
