@@ -1,7 +1,7 @@
 ---
-title: Set message expiration in real-time journeys (preview)
+title: Set message expiration in real-time journeys
 description: Learn how to set a message expiration for real-time journeys in Dynamics 365 Customer Insights - Journeys.
-ms.date: 05/14/2026
+ms.date: 06/02/2026
 ms.topic: article
 author: Joni-M
 ms.author: alfergus
@@ -11,13 +11,9 @@ search.audienceType:
   - enduser
 ---
 
-# Set message expiration in real-time journeys (preview)
-
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]  
+# Set message expiration in real-time journeys
 
 Customers can enter a real-time journey at any time. If your journey includes time-sensitive content such as event reminders, limited-time offers, or expiring coupons, you can prevent outdated messages from being sent by setting an expiration on a message tile. When a message expires, customers who reach that message after the expiration time don’t receive it and continue through the rest of the journey without interruption.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note.md)]
 
 ## What is a message expiration?
 
