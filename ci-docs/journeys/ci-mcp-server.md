@@ -166,6 +166,5 @@ Keep these limitations in mind:
 
 ## Next steps
 
-- [Consent management overview](real-time-marketing-compliance-settings) - Learn how consent works in Customer Insights - Journeys
-- [Extend and customize consent](developer/extend-consent) - Developer guide for consent extensibility
+- [Consent management overview](real-time-marketing-compliance-settings.md) - Learn how consent works in Customer Insights - Journeys
 - [Model Context Protocol specification](https://modelcontextprotocol.io) - Learn more about the MCP open standard
