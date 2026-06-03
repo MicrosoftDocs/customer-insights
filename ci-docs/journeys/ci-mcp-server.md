@@ -74,7 +74,7 @@ Each link is unique to the contact point and message context, providing full tra
 
 When a recipient selects the unsubscribe link in a message, it opens the preference center page associated with the compliance profile. The preference center lets recipients manage their communication preferences—for example, opting out of specific purposes or topics, updating contact points, or unsubscribing from all communications. This gives customers full control over what they receive, rather than simply opting out entirely.
 
-You can customize the look and feel of the preference center to match your brand, including updating text, adding purposes and topics, styling the page with custom CSS, and adding custom JavaScript. For more information, see [Create branded, customized preference centers](real-time-marketing-preference-centers).
+You can customize the look and feel of the preference center to match your brand, including updating text, adding purposes and topics, styling the page with custom CSS, and adding custom JavaScript. For more information, see [Create branded, customized preference centers](real-time-marketing-preference-centers.md).
 
 **Typical use case:** An outreach agent generates a message and calls `get_unsubscribe_link` to include a one-click opt-out link in the message body. When the recipient selects the link, they land on a branded preference center where they can fine-tune which communications they want to continue receiving.
 
