@@ -1,7 +1,7 @@
 ---
 title: Data sources overview
 description: Learn how to import or ingest data from various sources.
-ms.date: 05/27/2026
+ms.date: 06/04/2026
 ms.topic: overview
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -64,8 +64,8 @@ After you ingest the data, you can view the results of data profiling.
 
 > [!NOTE]
 > Data profiling is generated as part of the Data preparation task and is executed separately for each data source. The Data preparation task has a maximum execution time of three hours. If it doesn't
-> complete within this limit, the task is marked as failed and the overall refresh run is reported as Failed. This failure is non-blocking: downstream processes (such as unification, segments, measures,
-> enrichments, search, and activities) are not impacted and continue to run normally. The only effect is that the data profiling results (the Summary column and other column-level statistics) won't be
+> complete within this limit, the task is marked as failed, and the overall refresh run is reported as failed. This failure is non-blocking: downstream processes (such as unification, segments, measures,
+> enrichments, search, and activities) aren't impacted and continue to run normally. The only effect is that the data profiling results (the Summary column and other column-level statistics) aren't
 > available for the affected data source until the next successful Data preparation run. To request an increase to the three-hour limit, contact Microsoft Support.
 
 ## Data sources page
