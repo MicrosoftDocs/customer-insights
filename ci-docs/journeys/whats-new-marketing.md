@@ -1,7 +1,7 @@
 ---
 title: New and upcoming features
 description: Discover the latest features, improvements, and bug fixes in Dynamics 365 Customer Insights - Journeys. Stay updated with our monthly release notes.
-ms.date: 06/02/2026
+ms.date: 06/04/2026
 ms.update-cycle: 180-days
 ms.topic: whats-new
 author: alfergus
@@ -45,7 +45,7 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
  	- [Release plan](/dynamics365/release-plan/2026wave1/customer-insights/dynamics365-customer-insights-journeys/create-journeys-minutes-journey-creation-agent)
 
 > [!NOTE]
-> With the June 2026 release, Journey Creation Agent is available in the North America (NAM) and Oceania (OCE) regions.
+> Journey Creation Agent was made available to many regions in the May 2026 release. On June 5, 2026, Journey Creation Agent will also be available in the North America (NAM) and Oceania (OCE) regions.
 
 #### Monthly enhancements
 
