@@ -1,7 +1,7 @@
 ---
 title: 'Copilot - Refresh and perfect your message (preview)'
 description: Use the content rewrite copilot to rephrase messages, adjust tone, and optimize your content in Dynamics 365 Customer Insights - Journeys.
-ms.date: 03/19/2026
+ms.date: 06/05/2026
 ms.update-cycle: 180-days
 ms.topic: how-to
 author: alfergus
@@ -28,7 +28,7 @@ This article is an overview of the content rewrite copilot feature. It explains 
 > - Push notifications
 
 > [!NOTE]
-> The content rewrite copilot is currently available in the United States in the English language only.
+> The content rewrite Copilot is currently available in the United States only in English.
 
 > [!Tip]
 > Learn about using the content ideas copilot to create inspiring email copy: [Make email creation fun and more efficient with AI-powered content ideas in Dynamics 365 Customer Insights - Journeys](https://cloudblogs.microsoft.com/dynamics365/it/2022/11/30/engage-your-customers-faster-with-ai-powered-marketing-email-content/)
