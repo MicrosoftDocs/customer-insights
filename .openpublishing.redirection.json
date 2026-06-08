@@ -3601,5 +3601,10 @@
       "redirect_url": "/dynamics365/customer-insights/data/removed-deprecated-features-customer-insights#data-prep-report",
       "redirect_document_id": false
     },
+    {
+      "source_path": "ci-docs/journeys/ci-mcp-server.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/mcp-server-consent",
+      "redirect_document_id": false
+    }
   ]
 }
