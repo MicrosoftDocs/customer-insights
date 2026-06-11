@@ -1,7 +1,7 @@
 ---
 title: Use consent tools in the Customer Insights MCP server (preview)
 description: Customer Insights MCP server tools help AI agents verify consent and create unsubscribe links in real time. Learn how to send privacy-compliant messages.
-ms.date: 05/27/2026
+ms.date: 06/08/2026
 ms.topic: concept-article
 ms.collection: bap-ai-copilot
 author: PetrJantac
@@ -19,7 +19,7 @@ Instead of calling internal APIs directly, your agents interact with a single, s
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note.md)]
 
-## Why consent through MCP
+## Why use consent through MCP
 
 Using consent through MCP gives you:
 
