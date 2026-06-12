@@ -376,6 +376,8 @@
       items:
       - name: Follow up after the event
         href: followup-after-event.md
+    - name: Troubleshoot event management and Teams integration issues
+      href: troubleshoot-event-management.md
   - name: Forms 
     items:
     - name: Forms overview
