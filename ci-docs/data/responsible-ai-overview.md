@@ -19,7 +19,6 @@ ms.collection: bap-ai-copilot
 [!INCLUDE[rai-faq-features](includes/faqs-feature.md)]
 
 - [Dialog with data](faqs-dialog-data.md)
-- [Environment status summary](faqs-environment-status.md)
 - [Segment creation](faqs-segment-creation.md)
 - [Docs-based Q&A capability](faqs-docs-qna.md)
 
