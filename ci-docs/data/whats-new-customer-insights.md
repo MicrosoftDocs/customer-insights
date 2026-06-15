@@ -350,7 +350,7 @@ The data prep report reduces the time and effort encountered by turning your dat
 The System Status page in Customer Insights - Data is an indispensable tool for admins to keep a frequent tab to ensure all jobs are running smoothly. However, when there are errors/issues, the current process of checking through a large table of active jobs can be time-consuming and confusing, especially when there are complex relationships between jobs. Copilot in Dynamics 365 Customer Insights provides a simple, natural language summary of the environment, prominently highlighting the most important jobs tied to key activation events like exports. With this summary, admins can focus on quickly taking the actions required.
 
 - [Release plan](/dynamics365/release-plan/2023wave1/customer-insights/address-issues-environment-status-summary-copilot)
-- [Documentation](system.md#environment-status-summary-preview)
+- [Documentation](removed-deprecated-features-customer-insights.md#environment-status-summary)
 
 ### Monthly enhancements
 

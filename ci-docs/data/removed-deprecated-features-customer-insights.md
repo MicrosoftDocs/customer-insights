@@ -1,7 +1,7 @@
 ---
 title: Removed or deprecated features in Dynamics 365 Customer Insights - Data
 description: Overview about features that are going away or are no longer available.
-ms.date: 05/18/2026
+ms.date: 06/10/2026
 ms.topic: whats-new
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -17,6 +17,18 @@ This article describes features that have been removed, or that are planned for 
 - A *deprecated* feature is not in active development and may be removed in a future update.
 
 This list is intended to help you consider these removals and deprecations for your own planning. Where possible, we share option to use similar capabilities for removed or deprecated features.
+
+## Features removed or deprecated in June 2026
+
+### Environment status summary
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Reason for deprecation/removal** | Features in public preview are continuously being evaluated based on the balance between customer value and cost of maintaining the service.  |
+| **Replaced by another feature?**   | No |
+| **Product areas affected**         | Environment |
+| **Deployment option**              | All |
+| **Status**                         | Disabled as of June 10, 2026. |
 
 ## Features removed or deprecated in May 2026
 

@@ -404,8 +404,6 @@
   items:
     - name: Overview
       href: responsible-ai-overview.md
-    - name: FAQs for environment status summary
-      href: faqs-environment-status.md
     - name: FAQs for dialog with data
       href: faqs-dialog-data.md
     - name: FAQs for help pane
