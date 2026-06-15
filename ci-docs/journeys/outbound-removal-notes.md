@@ -55,6 +55,7 @@ If you previously used outbound marketing, you may still be able to access most 
 | July 2025 | Email and message center notification (MC1119263) to admins about start of the [phased removal process](transition-faqs.md#what-will-happen-after-june-30-2025-will-outbound-marketing-stop-working-updated-november-21-2025). |
 | November 2025 | Email and message center notification (MC1189547) to admins about the start of the outbound marketing removal [phased removal process](transition-faqs.md#what-will-happen-after-june-30-2025-will-outbound-marketing-stop-working-updated-november-21-2025). |
 | January 2026 | Email and message center notification (MC1214404) to admins about next phase of outbound marketing removal where live journeys, forms, events, and more will be stopped. |
+| May 2026 | Outbound marketing module removed from all environments |
 
 ## Outbound marketing documentation
 
