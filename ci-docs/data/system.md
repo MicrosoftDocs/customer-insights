@@ -1,7 +1,7 @@
 ---
 title: "View system configuration"
 description: "Learn about system settings in Dynamics 365 Customer Insights - Data."
-ms.date: 04/27/2026
+ms.date: 06/11/2026
 ms.update-cycle: 180-days
 ms.topic: how-to
 author: Scott-Stabbert
@@ -102,42 +102,5 @@ Refresh for tasks and processes is run according to the [configured schedule](sc
 
 Select the status of a process to see the progress details of the entire job it was in. The refresh processes can help to understand what you can do to address a **Skipped** or **Queued** task or process.
 
-## Environment status summary (preview)
-
-[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
-
-The Environment status summary is designed to help you quickly understand the status of your environment based on the business impact of what you’ve configured. The summary reviews jobs in the following order:
-
-- If exports are configured, the system summarizes export job statuses.
-- If exports aren't configured, the system summarizes segment job statuses for segments configured for Customer Journey Orchestrator.
-- If you haven't configured any segments for Customer Journey Orchestrator, the system summarizes job statuses for jobs that put data into Dataverse.
-- If you haven’t configured any features that move data into Dataverse, the system reviews the unification (merge) job to help indicate if your unification is running normally.
-
-[!INCLUDE [public-preview-note](includes/public-preview-note.md)]
-
-### Prerequisites
-
-- [Enable Copilot features powered by Azure OpenAI](copilot-global-consent.md) setting turned **On**. Default is **On**.
-- Environment is in a supported geography and uses a supported language.
-
-### View the Environment status summary
-
-Use the summary to help you determine if your environment is running normally or if there's a problem. If the system detects one of the jobs has been skipped or failed, the summary shows the earliest dependency area for the job, so you know where to investigate first and get things running again quickly. Select the link to go to the respective area and investigate the issue.
-
-- Go to **Settings** > **System**.
-
-  :::image type="content" source="media/environment-status-summary.svg" alt-text="Screenshot of Environment status summary dialog box.":::
-
-  - To research the skipped or failed job, select the link.
-  - To copy the summary to your clipboard, select **Copy**.
-  - To refresh the summary if you’re waiting for a job to finish, select **Refresh**.
-  - To provide your feedback, select the thumbs up or thumbs down icons.
-
-[!INCLUDE [copilot-availability](includes/copilot-availability.md)]
-
-## Next steps
-
-- [Responsible AI FAQs for the Environment status summary](faqs-environment-status.md)
-- [Responsible AI FAQs for Customer Insights - Data](responsible-ai-overview.md)
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
