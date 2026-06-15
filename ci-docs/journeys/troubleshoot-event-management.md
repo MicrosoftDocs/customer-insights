@@ -1,10 +1,11 @@
 ---
 title: Troubleshoot event management and Teams integration issues
-description: Learn how to troubleshoot event management in Dynamics 365 Customer Insights - Journeys.
+description: Troubleshoot event management and Teams integration issues in Dynamics 365 Customer Insights - Journeys. Learn how to fix registration, check-in, and attendance problems.
 ms.date: 06/12/2026
 ms.topic: troubleshooting-general
 author: cmenesatti-m
 ms.author: alfergus
+ms.reviewer: alfergus
 search.audienceType: 
   - admin
   - customizer

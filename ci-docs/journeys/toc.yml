@@ -516,6 +516,8 @@
       href: real-time-marketing-custom-channel-custom-API.md
     - name: 7. Define your channel definition
       href: real-time-marketing-define-channel-definition.md
+    - name: Troubleshoot custom channels
+      href: troubleshoot-custom-channels.md
   - name: Push notification setup for application developers
     items:
     - name: User mapping for application developers
