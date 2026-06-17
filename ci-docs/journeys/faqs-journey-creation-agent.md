@@ -1,7 +1,7 @@
 ---
 title: Responsible AI FAQs for Journey Creation Agent
 description: Discover how to use Journey Creation Agent in Dynamics 365 Customer Insights - Journeys responsibly. These FAQs provide essential guidelines and best practices.
-ms.date: 05/07/2025
+ms.date: 06/16/2026
 ms.update-cycle: 180-days
 ms.topic: faq
 author: cmenesatti-m

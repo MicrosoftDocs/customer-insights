@@ -1,7 +1,7 @@
 ---
 title: Responsible AI FAQs for smart image recommendations
 description: Learn how to responsibly use AI for smart image recommendations in Dynamics 365 Customer Insights - Journeys. Discover key considerations and best practices.
-ms.date: 12/08/2025
+ms.date: 06/16/2026
 ms.update-cycle: 180-days
 ms.topic: faq
 author: alfergus
@@ -44,3 +44,5 @@ The system can't suggest any related images if it can't find images in the libra
 Follow these procedures to make the most out of the smart image recommendations:
 1. Add your content (for example, text in email) before you add the image.
 1. Always review the suggested images before using them in your marketing channel.
+
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

@@ -3720,6 +3720,11 @@
       "source_path": "ci-docs/journeys/transition-overview.md",
       "redirect_url": "/dynamics365/customer-insights/journeys/outbound-removal-notes",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/faqs-journey-copilot.md",
+      "redirect_url": "/dynamics365/customer-insights/journeys/faqs-journey-creation-agent",
+      "redirect_document_id": false
     }
   ]
 }

@@ -1,7 +1,7 @@
 ---
 title: Responsible AI FAQs for content rewrite
 description: Understand how to responsibly use the content rewrite feature in Dynamics 365 to improve your email, text, and push notification content.
-ms.date: 12/08/2025
+ms.date: 06/16/2026
 ms.update-cycle: 180-days
 ms.topic: faq
 author: alfergus
@@ -29,7 +29,7 @@ These responsible AI FAQs describe the AI impact of Dynamics 365 Customer Insigh
 > [!NOTE]
 > Content rewrite is currently available in the United States, in the English language only.
 
-## What is Content rewrite?
+## What is content rewrite?
 
 Content rewrite helps you rapidly iterate on your content to optimize your messaging. Whether you're creating content for email, text messages, push notifications, or forms, using Copilot, you can easily rephrase messages, adjust the tone of voice, and shorten or lengthen copy, increasing productivity and delivering better results.
 
@@ -64,3 +64,5 @@ Follow these procedures to make the most of the content rewrite feature:
 1. Ensure that you have at least 10 words in your initial text.
 1. Ensure that your initial text is of high-quality.
 1. Always review and edit content rewrite suggestions before publishing them in a marketing campaign.
+
+[!INCLUDE [footer-include](./includes/footer-banner.md)]
