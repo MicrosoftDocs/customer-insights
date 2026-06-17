@@ -15,9 +15,6 @@ ms.custom:
 
 If you have Azure Data Lake Storage accounts protected by firewalls, use [Azure Private Link](/azure/private-link/private-link-overview) to connect to Dynamics 365 Customer Insights - Data. Azure Private Link lets Customer Insights - Data connect to your Azure storage over a private endpoint in your virtual network.
 
-> [!IMPORTANT]
-> Enable your instance to support private links before creating connections using private links. Contact [Support](https://admin.powerplatform.microsoft.com/support) to add private link support to your Customer Insights - Data instance ID. Your instance ID appears in your browser's address bar when you're signed into Customer Insights - Data.
-
 There are three scenarios where Customer Insights - Data can be configured to connect to firewall-protected Azure storage containers:
 
 - When creating a new Customer Insights - Data environment for which you would like to [Use your own Azure Data Lake Storage account](own-data-lake-storage.md) that is protected by your virtual network.
