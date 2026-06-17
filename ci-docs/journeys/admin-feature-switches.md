@@ -1,7 +1,7 @@
 ---
 title: Use feature switches to enable or disable optional and preview features
 description: Use feature switches to manage optional and preview features in Dynamics 365 Customer Insights - Journeys. Learn the steps to configure settings.
-ms.date: 03/25/2026
+ms.date: 06/17/2026
 ms.update-cycle: 180-days
 ms.topic: article
 author: alfergus
@@ -27,7 +27,7 @@ The following tables list each available feature, preview status, and links for 
 | Feature switch | Preview or production | Description |
 |---|---|---|
 | Use protected fields in segments | Production | Allow the use of protected columns/fields in segment criteria in real-time marketing. Use with caution. [Learn more](protected-fields.md). |
-| Use system command bar | Preview | Utilize the system command bar to enhance the segmentation user experience. This feature enables customers to customize the ribbon and activates default CRM actions. |
+| Use system command bar | Preview | Utilize the system command bar to enhance the segmentation user experience. This feature enables customers to customize the ribbon and activate default CRM actions. |
 
 ## Business units
 
@@ -68,7 +68,7 @@ The following tables list each available feature, preview status, and links for 
 | Send now | Preview | [Enable Send Now to send emails without having to build a journey](email-without-journey.md).|
 | View in browser | Production | [Enable adding a link to view emails in web browsers](view-email-in-browser.md). |
 | Email clickmap | Preview | Understand customers' interactions and gain insights into which links receive the most and least engagement based on your email design. |
-| Litmus integration | Production | By enabling Litmus, you agree to the Litmus [terms of service](https://www.litmus.com/terms) and [privacy policy](https://www.litmus.com/privacy) Litmus is an external, third-party product made available to you on an optional trial basis. It is subject to the [terms of service](https://www.litmus.com/terms) set forth by Litmus. This is not a Microsoft product so you must provide consent before Litmus can be enabled. |
+| Litmus integration | Production | By enabling Litmus, you agree to the Litmus [terms of service](https://www.litmus.com/terms) and [privacy policy](https://www.litmus.com/privacy). Litmus is an external, third-party product made available to you on an optional trial basis. It is subject to the [terms of service](https://www.litmus.com/terms) set forth by Litmus. This is not a Microsoft product, so you must provide consent before Litmus can be enabled. |
 
 ## Copilot
 
@@ -94,7 +94,7 @@ The following tables list each available feature, preview status, and links for 
 | Feature switch | Preview or production | Description |
 |---|---|---|
 | Email deduplication | Preview | [Disallows sending the same email more than once to an email address. This is a general setting that applies to all segment-based journeys](email-deduplication.md). |
-| One-click unsubscribe |Production | Enable one-click unsubscribe for supported email clients. This feature allows recipients to unsubscribe from commercial email without visiting a preference center. [Learn more](one-click-unsubscribe.md). |
+| One-click unsubscribe |Production | Enable one-click unsubscribe for supported email clients. This feature allows recipients to unsubscribe from commercial emails without visiting a preference center. [Learn more](one-click-unsubscribe.md). |
 
 ## Contact timeline
 
@@ -109,7 +109,7 @@ The following tables list each available feature, preview status, and links for 
 | Form capture | Production | [Enable form capture in real-time journeys](real-time-marketing-form-capture.md). |
 | Enable custom JavaScript in forms |Production | [If disabled, custom JavaScript is automatically removed from real-time journey forms](real-time-marketing-manage-forms.md#add-custom-javascript-to-your-form). |
 | Form prefill | Preview | Enable form prefill in real-time journeys [Learn more](form-prefill.md). |
-| Enable table-less layouts in Form editor | Production |Use Div containers instead of table-based layouts in Form editor. |
+| Enable table-less layouts in form editor | Production | Use `<div>` containers instead of table-based layouts in the form editor. Existing forms are automatically converted to the table-less layout when edited. |
 | Custom unmapped fields | Production | Enable custom unmapped fields. |
 
 ## Journey
