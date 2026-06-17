@@ -1,14 +1,14 @@
 ---
 title: Create segments with Copilot for Customer Insights - Data (preview)
-description: Let Copilot in Customer Insights - Data help you in creating segments based on data in your environment.
-ms.date: 12/08/2025
+description: Build segments faster with Copilot for Customer Insights - Data. Use natural language prompts to create targeted customer segments. Get started today.
+ms.date: 06/17/2026
 ms.update-cycle: 180-days
 ms.reviewer: alfergus
 ms.topic: how-to
 author: JimsonChalissery
 ms.author: sstabbert
 ms.custom: bap-template
-ms.collection: bap-ai-copilot 
+ms.collection: bap-ai-copilot
 ---
 
 # Create segments with Copilot for Customer Insights - Data (preview)
@@ -54,3 +54,5 @@ If the resulting segment contains multiple [relationship paths](relationships.md
 - [Create and manage segments](segments.md)
 - [FAQ for segment creation (preview)](faqs-segment-creation.md)
 - [Responsible AI FAQs for Dynamics 365 Customer Insights - Data](responsible-ai-overview.md)
+
+[!INCLUDE [footer-include](includes/footer-banner.md)]

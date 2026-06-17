@@ -1,14 +1,14 @@
 ---
 title: Get answers to questions about capabilities from Copilot (preview)
-description: Learn how to use Copilot across Customer Insights - Data.
-ms.date: 12/08/2025
+description: Copilot in Customer Insights - Data answers your questions about app capabilities in natural language. Learn how to get help and explore features.
+ms.date: 06/17/2026
 ms.update-cycle: 180-days
 ms.reviewer: alfergus
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
 ms.custom: bap-template
-ms.collection: bap-ai-copilot 
+ms.collection: bap-ai-copilot
 ---
 
 # Get answers to questions about capabilities from Copilot (preview)
@@ -53,3 +53,5 @@ To clear the conversation history, select the **Reload** button in the header of
 - [Responsible AI FAQs for Dynamics 365 Customer Insights - Data](responsible-ai-overview.md)
 - [FAQ for docs-based Q&A capability](faqs-docs-qna.md)
 - [Dialog with data using Copilot](dialog-with-data.md)
+
+[!INCLUDE [footer-include](includes/footer-banner.md)]

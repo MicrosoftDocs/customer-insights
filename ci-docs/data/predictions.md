@@ -31,8 +31,6 @@ The following models are available:
 - [Transactional churn](predict-transactional-churn.md): Predicts if an individual customer might no longer purchase your products or services in a certain time frame.
 - [Sentiment analysis](sentiment-analysis.md): Analyzes sentiment of customer feedback and identifies business aspects that are frequently mentioned.
 
-To understand the readiness of your data to produce insights, see [Data prep report overview](data-prep-overview.md).
-
 ## Data prerequisites for prediction models
 
 All out-of-box prediction models share the following common data requirements. See the individual model pages for model-specific requirements.
