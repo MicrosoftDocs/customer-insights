@@ -1,7 +1,7 @@
 ---
 title: "Connect to Microsoft Fabric OneLake (preview)"
 description: "Connect to Delta tables in a Microsoft Fabric OneLake lakehouse and ingest the data into Dynamics 365 Customer Insights - Data."
-ms.date: 05/28/2026
+ms.date: 06/16/2026
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -178,7 +178,7 @@ The public preview release has the following known issues.
   - The Fabric workspace name contains special characters. This issue will be fixed in June 2026.
   - The Fabric workspace name isn't entered in all lowercase. The workspace name itself can contain uppercase letters, but you must enter the name in all lowercase. This issue will be fixed in June 2026.
 
-- **No tables are shown in the Fabric workspace**. One or both of the following can cause this issue:
+- **The 'Add Fabric Delta tables' page appears hung, no tables are shown**. One or both of the following can cause this issue:
   - External access to OneLake data wasn't enabled for the Fabric tenant. [Enable external access](#enable-external-access-to-onelake-data).
   - The Customer Insights - Data service principal wasn't added to the Fabric workspace. [Add Customer Insights - Data service principal to the Fabric workspace](#add-customer-insights---data-service-principal-to-the-fabric-workspace).
 
