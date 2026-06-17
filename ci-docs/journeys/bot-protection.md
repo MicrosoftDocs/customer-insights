@@ -1,10 +1,11 @@
 ---
 title: Exclude bot interactions
-description: Learn how to exclude bot and nonhuman interactions on your emails in Dynamics 365 Customer Insights - Journeys.
+description: Exclude bot interactions in Dynamics 365 Customer Insights - Journeys to filter nonhuman clicks. Learn how to enable bot protection for reliable analytics.
 ms.date: 05/29/2026
 ms.topic: article
 author: Joni-M
 ms.author: alfergus
+ms.reviewer: alfergus
 search.audienceType: 
   - admin
   - customizer
@@ -29,13 +30,13 @@ Because bot protection filters out nonhuman link clicks, some journey triggers a
 
 ## How bots are detected
 
-When bot protection is enabled, any time a link is selected, it goes through an intermediate page. Customer Insights - Journeys runs some checks on the intermediate page to determine if the click was made by a bot or a human. 
+When bot protection is enabled, anytime a link is selected, it goes through an intermediate page. Customer Insights - Journeys runs some checks on the intermediate page to determine if the click was made by a bot or a human.
 
 ## Frequently asked questions
 
-| Question                      | Answer               | 
+| Question                      | Answer               |
 |:-----------------------------------|:------------------------------|
-| Why do I see multiple email open interactions for the same contact with the exact same timestamp? | Bot protection doesn't apply to email opens. This could be due to bot-related activity, resulting in multiple open interactions. | 
+| Why do I see multiple email open interactions for the same contact with the exact same timestamp? | Bot protection doesn't apply to email opens. This could be due to bot-related activity, resulting in multiple open interactions. |
 | I’ve noticed an inflated email open rate recently. What’s happening? | Because bot protection doesn't apply to email opens, nonhuman traffic can increase the open rate. Learn more about improving engagement measurement: [Beyond open rate: Rethinking email marketing metrics](https://www.microsoft.com/dynamics-365/blog/it-professional/2024/10/16/rethinking-email-metrics-the-evolving-landscape-of-open-rates/).|
 | Why are no or limited email opens being recorded? | Many modern email clients block image loading by default to protect user privacy. Because email open tracking relies on images being loaded, this may limit the app's ability to accurately capture email open interactions. Learn more: [Beyond open rate: Rethinking email marketing metrics](https://www.microsoft.com/dynamics-365/blog/it-professional/2024/10/16/rethinking-email-metrics-the-evolving-landscape-of-open-rates/). |
 | Why are there no email opens or clicks recorded? | Ensure compliance profiles are correctly configured, and tracking is allowed for the contacts, leads, or Customer Insights - Data profiles that received the email. Learn more: [Consent management overview](real-time-marketing-compliance-settings.md). | 
