@@ -1,7 +1,7 @@
 ---
 title: Troubleshooting Customer Insights - Journeys forms
 description: Learn how to troubleshoot forms in Dynamics 365 Customer Insights - Journeys.
-ms.date: 11/06/2024
+ms.date: 06/17/2026
 ms.topic: troubleshooting-general
 author: petrjantac
 ms.author: alfergus
@@ -20,17 +20,19 @@ This article explains how to troubleshoot forms in Customer Insights - Journeys.
 
 Make sure that your domain is allowed for external form hosting. You don't need to finish the domain authentication process to enable external form hosting for your domain. Learn more about [domain authentication](domain-authentication.md).
 
-## The form styles seem broken after embedding into my page or I'm having screen reader issues with the form
+## The form styles seem broken after embedding into my page, or I'm having screen reader issues with the form
 
-Some web pages may have a generic style definition for `<table>` elements. This style definition is inherited by the embedded form, which may look different than in the form editor. You can try the new "table-less" form layout, which uses div containers. This helps resolve the style conflict between your page and the form. The table-less layout also improves screen reader performance for better accessibility. The new layout is applied only to the newly created forms; it isn't applied to existing forms.
+Some web pages may have a generic style definition for `<table>` elements. This style definition is inherited by the embedded form, which may look different from what it does in the form editor. You can use the "table-less" form layout, which uses `<div>` containers instead of tables. This helps resolve the style conflict between your page and the form. The table-less layout also improves screen reader performance for better accessibility.
 
-The "table-less" layout is disabled by default. You can activate it by navigating to **Settings** > **Feature switches** > **Forms** and turning on the **Enable table-less layouts in Form editor** toggle. Don't forget to save the settings once the feature switch is enabled.
+The table-less layout is enabled by default. When you create a new form, it automatically uses the `<div>`-based layout. Existing forms are automatically converted to the table-less layout when you edit and save them.
+
+If you need to manage this setting, go to **Settings** > **Feature switches** > **Forms** and use the **Enable table-less layouts in Form editor** toggle. Don't forget to save the settings after changing the feature switch.
 
 :::image type="content" source="media/real-time-marketing-form-enable-div-layout.png" alt-text="Enable div-based layout for forms.":::
 
 ## Publishing a form as a standalone page fails
 
-This feature uploads a page with form on CDN. If the operation fails, try to run it again after a few minutes.
+This feature uploads a page with a form to the CDN. If the operation fails, try to run it again after a few minutes.
 
 ## Lead source is missing for newly created leads
 
@@ -48,11 +50,11 @@ To follow security best practices, the form editor can remove unknown code from 
 
 The form submission may fail because of issues with custom plugins or due to invalid values in the submission.
 
-- If the form submission failed because of the plugin issue, you can resubmit the submission from the list of submissions.
+- If the form submission failed because of a plugin issue, you can resubmit the submission from the list of submissions.
 - If the form submission failed because of an invalid value, you can edit the values of submissions from the list of submissions. Select the form submission to see the submitted values. Select the value you need to change and edit the value.
 
 > [!IMPORTANT]
-> You can only re-submit failed submissions. Be aware that, by re-submitting, you may create a duplicate contact, such as when the submission fails because of a contact point consent creation error. The replay runs the entire submission process again. To avoid duplicate records, you can change the matching strategy before running the replay feature.
+> You can only resubmit failed submissions. Be aware that, by resubmitting, you may create a duplicate contact, such as when the submission fails because of a contact point consent creation error. The replay runs the entire submission process again. To avoid duplicate records, you can change the matching strategy before running the replay feature.
 
 ## Missing values in lookup fields
 

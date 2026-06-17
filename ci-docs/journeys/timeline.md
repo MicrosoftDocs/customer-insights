@@ -1,7 +1,7 @@
 ---
 title: Customer interactions timeline
 description: View historical customer interactions in Dynamics 365 Customer Insights - Journeys. Learn how to configure the timeline for a unified view of activities.
-ms.date: 05/18/2026
+ms.date: 06/17/2026
 ms.topic: article
 author: alfergus
 ms.author: colinbirkett
@@ -81,7 +81,7 @@ For more information, see [Use custom connectors with the timeline control](/pow
 > -	msdynmkt_sms
 
 > [!NOTE]
-> - Real-time marketing activities from the past 12 months are shown in the timeline for the selected contact or lead.
-> - The Timeline doesn't display interactions for customer profiles.
+> - Real-time marketing activities from the past 90 days are shown in the timeline for the selected contact or lead.
+> - The timeline doesn't display interactions for customer profiles.
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
