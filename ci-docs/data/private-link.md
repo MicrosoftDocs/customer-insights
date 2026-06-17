@@ -1,11 +1,11 @@
 ---
 title: Set up connections for storage accounts behind firewalls
 description: Learn how to set up an Azure Private Link to connect your Data Lake Storage.
-ms.date: 09/11/2025
+ms.date: 06/17/2026
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
-ms.reviewer: mhart
+ms.reviewer: alfergus
 ms.custom:
   - bap-template
   - sfi-image-nochange
@@ -73,7 +73,7 @@ After configuring the Private Link between Customer Insights - Data and your vir
 
 1. In Customer Insights - Data, go to **Settings** > **Permissions** and select the **Private Links** tab. The Private Links now show the status **Approved**.
 
-## Delete an Azure Private link
+## Delete an Azure Private Link
 
 1. In Customer Insights - Data, go to **Settings** > **Permissions** and select the **Private Links** tab.
 
