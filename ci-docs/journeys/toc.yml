@@ -747,9 +747,7 @@
   - name: Responsible AI FAQs for the Customer Insights - Journeys copilot (preview)
     href: faqs-copilot-general.md
   - name: Responsible AI FAQs for image smart recommendation
-    href: faqs-image-smart-recommendation.md  
-  - name: Responsible AI FAQs for the journey copilot
-    href: faqs-journey-copilot.md  
+    href: faqs-image-smart-recommendation.md
   - name: Responsible AI FAQs for Journey Creation Agent
     href: faqs-journey-creation-agent.md
   - name: Responsible AI FAQs for the segment copilot

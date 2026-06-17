@@ -1,7 +1,7 @@
 ---
 title: Responsible AI FAQs for Dynamics 365 Customer Insights - Journeys
 description: Learn how to use AI responsibly in Dynamics 365 Customer Insights - Journeys. Get answers to common questions and key considerations for ethical AI use.
-ms.date: 12/08/2025
+ms.date: 06/16/2026
 ms.update-cycle: 180-days
 ms.topic: faq
 author: alfergus
@@ -24,6 +24,9 @@ ms.custom:
 - [Responsible AI FAQs for the Customer Insights - Journeys copilot](faqs-copilot-general.md)
 - [Responsible AI FAQs for content ideas](faqs-content-ideas.md)
 - [Responsible AI FAQs for content rewrite](faqs-content-rewrite.md)
-- [Responsible AI FAQs for smart image recommendation](faqs-image-smart-recommendation.md)
-- [Responsible AI FAQs for journey copilot](faqs-journey-copilot.md)
-- [Responsible AI FAQs for segment copilot](faqs-segment-copilot.md)
+- [Responsible AI FAQs for conversational journeys](responsible-ai-conversational-journeys.md)
+- [Responsible AI FAQs for image smart recommendation](faqs-image-smart-recommendation.md)
+- [Responsible AI FAQs for Journey Creation Agent](faqs-journey-copilot.md)
+- [Responsible AI FAQs for the segment copilot](faqs-segment-copilot.md)
+
+[!INCLUDE [footer-include](./includes/footer-banner.md)]
