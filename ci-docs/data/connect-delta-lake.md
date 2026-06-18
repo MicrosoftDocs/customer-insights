@@ -181,10 +181,6 @@ Data synchronization can fail if your Delta folder data was deleted and then rec
 `delta.deletedFileRetentionDuration` table properties are set to 15 days or more. Running `VACUUM` with aggressive retention settings is the most common cause of
 version expiration.
 
-## Data preparation limits
-
-For information about data preparation limits, see [Data preparation limits](data-prep-overview.md#data-preparation-limits).
-
 ## Upsert (incremental update) behavior
 
 Customer Insights - Data supports incremental data updates through Delta Lake time travel. For upserts to work correctly:

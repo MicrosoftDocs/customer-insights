@@ -343,7 +343,7 @@ Segments in Customer Insights - Data, now provides an "Inspection mode" toggle f
 The data prep report reduces the time and effort encountered by turning your data into rich insights about your customers, such as segments, measures, and predictions. With actionable recommendations based on an AI-driven quality analysis, you can improve your data quality proactively. Analysts and business users can spend more time generating and using accurate insights and less time on data hygiene, empowering them to elevate customer experiences and optimize business outcomes.
 
 - [Release plan](/dynamics365/release-plan/2023wave2/customer-insights/identify-eliminate-data-quality-issues-effortlessly-copilot)
-- [Documentation](data-prep-overview.md)
+- [Documentation](removed-deprecated-features-customer-insights.md#data-prep-report)
 
 ### Address issues with environment status summary
 
