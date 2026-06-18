@@ -1,14 +1,14 @@
 ---
-title: "View system configuration"
-description: "Learn about system settings in Dynamics 365 Customer Insights - Data."
-ms.date: 06/11/2026
+title: View system configuration
+description: View system configuration in Dynamics 365 Customer Insights - Data to track system information, status, and processes. Learn how to manage your settings today.
+ms.date: 06/17/2026
 ms.update-cycle: 180-days
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
 ms.reviewer: alfergus
 ms.custom: bap-template
-ms.collection: bap-ai-copilot 
+ms.collection: bap-ai-copilot
 ---
 
 # View system configuration
@@ -85,7 +85,7 @@ Refresh for tasks and processes is run according to the [configured schedule](sc
 |Activity  |Runs manually (single time refresh). Depends on merge process. Insights depend on its processing.|
 |Analysis linking |Runs manually (single time refresh). Depends on segments.  |
 |Analysis preparation |Runs manually (single time refresh). Depends on segments.  |
-|Data prep report   |Needs a table to run on. Data source tables depend on ingestion. Enriched tables depends on enrichments. The Customer table depends on merge.  |
+|Data prep report   |Needs a table to run on. Data source tables depend on ingestion. Enriched tables depend on enrichments. The Customer table depends on merge.  |
 |Data sources   |Doesn't depend on any other process. Match depends on the successful completion of this process.  |
 |Enrichments   |Runs manually (single time refresh). Depends on merge process. |
 |Exports destinations |Runs manually (single time refresh). Depends on segments.  |
@@ -101,6 +101,5 @@ Refresh for tasks and processes is run according to the [configured schedule](sc
 |User  |Runs manually (single time refresh). Depends on tables.  |
 
 Select the status of a process to see the progress details of the entire job it was in. The refresh processes can help to understand what you can do to address a **Skipped** or **Queued** task or process.
-
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
