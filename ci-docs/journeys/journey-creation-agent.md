@@ -1,7 +1,7 @@
 ---
 title: Journey Creation Agent in Customer Insights - Journeys (preview)
 description: Build customer journeys faster with Journey Creation Agent. Describe your goal in plain language and let AI scaffold steps, timing, and branching logic for you.
-ms.date: 06/05/2026
+ms.date: 06/19/2026
 ms.topic: how-to
 ms.collection: bap-ai-copilot
 author: cmenesatti-m
@@ -86,6 +86,7 @@ Journey Creation Agent integrates with the following Dynamics 365 Customer Insig
 - **Customer Insights - Data**: Uses unified contact and lead profiles and pre-built segments to define your journey audience.
 - **Dynamics 365 Sales**: Journeys can be triggered by sales milestones such as opportunity creation, stalled deals, or won or lost outcomes, enabling coordinated sales-marketing outreach.
 - **Dynamics 365 Customer Service**: Journeys can start from service events such as case creation or resolution, supporting post-service follow-up and customer retention scenarios.
+- **Outreach Optimization Agent**: Works alongside Journey Creation Agent to optimize send times and test message variants after the journey is live.
 
 > [!IMPORTANT]
 > Integration with Dynamics 365 Sales and Customer Service requires that those applications are part of your Dynamics 365 deployment and that the relevant connections are configured by your administrator.

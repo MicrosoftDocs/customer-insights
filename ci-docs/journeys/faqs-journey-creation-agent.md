@@ -1,7 +1,7 @@
 ---
 title: Responsible AI FAQs for Journey Creation Agent
 description: Discover how to use Journey Creation Agent in Dynamics 365 Customer Insights - Journeys responsibly. These FAQs provide essential guidelines and best practices.
-ms.date: 06/16/2026
+ms.date: 06/19/2025
 ms.update-cycle: 180-days
 ms.topic: faq
 author: cmenesatti-m
@@ -32,6 +32,7 @@ Journey Creation Agent can:
 - **Ask clarifying questions** to resolve ambiguity in your prompt before generating a proposal, for example, confirming the target segment, preferred timing, or journey type.
 - **Iterate conversationally** allowing you to request structural changes (add or remove steps, adjust timing, change branching logic, swap content assignments) through follow-up messages.
 - **Output an editable canvas** so every element the agent adds can be reviewed, modified, or removed before the journey is published.
+- **Integrate with the broader agent suite** working alongside Outreach Optimization Agent for send-time optimization.
 
 Journey Creation Agent doesn't create segments, write content, or publish journeys without explicit human review and approval.
 

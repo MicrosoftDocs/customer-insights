@@ -722,6 +722,8 @@
       href: ai-hub-prerequisites.md
     - name: Journey Creation Agent (preview)
       href: journey-creation-agent.md
+    - name: Outreach Optimization Agent (preview)
+      href: outreach-optimization-agent.md
   - name: Use consent tools in the Customer Insights MCP server (preview)
     href: mcp-server-consent.md
   - name: Use Copilot's form fill assistance feature in Customer Insights - Journeys
