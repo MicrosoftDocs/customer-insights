@@ -12,6 +12,9 @@ ms.author: sstabbert
 
 [!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
+> [!IMPORTANT]
+> This feature has been deprecated and is not available for new installations; however, it can be enabled upon request if a customer requires it.
+
 > [!TIP]
 > We recommend using the default option [to customize your apps with Dataverse data](/power-apps/maker/canvas-apps/connections/connection-common-data-service). It ensures you benefit from our [integration into Dataverse](integrate-d365-apps.md).
 
