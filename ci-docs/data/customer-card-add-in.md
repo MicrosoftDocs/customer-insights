@@ -1,7 +1,7 @@
 ---
 title: "Customer Card Add-in for Dynamics 365 apps (preview)"
 description: "Show customer profile data from Customer Insights in Dynamics 365 apps with this add-in."
-ms.date: 09/01/2023
+ms.date: 06/22/2026
 ms.reviewer: mhart
 ms.topic: how-to
 author: Scott-Stabbert
@@ -11,6 +11,9 @@ ms.author: sstabbert
 # Customer Card Add-in for Dynamics 365 apps (preview)
 
 [!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
+
+> [!IMPORTANT]
+> This feature is deprecated and not available for new installations.
 
 > [!TIP]
 > We recommend using the default option [to customize your apps with Dataverse data](/power-apps/maker/canvas-apps/connections/connection-common-data-service). It ensures you benefit from our [integration into Dataverse](integrate-d365-apps.md).
