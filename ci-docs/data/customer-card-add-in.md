@@ -1,8 +1,8 @@
 ---
 title: "Customer Card Add-in for Dynamics 365 apps (preview)"
 description: "Show customer profile data from Customer Insights in Dynamics 365 apps with this add-in."
-ms.date: 09/01/2023
-ms.reviewer: mhart
+ms.date: 06/22/2026
+ms.reviewer: alfergus
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -11,6 +11,9 @@ ms.author: sstabbert
 # Customer Card Add-in for Dynamics 365 apps (preview)
 
 [!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
+
+> [!IMPORTANT]
+> This feature is deprecated and not available for new installations.
 
 > [!TIP]
 > We recommend using the default option [to customize your apps with Dataverse data](/power-apps/maker/canvas-apps/connections/connection-common-data-service). It ensures you benefit from our [integration into Dataverse](integrate-d365-apps.md).
@@ -38,16 +41,6 @@ Get a 360-degree view of your customers directly in Dynamics 365 apps. With the 
   - **Enrichment control** requires active [enrichments](enrichment-manage.md) applied to customer profiles. The card add-in supports these enrichments: [Brands](enrichment-microsoft.md) provided by Microsoft and [Interests](enrichment-microsoft.md) provided by Microsoft.
   - **Contacts control** requires a contact semantic table type.
   - **Timeline control** requires [configured activities](activities.md).
-
-## Install the Customer Card Add-in
-
-The Customer Card Add-in is a solution for customer engagement apps in Dynamics 365. To install the solution:
-
-1. Go to Marketplace and search for **Dynamics Customer Card**.
-
-1. Select the [Customer Card Add-in on Marketplace](https://marketplace.microsoft.com/product/dynamics-365/mscrm.dynamics_365_customer_insights_customer_card_addin?tab=Overview) and select **Get It Now**.
-
-You may need to sign in with your admin credentials for the Dynamics 365 app to install the solution. It can take some time for the solution to be installed to your environment.
 
 ## Configure the Customer Card Add-in
 
