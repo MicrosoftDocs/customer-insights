@@ -1,10 +1,11 @@
 ---
-title: Personalize messages, make journey decisions based on web interactions
+title: Personalize messages with web interaction data
 description: Learn how to personalize messages and make journey decisions based on web interactions in Dynamics 365 Customer Insights - Journeys.
-ms.date: 11/18/2025
+ms.date: 06/23/2026
 ms.topic: how-to
-author: alfergus
-ms.author: colinbirkett
+author: Joni-M
+ms.author: alfergus
+ms.reviewer: alfergus
 search.audienceType:
   - admin
   - customizer
@@ -59,6 +60,7 @@ For **Web Tracking** to work, make sure the following conditions are met:
 1. Make sure the customer's first visit to your website comes from selecting a Customer Insights – Journeys link, like an email link that directs the customer to your website.
 1. Enable link tracking for your URL.
 1. Make sure the customer (for example, contact) has **Allow Tracking** enabled. Learn more about how to manage consent for tracking: [Consent to track user behavior](real-time-marketing-email-text-consent.md#consent-to-track-user-behavior).
+1. Don't use test send to try out web tracking functionality. Web tracking only works with audience members who receive communications through journeys.
 
 Continue to the next section if you have Content Security Policy (CSP) enabled for your website.
 
@@ -66,7 +68,7 @@ Continue to the next section if you have Content Security Policy (CSP) enabled f
 
 [Content Security Policy (CSP)](https://content-security-policy.com/) is an extra layer of security that helps detect and mitigate some types of web attacks, such as data theft, site defacement, or malware distribution. CSP provides a set of policy directives that help control the resources that a site page is allowed to load. Each directive defines the restrictions for a specific type of resource.
 
-When CSP is enabled for your website, you have to allowlist the following domains: `script-src`, `connect-src`, and `frame-ancestors: https://*.mkt.dynamics.com/ https://*.azureedge.net`. If you don't allowlist these domains, scripts to load Customer Insights - Journeys forms are prevented, and forms aren't loaded.
+When CSP is enabled for your website, you have to allow list the following domains: `script-src`, `connect-src`, and `frame-ancestors: https://*.mkt.dynamics.com/ https://*.azureedge.net`. If you don't allow list these domains, scripts to load Customer Insights - Journeys forms are prevented, and forms aren't loaded.
 
 ## How does web tracking work
 
