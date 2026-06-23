@@ -1,10 +1,10 @@
 ---
 title: Personalize messages, make journey decisions based on web interactions
 description: Learn how to personalize messages and make journey decisions based on web interactions in Dynamics 365 Customer Insights - Journeys.
-ms.date: 11/18/2025
+ms.date: 06/23/2026
 ms.topic: how-to
-author: alfergus
-ms.author: colinbirkett
+author: Joni-M
+ms.author: alfergus
 search.audienceType:
   - admin
   - customizer
@@ -59,7 +59,7 @@ For **Web Tracking** to work, make sure the following conditions are met:
 1. Make sure the customer's first visit to your website comes from selecting a Customer Insights – Journeys link, like an email link that directs the customer to your website.
 1. Enable link tracking for your URL.
 1. Make sure the customer (for example, contact) has **Allow Tracking** enabled. Learn more about how to manage consent for tracking: [Consent to track user behavior](real-time-marketing-email-text-consent.md#consent-to-track-user-behavior).
-2. Don't use test send for trying out the web tracking functionality. Web tracking works with audience members who received communications via journeys.
+1. Don't use test send to try out web tracking functionality. Web tracking only works with audience members who receive communications through journeys.
 
 Continue to the next section if you have Content Security Policy (CSP) enabled for your website.
 
