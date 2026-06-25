@@ -1,7 +1,7 @@
 ---
 title: Troubleshoot event management and Teams integration issues
 description: Troubleshoot event management and Teams integration issues in Dynamics 365 Customer Insights - Journeys. Learn how to fix registration, check-in, and attendance problems.
-ms.date: 06/12/2026
+ms.date: 06/24/2026
 ms.topic: troubleshooting-general
 author: cmenesatti-m
 ms.author: alfergus
@@ -77,7 +77,7 @@ Learn more: [Make the most of your event check-in flow](/dynamics365/customer-in
 
 ### Town Hall isn't available in the streaming provider dropdown
 
-Town Hall needs a Microsoft 365 license that includes Teams, and the license must be assigned to the user organizing the event, not just present somewhere in the tenant. Ask your Microsoft 365 admin to confirm that the organizer has a Teams-eligible license. If it was just assigned, allow 30 to 60 minutes for the license to take effect. Teams Premium isn't required to *use* Town Hall, but it raises the attendee cap from 10,000 to 100,000.
+Town Hall needs a Microsoft 365 license that includes Teams, and the license must be assigned to the user organizing the event, not just present somewhere in the tenant. Ask your Microsoft 365 admin to confirm that the organizer has a Teams-eligible license. If it was recently assigned, allow 30 to 60 minutes for the license to take effect. Teams Premium isn't required to *use* Town Hall, but it raises the attendee cap from 10,000 to 100,000.
 
 Learn more: [Use Microsoft Teams town halls](/dynamics365/customer-insights/journeys/teams-town-hall) · [Event streaming options](/dynamics365/customer-insights/journeys/teams-meeting-types).
 
@@ -101,6 +101,89 @@ The user's saved Teams sign-in expired or was never set up. Customer Insights - 
 1. If no popup appears, check whether the CRM system user has an Azure Active Directory ID linked to their CRM record, they have a Teams license in the same tenant, and pop-ups are allowed for the Power Apps domain.
 1. If the popup appears but the error continues, the stored sign-in is stale. An admin can delete the user's row from the user token cache table and try again.
 1. If you instead get a "Not Found" error from `msevtmgt_GetTeamsAuthUrl` itself, see [`msevtmgt_GetTeamsAuthUrl` returns "Not Found"](#msevtmgt_getteamsauthurl-returns-not-found) above.
+
+### Teams Webinar v2 authentication issues
+
+Webinar v2 needs tenant-level authentication before Customer Insights - Journeys can send registrations to Teams or pull attendance back. When it isn't set up correctly, registrations fail with a permission error and attendance never arrives.
+
+Follow the official setup article end to end first: [Set up authentication for Teams webinars v2](/dynamics365/customer-insights/journeys/teams-authentication#add-the-aap). If something still fails, follow the checks below *in order*. Fix the first check that's wrong before moving to the next.
+
+#### Check 1: Are Graph API permissions granted with admin consent?
+
+The app registration needs all four permissions with each showing admin consent granted:
+
+- **OnlineMeetingArtifact.Read.All**: Attendance reports (application)
+- **VirtualEventRegistration-Anon.ReadWrite.All** - Registrations (application)
+- **VirtualEvent.Read.All** - Webinar status (application)
+- **VirtualEvent.ReadWrite** - Registrations and editing the webinar (delegated)
+
+:::image type="content" source="media/troubleshoot-event-management-permissions.png" alt-text="Screenshot showing required Webinar v2 permissions." lightbox="media/troubleshoot-event-management-permissions.png":::
+
+**What goes wrong**: A permission was added but admin consent was never selected, or consent was later revoked. **Fix**: Select **Grant admin consent** in the app registration.
+
+#### Check 2: Is the federated credential issuer correct?
+
+It must be exactly: `https://login.microsoftonline.com/<TenantID>/v2.0`
+
+:::image type="content" source="media/troubleshoot-event-management-federated-credential.png" alt-text="Screenshot showing the federated credential issuer." lightbox="media/troubleshoot-event-management-federated-credential.png":::
+
+**What goes wrong**: Wrong tenant ID, or the trailing `/v2.0` is missing (it's easy to paste the authority without it). Both must be correct or the token exchange fails.
+
+#### Check 3: Does an Application Access Policy (AAP) exist and is it granted?
+
+The AAP is a tenant-level Teams setting that lets Customer Insights - Journeys act on an organizer's behalf. Without one, every registration call is rejected. A Teams or Microsoft 365 admin can create and grant the AAP by running these commands in **PowerShell**:
+
+```powershell
+Connect-MicrosoftTeams
+
+New-CsApplicationAccessPolicy -Identity <POLICY_NAME> -AppIds <APP_ID>
+
+Grant-CsApplicationAccessPolicy -PolicyName <POLICY_NAME> -Global
+```
+
+List what already exists with:
+
+```powershell
+Get-CsApplicationAccessPolicy
+```
+
+Example output:
+
+```powershell
+Identity    : Global
+
+AppIds      : {<APP_ID>}
+
+Description :
+```
+
+**What goes wrong**: No policy at all. Registrations fail with "No application access policy found for this app." **Fix**: Create and grant an AAP.
+
+#### Check 4: Does the AAP apply to this organizer?
+
+A policy only works if it applies to the user organizing the webinar. This is where most "set up but still failing" cases land:
+
+-	**Global versus specific**: A `-Global` grant only applies to users who have no policy assigned to them directly. If the organizer has a direct or group policy, that overrules a `-Global` grant.
+-	**A narrower scope wins over global**: If the same app ID ends up in two policies (for example, one granted `-Global` and another granted to a group) the more specific assignment takes effect for the users it covers, not the global one. So a group-scoped policy that's missing a permission or missing an organizer overrides the global policy you thought was protecting everyone. When in doubt, list what's actually assigned instead of assuming the global applies. (Precedence order overall: **direct per-user assignment** > **group** > **global**.)
+-	**Group scope**: The organizer must be a *member of the group*. An organizer outside the group isn't covered, even if the policy itself looks fine.
+-	**Ranking**: Only one policy ever applies. If a user is covered by more than one policy, only the one with **Rank 1** (highest priority) takes effect. The rest are ignored. Don't split your app IDs across policies. Put them all in a single policy (`-AppIds <ID1>, <ID2>`); otherwise the app IDs sitting in lower-ranked policies silently never apply.
+
+Check whether ranking is a factor with:
+
+```powershell
+Get-CsGroupPolicyAssignment -PolicyType ApplicationAccessPolicy
+```
+
+If it returns rows, compare the **Rank** values to see which policy wins. If it returns **nothing**, there are no group assignments. Your grants are `-Global` or per-user, so ranking isn't the problem (precedence: an explicit per-user grant beats the global one).
+
+Example output (two groups, Rank 1 wins):
+
+| GroupId | PolicyType | PolicyName | Rank |
+|---|---|---|---|
+| a1b2c3d4-1111-2222-3333-444455556666 | ApplicationAccessPolicy | CIJ-Webinar-Policy | 1 |
+| e5f6a7b8-7777-8888-9999-aaaabbbbcccc | ApplicationAccessPolicy | CIJ-Backup-Policy | 2 |
+
+The AAP is owned by the Teams team. If the scoping or ranking behavior is unclear, their reference is the [Configure an application access policy for online meetings and virtual events](/graph/cloud-communication-online-meeting-application-access-policy#configure-application-access-policy) article. AAP changes can take up to 30 minutes to take effect.
 
 ### Registrations show up in CRM but attendees aren't actually in the Teams webinar
 

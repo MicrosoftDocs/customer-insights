@@ -1,7 +1,7 @@
 ---
 title: Authenticate Teams for webinars v2 users in Customer Insights - Journeys
 description: Learn how to set up authentication and permissions for Teams webinars v2 in Dynamics 365 Customer Insights - Journeys. 
-ms.date: 05/14/2026
+ms.date: 06/24/2026
 ms.topic: article
 author: terezakirk
 ms.author: alfergus
@@ -92,5 +92,7 @@ Alternatively, you can grant the AAP at the group or user level. Learn more abou
 
 > [!IMPORTANT]
 > API permissions and the Application Access Policy (AAP) are essential for successful registration process management. If they aren't set up correctly, or if any policies and permissions are revoked, registrations in Customer Insights - Journeys and in Teams may fail. Also, if you grant the AAP on the user level, it needs to be granted for all users who want to create webinars in Customer Insights - Journeys.
+
+For help diagnosing registration and attendance issues after setup, see the [Teams webinars v2 troubleshooting guide](troubleshoot-event-management.md#teams-webinar-v2-authentication-issues).
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
