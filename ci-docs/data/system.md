@@ -1,7 +1,7 @@
 ---
 title: View system configuration
 description: View system configuration in Dynamics 365 Customer Insights - Data to track system information, status, and processes. Learn how to manage your settings today.
-ms.date: 06/17/2026
+ms.date: 06/26/2026
 ms.update-cycle: 180-days
 ms.topic: how-to
 author: Scott-Stabbert
@@ -13,14 +13,7 @@ ms.collection: bap-ai-copilot
 
 # View system configuration
 
-[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
-
-> [!IMPORTANT]
-> Copilot features in Customer Insights - Data are only available in environments in the United States and Switzerland regions. These features may become available in additional regions in future releases.
-
 View system information and system status.
-
-[!INCLUDE [public-preview-note](includes/public-preview-note.md)]
 
 ## View system information
 
