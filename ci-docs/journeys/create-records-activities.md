@@ -1,7 +1,7 @@
 ---
 title: Create records and activities from journeys (preview)
 description: Dynamics 365 Customer Insights journeys let you create any record or activity automatically from customer actions. Discover how to optimize engagement today.
-ms.date: 04/30/2026
+ms.date: 06/30/2026
 ms.topic: article
 author: cmenesatti-m
 ms.author: alfergus
@@ -40,7 +40,9 @@ To turn this feature on or off:
 > Like any preview feature, this feature is disabled by default. However, given that this is a change to an existing feature, if you previously had the **Lead and opportunity creation (preview)** toggle enabled, that is still respected.
 
 > [!IMPORTANT]
-> For the preview only, verify that the **Marketing Service User Extensible** role has all the necessary privileges to any entity you want the Create a record tile to interact with.
+> A new dedicated service role — **Create Record Role Extensible** — is now available for the **Create a record** tile. This role provides more granular control. The entity picker only shows tables and fields where both you (the journey publisher) and this role have the required permissions, so configuration issues surface at setup rather than at runtime.
+>
+> The **Marketing Service User Extensible** role continues to function. To take advantage of the improved visibility behavior, migrate privileges for any custom tables you previously configured on **Marketing Service User Extensible** to **Create Record Role Extensible**. See [Roles and permissions](#roles-and-permissions) for step-by-step instructions.
 
 ## Add a Create a record tile to your journey
 
@@ -58,7 +60,9 @@ To add the capability to create records to your journey:
 After adding the **Create a record** tile, search for or scroll through the list of available entities and select the record type you want to create (for example, Phone Call, Task, Lead, Opportunity, or any custom entity). Records related to event planning aren't supported.
 
 > [!TIP]
-> The system only displays entities that have a relationship with a contact or lead and that you have permission to create. If you don't see the entity you need, check with your administrator to ensure that the entity has a relationship with contact or lead entities and that you have the necessary permissions to create records for that entity type.
+> The system only displays entities where both you (the journey publisher) and the **Create Record Role Extensible** service role have *Create* permission at business unit level or higher. If an entity or field is missing from the list, a message indicates that this is due to missing privileges and links to the documentation.
+>
+> If you don’t see the entity you need, ask your administrator to grant *Create* permission on that entity to both your security role and the **Create Record Role Extensible** role. To learn more, see [Why can’t I see a table in the list of tables for Create Record?](#why-cant-i-see-a-table-in-the-list-of-tables-for-create-record) below.
 
 ### Configure the required fields
 
@@ -106,6 +110,49 @@ For entities that support ownership (such as phone calls, tasks, leads, and oppo
 
 For leads and opportunities, Dynamics 365 Sales assignment rules take precedence over the owner specified in the journey. This precedence ensures that the system routes leads and opportunities according to your sales team's territory assignments and distribution rules.
 
+## Roles and permissions
+
+To create records from a journey using the new **Create Record Role Extensible** role, Dataverse requires permissions from two principals:
+
+- **Journey publisher**: The user who publishes the journey. Their security role must include the required privileges on the target table.
+- **Create Record Role Extensible**: The dedicated service role used by the Workflow service when the journey runs. This role must also hold the required privileges.
+
+Record creation only succeeds if *both* principals pass all required permission checks.
+
+### Built-in tables (Lead, Task, Opportunity, Phone Call)
+
+For built-in tables, the **Create Record Role Extensible** role already includes the required privileges. No action is needed for the service role.
+
+The journey publisher must have the following privileges on the target table:
+
+| Privilege | Why it's needed |
+|---|---|
+| Create | Create and populate fields on the record |
+| Append | Set lookup fields on the record |
+| AppendTo | Allow other records to reference this record |
+| Assign | Set the owner (ownerid) on the record |
+
+Additionally, the journey publisher needs **AppendTo** on any entity referenced by lookup fields configured in the tile (for example, account, contact, transactioncurrency).
+
+### Custom tables
+
+Custom tables aren't included in the default **Create Record Role Extensible** role. You must manually add privileges for both the journey publisher and the service role.
+
+For both the journey publisher’s security role and the **Create Record Role Extensible** role:
+
+1. Go to **Settings** > **Security** > **Security Roles**.
+1. Open the role.
+1. On the **Custom Entities** tab, locate your custom table.
+1. Set the following privileges to at least the business unit level: **Create**, **Append**, **AppendTo**, **Assign**.
+1. For every lookup field on the custom table, also add **AppendTo** on the entity the lookup points to.
+1. Save.
+
+### Adding a custom lookup field to a built-in table
+
+If you add a custom lookup field that references a table not already covered by the default role (for example, a new custom entity new_project), you must add **AppendTo** on that referenced entity to both the journey publisher’s security role and the **Create Record Role Extensible** role.
+
+No changes are needed if the lookup field points to a standard entity already covered by the default role (such as account, contact, transactioncurrency, lead, task, opportunity, or phone call).
+
 ## Example use cases for creating records and activities
 
 ### Hand-off high value leads to sales
@@ -137,9 +184,43 @@ This can happen for one of the following reasons:
 
 **Resolution**:
 
-- Ask your administrator to confirm the entity has a relationship to the contact or lead.
-- Verify that you have **Create** privileges for the entity (and any related entities required by business rules). Verify that you have the necessary permissions to create records for the type of entity.
-- If you’re an administrator, create the required relationship between the entity and the contact or lead, then try again.
+- Confirm the entity has a relationship with the contact or lead. If not, ask your administrator to create the required relationship and try again.
+-	Verify that both your security role and the **Create Record Role Extensible** role have **Create** permission on the entity at business unit level or higher. The entity picker only shows entities where both permission checks pass.
+-	If your organization restricts the entity to specific roles, ask your administrator to update both roles accordingly. See [Roles and permissions](#roles-and-permissions) for step-by-step instructions.
+-	Confirm that the entity isn't an event planning entity (prefix `msevtmgt`). Event planning entities aren't supported.
+
+### Why can’t I see a table in the list of tables for Create Record?
+
+To use a table in the **Create Record** tile, both you (the journey publisher) and the **Create Record Role Extensible** role must have **Create** permission on that table at business unit level or higher. If either permission is missing, the table is hidden from the picker and the user interface shows a message indicating that the item isn't visible due to missing privileges.
+
+**Resolution**:
+
+1. Open your `Dataverse environment` > **Settings** > **Security** > **Security Roles**.
+1. Find the security role assigned to your user account.
+1. Locate the table row. It may be under **Core Records**, **Custom Entities**, or another tab.
+1. Set the **Create** column to at least the **Business Unit** level (the second filled circle).
+1. Repeat the same steps for the **Create Record Role Extensible** role.
+
+### Why can’t I see a lookup field for the selected table?
+
+Lookup fields link the new record to an existing record in another table. To use a lookup field, both you and the **Create Record Role Extensible** role need two additional permissions:
+
+- **Append** permission on the source table (the table you’re creating a record in) at business unit level or higher.
+- **AppendTo** permission on the target table (the table the lookup field points to) at business unit level or higher.
+
+If either permission is missing, the lookup field is hidden from the field picker and the user interface shows a message indicating that the field isn't visible due to missing privileges.
+
+**Resolution**
+
+1. Open your `Dataverse environment` > **Settings** > **Security** > **Security Roles**.
+1. For both your security role and the **Create Record Role Extensible** role:
+    - Find the source table row > set the **Append** column to at least **Business Unit** level.
+    - Find the target table row > set the **AppendTo** column to at least **Business Unit** level.
+1. Save both roles.
+
+#### Why are Append and AppendTo needed?
+
+In Dataverse, setting a lookup field creates a relationship link between two records. Dataverse requires **Append** permission to attach a child record to a parent, and **AppendTo** permission on the parent to accept the attachment. Without both, record creation fails at runtime when the journey runs.
 
 ### Records aren't created
 

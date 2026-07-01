@@ -1,7 +1,7 @@
 ---
 title: New and upcoming features
 description: Discover the latest features, improvements, and bug fixes in Dynamics 365 Customer Insights - Journeys. Stay updated with our monthly release notes.
-ms.date: 06/04/2026
+ms.date: 06/30/2026
 ms.update-cycle: 180-days
 ms.topic: whats-new
 author: alfergus
@@ -24,6 +24,25 @@ Customer Insights - Journeys updates are [pushed to customers automatically](htt
 
 To submit and vote on **feature requests** and **product suggestions**, go to the [Dynamics 365 Application Ideas portal](https://experience.dynamics.com/ideas/categories/?forum=dfa5b83d-9e4c-e811-a956-000d3a1bef07&forumName=Dynamics%20365%20Marketing).
 
+### July 2026 update
+
+| App              | GA release      |
+|------------------|-----------------|
+| Customer Insights - Journeys | 1.2.1258.75 |
+
+#### Public preview
+
+- **Improve engagement and message timing with Outreach Optimization Agent**
+	- Outreach Optimization Agent helps you automatically optimize when and how often you reach each customer by intelligently orchestrating message timing and follow‑ups based on engagement history and real‑time signals.
+	- [Release plan](/dynamics365/release-plan/2026wave1/customer-insights/dynamics365-customer-insights-journeys/improve-engagement-message-timing-outreach-optimization-agent)
+	- [Docs](outreach-optimization-agent.md)
+
+#### Monthly enhancements
+
+- **Create record enhancements**
+	- When creating records from a journey, you can now leverage the full power of a rich text editor and personalization for text fields.
+	- [Docs](create-records-activities.md)
+
 ### June 2026 update
 
 | App              | GA release      |
@@ -41,8 +60,8 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 
 - **Create journeys in minutes with Journey Creation Agent**
 	- With the new Journey Creation Agent in Dynamics 365 Customer Insights - Journeys, anybody can create journeys in minutes, even if they've never done it before. Instead of spending time getting the mechanics of the journey right, you can now ensure you deliver the most personalized experience for your customers. Move from idea to execution in minutes, freeing up time and reducing dependency on technical experts.
+	- [Release plan](/dynamics365/release-plan/2026wave1/customer-insights/dynamics365-customer-insights-journeys/create-journeys-minutes-journey-creation-agent)
 	- [Docs](journey-creation-agent.md)
- 	- [Release plan](/dynamics365/release-plan/2026wave1/customer-insights/dynamics365-customer-insights-journeys/create-journeys-minutes-journey-creation-agent)
 
 > [!NOTE]
 > Journey Creation Agent was made available to many regions in the May 2026 release. On June 5, 2026, Journey Creation Agent will also be available in the North America (NAM) and Oceania (OCE) regions.
