@@ -1,7 +1,7 @@
 ---
 title: Notes about outbound marketing removal
 description: Outbound marketing removal from Dynamics 365 Customer Insights – Journeys is complete. Learn how to access your old tables, data, and assets after the transition.
-ms.date: 06/15/2026
+ms.date: 06/29/2026
 ms.update-cycle: 180-days
 ms.topic: concept-article
 author: vinayd-msft
@@ -35,7 +35,7 @@ If you previously used outbound marketing, you may still be able to access most 
 - **Outbound marketing segments**: Aren't removed, but aren't usable.
     - The segment table doesn't contain the actual list of members; this information was stored in an internal table that was removed. Segment queries are stored in the `msdyncrm_segment` table and remain available.
     - Outbound marketing segments may still be visible in real-time journeys. However, these segments aren't updated and shouldn't be used.
-- **Marketing lists**: Not removed. You can keep using them in real-time journeys (you can include them in real-time journeys dynamic segments).
+- **Marketing lists**: These are a [Sales entity](/dynamics365/sales/developer/list-marketing-list-entity). You can keep using them in real-time journeys (you can include them in real-time journeys dynamic segments).
 - Other outbound marketing assets such as **emails**, **content blocks**, **forms**, **marketing pages**, **consent data**, **journeys**, **templates**, **lead scoring models**, **social posts**, and **subscription lists** weren't removed.
     - These assets *can't be used* in real-time.
     - Any custom user interface that updated or added records to these assets and relied on outbound marketing services may fail (for example, any custom user interface that had plugins that reacted on retrieve/retrieve multiple messages).

@@ -1,10 +1,11 @@
 ---
-title: Personalize messages, make journey decisions based on web interactions
+title: Personalize messages with web interaction data
 description: Learn how to personalize messages and make journey decisions based on web interactions in Dynamics 365 Customer Insights - Journeys.
 ms.date: 06/23/2026
 ms.topic: how-to
 author: Joni-M
 ms.author: alfergus
+ms.reviewer: alfergus
 search.audienceType:
   - admin
   - customizer
@@ -67,7 +68,7 @@ Continue to the next section if you have Content Security Policy (CSP) enabled f
 
 [Content Security Policy (CSP)](https://content-security-policy.com/) is an extra layer of security that helps detect and mitigate some types of web attacks, such as data theft, site defacement, or malware distribution. CSP provides a set of policy directives that help control the resources that a site page is allowed to load. Each directive defines the restrictions for a specific type of resource.
 
-When CSP is enabled for your website, you have to allowlist the following domains: `script-src`, `connect-src`, and `frame-ancestors: https://*.mkt.dynamics.com/ https://*.azureedge.net`. If you don't allowlist these domains, scripts to load Customer Insights - Journeys forms are prevented, and forms aren't loaded.
+When CSP is enabled for your website, you have to allow list the following domains: `script-src`, `connect-src`, and `frame-ancestors: https://*.mkt.dynamics.com/ https://*.azureedge.net`. If you don't allow list these domains, scripts to load Customer Insights - Journeys forms are prevented, and forms aren't loaded.
 
 ## How does web tracking work
 
