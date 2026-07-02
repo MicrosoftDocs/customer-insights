@@ -1,7 +1,7 @@
 ---
 title: Best practices for email marketing
 description: How to design and send marketing email messages that avoid spam filters and get opened by customers in Dynamics 365 Customer Insights - Journeys.
-ms.date: 10/08/2025
+ms.date: 07/01/2026
 ms.topic: best-practice
 author: alfergus
 ms.author: alfergus
@@ -41,13 +41,13 @@ The HTML size limit is important because email providers (such as Gmail) "clip" 
 
 When you go live with a message, Customer Insights - Journeys processes the HTML content to create inline styles, compress spaces, and more, so it can be hard to know the exact final size of the message. If you have a message that you suspect violates the HTML size limit, do the following:
 
-1. Open a web browser and enter a URL of the form:   `https://<your_domain>/api/data/v9.0/msdyncrm_marketingemails(<email_id>)`  
+1. Open a web browser and enter a URL of the form:   `https://<your_domain>/api/data/v9.0/msdynmkt_emails(<email_id>)`  
 
 Where:
 - _&lt;your_domain&gt;_ is the root of your [!INCLUDE [pn-marketing-business-app-module-name](./includes/pn-marketing-business-app-module-name.md)] instance (such as "contoso.crm.dynamics.com").
 - _&lt;email_id&gt;_ is the ID for the message you want to check. To find this ID, open the message in [!INCLUDE [pn-marketing-business-app-module-name](./includes/pn-marketing-business-app-module-name.md)] and find the value of the `id=` parameter shown in your browser's address bar.
 
-2. Search for the value of the field "msdyncrm_emailbody" in the returned JSON.
+2. Search for the value of the field "msdynmkt_emailbody" in the returned JSON.
 
 1. Copy the value of that field into a text program that can tell you the exact size of the HTML content.
 
