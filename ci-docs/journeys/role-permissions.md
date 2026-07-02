@@ -1,7 +1,7 @@
 ---
 title: Permissions for out-of-the-box roles
 description: "Permissions for out-of-the-box roles: Get the latest updates on role permissions in Dynamics 365 Customer Insights - Journeys. Ensure your custom roles stay in sync."
-ms.date: 04/21/2026
+ms.date: 07/02/2026
 ms.topic: article
 author: vinayd
 ms.author: alfergus
@@ -41,6 +41,7 @@ Earlier versions of this article listed every privilege for each role. That form
 
 Here's how the information is organized:
 
+- **[May 2026 release (version 1.1.65002.146)](#may-2026-release-version-1165002146)**: Changelist of differences introduced in the May 2026 release.
 - **[April 2026 release (version 1.1.64196.86)](#april-2026-release-version-116419686)**: Changelist of differences introduced in the April 2026 release.
 - **[March 2026 release (version 1.1.62960.43)](#march-2026-release-version-116296043)**: Changelist of differences introduced in the March 2026 release compared to the previously published documentation.
 - **[Baseline (pre-March 2026)](#baseline-pre-march-2026)**: The last published version of this page, documenting all 11 roles and their privileges for five actions. Use this section as a reference if you need to verify your custom roles against the full privilege set before the changelist format was adopted.
@@ -63,6 +64,10 @@ These scopes are documented as **Basic**, **Local**, **Deep**, and **Global**. I
 ## Release-wise changes to roles and privileges
 
 We'll update this section after each release to note changes, if any, to out-of-the-box roles and privileges.
+
+## May 2026 release (version 1.1.65002.146)
+
+This month's release did not change any roles or privileges.
 
 ## April 2026 release (version 1.1.64196.86)
 

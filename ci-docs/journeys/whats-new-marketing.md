@@ -47,7 +47,7 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 
 | App              | GA release      |
 |------------------|-----------------|
-| Customer Insights - Journeys | 1.2.437.67 |
+| Customer Insights - Journeys | 1.2.437.94 |
 
 #### General availability
 
@@ -81,7 +81,7 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 
 | App              | GA release      |
 |------------------|-----------------|
-| Customer Insights - Journeys | 1.1.65002.129 |
+| Customer Insights - Journeys | 1.1.65002.146 |
 
 #### General availability
 
