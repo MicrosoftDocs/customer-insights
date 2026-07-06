@@ -1,7 +1,7 @@
 ---
 title: New and upcoming features
 description: Discover the latest features, improvements, and bug fixes in Dynamics 365 Customer Insights - Journeys. Stay updated with our monthly release notes.
-ms.date: 06/30/2026
+ms.date: 07/06/2026
 ms.update-cycle: 180-days
 ms.topic: whats-new
 author: alfergus
@@ -28,7 +28,7 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 
 | App              | GA release      |
 |------------------|-----------------|
-| Customer Insights - Journeys | 1.2.1258.75 |
+| Customer Insights - Journeys | 1.2.1258.89 |
 
 #### Public preview
 
@@ -132,7 +132,7 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 
 | App              | GA release      |
 |------------------|-----------------|
-| Customer Insights - Journeys | 1.1.64196.86 |
+| Customer Insights - Journeys | 1.1.64196.104 |
 
 #### General availability
 
@@ -166,7 +166,7 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 
 | App              | GA release      |
 |------------------|-----------------|
-| Customer Insights - Journeys | 1.1.62960.43 |
+| Customer Insights - Journeys | 1.1.62960.63 |
 
 #### General availability
 
@@ -197,7 +197,7 @@ Learn how to make the most of the new Dynamics 365 Customer Insights features in
 
 | App              | GA release      |
 |------------------|-----------------|
-| Customer Insights - Journeys | 1.1.62310.44 |
+| Customer Insights - Journeys | 1.1.62310.76 |
 
 #### General availability
 
