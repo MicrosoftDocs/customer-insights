@@ -147,8 +147,6 @@
       href: copilot-global-consent.md
     - name: Dialog with data
       href: dialog-with-data.md
-    - name: Environment status summary
-      href: system.md
     - name: Get answers to questions about capabilities
       href: help-pane-copilot.md
     - name: Segment creation
