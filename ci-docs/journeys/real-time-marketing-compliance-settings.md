@@ -1,7 +1,7 @@
 ---
 title: Consent management overview
 description: 'Consent management in Customer Insights – Journeys: Learn how to set up, manage, and enforce user consent to stay compliant with privacy regulations. Start managing consent today.'
-ms.date: 05/18/2026
+ms.date: 07/07/2026
 ms.topic: concept-article
 author: petrjantac
 ms.author: alfergus
@@ -123,6 +123,21 @@ A compliance profile can include an external link that directs users to an exter
 
 To include a link to an external consent management system’s preference page, enter the URL in the **External link** section of the Compliance profile. This adds user identification to the link so the external system can recognize and manage the user’s preferences.
 
+##### Unsubscribe URL customization in Customer Insights - Journeys
+
+To customize the link for Customer Insights - Journeys journey scenarios, use link personalization to append contact or lead attributes to the URL. Learn more: [Personalize your content](real-time-marketing-personalization.md).
+
+> [!CAUTION]
+> A compliance profile with an external link generates an unsubscribe link that can have tracking elements like `contextId` and `msdynmkt_trackingcontext`. However, these are only for internal use in Customer Insights - Journeys. You should include user identification for external consent management systems.
+
+> [!TIP]
+> You can also use a page with an embedded **Marketing form** as the unsubscribe URL for the compliance profile with an external link. In this case, you don’t need to add extra user identification because the marketing form uses `msdynmkt_trackingcontext`, which is automatically included in all email links when tracking is enabled.
+
+##### Unsubscribe URL customization in shared consent (doesn't apply to Customer Insights - Journeys)
+
+> [!CAUTION]
+> These URL customizations are meant specifically for shared consent scenarios, where an external consent management system handles the user's preferences. They don't work in Customer Insights - Journeys journeys.
+
 Here is an example Unsubscribe URL where the contact email is used as the `userid`: `http://www.contoso.com/consent?userid={{contact.emailaddress1}}&emailid={{messageid}}&purpose={{purposeid}}&topic={{topicid}}`
 
 :::image type="content" source="media/real-time-marketing-external-compliance-profile-settings.png" alt-text="Customer Insights - Journeys consent hierarchy." lightbox="media/real-time-marketing-external-compliance-profile-settings.png":::
@@ -132,12 +147,6 @@ You can define your own parameter name, such as `userid` in the previous example
 - `{{messageid}}` - the ID of the message.
 - `{{purposeid}}` - the ID of the Purpose linked to the message.
 - `{{topicid}}` - the ID of the Topic linked to the message.
-
-> [!CAUTION]
-> A compliance profile with an external link generates an unsubscribe link that can have tracking elements like `contextId` and `msdynmkt_trackingcontext`. However, these are only for internal use in Customer Insights - Journeys. You should include user identification for external consent management systems.
-
-> [!TIP]
-> You can also use a page with an embedded **Marketing form** as the Unsubscribe URL for the Compliance profile with an external link. In this case, you don’t need to add extra user identification because the Marketing form uses the `msdynmkt_trackingcontext`, which is automatically included in all email links when tracking is enabled.
 
 ## Purposes
 
