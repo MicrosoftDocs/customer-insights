@@ -1,13 +1,12 @@
 ---
 title: "Connect to Microsoft Fabric OneLake (preview)"
 description: "Connect to Delta tables in a Microsoft Fabric OneLake lakehouse and ingest the data into Dynamics 365 Customer Insights - Data."
-ms.date: 06/26/2026
+ms.date: 07/06/2026
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
 ms.reviewer: v-wendysmith
-ms.custom:
-  - bap-template
+ms.custom: bap-template
 ---
 
 # Connect to Microsoft Fabric OneLake (preview)
@@ -30,6 +29,7 @@ Before you create a Fabric OneLake data source:
 
 - [Enable external access to the OneLake data](#enable-external-access-to-onelake-data).
 - [Add Customer Insights - Data service principal to the Fabric workspace](#add-customer-insights---data-service-principal-to-the-fabric-workspace).
+- [Create private links](connect-fabric-inbound-access-protection.md) if **Inbound Access Protection** is enabled. To check if **Inbound Access Protection** is enabled in your tenant, sign in to the Microsoft Fabric admin portal. Go to **Admin Portal** > **Tenant Settings** > **Advanced Networking**. Check if **Azure Private Links** and **Block Public Internet Access** are enabled.
 - Verify that the following workspace and data requirements are met.
 
 ### Workspace prerequisites
@@ -51,7 +51,6 @@ The following limitations apply during public preview:
 - **One Fabric OneLake data source per workspace**. To ingest from another workspace, create another data source or use a Fabric shortcut.
 - **Editing an existing Fabric OneLake data source isn't supported**. To change the selected tables, remove the data source and create a new one. [Remove any downstream dependencies](data-unification-remove-dependencies.md) first. Editing existing connections is planned before general availability (GA).
 - **Upgrade in place** from an existing Azure Data Lake Delta tables data source to a Fabric OneLake data source isn't yet available. In-place upgrade is planned before GA.
-- **Private Link for Inbound Access Protection** isn't yet available for Fabric OneLake connections. Private endpoint support is planned before GA. To check if Inbound Access Protection is enabled in your tenant, sign in to the Microsoft Fabric admin portal. Go to **Admin Portal** > **Tenant Settings** > **Advanced Networking**. Check if **Azure Private Links** and **Block Public Internet Access** are enabled.
 
 ## Enable external access to OneLake data
 
@@ -85,7 +84,7 @@ Add the Customer Insights - Data service principal (**Dynamics 365 AI for Custom
 
 ## Connect to data in Fabric OneLake
 
-Data source names and table names must start with a letter and can contain only letters, numbers, and special characters. You also can't rename a data source after you save it. When you create the Fabric OneLake data source, you use the identity of the Customer Insights - Data administrator who configures it.
+Data source names and table names must start with a letter and can contain only letters, numbers, and special characters. You also can't rename a data source after you save it. When you create the Fabric OneLake data source, use the identity of the Customer Insights - Data administrator who configures it.
 
 1. In Customer Insights - Data, go to **Data** > **Data sources**.
 
@@ -153,9 +152,9 @@ The following capabilities aren't supported during preview:
 
 ## Manage schema changes
 
-If a column is added or removed from the schema of a Delta table, Customer Insights - Data runs a complete refresh of the data. Full refreshes take longer to process than incremental refreshes.
+If you add or remove a column from the schema of a Delta table, Customer Insights - Data runs a complete refresh of the data. Full refreshes take longer to process than incremental refreshes.
 
-If the source schema changes after the data source is created, a schema mismatch error appears and asks you to update the data source. Because editing isn't supported during preview, remove and recreate the data source to pick up the new schema. In-place schema update is planned for GA.
+If the source schema changes after you create the data source, a schema mismatch error appears and asks you to update the data source. Because editing isn't supported during preview, remove and recreate the data source to pick up the new schema. In-place schema update is planned for GA.
 
 ## Delta time travel and data refreshes
 
@@ -171,7 +170,7 @@ If Delta versions are missing (for example, after a `VACUUM` or after the table 
 
 ### Add Fabric Delta tables page appears hung, no tables are shown
 
-One or both of the following can cause this issue:
+One or both of the following situations can cause this issue:
 
 - External access to OneLake data wasn't enabled for the Fabric tenant. [Enable external access](#enable-external-access-to-onelake-data).
 - The Customer Insights - Data service principal wasn't added to the Fabric workspace. [Add Customer Insights - Data service principal to the Fabric workspace](#add-customer-insights---data-service-principal-to-the-fabric-workspace).
@@ -182,3 +181,5 @@ One or both of the following can cause this issue:
 - [Connect to Delta tables in Azure Data Lake Storage](connect-delta-lake.md)
 - [Microsoft Fabric OneLake overview](/fabric/onelake/onelake-overview)
 - [Create OneLake shortcuts](/fabric/onelake/onelake-shortcuts)
+
+[!INCLUDE [footer-include](includes/footer-banner.md)]
