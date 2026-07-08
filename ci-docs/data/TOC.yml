@@ -35,8 +35,12 @@
       href: data-sources.md
     - name: Add a data source
       items:
-       - name: Connect to Fabric OneLake (preview)
-         href: connect-fabric-onelake.md
+       - name: Connect to Microsoft Fabric OneLake (preview)
+         items:
+          - name: Connect to Fabric OneLake (preview) 
+            href: connect-fabric-onelake.md
+          - name: Connect with inbound access protection 
+            href: connect-fabric-inbound-access-protection.md
        - name: Connect to Azure Data Lake Storage
          items:
           - name: Connect to Common Data Model tables
@@ -143,8 +147,6 @@
       href: copilot-global-consent.md
     - name: Dialog with data
       href: dialog-with-data.md
-    - name: Environment status summary
-      href: system.md
     - name: Get answers to questions about capabilities
       href: help-pane-copilot.md
     - name: Segment creation
