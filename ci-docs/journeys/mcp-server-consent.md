@@ -1,7 +1,7 @@
 ---
-title: Use consent tools in the Customer Insights MCP server (preview)
-description: Customer Insights MCP server tools help AI agents verify consent and create unsubscribe links in real time. Learn how to send privacy-compliant messages.
-ms.date: 06/08/2026
+title: Use consent tools in the Customer Insights MCP Server (preview)
+description: Customer Insights MCP Server tools help AI agents verify consent and create unsubscribe links in real time. Learn how to send privacy-compliant messages.
+ms.date: 07/08/2026
 ms.topic: concept-article
 ms.collection: bap-ai-copilot
 author: PetrJantac
@@ -9,11 +9,11 @@ ms.author: alfergus
 ms.reviewer: alfergus
 ---
 
-# Use consent tools in the Customer Insights MCP server (preview)
+# Use consent tools in the Customer Insights MCP Server (preview)
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-Use the Customer Insights Model Context Protocol (MCP) server to check consent and generate unsubscribe links for compliant outbound messaging. The server exposes consent capabilities through [MCP](https://modelcontextprotocol.io) tools, enabling AI agents and custom integrations to make privacy-compliant messaging decisions in real time using Customer Insights consent data.
+Use the Customer Insights Model Context Protocol (MCP) Server to check consent and generate unsubscribe links for compliant outbound messaging. The server exposes consent capabilities through [MCP](https://modelcontextprotocol.io) tools, enabling AI agents and custom integrations to make privacy-compliant messaging decisions in real time using Customer Insights consent data.
 
 Instead of calling internal APIs directly, your agents interact with a single, secure interface using the same consent rules that are enforced during journey execution.
 
@@ -120,7 +120,7 @@ To send a compliant message:
 
 ## How it works
 
-The Customer Insights MCP server is built on the Dataverse custom API pattern. It uses two custom APIs for tool interaction:
+The Customer Insights MCP Server is built on the Dataverse custom API pattern. It uses two custom APIs for tool interaction:
 
 - **List tools**: Enumerates all available MCP tools registered on the server.
 - **Call tool**: Executes a specific MCP tool by name, passing the required arguments as JSON.
@@ -167,7 +167,7 @@ Keep these limitations in mind:
 
 - The consent tools cover consent checks and unsubscribe link generation. Updating consent, administrative operations (such as creating or deleting purposes and topics), and consent model metadata retrieval aren't exposed through MCP.
 - **Performance considerations**: Consent checks through MCP may have higher latency compared to direct service calls during journey execution. Consider this when you're designing high-throughput scenarios.
-- **Single MCP server**: The Customer Insights MCP server is a unified server for both Customer Insights - Journeys and Customer Insights - Data. All tools share the same server-level scope definition. Tool-level authorization controls access to individual tools.
+- **Single MCP server**: The Customer Insights MCP Server is a unified server for both Customer Insights - Journeys and Customer Insights - Data. All tools share the same server-level scope definition. Tool-level authorization controls access to individual tools.
 
 ## Next steps
 
