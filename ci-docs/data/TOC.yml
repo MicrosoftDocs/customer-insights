@@ -151,7 +151,12 @@
       href: help-pane-copilot.md
     - name: Segment creation
       href: segments-copilot.md
-
+    - name: Customer Insights MCP Server
+      items:
+        - name: Use tools in the Customer Insights MCP Server (preview) 
+          href: mcp-server-tools.md
+        - name: Customer Insights MCP Server tools reference (preview)
+          href: mcp-server-tools-reference.md
 
 - name: Tables
   items:
