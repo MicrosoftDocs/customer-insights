@@ -5,8 +5,6 @@ Copilot in Customer Insights helps you work faster and smarter by turning natura
 | Feature | Description | Learn more |
 |-------------|-------------|------------|
 | **Dialog with data** | Lets you ask questions in natural language to quickly generate insights about your customers. | [Have a dialog with data using Copilot](/dynamics365/customer-insights/data/dialog-with-data) |
-| **Data prep report** | Helps you understand the overall data quality and the readiness of your data to produce insights. | [Data prep report overview](/dynamics365/customer-insights/data/data-prep-overview) |
-| **Environment status summary** | Helps you quickly understand the status of your environment based on the business impact of what you've configured. | [Environment status summary](/dynamics365/customer-insights/data/system) |
 | **Answers to capability questions** | Gets answers to questions about Customer Insights - Data and its features. | [Get answers to questions about capabilities from Copilot](/dynamics365/customer-insights/data/help-pane-copilot) |
 | **Segment creation** | Creates segments using everyday words without detailed knowledge about the data schema. | [Create segments with Copilot](/dynamics365/customer-insights/data/segments-copilot) |
 
