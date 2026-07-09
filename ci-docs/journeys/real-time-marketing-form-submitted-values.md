@@ -2,8 +2,7 @@
 title: Use submitted values from forms to branch journeys and personalize emails
 ms.reviewer: alfergus
 description: Learn how to branch customer journeys and personalize emails using submitted form values in Customer Insights – Journeys. Create tailored experiences effortlessly.
-ms.date: 12/02/2025
-ms.update-cycle: 180-days
+ms.date: 07/09/2026
 ms.topic: how-to
 author: petrjantac
 ms.author: alfergus

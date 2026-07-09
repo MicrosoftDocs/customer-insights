@@ -1,8 +1,7 @@
 ---
 title: Extend Customer Insights - Journeys marketing forms using code
 description: Extend Customer Insights - Journeys marketing forms with JavaScript to apply custom business logic in Dynamics 365 Customer Insights - Journeys.
-ms.date: 03/25/2026
-ms.update-cycle: 180-days
+ms.date: 07/09/2026
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
