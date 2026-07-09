@@ -1,8 +1,7 @@
 ---
 title: Manage Customer Insights - Journeys forms
 description: Discover how to manage and style forms in Dynamics 365 Customer Insights - Journeys. Edit, unpublish, and customize forms with ease.
-ms.date: 03/27/2026
-ms.update-cycle: 180-days
+ms.date: 07/09/2026
 ms.topic: how-to
 author: petrjantac
 ms.author: alfergus
