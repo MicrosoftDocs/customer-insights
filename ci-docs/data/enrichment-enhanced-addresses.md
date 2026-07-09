@@ -1,8 +1,8 @@
 ---
-title: "Enrich customer profiles with enhanced addresses"
-description: "Enrich and normalize address information of customer profiles with Microsoft's models."
-ms.date: 11/15/2022
-ms.reviewer: mhart
+title: Enrich customer profiles with enhanced addresses
+description: Enrich customer profiles with enhanced addresses using Microsoft's AI models to normalize, correct, and standardize address data.
+ms.date: 07/08/2026
+ms.reviewer: v-wendysmith
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -20,17 +20,17 @@ searchScope:
 
 Addresses in your data can be unstructured, incomplete, or incorrect. Use Microsoft's models to normalize and enrich your addresses into the [Common Data Model format](/common-data-model/schema/core/applicationcommon/address) for better accuracy and insights.
 
-You can also [enrich addresses on data sources](data-sources-enrichment.md) to improve the match accuracy in the data unification process. 
+You can also [enrich addresses on data sources](data-sources-enrichment.md) to improve the match accuracy in the data unification process.
 
-## How we enhance addresses
+## How Customer Insights - Data enhances addresses
 
-Our model goes through a two-step process to enhance an address. First, it parses the address to identify its components and puts them into a structured format. Then, we use AI to correct, complete, and standardize the values in the address.
+The model uses a two-step process to enhance an address. First, it parses the address to identify its components and puts them into a structured format. Then, it uses AI to correct, complete, and standardize the values in the address.
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=3ff1ab6f-d625-4cc3-a688-a8aa6b866e43]
 
 ### Example
 
-Address information might be in a nonstandard format and contain spelling errors. The model can fix these issues and create consistent addresses in unified customer profiles.
+Address information might be in a nonstandard format and contain spelling errors. The model can fix these problems and create consistent addresses in unified customer profiles.
 
 ```Input
 4567 w main stret californa missouri 54321 us
@@ -51,14 +51,14 @@ Address information might be in a nonstandard format and contain spelling errors
 Enhanced addresses only work with the values that already exist in your ingested address data. The model doesn't:
 
 1. Verify if the address is a valid address.
-2. Verify if any of the values, such as ZIP codes or street names, are valid.
-3. Change values it doesn't recognize.
+1. Verify if any of the values, such as ZIP codes or street names, are valid.
+1. Change values it doesn't recognize.
 
 The model uses machine learning-based techniques to enhance addresses. As with any machine learning-based model, 100 percent accuracy isn't guaranteed.
 
 ## Supported countries or regions
 
-We currently support enriching addresses in these countries or regions:
+The model currently supports enriching addresses in these countries or regions:
 
 - Australia
 - Canada
@@ -85,10 +85,10 @@ We currently support enriching addresses in these countries or regions:
 
 1. Select **Next** and map the address fields from your unified customer table.
 
-    :::image type="content" source="media/enhanced-address-mapping.png" alt-text="Enhanced address field-mapping page.":::
+    :::image type="content" source="media/enhanced-address-mapping.png" alt-text="Screenshot of the enhanced address field-mapping page.":::
 
    > [!NOTE]
-   > Country/Region is mandatory in both single-attribute and multiple-attribute addresses. Addresses that don't contain valid or supported country/region values won't be enriched.
+   > Country/Region is mandatory in both single-attribute and multiple-attribute addresses. Addresses that don't contain valid or supported country/region values aren't enriched.
 
 1. Select **Next** to complete the field mapping.
 
@@ -102,15 +102,15 @@ We currently support enriching addresses in these countries or regions:
 
 [!INCLUDE [enrichment-results](includes/enrichment-results.md)]
 
-The **Number of customers enriched by field** provides a drill-down into the coverage of each enriched field.
+The **Number of customers enriched by field** metric provides a detailed view of the coverage for each enriched field.
 
 ### Overview card
 
 The **Customers changes overview** card shows details about the coverage of the enrichment:
 
-- **Addresses processed and changed**: The number of customer profiles with addresses that were successfully enriched.
-- **Addresses processed and not changed**: The number of customer profiles with addresses that were recognized but not changed. It typically happens when the input data is valid and can't be improved by the enrichment.
-- **Addresses not processed and not changed**: The number of profiles with addresses that weren't recognized. Usually for input data that is invalid or not supported by the enrichment.
+- **Addresses processed and changed**: The number of customer profiles with addresses that the model successfully enriched.
+- **Addresses processed and not changed**: The number of customer profiles with addresses that the model recognized but didn't change. This status typically happens when the input data is valid and can't be improved by the enrichment.
+- **Addresses not processed and not changed**: The number of profiles with addresses that the model didn't recognize. This status usually applies to input data that is invalid or not supported by the enrichment.
 
 ## Next steps
 
