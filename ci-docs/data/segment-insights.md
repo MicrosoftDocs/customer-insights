@@ -1,11 +1,11 @@
 ---
-title: "Get insights on existing segments (preview)"
-description: "Get insights on existing segments to see differences and commonalities."
-ms.date: 03/20/2023
+title: Get insights on existing segments (preview)
+description: Get insights on existing segments to discover what differentiates two segments or what they share in common. Analyze overlaps and differentiators.
+ms.date: 07/08/2026
 ms.topic: how-to
-author: JimsonChalissery
+author: Scott-Stabbert
 ms.author: sstabbert
-ms.reviewer: mhart
+ms.reviewer: v-wendysmith
 ms.custom:
   - bap-template
   - sfi-image-nochange
@@ -15,7 +15,7 @@ ms.custom:
 
 [!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
-Discover additional information and insights around your existing segments. Find out what differentiates two segments or what they have in common.
+Discover additional information and insights about your existing segments. Find out what differentiates two segments or what they have in common.
 
 [!INCLUDE [public-preview-note](includes/public-preview-note.md)]
 
@@ -35,7 +35,7 @@ Segment differentiators help you find out what differentiates a segment from the
 
 1. Optionally, choose one or more fields of interest to focus the analysis on specific attributes and select **Next**.
 
-1. Provide a name for you differentiator analysis, an optional display name, and a description.
+1. Provide a name for your differentiator analysis, an optional display name, and a description.
 
 1. Select **Save** to start the analysis. The differentiator analysis is ready when the status changes from Refreshing to Successful.
 
@@ -79,7 +79,7 @@ You can also analyze how the overlap changes for specific attributes.
 
    - The number of members overlapping the segments selected for analysis.
    - The number of members included in one of the segments but not in the rest of the segments.
-   - If you selected fields while configuring the overlap analysis, you'll find them in the corresponding tabs. You can use the filter dropdown to select any attribute level of interest and the table at the bottom will show the corresponding data.
+   - If you selected fields while configuring the overlap analysis, you see them in the corresponding tabs. Use the filter dropdown to select any attribute level of interest and the table at the bottom shows the corresponding data.
 
 ## Manage segment insights
 

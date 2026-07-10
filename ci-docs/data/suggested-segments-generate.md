@@ -1,12 +1,12 @@
 ---
 title: Generate and manage suggested segments based on measures (preview)
-description: Use AI to suggest segments based on measures or customer attributes 
-author: JimsonChalissery
+description: Generate suggested segments in Customer Insights using AI to improve measures and metrics. Learn how to create and manage attribute-based segments.
+author: Scott-Stabbert
 ms.author: sstabbert
 ms.reviewer: v-wendysmith
 ms.service: customer-insights
 ms.topic: how-to
-ms.date: 03/20/2023
+ms.date: 07/08/2026
 ms.custom: bap-template
 ---
 
@@ -18,9 +18,9 @@ Find suggested segments based on measures or customer attributes. For more infor
 
 ## Generate suggested segments based on measures
 
-1. Go to **Segments** and select the **Suggestions (preview)** tab.
+1. Go to **Insights** > **Segments** and select the **Suggestions (preview)** tab.
 
-1. Select **Find new suggestions** and choose **Improve a measure/metric**. Select **Start**.
+1. Select **Find new suggestions** or **Get suggestions** and choose **Improve a measure/metric**. Select **Start**.
 
    :::image type="content" source="media/suggested-segments-measure.png" alt-text="Choosing improve measure on the suggested segments.":::
 
@@ -39,15 +39,15 @@ Go to **Segments** and select the **Suggestions (preview)** tab. In the **Attrib
 
 - **View** the suggested segment details and the attribute values or rules that the AI model learned.
 - **Save as segment** the suggestion as a segment. It displays on the **All segments** tab and can be [refreshed, edited, or deleted](segments.md).
-- **Edit attributes** and modify the configured attributes which will replace the current suggestions.
+- **Edit attributes** and modify the configured attributes which replace the current suggestions.
 - **Refresh suggestions** to refresh the suggestions while keeping configured attributes.
 
 ## Limitations
 
-1. Estimated segment size mismatch: If you choose a primary attribute that contains empty values, it can affect the estimated segment size in the segment suggestions. When saving such segment, the actual segment size can be different to the original estimation.
+1. Estimated segment size mismatch: If you choose a primary attribute that contains empty values, it can affect the estimated segment size in the segment suggestions. When you save such segment, the actual segment size can be different from the original estimation.
 
-2. Boolean type primary attributes don't work: Currently, we only support string and numeric types of data as the primary attribute.
+1. Boolean type primary attributes don't work: Currently, only string and numeric types of data are supported as the primary attribute.
 
-3. Suggested segments aren't distinct enough: Keep in mind that the selected attributes and the distribution of values of those attributes influences the results. You can change your influencing attributes or even your primary attribute to get different results.
+1. Suggested segments aren't distinct enough: Keep in mind that the selected attributes and the distribution of values of those attributes influence the results. You can change your influencing attributes or even your primary attribute to get different results.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
