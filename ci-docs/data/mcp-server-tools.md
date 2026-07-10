@@ -1,7 +1,7 @@
 ---
 title: Use tools in the Customer Insights MCP Server (preview)
 description: Discover how Customer Insights MCP server tools help agents unify customer profiles, retrieve segments and measures, and access predictive insights.
-ms.date: 07/07/2026
+ms.date: 07/09/2026
 ms.topic: how-to
 ms.service: customer-insights
 ms.collection: bap-ai-copilot
@@ -33,7 +33,11 @@ Quickly get key insights such as:
 
 ## Scenario
 
-Sally is a seller who is evaluating a lead named Joe who recently attended a webinar for a new product launch event. Sally doesn't know that Joe has several contact records and is a known contact with existing paid licenses for several products, elevating Joe from a simple lead to a VIP customer. Sally's team recently used Copilot Studio and the Customer Insights MCP server to create an insights agent that displays additional customer details from the unified profile and insights created by Customer Insights - Data. Because Customer Insights - Data unifies her company's purchase and rewards system with Dataverse customer data, Sally can see all the extended customer insights from their external systems data like rewards points and product keys Joe purchased. Sally can also see AI-generated insights such as the CLV score, churn risk, and the segments Joe is a member of. Armed with a wealth of customer data, Sally can engage her contacts more effectively than ever.
+Sally is a Contoso seller evaluating a new lead for Joe Carmichael who recently attended a product webinar. What Sally doesn't realize is that the lead is a duplicate for a known customer Joseph Carmichael who is an existing VIP customer. Shortly after the lead was created, Customer Insights - Data matched the lead and contact records, creating a unified customer profile joining Dynamics 365 and external contract data.
+
+Francis, a Contoso admin, used Copilot Studio and gave the Contoso Sales and Service chat agent access to the new Customer Insights MCP server. In just a couple of minutes, their chat agent was enhanced with unified customer insights connecting the Joe lead and the Joseph contact.
+
+Sally requests details about the Joe lead using a conversational prompt and in seconds, sees a unified customer view of the Joe lead's webinar interests along with details from Joseph's Dynamics 365 contact, the external contract data, and Joseph's AI-generated Customer Lifetime Value (CLV) score, churn risk, and the segments Joseph is a member of. Armed with solid understanding of the customer, Sally prioritizes and engages Joesph more effectively than if she had simply treated him as yet another unknown lead.
 
 ## Add the Customer Insights MCP Server to an agent
 

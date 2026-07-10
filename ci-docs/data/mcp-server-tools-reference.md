@@ -1,8 +1,9 @@
 ---
 title: Customer Insights MCP server tools reference (preview)
 description: Explore Customer Insights MCP server tools that let agents discover data sources, unify customer profiles, and retrieve segments, measures, and predictions.
-ms.date: 07/07/2026
+ms.date: 07/10/2026
 ms.topic: reference
+ms.collection: bap-ai-copilot
 author: Scott-Stabbert
 ms.author: sstabbert
 ms.reviewer: v-wendysmith
@@ -30,12 +31,12 @@ Most workflows follow a two-step pattern: **resolve a customer ID**, then **read
    - `msdynci_findcustomerbyname` — search by name
    - `msdynci_getcustomeridforcontact` — from a Dataverse Contact ID
    - `msdynci_getcustomerbysourceid` — from any ingested source record
-2. **Retrieve customer data** using the resolved ID:
+1. **Retrieve customer data** using the resolved ID:
    - `msdynci_getcustomerdetails` — full profile + provenance
    - `msdynci_getcustomersegments` — segment memberships
    - `msdynci_getcustomermeasures` — KPI/measure values
    - `msdynci_getpredictions` — AI/ML prediction scores
-   - `msdynci_getclusterinformation` — enrichment & cluster data
+   - `msdynci_getclusterinformation` — cluster data
 
 `msdynci_listsources` is a discovery helper for finding valid source entity names to use with `msdynci_getcustomerbysourceid`.
 
@@ -111,9 +112,9 @@ Includes prediction scores such as churn risk, customer lifetime value, product 
 
 #### `msdynci_getclusterinformation`
 
-Returns enrichment and cluster information for a given unified customer ID. Queries `msdynci_enrichment`.
+Returns information about cluster membership for a given unified customer ID. Queries `msdynci_customerprofile`.
 
-Includes cluster assignments from machine learning models, brand affinities, interest enrichments, and other enrichment data sources.
+Clusters are a post-unification rule that matches unified customer profiles that meet select conditions. For example, a household is a common cluster of people that share a common last name and address. If the target unified customer ID is a member of a cluster, the other members of the cluster are returned.
 
 ### Customer Insights - Journeys (marketing)
 
@@ -137,7 +138,7 @@ Gets the unsubscribe link for the specified parameters.
 ### Enrich a known Dataverse contact
 
 1. `msdynci_getcustomeridforcontact`: resolve the Contact ID to a unified customer ID.
-1. `msdynci_getpredictions` + `msdynci_getclusterinformation`: receive churn and customer lifetime value (CLV) scores and enrichments.
+1. `msdynci_getpredictions` + `msdynci_getclusterinformation`: receive churn and customer lifetime value (CLV) scores and cluster membership.
 
 ### Resolve an arbitrary source record
 
