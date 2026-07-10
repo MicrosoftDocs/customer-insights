@@ -1,11 +1,12 @@
 ---
-title: "Create business account or contact segments with segment builder"
-description: "Use segment builder to create complex segments of account or contact by grouping them based on various attributes."
-ms.date: 09/01/2023
-ms.topic: how-to
-author: JimsonChalissery
+title: Create business account or contact segments with segment builder
+description: Use segment builder to create complex segments of account or contact by grouping them based on various attributes.
+ms.date: 07/10/2026
+author: Scott-Stabbert
 ms.author: sstabbert
 ms.reviewer: v-wendysmith
+ms.topic: how-to
+ms.update-cycle: 1095-days
 ms.custom: bap-template
 ---
 
@@ -23,9 +24,9 @@ For an illustration of the key aspects of segment builder, see [Segment builder 
 
 1. Go to **Segments**.
 
-1. Select **New** > **Segment of Accounts** or **Segment of Contacts (preview)** based on the type of segment you want to create. On the segment builder page, you define or compose rules. A rule consists of one or more conditions that define a set of customers.
+1. Select **New** > **Segment of Accounts** or **Segment of Contacts (preview)** based on the type of segment you want to create. On the segment builder page, define or compose rules. A rule consists of one or more conditions that define a set of customers.
 
-1. If an [account hierarchy](account-hierarchies.md) has been defined and you want to create rules to filter out data based on child and parent relationship, select **Use hierarchy? (preview)**, select the hierarchy, and then **Apply**.
+1. If you define an [account hierarchy](account-hierarchies.md) and want to create rules to filter data based on child and parent relationship, select **Use hierarchy? (preview)**, select the hierarchy, and then **Apply**.
 
    :::image type="content" source="media/segment_acct_hierarchy.png" alt-text="Segment select account hierarchy pane.":::
 
@@ -60,7 +61,7 @@ For an illustration of the key aspects of segment builder, see [Segment builder 
       - **Intersect** overlaps the two groups. Only data that *is common* to both groups remains in the unified group.
       - **Except** combines the two groups. Only data in group A that *is not common* to data in group B is kept.
 
-1. By default, the output table will automatically contain all attributes of customer profiles that match the defined filters. When using the *UnifiedContact* table, the Account ID is automatically included. If a segment is based on other tables than the *Customer* table or to include more attributes from the *UnifiedContact*, select **Project attributes** to add more attributes from these tables to the output table.
+1. By default, the output table automatically contains all attributes of customer profiles that match the defined filters. When using the *UnifiedContact* table, the Account ID is automatically included. If a segment is based on other tables than the *Customer* table or to include more attributes from the *UnifiedContact*, select **Project attributes** to add more attributes from these tables to the output table.
 
    A sample output for a segment based on business accounts with projected attributes of contacts could look like this:
 
@@ -80,6 +81,6 @@ For an illustration of the key aspects of segment builder, see [Segment builder 
 1. To create the segment, select **Run**.
 
    > [!TIP]
-   > When viewing segments on the **Segments** page, the **Audience Type** column identifies whether a segment is based on accounts or contacts.
+   > When you view segments on the **Segments** page, the **Audience Type** column shows whether a segment is based on accounts or contacts.
 
 [!INCLUDE [footer-include](../includes/footer-banner.md)]

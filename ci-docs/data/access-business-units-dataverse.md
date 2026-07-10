@@ -1,12 +1,11 @@
 ---
 title: Data and security roles in Dataverse (preview)
-description: Use business units in Dataverse applications to separate data and leverage the Dataverse security model for Customer Insights - Data.
-ms.date: 09/01/2023
-ms.reviewer: mhart
-ms.service: customer-insights
-ms.topic: article
-author: jodahl
-ms.author: jodahl
+description: Data and security roles in Dataverse let you separate data using business units and apply the Dataverse security model in Customer Insights - Data.
+ms.date: 07/10/2026
+ms.reviewer: v-wendysmith
+ms.topic: concept-article
+author: Scott-Stabbert
+ms.author: sstabbert
 ms.custom: bap-template
 ---
 
@@ -20,7 +19,7 @@ Dynamics 365 Customer Insights - Data uses the [security model of Microsoft Data
 
 ## Dataverse security roles
 
-To access any data from Customer Insights - Data in Dataverse, a user needs to have the *Customer Insights Data Read Access* and *Customer Insights Data Configuration Viewer* security roles in Dataverse. You can't modify these roles. If different access is needed, for example, access to all profiles irrespectively of business unit, create a custom security role and assign it.
+To access any data from Customer Insights - Data in Dataverse, a user needs to have the *Customer Insights Data Read Access* and *Customer Insights Data Configuration Viewer* security roles in Dataverse. You can't modify these roles. If different access is needed, such as access to all profiles regardless of business unit, create a custom security role and assign it.
 
 [Learn more about Dataverse security roles.](/power-platform/admin/database-security)
 
