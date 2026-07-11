@@ -1,16 +1,17 @@
 ---
-title: "Use Azure Machine Learning-based models"
-description: "Use Azure Machine Learning-based models in Dynamics 365 Customer Insights - Data."
-ms.date: 09/01/2023
+title: Use Azure Machine Learning-based models
+description: Learn how to integrate Azure Machine Learning-based models with Customer Insights - Data. Set up workspaces, batch pipelines, and datasets to unlock deeper insights.
+ms.date: 07/10/2026
 ms.topic: tutorial
-author: naravill
-ms.author: naravill
-ms.reviewer: mhart
+ms.collection: bap-ai-copilot
+author: Scott-Stabbert
+ms.author: sstabbert
+ms.reviewer: v-wendysmith
 ---
 
 # Use Azure Machine Learning-based models
 
-The unified data in Dynamics 365 Customer Insights- Data is a source for building machine learning models that can generate additional business insights. Customer Insights - Data integrates with Azure Machine Learning to use your own custom models.
+The unified data in Dynamics 365 Customer Insights - Data is a source for building machine learning models that can generate additional business insights. Customer Insights - Data integrates with Azure Machine Learning to use your own custom models.
 
 ## Prerequisites
 
@@ -21,23 +22,23 @@ The unified data in Dynamics 365 Customer Insights- Data is a source for buildin
 
 ## Set up Azure Machine Learning workspace
 
-1. See [create a Azure Machine Learning workspace](/azure/machine-learning/concept-workspace#-create-a-workspace) for different options to create the workspace. For best performance, create the workspace in an Azure region that is geographically closest to your Customer Insights environment.
+1. See [create an Azure Machine Learning workspace](/azure/machine-learning/concept-workspace#-create-a-workspace) for different options to create the workspace. For best performance, create the workspace in an Azure region that is geographically closest to your Customer Insights environment.
 
 1. Access your workspace through the [Azure Machine Learning Studio](https://ml.azure.com/). There are several [ways to interact](/azure/machine-learning/concept-workspace#tools-for-workspace-interaction) with your workspace.
 
 ## Work with Azure Machine Learning designer
 
-Azure Machine Learning designer provides a visual canvas where you can drag and drop datasets and modules. A batch pipeline created from the designer can be integrated into Customer Insights - Data if they are configured accordingly.
+Azure Machine Learning designer provides a visual canvas where you can drag and drop datasets and modules. You can integrate a batch pipeline created from the designer into Customer Insights - Data if you configure it accordingly.
 
 ## Working with Azure Machine Learning SDK
 
-Data scientists and AI developers use the [Azure Machine Learning SDK](/python/api/overview/azure/ml/?preserve-view=true&view=azure-ml-py) to build machine learning workflows. Currently, models trained using the SDK can't be integrated directly. A batch inference pipeline that consumes that model is required for integration with Customer Insights - Data.
+Data scientists and AI developers use the [Azure Machine Learning SDK](/python/api/overview/azure/ml/?preserve-view=true&view=azure-ml-py) to build machine learning workflows. Currently, you can't integrate models trained by using the SDK directly. You need a batch inference pipeline that consumes that model for integration with Customer Insights - Data.
 
 ## Batch pipeline requirements to integrate with Customer Insights - Data
 
 ### Dataset configuration
 
-Create datasets to use table data from Customer Insights for your batch inference pipeline. Register these datasets in the workspace. Currently, we only support [tabular datasets](/azure/machine-learning/how-to-create-register-datasets#tabulardataset) in .csv format. Parameterize the datasets that correspond to table data as a pipeline parameter.
+Create datasets to use table data from Customer Insights for your batch inference pipeline. Register these datasets in the workspace. Currently, only [tabular datasets](/azure/machine-learning/how-to-create-register-datasets#tabulardataset) in .csv format are supported. Parameterize the datasets that correspond to table data as a pipeline parameter.
 
 - Dataset parameters in Designer
 
@@ -67,11 +68,11 @@ Create datasets to use table data from Customer Insights for your batch inferenc
 
 ### Import pipeline data
 
-- The designer provides the [Export Data module](/azure/machine-learning/algorithm-module-reference/export-data) that allows the output of a pipeline to be exported to Azure storage. Currently, the module must use the datastore type **Azure Blob Storage** and parameterize the **Datastore** and relative **Path**. The system overrides both these parameters during pipeline execution with a datastore and path that is accessible to the application.
+- The designer provides the [Export Data module](/azure/machine-learning/algorithm-module-reference/export-data) that you can use to export the output of a pipeline to Azure storage. Currently, the module must use the datastore type **Azure Blob Storage** and parameterize the **Datastore** and relative **Path**. The system overrides both these parameters during pipeline execution with a datastore and path that the application can access.
 
   :::image type="content" source="media/intelligence-designer-importdata.png" alt-text="Export Data Module Configuration.":::
 
-- When writing the inference output using code, upload the output to a path within a *registered datastore* in the workspace. If the path and datastore are parameterized in the pipeline, Customer Insights can read and import the inference output. Currently, a single tabular output in csv format is supported. The path must include the directory and filename.
+- When you write the inference output by using code, upload the output to a path within a *registered datastore* in the workspace. If you parameterize the path and datastore in the pipeline, Customer Insights can read and import the inference output. Currently, a single tabular output in .csv format is supported. The path must include the directory and filename.
 
    ```python
    # In Pipeline setup script
