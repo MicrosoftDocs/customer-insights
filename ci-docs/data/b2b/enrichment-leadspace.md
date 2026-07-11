@@ -1,11 +1,12 @@
 ---
-title: "Enrich company profiles with Leadspace (preview)"
-description: "General information about the Leadspace third-party enrichment."
-ms.date: 09/01/2023
-ms.reviewer: mhart
+title: Enrich company profiles with Leadspace (preview)
+description: Enrich company profiles with Leadspace in Customer Insights to add attributes like company size, location, and industry.
+ms.date: 07/10/2026
+author: Scott-Stabbert
+ms.author: sstabbert
+ms.reviewer: v-wendysmith
 ms.topic: how-to
-author: jodahlMSFT
-ms.author: jodahl
+ms.update-cycle: 1095-days
 ms.custom: bap-template
 ---
 
@@ -31,7 +32,7 @@ You must be an [administrator](../user-roles.md#admin) in Customer Insights - Da
 
 1. Select **Add connection** when configuring an enrichment or go to **Settings** > **Connections** and select **Set up** on the Leadspace tile.
 
-   :::image type="content" source="media/enrichment-Leadspace-connection.png" alt-text="Leadspace connection configuration page.":::
+   :::image type="content" source="media/enrichment-Leadspace-connection.png" alt-text="Screenshot of the Leadspace connection configuration page.":::
 
 1. Enter a name for the connection and a valid Leadspace token.
 
@@ -55,19 +56,19 @@ You must be an [administrator](../user-roles.md#admin) in Customer Insights - Da
 
 1. Select the **Customer data set**  and choose the profile or segment you want to enrich with company data from Leadspace. The *Customer* table enriches all your customer profiles whereas a segment enriches only customer profiles contained in that segment.
 
-    :::image type="content" source="media/enrichment-Leadspace-configuration-customer-data-set.png" alt-text="Screenshot when choosing the customer data set.":::
+    :::image type="content" source="media/enrichment-Leadspace-configuration-customer-data-set.png" alt-text="Screenshot of choosing the customer data set.":::
 
 1. Define which type of fields from your unified profiles to use for matching: the primary and/or secondary address. You can specify a field mapping for both addresses and enrich the profiles for both addresses separately. For example, for a home address and a business address. Select **Next**.
 
 1. Map your fields to the company data from Leadspace. The **Name of company** field is required. For a higher match accuracy, up to two other fields, **Company website** and **Company location**, can be added.
 
-   :::image type="content" source="media/enrichment-leadspace-mapping.png" alt-text="Leadspace field-mapping pane.":::
+   :::image type="content" source="media/enrichment-leadspace-mapping.png" alt-text="Screenshot of the Leadspace field-mapping pane.":::
 
 1. Select **Next** to complete the field mapping.
 
 1. Select the checkbox if you have *Contact profiles* that you would like to enrich. The system automatically maps the required fields.
 
-   :::image type="content" source="media/enrichment-leadspace-contacts.png" alt-text="Leadspace contact records enrichment.":::
+   :::image type="content" source="media/enrichment-leadspace-contacts.png" alt-text="Screenshot of the Leadspace contact records enrichment.":::
 
 1. Select **Next**.
 

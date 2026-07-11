@@ -1,11 +1,12 @@
 ---
-title: "Create a unified business contact profile"
-description: "Learn how to use the data unification process to create a profile of your business contacts that combines data from multiple sources."
-ms.date: 11/28/2023
+title: Create a unified business contact profile
+description: Learn how to unify business contacts in Customer Insights - Data by mapping sources, matching records, and linking contacts to accounts.
+ms.date: 07/10/2026
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
 ms.reviewer: v-wendysmith
+ms.update-cycle: 1095-days
 ms.custom: bap-template
 ---
 
@@ -13,16 +14,16 @@ ms.custom: bap-template
 
 [!INCLUDE [b2b-note](../includes/b2b-note.md)]
 
-Contact unification allows contacts for unified accounts to be separately unified and associated with the accounts. Contact unification also allows contacts without an account to be included in the unified contact profile.
+Contact unification enables you to unify contacts for accounts separately and associate them with the accounts. Contact unification also enables you to include contacts without an account in the unified contact profile.
 
-The contact unification process maps contact data from multiple sources, removes duplicates, matches the data across tables, creates relationships between contacts and accounts, and then creates a unified contact profile. The system supports a one-to-many account to contact relationship. The account relationship for contacts is optional, allowing you to work with commercial contacts where the account is unknown.
+The contact unification process maps contact data from multiple sources, removes duplicates, matches the data across tables, creates relationships between contacts and accounts, and then creates a unified contact profile. The system supports a one-to-many account-to-contact relationship. The account relationship for contacts is optional, so you can work with commercial contacts where the account is unknown.
 
 [!INCLUDE [m3-first-run-note](../includes/m3-first-run-note.md)]
 
 The first few steps to unify contacts are the same as the steps to [unify accounts](data-unification-b2b.md).
 
 > [!TIP]
-> The terms *field* and *column* are used interchangeably in this article to refer to data in a table row, or record.
+> This article uses the terms *field* and *column* interchangeably to refer to data in a table row or record.
 
 ## Prerequisites
 
@@ -84,13 +85,13 @@ Review the summary of changes, create the unified profile, and review the result
 
 ### Review and create contact profiles
 
-This last step in the unification process shows a summary of the steps in the process and provides a chance to make changes before you create the unified contact profile.
+This final step in the unification process shows a summary of the steps in the process and provides a chance to make changes before you create the unified contact profile.
 
 :::image type="content" source="media/b2b_review_contacts.svg" alt-text="Screenshot of Review and create contact profiles.":::
 
-1. Select **Edit** on any of the contact unification steps to review and make any changes.
+1. Select **Edit** on any of the contact unification steps to review and make changes.
 
-1. If you are satisfied with your selections, select **Create contact profiles**. The **Unify** page displays while the unified contact profile is being created. If the message "Object reference not set to an instance of an object" appears, there are references to columns that were deleted or renamed before saving the conflation plans. Update the tables and rerun contact unification.
+1. If you're satisfied with your selections, select **Create contact profiles**. The **Unify** page displays while the unified contact profile is being created. If the message "Object reference not set to an instance of an object" appears, there are references to columns that you deleted or renamed before saving the conflation plans. Update the tables and rerun contact unification.
   
    :::image type="content" source="media/b2b_unify_refreshing.svg" alt-text="Screenshot of Unify Contacts page with tiles showing Queued or Refreshing.":::
 
@@ -104,7 +105,7 @@ After unification completes, the **Data** > **Unify** page shows the number of u
 
 :::image type="content" source="media/b2b-unified-contacts.svg" alt-text="Screenshot of the Data Unify page after contacts are unified.":::
 
-We recommend that you review the results, particularly the quality of your [match rules](../data-unification-update.md#manage-match-rules) and refine them if necessary. If needed, [make changes to the contact unification settings](../data-unification-update.md) and rerun the unified profile.
+Review the results, particularly the quality of your [match rules](../data-unification-update.md#manage-match-rules), and refine them if necessary. If needed, [make changes to the contact unification settings](../data-unification-update.md) and rerun the unified profile.
 
 ### Verify output tables from data unification
 
@@ -114,9 +115,9 @@ The unified contact profile table, called *UnifiedContact*, appears in the **Pro
 
 Key columns in the *UnifiedContact* table include:
 
-- **UnifiedContactId**: Uniquely identifies the unified profile. Assigned by the system.
+- **UnifiedContactId**: Uniquely identifies the unified profile. The system assigns this value.
 
-- **FK_ContactToAccountId**: The primary key from a data source, this value is used to look up he unified account’s unique CustomerID. It's the winner value that results from merging the account foreign keys for the contact.
+- **FK_ContactToAccountId**: The primary key from a data source. Use this value to look up the unified account’s unique CustomerID. It's the winner value that results from merging the account foreign keys for the contact.
 
 - **FK_CustomerId**: Uniquely identifies the contact’s unified accounts. This value is a foreign key reference to the 'Customer' table’s 'CustomerID' column. If it's null, the contact doesn't have an account.
 
@@ -129,9 +130,9 @@ Deduplication and conflation tables are created and appear in the **System** sec
 A deduplication output table contains the following information:
 - IDs / Keys
 
-  - Primary key and Alternate ID columns, which consist of all the alternate IDs identified for a record.
+  - Primary key and alternate ID columns, which consist of all the alternate IDs identified for a record.
 
-  - Deduplication_GroupId column shows the group or cluster that's identified in a table and groups similar records based on the specified deduplication columns. It's used for system processing purposes. If there are no manual deduplication rules specified and system defined deduplication rules apply, you may not find this field in the deduplication output table.
+  - Deduplication_GroupId column shows the group or cluster that's identified in a table and groups similar records based on the specified deduplication columns. It's used for system processing purposes. If there are no manual deduplication rules specified and system defined deduplication rules apply, you might not find this field in the deduplication output table.
 
   - Deduplication_WinnerId column contains the winner ID from the identified groups or clusters. If the Deduplication_WinnerId is same as the primary key value for a record, it means that the record is the winner record.
 
