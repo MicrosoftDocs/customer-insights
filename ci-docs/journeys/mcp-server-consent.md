@@ -1,7 +1,8 @@
 ---
 title: Use consent tools in the Customer Insights MCP Server (preview)
-description: Customer Insights MCP Server tools help AI agents verify consent and create unsubscribe links in real time. Learn how to send privacy-compliant messages.
-ms.date: 07/08/2026
+description: Customer Insights MCP Server consent tools explain consent checks, unsubscribe links, security, prerequisites, and limitations for AI agents.
+ms.date: 07/09/2026
+ms.update-cycle: 180-days
 ms.topic: concept-article
 ms.collection: bap-ai-copilot
 author: PetrJantac
@@ -30,7 +31,7 @@ Using consent through MCP gives you:
 
 ## Who should use these tools
 
-The consent MCP tools are designed for customers building agentic scenarios that require:
+The consent MCP tools are designed for customers building AI agent scenarios that require:
 
 - Compliant outbound communication (email, SMS, custom channels)
 - Real-time consent checks before sending messages
@@ -139,13 +140,13 @@ The server follows a layered architecture:
 
 The MCP server definition lives in the base solution (CxpClient), which ships to every Dynamics 365 organization. Consent tools are added through the Consent solution as an extension. The same layered model is used for future tool providers from Customer Insights - Data and Customer Insights - Journeys.
 
-### Security
+### MCP server security layers
 
 The MCP server enforces security at multiple layers:
 
 | Layer | Description |
 |---|---|
-| **Transport security (mTLS)** | Certificate-based authentication between Copilot Studio and Dataverse |
+| **Transport security (mTLS)** | Mutual Transport Layer Security (mTLS) certificate-based authentication between Copilot Studio and Dataverse |
 | **Custom API privileges** | The platform validates user privileges before allowing tool discovery or execution |
 | **Tool-level authorization** | Each tool checks entity-specific privileges (for example, read access to consent purposes) |
 | **Data-level security** | Row-level security ensures users access only data they're authorized to see |
@@ -172,6 +173,6 @@ Keep these limitations in mind:
 ## Next steps
 
 - [Consent management overview](real-time-marketing-compliance-settings.md): Learn how consent works in Customer Insights - Journeys.
-- [Model Context Protocol specification](https://modelcontextprotocol.io): Learn more about the MCP open standard.
+- [Model Context Protocol specification](https://modelcontextprotocol.io): Review the MCP open standard.
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]

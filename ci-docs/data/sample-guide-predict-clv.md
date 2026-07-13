@@ -1,7 +1,7 @@
 ---
 title: Customer lifetime value (CLV) prediction sample guide
 description: Use this sample guide to try out the customer lifetime value prediction model.
-ms.date: 12/08/2025
+ms.date: 07/09/2026
 ms.update-cycle: 180-days
 ms.reviewer: v-wendysmith
 ms.topic: article

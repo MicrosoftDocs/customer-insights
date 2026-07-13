@@ -1,7 +1,8 @@
 ---
 title: Outreach Optimization Agent in Customer Insights - Journeys (preview)
-description: Outreach Optimization Agent in Dynamics 365 Customer Insights – Journeys uses AI to send marketing emails at peak engagement times. Learn how to set it up.
-ms.date: 06/19/2026
+description: Outreach Optimization Agent in Dynamics 365 Customer Insights - Journeys helps schedule marketing emails at high-engagement times in journeys.
+ms.date: 07/09/2026
+ms.update-cycle: 180-days
 ms.topic: how-to
 ms.collection: bap-ai-copilot
 author: Joni-M
@@ -13,7 +14,7 @@ ms.reviewer: alfergus
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-Outreach Optimization Agent is an AI-powered journey step in Dynamics 365 Customer Insights – Journeys that optimizes *when* your marketing emails are sent. Determining the best time to reach your audience is difficult to do manually at scale. The agent addresses this by analyzing historical engagement data and automatically selecting high-engagement send times for your emails.
+Outreach Optimization Agent is an AI-powered journey step in Dynamics 365 Customer Insights - Journeys that optimizes when your marketing emails are sent. Determining the best time to reach your audience is difficult to do manually at scale, so the agent analyzes historical engagement data and automatically selects high-engagement send times for your emails.
 
 The agent uses aggregated historical interaction patterns to calculate a baseline best send time. You add Outreach Optimization Agent to a customer journey like any other step, and the agent handles scheduling from there.
 
@@ -29,16 +30,16 @@ The agent uses aggregated historical interaction patterns to calculate a baselin
 
 ## Key benefits
 
-- **Maximize engagement without manual effort**: Automatically sends emails at the times your audience is most likely to open and interact, eliminating the need to manually analyze send-time performance.
-- **Turn historical data into immediate value**: Uses your organization’s aggregated engagement patterns to continuously inform better send-time decisions—no complex setup or data science expertise required.
-- **Scale personalization across every journey**: Optimizes timing across single emails and multi-email sequences, ensuring each communication is delivered when it has the highest chance of impact.
-- **Accelerate time-to-value for new deployments**: Provides intelligent fallback scheduling when historical data is limited, so you can start optimizing from day one.
-- **Stay compliant by design**: Automatically respects quiet-time policies and customer consent preferences, ensuring all communications align with organizational and regulatory requirements.
-- **Reduce operational complexity**: Removes guesswork and ongoing optimization overhead from campaign execution, allowing teams to focus on content and strategy instead of scheduling.
+- **Automatically find high-engagement send times**: Uses your organization's aggregated engagement patterns to schedule emails when recipients are more likely to open or click them.
+- **Use historical data without manual analysis**: Applies historical interaction patterns to send-time decisions without requiring you to review past performance for each journey.
+- **Optimize timing across email sequences**: Schedules single emails and multi-email sequences at the best available times for each send.
+- **Continue working when data is limited**: Uses a fallback scheduling strategy when historical engagement data is limited or unavailable.
+- **Respect quiet times and consent settings**: Applies quiet-time policies and honors contact point consent preferences for email addresses.
+- **Reduce manual scheduling work**: Removes routine send-time guesswork so teams can focus on message content and journey design.
 
 ## Prerequisites
 
-To be able to use Outreach Optimization Agent in journeys, you have to:
+To use Outreach Optimization Agent in journeys, you need to:
 
 - Enable Outreach Optimization Agent in the [AI Hub](ai-hub.md).
 
@@ -63,7 +64,7 @@ Select one email. The agent calculates the best send time and delivers the email
 
 #### Multiple emails
 
-Select two or more emails. The agent schedules each email at its own optimal send time, spacing them out based on the engagement data. When configuring multiple emails, you must select a goal that defines the desired outcome of the sequence (see the section below for available options).
+Select two or more emails. The agent schedules each email at its own optimal send time, spacing them out based on the engagement data. When configuring multiple emails, select a goal that defines the desired outcome of the sequence (see the section below for available options).
 
 The agent sends the first email at the best available time, then sends each subsequent email at the next optimal time. Throughout the sequence, the agent tracks whether the goal condition has been satisfied.
 

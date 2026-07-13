@@ -1,7 +1,8 @@
 ---
 title: Manage prerequisites in AI Hub (preview)
-description: Manage AI Hub prerequisites in Customer Insights – Journeys to enable AI agents. Learn how to review and accept required settings in Power Platform Admin Center.
-ms.date: 05/07/2026
+description: AI Hub prerequisites in Customer Insights – Journeys define the required settings for AI agents. Learn how to review and accept each setting in Power Platform Admin Center.
+ms.date: 07/09/2026
+ms.update-cycle: 180-days
 ms.topic: how-to
 ms.collection: bap-ai-copilot
 author: terezakirk
@@ -15,7 +16,7 @@ search.audienceType:
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]  
 
-Before you can use AI agents in Customer Insights – Journeys, administrators must review and accept a set of mandatory prerequisites. These prerequisites ensure that AI capabilities are enabled in a controlled and compliant manner, aligned with organizational policies for capacity, data handling, and AI usage.
+Before you can use AI agents in Customer Insights – Journeys, administrators need to review and accept a set of required AI Hub prerequisites. These prerequisites make sure AI capabilities are enabled in a controlled and compliant way that aligns with organizational policies for capacity, data handling, and AI usage.
 
 Prerequisites are managed at the tenant level through the Power Platform Admin Center and are surfaced in AI Hub for review and acceptance. Until all required prerequisites are accepted, AI agents remain unavailable for configuration or use.
 
@@ -36,12 +37,12 @@ AI capabilities in Dynamics 365 Customer Insights – Journeys support two billi
 - **Prepaid capacity**: Uses Copilot Studio message pack subscriptions, which are a licensing option for Microsoft Copilot Studio that you purchase in advance.
 - **Pay-as-you-go**: Charges for the actual number of messages consumed by agents during the month.
 
-Learn more: [Copilot licensing](/microsoft-copilot-studio/billing-licensing).
+For more information about licensing, see [Copilot licensing](/microsoft-copilot-studio/billing-licensing).
 
 #### Set up Microsoft Copilot Studio capacity
 
-Before using AI agents, administrators must ensure that sufficient Copilot Studio capacity is allocated to the environment.
-Capacity allocation is managed in the Power Platform Admin Center. Learn more: [Manage capacity](/power-platform/admin/manage-copilot-studio-messages-capacity#manage-capacity).
+Before using AI agents, administrators need to make sure enough Copilot Studio capacity is allocated to the environment.
+Capacity allocation is managed in the Power Platform Admin Center. For more information, see [Manage capacity](/power-platform/admin/manage-copilot-studio-messages-capacity#manage-capacity).
 
 Steps to allocate capacity:
 
@@ -58,13 +59,13 @@ Steps to allocate capacity:
 
 ### 2. Move data across regions
 
-The AI agents in Dynamics 365 Customer Insights - Journeys use the same data processing and storage infrastructure as other Copilot features in Power Platform. This behavior means that the data that the agents use might be processed and stored in regions outside of the user's primary region, depending on the availability of services and infrastructure.
+The AI agents in Dynamics 365 Customer Insights - Journeys use the same data processing and storage infrastructure as other Copilot features in Power Platform. This means agent data might be processed and stored in regions outside the user's primary region, depending on service and infrastructure availability.
 
 For more information about data residency and movement for Copilot features, see [Move data across regions for Copilots and generative AI features](/power-platform/admin/geographical-availability-copilot).
 
 #### Enable move data across regions
 
-To use AI agents that require cross-region processing, administrators must enable the **Move data across regions** prerequisite in Power Platform Admin Center. Learn more: [Turn on data movement, Bing search, Microsoft 365 services, and flex routing](/power-platform/admin/geographical-availability-copilot?tabs=new#turn-on-data-movement-bing-search-microsoft-365-services-and-flex-routing).
+To use AI agents that require cross-region processing, administrators need to enable the **Move data across regions** prerequisite in Power Platform Admin Center. For more information, see [Turn on data movement, Bing search, Microsoft 365 services, and flex routing](/power-platform/admin/geographical-availability-copilot?tabs=new#turn-on-data-movement-bing-search-microsoft-365-services-and-flex-routing).
 
 Steps to enable moving data across regions:
 
@@ -79,13 +80,13 @@ Steps to enable moving data across regions:
 
 ### 3. AI prompts
 
-This prerequisite governs how AI-generated prompts and inputs are processed. AI agents use prompts to interpret user intent and generate outputs. An AI prompt is a natural language instruction using a large language model (LLM) that allows you to perform tasks and helps you meet specific business needs. Learn more: [Enable or disable AI prompts in Power Platform and Copilot Studio](/ai-builder/administer#enable-or-disable-ai-prompts-in-power-platform-and-copilot-studio).
+This prerequisite governs how AI-generated prompts and inputs are processed. AI agents use prompts to interpret user intent and generate outputs. An AI prompt is a natural language instruction for a large language model (LLM) that helps users perform tasks and meet specific business needs. For more information, see [Enable or disable AI prompts in Power Platform and Copilot Studio](/ai-builder/administer#enable-or-disable-ai-prompts-in-power-platform-and-copilot-studio).
 
 #### Enable AI prompts
 
 Steps to enable AI prompts:
 
-1. Sign into the **Power Platform admin center**.
+1. Sign in to the **Power Platform Admin Center**.
 1. In the admin center, select **Environments** > [*select an environment*] > **Settings** > **Product** > **Features**.
 1. On the **Features** settings page under **AI Builder**, enable the **AI prompts** toggle.
 

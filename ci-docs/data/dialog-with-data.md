@@ -1,7 +1,7 @@
 ---
 title: Have a dialog with data using Copilot in Customer Insights - Data
 description: Copilot in Customer Insights - Data lets you ask natural-language questions to uncover customer insights fast. Discover how to explore your data with AI today.
-ms.date: 06/17/2026
+ms.date: 07/09/2026
 ms.update-cycle: 180-days
 ms.topic: how-to
 author: radsay01

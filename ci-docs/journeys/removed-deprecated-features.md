@@ -31,7 +31,7 @@ This list is intended to help you consider these removals and deprecations for y
 | &nbsp;  | &nbsp;  |
 |---|---|
 | **Reason for deprecation/removal** | Features in public preview are continuously being evaluated based on the balance between customer value and cost of maintaining the service.  |
-| **Replaced by another feature?**   | No. You can use the existing themes feature to style [emails](email-design.md), [forms](real-time-marketing-manage-forms.md#style-your-forms-using-theme) and [brand profiles](brand-profiles.md#define-theme).|
+| **Replaced by another feature?**   | No. You can use the existing themes feature to style [emails](email-design.md), [forms](real-time-marketing-manage-forms.md#style-your-forms-using-theme) and [brand profiles](brand-profiles.md#define-a-brand-profile-theme).|
 | **Product areas affected**         | Email, forms, brand profiles|
 | **Status**                         | Removed as of May 2025 |
 

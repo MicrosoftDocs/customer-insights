@@ -1,7 +1,7 @@
 ---
 title: Product recommendation prediction sample guide
 description: Use this sample guide to try out the out of box product recommendation prediction model.
-ms.date: 12/08/2025
+ms.date: 07/09/2026
 ms.update-cycle: 180-days
 ms.reviewer: alfergus
 ms.topic: article

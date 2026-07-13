@@ -1,7 +1,7 @@
 ---
 title: 'Copilot - Refresh and perfect your message (preview)'
-description: Use the content rewrite copilot to rephrase messages, adjust tone, and optimize your content in Dynamics 365 Customer Insights - Journeys.
-ms.date: 06/05/2026
+description: Content rewrite Copilot in Dynamics 365 Customer Insights - Journeys rephrases email, form, SMS, and push notification text. Learn how to enable it and refine content.
+ms.date: 07/09/2026
 ms.update-cycle: 180-days
 ms.topic: how-to
 author: alfergus
@@ -18,7 +18,7 @@ ms.custom:
 
 [!INCLUDE [Preview banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-This article is an overview of the content rewrite copilot feature. It explains how to use content rewrite to refine your email, forms, and message content.
+Content rewrite Copilot is an AI-assisted editing feature in Dynamics 365 Customer Insights - Journeys. It helps you rephrase, shorten, lengthen, and adjust the tone of email, form, text message, and push notification content.
 
 > [!NOTE]
 > Editing text with the content rewrite copilot is available for the following types of content:
@@ -28,7 +28,7 @@ This article is an overview of the content rewrite copilot feature. It explains 
 > - Push notifications
 
 > [!NOTE]
-> The content rewrite Copilot is currently available in the United States only in English.
+> The content rewrite copilot is currently available only in English in the United States.
 
 > [!Tip]
 > Learn about using the content ideas copilot to create inspiring email copy: [Make email creation fun and more efficient with AI-powered content ideas in Dynamics 365 Customer Insights - Journeys](https://cloudblogs.microsoft.com/dynamics365/it/2022/11/30/engage-your-customers-faster-with-ai-powered-marketing-email-content/)
@@ -44,10 +44,10 @@ Select any text and use the content rewrite copilot to:
 - Change tone of voice to be more engaging, formal, casual, luxurious, or adventurous  
 - Shorten or lengthen copy
 
-## Enable Copilot
+## Enable the content rewrite copilot
 
 > [!NOTE]
-> The content rewrite copilot together with all other Copilot features is now enabled by default and is visible in the email, push notification, SMS, and form editors in the United States.
+> The content rewrite copilot and other Copilot features are enabled by default and visible in the email, push notification, SMS, and form editors in the United States.
 
 To turn on or off the content rewrite copilot feature switch:
 1. Go to **Settings** > **Overview** > **Feature switches**.
@@ -55,10 +55,9 @@ To turn on or off the content rewrite copilot feature switch:
 
 ## How to use Copilot to refresh or perfect your content
 
-> [!div class="mx-imgBorder"]
-> ![Copilot screenshot with tone selection](media/tone-selection-for-copilot.png "Copilot screenshot with tone selection")
+:::image type="content" source="media/tone-selection-for-copilot.png" alt-text="Screenshot of the content rewrite Copilot dialog in the email editor, showing tone options and generated text suggestions." lightbox="media/tone-selection-for-copilot.png":::
 
-1. Select a **text element** in your email, form, SMS or push notification message.
+1. Select a **text element** in your email, form, SMS, or push notification message.
 1. Select **Rewrite** from the text element contextual menu.
 1. To generate different variants of your text, select **Get ideas**. Copilot generates a set of text suggestions. It might take a short while to generate the content (up to 15 seconds, depending on the usage).
 1. Browse the generated ideas using the navigation buttons in the content rewrite dialog.
@@ -69,18 +68,17 @@ To turn on or off the content rewrite copilot feature switch:
 1. To generate more ideas for the same key points, select **Get more ideas**.
 
 > [!NOTE]
-> AI-generated content may be incorrect. It's your responsibility to edit generated content so that your final copy is accurate and appropriate.
+> AI-generated content might be incorrect. Review and edit generated content so your final copy is accurate and appropriate.
 
 > [!NOTE]
-> The content rewrite copilot is accessible only for text with a minimum of 10 words. If the text snippet is shorter or empty, the content rewrite copilot feature is disabled.
+> The content rewrite copilot is available only for text with at least 10 words. If the text snippet is shorter or empty, the content rewrite copilot feature is unavailable.
 
 > [!Tip]
-> You have the option to refresh only a specific part of your paragraph instead of making changes to the entire paragraph. To do this, follow these steps:
+> You can refresh only part of a paragraph instead of changing the entire paragraph:
 > 1. Select the text you want to update.
-> 1. To make modifications to the selected text, utilize any of the copilot options: "Get ideas," "Tone," "Shorten," or "Lengthen."
+> 1. To update the selected text, use any of the Copilot options: "Get ideas," "Tone," "Shorten," or "Lengthen."
 
-> [!div class="mx-imgBorder"]
-> ![Copilot screenshot with selected editable text facility](media/selected-editable-text-facility.png "Copilot screenshot with selected editable text facility")
+:::image type="content" source="media/selected-editable-text-facility.png" alt-text="Screenshot of selected text in the email editor with content rewrite Copilot options available from the contextual menu." lightbox="media/selected-editable-text-facility.png":::
 
 ## How does the Copilot technology work?
 
@@ -92,18 +90,18 @@ The only time a human reviews the content of generated ideas is if you report it
 
 ## What if I'm not satisfied with the generated content?
 
-Copilot uses your text as a base to generate new suggestions for your email. Make sure to provide in your text the information you want to get across to your audience.
+Copilot uses your text as the basis for new suggestions for your email. Include the information you want to get across to your audience in the source text.
  
 If you aren't satisfied with the generated content, try one or more of the following:
-1. Continue browsing through generated ideas to make sure you’ve reviewed all of them.
+1. Continue browsing through generated ideas to make sure you've reviewed all of them.
 1. Get more ideas using the **Regenerate** button in the content rewrite dialog.
 1. Rephrase your text to get new ideas.
 
-Copilot generates original content, but it isn’t always factual. In addition, because the underlying technology behind content rewrite uses AI that has been trained on a wide range of internet sources, some text suggestions may include questionable or inappropriate content. It's your responsibility to edit generated suggestions so that your final copy is accurate and appropriate.
+Copilot generates original content, but it isn't always factual. In addition, because the underlying technology behind content rewrite uses AI trained on a wide range of internet sources, some text suggestions might include questionable or inappropriate content. Review and edit generated suggestions so your final copy is accurate and appropriate.
 
 > [!IMPORTANT]
 > If you encounter inappropriate content being generated, report it to Microsoft using this feedback form: [Report abuse](https://msrc.microsoft.com/report/abuse?ThreatType=URL&IncidentType=Responsible%20AI&SourceUrl=https://dynamics.microsoft.com/marketing/overview/). It will help improve the functionality moving forward.
 >
 > Microsoft may disable the content rewrite copilot feature for selected customers if abuse of the functionality is detected.
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)]
+[!INCLUDE [footer-include](./includes/footer-banner.md)]

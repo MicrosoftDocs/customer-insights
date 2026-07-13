@@ -1,7 +1,7 @@
 ---
 title: Give consent to use Copilot in Customer Insights - Data
 description: As an admin, give consent to use all Copilot features in Customer Insights - Data
-ms.date: 06/17/2026
+ms.date: 07/09/2026
 ms.update-cycle: 180-days
 ms.reviewer: v-wendysmith
 ms.topic: how-to

@@ -1,7 +1,7 @@
 ---
 title: View system configuration
 description: View system configuration in Dynamics 365 Customer Insights - Data to track system information, status, and processes. Learn how to manage your settings today.
-ms.date: 06/26/2026
+ms.date: 07/09/2026
 ms.update-cycle: 180-days
 ms.topic: how-to
 author: Scott-Stabbert

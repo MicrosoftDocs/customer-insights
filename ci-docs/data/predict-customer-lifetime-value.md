@@ -1,7 +1,7 @@
 ---
 title: Predict customer lifetime value (CLV)
 description: "Predict revenue potential for active customers in the future."
-ms.date: 12/08/2025
+ms.date: 07/09/2026
 ms.update-cycle: 180-days
 ms.reviewer: alfergus
 ms.topic: how-to

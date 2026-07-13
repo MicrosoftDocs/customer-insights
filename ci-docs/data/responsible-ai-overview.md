@@ -1,7 +1,7 @@
 ---
 title: Responsible AI FAQs for Dynamics 365 Customer Insights - Data
 description: Responsible AI FAQs provide information about the AI technology used in Dynamics 365 Customer Insights - Data, along with key considerations and details about how the AI is used, how it was tested and evaluated, and any specific limitations.
-ms.date: 06/08/2026
+ms.date: 07/09/2026
 ms.update-cycle: 180-days
 ms.custom: 
   - responsible-ai-faqs
