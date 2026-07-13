@@ -769,6 +769,6 @@
 - name: Troubleshoot
   items:
   - name: Customer Insights - Journeys troubleshooting
-    href: /troubleshoot/dynamics-365/customer-insights/welcome-customer-insights
+    href: /troubleshoot/dynamics-365/customer-insights/journeys/welcome-customer-insights-journeys
 - name: Notes about outbound marketing removal
   href: outbound-removal-notes.md
