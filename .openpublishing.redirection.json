@@ -3725,6 +3725,56 @@
       "source_path": "ci-docs/journeys/faqs-journey-copilot.md",
       "redirect_url": "/dynamics365/customer-insights/journeys/faqs-journey-creation-agent",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/troubleshoot-custom-channels.md",
+      "redirect_url": "/troubleshoot/dynamics-365/customer-insights/journeys/channels/troubleshoot-custom-channels",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/troubleshoot-push-notifications.md",
+      "redirect_url": "/troubleshoot/dynamics-365/customer-insights/journeys/channels/troubleshoot-push-notifications",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/troubleshoot-domain-authentication.md",
+      "redirect_url": "/troubleshoot/dynamics-365/customer-insights/journeys/email/troubleshoot-domain-authentication",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/email-troubleshoot-deliverability.md",
+      "redirect_url": "/troubleshoot/dynamics-365/customer-insights/journeys/email/email-troubleshoot-delivery",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/email-troubleshoot-engagement.md",
+      "redirect_url": "/troubleshoot/dynamics-365/customer-insights/journeys/email/email-troubleshoot-engagement",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/email-troubleshoot-rendering.md",
+      "redirect_url": "/troubleshoot/dynamics-365/customer-insights/journeys/email/email-troubleshoot-rendering",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/troubleshoot-event-management.md",
+      "redirect_url": "/troubleshoot/dynamics-365/customer-insights/journeys/event-management/troubleshoot-event-management",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/real-time-marketing-troubleshooting-forms.md",
+      "redirect_url": "/troubleshoot/dynamics-365/customer-insights/journeys/forms/troubleshooting-forms",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/troubleshoot-marketing-solution-health.md",
+      "redirect_url": "/troubleshoot/dynamics-365/customer-insights/journeys/general/troubleshoot-marketing-solution-health",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/segment-member-count.md",
+      "redirect_url": "/troubleshoot/dynamics-365/customer-insights/journeys/segments/segment-member-count",
+      "redirect_document_id": false
     }
   ]
 }
