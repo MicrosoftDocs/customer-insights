@@ -1,7 +1,7 @@
 ---
 title: FAQ for segment creation (preview)
-description: This FAQ provides information about the AI technology used in segment creation (preview). It provides key considerations and details about how AI is used, how it was tested and evaluated, and any specific limitations.
-ms.date: 07/09/2026
+description: Segment creation (preview) uses AI in Customer Insights - Data. This FAQ covers capabilities, evaluation, and limitations.
+ms.date: 07/10/2026
 ms.update-cycle: 180-days
 ms.custom: 
   - responsible-ai-faqs
@@ -22,7 +22,7 @@ These frequently asked questions (FAQ) describe the AI impact of the Dynamics 36
 
 ## What is segment creation with Copilot in Customer Insights?
 
-This feature accepts natural language prompts in a chat experience to help build segments and specify their criteria in Dynamics 365 Customer Insights - Data. The suggested segment configuration and data mapping based on the prompt and the available customer data is available to users for tweaks and refinement.
+This feature accepts natural language prompts in a chat experience to help you build segments and specify their criteria in Dynamics 365 Customer Insights - Data. Based on your prompt and available customer data, Copilot suggests a segment configuration and data mapping that you can review and refine.
 
 ## What are capabilities of the segment creation feature?
 
@@ -38,11 +38,11 @@ The segment creation feature provides the following components or capabilities:
 
 ## What is the intended use of the segment creation feature?
 
-Segment creation with Copilot in Customer Insights - Data democratizes the varying technical ability of users and helps them create complex segments via natural language.
+Segment creation with Copilot in Customer Insights - Data helps users of all technical skill levels create complex segments using natural language.
 
 ## How was the feature evaluated? What metrics are used to measure performance?
 
-We measure performance of the Copilot by the successful creation of AI-generated segment criteria, and the publishing of the segment based on the suggestion of Copilot. We keep track of feedback provided through the thumbs up or thumbs down buttons to understand customer satisfaction with the feature.
+You measure Copilot's performance by tracking the successful creation of AI-generated segment criteria and the publishing of segments based on Copilot's suggestions. You also track feedback from the thumbs up and thumbs down buttons to gauge customer satisfaction with the feature.
 
 ## What are the supported geographies and languages?
 
@@ -50,7 +50,7 @@ Go to [Copilot International Availability report](https://releaseplans.microsoft
 
 ## What operational factors and settings allow for effective and responsible use of the feature?
 
-Copilot doesn't share data across environments. Opt-in consent is provided through the Settings page and managed by admins of Customer Insights - Data. Admins can revoke consent at any time and turn off the feature.
+Copilot doesn't share data across environments. Admins of Customer Insights - Data provide opt-in consent through the Settings page and can revoke consent or turn off the feature at any time.
 
 ## See also
 

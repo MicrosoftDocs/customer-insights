@@ -1,7 +1,7 @@
 ---
 title: "Predict subscription churn"
-description: "Predict whether a customer is at risk for no longer using your company’s subscription products or services."
-ms.date: 07/09/2026
+description: "Predict subscription churn in Customer Insights - Data by configuring a model that uses subscription and activity data to flag at-risk customers."
+ms.date: 07/10/2026
 ms.update-cycle: 180-days
 ms.reviewer: alfergus
 ms.topic: how-to
@@ -15,7 +15,7 @@ ms.collection: bap-ai-copilot
 
 Predict whether a customer is at risk for no longer using your company’s subscription products or periodic services. Subscription data includes active and inactive subscriptions for each customer so there can be multiple entries per customer ID. To find the churn risk for customers not making scheduled purchases, use the [Transaction churn model.](predict-transactional-churn.md)
 
-You must have business knowledge to understand what churn means for your business. For instance, a business with annual events can define their churn measured in years, while a business that caters to weekly sales may measure churn in months. We support time-based churn definitions, meaning a customer is considered to have churned a period of time after their subscription has ended.
+Understanding what churn means for your business helps you get accurate predictions. For instance, a business with annual events might define churn in years, while a business with weekly sales might measure churn in months. The system supports time-based churn definitions, so a customer is considered to have churned a set period of time after their subscription ends.
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=e4c2c0ea-d39c-493e-aae9-56c096cccf19]
 
@@ -78,7 +78,7 @@ Select **Save draft** at any time to save the prediction as a draft. The draft p
 
 1. Under **Activities**, if the activity attributes were semantically mapped when the activity was created, choose the specific attributes or table you'd like the calculation to focus on. If semantic mapping didn't occur, select **Edit** and map your data.
   
-   :::image type="content" source="media/subscription-churn-required.png" alt-text="Add required data for Subscription churn model":::
+   :::image type="content" source="media/subscription-churn-required.png" alt-text="Screenshot of the Add required data step for the Subscription churn model.":::
 
 1. Select **Next** and review the attributes required for this model.
 
@@ -118,11 +118,11 @@ The **Review and run** step shows a summary of the configuration and provides a 
 
 1. In the **My predictions** tab, select the prediction you want to view.
 
-There are three primary sections of data within the results page:
+The results page displays three primary sections of data:
 
 - **Training model performance**: Grades A, B, or C indicate the performance of the prediction and can help you make the decision to use the results stored in the output table.
   
-  :::image type="content" source="media/subscription-churn-modelperformance.PNG" alt-text="Image of the model score information box with the grade A.":::
+  :::image type="content" source="media/subscription-churn-modelperformance.PNG" alt-text="Screenshot of the model score information box showing a grade of A.":::
 
   Grades are determined based on the following rules:
   - **A** when the model accurately predicted at least 50% of the total predictions, and when the percentage of accurate predictions for customers who churned is greater than the historical average churn rate by at least 10%.
@@ -131,9 +131,9 @@ There are three primary sections of data within the results page:
   
 - **Likelihood to churn (number of customers)**: Groups of customers based on their predicted risk of churn. Optionally, [create segments of customers](prediction-based-segment.md) with high churn risk. Such segments help to understand where your cutoff should be for segment membership.  
 
-  :::image type="content" source="media/subscription-churn-resultdistribution.PNG" alt-text="Graph showing distribution of churn results, broken into ranges from 0-100%":::
+  :::image type="content" source="media/subscription-churn-resultdistribution.PNG" alt-text="Graph showing distribution of churn results, broken into ranges from 0-100%.":::
 
-- **Most influential factors:** There are many factors that are taken into account when creating your prediction. Each of the factors has its importance calculated for the aggregated predictions a model creates. Use these factors to help validate your prediction results. Or use this information later to [create segments](.//prediction-based-segment.md) that could help influence churn risk for customers.
+- **Most influential factors:** Many factors are taken into account when creating your prediction. Each factor has its importance calculated for the aggregated predictions a model creates. Use these factors to help validate your prediction results. Or use this information later to [create segments](prediction-based-segment.md) that could help influence churn risk for customers.
 
   :::image type="content" source="media/subscription-churn-influentialfactors.PNG" alt-text="List showing influential factors and their importance in predicting the churn result.":::
 

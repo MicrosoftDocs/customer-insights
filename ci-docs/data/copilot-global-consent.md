@@ -1,7 +1,7 @@
 ---
 title: Give consent to use Copilot in Customer Insights - Data
-description: As an admin, give consent to use all Copilot features in Customer Insights - Data
-ms.date: 07/09/2026
+description: Copilot features in Customer Insights - Data require admin consent at three levels - feature access, cross-geography flow, and data sharing.
+ms.date: 07/10/2026
 ms.update-cycle: 180-days
 ms.reviewer: v-wendysmith
 ms.topic: how-to

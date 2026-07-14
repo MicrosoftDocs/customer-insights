@@ -1,7 +1,7 @@
 ---
 title: FAQ for dialog with data
-description: This FAQ provides information about the AI technology used in dialog with data. It provides key considerations and details about how AI is used, how it was tested and evaluated, and any specific limitations.
-ms.date: 07/09/2026
+description: Learn how dialog with data uses AI to answer natural language questions, plus its capabilities, evaluation methods, and known limitations.
+ms.date: 07/10/2026
 ms.update-cycle: 180-days
 ms.custom: 
   - responsible-ai-faqs
@@ -9,7 +9,7 @@ ms.topic: faq
 author: radsay01
 ms.author: sstabbert
 ms.reviewer: alfergus
-ms.collection: bap-ai-copilot 
+ms.collection: bap-ai-copilot
 ---
 
 # FAQ for dialog with data (preview)
@@ -38,11 +38,11 @@ Dialog with data can help you:
 
 ## What is the feature’s intended use?
 
-Dialog with data is intended to enable end users like marketers, sellers, and service agents gain insights to better understand and serve customers easily without the support of IT teams or other tools.
+Dialog with data is intended to enable end users like marketers, sellers, and service agents to gain insights to better understand and serve customers easily without the support of IT teams or other tools.
 
 ## How was dialog with data evaluated? What metrics are used to measure performance?
 
-Dialog with data has been evaluated for usability, accuracy, performance, and adherence to responsible AI principles. Evaluation included usability testing to ensure valid understanding of user intent, accurately generated results, overall system performance, and responsible AI. This feature had scenario testing for inappropriate content, malicious intent, jail break, and more. Ongoing monitoring is in place for system performance and responsible AI.  
+Evaluators assessed dialog with data for usability, accuracy, performance, and adherence to responsible AI principles. The evaluation process included usability testing to ensure valid understanding of user intent, accurately generated results, overall system performance, and responsible AI. This feature underwent scenario testing for inappropriate content, malicious intent, jail break, and more. Ongoing monitoring is in place for system performance and responsible AI.
 
 ## What are the limitations of dialog with data? How can users minimize the impact of the limitations when using the system?
 
@@ -52,7 +52,7 @@ The feature transforms your prompts in natural language into a SQL query to run 
 
 - Only questions with corresponding data existing in Customer Insights - Data are supported.
 
-- ‘Did you know’ section and ‘Explore further’ result generation is dependent on Azure OpenAI Service model.  
+- The Azure OpenAI Service model determines the generation of the `Did you know` section and `Explore further` result.
 
 ## What are the supported geographies and languages?
 
@@ -60,7 +60,7 @@ Go to [Copilot International Availability report](https://releaseplans.microsoft
 
 ## What operational factors and settings allow for effective and responsible use of the feature?
 
-- Administrators in Customer Insights - Data can choose to disable all Copilot functionality for each solution, by using the [consent experience](copilot-global-consent.md).
+- Administrators in Customer Insights - Data can choose to disable all Copilot functionality for each solution, by using the [Copilot consent experience](copilot-global-consent.md).
 
 - There's a reminder that the result is AI-generated and can be inaccurate. AI feature results should always be reviewed and validated for accuracy and appropriateness before being used to make business decisions. AI features should always be used with caution and responsibility to minimize potential bias and unfairness in business decisions.
 

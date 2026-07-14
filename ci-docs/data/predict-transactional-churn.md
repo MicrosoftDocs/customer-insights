@@ -1,7 +1,7 @@
 ---
 title: Predict transaction churn
-description: "Predict whether a customer is at risk for no longer purchasing your products or services."
-ms.date: 07/09/2026
+description: "Transactional churn prediction identifies customers likely to stop purchasing your products or services within a defined time window."
+ms.date: 07/10/2026
 ms.update-cycle: 180-days
 ms.reviewer: alfergus
 ms.topic: how-to
@@ -13,9 +13,9 @@ ms.collection: bap-ai-copilot
 
 # Predict transaction churn
 
-Transactional churn prediction helps predict if a customer no longer purchase your products or services in a given time window. Transaction churn is useful to find customers who are no longer purchasing products at any time during the defined churn window. To find customers who might cancel their preset ongoing purchases, we recommend using the [Subscription churn model.](sample-guide-predict-subscription-churn.md)
+Transactional churn prediction identifies customers who are likely to stop purchasing your products or services within a defined time window, called the churn window. To find customers who might cancel their preset ongoing purchases instead, use the [Subscription churn model](sample-guide-predict-subscription-churn.md).
 
-You must have business knowledge to understand what churn means for your business. For instance, a business with annual events can define their churn measured in years, while a business that caters to weekly sales measures churn in months. We support time-based churn definitions, meaning a customer is considered as churned after a period of no purchases.
+Understanding what churn means for your business helps you configure an accurate prediction. For instance, a business with annual events can define their churn measured in years, while a business that caters to weekly sales measures churn in months. The system supports time-based churn definitions, meaning a customer is considered churned after a period of no purchases.
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=028ef401-6131-44b0-9cd0-89b9e88f81c6]
 
@@ -86,7 +86,7 @@ Select **Save draft** at any time to save the prediction as a draft. The draft p
 
 1. Select **Add data** for **Customer activities**.
 
-1. Select the semantic activity type that contains the data you would like to use. If the activity isn't been set up, select **here** and create it.
+1. Select the semantic activity type that contains the data you want to use. If the activity isn't set up, select **here** and create it.
 
 1. Under **Activities**, if the activity attributes were semantically mapped when the activity was created, choose the specific attributes or table you'd like the calculation to focus on. If semantic mapping didn't occur, select **Edit** and map your data.
 
@@ -123,7 +123,7 @@ There are three primary sections of data within the results page:
 [!INCLUDE [predict-transaction-results](includes/predict-transaction-results.md)]
 
 > [!NOTE]
- > In the output table for this model, *ChurnScore* shows the predicted probability of churn and *IsChurn* is a binary label based on *ChurnScore* with 0.5 threshold. If this default threshold doesn't work for your scenario, [create a new segment](segments.md) with your preferred threshold. Not all customers are necessarily active customers. Some of them may not have had any activity for a long time and are considered as churned already, based on you churn definition. Predicting the churn risk for customers who already churned isn't useful because they are not the audience of interest.
+> In the output table for this model, *ChurnScore* shows the predicted probability of churn and *IsChurn* is a binary label based on *ChurnScore* with 0.5 threshold. If this default threshold doesn't work for your scenario, [create a new segment](segments.md) with your preferred threshold. Not all customers are necessarily active customers. Some of them might not have any activity for a long time and are considered as churned already, based on your churn definition. Predicting the churn risk for customers who already churned isn't useful because they aren't the audience of interest.
 >
 > To view the churn score, go to **Data** > **Tables** > **Output** and view the data tab for the output table you defined for this model.
 

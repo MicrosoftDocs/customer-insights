@@ -1,21 +1,21 @@
 ---
 title: Subscription churn prediction sample guide
-description: Use this sample guide to try out the out of box subscription churn prediction model.
-ms.date: 07/09/2026
+description: Learn how to set up and run the out-of-box subscription churn prediction model in Customer Insights - Data using sample subscription and customer data.
+ms.date: 07/10/2026
 ms.update-cycle: 180-days
 ms.reviewer: v-wendysmith
 ms.topic: article
 author: Scott-Stabbert
 ms.author: sstabbert
 ms.custom: bap-template
-ms.collection: bap-ai-copilot 
+ms.collection: bap-ai-copilot
 ---
 
 # Subscription churn prediction sample guide
 
-This guide will walk you through an end-to-end example of subscription churn prediction using sample data. We recommend that you try this prediction [in a new environment](manage-environments.md).
+This guide walks you through an end-to-end example of subscription churn prediction using sample data. Try this prediction [in a new environment](manage-environments.md).
 
-## Scenario
+## Scenario: predicting subscription churn for Contoso Coffee
 
 Contoso is a company that produces high-quality coffee and coffee machines. They sell the products through their Contoso Coffee website. They recently started a subscription business for their customers to get coffee on a regular basis. Their goal is to understand which subscribed customers might cancel their subscription in the next few months. Knowing which of their customers is **likely to churn** can help them save marketing efforts by focusing on keeping them.
 
@@ -39,7 +39,7 @@ Review the articles [about data ingestion](data-sources.md) and [connecting to a
    - **DateOfBirth**: Date
    - **CreatedOn**: Date/Time/Zone
 
-   :::image type="content" source="media/ecommerce-dob-date.PNG" alt-text="Transform date of birth to date.":::
+   :::image type="content" source="media/ecommerce-dob-date.PNG" alt-text="Screenshot of Power Query showing the DateOfBirth column data type set to Date.":::
 
 1. In the **Name** field on the right-hand pane, rename your data source to **eCommerceContacts**
 
@@ -71,7 +71,7 @@ Review the articles [about data ingestion](data-sources.md) and [connecting to a
 1. While editing the data, select **Transform** and then **Use first row as headers**.
 
 1. Update the datatype for the columns listed below:
-   - **SubscriptioID**: Whole Number
+   - **SubscriptionID**: Whole Number
    - **SubscriptionAmount**: Currency
    - **SubscriptionEndDate**: Date/Time
    - **SubscriptionStartDate**: Date/Time
@@ -153,7 +153,7 @@ With the unified customer profiles in place and activity created, run the subscr
    - **Days since subscription ended**: **60** days to indicate that a customer is considered churned if they don't renew the subscription in this period after their subscription ended.
    - **Days to look into future to predict churn**: **93** days which is the duration the model predicts which customers might churn. The further in the future you look, the less precise the results.
 
-   :::image type="content" source="media/model-subs-levers.PNG" alt-text="Select the model preferences and churn definition.":::
+   :::image type="content" source="media/model-subs-levers.PNG" alt-text="Screenshot of the model preferences step showing the days since subscription ended and days to look into the future settings.":::
 
 1. Select **Next**.
 

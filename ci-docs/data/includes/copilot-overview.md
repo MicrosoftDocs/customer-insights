@@ -1,4 +1,4 @@
-Discover new ways to work with your data by using Copilot in Customer Insights – Data. Ask questions in natural language to uncover insights through dialog with data. Get quick answers to capability questions right in the app, and create segments by using everyday language. These features help you move faster from data to decisions.
+Discover new ways to work with your data by using Copilot in Customer Insights - Data. Ask questions in natural language to uncover insights through dialog with data. Get quick answers to capability questions right in the app, and create segments by using everyday language. These features help you move faster from data to decisions.
 
 - **Dialog with data:** Lets you ask questions in natural language to quickly generate insights about your customers. Learn more: [Have a dialog with data using Copilot](/dynamics365/customer-insights/data/dialog-with-data)
 - **Answers to capability questions:** Gets answers to questions about Customer Insights - Data and its features. Learn more: [Get answers to questions about capabilities from Copilot](/dynamics365/customer-insights/data/help-pane-copilot)
