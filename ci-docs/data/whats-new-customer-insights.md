@@ -60,7 +60,7 @@ Access the interaction data captured by Customer Insights - Journeys and use it 
 Creating segments in Customer Insights - Data is now faster, easier, and more accurate. Customer Insights - Data allows you to select from a list of valid display names for field values, eliminating the need to enter obscure codes or keep track of what data values are expected for each field.
 
 - [Release plan](/dynamics365/release-plan/2026wave1/customer-insights/dynamics365-customer-insights-data/easily-select-appropriate-field-values-list-when-working-segments-conditions)
-- [Docs](segment-builder-aspects.md#segment-builder-tips)
+- [Docs](segments-overview.md#segment-builder-tips)
 
 ## October 2025
 

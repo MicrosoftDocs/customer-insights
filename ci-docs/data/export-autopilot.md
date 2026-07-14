@@ -1,8 +1,8 @@
 ---
-title: "Export segments to Autopilot (preview)"
-description: "Learn how to configure the connection and export to Autopilot."
-ms.date: 09/01/2023
-ms.reviewer: mhart
+title: Export segments to Autopilot (preview)
+description: Export segments to Autopilot (now Ortto) from Customer Insights. Configure your connection, match email fields, and export unified profiles for email marketing.
+ms.date: 07/14/2026
+ms.reviewer: v-wendysmith
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -12,12 +12,12 @@ ms.author: sstabbert
 
 [!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
-Export segments of unified customer profiles to Autopilot and use them for email marketing in Autopilot.
+Export segments of unified customer profiles to Autopilot and use them for email marketing in Autopilot. [Autopilot is now Ortto](https://ortto.com/autopilot/).
 
 ## Prerequisites for a connection
 
-- An [Autopilot account](https://www.autopilothq.com/) and corresponding administrator credentials.
-- An [Autopilot API key](https://autopilot.docs.apiary.io/#)
+- An [Autopilot account](https://ortto.com/) and corresponding administrator credentials.
+- An Autopilot API key.
 - [Configured segments](segments.md).
 - Unified customer profiles in the exported segments contain a field representing an email address.
 
@@ -34,9 +34,9 @@ Export segments of unified customer profiles to Autopilot and use them for email
 
 1. Select **Add connection** and choose **Autopilot**.
 
-1. Give your connection a recognizable name in the **Display name** field. The name and the type of the connection describe this connection. We recommend choosing a name that explains the purpose and target of the connection.
+1. Enter a recognizable name in the **Display name** field. The name and the type of the connection describe this connection. Choose a name that explains the purpose and target of the connection.
 
-1. Choose who can use this connection. By default, it's only administrators. For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
+1. Choose who can use this connection. By default, only administrators can use it. For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
 1. Enter your Autopilot API key.
 
@@ -56,7 +56,7 @@ Export segments of unified customer profiles to Autopilot and use them for email
 
 1. Select **Add export**.
 
-1. In the **Connection for export** field, choose a connection from the Autopilot section. Contact an administrator if no connection is available.
+1. In **Connection for export**, choose a connection from the Autopilot section. Contact an administrator if no connection is available.
 
 1. Enter a name for the export.
 
@@ -64,7 +64,7 @@ Export segments of unified customer profiles to Autopilot and use them for email
 
 1. Optionally, export other fields such as **First name** and **Last name**.
 
-1. Select the segments you want to export adhering to the known limitations.
+1. Select the segments you want to export, adhering to the known limitations.
 
 1. Select **Save**.
 

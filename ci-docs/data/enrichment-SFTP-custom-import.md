@@ -1,11 +1,11 @@
 ---
 title: Enrich customer profiles with SFTP custom import (preview)
-description: General information about the SFTP custom import enrichment.
-ms.date: 09/01/2023
-ms.reviewer: mhart
+description: SFTP custom import offers a flexible, secure way to bring enriched data into Customer Insights - Data that doesn't need to go through data unification.
+ms.date: 07/13/2026
+ms.reviewer: v-wendysmith
 ms.topic: how-to
-author: jodahlMSFT
-ms.author: jodahl
+author: Scott-Stabbert
+ms.author: sstabbert
 ms.custom: sfi-image-nochange
 ---
 
@@ -13,19 +13,19 @@ ms.custom: sfi-image-nochange
 
 [!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
-Secure File Transfer Protocol (SFTP) custom import enables you to import data that doesn't have to go through the process of data unification. It's a flexible, secure, and easy way to bring in your data. SFTP custom import can be used in combination with [SFTP export](export-sftp.md) that lets you export the customer profile data that is needed for enrichment. The data can then be processed and enriched, and SFTP custom import can be used to bring the enriched data back to Dynamics 365 Customer Insights - Data.
+Secure File Transfer Protocol (SFTP) custom import enables you to import data that doesn't need to go through the process of data unification. It's a flexible, secure, and easy way to bring in your data. Use SFTP custom import in combination with [SFTP export](export-sftp.md) to export the customer profile data that you need for enrichment. You can process and enrich the data, and then use SFTP custom import to bring the enriched data back to Dynamics 365 Customer Insights - Data.
 
 ## Prerequisites
 
-- File name and location (path) of the file to be imported on the SFTP host is known.
+- You know the file name and location (path) of the file to import on the SFTP host.
 
-- A *model.json* file that specifies the Common Data Model schema for the data to be imported is available. This file must be in the same directory as the file to import.
+- You have a *model.json* file that specifies the Common Data Model schema for the data to import. This file must be in the same directory as the file to import.
 
-- An SFTP [connection](connections.md) is [configured](#configure-the-connection-for-sftp-custom-import).
+- An administrator configured an SFTP [connection](#configure-the-connection-for-sftp-custom-import). Learn more about [connections](connections.md).
 
 ## File schema example
 
-The directory that contains the file to be imported on the SFTP server must also contain a *model.json* file. This file defines the schema to use for importing the data. The schema has to use [Common Data Model](/common-data-model/) to specify the field mapping. A simple example of a model.json file looks like this:
+The directory that contains the file to import on the SFTP server must also contain a *model.json* file. This file defines the schema to use for importing the data. The schema has to use [Common Data Model](/common-data-model/) to specify the field mapping. A simple example of a model.json file looks like this:
 
 ```
 {
@@ -75,7 +75,7 @@ You must be an [administrator](user-roles.md#admin) in Customer Insights - Data 
 
 1. Select **Add connection** when configuring an enrichment or go to **Settings** > **Connections** and select **Set up** on the Custom Import tile.
 
-   :::image type="content" source="media/enrichment-SFTP-connection.png" alt-text="Custom Import connection configuration page.":::
+   :::image type="content" source="media/enrichment-SFTP-connection.png" alt-text="Screenshot of the Custom Import connection configuration page.":::
 
 1. Enter a name for the connection.
 
@@ -91,7 +91,7 @@ You must be an [administrator](user-roles.md#admin) in Customer Insights - Data 
 
 1. Select **Enrich my data** on the **SFTP custom import** tile.
 
-   :::image type="content" source="media/SFTP_Custom_Import_tile.png" alt-text="SFTP custom import tile.":::
+   :::image type="content" source="media/SFTP_Custom_Import_tile.png" alt-text="Screenshot of the SFTP custom import tile.":::
 
 1. Review the overview and then select **Next**.
 

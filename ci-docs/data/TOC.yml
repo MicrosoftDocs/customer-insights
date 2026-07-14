@@ -258,7 +258,7 @@
 - name: Segments
   items:
     - name: Segments overview
-      href: segment-builder-aspects.md
+      href: segments-overview.md
     - name: Create quick segments
       href: segment-quick.md
     - name: Create complex segments with segment builder

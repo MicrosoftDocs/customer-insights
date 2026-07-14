@@ -1,24 +1,24 @@
 ---
-title: "Enrich customer profiles with location data from Azure Maps (preview)"
-description: "General information about the Azure Maps first-party enrichment."
-ms.date: 09/01/2023
-ms.reviewer: mhart
+title: Enrich customer profiles with location data from Azure Maps (preview)
+description: Azure Maps enrichment brings precise location data to Dynamics 365 Customer Insights. Learn how to configure connections and enrich customer profiles.
+ms.date: 07/13/2026
+ms.reviewer: v-wendysmith
 ms.topic: how-to
-author: jodahlMSFT
-ms.author: jodahl
+author: Scott-Stabbert
+ms.author: sstabbert
 ---
 
 # Enrich customer profiles with location data from Azure Maps (preview)
 
 [!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
-Azure Maps provide location-centric data and services to deliver experiences based on geospatial data with built-in location intelligence. Azure Maps data enrichment services improve the precision of location information about your customers. It brings capabilities like address normalization and latitude and longitude extraction to Dynamics 365 Customer Insights - Data.
+Azure Maps provides location-centric data and services to deliver experiences based on geospatial data with built-in location intelligence. Azure Maps data enrichment services improve the precision of location information about your customers. It brings capabilities like address normalization and latitude and longitude extraction to Dynamics 365 Customer Insights - Data.
 
 ## Prerequisites
 
 - An active Azure Maps subscription. To get a subscription, [sign up or get a free trial](https://azure.microsoft.com/services/azure-maps/).
 
-- An Azure Maps [connection](connections.md) is [configured](#configure-the-connection-for-azure-maps) by an administrator.
+- An administrator configured an [Azure Maps connection](#configure-the-connection-for-azure-maps). Learn more about [connections](connections.md).
 
 ## Configure the connection for Azure Maps
 
@@ -26,13 +26,13 @@ You must be an [administrator](user-roles.md#admin) in Customer Insights - Data 
 
 1. Select **Add connection** when configuring an enrichment, or go to **Settings** > **Connections** and select **Set up** on the Azure Maps tile.
 
-   :::image type="content" source="media/enrichment-azure-maps-connection.png" alt-text="Azure Maps connection configuration page.":::
+   :::image type="content" source="media/enrichment-azure-maps-connection.png" alt-text="Screenshot of the Azure Maps connection configuration page.":::
 
 1. Enter a name for the connection and a valid Azure Maps API key.
 
 1. Review the [data privacy and compliance](connections.md#data-privacy-and-compliance) and select **I agree**.
 
-1. Select **Verify** to validate the configuration and then select **Save**.
+1. Select **Verify** to validate the configuration, and then select **Save**.
 
 ## Configure the enrichment
 
@@ -40,7 +40,7 @@ You must be an [administrator](user-roles.md#admin) in Customer Insights - Data 
 
 1. Select **Enrich my data** on the **Location** from Microsoft Azure Maps tile.
 
-   :::image type="content" source="media/azure-maps-tile.png" alt-text="Azure Maps tile.":::
+   :::image type="content" source="media/azure-maps-tile.png" alt-text="Screenshot of the Azure Maps tile.":::
 
 1. Review the overview and then select **Next**.
 
@@ -54,7 +54,7 @@ You must be an [administrator](user-roles.md#admin) in Customer Insights - Data 
 
 1. Map your fields to the location data from Azure Maps. The **Street 1** and **Zip/Postal Code** fields are required for the selected primary and/or secondary address. For higher match accuracy, add more fields.
 
-   :::image type="content" source="media/enrichment-azure-maps-attributes.png" alt-text="Azure Maps attribute mapping.":::
+   :::image type="content" source="media/enrichment-azure-maps-attributes.png" alt-text="Screenshot of the Azure Maps attribute mapping.":::
 
 1. Select **Next** to complete the field mapping.
 
@@ -76,7 +76,8 @@ You must be an [administrator](user-roles.md#admin) in Customer Insights - Data 
 
 [!INCLUDE [enrichment-results](includes/enrichment-results.md)]
 
-The **Number of customers enriched by field** provides a drill-down into the coverage of each enriched field.
+The **Number of customers enriched by field** metric shows the coverage for each enriched field.
+
 
 ## Next steps
 
