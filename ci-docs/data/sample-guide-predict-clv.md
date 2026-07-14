@@ -1,7 +1,7 @@
 ---
 title: Customer lifetime value (CLV) prediction sample guide
-description: Use this sample guide to try out the customer lifetime value prediction model.
-ms.date: 12/08/2025
+description: Customer lifetime value (CLV) prediction sample guide - ingest sample data, unify profiles, configure a CLV model, and create a high-value customer segment.
+ms.date: 07/10/2026
 ms.update-cycle: 180-days
 ms.reviewer: v-wendysmith
 ms.topic: article
@@ -39,9 +39,9 @@ Review the articles [about data ingestion](data-sources.md) and [connecting to a
    - **DateOfBirth**: Date
    - **CreatedOn**: Date/Time/Zone
 
-   :::image type="content" source="media/ecommerce-dob-date.PNG" alt-text="Transform date of birth to date.":::
+   :::image type="content" source="media/ecommerce-dob-date.PNG" alt-text="Screenshot of the Power Query transform step showing the DateOfBirth column set to the Date type.":::
 
-1. In the **Name** field on the right-hand pane, rename your data source to **eCommerceContacts**
+1. In the **Name** field on the right-hand pane, rename your data source to **eCommerceContacts**.
 
 1. **Save** the data source.
 
@@ -141,20 +141,20 @@ With the unified customer profiles in place and activity created, run the custom
 
 1. Select **Get started**.
 
-1. Name the model **OOB eCommerce CLV Prediction** and the output table  **OOBeCommerceCLVPrediction**.
+1. Name the model **OOB eCommerce CLV Prediction** and the output table **OOBeCommerceCLVPrediction**.
 
 1. Define model preferences:
    - **Prediction time period**: **12 months or 1 year** to define how far into the future to predict CLV.
    - **Active customers**: **Let model calculate purchase interval** which is the time frame in which a customer must have had at least one transaction to be considered active.
    - **High value customer**: manually define high value customers as **top 30% of active customers**.
 
-    :::image type="content" source="media/clv-model-preferences.png" alt-text="Preferences step in the guided experience for the CLV model.":::
+    :::image type="content" source="media/clv-model-preferences.png" alt-text="Screenshot of the Preferences step in the guided experience for the CLV prediction model.":::
 
 1. Select **Next**.
 
 1. In the **Required Data** step, select **Add data** to provide the transaction history data.
 
-    :::image type="content" source="media/clv-model-required.png" alt-text="Add required data step in the guided experience for the CLV model.":::
+    :::image type="content" source="media/clv-model-required.png" alt-text="Screenshot of the Required Data step for adding transaction history data to the CLV model.":::
 
 1. Select **SalesOrderLine** and the eCommercePurchases table and select **Next**. The required data is automatically filled in from the activity. Select **Save** and then **Next**.
 

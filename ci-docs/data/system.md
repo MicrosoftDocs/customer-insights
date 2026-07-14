@@ -1,7 +1,7 @@
 ---
 title: View system configuration
-description: View system configuration in Dynamics 365 Customer Insights - Data to track system information, status, and processes. Learn how to manage your settings today.
-ms.date: 06/26/2026
+description: Track system configuration and status in Dynamics 365 Customer Insights - Data, including environment details and task processing.
+ms.date: 07/10/2026
 ms.update-cycle: 180-days
 ms.topic: how-to
 author: Scott-Stabbert
@@ -13,7 +13,7 @@ ms.collection: bap-ai-copilot
 
 # View system configuration
 
-View system information and system status.
+System configuration in Dynamics 365 Customer Insights - Data includes your environment settings and the status of data processing tasks. View system information and system status on the **System** page.
 
 ## View system information
 
@@ -43,13 +43,13 @@ Track the progress of tasks, data ingestion, data exports, and several other imp
 
 1. Go to **Settings** > **System** and select the **Status** tab.
 
-   Status and processing information for various processes display. View the **Name** of the task, the **Status** of its most recent run, and when it was **Last updated**.
+   Status and processing information for various processes displays. View the **Name** of the task, the **Status** of its most recent run, and when it was **Last updated**.
 
 1. To view the details of the last several runs, select the task or process name.
 
 1. To view progress details for a task, select the status. The **Progress details** pane displays.
 
-   :::image type="content" source="media/system-progress-details.png" alt-text="System progress details pane":::
+   :::image type="content" source="media/system-progress-details.png" alt-text="Screenshot of the Progress details pane showing the status of a data processing task.":::
 
 1. To view progress details for all tasks, select **Entire workflow**.
 

@@ -1,7 +1,8 @@
 ---
 title: Journey Creation Agent in Customer Insights - Journeys (preview)
-description: Build customer journeys faster with Journey Creation Agent. Describe your goal in plain language and let AI scaffold steps, timing, and branching logic for you.
-ms.date: 06/19/2026
+description: Journey Creation Agent in Customer Insights - Journeys explains capabilities, prerequisites, prompt tips, troubleshooting, and how to review AI-generated journeys.
+ms.date: 07/09/2026
+ms.update-cycle: 180-days
 ms.topic: how-to
 ms.collection: bap-ai-copilot
 author: cmenesatti-m
@@ -18,7 +19,7 @@ Journey Creation Agent is an AI-powered assistant in Dynamics 365 Customer Insig
 > [!NOTE]
 > Journey Creation Agent is available as part of the 1.1.65002.153 update. To use Journey Creation Agent, navigate to **Settings** > **Versions** and upgrade to 1.1.65002.153.
 >
-> If you’re a customer in the NAM or OCE region, Journey Creation Agent will be available to you with the June 2026 update.
+> If you're a customer in the North America (NAM) or Oceania (OCE) region, Journey Creation Agent will be available to you with the June 2026 update.
 
 > [!IMPORTANT]
 > Journey Creation Agent is currently available only in English.
@@ -72,7 +73,7 @@ Before you use Journey Creation Agent, make sure you:
 - Enable Journey Creation Agent using [AI Hub](ai-hub.md).
 
     > [!NOTE]
-    > Journey Creation Agent uses Anthropic’s models. Ensure your tenant is opted in through the Microsoft 365 admin center and Power Platform Admin Center to allow Anthropic to be used. Learn more: [Anthropic as a subprocessor for Microsoft Online Services](/microsoft-365/copilot/connect-to-ai-subprocessor).
+    > Journey Creation Agent uses Anthropic's models. Ensure your tenant is opted in through the Microsoft 365 admin center and Power Platform Admin Center to allow Anthropic to be used. For details, see [Anthropic as a subprocessor for Microsoft Online Services](/microsoft-365/copilot/connect-to-ai-subprocessor).
 
 - **Set up permissions**: A Marketing Manager or Marketing Professional role, or equivalent permissions are required to create and publish journeys.
 
@@ -96,7 +97,7 @@ Journey Creation Agent integrates with the following Dynamics 365 Customer Insig
 Journey Creation Agent lets you describe a journey in plain language and receive a proposed journey structure—including steps, timing, branching logic, and content assignments—ready for your review.
 
 > [!IMPORTANT]
-> Use of Journey Creation Agent consumes Copilot credits. To adjust allocated credits, see [Set up Microsoft Copilot Studio capacity](ai-hub-prerequisites.md#set-up-microsoft-copilot-studio-capacity).
+> Journey Creation Agent uses Copilot credits. To adjust allocated credits, see [Set up Microsoft Copilot Studio capacity](ai-hub-prerequisites.md#set-up-microsoft-copilot-studio-capacity).
 
 ### Start a conversation with Journey Creation Agent
 
@@ -109,9 +110,9 @@ In the agent conversation panel, type a description of what you want to accompli
 
 **Examples of effective prompts:**
 
-- Create a 30-day re-engagement journey for contacts who haven't opened an email in 90 days. Start with the “We miss you” email and then send the “re-engagement” SMS if there's no response.
+- Create a 30-day re-engagement journey for contacts who haven't opened an email in 90 days. Start with the "We miss you" email and then send the "re-engagement" SMS if there's no response.
 - Create a welcome journey that starts when a new contact is added to /Segment and sends onboarding emails over the first 10 days.
-- Send an invite to /Segment for /Event. If they don’t register, send a weekly reminder until a week before the event.
+- Send an invite to /Segment for /Event. If they don't register, send a weekly reminder until a week before the event.
 
 > [!TIP]
 > Use the exact names of segments, triggers, and content in your prompt. You can use / to search and identify any asset you want to use. Including your goal, audience, timeline, and preferred channels in your initial message produces a more complete first proposal. You can always refine the details in follow-up messages.
@@ -183,8 +184,8 @@ The **Journey Creation Agent (preview)** option doesn't appear when you select *
 **Possible causes and resolutions**:
 
 - **Feature not enabled**: Your administrator may need to enable Journey Creation Agent in your environment. Contact your administrator and ask them to verify that the feature is turned on in **AI Hub**.
-- **Insufficient permissions**: You need s Marketing Manager or Marketing Professional role, or equivalent permissions that include journey creation rights. Contact your administrator to verify your role assignment.
-- **Unsupported region**: The Journey Creation Agent may not be available in all regions at release. Check the [Dynamics 365 Customer Insights - Journeys feature availability by region](https://releaseplans.microsoft.com/availability-reports/?report=featuregeoreport) report for current availability.
+- **Insufficient permissions**: You need a Marketing Manager or Marketing Professional role, or equivalent permissions that include journey creation rights. Contact your administrator to verify your role assignment.
+- **Unsupported region**: Journey Creation Agent may not be available in all regions at release. Check the [Dynamics 365 Customer Insights - Journeys feature availability by region](https://releaseplans.microsoft.com/availability-reports/?report=featuregeoreport) report for current availability.
 - **Sign-in window blocked**: Your browser is preventing the sign-in window from opening. To continue, allow pop-ups from the site. Then, refresh the page or select **Try again**.
 
 ### The agent doesn't recognize my segment, trigger, or content assets
@@ -223,7 +224,7 @@ The agent panel doesn't respond to your messages, shows a loading spinner for an
 
 **Possible causes and resolutions**:
 
-- **Prompt contains restricted content**: Prompts that contain personally identifiable information (PII) or sensitive data may be blocked. Describe your audience in general terms rather than including specific customer details.
+- **Prompt contains restricted content**: Prompts that contain personally identifiable information (PII) or sensitive data may be blocked. Describe your audience in general terms instead of including specific customer details.
 - **Temporary service issue**: Wait a moment and try sending your message again.
 - **Session timeout**: If your session has been idle for an extended period, refresh the page and start a new conversation. Refreshing discards the current proposal. If the proposal was already transferred to the journey builder by selecting **Review and refine**, your work is preserved.
 

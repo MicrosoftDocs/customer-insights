@@ -1,7 +1,7 @@
 ---
 title: Responsible AI FAQs for Outreach Optimization Agent
-description: Discover how to use Outreach Optimization Agent in Dynamics 365 Customer Insights - Journeys responsibly. These FAQs provide essential guidelines and best practices.
-ms.date: 06/19/2025
+description: Outreach Optimization Agent responsible AI FAQs explain capabilities, intended use, limitations, and operational controls in Customer Insights - Journeys.
+ms.date: 07/09/2026
 ms.update-cycle: 180-days
 ms.topic: faq
 author: Joni-M
@@ -14,7 +14,7 @@ ms.custom:
 
 # Responsible AI FAQs for Outreach Optimization Agent
 
-This document provides frequently asked questions about Outreach Optimization Agent in Dynamics 365 Customer Insights – Journeys.
+These responsible AI FAQs explain how Outreach Optimization Agent in Dynamics 365 Customer Insights - Journeys is designed, evaluated, and limited.
 
 ## What is Outreach Optimization Agent?
 
@@ -34,7 +34,7 @@ Outreach Optimization Agent focuses on **execution and optimization of messaging
 
 ## What is the intended use of Outreach Optimization Agent?
 
-Outreach Optimization Agent is intended to be used within Dynamics 365 Customer Insights – Journeys to improve engagement outcomes while maintaining responsible, predictable behavior.
+Outreach Optimization Agent is intended for use in Dynamics 365 Customer Insights - Journeys to improve engagement outcomes while maintaining responsible, predictable behavior.
 
 The intended use includes:
 

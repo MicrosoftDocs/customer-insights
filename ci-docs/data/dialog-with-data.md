@@ -1,7 +1,7 @@
 ---
 title: Have a dialog with data using Copilot in Customer Insights - Data
-description: Copilot in Customer Insights - Data lets you ask natural-language questions to uncover customer insights fast. Discover how to explore your data with AI today.
-ms.date: 06/17/2026
+description: Copilot in Customer Insights - Data answers natural-language questions about customers, helping teams generate insights without IT help.
+ms.date: 07/10/2026
 ms.update-cycle: 180-days
 ms.topic: how-to
 author: radsay01
@@ -18,9 +18,9 @@ ms.collection: bap-ai-copilot
 > [!IMPORTANT]
 > Copilot features in Customer Insights - Data are only available in environments in the United States and Switzerland regions. These features may become available in additional regions in future releases.
 
-Understanding your customers’ profiles and preferences is essential for driving personalized experiences. Customer Insights – Data uses generative AI capabilities to let you ask questions in natural language to quickly generate insights about your customers. Now end users like marketers, sellers, and service agents can get insights to better understand and serve customers easily without the support of IT teams or other tools.
+To create personalized experiences, you need to understand your customers' profiles and preferences. Customer Insights - Data uses generative AI capabilities that let you ask questions in natural language to quickly generate insights about your customers. Now end users like marketers, sellers, and service agents can get insights to better understand and serve customers easily without the support of IT teams or other tools.
 
-For example, let’s say that you’d like to run a campaign targeted at improving customer loyalty. You can ask Copilot “How many customers aren't members of the loyalty program but have spent over $1,000 in the last six months?” You can then use this information to create a targeted segment and run an email campaign to boost loyalty program membership. The possibilities are endless. Have a dialog with your data today by asking questions in every day words to explore, assess, and better understand the profiles, behaviors, and activities of your customers.
+For example, let's say that you'd like to run a campaign targeted at improving customer loyalty. You can ask Copilot "How many customers aren't members of the loyalty program but have spent over $1,000 in the last six months?" You can then use this information to create a targeted segment and run an email campaign to boost loyalty program membership. The possibilities are endless. Have a dialog with your data today by asking questions in everyday words to explore, assess, and better understand the profiles, behaviors, and activities of your customers.
 
 Responses are generated in accordance with [Microsoft Responsible AI Standards.](https://www.microsoft.com/ai/responsible-ai) For more information, see [FAQ for dialog with data.](faqs-dialog-data.md)
 
@@ -38,9 +38,9 @@ Responses are generated in accordance with [Microsoft Responsible AI Standards.]
 
 1. In Customer Insights - Data, go to **Insights** > **Discovery**.
 
-1. A pop-up box explains the feature and asks for your consent to share your prompts to continuously improve the quality of the results, or answers, generated. Choose your preference. You only need to do give consent once, and you can always change your preference on the **Discovery** page later.
+1. A pop-up box explains the feature and asks for your consent to share your prompts to continuously improve the quality of the results, or answers, generated. Choose your preference. You only need to give consent once, and you can always change your preference on the **Discovery** page later.
 
-   :::image type="content" source="media/copilot-customer-insights.png" alt-text="Screenshot of the dialog with data feature, with copilot AI answering a user question.":::
+   :::image type="content" source="media/copilot-customer-insights.png" alt-text="Screenshot of the dialog with data feature, with Copilot answering a user question.":::
 
 The **Discover insights about your customers in natural language** page contains four key components:
 

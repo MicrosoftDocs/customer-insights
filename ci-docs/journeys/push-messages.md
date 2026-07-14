@@ -1,7 +1,7 @@
 ---
 title: Create push notifications
-description: Create effective push notifications for Customer Insights - Journeys. Learn how to set up, personalize, and send push messages to engage your app users.
-ms.date: 12/08/2025
+description: Push notifications in Customer Insights - Journeys let you create, personalize, and send mobile app messages, add images, and track engagement results.
+ms.date: 07/09/2026
 ms.update-cycle: 180-days
 ms.topic: how-to
 author: alfergus
@@ -16,28 +16,27 @@ ms.custom:
 
 # Create push notifications
 
-Push notifications are messages sent to customers who installed your mobile app. Push messages allow you to quickly convey offers, messages, or other information directly to users of your app.
+Push notifications are messages sent to customers who installed your mobile app. Push messages let you quickly convey offers, messages, or other information directly to users of your app.
 
 You can send push messages as part of your journeys, similar to other outbound messages like text messages.
 
 ## Set up push notifications
 
-To set up push notifications, you need administrator privileges. If you have the correct credentials, the first setup step requires [creating a mobile app configuration](push-notifications-setup.md). The second setup step requires [developer setup within your mobile app](developer-push-device-registration.md).
+To set up push notifications, you need administrator privileges. First, [create a mobile app configuration](push-notifications-setup.md). Then complete [developer setup in your mobile app](developer-push-device-registration.md).
 
 ## Create push notification messages
 
 After you create your mobile app configuration, you can start creating push notification messages by going to **Customer Insights - Journeys** > **Channels** > **Push notifications** and selecting **+New push notification** in the top ribbon. **+New push notification** takes you to the push notification message editor.
 
-> [!div class="mx-imgBorder"]
-> ![Push editor screenshot.](media/real-time-marketing-push-notification.png "Push editor screenshot")
+:::image type="content" source="media/real-time-marketing-push-notification.png" alt-text="Screenshot of the Customer Insights - Journeys push notification editor with fields for title, message, image, and mobile previews." lightbox="media/real-time-marketing-push-notification.png":::
 
 In the push notification message editor, you can enter a title, a subtitle, a message, an image, and preview how your message appears in iOS and Android.
 
-Using the **On-click behavior** field, you can also specify the message behavior when customers tap on the message in their mobile phones.
+Use the **On-click behavior** field to choose what happens when recipients tap the notification on their mobile devices.
 - **Open the app**: Opens the mobile application.
 - **Open the browser**: Opens a specified URL.
 
-Try test-sending the push notification to your mobile app configuration or add it to a journey to see how it can be used. To stop messages from being sent, you can deactivate or delete them.
+Send a test push notification to your mobile app configuration, or add the message to a journey to see how it works. To stop messages from being sent, you can deactivate or delete them.
 
 ## Push notification images
 
@@ -55,7 +54,7 @@ As with the email editor, you can personalize push notifications to insert dynam
 
 To personalize a push notification:
 
-1. Select the **Personalization** ![The Personalization button.](media/real-time-marketing-personalization2.png "The Personalization button") button in the **Message** field.
+1. Select the **Personalization** ![Screenshot of the Personalization button in the push notification message editor.](media/real-time-marketing-personalization2.png "The Personalization button") button in the **Message** field.
 1. Choose a data source by selecting **Select a data field**. Your data source can be based on an **Audience**, a **Trigger**, or **Compliance**.
 1. After choosing the data source, search for the specific attribute or trigger you want.
 1. Add a **Label** to quickly identify your token in the message content.
@@ -83,36 +82,35 @@ To add inline conditions in a push notification message:
 
 1. To set up the condition, select the **placeholder** name to configure (for example, "placeholderName") and select the personalization icon.
 
-    :::image type="content" source="media/code-text-message.png" alt-text="Set up condition using placeholder name to personalize." lightbox="media/code-text-message.png":::
+    :::image type="content" source="media/code-text-message.png" alt-text="Screenshot of the push notification editor with a conditional statement and placeholder selected for personalization." lightbox="media/code-text-message.png":::
 
-1. Select the condition you want. In this example, the first placeholder activates the condition if the contact’s address is in Spain.
+1. Select the condition you want. In this example, the first placeholder activates the condition if the contact's address is in Spain.
     
-    :::image type="content" source="media/select-condition-text-message.png" alt-text="Select condition." lightbox="media/select-condition-text-message.png":::
+    :::image type="content" source="media/select-condition-text-message.png" alt-text="Screenshot of the condition picker showing how to set a placeholder condition for push notification content." lightbox="media/select-condition-text-message.png":::
 
 1. Once done, select **Save**.
 
-    :::image type="content" source="media/save-text-message.png" alt-text="Save condition." lightbox="media/save-text-message.png":::
+    :::image type="content" source="media/save-text-message.png" alt-text="Screenshot of the Save button used to store the push notification condition." lightbox="media/save-text-message.png":::
     
 1. Repeat these steps for each condition you add.
 
 ## Add a Customer Voice survey to a push notification
 
-Adding a Customer Voice survey link to a push notification or [text message](real-time-marketing-outbound-text-messaging.md#add-a-customer-voice-survey-to-a-text-message) allows you to seek feedback from customers on the channels they use the most.
+Adding a Customer Voice survey link to a push notification or [text message](real-time-marketing-outbound-text-messaging.md#add-a-customer-voice-survey-to-a-text-message) lets you collect feedback from customers on the channels they use most.
 
 To add a Customer Voice survey to a push notification:
 
-1. Select the **Customer Voice survey** button ![The Customer Voice survey button.](media/real-time-marketing-customer-voice.png "The Customer Voice survey button") in the **Message** field.
+1. Select the **Customer Voice survey** button ![Screenshot of the Customer Voice survey button in the push notification message editor.](media/real-time-marketing-customer-voice.png "The Customer Voice survey button") in the **Message** field.
 1. Choose a Customer Voice survey in the lookup field.
 1. Select whether you want the survey to be anonymous and whether you want to track the survey link after customers select it. If you select the **Survey is anonymous** option, no user data is saved with the answers.
-    > [!div class="mx-imgBorder"]
-    > ![Customer Voice survey options screenshot.](media/real-time-marketing-survey-options.png "Customer Voice survey options screenshot")
+    :::image type="content" source="media/real-time-marketing-survey-options.png" alt-text="Screenshot of Customer Voice survey options for anonymous responses and link tracking in a push notification." lightbox="media/real-time-marketing-survey-options.png":::
 1. Select **Save**.
 
 When you send the push notification from a journey, it automatically populates the token with the survey and options you selected.
 
 ## Consent and compliance in push notifications
 
-Push notifications require you to set a Compliance Profile and Purpose for a push notification. There are no consent checks performed for push notifications. The compliance profile is used to enforce any quiet times that might be applicable to push notifications.
+Set a compliance profile and purpose for each push notification. Push notifications don't perform consent checks, but the compliance profile enforces any applicable quiet times.
 
 ## Send push notification messages in a journey
 

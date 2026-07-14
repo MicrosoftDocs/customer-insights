@@ -1,7 +1,7 @@
 ---
 title: Analyze sentiment for customer feedback (preview)
-description: Learn how to use a sentiment analysis model on customer feedback in Dynamics 365 Customer Insights - Data."
-ms.date: 12/08/2025
+description: Sentiment analysis in Customer Insights - Data assigns sentiment scores and business aspects to customer feedback for deeper insight.
+ms.date: 07/10/2026
 ms.update-cycle: 180-days
 ms.reviewer: alfergus
 ms.topic: how-to
@@ -18,7 +18,7 @@ Sentiment analysis enables you to synthesize customer sentiment and identify bus
 
 [!INCLUDE [public-preview-note](includes/public-preview-note.md)]
 
-## Overview
+## Overview of sentiment analysis
 
 The sentiment analysis feature generates two derived insights per customer ID. A sentiment score (of -5 to 5) and list of applicable business aspects (areas of business) that together help you better understand the customer feedback.
 
@@ -82,7 +82,7 @@ Dynamics 365 Customer Insights - Data can process up to 10 million feedback reco
 
 1. Select the semantic activity type **Feedback** that contains the feedback data. If the activity has not been set up, select **here** and create it.
 
-   :::image type="content" source="media/sentiment-add-feedback-activities.png" alt-text="Configuration step to select feedback activities for sentiment analysis.":::
+   :::image type="content" source="media/sentiment-add-feedback-activities.png" alt-text="Screenshot of the configuration step to select feedback activities for sentiment analysis.":::
 
 1. Select the activities to use for this sentiment analysis, then select **Next**.
 
@@ -110,12 +110,12 @@ There are two tabs of results.
 
 There are four primary sections of data within the results page.
 
-- **Average sentiment score**: Sentiment scores helps you understand the overall sentiment across all customers.
+- **Average sentiment score**: Sentiment scores help you understand the overall sentiment across all customers.
   - **Negative** (-5 > 2)
   - **Neutral** (-1 > 1)
   - **Positive** (2 > 5)
   
-  :::image type="content" source="media/overall-customer-sentiment.png" alt-text="Visual representation of the overall customer sentiment.":::
+  :::image type="content" source="media/overall-customer-sentiment.png" alt-text="Screenshot of the average sentiment score summary showing negative, neutral, and positive ranges.":::
 
 - **Distribution of customers by sentiment score**: Customers are categorized into negative, neutral, and positive groups based on their sentiment scores. Hover over the bars in the histogram to see the number of customers and average sentiment score in each group. This data can help you [create segments of customers](prediction-based-segment.md) based on their sentiment scores.  
 
@@ -123,7 +123,7 @@ There are four primary sections of data within the results page.
 
 - **Average sentiment score over time**: Customer sentiment may change over time. We provide trends in your customers’ sentiments for the time range of your data. This view helps you gauge the effect of seasonal promotions, product launches, or other time-bound interventions on customer sentiment. See the graph by selecting the year-of-interest from the dropdown menu.
 
-  :::image type="content" source="media/sentiment-score-over-time.png" alt-text="History chart with the sentiment score over time represented as a line.":::
+  :::image type="content" source="media/sentiment-score-over-time.png" alt-text="Line chart showing the average sentiment score trend over time.":::
 
 - **Sentiment across business aspects**: Average sentiment across business aspects helps you gauge which aspects of your business already satisfy customers or require more attention. Feedback records that don't align to any of the supported business aspects are categorized under **Other**. Sort the data by selecting any column.
 
@@ -149,7 +149,7 @@ There are three sections of additional information that explain how the sentimen
 - **Feedback samples**: Actual feedback records, one with a negative sentiment and one with a positive sentiment. Words in the feedback records are highlighted according to their contribution to the assigned sentiment score. Words that contribute to a positive sentiment score are highlighted in green. Words contributing to a negative score are highlighted in red.
    Select **See more** to load more feedback samples.
   
-   :::image type="content" source="media/sentiment-feedback-samples.png" alt-text="Examples of sentiment analysis on customer feedback.":::
+   :::image type="content" source="media/sentiment-feedback-samples.png" alt-text="Screenshot of example feedback records highlighted with positive and negative sentiment words.":::
 
 **Show offensive words**: Lets you include offensive words in the list from original customer feedback data. By default, it's turned off.  Offensive word masking is powered by an AI model and may not detect all offensive words. If you detect an offensive word that wasn't filtered as expected, let us know.
 
@@ -157,9 +157,9 @@ There are three sections of additional information that explain how the sentimen
 
 To create new segments of customers from the sentiment analysis results, select **Create segments** at the top of the model result page.
 
-## Potential bias
+## Potential bias in sentiment analysis
 
-As with any feature that uses predictive artificial intelligence, there could be potential bias in the data you use to predict customer sentiment. For example, if you only collect feedback digitally, you might miss feedback from customers who primarily conduct business with you in person, which affect the feature’s output.
+As with any feature that uses predictive artificial intelligence, potential bias can exist in the data you use to predict customer sentiment. For example, if you only collect feedback digitally, you might miss feedback from customers who primarily conduct business with you in person, which affects the feature's output.
 
 As this feature uses automated means to evaluate data and make predictions based on that data, it therefore has the capability to be used as a method of profiling, as that term is defined by privacy laws and regulations. Your use of this feature to process data may be subject to those laws or regulations. You are responsible for ensuring that your use of Customer Insights - Data, including sentiment analysis, complies with all applicable laws and regulations, including laws related to privacy, personal data, biometric data, data protection, and confidentiality of communications.
 

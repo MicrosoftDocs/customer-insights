@@ -1,7 +1,7 @@
 ---
 title: Use custom models from Azure Synapse
-description: Learn how to create custom AI models in Azure Synapse and use them in your Dynamics 365 Customer Insights workflows.
-ms.date: 12/08/2025
+description: Understand the prerequisites, connection setup, and workflow steps for using custom Azure Synapse Analytics AI models in Customer Insights - Data.
+ms.date: 07/10/2026
 ms.update-cycle: 180-days
 ms.topic: how-to
 author: radsay01
@@ -45,7 +45,7 @@ Data is transferred between your Customer Insights - Data instances and the sele
 1. Enter or select connection information:
 
    - **Display name**: Enter a unique, recognizable name that describes the connection. It must start with a letter and contain only letters, numbers, and underscores.
-   - **Choose who can use this connection**: Select **Administrators only** or **administrators and contributors**.
+   - **Choose who can use this connection**: Select **Administrators only** or **Administrators and contributors**.
    - **Subscription**: Select an Azure Synapse subscription for this connection.
    - **Workspace**: Select an Azure Synapse workspace or select [**Create new**](/azure/synapse-analytics/quickstart-create-workspace) to set up a new one.
    - **Storage account**: Select an Azure storage account or select [**Link new**](/azure/storage/common/storage-account-create?bc=%2Fazure%2Fsynapse-analytics%2Fbreadcrumb%2Ftoc.json&tabs=azure-portal) to link to a new one.

@@ -1,14 +1,14 @@
 ---
 title: Use custom models from Azure Machine Learning
 description: Learn how to create custom AI models in Azure Machine Learning and use them in your Dynamics 365 Customer Insights workflows.
-ms.date: 12/08/2025
+ms.date: 07/10/2026
 ms.update-cycle: 180-days
 ms.reviewer: alfergus
 ms.topic: how-to
 author: radsay01
 ms.author: sstabbert
 ms.custom: bap-template
-ms.collection: bap-ai-copilot 
+ms.collection: bap-ai-copilot
 ---
 
 # Use custom models from Azure Machine Learning
@@ -28,7 +28,7 @@ Workflows in Dynamics 365 Customer Insights - Data help you choose the data you 
 
   - Customer Insights - Data environment: Admin or Contributor privileges
 
-- Storage account: An [Azure Data Lake Storage Gen2 account](/azure/storage/blobs/data-lake-storage-quickstart-create-account) that's associated with your Azure Studio instance
+- Storage account: An [Azure Data Lake Storage Gen2 account](/azure/storage/blobs/data-lake-storage-quickstart-create-account) that's associated with your Azure Machine Learning workspace
 
 Custom models in Customer Insights - Data don't support data sources that are updated with incremental refresh.
 

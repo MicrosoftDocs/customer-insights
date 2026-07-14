@@ -1,7 +1,7 @@
 ---
 title: Predict customer lifetime value (CLV)
-description: "Predict revenue potential for active customers in the future."
-ms.date: 12/08/2025
+description: "Configure a CLV prediction model to estimate future customer revenue, define active customers, and identify high-value segments."
+ms.date: 07/10/2026
 ms.update-cycle: 180-days
 ms.reviewer: alfergus
 ms.topic: how-to
@@ -13,15 +13,15 @@ ms.collection: bap-ai-copilot
 
 # Predict customer lifetime value (CLV)
 
-Predict potential value (revenue) that individual active customers will bring in to your business through a defined future time period. This prediction helps you:
+Predict the potential value (revenue) that individual active customers bring to your business over a set future time period. This prediction helps you:
 
-- Identify high-value customers and process this insight.
+- Identify high-value customers and act on this insight.
 - Create strategical customer segments based on their potential value to run personalized campaigns with targeted sales, marketing, and support efforts.
 - Guide product development by focusing on features that increase customer value.
 - Optimize sales or marketing strategy and allocate budget more accurately for customer outreach.
 - Recognize and reward high-value customers through loyalty or rewards programs.
 
-Determine what CLV means for your business. We support transaction-based CLV prediction. The predicted value of a customer is based on the history of business transactions. Consider creating several models with varying input preferences and compare model results to see which model scenario best fits your business needs.
+Determine what CLV means for your business. The system supports transaction-based CLV prediction, so it calculates the predicted value of a customer from their business transaction history. Consider creating several models with varying input preferences and compare model results to see which model scenario best fits your business needs.
 
 > [!TIP]
 > Try the CLV prediction using sample data: [Customer lifetime value (CLV) prediction sample guide](sample-guide-predict-clv.md).
@@ -97,7 +97,7 @@ Select **Save draft** at any time to save the prediction as a draft. The draft p
 
 1. Under **Activities**, if the activity attributes were semantically mapped when the activity was created, choose the specific attributes or table you'd like the calculation to focus on. If semantic mapping did not occur, select **Edit** and map your data.
   
-   :::image type="content" source="media/CLV-add-required.PNG" alt-text="Add required data for CLV model":::
+   :::image type="content" source="media/CLV-add-required.PNG" alt-text="Screenshot of the Add required data for CLV pane showing transaction history activity fields.":::
 
 1. Select **Next** and review the attributes required for this model.
 
@@ -136,7 +136,7 @@ With this information, they organize a local event for the launch of the espress
 
 1. Map more fields if the data is available in your unified customer profiles.
 
-   :::image type="content" source="media/clv-optional-customer-profile-mapping.png" alt-text="Example of mapped fields for customer profile data.":::
+   :::image type="content" source="media/clv-optional-customer-profile-mapping.png" alt-text="Screenshot of mapped customer profile fields used as optional data for the CLV model.":::
 
 1. Select **Save**.
 
@@ -168,7 +168,7 @@ There are three primary sections of data within the results page.
 
 - **Training model performance**: Grades A, B, or C indicate the performance of the prediction and can help you make the decision to use the results stored in the output table.
   
-  :::image type="content" source="media/clv-model-score.png" alt-text="Image of the model score information box with the grade A.":::
+  :::image type="content" source="media/clv-model-score.png" alt-text="Screenshot of the model score information box showing a training model performance grade of A.":::
 
   The system assesses how the AI model performed in predicting the high value customers as compared to a baseline model.
 
@@ -181,11 +181,11 @@ There are three primary sections of data within the results page.
 
 - **Value of customers by percentile**: Low-value and high-value customers display in a chart. Hover over the bars in the histogram to see the number of customers in each group and the average CLV of that group. Optionally, [create segments of customers](prediction-based-segment.md) based on their CLV predictions.
   
-   :::image type="content" source="media/CLV-value-percent.png" alt-text="Value of customers by percentile for CLV model":::
+   :::image type="content" source="media/CLV-value-percent.png" alt-text="Screenshot of the value of customers by percentile chart for the CLV prediction results.":::
 
 - **Most influential factors**: Various factors are considered when creating your CLV prediction based on the input data provided to the AI model. Each of the factors has their importance calculated for the aggregated predictions a model creates. Use these factors to help validate your prediction results. These factors also provide more insight about the most influential factors that contributed towards predicting CLV across all your customers.
   
-   :::image type="content" source="media/CLV-influence-factors.png" alt-text="Most influential factors for CLV model":::
+   :::image type="content" source="media/CLV-influence-factors.png" alt-text="Screenshot of the most influential factors chart for the CLV prediction results.":::
 
 ### Learn about the score
 

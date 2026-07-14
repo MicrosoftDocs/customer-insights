@@ -1,7 +1,7 @@
 ---
 title: Create segments with Copilot for Customer Insights - Data (preview)
-description: Build segments faster with Copilot for Customer Insights - Data. Use natural language prompts to create targeted customer segments. Get started today.
-ms.date: 06/17/2026
+description: Use Copilot to create customer segments in Customer Insights - Data with natural language prompts and improve results with feedback.
+ms.date: 07/10/2026
 ms.update-cycle: 180-days
 ms.reviewer: alfergus
 ms.topic: how-to
@@ -47,7 +47,7 @@ Copilot provides personalized, suggested prompts based on data in your environme
 
    1. To save the configuration, select **Save** and then **Close**. The segment is in draft mode or inactive so you can make changes to the configuration before actually creating the segment. Or, select **Run** to save and create the segment.
 
-If the resulting segment contains multiple [relationship paths](relationships.md), it uses the shortest path by default. **Edit** the segment to change the relationship path.  
+If the resulting segment contains multiple [relationship paths](relationships.md), it uses the shortest path by default. **Edit** the segment to change the relationship path.
 
 ## Next steps
 

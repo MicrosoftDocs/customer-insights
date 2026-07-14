@@ -1,7 +1,7 @@
 ---
 title: New and upcoming features
-description: Discover the latest features, improvements, and bug fixes in Dynamics 365 Customer Insights - Journeys. Stay updated with our monthly release notes.
-ms.date: 07/06/2026
+description: Dynamics 365 Customer Insights - Journeys release notes list monthly preview features, general availability updates, enhancements, and bug fixes.
+ms.date: 07/09/2026
 ms.update-cycle: 180-days
 ms.topic: whats-new
 author: alfergus
@@ -18,9 +18,9 @@ ms.custom:
 
 [!INCLUDE [marketing-trial-cta](./includes/marketing-trial-cta.md)]
 
-We're excited to announce our newest updates! This article summarizes early access features, preview features, general availability enhancements, monthly updates, and bug fixes. To see the long-term feature plans, take a look at the [Dynamics 365 and Power Platform release plans](/dynamics365/release-plans/).
+This article lists monthly release notes for Dynamics 365 Customer Insights - Journeys, including early access features, preview features, general availability updates, enhancements, and bug fixes. For longer-term feature plans, see the [Dynamics 365 and Power Platform release plans](/dynamics365/release-plans/).
 
-Customer Insights - Journeys updates are [pushed to customers automatically](https://cloudblogs.microsoft.com/dynamics365/it/2020/04/27/automatic-update-policy-for-dynamics-365-marketing/). Solutions are available for early validations. To manually update your instances, follow the steps in [Keep Customer Insights - Journeys up to date](apply-updates.md).
+Customer Insights - Journeys updates are [pushed to customers automatically](https://cloudblogs.microsoft.com/dynamics365/it/2020/04/27/automatic-update-policy-for-dynamics-365-marketing/). Solutions are available for early validation. To update your instances manually, follow the steps in [Keep Customer Insights - Journeys up to date](apply-updates.md).
 
 To submit and vote on **feature requests** and **product suggestions**, go to the [Dynamics 365 Application Ideas portal](https://experience.dynamics.com/ideas/categories/?forum=dfa5b83d-9e4c-e811-a956-000d3a1bef07&forumName=Dynamics%20365%20Marketing).
 
@@ -59,7 +59,7 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 #### Public preview
 
 - **Create journeys in minutes with Journey Creation Agent**
-	- With the new Journey Creation Agent in Dynamics 365 Customer Insights - Journeys, anybody can create journeys in minutes, even if they've never done it before. Instead of spending time getting the mechanics of the journey right, you can now ensure you deliver the most personalized experience for your customers. Move from idea to execution in minutes, freeing up time and reducing dependency on technical experts.
+	- With the new Journey Creation Agent in Dynamics 365 Customer Insights - Journeys, anyone can create journeys in minutes, even if they've never done it before. Instead of spending time getting the mechanics of the journey right, you can now ensure you deliver the most personalized experience for your customers. Move from idea to execution in minutes, freeing up time and reducing dependency on technical experts.
 	- [Release plan](/dynamics365/release-plan/2026wave1/customer-insights/dynamics365-customer-insights-journeys/create-journeys-minutes-journey-creation-agent)
 	- [Docs](journey-creation-agent.md)
 
@@ -95,7 +95,7 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 > The following features are available as part of the 1.1.65002.153 update. To use AI Hub and the Journey Creation Agent, navigate to **Settings** > **Versions** and upgrade to 1.1.65002.153.
 
 - **Create journeys in minutes with Journey Creation Agent**
-	- With the new Journey Creation Agent in Dynamics 365 Customer Insights - Journeys, anybody can create journeys in minutes, even if they've never done it before. Instead of spending time getting the mechanics of the journey right, you can now ensure you deliver the most personalized experience for your customers. Move from idea to execution in minutes, freeing up time and reducing dependency on technical experts.
+	- With the new Journey Creation Agent in Dynamics 365 Customer Insights - Journeys, anyone can create journeys in minutes, even if they've never done it before. Instead of spending time getting the mechanics of the journey right, you can now ensure you deliver the most personalized experience for your customers. Move from idea to execution in minutes, freeing up time and reducing dependency on technical experts.
 	- [Docs](journey-creation-agent.md)
  	- [Release plan](/dynamics365/release-plan/2026wave1/customer-insights/dynamics365-customer-insights-journeys/create-journeys-minutes-journey-creation-agent)
  
@@ -117,7 +117,7 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 	- Test send now lets you select up to 10 conditional content variations and send a test email for each in a single action. This makes it easy to validate that every variation of your email renders correctly before launching your campaign, without repeating the test for each email.
 
 - **Segment expiration window extended to 120 days**
-    - Last month, we began changing the state of segments that had been unused for more than 30 days to a new “Expired” state. We’ve now extended that automatic expiration window to 120 days. Expired segments can be republished to put them back in a "Ready to use” state for use in journeys and other segments.
+    - Last month, we began changing the state of segments that had been unused for more than 30 days to a new "Expired" state. We've now extended that automatic expiration window to 120 days. Expired segments can be republished to put them back in a "Ready to use" state for use in journeys and other segments.
 
 - **Improved formatting for segment query viewer**
     - The query viewer in the segment designer has been updated with improved formatting, making it easier to read and understand the query structure.
@@ -126,7 +126,7 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
     - Build segments even faster with new drag-and-drop segment editing capabilities. You can drag in attributes, interactions, and segments from the right panel directly onto the design canvas to add them to existing groups or create new ones. You can also drag and drop groups and conditions within the canvas to quickly reorder elements.
 
 - **Audit history tab is now available for segments**
-    - When auditing is enabled for segments, an “Audit history” tab is now available to make it easier to view past changes to the segment definition.
+    - When auditing is enabled for segments, an "Audit history" tab is now available to make it easier to view past changes to the segment definition.
 
 ### April 2026 update
 
@@ -155,11 +155,11 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 #### Monthly enhancements
 
 - **Using HTML in personalization data requires explicit user acknowledgment**
-	- Dynamic text and lists allow you to personalize content in emails and text messages. The source content used for personalization is typically expected to be plain text, so brand and other formatting is applied consistently across the entire message. However, there may be situations where you need to insert additional HTML tags in this source content to achieve specific formatting. We’ve introduced a new advanced option that allows HTML insertion to be included in the source content. For safety, this option is disabled by default.
+	- Dynamic text and lists allow you to personalize content in emails and text messages. The source content used for personalization is typically expected to be plain text, so brand and other formatting is applied consistently across the entire message. However, there may be situations where you need to insert additional HTML tags in this source content to achieve specific formatting. We've introduced a new advanced option that allows HTML insertion to be included in the source content. For safety, this option is disabled by default.
 	- [Docs](real-time-marketing-predefined-dynamic-text.md#allow-html-content-in-source-content)
 
 - **Fix email rendering issues**
-	- Rendering emails exactly as designed is critical for protecting a company’s brand. However, email clients vary widely in how they interpret standard HTML. While the email designer automatically generates special HTML code to handle a variety of email clients, there may still be specific situations where emails don’t render as expected. We’ve added a new article documenting known email rendering issues and tips and workarounds for them.
+	- Rendering emails exactly as designed is critical for protecting a company's brand. However, email clients vary widely in how they interpret standard HTML. While the email designer automatically generates special HTML code to handle a variety of email clients, there may still be specific situations where emails don't render as expected. We've added a new article documenting known email rendering issues and tips and workarounds for them.
 	- [Docs](email-troubleshoot-rendering.md)
 
 ### March 2026 update
@@ -173,7 +173,7 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 - **Create static segments with up to 200,000 members**
     - Marketers often receive customer lists from various systems and need to act quickly. These lists typically lack the attributes required for dynamic segments or aren't part of an existing Dataverse view. This feature enables marketers to build static segments with up to 200,000 members using data from any source. Marketers can upload CSV files, use the API to create segments as part of a workflow, or select contacts from a Dataverse view.
     - [Release plan](/dynamics365/release-plan/2025wave2/customer-insights/dynamics365-customer-insights-journeys/create-static-segments-up-200000-members)
-    - [Docs](real-time-marketing-build-segments.md#use-csv-files-to-define-static-segment-membership-lists-for-up-to-2000000-members)
+    - [Docs](real-time-marketing-build-segments.md#statically-include-or-exclude-up-to-2000000-segment-members)
 
 - **Drive confident engagement with enhanced consent‑based segmentation**
 	- As a marketer, you want to grow relationships on a foundation of trust, sending messages only to customers who expect to hear from you. Enhanced consent‑based segmentation turns your consent policies into clear, ready‑to‑use audiences. You can instantly see who qualifies for each purpose and channel, and build segments that stay aligned with your compliance profiles by design. You move faster from consent data to active audiences, so every journey is both relevant and respectful of customer choices.
@@ -222,7 +222,7 @@ Learn how to make the most of the new Dynamics 365 Customer Insights features in
 		* Ability to refresh segments manually.
 		* Added common commands *Assign* and *Deactivate* to the command bar and enable them for customization.
 		* Support for circular relationships (Contact > related table(s) > Contact).
-		* Changed how related tables are evaluated to align with more common usage (`RELATEOPTIONAL` is the default now, `RELATE` remains available through the advanced menu. `RELATEOPTIONAL` allows rows to be returned even when the related record doesn’t exist, treating the relationship as optional).
+		* Changed how related tables are evaluated to align with more common usage (`RELATEOPTIONAL` is the default now, `RELATE` remains available through the advanced menu. `RELATEOPTIONAL` allows rows to be returned even when the related record doesn't exist, treating the relationship as optional).
 		* Stopped segments can be edited and published again.
 		* Fixed issues with timeline where items were showing up out of order and had other issues with the end of the year.
 		* Improved messages and information throughout (for example, show logical name to disambiguate similarly named attributes).
