@@ -1,7 +1,7 @@
 ---
 title: Responsible AI FAQs for smart image recommendations
-description: Learn how to responsibly use AI for smart image recommendations in Dynamics 365 Customer Insights - Journeys. Discover key considerations and best practices.
-ms.date: 06/16/2026
+description: Smart image recommendations in Customer Insights - Journeys suggest relevant library images for email and message content with human review.
+ms.date: 07/09/2026
 ms.update-cycle: 180-days
 ms.topic: faq
 author: alfergus
@@ -17,32 +17,32 @@ ms.custom:
 
 # Responsible AI FAQs for smart image recommendations
 
-These responsible AI FAQs describe the AI impact of Dynamics 365 Customer Insights - Journeys's smart image recommendations feature.
+These responsible AI FAQs explain how the smart image recommendations feature in Dynamics 365 Customer Insights - Journeys works, what it can do, and its limitations.
 
-## What is Copilot smart image recommendations? 
+## What is the Copilot smart image recommendations feature?
 
-An AI based system that automatically recommends images from your library that best complement your content.
+The Copilot smart image recommendations feature is an artificial intelligence (AI)-based capability that recommends images from your library that best match your content.
 
-## What are the capabilities of Copilot smart image recommendations?  
+## What can the Copilot smart image recommendations feature do?
 
-Copilot smart image recommendations analyzes your content (for example, text in an email) and recommend images from your library that are the most relevant to your content.
+Copilot smart image recommendations analyzes your content, such as email text, and recommends images from your library that are most relevant to that content.
 
-## What is the intended use of Copilot smart image recommendations? 
+## What is the intended use of the Copilot smart image recommendations feature?
 
-To help marketing professionals create a message for a channel (for example, email) for a customer journey using image recommendations.
+This feature helps marketing professionals choose images for channel content, such as email, when they build customer journeys.
 
-## How was Copilot smart image recommendations evaluated? What metrics are used to measure performance? 
+## How was the Copilot smart image recommendations feature evaluated? What metrics are used to measure performance?
 
-Smart image recommendations underwent substantial testing before the feature was released. The feature analyzes user content and suggests images available only in the user’s library.
+Smart image recommendations underwent substantial testing before release. The feature analyzes user content and suggests only images that are available in the user's library.
 
-## What are the limitations of Copilot smart image recommendations? How can users minimize the impact of Copilot smart image recommendations limitations when using the system?
+## What are the limitations of the Copilot smart image recommendations feature? How can users minimize their impact?
 
-The system can't suggest any related images if it can't find images in the library that are relevant to the user’s content. Users must search the library or upload an image to choose relevant images.
+The system can't suggest relevant images if it can't find matching images in the user's library. If that happens, search the library manually or upload an image that fits the content.
 
-## What operational factors and settings allow for effective and responsible use of Copilot smart image recommendations?
+## What operational factors and settings support effective and responsible use of the Copilot smart image recommendations feature?
 
-Follow these procedures to make the most out of the smart image recommendations:
-1. Add your content (for example, text in email) before you add the image.
-1. Always review the suggested images before using them in your marketing channel.
+Follow these practices to get the most from smart image recommendations:
+1. Add your content, such as email text, before you add the image.
+1. Review suggested images before you use them in your marketing content.
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]

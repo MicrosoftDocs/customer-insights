@@ -1,20 +1,20 @@
 ---
 title: Responsible AI FAQs for Journey Creation Agent
-description: Discover how to use Journey Creation Agent in Dynamics 365 Customer Insights - Journeys responsibly. These FAQs provide essential guidelines and best practices.
-ms.date: 06/19/2025
+description: Journey Creation Agent in Customer Insights - Journeys helps marketers build customer journeys with natural language and human review.
+ms.date: 07/09/2026
 ms.update-cycle: 180-days
 ms.topic: faq
 author: cmenesatti-m
 ms.author: alfergus
 ms.reviewer: alfergus
 ms.collection: bap-ai-copilot
-ms.custom: 
+ms.custom:
   - transparency-note
 ---
 
 # Responsible AI FAQs for Journey Creation Agent
 
-These responsible AI FAQs describe the AI impact of Journey Creation Agent feature in Dynamics 365 Customer Insights - Journeys.
+These responsible AI FAQs explain how Journey Creation Agent in Dynamics 365 Customer Insights - Journeys works, what it can do, and its limitations.
 
 ## What is Journey Creation Agent?
 
@@ -27,7 +27,7 @@ The agent draws on your existing Dynamics 365 data—segments, custom triggers, 
 Journey Creation Agent can:
 
 - **Scaffold multi-step journeys** from a natural language description, including entry conditions, communication steps, wait periods, if/then branches, and exit conditions.
-- **Orchestrate across channels** including email, SMS, push notifications, and custom channels.
+- **Orchestrate across channels** including email, Short Message Service (SMS), push notifications, and custom channels.
 - **Reference your Dynamics 365 data** to ground the proposed journey in your actual segments, triggers, and content assets.
 - **Ask clarifying questions** to resolve ambiguity in your prompt before generating a proposal, for example, confirming the target segment, preferred timing, or journey type.
 - **Iterate conversationally** allowing you to request structural changes (add or remove steps, adjust timing, change branching logic, swap content assignments) through follow-up messages.
@@ -44,7 +44,7 @@ The feature isn't a replacement for human judgment. It's designed to accelerate 
 
 ## How was Journey Creation Agent evaluated? What metrics are used to measure performance?
 
-The agent was evaluated for each use case using curated datasets and quality metrics using a suite of golden scenarios that represent real-world marketing journey creation tasks.
+The agent was evaluated against curated datasets, quality metrics, and golden scenarios that represent real-world marketing journey creation tasks.
 
 **Comprehensive and accurate execution**
 
@@ -82,7 +82,7 @@ The agent was evaluated for each use case using curated datasets and quality met
 
 **The agent requires pre-existing channel configuration.** If a channel (such as SMS or push notifications) isn't configured in your environment, the agent can't add steps for that channel. Configure channels before using the agent for multi-channel journeys.
 
-**Content must be in *Ready to send state* to publish.** The agent may propose a journey that references content in *Draft* state. The journey can't be published until all referenced content is marked as *Ready to send*. Review content status before publishing.
+**Content must be in the *Ready to send* state before publishing.** The agent may propose a journey that references content in *Draft* state. The journey can't be published until all referenced content is marked as *Ready to send*. Review content status before publishing.
 
 **Custom triggers must be published.** Journeys that use custom triggers as entry conditions or branch conditions can't be published until those triggers are published and have active integration code. Verify trigger status before publishing.
 

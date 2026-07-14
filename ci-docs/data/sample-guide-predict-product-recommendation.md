@@ -1,7 +1,7 @@
 ---
 title: Product recommendation prediction sample guide
-description: Use this sample guide to try out the out of box product recommendation prediction model.
-ms.date: 12/08/2025
+description: Configure product recommendation prediction using sample eCommerce and loyalty data, from data ingestion to reviewing model results and segments.
+ms.date: 07/10/2026
 ms.update-cycle: 180-days
 ms.reviewer: alfergus
 ms.topic: article
@@ -21,7 +21,7 @@ This guide walks you through an end-to-end example of product recommendation pre
 
 ## Scenario
 
-Contoso is a company that produces high-quality coffee and coffee machines. They sell the products through their Contoso Coffee website. Their goal is to understand which products should they recommend to their recurring customers. Knowing what customers are more **likely to purchase** can help them save marketing efforts by focusing on specific items.
+Contoso is a company that produces high-quality coffee and coffee machines. They sell the products through their Contoso Coffee website. Their goal is to understand which products they should recommend to their recurring customers. Knowing what customers are more **likely to purchase** helps them save marketing efforts by focusing on specific items.
 
 ## Prerequisites
 
@@ -43,7 +43,7 @@ Review the articles [about data ingestion](data-sources.md) and [connecting to a
    - **DateOfBirth**: Date
    - **CreatedOn**: Date/Time/Zone
 
-   :::image type="content" source="media/ecommerce-dob-date.PNG" alt-text="Transform date of birth to date.":::
+   :::image type="content" source="media/ecommerce-dob-date.PNG" alt-text="Screenshot of Power Query showing the DateOfBirth column data type transformed to Date.":::
 
 1. In the **Name** field on the right-hand pane, rename your data source to **eCommerceContacts**.
 
@@ -128,7 +128,7 @@ With the unified customer profiles in place and activity created, run the produc
    - **Repeat purchases expected**: **Yes** to include previously purchased products in the recommendation.
    - **Look back window:** **365 days** to define how far the model will look back before recommending a product again.
 
-   :::image type="content" source="media/product-recommendation-model-preferences.png" alt-text="Model preferences for the product recommendation model.":::
+   :::image type="content" source="media/product-recommendation-model-preferences.png" alt-text="Screenshot of the model preferences step showing number of products, repeat purchases, and look back window settings.":::
 
 1. Select **Next**.
 
@@ -160,7 +160,7 @@ Running the model creates a new table, which is listed on **Data** > **Tables** 
 
 1. Select **Save** and **Run** the segment.
 
-You now have a segment that is dynamically updated which identifies the customers who might be interested in purchasing the five most recommended products. For more information, see [Create and manage segments](segments.md).
+You now have a dynamically updated segment that identifies the customers who might be interested in purchasing the five most recommended products. For more information, see [Create and manage segments](segments.md).
 
 > [!TIP]
 > You can also create a segment for a prediction model from the **Insights** > **Segments** page by selecting **New** and choosing **Create from** > **Insights**. For more information, see [Create a new segment with quick segments](segment-quick.md).

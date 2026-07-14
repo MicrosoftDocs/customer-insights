@@ -1,13 +1,13 @@
 ---
 title: Create and manage predictions
-description: Learn how to create and manage predictions in Dynamics 365 Customer Insights - Data."
-ms.date: 02/17/2026
+description: Create, refresh, and manage AI-powered predictions in Dynamics 365 Customer Insights - Data using out-of-box models like churn and lifetime value.
+ms.date: 07/10/2026
 ms.update-cycle: 180-days
 ms.reviewer: alfergus
 ms.topic: how-to
 author: radsay01
-ms.author: sstabbert 
-ms.collection: bap-ai-copilot 
+ms.author: sstabbert
+ms.collection: bap-ai-copilot
 ms.custom:
   - bap-template
   - sfi-image-nochange
@@ -54,7 +54,7 @@ Go to the **Insights** > **Predictions** page. On the **My predictions** tab, vi
 
 To view available actions, select a prediction.
 
-:::image type="content" source="media/predictions.png" alt-text="My predictions page.":::
+:::image type="content" source="media/predictions.png" alt-text="Screenshot of the My predictions page listing predictions with their status and refresh details.":::
 
 - **Edit** the prediction to change its properties.
 - [**Refresh**](#refresh-a-prediction) the prediction to include the latest data.
@@ -76,12 +76,12 @@ The report is available after a model completed its training process. Each model
 
 On the **My predictions** tab, select the prediction and choose **Input data usability report**. Or from the prediction details view, select **Input data usability report**.
 
-:::image type="content" source="media/input-data-usability-report.png" alt-text="Example of an input data usability report showing a table with errors, warnings, and recommendations.":::
+:::image type="content" source="media/input-data-usability-report.png" alt-text="Screenshot of an input data usability report showing errors, warnings, and recommendations in a table.":::
 
 The report includes:
 
 - **Name:** Descriptive name of the error, warning, or recommendation.
-- **Step:** Model phase, train or score, and the information refers to.
+- **Step:** Model phase (train or score) that the information refers to.
 - **State:** Severity of the information (error, warning, recommendation).
 - **Column name:** Column in a table that needs to be modified to improve the model performance.
 - **Table:** Name of the table that needs to be modified to improve the model performance.

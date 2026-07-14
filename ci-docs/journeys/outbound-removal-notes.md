@@ -1,7 +1,7 @@
 ---
 title: Notes about outbound marketing removal
-description: Outbound marketing removal from Dynamics 365 Customer Insights – Journeys is complete. Learn how to access your old tables, data, and assets after the transition.
-ms.date: 06/29/2026
+description: Outbound marketing removal notes explain which tables, data, assets, and archived documentation remain available after removal in Customer Insights - Journeys.
+ms.date: 07/09/2026
 ms.update-cycle: 180-days
 ms.topic: concept-article
 author: vinayd-msft
@@ -16,9 +16,9 @@ ms.custom:
 
 # Notes about outbound marketing removal
 
-Dynamics 365 Customer Insights – Journeys previously included an additional module called outbound marketing. This module was removed in May 2026.
+Dynamics 365 Customer Insights - Journeys previously included an additional module called outbound marketing. This module was removed in May 2026.
 
-This page contains some information that may be useful for customers who previously used this module.
+This article explains which outbound marketing tables, data, assets, and archived documentation remain available after removal.
 
 ## Accessing outbound marketing tables and data
 
@@ -28,8 +28,8 @@ If you previously used outbound marketing, you may still be able to access most 
 - **Outbound marketing analytics data**: Merged with real-time journeys data.
     - Existing Power BI custom reports for outbound marketing don't work with the consolidated data because the data format, its location, and access methods are different in real-time journeys.
     - Insights reports that are part of the outbound marketing user interface aren't available anymore. If you want to rebuild those reports, see [Build custom reports using Microsoft Fabric integration](fabric-integration.md).
-    - While the data models are the same between outbound marketing and real-time journeys, you must reconfigure existing custom reports and pipelines to use the new data sources in Microsoft Fabric. Here's the data schema: [Overview of Customer Insights - Journeys interaction data schema](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsightsjourneys/overview). The `SourceSystem` attribute refers to the source system (outbound marketing or real-time journeys) that generated the interaction.
-    - You can also export your data using Microsoft Fabric capabilities and its native connectors. Alternatively, if you wish to use a third-party system to store and process Customer Insights - Journey data, you can access and export interaction data into your own storage by following these steps:  [Leveraging Customer Insights - Journeys interaction data without Fabric](https://community.dynamics.com/blogs/post/?postid=75a63967-f115-f011-998a-7c1e525b5e9d).
+    - While the data models are the same between outbound marketing and real-time journeys, reconfigure existing custom reports and pipelines to use the new data sources in Microsoft Fabric. See the [Customer Insights - Journeys interaction data schema overview](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsightsjourneys/overview). The `SourceSystem` attribute refers to the source system (outbound marketing or real-time journeys) that generated the interaction.
+    - You can also export your data using Microsoft Fabric capabilities and its native connectors. Alternatively, if you want to use a third-party system to store and process Customer Insights - Journeys data, see [Leveraging Customer Insights - Journeys interaction data without Fabric](https://community.dynamics.com/blogs/post/?postid=75a63967-f115-f011-998a-7c1e525b5e9d).
 - **Events**: Shared capability between real-time journeys and outbound marketing; the same tables are used. These tables and the data aren't removed.
     - There are some critical differences in the event forms and pages between outbound marketing and real-time journeys. Therefore, events created in outbound marketing aren't usable in real-time and must be recreated in real-time using the [user interface](set-up-event.md) or [API](./developer/using-rtm-event-api.md).
 - **Outbound marketing segments**: Aren't removed, but aren't usable.
@@ -59,6 +59,6 @@ If you previously used outbound marketing, you may still be able to access most 
 
 ## Outbound marketing documentation
 
-As outbound marketing has reached its end of life, documentation pages about it have been removed. If you need to refer to the outbound marketing documentation, it's available for [download here](https://download.microsoft.com/download/85f03905-daeb-4370-8abe-f5c75f27daf9/dynamics365-customer-insights-journeys-outbound-marketing.pdf). The password for the document is `Outbound(not-supported)`. This documentation is provided for archival purposes. No updates are being made to this content, and it will be removed in the future without any further notice.
+As outbound marketing has reached its end of life, documentation pages about it have been removed. If you need to refer to the outbound marketing documentation, [download the archived outbound marketing documentation PDF](https://download.microsoft.com/download/85f03905-daeb-4370-8abe-f5c75f27daf9/dynamics365-customer-insights-journeys-outbound-marketing.pdf). The password for the document is `Outbound(not-supported)`. This documentation is provided for archival purposes. No updates are being made to this content, and it will be removed in the future without further notice.
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]

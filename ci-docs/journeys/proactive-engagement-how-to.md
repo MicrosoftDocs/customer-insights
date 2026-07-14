@@ -17,7 +17,7 @@ ms.custom:
 
 # Create conversational journeys
 
-To use conversational journeys, enable the **Contact Center integration** feature switch under the **Integrations** section. For more information, see [Use feature switches to enable or disable optional and preview features](admin-feature-switches.md#integrations).
+To use conversational journeys, enable the **Contact Center integration** feature switch under the **Integrations** section. For more information, see [Use feature switches to enable or disable optional and preview features](admin-feature-switches.md#integration-feature-switches).
 
 After you enable the feature, Customer Insights - Journeys automatically detects Dynamics 365 Contact Center if it's in the same environment.
 

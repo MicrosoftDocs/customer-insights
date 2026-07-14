@@ -1,7 +1,7 @@
 ---
 title: Get answers to questions about capabilities from Copilot (preview)
 description: Copilot in Customer Insights - Data answers your questions about app capabilities in natural language. Learn how to get help and explore features.
-ms.date: 06/17/2026
+ms.date: 07/10/2026
 ms.update-cycle: 180-days
 ms.reviewer: alfergus
 ms.topic: how-to
@@ -26,7 +26,7 @@ Administrators in Customer Insights - Data can disable all Copilot functionality
 
 This Copilot pane is available on all pages of Customer Insights - Data except:
 
-- When create or edit a segment, [Copilot assists you with segment creation](segments-copilot.md) instead.
+- When you create or edit a segment, [Copilot assists you with segment creation](segments-copilot.md) instead.
 
 [!INCLUDE [public-preview-note](includes/public-preview-note.md)]
 

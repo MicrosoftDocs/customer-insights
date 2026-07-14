@@ -1,7 +1,7 @@
 ---
-title: Transfer data and configurations between environments using the Configuration Migration tool
-description: Learn how to transfer data and configurations between Dynamics 365 environments using the Configuration Migration tool. Follow step-by-step instructions for seamless migration.
-ms.date: 04/21/2025
+title: Transfer data with the Configuration Migration tool
+description: Transfer Customer Insights - Journeys data between environments using the Configuration Migration tool, and understand its capabilities and limitations.
+ms.date: 07/13/2026
 ms.topic: how-to
 author: alfergus
 ms.author: colinbirkett
@@ -50,6 +50,8 @@ The following notes apply when you use export/import to move data from one Custo
 - If you export from a language not present on the destination environment, that language is added to the destination environment.
 - After a Customer Insights - Journeys journey is migrated, restored, or copied, its state changes from **Live** to **Stopped**. To restart a migrated, restored, or copied journey, first duplicate the journey and then execute it.
 - Triggers aren’t migrated when moving data between environments. You can, however, migrate triggers using Power Platform solutions. For more information, see [Move triggers between environments (ALM process for triggers)](move-triggers-between-environments.md).
+- Segments are stored in two tables: `msdynmkt_segment` and `msdynmkt_segmentdefinition`. When you transfer a segment, include *both* tables in your schema. If you transfer only one, the segment is incomplete and you can't go live with it on the destination environment.
+- Transfer segments in the **Draft** state, then publish them on the destination environment after the import.
 - Any events in the old environment must be re-created in the new environment.
 
 <a name="install-tools"></a>
@@ -70,13 +72,11 @@ To find your Customer Insights - Journeys version number:
 
 1. Select the **Resources** dropdown in the top ribbon, and then select **Dynamics 365 apps**.
 
-    > [!div class="mx-imgBorder"]
-    > ![Manage the apps installed on your environment.](media/admin-cv-instances.png)
+    :::image type="content" source="media/admin-cv-instances.png" alt-text="Screenshot of the Dynamics 365 apps list showing solutions installed on the selected environment." lightbox="media/admin-cv-instances.png":::
 
 1. A list of solutions installed on your selected environment is shown. Select the solution called **Dynamics 365 Customer Insights - Journeys Application**, and then select **Details** in the top ribbon.
 
-    > [!div class="mx-imgBorder"]
-    > ![Customer Insights - Journeys app details.](media/admin-mkt-version2.png)
+    :::image type="content" source="media/admin-mkt-version2.png" alt-text="Screenshot of the Customer Insights - Journeys application details pane showing the installed version." lightbox="media/admin-mkt-version2.png":::
 
 1. A pane appears on the right side of the page titled **Dynamics 365 Customer Insights - Journeys Application Details**. Verify the value shown in the **Version** column.
 
@@ -111,21 +111,21 @@ To export data from your source environment:
 
 1. The tool launches. Select **Export data** and then **Continue**.  
 
-    ![Select Export data and continue.](media/dmt-export1.png "Select Export data and continue")
+    :::image type="content" source="media/dmt-export1.png" alt-text="Screenshot of the Configuration Migration tool with the Export data option selected." lightbox="media/dmt-export1.png":::
 
 1. Set the **Deployment type** to **Microsoft 365** and then select **Login**.
 
-    ![Select Microsoft 365 and then Login.](media/dmt-export2.png "Select Microsoft 365 and then Login")
+    :::image type="content" source="media/dmt-export2.png" alt-text="Screenshot of the Configuration Migration tool with the Microsoft 365 deployment type selected for sign-in." lightbox="media/dmt-export2.png":::
 
 1. Follow the instructions on your screen to sign in using the username and password for the tenant where your source environment is running.
 
 1. If multiple environments are available on the tenant you signed in to, choose your source environment and select **Login**. (Skip this step if only one environment is available.)
 
-    ![Choose your source environment and then Login.](media/dmt-export2b.png "Choose your source environment and then Login")
+    :::image type="content" source="media/dmt-export2b.png" alt-text="Screenshot of the Configuration Migration tool showing the list of available source environments to sign in to." lightbox="media/dmt-export2b.png":::
 
 1. After signing in, choose a schema and export file name.
   
-    ![Choose a schema and export file name.](media/dmt-export3.png "Choose a schema and export file name")
+    :::image type="content" source="media/dmt-export3.png" alt-text="Screenshot of the Configuration Migration tool showing the schema file and export file name fields." lightbox="media/dmt-export3.png":::
 
     Make the following settings:
     - **Schema file**: Select the ellipsis button to open a file browser, and then navigate to and select the schema file that you generated for your source environment.
@@ -133,7 +133,7 @@ To export data from your source environment:
 
 1. Select **Export data**. The tool tracks the export progress and creates a zip file with the schema and your data when finished.
 
-    ![Export complete.](media/dmt-export4.png "Export complete")
+    :::image type="content" source="media/dmt-export4.png" alt-text="Screenshot of the Configuration Migration tool showing the export process completed successfully." lightbox="media/dmt-export4.png":::
 
 1. Select **Exit** to close the export page after the export is complete.
 
@@ -147,28 +147,28 @@ To import data to your destination environment:
 
 1. Select **Import data** and then **Continue**.
 
-    ![Select Import data and continue.](media/dmt-import1.png "Select Import data and continue")
+    :::image type="content" source="media/dmt-import1.png" alt-text="Screenshot of the Configuration Migration tool with the Import data option selected." lightbox="media/dmt-import1.png":::
 
 1. Set the **Deployment type** to **Microsoft 365** and then select **Login**.
  
-    ![Select the Deployment type and then Login.](media/dmt-export2.png "Select the Deployment type and then Login")
+    :::image type="content" source="media/dmt-export2.png" alt-text="Screenshot of the Configuration Migration tool with the Microsoft 365 deployment type selected for the destination environment sign-in." lightbox="media/dmt-export2.png":::
 
 1. Follow the on-screen instructions to sign in with the username and password for the tenant hosting your destination environment.
 
 1. If multiple environments are available on the tenant you signed in to, choose your destination environment and select **Login**. (Skip this step if only one environment is available.)
 
-    ![Choose the destination environment and then Login.](media/dmt-import2b.png "Choose the destination environment and then Login")
+    :::image type="content" source="media/dmt-import2b.png" alt-text="Screenshot of the Configuration Migration tool showing the list of available destination environments to sign in to." lightbox="media/dmt-import2b.png":::
 
 1. On successful sign in, you're asked to choose a file to import. Select the ellipsis button next to the **Zip file** field to open a file browser, and then navigate to the folder where you saved the export zip file from your source environment. This file includes both the data and schema used for export.
  
-    ![Choose a file to import.](media/dmt-import3.png "Choose a file to import")
+    :::image type="content" source="media/dmt-import3.png" alt-text="Screenshot of the Configuration Migration tool showing the zip file selection field for import." lightbox="media/dmt-import3.png":::
 
     > [!IMPORTANT]
     > As mentioned previously, your source and destination environments must use exactly the same schema for the data being transferred, so they must be running identical versions of Customer Insights - Journeys, and all relevant schema customizations must be identical on both environments. If the schemas don't match, you get an error and the import fails. <!-- but can we use just a partial schema? -->
 
 1. Select **Import data**. The tool tracks the import progress.
 
-    ![Import complete.](media/dmt-import4.png "Import complete")
+    :::image type="content" source="media/dmt-import4.png" alt-text="Screenshot of the Configuration Migration tool showing the import process completed successfully." lightbox="media/dmt-import4.png":::
 
 1. After the import finishes, select **Exit** to close the page.
 

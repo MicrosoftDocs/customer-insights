@@ -38,7 +38,7 @@ You can author the entire conversational journeys solution with no code, includi
 To create conversational journeys, you need both products (Customer Insights - Journeys and Contact Center). The apps must be in the same environment (using the same Dataverse instance). Use these links to learn more about different aspects of conversational journeys:
 
 - In Contact Center, create a *proactive engagement*. This proactive engagement connects to an agent (customer service representative, a Copilot Studio agent, or both).
-- In Customer Insights - Journeys, enable the integration [feature switch](admin-feature-switches.md#integrations).
+- In Customer Insights - Journeys, enable the integration [feature switch](admin-feature-switches.md#integration-feature-switches).
     - Next, [create a journey](proactive-engagement-how-to.md) that uses the proactive engagement created above using the *Conversational voice* step. This step starts voice calls for contacts that enter the journey.
     - Use conversational voice results and outcomes to branch the journey and implement different retry and other experiences.
 
