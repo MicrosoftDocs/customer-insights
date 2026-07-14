@@ -1,7 +1,7 @@
 ---
 title: Service limits and fair use policy
-description: Learn about usage limits and quotas in Dynamics 365 Customer Insights - Journeys.
-ms.date: 03/11/2026
+description: Check the maximum usage limits for Customer Insights - Journeys features such as interactions, data sync rows, segments, and journey throughput.
+ms.date: 07/13/2026
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -34,5 +34,14 @@ The following tables show the current usage limits for Customer Insights - Journ
 
 *† Support for monthly interactions above 100 million is in preview. You can request to be part of the preview by reaching out to your Microsoft representative. See the [Throughput guidance](real-time-marketing-throughput-guidance.md) article for more details.*<br>
 *‡ See the [Throughput guidance](real-time-marketing-throughput-guidance.md) article for more details.*
+
+## What counts as a static or dynamic segment
+
+The segment limits treat static and dynamic segments differently, so it helps to know which is which. A segment counts as **static** if either of these conditions is true:
+
+- You configure it as a **static snapshot** in the segment properties.
+- It contains only manually included or excluded members, with no other query criteria.
+
+Any other segment counts as **dynamic**.
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
