@@ -1,8 +1,8 @@
 ---
-title: "Export segments to ActiveCampaign"
-description: "Learn how to configure the connection and export to ActiveCampaign."
-ms.date: 09/01/2023
-ms.reviewer: mhart
+title: Export segments to ActiveCampaign
+description: Export segments of unified customer profiles to ActiveCampaign for marketing. Learn how to configure the connection.
+ms.date: 07/13/2026
+ms.reviewer: v-wendysmith
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -19,7 +19,7 @@ Export segments of unified customer profiles to ActiveCampaign and use them for 
 - An [ActiveCampaign account](https://www.activecampaign.com/) and corresponding administrator credentials.
 - An [ActiveCampaign List ID](https://help.activecampaign.com/hc/articles/360000030559-How-to-create-a-list-in-ActiveCampaign).
 - An [ActiveCampaign API Key](https://help.activecampaign.com/hc/articles/207317590-Getting-started-with-the-API#how-to-obtain-your-activecampaign-api-url-and-key) and REST Endpoint Hostname.
-- [Configured segments](segments.md).
+- [Configured segments](segments-overview.md).
 - Unified customer profiles in the exported segments contain a field representing an email address.
 
 ## Known limitations
@@ -35,11 +35,11 @@ Export segments of unified customer profiles to ActiveCampaign and use them for 
 
 1. Select **Add connection** and choose **ActiveCampaign**.
 
-1. Give your connection a recognizable name in the **Display name** field. The name and the type of the connection describe this connection. We recommend choosing a name that explains the purpose and target of the connection.
+1. Enter a recognizable name in the **Display name** field. The name and the type of the connection describe this connection. Choose a name that explains the purpose and target of the connection.
 
-1. Choose who can use this connection. By default, it's only administrators. For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
+1. Choose who can use this connection. By default, only administrators can use it. For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
-1. Enter your ActiveCampaign API Key and REST Endpoint Hostname. The REST Endpoint Hostname is the hostname only, without https://.
+1. Enter your ActiveCampaign API Key and REST Endpoint Hostname. The REST Endpoint Hostname is the hostname only, without `https://`.
 
 1. Review the [data privacy and compliance](connections.md#data-privacy-and-compliance) and select **I agree**.
 
@@ -57,7 +57,7 @@ Export segments of unified customer profiles to ActiveCampaign and use them for 
 
 1. Select **Add export**.
 
-1. In the **Connection for export** field, choose a connection from the ActiveCampaign section. Contact an administrator if no connection is available.
+1. In **Connection for export**, choose a connection from the ActiveCampaign section. Contact an administrator if no connection is available.
 
 1. Enter a name for the export.
 

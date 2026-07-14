@@ -1,8 +1,8 @@
 ---
-title: "Enrich customer profiles with demographics from Experian (preview)"
-description: "General information about the Experian third-party enrichment."
-ms.date: 09/01/2023
-ms.reviewer: mhart
+title: Enrich customer profiles with demographics from Experian (preview)
+description: Enrich customer profiles with Experian demographics like household size and income to gain deeper customer insights. Learn how to configure this enrichment.
+ms.date: 07/13/2026
+ms.reviewer: v-wendysmith
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -13,17 +13,17 @@ ms.custom: sfi-image-nochange
 
 [!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
-Experian is a global leader in consumer and business credit reporting and marketing services. With Experian’s data enrichment services, you can build a deeper understanding of your customers by enriching your customer profiles with demographic data such as household size, income, and more.
+Experian is a global leader in consumer and business credit reporting and marketing services. By using Experian’s data enrichment services, you can gain a deeper understanding of your customers by enriching your customer profiles with demographic data such as household size, income, and more.
 
 ## Supported countries/regions
 
-We currently support enriching customer profiles in the United States only.
+You can currently enrich customer profiles in the United States only.
 
 ## Prerequisites
 
 - An active Experian subscription. To get a subscription, [contact Experian](https://www.experian.com/marketing-services/contact) directly. [Learn more about Experian Data Enrichment](https://www.experian.com/marketing-services/microsoft?cmpid=ems_web_mci_cdppage).
 
-- An Experian [connection](connections.md) is [configured](#configure-the-connection-for-experian) by an administrator.
+- An administrator configured an [Experian connection](#configure-the-connection-for-experian). Learn more about [connections](connections.md).
 
 - Experian User ID, Party ID, and Model Number for your SSH-enabled Secure Transport (ST) account that Experian created for you.
 
@@ -33,7 +33,7 @@ You must be an [administrator](user-roles.md#admin) in Customer Insights - Data 
 
 1. Select **Add connection** when configuring an enrichment, or go to **Settings** > **Connections** and select **Set up** on the Experian tile.
 
-   :::image type="content" source="media/enrichment-Experian-connection.png" alt-text="Experian connection configuration pane.":::
+   :::image type="content" source="media/enrichment-Experian-connection.png" alt-text="Screenshot of the Experian connection configuration pane.":::
 
 1. Enter a name for the connection and a valid User ID, Party ID, and Model Number for your Experian Secure Transport account.
 
@@ -47,7 +47,7 @@ You must be an [administrator](user-roles.md#admin) in Customer Insights - Data 
 
 1. Select **Enrich my data** on the **Demographics** from Experian tile.
 
-   :::image type="content" source="media/experian-tile.png" alt-text="Experian tile in the enrichment overview page. ":::
+   :::image type="content" source="media/experian-tile.png" alt-text="Screenshot of the Experian tile in the enrichment overview page.":::
 
 1. Review the overview and then select **Next**.
 
@@ -75,7 +75,8 @@ You must be an [administrator](user-roles.md#admin) in Customer Insights - Data 
 
 [!INCLUDE [enrichment-results](includes/enrichment-results.md)]
 
-The **Number of customers enriched by field** provides a drill-down into the coverage of each enriched field.
+The **Number of customers enriched by field** metric shows the coverage for each enriched field.
+
 
 ## Next steps
 

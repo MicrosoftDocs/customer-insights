@@ -2267,6 +2267,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "data/segment-builder-aspects.md",
+      "redirect_url": "/dynamics365/customer-insights/data/segments-overview",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "ci-docs/segment-builder.md",
       "redirect_url": "/dynamics365/customer-insights/data/segment-builder",
       "redirect_document_id": false

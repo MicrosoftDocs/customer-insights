@@ -1,11 +1,11 @@
 ---
-title: "Connect to an Azure Data Lake Storage account by using a Microsoft Entra service principal"
-description: "Use a Microsoft Entra service principal to connect to your own data lake."
-ms.date: 09/01/2023
+title: Connect to an Azure Data Lake Storage account by using a Microsoft Entra service principal
+description: Connect to an Azure Data Lake Storage account using a Microsoft Entra service principal in Customer Insights - Data. Learn how to set up secure, restricted access.
+ms.date: 07/13/2026
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
-ms.reviewer: mhart
+ms.reviewer: v-wendysmith
 ms.custom: sfi-image-nochange
 ---
 
@@ -20,7 +20,7 @@ Automated tools that use Azure services must have restricted permissions. Instea
 ## Prerequisites
 
 - The Data Lake Storage account has [hierarchical namespace enabled](/azure/storage/blobs/data-lake-storage-namespace).
-- Admin permissions for your Azure tenant, if you have to create a new service principal.
+- Admin permissions for your Azure tenant, if you need to create a new service principal.
 
 ## Create Microsoft Entra service principal for Customer Insights
 
@@ -30,27 +30,27 @@ Before creating a new service principal for Customer Insights, check whether it 
 
 1. Go to the [Azure admin portal](https://portal.azure.com) and sign in to your organization.
 
-2. From **Azure services**, select **Microsoft Entra**.
+1. From **Azure services**, select **Microsoft Entra**.
 
-3. Under **Manage**, select **Microsoft Application**.
+1. Under **Manage**, select **Microsoft Application**.
 
-4. Add a filter for **Application ID start with** `0bfc4568-a4ba-4c58-bd3e-5d3e76bd7fff` or search for the name `Dynamics 365 AI for Customer Insights`.
+1. Add a filter for **Application ID start with** `0bfc4568-a4ba-4c58-bd3e-5d3e76bd7fff` or search for the name `Dynamics 365 AI for Customer Insights`.
 
-5. If you find a matching record, it means that the service principal already exists. [Grant permissions](#grant-permissions-to-the-service-principal-to-access-the-storage-account) for the service principal to access the storage account.
+1. If you find a matching record, the service principal already exists. [Grant permissions](#grant-permissions-to-the-service-principal-to-access-the-storage-account) for the service principal to access the storage account.
 
-   :::image type="content" source="media/ADLS-SP-AlreadyProvisioned.png" alt-text="Screenshot showing an existing service principal.":::
+   :::image type="content" source="media/ADLS-SP-AlreadyProvisioned.png" alt-text="Screenshot of an existing service principal.":::
 
-6. If no results are returned, [create a new service principal](#create-a-new-service-principal).
+1. If no results are returned, [create a new service principal](#create-a-new-service-principal).
 
 ### Create a new service principal
 
-1. Install the latest version of Microsoft Entra ID PowerShell for Graph. For more information, go to [Install Microsoft Entra ID PowerShell for Graph](/powershell/azure/active-directory/install-adv2).
+1. Install the latest version of Microsoft Entra ID PowerShell for Graph. For more information, see [Install Microsoft Entra ID PowerShell for Graph](/powershell/azure/active-directory/install-adv2).
 
-   1. On your PC, press the Windows key on your keyboard and search for **Windows PowerShell** and select **Run as administrator**.
+   1. On your PC, press the Windows key on your keyboard, search for **Windows PowerShell**, and select **Run as administrator**.
 
    1. In the PowerShell window that opens, enter `Install-Module AzureAD`.
 
-2. Create the service principal with the Microsoft Entra ID PowerShell module.
+1. Create the service principal with the Microsoft Entra ID PowerShell module.
 
    1. In the PowerShell window, enter `Connect-AzureAD -TenantId "[your Directory ID]" -AzureEnvironmentName Azure`. Replace *[your Directory ID]* with the actual Directory ID of your Azure subscription where you want to create the service principal. The environment name parameter, `AzureEnvironmentName`, is optional.
   
@@ -58,7 +58,7 @@ Before creating a new service principal for Customer Insights, check whether it 
 
 ## Grant permissions to the service principal to access the storage account
 
-To grant permissions to the service principal for the storage account you want to use in Customer Insights - Data, one of the following roles must be assigned to the storage account or container:
+To grant permissions to the service principal for the storage account you want to use in Customer Insights - Data, assign one of the following roles to the storage account or container:
 
 |Credential|Requirements|
 |----------|------------|
@@ -72,7 +72,7 @@ To grant permissions to the service principal for the storage account you want t
 
 1. On the left pane, select **Access control (IAM)**, and then select **Add** > **Add role assignment**.
 
-   :::image type="content" source="media/ADLS-SP-AddRoleAssignment.png" alt-text="Screenshot showing the Azure portal while adding a role assignment.":::
+   :::image type="content" source="media/ADLS-SP-AddRoleAssignment.png" alt-text="Screenshot of the Azure portal while adding a role assignment.":::
 
 1. On the **Add role assignment** pane, set the following properties:
    - **Role**: Storage Blob Data Reader, Storage Blob Contributor, or Storage Blob Owner based on credentials listed above.
@@ -97,7 +97,7 @@ Attach a Data Lake Storage account in Customer Insights - Data to [store output 
 
 1. In Customer Insights - Data, insert the resource ID in the resource field displayed on the storage account connection screen.
 
-   :::image type="content" source="media/ADLS-SP-ResourceIdConnection.png" alt-text="Enter the storage account resource ID information.":::
+   :::image type="content" source="media/ADLS-SP-ResourceIdConnection.png" alt-text="Screenshot of entering the storage account resource ID information.":::
 
 1. Continue with the remaining steps to attach the storage account.
 
