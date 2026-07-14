@@ -17,7 +17,7 @@ To create a segment with Customer Insights - Journeys interaction data, go to [U
 
 ## Create a new segment with segment builder
 
-For an illustration of the key parts of segment builder, see [Segment builder overview](segment-builder-aspects.md#segment-builder-overview). For tips, see [Segment builder tips](segment-builder-aspects.md#segment-builder-tips).
+For an illustration of the key parts of segment builder, see [Segment builder overview](segments-overview.md#segment-builder-overview). For tips, see [Segment builder tips](segments-overview.md#segment-builder-tips).
 
 1. Go to **Segments**.
 

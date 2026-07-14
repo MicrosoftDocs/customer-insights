@@ -1,7 +1,7 @@
 ---
 title: Exclude bot interactions
 description: Exclude bot interactions in Dynamics 365 Customer Insights - Journeys to filter nonhuman clicks. Learn how to enable bot protection for reliable analytics.
-ms.date: 05/29/2026
+ms.date: 07/14/2026
 ms.topic: article
 author: Joni-M
 ms.author: alfergus
@@ -24,7 +24,7 @@ Teams rely on channel analytics to evaluate campaign performance and to drive fu
 
 ## Impact of bot protection
 
-Bot protection filters out suspected bot clicks. No historical data is impacted. Because bot protection filters out nonhuman link clicks, some journey triggers and branching conditions that use "email clicked" may be impacted. Bot protection doesn't impact email or push notification open rates.
+Bot protection filters out suspected bot clicks. It doesn't impact any historical data. Because bot protection filters out nonhuman link clicks, some journey triggers and branching conditions that use "email clicked" might be affected. Bot protection doesn't impact email or push notification open rates.
 
 ## How bots are detected
 

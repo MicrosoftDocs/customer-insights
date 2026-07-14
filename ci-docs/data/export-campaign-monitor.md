@@ -1,8 +1,8 @@
 ---
-title: "Export segments to Campaign Monitor (preview)"
-description: "Learn how to configure the connection and export to Campaign Monitor."
-ms.date: 09/01/2023
-ms.reviewer: mhart
+title: Export segments to Campaign Monitor (preview)
+description: Export segments to Campaign Monitor to power your marketing campaigns. Learn how to configure the connection and export unified customer profiles with email data.
+ms.date: 07/14/2026
+ms.reviewer: v-wendysmith
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -17,7 +17,7 @@ Export segments of unified customer profiles to Campaign Monitor and use them fo
 ## Prerequisites
 
 - A [Campaign Monitor account](https://www.campaignmonitor.com/) and corresponding administrator credentials.
-- A [Campaign Monitor List ID](https://www.campaignmonitor.com/api/getting-started/#your-list-id).
+- A [Campaign Monitor List ID](https://www.campaignmonitor.com/api/v3-3/getting-started/#your-list-id).
 - A [Generated API key](https://www.campaignmonitor.com/api/getting-started/) from **Account Settings** in Campaign Monitor to obtain the API list ID.
 - [Configured segments](segments.md).
 - Unified customer profiles in the exported segments contain a field representing an email address.
@@ -35,9 +35,9 @@ Export segments of unified customer profiles to Campaign Monitor and use them fo
 
 1. Select **Add connection** and choose **Campaign Monitor**.
 
-1. Give your connection a recognizable name in the **Display name** field. The name and the type of the connection describe this connection. We recommend choosing a name that explains the purpose and target of the connection.
+1. Enter a recognizable name in the **Display name** field. The name and the type of the connection describe this connection. Choose a name that explains the purpose and target of the connection.
 
-1. Choose who can use this connection. By default, it's only administrators. For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
+1. Choose who can use this connection. By default, only administrators can use it. For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
 1. Review the [data privacy and compliance](connections.md#data-privacy-and-compliance) and select **I agree**.
 
@@ -55,15 +55,15 @@ Export segments of unified customer profiles to Campaign Monitor and use them fo
 
 1. Go to **Data** > **Exports**.
 
-1. To create a new export, select **Add export**.
+1. Select **Add export**.
 
-1. In the **Connection for export** field, choose a connection from the Campaign Monitor section. Contact an administrator if no connection is available.
+1. In **Connection for export**, choose a connection from the Campaign Monitor section. Contact an administrator if no connection is available.
 
 1. Enter a name for the export.
 
 1. Enter your **Campaign Monitor List ID**.
 
-1. In the **Data matching** section, in the **Email** field, select the field that represents a customer's email address. It's required to export segments to Campaign Monitor.
+1. In the **Data matching** section, in the **Email** field, select the field that represents a customer's email address. You need this field to export segments to Campaign Monitor.
 
 1. Select the segments you want to export.
 

@@ -1,8 +1,8 @@
 ---
-title: "Enrich customer profiles with identity data from LiveRamp (preview)"
-description: "Enrich customer profiles with LiveRamp data."
-ms.date: 09/01/2023
-ms.reviewer: mhart
+title: Enrich customer profiles with identity data from LiveRamp (preview)
+description: Enrich customer profiles with LiveRamp identity data to map personal identifiers to AbiliTec IDs. Learn how to configure and run this enrichment.
+ms.date: 07/13/2026
+ms.reviewer: v-wendysmith
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -13,11 +13,11 @@ ms.custom: sfi-image-nochange
 
 [!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
-LiveRamp provides deterministic offline identity resolution and consolidation of customer data. You can map personal identifiers in your customer data to the AbiliTec identity graph and receive AbiliTec IDs. You can then use these IDs for better unification of your customer data.
+LiveRamp provides deterministic offline identity resolution and consolidation of customer data. You can map personal identifiers in your customer data to the AbiliTec identity graph and receive AbiliTec IDs. Use these IDs for better unification of your customer data.
 
 ## Supported countries/regions
 
-We currently support enriching customer profiles with LiveRamp data in the United States only.
+You can currently enrich customer profiles with LiveRamp data in the United States only.
 
 ## Prerequisites
 
@@ -25,7 +25,7 @@ We currently support enriching customer profiles with LiveRamp data in the Unite
 
 - An active AbiliTec subscription with a client ID and secret to access the API. For more information, see [AbiliTec API Developer Hub](https://developers.liveramp.com/abilitec-api/).
 
-- A LiveRamp [connection](connections.md) is [configured](#configure-the-connection-for-liveramp) by an administrator.
+- An administrator [configured a LiveRamp connection](#configure-the-connection-for-liveramp). Learn more about [connections](connections.md).
 
 ## Configure the connection for LiveRamp
 
@@ -33,7 +33,7 @@ You must be an [administrator](user-roles.md#admin) in Customer Insights - Data 
 
 1. Select **Add connection** when configuring an enrichment, or go to **Settings** > **Connections** and select **Set up** on the LiveRamp tile.
 
-   :::image type="content" source="media/liveramp-connection.png" alt-text="Configuration pane to set up the connection to the LiveRamp AbiliTec service. ":::
+   :::image type="content" source="media/liveramp-connection.png" alt-text="Screenshot of the configuration pane to set up the connection to the LiveRamp AbiliTec service.":::
 
 1. Enter a name for the connection and a valid LiveRamp client ID and a secret.
 
@@ -47,7 +47,7 @@ You must be an [administrator](user-roles.md#admin) in Customer Insights - Data 
 
 1. Select **Enrich my data** on the **Identity** from LiveRamp tile.
 
-   :::image type="content" source="media/liveramp-tile.png" alt-text="Identity tile in the enrichment overview page. ":::
+   :::image type="content" source="media/liveramp-tile.png" alt-text="Screenshot of the Identity tile in the enrichment overview page.":::
 
 1. Review the overview and then select **Next**.
 
@@ -61,7 +61,7 @@ You must be an [administrator](user-roles.md#admin) in Customer Insights - Data 
 
 1. Map your fields to the identification data from LiveRamp.
 
-   :::image type="content" source="media/liveramp-data-mapping.png" alt-text="Data mapping options for the LiveRamp enrichment.":::
+   :::image type="content" source="media/liveramp-data-mapping.png" alt-text="Screenshot of data mapping options for the LiveRamp enrichment.":::
 
 1. Select **Next** to complete the field mapping.
 
@@ -75,11 +75,11 @@ You must be an [administrator](user-roles.md#admin) in Customer Insights - Data 
 
 [!INCLUDE [enrichment-results](includes/enrichment-results.md)]
 
-The **Number of customers enriched by field** provides a drill-down into the coverage of each enriched field.
+The **Number of customers enriched by field** metric shows the coverage of each enriched field.
 
 ## Next steps
 
-Build on top of your enriched customer data. Use the AbiliTec IDs to consolidate customer profiles into a person-based view.
+Build on your enriched customer data. Use the AbiliTec IDs to consolidate customer profiles into a person-based view.
 [!INCLUDE [next-steps-enrichment](includes/next-steps-enrichment.md)]
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
