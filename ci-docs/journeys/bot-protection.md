@@ -24,13 +24,11 @@ Teams rely on channel analytics to evaluate campaign performance and to drive fu
 
 ## Impact of bot protection
 
-The bot protection will filter out suspected bot clicks, and no historical data is impacted. 
-
-Because bot protection filters out nonhuman link clicks, some journey triggers and branching conditions that use "email clicked" may be impacted. Bot protection doesn't impact email or push notification open rates.
+Bot protection filters out suspected bot clicks. No historical data is impacted. Because bot protection filters out nonhuman link clicks, some journey triggers and branching conditions that use "email clicked" may be impacted. Bot protection doesn't impact email or push notification open rates.
 
 ## How bots are detected
 
-Anytime a link is selected, it goes through an intermediate page. Customer Insights - Journeys runs some checks on the intermediate page to determine if the click was made by a bot or a human.
+Any time a link is selected, it goes through an intermediate page. Customer Insights - Journeys runs checks on the intermediate page to determine if the click was made by a bot or a human.
 
 ## Frequently asked questions
 
