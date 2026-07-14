@@ -1,7 +1,7 @@
 ---
 title: Exclude bot interactions
 description: Exclude bot interactions in Dynamics 365 Customer Insights - Journeys to filter nonhuman clicks. Learn how to enable bot protection for reliable analytics.
-ms.date: 05/29/2026
+ms.date: 07/14/2026
 ms.topic: article
 author: Joni-M
 ms.author: alfergus
