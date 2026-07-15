@@ -1,7 +1,7 @@
 ---
 title: Security roles for lead scoring and qualification in Dynamics 365 Customer Insights - Journeys
 description: Security roles for lead scoring and qualification in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/23/2023
+ms.date: 07/14/2026
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -24,3 +24,6 @@ To ensure that only appropriate users can create scoring models, Dynamics 365 Cu
 By default, not everyone in your organization has access to create or visualize scoring models.  If you want to use scoring models, make sure to set up the right permissions using the following documentation:
 
 - [Manage user accounts, user licenses, and security roles](admin-users-licenses-roles.md)
+
+> [!IMPORTANT]
+> You can't use fields that have field-level security (FLS) enabled in lead scoring model conditions, regardless of the security role assigned to the user creating the model.
