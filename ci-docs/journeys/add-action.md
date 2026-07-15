@@ -1,7 +1,7 @@
 ---
 title: Add an action in a journey
-description: An overview of possible actions you can do in a journey in Dynamics 365 Customer Insights - Journeys.
-ms.date: 05/29/2026
+description: Learn about the messaging, AI-powered, condition, and connector actions you can add to a Customer Insights - Journeys real-time journey.
+ms.date: 07/14/2026
 ms.topic: article
 author: cmenesatti-m
 ms.author: alfergus
@@ -21,9 +21,9 @@ To get to the Add an action dashboard, go to Customer Insights - Journeys > **Jo
 
 Within real-time journeys, you can launch various actions. Some of these actions include sending messages, channel optimization, condition actions, audience splitting, and more.
 
-The main actions are grouped under [messages](#messages), [AI-powered conversations](#ai-powered-conversations), [AI-powered actions](#ai-powered-actions), [conditions](#conditions), and [connectors](#connectors). You can see all available actions under each section below.
+The main actions are grouped under [messaging actions](#messaging-actions), [AI-powered conversations](#ai-powered-conversations), [AI-powered actions](#ai-powered-actions), [condition actions](#condition-actions), and [connector actions](#connector-actions). You can see all available actions under each section in the following sections.
 
-### Messages
+### Messaging actions
 
 Customer Insights - Journeys lets you reach customers through common messaging capabilities such as email, text message, push notifications, and more. See common messaging actions below.
 
@@ -67,7 +67,7 @@ A/B tests allow you to measure which channel or content messaging strategy leads
 
 Channel optimization uses AI to find the best channel to reach each customer and improve your engagement. To learn more about channel optimization, see [Use AI-driven run-time channel optimization](real-time-marketing-channel-optimization.md).
 
-### Conditions
+### Condition actions
 
 You can set conditions throughout customers' journeys, such as scheduling wait times at specific times, waiting for a specific trigger from a customer, setting up attribute branches, or splitting an audience by number or percentage. See available conditions below. 
 
@@ -85,9 +85,9 @@ You can configure the wait tile using the following parameters:
 
 #### Wait for a trigger
 
-See [Branching the customer journey ](#branching-the-customer-journey).
+See [Branching the customer journey](#branching-the-customer-journey).
 
-#### Series
+#### Message series
 
 Send a series of messages to customers, progressing through each step sequentially until an exit condition is met, a time limit is reached, or all steps are completed. To learn more about series, visit [Enhanced journey reminders](real-time-marketing-enhanced-journey-reminders.md).
 
@@ -119,11 +119,17 @@ The "Wait for trigger" (if/then branch) tile lets you branch the customer journe
 
 For example, you can configure the wait tile to wait for the *Email opened* event on a previously sent email. If the time limit is set to one day, the wait branch waits for the customer to open the email within that day. If the customer opens the email within that day, they immediately proceed down the yes branch. If the customer doesn't open the email within that day, they proceed down the no branch after one day.
 
+> [!NOTE]
+> The maximum time a wait until the previous message gets an interaction or a trigger is activated condition can wait is 90 days. If the customer doesn't become a segment member within that time, they proceed down the **No** branch.
+
 ##### Wait for segment membership
 
 The wait for segment membership feature allows for a more complex set of actions to take place beyond a single trigger. For example, you may want to create a branch based on how much a customer spent through multiple transactions in a specific period. In this scenario, rather than wait for a specific trigger, you can simply define a dynamic segment, such as 'big purchaser,' and wait for the customer to become a member of that segment.
 
 Customer Insights - Data segments built using the "bring your own storage account" feature aren't supported.
+
+> [!NOTE]
+> The maximum time a wait for segment membership condition can wait is 90 days. If the customer doesn't become a segment member within that time, they proceed down the **No** branch.
 
 #### Attribute branch
 
@@ -137,7 +143,7 @@ The attribute branch checks for attribute values the moment a customer enters th
 
 Attribute branches support multi-way branching. For example, if you have 'customer spend' as an attribute, you can create different branches for different ranges of spending. For more information, see [Personalize journey variations using multiple journey branches](real-time-marketing-multiple-branches.md).
 
-### Connectors
+### Connector actions
 
 Connectors provide additional features beyond the actions above. For example, you can activate a custom trigger where additional journeys or [Power Automate flows](/power-automate) connected to a custom event are triggered when a customer does a specific action.
 

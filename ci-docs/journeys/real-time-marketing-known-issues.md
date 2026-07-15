@@ -1,7 +1,7 @@
 ---
 title: Known issues in Customer Insights - Journeys with mitigations
 description: Learn about known issues in Customer Insights - Journeys and how to work around them.
-ms.date: 05/18/2026
+ms.date: 07/14/2026
 ms.topic: troubleshooting-known-issue
 author: alfergus
 ms.author: alfergus
@@ -63,6 +63,7 @@ As we continue to work on Customer Insights - Journeys and refine the experience
 
 - Parent contact scoring affects the time needed for scoring processing. We recommend avoiding parent contact scoring, especially if you have a large number of contacts.
 - If you enable parent contact scoring, form submission interactions are counted twice in the lead scoring model.
+- You can't use fields that have field-level security (FLS) enabled in lead scoring model conditions.
 
 ## Segments
 
