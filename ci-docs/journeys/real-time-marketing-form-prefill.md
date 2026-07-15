@@ -1,7 +1,7 @@
 ---
 title: Prefill values for forms and event registration
-description: Form prefill in Dynamics 365 Customer Insights - Journeys auto-fills known values for customers. Discover setup steps and security best practices.
-ms.date: 05/29/2026
+description: Form prefill auto-fills known values on Customer Insights - Journeys forms for contacts and leads, based on tracking consent and security checks.
+ms.date: 07/15/2026
 ms.topic: article
 author: petrjantac
 ms.author: alfergus
@@ -37,8 +37,8 @@ To increase the security of the form prefill feature, follow these steps:
 ### Enable your domain for form prefill
 
 Enable your domain for form prefill in Settings > Domains. The default domain for forms hosted as a standalone page is enabled for form hosting by default. Contact technical support if you want to disable form prefill for this domain.
-  
-:::image type="content" source="media/real-time-marketing-enable-prefill-for-domain.png" alt-text="Enable your domain for form prefill." lightbox="media/real-time-marketing-enable-prefill-for-domain.png":::
+
+:::image type="content" source="media/real-time-marketing-enable-prefill-for-domain.png" alt-text="Screenshot of the Domains settings page showing the option to enable form prefill for a domain." lightbox="media/real-time-marketing-enable-prefill-for-domain.png":::
 
 > [!IMPORTANT]
 > Enable form prefill only for trusted and secure domains that you control. Don't enable prefill for shared domains.
@@ -49,17 +49,53 @@ You don't need to verify ownership of the domain enabled for prefill of real-tim
 
 Open the form editor and enable form prefill in the form settings. When you enable form prefill, all fields in that form are prefilled. You can also enable or disable prefill for a specific field in the field's properties. The form editor shows which fields are prefilled with an icon and displays the total count of prefilled fields.
 
-:::image type="content" source="media/real-time-marketing-configure-form-prefill.png" alt-text="Set up form prefill in form editor." lightbox="media/real-time-marketing-configure-form-prefill.png":::
+:::image type="content" source="media/real-time-marketing-configure-form-prefill.png" alt-text="Screenshot of the form editor showing the form prefill setting and prefilled field icons." lightbox="media/real-time-marketing-configure-form-prefill.png":::
 
 ### Check your consent model configuration
 
 Prefill requires the customer to consent to the *Tracking* purpose. The state of the Tracking purpose is cached for 15 minutes in the prefill scenario. This means the form can be prefilled for up to 15 minutes after the customer revokes consent for the Tracking purpose.
 
-Form prefill maintains the consent already provided for specific topics and purposes. If a purpose or topic is linked to multiple channels, like email and text, form prefill selects the consent checkbox as if consent is given for all linked channels. For example, the Commercial purpose appears in the form as a single checkbox linked to both email and text channels. If the customer gives consent for the Commercial purpose via the email channel but not the text channel, submitting the prefilled form gives consent for both channels.
+Form prefill populates consent checkboxes based on the customer's current consent state. The prefilled state reflects the [enforcement-model](real-time-marketing-compliance-settings.md#consent-enforcement-models)-based consent decision, not just the stored consent record. For example, when a channel uses a **Disabled** enforcement model, the checkbox is always prefilled as opted in - even if an opt-out record exists for that contact point.
+
+#### How consent checkbox prefill is calculated
+
+The system uses a two-stage calculation for each consent checkbox on the form.
+
+**Stage 1 – Consent decision (per channel)**
+
+For each channel the checkbox covers (for example, email or text), the system resolves an *will send* or *will not send* decision from the purpose's enforcement model and the stored consent record:
+
+| Enforcement model | Opted in | Opted out | Not set |
+|---|---|---|---|
+| **Restrictive** | Will send | Will not send | Will not send |
+| **Non-restrictive** | Will send | Will not send | Will send |
+| **Disabled** | Will send | Will send | Will send |
+
+- **Restrictive**: The message is sent only if an explicit opt-in record exists. An opt-out or not set value means the message isn't sent.
+- **Non-restrictive**: The message isn't sent only if an explicit opt-out record exists. An opt-in or not set value means the message is sent.
+- **Disabled**: The message is always sent. The stored consent record isn't consulted.
+
+You configure enforcement models per channel, so the same purpose can have different enforcement models for email and text. Learn more about [consent enforcement models](real-time-marketing-compliance-settings.md#consent-enforcement-models).
+
+If a *checkbox covers multiple channels*, the system combines the per-channel results by using **OR** logic. The checkbox is treated as opted in if the customer is opted in on *any* of the linked channels.
+
+For example, if the commercial purpose appears as a single checkbox linked to both email and text, and the customer is opted in for email but opted out for text, the checkbox is prefilled as opted in.
+
+> [!IMPORTANT]
+> Because of the **OR** logic, submitting the prefilled form gives consent for all linked channels. In the example preceding, the customer also gains consent for the text channel after submitting the form.
+
+**Stage 2 – Checkbox state**
+
+The system combines the Stage 1 consent decision with the form field's **When checked** setting to determine whether the checkbox appears checked or unchecked:
+
+- **Opt user in** (default): The checkbox is checked when the consent decision is *Will send*, and unchecked when *Will not send*.
+- **Opt user out**: The checkbox is checked when the consent decision is *Will not send*, and unchecked when *Will send*. This setting inverts the checked state compared to the default.
+
+For example, if a checkbox uses **Opt user out** and the customer's consent decision is *Will send*, the checkbox appears unchecked. Learn more about the [When checked setting](real-time-marketing-manage-forms.md).
 
 ## Form prefill security
 
-The form prefill feature uses multiple layers of security to protect data and control access. Communication between the Customer Insights - Journeys backend and Dynamics 365 uses a dedicated application account for the forms service, identified by `<applicationuser applicationuserid="6f3cf30e-6475-4505-a216-bce9d18e477f">`. All data transmissions use secure HTTPS connections. The system generates a unique form prefill token (`msdynmkt_prefill`) with a 30-day validity for each email. When a form loads, the system enforces a CORS (Cross-Origin Resource Sharing) check, and prefill access requires both the prefill token and CRM and Dataverse configuration that explicitly authorize the domain hosting the form. This multi-step validation ensures that only trusted sources can use prefilled data.
+The form prefill feature uses multiple layers of security to protect data and control access. Communication between the Customer Insights - Journeys backend and Dynamics 365 uses a dedicated application account for the forms service, identified by `<applicationuser applicationuserid="6f3cf30e-6475-4505-a216-bce9d18e477f">`. All data transmissions use secure HTTPS connections. The system generates a unique form prefill token (`msdynmkt_prefill`) with a 30-day validity for each email. When a form loads, the system enforces a CORS (Cross-Origin Resource Sharing) check, and prefill access requires both the prefill token and Customer Relationship Management (CRM) and Dataverse configuration that explicitly authorize the domain hosting the form. This multistep validation ensures that only trusted sources can use prefilled data.
 
 ## How form prefill works with different audience types
 
