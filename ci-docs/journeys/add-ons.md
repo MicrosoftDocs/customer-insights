@@ -1,7 +1,7 @@
 ---
 title: Install optional add-ons in Dynamics 365 Customer Insights
-description: Discover how to install optional add-ons in Dynamics 365 Customer Insights - Journeys designed to enhance your existing set-up and tailored to meet your business needs.
-ms.date: 08/17/2023
+description: Install optional add-ons in Dynamics 365 Customer Insights - Journeys to extend or improve the default functionality of a specific area.
+ms.date: 07/16/2026
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
@@ -11,14 +11,14 @@ search.audienceType:
   - enduser
 ---
 
-# Install custom add-ons in Dynamics 365 Customer Insights
+# Install optional add-ons in Dynamics 365 Customer Insights
 
-Add-ons are optional components that can be installed on your Dynamics 365 Customer Insights - Journeys instance. Add-ons extend or further improve the default functionality of a specific area.
+Add-ons are optional components you can install on your Dynamics 365 Customer Insights - Journeys instance. Each add-on extends or improves the default functionality of a specific area.
 
 To install or uninstall an add-on, you need the following privileges:
 
-- Read = ability to see the add-on on the add-on page
-- Create = ability to install the add-on
-- Delete = ability to uninstall the add-on
+- **Read**: Ability to see the add-on on the add-on page.
+- **Create**: Ability to install the add-on.
+- **Delete**: Ability to uninstall the add-on.
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
