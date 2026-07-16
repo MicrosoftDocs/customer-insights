@@ -1,8 +1,8 @@
 ---
-title: "Export segments to Marketo (preview)"
-description: "Learn how to configure the connection and export to Marketo."
-ms.date: 09/01/2023
-ms.reviewer: mhart
+title: Export segments to Marketo (preview)
+description: Export segments to Marketo to power email campaigns and target customer groups. Learn how to configure the connection and set up exports in Customer Insights.
+ms.date: 07/16/2026
+ms.reviewer: v-wendysmith
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -12,7 +12,7 @@ ms.author: sstabbert
 
 [!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
-Export segments of unified customer profiles to generate campaigns, provide email marketing and use specific groups of customers with Marketo.
+Export segments of unified customer profiles to generate campaigns, provide email marketing, and use specific groups of customers with Marketo.
 
 ## Prerequisites
 
@@ -24,7 +24,7 @@ Export segments of unified customer profiles to generate campaigns, provide emai
 
 ## Known limitations
 
-- Up to 1 million customer profiles per export to Marketo, which can take up to 3 hours. The number of customer profiles that you can export to Marketo depends on your contract with Marketo.
+- You can export up to 1 million customer profiles per export to Marketo, which can take up to three hours. The number of customer profiles that you can export to Marketo depends on your contract with Marketo.
 - Segments only.
 
 ## Set up connection to Marketo
@@ -35,11 +35,11 @@ Export segments of unified customer profiles to generate campaigns, provide emai
 
 1. Select **Add connection** and choose **Marketo**.
 
-1. Give your connection a recognizable name in the **Display name** field. The name and the type of the connection describe this connection. We recommend choosing a name that explains the purpose and target of the connection.
+1. Enter a recognizable name in the **Display name** field. The name and the type of the connection describe this connection. Choose a name that explains the purpose and target of the connection.
 
-1. Choose who can use this connection. By default, it's only administrators. For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
+1. Choose who can use this connection. By default, only administrators can use it. For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
-1. Enter your **Marketo client ID, Client secret, and REST Endpoint Hostname**. The REST Endpoint Hostname is the hostname only, without https://. Example: xyz-abc-123.mktorest.com.
+1. Enter your **Marketo client ID, Client secret, and REST Endpoint Hostname**. The REST Endpoint Hostname is the hostname only, without `https://`. Example: `xyz-abc-123.mktorest.com`.
 
 1. Review the [data privacy and compliance](connections.md#data-privacy-and-compliance) and select **I agree**.
 
@@ -57,7 +57,7 @@ Export segments of unified customer profiles to generate campaigns, provide emai
 
 1. Select **Add export**.
 
-1. In the **Connection for export** field, choose a connection from the Marketo section. Contact an administrator if no connection is available.
+1. In **Connection for export**, choose a connection from the Marketo section. Contact an administrator if no connection is available.
 
 1. Enter a name for the export.
 

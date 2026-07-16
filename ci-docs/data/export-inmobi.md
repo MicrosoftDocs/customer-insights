@@ -1,8 +1,8 @@
 ---
 title: Export segment data to InMobi (preview)
-description: Learn how to configure the connection and export to InMobi.
-ms.date: 09/01/2023
-ms.reviewer: mhart
+description: Export segment data to InMobi from Customer Insights - Data. Learn how to set up your Azure Blob Storage connection and export data.
+ms.date: 07/16/2026
+ms.reviewer: v-wendysmith
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert

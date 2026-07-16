@@ -1,8 +1,8 @@
 ---
-title: "Export segments to Iterable (preview)"
-description: "Learn how to configure the connection and export to Iterable."
-ms.date: 09/01/2023
-ms.reviewer: mhart
+title: Export segments to Iterable (preview)
+description: Export segments to Iterable to power your marketing activities. Learn how to configure the connection and export unified customer profiles.
+ms.date: 07/16/2026
+ms.reviewer: v-wendysmith
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -23,8 +23,8 @@ Export segments of unified customer profiles to Iterable and use them for market
 
 ## Known limitations
 
-- Up to 1 million customer profiles to Iterable, which can take up to 30 minutes to complete. The number of customer profiles that you can export to Iterable depends on your contract with Iterable.
-- Segments only.
+- You can export up to 1 million customer profiles to Iterable, which can take up to 30 minutes to complete. The number of customer profiles that you can export to Iterable depends on your contract with Iterable.
+- You can only export segments.
 
 ## Set up connection to Iterable
 
@@ -34,9 +34,9 @@ Export segments of unified customer profiles to Iterable and use them for market
 
 1. Select **Add connection** and choose **Iterable**.
 
-1. Give your connection a recognizable name in the **Display name** field. The name and the type of the connection describe this connection. We recommend choosing a name that explains the purpose and target of the connection.
+1. Enter a recognizable name in the **Display name** field. The name and the type of the connection describe this connection. Choose a name that explains the purpose and target of the connection.
 
-1. Choose who can use this connection. By default, it's only administrators. For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
+1. Choose who can use this connection. By default, only administrators can use it. For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
 1. Provide your Iterable API key to continue to sign in.
 
@@ -56,11 +56,11 @@ Export segments of unified customer profiles to Iterable and use them for market
 
 1. Select **Add export**.
 
-1. In the **Connection for export** field, choose a connection from the Iterable section. Contact an administrator if no connection is available.
+1. In **Connection for export**, choose a connection from the Iterable section. Contact an administrator if no connection is available.
 
 1. Enter a name for the export.
 
-1. In the **Data matching** section, in the **Email** field, select the field that represents a customer's email address. The list created in Iterable will receive the exact same name as your segment name in Customer Insights - Data.
+1. In the **Data matching** section, in the **Email** field, select the field that represents a customer's email address. The list you create in Iterable has the same name as your segment name in Customer Insights - Data.
 
 1. Select the segments you want to export.
 
