@@ -1,10 +1,11 @@
 ---
 title: Push notification user mapping for application developers
-description: Learn developer settings user mapping for push notifications in Dynamics 365 Customer Insights - Journeys.
-ms.date: 03/14/2023
+description: Push notification user mapping connects Customer Insights - Journeys records to mobile app users so notifications reach the correct person.
+ms.date: 07/16/2026
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
+ms.reviewer: alfergus
 search.audienceType: 
   - admin
   - customizer
@@ -13,7 +14,7 @@ search.audienceType:
 
 # Push notification user mapping for application developers
 
-To learn more about the overall approach to setting up push notifications in Customer Insights - Journeys, visit the [push notification setup overview](push-setup-overview.md).
+Push notification user mapping in Customer Insights - Journeys helps you connect the correct record to a mobile app user so push notifications reach the right person. To learn more about the overall approach to setting up push notifications, see the [push notification setup overview](push-setup-overview.md).
 
 To enable push notifications in Customer Insights - Journeys, you need to complete the following steps:
 
@@ -23,19 +24,24 @@ To enable push notifications in Customer Insights - Journeys, you need to comple
 1. [Receiving push notifications on devices](developer-notifications.md)
 1. [Interaction reporting for push notifications](developer-push-interactions.md)
 
+## User mapping architecture
+
+The device application publishes device and user information to the device token management system. The token management system sends a GET request to the Customer Insights - Journeys contact, lead, or profile API to retrieve the Customer Insights - Journeys user identifier. The token management system then sends a POST request containing the device token, user ID, and app ID to the Customer Insights - Journeys push device registration API.
+
+:::image type="content" source="media/real-time-marketing-push-user-mapping.png" alt-text="Screenshot of push notification user mapping between a device application, token system, and Customer Insights - Journeys APIs." lightbox="media/real-time-marketing-push-user-mapping.png":::
+
 ## Implement user mapping
 
-:::image type="content" source="media/real-time-marketing-push-user-mapping.png" alt-text="Push notifications user mapping diagram." lightbox="media/real-time-marketing-push-user-mapping.png":::
+For push notifications from a mobile application to work correctly, you need to configure mapping from Dynamics 365 Customer Insights - Journeys customers to mobile application users. Mapping ensures that the correct person (represented with the correct entity and record ID) receives the expected mobile push notification. This step isn't related to the mobile application setup (whether on Android or Apple devices), but rather, to the logical connection between the person represented as a Customer Insights - Journeys record and the counterpart record as a mobile application user.
 
-For push notifications from a mobile application to work correctly, you need to configure mapping from Dynamics 365 Customer Insights - Journeys customers to mobile application users. The mapping ensures that the correct person (represented with the correct entity and record ID) receives the expected mobile push notification.
+To implement user mapping:
 
-This step isn't related to the mobile application setup (whether on Android or Apple devices), but rather, to the logical connection between the person represented as a Customer Insights - Journeys record and the counterpart record as a mobile application user.
+1. Select the correct entity to implement user mapping. This step is crucial because, in Customer Insights - Journeys, you can orchestrate to multiple Microsoft Dataverse entities (such as a contact or lead), or to a Customer Insights - Data profile.
+1. Pass the correct record ID to the mobile application so it can identify the user with that ID.
 
-First, to implement user mapping, the correct entity must be selected. This step is crucial because, in Customer Insights - Journeys, it's possible to orchestrate to multiple Microsoft Dataverse entities (such as a contact or lead), or to a Customer Insights - Data profile. Then, the correct record ID should be passed along to the mobile application and the mobile application should identify the user with that ID.
+## User mapping example
 
-### User mapping example
-
-As an example, if the contact Dataverse entity is used and the email address field is used as the unique key for an end user as a contact, one possibility to retrieve the correct ID is using an OData `GET` call to Dataverse is the following example:
+As an example, if you use the contact Dataverse entity and use the email address field as the unique key for an end user as a contact, you can retrieve the correct ID by making an OData `GET` call to Dataverse. The following example shows how to make this call:
 
 ```http
 https://<your Customer Insights - Journeys instance>.dynamics.com/api/data/v9.0/contacts?$filter=emailaddress1 eq 'andrew@contosoltd.com'

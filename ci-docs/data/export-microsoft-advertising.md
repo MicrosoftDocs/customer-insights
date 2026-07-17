@@ -1,8 +1,8 @@
 ---
-title: "Export segments to Microsoft Advertising (preview)"
-description: "Learn how to configure the connection and export to Microsoft Advertising."
-ms.date: 09/01/2023
-ms.reviewer: mhart
+title: Export segments to Microsoft Advertising (preview)
+description: Export segments to Microsoft Advertising from Dynamics 365 Customer Insights to create Customer Match audiences. Learn how to configure connections for ad campaigns.
+ms.date: 07/16/2026
+ms.reviewer: v-wendysmith
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -36,9 +36,9 @@ Export Dynamics 365 Customer Insights - Data segments to Microsoft Advertising t
 
 1. Select **Add connection** and choose **Microsoft Advertising**.
 
-1. Give your connection a recognizable name in the **Display name** field. The name and the type of the connection describe this connection. We recommend choosing a name that explains the purpose and target of the connection.
+1. Enter a recognizable name in the **Display name** field. The name and the type of the connection describe this connection. Choose a name that explains the purpose and target of the connection.
 
-1. Choose who can use this connection. The default is administrators. For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
+1. Choose who can use this connection. By default, only administrators can use it. For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
 1. Enter the **Microsoft Advertising Customer ID**.
 
@@ -60,7 +60,7 @@ Export Dynamics 365 Customer Insights - Data segments to Microsoft Advertising t
 
 1. Select **Add export**.
 
-1. In the **Connection for export** field, choose a connection from the Microsoft Advertising section. Contact an administrator if no connection is available.
+1. In **Connection for export**, choose a connection from the Microsoft Advertising section. Contact an administrator if no connection is available.
 
 1. Enter a name for the export.
 

@@ -1,8 +1,8 @@
 ---
-title: "Export segments to Mailchimp (preview)"
-description: "Learn how to configure the connection and export to Mailchimp."
-ms.date: 09/01/2023
-ms.reviewer: mhart
+title: Export segments to Mailchimp (preview)
+description: Export segments to Mailchimp in Dynamics 365 Customer Insights to build targeted newsletters and email campaigns. Learn how to set up the connection.
+ms.date: 07/16/2026
+ms.reviewer: v-wendysmith
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -34,9 +34,9 @@ Export segments of unified customer profiles to Mailchimp to create newsletters 
 
 1. Select **Add connection** and choose **Mailchimp**.
 
-1. Give your connection a recognizable name in the **Display name** field. The name and the type of the connection describe this connection. We recommend choosing a name that explains the purpose and target of the connection.
+1. Enter a recognizable name in the **Display name** field. The name and the type of the connection describe this connection. Choose a name that explains the purpose and target of the connection.
 
-1. Choose who can use this connection. By default, it's only administrators. For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
+1. Choose who can use this connection. By default, only administrators can use it. For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
 1. Review the [data privacy and compliance](connections.md#data-privacy-and-compliance) and select **I agree**.
 
@@ -56,7 +56,7 @@ Export segments of unified customer profiles to Mailchimp to create newsletters 
 
 1. Select **Add export**.
 
-1. In the **Connection for export** field, choose a connection from the Mailchimp section. Contact an administrator if no connection is available.
+1. In **Connection for export**, choose a connection from the Mailchimp section. Contact an administrator if no connection is available.
 
 1. Enter a name for the export.
 

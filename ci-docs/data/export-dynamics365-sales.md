@@ -1,8 +1,8 @@
 ---
-title: "Export segments to Dynamics 365 Sales (preview)"
-description: "Learn how to configure the connection and export to Dynamics 365 Sales."
-ms.date: 09/01/2023
-ms.reviewer: mhart
+title: Export segments to Dynamics 365 Sales (preview)
+description: Export segments to Dynamics 365 Sales to build marketing lists, follow-up workflows, and promotions. Learn how to configure the connection and export.
+ms.date: 07/16/2026
+ms.reviewer: v-wendysmith
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -12,18 +12,18 @@ ms.author: sstabbert
 
 [!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
-Use your customer data to create marketing lists, follow up workflows, and send out promotions with Dynamics 365 Sales.
+Use your customer data to create marketing lists, follow-up workflows, and send promotions by using Dynamics 365 Sales.
 
 ## Prerequisites
 
-Contact records must be present in Dynamics 365 Sales before you can export a segment from Customer Insights - Data to Sales. Read more on how to ingest contacts from [Dynamics 365 Sales using Microsoft Dataverse](connect-dataverse.md).
+You must have contact records in Dynamics 365 Sales before you can export a segment from Customer Insights - Data to Sales. For more information, see [Dynamics 365 Sales using Microsoft Dataverse](connect-dataverse.md).
 
    > [!NOTE]
-   > Exporting segments from Customer Insights - Data to Sales will not create new contact records in the Sales environments. The contact records from Sales must be ingested in Customer Insights - Data and used as a data source. They also need to be included in the unified Customer table to map customer IDs to contact IDs before segments can be exported.
+   > Exporting segments from Customer Insights - Data to Sales doesn't create new contact records in the Sales environments. You must ingest the contact records from Sales into Customer Insights - Data and use them as a data source. You also need to include these contact records in the unified Customer table to map customer IDs to contact IDs before you can export segments.
 
 ## Known limitations
 
-Exports to Dynamics 365 Sales is limited to 100,000 contacts per segment, which can take up to 3 hours to complete.
+Exports to Dynamics 365 Sales are limited to 100,000 contacts per segment. The export process can take up to three hours to complete.
 
 ## Set up connection to Sales
 
@@ -33,9 +33,9 @@ Exports to Dynamics 365 Sales is limited to 100,000 contacts per segment, which 
 
 1. Select **Add connection** and choose **Dynamics 365 Sales**.
 
-1. Give your connection a recognizable name in the **Display name** field. The name and the type of the connection describe this connection. We recommend choosing a name that explains the purpose and target of the connection.
+1. Enter a recognizable name in the **Display name** field. The name and the type of the connection describe this connection. Choose a name that explains the purpose and target of the connection.
 
-1. Choose who can use this connection. By default, it's only administrators. For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
+1. Choose who can use this connection. By default, only administrators can use it. For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
 1. Enter your organization's Sales URL in the **Server address** field.
 
@@ -55,7 +55,7 @@ Exports to Dynamics 365 Sales is limited to 100,000 contacts per segment, which 
 
 1. Select **Add export**.
 
-1. In the **Connection for export** field, choose a connection from the Dynamics 365 Sales section. Contact an administrator if no connection is available.
+1. In **Connection for export**, choose a connection from the Dynamics 365 Sales section. Contact an administrator if no connection is available.
 
 1. Enter a name for the export.
 
