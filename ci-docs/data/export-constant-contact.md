@@ -1,8 +1,8 @@
 ---
-title: "Export segments to Constant Contact (preview)"
-description: "Learn how to configure the connection and export to Constant Contact."
-ms.date: 09/01/2023
-ms.reviewer: mhart
+title: Export segments to Constant Contact (preview)
+description: Export segments of unified customer profiles to Constant Contact for targeted marketing. Follow these steps to set up the connection and configure exports.
+ms.date: 07/16/2026
+ms.reviewer: v-wendysmith
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -34,9 +34,9 @@ Export segments of unified customer profiles to Constant Contact and use them fo
 
 1. Select **Add connection** and choose **Constant Contact**.
 
-1. Give your connection a recognizable name in the **Display name** field. The name and the type of the connection describe this connection. We recommend choosing a name that explains the purpose and target of the connection.
+1. Enter a recognizable name in the **Display name** field. The name and the type of the connection describe this connection. Choose a name that explains the purpose and target of the connection.
 
-1. Choose who can use this connection. By default, it's only administrators. For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
+1. Choose who can use this connection. By default, only administrators can use it. For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
 1. Review the [data privacy and compliance](connections.md#data-privacy-and-compliance) and select **I agree**.
 
@@ -56,7 +56,7 @@ Export segments of unified customer profiles to Constant Contact and use them fo
 
 1. Select **Add export**.
 
-1. In the **Connection for export** field, choose a connection from the Constant Contact section. Contact an administrator if no connection is available.
+1. In **Connection for export**, choose a connection from the Constant Contact section. Contact an administrator if no connection is available.
 
 1. Enter a name for the export.
 

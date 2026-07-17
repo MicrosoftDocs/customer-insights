@@ -1,8 +1,8 @@
 ---
-title: "Export data to an Azure Blob Storage"
-description: "Learn how to configure the connection and export to Blob storage."
-ms.date: 09/29/2025
-ms.reviewer: mhart
+title: Export data to an Azure Blob Storage
+description: Export data to Azure Blob Storage to store or transfer your Dynamics 365 Customer Insights data. Follow these steps to configure connections and set up exports.
+ms.date: 07/16/2026
+ms.reviewer: v-wendysmith
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -34,13 +34,13 @@ Store data from your Dynamics 365 Customer Insights - Data in a Blob storage or 
 
 1. Select **Add connection** and choose **Azure Blob Storage**.
 
-1. Give your connection a recognizable name in the **Display name** field. The name and the type of the connection describe this connection. We recommend choosing a name that explains the purpose and target of the connection.
+1. Enter a recognizable name in the **Display name** field. The name and the type of the connection describe this connection. Choose a name that explains the purpose and target of the connection.
 
-1. Choose who can use this connection. By default, it's only administrators. For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
+1. Choose who can use this connection. By default, only administrators can use it. For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
 1. Enter **Subscription**, **Resource group**, **Storage account**, and **Container** for your Blob Storage account.
 
-1. Optionally, if your storage account is behind a firewall, select **Enable Private Link**. For more information, go to [Private Links](private-link.md).
+1. Optionally, if your storage account is behind a firewall, select **Enable Private Link**. For more information, see [Private Links](private-link.md).
 
 1. Review the [data privacy and compliance](connections.md#data-privacy-and-compliance) and select **I agree**.
 
@@ -51,7 +51,7 @@ Store data from your Dynamics 365 Customer Insights - Data in a Blob storage or 
 To configure this export, you must have [permission](export-manage.md#set-up-a-new-export) for this connection type.
 
 > [!IMPORTANT]
-> If you turned on the [soft delete setting](/azure/storage/blobs/soft-delete-blob-enable) for the Azure Blob Storage account, exports will fail. Turn off soft delete to export data to blobs.
+> If you turn on the [soft delete setting](/azure/storage/blobs/soft-delete-blob-enable) for the Azure Blob Storage account, exports fail. Turn off soft delete to export data to blobs.
 
 1. Go to **Data** > **Exports**.
 
