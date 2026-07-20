@@ -1,7 +1,7 @@
 ---
 title: Use calculated measures in Dataverse-based applications
 description: Write one-dimensional measures to separate tables in Dataverse to use them in other applications.
-ms.date: 04/13/2026
+ms.date: 07/20/2026
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -44,12 +44,8 @@ When a calculated measure is created and written to a Dataverse table, the syste
 | Dataverse Security Role | Role ID | Description |
 |---|---|---|
 | Customer Insights Data Read Access | `ff6139ec-3fd2-42a5-8b79-a7f401600d40` | Read access to the newly created measure entity table |
-| [Marketing Manager - Business](../journeys/role-permissions.md) | `bf157a3a-cde8-e611-80d8-00155d4b205a` | Read access to the measure metadata table |
-| [Marketing Manager (BU level) - Business](../journeys/role-permissions.md) | `dd84f17f-cde8-e611-80d8-00155d4b205a` | Read access to the measure metadata table |
-| [Marketing Professional - Business](../journeys/role-permissions.md) | `ce995e5a-cee8-e611-80d8-00155d4b205a` | Read access to the measure metadata table |
-| [Marketing Professional (BU level) - Business](../journeys/role-permissions.md) | `6d63ebe3-cee8-e611-80d8-00155d4b205a` | Read access to the measure metadata table |
 
-The **Customer Insights Data Read Access** role receives privileges on the measure's virtual entity table itself, while the four **Marketing** roles receive privileges on the measure metadata table. This ensures that users with marketing roles in Dynamics 365 Customer Insights - Journeys can access the measure data for journey orchestration and personalization.
+The **Customer Insights Data Read Access** role provides access to a measure's virtual entity table. To use Customer Insights - Data measures in Dynamics 365 Customer Insights - Journeys, including personalization scenarios and test sends, users must be assigned the **Customer Insights Data Read Access** role. This role enables access to the measure data required for journey orchestration and personalization.
 
 ## Sample scenarios
 
