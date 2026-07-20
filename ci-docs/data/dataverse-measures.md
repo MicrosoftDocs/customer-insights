@@ -1,7 +1,7 @@
 ---
 title: Use calculated measures in Dataverse-based applications
 description: Write one-dimensional measures to separate tables in Dataverse to use them in other applications.
-ms.date: 04/13/2026
+ms.date: 07/20/2026
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -45,7 +45,7 @@ When a calculated measure is created and written to a Dataverse table, the syste
 |---|---|---|
 | Customer Insights Data Read Access | `ff6139ec-3fd2-42a5-8b79-a7f401600d40` | Read access to the newly created measure entity table |
 
-The **Customer Insights Data Read Access** role receives privileges on the measure's virtual entity table itself. For usage within **Marketing** you need to be sure the user have this role assigned. This ensures that users with marketing roles in Dynamics 365 Customer Insights - Journeys can access the measure data for journey orchestration and personalization.
+The **Customer Insights Data Read Access** role provides access to a measure's virtual entity table. To use Customer Insights - Data measures in Dynamics 365 Customer Insights - Journeys, including personalization scenarios and test sends, users must be assigned the **Customer Insights Data Read Access** role. This role enables access to the measure data required for journey orchestration and personalization.
 
 ## Sample scenarios
 
