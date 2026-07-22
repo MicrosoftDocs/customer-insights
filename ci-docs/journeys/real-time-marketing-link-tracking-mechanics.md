@@ -18,9 +18,9 @@ search.audienceType:
 
 When executing customer journeys, all relevant hyperlinks are replaced with trackable links. If the content of a message is HTML, we also create an invisible pixel inside the message body. The invisible pixel is necessary to determine whether a user clicked on a link or opened the message.
 
-Replaced links have the following format:
+As of June 10, 2026, replaced links have the following format
 
-`https://[geo-specific].dynamics.com/api/orgs/[hashed organization-identifier]/r/[link identifier]`
+`https://[hashed-organization-identifier-without-dashes].[island-number-specific].[geo-specific].prod.marketingusercontent.com/api/orgs/[hashed-organization-identifier]/r/[link-identifier]`
 
 Links are replaced when the following conditions are met:
 
