@@ -1,9 +1,9 @@
 ---
 title: Customer Insights - Journeys link tracking mechanics
 description: Learn about link tracking mechanics in Dynamics 365 Customer Insights - Journeys.
-ms.date: 09/26/2024
+ms.date: 07/22/2026
 ms.topic: article
-author: alfergus
+author: Joni-M
 ms.author: alfergus
 search.audienceType: 
   - admin
@@ -18,7 +18,7 @@ search.audienceType:
 
 When executing customer journeys, all relevant hyperlinks are replaced with trackable links. If the content of a message is HTML, we also create an invisible pixel inside the message body. The invisible pixel is necessary to determine whether a user clicked on a link or opened the message.
 
-As of June 10, 2026, replaced links have the following format
+As of June 10, 2026, replaced links have the following format:
 
 `https://[hashed-organization-identifier-without-dashes].[island-number-specific].[geo-specific].prod.marketingusercontent.com/api/orgs/[hashed-organization-identifier]/r/[link-identifier]`
 
