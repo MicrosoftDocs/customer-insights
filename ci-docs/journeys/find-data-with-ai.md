@@ -1,13 +1,13 @@
 ---
-title: Find data in a view with AI in Dynamics 365 Customer Insights - Journeys (preview)
+title: Find data in a view with AI in Dynamics 365 Customer Insights - Journeys
 description: Learn how to find, filter, and sort data in a view using AI in Dynamics 365 Customer Insights - Journeys.
 author: alfergus
 ms.author: alfergus
 ms.topic: overview
-ms.date: 06/04/2026
+ms.date: 07/22/2026
 ---
 
-# Find data in a view with AI in Dynamics 365 Customer Insights - Journeys (preview)
+# Find data in a view with AI in Dynamics 365 Customer Insights - Journeys
 
 [!INCLUDE [find-data-with-ai](~/../shared-content/shared/dynamics365-core/find-data-with-ai.md)]
 
