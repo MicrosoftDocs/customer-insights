@@ -45,7 +45,7 @@ When a calculated measure is created and written to a Dataverse table, the syste
 |---|---|---|
 | Customer Insights Data Read Access | `ff6139ec-3fd2-42a5-8b79-a7f401600d40` | Read access to the newly created measure entity table |
 
-The **Customer Insights Data Read Access** role provides access to a measure's virtual entity table. To use Customer Insights - Data measures in Dynamics 365 Customer Insights - Journeys, including personalization scenarios and test sends, users must be assigned the **Customer Insights Data Read Access** role. This role enables access to the measure data required for journey orchestration and personalization.
+The **Customer Insights Data Read Access** role provides access to a measure's virtual entity table. To use Customer Insights - Data measures in Dynamics 365 Customer Insights - Journeys, including personalization scenarios and test sends, assign users the **Customer Insights Data Read Access** role. This role enables access to the measure data required for journey orchestration and personalization.
 
 ## Sample scenarios
 
