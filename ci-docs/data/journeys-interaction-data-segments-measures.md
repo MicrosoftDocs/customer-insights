@@ -6,8 +6,8 @@ ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
 ms.reviewer: alfergus
-ms.service: customer-insights
-ms.subservice: customer-insights-data
+ms.service: dynamics-365-customer-insights
+ms.subservice: dynamics-365-customer-insights-data
 ms.custom: bap-template
 ---
 
