@@ -1,7 +1,7 @@
 ---
-title: Email security and connection encryption 
-description: Learn how to use email security and connection encryption with Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/18/2023
+title: Email security and connection encryption
+description: Learn how Customer Insights - Journeys uses SSL and TLS connection encryption, including opportunistic TLS, to secure outgoing email delivery.
+ms.date: 07/22/2026
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
@@ -18,7 +18,7 @@ Email security and encryption are essential for reliable email sending. There ar
 - SSL (Secure Socket Layer) is an older protocol that is no longer used by major email service providers (ESPs) because it doesn't provide adequate security for connections. It's being replaced by its successor, TLS.
 - TLS (Transport Layer Security) is one of the most modern and widely used protocols for email transport. Subsequent versions of TLS (v1.1, v1.2, and v1.3) are more secure than earlier versions and fix many vulnerabilities present in SSL.
 
-In SMTP (a Simple Mail Transfer Protocol), the protocol that is widely used to send and deliver emails, the protocol command StartTLS is used to communicate email security requests. The StartTLS command informs the email server that the recipient wants to upgrade to a more secure connection and use either SSL or TLS encryption. In other words, it works with both older SSL requests and more modern TLS requests.
+In SMTP (Simple Mail Transfer Protocol), the protocol that's widely used to send and deliver emails, the protocol command StartTLS is used to communicate email security requests. The StartTLS command informs the email server that the recipient wants to upgrade to a more secure connection and use either SSL or TLS encryption. In other words, it works with both older SSL requests and more modern TLS requests.
 
 There are three encryption requirement options available to use with StartTLS:
 

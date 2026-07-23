@@ -1,7 +1,7 @@
 ---
 title: Email accessibility checker
-description: Learn how to use the built-in accessibility checker to check and resolve accessibility issues in your email messages.
-ms.date: 08/18/2023
+description: Use the built-in accessibility checker in Customer Insights - Journeys to find and fix accessibility issues in your email messages.
+ms.date: 07/22/2026
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -18,16 +18,16 @@ The accessibility checker helps you make the content easy for people of all abil
 
 Once you're done designing your email content, just select the **Accessibility checker** listed under **Email checker** in the **Designer** tab. The checker runs the content against Microsoft Accessibility Standards to find any issues.
 
-![Accessibility checker menu location.](./media/accessibility-checker-entry.png "Accessibility checker menu location")
+:::image type="content" source="./media/accessibility-checker-entry.png" alt-text="Screenshot of the Email checker menu in the Customer Insights - Journeys content designer with the Accessibility checker option highlighted." lightbox="./media/accessibility-checker-entry.png":::
 
 The accessibility checker lists any issues it finds that don't conform with Microsoft Accessibility Standards.
 
-![Accessibility checker issues list.](./media/accessibility-checker-panel.png "Accessibility checker issues list")
+:::image type="content" source="./media/accessibility-checker-panel.png" alt-text="Screenshot of the Accessibility checker panel listing problems found in an email message that don't meet Microsoft Accessibility Standards." lightbox="./media/accessibility-checker-panel.png":::
 
 You can drill down into any of the accessibility issues found to get help on how to fix the particular issue.
 
-![Accessibility checker drill-down.](./media/accessibility-checker-issue-drill.png "Accessibility checker drill down")
+:::image type="content" source="./media/accessibility-checker-issue-drill.png" alt-text="Screenshot of an accessibility problem expanded in the checker panel, showing details and guidance for fixing the problem." lightbox="./media/accessibility-checker-issue-drill.png":::
 
-Once you make an update, you can hit the button at the end "Check it again" to ensure your fix passes the accessibility requirements.
+After you make an update, select **Check it again** to confirm your fix meets the accessibility requirements.
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]

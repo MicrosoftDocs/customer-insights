@@ -1,7 +1,7 @@
 ---
 title: Email bounce categories
-description: A comprehensive list of email bounce categories and definitions for Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/18/2023
+description: A comprehensive list of email bounce categories and definitions for Customer Insights - Journeys, including hard bounces and reputation issues.
+ms.date: 07/22/2026
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -38,13 +38,13 @@ The first two categories – **invalid-mailbox** and **invalid-domain** – are 
 
 **inactive-mailbox** – This is closely related to the invalid-mailbox category. The inactive-mailbox category indicates that the recipient’s address is disabled, abandoned, or no longer exists on the recipient’s server. In most cases, inactive-mailbox addresses should be excluded from sending, as they rarely become active again.
 
-**full-mailbox** – This category results from addresses that are unable to receive email messages due to lack of storage or limits on the number of emails received. In most cases, full mailbox-means that the recipient’s mailbox is abandoned or not being read regularly. This category is not a hard bounce, but if the error appears for a contact on a regular basis, the contact is not likely to receive future email messages.
+**full-mailbox** – This category results from addresses that can't receive email messages due to lack of storage or limits on the number of emails received. In most cases, a full mailbox means that the recipient’s mailbox is abandoned or not being read regularly. This category isn't a hard bounce, but if the error appears for a contact on a regular basis, the contact isn't likely to receive future email messages.
 
-**dmarc-issues** – This category stands for errors closely related to a recipient’s or sender’s DMARC or other internal policies related to domain authentication such as SPF record checks or DKIM signature checks. Such errors can result if the recipient’s server doesn't allow emails from domains without a valid SPF record or DKIM signature. dmarc-issues errors can also result if there is mismatched sending domain alignment to the SPF record or DKIM signature in the email. Extensive dmarc-issues errors could mean that the sending domain is misconfigured or that the sending domain doesn't fill the requirements for acceptable email delivery. This category of issues usually requires additional investigation. If you run into this kind of issue, you should open a support ticket.
+**dmarc-issues** – This category stands for errors closely related to a recipient's or sender's DMARC (Domain-based Message Authentication, Reporting, and Conformance) or other internal policies related to domain authentication such as SPF (Sender Policy Framework) record checks or DKIM (DomainKeys Identified Mail) signature checks. Such errors can result if the recipient's server doesn't allow emails from domains without a valid SPF record or DKIM signature. dmarc-issues errors can also result if there's mismatched sending domain alignment to the SPF record or DKIM signature in the email. Extensive dmarc-issues errors could mean that the sending domain is misconfigured or that the sending domain doesn't fill the requirements for acceptable email delivery. This category of issues usually requires additional investigation. If you run into this kind of issue, open a support ticket.
 
 **reputation-issues** – This bounce category combines types of bounces related to spam filtering on the recipient side. In most cases, if this bounce category comes up, it means that the email content, the sending domain, or sending IP address have a low sending reputation or have exceeded sending limits per minute/hour/day. Also, it may indicate that the content of the emails was treated as spam by the recipient’s spam filter. If reputation-issues errors become a significant problem, you should open a support ticket to resolve the issue. The support team will typically adjust limits on the sending server or find a solution by contacting the recipient’s email server administrators.
 
-**greylisting** – This category represents transient errors or so called “greylisting errors.” Such errors result when the recipient’s server gets an email from a new sender domain or IP address. Such errors typically don't result in bounced emails. But, in some cases, email administrators prefer to bounce all emails from new sources to avoid spam and require some manual communications or approvals. In certain cases, delivery is only possible manually. An example of manual delivery might include adding characters to the email subject or adding special email headers that aren't possible using mass mailing or marketing software.
+**greylisting-issues** – This category represents transient errors or so called "greylisting errors." Such errors result when the recipient’s server gets an email from a new sender domain or IP address. Such errors typically don't result in bounced emails. But, in some cases, email administrators prefer to bounce all emails from new sources to avoid spam and require some manual communications or approvals. In certain cases, delivery is only possible manually. An example of manual delivery might include adding characters to the email subject or adding special email headers that aren't possible using mass mailing or marketing software.
 
 **blocklisting-issues** – This bounce category occurs when a sending domain or IP address is listed on any existing not trusted. This means that either the domain or sending IP address, or any link or image in the email content was marked as not trusted due to one of the following reasons:
 
@@ -56,7 +56,7 @@ Such errors don't often occur. We monitor cases related to not trusted domains a
 
 **relaying-issues** – This category represents errors from recipient servers that don't allow incoming email flow from the outside. This category also can mean that there's a misconfiguration of the DNS records on the recipient side, such as DNS records that point to a server that doesn't host email addresses for that domain. Relaying-issues errors can be transient. Recipients shouldn't immediately be excluded from the contact list. But, if the error results from the same contact multiple times, it is recommended to exclude the contact.
 
-**routing-errors** – This error means that the email can't reach the recipient due to an internal misconfiguration of the recipient’s server. Routing-errors can also be due to an internal forwarding misconfiguration on the recipient’s server, causing the email to transfer between mailboxes and never reach the destination. 
+**routing-issues** – This error means that the email can't reach the recipient due to an internal misconfiguration of the recipient’s server. Routing-issues can also be due to an internal forwarding misconfiguration on the recipient’s server, causing the email to transfer between mailboxes and never reach the destination.
 
 **recipient-server-error** – This category encompasses generic recipient server errors, such as server overload or any other temporary error. This category is caused by a technical error that can't be resolved except by contacting the email server administrator and providing proof of their infrastructure failure.
 
@@ -76,7 +76,6 @@ Policy-related errors may also indicate that the recipient’s server can't iden
 
 You can investigate bounce error details in your customer journey to correct any errors. To review bounce errors details, select the contact that bounced, or open your customer journey and go to the **Delivery** tab.
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot showing email bounce details.](media/email-bounce-categories-errors.png "Screenshot showing email bounce details")
+:::image type="content" source="media/email-bounce-categories-errors.png" alt-text="Screenshot of the Delivery tab showing detailed bounce error messages for a bounced email in Customer Insights - Journeys." lightbox="media/email-bounce-categories-errors.png":::
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]

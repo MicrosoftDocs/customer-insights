@@ -1,7 +1,7 @@
 ---
 title: Deliverability recommendations when changing ESPs
-description: Learn about recommendations when changing your email service provider (ESP) in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/18/2023
+description: Follow deliverability best practices and a checklist for migrating data and warming up a new email service provider (ESP) in Customer Insights - Journeys.
+ms.date: 07/22/2026
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -23,7 +23,7 @@ To mitigate risks, we’ve assembled a list of recommendations to follow when sw
 
 1. **Deliverability**
 
-    Authenticate your sending domain. This is pretty much the first thing you're going to be doing.
+    Authenticate your sending domain first. This step has the biggest impact on your deliverability.
 
     > [!TIP]
     > Consider using the same sending email address, even the same from address.
@@ -39,7 +39,7 @@ To mitigate risks, we’ve assembled a list of recommendations to follow when sw
 
     Suddenly sending a large volume of emails from a new IP can lead to rejected emails. This is because your Internet Service Provider (ISP) may view the activity as suspicious.
 
-    Be prepared for a few little bumps in your metrics. Large ISPs like Gmail, Yahoo, and Microsoft may need time to adjust their metrics as they update their records regarding current and previous interactions with your mail or domain.
+    Be prepared for a few small dips in your metrics. Large ISPs like Gmail, Yahoo, and Microsoft need time to update their records for your mail and domain.
 
 ## Checklist for switching ESPs
 
