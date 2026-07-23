@@ -71,11 +71,13 @@
         "*.md": "https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights"        
       },
       "ms.service": {
-        "**.*": "customer-insights"
+        "**.*": "customer-insights",
+        "journeys/**.*": "dynamics-365-customer-insights",
+        "data/**.*": "dynamics-365-customer-insights"
       },
       "ms.subservice": {
-        "journeys/**.*": "customer-insights-journeys",
-        "data/**.*": "customer-insights-data"
+        "journeys/**.*": "dynamics-365-customer-service-journeys",
+        "data/**.*": "dynamics-365-customer-insights-data"
       },
       "searchScope": {
         "**.*": [
