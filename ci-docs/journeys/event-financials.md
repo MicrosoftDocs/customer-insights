@@ -1,7 +1,7 @@
 ---
 title: View and record financial information for events
-description: Learn how to record values for event budgets, expenses, and revenue in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/18/2023
+description: Learn how to record and track speaker costs, venue costs, sponsorship revenue, and event pass prices in Customer Insights - Journeys.
+ms.date: 07/23/2026
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
@@ -45,7 +45,7 @@ To record a venue's standard cost:
 1. [Open the Events work area](open-events.md) and go to **Events** > **Venue management** > **Buildings**.
     > [!NOTE]
     > You can't specify prices for individual rooms.
-1. Open or a building record.
+1. Open or create a building record.
 1. On the **General** tab of the venue or building record, set the **Cost** to the standard price normally charged for that venue or building.
 
 To record a venue's cost for an event:
@@ -91,7 +91,7 @@ Note that the total cost for the sponsored article is computed for you and displ
 
 ## Record prices for event passes
 
-In addition to sponsorships, you can gain revenue from an event by charging for admission. Manage this by setting up event passes, which function as tickets, to your event.
+In addition to sponsorships, you can gain revenue from an event by charging for admission. Manage this revenue by setting up event passes, which function as tickets to your event.
 
 To assign a price to an event pass:
 

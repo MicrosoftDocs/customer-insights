@@ -1,7 +1,7 @@
 ---
 title: Create an event from another event
-description: Describes how to create an event from another event when creating a new event in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/18/2023
+description: Use the Save as command to copy an existing event's sessions, speakers, and sponsorships into a new event in Customer Insights - Journeys.
+ms.date: 07/23/2026
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -15,7 +15,7 @@ search.audienceType:
 
 You can copy your existing event by using the **Save as** command on the toolbar.
 
-This operation will copy most of the entities from your existing event to a new one. The copied entities include:
+This action copies most entities from your existing event to the new one, including:
 
 - Pass
 - Session
@@ -25,9 +25,8 @@ This operation will copy most of the entities from your existing event to a new 
 - Event Custom Registration Field
 - Business Process Flow
 - Team Members
-- Session Tracks
 
 > [!NOTE]
-> Registrations are excluded from the copy operation to prevent potential issues that could arise in the capacity management and ticketing of new events. Child events of a recurrent event are also not copied to the new event. Learn more: [Known issues and workarounds](known-issues.md#event-management).
+> To avoid capacity management and ticketing problems in the new event, the process doesn't copy registrations. It also doesn't copy child events of a recurrent event. For more information, see [Known issues and workarounds](known-issues.md#event-management).
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
