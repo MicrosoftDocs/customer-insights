@@ -1,7 +1,7 @@
 ---
 title: Export data to Word or Excel files
-description: How to export data to a Microsoft Word or Excel document from Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/18/2023
+description: Export Customer Insights - Journeys data to Word documents or Excel workbooks using built-in templates for records and record lists.
+ms.date: 07/23/2026
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
@@ -26,8 +26,8 @@ To export Dynamics 365 Customer Insights - Journeys data by using a Word templat
 
 1. Open a record, such as a single contact, with information you want to use in your document.
 
-2. On the command bar, select **Word Templates**, and then under **Word Templates**, choose the template want to use. If you don't see the template you are looking for, consider the following:
-   - Only templates built for the selected record type (entity) will be displayed. For example, you won't see a template created for accounts when you are working with a contact.
+1. On the command bar, select **Word Templates**, and then under **Word Templates**, choose the template you want to use. If you don't see the template you're looking for, consider the following:
+   - Customer Insights - Journeys displays only templates built for the selected record type (entity). For example, you don't see a template created for accounts when you're working with a contact.
    - If you are looking for a brand-new template, you might need to refresh the page to see it. Either refresh your browser or close and reopen Dynamics 365 Customer Insights - Journeys.
 
 After you select your Word template, Dynamics 365 Customer Insights - Journeys creates a Word document from the record you selected.
@@ -40,19 +40,19 @@ You can export information from a multiple-record list by using an Excel templat
 
 The process for using an Excel template looks like this:
 
-![The process for using an Excel template.](media/excel-process-ill.png "The process for using an Excel template")
+:::image type="content" source="media/excel-process-ill.png" alt-text="Diagram that shows the four-step process for using an Excel template: select entity, export, generate workbook, and analyze." lightbox="media/excel-process-ill.png":::
 
 ### Step 1: Select an entity to analyze
 
 In Dynamics 365 Customer Insights - Journeys, select a record type (entity) to export to an Excel workbook.
 
-For example, go to **Customer Insights - Journeys** > **Audience* > **Leads**.
+For example, go to **Customer Insights - Journeys** > **Audience** > **Leads**.
 
 ### Step 2: Export Dynamics 365 Customer Insights - Journeys data by using an Excel template
 
 On the command bar, select **Excel Templates** to open a list of available templates, and then choose the one you want to use for the export.
 
-![Choose an Excel template to export to.](media/export-choose-excel-template.png "Choose an Excel template to export to")
+:::image type="content" source="media/export-choose-excel-template.png" alt-text="Screenshot of the Excel Templates list showing available templates to choose for export." lightbox="media/export-choose-excel-template.png":::
 
 Dynamics 365 Customer Insights - Journeys generates your Excel workbook and downloads it to your computer.
 

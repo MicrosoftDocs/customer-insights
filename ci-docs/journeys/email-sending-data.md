@@ -1,7 +1,7 @@
 ---
 title: Email sending data access and privileges
-description: Learn how to access email sending data in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/18/2023
+description: Learn how to grant email sending data access in Customer Insights - Journeys, including record-level and Service Reader role permissions for Dataverse entities.
+ms.date: 07/23/2026
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -22,8 +22,7 @@ To ensure proper email sending functionality, make sure that the Customer Insigh
 - You can explicitly add *read* access to the entities you want to use. Learn more: [Record-level privileges](/power-platform/admin/security-roles-privileges#record-level-privileges)
 - You can also provide global *read* access for the Customer Insights - Journeys user by giving them a [Service Reader role](/power-platform-release-plan/2020wave2/data-platform/new-service-reader-service-writer-security-roles), as shown in the screenshot below. Learn more: [Manage user accounts, user licenses, and security roles](admin-users-licenses-roles.md)
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of Service Reader role selection.](media/email-sending-data-service-reader.png "Screenshot of Service Reader role selection")
+    :::image type="content" source="media/email-sending-data-service-reader.png" alt-text="Screenshot of Service Reader role selection." lightbox="media/email-sending-data-service-reader.png":::
 
 ## Errors from data access issues
 

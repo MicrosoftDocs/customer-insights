@@ -1,7 +1,7 @@
 ---
 title: Improve email deliverability to China
-description: Learn how to improve email deliverability to China in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/18/2023
+description: Learn how Chinese ISPs filter email and follow best practices for content, HTML, and sending limits to improve deliverability.
+ms.date: 07/23/2026
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -17,7 +17,7 @@ If you're sending email to China, it will be subjected to stricter email filteri
 
 Making sure your marketing emails to China are delivered is crucial. China has vast opportunities to win customers (assuming you can reach them). Consumers show less brand loyalty in China than in most other countries/regions, tending to look for the best deal unless they're shopping for high-end products.
 
-Below you'll find tips and tricks on how to boost your deliverability when targeting customers behind China-based ISPs.
+The following tips and tricks help you boost your deliverability when targeting customers behind China-based ISPs (internet service providers).
 
 ## Chinese email market landscape
 
@@ -53,34 +53,41 @@ Other providers include:
     - Avoid adult content, including pornography or ads for pornography, gambling, tobacco, and illegal drugs (alcohol is permissible).
     - Avoid anything that “compromises State security, discloses State secrets, subverts State power or damages national unity” or “other content prohibited by laws or administrative regulations.”
 
-- Font size
-    - In terms of deliverability, font size matters. Anything below a 10-point font can be interpreted as an attempt to hide additional content, thereby exposing the content to additional filtering.
+### Font size
 
-- Language
-    - Send as many emails as possible to China in Chinese. Sending content in English can be flagged by content filtering services.
+In terms of deliverability, font size matters. Anything below a 10-point font can be interpreted as an attempt to hide extra content, which exposes the content to extra filtering.
 
-- List hygiene
-    - China is known for its high attrition rates when it comes to email lists. If an email address doesn't interact with (open or click) an email after two to three sends, it may be abandoned. Continuing to mail to this type of email address can adversely affect your sending reputation and subject you to further filtering.
+### Language
 
-- Email flows
-    - Segment mail streams (such as transactional and marketing emails) into different "From" addresses.
+Send as many emails as possible to China in Chinese. Sending content in English can be flagged by content filtering services.
 
-- HTML recommendations
-    - Avoid coding your HTML email template using CSS. Many email service providers will strip it out. Use traditional `<font>` and `<table>` tags instead.
-    - Avoid dark background colors with light font colors.
-    - Don't exceed your email template width of 600 pixels. Bigger pixel width templates won't fit the email preview pane.
-    - Always use alt and title text. It's likely that your images may not load; be sure to apply both alt and title text behind the images so that these texts display when this happens.
-    - Limit use of images to no more than 40 percent of your email template. Remember, most email service providers won't allow images to load.
-    - Use mobile friendly content design due to the large number of mobile users in China. Most of the population accesses the internet on smartphones or tablets.
+### List hygiene
 
-- Subject line
-    - Label your promotional messages as “AD” in the subject line.
-    - Limit subject lines to fewer than 35 characters.
+China is known for its high attrition rates when it comes to email lists. If an email address doesn't interact with (open or click) an email after two to three sends, it might be abandoned. Continuing to mail to this type of email address can adversely affect your sending reputation and subject you to further filtering.
 
-- Sending limits
-    - Expect delivery delays. Chinese mailbox providers have slower processing speeds than other ISPs. Many Chinese mailbox providers impose daily sending limits and vary them based on a sender's subscriber engagement metrics.
-    - Microsoft Dynamics 365 has internal outgoing limits that are constantly adjusted based on feedback received.
-    - Avoid sending large segments through customer journeys. It’s  better to split your journey into small segments and spread the sending over multiple days.
+### Email flows
+
+Segment mail streams (such as transactional and marketing emails) into different "From" addresses.
+
+### HTML recommendations
+
+- Avoid coding your HTML email template using CSS. Many email service providers strip out CSS. Use traditional `<font>` and `<table>` tags instead.
+- Avoid dark background colors with light font colors.
+- Don't exceed your email template width of 600 pixels. Bigger pixel width templates don't fit the email preview pane.
+- Always use alt and title text. It's likely that your images don't load, so apply both alt and title text behind the images so that these texts display when this happens.
+- Limit use of images to no more than 40 percent of your email template. Remember, most email service providers don't allow images to load.
+- Use mobile friendly content design due to the large number of mobile users in China. Most of the population accesses the internet on smartphones or tablets.
+
+### Subject line
+
+- Label your promotional messages as “AD” in the subject line.
+- Limit subject lines to fewer than 35 characters.
+
+### Sending limits
+
+- Expect delivery delays. Chinese mailbox providers have slower processing speeds than other ISPs. Many Chinese mailbox providers impose daily sending limits and vary them based on a sender's subscriber engagement metrics.
+- Microsoft Dynamics 365 has internal outgoing limits that it constantly adjusts based on feedback received.
+- Avoid sending large segments through customer journeys. It's better to split your journey into small segments and spread the sending over multiple days.
 
 > [!IMPORTANT]
 > Being blocklisted is usually temporary. The length can vary depending on your past history. Delisting is usually not possible. Follow the best practice tips in this article to improve your sending reputation.
