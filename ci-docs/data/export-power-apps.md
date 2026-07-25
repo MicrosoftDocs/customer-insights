@@ -1,8 +1,8 @@
 ---
-title: "Power Apps connector (preview)"
-description: "Connect with Power Apps and Power Automate."
-ms.date: 09/01/2023
-ms.reviewer: mhart
+title: Power Apps connector (preview)
+description: Power Apps connector lets you bring unified customer profiles into personalized apps. Discover how to connect Customer Insights - Data and build with Dataverse.
+ms.date: 07/24/2026
+ms.reviewer: v-wendysmith
 ms.topic: how-to
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -15,13 +15,13 @@ ms.author: sstabbert
 Bring unified customer profiles into your personalized apps with Microsoft Power Apps.
 
 > [!TIP]
-> We recommend using this option [to create apps with Dataverse data](/power-apps/maker/). It ensures you benefit from our [integration into Dataverse](integrate-d365-apps.md).
+> Use this option [to create apps with Dataverse data](/power-apps/maker/). It ensures you benefit from our [integration into Dataverse](integrate-d365-apps.md).
 
 ## Connect Power Apps and Dynamics 365 Customer Insights - Data
 
 Customer Insights - Data is one of the many [available sources for data in Power Apps](/powerapps/maker/canvas-apps/working-with-data-sources).
 
-Refer to the Power Apps documentation to learn how to [add a data connection to an app](/powerapps/maker/canvas-apps/add-data-connection). We recommend you also review [how Power Apps uses delegation to handle large datasets in Canvas apps](/powerapps/maker/canvas-apps/delegation-overview).
+Refer to the Power Apps documentation to learn how to [add a data connection to an app](/powerapps/maker/canvas-apps/add-data-connection) and review [how Power Apps uses delegation to handle large datasets in Canvas apps](/powerapps/maker/canvas-apps/delegation-overview).
 
 ## Available tables
 
@@ -34,16 +34,16 @@ After adding Customer Insights - Data as a data connection, choose the following
 
 ### Retrievable tables
 
-You can only retrieve the **Customer**, **UnifiedActivity**, and **Segments** tables through the Power Apps connector. Other tables are shown because the underlying connector supports them through triggers in Power Automate.
+You can retrieve only the **Customer**, **UnifiedActivity**, and **Segments** tables through the Power Apps connector. The connector shows other tables because the underlying connector supports them through triggers in Power Automate.
 
-You can do a maximum of 100 calls per 60 seconds. You can call the API endpoint multiple times by using the $skip parameter. [Learn more about the $skip parameter](/connectors/customerinsights/#get-items-from-a-table).
+You can make up to 100 calls per 60 seconds. You can call the API endpoint multiple times by using the $skip parameter. [Learn more about the $skip parameter](/connectors/customerinsights/#get-items-from-a-table).
 
 ### Delegation
 
 Delegation works for the **Customer** table and **UnifiedActivity** table.
 
-- Delegation for **Customer** table: To use delegation for this table, the fields need to be indexed in [search & filter index](search-filter-index.md).  
-- Delegation for **UnifiedActivity**: Delegation for this table only works for the fields **ActivityId** and **CustomerId**.  
+- Delegation for **Customer** table: To use delegation for this table, index the fields in the [search & filter index](search-filter-index.md).  
+- Delegation for **UnifiedActivity** table: Delegation for this table only works for the fields **ActivityId** and **CustomerId**.  
 
 For more information about delegation, go to [Power Apps delegable functions and operations](/powerapps/maker/canvas-apps/delegation-overview).
 
