@@ -1,7 +1,7 @@
 ---
-title: Manage SMS (text message) keywords used in customer journeys 
-description: Learn how to manage text message keywords used in customer journeys in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/21/2023
+title: Manage SMS (text message) keywords used in customer journeys
+description: Add, update, and delete SMS keywords used in customer journeys from the SMS keywords page in Customer Insights - Journeys.
+ms.date: 07/29/2026
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
@@ -31,8 +31,9 @@ To update a keyword:
 1. Select it from the keywords list.
 2. Select the **Edit** button.
 3. Add the new text and select **Update**.
- The following screenshot shows the **SMS keywords** page. 
 
-> ![SMS keywords page screenshot.](media/sms-keywords-page.png "SMS keywords page screenshot")
+The following screenshot shows the **SMS keywords** page.
+
+:::image type="content" source="media/sms-keywords-page.png" alt-text="Screenshot of the SMS keywords page listing created keywords." lightbox="media/sms-keywords-page.png":::
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
