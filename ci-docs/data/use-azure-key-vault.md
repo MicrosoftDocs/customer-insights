@@ -1,7 +1,7 @@
 ---
-title: "Bring your own Azure key vault (preview)"
-description: "Learn how to configure Dynamics 365 Customer Insights - Data to use your own Azure key vault to manage secrets."
-ms.date: 09/01/2023
+title: Bring your own Azure key vault (preview)
+description: Bring your own Azure key vault in Dynamics 365 Customer Insights - Data to store connection secrets securely. Learn how to link a key vault.
+ms.date: 07/30/2026
 ms.reviewer: alfergus
 ms.topic: how-to
 author: Scott-Stabbert
@@ -15,7 +15,7 @@ ms.custom: sfi-image-nochange
 
 [!INCLUDE [azure-ad-to-microsoft-entra-id](../journeys/includes/azure-ad-to-microsoft-entra-id.md)]
 
-Linking a dedicated [Azure key vault](/azure/key-vault/general/basic-concepts) to a Dynamics 365 Customer Insights - Data environment helps organizations to meet compliance requirements.
+Linking a dedicated [Azure key vault](/azure/key-vault/general/basic-concepts) to a Dynamics 365 Customer Insights - Data environment helps your organization meet compliance requirements.
 
 ## Link the key vault to the Customer Insights - Data environment
 
@@ -27,7 +27,7 @@ Set up the dedicated key vault to stage and use secrets in an organization's com
 
 - An [Administrator](user-roles.md#admin) role [assigned](permissions.md) in Customer Insights - Data.
 
-- [Contributor](/azure/role-based-access-control/built-in-roles#contributor) and [User Access Administrator](/azure/role-based-access-control/built-in-roles#user-access-administrator) roles on the key vault or the resource group the key vault belongs to. For more information, go to [Add or remove Azure role assignments using the Azure portal](/azure/role-based-access-control/role-assignments-portal). If you don't have the User Access Administrator role on the key vault, set up the role-based access control permissions for the Microsoft Entra service principal for Customer Insights - Data separately. Follow the steps to [use aa Microsoft Entra service principal](connect-service-principal.md) for the key vault that should be linked.
+- [Contributor](/azure/role-based-access-control/built-in-roles#contributor) and [User Access Administrator](/azure/role-based-access-control/built-in-roles#user-access-administrator) roles on the key vault or the resource group the key vault belongs to. For more information, see [Add or remove Azure role assignments using the Azure portal](/azure/role-based-access-control/role-assignments-portal). If you don't have the User Access Administrator role on the key vault, set up the role-based access control permissions for the Microsoft Entra service principal for Customer Insights - Data separately. Follow the steps to [use a Microsoft Entra service principal](connect-service-principal.md) for the key vault that should be linked.
 
 - Key vault must have Key Vault firewall **disabled**.
 
@@ -60,7 +60,7 @@ When [setting up connections](connections.md) to [supported third-party](#suppor
 1. For the supported connection types, a **Use Key Vault** toggle is available if you linked a key vault.
 1. Instead of entering the secret manually, choose the secret name that points to the secret value in the key vault.
 
-   :::image type="content" source="media/use-key-vault-secret.png" alt-text="Connection pane with an SFTP connection that uses a Key Vault secret.":::
+   :::image type="content" source="media/use-key-vault-secret.png" alt-text="Screenshot of the connection pane with an SFTP connection that uses a Key Vault secret.":::
 
 1. Select **Save** to create the connection.
 
@@ -93,34 +93,34 @@ The following permissions are granted to Customer Insights - Data on a linked ke
 | Secret      | [Get Secrets](/rest/api/keyvault/secrets/get-secrets/get-secrets), [Get Secret](/rest/api/keyvault/secrets/get-secret/get-secret)                     |
 | Certificate | [Get Certificates](/rest/api/keyvault/certificates/get-certificates/get-certificates), [Get Certificate](/rest/api/keyvault/certificates/get-certificate/get-certificate) |
 
-The preceding values are the minimum to list and read during execution.
+The preceding values are the minimum permissions to list and read during execution.
 
 ### Azure role-based access control
 
-The [Key Vault Reader and Key Vault Secrets User roles](/azure/key-vault/general/rbac-guide?tabs=azure-cli) will be added for Customer Insights - Data.
+Add the [Key Vault Reader and Key Vault Secrets User roles](/azure/key-vault/general/rbac-guide?tabs=azure-cli) for Customer Insights - Data.
 
 ## Frequently asked questions
 
-### Can Customer Insights - Data write secrets or overwrite secrets into the key vault?
+### Can Customer Insights - Data write or overwrite secrets in the key vault?
 
-No. Only the read and list permissions outlined in [granted permissions](#permissions-granted-on-the-key-vault) are granted. The system can't add, delete, or overwrite secrets in the key vault. That's also the reason why you can't enter credentials when a connection uses Key Vault.
+No. The system only has the read and list permissions outlined in [granted permissions](#permissions-granted-on-the-key-vault). It can't add, delete, or overwrite secrets in the key vault. This restriction is also why you can't enter credentials when a connection uses Key Vault.
 
 ### Can I change a connection from using Key Vault secrets to default authentication?
 
-No. You can't change back to a default connection after you've configured it by using a secret from a linked key vault. Create a separate connection, and delete the old one if you don't need it anymore.
+No. You can't change back to a default connection after you configure it by using a secret from a linked key vault. Create a separate connection, and delete the old one if you don't need it anymore.
 
 ### How can I revoke access to a key vault for Customer Insights - Data?
 
-If the [Key Vault access policy](/azure/key-vault/general/assign-access-policy?tabs=azure-portal) or [Azure role-based access control](/azure/key-vault/general/rbac-guide?tabs=azure-cli) is enabled, remove the permissions for the service principal `0bfc4568-a4ba-4c58-bd3e-5d3e76bd7fff` with the name `Dynamics 365 AI for Customer Insights`. All connections that use the key vault will stop working.
+If the [Key Vault access policy](/azure/key-vault/general/assign-access-policy?tabs=azure-portal) or [Azure role-based access control](/azure/key-vault/general/rbac-guide?tabs=azure-cli) is enabled, remove the permissions for the service principal `0bfc4568-a4ba-4c58-bd3e-5d3e76bd7fff` with the name `Dynamics 365 AI for Customer Insights`. All connections that use the key vault stop working.
 
-### A secret that's used in a connection got removed from the key vault. What can I do?
+### I removed a secret from the key vault that's used in a connection. What can I do?
 
-A notification appears in Customer Insights - Data when a configured secret from the key vault isn't accessible anymore. Enable [soft-delete](/azure/key-vault/general/soft-delete-overview) on the key vault to restore secrets if they're accidentally removed.
+A notification appears in Customer Insights - Data when a configured secret from the key vault isn't accessible anymore. To restore secrets if they're accidentally removed, enable [soft-delete](/azure/key-vault/general/soft-delete-overview) on the key vault.
 
 ### A connection doesn't work, but my secret is in the key vault. What might be the cause?
 
 A notification appears in Customer Insights - Data when it can't access the key vault. The cause might be:
 
-- The permissions for the service principal got removed. They need to be manually restored.
+- You removed the permissions for the service principal. You must restore them manually.
 
-- The firewall on the key vault is enabled. The firewall must be disabled to make the key vault accessible for the system again.
+- You enabled the firewall on the key vault. You must disable the firewall to make the key vault accessible for the system again.

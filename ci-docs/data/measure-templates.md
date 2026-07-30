@@ -1,18 +1,21 @@
 ---
-title: "Create measures from templates"
-description: "Define measures using templates for common use cases."
-ms.date: 09/01/2023
+title: Create measures from templates (preview)
+description: Build measures faster with templates for average transaction value, loyalty points balance, and more. Discover how to map activity data and calculate results.
+ms.date: 07/29/2026
 ms.topic: how-to
-author: v-wendysmith
-ms.author: wameng
+author: Scott-Stabbert
+ms.author: sstabbert
 ms.reviewer: v-wendysmith
 ---
 
-# Create measures from templates
+# Create measures from templates (preview)
 
-Use predefined templates of commonly used [measures](measures.md) to create them. Templates build on mapped data from the *Unified Activity* table. So make sure you have configured [customer activities](activities.md) before you create a measure from a template.
+[!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
-Available measure templates:
+Create commonly used [measures](measures.md) quickly by using predefined templates. These templates calculate metrics such as average transaction value, loyalty points balance, and customer lifespan by using mapped data from the *Unified Activity* table.
+
+Available measure templates include:
+
 - Average transaction value (ATV)
 - Total transaction value
 - Average daily revenue
@@ -26,6 +29,12 @@ Available measure templates:
 - Loyalty membership duration
 - Time since last purchase
 
+[!INCLUDE [public-preview-note](includes/public-preview-note.md)]
+
+## Prerequisites
+
+Configure [customer activities](activities.md).
+
 ## Build a new measure using a template
 
 1. Go to **Insights** > **Measures**.
@@ -38,13 +47,13 @@ Available measure templates:
 
 1. Select **Edit details** next to Measure name. Provide a name for the measure. Optionally, add [tags](work-with-tags-columns.md#manage-tags) to the measure.
 
-   :::image type="content" source="media/measures_edit_details.png" alt-text="Edit details dialog box.":::
+   :::image type="content" source="media/measures_edit_details.png" alt-text="Screenshot of the Edit details dialog box.":::
 
 1. Select **Done**.
 
 1. In the **Set time period** section, define the time frame of the data. Choose if you want the new measure to cover the entire dataset by selecting **All time**, or if you want the measure to focus on a **Specific time period**.
 
-   :::image type="content" source="media/measure-set-time-period.png" alt-text="Screenshot showing the time period section when configuring a measure from a template.":::
+   :::image type="content" source="media/measure-set-time-period.png" alt-text="Screenshot of the time period section when configuring a measure from a template.":::
 
 1. In the next section, select **Add data** to choose the activities and map the corresponding data from your *Unified Activity* table.
 

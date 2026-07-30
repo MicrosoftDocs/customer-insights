@@ -1,12 +1,14 @@
 ---
-title: "Suggested segments (preview)"
-description: "Let Dynamics 365 Customer Insights - Data help you find new and interesting segments based on customer attributes."
-author: JimsonChalissery
+title: Suggested segments overview (preview)
+description: Find new customer segments faster with AI-powered suggestions in Customer Insights - Data. Explore activity-based and measure-based segment ideas to boost your KPIs.
+author: Scott-Stabbert
 ms.author: sstabbert
 ms.reviewer: v-wendysmith
-ms.service: customer-insights
-ms.date: 09/01/2023
-ms.topic: article
+ms.service: dynamics-365-customer-insights
+ms.collection: bap-ai-copilot
+ms.update-cycle: 180-days
+ms.date: 07/30/2026
+ms.topic: concept-article
 ms.custom: bap-template
 ---
 
@@ -14,13 +16,13 @@ ms.custom: bap-template
 
 [!INCLUDE [public-preview-banner](includes/public-preview-banner.md)]
 
-Dynamics 365 Customer Insights - Data can suggest segments based on activity or measures.
+Use suggested segments in Dynamics 365 Customer Insights - Data to discover meaningful customer groups. Suggestions can identify patterns based on customer activity or show how measures and attributes relate to your key performance indicators (KPIs).
 
 :::image type="content" source="media/suggested-segments-tab.png" alt-text="Suggested segments tab showing segment suggestions for activity-based and attribute-based segments.":::
 
 [!INCLUDE [public-preview-note](includes/public-preview-note.md)]
 
-## Suggested segments based on activity (preview)
+## Suggested segments based on activity
 
 Discover interesting segments of your customers based on customer activity data that is ingested to Customer Insights - Data. Examples of activity data are transactions, support call duration, purchases, or returns. To suggest segments, activity data gets analyzed for recency, frequency, and monetary value (or duration).
 
@@ -37,7 +39,7 @@ With [activity data](activities.md) available in Customer Insights - Data, we ca
 If you have a retail business, you could find out which customers generate the most revenue and reward them with a coupon. Or you can identify occasional customers and offer them to join a rewards program so they visit your business more often.
 If you provide public healthcare and your goal is to minimize the expenses for individual patients, you could try to reduce recurring visits by providing the best possible care in as few visits as possible. In this case, your goal is to keep the visit frequency low and minimize recurring cost for the patients. Or you can identify segments of patients who have frequent appointments and high recurring costs and analyze these cases to improve the treatment of the individual.
 
-## Suggested segments based on measures (preview)
+## Suggested segments based on measures
 
 Discover interesting segments of your customers with the help of an AI model. This machine learning powered feature suggests segments based on measures or customer attributes. It can help improve your Key Performance Indicators (KPIs) or better understand the influence of attributes in context of other attributes.
 

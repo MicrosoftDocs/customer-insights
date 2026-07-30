@@ -1,11 +1,11 @@
 ---
-title: "Enrich unified data (preview)"
-description: "Use capabilities from Microsoft and other third-party services to enrich your unified customer data."
-ms.date: 10/05/2023
-ms.reviewer: mhart
+title: Enrich unified data (preview)
+description: Enrich unified customer data in Dynamics 365 Customer Insights with Microsoft and third-party enrichments. Learn how to create, run, and review enrichment results.
+ms.date: 07/30/2026
+ms.reviewer: v-wendysmith
 ms.topic: how-to
-author: jodahlMSFT
-ms.author: jodahl
+author: Scott-Stabbert
+ms.author: sstabbert
 ms.collection: get-started
 ms.custom: sfi-image-nochange
 ---
@@ -26,7 +26,7 @@ You need to have Contributor or Administrator [permissions](user-roles.md) to cr
 
 Go to **Data** > **Enrichment**. The **Discover** tab shows all supported enrichment options.
 
-:::image type="content" source="media/enrichment-hub-page.png" alt-text="Enrichment hub page.":::
+:::image type="content" source="media/enrichment-hub-page.png" alt-text="Screenshot of the Enrichment hub page showing the Discover tab.":::
 
 - [AbiliTec Identity](enrichment-liveramp.md) provided by LiveRamp AbiliTec
 - [Brands](enrichment-microsoft.md) provided by Microsoft
@@ -42,7 +42,7 @@ Go to **Data** > **Enrichment**. On the **My enrichments** tab, view the configu
 
 Select the enrichment to view available actions.
 
-:::image type="content" source="media/enrichment-hub-options-run.png" alt-text="Options to manage enrichments in the list of enrichments.":::
+:::image type="content" source="media/enrichment-hub-options-run.png" alt-text="Screenshot of the options to manage enrichments in the list of enrichments.":::
 
 - **View** enrichment details with the number of enriched customer profiles.
 - **Edit** the enrichment configuration.
@@ -85,7 +85,7 @@ After a completed enrichment run, review the enrichment results.
 
 All enrichments show basic information such as the number of enriched profiles and the number of enriched profiles over time. The **Enriched customers preview** tile shows a sample of the generated enrichment table. To see a detailed view, select **See more** and select the **Data** tab.
 
-:::image type="content" source="media/enrichments-results.png" alt-text="Enrichments results page.":::
+:::image type="content" source="media/enrichments-results.png" alt-text="Screenshot of the enrichment results page.":::
 
 If available, the **Number of customers enriched by field** provides a drill-down into the coverage of each enriched field.
 
