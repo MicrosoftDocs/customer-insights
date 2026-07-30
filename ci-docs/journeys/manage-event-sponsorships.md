@@ -1,7 +1,7 @@
 ---
-title: Record and publicize sponsorship details 
-description: How to register sponsors and sponsorable articles in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/21/2023
+title: Record and publicize sponsorship details
+description: Register event sponsors and sponsorable articles, and track sponsorship type, value, and details in Dynamics 365 Customer Insights - Journeys.
+ms.date: 07/29/2026
 ms.topic: article
 author: alfergus
 ms.author: alfergus
