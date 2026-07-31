@@ -1,7 +1,7 @@
 ---
 title: Authenticate Teams for webinars v2 users in Customer Insights - Journeys
 description: Learn how to set up authentication and permissions for Teams webinars v2 in Dynamics 365 Customer Insights - Journeys. 
-ms.date: 06/24/2026
+ms.date: 07/30/2026
 ms.topic: article
 author: terezakirk
 ms.author: alfergus
@@ -51,8 +51,10 @@ By completing this setup, you'll:
 1. Select **+ Add credential** and select **Other issuer** for the **Federated credential scenario**.
 1. Fill in:
     1. **Issuer**: `https://login.microsoftonline.com/<TenantID>/v2.0`
-    2. **Value**: Paste the Federated Identity Credential Subject (for example, /eid1/c/pub/t/...).
-    3. **Name**: Add a descriptive name of your choice.
+    1. **Value**: Paste the Federated Identity Credential Subject (for example, /eid1/c/pub/t/...).
+    1. **Name**: Add a descriptive name of your choice.
+    > [!IMPORTANT]
+    > Replace the `<TenantID>` placeholder with your actual tenant ID.
 1. Select **Add**.
 
 :::image type="content" source="media/teams-registration-2.png" alt-text="Federated credential tab screenshot." lightbox="media/teams-registration-2.png":::
