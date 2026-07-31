@@ -22,8 +22,8 @@ Choose how to create a segment based on your target audience.
 - Simple segments with one operator: [Quick segment](segment-quick.md)
 - Create complex segments using rules and conditions: [Segment builder](#segment-builder-overview)
 - AI-powered way to find similar customers: [Similar customers](find-similar-customer-segments.md)
-- AI-powered suggestions based on measures or attributes: [Suggested segments based on measures](suggested-segments.md#suggested-segments-based-on-measures-preview)
-- Suggestions based on activities: [Suggested segments based on customer activity](suggested-segments.md#suggested-segments-based-on-activity-preview)
+- AI-powered suggestions based on measures or attributes: [Suggested segments based on measures](suggested-segments.md#suggested-segments-based-on-measures)
+- Suggestions based on activities: [Suggested segments based on customer activity](suggested-segments.md#suggested-segments-based-on-activity)
 - Create segments using behavioral interaction data from Customer Insights - Journeys: [Use Customer Insights - Journeys interaction data in segments (preview)](journeys-interaction-data-segments-measures.md)
 
 ## Segment builder overview
