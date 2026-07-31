@@ -1,7 +1,7 @@
 ---
 title: Asset library add-on file migration
-description: Learn about how files will be migrated out of the asset library add-on in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/22/2023
+description: Files from the retired asset library add-on were automatically migrated to the unified asset library in Customer Insights - Journeys.
+ms.date: 07/30/2026
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -12,12 +12,12 @@ search.audienceType:
 
 # Asset library add-on file migration
 
-The [Customer Insights - Journeys library add-on](upload-images-files.md) has been retired and will be removed by **June 30, 2023**. All customers will automatically be migrated to the [unified asset library](upload-images-files.md), which adds support for shared Dynamics 365 features such as support for business units, security roles for asset management and application lifecycle management. Other features, such as automated tagging and smart recommendation for images, will be temporarily removed and added back in upcoming releases.
+The [Customer Insights - Journeys library add-on](upload-images-files.md) was retired and removed on June 30, 2023. All customers were automatically migrated to the [unified asset library](upload-images-files.md), which adds support for shared Dynamics 365 features such as business units, security roles for asset management, and application lifecycle management. Other features, such as automated tagging and smart recommendations for images, were temporarily removed during the migration and later added back in subsequent releases.
 
-Files will be automatically copied to the Dynamics 365 Customer Insights - Journeys unified library. Emails, templates, and content blocks that contain links to assets will be updated as well.
+Files were automatically copied to the Dynamics 365 Customer Insights - Journeys unified library. Emails, templates, and content blocks that contained links to assets were updated as well.
 
-The migration will happen automatically between April and June 2023.
+The migration happened automatically between April and June 2023.
 
-Emails sent *before* migration may include links to assets stored in the add-on library. Those links will become inactive 30 days after migration is complete.
+Emails sent *before* the migration might include links to assets that were stored in the add-on library. Those links became inactive 30 days after the migration was complete.
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
