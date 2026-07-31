@@ -1,7 +1,7 @@
 ---
 title: Move triggers between environments – ALM process for triggers
-description: Learn how to move triggers between environments (ALM process for triggers) in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/21/2023
+description: Migrate triggers between Dynamics 365 environments with Power Platform solutions, including export, import, and solution upgrade steps.
+ms.date: 07/30/2026
 ms.topic: get-started
 author: alfergus
 ms.author: alfergus
@@ -13,33 +13,30 @@ search.audienceType:
 
 # Move triggers between environments (ALM process for triggers)
 
-You may use multiple Dynamics 365 environments to support different stages of your application lifecycle management process. For example, you may have a development environment for creating and testing new features, a staging environment for pre-production testing, and a production environment for  final application deployment. Using multiple environments allows you to maintain separate configurations, isolate changes, and avoid potential conflicts that could impact your system’s stability.
+In Dynamics 365 Customer Insights - Journeys, a trigger is a customer action or event, such as a website visit or form submission, that starts a journey. You can use multiple Dynamics 365 environments to support different stages of your application lifecycle management (ALM) process. For example, you might have a development environment for creating and testing new features, a staging environment for preproduction testing, and a production environment for final application deployment. By using multiple environments, you can maintain separate configurations, isolate changes, and avoid potential conflicts that could affect your system's stability.
 
-Migrating triggers between environments is a key process that ensures that your team is using the most recent version of the triggers. [Power Platform solutions](transfer-solution.md) are the mechanism for implementing ALM by defining how code and metadata are packaged for transportation from one environment to another. Solutions include components such as entities, connectors, flows, and forms but don't include customer data by default.
+Migrating triggers between environments is a key process that ensures your team uses the most recent version of the triggers. [Power Platform solutions](transfer-solution.md) are the mechanism for implementing ALM by defining how code and metadata are packaged for transportation from one environment to another. Solutions include components such as entities, connectors, flows, and forms but don't include customer data by default.
 
-For ALM support, Dynamics 365 features must be built as "Solution-Aware," with entities modeled as solution components and dependencies known to Dataverse so they can be resolved during import. Environment-specific data, including usage data, is excluded from the solution, allowing for a streamlined and efficient ALM process. By utilizing solutions, you can achieve better control over your system's configuration, reduce errors, and ensure consistency across environments.
+For ALM support, developers must build Dynamics 365 features as "Solution-Aware," model entities as solution components, and register dependencies so Dataverse can resolve them during import. Excluding environment-specific data, including usage data, from the solution streamlines and makes the ALM process more efficient. By using solutions, you gain better control over your system's configuration, reduce errors, and help ensure consistency across environments.
 
 ## Use Power Platform solutions to move triggers
 
-You can move triggers in **any** state between environments (draft, published, or stopped). To do so, follow the steps below:
+You can move triggers in **any** state between environments (draft, published, or stopped). To do so, follow these steps:
 
 1. Open Power Platform solutions for your current source environment by selecting the app switcher in the upper left corner of the screen then selecting **Power Apps**.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of selecting a Power App from dashboard](media/select-power-app.png "Screenshot of selecting a Power App from dashboard")
+    :::image type="content" source="media/select-power-app.png" alt-text="Screenshot of selecting a Power App from the dashboard." lightbox="media/select-power-app.png":::
 
     > [!IMPORTANT]
     > Ensure that the environment for Power Apps is the same as the one that you're currently working in (the one that has the triggers you want to migrate).
 
 1. Select **Solutions** on the left pane and select **+ New Solution** in the top bar.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of selecting the solutions tab to create a new solution](media/solutions-tab.png "Screenshot of selecting the solutions tab to create a new solution")
+    :::image type="content" source="media/solutions-tab.png" alt-text="Screenshot of selecting the Solutions tab to create a new solution." lightbox="media/solutions-tab.png":::
 
 1. Name your solution and select a publisher. Make sure that the solution has a unique name that highlights the trigger or triggers that will be added.
 
-    > [!div class="mx-imgBorder"]
-    > ![Fill in the details for new solution creation](media/name-your-solution.png "Fill in the details for new solution creation")
+    :::image type="content" source="media/name-your-solution.png" alt-text="Screenshot of filling in the details for creating a new solution." lightbox="media/name-your-solution.png":::
 
 1. Add only your "trigger" records to the solution. (**Component Type: Trigger**)
     - This can be done using the following steps:
@@ -55,17 +52,15 @@ You can move triggers in **any** state between environments (draft, published, o
     |     Published    |     Trigger record, CustomApi record, CatalogAssignment record, and CustomApiRequestParameter record(s)    |
 
 1. Once done, you're ready to migrate the solution to the destination environment.
-1. To migrate the solution, you need to export it. To export, follow the below steps: 
+1. To migrate the solution, you need to export it. To export, follow these steps:
 
     - Select **Export Solution**.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of exporting a solution to start migration](media/export-solution.png "Screenshot of exporting a solution to start migration")
+    :::image type="content" source="media/export-solution.png" alt-text="Screenshot of exporting a solution to start migration." lightbox="media/export-solution.png":::
 
     - Ensure that the solution is exported as **Managed**.
 
-    > [!div class="mx-imgBorder"]
-    > ![Make sure to select the recommended solution as managed solution](media/managed-solution-to-export.png "Make sure to select the recommended solution as managed solution")
+    :::image type="content" source="media/managed-solution-to-export.png" alt-text="Screenshot of selecting the recommended managed solution option before export." lightbox="media/managed-solution-to-export.png":::
 
     - Select **Export**. Depending on the number of triggers in the solution, it takes a few minutes for the solution to be ready to download.
 
@@ -78,8 +73,8 @@ You can move triggers in **any** state between environments (draft, published, o
 
 ## Solution upgrade experience
 
-Solution upgrades for solutions that contain managed triggers is slightly different from the migration of solutions for the first time between environments. Solution upgrades on triggers can vary depending on how the users work with the triggers in the destination or source environments.
-Solution upgrades only change the state of the triggers when the triggers in the destination environment are in a draft state. The table below shows how state transitions occur for solution upgrades:
+Solution upgrades for solutions that contain managed triggers differ slightly from the migration of solutions for the first time between environments. Solution upgrades on triggers can vary depending on how users work with the triggers in the destination or source environments.
+Solution upgrades only change the state of the triggers when the triggers in the destination environment are in a draft state. The following table shows how state transitions occur for solution upgrades:
 
 |     Trigger state at   destination    |     State of trigger post solution upgrade    |
 |---|---|
@@ -87,7 +82,7 @@ Solution upgrades only change the state of the triggers when the triggers in the
 |     Draft    |     State transition is allowed. The trigger’s state changes to the state of the trigger that is brought over from the source environment during solution upgrade.    |
 |     Stopped    |     Doesn't change. The trigger remains in a stopped state irrespective of the state of the trigger from upgraded solution.    |
 
-## Common questions
+## Common questions about moving triggers between environments
 
 - Can I import more than one trigger per solution?
 

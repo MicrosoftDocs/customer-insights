@@ -3780,6 +3780,11 @@
       "source_path": "ci-docs/journeys/segment-member-count.md",
       "redirect_url": "/troubleshoot/dynamics-365/customer-insights/journeys/segments/segment-member-count",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "ci-docs/journeys/marketing-execution-section.md",
+      "redirect_url": "dynamics365/customer-insights/journeys/real-time-marketing-email",
+      "redirect_document_id": false
     }
   ]
 }
