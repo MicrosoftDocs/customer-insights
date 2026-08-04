@@ -1,7 +1,7 @@
 ---
 title: Open the administration settings 
-description: Explains how to access admin settings in Dynamics 365 Customer Insights - Journeys.
-ms.date: 09/22/2023
+description: Access the administration settings in Dynamics 365 Customer Insights - Journeys to manage users, defaults, webinars, and quotas.
+ms.date: 08/03/2026
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
@@ -17,14 +17,13 @@ Administrators use settings to fine-tune application behavior, set defaults, man
 
 1. If you haven't already done so, sign in to Dynamics 365 Customer Insights - Journeys as a user with [administrator privileges](admin-users-licenses-roles.md). Then use the app selector menu to open the **Customer Insights - Journeys** app.
 
-1. Expand the work-area area menu at the bottom of the side navigator and select **Settings**.
+1. Expand the work-area menu at the bottom of the side navigator and select **Settings**.
 
 1. The side navigator is updated to show pages available in the **Settings** work area.
 
 ## Work with the administration settings
 
-> [!div class="mx-imgBorder"]
-> ![The settings overview.](media/admin-overview2.png)
+:::image type="content" source="media/admin-overview2.png" alt-text="Screenshot of the Settings work area showing categories in the left navigation pane." lightbox="media/admin-overview2.png":::
 
 Use the left navigation pane to navigate between settings pages, which are organized into sections. Select an entry under a heading to open the related settings page.
 
