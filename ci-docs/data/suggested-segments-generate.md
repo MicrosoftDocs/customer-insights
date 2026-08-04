@@ -4,7 +4,7 @@ description: Generate suggested segments in Customer Insights using AI to improv
 author: Scott-Stabbert
 ms.author: sstabbert
 ms.reviewer: v-wendysmith
-ms.service: customer-insights
+ms.service: dynamics-365-customer-insights
 ms.topic: how-to
 ms.date: 07/08/2026
 ms.custom: bap-template

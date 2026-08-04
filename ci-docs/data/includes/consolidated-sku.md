@@ -3,7 +3,7 @@ author: m-hartmann
 ms.author: mhart
 ms.date: 11/06/2023
 ms.topic: include
-ms.service: customer-insights
+ms.service: dynamics-365-customer-insights
 ---
 
 > [!NOTE]
