@@ -1,7 +1,7 @@
 ---
 title: Manage consent for email, SMS (text), and custom channel messages
 description: Manage consent for email, SMS, and custom channel messages in Customer Insights - Journeys. Learn how to set up, update, and audit consent records for compliance.
-ms.date: 05/18/2026
+ms.date: 08/04/2026
 ms.topic: reference
 author: alfergus
 ms.author: alfergus
@@ -51,9 +51,17 @@ By default, users need to opt in to voice consent to get commercial voice channe
 
 Each compliance profile has a specific purpose for tracking user interactions, like message opens and link clicks. Like commercial and transactional purposes, the enforcement model for tracking consent can be restrictive, nonrestrictive, or disabled. If the tracking purpose uses a disabled enforcement model, the system doesn't check tracking consent for messages sent as part of that compliance profile, so it tracks all interactions.
 
-To collect tracking consent, add the tracking purpose to forms and preference centers.
+Tracking consent governs the following:
 
-Tracking consent is also considered for the form prefill feature.
+- Message open tracking, which uses a tracking pixel in the message.
+- Link click tracking in messages.
+- [UTM parameters](real-time-marketing-utm.md) added to links in messages.
+- [Website visits and website link clicks](interaction-journey-decision.md) captured by the website tracking script.
+- [Form prefill](real-time-marketing-form-prefill.md), which lets known users skip re-entering information that Customer Insights - Journeys already stores.
+
+Website tracking also depends on the visitor accepting cookies on your website. Tracking consent controls whether Customer Insights - Journeys records the interaction, but it doesn't control whether the website tracking script sets its cookie. Learn more: [Cookies used by real-time journeys](real-time-journeys-cookies.md).
+
+To collect tracking consent, add the tracking purpose to forms and preference centers. The tracking purpose isn't part of the default preference center, so you need to add it.
 
 > [!NOTE]
 > Customer Insights - Journeys can check the **Allow Tracking** field in contact records to see if it can track the contact's interactions. This check is in addition to the Customer Insights - Journeys contact-point consent opt-in or opt-out check for tracking. The system doesn't perform these checks for other entity types, like leads or Customer Insights - Data profiles. This additional check is managed by the *Check contact consent for real-time journeys* feature switch.
