@@ -1,9 +1,9 @@
 ---
 title: Extend Customer Insights - Journeys marketing forms using code
 description: Extend Customer Insights - Journeys marketing forms with JavaScript to apply custom business logic in Dynamics 365 Customer Insights - Journeys.
-ms.date: 07/09/2026
+ms.date: 08/03/2026
 ms.topic: how-to
-author: alfergus
+author: petrjantac
 ms.author: alfergus
 search.audienceType:
 - developer
@@ -30,8 +30,10 @@ Customer Insights - Journeys marketing forms consist of two parts:
 2. And a form loader, which lights up the form placeholders once the page is loaded (a `DOMContentLoaded` event is triggered):
 
 ```
-<script src='https://cxppusa1formui01cdnsa01-endpoint.azureedge.net/global/FormLoader/FormLoader.bundle.js'></script>
+<script src='{server-load}/{geo}/FormLoader/FormLoader.bundle.js'></script>
 ```
+
+Replace `{server-load}` and `{geo}` with the values for your environment. Get both values from the form's embed code in Customer Insights - Journeys: open the form, select **Publish**, and copy the generated snippet. The `{server-load}` value is the load server (CDN) host, and `{geo}` is the geographic region your environment is in. By using the values from the published embed code, you ensure the form loader comes from the right location for your environment.
 
 ### Custom events
 
@@ -118,7 +120,7 @@ Waiting for `DOMContentLoaded` can be inconvenient, especially when loading dyna
 ```HTML
 <html>
   <body>
-    <script src="https://cxpiusa1formui01cdnsa01-endpoint.azureedge.net/global/FormLoader/FormLoader.bundle.js"></script>
+    <script src="{server-load}/{geo}/FormLoader/FormLoader.bundle.js"></script>
     <div id="root"></div>
     <script>
       const root = document.getElementById('root');
@@ -149,7 +151,7 @@ You can use marketing forms within React applications. The form loader exposes t
   <head>
     <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-    <script src="https://cxppusa1formui01cdnsa01-endpoint.azureedge.net/global/FormLoader/FormLoader.bundle.js"></script>
+    <script src="{server-load}/{geo}/FormLoader/FormLoader.bundle.js"></script>
   </head>
   <body>
     <div id="root"></div>
