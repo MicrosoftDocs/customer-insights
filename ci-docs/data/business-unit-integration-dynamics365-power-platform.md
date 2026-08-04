@@ -3,7 +3,7 @@ title: Customer Insights business unit integration with Dynamics 365 application
 description: Learn how Customer Insights - Journeys marketing contributors can get access to customer profiles and segments that belong to their business unit.
 ms.date: 07/13/2026
 ms.reviewer: v-wendysmith
-ms.service: customer-insights
+ms.service: dynamics-365-customer-insights
 ms.topic: concept-article
 author: Scott-Stabbert
 ms.author: sstabbert
