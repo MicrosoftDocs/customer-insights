@@ -3,7 +3,7 @@ title: Business unit support and role-based access control (preview)
 description: Learn how business unit support and role-based access control regulate access to customer profiles, segments, and measures in Dataverse.
 ms.date: 01/05/2026
 ms.reviewer: v-wendysmith
-ms.service: customer-insights
+ms.service: dynamics-365-customer-insights
 ms.topic: article
 author: Scott-Stabbert
 ms.author: sstabbert

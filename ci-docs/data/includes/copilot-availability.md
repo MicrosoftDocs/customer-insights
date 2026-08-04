@@ -4,7 +4,7 @@ ms.author: sstabbert
 ms.reviewer: mhart
 ms.date: 08/08/2024
 ms.topic: include
-ms.service: customer-insights
+ms.service: dynamics-365-customer-insights
 ---
 
 ### International availability
