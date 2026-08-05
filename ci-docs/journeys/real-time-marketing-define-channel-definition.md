@@ -1,7 +1,7 @@
 ---
 title: Define the custom channel
-description: Learn how to define a custom channel in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/22/2023
+description: Learn how to build the Channel Definition record that ties together a custom channel's entity, form, and API.
+ms.date: 08/04/2026
 ms.custom:
   - bap-template
 ms.topic: how-to

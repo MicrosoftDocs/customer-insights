@@ -1,8 +1,9 @@
 ---
 title: Use AI-driven run-time channel optimization
-description: Use AI-driven run-time channel optimization for Customer Insights - Journeys.
-ms.date: 08/22/2023
+description: Channel optimization in Customer Insights - Journeys continuously monitors customer responses to recommend the most effective communication channel.
+ms.date: 08/05/2026
 ms.topic: how-to
+ms.collection: bap-ai-copilot
 author: alfergus
 ms.author: alfergus
 search.audienceType: 
@@ -26,8 +27,8 @@ The AI model operates autonomously and in real time to understand the journey go
 
 ## Prerequisites
 
-- **Journey goal**: You must have a [defined journey goal](real-time-marketing-business-goals.md) for the channel optimization to start working.
-- **Content for your channels**: You must have the content for the channels (email, text, or push) that you want to optimize.
+- **Journey goal**: Define a [journey goal](real-time-marketing-business-goals.md) so channel optimization can start working.
+- **Content for your channels**: Prepare the content for the channels (email, text, or push) that you want to optimize.
 
 ## Create and add channel optimization
 
@@ -40,8 +41,7 @@ The AI model operates autonomously and in real time to understand the journey go
     > The AI model will still evaluate the channels objectively if the audience distributed to the default channel successfully reaches the journey goal.
 1. Choose the content for your channels.
 
-    > [!div class="mx-imgBorder"]
-    > ![Channel optimization side panel.](media/real-time-marketing-channel-optimization-sidepane.png "Channel optimization side panel")
+    :::image type="content" source="media/real-time-marketing-channel-optimization-sidepane.png" alt-text="Screenshot of the channel optimization side panel for choosing content per channel." lightbox="media/real-time-marketing-channel-optimization-sidepane.png":::
 
 ## Assess channel optimization analytics
 
@@ -51,7 +51,7 @@ Following the launch of the customer journey, the following measures can help yo
 - **Channel engagement**: Provides insights into how customers engaged with the channel they were distributed to. The calculation is the number of unique clicks or opens divided by the total number of messages sent.
 - **Audience distribution**: Provides insights into what portion of the audience was filtered using the AI model versus not.
 
-## Special cases
+## Special cases for message delivery
 
 If you notice a *No message sent* screen for one of the channels, that means that either the AI model has not routed customers down that channel or the message was sent but your customers have not yet interacted with it by opening the message or clicking the links.
 

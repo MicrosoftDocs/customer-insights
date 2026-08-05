@@ -1,7 +1,7 @@
 ---
-title: Trigger a journey based on a Dataverse record change 
-description: Trigger a journey when a Dataverse record is created or changed by a customer, user, or system action in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/22/2023
+title: Trigger a journey based on a Dataverse record change
+description: Learn how to create a no-code Dataverse trigger to start a journey, add it inside a journey for conditions or personalization, and test it.
+ms.date: 08/04/2026
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
@@ -47,20 +47,17 @@ In this example, a journey will be created that sends the customer a survey when
 1. On the "Create a new trigger" screen, specify a name for the trigger, such as "Support case status updated."
 1. Select the **When a record related to a customer is created or updated** option, then select the **Create** button.
 
-    > [!div class="mx-imgBorder"]
-    > ![Create a new trigger screenshot.](media/real-time-marketing-dataverse-trigger-create.png "Create a new trigger screenshot")
+    :::image type="content" source="media/real-time-marketing-dataverse-trigger-create.png" alt-text="Screenshot of creating a new trigger and selecting the record-change trigger type." lightbox="media/real-time-marketing-dataverse-trigger-create.png":::
 
 1. Next, select the table from Dataverse that contains the information related to a support case. Here, the "Case" table is selected.
 1. Because a Dataverse table can have more than one audience attribute, the next step ("Which attribute contains the audience?") allows you to select the attribute that contains the intended audience.
 1. In the final step, you can select the action that will activate the Dataverse trigger. This includes selecting which columns need to be part of the update or change.
 
-    > [!div class="mx-imgBorder"]
-    > ![Select the Dataverse table and audience screenshot.](media/real-time-marketing-dataverse-trigger-table.png "Select the Dataverse table and audience screenshot")
+    :::image type="content" source="media/real-time-marketing-dataverse-trigger-table.png" alt-text="Screenshot of selecting the Dataverse table and audience attribute for a trigger." lightbox="media/real-time-marketing-dataverse-trigger-table.png":::
 
 1. Once created, you can publish the trigger by selecting the **Ready to use** button. This will enable the trigger to be used as part of a live journey.
 
-    > [!div class="mx-imgBorder"]
-    > ![Dataverse trigger is ready to use screenshot.](media/real-time-marketing-dataverse-trigger-ready.png "Dataverse trigger is ready to use screenshot")
+    :::image type="content" source="media/real-time-marketing-dataverse-trigger-ready.png" alt-text="Screenshot of a Dataverse trigger marked as Ready to use." lightbox="media/real-time-marketing-dataverse-trigger-ready.png":::
 
     > [!NOTE]
     > The trigger created in this example does not necessarily capture the support case being closed. It captures any changes to the "Status" field in the support case. This gives you the flexibility to use the same trigger for activating journeys at each status change, through the lifecycle of the case. In this example, because we want to send a survey to the customer after the case is closed, we will later add a filter condition to capture the "Status" field changing to "Resolved." See the next section to learn how to do this.
@@ -78,21 +75,18 @@ Continuing on the scenario described above, the journey now needs to send a surv
 
 Because the trigger only captures a status update for the case, you can add a filter condition to specify what the status should be updated to. In this example, it should be updated to "Resolved."
 
-> [!div class="mx-imgBorder"]
-> ![Create a journey using the Dataverse trigger screenshot.](media/real-time-marketing-dataverse-trigger-resolved.png "Create a journey using the Dataverse trigger screenshot")
+:::image type="content" source="media/real-time-marketing-dataverse-trigger-resolved.png" alt-text="Screenshot of creating a journey from a Dataverse trigger with a Resolved status filter condition." lightbox="media/real-time-marketing-dataverse-trigger-resolved.png":::
 
 The journey is now ready and you can add the follow-up survey.
 
-> [!div class="mx-imgBorder"]
-> ![Journey screenshot showing follow-up survey.](media/real-time-marketing-dataverse-trigger-follow-up.png "Journey screenshot showing follow-up survey")
+:::image type="content" source="media/real-time-marketing-dataverse-trigger-follow-up.png" alt-text="Screenshot of a journey with a follow-up survey added after the Dataverse trigger." lightbox="media/real-time-marketing-dataverse-trigger-follow-up.png":::
 
 In addition, you can use the attributes from the trigger to add conditions or branches to the journey. For instance, you can send the customer a discount if they indicated that they weren't satisfied with the support experience. The satisfaction field from the case table can be used to create this condition.
 
 > [!NOTE]
 > The case table is carried with the “Support case status updated” trigger, as the trigger was based on this table. This also makes all the attributes of the case table available inside journeys and for personalization in messages.
 
-> [!div class="mx-imgBorder"]
-> ![Journey screenshot showing follow-up survey and discount code email.](media/real-time-marketing-dataverse-trigger-follow-up-branches.png "Journey screenshot showing follow-up survey and discount code email")
+:::image type="content" source="media/real-time-marketing-dataverse-trigger-follow-up-branches.png" alt-text="Screenshot of a journey with a follow-up survey and a discount code email branch." lightbox="media/real-time-marketing-dataverse-trigger-follow-up-branches.png":::
 
 ## Invoking/testing a Dataverse trigger
 

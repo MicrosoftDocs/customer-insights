@@ -1,7 +1,7 @@
 ---
 title: Create dynamic email content in multiple languages
-description: Learn how to use conditional content blocks in Dynamics 365 Customer Insights - Journeys to create email content that adapts to the country/region and language of your customers.
-ms.date: 08/22/2023
+description: Create email content that adapts to your customers' country/region and language using conditional content blocks in Customer Insights - Journeys.
+ms.date: 08/04/2026
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
@@ -135,7 +135,7 @@ Now, instead of updating the terms and conditions in dozens of places, you can u
 
 With the content block ready, you can use it in your email and know that the terms and conditions will be sent according to the contact's country/region and language.
 
-[Learn how to create emails with Customer Journeys - Insights](real-time-marketing-email.md).
+[Learn how to create emails with Customer Insights - Journeys](real-time-marketing-email.md).
 
 ## Next steps
 
