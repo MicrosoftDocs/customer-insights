@@ -1,7 +1,7 @@
 ---
 title: Set a business goal and measure progress through a journey
-description: Learn how to set business goals and measure progress in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/22/2023
+description: Learn how to create a business goal for a journey, set a target, and measure progress using count or percentage metrics.
+ms.date: 08/04/2026
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
@@ -32,8 +32,7 @@ There are six types of business goals you can use to measure the desired outcome
 1. **Send a general notification**: You're measuring how many people are opening your emails or your overall clickthrough rate.
 1. **Custom goal**: You want more control over what you want to measure by creating your own metric.
 
-> [!div class="mx-imgBorder"]
-> ![Goal setting screenshot.](media/real-time-marketing-goal-category.png "Goal setting screenshot")
+:::image type="content" source="media/real-time-marketing-goal-category.png" alt-text="Screenshot of the six business goal categories available when setting a journey goal, such as Drive a purchase." lightbox="media/real-time-marketing-goal-category.png":::
 
 All goal metrics are measured using custom triggers. The only exception is the "Send a general notification" goal, which uses pre-calculated metrics the app provides for opens and clicks.
 
@@ -55,8 +54,7 @@ In this example, a journey is created to measure the number of subscribers that 
     > You cannot specify which message is to be opened. The app will track if any of the messages in the journey are opened.
 1. Under **The amount of people needed for this goal is**, specify a target amount that you think would mean success. In this example, you don't have a specific target in mind, so you leave it blank.
 
-> [!div class="mx-imgBorder"]
-> ![Emails opened goal screenshot.](media/real-time-marketing-goal-send-general.png "Emails opened goal screenshot")
+:::image type="content" source="media/real-time-marketing-goal-send-general.png" alt-text="Screenshot of a business goal configured to trigger when a person opened at least one message." lightbox="media/real-time-marketing-goal-send-general.png":::
 
 Once the journey is published, you can see the analytics in the right-side pane by selecting the first tile of the journey. From there, you can see how many subscribers have opened at least one email since the journey was published.
 
@@ -72,8 +70,7 @@ In this example, a journey is created to measure the number of shoppers that wil
 
 Once the journey is published, you can see the analytics on the right-side pane by selecting the first tile of the journey. From there, you can see how many people have checked out since the journey was published.
 
-> [!div class="mx-imgBorder"]
-> ![Goal analytics for number of purchases screenshot.](media/real-time-marketing-purchase-goal-analytics.png "Goal analytics for number of purchases screenshot")
+:::image type="content" source="media/real-time-marketing-purchase-goal-analytics.png" alt-text="Screenshot of the goal analytics pane showing the number of customers who completed a purchase." lightbox="media/real-time-marketing-purchase-goal-analytics.png":::
 
 ## Attribution window for the journey
 
@@ -85,7 +82,7 @@ A customer can only count toward the journey goal so long as they’re actively 
 
 If a customer is part of two journeys with the same goal and the customer hits the goal trigger after the first journey has ended (or they've exited) but before the second journey has ended (or they've exited), the customer will only count toward the *second* journey goal.
 
-## Other limitations
+## Other limitations for business goals
 
 1. The journey goal only counts unique profiles. Unique profiles are the number of unduplicated (counted only once) people that enter the journey. This means that in cases where the journey is repeating, the total inflow won’t match the number of unique profiles with which the goal attainment is calculated. For example, assume you want to create a repeating journey that measures how many people send you an interest form after your weekly webinars. The app will record the *first* time an attendee fills out the form, but it will not record any other forms the attendee might fill out as long as they return to the same journey.
 1. The journey can't use any of the Dataverse triggers as a goal. For example, this means that you can't use goals to measure how many incidents created are now resolved.

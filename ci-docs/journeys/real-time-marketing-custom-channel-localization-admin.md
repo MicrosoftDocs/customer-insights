@@ -1,7 +1,7 @@
 ---
 title: Define the localization for the admin interface (optional)
-description: Learn how to define the localization for the admin interface when you create a custom channel in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/22/2023
+description: Learn how to define the Channel Definition Locale contract to localize a custom channel's admin interface content.
+ms.date: 08/04/2026
 ms.custom:
   - bap-template
 ms.topic: how-to
@@ -39,19 +39,20 @@ Channel definition locales are defined in **customizations.xml** as solution com
 Example of customizations.xml including channel definition locales:
 
 ```xml
-<ImportExportXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"> 
- <msdyn_channeldefinitionlocales>
-  <msdyn_channeldefinitionlocale msdyn_channeldefinitionlocaleid="d21815c7-5736-4a95-9b69-253b1e70c0a5">
-    <msdyn_channeldefinitionid>e779b91e-02a0-4884-8cbe-f217835b42d9</msdyn_channeldefinitionid>
-    <msdyn_localeid>1033</msdyn_localeid>
-    <msdyn_localecontent>{
-            "ChannelDefinition.DisplayName":  "Twilio",
-            "ChannelDefinition.Description":  "Connect an existing Twilio account to send text messages",
-            "ChannelDefinition.SpecialConsentLabel":  "To ensure that Twilio provider handle STOP commands properly, you must configure your consent settings with the provider directly.",
-            "ChannelMessagePart.Text.DisplayName":  "Text",
-            "ChannelMessagePart.Text.Description":  "Text part of SMS"}
-    </msdyn_localecontent>
-  </msdyn_channeldefinitionlocale>
+<ImportExportXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <msdyn_channeldefinitionlocales>
+    <msdyn_channeldefinitionlocale msdyn_channeldefinitionlocaleid="d21815c7-5736-4a95-9b69-253b1e70c0a5">
+      <msdyn_channeldefinitionid>e779b91e-02a0-4884-8cbe-f217835b42d9</msdyn_channeldefinitionid>
+      <msdyn_localeid>1033</msdyn_localeid>
+      <msdyn_localecontent>{
+        "ChannelDefinition.DisplayName": "Twilio",
+        "ChannelDefinition.Description": "Connect an existing Twilio account to send text messages",
+        "ChannelDefinition.SpecialConsentLabel": "To ensure that Twilio provider handle STOP commands properly, you must configure your consent settings with the provider directly.",
+        "ChannelMessagePart.Text.DisplayName": "Text",
+        "ChannelMessagePart.Text.Description": "Text part of SMS"}
+      </msdyn_localecontent>
+    </msdyn_channeldefinitionlocale>
+  </msdyn_channeldefinitionlocales>
 </ImportExportXml>
 ```
 

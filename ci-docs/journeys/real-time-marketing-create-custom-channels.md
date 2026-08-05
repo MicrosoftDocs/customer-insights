@@ -1,7 +1,7 @@
 ---
 title: Create custom channels in Customer Insights - Journeys
-description: Learn how to create custom channels in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/22/2023
+description: Learn how to create and use custom channels in Customer Insights - Journeys, from installing the app to sending messages.
+ms.date: 08/04/2026
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
@@ -31,8 +31,7 @@ There are two ways to install a custom channel app:
 
 1. After installing the corresponding custom channel app, start the custom channel creation process by going to  **Settings** > **Custom channels**.
 
-    > [!div class="mx-imgBorder"]
-    > ![create a custom channel](media/real-time-marketing-create-a-custom-channel.png "create a custom channel")
+    :::image type="content" source="media/real-time-marketing-create-a-custom-channel.png" alt-text="Screenshot of the Custom channels settings page for creating a new custom channel." lightbox="media/real-time-marketing-create-a-custom-channel.png":::
 
 1. Select **+New channel** (or **Add a channel** if you have no custom channels created yet).
 1. Select the custom channel app you want to use to create your new channel.
@@ -43,8 +42,7 @@ There are two ways to install a custom channel app:
 
 To create a new custom channel message for an existing channel, go to **Customer Insights - Journeys** > **Channels** > **More channels**.
 
-> [!div class="mx-imgBorder"]
-> ![create a custom channel message](media/real-time-marketing-create-a-custom-channel-message.png "create a custom channel message")
+:::image type="content" source="media/real-time-marketing-create-a-custom-channel-message.png" alt-text="Screenshot of the More channels page for creating a new custom channel message." lightbox="media/real-time-marketing-create-a-custom-channel-message.png":::
 
 To create a new message:
 
@@ -61,12 +59,10 @@ To add a custom channel message action:
 
 1. Select the **+** button on the canvas and choose the **Send other types of messages** action.
 
-    > [!div class="mx-imgBorder"]
-    > ![use custom channel in journey](media/real-time-marketing-use-custom-channel-in-journey.png "use custom channel in journey")
+    :::image type="content" source="media/real-time-marketing-use-custom-channel-in-journey.png" alt-text="Screenshot of the Send other types of messages action added to a journey canvas." lightbox="media/real-time-marketing-use-custom-channel-in-journey.png":::
 
 2. Select the custom channel and the relevant message you want to send in the right pane.
 
-    > [!div class="mx-imgBorder"]
-    > ![select custom channel](media/real-time-marketing-select-custom-channel.png "select custom channel")
+    :::image type="content" source="media/real-time-marketing-select-custom-channel.png" alt-text="Screenshot of the right pane for selecting a custom channel and message to send." lightbox="media/real-time-marketing-select-custom-channel.png":::
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]
