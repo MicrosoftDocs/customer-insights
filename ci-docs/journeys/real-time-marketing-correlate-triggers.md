@@ -1,7 +1,7 @@
 ---
 title: Use binding IDs to correlate across triggers
-description: Learn how to use binding IDs to correlate across custom triggers in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/22/2023
+description: Binding IDs let you correlate custom triggers to specific instances of a repeatable journey in Customer Insights - Journeys.
+ms.date: 08/05/2026
 ms.topic: how-to
 author: alfergus
 ms.author: alfergus
@@ -13,9 +13,9 @@ search.audienceType:
 
 # Use binding IDs to correlate across triggers
 
-For trigger-based, repeatable journeys, a customer can repeat a journey without having completed the previous run. For example, consider a journey that sends appointment confirmations and reminders. When a person registers for their first appointment, they enter the journey and receive a confirmation. They'll continue to wait in the journey until they receive a reminder a day before the appointment. During this time, the same person could register for a second appointment. The journey participant will start the same journey a second time for the second appointment. In other words, the same person is now going through two instances of the same journey.
+A binding ID is an attribute on a custom trigger that identifies which instance of a repeatable journey the trigger should act on. For trigger-based, repeatable journeys, a customer can repeat a journey without completing the previous run. For example, consider a journey that sends appointment confirmations and reminders. When a person registers for their first appointment, they enter the journey and receive a confirmation. They continue to wait in the journey until they receive a reminder a day before the appointment. During this time, the same person could register for a second appointment. The journey participant starts the same journey a second time for the second appointment. In other words, the same person is now going through two instances of the same journey.
 
-In such a situation, if the journey participant cancels one of the appointments, they should exit only the journey associated with the canceled appointment. For example, if they cancel the first appointment, they should exit the journey associated with the first appointment but continue the journey associated with the second appointment. If you're using out-of-the-box Dataverse-based events, then the behavior is automatic and no other action is needed. However, if you're using custom triggers, you must configure the trigger to correctly identify the specific instance of the journey that the trigger must be associated with.
+In such a situation, if the journey participant cancels one of the appointments, they should exit only the journey associated with the canceled appointment. For example, if they cancel the first appointment, they exit the journey associated with the first appointment but continue the journey associated with the second appointment. If you're using out-of-the-box Dataverse-based events, then the behavior is automatic and no other action is needed. However, if you're using custom triggers, configure the trigger so it correctly identifies the specific instance of the journey it's associated with.
 
 ## Using the *bindingId* attribute to uniquely identify each instance of the journey
 
@@ -52,8 +52,7 @@ To access the code snippet for an existing custom trigger:
 1. Go to **Customer Insights - Journeys** > **Engagement** > **Triggers**.
 1. Select the custom trigger you want to add a *bindingId* to.
 1. Select **Go to code snippet**.
-    > [!div class="mx-imgBorder"]
-    > ![Go to code snippet screenshot.](media/real-time-marketing-correlate-triggers-snippet.png "Go to code snippet screenshot")
+    :::image type="content" source="media/real-time-marketing-correlate-triggers-snippet.png" alt-text="Screenshot of the Go to code snippet option for a custom trigger in Customer Insights - Journeys." lightbox="media/real-time-marketing-correlate-triggers-snippet.png":::
 1. Copy the snippet and paste it into your code editor of choice. Modify the *bindingId* attribute following the formats mentioned above (a unique string if you're using it only with custom triggers or ``{table_name}/{unique row ID}`` when correlating across custom triggers and out-of-the-box events or custom business events).
 
 You can follow the same steps to add a *bindingId* when creating a new custom trigger.
@@ -64,36 +63,36 @@ The `/` character is reserved. It's always assumed that the *bindingId* is in a 
 Examples:
 ```
 "A/B"
-will be interpreted as 
+will be interpreted as
 {entityType = "A"}/{entityId = "B"}
 ```
 ```
 "A"
-will be interpreted as 
+will be interpreted as
 {entityType = ""}/{entityId = "A"}
 ```
 ```
-"A/B/C" 
-will be interpreted as 
+"A/B/C"
+will be interpreted as
 {entityType = "AB"}/{entityId = "C"}
 ```
 ```
 ""
-will be interpreted as 
+will be interpreted as
 {entityType = ""}/{entityId = ""}
 ```
 ```
 "A/B/"
-will be interpreted as 
+will be interpreted as
 {entityType = "A"}/{entityId = "B"}
 ```
 ```
 "///A/B////"
-will be interpreted as 
+will be interpreted as
 {entityType = "A"}/{entityId = "B"}
 ```
 
-## Comparison algorithm:
+## Comparison algorithm
 ```
 [Case 0] trigger has bindingId = "", meaning no restriction at all
     Always resume.
@@ -102,9 +101,9 @@ will be interpreted as
 [Case 2] entityType matches, but entityId doesn't match:
     No resume.
 [Case 3] entityType doesn't match trigger:
-    It doesn't make sense to apply binding, so we fall back to what we have now and let it resume the journey instance. 
+    It doesn't make sense to apply binding, so we fall back to what we have now and let it resume the journey instance.
 ```
-Examples: 
+Examples:
 ```
 Trigger event: "incident/000"
 Resume event: "incident/000"

@@ -1,7 +1,7 @@
 ---
 title: Create branded, customized preference centers to manage customer consent
 description: Learn how to set up preference centers to collect and manage consent from your customers.
-ms.date: 05/18/2026
+ms.date: 08/04/2026
 ms.topic: reference
 author: alfergus
 ms.author: alfergus
@@ -29,7 +29,7 @@ In Customer Insights - Journeys, each compliance profile starts with a default p
 > [!NOTE]
 > Customers who have used Customer Insights - Journeys preference pages prior to the introduction of the preference center will have a compliance profile already created with the previously configured preference page in place of a preference center. It is recommended that customers replace preference pages with preference centers.
 
-The default preference center includes options for users to opt in or opt out of the **Commercial** and **Tracking** purposes, along with the default contact point of the user’s email address. You can update how the purposes capture consent in various ways to ensure you capture consent appropriately:
+The default preference center includes an option for users to opt in or opt out of the **Commercial** purpose, along with the default contact point of the user’s email address. You can update how the purposes capture consent in various ways to ensure you capture consent appropriately:
 
 - Update the contact point(s) for which consent is captured
 - Update the page directly to change the text displayed for each purpose to make it clear to the user
@@ -38,6 +38,9 @@ The default preference center includes options for users to opt in or opt out of
 - Add topics to the form to capture more granular preferences
 
 :::image type="content" source="media/real-time-marketing-preference-center.png" alt-text="Preference center screenshot." lightbox="media/real-time-marketing-preference-center.png":::
+
+> [!IMPORTANT]
+> The **Tracking** purpose isn't part of the default preference center. To let users manage their tracking consent, add the **Tracking** purpose to the preference center. This is essential when the tracking purpose uses a restrictive enforcement model, because users can't opt in to tracking unless you give them a way to do it. Learn more: [Consent to track user behavior](real-time-marketing-email-text-consent.md#consent-to-track-user-behavior).
 
 In addition, you can add content and update the branding and styling of the page to make the experience seamless for your users.
 

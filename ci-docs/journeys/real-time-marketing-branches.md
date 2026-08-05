@@ -1,7 +1,7 @@
 ---
-title: When to use attribute versus if/then branches 
-description: Learn how to select the correct branching to use for journeys in Dynamics 365 Customer Insights - Journeys.
-ms.date: 08/22/2023
+title: When to use attribute versus if/then branches
+description: Learn the difference between attribute branches and if/then branches, and see use cases for choosing the right one in your journey.
+ms.date: 08/04/2026
 ms.topic: article
 author: alfergus
 ms.author: alfergus
@@ -25,13 +25,11 @@ Let’s assume you want to branch your audience based on a specific contact prof
 
 The relative date format will evaluate birthdays when the customer reaches this point of the journey, irrespective of when the journey goes live. Assume the journey goes live on February 1 and John Doe was born on March 1 (one month from February 1). If John goes through the attribute branch on March 1, they will go through the **yes** branch. But if John reaches the attribute branch before or after March 1, or the journey goes live after March 1, John will always be directed to the no branch.
 
-> [!div class="mx-imgBorder"]
-> ![Birthday attribute screenshot.](media/real-time-marketing-branches-birthday.png "Birthday attribute screenshot")
+:::image type="content" source="media/real-time-marketing-branches-birthday.png" alt-text="Screenshot of an attribute branch configured with the relative date format for a birthday attribute." lightbox="media/real-time-marketing-branches-birthday.png":::
 
 You can use the partial date format for special events that occur annually, such as an anniversary.
 
-> [!div class="mx-imgBorder"]
-> ![Partial date attribute screenshot.](media/real-time-marketing-branches-partial.png "Partial date attribute screenshot")
+:::image type="content" source="media/real-time-marketing-branches-partial.png" alt-text="Screenshot of an attribute branch configured with the partial date format for a recurring annual event." lightbox="media/real-time-marketing-branches-partial.png":::
 
 Actual dates add contacts to a journey on a specific day, month, and year, so they can’t be used with recurring events.
 
@@ -41,8 +39,7 @@ Now, let’s assume you are creating an onboarding journey. You might start the 
 
 You can use an attribute branch to check the attribute values for a trigger that starts a trigger-based journey.
 
-> [!div class="mx-imgBorder"]
-> ![Trigger attribute screenshot.](media/real-time-marketing-branches-trigger.png "Trigger attribute screenshot")
+:::image type="content" source="media/real-time-marketing-branches-trigger.png" alt-text="Screenshot of an attribute branch checking attribute values from a trigger that starts a journey." lightbox="media/real-time-marketing-branches-trigger.png":::
 
 ## Case 3: If/then branch to follow up with your customers
 
@@ -50,7 +47,6 @@ Finally, let’s assume you are creating a journey for customers that raise a su
 
 You can use an if/then branch to wait for a survey email open event. If you set the limit for one day, the if/then branch will wait for the customer to open the email within that one day. If the customer opens the email, they are funneled down the **yes** branch, otherwise they go in the **no** branch.
 
-> [!div class="mx-imgBorder"]
-> ![Email survey if/then screenshot.](media/real-time-marketing-branches-if-then.png "Email survey if/then screenshot")
+:::image type="content" source="media/real-time-marketing-branches-if-then.png" alt-text="Screenshot of an if/then branch waiting one day for a customer to open a survey email." lightbox="media/real-time-marketing-branches-if-then.png":::
 
 [!INCLUDE [footer-include](./includes/footer-banner.md)]

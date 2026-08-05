@@ -1,7 +1,7 @@
 ---
 title: Create content blocks that you can reuse in multiple designs
 description: Reusable content blocks in Dynamics 365 Customer Insights - Journeys help you save time and ensure consistency across emails. Learn how to create and use them today.
-ms.date: 05/19/2026
+ms.date: 08/04/2026
 ms.topic: how-to
 author: vinayd-msft
 ms.author: alfergus
@@ -58,9 +58,6 @@ Unless a style is explicitly set in the element properties, the default style is
 
 ## Static vs dynamic content blocks
 
-> [!NOTE]
-> Dynamic content blocks are currently in preview. To enable them, go to **Settings** > **Feature switches** and set the "Dynamic content blocks (preview)" feature switch (in the **Email editor** group) to **On**.
-
 > [!IMPORTANT]
 > - Dynamic content blocks don't appear in **Preview & Test**.
 > - In standard journeys, dynamic content blocks render correctly in sent emails.
@@ -89,9 +86,9 @@ There are two ways to create content blocks: from the content block editor or fr
 - **From the content block editor:** Navigate to the **Content blocks** menu item in the left navigation menu to see a list of available content blocks. You can select any of the blocks to edit or select **+New** in the command bar at the top to create a new content block from scratch. To create an element content block, drag and drop elements onto the canvas and enter the content. To create a section content block, drag and drop layouts and then insert elements and content within those layouts.
 - **From the email designer:** You can select and save any content from your emails as content blocks. Select an element (for example, text or an image) or a section and then select the **Content block** context menu item. You see a **Save as content block** dialog that allows you to replace an existing content block or create a new one.
 
-### Properties of a content block 
+### Properties of a content block
 
-When creating a content block, you can set the following properties: 
+When you create a content block, set the following properties:
 
 - **Title**: The name of the content block so you can find it later.
 - **Type**: Controls how updates affect emails that include the content block:

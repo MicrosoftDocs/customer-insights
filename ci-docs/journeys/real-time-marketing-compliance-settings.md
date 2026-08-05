@@ -1,7 +1,7 @@
 ---
 title: Consent management overview
 description: 'Consent management in Customer Insights – Journeys: Learn how to set up, manage, and enforce user consent to stay compliant with privacy regulations. Start managing consent today.'
-ms.date: 07/07/2026
+ms.date: 08/04/2026
 ms.topic: concept-article
 author: petrjantac
 ms.author: alfergus
@@ -45,6 +45,7 @@ The Customer Insights - Journeys consent model uses a flexible hierarchy that yo
 - At the top of the hierarchy are [compliance profiles](#compliance-profiles).
 - Each compliance profile can include multiple purposes.
 - A single purpose can be shared across multiple compliance profiles.
+- Each compliance profile has a single tracking purpose linked to it. You can only share a tracking purpose between compliance profiles by using the **Use previously captured consent** option when you create the profile.
 - Each purpose can be extended with multiple topics to provide more granular control over consent. One topic can link only to a single purpose.
 
 > [!IMPORTANT]
@@ -96,7 +97,12 @@ There are two types of compliance profiles:
 
 #### Use previously captured consent when creating a compliance profile
 
-When you create a new compliance profile, you can enable the **Use Previously Captured Consent** toggle. This option lets you reference an existing compliance profile so that the new profile inherits its existing **purposes** instead of creating new ones.
+When you create a new compliance profile, you can enable the **Use Previously Captured Consent** toggle. This option lets you reference an existing compliance profile so that the new profile inherits its existing **purposes** instead of creating new ones. The new profile is linked to all the purposes of the profile you reference, and the referenced profile keeps its links too.
+
+If you don't enable the toggle, the system creates new default commercial, transactional, and tracking purposes for the profile.
+
+> [!IMPORTANT]
+> This toggle is the only way to share a **tracking** purpose between compliance profiles. You can link an existing commercial or transactional purpose to another compliance profile at any time, but you can't do that with a tracking purpose. There's also no standard way to unlink a tracking purpose from a compliance profile, so decide whether you want to share tracking consent before you create the profile.
 
 This approach is helpful when you need to map a single purpose across multiple compliance profiles. For example, in localization scenarios:
 
@@ -160,7 +166,7 @@ The three standard types of purposes are:
 
 When you create a new compliance profile, each type of purpose is included by default. They're fully customizable to fit your organization's needs. You can also create more purposes and assign them to one or more compliance profiles.
 
-Purposes in the consent model are *reusable* and can be *shared across multiple compliance profiles*. This flexibility lets you create:
+You can reuse purposes in the consent model and share them across multiple compliance profiles. You can link an existing commercial or transactional purpose to another compliance profile at any time. Tracking purposes work differently: you can only share them by selecting the **Use previously captured consent** option when you create the compliance profile. By sharing purposes, you can create:
 
 - **Unified consent management across brands or regions**: For example, a Contoso Global compliance profile might define a commercial purpose that's also used by Contoso Northwest and Contoso East. Customers interacting with Contoso Northwest can opt in or out of communications from Contoso Global directly from Contoso Northwest's preference center.
 - **Localized preference centers with shared consent**: Sharing purposes also lets you create multiple compliance profiles with different preference center designs, like different languages or layouts, while still using the same consent data. For example, you can have two compliance profiles with identical purposes but separate preference centers in English and Czech, so customers get a consistent consent experience across regions.
@@ -176,6 +182,9 @@ The enforcement model settings on a purpose control how consent is checked befor
 - **Restrictive**: Messages are sent only to contact points with opted-in consent records for the purpose (or topic).
 - **Non-restrictive**: Messages are sent to all contact points unless they have an opted-out consent record for the purpose (or topic).
 - **Disabled**: Messages are sent to all contact points. Consent records aren't checked before sending messages to the purpose (or topic).
+
+> [!IMPORTANT]
+> The enforcement model is a setting on the purpose, not on the compliance profile. If you share a purpose across compliance profiles, changing its enforcement model affects every profile that uses it. To apply a stricter enforcement model to one region or brand only, make sure that profile uses its own purposes. For tracking, create the compliance profile without the **Use previously captured consent** option so the profile gets its own tracking purpose.
 
 ## Topics
 

@@ -1,7 +1,7 @@
 ---
 title: Define custom APIs
-description: Define custom APIs for custom channels in Dynamics 365 Customer Insights - Journeys. Learn how to set up outbound, delivery report, and inbound APIs today.
-ms.date: 05/29/2026
+description: Learn how to implement outbound, delivery report, and inbound custom APIs for a custom channel, including request contracts.
+ms.date: 08/04/2026
 ms.topic: how-to
 author: Joni-M
 ms.author: alfergus
@@ -85,8 +85,8 @@ The inbound custom API calls the **msdyn_D365ChannelsInbound** API with the cont
 - inboundPayLoad is a serialized JSON  with the following contract:
 
   - **ChannelDefinitionId**: GUID – The channel definition ID.
-  - **To**: string - The C1 phone number (channel instance).
-  - **From**: string - C2 user contact point.
+  - **To**: string - The channel's phone number (channel instance).
+  - **From**: string - The user's contact point.
   - **OrganizationId**: string – The organization ID.
   - **Message**: Dictionary <string, string> - Contains all the message parts for a channel.
 

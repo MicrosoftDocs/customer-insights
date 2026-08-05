@@ -1,7 +1,7 @@
 ---
 title: New and upcoming features
 description: Dynamics 365 Customer Insights - Journeys release notes list monthly preview features, general availability updates, enhancements, and bug fixes.
-ms.date: 07/09/2026
+ms.date: 08/04/2026
 ms.update-cycle: 180-days
 ms.topic: whats-new
 author: alfergus
@@ -23,6 +23,31 @@ This article lists monthly release notes for Dynamics 365 Customer Insights - Jo
 Customer Insights - Journeys updates are [pushed to customers automatically](https://cloudblogs.microsoft.com/dynamics365/it/2020/04/27/automatic-update-policy-for-dynamics-365-marketing/). Solutions are available for early validation. To update your instances manually, follow the steps in [Keep Customer Insights - Journeys up to date](apply-updates.md).
 
 To submit and vote on **feature requests** and **product suggestions**, go to the [Dynamics 365 Application Ideas portal](https://experience.dynamics.com/ideas/categories/?forum=dfa5b83d-9e4c-e811-a956-000d3a1bef07&forumName=Dynamics%20365%20Marketing).
+
+### August 2026 update
+
+| App              | GA release      |
+|------------------|-----------------|
+| Customer Insights - Journeys | 1.2.2104.110 |
+
+#### General availability
+
+- **Automatically update emails with the latest content**
+	- Enhance personalization by transforming data directly within your messages using PowerFx expressions. Standardize customer names (for example, convert to proper case), format dates and numbers for different regions, and perform simple calculations such as days until expiration or suggested donation amounts based on prior activity. These capabilities help you deliver more accurate, relevant, and engaging communications, all without requiring changes to your data model.
+	- [Release plan](/dynamics365/release-plan/2026wave1/customer-insights/dynamics365-customer-insights-journeys/automatically-update-emails-latest-content)
+	- [Docs](content-blocks.md#static-vs-dynamic-content-blocks)
+
+#### Public preview
+
+- **Enable advanced personalization using simple formulas to modify text, dates, and numbers**
+	- With the new Journey Creation Agent in Dynamics 365 Customer Insights - Journeys, anyone can create journeys in minutes, even if they've never done it before. Instead of spending time getting the mechanics of the journey right, you can now ensure you deliver the most personalized experience for your customers. Move from idea to execution in minutes, freeing up time and reducing dependency on technical experts.
+	- [Release plan](/dynamics365/release-plan/2026wave1/customer-insights/dynamics365-customer-insights-journeys/enable-advanced-personalization-using-simple-formulas-modify-text-dates-numbers)
+	- [Docs](real-time-marketing-predefined-dynamic-text.md)
+
+#### Monthly enhancements
+
+- **Track journey origin by mapping dynamic journey context**
+	- You run campaigns and journeys that create leads, cases, or downstream flows—but once those records exist, you often lose visibility into which journey truly drove them. You rely on manual workarounds, Power Automate flows, or static references that break every time you republish a journey. Now, you can directly use the journey itself as a data source. When a record is created or a trigger is activated, the system automatically stamps it with live journey metadata when activating custom triggers or creating records.
 
 ### July 2026 update
 
