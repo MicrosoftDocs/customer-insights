@@ -1,7 +1,7 @@
 ---
 title: New and upcoming features
 description: Dynamics 365 Customer Insights - Journeys release notes list monthly preview features, general availability updates, enhancements, and bug fixes.
-ms.date: 08/04/2026
+ms.date: 08/06/2026
 ms.update-cycle: 180-days
 ms.topic: whats-new
 author: alfergus
@@ -33,14 +33,14 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 #### General availability
 
 - **Automatically update emails with the latest content**
-	- Enhance personalization by transforming data directly within your messages using PowerFx expressions. Standardize customer names (for example, convert to proper case), format dates and numbers for different regions, and perform simple calculations such as days until expiration or suggested donation amounts based on prior activity. These capabilities help you deliver more accurate, relevant, and engaging communications, all without requiring changes to your data model.
+	- Dynamic content blocks eliminate such manual work and the risk of sending emails with outdated content. When a dynamic content block is updated, all emails using that block are automatically refreshed to ensure recipients always receive the most current content.
 	- [Release plan](/dynamics365/release-plan/2026wave1/customer-insights/dynamics365-customer-insights-journeys/automatically-update-emails-latest-content)
 	- [Docs](content-blocks.md#static-vs-dynamic-content-blocks)
 
 #### Public preview
 
 - **Enable advanced personalization using simple formulas to modify text, dates, and numbers**
-	- With the new Journey Creation Agent in Dynamics 365 Customer Insights - Journeys, anyone can create journeys in minutes, even if they've never done it before. Instead of spending time getting the mechanics of the journey right, you can now ensure you deliver the most personalized experience for your customers. Move from idea to execution in minutes, freeing up time and reducing dependency on technical experts.
+	- Enhance personalization by transforming data directly within your messages using PowerFx expressions. Standardize customer names (for example, convert to proper case), format dates and numbers for different regions, and perform simple calculations such as days until expiration or suggested donation amounts based on prior activity. These capabilities help you deliver more accurate, relevant, and engaging communications, all without requiring changes to your data model.
 	- [Release plan](/dynamics365/release-plan/2026wave1/customer-insights/dynamics365-customer-insights-journeys/enable-advanced-personalization-using-simple-formulas-modify-text-dates-numbers)
 	- [Docs](real-time-marketing-predefined-dynamic-text.md)
 
