@@ -66,8 +66,18 @@
     href: admin-users-licenses-roles.md
   - name: Permissions for out-of-the-box roles
     items:
-    - name: Permission changes in each release
+    - name: Permission changes overview
       href: role-permissions.md
+    - name: Permission changes in each release
+      items:
+      - name: June 2026 release (version 1.2.437.94)
+        href: role-permissions-2026-06.md
+      - name: May 2026 release (version 1.1.65002.146)
+        href: role-permissions-2026-05.md
+      - name: April 2026 release (version 1.1.64196.86)
+        href: role-permissions-2026-04.md
+      - name: March 2026 release (version 1.1.62960.43)
+        href: role-permissions-2026-03.md
     - name: Baseline (pre-March 2026) permissions for out-of-the-box roles
       href: role-permissions-baseline.md
   - name: Administrator settings
@@ -144,14 +154,10 @@
           href: email-deduplication.md
         - name: Email accessibility checker
           href: email-accessibility.md
-        - name: Check your spam score
-          href: spam-checker.md
       - name: Send your email
         items:
         - name: Check for errors, go live, and deliver
           href: email-check-golive.md      
-        - name: "Troubleshooting: Fix email rendering issues"
-          href: email-troubleshoot-rendering.md
         - name: Use "Send now" to send emails instantly in Customer Insights - Journeys
           href: email-without-journey.md
       - name: View previously sent emails
@@ -220,8 +226,6 @@
         href: protected-fields.md   
     - name: Use your own Azure Data Lake Storage account for segments
       href: bring-your-own-azure-data-lake.md 
-    - name: "Troubleshooting: Segments show incorrect member count"
-      href: segment-member-count.md
   - name: Create real-time journeys
     items:
     - name: Journeys overview
@@ -380,8 +384,6 @@
       items:
       - name: Follow up after the event
         href: followup-after-event.md
-    - name: Troubleshoot event management and Teams integration issues
-      href: troubleshoot-event-management.md
   - name: Forms 
     items:
     - name: Forms overview
@@ -406,8 +408,6 @@
       href: real-time-marketing-form-submitted-values.md
     - name: Set the default configuration for forms
       href: real-time-marketing-form-global-settings.md
-    - name: Troubleshoot forms
-      href: real-time-marketing-troubleshooting-forms.md
   - name: Lead generation and management
     items:
     - name: Create a scoring model
@@ -520,8 +520,6 @@
       href: real-time-marketing-custom-channel-custom-API.md
     - name: 7. Define your channel definition
       href: real-time-marketing-define-channel-definition.md
-    - name: Troubleshoot custom channels
-      href: troubleshoot-custom-channels.md
   - name: Push notification setup for application developers
     items:
     - name: User mapping for application developers
@@ -534,8 +532,6 @@
       href: developer-push-interactions.md
     - name: Transition Android push notifications to Firebase Cloud Messaging (FCM) tokens
       href: push-notification-fcm-token-transition.md
-    - name: Troubleshoot push notifications setup
-      href: troubleshoot-push-notifications.md
   - name: Extend forms functionality
     items:
     - name: Client-side extensibility for forms
@@ -640,8 +636,6 @@
         href: warmup-process-email-marketing.md
       - name: Email sending data access and privileges
         href: email-sending-data.md
-      - name: Troubleshoot domain authentication errors
-        href: troubleshoot-domain-authentication.md
     - name: Improve email deliverability
       items:
       - name: Email bounce categories
@@ -666,10 +660,6 @@
         href: suppression-lists.md
       - name: "Feedback loop: What is it and how to prevent complaints"
         href: feedback-loop.md
-    - name: "Troubleshooting: Email deliverability issues"
-      href: email-troubleshoot-deliverability.md
-    - name: "Troubleshooting: Email engagement drops"
-      href: troubleshoot-engagement-drops.md
   - name: Customization
     items:
     - name: Customizing Customer Insights - Journeys
@@ -680,10 +670,6 @@
       href: real-time-marketing-customize-forms.md
     - name: Add (customized) contact or lead insights to custom forms
       href: add-insights-to-custom-forms.md
-    - name: Create and customize marketing calendars
-      href: customize-marketing-calendars.md
-    - name: Create and customize template labels
-      href: customize-template-labels.md
   - name: Data compliance
     items:
     - name: Data subject request (DSR) handling
@@ -708,8 +694,6 @@
     href: setup-troubleshooting.yml
   - name: "Deprecation: Dynamics 365 for Customer Engagement"
     href: ce-deprecation.md
-  - name: Troubleshoot with Solution Health Hub
-    href: troubleshoot-marketing-solution-health.md
   - name: General FAQ
     href: troubleshoot-faq.md
 - name: Copilot and AI agents in Customer Insights
