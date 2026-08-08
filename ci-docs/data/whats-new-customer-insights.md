@@ -1,7 +1,7 @@
 ---
 title: "What's new in Dynamics 365 Customer Insights - Data"
 description: "Information about new features, improvements, and bug fixes."
-ms.date: 06/01/2026
+ms.date: 08/07/2026
 ms.topic: whats-new
 author: Scott-Stabbert
 ms.author: sstabbert
@@ -16,6 +16,25 @@ We roll out updates on a region-by-region basis. So certain regions might see fe
 
 > [!TIP]
 > To submit and vote on feature requests and product suggestions, go to the [Dynamics 365 Application Ideas portal](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights).
+
+## July 2026
+
+### General availability
+
+#### Connect to a Microsoft Fabric workspace with inbound access protection enabled
+
+For organizations that require enhanced control over connections to a workspace, you can connect Dynamics 365 Customer Insights - Data to a Microsoft Fabric OneLake workspace with inbound access protection.
+
+- [Docs](connect-fabric-inbound-access-protection.md)
+
+### Public preview
+
+#### Increase agent accuracy by grounding the agent in customer insights
+
+Use the Customer Insights MCP Server to enrich your chat and agent workflows with unified customer data and AI-generated insights.
+
+- [Release plan](/dynamics365/release-plan/2026wave1/customer-insights/dynamics365-customer-insights-data/increase-accuracy-autonomous-agents-grounding-them-customer-insights)
+- [Docs](mcp-server-tools.md)
 
 ## May 2026
 
