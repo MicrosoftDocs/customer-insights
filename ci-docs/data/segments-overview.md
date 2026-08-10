@@ -24,7 +24,7 @@ Choose how to create a segment based on your target audience.
 - AI-powered way to find similar customers: [Similar customers](find-similar-customer-segments.md)
 - AI-powered suggestions based on measures or attributes: [Suggested segments based on measures](suggested-segments.md#suggested-segments-based-on-measures)
 - Suggestions based on activities: [Suggested segments based on customer activity](suggested-segments.md#suggested-segments-based-on-activity)
-- Create segments using behavioral interaction data from Customer Insights - Journeys: [Use Customer Insights - Journeys interaction data in segments (preview)](journeys-interaction-data-segments-measures.md)
+- Create segments using behavioral interaction data from Customer Insights - Journeys: [Use Customer Insights - Journeys interaction data in segments](journeys-interaction-data-segments-measures.md)
 
 ## Segment builder overview
 
@@ -58,7 +58,7 @@ The following image illustrates the various parts of the segment builder. It sho
 
 1. Add conditions based on attributes to existing rules and subrules or add it to a new rule.
 
-1. Use the **Behavioral** pane to [create segments using behavioral interaction data from Customer Insights - Journeys (preview)](journeys-interaction-data-segments-measures.md#use-interaction-data-in-a-segment).
+1. Use the **Behavioral** pane to [create segments using behavioral interaction data from Customer Insights - Journeys](journeys-interaction-data-segments-measures.md#use-interaction-data-in-a-segment).
 
 1. Undo and redo changes while building the segment.
 
