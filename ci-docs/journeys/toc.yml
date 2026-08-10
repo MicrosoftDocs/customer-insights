@@ -448,6 +448,8 @@
       href: real-time-marketing-personalization.md
     - name: Personalize content using pre-defined dynamic text
       href: real-time-marketing-predefined-dynamic-text.md
+    - name: Transform dynamic text with Power Fx formulas
+      href: power-fx-dynamic-text.md
     - name: How to use conditional content
       href: conditional-content.md
     - name: Create reusable content blocks
