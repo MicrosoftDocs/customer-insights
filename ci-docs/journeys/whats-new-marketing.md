@@ -42,7 +42,7 @@ To submit and vote on **feature requests** and **product suggestions**, go to th
 - **Enable advanced personalization using simple formulas to modify text, dates, and numbers**
 	- Enhance personalization by transforming data directly within your messages using PowerFx expressions. Standardize customer names (for example, convert to proper case), format dates and numbers for different regions, and perform simple calculations such as days until expiration or suggested donation amounts based on prior activity. These capabilities help you deliver more accurate, relevant, and engaging communications, all without requiring changes to your data model.
 	- [Release plan](/dynamics365/release-plan/2026wave1/customer-insights/dynamics365-customer-insights-journeys/enable-advanced-personalization-using-simple-formulas-modify-text-dates-numbers)
-	- [Docs](real-time-marketing-predefined-dynamic-text.md)
+	- [Docs](power-fx-dynamic-text.md)
 
 #### Monthly enhancements
 
