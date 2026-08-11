@@ -159,8 +159,6 @@ You can edit a data source connection to add tables and remove tables if no down
 
 1. Select **Next**, review the summary, and then select **Save**.
 
-[!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
-
 ## Manage schema changes
 
 If you change the schema of a table that Customer Insights - Data is configured to ingest, the change typically causes a data refresh failure. To update the schema for the connection, see [Manage schema changes](connect-delta-lake.md#manage-schema-changes).

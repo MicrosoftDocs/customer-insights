@@ -145,8 +145,6 @@ Loading data can take time. After a successful refresh, the ingested data can be
 
 1. Select **Save**. The **Data sources** page opens showing the new data source in **Refreshing** status.
 
-   [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
-
 Loading data can take time. After a successful refresh, the ingested data can be reviewed from the [**Data** > **Tables**](tables.md) page.
 
 ## Edit an Azure Data Lake Storage data source
@@ -185,8 +183,6 @@ You can update the *Connect to storage account using* option. For more informati
 1. Select **Columns** to add or change them, or to enable data profiling. Then select **Done**.
 
 1. Select **Save** to apply your changes and return to the **Data sources** page.
-
-   [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
 
 ## Update a data source when the schema changes
 

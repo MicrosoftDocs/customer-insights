@@ -142,10 +142,7 @@ Run matching conditions runs deduplication and match rules only and updates the 
 
 All tiles except **Customer data** show **Queued** or **Refreshing**. More data, skewed data, or data with lots of duplicates affect processing time.
 
-[!INCLUDE [progress-details-pane-include](includes/progress-details-pane.md)]
-
 The results of a successful run display on the **Unify** page showing the number of unified profiles.
-
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

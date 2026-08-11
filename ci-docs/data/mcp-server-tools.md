@@ -1,7 +1,7 @@
 ---
 title: Use tools in the Customer Insights MCP Server (preview)
 description: Customer Insights MCP Server tools help Copilot Studio agents unify customer profiles and access predictive insights such as Customer Lifetime Value (CLV) and churn risk.
-ms.date: 07/10/2026
+ms.date: 08/10/2026
 ms.topic: how-to
 ms.service: dynamics-365-customer-insights
 ms.collection: bap-ai-copilot
@@ -50,6 +50,10 @@ Sally requests details about the lead by using a conversational prompt. The agen
 - Segment membership
 
 With this information, Sally can prioritize and engage Joseph more effectively than if she treated the lead as a new customer.
+
+## Prerequisites
+
+The user must have access to the Dataverse tables.
 
 ## Add Customer Insights MCP Server to an agent
 
