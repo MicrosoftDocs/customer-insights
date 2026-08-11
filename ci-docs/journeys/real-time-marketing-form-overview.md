@@ -1,10 +1,10 @@
 ---
 title: Overview of Customer Insights - Journeys forms
-description: Overview of the forms capabilities in Dynamics 365 Customer Insights - Journeys. 
-ms.date: 03/27/2026
+description: Get an overview of forms in Dynamics 365 Customer Insights - Journeys, including form types, templates, and service protection limits.
+ms.date: 08/11/2026
 ms.topic: article
 author: petrjantac
-ms.author: colinbirkett
+ms.author: alfergus
 search.audienceType: 
   - admin
   - customizer
@@ -13,19 +13,20 @@ search.audienceType:
 
 # Overview of Customer Insights - Journeys forms
 
+Customer Insights - Journeys forms let you capture leads, register contacts for events, and manage consent preferences without writing code. You can create, customize, and publish forms directly from the form editor.
+
 > [!IMPORTANT]
 > Dynamics 365 Customer Insights - Journeys may transfer customer data outside of the selected Azure geographic location when using the following features that use Azure CDN (content delivery network) to operate globally:
 >
 > - [Asset library](upload-images-files.md)
 > - [Forms](real-time-marketing-form-overview.md)
 >
-> You can still execute marketing campaigns without using such features by hosting your assets and forms in a content management system of your choice.
+> You can still run marketing campaigns without using these features by hosting your assets and forms in a content management system of your choice.
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=ed9b04ef-a9b2-48b4-ac72-5b8f58d95c5a]
 
 > [!IMPORTANT]
-> The current HIP captcha used in Customer Insights - Journeys forms will be deprecated in March 2026 and fully removed by June 30, 2026.
-> Follow [these instructions](real-time-marketing-form-security-privacy.md#hip-captcha-deprecation-and-the-new-recaptcha-experience) to keep your forms protected against bot submissions.
+> The HIP captcha previously used in Customer Insights - Journeys forms was removed in June 2026. Follow [these instructions](real-time-marketing-form-security-privacy.md#protect-forms-from-bots-with-recaptcha) to keep your forms protected against bot submissions.
 
 ## Form types
 
@@ -83,7 +84,7 @@ Custom form templates simplify creating marketing and event registration forms. 
 
 To create a new custom form, navigate to the **Templates** section in the left site navigation. Select the **New template** button in the top ribbon and choose **Form**. You can access the list of all your form templates from the **Templates** page by selecting the **Form** tile.
 
-:::image type="content" source="media/real-time-marketing-custom-form.png" alt-text="Custom form template" lightbox="media/real-time-marketing-custom-form.png":::
+:::image type="content" source="media/real-time-marketing-custom-form.png" alt-text="Screenshot of a custom form template in the Customer Insights - Journeys form editor." lightbox="media/real-time-marketing-custom-form.png":::
 
 > [!TIP]
 > If you want to use an existing form as a new custom template, you can copy its HTML code and paste it into the newly created custom template.
