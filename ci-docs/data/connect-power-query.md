@@ -126,8 +126,6 @@ You must be the owner of the dataflow to edit it.
 
 1. Select **Save** to apply your changes and return to the **Data sources** page.
 
-   [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
-
 Loading data can take time. After a successful refresh, review the ingested data from the [**Data** > **Tables**](tables.md) page.
 
 ## Transfer Power Query data source ownership
