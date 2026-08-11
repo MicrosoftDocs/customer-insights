@@ -1,7 +1,7 @@
 ---
 title: Customer Insights MCP Server tools reference (preview)
 description: Explore Customer Insights MCP Server tools help agents discover data sources, unify customer profiles, and retrieve segments, measures, and predictions.
-ms.date: 07/10/2026
+ms.date: 08/10/2026
 ms.topic: reference
 ms.collection: bap-ai-copilot
 author: Scott-Stabbert
@@ -14,7 +14,7 @@ ms.custom: bap-template
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-Customer Insights MCP Server exposes Microsoft Dynamics 365 **Customer Insights - Data** and **Customer Insights - Journeys** capabilities as callable tools for large language model (LLM) agents. 
+Customer Insights MCP Server exposes Microsoft Dynamics 365 **Customer Insights - Data** and **Customer Insights - Journeys** capabilities as callable tools for large language model (LLM) agents.
 
 Through the Model Context Protocol (MCP), an agent can:
 
@@ -23,7 +23,7 @@ Through the Model Context Protocol (MCP), an agent can:
 - Retrieve profile attributes, segments, measures, predictions, enrichments, and consent states
 - Perform real actions against live Customer Insights data
 
-All Customer Insights - Data tools read from **Dataverse virtual entities** which reflect live unified customer data.
+All Customer Insights - Data tools read from **Dataverse virtual entities** which reflect live unified customer data. To add Customer Insights MCP Server to an agent, see [Use tools in the Customer Insights MCP server (preview)](mcp-server-tools.md).
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note.md)]
 
